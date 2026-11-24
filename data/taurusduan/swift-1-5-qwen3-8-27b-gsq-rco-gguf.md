@@ -2,142 +2,111 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF es una publicacion de cuantizaciones GGUF del modelo Swift 1.5 Qwen3.8-27B, desarrollado por UkisAI como adaptacion post-entrenada del modelo fundacional Qwen3.8-27B de Qwen. La ficha corresponde al repositorio de taurusduan, que reproduce el README y el manifiesto del release de ukisai e incluye cuatro perfiles de precision mixta (IQ2_XS, IQ2_S, IQ3_XXS e IQ3_S) y, opcionalmente, variantes con cabeza MTP para decodificacion multi-token.
+Swift 1.5 Qwen3.8-27B GSQ-RCO es una cuantización GGUF de precisión mixta del modelo Swift 1.5 Qwen3.8-27B, desarrollado por UkisAI y publicado en Hugging Face por el usuario taurusduan. El modelo base es un transformer denso de aproximadamente 26.900 millones de parámetros (26.895.998.464 según los pesos en safetensors) construido sobre la familia Qwen3.8, afinado mediante post-entrenamiento orientado a tareas agénticas de horizonte largo, código y razonamiento con un uso reducido de tokens de pensamiento. Según la model card, Swift 1.5 emplea un 58,5 % menos de tokens de pensamiento que su base obteniendo una puntuación un 0,35 % superior, lo que se traduce en una aceleración de hasta 9,18× en varias tareas.
 
-El modelo base tiene 26.895.998.464 parametros (~26,9 B) y esta orientado a eficiencia de razonamiento: segun la model card, Swift 1.5 consume un 58,5% menos de tokens de pensamiento y obtiene un 0,35% mas de puntuacion que su base, lo que se traduce en una mejora de velocidad de 9,18x en varias tareas (una pagina de terceros, Featherless, cita 1,95x). El atractivo de este repositorio concreto es que aplica las asignaciones por tensor de GSQ-RCO de ISTA-DASLab sobre los pesos de Swift 1.5, de modo que un modelo de ~27 B se puede ejecutar en equipos de consumo con ficheros de entre 8,42 GB y 11,77 GB.
+La relevancia de esta publicación concreta está en el formato: ofrece cuatro niveles de cuantización GGUF de precisión mixta (IQ2_XS, IQ2_S, IQ3_XXS e IQ3_S) que van de 8,42 GB a 11,77 GB, lo que permite ejecutar un modelo de casi 27B parámetros en hardware de consumo y en entornos con VRAM limitada. Las asignaciones por tensor provienen del release GSQ-RCO de ISTA-DASLab, refinadas específicamente para Swift. Cada nivel está disponible en versión estándar y en versión con cabeza MTP (multi-token prediction) para decodificación especulativa.
 
-Se publica bajo la licencia swift-open-license-1.0 (etiquetada como `other`), no incluye proyector de vision verificado y no aporta resultados de benchmarks de tareas: toda la evaluacion publicada en la model card son mediciones de divergencia KLD frente al modelo BF16.
+El modelo está pensado para inferencia local con llama.cpp y se distribuye bajo la licencia propietaria swift-open-license-1.0. La model card incluye mediciones de divergencia KL (KLD) frente al modelo BF16 en siete dominios (prosa, código, matemáticas y cuatro idiomas), lo que permite evaluar la pérdida de fidelidad de cada nivel de cuantización de forma cuantitativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen3.8 (etiqueta `qwen3_8`); no se detalla en la informacion disponible si emplea MoE, atencion lineal u otra variante |
-| Parametros totales | 26.895.998.464 (~26,9 B), dato real de safetensors del modelo base |
-| Parametros activos | no disponible |
-| Longitud de contexto | no especificada en la informacion disponible; el ejemplo oficial de llama-server configura `-c 262144` (256K), pero la propia model card advierte que no se evaluaron las cuantizaciones a esa longitud |
-| Tipos de cuantizacion | GGUF IQ2_XS, IQ2_S, IQ3_XXS e IQ3_S con asignacion mixta por tensor (perfiles GSQ-RCO); variantes `-mtp` con cabeza MTP |
-| Idiomas soportados | no disponible; las pruebas KLD held-out cubren ingles (C4), aleman, frances, espanol y chino (mC4) |
-| Licencia | swift-open-license-1.0 (campo `license: other`), con enlace a LICENSE y seccion de licencia enterprise |
-| Formato de pesos | GGUF (llama.cpp) |
-| Modelo base | ukisai/Swift-1.5-Qwen3.8-27b (relacion: quantized) |
-| Modelo fundacional | Qwen/Qwen3.8-27B |
-| Tamano por fichero (GB decimales) | IQ2_XS 8,42 / IQ2_S 9,26 / IQ3_XXS 10,09 / IQ3_S 11,77; las variantes `-mtp` anaden 0,35 GB |
-| Tamano del repositorio | 80,5 GB |
-| Etiquetas | gguf, llama.cpp, qwen3_8, gsq, rco, reasoning, efficient-thinking, token-efficient, post-training, imatrix, conversational, endpoints_compatible |
-| Referencias arXiv citadas en las etiquetas | arXiv:2604.18556, arXiv:2605.00649 |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-29 |
+| Arquitectura | Transformer denso (familia Qwen3.8), con cabeza MTP opcional en las variantes `-mtp` |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible de forma verificada; el ejemplo de uso de la model card emplea `-c 262144`, pero el autor advierte que no implica evaluación a esa longitud |
+| Tipos de cuantizacion | GGUF de precisión mixta: IQ2_XS, IQ2_S, IQ3_XXS, IQ3_S (cada uno con y sin cabeza MTP) |
+| Idiomas soportados | no disponibles oficialmente; las evaluaciones KLD cubren inglés, alemán, francés, español y chino |
+| Licencia | swift-open-license-1.0 (propietaria, etiquetada como `other`) |
+| Formato de pesos | GGUF (para llama.cpp); el modelo base se distribuye en BF16/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card de este repositorio no describe la arquitectura interna del modelo, solo documenta el procedimiento de cuantizacion. Los metadatos indican que se trata de un transformer decoder-only de la familia Qwen3.8 (etiqueta `qwen3_8`) y que su modelo base es ukisai/Swift-1.5-Qwen3.8-27b, a su vez derivado de Qwen/Qwen3.8-27B. No hay informacion disponible sobre numero de capas, dimension oculta, si existe mezcla de expertos, tipo de atencion o uso de decodificacion especulativa mas alla de la cabeza MTP opcional.
+El modelo base Swift 1.5 Qwen3.8-27B es un transformer denso de aproximadamente 26,9B parámetros derivado de la familia Qwen3.8. Según la model card, Swift 1.5 se construye sobre Swift 1.0 mediante un post-entrenamiento centrado en tareas agénticas de horizonte largo y de código, con el objetivo de mejorar el rendimiento global reduciendo el número de tokens de pensamiento. El autor reporta una reducción del 58,5 % en tokens de pensamiento con una mejora de 0,35 % en puntuación respecto al base, y una aceleración de 9,18× en varias tareas. No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO.
 
-El entrenamiento descrito es un post-entrenamiento sobre Swift 1.0 centrado en tareas de horizonte largo, agenticas y de codigo, con el objetivo de mejorar el rendimiento consumiendo menos tokens de pensamiento (58,5% menos, segun el autor). No se detallan en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon RLHF o DPO. La innovacion de este release es la cuantizacion: se reutilizan las asignaciones de precision por tensor del release GSQ-RCO de ISTA-DASLab para Qwen3.8-27B y se refinan especificamente para los pesos de Swift 1.5 (parte del procedimiento se describe como "reuse the..." y queda truncado en el material proporcionado). Las variantes `-mtp` conservan los tensores refinados y anaden la cabeza de prediccion multi-token, que requiere un runtime con soporte para esa implementacion concreta.
+La innovación técnica de esta publicación concreta es el esquema de cuantización GSQ-RCO: una asignación de precisión mixta por tensor (no un tipo uniforme para todos los tensores) que reutiliza las asignaciones del release de ISTA-DASLab para Qwen3.8-27B y las refina específicamente para Swift. Las variantes `-mtp` añaden una cabeza de predicción multi-token que permite decodificación especulativa, aunque requieren un runtime con soporte para la implementación MTP de este modelo. El autor advierte que la velocidad y calidad de la decodificación MTP no se han evaluado por separado, y que las mediciones KLD se hicieron sobre los ficheros estándar.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con plantilla de chat aplicada mediante `--jinja` en llama-server.
-- Razonamiento con modo de pensamiento eficiente: el ajuste post-entrenamiento reduce el numero de tokens de razonamiento frente a la version base.
-- Codigo: el post-entrenamiento del modelo base se centra explicitamente en tareas de programacion y agenticas; las mediciones held-out incluyen el corpus CodeParrot.
-- Matematicas: el modelo base se evalua sobre texto de GSM8K en las pruebas de cuantizacion; la model card de Qwen3.8-27B menciona MathVision y respuestas en formato `\boxed{}`.
-- Tareas agenticas y de horizonte largo, segun la descripcion del post-entrenamiento de Swift 1.5.
-- Capacidad multilingue parcialmente evidenciada: las pruebas KLD held-out cubren aleman, frances, espanol y chino ademas de ingles; no se publica una lista oficial de idiomas soportados.
-- Decodificacion multi-token (MTP) en las variantes `-mtp`, con soporte sujeto al runtime; velocidad y calidad no evaluadas por separado.
-- Tool calling / function calling y soporte de agentes: no se documenta explicitamente en la informacion disponible.
-- Vision: no incluida. El autor indica que no se ha verificado un proyector de vision para este release y que no se distribuye ningun ejemplo de vision validado.
-- Compatibilidad declarada con endpoints gestionados mediante la etiqueta `endpoints_compatible`.
+- Generación de texto conversacional y de propósito general (`pipeline_tag: text-generation`).
+- Razonamiento explícito con modo de pensamiento eficiente en tokens (etiquetas `reasoning`, `efficient-thinking`, `token-efficient`).
+- Tareas de código y agentes de horizonte largo, según el enfoque de post-entrenamiento declarado por el autor.
+- Razonamiento matemático (el conjunto de evaluación KLD incluye texto matemático de GSM8K).
+- Capacidades multilingües parcialmente evidenciadas por las evaluaciones KLD en alemán, francés, español y chino; no hay lista oficial de idiomas soportados.
+- Decodificación especulativa mediante cabeza MTP en las variantes `-mtp` (sujeta a soporte del runtime).
+- Compatibilidad con endpoints (`endpoints_compatible`) y uso conversacional con plantilla Jinja (`--jinja`).
+- No se ha verificado proyector de visión para este release; no se incluye soporte de imagen validado.
 
 ## Casos de uso
 
-- Asistente de razonamiento en local: con IQ3_S (11,77 GB) el modelo cabe en una GPU de 16 GB y permite mantener un asistente con modo de pensamiento sin enviar datos a un servicio externo, gracias a la eficiencia de tokens de pensamiento del ajuste de Swift 1.5.
-- Agente de codigo en estaciones de trabajo: el modelo base esta post-entrenado para tareas de codigo y agenticas; desplegado con llama-server expone una API compatible con OpenAI en el puerto 8000 que se puede conectar a herramientas de edicion y pipelines de CI/CD.
-- Generacion asistida en equipos con GPU de gama media: las variantes IQ2_XS (8,42 GB) e IQ2_S (9,26 GB) permiten ejecutar un modelo de ~27 B en tarjetas de 8-12 GB reduciendo el contexto, a cambio de mayor divergencia KLD.
-- Procesamiento de documentos multilingues: al cubrir aleman, frances, espanol y chino en las pruebas de distribucion, es razonable usarlo en resumen y extraccion de informacion sobre corpus en esos idiomas, verificando la calidad caso por caso porque no hay benchmarks de tarea publicados.
-- Razonamiento matematico asistido: util para tutorizacion o resolucion paso a paso de problemas de tipo GSM8K, con la advertencia de que las cuantizaciones IQ2 y IQ3 incrementan la divergencia en texto matematico entre un 4,9% y un 7,7% respecto a las comparativas de ISTA.
-- Despliegue en entornos con requisitos de coste de latencia: la reduccion de tokens de pensamiento disminuye el tiempo de generacion por respuesta; conviene medirla en el hardware objetivo porque no hay datos de throughput publicados.
-- Prototipado e investigacion en cuantizacion: el repositorio publica `release-manifest.json`, `SHA256SUMS` y tablas KLD held-out por dominio, lo que lo hace util como punto de partida reproducible para estudiar tecnicas de cuantizacion por asignacion de tensor.
-- Servicio de chat autoalojado con contexto largo: el ejemplo oficial de llama-server usa 256K de contexto, adecuado para conversaciones multi-turno extensas o analisis de repositorios, siempre que la memoria disponible lo permita y asumiendo que la calidad a esa longitud no esta validada.
+- Despliegue local en estaciones de trabajo con GPU de consumo: los ficheros IQ2_XS (8,42 GB) e IQ3_S (11,77 GB) permiten ejecutar un modelo de ~27B en tarjetas de 12-16 GB de VRAM con llama.cpp, algo inviable con los pesos BF16.
+- Asistentes de código en el IDE o en pipelines de CI/CD: el post-entrenamiento orientado a código y el bajo coste en tokens de pensamiento reducen la latencia por petición, lo que encaja en flujos interactivos de autocompletado y revisión.
+- Agentes multi-paso con muchas llamadas encadenadas: la reducción del 58,5 % en tokens de pensamiento declarada por el autor abarata cada paso de razonamiento, lo que importa en bucles agénticos donde el coste se multiplica por iteración.
+- Procesamiento por lotes en servidores con VRAM limitada: con llama-server y las cuantizaciones IQ3 se puede servir el modelo en una sola GPU de 16-24 GB, evitando el coste de un nodo multi-GPU para BF16.
+- Evaluación e investigación de cuantización: la model card publica tablas KLD por dominio y ficheros de metadatos (`evaluation/report.json`, `heldout-kld.tsv`), lo que permite reproducir y comparar el impacto de cada nivel de cuantización sobre la distribución de salida.
+- Prototipado de aplicaciones conversacionales en español: aunque no hay lista oficial de idiomas, las mediciones KLD en español (0,024186 en IQ3_S, el mejor dominio de los siete) sugieren una degradación baja de la distribución en este idioma.
+- Inferencia con decodificación especulativa: las variantes `-mtp` permiten probar aceleración por predicción multi-token en runtimes compatibles, útil para experimentar con throughput en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card incluye unicamente mediciones de divergencia KLD (divergencia de la distribucion de siguiente token frente al modelo BF16; menor es mejor), no exactitud en tareas.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible. La model card remite a la ficha del modelo base para los benchmarks a nivel de modelo y solo publica mediciones de divergencia KL de la cuantización.
 
-Desarrollo (wiki.test.raw, 100 fragmentos, contexto 512, datos que influyeron en el refinado y por tanto no son validacion independiente):
+KLD frente a Swift 1.5 BF16 (menor es mejor), contexto de 512 tokens:
 
-| Perfil | KLD de desarrollo |
-|---|---:|
-| IQ2_XS | 0,189979 |
-| IQ2_S | 0,134751 |
-| IQ3_XXS | 0,097774 |
-| IQ3_S | 0,051265 |
-
-Held-out (100 fragmentos en prosa/codigo/matematicas; 25 fragmentos por idioma; contexto 512):
-
-| Corpus held-out | IQ2_XS | IQ2_S | IQ3_XXS | IQ3_S |
+| Texto held-out | IQ2_XS | IQ2_S | IQ3_XXS | IQ3_S |
 |---|---:|---:|---:|---:|
 | Prosa C4 | 0,161594 | 0,107438 | 0,080238 | 0,041748 |
-| Codigo CodeParrot | 0,120884 | 0,084739 | 0,062546 | 0,035447 |
-| Texto matematico GSM8K | 0,117467 | 0,096348 | 0,075964 | 0,043916 |
-| Aleman | 0,124482 | 0,091422 | 0,074645 | 0,035698 |
-| Frances | 0,166785 | 0,113277 | 0,077791 | 0,046219 |
-| Espanol | 0,082313 | 0,056393 | 0,039906 | 0,024186 |
+| Código CodeParrot | 0,120884 | 0,084739 | 0,062546 | 0,035447 |
+| Texto matemático GSM8K | 0,117467 | 0,096348 | 0,075964 | 0,043916 |
+| Alemán | 0,124482 | 0,091422 | 0,074645 | 0,035698 |
+| Francés | 0,166785 | 0,113277 | 0,077791 | 0,046219 |
+| Español | 0,082313 | 0,056393 | 0,039906 | 0,024186 |
 | Chino | 0,207063 | 0,129485 | 0,103141 | 0,052241 |
 
-Segun el autor, los cuatro ficheros refinados mejoran el KLD respecto a las cuantizaciones de partida de Swift en los siete dominios, pero no son uniformemente mejores que las cuantizaciones comparativas de ISTA: el KLD en texto matematico es entre un 4,9% y un 7,7% superior, e IQ3_S es superior en cinco de los siete dominios. Las comparativas de ISTA miden cada cuantizacion contra su propio modelo BF16, por lo que no constituyen una comparacion directa de capacidad entre Swift y Qwen.
+KLD de desarrollo (wiki.test.raw, 100 fragmentos, contexto 512): IQ2_XS 0,189979; IQ2_S 0,134751; IQ3_XXS 0,097774; IQ3_S 0,051265. El autor indica que los cuatro ficheros mejoran el KLD respecto a sus cuantizaciones Swift de partida en los siete dominios, pero no son uniformemente mejores que las cuantizaciones de comparación de ISTA: el KLD en texto matemático es un 4,9-7,7 % superior y IQ3_S es peor en cinco de siete dominios. Estas comparaciones miden cada cuantización contra su propio BF16 correspondiente y no constituyen un ranking de tareas Swift frente a Qwen.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la model card advierte que el consumo en ejecucion incluye la cache de contexto y los buffers de computo, por lo que hay que sumar al tamano del fichero (8,42 / 9,26 / 10,09 / 11,77 GB) el coste de la cache KV. No se publican cifras de memoria por configuracion de contexto.
-- Cabe en GPU de consumo: IQ2_XS (8,42 GB) e IQ2_S (9,26 GB) son viables en tarjetas de 10-12 GB si se reduce el contexto; IQ3_XXS (10,09 GB) e IQ3_S (11,77 GB) encajan con holgura en 16 GB y, con contexto reducido, en 12 GB. No hay mediciones oficiales de consumo de memoria, solo tamanos de fichero.
-- GPU recomendadas: no especificadas en la informacion disponible. Por tamano de fichero, el rango objetivo son GPU de consumo de 12-24 GB (por ejemplo RTX 4080/4090) y GPU profesionales de 24-80 GB (A100, H100) para contextos largos y concurrencia alta. No se aportan datos que confirmen rendimiento en cada una.
-- Opciones de despliegue: llama.cpp / llama-server es el runtime documentado (`llama-server -m ... --jinja -fa on -ngl 99 --port 8000`), con requisito de una build que soporte Qwen3.8. Las variantes `-mtp` requieren un runtime con soporte para la implementacion MTP de este modelo. No se mencionan vLLM, TGI, Ollama ni otros backends en la informacion disponible.
-- Parametros de muestreo recomendados: temperatura 1.0, top-p 0.95, top-k 20, min-p 0.0, presence-penalty 0.0, repeat-penalty 1.0, con `--jinja` y flash attention activada.
-- Latencia y throughput: no se publican cifras absolutas. La unica referencia es la reduccion del 58,5% en tokens de pensamiento y el 9,18x de mejora de velocidad en varias tareas segun la model card; una pagina de terceros (Featherless) indica 1,95x, discrepancia que no se puede resolver con la informacion disponible.
+- VRAM estimada para inferencia: aproximadamente el tamaño del fichero más la caché de contexto y los buffers de cómputo. IQ2_XS ~8,42 GB, IQ2_S ~9,26 GB, IQ3_XXS ~10,09 GB, IQ3_S ~11,77 GB; las variantes `-mtp` añaden unos 0,35 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para IQ3_S con contexto amplio; RTX 4080/4070 Ti Super (16 GB) para IQ2_S o IQ3_XXS con contexto moderado; A100/H100 solo si se necesita contexto muy largo o mayor paralelismo.
+- Cabe en GPU de consumo: sí, desde tarjetas de 12 GB (IQ2_XS con contexto corto) hasta 16-24 GB para los niveles superiores.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`) con una build que soporte Qwen3.8; los ficheros son GGUF y no son directamente compatibles con vLLM o TGI sin conversión. Ollama puede importarlos manualmente.
+- Latencia y throughput: no disponibles de forma medida. El autor declara aceleración de 9,18× en tareas del modelo base por reducción de tokens de pensamiento, pero no publica cifras de tokens por segundo para estas cuantizaciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF (este release) | ~26,9 B | no disponible; ejemplo con 256K | GGUF IQ2-IQ3 con perfiles GSQ-RCO | swift-open-license-1.0 | Cuantizacion mixta refinada; variantes con MTP; sin benchmarks de tarea; 0 descargas |
-| ukisai/Swift-1.5-Qwen3.8-27b | ~26,9 B | no disponible | safetensors (BF16) | swift-open-license-1.0 | Modelo original sin cuantizar; referencia de calidad para las mediciones KLD |
-| ukisai/Swift-1.5-Qwen3.8-27B-GGUF | ~26,9 B | no disponible | GGUF estandar | swift-open-license-1.0 | Cuantizaciones de partida sobre las que este release aplica el refinado GSQ-RCO |
-| ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF | ~27 B (Qwen3.8-27B) | no disponible | GGUF con perfiles GSQ-RCO | no disponible | Origen de las asignaciones por tensor reutilizadas; se usa como comparativa de KLD |
-| Qwen/Qwen3.8-27B | ~27 B | no disponible | safetensors | no disponible | Modelo fundacional; Qwen3.8 se presenta como la primera clase Qwen-Max en abierto, con foco en codigo, trabajo profesional, investigacion y agentes de horizonte largo |
+| Swift 1.5 Qwen3.8-27B GSQ-RCO (este) | ~26,9B | no verificado | GGUF IQ2-IQ3 | swift-open-license-1.0 | Cuantización mixta refinada, variantes MTP |
+| Swift 1.5 Qwen3.8-27B (base) | ~26,9B | no disponible | BF16/safetensors | swift-open-license-1.0 | Referencia de calidad; requiere mucha más VRAM |
+| Qwen3.8-27B GSQ-RCO (ISTA-DASLab) | ~27B | no disponible | GGUF | según modelo base | Mismas asignaciones por tensor sin refinamiento Swift; peor KLD en matemáticas según el autor |
+| GGUFs estándar de Swift 1.5 (ukisai) | ~26,9B | no disponible | GGUF uniforme | swift-open-license-1.0 | Cuantización de tipo uniforme, sin mezcla por tensor |
+
+No se dispone de datos de benchmarks de tareas que permitan comparar rendimiento funcional con alternativas de otros autores.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks de exactitud en tareas: todas las cifras publicadas son KLD distribucional, que mide la divergencia frente al BF16 y no la precision en tareas reales.
-- Las pruebas se hicieron con contexto de 512 tokens, por lo que no demuestran calidad a 32K o longitudes mayores, pese a que el ejemplo de uso configure 256K.
-- El KLD en texto matematico es entre un 4,9% y un 7,7% superior al de las cuantizaciones comparativas de ISTA, e IQ3_S es peor en cinco de los siete dominios; no se trata de una mejora uniforme.
-- El cribado de solapamiento lexico frente a texto de calibracion no garantiza deduplicacion semantica ni ausencia de sobreajuste, segun la propia model card.
-- Las variantes `-mtp` no han sido evaluadas por separado en velocidad ni calidad, y requieren runtimes especificos; su uso en produccion queda sin validar.
-- No se incluye proyector de vision ni ejemplo validado de vision, a pesar de que existan releases de la familia con esa capacidad.
-- Licencia swift-open-license-1.0 (`other`), con una seccion de licencia enterprise en el repositorio original: las condiciones exactas de uso comercial no estan detalladas en la informacion disponible y deben consultarse en el enlace de licencia antes de desplegar en produccion.
-- Riesgo de alucinacion propio de los modelos generativos; se agrava en las cuantizaciones de menor precision (IQ2_XS, IQ2_S), con KLD de hasta 0,189979 en desarrollo.
-- Idiomas soportados no declarados oficialmente; la evidencia multilingue se limita a aleman, frances, espanol y chino en las pruebas de distribucion, con el chino como dominio de mayor KLD.
-- El repositorio tiene 0 descargas y 0 likes y se creo el 2026-09-29; no hay validacion independiente de esta publicacion concreta.
-- Es una republicacion en la cuenta taurusduan de un release de UkisAI: los enlaces, el manifiesto y la licencia apuntan al repositorio de ukisai, sin que se documente una relacion oficial entre ambas cuentas.
-- El README advierte que el repositorio era privado y requiere autenticacion con una cuenta autorizada; el acceso puede no estar garantizado de forma permanente.
-- El tamano del repositorio (80,5 GB) es muy superior a la suma de los ocho ficheros GGUF listados (~40,9 GB), lo que sugiere la presencia de ficheros adicionales o duplicados no descritos en la informacion disponible.
-- Discrepancia de velocidad: la model card cita 9,18x y una pagina de terceros 1,95x; conviene medir el rendimiento en el hardware objetivo.
+- Licencia propietaria swift-open-license-1.0: es necesario revisar el texto completo antes de cualquier uso comercial; no es una licencia de código abierto estándar.
+- Las mediciones KLD se hicieron a 512 tokens de contexto; el autor advierte explícitamente que no establecen la calidad a 32K ni a contextos mayores.
+- El cribado de solapamiento léxico frente al texto de calibración no demuestra ausencia de sobreajuste ni deduplicación semántica.
+- El KLD en texto matemático es un 4,9-7,7 % superior al de las cuantizaciones de comparación de ISTA, e IQ3_S es peor en cinco de siete dominios frente a esas referencias.
+- No hay datos publicados de benchmarks de tareas para este release; el rendimiento real en MMLU, HumanEval o GSM8K no está verificado.
+- No se ha verificado proyector de visión: el release no incluye soporte de imagen validado.
+- Las variantes `-mtp` requieren un runtime con soporte específico y su velocidad y calidad no se han evaluado por separado.
+- No hay lista oficial de idiomas soportados; las capacidades multilingües solo están evidenciadas por las mediciones KLD.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; aplican los del modelo base, que no se detallan aquí.
+- El repositorio tiene 390 descargas y 0 likes en el momento de la consulta, con validación comunitaria escasa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base BF16: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
-- GGUFs estandar de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
-- Cuantizaciones de referencia GSQ-RCO (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
-- Modelo fundacional: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
-- Pagina del modelo en UkisAI: https://ukisai.com/swift-1-5-27b
-- Web de UkisAI: https://ukisai.com
-- Pagina de producto Swift: https://ukisai.com/products/swift
-- Pagina de despliegue en Featherless: https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b
-- Repositorio GGUF previo de la misma cuenta: https://huggingface.co/taurusduan/Swift-Qwen3.8-27B-GGUF/blob/main/Swift-Qwen3.8-27B-Q5_K_M.gguf
+- GGUFs estándar del autor original: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
+- Release GSQ-RCO de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/LICENSE
-- Manifiesto del release: release-manifest.json (en el repositorio)
-- Sumas de verificacion: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/SHA256SUMS
-- Resultados KLD held-out completos: evaluation/heldout-kld.tsv (en el repositorio)
-- Metadatos de evaluacion: evaluation/report.json (en el repositorio)
-- Papers citados en las etiquetas: arXiv:2604.18556, arXiv:2605.00649
+- Sumas de verificación SHA256: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/SHA256SUMS
+- Web de UkisAI: https://ukisai.com
+- Página de producto Swift: https://ukisai.com/products/swift
+- Paper de referencia 1: arxiv:2604.18556
+- Paper de referencia 2: arxiv:2605.00649

@@ -5,7 +5,7 @@
   "author": "AbstractFramework",
   "url": "https://huggingface.co/AbstractFramework/minimax-h3-8bit",
   "created_at": "2026-11-22T20:27:01.000Z",
-  "updated_at": "2026-11-23T00:16:09.000Z",
+  "updated_at": "2026-11-23T18:18:05.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-video",
@@ -26,7 +26,7 @@
     "audio-video-generation",
     "synchronized-audio-video",
     "base_model:MiniMaxAI/MiniMax-H3",
-    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
     "license:other",
     "region:us"
   ],
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 69010605065,
-  "storage_human": "69.0 GB",
+  "storage_bytes": 138021210130,
+  "storage_human": "138.0 GB",
   "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [

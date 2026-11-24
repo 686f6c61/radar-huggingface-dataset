@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GLM-5.3-Flash-REAP50-NVFP4-v2 - Hugging Face",
-      "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4-v2",
-      "snippet": "50% of routed experts removed with REAP (Router-weighted Expert Activation Pruning, arXiv:2510.13999), calibrated on a permissively-licensed multi-domain corpus that includes real image-text pairs. Mixture weighted for a coding/agentic model that stays empirically grounded: agentic 24%, code 21%"
-    },
-    {
-      "title": "patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4-v2 at main",
-      "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4-v2/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

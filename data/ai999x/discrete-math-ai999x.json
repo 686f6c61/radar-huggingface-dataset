@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 341,
+  "downloads_30d": 343,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -59,48 +59,10 @@
   "benchmarks": [
     {
       "task": "discrete math question answering",
-      "dataset": "Golden answers (538 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (566 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
-    },
-    {
-      "task": "discrete math question answering",
-      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
-      "metric": "right capability first",
-      "value": 0.918
-    },
-    {
-      "task": "discrete math question answering",
-      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
-      "metric": "in the top five",
-      "value": 0.988
     }
   ],
-  "sources": [
-    {
-      "title": "GitHub - AI999X/discrete-math-ai999x: Offline discrete math solver ...",
-      "url": "https://github.com/AI999X/discrete-math-ai999x",
-      "snippet": "Offline discrete math solver: number theory, modular arithmetic, combinatorics, graph theory and network algorithms, logic and the mathematics of cryptography, with steps, LaTeX and honest refusals - AI999X/discrete-math-ai999x"
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=ai999x",
-      "snippet": "AI999X/discrete-math-ai999x Question Answering • 4.72M•Updated about 9 hours ago• 18"
-    },
-    {
-      "title": "algebra-ai999x · PyPI",
-      "url": "https://pypi.org/project/algebra-ai999x/",
-      "snippet": "algebra-ai999x is an offline, deterministic Python solver that answers algebra questions with verified results from 56 certified capabilities, gives 230 documented answers identically on Windows and Linux, and refuses rather than guesses when an answer cannot be verified. algebra-ai999x is a compact, deterministic algebra engine for Python."
-    },
-    {
-      "title": "math-foundations-ai999x · PyPI",
-      "url": "https://pypi.org/project/math-foundations-ai999x/",
-      "snippet": "math-foundations-ai999x is an offline, deterministic Python solver that answers math foundations questions with verified results from 119 certified capabilities, gives 625 documented answers identically on Windows and Linux, and refuses rather than guesses when an answer cannot be verified."
-    },
-    {
-      "title": "Ai999x Encoder - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/ai999x/ai999x-encoder",
-      "snippet": "🆔 Identity & Source id hf-model--ai999x--ai999x-encoder slug ai999x--ai999x-encoder source huggingface author AI999X license Apache-2.0 tags onnx, safetensors, bert, sentence-similarity, feature-extraction, semantic-search, capability-search, science, physics, mathematics, tiny, cpu, browser, ai999x, en, license:apache-2.0, model-index ..."
-    }
-  ]
+  "sources": []
 }

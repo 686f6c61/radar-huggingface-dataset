@@ -2,95 +2,101 @@
 
 ## Resumen
 
-Qwen3-ASR-0.6B-AX8860-llama.cpp es una implementación optimizada para hardware específico del modelo de reconocimiento automático de voz (ASR) Qwen3-ASR-0.6B, desarrollado originalmente por el equipo Qwen de Alibaba. Esta variante, publicada por AXERA-TECH, empaqueta los pesos en formato GGUF junto con kernels compilados para la NPU de cuatro núcleos del SoC Axera AX8860, permitiendo ejecutar la transcripción de audio directamente en el acelerador neuronal del dispositivo en lugar de en la CPU.
+Qwen3-ASR-0.6B-AX8860-llama.cpp es un paquete de despliegue publicado por AXERA-TECH que permite ejecutar el modelo de reconocimiento automatico del habla Qwen3-ASR-0.6B (desarrollado por el equipo Qwen de Alibaba) sobre la NPU de cuatro nucleos del SoC Axera AX8860, utilizando una bifurcacion de llama.cpp con backend ggml-axera. No se trata de un modelo nuevo entrenado por AXERA, sino de una distribucion de pesos en formato GGUF junto con kernels precompilados, binarios estaticos para la placa y scripts de ejecucion que trasladan la inferencia del transformer y del codificador de audio a la NPU del dispositivo.
 
-El modelo resuelve el problema de desplegar ASR de calidad en entornos de borde (edge computing) con recursos limitados, donde no es viable ejecutar un modelo de voz en GPU. Con 596 millones de parámetros, el modelo base es lo bastante compacto para caber en memoria de un SoC, y esta versión demuestra latencias de tiempo real muy bajas: un factor RTF de 0,028 para una grabación de 60 segundos (1,7 s de procesamiento).
+El modelo base tiene 596.049.920 parametros (aproximadamente 0,6 mil millones), lo que lo situa en la categoria de modelos ASR ligeros aptos para edge computing. El repositorio ocupa 1,7 GB e incluye dos artefactos GGUF: los pesos del modelo de lenguaje en BF16 (1,1 GB) y el codificador de audio en Q8_0 (204 MB), que se descomprime a BF16 al cargarse. La ventana de contexto maxima es de 4096 tokens y el servicio solo admite una secuencia simultanea.
 
-La relevancia de esta ficha radica en que no es un modelo nuevo entrenado desde cero, sino un artefacto de despliegue que combina pesos cuantizados (BF16 para el LM, Q8_0 para el codificador de audio) con kernels NPU propietarios y binarios estáticos de llama.cpp. Está pensado para integradores que trabajan con el AX8860 y necesitan transcripción local, sin conexión y de baja latencia.
+La relevancia de esta ficha radica en que demuestra un flujo completo de ASR local en hardware NPU de bajo consumo, con tasas de tiempo real (RTF) entre 0,028 y 0,12 segun la duracion del audio, y con una interfaz compatible con la API de OpenAI (`/v1/chat/completions` con entrada de audio en base64). Es un caso practico de integracion de modelos Qwen en silicio especializado mediante el ecosistema llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo ASR multimodal: codificador de audio + modelo de lenguaje (base Qwen3-ASR-0.6B); ejecución sobre llama.cpp con backend ggml-axera |
-| Parametros totales | 596.049.920 (dato real de safetensors del modelo base) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4096 tokens (máximo configurado en llama.cpp para esta implementación) |
-| Tipos de cuantizacion | LM en BF16 (GGUF); codificador de audio en Q8_0 (GGUF); en carga se convierte a MXFP8 (LM) y BF16 (audio) para los kernels NPU |
-| Idiomas soportados | no disponible |
+| Arquitectura | Modelo base Qwen3-ASR (transformer con codificador de audio y decoder de lenguaje); despliegue con llama.cpp y backend ggml-axera sobre NPU AX8860 |
+| Parametros totales | 596.049.920 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 4096 tokens (maximo configurable con `-c`) |
+| Tipos de cuantizacion | Pesos publicados: BF16 (modelo de lenguaje) y Q8_0 (codificador de audio); en carga se convierte el LM a MXFP8 y el codificador a BF16 |
+| Idiomas soportados | no disponible en la informacion proporcionada |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (`qwen3-asr-0.6b-bf16.gguf`, `mmproj-qwen3-asr-0.6b-q8_0.gguf`) + kernels NPU propietarios + binarios estáticos |
+| Formato de pesos | GGUF (`qwen3-asr-0.6b-bf16.gguf`, `mmproj-qwen3-asr-0.6b-q8_0.gguf`) + kernels NPU y binarios estaticos |
+| Modelo base | Qwen/Qwen3-ASR-0.6B |
+| Hardware objetivo | Axera AX8860, NPU de 4 nucleos, SDK V0.5.0 o superior |
+| Tamano del repositorio | 1,7 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, Qwen3-ASR-0.6B, es un sistema de reconocimiento de voz que combina un codificador de audio con un modelo de lenguaje de la familia Qwen3. Esta variante no aporta entrenamiento nuevo: redistribuye los pesos del modelo base en dos ficheros GGUF separados, uno para el modelo de lenguaje (BF16, 1,1 GB) y otro para el codificador de audio (Q8_0, 204 MB), y los acompaña de kernels compilados para la NPU del AX8860.
+El paquete no aporta informacion sobre el entrenamiento del modelo base Qwen3-ASR-0.6B: no se detallan el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Lo que si se documenta es la arquitectura de despliegue: un codificador de audio (cargado desde el `mmproj` en Q8_0 y descomprimido a BF16) y un modelo de lenguaje de 0,6 mil millones de parametros, ambos ejecutados mediante kernels especificos para la NPU AX8860 (uno para el codificador de audio, uno para el prefill de texto y uno para el decode de texto con la cabeza de salida).
 
-La innovación técnica de esta publicación no está en el modelo sino en el runtime: se utiliza una bifurcación de llama.cpp (`ZHEQIUSHUI/llama.cpp`, rama `feat/qwen3-whole`) con soporte para los modelos `qwen3` y `qwen3_asr` mediante el backend `ggml-axera`. Los kernels NPU (codificador de audio, prefill de texto y decode de texto con cabeza de salida) no contienen pesos; estos se convierten en tiempo de carga desde los GGUF (MXFP8 para el LM, BF16 para el audio, dequantizando desde Q8_0). No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni si hubo RLHF o DPO en el modelo base.
+La innovacion tecnica principal es la integracion ggml-axera dentro de una bifurcacion de llama.cpp (`ZHEQIUSHUI/llama.cpp`, rama `axera-dev`, commit `6613735ce`), que permite descargar el computo en la NPU manteniendo los pesos exclusivamente en los ficheros GGUF: los kernels no contienen pesos, sino que se convierten en tiempo de carga (MXFP8 para el LM, BF16 para el codificador de audio). La primera peticion anade aproximadamente 0,4 s de conversion, que ocurre una sola vez por arranque. El binario `llama-mtmd-cli` y el servidor `llama-server` se distribuyen estaticamente y solo dependen de `/opt/lib` y libc.
 
 ## Capacidades
 
-- Reconocimiento automático de voz (transcripción de audio a texto) en formato WAV.
-- Procesamiento de audio vía API compatible con OpenAI (`/v1/chat/completions`) con entrada `input_audio` en base64.
-- Ejecución local en NPU sin conexión a red, con latencias de tiempo real (RTF de 0,028 a 0,12 según duración).
-- Modo servidor (`llama-server`) y modo línea de comandos (`llama-mtmd-cli`) para transcribir un fichero directamente.
-- Procesamiento de una única secuencia simultánea (sin batching concurrente).
-- No se documentan capacidades de tool calling, agentes, visión ni modo de razonamiento explícito en la información disponible.
-- Capacidades multilingües: no disponibles en la documentación proporcionada.
+- Reconocimiento automatico del habla (transcripcion de audio a texto) sobre ficheros WAV.
+- Procesamiento multimodal de audio: la entrada se pasa como `{"type":"input_audio","input_audio":{"format":"wav","data":""}}` en el campo `content` de la peticion.
+- Servicio compatible con la API de OpenAI mediante `/v1/chat/completions` (etiqueta `endpoints_compatible` en el repositorio).
+- Ejecucion en modo CLI para transcribir una grabacion individual (`./run.sh speech.wav`).
+- Ejecucion en modo servidor (`./run.sh -s 8080`) para integracion en aplicaciones.
+- Inferencia completamente local en la NPU del dispositivo, sin dependencia de servicios en la nube.
+- Soporte de contexto de hasta 4096 tokens por peticion.
+- No se documentan capacidades de tool calling, agentes, vision, audio de salida ni modo de razonamiento extendido en la informacion disponible.
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz en dispositivos empotrados: el modelo procesa una grabación de 60 segundos en 1,7 segundos sobre la NPU del AX8860, lo que permite integrarlo en grabadoras o asistentes de voz locales sin depender de la nube.
-- Subtitulado en tiempo real de audio capturado por micrófono: con un RTF de 0,05–0,06 para clips de 7,3 segundos, el sistema puede mantener el ritmo de una conversación continua en un dispositivo de borde.
-- Asistentes de voz para domótica o electrodomésticos: al ejecutarse íntegramente en el SoC, preserva la privacidad del audio y funciona sin conectividad, adecuado para comandos de voz locales.
-- Servicio de transcripción en red local: el modo `llama-server` expone una API compatible con OpenAI, de modo que aplicaciones existentes pueden apuntar a `http://<dispositivo>:8080/v1/chat/completions` sin cambios en el cliente.
-- Digitalización de entrevistas o dictáfonos en campo: el bajo consumo y la ejecución en NPU permiten transcribir in situ grabaciones de hasta 60 segundos o más (en fragmentos) sin infraestructura de servidor.
-- Validación y prototipado de pipelines ASR en hardware Axera: sirve como referencia para comparar la implementación NPU con alternativas en CPU o GPU, ya que el autor reporta transcripciones idénticas a la implementación NPU anterior en un conjunto de 20 frases.
+- Transcripcion de notas de voz en dispositivos empotrados: el modelo procesa un WAV de 60 s en 1,7 s (RTF 0,028) sobre la NPU AX8860, lo que permite transcribir mensajes de voz en tiempo casi real dentro de un dispositivo de bajo consumo.
+- Subtitulado y actas de reuniones en local: con RTF de 0,05-0,06 para grabaciones de 7,3 s, es viable procesar segmentos cortos de audio de forma secuencial para generar transcripciones sin enviar datos a terceros.
+- Asistentes de voz para domotica y wearables: al ejecutarse integramente en la NPU y no requerir GPU dedicada, encaja en dispositivos con restricciones termicas y energeticas que necesitan reconocimiento de comandos.
+- Servicio de transcripcion autoalojado en edge: el endpoint `/v1/chat/completions` compatible con OpenAI permite sustituir llamadas a APIs externas por un servidor local en la placa, simplificando la integracion en aplicaciones existentes.
+- Cumplimiento y privacidad de datos: al no salir el audio del dispositivo, es adecuado para entornos sanitarios, legales o industriales donde la transcripcion de conversaciones no puede delegarse a la nube.
+- Prototipado y validacion de hardware NPU: los kernels y binarios publicados sirven como referencia para evaluar el rendimiento de llama.cpp sobre AX8860 antes de disenar un producto final.
+- Automatizacion de pipelines de audio por lotes: el script `run.sh` permite encadenar transcripciones de ficheros WAV en un flujo de procesamiento local.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos de rendimiento publicados son medidas de latencia end-to-end en modo servidor sobre AX8860 (SDK V0.5.1, NPU de 4 núcleos):
+Los unicos datos de rendimiento publicados son medidas de latencia y RTF en modo servidor sobre AX8860 (SDK V0.5.1, NPU de 4 nucleos), de extremo a extremo:
 
 | Duracion del audio | Tiempo de proceso | RTF |
 |---|---|---|
 | 0,6 s | 0,07 s | 0,12 |
-| 7,3 s | 0,38–0,47 s | 0,05–0,06 |
+| 7,3 s | 0,38-0,47 s | 0,05-0,06 |
 | 60 s | 1,7 s | 0,028 |
 
-La primera petición añade aproximadamente 0,4 s de conversión de pesos (una vez por arranque). En cuanto a precisión, el autor indica que las transcripciones son idénticas a las de la implementación NPU anterior, con 20 de 20 frases exactas en su conjunto de evaluación. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, WER en LibriSpeech, etc.) en la información disponible.
+La primera peticion anade aproximadamente 0,4 s de conversion de pesos (una vez por arranque). En cuanto a correccion, el autor indica que las transcripciones de las grabaciones de prueba son identicas a las de la implementacion NPU anterior, con 20 de 20 frases exactas sobre su conjunto de evaluacion. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, WER sobre LibriSpeech u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: SoC Axera AX8860 con NPU de 4 núcleos y SDK V0.5.0 o superior (verificable con `cat /proc/ax_proc/version`).
-- VRAM/RAM: no se especifica el consumo de memoria; los pesos ocupan 1,1 GB (LM BF16) + 204 MB (codificador Q8_0), más el espacio de trabajo de los kernels.
-- GPU: no aplica; la implementación está ligada a la NPU del AX8860 y no se documenta soporte para GPU convencionales (A100, H100, RTX 4090).
-- Despliegue: binarios estáticos `llama-mtmd-cli` y `llama-server` incluidos en `bin/`, con dependencia únicamente de `/opt/lib` y libc. Variables necesarias: `LD_LIBRARY_PATH=/opt/lib` y `GGML_AXERA_KERNEL_DIR=<repo>/kernels`; flags `-ngl 99` y `-c` máximo 4096; servidor con `-np 1`.
-- Latencia y throughput: RTF de 0,028–0,12 según duración; procesamiento de una sola secuencia, sin concurrencia.
+- Hardware objetivo: SoC Axera AX8860 con NPU de 4 nucleos; no se documenta ejecucion en GPU convencional.
+- SDK: V0.5.0 o superior (verificable con `cat /proc/ax_proc/version`); las medidas se tomaron con V0.5.1.
+- Memoria: el repositorio ocupa 1,7 GB; los pesos se cargan desde los GGUF (1,1 GB el LM en BF16 y 204 MB el codificador en Q8_0) y se convierten a MXFP8/BF16 en la NPU.
+- Variables de entorno: `LD_LIBRARY_PATH=/opt/lib` y `GGML_AXERA_KERNEL_DIR=<repo>/kernels`; desde el 2026-11-24 el binario aborta si no se define `GGML_AXERA_KERNEL_DIR`.
+- Parametros de ejecucion: `-ngl 99` para descargar todas las capas en la NPU, `-c` hasta 4096 y `-np 1` en el servidor (una sola secuencia).
+- Despliegue: `llama-mtmd-cli` (CLI) y `llama-server` (API compatible con OpenAI) incluidos como binarios estaticos en `bin/`.
+- Exclusividad: el runtime ocupa los 4 nucleos de la NPU, por lo que no deben ejecutarse otros programas NPU en paralelo.
+- VRAM, GPU recomendadas (A100, H100, RTX 4090), latencia en GPU y throughput en GPU: no disponibles; el paquete esta disenado exclusivamente para la NPU AX8860.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Despliegue |
-|---|---|---|---|---|
-| Qwen3-ASR-0.6B-AX8860-llama.cpp (esta ficha) | 596 M | 4096 | no disponible | NPU Axera AX8860, llama.cpp + ggml-axera |
-| Qwen3-ASR-0.6B (modelo base) | 596 M | no disponible | no disponible | GPU/CPU con frameworks estándar |
-| Whisper small (referencia de categoria) | ~244 M | 448 tokens de audio | MIT (según versión) | CPU/GPU, whisper.cpp, etc. |
+No se dispone de datos publicados en la informacion proporcionada para comparar este paquete con alternativas equivalentes (por ejemplo, otras distribuciones de Qwen3-ASR-0.6B para CPU/GPU o modelos ASR ligeros como Whisper small). La comparacion solo puede establecerse frente al propio modelo base:
 
-No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada; la comparativa se limita a parámetros y plataforma de despliegue.
+| Modelo | Parametros | Contexto | Hardware | Formato | Licencia |
+|---|---|---|---|---|---|
+| AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp | 596.049.920 | 4096 tokens | NPU Axera AX8860 | GGUF + kernels NPU | no disponible |
+| Qwen/Qwen3-ASR-0.6B (modelo base) | 596.049.920 | no disponible | CPU/GPU generica | safetensors (presumiblemente) | no disponible |
 
 ## Limitaciones y advertencias
 
-- Exclusividad de hardware: solo funciona en la NPU del AX8860; no es portable a otras plataformas sin recompilar kernels.
-- Exclusividad de recursos: ocupa los 4 núcleos NPU durante la ejecución; no deben ejecutarse otros programas NPU en paralelo.
-- Una sola secuencia: el servidor requiere `-np 1`; no soporta peticiones concurrentes.
-- Contexto limitado a 4096 tokens, lo que restringe la duración de audio procesable por petición.
-- Licencia no especificada: no se puede confirmar el uso comercial sin consultar al autor o al modelo base.
-- Idiomas soportados no documentados; no se puede garantizar cobertura multilingüe.
-- Riesgo de alucinación en ASR: como todo modelo generativo, puede producir transcripciones plausibles pero incorrectas en audio ruidoso o con acentos no vistos.
-- Sesgos: no se documentan sesgos específicos; el modelo hereda los del modelo base Qwen3-ASR-0.6B.
-- Dependencia de binarios y kernels propietarios: la reproducibilidad y auditoría del runtime están limitadas a las fuentes publicadas en los repositorios de GitHub del autor.
+- El runtime ocupa los 4 nucleos de la NPU AX8860 de forma exclusiva; no puede convivir con otros programas NPU en el mismo dispositivo.
+- Solo admite una secuencia: el servidor debe arrancarse con `-np 1`, lo que limita la concurrencia a una peticion a la vez.
+- Contexto maximo de 4096 tokens, suficiente para audios cortos pero restrictivo para grabaciones largas sin segmentacion previa.
+- El paquete esta atado al hardware AX8860 y al SDK V0.5.0 o superior; no es portable a otras plataformas sin recompilar los kernels.
+- La licencia no se especifica en la informacion disponible, por lo que el uso comercial debe verificarse contra la licencia del modelo base Qwen3-ASR-0.6B antes de desplegarlo en produccion.
+- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinacion o error (WER) sobre conjuntos estandar; el unico dato de correccion es interno (20 de 20 frases exactas en el conjunto de evaluacion del autor).
+- La primera peticion tras el arranque incurre en unos 0,4 s adicionales por la conversion de pesos.
+- Si no se define `GGML_AXERA_KERNEL_DIR`, los binarios actuales terminan con error.
+- El modelo de 0,6 mil millones de parametros puede presentar menor precision que modelos ASR de mayor tamano en audio con ruido, acentos marcados o vocabulario especializado; no hay datos publicados que lo confirmen.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-ASR-0.6B-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
-- llama.cpp (fork con soporte AXera): https://github.com/ZHEQIUSHUI/llama.cpp (rama `feat/qwen3-whole`, commit `4b67446`)
-- Kernels NPU: https://github.com/ZHEQIUSHUI/ax-dsl-kernels (rama `main`, commit `60dd25b`)
+- Bifurcacion de llama.cpp con backend Axera: https://github.com/ZHEQIUSHUI/llama.cpp (rama `axera-dev`, commit `6613735ce`)

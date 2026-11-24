@@ -5,7 +5,7 @@
   "author": "HydraAiM",
   "url": "https://huggingface.co/HydraAiM/Qwen3.6-35B-A3B-EXL3-HalfRate-T5",
   "created_at": "2026-11-18T10:14:53.000Z",
-  "updated_at": "2026-11-18T11:20:07.000Z",
+  "updated_at": "2026-11-23T19:18:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

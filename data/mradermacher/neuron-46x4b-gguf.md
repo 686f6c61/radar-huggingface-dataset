@@ -2,77 +2,104 @@
 
 ## Resumen
 
-Neuron-46x4B-GGUF es una cuantización en formato GGUF del modelo original Neuron-46x4B, publicado por el usuario mradermacher en Hugging Face. El modelo base, desarrollado por Neura-Tech-AI, no dispone de una ficha técnica pública en el momento de redactar esta ficha, por lo que los detalles arquitectónicos y de entrenamiento no están disponibles. El nombre sugiere una arquitectura de mezcla de expertos (MoE) con 46 expertos y 4 mil millones de parámetros activos, siguiendo la nomenclatura habitual de modelos como Mixtral o DeepSeek, pero esta información no ha sido confirmada.
+Neuron-46x4B-Instruct es un modelo de lenguaje conversacional desarrollado por Neura Tech AI, distribuido en formato GGUF por el usuario mradermacher. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 46 expertos de 4B de parametros cada uno, aunque la informacion disponible no confirma explicitamente esta estructura. El recuento real de parametros en los pesos safetensors es de 125.058.592.256 (aproximadamente 125B), lo que resulta coherente con una arquitectura MoE de gran escala donde solo una fraccion de los expertos se activa por token.
 
-El repositorio contiene exclusivamente los pesos cuantizados en diferentes precisiones (Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ4_XS, etc.), generados mediante la herramienta de cuantización estática de llama.cpp. Al no existir documentación oficial del modelo base, su adopción en entornos de producción conlleva un riesgo elevado por falta de transparencia. No obstante, la disponibilidad de cuantizaciones GGUF permite su ejecución local en hardware consumer mediante llama.cpp, Ollama u otros motores compatibles.
+El modelo esta disenado para instrucciones y conversacion multilingue, con soporte declarado para 24 idiomas, incluyendo ingles, chino, hindi, arabe, japones, coreano, las principales lenguas europeas, turco, vietnamita, tailandes, indonesio, malayo, bengali, urdu, tamil, telugu, marathi, gujarati, punjabi y persa. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+
+La relevancia de esta ficha radica en que la version GGUF cuantizada permite ejecutar un modelo de 125B parametros en hardware de consumo mediante cuantizaciones agresivas (desde Q2_K de 45,6 GB hasta Q8_0 de 133 GB), algo impensable con los pesos originales en safetensors. No obstante, la ausencia de benchmarks publicados y de documentacion tecnica detallada en la informacion disponible limita la evaluacion rigurosa de su rendimiento real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere MoE con 46 expertos y 4B activos, sin confirmar) |
-| Parametros totales | no disponible (estimacion indirecta: 46 × 4B = 184B si la nomenclatura es correcta, sin confirmar) |
-| Parametros activos | no disponible (posiblemente 4B, sin confirmar) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16 (según comentarios del README) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors no incluido en este repositorio) |
+| Arquitectura | No disponible (el nombre sugiere MoE con 46 expertos de 4B; sin confirmar) |
+| Parametros totales | 125.058.592.256 (125B) |
+| Parametros activos | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); versiones imatrix en repositorio i1 |
+| Idiomas soportados | en, zh, hi, ar, ja, ko, fr, de, es, pt, it, ru, tr, vi, th, id, ms, bn, ur, ta, te, mr, gu, pa, fa (24 idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento o los datos utilizados para el modelo original Neuron-46x4B. El repositorio GGUF es únicamente una conversión de los pesos, realizada con la herramienta de cuantización estática de llama.cpp (versión 2, según los comentarios del README). La ausencia de un model card en el repositorio original de Neura-Tech-AI impide conocer detalles como el número de tokens de entrenamiento, el uso de RLHF o DPO, o innovaciones técnicas específicas. Se recomienda encarecidamente contactar con el autor original antes de considerar este modelo para cualquier uso serio.
+No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. El nombre "46x4B" sugiere una estructura de mezcla de expertos con 46 expertos de aproximadamente 4B de parametros cada uno, lo que daria un total cercano a los 184B si todos fueran independientes; sin embargo, el recuento real de parametros safetensors es de 125B, lo que indica que parte de los pesos se comparten (atencion, embeddings, capas densas comunes). Esta deduccion es especulativa y no esta confirmada por el autor.
+
+Tampoco se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o tecnicas de alineacion, ni innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La model card del repositorio GGUF es una plantilla generica de mradermacher centrada en las instrucciones de descarga y uso de las cuantizaciones, sin informacion tecnica del modelo original.
 
 ## Capacidades
 
-- No se dispone de información verificada sobre las capacidades del modelo. Las siguientes afirmaciones son especulativas basadas en la nomenclatura y no deben tomarse como hechos.
-- Posible generación de texto y razonamiento, dada la arquitectura MoE sugerida.
-- No se ha confirmado soporte para tool calling, agentes, visión, audio o modo de pensamiento.
-- El multilingüismo es desconocido.
-- La única capacidad confirmada es la de ejecutarse en formato GGUF con motores compatibles con llama.cpp.
+- Generacion de texto conversacional e instrucciones: el sufijo "Instruct" indica ajuste fino para seguir instrucciones en formato de dialogo.
+- Soporte multilingue amplio: 24 idiomas declarados, incluyendo lenguas con alfabetos no latinos (arabe, hindi, bengali, tamil, telugu, urdu, persa).
+- Conversacion multi-turno: etiqueta "conversational" en los metadatos del repositorio.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere integracion con infraestructuras de inferencia tipo Hugging Face Inference Endpoints.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Vision, audio u otras modalidades: no disponible.
+- Modo thinking explicito: no disponible.
 
 ## Casos de uso
 
-Dado que no hay información fiable sobre el modelo, no es posible recomendar casos de uso concretos con garantías. Cualquier aplicación en producción sería irresponsable sin antes validar el modelo en tareas específicas. Los usuarios interesados deberían:
-
-- Realizar pruebas de evaluación propias en tareas de generación de texto, razonamiento o código, si el modelo demuestra un rendimiento aceptable en pruebas preliminares.
-- Utilizarlo únicamente en entornos de investigación o experimentación, nunca en sistemas críticos.
-- Comparar su rendimiento con modelos alternativos bien documentados (por ejemplo, Llama 3.1 8B, Qwen 2.5 7B o Mixtral 8x7B) antes de tomar cualquier decisión.
+- Atencion al cliente multilingue: el modelo puede gestionar conversaciones en 24 idiomas, lo que permite desplegar un unico sistema para mercados con alfabetos y familias linguisticas diversas (arabe, hindi, tailandes, etc.) sin necesidad de modelos separados por region.
+- Asistencia en escritura y traduccion: con soporte para lenguas europeas, asiaticas meridionales y de Oriente Medio, resulta adecuado para tareas de parafrasis, resumen y traduccion asistida entre pares de idiomas cubiertos.
+- Despliegue en hardware limitado mediante cuantizacion: la version Q4_K_M (75,9 GB) permite ejecutar un modelo de 125B en estaciones de trabajo con 2-3 GPU de 48 GB o en configuraciones de memoria unificada, algo imposible con los pesos completos.
+- Prototipado e investigacion en entornos sin acceso a infraestructura de datacenter: las cuantizaciones Q2_K (45,6 GB) y Q3_K_S (54,0 GB) hacen viable la experimentacion en servidores con 64-80 GB de VRAM total.
+- Generacion de contenido editorial en varios idiomas: redaccion de borradores, resumenes y adaptaciones culturales para publicaciones dirigidas a audiencias en los 24 idiomas soportados.
+- Integracion en pipelines de inferencia locales: el formato GGUF es compatible con llama.cpp, Ollama y otros runners que permiten ejecucion en CPU/GPU hibrida, util para entornos air-gapped o con requisitos de privacidad estrictos.
+- Evaluacion comparativa de modelos MoE de gran escala: sirve como referencia para estudiar el comportamiento de arquitecturas con muchos expertos bajo cuantizacion agresiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica estándar para este modelo. Cualquier cifra que aparezca en otras fuentes debe considerarse no verificada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo GGUF, puede ejecutarse con llama.cpp, Ollama, GPT4All u otros motores compatibles.
-- La VRAM necesaria depende del tamaño real del modelo y de la cuantización elegida. Si se confirma la arquitectura 46x4B (184B totales), incluso en Q4_K_M se necesitarían aproximadamente 100-120 GB de VRAM, lo que requiere múltiples GPUs de datacenter (A100 80GB, H100) o configuraciones con varias GPUs consumer (por ejemplo, 2× RTX 4090 24GB no serían suficientes).
-- Si el modelo resultara ser más pequeño (por ejemplo, 46B totales), las cuantizaciones Q4_K_M podrían caber en una RTX 4090 24GB, pero esto es especulativo.
-- No se dispone de datos de latencia ni throughput.
+- VRAM estimada segun cuantizacion (tamano de archivo como referencia minima; la VRAM real necesaria suele ser algo superior por el contexto y los buffers de inferencia):
+  - Q2_K: 45,6 GB
+  - Q3_K_S: 54,0 GB
+  - Q3_K_M: 59,8 GB
+  - Q3_K_L: 64,8 GB
+  - IQ4_XS: 67,4 GB
+  - Q4_K_S: 71,1 GB
+  - Q4_K_M: 75,9 GB
+  - Q5_K_S: 86,2 GB
+  - Q5_K_M: 88,9 GB
+  - Q6_K: 102,7 GB (dividido en 3 partes)
+  - Q8_0: 133,0 GB (dividido en 3 partes)
+- GPU recomendadas: para Q4_K_M en adelante se requieren configuraciones multi-GPU (por ejemplo, 2x A100 80 GB o 2x H100 80 GB); para Q2_K y Q3_K es posible con 1x A100 80 GB o configuraciones de memoria unificada de 64-96 GB.
+- GPU de consumo: ninguna GPU consumer individual (RTX 4090 con 24 GB, RTX 3090 con 24 GB) puede alojar el modelo completo. Es viable la ejecucion hibrida CPU+GPU con llama.cpp, aceptando latencias altas (del orden de segundos por token en funcion del ancho de banda de memoria).
+- Opciones de despliegue: llama.cpp, Ollama, y runners compatibles con GGUF. Para los pesos originales en safetensors, vLLM o TGI si la arquitectura es compatible (no confirmado).
+- Latencia y throughput: no disponibles. Con cuantizaciones Q2-Q3 en CPU se espera un throughput muy bajo; en multi-GPU con Q4-Q5 el rendimiento dependera de los parametros activos reales de la arquitectura MoE.
 
 ## Comparativa con modelos similares
 
-No se puede realizar una comparativa fiable sin datos del modelo original. Como referencia, se indican alternativas bien documentadas en la misma categoría de tamaño (si el modelo resultara ser ~4B activos):
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Neuron-46x4B-Instruct | 125B | No disponible | Apache 2.0 | Safetensors, GGUF | 24 idiomas; sin benchmarks publicados |
+| Mixtral 8x7B | 46,7B | 32K | Apache 2.0 | Safetensors, GGUF | MoE con 8 expertos; benchmarks publicados |
+| Qwen1.5-MoE-A2.7B | 14,3B (2,7B activos) | 32K | Apache 2.0 | Safetensors, GGUF | MoE con 60 expertos; benchmarks publicados |
+| DeepSeek-V2-Lite | 15,7B (2,4B activos) | 32K | DeepSeek License | Safetensors | MoE con 64 expertos + 2 compartidos |
 
-| Modelo | Parametros activos | Contexto | Licencia | Documentacion |
-|---|---|---|---|---|
-| Qwen 2.5 7B Instruct | 7B | 128K | Apache 2.0 | Completa |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 License | Completa |
-| Mixtral 8x7B Instruct | 12.9B (activos) | 32K | Apache 2.0 | Completa |
-
-Ninguno de estos modelos es directamente comparable sin conocer los datos de Neuron-46x4B.
+La comparacion es limitada porque no hay datos publicados de rendimiento para Neuron-46x4B. En terminos de tamano, se situa en la categoria de modelos MoE de gran escala (por encima de 100B totales), mas cercano a DeepSeek-V2 (236B) o Mixtral 8x22B (141B) que a los MoE ligeros. La licencia Apache 2.0 es mas permisiva que la de DeepSeek-V2 y equivalente a la de Mixtral.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: arquitectura, datos de entrenamiento, licencia y sesgos desconocidos.
-- Riesgo elevado de alucinación y comportamiento impredecible al no haber sido evaluado públicamente.
-- No se puede determinar si el modelo es apto para uso comercial al no conocerse la licencia del modelo original.
-- El repositorio GGUF es una conversión de terceros; no hay garantía de que los pesos sean fieles al original ni de que no contengan modificaciones no documentadas.
-- La falta de una model card en el repositorio original sugiere que el proyecto puede estar abandonado o ser de baja calidad.
+- Ausencia total de benchmarks publicados: no es posible evaluar su calidad frente a alternativas con datos objetivos.
+- Falta de documentacion tecnica: se desconoce la longitud de contexto, los parametros activos, la composicion del dataset y el proceso de alineacion, lo que dificulta estimar su comportamiento en produccion.
+- Riesgo de alucinacion: sin datos de evaluacion de fidelidad, debe asumirse un riesgo estandar o superior al de modelos con alineacion documentada.
+- Sesgos desconocidos: no se ha publicado informacion sobre sesgos linguisticos, culturales o de genero, ni sobre mitigaciones aplicadas.
+- Idiomas de bajos recursos: aunque se declaran 24 idiomas, la calidad en lenguas como punjabi, gujarati o telugu puede ser notablemente inferior a la del ingles o el chino, sin datos que lo confirmen.
+- Cuantizaciones agresivas: Q2_K y Q3_K_S degradan la calidad de forma significativa; para uso en produccion se recomienda Q4_K_M o superior, lo que eleva los requisitos de hardware.
+- Modelo base de origen incierto: el repositorio original (Neura-Tech-AI/Neuron-46x4B-Instruct) no aporta model card detallada en la informacion disponible; conviene verificar su procedencia y reproducibilidad antes de usarlo en entornos criticos.
+- Compatibilidad de inferencia: no esta confirmado que la arquitectura sea soportada por vLLM o TGI; la ruta segura es llama.cpp/Ollama con GGUF.
+- Aunque la licencia Apache 2.0 permite uso comercial, la falta de garantias y de documentacion sobre el entrenamiento traslada al integrador la responsabilidad de validacion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Neuron-46x4B-GGUF
-- Versión Instruct (GGUF): https://huggingface.co/mradermacher/Neuron-46x4B-Instruct-GGUF
-- Versión Instruct i1 (GGUF): https://huggingface.co/mradermacher/Neuron-46x4B-Instruct-i1-GGUF
-- Modelo original (sin ficha técnica): https://huggingface.co/Neura-Tech-AI/Neuron-46x4B
+- Modelo base: https://huggingface.co/Neura-Tech-AI/Neuron-46x4B-Instruct
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Neuron-46x4B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Neuron-46x4B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

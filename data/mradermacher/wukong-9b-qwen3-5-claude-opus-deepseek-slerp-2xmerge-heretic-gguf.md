@@ -2,96 +2,93 @@
 
 ## Resumen
 
-Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic es un modelo de lenguaje de aproximadamente 9.200 millones de parametros (9.197.093.888 segun los pesos en safetensors) construido mediante la fusion (merge) de dos modelos derivados de la familia Qwen3.5, combinados con la tecnica SLERP (Spherical Linear Interpolation). El modelo base original fue publicado por el usuario xtools-at, y esta ficha corresponde a la version cuantizada en formato GGUF elaborada por mradermacher, un conocido generador de cuantizaciones de la comunidad.
+Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic es un modelo de lenguaje de aproximadamente 9.200 millones de parámetros (9.197.093.888 según los pesos en safetensors) obtenido mediante la fusión de dos modelos derivados de la familia Qwen3.5. El modelo original fue creado por el usuario xtools-at y esta ficha corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, un conocido distribuidor de cuantizaciones estáticas para el ecosistema llama.cpp.
 
-El modelo se presenta como un merge orientado a razonamiento, generacion de codigo, uso de herramientas (tool calling / function calling), matematicas y tareas STEM, con un enfasis explicito en capacidades de agente y en un caracter "uncensored" o "decensored" (etiquetas heretic y decensored en la model card). Incorpora ademas un componente multimodal (archivos mmproj), lo que sugiere soporte de vision. Los idiomas declarados son ingles, chino, espanol, ruso y japones.
+El modelo combina linajes de destilación de trazas de razonamiento de Claude Opus y DeepSeek, junto con datos de entrenamiento orientados a agentes y tool calling (hermes-agent-reasoning-traces). La fusión se realiza mediante SLERP (Spherical Linear Interpolation) a partir de dos modelos base, lo que da lugar a un modelo "2xMerge". El sufijo "heretic" indica que se ha aplicado un proceso de decensurado o ablación de rechazos, orientado a reducir las negativas del modelo ante peticiones legítimas.
 
-La relevancia de esta publicacion radica en que ofrece, bajo licencia Apache 2.0, una version cuantizada en multiples niveles (desde Q2_K hasta f16) de un merge de 9B pensado para ejecucion local y despliegue en hardware de consumo, con un enfoque en razonamiento y agentes que lo situa en la estela de modelos como DeepSeek o los destilados de Claude, segun indican sus etiquetas. No obstante, no se dispone de datos de benchmarks publicados en la informacion proporcionada.
+Es relevante ahora porque ofrece, en un tamaño de 9B apto para hardware de consumo, capacidades declaradas de razonamiento, generación de código, matemáticas y uso de herramientas, con soporte multilingüe (inglés, chino, español, ruso y japonés) bajo licencia Apache 2.0. La disponibilidad de cuantizaciones GGUF desde Q2_K hasta f16 facilita su despliegue en entornos locales con llama.cpp u Ollama.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, segun tag qwen3_5); merge por SLERP de dos modelos |
-| Parametros totales | 9.197.093.888 (aprox. 9,2 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen3.5), fusión SLERP de dos modelos |
+| Parametros totales | 9.197.093.888 (~9,2B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q6_K, Q8_0, f16; mmproj Q8_0 y f16 (multimodal) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
 | Idiomas soportados | en, zh, es, ru, ja |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (version cuantizada); el modelo base en transformers/safetensors |
+| Formato de pesos | GGUF (repo cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer de la familia Qwen3.5 (tag qwen3_5), con aproximadamente 9.200 millones de parametros. El modelo no se entrena desde cero, sino que se obtiene mediante un merge por SLERP (interpolacion esferica lineal) de dos modelos derivados, dando lugar a la variante "2xMerge". El nombre del modelo base (Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic) sugiere que los componentes fusionados incorporan influencias de destilados o trazas de Claude Opus y DeepSeek, aunque no se detalla la composicion exacta de los modelos originales ni sus proporciones en el merge.
+La arquitectura subyacente es un transformer denso de la familia Qwen3.5, con aproximadamente 9.200 millones de parámetros. El modelo final no se entrena desde cero, sino que se obtiene mediante una fusión SLERP (interpolación esférica lineal) de dos modelos derivados, técnica habitual para combinar capacidades de distintos linajes sin un coste de entrenamiento completo. El resultado se etiqueta como "2xMerge", indicando la combinación de dos ramas.
 
-En cuanto a los datos de entrenamiento, la model card referencia tres datasets: Jackrong/Claude-opus-4.6-TraceInversion-9000x, Jackrong/Claude-opus-4.7-TraceInversion-5000x y lambda/hermes-agent-reasoning-traces. Estos conjuntos apuntan a un entrenamiento o ajuste orientado a trazas de razonamiento (reasoning traces) y a comportamiento de agente, presumiblemente mediante destilacion de trazas de modelos mayores. No se especifica el numero total de tokens, la composicion detallada del dataset ni si se aplicaron fases de RLHF o DPO. La etiqueta "heretic" hace referencia a tecnicas de "abliteration" o eliminacion de rechazos (decensoring), que reducen las negativas del modelo ante ciertas peticiones.
+Los datos de entrenamiento declarados en la model card incluyen tres conjuntos: `Jackrong/Claude-opus-4.6-TraceInversion-9000x` y `Jackrong/Claude-opus-4.7-TraceInversion-5000x` (trazas de razonamiento destiladas de Claude Opus 4.6 y 4.7) y `lambda/hermes-agent-reasoning-traces` (trazas de razonamiento orientadas a agentes y uso de herramientas). El sufijo "heretic" indica que se ha aplicado una técnica de ablación de direcciones de rechazo (decensoring), que reduce la tendencia del modelo a negarse ante ciertas peticiones. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto general y conversacion multi-turno.
-- Razonamiento (reasoning), con etiquetas explicitas de reasoning y trazas de razonamiento en el entrenamiento.
-- Generacion de codigo (coding) y tareas de programacion.
-- Matematicas y tareas STEM.
-- Tool calling / function calling, con etiquetas dedicadas (tool-use, function-calling).
-- Capacidades de agente y razonamiento multi-paso (agent).
-- Multimodalidad: la presencia de archivos mmproj (Q8_0 y f16) indica soporte de entrada visual (vision) en la version GGUF.
-- Multilingue: ingles, chino, espanol, ruso y japones.
-- Comportamiento "uncensored"/"decensored" (heretic): menor tendencia a rechazar peticiones.
+- Generación de texto y razonamiento multi-paso, con trazas de razonamiento destiladas de modelos Claude Opus y DeepSeek.
+- Generación de código y resolución de problemas de matemáticas y STEM (etiquetas `coding`, `math`, `stem`).
+- Soporte de tool calling y function calling (etiquetas `tool-use`, `function-calling`).
+- Capacidades orientadas a agentes y razonamiento multi-paso (dataset hermes-agent-reasoning-traces).
+- Multilingüe: inglés, chino, español, ruso y japonés.
+- Modo "uncensored/decensored" (heretic): menor tasa de rechazos ante peticiones.
+- Soporte multimodal declarado mediante los ficheros auxiliares `mmproj` (proyección multimodal), lo que sugiere capacidad de entrada de imágenes en el ecosistema llama.cpp.
 
 ## Casos de uso
 
-- Asistente de codigo en local: el modelo puede integrarse en editores o terminales mediante llama.cpp u Ollama para autocompletado, explicacion y refactorizacion de codigo, aprovechando sus capacidades de coding y su tamano de 9B, que cabe en GPUs de consumo en cuantizaciones Q4.
-- Agentes con tool calling: al soportar function calling y razonamiento multi-paso, puede emplearse en pipelines de agentes que invocan APIs, consultan bases de datos o ejecutan acciones encadenadas, con la ventaja de ejecutarse en infraestructura propia.
-- Razonamiento matematico y STEM: util para resolver problemas paso a paso, generar explicaciones didacticas o verificar calculos en entornos educativos o de investigacion, gracias a sus trazas de razonamiento entrenadas.
-- Procesamiento de documentos con vision: la variante con mmproj permite pasar imagenes junto al texto, habilitando tareas de descripcion de imagenes, extraccion de informacion de capturas o analisis de diagramas en local.
-- Atencion al cliente y chat multi-turno: puede desplegarse como backend conversacional en espanol (uno de los idiomas declarados) para soporte automatizado, con la salvedad de que la longitud de contexto no esta documentada.
-- Generacion aumentada por recuperacion (RAG) en local: combinado con una base vectorial, puede responder preguntas sobre documentacion interna sin enviar datos a la nube, lo que resulta atractivo por su licencia Apache 2.0 y su ejecucion offline.
-- Experimentacion en investigacion sobre merges y decensoring: util para estudiar el efecto de SLERP y de tecnicas heretic en el comportamiento del modelo, comparandolo con sus componentes originales.
+- Asistente de código en local: el modelo puede generar y explicar código en un entorno de desarrollo integrado con llama.cpp u Ollama, aprovechando sus capacidades de coding y su tamaño de 9B para ejecutarse en GPU de consumo.
+- Agentes con uso de herramientas: gracias al soporte de tool calling y a las trazas de razonamiento orientadas a agentes, puede integrarse en pipelines que invocan APIs, bases de datos o funciones externas de forma iterativa.
+- Razonamiento matemático y STEM en entornos educativos: útil para resolver problemas paso a paso y explicar el procedimiento, con cuantizaciones Q5_K_M o Q6_K para preservar calidad.
+- Atención al cliente multilingüe: soporta inglés, español, ruso, japonés y chino, lo que permite desplegar un asistente conversacional en varios idiomas con un único modelo.
+- Procesamiento de documentos con entrada de imagen: los ficheros `mmproj` permiten, en teoría, alimentar el modelo con imágenes junto a texto para tareas de descripción o extracción de información.
+- Experimentación en investigación sobre fusión de modelos: sirve como caso de estudio de fusión SLERP y destilación de trazas de razonamiento, al estar publicados los datasets y el modelo base.
+- Despliegue en hardware limitado: las cuantizaciones Q4_K_S (5,6 GB) y Q4_K_M (5,9 GB) permiten ejecución en GPU con 8 GB de VRAM o en CPU con RAM suficiente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion (solo pesos, sin overhead de contexto): Q2_K ~4,1 GB; Q3_K_M ~4,9 GB; Q4_K_S ~5,6 GB; Q4_K_M ~5,9 GB; Q5_K_S ~6,6 GB; Q6_K ~7,7 GB; Q8_0 ~9,9 GB; f16 ~18,5 GB. Anadir ~0,7-1,0 GB si se usa el componente multimodal (mmproj).
-- Cabe en GPUs de consumo: Q4_K_M (~5,9 GB) entra en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070) con margen para contexto moderado; Q5/Q6 requieren 8-12 GB (RTX 4070, RTX 3080); Q8_0 requiere ~12 GB o mas (RTX 4070 Ti, RTX 4080); f16 requiere ~24 GB (RTX 3090, RTX 4090, A100 40 GB).
-- GPUs profesionales recomendadas para mayor throughput: A100, H100, L40S; para uso local, RTX 4090 o RTX 3090 con cuantizaciones Q5-Q8.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, llama-cpp-python; para el modelo base en transformers, vLLM o TGI (no se confirma compatibilidad explicita en la informacion disponible).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (según cuantización): Q2_K ~4,1 GB; Q4_K_S ~5,6 GB; Q4_K_M ~5,9 GB; Q5_K_M ~6,8 GB; Q6_K ~7,7 GB; Q8_0 ~9,9 GB; f16 ~18,5 GB. Añadir aproximadamente 0,7-1,0 GB si se usa la proyección multimodal (`mmproj`).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090 para cuantizaciones Q4-Q8; A100 o H100 para f16 y despliegues de alta concurrencia.
+- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_S/Q4_K_M en tarjetas de 8 GB o más; Q6_K y Q8_0 requieren 10-12 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF (el repo incluye la etiqueta `endpoints_compatible`). vLLM y TGI no soportan GGUF de forma nativa, por lo que requerirían el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Wukong-9B-Qwen3.5-...-heretic (este) | ~9,2 B | no disponible | Apache 2.0 | GGUF | Merge SLERP, uncensored, multimodal (mmproj) |
-| Qwen3.5 9B (base de la familia) | ~9 B | no disponible | segun modelo original | safetensors/GGUF | Modelo de referencia de la familia |
-| Modelos 8-9B tipo Llama 3.1 8B | ~8 B | 128 K (segun su ficha) | Llama license | safetensors/GGUF | Alternativa generalista, contexto documentado |
-| Gemma 2 9B | ~9 B | 8 K (segun su ficha) | Gemma license | safetensors/GGUF | Alternativa generalista de Google |
+| Wukong-9B-Qwen3.5-...-heretic (este) | ~9,2B | no disponible | Apache 2.0 | GGUF, safetensors | Fusión SLERP, destilado de Claude/DeepSeek, decensurado |
+| Qwen2.5-7B-Instruct | ~7,6B | 32K (típico en la familia) | Apache 2.0 | safetensors, GGUF | Modelo base oficial de Alibaba, sin fusión |
+| Llama-3.1-8B-Instruct | ~8B | 128K | Llama 3.1 Community | safetensors, GGUF | Modelo oficial de Meta, licencia con restricciones |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6B | 32K (típico) | MIT | safetensors, GGUF | Destilado de razonamiento de DeepSeek |
 
-No se dispone de datos de rendimiento comparativo en la informacion proporcionada; la comparativa se limita a parametros, licencia y formato.
+Nota: los datos de contexto de los modelos comparables no están confirmados en la información proporcionada y se indican como referencia orientativa de la familia; para este modelo, el contexto figura como no disponible.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados que permitan validar las capacidades declaradas (razonamiento, codigo, matematicas); las etiquetas de la model card no constituyen evidencia empirica.
-- La longitud de contexto no esta documentada; no debe asumirse una ventana larga sin verificacion.
-- Al ser un merge por SLERP de componentes no detallados, el comportamiento puede ser inconsistente o degradado respecto a los modelos originales, especialmente en tareas especializadas.
-- El caracter "uncensored"/"decensored" (heretic) implica que el modelo puede generar contenido que otros modelos rechazarian; requiere filtros y politicas de uso en produccion.
-- Riesgo de alucinacion inherente a modelos de este tamano; no apto para decisiones criticas sin supervision humana.
-- El soporte multilingue declarado (en, zh, es, ru, ja) no garantiza calidad uniforme; el espanol puede tener un rendimiento inferior al ingles.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los modelos base y de los datasets de entrenamiento referenciados, que podrian imponer restricciones adicionales.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta; es un artefacto reciente (creado el 21 de noviembre de 2026) sin validacion de la comunidad.
-- El componente multimodal depende de archivos mmproj separados; su integracion en herramientas de despliegue puede requerir configuracion adicional.
+- Al ser una fusión SLERP de modelos destilados, la calidad puede degradarse respecto a los modelos originales en tareas específicas; no hay benchmarks publicados que lo confirmen.
+- El proceso "heretic" (decensurado) reduce los rechazos, lo que aumenta el riesgo de generar contenido inapropiado o dañino; requiere filtros externos en producción.
+- Riesgo de alucinación inherente a los modelos de 9B, especialmente en tareas de razonamiento largo o datos factuales.
+- Longitud de contexto no documentada; no se debe asumir una ventana amplia sin verificación empírica.
+- Los datasets de destilación provienen de trazas de Claude Opus y DeepSeek; las condiciones de uso de esos datos pueden estar sujetas a las políticas de los proveedores originales, aunque la licencia del modelo se declara Apache 2.0.
+- El soporte multimodal depende de ficheros `mmproj` y del runtime (llama.cpp); no está garantizado en todos los backends.
+- El modelo está pensado para investigación y experimentación; para producción conviene validar con evaluaciones propias antes de desplegar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mradermacher/Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic-GGUF
 - Modelo base: https://huggingface.co/xtools-at/Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic-GGUF
-- Dataset: https://huggingface.co/datasets/Jackrong/Claude-opus-4.6-TraceInversion-9000x
-- Dataset: https://huggingface.co/datasets/Jackrong/Claude-opus-4.7-TraceInversion-5000x
-- Dataset: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic-GGUF
+- Dataset de trazas Claude Opus 4.6: https://huggingface.co/datasets/Jackrong/Claude-opus-4.6-TraceInversion-9000x
+- Dataset de trazas Claude Opus 4.7: https://huggingface.co/datasets/Jackrong/Claude-opus-4.7-TraceInversion-5000x
+- Dataset de trazas de agentes Hermes: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

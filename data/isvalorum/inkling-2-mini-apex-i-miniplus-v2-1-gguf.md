@@ -2,56 +2,49 @@
 
 ## Resumen
 
-Inkling-2-Mini-APEX-I-MiniPlus-V2.1-GGUF es una cuantizacion GGUF del modelo base `thinkingmachines/Inkling-2-Mini`, publicada por el usuario IsValorum dentro de su serie de cuantizaciones APEX. El modelo original es un transformer multimodal de tipo image-text-to-text con arquitectura interna denominada `inkling2_loop` y estructura MoE (mixture of experts), segun las etiquetas del repositorio. El artefacto pesa 13,0 GB y contiene 26.070.385.152 parametros totales segun los safetensors del modelo base.
+Inkling-2-Mini-APEX-I-MiniPlus-V2.1-GGUF es una cuantización GGUF del modelo base `thinkingmachines/Inkling-2-Mini`, publicada por IsValorum dentro de su serie APEX. El modelo original emplea la arquitectura `inkling2_loop`, una variante de tipo MoE con componentes recurrentes, y está orientado a tareas conversacionales y de imagen-texto-a-texto (pipeline `image-text-to-text`). El repositorio contiene los pesos cuantizados en formato GGUF listos para su uso con llama.cpp y motores compatibles.
 
-La relevancia de esta ficha no esta en el modelo original, sino en el trabajo de cuantizacion: IsValorum aplica una cuantizacion quirurgica por tensor, asignando precisiones distintas (Q4_K, Q6_K, Q8_0, F32) a cada grupo de tensores segun su funcion en la red, con el objetivo de preservar la calidad en las capas mas sensibles (protecciones recurrentes en F32, gates de atencion en Q8_0) mientras se comprime agresivamente el resto. El resultado es un GGUF de 12,09 GiB pensado para ejecutarse en llama.cpp y en el agente de escritorio V-Agent del mismo autor.
+La relevancia de esta ficha radica en que se trata de una distribución práctica del modelo: reduce el peso original en BF16 a un artefacto de aproximadamente 12,09 GiB (según la model card del autor), lo que permite ejecutarlo en hardware de consumo con suficiente VRAM. La cuantización se ha realizado con una matriz de importancia (`imatrix.gguf` de `ggml-org/Inkling-2-Mini-GGUF`) y un mapa quirúrgico de tensores que asigna precisiones distintas (Q4_K, Q6_K, Q8_0, F32) según la sensibilidad de cada componente, incluyendo protecciones en F32 para 58 tensores recurrentes.
 
-El modelo esta publicado bajo licencia Apache 2.0, es compatible con endpoints y esta orientado a conversacion. No se dispone de informacion publica sobre idiomas soportados, datos de entrenamiento del modelo base ni resultados de benchmarks.
+El modelo base cuenta con 26.070.385.152 parámetros totales según los safetensors, pero no se dispone de datos sobre parámetros activos, longitud de contexto, idiomas soportados ni detalles del entrenamiento original. La licencia declarada es Apache 2.0, lo que facilita el uso comercial, aunque conviene verificar las condiciones del modelo base original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `inkling2_loop` (transformer MoE, multimodal image-text-to-text) |
+| Arquitectura | `inkling2_loop` (MoE con componentes recurrentes) |
 | Parametros totales | 26.070.385.152 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Cuantizacion mixta por tensor: Q4_K, Q6_K, Q8_0 y F32 (iMatrix) |
+| Tipos de cuantizacion | GGUF con mezcla de precisiones: Q4_K, Q6_K, Q8_0 y F32 (mapa por tensor) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
-| Precision de origen | BF16 |
-| Tamano del repositorio | 13,0 GB (archivo principal: 12,09 GiB) |
-| Tensor de salida (`output.weight`) | Q6_K |
-| Embeddings (`token_embd.weight`) | Q4_K |
-| Gates de atencion (`attn_gate`) | Q8_0 (24 tensores) |
-| Protecciones recurrentes | F32 (58 tensores observados) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `thinkingmachines/Inkling-2-Mini` emplea una arquitectura propietaria etiquetada como `inkling2_loop`, con estructura MoE y capacidad multimodal de entrada imagen-texto. El mapa de tensores auditado del GGUF revela 24 bloques (`blk.0` a `blk.23`), cada uno con proyecciones de atencion (`attn_q`, `attn_k`, `attn_output`), gates de atencion (`attn_gate`), convoluciones de atencion (`attn_k_conv`, `attn_post_conv`) y componentes de atencion relativa (`attn_rel`, `attn_rel_bias`, `attn_rel_clip`). La presencia de tensores `attn_res_query` y `output_res_query` sugiere un mecanismo de atencion residual o de consulta sobre estados recurrentes, coherente con la etiqueta `inkling2_loop`.
+La arquitectura del modelo base es `inkling2_loop`, descrita en la model card como MoE (Mixture of Experts) con presencia de tensores recurrentes. La cuantización parte de pesos en BF16 y aplica un esquema de precisión mixta auditado sobre el GGUF físico: las proyecciones de atención (`attn_q`, `attn_k`, `attn_output`, `attn_rel`) usan mayoritariamente Q4_K, con algunas capas (`blk.{5..23:6}.attn_output`) en Q6_K; las puertas de atención (`attn_gate`) se mantienen en Q8_0; y los tensores asociados a componentes recurrentes y de normalización (`attn_k_conv`, `attn_post_conv`, `attn_q_clip`, `output_res_query`) se conservan en F32 para preservar la estabilidad numérica. El tensor de salida (`output.weight`) está en Q6_K y el embedding de tokens (`token_embd.weight`) en Q4_K.
 
-La cuantizacion APEX-I MiniPlus aplica una politica de precision diferenciada: los tensores de normalizacion y las protecciones recurrentes se mantienen en F32 (58 tensores), los gates de atencion y algunas proyecciones de salida en Q8_0, el tensor de salida global en Q6_K y el grueso de proyecciones de atencion y embeddings en Q4_K. Se utiliza una iMatrix (`imatrix.gguf`) para guiar la cuantizacion, aunque el autor indica que no infiere la procedencia externa del fichero. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base recibio RLHF o DPO.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base utilizó RLHF, DPO u otras técnicas de alineación. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal más allá de la propia arquitectura `inkling2_loop`. La cuantización utiliza la matriz de importancia `ggml-org/Inkling-2-Mini-GGUF/imatrix.gguf`, aunque el autor indica que no se infiere la procedencia externa de dicho archivo.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` y el pipeline `image-text-to-text`.
-- Procesamiento de entrada multimodal imagen-texto (pipeline declarado `image-text-to-text`).
-- Estructura MoE, lo que implica activacion dispersa de expertos (numero de expertos y parametros activos no disponibles).
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras de inferencia estandar.
-- Ejecucion en llama.cpp en backends CUDA, Vulkan y CPU, segun la documentacion de V-Agent.
-- Integracion en flujos de agente con tool calling a traves de V-Agent y sus siete servidores MCP (ficheros, comandos, busqueda web, navegador autonomo, herramientas de escritorio, descargas HTTP y Hugging Face).
-- Capacidades multilingues: no disponible.
+- Generación de texto conversacional multi-turno, según el tag `conversational` y el pipeline declarado.
+- Procesamiento de imagen y texto combinados (`image-text-to-text`), lo que sugiere capacidad de entrada multimodal.
+- Razonamiento y respuesta en formato de chat, aunque no se detallan modos de pensamiento explícitos.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Soporte de cuantización GGUF para ejecución local con llama.cpp y motores derivados.
+- No se documentan capacidades específicas de tool calling, function calling, agentes multi-paso, audio o visión más allá del pipeline declarado.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo Windows: el GGUF de 12,09 GiB permite ejecutar el modelo en llama.cpp con backend CUDA o Vulkan desde V-Agent, sin necesidad de conexion a APIs externas ni cuenta de usuario.
-- Agente de escritorio con herramientas reales: a traves de los siete servidores MCP de V-Agent, el modelo puede leer y escribir ficheros, ejecutar comandos, buscar en DuckDuckGo, navegar de forma autonoma y descargar recursos, con aprobaciones por accion y espacios de trabajo aislados.
-- Asistencia conversacional con contexto de documentos: la ventana multimodal image-text-to-text permite adjuntar imagenes o capturas junto a texto en conversaciones multi-turno, util para soporte tecnico sobre interfaces graficas.
-- Automatizacion de tareas de desarrollo en local: el modelo puede integrarse en pipelines de revision de codigo o generacion de parches ejecutados en la propia maquina, manteniendo el codigo fuera de servicios remotos.
-- Prototipado de agentes con busqueda web: combinando el servidor MCP de busqueda y el de lectura de paginas, el modelo puede construir respuestas aumentadas con informacion actual sin salir del entorno local.
-- Evaluacion de cuantizaciones: el mapa por tensor auditado y el fichero `tensor-map.tsv` permiten a investigadores comparar el impacto de precisiones mixtas (Q4_K frente a Q8_0 y F32) en tareas concretas sobre el mismo modelo base.
-- Inferencia en entornos con requisitos de privacidad: al ejecutarse localmente sin telemetria obligatoria, encaja en escenarios donde los datos no pueden abandonar la maquina.
+- Asistente conversacional local: el modelo puede gestionar diálogos multi-turno en una máquina de sobremesa con GPU de consumo, gracias a su tamaño cuantizado de aproximadamente 12,09 GiB y su naturaleza conversacional.
+- Procesamiento de documentos con imagen: al ser `image-text-to-text`, puede emplearse para extraer información de capturas, formularios o figuras combinadas con instrucciones textuales.
+- Prototipado de agentes con V-Agent: el autor distribuye V-Agent, un agente de escritorio Windows que carga GGUF localmente y ofrece servidores MCP para archivos, comandos, búsqueda web y navegador; el modelo puede integrarse como motor local en ese flujo.
+- Inferencia privada sin telemetría: al ejecutarse con llama.cpp en local, permite desplegar un asistente sin enviar datos a servicios externos, adecuado para entornos con requisitos de confidencialidad.
+- Evaluación de cuantizaciones: el mapa quirúrgico de tensores y la disponibilidad de variantes NanoPlus y MiniPlus permiten comparar el impacto de distintas precisiones en tareas concretas.
+- Integración en pipelines de CI/CD para pruebas de modelos: el formato GGUF y la compatibilidad con endpoints facilitan automatizar pruebas de regresión conversacional o multimodal en entornos controlados.
+- Despliegue en estaciones de trabajo con una sola GPU: el footprint de 12,09 GiB encaja en GPUs de 16 GB o superiores, lo que permite usar el modelo como servicio interno ligero.
 
 ## Benchmarks y rendimiento
 
@@ -59,42 +52,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 12-13 GB para el fichero MiniPlus (12,09 GiB), mas overhead de contexto y cache KV; la variante NanoPlus del mismo autor ocupa 10,23 GiB.
-- GPU recomendadas: no disponible de forma explicita; por tamano, GPUs con 16 GB o mas de VRAM (RTX 4080, RTX 4090, A100, H100) permiten cargar el modelo completo en GPU.
-- Cabe en GPU de consumo: si, en tarjetas con 16 GB o mas de VRAM; en GPUs de 8-12 GB requeriria descarga parcial a CPU o la variante NanoPlus.
-- Opciones de despliegue: llama.cpp (CUDA, Vulkan, CPU), V-Agent (con motores llama.cpp, Strata/PolyStrata, Strata Rust/RustingStrata y Project Maya opcional). Compatible con endpoints.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 12,09 GiB para la variante MiniPlus según la model card; la variante NanoPlus ocupa 10,23 GiB.
+- GPU recomendadas: no disponibles de forma explícita; por el footprint, cabría en GPUs con 16 GB o más de VRAM (por ejemplo, RTX 4080/4090, A100 40 GB, H100).
+- Cabe en GPU de consumo: sí, en modelos con al menos 16 GB de VRAM; en GPUs de 12 GB podría requerir offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp (CUDA, Vulkan, CPU), V-Agent, y motores compatibles con GGUF; el autor menciona también Strata/PolyStrata y Project Maya como motores locales de V-Agent.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros totales | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Inkling-2-Mini APEX-I MiniPlus V2.1 (este) | 26,07 B totales | no disponible | GGUF (12,09 GiB) | Apache 2.0 | Cuantizacion mixta Q4_K/Q6_K/Q8_0/F32 con iMatrix |
-| Inkling-2-Mini APEX-I NanoPlus V2.1 | 26,07 B totales (base) | no disponible | GGUF (10,23 GiB) | Apache 2.0 | Variante mas agresiva del mismo autor |
-| thinkingmachines/Inkling-2-Mini (base) | 26,07 B totales | no disponible | safetensors BF16 | Apache 2.0 | Modelo original sin cuantizar |
+| Inkling-2-Mini-APEX-I-MiniPlus-V2.1 | 26,07 B | no disponible | Apache 2.0 | GGUF | Cuantización mixta MiniPlus, 12,09 GiB |
+| Inkling-2-Mini-APEX-I-NanoPlus-V2.1 | no disponible | no disponible | Apache 2.0 | GGUF | Variante más ligera, 10,23 GiB |
+| Inkling-2-Mini (base) | 26,07 B | no disponible | Apache 2.0 (según repo) | BF16 | Modelo original de thinkingmachines |
 
-No se dispone de datos de rendimiento comparado con modelos de la misma categoria en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes ni con modelos de otras familias.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos de benchmarks del modelo base ni de esta cuantizacion, por lo que no es posible verificar la degradacion introducida por la cuantizacion mixta.
-- El modelo base es de procedencia poco documentada publicamente: se desconoce el dataset de entrenamiento, el numero de tokens, los idiomas soportados y si hubo alineamiento con RLHF o DPO.
-- La cuantizacion Q4_K en embeddings y proyecciones de atencion puede degradar tareas sensibles a precision numerica (matematicas, razonamiento de cadena larga, generacion de codigo exacta); las protecciones F32 y Q8_0 mitigan pero no eliminan este riesgo.
-- Riesgo de alucinacion inherente a modelos generativos; no hay evaluaciones publicadas de fidelidad factua.
-- Sesgos conocidos: no disponible.
-- Limitaciones de contexto e idioma: no disponible; la ausencia de idiomas declarados impide garantizar calidad en castellano.
-- La licencia Apache 2.0 del repositorio de cuantizacion permite uso comercial, pero debe verificarse que el modelo base `thinkingmachines/Inkling-2-Mini` mantiene la misma licencia.
-- El autor declara que la iMatrix utilizada es un fichero externo cuya procedencia no se infiere; conviene auditar su origen antes de usar el GGUF en produccion.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion comunitaria del artefacto.
-- La integracion con V-Agent esta vinculada a un proyecto personal del autor; para produccion conviene usar llama.cpp directamente o un servidor compatible con endpoints.
+- No se documentan sesgos conocidos del modelo base ni de la cuantización.
+- Riesgo de alucinación inherente a modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
+- Longitud de contexto e idiomas soportados no disponibles, lo que impide garantizar un comportamiento multilingüe o ventanas largas.
+- La licencia Apache 2.0 se declara en el repositorio de la cuantización, pero conviene verificar la licencia del modelo base `thinkingmachines/Inkling-2-Mini` antes de uso comercial.
+- La cuantización mixta puede degradar ligeramente la calidad frente al BF16 original; el autor no publica métricas de degradación.
+- El uso de `imatrix.gguf` de un repositorio externo se documenta sin inferir su procedencia, lo que es un caveat de trazabilidad.
+- La model card promociona V-Agent y Ko-fi; parte del contenido es material promocional y no técnico.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/IsValorum/Inkling-2-Mini-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Variante NanoPlus: https://huggingface.co/IsValorum/Inkling-2-Mini-APEX-I-NanoPlus-V2.1-GGUF
-- Mapa por tensor: https://huggingface.co/IsValorum/Inkling-2-Mini-APEX-I-MiniPlus-V2.1-GGUF/blob/main/tensor-map.tsv
+- Variante MiniPlus abliterated: https://huggingface.co/IsValorum/Inkling-2-Mini-Abliterated-APEX-I-MiniPlus-V2.1-GGUF
+- Variante NanoPlus abliterated: https://huggingface.co/IsValorum/Inkling-2-Mini-Abliterated-APEX-I-NanoPlus-V2.1-GGUF
+- Matriz de importancia: https://huggingface.co/ggml-org/Inkling-2-Mini-GGUF
 - V-Agent (repositorio): https://github.com/IsValorum/V-Agent
-- V-Agent (ultima release): https://github.com/IsValorum/V-Agent/releases/latest
-- V-Agent (arquitectura): https://github.com/IsValorum/V-Agent/blob/main/docs/ARCHITECTURE.md
+- V-Agent (releases): https://github.com/IsValorum/V-Agent/releases/latest
+- Arquitectura de V-Agent: https://github.com/IsValorum/V-Agent/blob/main/docs/ARCHITECTURE.md
 - Apoyo al autor: https://ko-fi.com/isvalorum

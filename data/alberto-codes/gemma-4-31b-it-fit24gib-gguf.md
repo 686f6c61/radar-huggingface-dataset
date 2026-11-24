@@ -2,107 +2,116 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF de precisión mixta del modelo multimodal Gemma 4 31B IT de Google DeepMind, empaquetada por Alberto-Codes mediante la herramienta vramfit. El objetivo es servir el modelo completo —incluyendo su torre de visión— dentro de una tarjeta gráfica con 24 GiB de VRAM, algo que la cuantización uniforme QAT Q4_0 oficial no logra con la misma calidad medida. El pack se compone de dos archivos: un decoder de 14,92 GiB y un projector de visión (sidecar) de 1,118 GiB en BF16 sin cuantizar.
+`gemma-4-31B-it-fit24gib-GGUF` es una cuantización GGUF de precisión mixta del modelo multimodal `google/gemma-4-31B-it`, publicada por el usuario independiente Alberto-Codes bajo el proyecto vramfit. No es un modelo nuevo: es un empaquetado optimizado del checkpoint QAT sin cuantizar de Google, con el objetivo explícito de servir texto e imágenes dentro de una tarjeta gráfica de 24 GiB de VRAM. El modelo base es un transformer multimodal de 30.697.345.596 parámetros (aproximadamente 31B) con capacidades de image-text-to-text.
 
-La relevancia de este artefacto radica en su enfoque de cuantización selectiva por capas: vramfit mide el daño que cada capa del decoder sufre al cuantizarse y asigna los bits disponibles bajo un presupuesto fijo, en lugar de aplicar un esquema uniforme. Los resultados publicados muestran una calidad de texto comparable o superior al QAT Q4_0 oficial en benchmarks held-out, con un ahorro de 1,5 GiB que se traduce en una ventana de contexto mayor en la misma GPU. El modelo base, Gemma 4 31B IT, es un transformer denso de 31B parámetros con soporte de imagen y texto, contexto nativo de hasta 256K tokens y más de 140 idiomas, aunque esta versión cuantizada limita el contexto práctico según la VRAM disponible.
+La aportación técnica del pack no es una única receta de cuantización, sino una asignación de bits por capa guiada por la medición del daño de cuantización de cada capa del decodificador (el desplazamiento en la distribución de salida al cuantizar esa capa). Bajo esa restricción de presupuesto, el resultado ocupa 14,92 GiB en el decodificador y 629 MiB en el proyector de visión, frente a los 16,44 GiB del GGUF QAT Q4_0 oficial de Google, con calidad de texto medida comparable y menor divergencia condicionada por visión.
 
-## Especificaciones tecnicas
+Es relevante porque demuestra una vía práctica para ganar contexto en hardware de consumo: en una RTX 4090 con llama.cpp b10362, el pack sirve 86.016 tokens en modo solo texto (frente a 65.536 del QAT Q4_0) y 73.728 tokens con una imagen a bordo (frente a 49.152). La licencia declarada es Apache 2.0, aunque el modelo base remite a la licencia propia de Gemma 4 de Google.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Gemma 4 31B IT) con cuantización mixta por capas |
-| Parametros totales | 30.697.345.596 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 81.920 tokens en texto y 61.440 con imagen (medido en RTX 4090 24 GiB); el modelo base soporta hasta 256K |
-| Tipos de cuantizacion | Mixta por capas (sin esquema único), projector de visión en BF16 |
-| Idiomas soportados | No disponible en la model card; el modelo base Gemma 4 soporta más de 140 idiomas |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (dos archivos: decoder + mmproj) |
+| Arquitectura | Transformer multimodal (decodificador de lenguaje + torre de visión con proyector), según el modelo base; detalles internos no disponibles |
+| Parámetros totales | 30.697.345.596 (dato de safetensors del modelo base) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | Hasta 86.016 tokens solo texto y 73.728 con una imagen, medidos en RTX 4090 (24 GiB) con llama.cpp b10362, `-ngl 99 -np 1`; contexto nativo del modelo base no disponible |
+| Tipos de cuantización | GGUF de precisión mixta: 150 tensores Q5_0, 13 Q8_0, 27 F16 y 166 F32, a 9,16 bits efectivos por parámetro; sidecar de visión convertido con receta Q4_K_M |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 (con enlace a la licencia de Gemma 4 de Google: https://ai.google.dev/gemma/docs/gemma_4_license) |
+| Formato de pesos | GGUF (dos ficheros: decodificador de 14,92 GiB y proyector de 629 MiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Gemma 4 31B IT, un transformer denso multimodal desarrollado por Google DeepMind que acepta entradas de texto e imagen (y video como secuencias de frames). La versión aquí descrita es una cuantización GGUF de ese modelo, construida a partir del checkpoint `google/gemma-4-31B-it-qat-q4_0-unquantized`. La innovación principal es el uso de vramfit, que calcula para cada capa del decoder el cambio en la distribución de salida (KLD) al cuantizarla y asigna un número de bits por capa bajo un presupuesto total de 24 GiB. El resultado es un archivo GGUF de precisión mixta, sin un esquema de cuantización uniforme.
+El pack deriva de `google/gemma-4-31B-it-qat-q4_0-unquantized`, el checkpoint de entrenamiento con cuantización consciente (QAT) sin cuantizar de Gemma 4 31B instruct. La arquitectura subyacente es la del modelo base de Google: un transformer multimodal con decodificador de lenguaje y torre de visión conectada mediante un proyector, orientado a tareas image-text-to-text. No se dispone en la información proporcionada de detalles sobre número de tokens de entrenamiento, composición del dataset ni uso de RLHF o DPO.
 
-El projector de visión (mmproj) se mantiene en BF16 sin cuantizar, porque según la literatura citada en la model card los componentes de visión son más sensibles a la cuantización y el coste de calidad de cuantizar ese projector no ha sido medido. El entrenamiento original del modelo base (datos, número de tokens, técnicas de alineación como RLHF o DPO) no se detalla en la información proporcionada; solo se sabe que es un modelo instructivo multimodal. La cuantización se realizó con llama.cpp y se midió con un corpus de calibración de 357 bloques de texto de dominio público (182.404 tokens) para generar la matriz de importancia (imatrix).
+La innovación del pack es el método de asignación de bits: vramfit midió el daño de cuantización de cada capa del decodificador (el cambio en la distribución de salida al cuantizarla) y distribuyó el presupuesto de bits en consecuencia, empaquetando después con el cuantizador de llama.cpp. El sidecar de visión se convirtió desde el proyector del proveedor con la receta Q4_K_M de `llama-quantize`; según el autor, iguala al sidecar BF16 en KLD por clase de contenido (0,0050 frente a 0,0045, con 99,2 % de acuerdo en el token superior en ambos casos) y libera 4.096 tokens de contexto. El marcador `fit24gib` es una afirmación de despliegue verificada con una prueba de servicio real dentro de un límite de 24 GiB de VRAM, no una etiqueta de tamaño de fichero.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base es capaz de tareas de lenguaje natural, razonamiento lógico y matemático, aunque la cuantización puede degradar ligeramente el rendimiento en tareas complejas.
-- Procesamiento de imágenes: al incluir el projector sidecar, el modelo puede recibir imágenes como entrada y generar texto condicionado a ellas. La card mide una divergencia KLD acotada en el límite de servicio con imágenes.
-- Multimodalidad: soporta entradas de imagen y texto simultáneamente, lo que permite tareas como descripción de imágenes, respuesta a preguntas visuales o análisis de diagramas.
-- Multilingüismo: aunque no se especifica en la card, el modelo base Gemma 4 soporta más de 140 idiomas, por lo que esta cuantización debería heredar esa capacidad, con posibles variaciones debidas a la cuantización.
-- Servicio en GPU de consumo: el pack está diseñado para ejecutarse en una RTX 4090 (24 GiB) con llama.cpp, logrando una ventana de contexto de 81.920 tokens en modo texto y 61.440 con una imagen cargada.
-- Tool calling y agentes: no se menciona explícitamente en la model card, pero el modelo base Gemma 4 IT es conocido por soportar function calling y flujos agénticos; esta cuantización no garantiza ni desmiente esa capacidad.
+- Generación de texto conversacional multi-turno, con etiqueta `conversational` y compatibilidad con endpoints.
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`): requiere cargar el decodificador y el sidecar del proyector; el servicio solo texto necesita únicamente el decodificador.
+- Razonamiento y matemáticas: avalado por resultados medidos en MMLU (71,36 ± 0,37) y GSM8K (92,34 ± 0,73 en exact match estricto).
+- Comprensión lectora y sentido común: HellaSwag 58,71 ± 0,49 (acc_norm) y Winogrande 68,27 ± 1,31.
+- Razonamiento científico de opción múltiple: ARC-Challenge 61,77 ± 1,42 (acc_norm).
+- Contexto largo: hasta 86.016 tokens en solo texto y 73.728 con una imagen en una GPU de 24 GiB.
+- Soporte de tool calling, function calling, agentes y modo thinking: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Análisis de documentos técnicos con imágenes: el modelo puede procesar capturas de pantalla, diagramas o esquemas y generar explicaciones o extraer información relevante, gracias a su capacidad multimodal y a la ventana de contexto de 61.440 tokens con imagen.
-- Asistente de accesibilidad: descripción automática de imágenes para personas con discapacidad visual, integrable en aplicaciones de escritorio o web mediante llamadas a la API de llama.cpp.
-- Soporte técnico con envío de imágenes: un chatbot de atención al cliente que recibe fotos de productos o errores de pantalla y responde con pasos de solución, usando el contexto largo para mantener la conversación.
-- Generación de código con contexto visual: el modelo puede recibir una captura de una interfaz o un error de compilación y sugerir correcciones de código, aprovechando su entrenamiento en tareas de programación.
-- Procesamiento de formularios y facturas: extracción de campos clave de imágenes de documentos, combinando OCR implícito con razonamiento textual, en un entorno con VRAM limitada.
-- Investigación y educación: uso como herramienta de estudio para resolver problemas matemáticos o explicar conceptos a partir de figuras o gráficos, con despliegue local en estaciones de trabajo con GPU de 24 GiB.
+- Análisis de documentos extensos en una sola GPU de 24 GiB: con 86.016 tokens de contexto medidos en solo texto, el pack permite ingerir contratos, informes o expedientes completos sin fragmentación ni recuperación externa, algo que el QAT Q4_0 oficial no alcanza en la misma tarjeta (65.536 tokens).
+- Asistencia sobre capturas, diagramas o documentos escaneados: cargando decodificador y sidecar, el modelo acepta una imagen junto a 73.728 tokens de contexto, útil para responder preguntas sobre planos técnicos, interfaces de usuario o tablas escaneadas con texto de apoyo largo.
+- Despliegue local en estación de trabajo con RTX 4090: el pack está verificado con llama.cpp b10362 y `-ngl 99 -np 1` dentro de 24 GiB, lo que permite ofrecer un asistente privado sin coste de API ni envío de datos a terceros.
+- Evaluación de calidad de cuantizaciones: los sidecars de evaluación incluidos (resultados por tarea de lm-evaluation-harness 0.4.12) y las métricas de PPL y KLD permiten reproducir la comparación frente al QAT Q4_0 y validar el compromiso tamaño/calidad en un pipeline propio.
+- Razonamiento aritmético y resolución de problemas en producción: con 92,34 de exact match estricto en GSM8K, es adecuado para validación de cálculos, generación de explicaciones paso a paso y comprobación de resultados en flujos internos.
+- Servicio conversacional con endpoints compatibles: la etiqueta `endpoints_compatible` facilita integrarlo en infraestructuras que ya hablan el protocolo de endpoints habituales, con una sola GPU consumer.
+- Base para ajuste fino o destilación sobre hardware limitado: al ocupar 14,92 GiB el decodificador, deja margen de VRAM para caché KV y para herramientas auxiliares en tarjetas de 24 GiB.
 
 ## Benchmarks y rendimiento
 
-La model card incluye resultados de benchmarks held-out (lm-evaluation-harness 0.4.12, full splits) comparando este pack con el QAT Q4_0 oficial. También reporta métricas de perplexity y KLD sobre el corpus de calibración. Se presentan ambas tablas.
+Calidad de texto medida sobre el corpus de calibración enmarcado (357 bloques de texto de dominio público, 182.404 tokens, 356 fragmentos con n_ctx 512), con llama-perplexity solo CPU compilado desde b10362 y `parse_special` activado. Menor es mejor en PPL y KLD.
 
-**Calidad de texto sobre corpus de calibración (menor es mejor para PPL y KLD):**
-
-| Modelo | Tamaño de archivo | PPL ↓ | PPL / bf16 ↓ | Mean KLD ↓ | Same top ↑ |
+| Modelo | Tamaño | PPL ↓ | PPL / BF16 ↓ | KLD medio ↓ | Mismo top ↑ |
 |---|---|---|---|---|---|
-| BF16 reference | 57,20 GiB | 35,0668 | — | — | — |
-| **Este pack** | **14,92 GiB** | 37,4552 | **1,0681 ± 0,0027** | 0,0446 ± 0,0004 | 92,04 % |
-| QAT Q4_0 | 16,44 GiB | 38,7227 | 1,1043 ± 0,0029 | **0,0420 ± 0,0003** | 92,32 % |
+| Referencia BF16 | 57,20 GiB | 35,0668 | — | — | — |
+| Este pack | 14,92 GiB | 37,4552 | 1,0681 ± 0,0027 | 0,0446 ± 0,0004 | 92,04 % |
+| QAT Q4_0 | 16,44 GiB | 38,7227 | 1,1043 ± 0,0029 | 0,0420 ± 0,0003 | 92,32 % |
 
-**Benchmarks held-out (delta dentro del error combinado se considera empate):**
+Benchmarks retenidos con lm-evaluation-harness 0.4.12 sobre llama-cpp-python 0.3.34 con librerías Vulkan b10362, splits completos y sin límite de muestreo. Una diferencia dentro del error estándar combinado se considera empate.
 
-| Tarea (shots, métrica) | Este pack | QAT Q4_0 | Δ | Veredicto |
-|---|---|---|---|---|
-| MMLU (5, acc) | **71,36 ± 0,37** | 70,20 ± 0,38 | +1,15 | win |
-| GSM8K (5, strict exact match) | 92,34 ± 0,73 | 92,42 ± 0,73 | −0,08 | tie |
-| HellaSwag (10, acc_norm) | 58,71 ± 0,49 | 59,34 ± 0,49 | −0,63 | tie |
-| Winogrande (5, acc) | 68,27 ± 1,31 | 68,03 ± 1,31 | +0,24 | tie |
-| ARC-Challenge (25, acc_norm) | 61,77 ± 1,42 | 61,09 ± 1,42 | +0,68 | tie |
+| Tarea (shots, métrica) | Este pack | QAT Q4_0 | Δ | σ combinada | Veredicto |
+|---|---|---|---|---|---|
+| MMLU (5, acc) | 71,36 ± 0,37 | 70,20 ± 0,38 | +1,15 | 0,53 | victoria |
+| GSM8K (5, exact match estricto) | 92,34 ± 0,73 | 92,42 ± 0,73 | −0,08 | 1,03 | empate |
+| HellaSwag (10, acc_norm) | 58,71 ± 0,49 | 59,34 ± 0,49 | −0,63 | 0,69 | empate |
+| Winogrande (5, acc) | 68,27 ± 1,31 | 68,03 ± 1,31 | +0,24 | 1,85 | empate |
+| ARC-Challenge (25, acc_norm) | 61,77 ± 1,42 | 61,09 ± 1,42 | +0,68 | 2,01 | empate |
 
-Además, la card reporta una métrica de visión específica: una KLD truncada top-20 en nats en el límite de servicio, medida con 10 imágenes de 768×768 y un decoder BF16 de referencia. Los valores exactos no se incluyen en el extracto, pero se afirma que este pack tiene una divergencia menor que el QAT Q4_0 en esa métrica.
+Contexto máximo servido en RTX 4090 (24 GiB), llama.cpp b10362, `-ngl 99 -np 1`, medido el 2026-08-31 en escalones de 4.096 tokens:
+
+| Forma de servicio | Este pack | QAT Q4_0 | Ganancia |
+|---|---|---|---|
+| Solo texto, carga máxima medida | 86.016 tokens | 65.536 tokens | +20.480 (+31,25 %) |
+| Con una imagen, carga máxima medida | 73.728 tokens | 49.152 tokens | +24.576 (+50 %) |
+
+Con el mismo proyector BF16, este pack sirve una imagen a 69.632 tokens frente a 49.152 del QAT (+41,7 %); la conversión del sidecar añade los últimos 4.096 tokens.
 
 ## Requisitos de hardware
 
-- VRAM mínima medida: 24 GiB para servir el modelo completo con imagen y contexto de 61.440 tokens. En modo texto, el decoder de 14,92 GiB puede caber en GPUs con menos VRAM, pero no hay mediciones publicadas.
-- GPU de referencia: NVIDIA RTX 4090 (24 GiB), utilizada en las pruebas de servicio con llama.cpp b10362 y `-ngl 99 -np 1`.
-- El pack está optimizado para tarjetas de consumo de 24 GiB; no se ha probado en GPUs de menor capacidad.
-- Opciones de despliegue: llama.cpp (incluido llama-server y llama-cpp-python) es el entorno verificado. También puede usarse a través de interfaces que consuman GGUF, como Ollama, aunque no se menciona explícitamente.
-- Latencia y throughput: no se proporcionan datos específicos de velocidad de generación; solo se indica que las mediciones de contexto se hicieron con una sola secuencia (`-np 1`).
+- VRAM estimada: 14,92 GiB para el decodificador y 629 MiB adicionales para el proyector de visión; el pack está verificado sirviendo dentro de un límite de 24 GiB de VRAM.
+- GPU recomendadas: RTX 4090 (24 GiB) es la plataforma de referencia de las mediciones; por capacidad de VRAM son equivalentes o superiores A100 40/80 GB, H100 y L40S.
+- GPU consumer: cabe en tarjetas de 24 GiB (RTX 4090, RTX 3090) y, con margen más ajustado, en 16 GiB solo para texto con contexto reducido (no verificado en la información disponible).
+- Opciones de despliegue: llama.cpp (versión b10362 usada en las mediciones), llama-cpp-python 0.3.34 y backends compatibles con GGUF; soporta endpoints compatibles. Soporte en vLLM, TGI u Ollama no disponible.
+- Latencia y throughput: no disponibles; las mediciones publicadas son de contexto máximo servido y de calidad, no de velocidad de generación.
 
 ## Comparativa con modelos similares
 
-La comparación principal es con el QAT Q4_0 oficial del mismo modelo base, que es la alternativa más directa. También se puede comparar con el modelo BF16 original, aunque no es una opción práctica para GPU de consumo.
-
-| Modelo | Tamaño de archivo | Contexto máximo en 24 GiB (texto) | Calidad (MMLU) | Licencia | Formato |
+| Modelo | Parámetros | Contexto servido (24 GiB) | Tamaño en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este pack** | 14,92 GiB (decoder) + 1,12 GiB (proyector) | 81.920 tokens | 71,36 | Apache 2.0 | GGUF mixto |
-| QAT Q4_0 oficial | 16,44 GiB | 61.440 tokens | 70,20 | Apache 2.0 | GGUF uniforme |
-| BF16 original | 57,20 GiB | no medido (requiere >24 GiB) | no disponible | Apache 2.0 | Safetensors |
+| Este pack | 30,7B | 86.016 (texto) / 73.728 (una imagen) | 14,92 GiB + 629 MiB | apache-2.0 | Hugging Face, GGUF |
+| google/gemma-4-31B-it-qat-q4_0-gguf | 30,7B | 65.536 (texto) / 49.152 (una imagen) | 16,44 GiB | licencia Gemma 4 | Hugging Face, GGUF oficial |
+| google/gemma-4-31B-it-qat-q4_0-unquantized | 30,7B | no disponible | no disponible | licencia Gemma 4 | Hugging Face, checkpoint QAT |
+| google/gemma-4-31B-it | 30,7B | no disponible | 57,20 GiB (referencia BF16) | licencia Gemma 4 | Hugging Face, safetensors |
 
-El pack ofrece una mejora de +20.480 tokens de contexto en texto y +50 % con imagen respecto al QAT Q4_0, con una calidad de texto igual o superior en cuatro de cinco benchmarks. No hay otros GGUF de Gemma 4 31B con datos comparables en la información disponible.
+Frente al QAT Q4_0 oficial, este pack ocupa 1,52 GiB menos, empata en cuatro benchmarks y gana en MMLU (+1,15, fuera del error combinado), pero pierde ligeramente en KLD medio (0,0446 frente a 0,0420) y en acuerdo de token superior (92,04 % frente a 92,32 %). Frente a la referencia BF16, la pérdida de perplejidad relativa es de 1,0681.
 
 ## Limitaciones y advertencias
 
-- La cuantización mixta se optimizó para el corpus de calibración utilizado; el mapa de sensibilidad midió solo daño en texto, no en visión, por lo que la calidad visual en tareas no cubiertas por la métrica de visión podría degradarse.
-- La métrica de visión reportada es una KLD truncada top-20, no una KLD completa, y se midió en un conjunto pequeño de 10 imágenes; no es una garantía exhaustiva de calidad visual.
-- El contexto práctico está limitado por la VRAM: 81.920 tokens en texto y 61.440 con imagen en una RTX 4090. Superar esos límites puede provocar errores de memoria.
-- La card advierte que la comparación de perplexity favorece a este pack porque su matriz de importancia consumió el mismo corpus de calibración; el QAT Q4_0 no usó esa matriz. Los benchmarks held-out son el árbitro neutral.
-- No se documentan sesgos específicos del modelo, pero al ser una cuantización de Gemma 4, puede heredar sesgos del modelo base, que no se detallan en esta información.
-- El uso comercial está permitido bajo licencia Apache 2.0, pero se recomienda revisar los términos de la licencia de Gemma 4 (enlazada en la card).
-- Para servir imágenes se necesitan ambos archivos (decoder y sidecar); el sidecar ocupa 1,12 GiB adicionales, lo que reduce el espacio disponible para contexto.
+- El corpus de calibración y la matriz de importancia son el mismo conjunto de texto, por lo que las métricas de PPL y KLD de esta ficha no son una evaluación sobre datos retenidos; los benchmarks de lm-evaluation-harness sí lo son y deben usarse como árbitro.
+- El KLD medio y el acuerdo de token superior son ligeramente peores que los del QAT Q4_0 oficial, pese a la ventaja en MMLU y en tamaño.
+- La comparación de contexto con imagen frente al QAT Q4_0 mueve dos variables a la vez (decodificador y sidecar); la comparación de una sola variable es la que usa el mismo proyector BF16 (69.632 frente a 49.152 tokens).
+- Las cifras de contexto máximo dependen de la configuración exacta (llama.cpp b10362, `-ngl 99 -np 1`, RTX 4090, 2026-08-31); otros backends, versiones o cargas de VRAM pueden reducirlas.
+- La licencia del repositorio se declara apache-2.0, pero el modelo base remite a la licencia de Gemma 4 de Google; conviene revisar sus términos antes de uso comercial, ya que pueden imponer restricciones adicionales.
+- No hay información publicada sobre sesgos, tasas de alucinación, cobertura idiomática ni comportamiento en tool calling o modo thinking; no deben asumirse.
+- El pack tiene 411 descargas y 1 like en el momento de la ficha: es un artefacto de la comunidad, no una publicación oficial de Google, y no cuenta con el mismo nivel de validación externa.
+- El sidecar de visión cambió de BF16 a Q4_K_M el 2026-08-31; versiones anteriores del repositorio pueden tener comportamiento distinto.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Alberto-Codes/gemma-4-31B-it-fit24gib-GGUF
-- Modelo base (Gemma 4 31B IT): https://huggingface.co/google/gemma-4-31B-it
+- Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Checkpoint QAT sin cuantizar: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
-- QAT Q4_0 GGUF oficial: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-gguf
-- Herramienta vramfit: https://github.com/Alberto-Codes/vramfit
-- Página de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
-- Ficha del modelo en NVIDIA NIM: https://build.nvidia.com/google/gemma-4-31b-it
+- GGUF QAT Q4_0 oficial: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-gguf
+- Proyecto vramfit: https://github.com/Alberto-Codes/vramfit
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

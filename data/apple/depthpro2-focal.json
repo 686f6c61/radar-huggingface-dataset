@@ -45,14 +45,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Apple",
-      "url": "https://www.apple.com/",
-      "snippet": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore …Read more"
-    },
-    {
       "title": "Apple (France)",
       "url": "https://www.apple.com/fr/",
       "snippet": "Tout l’univers Apple, avec les iPhone, iPad, Apple Watch, Mac et Apple TV. Ainsi que les accessoires, le divertissement et notre …Read more"
+    },
+    {
+      "title": "Apple",
+      "url": "https://www.apple.com/",
+      "snippet": "Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore …Read more"
     },
     {
       "title": "Gérer le compte Apple",

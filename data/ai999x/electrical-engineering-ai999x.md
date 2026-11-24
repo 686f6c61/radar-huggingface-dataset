@@ -2,99 +2,107 @@
 
 ## Resumen
 
-electrical-engineering-ai999x es un motor de resolución de problemas de ingeniería eléctrica para Python, desarrollado por Ibnul Jaif Farabi bajo la organización AI999X. No es un transformer generativo al uso: la model card lo describe como un motor determinista neuro-simbólico que combina una capa de lectura de preguntas en inglés basada en reglas con 64 procedimientos simbólicos certificados (sympy, mpmath). Cada respuesta se calcula, se comprueba por sustitución, análisis dimensional o cálculo independiente, y se devuelve junto con sus pasos, fórmulas en LaTeX, unidades y supuestos.
+`electrical-engineering-ai999x` es un modelo publicado por AI999X en Hugging Face bajo licencia Apache 2.0, orientado a la resolución de problemas de ingeniería eléctrica. A pesar de la etiqueta de pipeline `question-answering` y de los tags que lo presentan como modelo de lenguaje con "zero-hallucination", la model card describe un motor de cálculo determinista compilado (un binario escrito presumiblemente en Rust, según los tags) que resuelve 92 cálculos en 17 temas de ingeniería eléctrica, cada uno con su fórmula, pasos intermedios y unidades. No se trata de un transformer generativo en el sentido habitual, sino de un solucionador simbólico-numérico empaquetado como artefacto de Hugging Face.
 
-El modelo resuelve el problema clásico de los LLM en dominios técnicos: la alucinación en cálculos verificables. En lugar de generar texto plausible, devuelve uno de siete estados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y prefiere rechazar antes que adivinar. Cubre circuitos de continua y alterna, transitorios, fasores y potencia, amplificadores operacionales, diodos y transistores, lógica digital y sistemas de control (funciones de transferencia, estabilidad, Bode).
+El modelo cubre circuitos de continua y alterna, transitorios, fasores y potencia, amplificadores operacionales, diodos y transistores, lógica digital y sistemas de control (funciones de transferencia, estabilidad, diagramas de Bode). Se distribuye en cuatro formatos: aplicación de escritorio (Windows y Linux), interfaz de línea de comandos, versión web y paquete Python instalable mediante `pip install electrical-engineering-ai999x`. Todo el procesamiento se ejecuta localmente, sin conexión a internet.
 
-Con 4.715.520 parámetros declarados en safetensors y un repositorio de 0,0 GB, el paquete se distribuye como wheel Python puro y se ejecuta íntegramente en CPU, sin GPU, sin red y sin clave de API. Es relevante ahora por su propuesta de "cero respuestas incorrectas" en un nicho donde los modelos generalistas fallan con frecuencia, y por su encaje en entornos air-gapped y aplicaciones educativas.
+El conteo de parámetros real reportado en safetensors (4.715.520) resulta llamativo para un motor determinista y sugiere que el artefacto incluye tablas de datos o coeficientes embebidos en formato safetensors, más que pesos de una red neuronal entrenada. La relevancia actual del proyecto radica en su propuesta de "cero alucinación" mediante cálculo determinista frente a los modelos generativos, aunque carece de validación independiente y de adopción significativa en la comunidad (346 descargas y 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor determinista neuro-simbólico: lectura de preguntas basada en reglas + 64 capacidades simbólicas certificadas (no se documenta una arquitectura transformer) |
-| Parametros totales | 4.715.520 (≈4,7 M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (la interfaz es `ask()` sobre formas de pregunta documentadas y `solve(capability_id, **inputs)`, no una ventana de contexto) |
-| Tipos de cuantizacion | No disponible (se distribuyen pesos en safetensors y ONNX, sin cuantizaciones documentadas) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX; distribución principal como wheel de Python (`electrical_engineering_ai999x-1.0.0-py3-none-any.whl`) |
+| Arquitectura | Motor de cálculo determinista compilado (no disponible el detalle de la arquitectura interna; los tags mencionan Rust y Python) |
+| Parametros totales | 4.715.520 (según safetensors) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (tamaño del repo reportado como 0.0 GB); también se distribuye como binario compilado (desktop y CLI) y paquete Python |
+| Pipeline declarado | question-answering |
+| Cobertura funcional | 92 cálculos en 17 temas de ingeniería eléctrica |
+| Plataformas | Windows y Linux (x86-64) con motor compilado; macOS y ARM mediante build Python puro |
+| Librería | electrical-engineering-ai999x |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe un entrenamiento neuronal convencional ni un corpus de tokens. El sistema se presenta como un motor híbrido: una capa de lectura que interpreta formas de pregunta documentadas en inglés (o una llamada tipada con `solve()`), un selector que elige una de las 64 capacidades certificadas y un ejecutor simbólico construido sobre sympy y mpmath. El resultado pasa por una verificación obligatoria —sustitución inversa, comprobación dimensional o contraste con un cálculo independiente— antes de devolverlo.
+La información disponible no describe una arquitectura de red neuronal. La model card presenta el artefacto como "one compiled engine, four ways to use it": un único motor compilado expuesto a través de aplicación de escritorio, línea de comandos, navegador y API Python. Los tags incluyen `rust`, lo que sugiere que el núcleo compilado está implementado en Rust, con un build alternativo en Python puro para plataformas no x86-64 (macOS, ARM) que, según el autor, produce las mismas respuestas.
 
-La validación se apoya en un "knowledge pack" versionado 1.0.0 y en 326 respuestas doradas documentadas, que según el autor se reproducen de forma idéntica en Windows (Python 3.13) y Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13 y 3.14). No se especifican datos de entrenamiento, número de tokens, composición del dataset ni uso de RLHF/DPO. La innovación destacable es el diseño de siete resultados explícitos y el rechazo controlado como mecanismo antialucinación dentro del alcance certificado.
+No se documentan datos de entrenamiento, número de tokens, composición del dataset, ni procesos de RLHF o DPO, lo que es coherente con un sistema determinista basado en fórmulas en lugar de aprendizaje estadístico. El conteo de 4.715.520 parámetros en safetensors podría corresponder a tablas de constantes, coeficientes o datos de referencia embebidos. La innovación declarada es el enfoque "zero-hallucination": cuando falta una entrada o está fuera de rango, el motor devuelve una razón en lenguaje natural en lugar de inventar un número. No hay información sobre decodificación especulativa, atención linear ni otras técnicas propias de modelos generativos.
 
 ## Capacidades
 
-- Resolución de problemas de ingeniería eléctrica en inglés con pasos, fórmulas en LaTeX, unidades, supuestos y el modelo empleado.
-- 64 procedimientos certificados: equivalentes de Thévenin, análisis de circuitos DC y AC, transitorios, fasores, potencia y corrección del factor de potencia, sistemas trifásicos, amplificadores operacionales, diodos y transistores, mapas de Karnaugh y minimización de funciones lógicas, diagramas de Bode, márgenes de ganancia y fase, y criterio de Routh-Hurwitz.
-- Interfaz de doble vía: `ask()` para preguntas en lenguaje natural documentado y `solve(capability_id, **inputs)` para invocación tipada garantizada.
-- Salida autoexplicativa apta para cuadernos, aplicaciones de tutoría y correctores de ejercicios.
-- Siete estados de resultado explícitos, con rechazo honesto cuando faltan datos o la pregunta queda fuera de alcance.
-- Tareas declaradas en los metadatos: question answering, token classification, text classification, sentence similarity y feature extraction (sin detalle de implementación en la model card).
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso abierto: no documentado; el "multi-paso" se limita a la descomposición interna de cada capacidad.
-- Capacidades multilingües: no, solo inglés.
-- Ejecución offline en CPU, sin GPU, sin red y sin clave de API.
+- Resolución de 92 cálculos de ingeniería eléctrica agrupados en 17 temas, cada uno con fórmula, pasos y unidades.
+- Circuitos de continua: equivalentes de Thévenin entre dos nodos, análisis de mallas y nodos, células y baterías con resistencia interna en serie y paralelo.
+- Circuitos de alterna: fasores, potencia, corrección del factor de potencia mediante condensador, sistemas trifásicos, tiempo en que una sinusoidal alcanza un valor.
+- Transitorios en circuitos de primer y segundo orden.
+- Amplificadores operacionales: configuraciones y cálculos asociados.
+- Diodos y transistores: análisis de polarización y comportamiento.
+- Lógica digital: mapas de Karnaugh, suma de productos mínima a partir de minterms con don't-cares.
+- Sistemas de control: funciones de transferencia, estabilidad mediante Routh-Hurwitz, márgenes de ganancia y frecuencia de cruce de fase en diagramas de Bode.
+- Electrostática: condensador de placas paralelas (capacitancia, carga, campo, densidad de flujo y energía).
+- Máquinas eléctricas: generador shunt de continua (corrientes de campo y armadura, f.e.m. generada y potencias).
+- Manejo explícito de entradas faltantes o fuera de rango devolviendo una explicación en lugar de un resultado numérico.
+- Ejecución offline en local, sin dependencia de servicios en la nube.
+- No dispone de tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento generativo, según la información disponible.
 
 ## Casos de uso
 
-- Corrección automática de tareas de ingeniería eléctrica: el motor evalúa el enunciado, ejecuta la capacidad correspondiente y devuelve la solución verificada con pasos, lo que permite comparar contra la respuesta del estudiante sin riesgo de soluciones inventadas.
-- Tutoría paso a paso en aplicaciones educativas: `ask()` devuelve fórmulas en LaTeX, unidades y supuestos, material directamente renderizable en un notebook o en una interfaz web de docencia.
-- Verificación de cálculos en flujos de diseño: comprobación de equivalentes de Thévenin, márgenes de ganancia o estabilidad de Routh-Hurwitz dentro de un pipeline de CI, con resultado determinista y reproducible entre plataformas.
-- Generación de bancos de ejercicios con solución certificada: a partir de las 64 capacidades se pueden construir problemas de circuitos, lógica digital y control con respuesta dorada adjunta.
-- Entornos air-gapped o sin conectividad: al no requerir red ni clave de API, encaja en laboratorios docentes, aulas con equipos aislados y sistemas empotrados de apoyo.
-- Tests de regresión entre plataformas: las 326 respuestas doradas sirven como suite de verificación para garantizar que una instalación en Windows y otra en Linux producen exactamente la misma salida.
-- Preprocesado de ejercicios de lógica digital: simplificación de funciones booleanas por minterms a suma de productos (`minterms_to_sop`), útil en herramientas de generación automática de enunciados.
-- Cálculo de compensación de reactiva: corrección del factor de potencia a partir de carga, tensión y frecuencia, con resultado y procedimiento listos para incorporar a una memoria técnica.
+- Docencia de ingeniería eléctrica: el motor devuelve fórmula, pasos intermedios y unidades para cada cálculo, lo que permite usarlo como apoyo en asignaturas de circuitos, electrónica y control sin riesgo de resultados inventados.
+- Autoevaluación de ejercicios: estudiantes pueden introducir los datos de un problema y contrastar su resultado con el del motor, verificando unidades y pasos intermedios.
+- Verificación de cálculos en diseño de circuitos: comprobación rápida de equivalentes de Thévenin, corrección del factor de potencia o márgenes de estabilidad antes de simular en SPICE.
+- Integración en pipelines Python de docencia o corrección automática: mediante `pip install electrical-engineering-ai999x` se puede invocar el motor desde scripts para generar enunciados resueltos o validar respuestas de alumnos.
+- Uso en entornos sin conectividad: al ejecutarse offline en escritorio, CLI o navegador local, encaja en aulas, laboratorios o instalaciones industriales con red restringida.
+- Apoyo a la enseñanza de lógica digital: generación de sumas de productos mínimas a partir de minterms con don't-cares para prácticas de diseño combinacional.
+- Análisis de estabilidad en control: cálculo de márgenes de ganancia y frecuencia de cruce de fase para sistemas descritos por función de transferencia, útil en prácticas de laboratorio de control.
 
 ## Benchmarks y rendimiento
 
-| Tarea | Dataset | Metrica | Valor | Verificado |
+| Tarea | Dataset | Métrica | Valor | Verificado |
 |---|---|---|---|---|
-| Question answering de ingeniería eléctrica | Golden answers (326 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy ("identical on every platform") | 1,0 | No (`verified: false`, dato declarado por el autor) |
+| Electrical engineering question answering | Golden answers (493 documented questions, Windows + Linux Python 3.10-3.14) | accuracy ("identical on every platform") | 1.0 | No (declarado por el autor) |
 
-No se han publicado en la información disponible otros resultados de benchmarks (MMLU, HumanEval, GSM8K ni similares). El valor 1,0 corresponde a un conjunto cerrado de 326 preguntas doradas definido por el propio autor, no a un benchmark independiente de terceros.
+El resultado procede del `model-index` de la model card y está marcado como no verificado. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K u equivalentes) en la información disponible, ni comparaciones con modelos de referencia.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo se ejecuta en CPU y no requiere GPU.
-- GPU recomendadas: ninguna. Cualquier CPU capaz de ejecutar Python 3.10-3.14 es suficiente.
-- Cabe en cualquier equipo de consumo: el repositorio ocupa 0,0 GB según Hugging Face y el paquete es Python puro con dependencias sympy y mpmath.
-- Opciones de despliegue: `pip install electrical-engineering-ai999x` desde PyPI, o instalación directa del wheel alojado en el repositorio de Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo con pesos transformer.
-- Latencia y throughput: no disponibles en la información proporcionada; el autor solo declara ejecución offline en CPU y resultados idénticos entre plataformas.
-- Plataformas verificadas: Windows con Python 3.13 y Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14.
+- VRAM estimada para inferencia: no aplicable en el sentido habitual; el motor se ejecuta en CPU y el repo reporta 0.0 GB de tamaño.
+- GPU recomendadas: no se requieren GPU según la información disponible; el despliegue es local en CPU.
+- Compatibilidad con GPU de consumo: no aplicable; el producto está pensado para ejecución en CPU en Windows y Linux x86-64.
+- Opciones de despliegue: aplicación de escritorio (Windows y Linux), CLI `electrical-engineering`, navegador en la página del modelo y paquete Python (`pip install electrical-engineering-ai999x`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Datos de rendimiento |
-|---|---|---|---|---|---|
-| electrical-engineering-ai999x | Motor determinista neuro-simbólico | 4,7 M (declarados en safetensors) | No disponible | Apache-2.0 | Accuracy 1,0 en 326 preguntas doradas (declarado por el autor) |
-| Alternativas comparables | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Tipo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| electrical-engineering-ai999x | Motor determinista de cálculo | 4.715.520 (safetensors) | no disponible | 92 cálculos en 17 temas, offline | Apache 2.0 | HF, desktop, CLI, web, pip |
+| Modelos LLM generativos de propósito general (p. ej. familias tipo Llama, Qwen, Mistral) | Transformer generativo | Miles de millones | Decenas de miles de tokens | Razonamiento general, código, matemáticas | Varía (a menudo comunitaria o Apache 2.0) | HF, vLLM, llama.cpp, Ollama |
+| SymPy / Maxima / Wolfram Language | CAS determinista | no aplica | no aplica | Álgebra simbólica y cálculo | BSD / GPL / propietaria | pip, distribución propia |
 
-No se han proporcionado datos de modelos alternativos de la misma categoría (resolutores de ingeniería eléctrica o solvers simbólicos empaquetados para Python), por lo que no es posible establecer una comparación numérica rigurosa. Cualitativamente, la propuesta se diferencia de un LLM generalista en que no genera texto libre: sustituye la generación por ejecución simbólica verificada y rechazo explícito, a cambio de cubrir únicamente el dominio y las 64 capacidades certificadas y de operar solo en inglés.
+La comparación directa con LLM generativos no es homogénea: el modelo de AI999X no genera texto libre ni razona sobre problemas abiertos, sino que resuelve un conjunto acotado de cálculos. Frente a CAS como SymPy, la diferencia es la orientación didáctica (pasos y unidades) y la interfaz empaquetada. No se dispone de datos de rendimiento comparables entre estas categorías.
 
 ## Limitaciones y advertencias
 
-- Cobertura cerrada: solo responde dentro de las 64 capacidades certificadas y las formas de pregunta documentadas; cualquier cuestión fuera de ese alcance devuelve OUT_OF_SCOPE o UNRECOGNIZED_FORMAT.
-- Idioma único: la interfaz de lectura de preguntas está diseñada para inglés; no hay soporte documentado de castellano ni de otras lenguas.
-- El benchmark de accuracy 1,0 es autodeclarado (`verified: false`) y se mide sobre un conjunto dorado definido por el propio autor, por lo que no equivale a una evaluación independiente ni descarta sobreajuste al conjunto de 326 preguntas.
-- "Zero hallucination" es una afirmación de la model card válida únicamente dentro del alcance certificado; no debe extrapolarse a preguntas abiertas ni a dominios no cubiertos.
-- No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no admite contexto largo; tampoco se documenta soporte de tool calling ni de agentes.
-- No se documentan sesgos demográficos ni lingüísticos; el riesgo principal es de alcance (problemas mal interpretados que acaben en AMBIGUOUS) más que de sesgo estadístico.
-- Adopción comunitaria nula en el momento de la consulta (0 descargas, 0 likes), lo que implica ausencia de validación externa y de casos de uso reportados por terceros.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución y conservación del aviso de licencia; conviene revisar el fichero LICENSE del repositorio antes de integrarlo en un producto.
-- El metadato de la model card declara `inference: false` pese a que el paquete se presenta como ejecutable; conviene validar el comportamiento en el entorno de producción propio.
+- Cobertura acotada: solo 92 cálculos en 17 temas; cualquier problema fuera de ese catálogo no será resuelto por el motor.
+- No es un modelo de lenguaje generativo: no mantiene conversaciones multi-turno, no redacta explicaciones libres ni responde a preguntas abiertas de ingeniería eléctrica que no encajen en sus cálculos.
+- Idioma: únicamente inglés (`en`), lo que limita su uso directo en castellano sin adaptación.
+- Resultado de benchmark autodeclarado y no verificado; el "accuracy 1.0" proviene de un dataset definido por el propio autor ("Golden answers"), sin validación externa.
+- Adopción comunitaria muy baja (346 descargas, 0 likes en el momento de la consulta), lo que implica escasa retroalimentación y validación por terceros.
+- El conteo de 4.715.520 parámetros en safetensors no está explicado en la model card; conviene tratarlo con cautela a efectos de reproducibilidad.
+- Riesgo de alucinación declarado como nulo por el autor, pero no auditado de forma independiente; la garantía de "cero alucinación" debe entenderse como una afirmación del autor.
+- Licencia Apache 2.0 permite uso comercial, pero no se documentan garantías, mantenimiento ni política de soporte.
+- El tamaño del repo reportado como 0.0 GB y la falta de detalle sobre el binario compilado dificultan la auditoría de seguridad del artefacto antes de desplegarlo en producción.
+- No se documentan sesgos, límites de contexto ni requisitos de latencia, por lo que no pueden evaluarse para escenarios de alta concurrencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/electrical-engineering-ai999x
-- Paquete en PyPI: https://pypi.org/project/electrical-engineering-ai999x/
-- Guía de capacidades (docs): https://huggingface.co/AI999X/electrical-engineering-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/electrical-engineering-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web del autor: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del producto con demo web: https://www.ai999x.com/models/electrical-engineering-ai999x/
+- Vídeo de demostración (MP4): https://www.ai999x.com/?ax_shot=electrical-engineering-ai999x/clip.mp4
+- Repositorio de la aplicación de escritorio (GitHub): https://github.com/AI999X/ai999x-desktop
+- Release de escritorio Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-electrical-engineering-1.6.7-windows-x86_64.zip
+- Release de escritorio Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-electrical-engineering-1.6.7-linux-x86_64.tar.gz
+- Release de CLI Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- Release de CLI Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz

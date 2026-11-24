@@ -5,8 +5,8 @@
   "author": "ChrisElwood",
   "url": "https://huggingface.co/ChrisElwood/timesheetme-lfm2.5-1.2b-release",
   "created_at": "2026-11-19T22:28:33.000Z",
-  "updated_at": "2026-11-20T01:55:32.000Z",
-  "license": "lfm1.0",
+  "updated_at": "2026-11-23T21:02:22.000Z",
+  "license": "timesheetme-model-license",
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
@@ -27,12 +27,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 384,
+  "downloads_30d": 421,
   "trending_score": 0,
   "parameters": 1170340608,
   "parameters_human": "1.17B",
-  "storage_bytes": 1461796928,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 2192695392,
+  "storage_human": "2.2 GB",
   "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "TimesheetMe/timesheetme-lfm2.5-1.2b-release",
+  "renamed_at": "2026-11-24T02:46:59.667Z",
   "benchmarks": [],
   "sources": []
 }

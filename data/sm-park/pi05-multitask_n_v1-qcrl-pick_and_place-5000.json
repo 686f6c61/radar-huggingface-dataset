@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "sm-park/pi05-multitask_N_v1-qcrl-pick_and_place-5000",
+  "slug": "sm-park-pi05-multitask_n_v1-qcrl-pick_and_place-5000",
+  "author": "sm-park",
+  "url": "https://huggingface.co/sm-park/pi05-multitask_N_v1-qcrl-pick_and_place-5000",
+  "created_at": "2026-11-24T00:38:05.000Z",
+  "updated_at": "2026-11-24T00:43:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "pi0.5",
+    "openpi",
+    "qcrl",
+    "nvfp4",
+    "trossen-viperx",
+    "en",
+    "dataset:sm-park/multitask_combined_N_v1",
+    "dataset:J1One/pick_and_place_QCRL_FP_rollout_pi0.5",
+    "dataset:J1One/pick_and_place_QCRL_PTQ_rollout_pi0.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 8561536756,
+  "storage_human": "8.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

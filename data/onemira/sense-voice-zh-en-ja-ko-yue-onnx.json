@@ -1,0 +1,85 @@
+{
+  "schema": 2,
+  "id": "onemira/sense-voice-zh-en-ja-ko-yue-onnx",
+  "slug": "onemira-sense-voice-zh-en-ja-ko-yue-onnx",
+  "author": "onemira",
+  "url": "https://huggingface.co/onemira/sense-voice-zh-en-ja-ko-yue-onnx",
+  "created_at": "2026-11-24T02:57:01.000Z",
+  "updated_at": "2026-11-24T02:57:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "yue"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "sensevoice",
+    "offline-asr",
+    "on-device",
+    "onemira",
+    "mirror",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "yue",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163002883,
+  "storage_human": "163 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneMira C1 — AI Voice Recorder ($0/Mo · No Subscription · -35%)",
+      "url": "https://onemira.com/products/c1",
+      "snippet": "Cloud card recorders upload confidential conversations to vendor servers and lock transcription behind monthly plans. OneMira C1 …Read more"
+    },
+    {
+      "title": "OneMira C1 — Dictaphone & Enregistreur IA Sans Abo (0 €/Mo)",
+      "url": "https://onemira.com/fr/products/c1",
+      "snippet": "Pour vos appels Zoom, Microsoft Teams, Google Meet ou Slack—même avec des AirPods ou un casque Bluetooth—C1 fonctionne …Read more"
+    },
+    {
+      "title": "OneMira, Pocket, Plaud : panorama des enregistreurs IA",
+      "url": "https://wearemobians.com/2026/11/enregistreurs-ia-onemira-pocket-plaud/",
+      "snippet": "Nov 10, 2026 · Le OneMira C1 associe un petit boîtier à plateau tournant à un logiciel pour Mac ou Windows. L’appareil peut …Read more"
+    },
+    {
+      "title": "OneMira C1 AI Voice Recorder Review & Demo | Hands-On Test",
+      "url": "https://www.youtube.com/watch?v=LUIqGIipxQs",
+      "snippet": "Oct 1, 2026 · Here’s a hands-on look at the OneMira C1 AI Voice Recorder. In this video, we unbox the C1, take a closer look at the …Read more"
+    },
+    {
+      "title": "OneMira C1 AI voice recorder : enregistrement intelligent",
+      "url": "https://fr.accio.com/plp/onemira-c1-ai-voice-recorder",
+      "snippet": "Découvrez le OneMira C1 AI voice recorder : transcription en temps réel, reconnaissance vocale multilingue et autonomie longue …Read more"
+    }
+  ]
+}

@@ -2,93 +2,94 @@
 
 ## Resumen
 
-ThoxClip-Qwen3-0.6B es un ajuste fino (fine-tune) del modelo Qwen3-0.6B de Alibaba, desarrollado por Thox-ai como asistente on-device para su producto ThoxClip. Se trata de una LoRA de rango 32 entrenada sobre un corpus propio de 205 ejemplos de conversación y uso de herramientas, fusionada posteriormente en los pesos base. El resultado es un modelo denso de aproximadamente 596 millones de parámetros, publicado bajo licencia Apache 2.0 y disponible tanto en safetensors como en GGUF Q4_K_M.
+ThoxClip-Qwen3-0.6B es un ajuste fino (fine-tune) del modelo Qwen3-0.6B de Alibaba, desarrollado por Thox-ai como asistente local para su dispositivo ThoxClip. Se trata de un LoRA de rango 32 entrenado sobre un corpus propio de 205 ejemplos de conversacion y uso de herramientas, fusionado posteriormente en los pesos base. El modelo resultante conserva la arquitectura transformer decoder-only de Qwen3-0.6B, con aproximadamente 596 millones de parametros, y se distribuye bajo licencia Apache 2.0 tanto en formato safetensors como en GGUF cuantizado Q4_K_M.
 
-La relevancia del modelo reside en su enfoque de despliegue en el borde (edge): un tamaño que cabe en dispositivos de consumo y una integración directa con Ollama. Sin embargo, el propio autor lo publica como una "baseline" con una condición explícita: debe servirse con un system prompt de hechos de dispositivo (grounding) y con el modo thinking desactivado. Sin ese contexto, el autor declara el despliegue "fuera de contrato", lo que limita su uso como modelo de propósito general.
+El modelo esta disenado explicitamente para inferencia en dispositivo (on-device) y entornos de borde, con un enfasis en despliegue local-first. Su proposito declarado es servir como asistente conversacional integrado en el ecosistema THOX, y su model card especifica una condicion de uso no habitual: debe servirse obligatoriamente con un system prompt de "hechos del dispositivo" (grounding) y con el modo thinking desactivado. El autor advierte que un despliegue sin ese prompt queda "fuera de contrato".
 
-El modelo está orientado exclusivamente al inglés y su evaluación principal, GATE49, arroja un resultado de 22/49 en el conjunto de desarrollo, que el propio autor presenta como una línea base modesta y no como un resultado sólido. Es, por tanto, un modelo especializado y de nicho, más útil como componente de un producto concreto que como modelo generalista.
+La relevancia actual del modelo reside en su tamano reducido (compatible con GPUs de consumo e incluso CPU), su licencia permisiva y su publicacion abierta junto con los pesos y el resultado de evaluacion completo, incluido un GATE49 de 22/49 que el propio autor presenta como baseline y no como un resultado solido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3-0.6B) |
-| Parametros totales | 596.049.920 (0,6B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Q4_K_M (GGUF incluido en el repo); safetensors en precision completa |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3-0.6B) |
+| Parametros totales | 596.049.920 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF Q4_K_M (incluido en el repo); otros tipos no disponibles |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-0.6B, un transformer decoder-only denso de la familia Qwen3. Sobre esa base, Thox-ai aplicó un ajuste fino mediante LoRA de rango 32 entrenado con un corpus propio de 205 ejemplos que combinan conversación y uso de herramientas (tool-use). Posteriormente, el adaptador LoRA se fusionó en los pesos base, dando lugar a un checkpoint único publicado en safetensors. El repositorio incluye también un `training_summary.json` con el registro legible por máquina de la ejecución de entrenamiento, aunque los detalles concretos de hiperparámetros (tasa de aprendizaje, épocas, composición exacta del dataset) no se detallan en la información disponible.
+El modelo parte de Qwen3-0.6B, un transformer decoder-only de la familia Qwen3, y se obtiene mediante un ajuste fino LoRA de rango 32 sobre un corpus autorado por THOX denominado `thox-factory-sft-v5`, compuesto por 205 ejemplos de conversacion y uso de herramientas. Tras el entrenamiento supervisado (SFT), los adaptadores LoRA se fusionaron en los pesos base, dando lugar a un unico checkpoint denso de 0.6B parametros. El repositorio incluye un `training_summary.json` con el registro legible por maquina de la ejecucion de entrenamiento.
 
-No se documenta en la información proporcionada el uso de RLHF, DPO ni ninguna técnica de alineación posterior al SFT. El entrenamiento se describe explícitamente como SFT (supervised fine-tuning). Tampoco se especifican innovaciones técnicas adicionales como decodificación especulativa o atención lineal; el modelo hereda la arquitectura del base Qwen3-0.6B sin modificaciones estructurales. El autor indica que debe servirse con thinking desactivado y con un system prompt de grounding aplicado en la capa de servicio.
+No se dispone de informacion sobre el numero total de tokens de entrenamiento, la composicion detallada del dataset, ni sobre si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones arquitectonicas propias: el modelo hereda la arquitectura y el tokenizer de Qwen3-0.6B (tokenizer.json de 11,4 MB y plantilla de chat propia). La unica particularidad operativa destacable es la exigencia de servir el modelo con un system prompt de grounding especifico de THOX y con el modo thinking desactivado.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, orientada a un asistente de dispositivo.
-- Uso de herramientas (tool-use / function calling), entrenado explícitamente sobre ejemplos de este tipo.
-- Disciplina ante afirmaciones falsas: el autor reporta 9/10 en la categoría "known-false" de GATE49, el eje comparativamente más fuerte de esta línea base.
-- Capacidad de escalado a MeshStack para preguntas fuera de los hechos entrenados (según el autor, como mecanismo de servicio, no como capacidad intrínseca del modelo).
-- No se documentan capacidades de visión, audio, matemáticas avanzadas ni razonamiento multi-paso complejo.
-- Multilingüismo limitado: solo inglés declarado.
-- Modo thinking disponible en el modelo base, pero el autor exige servirlo desactivado.
+- Generacion de texto conversacional en ingles, orientada a dialogos multi-turno.
+- Uso de herramientas (tool use / function calling), segun el corpus de entrenamiento SFT.
+- Asistencia integrada en dispositivo para el ecosistema THOX (ThoxClip, ThoxOS, MeshStack).
+- Ejecucion local-first, sin dependencia de servicios en la nube.
+- Compatibilidad con despliegue via Transformers, Ollama y text-generation-inference (segun los tags del repositorio).
+- Capacidad de razonamiento extendido (thinking mode) heredada de Qwen3, aunque el autor exige desactivarla en produccion.
+- Soporte multilingue: limitado al ingles segun la model card.
+- No se documentan capacidades de vision, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Asistente on-device para ThoxClip: el modelo está diseñado específicamente para responder sobre los hechos del dispositivo cuando se le aplica el system prompt de grounding, lo que lo hace adecuado para consultas de producto en local.
-- Despliegue en hardware de consumo: gracias a su tamaño de 0,6B y a la cuantización Q4_K_M (396 MB), puede ejecutarse en equipos sin GPU dedicada mediante Ollama, lo que encaja en escenarios de asistencia local-first.
-- Integración en flujos con tool calling: al haber sido entrenado sobre ejemplos de uso de herramientas, puede emplearse en pipelines donde el modelo decida invocar funciones simples definidas por el desarrollador.
-- Filtrado de respuestas ante preguntas sensibles: su resultado en la categoría known-false sugiere utilidad en tareas donde debe rechazar o corregir afirmaciones incorrectas dentro de un dominio acotado.
-- Prototipado rápido de asistentes especializados: sirve como punto de partida para experimentar con fine-tunes pequeños en entornos de investigación con recursos limitados.
-- Componente de respaldo en arquitecturas con escalado: puede actuar como primera capa de un sistema que derive consultas fuera de dominio a un servicio mayor (MeshStack), reduciendo coste y latencia en consultas frecuentes.
+- Asistente conversacional embebido en dispositivo: el modelo puede gestionar dialogos multi-turno en local dentro del dispositivo ThoxClip, sin enviar datos a la nube, lo que encaja con su tamano de 0.6B y su licencia permisiva.
+- Automatizacion de tareas con tool calling: al haber sido entrenado sobre ejemplos de uso de herramientas, puede invocarse para encadenar llamadas a funciones en flujos de automatizacion domestica o de productividad personal.
+- Prototipado rapido de asistentes locales: su reducido tamano permite iterar en portatiles o equipos de gama media con Ollama, sirviendo como banco de pruebas antes de migrar a modelos mayores como ThoxDecide-3B.
+- Despliegue en entornos con restricciones de privacidad: adecuado para escenarios donde los datos no pueden salir del dispositivo (salud, finanzas personales, entornos industriales aislados).
+- Educacion y demos de IA en el borde: util para talleres y demostraciones de inferencia local gracias a su GGUF Q4_K_M de aproximadamente 397 MB.
+- Integracion en pipelines de CI/CD para pruebas de regresion conversacional: su licencia Apache 2.0 y su formato estandar permiten incluirlo en tests automatizados de calidad de respuesta sin coste de licencia.
+- Base para fine-tunes especificos de dominio: al ser un checkpoint denso y pequeno con licencia permisiva, puede reajustarse para dominios concretos con recursos modestos.
 
 ## Benchmarks y rendimiento
 
+El autor publica un unico resultado de evaluacion interna: GATE49, con una puntuacion de 22/49 sobre el conjunto de desarrollo. El propio autor lo presenta como baseline y no como un resultado solido. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+
 | Benchmark | Resultado | Notas |
 |---|---|---|
-| GATE49 (conjunto de desarrollo) | 22/49 | Línea base publicada por el autor; no se presenta como resultado sólido |
-| GATE49 — categoría known-false | 9/10 | Eje comparativamente fuerte según el autor |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. No se inventan cifras.
+| GATE49 (desarrollo) | 22/49 | Evaluacion interna de THOX; presentada como baseline |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precisión completa (safetensors): aproximadamente 2,4 GB para los pesos (1,19 GB de checkpoint) más overhead de activaciones y KV cache; en la práctica, unos 3-4 GB.
-- VRAM estimada con GGUF Q4_K_M: en torno a 0,5-1 GB, apto para CPU y GPUs de gama baja.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16; para Q4_K_M basta con GPU integradas o CPU moderna.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, e incluso en dispositivos con 4 GB o menos usando Q4_K_M.
-- Opciones de despliegue: transformers, Ollama (soporte oficial vía `ollama pull Thox-ai/thoxclip-qwen3-0.6b`), llama.cpp (formato GGUF), y potencialmente vLLM/TGI para el checkpoint safetensors.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 1,2 GB en precision completa (safetensors de 1.192.135.096 B); en torno a 0,4 GB con la cuantizacion GGUF Q4_K_M (396.704.672 B).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp16; tambien viable en CPU.
+- Compatible con GPU de consumo: si, incluidas RTX 3060, RTX 4060, RTX 4090 y GPUs integradas con suficiente memoria compartida; tambien en Apple Silicon mediante Ollama.
+- Opciones de despliegue: Transformers, Ollama (imagen oficial `Thox-ai/thoxclip-qwen3-0.6b`), llama.cpp mediante el GGUF incluido y text-generation-inference segun los tags del repositorio.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxClip-Qwen3-0.6B | 0,6B | no disponible | Apache 2.0 | HF + Ollama | Fine-tune especializado con grounding obligatorio |
-| Qwen/Qwen3-0.6B | 0,6B | no disponible | Apache 2.0 | HF | Modelo base, propósito general, sin grounding requerido |
-| Otros fine-tunes de 0,5-1B | variable | variable | variable | variable | No se dispone de datos comparativos en la información proporcionada |
+| ThoxClip-Qwen3-0.6B | 596 M | No disponible | Apache 2.0 | Hugging Face, Ollama | Fine-tune SFT con grounding obligatorio |
+| Qwen/Qwen3-0.6B | 0,6 B | No disponible | Apache 2.0 | Hugging Face | Modelo base; capacidades generales sin ajuste de dominio |
+| Otros fine-tunes de Qwen3-0.6B | ~0,6 B | Variable | Variable | Hugging Face | No se dispone de datos comparativos concretos en la informacion proporcionada |
 
-La comparación más directa es con su modelo base Qwen3-0.6B, que ofrece mayor generalidad y no exige un system prompt específico. Frente a otros fine-tunes pequeños de la misma categoría, no se dispone de datos de rendimiento comparables en la información proporcionada.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Grounding obligatorio: el autor declara que el despliegue sin el system prompt de hechos de dispositivo está "fuera de contrato"; usarlo en crudo puede producir respuestas incorrectas sobre el producto.
-- Resultado de evaluación modesto: GATE49 22/49 en desarrollo indica un rendimiento limitado en la puerta de evaluación propia del autor.
-- Corpus de entrenamiento muy pequeño: 205 ejemplos, lo que limita la cobertura y aumenta el riesgo de sobreajuste a ese dominio.
-- Solo inglés: no se declara soporte multilingüe.
-- Riesgo de alucinación: al ser un modelo de 0,6B, la generación de hechos no verificados es plausible, especialmente fuera del dominio de grounding.
-- Licencia Apache 2.0 permite uso comercial, pero el autor condiciona el despliegue al cumplimiento del contrato de servicio (grounding + thinking-off); conviene revisar si esa condición tiene implicaciones legales para producción.
-- No se documentan sesgos específicos ni evaluaciones de seguridad más allá de GATE49.
-- Contexto no especificado: se desconoce la ventana máxima efectiva, lo que dificulta planificar conversaciones largas.
+- Grounding obligatorio: el modelo debe servirse con el system prompt de hechos del dispositivo de THOX y con thinking desactivado; un despliegue sin ese contexto queda fuera de contrato segun el autor.
+- Rendimiento limitado: el resultado GATE49 de 22/49 sobre el conjunto de desarrollo indica un rendimiento modesto incluso en la evaluacion interna del propio autor.
+- Idioma: soporte unicamente en ingles, lo que limita su uso en castellano sin un ajuste adicional.
+- Corpus de entrenamiento muy reducido (205 ejemplos), lo que aumenta el riesgo de sobreajuste y de respuestas poco generalizables.
+- Riesgo de alucinacion: inherente a modelos de 0,6B y agravado por el enfasis en hechos especificos del dispositivo, que el modelo puede inventar si el grounding no se aplica correctamente.
+- Contexto: no se documenta la longitud de contexto soportada, por lo que no puede garantizarse el manejo de conversaciones largas.
+- Licencia Apache 2.0: permisiva para uso comercial, pero el autor declara condiciones de servicio (grounding y thinking-off) que, aunque no modifican la licencia, condicionan el soporte.
+- Contenido promocional: la model card incluye una campana de Kickstarter y notas del fundador; conviene separar el material tecnico del comercial al evaluar el modelo.
+- Fecha de publicacion futura (2026) en los metadatos del repositorio, lo que puede indicar inconsistencias en el registro.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Thox-ai/ThoxClip-Qwen3-0.6B
-- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxClip-Qwen3-0.6B
+- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Thox-ai/thox-factory-sft-v5
-- Ollama: https://ollama.com/Thox-ai/thoxclip-qwen3-0.6b
-- No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.
+- Demo de dispositivos THOX: https://thox.ai/#demo-callout-home_lineup
+- Campana de Kickstarter: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai

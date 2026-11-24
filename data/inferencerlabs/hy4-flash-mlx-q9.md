@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Hy4-flash es un modelo multimodal de tipo image-text-to-text desarrollado por Tencent, distribuido originalmente en Hugging Face bajo el identificador `tencent/Hy4-flash`. Esta ficha describe concretamente la variante cuantizada `inferencerlabs/Hy4-flash-MLX-Q9`, publicada por el usuario inferencerlabs, que adapta el modelo base al formato MLX para su ejecucion en hardware Apple Silicon. La cuantizacion a 9 bits busca un equilibrio entre precision casi sin perdida y un footprint de memoria reducido, con un tamano de repositorio de 5,6 GB.
+Hy4-flash-MLX-Q9 es una cuantización a 9 bits por peso (bpw) del modelo multimodal Hy4-flash de Tencent, publicada por inferencerlabs para su uso con el framework MLX de Apple. El modelo base es un modelo de imagen-a-texto (image-text-to-text) con capacidades conversacionales, y esta versión concreta está empaquetada en formato safetensors optimizado para ejecución en hardware Apple Silicon mediante MLX. El repositorio ocupa 303,2 GB, lo que refleja el enorme tamaño del modelo original y el hecho de que la cuantización a 9 bits apenas reduce el peso respecto a los pesos completos.
 
-El modelo resuelve tareas de comprension y generacion conjunta de imagen y texto en un unico pipeline conversacional, orientado a entornos de inferencia locales sobre Mac con chip de la familia M. Su relevancia actual radica en que permite ejecutar un modelo multimodal de gran tamano en hardware de consumo profesional (M3 Ultra), algo que en formato sin cuantizar requeriria mucha mas memoria. La model card reporta velocidades de aproximadamente 28 tokens/s en M3 Ultra para 500 tokens de generacion.
+La relevancia de esta ficha radica en que permite ejecutar un modelo multimodal de gran escala en estaciones de trabajo Mac con memoria unificada muy elevada, algo impracticable en GPU de consumo convencionales. El autor reporta velocidades de aproximadamente 28 tokens/s en un M3 Ultra con 281 GiB de memoria, y hasta 55 tokens/s en tareas de código cuando se activa el motor DFly. La cuantización Q9 se presenta como "near lossless", con una perplejidad de 1,20312 idéntica a la del modelo base y una precisión de tokens del 97,80%.
 
-No se dispone de informacion publica sobre arquitectura interna, numero de parametros, longitud de contexto ni datos de entrenamiento en la informacion proporcionada; la model card se limita a datos de cuantizacion y rendimiento en inferencia. La licencia tampoco esta declarada, lo que constituye una limitacion relevante para uso comercial.
+No se dispone de información sobre la arquitectura interna, el número de parámetros, la longitud de contexto ni la licencia en la documentación proporcionada. La model card del autor se limita a datos de cuantización, rendimiento en hardware Apple y un aviso legal de responsabilidad.
 
 ## Especificaciones tecnicas
 
@@ -16,93 +16,94 @@ No se dispone de informacion publica sobre arquitectura interna, numero de param
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q9 (9 bits por peso, variante principal); la model card menciona Q3.5, Q4.5, Q5.5, Q6.5, Q8.5 y Q9 en su tabla comparativa, ademas de una edicion Q9s con streaming de engram para menor huella de memoria |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | 9 bits por peso (Q9); el autor publica además una variante Q9s con menor huella de memoria |
+| Idiomas soportados | en (inglés) |
 | Licencia | no disponible |
-| Formato de pesos | MLX (libreria `mlx`), repo de 5,6 GB |
+| Formato de pesos | safetensors (MLX) |
+| Modelo base | tencent/Hy4-flash |
+| Pipeline | image-text-to-text |
+| Tamaño del repositorio | 303,2 GB |
+| Librería | mlx |
+| Descargas | 417 |
+| Likes | 1 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base `tencent/Hy4-flash`: la model card no describe si se trata de un transformer denso, un MoE, un modelo hibrido o una arquitectura con atencion lineal. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
+No se ha publicado información sobre la arquitectura del modelo base Hy4-flash en la documentación disponible: se desconoce si se trata de un transformer denso, un mixture-of-experts o una arquitectura híbrida, así como el número de parámetros, la composición del dataset de entrenamiento, el número de tokens vistos o si se aplicaron técnicas de RLHF o DPO. La única información técnica disponible se refiere al proceso de cuantización: el autor indica que se ha utilizado una versión modificada de MLX para generar los pesos a 9 bits, y publica una tabla comparativa de perplejidad y precisión de tokens entre distintas cuantizaciones (Q3.5, Q4.5, Q5.5, Q6.5, Q8.5, Q9) y el modelo base.
 
-La unica innovacion tecnica documentada en esta variante es el proceso de cuantizacion: los pesos se han cuantizado con una version modificada de MLX a 9 bits por peso, con el objetivo declarado de preservar la precision de forma casi sin perdida. La model card incluye una tabla de calidad de cuantizacion con perplexity, token accuracy y missed divergence para distintos niveles (Q3.5 a Q9), lo que permite comparar el impacto de la compresion. Ademas, se menciona una edicion Q9s con "engram streaming" que reduce la memoria necesaria a aproximadamente 163 GiB frente a los 281 GiB de la variante Q9 estandar, y la disponibilidad futura de pesos MTP (multi-token prediction) para acelerar la decodificacion.
+La model card menciona dos innovaciones de inferencia implementadas en su runtime propietario Inferencer v2.5.4: "engram streaming", que reduce la huella de memoria de 281 GiB a 163 GiB a costa de bajar de 28 a 25 tokens/s, y "DFly", un motor que acelera la generación de código hasta 55 tokens/s. No se detalla el funcionamiento interno de ninguna de las dos técnicas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con soporte de dialogos multi-turno.
-- Procesamiento conjunto de imagen y texto (pipeline `image-text-to-text`): el modelo acepta imagenes como entrada junto con instrucciones textuales.
-- Generacion de codigo: la model card incluye una prueba especifica de generacion de codigo de 500 tokens en el contexto de MTP.
-- Generacion de texto creativo o redaccion: se menciona una prueba de "Writing" de 500 tokens.
-- Capacidades multimodales de descripcion y comprension de imagenes, derivadas del pipeline declarado.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun los tags del repositorio.
-- Modo thinking, vision, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno, según el tag `conversational` del repositorio.
+- Procesamiento de imagen y texto combinados (pipeline `image-text-to-text`), lo que implica capacidad de describir, analizar o responder preguntas sobre imágenes.
+- Generación de código: el autor reporta velocidades específicas para tareas de coding con el motor DFly, lo que sugiere soporte para generación de código.
+- Generación de texto creativo o redacción: la model card distingue entre modo "Coding" y modo "Writing" en las pruebas de rendimiento.
+- Soporte multilingüe limitado al inglés según el campo `language: en`.
+- No se dispone de información sobre soporte de tool calling, function calling, razonamiento multi-paso, modo thinking, audio u otras capacidades especiales.
 
 ## Casos de uso
 
-- Asistencia conversacional local en Mac: el modelo puede gestionar dialogos multi-turno en ingles ejecutandose integramente en un M3 Ultra, sin depender de servicios en la nube, gracias al formato MLX y a la cuantizacion Q9.
-- Descripcion y analisis de imagenes en flujos de trabajo de escritorio: al ser un modelo image-text-to-text, permite incorporar capturas o fotografias a una conversacion y obtener respuestas textuales, util para herramientas de accesibilidad o documentacion tecnica.
-- Generacion de codigo en entornos de desarrollo sobre Apple Silicon: la model card incluye pruebas de generacion de codigo, lo que lo hace adecuado para asistentes de programacion integrados en el IDE que se ejecuten en local.
-- Redaccion y edicion de textos en ingles: la variante Q9 mantiene una token accuracy del 97,80% respecto al modelo base, lo que la hace apropiada para tareas de redaccion donde la fidelidad al modelo original es critica.
-- Prototipado e investigacion en inferencia multimodal local: util para investigadores que necesiten evaluar el comportamiento de un modelo multimodal de gran tamano en hardware de consumo profesional sin acceso a clusters con GPUs.
-- Evaluacion comparativa de tecnicas de cuantizacion: la tabla de perplexity y token accuracy por nivel de cuantizacion convierte este repositorio en un banco de pruebas para estudiar el impacto de la compresion en modelos multimodales.
-- Despliegue en estaciones de trabajo con memoria unificada: los 281 GiB reportados para Q9 encajan en configuraciones de M3 Ultra de gama alta, permitiendo servir el modelo en local para equipos pequenos.
+- Análisis de documentos e imágenes en estaciones de trabajo Mac: el modelo puede procesar entradas imagen-texto y generar respuestas conversacionales, adecuado para equipos que trabajan con material visual y necesitan un asistente local sin enviar datos a la nube.
+- Generación de código en local: con el motor DFly activado, el autor reporta 55 tokens/s en tareas de coding sobre un M3 Ultra, lo que permite usar el modelo como asistente de programación en un entorno de desarrollo integrado con MLX.
+- Redacción y edición de textos largos: los 28 tokens/s en modo escritura y la ventana de contexto (no especificada) permiten tareas de redacción asistida y resumen de documentos extensos en inglés.
+- Investigación y experimentación con cuantización: la tabla de perplejidad y precisión de tokens publicada por el autor convierte este repositorio en un caso de estudio útil para quienes evalúan el impacto de distintas cuantizaciones en modelos multimodales grandes.
+- Despliegue en hardware Apple Silicon de gama alta: organizaciones con Mac Studio o Mac Pro con memoria unificada de 256 GiB o más pueden ejecutar el modelo sin infraestructura GPU dedicada, aprovechando MLX.
+- Prototipado de asistentes multimodales: desarrolladores que necesitan validar flujos de imagen-a-texto antes de invertir en infraestructura de servidor pueden usar esta versión Q9 como referencia cercana al modelo completo.
+- Evaluación comparativa de runtimes: la disponibilidad de variantes Q9 y Q9s con distintas huellas de memoria permite comparar el compromiso entre velocidad y memoria en el mismo hardware.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente proporciona metricas de calidad de cuantizacion y de velocidad de inferencia.
+El autor publica una tabla de calidad de cuantización (perplejidad, precisión de tokens y divergencia perdida) pero no benchmarks estándar como MMLU, HumanEval o GSM8K. Los datos disponibles son:
 
-| Metrica de cuantizacion | Q3.5 | Q4.5 | Q5.5 | Q6.5 | Q8.5 | Q9 | Base |
-|---|---|---|---|---|---|---|---|
-| Perplexity | 168.0 | 1.33593 | 1.23437 | 1.21875 | 1.21875 | 1.20312 | 1.20312 |
-| Token accuracy | 43,45% | 91,65% | 95,05% | 96,65% | 97,65% | 97,80% | 100% |
-| Missed divergence | 72,57% | 17,28% | 17,28% | 12,03% | 9,92% | 9,60% | 0,000% |
+| Cuantización (bpw) | Perplejidad | Precisión de tokens | Divergencia perdida |
+|---|---|---|---|
+| Q3.5 | 168,0 | 43,45% | 72,57% |
+| Q4.5 | 1,33593 | 91,65% | 17,28% |
+| Q5.5 | 1,23437 | 95,05% | 17,28% |
+| Q6.5 | 1,21875 | 96,65% | 12,03% |
+| Q8.5 | 1,21875 | 97,65% | 9,92% |
+| Q9 | 1,20312 | 97,80% | 9,60% |
+| Base | 1,20312 | 100% | 0,000% |
 
-| Configuracion de inferencia | Velocidad | Memoria |
-|---|---|---|
-| M3 Ultra, 500 tokens | ~28 tokens/s | ~281 GiB |
-| M3 Ultra con engram streaming (Q9s) | ~25 tokens/s | ~163 GiB |
-| M3 Ultra con MTP (codigo) | no disponible | no disponible |
-| M3 Ultra con MTP (redaccion) | no disponible | no disponible |
+Rendimiento en hardware (Inferencer v2.5.4, M3 Ultra):
+
+| Configuración | Tarea | Tokens/s | Memoria |
+|---|---|---|---|
+| M3 Ultra | 500 tokens | ~28 | ~281 GiB |
+| M3 Ultra + engram streaming (Q9s) | 500 tokens | ~25 | ~163 GiB |
+| M3 Ultra + DFly | 500 tokens (coding) | ~55 | ~281,5 GiB |
+| M3 Ultra + DFly | 500 tokens (writing) | ~28 | ~281,5 GiB |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la variante Q9 requiere aproximadamente 281 GiB de memoria en M3 Ultra; la edicion Q9s con engram streaming reduce la huella a unos 163 GiB.
-- GPU recomendadas: Apple Silicon M3 Ultra es la unica plataforma validada en la model card (probado con Inferencer v2.5.4). No hay datos de rendimiento para GPUs NVIDIA o AMD.
-- Cabe en GPU de consumo: no en el sentido habitual; los 281 GiB de Q9 exceden la VRAM de cualquier GPU de consumo (RTX 4090 con 24 GB, por ejemplo). Solo es viable en configuraciones de memoria unificada de gama alta como M3 Ultra o en sistemas multi-GPU con suficiente VRAM agregada.
-- Opciones de despliegue: el repositorio esta en formato MLX y se ha probado con la aplicacion Inferencer v2.5.4. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: aproximadamente 28 tokens/s en M3 Ultra para Q9 y 25 tokens/s para Q9s con engram streaming, medidos sobre 500 tokens de generacion. No se proporcionan datos de latencia de primer token.
+- VRAM/memoria unificada estimada: aproximadamente 281 GiB para la versión Q9 completa; aproximadamente 163 GiB con engram streaming en la variante Q9s.
+- GPU recomendadas: Apple M3 Ultra con memoria unificada de 512 GiB o superior para la versión Q9 completa; no se dispone de datos para GPU NVIDIA u otras plataformas, ya que el formato es MLX.
+- No cabe en ninguna GPU de consumo convencional (RTX 4090 con 24 GB, RTX 5090 con 32 GB) ni en configuraciones multi-GPU estándar sin agregación de memoria muy superior.
+- Opciones de despliegue: el autor indica que el modelo ha sido probado con Inferencer v2.5.4, su runtime propietario; el formato MLX implica compatibilidad con el ecosistema MLX de Apple. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: ~28 tokens/s en M3 Ultra (281 GiB), ~25 tokens/s con engram streaming (163 GiB), ~55 tokens/s en coding con DFly y ~28 tokens/s en writing con DFly.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos alternativos: la model card no identifica modelos comparables ni ofrece benchmarks estandar. Como referencia estructural, se puede contrastar con otras variantes del mismo modelo base y con el modelo original:
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| inferencerlabs/Hy4-flash-MLX-Q9 | no disponible | no disponible | MLX Q9 | no disponible | Hugging Face |
-| inferencerlabs/Hy4-flash-MLX-Q9s | no disponible | no disponible | MLX Q9s | no disponible | Hugging Face (mencionado) |
-| tencent/Hy4-flash (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
-
-Comparativa con modelos de otros autores: no disponible.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El modelo base tencent/Hy4-flash no incluye en la información disponible especificaciones de parámetros, contexto o licencia que permitan una comparación rigurosa con alternativas de la misma categoría. Se indica, por tanto, "no disponible".
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifican los terminos de uso, lo que impide confirmar si se permite uso comercial. Es imprescindible verificar la licencia del modelo base `tencent/Hy4-flash` antes de cualquier despliegue en produccion.
-- Idioma limitado al ingles segun los tags del repositorio; no hay evidencia de soporte multilingue.
-- Riesgo de alucinacion: inherente a los modelos generativos; la model card no documenta evaluaciones de factualidad.
-- Sesgos conocidos: no documentados en la informacion proporcionada.
-- Limitaciones de contexto: la longitud de contexto no esta disponible, por lo que no puede planificarse su uso en tareas que requieran ventanas largas sin verificacion previa.
-- Dependencia de hardware Apple Silicon: el formato MLX limita el despliegue a plataformas Apple; no hay soporte documentado para CUDA u otras aceleraciones.
-- Requisitos de memoria muy elevados: 281 GiB para Q9 y 163 GiB para Q9s excluyen su uso en la mayoria de equipos, incluidos MacBook Pro y Mac Studio de gama media.
-- La cuantizacion Q9 no es perfectamente lossless: la token accuracy es del 97,80% frente al 100% del modelo base, con un 9,60% de missed divergence.
-- El autor del repositorio declara explicitamente no ser el creador del modelo original y no asumir responsabilidad por danos derivados de su uso.
-- No se han publicado resultados de benchmarks estandar, lo que dificulta comparar su calidad con alternativas.
+- La licencia no está especificada, lo que impide determinar si se permite uso comercial. Es imprescindible verificar la licencia del modelo base tencent/Hy4-flash antes de cualquier despliegue en producción.
+- El modelo solo declara soporte para inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- El autor incluye un descargo de responsabilidad explícito: no es el creador del modelo, no garantiza su precisión ni adecuación contextual, y no se hace responsable de daños derivados de su uso.
+- La cuantización Q9, aunque se describe como "near lossless", presenta una precisión de tokens del 97,80% frente al 100% del base, con una divergencia perdida del 9,60%; en tareas sensibles a la fidelidad exacta esto puede ser relevante.
+- El tamaño de 303,2 GB y la necesidad de ~281 GiB de memoria unificada limitan su uso a hardware Apple Silicon de gama muy alta, lo que restringe severamente su aplicabilidad práctica.
+- No se dispone de información sobre sesgos, riesgo de alucinación, longitud de contexto efectiva ni comportamiento en producción.
+- El repositorio tiene solo 417 descargas y 1 like, lo que sugiere una validación comunitaria muy limitada.
+- La dependencia de un runtime propietario (Inferencer) para las funciones de streaming y DFly puede suponer un riesgo de vendor lock-in.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la variante cuantizada: https://huggingface.co/inferencerlabs/Hy4-flash-MLX-Q9
-- Modelo base en Hugging Face: https://huggingface.co/tencent/Hy4-flash
-- Videos de demostracion: https://youtube.com/xcreate
-- Herramienta de inferencia Inferencer: https://inferencer.com
-- Repositorio MLX: https://github.com/ml-explore/mlx
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/Hy4-flash-MLX-Q9
+- Modelo base: https://huggingface.co/tencent/Hy4-flash
+- Vídeos de demostración: https://youtube.com/xcreate
+- Runtime Inferencer: https://inferencer.com
+- MLX (framework de Apple): https://github.com/ml-explore/mlx

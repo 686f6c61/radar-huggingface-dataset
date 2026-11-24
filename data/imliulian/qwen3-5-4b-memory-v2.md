@@ -2,111 +2,118 @@
 
 ## Resumen
 
-Qwen3.5-4B-Memory-V2 es un ajuste fino derivado de Qwen/Qwen3.5-4B desarrollado por el usuario IMLIULIAN, publicado bajo licencia Apache-2.0. No es un modelo de propósito general, sino un especialista en dos tareas concretas dentro de un pipeline de memoria para asistentes de IA locales: la extraccion estructurada de hechos atomicos en JSON estricto y la admision y revision de hechos candidatos antes de su escritura en memoria. El modelo parte de una base de 4.000 millones de parametros y se adapta mediante PEFT LoRA con rango 16 y alpha 32, lo que permite distribuir el adaptador (81 MB) por separado de los pesos base.
+Qwen3.5-4B-Memory-V2 es un ajuste fino del modelo base Qwen/Qwen3.5-4B desarrollado por el usuario IMLIULIAN, orientado especificamente a tareas de memoria local para agentes de IA. El modelo no busca ser un asistente generalista, sino un componente especializado dentro de un pipeline de memoria: extraccion de hechos estructurados y admision/revision de hechos antes de su escritura en almacenamiento. Se distribuye como adaptador PEFT LoRA (r=16, alpha=32) sobre el modelo base y como artefactos GGUF cuantizados.
 
-La relevancia del modelo radica en su enfoque en fiabilidad estructural mas que en capacidades generativas amplias. Segun la model card, el ajuste eleva la tasa de validez de esquema JSON del 45% (modelo base) al 100% en la tarea de extraccion, y la precision por slot en la tarea de admision del 0% al 97,3% con cuantizacion Q8_0. Ademas, reduce la latencia media de extraccion de 23,81 s a 11,64 s respecto al base en Q4_K_M, un aspecto critico para pipelines que ejecutan extraccion de memoria en cada turno de conversacion.
+La relevancia del modelo radica en su enfoque de "memoria con evidencia": cada hecho extraido queda vinculado a segmentos de evidencia originales (s0, s1, ...) y se separan las fechas de registro de las fechas efectivas del evento. Ademas, incorpora un paso de admision que audita hechos candidatos contra la evidencia y emite veredictos por slot (pass/revise/drop/hold), lo que permite interceptar errores antes de persistirlos. Esto lo hace util para construir capas de memoria locales sin dependencia de APIs en la nube ni bases de datos vectoriales externas.
 
-El modelo esta pensado para despliegue local en Ollama o llama.cpp, con artefactos GGUF en Q8_0 (4,48 GB) y Q4_K_M (2,71 GB), y con recomendaciones de inferencia determinista (temperature 0, think false, num_ctx 16384). Su alcance linguistico declarado es chino e ingles, y su ventana de contexto operativa recomendada es de 16.384 tokens.
+El modelo tiene 4.205.751.296 parametros totales y se distribuye bajo licencia Apache 2.0. Los pesos estan disponibles en safetensors (adaptador LoRA) y GGUF (Q8_0 y Q4_K_M), con soporte declarado para chino e ingles. Su ecosistema incluye ZeroMem, un motor de memoria local que lo utiliza como componente de extraccion y verificacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Qwen/Qwen3.5-4B) con adaptador PEFT LoRA |
-| Parametros totales | 4.000 millones (modelo base Qwen3.5-4B); adaptador LoRA de 81 MB |
+| Arquitectura | Transformer (derivado de Qwen/Qwen3.5-4B) con adaptador PEFT LoRA |
+| Parametros totales | 4.205.751.296 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 16.384 tokens (num_ctx recomendado) |
-| Tipos de cuantizacion | GGUF Q8_0 (recomendado, 4,48 GB) y Q4_K_M (compacto, 2,71 GB); adaptador LoRA en safetensors |
-| Idiomas soportados | chino (zh) e ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (Q8_0, Q4_K_M) y PEFT LoRA safetensors (adapter_model.safetensors) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0, Q4_K_M (GGUF); adaptador LoRA en safetensors |
+| Idiomas soportados | zh, en |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (adaptador LoRA), GGUF (Q8_0 y Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen/Qwen3.5-4B, un transformer decoder-only de 4.000 millones de parametros, y se especializa mediante un adaptador PEFT LoRA con rango 16 y alpha 32. No se modifica la arquitectura base: el ajuste se aplica como delta sobre los pesos originales, lo que permite mantener el modelo base intacto y distribuir el adaptador por separado (81 MB). Los artefactos GGUF publicados integran el adaptador en los pesos cuantizados para su uso directo en Ollama o llama.cpp.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer de 4.205.751.296 parametros, y se ajusta mediante PEFT LoRA con rango r=16 y alpha=32. El adaptador resultante pesa 81,0 MB en safetensors, lo que confirma que el entrenamiento modifica solo un subconjunto de pesos sobre el modelo base. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
-La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La model card si especifica que el ajuste se orienta a dos tareas: extraccion de hechos atomicos con IDs de evidencia a nivel de segmento (s0, s1, ...) y separacion entre fecha de registro y fecha efectiva del evento; y admision de hechos pre-escritura con veredictos por slot (pass, revise, drop, hold). La validacion se realizo sobre una suite congelada de 50 casos con salida JSON no restringida, y el autor publica scripts de verificacion sintetica en GitHub.
+La innovacion principal no esta en la arquitectura del transformer, sino en la formulacion de las tareas: extraccion de hechos atomicos con esquema JSON estricto, identificadores de evidencia a nivel de segmento y separacion entre fecha de registro y fecha efectiva del evento; y admision pre-escritura con veredictos por slot y reemplazos concisos para errores definidos. El benchmark del autor evalua estas tareas sin decodificacion con gramatica restringida, lo que sugiere que el ajuste busca que el modelo respete el esquema por si mismo, no solo por constriccion externa.
 
 ## Capacidades
 
-- Extraccion estructurada de hechos atomicos en JSON con cumplimiento estricto de esquema (100% de validez de esquema en la suite de validacion de 50 casos).
-- Asignacion de IDs de evidencia a nivel de segmento (s0, s1, ...) para trazabilidad de cada hecho extraido.
-- Separacion explicita entre fecha de registro del hecho y fecha efectiva del evento.
-- Admision y revision de hechos candidatos antes de escritura, con veredictos por slot: pass, revise, drop, hold.
+- Generacion de texto orientada a extraccion de hechos estructurados con cumplimiento de esquema JSON.
+- Extraccion de hechos atomicos con evidencia a nivel de segmento (s0, s1, ...) y separacion de fechas de registro frente a fechas efectivas.
+- Admision pre-escritura de hechos candidatos: auditoria contra evidencia original y emision de veredictos por slot (pass, revise, drop, hold).
 - Generacion de reemplazos concisos y fieles para errores definidos en hechos candidatos.
-- Salida JSON determinista con temperature 0 y think desactivado.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes multi-paso: no disponible como capacidad generica; el modelo esta especializado en tareas puntuales de pipeline.
-- Capacidades multilingues limitadas a chino e ingles segun la model card.
-- Capacidad de vision, audio o thinking mode: no disponible (think debe desactivarse segun la configuracion recomendada).
+- Soporte de salida estructurada en JSON.
+- Integracion con el motor de memoria ZeroMem mediante servidor MCP stdio de 4 herramientas.
+- Capacidades multilingues limitadas a chino e ingles.
+- No se declaran capacidades de vision, audio, tool calling general ni modo de razonamiento extendido (thinking mode) en la informacion disponible.
 
 ## Casos de uso
 
-- Pipeline de memoria para asistentes conversacionales locales: el modelo extrae hechos atomicos de cada turno con IDs de evidencia y los estructura en JSON, permitiendo almacenar memoria a largo plazo con trazabilidad hacia el texto original. Es adecuado por su 100% de validez de esquema y su latencia reducida (11,64 s en Q4_K_M frente a 23,81 s del base).
-
-- Auditoria de hechos antes de escritura en bases de datos de memoria: el modelo revisa hechos candidatos contra los segmentos de evidencia originales y emite veredictos pass/revise/drop/hold con una precision por slot del 97,3% en Q8_0, lo que evita contaminar la memoria con hechos erroneos.
-
-- Correccion automatica de hechos con errores definidos: cuando el veredicto es revise, el modelo genera un reemplazo conciso y fiel al texto fuente, con una tasa de intercepcion de errores del 90,5% en Q8_0.
-
-- Sistemas de memoria personal para agentes de escritorio: al ejecutarse en Ollama o llama.cpp con 2,71 GB en Q4_K_M, cabe en equipos de consumo y permite mantener un pipeline de memoria local sin dependencia de APIs externas.
-
-- Extraccion de entidades y relaciones con fechas en dominios documentales: la separacion entre fecha de registro y fecha efectiva del evento resulta util en dominios como historial clinico, registros legales o seguimiento de proyectos, donde ambas fechas difieren.
-
-- Filtrado de ruido en ingesta de conocimiento: el modelo descarta hechos no sustentados por evidencia (drop) y retiene hechos limpios con una tasa de retencion del 98,9% en Q8_0, lo que lo hace util para curation automatica de bases de conocimiento.
-
-- Validacion de pipelines JSON en produccion: dado que el modelo mantiene el 100% de validez de esquema en extraccion y el 96,7-100% en admision, puede integrarse como paso de validacion estructural en flujos que exigen salida parseable sin post-procesado correctivo.
+- Memoria persistente para agentes locales: el modelo extrae hechos atomicos de conversaciones y documentos, los vincula a segmentos de evidencia y los deja listos para almacenarse en SQLite con indices FTS5, sin base de datos vectorial externa.
+- Auditoria de hechos antes de escritura: en un pipeline de memoria, cada hecho candidato se contrasta contra la evidencia original y se marca como pass, revise, drop o hold, evitando persistir errores factuales.
+- Redaccion de credenciales antes del almacenamiento: ZeroMem utiliza el modelo para extraer hechos y redactar secretos comunes a `[REDACTED]` antes de guardar, reduciendo la exposicion de credenciales en texto plano.
+- Asistentes de codigo con memoria de proyecto: integracion via MCP con Claude Desktop, Claude Code, Cursor, Windsurf, Codex CLI y otros conectores declarados, permitiendo recordar decisiones y hechos tecnicos entre sesiones.
+- Extraccion de hechos en documentacion tecnica: procesamiento de notas de ingenieria para construir una base de conocimiento consultable con trazabilidad a la evidencia original.
+- Cumplimiento y trazabilidad: el vinculo entre hechos y segmentos de evidencia permite auditar de donde proviene cada afirmacion almacenada, util en entornos con requisitos de procedencia.
+- Despliegue en hardware de consumo: las variantes GGUF Q4_K_M (2,71 GB) y Q8_0 (4,48 GB) permiten ejecutar el modelo en equipos locales mediante Ollama, con seleccion automatica de cuantizacion y `num_ctx` seguro por parte de ZeroMem.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre una suite de validacion congelada de 50 casos con JSON no restringido:
+Resultados publicados por el autor en una suite de validacion congelada de 50 casos (20 de extraccion de hechos y 30 de admision pre-escritura, 109 slots candidatos), sin decodificacion con gramatica restringida:
 
-| Metrica | Qwen3.5-9B (raw) | Qwen3.5-4B (raw Q4_K_M) | V2 (Q4_K_M) | V2 (Q8_0) |
+| Metrica | Qwen3.5-9B (Raw) | Qwen3.5-4B (Raw Q4_K_M) | V2 (Q4_K_M) | V2 (Q8_0) |
 |---|---|---|---|---|
 | Tasa de esquema valido en extraccion | 45,0% | 45,0% | 100,0% | 100,0% |
 | Fugas de fecha de registro en extraccion | 7 | 5 | 0 | 0 |
 | F1 de evidencia en extraccion | 0,4218 | 0,4287 | 0,6517 | 0,7006 |
-| Latencia media de extraccion | 43,11 s | 23,81 s | 11,64 s | 13,55 s |
+| Latencia media en extraccion | 43,11 s | 23,81 s | 11,64 s | 13,55 s |
 | Tasa de esquema valido en admision | 20,0% | 0,0% | 96,7% | 100,0% |
 | Precision por slot en admision | 33,0% | 0,0% | 93,6% | 97,3% |
-| Intercepcion de errores (revise) en admision | 0,0% | 0,0% | 71,4% | 90,5% |
-| Retencion de pass limpio en admision | 40,9% | 0,0% | 98,9% | 98,9% |
+| Intercepcion de errores (revise) | 0,0% | 0,0% | 71,4% | 90,5% |
+| Retencion de pass limpio | 40,9% | 0,0% | 98,9% | 98,9% |
 
-No se han publicado resultados de benchmarks en la informacion disponible para MMLU, HumanEval, GSM8K u otros benchmarks de proposito general.
+Ademas, el autor publica un benchmark end-to-end controlado de ZeroMem con la API de DeepSeek sobre 71 documentos sinteticos de ingenieria (51.947 caracteres, 385 hechos extraidos) y 12 preguntas objetivas:
+
+| Metrica | Grupo A: API basica | Grupo B: contexto completo | Plan 1: single-recall | Plan 2: agente MCP |
+|---|---|---|---|---|
+| Precision objetiva | 2/12 (16,7%) | 12/12 (100,0%) | 11/12 (91,7%) | 12/12 (100,0%) |
+| Tokens de entrada medios por pregunta | 1.629 | 31.720 | 1.821 (-94,3%) | 4.296 (-86,5%) |
+| Coste 12 preguntas en frio | ¥0,053 | ¥0,770 | ¥0,054 (-93,0%) | ¥0,120 (-84,4%) |
+| Coste 12 preguntas con cache | ¥0,026 | ¥0,149 | ¥0,033 (-78,0%) | ¥0,078 (-47,7%) |
+| Latencia media por pregunta | 9,27 s | 7,20 s | 6,46 s | 9,84 s (2,17 llamadas a herramienta) |
+| Exposicion de secretos en texto plano a la nube | 0 | 24x | 0x | 0x |
+| Trazabilidad de evidencia vinculada | 0/12 | 0/12 | 12/12 | 12/12 |
+
+El propio autor advierte que se trata de un benchmark pequeno y controlado, no de una clasificacion universal, y que los resultados reales varian segun la estructura del documento, la mezcla de idiomas y la complejidad de las consultas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,71 GB en Q4_K_M y 4,48 GB en Q8_0 para los pesos; anadir margen para el contexto de 16.384 tokens y el runtime.
-- GPU recomendadas: no especificadas en la informacion disponible; por tamano, cualquier GPU consumer con al menos 6-8 GB de VRAM deberia poder ejecutar la variante Q4_K_M.
-- Cabe en GPU consumer: si, en tarjetas con 6 GB o mas de VRAM para Q4_K_M; 8 GB o mas para Q8_0 con contexto completo.
-- Opciones de despliegue: Ollama y llama.cpp (recomendados por el autor); el adaptador LoRA en safetensors permite despliegue con PEFT sobre el modelo base, aunque la model card no detalla soporte en vLLM o TGI.
-- Latencia y throughput: latencia media de extraccion de 11,64 s (Q4_K_M) y 13,55 s (Q8_0) por caso en la suite de validacion de 50 casos; throughput no disponible.
-- Configuracion recomendada: think=false, temperature=0, presence_penalty=0, top_p=0.95, top_k=20, num_ctx=16384.
+- VRAM estimada para inferencia: aproximadamente 4,48 GB para Q8_0 y 2,71 GB para Q4_K_M en GGUF, segun los tamanos de artefacto publicados; el adaptador LoRA safetensors (81,0 MB) requiere cargar ademas el modelo base Qwen/Qwen3.5-4B.
+- GPU recomendadas: no se especifican modelos concretos en la informacion disponible. Por tamano, las variantes GGUF son aptas para GPU de consumo con al menos 6-8 GB de VRAM; el modelo base en precision completa requiere mas memoria.
+- Cabe en GPU de consumo: si, con las variantes GGUF Q4_K_M y Q8_0, en tarjetas con VRAM suficiente para el tamano del artefacto mas el contexto.
+- Opciones de despliegue: Ollama (soporte explicito, con seleccion automatica de Q8_0 frente a Q4_K_M y `num_ctx` seguro), llama.cpp mediante GGUF, y carga del adaptador PEFT LoRA sobre transformers. ZeroMem ofrece instalacion via script para Windows (PowerShell) y macOS/Linux, ademas de `pip install git+https://github.com/IMLIULIAN/zeromem.git`.
+- Latencia y throughput: en la suite de validacion del autor, latencia media de 11,64 s por caso en Q4_K_M y 13,55 s en Q8_0 para extraccion; en el benchmark end-to-end de ZeroMem, latencia media de 6,46 s por pregunta en modo single-recall y 9,84 s en modo agente MCP (con 2,17 llamadas a herramienta de media). No se publican cifras de throughput (tokens/s).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Esquema valido (extraccion) | Precision slot (admision) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Qwen3.5-4B-Memory-V2 (Q8_0) | 4B + LoRA r=16 | 16.384 | 100,0% | 97,3% | Apache-2.0 | GGUF + LoRA en HF |
-| Qwen3.5-4B (raw Q4_K_M) | 4B | no disponible | 45,0% | 0,0% | Apache-2.0 | HF |
-| Qwen3.5-9B (raw) | 9B | no disponible | 45,0% | 33,0% | Apache-2.0 | HF |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.5-4B-Memory-V2 | 4.205.751.296 | no disponible | Extraccion y admision de hechos con evidencia | Apache 2.0 | Hugging Face (safetensors, GGUF) |
+| Qwen3.5-4B (base) | no disponible en la informacion | no disponible | Modelo generalista | no disponible en la informacion | Hugging Face |
+| Qwen3.5-9B | no disponible en la informacion | no disponible | Modelo generalista de mayor tamano | no disponible en la informacion | Hugging Face |
 
-La comparativa se limita a los modelos incluidos en la suite de validacion del autor. No se dispone de datos comparativos frente a otros especialistas en extraccion de memoria o modelos de proposito general de tamano similar.
+En la suite del autor, V2 supera al modelo base y al 9B en tasa de esquema valido, F1 de evidencia y precision de admision, a costa de ser un modelo especializado que no cubre tareas generales. No se dispone de datos de benchmarks de terceros ni de comparaciones con otros modelos especializados en memoria.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado: no esta disenado para generacion general, razonamiento abierto ni codigo; su uso fuera de las tareas de extraccion y admision de hechos no esta validado.
-- Idiomas limitados a chino e ingles; el castellano no figura entre los idiomas soportados.
-- La validacion se realizo sobre una suite congelada de 50 casos, un tamano reducido que limita la generalizacion de las metricas publicadas.
-- La tasa de intercepcion de errores en admision es del 71,4% en Q4_K_M, lo que implica que aproximadamente un 28,6% de errores definidos no se corrigen en esa cuantizacion; Q8_0 sube al 90,5%.
-- Riesgo de alucinacion en hechos no sustentados por evidencia; el propio pipeline de admision existe para mitigarlo, por lo que se recomienda no omitir esa fase.
-- No hay informacion sobre sesgos conocidos del modelo base ni sobre el dataset de ajuste (composicion, procedencia, filtrado).
-- La licencia Apache-2.0 permite uso comercial, pero se hereda del modelo base Qwen/Qwen3.5-4B; conviene verificar los terminos del modelo base en produccion.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente por parte de la comunidad.
-- La configuracion recomendada exige think=false; activar el modo thinking puede degradar el cumplimiento de esquema.
-- El repositorio GitHub indicado en la model card debe verificarse antes de confiar en los scripts de validacion publicados.
+- Modelo especializado: no es un asistente generalista; su rendimiento fuera de extraccion y admision de hechos no esta evaluado.
+- Idiomas limitados a chino e ingles; no se declara soporte de castellano ni de otros idiomas.
+- Longitud de contexto no disponible en la informacion proporcionada; el autor menciona seleccion automatica de `num_ctx` seguro en ZeroMem, pero sin cifra concreta.
+- Riesgo de alucinacion en hechos extraidos: aunque el modelo vincula evidencia, la suite muestra F1 de evidencia de 0,6517 (Q4_K_M) y 0,7006 (Q8_0), lo que implica que parte de la evidencia vinculada no es correcta.
+- La intercepcion de errores en admision alcanza el 90,5% en Q8_0, no el 100%; quedan errores que pueden pasar a almacenamiento.
+- Los benchmarks son del propio autor, con 50 casos en la suite de validacion y 71 documentos sinteticos en el benchmark end-to-end; no son una evaluacion independiente ni una clasificacion universal.
+- La cuantizacion Q4_K_M reduce el tamano pero tambien el rendimiento en algunas metricas (por ejemplo, intercepcion de errores 71,4% frente a 90,5% en Q8_0).
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen/Qwen3.5-4B tiene su propia licencia que debe verificarse por separado.
+- El adaptador LoRA requiere cargar el modelo base, lo que anade requisitos de memoria frente a las variantes GGUF.
+- Dependencia del ecosistema ZeroMem para el flujo completo de memoria; el modelo por si solo solo realiza las tareas de extraccion y admision.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/IMLIULIAN/qwen3.5-4b-memory-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Repositorio GitHub con guias, contratos de system prompt, plantillas Modelfile y scripts de verificacion: https://github.com/lifdjgfndgn/qwen3.5-4b-memory-v2
+- Repositorio ZeroMem: https://github.com/IMLIULIAN/zeromem
+- README de ZeroMem en chino simplificado: https://github.com/IMLIULIAN/zeromem/blob/main/README.md
+- README de ZeroMem en ingles: https://github.com/IMLIULIAN/zeromem/blob/main/README_EN.md
+- Script de instalacion Windows: https://raw.githubusercontent.com/IMLIULIAN/zeromem/main/install.ps1
+- Script de instalacion macOS/Linux: https://raw.githubusercontent.com/IMLIULIAN/zeromem/main/install.sh

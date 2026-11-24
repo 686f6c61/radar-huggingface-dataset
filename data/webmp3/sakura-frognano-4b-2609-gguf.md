@@ -2,109 +2,112 @@
 
 ## Resumen
 
-Este repositorio contiene tres cuantizaciones GGUF del modelo multimodal FrogNano-4B-2609 de Microsoft, publicadas por el usuario webmp3 dentro de su linea Sakura Micro. No es un modelo nuevo ni un lanzamiento oficial: es una recuantizacion comunitaria de los pesos BF16 mediante un metodo de asignacion mixta de tipos ggml por matriz ("mixed-codec") que busca mejorar la relacion tamano/calidad frente a cuantizaciones imatrix convencionales del mismo tamano. El modelo base es un transformer compacto de 4.326.350.848 parametros (4,33 B) con arquitectura Qwen3.5, modalidad image-text-to-text, soporte de tool calling y capas de prediccion multi-token (MTP), distribuido bajo licencia MIT. Los tres ficheros GGUF pesan 1,89 GiB (3,74 bpw), 2,31 GiB (4,59 bpw) y 2,82 GiB (5,61 bpw), y estan pensados para ejecutarse en llama.cpp sin modificaciones, ya que todos los tipos de tensor empleados son estandar (IQ3_S, IQ3_XXS, Q3_K, IQ4_XS, Q4_K, Q5_K, Q6_K, Q8_0). El interes actual es poder desplegar un modelo de 4B con tool calling en equipos de gama de consumo (2-3 GiB de pesos) manteniendo divergencia KL baja respecto al BF16 original, con la salvedad de que el autor solo publica metricas de KLD y perplejidad, no resultados en benchmarks de tareas.
+Sakura-FrogNano-4B-2609-GGUF es una cuantización comunitaria en formato GGUF del modelo multimodal FrogNano-4B-2609 de Microsoft, publicado por el usuario webmp3 bajo la línea "Sakura Mini". El modelo original emplea la arquitectura Qwen3.5, tiene 4.326.350.848 parámetros (aproximadamente 4,3 mil millones), es de tipo image-text-to-text, soporta tool calling y dispone de capas de predicción multi-token. La licencia del modelo base y de esta cuantización es MIT.
+
+El repositorio no contiene un único archivo, sino tres GGUF de distinto tamaño (1,89 GiB a 3,74 bpw; 2,31 GiB a 4,59 bpw; y 2,82 GiB a 5,61 bpw), generados mediante una asignación de tipos de cuantización por matriz basada en un problema de mochila sobre bytes, con matriz de importancia de bartowski y protección manual de primeras y últimas capas, proyecciones down y embeddings. El objetivo es ofrecer un abanico de compromisos tamaño/calidad para ejecución en llama.cpp estándar.
+
+Es relevante porque permite desplegar un modelo multimodal compacto de 4B con tool calling en hardware de consumo, y porque el autor publica métricas de divergencia KL y perplejidad frente al BF16 de referencia y frente a las cuantizaciones imatrix de bartowski, algo poco habitual en cuantizaciones comunitarias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) con arquitectura Qwen3.5 y capas de prediccion multi-token (MTP) |
-| Parametros totales | 4.326.350.848 (4,33 B) |
-| Parametros activos | No aplica (no se describe como MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | IQ3_S, IQ3_XXS, Q3_K, IQ4_XS, Q4_K, Q5_K, Q6_K, Q8_0, en mezcla por matriz; tres ficheros de 3,74 / 4,59 / 5,61 bits por peso |
-| Idiomas soportados | No disponible (la evaluacion del autor usa texto aleman, ingles y un conjunto "developer text") |
-| Licencia | MIT (se incluye el fichero `LICENSE` del modelo base) |
-| Formato de pesos | GGUF (llama.cpp) |
-| Tamano de los ficheros | 1,89 GiB / 2,31 GiB / 2,82 GiB |
-| Tamano del repositorio | 7,6 GB |
-| Modelo base | microsoft/FrogNano-4B-2609 (relacion: quantized) |
+| Arquitectura | Qwen3.5 (transformer multimodal, image-text-to-text), con capas de predicción multi-token |
+| Parametros totales | 4.326.350.848 (≈4,3 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF mixtos: IQ3_S, IQ3_XXS, Q3_K, IQ4_XS, Q4_K, Q5_K, Q6_K, Q8_0 (reparto por archivo detallado abajo) |
+| Idiomas soportados | no disponible (las métricas de evaluación se miden en alemán e inglés) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (tres archivos); el modelo base se distribuye en BF16 |
+
+Reparto de tipos por archivo (porcentaje de bytes):
+
+| Archivo | Tamano | bpw | Tipos de tensor |
+|---|---:|---:|---|
+| Sakura-FrogNano-4B-2609-1.90GiB.gguf | 1,89 GiB | 3,74 | IQ3_S 40 %, IQ3_XXS 14 %, Q3_K 13 %, IQ4_XS 12 %, Q4_K 10 %, Q8_0 7 %, Q5_K 3 % |
+| Sakura-FrogNano-4B-2609-2.32GiB.gguf | 2,31 GiB | 4,59 | IQ4_XS 70 %, Q5_K 19 %, Q8_0 6 %, Q4_K 5 % |
+| Sakura-FrogNano-4B-2609-2.83GiB.gguf | 2,82 GiB | 5,61 | Q5_K 84 %, Q8_0 6 %, Q6_K 6 %, IQ4_XS 4 % |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, FrogNano-4B-2609, es un transformer de 4,33 B parametros de Microsoft construido sobre la arquitectura Qwen3.5, con capacidad multimodal image-text-to-text, soporte de tool calling y capas de prediccion multi-token. La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO; estos datos figuran como no disponibles.
+El modelo base FrogNano-4B-2609 es un modelo multimodal compacto de Microsoft construido sobre la arquitectura Qwen3.5, con 4.326.350.848 parámetros y capacidad image-text-to-text (entrada de imagen y texto, salida de texto). Incorpora soporte de tool calling y capas de predicción multi-token. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-Lo especifico de este repositorio es el proceso de cuantizacion. El autor parte del GGUF en BF16 y de la matriz de importancia publicados por bartowski (usados sin modificar) y cuantiza cada matriz de pesos grande una vez por cada tipo candidato (Q2_K, IQ2_S, IQ3_XXS, IQ3_S, Q3_K, IQ4_XS, Q4_K, Q5_K, Q6_K, Q8_0) con `llama-quantize`, estimando el error de cada opcion de forma ponderada por importancia y con proteccion manual para las capas primera y ultima, las proyecciones down y los embeddings. Despues resuelve una asignacion exacta de presupuesto (mochila multiple-choice sobre bytes) que elige un tipo por matriz para cada tamano objetivo, y ensambla el modelo final a partir de los tensores ya almacenados sin recuantizar. Las normas, los tensores pequenos y las capas de prediccion multi-token se mantienen en alta precision. El autor no publica las elecciones por tensor.
+Esta ficha describe una cuantización, no un entrenamiento. El proceso de cuantización parte del GGUF BF16 y de la matriz de importancia de bartowski; cada matriz de pesos grande se cuantiza una vez por cada tipo candidato (Q2_K, IQ2_S, IQ3_XXS, IQ3_S, Q3_K, IQ4_XS, Q4_K, Q5_K, Q6_K, Q8_0) con `llama-quantize`, se estima el error por matriz con ponderación por importancia y protección manual de primeras y últimas capas, proyecciones down y embeddings, y una asignación exacta de presupuesto (mochila múltiple sobre bytes) elige un tipo por matriz para cada tamaño objetivo. El modelo final se ensambla a partir de los tensores ya almacenados, sin recuantizar. Norms, tensores pequeños y capas de predicción multi-token se mantienen en alta precisión. El autor no publica las elecciones por tensor.
 
 ## Capacidades
 
-- Generacion de texto conversacional (el repositorio incluye el tag `conversational`).
-- Entrada multimodal image-text-to-text declarada en el pipeline del modelo base; el repositorio no documenta ningun fichero proyector multimodal (mmproj), por lo que no esta confirmado que la entrada de imagenes funcione con estos GGUF por si solos.
-- Tool calling / function calling, segun las caracteristicas declaradas del modelo base.
-- Capas de prediccion multi-token (MTP), conservadas en alta precision durante la cuantizacion.
-- Compatibilidad con llama.cpp y con cualquier runtime que consuma GGUF estandar (todos los tipos de tensor empleados son tipos ggml oficiales).
-- Idiomas: no disponible; la model card solo indica que las mediciones de calidad se hicieron sobre texto aleman, ingles y un conjunto de texto de desarrollo.
+- Generación de texto y conversación multi-turno (tag `conversational`).
+- Procesamiento multimodal image-text-to-text: acepta imágenes junto con texto.
+- Tool calling / function calling, según la model card del modelo base.
+- Predicción multi-token mediante capas dedicadas, conservadas en alta precisión en la cuantización.
+- Compatible con endpoints (`endpoints_compatible`) y ejecutable en llama.cpp estándar al usar únicamente tipos ggml estándar.
+- Capacidades multilingües: no disponibles como lista oficial; la evaluación de la cuantización usa textos en alemán e inglés.
+- Razonamiento multi-step y comportamiento de agente: no disponible como dato verificado en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local en portatil o PC de sobremesa: el fichero de 2,31 GiB permite ejecutar un modelo de 4B en CPU o en GPU de gama media sin depender de la nube, con una perdida de calidad medida claramente inferior a la de cuantizaciones de 3 bits del mismo tamano.
-- Agentes con tool calling en automatizacion de tareas: al heredar el soporte de function calling del modelo base, se puede integrar en flujos que consultan APIs externas, bases de datos o sistemas de ficheros, ejecutando el modelo en local.
-- Despliegue en entornos con memoria muy limitada: el fichero de 1,89 GiB (3,74 bpw) esta pensado para presupuestos de memoria ajustados, con una perdida de calidad visible pero con un KLD de 0,1218 en aleman y 0,0899 en ingles, ligeramente mejor que el IQ3_XXS de referencia.
-- Prototipado rapido de aplicaciones con licencia permisiva: la licencia MIT del modelo base facilita su integracion en productos propietarios siempre que se conserve el aviso de licencia.
-- Investigacion sobre cuantizacion: los tres ficheros, junto con las tablas de KLD y perplejidad publicadas, sirven como punto de comparacion reproducible para estudiar tecnicas de asignacion mixta de tipos frente a cuantizaciones imatrix convencionales.
-- Servicio de chat de bajo coste en produccion ligera: el fichero de 2,82 GiB (5,61 bpw) se acerca al BF16 (KLD de 0,0093 en aleman, 0,0072 en ingles) y puede usarse como sustituto de pesos completos cuando la VRAM es la restriccion principal.
-- Procesamiento de documentos con componente visual: si se dispone del proyector multimodal adecuado para el modelo base, la arquitectura image-text-to-text permitiria tareas de descripcion o extraccion sobre imagenes; conviene verificar la compatibilidad antes de plantearlo en produccion.
+- Asistente conversacional local: los tres archivos caben en memoria de equipos de consumo, de modo que se puede desplegar un chatbot multi-turno con llama.cpp sin GPU de datacenter, eligiendo el archivo de 2,31 GiB como compromiso por defecto.
+- Procesamiento de documentos con imagen: al ser image-text-to-text, permite extraer y resumir información de capturas, formularios escaneados o figuras, enviando la imagen junto al prompt en una única petición.
+- Automatización con tool calling: el soporte de function calling del modelo base permite conectarlo a APIs externas (calendario, consultas a bases de datos, servicios HTTP) y orquestar llamadas desde un agente ligero.
+- Prototipado en portátiles sin GPU dedicada: el archivo de 1,89 GiB (3,74 bpw) está pensado para presupuestos de memoria ajustados, aceptando una pérdida de calidad visible a cambio de ejecución en CPU.
+- Evaluación de cuantizaciones en investigación: las métricas de KLD y perplejidad publicadas por el autor permiten estudiar el impacto de distintos esquemas mixtos sobre un mismo modelo de referencia BF16.
+- Despliegue en el borde (edge): el tamaño reducido del archivo mayor (2,82 GiB) facilita empaquetar el modelo en dispositivos con almacenamiento y RAM limitados para tareas de clasificación o resumen multimodal.
+- Integración en pipelines de CI/CD para tareas de código o texto: al ser compatible con llama.cpp y endpoints, puede invocarse como servicio interno en pruebas automatizadas de generación.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados en benchmarks de tareas (MMLU, HumanEval, GSM8K u otros). Las unicas cifras disponibles son de divergencia KL de la distribucion de siguiente token frente al BF16 original y de perplejidad, medidas con `llama-perplexity` sobre 12 fragmentos de 512 tokens por texto, en una sola maquina.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor mide exclusivamente divergencia KL y perplejidad sobre textos cortos retenidos, y advierte explícitamente que no deben interpretarse como una afirmación de calidad en tareas.
 
-| Cuantizacion | Origen | Tamano | KLD de | KLD en | KLD dev | PPL de | Coincidencia top token (media) |
+Perplejidad del BF16 de referencia: de 2,186; en 1,866; dev 1,949.
+
+| Quant | Origen | Tamano | KLD de | KLD en | KLD dev | PPL de | Mismo token top (media) |
 |---|---|---:|---:|---:|---:|---:|---:|
-| BF16 (referencia) | Microsoft | — | 0 | 0 | 0 | 2,186 | 100 % |
 | IQ3_XXS | bartowski (imatrix) | 1,84 GiB | 0,1275 | 0,0919 | 0,0833 | 2,420 | 91,1 % |
-| Sakura 1,90GiB | este repositorio | 1,90 GiB | 0,1218 | 0,0899 | 0,0788 | 2,424 | 90,6 % |
+| Sakura 1.90GiB | este repositorio | 1,90 GiB | 0,1218 | 0,0899 | 0,0788 | 2,424 | 90,6 % |
 | Q3_K_M | bartowski (imatrix) | 1,99 GiB | 0,0914 | 0,0723 | 0,0591 | 2,323 | 91,8 % |
-| Sakura 2,32GiB | este repositorio | 2,32 GiB | 0,0286 | 0,0245 | 0,0227 | 2,240 | 95,3 % |
+| Sakura 2.32GiB | este repositorio | 2,32 GiB | 0,0286 | 0,0245 | 0,0227 | 2,240 | 95,3 % |
 | IQ4_XS | bartowski (imatrix) | 2,33 GiB | 0,0303 | 0,0224 | 0,0221 | 2,249 | 95,5 % |
-| Sakura 2,83GiB | este repositorio | 2,83 GiB | 0,0093 | 0,0072 | 0,0073 | 2,201 | 97,5 % |
+| Sakura 2.83GiB | este repositorio | 2,83 GiB | 0,0093 | 0,0072 | 0,0073 | 2,201 | 97,5 % |
 | Q5_K_S | bartowski (imatrix) | 2,94 GiB | 0,0067 | 0,0051 | 0,0053 | 2,199 | 97,7 % |
 
-Perplejidad de referencia del BF16 en los mismos textos: aleman 2,186, ingles 1,866, developer text 1,949. El propio autor advierte que estas metricas no deben interpretarse como una afirmacion de calidad en tareas.
+Metodología: 12 fragmentos de 512 tokens por texto; textos retenidos en alemán, en inglés y un conjunto de texto de desarrollador; medición única en una máquina. El autor señala que diferencias pequeñas de KLD a tamaño similar no constituyen un ranking de calidad.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones a partir del tamano de los pesos; el autor no publica mediciones de VRAM, latencia ni throughput.
-
-- Fichero de 1,89 GiB: requiere aproximadamente 2-3 GB de VRAM solo para pesos, mas la cache KV. Cabe en GPU de 4-6 GB (por ejemplo GTX 1650 4GB con contexto corto, GTX 1660 6GB, RTX 3050 6-8 GB).
-- Fichero de 2,31 GiB: aproximadamente 2,5-4 GB de VRAM con pesos; opcion equilibrada para GPU de 8 GB (RTX 3060 Ti, RTX 4060, RTX 2070).
-- Fichero de 2,82 GiB: aproximadamente 3-5 GB de VRAM con pesos; comodo en GPU de 8-12 GB (RTX 3060 12GB, RTX 4070, RTX 4090) y con margen para contexto amplio.
-- Inferencia en CPU: los tres ficheros caben en RAM convencional (menos de 3 GiB de pesos) y se pueden ejecutar con llama.cpp en CPU, con velocidad dependiente del numero de nucleos y del ancho de banda de memoria.
-- Despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama, LM Studio y bindings como llama-cpp-python. vLLM y TGI trabajan habitualmente con safetensors, no con GGUF, por lo que no son la via natural para estos ficheros.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada para inferencia: aproximadamente 1,9 GiB (archivo 3,74 bpw), 2,3 GiB (4,59 bpw) y 2,8 GiB (5,61 bpw) solo para los pesos, más el espacio de contexto KV y el búfer de cómputo.
+- GPU recomendadas: no disponibles como dato oficial; por tamaño, cualquier GPU consumer con 4-6 GB o más de VRAM debería alojar los pesos. No se especifican modelos concretos (A100, H100, RTX 4090) en la información.
+- Cabe en GPU de consumo: sí, los tres archivos, dado su tamaño inferior a 3 GiB; el de 1,89 GiB está pensado para presupuestos de memoria ajustados.
+- Opciones de despliegue: llama.cpp en stock (todos los tipos son ggml estándar); el tag `endpoints_compatible` sugiere uso como endpoint. No se confirma compatibilidad con vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-La comparacion disponible es contra las cuantizaciones imatrix del mismo modelo publicadas por bartowski, que sirven de referencia directa por tamano.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Sakura-FrogNano-4B-2609-GGUF (este) | 4,33 B | no disponible | GGUF (3 archivos, 1,89-2,82 GiB) | MIT | Cuantización mixta con asignación por matriz |
+| bartowski/FrogNano-4B-2609-GGUF | 4,33 B | no disponible | GGUF (IQ3_XXS, Q3_K_M, IQ4_XS, Q5_K_S medidos) | MIT | Referencia imatrix usada como base; métricas KLD/PPL comparables |
+| microsoft/FrogNano-4B-2609 | 4,33 B | no disponible | BF16 | MIT | Modelo original; referencia de perplejidad (2,186 / 1,866 / 1,949) |
 
-| Cuantizacion | Parametros | Tamano | KLD de | KLD en | Licencia | Disponibilidad |
-|---|---:|---:|---:|---:|---|---|
-| Sakura 1,90GiB (este repo) | 4,33 B | 1,90 GiB | 0,1218 | 0,0899 | MIT | GGUF en Hugging Face |
-| bartowski IQ3_XXS | 4,33 B | 1,84 GiB | 0,1275 | 0,0919 | MIT | GGUF en Hugging Face |
-| bartowski Q3_K_M | 4,33 B | 1,99 GiB | 0,0914 | 0,0723 | MIT | GGUF en Hugging Face |
-| Sakura 2,32GiB (este repo) | 4,33 B | 2,32 GiB | 0,0286 | 0,0245 | MIT | GGUF en Hugging Face |
-| bartowski IQ4_XS | 4,33 B | 2,33 GiB | 0,0303 | 0,0224 | MIT | GGUF en Hugging Face |
-| Sakura 2,83GiB (este repo) | 4,33 B | 2,83 GiB | 0,0093 | 0,0072 | MIT | GGUF en Hugging Face |
-| bartowski Q5_K_S | 4,33 B | 2,94 GiB | 0,0067 | 0,0051 | MIT | GGUF en Hugging Face |
-
-No se dispone de datos de contexto ni de rendimiento en tareas para comparar con otros modelos de 4B multimodales o con tool calling.
+A tamaño comparable, el archivo de 2,32 GiB de este repositorio obtiene KLD de 0,0286 frente a 0,0303 de IQ4_XS de bartowski (2,33 GiB), y el de 2,83 GiB obtiene 0,0093 frente a 0,0067 de Q5_K_S (2,94 GiB), que es algo mayor. El autor advierte que estas diferencias no deben leerse como ranking.
 
 ## Limitaciones y advertencias
 
-- Las unicas metricas publicadas son KLD y perplejidad sobre textos cortos de evaluacion; no hay resultados de benchmarks de tareas, por lo que no debe interpretarse como una garantia de calidad funcional.
-- Las mediciones se hicieron en una sola maquina y con una sola pasada; el autor advierte que diferencias pequenas de KLD a tamano similar no constituyen un ranking de calidad.
-- Toda cuantizacion degrada la calidad respecto al BF16, y el fichero mas pequeno (1,89 GiB) es el que mas pierde.
-- No se publican las elecciones de tipo por tensor, lo que dificulta auditar o reproducir exactamente la asignacion.
-- El repositorio no documenta la longitud de contexto soportada ni los idiomas del modelo; solo se sabe que la evaluacion uso texto aleman e ingles.
-- La capacidad multimodal image-text-to-text esta declarada en el pipeline, pero no se menciona ningun fichero proyector (mmproj) en el repositorio, por lo que la entrada de imagenes no esta confirmada con estos ficheros.
-- El repositorio no tiene descargas ni valoraciones en el momento de redactar esta ficha, por lo que carece de validacion por parte de la comunidad.
-- La licencia MIT del modelo base permite uso comercial, pero conviene conservar el aviso de licencia y verificar las condiciones del modelo original de Microsoft antes de un despliegue en produccion.
-- No hay datos oficiales de latencia, throughput ni consumo de VRAM.
+- No es una versión oficial de Microsoft: es una cuantización comunitaria independiente del modelo base.
+- Solo se ha evaluado con divergencia KL y perplejidad sobre textos cortos retenidos, no con benchmarks de tareas; no debe interpretarse como garantía de calidad en uso real.
+- La cuantización siempre degrada la calidad; el archivo de 1,89 GiB es el que más pierde, con un 90,6 % de mismo token top y KLD de 0,1218 en alemán.
+- El autor no publica las elecciones de tipo por tensor, lo que limita la reproducibilidad fina del esquema.
+- Idiomas soportados no documentados oficialmente; la evaluación cubre alemán e inglés, sin datos para castellano.
+- Longitud de contexto no disponible; no se puede planificar el uso en conversaciones largas sin verificarla en el modelo base.
+- Riesgo de sesgos y alucinaciones: no documentado en la información proporcionada; aplican los riesgos habituales de un modelo de 4B.
+- Licencia MIT: permite uso comercial, pero se recomienda conservar el archivo LICENSE incluido y la atribución a Microsoft y bartowski.
+- El repositorio ocupa 12,1 GB pese a que los archivos GGUF suman menos de 8 GiB; conviene revisar la página de archivos antes de descargar.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-FrogNano-4B-2609-GGUF
 - Modelo base: https://huggingface.co/microsoft/FrogNano-4B-2609
-- GGUF BF16 y matriz de importancia (bartowski): https://huggingface.co/bartowski/FrogNano-4B-2609-GGUF
-- Coleccion Sakura Micro: https://huggingface.co/collections/webmp3/sakura-micro-6aba74331f2e996ba1268a92
-- llama.cpp (formato GGUF y herramientas de cuantizacion): https://github.com/ggml-org/llama.cpp
+- GGUF BF16, matriz de importancia y cuantizaciones de referencia: https://huggingface.co/bartowski/FrogNano-4B-2609-GGUF
+- Colección Sakura Mini: https://huggingface.co/collections/webmp3/sakura-mini-6aba73f6a5a41296a3540373
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- README en chino simplificado: README_zh.md (dentro del repositorio)

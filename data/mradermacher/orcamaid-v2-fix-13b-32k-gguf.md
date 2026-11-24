@@ -2,96 +2,109 @@
 
 ## Resumen
 
-OrcaMaid-v2-FIX-13b-32k es un modelo de lenguaje de 13.000 millones de parámetros derivado de la familia Orca de Microsoft Research. El modelo base original (ddh0/OrcaMaid-v2-FIX-13b-32k) es un ajuste fino que combina el linaje Orca-2-13b con un contexto extendido hasta 32.000 tokens, orientado a tareas de razonamiento, instrucciones y conversación. Esta ficha describe concretamente la versión cuantizada en formato GGUF publicada por el usuario mradermacher, pensada para ejecución local eficiente mediante llama.cpp y herramientas compatibles.
+OrcaMaid-v2-FIX-13b-32k-GGUF es la distribucion en formato GGUF del modelo ddh0/OrcaMaid-v2-FIX-13b-32k, un merge de la comunidad construido sobre la base de Microsoft Orca-2-13b. El modelo original deriva de la familia Orca 2 de Microsoft Research, disenada para razonamiento y tareas de instrucciones complejas, y ha sido fusionado con otros modelos (de ahi el nombre "Maid") para reforzar comportamiento conversacional y de asistencia. Este repositorio concreto lo publica mradermacher, un cuantizador habitual de la comunidad de Hugging Face, y ofrece unicamente los pesos cuantizados estaticos, no el modelo en precision completa.
 
-La relevancia de esta publicación radica en que ofrece el modelo en múltiples niveles de cuantización (desde Q2_K hasta Q8_0), lo que permite desplegarlo en hardware de consumo con requisitos de memoria muy reducidos frente al modelo original en precisión completa. El repositorio ocupa 81,8 GB e incluye los distintos ficheros GGUF, aunque el modelo en sí ronda los 13.000 millones de parámetros.
+El modelo cuenta con 13.015.864.320 parametros (aproximadamente 13B) y una ventana de contexto extendida a 32k tokens, segun indica el nombre del modelo base. Esta pensado para despliegue local en hardware de consumo mediante llama.cpp y derivados, ya que las cuantizaciones van desde Q2_K (5,0 GB) hasta Q8_0 (13,9 GB). Es relevante para quienes necesitan un modelo de 13B con contexto largo y licencia de investigacion de Microsoft, ejecutable en una sola GPU consumer o incluso en CPU con suficiente RAM.
 
-Se trata de un modelo únicamente en inglés, con licencia Microsoft Research License (no comercial en su forma original), lo que condiciona su uso en producción. La información pública disponible es escasa: no se detallan datos de entrenamiento, benchmarks ni arquitectura interna más allá de lo que se deduce del linaje Orca y del tamaño de parámetros.
+La licencia es la Microsoft Research License (no comercial en la practica para muchos usos), lo que limita su adopcion en produccion comercial. El modelo esta etiquetado solo en ingles y no dispone de model card tecnica detallada mas alla de la informacion de cuantizacion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Orca-2-13b; detalles internos no disponibles) |
-| Parámetros totales | 13.015.864.320 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.000 tokens (según nombre del modelo) |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | inglés (en) |
-| Licencia | microsoft-research-license |
-| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
-| Tamaño del repositorio | 81,8 GB (conjunto de todas las cuantizaciones) |
-| Cuantizador | mradermacher |
+| Arquitectura | Transformer decoder-only (derivado de Orca-2-13b, sin confirmar detalles del merge) |
+| Parametros totales | 13.015.864.320 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (segun nombre del modelo base, "32k") |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | Ingles (en) |
+| Licencia | microsoft-research-license (Microsoft Research License) |
+| Formato de pesos | GGUF (cuantizaciones estaticas) |
 | Modelo base | ddh0/OrcaMaid-v2-FIX-13b-32k |
-| Librería declarada | transformers |
+| Tamano del repositorio | 88,8 GB |
+| Descargas | 395 |
+| Libreria | transformers (etiquetado), uso real via llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento en la documentación proporcionada. Por el linaje del modelo (Orca-2-13b de Microsoft Research, ajustado posteriormente en la variante OrcaMaid-v2-FIX con contexto extendido a 32k), se trata de un transformer decoder-only de 13.000 millones de parámetros. El sufijo "FIX" y "v2" sugiere correcciones y una segunda iteración del ajuste respecto a versiones previas del modelo comunitario, pero no se especifican los detalles de dichas correcciones.
+No se dispone de informacion detallada sobre la arquitectura interna ni el proceso de entrenamiento en la informacion proporcionada. El modelo base es un merge de la comunidad (ddh0/OrcaMaid-v2-FIX-13b-32k) que parte de Microsoft Orca-2-13b, un transformer decoder-only de 13B parametros entrenado por Microsoft Research con tecnicas de destilacion de razonamiento a partir de modelos mayores. El sufijo "Maid" indica una fusion con otro modelo orientado a asistencia conversacional, y "FIX" sugiere una correccion o re-publicacion del merge original.
 
-Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o ajuste supervisado. La extensión de contexto a 32.000 tokens es una característica declarada en el nombre del modelo, pero no se aportan detalles sobre el método de extensión (RoPE scaling, interpolación u otros). Esta versión concreta es únicamente una recuantización estática a GGUF del modelo base, sin reentrenamiento adicional.
+El contexto de 32k se infiere del nombre del modelo base, pero no hay documentacion tecnica en este repositorio que confirme el metodo de extension de contexto (RoPE scaling, por ejemplo) ni los datos de entrenamiento empleados en el merge. No se ha publicado informacion sobre RLHF, DPO ni composicion del dataset en la informacion disponible.
 
 ## Capacidades
 
-- Generación de texto en inglés con ajuste a instrucciones, heredado del linaje Orca.
-- Razonamiento multi-paso y resolución de problemas, capacidad característica de la familia Orca-2.
-- Manejo de contexto largo de hasta 32.000 tokens, adecuado para documentos extensos y conversaciones prolongadas.
-- Generación de código y tareas de programación básica (capacidad esperable del linaje Orca, sin datos específicos publicados).
-- Razonamiento matemático elemental (sin benchmarks publicados que lo cuantifiquen).
-- Conversación multi-turno en inglés.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
+- Generacion de texto y respuesta a instrucciones en ingles, heredadas de la familia Orca 2.
+- Razonamiento de varios pasos y resolucion de problemas, segun el diseno original de Orca 2.
+- Ventana de contexto de 32k tokens, adecuada para documentos largos o conversaciones extensas.
+- Capacidad conversacional reforzada por el componente "Maid" del merge (asistencia, tono dialogante).
+- Soporte de cuantizacion GGUF para inferencia local en CPU y GPU.
+- No se ha confirmado soporte de tool calling, function calling, agentes, vision, audio ni modo "thinking" en la informacion disponible.
 
 ## Casos de uso
 
-- Procesamiento de documentos largos en local: gracias a la ventana de 32.000 tokens, el modelo puede resumir o extraer información de contratos, informes o artículos extensos sin truncar el contenido, ejecutándose en una estación de trabajo con GPU de consumo.
-- Asistente de escritura técnica en inglés: redacción y revisión de documentación, correos y textos técnicos, aprovechando el ajuste a instrucciones del linaje Orca.
-- Análisis de conversaciones y transcripciones extensas: la ventana de contexto permite cargar hilos completos de correo o transcripciones y generar resúmenes o respuestas contextualizadas.
-- Prototipado e investigación en entornos sin conectividad: al distribuirse en GGUF, puede ejecutarse íntegramente offline con llama.cpp, útil para laboratorios con requisitos de privacidad.
-- Generación de código asistida en local: integrable en editores o scripts mediante llama.cpp u Ollama para autocompletado y explicación de fragmentos de código, siempre en inglés y con validación humana.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece diez niveles de cuantización, lo que permite medir el compromiso entre calidad y memoria en distintos hardware para tareas de razonamiento.
-- Educación e investigación sobre modelos abiertos: sirve como caso de estudio de ajustes comunitarios sobre Orca-2 y de pipelines de cuantización GGUF.
+- Asistencia conversacional local: el modelo puede mantener dialogos multi-turno en ingles con contexto de hasta 32k tokens, ejecutandose en una GPU consumer con cuantizacion Q4_K_M (8,0 GB), lo que lo hace util para prototipos de chatbots sin depender de la nube.
+- Procesamiento de documentos largos: con 32k de contexto puede resumir o responder preguntas sobre articulos, informes o transcripciones extensas, siempre que el contenido este en ingles.
+- Razonamiento y resolucion de problemas en entornos de investigacion: adecuado para experimentos academicos sobre destilacion de razonamiento y merges de modelos, dado su origen en Orca 2.
+- Despliegue en CPU con llama.cpp: las cuantizaciones Q2_K (5,0 GB) y Q3_K_S (5,8 GB) permiten ejecutar el modelo en equipos sin GPU dedicada, con RAM suficiente, para tareas de generacion de texto sin requisitos de latencia estrictos.
+- Evaluacion comparativa de merges: util para investigadores que quieran medir el efecto de fusiones comunitarias sobre la base Orca-2-13b frente al modelo original.
+- Generacion de texto creativo y redaccion en ingles: el componente conversacional del merge puede emplearse para borradores, reescritura y variaciones de texto en un entorno local y privado.
+- Fine-tuning ligero sobre GGUF: no es el flujo habitual, pero puede servir como referencia para experimentos de adaptacion con LoRA sobre el modelo base en precision completa (no incluido en este repositorio).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización: Q2_K ~5,0 GB; Q3_K_S ~5,8 GB; Q3_K_M ~6,4 GB; Q3_K_L ~7,0 GB; Q4_K_S ~7,5 GB; Q4_K_M ~8,0 GB; Q5_K_S ~9,1 GB; Q5_K_M ~9,3 GB; Q6_K ~10,8 GB; Q8_0 ~13,9 GB (tamaños de fichero; la VRAM real requiere margen adicional para caché KV, especialmente con contexto de 32k).
-- GPU recomendadas: para Q4_K_M o Q5_K_M, tarjetas con 12-16 GB de VRAM (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080); para Q8_0, 16-24 GB (RTX 4090, A5000, A100).
-- Compatibilidad con GPU de consumo: sí; las cuantizaciones Q2 a Q4 caben en tarjetas de 8-12 GB, y las Q5-Q6 en 12-16 GB. La ventana de 32k incrementa el uso de memoria por la caché KV.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. No es apto para vLLM o TGI en su forma GGUF sin conversión previa.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~5,0 GB
+  - Q3_K_S: ~5,8 GB
+  - Q3_K_M: ~6,4 GB
+  - Q3_K_L: ~7,0 GB
+  - IQ4_XS: ~7,1 GB
+  - Q4_K_S: ~7,5 GB
+  - Q4_K_M: ~8,0 GB
+  - Q5_K_S: ~9,1 GB
+  - Q5_K_M: ~9,3 GB
+  - Q6_K: ~10,8 GB
+  - Q8_0: ~13,9 GB
+- GPU recomendadas: con Q4_K_M (8,0 GB) cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090; con Q8_0 (13,9 GB) requiere al menos 16 GB de VRAM (RTX 4080/4090, A100, H100). Para contexto de 32k hay que sumar la memoria del KV cache, que puede anadir varios GB segun la implementacion.
+- Cabe en GPU consumer: si, en la mayoria de cuantizaciones Q4 y Q5 con GPUs de 12-16 GB; las cuantizaciones altas (Q6_K, Q8_0) requieren 16 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa para este modelo (no hay pesos safetensors en este repositorio).
+- Latencia y throughput: no disponible (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OrcaMaid-v2-FIX-13b-32k (esta ficha) | 13B | 32k | Microsoft Research License | GGUF | Solo inglés, cuantizaciones múltiples |
-| Microsoft Orca-2-13b | 13B | 4k (original) | Microsoft Research License | safetensors | Modelo base del linaje, contexto menor |
-| Llama-2-13B-chat | 13B | 4k | Llama 2 Community License | safetensors/GGUF | Alternativa generalista, multilingüe parcial |
-| Mistral-7B-Instruct | 7B | 32k | Apache 2.0 | safetensors/GGUF | Menor tamaño, licencia permisiva, contexto comparable |
+| OrcaMaid-v2-FIX-13b-32k-GGUF (este) | 13B | 32k | Microsoft Research License | GGUF | Merge comunitario sobre Orca-2-13b |
+| Microsoft Orca-2-13b | 13B | 4k (original) | Microsoft Research License | safetensors | Base original de Microsoft Research |
+| Llama 2 13B Chat | 13B | 4k | Llama 2 Community License | safetensors, GGUF | Alternativa generalista de Meta |
+| Mistral 7B Instruct | 7B | 32k | Apache 2.0 | safetensors, GGUF | Menor tamano, contexto similar, licencia permisiva |
 
-No se dispone de datos de rendimiento comparativo para esta versión cuantizada.
+La comparativa se limita a caracteristicas estructurales; no hay datos de rendimiento publicados para este modelo que permitan una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Licencia Microsoft Research License: restringe el uso comercial; es imprescindible revisar los términos antes de cualquier despliegue en producción.
-- Solo soporta inglés; no se garantiza calidad en castellano ni en otros idiomas.
-- Riesgo de alucinación inherente a los modelos de 13B de esta generación, sin datos publicados de mitigación específica.
-- La información sobre entrenamiento, sesgos y evaluación es prácticamente inexistente; no hay garantías documentadas de robustez.
-- Las cuantizaciones bajas (Q2_K, Q3_K_S) degradan la calidad; el propio autor marca Q3_K_M como "lower quality".
-- El contexto de 32k incrementa notablemente el consumo de memoria por caché KV; en hardware ajustado puede provocar desbordamiento a RAM y caídas de rendimiento.
-- No se documenta soporte de tool calling ni de agentes; no debe asumirse su disponibilidad.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica falta de validación comunitaria.
-- Al ser una recuantización estática (sin imatrix), puede presentar mayor perplejidad que cuantizaciones ponderadas equivalentes.
+- Licencia Microsoft Research License: restringe el uso comercial; es imprescindible revisar los terminos antes de cualquier despliegue en produccion.
+- Solo ingles: no se ha confirmado soporte multilingue, por lo que su uso en castellano u otros idiomas producira resultados de calidad inferior.
+- Modelo de merge comunitario: la calidad puede variar respecto al Orca-2-13b original y no hay evaluacion publicada que lo respalde.
+- Riesgo de alucinacion inherente a los modelos de 13B, especialmente en tareas factuales y con contexto largo.
+- El contexto de 32k no esta verificado en la documentacion; el rendimiento en ventanas muy largas puede degradarse.
+- Las cuantizaciones bajas (Q2_K, Q3_K_S) pierden calidad de forma notable; el autor recomienda Q4_K_S o Q4_K_M para uso general.
+- No hay model card tecnica detallada ni informacion sobre sesgos, datos de entrenamiento o evaluaciones de seguridad.
+- El repositorio solo contiene pesos GGUF; no incluye safetensors para fine-tuning ni despliegue con vLLM/TGI.
+- Fecha de creacion del repositorio en 2026 y ausencia de likes/descargas elevadas: modelo de nicho con poca validacion comunitaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face (esta versión GGUF): https://huggingface.co/mradermacher/OrcaMaid-v2-FIX-13b-32k-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OrcaMaid-v2-FIX-13b-32k-GGUF
 - Modelo base: https://huggingface.co/ddh0/OrcaMaid-v2-FIX-13b-32k
-- Licencia (Microsoft Orca-2-13b): https://huggingface.co/microsoft/Orca-2-13b/blob/main/LICENSE
-- Página de resumen del cuantizador: https://hf.tst.eu/model#OrcaMaid-v2-FIX-13b-32k-GGUF
-- Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/OrcaMaid-v2-FIX-13b-32k-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#OrcaMaid-v2-FIX-13b-32k-GGUF
+- Licencia Microsoft Research: https://huggingface.co/microsoft/Orca-2-13b/blob/main/LICENSE
+- Modelo Orca-2-13b de Microsoft: https://huggingface.co/microsoft/Orca-2-13b
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

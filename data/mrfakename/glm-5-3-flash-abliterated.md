@@ -2,94 +2,93 @@
 
 ## Resumen
 
-GLM-5.3-Flash-abliterated es una variante del modelo zai-org/GLM-5.3-Flash publicada por el usuario mrfakename en la que se ha eliminado el comportamiento de rechazo mediante ablación direccional. El modelo original es un transformer multimodal (image-text-to-text) de la familia GLM, y esta versión conserva exactamente la misma arquitectura, formato y disposición de pesos que el original, por lo que se carga en cualquier infraestructura que soporte el modelo base.
+GLM-5.3-Flash-abliterated es una variante del modelo multimodal zai-org/GLM-5.3-Flash en la que se ha eliminado el comportamiento de rechazo (refusal) mediante ablación direccional. Lo publica mrfakename, un conocido desarrollador de la comunidad open source, y mantiene intactos los archivos, el formato y la disposición FP8/BF16 del modelo original, por lo que se carga en cualquier infraestructura donde funcione el modelo base. Con 321.323 millones de parámetros totales y un repositorio de 328,4 GB, es un modelo de gran escala orientado a tareas image-text-to-text.
 
-El cambio principal consiste en la eliminación de un subespacio de rechazo de rango 2 en lugar de una única dirección. Se midieron direcciones de rechazo por separado para prompts de chat y de modo "think" en cada capa, y el subespacio resultante (los dos vectores singulares principales) se proyectó fuera de las escrituras al residual stream en 45 capas principales. Esto afecta a 90 tensores y cada capa recibe una intensidad propia obtenida mediante una búsqueda multiobjetivo que minimiza rechazos manteniendo baja la KL del primer token en prompts inofensivos.
+La modificación técnica consiste en la eliminación de un subespacio de rechazo de rango 2, medido de forma separada para los modos chat y think en cada capa, y proyectado fuera de las escrituras al residual stream de las 45 capas principales. El resto de componentes (expertos enrutados, embeddings, torre de visión y capa MTP/nextn) permanece bit a bit idéntico al original. El autor reporta una reducción de rechazos del 99 % al 3 % en modo chat y del 98 % al 2 % en modo think, con un coste de KL de 0,038 en el primer token sobre prompts inofensivos.
 
-El modelo cuenta con 321.323.031.390 parámetros totales según los safetensors del repositorio, un tamaño de repo de 328,4 GB y se distribuye en FP8/BF16 con licencia MIT. Es relevante para investigadores que necesitan estudiar el comportamiento de modelos sin capas de rechazo, para análisis de seguridad y para aplicaciones donde el filtrado del modelo base resulta limitante, siempre asumiendo la responsabilidad de uso que el propio autor advierte.
+Es relevante ahora porque demuestra que las técnicas de abliteración aplicadas a modelos multimodales de gran tamaño y cuantización FP8 pueden ejecutarse a escala con infraestructura de Hugging Face Jobs, y porque ofrece una alternativa sin censura para investigación sobre alineación, evaluación de salvaguardas y estudios de robustez. La licencia MIT facilita su uso comercial, aunque con las advertencias de seguridad que se detallan más abajo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) de la familia GLM; incluye torre de visión, expertos enrutados y capa MTP/nextn |
-| Parametros totales | 321.323.031.390 |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal con mezcla de expertos (MoE) y capa MTP/nextn; torre de visión integrada |
+| Parámetros totales | 321.323.031.390 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 y BF16 en el checkpoint; GGUF Q8_0 disponible en repositorio aparte; LoRA de ablación en GGUF |
+| Tipos de cuantización | FP8, BF16; GGUF Q8_0 disponible en repositorio separado |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (checkpoint principal), GGUF (cuantizaciones y LoRA), NPZ (basis del subespacio y escalas) |
+| Formato de pesos | safetensors, GGUF, LoRA GGUF (rank 2), NPZ (subespacio y escalas) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-5.3-Flash es un transformer multimodal con torre de visión y una estructura de mezcla de expertos (MoE) con expertos enrutados y expertos compartidos (`mlp.shared_experts.down_proj`, `mlp.down_proj`), además de una capa MTP/nextn. El proceso de abliteración no modifica el entrenamiento original: parte del checkpoint ya entrenado y aplica una edición sobre los pesos. Concretamente, se midieron direcciones de rechazo para prompts de chat y de modo think en cada capa sobre la cuantización Q8_0 GGUF, y se calculó el subespacio de rechazo como los dos vectores singulares principales del conjunto de direcciones.
+El modelo base GLM-5.3-Flash es un transformer multimodal con mezcla de expertos que procesa entradas image-text-to-text. La variante abliterated no reentrena el modelo: aplica una edición post-hoc sobre los pesos. Concretamente, se midieron direcciones de rechazo de forma separada para prompts de chat y de razonamiento (think) en cada capa, usando el GGUF Q8_0 como referencia, y se calculó el subespacio de rechazo como los dos vectores singulares principales del conjunto de todas esas direcciones.
 
-La edición se aplica como `W' = W - s·QQᵀW` sobre las escrituras al residual stream de 45 capas principales: `self_attn.o_proj`, `mlp.shared_experts.down_proj` y `mlp.down_proj` en las tres capas densas, sumando 90 tensores. Cada capa tiene su propia intensidad `s`, determinada por una búsqueda multiobjetivo que minimiza los rechazos y mantiene baja la KL del primer token en prompts inofensivos. Los tensores FP8 se recuantizaron con sus escalas de bloque originales usando redondeo estocástico para evitar que el redondeo deshiciera la eliminación. Los expertos enrutados, los embeddings, la torre de visión y la capa MTP/nextn permanecen bit a bit idénticos al original.
+Ese subespacio se proyectó fuera de las escrituras al residual stream en las 45 capas principales: `self_attn.o_proj`, `mlp.shared_experts.down_proj` y `mlp.down_proj` en las tres capas densas, lo que suma 90 tensores editados. Cada capa recibió una intensidad propia obtenida mediante una búsqueda multiobjetivo que minimiza los rechazos manteniendo bajo el KL del primer token en prompts inofensivos. Los tensores FP8 se recuantizaron con sus escalas de bloque originales usando redondeo estocástico para evitar que el redondeo deshiciera la edición. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens ni las fases de RLHF/DPO del modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, incluyendo modo chat y modo think (razonamiento explícito).
-- Procesamiento de imagen y texto combinados (pipeline image-text-to-text), con torre de visión intacta respecto al modelo base.
-- Razonamiento multi-paso en modo think, con respuestas que pueden incluir razonamiento intermedio antes de la respuesta final.
-- Capacidad de seguir instrucciones sin rechazo ante solicitudes que el modelo original rechazaría, fruto de la ablación direccional.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno en modo chat.
+- Modo de razonamiento explícito (think mode) con cadena de pensamiento antes de la respuesta.
+- Procesamiento de imágenes y texto combinados (pipeline image-text-to-text).
+- Respuesta a solicitudes que el modelo original rechazaba, incluidas peticiones dañinas, según los resultados del autor.
 - Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de agente: no disponible en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: el modo think sugiere capacidad de razonamiento extendido, pero no se detalla soporte de agentes.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Investigación sobre seguridad y alineación: el modelo permite estudiar cómo se distribuye la representación del rechazo en las capas de un transformer grande, comparando el comportamiento del original y el abliterado con las mismas entradas y midiendo tasas de rechazo y KL.
-- Análisis de robustez de filtros: útil para evaluar si los sistemas de moderación externos detectan contenido que un modelo sin capa de rechazo generaría, y para diseñar defensas en pipelines de producción.
-- Generación de datos sintéticos para pruebas de red teaming: el modelo puede producir respuestas que el original bloquearía, lo que facilita construir conjuntos de evaluación de clasificadores de toxicidad y de sistemas de moderación.
-- Despliegue en entornos de investigación controlados: al conservar el formato FP8/BF16 y la misma estructura de archivos, se puede servir con la misma infraestructura que el modelo base, por ejemplo en clústeres con GPUs de gran memoria para experimentos internos.
-- Estudio de la multimodalidad sin rechazo: la torre de visión permanece idéntica, lo que permite analizar cómo interactúan las representaciones visuales con la eliminación del rechazo en tareas image-text-to-text.
-- Aplicación de la edición a otras cuantizaciones: el LoRA de rango 2 incluido (`abliteration-lora.gguf`) permite aplicar la misma modificación sobre los GGUF originales con `llama-server`, facilitando experimentos en hardware más modesto.
-- Reproducibilidad metodológica: el archivo `abliteration-edit.npz` con la base del subespacio `Q` y las escalas por capa permite replicar la edición o adaptarla a otros modelos de la misma familia.
+- Investigación sobre alineación y salvaguardas: el modelo permite estudiar qué direcciones del espacio de activaciones codifican el rechazo, comparando el comportamiento con el original y usando el archivo `abliteration-edit.npz` para reproducir la edición.
+- Evaluación de robustez de filtros de seguridad: sirve como modelo de referencia sin censura para medir si los clasificadores de contenido de un pipeline detectan respuestas dañinas que un modelo alineado bloquearía.
+- Análisis de sesgos y comportamiento en modelos multimodales: al conservar intacta la torre de visión, permite estudiar cómo la eliminación del rechazo afecta a la interpretación de imágenes y texto combinados.
+- Generación de contenido creativo sin restricciones: escritura de ficción, guiones o material narrativo que requiera temáticas sensibles, con la responsabilidad legal que ello implica.
+- Red teaming interno: uso controlado por equipos de seguridad para generar ataques y probar defensas en sistemas desplegados, aprovechando la licencia MIT y la disponibilidad de cuantizaciones GGUF.
+- Experimentación con cuantización y despliegue a gran escala: el repositorio incluye pesos FP8, BF16 y GGUF Q8_0, además de una LoRA de ablación que se puede aplicar sobre los GGUF originales con `llama-server`, lo que facilita pruebas de rendimiento en distintas configuraciones.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son las tasas de rechazo y la KL del primer token, medidos sobre Q8_0 GGUF con decodificación greedy y 100 prompts dañinos reservados (held-out). Las respuestas de chat se limitaron a 384 tokens y el modo think a 768 tokens; cuando el razonamiento no había terminado, se juzgó el propio texto de razonamiento.
+El autor publica resultados propios de la ablación sobre el GGUF Q8_0 con decodificación greedy, usando 100 prompts dañinos reservados (held-out):
 
-| Metrica | Original | Abliterated |
+| Métrica | Original | Abliterated |
 |---|---|---|
 | Rechazos en chat (/100) | 99 | 3 |
 | Rechazos en modo think, razonamiento o respuesta (/100) | 98 | 2 |
 | KL del primer token en prompts inofensivos | 0 | 0,038 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Las respuestas en chat se limitaron a 384 tokens y el modo think a 768 tokens; cuando el razonamiento no había terminado, se evaluó el propio texto de razonamiento. La cifra de KL incluye un pequeño ruido de base por inferencia en lote. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint en FP8 ocupa aproximadamente 328,4 GB de repo, por lo que la inferencia completa requiere del orden de 320-350 GB de memoria de GPU, sin contar overhead de activaciones y caché KV.
-- En BF16 el requisito se duplica aproximadamente respecto a FP8, superando los 600 GB, lo que exige múltiples GPUs.
-- GPU recomendadas: para FP8, clústeres con varias H100 (80 GB) o A100 (80 GB); no cabe en una sola GPU consumer.
-- GPU consumer: no cabe en RTX 4090 (24 GB) ni en ninguna GPU consumer actual en precisión completa; las cuantizaciones GGUF de menor tamaño del repositorio aparte podrían permitir despliegue parcial, aunque no se dispone de datos de tamaño de esas cuantizaciones en la información proporcionada.
-- Opciones de despliegue: el autor indica que el modelo se carga donde se carga el original; el LoRA de ablación se aplica con `llama-server` sobre GGUF. Para el checkpoint safetensors se puede usar la misma pila que el modelo base (vLLM, TGI u otros), aunque no se detallan en la información disponible.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia: con 321.323 millones de parámetros, en BF16 se necesitan aproximadamente 642 GB solo para pesos; en FP8, unos 321 GB; el GGUF Q8_0 ronda los 340 GB. Estas cifras no incluyen caché KV ni overhead.
+- GPU recomendadas: para FP8 se requieren múltiples aceleradores de 80 GB (H100, H200, A100 80GB) en configuración multi-GPU; el BF16 exige al menos 8×H100 80GB. No cabe en una RTX 4090 (24 GB) ni en GPUs de consumo.
+- Despliegue: el autor menciona `llama-server` para los GGUF con la LoRA de ablación; para los safetensors FP8/BF16 se puede usar vLLM o TGI si soportan la arquitectura GLM-5.3-Flash, aunque no se detalla compatibilidad explícita.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| mrfakename/GLM-5.3-Flash-abliterated | 321.323.031.390 | no disponible | MIT | Variante abliterada del GLM-5.3-Flash, multimodal, FP8/BF16 |
-| zai-org/GLM-5.3-Flash | no disponible | no disponible | no disponible | Modelo base original, con capa de rechazo intacta |
-| Otras variantes abliteradas de la familia GLM | no disponible | no disponible | no disponible | No se dispone de datos en la información proporcionada |
+| Modelo | Parámetros | Contexto | Licencia | Multimodal | Notas |
+|---|---|---|---|---|---|
+| GLM-5.3-Flash-abliterated | 321,3 B | no disponible | MIT | Sí | Variante sin rechazo del base |
+| zai-org/GLM-5.3-Flash | 321,3 B | no disponible | no disponible | Sí | Modelo original alineado |
+| Otros modelos abliterated de la comunidad | no disponible | no disponible | variable | variable | No se dispone de comparativas publicadas |
 
-No se dispone de información sobre modelos comparables de otros autores en la documentación proporcionada.
+No se dispone de información sobre modelos comparables de la misma categoría con datos de rendimiento verificables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo cumplirá solicitudes dañinas; el autor advierte explícitamente que la responsabilidad de uso recae en el usuario. No es apto para despliegues públicos sin moderación externa.
-- La ablación se midió sobre Q8_0 GGUF y con prompts de chat y think; el comportamiento en otras cuantizaciones o en FP8 puede diferir ligeramente, aunque el autor indica que los tensores FP8 se recuantizaron con redondeo estocástico para preservar la edición.
-- La KL del primer token en prompts inofensivos es de 0,038, lo que indica una desviación pequeña pero no nula respecto al original; puede haber cambios sutiles en la distribución de salida incluso en entradas benignas.
-- Los expertos enrutados, embeddings, torre de visión y capa MTP/nextn son bit a bit idénticos al original, por lo que los sesgos y limitaciones del modelo base en esas partes persisten sin cambios.
-- No se dispone de información sobre idiomas soportados, longitud de contexto ni resultados de benchmarks estándar, lo que limita la evaluación de su calidad general frente al original.
-- La licencia MIT permite uso comercial, pero la ausencia de filtros de rechazo puede incumplir políticas de plataformas o requisitos regulatorios en determinados contextos; conviene revisar la normativa aplicable antes de un despliegue en producción.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas en la información disponible; al ser una edición de pesos sobre un modelo ya entrenado, el riesgo de alucinación debería ser similar al del original, pero no está cuantificado.
+- El modelo cumplirá solicitudes dañinas: el autor lo advierte explícitamente y traslada al usuario la responsabilidad del uso.
+- Riesgo elevado de generar contenido ilegal, dañino o éticamente problemático; no es adecuado para despliegues públicos sin filtros externos.
+- El KL de 0,038 en el primer token indica una degradación pequeña pero medible del comportamiento en prompts inofensivos; puede haber deriva en tareas benignas.
+- La ablación se midió sobre el GGUF Q8_0; los pesos FP8 recuantizados con redondeo estocástico pueden presentar pequeñas diferencias respecto al comportamiento medido.
+- No se dispone de información sobre sesgos, idiomas soportados ni rendimiento en benchmarks estándar.
+- La licencia MIT permite uso comercial, pero el uso de un modelo sin salvaguardas en producción puede incumplir normativas de contenido (por ejemplo, la Ley de Servicios Digitales de la UE) y las políticas de las plataformas de despliegue.
+- Longitud de contexto no disponible: no se puede evaluar su idoneidad para tareas de contexto largo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mrfakename/GLM-5.3-Flash-abliterated
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantizaciones GGUF: https://huggingface.co/mrfakename/GLM-5.3-Flash-abliterated-GGUF
+- Discord del autor: https://discord.com/invite/foss

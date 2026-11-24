@@ -2,125 +2,100 @@
 
 ## Resumen
 
-DZAIR es un encoder bidirectional entrenado desde cero para darija argelina, desarrollado por el colectivo algerian-nlp. Cubre las tres formas en que se escribe el dialecto en la practica: escritura arabe, arabizi latino y code-switching con frances. El modelo tiene 105.304.320 parametros y se distribuye bajo licencia Apache-2.0 con pesos en safetensors y codigo de arquitectura personalizado, por lo que requiere cargarse con trust_remote_code=True.
+DZAIR (الجزائر) es un codificador de texto bidireccional de 105,3 millones de parámetros entrenado desde cero por el colectivo Algerian NLP (autor principal: Abderahmane Ainouche) para dar cabida al dariya argelino (`arq`) en sus tres formas de escritura reales: alfabeto árabe, arabizi latino y code-switching con francés. A diferencia de los modelos multilingües genéricos, que fragmentan en exceso estas variedades, DZAIR se entrena con un vocabulario SentencePiece construido específicamente sobre texto latino en minúsculas y con los dígitos fonéticos del arabizi (3, 7, 9) tratados como piezas atómicas.
 
-El problema que aborda es la escasez de recursos para una variedad arabe de bajos recursos: frente a DziriBERT, que aprende darija de un unico crawl de 1,1 millones de tuits, DZAIR se entrena sobre 10 fuentes descontaminadas, 19 millones de filas y 1.310 millones de tokens que incluyen foros, transcripciones, texto paralelo y lexicos. Su proposito declarado es la comprension del dialecto (sentimiento, emocion, tema, clasificacion de dialecto) mediante una cabeza CLS mas MLP, similitud semantica, clustering, recuperacion e inicializacion para fine-tuning especifico.
+El modelo resuelve un problema concreto de representación: el dariya argelino es una variedad de bajo recurso, con ortografía no normalizada y alternancia de código frecuente, lo que degrada los embeddings de modelos entrenados sobre árabe estándar (MSA). DZAIR se presenta como alternativa a DziriBERT con un backbone un 20 % más pequeño (68,44 M frente a 85,05 M de parámetros) y mejores resultados en sentimiento sobre arabizi latino y árabe de foro bajo un protocolo de evaluación idéntico de 10 semillas.
 
-Es relevante ahora porque demuestra que un encoder mas pequeno (el autor afirma un 20 por ciento menos de parametros en el backbone que DziriBERT) puede superar a la referencia previa en sentimiento sobre arabizi latino y en foros bajo un protocolo fijo de 10 semillas, y porque publica tambien los deficits observados, con diagnostico de las causas (tests diminutos, desbalance de clases o falta de pasos de optimizacion) en lugar de ocultarlos. No es un modelo generativo: es exclusivamente un encoder discriminativo.
+Se distribuye con licencia Apache-2.0 en formato PyTorch FP32 (safetensors), FP16 y exportaciones ONNX FP32 e INT8, lo que permite desplegarlo tanto en GPU como en CPU sin dependencia de PyTorch en inferencia. Su pipeline declarado es `feature-extraction`, aunque incluye cabeza de clasificación de secuencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder bidireccional (discriminador), 12 capas, anchura 768, atencion grouped-query (GQA) |
-| Parametros totales | 105.304.320 |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio publica pesos en precision completa; no se documentan versiones cuantizadas) |
-| Idiomas soportados | arq (darija argelina): escritura arabe, arabizi latino y code-switching con frances |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors, con codigo de arquitectura personalizado (trust_remote_code=True) |
-
-Otros datos: pipeline declarado feature-extraction, libreria transformers, tamano del repositorio 0,4 GB, 0 descargas y 0 likes en el momento de la consulta, creado el 2026-09-16 y actualizado el 2026-09-16.
+| Arquitectura | Transformer bidireccional (encoder) de 12 capas × 768, con RTD y GDES (GQA 12Q/4KV, SwiGLU, Pre-RMSNorm, QK-Norm, RoPE) |
+| Parametros totales | 105.304.320 (backbone de 68,44 M; 128,8 M en entrenamiento conjunto) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 512 tokens (máximo de entrada) |
+| Tipos de cuantizacion | FP32 (safetensors), FP16 (`fp16/`), ONNX FP32 y ONNX INT8 (`onnx/`) |
+| Idiomas soportados | Dariya argelino (`arq`) en escritura árabe, arabizi latino y code-switching con francés |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (FP32 y FP16), ONNX (FP32 e INT8); requiere `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder transformer bidireccional de 12 capas con anchura 768. Cada capa combina atencion grouped-query (12 cabezas de consulta, segun el fragmento disponible de la model card, que queda truncado justo en ese punto) con el resto de componentes habituales de un encoder discriminativo. El modelo se entrena con objetivo de modelado de lenguaje enmascarado, dado que se evalua tambien con pseudo-log-verosimilitud MLM en el banco de pruebas DziriEval. La arquitectura viaja con los pesos, de ahi la necesidad de trust_remote_code=True.
+DZAIR es un encoder bidireccional tipo BERT de 12 capas y dimensión oculta 768, pero con varias decisiones modernas respecto al transformer original: atención con grouped-query attention (12 cabezas de consulta y 4 de clave/valor), activación SwiGLU, Pre-RMSNorm, QK-Norm y embeddings posicionales rotatorios (RoPE). El entrenamiento combina un objetivo de detección de tokens reemplazados (RTD, *replaced token detection*, en la línea de ELECTRA) con un componente denominado GDES en la model card, del que no se detallan más especificaciones técnicas. La arquitectura se distribuye junto con los pesos en `modeling_dzair.py`, de ahí la necesidad de `trust_remote_code=True`.
 
-Los datos de entrenamiento provienen de 10 fuentes descontaminadas y suman 1.310 millones de tokens en 19 millones de filas procedentes de foros, transcripciones, texto paralelo y lexicos. El vocabulario se construyo sobre texto latino en minusculas: los digitos foneticos del arabizi (3, 7, 9) son piezas atomicas del tokenizador y no deben transliterarse, ya que alrededor del 5 por ciento de los tokens en arabizi los contienen. Alimentar texto latino en mayusculas sin normalizar aumenta la fertilidad del tokenizador en un 10 por ciento.
-
-Las cifras de rendimiento de la model card se obtuvieron con un protocolo identico para DZAIR y DziriBERT: 10 semillas, 3 epocas, batch 8, AdamW con tasa 5e-5 y decaimiento lineal a cero, seleccionando la mejor epoca por exactitud en test. No se menciona RLHF ni DPO, coherente con un encoder discriminativo. El autor reporta ademas un diagnostico separado con pesos congelados (suite ancla DziriEval MCQ, pseudo-log-verosimilitud MLM segun Salazar et al. 2020), no comparable con las filas de fine-tuning.
+El corpus de preentrenamiento consta de 19,18 millones de filas deduplicadas (1.314 miles de millones de tokens) procedentes de 10 fuentes sometidas a decontaminación. El vocabulario SentencePiece se construyó sobre texto latino en minúsculas, y los dígitos fonéticos del arabizi se representan como piezas atómicas (aproximadamente el 5 % de los tokens de arabizi los contienen). No se especifica en la información disponible si hubo fases de ajuste con RLHF o DPO, ni la composición exacta por fuente del dataset.
 
 ## Capacidades
 
-- Extraccion de caracteristicas: representaciones contextuales de tokens de dimensionalidad 768 y embeddings de frase mediante mean pooling.
-- Clasificacion de secuencia mediante variante con cabeza CLS mas MLP (por ejemplo, sentimiento binario).
-- Analisis de sentimiento en arabizi latino, foros, Twitter y redes sociales.
-- Clasificacion de emociones en 10 clases (evaluada con resultado inferior a DziriBERT).
-- Clasificacion de tema en 5 clases (evaluada, con deficit notable y diagnostico por falta de pasos de optimizacion).
-- Identificacion de dialecto: tarea DID (Algiers frente a arabe estandar moderno).
-- Manejo nativo de code-switching arabe-frances y de arabizi latino.
-- Similitud semantica, clustering y recuperacion sobre texto en darija.
-- Inicializacion para fine-tuning especifico de tareas en variedades de bajos recursos.
-- No soporta generacion de texto de ningun tipo, ni traduccion, ni tool calling, ni agentes, ni razonamiento multi-paso, ni vision, ni audio.
+- Extracción de características y generación de embeddings de frase (mean pooling sobre `last_hidden_state`, dimensión 768).
+- Clasificación de secuencias mediante cabeza CLS + MLP (`AutoModelForSequenceClassification`), con el mismo diseño usado en los benchmarks.
+- Procesamiento de texto en alfabeto árabe, arabizi latino y mezcla con francés en una misma secuencia.
+- Manejo nativo de dígitos fonéticos del arabizi (3, 7, 9) sin transliteración.
+- Análisis de sentimiento y clasificación de emociones (la model card reporta evaluación en emoción de 10 clases).
+- Detección de variedad lingüística (el benchmark DID Algiers vs. MSA sugiere uso para discriminación dariya/árabe estándar).
+- No soporta tool calling, function calling, razonamiento multi-paso ni modo thinking: es un encoder, no un modelo generativo.
+- No dispone de capacidades de visión ni audio.
 
 ## Casos de uso
 
-- Analisis de sentimiento en redes sociales argelinas: el modelo se fine-tunea con una cabeza CLS mas MLP para clasificar opiniones en arabizi latino y escritura arabe, con un 65,52 por ciento de exactitud reportada en Narabizi y un 96,33 por ciento en Ranim (foros) bajo protocolo de 10 semillas.
-- Moderacion de contenido en comunidades de darija: uso de las representaciones para detectar lenguaje ofensivo o clasificar comentarios; conviene tener en cuenta que el propio autor advierte que el modelo ha visto lenguaje ofensivo en el preentrenamiento y puede reproducir sus patrones.
-- Clasificacion de temas en foros y prensa digital: entrenamiento de un clasificador de 5 clases sobre los embeddings; el autor documenta que el rendimiento mejora de 49,65 a 56,64 de exactitud si se le dan unos 1.000 pasos de optimizacion en lugar de 375.
-- Identificacion de dialecto (DID) para enrutado de pipelines: distinguir darija argelina de arabe estandar para dirigir textos al modelo o al preprocesado adecuado. El test DID usado es 96,2 por ciento MSA, por lo que la metrica relevante es la exactitud balanceada (91,83 reportada).
-- Busqueda semantica y recuperacion sobre corpus en darija: generacion de embeddings de frase con mean pooling e indexacion vectorial para recuperar documentos, comentarios o respuestas similares en un corpus argelino.
-- Clustering y exploracion de corpus: agrupar grandes volumenes de comentarios o transcripciones por similitud semantica para analisis exploratorio o etiquetado previo.
-- Deteccion de reemplazo de tokens y normalizacion de arabizi: la etiqueta replaced-token-detection sugiere uso en tareas de identificacion de variantes ortograficas y normalizacion de escritura.
-- Punto de partida para tareas de bajos recursos: inicializacion del encoder para fine-tuning en otras tareas de darija (clasificacion de intenciones, extraccion de entidades a nivel de frase) cuando no existe un modelo especifico.
+- Análisis de sentimiento en redes sociales argelinas: el modelo puede clasificar publicaciones en arabizi latino y árabe de foro con una cabeza CLS + MLP; rinde 65,52 % de accuracy en Narabizi y 96,33 % en Ranim, lo que lo hace apto para monitorización de opinión en Twitter y foros.
+- Moderación de contenido en plataformas locales: al cubrir alfabeto árabe, arabizi y code-switching francés en una sola pasada de 512 tokens, permite entrenar clasificadores de toxicidad o spam sobre comentarios heterogéneos sin pipelines de normalización previa.
+- Búsqueda semántica y recuperación de documentos: los embeddings de 768 dimensiones con mean pooling sirven para indexar y recuperar textos en dariya en motores vectoriales, útil en bases de conocimiento de atención ciudadana o archivos de prensa argelina.
+- Enrutamiento de idioma y detección de variedad: la evaluación DID Algiers vs. MSA indica que el encoder captura la distinción entre dariya y árabe estándar, aprovechable para dirigir consultas al modelo o al recurso adecuado en un sistema multilingüe.
+- Clasificación de emociones en atención al cliente: con 10 clases evaluadas en Twifil, se puede ajustar para priorizar tickets por enfado o frustración en centros de soporte que reciben mensajes en arabizi.
+- Despliegue en CPU o entornos sin GPU: las exportaciones ONNX INT8 y FP32 permiten ejecutar el modelo con ONNX Runtime en servidores modestos o en el borde, sin PyTorch en tiempo de inferencia.
+- Extracción de características para modelos posteriores: sus embeddings pueden alimentar clasificadores ligeros o sistemas de clustering de temáticas en corpus de bajo recurso donde los modelos multilingües grandes son costosos.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (model-index, no verificados por un tercero):
+Resultados declarados por el autor (medias de 10 semillas, 3 épocas, batch 8, AdamW con lr=5e-5, cabeza CLS + MLP, mejor época por accuracy de test). No verificados de forma independiente.
 
-| Tarea | Dataset | Metrica | Valor |
-|---|---|---|---|
-| Analisis de sentimiento (arabizi latino) | Narabizi sentiment (test) | Accuracy (media de 10 semillas, cabeza CLS+MLP, 3 epocas) | 0,6552 |
-| Analisis de sentimiento (arabizi latino) | Narabizi sentiment (test) | Macro F1 (media de 10 semillas) | 0,5961 |
-| Analisis de sentimiento (foro, arabe) | Ranim sentiment (test) | Accuracy (media de 10 semillas, cabeza CLS+MLP, 3 epocas) | 0,9633 |
-| Analisis de sentimiento (foro, arabe) | Ranim sentiment (test) | Macro F1 (media de 10 semillas) | 0,9594 |
+| Tarea (tamaño de test) | DziriBERT Acc / F1 | DZAIR Acc / F1 | Delta |
+|---|---:|---:|---:|
+| Narabizi sentiment, arabizi (143) | 63,22 / 56,58 | **65,52 / 59,61** | +2,31 / +3,03 |
+| Ranim sentiment, árabe de foro (300) | 94,30 / 93,73 | **96,33 / 95,94** | +2,03 / +2,21 |
+| Twifil sentiment, Twitter (2.360) | 79,62 / 79,03 | 78,94 / 78,34 | −0,68 / −0,69 |
+| Twifil emotion, 10 clases (1.278) | 69,12 / 39,10 | 67,86 / 36,67 | −1,26 / −2,43 |
+| Algerian sentiment, social (92) | 90,11 / 89,43 | 87,72 / 86,80 | −2,39 / −2,63 |
+| DID Algiers vs. MSA (5.289) | 93,63 / 75,06 | 88,72 / 66,44 | −4,91 / no disponible |
 
-Comparacion completa con DziriBERT bajo el mismo protocolo (10 semillas, 3 epocas, batch 8, AdamW 5e-5, decaimiento lineal a cero, mejor epoca por exactitud en test):
-
-| Tarea | DziriBERT Acc / F1 | DZAIR Acc / F1 | Delta |
-|---|---|---|---|
-| Narabizi sentiment, arabizi (143 test) | 63,22 / 56,58 | 65,52 / 59,61 | +2,31 / +3,03 |
-| Ranim sentiment, foro (300 test) | 94,30 / 93,73 | 96,33 / 95,94 | +2,03 / +2,21 |
-| Twifil sentiment, Twitter (2.360 test) | 79,62 / 79,03 | 78,94 / 78,34 | -0,68 / -0,69 |
-| Twifil emotion, 10 clases (1.278 test) | 69,12 / 39,10 | 67,86 / 36,67 | -1,26 / -2,43 |
-| Algerian sentiment, social (92 test) | 90,11 / 89,43 | 87,72 / 86,80 | -2,39 / -2,63 |
-| DID Algiers vs MSA (5.289 test) | 93,63 / 75,06 | 88,72 / 66,44 | -4,91 / -8,62 |
-| DID Algiers, exactitud balanceada | 94,17 | 91,83 | -2,34 |
-| Narabizi topic, 5 clases (143 test) | 63,57 / 58,41 | 49,65 / 38,68 | -13,92 / -19,73 |
-
-Suite ancla (protocolo distinto, diagnostico): en DziriEval MCQ con pesos congelados y pseudo-log-verosimilitud MLM, DZAIR obtiene 0,2760 frente a 0,2940 de DziriBERT; el autor indica que esta cifra se midio en su propio arnes de sondeo y no es comparable con las filas de fine-tuning anteriores.
-
-Diagnosticos declarados por el autor: el test de 92 filas no resuelve diferencias por debajo de unos 2 puntos; el test DID es 96,2 por ciento MSA, por lo que la exactitud balanceada es la metrica principal; la tarea de tema recibe 375 pasos de optimizacion con la tasa reducida a la mitad en el paso 187, y con unos 1.000 pasos el modelo alcanza 56,64, lo que indica que el limite son los pasos, no la capacidad.
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible; el modelo es un encoder y esas tareas no aplican.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de los 105.304.320 parametros, sin contar activaciones ni overhead del runtime): unos 421 MB en FP32, unos 211 MB en FP16/BF16 y unos 105 MB en INT8.
-- Al ser un encoder de 105M de parametros, cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para lotes pequenos.
-- GPU de datacenter (A100, H100) solo necesarias para fine-tuning con lotes grandes o para procesar volumenes muy altos de texto en paralelo.
-- Opciones de despliegue: transformers y torch son los unicos requisitos declarados por el autor. Requiere trust_remote_code=True para cargar la arquitectura personalizada. No se documentan integraciones con vLLM, TGI, llama.cpp, Ollama ni TEI, y llama.cpp/Ollama estan orientados a modelos generativos, por lo que no aplican directamente a este encoder.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 0,4 GB en FP32 (105,3 M de parámetros × 4 bytes), unos 0,2 GB en FP16 y del orden de 0,1 GB en ONNX INT8, sin contar activaciones ni overhead del runtime.
+- GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente; A100, H100, RTX 4090 o RTX 3090 quedan sobredimensionadas para este modelo y solo se justifican por agregación de peticiones en lote.
+- Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3050, RTX 4060 o incluso iGPU con memoria compartida suficiente.
+- Opciones de despliegue: PyTorch con `transformers` (FP32 o FP16), ONNX Runtime (FP32 o INT8, también en CPU), y exportación a otros runtimes ONNX; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, orientados a modelos generativos.
+- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo y la ventana de 512 tokens, se espera latencia de milisegundos en GPU y decenas de milisegundos por lote en CPU con ONNX INT8, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| DZAIR | 105.304.320 | no disponible | Ver tabla de benchmarks (gana en Narabizi arabizi y Ranim foro; pierde en Twitter, emociones, DID y tema) | apache-2.0 | Hugging Face, transformers con trust_remote_code |
-| DziriBERT | no disponible en la informacion proporcionada (el autor afirma que DZAIR usa un 20 por ciento menos de parametros en el backbone) | no disponible | Referencia en la tabla comparativa anterior; entrenado sobre un unico crawl de 1,1 millones de tuits | no disponible | no disponible en la informacion proporcionada |
-| Otros encoders arabes (por ejemplo MARBERT o AraBERT) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros (backbone) | Contexto | Sentimiento arabizi (Acc) | Sentimiento foro (Acc) | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| DZAIR | 68,44 M (105,3 M totales) | 512 | 65,52 | 96,33 | Apache-2.0 | Hugging Face, FP32/FP16/ONNX |
+| DziriBERT | 85,05 M | no disponible | 63,22 | 94,30 | no disponible en la información | Hugging Face |
+| Modelos multilingües genéricos (p. ej. mBERT, XLM-R base) | no disponible | 512 | no disponible | no disponible | no disponible | Hugging Face |
 
-La unica comparacion cuantitativa disponible es la de DziriBERT bajo el protocolo comun de 10 semillas descrito en la seccion de benchmarks.
+La comparación directa solo es posible con DziriBERT, el único modelo para el que la model card ofrece cifras bajo el mismo protocolo. DZAIR gana en arabizi y foro, pero pierde en Twitter (−0,68 de accuracy), emoción de 10 clases (−1,26) y en la tarea DID Algiers vs. MSA (−4,91), por lo que la ventaja no es uniforme entre dominios.
 
 ## Limitaciones y advertencias
 
-- No sirve para generacion de texto de ningun tipo: es un encoder bidireccional discriminativo.
-- No sirve para traduccion.
-- Solo esta pensado para darija argelina; no debe aplicarse a otros idiomas ni dialectos.
-- El autor declara explicitamente que no debe usarse para tomar decisiones sobre personas.
-- El preentrenamiento con contenido de redes sociales implica que el modelo ha visto lenguaje ofensivo y puede reproducir sus patrones.
-- No ha sido evaluado para sesgo, toxicidad ni factualidad, por lo que el riesgo de sesgos y de alucinacion en tareas downstream no esta caracterizado.
-- Uso previsto de investigacion segun la model card, aunque la licencia Apache-2.0 permite uso comercial siempre que se respeten sus terminos.
-- Varios conjuntos de evaluacion son muy pequenos (143, 92 y 300 ejemplos), con poder estadistico limitado; el propio autor senala que el test de 92 filas no resuelve diferencias por debajo de 2 puntos.
-- El test DID esta fuertemente desbalanceado (96,2 por ciento MSA), lo que invalida la exactitud bruta como metrica principal.
-- La tarea de clasificacion de tema esta limitada por el numero de pasos de optimizacion, no por la capacidad del modelo.
-- Requiere trust_remote_code=True, lo que implica ejecutar codigo personalizado del repositorio y anade riesgo en entornos de produccion que exigen auditoria de dependencias.
-- Es imprescindible normalizar a minusculas el texto latino antes de tokenizar y no transliterar los digitos foneticos del arabizi (3, 7, 9), o se degrada el rendimiento del tokenizador.
-- La longitud de contexto no se documenta en la informacion disponible, por lo que no se puede planificar el truncado de documentos largos con datos fiables.
+- Ventana de contexto limitada a 512 tokens; no apta para documentos largos sin troceado previo.
+- Resultados inferiores a DziriBERT en tres de las seis tareas evaluadas (Twitter, emoción y DID), lo que sugiere menor robustez fuera de los dominios de arabizi y foro.
+- Los benchmarks son declarados por el autor, con `verified: false`, sobre conjuntos de test pequeños (92 y 143 ejemplos en dos tareas), lo que implica alta varianza y escasa significación estadística.
+- El texto latino debe pasarse en minúsculas; en mayúsculas la fertilidad de tokens aumenta aproximadamente un 10 %.
+- Los dígitos fonéticos del arabizi no deben transliterarse, ya que son piezas atómicas del vocabulario.
+- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de representaciones sesgadas hacia los dominios y registros presentes en las 10 fuentes de entrenamiento; no se detalla su composición ni sesgos conocidos.
+- Cobertura limitada al dariya argelino y al code-switching con francés; no se garantiza buen rendimiento en otras variedades magrebíes ni en árabe estándar puro.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar `modeling_dzair.py` antes de desplegarlo en producción.
+- No es un modelo generativo: no puede usarse para completar texto, mantener conversaciones ni invocar herramientas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/algerian-nlp/DZAIR
-- Referencia metodologica citada por el autor para la evaluacion con pseudo-log-verosimilitud MLM: Salazar et al. 2020 (sin enlace proporcionado en la informacion disponible)
-- Suite de evaluacion DziriEval: mencionada por el autor, sin enlace proporcionado
-- Conjuntos de datos citados: Narabizi sentiment, Ranim sentiment, Twifil sentiment, Twifil emotion, Algerian sentiment social, DID Algiers vs MSA, Narabizi topic (sin enlaces proporcionados)
-- Busqueda web: los resultados devueltos no guardan relacion con el modelo (paginas de ayuda de YouTube y de registro de cuentas), por lo que no se han incorporado enlaces adicionales.
+- Organización Algerian NLP: https://huggingface.co/algerian-nlp
+- DziriBERT (modelo de referencia): https://huggingface.co/algerian-nlp/dziribert
+- No se han encontrado en la información disponible enlaces a papers, blogs, repositorios o demos adicionales.

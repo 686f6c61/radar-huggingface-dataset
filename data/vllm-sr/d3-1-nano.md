@@ -2,88 +2,100 @@
 
 ## Resumen
 
-d3.1-nano es un modelo de decisión multimodal de 2,21 mil millones de parámetros desarrollado por el equipo de vLLM Semantic Router, presentado como parte de la familia "Decision 3.0". A diferencia de un modelo generativo convencional, no produce texto: recibe un estado (texto o JSON, opcionalmente acompañado de imágenes y vídeos) junto con un conjunto de preguntas tipificadas (elección entre opciones, sí/no o puntuación en una escala) y devuelve, en una sola llamada, una probabilidad para cada respuesta posible.
+d3.1-nano es un modelo de decisión multimodal de 2,21 mil millones de parámetros desarrollado por el equipo de vLLM Semantic Router (organización `vllm-sr`), como parte de la familia Decision 3.0. No es un modelo generativo al uso: recibe un estado de entrada (texto o JSON, opcionalmente acompañado de imágenes y vídeos) junto con un conjunto de preguntas tipificadas (elección entre opciones, sí/no o puntuación en una escala) y devuelve directamente una probabilidad para cada respuesta posible, sin generar texto. Está construido sobre el modelo base Qwen/Qwen3.5-2B mediante ajuste fino.
 
-El modelo se construye sobre Qwen/Qwen3.5-2B mediante ajuste fino y añade un codificador visual de 0,33B parámetros, lo que lo sitúa como un clasificador zero-shot multimodal con soporte de visión y vídeo. Su propósito es actuar como "system one" dentro de un enrutador semántico: tomar decisiones rápidas y estructuradas (enrutamiento de peticiones, verificaciones binarias, priorización) sin coste de generación autoregresiva de texto.
+El modelo está pensado para enrutamiento semántico y clasificación de peticiones dentro de infraestructuras de enrutadores de modelos, es decir, para decidir qué componente, equipo o política debe atender una solicitud. Su interés técnico radica en combinar tres modalidades de pregunta en una sola llamada, con visión y vídeo integrados (codificador visual de 0,33B parámetros), y en ofrecer una API estable (`system_one`) que permite sustituir el modelo anterior d3-nano cambiando únicamente el nombre del modelo.
 
-Es relevante porque cubre un nicho poco habitual: modelos pequeños, con licencia Apache-2.0 y diseño específico para clasificación y enrutamiento multi-etiqueta en pipelines de producción, donde la latencia y la previsibilidad importan más que la generación libre. El repositorio ocupa 4,4 GB y se distribuye en formato safetensors con código personalizado (`trust_remote_code`).
+La relevancia actual viene de su enfoque "system one": respuestas rápidas y deterministas con probabilidades calibradas en lugar de generación autoregresiva, lo que lo hace adecuado para capas de decisión de baja latencia en pipelines de agentes y sistemas de enrutamiento. La licencia es Apache-2.0 y el repositorio ocupa 4,4 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con capas de atención lineal (base Qwen3.5-2B más codificador visual) |
-| Parametros totales | 2.213.241.664 (2,21B), incluidos 0,33B del codificador visual |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer multimodal con capas de atención lineal (linear-attention), basado en Qwen3.5-2B; incluye codificador visual |
+| Parametros totales | 2.213.241.664 (2,21B), de los cuales 0,33B corresponden al codificador visual |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se detallan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 (avisos de terceros en NOTICE) |
+| Formato de pesos | safetensors (librería transformers, requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-2B y se ajusta para una tarea de decisión estructurada. Incorpora un codificador visual de 0,33B parámetros que procesa imágenes a hasta 1,6 megapíxeles y vídeos a 2 fotogramas por segundo (máximo 32 fotogramas repartidos por todo el vídeo, cada uno a hasta 0,2 megapíxeles). Las imágenes se colocan antes del texto de la petición y los vídeos después de las imágenes; todas las preguntas de una misma llamada ven el conjunto completo de entradas multimodales.
+El modelo parte de Qwen/Qwen3.5-2B, un transformer al que se ha aplicado ajuste fino para convertirlo en un modelo de decisión. La model card menciona explícitamente capas de atención lineal (linear-attention) para las que se ofrecen kernels GPU rápidos mediante el paquete opcional `flash-linear-attention`, lo que sugiere una arquitectura híbrida con atención lineal además de atención estándar. Incorpora un codificador visual de 0,33B parámetros que procesa imágenes (hasta 1,6 megapíxeles por imagen) y vídeo (2 fotogramas por segundo, con un máximo de 32 fotogramas por vídeo, cada uno de hasta 0,2 megapíxeles).
 
-La arquitectura incluye capas de atención lineal, para las que el autor recomienda instalar `flash-linear-attention` como kernels rápidos en GPU (opcional). El modelo requiere `transformers==5.17.0` y carga con `trust_remote_code=True`, lo que indica código de modelado personalizado. No se han publicado en la información disponible detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. El autor menciona un "Decision Index" evaluable mediante el motor `d3_engine:D3Engine`, que por defecto puntúa cada pregunta de elección en dos órdenes de opciones (promediado por permutación).
+No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La innovación destacable es el paradigma de decisión: en lugar de generar texto, el modelo realiza una pasada forward por cada pregunta sobre el mismo estado de entrada y emite una probabilidad por opción, soportando tres tipos de pregunta (choice, noul —sí/no— y score) en una única llamada. La evaluación se realiza con el "Jev Decision Index 0.3" sobre un conjunto público de 140.178 peticiones.
 
 ## Capacidades
 
-- Clasificación zero-shot con tres tipos de decisión: elección entre varias opciones (`choice`), sí/no (`noul`) y puntuación en escala ordinal (`score`).
-- Respuesta multi-pregunta en una sola llamada: devuelve probabilidades para todas las preguntas y opciones simultáneamente, sin generar texto.
-- Procesamiento de texto y JSON como estado de entrada.
-- Procesamiento multimodal: imágenes (varias por petición) y vídeos (varios por petición).
-- Diseño orientado a enrutamiento y toma de decisiones ("system one") dentro de un enrutador semántico.
-- Integración como pipeline de transformers (`pipeline("decision", ...)`).
-- Soporte de criterios con descripciones para cada opción, lo que permite guiar la clasificación sin reentrenamiento.
-- No dispone de tool calling ni de razonamiento multi-paso generativo: su salida es probabilística, no textual.
+- Clasificación zero-shot con opciones definidas por el usuario (tipo `choice`), devolviendo probabilidad por cada opción.
+- Preguntas booleanas sí/no (tipo `noul`) con probabilidad asociada.
+- Puntuación en escala ordinal (tipo `score`) sobre criterios definidos por el usuario.
+- Procesamiento de múltiples preguntas en una sola llamada, cada una con su propia pasada forward sobre el mismo input.
+- Entrada multimodal: texto o JSON, más múltiples imágenes por petición (PNG, JPEG, WebP; rutas, URLs, PIL o base64).
+- Entrada de vídeo: múltiples vídeos por petición (MP4, WebM, MOV, MKV; rutas, URLs, base64 o arrays de fotogramas), leídos a 2 fps.
+- Salida estructurada con probabilidades calibradas por respuesta, sin generación de texto.
+- Integración con vLLM Semantic Router en modo Engine mediante la API System One.
+- Compatibilidad de API con d3-nano (misma función `system_one`, mismo pipeline y opciones de runtime).
+- Soporte de `transformers.pipeline("decision", ...)`.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: dado el texto de una incidencia, decidir a qué equipo asignarla (devoluciones, facturación, técnico) con una única llamada y probabilidades por opción, lo que permite umbrales de confianza y derivación a revisión humana.
-- Verificación documental con visión: comprobar si un justificante o recibo adjunto contiene un producto concreto o si el cliente dispone de prueba de compra, combinando la imagen con el estado textual.
-- Priorización de urgencias: usar preguntas de tipo `score` para clasificar peticiones en niveles (rutina, pronto, hoy) y alimentar colas de atención con orden de prioridad.
-- Moderación y filtrado binario: preguntas `noul` para decidir si un contenido cumple una política concreta antes de pasarlo a un modelo generativo mayor.
-- Análisis de vídeo de vigilancia o pruebas: determinar la dirección de movimiento de un objeto o si cambia de color en un clip corto, útil en pipelines de inspección automatizada.
-- Clasificación de formularios y JSON estructurados: validar campos, detectar inconsistencias o etiquetar registros en lote sin coste de generación.
-- Puerta de enrutamiento en arquitecturas de modelos múltiples: decidir qué modelo grande debe atender una petición según su tipo, reduciendo el coste de inferencia global.
+- Enrutamiento de peticiones en sistemas multi-modelo: dado un prompt de usuario, decidir con una llamada qué modelo, agente o política debe atenderlo, usando preguntas de tipo `choice` sobre categorías de tarea y `score` sobre complejidad.
+- Triaje de tickets de soporte: clasificar la solicitud en equipos (devoluciones, facturación, técnico) y estimar urgencia en una sola pasada, como muestra el ejemplo de la model card.
+- Verificación documental con visión: comprobar si un recibo adjunto contiene un producto concreto o si una imagen respalda una reclamación, combinando preguntas booleanas y de elección sobre la misma imagen.
+- Moderación y control de calidad: evaluar contenido de texto o vídeo con preguntas sí/no y escalas de severidad, aprovechando la lectura de vídeo a 2 fps para clips cortos.
+- Clasificación de intención en asistentes conversacionales: determinar la intención del turno actual y decidir si requiere escalado humano, sin coste de generación.
+- Enrutamiento en pipelines RAG: decidir si una consulta requiere recuperación externa, qué índice consultar y con qué prioridad, mediante preguntas booleanas y de elección encadenadas.
+- Análisis de vídeo de cámaras de prueba o vigilancia ligera: responder preguntas de dirección de movimiento o cambios de color sobre clips cortos, útil en prototipos de inspección visual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor referencia un "Decision Index" ejecutable con el motor `d3_engine:D3Engine`, pero no se incluyen cifras en la información proporcionada.
+| Benchmark | d3.1-nano | d3-nano |
+|---|---|---|
+| Jev Decision Index 0.3 (suite pública) | 62,96 | 42,2 |
+| Diferencia global | +20,8 | — |
+| Área de retrieval | no disponible (mejora de +14,0 frente a d3-nano) | — |
+| Área de arts | no disponible (mejora de +32,0 frente a d3-nano) | — |
+
+La puntuación se midió con el kit oficial sobre los pesos publicados, cubriendo las 140.178 peticiones públicas sin peticiones no soportadas. La puntuación oficial del board está pendiente en el momento de la publicación. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; con 2,21B parámetros en fp16 se requieren aproximadamente 4,4 GB solo para pesos, más memoria para el codificador visual y las activaciones.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabe en GPUs de consumo con suficiente VRAM; el ejemplo de la model card usa `device=cuda:0` sin más restricciones.
-- Cabe en GPU de consumo: previsiblemente sí en modelos con 8 GB o más en fp16, aunque el dato no está confirmado por el autor.
-- Opciones de despliegue: transformers (versión 5.17.0) con `trust_remote_code=True`; pipeline `decision`; motor `d3_engine:D3Engine` para el Decision Index. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 2,21B parámetros en safetensors (4,4 GB de repo), la inferencia en fp16 requiere del orden de 4,5-5 GB solo para pesos, más overhead de activaciones y del codificador visual.
+- GPU recomendadas: no especificadas en la información disponible; por tamaño, cabría en GPUs de consumo con 8 GB o más en fp16, y en 4-6 GB con cuantización de 8 bits si se generan pesos cuantizados (no publicados).
+- Cabe en GPU de consumo: previsiblemente sí (RTX 3060 12 GB, RTX 4070, RTX 4090), aunque el fabricante no lo confirma.
+- Opciones de despliegue: `transformers` (>= 5.17.0 según quickstart), `transformers.pipeline("decision")`, y vLLM Semantic Router en modo Engine. No se mencionan llama.cpp, Ollama ni TGI.
+- Aceleración opcional: `flash-linear-attention` para kernels GPU de las capas de atención lineal.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Tarea | Licencia |
+| Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3.1-nano | 2,21B | No disponible | Texto, imagen, vídeo | Clasificación y decisión estructurada | Apache-2.0 |
-| Qwen/Qwen3.5-2B (base) | ~2B | No disponible | Texto | Generación | No disponible en esta ficha |
-| Clasificadores zero-shot tipo NLI | Variable (0,1B-1B) | No disponible | Texto | Clasificación zero-shot | Variable |
+| d3.1-nano | 2,21B (0,33B visión) | no disponible | Decisión multimodal (texto, imagen, vídeo) | Apache-2.0 | Hugging Face |
+| d3-nano | no disponible | no disponible | Decisión (predecesor) | no disponible | Hugging Face |
+| Qwen/Qwen3.5-2B | ~2B | no disponible | Generativo multimodal (base) | no disponible | Hugging Face |
 
-La comparación directa con alternativas es limitada porque d3.1-nano no es un modelo generativo: compite con clasificadores zero-shot y con el uso de LLMs generativos para tareas de enrutamiento. Frente a un LLM generativo del mismo tamaño, ofrece salidas probabilísticas estructuradas y evita la generación de texto; frente a clasificadores NLI clásicos, añade multimodalidad (imagen y vídeo) y preguntas múltiples por llamada.
+No se dispone de datos de benchmarks comparables con modelos de decisión alternativos en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y tipo de tarea.
 
 ## Limitaciones y advertencias
 
-- No genera texto: no sirve para tareas de generación, resumen, diálogo abierto ni razonamiento multi-paso.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor del modelo; conviene auditar el repositorio antes de usarlo en producción.
-- Dependencia de una versión concreta de transformers (5.17.0), lo que puede complicar la integración en entornos con versiones fijadas.
-- Idiomas soportados no declarados: no hay garantía explícita de rendimiento multilingüe más allá del comportamiento heredado de Qwen3.5-2B.
-- Longitud de contexto no publicada: no se puede planificar el uso con entradas largas sin validación empírica.
-- Riesgo de calibración: al devolver probabilidades, la calidad depende de umbrales bien ajustados; no se han publicado métricas de calibración.
-- Límites multimodales concretos: imágenes a 1,6 MP como máximo y vídeos a 2 fps con 32 fotogramas como máximo, lo que puede perder detalle en clips largos o de alta dinámica.
-- Sin descargas ni likes en el momento de la consulta y con fecha de creación reciente, por lo que la validación comunitaria es inexistente.
-- Licencia Apache-2.0 permite uso comercial, pero deben revisarse los avisos de terceros en el fichero NOTICE del repositorio.
+- No es un modelo generativo: no produce texto libre ni respuestas abiertas; solo probabilidades sobre opciones predefinidas.
+- El número de opciones por pregunta y la formulación de los criterios condicionan la calidad de la decisión; no se documentan límites máximos.
+- Riesgo de calibración deficiente de probabilidades fuera de la distribución de entrenamiento; no se publican métricas de calibración.
+- Sesgos conocidos: no documentados en la información disponible.
+- Idiomas soportados: no especificados; no se garantiza un rendimiento multilingüe más allá del comportamiento del modelo base.
+- Longitud de contexto: no especificada, lo que dificulta planificar entradas largas.
+- Límites multimodales: imágenes a 1,6 MP como máximo; vídeo a 2 fps con un tope de 32 fotogramas por vídeo, lo que limita clips largos o de alta dinámica.
+- Requiere `trust_remote_code=True`, con la implicación de seguridad que ello conlleva al ejecutar código del repositorio.
+- La puntuación del board oficial del Jev Decision Index está pendiente; las cifras publicadas proceden del kit propio del autor.
+- Licencia Apache-2.0 permite uso comercial, pero deben respetarse los avisos de terceros recogidos en NOTICE.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3.1-nano
-- Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router
+- Resultados del Jev Decision Index: https://huggingface.co/datasets/vllm-sr/d3.1-nano-decision-index
+- vLLM Semantic Router (repositorio): https://github.com/vllm-project/semantic-router
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

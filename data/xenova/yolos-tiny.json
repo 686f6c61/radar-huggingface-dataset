@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "Xenova/yolos-tiny",
+  "slug": "xenova-yolos-tiny",
+  "author": "Xenova",
+  "url": "https://huggingface.co/Xenova/yolos-tiny",
+  "created_at": "2023-08-26T01:10:05.000Z",
+  "updated_at": "2026-11-23T21:12:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "yolos",
+    "object-detection",
+    "base_model:hustvl/yolos-tiny",
+    "base_model:quantized:hustvl/yolos-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 20803,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81047497,
+  "storage_human": "81 MB",
+  "context_length": null,
+  "base_model": "hustvl/yolos-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xenova/yolos-tiny - Hugging Face",
+      "url": "https://huggingface.co/Xenova/yolos-tiny",
+      "snippet": "Instructions to use Xenova/yolos-tiny with libraries, inference providers, notebooks, and local apps. Follow these links to get started. · Libraries ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library=transformers.js&pipeline_tag=object-detection",
+      "snippet": "Models · onnx-community/yolov10m · Xenova/detr-resnet-50 · Xenova/detr-resnet-101 · Xenova/yolos-tiny · Xenova/yolos-small · Xenova/yolos-base · Xenova/yolos-small-dwr."
+    },
+    {
+      "title": "In-browser video object detection w/ YOLOv9 and Transformers.js",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1b1hcl1/inbrowser_video_object_detection_w_yolov9_and/",
+      "snippet": "27.02.2024 ... Demo: https://huggingface.co/spaces/Xenova/video-object-detection ... What local AI model is good for game decomps/recomps? 10. 31. New toy ..."
+    }
+  ]
+}

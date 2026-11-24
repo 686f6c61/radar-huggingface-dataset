@@ -2,84 +2,91 @@
 
 ## Resumen
 
-MiniMax-H3-Pruned-LightX8-hybrid-Fused es un modelo de generación de vídeo a partir de imagen y texto (image-text-to-video) publicado por el usuario ibyteohdear en Hugging Face. Se trata de una fusión de pesos: parte del transformer del modelo `multimodalart/MiniMax-H3-Pruned` y le incorpora un adaptador LoRA de tipo turbo (`lightx2v_hybrid-4to8step-Turbo_r48`) fundido directamente en los pesos a escala 1, con alpha y rank de 48. El resultado es un único checkpoint que permite generar vídeo en 4 u 8 pasos sin necesidad de cargar adaptadores LoRA por separado.
+MiniMax-H3-Pruned-LightX8-hybrid-Fused es un modelo de generación de vídeo a partir de imagen y texto (image-text-to-video) publicado por el usuario ibyteohdear en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos: parte del transformer del modelo `multimodalart/MiniMax-H3-Pruned` y le incorpora el adaptador LoRA `lightx2v_hybrid-4to8step-Turbo_r48_diffusers.safetensors` con escala 1 (alpha 48 sobre rank 48), de modo que el comportamiento "turbo" queda integrado directamente en los pesos y no requiere cargar adaptadores en tiempo de inferencia.
 
-El modelo conserva la arquitectura del transformer 3D de MiniMax-H3, con aproximadamente 20.100 millones de parámetros en formato safetensors y un repositorio de 40,2 GB. La variante "Pruned" del modelo base sugiere que se ha reducido parte de la estructura original para hacerla más manejable, aunque no se dispone de detalles sobre qué componentes se han eliminado. La fusión afecta a 312 capas y no incluye módulos AdaLN en el LoRA.
+El resultado es un único fichero de transformer que permite generar vídeo con 4 u 8 pasos de muestreo, empleando el scheduler euler/simple, con shifts de 6 para vídeo y 3 para audio, y resolución de hasta 768p. La fusión afecta a 312 capas y no incorpora módulos AdaLN del LoRA ni offsets AdaLN en el sesgo plegado. El modelo se distribuye bajo la licencia comunitaria de MiniMax-H3 y está etiquetado como no apto para todas las audiencias.
 
-Su relevancia radica en la simplificación operativa: al integrar el comportamiento turbo en los pesos, se elimina la gestión de adaptadores en producción y se facilita el despliegue con la librería diffusers. Está pensado para pipelines de generación de vídeo de corta duración con resolución de hasta 768p, usando un scheduler euler/simple y desplazamientos de 6 para vídeo y 3 para audio.
+Su relevancia práctica es doble: por un lado reduce drásticamente el coste de inferencia frente a un modelo de difusión de vídeo estándar (4-8 pasos frente a decenas), y por otro simplifica el despliegue al no necesitar conmutación de adaptadores LoRA entre modos de 4 y 8 pasos. El repositorio ocupa 40,2 GB y el transformer declarado contiene 20.111.462.920 parámetros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer 3D de difusión para vídeo (MiniMax-H3, variante Pruned) con LoRA turbo fusionado |
-| Parametros totales | 20.111.462.920 |
+| Arquitectura | Transformer de difusión 3D para vídeo (MiniMax-H3), con rama de audio; clase de código remoto pruned |
+| Parametros totales | 20.111.462.920 (transformer) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de difusión, no de lenguaje) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; no se documentan GGUF ni otras cuantizaciones) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no especificados en la model card; el código de ejemplo aplica Int8WeightOnlyConfig (torchao) y bfloat16 |
 | Idiomas soportados | no disponible |
 | Licencia | minimax-h3-community-license-agreement |
-| Formato de pesos | safetensors (formato diffusers, con código remoto personalizado) |
+| Formato de pesos | safetensors (sharded), librería diffusers, requiere `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusión 3D orientado a la generación de vídeo condicionada por imagen y texto, heredado de MiniMax-H3 en su variante Pruned. La modificación principal respecto al base no es arquitectónica sino de pesos: se ha cargado el adaptador LoRA `lightx2v_hybrid-4to8step-Turbo_r48_diffusers.safetensors` mediante `load_lora_adapter`, se ha fijado el escalado y se ha fusionado con `fuse_lora`, eliminando después las claves de PEFT y guardando el resultado en shards. La fusión abarca 312 capas, con alpha 48 y rank 48, y no incorpora módulos AdaLN ni offsets AdaLN en el bias plegado.
+El modelo es un transformer de difusión para generación conjunta de vídeo y audio, derivado de MiniMax-H3 en su variante "pruned" (poda de parámetros respecto al modelo original). La innovación principal de esta ficha no es arquitectónica sino de empaquetado: el autor ha fusionado un LoRA turbo de rango 48 (alpha 48) en 312 capas del transformer mediante el flujo `load_lora_adapter -> pin scaling -> fuse_lora -> strip peft keys -> sharded save`. El LoRA no contiene módulos AdaLN, por lo que no se han plegado offsets AdaLN en el sesgo.
 
-El resultado es un checkpoint único que internaliza el comportamiento turbo de 4 a 8 pasos. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens o frames utilizados, ni sobre si hubo etapas de RLHF o ajuste por preferencias, ya que la model card solo documenta el proceso de fusión. La innovación técnica destacable es precisamente esa fusión de LoRA en los pesos, que permite alternar entre 4 y 8 pasos de inferencia sin cambiar de adaptador.
+No se dispone de información sobre el dataset de entrenamiento original, el número de tokens, ni sobre procesos de RLHF/DPO. La model card tampoco detalla innovaciones como decodificación especulativa o atención lineal. El pipeline de inferencia se construye con los bloques modulares de diffusers para MiniMax-H3 (`MiniMaxH3PrepareLatentsStep`, `MiniMaxH3DenoiseStep`, `MiniMaxH3DecodeStep`, etc.) y utiliza un codificador de texto externo basado en Qwen3-VL (8B o 32B según configuración) junto con proyecciones CLIP específicas (`mmh3-8b-ClipProj-v3.1`).
 
 ## Capacidades
 
-- Generación de vídeo a partir de imagen y texto (image-text-to-video) con resolución de hasta 768p.
-- Inferencia en 4 u 8 pasos con scheduler euler/simple, gracias al LoRA turbo fusionado.
-- Control de desplazamiento temporal diferenciado para vídeo (shift 6) y audio (shift 3).
-- Carga mediante `AutoModel` de diffusers con `trust_remote_code=True`, usando la clase de código remoto del modelo pruned.
-- No requiere carga separada de LoRA: el comportamiento turbo está en los pesos.
-- Compatible con un único archivo de pesos, sin conmutación de adaptadores entre configuraciones de 4 y 8 pasos.
+- Generación de vídeo a partir de una imagen de referencia y un prompt de texto (image-text-to-video).
+- Generación de audio asociada al vídeo, con shift de audio independiente (3) respecto al shift de vídeo (6).
+- Muestreo rápido con 4 u 8 pasos de difusión gracias al LoRA turbo fusionado, sin necesidad de cambiar de adaptador.
+- Resolución de salida de hasta 768p.
+- Codificación de texto mediante Qwen3-VL (variantes 8B y 32B en el código de ejemplo), lo que aporta comprensión de instrucciones multimodales para el prompt.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso ni agentes; es un modelo generativo de medios, no un LLM conversacional.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Generación de clips publicitarios cortos: el modelo permite crear vídeos de hasta 768p a partir de una imagen de producto y un prompt textual, con 4 u 8 pasos de inferencia para iterar rápidamente sobre variaciones creativas.
-- Prototipado de animaciones para previsualización: estudios y equipos de diseño pueden convertir storyboards o imágenes fijas en vídeo preliminar sin gestionar adaptadores LoRA adicionales, simplificando el pipeline en diffusers.
-- Creación de contenido para redes sociales: la generación en pocos pasos (4 u 8) reduce el coste computacional por clip, lo que facilita producir múltiples variantes de vídeo vertical u horizontal a partir de una misma imagen base.
-- Integración en herramientas de edición asistida: al cargarse con `AutoModel` y `trust_remote_code`, puede incorporarse en aplicaciones que usen diffusers para animar imágenes seleccionadas por el usuario dentro de un editor.
-- Generación de vídeo con audio sincronizado: el control separado de shift de vídeo (6) y audio (3) sugiere soporte de pistas de audio, útil para clips explicativos o demos de producto con narración.
-- Investigación en difusión de vídeo: sirve como punto de partida para estudiar el efecto de la fusión de LoRA turbo en la calidad temporal y la coherencia entre frames, al permitir comparar 4 y 8 pasos con los mismos pesos.
-- Despliegue en entornos con recursos limitados: al eliminar la necesidad de cargar un adaptador adicional, reduce la complejidad de memoria y gestión en servidores de inferencia con diffusers.
+- Prototipado rápido de vídeo generativo: con 4 pasos de muestreo y un único checkpoint fusionado, un equipo puede iterar sobre prompts e imágenes de referencia sin gestionar adaptadores LoRA ni pipelines de varias etapas.
+- Generación de clips publicitarios cortos: a partir de una imagen de producto y un prompt descriptivo, el modelo produce vídeo con audio sincronizado hasta 768p, adecuado para piezas de redes sociales.
+- Previsualización de storyboards: convertir fotogramas clave o ilustraciones en animaciones breves para validar una secuencia antes de producirla con herramientas de mayor coste.
+- Creación de contenido para videojuegos y animación: generar loops o transiciones a partir de arte conceptual, aprovechando la rama de audio para ambiente.
+- Investigación en difusión de vídeo: el checkpoint fusionado sirve como referencia para estudiar el efecto de plegar LoRAs turbo en transformers de difusión de 20B parámetros y comparar calidad entre 4 y 8 pasos.
+- Despliegue en infraestructura limitada: el uso de cuantización Int8WeightOnly y group offloading en el código de ejemplo permite ejecutar el pipeline en GPUs con menos VRAM que las requeridas por el modelo completo en bfloat16.
+- Generación de material audiovisual para doblaje o localización: la separación de shifts de vídeo y audio facilita ajustar la sincronía en piezas con voz.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 20.100 millones de parámetros en bfloat16, los pesos ocupan aproximadamente 40 GB; se necesita al menos esa cantidad más memoria para activaciones y buffers de vídeo, por lo que se recomienda un entorno con 48-80 GB de VRAM.
-- GPU recomendadas: A100 80 GB, H100 80 GB o GPUs profesionales con 48 GB o más para inferencia en bfloat16 sin cuantización.
-- Cabe en consumer GPU: no de forma directa en bfloat16; una RTX 4090 (24 GB) no dispone de VRAM suficiente para los pesos completos. No se documentan cuantizaciones que permitan reducir el requisito.
-- Opciones de despliegue: diffusers con `AutoModel.from_pretrained`, `trust_remote_code=True`, `torch_dtype=torch.bfloat16` y `low_cpu_mem_usage=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de vídeo).
-- Latencia y throughput estimados: no disponibles; la generación en 4 u 8 pasos reduce el número de evaluaciones del transformer frente a configuraciones de más pasos, pero no se aportan cifras de tiempo por clip.
+- El transformer contiene 20.111.462.920 parámetros; en bfloat16 esto supone aproximadamente 40 GB solo para los pesos del transformer, a los que se suman el VAE de vídeo, el VAE de audio, el codificador de texto Qwen3-VL (8B o 32B) y las proyecciones CLIP.
+- El repositorio completo ocupa 40,2 GB, lo que da una idea del peso mínimo en disco.
+- Para bfloat16 se recomienda al menos una A100 80 GB o H100 80 GB; con el codificador de texto de 32B la demanda aumenta y puede requerir varias GPUs o offloading.
+- Con cuantización Int8WeightOnly (torchao) y `apply_group_offloading` el consumo de VRAM baja considerablemente, pero no se especifican cifras exactas en la model card.
+- No se indica compatibilidad con GPUs de consumo (RTX 4090, 3090, etc.); dado el tamaño, es improbable que quepa completo en una GPU de 24 GB sin offloading agresivo y cuantización.
+- Opciones de despliegue: diffusers con `AutoModel.from_pretrained(..., trust_remote_code=True)` y los bloques modulares de MiniMax-H3; el código de ejemplo incluye una app Gradio y soporte para Hugging Face Spaces con `spaces.GPU`.
+- No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| MiniMax-H3-Pruned-LightX8-hybrid-Fused | 20.111.462.920 | hasta 768p, 4 u 8 pasos | minimax-h3-community-license-agreement | Hugging Face (diffusers, codigo remoto) |
-| multimodalart/MiniMax-H3-Pruned (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
-| Otros modelos image-text-to-video de tamano comparable | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto / resolución | Pasos de muestreo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax-H3-Pruned-LightX8-hybrid-Fused (este) | 20,1B (transformer) | hasta 768p | 4 u 8 | minimax-h3-community-license-agreement | Hugging Face, diffusers |
+| multimodalart/MiniMax-H3-Pruned (base) | no disponible | no disponible | no disponible (sin turbo fusionado) | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3 (original, no pruned) | no disponible | no disponible | no disponible | minimax-h3-community-license-agreement | no disponible en la información |
 
-No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas comparables en la información proporcionada.
+No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia `minimax-h3-community-license-agreement` no es una licencia open source estándar; es necesario revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones de atribución o de uso.
-- El modelo requiere `trust_remote_code=True` y una clase de código remoto específica del pruned; cargarlo con `MiniMaxH3Transformer3DModel` no es correcto según la model card, lo que añade riesgo de errores de integración.
-- Al ser una fusión de LoRA a escala 1, la calidad y el comportamiento turbo dependen del adaptador original; no se documentan evaluaciones de calidad frente al modelo sin fusionar.
-- No se dispone de información sobre sesgos, idiomas soportados ni datos de entrenamiento, por lo que no es posible evaluar riesgos de sesgo o de alucinación visual.
-- El requisito de VRAM (aproximadamente 40 GB solo para pesos) limita su uso a hardware profesional; no hay cuantizaciones documentadas para entornos consumer.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día, por lo que no hay evidencia de validación por parte de la comunidad.
-- No se documentan límites de duración de vídeo, resolución mínima ni comportamiento con prompts fuera de distribución.
+- El modelo está etiquetado como `not-for-all-audiences`; puede generar contenido inapropiado y requiere moderación en producción.
+- No se documentan sesgos conocidos, pero al ser un modelo generativo de vídeo y audio existe riesgo de amplificar estereotipos presentes en los datos de entrenamiento originales (no detallados).
+- Riesgo de alucinación visual y de incoherencias temporales inherente a la difusión de vídeo; no se cuantifica en la model card.
+- La licencia `minimax-h3-community-license-agreement` impone condiciones específicas para uso comercial que deben revisarse antes de desplegar; no es una licencia open source estándar.
+- El modelo depende de código remoto (`trust_remote_code=True`) y de la clase pruned específica, no de `MiniMaxH3Transformer3DModel`; cargarlo con la clase equivocada fallará.
+- Requiere componentes externos no incluidos en el repo (codificador Qwen3-VL, proyecciones ClipProj de NicoLab28), lo que añade dependencias y posibles roturas por cambios en repos de terceros.
+- El pipeline de ejemplo usa rutas absolutas (`/mnt/data/huggingface`) y variables de entorno específicas de un entorno concreto; no es portable tal cual.
+- No hay información sobre idiomas soportados ni sobre calidad multilingüe de los prompts.
+- El tamaño del transformer (20B) limita el despliegue a hardware de gama alta o a configuraciones con cuantización y offloading.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ibyteohdear/MiniMax-H3-Pruned-LightX8-hybrid-Fused
 - Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.
+- Repositorio de proyecciones CLIP: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
+- Codificador de texto (8B): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
+- Codificador de texto (32B): https://huggingface.co/prithivMLmods/Qwen3-VL-32B-Instruct-abliterated-v1

@@ -2,84 +2,88 @@
 
 ## Resumen
 
-ThoxUSB-Edge es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-0.8B desarrollado por THOX.ai para su programa de dispositivos THOX. Se trata de un modelo de generación de texto orientado a la ejecución local en dispositivos de borde (edge), con un total de 752.393.024 parámetros reales en safetensors (la model card declara 873M, discrepancia que conviene tener en cuenta). El modelo se publica tanto en formato safetensors como en un GGUF Q4_K_M de 529 MB, pensado para hosts con al menos 1 GB de RAM.
+ThoxUSB-Edge es un ajuste fino (SFT) del modelo Qwen/Qwen3.5-0.8B publicado por THOX.ai dentro de su programa de dispositivos de borde. El modelo se distribuye en dos formatos: pesos completos en safetensors (752.393.024 parámetros según los tensores reales del repositorio) y una cuantización GGUF Q4_K_M de 529 MB, pensada para ejecutarse en hosts con al menos 1 GB de RAM. La model card declara 873M de parámetros, cifra que no coincide con el recuento real de safetensors; conviene tomar el dato del tensor como referencia técnica.
 
-El modelo está ajustado sobre corpus de chat y de uso de agentes/herramientas de THOX, con el objetivo declarado de servir como asistente en dispositivo y enrutador de herramientas dentro del programa THOX. La arquitectura subyacente es la del modelo base Qwen3.5-0.8B (familia Qwen3.5, tag `qwen3_5_text`), aunque la información disponible no detalla los pormenores de su arquitectura interna.
+El objetivo declarado es servir como asistente en dispositivo y enrutador de herramientas para la familia de hardware THOX, con un enfoque local-first y sin dependencia de servicios en la nube. El ajuste se realizó sobre corpus de chat y de uso de agentes y herramientas del propio programa THOX, partiendo de la arquitectura Qwen3.5 del modelo base.
 
-Es relevante ahora por su enfoque local-first y su tamaño reducido, que permite despliegue en hardware muy limitado. No obstante, el propio autor lo marca como EXPERIMENTAL: no hay log de entrenamiento, benchmarks medidos ni validación en dispositivo publicados. La licencia es Apache-2.0 y el idioma declarado es únicamente inglés.
+La relevancia del modelo es doble. Por un lado, ejemplifica la tendencia de modelos sub-1000M optimizados para inferencia local en hardware muy limitado. Por otro, el propio autor lo marca explícitamente como EXPERIMENTAL: no publica registro de entrenamiento, benchmarks medidos ni validación en dispositivo, y la model card incluye una campaña de Kickstarter para el hardware asociado. Cualquier evaluación en producción debe partir de esa advertencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, tag `qwen3_5_text`); detalles internos no disponibles |
-| Parámetros totales | 752.393.024 (safetensors); la model card declara 873M |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Q4_K_M (GGUF); safetensors en precisión original |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors y GGUF (Q4_K_M) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3.5-0.8B; tag `qwen3_5_text`) |
+| Parametros totales | 752.393.024 (safetensors); la model card declara 873M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | safetensors (BF16/FP16 segun repo), GGUF Q4_K_M |
+| Idiomas soportados | en (ingles); calidad inferior en otros idiomas segun el autor |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (1.504.827.608 B) y GGUF Q4_K_M (529.288.992 B); incluye Modelfile de Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del Qwen/Qwen3.5-0.8B, por lo que hereda la arquitectura del modelo base de la familia Qwen3.5, etiquetada en el repositorio como `qwen3_5_text`. La información disponible no detalla la arquitectura interna del modelo base (número de capas, dimensiones, mecanismo de atención ni tipo de positional encoding), por lo que no es posible confirmar si incorpora innovaciones como atención lineal o decodificación especulativa.
+El modelo hereda la arquitectura del base Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5 orientado a texto (tag `qwen3_5_text`). Sobre esa base se aplica un ajuste supervisado (SFT) con corpus de chat y de agentes/uso de herramientas descritos por el autor como propios del programa THOX. No se detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo etapas de RLHF o DPO; la model card afirma que no se reclama ningún entrenamiento más allá de lo descrito.
 
-En cuanto al entrenamiento, la model card indica que se trata de un ajuste fino supervisado (SFT) sobre corpus de chat y de uso de agentes/herramientas de THOX. No se publica el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO. El autor declara explícitamente que no hay log de entrenamiento publicado para esta build. El repositorio incluye pesos completos y tokenizador, con un `model.safetensors` de 1.504.827.608 bytes y un GGUF Q4_K_M de 529.288.992 bytes.
+No se documentan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, híbridos SSM, etc.). El repositorio incluye `chat_template.jinja`, `config.json`, `tokenizer.json`, `tokenizer_config.json`, `generation_config.json` y un `Modelfile` para Ollama. La model card advierte que la ejecución requiere una build de llama.cpp u Ollama con soporte para esta arquitectura.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés.
-- Uso previsto como asistente en dispositivo y enrutador de herramientas (tool routing) dentro del programa THOX.
-- Ajustado sobre corpus de agentes y uso de herramientas, lo que sugiere soporte de tool calling, aunque no se documenta formalmente la interfaz.
-- Capacidades multilingües limitadas: solo se declara inglés; el rendimiento en otros idiomas es inferior según el autor.
-- No se documentan capacidades de visión, audio, modo de razonamiento explícito (thinking mode) ni otras modalidades.
-- No se detallan capacidades específicas de código o matemáticas más allá de las heredadas del modelo base.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Enrutamiento de herramientas y soporte de agentes: el ajuste se realizó sobre corpus de agent/tool-use, por lo que el modelo está pensado para emitir llamadas a herramientas dentro de un flujo de agente.
+- Uso como asistente en dispositivo (on-device) en hardware de borde con recursos muy limitados.
+- Capacidad multilingüe limitada: el autor indica que el entrenamiento es mayoritariamente en inglés y que la calidad en otros idiomas es inferior.
+- No se documentan capacidades de visión, audio, modo thinking explícito ni matemáticas avanzadas.
 
 ## Casos de uso
 
-- Asistente conversacional en dispositivo de borde: el modelo, con 529 MB en Q4_K_M, puede ejecutarse en hosts con 1 GB de RAM para mantener conversaciones multi-turno básicas en inglés sin conexión a la nube.
-- Enrutamiento de herramientas en dispositivos THOX: su ajuste sobre corpus de agentes y tool-use lo hace adecuado para decidir qué herramienta invocar en flujos de automatización local.
-- Prototipado de asistentes local-first: útil para validar pipelines de inferencia en llama.cpp u Ollama antes de escalar a modelos mayores.
-- Automatización de tareas simples en hardware embebido: generación de respuestas cortas y clasificación de intenciones en entornos con recursos muy limitados.
-- Pruebas de integración con Ollama: el repositorio incluye un Modelfile y el comando `ollama run hf.co/Thox-ai/ThoxUSB-Edge:Q4_K_M`, lo que facilita evaluar el modelo en flujos de desarrollo.
-- Base para fine-tunes posteriores: al ser Apache-2.0 y de tamaño reducido, sirve como punto de partida para ajustes específicos de dominio en inglés.
+- Asistente local en dispositivo USB: el modelo cabe en 529 MB en Q4_K_M y puede ejecutarse con Ollama (`ollama run hf.co/Thox-ai/ThoxUSB-Edge:Q4_K_M`) en hosts con al menos 1 GB de RAM, lo que permite un asistente privado sin conexión.
+- Enrutamiento de herramientas en agentes ligeros: al estar ajustado sobre corpus de tool-use, puede usarse como primer nivel de un pipeline de agente que decide qué herramienta invocar antes de delegar en un modelo mayor.
+- Automatización de chat de soporte de baja complejidad: para respuestas acotadas y en inglés, con verificación humana obligatoria dado el estado experimental.
+- Prototipado rápido en entornos con hardware restringido: sirve para validar flujos de conversación y plantillas de chat antes de migrar a un modelo mayor.
+- Despliegue en dispositivos empotrados con llama.cpp: la build GGUF permite integrarlo en aplicaciones C/C++ sin dependencias de Python.
+- Filtrado o clasificación conversacional previa: por su tamaño, puede actuar como primera etapa para descartar consultas triviales y escalar el resto a un modelo de mayor capacidad.
+- Experimentación académica con modelos sub-1000M: útil como referencia de ajuste fino sobre Qwen3.5-0.8B con licencia Apache-2.0.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no hay resultado THOX GATE49 ni benchmark publicado para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no hay resultado THOX GATE49 ni benchmark publicado para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: al menos 1 GB de RAM para la build Q4_K_M (529 MB de pesos más overhead); el safetensors completo requiere aproximadamente 1,5 GB.
-- GPU recomendadas: no se especifican; por tamaño, cabe en GPUs consumer de gama baja y en CPU.
-- Cabe en GPU consumer: sí, por su tamaño reducido (inferencia en CPU también viable).
-- Opciones de despliegue: llama.cpp (`llama-cli`) y Ollama; se requiere una build con soporte para esta arquitectura.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: al menos 1 GB de RAM para la build Q4_K_M (529 MB de pesos más overhead de contexto y runtime).
+- Pesos en safetensors: 1.504.827.608 B (aproximadamente 1,5 GB), lo que requiere alrededor de 2 GB de memoria para inferencia en precisión nativa.
+- GPU recomendadas: no disponible; el modelo está orientado a CPU y hardware de borde. Cabe en cualquier GPU consumer moderna (RTX 3060 en adelante) por tamaño, aunque no se documenta rendimiento.
+- Cabe en GPU consumer: sí, por tamaño; no hay datos medidos de latencia ni throughput.
+- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (con `Modelfile` incluido) y cualquier runtime compatible con GGUF. Requiere build con soporte para la arquitectura Qwen3.5.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| ThoxUSB-Edge | 752M (declarado 873M) | No disponible | Apache-2.0 | Hugging Face (safetensors + GGUF) |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | No disponible en la información | Hugging Face |
-| Alternativas de ~1B para edge | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Estado |
+|---|---|---|---|---|---|
+| ThoxUSB-Edge | 752M (safetensors) | no disponible | Apache-2.0 | safetensors, GGUF Q4_K_M | Experimental, sin benchmarks |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | no disponible | Apache-2.0 (segun base) | safetensors | Modelo base upstream |
+| Alternativas sub-1B de la familia Qwen3.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparado ni de otras alternativas documentadas en la información proporcionada.
+No se dispone de datos de benchmarks del modelo ni de alternativas comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Build experimental: no hay validación en dispositivo, log de entrenamiento ni benchmarks; el autor recomienda verificar las salidas antes de confiar en ellas.
-- Los modelos pequeños cometen errores factuales y pueden producir respuestas seguras pero incorrectas (alucinaciones).
-- El comportamiento y los sesgos reflejan los datos de entrenamiento, mayoritariamente en inglés; la calidad en otros idiomas es inferior.
-- La cuantización Q4_K_M intercambia precisión por tamaño.
-- Uso fuera de alcance: decisiones críticas de seguridad, médicas o legales sin supervisión humana, y control no atendido de dispositivos físicos sin paso de confirmación.
-- Discrepancia entre los parámetros declarados en la model card (873M) y los reales en safetensors (752M), que conviene verificar.
-- Licencia Apache-2.0 permite uso comercial, pero se debe conservar la licencia y el NOTICE.
+- Build no validada: el autor declara que el comportamiento en dispositivo no se ha medido y recomienda verificar las salidas antes de confiar en ellas.
+- Sin benchmarks ni registro de entrenamiento publicados: no es posible comparar su calidad de forma objetiva.
+- Riesgo de alucinación elevado por tamaño: los modelos pequeños cometen errores factuales y pueden producir salidas seguras pero incorrectas.
+- Sesgos derivados del corpus de entrenamiento, mayoritariamente en inglés; calidad inferior en otros idiomas.
+- La cuantización Q4_K_M intercambia precisión por tamaño, con la consiguiente pérdida de exactitud.
+- Uso fuera de alcance declarado: decisiones críticas de seguridad, médicas o legales sin humano en el bucle, y control no supervisado de dispositivos físicos sin paso de confirmación.
+- Discrepancia entre los parámetros declarados (873M) y los reales en safetensors (752M): conviene verificar el `config.json` antes de dimensionar el despliegue.
+- La model card incluye una campaña de Kickstarter del fabricante; el modelo debe evaluarse por sus méritos técnicos, no por el material promocional.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Thox-ai/ThoxUSB-Edge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Descarga del GGUF: `hf download Thox-ai/ThoxUSB-Edge ThoxUSB-Edge.Q4_K_M.gguf --local-dir ./ThoxUSB-Edge`
-- Ejecución con Ollama: `ollama run hf.co/Thox-ai/ThoxUSB-Edge:Q4_K_M`
+- Demo de dispositivos THOX: https://thox.ai/#demo-callout-home_lineup
+- Campaña Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
+- Repositorio llama.cpp (runtime requerido): https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com

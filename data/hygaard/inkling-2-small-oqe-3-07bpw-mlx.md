@@ -2,93 +2,95 @@
 
 ## Resumen
 
-Inkling-2-Small-oQe-3.07bpw-MLX es una conversión cuantizada del modelo multimodal Inkling-2-Small-MXFP8 de Thinking Machines Lab, publicada por el usuario Hygaard en Hugging Face. Se trata de una cuantización mixta de 2 y 3 bits en formato MLX, diseñada específicamente para que el modelo completo quepa de forma residente en sistemas Apple Silicon con 256 GiB de memoria unificada, sin necesidad de paginar pesos de capas a disco.
+Inkling-2-Small-oQe-3.07bpw-MLX es una conversión cuantizada del modelo Inkling-2-Small-MXFP8 de Thinking Machines Lab, publicada por el usuario Hygaard en Hugging Face. Se trata de un modelo MoE multimodal (image-text-to-text) con 594.050.641.920 parámetros totales según los pesos en safetensors, pensado para inferencia completamente residente en sistemas Apple Silicon con 256 GiB de memoria unificada. La conversión aplica una asignación mixta de precisión 2/3 bits a los expertos enrutados, manteniendo atención, embeddings, cabeza de salida y codificador de visión en 8 bits o BF16.
 
-El modelo base es un transformer disperso de tipo mixture-of-experts (MoE) con 595.762.352.304 parámetros escalares originales, 48 capas de texto y 384 expertos enrutados por capa con enrutamiento top-8. La conversión preserva la totalidad de las capas, expertos, el codificador de visión en BF16, el sidecar MTP (multi-token prediction) original y el tokenizer y chat template originales.
+La relevancia de esta ficha radica en que demuestra que un modelo de casi 600.000 millones de parámetros puede ejecutarse en hardware de consumo profesional de Apple (M5 Ultra) sin paginación de pesos por capas, gracias a una compresión efectiva de 3,0732 bits por peso y un total de 213,142 GiB en disco incluyendo el sidecar MTP. Es una conversión comunitaria, no oficial, y requiere un build parcheado de oMLX (PR #5433) para cargar correctamente los tensores de 3 bits de los expertos.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de cuantización agresiva (3,07 bits efectivos por peso) aplicada a un modelo de escala muy grande; por otro, muestra el estado del ecosistema MLX para inferencia local de modelos MoE multimodales en hardware de Apple. La licencia es Apache-2.0, lo que facilita su uso comercial, aunque la evaluación de calidad y visión del autor sigue pendiente según la propia model card.
+El modelo base resuelve tareas de generación de texto, razonamiento y comprensión de imágenes, con arquitectura MoE de 48 capas de texto y 384 expertos enrutados por capa con top-8 routing. La licencia Apache-2.0 facilita su uso comercial, aunque la información disponible sobre el modelo original es limitada y no se han publicado benchmarks en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mixture-of-experts) multimodal con 48 capas de texto y 384 expertos enrutados por capa, enrutamiento top-8; incluye codificador de visión y sidecar MTP |
-| Parametros totales | 595.762.352.304 parametros escalares originales (incluye MTP) |
-| Parametros activos | No disponible (top-8 de 384 expertos por capa; el numero exacto de parametros activos no se indica) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Expertos enrutados: 2/3 bits afines, grupo 128; atencion: 8 bits afines, grupo 128; embeddings y cabeza de salida: 8 bits afines, grupo 64; routers: FP32; normas, convoluciones y controles residuales: BF16/FP32; vision y MTP: BF16 |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer MoE multimodal (image-text-to-text) con 48 capas de texto, 384 expertos enrutados por capa, top-8 routing; incluye codificador de visión y sidecar MTP |
+| Parametros totales | 594.050.641.920 (según safetensors); 595.762.352.304 parámetros escalares originales según la model card |
+| Parametros activos | no disponible (top-8 de 384 expertos por capa, pero no se especifica el cómputo activo total) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Mixta 2/3 bits afín (group size 128) en expertos; 8 bits afín en atención, embeddings y cabeza de salida (group size 64); BF16/FP32 en normas, convoluciones, routers y visión; BF16 en MTP. BPW efectivo 3,0732 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors MLX (82 shards principales mas `mtp.safetensors`) |
+| Formato de pesos | MLX safetensors (82 shards principales + `mtp.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE multimodal con 48 capas de texto, 384 expertos enrutados por capa y enrutamiento top-8, más un codificador de visión en BF16 y un sidecar de predicción multi-token (MTP) también en BF16. La conversión mantiene intactas todas las capas, expertos y el enrutamiento original; solo cambia la precisión de almacenamiento de los pesos. La atención y los auxiliares de texto se guardan en 8 bits afines con grupo 128, los embeddings y la cabeza de salida en 8 bits con grupo 64, y los routers en FP32.
+La arquitectura es un transformer MoE multimodal con 48 capas de texto, 384 expertos enrutados por capa y enrutamiento top-8. La conversión preserva todas las capas, todos los expertos, el tokenizador, la plantilla de chat y el sidecar MTP original en BF16. El codificador de visión y el proyector se mantienen en BF16 (327.693.312 parámetros, 0,610376 GiB). Los routers se almacenan en FP32 (84.953.088 parámetros, 0,316475 GiB) y las normas, convoluciones y controles residuales en BF16/FP32.
 
-La cuantización aplica una asignación por proyección de 2 o 3 bits a los expertos, con escalas y sesgos afines en BF16. El mapa por bloque muestra que la mayoría de bloques usan 3 bits en ambas proyecciones (w13 y w2), mientras que varios bloques (6, 18, 19, 24, 25, 26, 30, 42, 43, 44, 45) usan 2 bits en ambas, y los bloques 31 a 33 y 46 combinan 2 y 3 bits. El resultado es un peso efectivo de 3,0732 bits por parámetro incluyendo MTP, y de 3,0359 bits por parámetro solo con los pesos principales. No se dispone de información sobre el dataset de entrenamiento, el número de tokens ni si hubo RLHF o DPO en el modelo base.
+La asignación de precisión es por proyección: los expertos enrutados usan 2 o 3 bits según el bloque (por ejemplo, bloques 6, 18, 19, 24-26, 30, 42-45 en 2 bits; el resto mayoritariamente en 3 bits, con bloques 31-33 y 46 con mezcla w13/w2). La atención y auxiliares usan 8 bits afín con group size 128. El modelo base fue entrenado por Thinking Machines Lab, pero la información proporcionada no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO. La innovación técnica destacable es la conversión mixta 2/3 bits con escalas afines en BF16 y la preservación del sidecar MTP para decodificación especulativa (MTP on/off medido: 74,75 vs 40,47 tok/s).
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base es un transformer MoE de texto; la conversión conserva todas las capas y expertos.
-- Procesamiento multimodal imagen-texto: el pipeline declarado es `image-text-to-text` y se preserva el codificador de visión y el proyector en BF16.
-- Predicción multi-token (MTP): se conserva el sidecar MTP original en BF16, que según las mediciones del autor duplica aproximadamente el throughput de decodificación (de 40,47 a 74,75 tok/s en el perfil probado).
-- Enrutamiento top-8 sobre 384 expertos: arquitectura dispersa que activa una fracción reducida de parámetros por token.
-- No se dispone de información sobre soporte de tool calling, function calling, agentes, modo thinking o capacidades multilingües específicas en la información proporcionada.
+- Generación de texto y razonamiento conversacional multi-turno (pipeline `image-text-to-text`, tags `conversational`).
+- Comprensión de imágenes: codificador de visión en BF16 y proyector preservados en la conversión.
+- Razonamiento multi-paso y modo de pensamiento (el modelo base se etiqueta como `thinkingmachines/Inkling-2-Small-MXFP8`; no se detalla el modo thinking en la información disponible).
+- Decodificación especulativa mediante sidecar MTP (multi-token prediction) preservado en BF16.
+- Capacidades multilingües: no disponible (no se especifican idiomas).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en Apple Silicon de gran memoria: el modelo está pensado para ejecutarse completamente residente en un sistema con 256 GiB de memoria unificada (por ejemplo, un M5 Ultra dedicado), sin paginación de pesos, lo que permite usar un MoE de ~596.000 millones de parámetros en hardware de escritorio de Apple.
-- Investigación en cuantización extrema: sirve como referencia práctica para estudiar el impacto de precisiones de 2 y 3 bits en expertos de un MoE grande, con mapas por bloque, CSV de módulos y tensores y fichero de precisión incluidos en el repositorio.
-- Evaluación de MTP en producción: al conservar el sidecar MTP, permite medir la ganancia de decodificación especulativa en un modelo multimodal de gran escala; el autor reporta 74,75 tok/s con MTP frente a 40,47 tok/s sin MTP en su perfil de prueba.
-- Prototipado de asistentes multimodales: el pipeline image-text-to-text y la preservación del codificador de visión permiten experimentar con tareas de descripción de imágenes, VQA o extracción de información visual en local.
-- Docencia y demostraciones: al ser una conversión comunitaria con licencia Apache-2.0 y artefactos de procedencia (SOURCE-NOTICE, CONVERSION.json), es adecuada para talleres sobre cuantización y despliegue MLX.
-- Benchmarking de runtimes MLX/oMLX: el modelo requiere un commit concreto de oMLX y sirve para validar cargadores, correcciones de runtime y rendimiento de decodificación en hardware Apple.
+- Inferencia local en Apple Silicon de gama alta: el modelo cabe completamente residente en un M5 Ultra de 256 GiB sin paginación de pesos por capas, lo que permite ejecutar un MoE de ~594.000 millones de parámetros en un equipo de sobremesa con 213,142 GiB en disco.
+- Asistente multimodal conversacional: al soportar image-text-to-text, puede gestionar diálogos que combinen texto e imágenes, útil para análisis de capturas, documentos escaneados o interfaces de usuario.
+- Generación de texto con decodificación especulativa: activando el sidecar MTP se obtienen 74,75 tok/s frente a 40,47 tok/s sin MTP en un presupuesto de 8K, adecuado para aplicaciones interactivas que priorizan latencia.
+- Prototipado e investigación en cuantización extrema: la asignación mixta 2/3 bits con mapas de precisión por bloque (`MODULES.csv`, `TENSORS.csv`, `PRECISION.json`) sirve como referencia para estudiar el impacto de la cuantización agresiva en MoE.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache-2.0 permite uso comercial e integración en productos propietarios, sujeto a las atribuciones de `SOURCE-NOTICE.md`.
+- Evaluación comparativa de runtimes MLX: el modelo requiere oMLX parcheado (PR #5433), por lo que es útil para validar builds de runtime y reproducir las métricas de decode tok/s publicadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor solo reporta mediciones de throughput de decodificación en un M5 Ultra de 256 GiB:
+La model card solo proporciona métricas de rendimiento de inferencia, no benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.):
 
-| Perfil de ejecución | Presupuesto total de petición | Decodificación (tok/s) |
+| Perfil de ejecución | Presupuesto total de petición | Decode tok/s |
 |---|---:|---:|
-| KV estándar nativo, MTP desactivado | 8K | 40,47 |
-| KV estándar nativo, MTP activado | 8K | 74,75 |
+| KV estándar nativo, MTP off | 8K | 40,47 |
+| KV estándar nativo, MTP on | 8K | 74,75 |
 
-Las mediciones se realizaron sobre dos tareas de texto fijas por fila, una sola secuencia y sin reutilización de prefijo. Las cuatro respuestas pasaron las comprobaciones de tarea. El autor indica que las salidas con MTP activado y desactivado difieren y que no se reclama equivalencia exacta de tokens. La evaluación amplia de calidad y visión, así como la validación de instalación limpia y servido HTTP, quedan pendientes según la model card.
+Medido en un M5 Ultra dedicado de 256 GiB, completamente residente, sin paginación de pesos, con dos tareas de texto fijas por fila, una secuencia y sin reutilización de prefijo. Las cuatro respuestas pasaron las comprobaciones de tarea. No se han publicado resultados de benchmarks de calidad en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: 213,142 GiB en total incluyendo MTP; 209,954 GiB solo pesos principales; 3,188 GiB el sidecar MTP. Estas cifras excluyen tokenizer, configuración, KV cache y memoria de runtime.
-- Sistema probado: M5 Ultra dedicado con 256 GiB de memoria unificada, con el modelo completamente residente y sin paginación de pesos por capas.
-- GPU recomendadas: no se indican GPU NVIDIA; el formato es MLX, específico de Apple Silicon. No hay datos de despliegue en A100, H100 o RTX 4090.
-- GPU de consumo: no cabe en ninguna GPU de consumo convencional por el tamaño de los pesos (más de 200 GiB). Requiere un sistema Apple Silicon de gran memoria unificada.
-- Opciones de despliegue: runtime MLX mediante oMLX, con el commit `624cff0e23519ba46a4d5ed2802c2c236ad1a9ac` y la corrección de cargador incluida. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 40,47 tok/s sin MTP y 74,75 tok/s con MTP en el perfil de 8K de presupuesto total de petición, medido en M5 Ultra de 256 GiB.
+- VRAM/memoria unificada estimada: 213,142 GiB en disco incluyendo MTP (209,954 GiB de pesos principales + 3,188 GiB de sidecar MTP); probado residente en 256 GiB de memoria unificada.
+- GPU recomendadas: Apple Silicon M5 Ultra con 256 GiB (único hardware validado en la model card). No se documenta soporte en A100, H100 ni RTX 4090.
+- ¿Cabe en GPU de consumo? No en GPUs discretas convencionales por el tamaño (213 GiB); requiere Apple Silicon de gama alta con memoria unificada de 256 GiB.
+- Opciones de despliegue: oMLX (build parcheado con PR #5433, merge commit `595d4ff`; oMLX 0.8.0 stock no funciona). No se documenta vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 40,47 tok/s con MTP off y 74,75 tok/s con MTP on, con presupuesto de 8K, una secuencia y sin reutilización de prefijo.
+- Build probado: oMLX commit `624cff0e23519ba46a4d5ed2802c2c236ad1a9ac` con el parche de loader incluido.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada. La comparación se limita a lo que se puede inferir del propio repositorio:
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El único punto de referencia directo es el modelo base del que deriva:
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Inkling-2-Small-oQe-3.07bpw-MLX (este) | 595.762.352.304 escalares originales | No disponible | Apache-2.0 | Safetensors MLX (2/3/8 bits) | Conversion comunitaria para 256 GiB Apple Silicon |
-| thinkingmachines/Inkling-2-Small-MXFP8 (base) | 595.762.352.304 escalares originales | No disponible | Apache-2.0 | MXFP8 | Modelo base del que se parte |
-| Otras alternativas | No disponible | No disponible | No disponible | No disponible | Sin datos en la informacion proporcionada |
+| Hygaard/Inkling-2-Small-oQe-3.07bpw-MLX | 594.050.641.920 | no disponible | Apache-2.0 | MLX safetensors (2/3/8 bits mixto) | Conversión comunitaria, 213,142 GiB, requiere oMLX parcheado |
+| thinkingmachines/Inkling-2-Small-MXFP8 | 595.762.352.304 (escalares originales) | no disponible | Apache-2.0 | MXFP8 | Modelo base original de Thinking Machines Lab |
+
+No se conocen alternativas de la misma categoría (MoE multimodal ~600B) con datos verificables en la información disponible.
 
 ## Limitaciones y advertencias
 
-- La cuantización a 2 y 3 bits en los expertos puede degradar la calidad respecto al modelo base MXFP8; el autor no ha publicado evaluación amplia de calidad ni de visión.
-- El rendimiento medido (40,47 y 74,75 tok/s) corresponde a un único sistema M5 Ultra de 256 GiB y a dos tareas de texto fijas; no es extrapolable a otros hardware ni a otras cargas.
-- Con MTP activado y desactivado las salidas difieren; no se garantiza equivalencia exacta de tokens entre ambos modos.
-- El modelo requiere un commit concreto de oMLX y una corrección de cargador; no se ha validado una instalación limpia ni el servido por HTTP según la model card.
-- El tamaño de pesos (más de 200 GiB) impide su uso en GPU de consumo o en sistemas Apple Silicon con menos de 256 GiB si se quiere mantener residente.
-- No se dispone de información sobre sesgos, riesgo de alucinación, idiomas soportados ni limitaciones específicas de contexto del modelo base en la información proporcionada.
-- La licencia Apache-2.0 permite uso comercial, pero debe conservarse la atribución indicada en `LICENSE`, `SOURCE-NOTICE.md` y `CONVERSION.json`.
-- Al ser una conversión comunitaria (Hygaard) y no oficial de Thinking Machines Lab, la procedencia y el soporte dependen del autor de la conversión.
+- Requiere un build parcheado de oMLX: oMLX 0.8.0 stock no incluye el fix de PR #5433 y rechaza los pesos válidos de 3 bits de los expertos. Sin el parche, el modelo no carga.
+- Conversión comunitaria no oficial: no está validada por Thinking Machines Lab; la propia model card indica que la evaluación amplia de calidad y visión, así como la validación de instalación limpia y servido HTTP, quedan pendientes.
+- Cuantización extrema: los expertos enrutados a 2/3 bits pueden degradar la calidad frente al modelo original en MXFP8; no se han publicado benchmarks de calidad que cuantifiquen la pérdida.
+- Tamaño de despliegue muy elevado: 213,142 GiB en disco y 256 GiB de memoria unificada, lo que restringe el hardware a Apple Silicon de gama alta.
+- Idiomas soportados no especificados: riesgo de comportamiento inconsistente en idiomas distintos del inglés (no confirmado).
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable como en cualquier modelo generativo.
+- Sesgos: no documentados en la información proporcionada.
+- Equivalencia de salida MTP on/off: la model card indica que las salidas difieren y no se reclama equivalencia exacta de tokens.
+- Licencia Apache-2.0: permite uso comercial, pero deben respetarse las atribuciones de `LICENSE`, `SOURCE-NOTICE.md` y `CONVERSION.json`.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Hygaard/Inkling-2-Small-oQe-3.07bpw-MLX
+- Hugging Face: https://huggingface.co/Hygaard/Inkling-2-Small-oQe-3.07bpw-MLX
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Small-MXFP8
-- Revision del modelo base citada: `086a047e8b7ff2ac902dd52355328ddb66b16914`
-- Runtime oMLX (commit requerido): `624cff0e23519ba46a4d5ed2802c2c236ad1a9ac`
-- Artefactos de conversion en el repositorio: `MODULES.csv`, `TENSORS.csv`, `PRECISION.json`, `RUNTIME.md`, `LICENSE`, `SOURCE-NOTICE.md`, `CONVERSION.json`
+- PR de oMLX #5433: https://github.com/jundot/omlx/pull/5433

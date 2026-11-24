@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/ContextPilot-E4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/ContextPilot-E4B-GGUF",
-      "snippet": "mradermacher / ContextPilot-E4B-GGUF like 0 Transformers GGUF English context-management tool-use agent conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "mradermacher/gemma-4-E4B-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/gemma-4-E4B-i1-GGUF",
-      "snippet": "mradermacher / gemma-4-E4B-i1-GGUF like 1 Transformers GGUF English imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "GitHub - EfficientContext/ContextPilot: Accelerating Long Context LLM ...",
-      "url": "https://github.com/EfficientContext/ContextPilot",
-      "snippet": "ContextPilot sits between context assembly and inference to maximize prefix reuse and remove duplicates: Higher throughput & cache hits — boosts prefill throughput and prefix cache hit ratio via context reuse."
-    },
-    {
-      "title": "Gemma 4 — Google DeepMind",
-      "url": "https://deepmind.google/models/gemma/gemma-4/",
-      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
-    },
-    {
-      "title": "ContextPilot",
-      "url": "https://contextpilot.org/",
-      "snippet": "Stop paying for tokens your model ignores. Every LLM call carries dead weight. ContextPilot compresses it before your model sees it, with a quality gate so nothing important gets dropped."
-    }
-  ]
+  "sources": []
 }

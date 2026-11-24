@@ -41,29 +41,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "MobileSam - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/mobilesam",
-      "snippet": "MobileSam Faster Segment Anything: Towards lightweight SAM for mobile applications. Transformer based encoder‑decoder where prompts specify what to segment in an image thereby allowing segmentation without the need for additional training. The image encoder generates embeddings and the lightweight decoder operates on the embeddings for point and mask based image segmentation."
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
     },
     {
-      "title": "MobileSam - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/automotive/models/mobilesam",
-      "snippet": "Transformer based encoder‑decoder where prompts specify what to segment in an image thereby allowing segmentation without the need for additional training. The image encoder generates embeddings and the lightweight decoder operates on the embeddings for point and mask based image segmentation. Download Model Not supported"
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San Diego, …"
     },
     {
-      "title": "ai-hub-models/qai_hub_models/models/mobilesam at main - GitHub",
-      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/mobilesam",
-      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+      "title": "fr - Qualcomm",
+      "url": "https://www.qualcomm.com/fr",
+      "snippet": "Qualcomm relentlessly innovates to deliver intelligent computing everywhere, helping the world tackle some of its most important …"
     },
     {
-      "title": "qualcomm/MobileSam · Hugging Face",
-      "url": "https://huggingface.co/qualcomm/MobileSam",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "QUALCOMM Cours Action QCOM, Cotation Bourse NASDAQ",
+      "url": "https://www.boursorama.com/cours/QCOM/",
+      "snippet": "Le cours de l'action QUALCOMM QCOM sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus …"
     },
     {
-      "title": "ai-hub-models/qai_hub_models/models/mobilesam/README.md at main ...",
-      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/mobilesam/README.md",
-      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+      "title": "Qualcomm - Investor Relations",
+      "url": "https://investor.qualcomm.com/overview/default.aspx",
+      "snippet": "Sep 27, 2026 · Qualcomm Earnings Release Available on Company's Investor Relations Website View All Press Releases"
     }
   ]
 }

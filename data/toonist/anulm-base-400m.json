@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Programme TV par Télé-Loisirs, TNT, box télé et satellite",
-      "url": "https://www.programme-tv.net/",
-      "snippet": "Consultez votre programme TV de ce soir et retrouvez l'actualité des émissions télé et séries Netflix, Amazon Prime Video, Disney …"
-    },
-    {
-      "title": "Programme TV de ce soir avec Télé-Loisirs",
-      "url": "https://www.programme-tv.net/programme/toutes-les-chaines/",
-      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes et ne manquez aucun de vos programmes préférés."
-    },
-    {
-      "title": "Programme TV TNT de ce soir avec Télé-Loisirs",
-      "url": "https://www.programme-tv.net/programme/programme-tnt.html",
-      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes TNT et ne manquez aucun de vos programmes préférés."
-    },
-    {
-      "title": "Programme TV Bouygues de ce soir avec Télé-Loisirs",
-      "url": "https://www.programme-tv.net/programme/bouygues-24/",
-      "snippet": "Sep 4, 2011 · Que regarder à la télé ce soir ? Consultez la grille des programmes Bouygues et ne manquez aucun de vos …"
-    },
-    {
-      "title": "Programme TV en ce moment avec Télé-Loisirs",
-      "url": "https://www.programme-tv.net/programme/en-ce-moment.html",
-      "snippet": "Que regarder à la télé en ce moment ? Consultez la grille des programmes du moment."
-    }
-  ]
+  "sources": []
 }

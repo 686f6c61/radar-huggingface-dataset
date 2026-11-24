@@ -2,97 +2,91 @@
 
 ## Resumen
 
-Labadain-Gemma-4-E3B-it-Tetun-GGUF es la versión cuantizada en formato GGUF (Q4_K_M) del modelo Labadain-Gemma-4-E3B-it-Tetun, un ajuste fino de la familia Gemma 4 orientado a conversación en tetun (tetun-dili), la lengua nacional de Timor-Leste. Lo desarrolla Labadain, una iniciativa de investigación centrada en recuperación de información, PLN e IA para lenguas de bajos recursos, con el objetivo de impulsar la inclusión digital y el acceso a IA en Timor-Leste.
+Labadain-Gemma-4-E3B-it-Tetun-GGUF es la versión cuantizada en formato GGUF del modelo conversacional Labadain-Gemma-4-E2B-it-Tetun, un ajuste fino de Gemma 4 E2B-it de Google (publicado por Unsloth) especializado en tetun, una de las lenguas oficiales de Timor-Leste. El modelo resuelve el problema de la escasez de asistentes conversacionales de calidad en una lengua de bajos recursos: se ha entrenado con 32.197 conversaciones en tetun (unos 26 millones de tokens) que cubren noticias, salud, educación y lenguaje, además de temas cotidianos.
 
-El modelo parte de `unsloth/gemma-4-E2B-it` como base y se ha ajustado mediante QLoRA sobre un corpus compilado de 32.197 conversaciones multi-turno en tetun, procedentes de noticias, salud, educación y conversación general. El resultado es un modelo merged de 4.647.450.147 parámetros (aproximadamente 4,6 mil millones) que se distribuye aquí en una única cuantización Q4_K_M para inferencia local eficiente en CPU y GPU de consumo.
+El autor, labadain, publica esta variante en cuantización Q4_K_M de 4 bits para que pueda ejecutarse localmente con Ollama, llama.cpp o LM Studio, incluso en portátiles sin GPU. El repositorio ocupa 3,4 GB y el modelo cuenta con 4.647.450.147 parámetros (etiquetado como E3B en el nombre del archivo, aunque la model card lo describe como E2B de 4,6B parámetros). El ajuste fino se realizó con QLoRA sobre el checkpoint base de Unsloth.
 
-Su relevancia radica en cubrir un hueco real: la práctica ausencia de modelos conversacionales abiertos para tetun con despliegue práctico. Al ofrecerse en GGUF y en Ollama, reduce la barrera de entrada para investigadores y desarrolladores que quieran construir aplicaciones en esta lengua sin infraestructura dedicada.
+Es relevante ahora porque demuestra que es viable adaptar un modelo multimodal grande (Gemma 4) a una lengua de bajos recursos con un presupuesto de entrenamiento modesto, y porque ofrece un artefacto listo para desplegar en producción local sin infraestructura de GPU dedicada. Esta variante GGUF contiene solo el modelo de texto: los codificadores de imagen y audio de Gemma 4 no están incluidos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma 4; detalles internos no disponibles) |
-| Parámetros totales | 4.647.450.147 (~4,6 B) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_K_M (única incluida en este repositorio) |
-| Idiomas soportados | tet (tetun), tdt (tetun-dili) |
-| Licencia | Gemma (Gemma 4 License) |
-| Formato de pesos | GGUF |
-| Modelo base | unsloth/gemma-4-E2B-it |
-| Modelo merged | labadain/Labadain-Gemma-4-E3B-it-Tetun |
-| Método de ajuste | QLoRA |
-| Dataset de entrenamiento | 32.197 conversaciones multi-turno |
-| Tamaño del repositorio | 3,4 GB |
-| Descargas | 185 |
+| Arquitectura | Transformer (Gemma 4, familia E2B/E3B); solo el submodelo de texto |
+| Parametros totales | 4.647.450.147 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 4.096 tokens en ajuste fino (la arquitectura soporta 128K) |
+| Tipos de cuantizacion | Q4_K_M (4 bits); unico archivo publicado |
+| Idiomas soportados | tetun (tet), tetun-dili (tdt) |
+| Licencia | Apache 2.0, sujeta a la licencia Gemma 4 de Google |
+| Formato de pesos | GGUF (Q4_K_M); el modelo original esta en bfloat16 para Transformers/Unsloth |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino por QLoRA sobre `unsloth/gemma-4-E2B-it`, de la familia Gemma 4. La model card no detalla la arquitectura interna (número de capas, dimensión oculta, mecanismo de atención ni si incorpora innovaciones como atención lineal o decodificación especulativa), por lo que esos datos deben considerarse no disponibles. El peso final merged alcanza los 4.647.450.147 parámetros, ligeramente por encima de la base E2B de la que parte, lo que sugiere una expansión o fusión durante el proceso de ajuste.
+El modelo parte de Gemma 4 E2B-it, un transformer de la familia Gemma 4 de Google distribuido por Unsloth. El ajuste fino se realizo con QLoRA sobre 32.197 conversaciones en tetun (aproximadamente 26 millones de tokens), compiladas por Labadain a partir de recursos conversacionales y de pregunta-respuesta en tetun, incluyendo material traducido automaticamente. El reparto por dominio es: 20.132 conversaciones generales, 9.649 de salud, 1.951 de noticias y 465 de educacion y lenguaje.
 
-El entrenamiento se realizó sobre un corpus compilado de 32.197 conversaciones multi-turno en tetun, con la siguiente composición: 20.132 conversaciones de carácter general, 9.649 de salud (QA y multi-turno), 1.951 de noticias y 465 de educación y lengua. No se documenta el número total de tokens de entrenamiento, la composición exacta del dataset más allá de estas cifras, ni si se aplicaron etapas de RLHF o DPO. El modelo soporta un modo de razonamiento (thinking mode) heredado de Gemma 4, que puede desactivarse en Ollama con `--think=false`.
+El conjunto contiene 55.105 intercambios pregunta-respuesta; 11.774 conversaciones (36,6%) son multiturno, con hasta 33 intercambios, y 20.423 (63,4%) son de un solo turno. El 90% (28.977) se uso para entrenamiento y el 10% restante se dividio a partes iguales en validacion (1.610) y test reservado (1.610). Las conversaciones de entrenamiento no contienen trazas de razonamiento, por lo que el modo thinking debe mantenerse desactivado. La plantilla de chat incluida en el GGUF ya trae thinking desactivado por defecto. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en tetun, con respuestas contextualmente relevantes en dominios de conocimiento general, noticias, conversación cotidiana, salud y educación.
-- Conversación multi-turno: el ajuste se realizó específicamente sobre diálogos multi-turno, por lo que mantiene coherencia a lo largo de la interacción.
-- Modo de razonamiento (thinking mode) heredado de Gemma 4, desactivable mediante el flag `--think=false` en Ollama.
-- Respuesta a preguntas (QA) en tetun, especialmente en el dominio sanitario, donde el corpus de entrenamiento es más denso.
-- Generación de texto general en tetun para aplicaciones de PLN de bajos recursos.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
-- Capacidades multilingües: limitadas a tet y tdt según los metadatos; no se documenta transferencia a otros idiomas.
-- Visión y audio: no disponibles.
+- Generacion de texto conversacional en tetun, con respuestas multiturno (hasta 33 intercambios en los datos de entrenamiento).
+- Respuesta a preguntas sobre noticias, salud, educacion, lenguaje y temas cotidianos.
+- Conversacion general y asistencia basica sin necesidad de system prompt (el modelo se ajusto sin uno).
+- Capacidad de seguir una instruccion corta de sistema, como "Responde iha Tetun", para mantener el idioma de respuesta.
+- Modo thinking presente en la plantilla pero desaconsejado: el modelo no fue entrenado con trazas de razonamiento.
+- No incluye vision ni audio: esta variante GGUF contiene solo el submodelo de texto.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional en tetun para atención ciudadana: el modelo puede gestionar diálogos multi-turno en tetun gracias a su ajuste específico sobre 32.197 conversaciones, adecuado para portales de servicios públicos en Timor-Leste.
-- Consultas de salud en lengua local: con 9.649 ejemplos de QA y multi-turno del dominio sanitario, es apropiado para orientación básica y triaje informativo en tetun, siempre con supervisión humana.
-- Investigación en PLN de bajos recursos: sirve como línea base reproducible para experimentos de generación y evaluación en tetun, al estar disponible en GGUF y con pesos merged en safetensors.
-- Despliegue en local sin GPU dedicada: la cuantización Q4_K_M y el formato GGUF permiten ejecutarlo en CPU mediante llama.cpp u Ollama, útil en entornos con hardware limitado como los habituales en Timor-Leste.
-- Educación y divulgación: generación de material didáctico y respuestas explicativas en tetun, apoyándose en los 465 ejemplos de educación y lengua del corpus.
-- Prototipado rápido de aplicaciones: la disponibilidad en Ollama (`ollama run labadainofficial/labadain-gemma4:e3b-q4km`) permite integrar el modelo en demos y pruebas de concepto con un solo comando.
-- Procesamiento de noticias en tetun: resumen y reformulación de textos periodísticos, dado el subconjunto de 1.951 conversaciones basadas en noticias.
+- Asistencia conversacional en tetun para atencion al ciudadano: el modelo gestiona dialogos multiturno de hasta 4.096 tokens, suficiente para resolver consultas administrativas basicas en una ventanilla o chat web.
+- Educacion y alfabetizacion digital en Timor-Leste: sirve como tutor de practica de lengua y respuesta a preguntas escolares, gracias a su entrenamiento en 465 conversaciones de educacion y lenguaje y 9.649 de salud.
+- Prototipado de aplicaciones de IA en tetun: al ejecutarse con llama.cpp u Ollama en portatiles sin GPU, permite a desarrolladores locales iterar sobre productos linguisticos sin infraestructura en la nube.
+- Investigacion en PLN de bajos recursos: el modelo y su conjunto de datos (32.197 conversaciones, 26 millones de tokens) sirven como linea base reproducible para estudiar tecnicas de ajuste fino en lenguas de bajos recursos.
+- Despliegue en entornos con recursos limitados: con 3,43 GB de pesos Q4_K_M y 4-5 GB de memoria libre, cabe en portatiles de consumo y en servidores modestos para servir una API compatible con OpenAI mediante llama-server.
+- Generacion de contenido divulgativo en tetun: redaccion de borradores de articulos o resumenes sobre salud y noticias a partir de material existente, con revision humana obligatoria por el riesgo de errores factuales.
+- Chatbot de bajo coste para ONG y administraciones locales: al ser Apache 2.0 y ejecutable en CPU, reduce la dependencia de proveedores externos y de presupuestos de GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La propia model card indica explícitamente que el modelo no ha sido evaluado todavía en aplicaciones downstream.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_M y ~4,6 B de parámetros, el archivo pesa aproximadamente 3,4 GB; se estima un consumo de VRAM en torno a 4-5 GB incluyendo overhead de contexto, aunque no se dispone de mediciones oficiales.
-- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cabría esperar funcionamiento en GPUs de consumo con 6-8 GB o más, pero no está verificado por el autor.
-- ¿Cabe en GPU de consumo? Probablemente sí en modelos con 8 GB o más de VRAM, aunque no hay confirmación oficial.
-- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (`labadainofficial/labadain-gemma4:e3b-q4km`) y cualquier runtime compatible con GGUF. vLLM y TGI no están documentados para este repositorio.
-- Latencia y throughput: no disponibles.
+- Memoria estimada: 4-5 GB libres de RAM o VRAM para ejecutar el archivo Q4_K_M de 3,43 GB.
+- GPU: no se especifican modelos concretos recomendados; el modelo esta disenado para funcionar tambien en portatiles solo con CPU.
+- GPU de consumo: cabe en tarjetas con al menos 4-5 GB de VRAM, aunque la informacion no detalla modelos concretos.
+- Opciones de despliegue: Ollama (`labadainofficial/labadain-gemma4:e3b-q4km`), llama.cpp (`llama-cli` y `llama-server` con API compatible con OpenAI en `http://localhost:8080`) y LM Studio.
+- Latencia y throughput: no disponible en la informacion proporcionada.
+- Ajustes de muestreo recomendados: temperature 1.0 (0 para respuestas repetibles), top-p 0.95, top-k 64, contexto 4.096 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| Labadain-Gemma-4-E3B-it-Tetun-GGUF | ~4,6 B | no disponible | tet, tdt | Gemma | GGUF |
-| Labadain-Gemma-4-E3B-it-Tetun (merged) | ~4,6 B | no disponible | tet, tdt | Gemma | safetensors |
-| unsloth/gemma-4-E2B-it (base) | no disponible | no disponible | multilingüe (Gemma 4) | Gemma | safetensors |
-
-No se dispone de datos de benchmarks que permitan comparar el rendimiento con alternativas de la misma categoría. La comparación se limita a parámetros, licencia y formato de distribución.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Labadain-Gemma-4-E3B-it-Tetun-GGUF (este) | 4,65B | 4.096 (arquitectura 128K) | tetun | Apache 2.0 | GGUF Q4_K_M | Ajuste fino en tetun sobre Gemma 4 E2B-it |
+| labadain/Labadain-Gemma-4-E2B-it-Tetun | 4,6B | 4.096 (arquitectura 128K) | tetun | Apache 2.0 | bfloat16 (Transformers/Unsloth) | Modelo original sin cuantizar; mayor calidad segun el autor |
+| unsloth/gemma-4-E2B-it | no disponible | no disponible | multilingue (no detallado) | Gemma 4 license | safetensors | Modelo base de Google sin ajuste en tetun |
+| Otros modelos conversacionales en lenguas de bajos recursos | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de alternativas comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- El autor declara explícitamente que el modelo no ha sido evaluado en aplicaciones downstream; no hay métricas de calidad, fidelidad ni seguridad.
-- Riesgo de alucinación no cuantificado: al ser un ajuste fino sobre un corpus relativamente pequeño (32.197 conversaciones), la cobertura de dominios y la fiabilidad factual son inciertas.
-- Sesgos conocidos: no documentados; el corpus procede de fuentes de noticias, salud, educación y conversación general, con posible sobrerrepresentación de ciertos registros.
-- Limitaciones de idioma: soporte declarado únicamente para tet y tdt; no se garantiza un comportamiento correcto en otros idiomas.
-- Licencia Gemma: el uso y la redistribución están sujetos a la Gemma 4 License (https://ai.google.dev/gemma/docs/gemma_4_license); es necesario revisar sus restricciones antes de un uso comercial.
-- Al ser una cuantización Q4_K_M, puede haber una degradación de calidad respecto al modelo merged en safetensors, no medida por el autor.
-- El modo de razonamiento (thinking) puede añadir contenido previo a la respuesta final; en producción conviene desactivarlo con `--think=false` si no se desea.
-- Longitud de contexto no documentada: no es posible planificar aplicaciones con ventanas largas sin verificación empírica.
+- Errores factuales: es un modelo pequeno y puede afirmar con confianza datos, fechas, nombres y cifras incorrectos, incluso sobre Timor-Leste; verificar la informacion importante con fuentes fiables.
+- Cuantizacion: el GGUF de 4 bits puede ser ligeramente menos preciso que el modelo original en bfloat16; el autor recomienda el modelo original para maxima calidad.
+- Conocimiento fijo: solo sabe lo que habia en el modelo base y en los datos de entrenamiento; no tiene acceso a eventos actuales.
+- Entradas largas: el ajuste fino cubrio conversaciones de hasta 4.096 tokens, aunque la arquitectura soporta 128K; no se garantiza buen comportamiento mas alla de ese limite.
+- Modo thinking: no debe activarse, porque las conversaciones de entrenamiento no contienen trazas de razonamiento; en Ollama usar `--think=false`.
+- Solo texto: esta variante GGUF no incluye los codificadores de imagen y audio de Gemma 4.
+- Licencia: Apache 2.0 sujeta ademas a la licencia Gemma 4 de Google; revisar los terminos de uso comercial de dicha licencia antes de desplegar en produccion.
+- Sesgos conocidos: no se documentan sesgos especificos en la informacion proporcionada; el entrenamiento incluye material traducido automaticamente, lo que puede introducir artefactos linguisticos.
 
 ## Enlaces
 
-- Hugging Face (este repositorio GGUF): https://huggingface.co/labadain/Labadain-Gemma-4-E3B-it-Tetun-GGUF
-- Modelo merged en safetensors: https://huggingface.co/labadain/Labadain-Gemma-4-E3B-it-Tetun
-- Ollama: https://ollama.com/labadainofficial/labadain-gemma4
+- Modelo en Hugging Face: https://huggingface.co/labadain/Labadain-Gemma-4-E3B-it-Tetun-GGUF
+- Modelo original (bfloat16): https://huggingface.co/labadain/Labadain-Gemma-4-E2B-it-Tetun
+- Modelo base de Unsloth: https://huggingface.co/unsloth/gemma-4-E2B-it
+- Pagina de Ollama: https://ollama.com/labadainofficial/labadain-gemma4
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- LM Studio: https://lmstudio.ai
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Labadain Chat: https://www.labadain.com
-- Labadain Search: https://search.labadain.com

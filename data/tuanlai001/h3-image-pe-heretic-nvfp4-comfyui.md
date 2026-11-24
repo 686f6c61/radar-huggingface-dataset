@@ -2,89 +2,112 @@
 
 ## Resumen
 
-H3-IMAGE-PE-HERETIC-NVFP4-COMFYUI es una versión modificada ("uncensored" o *heretic*) del modelo de expansión de prompts (prompt enhancer, PE) asociado a MiniMax-H3-Image, un sistema de generación de imágenes texto-a-imagen. El modelo parte de Qwen/Qwen3.8-27B como base y ha sido afinado para reescribir y enriquecer prompts de usuario antes de pasarlos al generador de imágenes. Lo publica el usuario tuanlai001 en Hugging Face y está empaquetado como archivo único de difusión (diffusion-single-file) para cargarse mediante el nodo *CLIP Loader* de ComfyUI.
+H3-IMAGE-PE-HERETIC-NVFP4-COMFYUI es un checkpoint de un solo archivo del "prompt enhancer" (PE) del modelo MiniMax-H3-Image, un componente que reescribe prompts cortos de usuario en descripciones largas y estructuradas para generación de imágenes. El modelo base del enhancer es Qwen3.8-27B, un transformer híbrido de 64 capas que combina atención lineal GatedDeltaNet con atención completa, y que MiniMax distribuye en formato ModelOpt NVFP4. El autor del repositorio, tuanlai001, lo ha de-cuantizado a bf16, le ha aplicado abliteration (eliminación direccional de la conducta de rechazo) y lo ha re-cuantizado al layout NVFP4 propio de ComfyUI para que pueda cargarse de forma nativa en ese entorno.
 
-La relevancia de esta ficha radica en dos aspectos. Por un lado, es un ejemplo de la práctica de "abliteración" o eliminación de rechazos mediante la herramienta heretic, con un checkpoint seleccionado manualmente entre 1200 pruebas que reporta una tasa de rechazo del 10 % (10/100) y una divergencia KL de 0.1419 respecto al modelo original. Por otro, la licencia MiniMax-H3-Image Community License Agreement impone restricciones territoriales severas (excluye la Unión Europea, Reino Unido, Corea del Sur y Estados Unidos) y límites comerciales, lo que condiciona por completo su uso en producción.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso práctico de ingeniería de cuantización: la conversión entre dos layouts NVFP4 incompatibles (orden de nibbles y swizzling de escalas de bloque) es un problema real que quien trabaje con FP4 en producción encontrará. Por otro lado, ilustra las tensiones entre la modificación de pesos (abliteration) y las licencias de modelos abiertos: la licencia MiniMax-H3-Image Community excluye explícitamente de su territorio a la Unión Europea, el Reino Unido, Corea del Sur y Estados Unidos, lo que condiciona su uso en España.
 
-El modelo está cuantizado en NVFP4 (formato de 4 bits de NVIDIA) y se distribuye en un repositorio de 17,9 GB. La información pública disponible es escasa: no se detallan parámetros activos, composición del dataset de entrenamiento ni resultados de benchmarks, por lo que muchos campos de esta ficha se marcan como no disponibles.
+El resultado es un modelo de 17,92 GB en un único `.safetensors`, pensado para el nodo `CLIPLoader` de ComfyUI en `text_encoders/`, con una tasa de rechazo medida de 10/100 en el benchmark del autor y una divergencia KL de 0,1419 respecto al modelo original.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de Qwen/Qwen3.8-27B, según el campo `base_model`); detalles de la arquitectura interna no disponibles |
-| Parámetros totales | No disponible (el modelo base declarado es Qwen3.8-27B, pero no se confirma que el tamaño final coincida) |
-| Parámetros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | NVFP4 (4 bits, formato de NVIDIA); el repositorio se distribuye en este formato |
-| Idiomas soportados | Inglés (`en` en los tags); resto no disponible |
-| Licencia | MiniMax-H3-Image Community License Agreement (`other`) |
-| Formato de pesos | Archivo único compatible con el nodo CLIP Loader de ComfyUI (diffusion-single-file); cuantización NVFP4 |
+| Arquitectura | `Qwen3_5ForConditionalGeneration` híbrida: GatedDeltaNet (atención lineal) + atención completa, 64 capas, hidden 5120, vocab 248320 |
+| Parametros totales | No disponible (el modelo base es Qwen3.8-27B; no se detalla el recuento exacto en la información proporcionada) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la información proporcionada; el autor recomienda `max_length` de 16384 para evitar salidas vacías |
+| Tipos de cuantizacion | NVFP4 (E2M1, group size 16, escalas de bloque fp8_e4m3, escala global fp32); el checkpoint original bf16 de trabajo era de 54,71 GB |
+| Idiomas soportados | Inglés (`en`) según los tags del repositorio |
+| Licencia | MiniMax-H3-Image Community License Agreement (licencia "other", texto en el repositorio de MiniMaxAI) |
+| Formato de pesos | `.safetensors` único (17,92 GB, 2788 tensores: 401 capas cuantizadas + escalas + tensores fp16/bf16 restantes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se presenta como una conversión de un *prompt enhancer* para MiniMax-H3-Image, construido sobre Qwen/Qwen3.8-27B según los metadatos de `base_model`. No se publican detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la fase original. La innovación técnica documentada es el proceso de *uncensoring* mediante la herramienta heretic (p-e-w/heretic), que elimina o atenúa los mecanismos de rechazo del modelo base.
+El modelo es el prompt enhancer de MiniMax-H3-Image, construido sobre Qwen3.8-27B. La arquitectura es un transformer híbrido de 64 capas que intercala capas de atención lineal GatedDeltaNet con capas de atención completa, con dimensión oculta de 5120 y vocabulario de 248.320 tokens. El checkpoint se distribuye originalmente en formato ModelOpt NVFP4, que `transformers` no puede cargar como checkpoint pre-cuantizado, lo que motivó el proceso de conversión.
 
-El autor indica que el checkpoint final se seleccionó manualmente entre 1200 pruebas, con una tasa de rechazo medida del 10 % (10 de 100 prompts) y una divergencia KL de 0.1419 frente al modelo de referencia. Estos valores sugieren una modificación moderada de la distribución de salida: la KL no es despreciable, lo que implica que el modelo se desvía del original en una parte relevante de su espacio de respuestas, aunque no se especifica cómo se midieron ni con qué conjunto de evaluación. La cuantización a NVFP4 se aplica sobre los pesos para reducir el tamaño y facilitar la carga en ComfyUI, pero no se documenta la pérdida de calidad asociada.
+El pipeline de modificación documentado por el autor tiene cuatro etapas. Primero, de-cuantización de los pesos NVFP4 a bf16 plano usando el codebook E2M1, la escala por grupo de 16 elementos y la escala global, verificada como sin pérdida contra el flujo de bytes original (54,71 GB). Segundo, abliteration con la herramienta `heretic` v2.0.0.dev0: se calculan direcciones de rechazo a partir de la diferencia de activaciones medias entre `mlabonne/harmless_alpaca` (25.058 prompts) y `mlabonne/harmful_behaviors` (416 prompts), y se proyectan fuera del residual stream y de las matrices de escritura `attn.o_proj` y `mlp.down_proj`. La búsqueda multiobjetivo (refusals frente a KL) con Optuna TPE cubrió 13 estudios y 1262 trials; el frente de Pareto nunca alcanzó refusals ≤ 10/100 con KL ≤ 0,07, y el checkpoint publicado corresponde al punto más cercano (trial 19 del estudio final R3). Tercero, selección manual de hiperparámetros: `direction_index` 40,5855, `max_weight` 2,6749 en posición 44,258 para `attn.o_proj`, `max_weight` 2,1627 en posición 56,032 para `mlp.down_proj`, con 89 de 128 capas abliterables modificadas (solo MLP entre las capas 39 y 63). Cuarto, re-cuantización al layout NVFP4 de ComfyUI, que difiere del de ModelOpt en dos aspectos: ComfyUI empaqueta con `hi_first=True` (nibble alto = columna par) mientras ModelOpt empaqueta el nibble bajo primero, y las escalas de bloque deben ir en layout bloqueado de cuBLAS con forma `(ceil(M/128)*128, ceil(K/16/4)*4)` mediante `to_blocked()`. El checkpoint incluye la clave `_quantization_metadata` y un marcador `<name>.comfy_quant` por capa para que `convert_old_quants` lo enrute a `MixedPrecisionOps`.
+
+La verificación reportada indica `max abs diff = 0.000000` en todas las capas no tocadas por abliteration y un RMS relativo de 2,5e-2 en las 89 capas modificadas, atribuido a error puro de cuantización FP4.
 
 ## Capacidades
 
-- Expansión de prompts: reescribe instrucciones breves o ambiguas en descripciones detalladas orientadas a generación de imágenes texto-a-imagen.
-- Generación de texto en inglés, orientada a la producción de descripciones visuales.
-- Integración con ComfyUI mediante el nodo CLIP Loader, lo que permite encadenarlo a pipelines de difusión.
-- Comportamiento "uncensored": menor probabilidad de rechazar peticiones que el modelo base, según la tasa de rechazo reportada del 10 %.
-- Soporte de *tool calling* / *function calling*: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (solo se declara inglés).
-- Capacidades especiales (modo *thinking*, visión, audio): no disponibles.
+- Expansión de prompts: reescribe prompts cortos de texto a imagen en descripciones largas y estructuradas, que es la función para la que fue entrenado el enhancer original.
+- Generación de texto general, heredada del modelo base Qwen3.8-27B.
+- Modo "thinking": el autor indica que debe activarse en el nodo `Generate Text` de ComfyUI; sin él el modelo puede producir salidas vacías.
+- Capacidad de razonamiento multi-paso dentro del modo thinking, según la arquitectura del modelo base (no se detalla el entrenamiento específico de RLHF/DPO en la información proporcionada).
+- Soporte de tool calling: no disponible en la información proporcionada.
+- Capacidades de agente: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según los tags del repositorio; no se documentan otros idiomas.
+- Visión y audio: no disponibles; el modelo es de texto.
+- Conducta de rechazo reducida: 10/100 refusals en el benchmark del autor, frente al comportamiento del modelo original.
 
 ## Casos de uso
 
-- Enriquecimiento automático de prompts en ComfyUI: el modelo se carga como CLIP en un flujo de trabajo de ComfyUI y transforma una frase corta del usuario en un prompt detallado con composición, iluminación y estilo, reduciendo la iteración manual.
-- Prototipado de pipelines texto-a-imagen: útil para equipos que experimentan con MiniMax-H3-Image y necesitan un expansor de prompts que no bloquee peticiones creativas o de contenido adulto legítimo.
-- Generación de descripciones para catálogos visuales: a partir de una etiqueta de producto se puede generar una descripción rica que alimente un generador de imágenes para *mockups* o material promocional.
-- Investigación sobre alineación y censura: el modelo sirve como caso de estudio para medir el efecto de heretic sobre la tasa de rechazo y la divergencia KL en un modelo de 27B, con métricas reproducibles.
-- Creación de contenido artístico sin restricciones temáticas: para estudios que necesitan explorar estilos o temáticas que los modelos alineados rechazan, dentro de los límites legales aplicables.
-- Evaluación comparativa de cuantizaciones: al estar en NVFP4, permite medir en ComfyUI la degradación de calidad frente a versiones en BF16 o GGUF del mismo modelo base.
+- Expansión de prompts en pipelines de text-to-image dentro de ComfyUI: el caso de uso principal. Se coloca el archivo en `ComfyUI/models/text_encoders/`, se carga con `CLIPLoader` y se conecta a `Generate Text` con thinking activado, de modo que un prompt breve del usuario se convierte en una caption detallada que alimenta el modelo de difusión.
+- Investigación sobre abliteration y modificación de pesos: el repositorio documenta con precisión el proceso (datasets, número de trials, hiperparámetros por capa, métricas de rechazo y KL), lo que lo convierte en una referencia reproducible para estudiar el equilibrio entre eliminar rechazos y preservar la distribución original.
+- Ingeniería de cuantización FP4: sirve como ejemplo trabajado de conversión entre layouts NVFP4 incompatibles (orden de nibbles y swizzling de escalas), útil para quien necesite portar checkpoints ModelOpt a ComfyUI o a otros runtimes con convenciones propias.
+- Evaluación de robustez de prompt enhancers: al ser una variante del enhancer original con pesos alterados, permite comparar la calidad de las captions generadas frente al modelo sin modificar en tareas de generación de imágenes.
+- Prototipado de herramientas creativas en local: al caber en un único archivo de 17,92 GB y cargarse en ComfyUI, permite montar un asistente de prompts para ilustración, diseño conceptual o generación de assets sin depender de APIs externas.
+- Estudio de licencias en modelos derivados: el caso ilustra las obligaciones de la MiniMax-H3-Image Community License (territorio aplicable, avisos en archivos modificados, umbral de facturación para uso comercial), relevante para equipos jurídicos y de compliance que evalúen modelos derivados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El único dato de evaluación reportado por el autor es la tasa de rechazo (10 %, 10/100) y la divergencia KL (0.1419) del proceso de *uncensoring*; no se aportan métricas de MMLU, HumanEval, GSM8K ni de calidad de expansión de prompts.
+El autor publica métricas del proceso de abliteration, no benchmarks de calidad de tarea:
+
+| Metrica | Valor |
+|---|---|
+| Refusals (benchmark del autor) | 10 / 100 |
+| Divergencia KL respecto al original | 0,1419 |
+| `direction_index` | 40,5855 |
+| `attn.o_proj` max_weight / posicion | 2,6749 / 44,258 |
+| `attn.o_proj` min_weight / distancia | 1,5040 / 51,367 |
+| `mlp.down_proj` max_weight / posicion | 2,1627 / 56,032 |
+| `mlp.down_proj` min_weight / distancia | 1,9718 / 17,446 |
+| Capas abliterables modificadas | 89 / 128 (MLP solo 39–63) |
+| Estudios / trials de búsqueda | 13 / 1262 |
+| Max abs diff en capas no modificadas | 0,000000 |
+| RMS relativo en capas modificadas | 2,5e-2 |
+
+No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, calidad de captions, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión. El repositorio ocupa 17,9 GB en NVFP4, por lo que se necesita al menos esa cantidad de VRAM para cargar los pesos, más el *overhead* de activaciones y del pipeline de ComfyUI.
-- GPU recomendadas: no disponibles en la documentación. Por el tamaño del archivo, se requiere una GPU con 24 GB o más (RTX 4090, RTX 3090, A100, H100) para una carga holgada.
-- ¿Cabe en GPU de consumo? Previsiblemente en RTX 4090 (24 GB) y RTX 3090 (24 GB); no se confirma para GPUs de 16 GB o menos.
-- Opciones de despliegue: ComfyUI mediante el nodo CLIP Loader; los tags mencionan sglang, aunque no se documenta la integración.
+- VRAM estimada para inferencia: el archivo pesa 17,92 GB en NVFP4; se necesita al menos esa cantidad de VRAM más el overhead de activaciones y del contexto. Con `max_length` de 16384 el consumo de activaciones puede ser considerable; no se proporciona una cifra exacta.
+- GPU recomendadas: el autor indica que se necesita una GPU con soporte de tensor cores FP4 para obtener velocidad real. En tarjetas más antiguas el modelo se de-cuantiza al vuelo: carga, pero es lento. No se especifican modelos concretos (A100, H100, RTX 4090, etc.) en la información proporcionada.
+- ¿Cabe en GPU de consumo? No disponible de forma explícita; 17,92 GB supera la VRAM de la mayoría de GPUs de consumo, salvo modelos con 24 GB o más, y en esos casos sin aceleración FP4 nativa el rendimiento será bajo.
+- Opciones de despliegue: ComfyUI con soporte NVFP4 (`comfy_quant` / `MixedPrecisionOps`); build antiguos caen a un modo de carga incorrecto. El repositorio menciona `sglang` como tag, pero no documenta instrucciones de despliegue con ese runtime.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H3-IMAGE-PE-HERETIC-NVFP4-COMFYUI | No disponible (base Qwen3.8-27B) | No disponible | NVFP4 | MiniMax-H3-Image Community (excluye UE, Reino Unido, Corea del Sur y EE. UU.) | Hugging Face, archivo único para ComfyUI |
-| Prompt enhancer original de MiniMax-H3-Image | No disponible | No disponible | No disponible | MiniMax-H3-Image Community | Hugging Face (MiniMaxAI) |
-| Qwen/Qwen3.8-27B (modelo base) | 27B (según denominación) | No disponible | Múltiples (no detalladas) | No disponible | Hugging Face (Qwen) |
+| H3-IMAGE-PE-HERETIC-NVFP4-COMFYUI (este) | Base Qwen3.8-27B | No disponible | NVFP4 single-file para ComfyUI | MiniMax-H3-Image Community (excluye UE, UK, Corea del Sur y EE. UU.) | Hugging Face, 12.369 descargas, 40 likes |
+| MiniMax-H3-Image prompt enhancer (original) | Base Qwen3.8-27B | No disponible | ModelOpt NVFP4 (no cargable por `transformers`) | MiniMax-H3-Image Community | Repositorio oficial MiniMaxAI |
+| Qwen3.8-27B (modelo base) | 27B (nominal) | No disponible | Safetensors bf16 | Según el repositorio de Qwen | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La diferencia principal entre este checkpoint y el original es la conducta de rechazo (10/100 refusals) y el formato de cuantización compatible con ComfyUI.
 
 ## Limitaciones y advertencias
 
-- Restricción territorial severa: la licencia excluye explícitamente la Unión Europea, el Reino Unido, Corea del Sur y Estados Unidos, por lo que su uso en España no está cubierto por los términos del acuerdo.
-- Uso comercial limitado: se requiere autorización previa por escrito de MiniMax si los ingresos anuales superan 1 millón de USD o si se ofrece como servicio alojado (Hosted Service).
-- Redistribución condicionada: obliga a incluir copia del acuerdo, avisos destacados en archivos modificados y el texto NOTICE.
-- Riesgo de alucinación: al ser un modelo de expansión de prompts, puede introducir elementos no solicitados en la descripción generada.
-- Sesgos y contenido: el proceso de *uncensoring* reduce los rechazos, lo que incrementa el riesgo de generar contenido inapropiado o no alineado con políticas de moderación.
-- Divergencia respecto al original: la KL de 0.1419 indica desviaciones medibles en la distribución de salida; no se documenta su impacto en la calidad de los prompts generados.
-- Idiomas: solo se declara inglés; el rendimiento en castellano no está verificado.
-- Documentación incompleta: faltan datos de contexto, dataset de entrenamiento, benchmarks y requisitos de hardware oficiales.
-- Nombre del repositorio engañoso: pese a los tags de "text-to-image", el modelo es un expansor de prompts, no un generador de imágenes.
+- No es un modelo libre de rechazos: rechaza aproximadamente 1 de cada 10 prompts del benchmark del autor. Es una reducción grande, no una eliminación.
+- Solo se modificaron 89 de las 128 capas abliterables; las capas fuera del trapecio son idénticas bit a bit al original.
+- Es obligatorio activar `thinking`; en caso contrario puede producir salidas vacías. Si persiste, el autor recomienda subir `max_length` (él usa 16384).
+- Requiere una build de ComfyUI con soporte NVFP4 (`comfy_quant` / `MixedPrecisionOps`); builds antiguas cargan el modelo de forma incorrecta.
+- En GPUs sin tensor cores FP4 el modelo se de-cuantiza al vuelo y el rendimiento cae, aunque sigue cargando.
+- La licencia MiniMax-H3-Image Community limita el territorio aplicable a todo el mundo excepto la Unión Europea, el Reino Unido, Corea del Sur y Estados Unidos; España queda dentro de la UE y, por tanto, fuera del territorio aplicable.
+- La redistribución exige incluir una copia del acuerdo, avisos prominentes en los archivos modificados y el texto `NOTICE`.
+- El uso comercial por encima de 1 millón de USD de facturación anualizada tiene condiciones adicionales (el texto de la model card se corta en ese punto; debe consultarse el acuerdo completo).
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada; al derivar de Qwen3.8-27B y haber sufrido abliteration, es esperable una alteración de la distribución en las capas modificadas (KL 0,1419), pero no se cuantifican efectos concretos sobre calidad o sesgos.
+- Idioma: solo inglés según los tags; no se garantiza un comportamiento correcto en castellano.
+- El modelo es un enhancer de prompts, no un generador de imágenes: su salida es texto.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tuanlai001/H3-IMAGE-PE-HERETIC-NVFP4-COMFYUI
-- Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
-- Licencia MiniMax-H3-Image: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE
+- Repositorio Hugging Face: https://huggingface.co/tuanlai001/H3-IMAGE-PE-HERETIC-NVFP4-COMFYUI
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del modelo original MiniMax-H3-Image: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
-- Herramienta heretic: https://github.com/p-e-w/heretic
+- Licencia MiniMax-H3-Image Community: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE
+- Herramienta heretic (abliteration): https://github.com/p-e-w/heretic
+- Dataset `mlabonne/harmless_alpaca`: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+- Dataset `mlabonne/harmful_behaviors`: https://huggingface.co/datasets/mlabonne/harmful_behaviors

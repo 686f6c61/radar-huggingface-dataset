@@ -2,88 +2,97 @@
 
 ## Resumen
 
-GRT-30M-TTS es un modelo de síntesis de voz (text-to-speech) desarrollado por MatterWaveAI, construido como un fine-tune del modelo de lenguaje base `MatterWaveAI/grt-30m`. Su particularidad es que se presenta como un modelo "100% rotacional": según el autor, no contiene ninguna capa `nn.Linear` ni `nn.Conv1d`, sino que toda la computación se realiza mediante rotaciones de Givens sobre un transformer causal de 12 capas. El modelo combina un backbone de lenguaje congelado (para preservar la fluidez textual) con una cabeza vocoder polar que transforma representaciones internas en formas de onda mediante STFT e iSTFT a 16 kHz.
+GRT-30M-TTS es un modelo de síntesis de voz (text-to-speech) desarrollado por MatterWaveAI, construido sobre el modelo de lenguaje causal `MatterWaveAI/grt-30m`. Su particularidad es que se presenta como un modelo "100% nativo rotacional": no contiene capas `nn.Linear` ni `nn.Conv1d`, sino que toda la computación se articula mediante transformaciones de Givens y operaciones geométricas polares. El modelo combina un backbone de lenguaje congelado de 12 capas (29.305.498 parámetros) con una cabeza vocoder polar (`GRTPolarVocoderHead`) de 47.361 parámetros, sumando 29.352.859 parámetros totales.
 
-Con aproximadamente 29,35 millones de parámetros totales, es un modelo muy pequeño orientado a investigación arquitectónica más que a producción de voz de alta calidad. La cabeza de voz añade solo 47.361 parámetros sobre el backbone, y el entrenamiento se realizó con el optimizador HessianPairAdam / Sophia-Torus. Es relevante ahora como ejemplo de exploración de arquitecturas alternativas al transformer estándar aplicadas a tareas multimodales ligeras.
+El modelo resuelve la conversión de texto a audio mediante una arquitectura poco convencional: el backbone genera representaciones de token y una cabeza de mariposa de Givens (butterfly expand/contract en 15 etapas) transforma esas representaciones en bins STFT `(Re, Im)` que se convierten en onda mediante `torch.istft` a 16 kHz. La model card reporta métricas de alineación acústica que pasan de valores negativos (sin alinear) a una similitud coseno polar de frame de 0,9874 y un SNR espectral de 12,03 dB tras el entrenamiento con el optimizador `HessianPairAdam` (Sophia-Torus).
 
-La licencia Apache 2.0 y su reducido tamaño lo hacen fácilmente reproducible, aunque su madurez, idiomas soportados y calidad de síntesis no están documentados con detalle en la información disponible.
+Es relevante ahora por su enfoque de investigación: explora optimizadores geométricos, simbióticos y giroscópicos sobre una arquitectura rotacional, y publica una ablación de 8 optimizadores clásicos. No obstante, su tamaño (30M) y su naturaleza experimental lo sitúan lejos de los sistemas TTS de producción; está pensado para investigación sobre geometría de modelos más que para despliegue comercial a gran escala.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer causal rotacional (Givens Rotational Transformer) con cabeza vocoder polar; 0 capas `nn.Linear`, 0 capas `nn.Conv1d` |
-| Parámetros totales | 29.352.859 (según model card); 29.922.677 (según safetensors) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformador causal rotacional (Givens) de 12 capas + cabeza vocoder polar (`GRTPolarVocoderHead`) |
+| Parámetros totales | 29.352.859 (backbone 29.305.498 + cabeza 47.361) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | GGUF (según tags del repo); no se detallan variantes concretas |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se compone de dos bloques. El backbone lingüístico es un `GRTModel` con `GRTCosineHead` de 12 capas causales y 29.305.498 parámetros, heredado del modelo base `grt-30m` y congelado durante el fine-tune para conservar la fluidez textual. Sobre él se añade una `GRTPolarVocoderHead` de 47.361 parámetros que implementa una expansión mariposa (butterfly) de Givens en 15 etapas, seguida de una activación `GRTRadialGELU` y una contracción mariposa también de 15 etapas. La cabeza produce 128 bins STFT en formato `(Re, Im)` con `frames_per_token=4` y sintetiza la onda mediante `torch.istft` a 16 kHz.
+El backbone es `GRTModel` con `GRTCosineHead`, un transformador causal de 12 capas basado en rotaciones de Givens, congelado durante el entrenamiento del módulo de voz para preservar la fluidez textual del modelo base. Sobre él se añade `GRTPolarVocoderHead`, una mariposa de Givens de 15 etapas que expande, aplica `GRTRadialGELU` y contrae de nuevo, produciendo `128` bins STFT `(Re, Im)` con `frames_per_token=4`, que se convierten en onda de audio a 16 kHz mediante `torch.istft`. El modelo completo (`GRTTTSForConditionalGeneration`) no contiene capas `nn.Linear` ni `nn.Conv1d`.
 
-El entrenamiento se realizó con el optimizador HessianPairAdam / Sophia-Torus, y la model card reporta métricas de alineación de la síntesis: similitud coseno polar por frame de -0,0779 a 0,9874, similitud coseno polar por enunciado de -0,0772 a 0,9684, similitud coseno de la envolvente de magnitud de 0,9843 y SNR espectral de -6,99 dB a 12,03 dB. No se detalla el volumen de datos de entrenamiento, la composición del corpus ni si hubo RLHF o DPO.
+El entrenamiento se realizó con el optimizador `HessianPairAdam` (denominado Sophia-Torus en la model card). La model card documenta una ablación de 8 optimizadores geométricos, simbióticos y giroscópicos sobre `AMD Radeon 8060S Graphics` (ROCm gfx1151), con 200 pasos por optimizador, `batch_size=64` y semilla 42, usando un banco de códecs RVQ polar de 4 codebooks (`K=64` por codebook). No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La innovación técnica destacable es la sustitución total de operaciones lineales por rotaciones geométricas y la inclusión de un banco RVQ polar para la parte discreta del códec de voz.
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto mediante un prompt con formato de chat (`<|im_start|>user ... <|im_end|>`), devolviendo una forma de onda (`speech_waveform`).
-- Control de estilo básico mediante indicaciones en el prompt (por ejemplo, "alto, declarative").
-- Generación de texto heredada del backbone `grt-30m` (modelo de lenguaje causal).
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingües: no disponibles.
-- No se documentan modos especiales como thinking mode, visión o audio de entrada.
+- Síntesis de voz a partir de texto (text-to-speech) con control de estilo mediante prompt, por ejemplo `Speak (alto, declarative): ...`.
+- Generación de onda de audio a 16 kHz mediante `torch.istft` a partir de bins STFT predichos.
+- Modelo de lenguaje causal subyacente con fluidez textual preservada (backbone congelado).
+- Soporte de banco de códecs RVQ polar de 4 codebooks para representación discreta de voz.
+- Integración con `transformers` mediante `AutoTokenizer` y `GRTTTSForConditionalGeneration`.
+- No se documentan capacidades de tool calling, agentes, visión, audio de entrada ni multilingüismo.
 
 ## Casos de uso
 
-- Investigación en arquitecturas rotacionales: el modelo sirve como banco de pruebas para estudiar si las rotaciones de Givens pueden sustituir a las capas lineales en tareas de audio, gracias a su tamaño reducido y a la ausencia de `nn.Linear`.
-- Reproducción de experimentos académicos: con 29,35 M de parámetros y licencia Apache 2.0, es viable reentrenar y comparar variantes en hardware modesto.
-- Prototipado de TTS embebido: su tamaño (repo de 0,1 GB) permite experimentar con síntesis de voz en dispositivos con recursos limitados, siempre que se valide la calidad.
-- Generación de voz para demos y pruebas de concepto: la API de `transformers` con `GRTTTSForConditionalGeneration` facilita integrarlo en notebooks y pipelines de evaluación.
-- Estudio de vocoders polares: la cabeza STFT/iSTFT a 16 kHz permite analizar la calidad espectral (SNR de 12,03 dB) frente a vocoders neuronales convencionales.
-- Base para fine-tunes multimodales: al formar parte de la suite GRT (chat, embedding, reranker, VL, omni), puede integrarse en experimentos que combinen lenguaje y audio dentro de la misma familia arquitectónica.
+- Investigación en arquitecturas rotacionales: el modelo sirve como banco de pruebas para estudiar transformadores basados en rotaciones de Givens sin capas lineales, comparando su comportamiento con transformadores estándar en tareas de audio.
+- Estudio de optimizadores geométricos: la ablación de 8 optimizadores (HessianPairAdam, PolarNaturalAdam, PairAdam, etc.) permite reproducir y extender experimentos sobre optimización en variedades y geometría simpléctica.
+- Síntesis de voz experimental de baja latencia: con 30M de parámetros y salida a 16 kHz, es adecuado para prototipos de TTS en entornos con recursos limitados, aunque la calidad no está validada con métricas perceptuales (MOS).
+- Generación de audio para investigación en códecs RVQ: el banco de 4 codebooks con `K=64` permite experimentar con representaciones discretas de voz y evaluar la accuracy top-1 por codebook.
+- Docencia y divulgación: por su tamaño reducido y su arquitectura inusual, es útil para explicar conceptos de rotaciones, STFT y vocoders polares en cursos de aprendizaje profundo.
+- Reproducción de experimentos de la model card: los scripts y métricas reportadas (similitud coseno polar, SNR espectral) permiten validar la implementación en hardware AMD ROCm.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta métricas internas de alineación de la síntesis:
+La model card no reporta benchmarks estándar de TTS (MOS, WER, MCD) ni de lenguaje (MMLU, HumanEval, GSM8K). Los únicos datos publicados son métricas internas de alineación acústica y una ablación de optimizadores:
 
-| Métrica | Antes | Después |
+| Métrica | Antes (sin alinear) | Después (alineado) |
 |---|---|---|
-| Similitud coseno polar por frame | -0,0779 | 0,9874 |
-| Similitud coseno polar por enunciado | -0,0772 | 0,9684 |
-| Similitud coseno de envolvente de magnitud | no disponible | 0,9843 |
+| Similitud coseno polar de frame | -0,0779 | 0,9874 |
+| Similitud coseno polar de utterance | -0,0772 | 0,9684 |
+| Similitud coseno de envolvente de magnitud | No disponible | 0,9843 |
 | SNR espectral | -6,99 dB | 12,03 dB |
+
+Ablación de optimizadores (mejores resultados por métrica):
+
+| Optimizador | Val loss RVQ | Val PPL RVQ | Top-1 medio RVQ | Codebook-0 acc | Margen texto (ΔL) | SNR espectral |
+|---|---|---|---|---|---|---|
+| HessianPairAdam | 1,6574 | 5,2456 | 42,31% | 40,30% | +0,1942 | 11,27 dB |
+| PolarNaturalAdam | 1,6606 | 5,2626 | 42,37% | 40,24% | +0,1912 | 11,24 dB |
+| PairAdam | 1,6647 | 5,2841 | 42,14% | 39,86% | +0,1785 | 11,37 dB |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en fp32 dado el tamaño de 29,35 M de parámetros (aproximadamente 120 MB de pesos).
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es suficiente; también es viable en CPU.
-- Cabe en GPU consumer: sí, holgadamente, e incluso en entornos integrados.
-- Opciones de despliegue: `transformers` (según la model card); no se documenta soporte explícito de vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (30M de parámetros, ~120 MB de pesos) más overhead de activaciones y buffers STFT; el repo ocupa 0,6 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 o superior) es suficiente; también cabe en CPU para prototipos.
+- Cabe en GPU consumer: sí, en todas las GPU con al menos 2 GB de VRAM; incluso en iGPU y en CPU.
+- Opciones de despliegue: `transformers` (según quickstart de la model card); se distribuye también en GGUF, lo que permite `llama.cpp` u `Ollama` para el backbone textual, aunque la cabeza de voz requiere la implementación `GRTTTSForConditionalGeneration`.
+- Latencia y throughput: no disponibles. La ablación reporta tiempos de entrenamiento de 24-30 s por optimizador (200 pasos, batch 64) en AMD Radeon 8060S, pero no se publican métricas de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
-| MatterWaveAI/grt-30m-tts | 29,35 M | no disponible | Apache 2.0 | TTS rotacional de investigación |
-| MatterWaveAI/grt-30m | no disponible | no disponible | Apache 2.0 | LM causal base de la suite GRT |
-| MatterWaveAI/grt-30m-omni | no disponible | no disponible | Apache 2.0 | Multimodal visión-audio-lenguaje-voz |
+| GRT-30M-TTS | 29,35M | No disponible | Apache 2.0 | TTS rotacional experimental, sin capas lineales |
+| VITS (modelos pequeños) | ~20-40M | No aplica | Varía (MIT en implementaciones) | TTS end-to-end con normalizing flows y GAN |
+| Piper (voces pequeñas) | ~5-20M | No aplica | MIT | TTS ligero para dispositivos, basado en VITS |
+| Coqui TTS (modelos base) | ~50-100M | No aplica | MPL 2.0 | TTS multi-modelo con vocoders neuronales |
 
-No se dispone de datos comparativos de rendimiento frente a otros modelos TTS de la misma categoría en la información proporcionada.
+No se dispone de comparaciones directas de calidad (MOS, WER) entre GRT-30M-TTS y estos sistemas, por lo que la comparativa es estructural, no de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en producción.
-- Calidad de síntesis limitada: el SNR espectral reportado es de 12,03 dB, lo que sugiere artefactos perceptibles en la voz generada.
-- Idiomas soportados no documentados; no se puede asumir cobertura multilingüe.
-- Longitud de contexto no disponible, lo que impide planificar entradas largas con garantías.
-- No se documentan sesgos, pero al ser un modelo pequeño y con corpus de entrenamiento no descrito, el riesgo de alucinación y de voces inconsistentes es alto.
-- La licencia Apache 2.0 permite uso comercial, pero la falta de evaluación de calidad y de datos de entrenamiento desaconseja su uso en producción sin validación previa.
-- El backbone está congelado, por lo que las capacidades lingüísticas quedan limitadas a las del modelo base `grt-30m`.
+- Modelo de investigación: no hay métricas perceptuales (MOS) ni evaluación de inteligibilidad (WER) publicadas, por lo que la calidad de la voz sintetizada no está validada.
+- Tamaño muy reducido (30M): la fidelidad y naturalidad del audio serán previsiblemente inferiores a sistemas TTS de producción.
+- Idiomas soportados no documentados; la model card solo muestra prompts en inglés.
+- Longitud de contexto no especificada, lo que limita el diseño de aplicaciones con textos largos.
+- Riesgo de alucinación y artefactos acústicos inherente a un vocoder entrenado con pocos pasos y sin evaluación perceptual.
+- Licencia Apache 2.0 permite uso comercial, pero la falta de validación de calidad desaconseja su uso en producción sin evaluación propia.
+- Dependencia de implementaciones personalizadas (`GRTTTSForConditionalGeneration`, optimizadores en `transformers.models.grt.optimization_grt`), lo que puede dificultar la portabilidad.
+- No se documentan sesgos; al ser un modelo de voz, podría reflejar sesgos del dataset de entrenamiento, no especificado.
 
 ## Enlaces
 
@@ -94,7 +103,4 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos TTS de
 - Embedding: https://huggingface.co/MatterWaveAI/grt-30m-embedding
 - Reranker: https://huggingface.co/MatterWaveAI/grt-30m-reranker
 - Vision-Language: https://huggingface.co/MatterWaveAI/grt-30m-vl
-- Tokenizer: https://huggingface.co/MatterWaveAI/grt-30m-tokenizer
-- Omni: https://huggingface.co/MatterWaveAI/grt-30m-omni
-- Whitepaper: https://huggingface.co/MatterWaveAI/grt-30m/resolve/main/GRT_Whitepaper.pdf
-- Sitio del autor: https://matterwave.ai
+- Tokenizer y banco de embeddings polares: https://huggingface.co/MatterWaveAI/grt-30m-tokenizer

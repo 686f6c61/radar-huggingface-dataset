@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Kenzan-MiniMax-H3-Image-20B-PinGrid-GGUF es una cuantización extrema en formato GGUF del modelo de generación y edición de imágenes MiniMax-H3-Image, publicada por el usuario kabcnd bajo la serie "Kenzan". El objetivo declarado del autor es hacer viable la inferencia local de un pipeline de difusión de 20.113.672.082 parámetros (un Diffusion Transformer de 50 bloques) junto con un codificador de texto/visión Qwen3-VL-32B truncado a 50 capas, dentro de los 16 GB de memoria unificada de un Apple Mac mini M6. Para ello aplica una estrategia propia de cuantización por capas denominada "Pin-Grid", que asigna precisiones distintas (Q2_K, Q3_K, Q4_0, Q5_K, Q8_0 y F32) según la sensibilidad de cada bloque.
+Kenzan-MiniMax-H3-Image-20B-PinGrid-GGUF es una cuantización extrema en formato GGUF del modelo de generación y edición de imágenes MiniMax-H3-Image, publicada por el usuario kabcnd bajo la serie "Kenzan". El modelo original lo desarrolla MiniMaxAI y la versión de referencia utilizada como base es la distribuida por Comfy-Org. Se trata de un pipeline text-to-image compuesto por un Diffusion Transformer (DiT) de 20.113 millones de parámetros, un codificador de texto y visión basado en Qwen3-VL-32B truncado a 50 capas y un VAE específico del modelo.
 
-El paquete completo incluye tres artefactos: el DiT cuantizado a 8,40 GiB (compresión de 4,46× frente a los 37,47 GiB en BF16), el codificador de texto Qwen3-VL-32B en 10,46 GiB (desde 25,28 GiB en int8_convrot) y el VAE original en FP16 de 1,09 GiB. El autor publica además los scripts de conversión a GGUF.
+El objetivo del autor es hacer viable la inferencia local de un modelo de imagen de escala 20B en equipos con solo 16 GB de memoria unificada, en concreto un Apple Mac mini M6. Para ello aplica una estrategia propia denominada "Pin-Grid", que asigna distintos niveles de cuantización (de Q2_K a Q5_K, con normas y proyecciones adaLN en F32) según la posición y sensibilidad de cada bloque de la red, comprimiendo el DiT de 37,47 GiB en BF16 a 8,40 GiB, una reducción de 4,46 veces.
 
-Es relevante porque demuestra que un modelo de imagen de escala frontier puede ejecutarse en hardware de consumo con memoria unificada, usando `stable-diffusion.cpp` con backend Metal o ComfyUI con ComfyUI-GGUF. El modelo base es Comfy-Org/MiniMax-H3-Image y la licencia aplicable es la MiniMax-H3-Image Community License Agreement, que no es una licencia de código abierto estándar.
+La relevancia actual del release radica en que demuestra que un modelo de difusión de 20B puede ejecutarse en hardware de consumo con memoria unificada limitada, usando `stable-diffusion.cpp` con Metal 4 o ComfyUI con ComfyUI-GGUF, con velocidades medidas de 7,20 a 8,24 s por paso a 1024×1024 y sin errores de memoria (OOM). La licencia es la MiniMax-H3-Image Community License Agreement, no una licencia de código abierto estándar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Diffusion Transformer (DiT) de 50 bloques + codificador de texto/visión Qwen3-VL-32B (50 capas) + VAE |
-| Parametros totales | 20.113.672.082 (DiT); el codificador de texto se distribuye aparte |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros totales | 20.113.672.082 (DiT); el codificador de texto Qwen3-VL-32B se distribuye por separado |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pin-Grid: Q2_K, Q3_K, Q4_0, Q5_K, Q8_0 y F32 (normas y adaln) en el DiT; Q2_K, Q3_K, Q4_0, Q5_K y Q8_0 en el codificador de texto; VAE en FP16 |
+| Tipos de cuantizacion | Pin-Grid mixta: Q2_K, Q3_K, Q4_0, Q5_K en el DiT (normas y adaLN en F32); Q2_K, Q3_K, Q4_0, Q5_K y Q8_0 en el codificador (visual.* en Q8_0) |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-image-community-license-agreement (license: other) |
-| Formato de pesos | GGUF (DiT y codificador de texto) + safetensors (VAE) |
+| Licencia | minimax-h3-image-community-license-agreement (other) |
+| Formato de pesos | GGUF (DiT y text encoder) + safetensors FP16 (VAE) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Diffusion Transformer de 20.113.672.082 parámetros con 50 bloques, que actúa como red de difusión para generación y edición de imágenes. La cuantización Kenzan no modifica la arquitectura, sino que redistribuye la precisión por capas: `token_refiner.*` y `final_layer.*` en Q5_K; bloques de entrada y salida (0, 1, 48, 49), las atenciones de los bloques 40-47 y los `mlp.fc2` de pico (8, 16, 24, 32, 40) en Q4_0; bloques medio-tardíos (20-47) en Q3_K; MLP tempranos (2-19) en Q2_K; y `adaln_t_table`, `adaln_proj`, `patch_proj` y todas las normas en F32 para preservar estabilidad numérica.
+El pipeline sigue la arquitectura del MiniMax-H3-Image original: un Diffusion Transformer de 20,11B parámetros y 50 bloques que actúa como generador de imágenes, un codificador de texto y visión derivado de Qwen3-VL-32B recortado a 50 capas que procesa las indicaciones textuales y, en el caso de edición de imágenes, también las imágenes de entrada, y un VAE de 1,09 GiB en FP16 que decodifica las latentes a píxeles. El autor no proporciona detalles sobre los datos de entrenamiento del modelo original (número de tokens, composición del dataset, uso de RLHF o DPO), por lo que esa información no está disponible en la documentación consultada.
 
-El codificador de texto es un Qwen3-VL-32B recortado a 50 capas, originalmente en `int8_convrot` (25,28 GiB), dequantizado y recuantizado con la misma estrategia Pin-Grid: `visual.*` en Q8_0 (necesario para edición de imagen), `model.embed_tokens` en Q5_K, capas de entrada y salida (0, 48, 49), `k_proj`/`v_proj` y `mlp.down_proj` de pico en Q4_0, capas 20-47 en Q3_K y MLP tempranos (1-19) en Q2_K.
-
-No se dispone de información sobre el dataset de entrenamiento, número de tokens, composición ni si hubo RLHF/DPO en la información proporcionada. El autor publica los scripts de conversión (`recipes/convert_dit_to_gguf.py`, `recipes/convert_te_to_gguf.py`) para reproducir el proceso de cuantización en streaming.
+La innovación técnica de esta ficha no reside en el entrenamiento, sino en el esquema de cuantización Pin-Grid. En el DiT, los módulos `token_refiner` y `final_layer` se mantienen en Q5_K; los bloques de entrada y salida (0, 1, 48, 49), las atenciones de los bloques 40 a 47 y las proyecciones `mlp.fc2` de mayor tamaño (8, 16, 24, 32, 40) se asignan a Q4_0; los bloques intermedios y tardíos (20 a 47) a Q3_K; y las MLP tempranas (2 a 19) a Q2_K. Las normas, `adaln_t_table`, `adaln_proj` y `patch_proj` se conservan en F32. El codificador de texto aplica una lógica análoga, con las capas visuales en Q8_0 para preservar la capacidad de edición de imágenes, `embed_tokens` en Q5_K, capas de entrada y salida y proyecciones k/v en Q4_0, y el resto en Q3_K y Q2_K. El repositorio incluye los scripts de conversión (`convert_dit_to_gguf.py` y `convert_te_to_gguf.py`) para reproducir el proceso.
 
 ## Capacidades
 
-- Generación de imágenes texto-a-imagen (pipeline `text-to-image`).
-- Edición de imágenes, soportada por las capas `visual.*` del codificador Qwen3-VL cuantizadas en Q8_0.
-- Codificación conjunta de texto y visión mediante Qwen3-VL-32B, lo que permite condicionamiento multimodal.
-- Inferencia local en Apple Silicon mediante `stable-diffusion.cpp` (`sd-cli` / `sd-server`) con Metal.
-- Compatibilidad con ComfyUI a través de ComfyUI-GGUF.
-- Muestreo con scheduler `euler`/`simple` y `cfg-scale` configurable (el autor verifica 6 pasos con `cfg-scale 1.0`).
-- No se documentan capacidades de tool calling, agentes ni multi-step reasoning, al ser un modelo de imagen.
+- Generación de imágenes a partir de texto (text-to-image) a resoluciones de al menos 1024×1024, con muestreo de 6 pasos y scheduler euler/simple según los ejemplos del autor.
+- Edición de imágenes, gracias a las capas `visual.*` del codificador Qwen3-VL conservadas en Q8_0.
+- Comprensión conjunta de texto e imagen en el codificador, al estar basado en Qwen3-VL-32B.
+- Ejecución local en Apple Silicon mediante `stable-diffusion.cpp` (`sd-cli` y `sd-server`) con Metal 4, incluyendo `--offload-to-cpu` y `--flash-attn`.
+- Integración con ComfyUI a través de ComfyUI-GGUF, con dequantización por capa a FP16 en tiempo de ejecución sobre PyTorch MPS.
+- Servidor persistente (`sd-server`) que evita la carga en frío de pesos entre peticiones.
+- Soporte de tool calling, agentes, razonamiento multi-paso, audio o modo thinking: no disponible (el modelo es un pipeline de imagen, no un LLM conversacional).
 
 ## Casos de uso
 
-- Generación de imágenes en un Mac mini de 16 GB: el pipeline completo (DiT + codificador + VAE) cabe en memoria unificada con `--offload-to-cpu`, permitiendo generar a 1024×1024 sin OOM.
-- Edición de imágenes local: las capas `visual.*` en Q8_0 permiten usar el codificador Qwen3-VL para condicionar ediciones sobre una imagen de entrada, sin salir del equipo.
-- Prototipado de pipelines de difusión en ComfyUI: la integración con ComfyUI-GGUF permite construir grafos de generación y edición con carga por capas y dequantización en tiempo de ejecución.
-- Servicio persistente de generación de imágenes: `sd-server` elimina el coste de carga en frío de pesos y expone un endpoint HTTP para integrarse en aplicaciones internas.
-- Investigación en cuantización extrema: los scripts de conversión y la receta Pin-Grid sirven como base para estudiar el impacto de precisiones mixtas por capa en modelos de difusión de gran tamaño.
-- Despliegue en entornos con memoria limitada: con 8,40 GiB de DiT y 10,46 GiB de codificador, es posible ejecutar el pipeline en máquinas de 16 GB, algo inviable con los pesos BF16 originales (37,47 GiB).
+- Generación de ilustraciones y concept art en estaciones de trabajo Apple Silicon: un Mac mini de 16 GB puede producir imágenes de 1024×1024 con 6 pasos en torno a 43-49 segundos de DiT más 2,4-2,6 segundos de decodificación VAE, suficiente para iterar prompts de forma local sin depender de la nube.
+- Edición de imágenes asistida por instrucciones: las capas visuales del codificador en Q8_0 permiten introducir una imagen de referencia junto al prompt para tareas de modificación guiada, útil en flujos de retoque o variaciones de producto.
+- Prototipado de pipelines de difusión en ComfyUI: al estar en formato GGUF compatible con ComfyUI-GGUF, se puede integrar en grafos nodales existentes para experimentar con schedulers, CFG y resoluciones antes de escalar a hardware mayor.
+- Servicio de generación de imágenes en red local: `sd-server` mantiene los pesos cargados y expone un endpoint en el puerto configurado (`--listen-port 8189` en el ejemplo), lo que permite alimentar aplicaciones internas de diseño o marketing sin coste de API.
+- Investigación sobre cuantización extrema: los scripts de conversión y las recetas Pin-Grid sirven como referencia reproducible para estudiar el impacto de asignar bits por bloque en modelos de difusión de gran tamaño.
+- Despliegue en entornos con memoria unificada limitada: equipos con 16 GB que no pueden alojar el BF16 de 37,47 GiB pueden ejecutar el modelo con `--offload-to-cpu`, lo que amplía el acceso a modelos de imagen de escala 20B en hardware de consumo.
+- Docencia y demostraciones offline: al no requerir conexión ni GPU dedicada, es adecuado para talleres sobre modelos generativos en aulas con portátiles Apple Silicon.
 
 ## Benchmarks y rendimiento
 
-El autor publica mediciones de velocidad en un Apple Mac mini M6 con 16 GB de memoria unificada, a 1024×1024, 6 pasos, scheduler `euler/simple`:
+Los únicos datos publicados por el autor son mediciones de velocidad en un Apple Mac mini M6 con 16 GB de memoria unificada, a 1024×1024 y 6 pasos con euler/simple. No se han publicado resultados de benchmarks de calidad (FID, CLIP score, MMLU, HumanEval u otros) en la información disponible.
 
-| Backend | Velocidad por paso (DiT) | Decodificación VAE | RSS máximo | Notas |
+| Backend | Velocidad por paso del DiT | Decodificación VAE | RSS máximo | Notas |
 |---|---|---|---|---|
-| ComfyUI + ComfyUI-GGUF (PyTorch MPS) | 13,27 s/paso | 5,36 s | 11,88 GiB | Dequantización por capa a FP16 en runtime |
-| stable-diffusion.cpp (sd-cli / sd-server, Metal 4) | 7,20 – 8,24 s/paso | 2,43 – 2,59 s | Cabe en 16 GB (`--offload-to-cpu`) | 1,8× más rápido en DiT y 2,1× en VAE |
-
-No se han publicado resultados de benchmarks de calidad (FID, CLIP score, MMLU u otros) en la información disponible. Las cifras anteriores son medidas de latencia y memoria, no de calidad de generación.
+| ComfyUI + ComfyUI-GGUF (PyTorch MPS) | 13,27 s/paso | 5,36 s | 11,88 GiB | Dequantización por capa a FP16 en tiempo de ejecución |
+| stable-diffusion.cpp (sd-cli / sd-server, Metal 4) | 7,20 – 8,24 s/paso | 2,43 – 2,59 s | Cabe en 16 GB con `--offload-to-cpu` | 1,8× más rápido en DiT y 2,1× en VAE que ComfyUI |
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el pipeline completo requiere aproximadamente 8,40 GiB (DiT) + 10,46 GiB (codificador) + 1,09 GiB (VAE), gestionados mediante `--offload-to-cpu` para encajar en 16 GB.
-- GPU recomendadas: Apple Silicon con 16 GB de memoria unificada (verificado en Mac mini M6). No se documentan pruebas en GPU NVIDIA o AMD.
-- Cabe en GPU de consumo: sí, en el escenario verificado de Apple Silicon de 16 GB; no hay datos para RTX 4090 u otras GPU discretas.
-- Opciones de despliegue: `stable-diffusion.cpp` (`sd-cli` y `sd-server` con Metal y `--flash-attn on`), ComfyUI con ComfyUI-GGUF.
-- Latencia y throughput: 7,20-8,24 s/paso en DiT y 2,43-2,59 s de decodificación VAE con `stable-diffusion.cpp`; 13,27 s/paso y 5,36 s con ComfyUI. Para 6 pasos, el tiempo total de generación ronda los 45-50 s en `stable-diffusion.cpp`.
+- VRAM o memoria unificada estimada: el release está diseñado para 16 GB de memoria unificada; el DiT ocupa 8,40 GiB, el codificador 10,46 GiB y el VAE 1,09 GiB, por lo que se requiere `--offload-to-cpu` para encajar en ese límite.
+- GPU recomendadas: Apple Silicon con Metal 4 (el autor valida Mac mini M6 de 16 GB). Para GPU dedicadas no se han publicado requisitos ni pruebas.
+- ¿Cabe en GPU de consumo? El release está pensado para memoria unificada de Apple Silicon; no hay datos de ejecución en RTX 4090, RTX 3090 u otras GPU de consumo con VRAM discreta.
+- Opciones de despliegue: `stable-diffusion.cpp` (`sd-cli` y `sd-server`) con Metal, y ComfyUI con ComfyUI-GGUF. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de pipeline.
+- Latencia y throughput: 7,20-8,24 s por paso en DiT y 2,43-2,59 s de VAE con `stable-diffusion.cpp`; 13,27 s por paso y 5,36 s de VAE con ComfyUI. Para 6 pasos, el total ronda los 45-52 segundos por imagen en el backend más rápido.
+- Almacenamiento: el repositorio completo ocupa 21,4 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto / resolución | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kenzan-MiniMax-H3-Image-20B-PinGrid-GGUF | 20.113.672.082 (DiT) + Qwen3-VL-32B L50 | no disponible | GGUF + safetensors | MiniMax-H3-Image Community License | Hugging Face (0 descargas) |
-| Comfy-Org/MiniMax-H3-Image (modelo base) | 20.113.672.082 (DiT) | no disponible | no disponible en la información | MiniMax-H3-Image Community License | Hugging Face |
-| MiniMaxAI/MiniMax-H3-Image (upstream) | no disponible | no disponible | no disponible | MiniMax-H3-Image Community License | Hugging Face |
+| Kenzan-MiniMax-H3-Image-20B-PinGrid-GGUF | 20,11B (DiT) + codificador Qwen3-VL-32B | 1024×1024 validado | GGUF + safetensors (VAE) | MiniMax-H3-Image Community License | Hugging Face (750 descargas) |
+| Comfy-Org/MiniMax-H3-Image (base) | 20,11B (DiT) | no disponible | safetensors | MiniMax-H3-Image Community License | Hugging Face |
+| MiniMaxAI/MiniMax-H3-Image (original) | 20,11B (DiT) | no disponible | safetensors | MiniMax-H3-Image Community License | Hugging Face |
+| Bonsai-2 (Prism ML) | no disponible | no disponible | no disponible | no disponible | Hugging Face (citado como inspiración) |
 
-No se dispone de información sobre otros modelos comparables de la misma categoría (difusión texto-a-imagen de ~20B) en la información proporcionada. No se han publicado datos de calidad que permitan comparar rendimiento frente a alternativas.
+La comparativa se limita a las variantes del mismo modelo y a Bonsai-2, mencionado por el autor como referente en cuantización de bajo bit. No se dispone de datos de benchmarks de calidad para comparar rendimiento entre ellos.
 
 ## Limitaciones y advertencias
 
-- La cuantización extrema (Q2_K en MLP tempranos del DiT y del codificador) puede degradar la calidad de generación respecto al modelo en BF16; el autor no publica métricas de calidad comparativas.
-- El recorte del codificador Qwen3-VL-32B a 50 capas puede reducir la fidelidad del condicionamiento de texto e imagen frente al modelo completo.
-- El modelo está verificado únicamente en Apple Silicon de 16 GB con Metal; no hay validación en GPU NVIDIA, AMD ni en otros backends.
-- El repositorio registra 0 descargas y 0 likes, y fue creado el 2026-11-16; se trata de una publicación muy reciente y sin validación comunitaria.
-- La licencia MiniMax-H3-Image Community License Agreement no es una licencia de código abierto estándar; es necesario revisar sus términos antes de cualquier uso comercial.
-- No se dispone de información sobre sesgos, idiomas soportados ni tasas de alucinación del modelo base.
-- El rendimiento de 7,20-8,24 s/paso implica que una generación de 6 pasos tarda aproximadamente 45-50 s, lo que limita su uso en escenarios interactivos de baja latencia.
-- El uso de `--offload-to-cpu` es obligatorio para encajar en 16 GB, lo que condiciona el rendimiento final.
+- La licencia MiniMax-H3-Image Community License Agreement no es una licencia de código abierto estándar; es imprescindible revisar sus términos antes de cualquier uso comercial.
+- La cuantización extrema (bloques en Q2_K y Q3_K) puede degradar la fidelidad de las imágenes respecto al modelo en BF16; el autor no publica métricas de calidad comparativas.
+- El release está validado únicamente en Apple Silicon de 16 GB con Metal 4; el rendimiento en otras plataformas no está documentado.
+- El codificador de texto es una versión truncada a 50 capas de Qwen3-VL-32B, no el modelo completo, lo que puede afectar a la comprensión de prompts complejos o imágenes de edición.
+- No se especifican los idiomas soportados en los prompts; la información disponible no permite confirmar el comportamiento multilingüe.
+- Riesgo de alucinación visual y de artefactos inherente a los modelos de difusión, especialmente con pocos pasos de muestreo (6 en los ejemplos).
+- El repositorio tiene 0 likes y 750 descargas, con fecha de creación y actualización en noviembre de 2026; es un release reciente y con poca validación comunitaria.
+- Los scripts de conversión y las recetas se ofrecen sin garantías; el autor solicita donaciones para ampliar el hardware de pruebas, lo que indica que la calibración se ha hecho con recursos limitados.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/kabcnd/Kenzan-MiniMax-H3-Image-20B-PinGrid-GGUF
-- Modelo base en Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3-Image
-- Modelo upstream MiniMaxAI: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
+- Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
+- Versión base de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3-Image
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image/blob/main/LICENSE
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
 - ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
-- Prism ML (inspiración): https://huggingface.co/prism-ml
-- Donaciones del autor: https://ko-fi.com/kabcpc
+- Prism ML (inspiración, Bonsai-2): https://huggingface.co/prism-ml
+- Apoyo al autor: https://ko-fi.com/kabcpc

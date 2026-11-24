@@ -2,81 +2,87 @@
 
 ## Resumen
 
-GLM-4.6-Flash-text-GGUF es una versión cuantizada en formato GGUF del modelo GLM-4.6-Flash-text, desarrollado por sartajbhuvaji a partir del modelo multimodal GLM-4.6V-Flash de zai-org, al que se le ha eliminado el stack de visión de 892 millones de parámetros. El resultado es un modelo de lenguaje puramente textual de 9,4 mil millones de parámetros, con arquitectura glm4 y una ventana de contexto de 131072 tokens. Está diseñado para ejecutarse de forma local con herramientas como llama.cpp u Ollama, ofreciendo cuantizaciones desde Q4_K_M hasta F16.
+GLM-4.6-Flash-text-GGUF es una coleccion de cuantizaciones GGUF del modelo `sartajbhuvaji/unfuse-GLM-4.6-Flash-text`, una variante de texto puro obtenida a partir de `zai-org/GLM-4.6V-Flash` tras eliminar por completo su pila de vision de 892 millones de parametros. El modelo resultante conserva el decodificador GLM-4 con 9.400.279.040 parametros y una ventana de contexto de 131.072 tokens, y esta pensado para ejecutarse en llama.cpp y Ollama sobre hardware de consumo. La publicacion corre a cargo de sartajbhuvaji, que actua como autor de la extraccion y de las cuantizaciones, mientras que el modelo original pertenece a Z.ai (zai-org).
 
-La relevancia de este modelo radica en que permite ejecutar un modelo de razonamiento de 9B parámetros en hardware de consumo, con una ventana de contexto muy amplia y licencia MIT, lo que facilita su integración en aplicaciones comerciales. Al ser una extracción bit-exacta del modelo original en texto, conserva todas las capacidades de generación y razonamiento del modelo base sin el coste computacional del procesamiento de imágenes. Es una opción práctica para desarrolladores que necesitan un LLM de tamaño medio con razonamiento multi-step y función calling nativa, sin depender de servicios en la nube.
+El interes practico de esta ficha es doble. Por un lado, ofrece un modelo de razonamiento de aproximadamente 9.400 millones de parametros en formato GGUF, con tamanos que van de 6,17 GB en Q4_K_M a 18,81 GB en F16, lo que permite desplegarlo en GPUs de consumo con 8-12 GB de VRAM. Por otro, documenta un proceso de cirugia de pesos que elimina la rama multimodal sin alterar el calculo de texto: el autor verifica la equivalencia bit a bit contra el modelo original (`max|d| = 0.000e+00`) en seis prompts y de nuevo a 1.207 tokens.
+
+La relevancia actual radica en que el modelo es un razonador que emite un bloque de pensamiento antes de responder, a veces en chino independientemente del idioma del prompt, y en que la licencia MIT del modelo base se mantiene en esta redistribucion, lo que facilita su uso comercial. No obstante, las cuantizaciones no se han validado con perplexity ni con benchmarks frente a los pesos bf16, un caveat importante para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | glm4 (transformer decoder) |
+| Arquitectura | GLM-4 (transformer decoder, identificado como `glm4` en llama.cpp) |
 | Parametros totales | 9.400.279.040 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 131072 tokens |
+| Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16 |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Idiomas soportados | ingles (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base GLM-4.6V-Flash es un modelo multimodal entrenado con aprendizaje por refuerzo a escala para razonamiento multimodal, segun la documentacion de zai-org. La variante de texto elimina el codificador de vision de 24 capas ViT que inyectaba tokens suaves en el decoder GLM-4 mediante `masked_scatter`. La extraccion se verifico como bit-exacta en texto, es decir, la salida del modelo sin vision es identica a la del modelo original cuando solo se procesa texto. Esto significa que los pesos de texto no fueron alterados.
+El modelo base es `zai-org/GLM-4.6V-Flash`, una implementacion `Glm4vForConditionalGeneration` compuesta por un ViT de 24 capas que inyecta tokens suaves en un decodificador GLM-4 mediante `masked_scatter`. La variante text-only elimina esa rama de vision: se pasa de 10.292.777.472 a 9.400.279.040 parametros (892.498.432 eliminados, un 8,671% del total) y de 704 a 523 tensores, con el tamano en bf16 reduciendose de 20,59 GB a 18,80 GB. El argumento del autor es que los tokens de texto nunca atraviesan un peso de vision, por lo que suprimir la rama no altera el calculo textual; la verificacion bit a bit contra el original respalda esta afirmacion.
 
-El entrenamiento del modelo original incluye un proceso de razonamiento que genera un bloque de "thinking" antes de la respuesta final, a veces en chino aunque el prompt sea en ingles. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento ni sobre el uso de tecnicas como RLHF o DPO. La cuantizacion GGUF se realizo con llama.cpp a partir de los pesos bf16 del modelo base, sin realizar comparaciones de perplejidad ni de rendimiento entre las versiones cuantizadas y la original.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras) del modelo original. Las cuantizaciones se generaron con llama.cpp en la rama master a partir de los pesos bf16 del repositorio padre. El autor indica que cada fichero se comprobo cargando y generando texto coherente bajo llama.cpp, con reconocimiento correcto de la arquitectura `glm4`, el recuento de parametros y la longitud de contexto, pero no se ejecuto ninguna comparacion de perplexity ni de benchmarks frente a bf16.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-step: el modelo produce una secuencia de razonamiento interno ("thinking") antes de la respuesta final, lo que mejora la precision en tareas que requieren logica.
-- Soporte de tool calling y function calling: el modelo original GLM-4.6V-Flash incluye capacidad nativa de invocacion de funciones, que se conserva en esta version de texto.
-- Soporte de agentes: gracias a la ventana de contexto de 131072 tokens, puede mantener conversaciones largas y ejecutar flujos de trabajo multi-paso con memoria amplia.
-- Capacidades multilingues: entrenado principalmente en ingles y chino, con capacidad de comprension y generacion en ambos idiomas.
-- Sin soporte de vision: al eliminar la rama de vision, solo procesa texto; no acepta imagenes ni videos.
-- Modo de razonamiento: emite un bloque de "thinking" antes de cada respuesta, que puede ser util para depurar el proceso de razonamiento o para usarlo en aplicaciones que requieran explicaciones.
+- Generacion de texto conversacional y de un solo turno, con soporte de modo interactivo en `llama-cli`.
+- Razonamiento explicito: el modelo emite un bloque de pensamiento antes de la respuesta final, lo que exige presupuestos de generacion amplios (el autor recomienda 600 tokens o mas; 160 no bastan para superar el razonamiento).
+- Capacidad multilingue limitada a ingles y chino; el bloque de razonamiento puede aparecer en chino aunque el prompt este en ingles.
+- Ejecucion local mediante llama.cpp y Ollama, con compatibilidad declarada con endpoints.
+- No dispone de vision: la rama multimodal fue eliminada en la extraccion.
+- No se documenta soporte de tool calling, function calling ni de agentes multi-paso en la informacion disponible.
+- No se documenta modo de audio ni otras modalidades.
 
 ## Casos de uso
 
-- Asistencia tecnica automatizada: el modelo puede gestionar conversaciones multi-turno de soporte tecnico con contexto largo (hasta 131072 tokens), lo que permite mantener el historial completo de una sesion de ayuda sin truncamientos. Su capacidad de razonamiento ayuda a diagnosticar problemas complejos.
-- Generacion de codigo en entornos de desarrollo: con soporte para tool calling, puede integrarse en un pipeline de CI/CD para generar documentacion, escribir tests unitarios o refactorizar codigo, aprovechando su ventana de contexto para procesar repositorios enteros.
-- Analisis de documentos legales o tecnicos: su contexto amplio permite procesar contratos, especificaciones o informes largos, extrayendo clausulas relevantes y resumiendo puntos clave con un nivel de detalle que otros modelos de 7-8B no alcanzan.
-- Traduccion y localizacion de contenido: al estar entrenado en ingles y chino, puede traducir documentos entre estos idiomas manteniendo coherencia terminologica y estilo, util para empresas que trabajan en ambos mercados.
-- Agentes de automatizacion de tareas: con la capacidad de llamar a funciones, puede orquestar llamadas a APIs externas, bases de datos o servicios web en un flujo de agente, ejecutando pasos intermedios y verificando resultados.
-- Educacion y tutoria: su razonamiento multi-step lo hace adecuado para explicar conceptos matematicos o cientificos paso a paso, generando ejemplos y resolviendo problemas con explicaciones detalladas.
+- Razonamiento local en estaciones de trabajo sin GPU dedicada de gran capacidad: con Q4_K_M (6,17 GB) el modelo cabe en GPUs de consumo de 8 GB y permite resolver problemas de logica o matematicas paso a paso, aceptando el coste del bloque de pensamiento.
+- Asistencia de programacion en el editor: al ser un modelo de 9.400 millones de parametros con contexto de 131.072 tokens, puede cargar ficheros completos y varios archivos de un repositorio pequeno para tareas de explicacion, refactorizacion o generacion de pruebas, siempre que se configure un limite de generacion suficiente.
+- Procesamiento de documentos largos en ingles o chino: contratos, informes o articulos de decenas de miles de tokens caben en la ventana de contexto, lo que permite resumen y extraccion de datos sin trocear el documento.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia MIT del modelo base se mantiene, lo que facilita la integracion en productos comerciales sin obligaciones de atribucion mas alla de la propia MIT.
+- Prototipado de pipelines de razonamiento en llama.cpp: util para comparar el comportamiento de un razonador de ~9.400 millones de parametros frente a alternativas mayores, con la ventaja de que el binario y los pesos caben en un portatil con GPU de 12 GB.
+- Traduccion y generacion bilingue ingles-chino: el modelo soporta ambos idiomas de forma nativa, lo que sirve para tareas de traduccion tecnica o atencion a usuarios en esas dos lenguas, con la advertencia de que el razonamiento interno puede mezclar idiomas.
+- Evaluacion de tecnicas de extraccion de pesos: el repositorio documenta el proceso de eliminar una rama multimodal con verificacion bit a bit, por lo que resulta un caso de referencia para investigadores que quieran aplicar cirugia similar a otros modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que no se realizaron comparaciones de perplejidad ni de calidad entre las cuantizaciones y la version bf16 original. El unico dato de verificacion es que la extraccion de texto es bit-exacta en el modelo bf16, pero no se ha medido el impacto de las cuantizaciones en el rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que no se ejecuto comparacion de perplexity ni de benchmarks frente a los pesos bf16, y que la equivalencia bit a bit verificada aplica solo a los pesos bf16 del repositorio padre, no a estas cuantizaciones con perdida.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun la cuantizacion, el modelo ocupa entre 6,17 GB (Q4_K_M) y 18,81 GB (F16) en disco. En VRAM, se necesita aproximadamente el mismo tamaño mas overhead de contexto. Para Q4_K_M, cabe en una GPU con 8 GB de VRAM (ej. RTX 3070, RTX 4060) si el contexto no es muy largo. Para contexto de 131072 tokens, la VRAM necesaria aumenta notablemente, y se recomienda una GPU con 12 GB o mas.
-- GPUs recomendadas: RTX 3090, RTX 4090, A10, A100, H100 para contextos largos y cuantizaciones altas. Para Q4_K_M con contexto corto, una RTX 3060 12GB es suficiente.
-- Despliegue: compatible con llama.cpp (via `llama-cli`), Ollama, y cualquier runtime que soporte GGUF (llama-cpp-python, LM Studio, etc.). Tambien es compatible con endpoints de Hugging Face que soporten GGUF.
-- Latencia y throughput: no hay datos publicados. En una RTX 4090, un modelo de 9B cuantizado a Q4_K_M suele producir entre 20-40 tokens/s, pero depende del hardware y del contexto.
+- VRAM estimada segun fichero: Q4_K_M 6,17 GB, Q5_K_M 7,05 GB, Q6_K 8,27 GB, Q8_0 10,00 GB, F16 18,81 GB (tamanos en GB decimales, tal como los reporta el Hub).
+- GPU recomendadas: RTX 3060 de 12 GB o RTX 4070 para Q4_K_M y Q5_K_M; RTX 4080 o RTX 4090 para Q6_K y Q8_0; A100 o H100 para F16 y para contextos muy largos con KV cache grande.
+- Cabe en GPU de consumo: si, desde 8 GB de VRAM con Q4_K_M, siempre que se reserve memoria adicional para la cache KV, que crece con el contexto y puede ser considerable en ventanas cercanas a 131.072 tokens.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf ...`), Ollama (`ollama run hf.co/...`). No se documenta soporte verificado en vLLM ni TGI para este repositorio GGUF.
+- Latencia y throughput: no disponible. El autor no publica mediciones de velocidad de generacion ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| GLM-4.6-Flash-text (GGUF) | 9,4B | 131072 | MIT | Hugging Face |
-| Qwen2.5-7B-Instruct | 7,6B | 32768 | Apache 2.0 | Hugging Face |
-| Llama-3.1-8B-Instruct | 8B | 131072 | Llama 3.1 Community | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| GLM-4.6-Flash-text-GGUF | 9.400.279.040 | 131.072 | MIT | GGUF | Razonador text-only derivado de GLM-4.6V-Flash; sin benchmarks publicados |
+| zai-org/GLM-4.6V-Flash | 10.292.777.472 | no disponible | MIT | safetensors | Modelo original con vision; 892M parametros mas; requiere bf16 (~20,59 GB) |
+| sartajbhuvaji/unfuse-GLM-4.6-Flash-text | 9.400.279.040 | 131.072 | MIT | safetensors (bf16) | Version text-only sin cuantizar, base de estas GGUF; verificada bit a bit |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La eleccion entre ellos dependera de las necesidades de contexto, idioma y licencia. GLM-4.6-Flash-text ofrece el contexto mas largo y licencia MIT, mientras que Qwen y Llama tienen comunidades mas grandes y mas recursos de fine-tuning.
+No se dispone de datos de benchmark que permitan comparar el rendimiento relativo con otras familias de modelos del mismo tamano.
 
 ## Limitaciones y advertencias
 
-- No se han evaluado sesgos especificos de este modelo; al ser una cuantizacion de GLM-4.6V-Flash, hereda los sesgos del modelo original, que no estan documentados en la informacion disponible.
-- Riesgo de alucinacion: como cualquier LLM, puede generar informacion falsa o inventada, especialmente en tareas de razonamiento complejo. Se recomienda validacion externa en aplicaciones criticas.
-- El modelo emite un bloque de "thinking" antes de la respuesta, lo que puede aumentar el tiempo de respuesta y el consumo de tokens. En aplicaciones con presupuesto de tokens limitado, hay que ajustar el parametro `max_tokens` a 600+ para obtener una respuesta final.
-- El bloque de razonamiento a veces se genera en chino, incluso si el prompt esta en ingles, lo que puede resultar confuso para usuarios que no entienden chino.
-- La cuantizacion Q4_K_M y otras pierden precision en comparacion con la bf16 original. No se han medido los deltas de calidad, por lo que el usuario debe evaluar si la calidad es suficiente para su caso.
-- Licencia MIT permite uso comercial sin restricciones, pero el modelo se deriva de GLM-4.6V-Flash, que tambien es MIT, por lo que no hay restricciones adicionales.
+- Las cuantizaciones son con perdida y no se ha medido la degradacion de calidad frente a bf16; el autor recomienda calcularla por cuenta propia si se necesita un delta medido.
+- El modelo emite un bloque de razonamiento antes de responder y puede hacerlo en chino aunque el prompt este en ingles, lo que complica el parseo automatico de la salida en produccion.
+- Presupuesto de tokens: con menos de 600 tokens de generacion el modelo puede no llegar a la respuesta final, ya que consume tokens en el razonamiento.
+- Idiomas limitados a ingles y chino; no se documenta soporte de castellano ni de otras lenguas, por lo que la calidad fuera de esos idiomas es incierta.
+- Riesgo de alucionacion no cuantificado: no hay evaluaciones de factualidad publicadas para esta variante ni para el modelo base.
+- Sesgos conocidos: no disponible; no se documenta ninguna evaluacion de sesgo.
+- La ventana de 131.072 tokens exige planificar la cache KV; en GPUs de consumo con contextos largos la memoria adicional puede superar la del propio modelo.
+- La licencia MIT permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo en produccion ni sobre la validez de los pesos tras la extraccion.
+- No se documenta soporte de tool calling ni de agentes, por lo que no debe asumirse su disponibilidad sin validacion previa.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF
-- Modelo base (texto): https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text
-- Modelo original (vision): https://huggingface.co/zai-org/GLM-4.6V-Flash
-- Documentacion de Z.AI sobre GLM-4.6V: https://docs.z.ai/guides/vlm/glm-4.6v
-- Repositorio GitHub de GLM-V (incluye GLM-4.6V): https://github.com/zai-org/GLM-V
+- Repositorio Hugging Face: https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF
+- Modelo padre text-only (bf16): https://huggingface.co/sartajbhuvaji/unfuse-GLM-4.6-Flash-text
+- Modelo original con vision: https://huggingface.co/zai-org/GLM-4.6V-Flash

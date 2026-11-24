@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Arcadia-12B-Fusion-GGUF",
+  "slug": "mradermacher-arcadia-12b-fusion-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Arcadia-12B-Fusion-GGUF",
+  "created_at": "2025-09-05T13:35:11.000Z",
+  "updated_at": "2026-11-24T00:31:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "lazymergekit",
+    "en",
+    "base_model:SvalTek/Arcadia-12B-Fusion",
+    "base_model:quantized:SvalTek/Arcadia-12B-Fusion",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 12247802880,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692425984,
+  "storage_human": "84.7 GB",
+  "context_length": 1024000,
+  "base_model": "SvalTek/Arcadia-12B-Fusion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,114 +2,110 @@
 
 ## Resumen
 
-MP-01-100M-base es un modelo de lenguaje de 100,6 millones de parámetros desarrollado por el equipo Manprot, entrenado desde cero y publicado como vista previa ("Preview") de la familia MP-01. Se trata de un modelo decoder-only con arquitectura propia denominada VBQ, que incorpora 18 capas, atención con query-key normalization y SwiGLU, con embeddings atados. Su relevancia radica en que documenta de forma poco habitual todo el linaje de entrenamiento: un preentrenamiento inicial de 75M, un crecimiento a 100M mediante la inserción de capas inicializadas como identidad, un ajuste fino conversacional y una expansión posterior con cooldown sobre corpus no vistos.
+MP-01-100M-base es un modelo de lenguaje de 100,6 millones de parametros entrenado desde cero por el equipo Manprot. Se trata de un modelo decoder-only de tipo base, aunque con un linaje de entrenamiento poco habitual: sus pesos provienen de un fine-tune de chat que posteriormente fue expandido y sometido a un preentrenamiento continuado. El resultado es un modelo que continua texto de forma competente pero que no sigue instrucciones de manera fiable, segun advierte el propio autor.
 
-El modelo no es un base puro: su linaje incluye un ajuste fino de chat, por lo que puede exhibir comportamientos conversacionales, aunque no sigue instrucciones de forma fiable. Está entrenado aproximadamente con 11,3 mil millones de tokens en total entre todas las etapas, sobre un mix de datos en inglés que combina FineWeb-Edu, Wikipedia, Cosmopedia, DCLM, FineMath, Stack Exchange y código Python de Dolma3. La ficha del autor reporta una media de 48,43 en una evaluación de siete tareas, el mejor resultado entre los modelos comparados en su propia tabla.
+La relevancia del modelo reside en su escala reducida y en su enfoque de entrenamiento por etapas: un preentrenamiento inicial a 75M de parametros, un crecimiento a 100M mediante la expansion de 12 a 18 capas con inicializacion identidad, un fine-tune de chat y una expansion final con preentrenamiento continuado y cooldown sobre un corpus no visto. El modelo acumula aproximadamente 11.300 millones de tokens de entrenamiento en todas sus etapas, una relacion de tokens por parametro superior a 100, lo que lo situa en la liga de los modelos pequenos entrenados con presupuestos de computo agresivos.
 
-La licencia está por decidir ("to-be-decided"), lo que supone un bloqueo práctico para cualquier uso comercial o redistribución. El modelo está pensado como experimento de investigación sobre crecimiento de modelos y cooldowns, más que como componente listo para producción.
+El checkpoint publicado corresponde al cooldown final de 8.000 pasos sobre 2,10 mil millones de tokens. El autor reporta una media de 48,43 en una evaluacion de siete tareas, el mejor resultado entre los modelos comparados en su model card. La licencia esta aun por decidir, lo que supone un caveat importante para cualquier uso en produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder-only transformer, arquitectura propia VBQ (18 capas, GQA, SwiGLU, QK-norm, embeddings atados) |
-| Parametros totales | 100.623.744 |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Decoder-only transformer custom (VBQ), 18 capas, GQA, SwiGLU, QK-norm |
+| Parametros totales | 100.623.744 (bf16, embeddings atados) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Por decidir ("to-be-decided", license: other) |
-| Formato de pesos | safetensors; librería propia `vbq` |
+| Tipos de cuantizacion | No disponible (pesos en bf16; no se documentan variantes GGUF ni otras) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | to-be-decided (other) |
+| Formato de pesos | safetensors (libreria vbq) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 18 capas con atención de consultas agrupadas (GQA), activación SwiGLU y normalización sobre query y key (QK-norm), con embeddings de entrada y salida atados. La arquitectura se implementa en la librería `vbq`, propia del autor, y no en `transformers` estándar, lo que condiciona las herramientas de carga e inferencia disponibles. No se especifican dimensiones ocultas, número de cabezas ni longitud de contexto en la información proporcionada.
+El modelo emplea una arquitectura transformer decoder-only propietaria denominada VBQ, con 18 capas, atencion con query grouping (GQA), activacion SwiGLU y normalizacion QK (QK-norm). Los embeddings de entrada y salida estan atados, lo que reduce el recuento de parametros. El entrenamiento se realizo desde cero y de forma escalonada: primero un modelo de 75M de parametros preentrenado en una sola pasada sobre texto en ingles; despues un crecimiento de 12 a 18 capas mediante inicializacion identidad y preentrenamiento adicional; a continuacion un fine-tune de chat; y finalmente una expansion con preentrenamiento continuado hasta el paso 19.000 con un batch de 262.000 tokens, seguida de un cooldown de 8.000 pasos (2,10 mil millones de tokens) con decaimiento de la tasa de aprendizaje hasta su minimo sobre un segundo corpus no visto. En total se acumulan unos 11.300 millones de tokens en todas las etapas.
 
-El entrenamiento se organiza en cinco etapas: (1) preentrenamiento de un modelo de 75M sobre texto en inglés en una sola pasada; (2) crecimiento de 12 a 18 capas con inicialización identidad y preentrenamiento adicional sobre documentos nuevos; (3) ajuste fino de chat; (4) expansión con preentrenamiento continuado hasta el paso 19.000 con un batch de 262.000 tokens; y (5) cooldown de 8.000 pasos (2,10 mil millones de tokens) con decaimiento de la tasa de aprendizaje sobre un segundo corpus no visto, que es el checkpoint publicado. En total, unos 11,3 mil millones de tokens. El mix de preentrenamiento, expansión y cooldown incluye FineWeb-Edu (34 %), Wikipedia (24 %), Cosmopedia (18 %), DCLM (12 %), FineMath (5 %), Stack Exchange (4 %) y código Python de Dolma3 (3 %). El ajuste fino de chat usa smol-smoltalk, everyday-conversations, oasst2, ultrachat_200k, dolly-15k, airoboros-3.2, kalo-opus-instruct, Sonnet3.5-Charcard-Roleplay, hieunguyenminh/roleplay y PIPPA, entre otros. No se documenta RLHF ni DPO explícito.
+La composicion del corpus de preentrenamiento, crecimiento, expansion y cooldown combina FineWeb-Edu (34-37% segun etapa), Wikipedia (6-24%), Cosmopedia (18-20%), DCLM (12-20%), FineMath (5-7%), Stack Exchange (4-5%) y codigo Python de Dolma3 (3-5%). Cada etapa posterior utilizo documentos no vistos en las anteriores, con exclusion de shards entre corpus. El fine-tune de chat empleo smol-smoltalk como mezcla principal, junto con everyday-conversations, OASST2, UltraChat 200k, Dolly-15k, Wikipedia, Airoboros 3.2, Kalo Opus Instruct, Sonnet3.5-Charcard-Roleplay, hieunguyenminh/roleplay y PIPPA. No se documenta el uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto en inglés: continuación de texto coherente a nivel local, limitada por el tamaño del modelo.
-- Razonamiento básico y respuesta a preguntas factuales sencillas, apoyado en los datos de Wikipedia y Stack Exchange del corpus.
-- Matemáticas elementales, reforzadas por el subconjunto FineMath-4plus.
-- Generación de código Python a pequeña escala, por el subconjunto stack_edu-Python de Dolma3.
-- Comportamiento conversacional heredado del ajuste fino de chat, sin seguimiento fiable de instrucciones.
+- Generacion de texto en ingles: continuacion de texto coherente a nivel de frase y parrafo, propia de un modelo base.
+- Razonamiento basico y matematicas elementales: el corpus incluye FineMath y Stack Exchange, lo que aporta exposicion a problemas matematicos y tecnicos.
+- Generacion de codigo Python: el entrenamiento incluye un 3-5% de codigo Python filtrado por puntuacion educativa.
+- Conocimiento enciclopedico: Wikipedia representa entre el 6% y el 24% del corpus segun la etapa, lo que proporciona cobertura de entidades y conceptos generales.
+- Estilo conversacional residual: al provenir de un fine-tune de chat, puede producir respuestas con formato de dialogo, aunque no sigue instrucciones de forma fiable.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Modo "thinking": no disponible.
+- Capacidades multilingues: limitadas al ingles.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Investigación sobre crecimiento de modelos: el linaje documentado (75M → 100M con inicialización identidad de capas) permite reproducir y estudiar técnicas de model growth con un checkpoint intermedio concreto.
-- Estudio de cooldowns y decaimiento de la tasa de aprendizaje: el autor publica dos cooldowns alternativos además del liberado, lo que facilita comparar el efecto del cooldown sobre las métricas de evaluación.
-- Prototipado rápido de pipelines de generación de texto: con 100M de parámetros y pesos en bf16 de unos 0,2 GB, se puede cargar y ejecutar en CPU o en GPU de gama baja para pruebas de integración.
-- Generación de texto asistida en entornos con recursos muy limitados: aplicaciones de autocompletado o generación de borradores en inglés donde el coste de inferencia es crítico.
-- Experimentos de destilación y evaluación de tokenizadores: al documentarse el entrenamiento del tokenizador sobre el mismo mix de datos, sirve como referencia para estudiar decisiones de tokenización en modelos pequeños.
-- Base para ajuste fino académico: punto de partida de bajo coste para estudiar fine-tuning supervisado en inglés, siempre que la licencia se resuelva.
-- Evaluación comparativa de modelos pequeños: útil como baseline de 100M en benchmarks de siete tareas para contrastar con otros modelos de escala similar.
+- Investigacion sobre entrenamiento por etapas: el modelo sirve como caso de estudio reproducible de crecimiento de parametros con inicializacion identidad y cooldown sobre corpus no visto, util para quienes estudian recetas de preentrenamiento de bajo coste.
+- Generacion de texto asistida en ingles: continuacion de articulos, descripciones o parrafos a partir de un prompt, aprovechando su entrenamiento en FineWeb-Edu y Wikipedia.
+- Prototipado de pipelines de inferencia: con 100M de parametros y pesos bf16 en safetensors, es adecuado para validar infraestructura de serving (tokenizacion, batching, carga de pesos) antes de escalar a modelos mayores.
+- Educacion e investigacion academica: modelo lo bastante pequeno para entrenar o afinar en hardware de consumo, util en cursos de NLP y experimentos de alineacion.
+- Generacion de codigo Python de baja criticidad: autocompletado o generacion de fragmentos simples en entornos de prueba, dado su entrenamiento con codigo Python filtrado.
+- Experimentos de estilo conversacional: su linaje de chat permite estudiar como un fine-tune de dialogo sobrevive a un preentrenamiento continuado posterior, un fenomeno relevante para entender la persistencia de sesgos de formato.
+- Base para fine-tunes especificos: punto de partida para adaptaciones con LoRA o fine-tune completo en tareas de dominio acotado en ingles.
 
 ## Benchmarks y rendimiento
 
-La model card reporta una media de 48,43 en una evaluación de siete tareas (7-task average), descrita como la mejor de los modelos comparados en la tabla del autor. No se detallan en la información proporcionada los nombres de las siete tareas ni los resultados individuales, ni los modelos concretos de comparación. El cooldown anterior de este mismo repositorio (4.000 pasos desde el paso 15.000) obtenía una media de 47,29 en la misma métrica.
+El autor reporta una media de 48,43 en una evaluacion de siete tareas, descrita como la mejor entre los modelos comparados en su model card, pero no se detallan los nombres de las tareas ni los resultados individuales en la informacion disponible. El checkpoint anterior de 4.000 pasos de cooldown desde el paso 15.000 obtuvo una media de 47,29 en la misma evaluacion.
 
-| Metrica | MP-01-100M-base (checkpoint publicado) | Cooldown anterior (4.000 pasos) |
-|---|---|---|
-| Media 7 tareas | 48,43 | 47,29 |
-| Resultados por tarea | no disponible | no disponible |
+| Evaluacion | Resultado |
+|---|---|
+| Media de 7 tareas (checkpoint publicado) | 48,43 |
+| Media de 7 tareas (checkpoint anterior, cooldown de 4.000 pasos) | 47,29 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados desglosados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 0,2 GB para los pesos (100,6M de parámetros × 2 bytes), más memoria para activaciones y caché KV, que depende de la longitud de contexto no especificada.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente para bf16 en contextos cortos; también es viable en CPU.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090, etc.) e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: la librería `vbq` es el único runtime documentado; no se indica soporte para vLLM, llama.cpp, Ollama ni TGI. La conversión a GGUF no está documentada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 0,2 GB en bf16 (100,6M de parametros), mas el overhead de activaciones y cache KV segun la longitud de contexto.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM; el modelo cabe holgadamente en tarjetas de consumo como RTX 3060, RTX 4060 o superiores, e incluso en iGPU con suficiente memoria compartida.
+- Cabe en consumer GPU: si, en practicamente cualquier GPU moderna de consumo.
+- Opciones de despliegue: la libreria propietaria vbq es la via documentada por el autor; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y no se ofrecen pesos GGUF.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| MP-01-100M-base | 100,6M | no disponible | por decidir | Hugging Face, runtime `vbq` |
-| SmolLM-135M (HuggingFaceTB) | 135M | 2.048 tokens (versión base) | Apache 2.0 | Hugging Face, transformers, GGUF |
-| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | Hugging Face, transformers, vLLM, GGUF |
-| Pythia-160M | 160M | 2.048 tokens | Apache 2.0 | Hugging Face, transformers |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MP-01-100M-base | 100,6M | No disponible | Media de 7 tareas: 48,43 | to-be-decided | Hugging Face |
+| SmolLM-135M | 135M | No disponible en esta ficha | No disponible | Apache 2.0 (segun modelo original) | Hugging Face |
+| Pythia-160M | 160M | 2.048 tokens (segun modelo original) | No disponible | Apache 2.0 (segun modelo original) | Hugging Face |
 
-La comparación de rendimiento con estos modelos no está disponible en la información proporcionada; el autor solo compara contra sus propios checkpoints. Frente a SmolLM-135M, MP-01-100M-base es ligeramente menor en parámetros, pero carece de licencia definida y de soporte en el ecosistema estándar de inferencia, lo que limita su adopción práctica.
+La comparativa con SmolLM-135M y Pythia-160M se ofrece como referencia de categoria por tamano; no se dispone de resultados comparativos directos con MP-01-100M-base en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia sin definir ("to-be-decided"): no se puede garantizar el uso comercial ni la redistribución; tratar como no apto para producción hasta que se aclare.
-- Modelo en estado "Preview": el propio autor indica que el entrenamiento continúa en ejecuciones posteriores de MP-01.
-- No es un base puro: incluye un ajuste fino de chat en su linaje, por lo que puede producir respuestas con formato conversacional sin seguir instrucciones de forma fiable.
-- Solo inglés: no hay capacidades multilingües documentadas.
-- Riesgo elevado de alucinación y de errores factuales por el tamaño reducido (100M) y la ventana de contexto no especificada.
-- Dependencia de la librería `vbq`, no estándar, con posible falta de mantenimiento y sin integración con herramientas habituales (vLLM, llama.cpp, TGI).
-- El corpus de ajuste fino incluye datasets de roleplay y "no refusal", lo que puede introducir sesgos de estilo y de contenido en las respuestas.
-- No se documentan sesgos medidos ni evaluaciones de seguridad.
-- Los datos de entrenamiento no se redistribuyen; la reproducibilidad completa no es posible.
-- No hay información sobre longitud de contexto, tokenizador (tamaño de vocabulario) ni hiperparámetros de inferencia recomendados.
+- No es un modelo de instrucciones: continua texto pero no sigue ordenes de forma fiable, pese a su linaje de chat.
+- Estado preview: el entrenamiento continua en futuras ejecuciones de MP-01, por lo que el checkpoint es intermedio y no definitivo.
+- Licencia sin decidir: el uso comercial queda bloqueado hasta que el autor defina los terminos; no debe desplegarse en produccion sin aclaracion legal.
+- Solo ingles: no hay soporte multilingue documentado.
+- Riesgo de alucinacion: con 100M de parametros y un corpus de 11.300 millones de tokens, la cobertura factual es limitada y las afirmaciones pueden ser incorrectas.
+- Sesgos: los corpus de chat incluyen datasets de roleplay y de instrucciones sin rechazo (kalo-opus-instruct-22k-no-refusal), lo que puede introducir sesgos de estilo y contenido.
+- Contexto no documentado: se desconoce la ventana maxima de contexto, lo que impide planificar usos con documentos largos.
+- Ecosistema limitado: la libreria vbq es propietaria y no hay soporte documentado en frameworks de inferencia estandar, lo que complica el despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Manprot/MP-01-100M-base
-- Organización Manprot: https://huggingface.co/Manprot
-- Modelo relacionado de la familia: https://huggingface.co/Manprot/MP-02-16B-Preview
+- Perfil del autor: https://huggingface.co/Manprot
 - Dataset FineWeb-Edu / Cosmopedia (smollm-corpus): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset DCLM baseline: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0-parquet
 - Dataset Wikipedia (20231101.en): https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath
-- Dataset Stack Exchange 2025: https://huggingface.co/datasets/HuggingFaceTB/stackexchange_2025_md
+- Dataset Stack Exchange: https://huggingface.co/datasets/HuggingFaceTB/stackexchange_2025_md
 - Dataset Dolma3 mix: https://huggingface.co/datasets/allenai/dolma3_mix-6T-1025
 - Dataset smol-smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Dataset everyday-conversations: https://huggingface.co/datasets/HuggingFaceTB/everyday-conversations-llama3.1-2k
-- Dataset OpenAssistant oasst2: https://huggingface.co/datasets/OpenAssistant/oasst2
+- Dataset OASST2: https://huggingface.co/datasets/OpenAssistant/oasst2
 - Dataset UltraChat 200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
-- Dataset Databricks Dolly 15k: https://huggingface.co/datasets/databricks/databricks-dolly-15k
-- Dataset airoboros-3.2: https://huggingface.co/datasets/jondurbin/airoboros-3.2
-- Dataset kalo-opus-instruct-22k-no-refusal: https://huggingface.co/datasets/anthracite-org/kalo-opus-instruct-22k-no-refusal
+- Dataset Dolly-15k: https://huggingface.co/datasets/databricks/databricks-dolly-15k
+- Dataset Airoboros 3.2: https://huggingface.co/datasets/jondurbin/airoboros-3.2
+- Dataset Kalo Opus Instruct: https://huggingface.co/datasets/anthracite-org/kalo-opus-instruct-22k-no-refusal
 - Dataset Sonnet3.5-Charcard-Roleplay: https://huggingface.co/datasets/Gryphe/Sonnet3.5-Charcard-Roleplay
-- Dataset hieunguyenminh/roleplay: https://huggingface.co/datasets/hieunguyenminh/roleplay
+- Dataset roleplay (hieunguyenminh): https://huggingface.co/datasets/hieunguyenminh/roleplay
 - Dataset PIPPA: https://huggingface.co/datasets/PygmalionAI/PIPPA

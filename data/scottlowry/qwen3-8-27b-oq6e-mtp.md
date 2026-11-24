@@ -2,83 +2,94 @@
 
 ## Resumen
 
-El modelo `scottlowry/Qwen3.8-27B-oQ6e-mtp` es una cuantización de precisión mixta de 6 bits del modelo Qwen3.8-27B, realizada con la herramienta oQ (oMLX v0.6.0.dev1). El autor, scottlowry, ha publicado esta versión en formato MLX safetensors, pensada para su uso en dispositivos Apple Silicon mediante la librería MLX. El modelo base, Qwen3.8-27B, pertenece a la familia Qwen3.8 de Alibaba, que incorpora capacidades de visión y razonamiento, así como una ventana de contexto de 256K tokens (ampliable hasta 1M). Esta cuantización reduce el tamaño del modelo para facilitar su despliegue local, manteniendo un equilibrio entre rendimiento y eficiencia.
+Qwen3.8-27B-oQ6e-mtp es una cuantización mixta del modelo Qwen/Qwen3.8-27B, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión reducida pensada para su ejecución en Apple Silicon mediante la librería MLX. El checkpoint conserva la arquitectura original del modelo base (identificada en los tags como qwen3_5) e incorpora una cabeza MTP (multi-token prediction) que ocupa 0,425 mil millones de parámetros adicionales.
 
-La relevancia de esta ficha radica en que Qwen3.8-27B es uno de los modelos de 27B parámetros más esperados de 2026, y su cuantización en 6 bits permite ejecutarlo en hardware de consumo, algo que no sería posible con los pesos completos. Al estar basado en MLX, se integra de forma nativa con el ecosistema de Apple, aunque también puede utilizarse en otros entornos mediante conversión. Es una opción práctica para desarrolladores que necesitan un modelo de razonamiento y visión con contexto largo sin requerir infraestructura de servidor.
+El interés de esta ficha reside en el formato: frente a las cuantizaciones uniformes de 4 u 8 bits, aquí se aplica una asignación de precisión por capas con oQ (oMLX v0.7.4.dev1), que deja el grueso de los pesos en 6 bits afines con grupo de 64 y reserva 8 bits y BF16 para un subconjunto reducido de tensores sensibles. El resultado es un peso efectivo medio de 6,872 bits por parámetro y un repositorio de 23,9 GB, lo que sitúa el modelo en el rango de memoria unificada de un Mac con 32 GB o más.
+
+La relevancia es práctica: permite ejecutar un modelo de 27.781 millones de parámetros en hardware de consumo Apple con una pérdida de precisión teóricamente menor que una cuantización 6-bit homogénea. No hay información publicada sobre licencia, idiomas ni pipeline en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (transformer, segun etiqueta del modelo) |
-| Parametros totales | 6.612.941.552 (segun safetensors; el modelo base se anuncia como 27B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 256K tokens (hasta 1M segun documentacion de Qwen3.8) |
-| Tipos de cuantizacion | 6 bits, group size 64 (oQ mixed-precision) |
+| Arquitectura | Transformer (familia qwen3_5, segun tags), con cabeza MTP |
+| Parametros totales | 27.781.427.952 (27,781 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Mixta: affine 6-bit grupo 64 (24,543B), affine 8-bit grupo 64 (2,722B), BF16 (0,516B); media efectiva 6,872 bits/peso |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | MLX safetensors |
+| Formato de pesos | safetensors (libreria mlx) |
+| Tamano del repositorio | 23,9 GB (22,226 GiB de tensores) |
+| Desglose de almacenamiento | LM: 26,896B / 20,979 GiB; vision: 0,461B / 0,858 GiB; cabeza MTP: 0,425B / 0,389 GiB |
+| Modelo base | Qwen/Qwen3.8-27B |
+| Herramienta de cuantizacion | oQ (oMLX v0.7.4.dev1) |
+| Descargas / likes | 368 / 5 |
+| Fecha de creacion / actualizacion | 2026-08-14 / 2026-11-11 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B utiliza una arquitectura transformer de la serie qwen3_5, segun la etiqueta del repositorio. No se dispone de detalles publicos sobre el numero de capas, dimensiones ocultas o mecanismos de atencion especificos. La familia Qwen3.8 incorpora capacidades de vision y un modo de pensamiento (thinking mode), lo que sugiere una arquitectura multimodal con componentes de vision adicionales, aunque no se han publicado especificaciones tecnicas completas.
+El checkpoint hereda la arquitectura del modelo base Qwen/Qwen3.8-27B, etiquetada como qwen3_5 en los metadatos. La composicion por componentes revela tres bloques diferenciados: un modelo de lenguaje de 26,896 mil millones de parametros, un codificador visual de 0,461 mil millones y una cabeza de prediccion multi-token (MTP) de 0,425 mil millones. La presencia del bloque de vision confirma que el modelo base es multimodal; la cabeza MTP habilita decodificacion especulativa interna, prediciendo varios tokens por paso para acelerar la generacion.
 
-En cuanto al entrenamiento, no hay informacion disponible sobre el dataset, el numero de tokens o el proceso de alineacion (RLHF/DPO) del modelo original. La cuantizacion oQ aplicada por scottlowry utiliza precision mixta a 6 bits con un group size de 64, una tecnica que busca minimizar la perdida de calidad en capas sensibles mientras reduce el uso de memoria. El resultado es un modelo de 23.7 GB en disco, significativamente mas ligero que los pesos completos de 27B en precision FP16 (que ocuparian alrededor de 54 GB).
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo base paso por RLHF, DPO u otras fases de alineamiento. El autor de esta publicacion no ha entrenado el modelo: su aportacion es exclusivamente la cuantizacion. La innovacion tecnica documentada es la asignacion mixta de precision: un 88,345% de los pesos logicos se almacena en 6 bits afines con grupo de 64 (6,50 bits efectivos), un 9,798% en 8 bits (8,50 bits efectivos) y un 1,857% se mantiene en BF16 (16 bits). Este ultimo grupo, de solo 0,516 mil millones de parametros, corresponde presumiblemente a tensores especialmente sensibles a la cuantizacion, aunque el autor no detalla el criterio de seleccion. La actualizacion del 11 de noviembre de 2026 indica una recuantizacion con oMLX v0.7.4.dev1, por lo que las copias anteriores deben descartarse.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el modelo base Qwen3.8-27B esta disenado para tareas de lenguaje general, incluyendo razonamiento complejo y resolucion de problemas.
-- Capacidades de vision: segun la documentacion de Qwen3.8, el modelo puede procesar imagenes, aunque no se especifica si esta cuantizacion conserva todas las capacidades visuales.
-- Modo de pensamiento (thinking mode): Qwen3.8 incluye un modo de razonamiento extendido que permite al modelo generar cadenas de pensamiento antes de responder.
-- Contexto largo: ventana de 256K tokens, ampliable hasta 1M, adecuada para documentos extensos o conversaciones multi-turno.
-- Multilingue: no se ha confirmado la lista de idiomas soportados, pero los modelos Qwen suelen cubrir multiples lenguas.
-- Integracion con MLX: al estar en formato MLX, se ejecuta de forma nativa en Apple Silicon con aceleracion por hardware.
+- Generacion de texto y razonamiento en el mismo rango que el modelo base Qwen3.8-27B, sin datos publicados especificos de esta cuantizacion.
+- Procesamiento de imagen: el checkpoint incluye un bloque de vision de 0,461 mil millones de parametros, por lo que conserva capacidad multimodal.
+- Decodificacion especulativa mediante la cabeza MTP, que predice multiples tokens por paso para reducir latencia.
+- Ejecucion nativa en MLX sobre Apple Silicon, con soporte de cuantizacion afine por grupos.
+- Capacidades de tool calling, agentes y multilingues: no disponibles en la informacion proporcionada; dependen del modelo base y no se documentan aqui.
+- Modo thinking: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en Mac: gracias al formato MLX y la cuantizacion de 6 bits, el modelo puede ejecutarse en un Mac con Apple Silicon (por ejemplo, M1 Pro o superior) usando la libreria MLX, sin necesidad de GPU dedicada.
-- Analisis de documentos largos: con 256K tokens de contexto, es posible procesar libros completos, informes anuales o codigo fuente extenso en una sola pasada, extrayendo resumenes o respondiendo preguntas especificas.
-- Asistente de programacion con razonamiento: el modo de pensamiento permite al modelo descomponer problemas de codigo en pasos logicos antes de generar la solucion, util en entornos de desarrollo integrado.
-- Vision por computadora ligera: si se conservan las capacidades visuales, puede utilizarse para tareas de captioning o respuesta a preguntas sobre imagenes en aplicaciones moviles o de escritorio.
-- Prototipado rapido de agentes conversacionales: el contexto largo y el razonamiento multi-paso permiten construir chatbots con memoria extendida para atencion al cliente o asistentes virtuales.
-- Investigacion academica: su tamano reducido y la licencia abierta (aunque no confirmada) lo hacen adecuado para experimentos en laboratorios con recursos limitados.
+- Inferencia local en Mac: el formato MLX y los 22,226 GiB de tensores permiten cargar el modelo en un Mac Studio o MacBook Pro con memoria unificada de 32 GB o superior, sin GPU dedicada.
+- Prototipado de asistentes multimodales: el bloque de vision integrado permite experimentar con consultas sobre imagenes en local antes de migrar a un despliegue en servidor.
+- Evaluacion de cuantizacion: util para comparar la perdida de calidad de una asignacion mixta de 6,872 bits frente a una cuantizacion uniforme del mismo modelo base, midiendo perplejidad y tareas de razonamiento.
+- Generacion de codigo en local: un modelo de 27,8 mil millones con contexto presumiblemente amplio sirve para autocompletado y refactorizacion en entornos sin conexion, siempre que se validen los resultados.
+- Investigacion sobre decodificacion especulativa: la cabeza MTP permite estudiar el impacto de la prediccion multi-token en throughput y aceptacion de tokens en hardware Apple.
+- Despliegue de bajo coste en pequenos equipos: al no requerir GPU de datacenter, encaja en flujos de trabajo de desarrollo individual, docencia o demos internas donde el presupuesto de hardware es limitado.
+- Fine-tuning ligero o adaptadores: al estar en safetensors y MLX, puede servir de base para LoRA sobre el modelo cuantizado, aunque la cuantizacion complica el entrenamiento y conviene verificar compatibilidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K u otras evaluaciones estandar para esta cuantizacion especifica ni para el modelo base Qwen3.8-27B. Se recomienda realizar pruebas propias en las tareas objetivo antes de su uso en produccion.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo documenta la distribucion de bits y el tamano de almacenamiento, sin metricas de calidad (MMLU, HumanEval, GSM8K u otras) ni comparaciones con el modelo base sin cuantizar.
 
 ## Requisitos de hardware
 
-- Tamano del repositorio: 23.7 GB, por lo que se necesitan al menos 24 GB de espacio en disco y una cantidad similar de RAM/VRAM para cargar el modelo completo en memoria.
-- En Mac con Apple Silicon: se recomienda un chip con al menos 32 GB de memoria unificada (por ejemplo, M1 Pro/Max, M2 Pro/Max o M3 Pro/Max) para ejecutar el modelo con margen.
-- En GPU NVIDIA: no se ha probado oficialmente, pero el formato MLX no es compatible directamente con CUDA; seria necesario convertir los pesos a otro formato (por ejemplo, GGUF o safetensors estandar) para usar con vLLM, llama.cpp u Ollama.
-- Opciones de despliegue: MLX (nativo en Apple), y potencialmente vLLM o SGLang tras conversion, aunque no hay instrucciones oficiales.
-- Latencia y throughput: no disponibles; dependen del hardware y de la configuracion de cuantizacion.
+- VRAM/memoria unificada: aproximadamente 22,2 GiB para los pesos en el formato actual; con overhead de ejecucion (KV cache, buffers de MLX) conviene disponer de 32 GB o mas.
+- GPU recomendadas: el formato es MLX, por lo que el hardware objetivo son los chips Apple M-series (M2 Pro/Max/Ultra, M3 Pro/Max/Ultra, M4 Pro/Max). No es un checkpoint para CUDA.
+- GPU consumer: cabe en configuraciones de memoria unificada de 32 GB o 64 GB; en equipos de 16 GB o 24 GB no es viable sin una cuantizacion adicional mas agresiva.
+- Opciones de despliegue: MLX y oMLX (herramienta con la que se genero el checkpoint). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, que no leen pesos MLX de forma nativa.
+- Latencia y throughput: no disponibles; dependen del chip, del ancho de banda de memoria y del uso de la cabeza MTP.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia |
-|---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 256K | FP16/BF16 | safetensors | no disponible |
-| scottlowry/Qwen3.8-27B-oQ6e-mtp | 6.6B (segun safetensors) | 256K | 6 bits oQ | MLX safetensors | no disponible |
-| scottlowry/Qwen3.8-27B-oQ4e-mtp | similar | 256K | 4 bits oQ | MLX safetensors | no disponible |
+| Modelo | Parametros | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.8-27B-oQ6e-mtp | 27,781B | no disponible | Mixta 6/8/BF16 (6,872 bits/peso) | safetensors MLX | no disponible | Hugging Face, 368 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,781B | no disponible | BF16 original | safetensors | no disponible | Hugging Face (referencia) |
+| Otras cuantizaciones MLX del mismo base | 27,781B | no disponible | 4-bit u 8-bit uniforme | safetensors MLX | no disponible | no disponible en la informacion |
 
-La comparativa se limita a las variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer una comparacion objetiva con otros modelos de 27B como Llama 3.3 o Mistral Large.
+No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion de 6 bits puede introducir una degradacion en la calidad de las respuestas, especialmente en tareas de razonamiento matematico o generacion de codigo complejo, en comparacion con los pesos completos.
-- El numero de parametros reportado en el safetensors (6.6B) no coincide con el nombre del modelo (27B); esto podria indicar un error en la extraccion de metadatos o una arquitectura diferente a la esperada. Se recomienda verificar la integridad del modelo antes de usarlo.
-- No se ha confirmado la licencia del modelo base ni de esta cuantizacion; el uso comercial podria estar restringido.
-- Las capacidades de vision no estan garantizadas en esta version cuantizada; es posible que se hayan eliminado o degradado durante el proceso de cuantizacion.
-- El modelo fue creado en agosto de 2026 y no tiene descargas ni likes, lo que sugiere que es muy reciente y no ha sido ampliamente probado por la comunidad.
-- No hay informacion sobre sesgos o alucinaciones especificas de este modelo; se recomienda evaluar en el dominio de aplicacion.
+- La cuantizacion introduce perdida de precision; el autor no publica evaluaciones que cuantifiquen la degradacion respecto al modelo base en BF16.
+- La licencia no esta indicada en la ficha de Hugging Face, por lo que no puede confirmarse el uso comercial; debe consultarse la licencia del modelo base Qwen/Qwen3.8-27B antes de cualquier despliegue productivo.
+- El checkpoint esta atado al ecosistema MLX y Apple Silicon; no es portable a CUDA sin una conversion previa.
+- Riesgo de alucinacion y sesgos: no documentados para esta cuantizacion; se heredan del modelo base y no pueden evaluarse sin sus datos.
+- Idiomas soportados no declarados; no hay garantia documentada de calidad multilingue.
+- El repositorio se actualizo el 11 de noviembre de 2026 con una recuantizacion; versiones anteriores pueden diferir en pesos y calidad, por lo que conviene fijar el commit o la revision concreta.
+- Solo 5 likes y 368 descargas: la validacion comunitaria es escasa, lo que reduce la confianza en la reproducibilidad de resultados.
+- No se documenta el criterio de seleccion de los tensores mantenidos en BF16 ni en 8 bits, lo que dificulta auditar la cuantizacion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-mtp
-- Documentacion de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
-- Articulo de Yottalabs sobre Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
-- OpenLM.ai sobre Qwen3.8: https://openlm.ai/qwen3.8/
-- Guia de despliegue local de Qwen3.8-27B: https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026
-- Repositorio de la herramienta oQ: https://github.com/jundot/omlx
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-mtp
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
+- Repositorio MLX: no disponible en la informacion proporcionada
+- Paper o blog tecnico del modelo base: no disponible en la informacion proporcionada
+- Demo: no disponible en la informacion proporcionada

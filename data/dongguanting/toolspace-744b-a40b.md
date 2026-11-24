@@ -2,99 +2,99 @@
 
 ## Resumen
 
-ToolSpace-744B-A40B es un modelo agéntico de tipo mixture-of-experts (MoE) desarrollado por dongguanting sobre el modelo base GLM-5.2 de zai-org. Con 744 mil millones de parámetros totales y 40 mil millones activos por token, está especializado en tareas de uso de herramientas (tool use), function calling y razonamiento de horizonte largo (long-horizon), un ámbito donde los modelos generalistas suelen degradarse al encadenar muchas llamadas a herramientas.
+ToolSpace-744B-A40B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por dongguanting, afinado a partir del backbone zai-org/GLM-5.2 y distribuido como el checkpoint oficial Atria-Dawn de liberación completa. Cuenta con 753.329.940.480 parametros totales (744B nominales) y 40B activos por token, con una longitud de contexto de 512K tokens segun la model card. Su proposito es el razonamiento de largo horizonte en entornos con herramientas: uso de funciones, encadenamiento multi-paso y ejecucion de tareas de agente en distintos entornos.
 
-El modelo es el resultado del proyecto de investigación ToolSpace, presentado en el paper *ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents*. Su metodología clave consiste en construir un grafo de composición de herramientas a partir de trazas reales de ejecución, capturando dependencias de datos, estado y reintentos, y sintetizando tareas entre entornos mediante recorridos con estado consciente y rollback, conservando solo las trayectorias que superan verificación basada en ejecución.
+El modelo se presenta como el artefacto de evaluacion del paper *ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents*, que propone la sintesis de entornos centrados en herramientas a partir de trazas de ejecucion reales. ToolSpace construye un grafo de composicion de herramientas que captura dependencias de datos, estado y reintentos, y genera tareas cross-environment mediante recorridos conscientes del estado con rollback, conservando solo trayectorias que superan verificacion basada en ejecucion.
 
-Es relevante ahora porque aborda uno de los cuellos de botella actuales en agentes: la escasez de datos de entrenamiento de alta calidad para interacciones multi-paso con herramientas. Los resultados publicados muestran mejoras sustanciales frente a su modelo base GLM-5.2 (56,6 de media frente a 44,6 sobre siete benchmarks agénticos). El checkpoint distribuido corresponde a la versión oficial completa de Atria-Dawn, en formato BF16 safetensors, con una longitud de contexto de 512K tokens.
+Es relevante ahora porque el entrenamiento de agentes de largo horizonte depende criticamente de la disponibilidad de entornos y trayectorias verificables, y este checkpoint muestra mejoras sustanciales sobre su backbone GLM-5.2 en siete benchmarks de agente y uso de herramientas (promedio no ponderado de 56,6 frente a 44,6). La licencia MIT y el formato BF16 Safetensors facilitan su adopcion, aunque su tamano (1,51 TB) restringe el despliegue a infraestructura distribuida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (glm_moe_dsa), basado en GLM-5.2 |
-| Parametros totales | 753.329.940.480 (~744B) |
+| Arquitectura | MoE (mixture-of-experts) sobre backbone GLM-5.2; tag de transformers `glm_moe_dsa` |
+| Parametros totales | 753.329.940.480 (744B nominales) |
 | Parametros activos | 40B |
-| Longitud de contexto | 512K tokens |
-| Tipos de cuantizacion | no disponible (checkpoint oficial en BF16) |
+| Longitud de contexto | 512K tokens (segun release oficial) |
+| Tipos de cuantizacion | no disponible (solo se distribuye BF16 Safetensors) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | Safetensors (BF16), ~1,51 TB |
+| Formato de pesos | BF16 Safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura MoE derivada de GLM-5.2, con 744B de parámetros totales de los cuales solo 40B se activan por token, lo que reduce significativamente el coste de inferencia respecto a un modelo denso de tamaño equivalente. La etiqueta de arquitectura en el repositorio es `glm_moe_dsa`. La longitud de contexto de 512K tokens hereda la configuración de la versión oficial de la que procede el checkpoint.
+El modelo emplea una arquitectura transformer con capas MoE, identificada en los tags de Hugging Face como `glm_moe_dsa`, con 744B parametros totales y 40B activos por token. El backbone es GLM-5.2 de zai-org, y este repositorio distribuye el checkpoint oficial Atria-Dawn de liberacion completa, afinado para tareas de agente y uso de herramientas. La ventana de contexto es de 512K tokens, heredada del release oficial.
 
-El entrenamiento se basa en la metodología ToolSpace: se construye un grafo de composición de herramientas a partir de trazas reales de ejecución, capturando dependencias de datos, de estado y de reintentos entre herramientas. A partir de ese grafo se sintetizan tareas multi-entorno mediante recorridos (walks) conscientes del estado, con mecanismos de rollback, y se filtran las trayectorias mediante verificación basada en ejecución, conservando únicamente las que producen resultados correctos. No se dispone de detalles sobre el número de tokens de entrenamiento ni sobre el uso de técnicas como RLHF o DPO.
+El entrenamiento se apoya en la metodologia ToolSpace: a partir de trazas de ejecucion reales se construye un grafo de composicion de herramientas que modela dependencias de datos, estado y reintentos; sobre ese grafo se sintetizan tareas cross-environment mediante recorridos conscientes del estado con rollback, y se conservan unicamente las trayectorias que pasan verificacion basada en ejecucion. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron etapas de RLHF o DPO; esos datos no estan disponibles en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline text-generation).
-- Tool use y function calling: entrenado específicamente con trayectorias de composición de herramientas verificadas por ejecución.
-- Razonamiento de horizonte largo (long-horizon): capaz de encadenar múltiples pasos y llamadas a herramientas manteniendo dependencias de estado y datos.
-- Gestión de dependencias entre herramientas, incluyendo reintentos y rollback de estado.
-- Contexto muy largo (512K tokens), adecuado para tareas agénticas con historiales extensos.
-- Existen variantes más pequeñas de la familia para despliegues con recursos limitados: ToolSpace-8B y ToolSpace-35B-A3B.
+- Generacion de texto conversacional multi-turno con contexto de hasta 512K tokens.
+- Uso de herramientas y function calling, evaluado en BFCL V4 (78,4) y τ³-Bench Banking (43,3).
+- Razonamiento de agente de largo horizonte con encadenamiento multi-paso y dependencias de estado.
+- Ejecucion de tareas de automatizacion en entornos diversos (AutomationBench, SkillsBench, JobBench).
+- Tareas de dominio profesional y legal-tecnico (Harvey LAB, OfficeQA Pro).
+- Capacidad de recuperacion y reintento ante fallos de ejecucion, derivada del entrenamiento sobre trayectorias con rollback.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Modo thinking, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Automatización de flujos de trabajo empresariales: encadenamiento de múltiples APIs y herramientas internas con dependencias de estado, área donde el modelo mejora de 29,3 a 54,7 en AutomationBench frente a su base.
-- Ejecución de tareas ofimáticas complejas: generación y manipulación de documentos, hojas de cálculo y presentaciones vía herramientas, con mejora en OfficeQA Pro (56,9 a 67,1).
-- Asistentes bancarios y financieros con herramientas: el resultado en τ³-Bench Banking (43,3) indica capacidad para escenarios multi-turno con llamadas a APIs del dominio.
-- Orquestación de agentes con function calling en producción: compatible con frameworks agénticos que requieren decisiones de llamada a herramientas fiables en BFCL V4 (78,4).
-- Tareas legales asistidas por herramientas: mejora notable en Harvey LAB (13,3 a 27,5), útil en pipelines de investigación jurídica con herramientas de búsqueda y documentos.
-- Investigación y evaluación de agentes de horizonte largo: sirve como modelo de referencia reproducible junto con el código de evaluación publicado.
-- Desarrollo de agentes multi-entorno: gracias al entrenamiento con tareas sintetizadas cruzando entornos, es adecuado para orquestadores que combinan herramientas de sistemas heterogéneos.
+- Automatizacion de flujos de trabajo empresariales: el modelo puede orquestar secuencias de llamadas a APIs y herramientas con dependencias de estado, aprovechando su entrenamiento en AutomationBench y su contexto de 512K para mantener el estado de procesos largos.
+- Agentes de atencion al cliente con acceso a sistemas internos: gestiona conversaciones multi-turno y ejecuta function calling contra CRM, bases de datos de pedidos y sistemas de ticketing, con reintentos ante fallos gracias a las trayectorias con rollback del entrenamiento.
+- Asistentes de codigo en pipelines de CI/CD: integrado via tool calling para consultar repositorios, ejecutar tests y proponer parches, con capacidad de razonamiento multi-paso sobre el resultado de cada herramienta.
+- Analisis documental de gran volumen: su ventana de 512K permite procesar contratos, expedientes o informes extensos en una sola pasada, con resultados medidos en OfficeQA Pro (67,1).
+- Automatizacion de tareas de back office y operaciones: ejecucion de procedimientos con multiples herramientas y verificacion de estado intermedio, adecuado para JobBench (57,5) y SkillsBench (67,8).
+- Evaluacion y generacion de trayectorias de agente para investigacion: el checkpoint sirve como referencia para estudiar sintesis de entornos y verificacion basada en ejecucion, con codigo de evaluacion publicado en el repositorio del proyecto.
+- Despliegue como backend de agentes en produccion mediante SGLang o vLLM distribuido, siguiendo la guia oficial de Atria-Dawn.
 
 ## Benchmarks y rendimiento
 
-Resultados de la Tabla 1 del paper ToolSpace (media aritmética no ponderada sobre siete benchmarks):
+Resultados de la Tabla 1 del paper ToolSpace. El promedio (Avg.) es la media no ponderada sobre los siete benchmarks.
 
-| Modelo | AutomationBench | SkillsBench | JobBench | τ³-Bench Banking | BFCL V4 | Harvey LAB | OfficeQA Pro | Media |
+| Modelo | AutomationBench | SkillsBench | JobBench | τ³-Bench Banking | BFCL V4 | Harvey LAB | OfficeQA Pro | Avg. |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| GLM-5.2 (base) | 29,3 | 56,7 | 43,4 | 37,1 | 75,6 | 13,3 | 56,9 | 44,6 |
-| **ToolSpace-744B-A40B** | 54,7 | 67,8 | 57,5 | 43,3 | 78,4 | 27,5 | 67,1 | 56,6 |
-
-La mayor mejora relativa se produce en AutomationBench (+25,4 puntos) y Harvey LAB (+14,2 puntos), lo que confirma que el entrenamiento con entornos sintéticos de herramientas beneficia especialmente a las tareas de automatización multi-paso.
+| GLM-5.2 | 29,3 | 56,7 | 43,4 | 37,1 | 75,6 | 13,3 | 56,9 | 44,6 |
+| ToolSpace-744B-A40B | 54,7 | 67,8 | 57,5 | 43,3 | 78,4 | 27,5 | 67,1 | 56,6 |
 
 ## Requisitos de hardware
 
-- El checkpoint completo en BF16 ocupa aproximadamente 1,51 TB, por lo que la inferencia requiere un clúster multi-nodo; una sola GPU consumer es insuficiente con diferencia.
-- VRAM estimada: al menos ~1,5 TB solo para pesos en BF16, más la memoria de KV-cache para contextos largos; se recomienda infraestructura de tipo H100/B200 distribuida (por ejemplo, 20 o más GPUs H100 de 80 GB solo para cargar los pesos).
-- Despliegue recomendado: servir de forma distribuida con SGLang o vLLM, siguiendo la guía oficial de Atria-Dawn y usando este repositorio como ruta del modelo.
-- No hay información sobre cuantizaciones oficiales (GGUF, AWQ, GPTQ); sin cuantización, el modelo no es viable en estaciones de trabajo locales.
-- Para entornos con recursos limitados, la familia ofrece ToolSpace-8B y ToolSpace-35B-A3B como alternativas mucho más ligeras.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en BF16: el checkpoint pesa aproximadamente 1,51 TB, por lo que requiere agregado de memoria multi-GPU muy superior a 1,5 TB; no cabe en una sola GPU.
+- GPU recomendadas: clusters con GPUs de datacenter (H100, H200, B200 o A100 80GB en configuracion multi-nodo); no se especifican configuraciones minimas exactas en la informacion disponible.
+- GPU de consumo: no cabe en ninguna GPU consumer (RTX 4090, 5090, etc.) en BF16; no se han publicado cuantizaciones alternativas.
+- Opciones de despliegue: SGLang o vLLM en modo distribuido, siguiendo la guia oficial de Atria-Dawn; transformers como libreria declarada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Enfoque |
+| Modelo | Parametros | Activos | Contexto | Licencia | Avg. ToolSpace |
 |---|---|---|---|---|---|
-| ToolSpace-744B-A40B | ~744B | 40B | 512K | MIT | Agentes, tool use, long-horizon |
-| GLM-5.2 (base) | no disponible | no disponible | no disponible | no disponible | Modelo generalista |
-| ToolSpace-35B-A3B | ~35B | 3B | no disponible | MIT | Agentes, variante ligera |
-| ToolSpace-8B | 8B | 8B (denso) | no disponible | MIT | Agentes, variante ligera |
+| ToolSpace-744B-A40B | 744B | 40B | 512K | MIT | 56,6 |
+| GLM-5.2 (backbone) | no disponible | no disponible | 512K (heredado) | no disponible | 44,6 |
+| ToolSpace-35B-A3B | 35B | 3B | no disponible | no disponible | no disponible |
+| ToolSpace-8B | 8B | no disponible (denso) | no disponible | no disponible | no disponible |
 
-Dentro de su propia familia, ToolSpace-744B-A40B es la variante de máximo rendimiento: supera a su modelo base en 12 puntos de media en los siete benchmarks agénticos. Comparativas con modelos agénticos de otros fabricantes de escala similar no están disponibles en la información proporcionada.
+Las variantes 8B y 35B-A3B pertenecen a la misma familia ToolSpace y se distribuyen en repositorios separados del mismo autor; sus resultados no se detallan en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Tamaño y coste: con ~1,51 TB en BF16, el despliegue exige un clúster multi-nodo, lo que lo hace inviable para la mayoría de equipos sin infraestructura de gran escala.
-- Sin cuantizaciones oficiales publicadas en la información disponible; no existe ruta clara de despliegue en hardware consumer.
-- Sesgos: no documentados en la model card; al derivar de GLM-5.2, puede heredar los sesgos de su modelo base.
-- Riesgo de alucinación: no cuantificado en la información disponible; en tareas agénticas con herramientas, las alucinaciones pueden propagar errores en cadena a lo largo de trayectorias multi-paso.
-- Idiomas soportados: no disponibles; el modelo base GLM-5.2 es bilingüe chino-inglés, pero no hay confirmación oficial para este fine-tune.
-- El repositorio tiene adopción muy temprana (200 descargas y 1 like en el momento de los datos), por lo que la madurez del ecosistema y el soporte comunitario son limitados.
-- Aunque la licencia MIT permite uso comercial sin restricciones significativas, el coste operativo del modelo es el principal freno práctico.
+- Sesgos conocidos: no se documentan en la model card; al derivar de GLM-5.2, hereda los sesgos del backbone, no cuantificados en la informacion disponible.
+- Riesgo de alucinacion: no se reportan tasas especificas; en tareas de agente el riesgo se mitiga parcialmente por la verificacion basada en ejecucion durante el entrenamiento, pero no se garantiza en inferencia.
+- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion; conviene verificar las condiciones del backbone GLM-5.2 y del checkpoint Atria-Dawn de origen.
+- Requisitos de infraestructura: 1,51 TB en BF16 exigen despliegue multi-nodo; no hay cuantizaciones publicadas que reduzcan la huella.
+- Contexto: los 512K tokens implican coste computacional y de memoria elevado; no se documentan estrategias de atencion eficiente especificas mas alla del tag `glm_moe_dsa`.
+- Datos de entrenamiento incompletos: no se especifican tokens, composicion del dataset ni etapas de alineacion (RLHF/DPO), lo que dificulta la reproducibilidad.
+- Madurez: modelo reciente (creado en octubre de 2026) con 363 descargas y 2 likes en el momento de la consulta; ecosistema de herramientas y cuantizaciones aun limitado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dongguanting/ToolSpace-744B-A40B
-- Checkpoint oficial de referencia (Atria-Dawn): https://huggingface.co/internlm/Atria-Dawn
-- Guía de despliegue oficial: https://huggingface.co/internlm/Atria-Dawn#-deployment--online-access
-- Código del proyecto (GitHub): https://github.com/dongguanting/ToolSpace
-- Directorio de evaluación: https://github.com/dongguanting/ToolSpace/tree/main/evaluation
+- Paper: https://huggingface.co/papers/2611.05036
+- Codigo: https://github.com/dongguanting/ToolSpace
+- Evaluacion: https://github.com/dongguanting/ToolSpace/tree/main/evaluation
 - Variante 8B: https://huggingface.co/dongguanting/ToolSpace-8B
 - Variante 35B-A3B: https://huggingface.co/dongguanting/ToolSpace-35B-A3B
-- Modelo base: https://huggingface.co/zai-org/GLM-5.2
-- Paper: *ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents* (enlace directo no disponible)
+- Checkpoint de origen Atria-Dawn: https://huggingface.co/internlm/Atria-Dawn
+- Guia de despliegue de Atria-Dawn: https://huggingface.co/internlm/Atria-Dawn#-deployment--online-access
+- Modelo base GLM-5.2: https://huggingface.co/zai-org/GLM-5.2

@@ -2,99 +2,95 @@
 
 ## Resumen
 
-Aurum 4B Uncensored es un ajuste derivado de Qwen3.5-4B, publicado por el usuario 2Beyes, que elimina el comportamiento de rechazo (refusal) del modelo original conservando el resto de los pesos prácticamente intactos. Se trata de una edición de pesos (abliteration selectiva) que no incorpora entrenamiento adicional de conocimiento ni de seguridad: parte de Qwen/Qwen3.5-4B, incluye su torre de visión y su cabeza de predicción multi-token (MTP), y aplica únicamente la dirección de cambio responsable de suprimir los rechazos, extraída de otro modelo derivado (Heretic Abliterated).
+Aurum 4B Uncensored es un modelo derivado de Qwen3.5-4B, publicado por el usuario 2Beyes en Hugging Face. Se trata de una edición quirúrgica de los pesos de Qwen3.5-4B cuyo único propósito es eliminar el comportamiento de rechazo (refusal) del modelo original, conservando intactos el resto de pesos, la torre de visión y la cabeza de predicción multi-token (MTP). El modelo se presenta como una alternativa para chat diario y tool calling en tarjetas gráficas de 8 GB.
 
-El modelo está pensado para chat cotidiano y tool calling en tarjetas gráficas de 8 GB, con un total de 4.659.865.088 parámetros (~4,66 mil millones) en formato BF16 safetensors y un repositorio de 9,3 GB. Su pipeline es image-text-to-text, por lo que mantiene capacidad multimodal de entrada (imagen y vídeo) heredada del modelo base. La licencia es Apache 2.0, heredada de los modelos de origen.
+La relevancia del modelo reside en su enfoque de edición: en lugar de un fine-tune completo o un abliteration convencional, el autor toma la diferencia de pesos entre Qwen3.5-4B y un modelo derivado (Distill-Heretic-Abliterated) y aísla únicamente las direcciones singulares responsables de la eliminación de rechazos, descartando el resto de cambios de destilado. El resultado es un modelo que, según el autor, mantiene el conocimiento de Qwen3.5-4B y su precisión en tool calling, pero con cero rechazos en 100 prompts dañinos de prueba.
 
-Es relevante ahora porque demuestra una técnica de edición de pesos muy quirúrgica: en lugar de un fine-tuning completo, aplica descomposición en valores singulares sobre las matrices de salida de atención y de la FFN para retener solo la componente que elimina rechazos. El autor reporta 0 rechazos sobre 100 prompts dañinos y una mejora notable en tool calling (BFCL v3 no-live de 68,7 a 85,9) manteniendo el conocimiento (MMLU-Redux 2.0: 74,9 frente a 75,0 del modelo anterior). Solo se ha validado en inglés.
+El modelo tiene 4.659.865.088 parámetros, se distribuye en safetensors BF16 y cuenta con cuantizaciones GGUF (Q3_K_M a Q8_0) en un repositorio separado. La licencia es Apache-2.0 y el idioma declarado es inglés. Es un modelo multimodal image-text-to-text con soporte de thinking mode y tool calling.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (Qwen3.5, clase `Qwen3_5ForConditionalGeneration`) con torre de visión y cabeza MTP |
-| Parámetros totales | 4.659.865.088 (~4,66 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer multimodal (Qwen3_5ForConditionalGeneration) con torre de visión y cabeza MTP |
+| Parametros totales | 4.659.865.088 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | BF16 (safetensors); GGUF Q3_K_M a Q8_0, BF16 y proyector de visión (repo GGUF separado) |
-| Idiomas soportados | en (inglés); solo probado en inglés |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) y GGUF (llama.cpp b12289) |
+| Tipos de cuantizacion | BF16 (safetensors); GGUF Q3_K_M a Q8_0, BF16 y proyector de visión en repo separado |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (BF16), GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer multimodal de la familia Qwen3.5, con torre de visión y cabeza de predicción multi-token (MTP) heredadas sin cambios de Qwen/Qwen3.5-4B. No se ha realizado entrenamiento adicional: la modificación consiste en una edición de pesos basada en la diferencia entre Qwen3.5-4B y `insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated`, de la que se conserva únicamente la componente que elimina rechazos. En concreto, se aplica descomposición en valores singulares sobre las matrices `self_attn.o_proj` / `linear_attn.out_proj` de las capas 4 a 31 (reteniendo las 8 direcciones singulares principales, ~98 % del cambio) y sobre `mlp.down_proj` (la dirección principal, solo en tensores donde representa más de la mitad del cambio). El resto de cambios del modelo de origen (su fine-tuning de destilación) no se incluye.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer multimodal con torre de visión y cabeza de predicción multi-token (MTP). La edición aplicada no es un entrenamiento: se calcula la diferencia de pesos entre Qwen3.5-4B y el modelo insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated, y se conserva únicamente la componente que elimina rechazos. En concreto, se retienen las 8 direcciones singulares principales del cambio (aproximadamente el 98 % del mismo) en los pesos de salida de atención (`self_attn.o_proj` / `linear_attn.out_proj`) de las capas 4 a 31, y la dirección principal en los pesos de salida de la FFN (`mlp.down_proj`) solo en los tensores donde esa dirección concentra más de la mitad del cambio.
 
-La configuración, el tokenizador y la plantilla de chat provienen del modelo Heretic citado (mismo tokenizador que Qwen3.5). El autor indica que esta variante (denominada internamente `c-v1u`) superó a otras dos candidatas en pruebas selladas: misma precisión en tool calling, más conocimiento y ningún rechazo. Los pesos son idénticos tensor a tensor al GGUF BF16 evaluado. Las cuantizaciones GGUF usan una importance matrix calculada sobre una mezcla Aurum hermana, con texto de calibración de prosa, código y chats de tool calling. El archivo `build_log.json` documenta cada tensor tocado y la fracción del cambio retenida.
+El resto de modificaciones del modelo Heretic (su fine-tune de destilado) no se incluye. La configuración, el tokenizer y la plantilla de chat provienen del modelo Heretic, que comparte tokenizer con Qwen3.5. Los pesos BF16 son idénticos tensor a tensor al GGUF BF16 con el que se hicieron los benchmarks. Las cuantizaciones GGUF se generaron con llama.cpp (b12289) usando una importance matrix calculada sobre una mezcla hermana de Aurum, con texto de calibración compuesto por prosa, código y chats de tool-calling. Durante el desarrollo, esta build se denominó `c-v1u` y superó a otras dos candidatas en pruebas selladas (misma precisión de tool calling, más conocimiento y cero rechazos).
 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno.
-- Razonamiento con modo "thinking" opcional (parámetro `enable_thinking` en la plantilla de chat, igual que Qwen3.5).
-- Tool calling / function calling, con soporte de llamadas simples, múltiples y paralelas.
-- Entrada multimodal de imagen y vídeo (torre de visión de Qwen sin modificar); el preprocesado se toma del procesador de Qwen3.5-4B.
-- Predicción multi-token (MTP) para decodificación especulativa, heredada del modelo base.
-- Capacidades multilingües: solo declaradas y probadas en inglés.
-- Comportamiento sin rechazos ante peticiones dañinas (0 de 100 en la prueba del autor).
+- Razonamiento con thinking mode, activable mediante `enable_thinking` en la plantilla de chat, igual que en Qwen3.5.
+- Tool calling / function calling, con soporte evaluado mediante el checker AST de `bfcl-eval` en las categorías simple, multiple, parallel, parallel-multiple e irrelevance.
+- Procesamiento de imagen y vídeo mediante la torre de visión de Qwen3.5-4B, sin modificar.
+- Predicción multi-token (MTP) heredada de Qwen3.5-4B.
+- Capacidades multilingües limitadas al inglés según la model card.
+- Comportamiento sin rechazos: cero refusals en 100 prompts dañinos de prueba según el autor.
 
 ## Casos de uso
 
-- Asistente de chat local en GPU de consumo: con ~4,66 B parámetros en Q4_K_M cabe en tarjetas de 8 GB y permite conversaciones multi-turno en local mediante llama.cpp u Ollama.
-- Automatización de tool calling en pipelines de agentes: el BFCL v3 no-live de 85,9 (92,0 en simple, 92,5 en multiple, 82,0 en parallel y parallel-multiple) lo hace adecuado para orquestar APIs y funciones en flujos de varios pasos.
-- Extracción de información de documentos con imágenes: al conservar la torre de visión, puede procesar capturas, formularios o diagramas y devolver texto estructurado.
-- Prototipado de investigación sobre alineación y seguridad: sirve como caso de estudio de abliteration selectiva, con registro tensor a tensor de los cambios aplicados en `build_log.json`.
-- Generación y revisión de código en entornos controlados: el modelo soporta instrucciones estrictas (IFEval strict 85,3) y puede integrarse en herramientas de desarrollo locales.
-- Evaluación comparativa de técnicas de edición de pesos: útil para reproducir y contrastar metodologías de modificación de rechazos frente a fine-tunings completos.
-- Despliegue en entornos de investigación cerrados donde el operador asume la responsabilidad del contenido generado y controla el acceso.
+- Chat conversacional en hardware de consumo: el modelo está pensado para funcionar en tarjetas de 8 GB, lo que permite desplegar un asistente conversacional local en equipos con RTX 3060/4060 o similares usando cuantizaciones GGUF de 4 bits.
+- Tool calling en pipelines de automatización: al conservar los pesos de Qwen3.5-4B y su precisión de tool calling, puede integrarse en flujos que requieran invocar funciones externas (APIs, bases de datos, sistemas de ficheros) con un modelo pequeño y ligero.
+- Procesamiento de documentos con imagen: la torre de visión intacta permite extraer información de capturas, formularios escaneados o imágenes en aplicaciones de back-office.
+- Investigación sobre alineación y refusal: el modelo es útil como caso de estudio de edición de pesos selectiva, ya que `build_log.json` documenta cada tensor tocado y la fracción de cambio conservada.
+- Generación de código asistida en local: con cuantización Q4_K_M o Q5_K_M cabe en GPUs de consumo y puede integrarse en editores o CLIs de desarrollo sin depender de la nube.
+- Evaluación comparativa de técnicas de abliteration: sirve como referencia para comparar edición quirúrgica de pesos frente a fine-tunes completos de destilado en términos de conocimiento retenido y precisión de tool calling.
+- Prototipado de agentes multi-paso: el thinking mode y el soporte de tool calling permiten construir agentes que razonan y ejecutan acciones en entornos controlados.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor, ambos modelos en Q4_K_M con llama.cpp, thinking desactivado, decodificación greedy y sin system prompt, con su propio runner.
+El autor compara Aurum 4B con Distill-Heretic 4B (insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated, ejecutado como GGUF Q4_K_M de yachen4ever). Ambos modelos se ejecutan en llama.cpp con Q4_K_M, thinking desactivado, decodificación greedy y sin system prompt, con el runner propio del autor. No se han publicado los valores numéricos de las gráficas en el texto de la model card.
 
-| Benchmark | Modelo anterior (Qwen3.8-4B-Distill-Heretic-Abliterated) | Aurum 4B |
-|---|---|---|
-| IFEval, prompt strict / loose (541) | 72,8 / 75,8 | 78,6 / 81,5 |
-| IFEval, instruction strict / loose | 81,3 / 83,8 | 85,3 / 87,5 |
-| BFCL v3 non-live, media (1.240) | 68,7 | 85,9 |
-| BFCL simple / multiple / parallel / parallel-multiple | 65,2 / 74,5 / 48,0 / 62,0 | 92,0 / 92,5 / 82,0 / 82,0 |
-| BFCL irrelevance (no llamar herramienta si no encaja) | 93,8 | 80,8 |
-| MMLU-Redux 2.0 (5.330 preguntas) | 75,0 | 74,9 |
-| GPQA Diamond (198, orden de respuestas aleatorizado con semilla fija) | 42,9 | 49,5 |
+| Benchmark | Aurum 4B | Distill-Heretic 4B | Notas |
+|---|---|---|---|
+| BFCL (simple, multiple, parallel, parallel-multiple, irrelevance) | no disponible (valores en gráfica) | no disponible (valores en gráfica) | Checker AST `bfcl-eval` sobre generaciones propias |
+| GPQA | no disponible (valores en gráfica) | no disponible (valores en gráfica) | Límite de 3.072 tokens; 84 de 198 respuestas de Aurum agotaron el límite y contaron como incorrectas (6 en Distill-Heretic) |
+| Refusals (100 prompts dañinos) | 0 | no disponible | Conteo por frases marcadoras, estimación |
+| Conocimiento general | no disponible (valores en gráfica) | no disponible (valores en gráfica) | — |
 
-| Test de rechazos | Modelo anterior | Qwen3.5-4B oficial | Mezcla Aurum anterior | Aurum 4B |
-|---|---|---|---|---|
-| Rechazos sobre 100 prompts dañinos (mlabonne/harmful_behaviors) | 0 | 72 | 20 | 0 |
-| Sobrerrechazo: rechazos sobre 30 prompts inocuos × 3 muestras | 1,1 % | no disponible | 0 % | 0 % |
-
-Notas del autor: los números publicados por Qwen corresponden a BF16 con thinking largo y BFCL v4, por lo que no son directamente comparables. GPQA usa un límite de 3.072 tokens de respuesta; 84 de las 198 respuestas de Aurum alcanzaron el límite y se contaron como incorrectas (6 en el modelo anterior), por lo que su puntuación con un límite mayor sería probablemente superior. Los rechazos se cuentan con frases marcadoras, por lo que son una estimación.
+El autor advierte que los números publicados por Qwen corresponden a BF16 con thinking largo y BFCL v4, por lo que no son directamente comparables con estas mediciones en Q4 y sin thinking.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en BF16, aproximadamente 9,3 GB de pesos más overhead de activaciones y caché KV; en Q4_K_M, en torno a 3 GB de pesos, lo que deja margen para contexto en 8 GB.
-- GPU recomendadas: A100 o H100 para BF16 con contexto largo; RTX 4090 (24 GB) para BF16 o Q8_0 con holgura; RTX 4060 Ti / 3070 / 4070 (8-12 GB) para Q4_K_M.
-- Cabe en GPU de consumo: sí, en tarjetas de 8 GB con cuantizaciones Q3_K_M a Q4_K_M según el contexto; el autor lo diseña explícitamente para 8 GB.
-- Opciones de despliegue: llama.cpp (GGUF, probado con build b12289), Ollama a partir de los GGUF, y `transformers` con `AutoModelForImageTextToText` (requiere versión con soporte de Qwen3.5). No se mencionan vLLM ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el modelo en BF16 ocupa aproximadamente 9,3 GB (tamaño del repo), por lo que requiere más de 8 GB en precisión completa. Las cuantizaciones GGUF Q4_K_M reducen la huella a un rango compatible con GPUs de 8 GB, según la afirmación del autor.
+- GPU recomendadas: el modelo está diseñado explícitamente para tarjetas de 8 GB. Para BF16 se necesitan GPUs con 12-16 GB o más (RTX 4070 Ti, RTX 4080, A10, L4). Para cuantizaciones Q4, cabría en RTX 3060 8 GB, RTX 4060, RTX 3070.
+- Cabe en GPU de consumo: sí, en cuantizaciones GGUF de 4-5 bits en GPUs de 8 GB; en BF16 requiere gama media-alta.
+- Opciones de despliegue: transformers (con versión que soporte Qwen3.5, usando `AutoModelForImageTextToText`), llama.cpp (GGUF), y por extensión cualquier runtime compatible con GGUF como Ollama o LM Studio. No se mencionan vLLM ni TGI en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tool calling (BFCL v3 non-live) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Aurum 4B Uncensored | ~4,66 B | no disponible | 85,9 (media) | Apache 2.0 | safetensors + GGUF |
-| Qwen3.5-4B (base oficial) | ~4,66 B (no confirmado en la información) | no disponible | no disponible (Qwen reporta BFCL v4 en BF16) | Apache 2.0 (según herencia) | safetensors |
-| Qwen3.8-4B-Distill-Heretic-Abliterated | no disponible | no disponible | 68,7 (media) | no disponible | GGUF Q4_K_M |
-| Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated | no disponible | no disponible | no disponible | no disponible | safetensors |
+| Aurum 4B Uncensored | 4.659.865.088 | no disponible | Apache-2.0 | Edición selectiva de pesos para eliminar refusals, conserva pesos Qwen | safetensors BF16 + GGUF |
+| Qwen/Qwen3.5-4B | ~4B (no confirmado en la información) | no disponible | no disponible en la información | Modelo base multimodal con visión y MTP | Hugging Face |
+| insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated | ~4B (no confirmado) | no disponible | no disponible en la información | Destilado de Qwen3.8 + abliteration con Heretic | Hugging Face |
+| yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF | ~4B (no confirmado) | no disponible | no disponible en la información | Cuantización GGUF del anterior | Hugging Face |
+
+No se dispone de datos de rendimiento numéricos comparativos más allá de las gráficas referenciadas en la model card.
 
 ## Limitaciones y advertencias
 
-- Modelo sin censura: no rechaza peticiones dañinas (0 de 100 en la prueba del autor). No debe desplegarse donde usuarios que no hayan elegido un modelo sin censura puedan acceder a él.
-- La edición de rechazos no añade conocimiento ni ninguna capa de seguridad; elimina únicamente el comportamiento de rechazo.
-- Es un modelo de 4 B: comete errores factuales y puede invocar herramientas cuando ninguna encaja (BFCL irrelevance 80,8, inferior al 93,8 del modelo anterior). Conviene verificar los resultados de las herramientas antes de confiar en ellos.
-- Verbosidad en preguntas de razonamiento difíciles con thinking desactivado; 84 de 198 respuestas de GPQA alcanzaron el límite de 3.072 tokens.
-- Solo probado en inglés; no hay validación multilingüe.
-- La licencia Apache 2.0 permite uso comercial, pero la ausencia de rechazos traslada al operador toda la responsabilidad legal y ética sobre el contenido generado.
-- No se dispone de longitud de contexto ni de datos de latencia/throughput en la información proporcionada.
-- El repositorio safetensors no incluye configuración de preprocesado de imágenes: para entrada multimodal hay que usar el procesador de Qwen/Qwen3.5-4B.
+- Modelo sin censura: no rechaza peticiones dañinas (0 refusals en 100 prompts de prueba). El autor advierte explícitamente de que no debe desplegarse donde usuarios que no hayan elegido un modelo sin censura puedan acceder a él.
+- Es un modelo de 4B: comete errores factuales y puede invocar herramientas de forma incorrecta, según reconoce el autor.
+- El idioma declarado es únicamente inglés; el rendimiento en castellano u otros idiomas no está documentado.
+- La longitud de contexto no se especifica en la información disponible.
+- La eliminación de rechazos puede afectar a la utilidad en dominios sensibles (salud, legal, seguridad) donde una negativa a responder sería deseable.
+- Los benchmarks se realizaron en Q4_K_M y sin thinking; los números de Qwen publicados no son directamente comparables.
+- El conteo de rechazos se basa en frases marcadoras, no en revisión manual, por lo que es una estimación.
+- Licencia Apache-2.0: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo en producción.
+- El repositorio no incluye configuración de preprocesador de imagen propia; debe usarse el processor de Qwen3.5-4B para imágenes.
+- Sesgos conocidos: no documentados en la información disponible, aunque al conservar los pesos de Qwen3.5-4B hereda los sesgos del modelo base.
 
 ## Enlaces
 
@@ -102,5 +98,4 @@ Notas del autor: los números publicados por Qwen corresponden a BF16 con thinki
 - GGUF: https://huggingface.co/2Beyes/Aurum-4B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo fuente de la edición de rechazos: https://huggingface.co/insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
-- Modelo anterior comparado: https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF
-- Dataset de prompts dañinos: mlabonne/harmful_behaviors (referenciado en la model card, sin URL directa en la información)
+- GGUF del modelo de comparación: https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF

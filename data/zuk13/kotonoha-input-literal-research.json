@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Zuk13/kotonoha-input-literal-research",
+  "slug": "zuk13-kotonoha-input-literal-research",
+  "author": "Zuk13",
+  "url": "https://huggingface.co/Zuk13/kotonoha-input-literal-research",
+  "created_at": "2026-11-24T03:16:15.000Z",
+  "updated_at": "2026-11-24T03:17:06.000Z",
+  "license": "kotonoha-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "gguf",
+    "kana-kanji-conversion",
+    "japanese-ime",
+    "ja",
+    "base_model:rinna/japanese-gpt2-small",
+    "base_model:quantized:rinna/japanese-gpt2-small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113959680,
+  "parameters_human": "114.0M",
+  "storage_bytes": 255570817,
+  "storage_human": "256 MB",
+  "context_length": 1024,
+  "base_model": "rinna/japanese-gpt2-xsmall, rinna/japanese-gpt2-small",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

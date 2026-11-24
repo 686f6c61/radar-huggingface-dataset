@@ -2,112 +2,113 @@
 
 ## Resumen
 
-Kanana-2-30B-A3B-EchoMoE-s4-r512-c1024 es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por el grupo McGill-NLP que aplica la tecnica EchoMoE sobre el modelo base Kanana-2-30B-A3B de Kakao. EchoMoE no es un modelo nuevo entrenado desde cero, sino una adaptacion arquitectonica que modifica la comunicacion entre expertos en entornos de paralelismo de expertos: en lugar de transmitir cada estado oculto completo entre nodos, envia una diferencia comprimida respecto a un estado de referencia que se refresca cada pocas capas. El checkpoint concreto que nos ocupa usa una referencia cada 4 capas MoE, un codigo de dispatch de 512 dimensiones y un codigo de combine de 1024 dimensiones.
+Kanana-2-30B-A3B-EchoMoE-s4-r512-c1024 es un checkpoint de investigación publicado por el laboratorio McGill-NLP que aplica la técnica EchoMoE sobre el modelo surcoreano Kanana-2-30B-A3B. EchoMoE no es una técnica de entrenamiento orientada a mejorar la calidad, sino una modificación arquitectónica cuyo objetivo es reducir el tráfico de red en inferencia distribuida con paralelismo de expertos (expert parallelism). En lugar de transmitir el estado oculto completo entre nodos, el modelo envía una diferencia comprimida respecto a un estado de referencia que se refresca cada pocas capas.
 
-El modelo resuelve un problema de infraestructura mas que de capacidad: el cuello de botella de red en el despliegue distribuido de modelos MoE. Segun la model card, reduce un 50 por ciento los bytes intercambiados entre nodos y mejora el throughput un 14,6 por ciento con paralelismo de expertos 32 sobre 4 nodos, a costa de una perdida media de 2,4 puntos sobre el profesor en 18 benchmarks.
+El modelo subyacente es un transformer de tipo mixture-of-experts con arquitectura deepseek_v3, 48 capas, 128 expertos enrutados (6 activos) más 2 expertos compartidos y un tamaño oculto de 2.048. El total de parámetros asciende a 29.598.193.536 (unos 29,6 mil millones), con aproximadamente 3 mil millones activos por token, de ahí la denominación A3B. La ventana de contexto evaluada es de 32.768 tokens en precisión bf16.
 
-Es relevante ahora porque los modelos MoE de gran tamano son cada vez mas comunes en produccion y la comunicacion entre expertos se ha convertido en el factor limitante del rendimiento. EchoMoE propone una via para abaratar esa comunicacion sin reentrenar desde cero, mediante destilacion sobre un profesor ya ajustado. La arquitectura subyacente es deepseek_v3, con 48 capas, 128 expertos enrutados (6 activos) y 2 expertos compartidos, tamano oculto 2048 y 29.598 millones de parametros totales.
+Su relevancia es fundamentalmente de sistemas: demuestra que se puede reducir un 50 % el volumen de bytes intercambiados entre nodos y mejorar el throughput un 14,6 % en expert parallel 32 sobre 4 nodos, a cambio de una pérdida media de 2,4 puntos en 18 benchmarks respecto al modelo profesor sin comprimir. Es, por tanto, una pieza pensada para equipos que sirven MoE de gran tamaño en clústeres multi-nodo y quieren optimizar el cuello de botella de comunicación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE basada en deepseek_v3 (48 capas, 128 expertos enrutados con 6 activos, 2 expertos compartidos, hidden size 2048) con retrofit EchoMoE |
-| Parametros totales | 29.598.193.536 (~29,6B) |
-| Parametros activos | No disponible (el modelo base declara 30B-A3B; el numero exacto de parametros activos no se detalla en la informacion proporcionada) |
-| Longitud de contexto | 32.768 tokens (evaluado a esa longitud) |
-| Tipos de cuantizacion | No disponible (evaluado en bf16; no se listan cuantizaciones publicadas) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | kanana-license (license: other, con enlace a LICENSE en el repositorio) |
-| Formato de pesos | safetensors, con codigo remoto (custom_code) para transformers |
+| Arquitectura | Transformer MoE tipo deepseek_v3 con retrofit EchoMoE (compresión de activaciones en dispatch/combine) |
+| Parametros totales | 29.598.193.536 (~29,6 B) |
+| Parametros activos | ~3 B (6 de 128 expertos enrutados + 2 compartidos por token) |
+| Longitud de contexto | 32.768 tokens (evaluado) |
+| Tipos de cuantizacion | no disponible (evaluado en bf16) |
+| Idiomas soportados | en |
+| Licencia | kanana-license (license: other) |
+| Formato de pesos | safetensors (repo de 59,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de kanana-2-30b-a3b-base-2601, un transformer MoE de 48 capas con 128 expertos enrutados de los cuales 6 estan activos, mas 2 expertos compartidos y un tamano oculto de 2048. Sobre ese modelo base se aplico primero un ajuste supervisado con allenai/Dolci-Instruct-SFT para producir el profesor (Kanana-2-30B-A3B-SFT-EchoMoE-teacher). El checkpoint EchoMoE se obtiene por destilacion desde ese profesor sobre 4,3B tokens, entrenando todos los pesos, con datos que incluyen allenai/dolma3_dolmino_mix-10B-1025.
+El modelo parte de kanana-2-30b-a3b-base-2601, un MoE de 48 capas con 128 expertos enrutados (6 activos por token), 2 expertos compartidos y dimensión oculta de 2.048. Sobre esa base, el profesor (Kanana-2-30B-A3B-SFT-EchoMoE-teacher) se obtuvo mediante fine-tuning supervisado con datos de instrucciones Dolci (allenai/Dolci-Instruct-SFT). El checkpoint aquí descrito se destila del profesor sobre 4,3 mil millones de tokens, entrenando todos los pesos, e incorpora la modificación EchoMoE: una referencia cada 4 capas MoE (12 de las 47), un código de dispatch de 512 dimensiones y un código de combine de 1.024 dimensiones.
 
-La innovacion tecnica es el mecanismo EchoMoE: en lugar de enviar cada estado oculto completo en la comunicacion all-to-all entre expertos, se envia una diferencia comprimida respecto a un estado de referencia que se refresca cada 4 capas MoE (12 de las 47 capas MoE actuan como referencia). El dispatch usa un codigo de 512 dimensiones y el combine un codigo de 1024 dimensiones. Esto reduce a la mitad los bytes intercambiados entre nodos. La evaluacion de precision se realizo con vLLM 0.21 y el plugin de EchoMoE, mientras que las pruebas de throughput usan el runtime de paralelismo de expertos del repositorio sobre vLLM 0.29 con DeepEP. Para transformers se requiere la version 5.8.1 y cargar el modelo con codigo remoto.
+La innovación central es la compresión de la comunicación entre expertos. Bajo paralelismo de expertos, cada capa MoE requiere un all-to-all que mueve los estados ocultos entre GPUs; EchoMoE sustituye el envío del estado completo por el envío de una diferencia respecto a un estado de referencia periódicamente refrescado, codificada en las dimensiones indicadas. Esto reduce a la mitad los bytes inter-nodo. La evaluación de precisión se realizó con vLLM 0.21 y el plugin EchoMoE; las medidas de throughput, con el runtime de paralelismo de expertos del repositorio sobre vLLM 0.29 y DeepEP. La carga en transformers 5.8.1 requiere código remoto del repositorio.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con plantilla de chat integrada (apply_chat_template).
-- Razonamiento y conocimiento general, evaluado en el dominio "knowledge and reasoning" con una media del 66,5 por ciento.
-- Matematicas, con un rendimiento medio del 37,9 por ciento en el conjunto de benchmarks de matematicas.
-- Generacion de codigo, con un 49,5 por ciento de media en los benchmarks de codigo.
-- Seguimiento de instrucciones, con un 52,5 por ciento de media en las tareas de instruction following.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
-- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
+- Generación de texto conversacional en inglés, con plantilla de chat (`apply_chat_template`).
+- Razonamiento y conocimiento general: puntuación media de 66,5 en el bloque de conocimiento y razonamiento de los 18 benchmarks.
+- Matemáticas: 37,9 de media en las tareas de matemáticas evaluadas.
+- Generación de código: 49,5 de media en las tareas de código.
+- Seguimiento de instrucciones: 52,5 de media, la dimensión menos degradada respecto al profesor (−0,5).
+- Soporte de decodificación greedy para tareas few-shot y parámetros de muestreo recomendados para chat (temperature 0,7, top_p 0,8, top_k 20, presence penalty 1,5 en vLLM).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Despliegue distribuido de un MoE de ~30B en clusters multi-nodo: el modelo esta disenado para servir con paralelismo de expertos 32 sobre 4 nodos de 8 H100, donde la reduccion del 50 por ciento en bytes de red y la mejora del 14,6 por ciento de throughput lo hacen adecuado para entornos con red RDMA limitada.
-- Servicio de chat conversacional en ingles: con contexto de 32.768 tokens y plantilla de chat, puede gestionar conversaciones multi-turno con historial largo, usando los ajustes recomendados de temperatura 0,7, top_p 0,8 y top_k 20.
-- Investigacion en eficiencia de infraestructura: sirve como referencia reproducible para estudiar el compromiso entre compresion de activaciones y calidad, comparandolo directamente con el profesor sin comprimir.
-- Prototipado en una sola GPU de 80 GB: los pesos en bf16 caben en una unica GPU de 80 GB mediante transformers con codigo remoto, lo que permite experimentacion sin montar un cluster.
-- Tareas de instruction following con requisitos moderados de precision: con solo 0,5 puntos de perdida en ese dominio, es viable para asistentes que priorizan el cumplimiento de instrucciones sobre conocimiento factual.
-- Evaluacion comparativa de tecnicas de compresion: util para equipos que investigan destilacion y compresion de comunicacion en MoE, dado que el repositorio publica los CSV de resultados de throughput.
+- Servicio de un MoE de ~30 B en clúster multi-nodo con paralelismo de expertos: el caso de uso principal. En despliegues con expert parallel 32 sobre 4 nodos de 8 H100, el modelo reduce un 50 % los bytes inter-nodo y mejora el throughput entre un 10,3 % y un 16,0 % según la carga, lo que lo hace adecuado para maximizar peticiones por GPU en infraestructura ya existente.
+- Investigación en sistemas distribuidos de inferencia: sirve como referencia reproducible para medir el impacto de la compresión de activaciones en all-to-all, con CSV de resultados publicado en el repositorio.
+- Car-gas de prefill largas (4.096 → 256 tokens): con 128 peticiones por GPU y RDMA, es el escenario con mayor ganancia medida (+14,6 % en BF16), útil para pipelines de resumen o clasificación de documentos largos.
+- Generación con contexto largo (16.384 → 512 tokens): mantiene una ganancia del +10,7 % en BF16, adecuado para asistentes que procesan documentos extensos dentro de la ventana de 32.768 tokens.
+- Evaluación comparativa de técnicas de compresión: al publicarse junto al profesor sin comprimir, permite aislar el coste en calidad (−2,4 puntos de media) frente al beneficio en throughput.
+- Despliegue en un solo nodo de 8 GPU para pruebas: la configuración vLLM documentada (`--data-parallel-size 8 --enable-expert-parallel`) permite servir el checkpoint en una sola máquina antes de escalar a multi-nodo.
+- Fine-tuning o destilación posterior sobre dominio propio: al entrenarse todos los pesos en la destilación, el checkpoint es un punto de partida plausible para adaptaciones, siempre dentro de los términos de la kanana-license.
 
 ## Benchmarks y rendimiento
 
-Precision media (porcentaje) sobre 18 benchmarks por dominio, con la variacion respecto al profesor entre parentesis:
+Precisión media (%) sobre 18 benchmarks, con la variación respecto al profesor entre paréntesis:
 
 | Dominio | Profesor | EchoMoE |
 |---|---|---|
 | Conocimiento y razonamiento | 68,2 | 66,5 (−1,7) |
-| Matematicas | 41,5 | 37,9 (−3,6) |
-| Codigo | 53,4 | 49,5 (−3,9) |
+| Matemáticas | 41,5 | 37,9 (−3,6) |
+| Código | 53,4 | 49,5 (−3,9) |
 | Seguimiento de instrucciones | 53,0 | 52,5 (−0,5) |
 | **Media** | **58,5** | **56,1 (−2,4)** |
 
-Throughput: ganancia sobre el profesor sin comprimir, ambos servidos con vLLM 0.29 y DeepEP con paralelismo de expertos 32 sobre 4 nodos de 8 H100, con asignacion equilibrada de expertos:
+Throughput: ganancia sobre el profesor sin comprimir, ambos servidos con vLLM 0.29 y DeepEP, expert parallel 32 sobre 4 nodos de 8 H100, asignación de expertos balanceada.
 
-| Carga (tokens entrada → salida) | Red | Peticiones por GPU | Ganancia BF16 | Ganancia FP8 |
+| Carga (entrada → salida) | Red | Peticiones por GPU | Ganancia BF16 | Ganancia FP8 |
 |---|---|---|---|---|
-| 128 → 1.024 | RDMA | 512 | +12,5% | +10,8% |
-| 1.024 → 128 | RDMA | 512 | +14,9% | +16,0% |
-| 4.096 → 256 | RDMA | 128 | **+14,6%** | +14,1% |
-| 16.384 → 512 | RDMA | 32 | +10,7% | +10,3% |
+| 128 → 1.024 | RDMA | 512 | +12,5 % | +10,8 % |
+| 1.024 → 128 | RDMA | 512 | +14,9 % | +16,0 % |
+| 4.096 → 256 | RDMA | 128 | +14,6 % | +14,1 % |
+| 16.384 → 512 | RDMA | 32 | +10,7 % | +10,3 % |
 
-No se han publicado resultados de benchmarks individuales (MMLU, HumanEval, GSM8K) en la informacion disponible; solo se ofrecen medias agregadas por dominio.
+No se han publicado resultados por benchmark individual (MMLU, HumanEval, GSM8K) en la información disponible; solo se ofrecen medias agregadas por dominio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en bf16 (29,6B parametros) caben en una unica GPU de 80 GB segun la model card. Para cuantizaciones de 8 o 4 bits no se proporcionan datos.
-- GPU recomendadas: H100 de 80 GB para el despliegue multi-nodo con paralelismo de expertos; una unica GPU de 80 GB (A100 80GB o H100 80GB) para inferencia en transformers.
-- Cabe en GPU consumer: no disponible; con 29,6B parametros en bf16 no cabe en GPUs consumer de 24 GB, y no se documentan versiones cuantizadas.
-- Opciones de despliegue: vLLM 0.21 con el plugin de EchoMoE (precision), runtime de paralelismo de expertos del repositorio sobre vLLM 0.29 con DeepEP (throughput), y transformers 5.8.1 con codigo remoto. No se mencionan llama.cpp, Ollama ni TGI.
-- Latencia y throughput: se reportan ganancias relativas de throughput del 10,3 al 16,0 por ciento frente al profesor segun carga y precision de comunicacion; no se publican valores absolutos de latencia ni tokens por segundo.
-- Nota de despliegue: con vLLM conviene fijar --max-num-seqs 256 para que el arranque no supere el tiempo de espera de 600 segundos del servidor de API, ya que la captura de grafos CUDA crece con el numero de secuencias concurrentes.
+- VRAM en bf16: los pesos completos (~29,6 B de parámetros) caben en una sola GPU de 80 GB según la model card; el repo ocupa 59,2 GB en safetensors.
+- Inferencia multi-nodo: configuración de referencia con expert parallel 32 sobre 4 nodos de 8 H100 (32 GPU en total), backend all-to-all `allgather_reducescatter` y atención `FLASH_ATTN_MLA`.
+- Un solo nodo: `vllm serve` con `--data-parallel-size 8 --enable-expert-parallel` sobre 8 GPU.
+- GPU consumer: no se documenta soporte en GPU de consumo; el tamaño en bf16 y la dependencia de DeepEP y del runtime de paralelismo de expertos lo hacen inviable en RTX 4090 sin cuantización, y no se publican pesos cuantizados.
+- Opciones de despliegue: vLLM 0.21 con el plugin EchoMoE (precisión) y vLLM 0.29 con DeepEP (throughput); transformers 5.8.1 con código remoto para carga en un solo dispositivo. No se mencionan llama.cpp, Ollama ni TGI.
+- Ajuste de arranque: `--max-num-seqs 256` y `--max-model-len 32768`; la captura de CUDA graphs crece con el número de secuencias concurrentes y con el valor por defecto supera el tiempo de espera de 600 s del servidor de API.
+- Throughput: ganancias relativas del +10,3 % a +16,0 % frente al profesor; no se publican valores absolutos de tokens por segundo ni latencias.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kanana-2-30B-A3B-EchoMoE-s4-r512-c1024 | ~29,6B | 32.768 | kanana-license | Hugging Face (McGill-NLP) | Version comprimida; media de 56,1 en 18 benchmarks |
-| Kanana-2-30B-A3B-SFT-EchoMoE-teacher | No disponible | No disponible | No disponible | Hugging Face (McGill-NLP) | Profesor sin comprimir; media de 58,5; referencia de maxima calidad |
-| kanana-2-30b-a3b-base-2601 | No disponible | No disponible | No disponible | Hugging Face (kakaocorp) | Modelo base original de Kakao, sin ajuste de instrucciones |
+| Kanana-2-30B-A3B-EchoMoE-s4-r512-c1024 | ~29,6 B totales / ~3 B activos | 32.768 | MoE deepseek_v3 + compresión de activaciones | kanana-license | Hugging Face (389 descargas) |
+| Kanana-2-30B-A3B-SFT-EchoMoE-teacher | ~29,6 B totales / ~3 B activos | 32.768 | MoE sin compresión (profesor) | no disponible en la información | Hugging Face |
+| kanana-2-30b-a3b-base-2601 | ~29,6 B totales / ~3 B activos | no disponible | MoE base sin fine-tuning | no disponible en la información | Hugging Face (kakaocorp) |
 
-No se dispone de datos de otros modelos MoE comparables de la misma categoria en la informacion proporcionada.
+La comparación relevante es contra el propio profesor: mismo tamaño y contexto, 2,4 puntos más de media en 18 benchmarks pero sin la reducción del 50 % en bytes inter-nodo ni la mejora de throughput. No se dispone de datos de benchmarks de otros MoE de tamaño comparable en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Perdida de calidad medible: 2,4 puntos de media sobre el profesor, con las mayores caidas en codigo (−3,9) y matematicas (−3,6). No es adecuado para tareas donde esos dominios sean criticos sin una evaluacion previa.
-- Solo ingles: la etiqueta de idioma del repositorio es unicamente "en"; no se garantiza rendimiento en castellano ni en otros idiomas.
-- Licencia kanana-license: es una licencia "other" con terminos propios recogidos en el fichero LICENSE del repositorio. Es imprescindible revisarlos antes de cualquier uso comercial, ya que no es una licencia permisiva estandar.
-- Dependencia de codigo remoto: requiere trust_remote_code=True en transformers y una version concreta (5.8.1), ademas de un plugin especifico para vLLM. Esto anade riesgo de mantenimiento y superficie de ataque en produccion.
-- Complejidad de despliegue: el rendimiento ventajoso depende de configuraciones concretas (paralelismo de expertos 32, DeepEP, RDMA, asignacion equilibrada de expertos). Fuera de ese entorno, las ganancias pueden no materializarse.
-- Riesgo de alucinacion: no se documenta ninguna evaluacion especifica de factualidad ni de tasas de alucinacion; debe asumirse el riesgo habitual de los modelos de 30B.
-- Sesgos: no se proporciona informacion sobre evaluaciones de sesgo o seguridad.
-- Modelo de investigacion: con 0 descargas y 0 likes en el momento de la consulta, no hay evidencia de uso en produccion ni de validacion externa.
+- Pérdida de calidad medible: −2,4 puntos de media, con las mayores caídas en código (−3,9) y matemáticas (−3,6); no es un modelo recomendable cuando la precisión en esas áreas es crítica.
+- Solo inglés: la model card declara únicamente `en`; no hay evidencia de calidad en castellano.
+- Licencia restrictiva: kanana-license con `license: other`; es imprescindible revisar el archivo LICENSE del repositorio antes de cualquier uso comercial.
+- Naturaleza de investigación: 389 descargas y 0 likes en el momento de la consulta; no es un checkpoint con validación de producción fuera del entorno descrito.
+- Dependencia de software específico: requiere el plugin EchoMoE y, para throughput, DeepEP y el runtime del repositorio; no funciona con un stack vLLM estándar sin el plugin.
+- Configuración de arranque delicada: el valor por defecto de secuencias concurrentes provoca tiempos de captura de CUDA graphs que superan el timeout del servidor de API.
+- Riesgo de alucinación y sesgos: no se documentan análisis específicos de sesgo ni tasas de alucinación en la información disponible.
+- Sin datos de cuantización: no se publican pesos GGUF, AWQ ni GPTQ, lo que limita el despliegue fuera de bf16.
+- Los resultados de throughput dependen de la topología de red (RDMA), del balanceo de expertos y del número de nodos; no son extrapolables a otras configuraciones.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/McGill-NLP/Kanana-2-30B-A3B-EchoMoE-s4-r512-c1024
-- Codigo: https://github.com/McGill-NLP/EchoMoE
-- Pagina del proyecto: https://mcgill-nlp.github.io/EchoMoE/
-- Coleccion EchoMoE: https://huggingface.co/collections/McGill-NLP/echomoe-6afcbfa10b38185f87cbd0ac
-- Resultados de throughput (CSV): https://github.com/McGill-NLP/EchoMoE/blob/main/results/throughput/throughput.csv
+- Modelo en Hugging Face: https://huggingface.co/McGill-NLP/Kanana-2-30B-A3B-EchoMoE-s4-r512-c1024
 - Modelo profesor: https://huggingface.co/McGill-NLP/Kanana-2-30B-A3B-SFT-EchoMoE-teacher
 - Modelo base: https://huggingface.co/kakaocorp/kanana-2-30b-a3b-base-2601
-- Paper: no disponible (pendiente de arXiv segun la model card)
+- Paper: https://arxiv.org/abs/2611.22215
+- Código: https://github.com/McGill-NLP/EchoMoE
+- Página del proyecto: https://mcgill-nlp.github.io/EchoMoE/
+- Colección EchoMoE: https://huggingface.co/collections/McGill-NLP/echomoe-6afcbfa10b38185f87cbd0ac
+- Resultados de throughput (CSV): https://github.com/McGill-NLP/EchoMoE/blob/main/results/throughput/throughput.csv

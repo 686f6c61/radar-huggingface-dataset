@@ -2,109 +2,108 @@
 
 ## Resumen
 
-RusMind 4.7 · Моментум (Momentum) es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por DICPlay, presentado como la variante más ligera de la familia RusMind de nueva generación 4.7. Está afinado a partir de `google/gemma-4-E2B-it` y orientado a ejecución local en dispositivo (on-device) sin conexión a internet, incluyendo portátiles, PC convencionales y teléfonos. El modelo declara 4.647.450.147 parámetros totales, de los cuales aproximadamente 2.000 millones se activan por token, lo que explica su idoneidad para inferencia en hardware modesto.
+RusMind 4.7 · Momentum (Моментум) es un modelo de lenguaje de tipo Mixture of Experts (MoE) afinado por DICPlay a partir de google/gemma-4-E2B-it, orientado a inferencia local en dispositivo (on-device) y sin conexión. Con 4.647.450.147 parámetros totales y aproximadamente 2.000 millones activos por token, está diseñado para ejecutarse en portátiles, ordenadores de sobremesa convencionales y teléfonos de gama alta mediante llama.cpp y formatos GGUF. Cubre principalmente ruso e inglés.
 
-El modelo se distribuye en formato GGUF para llama.cpp, LM Studio y Ollama, con soporte declarado de ruso e inglés. Su propuesta de valor es competir en el benchmark ruso MERA v2 frente a modelos de mayor tamaño: el autor reporta un 0,136 de puntuación global, por encima de T-lite de T-Bank, LFM2.5 de Liquid AI, Gemma 4 E2B de Google y Qwen3.5-4B de Alibaba en la categoría de menos de 5.000 millones de parámetros.
+El modelo forma parte de la familia RusMind 4.7, que incluye variantes de mayor tamaño como Sokol (8.900 millones de parámetros, con modo de razonamiento) y Vspyshka (7.500 millones). Momentum es la variante más ligera de la generación y la que prioriza latencia y huella de memoria mínimas, sacrificando capacidad bruta a cambio de portabilidad. Su relevancia actual radica en que compite en el benchmark ruso MERA v2 con modelos de 8 a 32 mil millones de parámetros pese a activar solo unos 2 mil millones por token.
 
-La relevancia actual reside en la combinación de licencia propia (rusmind-license), distribución exclusivamente en GGUF y un enfoque explícito a mercados rusohablantes con despliegue offline. El repositorio ocupa 20,2 GB y acumula 8.749 descargas en el momento de la consulta.
+La ficha se basa en la model card publicada por el autor y en los metadatos de Hugging Face. Los resultados de benchmarks proceden del leaderboard MERA v2 citado por el autor; no se dispone de evaluaciones independientes adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) sobre base Gemma 4; detalles de capas y atención no disponibles |
+| Arquitectura | Mixture of Experts (MoE) derivada de google/gemma-4-E2B-it; no se detalla la configuración interna de expertos |
 | Parametros totales | 4.647.450.147 |
-| Parametros activos | Aproximadamente 2.000 millones por token (según model card) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF (variantes concretas no especificadas en la información disponible) |
-| Idiomas soportados | Ruso (ru), inglés (en) |
-| Licencia | rusmind-license (license: other) |
-| Formato de pesos | GGUF (librería llama.cpp); pesos safetensors no distribuidos en este repo |
-| Modelo base | google/gemma-4-E2B-it (finetune) |
-| Tamaño del repositorio | 20,2 GB |
-| Pipeline | text-generation |
+| Parametros activos | ~2.000 millones por token (según model card) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (el repo publica pesos en formato GGUF; no se detallan los niveles concretos Q4, Q5, Q8, etc.) |
+| Idiomas soportados | ruso (ru), inglés (en) |
+| Licencia | rusmind-license (licencia propia del autor, etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (librería llama.cpp); repo de 20,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura Mixture of Experts derivada de `google/gemma-4-E2B-it`, con 4.647 millones de parámetros totales y aproximadamente 2.000 millones activos por token. Esta configuración permite que el coste computacional por token se acerque al de un modelo denso de 2B mientras la capacidad representacional se acerca a la de un modelo de 4,6B. No se dispone de información sobre el número de expertos, el tamaño de los mismos, la estrategia de enrutamiento ni el número de capas en la información proporcionada.
+El modelo se basa en google/gemma-4-E2B-it, un transformer con arquitectura Mixture of Experts según la información del autor, que indica 4,6 mil millones de parámetros totales y unos 2 mil millones activos en cada paso de generación. DICPlay ha realizado un fine-tuning (base_model_relation: finetune) sobre esa base para especializarla en ruso, cultura e historia de Rusia, seguimiento de instrucciones complejas y tareas humanocéntricas (comprensión de personajes, humor y antónimos).
 
-Respecto al entrenamiento, la model card indica que se trata de un finetune del modelo base de Google, con mejoras declaradas en razonamiento, seguimiento de instrucciones complejas, conocimiento cultural e histórico de Rusia, corrección ortográfica y puntuación en ruso, y comprensión de matices humanos (personajes, humor, antónimos). No se especifican el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o similares. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición exacta del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO u otras variantes de alineación. Tampoco se detallan innovaciones técnicas específicas como decodificación especulativa o mecanismos de atención lineal. El modelo se distribuye exclusivamente en GGUF para su uso con llama.cpp, LM Studio y Ollama, lo que sugiere una vocación clara de despliegue local más que de servicio en la nube.
 
 ## Capacidades
 
-- Generación de texto conversacional en ruso e inglés, con especial énfasis en calidad del ruso.
-- Razonamiento multi-paso y resolución de problemas lógicos; el autor lo posiciona como el mejor de la línea Momentum en tareas de razonamiento.
+- Generación de texto conversacional en ruso e inglés, con especial énfasis en ruso.
+- Razonamiento multi-paso y resolución de problemas lógicos; el autor declara que es la variante con mejores resultados de razonamiento de la línea Momentum.
 - Seguimiento de instrucciones complejas con múltiples requisitos simultáneos.
-- Llamada a herramientas (tool calling / function calling), según declara la model card.
-- Conocimiento profundo de cultura, regiones, historia, fechas y personalidades de Rusia.
-- Corrección ortográfica y de puntuación en ruso (0,719 reportado en la subtarea correspondiente de MERA v2).
-- Comprensión de matices humanos: carácter de personajes, humor y palabras con significados opuestos.
-- Generación de código y razonamiento estable, según evaluación de un canal independiente citado por el autor.
-- Comprensión del japonés con matices de cortesía, según la misma fuente externa (no listado como idioma oficial del modelo).
-- Ejecución en dispositivo (on-device) y offline mediante llama.cpp, LM Studio y Ollama.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Comprensión de matices humanísticos: caracteres de personajes, humor y palabras con significados opuestos.
+- Conocimiento específico de cultura, regiones, historia, fechas y personalidades de Rusia.
+- Corrección ortográfica y de puntuación en ruso (declarada una puntuación de 0,719 en la tarea de ortografía y puntuación de MERA v2).
+- Llamada a herramientas (tool calling / function calling), según la model card.
+- Comprensión de japonés con matices de cortesía, citada como resultado de pruebas externas del canal Future Craft Lab.
+- Escritura de código y razonamiento estable en tareas de programación, según la misma evaluación externa.
+- Ejecución offline y on-device mediante llama.cpp.
 
 ## Casos de uso
 
-- Asistentes conversacionales offline en ruso: el modelo puede desplegarse en portátiles y teléfonos mediante GGUF y llama.cpp, gestionando diálogos multi-turno sin conexión y con una huella de parámetros activos de ~2B que reduce los requisitos de memoria frente a modelos densos de tamaño similar.
-- Corrección y edición de textos en ruso: dado su rendimiento declarado en ortografía y puntuación (0,719 en MERA v2), es adecuado para pipelines de revisión automática de documentos, artículos o publicaciones antes de su publicación.
-- Atención al cliente en mercados rusohablantes: con soporte de tool calling, puede integrarse en flujos que consulten APIs internas (estado de pedidos, bases de conocimiento) manteniendo la conversación en ruso de forma gramaticalmente correcta.
-- Aplicaciones educativas sobre historia y cultura de Rusia: su conocimiento declarado de eventos, fechas y personalidades lo hace útil para tutores o sistemas de preguntas y respuestas orientados a ese dominio.
-- Procesamiento de lenguaje natural en el borde (edge computing): al ejecutarse en teléfonos y navegador, permite clasificación, resumen o generación de texto en aplicaciones móviles sin enviar datos a la nube, relevante por privacidad.
-- Generación de código asistida en entornos con restricciones de conectividad: integrable en editores o scripts locales que requieran autocompletado o explicación de fragmentos sin depender de servicios externos.
-- Moderación y análisis de contenido con matices: su capacidad declarada para interpretar humor, personajes y antónimos puede emplearse en sistemas de detección de sarcasmo o ambigüedad en ruso.
+- Asistentes conversacionales locales en ruso: el modelo puede gestionar diálogos multi-turno directamente en el dispositivo del usuario, sin enviar datos a la nube, gracias a su huella de ~2 mil millones de parámetros activos y a los pesos GGUF optimizados para llama.cpp.
+- Corrección y edición de textos en ruso: útil para revisar ortografía, puntuación y estilo en herramientas de escritura offline; el autor reporta 0,719 en la tarea correspondiente de MERA v2.
+- Atención al cliente en mercados rusoparlantes con requisitos de privacidad: al ejecutarse en local, permite desplegar un chatbot sin conexión externa en terminales de tienda, quioscos o portátiles corporativos.
+- Automatización de tareas con tool calling: integrable en pipelines locales que necesiten invocar funciones (consulta de datos, generación de ficheros, operaciones sobre APIs internas) sin depender de un endpoint remoto.
+- Aplicaciones móviles y de escritorio con inferencia embebida: adecuado para asistentes de notas, resúmenes y respuesta a preguntas dentro de apps que distribuyan el modelo GGUF junto al binario.
+- Educación y tutoría en ruso: explicación de conceptos, resolución guiada de problemas lógicos y matemáticos y apoyo al estudio de historia y cultura rusas, con funcionamiento offline en entornos con conectividad limitada.
+- Prototipado rápido y experimentación: al ser la variante más ligera de RusMind 4.7, sirve para validar flujos de agente y prompts antes de migrar a Sokol o Vspyshka en producción.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles provienen del benchmark MERA v2 (Multimodal Evaluation for Russian-language Architectures), gestionado por la Alianza en el ámbito de la IA (Sber, Yandex, MTS, VK, Gazprom Neft y RFPI). El autor reporta para Momentum 4.7 una puntuación global de 0,136.
+Los datos proceden del leaderboard MERA v2 citado por el autor (puntuación global). No se han publicado resultados de benchmarks en la información disponible para tareas estándar como MMLU, HumanEval o GSM8K.
 
-| Modelo | Parámetros (activos) | MERA v2 (global) |
+| Modelo | Parámetros | MERA v2 (global) |
 |---|---|---|
-| RusMind 4.7 · Momentum | 4,6B (~2B activos) | 0,136 |
-| T-lite · T-Bank | 8B | No disponible en el extracto (inferior según autor) |
-| LFM2.5 · Liquid AI | No disponible | No disponible en el extracto (inferior según autor) |
-| Gemma 4 E2B · Google | ~2B | No disponible en el extracto (inferior según autor) |
-| Qwen3.5-4B · Alibaba | 4B | No disponible en el extracto (inferior según autor) |
+| RusMind 4.7 · Momentum | 4,6 B totales / ~2 B activos | 0,136 |
+| T-lite (T-Bank) | 8 B | por debajo de Momentum según el autor (valor no detallado) |
+| LFM2.5 (Liquid AI) | no disponible | por debajo de Momentum según el autor |
+| Gemma 4 E2B (Google) | ~2 B activos | por debajo de Momentum según el autor |
+| Qwen3.5-4B (Alibaba) | 4 B | por debajo de Momentum según el autor |
+| RuadaptQwen3-8B | 8 B | por debajo de Momentum según el autor |
+| Zero-Mistral-Small | 24 B | por debajo de Momentum según el autor |
+| A-Vibe (Avito) | no disponible | por debajo de Momentum según el autor |
 
-El autor declara que Momentum es el número 1 global entre modelos de menos de 5.000 millones de parámetros en MERA v2, primero en cultura y regiones de Rusia en esa franja, primero en tareas centrocéntricas en humanidad y superior a T-lite, RuadaptQwen3-8B, A-Vibe y Zero-Mistral-Small en razonamiento. Asimismo, indica una mejora del +5 % respecto a Momentum 4.6.5 y del +37 % respecto al modelo abierto original del mismo tamaño. No se han publicado en la información disponible resultados desglosados por subtarea (MMLU, HumanEval, GSM8K u otros) ni cifras absolutas de los modelos comparados.
+El autor afirma que Momentum es el número 1 en MERA v2 entre modelos de hasta 5 mil millones de parámetros, el número 1 en cultura y regiones de Rusia en esa franja, el número 1 en tareas humanocéntricas y que supera a T-lite en tareas lógicas por un factor de 2. Estas afirmaciones provienen de la model card y no se han verificado de forma independiente en esta ficha.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo MoE de 4,6B en GGUF Q4 ocupa aproximadamente 2,5-3 GB en disco y requiere un espacio similar en memoria; las variantes de mayor precisión pueden acercarse a 6-9 GB.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo está pensado para ejecutarse en CPU y en GPU de consumo; tarjetas como RTX 3060 (12 GB), RTX 4060 (8 GB) o superiores deberían acomodarlo en cuantizaciones intermedias.
-- Cabe en GPU de consumo: sí, previsiblemente en la mayoría de tarjetas con 6 GB o más en cuantización Q4; también en teléfonos y navegador según declara el autor.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama (mencionados explícitamente en la model card); vLLM y TGI no se citan y su compatibilidad con este GGUF no está confirmada.
-- Latencia y throughput: no disponibles. El autor afirma que "vuela" en navegador y teléfono, pero no aporta cifras de tokens por segundo.
+- VRAM estimada: con ~2 mil millones de parámetros activos y pesos GGUF, una cuantización Q4 típica ocuparía del orden de 2,5 a 3 GB; Q8 se acercaría a 5 GB. Las cifras exactas dependen del nivel de cuantización publicado, que no se detalla.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM para cuantizaciones bajas; RTX 3060, RTX 4060, RTX 4090 y superiores son suficientes para inferencia cómoda. En entornos profesionales, A100 y H100 no aportan ventaja relevante por el tamaño reducido del modelo.
+- Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo modernas con 4-6 GB de VRAM, y también en CPU y en teléfonos de gama alta mediante llama.cpp.
+- Opciones de despliegue: llama.cpp, LM Studio, Ollama y cualquier runtime compatible con GGUF. El repo indica endpoints_compatible, lo que sugiere compatibilidad con APIs de tipo OpenAI servidas localmente.
+- Latencia y throughput: no disponibles de forma cuantificada; el autor destaca que "vuela" en navegador y teléfono, pero no publica tokens por segundo medidos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | MERA v2 | Licencia | Formato |
+| Modelo | Parámetros | Contexto | MERA v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind 4.7 · Momentum | 4,6B (~2B activos) | No disponible | 0,136 | rusmind-license | GGUF |
-| Gemma 4 E2B · Google | ~2B | No disponible | No disponible (inferior según autor) | Términos de Google (modelo base) | Safetensors, GGUF |
-| Qwen3.5-4B · Alibaba | 4B | No disponible | No disponible (inferior según autor) | No disponible | No disponible |
-| LFM2.5 · Liquid AI | No disponible | No disponible | No disponible (inferior según autor) | No disponible | No disponible |
-| T-lite · T-Bank | 8B | No disponible | No disponible (inferior según autor) | No disponible | No disponible |
+| RusMind 4.7 · Momentum | 4,6 B totales / ~2 B activos | no disponible | 0,136 | rusmind-license | GGUF en Hugging Face |
+| RusMind 4.7 · Vspyshka | 7,5 B | no disponible | 0,191 | rusmind-license | Pesos completos y GGUF |
+| RusMind 4.7 · Sokol | 8,9 B | no disponible | 0,279 | rusmind-license | Pesos completos y GGUF |
+| T-lite (T-Bank) | 8 B | no disponible | por debajo de Momentum | no disponible | no disponible |
+| Gemma 4 E2B (Google) | ~2 B activos | no disponible | por debajo de Momentum | Gemma license | Hugging Face |
+| Qwen3.5-4B (Alibaba) | 4 B | no disponible | por debajo de Momentum | no disponible | Hugging Face |
 
-La comparación se limita a las afirmaciones del autor; no se dispone de cifras independientes verificables para los modelos alternativos en la información proporcionada.
+La comparativa se limita a los datos publicados por el autor; no hay cifras independientes para contextualizar el rendimiento frente a estos modelos en tareas estándar.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor. Al estar especializado en ruso y en contenido cultural e histórico de Rusia, puede presentar sesgos de representación hacia esa región.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de fidelidad factual.
-- Limitaciones de contexto: la longitud de contexto no está especificada, lo que impide garantizar conversaciones o documentos largos.
-- Idiomas: cobertura oficial limitada a ruso e inglés; el japonés se menciona como capacidad observada por un tercero, no como idioma soportado oficialmente.
-- Licencia: `rusmind-license` es una licencia propia (license: other). No se detallan en la información disponible las restricciones para uso comercial, redistribución o modificación; es imprescindible revisar el archivo LICENSE del repositorio antes de usarlo en producción.
-- Distribución: solo se ofrece GGUF; no hay pesos safetensors en este repositorio, lo que limita el reentrenamiento o la integración con frameworks que no acepten GGUF.
-- Verificación de benchmarks: las cifras de MERA v2 provienen de la model card del autor; no se aportan desgloses ni enlaces directos a resultados individuales verificables en el extracto.
-- Producción: al ser un finetune de un modelo base de Google, pueden aplicar condiciones adicionales derivadas del modelo original; conviene revisar la licencia de `google/gemma-4-E2B-it`.
+- Sesgos conocidos: no documentados por el autor; al estar especializado en ruso y en cultura e historia de Rusia, es probable que su cobertura de otras culturas sea limitada, aunque no se aportan evidencias.
+- Riesgo de alucinación: no cuantificado; los modelos de este tamaño y con fine-tuning específico sobre datos culturales pueden generar datos históricos plausibles pero incorrectos.
+- Limitaciones de contexto: la longitud de contexto no está publicada, lo que impide planificar casos de uso con ventanas largas.
+- Idiomas: solo ruso e inglés de forma declarada; el japonés se menciona como capacidad observada en pruebas externas, no como idioma oficialmente soportado.
+- Licencia: rusmind-license es una licencia propia etiquetada como "other"; no se detallan en la información disponible las restricciones para uso comercial, redistribución o modificación. Es imprescindible revisar el fichero LICENSE del repo antes de cualquier despliegue en producción.
+- Caveats de producción: la distribución exclusiva en GGUF limita el uso con frameworks que requieren safetensors (vLLM, TGI); no hay datos publicados sobre latencia, throughput ni estabilidad en cargas concurrentes.
+- Los resultados de MERA v2 provienen del autor y se refieren a una metodología específica para ruso; no equivalen a rendimiento general en benchmarks internacionales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-4.7-Momentum
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Demo / plataforma del autor: https://rusmind.ru
-- Benchmark MERA v2: https://mera.a-ai.ru/ru/text/leaderboard
-- Modelo relacionado (RusMind 4.7 · Sokol): https://huggingface.co/DICPlay/RusMind-Sokol-4.7
-- Modelo relacionado (RusMind 4.7 · Vspyshka): https://huggingface.co/DICPlay/RusMind-Vspyshka-4.7
-- Licencia: archivo LICENSE dentro del repositorio de Hugging Face
+- Leaderboard MERA v2: https://mera.a-ai.ru/ru/text/leaderboard
+- RusMind 4.7 · Sokol: https://huggingface.co/DICPlay/RusMind-Sokol-4.7
+- RusMind 4.7 · Vspyshka: https://huggingface.co/DICPlay/RusMind-Vspyshka-4.7
+- Sitio del proyecto: https://rusmind.ru
+- Licencia (referenciada en el repo): LICENSE dentro de https://huggingface.co/DICPlay/RusMind-4.7-Momentum

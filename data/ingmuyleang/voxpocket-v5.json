@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 315,
+  "downloads_30d": 336,
   "trending_score": 0,
   "parameters": 801729856,
   "parameters_human": "801.7M",
@@ -52,16 +52,5 @@
   "renamed_to": "muyleanging/VoxPocket-TTS-Khmer",
   "renamed_at": "2026-11-12T03:04:21.141Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "INGMUYLEANG (Muyleang Ing) - Hugging Face",
-      "url": "https://huggingface.co/INGMUYLEANG",
-      "snippet": "Interested in developing open-source AI tools and exploring the intersection of AI and quantum technologies."
-    },
-    {
-      "title": "INGMUYLEANG (Muyleang Ing) – Datasets - Hugging Face",
-      "url": "https://huggingface.co/INGMUYLEANG/datasets",
-      "snippet": "Interested in developing open-source AI tools and exploring the intersection of AI and quantum technologies."
-    }
-  ]
+  "sources": []
 }

@@ -2,108 +2,98 @@
 
 ## Resumen
 
-Bonsai distilled depth0 experts97 500 warmup75 lr1e4 fixedloss best es un modelo de generacion de texto publicado por el usuario sartajbhuvaji en Hugging Face. Se trata de un checkpoint de aproximadamente 8.550 millones de parametros (8.552.822.784 exactos, segun los pesos en safetensors), almacenado en un repositorio de 17,1 GB, lo que es coherente con pesos en precision bf16/fp16. La etiqueta de arquitectura declarada es `qwen3_moe`, por lo que se trata de un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3.
+bonsai-distilled-depth0-experts97 es un checkpoint experimental de poda estructurada y destilación de conocimiento aplicado sobre Qwen3-30B-A3B-Base, un modelo Mixture-of-Experts (MoE) de la familia Qwen3. Lo desarrolla sartajbhuvaji dentro del proyecto bonsai, que traslada la receta Minitron (poda estructurada más destilación de conocimiento) a un modelo MoE, un eje de poda que los papers originales de Minitron no cubren. El objetivo declarado es la completación de código en TypeScript.
 
-El nombre del repositorio es la unica fuente de informacion sobre el proceso de entrenamiento: sugiere una destilacion ("distilled") con profundidad 0 ("depth0"), 97 expertos ("experts97"), 500 pasos o muestras ("500"), 75 pasos de calentamiento ("warmup75"), tasa de aprendizaje 1e-4 ("lr1e4"), funcion de perdida fija ("fixedloss") y seleccion del mejor checkpoint ("best"). No hay documentacion que confirme ninguna de estas interpretaciones.
+El modelo conserva las 48 capas del original pero elimina 97 de los 128 expertos enrutados por capa, dejando 31 activos. El resultado son aproximadamente 8.550 millones de parámetros, un 28,0 % del total del modelo base (~30.500 millones). La destilación se realizó con un schedule corto de 500 pasos, 75 de warmup y un learning rate pico de 1e-4, contra el profesor sin corregir.
 
-La relevancia de esta ficha es limitada: la model card es la plantilla autogenerada de Hugging Face sin rellenar, el modelo acumula 31 descargas y 0 "likes", y no declara licencia, idiomas ni datos de entrenamiento. Es, por tanto, un artefacto experimental de investigacion mas que un modelo listo para produccion, y cualquier evaluacion debe hacerse sobre la premisa de que falta informacion esencial.
+La relevancia de esta ficha es principalmente documental y negativa: el propio autor desaconseja su uso ("Not recommended") y lo sitúa como parte de un lote exploratorio previo a un barrido más sistemático por ejes. En HumanEval-TS pasa del 0,717 de pass@1 del base al 0,283, es decir, retiene el 39,5 % de la precisión con el 28,0 % de los parámetros. Es un punto de datos útil para quien investigue los límites de la poda de expertos en MoE, no un modelo para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), segun el tag `qwen3_moe`; detalles de capas, atencion y enrutado no disponibles |
-| Parametros totales | 8.552.822.784 (aprox. 8,55 mil millones) |
-| Parametros activos | no disponible (el nombre sugiere 97 expertos, pero no se especifica cuantos se activan por token) |
+| Arquitectura | Transformer Mixture-of-Experts (qwen3_moe), podado |
+| Parametros totales | 8.552.822.784 (~8,55B) |
+| Parametros activos | no disponible (el modelo base activa ~3B; el valor exacto tras la poda no se publica) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio solo contiene safetensors en precision completa; no se publican GGUF ni AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan GGUF ni otras variantes) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (libreria `transformers`) |
-| Tamano del repositorio | 17,1 GB |
-| Pipeline declarado | text-generation |
-| Fecha de creacion | 2026-10-15 |
-| Fecha de ultima actualizacion | 2026-10-15 |
-| Descargas / likes | 31 / 0 |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La unica evidencia sobre la arquitectura es el tag `qwen3_moe`, que apunta a un transformer decoder-only con capas de mezcla de expertos en lugar de un FFN denso. En este tipo de diseno, cada token se enruta a un subconjunto de expertos, de forma que los parametros totales (8,55 mil millones) son mayores que los parametros efectivamente activados por token. El valor concreto de expertos activos, el numero de capas, la dimension del modelo, el tipo de atencion y el tamano de la ventana de contexto no aparecen documentados en ninguna parte.
+El modelo parte de Qwen3-30B-A3B-Base, un transformer con capas MoE de 128 expertos enrutados por capa. La poda aplicada es exclusivamente en el eje de expertos: se eliminan 97 de 128 expertos por capa y se conservan 31, sin tocar la profundidad (0 de 48 capas eliminadas). El checkpoint resultante tiene 8.552.822.784 parámetros según los safetensors del repositorio, lo que corresponde al 28,0 % del baseline (~30,5B).
 
-Respecto al entrenamiento, la model card es la plantilla por defecto de Hugging Face y no contiene informacion real: los campos de datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp16), hardware y emisiones estan todos marcados como "[More Information Needed]". El unico indicio es el propio identificador del repositorio, que sugiere un proceso de destilacion con un presupuesto de pasos muy corto (500) y una tasa de aprendizaje de 1e-4. No consta que se haya aplicado RLHF, DPO ni ninguna otra fase de alineacion. El unico enlace a arXiv presente en los metadatos (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de Hugging Face, y no a un paper del modelo.
+El entrenamiento sigue la receta Minitron de poda estructurada más destilación de conocimiento, adaptada a un MoE. Se empleó un schedule corto de 500 pasos con 75 pasos de warmup y un learning rate pico de 1e-4, destilando contra el profesor sin corregir. El mejor checkpoint es el final (paso 499), sin mínimo intermedio anterior. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset de destilación ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, unica capacidad confirmada por el pipeline declarado (`text-generation`).
-- Conversacion multi-turno: el tag `conversational` indica compatibilidad con plantillas de chat, aunque el formato exacto de prompt no esta documentado.
-- Compatibilidad con Hugging Face Inference Endpoints (`endpoints_compatible`), es decir, despliegue gestionado sin conversion de pesos.
-- Razonamiento, matematicas, generacion de codigo: no disponible, sin datos que lo confirmen.
-- Tool calling y function calling: no disponible (existen otros repositorios del mismo autor con "functions" en el nombre, pero no este).
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Soporte multilingue: no disponible, no se declara ninguna lista de idiomas.
-- Vision, audio o modo "thinking": no disponible.
+- Generación de texto y completación de código, con foco declarado en TypeScript.
+- Herencia de las capacidades conversacionales y de generación del modelo base Qwen3, aunque mermadas por la poda agresiva.
+- Soporte de tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el autor desaconseja su uso general.
+- Capacidades multilingües: no documentadas; los idiomas soportados figuran como no disponibles.
+- Capacidades especiales (modo thinking, visión, audio): no documentadas.
 
 ## Casos de uso
 
-Dado que no existe documentacion de capacidades ni evaluaciones, los casos siguientes son escenarios plausibles para un transformer MoE de ~8,5 mil millones de parametros con pipeline de generacion de texto, no aplicaciones validadas sobre este checkpoint concreto.
-
-- Experimentacion academica con destilacion de MoE: el modelo sirve como punto de comparacion frente a los repositorios hermanos del mismo autor (`bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4-best`, `bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4`) para estudiar el efecto de la profundidad de destilacion y del numero de expertos.
-- Generacion de texto asistida en prototipos internos: con 8,55 mil millones de parametros totales puede ejecutarse en una GPU de 24 GB en bf16, lo que permite usarlo como generador de borradores en herramientas de escritura sin coste de API.
-- Chat conversacional de baja concurrencia: el tag `conversational` y el despliegue directo con `transformers` habilitan prototipos de asistente en local, siempre que se defina manualmente la plantilla de chat.
-- Fine-tuning posterior sobre dominio propio: al ser un modelo pequeno y con pesos en safetensors, es viable aplicar LoRA o QLoRA sobre un corpus especifico si la licencia se confirma (actualmente no disponible).
-- Evaluacion de tecnicas de cuantizacion: sirve como sujeto de prueba para medir perdida de calidad al convertir un MoE de 8,55 mil millones de parametros a 8 y 4 bits, ya que no se publican cuantizaciones oficiales.
-- Baseline en pipelines de CI de investigacion: su tamano permite incluirlo en pruebas automaticas de regresion de calidad de generacion sin incurrir en los costes de un modelo de mayor escala.
-- Servicio de inferencia en endpoints gestionados: el tag `endpoints_compatible` permite desplegarlo en Hugging Face Inference Endpoints sin pasos de conversion adicionales.
+- Investigación sobre poda de expertos en MoE: sirve como punto de comparación cuantitativo para medir la degradación de un MoE al eliminar el 75,8 % de sus expertos enrutados (de 128 a 31 por capa), con una métrica concreta de retención (39,5 % de la precisión del base).
+- Estudios de destilación con schedules cortos: permite analizar el efecto de un entrenamiento de solo 500 pasos con LR 1e-4 sobre un modelo podado, y contrastarlo con recetas más largas.
+- Reproducción de la receta Minitron en arquitecturas MoE: el checkpoint documenta un eje de poda que los papers originales no cubren, útil para validar o refutar la viabilidad de esa extensión.
+- Completación de código en TypeScript en entornos de baja exigencia: con un pass@1 de 0,283 en HumanEval-TS, puede emplearse en prototipos internos o como generador de sugerencias con revisión humana obligatoria, nunca en pipelines automáticos.
+- Baseline negativo en evaluación de modelos: útil como referencia de "modelo podado en exceso" frente al que comparar checkpoints posteriores del mismo barrido (por ejemplo, depth0/experts64).
+- Docencia y divulgación: ejemplo práctico de compromiso entre tamaño y calidad en modelos MoE, con cifras verificables de parámetros y precisión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye la seccion de evaluacion cumplimentada y no existe ningun informe externo con resultados de MMLU, HumanEval, GSM8K ni de ninguna otra suite para este checkpoint.
+HumanEval-TS (TypeScript MultiPL-E), suite completa de 159 problemas, temperatura 0,2, top-p 0,95:
+
+| Modelo | pass@1 | Aciertos |
+|---|---|---|
+| Qwen3-30B-A3B-Base (sin podar) | 0,717 | 114/159 |
+| bonsai-distilled-depth0-experts97 | 0,283 | 45/159 |
+
+El modelo retiene el 39,5 % de la precisión del baseline con el 28,0 % de sus parámetros. No se han publicado otros resultados de benchmarks (MMLU, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones derivadas del numero de parametros (8.552.822.784) y del peso del repositorio (17,1 GB). No proceden de mediciones publicadas por el autor.
-
-- VRAM para los pesos en bf16/fp16: aproximadamente 17,1 GB, ya que 8,55 mil millones de parametros a 2 bytes por parametro ocupan ese espacio. Con cache KV y overhead de runtime, el consumo realista se situa en el entorno de 20-24 GB.
-- VRAM en cuantizacion de 8 bits: aproximadamente 8,6 GB de pesos, con un consumo total estimado de 10-12 GB.
-- VRAM en cuantizacion de 4 bits: aproximadamente 4,3 GB de pesos, con un consumo total estimado de 6-8 GB.
-- GPU de gama profesional: A100 (40 GB y 80 GB) y H100 (80 GB) ejecutan el modelo en bf16 con margen amplio.
-- GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede alojar los pesos en bf16 al limite, y con comodidad en 8 o 4 bits. Tarjetas de 16 GB requeriran cuantizacion.
-- Opciones de despliegue: `transformers` de forma nativa; vLLM y TGI si el modelo expone una configuracion de MoE compatible; llama.cpp y Ollama solo si se generan cuantizaciones GGUF, que actualmente no existen en el repositorio.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en fp16/bf16: unos 17,1 GB solo de pesos (tamaño del repositorio), más overhead de activaciones y caché KV; en la práctica, 24 GB o más para contexto moderado.
+- Cuantización: no se publican versiones GGUF ni cuantizadas; habría que generarlas a partir de los safetensors, con lo que en 8 bits los pesos bajarían a ~8,6 GB y en 4 bits a ~4,3 GB (estimación teórica, no verificada por el autor).
+- GPU recomendadas: A100 40/80 GB, H100 o L40S para despliegue en bf16 sin cuantizar; una RTX 4090 (24 GB) podría alojar los pesos en bf16 con contexto limitado, y tarjetas de 16 GB requerirían cuantización.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 4090/3090 (24 GB) en bf16 y en GPUs de 12-16 GB con cuantización de 8 o 4 bits, aunque no hay datos publicados de estas configuraciones.
+- Opciones de despliegue: transformers (soporte nativo, es la librería declarada); vLLM, TGI, llama.cpp u Ollama no están documentados para este checkpoint y su compatibilidad con la arquitectura qwen3_moe podada no está verificada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de este checkpoint, por lo que la comparacion se limita a caracteristicas estructurales. Los valores de los modelos de referencia proceden del conocimiento general de la familia Qwen y no de la informacion proporcionada.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | HumanEval-TS pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss-best | 8,55 mil millones | no disponible | no disponible | no disponible | Hugging Face, safetensors, sin cuantizaciones |
-| Qwen3-8B (referencia densa) | aprox. 8,2 mil millones | no aplica (denso) | no disponible en esta ficha | licencia de la familia Qwen3 | Hugging Face, cuantizaciones ampliamente disponibles |
-| Qwen1.5-MoE-A2.7B (referencia MoE) | aprox. 14,3 mil millones | aprox. 2,7 mil millones | no disponible en esta ficha | licencia de la familia Qwen | Hugging Face, cuantizaciones disponibles |
-| Mixtral 8x7B (referencia MoE) | aprox. 46,7 mil millones | aprox. 12,9 mil millones | no disponible en esta ficha | Apache 2.0 | Hugging Face, cuantizaciones disponibles |
+| bonsai-distilled-depth0-experts97 | ~8,55B | no disponible | 0,283 | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B-Base | ~30,5B (MoE) | no disponible | 0,717 | Apache 2.0 | Hugging Face |
+| bonsai depth0/experts64 | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face (colección bonsai) |
+| Qwen3-8B (modelo denso de la misma familia) | ~8B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
-La comparacion de rendimiento con cualquiera de estos modelos es no disponible, ya que no existen evaluaciones publicadas del checkpoint analizado.
+La comparación más informativa es con el propio modelo base: el podado pierde 69 puntos de pass@1 absolutos. Frente a un modelo denso de tamaño similar (~8B), el checkpoint podado no aporta ventajas documentadas y sí una degradación medida. Los datos de Qwen3-8B en HumanEval-TS no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: toda la documentacion de Hugging Face es la plantilla autogenerada, sin datos de desarrollador, financiacion, tipo de modelo, idiomas ni licencia.
-- Licencia no disponible: no se puede determinar si el uso comercial esta permitido. En la practica, esto bloquea su adopcion en produccion hasta que el autor lo aclare.
-- Riesgo de alucinacion: no cuantificado. Al no existir evaluaciones ni fase de alineacion documentada, se debe asumir un comportamiento de generacion sin filtros de seguridad ni ajuste de instrucciones.
-- Sesgos conocidos: no disponibles. Se desconoce la composicion del corpus de entrenamiento y de destilacion, por lo que no se puede evaluar el sesgo de genero, idioma, cultura o dominio.
-- Cobertura de idiomas desconocida: no se declara ninguna lista de idiomas; el castellano no esta confirmado.
-- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo ni estimar el coste de la cache KV con precision.
-- Origen del entrenamiento opaco: el identificador sugiere una destilacion muy corta (500 pasos) con calentamiento de 75 y tasa de aprendizaje 1e-4. Los modelos destilados con presupuestos reducidos suelen degradarse respecto al profesor, pero no hay mediciones que lo confirmen o desmientan en este caso.
-- Sin cuantizaciones oficiales: no hay GGUF, AWQ ni GPTQ publicados, lo que obliga a generarlas a mano para despliegue en hardware de consumo.
-- Adopcion marginal: 31 descargas y 0 likes indican ausencia de validacion por parte de la comunidad; no existen informes de terceros sobre su comportamiento.
-- Artefacto de investigacion: la combinacion de nombre criptico, plantilla sin rellenar y fecha de publicacion reciente sugiere que se trata de un checkpoint intermedio de un experimento, no de una version estable.
+- El propio autor marca el modelo como "Not recommended" y lo describe como parte de un lote exploratorio previo a un barrido más sistemático.
+- Degradación severa de calidad: pass@1 de 0,283 frente a 0,717 del base en HumanEval-TS, una caída del 60,5 % en precisión relativa.
+- La poda elimina el 75,8 % de los expertos enrutados por capa (de 128 a 31), lo que reduce la capacidad de especialización del MoE y puede afectar de forma desigual a distintos dominios.
+- Sesgos conocidos: no documentados, pero hereda los del modelo base Qwen3 sin que el autor haya realizado evaluaciones de sesgo tras la poda.
+- Riesgo de alucinación: no evaluado; la destilación con schedule corto (500 pasos) y la poda agresiva hacen previsible un aumento del riesgo respecto al base.
+- Idiomas soportados: no disponibles; el foco declarado es TypeScript, lo que sugiere un rendimiento pobre fuera de ese dominio.
+- Longitud de contexto: no disponible; no se confirma que conserve la ventana del modelo base.
+- Licencia Apache 2.0: permite uso comercial, pero el autor desaconseja explícitamente el despliegue en producción.
+- El repositorio de código y el writeup completo están en un repositorio privado de GitHub, lo que limita la reproducibilidad.
+- No hay versiones cuantizadas publicadas ni evidencia de compatibilidad con motores de inferencia de alto rendimiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss-best
-- Repositorio hermano (comparativa frente a baseline): https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4-best
-- Ficha del repositorio hermano en free2aitools: https://free2aitools.com/model/sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4-best
-- Repositorio hermano con LoRA y profundidad 12 en FriendliAI: https://friendli.ai/models/sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4
-- Repositorio hermano con "functions" en free2aitools: https://free2aitools.com/model/sartajbhuvaji/bonsai-distilled-depth12-experts80-functions-vs-baseline-3k-warmup450-lr1e4-fixedloss-best
-- Paper citado en la plantilla (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact#compute
-- No se han encontrado papers, blogs, demos ni repositorios de codigo especificos de este modelo.
+- Colección bonsai: https://huggingface.co/collections/sartajbhuvaji/bonsai-6adaa6c9472b58d28f07d796
+- Modelo base Qwen3-30B-A3B-Base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base
+- Repositorio del proyecto (privado según la model card): https://github.com/SartajBhuvaji/bonsai
+- Paper Minitron (Muralidharan et al. 2024): no disponible en la información proporcionada
+- Paper de destilación asociado (Sreenivas et al. 2024): no disponible en la información proporcionada

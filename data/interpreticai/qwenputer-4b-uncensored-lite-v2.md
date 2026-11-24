@@ -2,102 +2,117 @@
 
 ## Resumen
 
-Qwenputer-4B-Uncensored-lite-v2 es una versión compacta y sin pérdida de Qwenputer-4B-Uncensored-v2, publicada por InterpreticAI. El modelo base integra un ordenador RISC-V de 32 bits compilado directamente dentro de los pesos mediante el compilador Qwenputer de Divyansh Agrawal, de modo que la aritmética exacta se ejecuta dentro del propio forward pass en lugar de delegarse a una herramienta externa. La variante lite-v2 almacena exactamente los mismos pesos sin el relleno de ceros, reduciendo el tamaño en disco de 18,7 GB a 8,7 GB y permitiendo su carga en una única GPU de 16 GB.
+Qwenputer-4B-Uncensored-lite-v2 es una versión compacta sin pérdida de Qwenputer-4B-Uncensored-v2, publicada por InterpreticAI. Se trata de un fine-tuning sobre Qwen3.5-4B-Uncensored-v2 al que se le ha incorporado el denominado "Qwenputer": una CPU RISC-V de 32 bits compilada directamente dentro de los pesos del modelo por el compilador Qwenputer de Divyansh Agrawal. Esa CPU ocupa 11 capas situadas delante del modelo de lenguaje y realiza aritmética exacta dentro del propio forward pass, sin necesidad de invocar herramientas externas.
 
-El modelo parte de Qwen3.5-4B-Uncensored-v2 (a su vez derivado de Qwen/Qwen3.5-4B) y conserva su comportamiento textual: según la model card, las divergencias respecto al modelo sin ordenador se sitúan dentro del ruido numérico en BF16. La arquitectura es un transformer de 32 capas con 4B parámetros, precedido por 11 capas que implementan el ordenador RISC-V. La ventana de contexto y el resto de especificaciones de generación no se detallan en la información disponible.
+La innovación de esta variante "lite" es puramente de almacenamiento: mantiene exactamente los mismos pesos que la versión completa, pero elimina el relleno de ceros, pasando de 18,7 GB a 8,7 GB en disco y de 18,7 GB a 12,8 GB de VRAM en BF16. Esto permite ejecutar el modelo en una única GPU de 16 GB. El modelo base Qwen3.5-4B tiene 4.000 millones de parámetros y 32 capas de lenguaje.
 
-La relevancia del modelo radica en dos aspectos: demuestra que es posible incrustar una CPU completa en los pesos de un LLM sin degradar su distribución de siguiente token, y ofrece una distribución práctica (8,7 GB, 12,8 GB en memoria BF16) que cabe en GPUs de consumo alto como la RTX A4000. Está pensado para experimentación con razonamiento aritmético exacto y para escenarios donde se requiere cómputo verificable sin herramientas externas.
+El interés del modelo reside en su enfoque híbrido poco habitual: combina un LLM conversacional de 4B con un circuito RISC-V embebido en los pesos para garantizar precisión aritmética exacta, además de un ajuste orientado a eliminar la censura política de origen chino presente en el modelo base. La licencia es Apache 2.0 y el repositorio acumula 340 descargas desde su publicación en noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Qwen3.5 (Qwen3_5ForCausalLM) con 11 capas de ordenador RISC-V de 32 bits integradas en los pesos |
-| Parametros totales | 4B (aproximado, según nombre del modelo); desglose por componente: ordenador 0,009 GB, embedding 1,51 GB, LM 7,14 GB en lite-v2 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en BF16 según la model card) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer decoder-only (Qwen3.5) con 11 capas RISC-V embebidas en los pesos |
+| Parametros totales | 4.000 millones (aproximado, modelo base Qwen3.5-4B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BF16 (pesos publicados); no se documentan otras cuantizaciones |
+| Idiomas soportados | No disponible (la evaluacion politica cubre solo chino) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors compactados sin relleno de ceros; requieren `slimload.py` o `unpack.py` para cargarse |
+| Formato de pesos | Formato compacto propio (slimload) reconstruible a safetensors estándar mediante unpack.py; 580 tensores |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Qwen3.5 con 32 capas y aproximadamente 4B parámetros, al que se le anteponen 11 capas que implementan un procesador RISC-V de 32 bits. Estas capas no son un adaptador entrenado de forma convencional: son el resultado de compilar un ordenador dentro de los pesos mediante el compilador Qwenputer, de modo que el forward pass ejecuta instrucciones RISC-V y produce resultados aritméticos exactos. El modelo emite una llamada a herramienta `calc` que el propio ordenador interno resuelve, sin intervención de herramientas externas.
+El modelo es un transformer decoder-only de 32 capas de lenguaje (Qwen3.5-4B) al que se le anteponen 11 capas que implementan una CPU RISC-V de 32 bits. Estas capas no son neuronas entrenadas de forma convencional: son un circuito compilado en los pesos que ejecuta aritmética entera exacta dentro del forward pass. El modelo emite una llamada de herramienta `calc` y las capas del ordenador producen el resultado internamente, sin que se ejecute ninguna herramienta externa. El checkpoint completo contiene 580 tensores y la versión lite los reconstruye bit a bit (verificable mediante `SHA256SUMS.dense`).
 
-La variante lite-v2 no reentrena ni modifica pesos: elimina el relleno de ceros del checkpoint original. Los 580 tensores se reconstruyen bit a bit desde el repositorio, con hashes SHA256 por tensor listados en `SHA256SUMS.dense`. Según la model card, los estados ocultos tras las capas del ordenador son idénticos bit a bit a los del checkpoint completo. No se detallan en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la cadena de fine-tuning.
+El fine-tuning respecto al modelo base busca eliminar la censura política de origen chino, partiendo de Qwen3.5-4B-Uncensored-v2. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO. La innovación técnica destacable es el propio mecanismo Qwenputer: cómputo aritmético exacto embebido en los pesos, con verificación de que las salidas coinciden posición a posición con un modelo de referencia de la máquina (0 errores de lockstep, 0 desajustes de cabecera).
 
 ## Capacidades
 
-- Generación de texto conversacional en modo texto, con soporte de modo thinking y no-thinking (heredado de Qwen3.5).
-- Aritmética entera exacta mediante el ordenador RISC-V interno: el modelo escribe una llamada `calc` y las capas del ordenador producen el resultado dentro del forward pass.
-- Tool calling / function calling: el harness de evaluación usa llamadas a herramienta `calc`.
-- Razonamiento multi-paso con verificación aritmética interna.
-- Comportamiento textual alineado con Qwen3.5-4B-Uncensored-v2, con divergencia KL media de 1,0 × 10⁻³ frente al modelo base (ratio 1,10 sobre el ruido de implementación de atención).
-- Respuestas a preguntas políticamente sensibles en chino con diferencias respecto al modelo base dentro del ruido numérico (primera diferencia a token 43,5 de mediana).
-- Sin capacidades de visión: el encoder visual de Qwen3.5-4B-Uncensored-v2 no está incluido.
+- Generación de texto conversacional multi-turno en modo texto.
+- Aritmética entera exacta mediante la CPU RISC-V embebida, invocada a través de una llamada de herramienta `calc` que se resuelve dentro del forward pass.
+- Soporte de tool calling para la herramienta `calc` (el driver de chat de Qwenputer gestiona la llamada).
+- Modo no-thinking documentado en las evaluaciones (respuestas de hasta 512 tokens).
+- Capacidades multilingües: no disponibles en la información proporcionada; la evaluación política se limita a preguntas en chino.
+- Sin capacidades de visión: el codificador visual de Qwen3.5-4B-Uncensored-v2 no está incluido.
+- Sin soporte de audio documentado.
 
 ## Casos de uso
 
-- Cálculo aritmético verificable en producción: el modelo resuelve operaciones enteras exactas dentro del forward pass, sin depender de una calculadora externa ni de una API de herramientas, lo que simplifica la cadena de confianza en entornos con restricciones de red.
-- Evaluación de modelos con cómputo incrustado: sirve como banco de pruebas para estudiar cómo afecta la compilación de una CPU en los pesos a la distribución de siguiente token, con métricas de KL y comparación bit a bit frente al modelo base.
-- Despliegue en GPUs de 16 GB: con 12,8 GB en memoria BF16 y 8,7 GB en disco, encaja en una RTX A4000 o similar, lo que permite experimentar con el ordenador interno en hardware de gama media profesional.
-- Investigación sobre censura política en LLM: el modelo hereda el comportamiento de Qwen3.5-4B-Uncensored-v2 en las 78 preguntas de Pan y Xu (2026), útil para reproducir y auditar evaluaciones de censura en chino.
-- Asistentes conversacionales con requisitos de cómputo exacto: en dominios como contabilidad, ingeniería o educación, donde una respuesta numérica errónea es crítica, el ordenador interno aporta una verificación que un LLM puro no ofrece.
-- Reproducibilidad y auditoría de pesos: los hashes por tensor y `unpack.py` permiten reconstruir el checkpoint completo de 18,7 GB y verificar la integridad, lo que facilita pipelines de auditoría de modelos.
-- Prototipado de agentes con tool calling: el driver de chat de Qwenputer (`chipformer.rv.chat`) funciona sin cambios con los pesos compactos, lo que permite integrar el modelo en flujos de agente con llamadas a `calc`.
+- Cálculo aritmético de precisión en pipelines financieros: el modelo puede resolver multiplicaciones y operaciones enteras grandes (por ejemplo, 123456789 × 987654321) de forma exacta mediante las capas RISC-V, sin depender de una calculadora externa ni del redondeo del LLM.
+- Asistentes conversacionales sin censura política: adecuado para investigación sobre sesgos y censura en modelos de origen chino, gracias al ajuste específico que elimina la censura política del modelo base.
+- Despliegue en hardware de gama media: al cargar en 12,8 GB de VRAM en BF16, puede ejecutarse en una única GPU de 16 GB (por ejemplo, RTX A4000), lo que lo hace viable en estaciones de trabajo modestas.
+- Investigación en cómputo híbrido neuro-simbólico: sirve como banco de pruebas para estudiar la integración de circuitos (CPU RISC-V) dentro de los pesos de un transformer y su efecto en la fidelidad del texto.
+- Evaluación de fidelidad de modelos: los prompts de fidelidad de texto y las métricas de divergencia KL permiten usarlo como referencia para comparar implementaciones de atención y kernels.
+- Reproducción de experimentos: la reconstrucción bit a bit del checkpoint completo (18,7 GB) mediante `unpack.py` facilita la replicación de resultados en entornos con más memoria.
+- Desarrollo sobre RISC-V: el tag `risc-v` y el driver de chat de Qwenputer permiten experimentar con firmware embebido (por ejemplo, `calc-bridge.elf`) en el contexto del modelo.
 
 ## Benchmarks y rendimiento
 
-| Prueba | Modelo | Resultado |
-|---|---|---|
-| Aritmética entera exacta (40 problemas) | Qwen3.5-4B-Uncensored-v2 sin herramientas | 29/40 correctos |
-| Aritmética entera exacta (40 problemas) | Qwenputer-4B-Uncensored-v2 | 40/40 correctos |
-| Aritmética entera exacta (40 problemas) | Qwenputer-4B-Uncensored-lite-v2 | 40/40 correctos |
-| Fidelidad textual (KL media) | Qwenputer-4B-Uncensored-v2 (H100) | 5,2 × 10⁻⁴ (ruido 5,0 × 10⁻⁴, ratio 1,03) |
-| Fidelidad textual (KL media) | Qwenputer-4B-Uncensored-lite-v2 (A4000) | 1,0 × 10⁻³ (ruido 9,1 × 10⁻⁴, ratio 1,10) |
-| Preguntas políticas (78), respuestas idénticas | Qwenputer-4B-Uncensored-v2 vs. Qwen3.5-4B-Uncensored-v2 | 1 idéntica, primera diferencia a token 52 de mediana |
-| Preguntas políticas (78), respuestas idénticas | lite-v2 vs. Qwen3.5-4B-Uncensored-v2 | 0 idénticas, primera diferencia a token 43,5 de mediana |
+Aritmética exacta (40 problemas sintéticos de enteros del harness de Qwenputer; el modelo escribe una llamada `calc` y las capas del ordenador calculan el resultado):
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Modelo | Correctos (de 40) |
+|---|---|
+| Qwen3.5-4B-Uncensored-v2 (sin herramientas, instruido para calcular exacto) | 29 |
+| Qwenputer-4B-Uncensored-v2 | 40 |
+| Qwenputer-4B-Uncensored-lite-v2 | 40 |
+
+Fidelidad de texto (divergencia KL media en los prompts de fidelidad, frente a Qwen3.5-4B-Uncensored-v2):
+
+| Modelo | KL media | Ruido de fondo | Ratio |
+|---|---|---|---|
+| Qwenputer-4B-Uncensored-v2 (H100) | 5,2 × 10⁻⁴ | 5,0 × 10⁻⁴ | 1,03 |
+| Qwenputer-4B-Uncensored-lite-v2 (A4000) | 1,0 × 10⁻³ | 9,1 × 10⁻⁴ | 1,10 |
+
+Preguntas políticas (78 preguntas sensibles de Pan y Xu, 2026, en chino, modo no-thinking, hasta 512 tokens):
+
+| Comparación | Respuestas idénticas | Token mediano de primera diferencia |
+|---|---|---|
+| Qwenputer-4B-Uncensored-v2 vs. Qwen3.5-4B-Uncensored-v2 (H100) | 1 | 52 |
+| Ruido de fondo: Qwen3.5-4B-Uncensored-v2, dos kernels de atención (H100) | 0 | 49 |
+| lite-v2 vs. Qwen3.5-4B-Uncensored-v2 (A4000) | 0 | 43,5 |
+| Ruido de fondo: Qwen3.5-4B-Uncensored-v2, dos kernels de atención (A4000) | 1 | 66 |
+
+Las diferencias observadas quedan dentro del ruido numérico de BF16. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 12,8 GB en BF16 con los pesos cargados mediante `slimload.py`; el checkpoint completo reconstruido ocupa 18,7 GB.
-- GPU recomendadas: NVIDIA RTX A4000 (16 GB) validada en la model card; el checkpoint completo se evaluó en una NVIDIA H100.
-- Cabe en GPU de consumo: sí, en GPUs de 16 GB o más (RTX A4000, RTX 4080/4090 de 16-24 GB, según disponibilidad de memoria efectiva).
-- Opciones de despliegue: `slimload.py` del repositorio qwenputer (experimental/riscv), el driver `chipformer.rv.chat`, y `unpack.py` para reconstruir el checkpoint estándar y usar `from_pretrained`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: 12,8 GB en BF16 (frente a 18,7 GB del checkpoint completo).
+- GPU recomendadas: una única GPU de 16 GB es suficiente; las evaluaciones se realizaron en NVIDIA RTX A4000 y H100.
+- Cabe en GPU de consumo: sí, en tarjetas con al menos 16 GB de VRAM (por ejemplo, RTX 4080/4090 de 16-24 GB); no cabe en tarjetas de 8-12 GB.
+- Opciones de despliegue: carga mediante `slimload.py` del repositorio qwenputer (rama `experimental/riscv`, `uv sync --extra hf`); el driver de chat de Qwenputer (`chipformer.rv.chat`) funciona sin cambios si se hace que `Qwen3_5ForCausalLM.from_pretrained` devuelva `load_slim(path)`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Ordenador interno | Licencia | Tamaño en disco |
+| Modelo | Parametros | Contexto | Aritmética exacta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwenputer-4B-Uncensored-lite-v2 | ~4B | no disponible | Sí (RISC-V, 11 capas) | Apache 2.0 | 8,7 GB |
-| Qwenputer-4B-Uncensored-v2 | ~4B | no disponible | Sí (RISC-V, 11 capas) | Apache 2.0 | 18,7 GB |
-| Qwen3.5-4B-Uncensored-v2 | ~4B | no disponible | No | Apache 2.0 (heredada) | no disponible |
-| Qwen/Qwen3.5-4B | ~4B | no disponible | No | Apache 2.0 | no disponible |
+| Qwenputer-4B-Uncensored-lite-v2 | ~4B | No disponible | Sí (40/40) | Apache 2.0 | Hugging Face |
+| Qwenputer-4B-Uncensored-v2 | ~4B | No disponible | Sí (40/40) | Apache 2.0 | Hugging Face (18,7 GB) |
+| Qwen3.5-4B-Uncensored-v2 | ~4B | No disponible | No (29/40) | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B | ~4B | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
-La comparativa se limita a la cadena de modelos de la que deriva, ya que la información disponible no incluye alternativas externas con ordenador incrustado. Frente a Qwen3.5-4B-Uncensored-v2, la diferencia medible es la aritmética exacta (40/40 frente a 29/40) con divergencia textual dentro del ruido.
+La ventaja diferencial frente a los modelos de la misma familia es la combinación de aritmética exacta embebida y un tamaño en disco reducido a menos de la mitad, manteniendo pesos idénticos bit a bit.
 
 ## Limitaciones y advertencias
 
-- Los archivos compactos no se cargan con `from_pretrained` directamente: requieren `slimload.py` o `unpack.py`.
-- Solo texto: el encoder visual de Qwen3.5-4B-Uncensored-v2 no está incluido.
-- Hereda las limitaciones de Qwen3.5-4B-Uncensored-v2, incluida una tasa de hechos fabricados superior a la de Qwen3.5-4B; una respuesta sustantiva no es necesariamente correcta.
-- La evaluación política cubre únicamente preguntas en chino.
-- No se ha vuelto a ejecutar el juez de censura; los resultados de censura reportados para Qwen3.5-4B-Uncensored-v2 se aplican a este modelo.
-- La model card no detalla sesgos conocidos, idiomas soportados ni longitud de contexto, por lo que no es posible evaluar su comportamiento multilingüe ni su robustez en contextos largos.
-- Licencia Apache 2.0: permite uso comercial, pero se deben conservar las atribuciones del equipo Qwen y del autor de Qwenputer (código MIT, Copyright (c) 2026 Divyansh Agrawal).
-- El modelo está etiquetado como "uncensored"; conviene auditar sus respuestas en dominios sensibles antes de un despliegue en producción.
+- Los archivos compactos requieren `slimload.py` o `unpack.py`; no cargan directamente con `from_pretrained`.
+- Solo texto: el codificador visual de Qwen3.5-4B-Uncensored-v2 no está incluido.
+- Hereda las limitaciones de Qwen3.5-4B-Uncensored-v2, incluida una mayor tasa de hechos fabricados que Qwen3.5-4B; una respuesta sustantiva no implica que sea correcta.
+- La evaluación política cubre únicamente preguntas en chino; no se ha reejecutado el juez de censura, por lo que los resultados de censura reportados para Qwen3.5-4B-Uncensored-v2 se aplican a este modelo.
+- Riesgo de alucinación relevante en producción, especialmente en dominios factuales.
+- No se documentan sesgos específicos más allá de los heredados del modelo base.
+- Licencia Apache 2.0 permite uso comercial, con la atribución del equipo Qwen y del autor de Qwenputer (código MIT) retenida.
+- El soporte de tool calling se limita a la herramienta `calc` gestionada por el driver de Qwenputer.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-lite-v2
-- Modelo base: https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2
-- Modelo sin ordenador: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
+- Modelo base (checkpoint completo): https://huggingface.co/InterpreticAI/Qwenputer-4B-Uncensored-v2
+- Modelo antecesor: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.5-4B
-- Qwenputer en Hugging Face: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
+- Qwenputer original: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Repositorio del compilador Qwenputer: https://github.com/divagr18/qwenputer
-- Referencia: Agrawal, D. (2026). Qwenputer: a computer compiled into the weights of a language model (la model card no incluye URL del paper).
-- Referencia: Pan y Xu (2026), evaluación de preguntas políticas (la model card no incluye URL).
+- DOI: https://doi.org/10.57967/hf/11551
+- Referencia: Agrawal, D. (2026). Qwenputer: a computer compiled into the weights of a language model (Version 0.2.0). https://github.com/divagr18/qwenputer
+- Referencia: Pan, J., & Xu, X. (2026). Political censorship in large language models originating from China. PNAS Nexus, 5(2), pgag013.

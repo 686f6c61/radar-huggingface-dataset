@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "NuevaTechLLC/gemma-3-27b-it-abliterated-v3.2-GGUF",
+  "slug": "nuevatechllc-gemma-3-27b-it-abliterated-v3-2-gguf",
+  "author": "NuevaTechLLC",
+  "url": "https://huggingface.co/NuevaTechLLC/gemma-3-27b-it-abliterated-v3.2-GGUF",
+  "created_at": "2026-11-23T22:55:35.000Z",
+  "updated_at": "2026-11-23T22:59:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "refusal-removal",
+    "interpretability",
+    "ollama",
+    "text-generation",
+    "en",
+    "base_model:unsloth/gemma-3-27b-it",
+    "base_model:quantized:unsloth/gemma-3-27b-it",
+    "license:gemma",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 45254660352,
+  "storage_human": "45.3 GB",
+  "context_length": 131072,
+  "base_model": "unsloth/gemma-3-27b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "refusal removal",
+      "dataset": "StrongREJECT (282 held-out prompts)",
+      "metric": "judged refusal (Qwen3Guard-Gen-8B)",
+      "value": 0.103
+    },
+    {
+      "task": "refusal removal",
+      "dataset": "StrongREJECT (282 held-out prompts)",
+      "metric": "mean KL from base on 300 Dolly prompts",
+      "value": 0.0488
+    }
+  ],
+  "sources": []
+}

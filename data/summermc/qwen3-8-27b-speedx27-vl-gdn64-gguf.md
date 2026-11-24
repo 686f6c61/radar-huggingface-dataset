@@ -2,73 +2,85 @@
 
 ## Resumen
 
-Este repositorio contiene la cuantización GGUF en formato `Q4_K_M` del modelo `summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64`, una variante modificada de la arquitectura Qwen3.8 de Alibaba con componentes recurrentes denominados GDN. El modelo base, desarrollado por el usuario summerMC, parte del Qwen3.8-27B original y añade modificaciones arquitectónicas que requieren un `llama.cpp` reciente para su correcta ejecución. La cuantización `Q4_K_M` ofrece un equilibrio práctico entre calidad, uso de memoria y velocidad de inferencia, con un tamaño de archivo de 16,7 GB.
+Qwen3.8-27B-SpeedX27-VL-GDN64-GGUF es una cuantizacion GGUF en formato Q4_K_M del modelo summerMC/Qwen3.8-27B-Longbook27-VL-GDN64, un modelo de ~27.072 millones de parametros construido sobre una arquitectura Qwen3.8 (etiquetada internamente como `qwen35`) que incorpora componentes GDN/recurrentes. Lo publica el usuario summerMC en Hugging Face bajo licencia Apache-2.0, y su funcion es facilitar el despliegue del modelo original en entornos con recursos limitados mediante llama.cpp.
 
-El modelo está pensado para ejecución local en hardware consumer, con una ventana de contexto máxima de 262.144 tokens, lo que lo hace adecuado para tareas que requieren procesamiento de secuencias largas, como análisis de documentos extensos o conversaciones de múltiples turnos. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+El modelo resuelve el problema de ejecutar un modelo de 27B en hardware de consumo o en servidores sin GPUs de gran capacidad: el repositorio ocupa 16,7 GB, lo que permite cargarlo en una unica GPU de 24 GB o incluso en configuraciones con offload parcial a CPU. Declara una longitud de contexto maxima de 262.144 tokens, lo que lo hace atractivo para tareas de contexto largo como analisis de documentos extensos o conversaciones multi-turno prolongadas.
+
+Es relevante ahora porque combina tres tendencias: la familia Qwen como base abierta, las arquitecturas hibridas con componentes recurrentes (GDN) para reducir coste de atencion en contextos largos, y el ecosistema GGUF/llama.cpp como via estandar de despliegue local. No obstante, la model card advierte de que requiere una version reciente de llama.cpp y de que existe una bifurcacion especifica (`vnlpscale/llama.cpp`) para el soporte de la arquitectura.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.8 modificada (qwen35) con componentes GDN/recurrentes |
-| Parametros totales | 27.072.285.696 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Q4_K_M (única disponible) |
+| Arquitectura | Qwen3.8 / `qwen35` con componentes GDN/recurrentes (hibrida) |
+| Parametros totales | 27.072.285.696 (~27B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 tokens (segun metadatos GGUF) |
+| Tipos de cuantizacion | Q4_K_M (unica publicada en este repo) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (fichero SpeedX27-GDN64-Q4_K_M.gguf) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es la de Qwen3.8-27B, un modelo denso multimodal de 27.000 millones de parámetros desarrollado por el equipo de Qwen de Alibaba. El repositorio original de summerMC añade modificaciones denominadas GDN (posiblemente una capa recurrente o de atención lineal) que requieren soporte específico en `llama.cpp`. No se dispone de información sobre los datos de entrenamiento, el número de tokens usados o si se aplicaron técnicas de alineación como RLHF o DPO. La cuantización se generó mediante `llama-quantize` a partir de una versión BF16 del GGUF.
+La model card describe la arquitectura como Qwen3.8 / `qwen35`, con una modificacion respecto al transformer clasico: incorpora "componentes GDN/recurrentes" (el sufijo GDN64 del nombre apunta a ello). Esto sugiere un diseno hibrido en el que parte de las capas usan mecanismos recurrentes o de estado comprimido para abaratar el coste de la atencion en contextos muy largos, manteniendo el resto del stack en atencion estandar. El sufijo VL sugiere capacidades de vision-lenguaje, aunque la model card no lo confirma explicitamente ni detalla el encoder visual.
+
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se documentan innovaciones adicionales como decodificacion especulativa o atencion lineal mas alla de la mencion a los componentes GDN. La cuantizacion se realizo con `llama-quantize` a partir de un GGUF en BF16, segun el procedimiento descrito en la model card.
 
 ## Capacidades
 
-- Generación de texto: el modelo es capaz de producir texto coherente y contextualizado, como cualquier modelo de lenguaje de tamaño similar.
-- Contexto largo: soporta hasta 262.144 tokens, lo que permite procesar documentos completos o conversaciones de muchos turnos.
-- Multimodalidad: el modelo base original es multimodal (visión y lenguaje), pero esta cuantización GGUF se presenta con pipeline `text-generation` y no se garantiza el soporte de entradas visuales en el formato GGUF.
-- No se han documentado capacidades específicas como tool calling, agentes o razonamiento multi-paso en la información disponible.
+- Generacion de texto conversacional, segun el pipeline declarado (`text-generation`) y la etiqueta `conversational`.
+- Procesamiento de contexto largo: hasta 262.144 tokens teoricos, con la posibilidad de configurar tamanos intermedios (8K, 32K, 64K) en funcion de la memoria disponible.
+- Posible capacidad de vision-lenguaje por el sufijo VL del nombre, aunque no confirmada en la documentacion disponible.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; no se enumeran idiomas.
+- Modo thinking u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- **Análisis de documentos extensos**: gracias a su contexto de 262.144 tokens, puede resumir o extraer información de libros, informes o bases de conocimiento completas en una sola pasada.
-- **Asistente de chat con historial largo**: adecuado para aplicaciones de atención al cliente donde se necesita mantener el contexto de la conversación durante largas sesiones.
-- **Generación de código en entornos locales**: al ser un modelo de 27B, puede ejecutarse en GPU de consumo y usarse como autocompletado de código o generación de scripts en herramientas de desarrollo.
-- **Procesamiento de documentos legales o técnicos**: para extracción de cláusulas, resumen de contratos o consultas sobre normativas.
-- **Prototipado de agentes conversacionales**: dado su tamaño moderado y licencia permisiva, sirve para experimentar con agentes que requieran contexto largo sin depender de APIs externas.
-- **Análisis de logs o datos de series temporales**: puede procesar secuencias largas de eventos o registros para detectar patrones o generar resúmenes.
+- Analisis de documentos extensos: con una ventana declarada de 262.144 tokens, el modelo puede ingerir contratos, informes anuales o expedientes completos en una sola pasada sin troceado, siempre que se configure `-c` con un valor acorde a la RAM/VRAM disponible.
+- Asistentes conversacionales de contexto largo: la etiqueta `conversational` y la ventana amplia permiten mantener historiales de dialogo muy prolongados, util para soporte tecnico con trazabilidad de incidencias anteriores.
+- Despliegue local en estaciones de trabajo: el fichero Q4_K_M de 16,7 GB cabe en GPUs de 24 GB (RTX 4090, A5000) con offload total de capas (`-ngl 99`), lo que permite prototipar sin infraestructura cloud.
+- Servidor de inferencia ligero con llama-server: la model card documenta el arranque con `llama-server`, lo que facilita exponer una API compatible con OpenAI para integrarla en aplicaciones internas.
+- Procesamiento por lotes en CPU/GPU mixta: al poder reducir `-ngl`, el modelo puede ejecutarse con offload parcial en maquinas sin GPU dedicada potente, adecuado para tareas offline de resumen o clasificacion.
+- Evaluacion de arquitecturas hibridas: investigadores interesados en componentes GDN/recurrentes pueden usar esta cuantizacion para medir latencia y consumo de KV-cache frente a transformers clasicos del mismo tamano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el archivo GGUF `Q4_K_M` ocupa 16,7 GB, por lo que se necesita al menos 16 GB de VRAM para cargar el modelo completo. Con contexto adicional (KV cache) se recomienda 24 GB o más.
-- **GPU recomendadas**: RTX 4090 (24 GB), RTX 6000 Pro (48 GB), A100 40 GB, o GPUs con 24 GB o más. Para inferencia parcial con offload de capas a CPU, se puede usar GPUs de 12 GB pero con mayor latencia.
-- **En consumer GPU**: sí, cabe en RTX 4090 y en GPUs de 24 GB; en GPUs de 16 GB (como RTX 3080 Ti) es ajustado, pero posible con contexto reducido.
-- **Opciones de despliegue**: `llama.cpp` (CLI o servidor), `Ollama`, `llama-cpp-python` para integración en Python. Se recomienda usar una versión reciente de `llama.cpp` para soportar la arquitectura modificada.
-- **Latencia y throughput**: no se dispone de mediciones específicas. Para un modelo de 27B en Q4_K_M, se espera una velocidad de decodificación de entre 20 y 40 tokens por segundo en una RTX 4090, dependiendo de la longitud del contexto.
+- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 16,7 GB; a ello hay que sumar la KV-cache, cuyo tamano crece linealmente con el contexto configurado. Para 8K de contexto el consumo adicional es moderado; para 64K o mas puede requerir decenas de GB adicionales.
+- GPU recomendadas: RTX 4090 (24 GB) o A5000 para carga completa en Q4_K_M con contextos moderados; A100 40/80 GB o H100 para contextos largos (64K-262K) sin offload.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 (24 GB) con `-ngl 99` y contextos de 8K-32K; en GPUs de 16 GB requerira offload parcial a CPU.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`) con build reciente; la model card menciona una bifurcacion especifica en `github.com/vnlpscale/llama.cpp` para el soporte de la arquitectura. No se documenta compatibilidad con vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa con otros modelos. La arquitectura GDN no está documentada públicamente, y no se conocen modelos directamente comparables con las mismas modificaciones. Se puede señalar que el modelo base Qwen3.8-27B es comparable en tamaño a Llama-3.1-27B o Gemma-2-27B, pero sin datos de rendimiento no se puede realizar una comparación cuantitativa.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-SpeedX27-VL-GDN64-GGUF (este) | ~27B | 262.144 | GGUF Q4_K_M | Apache-2.0 | Arquitectura hibrida con GDN; requiere llama.cpp reciente |
+| Modelo base summerMC/Qwen3.8-27B-Longbook27-VL-GDN64 | ~27B | no disponible | safetensors/BF16 (presumible) | Apache-2.0 | Mayor precision, mayor huella de memoria |
+| Alternativas de ~27B en GGUF | no disponible | no disponible | GGUF | no disponible | No se dispone de datos verificables de modelos comparables en la informacion proporcionada |
+
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- **Pérdida de calidad por cuantización**: la cuantización Q4_K_M introduce una degradación leve en la precisión numérica, que puede afectar tareas que requieren exactitud matemática o razonamiento fino.
-- **Arquitectura no estándar**: los componentes GDN/recurrentes requieren una versión reciente de `llama.cpp`; versiones antiguas pueden no cargar el modelo o producir errores.
-- **Soporte multimodal incierto**: aunque el modelo base es multimodal, la cuantización GGUF se etiqueta como `text-generation`; no se garantiza el procesamiento de imágenes en este formato.
-- **Riesgo de alucinación**: como todo modelo generativo, puede producir contenido falso o no verificado, especialmente en contextos largos.
-- **Sin información sobre sesgos**: no se dispone de datos sobre sesgos o riesgos específicos del modelo base modificado.
-- **Restricciones de uso**: la licencia Apache-2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base original para cualquier obligación adicional.
+- La model card indica explicitamente "LLama.cpp unsported" (sic) y remite a una bifurcacion no oficial (`vnlpscale/llama.cpp`); el soporte en el llama.cpp upstream puede ser incompleto o inestable.
+- Arquitectura no estandar: al incorporar componentes GDN/recurrentes, herramientas de inferencia, kernels y optimizaciones habituales pueden no funcionar o requerir builds especificos.
+- La cuantizacion Q4_K_M introduce perdida de calidad respecto al modelo en BF16; no se han publicado evaluaciones que cuantifiquen esa degradacion.
+- No se documentan sesgos conocidos, tasas de alucinacion ni evaluaciones de seguridad.
+- No se enumeran idiomas soportados; el rendimiento fuera del ingles y el chino es desconocido.
+- El contexto maximo declarado (262.144 tokens) es teorico: en la practica esta limitado por la memoria disponible para la KV-cache y por la calidad del modelo en contextos extremos, no verificada.
+- El repositorio tiene un volumen de adopcion bajo (349 descargas, 4 likes) y procede de un autor individual, no del equipo oficial de Qwen; conviene tratar el modelo como no auditado para produccion.
+- Aunque la licencia es Apache-2.0, se recomienda revisar la licencia y notas del modelo base original antes de uso comercial.
 
 ## Enlaces
 
-- [Repositorio GGUF en Hugging Face](https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64-GGUF)
-- [Modelo base sin cuantizar](https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64)
-- [Modelo original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Repositorio oficial Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
-- [Página de QwenCloud para Qwen3.8-27B](https://www.qwencloud.com/models/qwen3.8-27b)
-- [Guía de despliegue en DGX Spark / RTX 6000 Pro](https://github.com/MiaAI-Lab/Qwen3.8-27B-DGX-Spark-RTX-6000)
+- Repositorio Hugging Face: https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64-GGUF
+- Modelo base: https://huggingface.co/summerMC/Qwen3.8-27B-Longbook27-VL-GDN64
+- Bifurcacion de llama.cpp mencionada: https://github.com/vnlpscale/llama.cpp

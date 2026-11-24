@@ -2,109 +2,100 @@
 
 ## Resumen
 
-quantum-physics-ai999x es un motor determinista de resolución de problemas de física cuántica para Python, publicado por la organización AI999X (creador e ingeniero: Ibnul Jaif Farabi) bajo licencia Apache-2.0. No es un modelo de lenguaje generativo: se describe como un motor neuro-simbólico en el que una capa de lectura basada en reglas interpreta la pregunta en inglés y la enruta hacia una de sus 75 capacidades simbólicas certificadas, que calculan la respuesta con sympy y mpmath y la verifican antes de devolverla. El paquete se distribuye como wheel de Python (`py3-none-any`) y se ejecuta íntegramente en CPU, sin GPU, sin red y sin clave de API.
+Quantum Physics AI999X (identificador `AI999X/quantum-physics-ai999x`) es un motor de cálculo determinista empaquetado como modelo de question-answering, publicado por el autor AI999X bajo licencia Apache 2.0. No se trata de un transformer generativo: es un motor compilado (en Rust, según las etiquetas del repositorio) que resuelve 76 cálculos de física cuántica distribuidos en 11 temas, cada uno con su fórmula, sus pasos intermedios y sus unidades. El modelo declara 4.715.520 parámetros en formato safetensors y un tamaño de repositorio de 0.0 GB, lo que sugiere que los pesos reales son mínimos o simbólicos y que la lógica reside en el binario compilado.
 
-Su propuesta diferencial es la ausencia de respuestas inventadas: define siete resultados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y prefiere rechazar la consulta antes que aproximar un resultado. Cada respuesta incluye pasos intermedios, fórmulas en LaTeX, unidades y supuestos, lo que lo orienta a tutoría, corrección de ejercicios y cuadernos reproducibles.
+El modelo aborda el problema de la fiabilidad en la resolución de ejercicios de física: en lugar de generar texto probabilístico, devuelve resultados exactos con trazabilidad de pasos y, cuando falta un dato o está fuera de rango, una explicación en lenguaje natural en vez de un número inventado. Los temas cubiertos incluyen relatividad especial, fotones y ondas de materia, el átomo de hidrógeno, pozos cuánticos y efecto túnel, espín y qubits, puertas cuánticas, física nuclear y de partículas, y física estadística.
 
-La ficha de Hugging Face declara 4.715.520 parámetros en formato safetensors y etiquetas ONNX, si bien la model card no documenta ninguna red neuronal entrenada con descenso de gradiente: el comportamiento descrito corresponde a código simbólico más un paquete de conocimiento. Es relevante ahora por su encaje en el nicho de herramientas de dominio acotado, offline y auditables, en contraste con los asistentes generativos de propósito general, y por su promesa de reproducibilidad exacta entre plataformas (Windows y Linux, Python 3.10 a 3.14).
+Su relevancia actual radica en la propuesta de "zero-hallucination" y ejecución totalmente offline: se distribuye como aplicación de escritorio (Windows y Linux), herramienta de línea de comandos, aplicación web y paquete de Python (`pip install quantum-physics-ai999x`). La model card indica explícitamente `inference: false`, lo que confirma que no está pensado para inferencia mediante las librerías estándar de Hugging Face (transformers, vLLM), sino como un ejecutable autocontenido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbolico determinista: lectura de preguntas basada en reglas + 75 capacidades simbolicas certificadas (sympy, mpmath). No es un transformer ni una red neuronal entrenada |
-| Parametros totales | 4.715.520 (recuento real de los ficheros safetensors del repositorio) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (no gestiona contexto conversacional; acepta formas de pregunta documentadas y llamadas tipadas) |
-| Tipos de cuantizacion | No disponible (no se publican pesos cuantizados; el runtime es Python puro sobre CPU) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX (etiquetas del repositorio); distribucion principal como wheel de Python `py3-none-any` |
-| Version | 1.0.0 (knowledge pack 1.0.1) |
-| Capacidades certificadas | 75 procedimientos |
-| Respuestas doradas documentadas | 376 |
-| Pipeline declarado | question-answering |
-| Inferencia en Hugging Face | No (`inference: false`) |
-| Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
-| Dependencias de ejecucion | sympy, mpmath (Python puro) |
+| Arquitectura | Motor de cálculo determinista compilado (Rust según etiquetas); no es un transformer generativo |
+| Parametros totales | 4.715.520 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (no aplica a un motor determinista) |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (según metadatos del repositorio); distribución principal como binarios compilados y paquete Python |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un pipeline de tres etapas: (1) una capa de lectura basada en reglas que reconoce las formas de pregunta documentadas en ingles y extrae los parametros, o bien una llamada tipada `solve(capability_id, **inputs)`; (2) un conjunto de 75 procedimientos simbolicos certificados que cubren relatividad especial, fotones y ondas de materia, atomo de hidrogeno y momento angular, pozos cuanticos y efecto tunel, espin, qubits y puertas cuanticas, fisica nuclear y de particulas, y fisica estadistica; (3) una etapa de verificacion que comprueba el resultado por sustitucion inversa, analisis dimensional o comparacion con un calculo independiente antes de devolverlo.
+La información disponible no describe una arquitectura de red neuronal. El modelo se presenta como "un motor compilado" (one compiled engine) con cuatro interfaces de uso: aplicación de escritorio, línea de comandos, navegador y Python. Las etiquetas del repositorio mencionan Rust y Python, lo que apunta a un núcleo de cálculo escrito en Rust con enlaces o envoltorios en Python. En Windows y Linux x86-64, `pip` instala el mismo motor compilado; en otras plataformas (macOS, ARM) instala una versión pura en Python que, según el autor, ofrece las mismas respuestas.
 
-No se documenta entrenamiento en el sentido habitual: no hay corpus de tokens, ni composicion de dataset, ni fases de RLHF o DPO. El equivalente a un conjunto de evaluacion es el paquete de 376 respuestas doradas documentadas, que actua como suite de regresion y que el autor declara reproducidas de forma identica en todas las plataformas probadas. La innovacion tecnica destacable no es arquitectonica sino de diseño de contrato: el sistema tiene prohibido responder fuera de sus capacidades certificadas y devuelve un rechazo explicito indicando que dato falta o por que la consulta queda fuera de alcance.
+No se dispone de datos sobre volumen de entrenamiento, composición del dataset, ni uso de RLHF o DPO, porque el modelo no parece entrenarse mediante esos procedimientos. La lógica de resolución se basa en fórmulas físicas implementadas explícitamente: 76 cálculos en 11 temas, cada uno con fórmula, pasos y unidades. La validación declarada se realizó contra un conjunto de "Golden answers" de 383 preguntas documentadas, ejecutado en Windows y Linux con Python 3.10 a 3.14.
 
 ## Capacidades
 
-- Resolucion de problemas de fisica cuantica con pasos intermedios, formulas en LaTeX, unidades y supuestos explicitos.
-- Cobertura declarada: relatividad especial, fotones y ondas de materia, atomo de hidrogeno y momento angular, pozos cuanticos y tunelizacion, espin, qubits y puertas cuanticas, fisica nuclear y de particulas, fisica estadistica.
-- Ejemplos verificables en la model card: factor de Lorentz, transiciones del hidrogeno, efecto fotoelectrico, circuitos de dos qubits, transmision a traves de una barrera de potencial.
-- Interfaz dual: `ask()` para preguntas en ingles documentadas y `solve(capability_id, **inputs)` para llamadas tipadas garantizadas.
-- Siete estados de salida explicitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) en lugar de respuestas aproximadas.
-- Ejecucion completamente offline en CPU, sin red, sin GPU y sin clave de API.
-- Tareas adicionales declaradas en las etiquetas: token classification, text classification, sentence similarity y feature extraction; la model card no detalla procedimientos para estas tareas.
-- No dispone de tool calling, agentes, razonamiento multi-paso abierto, vision, audio ni generacion libre de texto.
+- Resolución paso a paso de 76 cálculos de física cuántica en 11 temas, con fórmula, pasos intermedios y unidades.
+- Cobertura temática: relatividad especial, fotones y ondas de materia, átomo de hidrógeno, pozos cuánticos y efecto túnel, espín y qubits, puertas cuánticas, estados de Bell, desintegración radiactiva, radiación de cuerpo negro, energía de Fermi, física nuclear y de partículas, y física estadística.
+- Gestión explícita de entradas ausentes o fuera de rango: devuelve una razón en lenguaje natural en lugar de un número.
+- Ejecución totalmente offline en el equipo del usuario.
+- Cuatro interfaces: aplicación de escritorio (Windows, Linux), CLI `quantum-physics`, versión web y paquete de Python 3.10+.
+- Visualizaciones generadas a partir del resultado calculado: escenas y gráficas (factor de Lorentz, efecto fotoeléctrico, circuito de dos qubits, transmisión por barrera, coeficientes de Clebsch-Gordan, fórmula semiempírica de masa, dosis absorbida y equivalente, entre otras).
+- No se documenta soporte de tool calling, function calling, razonamiento multi-paso generativo ni capacidades multimodales en el sentido de un LLM.
 
 ## Casos de uso
 
-- Correccion automatica de ejercicios de fisica cuantica: el motor recibe los parametros del problema, recalcula la solucion con una capacidad certificada y permite comparar con la respuesta del alumno; los pasos y unidades devueltos sirven como justificacion de la nota.
-- Plataformas de tutoría sin conectividad: al ejecutarse en CPU y sin red, puede desplegarse en aulas con equipos aislados o en entornos con requisitos de soberania de datos, manteniendo respuestas identicas entre Windows y Linux.
-- Generacion de cuadernos reproducibles: los resultados incluyen formulas en LaTeX y supuestos, lo que permite volcar directamente el desarrollo a un notebook o a un informe docencia.
-- Suite de regresion cientifica en CI: las 376 respuestas doradas pueden usarse como tests de plataforma (Python 3.10 a 3.14, Windows y Linux) para detectar regresiones numericas o de formato en pipelines de calculo cientifico.
-- Pre-triaje de consultas en un asistente cientifico mayor: el motor actua como verificador determinista para consultas de fisica cuantica y devuelve OUT_OF_SCOPE cuando no aplica, evitando que un LLM aguas abajo invente la respuesta.
-- Calculo de referencia en laboratorio o docencia de segundo ciclo: obtencion de magnitudes como energia de transicion, longitud de onda umbral o probabilidades de un circuito de dos qubits con trazabilidad de los pasos intermedios.
-- Evaluacion de calidad de otros sistemas: comparar la salida de un modelo generativo frente a la solucion simbolica certificada sobre el mismo enunciado para medir tasas de alucinacion en el dominio.
+- Docencia de física cuántica: el alumnado introduce los parámetros de un ejercicio (por ejemplo, la velocidad relativa para el factor de Lorentz) y obtiene el resultado con pasos y unidades, lo que permite verificar el procedimiento y no solo la respuesta final.
+- Corrección automática de problemas: un profesor puede usar el paquete de Python para evaluar respuestas numéricas de estudiantes contra el resultado determinista del motor, eliminando la variabilidad de un LLM generativo.
+- Laboratorio docente con visualizaciones: la aplicación de escritorio dibuja escenas y gráficas a partir del resultado calculado (efecto fotoeléctrico, transmisión por barrera), útil para explicar conceptos en clase sin conexión a internet.
+- Entornos con requisitos de privacidad o sin red: al ejecutarse offline, encaja en aulas, laboratorios o instalaciones donde no se permite enviar datos a servicios en la nube.
+- Integración en scripts y pipelines de cálculo: la CLI `quantum-physics` y el paquete de Python permiten automatizar baterías de cálculos (por ejemplo, energías de transición de Rydberg para varios niveles) y generar tablas de resultados reproducibles.
+- Material de autoaprendizaje: la etiqueta `homework-help` y el modo paso a paso lo orientan a estudiantes que necesitan resolver ejercicios de física cuántica con explicación del procedimiento.
+- Verificación cruzada de resultados experimentales o simulados: dado que devuelve valores deterministas con unidades, sirve como referencia para contrastar cálculos obtenidos con otras herramientas.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos disponibles son los declarados por el autor en el `model-index` de la model card, marcados como no verificados de forma independiente.
+Los únicos datos disponibles proceden del `model-index` declarado por el autor, que no han sido verificados de forma independiente (`verified: false`).
 
-| Tarea | Dataset | Metrica | Valor | Verificado |
-|---|---|---|---|---|
-| Question answering de fisica cuantica | Golden answers (376 preguntas documentadas, Windows + Linux Python 3.10-3.14) | accuracy | 1,0 | No (declarado por el autor) |
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| Question answering de física cuántica | Golden answers (383 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 ("identical on every platform") |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningun otro benchmark estandar en la informacion disponible. La metrica de 1,0 mide la coincidencia exacta con la propia suite de respuestas doradas del autor, no el rendimiento frente a un conjunto de evaluacion externo e independiente.
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. El valor 1.0 corresponde a la coincidencia con las respuestas doradas del propio autor sobre su conjunto de 383 preguntas, no a un benchmark estándar de la comunidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 0 GB; el runtime es Python puro sobre CPU y no carga pesos en GPU.
-- GPU recomendadas: ninguna. No requiere A100, H100 ni RTX 4090.
-- Cabe en cualquier CPU consumer; también en entornos sin acelerador, contenedores ligeros y equipos de aula.
-- Opciones de despliegue: instalacion via `pip install quantum-physics-ai999x` (PyPI) o desde el wheel del repositorio de Hugging Face; uso como biblioteca Python. No aplica despliegue con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo.
-- Huella en disco: el repositorio de Hugging Face figura con 0.0 GB; el peso real del wheel no se detalla en la informacion disponible.
-- Latencia y throughput: no disponible. Al ser calculo simbolico determinista, el coste depende del procedimiento invocado y de la precision numerica solicitada, no de un presupuesto de tokens.
+- VRAM estimada para inferencia: no aplica; el modelo no requiere GPU para funcionar.
+- GPU recomendadas: no aplica; el motor se ejecuta en CPU.
+- Compatibilidad con GPU de consumo: irrelevante para su funcionamiento.
+- Plataformas soportadas: Windows y Linux x86-64 con binario compilado; macOS y ARM mediante build pura en Python (mismas respuestas según el autor).
+- Requisito de Python: 3.10 o superior para el paquete `quantum-physics-ai999x`.
+- Opciones de despliegue: aplicación de escritorio, CLI `quantum-physics`, versión web en la página del modelo y paquete de Python. No se documenta despliegue con vLLM, llama.cpp, Ollama ni TGI, coherente con la etiqueta `inference: false`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Herramienta | Tipo | Parametros | Contexto | Licencia | Ejecucion offline | Disponibilidad |
-|---|---|---|---|---|---|---|
-| quantum-physics-ai999x | Motor simbolico determinista con lectura en lenguaje natural | 4.715.520 (safetensors) | No aplica | Apache-2.0 | Si, CPU | PyPI y Hugging Face |
-| SymPy | Biblioteca de matematica simbolica | No aplica (no es un modelo) | No aplica | BSD | Si | PyPI |
-| Wolfram Alpha | Motor de conocimiento y calculo en la nube | No disponible | No aplica | Propietaria | No | Servicio web y API de pago |
-| LLM generativo de proposito general (p. ej. familia GPT o Llama) | Transformer decoder | No disponible en esta ficha | No disponible en esta ficha | Variable segun modelo | Depende del modelo | Amplia |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Las alternativas habituales para cálculo físico determinista (SymPy, SciPy, Wolfram Language) no aparecen citadas ni comparadas por el autor, y no hay datos de rendimiento que permitan una comparación rigurosa. Se indica, por tanto, "no disponible".
 
-Frente a SymPy, la diferencia es la capa de lectura de lenguaje natural y el contrato de rechazo explicito; frente a Wolfram Alpha, la ejecucion local sin red y la licencia permisiva; frente a un LLM generativo, la ausencia de alucinacion en el dominio cubierto, a costa de un alcance mucho mas estrecho y de no generar texto libre. Los datos numericos de las alternativas no se han incluido porque no estan disponibles en la informacion proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| quantum-physics-ai999x | 4.715.520 (según safetensors) | No disponible | Apache 2.0 | Motor determinista de cálculos de física cuántica |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- Alcance cerrado: solo responde a las 75 capacidades certificadas; cualquier consulta fuera de esa cobertura devuelve OUT_OF_SCOPE o UNRECOGNIZED_FORMAT. No es un asistente de fisica general.
-- Solo ingles: la capa de lectura de preguntas reconoce formas documentadas en ingles; no se declara soporte de castellano ni de otros idiomas.
-- No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no dispone de ventana de contexto.
-- La precision declarada de 1,0 procede de la suite interna de 376 respuestas doradas del propio autor y esta marcada como no verificada; no equivale a una evaluacion independiente.
-- El recuento de 4.715.520 parametros en safetensors no se corresponde con ninguna arquitectura neuronal descrita en la model card: conviene tratar ese dato como metadato del repositorio y no como tamano de un modelo entrenado.
-- La model card declara `inference: false` en Hugging Face, por lo que el uso requiere instalar el paquete en local; el widget de inferencia del Hub no esta operativo.
-- Adopcion nula en el momento de la consulta: 0 descargas y 0 likes, sin evidencia externa de uso en produccion. La fecha de creacion registrada en el Hub es 2026-10-25.
-- Sin datos publicados de sesgos, robustez frente a entradas malformadas mas alla de los siete estados declarados, ni resultados de latencia.
-- Licencia Apache-2.0: permite uso comercial y modificacion con atribucion y conservacion del aviso de licencia; no se declaran restricciones adicionales, pero tampoco garantias explicitas por parte del autor.
-- Dependencia de sympy y mpmath: la exactitud numerica y el comportamiento pueden variar con la version de estas bibliotecas, aunque el autor declara respuestas identicas en las plataformas probadas.
+- No es un modelo de lenguaje generativo: no puede mantener conversaciones abiertas ni responder preguntas fuera de los 76 cálculos implementados.
+- Cobertura limitada a 11 temas y 76 cálculos concretos; cualquier problema fuera de ese catálogo quedará sin resolver.
+- Solo soporta inglés (`en`); no hay soporte documentado de castellano ni de otros idiomas.
+- El resultado de accuracy 1.0 está declarado por el autor y marcado como no verificado; se obtuvo sobre su propio conjunto de 383 preguntas doradas, lo que limita su valor como evidencia independiente.
+- La etiqueta `inference: false` indica que no está preparado para cargarse con las librerías estándar de Hugging Face; el repositorio funciona principalmente como punto de distribución.
+- El tamaño de repositorio de 0.0 GB y la naturaleza determinista del motor plantean dudas sobre qué contienen realmente los pesos safetensors; conviene verificar los artefactos antes de integrarlos en producción.
+- Riesgo de alucinación bajo por diseño en los cálculos cubiertos, pero la gestión de entradas inválidas devuelve texto explicativo, no un resultado; los consumidores deben manejar ese caso.
+- Licencia Apache 2.0 permite uso comercial, pero no se documentan garantías de exactitud física más allá de la validación interna del autor.
+- Sin datos publicados sobre sesgos, latencia, throughput ni comportamiento en plataformas no x86-64 más allá de la mención a la build pura en Python.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AI999X/quantum-physics-ai999x
-- PyPI: https://pypi.org/project/quantum-physics-ai999x/
-- Guia de capacidades: https://huggingface.co/AI999X/quantum-physics-ai999x/tree/main/docs
-- Evaluacion: https://huggingface.co/AI999X/quantum-physics-ai999x/tree/main/evaluation
-- Organizacion en Hugging Face: https://huggingface.co/AI999X
-- Sitio web: https://ai999x.com
-- Soporte al autor: https://buymeacoffee.com/ibnuljaiffarabi
-- Wheel de instalacion directa: https://huggingface.co/AI999X/quantum-physics-ai999x/resolve/main/dist/quantum_physics_ai999x-1.0.0-py3-none-any.whl
+- Modelo en Hugging Face: https://huggingface.co/AI999X/quantum-physics-ai999x
+- Página del modelo con demo web: https://www.ai999x.com/models/quantum-physics-ai999x/
+- Capacidades (anclas de la página del modelo): https://www.ai999x.com/models/quantum-physics-ai999x/#capabilities
+- Aplicación de escritorio para Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-quantum-physics-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio para Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-quantum-physics-1.6.7-linux-x86_64.tar.gz
+- CLI para Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI para Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de la aplicación de escritorio: https://github.com/AI999X/ai999x-desktop
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=quantum-physics-ai999x/clip.mp4

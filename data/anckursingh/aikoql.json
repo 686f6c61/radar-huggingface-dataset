@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "anckursingh/aikoql",
+  "slug": "anckursingh-aikoql",
+  "author": "anckursingh",
+  "url": "https://huggingface.co/anckursingh/aikoql",
+  "created_at": "2026-11-23T19:09:27.000Z",
+  "updated_at": "2026-11-24T03:21:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-cased",
+    "base_model:finetune:distilbert/distilbert-base-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65193219,
+  "parameters_human": "65.2M",
+  "storage_bytes": 260785212,
+  "storage_human": "261 MB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,92 +2,102 @@
 
 ## Resumen
 
-Este repositorio contiene una conversión MLX en precisión mixta oQ6 del modelo Qwen3.8-Flash-Next, desarrollada por Vontra a partir de los pesos oficiales BF16 de Qwen. Qwen3.8-Flash-Next es un modelo multimodal (visión-lenguaje) de arquitectura `qwen4_exp`, con 125.000 millones de parámetros totales (6.000 millones activos por token) y una ventana de contexto nativa de 262.144 tokens. La conversión preserva el bloque MTP (Multi-Token Prediction) nativo del modelo, lo que permite decodificación especulativa en hardware Apple Silicon.
+Qwen3.8-Flash-Next-MLX-oQ6-MTP es una conversión comunitaria a formato MLX del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Vontra (con referencias a TensorFold en la model card). Se trata de una cuantización mixta de 6 bits (denominada oQ6) generada directamente desde el checkpoint oficial en BF16, preservando el bloque nativo de predicción multi-token (MTP) que el modelo original incluye para decodificación especulativa. El objetivo es hacer viable la inferencia de un modelo de gran tamaño en hardware Apple Silicon mediante el framework MLX.
 
-La relevancia de esta conversión radica en que ofrece una versión cuantizada de un modelo MoE ultradisperso de gran tamaño, optimizada para ejecutarse en Mac con chips M-series mediante el runtime oMLX o MLX-VLM. Al mantener el MTP nativo, se consiguen velocidades de generación superiores a las de una conversión sin él, como se muestra en las pruebas del autor. Es una conversión comunitaria, no oficial, y requiere un runtime con soporte explícito para la arquitectura `qwen4_exp` y su módulo MTP.
+El modelo subyacente es un MoE disperso de tipo vision-language con arquitectura `qwen4_exp`, que combina Gated DeltaNet, Qwen Sparse Attention, flujos residuales con gating, embeddings hasheados de n-gramas (bigramas y trigramas) y un bloque MTP nativo. Según los datos de la model card, el modelo de lenguaje tiene 125B parámetros totales con 6B activos, a los que se suman 51B parámetros de embeddings de n-gramas; el repositorio declara 179.999.981.459 parámetros totales en safetensors y un tamaño de 158,1 GB repartido en 31 shards.
+
+Su relevancia actual radica en que permite ejecutar un modelo de escala frontier (contexto configurado de 262.144 tokens, capacidades multimodales imagen-texto) en equipos Apple Silicon con memoria unificada, algo impensable con los pesos BF16 originales. La decodificación especulativa con el bloque MTP incluido aporta aceleraciones medibles: la model card reporta entre 28,3 y 36,6 tokens/s en un Apple M3 Studio con MTP activo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen4_exp` (vision-language sparse MoE con Gated DeltaNet, Qwen Sparse Attention, n-gram embeddings y MTP) |
-| Parametros totales | 45.364.038.499 (según safetensors); el modelo base declara 125B totales / 6B activos |
-| Parametros activos | 6.000 millones (del modelo base) |
+| Arquitectura | `qwen4_exp` vision-language sparse MoE (Gated DeltaNet + Qwen Sparse Attention + residuales con gating + embeddings hasheados de n-gramas + bloque MTP nativo) |
+| Parametros totales | 179.999.981.459 (según safetensors); desglose upstream: 125B LM + 51B embeddings de n-gramas |
+| Parametros activos | 6B (LM); 512 expertos enrutados, 10 activos + 1 compartido |
 | Longitud de contexto | 262.144 tokens (configurado) |
-| Tipos de cuantizacion | oQ6 mixed-precision: base 6-bit affine, módulos protegidos a 6/8-bit, grupo 32 |
-| Idiomas soportados | no disponible (la model card no especifica idiomas) |
-| Licencia | Qwen Community License 1.0 |
-| Formato de pesos | MLX safetensors (31 shards, 158.07 GB) |
+| Tipos de cuantizacion | oQ6 mixed precision: base afín de 6 bits con 232 módulos protegidos o sobrescritos a 6/8 bits; group size 32 |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
+| Formato de pesos | MLX safetensors (3.747 tensores, 31 shards, 158,07 GB / 147,21 GiB) |
 
 ## Arquitectura y entrenamiento
 
-Qwen3.8-Flash-Next combina varias innovaciones: tres de cada cuatro capas usan Gated DeltaNet (GDN) para comprimir el historial, mientras que la cuarta usa Qwen Sparse Attention (QSA) para recuperación precisa de largo alcance. La capa MoE tiene 512 expertos enrutados (10 activos más 1 compartido) y se añaden embeddings de n-gramas (bigramas y trigramas) con 51.000 millones de parámetros adicionales. El modelo incluye un bloque MTP nativo (una capa draft de Qwen4Exp) para decodificación especulativa.
+La arquitectura del modelo base combina varias innovaciones: capas de Gated DeltaNet (atención lineal con estado recurrente), Qwen Sparse Attention, capas MoE dispersas con 512 expertos enrutados (10 activos más 1 compartido), flujos residuales anchos con gating y tablas de embeddings hasheados de bigramas y trigramas de 51B parámetros. El modelo de lenguaje consta de 48 capas, hidden size de 2.560, 24 cabezas de atención y 2 cabezas KV. Incluye además un bloque nativo de predicción multi-token (MTP) para decodificación especulativa, que en esta conversión se preserva íntegro (76 tensores MTP convertidos).
 
-La conversión de Vontra aplica cuantización oQ6 con asignación guiada por sensibilidad: se midió la sensibilidad de cada capa con un proxy local de 4 bits y se asignaron 232 módulos protegidos o sobrescritos a 6/8 bits. El grupo de cuantización es 32, compatible con las tablas de embeddings de n-gramas de ancho 160. Todos los tensores, incluido el MTP, se reconstruyeron desde el checkpoint BF16 oficial. No se proporcionan detalles sobre el entrenamiento del modelo base (datos, tokens, método de alineación) en la información disponible.
+Sobre el entrenamiento del modelo original no se proporciona información en la documentación disponible: no se detallan el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. La model card remite a la model card oficial de Qwen para los detalles de evaluación upstream, uso previsto y limitaciones.
+
+La conversión de Vontra aplica una asignación de precisión guiada por sensibilidad, medida con un proxy local validado de 4 bits, con base de 6 bits y 232 módulos protegidos o sobrescritos. El group size de 32 se eligió para soportar las tablas de embeddings hasheados de n-gramas de 160 de ancho. Se realizó validación estructural de los 3.747 tensores y los 31 shards, validación del bloque MTP (una capa draft configurada) y pruebas de generación en vivo que cubrieron completado determinista, chat con instrucción exacta, chat conversacional, telemetría MTP y rollback de caché.
 
 ## Capacidades
 
-- Procesamiento multimodal: acepta imágenes y texto como entrada (pipeline `image-text-to-text`).
-- Generación de texto con razonamiento, código y matemáticas, heredadas del modelo base Qwen3.8-Flash-Next (no verificado en esta conversión).
-- Decodificación especulativa nativa mediante el bloque MTP incluido, con tasas de aceptación del draft de 70.8–84.2% en las pruebas del autor.
-- Ventana de contexto larga de 262.144 tokens, adecuada para documentos extensos o conversaciones multi-turno.
-- Soporte para ejecución en Apple Silicon mediante oMLX o MLX-VLM, con pesos en formato MLX safetensors.
-- No se documenta soporte explícito de tool calling, agentes o funciones específicas en la model card de esta conversión.
+- Generación de texto conversacional y completado de instrucciones, validado en pruebas en vivo con oMLX sobre Apple M3 Studio.
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`), con el procesador de visión upstream preservado.
+- Razonamiento multi-turno con ventana de contexto de 262.144 tokens.
+- Decodificación especulativa mediante el bloque MTP nativo, con tasas de aceptación de draft del 70,8 % al 84,2 % en las pruebas reportadas.
+- Soporte de plantilla de chat y tokenizador upstream preservados.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Análisis de imágenes médicas: el modelo puede recibir radiografías o escáneres junto con preguntas clínicas, generando descripciones detalladas o resúmenes preliminares. Su ventana de 262K tokens permite incluir múltiples estudios en una sola consulta.
-- Asistentes virtuales multimodales en Mac: al ser una conversión MLX, se integra en aplicaciones de escritorio que requieran comprensión de imágenes y texto, como gestión de correos con adjuntos o resúmenes de documentos escaneados.
-- Procesamiento de documentos escaneados: combina OCR (a través de la entrada visual) con generación de texto estructurado, útil para digitalizar facturas, contratos o formularios.
-- Generación de descripciones de productos para e-commerce: a partir de una foto del artículo, el modelo produce textos descriptivos y atributos, aprovechando su capacidad de razonamiento visual.
-- Chatbots de atención al cliente con contexto largo: la ventana de 262K tokens permite mantener conversaciones extensas sin perder información previa, ideal para soporte técnico o consultas complejas.
-- Investigación en visión-lenguaje: sirve como base para experimentos de fine-tuning o evaluación en tareas de VQA (Visual Question Answering) y captioning, gracias a su arquitectura MoE eficiente y su licencia comunitaria.
+- Asistentes conversacionales locales en Apple Silicon: el modelo puede mantener conversaciones multi-turno con contexto muy largo (262.144 tokens) ejecutándose íntegramente en un equipo con memoria unificada, sin depender de APIs externas, gracias al formato MLX y a la cuantización de 6 bits.
+- Análisis de documentos extensos con imágenes: al ser un modelo vision-language con contexto de 262K tokens, permite procesar informes, contratos o artículos con figuras y tablas en una sola pasada, extrayendo información cruzada entre texto e imagen.
+- Prototipado e investigación en entornos macOS: investigadores que trabajan en Mac pueden evaluar un MoE de escala frontier con 6B parámetros activos sin acceso a clústeres de GPU, usando oMLX o MLX-VLM.
+- Generación asistida con baja latencia percibida: la decodificación especulativa MTP, con 28-37 tokens/s en M3 Studio, hace viable la escritura asistida interactiva y el autocompletado en herramientas de desarrollo locales.
+- Procesamiento por lotes de contenido multimodal en estaciones de trabajo: digitalización y resumen de archivos escaneados o capturas con descripción textual, aprovechando la ventana de contexto para agrupar varios documentos por petición.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir el impacto de la cuantización oQ6 frente a los pesos BF16 originales en tareas de generación determinista, ya que la model card documenta pruebas reproducibles con salidas idénticas entre ejecuciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor proporciona únicamente mediciones de velocidad de inferencia en un Apple M3 Studio con MTP nativo activado:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card únicamente reporta mediciones de velocidad de inferencia en un Apple M3 Studio con MTP nativo activado en oMLX:
 
-| Test | Output tokens | Velocidad |
-|---|---|---|
-| Raw completion (warmed) | 32 | 29.6 tokens/s |
-| Exact-instruction chat | 27 | 28.3 tokens/s |
-| Casual chat | 68 | 36.6 tokens/s |
+| Prueba | Tokens de salida | Velocidad |
+|---|---:|---:|
+| Completado bruto, precalentado | 32 | 29,6 tokens/s |
+| Chat con instrucción exacta | 27 | 28,3 tokens/s |
+| Chat casual | 68 | 36,6 tokens/s |
 
-Como referencia, el backbone sin MTP alcanzó 23.1 tokens/s en una prueba corta, 21.1 tokens/s en una respuesta de 142 tokens y 19.5 tokens/s en una respuesta de 512 tokens. Estas cifras no son comparables con benchmarks de calidad y dependen de la longitud del prompt, el estado de caché, la configuración de muestreo y la versión del runtime.
+Como referencia de escala (no atribuible a MTP), la model card cita que el backbone oQ6 anterior sin MTP alcanzó 23,1 tokens/s en una prueba corta con MLX, 21,1 tokens/s en una respuesta de 142 tokens y 19,5 tokens/s en una respuesta precalentada de 512 tokens en oMLX sobre el mismo equipo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el peso total es de 158.07 GB, por lo que se requiere una Mac con al menos 192 GB de memoria unificada para cargar el modelo completo. Con cuantizaciones más agresivas (p. ej., 4-bit) el requisito baja, pero este repo es oQ6.
-- GPU recomendada: Apple Silicon (M-series), validado en un Apple M3 Studio. No es compatible con GPUs NVIDIA o AMD sin un runtime MLX adaptado.
-- Opciones de despliegue: oMLX (con soporte MTP nativo) o MLX-VLM. No se menciona compatibilidad con vLLM, llama.cpp u Ollama.
-- Latencia y throughput: en M3 Studio, entre 28 y 37 tokens/s con MTP activo, según el tipo de tarea. La velocidad varía con la memoria disponible y la carga del sistema.
+- VRAM/memoria unificada estimada: el repositorio pesa 158,07 GB (147,21 GiB); se necesita un equipo Apple Silicon con memoria unificada suficiente para cargar los pesos más el estado de caché KV para el contexto utilizado. Con 262.144 tokens de contexto, el consumo adicional de caché puede ser considerable.
+- GPU recomendadas: Apple Silicon de gama alta con memoria unificada amplia (la model card valida en un Apple M3 Studio). No hay datos de funcionamiento en GPU NVIDIA o AMD.
+- Cabe en GPU de consumo: no en el sentido habitual; requiere memoria unificada de Apple Silicon muy alta. No hay datos de ejecución en RTX 4090 u otras GPU de consumo.
+- Opciones de despliegue: oMLX o MLX-VLM con soporte explícito de MTP nativo `qwen4_exp`. Los runtimes estándar que no construyan el módulo MTP de Qwen4Exp pueden rechazar los 76 tensores MTP durante la carga estricta de pesos. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: 28,3-36,6 tokens/s en Apple M3 Studio con MTP activo, según las pruebas reportadas. Los resultados varían con la longitud del prompt, el estado de caché, los parámetros de muestreo, la versión del runtime y la presión de memoria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (original) | 125B total / 6B activo | 262K | BF16 | Qwen Community 1.0 | Hugging Face |
-| Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP (este) | 45.36B (safetensors) | 262K | oQ6 (6-bit mixto) | Qwen Community 1.0 | Hugging Face |
-| Vontra/Qwen3.8-Flash-Next-MLX-4bit | no disponible | 262K | 4-bit | Qwen Community 1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-MLX-oQ6-MTP (este) | 180B totales (6B activos LM) | 262.144 | MLX safetensors, 6 bits | qwen-community-1.0 | Hugging Face, comunidad |
+| Qwen/Qwen3.8-Flash-Next (base) | 125B LM + 51B n-gramas | 262.144 | BF16 | qwen-community-1.0 | Hugging Face, oficial |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estas versiones. La versión 4-bit del mismo autor reduce el tamaño pero probablemente sacrifica calidad; la oQ6 mantiene mayor fidelidad con un coste de memoria superior. No se han encontrado otros modelos MoE multimodales de tamaño similar con conversión MLX en la información proporcionada.
+La información proporcionada no incluye datos de rendimiento comparativo con otros modelos, por lo que no es posible establecer una comparación cuantitativa más allá de la relación con el checkpoint base del que deriva esta conversión.
 
 ## Limitaciones y advertencias
 
-- Conversión comunitaria no oficial: no está respaldada por Qwen y puede contener errores no detectados en la validación.
-- Requiere un runtime con soporte explícito para `qwen4_exp` y su módulo MTP nativo; los runtimes estándar pueden rechazar los 76 tensores MTP durante la carga estricta de pesos.
-- No se debe acoplar un drafter de Qwen3.8 27B a este modelo, ya que las dimensiones ocultas difieren y el modelo ya incluye su propio bloque MTP.
-- Licencia Qwen Community 1.0: permite uso comercial con condiciones; es necesario revisar el texto completo de la licencia antes de desplegar en producción.
-- Riesgo de alucinaciones y sesgos inherentes al modelo base, no mitigados en esta conversión.
-- Tamaño grande (158 GB) que limita su uso a equipos con memoria unificada muy alta, excluyendo la mayoría de las Mac de consumo.
-- No se especifican idiomas soportados; aunque Qwen suele ser multilingüe, no hay confirmación en esta model card.
+- Es una conversión comunitaria, no una versión oficial de Qwen; el soporte y la validación corren a cargo del autor de la conversión.
+- Requiere un runtime con soporte explícito de MTP nativo `qwen4_exp` (oMLX o MLX-VLM). Los runtimes estándar pueden fallar al cargar los 76 tensores MTP.
+- No se debe acoplar un drafter Qwen3.8 27B a este modelo: Flash Next tiene dimensiones ocultas distintas y ya incluye su propio bloque MTP compatible.
+- La cuantización de 6 bits introduce pérdida de precisión respecto al BF16 original; no se han publicado evaluaciones de calidad comparativas entre ambas versiones.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles; la cobertura multilingüe no está documentada.
+- Licencia Qwen Community License 1.0: es necesario revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
+- El tamaño de 158 GB limita el despliegue a equipos con memoria unificada muy alta; no es viable en GPU de consumo convencionales.
+- El rendimiento medido corresponde a un único hardware (Apple M3 Studio); no hay datos de latencia en otros equipos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8 Flash Next: https://qwen.ai/blog?id=qwen3.8-flash-next
-- MLX-VLM (runtime): https://github.com/ml-explore/mlx-vlm
-- Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Documentación de unsloth para Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
-- Recetas vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
+- Portal de Qwen: https://qwen.ai/
+- MLX-VLM (repositorio): https://github.com/ml-explore/mlx-vlm
+- Licencia Qwen Community License 1.0: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP/blob/main/LICENSE
+- TensorFold: https://tensorfold.dev

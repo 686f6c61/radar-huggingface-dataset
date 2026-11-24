@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Mixtral-8x7B-Yes-Instruct-LimaRP-GGUF",
+  "slug": "mradermacher-mixtral-8x7b-yes-instruct-limarp-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mixtral-8x7B-Yes-Instruct-LimaRP-GGUF",
+  "created_at": "2025-09-04T15:57:05.000Z",
+  "updated_at": "2026-11-24T00:36:41.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:lemonilia/LimaRP",
+    "base_model:antisoc-qa-assoc/Mixtral-8x7B-Yes-Instruct-LimaRP",
+    "base_model:quantized:antisoc-qa-assoc/Mixtral-8x7B-Yes-Instruct-LimaRP",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 46702792704,
+  "parameters_human": "46.70B",
+  "storage_bytes": 318496108544,
+  "storage_human": "318.5 GB",
+  "context_length": 32768,
+  "base_model": "antisoc-qa-assoc/Mixtral-8x7B-Yes-Instruct-LimaRP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,119 +2,116 @@
 
 ## Resumen
 
-Inkling 2 Mini es un modelo de mezcla de expertos (MoE) desarrollado por Thinking Machines, con 26.400 millones de parámetros totales y aproximadamente 3.400 millones activos por token. Combina entrada de texto e imagen y está diseñado para tareas de razonamiento, código y uso de herramientas dentro de flujos agénticos. Su arquitectura "looped" recicla las doce capas centrales tres veces, lo que resulta en 48 pasadas de capa por token sobre un total de 24 capas.
+Inkling 2 Mini es un modelo de mezcla de expertos (MoE) desarrollado por Thinking Machines, con 26.388.641.280 parámetros totales y aproximadamente 3.400 millones activos por token. Combina entrada de texto e imagen (pipeline `image-text-to-text`) y ofrece hasta 1 millón de tokens de contexto. Su arquitectura es peculiar: de sus 24 capas, las doce centrales se ejecutan tres veces, lo que da 48 pasadas de capa por token, un esquema que el autor denomina `inkling2_loop`.
 
-La ficha que nos ocupa, `netprojects/Inkling-2-Mini-MLX-4-8bit`, es una conversión del modelo original al framework MLX de Apple, pensada para ejecutarse en silicio de Apple (chips de la serie M). No es una cuantización agresiva: los expertos enrutados conservan exactamente el formato que publicó Thinking Machines (4 bits NVFP4 en las capas 0-19 y 8 bits MXFP8 en las capas 20-23), mientras que atención, embeddings, capa de salida y codificador visual permanecen en bf16. El resultado ocupa 20,2 GB más 0,64 GB del borrador de decodificación especulativa DSpark.
+La ficha que nos ocupa no es el modelo original, sino una conversión a MLX para Apple Silicon publicada por netprojects. Mantiene los expertos enrutados exactamente como los publicó Thinking Machines: NVFP4 de 4 bits en las capas 0-19 y MXFP8 de 8 bits en las capas 20-23, reempaquetados en los formatos nativos `nvfp4`/`mxfp8` de MLX sin alterar valores. Atención, embeddings, capa de salida y codificador visual permanecen en bf16. El resultado ocupa 19,5 GB más 0,64 GB del borrador de decodificación especulativa DSpark.
 
-Su relevancia actual radica en que permite ejecutar localmente en un Mac un modelo con ventana de contexto de hasta 1 millón de tokens, capacidades multimodales y un rendimiento en tareas agénticas (SWE-bench, MCP Atlas, BrowseComp) que, según las cifras del autor original, compite con modelos densos notablemente mayores. La licencia Apache 2.0 facilita su adopción comercial.
+Es relevante ahora porque permite ejecutar un modelo multimodal de 26,4B con contexto de 1M en hardware Apple Silicon de gama alta, con soporte nativo en MLX-VLM desde el 21 de noviembre de 2026 y tool calling compatible con OpenAI. La licencia Apache 2.0 facilita su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con capas "looped" (24 capas, las 12 centrales se ejecutan 3 veces; 48 pasadas por token) |
+| Arquitectura | Transformer MoE con bucle de capas (`inkling2_loop`): 24 capas, las 12 centrales se ejecutan 3 veces (48 pasadas por token) |
 | Parametros totales | 26.388.641.280 (26,4B) |
 | Parametros activos | ~3,4B por token |
-| Longitud de contexto | Hasta 1.000.000 tokens |
-| Tipos de cuantizacion | 4 bits NVFP4 (expertos capas 0-19) y 8 bits MXFP8 (expertos capas 20-23); bf16 en atención, embeddings, salida y visión |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | Hasta 1M tokens |
+| Tipos de cuantizacion | Expertos enrutados: NVFP4 4-bit (capas 0-19) y MXFP8 8-bit (capas 20-23); atención, embeddings, salida y visión en bf16. Builds alternativos: 4bit, 3bit, 2.5bit, 2bit-mixed |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX), más `mtp.safetensors` para el borrador DSpark |
+| Formato de pesos | Safetensors (MLX), con borrador DSpark en `mtp.safetensors` |
+| Tamano del repo | 19,5 GB + 0,64 GB del borrador (39,7 GB de repo total) |
+| Libreria | MLX (mlx-vlm) |
+| Modelo base | thinkingmachines/Inkling-2-Mini (revision `6e7c824`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de mezcla de expertos con una innovación estructural: de sus 24 capas, las doce intermedias se recorren tres veces por token, de modo que el cómputo efectivo equivale a 48 pasadas de capa manteniendo un número reducido de parámetros únicos. Solo unos 3,4B parámetros se activan por token, lo que abarata la inferencia frente a un modelo denso del mismo tamaño total. Incorpora además un codificador visual para entrada de imágenes, lo que lo convierte en un modelo image-text-to-text.
+Inkling 2 Mini es un transformer de mezcla de expertos con un diseño de capas recurrentes: de las 24 capas totales, las doce intermedias se aplican tres veces por token, lo que resulta en 48 pasadas de capa. Solo unos 3,4B de los 26,4B parámetros se activan por token, lo que reduce el coste computacional manteniendo la capacidad total. El modelo acepta texto e imagen mediante un codificador visual incluido en el paquete.
 
-Esta build concreta no reentrena ni altera los pesos: repaqueta los expertos enrutados en los formatos nativos de MLX (`nvfp4` y `mxfp8`) sin modificar ningún valor, y mantiene el resto de componentes en bf16. Incluye el borrador de decodificación especulativa DSpark (`mtp.safetensors`), que acelera la generación manteniendo la salida greedy del modelo principal salvo en empates cercanos. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) en la información proporcionada.
+La conversión a MLX preserva la cuantización original de los expertos: NVFP4 en las capas 0-19 y MXFP8 en las 20-23, reempaquetados en formatos nativos de MLX sin pérdida de valores. Incluye el borrador de decodificación especulativa DSpark (`mtp.safetensors`), que permite acelerar la generación manteniendo la salida greedy del modelo original salvo en empates cercanos. No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, con un modo de "pensamiento" configurable mediante `reasoning_effort` (`none`, `minimal`, `low`, `medium`, `high`, `xhigh`, `max` o un valor numérico entre 0.0 y 0.99).
-- Comprensión de imágenes: el modelo responde preguntas sobre capturas de pantalla, documentos y figuras (pipeline image-text-to-text).
-- Tool calling / function calling en formato propio de Inkling, que `mlx_vlm.server` expone como `tool_calls` compatibles con OpenAI.
-- Capacidades agénticas: uso de herramientas tipo `bash` y `read`, razonamiento multi-paso y tareas de navegación web.
-- Generación y depuración de código, con resultados verificados en tareas cortas de Python.
-- Procesamiento de documentos y OCR de alta fidelidad (evaluado en OmniDocBench).
-- Contexto largo de hasta 1M tokens, útil para repositorios, expedientes o conversaciones extensas.
-- Decodificación especulativa mediante el borrador DSpark incluido.
+- Generación de texto y razonamiento con modo de pensamiento configurable (`reasoning_effort`: `none`, `minimal`, `low`, `medium`, `high` por defecto, `xhigh`, `max`, o un valor numérico entre 0.0 y 0.99).
+- Comprensión de imágenes: entrada image-text-to-text mediante codificador visual incluido.
+- Tool calling / function calling compatible con el formato OpenAI `tool_calls` a través de `inkling2-mlx`.
+- Razonamiento multi-paso y uso como agente, con el pensamiento devuelto por separado en `reasoning_content`.
+- Decodificación especulativa con el borrador DSpark incluido, que acelera la generación.
+- Contexto largo de hasta 1M tokens.
 - Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Agentes de terminal automatizados: el modelo puede recibir herramientas `bash` y `read`, planificar varios pasos y ejecutar comandos en un entorno controlado; sus resultados en Terminal-Bench 2.1 y SWE-bench lo sitúan como opción realista para automatizar tareas de mantenimiento de repositorios.
-- Resolución de incidencias sobre código en producción: con SWE-bench Verified al 79,2% (bash only) según el autor original, encaja en pipelines que reciben un issue, localizan el fichero afectado y proponen un parche revisable por un humano.
-- Análisis de capturas y documentos: gracias al codificador visual y a su rendimiento en OmniDocBench (92,8%), sirve para extraer errores de logs en imágenes, digitalizar facturas o interpretar diagramas técnicos.
-- Asistente de investigación con navegación web: su puntuación en BrowseComp (79,0% con compactación) lo hace adecuado para tareas de búsqueda y síntesis de información a partir de fuentes dispersas.
-- Procesamiento de repositorios completos en local: con 1M tokens de contexto puede cargar varios ficheros y mantener coherencia entre ellos sin fragmentar la conversación, algo útil para revisiones de arquitectura o auditorías.
-- Automatización de flujos MCP: con MCP Atlas al 82,7%, puede orquestar servidores de herramientas bajo el protocolo Model Context Protocol en entornos de escritorio.
-- Despliegue en estación de trabajo Apple: al ocupar 27,8 GB de pico con prompt de 8K tokens, cabe en un Mac de 48 GB o más, lo que permite ofrecer un servidor OpenAI-compatible local para prototipos sin depender de la nube.
+- Asistente de terminal y depuración: el modelo puede analizar capturas de pantalla de terminales o entornos de desarrollo y explicar errores, como muestra el ejemplo de la model card con `image=["screenshot.png"]`.
+- Atención al cliente automatizada: con hasta 1M tokens de contexto puede mantener conversaciones multi-turno muy largas con historial completo y documentos adjuntos.
+- Análisis de documentación técnica extensa: procesar manuales, repositorios o especificaciones de gran tamaño en una sola ventana de contexto.
+- Generación y revisión de código en pipelines: integrable mediante servidor compatible con OpenAI y tool calling para tareas de CI/CD.
+- Agentes autónomos multi-paso: el modo de razonamiento configurable y la salida separada de `reasoning_content` permiten orquestar agentes que planifican y ejecutan acciones.
+- Procesamiento de imágenes en flujo local: análisis de capturas, diagramas o documentación visual en un Mac sin depender de la nube.
+- Inferencia local en Apple Silicon: despliegue en portátiles y estaciones Mac de gama alta para privacidad de datos.
 
 ## Benchmarks y rendimiento
 
-Cifras publicadas por Thinking Machines para el modelo original (no para esta build MLX), con sus propios arneses y ajustes:
+Resultados publicados en la model card para esta conversión (GSM8K con 50 preguntas, y comparación con la implementación Transformers de Thinking Machines):
 
-| Benchmark | Inkling 2 Mini | Qwen3.8-27B | Gemma 4 31B |
+| Build | Tamano | Mismo siguiente token que el codigo original | KL vs codigo original | GSM8K (50 preguntas) | Memoria pico, prompt 8K |
+|---|---|---|---|---|---|
+| 4-8bit (esta build) | 19,5 GB + 0,64 GB | 98,4% | 0,0018 | 47/50 | 27,8 GB |
+| 4bit | 16,5 GB + 0,64 GB | 95,9% | 0,0291 | 47/50 | 23,5 GB |
+| 3bit | 14,1 GB + 0,64 GB | 95,5% | 0,0424 | 48/50 | 21,2 GB |
+| 2.5bit | 10,8 GB + 0,64 GB | 91,0% | 0,0656 | 46/50 | 18,25 GB |
+| 2bit-mixed | 9,5 GB + 0,64 GB | 90,2% | 0,1066 | 47/50 | 17,05 GB |
+
+Velocidad medida en MacBook Pro M5 Max (128 GB), 21 de noviembre de 2026, mediana de 3 ejecuciones, decodificación greedy con `reasoning=none`:
+
+| Build | Procesamiento de prompt 1K/8K/32K (tok/s) | Generación (tok/s) | Generación con DSpark (tok/s) |
 |---|---|---|---|
-| Artificial Analysis Intelligence Index v5.0 | 20,1 | 20,1 | 4,4 |
-| SWE-bench Verified (bash only) | 79,2% | 77,8% | 46,1% |
-| SWE-bench Pro v2 Hard (mini-swe-agent) | 77,9% | 73,8% | 14,2% |
-| Terminal-Bench 2.1 (pi) | 71,6% | 73,0% | 43,4% |
-| BrowseComp (with compaction) | 79,0% | 61,6% | 37,0% |
-| MCP Atlas | 82,7% | 77,3% | 54,2% |
-| MMMU Pro | 74,9% | 76,3% | 73,4% |
-| OmniDocBench v1.6 | 92,8% | 91,5% | 82,5% |
-| LongBench v2 | 66,9% | 52,3% | 52,9% |
-| ARC-AGI v1 / v2 | 84,5 / 49,3% | 87,5 / 42,4% | – |
+| 4-8bit (esta build) | 1752 / 1658 / 1208 | 36,6 | 47,1 (×1,29, bloque 3) |
+| 4bit | 1535 / 1412 / 1104 | 43,6 | 70,9 (×1,63, bloque 4) |
+| 3bit | 1386 / 1351 / 1075 | 44,4 | 75,2 (×1,69, bloque 4) |
 
-Validaciones específicas de esta build MLX, realizadas en un MacBook Pro M5 Max de 128 GB con MLX 0.32.4:
-
-| Prueba | Resultado |
-|---|---|
-| Coincidencia de siguiente token frente al código de Thinking Machines (488 posiciones) | 98,6% |
-| KL media frente al código de referencia | 0,0018 |
-| GSM8K (50 preguntas fijas, reasoning `none`, greedy) | 47/50 |
-| Tool calling (prompt con `bash` y `read`) | llamada bien formada |
-| Tareas cortas de Python | 3/3 |
-| Razonamiento `low` | 2/2 correctas tras un bloque de pensamiento |
-| Visión (cuadrado rojo y círculo azul) | correcto |
-| Memoria pico con prompt de 4K tokens | 26,9 GB |
-| Memoria pico con prompt de 8K tokens | 27,8 GB |
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/unified memory estimada: 27,8 GB de pico con prompt de 8K tokens; 26,9 GB con 4K. El repo pesa 20,2 GB más 0,64 GB del borrador DSpark.
-- Cabe en Mac con 48 GB o más de memoria unificada; en equipos con menos memoria hay que elevar el límite de memoria cableada de la GPU (`sudo sysctl iogpu.wired_limit_mb=...`) dejando varios GB libres para el sistema.
-- GPU recomendadas: Apple Silicon de la serie M (probado en M5 Max de 128 GB). No está pensado para CUDA; para A100/H100 habría que usar la versión original en Transformers.
-- No cabe en GPUs de consumo con 24 GB (RTX 4090) en esta build de 20,2 GB más estados y caché KV; requeriría una cuantización más agresiva o descarga a memoria del sistema.
-- Despliegue: `mlx-vlm` con soporte de Inkling 2 Mini desde el fork `internet-projects/inkling2-mlx` v0.1.0 (Python 3.10+), servidor OpenAI-compatible con `mlx_vlm.server`, y decodificación especulativa opcional con `load_drafter`.
-- Latencia y throughput: no disponibles en la información proporcionada; el autor solo reporta memoria pico y coincidencia de tokens.
+- Memoria pico de 27,8 GB con prompt de 8K tokens para esta build de 4-8 bits; 23,5 GB para la de 4bit; 21,2 GB para la de 3bit; 18,25 GB para la de 2.5bit; 17,05 GB para la de 2bit-mixed.
+- Requiere Apple Silicon con MLX; el ejemplo de rendimiento usa un MacBook Pro M5 Max con 128 GB de memoria unificada.
+- Cabe en Macs de gama alta con memoria unificada suficiente (a partir de 32 GB para las builds más pequeñas, 32-48 GB recomendable para la de 4-8 bits).
+- Despliegue mediante `mlx-vlm` (instalación desde main, Python 3.10+) o `internet-projects/inkling2-mlx` para tool calls.
+- Servidor: `mlx_vlm.server` con soporte de borrador DSpark (`--draft-model`, `--draft-kind dflash`, `--draft-block-size 3`).
+- Throughput de generación: 36,6 tok/s sin DSpark y 47,1 tok/s con DSpark en M5 Max para esta build; procesamiento de prompt de 1208-1752 tok/s según longitud.
+- No se indica soporte para vLLM, llama.cpp, Ollama ni TGI en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling 2 Mini (esta build MLX) | 26,4B | ~3,4B | 1M | Apache 2.0 | Hugging Face, MLX |
-| Qwen3.8-27B | 27B (denso, según denominación) | no disponible | no disponible | no disponible | no disponible |
-| Gemma 4 31B | 31B | no disponible | no disponible | no disponible | no disponible |
+| Inkling-2-Mini-MLX-4-8bit (esta ficha) | 26,4B (3,4B activos) | 1M | NVFP4/MXFP8 mixta | Apache 2.0 | MLX / Apple Silicon |
+| netprojects/Inkling-2-Mini-MLX-4bit | 26,4B (3,4B activos) | 1M | 4-bit | Apache 2.0 | MLX / Apple Silicon |
+| netprojects/Inkling-2-Mini-MLX-3bit | 26,4B (3,4B activos) | 1M | 3-bit | Apache 2.0 | MLX / Apple Silicon |
+| thinkingmachines/Inkling-2-Mini (original) | 26,4B (3,4B activos) | 1M | bf16 + NVFP4/MXFP8 | Apache 2.0 | Transformers |
 
-Los dos modelos de comparación aparecen únicamente en la tabla de benchmarks del autor original; no se dispone de sus especificaciones completas (contexto, licencia, formato) en la información proporcionada. En términos de rendimiento, Inkling 2 Mini supera a Qwen3.8-27B en SWE-bench Pro v2 Hard, BrowseComp, MCP Atlas y LongBench v2, empata en el índice de inteligencia y queda por detrás en Terminal-Bench 2.1 y MMMU Pro; frente a Gemma 4 31B la ventaja es amplia en casi todas las métricas.
+No se dispone de información sobre otros modelos comparables de otros desarrolladores en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo puede "pensar" durante mucho tiempo incluso con `reasoning_effort=none` y quedar atrapado en bucles de razonamiento largos; conviene fijar siempre `max_tokens`.
-- Riesgo de alucinación inherente a los modelos generativos; los benchmarks agénticos no garantizan corrección en dominios no cubiertos.
-- Esta build requiere un fork no publicado de MLX-VLM (`internet-projects/inkling2-mlx` v0.1.0), por lo que la estabilidad de la API y el soporte a largo plazo no están garantizados.
-- Solo funciona en Apple Silicon con MLX; no es portable a CUDA ni a otros backends sin reconversión.
-- El rendimiento en esta build puede desviarse ligeramente del original: 98,6% de coincidencia de siguiente token y KL media de 0,0018 frente al código de referencia.
-- La memoria pico de 27,8 GB obliga a Macs de 48 GB o más; en configuraciones menores hay que ajustar el límite de memoria cableada y puede haber degradación.
-- Idiomas soportados no disponibles: no se puede confirmar la calidad en castellano ni en otras lenguas distintas del inglés.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base y de las dependencias (PyTorch, torchvision, MLX-VLM) antes de desplegar en producción.
+- El modelo puede pensar en exceso incluso con `reasoning_effort="none"` y quedarse atrapado en bucles de razonamiento largos; se recomienda fijar siempre `max_tokens`.
+- La decodificación especulativa con DSpark mantiene la salida greedy del modelo salvo en empates cercanos, por lo que puede haber diferencias mínimas frente a la generación sin borrador.
+- El tamaño del bloque por defecto del borrador (8) es más lento en este modelo; se recomienda usar bloques de 3 o 4.
+- Los pesos se actualizaron el 21 de noviembre de 2026 (renombrado de tensores del loop-gate); las descargas anteriores deben repetirse.
+- Requiere MLX-VLM desde main (no en release de PyPI en el momento de la publicación); PyTorch y torchvision solo se usan en CPU por el procesador de imágenes.
+- No se dispone de información sobre sesgos conocidos, tasas de alucinación ni cobertura idiomática.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base original para uso comercial.
+- El rendimiento medido corresponde a un M5 Max con 128 GB; en hardware inferior la velocidad y la memoria disponible pueden ser limitantes, especialmente con contexto de 1M tokens.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/netprojects/Inkling-2-Mini-MLX-4-8bit
-- Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Build alternativa de 3 bits: https://huggingface.co/netprojects/Inkling-2-Mini-MLX-3bit
-- Repositorio del fork MLX-VLM: https://github.com/internet-projects/inkling2-mlx
+- Modelo base original: https://huggingface.co/thinkingmachines/Inkling-2-Mini
+- Build 3bit: https://huggingface.co/netprojects/Inkling-2-Mini-MLX-3bit
+- Build 2.5bit: https://huggingface.co/netprojects/Inkling-2-Mini-MLX-2.5bit
+- Build 2bit-mixed: https://huggingface.co/netprojects/Inkling-2-Mini-MLX-2bit-mixed
+- Build 4bit: https://huggingface.co/netprojects/Inkling-2-Mini-MLX-4bit
+- Repositorio inkling2-mlx (tool calls): https://github.com/internet-projects/inkling2-mlx
+- MLX-VLM (fork con soporte Inkling): https://github.com/Neywa-Labs/mlx-vlm
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

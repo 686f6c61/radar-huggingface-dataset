@@ -53,6 +53,13 @@
   "removal_pattern": null,
   "renamed_to": "Hooshaai/qwen-2.5-0.5b-factorised-matrix-state-wikitext2",
   "renamed_at": "2026-11-14T08:47:46.493Z",
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Causal Language Modeling",
+      "dataset": "WikiText-2 (wikitext-2-raw-v1)",
+      "metric": "WikiText-2 Post-KD Perplexity",
+      "value": 343.56
+    }
+  ],
   "sources": []
 }

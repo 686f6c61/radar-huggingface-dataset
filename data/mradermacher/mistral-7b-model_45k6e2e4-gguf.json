@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Mistral-7B-model_45k6e2e4-GGUF",
+  "slug": "mradermacher-mistral-7b-model_45k6e2e4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-7B-model_45k6e2e4-GGUF",
+  "created_at": "2025-09-05T09:05:50.000Z",
+  "updated_at": "2026-11-24T00:32:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:pankajmathur/orca_mini_v1_dataset",
+    "dataset:pankajmathur/WizardLM_Orca",
+    "dataset:pankajmathur/dolly-v2_orca",
+    "dataset:pankajmathur/alpaca_orca",
+    "base_model:pankajmathur/Mistral-7B-model_45k6e2e4",
+    "base_model:quantized:pankajmathur/Mistral-7B-model_45k6e2e4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 331,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929820032,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "pankajmathur/Mistral-7B-model_45k6e2e4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

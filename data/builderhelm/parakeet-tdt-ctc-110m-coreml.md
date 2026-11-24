@@ -2,72 +2,73 @@
 
 ## Resumen
 
-Parakeet-TDT-CTC-110M-CoreML es una conversión a CoreML del modelo de reconocimiento automático del habla (ASR) `nvidia/parakeet-tdt-ctc-110m`, publicada por BuilderHelm AI. El modelo original de NVIDIA es un sistema híbrido que combina un encoder FastConformer compartido con dos cabezas de decodificación: una cabeza TDT (Token-and-Duration Transducer) orientada a transcripción de alta calidad con marcas temporales por token, y una cabeza CTC que produce transcripciones greedy y log-probabilidades cada 80 ms, útil para detección de palabras clave y alineamiento. La conversión a CoreML permite ejecutar el modelo íntegramente en dispositivo (on-device) sobre Apple Silicon, aprovechando la Neural Engine y la CPU a través de Swift y Accelerate.
+Parakeet-TDT-CTC-110M-CoreML es la conversión a CoreML del modelo de reconocimiento automático de voz (ASR) `nvidia/parakeet-tdt-ctc-110m`, publicada por BuilderHelm AI. El modelo original de NVIDIA es una arquitectura híbrida que comparte un encoder FastConformer y expone dos cabeceras de decodificación: una TDT (Token-and-Duration Transducer) orientada a transcripción de alta calidad con marcas temporales por token, y una CTC que produce una transcripción greedy junto con log-probabilidades cada 80 ms, útil para keyword spotting y alineamiento.
 
-El interés de esta versión radica en su tamaño reducido (138 MB en total) y en su rendimiento sobre hardware de Apple: según el autor, alcanza 860× tiempo real en clips cortos y 791× en audio largo sobre un M5, con una latencia mediana de 13,1 ms por clip corto y un consumo de memoria pico de 210 MB. Frente a otras conversiones CoreML del mismo modelo base, como la de FluidInference, ofrece mayor precisión en clips cortos y devuelve simultáneamente las salidas TDT y CTC en una sola pasada del encoder.
+La conversión está pensada para inferencia local en Apple Silicon, aprovechando el Neural Engine para el encoder cuantizado a int8 y la CPU (Swift/Accelerate) para el decodificador TDT en float32. El paquete completo ocupa 138 MB, lo que lo hace adecuado para aplicaciones de escritorio y móviles que necesitan transcripción en el dispositivo sin enviar audio a la nube.
 
-El modelo está pensado para aplicaciones macOS e iOS que requieran transcripción local, sin conexión y con baja latencia, como dictado, subtitulado en tiempo real o detección de palabras clave. Su licencia CC-BY-4.0 permite uso comercial con atribución, y su integración se realiza mediante el paquete Swift BuilderHelmAudio o descargando directamente los artefactos CoreML.
+Su relevancia actual radica en que ofrece una alternativa ligera y precisa para ASR en inglés sobre macOS e iOS, con velocidades de decodificación muy superiores al tiempo real (860× en clips cortos) y una latencia mediana de 13,1 ms por clip corto en Apple M5, manteniendo una calidad competitiva frente a otras conversiones CoreML del mismo modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: encoder FastConformer compartido + cabeza TDT (Transducer con predicción LSTM y joint) + cabeza CTC |
-| Parametros totales | 110M (modelo base); pesos CoreML: encoder int8 112,7 MB + decoder TDT float32 19,1 MB + preprocesador 5,7 MB |
+| Arquitectura | Híbrida: encoder FastConformer compartido + cabecera TDT (transducer) + cabecera CTC |
+| Parametros totales | 110M (modelo base); paquete CoreML de 138 MB |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (procesa audio; política de audio largo configurable en `config.json`) |
-| Tipos de cuantizacion | int8 (encoder en Neural Engine) y float32 (decoder TDT en CPU); pesos CoreML `.mlpackage` |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | CoreML (`.mlpackage`), `TdtDecoder.bin`, `vocab.json`, `config.json`; runtime Swift |
+| Longitud de contexto | no disponible (política de audio largo configurable en `config.json`) |
+| Tipos de cuantizacion | Encoder int8 (Neural Engine); decodificador TDT float32 (CPU); preprocesador float32 |
+| Idiomas soportados | Inglés (en) |
+| Licencia | CC BY 4.0 |
+| Formato de pesos | CoreML (`.mlmodelc` / `.bin`), vocabulario `vocab.json` (1.024 tokens) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Parakeet de NVIDIA: un encoder FastConformer (variante eficiente de Conformer con atención subsampleada) que procesa el espectrograma log-mel de entrada y alimenta dos cabezas. La cabeza TDT es un Transducer con red de predicción LSTM y una red conjunta que predice tanto el token como su duración, lo que permite obtener marcas temporales por token y mejorar la calidad de transcripción. La cabeza CTC comparte el mismo encoder y produce log-probabilidades cada 80 ms, lo que facilita el alineamiento y la detección de palabras clave. En esta conversión, el encoder se ejecuta en int8 sobre la Neural Engine, mientras que el decoder TDT se ejecuta en float32 sobre CPU mediante Swift/Accelerate.
+El modelo base es `nvidia/parakeet-tdt-ctc-110m`, un ASR híbrido con encoder FastConformer (una variante eficiente del Conformer con convoluciones depthwise y atención subsampled) que comparte representaciones entre dos cabeceras. La cabecera TDT (Token-and-Duration Transducer) predice simultáneamente tokens y duraciones, lo que permite transcripciones de alta calidad con timestamps por token; la cabecera CTC produce una salida greedy con log-probabilidades cada 80 ms, adecuada para tareas de alineamiento y detección de palabras clave. En esta conversión CoreML, el encoder se ejecuta en int8 sobre el Neural Engine y el decodificador TDT (red de predicción LSTM y joint) en float32 sobre CPU vía Swift/Accelerate.
 
-Los datos de entrenamiento del modelo original no se detallan en la información proporcionada, aunque la model card lista los datasets asociados: LibriSpeech, Fisher Corpus, Common Voice 8.0, National Singapore Corpus Part 1, VCTK, VoxPopuli, Europarl y Multilingual LibriSpeech. No se especifica el número de tokens de audio, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La innovación principal de esta versión es la conversión a CoreML con un encoder compartido que produce ambas salidas en una sola pasada, junto con una política de audio largo y contratos de E/S definidos en `config.json`.
+Los datos de entrenamiento del modelo original (según la model card) incluyen LibriSpeech, Fisher Corpus, Common Voice 8.0, National Singapore Corpus Part 1, VCTK, VoxPopuli, Europarl y Multilingual LibriSpeech. No se dispone en la información proporcionada del número exacto de horas de audio, composición detallada del dataset ni del pipeline de RLHF/DPO. La innovación principal de esta conversión es la ejecución simultánea de ambas cabeceras en una sola pasada del encoder, junto con una política de audio largo configurable y contratos de E/S documentados en `config.json`.
 
 ## Capacidades
 
-- Reconocimiento automático del habla en inglés con dos salidas simultáneas: transcripción TDT (con tiempos por token) y transcripción CTC (greedy con log-probabilidades cada 80 ms).
-- Detección de palabras clave (keyword spotting) a partir de las log-probabilidades CTC; el autor reporta un 89,8% de recall en Earnings22 con una falsa alarma por clip.
-- Alineamiento temporal mediante las marcas de tiempo del decoder TDT.
-- Procesamiento de audio largo con una política configurable de ventanas y chunks.
-- Ejecución on-device en Apple Silicon (Neural Engine + CPU), sin conexión a red.
-- Integración en apps iOS/iPadOS/macOS mediante el paquete Swift BuilderHelmAudio.
-- No soporta tool calling, function calling, agentes, visión, audio de entrada distinto de voz ni modos de razonamiento; es un modelo exclusivamente ASR.
+- Reconocimiento automático de voz en inglés con transcripción de texto.
+- Salida dual: transcripción TDT (con marcas temporales por token) y transcripción CTC con log-probabilidades cada 80 ms.
+- Keyword spotting (detección de palabras clave) a partir de la salida CTC, con recall del 89,8% en Earnings22 a 1 falsa alarma por clip.
+- Alineamiento temporal y timestamps por token mediante la cabecera TDT.
+- Procesamiento de audio largo mediante política configurable (chunking) definida en `config.json`.
+- Ejecución en dispositivo (on-device) en Apple Silicon, sin dependencia de servicios en la nube.
+- No dispone de soporte de tool calling, function calling, agentes ni razonamiento multi-paso (es un modelo puramente ASR).
+- Capacidades multilingües limitadas al inglés.
 
 ## Casos de uso
 
-- Dictado por voz en aplicaciones macOS e iOS: el modelo transcribe en local con una latencia mediana de 13,1 ms por clip corto, lo que permite retroalimentación en tiempo casi real sin enviar audio a la nube.
-- Subtitulado y transcripción de reuniones: gracias al procesamiento de audio largo (791× tiempo real y 2,22% WER en audio largo según el autor), puede transcribir grabaciones de decenas de minutos en segundos sobre un Mac con Apple Silicon.
-- Detección de palabras clave en asistentes de voz: las log-probabilidades CTC cada 80 ms y el 89,8% de recall en Earnings22 lo hacen adecuado para activar comandos o alertas sin transcribir todo el audio.
-- Indexación y búsqueda de archivos de audio: la transcripción con marcas temporales TDT permite generar índices alineados con el audio para búsqueda posterior en bibliotecas de podcasts o grabaciones.
-- Accesibilidad: subtitulado en vivo de conversaciones o contenido multimedia en dispositivos Apple, con ejecución local que preserva la privacidad del audio.
-- Aplicaciones de notas de voz: transcripción automática de memorandos y mensajes de voz dentro de apps iOS, usando BuilderHelmAudio para descargar y verificar el modelo en el dispositivo.
-- Procesamiento por lotes en estaciones de trabajo Mac: transcripción masiva de clips (262 clips de Common Voice a 860× tiempo real) para pipelines de datos o evaluación de calidad.
+- Transcripción de reuniones y notas de voz en macOS: la app puede procesar clips cortos con latencia mediana de 13,1 ms y RTFx de 860×, transcribiendo en tiempo real sin enviar audio a servidores externos.
+- Dictado por voz en aplicaciones de escritorio: el paquete de 138 MB y el consumo de memoria de 210 MB en clips cortos permiten integrarlo en apps nativas de macOS con huella mínima.
+- Subtitulado y post-producción de audio largo: con RTFx de 791× en audio largo y WER del 2,22% en la prueba de audio largo, es adecuado para generar transcripciones con timestamps de grabaciones extensas.
+- Keyword spotting en asistentes de voz: la salida CTC con log-probabilidades cada 80 ms y el recall del 89,8% permiten detectar palabras de activación o términos concretos con baja tasa de falsos positivos.
+- Indexación y búsqueda de contenido hablado: la transcripción con marcas temporales por token facilita alinear texto y audio para búsqueda semántica sobre archivos de audio.
+- Aplicaciones iOS on-device: mediante BuilderHelmAudio, puede integrarse en apps iOS 18+ para transcripción local, preservando privacidad y evitando costes de API.
+- Análisis de llamadas y entrevistas: la combinación de TDT (precisión) y CTC (alineamiento) permite generar transcripciones y metadatos temporales para analítica posterior.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados, `verified: false`):
+Resultados declarados por el autor (no verificados):
 
-| Dataset | Metrica | TDT | CTC |
+| Dataset / prueba | Métrica | TDT | CTC |
 |---|---|---|---|
 | LibriSpeech clean (test) | WER | 2,46% | 2,97% |
 | LibriSpeech other (test) | WER | 5,27% | 5,88% |
 | Earnings22 contextual subset (772 clips) | WER | 16,18% | 17,62% |
+| Common Voice / audio largo | WER | 7,59% / 2,22% | no disponible |
+| Earnings22 keyword recall (1 FA/clip) | Recall | 89,8% | no disponible |
 
-Rendimiento en Apple M5, macOS 27.2 (mediana de 3 ejecuciones, según el autor):
+Rendimiento en Apple M5, macOS 27.2 (mediana de 3 ejecuciones):
 
-| Metrica | Valor |
+| Métrica | Valor |
 |---|---|
-| WER Common Voice / audio largo (TDT) | 7,59% / 2,22% |
-| Keyword recall (Earnings22, 1 falsa alarma por clip) | 89,8% |
-| RTFx clips cortos / audio largo (TDT + CTC) | 860× / 791× tiempo real |
+| RTFx, clips cortos / audio largo (TDT + CTC) | 860× / 791× tiempo real |
 | Latencia por clip corto (mediana / p95) | 13,1 / 32,1 ms |
-| Memoria pico clips cortos / audio largo | 210 / 120 MB |
+| Memoria pico, clips cortos / audio largo | 210 / 120 MB |
 
-Comparativa con FluidInference/parakeet-tdt-ctc-110m-coreml en el mismo Mac (según el autor):
+Comparativa con `FluidInference/parakeet-tdt-ctc-110m-coreml` en el mismo Mac y audio:
 
 | Carga | Este modelo | FluidInference TDT |
 |---|---|---|
@@ -77,41 +78,44 @@ Comparativa con FluidInference/parakeet-tdt-ctc-110m-coreml en el mismo Mac (seg
 
 ## Requisitos de hardware
 
-- Hardware: Apple Silicon (probado en M5 y iPhone 13); requiere macOS 15+ o iOS 18+.
-- VRAM/RAM: memoria pico de 210 MB en clips cortos y 120 MB en audio largo, según el autor.
-- GPU: no usa GPU dedicada; emplea la Neural Engine para el encoder int8 y la CPU (Swift/Accelerate) para el decoder TDT float32.
-- Cabe en dispositivos consumer Apple: sí, en Mac con Apple Silicon y en iPhone/iPad compatibles (iOS 18+).
-- Despliegue: CoreML mediante el paquete Swift BuilderHelmAudio; descarga con Hugging Face CLI o archivo portable de 124 MB. No aplica vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
-- Latencia y throughput: 13,1 ms de mediana por clip corto, 860× tiempo real en clips cortos y 791× en audio largo (datos del autor en M5).
+- VRAM/memoria: no aplica (inferencia en Apple Silicon); memoria pico de 210 MB en clips cortos y 120 MB en audio largo.
+- Hardware: Apple Silicon (Neural Engine para el encoder int8, CPU para el decodificador TDT).
+- Sistemas: macOS 15+ (Sequoia o superior) o iOS 18+ mediante BuilderHelmAudio.
+- No requiere GPU dedicada (A100, H100, RTX 4090) ni CUDA; no está pensado para x86.
+- Despliegue: CoreML nativo; no compatible directamente con vLLM, llama.cpp, Ollama o TGI (son stacks para LLM, no para este ASR CoreML).
+- Latencia: 13,1 ms mediana y 32,1 ms p95 por clip corto; throughput de 860× en clips cortos y 791× en audio largo.
+- Tamaño del paquete: 138 MB (preprocesador 5,7 MB, encoder 112,7 MB, decodificador TDT 19,1 MB, vocab 9 KB, config 5 KB).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto/audio | WER LibriSpeech clean | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto / audio | WER LibriSpeech clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BuilderHelm/Parakeet-TDT-CTC-110M-CoreML | 110M | Audio largo configurable | 2,46% (TDT) | CC-BY-4.0 | CoreML, Hugging Face |
-| FluidInference/parakeet-tdt-ctc-110m-coreml | 110M (mismo base) | Audio largo | No disponible en la información | no disponible | CoreML, Hugging Face |
-| BuilderHelm/Parakeet-CTC-110M-CoreML | 110M (mismo encoder, sin TDT) | no disponible | no disponible | no disponible | CoreML, Hugging Face |
-| nvidia/parakeet-tdt-ctc-110m (base) | 110M | no disponible | no disponible | no disponible | NeMo, Hugging Face |
+| Parakeet-TDT-CTC-110M-CoreML (este) | 110M | audio largo configurable | 2,46% (TDT) / 2,97% (CTC) | CC BY 4.0 | CoreML, Apple Silicon |
+| FluidInference/parakeet-tdt-ctc-110m-coreml | 110M (base) | audio largo | 8,21% (Common Voice, TDT) | no disponible | CoreML, Apple Silicon |
+| BuilderHelm/Parakeet-CTC-110M-CoreML | 110M (base) | no disponible | no disponible | no disponible | CoreML, solo CTC |
+| nvidia/parakeet-tdt-ctc-110m (base) | 110M | no disponible | no disponible | no disponible | NeMo / PyTorch |
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés; no hay capacidades multilingües declaradas.
-- Los resultados de benchmarks están declarados por el autor y marcados como no verificados (`verified: false`); deben tratarse con cautela.
-- Dependencia de hardware Apple: requiere Apple Silicon, macOS 15+ o iOS 18+, y el toolchain Swift 6 (Xcode 16+); no es portable a otras plataformas sin reconversión.
-- El WER en dominios difíciles es elevado: 16,18% (TDT) en Earnings22, lo que limita su uso en audio con jerga, ruido o acentos no representados.
-- Riesgo de errores de transcripción y de detección de palabras clave (falsas alarmas y omisiones), inherente a los sistemas ASR.
-- No se detallan sesgos demográficos ni de acento en la información proporcionada; la evaluación se limita a los datasets listados.
-- Licencia CC-BY-4.0: permite uso comercial con atribución; es necesario cumplir los términos de atribución y no se ofrecen garantías.
-- No mezclar archivos de la versión 1.0.0 con el runtime 1.1.0, según advierte el autor.
-- No dispone de tool calling, agentes ni razonamiento; su uso está acotado a ASR, alineamiento y keyword spotting.
+- Solo soporta inglés; no cubre otros idiomas.
+- Los resultados de benchmarks están declarados por el autor y marcados como no verificados (`verified: false`); conviene validarlos en el propio hardware y dominio.
+- El WER en Earnings22 (16,18% TDT) es notablemente superior al de LibriSpeech, lo que refleja degradación en audio con ruido, acentos o vocabulario específico de dominio.
+- Riesgo de alucinación y errores en nombres propios, siglas y terminología técnica; se recomienda revisión humana en producción.
+- En audio largo, FluidInference es más rápido (1.120× frente a 791×), aunque este modelo es más preciso; hay que valorar el trade-off.
+- Dependencia exclusiva de Apple Silicon y macOS 15+/iOS 18+; no ejecutable en Linux, Windows o GPU NVIDIA.
+- Licencia CC BY 4.0: permite uso comercial con atribución; hay que revisar los términos exactos de la licencia del modelo base de NVIDIA para cumplimiento.
+- No dispone de tool calling, agentes ni razonamiento; su uso está limitado a ASR y tareas derivadas (keyword spotting, alineamiento).
+- La model card no documenta sesgos específicos ni composición detallada del dataset de entrenamiento; no disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Parakeet-TDT-CTC-110M-CoreML
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-ctc-110m
 - Variante solo CTC: https://huggingface.co/BuilderHelm/Parakeet-CTC-110M-CoreML
-- Conversión CoreML alternativa: https://huggingface.co/FluidInference/parakeet-tdt-ctc-110m-coreml
-- Paquete Swift BuilderHelmAudio: https://github.com/BuilderHelm/BuilderHelmAudio
-- Comparativa de evaluación: https://huggingface.co/BuilderHelm/Parakeet-TDT-CTC-110M-CoreML/blob/main/evaluation/THREE-WAY-COMPARISON.md
-- Benchmarks completos: https://huggingface.co/BuilderHelm/Parakeet-TDT-CTC-110M-CoreML/blob/main/evaluation/ALL-BENCHMARKS.md
-- Archivo portable v1.1.0: https://huggingface.co/BuilderHelm/Parakeet-TDT-CTC-110M-CoreML/resolve/v1.1.0/releases/parakeet-tdt-ctc-110m-coreml-v1.1.0-portable.zip
+- Conversión comparable: https://huggingface.co/FluidInference/parakeet-tdt-ctc-110m-coreml
+- Repositorio GitHub: https://github.com/BuilderHelm/BuilderHelmAudio
+- Perfil del autor: https://huggingface.co/BuilderHelm
+- Producto ZenVoice: https://getzenvoice.com
+- Descarga ZenVoice para Mac: https://getzenvoice.com/download
+- Evaluación comparativa: `evaluation/THREE-WAY-COMPARISON.md` (en el repositorio del modelo)
+- Benchmarks completos: `evaluation/ALL-BENCHMARKS.md` (en el repositorio del modelo)

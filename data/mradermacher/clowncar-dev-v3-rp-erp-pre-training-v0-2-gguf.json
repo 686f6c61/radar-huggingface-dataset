@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Clowncar-dev-v3-RP-ERP-pre-training-v0.2-GGUF",
+  "slug": "mradermacher-clowncar-dev-v3-rp-erp-pre-training-v0-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Clowncar-dev-v3-RP-ERP-pre-training-v0.2-GGUF",
+  "created_at": "2025-09-05T10:23:30.000Z",
+  "updated_at": "2026-11-24T00:32:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:SuperbEmphasis/Clowncar-dev-v3-RP-ERP-pre-training-v0.2",
+    "base_model:quantized:SuperbEmphasis/Clowncar-dev-v3-RP-ERP-pre-training-v0.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 38672716800,
+  "parameters_human": "38.67B",
+  "storage_bytes": 263731134144,
+  "storage_human": "263.7 GB",
+  "context_length": 1024000,
+  "base_model": "SuperbEmphasis/Clowncar-dev-v3-RP-ERP-pre-training-v0.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

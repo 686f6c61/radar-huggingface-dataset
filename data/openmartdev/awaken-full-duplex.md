@@ -2,101 +2,100 @@
 
 ## Resumen
 
-Awaken Full Duplex es un modelo de voz a voz (audio-to-audio) de tipo full-duplex desarrollado por openmartdev. Parte del checkpoint semidual Fun-AudioLLM/Fun-Audio-Chat-8B y le ensena a escuchar y hablar simultaneamente, de modo que puede emitir retroalimentacion verbal (backchannels), interrumpir y ceder el turno sin depender de un detector de actividad de voz ni de un esquema rigido de turnos. El modelo resuelve un problema concreto: los modelos de dialogo hablado abiertos pierden capacidad de razonamiento y de fundamentacion cuando se les entrena para full-duplex, y los datos conversacionales naturales con solapamiento son escasos.
+Awaken Full Duplex es un modelo de voz a voz (speech-to-speech) en tiempo completo (full-duplex) desarrollado por openmartdev, construido como un ajuste fino del modelo semiduplex Fun-Audio-Chat-8B de FunAudioLLM. Su objetivo es permitir conversaciones habladas donde el modelo puede escuchar y hablar simultáneamente, gestionando solapamientos, interrupciones y turnos de palabra de forma natural, sin depender de un detector de actividad de voz ni de turnos estrictos.
 
-La propuesta tecnica es una receta de entrenamiento eficiente en tres fases (dos etapas de SFT y una etapa corta de GRPO) sobre el backbone Qwen3-8B, con una entrada de audio de usuario en streaming a 24 kHz procesada por un encoder causal estilo Whisper y una salida compuesta por tokens de texto mas cinco tokens de codec por trama, renderizados por el decodificador de flujo CosyVoice3 y el vocoder HiFT. El modelo tiene 9.424.246.784 parametros segun los pesos en safetensors y una ventana de atencion de 2 s en el encoder.
+La relevancia del modelo reside en su enfoque de adaptación eficiente: en lugar de un preentrenamiento a gran escala con audio conversacional duplex (escaso y costoso), parte de un checkpoint semiduplex y aplica dos etapas de supervisión (SFT) más una etapa corta de aprendizaje por refuerzo (GRPO) centrada en las retroalimentaciones conversacionales (backchannels). Según la model card, esto eleva la tasa de acierto de backchannel del 1 % al 63 % mientras conserva gran parte de las capacidades del modelo base.
 
-Es relevante ahora porque demuestra que se puede obtener comportamiento full-duplex creible (63% de acierto en backchannels, 90% en acertijos logicos hablados) sin preentrenamiento duplex a gran escala y conservando casi intactas las capacidades del modelo base (61% en sondas de fundamentacion frente al 66% del base semidual). El modelo solo soporta ingles y se distribuye con licencia Apache 2.0.
+Arquitectura: backbone Qwen3-8B con una posición por trama de 200 ms, entrada de audio de usuario en streaming a 24 kHz mediante un codificador causal estilo Whisper con ventana de atención de 2 s, y salida de tokens de texto más 5 tokens de códec por trama renderizados por el decodificador de flujo CosyVoice3 y el vocoder HiFT. El modelo tiene 9.424.246.784 parámetros y está disponible únicamente en inglés bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (backbone Qwen3-8B) con encoder de audio causal estilo Whisper y decodificador de voz CosyVoice3 + vocoder HiFT |
-| Parametros totales | 9.424.246.784 (~8B declarados en la model card) |
+| Arquitectura | Backbone transformer Qwen3-8B con fusión multimodal (audio/texto), codificador de audio causal estilo Whisper, decodificador de audio CosyVoice3 + vocoder HiFT |
+| Parametros totales | 9.424.246.784 (~8B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible; ventana de atencion del encoder de audio de 2 s y ventanas de conversacion de hasta 180 s en el entrenamiento |
+| Longitud de contexto | Ventana de atención del codificador de audio de 2 s; ventanas de conversación de hasta 180 s en entrenamiento; contexto de texto del backbone no especificado |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 56,6 GB); codec de voz descargado aparte desde FunAudioLLM/Fun-CosyVoice3-0.5B-2512 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema audio-audio con backbone transformer Qwen3-8B que procesa una posicion por trama de 200 ms. La entrada es audio de usuario en streaming a 24 kHz, codificado por un encoder causal estilo Whisper con ventana de atencion de 2 s. Las caracteristicas de usuario, los embeddings de texto y los embeddings de tokens de audio entran en una capa de fusion compartida y en el backbone transformer, que predice el siguiente token de texto y condiciona el decodificador de audio. La salida son tokens de texto mas cinco tokens de codec por trama, renderizados por el decodificador de flujo CosyVoice3 y el vocoder HiFT. No hay turnos ni detector de actividad de voz: la interaccion es full-duplex por diseno.
+Awaken parte del checkpoint semiduplex Fun-Audio-Chat-8B, cuyo backbone es Qwen3-8B. La entrada es audio de usuario en streaming a 24 kHz procesado por un codificador causal estilo Whisper con ventana de atención de 2 s; cada trama de 200 ms se representa como una posición. La salida combina tokens de texto y 5 tokens de códec por trama, renderizados por el decodificador de flujo CosyVoice3 y el vocoder HiFT. La interacción es full-duplex: no hay turnos ni detector de actividad de voz.
 
-El entrenamiento parte de Fun-Audio-Chat-8B (semidual) y consta de tres fases. La etapa 1 de SFT aprende el patron de entrada en streaming y objetivos alineados de texto y voz sobre 64.000 conversaciones compuestas con ventanas de hasta 180 s. La etapa 2 de SFT mezcla al 50/50 los pesos de la etapa 1 con el checkpoint base y continua sobre 100.132 registros con replay de los datos de interaccion. La etapa final de GRPO mejora el timing de los backchannels a partir de muestras del propio modelo en ventanas conversacionales. No hay preentrenamiento duplex a gran escala; la innovacion es la composicion de conversaciones con timing explicito, solapamiento e interrupciones, junto con el uso de RL para afinar la toma de turno.
+El entrenamiento consta de tres fases: (1) SFT etapa 1, que aprende el patrón de entrada en streaming y objetivos alineados de texto y voz sobre 64.000 conversaciones compuestas con ventanas de hasta 180 s; (2) SFT etapa 2, que mezcla al 50/50 los pesos de la etapa 1 con el checkpoint base y continúa sobre 100.132 registros con replay de datos de interacción; (3) GRPO, que mejora la temporización de los backchannels a partir de muestras propias del modelo en ventanas conversacionales. No hay preentrenamiento duplex a gran escala.
 
 ## Capacidades
 
-- Dialogo hablado full-duplex: escucha y habla a la vez, sin detector de actividad de voz ni turnos predefinidos.
-- Backchannels: emite senales de retroalimentacion verbal (por ejemplo, asentimientos) con timing aprendido; la etapa GRPO eleva la tasa de acierto del 1% al 63% y toma el turno solo en el 3% de los items.
-- Interrupciones y cesion de turno: gestiona solapamiento y cambios de turno de forma natural.
-- Generacion de voz: sintesis de voz a partir de tokens de codec con decodificador CosyVoice3 e HiFT, con soporte de prompts de voz a partir de un clip de referencia de 3-10 s.
-- Razonamiento hablado: resuelve el 90% de acertijos logicos hablados en la evaluacion del autor.
-- Fundamentacion (groundedness): pasa el 61% de las sondas, cerca del 66% del modelo base semidual.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: solo ingles.
-- Capacidades especiales: modo streaming de audio, servidor WebSocket en vivo y modo offline con pista de usuario grabada.
+- Conversación hablada full-duplex: escucha y habla simultáneamente, con solapamiento e interrupciones.
+- Gestión de turnos de palabra sin detector de actividad de voz.
+- Generación de backchannels (señales de escucha activa) con temporización aprendida vía GRPO.
+- Respuestas fundamentadas (groundedness) en conversación hablada.
+- Resolución de acertijos lógicos hablados.
+- Respuesta a preguntas habladas (spoken question answering).
+- Salida conjunta de texto y voz (tokens de texto más tokens de códec de audio).
+- Prompts de voz personalizados a partir de un clip de referencia de 3-10 s.
+- Servidor en vivo vía WebSocket y modo offline con pista de usuario grabada.
+- No se ha documentado soporte de tool calling, function calling ni razonamiento multi-paso en agente.
 
 ## Casos de uso
 
-- Asistentes de voz en tiempo real: el modelo puede mantener una conversacion hablada continua sin segmentacion por turnos, lo que encaja en interfaces de asistente donde el usuario interrumpe o habla encima; el servidor WebSocket incluido (awaken-server) facilita la integracion.
-- Atencion al cliente telefonica: la capacidad de backchannel y de cesion de turno permite conversaciones mas naturales en call centers automatizados, con el modelo emitiendo confirmaciones mientras el cliente habla.
-- Pruebas de concepto de agentes conversacionales: al conservar el 61% de fundamentacion y el 90% en acertijos logicos hablados, sirve para prototipos donde se necesita razonamiento hablado y no solo respuestas reflejas.
-- Evaluacion de interaccion humano-maquina: el modo offline (awaken-offline) genera un estereo.wav con la pista del modelo y la del usuario, util para analizar solapamientos y latencia en laboratorio.
-- Clonacion y personalizacion de voz: la herramienta awaken-voice crea prompts de voz a partir de un clip de 3-10 s del hablante, lo que permite adaptar la voz del asistente a una marca o personaje con derechos claros.
-- Investigacion en dialogo hablado: la receta de entrenamiento y los datos compuestos permiten reproducir y extender el estudio de full-duplex sin preentrenamiento masivo, usando el codigo publicado en GitHub.
-- Demos interactivas en web: el servidor WebSocket con soporte SSL (--ssl-dir) permite desplegar una demo de voz full-duplex en navegador para validacion con usuarios.
+- Asistentes de voz conversacionales en tiempo real: el modelo puede mantener diálogo hablado con solapamiento e interrupciones, adecuado para interfaces manos libres donde el usuario necesita interrumpir sin esperar turnos.
+- Atención al cliente telefónica automatizada: la capacidad full-duplex permite reconocer y responder a señales de escucha activa del cliente, mejorando la naturalidad percibida en llamadas.
+- Sistemas de acompañamiento conversacional (por ejemplo, asistencia doméstica o educativa): el modelo puede escuchar y emitir retroalimentación mientras el usuario habla, sin cortar el flujo.
+- Evaluación de modelos de diálogo hablado: sirve como referencia open source para probar protocolos full-duplex y métricas de backchannel y groundedness.
+- Investigación en interacción hablada: permite experimentar con temporización de turnos, solapamiento e interrupciones sobre una base de 8B parámetros con licencia Apache 2.0.
+- Prototipos de voz con identidad personalizada: mediante `awaken-voice` se puede generar un prompt de voz a partir de un clip de referencia para adaptar la voz de salida en demos.
+- Despliegue offline para transcripción y generación de audio: el modo `awaken-offline` produce `stereo.wav`, `transcript.txt` y `tokens.pt` a partir de una pista de usuario grabada, útil para pipelines de evaluación por lotes.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Awaken Full Duplex | Base semidual (Fun-Audio-Chat-8B) | Modelos full-duplex abiertos |
+| Metrica | Awaken Full Duplex | Base semiduplex (Fun-Audio-Chat-8B) | Modelos full-duplex abiertos |
 |---|---|---|---|
-| Tasa de acierto en backchannels | 63% | no disponible | no disponible |
-| Toma de turno en backchannels | 3% | no disponible | no disponible |
-| Sondas de fundamentacion | 61% | 66% | 14-35% |
-| Acertijos logicos hablados | 90% | no disponible | 30-40% |
+| Tasa de acierto de backchannel (pass rate) | 63 % | no disponible | no disponible |
+| Toma de palabra indebida (floor-taking) | 3 % | no disponible | no disponible |
+| Sondas de groundedness superadas | 61 % | 66 % | 14-35 % |
+| Acertijos lógicos hablados resueltos | 90 % | no disponible | 30-40 % |
 
-Los datos proceden de la model card del autor. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de texto en la informacion disponible.
+Los datos proceden de la model card del autor. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el repo de pesos ocupa 56,6 GB, por lo que en precision completa se requiere al menos una GPU de 80 GB (A100/H100) o reparto multi-GPU. No se documentan cuantizaciones.
-- GPU recomendadas: NVIDIA con CUDA; se menciona TensorRT 10 y se ha probado con PyTorch 2.8 y CUDA 12.8. No se especifican modelos concretos de GPU mas alla de "NVIDIA GPU (CUDA)".
-- Cabe en GPU de consumo: no disponible; el tamano del repo y la ausencia de cuantizaciones documentadas hacen improbable que quepa en GPUs de consumo de 24 GB sin cuantizar.
-- Opciones de despliegue: servidor WebSocket propio (awaken-server), modo offline (awaken-offline), API de Python (awaken_chat.load_model, Decoders, DuplexSession). Se usa TensorRT para construir el motor en la primera ejecucion (unos minutos por maquina). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repo ocupa 56,6 GB en safetensors, por lo que la inferencia en precisión completa requiere GPUs de clase A100/H100 (80 GB) o particionado. No se documentan cuantizaciones.
+- GPU recomendadas: NVIDIA con CUDA; el autor exige TensorRT 10 y PyTorch >= 2.7 (probado con 2.8 y CUDA 12.8). No se especifican modelos concretos de GPU.
+- Cabe en GPU de consumo: no confirmado; por el tamaño del checkpoint (~8B parámetros y repo de 56,6 GB) no es viable en GPUs de consumo sin cuantización, y no se documentan formatos GGUF.
+- Opciones de despliegue: servidor propio `awaken-server` (WebSocket, una conversación a la vez), modo offline `awaken-offline`, y uso desde Python con `load_model`, `Decoders`, `DuplexSession` y `system_prompt`. El motor TensorRT se compila una vez por máquina en el primer uso (varios minutos).
+- Latencia y throughput: no disponibles. El modelo procesa tramas de 200 ms y usa una ventana de atención de 2 s en el codificador; no se publican cifras de latencia extremo a extremo ni de concurrencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Full-duplex | Idiomas | Licencia | Fundamento / logica hablada |
-|---|---|---|---|---|---|---|
-| Awaken Full Duplex | ~8B (9,42B reales) | ventana de audio de 2 s; ventanas de entrenamiento de hasta 180 s | Si | Ingles | Apache 2.0 | 61% / 90% |
-| Fun-Audio-Chat-8B (base) | ~8B | no disponible | No (semidual) | no disponible | Apache 2.0 (heredada) | 66% / no disponible |
-| Modelos full-duplex abiertos (sin especificar) | no disponible | no disponible | Si | no disponible | no disponible | 14-35% / 30-40% |
+| Modelo | Parametros | Contexto / modalidad | Full-duplex | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Awaken Full Duplex | ~8B (9.424.246.784) | Audio streaming 24 kHz, ventana de audio 2 s, ventanas de conversación hasta 180 s | Sí | Apache 2.0 | Hugging Face y GitHub |
+| Fun-Audio-Chat-8B (base) | ~8B | Audio/texto, semiduplex | No | Apache 2.0 | Hugging Face |
+| Modelos full-duplex abiertos citados en la model card | no disponible | no disponible | Sí | no disponible | no disponible |
 
-La comparativa se limita a los datos de la model card; no se dispone de especificaciones detalladas de los modelos full-duplex abiertos de referencia ni de alternativas concretas con nombre.
+La model card cita de forma agregada modelos full-duplex abiertos con groundedness del 14-35 % y acertijos lógicos del 30-40 %, pero no identifica nombres ni parámetros concretos. No se dispone de comparativas detalladas con alternativas específicas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no hay capacidades multilingues documentadas.
-- El modelo se distribuye con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no hay validacion independiente de la comunidad.
-- Los benchmarks proceden exclusivamente del autor; no se han replicado de forma externa.
-- La fundamentacion baja del 66% del base al 61%, lo que indica una perdida leve de capacidad respecto al checkpoint original.
-- No se documentan sesgos conocidos, pero al estar entrenado solo en ingles y sobre conversaciones compuestas, puede presentar sesgos culturales y de dominio no evaluados.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; los acertijos logicos hablados al 90% no garantizan veracidad factual en conversacion abierta.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el codec de voz se descarga desde FunAudioLLM/Fun-CosyVoice3-0.5B-2512 y conviene verificar su licencia por separado.
-- El uso de prompts de voz requiere derechos sobre el clip de referencia del hablante; el autor lo advierte explicitamente.
-- Requiere Linux con GPU NVIDIA y CUDA, Python >= 3.10, PyTorch >= 2.7 y TensorRT 10; la compilacion del motor TensorRT anade unos minutos en la primera ejecucion por maquina.
-- El servidor en vivo gestiona una conversacion a la vez, lo que limita el despliegue concurrente sin trabajo adicional de infraestructura.
-- No hay informacion sobre cuantizaciones, latencia ni throughput, lo que dificulta planificar produccion.
+- Solo soporta inglés; no se documentan capacidades multilingües.
+- No se han publicado benchmarks estándar de razonamiento, código o matemáticas; el rendimiento en esas áreas no está verificado.
+- El modelo se adapta desde un checkpoint semiduplex con datos compuestos; la model card advierte que el audio conversacional duplex es escaso y que una curación descuidada puede debilitar el razonamiento y la fundamentación.
+- La tasa de backchannel del 63 % implica que aún falla en aproximadamente un tercio de los casos; la toma de palabra indebida del 3 % no es nula.
+- Riesgo de alucinación no cuantificado en la información disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Fun-Audio-Chat-8B y del códec CosyVoice3; conviene revisar sus términos.
+- El servidor en vivo gestiona una conversación a la vez; no se documenta escalado concurrente.
+- Requiere Linux con GPU NVIDIA, CUDA, PyTorch >= 2.7 y TensorRT 10; la compilación inicial del motor TensorRT añade varios minutos de puesta en marcha.
+- El uso de prompts de voz requiere derechos sobre el clip de referencia (3-10 s de un único hablante).
+- Sesgos conocidos: no documentados en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openmartdev/awaken-full-duplex
-- Modelo base: https://huggingface.co/FunAudioLLM/Fun-Audio-Chat-8B
-- Codec de voz: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
-- Repositorio de codigo: https://github.com/OpenmartAI/awake-audio-chat
-- Pagina del proyecto: https://github.com/OpenmartAI/awake-audio-chat/blob/main/webpage/index.html
+- Página del proyecto: https://avera-labs.github.io/AwakenFullDuplex-FunAudioChat/
+- Repositorio GitHub: https://github.com/avera-labs/AwakenFullDuplex-FunAudioChat
+- Modelo base Fun-Audio-Chat-8B: https://huggingface.co/FunAudioLLM/Fun-Audio-Chat-8B
+- Códec de voz Fun-CosyVoice3-0.5B-2512: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512

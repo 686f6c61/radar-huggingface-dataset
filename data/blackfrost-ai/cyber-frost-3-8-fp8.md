@@ -2,101 +2,109 @@
 
 ## Resumen
 
-CYBER-FROST-3.8-FP8 es un checkpoint de despliegue en precisión mixta FP8/BF16 publicado por Blackfrost-AI, derivado por cuantización del modelo CYBER-FROST-3.8-BF16. Se trata de un transformer de tipo mezcla de expertos (MoE) con arquitectura declarada `Qwen4ExpForConditionalGeneration`, 179.999.981.459 parámetros totales, 512 expertos enrutados de los que se activan 10 por token (más un experto compartido) y una ventana de contexto configurada de 262.144 tokens. El stack de texto tiene 48 bloques con atención híbrida: atención completa cada cuarto bloque y atención lineal en el resto.
+CYBER-FROST-3.8-FP8 es un checkpoint cuantizado en FP8 del modelo CYBER-FROST-3.8-BF16, desarrollado por Blackfrost-AI. Se trata de un modelo de lenguaje de gran escala con arquitectura MoE (mezcla de expertos) derivada de la familia Qwen4-Exp, con 179.999.981.459 parámetros totales y una ventana de contexto configurada de 262.144 tokens. El artefacto se distribuye como 131 shards de SafeTensors con un payload físico de 185.523.321.634 bytes (172,78 GiB), e incluye una cabeza especulativa nativa MTP (multi-token prediction) para decodificación especulativa.
 
-El modelo está especializado en trabajo de seguridad: su corpus de ajuste combina material de seguridad curado, flujos de trabajo escritos por operadores, escenarios estilo *engagement* y datos de destilación propiedad de Blackfrost-AI. El objetivo declarado es reducir los falsos rechazos en flujos profesionales autorizados (respuesta a incidentes, validación de vulnerabilidades, análisis de malware, ingeniería defensiva), donde un asistente generalista puede reaccionar a términos aislados en lugar de al alcance legítimo del operador.
+El modelo está especializado en ciberseguridad y investigación de seguridad, con cobertura declarada de dominios como reconocimiento y OSINT, seguridad web y de APIs, Active Directory, análisis de malware, investigación de vulnerabilidades, explotación binaria, seguridad cloud y de contenedores, seguridad de cadena de suministro de software, seguridad de sistemas de control industrial, criptografía, inteligencia de amenazas y seguridad de agentes de IA. Su objetivo de diseño es reducir los rechazos innecesarios (falsos rechazos) en flujos de trabajo profesionales autorizados, manteniéndose técnicamente directo cuando el operador analiza hallazgos, reproduce vulnerabilidades en entornos controlados o redacta contenido de detección.
 
-Es relevante ahora porque combina tres piezas poco habituales en un mismo artefacto: cuantización FP8 E4M3 con granularidad de bloque 128x128 solo en los expertos enrutados, una capa MTP nativa para decodificación especulativa, y un contexto de 262.144 tokens. Ahora bien, es un *release* de investigación en evaluación de calidad activa, sin resultados de benchmarks publicados, sin evaluación multimodal (aunque el repositorio incluye torre de visión y ficheros de procesador) y con la revisión de procedencia y licencias del corpus todavía en curso.
+El checkpoint se publica bajo la licencia qwen-community-license-1.0 y es un artefacto de despliegue independiente: no es un adaptador y no requiere el checkpoint padre BF16 en tiempo de carga. La evaluación de calidad específica de este artefacto FP8 está pendiente según la model card, y aunque la configuración incluye una torre de visión y ficheros de procesador, el release no ha recibido una evaluación de calidad multimodal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `Qwen4ExpForConditionalGeneration`; transformer MoE con atención híbrida lineal/completa (48 bloques, atención completa cada 4.º bloque), hidden size 2.560, 24 cabezas de atención y 2 cabezas KV |
-| Parametros totales | 179.999.981.459 (~180.000 millones), segun safetensors |
-| Parametros activos | no disponible (se activan 10 de 512 expertos enrutados por token, mas un experto compartido, pero el autor no publica el recuento de parametros activos) |
-| Longitud de contexto | 262.144 tokens (configurados) |
-| Tipos de cuantizacion | FP8 E4M3 con granularidad de bloque 128x128 en pesos de expertos enrutados (48 capas del tronco + capa MTP); escalas de expertos en BF16; resto de tensores en su precision original (BF16); activaciones por ruta FP8 dinamica del runtime. No es una conversion FP8 de todos los tensores |
+| Arquitectura | Qwen4ExpForConditionalGeneration (MoE, transformer con torre de vision) |
+| Parametros totales | 179.999.981.459 |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | FP8/BF16 mixto (pesos en 131 shards SafeTensors); cabeza MTP con expertos enrutados en FP8 y resto en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (etiquetada como `license: other`); fichero LICENSE incluido en el repositorio |
-| Formato de pesos | safetensors (131 shards, indice de pesos incluido); payload fisico de pesos 185.523.321.634 bytes (172,78 GiB) |
-
-Otros datos del artefacto: nombre anterior `BLACKFROST-3.8-DERISKED-FP8`; tamano del repositorio 185,6 GB; payload indexado de tensores 185.502.232.570 bytes; no es un adaptador y no requiere el checkpoint BF16 padre en tiempo de carga; incluye tokenizer, activos de procesador, plantilla de chat empaquetada y un recibo de verificacion estructural.
+| Licencia | qwen-community-license-1.0 |
+| Formato de pesos | SafeTensors (131 shards); payload fisico de 185.523.321.634 bytes (172,78 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El tronco de texto sigue un diseno MoE sobre 48 bloques con atencion hibrida: 36 bloques de atencion lineal y 12 de atencion completa (uno cada cuatro). El *hidden size* es de 2.560, con 24 cabezas de consulta frente a 2 cabezas KV, lo que da una compresion GQA de 12:1. La capa MoE contiene 512 expertos enrutados, selecciona 10 por token e incorpora un experto compartido. Se empaqueta ademas una capa MTP (multi-token prediction) nativa para decodificacion especulativa: sus expertos enrutados estan en FP8 y sus otros 29 tensores en BF16. La cuantizacion es mixta: los pesos de los expertos enrutados usan FP8 E4M3 con bloques de 128x128 y escalas en BF16; la PLE (*embedding*) usa 128 shards FP8 con una escala BF16 compartida; y atencion, estado de atencion lineal, routers, expertos compartidos, embeddings, normalizaciones, tensores de vision y el resto de tensores MTP conservan su precision de origen. La precision de la KV-cache la decide el runtime de servicio y no esta codificada en los pesos.
+El modelo emplea la arquitectura `Qwen4ExpForConditionalGeneration`, una variante MoE de la familia Qwen4-Exp, con una torre de visión incluida en la configuración y ficheros de procesador asociados. El checkpoint FP8 es una cuantización del padre BF16 `Blackfrost-AI/CYBER-FROST-3.8-BF16`, con una distribución de precisión mixta: los pesos principales se empaquetan en 131 shards SafeTensors y la cabeza especulativa nativa MTP (una capa) mantiene sus expertos enrutados en FP8 y el resto de tensores en BF16. El payload indexado de tensores es de 185.502.232.570 bytes.
 
-El ajuste se hizo sobre un corpus de seguridad de Blackfrost-AI: material de seguridad curado, flujos de trabajo de operador, escenarios realistas de *engagement* y datos de destilacion propios. La cobertura declarada abarca reconocimiento y OSINT, ingenieria social y BEC, seguridad de aplicaciones web y API, identidad y Active Directory, red y perimetral, investigacion de vulnerabilidades y explotacion binaria, analisis de malware y ransomware, seguridad cloud/contenedores/Kubernetes, cadena de suministro de software, movil/IoT/inalambrico, ICS/OT, criptografia y protocolos, escalada de privilegios y movimiento lateral, inteligencia de amenazas y operaciones *purple team*, y seguridad de agentes de IA y ML adversarial. El autor declara aplicar una politica de escala frontera a sus profesores de destilacion (excluye profesores por debajo de la clase de 753B parametros) y que un subconjunto de seguridad concreto esta vinculado a un profesor Qwen3.8 de 2,4T; no existe un manifiesto de profesores para todo el corpus. Los tamanos del corpus, los recuentos por fuente y el material bruto de *engagement* no se publican, y la revision de procedencia y licencias del corpus mixto sigue en curso. La conversion a FP8 no anadio datos de ajuste nuevos: todo lo anterior corresponde al padre en BF16.
+El padre BF16 fue ajustado finamente sobre un corpus de seguridad propiedad de Blackfrost-AI que combina material de seguridad curado, flujos de trabajo escritos por operadores, escenarios realistas de estilo engagement y datos de destilación propiedad de Blackfrost. Los tamaños del corpus, los recuentos por fuente, el material bruto de engagement, las identidades de clientes y los prompts/respuestas no se publican intencionadamente. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. La innovación técnica destacable es la cabeza MTP nativa para decodificación especulativa, que permite acelerar la generación sin un modelo borrador externo.
 
 ## Capacidades
 
-- Generacion de texto conversacional y continuacion de contexto largo (hasta 262.144 tokens configurados).
-- Contenido tecnico de seguridad: analisis de hallazgos, reproduccion de vulnerabilidades en entorno controlado, redaccion de detecciones, analisis de codigo malicioso y respuesta a incidentes.
-- Cobertura de dominio declarada amplia: OSINT, seguridad web/API, identidad y AD, red, explotacion binaria, malware y ransomware, cloud y Kubernetes, cadena de suministro, movil/IoT/inalambrico, ICS/OT, criptografia, movimiento lateral y exfiltracion, inteligencia de amenazas y ML adversarial.
-- Uso de herramientas: el modelo esta etiquetado con `tool-use`, lo que apunta a soporte de *tool calling* / *function calling* en plantillas compatibles, aunque el autor no documenta esquemas concretos ni fiabilidad medida.
-- Operacion como agente de seguridad dentro de flujos multi-paso aprobados (etiquetas `security-research`, `blue-team`, `red-team`).
-- Decodificacion especulativa nativa mediante una capa MTP, pensada para acelerar la generacion cuando el runtime la soporta.
-- Integracion con el ecosistema `transformers` y con *endpoints* compatibles (etiqueta `endpoints_compatible`).
-- Presencia de torre de vision y ficheros de procesador en el repositorio, sin capacidad multimodal validada: el propio autor advierte que no debe inferirse capacidad de imagen o video evaluada.
-- Capacidades multilingues: no disponible.
-- No se documenta modo *thinking* explicito, soporte de audio ni otras capacidades especiales.
+- Generación de texto y conversación multi-turno con ventana de contexto de 262.144 tokens.
+- Razonamiento técnico en dominios de ciberseguridad: reconocimiento y OSINT, seguridad web y de APIs, identidad y Active Directory, seguridad de red y perímetro, investigación de vulnerabilidades, bug bounty y explotación binaria.
+- Análisis de malware, ransomware y defensa de endpoints.
+- Seguridad cloud, de contenedores y Kubernetes; seguridad de cadena de suministro de software.
+- Seguridad móvil, IoT, wireless y física; seguridad de sistemas de control industrial y tecnología operativa.
+- Criptografía y protocolos de seguridad; escalada de privilegios, movimiento lateral y exfiltración de datos.
+- Inteligencia de amenazas, análisis de APT y operaciones purple-team.
+- Seguridad de agentes de IA, LLM y adversarial-ML.
+- Soporte de tool calling / function calling (etiqueta `tool-use`).
+- Soporte de agentes y razonamiento multi-paso (etiqueta `llm-agent`).
+- Capacidades de fuzzing y investigación de vulnerabilidades (etiquetas `fuzzing`, `vulnerability-research`).
+- Decodificación especulativa mediante cabeza MTP nativa.
+- Presencia de torre de visión y procesador en la configuración, pero sin evaluación de calidad multimodal publicada para este release FP8.
 
 ## Casos de uso
 
-- Triaje y respuesta a incidentes: el modelo puede manejar conversaciones multi-turno sobre registros y hallazgos gracias a los 262.144 tokens de contexto, lo que permite cargar ventanas amplias de logs o artefactos y mantener el hilo del caso sin resumir en exceso.
-- Analisis de malware y ransomware: adecuado para revisar cadenas de comportamiento, artefactos de persistencia y tecnicas de defensa en un flujo de analisis, dado el ajuste especifico sobre este dominio.
-- Redaccion de contenido de deteccion: generacion y revision de reglas y consultas defensivas (por ejemplo, reglas de correlacion o firmas) para equipos *blue team*, aprovechando la cobertura declarada en endpoint defense y threat intelligence.
-- Validacion de vulnerabilidades en laboratorio autorizado: reproduccion y explicacion tecnica de fallos en entornos controlados, con el modelo actuando como asistente tecnico directo durante la validacion.
-- Agentes de seguridad con uso de herramientas: integracion en pipelines que consultan APIs de ticketing, SIEM o escaneo, con el modelo orquestando pasos y llamando funciones, siempre que el despliegue imponga permisos y limites de herramientas.
-- Analisis de seguridad cloud y de contenedores: revision de configuraciones de Kubernetes, politicas de IAM y rutas de escalada de privilegios en cloud, area cubierta explicitamente por el corpus.
-- Analisis de cadena de suministro de software: revision de dependencias, artefactos de build y riesgos de procedencia como parte de un proceso de aseguramiento.
-- Formacion y simulacros internos: generacion de escenarios de *engagement* realistas para entrenamiento de equipos, enmarcados en un programa autorizado y con supervision humana.
+- Análisis de malware en laboratorio aislado: el modelo puede revisar muestras, describir comportamiento y proponer reglas de detección, apoyándose en su contexto de 262.144 tokens para mantener el hilo de un análisis largo con múltiples artefactos y hallazgos.
+- Investigación de vulnerabilidades y bug bounty: reproducción de vulnerabilidades en entornos controlados, redacción de pruebas de concepto y validación de hallazgos, con el objetivo de diseño de reducir falsos rechazos en flujos autorizados.
+- Redacción de contenido de detección (blue team): generación de reglas, firmas y consultas de correlación a partir de telemetría y descripciones de incidentes, integrable en pipelines de detección.
+- Operaciones purple-team y threat intelligence: análisis de TTPs de APT, mapeo a marcos de referencia y simulación de escenarios adversarios con razonamiento multi-paso.
+- Respuesta a incidentes: triaje y correlación de evidencia multi-fuente en conversaciones largas, con soporte de tool calling para consultar sistemas de evidencia estructurada.
+- Evaluación de seguridad de aplicaciones web y APIs: revisión de código y configuración, propuesta de vectores de ataque y validación en entornos de staging autorizados.
+- Agente de seguridad automatizado: integración en el runtime Cyber-Frost Harness, que aporta ocho habilidades procedimentales de seguridad, herramientas de análisis nativo estructurado, manejo durable de evidencia y gestión de contexto consciente de tokens.
+- Auditoría de seguridad de agentes de IA y LLM: análisis de riesgos de prompt injection, adversarial-ML y superficies de ataque en sistemas basados en modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor declara que el artefacto esta en evaluacion de calidad activa, que la cualificacion de inferencia especifica del artefacto esta pendiente y que no existe una evaluacion multimodal de esta variante FP8. Los objetivos de diseno (reduccion de falsos rechazos, respuesta tecnica directa) se presentan como objetivos heredados del padre BF16 y no como afirmaciones de comportamiento medidas para esta variante.
+La model card publica un resultado del Cyber-Frost Harness sobre la tarea hard-12, pero corresponde al artefacto hermano `CYBER-FROST-3.8-NVFP4-V2`, no a este checkpoint FP8. Los resultados indican un aumento de resoluciones verificadas de 1 con el scaffold genérico a 5 con el harness, con cinco fallos válidos del modelo y dos tareas inválidas por infraestructura. Las afirmaciones defendibles son 5/10 intentos válidos y una cota inferior verificada de 5/12; no se reclama un porcentaje final sobre las 12 tareas. El total de tokens del modelo cayó de 51.939.855 a 22.043.450. Estos son resultados de intervención de scaffold y no se transfieren automáticamente a través de la conversión a FP8.
+
+| Metrica | Valor |
+|---|---|
+| Harness hard-12 (NVFP4-V2, no FP8) | 5/10 intentos validos; cota inferior verificada 5/12 |
+| Resoluciones con scaffold generico | 1 |
+| Resoluciones con harness | 5 |
+| Tokens totales del modelo (generico) | 51.939.855 |
+| Tokens totales del modelo (harness) | 22.043.450 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible para este checkpoint FP8.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: el payload de pesos es de 172,78 GiB (185.523.321.634 bytes) mas indice y metadatos; a eso hay que sumar activaciones, buffers de runtime y KV-cache. Estimacion minima de trabajo: unos 200-220 GB de memoria agregada antes de contabilizar la KV-cache.
-- GPU recomendadas: 4x H100 80 GB (320 GB) es el punto de partida comodo con paralelismo de tensor; 3x H100 80 GB (240 GB) queda muy ajustado. Alternativas: 8x A100 80 GB, o 2x H200 (141 GB cada una) si el runtime lo soporta.
-- El modelo padre en BF16 requiere aproximadamente el doble de memoria para los pesos, por lo que esta variante FP8 existe precisamente para reducir el coste de despliegue.
-- GPU de consumo: no cabe en una GPU de consumo (ni en RTX 4090 de 24 GB ni en configuraciones multi-GPU de consumo habituales). No hay cuantizaciones GGUF ni de menor precision publicadas en este repositorio; sin ellas no es viable en hardware de escritorio.
-- Opciones de despliegue: runtimes con soporte de FP8 por bloques y decodificacion especulativa MTP (por ejemplo vLLM o SGLang); tambien `transformers` como via de referencia y *endpoints* compatibles (etiqueta `endpoints_compatible`). Para el ecosistema llama.cpp/Ollama no hay artefactos GGUF publicados, por lo que no es una ruta disponible con este checkpoint.
-- Almacenamiento: el repositorio ocupa 185,6 GB, por lo que conviene planificar disco local rapido o carga en streaming desde almacenamiento de objetos.
-- Latencia y throughput: no disponible; no se publican mediciones de tokens por segundo ni de latencia por peticion.
+- VRAM estimada para inferencia: el payload físico de pesos es de 172,78 GiB (185.523.321.634 bytes), por lo que la inferencia en FP8 requiere al menos ~173 GiB solo para pesos, más overhead de activaciones y KV cache para 262.144 tokens de contexto.
+- GPU recomendadas: configuraciones multi-GPU de clase datacenter (H100 80GB, H200, B200) o clústeres con varias A100 80GB; no cabe en una sola GPU consumer.
+- No cabe en GPU consumer (RTX 4090 24GB, RTX 5090 32GB) ni en configuraciones de 2-4 GPUs consumer.
+- Opciones de despliegue: transformers (librería declarada), con soporte de endpoints compatibles (`endpoints_compatible`); vLLM, llama.cpp, Ollama y TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles. La cabeza MTP nativa está diseñada para decodificación especulativa y debería mejorar el throughput respecto a decodificación autoregresiva estándar, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas de rendimiento publicadas para este modelo. La tabla siguiente recoge unicamente caracteristicas estructurales y de licencia frente a alternativas MoE de gran tamano de conocimiento publico; los datos de los modelos alternativos no provienen de la informacion facilitada por el autor y deben verificarse en sus propias fichas.
+| Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| CYBER-FROST-3.8-FP8 | 179.999.981.459 | 262.144 | qwen-community-license-1.0 | Hugging Face, 344 descargas |
+| CYBER-FROST-3.8-BF16 (padre) | no disponible | no disponible | no disponible | Hugging Face |
+| CYBER-FROST-3.8-NVFP4-V2 (hermano) | no disponible | no disponible | no disponible | Hugging Face |
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Notas |
-|---|---|---|---|---|---|
-| CYBER-FROST-3.8-FP8 | 180.000 M | no disponible (10 de 512 expertos por token) | 262.144 tokens | qwen-community-license-1.0 (`license: other`) | Artefacto FP8/BF16 mixto, ajuste especifico de seguridad, contexto no evaluado |
-| Qwen3-235B-A22B | 235.000 M | 22.000 M | 128.000 tokens (extensible) | Apache 2.0 | MoE de proposito general, sin especializacion de seguridad declarada |
-| DeepSeek-V3 | 671.000 M | 37.000 M | 128.000 tokens | Licencia DeepSeek (uso comercial con condiciones) | MoE de mayor tamano, mucho mas costoso de servir |
-| Qwen3-32B (denso) | 32.000 M | 32.000 M | 128.000 tokens | Apache 2.0 | Alternativa densa mucho mas ligera, sin contexto de 262K |
-
-No hay datos de benchmarks que permitan comparar calidad, y las metricas de rendimiento por vatio o por token tampoco estan publicadas.
+No se dispone de datos de benchmarks comparables con modelos de la misma categoría en la información proporcionada. La comparativa se limita a los artefactos de la propia familia Cyber-Frost.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: el autor no publica resultados de MMLU, HumanEval, GSM8K ni de evaluaciones de seguridad, y declara el release en evaluacion de calidad activa con la cualificacion de inferencia pendiente.
-- Artefacto sin validar en la practica: 0 descargas y 0 likes en el momento de la consulta, publicado el 27 de septiembre de 2026, lo que limita cualquier evidencia de terceros.
-- Riesgo de doble uso: el objetivo de diseno es reducir falsos rechazos en vocabulario de seguridad, lo que implica un mayor riesgo de generar contenido operativo utilizable de forma ofensiva. La autorizacion es un control externo; el modelo no puede verificar propiedad, consentimiento, reglas de enfrentamiento ni jurisdiccion.
-- La revision de procedencia y licencias del corpus mixto sigue en curso segun el propio autor, lo que es un riesgo de cumplimiento para uso en produccion.
-- El modelo no expone manifiesto de profesores de destilacion para todo el corpus; solo se vincula un subconjunto de seguridad a un profesor Qwen3.8 de 2,4T.
-- Idiomas soportados no disponibles: no hay evaluacion multilingue declarada, por lo que el comportamiento fuera del ingles tecnico de seguridad es incierto.
-- Multimodalidad no validada: hay torre de vision y ficheros de procesador, pero el autor advierte explicitamente que no debe inferirse capacidad de imagen o video validada.
-- Licencia no permisiva: `qwen-community-license-1.0` con etiqueta `license: other`. Antes de cualquier uso comercial hay que revisar el fichero LICENSE del repositorio; no es una licencia tipo Apache 2.0 y las condiciones pueden imponer obligaciones adicionales.
-- Riesgo de alucinacion tecnica: en dominios de explotacion, CVE o inteligencia de amenazas, el modelo puede producir referencias, rutas o identificadores plausibles pero incorrectos. Es obligatoria la verificacion humana en cualquier flujo de seguridad.
-- Restricciones de despliegue: sin GGUF publicado no hay ruta directa a llama.cpp/Ollama; el servicio exige infraestructura multi-GPU y un runtime que soporte FP8 por bloques y MTP.
-- Rendimiento no medido: no hay datos de latencia, throughput ni degradacion con contextos de 262.144 tokens.
+- La evaluación de calidad específica de este artefacto FP8 está pendiente según la model card; los resultados del harness corresponden al artefacto NVFP4-V2 y no se transfieren automáticamente a FP8.
+- Aunque la configuración incluye torre de visión y ficheros de procesador, no se ha realizado evaluación de calidad multimodal; no debe inferirse capacidad validada de imagen o vídeo.
+- La autorización es un control externo: el modelo no puede establecer propiedad, consentimiento, reglas de enfrentamiento, jurisdicción ni si un objetivo está en alcance. Los despliegues deben imponer identidad, alcance, permisos de herramientas, logging, límites de tasa y revisión humana fuera del modelo.
+- El objetivo de reducción de falsos rechazos es una intención de diseño heredada del padre BF16, no una afirmación de comportamiento medida para esta variante FP8.
+- Riesgo de alucinación inherente a modelos de lenguaje de gran escala; no se publican evaluaciones específicas de fidelidad factual para este checkpoint.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles.
+- La licencia qwen-community-license-1.0 puede imponer restricciones al uso comercial; debe revisarse el fichero LICENSE antes de desplegar en producción.
+- El tamaño del repositorio (185,6 GB) y del payload de pesos (172,78 GiB) exigen infraestructura de almacenamiento y despliegue significativa.
+- El corpus de entrenamiento no se publica (tamaños, fuentes, material de engagement, identidades de clientes, prompts y respuestas), lo que limita la auditabilidad.
 
 ## Enlaces
 
-- Ficha del modelo: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP8
-- Modelo base BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
-- Licencia incluida en el repositorio: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP8/blob/main/LICENSE
-- Busqueda web: no se han encontrado papers, blogs, repositorios ni demos relevantes sobre este modelo; los resultados devueltos por la busqueda no guardan relacion con el artefacto.
+- [Hugging Face: Blackfrost-AI/CYBER-FROST-3.8-FP8](https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP8)
+- [Modelo base BF16: Blackfrost-AI/CYBER-FROST-3.8-BF16](https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16)
+- [Artefacto hermano NVFP4-V2](https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-NVFP4-V2)
+- [Repositorio Cyber-Frost Harness](https://github.com/Blackfrost-AI/Cyber-Frost-Harness)
+- [Arquitectura y límites de confianza](https://github.com/Blackfrost-AI/Cyber-Frost-Harness/blob/main/docs/ARCHITECTURE.md)
+- [Divulgación completa de la evaluación](https://github.com/Blackfrost-AI/Cyber-Frost-Harness/blob/main/docs/EVALUATION.md)
+- [Registros de resultados seguros para publicación](https://github.com/Blackfrost-AI/Cyber-Frost-Harness/tree/main/results)

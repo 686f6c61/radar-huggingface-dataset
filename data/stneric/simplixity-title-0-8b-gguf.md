@@ -1,86 +1,93 @@
 # stneric/simplixity-title-0.8b-GGUF
 
 ## Resumen
-simplixity-title-0.8b-GGUF es la distribucion en formato GGUF del modelo simplixity-title-0.8b, un ajuste fino de Qwen3.5-0.8B desarrollado por stneric. Su proposito es muy concreto: convertir el primer mensaje de una conversacion, en ingles o aleman, en un titulo en ingles de como maximo seis palabras para la aplicacion de chat Simplixity. No es un modelo de proposito general, sino una herramienta de tarea unica orientada a la generacion de titulos.
 
-El modelo base cuenta con 772.845.888 parametros (aproximadamente 0,8 mil millones), lo que lo situa en la categoria de modelos pequenos optimizados para inferencia local. El repositorio GGUF ocupa 1,4 GB e incluye dos cuantizaciones: Q8_0 (834 MB) y Q4_K_M (542 MB). La licencia es Apache 2.0, heredada del modelo base.
+simplixity-title-0.8b-GGUF es la distribucion en formato GGUF de simplixity-title-0.8b, un ajuste fino del modelo Qwen3.5-0.8B especializado en una unica tarea: generar titulos de conversacion de como maximo seis palabras en ingles a partir del primer mensaje de un chat, que puede estar escrito en ingles o en aleman. Lo desarrolla stneric como componente del proyecto de codigo abierto Simplixity, una interfaz de chat que utiliza este modelo para nombrar automaticamente las conversaciones.
 
-Su relevancia actual radica en el nicho: demuestra como un ajuste fino pequeno y especializado puede superar con claridad a su modelo base en una tarea acotada. Segun la model card, el Qwen3.5-0.8B sin ajustar cumple todas las reglas de formato el 35% de las veces, mientras que este modelo alcanza el 88-90%. Los archivos estan pensados para ejecutarse en LM Studio y llama.cpp.
+El modelo resuelve un problema acotado y concreto: en lugar de emplear un LLM grande y costoso para etiquetar chats, ofrece una alternativa de 772.845.888 parametros que puede ejecutarse localmente en Ollama o LM Studio. La relevancia practica esta en su tamano reducido, su licencia Apache 2.0 y la disponibilidad de cuantizaciones Q8_0 y Q4_K_M que caben en cualquier equipo consumer.
+
+El repositorio incluye cuatro archivos GGUF correspondientes a dos versiones (v1 y v4), siendo v4 la actual. El autor reporta metricas de cumplimiento de formato y de mencion del termino clave medidas sobre un conjunto de validacion de 60 mensajes iniciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-0.8B); detalles especificos no disponibles |
+| Arquitectura | no disponible (modelo base Qwen3.5-0.8B) |
 | Parametros totales | 772.845.888 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q8_0 y Q4_K_M (GGUF) |
-| Idiomas soportados | Ingles y aleman (entrada); salida en ingles |
+| Idiomas soportados | en, de |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (generado con `convert_hf_to_gguf.py` y `llama-quantize` de llama.cpp) |
+| Formato de pesos | GGUF (generado con convert_hf_to_gguf.py y llama-quantize de llama.cpp; Q4_K_M cuantizado desde bf16) |
 
 ## Arquitectura y entrenamiento
-La arquitectura subyacente es la de Qwen3.5-0.8B, un transformer de aproximadamente 0,8 mil millones de parametros. El autor no detalla en la informacion disponible la composicion del dataset de ajuste fino, el numero de tokens de entrenamiento ni si se emplearon tecnicas de RLHF o DPO. Lo que si se explicita es la tarea de entrenamiento: dado el primer mensaje de una conversacion (en ingles o aleman, truncado a 1.000 caracteres) y un prompt de sistema especifico de Simplixity, el modelo debe producir un titulo en ingles de como maximo seis palabras.
 
-La innovacion tecnica destacable no esta en la arquitectura, sino en la especializacion: el ajuste fino reduce drasticamente los fallos de formato respecto al modelo base. Segun la model card, todos los fallos del modelo ajustado consisten en titulos de siete palabras en lugar de seis, lo que indica un comportamiento muy controlado y predecible. Los archivos GGUF contienen unicamente el modelo de texto.
+No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. El modelo deriva de Qwen3.5-0.8B, ajustado para la tarea de generacion de titulos dentro del proyecto Simplixity. El repositorio contiene unicamente el modelo de texto.
+
+La innovacion tecnica destacable no esta en la arquitectura sino en el diseno de la tarea: el modelo espera como mensaje de sistema el prompt de titulos propio de Simplixity y como mensaje de usuario el primer mensaje del chat truncado a 1.000 caracteres. Los archivos GGUF se generaron con el flujo estandar de llama.cpp. Para Ollama es necesario declarar `RENDERER qwen3.5` y `PARSER qwen3.5` en el Modelfile; sin ellos, el prompt de sistema no llega al modelo.
 
 ## Capacidades
-- Generacion de titulos de conversacion en ingles a partir del primer mensaje, con un limite estricto de seis palabras.
+
+- Generacion de titulos de conversacion en ingles de como maximo seis palabras a partir del primer mensaje.
 - Comprension de entrada en ingles y aleman, con salida siempre en ingles.
-- Cumplimiento de reglas de formato: 88% con Q8_0 y 90% con Q4_K_M en las pruebas del autor.
-- Identificacion del termino clave de la conversacion: 89% en ambas cuantizaciones.
-- Inferencia rapida: mediana de 0,13-0,15 segundos por titulo en un M3 Pro.
-- No se documentan capacidades de tool calling, agentes, vision, audio ni modo de razonamiento extendido.
+- Cumplimiento de reglas de formato del prompt de Simplixity (medido en 91% en la version v4).
+- Mencion del termino clave de la conversacion (medido en 88% en la version v4).
+- Generacion de texto basica heredada del modelo base Qwen3.5-0.8B.
+- Compatibilidad con endpoints y despliegue local mediante Ollama y LM Studio.
+- No se documentan capacidades de tool calling, razonamiento multi-paso, vision ni audio.
 
 ## Casos de uso
-- Generacion automatica de titulos en aplicaciones de chat: el modelo convierte el primer mensaje del usuario en un titulo conciso de hasta seis palabras, integrandose en la interfaz de Simplixity mediante LM Studio como proveedor.
-- Organizacion de historiales de conversacion: permite etiquetar chats de forma consistente para facilitar la busqueda y el orden en clientes de mensajeria o asistentes.
-- Procesamiento local sin conexion: al ejecutarse en llama.cpp o LM Studio con cuantizacion Q4_K_M (542 MB), cabe en equipos de consumo y no requiere enviar datos a la nube.
-- Soporte bilingue en entornos germanoparlantes: acepta primeros mensajes en aleman y genera titulos en ingles, util para equipos con usuarios mixtos.
-- Prototipado de pipelines de resumen corto: sirve como componente ligero en flujos que necesitan una etiqueta breve y determinista a partir de un texto de entrada.
-- Evaluacion de ajuste fino especializado: como caso de estudio de como un modelo de 0,8B ajustado supera a su base en una tarea acotada, util para experimentos de destilacion de tareas.
+
+- Nombrado automatico de chats en Simplixity: el caso de uso principal; el modelo convierte el primer mensaje en un titulo corto en ingles, activable desde los ajustes de la aplicacion con proveedor Ollama o LM Studio.
+- Etiquetado de conversaciones en herramientas de soporte: generar titulos legibles para hilos de atencion al cliente a partir del primer mensaje del usuario, con coste de inferencia minimo.
+- Organizacion de historiales en aplicaciones de mensajeria: asignar nombres a conversaciones nuevas para mejorar la navegacion en interfaces con muchos hilos.
+- Procesamiento local sin conexion: al caber en cuantizacion Q4_K_M (542 MB) y Q8_0 (834 MB), puede ejecutarse en equipos sin GPU dedicada.
+- Pipelines de clasificacion ligera: usar el titulo generado como etiqueta resumida para indexar o agrupar mensajes iniciales.
+- Prototipado rapido en Ollama o LM Studio: integracion sencilla mediante Modelfile o carga directa del GGUF para evaluar la calidad de titulos antes de desplegar.
 
 ## Benchmarks y rendimiento
-Los datos disponibles son mediciones propias del autor en LM Studio sobre un M3 Pro, con 60 primeros mensajes (30 en aleman, 30 en ingles) y tres ejecuciones por mensaje:
 
-| Metrica | Q8_0 | Q4_K_M | Qwen3.5-0.8B sin ajustar (Q8_0) |
+El autor publica metricas sobre un conjunto de validacion de 60 mensajes iniciales (30 en aleman, 30 en ingles), con tres ejecuciones por mensaje, medidas en Ollama 0.40:
+
+| Archivo | Tamano | Reglas de formato cumplidas | Termino clave mencionado |
 |---|---|---|---|
-| Cumplimiento de todas las reglas de formato | 88% | 90% | 35% |
-| Termino clave identificado | 89% | 89% | No disponible |
-| Mediana por titulo | 0,15 s | 0,13 s | No disponible |
-| Tamano del archivo | 834 MB | 542 MB | No disponible |
+| simplixity-title-0.8b-v4-Q8_0.gguf | 834 MB | 91% | 88% |
+| simplixity-title-0.8b-v4-Q4_K_M.gguf | 542 MB | 91% | 88% |
+| simplixity-title-0.8b-v1-Q8_0.gguf | 834 MB | 77% | 81% |
+| simplixity-title-0.8b-v1-Q4_K_M.gguf | 542 MB | 84% | 86% |
 
 No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada: aproximadamente 1 GB para Q8_0 y unos 0,6 GB para Q4_K_M, mas el overhead del runtime.
-- Cabe en cualquier GPU de consumo moderna (RTX 3060, RTX 4090, etc.) e incluso en equipos Apple Silicon; el autor lo probo en un M3 Pro.
-- Despliegue recomendado: LM Studio y llama.cpp, que son los entornos indicados en la model card. Compatible con endpoints segun los tags del repositorio.
-- Latencia: mediana de 0,13-0,15 segundos por titulo en M3 Pro con LM Studio.
-- Throughput: no disponible.
+
+- VRAM estimada para inferencia: aproximadamente 1 GB o menos en Q8_0 (834 MB de pesos) y en torno a 0,6-0,8 GB en Q4_K_M (542 MB de pesos), mas el overhead del contexto.
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM libre; el modelo esta pensado para ejecucion local y tambien en CPU.
+- Cabe en GPU consumer: si, en practicamente cualquier tarjeta moderna (RTX 3060, RTX 4060, etc.) y en equipos integrados.
+- Opciones de despliegue: Ollama (con Modelfile y RENDERER/PARSER qwen3.5), LM Studio, llama.cpp.
+- Latencia y throughput: no disponibles; el autor no publica cifras de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
-|---|---|---|---|---|---|
-| simplixity-title-0.8b-GGUF | 772.845.888 | No disponible | Generacion de titulos (en/de a en) | Apache 2.0 | GGUF |
-| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Proposito general | Apache 2.0 | Safetensors, GGUF |
-| Modelos de titulacion genericos | No disponible | No disponible | Generacion de titulos | Variable | Variable |
+No se dispone de informacion sobre modelos comparables especializados en generacion de titulos de conversacion en la documentacion proporcionada.
 
-La comparacion mas directa es con su modelo base, Qwen3.5-0.8B, que cumple las reglas de formato el 35% de las veces frente al 88-90% del ajustado. No se dispone de informacion sobre otros modelos especializados en titulacion con los que comparar.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| simplixity-title-0.8b-GGUF | 772.845.888 | no disponible | Apache 2.0 | GGUF en Hugging Face |
+| Alternativas especializadas en titulos | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-- Modelo de tarea unica: no esta disenado para generacion de texto general, codigo, matematicas ni razonamiento abierto.
-- Entrada limitada a 1.000 caracteres del primer mensaje; mensajes mas largos se truncan.
-- Salida restringida a titulos en ingles de hasta seis palabras; el 12% (Q8_0) o 10% (Q4_K_M) de los casos incumple el limite de palabras.
-- Solo soporta entrada en ingles y aleman; otros idiomas no estan cubiertos.
-- No se documentan sesgos especificos, pero al derivar de Qwen3.5 puede heredar sesgos del modelo base.
-- Riesgo de alucinacion en el sentido de titulos que no reflejen fielmente el contenido, aunque el formato este controlado.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3.5-0.8B.
-- Depende del prompt de sistema especifico de Simplixity; su uso fuera de ese contexto puede degradar el rendimiento.
+
+- El modelo esta disenado exclusivamente para generar titulos de conversacion; su uso como modelo general de texto no esta validado.
+- La salida es siempre en ingles aunque la entrada sea en aleman, lo que puede no encajar en aplicaciones multilingues.
+- Requiere el prompt de sistema de Simplixity y el truncado del primer mensaje a 1.000 caracteres para funcionar segun lo medido; otros prompts pueden degradar los resultados.
+- En Ollama es obligatorio declarar RENDERER y PARSER qwen3.5; sin ellos el prompt de sistema no se aplica.
+- Las metricas publicadas provienen de un conjunto de validacion pequeno (60 mensajes), por lo que la robustez fuera de ese dominio no esta garantizada.
+- Riesgo de alucinacion y sesgos: no documentados por el autor.
+- Licencia Apache 2.0, que permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-0.8B.
 
 ## Enlaces
-- Modelo GGUF en Hugging Face: https://huggingface.co/stneric/simplixity-title-0.8b-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/stneric/simplixity-title-0.8b
-- Repositorio de Simplixity: https://github.com/stneric/simplixity
+
+- Repositorio GGUF: https://huggingface.co/stneric/simplixity-title-0.8b-GGUF
+- Modelo base: https://huggingface.co/stneric/simplixity-title-0.8b
+- Proyecto Simplixity: https://github.com/stneric/simplixity

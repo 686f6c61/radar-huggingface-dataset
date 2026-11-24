@@ -1,99 +1,87 @@
 # Mohammed422/invoices-donut-model-v3
 
 ## Resumen
+El modelo `Mohammed422/invoices-donut-model-v3` es un modelo de visión y texto (image-text-to-text) publicado en Hugging Face por el usuario Mohammed422, orientado por su nombre a la extracción de información estructurada de facturas. Se basa en la arquitectura Donut (Document Understanding Transformer), un esquema vision-encoder-decoder que evita el uso de OCR externo y realiza la transcripción de documentos de forma extremo a extremo. El repositorio declara la librería `transformers` y pesos en formato `safetensors`.
 
-Mohammed422/invoices-donut-model-v3 es un ajuste fino del modelo Donut (Document Understanding Transformer) orientado a la extraccion de informacion estructurada de facturas. Se trata de un modelo vision-encoder-decoder de tipo image-text-to-text con 202.098.104 parametros (~202 M), publicado en Hugging Face por el usuario Mohammed422 bajo la libreria transformers y con pesos en formato safetensors. Su enfoque es OCR-free: procesa directamente la imagen del documento y genera texto estructurado sin depender de un motor OCR externo.
+El modelo cuenta con 202.098.104 parámetros totales (aproximadamente 202 millones), un tamaño propio de la familia Donut base, lo que lo sitúa en el rango de modelos ligeros desplegables en hardware de consumo. La model card publicada es la plantilla automática de Hugging Face y no aporta información sobre datos de entrenamiento, licencia, idiomas ni evaluación, por lo que la mayor parte de las especificaciones deben considerarse no disponibles.
 
-El modelo se apoya en la arquitectura Donut original, que combina un encoder visual Swin Transformer con un decoder autorregresivo tipo BART, tal como se refleja en la etiqueta vision-encoder-decoder y en el pipeline declarado. La etiqueta arxiv:1910.09700 asociada al repositorio corresponde a la cita que aparece en la plantilla automatica de model card (Lacoste et al., 2019, sobre emisiones de carbono) y no a la publicacion tecnica de Donut; conviene tenerlo en cuenta para no atribuir mal la procedencia.
-
-La relevancia de este tipo de modelo radica en la automatizacion del procesamiento de facturas (invoice processing), un caso de uso empresarial habitual donde la extraccion de campos como numero de factura, fecha, emisor, lineas de detalle e importes totales suele consumir mucho tiempo manual. Sin embargo, la model card publicada esta sin completar (todo el contenido son marcadores "[More Information Needed]"), no declara licencia y no aporta datos de entrenamiento ni evaluacion, por lo que su adopcion en produccion exige una validacion previa por parte del usuario.
+Su relevancia práctica radica en el caso de uso: la digitalización y extracción de campos de facturas es una tarea de alto valor empresarial, y un modelo Donut afinado de 202 millones de parámetros puede ejecutarse en local con requisitos modestos. No obstante, la ausencia de documentación, de licencia explícita y de métricas publicadas limita seriamente su adopción en producción sin una validación previa por parte del usuario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-encoder-decoder (encoder visual y decoder autorregresivo, familia Donut) |
-| Parametros totales | 202.098.104 (~202 M) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
+| Arquitectura | Vision-encoder-decoder (familia Donut, `VisionEncoderDecoderModel`) |
+| Parametros totales | 202.098.104 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (Donut usa decodificación autoregresiva con límite de tokens de salida configurable, no un contexto de prompt extenso) |
+| Tipos de cuantizacion | No disponible en la informacion; al ser safetensors, admite cuantización a fp16, int8 e int4 mediante herramientas estándar |
+| Idiomas soportados | No disponible |
+| Licencia | No disponible |
 | Formato de pesos | safetensors |
-| Pipeline declarado | image-text-to-text |
+| Tamano del repositorio | 344,7 GB (incluye artefactos adicionales no detallados en la informacion) |
+| Pipeline | image-text-to-text |
 | Libreria | transformers |
-| Tamano del repositorio | 8,9 GB |
-| Descargas / likes en el momento del analisis | 0 / 0 |
+| Descargas | 359 |
+| Fecha de creacion | 2026-10-01 |
+| Ultima actualizacion | 2026-10-29 |
 
 ## Arquitectura y entrenamiento
+La arquitectura declarada es vision-encoder-decoder, coherente con Donut (Document Understanding Transformer), presentado en el paper arXiv:1910.09700 referenciado en los tags del repositorio. Donut combina un encoder visual tipo Swin Transformer que procesa la imagen del documento con un decoder de texto tipo BART que genera directamente la secuencia de salida (por ejemplo, un JSON con los campos de la factura), sin necesidad de un motor OCR separado ni de un pipeline de detección de layout.
 
-El modelo pertenece a la familia Donut, una arquitectura vision-encoder-decoder disenada para comprension de documentos sin OCR. El encoder es un Swin Transformer que extrae caracteristicas visuales de la imagen de la pagina completa, y el decoder es un transformer autorregresivo de tipo BART que genera la secuencia de salida (tipicamente texto estructurado, como JSON) condicionada a esas caracteristicas. Este diseno omite el pipeline clasico de deteccion de texto, reconocimiento OCR y post-procesado, lo que reduce el numero de componentes y permite un entrenamiento extremo a extremo.
-
-El autor no documenta en la model card ni la composicion del dataset de facturas, ni el numero de tokens o imagenes de entrenamiento, ni si hubo etapas de ajuste con RLHF/DPO. Tampoco se indica si el ajuste parte de naver-clova-ix/donut-base ni que hiperparametros se emplearon. No se declara ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, etc.). Toda la informacion relativa al procedimiento de entrenamiento figura como "[More Information Needed]" en el repositorio.
+No se dispone de información sobre el dataset de entrenamiento, el número de tokens o imágenes procesadas, la composición de los datos, ni sobre si se aplicaron técnicas de ajuste fino supervisado o preferencias (RLHF/DPO). La model card es la plantilla automática y no documenta hiperparámetros, régimen de precisión ni infraestructura de cómputo. El nombre del modelo sugiere un ajuste fino sobre un checkpoint Donut preentrenado para la tarea de facturas, pero este extremo no está confirmado en la información proporcionada.
 
 ## Capacidades
-
-- Extraccion de informacion de imagenes de facturas: el pipeline image-text-to-text permite generar texto estructurado (por ejemplo JSON con campos de cabecera y lineas de detalle) a partir de la imagen del documento.
-- Procesamiento OCR-free: al no requerir un motor OCR externo, evita errores en cascada entre deteccion, reconocimiento y comprension.
-- Generacion condicionada a imagen de documento: el encoder visual procesa la pagina completa como una unica entrada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas en el repositorio).
-- Capacidades especiales (modo thinking, vision adicional, audio): no disponible.
+- Extracción de texto e información estructurada a partir de imágenes de documentos, orientada por el nombre del modelo a facturas.
+- Generación de secuencias de texto condicionadas a una imagen de entrada (image-text-to-text).
+- Transcripción de documentos sin pipeline OCR externo, al estilo Donut.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte explícito de agentes ni razonamiento multi-paso.
+- Capacidades multilingües: no disponibles.
+- No se documentan modos especiales (thinking mode, visión adicional, audio).
 
 ## Casos de uso
-
-- Digitalizacion masiva de facturas de proveedores: el modelo recibe la imagen o el PDF rasterizado de cada factura y devuelve un JSON con los campos relevantes, lo que permite volcar miles de documentos al sistema de gestion sin introduccion manual.
-- Automatizacion de cuentas por pagar: integrado en un ERP, el modelo extrae numero de factura, fecha, NIF del emisor, base imponible, IVA y total para generar el asiento contable y disparar el flujo de aprobacion.
-- Conciliacion de pedidos y albaranes: el sistema compara los campos extraidos de la factura con la orden de compra y marca discrepancias de importes o cantidades para revision humana.
-- Archivo y busqueda documental: al convertir la factura en texto estructurado, se puede indexar el contenido y permitir busquedas por proveedor, importe o periodo.
-- Extraccion de lineas de detalle para analitica de gasto: los campos de cada linea permiten clasificar el gasto por categoria, centro de coste o proyecto y alimentar cuadros de mando de compras.
-- Validacion previa a la contabilizacion: el modelo puede usarse como primer filtro que detecta documentos incompletos o con formato desconocido y los deriva a cola de revision.
-- Prototipado de soluciones de document understanding: dado su tamano contenido (~202 M), sirve como punto de partida para ajustes adicionales sobre dominios concretos de facturacion.
+- Digitalización de facturas en un ERP: el modelo recibe la imagen o el PDF renderizado de la factura y genera un JSON con campos como número, fecha, proveedor, base imponible, IVA y total, que se inserta directamente en el sistema contable.
+- Automatización de cuentas por pagar: procesamiento por lotes de facturas recibidas por correo para extraer importes y fechas de vencimiento, reduciendo la introducción manual de datos.
+- Validación de proveedores: extracción del CIF/NIF y la razón social para cruzarlos contra el maestro de proveedores antes de aprobar el pago.
+- Archivado documental con metadatos: generación de índices buscables a partir de las facturas escaneadas, poblando un repositorio documental con campos estructurados.
+- Procesamiento en local por privacidad: al tener 202 millones de parámetros, puede ejecutarse en una estación de trabajo sin enviar documentos financieros a servicios en la nube.
+- Prototipado rápido de pipelines de extracción: servir como base para evaluar la viabilidad de Donut en un flujo concreto antes de invertir en un modelo mayor o en un servicio gestionado.
+- Extracción de líneas de detalle: si el ajuste fino lo permite, generar las líneas de concepto de cada factura además de los totales.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye seccion de evaluacion cumplimentada, no se declaran metricas (F1 por campo, precision de extraccion, CER/WER, etc.) y no se aporta conjunto de test. Tampoco hay informacion de latencia o throughput medida.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-Estimaciones derivadas del recuento de parametros (202.098.104) y de la sobrecarga tipica del encoder visual; el autor no publica cifras oficiales:
-
-- Peso de los pesos en memoria: aproximadamente 0,8 GB en fp32, 0,4 GB en fp16/bf16, 0,2 GB en int8 y 0,1 GB en int4, sin contar activaciones ni el coste del encoder visual.
-- VRAM estimada para inferencia: del orden de 1-2 GB en fp16 para una sola imagen, con margen para activaciones y para el procesado del documento a resolucion nativa.
-- GPU consumer: si, cabe holgadamente en tarjetas con 6-8 GB de VRAM o mas (RTX 3060, RTX 4060, RTX 4090, etc.), incluso con varias instancias en paralelo.
-- GPU de datacenter: A100, H100 o L40S son suficientes de sobra; se pueden ejecutar muchos procesos concurrentes en una sola GPU.
-- Opciones de despliegue: transformers (VisionEncoderDecoderModel), Hugging Face Inference Endpoints (la etiqueta endpoints_compatible esta presente) y exportacion a ONNX Runtime. vLLM, llama.cpp, Ollama y TGI no tienen soporte documentado para esta arquitectura concreta en el repositorio.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: con 202 millones de parámetros, en fp32 el modelo ocupa aproximadamente 0,8 GB; en fp16 unos 0,4 GB; en int8 unos 0,2 GB. A esto hay que sumar el encoder visual y las activaciones, por lo que en la práctica conviene reservar entre 2 y 4 GB de VRAM para procesar imágenes de resolución típica de documento.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o superior ofrece margen holgado. Para lotes grandes, una A10G, L4 o A100 aceleran el throughput.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada moderna e incluso en algunas integradas con suficiente memoria compartida.
+- Opciones de despliegue: `transformers` con `VisionEncoderDecoderModel` y `DonutProcessor`; exportación a ONNX Runtime para producción; integración en servicios FastAPI o similares. No se documenta soporte nativo en vLLM ni en llama.cpp, dado que no es un modelo de lenguaje puro.
+- Latencia y throughput: no disponibles en la informacion; en una GPU de consumo se espera del orden de décimas de segundo por página con procesamiento por lotes, pero este dato no está confirmado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mohammed422/invoices-donut-model-v3 | 202 M | no disponible | no disponible | Hugging Face | Ajuste de facturas, model card sin completar |
-| naver-clova-ix/donut-base | ~200 M | no disponible | MIT (repositorio original clovaai/donut) | Hugging Face | Modelo base de la familia Donut, sin ajuste de facturas |
-| Mohammed422/invoices-donut-model-v1 | no disponible | no disponible | no disponible | Hugging Face | Version anterior del mismo autor |
-| scharnot/donut-invoices | no disponible | no disponible | no disponible | Hugging Face | Ajuste de Donut para facturas de otro autor |
+| Mohammed422/invoices-donut-model-v3 | 202 M | Imagen de documento | Extracción de facturas | No disponible | Hugging Face, 359 descargas |
+| naver-clova-ix/donut-base | ~200 M | Imagen de documento | Document understanding genérico | MIT | Hugging Face, muy extendido |
+| microsoft/trocr-base-printed | ~334 M | Imagen de línea de texto | Reconocimiento de texto impreso | MIT | Hugging Face |
+| LayoutLMv3-base | ~133 M | Imagen + texto + layout | Clasificación y extracción con OCR | CC BY-NC-SA 4.0 (restringida) | Hugging Face |
 
-Los datos de rendimiento comparado no estan disponibles en la informacion consultada.
+La comparación se basa en la familia arquitectónica y el tamaño, no en resultados medidos, ya que no hay benchmarks publicados para este modelo. Donut base es el referente directo por arquitectura; TrOCR es una alternativa si se dispone de un pipeline OCR propio; LayoutLMv3 requiere OCR externo pero ofrece modelado de layout explícito.
 
 ## Limitaciones y advertencias
-
-- La licencia no esta declarada en el repositorio, por lo que no se puede confirmar si se permite el uso comercial. Es imprescindible aclararlo antes de desplegarlo en produccion.
-- La model card esta practicamente vacia: no hay informacion sobre datos de entrenamiento, procedencia del dataset, sesgos potenciales ni limitaciones conocidas.
-- No se declaran idiomas soportados, de modo que no se puede garantizar el funcionamiento con facturas en castellano u otros idiomas distintos del usado implicitamente en el ajuste.
-- No hay resultados de evaluacion publicados, por lo que se desconoce la precision real de extraccion campo a campo.
-- Riesgo de alucinacion en la generacion estructurada: el decoder autorregresivo puede producir valores plausibles pero incorrectos (importes, NIF o fechas inventados) cuando la imagen es ilegible o el formato es atipico. Se recomienda validacion cruzada y reglas de coherencia antes de contabilizar.
-- El repositorio tiene 0 descargas y 0 likes, sin historial de uso que permita inferir su fiabilidad ni su estado de mantenimiento.
-- El tamano del repositorio (8,9 GB) es muy superior al de los pesos del modelo en fp32 (~0,8 GB), lo que sugiere la presencia de artefactos adicionales (posibles checkpoints, estados de optimizador u otros ficheros) no documentados.
-- La etiqueta arxiv:1910.09700 corresponde a la cita de la plantilla de model card (Lacoste et al., 2019) y no a un paper propio del modelo; no debe usarse como referencia tecnica.
-- Al ser un modelo especializado en un unico tipo de documento, su rendimiento fuera del dominio de facturas (contratos, informes, formularios genericos) es altamente incierto.
+- La model card es la plantilla automática: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto, lo que impide garantizar su comportamiento.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es un bloqueo crítico para producción.
+- Idiomas no documentados: no se puede asegurar el soporte de facturas en castellano ni en otros idiomas.
+- Riesgo de alucinación en campos numéricos: en tareas de extracción, un error en un importe o en un CIF puede tener consecuencias contables; se recomienda validación posterior con reglas de negocio.
+- El tamaño del repositorio (344,7 GB) es desproporcionado para un modelo de 202 millones de parámetros y sugiere la presencia de artefactos adicionales no documentados; conviene revisar los archivos antes de descargar.
+- Sin métricas publicadas, no es posible comparar su precisión con alternativas ni estimar su tasa de error en documentos reales.
+- Modelo con muy pocas descargas y sin likes: no hay evidencia de uso en producción ni de validación por parte de la comunidad.
+- Al ser un modelo de documento, no está pensado para conversación multi-turno ni para prompts largos; su entrada es una imagen y su salida una secuencia acotada.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/Mohammed422/invoices-donut-model-v3
-- Version anterior del mismo autor: https://huggingface.co/Mohammed422/invoices-donut-model-v1
-- Ajuste de Donut para facturas de otro autor: https://huggingface.co/scharnot/donut-invoices
-- Repositorio de extraccion de facturas con Donut: https://github.com/vanshkapadia11/Invoice-Extraction-AI
-- Guia de ajuste fino de Donut: https://www.freecodecamp.org/news/how-to-fine-tune-the-donut-model/
-- Ficha de Donut en Promptha: https://promptha.com/models/donut
-- Referencia citada en la etiqueta del repositorio (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Hugging Face: https://huggingface.co/Mohammed422/invoices-donut-model-v3
+- Paper de Donut (referenciado en los tags): https://arxiv.org/abs/1910.09700
+- Repositorio oficial de Donut (referencia de la arquitectura): https://github.com/clovaai/donut
+- Checkpoint base de referencia: https://huggingface.co/naver-clova-ix/donut-base

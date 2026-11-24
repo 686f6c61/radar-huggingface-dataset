@@ -2,102 +2,101 @@
 
 ## Resumen
 
-RusMind Sokol 4.7 (RusMind Сокол 4.7) es un modelo de lenguaje de 8.953.803.264 parámetros desarrollado por DICPlay (Rusia) mediante un fine-tuning del modelo base Qwen/Qwen3.5-9B. Está especializado en ruso e inglés, con un fuerte énfasis en conocimiento de la cultura, historia, regiones y legislación de Rusia, e incorpora un modo de razonamiento explícito (thinking) que le permite descomponer tareas paso a paso antes de responder. El modelo se distribuye con licencia propia `rusmind-license` y está pensado para ejecución local offline.
+RusMind Sokol 4.7 es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B desarrollado por la empresa rusa DICPlay bajo la línea de modelos RusMind. Se trata de un modelo de generación de texto de aproximadamente 8.950 millones de parámetros (8,95B), orientado específicamente al idioma ruso y con modo de razonamiento explícito (thinking), que prioriza el conocimiento de la cultura, historia, regiones y legislación de Rusia. El modelo se distribuye en formatos safetensors y GGUF, lo que permite su ejecución local y sin conexión mediante llama.cpp.
 
-La relevancia del modelo radica en su posicionamiento dentro del ecosistema ruso: según la model card, alcanza 0,279 en el benchmark MERA v2, lo que lo sitúa como la segunda mejor modelo de origen o fine-tuning ruso por detrás de GigaChat 3.5 Reasoning (432 mil millones de parámetros) y como líder en la categoría de modelos de hasta 10 mil millones de parámetros. El autor declara resultados superiores a GigaChat 3.5 Ultra, T-pro, T-lite y Llama 4 Maverick en varias tareas del benchmark.
+La propuesta de valor del modelo es competir con modelos mucho mayores en el benchmark ruso MERA v2, donde el autor reporta una puntuación de 0,279, situándolo como la segunda mejor modelo ruso según su clasificación y como líder entre modelos de menos de 10B parámetros. El modelo está disponible en Hugging Face con más de 14.500 descargas y se distribuye bajo la licencia propietaria "rusmind-license".
 
-La arquitectura subyacente es la de Qwen3.5-9B (familia `qwen3_5_text`), un transformer denso de aproximadamente 9 mil millones de parámetros, sobre el que DICPlay aplica un fine-tuning con datos sintéticos propios y fuentes abiertas rusas. El repositorio ocupa 109,4 GB e incluye pesos en safetensors y GGUF para llama.cpp, lo que facilita el despliegue en entornos locales y con cuantización.
+La relevancia actual del modelo reside en su enfoque en el ecosistema lingüístico ruso, un nicho donde los modelos occidentales suelen rendir por debajo de su capacidad en inglés, y en su capacidad de razonamiento multi-paso junto con soporte de tool calling, lo que lo hace atractivo para despliegues locales en entornos con requisitos de soberanía de datos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.5, tag `qwen3_5_text`) |
-| Parametros totales | 8.953.803.264 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF disponible (niveles concretos no especificados); safetensors en precisión original |
+| Arquitectura | Transformer (derivada de Qwen3.5-9B, tag `qwen3_5_text`) |
+| Parámetros totales | 8.953.803.264 (8,95B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | GGUF (disponible en el repo); niveles concretos no disponibles |
 | Idiomas soportados | Ruso (ru), inglés (en) |
-| Licencia | `rusmind-license` (licencia propia, categoría `other`) |
-| Formato de pesos | safetensors, GGUF |
+| Licencia | rusmind-license (licencia propietaria, `license: other`) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-9B, un transformer denso de aproximadamente 9 mil millones de parámetros, y se obtiene mediante fine-tuning (relación `finetune` declarada en la model card). No se especifica en la información disponible si se emplearon técnicas de RLHF, DPO u otras etapas de alineación posteriores al ajuste supervisado, ni el número exacto de tokens de entrenamiento utilizados.
+El modelo es un finetune del transformer Qwen/Qwen3.5-9B, según indica la model card (`base_model_relation: finetune`). No se especifican en la información disponible detalles sobre el número total de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. La model card menciona que el ajuste se realizó sobre datos propios de la团队 RusMind, incluyendo datos sintéticos, fuentes abiertas, textos legales, manuales de historia y fuentes culturales rusas, con énfasis en el idioma ruso, la historia de Rusia, las regiones y la legislación de la Federación Rusa.
 
-Según la model card, los datos de entrenamiento combinan fuentes sintéticas propias con fuentes abiertas: legislación rusa, manuales de historia, hechos y fuentes culturales rusas, además de datos orientados a razonamiento, comprensión de contexto, trabajo con documentos y uso de herramientas. La innovación diferencial declarada es el modo de razonamiento (thinking) que permite al modelo planificar la respuesta paso a paso, junto con un ajuste específico para instrucciones complejas y function calling. No se detallan innovaciones arquitectónicas propias más allá de las heredadas del modelo base.
+La innovación técnica destacable es la incorporación de un modo de razonamiento explícito (thinking), en el que el modelo elabora la respuesta paso a paso antes de emitir la salida final. No se dispone de información sobre técnicas adicionales como decodificación especulativa, atención lineal o arquitecturas híbridas SSM.
 
 ## Capacidades
 
-- Generación de texto en ruso e inglés con corrección ortográfica y puntuación.
-- Razonamiento explícito en modo thinking: descomposición de problemas en pasos antes de responder.
-- Razonamiento lógico, tareas de sentido común y problemas multi-paso.
-- Ejecución de instrucciones complejas con múltiples restricciones simultáneas (benchmark IFHard reportado).
-- Tool calling / function calling (benchmark GorillaHard reportado).
-- Tareas agénticas y razonamiento multi-paso con invocación de herramientas.
-- Comprensión de personajes, contexto narrativo, acertijos y antónimos.
-- Conocimiento profundo de historia, cultura, regiones, pueblos y legislación de Rusia.
-- Trabajo con documentos y comprensión de contexto extenso (longitud concreta no disponible).
-- Ejecución local offline sin conexión a internet.
+- Generación de texto en ruso e inglés con modo de razonamiento explícito (thinking) previo a la respuesta.
+- Razonamiento lógico y resolución de problemas multi-paso.
+- Comprensión de contexto conversacional y de personajes, incluyendo tareas de tipo "teoría de la mente" según la model card.
+- Corrección ortográfica y puntuación en ruso.
+- Conocimiento específico de historia, cultura, regiones y legislación de Rusia.
+- Soporte de tool calling y function calling, con resultados reportados en el benchmark GorillaHard.
+- Ejecución de instrucciones complejas con múltiples requisitos simultáneos (benchmark IFHard).
+- Capacidades agénticas y de razonamiento multi-paso orientadas a tareas de agente.
+- Ejecución local y offline mediante llama.cpp y formato GGUF.
+- Capacidades multilingües limitadas a ruso e inglés.
 
 ## Casos de uso
 
-- Atención al cliente en ruso: el modelo puede gestionar conversaciones multi-turno con contexto y corregir la formulación del usuario, gracias a su especialización lingüística y a su capacidad de instrucciones complejas; adecuado para sectores con normativa rusa.
-- Asistencia legal y administrativa en Rusia: consultas sobre legislación federal, regional y procedimientos administrativos, apoyándose en el entrenamiento declarado sobre leyes y documentos rusos; requiere validación humana por riesgo de alucinación.
-- Generación y revisión de código con tool calling: integración en pipelines de CI/CD o asistentes de IDE que invoquen funciones externas, aprovechando el rendimiento declarado en GorillaHard.
-- Agentes autónomos multi-paso: orquestación de tareas que requieren planificación y llamadas a herramientas (APIs, calculadoras, bases de datos), gracias al modo thinking y al soporte de function calling.
-- Educación y divulgación histórica y cultural: generación de material didáctico sobre historia y cultura rusas, con capacidad de razonamiento paso a paso para explicar conceptos.
-- Procesamiento de documentos en ruso: resumen, extracción y respuesta sobre documentos largos en entorno offline, útil en administraciones y empresas con requisitos de confidencialidad.
-- Despliegue en hardware de consumo: al ser un modelo de ~9B con GGUF, puede ejecutarse en estaciones de trabajo locales sin GPU de datacenter, para prototipado y uso personal.
+- Atención al cliente en ruso: el modelo puede gestionar conversaciones multi-turno en ruso con corrección ortográfica y conocimiento de normativa local, adecuado para empresas que operan en el mercado ruso y necesitan un asistente con comprensión cultural.
+- Asistencia legal y administrativa: gracias a su entrenamiento en legislación y regiones de Rusia, puede emplearse para resumir normativa, responder consultas sobre trámites regionales o redactar borradores de documentos administrativos, siempre con revisión humana.
+- Generación de código con tool calling: el soporte de function calling y su rendimiento reportado en GorillaHard lo hacen apto para integrarse en pipelines que requieran invocar APIs o herramientas externas desde un agente.
+- Despliegue local en entornos con soberanía de datos: al distribuirse en GGUF y ejecutarse offline con llama.cpp, puede instalarse en infraestructura propia sin conexión a internet, útil para organismos que no pueden enviar datos a la nube.
+- Educación y tutoría en ruso: el modo de razonamiento paso a paso permite explicar la resolución de problemas de lógica o matemáticas, con conocimiento de historia y cultura rusa para contextos educativos.
+- Procesamiento de documentos en ruso: comprensión de contexto y trabajo con documentos según la model card, aplicable a la extracción de información de textos legales o históricos.
+- Agentes autónomos multi-paso: sus capacidades agénticas reportadas en MERA v2 lo hacen adecuado para tareas que requieren planificación y ejecución de varios pasos con herramientas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (benchmark MERA v2, fecha de referencia 30.10.2026). No se han verificado de forma independiente en la información disponible.
+Los datos disponibles provienen del benchmark MERA v2 (Multimodal Evaluation for Russian-language Architectures), según la model card del autor. No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible.
 
-| Benchmark / metrica | RusMind Sokol 4.7 | Referencia comparada |
-|---|---|---|
-| MERA v2 (global) | 0,279 | GigaChat 3.5 Ultra: 0,249; Qwen3.5-9B: 0,186; Gemma 4 E4B: 0,170; T-pro: 0,196 |
-| MERA v2 (razonamiento) | 0,459 | GigaChat 3.5 Ultra: 0,429 |
-| MERA v2 (comprension de personas) | 0,300 | T-pro: 0,249 |
-| MERA v2 (cultura y regiones de Rusia) | 0,277 | T-pro: 0,233 |
-| IFHard (instrucciones complejas) | 0,424 | T-pro y GigaChat 3.5 Ultra muy por debajo (factor 7,6-8x) |
-| GorillaHard (tool calling) | 0,490 | 2,4-2,6x superior a T-pro, GigaChat 3.5 Ultra y Gemma 4 26B |
-| MERA v2 vs Gemma 4 26B | 0,279 | Gemma 4 26B: 0,279 (empate global) |
+| Benchmark | RusMind Sokol 4.7 | GigaChat 3.5 Ultra (432B) | T-pro (33B) | Gemma 4 26B | Qwen3.5-9B | T-lite |
+|---|---|---|---|---|---|---|
+| MERA v2 (global) | 0,279 | 0,249 | 0,196 | 0,279 | 0,186 | ~0,14 (la mitad de Sokol) |
+| MERA v2 (razonamiento) | 0,459 | 0,429 | no disponible | no disponible | no disponible | no disponible |
+| MERA v2 (comprensión de personas) | 0,300 | no disponible | 0,249 | no disponible | no disponible | no disponible |
+| MERA v2 (cultura de Rusia) | 0,277 | no disponible | 0,233 | no disponible | no disponible | no disponible |
+| IFHard (instrucciones complejas) | 0,424 | ~0,056 (7,6x menor) | ~0,053 (8x menor) | no disponible | no disponible | no disponible |
+| GorillaHard (tool calling) | 0,490 | ~0,19-0,20 (2,4-2,6x menor) | ~0,19-0,20 (2,4-2,6x menor) | ~0,19-0,20 (2,4-2,6x menor) | no disponible | no disponible |
+
+Nota: los valores de GigaChat 3.5 Ultra, T-pro y Gemma 4 26B en IFHard y GorillaHard se derivan de los multiplicadores indicados en la model card, no de cifras absolutas publicadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16/BF16: aproximadamente 18 GB para los 8,95 mil millones de parámetros (2 bytes por parámetro) más overhead de activaciones y KV cache.
-- VRAM estimada en cuantización de 8 bits: en torno a 9-10 GB.
-- VRAM estimada en cuantización de 4 bits (GGUF Q4): en torno a 5-6 GB, con margen para contexto.
-- GPU recomendadas para FP16: A100 40 GB, H100, L40S, RTX A6000; para cuantizaciones de 4-8 bits: RTX 4090 (24 GB), RTX 4080, RTX 3090.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más usando GGUF Q4; en 16-24 GB con cuantizaciones mayores o FP16 parcial.
-- Opciones de despliegue: llama.cpp (soporte GGUF declarado), Ollama (a través de GGUF), vLLM y TGI (compatibles con safetensors y arquitectura Qwen3.5), transformers.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 8,95B en FP16 se requieren aproximadamente 18 GB de VRAM, y en cuantizaciones de 4 bits en torno a 5-6 GB (estimación orientativa, no confirmada por el autor).
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cabría esperar funcionamiento en GPUs de 24 GB (RTX 4090, A10G) en FP16 y en GPUs de 8-12 GB con cuantización, aunque el autor no lo especifica.
+- Compatibilidad con GPU de consumo: probable en GPUs de consumo con cuantización GGUF, si bien no se confirma en la información disponible.
+- Opciones de despliegue: llama.cpp (soporte GGUF indicado en los tags), transformers (librería declarada); no se confirma soporte de vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MERA v2 | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | MERA v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind Sokol 4.7 | 8,95B | No disponible | 0,279 | `rusmind-license` | Hugging Face (safetensors + GGUF) |
-| Qwen3.5-9B (base) | ~9B | No disponible | 0,186 | Licencia Qwen (no especificada aqui) | Hugging Face |
-| Gemma 4 26B | ~26B | No disponible | 0,279 | Licencia Gemma | Hugging Face |
-| T-pro (T-Bank) | 33B | No disponible | 0,196 | No disponible | No disponible |
-| GigaChat 3.5 Ultra | 432B | No disponible | 0,249 | Propietaria | API propietaria |
+| RusMind Sokol 4.7 | 8,95B | no disponible | 0,279 | rusmind-license (propietaria) | Hugging Face, GGUF |
+| Qwen3.5-9B (base) | ~9B | no disponible | 0,186 | no disponible en la información | Hugging Face |
+| T-lite (T-Bank) | ~8B | no disponible | ~0,14 | no disponible en la información | no disponible |
+| GigaChat 3.5 Ultra | 432B | no disponible | 0,249 | propietaria | API/plataforma Sber |
+| Gemma 4 26B | 26B | no disponible | 0,279 | no disponible en la información | no disponible |
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación inherente a modelos de ~9B, especialmente en dominios legales e históricos donde el autor declara especialización; requiere verificación factual en producción.
-- Sesgo cultural y geográfico: el entrenamiento se centra en fuentes rusas oficiales, legislación e historia de Rusia, lo que puede introducir sesgos de encuadre en temas políticos, históricos y sociales.
-- Idiomas limitados a ruso e inglés; el rendimiento en otros idiomas no está documentado.
-- Longitud de contexto no especificada en la información disponible; no se puede garantizar el rendimiento en contextos largos.
-- Licencia `rusmind-license` de tipo `other`: es necesario revisar el archivo LICENSE del repositorio antes de cualquier uso comercial; las condiciones concretas no se detallan en la información proporcionada.
-- Resultados de benchmarks declarados por el propio autor y no verificados de forma independiente en la información disponible.
-- El repositorio de 109,4 GB incluye múltiples formatos; conviene descargar solo los archivos necesarios (safetensors o GGUF) para evitar consumo excesivo de almacenamiento.
-- No se documentan técnicas de alineación (RLHF/DPO) ni evaluaciones de seguridad; el filtrado de contenido inapropiado queda a cargo del despliegue.
+- Sesgos conocidos: el entrenamiento está orientado explícitamente a "valores tradicionales" y a la perspectiva cultural e histórica rusa, lo que puede introducir sesgos editoriales y de encuadre en temas políticos, históricos y sociales.
+- Riesgo de alucinación: como todo modelo de 9B, puede generar información incorrecta, especialmente en dominios especializados como legislación, donde la model card no garantiza exactitud factual.
+- Limitaciones de idioma: solo ruso e inglés; el rendimiento en otros idiomas no está documentado.
+- Limitaciones de contexto: la longitud de contexto no se especifica en la información disponible, lo que impide evaluar su idoneidad para documentos largos.
+- Restricciones de licencia: la licencia "rusmind-license" es propietaria y no se detallan en la información disponible las condiciones de uso comercial; es necesario consultar el archivo LICENSE del repositorio antes de un despliegue en producción.
+- Caveat de producción: los benchmarks reportados proceden del propio autor y del benchmark MERA v2; no se dispone de evaluaciones independientes de MMLU, HumanEval u otros estándares.
+- El modelo depende del base Qwen3.5-9B, por lo que hereda las limitaciones de este.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Sokol-4.7
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Demo / plataforma del autor: https://rusmind.ru
+- Plataforma RusMind: https://rusmind.ru
 - Leaderboard MERA v2: https://mera.a-ai.ru/ru/text/leaderboard
+- Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B (referenciado en la model card)
+- Licencia: archivo LICENSE en el repositorio de Hugging Face

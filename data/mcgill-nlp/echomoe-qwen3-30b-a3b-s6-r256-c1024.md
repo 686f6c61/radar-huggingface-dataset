@@ -2,103 +2,102 @@
 
 ## Resumen
 
-EchoMoE-Qwen3-30B-A3B-s6-r256-c1024 es un checkpoint de investigacion publicado por el grupo McGill-NLP que aplica la tecnica EchoMoE sobre Qwen3-30B-A3B. El objetivo no es mejorar la calidad del modelo, sino reducir el coste de comunicacion en inferencia con paralelismo de expertos (expert parallelism). Para ello, en lugar de enviar cada estado oculto completo entre nodos, el modelo envia una diferencia comprimida respecto a un estado de referencia que se refresca cada pocas capas.
+EchoMoE-Qwen3-30B-A3B-s6-r256-c1024 es un checkpoint de investigación desarrollado por el grupo McGill-NLP que aplica la técnica EchoMoE sobre Qwen3-30B-A3B. El objetivo no es mejorar la calidad del modelo, sino reducir el coste de comunicación en inferencia distribuida con paralelismo de expertos (expert parallelism). La idea central es que, en lugar de transmitir entre nodos el estado oculto completo en cada capa, el modelo envía un código comprimido que representa la diferencia respecto a un estado de referencia que se refresca cada pocas capas.
 
-El checkpoint concreto usa una referencia cada 6 capas (8 de 48), un codigo de dispatch de 256 dimensiones y un codigo de combine de 1024 dimensiones. Segun el autor, esto reduce un 61 % los bytes intercambiados entre nodos a cambio de una perdida media de 6,3 puntos sobre el profesor sin comprimir en 18 benchmarks. El modelo se obtiene por destilacion desde `Qwen3-30B-A3B-SFT-EchoMoE-teacher` sobre 4,3B tokens.
+El modelo parte de Qwen3-30B-A3B-Base (arquitectura MoE de 48 capas, 128 expertos con 8 activos, hidden size 2.048) y se destila desde un teacher afinado sobre datos de instrucciones Dolci. La configuración concreta de este checkpoint usa una referencia cada 6 capas (8 de 48), un código de dispatch de 256 dimensiones y un código de combine de 1.024 dimensiones. Según el autor, esto reduce un 61 % los bytes intercambiados entre nodos a cambio de una pérdida media de 6,3 puntos sobre 18 benchmarks respecto al teacher sin comprimir.
 
-Es relevante para equipos que sirven modelos MoE grandes en clusteres multi-nodo y quieren reducir el cuello de botella de all-to-all sin cambiar de familia de modelo. La arquitectura subyacente es Qwen3 MoE (48 capas, 128 expertos con 8 activos, hidden size 2.048), con 27.835.267.072 parametros totales segun safetensors, contexto de 32.768 tokens y licencia Apache 2.0.
+Es relevante ahora porque ataca un cuello de botella práctico del despliegue de modelos MoE grandes: el tráfico all-to-all entre GPUs cuando los expertos están repartidos entre nodos. El checkpoint es fundamentalmente una contribución de sistemas e investigación, no un modelo de producción generalista, y su licencia Apache 2.0 facilita la experimentación.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (qwen3_moe) con compresion de activaciones EchoMoE |
-| Parametros totales | 27.835.267.072 (27,8B) |
-| Parametros activos | 8 de 128 expertos por token (A3B, ~3B activos) |
+| Arquitectura | Transformer MoE (qwen3_moe) con capa EchoMoE de compresión de activaciones para expert parallelism |
+| Parámetros totales | 27.835.267.072 (~27,8 B) |
+| Parámetros activos | 8 de 128 expertos por capa (el autor no publica el recuento exacto de parámetros activos) |
 | Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | bf16 (pesos publicados); FP8 solo para los codigos dispatch/combine en la variante evaluada "EchoMoE + FP8" |
-| Idiomas soportados | en |
+| Tipos de cuantización | bf16 (pesos publicados); el autor reporta además una variante de evaluación "EchoMoE + FP8" para dispatch y combine |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 55,7 GB) |
+| Formato de pesos | safetensors, con remote code (custom_code) para transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-30B-A3B-Base: 48 capas, 128 expertos con 8 activos por token, hidden size 2.048. Sobre esa base, EchoMoE introduce un mecanismo de comunicacion comprimida para expert parallelism: cada estado oculto no se transmite completo, sino como una diferencia respecto a un estado de referencia que se refresca cada 6 capas. El checkpoint usa un codigo de dispatch de 256 dimensiones y un codigo de combine de 1024 dimensiones. La implementacion se distribuye como codigo remoto en PyTorch plano (sin expert parallelism) para transformers, y como plugin para vLLM 0.21 con soporte de expert parallelism.
+El modelo es un transformer MoE de 48 capas con 128 expertos por capa y 8 activos, hidden size 2.048, heredado de Qwen3-30B-A3B-Base. La modificación EchoMoE introduce un mecanismo de comunicación comprimida: cada pocas capas se establece un estado oculto de referencia y, en lugar de enviar el estado completo a través del all-to-all de expert parallelism, se transmite un código de baja dimensión que codifica la diferencia. En este checkpoint la referencia se refresca cada 6 capas (8 referencias en total), el código de dispatch tiene 256 dimensiones y el de combine 1.024 dimensiones.
 
-El entrenamiento es por destilacion desde el profesor `Qwen3-30B-A3B-SFT-EchoMoE-teacher` (a su vez Qwen3-30B-A3B-Base afinado sobre datos de instruccion Dolci) sobre 4,3B tokens, con todos los pesos entrenados. Los datasets citados son `allenai/Dolci-Instruct-SFT` y `allenai/dolma3_dolmino_mix-10B-1025`. No se documentan fases de RLHF o DPO adicionales en la informacion disponible.
+El entrenamiento es una destilación desde el teacher McGill-NLP/Qwen3-30B-A3B-SFT-EchoMoE-teacher (el base afinado sobre Dolci-Instruct-SFT) sobre 4,3 mil millones de tokens, entrenando todos los pesos. Los datasets citados son allenai/Dolci-Instruct-SFT y allenai/dolma3_dolmino_mix-10B-1025. La innovación técnica es, por tanto, de sistemas: reducir el volumen de bytes inter-nodo en despliegues multi-GPU/multi-nodo manteniendo la topología MoE estándar, sin cambiar el enrutado de expertos.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con plantilla de chat de Qwen3.
-- Razonamiento y conocimiento general (evaluado en el bloque "Knowledge and reasoning").
-- Matematicas (bloque "Math" de la evaluacion).
-- Generacion de codigo (bloque "Code").
-- Seguimiento de instrucciones (bloque "Instruction following").
-- Inferencia con expert parallelism en vLLM 0.21 mediante plugin, con backend all-to-all `allgather_reducescatter` y backend de atencion FlashInfer.
-- Carga en transformers 5.8.1 con `trust_remote_code=True` en una sola GPU de 80 GB en bf16.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking explicito en la informacion disponible.
+- Generación de texto conversacional en inglés, con plantilla de chat compatible con Qwen3.
+- Razonamiento y conocimiento general, con un rendimiento degradado respecto al teacher (ver benchmarks).
+- Matemáticas y generación de código, con pérdidas de 4,9 y 7,4 puntos respectivamente frente al teacher.
+- Seguimiento de instrucciones, con una caída menor (3,0 puntos) que en otras áreas.
+- Inferencia con paralelismo de expertos en vLLM 0.21 mediante plugin EchoMoE, y carga en transformers 5.8.1 con remote code.
+- Modo de generación no-thinking de Qwen3 recomendado para chat (temperature 0,7, top_p 0,8, top_k 20, presence penalty 1,5 en vLLM).
+- No se documentan capacidades de tool calling, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Servicio de chat en ingles con MoE grande en cluster multi-nodo: el modelo esta disenado para desplegarse con `--enable-expert-parallel` y reduce un 61 % el trafico inter-nodo, lo que abarata el all-to-all en inferencia distribuida.
-- Investigacion en sistemas de inferencia distribuida: sirve como banco de pruebas reproducible para comparar estrategias de compresion de activaciones (referencia cada N capas, dimensiones de codigo) frente al profesor sin comprimir.
-- Evaluacion de compromiso precision/comunicacion: util para medir el impacto de FP8 en los codigos dispatch/combine (la variante FP8 mantiene 60,7 % de media frente a 60,6 % del bf16).
-- Generacion de codigo en pipelines internos donde el coste de red domina: con 51,8 % en el bloque Code, es adecuado para tareas de autocompletado y generacion asistida con revision humana.
-- Tareas de matematicas y razonamiento en lote (few-shot con decodificacion greedy, el modo por defecto del checkpoint): util para evaluaciones internas y generacion de datos sinteticos.
-- Destilacion y ajuste posterior: al ser un checkpoint Apache 2.0 con pesos completos, puede servir como inicializacion para fine-tuning propio en ingles.
-- Despliegue en una sola GPU de 80 GB para prototipado: la version transformers en bf16 cabe en una A100/H100 de 80 GB sin expert parallelism.
+- Investigación en sistemas distribuidos: servir un MoE de ~28 B parámetros con expert parallelism reduciendo un 61 % el tráfico inter-nodo, útil para estudiar el equilibrio entre ancho de banda y calidad en clústeres con interconnect limitado.
+- Despliegue multi-nodo con vLLM: el checkpoint se sirve con data-parallel-size 8 y expert-parallel en un nodo de 8 GPUs, lo que permite medir throughput real frente al teacher sin compresión.
+- Evaluación comparativa de técnicas de compresión de activaciones: sirve como referencia reproducible (paper, código y colección de checkpoints) para contrastar EchoMoE con otras propuestas de compresión de comunicación.
+- Prototipado de asistentes conversacionales en inglés: con contexto de 32.768 tokens y plantilla de chat Qwen3, es adecuado para experimentos de diálogo multi-turno donde el coste de infraestructura es la restricción principal.
+- Generación de código en entornos de investigación: aunque pierde 7,4 puntos frente al teacher, sigue siendo utilizable para tareas de autocompletado y generación en pipelines internos donde no se requiere la máxima calidad.
+- Docencia y reproducción de resultados: al estar bajo Apache 2.0 y con remote code incluido, permite reproducir los experimentos del paper en laboratorios académicos con hardware modesto (cabe en una GPU de 80 GB en bf16).
+- Estudio de destilación con compresión: el par teacher/alumno permite analizar cuánta calidad se sacrifica al imponer un cuello de botella de comunicación durante el entrenamiento.
 
 ## Benchmarks y rendimiento
 
-Medias (%) sobre 18 benchmarks por dominio, con la variacion respecto al profesor entre parentesis. Fuente: model card del autor.
+Promedio (%) sobre 18 benchmarks por dominio, con la variación respecto al teacher entre paréntesis, según el autor:
 
-| Dominio | Profesor | EchoMoE | EchoMoE + FP8 |
+| Dominio | Teacher | EchoMoE | EchoMoE + FP8 |
 |---|---|---|---|
 | Conocimiento y razonamiento | 77,6 | 70,4 (−7,2) | 70,4 (−7,2) |
-| Matematicas | 50,7 | 45,8 (−4,9) | 46,5 (−4,2) |
-| Codigo | 59,2 | 51,8 (−7,4) | 52,6 (−6,6) |
+| Matemáticas | 50,7 | 45,8 (−4,9) | 46,5 (−4,2) |
+| Código | 59,2 | 51,8 (−7,4) | 52,6 (−6,6) |
 | Seguimiento de instrucciones | 55,6 | 52,6 (−3,0) | 50,5 (−5,1) |
-| **Media** | **66,9** | **60,6 (−6,3)** | **60,7 (−6,2)** |
+| **Promedio** | **66,9** | **60,6 (−6,3)** | **60,7 (−6,2)** |
 
-El autor indica que el repositorio de GitHub lista los benchmarks concretos que componen cada dominio; no se detallan en la informacion disponible. El ahorro declarado es de un 61 % menos de bytes inter-nodo.
+No se han publicado resultados desglosados por benchmark individual (MMLU, HumanEval, GSM8K, etc.) en la información disponible; el autor remite al README del repositorio de GitHub para la lista completa de benchmarks.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16: los pesos ocupan aproximadamente 55,7 GB, por lo que caben en una GPU de 80 GB (A100 80 GB, H100 80 GB) con transformers y `device_map="cuda"`.
-- Despliegue multi-nodo con expert parallelism: la receta oficial de vLLM usa 8 GPUs por nodo con `--data-parallel-size 8 --enable-expert-parallel`.
-- GPU de consumo: no se documenta una ruta de cuantizacion GGUF ni un despliegue en GPUs consumer; con 27,8B parametros totales y pesos bf16, no cabe en GPUs de 24 GB sin cuantizacion adicional no publicada.
-- Software: vLLM 0.21 con el plugin EchoMoE (instalacion via `scripts/install.sh vllm`) o transformers 5.8.1 con codigo remoto.
-- Parametros de servicio relevantes: `--all2all-backend allgather_reducescatter`, `--attention-backend FLASHINFER`, `--compilation-config '{"cudagraph_mode": "FULL_DECODE_ONLY", "mode": "NONE"}'` y `--max-num-seqs 256` para que el arranque no supere el tiempo de espera del servidor de API (600 s).
-- Latencia y throughput: no se han publicado cifras concretas de latencia o tokens por segundo en la informacion disponible; el README del repositorio cubre el throughput multi-nodo.
+- VRAM estimada: los pesos en bf16 (~55,7 GB de repositorio) caben en una GPU de 80 GB según el autor; en cuantizaciones de 4 bits no se documentan pesos publicados, por lo que la VRAM sería aproximadamente 14-16 GB más overhead, pero no está verificado.
+- GPU recomendadas: una A100/H100 de 80 GB para carga en transformers sin paralelismo; un nodo de 8 GPUs para el despliegue con expert parallelism en vLLM.
+- GPU de consumo: no se confirma compatibilidad con RTX 4090 (24 GB) en bf16; requeriría cuantización no publicada por el autor.
+- Despliegue: vLLM 0.21 con plugin EchoMoE (recomendado, con `--data-parallel-size 8 --enable-expert-parallel --all2all-backend allgather_reducescatter --attention-backend FLASHINFER` y `--max-num-seqs 256` para limitar el tiempo de arranque por la captura de CUDA graphs); transformers 5.8.1 con `trust_remote_code=True`.
+- Latencia y throughput: el autor reporta la reducción del 61 % en bytes inter-nodo, pero no publica cifras absolutas de latencia o tokens por segundo en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Media en 18 benchmarks | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| EchoMoE-Qwen3-30B-A3B-s6-r256-c1024 | 27,8B totales, ~3B activos | 32.768 | 60,6 | Apache 2.0 | Hugging Face, codigo remoto |
-| Qwen3-30B-A3B-SFT-EchoMoE-teacher | ~30B totales, ~3B activos | no disponible en la informacion | 66,9 | Apache 2.0 (heredada de Qwen3) | Hugging Face |
-| Qwen3-30B-A3B-Base | ~30B totales, ~3B activos | no disponible en la informacion | no disponible | Apache 2.0 | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| EchoMoE-Qwen3-30B-A3B-s6-r256-c1024 | ~27,8 B (MoE, 8/128 activos) | 32.768 | Apache 2.0 | Compresión de activaciones para expert parallelism; −6,3 puntos medios frente a su teacher |
+| Qwen3-30B-A3B-SFT-EchoMoE-teacher | ~27,8 B (MoE) | 32.768 (heredado) | Apache 2.0 | Teacher sin compresión; referencia de calidad (66,9 de media) |
+| Qwen3-30B-A3B-Base | ~27,8 B (MoE) | 32.768 | Apache 2.0 | Modelo base original de Qwen, sin el ajuste Dolci ni EchoMoE |
 
-La comparativa se limita a los modelos citados en la informacion proporcionada; no se dispone de datos de otros modelos de la misma categoria para contrastar.
+La comparación con alternativas fuera de la familia Qwen3 no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Perdida de calidad medible: 6,3 puntos de media frente al profesor, con mayor degradacion en codigo (−7,4) y conocimiento/razonamiento (−7,2).
-- Solo ingles: la model card declara `language: en`; no hay evaluacion multilingue.
-- Sin datos de sesgos, alucinacion o robustez publicados en la informacion disponible; al ser un modelo destilado de Qwen3, hereda los sesgos de su base y del dataset Dolci.
-- Contexto limitado a 32.768 tokens; no se documenta extension de contexto.
-- El despliegue eficiente depende de un plugin especifico para vLLM 0.21 y de configuracion no estandar (grafo CUDA, `max-num-seqs`), lo que anade complejidad operativa.
-- El arranque en vLLM puede superar el tiempo de espera por defecto si no se limita `--max-num-seqs` a 256.
-- Es un checkpoint de investigacion con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en produccion.
-- Licencia Apache 2.0 permite uso comercial, pero la calidad degradada respecto al profesor debe validarse en el dominio concreto antes de desplegar.
-- No se documenta soporte de tool calling ni de agentes; no asumir capacidades no listadas.
+- Pérdida de calidad sistemática: −6,3 puntos de media sobre 18 benchmarks frente al teacher, con caídas de hasta 7,4 puntos en código y 7,2 en conocimiento y razonamiento.
+- Solo inglés: la model card declara únicamente el idioma `en`; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Modelo de investigación: el objetivo es demostrar una técnica de sistemas, no ofrecer un modelo de producción generalista; el autor no documenta evaluaciones de seguridad, sesgos o robustez.
+- Riesgo de alucinación: no se han publicado evaluaciones específicas de factualidad o tasas de alucinación en la información disponible.
+- Dependencia de software no estándar: requiere el plugin EchoMoE y versiones concretas (vLLM 0.21, transformers 5.8.1); el arranque en vLLM puede superar el tiempo de espera por defecto si no se limita `--max-num-seqs`.
+- Sin cuantizaciones publicadas (GGUF, AWQ, GPTQ) en el repositorio, lo que limita el despliegue en hardware de consumo.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un checkpoint derivado de Qwen3 conviene revisar también las condiciones del modelo base original.
+- Sin datos de tool calling, agentes, visión ni audio; no debe asumirse su disponibilidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/McGill-NLP/EchoMoE-Qwen3-30B-A3B-s6-r256-c1024
-- Codigo: https://github.com/McGill-NLP/EchoMoE
-- Pagina del proyecto: https://mcgill-nlp.github.io/EchoMoE/
-- Coleccion EchoMoE: https://huggingface.co/collections/McGill-NLP/echomoe-6afcbfa10b38185f87cbd0ac
-- Profesor: https://huggingface.co/McGill-NLP/Qwen3-30B-A3B-SFT-EchoMoE-teacher
+- Paper (arXiv): https://arxiv.org/abs/2611.22215
+- Código: https://github.com/McGill-NLP/EchoMoE
+- Página del proyecto: https://mcgill-nlp.github.io/EchoMoE/
+- Colección EchoMoE: https://huggingface.co/collections/McGill-NLP/echomoe-6afcbfa10b38185f87cbd0ac
+- Teacher: https://huggingface.co/McGill-NLP/Qwen3-30B-A3B-SFT-EchoMoE-teacher
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base
-- Paper: pendiente de arXiv segun la model card (no disponible)
+- Dataset de instrucciones: https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT
+- Dataset de pretraining: https://huggingface.co/datasets/allenai/dolma3_dolmino_mix-10B-1025

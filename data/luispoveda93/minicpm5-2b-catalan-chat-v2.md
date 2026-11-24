@@ -2,119 +2,97 @@
 
 ## Resumen
 
-MiniCPM5-2B-catalan-chat-v2 es un modelo de lenguaje conversacional especializado en catalán, publicado por el usuario luispoveda93 en Hugging Face. Se trata de un ajuste fino con LoRA sobre luispoveda93/MiniCPM5-2B-catalan-chat (la "ronda 1", que a su vez es un LoRA sobre openbmb/MiniCPM5-2B entrenado con InstruCAT), y su objetivo declarado es mejorar el comportamiento en conversaciones multiturno en catalán. Cuenta con 2.516.756.480 parámetros (~2,5B) y se distribuye como modelo fusionado en bf16 (5,0 GB) junto a un adaptador LoRA separado.
+MiniCPM5-2B-catalan-chat-v2 es un ajuste fino conversacional en catalán del modelo MiniCPM5-2B de OpenBMB, desarrollado por el usuario luispoveda93. Se trata de la segunda ronda de especialización sobre el modelo base: la primera ronda (luispoveda93/MiniCPM5-2B-catalan-chat) se entrenó con instrucciones de un solo turno del dataset InstruCAT, mientras que esta segunda ronda se centra en el comportamiento de chat multi-turno. El modelo resuelve la necesidad de un asistente conversacional nativo en catalán de tamaño contenido (2.500 millones de parámetros) desplegable en hardware modesto.
 
-El problema que resuelve es acotado pero relevante: la mayoría de modelos abiertos de 2-3B tienen un soporte flojo del catalán y, cuando se ajustan, suelen hacerlo con instrucciones de un solo turno. Esta versión entrena específicamente con 23.400 conversaciones multiturno en catalán procedentes del núcleo conversacional del dataset BSC-LT/ALIA-2606-SFT (la mezcla de SFT que entrenó a ALIA-40b-instruct-2606), todas bajo licencia CC-BY-4.0, lo que elimina la restricción no comercial que arrastraba la ronda 1 en sus datos de entrenamiento.
+La arquitectura subyacente es un transformer tipo Llama (según los tags del repositorio), con 2.516.756.480 parámetros totales en formato safetensors y pesos en bf16. El entrenamiento se realizó mediante LoRA sobre el modelo fusionado de la ronda 1, utilizando 23.400 conversaciones multi-turno en catalán procedentes del núcleo conversacional del dataset BSC-LT/ALIA-2606-SFT, la misma mezcla SFT que entrenó ALIA-40b-instruct-2606.
 
-Es relevante ahora porque permite desplegar un asistente conversacional en catalán en hardware modesto, con un modelo de 2,5B que cabe en GPUs de consumo, y porque la model card documenta con detalle el proceso de entrenamiento, las métricas de evaluación y las limitaciones. No se han publicado resultados de benchmarks independientes en catalán: la evaluación se limita a pérdida y precisión de tokens sobre 400 conversaciones reservadas.
+Su relevancia actual radica en que cubre un nicho poco atendido: asistentes conversacionales en catalán con licencia abierta y peso ligero, con soporte para despliegue en transformers y versiones GGUF para llama.cpp. No obstante, se trata de un modelo de investigación con evaluación limitada a métricas de pérdida y precisión de tokens, sin benchmarks independientes de chat en catalán.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con atención causal (repositorio etiquetado como `llama`); modelo base openbmb/MiniCPM5-2B. No se detallan capas, cabezas ni tipo de atención en la información disponible |
-| Parámetros totales | 2.516.756.480 (~2,52B), según safetensors |
-| Parámetros activos | No aplica: la información disponible no indica que sea un modelo MoE |
-| Longitud de contexto | No disponible. El entrenamiento usó secuencias empaquetadas de 2.048 tokens (`max_length 2048 packed`), dato que no equivale necesariamente a la ventana de contexto del modelo base |
-| Tipos de cuantización | No disponible para esta revisión. Existe una versión GGUF de la ronda 1 en luispoveda93/MiniCPM5-2B-catalan-chat-GGUF, pero no se anuncia GGUF para la v2 |
-| Idiomas soportados | Catalán (`ca`) como idioma declarado y objetivo del ajuste |
-| Licencia | `other` (la model card no reproduce el texto de la licencia; los datos de la ronda 2 son CC-BY-4.0, mientras que la ronda 1 incluye InstruCAT en su linaje) |
-| Formato de pesos | Safetensors (transformers). Modelo fusionado en bf16 de 5,0 GB; adaptador LoRA publicado por separado |
-| Modelo base | luispoveda93/MiniCPM5-2B-catalan-chat (ronda 1), derivado de openbmb/MiniCPM5-2B |
-| Tamaño del repositorio | 15,1 GB (la model card indica 5,0 GB para el modelo fusionado en bf16) |
-| Método de ajuste | LoRA (r=32, α=64) sobre todas las capas de proyección |
-| Fecha de publicación | 10 de septiembre de 2026 (según metadatos del repositorio) |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Arquitectura | Transformer tipo Llama (según tags del repositorio) |
+| Parametros totales | 2.516.756.480 (2,52 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (el entrenamiento usó max_length 2048 empaquetado) |
+| Tipos de cuantizacion | bf16 (modelo fusionado); GGUF en Q4_K_M, Q8_0 y F16 |
+| Idiomas soportados | Catalán (ca) |
+| Licencia | other (licencia personalizada; ver limitaciones) |
+| Formato de pesos | safetensors (modelo fusionado), GGUF, adaptador LoRA |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base openbmb/MiniCPM5-2B: un transformer decoder-only con atención causal, etiquetado como `llama` en el repositorio de Hugging Face. No se proporcionan en la información disponible detalles adicionales sobre número de capas, dimensiones ocultas, tipo de atención (completa, lineal o híbrida) ni configuración del tokenizador. El proceso de ajuste es un LoRA aplicado sobre el modelo fusionado de la ronda 1, con r=32, α=64, sobre todas las capas de proyección, learning rate 1e-4 con schedule coseno y 50 pasos de warmup, una época, batch efectivo de 32 (4 × 8), `max_length` de 2.048 tokens con empaquetado, precisión bf16 y pérdida calculada únicamente sobre la respuesta del asistente (completion-only loss). El entrenamiento completo ocupó aproximadamente 326 pasos empaquetados y 2 horas y 19 minutos en una A100-large.
+El modelo es un transformer de tipo Llama con 2,52 mil millones de parámetros, heredado de openbmb/MiniCPM5-2B. Sobre la ronda 1 (ajustada con InstruCAT en instrucciones de un solo turno) se aplicó un segundo ajuste LoRA con r=32, α=64 sobre todas las capas de proyección, learning rate 1e-4 con decaimiento coseno, warmup de 50 pasos, 1 época, batch efectivo de 32 (4 × 8), max_length 2048 empaquetado, precisión bf16 y pérdida calculada solo sobre los tokens de completación.
 
-Los datos de entrenamiento son 23.400 conversaciones multiturno en catalán extraídas del núcleo denso en conversación del dataset BSC-LT/ALIA-2606-SFT: mturn-plus5 (5.281), eif o seguimiento exacto de instrucciones (5.821), mentor-ca (5.047), dolly-ca (2.449), coqcat (2.372), alia-identity (1.259) y system-prompt multiturno (1.226). Se añadió un system prompt en catalán ("Ets un assistent conversacional que respon sempre en català.") a las conversaciones que no lo llevaban, y se reservaron 400 conversaciones para evaluación. Los corpora de QA, RAG y matemáticas de la mezcla ALIA se excluyeron deliberadamente para priorizar el comportamiento conversacional; las habilidades de QA de tarea proceden de la ronda 1 (InstruCAT). No se documenta uso de RLHF ni DPO. Las métricas observadas fueron: pérdida de entrenamiento de 2,44 a ~1,44; pérdida de evaluación 1,48 → 1,41 → 1,383; y precisión de tokens de 0,57 a 0,704 en las 400 conversaciones reservadas.
+Los datos de entrenamiento son 23.400 conversaciones multi-turno en catalán extraídas del núcleo conversacional de BSC-LT/ALIA-2606-SFT: mturn-plus5 (5.281 conversaciones de flujo multi-turno), eif (5.821 de seguimiento exacto de instrucciones), mentor-ca (5.047 de diálogo y mentoría), dolly-ca (2.449 de instrucciones abiertas), coqcat (2.372 de QA conversacional), alia-identity (1.259 de autoidentidad) y system-prompt multi-turn (1.226 de adherencia al prompt de sistema). Todas las conversaciones son CC-BY-4.0. Se antepuso un prompt de sistema en catalán a las conversaciones que carecían de él y se reservaron 400 conversaciones para evaluación. El entrenamiento requirió unos 326 pasos empaquetados y 2 horas y 19 minutos en una A100-large. La pérdida de entrenamiento bajó de 2,44 a aproximadamente 1,44; la de evaluación de 1,48 a 1,383; y la precisión de tokens de 0,57 a 0,704.
 
 ## Capacidades
 
-- Generación de texto conversacional en catalán, con foco explícito en diálogos multiturno y coherencia de hilo conversacional.
-- Seguimiento de instrucciones de un solo turno y de varios turnos, reforzado con subconjuntos específicos del dataset (eif, dolly-ca).
-- Adherencia a system prompts: entrenado con conversaciones que incluyen system prompt en catalán, incluido un subconjunto dedicado a ello.
-- Identidad propia del asistente: subconjunto alia-identity de 1.259 conversaciones orientado a respuestas sobre sí mismo.
-- Respuesta a preguntas conversacionales (subconjunto coqcat) y diálogo de tipo mentoría (mentor-ca).
-- Soporte de plantilla de chat mediante `apply_chat_template` con roles `system`, `user` y `assistant`.
-- Capacidades de QA de tarea procedentes del linaje de la ronda 1 (InstruCAT), no del ajuste de la ronda 2.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio, modo de razonamiento explícito ni decodificación especulativa.
-- Capacidades multilingües: solo catalán declarado; no se documenta transferencia a castellano, inglés u otras lenguas.
+- Generación de texto conversacional multi-turno en catalán, con especial énfasis en el flujo natural de diálogo.
+- Seguimiento de instrucciones (instrucciones exactas y abiertas) gracias a las fuentes eif y dolly-ca.
+- Adherencia a prompts de sistema, incluida la instrucción de responder siempre en catalán.
+- Autoidentidad consistente (fuente alia-identity).
+- QA conversacional (fuente coqcat).
+- Diálogo de mentoría y asistencia guiada (fuente mentor-ca).
+- Capacidades de QA de tareas heredadas de la ronda 1 (InstruCAT).
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Atención al cliente automatizada en catalán: el modelo mantiene conversaciones multiturno con seguimiento del contexto y responde siempre en catalán si se fija el system prompt adecuado; es adecuado para primeros niveles de soporte donde no se requiere conocimiento factual profundo.
-- Asistente conversacional para pymes catalanoparlantes: chat interno o de cara al público desplegado en una única GPU de consumo, con coste de inferencia bajo gracias a los 2,5B de parámetros.
-- Mentoría y acompañamiento educativo: el subconjunto mentor-ca entrena explícitamente diálogos de orientación, por lo que el modelo puede usarse en tutores conversacionales de refuerzo para asignaturas no técnicas.
-- Generación de datos sintéticos en catalán: producir diálogos multiturno para ampliar corpus de entrenamiento, con la ventaja de que el modelo es pequeño y barato de ejecutar frente a alternativas de 7B o 40B.
-- Normalización y reescritura conversacional: reformular textos o respuestas en un registro catalán coherente dentro de un flujo de diálogo, por ejemplo para adaptar contenidos a lenguaje ciudadano.
-- Prototipado rápido de interfaces conversacionales: al integrarse con `transformers` y ser compatible con `text-generation-inference`, sirve como modelo de referencia para validar una UX antes de escalar a un modelo mayor.
-- Investigación en ajuste eficiente de lenguas de recursos medios: el repositorio documenta hiperparámetros, datos y métricas, por lo que resulta útil como caso de estudio replicable de LoRA encadenado (LoRA sobre LoRA) para catalán.
-- Sistemas de FAQ conversacional en administración pública: con la advertencia de que el conocimiento del mundo del modelo es limitado y debería combinarse con recuperación externa (RAG) para información factual y normativa.
+- Asistente conversacional en catalán para atención al cliente: el modelo puede mantener conversaciones multi-turno con contexto de hasta 2048 tokens, suficiente para gestionar incidencias típicas de soporte con historial de varios turnos.
+- Chatbot de acompañamiento o mentoría: la fuente mentor-ca entrena explícitamente patrones de diálogo guiado, útil para asistentes educativos o de orientación en catalán.
+- Integración en aplicaciones web o móviles con recursos limitados: con 2,52 B de parámetros y versiones GGUF Q4_K_M, puede ejecutarse en CPU o en GPUs de consumo, lo que permite desplegar un asistente catalán sin infraestructura de servidor dedicada.
+- Prototipado rápido de interfaces conversacionales en catalán: al estar disponible en transformers con `apply_chat_template`, se integra en pipelines de Python en pocas líneas y sirve para validar productos antes de escalar a modelos mayores.
+- Generación de respuestas en catalán dentro de flujos de datos: por ejemplo, para redactar respuestas de formularios, correos o mensajes de soporte con instrucciones de sistema que fijen el tono y el idioma.
+- Investigación en ajuste fino de modelos pequeños para lenguas de recursos medios: el modelo y su adaptador LoRA publicados permiten reproducir y extender el entrenamiento sobre otras mezclas de datos catalanas.
+- Base para fine-tuning adicional en dominios específicos (legal, sanitario, administrativo) en catalán, partiendo de un modelo que ya domina el registro conversacional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que la evaluación es a nivel de pérdida y precisión de tokens sobre conversaciones reservadas, y que no se ejecutó ningún benchmark independiente de chat en catalán. Los únicos datos disponibles son las métricas internas de evaluación:
-
-| Métrica | Valor |
-|---|---|
-| Pérdida de entrenamiento (inicio → final) | 2,44 → ~1,44 |
-| Pérdida de evaluación (evolución) | 1,48 → 1,41 → 1,383 |
-| Precisión de tokens (inicio → final) | 0,57 → 0,704 |
-| Conjunto de evaluación | 400 conversaciones reservadas |
-| Pasos empaquetados | ~326 |
-| Tiempo de entrenamiento | 2 h 19 min en A100-large |
-
-Comparativa con MMLU, HumanEval, GSM8K u otros benchmarks estándar: no disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas internas de entrenamiento y evaluación sobre 400 conversaciones reservadas: pérdida de evaluación de 1,383 y precisión de tokens de 0,704. No se ejecutó ningún benchmark independiente de chat en catalán.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16/fp16: aproximadamente 5,0 GB solo de pesos; sumando caché KV y activaciones, el rango práctico estimado es de 7 a 10 GB según longitud de contexto y batch.
-- VRAM estimada en 8 bits: en torno a 2,5-3 GB de pesos más overhead, aproximadamente 5-7 GB en total.
-- VRAM estimada en 4 bits: en torno a 1,3-2 GB de pesos más overhead, aproximadamente 3-4 GB en total. Cabe en GPUs de 6-8 GB.
-- GPUs recomendadas: A100 (la model card documenta entrenamiento en A100-large), H100, L40S o RTX 4090 para inferencia en bf16 con margen amplio; RTX 3090/4080 (16-24 GB) también sin problema.
-- Cabe en GPU de consumo: sí. En bf16 entra en RTX 3060 12 GB, RTX 4070 12 GB, RTX 4060 Ti 16 GB; en cuantización de 4 bits podría ejecutarse en GPUs de 6-8 GB, aunque no se distribuye GGUF oficial para esta revisión.
-- Opciones de despliegue: `transformers` (flujo documentado en la model card), text-generation-inference (el repositorio incluye el tag `endpoints_compatible`), integración con Hugging Face Inference Endpoints, y previsiblemente vLLM al tratarse de una arquitectura de tipo llama (no verificado en la información disponible). llama.cpp y Ollama requerirían una conversión a GGUF que no se anuncia para la v2; sí existe GGUF para la ronda 1.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni latencia por petición.
-- Nota sobre el entrenamiento: el ajuste LoRA completo requirió 2 h 19 min en A100-large, lo que da una idea del coste de reproducir el proceso, no de la inferencia.
+- VRAM estimada para inferencia en bf16: aproximadamente 5 GB para los pesos (el repositorio fusionado ocupa 5,0 GB) más overhead de activaciones y caché KV; en la práctica, unos 6-8 GB para contextos de 2048 tokens.
+- VRAM estimada en GGUF Q4_K_M: alrededor de 1,5-2 GB de pesos, desplegable en GPUs de 4 GB o incluso en CPU.
+- VRAM estimada en GGUF Q8_0: aproximadamente 2,7-3 GB de pesos.
+- GPU recomendadas: A100 o H100 para entrenamiento y evaluación a gran escala; RTX 4090, RTX 3090, RTX 4080 o RTX 4070 para inferencia en bf16 sin problemas.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en bf16 y en tarjetas de 4-6 GB con cuantización Q4_K_M.
+- Opciones de despliegue: transformers (con `AutoModelForCausalLM`), llama.cpp y Ollama mediante los GGUF publicados, y text-generation-inference (el repositorio está marcado como compatible con endpoints).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de benchmarks para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación factible con la información proporcionada es la del propio linaje del modelo:
-
-| Modelo | Parámetros | Contexto | Datos de ajuste | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-catalan-chat-v2 | ~2,52B | No disponible | 23,4K conversaciones multiturno en catalán (ALIA-2606-SFT) | `other` | Safetensors + LoRA |
-| MiniCPM5-2B-catalan-chat (ronda 1) | No disponible (mismo base de 2B) | No disponible | InstruCAT (instrucciones de un turno) | No disponible | Safetensors, LoRA y GGUF |
-| openbmb/MiniCPM5-2B (base) | No disponible | No disponible | No disponible | No disponible | Safetensors |
+| MiniCPM5-2B-catalan-chat-v2 | 2,52 B | No disponible (entrenado a 2048) | Catalán | other | HF: safetensors, GGUF, LoRA |
+| MiniCPM5-2B (openbmb) | ~2 B (no confirmado en la información) | No disponible | Multilingüe (no detallado) | No disponible | HF |
+| MiniCPM5-2B-catalan-chat (ronda 1) | 2,52 B | No disponible | Catalán | other | HF: safetensors, GGUF |
+| ALIA-40b-instruct-2606 | 40 B (según referencia de la model card) | No disponible | Catalán y otras lenguas ibéricas | No disponible | No disponible en la información |
 
-Existen otros modelos abiertos orientados al catalán (por ejemplo, de la familia Salamandra del BSC, FLOR de Projecte AINA o ALIA-40b-instruct-2606, citado en la propia model card), pero la información proporcionada no incluye sus especificaciones ni resultados, por lo que no es posible una comparación rigurosa. Comparativa de rendimiento: no disponible.
+La comparación con alternativas de la misma categoría (modelos conversacionales en catalán de tamaño pequeño) no está disponible en la información proporcionada. El modelo base original MiniCPM5-2B y ALIA-40b-instruct-2606 se citan en la model card como origen de los datos, pero no se aportan datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 
-- Tamaño reducido: con 2,5B de parámetros, el conocimiento del mundo y la profundidad de razonamiento son limitados. La model card lo señala explícitamente. No es adecuado para tareas que exijan conocimiento factual extenso o razonamiento complejo sin apoyo externo.
-- Sesgos conocidos: no se documenta ningún análisis de sesgos ni de seguridad. Al entrenarse sobre corpus conversacionales en catalán, hereda los sesgos presentes en esas fuentes.
-- Riesgo de alucinación: alto en preguntas factuales, dado el tamaño del modelo y que el ajuste prioriza el estilo conversacional sobre la exactitud. Recomendable combinar con recuperación de información.
-- Cobertura idiomática: solo catalán declarado. No hay garantía de comportamiento correcto en castellano, inglés u otras lenguas, ni de variantes dialectales del catalán.
-- Limitación de contexto: no se publica la ventana de contexto del modelo. El valor de 2.048 tokens corresponde al empaquetado durante el entrenamiento, no a una especificación de contexto de inferencia.
-- Evaluación insuficiente: no se ejecutó ningún benchmark independiente de chat en catalán. Las métricas reportadas (pérdida 1,383 y precisión de tokens 0,704 sobre 400 conversaciones) son internas, miden ajuste a la distribución de evaluación y no garantizan calidad conversacional percibida.
-- Cobertura de tareas desigual: los corpora de QA, RAG y matemáticas se excluyeron deliberadamente de la ronda 2. Las habilidades de QA de tarea dependen de la ronda 1 y no se han reevaluado tras el segundo ajuste.
-- Licencia: el repositorio declara `other` sin reproducir el texto de la licencia en la información disponible. Antes de un uso comercial es necesario verificar los términos exactos, teniendo en cuenta que el linaje incluye InstruCAT (ronda 1), pese a que los datos de la ronda 2 sean CC-BY-4.0.
-- Repositorio sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin revisión independiente por parte de terceros.
-- Discrepancia de tamaño: el repositorio ocupa 15,1 GB frente a los 5,0 GB que la model card atribuye al modelo fusionado en bf16; conviene revisar los archivos antes de descargar en entornos con almacenamiento ajustado.
-- Sin garantías de producción: no se documentan pruebas de robustez, evaluación de seguridad, ni comportamiento frente a prompts adversarios.
+- Con 2,52 B de parámetros, el conocimiento del mundo y la profundidad de razonamiento son limitados; el foco del entrenamiento es el estilo conversacional en catalán, no las tareas de conocimiento intensivo.
+- La evaluación se basa únicamente en pérdida y precisión de tokens sobre 400 conversaciones reservadas; no hay benchmark independiente de chat en catalán, por lo que el rendimiento real en producción es incierto.
+- La ronda 2 excluyó deliberadamente los corpus de QA (fineweb-edu, RAG, matemáticas) del mixture ALIA; las habilidades de QA de tareas provienen solo de la ronda 1 y pueden ser débiles.
+- Riesgo de alucinación inherente a un modelo de este tamaño, especialmente en preguntas factuales fuera del dominio conversacional.
+- El modelo está entrenado exclusivamente en catalán; no se garantiza un comportamiento correcto en castellano u otras lenguas.
+- La licencia es "other" (personalizada); no se detallan en la información disponible las condiciones exactas de uso comercial, por lo que debe revisarse el archivo de licencia del repositorio antes de un despliegue productivo.
+- La ronda 1 incluye datos de InstruCAT en su linaje, lo que puede arrastrar restricciones de la ronda anterior pese a que los datos de la ronda 2 son CC-BY-4.0.
+- La longitud de contexto efectiva no está documentada; el entrenamiento usó 2048 tokens empaquetados, por lo que contextos superiores no están validados.
+- Modelo de investigación con 369 descargas y 1 like en el momento de la consulta; no hay evidencia de uso en producción ni mantenimiento a largo plazo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-v2
-- Adaptador LoRA de la ronda 2: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-v2-lora
-- Ronda 1 (modelo base del ajuste): https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat
-- Versión GGUF de la ronda 1: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-GGUF
+- Adaptador LoRA: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-v2-lora
+- GGUF: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-v2-GGUF
+- Ronda 1: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat
+- GGUF de la ronda 1: https://huggingface.co/luispoveda93/MiniCPM5-2B-catalan-chat-GGUF
 - Modelo base original: https://huggingface.co/openbmb/MiniCPM5-2B
-- Dataset de la ronda 1 (InstruCAT): https://huggingface.co/datasets/projecte-aina/InstruCAT
-- Dataset de la ronda 2 (ALIA-2606-SFT): https://huggingface.co/datasets/BSC-LT/ALIA-2606-SFT
+- Dataset InstruCAT: https://huggingface.co/datasets/projecte-aina/InstruCAT
+- Dataset ALIA-2606-SFT: https://huggingface.co/datasets/BSC-LT/ALIA-2606-SFT
 - Métricas de entrenamiento (trackio): https://luispoveda93-minicpm5-2b-catalan-chat-v2-trackio.hf.space?project=minicpm5-2b-catalan-chat-v2
-- Búsqueda web: los resultados obtenidos no guardan relación con el modelo (corresponden a plantillas sobre reducción de alquiler en alemán), por lo que no se incluye ningún enlace adicional. No se han encontrado papers, blogs ni demos asociados a este modelo en la información disponible.

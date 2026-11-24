@@ -2,105 +2,93 @@
 
 ## Resumen
 
-Qwen3.8-27B-oQ6e-fp16-mtp es un checkpoint cuantizado en formato MLX del modelo Qwen/Qwen3.8-27B, un modelo denso de visión-lenguaje de 27.781 millones de parámetros construido sobre la arquitectura Qwen3.5. Lo publica el usuario Jundot y no se trata de un entrenamiento nuevo, sino de una reempaquetado de pesos con cuantización de precisión mixta generada por la herramienta oQ (oMLX v0.7.1) mediante la técnica Improved oQe Quantization. El objetivo es reducir el peso del modelo desde su formato original hasta unas 22,945 GiB de pesos lógicos, manteniendo un promedio efectivo de 7,095 bits por peso.
+Qwen3.8-27B-oQ6e-fp16-mtp es una cuantizacion de precision mixta en formato MLX del modelo Qwen/Qwen3.8-27B, un modelo denso de vision-lenguaje de 27.781 millones de parametros construido sobre la arquitectura Qwen3.5. La publica el usuario Jundot mediante su herramienta oQ (oMLX v0.8.0), y no es un modelo entrenado desde cero, sino un checkpoint derivado que preserva el backbone de lenguaje, el codificador visual y la cabeza de prediccion multi-token (MTP) del modelo original.
 
-El checkpoint incluye los tres componentes del modelo original: el backbone de lenguaje (26,896B de parámetros lógicos), el encoder de visión (0,461B) y la cabeza de predicción multi-token o MTP (0,425B), que permite decodificación especulativa. El contexto nativo del modelo base es de 262.144 tokens, lo que lo sitúa en la gama de contexto largo, y su pipeline declarado es image-text-to-text, es decir, acepta imágenes además de texto.
+El interes practico reside en que comprime un modelo de 27B con contexto nativo de 262.144 tokens hasta 23,085 GiB de almacenamiento, con un promedio efectivo de 7,138 bits por peso en el checkpoint completo (6,700 bits/peso en el backbone de lenguaje). Esto lo hace viable en equipos Apple Silicon con memoria unificada, donde un checkpoint en BF16 completo no cabria con comodidad. La cuantizacion no es uniforme: asigna 6 bits a la mayoria de las capas (88,3% de los pesos) y sube a 8 bits en las capas medidas como mas sensibles (9,8%), manteniendo en FP32 el codificador visual.
 
-La relevancia de esta ficha es práctica: se trata de una build orientada a ejecución local en Apple Silicon mediante MLX, con licencia Apache-2.0 heredada del modelo fuente. Al no existir resultados de benchmarks publicados por el autor ni una model card extensa, la evaluación debe basarse en las especificaciones de cuantización y en el comportamiento del modelo base. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validación comunitaria.
+La relevancia es doble. Por un lado, demuestra una tecnica de cuantizacion guiada por sensibilidad por capa con reajuste por minimos cuadrados ponderados, que reduce el error frente a la cuantizacion uniforme al mismo tamano. Por otro, ofrece una via para desplegar un VLM de 27B con comprension de imagen y video en hardware de consumo, bajo licencia Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido de Qwen3.5 con capas Gated DeltaNet y Gated Attention, mas encoder de vision y cabeza MTP |
+| Arquitectura | Transformer hibrido con capas Gated DeltaNet y Gated Attention (Qwen3.5), con codificador visual y cabeza MTP |
 | Parametros totales | 27.781.427.952 (27,781B) |
-| Parametros activos | No aplica, el modelo base es denso |
-| Longitud de contexto | 262.144 tokens nativos (segun la model card, heredado del modelo base) |
-| Tipos de cuantizacion | Mixta: affine 6-bit grupo 64 (25,141B de pesos logicos), affine 8-bit grupo 64 (2,124B), FP16 (0,055B) y FP32 (0,461B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | 262.144 tokens nativos |
+| Tipos de cuantizacion | Precision mixta oQ6e: affine 6-bit grupo 64 (24,543B), affine 8-bit grupo 64 (2,722B), FP16 (0,055B), FP32 (0,461B) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors en formato MLX, con escalas y sesgos de cuantizacion en FP16 |
-
-Datos adicionales de almacenamiento, tomados de la model card:
-
-| Componente | Pesos logicos | Almacenamiento |
-|---|---|---|
-| Backbone de lenguaje | 26,896B | 22,387 GB / 20,850 GiB |
-| Encoder de vision | 0,461B | 1,843 GB / 1,716 GiB |
-| Cabeza MTP | 0,425B | 0,407 GB / 0,379 GiB |
-| Total | 27,781B | 24,637 GB / 22,945 GiB |
-
-El promedio efectivo declarado es de 7,095 bits por peso para el checkpoint completo, con un tamano de repositorio de 24,7 GB.
+| Formato de pesos | safetensors (MLX), almacenamiento FP16 para escalas, sesgos y tensores no cuantizados; codificador visual en FP32 |
+| Bits efectivos por peso | 6,700 (backbone de lenguaje); 7,138 (checkpoint completo) |
+| Tamano del repositorio | 24,8 GB (23,085 GiB) |
+| Libreria | mlx |
+| Pipeline | image-text-to-text |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen/Qwen3.8-27B es un modelo denso de 27B parámetros con arquitectura híbrida: combina capas Gated DeltaNet (un mecanismo de atención lineal con estado recurrente) con capas de Gated Attention convencional. Esta mezcla busca reducir el coste computacional en secuencias largas sin renunciar a la calidad de atención completa en las capas donde es necesaria. El modelo incorpora además un encoder de visión que le permite procesar imágenes y vídeo, y una cabeza de predicción multi-token (MTP) que predice varios tokens futuros por paso, lo que habilita decodificación especulativa y por tanto aceleración de la generación.
+El modelo base Qwen3.8-27B emplea un transformer hibrido que combina capas Gated DeltaNet (mecanismo de estado lineal recurrente con compuertas) y capas Gated Attention. Esta mezcla busca reducir el coste computacional y de memoria en secuencias largas frente a la atencion completa, lo que explica el contexto nativo de 262.144 tokens. El checkpoint incluye tres componentes diferenciados: el backbone de lenguaje (26,896B de pesos logicos, 20,979 GiB), el codificador visual (0,461B, 1,716 GiB) y la cabeza de prediccion multi-token MTP (0,425B, 0,389 GiB). La MTP permite decodificacion especulativa, es decir, predecir varios tokens por paso para acelerar la generacion.
 
-Sobre el entrenamiento del modelo base no se dispone de información en la documentación proporcionada: no constan el número de tokens, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineamiento. El checkpoint aquí descrito no añade entrenamiento alguno; es un proceso de cuantización. La herramienta oQ asigna bits por sensibilidad medida de cada capa, redondea cada grupo con una matriz de importancia calculada con 128 muestras de 512 tokens, y aplica un reajuste por mínimos cuadrados ponderados de la escala y el sesgo. La variante "fp16" almacena las escalas, los sesgos y los tensores no cuantizados en FP16 en lugar de BF16, y mantiene el encoder de visión en FP32.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original. Lo que si documenta el autor es el proceso de cuantizacion: oQ6e asigna bits segun la sensibilidad medida por capa, calcula una matriz de importancia con 128 muestras de 512 tokens y aplica redondeo y un reajuste por minimos cuadrados ponderados de la escala y el sesgo de cada grupo. La revision del 19 de noviembre de 2026 re-cuantizo el modelo con el redondeo oQe refinado de oMLX 0.8.0, que reduce el error al mismo tamano y velocidad.
 
 ## Capacidades
 
-- Generacion de texto conversacional, con el tag conversational declarado en el repositorio.
-- Razonamiento y comprension de lenguaje, heredados del modelo base Qwen3.8-27B.
-- Comprension de imagen y video, al incluir el encoder de vision y declarar el pipeline image-text-to-text.
-- Prediccion multi-token mediante la cabeza MTP, orientada a decodificacion especulativa.
-- Procesamiento de contextos largos de hasta 262.144 tokens.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Soporte de tool calling o function calling: no disponible en la informacion proporcionada.
-- Modo de pensamiento explicito (thinking mode): no disponible en la informacion proporcionada.
+- Generacion de texto y razonamiento en conversaciones multi-turno.
+- Comprension de imagenes y video (pipeline image-text-to-text, codificador visual incluido).
+- Contexto largo de hasta 262.144 tokens para documentos extensos o dialogos prolongados.
+- Decodificacion especulativa mediante la cabeza MTP, que acelera la inferencia.
+- Capacidades multilingues: no disponibles como dato verificado; dependen del modelo base.
+- Soporte de tool calling, function calling y razonamiento multi-paso en agentes: no confirmado en la informacion disponible.
+- Modo de razonamiento explicito (thinking): no confirmado en la informacion disponible.
 
 ## Casos de uso
 
-- Analisis de documentos largos con imagenes intercaladas: el contexto nativo de 262.144 tokens permite procesar informes extensos con graficos, tablas escaneadas y figuras en una sola pasada, sin trocear el documento y perder la relacion entre texto y figura.
-- Inspeccion visual asistida en local: al ejecutarse en MLX sobre Apple Silicon, encaja en flujos donde no se pueden enviar imagenes a servicios en la nube por motivos de confidencialidad, como revision de imagenes medicas o documentacion interna.
-- Transcripcion y resumen de video: el modelo base declara comprension de video, por lo que puede describir o resumir secuencias a partir de fotogramas muestreados y anadir contexto textual.
-- Asistentes conversacionales de larga duracion: mantener el historial completo de una conversacion dentro de la ventana de contexto evita resumir el historial y perder detalles, algo util en soporte tecnico o tutoria.
-- Generacion de codigo asistida en local: como modelo de 27B denso, puede usarse para autocompletado y explicacion de codigo en entornos de desarrollo sin conexion, siempre que se valide el resultado.
-- Prototipado e investigacion en equipos con hardware Apple: el checkpoint cuantizado permite experimentar con un modelo de 27B en un portatil o Mac Studio sin necesidad de GPUs dedicadas, reduciendo la barrera de entrada para evaluacion de arquitecturas hibridas.
-- Decodificacion especulativa: la inclusion de la cabeza MTP permite emplear esta tecnica para reducir la latencia de generacion en despliegues que la soporten.
-- Extraccion estructurada de informacion multimodal: conversion de capturas, formularios o diagramas en datos estructurados para pipelines internos.
+- Analisis de documentos extensos con imagenes intercaladas: informes financieros, contratos con anexos graficos o papers con figuras. El contexto de 262.144 tokens permite cargar el documento completo sin fragmentacion y el codificador visual procesa las imagenes en la misma pasada.
+- Asistencia sobre capturas y diagramas en entornos de desarrollo: el modelo puede describir diagramas de arquitectura, leer errores en capturas de pantalla o interpretar grafos de dependencias, combinando vision y generacion de texto.
+- Procesamiento de video para resumenes: al aceptar entrada de video, sirve para generar transcripciones descriptivas, resumenes de reuniones grabadas o extraccion de acciones a partir de material audiovisual.
+- Despliegue local en Apple Silicon: con 23,085 GiB de almacenamiento y formato MLX, cabe en equipos con 32 GB o mas de memoria unificada, lo que permite prototipar un VLM de 27B en un portatil o Mac Studio sin GPU dedicada.
+- Evaluacion comparativa de tecnicas de cuantizacion: util como referencia para medir la perdida de calidad de oQ6e frente al modelo BF16 en tareas de vision y lenguaje, dado que el autor documenta la distribucion de bits por capa.
+- Chat multimodal en prototipos de investigacion: conversaciones con imagenes en las que se requiere contexto largo y licencia permisiva, sin ataduras a APIs propietarias.
+- Generacion de codigo a partir de diagramas o bocetos: el modelo puede recibir una imagen de un esquema y producir el codigo correspondiente, aprovechando la ventana de contexto para incluir especificaciones completas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye en la model card ninguna medicion de MMLU, HumanEval, GSM8K, MMMU ni de tareas equivalentes, ni para el checkpoint cuantizado ni en comparacion con el modelo base sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye metricas de MMLU, HumanEval, GSM8K ni evaluaciones multimodales, ni comparaciones con el modelo base sin cuantizar.
 
 ## Requisitos de hardware
 
-- VRAM o memoria unificada estimada: los pesos ocupan 22,945 GiB segun la model card. A eso hay que sumar el coste de activaciones y de la cache KV, que crece con la longitud de contexto. Para contexto corto, un minimo practico de 26-28 GB de memoria disponible; para explotar los 262.144 tokens de contexto, bastante mas.
-- Encoder de vision: se mantiene en FP32 (1,716 GiB), por lo que no se beneficia de la reduccion de la cuantizacion.
-- GPU dedicadas: el formato es MLX, especifico del ecosistema de Apple, por lo que no se ejecuta directamente en CUDA. No se dispone de datos de rendimiento en A100, H100 ni RTX 4090 en la informacion proporcionada.
-- GPU de consumo: en el ecosistema Apple, un equipo con 32 GB de memoria unificada puede cargar el modelo con margen escaso; 48 GB o 64 GB son mas realistas para uso con contexto largo. En el lado NVIDIA, una RTX 4090 de 24 GB no seria suficiente para los pesos completos en este formato.
-- Opciones de despliegue: mlx-lm y mlx-vlm para inferencia y servidores MLX; LM Studio como interfaz de usuario. vLLM, llama.cpp, TGI y Ollama no son aplicables a este checkpoint tal cual, ya que el repositorio contiene pesos MLX y no GGUF ni safetensors de PyTorch.
-- Latencia y throughput: no disponibles. No se han publicado mediciones.
+- VRAM/memoria estimada: 23,085 GiB solo para los pesos. Para inferencia hay que sumar la cache KV y los buffers de activacion, por lo que se recomienda un minimo de 32 GB de memoria unificada y, para contextos largos, 48-64 GB.
+- GPU recomendadas: el formato es MLX, por lo que el hardware objetivo son chips Apple Silicon (M1 Pro/Max/Ultra en adelante, M2/M3/M4 Pro/Max/Ultra). No esta pensado para CUDA; en GPU NVIDIA habria que reconvertir los pesos.
+- Cabe en consumer GPU: si, en equipos Apple con memoria unificada de 32 GB o superior. No es directamente usable en RTX 4090 (24 GB) por formato y por el margen necesario para cache y activaciones.
+- Opciones de despliegue: MLX (libreria mlx y oMLX del autor). No se documentan conversiones a llama.cpp, Ollama, vLLM o TGI para este checkpoint.
+- Latencia y throughput: no disponibles. La cabeza MTP esta disenada para decodificacion especulativa, pero el autor no publica cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de checkpoints comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. La unica referencia directa es el propio modelo base:
-
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
+| Modelo | Parametros | Contexto | Vision | Licencia | Formato |
 |---|---|---|---|---|---|
-| Jundot/Qwen3.8-27B-oQ6e-fp16-mtp | 27,781B | 262.144 tokens | Mixta, 7,095 bits/peso efectivos | Apache-2.0 | safetensors MLX |
-| Qwen/Qwen3.8-27B (modelo base) | 27,781B | 262.144 tokens | Sin cuantizar | Apache-2.0 | no disponible en la informacion proporcionada |
+| Qwen3.8-27B-oQ6e-fp16-mtp (este) | 27,781B | 262.144 | Si (imagen y video) | Apache-2.0 | MLX safetensors, precision mixta ~7,1 bits/peso |
+| Qwen/Qwen3.8-27B (base) | 27,781B | 262.144 | Si (imagen y video) | Apache-2.0 | safetensors BF16 (sin cuantizar) |
+| Alternativas de 27B con vision | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se dispone de alternativas equivalentes de otros autores para comparar parametros, contexto, rendimiento y disponibilidad.
+La comparacion relevante es contra el modelo base: este checkpoint ocupa 23,085 GiB frente al peso en BF16 del original (aproximadamente el doble), a cambio de una perdida de precision que el autor no cuantifica con benchmarks. No se dispone de datos verificados de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin evaluaciones independientes publicadas.
-- No hay benchmarks publicados, ni del checkpoint cuantizado ni de la comparacion con el modelo base. Se desconoce la degradacion de calidad introducida por la cuantizacion a 6 bits en el 90,497 % de los pesos logicos.
-- La cuantizacion a 6 bits por grupo 64 puede degradar tareas sensibles a la precision numerica, como razonamiento matematico de varios pasos o generacion de codigo con dependencias sutiles.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje generativos; no se ha publicado ninguna medicion de tasa de alucinacion ni de calibracion.
-- Sesgos conocidos: no disponibles. El autor no documenta evaluaciones de sesgo, toxicidad ni sesgo demografico.
-- Idiomas soportados: no disponibles. Se desconoce el comportamiento en castellano o en idiomas distintos del ingles.
-- Restricciones de licencia: Apache-2.0 permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia y el archivo LICENSE. Al derivar de Qwen/Qwen3.8-27B, conviene verificar que la licencia del modelo base sea efectivamente Apache-2.0 y no una licencia con condiciones adicionales.
-- Dependencia de formato: al ser pesos MLX, no son portables a entornos CUDA sin una conversion previa; esto limita el despliegue en infraestructura de servidores convencional.
-- La fecha de creacion registrada es 2026-10-12, con una actualizacion el mismo dia, lo que sugiere un artefacto reciente y poco rodado.
-- Advertencia sobre la busqueda web: los resultados obtenidos no guardan ninguna relacion con el modelo y no se han utilizado como fuente.
+- Es una cuantizacion, no un modelo original: introduce error de redondeo respecto al BF16. El autor no publica evaluaciones de la degradacion resultante en tareas de vision o razonamiento.
+- El autor advierte de que la version anterior del checkpoint debe descargarse de nuevo: la revision del 19 de noviembre de 2026 cambia el redondeo. Verificar la fecha de los archivos antes de usar.
+- Dependencia de MLX: no es portable a CUDA sin conversion previa, lo que limita su uso a hardware Apple.
+- Idiomas soportados no documentados: no se puede confirmar el rendimiento en castellano ni en otras lenguas distintas del ingles y el chino, habituales en la familia Qwen.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, agravado en tareas de descripcion de imagenes o video donde el modelo puede inventar detalles no presentes.
+- Soporte de tool calling, agentes y modo thinking no confirmado en la informacion disponible; no asumir estas capacidades en produccion sin validacion.
+- La licencia Apache-2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio y las condiciones del modelo base.
+- Modelo con 0 likes y 394 descargas en el momento de la consulta: comunidad pequena, sin validacion independiente de calidad.
+- El contexto de 262.144 tokens exige memoria adicional para la cache KV; en equipos de 32 GB el contexto efectivo sera mucho menor que el maximo nominal.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
-- Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385
-- La busqueda web realizada no devolvio enlaces relevantes sobre este modelo, su arquitectura o sus benchmarks.
+- Herramienta oQ (oMLX): https://github.com/jundot/omlx
+- Pull request de mejora oQe: https://github.com/jundot/omlx/pull/4930
+- Pull request de refinamiento del redondeo oQe: https://github.com/jundot/omlx/pull/5292

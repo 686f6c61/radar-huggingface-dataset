@@ -43,31 +43,5 @@
   "renamed_to": "sergolsub/elephant-v1-9B-MLX-8bit",
   "renamed_at": "2026-11-23T12:17:53.505Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "sergolsub/mlx-elephant-v1-9B · Hugging Face",
-      "url": "https://huggingface.co/sergolsub/mlx-elephant-v1-9B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "sergolsub/mlx-elephant-1-8bit · Hugging Face",
-      "url": "https://huggingface.co/sergolsub/mlx-elephant-1-8bit",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "elephant-1 - 16K context, open source | LLM Reference",
-      "url": "https://www.llmreference.com/model/elephant-1",
-      "snippet": "elephant-1 is a 9B open-weight decision model from Base Labs, Baseten&#x27;s research lab, released October 21, 2026. It is a full fine-tune of Qwen3.5-9B that turns a state and typed questions into calibrated probabilities for choice, yes/no and score answers in a single forward pass, without generating free-form text, for routing, classification and rubric scoring. It shares mammoth-1&#x27;s block ..."
-    },
-    {
-      "title": "Elephant by Baseten — Models, Pricing & API | LLM Reference",
-      "url": "https://www.llmreference.com/model-family/elephant",
-      "snippet": "Elephant AI models by Baseten with up to 16K context. Compare 1 variant by pricing, benchmarks, and API access."
-    },
-    {
-      "title": "elephant-1: Baseten&#x27;s 9B Open Decision Model | AI/TLDR",
-      "url": "https://ai-tldr.dev/models/elephant-1/",
-      "snippet": "elephant-1 is a 9B-parameter decision model from Base Labs, the research lab at Baseten, announced on October 21, 2026 alongside the 27B mammoth-1. It is post-trained from Qwen3.5-9B."
-    }
-  ]
+  "sources": []
 }

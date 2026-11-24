@@ -71,11 +71,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
-      "url": "https://modelheretic.com/",
-      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities. Updated daily."
-    }
-  ]
+  "sources": []
 }

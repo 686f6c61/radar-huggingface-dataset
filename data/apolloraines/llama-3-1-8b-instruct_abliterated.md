@@ -2,80 +2,90 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct_Abliterated es una variante del modelo Llama-3.1-8B-Instruct de Meta, modificada mediante la herramienta propietaria jBlaze, desarrollada por Apollo Raines. Esta herramienta aplica técnicas de *representation engineering* (concretamente *abliteration*) directamente sobre los pesos del modelo, eliminando quirúrgicamente los comportamientos de rechazo entrenados sin necesidad de fine-tuning ni entrenamiento adicional. El resultado es un modelo que responde a todas las peticiones sin negarse, conservando el conocimiento, la fluidez y las capacidades de razonamiento del modelo original.
+Llama-3.1-8B-Instruct_Abliterated es una variante del modelo Meta Llama-3.1-8B-Instruct publicada por ApolloRaines, en la que se han eliminado quirúrgicamente los mecanismos de rechazo (refusals) mediante una tecnica de edicion de pesos denominada "abliteration", implementada con la herramienta propietaria jBlaze del mismo autor. No se ha realizado ningun tipo de fine-tuning ni entrenamiento adicional con gradientes: la modificacion consiste en identificar una direccion de comportamiento en el espacio de activaciones y ablacionarla directamente en los pesos.
 
-El modelo mantiene la arquitectura LlamaForCausalLM con 8.030 millones de parámetros y una ventana de contexto de 128K tokens (heredada del modelo base, aunque no se especifica en la model card). Está disponible en formato safetensors con precisión bf16 y se distribuye bajo la licencia Llama 3.1 Community License. Su relevancia radica en que ofrece una alternativa a los modelos "censurados" para casos de uso donde se requiere una generación sin restricciones, como investigación en alineación, análisis de contenido o creación literaria no filtrada, aunque con los riesgos asociados a la eliminación de guardarraíles.
+El modelo conserva la arquitectura original de Llama 3.1: un transformer decoder-only de 32 capas con 8.030.261.248 parametros en precision bf16, ventana de contexto de 128.000 tokens y tokenizador de 128.256 entradas. El objetivo declarado es que el modelo responda a cualquier prompt sin negativas, manteniendo el conocimiento, la fluidez y la capacidad de razonamiento del modelo base.
+
+La relevancia de esta publicacion es fundamentalmente metodologica: el autor la presenta como una demostracion de que las disposiciones de comportamiento aprendidas residen en los pesos como direcciones identificables y modificables a posteriori, sin reentrenar. Es un modelo de investigacion, distribuido a "intensidad parcial" segun el propio autor, y no una alternativa de produccion al modelo base. Cuenta con 386 descargas y ningun "like" en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (32 capas, transformer denso) |
+| Arquitectura | LlamaForCausalLM (transformer decoder-only, 32 capas) |
 | Parametros totales | 8.030.261.248 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 128K (heredada del modelo base, no confirmada en la model card) |
-| Tipos de cuantizacion | no disponible (pesos originales en bf16; cuantizable a 8, 4 o 2 bits con herramientas externas) |
-| Idiomas soportados | en (model card); el base es multilingue, pero no se confirma en esta variante |
+| Longitud de contexto | 128.000 tokens (heredada de Llama 3.1; no se especifica en la model card) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan variantes GGUF/AWQ/GPTQ oficiales) |
+| Idiomas soportados | en (ingles, segun la model card; el modelo base soporta oficialmente 8 idiomas) |
 | Licencia | Llama 3.1 Community License |
 | Formato de pesos | safetensors (bf16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Llama-3.1-8B-Instruct, un transformer denso con 32 capas, atención con *grouped query attention* (GQA) y *rotary positional embeddings* (RoPE). La modificación se realiza con jBlaze, una herramienta de "cirugía conductual" que identifica y elimina direcciones unidireccionales en el espacio de representación interno asociadas al comportamiento de rechazo. No se realizó ningún entrenamiento adicional: los pesos se modifican directamente mediante operaciones algebraicas sobre las activaciones, una técnica similar a la *abliteration* descrita por FailSpy y popularizada por mlabonne. El proceso preserva las capacidades generales del modelo, pero elimina la tendencia a negarse ante peticiones que el modelo original consideraría inapropiadas.
+La arquitectura es identica a la de meta-llama/Llama-3.1-8B-Instruct: un transformer decoder-only denso de 32 capas, 8.030 millones de parametros, atencion con RoPE y contexto extendido hasta 128.000 tokens. El modelo parte de los pesos del Instruct oficial de Meta, que fue entrenado con preentrenamiento masivo seguido de post-entrenamiento (SFT y RLHF/DPO), aunque la model card no detalla el volumen de tokens ni la composicion del dataset original.
+
+La intervencion de ApolloRaines no anade entrenamiento: aplica "weight surgery" con jBlaze para localizar una direccion de comportamiento asociada al rechazo y ablacionarla directamente en los pesos. El autor describe el resultado como una edicion de direccion unica ("single-direction"), sin gradientes, y senala que la misma tecnica puede apuntarse en sentido contrario (hacia comportamientos mas seguros). Un caveat relevante es que, segun el propio autor, la mayoria de sus modelos publicos se liberan a intensidad parcial: lo publicado es una demostracion, no la version completa de la herramienta.
 
 ## Capacidades
 
-- Generacion de texto fluida y coherente en ingles, con razonamiento y conocimiento general heredados del modelo base.
-- Razonamiento multi-paso y resolucion de problemas matematicos y logicos (capacidades del base, no verificadas en esta variante).
-- Generacion de codigo en multiples lenguajes de programacion, con soporte de *tool calling* y *function calling* (heredado del base).
-- Capacidad de seguir instrucciones complejas y mantener conversaciones multi-turno con contexto largo (hasta 128K tokens).
-- Capacidad especial: responde a todas las peticiones sin rechazo, incluyendo temas que el modelo base bloquearia (contenido explicito, violencia, etc.).
-- Soporte de agentes y *multi-step reasoning* gracias a la ventana de contexto amplia y al entrenamiento instruct del base.
+- Generacion de texto conversacional multi-turno en ingles, con la fluidez y el estilo del Instruct original.
+- Respuesta a practicamente cualquier prompt sin negativas ni rechazos, que es precisamente el comportamiento ablacionado.
+- Razonamiento, conocimiento general y matematicas basicas heredados del modelo base (sin garantia de conservacion integra tras la edicion).
+- Generacion y explicacion de codigo, en la medida en que lo soporta Llama 3.1 8B Instruct.
+- Soporte de plantilla de chat (`apply_chat_template`) con roles system/user/assistant.
+- Capacidades multilingues limitadas: la model card declara solo `en`, aunque el modelo base soporta oficialmente aleman, frances, italiano, portugues, hindi, espanol y tailandes.
+- Tool calling y function calling: no documentado en la model card; el modelo base lo soporta de forma no nativa.
+- Modo "thinking", vision o audio: no disponible.
 
 ## Casos de uso
 
-- Investigacion en alineacion y seguridad de IA: permite estudiar el comportamiento de un modelo sin guardarrailes, comparando respuestas con el base para analizar el impacto de la *abliteration* en la utilidad y la seguridad.
-- Generacion de ficcion y narrativa sin restricciones: escritores pueden explorar tramas con violencia, sexo o temas tabu sin que el modelo se niegue, manteniendo calidad literaria.
-- Analisis de contenido sensible: en entornos controlados, el modelo puede procesar y resumir textos con contenido explicito (por ejemplo, informes forenses o literatura) sin filtros automaticos.
-- Creacion de personajes de rol (roleplay) avanzado: el modelo mantiene la coherencia del personaje incluso en escenarios que el base rechazaria, util para juegos de rol o simulaciones.
-- Evaluacion de sesgos y comportamientos indeseados: al eliminar el rechazo, se pueden provocar respuestas que revelen sesgos latentes del modelo base, util para auditorias de seguridad.
-- Desarrollo de asistentes especializados en dominios donde el rechazo es un obstaculo (por ejemplo, educacion sexual, asesoria legal sobre temas controvertidos), siempre con supervisión humana.
+- Investigacion en seguridad y alineacion: analizar que cambia en el comportamiento de un modelo cuando se elimina la direccion de rechazo, comparando respuestas contra el modelo base en un mismo conjunto de prompts.
+- Evaluacion de tecnicas de edicion de pesos: servir como referencia reproducible de "abliteration" para contrastar con otras aproximaciones (circuitos, steering vectors, fine-tuning de rechazo).
+- Pruebas de robustez de filtros de contenido: usar el modelo como generador adversario para validar que las capas de moderacion externas de un pipeline capturan salidas que el modelo ya no bloquea por si mismo.
+- Generacion de texto creativo sin friccion: escenarios de escritura de ficcion, guiones o role-play donde los rechazos del Instruct resultan disruptivos, siempre con moderacion externa.
+- Red teaming de aplicaciones LLM: simular un atacante con un modelo que no se niega, para medir la resistencia de sistemas propios ante prompts maliciosos.
+- Docencia y divulgacion: ilustrar de forma tangible que los comportamientos aprendidos son direcciones en el espacio de pesos, con un caso concreto y descargable.
+- Prototipado de asistentes conversacionales en ingles donde el coste de un rechazo erroneo es alto, asumiendo que la responsabilidad de filtrado recae en el sistema que lo envuelve.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye evaluaciones cuantitativas, y no se encontraron datos externos en la busqueda web. Se asume que el rendimiento es similar al del modelo base Llama-3.1-8B-Instruct, pero no hay evidencia que lo confirme.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos en bf16 ocupan aproximadamente 16 GB (8.03B parametros x 2 bytes). Con cuantizacion a 8 bits se reduce a ~8 GB, y a 4 bits a ~4-5 GB.
-- GPU recomendadas: para inferencia en bf16 se necesita una GPU con al menos 16 GB (RTX 4080, RTX 4090, A100 40GB, etc.). Con cuantizacion 4 bits cabe en GPUs de 8 GB (RTX 3060, RTX 4060, etc.).
-- Si cabe en consumer GPU: si, en RTX 3090/4090 (24 GB) sin cuantizar, y en GPUs de 8-12 GB con cuantizacion.
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama (si se convierte a GGUF), Transformers con `device_map="auto"`.
-- Latencia y throughput: no disponibles. Para un modelo de 8B en una RTX 4090, se espera una generacion de 50-100 tokens/s con vLLM, pero no hay datos medidos para esta variante.
+- VRAM estimada en bf16: aproximadamente 16 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se necesitan 18-24 GB para contextos moderados.
+- En cuantizacion de 8 bits: unos 8-9 GB de pesos; en 4 bits: unos 4-5 GB, aunque no se distribuyen cuantizaciones oficiales de este checkpoint.
+- GPU recomendadas para bf16: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB, justa para contexto corto y batch pequeno).
+- Cabe en GPU de consumo: si, en RTX 4090/3090 (24 GB) en bf16 con contexto limitado; en RTX 4080/4070 Ti (16 GB) solo con cuantizacion.
+- Opciones de despliegue: transformers (ruta documentada por el autor), vLLM y TGI para servir en bf16; llama.cpp/Ollama requeririan convertir los pesos a GGUF, paso no documentado en la model card.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Tecnica | Disponibilidad |
+| Modelo | Parametros | Contexto | Comportamiento ante rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8.03B | 128K | Llama 3.1 Community | Instruct (RLHF) | Hugging Face |
-| ApolloRaines/Llama-3.1-8B-Instruct_Abliterated | 8.03B | 128K (heredado) | Llama 3.1 Community | jBlaze (abliteration) | Hugging Face |
-| mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated | 8.03B | 128K (heredado) | Llama 3.1 Community | Abliteration (FailSpy) | Hugging Face |
-
-Ambas variantes abliterated eliminan el rechazo, pero usan implementaciones distintas. La de mlabonne es ampliamente conocida y evaluada en el Open LLM Leaderboard; la de ApolloRaines usa jBlaze, una herramienta propietaria, y no tiene evaluaciones publicas. El rendimiento en tareas generales deberia ser similar al base, pero no hay datos comparativos.
+| Llama-3.1-8B-Instruct_Abliterated | 8,0 B | 128k | Sin rechazos (ablacionado) | Llama 3.1 Community | Hugging Face, 386 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,0 B | 128k | Rechazos alineados por RLHF | Llama 3.1 Community | Hugging Face, ampliamente adoptado |
+| Modelos "uncensored" derivados de Llama 3 8B (p. ej. variantes Dolphin/Llama-3-8B) | 8,0 B | 8k-128k segun variante | Sin rechazos via fine-tuning | Segun variante | Hugging Face, comunidad |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32k | Rechazos moderados | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 ## Limitaciones y advertencias
 
-- Al eliminar los guardarrailes de rechazo, el modelo puede generar contenido dañino, ilegal o eticamente problematico sin filtro. Su uso en produccion requiere supervisión humana y medidas de seguridad adicionales.
-- No se han realizado evaluaciones de sesgos ni de alucinacion en esta variante; se heredan los riesgos del modelo base, que ya presenta sesgos conocidos y tendencia a alucinar en contextos ambiguos.
-- La model card solo declara ingles como idioma, aunque el base es multilingue; no se ha verificado el comportamiento en otros idiomas.
-- La licencia Llama 3.1 Community permite uso comercial, pero con restricciones (por ejemplo, no usar para mejorar otros modelos grandes sin autorizacion). Ademas, el uso de contenido generado sin filtros puede violar politicas de plataformas o leyes locales.
-- No hay garantias de que la *abliteration* sea perfecta: pueden quedar residuos de rechazo o, por el contrario, degradarse otras capacidades no evaluadas.
-- La herramienta jBlaze es propietaria y no se documenta el proceso exacto, lo que dificulta la reproducibilidad y la auditoria del modelo.
+- Eliminar los rechazos implica que el modelo puede generar contenido danino, ilegal o inseguro; no dispone de ninguna capa de seguridad propia.
+- Riesgo elevado de alucinacion y de afirmaciones no verificadas, sin que el modelo exprese cautela o incertidumbre.
+- La edicion de pesos puede degradar capacidades del modelo base (razonamiento, instrucciones complejas, coherencia en contextos largos); la model card no aporta evaluaciones que lo descarten.
+- El autor reconoce explicitamente que publica una version a intensidad parcial: el comportamiento observado no representa el maximo de la tecnica.
+- Idiomas: la model card declara solo ingles; el rendimiento en espanol no esta evaluado y puede ser inferior al del modelo base.
+- Licencia Llama 3.1 Community: permite uso comercial con restricciones (politica de uso aceptable, obligacion de atribucion "Built with Llama", limite de 700 millones de usuarios mensuales para licenciatarios no autorizados por Meta); la edicion no altera estos terminos.
+- La herramienta jBlaze es propietaria y no se documenta el metodo exacto de ablacion, lo que dificulta reproducir o auditar el proceso.
+- No apto para produccion sin moderacion externa, evaluacion propia y revision legal del caso de uso.
+- Modelo con adopcion muy baja (0 likes, 386 descargas): sin validacion independiente de la comunidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Abliterated
-- Herramienta jBlaze: https://jblaze.dev
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Variante abliterated de mlabonne (referencia): https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated
-- Articulo sobre abliteration (referencia externa, no incluido en la busqueda): no disponible en los resultados proporcionados
+- Herramienta jBlaze: https://jblaze.dev
+- Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
+- Paper de referencia sobre abliteration (refusal direction): https://arxiv.org/abs/2406.11717

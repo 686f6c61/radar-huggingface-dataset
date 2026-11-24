@@ -2,102 +2,102 @@
 
 ## Resumen
 
-El modelo `fraQtl/Qwen3.6-35B-A3B-compressed` es un artefacto de pesos comprimidos del modelo base Qwen/Qwen3.6-35B-A3B, un transformer de arquitectura MoE (Mixture of Experts) con 35.000 millones de parámetros totales y 3.000 millones de parámetros activos. Desarrollado por fraQtl, su objetivo principal es reducir la huella de memoria del modelo y permitir inferencia de contexto largo (hasta 128.000 tokens) en una única GPU de gama alta, manteniendo una calidad de generación prácticamente idéntica a la versión sin comprimir.
+fraQtl/Qwen3.6-35B-A3B-compressed es un artefacto de pesos comprimidos del modelo Qwen3.6-35B-A3B de Alibaba Qwen, publicado por el usuario independiente fraQtl. Se trata de un modelo MoE (Mixture of Experts) de tipo texto cuyo repositorio ocupa 25,53 GB en disco, frente a los aproximadamente 70 GB de la versión FP16, lo que supone una reducción de 2,74×. La compresión se aplica a los tensores de expertos del MoE mediante empaquetado INT3 y calibración con WikiText-2 (variante v4).
 
-La compresión se implementa empaquetando los tensores de los expertos MoE en formato INT3, lo que reduce el tamaño en disco de aproximadamente 70 GB (FP16) a 25,53 GB, es decir, 2,74 veces más pequeño. Para cargar estos pesos comprimidos es necesario instalar el paquete `fraqtl-runtime`, un binario compilado que reconstruye los tensores en tiempo de carga. El modelo se distribuye en formato safetensors y requiere `trust_remote_code=True` en transformers. También existe una variante GGUF Q4_K_M en un repositorio hermano para su uso con llama.cpp, Ollama y LM Studio.
+El interés principal del artefacto es práctico: permite ejecutar el modelo con 128K de contexto en una única A100-80GB con un pico de VRAM de 51,7 GB, mientras que la versión FP16 agota la memoria a 64K en la misma configuración. Las mediciones publicadas por el autor muestran una degradación mínima en MMLU (82,24 % frente a 82,40 % del FP16) y resultados equivalentes o ligeramente superiores en HumanEval y BigCodeBench.
 
-La relevancia de este lanzamiento radica en que permite ejecutar un modelo MoE de 35B en hardware de consumo o en una sola GPU de datacenter sin sacrificar contexto, algo que en la configuración estándar provoca desbordamiento de memoria a partir de 64K tokens. Los resultados publicados muestran una degradación mínima en métricas como MMLU (82,24% frente a 82,40%) y una mejora aparente en HumanEval (64,02% frente a 61,59%), aunque dentro de la varianza muestral.
+Es relevante ahora porque demuestra que la compresión agresiva de pesos en modelos MoE de gran contexto puede ser viable en producción con hardware de una sola GPU, aunque con un coste de dependencia: requiere el paquete propietario `fraqtl-runtime` y una licencia propia (`fraqtl-model-license`) distinta de la del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) basada en transformer, con atención de contexto largo |
-| Parametros totales | 35.000 millones (según modelo base Qwen3.6-35B-A3B) |
-| Parametros activos | 3.000 millones (A3B) |
-| Longitud de contexto | 128.000 tokens (verificado en A100-80GB con compresión) |
-| Tipos de cuantizacion | INT3 empaquetado (propietario, para safetensors) y GGUF Q4_K_M (en repositorio hermano) |
-| Idiomas soportados | No disponible (el modelo base Qwen3.6 es multilingüe, pero no se especifica en la documentación) |
-| Licencia | fraqtl-model-license (uso gratuito para carga e inferencia; capa de compresión de KV-cache de pago) |
-| Formato de pesos | Safetensors comprimidos (requiere fraqtl-runtime) y GGUF para llama.cpp/Ollama |
+| Arquitectura | Transformer MoE (tipo Qwen3.5 MoE, `qwen3_5_moe_text`) con pesos comprimidos INT3 en expertos |
+| Parametros totales | 2.448.355.968 (según safetensors del repo comprimido; el nombre del modelo base indica 35B-A3B, discrepancia no aclarada en la información disponible) |
+| Parametros activos | no disponible (el nombre del base sugiere ~3B activos, sin confirmación en la información proporcionada) |
+| Longitud de contexto | 128K tokens (validado con ∞Bench Passkey 30/30 a ~125K) |
+| Tipos de cuantizacion | Pesos comprimidos INT3 empaquetados en tensores de expertos MoE; carga en bfloat16 en runtime; GGUF Q4_K_M disponible en repo separado |
+| Idiomas soportados | no disponible |
+| Licencia | `fraqtl-model-license` (licencia propia, categoría "other") |
+| Formato de pesos | safetensors con loader personalizado (`trust_remote_code=True` + `fraqtl-runtime`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B es un transformer MoE con 35B parámetros totales y 3B activos por token, siguiendo la tendencia de modelos eficientes como Mixtral o Qwen2.5-A3B. La arquitectura incluye atención de contexto largo y mecanismos de razonamiento mejorados respecto a generaciones anteriores. El artefacto comprimido de fraQtl no modifica la arquitectura subyacente, sino que empaqueta los pesos de los expertos en un formato INT3 propietario, reduciendo el espacio de almacenamiento y la memoria necesaria durante la inferencia.
+El modelo es una compresión del Qwen3.6-35B-A3B, un transformer con capas MoE. La innovación del artefacto no está en el entrenamiento sino en el post-procesado: los tensores de los expertos se empaquetan en INT3 y se calibran con WikiText-2 (versión v4), reconstruyéndose en tiempo de carga mediante un loader compilado distribuido en el wheel `fraqtl-runtime`. El resto de la arquitectura (atención, embeddings, capas densas) mantiene el comportamiento del modelo base.
 
-El proceso de compresión se realiza mediante un loader compilado (incluido en `fraqtl-runtime`) que reconstruye los tensores INT3 al formato esperado por transformers en tiempo de carga. No se han publicado detalles sobre el dataset de entrenamiento del modelo base ni sobre el proceso de compresión en sí (por ejemplo, si se usó cuantización con calibración o destilación). La model card indica que la compresión es una característica de almacenamiento, no un modo de ejecución opcional, y que la capa de compresión de KV-cache (que reduce aún más el consumo de memoria durante la generación) es una funcionalidad separada de pago.
+No se detalla en la información disponible el volumen de tokens de entrenamiento original, la composición del dataset ni si hubo RLHF/DPO en el modelo base. La compresión se realizó sin fine-tuning posterior según lo descrito; el autor reporta que la perplejidad en WikiText-2 pasa de 11,6041 a 11,6930 (+0,77 %). Existe una línea posterior, Hi-Fi, con compresión "calibration-aware" y recibos KLD, que el propio autor recomienda como punto de partida.
 
 ## Capacidades
 
-- Generación de texto conversacional y de larga forma con contexto de hasta 128.000 tokens en una sola GPU.
-- Razonamiento y resolución de problemas matemáticos y de código, según los benchmarks publicados (MMLU 82,24%, HumanEval 64,02%).
-- Soporte para tool calling y function calling: no documentado explícitamente en la model card, pero el modelo base Qwen3.6 lo incluye; se asume disponible pero no verificado en esta versión comprimida.
-- Capacidades multilingües: no especificadas para esta versión; el modelo base Qwen3.6 soporta múltiples idiomas, pero no hay confirmación en la documentación.
-- Modo de razonamiento extendido (thinking mode): no mencionado en la documentación.
-- Compresión de KV-cache opcional (de pago) que reduce el consumo de memoria durante la generación, permitiendo contextos aún más largos en GPUs con menos VRAM.
+- Generación de texto conversacional y continuaciones de prompt.
+- Razonamiento y conocimiento general (MMLU 82,24 % en 14.042 preguntas).
+- Generación de código (HumanEval pass@1 64,02 %, HumanEval+ 55,49 %, BigCodeBench 39,50 %).
+- Recuperación en contexto largo: ∞Bench Passkey 30/30 a ~125K tokens y KV-retrieval 80 % (4/5) en configuraciones de 1 a 1500 agujas.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Análisis de documentos extensos: el modelo puede procesar contratos, informes financieros o artículos científicos de hasta 128K tokens sin truncamiento, gracias a la compresión que permite cargar el modelo completo en una A100-80GB. Es adecuado para tareas de resumen, extracción de información y respuesta a preguntas sobre el contenido completo.
-- Asistente de programación en entornos con recursos limitados: con un rendimiento en HumanEval del 64,02%, puede integrarse en IDEs o pipelines de CI/CD para generación y revisión de código, ejecutándose en una GPU de 24 GB (con cuantización GGUF Q4_K_M) o en una A100 para contexto largo.
-- Chatbot de atención al cliente con historial amplio: la ventana de 128K tokens permite mantener conversaciones multi-turno con todo el historial del usuario, evitando la pérdida de contexto. La versión GGUF facilita el despliegue en infraestructura local con llama.cpp u Ollama.
-- Investigación académica en procesamiento del lenguaje natural: al ser un MoE eficiente, permite experimentar con generación de texto largo y razonamiento complejo en una sola GPU, reduciendo costes de cómputo frente a modelos densos de tamaño similar.
-- Generación de documentación técnica y resúmenes ejecutivos: el modelo puede sintetizar grandes volúmenes de información técnica y producir resúmenes coherentes, aprovechando su capacidad de contexto largo y su baja degradación en perplejidad (WikiText-2 PPL 11,69).
-- Prototipado rápido de agentes conversacionales: al soportar carga mediante transformers estándar (con el runtime instalado), se puede integrar en frameworks como LangChain o Haystack para construir agentes con memoria persistente y razonamiento multi-paso, sin necesidad de infraestructura distribuida.
+- Despliegue de contexto largo en una sola GPU: con 51,7 GB de pico a 128K, el modelo cabe en una A100-80GB y permite procesar documentos extensos, contratos o bases de código completas sin sharding, algo imposible con el FP16 en la misma máquina.
+- Análisis de repositorios y codebases: la ventana de 128K y el rendimiento en HumanEval/BigCodeBench lo hacen adecuado para tareas de revisión, refactorización y generación de tests sobre múltiples ficheros en un único prompt.
+- Recuperación aumentada (RAG) de alta densidad: la retención de agujas a ~125K tokens permite inyectar muchos fragmentos recuperados sin truncar, reduciendo la pérdida de información en pipelines RAG.
+- Evaluación comparativa de compresión: útil como referencia para investigadores que miden el impacto de INT3 en MoE frente a FP16, con métricas publicadas de PPL, MMLU, HumanEval y TruthfulQA.
+- Prototipado en investigación con presupuesto de VRAM limitado: permite experimentar con un MoE de gran contexto en una única A100 en lugar de requerir un nodo multi-GPU.
+- Generación de código en pipelines internos: con HumanEval pass@1 del 64 %, puede integrarse en herramientas de autocompletado o generación de parches, siempre que se acepte la dependencia del runtime propietario.
+- Fine-tuning o adaptación posterior: no recomendado sin verificar compatibilidad del loader con PEFT/LoRA, ya que la información disponible no lo confirma.
 
 ## Benchmarks y rendimiento
 
-La model card publica los siguientes resultados comparando la versión comprimida con la referencia FP16 del mismo modelo base. No se incluyen comparaciones con otros modelos de la misma categoría.
+| Benchmark | FP16 referencia | fraQtl comprimido | Diferencia |
+|---|---|---|---|
+| MMLU (14.042 preguntas, 57 materias) | 82,40 % | 82,24 % | −0,16 pp |
+| HumanEval pass@1 (N=164) | 61,59 % | 64,02 % | +2,43 pp (IC 95 % ≈ ±3 pp) |
+| HumanEval+ pass@1 (N=164) | 54,27 % | 55,49 % | +1,22 pp |
+| BigCodeBench (N=200) | 39,50 % | 39,50 % | 0 pp |
+| TruthfulQA-MC2 (N=500) | ~0,4553 | 0,4493 | −0,006 |
+| WikiText-2 PPL | 11,6041 | 11,6930 | +0,77 % |
+| ∞Bench Passkey @ ~125K | n/a | 30/30 (100 %) | n/a |
+| ∞Bench KV-retrieval (n=1,10,100,500,1500) | 80 % (4/5) | 80 % (4/5) | idéntico |
 
-| Metrica | Referencia FP16 | fraQtl comprimido | Diferencia |
-|---|---:|---:|---:|
-| WikiText-2 perplejidad | 11,6041 | 11,6930 | +0,77% |
-| MMLU (full 14K, 57 materias) | 82,40% | 82,24% | -0,16 pp |
-| HumanEval pass@1 (N=164) | 61,59% | 64,02% | +2,43 pp (dentro de varianza) |
-| HumanEval+ pass@1 (N=164) | 54,27% | 55,49% | +1,22 pp (dentro de varianza) |
-| BigCodeBench (N=200) | No disponible | No disponible | El dato se corta en la model card |
-
-Además, se reporta una prueba de recuperación de clave-valor en ∞Bench con 30/30 aciertos a ~125K tokens y coincidencia con la referencia FP16 en recuperación de KV para n=1/10/100/500/1500.
+Todas las mediciones en una única NVIDIA A100-80GB, semilla única; el autor indica reverificación multi-semilla en curso.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia:
-  - A 16K contexto: 25,6 GB pico (cabe en una RTX 4090 24 GB con margen justo).
-  - A 64K contexto: 36,8 GB pico (requiere GPU de datacenter como A100-80GB o A6000 48GB).
-  - A 128K contexto: 51,7 GB pico (solo A100-80GB o similar).
-- GPU recomendadas: A100-80GB para contexto máximo; RTX 4090 o RTX 6000 Ada para contextos de hasta 16K con safetensors; cualquier GPU con 24 GB usando la versión GGUF Q4_K_M (21,4 GB en disco).
-- Opciones de despliegue:
-  - Transformers con `fraqtl-runtime` instalado (solo Linux x86_64 + CUDA validado).
-  - llama.cpp, Ollama, LM Studio, koboldcpp y Jan mediante el repositorio GGUF hermano.
-  - vLLM y TGI: no documentado explícitamente, pero al ser compatible con transformers podría funcionar con adaptaciones.
-- Latencia y throughput: no se proporcionan datos específicos en la documentación.
+- VRAM estimada: 25,6 GB de pico a 16K de contexto; 36,8 GB a 64K; 51,7 GB a 128K; 48,7 GB en ∞Bench KV-retrieval con n=1500.
+- GPU recomendadas: NVIDIA A100-80GB (validada); probablemente H100-80GB por capacidad similar, aunque no está confirmado en la información disponible.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) a contextos largos; a 16K el pico de 25,6 GB ya supera los 24 GB. Para consumer se ofrece el GGUF Q4_K_M (21,4 GB) en repo separado.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` y `fraqtl-runtime` (Linux x86_64 + CUDA, v0.1); para llama.cpp, Ollama, LM Studio, koboldcpp o Jan usar el repo GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
+- Plataformas: Linux x86_64 + CUDA validado; macOS/ARM anunciado como pendiente.
 
 ## Comparativa con modelos similares
 
-La comparativa se centra en las variantes del mismo modelo base, ya que no se dispone de datos de otros MoE de tamaño similar.
-
-| Modelo | Parámetros totales | Contexto | Tamaño en disco | MMLU | HumanEval | Licencia |
-|---|---|---:|---:|---:|---:|---|
-| Qwen3.6-35B-A3B (FP16) | 35B | 128K (teórico) | ~70 GB | 82,40% | 61,59% | Apache 2.0 (Qwen) |
-| fraQtl comprimido (safetensors) | 35B | 128K (verificado) | 25,53 GB | 82,24% | 64,02% | fraqtl-model-license |
-| fraQtl GGUF Q4_K_M | 35B | 128K (según repo) | 21,4 GB | No publicado | No publicado | fraqtl-model-license |
-
-La versión comprimida ofrece una reducción de memoria de 2,74× respecto al FP16 con una pérdida mínima en calidad. La versión GGUF es aún más ligera y compatible con herramientas de consumo, pero no se han publicado benchmarks propios.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| fraQtl/Qwen3.6-35B-A3B-compressed | 35B-A3B (según nombre); 2,45B en safetensors | 128K | fraqtl-model-license | safetensors + runtime propietario | Compresión INT3, 25,53 GB en disco |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B-A3B | 128K (OOM a 64K en stock A100-80GB según el autor) | licencia Qwen original | safetensors FP16 | Referencia de calidad; ~70 GB |
+| fraQtl/Qwen3.6-35B-A3B-Hi-Fi-GGUF | mismo base | 128K | fraqtl-model-license | GGUF | Versión posterior recomendada por el autor, con recibos KLD |
+| fraQtl/Qwen3.6-35B-A3B-GGUF | mismo base | 128K | fraqtl-model-license | GGUF Q4_K_M (21,4 GB) | Para llama.cpp/Ollama/LM Studio; ~30 % menos KLD que Q4_K_M estándar |
 
 ## Limitaciones y advertencias
 
-- Es imprescindible instalar `fraqtl-runtime` para cargar los pesos safetensors; sin este paquete, el modelo no carga y se lanza un ImportError. Solo está validado en Linux x86_64 con CUDA; macOS y ARM están pendientes.
-- La licencia `fraqtl-model-license` no es una licencia open source estándar. Aunque la carga e inferencia son gratuitas, la capa de compresión de KV-cache es una funcionalidad de pago que requiere token. Es necesario revisar los términos completos antes de un uso comercial.
-- La compresión introduce una degradación mínima pero medible: la perplejidad en WikiText-2 aumenta un 0,77% y MMLU baja 0,16 puntos porcentuales. Para aplicaciones de precisión crítica, se recomienda validar con datos propios.
-- No se especifican los idiomas soportados en esta versión, aunque el modelo base Qwen3.6 es multilingüe. La ausencia de documentación puede implicar un soporte desigual para lenguas distintas del inglés.
-- No se han publicado resultados de benchmarks en tareas de razonamiento complejo (como GSM8K o MATH) ni en tareas multimodales; el modelo es exclusivamente de texto.
-- El repositorio GGUF hermano indica una reducción de KLD del 30% respecto a un Q4_K_M estándar, pero no se aportan métricas de calidad adicionales.
-- Riesgo de alucinación y sesgos: no se documentan evaluaciones específicas de sesgos ni de robustez frente a alucinaciones. Como cualquier modelo de lenguaje, puede generar contenido falso o sesgado.
+- Dependencia de un runtime propietario: sin `fraqtl-runtime` el modelo no carga (`ImportError`); el wheel es binario compilado y solo validado en Linux x86_64 + CUDA v0.1.
+- Licencia `fraqtl-model-license` distinta de la del modelo base: es necesario revisar los términos comerciales antes de usar en producción; la información disponible no detalla restricciones concretas.
+- Discrepancia de parámetros: el nombre indica 35B-A3B pero el safetensors declara 2.448.355.968 parámetros; conviene verificar antes de dimensionar infraestructura.
+- Benchmarks de semilla única: el autor reconoce que la reverificación multi-semilla está en curso; los intervalos de confianza en HumanEval son amplios (±3 pp).
+- Riesgo de alucinación: TruthfulQA-MC2 ~0,4493 indica que aproximadamente la mitad de las preguntas trampa no se responden correctamente; no apto para dominios factuales sin verificación.
+- Idiomas soportados no documentados: no se puede garantizar calidad multilingüe más allá del inglés sin pruebas propias.
+- Tool calling y capacidades de agente no documentadas: no asumir soporte nativo sin validación.
+- Artefacto desactualizado según el propio autor: recomienda migrar a la línea Hi-Fi con recibos KLD.
+- Sin datos de latencia ni throughput: imposible estimar coste operativo por token a partir de la información disponible.
+- Compresión INT3 en expertos: aunque las métricas agregadas son buenas, pueden existir degradaciones en dominios específicos no cubiertos por los benchmarks publicados.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-compressed
-- Versión Hi-Fi GGUF (recomendada por el autor): https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-Hi-Fi-GGUF
-- Versión GGUF estándar para llama.cpp/Ollama: https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-GGUF
-- Contacto para licencias y despliegues de producción: https://fraqtl.ai/contact
-- Correo electrónico: contact@fraqtl.ai
+- Hugging Face (modelo comprimido): https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-compressed
+- Versión Hi-Fi GGUF recomendada por el autor: https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-Hi-Fi-GGUF
+- GGUF Q4_K_M para llama.cpp/Ollama/LM Studio: https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Contacto del autor: https://fraqtl.ai/contact (email: contact@fraqtl.ai)

@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nchapman/Qwen3.6-35B-A3B-W4A16-GPTQ · Hugging Face",
-      "url": "https://huggingface.co/nchapman/Qwen3.6-35B-A3B-W4A16-GPTQ",
-      "snippet": "nchapman / Qwen3.6-35B-A3B-W4A16-GPTQ Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe gptq w4a16 compressed-tensors vllm Mixture of Experts conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Qwen3.6 35b A3b W4a16 Gptq - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/nchapman/qwen3.6-35b-a3b-w4a16-gptq",
-      "snippet": "Registry entry for model Qwen3.6 35b A3b W4a16 Gptq; source metadata pending."
-    }
-  ]
+  "sources": []
 }

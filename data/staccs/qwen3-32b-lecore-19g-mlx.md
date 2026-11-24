@@ -2,111 +2,119 @@
 
 ## Resumen
 
-Qwen3-32B-lecore-19g-mlx es una cuantizacion de precision mixta en formato MLX del modelo denso Qwen/Qwen3-32B, publicada por el usuario staccs (etiquetado como leCore Unicron `requantize`). No se ha reentrenado nada: el unico trabajo realizado es la conversion y asignacion de bits por tensor. El objetivo es reducir un modelo de 32.762 millones de parametros a un peso de 18,62 GB que quepa y corra con fluidez en equipos Apple Silicon con memoria unificada de 32-36 GB o superior, algo imposible con la version bf16 original.
+Qwen3-32B-lecore-19g-mlx es una cuantización de precisión mixta (en la práctica, uniforme a 4 bits) del modelo Qwen3-32B de Alibaba Qwen, publicada por el usuario staccs bajo el paraguas del proyecto leCore. El objetivo declarado es reducir el peso de un modelo denso de 32.762 millones de parámetros hasta unos 18,62 GB de pesos para que pueda ejecutarse en Apple Silicon mediante la librería MLX. La selección de bits se realizó con la herramienta `requantize` de leCore Unicron, que mide el daño de cada tensor lineal mediante la divergencia KL entre la distribución de siguiente token en fp16 y la cuantizada, sobre un conjunto de calibración con texto de WikiText-2, código Python y sondas estructuradas (prosa, SQL, markdown).
 
-La particularidad tecnica es que los bits de cada capa lineal no se eligieron a ojo ni con una regla uniforme, sino midiendo el dano real: cada tensor se cuantizo por separado a 2, 3 y 4 bits y se calculo la divergencia KL respecto a fp16 sobre un conjunto de calibracion mixto (3066 tokens de WikiText-2 de entrenamiento, 1022 tokens de codigo Python y sondas estructuradas de prosa, codigo, SQL y markdown). A partir de ahi se aplico una bajada de bits voraz, minimizando el dano medido por byte ahorrado hasta encajar en el presupuesto de tamano.
+La particularidad del export es que, con el presupuesto de tamaño elegido, el asignador no rebajó ningún tensor lineal por debajo de 4 bits: todos los tensores lineales quedaron a 4 bits con grupo de 64, los embeddings a 4 bits y el `lm_head` a 6 bits. El propio autor lo advierte en la model card: no es una mezcla de precisiones real, y la comparación justa es contra una cuantización MLX estándar a 4 bits, no contra una de 3 bits. El resultado medido en perplejidad es bueno (11,4757 en WikiText-2 frente a 9,7287 del bf16), pero los benchmarks de razonamiento matemático muestran una regresión severa que el autor atribuye a los pesos MLP cuantizados a 4 bits.
 
-El resultado practico es notable frente a una cuantizacion uniforme: con 4,547 bits por peso (bpw) logra una perplejidad de 11,4757 en WikiText-2, muy lejos del 39,0780 que obtiene la cuantizacion MLX estandar de 3 bits con grupo 64, y bastante cerca del 9,7287 del modelo bf16 de referencia. Es, por tanto, un artefacto orientado a inferencia local en Mac, no a despliegue en GPU NVIDIA, y su licencia Apache 2.0 heredada lo hace utilizable comercialmente.
+Es relevante ahora porque permite ejecutar un modelo denso de 32B en equipos Apple Silicon de gama alta (Mac con 36 GB o más de memoria unificada) con una pérdida de perplejidad moderada, aunque con caveats importantes en tareas de matemáticas con formato few-shot. La licencia Apache 2.0 del modelo base se mantiene.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder denso (modelo base Qwen3-32B); el repo no documenta modificaciones estructurales |
-| Parametros totales | 32.762.123.264 (32,76 mil millones) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | El repo no especifica contexto propio; el ejemplo de uso emplea `--max-kv-size 8192`. El modelo base Qwen3-32B soporta 32.768 tokens nativos, ampliables a 131.072 con YaRN |
-| Tipos de cuantizacion | Una unica configuracion MLX affine de precision mixta: capas lineales a 4 bits (histograma: 448 tensores a 4 bits, 0 a 2/3/8/16), embeddings a 4 bits, `lm_head` a 6 bits, tamano de grupo 64; coste medio 4,547 bpw. No se ofrecen variantes GGUF, AWQ ni GPTQ |
-| Idiomas soportados | No documentado en el repo. El modelo base Qwen3-32B declara soporte para 119 idiomas |
-| Licencia | Apache 2.0 (heredada del modelo base Qwen/Qwen3-32B) |
-| Formato de pesos | safetensors para MLX (`library_name: mlx`), 18,62 GB de pesos, 18,6 GB de repositorio |
+| Arquitectura | Transformer denso (Qwen3), cuantizado para MLX |
+| Parámetros totales | 32.762.123.264 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantización | 4 bits con grupo de 64 en tensores lineales y embeddings; 6 bits en `lm_head` |
+| Idiomas soportados | Inglés (según la model card; no se detallan más idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (4 shards), librería MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una copia cuantizada del Qwen3-32B denso. No hay reentrenamiento, ajuste fino, RLHF ni DPO en este repositorio: el autor lo indica explicitamente ("Only quantization was done here: no retraining"). Por tanto, la arquitectura es la del transformer decoder denso original, con atencion por consultas agrupadas (GQA), normalizacion y modos de razonamiento heredados del modelo base.
+El modelo base es Qwen3-32B, un transformer denso de la familia Qwen3. Esta publicación no entrena ni ajusta el modelo: solo aplica cuantización post-entrenamiento. El proceso de selección de bits consistió en cuantizar cada tensor lineal del decodificador de forma aislada (MLX affine, grupo 64) a 2, 3 y 4 bits, medir el daño como divergencia KL entre la distribución de siguiente token en fp16 y la cuantizada sobre un mix de calibración (3066 tokens de entrenamiento de WikiText-2, 1022 tokens de código Python y una sonda estructurada de leCore con prosa, código, SQL y markdown), y asignar bits de forma voraz empezando por 4 bits en todo y rebajando la opción con menor daño por byte ahorrado hasta encajar en el presupuesto. El histograma final de tensores lineales es `{'2': 0, '3': 0, '4': 448, '8': 0, '16': 0}`, es decir, uniforme a 4 bits.
 
-La innovacion esta en el pipeline de cuantizacion. Primero se midio el dano de cada tensor lineal por separado, cuantizandolo en aislamiento con MLX affine y grupo 64 a 2, 3 y 4 bits, y evaluando la divergencia KL entre las distribuciones de siguiente token en fp16 y en la version cuantizada sobre el mix de calibracion. Despues se reasignaron los bits de forma voraz: se parte de 4 bits en todas las capas y se aplica iterativamente la degradacion con menor dano medido por byte ahorrado hasta que el tamano de fichero predicho encaja en el presupuesto. La conversion final se ejecuto con `mlx_lm.convert` usando un `quant_predicate` por capa. Curiosamente, el histograma final deja las 448 capas lineales a 4 bits, de modo que la "precision mixta" real se concentra en embeddings (4 bits) y `lm_head` (6 bits); el ahorro frente a bf16 viene de la cuantizacion de 4 bits con grupo 64, no de una mezcla interna de 2/3/4 bits en las lineales.
+La conversión se realizó con `mlx_lm.convert` y un `quant_predicate` por capa. No hay datos sobre el entrenamiento original de Qwen3-32B en la información proporcionada (número de tokens, composición del dataset, RLHF/DPO), más allá de que es el modelo base oficial de Qwen. El autor reporta que el modelo cuantizado tiende a razonar en un estilo de "thinking" largo, lo que afecta a la evaluación con límites de generación cortos.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, heredadas del Qwen3-32B base (`pipeline_tag: text-generation`, etiqueta `conversational`).
-- Razonamiento en modo pensamiento y modo sin pensamiento, segun el comportamiento del modelo base; el repositorio no documenta cambios en las plantillas de chat.
-- Generacion de codigo: las mediciones del autor incluyen perplejidad sobre codigo Python (3,9427), lo que confirma que la cuantizacion preserva mejor este dominio que una cuantizacion uniforme de 3 bits (7,4644).
-- Conocimiento general y respuesta a preguntas: 85,3 % en el subconjunto de MMLU 5-shot medido por el autor.
-- Soporte multilingue heredado del modelo base (119 idiomas declarados por Qwen), aunque el autor no aporta evaluaciones por idioma.
-- Tool calling y function calling: capacidad presente en Qwen3-32B, pero no verificada ni documentada en este repositorio.
-- Razonamiento multi-paso y uso como agente: no verificado en este repositorio; los resultados de GSM8K obtenidos (27,0 % strict) apuntan a un deterioro severo en razonamiento aritmetico que conviene comprobar antes de usar el modelo en tareas de ese tipo.
-- Inferencia local en Apple Silicon mediante MLX, ejecutando los tensores desquantizados a bf16 en GPU.
+- Generación de texto conversacional y de propósito general, heredadas del modelo base Qwen3-32B.
+- Razonamiento en estilo "thinking" largo: el autor observa que el modelo cuantizado razona correctamente pero se extiende antes de emitir la respuesta final.
+- Generación de código: la model card incluye evaluación de perplejidad sobre código Python y la calibración incluye código y SQL.
+- Matemáticas: capacidad presente en el modelo base, pero degradada en este export en formato few-shot (ver benchmarks).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada (se heredaría del base, pero no se documenta aquí).
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: la model card declara únicamente inglés; no se detallan otros idiomas.
+- Capacidades especiales (visión, audio, thinking mode explícito): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en Mac para desarrollo: cargar el modelo con `mlx_lm.generate` en un Mac con 32-36 GB de memoria unificada para disponer de un modelo de 32B sin conexion a internet ni coste por token. El peso de 18,62 GB deja margen para la cache KV si se limita con `--max-kv-size`.
-- Asistencia de programacion offline: dado que la perplejidad sobre codigo Python es de 3,9427 frente a 7,4644 de la cuantizacion estandar de 3 bits, el modelo es razonable para autocompletado, generacion de funciones y explicacion de codigo en entornos sin salida a la red.
-- Procesamiento de documentacion tecnica en local: resumenes, extraccion de campos y generacion de SQL o markdown sobre corpus internos, aprovechando que el pipeline de cuantizacion se calibro especificamente con sondas de SQL y markdown.
-- Prototipado rapido de aplicaciones LLM sin GPU dedicada: permite validar prompts, plantillas de chat y flujos de RAG en un portatil Apple antes de migrar a un despliegue en servidor con el modelo completo.
-- Investigacion sobre cuantizacion: sirve como referencia reproducible de cuantizacion guiada por medicion, ya que el repositorio publica el histograma de bits, el metodo de calibracion y las perplejidades comparadas contra bf16 y contra 3 bits uniforme.
-- Escenarios con datos sensibles o requisitos de privacidad: al ejecutarse integramente en local, no requiere enviar prompts ni documentos a APIs externas, lo que simplifica el cumplimiento de politicas internas de tratamiento de datos.
-- Docencia y experimentacion con modelos de gran tamano: permite estudiar comportamiento de un 32B denso en hardware de consumo, siempre que no se dependa de razonamiento aritmetico, donde el modelo muestra un rendimiento degradado segun las mediciones del autor.
+- Asistente conversacional local en Mac: el modelo cabe en 18,62 GB de pesos y puede ejecutarse con `mlx-lm` en equipos Apple Silicon con 36 GB o más de memoria unificada, lo que permite tener un asistente de 32B sin conexión a la nube.
+- Generación y revisión de código en local: la perplejidad sobre código Python medida (3,9427 frente a 3,5031 en bf16) indica una degradación moderada, suficiente para autocompletado y explicación de código en un entorno de desarrollo con Apple Silicon.
+- Procesamiento de documentación técnica y markdown: la sonda de calibración incluye prosa, SQL y markdown, por lo que el export está ajustado implícitamente a ese tipo de contenido, útil para resumir y transformar documentación.
+- Prototipado de pipelines de razonamiento con contexto largo: usando `--max-kv-size 8192` en `mlx_lm.generate`, se puede trabajar con ventanas de hasta 8K tokens en las pruebas del autor, adecuado para análisis de documentos medianos.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir el impacto de la cuantización MLX a 4 bits frente a bf16 en perplejidad y en benchmarks, dado que el autor publica los números exactos.
+- Despliegue en entornos con requisitos de licencia permisiva: al conservar Apache 2.0, puede integrarse en productos comerciales sin las restricciones de licencias copyleft, siempre que se respete la atribución.
+- Tareas de chat de formato libre con generación larga: el autor señala que la regresión en GSM8K se debe al límite de 320 tokens de generación, por lo que en chat con límites mayores el impacto sería menor (aunque no medido).
 
 ## Benchmarks y rendimiento
 
-Todos los datos proceden de la model card del autor. Las perplejidades se calcularon sobre los pesos exactos publicados, desquantizados con `mx.dequantize` y ejecutados en bf16 sobre GPU. MMLU y GSM8K se midieron con lm-eval-harness 0.4.9 sobre subconjuntos reducidos.
+Datos medidos por el autor sobre los pesos enviados, dequantizados a bf16 y ejecutados en GPU. Perplejidad sobre held-out (WikiText-2 test y una porción distinta de código Python, secuencia 512):
 
-Perplejidad (secuencia 512, held-out):
-
-| Modelo | Tamano (GB, pesos) | bpw | WikiText-2 ppl (32.704 tok) | Codigo Python ppl (8.176 tok) |
+| Modelo | Tamaño (GB) | bpw | WikiText-2 ppl (32704 tok) | Python-code ppl (8176 tok) |
 |---|---|---|---|---|
-| Referencia bf16 | no disponible | 16 | 9,7287 | 3,5031 |
+| bf16 referencia | – | 16 | 9,7287 | 3,5031 |
 | Este repo (leCore Unicron mix) | 18,62 | 4,547 | 11,4757 | 3,9427 |
-| MLX 3 bits estandar, grupo 64 | 14,33 | 3,500 | 39,0780 | 7,4644 |
+| MLX 3-bit estándar, grupo 64 | 14,33 | 3,500 | 39,0780 | 7,4644 |
 
-Tareas (subconjuntos, con ruido de muestreo estimado por el autor de +-2 a 4 puntos):
+Benchmarks con lm-eval-harness 0.4.9 (MMLU 5-shot sobre las 10 primeras preguntas de cada una de las 57 materias; GSM8K 5-shot sobre los 100 primeros problemas de test, greedy, 320 tokens nuevos, sin chat template). Son subconjuntos, con ruido de muestreo estimado de ±2–4 puntos:
 
 | Modelo | MMLU (5-shot) | GSM8K strict | GSM8K flexible |
 |---|---|---|---|
-| leCore mix (este repo) | 85,3 % | 27,0 % | 34,0 % |
-| MLX 3 bits affine, grupo 64 (simulado) | 80,9 % | 83,0 % | 78,0 % |
+| leCore mix (este repo) | 85,3% | 27,0% | 34,0% |
+| 3-bit affine estándar, grupo 64 (simulado) | 80,9% | 83,0% | 78,0% |
 
-Advertencia relevante: los resultados de GSM8K son incoherentes con el resto de la tabla. Un modelo cuantizado a 4,5 bpw no deberia caer de 83,0 % a 27,0 % en GSM8K mientras supera en 4,4 puntos a la cuantizacion de 3 bits en MMLU, y es especialmente llamativo que el 3 bits uniforme obtenga 83,0 % frente a un bf16 que el autor no llega a reportar en esa tarea. El resultado debe tratarse como no verificado y reproducirse con la configuracion completa (plantilla de chat, maximo de tokens, parada) antes de extraer conclusiones. El propio autor advierte que no ejecuto benchmarks de tareas downstream completos y que la perplejidad de contexto corto no describe por si sola la calidad.
+Diagnóstico de la regresión en GSM8K sobre los 20 primeros problemas:
+
+| Configuración | strict | flexible |
+|---|---|---|
+| bf16 | 70% | 80% |
+| Este export | 25% | 30% |
+| Este export con MLP en bf16 | 75% | 75% |
+| Este export con embeddings en bf16 | 25% | 25% |
+| Este export con lm_head en bf16 | 20% | 15% |
+
+El autor concluye que la deriva proviene de los pesos MLP a 4 bits y que el modelo razona correctamente pero en estilo "thinking" largo, superando el límite de 320 tokens antes de escribir la línea `#### answer`.
 
 ## Requisitos de hardware
 
-- VRAM / memoria unificada: los pesos ocupan 18,62 GB. Con cache KV para contexto de 8.192 tokens hay que presupuestar aproximadamente 22-26 GB en total, dependiendo de la longitud efectiva de contexto y del batch.
-- Equipos recomendados: Mac con chip Apple Silicon y memoria unificada de 32 GB (limite ajustado), 36 GB o mas (M1/M2/M3/M4 Pro, Max y Ultra). El autor indica que en un Mac de 36 GB puede ser necesario elevar el limite de memoria cableada de la GPU con `sudo sysctl iogpu.wired_limit_mb=30000`.
-- GPU NVIDIA: no soportado. El repositorio depende de MLX, que es especifico del ecosistema Apple; no se publican pesos en safetensors estandar de Hugging Face Transformers, GGUF ni cuantizaciones AWQ/GPTQ.
-- Opciones de despliegue: `mlx-lm` (comando `mlx_lm.generate`). No hay soporte documentado para vLLM, TGI, llama.cpp, Ollama ni SGLang.
-- Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia en el repositorio.
-- Comparacion de huella: este repo (18,62 GB) ocupa unos 4,3 GB mas que la cuantizacion MLX de 3 bits (14,33 GB) y menos de un tercio del modelo bf16 en memoria.
+- VRAM/memoria: los pesos ocupan 18,62 GB; en Apple Silicon se comparte memoria unificada. El autor indica que en un Mac de 36 GB puede ser necesario elevar el límite de memoria cableada de la GPU con `sudo sysctl iogpu.wired_limit_mb=30000`.
+- GPU recomendadas: Apple Silicon (M-series) con al menos 36 GB de memoria unificada; no se documenta soporte para GPU NVIDIA o AMD en este export (la librería es MLX).
+- ¿Cabe en GPU consumer? En el contexto de Apple Silicon, sí en modelos con 36 GB o más. No hay datos para GPUs consumer de NVIDIA/AMD con este formato.
+- Opciones de despliegue: `mlx-lm` (comando `mlx_lm.generate`). No se documentan vLLM, llama.cpp, Ollama ni TGI para este repositorio concreto; el autor ofrece variantes GGUF en repos separados.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Peso en disco | WikiText-2 ppl | MMLU (subconjunto) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| staccs/Qwen3-32B-lecore-19g-mlx | 32,76 B densos | no documentado (ejemplo a 8.192) | 18,62 GB, MLX | 11,4757 | 85,3 % | Apache 2.0 | MLX, Apple Silicon |
-| MLX 3 bits estandar de Qwen3-32B | 32,76 B densos | no disponible | 14,33 GB, MLX | 39,0780 | 80,9 % | Apache 2.0 | MLX, Apple Silicon |
-| Qwen/Qwen3-32B bf16 | 32,76 B densos | 32.768 nativos (131.072 con YaRN) | aprox. 65 GB, safetensors | 9,7287 | no disponible en la informacion | Apache 2.0 | Transformers, vLLM, TGI |
-| Otras cuantizaciones de Qwen3-32B (GGUF, AWQ, GPTQ) | 32,76 B densos | segun modelo base | no disponible | no disponible | no disponible | Apache 2.0 tipicamente | llama.cpp, vLLM, Ollama |
+| Modelo | Parámetros | Contexto | Formato | Tamaño | Licencia | Rendimiento |
+|---|---|---|---|---|---|---|
+| Qwen3-32B-lecore-19g-mlx (este repo) | 32,76B | no disponible | MLX safetensors | 18,62 GB | Apache 2.0 | MMLU 85,3%; GSM8K strict 27,0% |
+| Qwen3-32B-lecore-mlx (mismo autor) | 32,76B | no disponible | MLX | 13,01 GB | Apache 2.0 | no disponible |
+| Qwen3-32B-lecore-19g-GGUF (mismo autor) | 32,76B | no disponible | GGUF | 38,40 GB | Apache 2.0 | no disponible |
+| Qwen3-32B-lecore-GGUF (mismo autor) | 32,76B | no disponible | GGUF | 32,88 GB | Apache 2.0 | no disponible |
+| Qwen3-32B bf16 (base) | 32,76B | no disponible | safetensors | ~65 GB (implícito) | Apache 2.0 | ppl WikiText-2 9,7287 |
 
-La comparacion se limita a las alternativas con datos medidos en la informacion disponible. No se dispone de cifras propias de Qwen3-30B-A3B ni de otras familias de 30-35B para contrastar.
+No se dispone de datos de benchmarks de las variantes GGUF ni del export MLX de 13,01 GB en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Resultado anomalo en GSM8K: 27,0 % strict frente al 83,0 % de la cuantizacion de 3 bits. Es una inversion que contradice el resto de las metricas y que debe reproducirse antes de dar por valido el modelo en tareas de razonamiento matematico.
-- Benchmarks sobre subconjuntos: MMLU se evaluo con 10 preguntas por materia (570 en total) y GSM8K con los primeros 100 problemas de test. El autor estima +-2 a 4 puntos de ruido de muestreo, pero esa horquilla no explica la discrepancia de GSM8K.
-- Perplejidad no concluyente: el propio autor advierte que la perplejidad de contexto corto no describe por si sola la calidad y que hay que comprobar las salidas en el caso de uso real.
-- Ambito exclusivamente Apple Silicon: al depender de MLX, el modelo no se puede desplegar en GPU NVIDIA ni en servidores x86 convencionales sin una conversion adicional que no se proporciona.
-- Idiomas no verificados: el repositorio no documenta evaluaciones por idioma y la ficha de Hugging Face no lista idiomas. El castellano no esta validado especificamente; el rendimiento multilingue se asume del modelo base, no se mide.
-- Contexto no documentado: el repositorio no declara la longitud de contexto soportada ni si se aplicaron tecnicas de extension tipo YaRN. El ejemplo usa 8.192 tokens de cache KV.
-- Riesgo de alucinacion: es un modelo de 32B denso sin cambios en los pesos mas alla de la cuantizacion, por lo que mantiene el riesgo de alucinacion del Qwen3-32B original, potencialmente agravado por el error introducido en la cuantizacion de 4 bits.
-- Sesgos: no hay ninguna evaluacion de sesgos en la informacion disponible. Se heredan los del modelo base, no documentados aqui.
-- Produccion: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion de la comunidad. La fecha indicada de creacion es 2026-10-15, posterior a la mayoria de referencias disponibles, lo que refuerza la necesidad de validar el artefacto antes de usarlo.
-- Licencia: Apache 2.0 permite uso comercial, pero al ser un derivado conviene revisar tambien los terminos del modelo base Qwen/Qwen3-32B y citar correctamente la autoria original.
+- No es una cuantización de precisión mixta real: el asignador mantuvo todos los tensores lineales a 4 bits, por lo que la comparación justa es contra MLX 4-bit estándar, no contra 3-bit.
+- Regresión severa en GSM8K: 27,0% strict frente a 83,0% del 3-bit estándar simulado y 70% del bf16 en el diagnóstico de 20 problemas. El autor atribuye la causa a los pesos MLP a 4 bits y recomienda usar cuantizaciones estándar o mayor presupuesto si se necesita matemáticas few-shot en ese formato.
+- El modelo tiende a razonar en estilo "thinking" largo, lo que puede agotar límites de generación cortos antes de emitir la respuesta final.
+- La perplejidad baja no garantiza calidad: el propio autor advierte que la perplejidad de contexto corto no lo dice todo y recomienda verificar salidas en el caso de uso propio.
+- Idiomas: solo se declara inglés; no se documentan capacidades multilingües.
+- Longitud de contexto: no documentada en la model card; el ejemplo de uso emplea `--max-kv-size 8192`.
+- Dependencia de Apple Silicon y MLX: no es desplegable directamente en stacks estándar de GPU NVIDIA sin reconversión.
+- Riesgo de sesgos y alucinaciones: no documentado específicamente para este export; se heredan los del modelo base Qwen3-32B, no evaluados aquí.
+- Licencia Apache 2.0 permite uso comercial, pero se debe conservar la atribución y cumplir los términos del modelo base.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/staccs/Qwen3-32B-lecore-19g-mlx
+- Repositorio Hugging Face: https://huggingface.co/staccs/Qwen3-32B-lecore-19g-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-32B/blob/main/LICENSE
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-
-No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos no guardan ninguna relacion con el modelo y se han descartado.
+- Variante GGUF 19g: https://huggingface.co/staccs/Qwen3-32B-lecore-19g-GGUF
+- Variante GGUF: https://huggingface.co/staccs/Qwen3-32B-lecore-GGUF
+- Variante HRR: https://huggingface.co/staccs/Qwen3-32B-lecore-hrr
+- Variante MLX: https://huggingface.co/staccs/Qwen3-32B-lecore-mlx

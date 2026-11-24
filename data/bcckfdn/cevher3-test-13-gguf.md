@@ -1,93 +1,77 @@
 # bcckfdn/cevher3-test-13-GGUF
 
 ## Resumen
+cevher3-test-13-GGUF es la distribucion en formato GGUF del modelo cevher3-test-13, un modelo de lenguaje de tipo base afinado para generacion de texto en turco e ingles. Lo desarrolla el usuario bcckfdn y se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Con 1.256.312.832 parametros totales (aproximadamente 1,26 mil millones), se situa en la gama de modelos pequenos, optimos para inferencia en CPU o GPU de consumo.
 
-cevher3-test-13-GGUF es la distribucion en formato GGUF del modelo cevher3-test-13, un modelo de lenguaje de tipo base entrenado por el usuario bcckfdn y orientado principalmente al turco (con soporte secundario de ingles). El modelo emplea una arquitectura derivada de Gemma 3 con atencion de ventana deslizante (SWA), cuenta con 1.256.312.832 parametros totales y una configuracion interna de 1792 dimensiones ocultas repartidas en 34 capas. Su entrenamiento declara 26.051 millones de tokens, un volumen modesto para el tamano del modelo.
+El modelo emplea una arquitectura derivada de Gemma3 con atencion de ventana deslizante (SWA), segun indica la model card, con un tamano de capa oculta de 1792 y 34 capas. Se ha entrenado con 28.705 millones de tokens, un volumen considerable para su tamano, lo que sugiere un enfasis en calidad por token. La publicacion incluye cuantizaciones en BF16, Q8_0, Q5_K_M y Q4_K_M, lo que facilita su despliegue en llama.cpp, Ollama y LM Studio.
 
-La relevancia de esta publicacion es practica: el autor ofrece cuatro cuantizaciones listas para usar (BF16, Q8_0, Q5_K_M y Q4_K_M) compatibles con llama.cpp, Ollama y LM Studio, lo que permite desplegar el modelo en hardware de consumo. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales, aunque al tratarse de un modelo base sin ajuste instructivo declarado, su comportamiento conversacional depende del prompting.
-
-Se trata de un modelo muy reciente (publicado en noviembre de 2026) con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados ni documentacion de entrenamiento detallada mas alla de los datos de arquitectura y del listado de ficheros GGUF. Debe evaluarse, por tanto, como un artefacto experimental de un autor individual mas que como un modelo de produccion validado.
+Su relevancia actual radica en que ofrece una alternativa ligera y abierta para tareas de generacion de texto en turco, un idioma con menos representacion en la oferta de modelos abiertos, y con un coste de hardware muy bajo. El repositorio ocupa 11,1 GB e incluye los distintos archivos GGUF, y acumula 353 descargas desde su creacion en noviembre de 2026.
 
 ## Especificaciones tecnicas
-
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Gemma 3 con atencion de ventana deslizante (SWA); 34 capas, hidden size 1792 |
+| Arquitectura | Transformer derivado de Gemma3 con atencion de ventana deslizante (SWA) |
 | Parametros totales | 1.256.312.832 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q8_0, Q5_K_M, Q4_K_M (ficheros GGUF publicados) |
+| Tipos de cuantizacion | BF16, Q8_0, Q5_K_M, Q4_K_M |
 | Idiomas soportados | turco (tr), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye aparte |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
+El modelo sigue una arquitectura transformer basada en Gemma3 con atencion de ventana deslizante (SWA), segun la model card. Dispone de 34 capas y una dimension oculta de 1792, coherente con un modelo de aproximadamente 1,26 mil millones de parametros. El entrenamiento se realizo sobre 28.705 millones de tokens, un volumen elevado para esta escala, lo que indica un esfuerzo por maximizar la calidad del modelo dentro de su rango de parametros.
 
-El modelo sigue una arquitectura transformer derivada de Gemma 3, con atencion de ventana deslizante (sliding window attention), 34 capas y una dimension oculta de 1792. Esta combinacion de profundidad relativamente alta con un hidden size moderado da lugar a los aproximadamente 1.256 millones de parametros reportados en los safetensors del modelo base. La SWA reduce el coste computacional en secuencias largas al limitar el alcance de la atencion en determinadas capas, un patron habitual en la familia Gemma 3.
-
-El autor declara un volumen de entrenamiento de 26.051 millones de tokens, sin detallar la composicion del dataset, el uso de RLHF/DPO ni tecnicas de alineacion. No se documenta si hubo fases de ajuste supervisado o preferencia, ni innovaciones adicionales como decodificacion especulativa. La model card se limita a indicar la arquitectura, el numero de tokens y los ficheros GGUF disponibles, por lo que la mayor parte del proceso de entrenamiento queda sin trazabilidad publica.
+No se especifican en la informacion disponible detalles sobre la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas adicionales mas alla de la atencion de ventana deslizante. Tampoco se documenta la longitud de contexto soportada ni la estrategia de tokenizacion.
 
 ## Capacidades
-
-- Generacion de texto autoregresiva en turco e ingles, idiomas declarados en los metadatos del modelo.
-- Modelo base sin ajuste instructivo documentado: no se garantiza el seguimiento fiable de instrucciones ni el formato conversacional, aunque la model card incluye un ejemplo con `-cnv` en llama-cli.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues limitadas a los dos idiomas declarados (tr, en); no se documentan otros.
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
-- Compatibilidad con el ecosistema llama.cpp, Ollama y LM Studio gracias a los ficheros GGUF publicados.
+- Generacion de texto conversacional en turco e ingles.
+- Razonamiento basico y respuesta a instrucciones (el tag "conversational" sugiere formato de chat, aunque no se detalla el template).
+- Capacidades multilingues limitadas a turco e ingles.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta vision, audio ni modo de pensamiento explicito.
+- Compatible con endpoints (tag "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia estandar.
 
 ## Casos de uso
-
-- Generacion de texto en turco: el modelo puede emplearse para redactar borradores, resumenes o parafrasis en turco, su idioma principal declarado, con la ventaja de que las cuantizaciones Q4_K_M (744 MB) y Q5_K_M (862 MB) caben en practicamente cualquier GPU de consumo.
-- Experimentacion e investigacion: adecuado como banco de pruebas para estudiar el comportamiento de arquitecturas tipo Gemma 3 con SWA a escala de 1.250 millones de parametros, sin necesidad de infraestructura dedicada.
-- Prototipado local con Ollama o LM Studio: el flujo documentado (`ollama create` + `ollama run`) permite levantar un endpoint de generacion en minutos en un portatil, util para demos internas y pruebas de concepto.
-- Fine-tuning posterior: al ser un modelo base con licencia Apache 2.0, puede servir como punto de partida para ajuste supervisado en tareas especificas del turco (clasificacion, extraccion, generacion de resumenes) sin restricciones de licencia comercial.
-- Generacion de texto en ingles como idioma secundario: util para tareas de continuacion de texto o generacion libre, aunque sin garantias de calidad equiparable al turco.
-- Evaluacion comparativa de cuantizaciones: los cuatro ficheros publicados (BF16, Q8_0, Q5_K_M, Q4_K_M) permiten medir la degradacion de perplejidad y calidad entre niveles de cuantizacion en un modelo de este tamano.
+- Generacion de texto en turco para prototipos y aplicaciones de bajo coste: el modelo puede producir respuestas coherentes en turco con un consumo de recursos minimo, adecuado para entornos de desarrollo y pruebas.
+- Chatbot ligero de atencion al cliente en turco: su tamano permite desplegarlo en una sola GPU de consumo o incluso en CPU, gestionando conversaciones multi-turno basicas sin infraestructura dedicada.
+- Generacion de contenido y resumenes en turco: util para redactar borradores, resumir textos o generar descripciones en aplicaciones editoriales o de marketing.
+- Traduccion asistida turco-ingles: al dominar ambos idiomas, puede emplearse como base para tareas de traduccion simple o como componente en pipelines de localizacion.
+- Educacion y asistencia en el aprendizaje del turco: puede generar ejemplos, explicaciones y ejercicios en turco para plataformas educativas.
+- Despliegue en dispositivos con recursos limitados: gracias a las cuantizaciones Q4_K_M (744 MB) y Q5_K_M (862 MB), puede ejecutarse en portatiles, Raspberry Pi o entornos edge mediante llama.cpp u Ollama.
+- Filtrado y clasificacion de texto en turco: como modelo base, puede afinarse para tareas de clasificacion o extraccion de informacion en dominios especificos.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (incluye pesos y overhead de contexto reducido):
-  - BF16: aproximadamente 2,4 GB de pesos; en la practica 3-4 GB de VRAM.
-  - Q8_0: aproximadamente 1,3 GB de pesos; en la practica 2-3 GB de VRAM.
-  - Q5_K_M: aproximadamente 0,9 GB de pesos; en la practica 1,5-2,5 GB de VRAM.
-  - Q4_K_M: aproximadamente 0,75 GB de pesos; en la practica 1,5-2 GB de VRAM.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente para las cuantizaciones Q4_K_M y Q5_K_M; una RTX 3060, RTX 4060, RTX 4090 o superior permiten ejecutar incluso BF16 con holgura. En entornos de servidor, A100 o H100 no son necesarias para este tamano, pero funcionarian sin problema.
-- Cabe en GPU consumer: si, en todas las cuantizaciones publicadas; Q4_K_M y Q5_K_M caben incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio. vLLM y TGI requeririan conversion a safetensors y no estan documentados para este artefacto.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente 0,8 GB en Q4_K_M, 0,9 GB en Q5_K_M, 1,3 GB en Q8_0 y 2,4 GB en BF16 (segun los tamanos de archivo indicados).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para BF16; las cuantizaciones Q4 y Q5 caben en GPUs integradas o de gama baja (GTX 1050, RTX 3050, etc.).
+- Cabe en GPU de consumo: si, en practicamente todas las GPUs modernas, incluidas las de portatiles.
+- Opciones de despliegue: llama.cpp (llama-cli), Ollama (ollama create/run), LM Studio y cualquier runtime compatible con GGUF.
+- Latencia y throughput estimados: no disponibles; al ser un modelo de 1,26 mil millones de parametros, se espera una latencia baja en GPU y moderada en CPU, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| cevher3-test-13-GGUF | 1.256 M | no disponible | Apache 2.0 | GGUF | Base, turco/ingles, SWA tipo Gemma 3 |
-| Gemma 3 1B (Google) | ~1.000 M | no disponible en la informacion | Gemma Terms | safetensors, GGUF | Referencia arquitectonica directa; ecosistema y documentacion amplios |
-| Llama 3.2 1B (Meta) | ~1.240 M | 128K (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Alternativa generalista con ajuste instructivo oficial |
-| Qwen2.5 1.5B (Alibaba) | ~1.540 M | 32K (segun documentacion publica de Alibaba) | Apache 2.0 | safetensors, GGUF | Alternativa Apache 2.0 con soporte multilingue amplio |
+| cevher3-test-13-GGUF | 1,26 B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Gemma 3 (1B) | ~1 B | no disponible en la informacion | Gemma Terms | safetensors, GGUF | Hugging Face |
+| Qwen2.5-1.5B | 1,5 B | 32K (segun documentacion publica) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Llama 3.2 1B | 1,2 B | 128K (segun documentacion publica) | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
 
-La comparativa se limita a datos publicos de los modelos alternativos; no existen benchmarks del modelo evaluado que permitan una comparacion de rendimiento directa.
+Nota: los datos de contexto y licencia de los modelos comparados provienen de su documentacion publica general; no se dispone de benchmarks comparativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Modelo base sin ajuste instructivo documentado: puede producir continuaciones incoherentes o ignorar instrucciones si se usa como asistente conversacional.
-- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, lo que impide recomendarlo para produccion sin una evaluacion propia.
-- Sesgos conocidos: no documentados por el autor; al entrenarse sobre un corpus no descrito, los sesgos linguisticos y culturales son desconocidos.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano y agravado por la falta de ajuste por preferencias.
-- Limitaciones de contexto e idioma: la longitud de contexto no se declara; el soporte se limita a turco e ingles, sin garantias en otros idiomas.
-- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el autor no ofrece garantias ni soporte.
-- Madurez: cero descargas y cero likes en el momento de la consulta; se trata de un artefacto experimental de un autor individual sin validacion de la comunidad.
-- El repositorio GGUF (5,5 GB) incluye las cuatro cuantizaciones; conviene descargar solo el fichero necesario para evitar consumo innecesario de disco y ancho de banda.
+- Modelo de tipo base afinado: no se detalla el proceso de alineacion (RLHF/DPO), por lo que puede generar respuestas inconsistentes o no alineadas con instrucciones complejas.
+- Riesgo de alucinacion inherente a modelos de este tamano, especialmente en tareas de conocimiento factual.
+- Cobertura linguistica limitada a turco e ingles; el rendimiento en otros idiomas no esta garantizado.
+- Longitud de contexto no documentada, lo que dificulta planificar aplicaciones con ventanas largas.
+- Aunque la licencia Apache 2.0 permite uso comercial, el autor no ofrece garantias sobre el rendimiento ni sobre la procedencia de los datos de entrenamiento.
+- No se documentan sesgos conocidos; como en todo modelo entrenado con datos web, es probable que presente sesgos sociales y culturales.
+- El repositorio tiene un tamano de 11,1 GB, lo que puede dificultar la descarga en entornos con ancho de banda limitado.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/bcckfdn/cevher3-test-13-GGUF
+- Hugging Face: https://huggingface.co/bcckfdn/cevher3-test-13-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher3-test-13
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Ollama: https://ollama.com
-- LM Studio: https://lmstudio.ai
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

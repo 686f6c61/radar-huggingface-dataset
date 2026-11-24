@@ -1,91 +1,85 @@
 # kalle07/Vero-Qwen3-8B_VL_Heresy_ARA-NSFW_gguf
 
 ## Resumen
+Vero-Qwen3-8B_VL_Heresy_ARA_NSFW es un modelo vision-lenguaje (image-text-to-text) de 8.190.735.360 parametros derivado de la familia Qwen3-VL. Lo publica el usuario kalle07 en Hugging Face y se distribuye en formato GGUF, con licencia Apache 2.0. Su proposito es la descripcion de imagenes y el razonamiento visual sin restricciones de contenido, incluyendo material NSFW, manteniendo a la vez la calidad del modelo original.
 
-Vero-Qwen3-8B_VL_Heresy_ARA-NSFW es un modelo vision-lenguaje multimodal de 8.190.735.360 parámetros, publicado por el usuario kalle07 en Hugging Face. Se trata de una versión "descensurada" del modelo zlab-princeton/Vero-Qwen3I-8B, obtenida mediante la herramienta Heretic v2.1.0 y el método Arbitrary-Rank Ablation (ARA), que reduce los rechazos del modelo original ante peticiones consideradas sensibles. Según la model card, la tasa de rechazo baja de 89/100 en el original a 6/100 en esta variante, con una divergencia KL de 0.004 respecto al modelo base.
+El modelo es el resultado de un merge en dos etapas. Primero se parte de zlab-princeton/Vero-Qwen3I-8B, un modelo entrenado con 600.000 muestras RL curadas procedentes de 59 datasets en seis categorias de razonamiento visual. Sobre esa base se aplica una ablacion de rechazos mediante Heretic v2.1.0 con el metodo Arbitrary-Rank Ablation (ARA), que reduce las negativas de 89/100 a 6/100 con una divergencia KL de 0,004. Despues se fusiona con pesos 0,8 una LoRA del modelo Qwen3-VL-8B-NSFW-Caption-V4.5, orientada especificamente a subtitulado de imagenes NSFW.
 
-El modelo parte de la familia Qwen3-VL (arquitectura Qwen3 con capacidades de visión) y añade, en una segunda iteración, una fusión con un LoRA de la serie Qwen3-VL-8B-NSFW-Caption-V4.5, orientado a la descripción de imágenes con contenido NSFW. El pipeline declarado es image-text-to-text, por lo que acepta entradas de imagen y texto y genera texto.
-
-Es relevante para desarrolladores e investigadores que necesiten un modelo multimodal pequeño (8B) sin filtros de rechazo para tareas de captioning, análisis de imágenes o generación de texto sin restricciones de contenido, siempre teniendo en cuenta las implicaciones éticas y legales de un modelo explícitamente descensurado. La licencia declarada es Apache 2.0 y los pesos se distribuyen en formato GGUF.
+Es relevante ahora porque combina tres piezas que rara vez aparecen juntas en un modelo de 8B: base Qwen3-VL con vision nativa, un proceso de abliteracion medido con metricas objetivas (tasa de rechazo y KL) y una especializacion en captioning sin censura. El resultado es un modelo pequeno, desplegable en hardware de consumo, pensado para pipelines de descripcion de imagenes donde los filtros de seguridad estandar bloquean la tarea.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal Qwen3-VL (vision-lenguaje); no se detalla la variante exacta en la informacion disponible |
+| Arquitectura | Transformer vision-lenguaje basada en Qwen3-VL (detalles internos no disponibles) |
 | Parametros totales | 8.190.735.360 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (el repo contiene pesos cuantizados; no se detallan los niveles exactos en la informacion disponible) |
+| Tipos de cuantizacion | GGUF (variantes concretas no disponibles) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (repo de 23,6 GB) |
 
 ## Arquitectura y entrenamiento
+La arquitectura subyacente es la de Qwen3-VL, un transformer multimodal que procesa imagen y texto de forma conjunta para tareas image-text-to-text. El modelo hereda la torre de vision y el decodificador de lenguaje de la familia Qwen3-VL de 8B; la model card no detalla la configuracion interna de capas, dimensiones ni mecanismos de atencion.
 
-El modelo se construye sobre zlab-princeton/Vero-Qwen3I-8B, un modelo de la familia Qwen3-VL con capacidades multimodales (image-text-to-text). Según la model card, el modelo original fue entrenado con 600.000 muestras RL curadas procedentes de 59 datasets, distribuidas en 6 categorías de razonamiento visual. No se especifica en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO más allá de las muestras RL mencionadas.
-
-La innovación principal de esta variante es la aplicación de Heretic v2.1.0 con el método Arbitrary-Rank Ablation (ARA), una técnica de ablación de direcciones en el espacio de activaciones que reduce la tendencia del modelo a rechazar peticiones. La model card reporta una divergencia KL de 0.004 respecto al modelo original, lo que indica una alteración mínima de la distribución de salida general. Adicionalmente, la segunda versión fusiona un LoRA de Qwen3-VL-8B-NSFW-Caption-V4.5 con peso 0.8, orientado a mejorar la comprensión y descripción de contenido NSFW. El autor indica que responde bien a system prompts, lo que permite modular el comportamiento mediante instrucciones de sistema.
+El entrenamiento se articula en tres fases documentadas. La base zlab-princeton/Vero-Qwen3I-8B se entreno con 600.000 muestras RL curadas de 59 datasets en seis categorias de razonamiento visual. Sobre ella se aplico Heretic v2.1.0 con Arbitrary-Rank Ablation, un metodo de ablacion de direcciones de rechazo en el espacio de activaciones; el autor reporta 6/100 respuestas no censuradas frente a 89/100 del original, con divergencia KL de 0,004 respecto al modelo base. Finalmente se fusiono con peso 0,8 una LoRA de Qwen3-VL-8B-NSFW-Caption-V4.5 (cuya fuente original fue eliminada; queda un espejo GGUF de mradermacher) para reforzar el captioning NSFW. El autor indica que esta segunda version no fue evaluada en profundidad y que la mejora de comprension es moderada.
 
 ## Capacidades
-
-- Generación de texto multimodal: acepta imágenes y texto como entrada y genera descripciones o respuestas textuales (pipeline image-text-to-text).
-- Descripción de imágenes (captioning): capacidad reforzada mediante la fusión del LoRA NSFW-Caption, orientada a la descripción detallada de contenido visual, incluido contenido explícito.
-- Razonamiento visual: heredado del entrenamiento del modelo base con 600.000 muestras RL en 6 categorías de razonamiento visual.
-- Reducción de rechazos: la ablación ARA disminuye la tasa de rechazo a 6/100 según la model card, frente a 89/100 del original.
-- Sensibilidad a system prompts: el autor indica que el modelo responde bien a instrucciones de sistema, permitiendo adaptar el tono y el contenido de las respuestas.
-- Contenido NSFW: el modelo está etiquetado como `not-for-all-audiences` y no aplica filtros de contenido explícito.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
+- Generacion de descripciones de imagenes (captioning) en texto natural, incluido contenido NSFW.
+- Razonamiento visual sobre seis categorias cubiertas por el dataset RL de la base Vero.
+- Conversacion multimodal multi-turno (pipeline image-text-to-text, tag conversational).
+- Respuesta muy sensible a system prompts, segun el autor, lo que permite ajustar tono y formato.
+- Generacion de texto y razonamiento heredados de la base Qwen3I-8B.
+- Contenido sin censura: tasa de rechazo reportada de 6/100 frente a 89/100 del original.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y multi-step reasoning: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible en la informacion proporcionada.
 
 ## Casos de uso
-
-- Descripción automática de imágenes en catálogos y archivos: el modelo puede generar captions detallados de imágenes, incluido contenido para adultos, adecuado para sistemas de gestión de bibliotecas de imágenes que requieran descripciones sin filtros.
-- Moderación y etiquetado de contenido NSFW: al no rechazar contenido explícito, puede emplearse para clasificar y etiquetar imágenes según su grado de explicitad en pipelines de moderación, generando descripciones que alimenten clasificadores posteriores.
-- Investigación sobre alineación y descensurado: permite estudiar el efecto de técnicas de ablación (ARA) sobre el comportamiento de rechazo y la calidad del modelo, con una divergencia KL medida de 0.004 respecto al original.
-- Generación de texto creativo sin restricciones: útil para proyectos de escritura que requieran contenido adulto o temas sensibles, donde los modelos alineados rechazarían la petición.
-- Análisis de imágenes en entornos de investigación: para tareas de visión-lenguaje donde se necesite describir escenas complejas sin que el modelo se niegue a procesar contenido explícito.
-- Evaluación comparativa de variantes descensuradas: como referencia para medir la degradación de calidad (KL, tasas de rechazo) entre el modelo original y las versiones ablacionadas, en el contexto de estudios sobre seguridad de modelos.
-- Asistencia en flujos de trabajo con system prompts personalizados: gracias a su sensibilidad a las instrucciones de sistema, puede configurarse para adoptar roles concretos en aplicaciones de generación de texto e imagen-texto.
+- Descripcion automatica de imagenes en archivos y bibliotecas personales: el modelo genera captions detalladas, incluido contenido adulto, sin los bloqueos que sufren los modelos alineados; util para catalogar colecciones privadas.
+- Etiquetado y moderacion de contenido para plataformas: se puede usar para describir y clasificar imagenes NSFW con vocabulario explicito, generando metadatos que alimenten sistemas de moderacion o de filtrado posterior.
+- Generacion de datasets sinteticos multimodales: produce descripciones ricas de imagenes para entrenar otros modelos de vision o de recuperacion imagen-texto, incluyendo dominios que los modelos censurados evitan.
+- Investigacion sobre alineacion y abliteracion: sirve como caso de estudio reproducible (Heretic + ARA con metricas de rechazo y KL) para estudiar como la ablacion afecta a la calidad y al comportamiento del modelo.
+- Asistencia creativa para escritores y artistas: descripcion de referencias visuales y generacion de texto a partir de imagenes sin restricciones tematicas, integrable en herramientas de escritura.
+- Analisis de imagenes en entornos de investigacion sensible: documentacion de contenido que requiere descripcion literal (medicina, criminologia, arte erotico) donde la autocensura degrada la utilidad.
+- Despliegue local en estaciones de trabajo: al ser GGUF de 8B, cabe en GPU de consumo y permite procesar imagenes sin enviar datos a servicios externos, relevante por privacidad.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas internas del proceso de descensurado: tasa de rechazo de 6/100 frente a 89/100 del modelo original, y divergencia KL de 0.004 respecto al modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato cuantitativo es la evaluacion interna de la ablacion: 6/100 respuestas no censuradas frente a 89/100 del modelo original, con divergencia KL de 0,004.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: con 8.190.735.360 parámetros, en cuantización de 4 bits se estiman aproximadamente 5-6 GB de VRAM; en 8 bits, unos 9-10 GB; en FP16, unos 16-17 GB (estimaciones orientativas, no confirmadas en la información disponible).
-- GPU recomendadas: para FP16, GPU con 16-24 GB (RTX 4090, A100 40 GB); para cuantizaciones de 4-8 bits, GPU consumer con 8-12 GB (RTX 3060 12 GB, RTX 4070, RTX 4080).
-- Cabe en GPU consumer: sí, en cuantizaciones GGUF de 4-8 bits en tarjetas con 8 GB o más de VRAM.
-- Opciones de despliegue: llama.cpp y Ollama para los pesos GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia estándar. No se detallan otras opciones (vLLM, TGI) en la información disponible.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: no disponible de forma oficial; para un modelo de 8B en GGUF, las cuantizaciones Q4 ocupan del orden de 5-6 GB y Q8 en torno a 9 GB, mas el overhead del codificador visual y del contexto.
+- GPU recomendadas: no especificadas por el autor. Por tamano, una RTX 4090 (24 GB) permite ejecutar cuantizaciones altas con contexto amplio; A100 o H100 no son necesarias para inferencia.
+- Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas en cuantizaciones bajas y 12-16 GB para cuantizaciones medias; el dato exacto no esta publicado.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints tipo OpenAI. vLLM y TGI no estan confirmados para esta variante GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| Vero-Qwen3-8B_VL_Heresy_ARA-NSFW | 8.190.735.360 | no disponible | Apache 2.0 | GGUF | Variante descensurada con ARA y LoRA NSFW |
-| zlab-princeton/Vero-Qwen3I-8B | 8B (aproximado) | no disponible | no disponible | no disponible | Modelo base original, 89/100 rechazos |
-| Qwen3-VL-8B-NSFW-Caption-V4.5 | 8B (aproximado) | no disponible | no disponible | GGUF (via mradermacher) | LoRA de captioning NSFW usado en la fusión |
+| Vero-Qwen3-8B_VL_Heresy_ARA_NSFW | 8,19B | no disponible | Vision-lenguaje sin censura, captioning NSFW | Apache 2.0 | GGUF |
+| zlab-princeton/Vero-Qwen3I-8B (base) | 8B | no disponible | Vision-lenguaje con RL, alineado | no disponible | safetensors |
+| Qwen3-VL-8B (familia original) | 8B | no disponible | Vision-lenguaje generalista | no disponible | safetensors/GGUF |
+| Qwen3-VL-8B-NSFW-Caption-V4.5 | 8B | no disponible | Captioning NSFW especializado | no disponible | GGUF (espejo) |
 
-No se dispone de datos de benchmarks ni de contexto para una comparación cuantitativa de rendimiento entre estos modelos en la información proporcionada.
+La comparativa se limita a la propia genealogia del modelo porque la informacion proporcionada no incluye datos de rendimiento de alternativas. Frente a la base Vero, la diferencia medida es la tasa de rechazo (6/100 frente a 89/100) con KL de 0,004; frente al modelo original Qwen3-VL, anade la especializacion NSFW y la ablacion.
 
 ## Limitaciones y advertencias
-
-- Contenido explícito: el modelo está diseñado para no rechazar contenido NSFW y está etiquetado como `not-for-all-audiences`; su uso en producción requiere controles de acceso y cumplimiento normativo.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual; como todo modelo generativo, puede producir descripciones inexactas de imágenes.
-- Sesgos conocidos: no disponible en la información proporcionada; el proceso de ablación puede alterar el comportamiento del modelo de formas no evaluadas.
-- Limitaciones de contexto e idioma: no se especifican la longitud de contexto ni los idiomas soportados.
-- Restricciones de licencia: la licencia declarada es Apache 2.0, pero el uso de contenido NSFW puede estar sujeto a legislación local y a las políticas de las plataformas de despliegue.
-- Caveat para producción: la fusión con un LoRA de terceros (peso 0.8) y la ablación ARA pueden degradar capacidades no evaluadas; el autor indica que no ha probado en profundidad la mejora de comprensión de la segunda versión.
-- Procedencia del LoRA: la fuente original del LoRA NSFW-Caption fue eliminada; solo se referencia un espejo en GGUF de mradermacher.
+- Contenido no apto para todos los publicos: el modelo genera material NSFW y esta etiquetado como not-for-all-audiences; no debe desplegarse en entornos accesibles a menores o sin control.
+- La ablacion de rechazos reduce tambien la cautela ante peticiones daninas; no hay garantia de que el modelo rechace contenido ilegal o peligroso, por lo que requiere moderacion externa en produccion.
+- Riesgo de alucinacion en la descripcion de imagenes: como todo modelo de captioning, puede inventar detalles no presentes, especialmente en escenas ambiguas o de baja calidad.
+- La fusion con la LoRA NSFW se hizo con peso 0,8 y el autor reconoce que no la evaluo en profundidad; la calidad en dominios no NSFW puede haberse degradado respecto a la base.
+- Idioma: no se documenta cobertura multilingue; el comportamiento fuera del ingles no esta verificado.
+- Longitud de contexto no documentada, lo que impide planificar cargas de imagenes multiples o conversaciones largas con garantias.
+- Licencia Apache 2.0 declarada, pero los modelos base y la LoRA fusionada tienen terminos propios que no se detallan; conviene revisar su compatibilidad antes de un uso comercial.
+- La fuente original de la LoRA NSFW fue eliminada; la trazabilidad de esos pesos depende de un espejo de terceros.
+- Fecha de creacion en 2026 y muy pocas descargas y likes (1358 y 1): modelo joven y con poca validacion comunitaria.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/kalle07/Vero-Qwen3-8B_VL_Heresy_ARA-NSFW_gguf
-- Modelo base: https://huggingface.co/zlab-princeton/Vero-Qwen3I-8B
-- Heretic (herramienta de descensurado): https://github.com/p-e-w/heretic
-- LoRA NSFW-Caption original (eliminado): https://huggingface.co/thesby/Qwen3-VL-8B-NSFW-Caption-V4.5
-- Espejo GGUF del LoRA: https://huggingface.co/mradermacher/Qwen3-VL-8B-NSFW-Caption-V4.5-GGUF
+- Modelo base Vero: https://huggingface.co/zlab-princeton/Vero-Qwen3I-8B
+- LoRA NSFW original (referenciada, fuente eliminada): https://huggingface.co/thesby/Qwen3-VL-8B-NSFW-Caption-V4.5
+- Espejo GGUF de la LoRA NSFW: https://huggingface.co/mradermacher/Qwen3-VL-8B-NSFW-Caption-V4.5-GGUF
+- Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic

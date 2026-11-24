@@ -2,91 +2,98 @@
 
 ## Resumen
 
-Skskskd/teste-modelo es un modelo de generacion de texto publicado en Hugging Face por el usuario Skskskd el 10 de octubre de 2026. Se distribuye en formato safetensors y se carga con la libreria transformers, con la etiqueta de arquitectura gpt2 y pipeline text-generation. El repositorio tiene 0 descargas y 0 likes, y su model card es la plantilla autogenerada por Hugging Face sin ninguna seccion completada: no hay informacion sobre desarrollador, datos de entrenamiento, licencia ni idiomas.
+`Skskskd/teste-modelo` es un modelo de generacion de texto publicado en Hugging Face por el usuario Skskskd. La model card es la plantilla autogenerada por la libreria `transformers` y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". Esto lo convierte en un artefacto de escasa trazabilidad documental, aunque el recuento real de parametros en safetensors (124.440.576) y el tag `gpt2` permiten situarlo con cierta precision.
 
-El dato tecnico verificable es el recuento de parametros de los pesos safetensors: 30.339.456 parametros, con un tamano de repositorio de 0,1 GB. Esta cifra es coherente con una configuracion reducida de la familia GPT-2 (muy por debajo de los 124 millones de GPT-2 small), aunque el autor no confirma ninguna configuracion concreta de capas, dimension de embedding o cabezas de atencion.
+Por el numero de parametros y la etiqueta de arquitectura, el modelo encaja en la familia GPT-2 de tamano medio (aproximadamente 124M parametros, la variante "small" original de OpenAI). Es un transformer decoder-only causal con tokenizador BPE, orientado a generacion de texto autoregresiva. El repositorio ocupa 0,7 GB, coherente con pesos en `safetensors` en precision fp32.
 
-Por su naturaleza, el modelo parece un artefacto de prueba ("teste-modelo") mas que un modelo destinado a produccion. Su relevancia practica es limitada: sirve como ejemplo minimo para validar pipelines de transformers, TGI o endpoints compatibles, pero no hay evidencia publicada de calidad, evaluaciones ni licencia de uso, por lo que no deberia emplearse en aplicaciones reales sin verificacion previa por parte del autor.
+Su relevancia practica es limitada: no hay evidencia publicada de fine-tuning, evaluacion ni datos de entrenamiento, y el nombre ("teste-modelo") sugiere un artefacto de prueba mas que un modelo destinado a produccion. Resulta util, eso si, como caso de estudio de modelos pequenos desplegables en hardware modesto y como ejemplo de repositorio con documentacion deficiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como gpt2 en el Hub; sin confirmar por el autor) |
-| Parametros totales | 30.339.456 (segun metadatos safetensors) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no hay GGUF, AWQ, GPTQ ni variantes cuantizadas en el repositorio) |
+| Arquitectura | Transformer decoder-only causal (familia GPT-2, segun tag `gpt2`) |
+| Parametros totales | 124.440.576 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (los modelos GPT-2 de este tamano usan tipicamente 1024 tokens, pero no se confirma en la model card) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; cuantizaciones GGUF/ONNX no publicadas por el autor) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Libreria | transformers |
+| Pipeline | text-generation |
+| Tamano del repositorio | 0,7 GB |
+| Descargas | 391 |
+| Fecha de creacion | 2026-10-10 |
+| Ultima actualizacion | 2026-10-31 |
 
 ## Arquitectura y entrenamiento
 
-La unica referencia arquitectonica es la etiqueta "gpt2" del repositorio, que apunta a un transformer decoder-only con atencion causal y normalizacion previa a la atencion, la familia descrita por OpenAI en 2019. No se especifica el numero de capas, la dimension del modelo, el numero de cabezas de atencion, el tamano del vocabulario ni si los embeddings estan atados a la capa de salida. Tampoco se indica el tipo de positional encoding ni la longitud maxima de secuencia soportada.
+La informacion disponible solo permite afirmar que se trata de un transformer decoder-only de la familia GPT-2, con 124,4 millones de parametros. No hay datos sobre el numero de capas, dimension del modelo, numero de cabezas de atencion ni vocabulario. Tampoco se especifica si el modelo fue entrenado desde cero, si es un fine-tuning de un GPT-2 preentrenado o si se trata de una copia con pesos reempaquetados.
 
-No hay informacion sobre el corpus de entrenamiento, el numero de tokens vistos, la composicion del dataset ni si hubo fases de ajuste fino con RLHF, DPO o instrucciones. El unico vinculo externo presente en la model card es la referencia arXiv:1910.09700 (Lacoste et al., 2019), que corresponde al calculador de impacto medioambiental citado en la plantilla estandar de Hugging Face y no a un articulo sobre el modelo. No se documenta ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o mezcla de expertos.
+La model card no documenta volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones arquitectonicas como atencion lineal o decodificacion especulativa. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa. El tag `arxiv:1910.09700` que aparece en los metadatos del Hub corresponde al articulo de Lacoste et al. sobre el calculo de emisiones de carbono, citado en la plantilla de la model card, y no a un paper del modelo.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva basica, derivada del pipeline text-generation declarado.
-- Compatibilidad declarada con text-generation-inference y con endpoints compatibles, segun las etiquetas del repositorio.
-- Carga directa mediante la libreria transformers en formato safetensors.
-- No hay evidencia de soporte de tool calling, function calling ni agentes multi-paso.
-- No hay evidencia de capacidades multilingues; los idiomas no estan declarados.
-- No hay evidencia de modo de razonamiento explicito (thinking mode), vision, audio ni otras modalidades.
-- No hay evidencia de capacidades especificas en codigo o matematicas mas alla de lo que pueda emerger del corpus de entrenamiento, que se desconoce.
+- Generacion de texto autoregresiva basica, propia de un modelo causal de 124M parametros.
+- Continuacion de prompts y generacion condicionada por contexto previo.
+- Compatibilidad con `transformers` y con `text-generation-inference` (segun tags del Hub).
+- Compatibilidad declarada con endpoints (`endpoints_compatible`).
+- Tool calling / function calling: no disponible.
+- Razonamiento multi-paso o modo agente: no disponible.
+- Capacidades multilingues: no disponibles; sin datos de composicion linguistica del corpus.
+- Vision, audio o modalidades adicionales: no disponible.
+- Modo "thinking" o razonamiento extendido: no disponible.
 
 ## Casos de uso
 
-- Pruebas de humo de infraestructura de inferencia: al ser un modelo de 30 millones de parametros, permite validar que un servidor TGI, un endpoint compatible con la API de OpenAI o un pipeline de transformers arrancan y responden correctamente sin consumir recursos significativos.
-- Validacion de pipelines de CI/CD para modelos: sirve como artefacto ligero para comprobar que el proceso de descarga, conversion de safetensors, tokenizacion y generacion funciona antes de desplegar modelos mayores.
-- Docencia y formacion: su tamano permite ejecutar inferencia en CPU y mostrar de forma practica el ciclo completo de carga de un modelo con transformers, util en cursos introductorios de PLN.
-- Pruebas unitarias de aplicaciones: se puede integrar como doble de prueba (test double) en suites que necesitan un modelo real que genere texto sin coste de GPU.
-- Medicion comparativa de latencia y memoria: sirve para calibrar el coste fijo de un framework de serving (overhead de arranque, gestion de memoria, batching) aislando la variable del tamano del modelo.
-- Experimentos de cuantizacion: al ser pequeno, es un candidato comodo para probar conversiones a GGUF, int8 o int4 y verificar que las herramientas de cuantizacion producen salidas coherentes.
-- Demostraciones locales sin conexion: puede desplegarse en un portatil o en una Raspberry Pi para demostrar generacion de texto en entornos con recursos muy limitados.
+- Prototipado rapido de pipelines de generacion de texto: por su tamano (124M) y formato safetensors, se puede cargar en una GPU consumer o incluso en CPU para validar integraciones con `transformers` antes de migrar a modelos mayores.
+- Pruebas de infraestructura de serving: util para verificar despliegues con `text-generation-inference` o endpoints compatibles sin consumir recursos de un modelo grande.
+- Generacion de texto de baja latencia en entornos con recursos limitados: la huella de memoria reducida permite ejecutarlo en dispositivos edge o en contenedores pequenos.
+- Educacion y experimentacion: sirve para ilustrar el funcionamiento de un transformer causal y el flujo de carga de pesos en `safetensors`.
+- Baseline para comparaciones: puede actuar como referencia minima en experimentos de evaluacion de modelos de mayor tamano.
+- Generacion de texto auxiliar no critica (relleno, plantillas, continuaciones cortas) donde la calidad no sea un requisito estricto y el coste computacional sea prioritario.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye seccion de evaluacion cumplimentada, no hay resultados de MMLU, HumanEval, GSM8K ni de ninguna otra tarea, y no se documenta ninguna comparacion con modelos de referencia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de 30,3 millones de parametros): aproximadamente 121 MB en fp32, 61 MB en fp16 o bf16, 30 MB en int8 y 15 MB en int4, sin contar el overhead de activaciones y del runtime.
-- Cabe sin problema en cualquier GPU de consumo, incluida una GTX 1050 Ti de 4 GB o una RTX 3060 de 12 GB, y tambien en CPU con memoria RAM convencional.
-- GPU de datacenter como A100 o H100 no aportan ninguna ventaja practica para este tamano; el cuello de botella seria el overhead del framework, no el computo.
-- Opciones de despliegue: transformers de forma nativa; text-generation-inference y endpoints compatibles estan declarados en las etiquetas del repositorio. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que no se publica ninguna variante en ese formato. La compatibilidad con vLLM no esta confirmada por el autor.
-- Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni tiempos de respuesta.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB solo para pesos (124,4M parametros x 4 bytes), mas overhead de activaciones y cache KV.
+- VRAM estimada en fp16/bf16: aproximadamente 0,25 GB para pesos.
+- VRAM estimada en cuantizacion int8: aproximadamente 0,13 GB para pesos (si se generan pesos cuantizados, no publicados por el autor).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tambien viable en CPU.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU moderna (GTX 1050 Ti en adelante) e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: `transformers` (nativo), `text-generation-inference` (segun tags), endpoints compatibles; `llama.cpp`/`Ollama` requeririan conversion a GGUF no publicada por el autor.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos de comparacion proceden de su documentacion publica en Hugging Face y pueden variar; no se dispone de resultados de benchmarks del modelo analizado, por lo que la comparacion es unicamente estructural.
-
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Skskskd/teste-modelo | 30,3 M | no disponible | no disponible | safetensors en el Hub |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | safetensors y multiples formatos |
-| DistilGPT2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | safetensors, GGUF en la comunidad |
-| Pythia-70M (EleutherAI) | 70 M | 2048 tokens | Apache 2.0 | safetensors |
+| Skskskd/teste-modelo | 124,4M | no disponible | no disponible | Hugging Face (391 descargas) |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Hugging Face, ampliamente replicado |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
+| GPT-2 medium (OpenAI) | 355M | 1024 tokens | MIT | Hugging Face |
 
-Frente a estas alternativas, el modelo analizado no aporta informacion verificable sobre datos de entrenamiento, licencia o rendimiento, lo que lo hace menos adecuado para cualquier uso real que los modelos citados, todos ellos con licencia explicita y evaluaciones publicadas.
+La comparativa se limita a parametros y licencia porque no hay datos de rendimiento del modelo analizado. Frente a GPT-2 small, la diferencia principal es la trazabilidad: el modelo original tiene paper, datos de entrenamiento documentados y licencia explicita, mientras que `teste-modelo` carece de todos ellos.
 
 ## Limitaciones y advertencias
 
-- La model card no esta cumplimentada: se desconoce el origen de los datos de entrenamiento, el proceso de ajuste y cualquier evaluacion de sesgos.
-- Riesgo elevado de alucinacion y de texto incoherente: un modelo de 30 millones de parametros tiene una capacidad de modelado del lenguaje muy inferior a la de modelos de miles de millones, incluso si el entrenamiento fuese correcto.
-- Licencia no disponible: sin una licencia explicita no puede asumirse permiso de uso comercial, modificacion ni redistribucion. Cualquier uso en produccion requiere contactar con el autor.
-- Idiomas no declarados: no hay garantia de comportamiento correcto en castellano ni en ningun otro idioma concreto.
-- Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran conversaciones largas o documentos extensos.
-- Sin soporte documentado de tool calling, agentes o razonamiento multi-paso, por lo que no es apto para flujos agenticos.
-- El nombre del repositorio ("teste-modelo") y la ausencia de descargas sugieren un artefacto de prueba; conviene tratarlo como tal y no como un modelo mantenido.
-- No se documentan medidas de seguridad, filtrado de contenido ni mitigaciones de uso malintencionado.
-- El repositorio ocupa 0,1 GB y no incluye variantes cuantizadas ni artefactos adicionales, lo que limita las opciones de despliegue sin conversion previa.
+- Model card autogenerada sin informacion sobre sesgos, datos de entrenamiento ni evaluacion; imposible auditar el modelo.
+- Riesgo elevado de alucinacion y de generar contenido incoherente, propio de un modelo de 124M parametros sin alineacion documentada.
+- Licencia no disponible: no se puede asumir uso comercial permitido; en ausencia de licencia explicita, los derechos quedan reservados por defecto.
+- Idiomas soportados desconocidos; no se garantiza un rendimiento aceptable en castellano ni en ningun otro idioma concreto.
+- Longitud de contexto no confirmada; asumir 1024 tokens solo si se verifica contra la configuracion del repositorio.
+- Nombre del repositorio ("teste-modelo") y ausencia de documentacion sugieren un artefacto de prueba, no un modelo listo para produccion.
+- Sin garantias de mantenimiento: el autor no ha documentado el modelo y no hay historial de versiones.
+- No apto para tareas que requieran razonamiento, codigo, matematicas o tool calling con calidad verificable.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Skskskd/teste-modelo
-- Articulo citado en la model card (Lacoste et al., 2019, quantificacion del impacto ambiental): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto medioambiental de aprendizaje automatico: https://mlco2.github.io/impact#compute
-- No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la informacion disponible.
+- Hugging Face: https://huggingface.co/Skskskd/teste-modelo
+- Paper citado en la plantilla (Lacoste et al., 2019, emisiones de carbono): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ML: https://mlco2.github.io/impact
+- Repositorio de referencia GPT-2 (OpenAI): https://github.com/openai/gpt-2
+- Documentacion de transformers: https://huggingface.co/docs/transformers

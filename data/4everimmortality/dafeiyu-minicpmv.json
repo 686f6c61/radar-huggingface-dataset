@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 393,
+  "downloads_30d": 394,
   "trending_score": 0,
   "parameters": 1006209856,
   "parameters_human": "1.01B",
@@ -52,21 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "4everImmortality/dafeiyu-minicpmv · Hugging Face",
-      "url": "https://huggingface.co/4everImmortality/dafeiyu-minicpmv",
-      "snippet": "Text Generation model with 1B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "4everImmortality (wz.wang) - Hugging Face",
-      "url": "https://huggingface.co/4everImmortality",
-      "snippet": "CV, NLP, VLA AI & ML interests Recent Activity"
-    },
-    {
-      "title": "4everImmortality.github.io/index.md at main · 4everImmortality ...",
-      "url": "https://github.com/4everImmortality/4everImmortality.github.io/blob/main/index.md",
-      "snippet": "How to make the organic combination of multimodal model and UAV more effective, safety and accurate. Method: Utilizing Machine Learning and Deep Learning methods in drones, robots, and other edge device."
-    }
-  ]
+  "sources": []
 }

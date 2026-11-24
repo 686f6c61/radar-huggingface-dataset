@@ -2,79 +2,83 @@
 
 ## Resumen
 
-LFM2.5-VL-3B-ONNX es la versión en formato ONNX del modelo de visión-lenguaje LFM2.5-VL-3B desarrollado por Liquid AI, una compañía especializada en modelos híbridos para edge computing. Este modelo está diseñado específicamente para ejecutarse en dispositivos con recursos limitados, como navegadores web mediante WebGPU, manteniendo capacidades avanzadas de comprensión visual y multimodal. Se basa en el backbone LFM2.5-2.6B, un modelo híbrido que combina arquitecturas transformer y de estado, junto con un codificador de imagen SigLIP2 NaFlex.
+LFM2.5-VL-3B-ONNX es la distribucion en formato ONNX del modelo multimodal LFM2.5-VL-3B de Liquid AI, una generacion de modelos hibridos disenada especificamente para IA en el borde (edge AI) y despliegue en dispositivo. Esta variante concreta esta pensada para ejecutarse en el navegador mediante Transformers.js v4.0 o superior sobre WebGPU, lo que permite inferencia local de un modelo vision-lenguaje de 3 mil millones de parametros sin backend dedicado.
 
-El modelo resuelve el problema de desplegar modelos de visión-lenguaje (VLM) en entornos de baja latencia y memoria restringida, sin sacrificar funcionalidades como grounding de objetos, comprensión de pantallas digitales, parsing de documentos y function calling. Con 3.1 mil millones de parámetros, ofrece un equilibrio entre rendimiento y eficiencia, y su formato ONNX permite su integración en aplicaciones JavaScript a través de Transformers.js, así como en otros entornos compatibles con ONNX Runtime. Su relevancia actual radica en la creciente demanda de asistentes multimodales que operen directamente en el dispositivo, sin depender de infraestructura en la nube.
+El modelo resuelve el problema de llevar capacidades de image-text-to-text a entornos con recursos limitados: navegadores, portatiles consumer y dispositivos sin GPU de datacenter. Liquid AI posiciona la familia LFM2.5 como un estandar en calidad, velocidad y eficiencia de memoria para despliegue on-device, combinando un encoder de vision con un decoder hibrido.
+
+La relevancia actual radica en la combinacion de tres factores: tamano contenido (3B), soporte multilingue amplio (16 idiomas, incluido el espanol) y empaquetado ONNX con cuantizacion por componente (fp16 para encoder y embeddings, q4 para el decoder), lo que reduce sustancialmente el peso en memoria frente a la version original en safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida (backbone LFM2.5-2.6B + codificador de imagen SigLIP2 NaFlex) |
-| Parametros totales | 3.1 mil millones |
+| Arquitectura | Hibrida (familia LFM2.5), vision-lenguaje; decoder con atencion y capas convolucionales segun la familia LFM2; encoder de vision separado |
+| Parametros totales | 3B (segun denominacion del modelo) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | q4 (decoder) y fp16 (embeddings y vision encoder) en el ejemplo de Transformers.js; otras opciones no disponibles |
-| Idiomas soportados | arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes, vietnamita |
-| Licencia | lfm1.0 (licencia propia de Liquid AI) |
-| Formato de pesos | ONNX (tambien disponible en GGUF y MLX segun la documentacion) |
+| Tipos de cuantizacion | ONNX con dtypes por componente: fp16 (embed_tokens, vision_encoder), q4 (decoder_model_merged) |
+| Idiomas soportados | ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi |
+| Licencia | lfm1.0 (license: other, license_name: lfm1.0) |
+| Formato de pesos | ONNX (repo de 25,5 GB) |
 
 ## Arquitectura y entrenamiento
 
-LFM2.5-VL-3B combina un backbone de lenguaje LFM2.5-2.6B, que emplea una arquitectura híbrida que mezcla capas transformer con mecanismos de estado (similar a los modelos SSM), con un codificador de imagen SigLIP2 NaFlex. Esta combinación permite procesar entradas visuales y textuales de forma conjunta, generando respuestas directamente sin necesidad de módulos adicionales de proyección complejos. El modelo está optimizado para inferencia de baja latencia, tanto en dispositivo como en la nube, y responde de forma autorregresiva.
+La informacion disponible confirma que LFM2.5-VL-3B pertenece a la familia de modelos hibridos LFM2.5 de Liquid AI, orientada a edge AI. La model card de esta variante ONNX no detalla la composicion exacta de capas ni la mezcla entre atencion y convoluciones, ni tampoco el volumen de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de RLHF o DPO. Esos detalles remiten a la model card del modelo base (LiquidAI/LFM2.5-VL-3B), que no forma parte de la informacion proporcionada.
 
-No se han publicado detalles específicos sobre el dataset de entrenamiento, el número de tokens procesados ni las técnicas de alineación (como RLHF o DPO) en la información disponible. Sin embargo, la arquitectura híbrida y el uso de SigLIP2 NaFlex sugieren un entrenamiento enfocado en tareas de comprensión visual y grounding, con especial atención a la eficiencia computacional para entornos edge.
+La innovacion tecnica destacable de esta publicacion es el empaquetado para inferencia en navegador: el modelo se exporta a ONNX con dtypes diferenciados por submodulo (embed_tokens en fp16, vision_encoder en fp16 y decoder_model_merged en q4), de modo que Transformers.js puede cargarlo sobre WebGPU y ejecutar generacion multimodal sin servidor. El pipeline declarado es image-text-to-text y el modelo requiere `custom_code` y `trust_remote_code` en el ecosistema Transformers.
 
 ## Capacidades
 
-- Generacion de descripciones de imagenes y respuestas a preguntas visuales (image-text-to-text).
-- Grounding de objetos: localiza elementos en una imagen y devuelve coordenadas.
-- Comprension de pantallas digitales: interpreta capturas de pantalla de aplicaciones moviles, web y escritorio.
-- Parsing de documentos y graficos: extrae informacion estructurada de documentos, tablas y graficos.
-- Function calling / tool calling: puede invocar herramientas o funciones a partir de instrucciones en texto o imagen.
-- Soporte multilingue en 16 idiomas, incluyendo espanol, ingles, frances, aleman, chino, japones, etc.
-- Ejecucion en navegador mediante WebGPU y Transformers.js, lo que permite despliegue sin servidor.
+- Generacion de texto condicionada por imagen (image-text-to-text): descripcion de imagenes, respuesta a preguntas visuales y conversacion multimodal.
+- Conversacion multi-turno con plantilla de chat (`apply_chat_template`).
+- Soporte multilingue en 16 idiomas: arabe, chino, ingles, frances, aleman, hindi, indonesio, italiano, japones, coreano, polaco, portugues, ruso, espanol, tailandes y vietnamita.
+- Inferencia en navegador sobre WebGPU mediante Transformers.js v4.0 o superior.
+- Cuantizacion selectiva por componente para reducir huella de memoria.
+- Capacidades de tool calling, agentes, razonamiento multi-paso o modo thinking: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de accesibilidad visual: el modelo puede describir en tiempo real lo que aparece en la pantalla de un dispositivo movil o escritorio, ayudando a personas con discapacidad visual a navegar por aplicaciones y sitios web. Su capacidad de grounding permite senalar elementos concretos.
-- Automatizacion de pruebas de interfaz de usuario: al recibir capturas de pantalla, el modelo identifica botones, campos de texto y otros componentes, generando coordenadas que pueden usarse para automatizar pruebas funcionales en pipelines de CI/CD.
-- Extraccion de datos de facturas y documentos: el parsing de documentos y graficos permite convertir facturas, recibos o informes en datos estructurados, reduciendo la intervencion manual en procesos de contabilidad o gestion documental.
-- Asistente de navegacion web por voz: integrado en un navegador, el modelo interpreta la pantalla actual y ejecuta acciones como hacer clic en enlaces o rellenar formularios, respondiendo a comandos de voz del usuario.
-- Generacion de codigo a partir de mockups: un desarrollador puede subir una imagen de un diseno de interfaz y el modelo genera el codigo HTML/CSS o componentes de framework correspondientes, acelerando el prototipado.
-- Chatbot de atencion al cliente con soporte visual: el modelo puede recibir imagenes de productos o capturas de error enviadas por el usuario, comprender el contexto y ofrecer soluciones, todo ejecutandose localmente en el dispositivo del cliente para garantizar privacidad.
+- Descripcion de imagenes en el navegador: el modelo puede procesar una imagen cargada por el usuario y generar una descripcion textual sin enviar los datos a un servidor, usando el ejemplo oficial con `load_image` y `AutoModelForImageTextToText` sobre WebGPU.
+- Aplicaciones web de accesibilidad: generacion de texto alternativo para imagenes directamente en el cliente, aprovechando que el encoder de vision se ejecuta en fp16 y el decoder en q4 para mantener el coste de memoria bajo.
+- Asistentes visuales offline en portatiles consumer: al ser un modelo de 3B con decoder cuantizado a q4, es viable en equipos sin GPU de datacenter, permitiendo escenarios sin conectividad.
+- Moderacion o etiquetado de contenido visual en el borde: clasificacion y descripcion de imagenes en el propio dispositivo, reduciendo la exposicion de datos sensibles.
+- Prototipado rapido de demos multimodales: el snippet oficial de Transformers.js permite montar una demo funcional en pocas lineas, util para validar producto antes de invertir en infraestructura.
+- Aplicaciones multilingues de analisis de imagen: con soporte de 16 idiomas, puede generar respuestas en espanol, portugues, frances o aleman a partir de una misma imagen, adecuado para productos con audiencia internacional.
+- Educacion y soporte visual interactivo: conversaciones multi-turno sobre una imagen (por ejemplo, un diagrama o una captura) en entornos web sin backend.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La documentacion oficial menciona mejoras en velocidad y eficiencia respecto a generaciones anteriores, pero no se proporcionan cifras concretas de MMLU, HumanEval, GSM8K u otros tests estandar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible oficialmente, pero al tratarse de un modelo de 3.1B con cuantizacion q4 en el decoder, se estima que puede ejecutarse en GPUs con 4-6 GB de VRAM.
-- GPU recomendadas: cualquier GPU compatible con WebGPU (por ejemplo, integradas modernas de Intel o AMD, o discretas como NVIDIA GTX 16xx en adelante) para ejecucion en navegador. Para despliegue con ONNX Runtime, GPUs con soporte CUDA o DirectML.
-- Compatibilidad con consumer GPU: si, especialmente con cuantizacion y en modo WebGPU.
-- Opciones de despliegue: Transformers.js (navegador), ONNX Runtime (Python, C++, etc.), y segun la documentacion tambien hay versiones GGUF y MLX para otros entornos.
-- Latencia y throughput: no disponibles, aunque el diseno orientado a edge sugiere latencias inferiores a 100 ms en hardware moderno, sin datos confirmados.
+- VRAM estimada para inferencia: no disponible de forma explicita. El repo ONNX ocupa 25,5 GB e incluye multiples variantes y precisiones; la configuracion recomendada en la model card (embed_tokens fp16, decoder q4, vision_encoder fp16) reduce la huella respecto a fp16 completo, pero no se publica una cifra de VRAM.
+- GPU recomendadas: no disponibles. El unico requisito indicado es soporte de WebGPU para la ejecucion en navegador.
+- Compatibilidad con GPU consumer: el diseno edge y la cuantizacion q4 del decoder sugieren viabilidad en hardware consumer, pero no se especifican modelos concretos (RTX 4090, etc.) en la informacion disponible.
+- Opciones de despliegue: Transformers.js v4.0+ con backend WebGPU (`device: "webgpu"`); tambien es compatible con ONNX Runtime por ser formato ONNX. vLLM, llama.cpp, Ollama o TGI no se mencionan para esta variante.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados con otros modelos de la misma categoria (VLMs de ~3B parametros). Alternativas como Phi-3.5-vision, Qwen2-VL-2B o InternVL2-2B podrian ser comparables, pero no hay benchmarks compartidos en la informacion proporcionada. Se recomienda consultar la documentacion oficial para futuras actualizaciones.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Licencia lfm1.0: es una licencia propietaria de Liquid AI. Aunque permite uso comercial, es necesario revisar los terminos exactos en el archivo LICENSE del repositorio, ya que puede incluir restricciones de redistribucion o atribucion.
-- Riesgo de alucinacion: como cualquier modelo generativo, puede producir descripciones o respuestas inexactas, especialmente en imagenes ambiguas o de baja resolucion.
-- Limitaciones de contexto: no se ha especificado la longitud maxima de contexto, por lo que en tareas que requieran dialogos muy largos o multiples imagenes podria degradarse el rendimiento.
-- Dependencia de WebGPU: la ejecucion en navegador requiere un navegador compatible con WebGPU (Chrome, Edge, Firefox en versiones recientes), lo que limita su uso en entornos legacy.
-- Modelo relativamente nuevo: al ser una version reciente (agosto de 2026), puede haber errores no documentados o falta de soporte en algunas herramientas de inferencia.
-- Idiomas: aunque soporta 16 idiomas, la calidad puede variar significativamente entre ellos, con mejor rendimiento en ingles y chino probablemente.
+- Licencia lfm1.0 (license: other): es necesario revisar el archivo LICENSE del repositorio antes de cualquier uso comercial; no se detallan aqui las restricciones concretas.
+- No se publican datos de sesgos, tasas de alucinacion ni evaluaciones de robustez en la informacion disponible.
+- La longitud de contexto no esta especificada, lo que impide planificar cargas de documentos o conversaciones largas con garantias.
+- El rendimiento real en navegador depende del soporte de WebGPU del navegador y del hardware del cliente; no hay cifras de latencia publicadas.
+- El modelo requiere `custom_code` y `trust_remote_code`, lo que implica ejecutar codigo del autor y revisarlo en entornos sensibles.
+- El repo de 25,5 GB incluye varias precisiones; descargar el conjunto completo puede ser costoso en ancho de banda y almacenamiento.
+- No hay informacion sobre capacidades de tool calling o agentes, por lo que no debe asumirse su disponibilidad en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo ONNX: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX
-- Model card original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
-- Blog de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
-- Blog de Hugging Face: https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b
-- Documentacion oficial: https://docs.liquid.ai/lfm/models/lfm25-vl-3b
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX
+- Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
+- Transformers.js: https://github.com/huggingface/transformers.js
 - Playground de Liquid AI: https://playground.liquid.ai/
-- LEAP (plataforma de evaluacion): https://leap.liquid.ai/
+- Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome
+- LEAP: https://leap.liquid.ai/
+- Discord de Liquid AI: https://discord.com/invite/liquid-ai
+- Sitio de Liquid AI: https://www.liquid.ai/

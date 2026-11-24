@@ -2,104 +2,103 @@
 
 ## Resumen
 
-JevOne (identificador `juspay/jev-one`) es un modelo de decision tipada desarrollado por Juspay, una plataforma india de infraestructura de pagos. No se presenta como un modelo conversacional al uso, sino como un componente de inferencia que recibe un estado y un conjunto de preguntas tipadas y devuelve respuestas estructuradas: probabilidad binaria (`noul`), decision categorica con distribucion completa (`choice`) y puntuacion ordinal esperada con distribucion completa (`score`). Se sirve a traves de un endpoint compatible con TypeSafe en la ruta `/v1/systemone`.
+Xor 1.2 (identificador `juspay/jev-one` en Hugging Face) es un modelo derivado de Qwen/Qwen3.6-35B-A3B, ajustado mediante post-entrenamiento por el equipo de Juspay para tareas de decisión tipada (typed decision tasks). No es un modelo generativo de propósito general al uso: se sirve a través de una API compatible con TypeSafe (`/v1/systemone`) que recibe un estado y un mapa de preguntas tipadas, y devuelve probabilidades binarias, decisiones categóricas o puntuaciones ordinales esperadas. La relevancia actual radica en que empaqueta el modelo junto con una capa de servicio determinista (lectura de logprobs de un solo token, evaluación del orden de opciones en ambos sentidos, calibración de probabilidades y conversión de esquema), de modo que los resultados son reproducibles byte a byte si se fija la revisión.
 
-El modelo es un ajuste fino de `Qwen/Qwen3.6-35B-A3B`, un transformer causal de tipo mezcla de expertos (MoE) con 35.107.181.936 parametros totales y aproximadamente 3.000 millones de parametros activos por token. Los pesos se distribuyen en BF16 bajo licencia Apache 2.0, con un peso en disco de unos 66 GB y un repositorio de 70,2 GB.
+Arquitectura y tamaño: se apoya en el checkpoint base Qwen3.6-35B-A3B, un transformer causal de mezcla de expertos (MoE) con 35 mil millones de parámetros totales y aproximadamente 3 mil millones activados por token. El ajuste consiste en un LoRA de rango 16 fusionado en los pesos BF16 del modelo base, empaquetado como pesos completamente fusionados (sin necesidad de cargar adaptadores). El modelo acepta además hasta ocho imágenes o un vídeo por petición, lo que lo sitúa en la categoría image-text-to-text además de text-generation.
 
-Su relevancia reside en el enfoque de producto: en lugar de competir en generacion abierta, encapsula el modelo en un contrato de decision con lectura determinista de un solo token, evaluacion del orden de opciones en sentido directo e inverso, calibracion de probabilidades y conversion de esquema. Esto lo orienta a sistemas donde la salida debe ser una decision medible con incertidumbre cuantificada, no texto libre.
+Es relevante porque propone un patrón distinto al del chatbot: en lugar de generar texto libre, expone una interfaz de clasificación y puntuación calibrada pensada para sistemas de decisión automatizados, con métricas de calibración (Brier, ECE) publicadas y un runtime de SGLang parcheado y fijado por hash.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con mezcla de expertos (MoE); tag `qwen3_5_moe` |
-| Parametros totales | 35.107.181.936 (aproximadamente 35B) |
-| Parametros activos | Aproximadamente 3B por token |
-| Longitud de contexto | No disponible como especificacion del modelo; la configuracion de serving validada admite hasta 250.000 tokens de prefill |
-| Tipos de cuantizacion | BF16 como unica precision liberada; no se documentan GGUF, AWQ, GPTQ ni otras |
+| Arquitectura | Mixture-of-experts causal (transformer), basada en Qwen3.6-35B-A3B |
+| Parametros totales | 35.107.181.936 (~35 B) |
+| Parametros activos | Aproximadamente 3 B por token |
+| Longitud de contexto | No disponible como cifra de ventana; el runtime valida hasta 250.000 tokens de prefill |
+| Tipos de cuantizacion | No disponible; la release se publica en BF16 (pesos fusionados) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (BF16) |
-
-Otros datos tecnicos relevantes: modelo base `Qwen/Qwen3.6-35B-A3B`, biblioteca declarada `transformers`, motor de serving SGLang, pipeline `text-generation`, tamano del repositorio 70,2 GB, peso de los ficheros de modelo aproximadamente 66 GB. El modelo incluye tambien los tags `image-text-to-text` y `typed-classification`, aunque la model card no documenta capacidades multimodales.
+| Formato de pesos | safetensors (BF16, pesos fusionados), más bundle de servicio con checksums SHA-256 |
 
 ## Arquitectura y entrenamiento
 
-La model card identifica el checkpoint base como `Qwen/Qwen3.6-35B-A3B` y describe la arquitectura como un modelo de lenguaje causal con mezcla de expertos, 35.000 millones de parametros totales y unos 3.000 millones activados por token. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni el procedimiento exacto de ajuste sobre el checkpoint base.
+El modelo hereda la arquitectura MoE del checkpoint base Qwen/Qwen3.6-35B-A3B (revisión `995ad96eacd98c81ed38be0c5b274b04031597b0`), con 35 B de parámetros totales y unos 3 B activados por token, lo que permite servir el modelo completo en una sola GPU. Sobre esa base se aplicó un post-entrenamiento con LoRA de rango 16, posteriormente fusionado en los pesos BF16, orientado específicamente a tareas de decisión tipada. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-La innovacion tecnica declarada no esta en el preentrenamiento sino en la capa de serving, que forma parte de la configuracion de inferencia publicada y es obligatoria para obtener resultados reproducibles. Esta capa realiza lectura determinista de candidatos de un solo token, evaluacion del orden de opciones en sentido directo e inverso (forward/reverse) para mitigar el sesgo posicional, calibracion de probabilidades y conversion al esquema tipado solicitado. Las preguntas tipadas son `noul` (probabilidad binaria), `choice` (decision categorica y distribucion completa) y `score` (puntuacion ordinal esperada y distribucion completa).
+La innovación técnica no está tanto en el entrenamiento como en el contrato de inferencia: la capa de servicio realiza una lectura determinista de logprobs sobre candidatos de un solo token, evalúa el orden de las opciones en sentido directo e inverso, aplica calibración de probabilidades y convierte al esquema solicitado. El runtime validado es una imagen de SGLang fijada por digest (`prakhar1611/xor-sglang@sha256:94c48d2a...`) que incorpora un parche menor sobre el manejo de resultados de candidate-logprob del SGLang upstream, evitando un fallo del planificador cuando coinciden en el mismo lote peticiones de scoring y de generación simple.
 
 ## Capacidades
 
-- Decision binaria tipada (`noul`) con salida de probabilidad, adecuada para tareas de si/no y verificacion.
-- Decision categorica tipada (`choice`) con etiqueta ganadora y distribucion de probabilidad completa sobre las opciones.
-- Puntuacion ordinal tipada (`score`) con valor esperado y distribucion, orientada a escalas tipo Likert o rangos.
-- Calibracion de probabilidades y evaluacion bidireccional del orden de opciones para reducir el sesgo de posicion de las alternativas.
-- Lectura determinista de candidatos de un solo token, lo que facilita la reproducibilidad de las salidas.
-- Clasificacion tipada (`typed-classification`) como capacidad declarada en los tags del repositorio.
-- Herencia de las capacidades del checkpoint base `Qwen/Qwen3.6-35B-A3B` (generacion de texto y modalidad imagen-texto segun los tags), aunque la model card no las documenta ni las valida.
-- Servicio expuesto mediante endpoint compatible con TypeSafe en `/v1/systemone`.
-- Soporte de tool calling, function calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; no se declara lista de idiomas.
-- Modo de razonamiento explicito (thinking), vision o audio: no documentado en la model card.
+- Clasificación binaria tipada (`noul`): devuelve una probabilidad binaria para una pregunta cerrada.
+- Decisión categórica (`choice`): devuelve la opción elegida junto con la distribución de probabilidad completa sobre las alternativas.
+- Puntuación ordinal (`score`): devuelve la puntuación esperada y su distribución completa.
+- Procesamiento multimodal de entrada: hasta ocho imágenes en data URL o un vídeo en data URL por petición, para clasificar información contenida en el material aportado.
+- Salida estructurada y validada contra esquema, con conversión de esquema realizada por la capa de servicio.
+- Calibración de probabilidades integrada en el pipeline de inferencia, no delegada al consumidor.
+- Reproducibilidad: pesos, runtime y artefactos verificables mediante `checksums.sha256` y `RELEASE_PROVENANCE.json`.
+- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso en formato de agente, ni modos de pensamiento explícitos.
 
 ## Casos de uso
 
-- Enrutado de decisiones en atencion al cliente: dado un estado de la conversacion y un conjunto cerrado de acciones posibles (escalar a humano, cerrar ticket, pedir mas datos), el modelo devuelve la accion elegida junto con la distribucion de probabilidad completa, lo que permite aplicar umbrales de confianza antes de automatizar.
-- Puntuacion de riesgo en procesos de credito o fraude: con el tipo `score`, el modelo produce una puntuacion ordinal esperada y su distribucion, util para segmentar expedientes en bandas de riesgo en lugar de depender de una unica etiqueta.
-- Moderacion y verificacion binaria: el tipo `noul` permite resolver comprobaciones de si/no (contenido aceptable, documento coherente, respuesta admisible) con una probabilidad asociada que se puede auditar y calibrar por umbral.
-- Evaluacion automatizada de respuestas: en pipelines de generacion con modelos generativos, JevOne puede actuar como juez tipado, asignando una puntuacion ordinal a cada respuesta con distribucion de incertidumbre, para alimentar sistemas de seleccion o ranking.
-- Clasificacion de tickets y correos entrantes: usando `choice` sobre un catalogo fijo de categorias, se obtiene la categoria y la masa de probabilidad repartida entre las demas, lo que permite derivar a revision humana solo los casos ambiguos.
-- Extraccion de etiquetas en pipelines de datos: como clasificador tipado, puede etiquetar grandes volumenes de registros con un contrato de salida fijo y verificable, integrable en procesos batch de enriquecimiento de datos.
-- Comparacion de opciones en A/B testing o configuracion: la evaluacion forward/reverse del orden de las alternativas permite comparar pares de opciones reduciendo el sesgo de presentacion, util para seleccionar variantes de copy, prompts o politicas.
-- Decisiones multi-paso con contrato fuerte: en un agente que deba elegir entre herramientas o ramas de un flujo, cada decision puede formularse como una pregunta tipada y registrarse con su probabilidad asociada para trazabilidad.
+- Moderación y filtrado de contenido con umbral calibrado: usar la interfaz `noul` para obtener una probabilidad binaria por ítem y aplicar el umbral en el sistema consumidor; la calibración (ECE 0.0733 en el conjunto público) permite fijar cortes con significado probabilístico en lugar de scores arbitrarios.
+- Triaje de tickets de soporte: enviar el estado del ticket y un mapa de preguntas `choice` (categoría, urgencia, equipo responsable) para obtener decisión y distribución completa, lo que permite derivar automáticamente los casos de baja confianza a revisión humana.
+- Enrutamiento de documentos con material escaneado: adjuntar hasta ocho imágenes por petición y clasificar el tipo de documento o extraer una decisión sobre su contenido, aprovechando la entrada multimodal del modelo.
+- Evaluación ordinal de calidad: emplear `score` para asignar puntuaciones esperadas en escalas ordenadas (por ejemplo, gravedad de una incidencia o calidad de una respuesta), con distribución completa para medir la incertidumbre del modelo.
+- Verificación automática en pipelines de CI: integrar la API en un paso de validación que decida si un artefacto cumple criterios definidos, apoyándose en la reproducibilidad por revisión fijada y en los checksums del bundle.
+- Análisis de vídeo corto para decisión: enviar un vídeo en data URL y plantear preguntas tipadas sobre su contenido, útil en inspección visual automatizada o clasificación de clips.
+- Sistemas de decisión auditables: registrar la distribución de probabilidad devuelta junto con la versión exacta del modelo y del runtime, lo que facilita la trazabilidad en entornos regulados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de `juspay/jev-one` no incluye metricas de MMLU, HumanEval, GSM8K ni de calibracion (por ejemplo, ECE o Brier score), y los resultados de la busqueda web no aportan datos tecnicos sobre el modelo.
+Resultados autoinformados sobre los niveles públicos de JEVBench (harness commit `1bcc55eb6c8cffde2306b3db03ede39b61c6152a`, adaptador `typesafe`, una petición a la vez, 1 x NVIDIA H200 NVL de 143 GB, TP=1, DP=1, caché de peticiones desactivada). No constituyen una clasificación oficial de JEVBench.
+
+| Nivel | Intentadas | Válidas | Correctas | Exactitud | p50 | p95 |
+|---|---:|---:|---:|---:|---:|---:|
+| Easy | 48 | 48 | 48 | 1,0000 | 0,0679 s | 0,0709 s |
+| Original | 72 | 72 | 69 | 0,9583 | 0,0670 s | 0,0701 s |
+| Hard público | 111 | 111 | 91 | 0,8198 | 0,0832 s | 0,1845 s |
+| **Todos los públicos** | **231** | **231** | **208** | **0,9004** | 0,0691 s | 0,1616 s |
+
+Métricas agregadas sobre las 231 decisiones públicas: exactitud macro 0,9070, Brier medio 0,1790, ECE 0,0733. Éxito operativo, cobertura, validez de esquema y validez estricta de esquema: 1,0000 en todos los casos.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: los ficheros de pesos ocupan aproximadamente 66 GB, por lo que la inferencia en BF16 requiere un minimo practico en torno a 80-90 GB de VRAM sumando pesos, activaciones y cache KV.
-- Configuracion validada por el autor: 2 x NVIDIA RTX PRO 6000 Blackwell Server Edition de 96 GB cada una (192 GB totales), con paralelismo tensorial de 2 y fraccion de memoria estatica de 0,85.
-- Imagen de SGLang validada: `lmsysorg/sglang@sha256:6bcaa47db52f78ce0d67863b8b2431221b79bc23204a80cad757fa819d00e921`.
-- Presupuesto de prefill maximo declarado: 250.000 tokens en la configuracion validada. El propio autor advierte que presupuestos de prefill menores pueden funcionar en otras configuraciones de dos GPU, pero que esas configuraciones no estan cubiertas por la validacion.
-- GPU consumer: en BF16 no cabe en ninguna GPU de consumo actual (24 GB o 48 GB). La model card no documenta cuantizaciones que permitan reducir el footprint, de modo que el despliegue en una sola RTX 4090 o similar no esta soportado por la informacion publicada.
-- GPU de centro de datos mono-GPU: una A100 80 GB, H100 80 GB o H200 141 GB podrian alojar los pesos en BF16 en terminos de capacidad, pero el autor no valida ninguna configuracion de una sola GPU.
-- Opciones de despliegue: SGLang es el unico runtime validado y el endpoint `/v1/systemone` forma parte de la configuracion de inferencia publicada. La biblioteca `transformers` esta declarada, pero la capa de lectura determinista, calibracion y conversion de esquema debe respetarse para obtener resultados reproducibles. Soporte en vLLM, llama.cpp, Ollama o TGI: no disponible.
-- Latencia y throughput: no disponibles. El autor solo indica que la configuracion validada reserva una fraccion estatica de memoria de 0,85 para la cache KV.
+- VRAM estimada: los ficheros del modelo ocupan aproximadamente 66 GB en BF16, por lo que se necesita una GPU con al menos esa capacidad; el único hardware validado es 1 x NVIDIA H200 NVL de 143 GB.
+- GPU recomendadas: NVIDIA H200 NVL (validada oficialmente). Otras GPU de 80 GB (A100, H100) no están validadas en la documentación y requerirían verificación independiente; el modelo no cabe en GPU de consumo en BF16.
+- GPU de consumo: no cabe en tarjetas de 24 GB o 48 GB en la precisión publicada; no se ofrecen pesos cuantizados en la release.
+- Despliegue: el único camino soportado es el bundle de servicio con la imagen SGLang fijada por digest, Docker Engine con Docker Compose v2 reciente, NVIDIA Container Toolkit y Linux x86-64. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Espacio en disco: aproximadamente 120 GB libres necesarios para el despliegue completo.
+- Paralelismo: TP=1 y DP=1 en la configuración validada; cada worker de data parallelism carga una réplica completa del modelo.
+- Latencia: p50 de 0,067-0,083 s y p95 de 0,070-0,185 s según nivel, medidas en local sin sobrecarga de red sobre H200 NVL. El throughput no se documenta.
+- Límites operativos: cuerpo de petición máximo de 8 MB (unos 6 MB de material multimedia tras base64); peticiones mayores se rechazan con HTTP 422. Prefill máximo de 250.000 tokens y fracción de memoria estática de 0,85.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Enfoque |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juspay/jev-one | 35,1B | ~3B | No disponible (prefill validado de 250.000 tokens) | Apache 2.0 | Decision tipada sobre endpoint `/v1/systemone` |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B | ~3B | No disponible en la informacion | Apache 2.0 | Modelo generativo multimodal/texto del que deriva JevOne |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 128K nativo | Apache 2.0 | MoE generativo de proposito general con modo de razonamiento |
-| Mixtral 8x7B | 46,7B | 12,9B | 32K | Apache 2.0 | MoE generativo de proposito general |
+| Xor 1.2 (`juspay/jev-one`) | 35 B totales / ~3 B activos | Prefill validado hasta 250.000 tokens | Decisión tipada calibrada con capa de servicio propia | Apache 2.0 | Hugging Face, bundle Docker |
+| Qwen/Qwen3.6-35B-A3B | 35 B totales / ~3 B activos | No disponible en la información | Modelo base generativo de propósito general | Apache 2.0 | Hugging Face |
+| Alternativas de clasificación calibrada de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparacion de rendimiento no es posible: JevOne no publica benchmarks y su evaluacion depende de la capa de serving tipada, por lo que las metricas de los modelos generativos comparables no son directamente trasladables. La diferencia funcional principal es que JevOne no se ofrece como modelo de chat, sino como clasificador-decisor con contrato de salida fijo; en ese nicho, los comparables habituales serian modelos de clasificacion supervisada o cabezas de clasificacion sobre modelos base, para los que no se dispone de datos en esta busqueda.
+La información proporcionada no incluye datos de rendimiento de otras alternativas de clasificación tipada, por lo que no es posible establecer una comparación cuantitativa con modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Modelo de decision tipada, no un asistente conversacional: el uso fuera del contrato `/v1/systemone` puede producir resultados no reproducibles y no esta soportado.
-- La capa de serving es parte de la configuracion de inferencia publicada; sustituirla o reimplementarla invalida la reproducibilidad declarada por el autor.
-- No hay resultados de benchmarks publicados, ni del modelo ni de la calibracion de sus probabilidades, lo que impide estimar su calidad frente a alternativas.
-- Idiomas soportados no documentados. Aunque el checkpoint base probablemente sea multilingue, no hay confirmacion para JevOne ni evaluacion por idioma.
-- Riesgo de alucinacion: la model card no describe medidas de mitigacion, y en tareas de decision el fallo se manifiesta como eleccion erronea con probabilidad alta, no como texto incorrecto.
-- Sesgos: no se documenta ninguna evaluacion de sesgo. Los sesgos del checkpoint base y del ajuste con datos propios de Juspay no son auditables con la informacion disponible.
-- Dependencia del orden de opciones: el autor mitiga el sesgo posicional con evaluacion forward/reverse, lo que sugiere que dicho sesgo existe y debe seguir gestionandose en produccion.
-- Licencia Apache 2.0: permite uso comercial y modificacion, con obligacion de conservar avisos de licencia y atribucion; el modelo base tambien es Apache 2.0.
-- Seguridad en despliegue: el servicio no requiere clave de API cuando se enlaza a localhost. Para despliegues remotos el autor exige anadir autenticacion, TLS, limites de tasa y limites de tamano de peticion en la capa de entrada.
-- Coste de hardware elevado: la configuracion validada son dos GPU de 96 GB, y el autor advierte que su setup reserva memoria sustancial para la cache KV.
-- Madurez del repositorio: el modelo registra 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente por parte de la comunidad.
-- Consumo de contexto: el presupuesto de 250.000 tokens de prefill incrementa de forma notable el consumo de memoria de la cache KV y no equivale necesariamente a la ventana de contexto nativa del modelo base.
+- El modelo está diseñado para preguntas tipadas, no para generación de texto libre; usarlo como chatbot general no es el caso de uso soportado.
+- La API acepta imágenes y vídeo en la misma petición, pero el modelo no distingue de forma fiable entre ambos tipos de medio; se recomienda enviar un solo tipo por petición.
+- El límite de 8 MB por petición restringe el tamaño del material multimedia a unos 6 MB tras codificación base64.
+- Los resultados de JEVBench son autoinformados sobre los niveles públicos y no constituyen una clasificación oficial; la latencia es específica del hardware y se midió sin sobrecarga de red.
+- La reproducibilidad depende de usar el bundle de servicio sin modificaciones y de fijar la revisión por hash de commit; `release/xor-1.2` es una rama y puede moverse.
+- Solo se ha validado una configuración de hardware y paralelismo (1 x H200 NVL, TP=1, DP=1); cualquier otro ajuste debe validarse de forma independiente antes de publicar cifras de rendimiento.
+- La model card indica `inference: false` en los metadatos y no documenta el uso de la librería transformers para inferencia directa, pese a figurar como `library_name`.
+- El servicio no requiere clave de API cuando se despliega en la configuración por defecto (texto truncado en la documentación disponible); conviene revisar la exposición de red antes de ponerlo en producción.
+- No se documentan sesgos conocidos, tasas de alucinación ni cobertura idiomática; al tratarse de un ajuste sobre Qwen3.6, los sesgos del modelo base son aplicables pero no están cuantificados en esta ficha.
+- La licencia Apache 2.0 permite uso comercial, pero debe conservarse la atribución y verificar las obligaciones heredadas del modelo base.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/juspay/jev-one
+- Modelo en Hugging Face: https://huggingface.co/juspay/jev-one
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Imagen de SGLang validada (referencia en Docker Hub): `lmsysorg/sglang@sha256:6bcaa47db52f78ce0d67863b8b2431221b79bc23204a80cad757fa819d00e921`
-- Repositorio de SGLang: https://github.com/sgl-project/sglang
-- Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Los unicos resultados devueltos son hilos de foro en italiano sobre Poste ID y SPID, sin relacion con JevOne ni con inferencia de modelos de lenguaje.
+- JEVBench (harness de evaluación): https://github.com/fstandhartinger/jevbench

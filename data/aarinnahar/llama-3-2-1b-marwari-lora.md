@@ -2,49 +2,49 @@
 
 ## Resumen
 
-Llama-3.2-1B-Marwari-LoRA es un ajuste fino mediante LoRA del modelo Llama-3.2-1B-Instruct de Meta, publicado por el usuario aarinnahar en Hugging Face. El nombre sugiere un ajuste orientado al idioma marwari (una lengua indoaria hablada en Rajastán, India), aunque la model card no documenta explícitamente el corpus de entrenamiento ni los objetivos del ajuste más allá de indicar que se realizó con Unsloth.
+Llama-3.2-1B-Marwari-LoRA es un ajuste fino (fine-tuning) mediante LoRA del modelo Llama-3.2-1B-Instruct de Meta, publicado por el usuario aarinnahar en Hugging Face. El nombre sugiere una adaptacion orientada al marwari, una lengua indoaria hablada principalmente en la region de Rajastan (India), aunque la model card no documenta explicitamente los datos de entrenamiento ni el objetivo concreto del ajuste. El modelo se distribuye con licencia Apache 2.0 y esta etiquetado como conversacional y de generacion de texto.
 
-El modelo parte de la versión cuantizada a 4 bits de Llama-3.2-1B-Instruct distribuida por Unsloth, lo que reduce los requisitos de memoria durante el entrenamiento. El resultado es un adaptador LoRA de pequeño tamaño (el repositorio ocupa 0,1 GB) que hereda la arquitectura transformer decoder-only de Llama 3.2 y su ventana de contexto de 128 000 tokens.
+Se trata de un modelo de 1.235.814.400 parametros (aproximadamente 1,2 mil millones), derivado de la version Instruct de Llama 3.2, que fue entrenada por Unsloth en formato bnb-4bit. El ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, una combinacion habitual para fine-tuning eficiente en memoria. El repositorio ocupa 2,5 GB y los pesos se distribuyen en formato safetensors.
 
-Su relevancia es limitada y experimental: se trata de una publicación sin descargas ni interacciones, sin benchmarks publicados y con documentación mínima. Resulta útil como ejemplo de flujo de trabajo de ajuste fino con Unsloth sobre modelos pequeños, pero no constituye una opción madura para producción sin una evaluación adicional por parte del usuario.
+La relevancia de esta ficha es doble: por un lado, ilustra el ecosistema de adaptaciones de bajo coste sobre Llama 3.2 para lenguas de bajos recursos; por otro, sirve como caso de estudio de las limitaciones de documentacion en muchos modelos comunitarios, donde la model card apenas aporta informacion sobre datos, evaluacion o rendimiento. Cualquier uso en produccion exige una validacion empirica propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.2), ajuste fino con LoRA |
-| Parametros totales | 1 240 millones (modelo base Llama-3.2-1B) |
+| Arquitectura | Transformer decoder-only (Llama 3.2), ajuste LoRA sobre el modelo base |
+| Parametros totales | 1.235.814.400 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 128 000 tokens (heredado del modelo base Llama 3.2) |
-| Tipos de cuantizacion | El adaptador se distribuye en safetensors; el modelo base referenciado está cuantizado a 4 bits (bnb-4bit). No se documentan otras variantes |
-| Idiomas soportados | en (según la model card); el nombre sugiere orientación a marwari, no documentada |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.2 1B soporta 128K tokens, pero no se confirma que el ajuste lo preserve) |
+| Tipos de cuantizacion | no disponible (el modelo base de partida estaba en bnb-4bit; los pesos publicados son safetensors) |
+| Idiomas soportados | en (segun la model card); el nombre sugiere marwari, pero no se documenta |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (adaptador LoRA); el modelo base en formato Unsloth bnb-4bit |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino parametrizado de bajo rango (LoRA) sobre Llama-3.2-1B-Instruct, un transformer decoder-only con atención por grupos (GQA) y RoPE, del que se congelan los pesos originales y se entrenan únicamente las matrices de adaptación de bajo rango. El entrenamiento se realizó con Unsloth, una librería que optimiza el ajuste fino mediante kernels personalizados y reducción de memoria, partiendo de la variante del modelo base ya cuantizada a 4 bits en formato bnb-4bit.
+El modelo parte de Llama-3.2-1B-Instruct, un transformer decoder-only denso de aproximadamente 1,2 mil millones de parametros con atencion por grupos (GQA) y tokenizador BPE de Llama 3. Sobre esta base se aplico un ajuste fino con LoRA utilizando Unsloth y TRL, segun indica la model card. Unsloth optimiza el entrenamiento mediante kernels personalizados y reduccion de memoria, lo que permite entrenar con GPUs de consumo; la model card afirma que el entrenamiento fue "2x mas rapido" con esta herramienta, aunque no aporta cifras absolutas de duracion ni de hardware.
 
-La model card no especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. Tampoco se documentan innovaciones técnicas más allá del uso de Unsloth. La información disponible sobre el proceso de entrenamiento es, por tanto, mínima.
+No se documenta en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF o DPO adicional, ni el rango y alpha del adaptador LoRA. Tampoco se especifica si los pesos publicados son el adaptador LoRA fusionado con la base o un adaptador separado; el tamano del repositorio (2,5 GB) y el conteo de parametros de safetensors sugieren pesos fusionados en precision completa o media. No hay innovaciones tecnicas destacables mas alla del uso de Unsloth para eficiencia de entrenamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional, heredada de Llama-3.2-1B-Instruct.
-- Razonamiento básico y respuesta a instrucciones de complejidad baja, limitado por el tamaño de 1B parámetros.
-- Generación de código y matemáticas elementales, con fiabilidad limitada por la escala del modelo.
-- Soporte de plantillas de chat de Llama 3.2 (roles system/user/assistant).
-- Capacidad multilingüe reducida: la model card declara únicamente inglés; el posible soporte de marwari no está verificado ni documentado.
-- No se documenta soporte de tool calling, function calling ni flujos de agentes multi-paso.
-- No dispone de visión, audio ni modo de razonamiento extendido (thinking mode).
+- Generacion de texto conversacional multi-turno, heredada del modelo Instruct base.
+- Razonamiento basico y respuesta a instrucciones en ingles.
+- Generacion de codigo y matematicas a nivel de modelo de 1B (limitado).
+- Soporte de tool calling: no documentado en la model card; el modelo base Llama 3.2 1B Instruct lo soporta, pero no se confirma que el ajuste lo preserve.
+- Capacidades de agente y razonamiento multi-paso: no documentadas; previsiblemente limitadas por el tamano.
+- Capacidades multilingues: la model card declara solo ingles; el nombre sugiere marwari, pero no hay evidencia documentada de calidad en esa lengua.
+- Modo thinking, vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Experimentación con ajuste fino en lenguas de bajos recursos: el adaptador sirve como punto de partida para reproducir o ampliar el flujo de entrenamiento LoRA con Unsloth sobre marwari u otras lenguas indoarias.
-- Prototipado rápido en entornos con recursos limitados: al ocupar 0,1 GB el adaptador y partir de un modelo de 1B, puede cargarse en GPU de consumo para pruebas de generación de texto.
-- Generación de texto asistida en inglés para tareas simples: resúmenes breves, reformulación de frases o respuestas a preguntas cerradas, siempre con revisión humana.
-- Base para evaluación comparativa de adaptadores LoRA: útil en estudios que midan el efecto de un ajuste fino de bajo rango sobre un modelo instruct pequeño.
-- Docencia y demostraciones de pipelines de transformers: el modelo se integra con la librería transformers y text-generation-inference para ejemplos didácticos.
-- Filtrado o clasificación de texto ligera: con ajuste adicional, podría emplearse en tareas de etiquetado simple, aunque no está entrenado específicamente para ello.
+- Experimentacion con lenguas de bajos recursos: el modelo puede servir como punto de partida para evaluar la calidad de un ajuste LoRA sobre marwari, comparando respuestas con el modelo base en un conjunto de validacion propio.
+- Prototipado rapido de asistentes conversacionales en ingles: con 1,2B parametros cabe en GPU de consumo y permite iterar sobre prompts y flujos antes de escalar a modelos mayores.
+- Fine-tuning educativo: sirve como ejemplo practico de pipeline Unsloth + TRL para quien aprende a adaptar Llama 3.2 con recursos limitados.
+- Generacion de texto en entornos con restricciones de VRAM: al ser un modelo pequeno, puede desplegarse en GPUs de 8-16 GB con cuantizacion, aunque la cuantizacion del ajuste no esta documentada.
+- Clasificacion y extraccion de informacion ligera: tareas de etiquetado o resumen corto donde la latencia y el coste importan mas que la precision maxima.
+- Base para investigacion sobre sesgos y alucinacion en adaptaciones comunitarias: permite estudiar como un ajuste no documentado afecta al comportamiento del modelo original.
 
 ## Benchmarks y rendimiento
 
@@ -52,35 +52,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB en fp16 para el modelo de 1B; en torno a 0,7-1 GB con cuantización a 4 bits, más el espacio del adaptador LoRA (0,1 GB).
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes y sobredimensionadas para este tamaño.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de GPU consumer modernas, e incluso en CPU para inferencia con llama.cpp u Ollama.
-- Opciones de despliegue: transformers (carga del adaptador LoRA sobre el modelo base), text-generation-inference (etiqueta endpoints_compatible), llama.cpp u Ollama si se convierte el modelo fusionado a GGUF, y vLLM con soporte de LoRA.
-- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño de 1B se espera una latencia baja en GPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 2,5-3 GB en fp16 para 1,2B parametros; en cuantizacion 4-bit, en torno a 1-1,5 GB mas overhead de contexto.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 con contexto moderado; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de 8 GB o mas; tambien en CPU con llama.cpp u Ollama, aunque con latencia mayor.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM, llama.cpp y Ollama (previa conversion a GGUF, no incluida en el repo).
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Llama-3.2-1B-Marwari-LoRA | 1B (LoRA) | 128 000 | apache-2.0 | Hugging Face, 0 descargas | Ajuste experimental sin benchmarks |
-| Llama-3.2-1B-Instruct | 1B | 128 000 | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base oficial de Meta, con evaluación publicada |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | apache-2.0 | Hugging Face, muy usado | Alternativa de tamaño similar con benchmarks publicados |
-| Gemma-2-2B-it | 2B | 8 192 | Gemma Terms of Use | Hugging Face, ampliamente usado | Mayor tamaño, contexto más corto |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Llama-3.2-1B-Marwari-LoRA | 1,2B | no disponible | Apache 2.0 | Hugging Face (403 descargas) |
+| Llama-3.2-1B-Instruct (Meta) | 1,2B | 128K tokens | Llama 3.2 Community License | Hugging Face, ampliamente soportado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K tokens (128K en variantes) | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it | 2,6B | 8K tokens | Gemma Terms of Use | Hugging Face |
+
+La comparativa se basa en caracteristicas publicas de los modelos alternativos; no hay datos de rendimiento del modelo Marwari-LoRA que permitan comparar calidad. El modelo de Meta ofrece contexto documentado y soporte de ecosistema muy superior; Qwen2.5-1.5B-Instruct es una alternativa Apache 2.0 con mejor documentacion y multilingusimo declarado.
 
 ## Limitaciones y advertencias
 
-- Documentación mínima: la model card no detalla dataset, hiperparámetros ni evaluación, lo que impide verificar la calidad del ajuste.
-- Riesgo elevado de alucinación: los modelos de 1B parámetros generan con frecuencia contenido incorrecto, especialmente en razonamiento y datos factuales.
-- Idiomas: la model card declara solo inglés; el soporte de marwari es una inferencia del nombre y no está verificado.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de mejora respecto al modelo base.
-- Licencia apache-2.0 declarada por el autor, pero conviene verificar la compatibilidad con la licencia del modelo base Llama 3.2 de Meta antes de uso comercial.
-- Sin soporte documentado de tool calling ni agentes: no es adecuado para pipelines que requieran function calling fiable.
-- Contexto: aunque hereda 128 000 tokens, la calidad en contextos largos con un modelo de 1B es limitada y no está evaluada.
-- Madurez: cero descargas y cero likes en el momento de la consulta; no hay comunidad ni soporte asociado.
+- Documentacion practicamente inexistente: no se detallan datos de entrenamiento, hiperparametros LoRA ni evaluacion, lo que impide reproducir o auditar el ajuste.
+- Riesgo de alucinacion: como todo modelo de 1B, propenso a inventar hechos, especialmente en tareas de conocimiento.
+- Idioma: la model card declara solo ingles; el uso en marwari no esta validado y podria degradar el rendimiento respecto al modelo base.
+- Sesgos: no evaluados; hereda los sesgos de Llama 3.2 Instruct y los del dataset de ajuste, que se desconoce.
+- Contexto: no se confirma que el ajuste conserve la ventana de 128K del modelo base; conviene validarlo antes de usarlo con entradas largas.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base Llama 3.2 tiene su propia licencia comunitaria; conviene revisar la compatibilidad de ambas antes de desplegar en produccion.
+- Tool calling y agentes: no documentados; no asumir que funcionan tras el ajuste.
+- 403 descargas y 0 likes: ecosistema minimo, sin senales de validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/aarinnahar/Llama-3.2-1B-Marwari-LoRA
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit
-- Unsloth (repositorio): https://github.com/unslothai/unsloth
+- Unsloth: https://github.com/unslothai/unsloth
+- TRL: https://github.com/huggingface/trl
 - Llama 3.2 (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

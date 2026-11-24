@@ -5,7 +5,7 @@
   "author": "Aleph-Alpha",
   "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1-GGUF",
   "created_at": "2026-11-20T10:49:22.000Z",
-  "updated_at": "2026-11-23T15:03:45.000Z",
+  "updated_at": "2026-11-23T15:23:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 10,
   "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 75112665344,

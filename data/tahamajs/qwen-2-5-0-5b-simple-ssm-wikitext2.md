@@ -2,102 +2,97 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-simple-ssm-wikitext2` es un checkpoint experimental derivado de `Qwen/Qwen2.5-0.5B` en el que se han sustituido quirúrgicamente 18 de las 24 capas de atención del decoder por bloques `simple_ssm` (Simplified State Space Attention Block) del registro `ATTENTION_REGISTRY` del proyecto NeuralOps. El objetivo no es producir un modelo de propósito general competitivo, sino servir como banco de pruebas reproducible para estudiar la viabilidad de arquitecturas de atención subcuadrática mediante destilación de conocimiento sobre un modelo denso ya entrenado.
+`tahamajs/qwen-2.5-0.5b-simple-ssm-wikitext2` es un checkpoint experimental derivado de Qwen2.5-0.5B en el que se han sustituido quirúrgicamente los bloques de atención del decodificador por un operador de espacio de estados simplificado (`SimpleSSM`) del registro `ATTENTION_REGISTRY` del proyecto NeuralOps. Lo desarrolla el usuario tahamajs dentro del denominado "Qwen Attention Zoo", una línea de trabajo centrada en explorar arquitecturas de atención subcuadráticas mediante cirugía de módulos sobre modelos preentrenados. El modelo base es el transformer denso Qwen2.5-0.5B (896 de dimensión oculta, 24 capas, 14 cabezas de consulta y 2 de clave/valor con `head_dim=64`).
 
-El autor es `tahamajs`, desarrollador del framework NeuralOps, y el ajuste se ha realizado exclusivamente sobre WikiText-2 (`wikitext-2-raw-v1`), con un proceso de destilación en dos etapas de solo 53 pasos de optimización y 181,1 segundos de cómputo total. El resultado es un modelo de 0,5 mil millones de parámetros con licencia MIT, pensado para investigación en eficiencia de atención y no para despliegue en producción.
+El problema que aborda es de investigación: evaluar si un bloque SSM simplificado puede reemplazar la atención cuadrática en un LLM ya entrenado y recuperar capacidad predictiva mediante destilación de conocimiento en dos etapas. La relevancia es metodológica, no de producto: el resultado final es un modelo con una perplejidad en WikiText-2 de 12092.24, muy lejos de un uso práctico, pero útil como banco de pruebas reproducible de topologías híbridas y del proceso de destilación tras la cirugía.
 
-La relevancia actual radica en que documenta de forma transparente la penalización de perplejidad asociada al reemplazo de atención cuadrática por SSM: la perplejidad final en validación es de 12.092,24, muy lejos de la del modelo base, lo que ilustra tanto el potencial del enfoque como sus limitaciones con un presupuesto de entrenamiento tan reducido.
+La topología aplicada es `hybrid_3_1`: 18 de las 24 capas se sustituyen por `simple_ssm` y 6 capas cuadráticas completas se conservan como anclas en los índices 3, 7, 11, 15, 19 y 23. El repo ocupa 0.1 GB y solo publica los pesos de atención (`attention_weights.safetensors`, 77.26 MB), no el modelo completo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (Qwen2 con 18/24 capas reemplazadas por `simple_ssm`, patrón `hybrid_3_1`) |
-| Parametros totales | 0,5 mil millones (heredados de Qwen2.5-0.5B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible (el entrenamiento usó `seq_len=512`) |
-| Tipos de cuantizacion | No disponible (solo se distribuyen pesos en safetensors FP16) |
+| Arquitectura | Transformer híbrido con cirugía de atención: 18/24 capas con `SimpleSSM` (SSM simplificado) y 6/24 capas de atención cuadrática completa (patrón `hybrid_3_1`) |
+| Parametros totales | No disponible (el modelo base Qwen2.5-0.5B tiene 0.49B; el repo solo publica pesos de atención de 77.26 MB) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (el modelo base Qwen2.5-0.5B soporta 32 768 tokens, pero no se confirma para este checkpoint) |
+| Tipos de cuantizacion | No disponible (solo se documenta FP16 para inferencia y FP32 para parámetros maestros del estudiante durante el entrenamiento) |
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | MIT |
-| Formato de pesos | `safetensors` (`attention_weights.safetensors`, 77,26 MB) |
-| Hidden size | 896 |
-| Cabeceras de atención | 14 query heads, 2 KV heads, `head_dim=64` |
-| Capas con atención completa preservada | 6/24 (índices 3, 7, 11, 15, 19, 23) |
-| Librería | `neuralops` |
-| Modelo base | `Qwen/Qwen2.5-0.5B` |
+| Formato de pesos | `safetensors` (`attention_weights.safetensors`), más `config.json` y `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte del decoder Qwen2.5-0.5B y aplica una "cirugía" de atención mediante `QwenAttentionAdapter`: se sustituyen 18 de las 24 capas de atención cuadrática por bloques `simple_ssm`, manteniendo 6 capas de anclaje con atención completa en los índices `[3, 7, 11, 15, 19, 23]` bajo el patrón intercalado `hybrid_3_1`. El adaptador mapea las proyecciones originales (14 cabeceras query, 2 KV, `head_dim=64`, `hidden_size=896`) con expansión automática 7x de las cabeceras KV y respeta el contrato de un único `o_proj`. `SimpleSSM` soporta causalidad, bidireccionalidad y cross-attention, pero no GQA nativo ni RoPE (marcado como `N/A`).
+El modelo parte de Qwen2.5-0.5B, un transformer decoder-only denso, y aplica una cirugía de atención mediante `QwenAttentionAdapter`. El adaptador mapea las proyecciones `Qwen2Attention` (14 cabezas de consulta, 2 de clave/valor, `head_dim=64`, `hidden_size=896`) con una expansión automática de 7x de las cabezas KV donde es necesario y fuerza el contrato de bypass con una única `o_proj`. El módulo `SimpleSSM` declara soporte causal, bidireccional y de atención cruzada, pero no soporta GQA nativo ni Rotary Position Embeddings (`supports_rope: N/A`), lo que supone una diferencia notable respecto al mecanismo original de Qwen2.
 
-El entrenamiento consiste en una destilación de conocimiento en dos etapas sobre WikiText-2. La etapa 0 (post-cirugía, sin ajuste) arroja una perplejidad causal de 912.875,13. La etapa 1 (alineación con backbone congelado, `lm_head` desactivado, MSE + coseno por capa con peso 0,25) ejecuta 16 pasos en 54,7 s. La etapa 2 (destilación de representaciones multicapa, MSE + coseno con peso 0,50) ejecuta 37 pasos en 126,1 s. En total, 53 pasos con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando una VRAM pico de 11.207 MB en FP16 con autocast y parámetros maestros en FP32. El resultado final es una perplejidad de 12.092,24, una reducción de 900.782,89 puntos respecto al estado post-cirugía.
+El entrenamiento consiste en una destilación de conocimiento en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`). La etapa 1 (alineación con backbone congelado) ejecuta 16 pasos en 54.7 s con `lm_head` desactivado y pérdida MSE + coseno por capa (peso 0.25). La etapa 2 (destilación de representaciones multicapa) ejecuta 37 pasos en 126.1 s con MSE + coseno (peso 0.50). El total son 53 pasos en 181.1 s con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando 11207 MB de VRAM pico en FP16 autocast con parámetros maestros en FP32. La perplejidad causal pasó de 912875.13 antes de la destilación a 12092.24 tras ella, un delta de -900782.89.
 
 ## Capacidades
 
-- Generación de texto autoregresiva causal (tarea declarada: `text-generation`).
-- Soporte bidireccional a nivel de módulo `simple_ssm` (aunque el checkpoint se distribuye para uso causal).
-- Soporte de cross-attention a nivel de módulo.
-- Conversación: el pipeline declarado incluye la etiqueta `conversational`, aunque no hay evidencia de ajuste conversacional específico.
-- Capacidad multilingüe: limitada a inglés según la model card.
-- Tool calling / function calling: no disponible.
-- Razonamiento multi-paso y agentes: no disponible.
-- Modo thinking, visión o audio: no disponible.
-- Conocimiento general: severamente degradado por la perplejidad de 12.092,24 en WikiText-2; no es fiable para tareas de conocimiento factual.
+- Generación de texto causal autorregresiva, según la declaración del módulo (`supports_causal: Yes`).
+- Soporte bidireccional y de atención cruzada a nivel de módulo (`supports_bidirectional: Yes`, `supports_cross_attention: Yes`).
+- Operador de atención personalizado (`is_custom_attention: Yes`).
+- Integración con el ecosistema NeuralOps mediante `load_surgeried_model` o la función `apply_qwen_attention_surgery`.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
+- Capacidad multilingüe: no disponible; solo se declara inglés.
+- No soporta GQA nativo ni RoPE en el módulo SSM.
 
 ## Casos de uso
 
-- Investigación en atención subcuadrática: el checkpoint sirve como referencia reproducible para medir el coste de sustituir atención cuadrática por SSM en un modelo denso ya entrenado, con telemetría detallada de perplejidad antes y después de la destilación.
-- Reproducción de experimentos de destilación: los scripts y métricas (`training_metrics.json`, 368 B) permiten replicar las dos etapas de KD con 53 pasos y ~11 GB de VRAM, útil para validar metodologías de alineación de capas.
-- Benchmark de frameworks de atención: integrable en el `ATTENTION_REGISTRY` de NeuralOps para comparar `simple_ssm` frente a otras alternativas (lineal, sparse, etc.) bajo el mismo protocolo de cirugía.
-- Estudio de patrones híbridos: el layout `hybrid_3_1` con 6 capas de anclaje permite analizar el equilibrio entre atención completa y SSM en modelos pequeños.
-- Docencia y divulgación: ejemplo didáctico de cómo se degrada y recupera la perplejidad al reemplazar bloques de atención, con cifras concretas y pasos reproducibles.
-- Prototipado de pipelines de generación con `transformers`: el snippet de la model card permite cargar el modelo base, aplicar la cirugía y ejecutar `generate` en pocas líneas, útil para pruebas de integración.
-- Validación de infraestructura de entrenamiento: el consumo pico de 11.207 MB permite probar flujos de KD en GPUs de gama media-alta antes de escalar a modelos mayores.
+- Investigación en arquitecturas subcuadráticas: sirve como punto de partida reproducible para estudiar cómo se comporta un SSM simplificado al sustituir atención cuadrática en un LLM preentrenado, con telemetría completa de perplejidad antes y después de la destilación.
+- Reproducción de experimentos de cirugía de atención: el repo documenta el patrón `hybrid_3_1`, los índices de las capas ancla y los hiperparámetros de las dos etapas de destilación, lo que permite replicar el pipeline sobre otros modelos o configuraciones.
+- Evaluación de adaptadores de atención: el `QwenAttentionAdapter` y su contrato de Single-`o_proj` con expansión 7x de KV pueden reutilizarse para probar otros módulos del `ATTENTION_REGISTRY` sobre Qwen2.5-0.5B.
+- Benchmarking de destilación de conocimiento: las métricas de las etapas 1 y 2 (pasos, tiempos, VRAM pico, pesos de las pérdidas) permiten comparar estrategias de KD en modelos pequeños.
+- Docencia y divulgación técnica: por su tamaño reducido (repo de 0.1 GB, pesos de atención de 77 MB) y su licencia MIT, es adecuado para demostrar en clase cómo se modifica la arquitectura interna de un transformer sin reentrenar desde cero.
+- Pruebas de integración de NeuralOps: el ejemplo de carga universal con `load_surgeried_model` sirve para validar el hub de la librería en entornos de desarrollo.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Dataset | Split | Métrica | Valor |
-|---|---|---|---|---|
-| qwen-2.5-0.5b-simple-ssm-wikitext2 | Salesforce/wikitext (`wikitext-2-raw-v1`) | validation | Perplejidad | 12.092,24 |
-| qwen-2.5-0.5b-simple-ssm-wikitext2 (post-cirugía, pre-KD) | Salesforce/wikitext (`wikitext-2-raw-v1`) | validation | Perplejidad | 912.875,13 |
+Resultados declarados por el autor en la model card (no verificados externamente):
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible. El único dato verificado es la perplejidad en WikiText-2, marcada como `verified: false` en el model-index.
+| Benchmark | Metrica | Valor |
+|---|---|---|
+| WikiText-2 (`wikitext-2-raw-v1`, validation) | Perplejidad (modelo final, post-KD) | 12092.24 |
+| WikiText-2 (`wikitext-2-raw-v1`, validation) | Perplejidad (Stage 0, post-cirugía zero-shot) | 912875.13 |
+| WikiText-2 (`wikitext-2-raw-v1`, validation) | Delta de perplejidad | -900782.89 |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: el checkpoint de atención pesa 77,26 MB, pero requiere cargar el modelo base Qwen2.5-0.5B completo (aproximadamente 1 GB en FP16). La inferencia completa en FP16 requiere del orden de 2-3 GB de VRAM incluyendo activaciones y caché KV.
-- VRAM para entrenamiento/destilación: 11.207 MB pico según la telemetría del autor (FP16 autocast con parámetros maestros FP32).
-- GPU recomendadas para entrenamiento: cualquier GPU con ≥12 GB de VRAM; una RTX 3090, RTX 4090, A10G o A100 son suficientes.
-- GPU para inferencia: cabe en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o superiores; también en GPUs con 4-6 GB si se cuantiza el modelo base (aunque no se distribuyen pesos cuantizados).
-- Opciones de despliegue: `transformers` con el script de cirugía de NeuralOps es la vía documentada. No hay soporte confirmado para vLLM, llama.cpp, Ollama o TGI, dado que la arquitectura híbrida requiere el adaptador `QwenAttentionAdapter` y no es un transformer estándar.
-- Latencia y throughput: no disponibles. La arquitectura híbrida con SSM podría reducir el coste de atención en secuencias largas, pero no se han publicado mediciones.
+- VRAM estimada para inferencia: no disponible de forma explícita; el entrenamiento consumió 11207 MB de pico en FP16 autocast con parámetros maestros en FP32, pero la inferencia del checkpoint final no se documenta.
+- GPU recomendadas: no disponibles; por el tamaño del modelo base (0.5B) cabría esperar que quepa en GPUs de consumo, pero no se confirma en la información proporcionada.
+- Cabe en GPU de consumo: no confirmado.
+- Opciones de despliegue documentadas: carga vía `transformers` (`AutoModelForCausalLM` + `AutoTokenizer`) combinada con `apply_qwen_attention_surgery`, o vía `neuralops.hub.load_surgeried_model`. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-2.5-0.5b-simple-ssm-wikitext2 | 0,5 B | No disponible | 12.092,24 | MIT | Hugging Face |
-| Qwen/Qwen2.5-0.5B (base) | 0,5 B | 32.768 tokens (según ficha oficial de Qwen) | No disponible en esta información | Apache 2.0 | Hugging Face |
-| Modelos SSM puros tipo Mamba-130M/370M | 0,13-0,37 B | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| `tahamajs/qwen-2.5-0.5b-simple-ssm-wikitext2` | No disponible (base 0.49B) | No disponible | 12092.24 (declarada) | MIT | Hugging Face, solo pesos de atención |
+| `Qwen/Qwen2.5-0.5B` (base) | 0.49B | 32 768 tokens | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Otros checkpoints del Qwen Attention Zoo (NeuralOps) | Variable | No disponible | No disponible | MIT (según repo) | Hugging Face |
 
-La comparación directa con el modelo base Qwen2.5-0.5B no es posible con los datos aportados, ya que no se incluye su perplejidad en WikiText-2. La diferencia de licencia (MIT frente a Apache 2.0 del base) y la naturaleza experimental del checkpoint lo sitúan en una categoría distinta: no compite como modelo de propósito general, sino como artefacto de investigación.
+No se dispone de datos de benchmarks comparables de otras alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Perplejidad de 12.092,24 en WikiText-2: órdenes de magnitud por encima de lo esperable en un modelo de 0,5 B bien ajustado, lo que indica una calidad de generación muy baja y alto riesgo de texto incoherente.
-- Entrenamiento limitado a 53 pasos y 181,1 s: el presupuesto de optimización es mínimo, por lo que la destilación no recupera la mayor parte de la capacidad perdida en la cirugía.
-- Solo inglés: la model card declara únicamente `en`; no hay evidencia de capacidades multilingües.
-- Contexto de entrenamiento de 512 tokens: no se documenta la longitud de contexto efectiva en inferencia; usar secuencias largas puede degradar aún más la calidad.
-- Sin datos de sesgos, alucinación o robustez: no se han publicado evaluaciones de seguridad, sesgo o fidelidad factual.
-- Licencia MIT: permite uso comercial, pero el modelo base Qwen2.5-0.5B está bajo Apache 2.0, por lo que conviene verificar la compatibilidad de ambas licencias en un despliegue derivado.
-- Dependencia del framework NeuralOps: la carga requiere `apply_qwen_attention_surgery` del repositorio `tahamajs/NeuralOps`; no es un checkpoint autónomo cargable con `AutoModelForCausalLM.from_pretrained` directamente.
-- Solo se distribuyen pesos de atención (`attention_weights.safetensors`); el resto de pesos debe tomarse del modelo base, lo que añade un paso de integración y posibles incompatibilidades de versión.
-- No apto para producción: sin benchmarks de tareas, sin evaluación de tool calling ni de agentes, y con calidad de generación no validada.
+- La perplejidad final de 12092.24 en WikiText-2 es varios órdenes de magnitud superior a la de un modelo funcional, lo que indica que la cirugía y la destilación no recuperan la capacidad predictiva del modelo base; no es apto para uso en producción.
+- El módulo `SimpleSSM` no soporta GQA nativo ni RoPE, lo que rompe supuestos clave del mecanismo de atención original de Qwen2.
+- Solo se declara inglés; no hay evidencia de capacidades multilingües.
+- El repo publica únicamente los pesos de atención (`attention_weights.safetensors`), no el modelo completo; es necesario descargar Qwen2.5-0.5B por separado y aplicar la cirugía con el script de NeuralOps.
+- La carga requiere el paquete `neuralops` y el script `scripts.benchmarks.qwen_zoo_train_mix`, lo que añade dependencias externas al flujo estándar de `transformers`.
+- Los resultados de benchmarks son declarados por el autor y no están verificados (`verified: false`).
+- Riesgo de alucinación: alto, derivado de la degradación severa de la perplejidad.
+- Sesgos conocidos: no documentados; al entrenarse solo sobre WikiText-2, el dominio y el estilo están muy restringidos.
+- Licencia MIT: permite uso comercial, pero la falta de calidad del modelo hace inviable ese escenario en la práctica.
+- Fecha de creación declarada: 2026-11-11 (según metadatos de Hugging Face).
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-simple-ssm-wikitext2
+- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-simple-ssm-wikitext2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
-- Licencia NeuralOps: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Licencia NeuralOps (MIT): https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext

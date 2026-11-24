@@ -2,50 +2,51 @@
 
 ## Resumen
 
-AfriquQwen3.5-4B-zul-sft-v3-GGUF es una cuantizacion estatica en formato GGUF del modelo SaarAI/AfriquQwen3.5-4B-zul-sft-v3, publicada por mradermacher, un autor conocido en la comunidad por generar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El modelo base parte de la familia Qwen3.5 (segun la nomenclatura del nombre) y ha sido sometido a un ajuste fino supervisado (SFT) orientado al idioma zulu, con un tamano nominal de 4B parametros. El repositorio GGUF, sin embargo, declara 333.514.240 parametros reales en safetensors, lo que sugiere una discrepancia entre el nombre comercial y el contenido efectivo del checkpoint o una particularidad del proceso de conversion.
+AfriqueQwen3.5-4B-zul-sft-v3-GGUF es la version cuantizada en formato GGUF del modelo SaarAI/AfriqueQwen3.5-4B-zul-sft-v3, un ajuste fino supervisado (SFT) sobre una base Qwen3.5 de 4B orientado al idioma zulu (zu) y al ingles (en). El modelo original ha sido entrenado mediante full-finetune con la herramienta LLaMA-Factory, partiendo de la familia Qwen3.5, y esta pensado para conversacion y generacion de texto en contextos multilingues africanos. Esta version concreta la publica mradermacher, un autor habitual de cuantizaciones GGUF para llama.cpp, e incluye tanto los pesos cuantizados como los suplementos multimodales (mmproj), lo que sugiere que el modelo base conserva capacidades de vision.
 
-La relevancia de esta ficha radica en que se trata de un modelo especializado en una lengua africana de bajos recursos, empaquetado en un formato (GGUF) que permite su despliegue en hardware de consumo mediante llama.cpp. No obstante, la informacion publica disponible es extremadamente escasa: no hay licencia declarada, no se especifican idiomas, no hay pipeline definido y el repositorio no registra descargas ni likes en el momento de la consulta.
+El modelo cuenta con 4.205.751.296 parametros (aproximadamente 4,2 mil millones) y se distribuye bajo licencia CC-BY-4.0, lo que permite uso comercial con atribucion. El repositorio ocupa 40,2 GB e incluye un amplio abanico de cuantizaciones, desde Q2_K hasta f16, ademas de los ficheros mmproj necesarios para el procesamiento de imagenes. Con 696 descargas en el momento de la consulta, es un modelo de nicho centrado en la cobertura linguistica del zulu.
 
-Se trata, por tanto, de un artefacto de nicho, con muy poca trazabilidad documental, cuya evaluacion rigurosa requeriria consultar la model card del modelo base (SaarAI/AfriquQwen3.5-4B-zul-sft-v3) y validar empiricamente el comportamiento del checkpoint convertido. Esta ficha recoge exclusivamente los datos verificables disponibles y marca explicitamente como "no disponible" todo aquello que no se ha podido confirmar.
+Su relevancia radica en que cubre una laguna importante: los modelos de 4B con buen rendimiento en lenguas africanas de bajos recursos son escasos. Al estar disponible en GGUF, puede desplegarse en hardware de consumo mediante llama.cpp u Ollama, lo que facilita su adopcion en entornos con recursos limitados. No obstante, la informacion publica sobre benchmarks, contexto y composicion del dataset de entrenamiento es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer decoder-only derivado de Qwen3.5, no confirmado) |
-| Parametros totales | 333.514.240 (segun safetensors del repo); el nombre indica 4B, discrepancia no aclarada |
+| Arquitectura | transformer (derivada de Qwen3.5); detalles no disponibles |
+| Parametros totales | 4.205.751.296 (~4,2B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible (el sufijo "zul" sugiere zulu, sin confirmacion oficial) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (multiples cuantizaciones); el modelo base estaria en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | zulu (zu) e ingles (en) |
+| Licencia | CC-BY-4.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Por la nomenclatura (Qwen3.5) y por el ecosistema en el que se publica, cabe inferir una arquitectura transformer decoder-only con atencion causal, pero esta inferencia no esta confirmada por la documentacion disponible. El sufijo "sft-v3" indica que el checkpoint ha pasado por al menos tres iteraciones de ajuste fino supervisado, presumiblemente sobre datos en zulu, si bien no se documenta la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron etapas de RLHF o DPO.
+El modelo base es un ajuste fino supervisado (SFT) de una base Qwen3.5 de 4B, realizado con LLaMA-Factory mediante full-finetune. La arquitectura subyacente es un transformer de la familia Qwen3.5, aunque la model card no detalla numero de capas, dimensiones ocultas ni mecanismos de atencion especificos. La presencia de ficheros mmproj en la cuantizacion indica que el modelo conserva un codificador multimodal para entrada de imagenes, heredado de la base Qwen3.5.
 
-La unica informacion tecnica concreta que aporta la model card es el proceso de cuantizacion: se trata de cuantizaciones estaticas generadas por la herramienta de mradermacher, con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se realizo desde pesos en formato Hugging Face. No se documenta ninguna innovacion arquitectonica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.).
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset SFT ni si se aplicaron tecnicas de RLHF o DPO posteriores. El autor etiqueta el modelo con `full-finetune` y `sft`, lo que confirma que el ajuste se hizo sobre todos los parametros y con datos supervisados, pero sin mas detalles publicos. La cuantizacion la realiza mradermacher con cuantizaciones estaticas (no imatrix); las versiones ponderadas/imatrix estan disponibles en un repositorio separado (`AfriqueQwen3.5-4B-zul-sft-v3-i1-GGUF`).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en formato GGUF, ejecutable con llama.cpp y derivados.
-- Presunta especializacion en zulu (idioma zul) por el sufijo del nombre, sin confirmacion documental.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad multimodal (vision, audio) ni modo de razonamiento explicito.
-- Capacidades multilingues: no disponibles; no se declara cobertura de idiomas.
-- No se documentan capacidades de codigo o matematicas de forma especifica.
+- Generacion de texto conversacional en zulu e ingles.
+- Razonamiento y respuesta a instrucciones heredados de la base Qwen3.5.
+- Procesamiento multimodal de imagenes (se incluyen ficheros mmproj-Q8_0 y mmproj-f16).
+- Soporte de conversacion multi-turno mediante plantillas de chat (etiqueta `conversational`).
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Capacidades de codigo y matematicas: no confirmadas explicitamente en la informacion disponible, aunque plausibles por herencia de Qwen3.5.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible.
 
 ## Casos de uso
 
-- Procesamiento de texto en zulu en entornos con hardware limitado: al estar cuantizado en GGUF (hasta Q2_K), puede ejecutarse en CPU o GPU de gama baja, lo que permite desplegar procesamiento de lengua zulu en infraestructura modesta, siempre que se valide empiricamente la calidad del modelo.
-- Generacion de contenido asistida en lengua zulu: redaccion de borradores, resumenes o respuestas en un idioma con escasa cobertura de modelos grandes, util para medios, ONG o administraciones que trabajen con comunidades zuluhablantes.
-- Experimentacion academica en NLP de bajos recursos: investigadores que estudien el rendimiento de modelos ajustados en lenguas africanas pueden usar esta version cuantizada para comparar coste y calidad frente al checkpoint completo en safetensors.
-- Integracion en prototipos locales con llama.cpp: al no requerir servidores GPU dedicados, encaja en demos offline, entornos air-gapped o dispositivos de campo donde no hay conectividad.
-- Traduccion asistida zulu-espanol o zulu-ingles como componente de un pipeline mayor: el modelo podria servir como generador en un sistema de traduccion, aunque la calidad debe medirse antes de producción.
-- Filtrado y clasificacion de texto en zulu: tareas de etiquetado, moderacion o extraccion de informacion sobre corpus en zulu, aprovechando el ajuste SFT especifico al idioma.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes (de Q2_K a f16), lo que permite estudiar el impacto de la cuantizacion en la calidad de salida para este modelo concreto.
+- Atencion al cliente en zulu: el modelo puede gestionar conversaciones multi-turno en zulu e ingles, adecuado para servicios de soporte dirigidos a hablantes de esta lengua en Sudafrica y regiones vecinas.
+- Traduccion zulu-ingles: util para pipelines de traduccion automatica en documentacion, webs o comunicaciones internas, aprovechando el ajuste bilingue.
+- Procesamiento de documentos con imagenes: gracias a los ficheros mmproj, puede emplearse en tareas de OCR asistido o descripcion de imagenes con instrucciones en zulu o ingles.
+- Asistentes locales en hardware de consumo: las cuantizaciones Q4_K_M (2,8 GB) permiten ejecutar el modelo en portatiles o mini-PC mediante llama.cpp u Ollama, sin dependencia de la nube.
+- Educacion y preservacion linguistica: generacion de material didactico, ejercicios o textos en zulu para escuelas y proyectos de documentacion del idioma.
+- Chatbots de bajo coste en produccion: al ser un modelo de 4B cuantizado, el coste por inferencia es bajo, adecuado para despliegues con presupuesto limitado y volumen moderado.
+- Investigacion en NLP africano: sirve como punto de partida para experimentos de ajuste fino adicional o evaluacion comparativa en lenguas de bajos recursos.
 
 ## Benchmarks y rendimiento
 
@@ -53,37 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un checkpoint de ~333 millones de parametros, la inferencia en f16 requiere aproximadamente 0,7 GB solo de pesos; en Q4_K_M en torno a 0,2-0,3 GB; en Q2_K por debajo de 0,2 GB. Estas cifras son estimaciones tecnicas basadas en el numero de parametros declarado, no datos medidos.
-- Si el modelo real fuese de 4B parametros (como sugiere el nombre), las necesidades serian aproximadamente 8 GB en f16 y 2,5-3 GB en Q4_K_M; la discrepancia con los 333 millones declarados impide dar una cifra definitiva.
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060) cubriria holgadamente el escenario de 333 millones de parametros; para un escenario de 4B real, se recomendaria RTX 3060 12 GB, RTX 4070 o superiores. GPUs de datacenter (A100, H100) no son necesarias para este tamano.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas, incluso en iGPU y CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. vLLM y TGI no son la via natural para GGUF, aunque vLLM tiene soporte experimental para algunos GGUF.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K ~2,1 GB; Q4_K_M ~2,8 GB; Q6_K ~3,6 GB; Q8_0 ~4,6 GB; f16 ~8,5 GB.
+- Con overhead de contexto y cache KV, anadir aproximadamente 1-2 GB adicionales segun la longitud de contexto configurada.
+- GPU recomendadas: cualquier GPU consumer con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 4070) para cuantizaciones Q4-Q8; A100/H100 no son necesarias para un modelo de este tamano.
+- Cabe en GPU consumer: si, en la mayoria de tarjetas con 6 GB o mas para cuantizaciones Q4 y Q5; la version f16 requiere ~8,5 GB y puede necesitar 10-12 GB con contexto.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base original puede servirse con vLLM o TGI en formato safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| mradermacher/AfriquQwen3.5-4B-zul-sft-v3-GGUF | 333.514.240 declarados (nombre indica 4B) | no disponible | no disponible | GGUF | Cuantizacion de terceros, sin benchmarks |
-| SaarAI/AfriquQwen3.5-4B-zul-sft-v3 | no disponible | no disponible | no disponible | safetensors (presumible) | Modelo base del que deriva esta cuantizacion |
-| Qwen3.5 (familia base) | no disponible en esta ficha | no disponible | no disponible | safetensors / GGUF | Familia de origen segun nomenclatura, sin datos confirmados |
+| AfriqueQwen3.5-4B-zul-sft-v3 (este) | ~4,2B | no disponible | zu, en | CC-BY-4.0 | GGUF, safetensors |
+| Qwen3.5-4B (base) | ~4B | no disponible | multilingue | no disponible | safetensors, GGUF |
+| Modelos especializados en lenguas africanas de ~3-7B | variable | variable | variable | variable | variable |
 
-No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria; la tabla anterior recoge unicamente la relacion de dependencia entre el modelo base y esta cuantizacion.
+No se dispone de datos de rendimiento comparativos publicados para este modelo frente a alternativas de la misma categoria. La comparativa se limita a parametros, licencia y disponibilidad de formato.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia declarada: no se puede asumir uso comercial permitido; es imprescindible consultar la licencia del modelo base antes de cualquier despliegue en produccion.
-- Discrepancia critica entre el nombre ("4B") y los parametros reales declarados en safetensors (333.514.240): puede tratarse de un error de metadatos, de un modelo podado o de una nomenclatura no literal; debe verificarse antes de dimensionar hardware.
-- Sin benchmarks publicados: no hay evidencia empirica de calidad, por lo que cualquier uso en produccion requiere evaluacion propia.
-- Riesgo de alucinacion: inherente a los modelos generativos; no hay documentacion de mitigaciones especificas.
-- Sesgos conocidos: no documentados; los modelos ajustados en lenguas de bajos recursos pueden presentar sesgos derivados de la escasez y calidad del corpus de entrenamiento.
-- Cobertura idiomatica no declarada: no se confirma oficialmente que el modelo este especializado en zulu ni que mantenga competencia en otros idiomas.
-- Contexto no documentado: no se puede planificar su uso en tareas de contexto largo sin verificar la ventana real.
-- Trazabilidad limitada: repositorio sin descargas ni interacciones, creado y actualizado en fechas muy proximas (2026-11-21), lo que sugiere publicacion reciente y sin validacion comunitaria.
-- Al ser una cuantizacion de terceros, no hay garantia de que el proceso de conversion preserve fielmente el comportamiento del modelo base en todas las variantes (especialmente Q2_K e IQ4_XS).
+- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse con datos SFT no publicados, pueden persistir sesgos de la base Qwen3.5 y del dataset de ajuste.
+- Riesgo de alucinacion: inherente a los modelos de 4B; no se ha evaluado su tasa de alucinacion en zulu ni en ingles.
+- Limitaciones de contexto: la longitud de contexto no esta documentada; conviene verificar en la configuracion del modelo base antes de desplegarlo en produccion.
+- Limitaciones de idioma: el soporte se limita a zulu e ingles; el rendimiento en otras lenguas africanas no esta garantizado.
+- Restricciones de licencia: CC-BY-4.0 permite uso comercial con atribucion; es obligatorio citar al autor original (SaarAI) y al cuantizador (mradermacher).
+- Caveat de produccion: al ser un modelo de nicho con pocas descargas y sin benchmarks publicados, se recomienda una evaluacion propia antes de usarlo en entornos criticos.
+- La cuantizacion Q2_K y Q3_K_M pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/AfriquQwen3.5-4B-zul-sft-v3-GGUF
-- Modelo base: https://huggingface.co/SaarAI/AfriquQwen3.5-4B-zul-sft-v3
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Repositorio GGUF: https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-zul-sft-v3-GGUF
+- Modelo base: https://huggingface.co/SaarAI/AfriqueQwen3.5-4B-zul-sft-v3
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-zul-sft-v3-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#AfriqueQwen3.5-4B-zul-sft-v3-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

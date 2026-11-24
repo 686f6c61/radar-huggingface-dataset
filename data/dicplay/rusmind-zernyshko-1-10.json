@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-Zernyshko-1.10",
   "created_at": "2026-11-04T17:03:49.000Z",
-  "updated_at": "2026-11-10T08:10:22.000Z",
+  "updated_at": "2026-11-23T20:06:58.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

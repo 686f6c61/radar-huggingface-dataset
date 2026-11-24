@@ -2,49 +2,51 @@
 
 ## Resumen
 
-Next-3-Pro-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF generadas por mradermacher a partir del modelo base Next-3-Pro, publicado por el usuario thelamapi en Hugging Face. El repositorio no aporta informacion sobre la arquitectura, el tamano, el contexto ni el proceso de entrenamiento del modelo original; la model card se limita a listar los tipos de cuantizacion generados y a enlazar al modelo fuente. Se trata, por tanto, de un artefacto de distribucion orientado a inferencia local con llama.cpp y derivados (Ollama, LM Studio, etc.), no de un modelo con documentacion tecnica propia.
+Next-3-Pro es un modelo de lenguaje multimodal (vision-language) desarrollado por el usuario thelamapi y publicado en Hugging Face. La versión aquí descrita es una cuantización GGUF estática realizada por mradermacher, un conocido cuantizador de la comunidad. El modelo base tiene 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande, adecuado para despliegues en servidores con GPU de gama alta o configuraciones multi-GPU.
 
-La relevancia de este repositorio depende enteramente del modelo base Next-3-Pro, del que no se dispone de ficha tecnica en la informacion proporcionada. El unico dato verificable es el conjunto de cuantizaciones disponibles: x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS, lo que cubre desde despliegues con memoria muy limitada hasta inferencia casi sin perdida de precision.
+El modelo está orientado a tareas de razonamiento, generación de código, uso de herramientas (tool use) y contexto largo, según las etiquetas de la model card. Soporta los idiomas inglés y turco, y ha sido entrenado o ajustado con los datasets GSM8K (matemáticas) y MBPP (programación). Su naturaleza multimodal indica que puede procesar imágenes además de texto, aunque la información disponible no detalla la arquitectura exacta de la torre de visión.
 
-El repositorio se creo y actualizo el 20 de noviembre de 2026, no registra descargas ni likes en el momento de la consulta y no declara licencia ni idiomas soportados. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion debe remitirse al modelo original thelamapi/Next-3-Pro.
+La relevancia de esta ficha radica en que ofrece una alternativa cuantizada en GGUF para ejecución local o en entornos con recursos limitados, manteniendo las capacidades del modelo original. Sin embargo, la ausencia de datos sobre licencia, benchmarks y arquitectura interna limita la evaluación rigurosa de su rendimiento frente a competidores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Arquitectura | no disponible (modelo multimodal vision-language basado en transformers) |
+| Parametros totales | 26.895.998.464 (≈26,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (etiqueta "long-context" sin cifra) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | inglés (en), turco (tr) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas, quantize_version 2, output_tensor_quantised 1, convert_type hf) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card del repositorio GGUF no describe la arquitectura del modelo base (transformer, MoE, hibrido, SSM, etc.), ni el volumen o composicion de los datos de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion supervisada. Tampoco se indica el numero de tokens de contexto nativo ni si el modelo incorpora innovaciones como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
+No se dispone de información detallada sobre la arquitectura interna del modelo base (thelamapi/next3-pro). Las etiquetas indican que es un modelo multimodal vision-language, instruction-tuned, con capacidades de razonamiento, coding, tool-use y long-context. Se desconoce si emplea un transformer denso, MoE o una arquitectura híbrida, así como el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de RLHF/DPO.
 
-Lo unico documentado en el repositorio es el proceso de conversion: los pesos originales en formato Hugging Face (convert_type: hf) se han convertido a GGUF con quantize_version 2 y cuantizacion de tensores de salida activada (output_tensor_quantised: 1). No se ha omitido el modulo multimodal (skip_mmproj no marcado), aunque no se confirma que el modelo base tenga capacidades de vision.
+Los datasets mencionados en la model card son openai/gsm8k y google-research-datasets/mbpp, lo que sugiere un enfoque en matemáticas y programación. No se especifican innovaciones técnicas como decodificación especulativa, atención lineal o mecanismos de thinking mode. La cuantización GGUF realizada por mradermacher es estática (quantize_version: 2) y se ofrece también una versión con imatrix (i1) en un repositorio separado.
 
 ## Capacidades
 
-- No se documentan capacidades especificas del modelo en la informacion disponible.
-- Generacion de texto: no confirmada en la documentacion; depende del modelo base thelamapi/Next-3-Pro.
-- Razonamiento, codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto y razonamiento general, con énfasis en tareas de matemáticas (GSM8K) y programación (MBPP).
+- Capacidades multimodales: procesamiento de imágenes junto con texto (vision-language).
+- Soporte de tool calling / function calling, según la etiqueta "tool-use".
+- Orientación a agentes y razonamiento multi-paso (etiqueta "reasoning").
+- Contexto largo (etiqueta "long-context"), aunque sin cifra concreta.
+- Multilingüe limitado a inglés y turco.
+- Instruction-tuned, lo que implica ajuste para seguir instrucciones conversacionales.
+- Compatible con endpoints (etiqueta "endpoints_compatible").
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo sin GPU dedicada: las cuantizaciones Q2_K y Q3_K_S permiten cargar el modelo en equipos con poca RAM, a costa de una perdida de calidad que no puede cuantificarse sin datos del modelo base.
-- Despliegue en GPU de consumo: las variantes Q4_K_M e IQ4_XS son el punto de equilibrio habitual entre tamano y fidelidad en llama.cpp; su idoneidad concreta depende del numero de parametros del modelo original, que no se ha publicado.
-- Servidores de inferencia con llama.cpp u Ollama: el formato GGUF es directamente compatible con estas herramientas, lo que facilita levantar un endpoint HTTP para pruebas internas.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes del mismo modelo, lo que permite medir la degradacion de calidad por nivel de cuantizacion en un pipeline propio.
-- Prototipado de aplicaciones de chat: siempre que el modelo base sea conversacional, las variantes Q5_K_M y Q6_K permiten iterar en local sin depender de APIs externas.
-- Distribucion de artefactos para pruebas de integracion: al ser cuantizaciones estaticas, se pueden fijar versiones concretas en un registro interno para reproducibilidad de experimentos.
+- **Asistencia en programación**: el modelo puede generar y completar código en inglés o turco, integrándose en editores o pipelines de CI/CD para sugerencias y revisiones automáticas, gracias a su entrenamiento con MBPP y su soporte de tool calling.
+- **Resolución de problemas matemáticos**: adecuado para tutores automáticos o sistemas de verificación de ejercicios, dado su ajuste con GSM8K.
+- **Atención al cliente multimodal**: puede gestionar conversaciones multi-turno con contexto largo e interpretar imágenes enviadas por el usuario (por ejemplo, capturas de pantalla o fotos de productos) para ofrecer respuestas contextualizadas.
+- **Automatización de agentes**: su soporte de tool use y razonamiento multi-paso permite construir agentes que consulten APIs, ejecuten funciones y encadenen acciones en flujos de trabajo.
+- **Análisis de documentos con imágenes**: extracción de información de facturas, gráficos o diagramas combinando texto e imagen, útil en entornos de back-office.
+- **Despliegue local en estaciones de trabajo**: las cuantizaciones GGUF (desde Q2_K hasta Q8_0) permiten ejecutar el modelo en hardware de consumo o servidores modestos mediante llama.cpp u Ollama, facilitando prototipado sin depender de la nube.
+- **Traducción y generación bilingüe inglés-turco**: para contenidos o soporte en esos dos idiomas, aunque no se garantiza calidad en otros.
 
 ## Benchmarks y rendimiento
 
@@ -52,26 +54,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el numero de parametros del modelo base.
-- GPU recomendadas: no disponible por la misma razon.
-- Viabilidad en GPU de consumo: no determinable sin conocer el tamano del modelo; las variantes Q2_K a Q4_K_M estan pensadas para minimizar huella de memoria.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python) son compatibles de forma nativa con GGUF. vLLM y TGI no consumen GGUF de forma directa en su configuracion estandar.
-- Latencia y throughput: no disponibles.
+- **VRAM estimada para inferencia** (según tamaño de cuantización):
+  - Q2_K: ~11,2 GB
+  - Q3_K_S: ~12,2 GB; Q3_K_M: ~13,6 GB; Q3_K_L: ~14,8 GB
+  - IQ4_XS: ~15,5 GB; Q4_K_S: ~15,7 GB; Q4_K_M: ~16,8 GB
+  - Q5_K_S: ~18,8 GB; Q5_K_M: ~19,4 GB
+  - Q6_K: ~22,2 GB
+  - Q8_0: ~28,7 GB
+- **GPU recomendadas**: para cuantizaciones Q4/Q5, una RTX 4090 (24 GB) o A100 40 GB; para Q8_0, A100 40 GB o H100. Para Q2/Q3, tarjetas de 16 GB (RTX 4080, A4000) pueden ser suficientes.
+- **¿Cabe en consumer GPU?**: sí, las cuantizaciones Q2 a Q5 caben en GPUs de 16-24 GB (RTX 4080/4090). Q6 y Q8 requieren 24 GB o más; Q8_0 en 24 GB es ajustado y puede requerir offloading parcial a CPU.
+- **Opciones de despliegue**: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). Para el modelo base en safetensors, vLLM o TGI si se dispone de los pesos originales.
+- **Latencia y throughput**: no disponibles. Dependerán del hardware y la cuantización; a modo orientativo, un modelo de ~27B en Q4_K_M en una RTX 4090 suele generar decenas de tokens por segundo, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo base ni sobre alternativas de la misma categoria, tamano o tarea, por lo que no es posible establecer una comparacion rigurosa con parametros, contexto, rendimiento o licencia.
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría (multimodales de ~27B). Se indica "no disponible" al no conocerse benchmarks ni especificaciones del modelo base. Como referencia genérica, modelos como Qwen2.5-VL-32B o InternVL2.5-26B ocupan un espacio similar, pero no se pueden comparar sin datos de rendimiento de Next-3-Pro.
+
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Next-3-Pro (este) | ~26,9 B | no disponible | no disponible | GGUF |
+| Qwen2.5-VL-32B | ~32 B | 128k (típico) | Apache 2.0 (según versión) | safetensors, GGUF |
+| InternVL2.5-26B | ~26 B | 32k-128k | MIT (según versión) | safetensors |
+
+*Nota: los datos de los modelos comparativos son orientativos y pueden variar; no se han verificado contra la información proporcionada.*
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se conocen arquitectura, parametros, contexto, idiomas ni datos de entrenamiento.
-- Licencia no declarada: no puede asumirse uso comercial permitido; es necesario consultar el repositorio del modelo base thelamapi/Next-3-Pro antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion y sesgos: no evaluables sin informacion sobre el entrenamiento y la alineacion del modelo original.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad de forma significativa en la mayoria de modelos; no se ha publicado una evaluacion de esa degradacion para este caso concreto.
-- Repositorio sin traccion (0 descargas, 0 likes) y creado recientemente: no hay evidencia de comunidad, validacion externa ni mantenimiento.
-- El autor del GGUF (mradermacher) no es el autor del modelo; la responsabilidad sobre el comportamiento del modelo recae en thelamapi/Next-3-Pro.
+- **Licencia desconocida**: no se especifica la licencia del modelo base ni de la cuantización, lo que impide confirmar si se permite uso comercial. Es imprescindible contactar con el autor original antes de producción.
+- **Idiomas limitados**: solo inglés y turco; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- **Riesgo de alucinación**: como todo modelo generativo, puede inventar información, especialmente en tareas de razonamiento o con contexto largo.
+- **Sesgos**: no se documentan sesgos conocidos, pero al no haber información sobre el dataset de entrenamiento, no se pueden evaluar.
+- **Contexto largo sin cifra**: la etiqueta "long-context" no concreta la ventana real; podría degradarse en secuencias muy largas.
+- **Multimodalidad no verificada**: aunque se etiqueta como vision-language, no se detalla la resolución de imagen soportada ni el proceso de alineación.
+- **Cuantizaciones de baja calidad**: Q2_K y Q3_K_M pueden degradar notablemente el rendimiento; se recomienda Q4_K_M o superior para uso serio.
+- **Falta de benchmarks**: sin datos objetivos, la evaluación de capacidades es especulativa.
+- **Repositorio con 0 likes y 1052 descargas**: indica baja validación comunitaria; usar con cautela.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Next-3-Pro-GGUF
-- Modelo base: https://huggingface.co/thelamapi/Next-3-Pro
+- [Hugging Face: mradermacher/Next-3-Pro-GGUF](https://huggingface.co/mradermacher/Next-3-Pro-GGUF)
+- [Modelo base: thelamapi/next3-pro](https://huggingface.co/thelamapi/next3-pro)
+- [Cuantizaciones con imatrix (i1)](https://huggingface.co/mradermacher/Next-3-Pro-i1-GGUF)
+- [Página de resumen de cuantizaciones](https://hf.tst.eu/model#Next-3-Pro-GGUF)
+- [Guía de uso de GGUF (ejemplo de TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)
+- [Gráfico comparativo de cuantizaciones (ikawrakow)](https://www.nethype.de/huggingface_embed/quantpplgraph.png)
+- [Notas de Artefact2 sobre cuantizaciones](https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9)
+- [FAQ y solicitudes de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)

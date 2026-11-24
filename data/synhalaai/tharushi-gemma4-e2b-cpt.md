@@ -2,54 +2,52 @@
 
 ## Resumen
 
-Tharushi-Gemma4-E2B-CPT es un ajuste fino (continual pre-training, segun el sufijo CPT del nombre) del modelo unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario SynhalaAI en Hugging Face. El modelo base pertenece a la familia Gemma 4 de Google, en su variante E2B (orientada a eficiencia), y el ajuste anade soporte para ingles y cingales (si), ademas de mantener la modalidad image-text-to-text heredada del modelo original.
+Tharushi-Gemma4-E2B-CPT es un ajuste fino (fine-tuning) del modelo multimodal Gemma 4 E2B en su variante instruct, publicado por SynhalaAI. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`) y se ha entrenado mediante continuacion de preentrenamiento (CPT, *continued pre-training*) para reforzar el conocimiento en ingles y singales (si). El pipeline declarado es `image-text-to-text`, lo que confirma que conserva la capacidad de procesar imagenes y texto de forma conjunta.
 
-El repositorio declara 5.123.178.051 parametros en formato safetensors y un tamano de 30,6 GB, lo que sugiere pesos en precision alta a pesar de que el modelo base de partida estaba cuantizado en 4 bits (bnb-4bit). El pipeline es image-text-to-text, por lo que conserva capacidad de procesamiento de imagenes ademas de generacion de texto. La ficha tecnica oficial del autor no esta disponible en la informacion proporcionada, y el modelo esta sujeto a acceso restringido (gated) en Hugging Face.
+El modelo cuenta con 5.123.178.051 parametros segun los pesos en safetensors, lo que lo situa en la gama de modelos compactos aptos para inferencia en hardware de consumo moderado. Su interes principal radica en ser una adaptacion de un modelo Gemma 4 de ultima generacion orientada a un idioma de bajos recursos como el singales, un caso poco cubierto por los modelos generalistas. El repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
-La relevancia de este modelo es limitada pero concreta: se trata de un experimento de adaptacion linguistica de un modelo Gemma 4 pequeno a un idioma de bajos recursos como el cingales, con cero descargas y cero likes en el momento de la consulta. No dispone de licencia declarada, lo que supone un caveat importante para uso comercial.
+La informacion publica disponible es limitada: no se detallan la licencia, los datos de entrenamiento ni resultados de benchmarks, por lo que esta ficha recoge lo que puede inferirse de los metadatos y del modelo base, marcando explicitamente los campos no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Gemma 4, variante E2B); detalles no disponibles |
+| Arquitectura | Transformer multimodal (herencia de Gemma 4 E2B; detalles no disponibles) |
 | Parametros totales | 5.123.178.051 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (modelo base de partida en bnb-4bit; pesos publicados en safetensors) |
-| Idiomas soportados | en, si |
+| Tipos de cuantizacion | El modelo base se distribuye en 4 bits (bnb-4bit); el repo contiene safetensors (posiblemente en BF16/FP16, no confirmado) |
+| Idiomas soportados | Ingles (en) y singales (si) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Modalidad | image-text-to-text |
-| Modelo base | unsloth/gemma-4-E2B-it-unsloth-bnb-4bit |
-| Acceso | restringido (gated) |
-| Tamano del repositorio | 30,6 GB |
 | Libreria | transformers |
+| Pipeline | image-text-to-text |
+| Acceso | Restringido (gated) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Por el nombre y el modelo base, se trata de una variante de la familia Gemma 4 de Google en su version E2B, orientada a eficiencia, con capacidad multimodal image-text-to-text. El modelo de partida es la version instruct ajustada por Unsloth y cuantizada en 4 bits (bnb-4bit), lo que indica que el punto de partida ya habia pasado por un proceso de instruccion y cuantizacion.
+El modelo hereda la arquitectura de Gemma 4 E2B en su variante instruct, un transformer multimodal capaz de procesar entradas de imagen y texto. El ajuste se ha realizado sobre la version cuantizada en 4 bits de Unsloth, lo que sugiere un flujo de entrenamiento con tecnicas de bajo rango o cuantizacion eficiente (el tag `unsloth` asi lo indica), aunque no se especifican los detalles del metodo (LoRA, QLoRA u otro).
 
-El sufijo CPT sugiere un proceso de continual pre-training sobre el modelo base, presumiblemente para adaptarlo al cingales y reforzar el ingles. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similar. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.). Los tags incluyen `unsloth`, lo que apunta a que el ajuste se realizo con las herramientas de Unsloth, pero no se confirma en la informacion proporcionada.
+La modalidad de entrenamiento declarada es *continued pre-training* (CPT), es decir, un entrenamiento adicional sobre el modelo instruct para adaptarlo a dominios o idiomas especificos, en este caso el singales. No se dispone de informacion sobre el volumen de tokens, la composicion del dataset, ni si hubo fases de RLHF o DPO posteriores. Tampoco se documentan innovaciones tecnicas adicionales mas alla de las propias del modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional, heredada del modelo base instruct.
-- Procesamiento de imagenes y texto combinados (pipeline image-text-to-text).
-- Soporte multilingue limitado a ingles y cingales.
-- Capacidad de conversacion multi-turno (tag `conversational`).
-- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
-- Compatibilidad con text-generation-inference (tag `text-generation-inference`).
-- No se documenta soporte explicito de tool calling, function calling, agentes o modos de razonamiento extendido (thinking mode) en la informacion disponible.
+- Generacion de texto conversacional en ingles y singales.
+- Procesamiento de imagenes junto con texto (image-text-to-text), heredado del modelo base Gemma 4.
+- Razonamiento y respuesta a instrucciones (variante instruct).
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible, aunque el modelo base Gemma 4 suele incluirlo.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multilingues limitadas a ingles y singales segun los tags.
+- Modo *thinking* u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Asistencia conversacional en cingales: el modelo puede mantener dialogos multi-turno en cingales e ingles, adecuado para aplicaciones de atencion al usuario en Sri Lanka o comunidades diaspora, aunque la calidad real no esta validada por benchmarks publicos.
-- Procesamiento de documentos con imagenes en cingales: al conservar la modalidad image-text-to-text, puede emplearse para extraer o describir contenido de imagenes acompanadas de texto en entornos bilingues ingles-cingales.
-- Prototipado de investigación en adaptacion linguistica: util como punto de partida para estudiar el efecto del continual pre-training sobre un modelo Gemma 4 pequeno en un idioma de bajos recursos.
-- Traduccion asistida ingles-cingales: uso como componente en pipelines de traduccion o post-edicion, con validacion humana obligatoria dada la ausencia de benchmarks.
-- Generacion de contenido educativo en cingales: redaccion de material divulgativo o ejercicios, con revision por hablantes nativos.
-- Experimentacion con modelos multimodales pequenos: el tamano de 5,1 mil millones de parametros permite desplegarlo en hardware modesto para pruebas de concepto de vision-lenguaje en un idioma poco cubierto.
+- Atencion al cliente en singales: el modelo puede gestionar conversaciones multi-turno en un idioma de bajos recursos, cubriendo un nicho que los modelos generalistas rara vez atienden con calidad.
+- Traduccion ingles-singales: util para localizar documentacion, interfaces o contenidos para comunidades de Sri Lanka.
+- Procesamiento de documentos con imagenes: al ser image-text-to-text, puede extraer informacion de capturas, formularios o imagenes junto con texto en ambos idiomas.
+- Asistentes educativos bilingues: generacion de material didactico y explicaciones en singales para estudiantes.
+- Moderacion y clasificacion de contenido: analisis de texto e imagenes en entornos donde el singales es predominante.
+- Prototipado rapido en investigacion: al ser un modelo de ~5.100 millones de parametros, permite experimentar con ajustes y evaluaciones en hardware asequible.
 
 ## Benchmarks y rendimiento
 
@@ -57,36 +55,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 10-11 GB solo para pesos (5,1 mil millones de parametros), mas overhead de activaciones y cache KV.
-- VRAM estimada en cuantizacion 4 bits: aproximadamente 3-4 GB para pesos, mas overhead.
-- GPU recomendadas: RTX 3090, RTX 4090, A100 o H100 para FP16 sin cuantizar; GPUs consumer con 8-12 GB para versiones cuantizadas.
-- Cabe en GPU consumer: si, en modelos con al menos 8 GB de VRAM si se cuantiza; en FP16 requiere 12 GB o mas.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag), endpoints de Hugging Face; no se confirma soporte de vLLM, llama.cpp u Ollama en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con ~5.100 millones de parametros, en FP16 requiere aproximadamente 10-11 GB; en cuantizacion 4 bits, en torno a 3-4 GB mas overhead.
+- GPU recomendadas: A100, H100 o L40S para produccion con alto throughput; RTX 4090, RTX 3090 o RTX 4080 para desarrollo.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en cuantizacion 4 bits; 12-16 GB para FP16.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM (si el modelo base lo soporta), llama.cpp/Ollama (previa conversion a GGUF).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Acceso |
 |---|---|---|---|---|---|
-| SynhalaAI/Tharushi-Gemma4-E2B-CPT | 5,1 B | no disponible | en, si | no disponible | restringido |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Gemma 4 E2B (familia original de Google) | variante E2B | no disponible | multilingue | no disponible en esta ficha | no disponible |
+| Tharushi-Gemma4-E2B-CPT | ~5.100 M | no disponible | en, si | no disponible | Gated |
+| Gemma 4 E2B (base) | ~5.100 M | no disponible | multilingue | Gemma Terms | Abierto (con condiciones) |
+| Modelos multilingues de ~7B (p. ej. Qwen, Llama) | 7.000-8.000 M | 8K-128K | multilingue | variable | Abierto |
 
-La comparativa se limita al modelo base y a la familia de origen, ya que no se dispone de datos de rendimiento ni de especificaciones completas de alternativas comparables en la informacion proporcionada.
+La comparativa directa con alternativas es limitada porque no se dispone de datos de rendimiento del modelo. Su principal diferenciador es la especializacion en singales, no la competitividad en benchmarks generales.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de la calidad del ajuste ni de la mejora en cingales.
-- Licencia no declarada: no se puede confirmar el uso comercial; ademas, el modelo esta sujeto a acceso restringido en Hugging Face, lo que anade una capa de condiciones.
-- Cero descargas y cero likes: no hay validacion por parte de la comunidad.
-- Riesgo de alucinacion y de degradacion del rendimiento en ingles tras el continual pre-training, sin datos que lo cuantifiquen.
-- Cobertura linguistica limitada a ingles y cingales; el resto de idiomas no esta soportado segun los tags.
-- Longitud de contexto desconocida, lo que impide garantizar conversaciones o documentos largos.
-- El modelo base de partida estaba cuantizado en 4 bits, mientras que los pesos publicados ocupan 30,6 GB en safetensors; conviene verificar la coherencia de precision antes de desplegar.
-- Sin documentacion sobre sesgos, datos de entrenamiento ni procesos de alineacion.
+- No se ha publicado informacion sobre sesgos; al entrenarse sobre datos de singales e ingles, puede heredar sesgos de esas fuentes.
+- Riesgo de alucinacion inherente a los modelos generativos, agravado por la falta de evaluacion publica.
+- Cobertura linguistica restringida a ingles y singales; el rendimiento en otros idiomas no esta garantizado.
+- Licencia no disponible: no puede confirmarse el uso comercial sin consultar al autor.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su adopcion en produccion.
+- Al derivar de una version cuantizada en 4 bits, puede arrastrar perdida de precision respecto al modelo original.
+- No hay documentacion sobre el dataset de entrenamiento, lo que dificulta evaluar su calidad y posibles contaminaciones.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/SynhalaAI/Tharushi-Gemma4-E2B-CPT
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.
+- Unsloth: https://github.com/unslothai/unsloth
+- Gemma (familia de modelos): https://ai.google.dev/gemma

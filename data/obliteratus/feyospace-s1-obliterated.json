@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 403,
+  "downloads_30d": 385,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -50,6 +50,37 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "MMLU",
+      "dataset": "MMLU (5-shot)",
+      "metric": "Accuracy",
+      "value": 82.4
+    },
+    {
+      "task": "WMDP-Cyber",
+      "dataset": "WMDP-Cyber (0-shot)",
+      "metric": "Accuracy",
+      "value": 63.8
+    },
+    {
+      "task": "CyberMetric-10K",
+      "dataset": "CyberMetric-10K (0-shot)",
+      "metric": "Exact Match",
+      "value": 85.3
+    },
+    {
+      "task": "SecQA v1",
+      "dataset": "SecQA v1 (0-shot)",
+      "metric": "Accuracy",
+      "value": 61.8
+    },
+    {
+      "task": "SecQA v2",
+      "dataset": "SecQA v2 (0-shot)",
+      "metric": "Accuracy",
+      "value": 55
+    }
+  ],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "DangKhoa09",
   "url": "https://huggingface.co/DangKhoa09/yolo26-vietnamese-money",
   "created_at": "2026-11-23T16:27:06.000Z",
-  "updated_at": "2026-11-23T16:28:09.000Z",
+  "updated_at": "2026-11-23T17:15:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "ultralytics",
+    "onnx",
     "yolo",
     "yolo26",
     "object-detection",
@@ -33,11 +34,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5544453,
-  "storage_human": "6 MB",
+  "storage_bytes": 20879861,
+  "storage_human": "21 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

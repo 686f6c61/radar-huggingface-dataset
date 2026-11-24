@@ -2,49 +2,52 @@
 
 ## Resumen
 
-AgentRoboCritic-Muse-Glimmer-30B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo AgentRoboCritic-Muse-Glimmer-30B, publicado por el usuario mradermacher en Hugging Face. El modelo base original procede de la organizacion cx-cmu, y esta version se limita a convertir los pesos a distintos niveles de cuantizacion para su uso con llama.cpp y herramientas compatibles con GGUF. No se trata, por tanto, de un modelo entrenado por mradermacher, sino de una redistribucion cuantizada del modelo de cx-cmu.
+AgentRoboCritic-Muse-Glimmer-30B es un modelo multimodal especializado en robótica, desarrollado originalmente por el grupo cx-cmu (Carnegie Mellon University) y distribuido en formato GGUF por mradermacher. Su propósito es la evaluación de acciones robóticas (robot-action-evaluation): dado un contexto multimodal que combina observaciones visuales y descripciones de acciones, el modelo emite juicios críticos sobre la idoneidad, viabilidad o calidad de las acciones propuestas por un agente robótico. Se trata, por tanto, de un componente de crítica o verificación dentro de pipelines de agentes físicos, no de un modelo de propósito general.
 
-El modelo cuenta con aproximadamente 27.854 millones de parametros (27,85 mil millones), lo que justifica la denominacion comercial "30B". El repositorio ocupa 22,0 GB e incluye un conjunto amplio de cuantizaciones que abarca desde Q2_K hasta Q8_0, ademas de F16 e IQ4_XS. La model card del repositorio no aporta informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades especificas, por lo que buena parte de los datos tecnicos de esta ficha quedan marcados como no disponibles.
+El modelo base cuenta con 27.854.794.240 parámetros (aproximadamente 27,9 mil millones), lo que lo sitúa en la franja de los modelos de escala media-grande. La versión aquí descrita es una cuantización estática en GGUF generada por mradermacher, que abarca desde Q2_K (10,8 GB) hasta Q8_0 (29,7 GB), además de los suplementos multimodales mmproj en f16 y Q8_0 necesarios para procesar entradas visuales. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La relevancia de esta publicacion es practica: permite desplegar un modelo de casi 28 mil millones de parametros en entornos con recursos limitados mediante cuantizacion, algo especialmente util para experimentacion local o en infraestructura modesta. La etiqueta "endpoints_compatible" sugiere que el repositorio puede servirse a traves de la infraestructura de endpoints de Hugging Face, aunque no se detalla en la informacion disponible. Dado que el repositorio no registra descargas ni "likes" en el momento de la consulta, debe considerarse una publicacion reciente y poco validada por la comunidad.
+Su relevancia actual radica en la creciente demanda de mecanismos de verificación y crítica en sistemas de agentes autónomos, especialmente en robótica, donde la evaluación fiable de acciones antes de su ejecución reduce riesgos y mejora la robustez. Al estar disponible en GGUF, puede desplegarse en entornos con recursos limitados mediante llama.cpp u Ollama, lo que facilita su integración en bucles de control y evaluación locales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27.854.794.240 (aprox. 27,85 mil millones) |
+| Arquitectura | no disponible (modelo transformer multimodal, segun tags) |
+| Parametros totales | 27.854.794.240 (~27,9 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en f16 y Q8_0; tambien disponibles cuantizaciones imatrix en el repo i1-GGUF |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base presumiblemente en safetensors |
+| Tamano del repo | 197,5 GB |
+| Pipeline | robotics |
+| Modelo base | cx-cmu/AgentRoboCritic-Muse-Glimmer-30B |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. Por el nombre y el tamano (27,85 mil millones de parametros) cabe esperar un transformer decoder-only, pero no hay datos que lo confirmen en la informacion disponible. Tampoco se detalla si emplea mezcla de expertos (MoE), atencion lineal, decodificacion especulativa u otras innovaciones.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Los tags indican que se trata de un modelo multimodal (procesa entradas visuales y textuales, como evidencia la existencia de los ficheros mmproj para el proyector multimodal) y que su dominio de aplicacion es la evaluacion de acciones roboticas. El nombre "Muse-Glimmer" sugiere una posible base derivada de la familia Muse/Glimmer, pero no se confirma en la informacion disponible.
 
-Respecto al entrenamiento, la model card del repositorio GGUF no incluye informacion sobre el numero de tokens, la composicion del dataset, el uso de RLHF o DPO, ni el proceso de ajuste. El nombre del modelo base, AgentRoboCritic-Muse-Glimmer-30B, sugiere un enfoque orientado a tareas de agente y critica (posiblemente evaluacion o correccion de trayectorias de agentes roboticos), pero se trata de una inferencia a partir del nombre y no de un dato confirmado. La unica informacion tecnica verificable es el proceso de cuantizacion: el repositorio declara "quantize_version: 2", "output_tensor_quantised: 1" y "convert_type: hf", lo que indica una conversion desde pesos en formato Hugging Face hacia GGUF con cuantizacion por tensor.
+Tampoco se detallan los datos de entrenamiento (numero de tokens, composicion del dataset, presencia de RLHF/DPO) ni innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. Toda esta informacion debe considerarse no disponible a partir de las fuentes consultadas. La unica informacion tecnica verificable es el numero de parametros (27,9 B) y la naturaleza multimodal del modelo, inferida de los ficheros mmproj incluidos en el repositorio GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo esta orientado a dialogos multi-turno, aunque no se detallan sus capacidades concretas.
-- Posible orientacion a agentes y critica: el nombre del modelo base sugiere funciones de agente y evaluacion critica, pero no hay documentacion que lo confirme.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de razonamiento multi-paso o modo "thinking": no disponible.
-- Capacidades multilingues: no disponibles.
-- Capacidades de vision, audio u otras modalidades: no disponibles.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse mediante la infraestructura de endpoints de Hugging Face.
+- Evaluacion critica de acciones roboticas: el modelo emite juicios sobre la idoneidad de acciones propuestas en un contexto de robotica, segun su pipeline declarado (robotics) y sus tags (robot-action-evaluation).
+- Procesamiento multimodal: acepta entradas visuales junto con texto, gracias al proyector multimodal (mmproj) incluido en el repositorio.
+- Conversacion: el tag "conversational" indica soporte para interacciones de tipo dialogo.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede desplegarse mediante la infraestructura de endpoints de Hugging Face.
+- Idioma: ingles (unico idioma declarado).
+- No se dispone de informacion sobre soporte de tool calling, function calling, razonamiento multi-paso, capacidades matematicas, generacion de codigo ni modos especiales como thinking mode. Estas capacidades deben considerarse no disponibles.
 
 ## Casos de uso
 
-- Experimentacion local con modelos de gran tamano: gracias a las cuantizaciones Q2_K a Q4_K_M, es posible ejecutar un modelo de casi 28 mil millones de parametros en equipos con VRAM limitada, lo que facilita la investigacion sin acceso a clusters de GPU.
-- Despliegue en servidores con llama.cpp: el formato GGUF permite servir el modelo con llama.cpp o llama-server, integrandolo en aplicaciones existentes mediante una API compatible con OpenAI.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye doce niveles de cuantizacion distintos, lo que permite medir el impacto de la compresion en la calidad de las respuestas para un mismo modelo base.
-- Prototipado de asistentes conversacionales: la etiqueta "conversational" sugiere su uso en prototipos de chatbots, siempre que se valide previamente la calidad del modelo base.
-- Pruebas de integracion con Ollama u otros runners GGUF: al estar en formato GGUF, puede importarse en herramientas de inferencia local para validar flujos de trabajo antes de pasar a produccion.
-- Investigacion sobre modelos orientados a agentes: si se confirma la naturaleza del modelo base (agente y critica), podria emplearse en entornos de simulacion para evaluar trayectorias de agentes, aunque esta aplicacion requiere validacion empirica.
+- Verificacion de acciones en bucles de control robotico: el modelo puede actuar como critico que evalua cada accion propuesta por un planificador antes de su ejecucion, usando la observacion visual del entorno y la descripcion de la accion para emitir un juicio de viabilidad. Es adecuado por su especializacion declarada en robot-action-evaluation.
+- Evaluacion offline de trayectorias y politicas: en fase de desarrollo, se pueden pasar secuencias de observaciones y acciones a un modelo para obtener criticas que ayuden a depurar politicas de aprendizaje por refuerzo o imitacion.
+- Generacion de datos de preferencia para RLHF en robotica: las criticas del modelo pueden utilizarse como senal de recompensa o para construir pares de acciones preferidas/no preferidas en entrenamiento de agentes.
+- Monitorizacion de seguridad en entornos industriales: integrado en un pipeline local con llama.cpp, el modelo puede revisar acciones antes de su envio a un brazo robotico, actuando como capa de validacion semantica.
+- Asistencia a operadores humanos: dado su caracter conversacional y multimodal, puede emplearse para explicar por que una accion propuesta es adecuada o no, a partir de imagenes del entorno y descripciones textuales.
+- Investigacion en agentes embodied: como componente de critica dentro de arquitecturas de agentes que combinan un modelo generador de acciones y un modelo evaluador, el modelo aporta una segunda opinion basada en evidencia visual.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_M (17,0 GB) permiten ejecutar el modelo en una unica GPU de 24 GB, lo que facilita su uso en estaciones de trabajo de laboratorio sin infraestructura de datacenter.
 
 ## Benchmarks y rendimiento
 
@@ -52,34 +55,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion; el repositorio ocupa 22,0 GB en total, pero cada cuantizacion individual pesa menos):
-  - Q2_K: en torno a 10-11 GB.
-  - Q3_K_M: en torno a 13-14 GB.
-  - Q4_K_M: en torno a 16-17 GB.
-  - Q5_K_M: en torno a 19-20 GB.
-  - Q8_0: en torno a 29-30 GB.
-  - F16: en torno a 55-56 GB.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Como referencia general para estos tamanos, Q4_K_M puede caber en GPUs consumer de 24 GB (RTX 3090, RTX 4090) y Q2_K en GPUs de 12-16 GB, aunque no hay datos oficiales que lo confirmen para este modelo.
-- Cabe en GPU consumer: probablemente si en cuantizaciones Q2_K a Q4_K_M en GPUs de 12-24 GB, sujeto a validacion empirica.
-- Opciones de despliegue: llama.cpp, llama-server, Ollama y cualquier runner compatible con GGUF. La etiqueta "endpoints_compatible" sugiere soporte para endpoints de Hugging Face.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~10,8 GB
+  - Q3_K_S: ~12,6 GB
+  - Q3_K_M: ~13,8 GB
+  - Q3_K_L: ~14,8 GB
+  - IQ4_XS: ~15,4 GB
+  - Q4_K_S: ~16,2 GB
+  - Q4_K_M: ~17,0 GB
+  - Q5_K_S: ~19,4 GB
+  - Q5_K_M: ~19,9 GB
+  - Q6_K: ~23,0 GB
+  - Q8_0: ~29,7 GB
+  - Adicionalmente, el proyector multimodal mmproj anade ~2,2 GB (Q8_0) o ~3,9 GB (f16).
+- GPU recomendadas: para Q8_0 se recomienda una GPU con 32 GB o mas (p. ej., A100 40 GB, H100). Para Q4_K_M, una RTX 4090 (24 GB) o A6000 (48 GB) es suficiente. Para Q2_K, una GPU de 16 GB (p. ej., RTX 4080) podria ser suficiente, aunque con margen ajustado.
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con cuantizaciones Q4_K_M o inferiores; en RTX 4080 (16 GB) solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (si se importa el GGUF), y potencialmente otros runners compatibles con GGUF. El tag "endpoints_compatible" sugiere despliegue via Hugging Face Endpoints. No se confirma soporte de vLLM o TGI para este formato.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni caracteristicas del modelo base que permitan una comparacion rigurosa con alternativas de la misma categoria.
+No se dispone de informacion sobre modelos comparables en la misma categoria (evaluacion de acciones roboticas multimodales) en las fuentes consultadas. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- La model card no especifica licencia, lo que impide confirmar si el uso comercial esta permitido. Es imprescindible consultar la licencia del modelo base en cx-cmu/AgentRoboCritic-Muse-Glimmer-30B antes de cualquier uso en produccion.
-- No hay informacion sobre sesgos conocidos, riesgo de alucinacion ni limitaciones de idioma.
-- La cuantizacion introduce perdida de precision respecto al modelo original; las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad, especialmente en tareas de razonamiento.
-- El repositorio no registra descargas ni "likes", por lo que no existe validacion de la comunidad sobre la fidelidad de la conversion.
-- No se detalla la longitud de contexto soportada, un dato critico para aplicaciones con documentos largos o dialogos extensos.
-- Al ser una redistribucion de un tercero, la calidad del modelo depende enteramente del modelo base de cx-cmu, sobre el que no se aporta documentacion en este repositorio.
-- No se confirma el soporte de tool calling ni de modo de razonamiento, capacidades que, de existir, requeririan validacion especifica.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: inherente a los modelos generativos; en un contexto de critica de acciones roboticas, una evaluacion erronea podria tener consecuencias fisicas, por lo que no debe usarse como unico mecanismo de seguridad.
+- Limitaciones de contexto o idioma: solo se declara soporte de ingles; la longitud de contexto no esta disponible, lo que impide garantizar el manejo de secuencias largas de observaciones.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, con obligacion de mantener el aviso de licencia y atribucion.
+- Caveats para produccion: el modelo es una cuantizacion estatica generada por un tercero (mradermacher); la calidad puede diferir del modelo original en safetensors, especialmente en cuantizaciones bajas (Q2_K, Q3_K). El tamano del repo (197,5 GB) implica descargas considerables si se quieren todas las variantes. La falta de documentacion sobre arquitectura y entrenamiento dificulta la evaluacion de su robustez en dominios distintos al declarado.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/AgentRoboCritic-Muse-Glimmer-30B-GGUF
 - Modelo base: https://huggingface.co/cx-cmu/AgentRoboCritic-Muse-Glimmer-30B
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/AgentRoboCritic-Muse-Glimmer-30B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#AgentRoboCritic-Muse-Glimmer-30B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

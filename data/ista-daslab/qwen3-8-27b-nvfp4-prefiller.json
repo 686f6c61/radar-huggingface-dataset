@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 40,
-  "downloads_30d": 393,
+  "downloads_30d": 358,
   "trending_score": 12,
   "parameters": 24350556160,
   "parameters_human": "24.35B",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Solutions de comptage individuel d’eau et de chauffage ... - ista",
-      "url": "https://www.ista.com/fr/",
-      "snippet": "Le 30 mars, à l'oc­ca­sion de l'édition 2026 de ChangeNOW, ista réunit les acteurs de l’eau pour une confé­rence dédiée à la maîtrise …"
-    },
-    {
-      "title": "Portail web ista",
-      "url": "https://www.ista.com/fr/portail-web/",
-      "snippet": "Accédez au portail web ista pour gérer facilement vos consommations d'énergie et accéder à vos données en ligne."
-    },
-    {
-      "title": "Portail client ista MonCompte",
-      "url": "https://portal.ista.com/fr/",
-      "snippet": "Contrôlez les consommations d’eau et de chauffage de votre parc, accédez à vos documents essentiels et consultez facilement vos …"
-    },
-    {
-      "title": "Mon espace ista : Suivez et maîtrisez vos consommations d'énergie",
-      "url": "https://monespaceista.fr/",
-      "snippet": "Pour commencer, nous avons besoin d'identifier votre logement. Pour cela, renseignez le numéro de série d'un de vos appareils ista …"
-    },
-    {
-      "title": "Seed Quality Testing Standards & Seed Health Testing | ISTA ...",
-      "url": "https://www.seedtest.org/",
-      "snippet": "The International Seed Testing Association, founded in 1924 during the 4th meet in Cambridge, UK, advances seed research, seed …"
-    }
-  ]
+  "sources": []
 }

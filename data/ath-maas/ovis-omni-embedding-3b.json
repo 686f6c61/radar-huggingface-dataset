@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 64,
-  "downloads_30d": 350,
+  "downloads_30d": 340,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Ath — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Ath",
-      "snippet": "La Maison Culturelle d'Ath est une ASBL gérée paritairement par des associations culturelles et des représentants des pouvoirs …"
-    },
-    {
-      "title": "ATH Asso | Nourrir l'excellence",
-      "url": "https://ath.asso.fr/",
-      "snippet": "Qui sommes-nous ? Notre fonctionnement Nos domaines d’intervention Nos cabinets membres Chiffres clés L’observatoire"
-    },
-    {
-      "title": "Ovis-Embedding: Pushing the Frontiers of Universal Omni-Modal ...",
-      "url": "https://arxiv.org/html/2609.25165v1",
-      "snippet": "vor 3 Tagen ... Figure 1: Ovis-Embedding performance across modalities. Ovis-Embedding-Omni-3B leads all six MMEB-v3 modality groups (left), while Ovis- ..."
-    },
-    {
-      "title": "Accueil — Ville d'Ath",
-      "url": "https://www.ath.be/",
-      "snippet": "Les 24 Heures à Pied d’Ath fêtent leur 50e édition Balade et découverte Du 19 09 au 20 09"
-    },
-    {
-      "title": "Office de Tourisme - Ville d'Ath",
-      "url": "https://www.ath.be/loisirs/tourisme/office-de-tourisme/office-de-tourisme",
-      "snippet": "Visiter Ath, c’est découvrir l’authenticité du folklore local, sentir l’âme des pierres ou encore profiter de la convivialité des …"
-    }
-  ]
+  "sources": []
 }

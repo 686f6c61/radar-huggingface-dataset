@@ -1,113 +1,123 @@
 # netprojects/Qwen3.8-27B-pi-adapted-MLX-8bit
 
 ## Resumen
-Qwen3.8-27B-pi-adapted-MLX-8bit es una compilación cuantizada a 8 bits del modelo Qwen3.8-27B (27.781 millones de parámetros) adaptada mediante LoRA con aprendizaje por refuerzo para funcionar como motor del agente de programación pi. La publica el usuario netprojects en Hugging Face, partiendo del adaptador harness-hub/Qwen3.8-27B-pi-adapted (revisión e786f84) fusionado sobre Qwen/Qwen3.8-27B (revisión 3756181). Está pensada para ejecución local en Apple Silicon mediante la librería MLX, con el codificador de visión y la capa MTP de Qwen incluidas.
 
-El modelo resuelve el problema de desplegar un agente de ingeniería de software capaz de operar en terminal y resolver tareas de reparación de código sobre hardware de Apple, sin depender de servicios en la nube. La adaptación con RL (AsyncGRPO en TRL) mejora de forma notable los resultados del modelo base en Terminal-Bench 2.1 (39,5% a 55,8%) y SWE-bench Pro hard 51 (29,4% a 62,7%), con entre un 55% y un 64% menos de llamadas a herramientas por tarea.
+Qwen3.8-27B-pi-adapted-MLX-8bit es una compilacion cuantizada a 8 bits del modelo Qwen3.8-27B de Alibaba Qwen, adaptado mediante LoRA por harness-hub para funcionar como el motor del agente de programacion pi. netprojects ha fusionado el adaptador en los pesos base, ha incluido el codificador de vision y la capa de prediccion multi-token (MTP) originales, y ha convertido el conjunto al formato MLX para su ejecucion nativa en Apple Silicon. El resultado es un modelo multimodal de 27.781.427.952 parametros (aproximadamente 27,8 mil millones) empaquetado en 30,0 GB, con licencia Apache 2.0.
 
-Esta compilación concreta cuantiza las capas lineales a 8 bits afines con grupo de 64, ocupa 30,0 GB y conserva el 99,1% de coincidencia en el siguiente token respecto a bf16, con una divergencia KL de solo 0,0004. Es la variante más fiel al modelo original dentro de la familia MLX publicada, por delante de las versiones de 6 y 4 bits.
+El interes de esta version concreta reside en dos frentes. Por un lado, el adaptador de harness-hub se entreno con aprendizaje por refuerzo (AsyncGRPO sobre TRL) especificamente para tareas de ingenieria de software y terminal, con mejoras publicadas de Terminal-Bench 2.1 del 39,5 % al 55,8 % y de SWE-bench Pro (hard 51) del 29,4 % al 62,7 % frente al modelo base, reduciendo ademas las llamadas a herramientas entre un 55 % y un 64 %. Por otro, la cuantizacion 8-bit de netprojects preserva el 99,1 % de los siguientes tokens del modelo bf16 con una divergencia KL de solo 0,0004, lo que la convierte en la opcion mas fiel de la familia MLX publicada.
+
+La relevancia actual es doble: demuestra que un modelo de casi 28 mil millones de parametros puede ejecutarse en un Mac de gama alta con perdida de calidad practicamente nula, y valida la estrategia de especializar modelos abiertos mediante RL para agentes de codigo, un patron que esta ganando traccion frente al ajuste supervisado clasico. La integracion del cabezal MTP permite ademas acelerar la decodificacion aproximadamente 2,2 veces sin descargas adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.8-27B) con capa de predicción multi-token (MTP), adaptada mediante LoRA y fusionada; conversión MLX con mlx-vlm |
+| Arquitectura | Transformer multimodal (Qwen3.8-27B) con capa MTP; cuantizacion affine MLX de 8 bits, grupo 64 |
 | Parametros totales | 27.781.427.952 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits afín (affine), grupo de 64, en capas lineales; capa MTP cuantizada de forma equivalente |
+| Tipos de cuantizacion | 8 bits (esta build); la familia incluye 6, 4, 3, 2,5 bits y bf16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX), con model-mtp.safetensors para la capa MTP |
+| Formato de pesos | safetensors (MLX), mas `model-mtp.safetensors` para el cabezal MTP |
 
 ## Arquitectura y entrenamiento
-El modelo parte de Qwen3.8-27B, un transformer de 27.781 millones de parámetros con 64 capas, de las cuales 16 son de atención completa (según la descripción del proceso de fusión: módulos q, k, v, o en las 16 capas de atención completa y gate, up, down en las 64 capas). Incluye un codificador de visión, ya que la pipeline declarada es image-text-to-text, y una capa propia de predicción multi-token (MTP) que actúa como modelo borrador para decodificación especulativa.
 
-El adaptador harness-hub/Qwen3.8-27B-pi-adapted se entrenó con aprendizaje por refuerzo mediante AsyncGRPO en TRL, orientado a tareas de ingeniería de software y terminal dentro del agente pi. La fusión LoRA afecta a 256 módulos y se verificó elemento a elemento contra un cálculo independiente en float64, comprobando que cada tensor equivale a W + 2,0 · B @ A redondeado a bf16. La conversión a MLX se realizó con mlx-vlm, incluyendo el codificador de visión y la capa MTP, y en esta compilación las capas lineales se cuantizan a 8 bits afines con grupo de 64. El tokenizador y la plantilla de chat son los de harness-hub sin cambios, con el mismo vocabulario y formato de llamadas a herramientas que Qwen3.8-27B.
+La base es Qwen3.8-27B, un transformer multimodal con codificador de vision, del que esta build conserva tanto el encoder visual como la capa de prediccion multi-token (MTP) original de Qwen, cuantizada de forma coherente con el resto del modelo. Sobre esa base, harness-hub entreno un adaptador LoRA mediante aprendizaje por refuerzo con AsyncGRPO en TRL, orientado a tareas de ingenieria de software y uso de terminal como las que ejecuta el agente pi. netprojects fusiono ese adaptador (revision `e786f84`) en los pesos base (revision `3756181`) y convirtio el conjunto con mlx-vlm. El tokenizador y la plantilla de chat son los de harness-hub sin modificar, de modo que el vocabulario y el formato de llamadas a herramientas coinciden con Qwen3.8-27B.
+
+La innovacion tecnica mas destacable es la conservacion del cabezal MTP como modelo borrador integrado: al pasar el mismo repositorio como `--draft-model` con `--draft-kind mtp`, mlx-vlm lo emplea para decodificacion especulativa, verificando cada token propuesto con el modelo completo. En esta build de 8 bits la decodificacion pasa de 18 a 41 tok/s (x2,24) en las mediciones del autor, y el drafter DSpine v0.2.1 alcanza 54 tok/s (x3,05). Los datos de entrenamiento concretos (numero de tokens, composicion del dataset) no se detallan en la informacion disponible; la model card remite a la del adaptador original para el metodo y los datos completos.
 
 ## Capacidades
-- Generación de texto y razonamiento en tareas de ingeniería de software y operación de terminal.
-- Ejecución de tareas de coding agent: localización de fallos en tests, diagnóstico y corrección de bugs.
+
+- Generacion de texto y razonamiento general, heredados de Qwen3.8-27B.
+- Generacion y reparacion de codigo, con especial enfasis en tareas de ingenieria de software reales (resolucion de bugs, parches, pruebas).
+- Operacion de terminal y ejecucion de comandos como agente, con reduccion de llamadas a herramientas frente al modelo base.
 - Llamadas a herramientas en formato XML de Qwen (`<tool_call><function=...><parameter=...>`), que el servidor de mlx-lm expone como `tool_calls` de OpenAI.
-- Razonamiento multi-paso con uso de herramientas, optimizado para reducir el número de llamadas por tarea (55-64% menos que el modelo base).
-- Procesamiento de imágenes (image-text-to-text): interpretación de capturas de pantalla, por ejemplo de una terminal, mediante mlx-vlm.
-- Modo thinking desactivable; el adaptador fue entrenado y evaluado con thinking desactivado y se recomienda mantenerlo así.
-- Decodificación especulativa integrada mediante la capa MTP de Qwen, con aceleración de aproximadamente 2,2× sin descarga adicional.
-- Compatibilidad con el drafter DSpine (netprojects/Qwen3.8-27B-DSpine-b16-MLX) a través de dspine-hybrid-mlx.
+- Razonamiento multi-paso orientado a agentes, evaluado con el agente pi.
+- Procesamiento de imagenes (pipeline image-text-to-text): capturas de terminal, diagramas y otro contenido visual, mediante mlx-vlm.
+- Modo de pensamiento (thinking) disponible pero desaconsejado: el adaptador se entreno y evaluo con thinking desactivado.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
-- Reparación automática de tests en CI: el modelo puede recibir el fallo de `tests/test_parser.py`, inspeccionar el código y aplicar la corrección, aprovechando su entrenamiento específico en SWE-bench Pro y Terminal-Bench.
-- Agente de terminal local en macOS: desplegado con `mlx_lm.server` y conectado a pi mediante la API OpenAI-compatible, permite automatizar tareas de shell en un MacBook sin enviar código a la nube.
-- Asistente de depuración con capturas de pantalla: usando mlx-vlm, el modelo interpreta una imagen de terminal y responde qué error muestra, útil para soporte técnico remoto.
-- Generación de código en Python desde lenguaje natural: por ejemplo, convertir expresiones como "1.5M" en bytes, con plantilla de chat y thinking desactivado para respuestas directas.
-- Integración en pipelines de agentes con tool calling: el formato XML de Qwen y su exposición como `tool_calls` de OpenAI permiten encadenar herramientas en flujos multi-paso con menos llamadas por tarea.
-- Evaluación e investigación en Apple Silicon: sirve como banco de pruebas para medir fidelidad de cuantización (99,1% de coincidencia con bf16) y aceleración por decodificación especulativa en MLX.
-- Despliegue de un agente de programación en local para equipos con hardware Apple de gama alta, manteniendo los datos en el dispositivo.
+
+- Agente de codigo local en macOS: servir el modelo con `mlx_lm.server` y conectarlo a pi mediante la API OpenAI-compatible (`openai-completions`), de modo que el desarrollador resuelva tareas de reparacion de tests y bugs sin enviar codigo a la nube. Es adecuado porque el adaptador se entreno exactamente para ese bucle de agente.
+- Automatizacion de terminal y diagnostico de errores: dado un volcado o una captura de pantalla de una terminal, el modelo identifica el fallo y propone el comando o parche correctivo, gracias al codificador de vision y a su entrenamiento en tareas de terminal.
+- Integracion en pipelines de CI/CD: el modelo puede invocarse desde scripts para triage de fallos de build, generacion de parches candidatos o resumen de errores, con tool calling en formato OpenAI que encaja en orquestadores existentes.
+- Asistente de refactorizacion en el IDE: con 27,8 mil millones de parametros y la fidelidad del 8-bit, puede sostener conversaciones multi-turno sobre un repositorio y proponer cambios coherentes con el contexto del proyecto.
+- Prototipado de agentes de investigacion: la decodificacion especulativa con MTP (hasta 41 tok/s en esta build) permite iterar rapidamente sobre prompts y flujos de agente en local antes de desplegar en infraestructura mayor.
+- Evaluacion comparativa de cuantizaciones: al existir builds de 2,5 a 8 bits con metricas de fidelidad publicadas (99,1 % de coincidencia y KL 0,0004 en 8 bits frente a 85,5 % y KL 0,2363 en 2,5 bits), sirve para estudiar el compromiso tamano-calidad en despliegues de Apple Silicon.
+- Analisis de capturas y documentacion tecnica: la entrada image-text-to-text permite extraer informacion de diagramas de arquitectura o pantallas de error y convertirla en texto accionable.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por harness-hub para el adaptador, bajo pi con thinking desactivado, frente al modelo base:
+Resultados publicados por harness-hub para el adaptador, evaluados bajo el agente pi con thinking desactivado:
 
-| Benchmark | Modelo base | Adaptador pi | Mejora |
+| Benchmark | Modelo base | Con adaptador pi |
+|---|---|---|
+| Terminal-Bench 2.1 | 39,5 % | 55,8 % |
+| SWE-bench Pro (hard 51) | 29,4 % | 62,7 % |
+
+Fidelidad de la cuantizacion frente a bf16 (datos del autor):
+
+| Build | Tamano | Coincidencia de siguiente token | KL vs bf16 |
 |---|---|---|---|
-| Terminal-Bench 2.1 | 39,5% | 55,8% | +16,3 puntos |
-| SWE-bench Pro (hard 51) | 29,4% | 62,7% | +33,3 puntos |
+| 8-bit | 30,0 GB | 99,1 % | 0,0004 |
+| 6-bit | 23,1 GB | 99,0 % | 0,0015 |
+| 4-bit | 16,3 GB | 95,6 % | 0,0201 |
+| 3-bit | 13,8 GB | 91,4 % | 0,0884 |
+| 2,5-bit | 11,8 GB | 85,5 % | 0,2363 |
 
-Fidelidad de cuantización respecto a bf16, medida por el autor de la compilación:
+Rendimiento de decodificacion (greedy, thinking off, 5 prompts x 256 tokens de GSM8K, MATH-500, HumanEval, MBPP y MT-Bench; mediciones indicativas con otros servicios en ejecucion):
 
-| Build | Tamano | Coincidencia siguiente token vs bf16 | KL vs bf16 |
+| Build | Sin aceleracion | MTP (mlx-vlm 0.7.11) | DSpine v0.2.1 (drafter 4-bit, bloque 5) |
 |---|---|---|---|
-| 6 bits (recomendado) | 23,1 GB | 99,0% | 0,0015 |
-| 8 bits (esta ficha) | 30,0 GB | 99,1% | 0,0004 |
-| 4 bits | 16,3 GB | 95,6% | 0,0201 |
-| bf16 | 55,6 GB | referencia | referencia |
+| 4-bit | 33 tok/s | 61 tok/s (x1,84) | 70 tok/s (x2,25) |
+| 6-bit | 23 tok/s | 22 tok/s (x0,96) | 52 tok/s (x2,32) |
+| 8-bit | 18 tok/s | 41 tok/s (x2,24) | 54 tok/s (x3,05) |
 
-Rendimiento de decodificación medido en un MacBook Pro M5 Max de 128 GB (greedy, thinking off, 5 prompts × 256 tokens de GSM8K, MATH-500, HumanEval, MBPP y MT-Bench; mediciones indicativas con otros servicios en ejecución):
-
-| Build | Plano | MTP (mlx-vlm 0.7.11) | DSpine v0.2.1 (drafter 4 bits, bloque 5) |
-|---|---|---|---|
-| 4 bits | 33 tok/s | 61 tok/s (×1,84) | 70 tok/s (×2,25) |
-| 6 bits | 23 tok/s | 22 tok/s (×0,96) | 52 tok/s (×2,32) |
-| 8 bits | 18 tok/s | 41 tok/s (×2,24) | 54 tok/s (×3,05) |
+No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM/unified memory estimada: el repositorio ocupa 30,0 GB, por lo que se necesita al menos esa cantidad de memoria unificada más el espacio para el contexto y el codificador de visión; en la práctica, 36-48 GB o más para trabajar con comodidad.
-- GPU recomendadas: Apple Silicon con memoria unificada amplia; las mediciones se realizaron en un MacBook Pro M5 Max de 128 GB.
-- Compatibilidad con GPU de consumo: al ser un build MLX, está orientado a Apple Silicon; no se indica soporte para GPU NVIDIA ni AMD en esta compilación.
-- Opciones de despliegue: `mlx_lm.server` (servidor compatible con OpenAI, mlx-lm >= 0.32.2) para texto; `mlx_vlm.generate` (mlx-vlm >= 0.7.11) para imagen y texto; integración con el agente pi mediante `~/.pi/agent/models.json` con `"api": "openai-completions"`.
-- Aceleración: MTP integrado con `--draft-model` apuntando al mismo repositorio y `--draft-kind mtp` (aproximadamente 2,2× en este build, 18 a 41 tok/s); DSpine con dspine-hybrid-mlx alcanza 54 tok/s (×3,05).
-- Latencia y throughput: 18 tok/s en decodificación plana y 41 tok/s con MTP en el hardware citado; no se dispone de datos para otro hardware.
+
+- VRAM o memoria unificada estimada: 30,0 GB de pesos en 8 bits, mas overhead de contexto y del codificador de vision; en la practica requiere un Mac con 36 GB o mas de memoria unificada.
+- GPU recomendadas: Apple Silicon de gama alta (familias M3/M4 Max y Ultra). No es compatible con CUDA ni con GPU discretas convencionales por el formato MLX.
+- Cabe en GPU de consumo: si, en Macs con memoria unificada suficiente; las builds de 3 y 2,5 bits estan pensadas para Macs de 24 GB.
+- Opciones de despliegue: `mlx_lm.server` (API OpenAI-compatible, version >= 0.32.2), `mlx-vlm` (>= 0.7.11) para entrada de imagen, y el agente pi apuntando a `http://localhost:8000/v1`.
+- Latencia y throughput: 18 tok/s en decodificacion simple para 8 bits, 41 tok/s con MTP y 54 tok/s con DSpine; la build de 6 bits es la recomendada por equilibrio tamano-fidelidad y la de 4 bits alcanza 33 tok/s en simple.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| netprojects/Qwen3.8-27B-pi-adapted-MLX-8bit | 27,78 B | no disponible | 8 bits MLX | Apache 2.0 | Hugging Face |
-| netprojects/Qwen3.8-27B-pi-adapted-MLX-6bit | 27,78 B | no disponible | 6 bits MLX | Apache 2.0 | Hugging Face |
-| netprojects/Qwen3.8-27B-pi-adapted-MLX-4bit | 27,78 B | no disponible | 4 bits MLX | Apache 2.0 | Hugging Face |
-| netprojects/Qwen3.8-27B-pi-adapted-MLX-bf16 | 27,78 B | no disponible | bf16 | Apache 2.0 | Hugging Face |
-| harness-hub/Qwen3.8-27B-pi-adapted | 27,78 B | no disponible | adaptador LoRA (638 MB en versión MLX) | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3.8-27B | 27,78 B | no disponible | bf16 | no disponible en la información | Hugging Face |
+| netprojects/Qwen3.8-27B-pi-adapted-MLX-8bit | 27,8 mil millones | no disponible | Apache 2.0 | Hugging Face, MLX | 99,1 % de fidelidad vs bf16; 41 tok/s con MTP |
+| netprojects/Qwen3.8-27B-pi-adapted-MLX-6bit | 27,8 mil millones | no disponible | Apache 2.0 | Hugging Face, MLX | 23,1 GB, recomendada por el autor; 99,0 % de fidelidad |
+| netprojects/Qwen3.8-27B-pi-adapted-MLX-4bit | 27,8 mil millones | no disponible | Apache 2.0 | Hugging Face, MLX | 16,3 GB, 95,6 % de fidelidad; 33 tok/s en simple |
+| harness-hub/Qwen3.8-27B-pi-adapted | 27,8 mil millones | no disponible | Apache 2.0 | Hugging Face | Adaptador original sin cuantizar, referencia de calidad |
 
-No se dispone de datos de benchmarks de modelos alternativos de otros autores en la información proporcionada; la comparación se limita a las variantes de cuantización y al modelo base de la misma familia.
+No se dispone de datos de benchmarks de modelos de terceros en la informacion proporcionada para una comparacion cruzada.
 
 ## Limitaciones y advertencias
-- El adaptador fue entrenado y evaluado con thinking desactivado; activarlo puede degradar el comportamiento esperado y no se ha validado en ese modo.
-- El formato de API importa: debe usarse Chat Completions (`"api": "openai-completions"`), no la Responses API, porque el adaptador se entrenó y evaluó con la primera.
-- La decodificación especulativa con MTP o DSpine puede divergir ligeramente del texto plano en respuestas largas cuando hay casi empates en la comprobación por lotes, aunque en modo greedy el texto coincide hasta ese punto.
-- La cuantización a 8 bits conserva el 99,1% de coincidencia con bf16, pero no es idéntica; para máxima fidelidad existe el build bf16 de 55,6 GB.
-- Las mediciones de rendimiento son indicativas y se tomaron con otros servicios en ejecución en el mismo equipo; no deben extrapolarse sin cautela.
-- No se especifican sesgos conocidos, composición del dataset de entrenamiento ni idiomas soportados más allá de lo indicado; la model card no los detalla.
-- Riesgo de alucinación inherente a los modelos de lenguaje; en tareas de código conviene verificar las modificaciones propuestas antes de aplicarlas en producción.
-- Licencia Apache 2.0, que permite uso comercial, pero el modelo base Qwen3.8-27B y el adaptador deben revisarse por si añaden condiciones adicionales no recogidas en la información disponible.
-- El modelo está orientado a Apple Silicon; no se documenta soporte para otras plataformas en esta compilación.
+
+- El adaptador se entreno y evaluo con thinking desactivado; activar el modo de pensamiento puede degradar el comportamiento esperado.
+- La API de referencia es Chat Completions (`openai-completions`), no la API Responses; usar esta ultima puede romper el formato de llamadas a herramientas.
+- La decodificacion especulativa con MTP puede divergir del texto de la decodificacion simple en empates cercanos, ya que la verificacion por lotes puede redondear en sentido contrario.
+- Las mediciones de throughput son indicativas: se tomaron con otros servicios en ejecucion en el mismo Mac.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, agravado en tareas de agente donde una accion erronea puede modificar archivos o ejecutar comandos no deseados; se recomienda supervision y entornos aislados.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Limitaciones de contexto e idioma: no disponibles en la informacion proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B y del adaptador original.
+- Dependencia exclusiva de Apple Silicon y de la libreria MLX; no hay soporte para CUDA, vLLM ni llama.cpp en este repositorio.
+- La build de 8 bits ocupa 30,0 GB, lo que excluye Macs con menos de 36 GB de memoria unificada.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-8bit
-- Modelo base del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Build de 6 bits (recomendado): https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-6bit
+- Adaptador original: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Build de 6 bits (recomendada): https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-6bit
 - Build de 4 bits: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-4bit
+- Build de 3 bits: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-3bit
+- Build de 2,5 bits: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-2.5bit
 - Build bf16: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-bf16
 - Adaptador LoRA MLX: https://huggingface.co/netprojects/Qwen3.8-27B-pi-adapted-MLX-adapter
 - Drafter DSpine: https://huggingface.co/netprojects/Qwen3.8-27B-DSpine-b16-MLX

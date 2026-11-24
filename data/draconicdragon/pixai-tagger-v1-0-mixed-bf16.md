@@ -2,59 +2,52 @@
 
 ## Resumen
 
-DraconicDragon/pixai-tagger-v1.0-mixed-bf16 es una conversion a precision mixta BF16 del modelo pixai-labs/pixai-tagger-v1.0, publicado por el usuario DraconicDragon. Se trata de un clasificador de imagen multi-etiqueta especializado en el etiquetado automatico de ilustraciones de estilo anime con tags al estilo Danbooru. El modelo base fue desarrollado por PixAI Labs y su pipeline declarado es image-classification, con la libreria transformers y codigo personalizado (custom_code) que obliga a usar trust_remote_code al cargarlo.
+pixai-tagger-v1.0-mixed-bf16 es una conversion a precision mixta BF16 del modelo pixai-labs/pixai-tagger-v1.0, un etiquetador (tagger) de imagenes de anime orientado a la clasificacion multi-etiqueta. Lo publica el usuario DraconicDragon en Hugging Face y esta pensado como sustituto directo del checkpoint original, manteniendo la misma arquitectura y logica de inferencia pero reduciendo el peso en disco y memoria al almacenar en BF16 la mayor parte de los tensores.
 
-Tecnicamente es un transformer de vision de aproximadamente 486 millones de parametros (486.346.909 segun los pesos safetensors del repositorio), con una arquitectura que los metadatos etiquetan como cls_vitdet y que aparece asociada al termino sam3 en las etiquetas del repositorio. La unica modificacion declarada por el autor de esta conversion es que los tensores de la cabeza (head.*) se mantienen en FP32 mientras el resto del modelo se guarda en BF16, con un pequeno ajuste en tagger_pipeline.py para convertir la entrada al tipo de dato del peso de la cabeza y evitar desajustes cuando autocast esta desactivado.
+El modelo se apoya en una arquitectura `cls_vitdet` (un backbone tipo Vision Transformer Detector adaptado a clasificacion) con 486.346.909 parametros totales y un repositorio de aproximadamente 1 GB. Su tarea es extraer etiquetas tipo Danbooru de una imagen: personajes, ropa, expresiones, composicion, estilo y demas vocabulario propio de ilustracion anime. Esto lo hace util como componente de preprocesado en pipelines de generacion de imagenes, curado de datasets y busqueda por contenido.
 
-Su relevancia practica es acotada pero clara: el etiquetado automatico es una pieza critica en la preparacion de datasets para entrenamiento de modelos de difusion (LoRA, DreamBooth, fine-tuning de text-to-image) y en la gestion de galerias de ilustracion. Esta version reduce el peso del modelo a aproximadamente 1 GB en disco frente a un equivalente en FP32, lo que facilita su despliegue en GPU de gama media o incluso en CPU.
+La relevancia de esta version concreta es practica: al ser una conversion cuantizada del modelo base bajo licencia Apache 2.0, permite desplegar el tagger en entornos con menos VRAM y con menor coste de almacenamiento, sin cambiar el codigo de integracion mas alla de ajustar el casting de tipos. La model card advierte de un cambio de dos lineas en `tagger_pipeline.py` para castear la entrada al dtype del peso de la cabeza, evitando desajustes cuando `autocast` esta desactivado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de vision para clasificacion de imagen; metadatos con la etiqueta cls_vitdet y referencia sam3 (detalles no disponibles) |
-| Parametros totales | 486.346.909 (aproximadamente 486 M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (modelo de clasificacion de imagen; resolucion de entrada no especificada) |
-| Tipos de cuantizacion | BF16 en precision mixta (cabeza head.* en FP32); no se documentan otras cuantizaciones |
-| Idiomas soportados | No disponible; el vocabulario de salida son etiquetas tipo Danbooru, mayoritariamente en ingles |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (BF16 con tensores de cabeza en FP32); requiere codigo personalizado del repositorio |
-| Tamano del repositorio | 1.0 GB |
-| Pipeline declarado | image-classification |
-| Libreria | transformers (con custom_code) |
-| Modelo base | pixai-labs/pixai-tagger-v1.0 (relacion: quantized) |
-| Fecha de creacion | 2026-09-19 (segun metadatos de Hugging Face) |
-| Descargas / likes | 0 / 0 |
-| Region | us |
+| Arquitectura | cls_vitdet (backbone ViTDet adaptado a clasificacion multi-etiqueta) |
+| Parametros totales | 486.346.909 |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (modelo de vision, no de texto) |
+| Tipos de cuantizacion | BF16 en precision mixta; tensores `head.*` en FP32 |
+| Idiomas soportados | no disponible (las etiquetas de salida son vocabulario Danbooru, predominantemente en ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna ni sobre el proceso de entrenamiento. Los metadatos del repositorio indican un modelo de vision para clasificacion con etiqueta cls_vitdet y hacen referencia a sam3, lo que apunta a un backbone de tipo Vision Transformer con una cabeza de clasificacion multi-etiqueta, pero no se confirma ni la resolucion de entrada, ni el numero de capas, ni la dimensionalidad del espacio de caracteristicas. El numero de parametros del repositorio (486.346.909) es un dato real extraido de los pesos safetensors.
+La arquitectura indicada en los metadatos es `cls_vitdet`, es decir, un backbone de la familia ViTDet reutilizado como cabecera de clasificacion multi-etiqueta en lugar de deteccion. El modelo produce simultaneamente multiples etiquetas por imagen, con una cabeza (`head.*`) que en esta conversion se mantiene en FP32 mientras el resto del cuerpo se almacena en BF16. Esa mezcla de precisiones busca conservar la estabilidad numerica de la capa final de clasificacion, que suele ser la mas sensible a la perdida de rango dinamico.
 
-Lo unico documentado por el autor de esta ficha es el proceso de conversion: se mantiene el modelo completo en BF16 mientras que los tensores de la cabeza se conservan en FP32, y se incluye una modificacion de dos lineas en tagger_pipeline.py (en el ultimo def forward(self, x)) que castea la entrada x al dtype del peso de la cabeza. No hay informacion sobre el dataset de entrenamiento del modelo original, el numero de tokens o imagenes vistas, ni sobre si se aplicaron tecnicas de ajuste como RLHF o DPO (poco habituales en un tagger).
+No se dispone de informacion sobre el numero de tokens o imagenes de entrenamiento, la composicion exacta del dataset, ni si se aplicaron fases de ajuste fino con RLHF o DPO (tecnicas, por otra parte, poco habituales en taggers de vision). El vocabulario de etiquetas se asocia a Danbooru y a la convencion de anotacion de ilustracion anime. La innovacion tecnica de esta publicacion no esta en la arquitectura, sino en la conversion: reduccion a BF16 con preservacion de la cabeza en FP32 y un parche minimo en `tagger_pipeline.py` que castea la entrada `x` al dtype del peso de la cabeza, lo que evita errores de tipo cuando se desactiva `autocast`.
 
 ## Capacidades
 
-- Etiquetado multi-etiqueta de imagenes: asigna simultaneamente varias etiquetas a una misma imagen, en el estilo de vocabulario de Danbooru.
-- Dominio especializado en ilustracion anime: las etiquetas del repositorio (anime, tagger, danbooru) delimitan el caso de uso previsto.
-- Extraccion de caracteristicas: el repositorio incluye la etiqueta feature-extraction ademas de image-classification, por lo que puede emplearse para obtener representaciones de imagen.
-- Clasificacion de imagen como tarea principal declarada en el pipeline de Hugging Face, con salida multi-label.
-- Inferencia en BF16 con cabeza en FP32, lo que permite ejecucion en precision reducida sin perder la precision numerica de la capa de clasificacion.
-- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no es un modelo generativo de texto).
-- Capacidades multilingues, vision generativa, audio o modo de razonamiento explicito: no disponibles; se limita a entrada de imagen y salida de etiquetas.
+- Clasificacion multi-etiqueta de imagenes: devuelve un conjunto de etiquetas por imagen en lugar de una sola clase.
+- Etiquetado de ilustracion anime con vocabulario tipo Danbooru: personajes, ropa, accesorios, expresiones, encuadre y estilo.
+- Extraccion de caracteristicas (`feature-extraction`) ademas de la clasificacion, segun los tags del repositorio.
+- Integracion nativa con la libreria transformers mediante `tagger_pipeline.py`.
+- Inferencia en BF16 con cabeza en FP32, lo que permite ejecutar en GPUs con soporte de bfloat16.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues de texto: no disponible (modelo de vision).
+- Capacidades especiales de vision, audio o modo thinking: solo vision, en la forma de etiquetado de imagenes.
 
 ## Casos de uso
 
-- Preparacion de datasets para entrenamiento de LoRA y DreamBooth: el modelo etiqueta lotes de ilustraciones anime de forma automatica, generando los tags que se usaran como descripciones de entrenamiento. Sus 486 M de parametros y su peso de 1 GB en BF16 permiten procesar miles de imagenes en una sola GPU consumer.
-- Auto-etiquetado en galerias de arte y plataformas de ilustracion: cada imagen subida se clasifica al momento para generar metadatos de busqueda sin intervencion manual, aprovechando la salida multi-etiqueta para poblar indices de busqueda por personaje, estilo o escena.
-- Filtrado y moderacion de contenido: la salida multi-etiqueta permite detectar categorias concretas del vocabulario Danbooru y aplicar reglas de visibilidad o de marcado de contenido sensible antes de publicar.
-- Busqueda y recuperacion de imagenes: las etiquetas generadas alimentan un motor de busqueda interno (por ejemplo, con un indice invertido de tags) para localizar ilustraciones por atributos concretos sin depender de metadatos manuales.
-- Preprocesado en pipelines de imagen a prompt: integrado como primer paso de una cadena que convierte una imagen en un prompt de texto, aportando los tags que despues se reformularan como descripcion.
-- Curacion y control de calidad de datasets: comparar las etiquetas predichas con las etiquetas existentes permite detectar imagenes mal etiquetadas, duplicados casi identicos por similitud de tags o clases infrarrepresentadas antes de un entrenamiento.
-- Analitica de tendencias: el recuento agregado de etiquetas sobre un corpus grande de imagenes permite medir la frecuencia de personajes, estilos o caracteristicas a lo largo del tiempo en una plataforma.
-- Despliegue en herramientas de interfaz grafica para artistas: extensiones de auto-tagging que funcionan en local (ComfyUI u otras) y que se benefician de un modelo de menos de 2 GB en memoria.
+- Curado y limpieza de datasets de anime: pasar un corpus de imagenes por el tagger para obtener etiquetas normalizadas, detectar duplicados conceptuales y filtrar por atributos como personaje, ropa o composicion antes de entrenar modelos generativos.
+- Preprocesado en pipelines de generacion texto-a-imagen: usar las etiquetas extraidas para construir prompts enriquecidos o para validar que la imagen generada contiene los atributos solicitados, cerrando un bucle de control de calidad.
+- Busqueda y recuperacion por contenido: indexar una biblioteca de ilustraciones con las etiquetas de salida y habilitar busquedas por atributos visuales concretos sin depender de metadatos manuales.
+- Moderacion y clasificacion de contenido: identificar categorias sensibles o atributos especificos en grandes volumenes de imagenes antes de su publicacion, aprovechando la salida multi-etiqueta.
+- Automatizacion de catalogacion en plataformas de arte: generar metadatos iniciales para cada subida, que luego un humano revisa, reduciendo el coste de anotacion manual.
+- Entrenamiento de modelos auxiliares: emplear las etiquetas como pseudo-etiquetas para destilar un clasificador mas ligero o para aumentar un dataset escasamente anotado.
+- Despliegue en hardware modesto: al estar en BF16 y ocupar alrededor de 1 GB, puede ejecutarse en GPUs de consumo con soporte bfloat16 para procesar lotes pequenos o medianos.
 
 ## Benchmarks y rendimiento
 
@@ -62,38 +55,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos (calculada a partir de 486.346.909 parametros): aproximadamente 1,0 GB en BF16, aproximadamente 1,95 GB en FP32, aproximadamente 0,49 GB en INT8 y aproximadamente 0,24 GB en INT4. La memoria para activaciones depende de la resolucion de entrada y del tamano de lote, datos no disponibles.
-- La VRAM total de inferencia sera superior a la de los pesos debido a activaciones y buffers; no se dispone de mediciones publicadas.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente en la practica para los pesos en BF16 y lotes pequenos; una RTX 3060 de 12 GB o una RTX 4090 permiten lotes grandes y mayor throughput; A100 o H100 no son necesarias para este tamano de modelo y solo se justifican para procesado masivo por lotes.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna (por ejemplo, GTX 1650 4 GB, RTX 3060, RTX 4060, RTX 4090) e incluso en CPU, dado que el modelo ronda 1 GB en BF16.
-- Opciones de despliegue: transformers con trust_remote_code=True y el pipeline image-classification, usando el tagger_pipeline.py incluido en el repositorio. vLLM, TGI y llama.cpp no son aplicables a este tipo de modelo (no es un modelo de lenguaje). El soporte de ONNX, TensorRT o torch.compile no esta documentado.
-- Latencia y throughput estimados: no disponibles; no se publican mediciones.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 486 millones de parametros en BF16, los pesos ocupan aproximadamente 1 GB, por lo que la VRAM total dependera del tamano de lote y de la resolucion de entrada.
+- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, encaja en GPUs con soporte bfloat16 como RTX 30xx/40xx, A100 o H100.
+- Cabe en GPU de consumo: previsiblemente si, dado el tamano del checkpoint (aproximadamente 1 GB en disco), aunque no se confirma en la documentacion.
+- Opciones de despliegue: transformers con el `tagger_pipeline.py` incluido en el repositorio; otros runners (vLLM, llama.cpp, Ollama, TGI) no estan documentados para este modelo.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DraconicDragon/pixai-tagger-v1.0-mixed-bf16 | 486.346.909 (dato real de safetensors) | No aplica / no disponible | No disponible | No disponible | Hugging Face, requiere custom_code |
-| pixai-labs/pixai-tagger-v1.0 (modelo base) | Mismo modelo, no disponible el recuento exacto en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
-| Otros taggers de anime (por ejemplo, familias WD14 o JoyTag) | No disponible | No disponible | No disponible | No disponible | No verificado en la informacion disponible |
+| DraconicDragon/pixai-tagger-v1.0-mixed-bf16 | 486.346.909 | no aplica (vision) | Etiquetado multi-etiqueta anime | Apache 2.0 | Hugging Face |
+| pixai-labs/pixai-tagger-v1.0 | no disponible | no aplica (vision) | Etiquetado multi-etiqueta anime | Apache 2.0 | Hugging Face (modelo base) |
+| WD Tagger (variantes Danbooru) | no disponible | no aplica (vision) | Etiquetado multi-etiqueta anime | no disponible | Hugging Face |
+| Otros taggers Danbooru de la comunidad | no disponible | no aplica (vision) | Etiquetado multi-etiqueta anime | variable | Hugging Face |
 
-No se dispone de datos verificados de benchmarks, licencia ni parametros de los modelos alternativos dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
+La comparacion cuantitativa con alternativas no esta disponible en la informacion proporcionada; la referencia directa mas fiable es el modelo base, del que esta publicacion es una conversion cuantizada con identica funcionalidad.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: sin una licencia declarada no es posible confirmar si se permite el uso comercial, la redistribucion o el uso para entrenar otros modelos. Conviene contactar con el autor del modelo base antes de cualquier uso en produccion.
-- Especializacion de dominio: el modelo esta orientado a ilustracion anime y a vocabulario Danbooru; su comportamiento fuera de ese dominio (fotografia, ilustracion no anime, imagenes medicas o tecnicas) no esta documentado y probablemente sea pobre.
-- Sesgos heredados del corpus de entrenamiento: los vocabularios Danbooru arrastran desequilibrios en cuanto a personajes, generos, estilos y contenido; el modelo puede sobrerrepresentar o infrarrepresentar ciertas categorias.
-- Riesgo de etiquetas espurias: al ser multi-etiqueta, puede producir falsos positivos que requieran umbrales de confianza ajustados por categoría.
-- Conversion no oficial: esta version BF16 la publica un tercero (DraconicDragon), no PixAI Labs. No hay garantia de paridad numerica con el modelo original en FP32; conviene validar la salida contra el modelo base antes de sustituirlo.
-- Ejecucion de codigo remoto: el repositorio usa custom_code, por lo que cargarlo implica ejecutar codigo del autor (trust_remote_code=True), con el riesgo de seguridad que ello conlleva.
-- Ausencia de validacion comunitaria: el repositorio registra 0 descargas y 0 likes, sin evidencia publica de uso o de calidad en produccion.
-- Idiomas no declarados: no hay informacion sobre el tratamiento de etiquetas en idiomas distintos del ingles.
-- Limitaciones de entrada: no procesa texto ni audio y no genera imagenes; su salida es un conjunto de etiquetas o caracteristicas.
-- Anomalia de metadatos: la fecha de creacion registrada (2026-09-19) es posterior a la fecha habitual de publicacion, lo que sugiere un posible error o manipulacion de los metadatos del repositorio.
+- Es una conversion cuantizada: cualquier diferencia de calidad respecto al modelo base procede de la precision BF16 y del casting de la cabeza; conviene validar contra el original en el caso de uso concreto.
+- Requiere usar el `tagger_pipeline.py` incluido o replicar el cambio de dos lineas en `forward` para evitar desajustes de dtype cuando `autocast` esta desactivado.
+- Sesgos conocidos: el vocabulario Danbooru refleja las convenciones y sesgos de su comunidad de anotacion, con posible infrarrepresentacion de estilos o culturas no cubiertas.
+- Riesgo de etiquetas erroneas o incompletas en imagenes fuera del dominio de ilustracion anime (fotografia, arte occidental, renders 3D).
+- Limitaciones de idioma: las etiquetas de salida estan en el vocabulario original, predominantemente en ingles; no se documenta soporte multilingue.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe conservarse la atribucion y revisarse las condiciones del modelo base y del dataset de etiquetas de origen.
+- Para produccion: no hay benchmarks publicados ni garantias de latencia; conviene medir throughput y precision en el propio corpus antes de desplegar.
+- El repositorio tiene un volumen de descargas y likes bajo, por lo que la validacion de la comunidad es limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DraconicDragon/pixai-tagger-v1.0-mixed-bf16
 - Modelo base: https://huggingface.co/pixai-labs/pixai-tagger-v1.0
-- Los resultados de la busqueda web proporcionada no contienen ningun enlace relacionado con este modelo (corresponden a sitios de juegos tipo bubble shooter); no se dispone de papers, blogs, repositorios ni demos adicionales.
+- Perfil del autor: https://huggingface.co/DraconicDragon

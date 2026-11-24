@@ -2,96 +2,100 @@
 
 ## Resumen
 
-`stratosphere/qwen3.5-0.8b-slips-immune-summarization` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3.5-0.8B`, desarrollado por el grupo Stratosphere, especializado en traducir eventos tecnicos de seguridad de red generados por Slips IDS (StratosphereLinuxIPS) a resumenes legibles para humanos con evaluacion de severidad. Slips produce logs de alertas estructurados como DAG (grafos aciclicos dirigidos) que encadenan eventos de seguridad por IP origen y ventana temporal; este modelo convierte esa salida cruda en resumenes concisos agrupados por tipo de evento, con etiquetas de severidad (CRITICAL / HIGH / MEDIUM / LOW / INFO) y un desglose global.
+Qwen3.5-0.8B Slips Immune Summarization es un ajuste fino supervisado (SFT) del modelo base Qwen3.5-0.8B de Alibaba, desarrollado por el grupo Stratosphere (Stratosphereips). Su proposito es traducir los eventos tecnicos de red que genera el sistema de deteccion de intrusiones Slips (StratosphereLinuxIPS) en resumenes legibles para humanos, agrupados por tipo de evento y con etiquetas de severidad (CRITICAL, HIGH, MEDIUM, LOW, INFO).
 
-El modelo cuenta con 873.438.784 parametros totales en el checkpoint completo (el modelo de lenguaje activo es de aproximadamente 0,75B, ya que el codificador visual del modelo base se conserva sin entrenar para mantener compatibilidad con la arquitectura Qwen3.5). Se distribuye en safetensors (BF16) y en tres cuantizaciones GGUF (Q4_K_M, Q5_K_M y Q8_0), con licencia Apache 2.0.
+El modelo resuelve un problema concreto de operacion en ciberseguridad: los logs de Slips se estructuran como DAG (grafos aciclicos dirigidos) de alertas por IP origen y ventana temporal, y son dificiles de interpretar rapidamente por un analista. Este ajuste convierte esos DAG en resumenes concisos con desglose de severidad. Es la version para dispositivos pequenos del modelo `qwen2.5-1.5b-slips-immune-summarization`: mismo dataset de entrenamiento, mismo prompt e hiperparametros, pero con aproximadamente la mitad de parametros.
 
-Su relevancia actual radica en que es la variante "small-device" del modelo `qwen2.5-1.5b-slips-immune-summarization`: mismo dataset de entrenamiento, mismo prompt y mismos hiperparametros, pero con la mitad de tamano, lo que permite ejecutarlo en dispositivos de borde como una Raspberry Pi 5 a aproximadamente un minuto por resumen de incidente, manteniendo una puntuacion equivalente al modelo de 1,5B bajo evaluacion LLM-as-judge.
+Con 873 millones de parametros totales (unos 0,75B en el modelo de lenguaje, ya que conserva el codificador visual sin entrenar del base) y licencia Apache 2.0, esta pensado para despliegue en hardware de borde, incluyendo una Raspberry Pi 5, donde genera un resumen de incidente en aproximadamente un minuto segun la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.5), con codificador visual del modelo base conservado sin entrenar |
-| Parametros totales | 873.438.784 (modelo de lenguaje activo ~0,75B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (la configuracion de ejemplo usa `-c 8192` en llama.cpp) |
+| Arquitectura | Transformer decoder-only (Qwen3.5), con codificador visual del base sin entrenar |
+| Parametros totales | 873.438.784 (~0,87B); ~0,75B en el modelo de lenguaje |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de despliegue usa `-c 8192`) |
 | Tipos de cuantizacion | BF16 (safetensors), GGUF Q4_K_M, Q5_K_M, Q8_0 |
-| Idiomas soportados | Ingles (`en`) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) y GGUF |
+| Formato de pesos | safetensors (BF16), GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3.5, un transformer decoder-only con un codificador visual que se mantiene intacto respecto al modelo base para que el checkpoint cargue como un Qwen3.5 estandar; `AutoModelForCausalLM` carga unicamente el modelo de lenguaje de aproximadamente 0,75B de parametros, y los ficheros GGUF contienen solo el modelo de lenguaje. El ajuste se realizo mediante SFT con LoRA (herramientas TRL y Unsloth) sobre el dataset `stratosphere/immune-summary-sft-dataset`.
+El modelo parte de Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen3.5. El checkpoint conserva el codificador visual del modelo base (no entrenado) para que cargue como un checkpoint Qwen3.5 estandar; al usar `AutoModelForCausalLM` solo se carga el modelo de lenguaje de ~0,75B parametros. Los archivos GGUF contienen unicamente el modelo de lenguaje.
 
-La innovacion metodologica destacable es el uso de seleccion best-of-N para construir las respuestas de referencia: para cada incidente de entrenamiento se generaron respuestas candidatas con GPT-4o, GPT-4o-mini, Qwen2.5 3B y Qwen2.5 1.5B, y se selecciono como ground truth la respuesta con mayor puntuacion segun un juez LLM. El prompt de inferencia es un unico mensaje de usuario que combina las instrucciones y el DAG de Slips, con los metadatos del incidente extraidos de la cabecera del DAG; la plantilla de chat anade el system prompt por defecto de Qwen. No se especifica en la informacion disponible el numero de tokens de entrenamiento ni la composicion detallada del dataset.
+El entrenamiento consistio en SFT (Supervised Fine-Tuning) con seleccion best-of-N de respuestas: para cada incidente de entrenamiento se generaron candidatos con GPT-4o, GPT-4o-mini, Qwen2.5 3B y Qwen2.5 1.5B, y se eligio como referencia la respuesta mejor puntuada por un juez LLM. El dataset utilizado es `stratosphere/immune-summary-sft-dataset`. Se emplearon las librerias TRL y Unsloth, con adaptadores LoRA. La model card indica que se usaron los mismos datos, prompt e hiperparametros que en la version de 1.5B.
 
 ## Capacidades
 
-- Generacion de resumenes de incidentes de seguridad de red a partir de logs DAG de Slips IDS, en lenguaje natural claro.
-- Agrupacion de eventos identicos o muy similares (por ejemplo, 24 conexiones identicas se condensan en una sola linea de resumen).
-- Asignacion de severidad por evento o grupo con cinco niveles: CRITICAL, HIGH, MEDIUM, LOW e INFO, con criterios definidos en el prompt.
-- Calculo de un desglose global de severidad a partir de las evaluaciones individuales.
-- Respeto estricto de un formato de salida estructurado (cabecera de incidente, lineas de evidencia con marcas temporales, total de eventos y desglose de severidad).
-- Generacion de texto conversacional y text-generation estandar, heredada del modelo base.
-- Soporte de tool calling, function calling, agentes y razonamiento multi-paso: no documentado en la informacion disponible para este ajuste.
-- Capacidades multilingues: limitadas al ingles segun la model card.
-- Capacidades especiales: el checkpoint conserva el codificador visual del modelo base, pero no se documenta entrenamiento ni uso de vision en este ajuste.
+- Generacion de resumenes de incidentes de seguridad de red a partir de logs DAG de Slips.
+- Agrupacion de eventos identicos o muy similares en una sola linea de resumen.
+- Asignacion de severidad por evento o grupo (CRITICAL, HIGH, MEDIUM, LOW, INFO) y calculo del desglose global de severidad.
+- Transformacion de descripciones tecnicas en lenguaje natural legible.
+- Generacion de texto conversacional en ingles.
+- Soporte de plantilla de chat con system prompt por defecto de Qwen.
+- Despliegue en CPU y dispositivos de borde mediante GGUF y llama.cpp.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision funcional ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Monitorizacion de seguridad en dispositivos de borde: el modelo se ejecuta en una Raspberry Pi 5 con la cuantizacion Q4_K_M (529 MB) y genera un resumen por incidente en aproximadamente un minuto, lo que permite desplegar resumenes legibles de alertas de Slips en entornos con recursos limitados o sin conectividad a la nube.
-- Triage automatizado de alertas en un SOC: integrado en el flujo de salida de Slips, convierte los DAG tecnicos en resumenes con severidad que un analista puede revisar rapidamente, priorizando los incidentes marcados como CRITICAL o HIGH frente a los INFO.
-- Generacion de informes de incidentes para cumplimiento: el formato de salida estructurado (cabecera con IP origen, ventana temporal, nivel de amenaza y desglose de severidad) facilita el registro documental de eventos de red para auditorias.
-- Filtrado y reduccion de ruido en logs: la agrupacion de eventos identicos o muy similares reduce el volumen de lineas que el analista debe leer, condensando cadenas repetitivas de conexiones en una sola entrada con su severidad agregada.
-- Educacion y formacion en ciberseguridad: los resumenes en lenguaje llano permiten a estudiantes interpretar salidas reales de un IDS sin necesidad de dominar el formato DAG interno de Slips.
-- Despliegue en entornos air-gapped: al ser un modelo pequeno con pesos GGUF y licencia Apache 2.0, puede ejecutarse localmente mediante llama.cpp en infraestructura aislada, sin dependencia de APIs externas, para el analisis de trafico sensible.
-- Prototipado rapido de pipelines de resumen de seguridad: sirve como componente de bajo coste en pruebas de concepto antes de escalar a modelos mayores de la misma familia (por ejemplo, la variante de 1,5B).
+- Triaje de alertas en un SOC: el modelo recibe el DAG de un incidente de Slips y devuelve un resumen agrupado con severidades, lo que permite al analista priorizar sin leer el log crudo.
+- Monitorizacion en dispositivos de borde: con el GGUF Q4_K_M (529 MB) puede ejecutarse en una Raspberry Pi 5 con llama.cpp, generando un resumen por incidente en aproximadamente un minuto, util para despliegues remotos sin GPU.
+- Enriquecimiento de pipelines de SIEM: integrado como paso previo al envio de alertas a un SIEM o sistema de tickets, convierte eventos tecnicos en texto estructurado y etiquetado por severidad.
+- Generacion de informes de turno: a partir de multiples DAG de una ventana temporal, produce resumenes consistentes con formato fijo (metadatos, lineas de evidencia, desglose de severidad) para documentacion operativa.
+- Filtrado y reduccion de ruido: la agrupacion de eventos repetidos (por ejemplo, 24 conexiones identicas en una linea) reduce el volumen de alertas que llega al analista humano.
+- Despliegue air-gapped: al ser un modelo pequeno con licencia Apache 2.0 y pesos GGUF, puede ejecutarse en entornos sin conexion a internet dentro de infraestructura de seguridad critica.
+- Prototipado y evaluacion de flujos de resumen de IDS: sirve como referencia ligera para comparar con el modelo de 1.5B de la misma familia antes de escalar a produccion.
 
 ## Benchmarks y rendimiento
 
-La model card menciona una evaluacion LLM-as-judge en la que el modelo obtiene una puntuacion equivalente al modelo `qwen2.5-1.5b-slips-immune-summarization`, pero no se proporcionan los valores numericos de dicha evaluacion ni resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+La model card indica que, bajo la misma evaluacion LLM-as-judge, este modelo de 0.8B obtiene una puntuacion equiparable a la del modelo de 1.5B de la misma familia. No se proporcionan cifras numericas de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible.
+| Comparacion | Resultado |
+|---|---|
+| Frente a qwen2.5-1.5b-slips-immune-summarization | Puntuacion equiparable con LLM-as-judge (sin cifras publicadas) |
+| Rendimiento en Raspberry Pi 5 | Aproximadamente 1 minuto por resumen de incidente |
+| Benchmarks estandar (MMLU, HumanEval, GSM8K) | No disponibles |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos BF16 ocupan aproximadamente 1,7 GB (873M parametros a 2 bytes); la cuantizacion Q4_K_M ocupa 529 MB, Q5_K_M 578 MB y Q8_0 812 MB, a los que hay que sumar la memoria de la cache KV segun el contexto configurado (por ejemplo, 8192 tokens).
-- GPU recomendadas: no especificadas en la informacion disponible; por tamano, cualquier GPU consumer con 4 GB o mas de VRAM puede alojar el modelo en BF16 o en cuantizaciones GGUF.
-- Cabe en GPU consumer: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares; tambien en CPU pura.
-- Despliegue en CPU: validado en Raspberry Pi 5 con llama.cpp, con aproximadamente un minuto por resumen de incidente.
-- Opciones de despliegue: llama.cpp / llama-server (recomendado para local y edge), Transformers con `AutoModelForCausalLM` (requiere una version reciente con soporte Qwen3.5, probada con 5.17), y GGUF compatible con el ecosistema llama.cpp.
-- Configuracion recomendada en CPU: `-c 8192 -n 1024 --temp 0 -fa off`; en la Raspberry Pi 5 es importante desactivar flash attention (`-fa off`), ya que con `-fa auto` llama.cpp la activa y ralentiza la generacion con prompts largos.
-- Latencia y throughput: no se proporcionan cifras de tokens por segundo; solo el dato aproximado de un minuto por resumen en Raspberry Pi 5.
+- VRAM estimada en BF16: alrededor de 1,8 GB para los pesos (~0,87B parametros a 2 bytes), mas overhead de activaciones y cache KV.
+- GGUF Q4_K_M: 529 MB en disco; recomendado para Raspberry Pi y otras CPU.
+- GGUF Q5_K_M: 578 MB en disco.
+- GGUF Q8_0: 812 MB en disco; evita un bucle de repeticion raro observado con Q4/Q5.
+- GPU: no se especifican GPU recomendadas; el modelo cabe holgadamente en cualquier GPU consumer (por ejemplo, RTX 3060 en adelante) e incluso en CPU.
+- Dispositivos de borde: validado en Raspberry Pi 5 con llama.cpp.
+- Opciones de despliegue: llama.cpp (`llama-server`) y Transformers (requiere version reciente con soporte Qwen3.5, probado con 5.17).
+- Nota de rendimiento en CPU: en Raspberry Pi 5 debe desactivarse flash attention (`-fa off`), ya que con `-fa auto` ralentiza la generacion con prompts largos.
+- Latencia: aproximadamente 1 minuto por resumen de incidente en Raspberry Pi 5; no se documentan cifras de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| stratosphere/qwen3.5-0.8b-slips-immune-summarization | 873M (~0,75B LM) | No disponible | Resumen de incidentes Slips IDS | Apache 2.0 | Hugging Face, GGUF |
-| stratosphere/qwen2.5-1.5b-slips-immune-summarization | 1,5B (aproximado) | No disponible | Resumen de incidentes Slips IDS | No disponible en la informacion | Hugging Face |
-| unsloth/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible | Modelo generalista multimodal | No disponible en la informacion | Hugging Face |
+| qwen3.5-0.8b-slips-immune-summarization | ~0,87B | no disponible | Apache 2.0 | Resumen de incidentes Slips, borde | HF, GGUF |
+| qwen2.5-1.5b-slips-immune-summarization | ~1,5B | no disponible | no disponible | Resumen de incidentes Slips | HF |
+| Qwen3.5-0.8B (base) | ~0,8B | no disponible | no disponible | Modelo generalista | HF |
 
-La variante de 0,8B comparte dataset, prompt e hiperparametros con la de 1,5B, y segun la model card obtiene una puntuacion equivalente bajo evaluacion LLM-as-judge con aproximadamente la mitad de tamano, lo que la hace preferible para despliegue en dispositivos de borde. Frente al modelo base, pierde generalidad pero gana especializacion en el formato de salida y en la terminologia de Slips.
+La comparativa detallada con alternativas de la misma categoria (modelos especializados en resumen de alertas de IDS) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente en ingles; no se garantiza un comportamiento correcto en castellano u otros idiomas.
-- Especializado en el formato DAG de Slips IDS; su rendimiento fuera de ese dominio o con otros formatos de logs de seguridad no esta documentado.
-- Se ha observado un bucle de repeticion poco frecuente con las cuantizaciones Q4 y Q5; la model card recomienda Q8_0 (812 MB) para evitarlo cuando sea viable.
-- Riesgo de alucinacion inherente a los modelos de lenguaje pequenos: puede inventar eventos, severidades o detalles no presentes en el DAG de entrada, por lo que los resumenes deben tratarse como asistencia y no como sustituto de la revision humana en decisiones criticas de seguridad.
-- Las severidades asignadas son evaluaciones generadas por el modelo segun criterios del prompt, no verdades ground truth; pueden diferir de la clasificacion real del incidente.
-- El checkpoint conserva el codificador visual del modelo base sin entrenar; no debe asumirse capacidad de vision util para esta tarea.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base `unsloth/Qwen3.5-0.8B` y del dataset de entrenamiento.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion comunitaria independiente de su comportamiento en produccion.
-- La longitud de contexto no esta documentada; el ejemplo de despliegue usa 8192 tokens, lo que limita el tamano maximo del DAG de entrada procesable en una sola pasada.
+- Entrenado y evaluado unicamente en ingles; no se documenta soporte multilingue.
+- Especializado en el formato de logs de Slips; su rendimiento fuera de ese esquema de entrada no esta validado.
+- Riesgo de bucle de repeticion con las cuantizaciones Q4_K_M y Q5_K_M; la model card recomienda Q8_0 para evitarlo.
+- En CPU sin GPU, la generacion es lenta (aproximadamente un minuto por resumen en Raspberry Pi 5).
+- El codificador visual del checkpoint no esta entrenado; no debe asumirse capacidad de vision funcional.
+- Las severidades asignadas son generadas por el modelo y no deben tratarse como veredictos definitivos sin revision humana.
+- No se documentan sesgos especificos ni evaluaciones de robustez frente a entradas malformadas o adversariales.
+- Licencia Apache 2.0 permite uso comercial, pero no se ofrecen garantias de exactitud en contextos de seguridad critica.
+- La model card no detalla la longitud de contexto soportada; el ejemplo de despliegue usa 8192 tokens.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/stratosphere/qwen3.5-0.8b-slips-immune-summarization
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Modelo base usado para el ajuste (Unsloth): https://huggingface.co/unsloth/Qwen3.5-0.8B
-- Variante de 1,5B de la misma familia: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-summarization
+- Version de 1.5B de la misma familia: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-summarization
+- Repositorio de Slips (StratosphereLinuxIPS): https://github.com/stratosphereips/StratosphereLinuxIPS
 - Dataset de entrenamiento: stratosphere/immune-summary-sft-dataset (referenciado en la model card)
-- Repositorio de Slips IDS (StratosphereLinuxIPS): https://github.com/stratosphereips/StratosphereLinuxIPS

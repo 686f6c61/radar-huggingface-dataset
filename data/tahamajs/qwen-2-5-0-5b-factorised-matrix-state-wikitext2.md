@@ -2,104 +2,98 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-factorised-matrix-state-wikitext2` es un experimento de investigación publicado en Hugging Face por el usuario tahamajs. No se trata de un modelo entrenado desde cero, sino de un *transplante de atención* sobre el modelo base Qwen2.5-0.5B: se sustituye el mecanismo de atención estándar por uno denominado `factorised_matrix_state`, registrado en un componente llamado `ATTENTION_REGISTRY` y perteneciente al proyecto NeuralOps. El resultado se destila sobre el conjunto de datos WikiText-2 para recuperar la coherencia perdida tras la modificación arquitectónica.
+Este checkpoint es el resultado de una intervención arquitectónica sobre `Qwen/Qwen2.5-0.5B` realizada con la librería NeuralOps. El autor (tahamajs) ha sustituido 18 de las 24 capas de atención del decoder original por el operador `factorised_matrix_state`, una atención lineal recurrente con estado matricial factorizado vía SVD, conservando 6 capas con la atención GQA softmax original de Qwen2 en una disposición híbrida 3:1. Posteriormente aplica una destilación de conocimiento en dos etapas sobre WikiText-2 para recuperar capacidad predictiva.
 
-El modelo tiene 536.396.668 parámetros en formato safetensors (1,3 GB de repositorio) y conserva la arquitectura Qwen2 subyacente, con la particularidad del nuevo mecanismo de atención aplicado mediante un patrón de cirugía `hybrid_3_1`. Según la model card, la perplejidad causal pasó de 420.412,82 antes de la destilación a 343,56 después, lo que indica que el transplante sin destilación degrada severamente el modelo y que la destilación sobre WikiText-2 recupera parte de la funcionalidad, aunque con un valor de perplejidad todavía elevado para un modelo de este tamaño.
+El modelo es un experimento de investigación sobre eficiencia de atención subcuadrática en modelos compactos, no un modelo de propósito general listo para producción. Su relevancia radica en que documenta de forma transparente el coste de la cirugía de atención: la perplejidad salta de 15,38 (profesor) a 420.412,82 tras el transplante en frío, y la destilación la reduce a 343,56, es decir, una recuperación del 99,92% relativa pero todavía muy lejos del profesor.
 
-Es relevante ahora como pieza de exploración en el espacio de mecanismos de atención alternativos (matrices de estado factorizadas) y como ejemplo de flujo de trabajo de "cirugía + destilación" reproducible en una sola GPU consumer (RTX 3090, 180,8 s). No obstante, se trata de un artefacto de investigación con cero descargas y sin model card completa: no hay información sobre licencia, idiomas ni pipeline, por lo que no debe considerarse un modelo listo para producción.
+El checkpoint pesa 1,3 GB, tiene 536.396.668 parámetros reales en safetensors y se distribuye bajo licencia MIT. Está pensado para quienes investigan atención lineal, destilación de representaciones y técnicas de sustitución de operadores en transformers preentrenados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Qwen2 con atención `factorised_matrix_state` (patrón `hybrid_3_1`) |
+| Arquitectura | Transformer decoder híbrido: 18/24 capas con atención lineal recurrente `factorised_matrix_state` (familia SVD) y 6/24 capas con GQA softmax nativa de Qwen2 |
 | Parametros totales | 536.396.668 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de Qwen2.5-0.5B, no confirmada en la model card) |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Modelo base | Qwen2.5-0.5B |
-| Dataset de destilacion | WikiText-2 (`wikitext-2-raw-v1`) |
-| Patron de cirugia | `hybrid_3_1` |
-| PPL causal pre-destilacion | 420412.82 |
-| PPL causal post-destilacion | 343.56 |
-| Tiempo de destilacion | 180.8 s en NVIDIA RTX 3090 |
+| Longitud de contexto | no disponible en la información proporcionada (modelo base Qwen2.5-0.5B; evaluación a longitud de secuencia 512) |
+| Tipos de cuantizacion | no disponible (pesos publicados en FP16 completo, 1023,15 MB, más adaptador) |
+| Idiomas soportados | inglés (declarado en la model card) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (FP16 completo + adaptador) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con 536 millones de parámetros, y le aplica una modificación quirúrgica: se reemplaza el mecanismo de atención original por `factorised_matrix_state`, una variante registrada en el `ATTENTION_REGISTRY` del proyecto NeuralOps. El patrón `hybrid_3_1` sugiere una combinación híbrida de capas (probablemente tres capas con atención estándar por cada una con el nuevo mecanismo, aunque la model card no detalla la proporción exacta). No se especifica la formulación matemática del mecanismo ni su complejidad computacional.
+La arquitectura parte de Qwen2.5-0.5B: 24 capas decoder, dimensión oculta D=896, 14 cabezas de consulta y 2 cabezas KV (GQA), dimensión por cabeza d_h=64, con RoPE configurado a theta=1.000.000. La cirugía `hybrid_3_1` reemplaza las capas en los índices [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] por el operador `FactorisedMatrixState` envuelto en `QwenAttentionAdapter`, y preserva las capas [3, 7, 11, 15, 19, 23] con la atención softmax original para mantener el enrutamiento contextual global. Cada capa transplantada hereda los tensores `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con expansión de cabezas KV de 2 a 14 y una única `o_proj` sin duplicación, lo que evita el colapso de proyecciones no inicializadas. El adaptador gestiona RoPE y el soporte autorregresivo causal, con despacho de kernels en tres niveles (CUDA, Triton, PyTorch).
 
-El entrenamiento posterior consiste en una destilación de conocimiento sobre WikiText-2 (`wikitext-2-raw-v1`), un corpus de inglés de Wikipedia de aproximadamente 2 millones de tokens, ejecutada en 180,8 segundos sobre una RTX 3090. La métrica reportada es la perplejidad causal: 420.412,82 antes de la destilación y 343,56 después. Este delta enorme confirma que el transplante inicial rompe el modelo y que la destilación recupera parcialmente la distribución del lenguaje, si bien un valor de 343,56 sigue siendo muy superior al de Qwen2.5-0.5B original en WikiText-2 (habitualmente en el rango de decenas). No se mencionan RLHF, DPO ni datos de instrucción.
+El entrenamiento consiste en una destilación de conocimiento de representaciones ocultas en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`), ejecutada en una RTX 3090 de 24 GB con caché offline de representaciones del profesor (0 MB de VRAM del profesor en GPU). La etapa 1 (30% del presupuesto, 66 pasos) congela el backbone y entrena solo módulos de atención y layer norms con AdamW (lr=2,0e-4, weight decay 0,01, clipping 1,0), minimizando MSE por capa más 0,25·(1−coseno). La etapa 2 (70% del presupuesto, 156 pasos) hace destilación end-to-end sobre los 24 streams residuales con lr=6,0e-5 y el término coseno elevado a 0,50. Se usan pesos maestros FP32 con AMP FP16 y GradScaler.
 
 ## Capacidades
 
-- Generación de texto autoregresiva básica, limitada por el estado de la destilación sobre WikiText-2.
-- Modelado de lenguaje causal (la métrica principal reportada es perplejidad causal).
-- No hay evidencia de soporte de tool calling ni function calling.
-- No hay evidencia de capacidades de agente ni razonamiento multi-paso.
-- Capacidades multilingües no documentadas; el corpus de destilación es únicamente inglés (WikiText-2).
-- No se documentan modos especiales (thinking, visión, audio).
-- No hay información sobre ajuste por instrucciones.
+- Generación de texto causal autorregresiva en inglés, heredada del modelo base y preservada parcialmente tras la destilación.
+- Modelado de lenguaje con atención lineal subcuadrática en el 75% de las capas, lo que reduce el coste computacional frente a la atención softmax completa.
+- Soporte de atención bidireccional y causal en el operador `factorised_matrix_state`, aunque el checkpoint se publica para uso causal.
+- Manejo de Grouped-Query Attention en las capas transplantadas mediante expansión de cabezas KV de 2 a 14.
+- Integración con RoPE a través del adaptador (`QwenAttentionAdapter`).
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking.
+- Capacidad multilingüe no disponible: la model card solo declara inglés.
 
 ## Casos de uso
 
-- Investigación sobre mecanismos de atención alternativos: el modelo sirve como banco de pruebas para comparar `factorised_matrix_state` frente a la atención estándar de Qwen2, midiendo el impacto en perplejidad sobre WikiText-2 con el patrón `hybrid_3_1`.
-- Reproducción de experimentos de cirugía y destilación: el flujo completo (transplante + destilación en 180,8 s en una RTX 3090) es replicable y útil para estudiar la recuperación de modelos tras modificaciones arquitectónicas agresivas.
-- Docencia y divulgación: ejemplo didáctico de cómo una modificación estructural degrada la perplejidad en varios órdenes de magnitud y cómo la destilación la reduce parcialmente.
-- Evaluación de robustez de pipelines de inferencia: permite probar herramientas de despliegue (llama.cpp, vLLM) con pesos safetensors no estándar y detectar incompatibilidades de kernel de atención.
-- Línea base para futuros experimentos NeuralOps: punto de partida para iterar sobre el patrón `hybrid_3_1`, el corpus de destilación o el número de pasos.
-- Análisis de eficiencia de destilación: medir cuánto se recupera de perplejidad por segundo de cómputo en GPU consumer, dado el tiempo reportado.
+- Investigación en atención lineal: el checkpoint sirve como referencia reproducible para estudiar el impacto de sustituir atención softmax por atención lineal recurrente en un transformer compacto, comparando la perplejidad pre- y post-destilación (420.412,82 frente a 343,56).
+- Estudio de destilación de representaciones ocultas: las dos etapas documentadas (alineamiento de subespacio con backbone congelado y destilación end-to-end) permiten replicar y comparar protocolos de KD sobre WikiText-2 con presupuestos de 66 y 156 pasos.
+- Benchmark de cirugía de atención: útil para medir la degradación y recuperación de capacidad predictiva al transplantar operadores, con telemetría concreta del delta de perplejidad (−420.069,27 absoluto, 99,92% relativo).
+- Desarrollo de kernels: el despacho en tres niveles (CUDA, Triton, PyTorch) del operador `factorised_matrix_state` permite probar implementaciones de kernels de atención lineal en hardware consumer (RTX 3090).
+- Prototipado de modelos eficientes en entornos con VRAM limitada: con 536M parámetros y pesos FP16 de ~1 GB, cabe en GPUs consumer para experimentación con arquitecturas híbridas.
+- Docencia y divulgación técnica: ejemplo didáctico de cómo se sustituye un bloque de atención en un modelo preentrenado, incluyendo herencia de pesos y gestión de GQA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La única métrica reportada es la perplejidad causal sobre WikiText-2:
+Resultados declarados por el autor en la model card (no verificados de forma independiente), medidos en el split de validación de WikiText-2 (`wikitext-2-raw-v1`) con longitud de secuencia 512, batch_size=8 y grad_accum=4 sobre una RTX 3090 de 24 GB.
 
-| Metrica | Valor |
+| Métrica | Valor |
 |---|---|
-| PPL causal pre-destilacion | 420412.82 |
-| PPL causal post-destilacion | 343.56 |
-| Delta PPL | -420069.27 |
-| Tiempo de destilacion | 180.8 s (RTX 3090) |
+| Perplejidad del profesor (`Qwen/Qwen2.5-0.5B`, GQA softmax) | 15,38 |
+| Perplejidad del estudiante zero-shot tras el transplante (pre-KD) | 420.412,82 |
+| Perplejidad del estudiante destilado (post-KD) | 343,56 |
+| Delta absoluto de perplejidad | −420.069,27 |
+| Reducción relativa de perplejidad | 99,92% |
 
-No hay datos de MMLU, HumanEval, GSM8K ni de comparación con otros modelos en la información proporcionada.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de tareas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 1,1 GB solo para pesos (536 M de parámetros), más overhead de activaciones y KV cache.
-- VRAM estimada en cuantización de 8 bits: alrededor de 0,6 GB; en 4 bits, alrededor de 0,35 GB (estimaciones teóricas; no se publican GGUF ni cuantizaciones oficiales).
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM debería poder cargar los pesos en fp16; la RTX 3090 se usó para la destilación.
-- Cabe en GPU consumer: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, siempre que el runtime soporte el mecanismo de atención modificado.
-- Opciones de despliegue: no documentadas. Al no publicarse GGUF ni configuraciones de vLLM/TGI, el despliegue requeriría cargar los safetensors con `transformers` y el código de NeuralOps que implemente `factorised_matrix_state`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en FP16: en torno a 1,1 GB solo para pesos (1023,15 MB), más overhead de activaciones y caché KV; cómodo en GPUs con 4 GB o más.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 3090, RTX 4090) es suficiente por tamaño; el autor usó una RTX 3090 de 24 GB para la destilación.
+- Cabe holgadamente en GPU consumer; también es viable en CPU para pruebas de baja latencia no crítica.
+- Opciones de despliegue: la librería declarada es `neuralops`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible. Dado el operador de atención no estándar, es probable que requiera el runtime de NeuralOps.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-factorised-matrix-state-wikitext2 | 536 M | no disponible | no disponible | Hugging Face (0 descargas) | Experimento de atención factorizada, PPL WikiText-2 de 343,56 |
-| Qwen2.5-0.5B | 494 M (aprox.) | 32 768 tokens (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Hugging Face, ampliamente adoptado | Modelo base original, perplejidad muy inferior en WikiText-2 |
-| Qwen2.5-1.5B | 1,5 B (aprox.) | 32 768 tokens (según documentación oficial de Qwen) | Apache 2.0 (según Qwen) | Hugging Face | Alternativa de mayor tamaño con mejor calidad general |
-| SmolLM2-360M | 360 M | 8 192 tokens (según documentación de HuggingFace) | Apache 2.0 | Hugging Face | Alternativa pequeña orientada a despliegue en edge |
+| Este modelo (Qwen2.5-0.5B + `factorised_matrix_state`, post-KD) | 536M | no disponible | 343,56 (declarada) | MIT | Hugging Face |
+| `Qwen/Qwen2.5-0.5B` (profesor) | 494M | no disponible | 15,38 (declarada) | Apache 2.0 (modelo base Qwen) | Hugging Face |
+| Este modelo, pre-KD (zero-shot tras transplante) | 536M | no disponible | 420.412,82 (declarada) | MIT | Hugging Face |
 
-Los datos de los modelos comparables provienen de su documentación pública y no de la información proporcionada en esta ficha; se incluyen como referencia de categoría. La comparación directa de rendimiento no es posible porque el modelo analizado no publica benchmarks estándar.
+No se dispone en la información proporcionada de otros modelos con atención lineal comparable (por ejemplo, variantes Mamba o RWKV) con métricas verificables para una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigación: cero descargas, cero likes y model card mínima; no hay garantía de mantenimiento ni soporte.
-- Perplejidad post-destilación de 343,56 en WikiText-2, muy superior a la del Qwen2.5-0.5B original, lo que indica una calidad de generación degradada.
-- Destilado únicamente sobre WikiText-2 (inglés, Wikipedia); el comportamiento fuera de ese dominio es impredecible.
-- Sin información de licencia: no se puede asumir uso comercial permitido. La licencia del modelo base Qwen2.5-0.5B (Apache 2.0 según su documentación) no necesariamente se hereda tras la modificación.
-- Riesgo elevado de alucinación y de texto incoherente por la modificación arquitectónica y la destilación limitada.
-- No hay información sobre sesgos; al entrenarse sobre Wikipedia en inglés, es probable que herede sesgos del corpus, pero no está documentado.
-- Posible incompatibilidad con runtimes estándar (vLLM, llama.cpp, TGI) al requerir la implementación de `factorised_matrix_state`.
-- No apto para producción sin una evaluación exhaustiva previa.
-- La model card referencia rutas locales (`/dev/shm/Qwen2.5-0.5B`) que no son reproducibles directamente por terceros.
+- La perplejidad post-destilación (343,56) es más de veinte veces superior a la del profesor (15,38); la calidad de generación es muy inferior a la del modelo base y no es apta para producción.
+- El checkpoint es un artefacto de investigación sobre cirugía de atención y destilación, no un modelo afinado para tareas downstream.
+- Solo se declara inglés; no hay evidencia de capacidades multilingües.
+- Riesgo elevado de alucinación y de generación incoherente dado el nivel de perplejidad.
+- Los benchmarks son declarados por el autor y no están verificados (`verified: false` en el model-index).
+- Requiere la librería `neuralops` y su operador de atención personalizado; la compatibilidad con ecosistemas estándar (transformers, vLLM, llama.cpp) no está documentada.
+- Licencia MIT permite uso comercial, pero la calidad del modelo hace inviable ese uso en la práctica; conviene revisar también la licencia del modelo base Qwen2.5-0.5B.
+- No se documentan sesgos específicos; al derivar de Qwen2.5-0.5B y entrenar solo en WikiText-2, hereda los sesgos del corpus y del profesor.
 
 ## Enlaces
 
-- [Hugging Face: tahamajs/qwen-2.5-0.5b-factorised-matrix-state-wikitext2](https://huggingface.co/tahamajs/qwen-2.5-0.5b-factorised-matrix-state-wikitext2)
-- [Modelo base Qwen2.5-0.5B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-0.5B)
-- [Dataset WikiText-2 en Hugging Face](https://huggingface.co/datasets/Salesforce/wikitext)
-- No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo o al proyecto NeuralOps.
+- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-factorised-matrix-state-wikitext2
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
+- Licencia NeuralOps: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Implementación del operador: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/svd/factorised_matrix_state.py
+- Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext

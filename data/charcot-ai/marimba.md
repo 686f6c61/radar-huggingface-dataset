@@ -2,111 +2,120 @@
 
 ## Resumen
 
-Marimba es un modelo de audio desarrollado por charcot-ai (Solano Amadori) que aborda el análisis de voz desde una perspectiva poco habitual: en lugar de transcribir audio, responde preguntas tipadas sobre una ventana de ocho segundos. El modelo recibe un fragmento de audio y una lista de preguntas formuladas en lenguaje natural, y devuelve respuestas estructuradas en tres formatos posibles: `noul` (sí/no), `score` (probabilidad) o `choice` (distribución sobre opciones predefinidas). Está construido como un adaptador sobre el encoder y decoder congelados de Qwen3-ASR-0.6B, con cabezas ligeras entrenadas específicamente para cada tarea.
+Marimba es un modelo de clasificación de audio desarrollado por Charcot que responde a preguntas tipadas sobre ventanas cortas de audio: si alguien está hablando, si un turno de conversación ha terminado, qué idioma se habla o si aparece un término concreto. Se construye como un adaptador sobre el backbone congelado Qwen3-ASR-0.6B, de modo que el codificador se comparte entre todas las preguntas formuladas sobre la misma ventana de audio, lo que reduce el coste computacional cuando se lanzan varias consultas simultáneas.
 
-La relevancia de Marimba reside en su enfoque de "System One" para voz: una sola pasada del encoder sirve para responder simultáneamente a múltiples preguntas de distinta naturaleza (fin de turno, actividad de voz, idioma, detección de términos, cambio de hablante, número de hablantes). Esto lo hace especialmente útil en pipelines de agentes conversacionales y sistemas de voz en tiempo real, donde la latencia y la capacidad de tomar decisiones tipadas sobre el audio son críticas.
+El modelo resuelve un problema específico en sistemas de voz conversacional: la detección de turnos (turn-taking), la actividad de voz (VAD), la identificación de idioma (LID), la detección de palabras clave y el cambio de hablante son tareas habitualmente resueltas con pipelines separados. Marimba las unifica bajo una interfaz de "decisiones tipadas" (noul, score, choice) con salidas JSON-seguras que incluyen probabilidades, umbrales y marcas temporales de la ventana evaluada.
 
-El modelo está publicado bajo licencia Apache-2.0, con un tamaño de repositorio de 0,1 GB, y declara soporte para inglés y portugués. La librería de inferencia es `marimba`, instalable como `marimba-audio[torch]`, y el modelo base es Qwen3-ASR-0.6B.
+Es relevante ahora porque ofrece una alternativa ligera (repo de 0,1 GB, backbone de 0,6B de parámetros) a los grandes modelos de audio-LLM para tareas de enrutamiento y control en agentes de voz, con latencias declaradas de 13 ms para turn end y 16 ms para VAD en una NVIDIA L4. Solo puntúa los últimos ocho segundos de audio y no proporciona garantías de tiempo real.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Adaptador sobre encoder/decoder congelados de Qwen3-ASR-0.6B con cabezas de lectura ligeras (lineales o MLP pequeños) y cabezas condicionadas por pregunta |
-| Parametros totales | No disponible (el modelo base Qwen3-ASR-0.6B tiene 0,6B; el adaptador añade cabezas ligeras) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Ventanas de audio de 8 segundos; contexto del decoder por encima de 8 segundos no validado |
-| Tipos de cuantizacion | No disponible (la quickstart usa float32 en CPU; en GPU se reporta bf16) |
-| Idiomas soportados | Inglés (en) y portugués (pt) declarados; detección de idioma cerrada sobre 30 lenguas |
-| Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors |
+| Arquitectura | Adaptador sobre backbone congelado Qwen3-ASR-0.6B (encoder compartido entre preguntas) |
+| Parámetros totales | 0,6B en el backbone (parámetros del adaptador no disponibles) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | Ventana de audio de 8 segundos (solo se puntúan los últimos 8 s) |
+| Tipos de cuantización | bf16 y float32 documentados en los ejemplos; no se detallan otras cuantizaciones |
+| Idiomas soportados | 30 idiomas para la tarea de identificación de idioma; etiquetas de modelo en inglés y portugués |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Marimba no es un transformer entrenado desde cero, sino un conjunto de cabezas de lectura y adaptadores montados sobre el encoder y el decoder congelados de Qwen3-ASR-0.6B (revisión `5eb144179a02acc5e5ba31e748d22b0cf3e303b0`). Cada tipo de pregunta se resuelve con un mecanismo distinto: las preguntas de término se puntúan evaluando por coincidencia exacta las hipótesis greedy y de cuatro beams del decoder congelado, de modo que cualquier palabra puede consultarse sin entrenamiento adicional; el idioma se obtiene de las puntuaciones nativas de idioma de Qwen3-ASR; la actividad de voz usa una pequeña cabeza condicionada por pregunta; y el fin de turno y las preguntas de hablante usan lecturas lineales o MLP pequeños sobre capas congeladas del encoder.
+Marimba se implementa como un adaptador sobre el backbone congelado Qwen3-ASR-0.6B. La innovación principal es la compartición de una única pasada del encoder entre todas las preguntas formuladas sobre la misma ventana de audio, de manera que consultas como detección de actividad de voz, fin de turno e identificación de idioma reutilizan las mismas representaciones. El modelo expone tres tipos de pregunta: `noul` (sí/no con umbral), `score` (probabilidad numérica) y `choice` (selección entre opciones suministradas). Las tareas de hablante comparan mitades de cuatro segundos (mismo hablante) o los últimos dos segundos con los seis anteriores (cambio de hablante).
 
-El entrenamiento de la cabeza de fin de turno se realizó sobre el dataset `pipecat-ai/smart-turn-data-v3.2-train` (CC BY 4.0, revisión `f8c95d284595defb6b88a715c356cbc5c31b7ad1`). No se distribuye audio del dataset en el repositorio. La información disponible no detalla el número total de tokens de entrenamiento ni si hubo fases de RLHF o DPO; las cabezas son readouts supervisados sobre representaciones congeladas, no un ajuste completo del modelo base.
+El entrenamiento utiliza el dataset pipecat-ai/smart-turn-data-v3.2-train. No se detalla en la información disponible el número de tokens, la composición completa del dataset ni si se emplearon técnicas de RLHF o DPO. Las puntuaciones de términos se describen como no calibradas y se calculan como la fracción cruda de hipótesis greedy más cuatro de beam search. La tarea de información personal es experimental y requiere un detector de PII textual externo que no se incluye.
 
 ## Capacidades
 
-- Respuesta a preguntas tipadas sobre audio: `noul` (sí/no), `score` (probabilidad) y `choice` (distribución sobre opciones).
-- Detección de fin de turno (turn end) con salida `score`; validada con AUROC 0,930 en el test de Smart Turn v3.2.
-- Detección de actividad de voz (voice activity) con salida `noul`; AUROC 0,995 en AMI y 0,9996 en VoxConverse.
-- Identificación de idioma con salida `choice` sobre 30 lenguas; precisión cerrada del 100% en FLEURS y 93% en Common Voice (300 clips cada uno).
-- Detección de términos (keyword spotting) con salida `noul`; AUROC 0,92 en Common Voice y 0,97 en FLEURS. Las puntuaciones no están calibradas (fracción bruta de las cinco hipótesis).
-- Comparación de mismo hablante con salida `noul`/`score`; AUROC 0,998 en AMI y 0,996 en VoxConverse.
-- Detección de cambio de hablante con salida `noul`/`score`; AUROC 0,966 en AMI y 0,980 en VoxConverse.
-- Conteo de hablantes (0/1/2/3+) con salida `choice`; precisión 0,778 en AMI y 0,859 en VoxConverse.
-- Detección de información personal (experimental) con salida `noul`; requiere un detector de PII de texto externo (no incluido); F1 0,904 en 200 clips sintéticos de portugués brasileño con un detector interno.
-- Una sola pasada del encoder congelado sirve para todas las preguntas de la ventana.
+- Detección de fin de turno (turn end) con salida de tipo score.
+- Detección de actividad de voz (VAD) con salida sí/no.
+- Identificación de idioma en conjunto cerrado de 30 idiomas, con opción de agregar "Other".
+- Detección de términos o palabras clave (keyword spotting) mediante preguntas sí/no.
+- Detección de mismo hablante y cambio de hablante por ventana.
+- Conteo de hablantes en categorías 0/1/2/3+.
+- Detección experimental de información personal (PII) en audio, condicionada a un detector de texto externo.
+- Interfaz de decisiones tipadas con salida JSON-segura que incluye tarea, tipo, estado, valor, probabilidades, umbral, marcas temporales de ventana, latencia y flag de calibración.
+- Procesamiento de audio: mezcla a mono, remuestreo a 16 kHz y recorte a los últimos ocho segundos, con relleno por la izquierda y máscara de validez para clips más cortos.
+- No soporta generación de texto libre, razonamiento general, código ni matemáticas; es un modelo de clasificación de audio.
 
 ## Casos de uso
 
-- Gestión de turnos en agentes de voz: el modelo responde a la pregunta "Has the speaker finished?" con una probabilidad, lo que permite a un agente conversacional decidir cuándo ceder la palabra. Con una latencia p95 de 13 ms por pregunta en una NVIDIA L4, es adecuado para bucles de diálogo en tiempo real.
-- Detección de actividad de voz en pipelines de transcripción: la salida `noul` para "Is someone speaking?" con AUROC 0,995 en AMI permite filtrar silencios antes de invocar un ASR completo, reduciendo coste computacional en sistemas de reuniones o atención al cliente.
-- Enrutamiento multilingüe: la pregunta de idioma con salida `choice` sobre 30 lenguas permite dirigir cada fragmento de audio al modelo de ASR o al agente adecuado, con precisión cerrada del 100% en FLEURS.
-- Keyword spotting en flujos de voz: la detección de términos por coincidencia exacta sobre hipótesis del decoder permite activar comandos o disparadores ("Did someone say 'hello'?") sin entrenar un detector específico por palabra.
-- Análisis de reuniones: las preguntas de mismo hablante y cambio de hablante (AUROC 0,998 y 0,966 en AMI) permiten segmentar ventanas de ocho segundos para identificar transiciones de turno, útil en sistemas de notas automáticas o resúmenes de reuniones.
-- Moderación y privacidad en audio: la detección experimental de información personal, combinada con un detector de PII de texto, puede marcar fragmentos que contengan datos sensibles antes de almacenarlos o procesarlos.
-- Control de calidad en centros de llamadas: el conteo de hablantes (0/1/2/3+) y la detección de cambio de hablante permiten verificar que las conversaciones cumplen los supuestos esperados (por ejemplo, una conversación de dos personas) y detectar anomalías.
+- Gestión de turnos en agentes de voz: el modelo decide si el usuario ha terminado de hablar (AUROC 0,930 en Smart Turn v3.2) para que el agente responda sin solapamientos; su latencia de 13 ms en L4 lo hace apto para el bucle de control de un sistema conversacional.
+- Detección de actividad de voz en pipelines de transcripción: filtrar segmentos sin habla antes de enviarlos a un ASR, con AUROC 0,995 en AMI y 0,9996 en VoxConverse, reduciendo coste de transcripción.
+- Enrutamiento multilingüe: identificar el idioma de la ventana (30 idiomas, 100 % de precisión en FLEURS y 93 % en Common Voice) para dirigir la petición al modelo o pipeline adecuado.
+- Activación por palabra clave: detectar términos concretos en audio (AUROC 0,92 en Common Voice, 0,97 en FLEURS) para wake words o comandos, teniendo en cuenta que las puntuaciones no están calibradas.
+- Análisis de reuniones: detectar cambios de hablante (AUROC 0,966 en AMI, 0,980 en VoxConverse) y estimar el número de participantes por ventana para segmentar la conversación antes de un diarizador completo.
+- Moderación y privacidad: marcar ventanas que contengan información personal (tarea experimental, F1 0,904 en 200 clips sintéticos pt-BR con detector interno) antes de almacenar o procesar el audio.
+- Preprocesado en sistemas de subtitulado en directo: combinar VAD, LID y detección de cambio de hablante en una sola pasada del encoder para etiquetar segmentos con bajo coste computacional.
 
 ## Benchmarks y rendimiento
 
-| Tarea | Salida | Resultado | Referencia comparada |
+Resultados reportados por el autor para el checkpoint publicado:
+
+| Tarea | Salida | Estado | Resultado reportado |
 |---|---|---|---|
-| Fin de turno (Smart Turn v3.2 test) | `score` | AUROC 0,930 | Smart Turn v3.2: 0,982 (in-distribution) |
-| Fin de turno (ICSI meetings) | `score` | AUROC 0,716 | 0,712 (empate) |
-| Actividad de voz (AMI) | `noul` | AUROC 0,995 | No disponible |
-| Actividad de voz (VoxConverse) | `noul` | AUROC 0,9996 | No disponible |
-| Idioma (FLEURS) | `choice` | Precisión cerrada 100% | No disponible |
-| Idioma (Common Voice, 300 clips) | `choice` | Precisión 93% | No disponible |
-| Término (Common Voice) | `noul` | AUROC 0,92 | No disponible |
-| Término (FLEURS) | `noul` | AUROC 0,97 | No disponible |
-| Mismo hablante (AMI) | `noul`/`score` | AUROC 0,998 | ECAPA: 0,985 |
-| Mismo hablante (VoxConverse) | `noul`/`score` | AUROC 0,996 | ECAPA: 0,995 |
-| Cambio de hablante (AMI) | `noul`/`score` | AUROC 0,966 | ECAPA: 0,924 |
-| Cambio de hablante (VoxConverse) | `noul`/`score` | AUROC 0,980 | ECAPA: 0,962 |
-| Conteo de hablantes (AMI) | `choice` | Precisión 0,778 | pyannote 3.1: 0,738 |
-| Conteo de hablantes (VoxConverse) | `choice` | Precisión 0,859 | pyannote 3.1: 0,836 |
-| Información personal (200 clips sintéticos pt-BR) | `noul` | F1 0,904 | No disponible |
+| Fin de turno | score | validado | AUROC 0,930 en Smart Turn v3.2 test (Smart Turn v3.2: 0,982, in-distribution); 0,716 vs 0,712 en reuniones ICSI (empate) |
+| Actividad de voz | noul | validado | AUROC 0,995 en AMI; 0,9996 en VoxConverse |
+| Idioma | choice | validado | 30 idiomas; precisión 100 % en FLEURS; 93 % en Common Voice (300 clips cada uno) |
+| Término | noul | validado | AUROC 0,92 en Common Voice; 0,97 en FLEURS; puntuaciones no calibradas |
+| Mismo hablante | noul / score | validado | AUROC 0,998 en AMI; 0,996 en VoxConverse; ECAPA: 0,985 y 0,995 |
+| Cambio de hablante | noul / score | validado | AUROC 0,966 en AMI; 0,980 en VoxConverse; ECAPA: 0,924 y 0,962 |
+| Conteo de hablantes (0/1/2/3+) | choice | validado | Precisión 0,778 en AMI; 0,859 en VoxConverse; pyannote 3.1: 0,738 y 0,836; subestima 3+ |
+| Información personal | noul | experimental | Requiere detector de PII textual externo; F1 0,904 en 200 clips sintéticos pt-BR con detector interno |
+
+Comparación con audio-LLM en 1.000 preguntas públicas fijas (respuesta zero-shot, elección por suma de log-probabilidades):
+
+| Slice | n | Métrica | Marimba | Qwen3-Omni-30B-A3B | Qwen2-Audio-7B | FireRedAudio |
+|---|---:|---|---:|---:|---:|---:|
+| Idioma Common Voice | 52 | accuracy | 0,904 | 1,000 | 0,846 | 0,962 |
+| Idioma FLEURS | 200 | accuracy | 1,000 | 1,000 | 0,840 | 0,865 |
+| Término Common Voice, choice | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Latencia p95 por pregunta en una NVIDIA L4 (bf16, batch size 1): 13 ms para fin de turno, 16 ms para actividad de voz, 161 ms para idioma y 2,35 s para detección de términos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; al tratarse de un adaptador sobre Qwen3-ASR-0.6B con cabezas ligeras, el modelo base de 0,6B ocupa del orden de 1,2 GB en float32 y aproximadamente 0,6 GB en bf16, más el espacio de las cabezas.
-- GPU recomendadas: se reportan mediciones en NVIDIA L4; por tamaño, el modelo cabe en GPUs consumer como RTX 4090, RTX 3090 o superiores.
-- Cabe en GPU consumer: sí, dado el tamaño del modelo base (0,6B) y las cabezas ligeras.
-- Opciones de despliegue: la librería oficial `marimba` (instalable con `pip install "marimba-audio[torch]"`), con backends `torch` y selección de dispositivo (`cpu`, GPU) y dtype (`float32`, `bf16`). No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: p95 por pregunta en L4 (bf16, batch 1): 13 ms (fin de turno), 16 ms (actividad de voz), 161 ms (idioma), 2,35 s (detección de términos). El throughput agregado no se reporta.
+- VRAM estimada: el backbone es de 0,6B de parámetros; en bf16 ocupa aproximadamente 1,2 GB de pesos, más el adaptador y el overhead de inferencia. En float32, unos 2,4 GB solo de pesos.
+- GPU recomendadas: el autor reporta mediciones en NVIDIA L4; por tamaño, cabe holgadamente en RTX 4090, RTX 3090, A100 y H100.
+- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 4 GB de VRAM en bf16, incluidas RTX 3060 y superiores.
+- Opciones de despliegue: paquete `marimba-audio[torch]` con backends torch (documentado); no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: p95 de 13 ms (turn end), 16 ms (VAD), 161 ms (idioma) y 2,35 s (términos) por pregunta en L4 con batch size 1; no se ofrecen garantías de tiempo real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Marimba (charcot-ai) | Adaptador sobre Qwen3-ASR-0.6B | Ventanas de 8 s | Preguntas tipadas sobre audio | Apache-2.0 | Hugging Face |
-| Smart Turn v3.2 | No disponible | No disponible | Detección de fin de turno | No disponible | No disponible |
-| ECAPA | No disponible | No disponible | Embeddings de hablante | No disponible | No disponible |
-| pyannote 3.1 | No disponible | No disponible | Diarización | No disponible | No disponible |
+| Marimba | 0,6B (backbone) | 8 s de audio | Clasificación de audio multitarea (turn-taking, VAD, LID, KWS) | Apache 2.0 | Hugging Face |
+| Qwen3-Omni-30B-A3B | 30B totales (3B activos, MoE) | No disponible | Audio-LLM generalista | No disponible | Hugging Face |
+| Qwen2-Audio-7B | 7B | No disponible | Audio-LLM generalista | No disponible | Hugging Face |
+| FireRedAudio | No disponible | No disponible | Audio-LLM generalista | No disponible | No disponible |
 
-Marimba se compara en su model card con Smart Turn v3.2 (fin de turno), ECAPA (mismo hablante y cambio de hablante) y pyannote 3.1 (conteo de hablantes). No se dispone de datos de parámetros, contexto ni licencia de estos sistemas en la información proporcionada.
+En la comparación pareada del autor, Marimba supera a Qwen2-Audio-7B en identificación de idioma (0,904 vs 0,846 en Common Voice; 1,000 vs 0,840 en FLEURS) y queda por debajo de Qwen3-Omni-30B-A3B (1,000) y FireRedAudio (0,962) en Common Voice, con empate en FLEURS frente a Qwen3-Omni. Frente a ECAPA, Marimba obtiene AUROC superior en mismo hablante y cambio de hablante, y frente a pyannote 3.1 mejora el conteo de hablantes.
 
 ## Limitaciones y advertencias
 
-- Las ventanas son de ocho segundos; el contexto del decoder por encima de ocho segundos no está validado.
-- La detección de términos hereda los fallos del ASR en palabras raras.
-- Las preguntas de actividad de voz se evaluaron en portugués y en árabe, hindi, coreano y ruso retenidos (AUROC mínimo 0,98); las preguntas reconocidas usan el prompt canónico.
-- La detección de información personal solo se evaluó en habla sintética de portugués brasileño y requiere un detector de PII de texto externo no incluido.
-- No soporta clasificación de sonido ni de escena; la cabeza está al nivel del azar en CochlScene.
-- La calibración cambia entre dominios: en ICSI, 200 ventanas etiquetadas por fold redujeron el ECE de fin de turno de 0,200 a 0,011.
-- Las preguntas de hablante son decisiones por ventana: comparan mitades de cuatro segundos o los últimos dos segundos con los seis anteriores; no son diarización y no producen identidades ni líneas temporales.
-- No apto para diagnóstico, verificación de identidad, vigilancia ni automatización crítica para la seguridad.
-- Riesgo de alucinación y sesgos: no se documentan sesgos específicos en la información disponible; al depender de un ASR congelado, hereda sus sesgos lingüísticos y acústicos.
-- Licencia Apache-2.0 para las cabezas y pesos de lectura; el modelo base Qwen3-ASR-0.6B también es Apache-2.0, pero conviene verificar los términos del dataset de entrenamiento (CC BY 4.0) para usos derivados.
+- Solo se puntúan los últimos ocho segundos de audio; las preguntas de hablante requieren ocho segundos válidos y devuelven `None` en ventanas más cortas.
+- Las puntuaciones de detección de términos no están calibradas y no se ofrece garantía de tiempo real.
+- La identificación de idioma es de conjunto cerrado: la opción "Other" agrega los idiomas restantes soportados, pero no detecta cualquier idioma desconocido.
+- Las tareas de hablante son decisiones por ventana: no identifican personas ni generan líneas temporales de diarización.
+- La tarea de información personal es experimental y necesita un detector de PII textual externo que no se incluye.
+- El conteo de hablantes subestima la categoría 3+ (precisión 0,778 en AMI y 0,859 en VoxConverse).
+- Los resultados de benchmarks corresponden al checkpoint evaluado y no garantizan el comportamiento ante prompts arbitrarios o condiciones de despliegue distintas.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las salidas probabilísticas pueden ser erróneas en dominios alejados de los datos de evaluación; el autor no documenta sesgos específicos.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del backbone Qwen3-ASR-0.6B y del dataset de entrenamiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/charcot-ai/marimba
-- Modelo base Qwen3-ASR-0.6B: https://huggingface.co/Qwen/Qwen3-ASR-0.6B/tree/5eb144179a02acc5e5ba31e748d22b0cf3e303b0
-- Dataset de entrenamiento Smart Turn v3.2: https://huggingface.co/datasets/pipecat-ai/smart-turn-data-v3.2-train/tree/f8c95d284595defb6b88a715c356cbc5c31b7ad1
+- Hugging Face: https://huggingface.co/charcot-ai/marimba
+- Paper: https://arxiv.org/abs/2611.18330
+- Demo (Space): https://huggingface.co/spaces/charcot-ai/marimba
+- Código fuente: https://github.com/Charcot-AI/marimba-api
+- Documentación: https://github.com/Charcot-AI/marimba-api/tree/main/docs
+- Documentación de entradas de audio: https://github.com/Charcot-AI/marimba-api/blob/main/docs/audio.md
+- Documentación de streaming: https://github.com/Charcot-AI/marimba-api/blob/main/docs/streaming.md
+- Protocolo de medición de benchmarks: https://github.com/Charcot-AI/marimba-api/blob/main/docs/benchmarks.md
+- Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
+- Dataset de entrenamiento: https://huggingface.co/datasets/pipecat-ai/smart-turn-data-v3.2-train
 - Sitio del autor: https://charcot.ai

@@ -1,97 +1,98 @@
 # litert-community/PiVo-1.4M
 
 ## Resumen
+PiVo-1.4M para LiteRT es la conversion al formato LiteRT (TFLite) del modelo de sintesis de voz `empero-ai/PiVo-1.4M`, realizada por la comunidad `litert-community`. Se trata de un modelo TTS en ingles de dos voces (Pi y Vo) con solo 1.401.562 parametros, vocoder incluido, pensado para inferencia en dispositivo (on-device) sobre CPU de moviles Android. La conversion se hizo con litert-torch 0.10.0 para LiteRT 2.3.0.
 
-PiVo-1.4M es un modelo de síntesis de voz (text-to-speech) en ingles con dos voces, Pi y Vo, que suma 1.401.562 parametros incluyendo el vocoder. Lo desarrolla empero-ai y esta pensado para sintesis de voz en dispositivos con recursos muy limitados: un modelo acustico de 584.965 parametros predice 18 coeficientes cepstrales, el pitch y la correlacion de pitch cada 10 ms, y un vocoder derivado de FARGAN de 816.597 parametros los convierte en audio mono a 16 kHz.
+El modelo original publica grafos ONNX sin codigo PyTorch, por lo que la conversion requirio reescribir en PyTorch los cuatro grafos (encoder, decoder, conditioning y vocoder), cargar los pesos ONNX y convertir todo a float32. El resultado son grafos de formas fijas: encoder en cinco tamanos (hasta 32, 64, 128, 256 y 512 tokens), decoder que genera 16 tramas (160 ms) por llamada y vocoder que produce una trama de 10 ms por llamada.
 
-La ficha que nos ocupa, `litert-community/PiVo-1.4M`, no es el modelo original sino una conversion a LiteRT (formato TFLite) realizada con litert-torch 0.10.0 sobre LiteRT 2.3.0. Como el modelo fuente solo distribuye grafos ONNX y no codigo PyTorch, y los conversores de LiteRT no aceptan ONNX, los cuatro grafos (encoder, decoder, conditioning y vocoder) se reescribieron en PyTorch, se cargaron con los pesos de los ONNX originales y se convirtieron a float32 con formas fijas.
-
-Su relevancia es practica: demuestra que un stack TTS completo puede ejecutarse en un solo hilo de CPU de un movil. Segun la model card, en un Galaxy S26 genera un segundo de audio en 27,5 ms con un hilo de CPU, y la conversion se valida contra la salida del modelo original en ONNX Runtime con metricas objetivas (WER, embedding de hablante, correlacion log-mel). No hay app Android publicada; el repositorio incluye un host en Python y un runner en C++.
+Es relevante porque demuestra que un TTS de calidad razonable puede ejecutarse en tiempo real en un solo hilo de CPU de un movil moderno: en un Galaxy S26 genera un segundo de audio en 27,5-28,6 ms, muy por debajo del tiempo real. El repositorio incluye un host en Python y un runner en C++ para Android, aunque no hay aplicacion Android publicada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo acustico + vocoder derivado de FARGAN; cuatro grafos (encoder, decoder, conditioning, vocoder) convertidos a LiteRT/TFLite |
-| Parametros totales | 1.401.562 (584.965 del modelo acustico + 816.597 del vocoder, segun el modelo fuente) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica; limites de entrada: 2.000 caracteres, 512 tokens, 30 segundos por utterance |
-| Tipos de cuantizacion | float32 (conversion de este repositorio); el modelo fuente distribuye ONNX |
-| Idiomas soportados | ingles |
+| Arquitectura | Acustica + vocoder derivado de FARGAN (grafos LiteRT: encoder, decoder, conditioning, vocoder) |
+| Parametros totales | 1.401.562 (vocoder incluido) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica; limites de entrada: 2.000 caracteres, 512 tokens, 30 s por locucion |
+| Tipos de cuantizacion | float32 (unico formato publicado en este repo) |
+| Idiomas soportados | ingles (en) |
 | Licencia | apache-2.0 |
-| Formato de pesos | LiteRT/TFLite (float32); el modelo base en ONNX |
+| Formato de pesos | LiteRT / TFLite (grafos float32); modelo base en ONNX |
 
 ## Arquitectura y entrenamiento
+El modelo es un sistema TTS en dos etapas. El modelo acustico predice cada 10 ms 18 coeficientes cepstrales, el pitch y la correlacion de pitch; un vocoder derivado de FARGAN convierte esas predicciones en audio mono a 16 kHz. La conversion a LiteRT reescribio los cuatro grafos en PyTorch (encoder, decoder, conditioning y vocoder) a partir de los pesos ONNX del modelo original, con formas fijas para permitir la ejecucion en LiteRT.
 
-El pipeline consta de cuatro grafos con formas fijas. El encoder admite cinco tamanos, para hasta 32, 64, 128, 256 y 512 tokens (fonemas, espacios, puntuacion y dos marcadores de frase). El decoder genera 16 frames (160 ms) por llamada y el vocoder produce un frame de 10 ms por llamada. El frontend de texto es el del modelo original: solo ingles, palabras del diccionario de pronunciacion CMU, mas numeros, importes de moneda, ordinales y fechas ISO; las palabras fuera del diccionario provocan un error salvo que se aporte la pronunciacion en ARPAbet mediante overrides.
-
-El host en Python (`host/`) ejecuta los grafos con el frontend, diccionario y bucle del modelo fuente: redondea las duraciones y alimenta decoder y vocoder, de modo que el audio sale en tramos de 10 ms. Por defecto usa una copia del bucle que llama al vocoder una vez por frame. El directorio `runner/` contiene el programa C++ que se ejecuto en los moviles mediante la API C de LiteRT. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens ni si hubo RLHF o DPO, ni sobre innovaciones como decodificacion especulativa.
+No se dispone de informacion sobre los datos de entrenamiento del modelo original (numero de tokens, composicion del corpus, uso de RLHF/DPO) en la informacion proporcionada. El frontend de texto del host usa el diccionario de pronunciacion CMU, admite numeros, importes monetarios, ordinales y fechas ISO, y permite anadir pronunciaciones en ARPAbet mediante overrides. La velocidad de habla es configurable entre 0.5 y 2.0.
 
 ## Capacidades
-
-- Sintesis de voz en ingles a 16 kHz mono con dos voces seleccionables, Pi y Vo.
-- Control de velocidad de habla entre 0,5 y 2,0.
-- Normalizacion de texto limitada: numeros, importes de moneda, ordinales y fechas ISO.
-- Pronunciacion personalizada mediante overrides en ARPAbet para palabras ausentes del diccionario CMU.
-- Generacion de audio en streaming por frames de 10 ms (`iter_audio`) y sintesis completa a float32 (`synthesize`).
-- Ejecucion en un solo hilo de CPU (host Python y runner C++ con LiteRT C API).
-- No soporta tool calling, agentes, vision, audio de entrada ni modo thinking.
+- Sintesis de voz en ingles a 16 kHz mono con dos voces: Pi y Vo.
+- Generacion por tramas de 10 ms mediante el vocoder y por bloques de 160 ms mediante el decoder.
+- Control de velocidad de habla (0.5 a 2.0).
+- Entrada de texto con normalizacion basica: numeros, moneda, ordinales y fechas ISO.
+- Soporte de pronunciacion personalizada mediante overrides en ARPAbet.
+- Ejecucion on-device en CPU de un solo hilo, sin GPU.
+- API Python (`PiVoLiteRT`) con metodos `save`, `synthesize` e `iter_audio` (streaming por tramas).
+- Runner en C++ usando la API C de LiteRT para Android.
+- No soporta tool calling, agentes, vision ni audio de entrada; es exclusivamente TTS.
 
 ## Casos de uso
-
-- Sintesis de voz en moviles Android: el runner C++ con LiteRT C API permite generar voz en un hilo de CPU; en un Galaxy S26 produce un segundo de audio en 27,5 ms, adecuado para asistentes y lectores de pantalla sin conexion.
-- Lectura de notificaciones y accesibilidad: el modelo cabe en el presupuesto de memoria de un dispositivo movil (1,4 M de parametros) y sintetiza utterances de hasta 30 segundos, suficiente para mensajes y alertas.
-- Audiolibros y contenido largo por fragmentos: el limite de 2.000 caracteres y 30 segundos por utterance obliga a trocear el texto, pero el control de velocidad (0,5 a 2,0) permite ajustar la locucion.
-- Sistemas embebidos y edge computing: la conversion a TFLite float32 y las formas fijas del encoder (hasta 32, 64, 128, 256 o 512 tokens) facilitan el despliegue en hardware sin GPU.
-- Prototipado de interfaces de voz: el host Python replica la API del modelo original (`PiVoLiteRT` con `save`, `synthesize` e `iter_audio`), lo que permite integrar la voz en aplicaciones de escritorio sin depender de ONNX Runtime.
-- Verificacion de conversiones de modelos: el flag `--check` descarga los ONNX del modelo fuente y compara la salida con umbrales definidos (WER, coseno de hablante, HNR, correlacion log-mel), util como referencia para validar otros pipelines de conversion.
+- Lectura por voz en aplicaciones Android: el modelo cabe en un movil y genera audio mas rapido que tiempo real en un solo hilo de CPU, lo que permite sintetizar frases bajo demanda sin conexion.
+- Accesibilidad para personas con discapacidad visual: lectura de notificaciones, mensajes y contenido de pantalla con latencia de decenas de milisegundos por segundo de audio.
+- Asistentes de voz offline: integracion del runner C++ en un servicio Android para respuestas habladas sin enviar texto a la nube.
+- Generacion de avisos y alertas en dispositivos embebidos: el tamano reducido (1,4 M de parametros) y el formato TFLite permiten desplegarlo en hardware con recursos limitados.
+- Prototipado de interfaces conversacionales: el host Python con `iter_audio` facilita la reproduccion en streaming trama a trama para pruebas de UX.
+- Dooblaje o locucion automatizada de contenido corto en ingles: con el control de velocidad y las dos voces disponibles para alternar narradores.
+- Pruebas de regresion de pipelines TTS: el flag `--check` compara la salida LiteRT con la del modelo ONNX original usando WER, similitud de hablante y correlacion log-mel.
 
 ## Benchmarks y rendimiento
+La model card no publica benchmarks clasicos (MMLU, HumanEval, GSM8K), pero si mediciones de velocidad y fidelidad frente al modelo original en ONNX Runtime.
 
-Resultados de la validacion de la conversion frente al modelo fuente en ONNX Runtime (CPU, un hilo), sobre 54 utterances (27 frases en ambas voces, de 2 a 88 palabras), a velocidad 1,0:
-
-| Plataforma | Runtime | WER (transcripciones distintas) | Coseno de hablante minimo | Correlacion log-mel minima | Longitud identica | Dentro del umbral |
-|---|---|---:|---:|---:|---:|---|
-| Apple M4 Max | Modelo fuente (referencia) | 0,73 % | no disponible | no disponible | no disponible | no disponible |
-| Apple M4 Max | CPU, 1 hilo | 0,73 % (0) | 0,99983 | 0,99982 | 54 de 54 | si |
-| Apple M4 Max | GPU (Metal), FP32 | dato truncado en la informacion disponible | no disponible | no disponible | no disponible | no disponible |
-
-Umbrales de aceptacion definidos antes de comparar: el WER puede subir como maximo 1 punto y como maximo 3 de las 54 transcripciones pueden diferir; coseno de hablante (ECAPA, `speechbrain/spkrec-ecapa-voxceleb`) de al menos 0,95; variacion de HNR de como maximo 1 dB y de la proporcion de energia entre 2 y 8 kHz de como maximo 1,5 dB; correlacion log-mel de 0,99 o mas; y, en float32, duraciones en frames y periodo de pitch identicos a la referencia salvo valores a menos de 0,0001 de un limite de redondeo.
-
-En cuanto a velocidad, en un Galaxy S26 con un hilo de CPU se genera un segundo de audio en 27,5 ms. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) por tratarse de un modelo TTS; los datos de calidad disponibles son los de la tabla anterior.
+| Medicion | Resultado |
+|---|---|
+| Velocidad en Galaxy S26 (CPU, 1 hilo) | 27,5 ms y 28,6 ms por segundo de audio (dos ejecuciones, 2026-11-08) |
+| Formato de audio | 16 kHz mono, tramas de 10 ms |
+| Correlacion log-mel Pi (Galaxy S26 vs ONNX Runtime) | 0,9999993 |
+| Correlacion log-mel Vo (Galaxy S26 vs ONNX Runtime) | 0,9999997 |
+| WER (54 locuciones, Whisper large-v3-turbo) | 0,73 % (0 transcripciones distintas de la referencia) |
+| Similitud de hablante minima (ECAPA) | 0,99983 |
+| Correlacion log-mel minima | 0,99982 |
+| Locuciones con la misma longitud que la referencia | 54 de 54 |
+| Medicion en Pixel 11 Pro | mencionada en la model card, sin cifras en la informacion disponible |
 
 ## Requisitos de hardware
-
-- VRAM estimada: no aplica; el modelo esta disenado para CPU. Con 1,4 M de parametros en float32, el peso de los parametros ronda los 5,6 MB, aunque el tamano real de los ficheros TFLite no se detalla en la informacion disponible.
-- GPU recomendadas: no requiere GPU; se ha validado en CPU (Apple M4 Max, un hilo) y en moviles (Galaxy S26, Pixel 11 Pro). La model card menciona una ejecucion en GPU Metal en FP32 cuyo resultado esta truncado.
-- Cabe en cualquier GPU consumer, e incluso en moviles de gama alta; el objetivo declarado es on-device Android.
-- Opciones de despliegue: LiteRT 2.3.0 con API C (runner C++), host Python con los paquetes fijados en `host/requirements.txt` (Python 3.12), y el modelo fuente en ONNX Runtime para comparacion.
-- Latencia y throughput: 27,5 ms por segundo de audio en un hilo de CPU de Galaxy S26 (medido el 2026-11-08); la velocidad sigue en ajuste segun la model card.
+- Inferencia en CPU de un solo hilo; no requiere GPU ni aceleradores dedicados.
+- VRAM estimada: no aplica; el modelo pesa 1,4 M de parametros en float32 (unos pocos MB) y el repo ocupa 0,0 GB.
+- Dispositivos probados: Galaxy S26 y Pixel 11 Pro (Android).
+- Tambien ejecutable en CPU de escritorio: las comprobaciones se hicieron en un Apple M4 Max con un hilo de CPU.
+- Despliegue: LiteRT 2.3.0 (API C++ para Android), host Python con `litert-torch` y paquetes fijados en `host/requirements.txt` (Python 3.12).
+- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplica a un TTS).
+- Latencia: aproximadamente 28 ms por segundo de audio en Galaxy S26, es decir, unas 35 veces mas rapido que tiempo real.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / limites | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| litert-community/PiVo-1.4M | 1.401.562 | 2.000 caracteres, 512 tokens, 30 s por utterance | en | apache-2.0 | TFLite float32 | Conversion LiteRT del modelo de empero-ai; 2 voces |
-| empero-ai/PiVo-1.4M | 1.401.562 | mismos limites | en | apache-2.0 | ONNX | Modelo fuente; sin mediciones en ARM o movil segun su card |
-| Otros modelos TTS de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible | No hay datos de alternativas comparables en la informacion proporcionada |
+| Modelo | Parametros | Idiomas | Formato | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| PiVo-1.4M (LiteRT) | 1.401.562 | en | LiteRT/TFLite | apache-2.0 | TTS on-device, 2 voces |
+| empero-ai/PiVo-1.4M | 1.401.562 | en | ONNX | no disponible en la informacion proporcionada | Modelo base del que deriva esta conversion |
+| Alternativas TTS de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni especificaciones de modelos comparables en la informacion proporcionada para establecer una comparativa cuantitativa con otras alternativas TTS.
 
 ## Limitaciones y advertencias
-
-- Solo ingles: el frontend usa el diccionario CMU y no admite otros idiomas.
-- Las palabras fuera del diccionario de pronunciacion provocan un error; hay que aportar la pronunciacion en ARPAbet mediante overrides.
-- Limites estrictos de entrada: 2.000 caracteres, 512 tokens y 30 segundos por utterance; velocidad entre 0,5 y 2,0.
-- Solo dos voces (Pi y Vo); no hay clonacion de voz ni control de estilo.
-- Las formas de los grafos son fijas: el encoder tiene cinco tamanos (hasta 32, 64, 128, 256 y 512 tokens) y el decoder genera 16 frames por llamada.
-- No hay app Android publicada; solo host Python y runner C++.
-- Riesgo de alucinacion y sesgos: no hay informacion disponible en la model card sobre sesgos del dataset de entrenamiento ni sobre el origen de los datos de voz.
-- La licencia apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo fuente empero-ai/PiVo-1.4M.
-- La velocidad de inferencia sigue en ajuste segun la model card; las cifras de latencia pueden cambiar en futuras actualizaciones.
+- Solo admite ingles; el frontend lanza error ante palabras ausentes del diccionario CMU salvo que se aporte una pronunciacion en ARPAbet.
+- Limites estrictos de entrada: 2.000 caracteres, 512 tokens y 30 segundos por locucion.
+- Solo hay dos voces (Pi y Vo); no hay clonacion de voz ni control de estilo o emocion.
+- Los grafos tienen formas fijas; el encoder debe elegirse entre los cinco tamanos disponibles (hasta 32, 64, 128, 256 y 512 tokens).
+- Solo se publican pesos en float32; no hay variantes cuantizadas en este repositorio.
+- No hay aplicacion Android publicada; el uso en dispositivo requiere compilar el runner C++.
+- No se documentan sesgos del modelo ni tasas de alucinacion en la informacion proporcionada; al ser TTS, el riesgo principal es de pronunciacion incorrecta o prosodia degradada en textos fuera del dominio.
+- La licencia apache-2.0 permite uso comercial, pero conviene verificar la licencia del modelo base y de los componentes (diccionario CMU, vocoder FARGAN) antes de produccion.
+- El rendimiento medido corresponde a un Galaxy S26 y un Apple M4 Max; en dispositivos de gama baja la latencia puede ser mayor.
 
 ## Enlaces
-
 - Repositorio LiteRT: https://huggingface.co/litert-community/PiVo-1.4M
-- Modelo fuente: https://huggingface.co/empero-ai/PiVo-1.4M
-- Ficheros del modelo fuente: https://huggingface.co/empero-ai/PiVo-1.4M/tree/main
-- Instrucciones del runner C++: `runner/README.md` dentro del repositorio LiteRT
-- Informe tecnico del modelo fuente: `technical_report.pdf` en el repositorio de empero-ai/PiVo-1.4M
+- Modelo base: https://huggingface.co/empero-ai/PiVo-1.4M
+- Instrucciones de compilacion del runner: `runner/README.md` dentro del repositorio
+- Muestras de audio: `samples/pi_litert.wav`, `samples/vo_litert.wav`, `samples/pi_reference.wav`, `samples/vo_reference.wav`
+- Espectrogramas: `samples/spectrogram.png`

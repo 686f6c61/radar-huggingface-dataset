@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "google mail",
-      "url": "https://mail.google.com/mail?hl=it",
-      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
-    },
-    {
-      "title": "Gmail - Google Accounts",
-      "url": "https://accounts.google.com/servicelogin?service=mail",
-      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
-    },
-    {
-      "title": "Sign in - Google Accounts",
-      "url": "https://accounts.google.com/Login",
-      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
-    },
-    {
-      "title": "Accedi - Account Google",
-      "url": "https://www.google.com/accounts/login?hl=it",
-      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità Ospite"
-    },
-    {
-      "title": "Gmail: email sicura per tutti, basata sull'AI | Google Workspace",
-      "url": "https://workspace.google.com/intl/it/gmail/",
-      "snippet": "Gmail, ora con la potenza di Gemini AI. Scopri nuovi modi per scrivere, rispondere e organizzare le tue email. Prova una posta in …"
-    }
-  ]
+  "sources": []
 }

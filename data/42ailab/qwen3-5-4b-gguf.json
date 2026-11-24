@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 351,
+  "downloads_30d": 380,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.5 4b - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/qwen3-5-4b.html",
-      "snippet": "Download Qwen3.5 4b GGUF model. 8.40 GB, 1,514,769 downloads, 543 likes."
-    },
-    {
-      "title": "Qwen/Qwen3-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
-      "snippet": "Text Generation model with 4B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

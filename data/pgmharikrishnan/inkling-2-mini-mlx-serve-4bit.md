@@ -2,90 +2,100 @@
 
 ## Resumen
 
-Inkling-2-Mini-MLX-Serve-4bit es una cuantización de 4 bits del modelo thinkingmachines/Inkling-2-Mini, publicada por el usuario pgmharikrishnan. Se trata de una conversión orientada a la librería `mlx-serve`, pensada para ejecutar el modelo en hardware Apple Silicon mediante el framework MLX. El modelo base pertenece a la familia `inkling2_loop`, una arquitectura MoE con transformer "looped" (capas recurrentes), con 26.070.385.152 parámetros totales según los pesos en safetensors y un rango de 3,4B–5,4B parámetros activos por token según la model card del autor de la conversión.
+Inkling-2-Mini-MLX-Serve-4bit es una cuantizacion de 4 bits en formato MLX affine del modelo base thinkingmachines/Inkling-2-Mini, publicada por el usuario pgmharikrishnan. El modelo base emplea la arquitectura propietaria `inkling2_loop`, un transformer con capas repetidas (looped transformer) y mezcla de expertos (MoE) con 128 expertos enrutados y activacion top-8. Esta version cuantizada esta pensada para ejecutarse en Apple Silicon mediante el servidor mlx-serve, con un peso total de 26.070.385.152 parametros (unos 26,07 mil millones) y un repositorio de 15,4 GB.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una receta de conversión concreta: los expertos enrutados del modelo original venían en formato `modelopt` NVFP4 (con `group_size=16`), y se han de-cuantizado y vuelto a cuantizar a 4 bits afines de MLX con `group_size=64`, mientras que routers, controladores, normas y proyecciones auxiliares se mantienen en bfloat16. Por otro, es un ejemplo de cómo se distribuyen pesos ya cuantizados para inferencia local en Mac, un formato que no es directamente portable a CUDA ni a llama.cpp.
+La relevancia de este paquete radica en que incluye la cabeza de borrador DSpark (`mtp.safetensors`) del checkpoint original, lo que habilita decodificacion especulativa nativa sobre el propio modelo. El autor reporta entre 1,78 y 3,44 borradores aceptados por ronda, con el valor maximo en prompts de codigo. La arquitectura `inkling2_loop` y la cabeza DSpark estan implementadas en una rama publica del servidor mlx-serve, lo que permite ejecutar el modelo de extremo a extremo en hardware Apple Silicon con 32 GB o mas de memoria unificada.
 
-No se dispone de información sobre datos de entrenamiento, benchmarks, idiomas soportados ni detalles del proceso de alineación del modelo base en la información proporcionada. Esta ficha se limita a los datos verificables de la model card y de los metadatos de Hugging Face.
+El modelo declara una longitud de contexto de 1.048.576 tokens en su `config.json`, aunque el contexto practico queda limitado por la memoria disponible. La licencia es Apache-2.0, heredada del modelo base. No se han publicado datos sobre idiomas soportados ni resultados de benchmarks estandar en la informacion disponible.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con transformer "looped" (`model_type: inkling2_loop`); expertos enrutados tipo switch_mlp |
-| Parámetros totales | 26.070.385.152 (26,07B) |
-| Parámetros activos | 3,4B–5,4B (rango indicado en la model card del autor) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | 4 bits afín MLX (`bits=4`, `group_size=64`); routers, controladores, residuales de atención, convoluciones cortas, normas y proyecciones auxiliares en full/bfloat16 |
+| Arquitectura | `inkling2_loop`: transformer con capas repetidas (looped) y MoE; 24 capas fisicas con las capas 6..17 repetidas x3 (48 visitas de capa por token) |
+| Parametros totales | 26.070.385.152 (26,07 mil millones) |
+| Parametros activos | no disponible (MoE con 128 expertos enrutados y top-8, pero sin cifra de parametros activos publicada) |
+| Longitud de contexto | 1.048.576 tokens segun `config.json`; contexto practico limitado por memoria |
+| Tipos de cuantizacion | 4-bit MLX affine con `group_size=64` en expertos enrutados, proyecciones de atencion y `embed`/`unembed`; routers, controladores de bucle, residuales de atencion, pesos de convolucion corta (sconv) y normas en bf16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX), librería `mlx-serve` |
-| Tamaño del repositorio | 14,8 GB |
-| Modelo base | thinkingmachines/Inkling-2-Mini |
-| Relación con el base | quantized |
-| Pipeline | text-generation |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (4 shards de pesos troncales + `mtp.safetensors` para la cabeza DSpark) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE con arquitectura de transformer "looped": el bloque transformer se reutiliza en varias iteraciones o bucles, lo que permite aumentar la profundidad efectiva sin multiplicar linealmente el número de parámetros. Los pesos incluyen componentes propios de este diseño, como `wq_du`, `wk_dv`, `wv_dv`, `wr_du`, `wo_ud`, `gate_attn`, `attn_sink_proj`, `rel_logits_proj`, `sconv` (convoluciones cortas) y controladores de bucle, además de los expertos enrutados estándar (`w13_weight`, `w2_weight`).
+El tronco `inkling2_loop` consta de 24 capas fisicas, de las cuales las capas intermedias 6 a 17 se repiten tres veces, lo que da 48 visitas de capa por token. Incorpora BlockAttentionResidual cada 6 capas con valores residuales normalizados. La atencion no usa RoPE en la rama global: emplea un sesgo RelativeLogits (`d_rel = 16`, `rel_extent = 1024`) y cuatro convoluciones cortas por capa (`sconv_kernel_size = 4`); las capas de ventana deslizante usan una ventana de 1024 tokens. La capa MoE es un SwiGLU con softcap, 128 expertos enrutados, top-8, escala de ruta 8.0, softcap de puerta 4.0 y softcap de up 25.0, ademas de recorte L2 de QK y relative-logit y un softcap final de logits de 30.0.
 
-La conversión documentada por el autor es la siguiente: los expertos enrutados del checkpoint original estaban en NVFP4 de `modelopt` con `group_size=16` y una escala global calculada como `amax * 6 * 448 / outer_scale_denominator`; se de-cuantizaron, se separaron en `switch_mlp.gate_proj`, `switch_mlp.up_proj` y `switch_mlp.down_proj`, y se volvieron a cuantizar a 4 bits afines de MLX con `group_size=64`. La atención y los embeddings (`embed`, `unembed`) también se cuantizaron a 4 bits. Los routers, controladores, residuales de atención, pesos de convolución corta, normas, `attn_sink_proj` y `rel_logits_proj` se mantuvieron en precisión completa o bfloat16, y los pesos `sconv` se transpusieron de `[C, 1, K]` a `[C, K, 1]`. No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base usó RLHF o DPO.
+El checkpoint incluye una cabeza de borrador DSpark de tipo `rnn_hidden` con `block_size = 8` y `markov_rank = 256`, que lee taps en las visitas de capa 5, 23, 41 y 48. La cabeza pliega `hidden_out` a traves del `unembed` del tronco como sesgo de logits, aplica softcap y toma argmax en cada fila de borrador. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de RLHF o DPO del modelo base.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno, según el pipeline declarado `text-generation` y la etiqueta `conversational`.
-- Razonamiento y generación de código: no confirmado explícitamente en la información disponible, pero habitual en modelos de esta familia y tamaño.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el campo de idiomas no está cumplimentado.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
-- Inferencia nativa en Apple Silicon a través de MLX, con pesos ya cuantizados para reducir el uso de memoria.
+- Generacion de texto conversacional y completado de instrucciones, con plantilla de chat propia (`chat_template.jinja`).
+- Razonamiento con control de esfuerzo mediante `reasoning_effort` (rango 0.0-0.99); no existe flag `enable_thinking` y el valor 0.0 sigue emitiendo razonamiento breve.
+- Generacion de codigo, con rendimiento de decodificacion especulativa especialmente alto en prompts de codigo (3,44 borradores aceptados por ronda).
+- Decodificacion especulativa nativa mediante la cabeza DSpark, activable por peticion (`enable_mtp`) o a nivel de servidor (`--mtp`).
+- Servicio compatible con la API de OpenAI (`/v1/chat/completions`, `/v1/models`), incluyendo el reporte de capacidad `mtp_loaded`.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en Mac con Apple Silicon: el formato MLX y la cuantización de 4 bits permiten cargar un modelo de 26B totales en equipos con memoria unificada de gama alta, algo inviable con pesos en bf16. Adecuado para prototipado y uso personal en macOS.
-- Asistentes conversacionales de escritorio: la etiqueta `conversational` y el pipeline de generación de texto permiten integrar el modelo en aplicaciones de chat locales sin depender de la nube.
-- Procesamiento de texto por lotes en local: para tareas de resumen, reescritura o clasificación sobre documentos, el modelo puede ejecutarse en un Mac con suficiente memoria unificada, evitando costes de API.
-- Evaluación de arquitecturas MoE "looped": investigadores que quieran estudiar el comportamiento de este tipo de transformers pueden usar esta conversión para experimentar con un checkpoint ya cuantizado y ligero de cargar.
-- Desarrollo de pipelines MLX: sirve como referencia para integrar modelos MoE cuantizados en aplicaciones basadas en `mlx-serve` y para validar recetas de conversión desde NVFP4 a 4 bits afín.
-- Prototipado de agentes y asistentes con contexto conversacional: aunque no se confirma tool calling, el modelo puede usarse como generador de texto dentro de un bucle de agente implementado en el código de la aplicación.
+- Asistencia de codigo en local sobre Apple Silicon: el modelo puede generar funciones y completar tareas de programacion desde un Mac con 32 GB o mas de memoria unificada, aprovechando la decodificacion especulativa DSpark, que alcanza 3,44 borradores aceptados por ronda en prompts de codigo.
+- Servicio de chat compatible con OpenAI en estaciones de trabajo Mac: mediante `mlx-serve serve --mtp` se expone un endpoint `/v1/chat/completions` que clientes existentes pueden consumir sin cambios en el codigo.
+- Prototipado de aplicaciones conversacionales con contexto largo: la ventana declarada de 1.048.576 tokens permite procesar documentos extensos, aunque en la practica el limite lo marca la memoria (pico medido de 15,15 GB).
+- Evaluacion de arquitecturas looped transformer y MoE: investigadores pueden reproducir el comportamiento de las 48 visitas de capa por token y estudiar el efecto de la repeticion de capas en calidad y latencia.
+- Investigacion sobre decodificacion especulativa: la cabeza DSpark incluida permite medir tasas de aceptacion y comparar con otras estrategias de drafting sin entrenar una cabeza propia.
+- Despliegue de bajo coste en hardware de consumo: al caber en 15,2 GB de memoria en cuantizacion de 4 bits, el modelo se ejecuta en Macs de gama alta sin GPU dedicada, con 39,1-39,3 tok/s de decodificacion.
+- Control de esfuerzo de razonamiento en produccion: el parametro `reasoning_effort` permite ajustar el coste de inferencia por peticion segun la dificultad de la tarea.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Si se han publicado metricas de rendimiento de inferencia medidas en Apple Silicon sin decodificacion especulativa:
+
+| Metrica | Valor |
+|---|---|
+| Decodificacion | 39,1-39,3 tok/s |
+| Prefill | 204,6-206,3 tok/s |
+| Memoria pico | 15,15 GB |
+| Borradores DSpark aceptados por ronda | 1,78-3,44 (3,44 en prompts de codigo) |
+| Operaciones por forward | 10.809 (sin fusionar) |
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repositorio ocupa 14,8 GB en safetensors, por lo que se necesita al menos esa cantidad de memoria unificada más el overhead de ejecución (KV cache, buffers de activación). En la práctica, se recomienda un Mac con 24 GB o más de memoria unificada; 32 GB o más para contextos largos.
-- GPU recomendadas: Apple Silicon con MLX (series M1/M2/M3/M4, especialmente variantes Pro, Max y Ultra). No es compatible de forma nativa con CUDA sin reconversión.
-- ¿Cabe en GPU de consumo? En el ecosistema Apple, sí en equipos con memoria unificada suficiente; en GPUs NVIDIA de consumo (RTX 4090, 24 GB) requeriría una conversión a otro formato (por ejemplo, GGUF o GPTQ) que no se proporciona en este repositorio.
-- Opciones de despliegue: `mlx-serve` (librería declarada). No se indica soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria unificada: pico medido de 15,15 GB; se recomienda Apple Silicon con 32 GB o mas de memoria unificada.
+- GPU recomendadas: Apple Silicon (M-series) con 32 GB o mas de memoria unificada; no se documenta soporte para GPU NVIDIA o AMD en esta informacion.
+- Cabe en GPU de consumo: si, en Macs Apple Silicon de gama alta; no se dispone de datos para GPUs de consumo NVIDIA.
+- Opciones de despliegue: servidor `mlx-serve` compilado con Zig desde la rama `inkling2-loop-support`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 39,1-39,3 tok/s de decodificacion y 204,6-206,3 tok/s de prefill en Apple Silicon sin decodificacion especulativa; la decodificacion especulativa con DSpark mejora la aceptacion de borradores, pero no se publica el throughput resultante.
+- Nota de rendimiento: el forward actual esta sin fusionar con 10.809 operaciones por paso; la fusion de `depthAttention`, `router` y `messageGate` es la siguiente optimizacion conocida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato / despliegue |
-|---|---|---|---|---|---|
-| Inkling-2-Mini-MLX-Serve-4bit | 26,07B | 3,4B–5,4B | no disponible | Apache 2.0 | safetensors MLX, `mlx-serve` |
-| thinkingmachines/Inkling-2-Mini (base) | 26,4B (según model card) | 3,4B–5,4B | no disponible | Apache 2.0 | safetensors, formato original |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada. La siguiente tabla recoge unicamente los datos disponibles del modelo frente al modelo base del que deriva:
 
-No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| Inkling-2-Mini-MLX-Serve-4bit | 26,07 mil millones | 1.048.576 tokens | 4-bit MLX affine | Apache-2.0 | safetensors (MLX) |
+| thinkingmachines/Inkling-2-Mini | no disponible | 1.048.576 tokens (heredado) | no disponible (checkpoint original con expertos en NVFP4/MXFP8) | Apache-2.0 | safetensors |
+
+No se dispone de informacion sobre alternativas de la misma categoria (mismo tamano o misma tarea) para establecer una comparativa adicional.
 
 ## Limitaciones y advertencias
 
-- La cuantización a 4 bits puede degradar la calidad respecto al modelo base en tareas sensibles (matemáticas, código, razonamiento profundo); no se han publicado evaluaciones que cuantifiquen esta pérdida.
-- El proceso de conversión incluye una de-cuantización desde NVFP4 y una re-cuantización, lo que introduce una doble pérdida de precisión acumulada en los expertos enrutados.
-- No hay información sobre sesgos, riesgo de alucinación ni comportamiento en idiomas distintos del inglés; el campo de idiomas no está cumplimentado.
-- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base y de los datos de entrenamiento originales.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día: no hay evidencia de validación por parte de la comunidad.
-- El formato es específico de MLX; no es portable directamente a CUDA, llama.cpp u otros runners sin una nueva conversión.
-- No se especifica la longitud de contexto soportada, lo que impide planificar despliegues con ventanas largas.
-- No se confirma soporte de tool calling ni de agentes, por lo que no debe asumirse en producción sin validación previa.
+- La cache de prefijo queda desactivada para `inkling2_loop`: las instantaneas de cache de prefijo se omiten porque el estado KV del bucle es propiedad del modulo por visita, y una restauracion no puede reconstruirlo.
+- No existe flag `enable_thinking`; solo se expone `reasoning_effort` en el rango 0.0-0.99, y el valor 0.0 sigue emitiendo razonamiento breve, lo que impide desactivar por completo el razonamiento.
+- El contexto practico esta limitado por la memoria disponible, muy por debajo de los 1.048.576 tokens declarados en `config.json`.
+- El forward esta sin fusionar (10.809 operaciones por paso), lo que deja margen de mejora en latencia y throughput.
+- La decodificacion especulativa DSpark es opcional y debe activarse por peticion (`enable_mtp`) o a nivel de servidor (`--mtp`); sin ella no se aprovecha la cabeza de borrador.
+- Solo se documenta ejecucion en Apple Silicon mediante `mlx-serve`; no hay soporte documentado para otros backends ni GPUs.
+- No se dispone de informacion sobre sesgos conocidos, riesgo de alucinacion ni idiomas soportados del modelo base.
+- Licencia Apache-2.0: permite uso comercial, pero se heredan las condiciones del modelo base thinkingmachines/Inkling-2-Mini, que conviene revisar antes de desplegar en produccion.
+- El modelo base fue cuantizado desde un checkpoint con expertos en NVFP4 (capas 0-19) y MXFP8 (capas 20-23), dequantizados a bf16 y recuantizados; esta cadena de conversion puede introducir perdida adicional de precision.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/pgmharikrishnan/Inkling-2-Mini-MLX-Serve-4bit
+- Modelo en Hugging Face: https://huggingface.co/pgmharikrishnan/Inkling-2-Mini-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Librería MLX: no disponible en la información proporcionada
-- Paper, blog o repositorio del modelo base: no disponible en la información proporcionada
+- Rama del servidor mlx-serve con soporte `inkling2_loop`: https://github.com/pgmharikrishnan/mlx-serve/tree/inkling2-loop-support
+- Convertidor usado para generar el paquete: `tests/convert_inkling2_loop.py` en la rama `inkling2-loop-support`
+- Papers, blogs y demos adicionales: no disponible

@@ -2,63 +2,69 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-cmf es la distribucion cuantizada del modelo multimodal SenseNova-Loop-9B (publicado por SenseNova el 2026-11-17), empaquetada en formato CMF por el usuario infosave para `cortiq`, un motor de inferencia escrito en Rust que no depende de Python ni de frameworks de machine learning. El modelo base es un transformer con bucles (looped transformer) de 9B parametros que ejecuta 24 de sus 32 capas de decodificador dos veces, resultando en 56 pasadas de capa, y que mantiene dos flujos residuales (mHC) dentro del bucle. Combina atencion lineal y atencion completa, procesa imagenes y soporta 512K tokens de contexto mediante YaRN con factor 2.
+SenseNova-Loop-9B-cmf es una distribucion cuantizada del modelo multimodal SenseNova-Loop-9B (publicado el 17 de noviembre de 2026 por SenseNova), empaquetada por el usuario infosave en formato CMF para el motor de inferencia cortiq, escrito en Rust y sin dependencias de Python ni de frameworks de machine learning. El modelo base es un transformer con bucle (looped transformer) de 9B parametros que ejecuta 24 de sus 32 capas de decoder dos veces (56 pasadas de capa), incorpora dos flujos residuales (mHC) dentro del bucle, mezcla atencion lineal y atencion completa, procesa imagenes y soporta una ventana de contexto de 512K tokens. Esta version mantiene la cabeza MTP (multi-token prediction) para decodificacion especulativa.
 
-La relevancia de esta ficha radica en que demuestra un camino de despliegue alternativo al ecosistema Python: inferencia nativa en Rust con backends CUDA, Vulkan/DX12, Metal y CPU, con cuantizaciones GPTQ de 4 bits (`q4tp`) y 8 bits (`q8_2f`), y con decodificacion especulativa mediante una cabeza MTP (multi-token prediction) incluida en los pesos. En una RTX A5000 de 24 GB alcanza 88 tok/s en generacion de codigo con drafts activos sobre CUDA, y mantiene 30,5 tok/s de decodificacion con prompts de 128 000 tokens.
+La relevancia de esta ficha reside en que combina un modelo de arquitectura no convencional con un motor de inferencia nativo en Rust que funciona sobre CUDA, Vulkan, DX12, Metal y CPU, lo que permite desplegarlo en hardware muy diverso sin cadena de herramientas Python. Se ofrecen dos cuantizaciones: `q4tp` (4 bits, GPTQ, 5,74 GB) y `q8_2f` (8 bits, 10,16 GB), ambas con el encoder de vision en 16 bits y los routers mHC en float32.
 
-El paquete incluye el codificador de vision en 16 bits, la cabeza MTP, el plan de bucle (capas 4-27 dos veces, cada pasada con su propia cache), los routers mHC en float32 y el procesador de imagenes. La licencia es Apache 2.0 y los idiomas declarados son ingles, ruso y chino.
+El modelo esta pensado para tareas image-text-to-text y generacion de codigo, con soporte de modo de razonamiento (thinking), tool calling implicito via MTP y capacidades multilingues en ingles, ruso y chino. Su licencia Apache 2.0 facilita el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Looped transformer con atencion mixta (lineal + completa), doble flujo residual (mHC) y cabeza MTP |
-| Parametros totales | 9B (modelo base SenseNova-Loop-9B) |
+| Arquitectura | Transformer con bucle (looped transformer): 32 capas de decoder, 24 de ellas ejecutadas dos veces (56 pasadas); mezcla de atencion lineal y completa; dos flujos residuales (mHC); cabeza MTP |
+| Parametros totales | 9B (segun nombre del modelo base) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 512K tokens (modelo base); YaRN factor 2 aplicado a toda longitud |
-| Tipos de cuantizacion | `q4tp` (4 bits, GPTQ), `q8_2f` (8 bits); vision encoder en 16 bits; routers mHC en float32 |
+| Longitud de contexto | 512K tokens (512 000) |
+| Tipos de cuantizacion | `q4tp` (4 bits, GPTQ); `q8_2f` (8 bits); encoder de vision en 16 bits; routers mHC en float32 |
 | Idiomas soportados | en, ru, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | CMF (un fichero por cuantizacion: `sensenova-loop-9b-q4tp.cmf`, `sensenova-loop-9b-q8_2f.cmf`) |
+| Formato de pesos | CMF (formato propio del motor cortiq); no se distribuyen safetensors ni GGUF en este repositorio |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con bucles: de las 32 capas del decodificador, 24 (capas 4 a 27) se ejecutan dos veces, dando 56 pasadas de capa en total, y cada pasada mantiene su propia cache. Dentro del bucle conviven dos flujos residuales gestionados por routers mHC (multi-hyper-connection) que se conservan en float32 tal como los publica el release original. La atencion mezcla capas lineales y capas de atencion completa, lo que reduce el coste cuadratico en contextos largos. El modelo incorpora una cabeza MTP (multi-token prediction) que actua como modelo borrador para decodificacion especulativa verificada en un solo lote.
+El modelo base SenseNova-Loop-9B emplea una arquitectura de transformer con bucle: de las 32 capas de decoder, las capas 4 a 27 se ejecutan dos veces, dando lugar a 56 pasadas de capa en total. Cada pasada del bucle mantiene su propia cache. Dentro del bucle se transportan dos flujos residuales (mHC, presumiblemente multi-hyper-connection) gestionados por routers que se mantienen en float32 tal como los publica el autor original. La atencion combina mecanismos lineales y completos, lo que reduce el coste computacional en contextos largos. Se aplica YaRN con factor 2 en todas las longitudes, y los ficheros CMF replican esta configuracion.
 
-La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. Si se documenta que el release original aplica YaRN con factor 2 en todas las longitudes y que los ficheros CMF replican ese comportamiento. Las perplexidades reportadas en wikitext-2 (primeros 2048 tokens) son 11,90 para Transformers en float32, 11,78 para `q8_2f` y 12,95 para `q4tp`; en texto de chat de 4096 tokens, 1,848 para `q8_2f` y 1,942 para `q4tp`.
+El modelo incorpora una cabeza MTP (multi-token prediction) que genera borradores de tokens verificados en un solo lote, lo que acelera la decodificacion en modo greedy. Tambien incluye un encoder de vision de 16 bits y un procesador de imagenes, lo que habilita la modalidad image-text-to-text. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo de pensamiento (thinking) activable o desactivable mediante `--no-think`.
-- Generacion de codigo, con rendimiento medido especificamente en prompts de programacion.
-- Comprension de imagenes: pipeline `image-text-to-text`, con soporte de rutas locales, data URLs y URLs HTTP(S) en el CLI, y posibilidad de pasar varias imagenes.
-- Decodificacion especulativa mediante cabeza MTP incluida en los pesos, con tasas de aceptacion de drafts del 30-52 % en codigo sobre CUDA.
-- Procesamiento de contexto largo: hasta 512K tokens en el modelo base, con rendimiento medido hasta 128 000 tokens en esta distribucion.
+- Generacion de texto y razonamiento general, con modo de pensamiento (thinking) activado por defecto y desactivable con `--no-think`.
+- Generacion de codigo: el modelo es capaz de escribir funciones y fragmentos de codigo, con tasas de decodificacion medidas especificamente para prompts de codigo.
+- Comprension de imagenes: pipeline image-text-to-text; acepta rutas locales, data URLs o URLs HTTP(S) mediante el flag `--image` (repetible).
+- Decodificacion especulativa mediante cabeza MTP: genera tokens borrador que se verifican en lote, con tasas de aceptacion del 30-52 % en CUDA para codigo.
 - Capacidades multilingues en ingles, ruso y chino.
-- No se documenta soporte de tool calling, function calling ni comportamiento agentico multi-paso en la informacion disponible.
+- Contexto largo: hasta 512K tokens, con rendimiento medido hasta 128K tokens en la tabla de benchmarks.
+- Inferencia en multiples backends: CUDA, Vulkan, DX12, Metal y CPU, a traves del motor cortiq.
 
 ## Casos de uso
 
-- Generacion de codigo interactiva en estacion de trabajo: con `q4tp` sobre CUDA en una RTX A5000 se obtienen 88,1 tok/s con drafts en prompts de programacion, suficiente para autocompletado y refactorizacion en editor sin salir de la GPU local.
-- Analisis de documentos largos con imagen: la ventana de 512K tokens y el codificador de vision permiten pasar un informe escaneado o un diagrama junto a un prompt extenso; a 32 000 tokens el primer token llega en 22,6 s y la decodificacion se mantiene en 43,5 tok/s.
-- Despliegue en hardware no NVIDIA: el backend Vulkan 1.3 o DX12 permite ejecutar el modelo en GPUs AMD e Intel con 4,8 GB de memoria de tarjeta en `q4tp`, util para equipos heterogeneos en laboratorio.
-- Inferencia en Apple silicon: el backend Metal permite ejecutar los mismos ficheros CMF en Macs sin dependencias adicionales, adecuado para prototipado local.
-- Procesamiento por lotes de descripcion de imagenes: el pipeline `image-text-to-text` con soporte de multiples `--image` sirve para etiquetar o describir catalogos de imagenes en un pipeline Rust.
-- Servicio de traduccion y redaccion en en/ru/zh: los tres idiomas declarados cubren documentacion tecnica trilingue, con contexto largo para mantener coherencia entre secciones.
-- Evaluacion de tecnicas de decodificacion especulativa: la cabeza MTP y las metricas de aceptacion publicadas (30-52 % en codigo, 19-40 % en preguntas generales sobre CUDA) permiten reproducir y comparar estrategias de drafting.
+- Generacion de codigo en produccion: el modelo alcanza 88,1 tok/s en una RTX A5000 con CUDA y borradores MTP para prompts de codigo, lo que lo hace adecuado para asistentes de codigo integrados en IDE o pipelines de CI/CD que requieran baja latencia por token.
+- Analisis de documentos largos con imagenes: con 512K tokens de contexto y soporte de vision, puede procesar informes extensos que combinen texto e imagenes (por ejemplo, documentacion tecnica escaneada) en una sola pasada, aunque por encima de 64K tokens conviene usar la variante Turbo para contener el consumo de memoria.
+- Atencion al cliente automatizada multilingue: soporta en, ru y zh, y puede gestionar conversaciones multi-turno con contexto largo; el modo `--no-think` reduce la latencia cuando no se requiere razonamiento explicito.
+- Descripcion y etiquetado de imagenes: el pipeline image-text-to-text permite generar descripciones, alt-text o metadatos a partir de imagenes, con el encoder de vision en 16 bits incluido en los ficheros CMF.
+- Despliegue en hardware heterogeneo sin Python: al funcionar sobre Vulkan, DX12, Metal y CPU mediante cortiq, es adecuado para entornos donde no se puede instalar CUDA ni frameworks de ML (por ejemplo, estaciones de trabajo con GPU AMD o Intel, o Mac con Apple Silicon).
+- Prototipado e investigacion en arquitecturas con bucle: al conservar la estructura de bucle, los flujos mHC y la cabeza MTP, sirve para experimentar con decodificacion especulativa y arquitecturas no estandar sin necesidad de reimplementar el modelo en Python.
+- Procesamiento por lotes en CPU o GPU de gama media: la cuantizacion `q4tp` ocupa 4,8 GB en Vulkan con prompts cortos, lo que permite ejecutarlo en GPUs de consumo con 8 GB o mas.
 
 ## Benchmarks y rendimiento
 
-Rendimiento de inferencia medido en RTX A5000 (24 GB) con `cortiq run --greedy --no-think`, 256 tokens generados, cuatro prompts por categoria:
+Perplejidad (menor es mejor):
 
-| Backend | Tipo de prompt | Con drafts (tok/s) | Sin drafts (tok/s) | Drafts aceptados |
-|---|---|---:|---:|---:|
-| CUDA | codigo | 88,1 (74,4-98,9) | 51,0 | 30-52 % |
-| CUDA | preguntas generales | 57,9 (52,7-62,4) | 49,8 | 19-40 % |
-| Vulkan | codigo | 39,7 (32,9-47,3) | 34,2 | 35-58 % |
-| Vulkan | preguntas generales | 33,5 (30,4-37,1) | 33,0 | 32-40 % |
+| Configuracion | wikitext-2, primeros 2048 tokens | chat text, 4096 tokens |
+|---|---:|---:|
+| Transformers, float32 | 11,90 | — |
+| `q8_2f` | 11,78 | 1,848 |
+| `q4tp` | 12,95 | 1,942 |
 
-Escalado con la longitud del prompt (`cortiq bench --core`, sin drafts, 128 tokens de salida, `q4tp`, CUDA):
+Rendimiento en CUDA (RTX A5000, 24 GB, cortiq 0.9.5, build release, `--greedy --no-think`, 256 tokens):
+
+| Tipo de prompt | Con borradores (tok/s) | Sin borradores (tok/s) | Borradores aceptados |
+|---|---:|---:|---:|
+| Codigo | 88,1 (74,4-98,9) | 51,0 | 30-52 % |
+| Preguntas generales | 57,9 (52,7-62,4) | 49,8 | 19-40 % |
+
+Longitud de prompt en CUDA (`cortiq bench --core`, sin borradores, 128 tokens tras el prompt):
 
 | Prompt (tokens) | Primer token (s) | Decodificacion (tok/s) | Memoria pico (GB) |
 |---:|---:|---:|---:|
@@ -69,56 +75,54 @@ Escalado con la longitud del prompt (`cortiq bench --core`, sin drafts, 128 toke
 | 64 000 | 53,0 | 38,1 | 12,2 |
 | 128 000 | 141,9 | 30,5 | 16,5 |
 
-`q8_2f` sobre CUDA: 34,0 / 33,7 / 32,1 tok/s y 9,1 / 9,3 / 10,1 GB con prompts de 1 000 / 4 000 / 16 000 tokens.
+`q8_2f` en CUDA: 34,0 / 33,7 / 32,1 tok/s y 9,1 / 9,3 / 10,1 GB a 1 000 / 4 000 / 16 000 tokens.
 
-Perplexidad:
+Rendimiento en Vulkan (RTX A5000, mismos prompts):
 
-| Configuracion | wikitext-2 (2048 tokens) | Chat (4096 tokens) |
-|---|---:|---:|
-| Transformers float32 | 11,90 | no disponible |
-| `q8_2f` | 11,78 | 1,848 |
-| `q4tp` | 12,95 | 1,942 |
+| Tipo de prompt | Con borradores (tok/s) | Sin borradores (tok/s) | Borradores aceptados |
+|---|---:|---:|---:|
+| Codigo | 57,5 (47,9-63,7) | 49,3 | 38-61 % |
+| Preguntas generales | 42,4 (35,8-45,4) | 47,4 | 23-36 % |
 
-No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+Rendimiento en Metal (Apple M4, MacBook Air): codigo a 14,4 tok/s con borradores y 9,5 tok/s sin ellos.
+
+No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Memoria de tarjeta en prompts cortos: 7,8 GB (`q4tp`) y 9,1 GB (`q8_2f`) sobre CUDA en RTX A5000; 4,8 GB y 8,2 GB respectivamente sobre Vulkan.
-- Memoria pico con contexto largo (`q4tp`, CUDA): 10,0 GB a 32K tokens, 12,2 GB a 64K y 16,5 GB a 128K. Por encima de 64K tokens el autor recomienda el fichero Turbo para contener memoria y velocidad.
-- GPU recomendadas: NVIDIA RTX A5000 (medida de referencia); cualquier GPU NVIDIA con driver CUDA 12.x que exponga `libnvrtc` y `libcublas` en tiempo de ejecucion; GPUs AMD e Intel con Vulkan 1.3 o DX12; Apple silicon via Metal.
-- Cabe en GPUs de consumo con al menos 8-10 GB de VRAM en `q4tp` para contextos moderados; `q8_2f` requiere aproximadamente 1,3 GB adicionales.
-- Opciones de despliegue: motor `cortiq` (CLI `cortiq-cli`), instalable via `cargo install --git https://github.com/infosave2007/cmf --branch sensenova-loop9b`. Compilacion con `--features cuda` para CUDA; features por defecto para Vulkan/DX12 y Metal. Requiere la version de cortiq posterior a 0.9.4; la 0.9.4 lee los ficheros y produce el mismo texto pero ejecuta operacion por operacion en GPU.
-- En Linux headless con Vulkan hacen falta `libvulkan1 libglvnd0 libegl1 libgl1 libglx0` y `XDG_RUNTIME_DIR=/tmp`.
-- Throughput medido: 88,1 tok/s en codigo con drafts sobre CUDA; 51,0 tok/s sin drafts; 30,5 tok/s a 128K tokens de contexto. La latencia de primer token va de 1,5 s (1K) a 141,9 s (128K).
-- Variables de entorno relevantes: `CMF_GPU=cuda` para seleccionar backend, `CMF_MTP=0` para desactivar la cabeza de drafts.
+- VRAM estimada: `q4tp` 7,8 GB en CUDA y 4,8 GB en Vulkan con prompts cortos; `q8_2f` 9,1 GB en CUDA y 8,2 GB en Vulkan. La memoria crece con la longitud del prompt: hasta 16,5 GB con `q4tp` en CUDA a 128K tokens.
+- GPU recomendadas: NVIDIA RTX A5000 (24 GB) es el banco de pruebas de referencia; cualquier GPU NVIDIA con CUDA 12.x (libnvrtc y libcublas en tiempo de ejecucion); GPUs AMD e Intel con Vulkan 1.3 o DX12; Apple Silicon con Metal.
+- Cabe en GPU de consumo: `q4tp` con 4,8 GB en Vulkan es viable en GPUs de 8 GB o mas; `q8_2f` requiere al menos 9-10 GB.
+- Opciones de despliegue: cortiq 0.9.5 o superior (CLI `cortiq-cli`), con backends CUDA (`--features cuda`), Vulkan/DX12 (features por defecto), Metal y CPU. No se mencionan vLLM, llama.cpp ni TGI para este formato CMF.
+- Latencia y throughput: primer token en 1,5 s con 1K tokens de prompt y 141,9 s con 128K tokens (CUDA, `q4tp`); decodificacion de 51,9 a 30,5 tok/s segun longitud de contexto; 88,1 tok/s en codigo con borradores MTP en CUDA.
+- En Vulkan, los borradores MTP solo compensan en codigo; en preguntas generales es mas rapido sin ellos (`CMF_MTP=0`). En Metal no se midio memoria para esta release.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato / motor |
-|---|---:|---:|---|---|---|
-| SenseNova-Loop-9B-cmf (esta ficha) | 9B | 512K | texto + imagen | Apache 2.0 | CMF / cortiq |
-| SenseNova-Loop-9B (base) | 9B | 512K | texto + imagen | Apache 2.0 | safetensors / Transformers |
-| SenseNova-Loop-9B-Turbo-cmf | 9B | 512K | texto + imagen | Apache 2.0 | CMF / cortiq (optimizado para contexto largo) |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada. La comparacion con alternativas de la misma categoria (modelos multimodales de ~9B con contexto largo) no esta disponible.
 
-No se dispone en la informacion proporcionada de datos de benchmarks comparativos frente a modelos de otros desarrolladores con el mismo tamano o la misma tarea, por lo que la comparativa se limita a las variantes del propio modelo base.
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| SenseNova-Loop-9B-cmf | 9B | 512K | Apache 2.0 | CMF (cortiq) | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo se declaran tres idiomas (en, ru, zh); el rendimiento en castellano no esta documentado y previsiblemente sera inferior.
-- Riesgo de alucinacion inherente a los modelos generativos; el modo de pensamiento consume tokens de `--max-tokens`, lo que puede truncar respuestas si no se ajusta el limite.
-- La decodificacion especulativa no garantiza texto identico entre backends: sobre Vulkan, cuatro de ocho respuestas se separaron del texto greedy plano en empates cercanos, porque el lote que verifica los drafts redondea de forma distinta al grafo de un token. Sobre CUDA el texto es identico con y sin drafts.
-- El modelo base aplica YaRN factor 2 en todas las longitudes, lo que puede afectar a la calidad en contextos cortos frente a un escalado selectivo.
-- Dependencia de un motor de inferencia especifico (`cortiq`) y de una version posterior a 0.9.4; la 0.9.4 funciona pero sin aceleracion por GPU por operacion.
-- La cuantizacion `q4tp` degrada la perplexidad respecto al float32 (12,95 frente a 11,90 en wikitext-2); para maxima fidelidad debe usarse `q8_2f`.
-- No se documenta soporte de tool calling ni de flujos agenticos, lo que limita su uso en pipelines que dependan de function calling.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2026-11-18, un dia despues del modelo base; se trata de una distribucion de terceros, no oficial de SenseNova.
-- La licencia Apache 2.0 permite uso comercial, pero el autor de la cuantizacion no ofrece garantias sobre la fidelidad de los pesos convertidos.
+- El formato CMF es propietario del motor cortiq; no es compatible con llama.cpp, vLLM, TGI ni Transformers sin conversion. La version 0.9.4 de cortiq lee los ficheros pero ejecuta las operaciones una a una en GPU, con la consiguiente perdida de rendimiento.
+- La cuantizacion `q4tp` degrada la perplejidad respecto al float32 (12,95 frente a 11,90 en wikitext-2), lo que puede afectar a tareas que requieran alta fidelidad.
+- En Vulkan, las respuestas con borradores MTP pueden diferir del texto greedy puro en empates cercanos, porque el lote de verificacion redondea de forma distinta al grafo de un solo token.
+- El modo de pensamiento esta activado por defecto y consume tokens de `--max-tokens`; en produccion conviene usar `--no-think` si no se necesita razonamiento explicito.
+- Por encima de 64K tokens el rendimiento y la memoria se degradan notablemente en esta distribucion; el autor recomienda la variante Turbo para documentos largos.
+- Solo se declaran idiomas en, ru y zh; el rendimiento en castellano no esta documentado y no puede asumirse.
+- Riesgo de alucinacion y sesgos: no se han publicado evaluaciones de sesgo ni de robustez en la informacion disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y esta cuantizacion deben verificarse contra las condiciones del autor original (sensenova) antes de su explotacion en produccion.
+- No se han publicado resultados de benchmarks academicos estandar, por lo que la comparacion objetiva con otros modelos queda pendiente.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta distribucion: https://huggingface.co/infosave/SenseNova-Loop-9B-cmf
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/infosave/SenseNova-Loop-9B-cmf
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Variante Turbo para contexto largo: https://huggingface.co/infosave/SenseNova-Loop-9B-Turbo-cmf
-- Motor de inferencia cortiq / formato CMF: https://github.com/infosave2007/cmf
-- Grafico de drafts sobre CUDA: https://huggingface.co/infosave/SenseNova-Loop-9B-cmf/resolve/main/assets/drafts_cuda_en.png
-- Grafico de drafts sobre Vulkan: https://huggingface.co/infosave
+- Variante Turbo para documentos largos: https://huggingface.co/infosave/SenseNova-Loop-9B-Turbo-cmf
+- Motor de inferencia cortiq (repositorio CMF): https://github.com/infosave2007/cmf
+- Imagen de rendimiento de borradores en CUDA: https://huggingface.co/infosave/SenseNova-Loop-9B-cmf/resolve/main/assets/drafts_cuda_en.png
+- Imagen de rendimiento de borradores en Vulkan: https://huggingface.co/infosave/SenseNova-Loop-9B-cmf/resolve/main/assets/drafts_vulkan_en.png

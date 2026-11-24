@@ -2,82 +2,89 @@
 
 ## Resumen
 
-Dongfangshuo-Qwen3.8-27B-NSFW-GGUF es una cuantización en formato GGUF del modelo Dongfangshuo-Qwen3.8-27B-NSFW, un ajuste fino de la familia Qwen 3.8 orientado a contenido para adultos (R-18) y a la elusión de los mecanismos de rechazo del modelo original. El autor, dongfangshuo, parte de la variante abliterated de Huihui-Qwen3.8-27B y la especializa en estilo narrativo explícito en chino. El repositorio incluye además un proyector multimodal (`mmproj`) que habilita el procesamiento de imágenes y vídeo, y un `Modelfile` para ejecución directa en Ollama.
+Dongfangshuo-Qwen3.8-27B-NSFW-GGUF es la versión cuantizada en formato GGUF de un modelo de lenguaje de 27.320.697.856 parámetros (27,3 mil millones) derivado de la familia Qwen3.8. Lo desarrolla el usuario dongfangshuo y parte de una cadena de ajustes que comienza en Qwen/Qwen3.8-27B, pasa por la variante abliterated de huihui-ai (que elimina los mecanismos de rechazo del modelo original) y culmina en un fine-tuning orientado a la creación de ficción adulta explícita (R-18). El repositorio distribuye pesos cuantizados Q4_K_M junto con un proyector multimodal (`mmproj`) que habilita entrada de imagen y vídeo, además de un `Modelfile` para su ejecución directa con Ollama.
 
-El modelo cuenta con 27.320.697.856 parámetros totales (27,3 mil millones) y se distribuye principalmente como un único archivo Q4_K_M de 16,8 GB, junto con el proyector visual en f16 de 931 MB. La licencia declarada es Apache 2.0 y el único idioma indicado en la model card es el chino (zh). El pipeline declarado es text-generation, aunque las etiquetas del repositorio incluyen vision y multimodal.
+El modelo resuelve un nicho muy concreto: generación de narrativa adulta sin las restricciones de seguridad habituales, con especial énfasis en la obediencia a instrucciones explícitas y en la continuidad de tramas largas. La versión publicada en este repositorio es la v1.0 "clásica/equilibrada"; el autor remite a una v2.0 separada para escritura de novela larga. La licencia declarada es Apache-2.0, heredada del modelo base, aunque el uso está restringido por el propio autor a adultos (18+) y a fines de ficción.
 
-La relevancia de esta ficha es doble: por un lado, documenta un caso de uso muy específico de la familia Qwen (fine-tuning sobre una base abliterated con fines creativos adultos); por otro, sirve como advertencia práctica sobre las implicaciones de desplegar modelos con filtros de seguridad eliminados, contenido no apto para todos los públicos y licencias que no cubren responsabilidades derivadas del uso.
+La relevancia práctica para desarrolladores e investigadores es limitada pero real: sirve como caso de estudio de las cadenas de derivación abliterated y de fine-tuning temático, y como ejemplo de empaquetado GGUF con soporte multimodal vía `mmproj` para despliegue local en Ollama o llama.cpp. No es un modelo de propósito general ni compite en benchmarks estándar de razonamiento o código.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal de la familia Qwen 3.8 (detalles de capas y attention no disponibles) |
-| Parametros totales | 27.320.697.856 (27,3 mil millones) |
-| Parametros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (GGUF); proyector multimodal en f16 |
-| Idiomas soportados | Chino (zh) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q4_K_M) y mmproj GGUF (f16) |
+| Arquitectura | Transformer (derivada de Qwen3.8), con proyector multimodal `mmproj` para visión |
+| Parámetros totales | 27.320.697.856 (27,3 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | Q4_K_M (16,8 GB); proyector `mmproj` en f16 (931 MB) |
+| Idiomas soportados | zh (chino) según metadatos; la model card está íntegramente en chino |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (Q4_K_M) + `mmproj` GGUF f16 + `Modelfile` |
 
 ## Arquitectura y entrenamiento
 
-La información disponible confirma que se trata de un transformer multimodal de 27,3 mil millones de parámetros, derivado de Huihui-Qwen3.8-27B-abliterated, es decir, de una variante a la que se han eliminado (ablated) las direcciones de activación asociadas al rechazo de peticiones. Sobre esa base, el autor aplicó un ajuste fino orientado a estilo narrativo R-18 en chino, con el objetivo declarado de aumentar la obediencia a instrucciones explícitas y la capacidad de desarrollar tramas adultas.
+La arquitectura es un transformer derivado de Qwen3.8-27B. El linaje de entrenamiento es: Qwen/Qwen3.8-27B → huihui-ai/Huihui-Qwen3.8-27B-abliterated (abliteración, es decir, eliminación de la dirección de rechazo en el espacio de activaciones) → dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW (fine-tuning de estilo R-18) → esta versión GGUF cuantizada. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon RLHF o DPO; estos datos figuran como no disponibles.
 
-El repositorio incluye un proyector multimodal (`mmproj-Dongfangshuo-Qwen3.8-27B-NSFW-f16.gguf`, 931 MB) que se carga junto al modelo principal en llama.cpp o LM Studio para habilitar entrada de imágenes y vídeo. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset de ajuste fino, ni si se emplearon técnicas de RLHF, DPO o preferencias. Tampoco se documentan innovaciones técnicas propias (atención lineal, decodificación especulativa, etc.). La model card menciona que la versión v2.0 del proyecto corrige problemas de "colapso de autoatención en textos muy largos" y repetición infinita, lo que sugiere que la v1.0 aquí documentada presenta esas limitaciones.
+La innovación técnica declarada por el autor se centra en el comportamiento generativo, no en la arquitectura: alta "obediencia al jailbreak" (破限服从度) y uso directo de vocabulario explícito. La v1.0 aquí publicada admite, según el autor, fallos de atención autoatentiva en textos muy largos y bucles de repetición, problemas que la v2.0 afirma corregir. El componente multimodal se implementa mediante un proyector `mmproj` independiente en f16, compatible con llama.cpp y LM Studio, que permite procesar imágenes y vídeo.
 
 ## Capacidades
 
-- Generación de texto conversacional en chino, con especialización en narrativa adulta explícita y desarrollo de tramas R-18.
-- Procesamiento multimodal de imágenes y vídeo mediante el proyector `mmproj` (descripción de escenas, interpretación de contenido visual).
-- Alta obediencia a instrucciones explícitas gracias al proceso de abliteration y al ajuste fino posterior.
-- Ejecución local mediante Ollama, LM Studio y llama.cpp, con `Modelfile` incluido.
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`).
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, modo thinking ni audio.
+- Generación de texto conversacional y narrativo en chino, con especialización en ficción adulta explícita.
+- Entrada multimodal: análisis de imágenes y vídeo mediante el proyector `mmproj` (f16).
+- Alta obediencia a instrucciones explícitas, incluyendo contenido que los modelos base rechazarían.
+- Continuación de narrativa multi-turno con personajes y escenas, sujeta a las limitaciones de contexto no especificadas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible; no es el foco del modelo.
+- Capacidades multilingües: metadatos solo declaran chino (`zh`); el rendimiento en otros idiomas no está documentado.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Escritura creativa de ficción adulta en chino: el modelo está ajustado específicamente para generar narrativa R-18 con vocabulario explícito y progresión de tramas, por lo que resulta adecuado para autores que necesiten borradores o continuación de relatos en ese registro.
-- Generación local sin conexión: al distribuirse en GGUF Q4_K_M (16,8 GB), puede ejecutarse en equipos de gama alta con GPU consumer, lo que permite trabajar con contenido sensible sin enviar prompts a servicios en la nube.
-- Análisis de imágenes y vídeo en contexto narrativo: con el proyector mmproj cargado, el modelo puede describir escenas visuales y incorporarlas a relatos o guiones, útil para guionistas que trabajen a partir de material audiovisual.
-- Experimentación con modelos abliterated: investigadores interesados en medir el efecto de la eliminación de direcciones de rechazo pueden usar este modelo como referencia de comportamiento frente a la base Qwen original.
-- Prototipado rápido en Ollama: el `Modelfile` incluido permite crear y ejecutar el modelo con dos comandos, lo que agiliza pruebas de prompting y evaluación cualitativa.
-- Documentación de casos límite de seguridad: equipos de evaluación de riesgos pueden emplear este modelo para estudiar cómo se comportan sistemas sin filtros de rechazo y diseñar mitigaciones en sus propios despliegues.
+- Creación de ficción adulta asistida: el modelo está fine-tuneado específicamente para generar narrativa R-18 con vocabulario explícito y progresión de escenas, lo que lo hace adecuado para autores que trabajan en ese género y necesitan un asistente sin filtros de contenido.
+- Investigación sobre alineación y abliteración: permite estudiar empíricamente cómo la eliminación de la dirección de rechazo afecta a la distribución de respuestas y a la calidad del texto en dominios sensibles.
+- Evaluación de cadenas de fine-tuning temático: sirve como caso práctico para medir la degradación o especialización que introduce un ajuste de estilo sobre un modelo abliterated.
+- Despliegue local con Ollama: el repositorio incluye `Modelfile`, de modo que basta ejecutar `ollama create` y `ollama run` para tener un endpoint conversacional en local sin dependencias de la nube.
+- Análisis de imágenes y vídeo con LM Studio o llama.cpp: cargando el `mmproj` f16 junto con el GGUF Q4_K_M se obtiene descripción y discusión de contenido visual, útil para prototipos de captioning o moderación asistida.
+- Pruebas de robustez y seguridad de pipelines: al ser un modelo deliberadamente sin restricciones, resulta útil como caso adversario para validar filtros de salida y clasificadores de contenido en sistemas de producción.
+- Docencia sobre riesgos de modelos abliterated: ejemplifica de forma tangible los riesgos de sesgo, contenido no apto y alucinación que deben mitigarse antes de cualquier despliegue público.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 17-19 GB con Q4_K_M (16,8 GB de pesos) más el proyector f16 (931 MB) y el contexto; se recomienda reservar 20-24 GB para margen.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, H100 80 GB; en GPUs de 16 GB no cabe el modelo completo y requeriría offloading parcial a CPU.
-- Cabe en GPU consumer de gama alta (24 GB) con cuantización Q4_K_M; en tarjetas de 12-16 GB solo con offloading y latencia degradada.
-- Opciones de despliegue: Ollama (vía `Modelfile`), llama.cpp, LM Studio; no se documenta compatibilidad con vLLM o TGI para este formato.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el archivo Q4_K_M ocupa 16,8 GB, por lo que se necesitan aproximadamente 17-19 GB de VRAM para cargar pesos y contexto; sumando el `mmproj` f16 (931 MB), el requisito sube a unos 18-20 GB en modo multimodal.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX A6000 para despliegue holgado; en consumer, RTX 4090 (24 GB) o RTX 3090 (24 GB) permiten cargar el modelo completo en Q4_K_M con margen para contexto.
+- ¿Cabe en consumer GPU? Sí, en GPUs de 24 GB (RTX 4090, 3090) en cuantización Q4_K_M; en GPUs de 16 GB requeriría cuantizaciones más agresivas no incluidas en el repositorio o descarga parcial a CPU.
+- Opciones de despliegue: Ollama (vía `Modelfile` incluido), llama.cpp y LM Studio (con selección del `mmproj` para visión). Compatible con endpoints según el tag `endpoints_compatible`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Dongfangshuo-Qwen3.8-27B-NSFW-GGUF | 27,3 mil millones | No disponible | zh | Apache 2.0 | GGUF Q4_K_M | Fine-tuning R-18 sobre base abliterated; incluye mmproj |
-| Huihui-Qwen3.8-27B-abliterated | 27,3 mil millones (presumible) | No disponible | No disponible | No disponible | No disponible | Base abliterated sin especialización R-18 |
-| Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF | No disponible | No disponible | zh | Apache 2.0 (presumible) | GGUF | Versión v2.0 con corrección de repetición y autoatención en textos largos |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
+|---|---|---|---|---|---|
+| Dongfangshuo-Qwen3.8-27B-NSFW-GGUF (este) | 27,3 B | no disponible | Ficción R-18 + visión | Apache-2.0 | GGUF Q4_K_M |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27,3 B (derivado) | no disponible | Abliterated, uso general | Apache-2.0 (heredada) | safetensors (base) |
+| Qwen/Qwen3.8-27B | 27,3 B (base) | no disponible | Uso general, alineado | Apache-2.0 | safetensors |
+| dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF | 27,3 B (derivado) | no disponible | Ficción R-18, novela larga | Apache-2.0 | GGUF |
+
+La comparación con alternativas de la misma categoría (modelos abliterated o fine-tunes NSFW de tamaño similar) no puede completarse con datos de rendimiento porque no se han publicado benchmarks para ninguno de ellos en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Contenido no apto para todos los públicos: el modelo está entrenado para generar material sexual explícito y el repositorio lleva la etiqueta `not-for-all-auciences`.
-- Filtros de seguridad eliminados: al derivar de una base abliterated, el modelo carece de mecanismos fiables de rechazo, lo que aumenta el riesgo de outputs dañinos, ilegales o no consentidos si se usa sin salvaguardas externas.
-- Sesgos: no se documentan análisis de sesgos; el entrenamiento exclusivamente en chino y sobre narrativa adulta puede amplificar estereotipos de género y representaciones problemáticas.
-- Alucinación: no hay datos de evaluación; en tareas factuales o de razonamiento el modelo no está validado y su fiabilidad es desconocida.
-- Limitaciones de contexto e idioma: solo se declara chino; no se especifica la ventana de contexto, y la model card reconoce problemas de repetición y colapso en textos muy largos en la v1.0.
-- Licencia: Apache 2.0 permite uso comercial, pero no exime al desplegador de responsabilidad legal sobre el contenido generado ni sobre el cumplimiento de normativas locales.
-- Producción: no se recomienda su uso en entornos de atención al cliente, educación o cualquier aplicación pública sin moderación adicional y sin revisión de cumplimiento normativo.
+- Contenido para adultos: el modelo está diseñado para generar material sexual explícito y no es apto para menores ni para uso sin supervisión.
+- Sesgos: al derivar de un modelo abliterated sin un pipeline de alineación posterior documentado, es previsible que reproduzca sesgos de género, culturales y de representación del corpus original; no se han publicado evaluaciones al respecto.
+- Alucinación: no hay datos de benchmarks que permitan cuantificar la tasa de alucinación; en narrativa larga el propio autor reconoce bucles de repetición y fallos de atención en la v1.0.
+- Contexto e idioma: la longitud de contexto no está documentada y los metadatos solo declaran chino; el rendimiento en castellano no está verificado.
+- Licencia: aunque se declara Apache-2.0, el autor restringe el uso a adultos y a fines de ficción; conviene revisar el archivo `NOTICE` para conocer las modificaciones y verificar la compatibilidad con uso comercial en la jurisdicción correspondiente.
+- Producción: no se recomienda su despliegue en aplicaciones de cara al público sin filtros de salida, clasificadores de contenido y revisión legal; la cadena de derivación (abliterated + fine-tuning NSFW) implica ausencia de garantías de seguridad.
+- Fecha de creación del repositorio (2026-09-14) y actualización (2026-11-22): verificar que la versión descargada coincide con la v1.0 y no con la v2.0 alojada en otro repositorio.
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF
-- Modelo base (no cuantizado): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW
-- Versión v2.0 (GGUF): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF
-- Base abliterated de referencia (mencionada en la model card): Huihui-Qwen3.8-27B-abliterated (sin URL directa en la información disponible)
+- Repositorio Hugging Face: https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF
+- Modelo base (fine-tune NSFW): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW
+- Versión v2.0 (novela larga): https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF
+- Modelo abliterated de origen: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
+- Modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B

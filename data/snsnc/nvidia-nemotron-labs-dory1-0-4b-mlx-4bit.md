@@ -2,88 +2,87 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit es una cuantizacion de 4 bits en formato MLX del modelo `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16`, publicada por el usuario snsnc. No se trata de un modelo nuevo ni de un ajuste fino: el autor indica explicitamente que solo ha aplicado cuantizacion con `mlx_lm.convert -q --q-bits 4 --q-group-size 64`, sin entrenamiento, fusion de pesos ni otras modificaciones. El modelo base lo desarrolla NVIDIA dentro de su linea Nemotron Labs.
+NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit es una cuantizacion de 4 bits en formato MLX del modelo base `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16`, desarrollado por NVIDIA. La conversion la ha realizado el usuario snsnc y esta pensada para ejecutar el modelo en Apple Silicon (chips M1/M2/M3/M4) mediante la libreria `dory-mlx`, que anade soporte para la arquitectura Dory a MLX-LM. El modelo cuenta con 3.975.229.440 parametros (aproximadamente 4B) y un repositorio de 2,3 GB en pesos de 4 bits.
 
-El repositorio pesa 2,3 GB y contiene 3.975.229.440 parametros (~3,98 mil millones) en safetensors, lo que lo situa en la categoria de modelos pequenos y desplegables en hardware de consumo. Su interes practico es que permite ejecutar un modelo de casi 4B en Apple Silicon con un consumo de memoria reducido gracias a la cuantizacion de 4 bits, a traves de `mlx-lm`.
+La relevancia de esta ficha radica en que permite desplegar un modelo de 4B parametros de NVIDIA en hardware de consumo de Apple, algo que con el formato BF16 original requeriria aproximadamente 8 GB de memoria. La cuantizacion a 4 bits con group-size 64 reduce el peso a menos de la mitad, facilitando la inferencia local en portatiles y equipos de sobremesa con memoria unificada.
 
-La informacion disponible es escasa: no se documentan arquitectura detallada, longitud de contexto, idiomas, composicion del dataset ni resultados de benchmarks. El autor advierte ademas de que la perdida de precision del 4-bit provoca desviaciones frente al BF16 y de que los benchmarks del modelo original pueden no reproducirse. La licencia de los pesos es OpenMDW-1.1 segun la model card, aunque el campo de licencia del repositorio aparece como `other`.
+Es importante senalar que, a fecha de la informacion disponible, la arquitectura `dory` no esta incluida en el repositorio upstream de `mlx-lm`, por lo que es necesario instalar el paquete `dory-mlx` para cargar el modelo. Se trata de una cuantizacion pura, sin entrenamiento adicional ni fusion de pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el pipeline es `text-generation`; no se detalla la arquitectura en la informacion proporcionada) |
-| Parametros totales | 3.975.229.440 (~3,98 mil millones) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | Dory (arquitectura propia de NVIDIA Nemotron-Labs, no incluida en mlx-lm upstream) |
+| Parametros totales | 3.975.229.440 (~4B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit MLX con `q-group-size 64`; el modelo base se distribuye en BF16 |
+| Tipos de cuantizacion | 4 bits, group-size 64 (MLX) |
 | Idiomas soportados | no disponible |
-| Licencia | `other`; la model card indica OpenMDW-1.1 para los pesos |
-| Formato de pesos | safetensors (MLX), cuantizados a 4 bits |
-
-Otros datos: tamano del repositorio 2,3 GB, libreria `mlx`, pipeline `text-generation`, 0 descargas y 0 likes en el momento de la consulta, creado el 2026-10-17 y actualizado el 2026-10-17.
+| Licencia | OpenMDW-1.1 (pesos); empaquetado MLX bajo Apache-2.0 |
+| Formato de pesos | safetensors (MLX, 4-bit) |
 
 ## Arquitectura y entrenamiento
 
-No se proporciona informacion sobre la arquitectura interna del modelo base (tipo de transformer, atencion, posibles innovaciones como decodificacion especulativa o atencion lineal). Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. Lo unico verificable es el pipeline declarado, `text-generation`, y el numero de parametros del checkpoint.
+La arquitectura del modelo es Dory, una arquitectura propia de NVIDIA Nemotron-Labs que no esta presente en la version upstream de `mlx-lm` a fecha de 19 de octubre de 2026. El repositorio no proporciona detalles sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora innovaciones como atencion lineal o decodificacion especulativa. El modelo base es `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16`, del que esta version es una conversion directa.
 
-Respecto al proceso de cuantizacion, el autor es explicito: se uso `mlx_lm.convert -q --q-bits 4 --q-group-size 64`, una conversion puramente de precision, sin entrenamiento posterior ni merging. El empaquetado MLX sigue el trabajo de `netprojects/dory-mlx` (Apache-2.0), con port a MLX atribuido a Paris Michalas (NetProjects). El resultado son pesos de 4 bits que ocupan 2,3 GB frente al checkpoint BF16 original.
+El proceso de conversion se realizo con `mlx_lm.convert -q --q-bits 4 --q-group-size 64`. No hubo entrenamiento, merging ni ninguna otra modificacion de los pesos: es exclusivamente una cuantizacion. Por tanto, los datos de entrenamiento, la composicion del dataset y si hubo RLHF o DPO no se detallan en la informacion disponible y deben consultarse en la model card del modelo base de NVIDIA.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio declara el tag `conversational` y el pipeline `text-generation`.
-- Conversacion multi-turno: el formato esta pensado para uso con `mlx-lm`, que aplica la plantilla de chat del modelo base.
-- Inferencia local en Apple Silicon: integracion nativa con MLX y Metal.
-- Capacidades especificas del modelo base (razonamiento, codigo, matematicas, tool calling, agentes, vision o audio): no disponibles en la informacion proporcionada.
-- Soporte multilingue: no disponible; no se declaran idiomas en el repositorio.
-- Modo thinking o decodificacion extendida: no disponible.
+- Generacion de texto conversacional: el pipeline declarado es `text-generation` y las etiquetas incluyen `conversational`.
+- Razonamiento y matematicas: la model card incluye un ejemplo de pregunta aritmetica ("What is 17 * 23?"), lo que sugiere capacidad de calculo basico, aunque no se documentan resultados.
+- Soporte de chat multi-turno mediante la funcion `dory_mlx.chat`.
+- Parametro `loops` en la API de carga e inferencia (ejemplo con `loops=2`), lo que apunta a un mecanismo de iteracion o recurrencia interna en la arquitectura Dory; su significado exacto no se documenta.
+- Capacidades multilingues: no disponibles.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Vision, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-- Prototipado local en Mac: cargar el modelo con `mlx-lm` para probar el comportamiento de la familia Nemotron Labs Dory 4B sin depender de GPUs NVIDIA ni de servicios en la nube, gracias a los 2,3 GB de pesos.
-- Desarrollo de asistentes conversacionales offline: al ejecutarse sobre Apple Silicon con MLX, encaja en aplicaciones de escritorio o herramientas internas donde no se permite enviar datos a APIs externas.
-- Evaluacion comparativa de cuantizaciones: sirve como referencia para medir la degradacion de calidad frente al checkpoint BF16 del mismo modelo en tareas concretas del dominio propio.
-- Generacion de texto por lotes en equipos de desarrollo: el bajo peso del checkpoint permite generar resumenes, borradores o respuestas plantilla en portatiles Mac sin infraestructura adicional.
-- Base para experimentos de ajuste ligero: al ser un modelo de ~4B, es viable hacer LoRA o pruebas de prompting sobre el, aunque la cuantizacion 4-bit limita el ajuste directo y requeriria partir del BF16.
-- Integracion en pipelines de CI para pruebas de regresion de prompts: ejecutar el modelo cuantizado como "modelo de referencia" en tests automatizados de calidad de respuestas, con un coste de memoria acotado.
-- Educacion e investigacion: analisis del efecto de la cuantizacion 4-bit con group size 64 en modelos de ~4B, comparando salidas frente al original.
+- Asistente conversacional local en Mac: el modelo puede cargarse con `dory_mlx.chat` en un equipo Apple Silicon y mantener conversaciones multi-turno sin conexion a internet, gracias a que los pesos de 4 bits ocupan unos 2,3 GB.
+- Prototipado rapido de aplicaciones de texto en portatiles: desarrolladores que trabajen en macOS pueden integrar el modelo en scripts Python con pocas lineas y sin GPU dedicada, usando la memoria unificada del chip.
+- Pruebas de razonamiento aritmetico y logico: el ejemplo de la model card sugiere su uso para validar respuestas de calculo; util en entornos educativos o de demostracion.
+- Evaluacion de la arquitectura Dory: investigadores interesados en comparar el comportamiento de esta arquitectura frente a transformers clasicos pueden usar esta version cuantizada para experimentos preliminares en hardware de consumo.
+- Generacion de texto en herramientas de linea de comandos: la invocacion `python -m dory_mlx` permite incorporar el modelo en pipelines de shell o scripts de automatizacion de texto.
+- Base para ajuste fino ligero o experimentacion con prompts: al ser una cuantizacion MLX, sirve como punto de partida para explorar tecnicas de prompting y evaluacion sin necesidad de infraestructura cloud.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye ninguna tabla de resultados y advierte explicitamente de que, al perder precision con 4 bits, las salidas se desvian ligeramente del BF16 y los benchmarks del modelo original pueden no reproducirse. No se deben asumir, por tanto, las cifras del modelo base para esta version cuantizada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card advierte explicitamente de que la cuantizacion a 4 bits pierde precision y que las salidas se desvian ligeramente del BF16, por lo que los benchmarks del modelo original podrian no reproducirse. No se proporcionan cifras de MMLU, HumanEval, GSM8K ni similares.
 
 ## Requisitos de hardware
 
-- VRAM / memoria unificada estimada: los pesos ocupan 2,3 GB; con overhead de ejecucion (KV cache, buffers de MLX) es razonable reservar en torno a 3-4 GB, aunque no se publica una cifra oficial.
-- Cabe en GPU de consumo: si, en cualquier Mac con Apple Silicon y 8 GB o mas de memoria unificada. No esta pensado para GPUs NVIDIA o AMD, ya que MLX requiere Metal.
-- GPU recomendadas: no aplica en el sentido habitual; el entorno objetivo son chips Apple M1/M2/M3/M4 (y variantes Pro, Max, Ultra) con memoria unificada suficiente.
-- Opciones de despliegue: `mlx-lm` (CLI `mlx_lm.generate`, `mlx_lm.server` para API compatible con OpenAI). No es compatible con vLLM, TGI, llama.cpp u Ollama sin una conversion previa a otro formato.
-- Latencia y throughput: no disponibles; no se publican mediciones de tokens por segundo para esta cuantizacion.
+- VRAM/memoria estimada: aproximadamente 2,3 GB para los pesos en 4 bits, mas overhead de activaciones y cache KV; en la practica se recomienda al menos 4-6 GB de memoria unificada disponible.
+- Hardware objetivo: Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra) mediante MLX.
+- GPU NVIDIA: no aplicable directamente, ya que el formato es MLX; para CUDA habria que usar el modelo base BF16 con otras herramientas.
+- Cabe en GPU de consumo: si, en equipos Apple con memoria unificada suficiente; no esta pensado para GPUs discretas.
+- Opciones de despliegue: `dory-mlx` (requerido, ya que `mlx-lm` upstream no soporta la arquitectura Dory), con API Python (`dory_mlx.load`, `dory_mlx.chat`) y CLI (`python -m dory_mlx`).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Precision / formato | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit (este) | ~3,98 B | 4-bit MLX, safetensors, 2,3 GB | no disponible | `other` (OpenMDW-1.1 segun model card) | Hugging Face, 0 descargas |
-| nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 (base) | ~3,98 B | BF16, safetensors | no disponible | OpenMDW-1.1 | Hugging Face, oficial de NVIDIA |
+| NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit | ~4B | no disponible | MLX 4-bit | OpenMDW-1.1 | Hugging Face (snsnc) |
+| nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 | ~4B | no disponible | safetensors BF16 | OpenMDW-1.1 | Hugging Face (NVIDIA) |
+| Alternativas de ~4B en MLX | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en el material proporcionado, por lo que no se puede establecer una comparativa de rendimiento con alternativas de terceros. La unica comparacion documentable es frente al checkpoint BF16 original: misma arquitectura y parametros, distinta precision, con la advertencia del autor de que las salidas del 4-bit se desvian del BF16.
+No se dispone de informacion suficiente para comparar con alternativas concretas de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Perdida de precision: la cuantizacion 4-bit degrada la calidad frente al BF16; el propio autor avisa de que las salidas se desvian ligeramente y de que los benchmarks del modelo original pueden no reproducirse.
-- Sin datos de evaluacion: no hay benchmarks propios de esta version, ni mediciones de perplexity o de calidad conversacional.
-- Validacion nula de la comunidad: 0 descargas y 0 likes; es una conversion de terceros (usuario snsnc), no una publicacion oficial de NVIDIA.
-- Idiomas y contexto desconocidos: no se declaran idiomas soportados ni longitud de ventana, lo que impide garantizar un comportamiento correcto en castellano o en contextos largos.
-- Restricciones de licencia: el campo del repositorio es `other` y la model card remite a OpenMDW-1.1; es imprescindible revisar los terminos de NVIDIA antes de un uso comercial.
-- Dependencia de plataforma: solo se ejecuta en Apple Silicon mediante MLX; no hay versiones GGUF ni soporte para CUDA en este repositorio.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; como en cualquier modelo generativo de ~4B, debe asumirse y mitigarse con verificacion externa.
-- Sesgos: no documentados.
-- Fecha de publicacion atipica: el repositorio figura creado el 2026-10-17, dato que conviene verificar antes de citarlo.
+- La cuantizacion a 4 bits introduce perdida de precision; las salidas pueden desviarse del modelo BF16 original y los benchmarks del modelo base podrian no reproducirse.
+- La arquitectura Dory no esta soportada por `mlx-lm` upstream a fecha de octubre de 2026; es obligatorio instalar `dory-mlx`, lo que anade una dependencia externa y riesgo de mantenimiento.
+- El modelo esta limitado a Apple Silicon; no es portable a CUDA ni a otros backends sin reconversion.
+- No se documentan sesgos conocidos, riesgos de alucinacion especificos ni limitaciones de idioma en la informacion disponible.
+- La licencia de los pesos es OpenMDW-1.1, con terminos que deben consultarse en la model card de NVIDIA; el empaquetado MLX sigue Apache-2.0. Es responsabilidad del usuario verificar las restricciones de uso comercial.
+- El parametro `loops` de la API no esta documentado en detalle; su efecto en calidad y latencia es desconocido.
+- Repositorio con muy pocas descargas (366) y un solo like, lo que sugiere poca validacion comunitaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/snsnc/NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/snsnc/NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
-- Libreria MLX LM: https://github.com/ml-explore/mlx-lm
-- Empaquetado MLX de referencia: https://github.com/internet-projects/dory-mlx
+- Repositorio dory-mlx: https://github.com/internet-projects/dory-mlx
+- MLX-LM: https://github.com/ml-explore/mlx-lm

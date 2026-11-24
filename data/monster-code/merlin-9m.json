@@ -5,7 +5,7 @@
   "author": "Monster-Code",
   "url": "https://huggingface.co/Monster-Code/Merlin-9M",
   "created_at": "2026-11-15T01:20:51.000Z",
-  "updated_at": "2026-11-18T01:52:41.000Z",
+  "updated_at": "2026-11-23T20:54:05.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,10 +14,8 @@
     "en"
   ],
   "tags": [
-    "merlin",
-    "text-generation",
-    "small-model",
-    "pretraining",
+    "decision-model",
+    "decision",
     "en",
     "license:other",
     "region:us"
@@ -38,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Monster-Code/Merlin-600M",
-  "renamed_at": "2026-11-18T03:52:25.295Z",
+  "renamed_to": "chainlabs/Koi-1",
+  "renamed_at": "2026-11-24T04:27:19.424Z",
   "benchmarks": [],
   "sources": []
 }

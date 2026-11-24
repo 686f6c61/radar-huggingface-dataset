@@ -2,100 +2,101 @@
 
 ## Resumen
 
-Moonlight-16B-A3B-SFT-EchoMoE-teacher es un ajuste fino supervisado del modelo Moonlight-16B-A3B de Moonshot AI, publicado por el grupo McGill-NLP. Se trata del modelo "profesor" sin comprimir que sirve de referencia en el informe EchoMoE, un trabajo sobre paralelismo eficiente de expertos mediante compresión de activaciones. El modelo no introduce arquitectura nueva: hereda la del modelo base y se distribuye como el checkpoint de referencia contra el que se compara el estudiante destilado.
+Moonlight-16B-A3B-SFT-EchoMoE-teacher es un ajuste fino supervisado del modelo MoE Moonlight-16B-A3B de Moonshot AI, desarrollado por el grupo McGill-NLP. Su proposito principal no es el despliegue como asistente general, sino servir como modelo profesor sin comprimir en el estudio EchoMoE, donde se destila el conocimiento hacia un estudiante Moonlight-16B-A3B y se comparan los resultados de ambos. El modelo conserva la arquitectura original del base (deepseek_v3) y anade un entrenamiento sobre el dataset de instrucciones Dolci-Instruct-SFT de AllenAI.
 
-El modelo base es un transformer de tipo mixture-of-experts con 27 capas, 64 expertos enrutados (6 activos por token) y 2 expertos compartidos, con un tamano oculto de 2.048. Los pesos suman 15.960.111.936 parametros totales, aunque solo una fraccion se activa por token, lo que lo situa en la categoria de modelos eficientes en inferencia con un coste por token muy inferior al de un denso de 16B.
+El modelo tiene 15.960.111.936 parametros totales y una arquitectura de mezcla de expertos con 64 expertos enrutados, de los cuales 6 estan activos, mas 2 expertos compartidos, en 27 capas con un tamano oculto de 2.048. Se evaluo a una longitud de contexto de 8.192 tokens en bf16. Su relevancia actual radica en que forma parte del creciente interes por tecnicas de compresion de activaciones y paralelismo de expertos eficiente, y en que publica una evaluacion agregada sobre 18 benchmarks con una media del 53,0 %.
 
-Su relevancia es fundamentalmente metodologica: se publica como artefacto reproducible del informe EchoMoE, con una puntuacion media de 53,0 sobre 18 benchmarks. No esta pensado como modelo de produccion generalista, sino como referencia de investigacion para estudiar destilacion y paralelismo de expertos.
+Al estar liberado bajo licencia MIT, es directamente utilizable en entornos comerciales y de investigacion, aunque su orientacion es claramente academica y experimental dentro del ecosistema EchoMoE.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (deepseek_v3), 27 capas, 64 expertos enrutados + 2 compartidos, hidden size 2.048 |
+| Arquitectura | Mixture-of-Experts (deepseek_v3), 27 capas, 64 expertos enrutados (6 activos) + 2 expertos compartidos, hidden size 2.048 |
 | Parametros totales | 15.960.111.936 |
-| Parametros activos | 6 expertos enrutados + 2 compartidos por token (recuento exacto de parametros activos no disponible) |
-| Longitud de contexto | 8.192 tokens (longitud de evaluacion; contexto nativo del modelo base no disponible) |
+| Parametros activos | 3B (A3B, segun nomenclatura del modelo base) |
+| Longitud de contexto | 8.192 tokens (longitud de evaluacion) |
 | Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
-| Idiomas soportados | Ingles (en) |
+| Idiomas soportados | ingles (en) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Moonlight-16B-A3B, un transformer con mezcla de expertos identificado en transformers con la arquitectura `deepseek_v3`. Consta de 27 capas, 64 expertos enrutados de los que se activan 6 por token, mas 2 expertos compartidos, con un tamano oculto de 2.048. Al conservar la arquitectura original, el checkpoint se carga directamente en vLLM y transformers sin necesidad del paquete EchoMoE.
+El modelo hereda la arquitectura del base Moonlight-16B-A3B: un transformer con mezcla de expertos de tipo deepseek_v3, con 27 capas, 64 expertos enrutados de los que se activan 6 por token, 2 expertos compartidos y un tamano oculto de 2.048. Esta configuracion permite un modelo con cerca de 16.000 millones de parametros totales pero con solo unos 3.000 millones activos por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamano.
 
-El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el dataset allenai/Dolci-Instruct-SFT, durante dos epocas con secuencias empaquetadas de 8.192 tokens y una tasa de aprendizaje de 2e-5. No se documenta en la informacion disponible el uso de RLHF, DPO ni un recuento total de tokens de entrenamiento. La evaluacion se realizo en bf16 con vLLM 0.21, y el informe asociado (Liu et al., 2026, "Communicate the Change: Efficient Expert Parallelism via Activation Compression") describe la tecnica de compresion de activaciones para paralelismo de expertos, aunque el checkpoint aqui publicado es el profesor sin comprimir.
+El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el dataset allenai/Dolci-Instruct-SFT, durante dos epocas sobre secuencias empaquetadas de 8.192 tokens y con una tasa de aprendizaje de 2e-5. No se reporta en la informacion disponible el uso de RLHF, DPO ni otras fases de alineacion adicionales. La evaluacion se realizo con vLLM 0.21 y la arquitectura es la propia del modelo base, por lo que tanto vLLM como transformers pueden cargarlo sin necesidad del paquete EchoMoE.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con plantilla de chat compatible con `apply_chat_template`.
-- Razonamiento y conocimiento general: 62,9 % de media en el dominio de conocimiento y razonamiento del informe.
-- Matematicas: 34,7 % de media en el dominio de matematicas.
-- Generacion de codigo: 47,0 % de media en el dominio de codigo.
-- Seguimiento de instrucciones: 51,3 % de media en el dominio de instruction following.
-- Capacidad de servir como modelo profesor para destilacion hacia estudiantes comprimidos (caso de uso central del informe EchoMoE).
-- Soporte de tool calling, function calling, agentes o modos de razonamiento explicito: no disponible en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponibles; el pipeline es exclusivamente text-generation.
+- Generacion de texto conversacional en ingles, con plantilla de chat aplicable mediante `apply_chat_template`.
+- Razonamiento y conocimiento general, con una puntuacion media del 62,9 % en el dominio de conocimiento y razonamiento del informe.
+- Razonamiento matematico, con un 34,7 % de media en el dominio de matematicas.
+- Generacion de codigo, con un 47,0 % de media en el dominio de codigo.
+- Seguimiento de instrucciones, con un 51,3 % de media en el dominio correspondiente.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Referencia de destilacion: usar este checkpoint como profesor sin comprimir para entrenar o evaluar estudiantes comprimidos en el marco EchoMoE, comparando la caida de rendimiento por dominio con la media de 53,0 del profesor.
-- Investigacion en paralelismo de expertos: desplegarlo con `--enable-expert-parallel` en vLLM para reproducir los experimentos de comunicacion entre expertos del informe y medir el efecto de la compresion de activaciones.
-- Generacion de texto conversacional en ingles: con temperatura 0,7, top_p 0,8 y top_k 20, el modelo produce respuestas de chat multi-turno dentro de su ventana de 8.192 tokens.
-- Evaluacion comparativa de ajustes SFT: al estar afinado sobre Dolci-Instruct-SFT con hiperparametros documentados, sirve como linea base reproducible para comparar otras recetas de ajuste sobre el mismo modelo base.
-- Tareas de instruction following de dificultad media: su 51,3 % en ese dominio lo hace util para prototipos de asistentes que siguen instrucciones estructuradas, sin exigir el rendimiento de un modelo frontera.
-- Experimentacion academica con MoE de ~16B: al caber en una GPU de 80 GB en bf16, permite a grupos de investigacion ejecutar estudios de enrutamiento de expertos sin infraestructura de multiples nodos.
+- Destilacion de conocimiento: el modelo actua como profesor en el pipeline EchoMoE para generar senales de entrenamiento hacia un estudiante Moonlight-16B-A3B. Es su proposito declarado y el escenario para el que fue disenado.
+- Investigacion en compresion de activaciones: sirve como referencia sin comprimir para medir la perdida de calidad al aplicar tecnicas de compresion de activaciones en paralelismo de expertos.
+- Evaluacion comparativa de tecnicas MoE: al publicar una media agregada sobre 18 benchmarks, permite contrastar el impacto de optimizaciones de inferencia frente a un baseline estable.
+- Generacion de texto en ingles para tareas de instruccion: con contexto de 8.192 tokens, puede emplearse en resumenes, reescritura y respuestas conversacionales de un solo turno o multi-turno moderado.
+- Experimentos academicos de ajuste fino: al ser MIT y cargarse en transformers y vLLM, es una base accesible para estudiar SFT sobre datasets de instrucciones.
+- Benchmarking de infraestructura de inferencia: su configuracion MoE con 6 de 64 expertos activos lo hace util para validar despliegues con expert parallelism en vLLM.
 
 ## Benchmarks y rendimiento
 
-Puntuacion media (%) sobre 18 benchmarks por dominio, segun el informe EchoMoE:
+Resultados publicados en la model card (media porcentual sobre 18 benchmarks por dominio):
 
-| Dominio | Puntuacion |
+| Dominio | Puntuacion (%) |
 |---|---|
 | Conocimiento y razonamiento | 62,9 |
 | Matematicas | 34,7 |
 | Codigo | 47,0 |
 | Seguimiento de instrucciones | 51,3 |
-| **Media** | **53,0** |
+| Media global | 53,0 |
 
-No se han publicado en la informacion disponible los resultados desglosados por benchmark individual (MMLU, HumanEval, GSM8K, etc.) ni comparaciones numericas con modelos alternativos.
+No se han publicado en la informacion disponible resultados desglosados por benchmark individual (MMLU, HumanEval, GSM8K, etc.) ni comparaciones numericas con modelos alternativos.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16: aproximadamente 32 GB solo para pesos; con cache KV y overhead, una GPU de 80 GB es suficiente para cargar el modelo completo (confirmado en la model card).
-- GPU recomendadas: A100 80 GB o H100 80 GB para bf16 en una sola tarjeta; configuracion multi-GPU con data parallelism y expert parallelism segun el ejemplo de vLLM (`--data-parallel-size 8 --enable-expert-parallel`).
-- GPU de consumo: no cabe en tarjetas de 24 GB en bf16; se requeriria cuantizacion, para la que no se documentan formatos disponibles.
-- Opciones de despliegue: vLLM 0.21 (recomendado y usado en la evaluacion) y transformers con `AutoModelForCausalLM`. No se documenta soporte de llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en bf16: aproximadamente 32 GB solo para pesos, mas overhead de activaciones y cache KV; la model card indica que los pesos bf16 caben en una unica GPU de 80 GB.
+- GPU recomendadas: A100 80 GB o H100 80 GB para inferencia en bf16 en una sola tarjeta; configuraciones multi-GPU con `--data-parallel-size 8 --enable-expert-parallel` para servir con vLLM.
+- GPU de consumo: no se dispone de datos de cuantizacion publicados; en bf16 no cabe en GPU de consumo tipicas (24 GB o menos).
+- Opciones de despliegue: vLLM 0.21 (soporte nativo, sin paquete EchoMoE) y transformers con `AutoModelForCausalLM`; no se confirma soporte de llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Media en 18 benchmarks | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Moonlight-16B-A3B-SFT-EchoMoE-teacher | 15,96B (MoE) | 8.192 (evaluacion) | 53,0 | MIT | Hugging Face |
-| moonshotai/Moonlight-16B-A3B (base) | 15,96B (MoE) | no disponible | no disponible | MIT | Hugging Face |
-| Estudiante destilado EchoMoE | no disponible | no disponible | no disponible | no disponible | Coleccion EchoMoE |
+| Moonlight-16B-A3B-SFT-EchoMoE-teacher (este) | 15,96B | ~3B | 8.192 | MIT | SFT sobre Dolci, media 53,0 en 18 benchmarks |
+| moonshotai/Moonlight-16B-A3B (base) | no disponible en la informacion | ~3B | no disponible | MIT | Modelo base sin ajuste SFT de Dolci |
+| Estudiante EchoMoE (Moonlight-16B-A3B destilado) | no disponible | no disponible | no disponible | no disponible | Objeto de la destilacion; se compara con este profesor |
 
-La unica comparacion cuantitativa documentada es contra el estudiante destilado del propio informe, cuyas puntuaciones no se detallan en la informacion proporcionada. No se dispone de datos para comparar con modelos de otros autores de tamano o categoria similares.
+No se dispone de datos numericos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se documenta entrenamiento ni evaluacion multilingue.
-- Ventana de contexto evaluada de 8.192 tokens; no se garantiza comportamiento fiable mas alla de esa longitud.
-- Rendimiento debil en matematicas (34,7 %) y moderado en codigo (47,0 %), insuficiente para tareas de produccion exigentes en esos dominios.
-- Riesgo de alucinacion inherente a un modelo de 16B afinado solo con SFT, sin etapa de alineacion documentada (no hay evidencia de RLHF o DPO en la informacion disponible).
-- Sesgos: no se documenta ninguna evaluacion de sesgos ni de seguridad.
-- Es un artefacto de investigacion orientado a reproducir el informe EchoMoE; su uso en produccion no esta validado por el autor.
-- Licencia MIT, que permite uso comercial, pero hereda las condiciones del modelo base Moonlight-16B-A3B, tambien MIT.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso comunitario ni de validacion externa.
+- Modelo orientado a investigacion: su funcion principal es ser profesor en un estudio de destilacion, no un asistente listo para produccion.
+- Idiomas: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta evaluado.
+- Matematicas: el dominio de matematicas obtiene la puntuacion mas baja (34,7 %), lo que limita su uso en tareas cuantitativas.
+- Contexto: evaluado a 8.192 tokens; no se garantiza comportamiento estable mas alla de esa longitud.
+- Alucinacion y sesgos: no se documentan analisis especificos de sesgo ni tasas de alucinacion en la informacion disponible.
+- Tool calling y agentes: no se confirma soporte; conviene validarlo antes de integrarlo en pipelines que dependan de function calling.
+- Licencia: MIT, permisiva para uso comercial, pero sin garantias implicitas; el usuario asume el riesgo de uso.
+- Cuantizacion: no se publican pesos cuantizados ni recetas, lo que dificulta el despliegue en hardware limitado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/McGill-NLP/Moonlight-16B-A3B-SFT-EchoMoE-teacher
-- Modelo base: https://huggingface.co/moonshotai/Moonlight-16B-A3B
-- Dataset de ajuste: https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT
+- Paper (arXiv:2611.22215): https://arxiv.org/abs/2611.22215
 - Codigo: https://github.com/McGill-NLP/EchoMoE
 - Pagina del proyecto: https://mcgill-nlp.github.io/EchoMoE/
 - Coleccion EchoMoE: https://huggingface.co/collections/McGill-NLP/echomoe-6afcbfa10b38185f87cbd0ac
-- Paper (referencia en la model card, sin arXiv ID disponible): Liu, Gala, Reddy y Bahdanau, "Communicate the Change: Efficient Expert Parallelism via Activation Compression", 2026.
+- Modelo base: https://huggingface.co/moonshotai/Moonlight-16B-A3B
+- Dataset de entrenamiento: https://huggingface.co/datasets/allenai/Dolci-Instruct-SFT

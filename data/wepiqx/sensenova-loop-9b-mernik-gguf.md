@@ -2,108 +2,113 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-MERNIK-GGUF es una cuantizacion GGUF en formato de solo texto del modelo `sensenova/SenseNova-Loop-9B`, publicada por el usuario `wepiqx`. El modelo base emplea una arquitectura propietaria denominada `sensenova_loop`, que combina un decodificador con bucles recurrentes (looped decoder) y enrutamiento residual mHC, lo que la aparta de un transformer convencional y la hace incompatible con compilaciones estandar de llama.cpp.
+SenseNova-Loop-9B-MERNIK-GGUF es una cuantización en formato GGUF del modelo base `sensenova/SenseNova-Loop-9B`, publicada por el usuario wepiqx bajo licencia Apache 2.0. El modelo base emplea una arquitectura propietaria denominada `sensenova_loop`, descrita por el autor como un decoder con bucles (looped decoder) y enrutamiento residual mHC, lo que la aleja de un transformer convencional y obliga a usar un fork parcheado de `llama.cpp` para su ejecución. El artefacto publicado pesa 5.310 MiB (unos 5,6 GB) y contiene 538 tensores (523 del grafo base más 15 de multi-token prediction, MTP).
 
-La relevancia de esta publicacion reside en el metodo de cuantizacion: MERNIK asigna el presupuesto de 5300 MiB por clase de tensor en lugar de aplicar una receta plana, concentrando la precision en tensores pequenos y sensibles (normas, parametros de estado SSM, convoluciones) y degradando de forma controlada las proyecciones de atencion y la FFN. El resultado es un archivo de 5310 MiB con 4,96 bits por peso que, segun las mediciones de vista previa del autor, mejora la fidelidad frente a un Q4_K_M estandar.
+La relevancia de esta ficha radica en dos factores. Primero, aplica el asignador MERNIK, que distribuye un presupuesto fijo de 5.300 MiB por clase de tensor en lugar de aplicar una receta plana, logrando 4,83 bits por peso (BPW) frente a los 5,02 BPW de un Q4_K_M estándar. Segundo, el autor documenta métricas de fidelidad (KLD y PPL) frente a una referencia Q8_0, algo poco habitual en publicaciones de cuantizaciones comunitarias y que permite evaluar la degradación real introducida.
 
-El repositorio se encuentra en estado "preparing": en el momento de la consulta solo contiene el README y los artefactos GGUF, checksums y tablas de verificacion estan pendientes de subida. El modelo base declara 262.144 tokens de contexto nativo, ampliables a 524.288 con un factor YaRN de 2,0, y soporta ingles y chino. La licencia es Apache 2.0.
+El modelo es exclusivamente de texto (sin torre de visión), soporta inglés y chino, y declara una longitud de contexto nativa de 262.144 tokens, extensible a 524.288 mediante un factor YaRN de 2,0. Su adopción está condicionada por la necesidad de un runtime modificado, lo que limita su uso a entornos donde se pueda compilar el fork de `llama.cpp` del autor del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `sensenova_loop` (decodificador con bucles + enrutamiento residual mHC); requiere llama.cpp parcheado |
-| Parametros totales | ~9B (solo texto) |
+| Arquitectura | `sensenova_loop` (looped decoder con enrutamiento residual mHC) |
+| Parametros totales | 9.200.240.000 (~9,2 B) |
 | Parametros activos | no disponible (no se declara como MoE) |
-| Longitud de contexto | 262.144 nativo; 524.288 con YaRN factor 2.0 |
-| Tipos de cuantizacion | MERNIK 5300 MiB (4,96 BPW); Q4_K_M estandar (5,02 BPW) |
-| Idiomas soportados | ingles (en), chino (zh) |
+| Longitud de contexto | 262.144 tokens nativos; 524.288 con YaRN factor 2,0 |
+| Tipos de cuantizacion | GGUF MERNIK 5300 MiB a 4,83 BPW (publicado); Q4_K_M a 5,02 BPW (control, en preparación) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
-| Tensores | 523 (sin bloque MTP) |
-| Tamano de archivo | MERNIK: 5.567.431.104 B (5310 MiB); Q4_K_M: 5.628.723.360 B (5368 MiB) |
-| Vision tower | no incluido (solo texto) |
-| MTP | ninguno en esta release |
-| Runtime recomendado | fork `GuideboardLabs/llama.cpp-sensenova-loop` |
+| Formato de pesos | GGUF (538 tensores en el build MTP publicado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base utiliza la arquitectura `sensenova_loop`, descrita por el autor como un decodificador con bucles (looped decoder) mas enrutamiento residual mHC. Esta estructura incluye tensores propios de un camino recurrente/SSM: `ssm_conv1d`, parametros de compuerta y estado SSM, y pesos `ssm_out`. La cuantizacion MERNIK preserva estos tensores en F32 precisamente para no degradar el camino recurrente, que es el punto mas sensible del modelo. El archivo contiene 523 tensores, frente a los 538 de la version Preview, porque la release elimina el bloque MTP (multi-token prediction).
+El modelo base SenseNova-Loop-9B utiliza una arquitectura denominada `sensenova_loop`, que el autor de la cuantización describe como un decoder con bucles más enrutamiento residual mHC. Esta arquitectura no es reconocida por las compilaciones estándar de `llama.cpp`, que fallan con el error `unknown model architecture: 'sensenova_loop'`, por lo que se requiere el fork mantenido por los autores del modelo base. El grafo publicado consta de 538 tensores: 523 correspondientes al modelo base y 15 adicionales de multi-token prediction (MTP), una técnica de decodificación especulativa integrada en los pesos.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento, ya que la model card del autor de la cuantizacion no las detalla. La innovacion tecnica destacable de esta publicacion es el propio asignador MERNIK: reparte el presupuesto por clase de tensor (321 tensores F32 de 40,0 MiB; 178 Q4_K de 3132,0 MiB; 10 Q5_K de 1575,8 MiB; 14 Q6_K de 551,3 MiB) y redirige el presupuesto liberado por la eliminacion de MTP hacia la cola de la FFN (`ffn_gate`/`ffn_up` de `blk.22/25/26/27` y `blk.54` a Q6_K; `blk.19/23/55` a Q5_K). El unico tensor degradado respecto a Preview es `blk.18.ssm_out.weight`, de Q5_K a Q4_K.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO en la información proporcionada. La cuantización MERNIK emplea un asignador que reparte el presupuesto de 5.300 MiB por clase de tensor: 328 tensores en F32 (40,1 MiB) para normas, parámetros mHC y del componente SSM, y el resto distribuido en tipos de menor precisión. El build publicado incorpora una cabeza `ling_moe` experimental de 5 capas (Gnom v5.3.1) con asignador water-fill (α=2,4). El autor advierte que el MTP se cuantiza dentro del mismo presupuesto de 5.300 MiB, dejando unos 5.120 MiB para la ruta base, y que `llama-perplexity` ignora los tensores MTP durante el cálculo.
 
 ## Capacidades
 
-- Generacion de texto en ingles y chino.
-- Razonamiento de multiples pasos y generacion long-form, favorecidos por la ventana de contexto de hasta 262.144 tokens nativos.
-- Procesamiento de contextos extensos (documentos largos, conversaciones multi-turno) gracias a la extension YaRN a 524.288 tokens.
-- Inferencia local en llama.cpp mediante el fork con soporte para `sensenova_loop`.
-- Compatibilidad con `llama-server` y su API HTTP (`--jinja` para plantillas de chat).
-- Capacidades de vision: no disponibles (tower de vision no incluido, modelo solo texto).
-- Tool calling / function calling: no confirmado en la informacion disponible.
-- Modo thinking explicito: no confirmado en la informacion disponible.
-- Decodificacion especulativa MTP: no disponible en esta release (bloque MTP eliminado; el autor advierte de no activarla).
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento multi-turno con ventanas de contexto muy largas (262.144 tokens nativos).
+- Decodificación especulativa mediante multi-token prediction (MTP) integrado en los pesos publicados.
+- Soporte de contexto extendido hasta 524.288 tokens mediante YaRN factor 2,0.
+- Ejecución en `llama.cpp` mediante fork parcheado (no compatible con builds estándar).
+- Compatibilidad declarada con endpoints (tag `endpoints_compatible`).
+- No incluye torre de visión: el artefacto es exclusivamente de texto.
+- No se documenta soporte explícito de tool calling, function calling ni capacidades de agente en la información disponible.
 
 ## Casos de uso
 
-- Analisis de documentos extensos: con 262.144 tokens de contexto nativo, el modelo puede ingerir informes, expedientes o bases de codigo completas en una sola pasada sin troceado, algo inviable en modelos de 8K-32K.
-- Resumen y extraccion de informacion en corpus largos: la ventana ampliada a 524.288 con YaRN permite procesar libros tecnicos o actas completas y extraer entidades o conclusiones en una unica llamada.
-- Atencion al cliente multi-turno: el contexto largo reduce la perdida de informacion en conversaciones prolongadas y el soporte bilingue en/zh cubre mercados angloparlantes y sinofonos.
-- Despliegue local en hardware de gama media: el archivo de 5310 MiB cabe en GPU consumer con 8 GB o mas y el autor reporta ~16 t/s en una GTX 1070, lo que habilita prototipado en estaciones de trabajo sin GPU de datacenter.
-- Evaluacion de tecnicas de cuantizacion: el par MERNIK vs Q4_K_M con la misma base permite comparar fidelidad (KLD) y perplejidad en un caso real de arquitectura no estandar, util para investigadores que estudien asignacion de bits por tensor.
-- Procesamiento de texto bilingue en/zh: traduccion asistida, clasificacion y generacion de contenido en ambos idiomas con un unico modelo y una sola GPU.
-- Investigacion sobre arquitecturas recurrentes: al requerir un fork especifico de llama.cpp, sirve como banco de pruebas para estudiar el comportamiento de decodificadores con bucles bajo cuantizacion agresiva.
+- Procesamiento de documentos largos: con 262.144 tokens de contexto nativo, el modelo puede ingerir contratos, informes o bases de código completas en una sola pasada sin técnicas de chunking, lo que simplifica pipelines de resumen y extracción.
+- Análisis de repositorios de código: la ventana extendida a 524.288 tokens con YaRN permite cargar módulos completos o varios ficheros relacionados para tareas de revisión y explicación, siempre que el runtime parcheado esté disponible.
+- Asistentes conversacionales bilingües inglés-chino: el soporte declarado de ambos idiomas lo hace adecuado para atención al cliente o soporte técnico en entornos con usuarios de esas dos lenguas.
+- Despliegue en hardware de gama media: con 5,6 GB de pesos en GGUF, el modelo cabe en GPUs de consumo con 8 GB o más de VRAM, lo que permite prototipado local sin infraestructura de datacenter.
+- Generación de texto con latencia reducida: el MTP integrado actúa como decodificación especulativa, útil en aplicaciones interactivas donde el tiempo por token es crítico.
+- Investigación sobre cuantización: las métricas KLD y PPL publicadas frente a la referencia Q8_0 convierten este artefacto en un caso de estudio para evaluar asignadores por clase de tensor (MERNIK) frente a recetas planas (Q4_K_M).
+- Evaluación comparativa de arquitecturas no estándar: sirve para experimentar con el decoder con bucles y el enrutamiento mHC en entornos controlados, dado que requiere un fork específico de `llama.cpp`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de la release en la informacion disponible. El autor solo proporciona mediciones de fidelidad de cuantizacion sobre el checkpoint Preview, que no son aplicables a la release:
+El autor publica métricas de fidelidad de la cuantización (PPL y KLD) frente a una referencia Q8_0, calculadas sobre `wiki.test.raw` (290 chunks) con contexto de 1024. No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la información disponible.
 
-| Checkpoint / build | PPL | KLD media | KLD mediana | KLD max | RMS Δp | Same top-p |
+| Build | PPL | KLD mean | KLD median | KLD max | RMS Δp | Same top-p |
 |:---|---:|---:|---:|---:|---:|---:|
 | Preview Q4_K_M | 20,6058 | 0,167036 | 0,033350 | 29,973368 | 9,707% | 86,461% |
 | Preview MERNIK 5300 | 18,7856 | 0,122821 | 0,022206 | 29,421997 | 8,370% | 88,627% |
-| Release Q4_K_M | pendiente | pendiente | pendiente | pendiente | pendiente | pendiente |
-| Release MERNIK 5300 | pendiente | pendiente | pendiente | pendiente | pendiente | pendiente |
+| Release Q4_K_M | 16,6646 | 0,232049 | 0,053313 | 32,588943 | 10,775% | 83,498% |
+| Release MERNIK 5300 (v5 Gnom) | 16,4063 | 0,175622 | 0,035807 | 32,092632 | 9,406% | 86,060% |
+| Release MERNIK 5300 v5.3.1 (greedy) | 16,3291 | 0,173820 | 0,035771 | 29,802231 | 9,375% | 86,069% |
+| Release MERNIK 5300 v5.3.1 waterfill (no MTP) | 16,3452 | 0,164873 | 0,032986 | 29,852724 | 9,106% | 86,499% |
+| Release MERNIK 5300 v5.3.1 waterfill (MTP, publicado) | 16,3688 | 0,176215 | 0,036321 | 30,295275 | 9,329% | 85,966% |
 
-Protocolo de referencia: logits Q8, `wiki.test.raw` completo (290 chunks), contexto 1024, batch 128. No se han ejecutado HumanEval ni otros benchmarks de tarea para esta release.
+Comparación del build publicado frente al control Q4_K_M estándar:
+
+| Métrica | Stock Q4_K_M | 5300-v5.3.1-MTP-wf.gguf | Cambio |
+|:---|---:|---:|---:|
+| Fichero | 5368 MiB, 5,02 BPW | 5310 MiB, 4,83 BPW | −58 MiB |
+| PPL | 16,6646 | 16,3688 | −0,296 (−1,8%) |
+| KLD mean | 0,232049 | 0,176215 | −0,0558 (−24,1%) |
+| KLD median | 0,053313 | 0,036321 | −0,0170 (−31,9%) |
+| KLD max | 32,588943 | 30,295275 | −2,294 (−7,0%) |
+| RMS Δp | 10,775% | 9,329% | −1,446 p.p. |
+| Same top-p | 83,498% | 85,966% | +2,468 p.p. |
+
+El autor señala que el build MTP publicado es un 6,9% peor en KLD mean que el candidato water-fill sin MTP retirado, atribuible a que el MTP consume parte del presupuesto de 5.300 MiB y a que `llama-perplexity` no puntúa los tensores MTP.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~5,3 GB para el archivo MERNIK (5310 MiB) y ~5,4 GB para el Q4_K_M (5368 MiB); anadir overhead de contexto KV segun la longitud de secuencia.
-- GPU consumer: cabe en tarjetas con 8 GB o mas (el autor valida funcionamiento en GTX 1070 con ~16 t/s). Una RTX 3060/4060 Ti de 8-16 GB es suficiente para contextos moderados.
-- GPU profesional: A100, H100 o RTX 4090 permiten contextos largos y mayor throughput; no se han publicado cifras de rendimiento para estas tarjetas.
-- Backends de compilacion: CUDA (`-DGGML_CUDA=ON`) o Vulkan (`-DGGML_VULKAN=ON`); elegir uno solo.
-- Runtime: obligatorio el fork `GuideboardLabs/llama.cpp-sensenova-loop`; las builds estandar fallan con `unknown model architecture: 'sensenova_loop'`.
-- Servidor: `llama-server` con `--jinja -ngl 99`; muestreo recomendado temp 1.0, top-k 20, top-p 0.95, min-p 0.0.
-- No activar decodificacion especulativa MTP: la release no incluye bloque MTP.
-- Throughput conocido: ~16 t/s en GTX 1070 (smoke test del autor); sin datos para otras GPU.
+- VRAM estimada para inferencia: aproximadamente 5,6 GB solo para pesos; con overhead de contexto y KV cache, se recomienda un mínimo de 8 GB para contextos moderados. Contextos de 262.144 tokens requieren VRAM adicional proporcional a la KV cache, no cuantificada en la información disponible.
+- GPU recomendadas: no especificadas por el autor. Por tamaño de pesos, una RTX 4090 (24 GB) o A100/H100 permiten contextos largos con holgura; una RTX 3060 de 12 GB cubre contextos moderados.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM para contextos cortos.
+- Opciones de despliegue: exclusivamente `llama.cpp` con el fork parcheado de `sensenova_loop` (el fork del autor de la cuantización es opcional). No es compatible con builds estándar de `llama.cpp`, vLLM, TGI ni Ollama sin modificación.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---:|---|---|---|
-| SenseNova-Loop-9B-MERNIK-GGUF | ~9B | 262.144 (524.288 YaRN) | Apache 2.0 | GGUF | Requiere fork de llama.cpp; release en preparacion |
-| SenseNova-Loop-9B (base) | ~9B | 262.144 (524.288 YaRN) | Apache 2.0 | safetensors (presumible) | Modelo original de `sensenova`; pesos completos |
-| SenseNova-Loop-9B-Q4_K_M (control) | ~9B | 262.144 (524.288 YaRN) | Apache 2.0 | GGUF | Misma base, receta estandar de 5,02 BPW; menor fidelidad en Preview |
-| Alternativas de ~9B con contexto largo | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de modelos comparables en la informacion proporcionada |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|:---|---:|---:|:---|:---|:---|
+| SenseNova-Loop-9B-MERNIK-GGUF (este) | ~9,2 B | 262.144 (524.288 con YaRN) | Apache 2.0 | GGUF (fork) | Requiere `llama.cpp` parcheado; 4,83 BPW |
+| SenseNova-Loop-9B (base) | ~9,2 B | 262.144 | Apache 2.0 | safetensors | Pesos originales sin cuantizar; mismo runtime parcheado |
+| Q4_K_M del mismo modelo (control) | ~9,2 B | 262.144 | Apache 2.0 | GGUF | 5,02 BPW; KLD mean 0,232 frente a 0,176 del MERNIK |
+| Modelos de ~9B de propósito general | no disponible | no disponible | no disponible | no disponible | No se dispone de comparativas con otros modelos en la información proporcionada |
+
+No se han proporcionado datos de benchmarks de tareas que permitan comparar este modelo con alternativas de la misma categoría en términos de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Repositorio incompleto: en el momento de la consulta los archivos GGUF figuran como "preparing" y solo esta publicado el README; los checksums y tablas de verificacion estan pendientes.
-- Sin benchmarks de release: no hay PPL, KLD ni HumanEval medidos sobre el checkpoint final; las cifras disponibles corresponden al Preview y no son extrapolables.
-- Dependencia de un fork: no funciona con llama.cpp estandar; requiere `GuideboardLabs/llama.cpp-sensenova-loop`, lo que limita el soporte de herramientas de terceros (Ollama, vLLM, TGI no estan confirmados).
-- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
-- Modelo solo texto: sin torre de vision ni capacidades multimodales.
-- Sin MTP: no se puede usar decodificacion especulativa con este archivo y el autor lo desaconseja explicitamente.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplicable el riesgo habitual de modelos generativos de ~9B.
-- Sesgos: no documentados por el autor; no hay evaluacion de sesgos publicada.
-- Cuantizacion agresiva: 4,96 BPW con degradacion deliberada de proyecciones de atencion y FFN; el autor advierte de que recetas genericas pueden degradar el camino recurrente.
-- Muestreo fijo recomendado (temp 1.0): bajar la temperatura no esta recomendado por el autor, lo que reduce el control fino sobre la determinismo en produccion.
-- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el cumplimiento de la licencia del modelo base recae en el usuario.
+- Requiere un fork parcheado de `llama.cpp`: las compilaciones estándar fallan con `unknown model architecture: 'sensenova_loop'`, lo que complica el despliegue en producción y la integración con herramientas que dependen de `llama.cpp` upstream.
+- El artefacto publicado incluye MTP, lo que degrada el KLD mean un 6,9% respecto al candidato sin MTP retirado; el autor lo atribuye al reparto del presupuesto de cuantización y no a un fallo del asignador.
+- Solo soporta inglés y chino; no se declara soporte de castellano ni de otros idiomas.
+- Modelo exclusivamente de texto: no incluye torre de visión, por lo que no puede procesar imágenes.
+- No se documentan capacidades de tool calling, function calling ni uso agéntico; su idoneidad para esos escenarios no está verificada.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de modelos de ~9B.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- El contexto de 524.288 tokens requiere YaRN factor 2,0 y VRAM adicional significativa; no se especifican los requisitos exactos de memoria para esa configuración.
+- La licencia Apache 2.0 permite uso comercial, pero la dependencia de un runtime modificado puede condicionar el soporte a largo plazo.
+- El repositorio tiene 0 likes y 381 descargas en el momento de la consulta, lo que indica validación comunitaria limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/wepiqx/SenseNova-Loop-9B-MERNIK-GGUF
+- Hugging Face (cuantización): https://huggingface.co/wepiqx/SenseNova-Loop-9B-MERNIK-GGUF
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Fork de llama.cpp de los autores: https://github.com/GuideboardLabs/llama.cpp-sensenova-loop
-- Fork opcional del cuantizador: https://github.com/wepiqx/llama.cpp-sensenova-loop

@@ -68,31 +68,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "WhatsApp Web",
-      "url": "https://web.whatsapp.com/",
-      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
-    },
-    {
-      "title": "Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP · Hugging Face",
-      "url": "https://huggingface.co/Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP",
-      "snippet": "Instructions to use Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "BennyDaBall (BennyDaBall) - Hugging Face",
-      "url": "https://huggingface.co/BennyDaBall",
-      "snippet": "Finetuning & quantization Text-to-Video • Updated 12 days ago • 4.76k • 3"
-    },
-    {
-      "title": "‎Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3.8",
-      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
-    }
-  ]
+  "sources": []
 }

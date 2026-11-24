@@ -2,51 +2,50 @@
 
 ## Resumen
 
-tb-x1 es un modelo de generacion de texto publicado en Hugging Face por el usuario Shadow0482 bajo licencia Apache 2.0. Se trata de un fine-tuning en precision FP16 (16 bits) del modelo base orangejuicesmith/Mythos-Nano-safetensor, que a su vez pertenece a la familia arquitectonica Qwen2. El modelo cuenta con aproximadamente 3.085 millones de parametros (3,08 mil millones) y esta orientado a generacion de texto conversacional en ingles.
+TB-X1 es un ajuste fino (fine-tune) del modelo Mythos Nano, publicado por el usuario Shadow0482 en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros (3,09 B) construido sobre la arquitectura Qwen2, distribuido en formato Safetensors y pensado para su uso dentro del ecosistema Hugging Face Transformers. Su licencia declarada es Apache 2.0 y el unico idioma soportado segun los metadatos es el ingles.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que segun el autor permite un entrenamiento aproximadamente 2 veces mas rapido que un pipeline convencional. El repositorio ocupa 6,2 GB, coherente con un modelo de 3B parametros almacenado en safetensors FP16 (aproximadamente 6,17 GB de pesos mas metadatos).
+El modelo se presenta como parte de la "serie TB-X" y esta orientado a flujos de trabajo agenticos y a la invocacion de herramientas (tool calling). Segun su model card, el desarrollo se realizo mediante un flujo guiado por modelos profesor (Claude Opus 5.5 y GPT-6 Astra) y orquestacion de agentes, con aproximadamente 500 millones de interacciones de tool-call y flujos agenticos reportadas como actividad del flujo de trabajo, no como tokens de entrenamiento ni muestras de dataset.
 
-La relevancia de este modelo es limitada en el ecosistema actual: se trata de un fine-tuning comunitario sin documentacion tecnica detallada, sin benchmarks publicados y con cero descargas en el momento de la ficha. Resulta util unicamente como referencia para quienes quieran reproducir el pipeline de fine-tuning con Unsloth sobre una base Qwen2 de 3B, o para experimentacion local en entornos con recursos limitados.
+Su relevancia actual es limitada pero concreta: se trata de un modelo pequeno (3 B) que cabe en GPU de consumo y que declara capacidades de razonamiento estructurado y tool calling, lo que lo hace candidato para prototipado de agentes locales. No obstante, la informacion tecnica publicada es escasa: no se detallan volumenes de tokens de entrenamiento, composicion del dataset ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2) |
-| Parametros totales | 3.085.938.688 (aproximadamente 3,08 mil millones) |
+| Arquitectura | Qwen2 (transformer decoder-only) |
+| Parametros totales | 3.085.938.688 (3,09 B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en FP16; el formato safetensors permite cuantizacion posterior a GGUF/AWQ/GPTQ, pero el autor no la documenta) |
-| Idiomas soportados | ingles (en) |
+| Tipos de cuantizacion | no disponible (pesos publicados en Safetensors; compatible con cuantizacion via Transformers/Unsloth, sin formatos GGUF publicados) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (precision FP16) |
+| Formato de pesos | Safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE). La etiqueta `qwen2` en los metadatos de Hugging Face confirma la familia arquitectonica, aunque la model card no detalla configuraciones como numero de capas, dimensiones ocultas, numero de cabezas de atencion ni la longitud de contexto nativa de la variante de 3B.
+TB-X1 emplea la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar. El modelo base es Mythos Nano (orangejuicesmith/Mythos-Nano-safetensor), sobre el que se aplico un ajuste fino optimizado con el framework Unsloth. No se especifican en la informacion disponible ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
-El entrenamiento consistio en un fine-tuning supervisado (SFT) sobre el checkpoint base Mythos-Nano-safetensor, ejecutado con Unsloth y TRL. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO o cualquier otro metodo de alineacion posterior. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, atencion con ventana deslizante) mas alla de las propias de la arquitectura Qwen2. El unico dato tecnico explicito es que el resultado se publica en FP16 tras el proceso de fusion de pesos (merge) del adaptador de fine-tuning.
+La innovacion declarada por el autor no reside en la arquitectura sino en la metodologia de desarrollo: un flujo guiado por modelos profesor (Claude Opus 5.5 para generacion de instrucciones y respuestas, GPT-6 Astra para razonamiento y soporte de flujo), con orquestacion de agentes multi-paso y tool-call. El autor reporta aproximadamente 500 millones de interacciones de tool-call y flujos agenticos como actividad del flujo de trabajo, aclarando explicitamente que esa cifra no corresponde a parametros, tokens ni muestras de dataset. No se documenta ninguna innovacion arquitectonica adicional (atencion lineal, decodificacion especulativa, SSM, etc.).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles, orientada a uso conversacional segun la etiqueta `conversational`.
-- Razonamiento basico y respuesta a instrucciones heredado del modelo base, sin garantias documentadas por parte del autor.
-- Generacion de codigo y matematicas: capacidad probable por herencia de Qwen2, pero no verificada ni documentada en la model card.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: limitadas al ingles segun el campo `language: en`.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
-- Compatibilidad con text-generation-inference (TGI) y endpoints compatible, segun los tags del repositorio.
-- Compatibilidad con transformers como libreria principal de carga.
+- Generacion de texto conversacional en ingles.
+- Razonamiento estructurado en flujos multi-paso, segun declara el autor.
+- Soporte de tool calling / function calling (etiqueta `tool-calling` y `agentic-workflows`).
+- Integracion en flujos agenticos y orquestacion de herramientas.
+- Compatibilidad con plantillas de chat (`apply_chat_template` de Transformers).
+- Capacidades multilingues: no disponibles; solo ingles declarado.
+- Vision, audio o modo "thinking" explicito: no disponibles.
 
 ## Casos de uso
 
-- Experimentacion con pipelines de fine-tuning: el modelo sirve como referencia reproducible para estudiar el flujo Unsloth + TRL sobre una base Qwen2 de 3B, incluyendo el proceso de merge de pesos y publicacion en FP16.
-- Prototipado de asistentes conversacionales en ingles: con 3B parametros, el modelo puede sostener dialogos multi-turno simples en entornos de desarrollo, aunque la ausencia de benchmarks impide garantizar calidad en produccion.
-- Generacion de texto en local con recursos limitados: el tamano de 3B parametros permite ejecucion en GPU de consumo (por ejemplo, RTX 3060 de 12 GB o superiores) tras cuantizacion a 4 u 8 bits con llama.cpp o GPTQ.
-- Evaluacion comparativa de fine-tunings comunitarios: util como punto de control frente a otros derivados de Mythos-Nano o de Qwen2-3B para medir el impacto de distintos datasets de SFT.
-- Investigacion academica sobre linaje de modelos: el repositorio documenta la cadena base_model (Mythos-Nano-safetensor) y permite analizar practicas de publicacion en Hugging Face.
-- Pruebas de integracion con TGI: los tags indican compatibilidad con text-generation-inference, por lo que puede desplegarse como endpoint de generacion de texto para validar infraestructura de serving.
+- Prototipado de agentes locales: al ser un modelo de 3 B, puede ejecutarse en una GPU de consumo y usarse para validar pipelines de orquestacion de agentes y tool calling antes de migrar a modelos mayores.
+- Asistentes conversacionales ligeros en ingles: adecuado para bots de soporte de baja latencia donde el coste por inferencia es critico, dado su reducido tamano.
+- Generacion de codigo asistida en entornos de desarrollo: su soporte declarado de tool calling permite integrarlo en asistentes que invocan funciones o APIs, aunque sin benchmarks publicados conviene validar la calidad antes de produccion.
+- Automatizacion de tareas con llamadas a herramientas: pipelines que requieran que el modelo decida que funcion invocar y con que argumentos, aprovechando la etiqueta `agentic-workflows`.
+- Fine-tuning adicional: al estar en Safetensors y ser compatible con Unsloth, sirve como base para ajustes especificos de dominio en ingles con requisitos modestos de hardware.
+- Experimentacion e investigacion: modelo pequeno y de licencia Apache 2.0 util para reproducir experimentos de destilacion guiada por profesor o de generacion de instrucciones sinteticas.
+- Despliegue en TGI: compatible con Text Generation Inference para servir el modelo via API en infraestructura propia.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +53,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 6,2 GB solo para pesos, mas overhead de activaciones y KV cache; en la practica se recomienda al menos 8 GB de VRAM para contextos cortos.
-- VRAM estimada en cuantizacion 8 bits: aproximadamente 3,1-3,5 GB.
-- VRAM estimada en cuantizacion 4 bits: aproximadamente 1,8-2,2 GB.
-- GPU recomendadas: A100, H100 o L40S para serving concurrente; RTX 4090 o RTX 3090 para desarrollo; RTX 3060 12 GB o RTX 4060 Ti 16 GB suficientes para inferencia en FP16 o 8 bits.
-- Cabe en GPU de consumo: si, en modelos con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090) para FP16; en 4 bits cabe en GPUs de 4-6 GB.
-- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (TGI) segun tags, llama.cpp/Ollama tras conversion a GGUF, vLLM (previa verificacion de compatibilidad con la configuracion Qwen2 concreta).
-- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: en precision FP16/BF16, aproximadamente 6,2 GB solo para pesos (el repositorio ocupa 6,2 GB); en cuantizacion de 8 bits, en torno a 3-4 GB; en 4 bits, alrededor de 2 GB, aunque no se publican pesos GGUF oficiales.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 (RTX 3060 Ti, RTX 4060 Ti, RTX 4070 en adelante); A100 y H100 sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en FP16 y en tarjetas de 4-6 GB con cuantizacion.
+- Opciones de despliegue: Transformers, Text Generation Inference (TGI), Accelerate y flujos compatibles con Unsloth; no se confirma soporte de llama.cpp u Ollama al no publicarse GGUF.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| Shadow0482/tb-x1 | 3,08 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning FP16 de Mythos-Nano-safetensor con Unsloth |
-| orangejuicesmith/Mythos-Nano-safetensor | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva tb-x1 |
-| Qwen2-1.5B / Qwen2-7B (Alibaba) | 1,5 y 7 mil millones | 32.768 tokens (variantes oficiales) | Apache 2.0 | Hugging Face, ModelScope | Familia oficial Qwen2 con benchmarks publicados |
+| TB-X1 (Shadow0482) | 3,09 B | no disponible | Apache 2.0 | Ingles | Fine-tune de Mythos Nano, orientado a agentes/tool calling |
+| Qwen2.5-3B (Alibaba) | ~3 B | 32K (segun version) | Apache 2.0 | Multilingue | Modelo base de referencia de la familia Qwen2; benchmarks publicados |
+| Llama 3.2 3B (Meta) | ~3 B | 128K | Llama 3.2 Community License | Multilingue | Ampliamente soportado en llama.cpp/Ollama |
+| Phi-3-mini (Microsoft) | 3,8 B | 4K-128K (segun variante) | MIT | Ingles principalmente | Buen rendimiento en razonamiento para su tamano |
 
-La comparacion con las variantes oficiales de Qwen2 es la referencia mas directa por familia arquitectonica, aunque tb-x1 no documenta configuracion ni resultados que permitan una comparacion cuantitativa. No se dispone de datos de benchmarks del modelo ni de su base Mythos-Nano.
+Nota: los datos de los modelos comparativos corresponden a conocimiento general de la familia; para TB-X1 no hay benchmarks publicados que permitan una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evaluaciones publicadas de MMLU, HumanEval, GSM8K ni de ningun otro benchmark, lo que impide estimar su calidad real.
-- Sesgos conocidos: no documentados; al ser un fine-tuning sin model card detallada, no se especifica el dataset ni los posibles sesgos heredados del modelo base o introducidos durante el SFT.
-- Riesgo de alucinacion: no evaluado; en modelos de 3B parametros el riesgo de alucinacion suele ser elevado, especialmente sin alineacion documentada (RLHF/DPO no mencionados).
-- Limitacion de idioma: solo se declara ingles; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sera deficiente.
-- Limitacion de contexto: la longitud de contexto no esta documentada, por lo que no se puede planificar su uso en tareas de contexto largo.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Mythos-Nano-safetensor, que no se documenta en la informacion disponible.
-- Caveat de produccion: cero descargas y cero likes indican ausencia de validacion comunitaria; no se recomienda su uso en produccion sin evaluacion propia previa.
-- Caveat de linaje: la cadena de fine-tuning (Mythos-Nano-safetensor -> tb-x1) no esta documentada en cuanto a datos ni hiperparametros, lo que dificulta la reproducibilidad.
+- Sesgos conocidos: no documentados por el autor; al derivar de un fine-tune sobre Mythos Nano, hereda los sesgos del modelo base y de los datos generados por modelos profesor.
+- Riesgo de alucinacion: no evaluado ni documentado; en modelos de 3 B el riesgo suele ser elevado, especialmente en tareas de razonamiento factual.
+- Limitacion de idioma: solo ingles declarado; el rendimiento en castellano no esta garantizado.
+- Limitacion de contexto: la longitud de contexto no se especifica en la informacion disponible, lo que impide planificar su uso en tareas de contexto largo.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor recomienda revisar el repositorio original del modelo base y sus terminos antes de redistribuir.
+- Falta de transparencia: no se publican volumenes de tokens de entrenamiento, composicion del dataset, hiperparametros ni evaluaciones; la cifra de 500 millones de interacciones corresponde a actividad de flujo de trabajo, no a datos de entrenamiento.
+- Caveat para produccion: sin benchmarks ni evaluaciones independientes, no se recomienda su uso en produccion sin una validacion previa propia.
 
 ## Enlaces
 
-- [Hugging Face: Shadow0482/tb-x1](https://huggingface.co/Shadow0482/tb-x1)
-- [Modelo base: orangejuicesmith/Mythos-Nano-safetensor](https://huggingface.co/orangejuicesmith/Mythos-Nano-safetensor)
-- [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de Hugging Face](https://github.com/huggingface/trl)
+- Modelo en Hugging Face: https://huggingface.co/Shadow0482/tb-x1
+- Modelo base (Mythos Nano): https://huggingface.co/orangejuicesmith/Mythos-Nano-safetensor
+- Framework de optimizacion Unsloth: https://github.com/unslothai/unsloth
+- Perfil del autor: https://huggingface.co/Shadow0482

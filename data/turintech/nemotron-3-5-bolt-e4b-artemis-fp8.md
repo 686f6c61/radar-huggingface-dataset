@@ -2,105 +2,102 @@
 
 ## Resumen
 
-Nemotron-3.5-Bolt-E4B-Artemis-FP8 es una cuantización en FP8 del modelo NVIDIA Nemotron 3.5 Bolt E4B, publicada por TurinTech. El modelo original es un transformer multimodal de NVIDIA (entrada imagen-texto y audio-texto, salida de texto) con aproximadamente 8.000 millones de parámetros totales, y esta versión mantiene la arquitectura intacta pero almacena las 126 matrices de pesos MLP del modelo de lenguaje en FP8 E4M3, reduciendo el peso de 15,99 GB a 12,76 GB (un 20 % menos).
+Nemotron-3.5-Bolt-E4B-Artemis-FP8 es una cuantización en FP8 del modelo NVIDIA-Nemotron-3.5-Bolt-E4B-BF16, publicada por TurinTech bajo el paraguas de su herramienta Artemis. El checkpoint original es un modelo multimodal de NVIDIA orientado a generación de texto, imagen y audio, con arquitectura derivada de la familia Gemma 4 (la librería de referencia es `transformers` con tag `gemma4`). Esta versión reduce el peso de los pesos de 15,99 GB a 12,69 GB manteniendo el resto de tensores sin cambios.
 
-La motivación de esta conversión es práctica: en vLLM, los pesos en FP8 ocupan 11,07 GiB de VRAM frente a 14,10 GiB del original en BF16, lo que libera memoria para la caché KV. En una RTX 5090 de 32 GB, la caché KV pasa de 154.388 a 211.050 tokens con los valores por defecto de vLLM, y el número de peticiones de 4.096 tokens que caben simultáneamente sube de 37,7 a 51,5. Además, la generación es un 32 % más rápida con una petición y un 43 % más rápida con ocho peticiones concurrentes.
+La intervención de TurinTech se centra exclusivamente en las capas MLP, que se almacenan en FP8, mientras que el resto de tensores se reempaquetan tal cual desde el checkpoint de NVIDIA. El resultado es un modelo que en vLLM ocupa 11,07 GiB de memoria de pesos, lo que deja más espacio para caché KV y permite servir el modelo en GPUs de gama alta de consumo como la RTX 5090 con mayor throughput.
 
-Es relevante ahora porque permite desplegar un modelo de ~8B con torres de visión y audio en GPUs de consumo (incluida una tarjeta de 16 GB, según las pruebas de TurinTech) manteniendo una calidad prácticamente idéntica al original en function calling y matemáticas elementales. La licencia es OpenMDW 1.1, la misma del modelo base de NVIDIA.
+El modelo resuelve el problema clásico de servir modelos multimodales de ~8.000 millones de parámetros con un presupuesto de VRAM ajustado. Según las mediciones del autor, la generación pasa de 139 tok/s a 183 tok/s en una sola petición, con una degradación mínima en calidad (KL de chat de 0,010 frente al original) y puntuaciones equivalentes en BFCL-v3 y GSM8K.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (modelo base etiquetado como `gemma4`; incluye torres de visión y audio), pesos MLP del LM en FP8 E4M3 con una escala por canal de salida (compressed-tensors `float-quantized`, solo pesos; activaciones en BF16) |
-| Parametros totales | 7.996.156.490 (~8B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible en la información proporcionada (las pruebas se hicieron con `--max-model-len 4096`) |
-| Tipos de cuantizacion | FP8 E4M3 (esta versión); existe una versión GGUF del mismo autor para llama.cpp; una versión de 4 bits fue descartada por pérdida de calidad |
+| Arquitectura | Transformer multimodal derivada de Gemma 4 (tag `gemma4`), con capas MLP cuantizadas en FP8 |
+| Parametros totales | 7.996.156.490 (~8.000 millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la información del checkpoint; las pruebas se hicieron a 4.096 tokens y BFCL-v3 a 65.536 tokens |
+| Tipos de cuantizacion | FP8 en pesos MLP; resto de tensores sin cuantizar (BF16) |
 | Idiomas soportados | no disponible |
-| Licencia | OpenMDW 1.1 (`openmdw-1.1`) |
-| Formato de pesos | safetensors (compatible con transformers y vLLM; repo de 12,8 GB) |
+| Licencia | OpenMDW-1.1 (`openmdw-1.1`) |
+| Formato de pesos | safetensors (4 particiones: `part-00000` a `part-00003`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es NVIDIA Nemotron 3.5 Bolt E4B, un transformer multimodal que acepta texto, imagen y audio como entrada y genera texto. Esta versión de TurinTech no reentrena ni modifica la arquitectura: convierte únicamente las 126 matrices de pesos MLP del modelo de lenguaje a FP8 E4M3 con cuantización por canal de salida mediante compressed-tensors. Las capas de atención, los embeddings, las puertas y proyecciones por capa, y las torres de visión y audio permanecen sin cambios respecto al original en BF16.
+El checkpoint es una cuantización del modelo base `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16`, del que no se detallan en la información disponible los datos de entrenamiento, el número de tokens ni la composición del dataset. La arquitectura se etiqueta como `gemma4` en Hugging Face, lo que sitúa el modelo en la familia de transformers multimodales de NVIDIA construida sobre la línea Gemma 4, con soporte de entrada de imagen y audio además de texto.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base usó RLHF o DPO. La innovación técnica de esta publicación es la cuantización selectiva: al dejar atención y embeddings en BF16 y cuantizar solo las MLP (que dominan el coste de lectura de pesos durante la decodificación), se obtiene una reducción del 20 % en tamaño con una divergencia KL de 0,078 (wiki) y 0,058 (chat) respecto al original, y coincidencia del siguiente token en 61 de 64 posiciones evaluadas. La velocidad de generación mejora porque, en un modelo de este tamaño en una sola GPU, la decodificación está limitada por el ancho de banda de memoria.
+La innovación técnica de esta ficha no está en el entrenamiento sino en la compresión: TurinTech aplica cuantización FP8 únicamente a las capas MLP y reempaqueta el resto de tensores sin modificarlos. Según el autor, el resultado conserva las puntuaciones del original en BFCL-v3 (371 de 400 llamadas a herramientas) y GSM8K (230 de 250 frente a 229 del BF16), con una divergencia KL de 0,010 en chat. El modelo está preparado para decodificación especulativa mediante el drafter `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4` con 7 tokens especulativos, y para tool calling nativo en vLLM con el parser `gemma4`.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento general.
-- Entrada multimodal: procesamiento de imagen y audio (las torres están presentes, aunque TurinTech solo probó texto).
-- Function calling / tool calling: compatible con `--enable-auto-tool-choice` y `--tool-call-parser gemma4` en vLLM.
-- Razonamiento matemático elemental (evaluado en GSM8K).
+- Generación de texto conversacional multi-turno.
+- Entrada multimodal: procesa imágenes y audio además de texto (requiere quitar `--language-model-only` en vLLM; el audio necesita `pip install "vllm[audio]"`).
+- Tool calling / function calling nativo, con soporte de `--enable-auto-tool-choice` y parser `gemma4` en vLLM.
+- Modo thinking configurable mediante `chat_template_kwargs.enable_thinking`; las mediciones publicadas se hicieron con thinking desactivado.
+- Razonamiento matemático (evaluado en GSM8K).
 - Capacidades multilingües: no disponibles en la información proporcionada.
-- Despliegue optimizado para vLLM con FP8 y compressed-tensors.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Compatible con endpoints (`endpoints_compatible`) y con decodificación especulativa DFlash.
 
 ## Casos de uso
 
-- Asistente conversacional autoalojado en GPU de consumo: con 11,07 GiB de pesos en vLLM, una RTX 5090 de 32 GB aloja 211.050 tokens de caché KV, suficiente para atender decenas de conversaciones multi-turno simultáneas con contexto largo.
-- Agentes con tool calling en producción: el modelo mantiene la puntuación del original en BFCL (371 de 400 llamadas simples correctas) y se integra en vLLM con el parser `gemma4`, lo que permite construir pipelines de agentes que invocan APIs externas sin degradación por la cuantización.
-- Despliegue en servidores con GPU de 16 GB: TurinTech verificó que, limitando `--gpu-memory-utilization` a 0,47 (15,3 GB), el modelo arranca con 45.678 tokens de caché KV y responde correctamente a chat y tool calls, mientras que el BF16 original no arranca bajo el mismo límite.
-- Tutoría de matemáticas elementales: la puntuación en GSM8K (230 de 250 frente a 229 del original) lo hace adecuado para resolución de problemas aritméticos paso a paso en entornos educativos.
-- Procesamiento de documentos con imagen y audio: aunque las torres multimodales no fueron probadas por el autor, están presentes en los pesos, por lo que puede emplearse para transcripción y descripción de contenido audiovisual (requiere validación propia).
-- Backend de alto throughput para aplicaciones web: con 1.206 tokens/s agregados a ocho peticiones concurrentes en una RTX 5090, es viable para servir a varios usuarios simultáneos con latencias de primer token de ~155 ms.
-- Sustitución directa del modelo BF16 en infraestructura existente: al mantener la misma API de transformers y vLLM y una divergencia KL baja, puede reemplazar al original para reducir coste de memoria y aumentar la concurrencia sin cambios de código.
+- Atención al cliente automatizada: el modelo puede mantener conversaciones multi-turno con tool calling para consultar sistemas internos, y su reducido peso en FP8 permite desplegarlo en una sola GPU de consumo con margen para caché KV.
+- Asistentes con entrada de imagen: al aceptar image-text-to-text, sirve para clasificar tickets, extraer datos de capturas o responder preguntas sobre documentos escaneados sin un pipeline OCR separado.
+- Agentes con function calling en producción: con 371 de 400 llamadas correctas en BFCL-v3, es adecuado para orquestar APIs en flujos de automatización donde la precisión de los argumentos es crítica.
+- Razonamiento matemático asistido: con 230 de 250 en GSM8K, puede resolver problemas aritméticos de varios pasos en herramientas educativas o de validación de cálculos.
+- Despliegue en GPUs de consumo para prototipado: los 11,07 GiB de pesos en vLLM permiten ejecutarlo en una RTX 5090 (y potencialmente en tarjetas de 16 GB con `--gpu-memory-utilization 0.92 --max-num-batched-tokens 2048`, aunque el autor no lo ha probado en 16 GB).
+- Servicio de alto throughput con decodificación especulativa: combinado con el drafter DFlash de NVIDIA, acelera la generación en entornos de inferencia con vLLM 0.32.0rc1 o superior.
+- Procesamiento de audio en asistentes de voz: al soportar entrada de audio, puede transcribir y razonar sobre clips en aplicaciones de atención telefónica o notas de voz.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por TurinTech, comparando esta versión FP8 con el original BF16 de NVIDIA en la misma build de vLLM (0.32.0rc1) y una RTX 5090 por modelo, decodificación greedy con semilla fija:
+| Metrica | TurinTech FP8 | BF16 original |
+|---|---|---|
+| Tamano de pesos | 12,69 GB | 15,99 GB |
+| KL chat (menor es mejor) | 0,010 | referencia |
+| Tool calls BFCL-v3 (de 400) | 371 | 371 |
+| GSM8K (de 250) | 230 | 229 |
+| Generación, una petición (tok/s) | 183 | 139 |
 
-| Metrica | BF16 original | Este modelo FP8 |
-|---|---:|---:|
-| Tamano de pesos | 15,99 GB | 12,76 GB |
-| VRAM de pesos en vLLM | 14,10 GiB | 11,07 GiB |
-| Cache KV en RTX 5090 de 32 GB (defaults vLLM) | 154.388 tokens | 211.050 tokens |
-| Peticiones de 4.096 tokens simultaneas | 37,7 | 51,5 |
-| Velocidad de generacion, 1 peticion | 139 tokens/s | 183 tokens/s |
-| Velocidad de generacion, 8 peticiones (total) | 844 tokens/s | 1.206 tokens/s |
-| BFCL llamadas simples (400) | 371 | 371 |
-| GSM8K (primeras 250 preguntas) | 229 | 230 |
-| Mismo siguiente token (64 posiciones) | 64/64 | 61/64 |
-| KL respecto al original, wiki / chat (menor es mejor) | 0 | 0,078 / 0,058 |
-
-El tiempo hasta el primer token fue similar en ambos: ~58 ms con una petición y ~155 ms con ocho concurrentes. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks en la información disponible.
+Mediciones en una NVIDIA RTX 5090 con vLLM 0.32.0rc1, thinking desactivado, contexto de 4.096 tokens salvo BFCL-v3 a 65.536. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para pesos: 11,07 GiB en vLLM con FP8; 12,76 GB en disco. El original BF16 requiere 14,10 GiB en vLLM.
-- GPU recomendadas: RTX 5090 (probada), A100, H100, L40S y cualquier GPU con soporte de FP8 en vLLM. En teoría cabe en una GPU de 16 GB ajustando `--gpu-memory-utilization`, aunque TurinTech no lo probó en una tarjeta física de 16 GB.
-- GPU de consumo: sí, en RTX 5090 (32 GB) y, según las pruebas simuladas, en tarjetas de 16 GB con límite de memoria configurado.
-- Despliegue: vLLM 0.32.0rc1 (build de desarrollo) con `--dtype bfloat16 --language-model-only`; también hay una versión GGUF del mismo autor para llama.cpp.
-- Throughput: 183 tokens/s con una petición y 1.206 tokens/s agregados con ocho peticiones en RTX 5090; TTFT de ~58 ms y ~155 ms respectivamente.
-- Caché KV disponible en RTX 5090 con defaults: 211.050 tokens.
+- VRAM estimada para pesos en vLLM: 11,07 GiB (12,69 GB de pesos en disco); el repo completo ocupa 12,8 GB.
+- GPU recomendada por el autor: NVIDIA RTX 5090 (mediciones publicadas).
+- Cabe en GPU de consumo: sí, en RTX 5090; en tarjetas de 16 GB el autor sugiere `--gpu-memory-utilization 0.92 --max-num-batched-tokens 2048` y reducir el primer valor si la GPU también alimenta pantalla, aunque advierte que no está probado en 16 GB.
+- Despliegue: vLLM (versión de referencia 0.32.0rc1, build de desarrollo); compatible con `transformers` y con el formato `compressed-tensors`.
+- Throughput: 183 tok/s en una sola petición en RTX 5090, entre un 32 % y un 43 % más rápido que el BF16 original.
+- Decodificación especulativa opcional con `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4` y `num_speculative_tokens: 7`.
+- Para audio: `pip install "vllm[audio]"` y eliminar `--language-model-only`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---:|---|---|---|---|
-| Nemotron-3.5-Bolt-E4B-Artemis-FP8 (este) | ~8B | no disponible (probado a 4.096) | safetensors FP8 | OpenMDW 1.1 | 11,07 GiB en vLLM, 183 tokens/s en RTX 5090 |
-| NVIDIA Nemotron-3.5-Bolt-E4B-BF16 (base) | ~8B | no disponible | safetensors BF16 | OpenMDW 1.1 | 14,10 GiB en vLLM, 139 tokens/s en RTX 5090 |
-| Nemotron-3.5-Bolt-E4B-Artemis-GGUF (mismo autor) | ~8B | no disponible | GGUF | OpenMDW 1.1 | Orientado a llama.cpp y equipos con menos VRAM |
-| Versión de 4 bits descartada por TurinTech | ~8B | no disponible | 4-bit (~11 GB) | OpenMDW 1.1 | Coincidencia de siguiente token en 44/64 posiciones; no publicada |
+|---|---|---|---|---|---|
+| TurinTech Nemotron-3.5-Bolt-E4B-Artemis-FP8 | ~8.000 M | no disponible (probado a 4.096 y 65.536) | safetensors FP8 | OpenMDW-1.1 | 12,69 GB, 183 tok/s en RTX 5090 |
+| NVIDIA Nemotron-3.5-Bolt-E4B-BF16 | ~8.000 M | no disponible | safetensors BF16 | OpenMDW-1.1 | 15,99 GB, 139 tok/s en RTX 5090; referencia de calidad |
+| Alternativas de ~8B en FP8 | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
-No se dispone de comparaciones con modelos de otros fabricantes en la información proporcionada.
+No se dispone de datos de otros modelos comparables en la información proporcionada más allá del checkpoint original de NVIDIA.
 
 ## Limitaciones y advertencias
 
-- Solo se probó texto: las torres de visión y audio están presentes pero no se ejecutaron, por lo que su comportamiento tras la cuantización es desconocido.
-- Todas las pruebas se realizaron en RTX 5090; el rendimiento en otras GPU (A100, H100, tarjetas de 16 GB reales) no está verificado.
-- Las comprobaciones cubren function calling y matemáticas; otras tareas y contextos superiores a 4.096 tokens no se evaluaron.
-- La cuantización introduce una divergencia pequeña pero real: 3 de 64 posiciones generan un token distinto al original y la KL es de 0,078/0,058.
-- La versión de 4 bits fue descartada por pérdida de calidad; para reducir aún más el tamaño debe usarse la release GGUF con llama.cpp.
-- Licencia OpenMDW 1.1: es necesario revisar sus términos antes de uso comercial; no es una licencia permisiva estándar tipo Apache 2.0.
-- Riesgo de alucinación y sesgos: no hay información específica publicada para esta versión; deben evaluarse con las pruebas habituales antes de producción.
-- Idiomas soportados no documentados en la información disponible.
-- Requiere una build de desarrollo de vLLM (0.32.0rc1); la compatibilidad con versiones estables no está garantizada.
+- La cuantización FP8 introduce una divergencia respecto al BF16 original (KL de chat de 0,010); aunque pequeña, no es una copia exacta y puede afectar a tareas sensibles a la precisión numérica.
+- Solo se cuantizan las capas MLP; el resto de tensores se mantienen en BF16, por lo que el ahorro de memoria es parcial (de 15,99 GB a 12,69 GB, un 21 %).
+- Los benchmarks publicados se limitan a BFCL-v3 y GSM8K con thinking desactivado; no hay datos de MMLU, HumanEval ni evaluaciones multimodales.
+- No se especifican los idiomas soportados ni la longitud de contexto oficial del modelo base en la información disponible.
+- El autor advierte que la configuración para GPU de 16 GB es "esperada que funcione, no probada en una tarjeta de 16 GB".
+- Requiere vLLM 0.32.0rc1 (build de desarrollo) según las pruebas publicadas; versiones estables anteriores pueden no soportar el formato `compressed-tensors` o el parser `gemma4`.
+- Licencia OpenMDW-1.1: conviene revisar sus términos antes de uso comercial, ya que es una licencia "other" con condiciones específicas.
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada; aplican los del modelo base de NVIDIA.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-FP8
-- Modelo base (NVIDIA, BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
-- Versión GGUF del mismo autor: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF
-- Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Drafter especulativo: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4
+- Licencia OpenMDW-1.1: https://www.openmdw.ai/license/1-1/
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai
+- Resultados completos y método: https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-FP8/blob/main/RESULTS.md

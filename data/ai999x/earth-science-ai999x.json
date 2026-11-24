@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 343,
+  "downloads_30d": 345,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -62,36 +62,10 @@
   "benchmarks": [
     {
       "task": "earth science question answering",
-      "dataset": "Golden answers (522 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (535 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }
   ],
-  "sources": [
-    {
-      "title": "GitHub - AI999X/earth-science-ai999x: Offline earth science solver ...",
-      "url": "https://github.com/AI999X/earth-science-ai999x",
-      "snippet": "Offline earth science solver: atmospheric thermodynamics and meteorology, climate and radiation balance, oceanography and …"
-    },
-    {
-      "title": "GitHub - AI999X/physics-ai999x: Offline, verified physics solver ...",
-      "url": "https://github.com/AI999X/physics-ai999x",
-      "snippet": "physics-ai999x is an offline, deterministic Python solver that answers physics questions with verified results from 148 certified …"
-    },
-    {
-      "title": "physics-ai999x · PyPI",
-      "url": "https://pypi.org/project/physics-ai999x/",
-      "snippet": "Oct 17, 2026 · physics-ai999x is an offline, deterministic Python solver that answers physics questions with verified results from 148 …"
-    },
-    {
-      "title": "Ai999x Encoder - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/ai999x/ai999x-encoder",
-      "snippet": "Registry entry for model Ai999x Encoder; source metadata pending."
-    },
-    {
-      "title": "Physics Ai999x - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/ai999x/physics-ai999x",
-      "snippet": "📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM …"
-    }
-  ]
+  "sources": []
 }

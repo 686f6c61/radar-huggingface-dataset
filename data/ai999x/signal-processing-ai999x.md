@@ -2,100 +2,109 @@
 
 ## Resumen
 
-signal-processing-ai999x es una herramienta de resolución de problemas de procesamiento de señales para Python, desarrollada por AI999X (creador e ingeniero: Ibnul Jaif Farabi). No es un modelo de lenguaje generativo al uso: la propia model card lo define como un motor determinista neuro-simbólico que combina una lectura de la pregunta basada en reglas con 74 capacidades simbólicas certificadas. Lee una pregunta en inglés, selecciona la capacidad adecuada, calcula la respuesta, la verifica y la devuelve con pasos, unidades, LaTeX y supuestos, o bien rechaza responder si no puede verificarla.
+Signal Processing (signal-processing-ai999x) es un motor de resolución de problemas de ingeniería de señal publicado por AI999X en Hugging Face. No es un modelo de lenguaje generativo al uso: se distribuye como una librería compilada (con build pure-Python de respaldo) que resuelve 77 cálculos de procesamiento de señal agrupados en 18 temas, cada uno con su fórmula, sus pasos intermedios, sus unidades y un mensaje explicativo cuando una entrada falta o está fuera de rango. Cubre muestreo, series y transformadas de Fourier, DFT y FFT, filtros digitales, convolución, transformadas Z, modulación, enlaces de comunicaciones, líneas de transmisión RF y radar.
 
-Su propuesta de valor es la ausencia de alucinaciones por diseño: cada respuesta se comprueba (sustitución inversa, comprobación dimensional o comparación con un cálculo independiente) y se emite uno de siete resultados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR). Según el autor, reproduce de forma idéntica 334 respuestas documentadas en Windows (Python 3.13) y Linux x86-64 (Python 3.10 a 3.14).
+El repositorio declara 4.715.520 parámetros en formato safetensors, lo que sugiere un componente neuronal de tamaño muy reducido, pero la propia model card describe el sistema como "un motor compilado" con cuatro interfaces de uso (aplicación de escritorio, línea de comandos, navegador y paquete de Python) que funciona de forma totalmente local y offline. La etiqueta `zero-hallucination` y el énfasis en respuestas deterministas por plataforma apuntan a un enfoque de cálculo simbólico/numérico en Rust con envoltorio Python, más que a inferencia sobre pesos neuronales convencionales.
 
-El repositorio declara 4.715.520 parámetros en safetensors y etiquetas ONNX, aunque la descripción funcional corresponde a Python puro (sympy, mpmath) que se ejecuta solo en CPU, sin GPU, sin red y sin clave de API. Esa discrepancia entre los metadatos y la implementación descrita conviene tenerla presente al evaluarlo. El modelo está orientado a docencia, verificación de ejercicios y cálculo de ingeniería en el dominio de DSP, comunicaciones, RF y radar.
+Su relevancia actual reside en el nicho: herramientas de ayuda a estudiantes e ingenieros que necesitan resultados reproducibles y auditables en docencia de DSP, sin depender de la nube ni de la variabilidad de un LLM. El pipeline declarado es `question-answering` y el único idioma soportado es el inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor determinista neuro-simbolico: lectura basada en reglas + capacidades simbolicas certificadas |
-| Parametros totales | 4.715.520 (segun metadatos safetensors del repositorio) |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | Motor de cálculo compilado (Rust) con build pure-Python de respaldo; componente neuronal de 4.715.520 parámetros en safetensors |
+| Parametros totales | 4.715.520 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el runtime descrito es Python puro en CPU; el repositorio etiqueta ONNX y safetensors) |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX (etiquetas del repositorio) y wheel de Python (py3-none-any) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors; distribución adicional como binarios de escritorio y CLI (Windows x86-64, Linux x86-64) y paquete pip |
+| Pipeline | question-answering |
+| Tareas cubiertas | 77 cálculos en 18 temas de DSP, comunicaciones y RF |
+| Plataformas | Windows y Linux (x86-64) con motor compilado; macOS y ARM con build pure-Python |
+| Versión distribuida | 1.6.7 |
+| Inferencia remota | no (inference: false; ejecución local) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada por el autor no es la de un transformer, sino la de un motor neuro-simbólico determinista: una capa de lectura de la pregunta basada en reglas (para las formas documentadas en inglés) y una capa de capacidades simbólicas certificadas implementadas con sympy y mpmath. El paquete expone dos interfaces: `ask()`, que interpreta formulaciones documentadas en lenguaje natural, y `solve(capability_id, **inputs)`, que ofrece una interfaz tipada garantizada para tareas soportadas con entradas válidas.
+La información disponible no describe una arquitectura transformer ni un proceso de entrenamiento con tokens, dataset o RLHF/DPO. La model card presenta el producto como "un motor compilado" que resuelve cálculos de ingeniería con fórmula, pasos y unidades, y que devuelve una razón en lenguaje natural en lugar de un número cuando la entrada es inválida. El paquete de Python (`pip install signal-processing-ai999x`) instala el mismo motor compilado en Windows y Linux x86-64, y una build pure-Python con respuestas idénticas en macOS y ARM.
 
-No se proporciona información sobre datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF o DPO; de hecho, el funcionamiento descrito es simbólico y determinista, no el de un modelo entrenado. La innovación técnica destacable es el mecanismo de verificación: cada respuesta se comprueba mediante sustitución inversa, comprobación dimensional o comparación con un cálculo independiente antes de devolverse, y el sistema emite uno de siete resultados explícitos en lugar de adivinar. Cubre 74 procedimientos certificados y un paquete de conocimiento versión 1.0.0.
+Los 4.715.520 parámetros declarados en safetensors constituyen el único dato cuantitativo sobre el componente de aprendizaje automático; no se especifica su función (posible clasificador de intención, enrutador de problemas o modelo auxiliar de generación de explicaciones). No hay información sobre composición del dataset, número de tokens, técnicas de alineación ni innovaciones de decodificación. La innovación destacable, según el autor, es la determinación y la ausencia de alucinación: los resultados son idénticos en cada plataforma soportada.
 
 ## Capacidades
 
-- Resolución de preguntas de procesamiento de señales en inglés con pasos, unidades, LaTeX y supuestos.
-- Cobertura de muestreo, series y transformadas de Fourier, DFT y FFT, filtros, convolución, transformadas Z, modulación, enlaces de comunicaciones, líneas de transmisión RF y radar.
-- Cálculo determinista con verificación interna y rechazo explícito cuando no puede verificar la respuesta (cero respuestas incorrectas por diseño).
-- Interfaz tipada `solve(capability_id, **inputs)` además de la interfaz en lenguaje natural `ask()`.
-- Etiquetas de pipeline adicionales: token-classification, text-classification, sentence-similarity y feature-extraction.
-- Ejecución completamente offline en CPU, sin GPU, sin red y sin clave de API.
-- Soporte de tool calling / agentes / modo thinking: no disponible en la información proporcionada.
-- Capacidades multilingües: solo inglés.
-- Capacidades de visión o audio: no disponible.
+- Resolución paso a paso de 77 cálculos de procesamiento de señal en 18 temas, con fórmula, pasos intermedios y unidades.
+- Cobertura de muestreo y tasa de Nyquist, series y transformadas de Fourier, DFT y FFT, diseño y magnitud de filtros (incluido Butterworth digital por transformada bilineal), convolución y transformadas Z.
+- Modulación y enlaces de comunicaciones: tasa de error de bits de BPSK y BFSK coherente en AWGN, capacidad de Shannon de un canal AWGN.
+- Líneas de transmisión y RF: coeficiente de reflexión, VSWR y pérdidas de retorno de una carga; ganancia de antena de reflector parabólico.
+- Radar, según la lista de temas declarada en la model card.
+- Modo de ayuda a deberes y resolución guiada (`homework-help`, `step-by-step-solutions`).
+- Respuestas deterministas y offline, con etiqueta explícita `zero-hallucination`.
+- Cuatro interfaces: aplicación de escritorio, CLI `signal-processing`, versión web y API de Python 3.10+.
+- No se declara soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Tutoría de procesamiento de señales: un estudiante plantea una pregunta documentada en inglés y el motor devuelve la respuesta con pasos y fórmulas en LaTeX, lo que permite usarlo en aplicaciones de enseñanza sin riesgo de respuestas inventadas.
-- Verificación de deberes: un corrector automático compara la solución del alumno con la salida certificada del modelo, aprovechando que cada resultado incluye unidades, supuestos y el procedimiento seguido.
-- Ingeniería de comunicaciones: cálculo de tasas de error de bit para modulaciones como BPSK o BFSK a partir de Eb/N0, útil en herramientas de planificación de enlaces.
-- Análisis de líneas de transmisión RF: obtención del coeficiente de reflexión, su módulo y fase y la VSWR a partir de la impedancia característica y la carga, aplicable en diseño de RF y radar.
-- Análisis espectral: cálculo de la DFT y la FFT de secuencias con magnitud y fase por bin, integrable en cuadernos de análisis o pipelines de procesado.
-- Diseño y análisis de filtros digitales y convolución: resolución de ejercicios y comprobaciones dentro de flujos docentes o de validación de diseños.
-- Integración en pruebas automatizadas: al ser determinista y offline, puede usarse como referencia en test suites o pipelines de CI/CD que comprueben cálculos de señal.
-- Cuadernos Jupyter y aplicaciones de escritorio: su naturaleza Python puro (sympy, mpmath) y su ejecución en CPU facilitan el despliegue local sin infraestructura adicional.
+- Docencia de procesamiento de señal: el alumnado introduce parámetros de un problema de muestreo o de diseño de filtros y obtiene la fórmula, los pasos y las unidades, lo que permite corregir el procedimiento y no solo el resultado.
+- Corrección automática de ejercicios: al ser determinista y funcionar offline, un centro puede desplegar la CLI o el paquete de Python en un aula sin conexión y obtener la misma respuesta en todos los equipos, lo que simplifica la calificación reproducible.
+- Verificación de cálculos en ingeniería de RF: el cálculo de coeficiente de reflexión, VSWR y pérdidas de retorno a partir de la impedancia de carga sirve como comprobación rápida frente a una hoja de cálculo o un simulador.
+- Diseño preliminar de enlaces de comunicaciones: la tasa de error de BPSK/BFSK en AWGN y la capacidad de Shannon permiten explorar relaciones señal-ruido y comparar escenarios antes de pasar a una herramienta de simulación completa.
+- Integración en scripts y pipelines de Python: al instalarse con pip y exponer una API programática, se puede invocar desde cuadernos o tests para generar valores de referencia en la validación de código de procesamiento digital.
+- Formación interna en empresas de telecomunicaciones: escenarios interactivos con gráficas (espectro DFT, respuesta de Butterworth, BER) que se actualizan al mover un control, útiles para explicar conceptos a perfiles no especialistas.
+- Soporte en entornos sin red o con requisitos de confidencialidad: al ejecutarse íntegramente en local, no se envían parámetros de diseño a servicios externos.
 
 ## Benchmarks y rendimiento
 
-| Tarea | Dataset | Metrica | Valor | Verificado |
-|---|---|---|---|---|
-| signal processing question answering | Golden answers (334 documented questions, Windows + Linux Python 3.10-3.14) | accuracy | 1.0 (100 %) | No (declarado por el autor; campo `verified: false`) |
-| Idem | Idem | "identical on every platform" | 1.0 | No (declarado por el autor) |
+Datos declarados por el autor en el model-index:
 
-Los datos proceden del `model-index` de la model card y son autodeclarados por el autor; no consta verificación independiente en la información disponible. No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+| Tarea | Dataset | Métrica | Valor | Verificado |
+|---|---|---|---|---|
+| Question answering de procesamiento de señal | Golden answers (357 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 | No |
+
+El autor describe el resultado como "idéntico en cada plataforma". No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible, y la métrica de accuracy no es comparable con benchmarks de LLM generales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica; el runtime descrito es CPU puro (sympy, mpmath), sin necesidad de GPU.
-- GPU recomendadas: ninguna; el autor indica ejecución solo en CPU.
-- Cabe en GPU consumer: no es un requisito; el modelo se ejecuta en CPU.
-- Opciones de despliegue: instalación vía `pip install signal-processing-ai999x` o desde el wheel del repositorio; entornos Python 3.10, 3.11, 3.12, 3.13 y 3.14; probado en Windows (Python 3.13) y Linux x86-64.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible; el componente de 4,7 millones de parámetros es marginal y el motor de cálculo se ejecuta en CPU.
+- GPU recomendadas: no aplica; no se declara aceleración por GPU.
+- Compatibilidad con GPU de consumo: irrelevante para el funcionamiento, que es en CPU.
+- Sistemas operativos: Windows y Linux x86-64 con motor compilado; macOS y ARM mediante build pure-Python.
+- Versión de Python: 3.10 o superior (probado hasta 3.14 según el autor).
+- Opciones de despliegue: aplicación de escritorio, CLI `signal-processing`, versión web en la página del modelo y paquete `pip install signal-processing-ai999x`.
+- Frameworks de servido de LLM (vLLM, llama.cpp, Ollama, TGI): no aplicables según la información disponible.
+- Latencia y throughput: no disponibles; al ser cálculos deterministas y locales, la latencia depende del cálculo concreto y no del hardware de inferencia neuronal.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos directamente comparables en la información proporcionada. La siguiente comparación es cualitativa por categoría de herramienta:
-
-| Herramienta | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| signal-processing-ai999x | Solver simbolico determinista con verificacion | 4,7 M (safetensors) | no disponible | Apache-2.0 | PyPI y Hugging Face |
-| SymPy (uso directo) | Libreria CAS | no disponible | no disponible | BSD-3 | PyPI |
-| Asistente LLM generico | Transformer generativo | no disponible | no disponible | variable | APIs y pesos abiertos |
+| signal-processing-ai999x | Motor de cálculo DSP con componente neuronal mínimo | 4.715.520 | no disponible | Apache 2.0 | Determinista, offline, 77 cálculos en 18 temas |
+| LLM generalista (p. ej. familia Llama, Qwen, Mistral) | Transformer decoder | Miles de millones | Decenas de miles de tokens | Variable | Generación libre; riesgo de alucinación en cálculos |
+| SymPy / SciPy | Librería simbólica y numérica | no aplica | no aplica | BSD | Cálculo programático sin interfaz de ayuda guiada |
+| MATLAB Signal Processing Toolbox | Entorno comercial | no aplica | no aplica | Propietaria | Cálculo y simulación profesional |
 
-Frente a un LLM generico, signal-processing-ai999x prioriza determinismo y verificacion sobre flexibilidad conversacional; frente a SymPy en crudo, anade interpretacion de la pregunta, pasos, unidades y verificacion. No se dispone de datos cuantitativos de rendimiento comparado en la informacion proporcionada.
+No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; la comparación se limita a tipo de herramienta, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Solo admite inglés; las preguntas en otros idiomas no estan soportadas de forma nativa.
-- La cobertura se limita a 74 capacidades certificadas y 334 respuestas documentadas; fuera de ese alcance el sistema rechaza la peticion (OUT_OF_SCOPE o UNRECOGNIZED_FORMAT).
-- Es un motor determinista y simbolico, no un modelo generativo: no redacta explicaciones libres ni mantiene conversaciones abiertas.
-- Los benchmarks son autodeclarados por el autor (`verified: false`); no consta validacion independiente.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion de la comunidad.
-- Existe una discrepancia entre los metadatos (4.715.520 parametros en safetensors y etiquetas ONNX) y la descripcion funcional (Python puro con sympy y mpmath); conviene verificar la implementacion real antes de integrarla.
-- Licencia Apache-2.0: permite uso comercial, pero debe respetarse la atribucion y los terminos de la licencia.
-- No se documentan sesgos linguisticos ni de otro tipo; al ser un sistema basado en reglas, el riesgo de alucinacion se sustituye por el riesgo de rechazo o de no reconocimiento de formatos no documentados.
+- Solo admite inglés; no hay soporte multilingüe declarado.
+- La cobertura se limita a 77 cálculos en 18 temas; problemas fuera de ese catálogo no se resuelven.
+- El resultado de accuracy 1.0 procede de una evaluación propia del autor sobre 357 preguntas y está marcado como no verificado; no debe interpretarse como una métrica general de calidad.
+- No es un modelo de lenguaje generativo: no se debe esperar conversación abierta, redacción libre ni razonamiento fuera del dominio de DSP.
+- No se declara soporte de tool calling, agentes ni multimodalidad.
+- El paquete pip instala un motor compilado solo en Windows y Linux x86-64; en macOS y ARM se usa una build pure-Python, lo que puede afectar al rendimiento aunque el autor afirma respuestas idénticas.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio por si hay condiciones adicionales.
+- La fecha de creación del repositorio (2026-10-25) y la ausencia de descargas masivas o likes sugieren un proyecto reciente y de nicho; la validación independiente es escasa.
+- No se especifican sesgos, pero al estar orientado a docencia en inglés puede reflejar convenciones y notación propias de ese contexto.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AI999X/signal-processing-ai999x
-- PyPI: https://pypi.org/project/signal-processing-ai999x/
-- Guia de capacidades (docs): https://huggingface.co/AI999X/signal-processing-ai999x/tree/main/docs
-- Evaluacion: https://huggingface.co/AI999X/signal-processing-ai999x/tree/main/evaluation
-- Organizacion AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Modelo en Hugging Face: https://huggingface.co/AI999X/signal-processing-ai999x
+- Página del modelo con demos interactivas: https://www.ai999x.com/models/signal-processing-ai999x/
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-signal-processing-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-signal-processing-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Vídeo de demostración: https://www.ai999x.com/?ax_shot=signal-processing-ai999x/clip.mp4
+- Repositorio de escritorio en GitHub: https://github.com/AI999X/ai999x-desktop

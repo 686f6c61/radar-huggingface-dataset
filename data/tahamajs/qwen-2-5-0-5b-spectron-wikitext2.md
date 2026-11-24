@@ -2,96 +2,111 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-spectron-wikitext2` es un checkpoint experimental derivado de `Qwen/Qwen2.5-0.5B` en el que se han sustituido quirúrgicamente los bloques de atención del decodificador por el operador `SpectronAttention`, un mecanismo de atención subcuadrática con descomposición de bajo rango y sparsity dependiente de activaciones. El modelo lo publica el desarrollador independiente `tahamajs` dentro del proyecto NeuralOps (Attention Zoo), una iniciativa que recopila variantes de atención intercambiables sobre arquitecturas transformer estándar.
+`tahamajs/qwen-2.5-0.5b-spectron-wikitext2` es un checkpoint derivado de `Qwen/Qwen2.5-0.5B` en el que el autor (tahamajs) ha sustituido quirúrgicamente los bloques de atención del decoder por el operador `SpectronAttention`, perteneciente al registro `ATTENTION_REGISTRY` del proyecto NeuralOps. El objetivo es experimental: evaluar si una atención subcuadrática (low-rank + sparse, activation-aware) puede reemplazar la atención cuadrática estándar de un transformer preentrenado y recuperar calidad mediante destilación de conocimiento en dos etapas. No se trata de un modelo nuevo entrenado desde cero, sino de un parche de pesos de atención sobre una base Qwen2.5-0.5B congelada.
 
-El objetivo no es producir un modelo de propósito general competitivo, sino servir de banco de pruebas reproducible para evaluar si un operador de atención alternativo puede recuperar calidad lingüística tras una cirugía de atención agresiva. Para ello se aplica una destilación de conocimiento en dos etapas sobre WikiText-2, partiendo de una perplejidad catastrófica de 428.089,31 tras la sustitución y llegando a 192,50 al final del proceso.
+El modelo conserva la topología de Qwen2.5-0.5B: 24 capas, 14 cabezas de consulta, 2 cabezas KV (GQA), `head_dim=64` y `hidden_size=896`. La intervención sigue el patrón `hybrid_3_1`: 18 de las 24 capas se reemplazan por Spectron, mientras que 6 capas ancla cuadráticas se preservan en los índices `[3, 7, 11, 15, 19, 23]`. El entrenamiento se limita a WikiText-2 (`wikitext-2-raw-v1`), con 258 pasos totales de destilación y unos 180 segundos de cómputo en FP16.
 
-Es relevante ahora como referencia metodológica: demuestra un flujo completo de cirugía de atención, adaptación de contratos GQA y destilación por capas con telemetría detallada, todo con un coste computacional inferior a 180 segundos en una sola GPU. No obstante, la perplejidad final sigue siendo muy superior a la del modelo base original, por lo que debe interpretarse como un artefacto de investigación, no como un modelo listo para producción.
+Es relevante ahora porque forma parte de una línea de investigación activa sobre eficiencia de atención en LLM pequeños, y porque publica telemetría detallada del proceso de sustitución y destilación. La perplexity final declarada en validación de WikiText-2 es 192,50, un valor alto en términos absolutos para un modelo de 0,5B, lo que sugiere que la sustitución degrada sustancialmente la calidad respecto al modelo base. El repositorio solo contiene los pesos de atención (64,25 MB) y no un checkpoint completo listo para usar con `transformers` sin aplicar la cirugía.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) con atencion hibrida: 18/24 capas con SpectronAttention (bajo rango + sparse, activation-aware) y 6/24 capas con atencion cuadratica completa |
-| Parametros totales | 0,5 mil millones (heredados de Qwen2.5-0.5B; solo se publican los pesos de atencion, 64,25 MB) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el entrenamiento uso seq_len=512) |
-| Tipos de cuantizacion | no disponible (el checkpoint se distribuye en safetensors; el ejemplo de uso emplea float16) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer decoder-only derivado de Qwen2.5, con atencion `SpectronAttention` (low-rank + sparse, activation-aware) en 18/24 capas y atencion cuadratica en 6 capas ancla |
+| Parametros totales | No disponible de forma explicita; hereda la base Qwen2.5-0.5B (aproximadamente 0,5B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (el entrenamiento uso `seq_len=512`; la ventana nativa de Qwen2.5-0.5B no se declara en la model card) |
+| Tipos de cuantizacion | No disponible (solo se publican pesos de atencion en safetensors, sin variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (`attention_weights.safetensors`), mas `config.json` y `tokenizer.json` |
+| Formato de pesos | `safetensors` (`attention_weights.safetensors`, 64,25 MB) + `config.json` + `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con 24 capas, 14 cabezas de consulta, 2 cabezas KV, `head_dim=64` y `hidden_size=896`. La intervencion aplica el patron `hybrid_3_1`: se sustituyen 18 de las 24 capas con `SpectronAttention` mediante el `QwenAttentionAdapter`, que gestiona la expansion 7x de cabezas KV requerida por el operador y respeta el contrato de un unico `o_proj`. Las 6 capas restantes (indices 3, 7, 11, 15, 19 y 23) se conservan como anclas cuadraticas completas, presumiblemente para estabilizar la representacion. `SpectronAttention` es un operador de atencion subcuadratica que combina bajo rango con sparsity dependiente de activaciones, y declara soporte para causalidad, bidireccionalidad, cross-attention, GQA nativo y ausencia de RoPE.
+La base es Qwen2.5-0.5B, un transformer decoder-only con GQA (14 cabezas de consulta, 2 cabezas KV, `head_dim=64`, `hidden_size=896`) y 24 capas. Sobre esa base se aplica una cirugía de atención con `QwenAttentionAdapter`, que mapea las proyecciones originales y expande las cabezas KV 7x cuando es necesario (`14:2`), respetando un contrato de `o_proj` único. El patrón `hybrid_3_1` sustituye 18 capas por `SpectronAttention` (operador de atención subcuadrática con descomposición low-rank y sparsity dependiente de activaciones) y mantiene 6 capas cuadráticas como anclas en los índices `[3, 7, 11, 15, 19, 23]`.
 
-El entrenamiento consiste en una destilacion de conocimiento en dos etapas sobre `wikitext-2-raw-v1`. La etapa 1 (alineacion con backbone congelado) ejecuta 90 pasos en 54,3 segundos, omite `lm_head` y minimiza MSE y coseno (peso 0,25) sobre estados ocultos capa a capa. La etapa 2 (destilacion de representacion multicapa) ejecuta 168 pasos en 125,9 segundos con pesos de 0,50. En total, 258 pasos en 180,6 segundos con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando un pico de 17.729 MB de VRAM en FP16 con parametros maestros en FP32. La perplejidad causal pasa de 428.089,31 (etapa 0, sin destilar) a 192,50, una delta de -427.896,81.
+El entrenamiento es una destilación de conocimiento en dos etapas sobre WikiText-2, con `seq_len=512`, `grad_accum=4` y `topk=64`. La etapa 1 (alineación con backbone congelado) dura 90 pasos (54,3 s) y usa MSE + coseno sobre estados ocultos con peso 0,25, omitiendo `lm_head`. La etapa 2 (destilación multi-capa de representaciones) dura 168 pasos (125,9 s) con peso 0,50. El total son 258 pasos en 180,6 s, con un pico de VRAM de 17.729 MB en FP16 con parámetros maestros FP32. La perplexity causal pasa de 428.089,31 (post-cirugía, sin destilar) a 192,50 tras la destilación, una delta de −427.896,81 que indica recuperación, aunque el valor absoluto sigue siendo elevado.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva causal en ingles, limitada a la calidad recuperada por la destilacion sobre WikiText-2.
-- El operador `SpectronAttention` soporta teoricamente atencion causal, bidireccional y cross-attention, aunque el checkpoint solo se entrena y evalua en modo causal.
-- Soporte nativo de GQA con expansion 7x de cabezas KV a traves del adaptador.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta modo thinking, vision ni audio.
-- Capacidad multilingue limitada al ingles segun la etiqueta `language: en`.
-- No se documenta ninguna capacidad especial adicional mas alla del propio operador de atencion.
+- Generación de texto causal autorregresiva, heredada de la base Qwen2.5-0.5B y del operador `SpectronAttention` (`supports_causal = Yes`).
+- Soporte de atención bidireccional a nivel de operador (`supports_bidirectional = Yes`), aunque el checkpoint está configurado para uso causal.
+- Soporte de cross-attention a nivel de operador (`supports_cross_attention = Yes`).
+- Soporte nativo de GQA (`supports_gqa = Yes`), con expansión 7x de cabezas KV en las capas sustituidas.
+- Rotary position embeddings: la model card indica `supports_rope = N/A` para el operador Spectron, por lo que la integración posicional efectiva no se detalla.
+- Capacidades multilingües: solo inglés declarado.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Modo de razonamiento extendido (thinking), visión o audio: no disponible.
+- No se declaran capacidades de agente ni multi-step reasoning específicas.
 
 ## Casos de uso
 
-- Investigacion en mecanismos de atencion: sirve como punto de partida reproducible para comparar `SpectronAttention` frente a atencion cuadratica estandar bajo el mismo protocolo de destilacion y el mismo dataset.
-- Benchmarking de cirugia de atencion: permite medir la caida y recuperacion de perplejidad al sustituir bloques de atencion, con telemetria detallada por etapa y tiempos de ejecucion concretos.
-- Desarrollo de adaptadores de arquitectura: el `QwenAttentionAdapter` y el contrato de `o_proj` unico son un ejemplo practico de como mapear proyecciones Qwen2 a un operador alternativo con distinto numero de cabezas KV.
-- Experimentos de destilacion de conocimiento: las dos etapas (alineacion con backbone congelado y destilacion multicapa) constituyen una receta reutilizable para recuperar calidad tras modificaciones estructurales.
-- Pruebas de eficiencia de atencion subcuadratica: util para medir si el ahorro teorico de complejidad se traduce en ganancias reales en GPUs consumer, dado que el entrenamiento cupo en unos 17,7 GB de VRAM.
-- Docencia y formacion: ejemplo compacto y de bajo coste (menos de 3 minutos de entrenamiento) para ilustrar el impacto de sustituir la atencion en un transformer pequeno.
+- Investigación sobre atención subcuadrática: servir como checkpoint de referencia para comparar `SpectronAttention` frente a atención cuadrática en un transformer preentrenado de 0,5B, usando la telemetría de destilación publicada como línea base reproducible.
+- Experimentos de cirugía de atención: aplicar el mismo pipeline (`apply_qwen_attention_surgery` con `pattern="hybrid_3_1"`) a otras bases Qwen2.5 para estudiar la transferibilidad del operador Spectron entre tamaños y configuraciones GQA.
+- Destilación de conocimiento en modelos pequeños: usar las dos etapas descritas (alineación con backbone congelado y destilación multi-capa de representaciones) como receta reproducible para recuperar calidad tras modificaciones estructurales, con 258 pasos y menos de 3 minutos de cómputo.
+- Evaluación de perplexity en WikiText-2: emplear el valor 192,50 como referencia declarada por el autor para validar implementaciones del operador o reproducir el pipeline en entornos controlados.
+- Estudio de topologías híbridas: analizar el impacto del patrón `hybrid_3_1` (18 capas Spectron + 6 anclas cuadráticas) frente a patrones alternativos, midiendo la relación entre número de capas sustituidas y degradación de perplexity.
+- Prototipado de eficiencia de memoria y atención: probar el operador en cargas con `seq_len=512` y medir el pico de VRAM (17.729 MB en FP16) como referencia para planificar experimentos en GPUs consumer de gama alta.
+- Integración con el ecosistema NeuralOps: usar `neuralops.hub.load_surgeried_model` para cargar el checkpoint en pipelines de investigación internos de NeuralOps.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Dataset | Metrica | Valor |
-|---|---|---|---|
-| qwen-2.5-0.5b-spectron-wikitext2 | wikitext-2-raw-v1 (validation) | Perplejidad | 192,50 |
-| qwen-2.5-0.5b-spectron-wikitext2 (etapa 0, sin destilar) | wikitext-2-raw-v1 | Perplejidad | 428.089,31 |
+Datos declarados por el autor en la `model-index` de la model card. La métrica `verified` está en `false`, es decir, no verificada de forma independiente.
 
-Los resultados proceden del `model-index` declarado por el autor y no estan verificados (`verified: false`). No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
+| Benchmark | Dataset / split | Metrica | Valor |
+|---|---|---|---|
+| Causal Language Modeling | Salesforce/wikitext (`wikitext-2-raw-v1`, validation) | Perplexity | 192,50 |
+
+Telemetría de destilación declarada por el autor:
+
+| Etapa | Metrica | Valor |
+|---|---|---|
+| Stage 0 (post-cirugía, sin KD) | Perplexity causal | 428.089,31 |
+| Post-KD | Perplexity causal | 192,50 |
+| Delta | Perplexity | −427.896,81 |
+| Stage 1 (Frozen-Backbone Alignment) | Pasos / tiempo | 90 pasos / 54,3 s |
+| Stage 2 (Multi-Layer Representation KD) | Pasos / tiempo | 168 pasos / 125,9 s |
+| Total | Pasos / tiempo | 258 pasos / 180,6 s |
+| Pico de VRAM | FP16 autocast + FP32 master | 17.729 MB |
+
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo base Qwen2.5-0.5B en FP16 ocupa aproximadamente 1 GB de pesos; en FP32, unos 2 GB. Los pesos de atencion adicionales son 64,25 MB.
-- VRAM de entrenamiento registrada: 17.729 MB de pico con FP16 autocast y parametros maestros en FP32, con `seq_len=512` y `grad_accum=4`.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM deberia bastar para inferencia en FP16; el entrenamiento documentado cupo en una GPU de aproximadamente 18 GB (clase RTX 4090 o A5000).
-- Cabe en GPU consumer: si, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores para inferencia.
-- Opciones de despliegue: el ejemplo oficial usa `transformers` con `AutoModelForCausalLM` y `safetensors`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, y la dependencia del paquete `neuralops` y del script `qwen_zoo_train_mix` complica el despliegue fuera del ecosistema del autor.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: el pico declarado durante el entrenamiento es de 17.729 MB (aproximadamente 17,3 GB) en FP16 con parámetros maestros FP32. Para inferencia en FP16 del modelo completo (base Qwen2.5-0.5B + pesos de atención Spectron) se estima un consumo menor, pero no se publica una cifra específica.
+- GPU recomendadas para entrenamiento/reproducción: una GPU con al menos 18 GB de VRAM efectiva, como RTX 4090 (24 GB), L40S (48 GB), A100 (40/80 GB) o H100 (80 GB).
+- GPU consumer: el entrenamiento cabe en RTX 4090 (24 GB) según el pico declarado; para inferencia en FP16 de un modelo de 0,5B, cabría en GPUs consumer con 8 GB o más, aunque no se declara latencia ni throughput.
+- Opciones de despliegue: el checkpoint no es directamente cargable con `transformers` sin aplicar la cirugía de atención. Requiere el pipeline de NeuralOps (`apply_qwen_attention_surgery` con `attn_key="spectron"` y `pattern="hybrid_3_1"`) o la API `neuralops.hub.load_surgeried_model`. No se declaran integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Perplexity WikiText-2 (val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-2.5-0.5b-spectron-wikitext2 | 0,5 B | no disponible | 192,50 (declarada, no verificada) | MIT | Hugging Face, pesos de atencion unicamente |
-| Qwen/Qwen2.5-0.5B | 0,5 B | 32.768 tokens (segun documentacion publica de Qwen2.5) | no disponible en esta ficha | Apache 2.0 | Hugging Face, pesos completos |
-| tahamajs/qwen-2.5-0.5b-spectron-wikitext2 frente a otros checkpoints del Attention Zoo | 0,5 B | no disponible | no disponible | MIT | Hugging Face |
+| `tahamajs/qwen-2.5-0.5b-spectron-wikitext2` | ~0,5B (base Qwen2.5-0.5B) | No disponible | 192,50 (declarada, no verificada) | MIT | Pesos de atencion en HF (64,25 MB) |
+| `Qwen/Qwen2.5-0.5B` (base) | 0,5B | No disponible en esta ficha | No disponible | Apache 2.0 (segun la base, no confirmado en esta ficha) | Checkpoint completo en HF |
+| Otros checkpoints del NeuralOps Qwen Attention Zoo | ~0,5B | No disponible | No disponible | MIT (segun el proyecto NeuralOps) | Pesos de atencion en HF |
 
-La comparacion directa con el modelo base no es posible con los datos disponibles: el autor no reporta la perplejidad de Qwen2.5-0.5B sin modificar sobre el mismo split. Cualquier afirmacion sobre mejora o degradacion relativa requeriria esa medicion, que no se ha publicado.
+No se dispone de datos de perplexity del modelo base Qwen2.5-0.5B ni de otros operadores del Attention Zoo en la información proporcionada, por lo que la comparación cuantitativa directa no es posible. La perplexity de 192,50 es alta en términos absolutos para un modelo de 0,5B y sugiere una degradación significativa respecto al modelo base, aunque el autor no publica la cifra de referencia.
 
 ## Limitaciones y advertencias
 
-- La perplejidad de 192,50 es muy elevada para un modelo de 0,5 B; indica que la destilacion recupera una fraccion de la calidad pero esta lejos de igualar al modelo base original.
-- El checkpoint solo contiene pesos de atencion (`attention_weights.safetensors`); para usarlo hay que descargar Qwen2.5-0.5B y aplicar la cirugia con el script del autor, lo que anade fragilidad de reproducibilidad.
-- Dependencia de la libreria `neuralops` y de `scripts.benchmarks.qwen_zoo_train_mix`, no estandar en el ecosistema Hugging Face.
-- Entrenado exclusivamente sobre WikiText-2 en ingles; el dominio y el idioma estan severamente restringidos.
-- Sin datos de evaluacion en tareas downstream (razonamiento, codigo, matematicas, instrucciones), por lo que no hay evidencia de capacidad conversacional real pese a la etiqueta `conversational`.
-- Riesgo elevado de alucinacion y de generacion incoherente dado el nivel de perplejidad.
-- La licencia MIT se aplica al checkpoint publicado, pero el modelo base Qwen2.5-0.5B tiene su propia licencia (Apache 2.0 segun la documentacion publica de Qwen); conviene verificar la compatibilidad antes de uso comercial.
-- Cero descargas y cero likes en el momento de la ficha: no hay evidencia de uso ni validacion por parte de la comunidad.
-- Resultados de benchmark declarados por el autor y marcados como no verificados.
-- No apto para produccion sin una evaluacion adicional exhaustiva en el dominio objetivo.
+- Perplexity elevada: 192,50 en WikiText-2 es un valor alto para un modelo de 0,5B; la sustitución de atención degrada la calidad y la destilación solo recupera parcialmente (parte de 428.089,31).
+- Entrenamiento limitado: solo 258 pasos y 180,6 s sobre WikiText-2, un dataset pequeño y de dominio único; no hay evidencia de generalización fuera de ese corpus.
+- Solo inglés: el modelo declara únicamente `en`; no se garantiza comportamiento multilingüe.
+- Checkpoint parcial: el repositorio contiene solo pesos de atención (64,25 MB), no un modelo completo; requiere aplicar la cirugía con NeuralOps antes de cargar con `transformers`.
+- Dependencia de código externo: el pipeline depende del repositorio NeuralOps y de la función `apply_qwen_attention_surgery`, lo que introduce riesgo de reproducibilidad si el código cambia.
+- Benchmarks no verificados: la métrica de perplexity está marcada como `verified: false`; no hay validación independiente.
+- Sesgos: no se documentan sesgos conocidos; al derivar de Qwen2.5-0.5B y entrenar solo en WikiText-2, hereda los sesgos del modelo base y del corpus, sin mitigación declarada.
+- Riesgo de alucinación: no evaluado en la información disponible; la degradación de perplexity sugiere mayor riesgo que el modelo base.
+- Licencia MIT: permite uso comercial, pero el modelo base Qwen2.5-0.5B tiene su propia licencia (Apache 2.0 según la información habitual de Qwen, no confirmada en esta ficha), que debe respetarse.
+- Sin soporte declarado de tool calling, agentes ni modos de razonamiento; no apto para pipelines de producción que dependan de esas capacidades.
+- Contexto nativo no declarado: el entrenamiento usa `seq_len=512`; no hay garantía de comportamiento correcto en ventanas más largas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-spectron-wikitext2
-- Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
-- Licencia MIT del proyecto: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
-- Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
+- Licencia NeuralOps (MIT): https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Dataset WikiText-2 (`Salesforce/wikitext`): https://huggingface.co/datasets/Salesforce/wikitext

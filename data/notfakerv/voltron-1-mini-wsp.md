@@ -2,116 +2,120 @@
 
 ## Resumen
 
-voltron-1-mini-wsp es un checkpoint derivado de Akahsizrr/voltron-1-mini, publicado por el usuario notfakerv, que aplica una edicion de pesos sin entrenamiento (weight-space programming) para corregir un fallo de formato en el razonamiento matematico del modelo base. El modelo conserva la arquitectura y el tamano del original: 1.728.801.536 parametros en formato BF16 safetensors, con pesos tambien disponibles en GGUF Q8_0. La licencia es lfm1.0 (Liquid Foundation Model), heredada del modelo base, y el unico idioma declarado es el ingles.
+voltron-1-mini-wsp (v3) es un ajuste fino del modelo Akahsizrr/voltron-1-mini, a su vez derivado de la familia LFM3 de Liquid AI, que aplica una técnica de edición de pesos sin entrenamiento (weight-space programming) para corregir un fallo de formato en el bloque de razonamiento. El problema que resuelve es concreto: el modelo base escribía la solución matemática dentro de la etiqueta `<think>` sin cerrarla nunca, de modo que las aplicaciones de chat ocultaban la respuesta como si fuera razonamiento interno. La edición hace que el modelo piense primero, cierre `</think>` y escriba después la respuesta visible.
 
-El problema que resuelve es concreto: Voltron-1-Mini tiende a escribir la solucion matematica dentro del bloque `<think>` sin cerrarlo, de modo que las aplicaciones de chat ocultan la respuesta al usuario. La edicion aplica actualizaciones de rango uno a nueve matrices `ffn_down` (bloques 6, 8, ..., 22), definidas por unas 87.552 cifras en total (0,005% de los parametros), y consigue que el modelo razone primero, cierre `</think>` y muestre la respuesta. Segun la model card, esto eleva la precision en GSM8K del 76,4% al 88,2% y en MATH-500 (niveles 1-3) del 65,3% al 76,5%, ademas de disparar el porcentaje de respuestas correctas visibles al usuario.
+El modelo tiene 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) y una ventana de contexto no especificada en la información disponible. La intervención es extremadamente quirúrgica: solo se modifican 11 de las 286 matrices de pesos (las `ffn_down` de los bloques 6, 8, 10, 12, 14, 16, 18, 20, 21, 22 y 23), mediante 13 actualizaciones de rango uno definidas por 126.464 números, lo que representa el 0,007% del total de parámetros. No se usaron gradientes, datos de entrenamiento ni fine-tuning convencional.
 
-Es relevante porque demuestra que una intervencion minima y training-free sobre los pesos puede recuperar buena parte del rendimiento que el fine-tune del modelo base habia perdido respecto a LFM3-1.7B (16 puntos en GSM8K y 26 en MATH), sin tocar codigo (HumanEval+ practicamente identico) y sin degradar la calidad conversacional general.
+La relevancia actual reside en que demuestra que es posible recuperar parte del rendimiento perdido en un ajuste fino mediante edición directa del espacio de pesos, con ganancias medibles y estadísticamente significativas en GSM8K (+12,4 puntos) y MATH (+11,3 puntos) sobre el modelo base Voltron-1-Mini, además de multiplicar por más de 400 la tasa de respuestas correctas efectivamente mostradas al usuario en GSM8K (de 0,2% a 88,9%).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Liquid / LFM3, segun tags; detalles no disponibles) |
+| Arquitectura | Transformer (familia LFM3 de Liquid AI, segun tags del repo); detalles internos no disponibles |
 | Parametros totales | 1.728.801.536 |
-| Parametros activos | no disponible (no se declara MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 safetensors y GGUF Q8_0 en el repo; otras cuantizaciones no disponibles |
-| Idiomas soportados | en (ingles) |
-| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Tipos de cuantizacion | BF16 (safetensors) y Q8_0 (GGUF); otras cuantizaciones no confirmadas |
+| Idiomas soportados | ingles (en) |
+| Licencia | lfm1.0 (etiquetada como "other" en la model card) |
 | Formato de pesos | safetensors (BF16) y GGUF (Q8_0) |
-| Modelo base | Akahsizrr/voltron-1-mini (finetune) |
-| Tamano del repo | 5,3 GB |
-| Tensores modificados | 9 de 286 (`ffn_down` de los bloques 6, 8, ..., 22; 2048 x 7680) |
-| Parametros que definen la edicion | 87.552 (0,005% del total) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del checkpoint Voltron-1-Mini, que a su vez deriva de LFM3-1.7B de Liquid (segun los tags `lfm3` y `liquid`). No se detalla en la informacion disponible la composicion exacta de la arquitectura mas alla de ser un transformer con bloques que contienen capas `ffn_down` de dimension 2048 x 7680. Tampoco se especifican la longitud de contexto, el numero de capas ni los datos de preentrenamiento del modelo base.
+El modelo parte de Akahsizrr/voltron-1-mini, un ajuste fino de la familia LFM3-1.7B de Liquid AI. La arquitectura subyacente es un transformer, aunque la información disponible no detalla si incorpora componentes híbridos o de atención lineal propios de la línea Liquid. El checkpoint editado conserva 275 de las 286 matrices de pesos byte a byte idénticas al modelo original.
 
-La innovacion tecnica de este checkpoint no esta en el entrenamiento sino en la edicion de pesos: no se usaron gradientes, datos de entrenamiento ni fine-tuning. Se aplicaron nueve actualizaciones de rango uno (una direccion de salida de 2.048 numeros y una clave de 7.680 numeros por matriz) a las matrices `ffn_down` de los bloques 6, 8, ..., 22, con direcciones leidas de las propias activaciones del modelo ("weight-space programming"). El cambio total tiene una norma de Frobenius del 3,22% de las matrices editadas y del 0,86% de todos los pesos; 101.379.121 valores BF16 almacenados cambian realmente (71,6% de las matrices editadas, 5,86% del modelo). Los otros 277 tensores son identicos byte a byte. Segun la model card, la edicion corrige el comportamiento de razonamiento: el modelo pasa de resolver en una sola pasada dentro de `<think>` a razonar y cerrar el bloque antes de escribir la respuesta.
+La innovación técnica no está en el entrenamiento sino en la posedición: se aplicaron 13 actualizaciones de rango uno (9 en la versión v2, 4 adicionales en v3) sobre matrices de salida MLP (`ffn_down`), con direcciones leídas de las propias activaciones del modelo. No hubo gradientes, ni datos de entrenamiento, ni RLHF/DPO. El cambio total tiene una norma de Frobenius del 2,92% sobre las matrices editadas y del 0,86% sobre el conjunto de pesos. La edición v3 modifica 20.613.708 valores almacenados (1,19% del modelo) y se define con 38.912 números.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento matematico con modo de pensamiento (`<think>` ... `</think>`) y respuesta posterior visible.
-- Resolucion de problemas de aritmetica de nivel escolar (GSM8K) y matematicas de competicion de niveles 1-3 (MATH-500).
-- Generacion de codigo: HumanEval+ se mantiene practicamente igual que el modelo base (89,0% → 88,9%).
-- Respuestas conversacionales cotidianas sin "voz de pensamiento" (frases como "wait...", "actually...", "let me..."): 0,8% en el modelo editado frente a 1,0% en el original.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita; el modelo emplea un unico bloque de razonamiento antes de responder.
-- Capacidades multilingues: solo ingles declarado.
-- Capacidades de vision o audio: no disponibles.
+- Generación de texto conversacional en inglés.
+- Razonamiento matemático con modo de pensamiento explícito: el modelo escribe el razonamiento dentro de `<think>`, cierra la etiqueta y presenta la respuesta final de forma visible.
+- Resolución de problemas aritméticos de varios pasos (GSM8K) y problemas de competición de nivel 1-3 (MATH).
+- Generación de código: mantiene el rendimiento en HumanEval+ (89,5% pass@1), sin regresión respecto al modelo base.
+- Respuestas a preguntas cotidianas sin voz de pensamiento filtrada (solo el 0,8% de las respuestas marcadas).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Tutoria matematica automatizada: el modelo razona dentro de `<think>`, cierra el bloque y muestra la solucion final, lo que permite integrarlo en interfaces de chat que ocultan el contenido de pensamiento sin perder la respuesta. Adecuado por su 88,2% en GSM8K y 76,5% en MATH-500 niveles 1-3.
-- Asistente de resolucion de problemas paso a paso en entornos educativos: la separacion entre razonamiento y respuesta facilita mostrar solo el resultado o desplegar el razonamiento bajo demanda.
-- Generacion de codigo en pipelines de CI/CD: mantiene el rendimiento del base en HumanEval+ (88,9%), por lo que puede usarse para autocompletado y generacion de parches sin regresion respecto al checkpoint original.
-- Chatbot de atencion al cliente en ingles: el 98,6% de respuestas visibles en preguntas cotidianas y la baja tasa de voz de pensamiento (0,8%) lo hacen apto para conversaciones multi-turno donde la respuesta debe mostrarse limpiamente.
-- Despliegue en local con llama.cpp o LM Studio: el repo incluye GGUF Q8_0 y los tags mencionan llama.cpp y LM Studio, lo que permite ejecutarlo en estaciones de trabajo sin GPU de datacenter.
-- Experimentacion en investigacion sobre edicion de pesos: sirve como caso reproducible de weight-space programming con controles estadisticos (intervalos bootstrap del 95% y comparacion contra ediciones aleatorias del mismo tamano).
-- Prototipado rapido de asistentes de razonamiento en ingles con requisitos de hardware modestos, dado el tamano de 1,7B parametros.
+- Tutoría matemática automatizada: el modelo resuelve problemas de aritmética y álgebra mostrando el razonamiento paso a paso dentro de `<think>` y la respuesta final fuera, lo que permite a una aplicación educativa renderizar ambos bloques por separado y verificar la solución.
+- Evaluación de modelos de razonamiento en pipelines de investigación: al corregir el fallo de cierre de etiqueta, los harnesses automáticos que parsean la respuesta tras `</think>` obtienen tasas de extracción del 97,4% en GSM8K, frente al 0,2% del modelo base, lo que reduce drásticamente los falsos negativos por formato.
+- Generación de código en producción: con un 89,5% de pass@1 en HumanEval+, puede integrarse en asistentes de autocompletado o revisión de parches donde se requiera un modelo pequeño de 1,7B parámetros desplegable en una sola GPU.
+- Chatbot de atención al cliente en inglés: el modelo responde preguntas cotidianas mostrando la respuesta el 98,1% de las veces y con solo un 0,8% de respuestas contaminadas por voz de pensamiento, lo que reduce la necesidad de post-procesado.
+- Despliegue en local con llama.cpp o LM Studio: el GGUF Q8_0 incluido en el repo permite ejecutar el modelo en estaciones de trabajo sin GPU dedicada de gama alta, útil para prototipado offline y pruebas de privacidad.
+- Investigación sobre edición de pesos: el checkpoint sirve como caso de estudio reproducible de weight-space programming, ya que el repo documenta el número exacto de tensores modificados, los valores cambiados y la norma de Frobenius de la intervención.
+- Verificación de soluciones en plataformas de ejercicios: el modelo puede usarse como corrector automático de problemas de matemáticas de nivel escolar, comparando la respuesta final extraída tras `</think>` con la solución de referencia.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados en la model card, evaluados con llama.cpp Q8_0 y 4 muestras por pregunta sobre conjuntos held-out:
+Resultados sobre preguntas held-out, medidos con llama.cpp sobre el GGUF Q8_0, 4 muestras por pregunta:
 
-| Benchmark | Voltron-1-Mini | voltron-1-mini-wsp | Ganancia [IC 95%] |
+| Benchmark | Voltron-1-Mini | v2 | v3 (esta versión) |
 |---|---|---|---|
-| GSM8K test: respuesta final correcta | 76,4% | 88,2% | +11,8 pts [+8,5, +14,8] |
-| MATH-500 niveles 1-3: respuesta final correcta | 65,3% | 76,5% | +11,2 pts [+5,5, +16,8] |
-| GSM8K test: respuesta correcta mostrada al usuario | 0,3% | 78,0% | +77,7 pts [+74,6, +80,6] |
-| MATH-500 niveles 1-3: respuesta correcta mostrada | 2,6% | 63,1% | +60,5 pts [+55,9, +65,0] |
-| Preguntas cotidianas: respuesta mostrada | 96,2% | 98,6% | +2,3 pts [+1,1, +3,7] |
-| Preguntas cotidianas: respuestas con voz de pensamiento | 1,0% | 0,8% | no empeora |
-| HumanEval+ | 89,0% | 88,9% | empate |
+| GSM8K test (400): respuesta mostrada tras `</think>` | 0,2% | 88,9% | 97,4% |
+| GSM8K: respuesta final correcta | 78,7% | 90,2% | 91,1% |
+| GSM8K: respuesta correcta mostrada | 0,2% | 79,9% | 88,9% |
+| MATH niveles 1-3 (250): respuesta mostrada | 2,9% | 81,7% | 96,6% |
+| MATH: respuesta final correcta | 68,3% | 77,0% | 79,6% |
+| MATH: respuesta correcta mostrada | 2,6% | 65,5% | 78,4% |
+| Preguntas cotidianas (300): respuesta mostrada | 95,8% | 97,1% | 98,1% |
+| Preguntas cotidianas: marcadas por voz de pensamiento | 0,4% | 0,3% | 0,8% |
+| HumanEval+ (164): pass@1 | 89,0% | 88,9% | 89,5% |
 
-Comparacion con el modelo base LFM3-1.7B citada en la model card (mismo setup):
+Ganancias con intervalos de confianza al 95% (bootstrap, 10 semillas):
 
-| Benchmark | LFM3-1.7B | Voltron-1-Mini | voltron-1-mini-wsp |
-|---|---|---|---|
-| GSM8K | 92,6% | 76,4% | 88,2% |
-| MATH | 91,7% | 65,3% | 76,5% |
-| HumanEval+ | empate | empate | empate |
+| Benchmark | Ganancia sobre Voltron-1-Mini | Ganancia sobre v2 |
+|---|---|---|
+| GSM8K: respuesta final correcta | +12,4 puntos [+9,6, +15,1] | +0,9 [-0,2, +2,1] |
+| MATH niveles 1-3: respuesta final correcta | +11,3 puntos [+6,2, +16,5] | +2,6 [+0,5, +4,7] |
+| GSM8K: respuesta correcta mostrada | +88,7 puntos [+86,2, +91,0] | +8,9 [+7,1, +10,9] |
+| MATH: respuesta correcta mostrada | +75,8 puntos (derivado de 2,6% a 78,4%) | +12,9 puntos |
 
-Segun el autor, la edicion recupera aproximadamente el 70% de la perdida en GSM8K y el 40% en MATH respecto a LFM3-1.7B. En una medicion separada sobre 150 preguntas cotidianas con un detector de voz de pensamiento, la primera version no publicada de la edicion obtenia un 29,9% de respuestas con voz de pensamiento, frente al 2,1% del original y el 1,2% de esta release.
+Comparación con el modelo base LFM3-1.7B (según la model card):
+
+| Benchmark | LFM3-1.7B | v3 |
+|---|---|---|
+| GSM8K | 93,6% | 91,0% |
+| MATH | 92,8% | 80,2% |
+| HumanEval+ | empate | empate |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint BF16 ocupa aproximadamente 3,5 GB de pesos (1,73B parametros x 2 bytes); con overhead de KV cache y activaciones, se recomienda al menos 6-8 GB de VRAM para BF16 y en torno a 2-3 GB para GGUF Q8_0.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4090) es suficiente para BF16 o Q8_0; para despliegue en servidor, A100 o H100 no son necesarias por el tamano del modelo.
-- Cabe en GPU consumer: si, en la mayoria de GPU con 6-8 GB de VRAM, especialmente usando la cuantizacion Q8_0.
-- Opciones de despliegue: transformers (libreria declarada), llama.cpp y LM Studio (segun tags), GGUF Q8_0 incluido en el repo. vLLM, TGI y Ollama no se mencionan en la informacion disponible.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en BF16: aproximadamente 3,5 GB solo para pesos (1,728 mil millones de parámetros × 2 bytes), más overhead de activaciones y caché KV.
+- VRAM estimada para Q8_0: aproximadamente 1,8 GB para pesos, más overhead.
+- GPU recomendadas: cualquier GPU consumer con al menos 6-8 GB de VRAM para BF16 (RTX 3060, RTX 4060, RTX 4070); para Q8_0 basta con 4 GB. En entornos de servidor, A100 o H100 no son necesarias por el tamaño del modelo, aunque pueden usarse para despliegues de alta concurrencia.
+- Cabe en GPU consumer: sí, en la mayoría de tarjetas modernas con 6 GB o más para BF16 y 4 GB o más para Q8_0.
+- Opciones de despliegue: llama.cpp y LM Studio (soportados explícitamente según los tags), transformers con `custom_code` (la model card indica `library_name: transformers` y tag `custom_code`), y presumiblemente vLLM y TGI aunque no se confirman en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GSM8K | MATH | HumanEval+ | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | GSM8K | MATH | HumanEval+ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| voltron-1-mini-wsp | 1,73B | no disponible | 88,2% | 76,5% (niveles 1-3) | 88,9% | lfm1.0 | Hugging Face (safetensors + GGUF Q8_0) |
-| Voltron-1-Mini (base) | 1,73B | no disponible | 76,4% | 65,3% (niveles 1-3) | 89,0% | no disponible en la informacion | Hugging Face |
-| LFM3-1.7B (Liquid) | ~1,7B | no disponible | 92,6% | 91,7% | empate | no disponible en la informacion | Hugging Face |
+| voltron-1-mini-wsp v3 | 1,73B | no disponible | 91,1% | 79,6% | 89,5% | lfm1.0 | Hugging Face (safetensors + GGUF) |
+| Voltron-1-Mini (base del fine-tune) | 1,73B | no disponible | 78,7% | 68,3% | 89,0% | no disponible | Hugging Face |
+| LFM3-1.7B (modelo original de Liquid AI) | 1,7B | no disponible | 93,6% | 92,8% | empate | no disponible | Hugging Face |
 
-No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se declara soporte multilingue.
-- La licencia lfm1.0 (Liquid Foundation Model) puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de desplegar en produccion.
-- El modelo es un finetune de un finetune (LFM3-1.7B → Voltron-1-Mini → voltron-1-mini-wsp) y sigue por debajo de LFM3-1.7B en matematicas (88,2% frente a 92,6% en GSM8K; 76,5% frente a 91,7% en MATH), por lo que no es la mejor opcion si se busca maxima precision matematica.
-- Riesgo de alucinacion: no se han publicado evaluaciones de factualidad ni de tasas de alucinacion en la informacion disponible.
-- Sesgos conocidos: no se documentan en la model card.
-- La edicion de pesos es de rango uno sobre nueve matrices; su generalizacion mas alla de los conjuntos evaluados (GSM8K, MATH-500 niveles 1-3, HumanEval+, 300 preguntas cotidianas) no esta verificada.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2026-11-18; se trata de una publicacion muy reciente y sin validacion independiente.
-- No se especifica la longitud de contexto, lo que limita la planificacion de cargas con conversaciones largas.
-- El tag `custom_code` implica que la carga con transformers puede requerir `trust_remote_code=True`; conviene auditar el codigo remoto antes de ejecutarlo.
-- No hay informacion sobre soporte de tool calling ni de agentes, por lo que no debe asumirse en produccion.
+- El modelo solo soporta inglés; no se ha validado su comportamiento en castellano ni en otros idiomas.
+- La licencia lfm1.0 (etiquetada como "other") puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de desplegarlo en producción.
+- El modelo sigue por debajo de LFM3-1.7B en precisión matemática (GSM8K 91,0% frente a 93,6%; MATH 80,2% frente a 92,8%), por lo que la edición recupera solo parte del rendimiento perdido en el ajuste fino original.
+- El 0,8% de las respuestas a preguntas cotidianas se marcaron por voz de pensamiento, un ligero aumento respecto al 0,3-0,4% de las versiones anteriores.
+- La edición de pesos es frágil por construcción: se aplicó sobre 11 matrices concretas y podría no generalizar a otros checkpoints o variantes de cuantización distintas de Q8_0 y BF16.
+- No hay información sobre sesgos, alucinación o comportamiento en dominios fuera de matemáticas, código y conversación general.
+- No se dispone de datos sobre tool calling, agentes o contexto largo, lo que limita su uso en pipelines de agentes complejos.
+- El modelo tiene 0 likes y 374 descargas en el momento de la ficha, lo que indica una validación comunitaria muy limitada.
+- La fecha de creación (2026-11-18) y el tamaño del repo (10,6 GB) sugieren que puede incluir múltiples versiones y artefactos; conviene verificar qué archivos se descargan.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/notfakerv/voltron-1-mini-wsp
+- Hugging Face: https://huggingface.co/notfakerv/voltron-1-mini-wsp
 - Modelo base Voltron-1-Mini: https://huggingface.co/Akahsizrr/voltron-1-mini
-- Repositorio de LFM3-1.7B (referencia del modelo base de la familia): no disponible en la informacion proporcionada
-- Paper o blog de weight-space programming: no disponible en la informacion proporcionada
-- Demo o espacio interactivo: no disponible en la informacion proporcionada
+- Repositorio de la versión v2 (commit histórico): https://huggingface.co/notfakerv/voltron-1-mini-wsp/tree/d884c16f
+- Licencia LFM1.0: https://huggingface.co/notfakerv/voltron-1-mini-wsp/blob/main/LICENSE

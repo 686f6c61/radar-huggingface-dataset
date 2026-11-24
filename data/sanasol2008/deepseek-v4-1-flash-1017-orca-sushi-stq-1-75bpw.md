@@ -2,89 +2,94 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 Orca Sushi PAIR1/STQ es una conversión experimental al formato Sushi de un GGUF ya cuantizado y abliterado del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario sanasol2008. No se trata de un modelo entrenado desde cero ni de una conversión directa desde pesos BF16: los pesos de origen proceden de `orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF` (variante Mix-256G), de modo que la re-codificación acumula la pérdida de cuantización del donante y no puede recuperar información ya descartada. La arquitectura subyacente es un transformer de mezcla de expertos (MoE) con capacidades multimodales (visión) y tablas Engram, con 260.058.263.664 parámetros totales según los safetensors del repositorio.
+DeepSeek-V4.1-Flash-1017-Orca-Sushi-STQ-1.75bpw es una conversión experimental del checkpoint abliterado OrcaRouter de DeepSeek-V4.1-Flash-1017 a formato Sushi nativo, publicada por el usuario sanasol2008. No es un modelo entrenado desde cero ni un ajuste fino: es una recodificación de pesos ya cuantizados (GGUF Mix-256G) a un esquema de trellis PAIR1-w16-v1 con un payload uniforme de 1,75 bits por peso en los expertos enrutados. El modelo base es un transformer de mezcla de expertos (MoE) de DeepSeek, con 260.058.263.664 parámetros totales según los safetensors del repositorio.
 
-El interés técnico del artefacto reside en su representación de pesos: los expertos enrutados se re-codifican con el codec PAIR1-w16-v1 a una tasa uniforme `n28` (28/16 = 1,75 bits por peso de payload), mientras que el tronco denso calibrado usa bancos SPEC1-w15 K4 (`n64`) y el resto del tronco, embeddings, cabeza de salida y visión se conservan en F32 o BF16 dequantizados del donante. La etiqueta "1.75bpw" describe únicamente el payload de los expertos enrutados, no la media real de bits por peso del paquete completo.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de conversión de formato agresiva sobre un modelo de gran tamaño (428,5 GB de repositorio), útil para quien investigue técnicas de compresión extrema y codecs tipo trellis. Por otro, es un ejemplo de artefacto con procedencia encadenada (donante GGUF, config nativa, codec público) y con advertencias explícitas del propio autor sobre pérdida de calidad acumulada. El autor declara que la calidad completa no está establecida y que la única comparación publicada por un usuario usa max_tokens distintos entre modelos, por lo que no es concluyente.
 
-Es un artefacto claramente experimental: el autor declara que la calidad completa no está establecida, que las pruebas de 1024 tokens están pendientes y que solo se ha verificado la descarga, el repack y un smoke test técnico limitado en macOS. No debe tratarse como un modelo listo para producción.
+El modelo se distribuye con licencia MIT, soporta inglés y ruso según los metadatos, y está etiquetado como experimental. La ventana de contexto, el número de parámetros activos y los detalles de entrenamiento originales no se especifican en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE) con visión y tablas Engram; conversión al formato Sushi |
+| Arquitectura | Transformer de mezcla de expertos (MoE), según tags del repositorio; detalles de capas y atención no disponibles |
 | Parametros totales | 260.058.263.664 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Expertos enrutados PAIR1-w16-v1 a `n28` (1,75 bpw de payload); tronco calibrado SPEC1-w15 K4 (`n64`); tronco restante, embeddings, cabeza y visión en F32/BF16 dequantizados; tablas Engram en E4M3FN/E8M0 |
+| Tipos de cuantizacion | Trellis PAIR1-w16-v1 uniforme n28 (1,75 bpw de payload en expertos enrutados); SPEC1-w15 K4 (n64) en el tronco calibrado; F32 en tronco denso restante, embeddings y cabeza; BF16 en visión y aligner; E4M3FN/E8M0 en tablas Engram |
 | Idiomas soportados | en, ru |
-| Licencia | MIT (sujeta a las licencias del donante y del modelo upstream) |
-| Formato de pesos | safetensors (formato Sushi, orden pack-order) |
+| Licencia | MIT (sujeta a los términos del donante y del modelo upstream) |
+| Formato de pesos | safetensors (formato Sushi nativo, derivado de GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer MoE multimodal de DeepSeek con atención agrupada (el tronco incluye tensores `wo_a` con diagonales de entrada independientes), routers, tensores de hiperconexión y tablas de búsqueda Engram. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original; esta ficha solo cubre el artefacto convertido.
+El modelo es una conversión Sushi-nativa del GGUF abliterado OrcaRouter Mix-256G de DeepSeek-V4.1-Flash-1017, incluyendo sus expertos enrutados editados. La conversión densa tiene como objetivo los tensores desquantizados reales del donante, no los pesos del checkpoint oficial original. Esto implica que el proceso no es una conversión directa de BF16 a Sushi y no puede recuperar la información perdida en el GGUF donante. Los pesos originales de los expertos Sushi oficiales no se reutilizan y no se sustituye ninguna edición rank-one inferida por los pesos reales del donante.
 
-La conversión no entrena nada: re-codifica los tensores del donante GGUF con codebooks y empaquetado públicos de Sushi, usando una búsqueda en float32 con redondeo explícito de escalas almacenadas en F16. La calibración de expertos emplea importancia diagonal sobre las entradas nativas del donante con normalización por capa común, rotación H128 y LDLQ por bloques. Cuatro expertos no visitados (L21/E207, L24/E350, L25/E85, L27/E260; doce proyecciones) usan un fallback de importancia identidad marcado como no calibrado. Los factores de compuerta Engram se almacenan como una representación derivada compatible (`q` = producto F32 fusionado del donante, `k` = unos en F32), no como reconstrucción de los factores originales. El módulo DSpark/MTP se omite por no estar presente en el donante.
+La representación de pesos es heterogénea. Cada proyección de los expertos enrutados se recodifica como PAIR1-w16-v1 con n28 uniforme (28/16 = 1,75 bpw de payload) y escalas de entrada/salida en F16. La calibración de expertos usa importancia diagonal sobre entradas nativas del donante, normalización por capa común para retener información de frecuencia de enrutamiento, rotación H128 y LDLQ por bloques. Cuatro expertos no visitados (L21/E207, L24/E350, L25/E85, L27/E260; cuatro expertos y doce proyecciones) usan un fallback explícito de importancia identidad en n28 y están marcados como no calibrados. El tronco calibrado contiene 337 bancos SPEC1-w15 K4 (n64) recodificados con diagonales del donante, y la atención agrupada `wo_a` usa ocho diagonales independientes de coordenadas de entrada. Los 464 tensores densos restantes se retienen como F32 desquantizado del donante, incluyendo routers, normas, tensores de hiperconexión, lineales sin rejilla soportada o sin calibración, y factores de puerta Engram compatibles.
+
+Las tablas de búsqueda Engram se obtienen por desquantización acotada de filas IQ4_NL del donante y recuantización posterior a E4M3FN/E8M0, con una escala por cada 32 columnas; el autor advierte que es una operación con pérdida y no una recuperación de las tablas FP8 originales. DSpark/MTP se omite por ausencia en el donante. Los factores Engram q/k originales están fusionados en un producto F32 no invertible; el candidato almacena `q` como el producto F32 del donante y `k` como unos en F32, representación derivada compatible que Sushi consume multiplicando ambos factores. El candidato inicial usa trellises en orden de paquete (pack-order); el comando público `sushi repack` puede convertirlo a layout pair-major con verificación de bytes inversa. El autor no afirma reproducir el encoder calibrado privado de Sushi ni paridad de bytes con esa receta, y señala que la calibración usa importancia diagonal, no covarianza de activaciones completa.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: heredadas del modelo base DeepSeek-V4.1-Flash-1017, aunque degradadas por la doble cuantización.
-- Procesamiento de visión: el paquete incluye pesos de visión y aligner en BF16/F32, por lo que el artefacto conserva la ruta multimodal del donante.
-- Tablas Engram: se mantienen mediante dequantización acotada de filas IQ4_NL y requantización E4M3FN/E8M0 (con pérdida).
-- Multilingüe limitado: la model card declara únicamente inglés y ruso.
-- Tool calling y razonamiento multi-paso: no confirmado en la información disponible para este artefacto.
-- Modo thinking: no confirmado en la información disponible.
-- Plantilla de chat: se conserva la plantilla embebida del donante, no la plantilla base nativa.
+- Generación de texto en inglés y ruso, según los metadatos de idioma del repositorio.
+- Razonamiento y conversación multi-turno heredados del modelo base DeepSeek-V4.1-Flash-1017, aunque la calidad tras la conversión no está establecida.
+- Procesamiento de visión: el repositorio incluye pesos de visión y aligner almacenados en BF16 para el loader estricto de Sushi.
+- Soporte de plantilla de chat: se retiene la plantilla embebida del donante, no se sustituye por la plantilla base nativa.
+- Capacidades de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación de codecs de cuantización: el artefacto permite estudiar el comportamiento de PAIR1-w16-v1 a `n28` y SPEC1-w15 K4 sobre un MoE grande real, comparando la fidelidad de la re-codificación frente al GGUF donante.
-- Validación de la cadena de herramientas Sushi: sirve para probar el cargador estricto de Sushi, el comando público `sushi repack` (conversión de pack-order a pair-major con verificación inversa de bytes) y la paridad de codec CPU/CUDA.
-- Pruebas de despliegue en macOS: el autor verificó un smoke test técnico en Mac tras repack local, por lo que es útil para validar flujos de descarga, repack y arranque en ese entorno.
-- Estudio de representaciones derivadas: el par Engram `q`/`k` derivado y los fallbacks de expertos no calibrados son casos concretos para analizar cómo afectan las aproximaciones a la fidelidad del modelo.
-- Reproducibilidad de conversiones: los manifiestos fijan revisión del donante, hashes de código del encoder, política de tasa y calibración y procedencia de rangos de bytes, lo que facilita auditar el proceso.
-- Evaluación comparativa de pérdida por doble cuantización: al partir de un GGUF ya cuantizado, permite medir cuánta calidad adicional se pierde al re-codificar, un dato relevante para pipelines de compresión extrema.
+- Investigación en compresión extrema de modelos: el artefacto sirve para estudiar el impacto de recodificar expertos enrutados a 1,75 bpw de payload sobre un MoE de 260.000 millones de parámetros, comparando la pérdida acumulada frente al donante GGUF original.
+- Evaluación de codecs trellis en producción experimental: equipos que trabajen con el codec Sushi pueden usar este repositorio como caso de prueba de las rutas PAIR1-w16-v1 y SPEC1-w15 K4, incluyendo la conversión `sushi repack` a pair-major con verificación inversa de bytes.
+- Pruebas de compatibilidad de loader: el repositorio permite validar el cargador estricto de Sushi con pesos heterogéneos (F32, BF16, E4M3FN/E8M0) y con la representación derivada de factores Engram q/k.
+- Despliegue en macOS con hardware limitado: el autor documenta un smoke test técnico en macOS tras repack local, útil para verificar que el artefacto carga y ejecuta inferencia básica en entornos de memoria restringida, sin garantía de calidad.
+- Estudio de procedencia y trazabilidad de artefactos: los manifiestos de conversión fijan revisión del donante, hashes del código del encoder, política de tasa y calibración, hashes por ítem y procedencia de rangos de bytes de calibración, lo que sirve como modelo de auditoría para pipelines de conversión.
+- Experimentación con modelos abliterados: al derivar de un checkpoint abliterado, permite estudiar el comportamiento de modelos sin rechazo en tareas de generación controlada, siempre con las salvaguardas y advertencias éticas correspondientes.
+- Docencia y divulgación técnica: como ejemplo didáctico de cadena de custodia entre checkpoint oficial, GGUF donante y recodificación Sushi, con advertencias explícitas sobre qué afirmaciones no se pueden hacer.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que la evaluación completa de calidad no está establecida y que las pruebas de 1024 tokens están pendientes.
+No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que la evaluación completa de calidad no está establecida y que la comparación más reciente ejecutada por un usuario usa Orca con max_tokens 512 frente a 256 para los otros modelos, por lo que no es una comparación válida.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 428,5 GB, pero el tamaño final en runtime y la memoria necesaria deben reportarse por separado según el propio autor (escalas F16, tronco denso, embeddings, visión, tablas Engram y metadatos añaden sobrecoste al payload de 1,75 bpw).
-- GPU recomendadas: no disponible en la información proporcionada.
-- Viabilidad en GPU de consumo: no confirmada; el tamaño del artefacto y el número de parámetros hacen improbable un despliegue en GPU de consumo sin información adicional.
-- Opciones de despliegue: cargador Sushi (librería `sushi`), con repack mediante el comando público `sushi repack`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI en este artefacto.
+- VRAM estimada para inferencia: no disponible de forma medida. El repositorio ocupa 428,5 GB; el autor advierte que el tamaño final del artefacto y la memoria en tiempo de ejecución deben reportarse por separado, ya que el 1,75 bpw describe solo el payload de los expertos enrutados y no los bits medios por peso del paquete completo.
+- GPU recomendadas: no disponible en la información proporcionada. Por el tamaño del repositorio, un despliegue completo excede la memoria de cualquier GPU de consumo individual.
+- ¿Cabe en GPU de consumo? No de forma completa con los datos disponibles; el autor solo documenta un smoke test técnico en macOS, no un despliegue funcional en GPU de consumo.
+- Opciones de despliegue: el modelo usa la librería Sushi y el comando público `sushi repack`; no se mencionan vLLM, llama.cpp, Ollama ni TGI como soportados para este artefacto.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Formato | Licencia | Estado |
+| Modelo | Parámetros totales | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 Orca Sushi PAIR1/STQ (este) | 260.058.263.664 | no disponible | Sushi safetensors | MIT (sujeta a upstream) | Experimental, sin evaluación de calidad |
-| orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF (donante) | no disponible | no disponible | GGUF (Mix-256G) | no disponible | Fuente del que deriva este artefacto |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (oficial) | no disponible | no disponible | no disponible | no disponible | Checkpoint oficial de referencia |
+| DeepSeek-V4.1-Flash-1017-Orca-Sushi-STQ-1.75bpw | 260.058.263.664 | no disponible | MIT | Sushi safetensors | Conversión experimental con pérdida acumulada; calidad no establecida |
+| orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF | no disponible | no disponible | no disponible | GGUF (Mix-256G) | Donante directo del que deriva este artefacto |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | no disponible | no disponible | Checkpoint oficial upstream; fuente de config y tokenizer |
 
-No se dispone de datos de benchmarks ni de especificaciones completas de las alternativas en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
+No se dispone de datos de benchmarks ni de parámetros activos de los modelos comparables en la información proporcionada, por lo que no es posible una comparación de rendimiento cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Doble cuantización: el origen ya está cuantizado; la re-codificación añade pérdida y no puede recuperar información descartada en el GGUF donante.
-- La etiqueta "1.75bpw" solo aplica al payload de expertos enrutados; la media real de bits por peso del paquete es mayor y no se reporta.
-- Cuatro expertos (doce proyecciones) están marcados como no calibrados y usan un fallback de importancia identidad, no estadísticas medidas.
-- Las tablas Engram se requantizan con pérdida y no recuperan las tablas FP8 originales; los factores de compuerta son una representación derivada, no los originales.
-- El modelo es "abliterated" en su origen, lo que implica que se han eliminado mecanismos de rechazo; esto incrementa el riesgo de contenido inapropiado o dañino en producción.
-- Calidad no establecida: no hay evaluación completa ni pruebas de 1024 tokens publicadas; solo un smoke test técnico limitado en macOS.
-- Idiomas declarados únicamente inglés y ruso; el rendimiento en castellano no está verificado.
-- Licencia MIT sujeta a las condiciones del donante y del modelo upstream; es necesario incluir sus archivos de licencia y atribución en cualquier distribución.
-- Riesgo de alucinación y sesgos: no evaluados en la información disponible.
-- El artefacto publicado está en pack-order; el despliegue verificado requirió repack local a pair-major con validación inversa.
+- Pérdida de calidad acumulada: el donante ya estaba cuantizado y la recodificación introduce pérdida adicional; no se puede recuperar información perdida en el GGUF de origen.
+- Calidad no establecida: el autor declara explícitamente que la evaluación completa de calidad no está hecha y que los tests locales de código, paridad CPU/CUDA y pilotos de proyección no demuestran calidad de modelo completo.
+- Expertos no calibrados: cuatro expertos (L21/E207, L24/E350, L25/E85, L27/E260) usan un fallback de importancia identidad y están marcados como no calibrados, no como estadísticas medidas.
+- Tablas Engram con pérdida: la recuantización IQ4_NL a E4M3FN/E8M0 es lossy y no recupera las tablas FP8 originales.
+- Representación Engram derivada: los factores q/k se almacenan como producto F32 y unos, no como los factores originales; es una representación compatible, no una reconstrucción.
+- Sin paridad con el encoder privado de Sushi: el converter usa codebooks y empaquetado públicos con búsqueda en float32 y redondeo explícito de escalas F16; no reproduce la receta calibrada privada.
+- Calibración aproximada: usa importancia diagonal, no covarianza de activaciones completa; la tasa uniforme n28 no implica una asignación óptima medida.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; al derivar de un modelo abliterado, pueden aparecer respuestas sin rechazo en dominios sensibles.
+- Idiomas limitados: solo inglés y ruso según los metadatos; el rendimiento en castellano no está garantizado.
+- Licencia: MIT en los metadatos, pero sujeta a los términos del donante y del modelo upstream; verificar antes de uso comercial.
+- Formato y despliegue restringidos: requiere la librería Sushi; el candidato publicado está en pack-order y el despliegue verificado en Mac requirió repack local con validación inversa y evidencia SHA posterior.
+- Artefacto experimental: etiquetado como experimental y con una sola descarga relevante (384 descargas, 1 like) en el momento de la consulta; no apto para producción sin evaluación propia.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sanasol2008/DeepSeek-V4.1-Flash-1017-Orca-Sushi-STQ-1.75bpw
 - Donante GGUF: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF (revisión `83144a667924660c6ba0095585fd039d8daa9b91`)
-- Modelo oficial upstream: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 (revisión `08c8657f02291e11b6f6b63e0e16014f8e748518`)
+- Checkpoint oficial upstream: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 (revisión `08c8657f02291e11b6f6b63e0e16014f8e748518`)
 - Código y referencia de consumidor Sushi: `beamivalice/sushi` en `d5e876edcb1538a347041b1b7cc28a0e6e8f0af6`
 - Referencia de conversión GGUF y mapeo Engram: llama.cpp PR30817, head `b72050d03ae14bb3cb5138ecefab3f3f65157d31`

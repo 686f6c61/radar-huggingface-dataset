@@ -2,100 +2,104 @@
 
 ## Resumen
 
-Jeffan-9B-1211 es un modelo de investigación derivado de Qwen3.5-9B, desarrollado por el usuario tattrongvu, orientado a la toma de decisiones estructurada. A diferencia de los modelos generativos convencionales, Jeffan no produce texto: recibe un estado (un documento, una conversación, una lista de herramientas) junto con una o varias preguntas de opción múltiple y devuelve, en un único forward pass, una distribución de probabilidad sobre las opciones disponibles. El modelo está pensado para aplicaciones de clasificación y enrutamiento donde se necesita una decisión calibrada en lugar de una respuesta en lenguaje natural.
+Jeffan-9B-1211 es un modelo de investigación derivado de Qwen/Qwen3.5-9B (Apache 2.0) mediante ajuste fino, desarrollado por el usuario tattrongvu. No es un modelo generativo al uso: su propósito es responder preguntas de decisión estructuradas en formato de elección múltiple. Dado un estado (un documento, una conversación, una lista de herramientas) y una o varias preguntas con opciones etiquetadas (A, B, C...), el modelo devuelve una distribución de probabilidad sobre cada opción leída directamente de un único forward pass, sin generar texto.
 
-Técnicamente, Jeffan-9B-1211 parte de los pesos de Qwen3.5-9B (8.950 millones de parámetros en bf16) e introduce dos modificaciones principales: atención bidireccional en las capas de atención completa (manteniendo causales las capas de atención lineal Gated DeltaNet) y un bucle de capas en los bloques intermedios (4-7, 8-11, 12-15) que se ejecuta P veces por forward pass, con P configurable en inferencia y valor por defecto 2. El contexto admitido es de hasta 65.536 tokens con el motor de inferencia propio.
+El modelo conserva los 8.953.803.264 parámetros del Qwen3.5-9B base en bf16 y reutiliza su tokenizador y plantilla de chat. La innovación principal reside en dos modificaciones sobre la arquitectura original: atención bidireccional en las capas de atención completa (las capas de atención lineal Gated DeltaNet permanecen causales) y un bucle de capas repetido P veces por forward pass con actualización amortiguada (por defecto P=2). Soporta prompts de hasta 65.536 tokens con el motor de inferencia incluido.
 
-El modelo es relevante porque aborda un nicho poco cubierto: los modelos de lenguaje habituales no están optimizados para emitir probabilidades calibradas sobre opciones discretas en una sola pasada, y los clasificadores tradicionales no manejan estados largos y estructurados. Jeffan se publica bajo licencia Apache 2.0 y está integrado con el Decision Index kit, lo que facilita su evaluación reproducible.
+Es relevante ahora porque propone un paradigma distinto al de los LLM conversacionales: en lugar de generar razonamiento en texto, expone directamente la distribución de probabilidad del siguiente token sobre códigos de opción. Esto lo hace adecuado para sistemas de enrutamiento, clasificación y toma de decisiones automática donde se requiere una salida calibrada y determinista, no una respuesta en lenguaje natural.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (atención completa bidireccional + capas de atención lineal Gated DeltaNet causales), con bucle de capas |
-| Parametros totales | 8.953.803.264 (8,95B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | Hasta 65.536 tokens con el motor de inferencia propio |
-| Tipos de cuantizacion | No disponible (pesos publicados en bf16) |
+| Arquitectura | Transformer híbrido (atención completa bidireccional en capas full-attention + atención lineal causal Gated DeltaNet), con bucle de capas amortiguado |
+| Parámetros totales | 8.953.803.264 (8,95B) |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | Hasta 65.536 tokens de prompt con el motor de inferencia incluido |
+| Tipos de cuantización | No disponible (pesos publicados en bf16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bf16), con código remoto `modeling_jeffan.py` |
+| Formato de pesos | safetensors (bf16), con código remoto `modeling_jeffan.py` y paquete `jeffan_engine` |
+| Modelo base | Qwen/Qwen3.5-9B |
+| Pipeline declarado | text-classification |
+| Tamaño del repositorio | 17,9 GB |
+| Descargas | 352 |
+| Fecha de creación | 2026-11-09 |
 
 ## Arquitectura y entrenamiento
 
-Jeffan-9B-1211 reutiliza la arquitectura de Qwen3.5-9B, un transformer híbrido que combina capas de atención completa con capas de atención lineal basadas en Gated DeltaNet. Sobre esa base, el autor introduce dos cambios que alteran el comportamiento del modelo sin modificar los pesos: en primer lugar, las capas de atención completa pasan a usar una máscara bidireccional, de modo que cada token del prompt puede atender a cualquier otro token del prompt, mientras que las capas de atención lineal permanecen causales. En segundo lugar, los bloques de capas intermedias (4-7, 8-11 y 12-15) se ejecutan P veces por forward pass con una actualización amortiguada en fp32 (`x ← x + (block(x) − x) / P`), sin parámetros adicionales; P se fija en inferencia y vale 2 por defecto.
+El modelo parte de Qwen3.5-9B, un transformer híbrido que combina capas de atención completa con capas de atención lineal basadas en Gated DeltaNet. Sobre esa base, Jeffan introduce tres cambios. Primero, las capas de atención completa operan en modo bidireccional: cada token del prompt atiende a todos los demás, mientras que las capas Gated DeltaNet permanecen causales. Segundo, los bloques de capas intermedias (4-7, 8-11, 12-15) se ejecutan P veces por forward pass con una actualización amortiguada en fp32 (`x ← x + (block(x) − x) / P`), sin parámetros adicionales; P se fija en inferencia y vale 2 por defecto. Tercero, se añade una cabeza de lectura que interpreta la distribución del siguiente token sobre los códigos de opción.
 
-El modelo mantiene el tokenizador y la plantilla de chat del modelo base. La salida se obtiene leyendo la distribución del siguiente token sobre los códigos de opción (A, B, …) en un formato de prompt fijo con líneas `State:`, `Question:` y `Options:`. No se ha publicado información sobre el volumen o la composición del dataset de ajuste, ni sobre si hubo RLHF o DPO; la model card describe el modelo como "first release" de investigación.
+No se documentan en la información disponible los datos de entrenamiento (número de tokens, composición del dataset, si hubo RLHF/DPO o ajuste supervisado). La model card describe el modelo como "first release" de investigación y no detalla el proceso de ajuste fino más allá de la modificación arquitectónica. El código remoto `modeling_jeffan.py` (Apache 2.0) implementa la máscara bidireccional, el bucle de capas y la lectura; los pesos cargan sin cambios respecto a la estructura del modelo base.
 
 ## Capacidades
 
-- Clasificación y decisión estructurada: devuelve una probabilidad por opción (hasta 255 opciones distintas) a partir de un estado y una pregunta de opción múltiple, en un único forward pass.
-- Entrada de estado flexible: acepta texto o cualquier objeto serializable en JSON como estado.
-- Soporte de opciones ordenadas: el parámetro `ordered_levels=True` añade una línea para opciones que representan niveles ordenados (una puntuación).
-- Contexto largo: hasta 65.536 tokens de prompt con el motor de inferencia propio, sin truncamiento.
-- Enrutamiento y selección de herramientas: la model card menciona listas de herramientas como ejemplo de estado de entrada.
-- Configuración de coste/calidad en inferencia: el número de pasadas del bucle de capas (1, 2, 3 o 4) permite intercambiar latencia por precisión.
-- No genera texto: no es un modelo de chat ni de generación libre; su salida es exclusivamente una distribución de probabilidad sobre las opciones.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Respuesta a preguntas de decisión estructuradas en formato de elección múltiple: recibe estado, pregunta y hasta 255 opciones, y devuelve la probabilidad de cada opción en un solo forward pass.
+- Clasificación y enrutamiento: asignación de tickets, documentos o conversaciones a categorías predefinidas mediante probabilidades calibradas.
+- Soporte de estado en texto libre o cualquier objeto serializable a JSON.
+- Modo de niveles ordenados (`ordered_levels=True`) para opciones que representan una escala o puntuación.
+- Ajuste del número de pasadas del bucle de capas en inferencia (1, 2, 3 o 4) para intercambiar latencia por precisión.
+- Integración con el motor Decision Index (`jeffan_engine`) y con los endpoints de vLLM `/v1/systemone` y `/v1/decisions` mediante el plugin `jeffan_vdec`.
+- No genera texto: la salida es exclusivamente una distribución de probabilidad sobre los códigos de opción.
+- Capacidades multilingües: no documentadas de forma explícita; dependen del modelo base Qwen3.5-9B.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: dado el texto de una incidencia (por ejemplo, un pedido con la pantalla rota), el modelo devuelve la probabilidad de cada equipo o cola de destino en una sola pasada, como ilustra la model card con el ejemplo del ticket #1042 y las opciones Billing, Shipping damage claims y Technical support. Adecuado por su salida calibrada y su bajo coste por consulta.
-- Selección de herramientas en agentes: con una lista de herramientas disponibles como estado y una pregunta sobre cuál usar, Jeffan devuelve la probabilidad de cada herramienta, lo que permite implementar un paso de decisión determinista y auditable dentro de un pipeline de agentes.
-- Clasificación de documentos largos: gracias a los 65.536 tokens de contexto, puede clasificar contratos, informes o hilos de conversación completos sin truncar, algo que los clasificadores clásicos no permiten.
-- Triaje de conversaciones multi-turno: el estado puede ser un historial de conversación serializado en JSON; el modelo decide la siguiente acción o categoría con una distribución de probabilidad que permite fijar umbrales de confianza.
-- Evaluación comparativa de modelos de decisión: al estar integrado con el Decision Index kit, sirve como motor de referencia para medir y comparar el rendimiento de modelos en tareas de decisión estructurada sobre el conjunto público del kit.
-- Puntuación de opciones ordenadas: con `ordered_levels=True`, puede asignar una puntuación a niveles ordenados (por ejemplo, severidad o prioridad), útil en sistemas de priorización.
-- Despliegue de alta concurrencia: con vLLM y una sola pasada del bucle, la latencia mediana es de 29 ms por petición en una B300, lo que lo hace viable para servicios de clasificación en tiempo real.
+- Enrutamiento de tickets de soporte: dado el texto de una incidencia y una lista de equipos (facturación, daños en envío, soporte técnico), el modelo devuelve la probabilidad de cada equipo en una sola pasada. El ejemplo de la model card muestra 0,9620 para "Shipping damage claims" frente a 0,0107 y 0,0273 para las alternativas.
+- Clasificación de documentos en pipelines de ingestión: con contexto de hasta 65.536 tokens, puede procesar contratos, informes o hilos de conversación completos sin truncamiento y asignar una categoría con probabilidad asociada.
+- Selección de herramientas en agentes: dado el estado de la conversación y una lista de herramientas disponibles, el modelo puntúa cada herramienta como siguiente acción, lo que permite un enrutamiento determinista sin generación de texto intermedio.
+- Moderación y triaje de contenido: clasificación de mensajes en niveles ordenados (por ejemplo, gravedad de una incidencia) usando `ordered_levels=True` para obtener una puntuación ordinal.
+- Evaluación automática de respuestas: dado un enunciado y varias respuestas candidatas, el modelo asigna probabilidad a cada una para seleccionar la mejor sin necesidad de un juez generativo.
+- Sistemas de decisión en producción con requisitos de baja latencia: al no generar texto y leer la distribución en un único forward pass, la latencia es predecible y proporcional al número de pasadas del bucle (1 pasada ≈ 0,6× la latencia de 2; 3 pasadas ≈ 1,3×).
+- Investigación sobre modelos de decisión: la arquitectura con atención bidireccional y bucle de capas sirve como banco de pruebas para estudiar lectura directa de distribuciones frente a generación autoregresiva.
 
 ## Benchmarks y rendimiento
 
-La model card reporta resultados sobre el Decision Index kit (muestra fija del conjunto público de 4.150 peticiones, HLE excluido) y sobre un conjunto de latencia de 700 peticiones, medidos en una NVIDIA B300.
+La model card menciona resultados sobre una "kit sample" del Decision Index kit, pero no publica una tabla formal de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). Los únicos datos numéricos disponibles son:
 
-| Configuracion | Indice (kit) | Latencia mediana | Latencia media | p95 |
-|---|---|---|---|---|
-| 2 pasadas (por defecto) | 69,8 | 74 ms | 97 ms | 205 ms |
-| 3 pasadas | 70,0 | no disponible | no disponible | no disponible |
-| 1 pasada (vLLM) | 66,9 | 29 ms | 42 ms | 87 ms |
-| 1 pasada (transformers) | 66,9 | ~0,6x la de 2 pasadas | no disponible | no disponible |
+| Configuración | Puntuación en kit sample | Latencia relativa |
+|---|---|---|
+| 1 pasada de bucle | 66,9 | ≈ 0,6× |
+| 2 pasadas (por defecto) | 69,8 | 1,0× |
+| 3 pasadas | 70,0 | ≈ 1,3× |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los valores de latencia corresponden a una única GPU B300 y no deben extrapolarse sin medición propia.
+No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 18 GB solo para pesos (8,95B parámetros × 2 bytes), más memoria para el contexto; con 65.536 tokens de contexto el consumo crece de forma notable, por lo que se recomienda al menos 24-40 GB según la longitud de prompt.
-- GPU recomendadas: NVIDIA B300 (verificada por el autor), A100 40/80 GB, H100, y GPUs de consumo de gama alta con 24 GB o más (RTX 4090, RTX 3090) para prompts cortos y una sola pasada.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 con prompts moderados en bf16; para contextos largos conviene cuantización, aunque no se documentan formatos GGUF oficiales.
-- Opciones de despliegue: transformers con `trust_remote_code=True` (código remoto `modeling_jeffan.py`), el paquete `jeffan_engine` incluido en `inference/`, el pipeline del Decision Index kit, y vLLM (limitado a 1 pasada del bucle de capas).
-- Latencia y throughput: en una B300, 29 ms de mediana y 87 ms de p95 por petición con vLLM a 1 pasada; 74 ms de mediana y 205 ms de p95 con 2 pasadas en el motor propio.
-- Dependencias verificadas: PyTorch 2.14.1, transformers 5.17.0, flash-linear-attention 0.5.2 y causal-conv1d 1.7.0 (opcional).
+- VRAM estimada para inferencia en bf16: aproximadamente 18 GB solo para pesos (8,95B × 2 bytes), más overhead de activaciones y caché KV para contextos largos; se recomienda al menos 24 GB para prompts moderados y 40-80 GB para contextos cercanos a 65.536 tokens.
+- GPU recomendadas: NVIDIA B300 (verificado por el autor con bf16, transformers 5.17.0 y PyTorch 2.14.1), A100 40/80 GB, H100, y GPUs consumer de gama alta con 24 GB o más (RTX 3090, RTX 4090) para contextos cortos.
+- No se documentan cuantizaciones, por lo que no hay una ruta oficial para reducir los requisitos por debajo de bf16.
+- Opciones de despliegue: transformers con `trust_remote_code=True`; paquete `jeffan_engine` (Apache 2.0) sobre transformers; servidor vLLM con el plugin `jeffan_vdec` para los endpoints `/v1/systemone` y `/v1/decisions`; pipeline del Decision Index kit.
+- Dependencias verificadas: transformers 5.17.0, PyTorch 2.14.1, flash-linear-attention 0.5.2, causal-conv1d 1.7.0 (opcional).
+- Latencia y throughput: no se publican cifras absolutas; solo ratios relativos entre configuraciones de bucle de capas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeffan-9B-1211 | 8,95B | 65.536 tokens | Decisión estructurada con probabilidades por opción | Apache 2.0 | Hugging Face, código remoto e `inference/` |
-| Qwen3.5-9B (base) | 9B (aprox.) | No disponible en la información | Generación de texto causal | Apache 2.0 | Hugging Face |
-| Clasificadores tipo BERT | Típicamente 0,1-0,3B | 512 tokens típicos | Clasificación supervisada de etiquetas fijas | Variable | Hugging Face |
+| Jeffan-9B-1211 | 8,95B | 65.536 tokens | Distribución sobre opciones (sin generación) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 9B aprox. | No disponible en la información | Generación de texto | Apache 2.0 | Hugging Face |
+| Modelos de clasificación tipo encoder (p. ej., DeBERTa) | Variable (0,1-1,5B típico) | Típicamente 512-4.096 tokens | Logits de clasificación | Variable | Hugging Face |
 
-La comparación con el modelo base es la más directa: Jeffan reutiliza sus pesos pero cambia la máscara de atención y añade el bucle de capas, de modo que no es equivalente a Qwen3.5-9B en modo generativo. Frente a clasificadores BERT, Jeffan ofrece contexto mucho mayor y opciones definidas en tiempo de inferencia, a cambio de un coste computacional muy superior. No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
+La comparación con modelos de clasificación tradicionales es limitada: Jeffan opera sobre contextos mucho mayores y con opciones dinámicas en el prompt, mientras que un encoder de clasificación requiere cabezas fijas por tarea. No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación en primera versión: el autor lo etiqueta como "first release" y no documenta un proceso de validación más allá del kit de evaluación.
-- No genera texto: cualquier uso que requiera respuestas en lenguaje natural queda fuera de su alcance.
-- Formato de prompt rígido: los resultados dependen del formato exacto (línea de sistema fija, `State:`, `Question:`, `Options:`); otros formatos pueden degradar las probabilidades.
-- Dependencia de código remoto: la máscara bidireccional y el bucle de capas se implementan en `modeling_jeffan.py`; ejecutar los pesos con la máscara causal estándar produce un modelo distinto.
-- vLLM no aplica el bucle de capas: sirve 1 pasada, lo que reduce el índice de 69,8 a 66,9 en el kit; para el comportamiento por defecto hay que usar transformers o el motor propio.
-- Idiomas soportados no documentados: no hay información sobre cobertura multilingüe ni sobre sesgos lingüísticos.
-- Riesgo de calibración: las probabilidades de salida no están validadas fuera del kit; conviene calibrar y fijar umbrales con datos propios antes de usarlas en producción.
-- Sesgos y alucinación: al no generar texto, el riesgo de alucinación textual es bajo, pero persisten los sesgos heredados de Qwen3.5-9B en la representación del estado.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base y las dependencias (flash-linear-attention, causal-conv1d) deben verificarse por separado.
-- Memoria: el contexto de 65.536 tokens exige VRAM considerable; no se documentan cuantizaciones oficiales para reducirla.
+- El modelo no genera texto: cualquier uso que requiera una respuesta en lenguaje natural queda fuera de su diseño.
+- Los resultados dependen del formato de prompt propio del modelo (línea de sistema fija, `State:`, `Question:`, `Options:` con códigos A, B...); otros formatos pueden producir resultados distintos.
+- La atención bidireccional solo se aplica con el código remoto o el paquete `jeffan_engine`; usar la máscara causal estándar de transformers da lugar a un modelo diferente.
+- No se documentan sesgos conocidos, composición del dataset de ajuste ni evaluaciones de alucinación; al no generar texto, el riesgo de alucinación se traslada a la calibración de las probabilidades sobre opciones.
+- Idiomas soportados no documentados; el comportamiento multilingüe depende del modelo base y no ha sido evaluado de forma explícita.
+- No hay cuantizaciones publicadas, lo que limita el despliegue en hardware con menos de 24 GB de VRAM.
+- Es una primera release de investigación ("first release"), sin historial de versiones ni validación externa más allá de la verificación del autor en una NVIDIA B300.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-9B también es Apache 2.0; conviene revisar los términos del modelo base para producción.
+- El rendimiento en la kit sample (66,9-70,0) no es directamente comparable con benchmarks estándar y no debe extrapolarse a otras tareas sin evaluación propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tattrongvu/Jeffan-9B-1211
-- Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
-- Decision Index kit: https://github.com/apolinario/decision-index
-- Documentación del motor de inferencia: `inference/README.md` dentro del repositorio del modelo
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
+- Repositorio Decision Index: https://github.com/apolinario/decision-index
+- Paquete de inferencia: `inference/README.md` dentro del repositorio del modelo
+- Plugin vLLM: `inference/vllm_decisions/` dentro del repositorio del modelo

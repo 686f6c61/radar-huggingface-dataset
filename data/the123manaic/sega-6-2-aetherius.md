@@ -2,84 +2,85 @@
 
 ## Resumen
 
-Sega-6.2-Aetherius es un modelo de generacion de texto publicado en Hugging Face por el usuario the123manaic bajo la etiqueta comercial "Segacopter Technology", identificado como la generacion 6.2 de la familia `sega-6.2`. La model card declara una arquitectura propietaria denominada `SegaForCausalLM` con un esquema Mixture-of-Experts de 480.000 millones de parametros totales y 48.000 millones activos, ademas de un mecanismo de verificacion basado en Tree-of-Thought con 16 pasadas y 160 ramas especulativas.
+Sega-6.2-Aetherius es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo el identificador `the123manaic/Sega-6.2-Aetherius`. La model card lo presenta como un lanzamiento de "Segacopter Technology" de generación 6.2, con una arquitectura denominada `SegaForCausalLM` y una supuesta configuración de mezcla de expertos (MoE) de 480B parámetros totales con 48B activos. Se distribuye con licencia Apache 2.0 y pesos en formato safetensors, y la librería declarada es transformers.
 
-Sin embargo, los datos objetivos disponibles en el repositorio contradicen frontalmente estas cifras: el recuento real de parametros en los ficheros safetensors es de 1.792, un valor compatible con un modelo de juguete o una publicacion de prueba, no con un MoE de 480B. El repositorio no registra descargas ni likes, no declara idiomas soportados y no incluye resultados verificables de benchmarks. Esta ficha recoge ambos conjuntos de datos de forma explicita y advierte al lector sobre la discrepancia.
+Sin embargo, existe una discrepancia crítica entre la documentación y los metadatos reales del repositorio: el recuento de parámetros en safetensors que reporta Hugging Face es de 1792 parámetros totales, no 480B. Esta cifra es incompatible con cualquier modelo funcional de generación de texto y sugiere que el repositorio contiene pesos de prueba, un esqueleto de modelo o una publicación incompleta. Las métricas de rendimiento de la model card (296 tokens/s, "Epistemic IQ" del 99,94%, "Tree-of-Thought Verification" con 16 pasadas y 160 ramas especulativas) no son verificables ni se corresponden con ningún benchmark estándar reconocido.
 
-El interes del modelo, por tanto, no reside en su rendimiento real (no demostrado) sino como caso de estudio de model cards con metricas no auditables y de la importancia de verificar los ficheros de pesos antes de evaluar cualquier publicacion.
+Por tanto, el modelo debe evaluarse con extrema cautela: la información disponible es escasa, internamente contradictoria y no permite confirmar que exista un modelo entrenado y funcional. Esta ficha documenta lo declarado por el autor y señala explícitamente qué datos no son fiables o no están disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `SegaForCausalLM` (declarada por el autor); no se especifica si es transformer, MoE hibrido u otra variante |
-| Parametros totales | 1.792 (recuento real en safetensors); 480.000 millones declarados en la model card |
-| Parametros activos | 48.000 millones declarados (MoE); no verificable |
+| Arquitectura | `SegaForCausalLM` (declarada; no disponible su definición técnica) |
+| Parametros totales | 1792 según safetensors del repositorio; la model card declara 480B (dato no verificado y contradictorio) |
+| Parametros activos | 48B según la model card (MoE); no verificado |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se distribuyen pesos safetensors sin variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (solo se distribuyen pesos safetensors) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
+| Libreria | transformers |
+| Pipeline | text-generation |
+| Descargas | 385 |
+| Likes | 0 |
+| Fecha de creacion | 2026-11-15 |
+| Ultima actualizacion | 2026-11-23 |
 
 ## Arquitectura y entrenamiento
 
-La model card describe `SegaForCausalLM` como una arquitectura MoE con 480.000 millones de parametros totales y 48.000 millones activos, acompanada de un esquema de razonamiento Tree-of-Thought con verificacion en 16 pasadas y 160 ramas especulativas. Se mencionan tambien metricas propietarias como "Token Efficiency 96,2%" y "Epistemic IQ 99,94%", sin definicion formal ni metodologia de medida publicada.
+La model card declara una arquitectura propietaria denominada `SegaForCausalLM`, con una configuración de mezcla de expertos de 480B parámetros totales y 48B activos. Menciona también mecanismos de "Tree-of-Thought Verification" con 16 pasadas y 160 ramas especulativas, así como una "Token Efficiency" del 96,2%. No se proporciona ninguna descripción técnica del transformer subyacente, del número de capas, de la dimensión de los expertos, del mecanismo de enrutamiento ni del esquema de atención.
 
-No se proporciona informacion sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO, RLHF constitutionnel) ni detalles sobre atencion (lineal, flash, sliding window). El recuento real de parametros en los tensores safetensors (1.792) es incompatible con la cifra declarada, lo que sugiere que el repositorio publicado no contiene los pesos descritos en la model card o que las cifras son ficticias. No hay paper, blog tecnico ni repositorio de codigo asociado que permita verificar el diseno.
+No hay información sobre el corpus de entrenamiento: ni número de tokens, ni composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documenta ningún proceso de evaluación reproducible. Dado que el recuento real de parámetros en safetensors es de 1792, no es posible confirmar que exista un entrenamiento sustancial detrás de esta publicación; los datos de arquitectura deben considerarse declaraciones del autor sin verificación independiente.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva mediante `AutoModelForCausalLM` de transformers, siempre que el fichero de pesos cargado corresponda al modelo declarado.
-- Razonamiento multi-paso declarado mediante Tree-of-Thought con verificacion especulativa (no verificable con los pesos publicados).
-- Etiquetas del repositorio que sugieren soporte de function calling y agentes (`endpoints_compatible`), sin documentacion adicional.
-- Capacidades multilingues: no documentadas; no se declara ningun idioma en la model card.
-- Vision, audio, thinking mode explicito o modos de razonamiento extendido: no disponibles en la informacion proporcionada.
+- Generación de texto autoregresiva, según el pipeline declarado (`text-generation`).
+- Razonamiento y "síntesis" según la model card, con métricas no verificables (296 tokens/s, "Epistemic IQ" del 99,94%).
+- "Tree-of-Thought Verification" con 16 pasadas y 160 ramas especulativas, según la documentación; sin detalles de implementación ni evidencia reproducible.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible más allá de la mención genérica a tree-of-thought.
+- Capacidades multilingües: no disponible (no se declaran idiomas).
+- Capacidades de visión, audio o modo "thinking": no disponible.
 
 ## Casos de uso
 
-- Evaluacion de model cards: usar el repositorio como ejemplo practico para formar a equipos en la verificacion de cifras declaradas frente al recuento real de parametros en safetensors antes de adoptar un modelo.
-- Pruebas de integracion con transformers: validar pipelines de carga (`AutoTokenizer` + `AutoModelForCausalLM`) en entornos de CI con modelos de bajo peso, dado que el repositorio ocupa muy poco espacio.
-- Docencia sobre licencias abiertas: analizar como una publicacion Apache 2.0 puede declarar metricas no auditables y que obligaciones persisten para el reutilizador.
-- Investigacion sobre reproducibilidad: comparar la model card con los tensores publicados para estudiar practicas de publicacion en Hugging Face.
-- Prototipado de interfaces de chat: usar el endpoint `text-generation` como marcador de posicion mientras se evalua un modelo real, gracias a la compatibilidad declarada con `endpoints_compatible`.
-- Auditoria de seguridad de supply chain de modelos: comprobar hashes, tamanos y nombres de tensores de repositorios con pocos metadatos antes de desplegarlos en produccion.
+Debido a que no se ha podido verificar que el repositorio contenga un modelo funcional (1792 parámetros reales frente a los 480B declarados), no es posible recomendar casos de uso en producción. A continuación se indican escenarios teóricos únicamente a modo de evaluación, condicionados a que el autor publique pesos y documentación verificables:
+
+- Evaluación experimental de arquitecturas MoE: si los pesos declarados existieran, el modelo podría emplearse para estudiar el comportamiento de un MoE de 480B con 48B activos en tareas de razonamiento; actualmente no es viable por la discrepancia de parámetros.
+- Investigación sobre decodificación especulativa: la mención a "Tree-of-Thought Verification" con ramas especulativas podría ser de interés para comparar estrategias de decodificación, pero no hay implementación publicada que lo permita.
+- Generación de texto en entornos de prueba: el pipeline `text-generation` permitiría, en teoría, integrarlo con la API de transformers; no obstante, el tamaño real de los pesos hace inviable generar texto con calidad.
+- Reproducción de métricas declaradas: un equipo de evaluación podría intentar replicar las cifras de la model card (296 tokens/s, 96,2% de eficiencia de tokens) para contrastarlas; no hay datos públicos para hacerlo.
+- Fine-tuning sobre dominio específico: solo tendría sentido con un checkpoint base funcional, que no está disponible.
+- Despliegue en producción: no recomendable en ningún escenario dado el estado del repositorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks verificables (MMLU, HumanEval, GSM8K, MATH, etc.) en la informacion disponible. Las unicas cifras presentadas por el autor son metricas propietarias sin metodologia publica:
-
-| Metrica declarada | Valor | Verificable |
-|---|---|---|
-| Velocidad de sintesis | 296 tokens/s | No |
-| Token Efficiency | 96,2% | No (sin definicion) |
-| Epistemic IQ | 99,94% | No (sin definicion) |
-| Pasadas Tree-of-Thought | 16 | No |
-| Ramas especulativas | 160 | No |
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye métricas propietarias no estándar ("Epistemic IQ" 99,94%, "Token Efficiency" 96,2%, 296 tokens/s) que no se corresponden con ningún benchmark reconocido (MMLU, HumanEval, GSM8K, etc.) y que no pueden verificarse ni compararse con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no estimable de forma fiable. Con los 1.792 parametros realmente presentes en safetensors, el modelo cabe en cualquier GPU consumer (menos de 1 MB en fp32); con los 480B declarados, requeriria infraestructura multi-GPU de clase H100/B200 con paralelismo tensorial, dato no confirmado.
-- GPU recomendadas: no disponibles para el escenario declarado; para el escenario real basta una CPU o cualquier GPU integrada.
-- Cabe en GPU consumer: si, en el escenario real (pesos minimos); no verificable en el escenario declarado.
-- Opciones de despliegue: transformers con `use_safetensors=True`; no se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no estan soportados de forma nativa; vLLM y TGI no han sido validados con esta arquitectura propietaria.
-- Latencia y throughput: los 296 tokens/s declarados no han sido reproducidos ni acompanados de hardware de referencia.
+- VRAM estimada para inferencia: no disponible de forma fiable. Si se tomaran al pie de la letra los 480B declarados en MoE con 48B activos, se requeriría un clúster multi-GPU (varias H100/A100 de 80 GB) incluso en cuantización agresiva; sin embargo, los pesos reales del repositorio (1792 parámetros) caben en cualquier dispositivo.
+- GPU recomendadas: no disponible; depende de si el modelo real existe y de su tamaño efectivo.
+- ¿Cabe en GPU de consumo? Con los pesos publicados, sí en cualquier GPU; con la configuración declarada, no.
+- Opciones de despliegue: transformers (librería declarada). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: la model card declara 296 tokens/s, cifra no verificable.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de modelos comparables de la misma familia "Segacopter" ni de datos verificables que permitan situar este modelo frente a alternativas MoE abiertas conocidas (por ejemplo, familias como Mixtral, Qwen-MoE o DeepSeek-MoE), ya que las cifras declaradas no son auditables y el repositorio real contiene 1.792 parametros.
+No es posible establecer una comparativa fiable porque no se ha confirmado que el modelo sea funcional y porque sus especificaciones declaradas no encajan con ningún modelo open source conocido de forma verificable. A modo de referencia de categoría (MoE de gran tamaño con licencia permisiva), podrían citarse alternativas consolidadas como Mixtral 8x7B o Qwen MoE, pero la comparación carece de sentido sin pesos verificables de Sega-6.2-Aetherius. Se indica, por tanto: no disponible.
 
 ## Limitaciones y advertencias
 
-- Discrepancia critica entre parametros declarados (480B) y parametros reales en safetensors (1.792): los pesos publicados no corresponden a la arquitectura descrita.
-- Metricas propietarias ("Epistemic IQ", "Token Efficiency") sin definicion, metodologia ni replicacion; no deben citarse como evidencia de rendimiento.
-- Ausencia total de datos de entrenamiento, alineacion y evaluacion estandar; riesgo alto de alucinacion si se usa en produccion.
-- Sin idiomas declarados: no se puede garantizar calidad multilingue ni en castellano.
-- Cero descargas y cero likes en el momento de la consulta: no hay comunidad que haya validado el modelo.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de pesos reales y de documentacion impide cualquier garantia tecnica o legal sobre el comportamiento del modelo.
-- No se distribuyen variantes cuantizadas; el despliegue en entornos con restricciones de memoria no esta documentado.
-- Arquitectura `SegaForCausalLM` no registrada en transformers upstream: la carga puede fallar sin codigo de modelado personalizado (`trust_remote_code`), que no se proporciona en el repositorio.
+- Discrepancia crítica: el repositorio reporta 1792 parámetros en safetensors frente a los 480B declarados en la model card; esto invalida cualquier expectativa de rendimiento.
+- Métricas no verificables: "Epistemic IQ", "Token Efficiency" y velocidad de 296 tokens/s no se corresponden con benchmarks estándar ni se acompañan de metodología.
+- Ausencia de información sobre datos de entrenamiento, evaluación y sesgos.
+- Idiomas soportados no declarados; riesgo de comportamiento impredecible en cualquier lengua.
+- Riesgo elevado de alucinación y de resultados sin sentido si se intenta usar como modelo de generación real.
+- Licencia Apache 2.0 permite uso comercial, pero la falta de un modelo funcional hace irrelevante esta permisividad en la práctica.
+- No apto para producción en ningún escenario hasta que el autor publique pesos, documentación técnica y evaluaciones reproducibles.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/the123manaic/Sega-6.2-Aetherius
-- No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados en la informacion disponible.
+- No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

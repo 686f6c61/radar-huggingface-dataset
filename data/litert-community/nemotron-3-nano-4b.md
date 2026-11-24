@@ -2,186 +2,122 @@
 
 ## Resumen
 
-Nemotron-3-Nano-4B es un modelo de lenguaje compacto de NVIDIA, diseñado para razonamiento y aplicaciones de IA agéntica en el borde (edge). Esta ficha describe la conversión realizada por la comunidad `litert-community` al formato **LiteRT-LM** (`.litertlm`), un runtime de Google para inferencia en dispositivo (on-device) con aceleración por GPU mediante WebGPU. Es, según los autores, la primera conversión de Nemotron-3-Nano a este formato.
+Nemotron-3-Nano-4B en formato LiteRT-LM es una conversión del modelo `nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16` realizada por la comunidad `litert-community`, empaquetada en el formato `.litertlm` para inferencia on-device con el runtime LiteRT-LM de Google. El modelo original lo desarrolla NVIDIA y es un modelo de razonamiento de 4.000 millones de parámetros construido sobre una arquitectura híbrida que combina capas Mamba2 de escaneo selectivo, capas MLP convencionales y un pequeño número de capas de atención con grouped-query attention.
 
-El modelo original combina una arquitectura híbrida de tres tipos de capas: 21 capas Mamba2 de selective-scan, 17 capas MLP y 4 capas de atención grouped-query attention (GQA), sumando 42 capas en total. Esta combinación permite mantener un estado de memoria casi constante con la longitud de contexto, ya que solo las 4 capas de atención mantienen caché KV (con un presupuesto de 4096 tokens), mientras que las capas Mamba2 usan estado de tamaño fijo. Es un modelo de razonamiento que genera un bloque ` thinking` antes de la respuesta final, siguiendo el formato ChatML.
+La relevancia de esta conversión concreta es que permite ejecutar un modelo de razonamiento con plantilla de chat ChatML y bloques `<think>` directamente en dispositivos de borde: teléfonos móviles, portátiles y estaciones de trabajo sin GPU dedicada de datacenter. El archivo publicado ocupa 4,13 GB en cuantización int8 y está pensado para el runtime LiteRT-LM (versión mínima 0.15), no para servidores de inferencia tradicionales como vLLM o TGI.
 
-La relevancia de esta conversión radica en que permite ejecutar un modelo de razonamiento de 4B parámetros en dispositivos con recursos limitados, con rendimiento medido en Apple M4 Max: 83 tokens/s de decodificación en GPU y 22,7 tokens/s en CPU. La licencia es la NVIDIA Nemotron Open Model License, con restricciones específicas para uso comercial.
-
-## Especificaciones técnicas
-
-| Parametro | Valor |
-|---|---|
-| Arquitectura | Híbrida Mamba2 (21 capas) + MLP (17 capas) + GQA (4 capas), 42 capas en total |
-| Parametros totales | 4,0 mil millones (4B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 4096 tokens (presupuesto KV en capas de atención) |
-| Tipos de cuantizacion | int8 dinámico en lineales y embedding; convoluciones y selective-scan en float32 |
-| Idiomas soportados | no disponible |
-| Licencia | nvidia-nemotron-open-model-license |
-| Formato de pesos | LiteRT-LM (`.litertlm`), safetensors en el repo original |
-
-## Arquitectura y entrenamiento
-
-El modelo base es `nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16`, desarrollado por NVIDIA. La arquitectura es un híbrido de tres tipos de capas: **Mamba2 selective-scan** (21 capas), **MLP puros** (17 capas) y **grouped-query attention** (4 capas). Esta combinación reduce el coste de memoria con la longitud de contexto, ya que solo las capas de atención mantienen KV cache (4096 tokens), las capas Mamba2 mantienen un estado de tamaño constante (conv + SSM) y las MLP no mantienen estado. El modelo usa embeddings no compartidos, vocab de 131.072, hidden de 3136, 40 query heads y 8 KV heads, con 96 heads Mamba de dimensión 80.
-
-El entrenamiento del modelo original no está detallado en la información proporcionada, pero se describe como un modelo de razonamiento con formato ChatML y generación de bloques ` thinking`. La conversión a LiteRT-LM se realizó con `litert-torch` y un parche para el caché híbrido, y el modelo convertido incluye el tokenizador y la plantilla de chat original. La cuantización int8 se aplica solo a lineales y embedding, manteniendo las convoluciones y el selective-scan en float32 para preservar la estabilidad numérica.
-
-## Capacidades
-
-- Generación de texto con formato de razonamiento: responde tras un bloque ` thinking` (modo razonamiento).
-- Razonamiento multi-step y agentic: diseñado para tareas de agente, con soporte de formato ChatML.
-- Generación de código: no se especifica en la información, pero se asume por la naturaleza del modelo base.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Tool calling / function calling: no se menciona explícitamente, pero la arquitectura de razonamiento sugiere soporte para flujos de agente.
-- Inferencia en dispositivo (on-device) con LiteRT-LM, compatible con CPU y GPU (WebGPU).
-
-## Casos de uso
-
-- **Asistentes de voz locales**: el modelo puede gestionar conversaciones multi-turno con bajo consumo de memoria, adecuado para dispositivos con recursos limitados.
-- **IA en juegos (NPCs)**: sirve para generar respuestas de personajes no jugables en tiempo real, con razonamiento integrado.
-- **Automatización de IoT**: puede procesar comandos y tomar decisiones en dispositivos de borde sin conexión a la nube.
-- **Generación de código en local**: con soporte de razonamiento, puede generar y explicar código en entornos sin GPU potente.
-- **Chatbots de atención al cliente**: con la ventana de 4096 tokens, puede manejar conversaciones de longitud media en dispositivos embebidos.
-- **Traducción y tareas factuales**: el modelo responde correctamente a preguntas de traducción y hechos en pruebas de verificación.
-
-## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Sin embargo, se midieron métricas de rendimiento de inferencia en la conversión LiteRT-LM (Apple M4 Max, litert-lm 0.16.0):
-
-| Backend | Prefill (256 tokens) | Decode | TTFT |
-|---|---|---|---|
-| GPU (WebGPU, `--cache no`) | 803 / 792 tok/s | 83,3 / 82,4 tok/s | 0,33 s |
-| CPU | 99,6 / 113,3 tok/s | 22,7 / 22,5 tok/s | 2,64 / 2,30 s |
-
-Se realizó una prueba de verificación de 8 preguntas: 7/8 correctas en CPU y 8/8 en GPU. Los resultados de CPU varían porque el host no estaba inactivo durante las pruebas.
-
-## Requisitos de hardware
-
-- **VRAM estimada**: el archivo `.litertlm` ocupa 4,13 GB; se requiere al menos 8 GB de memoria para cargar el modelo en GPU.
-- **GPU recomendadas**: Apple M4 Max (medido), GPUs compatibles con WebGPU en el runtime LiteRT-LM. Se espera que funcione en GPUs de NVIDIA con soporte WebGPU.
-- **Dispositivos móviles**: no se ha probado en teléfonos; un modelo similar (Nemotron-H-4B) no cabía en un teléfono Android de 8 GB, por lo que se espera que requiera dispositivos con más RAM.
-- **Opciones de despliegue**: LiteRT-LM runtime, con `litert-lm run` para CPU y GPU (WebGPU). No se menciona vLLM, llama.cpp u Ollama para esta conversión específica, pero el modelo original se puede servir con llama.cpp en Jetson (según el blog de NVIDIA).
-- **Latencia y throughput**: en GPU, prefill de 256 tokens a ~800 tok/s y decodificación a ~83 tok/s; en CPU, ~100 tok/s prefill y ~22,7 tok/s decode.
-
-## Comparativa con modelos similares
-
-| Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| **Nemotron-3-Nano-4B (LiteRT)** | Híbrida Mamba-Transformer | 4B | 4096 (KV) | NVIDIA Open Model | LiteRT-LM, Hugging Face |
-| **Nemotron-H-4B-Instruct-128K** | Híbrida Mamba-Transformer | 4B | 128K | NVIDIA Open Model | Hugging Face (no LiteRT) |
-| **Nemotron-3-Nano-4B (original)** | Híbrida Mamba-Transformer | 4B | no disponible | NVIDIA Open Model | Hugging Face, safetensors |
-
-La comparativa se basa en la información disponible; no se dispone de datos de rendimiento estándar para comparar.
-
-## Limitaciones y advertencias
-
-- **Sesgos y alucinación**: no se han evaluado sesgos específicos, pero como modelo de razonamiento puede generar respuestas con errores factuales si el contexto es insuficiente.
-- **Riesgo de alucinación**: en las pruebas de verificación, falla en un ítem de rima (responde "violetas son moradas" en lugar de "azul" en CPU).
-- **Limitaciones de contexto**: la ventana de 4096 tokens es corta para tareas de contexto largo; el modelo no está diseñado para documentos extensos.
-- **Limitaciones de idioma**: no se dispone de información sobre idiomas soportados; se asume que funciona principalmente en inglés.
-- **Restricciones de licencia**: la NVIDIA Nemotron Open Model License tiene términos específicos para uso comercial; revisar la licencia completa.
-- **Problemas de compatibilidad**: en GPU, el caché de gráficos compilados de LiteRT-LM produce errores de WebGPU; se requiere `--cache no` para funcionar correctamente.
-- **No probado en teléfonos**: el modelo no se ha medido en dispositivos móviles; se espera que no quepa en un teléfono de 8 GB RAM.
-
-## Enlaces
-
-- Modelo LiteRT-LM: https://huggingface.co/litert-community/Nemotron-3-Nano-4B
-- Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
-- Blog de NVIDIA sobre Nemotron 3 Nano: https://huggingface.co/blog/nvidia/nemotron-3-nano-4b
-- Página de investigación de NVIDIA Nemotron 3: https://research.nvidia.com/labs/nemotron/Nemotron-3/
-- GitHub de conversión (hf-to-litertlm): https://github.com/john-rocky/hf-to-litertlm
-- Guía de NVIDIA Jetson para Nemotron3 Nano: https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/nemotron3-nano-4b.md
-- Licencia NVIDIA Nemotron Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/## Resumen
-
-Nemotron-3-Nano-4B es un modelo de lenguaje pequeño de NVIDIA, diseñado para la familia Nemotron 3 con un enfoque en eficiencia y razonamiento para aplicaciones de IA agéntica en el borde. Esta ficha cubre la conversión realizada por la comunidad `litert-community` al formato **LiteRT-LM** (`.litertlm`), un runtime de Google para inferencia en dispositivo con aceleración WebGPU. Según los autores, es la primera conversión de Nemotron-3-Nano a este formato, pensada para ejecutarse en hardware con recursos limitados.
-
-El modelo original combina una arquitectura híbrida de tres tipos de capas: 21 capas Mamba2 de selective-scan, 17 capas MLP y 4 capas de atención grouped-query attention (GQA), sumando 42 capas en total. Esta hibridación permite que la memoria permanezca casi constante con la longitud de contexto, ya que solo las 4 capas de atención mantienen caché KV (con un presupuesto de 4096 tokens), mientras que las capas Mamba2 usan un estado de tamaño fijo y las MLP no mantienen estado. El modelo es de razonamiento: genera un bloque ` thinking` antes de la respuesta final, siguiendo el formato ChatML.
-
-La relevancia de esta conversión radica en que facilita el despliegue de un modelo de razonamiento de 4B en dispositivos de borde (edge) y en el navegador, con rendimiento medido en Apple M4 Max: 83,3 tokens/s de decodificación en GPU y 22,7 tokens/s en CPU. La licencia es la NVIDIA Nemotron Open Model License, con restricciones específicas para uso comercial.
+El modelo destaca por su perfil de memoria casi plano respecto a la longitud de contexto: solo 4 de las 42 capas mantienen caché KV, mientras que las 21 capas Mamba2 llevan estado convolucional y SSM de tamaño constante y las 17 capas MLP no llevan estado alguno. Esto lo hace especialmente adecuado para despliegues con recursos de memoria muy limitados.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-Transformer (21 capas Mamba2 + 17 MLP + 4 GQA), 42 capas |
-| Parametros totales | 4,0 mil millones (4B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 4096 tokens (presupuesto KV en capas de atención) |
-| Tipos de cuantizacion | int8 dinámico en lineales y embedding; convoluciones y selective-scan en float32 |
+| Arquitectura | Híbrida: 21 capas Mamba2 (selective scan) + 17 capas MLP + 4 capas de atención con GQA (42 capas totales) |
+| Parámetros totales | 4.000 millones (aproximado, según denominación del modelo) |
+| Parámetros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | presupuesto de 4.096 tokens para KV en esta exportación |
+| Tipos de cuantización | int8 dinámico en capas lineales y embeddings; convoluciones y scan en float; activaciones declaradas fp32 |
 | Idiomas soportados | no disponible |
 | Licencia | nvidia-nemotron-open-model-license |
-| Formato de pesos | LiteRT-LM (`.litertlm`) |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en BF16 safetensors |
+| Dimensión oculta | 3.136 |
+| Cabezas de atención | 40 query / 8 KV |
+| Cabezas Mamba2 | 96 cabezas × 80 dimensiones (estado 128, conv 4, 8 grupos) |
+| Vocabulario | 131.072 tokens, embeddings no atados |
+| Búferes de estado | 50 en total (42 Mamba + 8 KV) |
+| Tamaño del archivo | 4,13 GB (int8) |
+| Runtime requerido | litert-lm ≥ 0.15 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo original de NVIDIA es un híbrido de tres tipos de capas: 21 capas Mamba2 de selective-scan, 17 capas MLP y 4 capas de grouped-query attention, con un total de 42 capas. Esta combinación reduce la memoria de estado: las capas Mamba2 mantienen un estado de tamaño constante (conv + SSM), las capas MLP no mantienen estado y solo las 4 capas de atención mantienen KV cache, con un presupuesto de 4096 tokens. La geometría incluye un hidden size de 3136, 40 query heads y 8 KV heads, 96 heads Mamba2 de dimensión 80, un vocab de 131.072 tokens y embeddings no compartidos.
+La arquitectura es un transformer híbrido de tres tipos de capa. Las 21 capas Mamba2 implementan un escaneo selectivo con estado convolucional y SSM de tamaño constante, lo que evita el crecimiento cuadrático de la atención y mantiene el coste de memoria independiente de la longitud de secuencia. Las 17 capas MLP no mantienen estado alguno. Solo las 4 capas de atención con grouped-query attention (40 cabezas de consulta, 8 de clave-valor) conservan caché KV, con un presupuesto de 4.096 tokens en esta exportación. El resultado son 50 búferes de estado en total, de los cuales 42 son de Mamba y 8 de KV.
 
-El entrenamiento del modelo original no está detallado en la información proporcionada, pero se describe como un modelo de razonamiento con formato ChatML y generación de turnos ` thinking`. La conversión a LiteRT-LM se realizó con `litert-torch` y un parche de caché híbrido, y el archivo resultante incluye el tokenizador y la plantilla de chat original. La cuantización int8 se aplica solo a lineales y embedding, mientras que las convoluciones y el selective-scan se mantienen en float para preservar la estabilidad numérica del estado híbrido.
+El modelo es un modelo de razonamiento: utiliza turnos ChatML y produce bloques `<think>` antes de la respuesta final. La plantilla de chat embebida en el archivo `.litertlm` es byte a byte idéntica a la del repositorio fuente (10.504 bytes), aunque el `tokenizer_config.json` del repositorio original contiene una copia distinta de 10.497 bytes; la exportación embebe la que `AutoTokenizer` resuelve realmente. El tokenizador fuente declara `add_bos_token: False` y la plantilla nunca renderiza un BOS inicial, de modo que el token `<s>` que el paso de empaquetado añadiría se elimina y el flujo de tokens on-device coincide con el de entrenamiento. Los tokens de fin de turno son `<|im_end|>` (id 11) junto con el id 2 exportado.
+
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La exportación incluye siete firmas de prefill (1024, 256, 64, 16, 4, 1 y decode) para que el runtime seleccione fragmentos ajustados.
 
 ## Capacidades
 
-- Generación de texto con modo de razonamiento: responde tras un bloque ` thinking`.
-- Razonamiento multi-step y matemático: capaz de resolver problemas aritméticos y factuales en las pruebas de verificación.
-- Soporte de traducción: responde correctamente a preguntas de traducción.
-- Capacidades de agente: diseñado para aplicaciones de IA agencia en el borde (NPCs, asistentes de voz).
-- Formato de conversación ChatML con tokens de fin de turno `<|im_end|>`.
-- Inferencia en dispositivo con LiteRT-LM, con soporte para CPU y GPU (WebGPU).
+- Generación de texto con modo de razonamiento explícito mediante bloques `<think>` y turnos ChatML.
+- Razonamiento aritmético y factual: en la verificación de 8 preguntas del exportador acierta todos los ítems aritméticos, factuales y de traducción tanto en CPU como en GPU.
+- Traducción: los ítems de traducción de la verificación de sanidad se resuelven correctamente en ambos backends.
+- Finalización de texto y rimas: resuelve el ítem de rima en GPU; en CPU falla ese único ítem ("violets are purple" en lugar de "blue").
+- Conversación multi-turno mediante plantilla ChatML con tokens de fin de turno correctamente configurados.
+- Inferencia on-device en CPU y GPU (WebGPU) a través del runtime LiteRT-LM.
+- Soporte de tool calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el modo `<think>` habilita cadenas de razonamiento.
+- Capacidades multilingües: no disponibles; la verificación incluye ítems de traducción pero no se especifica el par de idiomas ni la cobertura.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- **Asistentes de voz locales**: el modelo puede gestionar conversaciones multi-turno con baja latencia en dispositivos de borde, gracias a su ventana de 4096 tokens y su bajo uso de memoria.
-- **NPCs en videojuegos**: puede generar respuestas de personajes no jugables con razonamiento integrado, adecuado para motores de juego en tiempo real.
-- **Automatización de IoT**: puede procesar comandos y tomar decisiones en dispositivos con recursos limitados, como sensores o hubs domésticos.
-- **Generación de código en herramientas de desarrollo**: aunque no se especifica, su capacidad de razonamiento puede usarse para tareas de autocompletado en IDEs ligeros.
-- **Chatbots de atención al cliente**: puede gestionar consultas multi-turno en plataformas de mensajería con baja latencia, sin depender de la nube.
-- **Educación y tutoría**: puede responder preguntas factuales y de razonamiento en dispositivos educativos de bajo coste.
+- Asistentes conversacionales en dispositivos móviles: el archivo int8 de 4,13 GB se ejecuta en la CPU de un Galaxy S26 con 52,9–64,0 tok/s de prefill y 11,85–12,87 tok/s de decode, con un pico de memoria de 4.726–4.884 MiB, lo que permite integrar un asistente con razonamiento local sin enviar datos a la nube.
+- Razonamiento privado en el borde: al ejecutarse íntegramente en el dispositivo, es adecuado para aplicaciones que procesan información sensible (notas médicas, datos financieros personales) y no pueden permitirse llamadas a una API externa.
+- Aplicaciones de escritorio con GPU integrada: en un Mac Studio M4 Max alcanza 803 tok/s de prefill y 83,3 tok/s de decode con TTFT de 331 ms en el backend GPU, suficiente para asistentes de escritura o chat en tiempo real dentro de una aplicación nativa.
+- Procesamiento por lotes de texto corto en portátiles: con contexto efectivo de 4.096 tokens y memoria casi plana, es viable clasificar, resumir o reescribir documentos cortos en local sin infraestructura de servidor.
+- Prototipado de modelos de razonamiento sin GPU de datacenter: permite validar flujos con bloques `<think>` y plantillas ChatML en hardware de consumo antes de migrar a un despliegue en servidor con el modelo base BF16.
+- Educación y demostraciones de arquitecturas híbridas Mamba2: al ser la primera conversión conocida de Nemotron-3-Nano a LiteRT, sirve para estudiar el comportamiento de un stack híbrido con estado constante en entornos con recursos limitados.
+- Traducción y corrección de texto offline: los ítems de traducción de la verificación de sanidad se resuelven correctamente, lo que respalda su uso en utilidades de traducción local sin conexión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El rendimiento medido es de inferencia en el archivo LiteRT-LM con litert-lm 0.16.0 en Apple M4 Max:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos medidos son de rendimiento de inferencia y de una verificación de sanidad de 8 preguntas.
 
-| Backend | Prefill (256) | Decode | TTFT |
+Verificación de sanidad (8 preguntas, litert-lm 0.16.0, Apple M4 Max):
+
+| Backend | Aciertos | Observaciones |
+|---|---|---|
+| CPU | 7/8 | Falla el ítem de rima; responde "violets are purple" en lugar de "blue" |
+| GPU (`--cache no`) | 8/8 | Sin respuestas degeneradas |
+
+Rendimiento de inferencia (`litert-lm benchmark`, prefill 256, decode 256, 3 ejecuciones, `--cache no`, litert-lm 0.16.0):
+
+| Backend | Prefill (tok/s) | Decode (tok/s) | TTFT |
 |---|---|---|---|
-| GPU (WebGPU, `--cache no`) | 803 / 792 tok/s | 83,3 / 82,4 tok/s | 0,33 s |
-| CPU | 99,6 / 113,3 tok/s | 22,7 / 22,5 tok/s | 2,64 / 2,30 s |
+| GPU, Mac Studio M4 Max | 803 / 792 | 83,3 / 82,4 | 0,33 s |
+| CPU, Mac Studio M4 Max | 99,6 / 113,3 | 22,7 / 22,5 | 2,64 / 2,30 s |
+| CPU, Galaxy S26 (SM-S942Q, Qualcomm SM8850, Adreno) | 52,9–64,0 | 11,85–12,87 | 4,06 s |
+| GPU, Galaxy S26 | no ejecutado (run_error) | no ejecutado | no ejecutado |
 
-Los valores por celda corresponden a dos ejecuciones independientes. La prueba de verificación de 8 preguntas obtuvo 7/8 en CPU y 8/8 en GPU, con un fallo en una pregunta de rima en CPU.
+Notas sobre las mediciones: las dos cifras de cada celda corresponden a dos ejecuciones independientes, no a un rango estimado. La repetición en GPU varía dentro de ~1,4 %; el prefill en CPU se dispersa ~13 % porque la máquina no estaba inactiva durante las pruebas. En el Galaxy S26 el backend GPU provoca un fallo (SIGSEGV, exit 139). El tiempo de inicialización del motor en el teléfono es de 9,0–11,5 s en dos ejecuciones en frío.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el archivo `.litertlm` ocupa 4,13 GB; se requiere al menos 8 GB de memoria para cargar el modelo en contexto.
-- **GPU recomendadas**: Apple M4 Max (medido), Apple silicon compatible con WebGPU; se espera que funcione en GPUs de Jetson Thor y GeForce RTX con soporte WebGPU.
-- **CPU**: funciona en CPU, con rendimiento de ~22,7 tok/s en Apple M4 Max.
-- **Opciones de despliegue**: LiteRT-LM (`litert-lm run`), con backends CPU y GPU (WebGPU). No se mencionan vLLM, llama.cpp u Ollama para esta versión.
-- **Latencia**: TTFT de 0,33 s en GPU y 2,64 s en CPU (para 256 tokens de prefill).
+- VRAM/almacenamiento: el archivo int8 ocupa 4,13 GB; en el Galaxy S26 el pico de memoria medido es de 4.726–4.884 MiB.
+- GPU recomendadas: Apple M4 Max (medido, 83,3 tok/s de decode); no hay datos publicados para A100, H100 o RTX 4090 con este formato.
+- GPU de consumo: no se han publicado mediciones en RTX 4090 ni en otras GPU de consumo; el runtime LiteRT-LM está orientado a GPU integradas y móviles mediante WebGPU.
+- Móvil: ejecutable en CPU en un Galaxy S26 (Qualcomm SM8850, Adreno); el backend GPU falla en ese dispositivo con SIGSEGV.
+- Opciones de despliegue: exclusivamente LiteRT-LM (versión ≥ 0.15). No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI con este archivo.
+- Latencia y throughput: TTFT de 0,33 s en GPU de M4 Max y 2,30–2,64 s en CPU de M4 Max; 4,06 s en CPU de Galaxy S26. Decode de 83,3 tok/s (GPU M4 Max), 22,5–22,7 tok/s (CPU M4 Max) y 11,85–12,87 tok/s (CPU Galaxy S26).
+- Limitación de tiempo: en litert-lm 0.18.x y 0.19.0, una llamada bloqueante `send_message` que siga generando tras 10 minutos falla con `DEADLINE_EXCEEDED` y puede provocar el fallo del proceso; para respuestas largas hay que reducir `max_output_tokens` o usar `send_message_async`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Parámetros | Contexto | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Nemotron-3-Nano-4B (LiteRT)** | Híbrida Mamba-Transformer | 4B | 4096 tokens | NVIDIA Open Model | LiteRT-LM |
-| **Nemotron-H-4B-Instruct-128K** | Híbrida Mamba-Transformer | 4B | 128K | NVIDIA Open Model | LiteRT-LM |
-| **Nemotron-3-Nano-4B (original)** | Híbrida Mamba-Transformer | 4B | no disponible | NVIDIA Open Model | Safetensors |
+| Nemotron-3-Nano-4B (LiteRT-LM, esta ficha) | ~4.000 M | 4.096 tokens (presupuesto KV) | `.litertlm` int8, 4,13 GB | nvidia-nemotron-open-model-license | Hugging Face, runtime LiteRT-LM |
+| nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 | ~4.000 M | no disponible | safetensors BF16 | nvidia-nemotron-open-model-license | Hugging Face |
+| Otros modelos de ~4.000 M en formato GGUF | no disponible | no disponible | GGUF | variable | no disponible |
 
-La comparativa con otros modelos de la misma categoría (4B, edge) no está disponible en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento cuantitativa.
 
 ## Limitaciones y advertencias
 
-- **Sesgos y alucinación**: no se han evaluado en profundidad; en las pruebas de verificación, el modelo falló en una pregunta de rima en CPU, lo que indica posibles errores en tareas creativas.
-- **Riesgo de alucinación**: como modelo de razonamiento, puede generar respuestas plausibles pero incorrectas en dominios no cubiertos por su entrenamiento.
-- **Contexto limitado**: la ventana de 4096 tokens es corta para tareas que requieren contexto largo; no apto para documentos extensos.
-- **Idiomas**: no se especifican idiomas soportados; se espera un rendimiento óptimo en inglés.
-- **Licencia**: la NVIDIA Nemotron Open Model License tiene restricciones de uso comercial; revisar los términos.
-- **Compatibilidad GPU**: en GPU con caché de gráficos compilados, el modelo falla con errores de WebGPU; se requiere `--cache no` para funcionar correctamente.
-- **No probado en teléfonos**: no se ha medido en dispositivos móviles; se espera que necesite más de 8 GB de RAM en Android, según experiencia con modelos similares.
+- La licencia `nvidia-nemotron-open-model-license` no es una licencia de código abierto estándar; es necesario revisar sus términos antes de cualquier uso comercial.
+- El backend GPU requiere `--cache no` en este archivo: con la caché de grafo compilado activada, `litert-lm run --backend gpu` falla con errores de validación WebGPU `Invalid BindGroup` y la verificación de 8 preguntas devuelve texto degenerado (0/8). La causa raíz no está aislada.
+- En el Galaxy S26 el backend GPU provoca un fallo del proceso (SIGSEGV, exit 139); solo el backend CPU es funcional en ese dispositivo.
+- El presupuesto de contexto KV es de 4.096 tokens, inferior al de muchos modelos de su tamaño; las tareas que requieran contextos largos no son adecuadas.
+- En la verificación de sanidad en CPU falla el ítem de rima (7/8), lo que sugiere posibles debilidades en tareas de completado creativo o poético.
+- No hay información sobre sesgos, composición del dataset de entrenamiento ni tasas de alucinación; se debe evaluar empíricamente antes de usar en producción.
+- Los idiomas soportados no están documentados; la cobertura multilingüe es incierta.
+- En litert-lm 0.18.x y 0.19.0 existe un tiempo límite fijo de 10 minutos en `send_message` bloqueante que puede dejar procesos colgados; usar la variante asíncrona en streaming.
+- Las mediciones de CPU en M4 Max se tomaron con la máquina no inactiva, por lo que deben interpretarse como orden de magnitud.
+- El formato `.litertlm` limita el despliegue al runtime LiteRT-LM; no hay soporte para los servidores de inferencia habituales.
 
 ## Enlaces
 
-- Modelo LiteRT-LM: https://huggingface.co/litert-community/Nemotron-3-Nano-4B
-- Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
-- Blog de NVIDIA sobre Nemotron 3 Nano: https://huggingface.co/blog/nvidia/nemotron-3-nano-4b
-- Licencia NVIDIA Nemotron Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
-- Repositorio de conversión (hf-to-litertlm): https://github.com/john-rocky/hf-to-litertlm
-- Guía de Jetson AI Lab para Nemotron 3 Nano: https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/nemotron3-nano-4b.md
-- Página de investigación de NVIDIA Nemotron 3: https://research.nvidia.com/labs/nemotron/Nemotron-3/
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Nemotron-3-Nano-4B
+- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
+- Ficha de compatibilidad en dispositivo (edge-compat): https://github.com/john-rocky/edge-compat/blob/main/cards/nemotron-3-nano-4b-int8/CARD.md

@@ -2,85 +2,84 @@
 
 ## Resumen
 
-`liftkkkk/ask-JensenHuang-1.7B-gguf` es un modelo de lenguaje publicado en Hugging Face por el usuario `liftkkkk` bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de aproximadamente 1.700 millones de parametros, distribuido en formato GGUF, y orientado a responder preguntas o emular el estilo de respuestas de Jensen Huang (consejero delegado de NVIDIA). No se dispone de informacion sobre el modelo base a partir del cual se ha derivado, ni sobre el proceso de ajuste fino empleado.
+ask-JensenHuang-1.7B-gguf es una adaptación por ajuste fino del modelo base LiquidAI/LFM3-1.7B-Preview, publicada por el usuario liftkkkk en Hugging Face. El modelo se ha entrenado para generar respuestas en formato de cita parafraseada ("quote generation") sobre el discurso y las ideas de Jensen Huang, con un modo de razonamiento explícito (`think`) que primero produce una cadena de razonamiento con referencias y después emite la conclusión. El entrenamiento combina continuación de preentrenamiento (CPT) sobre un corpus de discursos y un ajuste fino supervisado (SFT) orientado a conversación.
 
-La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas y sin ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se han publicado resultados de benchmarks ni documentacion adicional.
+El modelo se distribuye exclusivamente en formato GGUF para su uso con llama.cpp y entornos compatibles (Ollama, LM Studio), en tres cuantizaciones: bf16 sin pérdida, q8_0 y q4_k_m. Está pensado para despliegues ligeros en CPU o GPU de gama baja, con un tamaño de pesos que va de 1,10 GB a 3,47 GB según la cuantización.
 
-Por tanto, esta ficha se limita a reflejar los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluacion de calidad, comportamiento o idoneidad para produccion requeriria una validacion empirica por parte del usuario.
+Es relevante como ejemplo de especialización estrecha de un modelo pequeño (1,7B parámetros declarados en la model card, aunque los safetensors del modelo base registran 752 millones de parámetros reales) mediante CPT + SFT con datos muy acotados, y por su integración del formato de razonamiento `think` dentro de un GGUF con plantilla de chat embebida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, no confirmado por el autor) |
-| Parametros totales | aproximadamente 1.700 millones (inferido del nombre del repositorio, no confirmado) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | Transformer (familia LFM3 de LiquidAI); 24 capas, hidden size 2048 |
+| Parametros totales | 1,7B declarados en la model card; 752.393.024 en los safetensors del modelo base |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio se distribuye en formato GGUF, pero no se detallan los niveles de cuantizacion incluidos) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Tipos de cuantizacion | bf16 (sin pérdida), q8_0 (8-bit), q4_k_m (4-bit K-quants, grupos de 32) |
+| Idiomas soportados | chino (zh) e inglés (en) |
+| Licencia | other (derivada de la licencia de LFM3-1.7B; sujeta a las restricciones del modelo base) |
+| Formato de pesos | GGUF (llama.cpp); plantilla de chat embebida en el archivo |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El nombre del repositorio sugiere un modelo de aproximadamente 1.700 millones de parametros, tamano compatible con familias de transformers pequenos habituales en el ecosistema GGUF, pero el autor no confirma la arquitectura base ni si se trata de un ajuste fino (fine-tuning) de un modelo preexistente o de un entrenamiento propio.
+El modelo parte de LiquidAI/LFM3-1.7B-Preview, un transformer de 24 capas con dimensión oculta 2048. Sobre esa base se aplicó un proceso en dos fases: primero una continuación de preentrenamiento (CPT) con un corpus de discursos de Jensen Huang depurado, de 407.000 tokens, durante 3 épocas, con una pérdida de entrenamiento final de 2,878; después un ajuste fino supervisado (SFT) en modo "think" con 525 muestras conversacionales depuradas, también 3 épocas, con una pérdida de evaluación de 2,131.
 
-Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens, la composicion del corpus, si hubo fases de instruccion supervisada, RLHF o DPO, ni si se aplicaron tecnicas de alineacion. La ausencia de esta informacion impide evaluar la calidad, los sesgos o la robustez del modelo a partir de la documentacion.
+La innovación principal no está en la arquitectura, sino en el formato de salida: el modelo genera una cadena de razonamiento `think` con citas atribuidas antes de la respuesta final, y el estilo de cita es deliberadamente parafrástico (la model card indica 0/8 de fidelidad literal en las pruebas realizadas). No se documentan técnicas como decodificación especulativa, atención lineal ni RLHF/DPO; el entrenamiento se limita a CPT y SFT.
 
 ## Capacidades
 
-- Generacion de texto en formato conversacional o de respuesta a preguntas, segun se deduce del nombre del repositorio (`ask-...`), aunque no hay ejemplos ni especificaciones publicadas.
-- Emulacion del estilo de respuesta de Jensen Huang: el identificador del modelo sugiere un ajuste orientado a este proposito, sin confirmacion documental.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Generación de texto conversacional en chino e inglés.
+- Modo de razonamiento explícito (`think`): produce primero una cadena de razonamiento con citas y después la conclusión.
+- Generación de citas en estilo parafrástico sobre el discurso de Jensen Huang (no recuperación literal).
+- Conversación multi-turno mediante plantilla de chat embebida en el GGUF.
+- Compatible con tooling de llama.cpp, Ollama y LM Studio.
+- No se documentan capacidades de código, matemáticas avanzadas, visión, audio, tool calling ni uso como agente.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales tematicos: el modelo puede emplearse para experimentar con respuestas de estilo empresarial o tecnico inspiradas en la figura de Jensen Huang, en entornos de demo o pruebas de concepto, dado su reducido tamano.
-- Despliegue local en hardware modesto: al distribuirse en GGUF y contar con aproximadamente 1.700 millones de parametros, es viable ejecutarlo en equipos de consumo mediante llama.cpp u Ollama, lo que facilita pruebas sin infraestructura dedicada.
-- Educacion y experimentacion con ajuste fino: sirve como caso de estudio para analizar como un modelo pequeno puede especializarse en un dominio o personaje concreto mediante fine-tuning.
-- Generacion de contenido divulgativo sobre tecnologia y semiconductores: puede utilizarse como borrador inicial de textos de caracter tecnico, siempre con revision humana dada la falta de garantias de calidad documentadas.
-- Chatbots de demostracion en eventos o webs corporativas: su licencia Apache 2.0 permite integrarlo en demos publicas sin restricciones de uso comercial, aunque la ausencia de benchmarks obliga a validar su comportamiento antes de exponerlo.
-- Base para experimentos de evaluacion comparativa: util para investigadores que quieran medir el rendimiento de modelos pequenos especializados frente a modelos generalistas del mismo tamano.
+- Prototipos de asistentes temáticos: el modelo puede responder preguntas sobre la visión de Jensen Huang y la industria de la IA generando citas parafraseadas con razonamiento previo, útil para demos y contenido editorial.
+- Generación de material divulgativo: a partir de una pregunta, produce una respuesta con cadena de razonamiento y citas atribuidas, aprovechable como borrador para artículos o guiones.
+- Despliegue en CPU o hardware limitado: con la cuantización q4_k_m (1,10 GB) puede ejecutarse en portátiles sin GPU mediante llama.cpp, con un rendimiento medido de aproximadamente 22,6 tok/s en el entorno de validación del autor.
+- Experimentación con formatos de razonamiento: sirve como banco de pruebas para estudiar cómo se comporta una cadena `think` en un modelo de 1,7B tras un SFT muy acotado.
+- Fines educativos sobre ajuste fino: el repositorio documenta el pipeline CPT + SFT con métricas de pérdida, útil como caso de estudio de especialización de modelos pequeños.
+- Asistente conversacional bilingüe zh/en de nicho: para consultas sobre estrategia de IA y computación acelerada, siempre que se acepte la naturaleza parafrástica de las citas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas de entrenamiento (train loss 2,878 en CPT; eval loss 2,131 en SFT) y un throughput aproximado de 22,6 tok/s en llama.cpp b12503 sobre CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de aproximadamente 1.700 millones de parametros en GGUF, una cuantizacion de 4 bits requeriria del orden de 1-1,5 GB de memoria, y una de 8 bits en torno a 2 GB, si bien estas cifras no estan confirmadas por el autor.
-- GPU recomendadas: no disponibles. Por tamano, el modelo deberia ejecutarse sin problemas en GPUs de consumo como RTX 3060, RTX 4060 o superiores, asi como en Apple Silicon mediante Metal.
-- Compatibilidad con GPU de consumo: previsiblemente si, dado el reducido numero de parametros y el formato GGUF, aunque no hay confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF. No se documenta soporte para vLLM o TGI.
-- Latencia y throughput estimados: no disponibles.
+- VRAM/RAM estimada: bf16 ~3,47 GB; q8_0 ~1,85 GB; q4_k_m ~1,10 GB (tamaños de archivo; el consumo en ejecución añade la caché KV y el contexto).
+- GPU recomendadas: no se especifican; por tamaño, cualquier GPU con 4-8 GB de VRAM es suficiente (RTX 3060, RTX 4060, RTX 4090 sobrada).
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones; también en CPU.
+- Opciones de despliegue: llama.cpp (requiere build b12503 o posterior con soporte LFM3), Ollama, LM Studio y cualquier stack compatible con llama.cpp.
+- Latencia/throughput: ~22,6 tok/s medidos en CPU con llama.cpp b12503 según el autor; no hay datos de GPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo que permitan una comparativa rigurosa. A modo de contexto, se indican alternativas de tamano similar en el ecosistema abierto, sin que ello implique equivalencia de calidad:
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| ask-JensenHuang-1.7B-gguf | 1,7B declarados (752M en safetensors del base) | no disponible | GGUF | other (derivada de LFM3) | Especializado en citas parafrásticas con modo `think` |
+| LiquidAI/LFM3-1.7B-Preview | 1,7B | no disponible | safetensors | licencia LFM3 | Modelo base generalista, sin especialización |
+| Modelos generales de ~1-2B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) | 1-2B | 32K-128K según modelo | safetensors, GGUF | Apache 2.0 / Llama | Uso general, sin especialización temática; datos de benchmark no verificados en esta ficha |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| liftkkkk/ask-JensenHuang-1.7B-gguf | ~1,7B (inferido) | no disponible | Apache 2.0 | GGUF |
-| Qwen2.5-1.5B | 1,5B | 32K (version base) | Apache 2.0 | safetensors, GGUF |
-| Llama 3.2 1B | 1,2B | 128K | Llama 3.2 Community License | safetensors, GGUF |
-| SmolLM2-1.7B | 1,7B | 8K | Apache 2.0 | safetensors, GGUF |
-
-La comparacion se limita a parametros, contexto y licencia; no se dispone de datos de benchmarks del modelo analizado para contrastar rendimiento.
+La comparación con alternativas generales es orientativa: no se dispone de benchmarks del modelo evaluado que permitan una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card no describe arquitectura, datos de entrenamiento ni capacidades, lo que impide evaluar su calidad de forma previa.
-- Riesgo elevado de alucinacion: al no documentarse el proceso de alineacion ni el corpus de entrenamiento, no hay garantias sobre la fidelidad de las respuestas.
-- Sesgos desconocidos: la ausencia de informacion sobre los datos de entrenamiento impide identificar sesgos de genero, idioma, cultura o dominio.
-- Idiomas no especificados: no se confirma el soporte de castellano ni de otros idiomas distintos del que se haya usado en el ajuste.
-- Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran ventanas largas sin una validacion previa.
-- Repositorio sin traccion: cero descargas y cero interacciones en el momento de la consulta, lo que reduce la probabilidad de que existan reportes de la comunidad sobre su comportamiento.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el usuario asume toda la responsabilidad sobre el comportamiento del modelo y sobre posibles reclamaciones derivadas de su contenido.
-- No apto para produccion sin validacion: se recomienda realizar pruebas exhaustivas de calidad, seguridad y sesgos antes de cualquier despliegue real.
+- Las citas son parafrásticas, no literales: la model card reporta 0/8 de fidelidad textual, por lo que no debe usarse como fuente de citas exactas.
+- Riesgo de alucinación elevado en un modelo de este tamaño con un SFT de solo 525 muestras; las atribuciones pueden ser inexactas.
+- Solo soporta chino e inglés; no hay soporte documentado de otros idiomas.
+- Longitud de contexto no documentada.
+- Requiere llama.cpp b12503 o posterior; versiones antiguas rechazan cargar la arquitectura LFM3.
+- Licencia "other" derivada de LFM3: es necesario revisar los términos del modelo base antes de cualquier uso comercial.
+- Corpus de entrenamiento muy pequeño (407k tokens de CPT), lo que limita la cobertura temática y la robustez fuera del dominio de discursos de Jensen Huang.
+- Sin datos de benchmarks ni evaluaciones independientes; uso en producción no recomendado sin validación propia.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/liftkkkk/ask-JensenHuang-1.7B-gguf
+- Modelo en Hugging Face: https://huggingface.co/liftkkkk/ask-JensenHuang-1.7B-gguf
+- Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Preview
+- llama.cpp (requerido b12503+): https://github.com/ggml-org/llama.cpp

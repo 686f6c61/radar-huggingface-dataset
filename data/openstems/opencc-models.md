@@ -2,85 +2,92 @@
 
 ## Resumen
 
-OpenCC-Models es un repositorio de distribución de recursos de modelos publicado por OpenStems en Hugging Face, no un modelo entrenado. Según su propia model card, sirve como origen de artefactos para OpenCC, AutoSubs Ultra y Subtitle Edit Ultra, aplicaciones orientadas a reconocimiento automático del habla y traducción de subtítulos. El repositorio se declara independiente del repositorio de modelos OpenStems-Models.
+OpenCC-Models es un repositorio de distribución de recursos de modelos gestionado por OpenStems, concebido como infraestructura de descarga para las aplicaciones OpenCC, AutoSubs Ultra y Subtitle Edit Ultra. No se trata de un modelo entrenado por OpenStems, sino de un contenedor de artefactos convertidos o empaquetados a partir de modelos upstream públicos, orientados a reconocimiento automático de voz (ASR) y traducción. La model card insiste en que la conversión y el empaquetado no constituyen entrenamiento: cada artefacto conserva la identidad, el formato y la precisión del modelo original del que deriva.
 
-En el momento de la consulta, el autor indica explícitamente que el inventario de recursos y la publicación están en curso: la creación del repositorio no implica que los ficheros de modelo ni la integración de descarga pública estén listos. Por tanto, no debe tratarse como una fuente de descarga válida en producción.
+El repositorio se declara explícitamente independiente del repositorio de modelos OpenStems / StemDeck, y su estado de publicación es "en progreso": la mera existencia del repositorio no implica que los ficheros estén listos ni que la integración de descarga pública de las aplicaciones esté operativa. Los consumidores en producción deben usar exclusivamente un manifiesto de recursos publicado y anclado a una revisión, cuyas longitudes exactas de fichero y digests SHA-256 hayan sido verificados.
 
-La información disponible no describe arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento, ya que el contenido son artefactos convertidos o empaquetados de modelos upstream que conservan su identidad, formato y precisión originales. El tamaño del repositorio es de 1,2 GB y la licencia es por fichero, heredada del upstream correspondiente.
+El dato de parámetros disponible en safetensors (980.046.848) corresponde a uno de los artefactos alojados, no a un modelo único del repositorio, ya que el repo agrupa múltiples recursos heterogéneos (ONNX, safetensors y GGUF) con un tamaño total de 43,4 GB. La licencia es "other", con el identificador `per-file-upstream-licenses`, lo que significa que cada fichero queda sujeto a los términos de su modelo upstream de origen y ninguna licencia global del repositorio sustituye dichos términos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (repositorio de recursos; los artefactos conservan la arquitectura de su modelo upstream) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (los artefactos conservan la precision de origen) |
-| Idiomas soportados | no disponible |
-| Licencia | per-file-upstream-licenses (other; cada artefacto mantiene los terminos de su upstream) |
-| Formato de pesos | no disponible (se mencionan conversiones y empaquetados OpenCC, sin detallar safetensors, GGUF ni otros) |
+| Arquitectura | No disponible (repositorio de artefactos derivados de modelos upstream; la arquitectura depende de cada artefacto) |
+| Parametros totales | 980.046.848 (dato safetensors de uno de los artefactos; no representa el conjunto del repositorio) |
+| Parametros activos | No disponible (no se declara ningún artefacto MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible; la model card indica que los artefactos conservan la precisión original del modelo upstream y que etiquetas de cuantización similares no bastan para considerarlos equivalentes |
+| Idiomas soportados | No disponible |
+| Licencia | `other` (`per-file-upstream-licenses`); cada fichero se rige por la licencia de su modelo upstream |
+| Formato de pesos | ONNX, safetensors y GGUF |
+| Tamano del repositorio | 43,4 GB |
+| Tareas declaradas | `automatic-speech-recognition`, `translation` |
+| Pipeline en Hugging Face | `translation` |
 
 ## Arquitectura y entrenamiento
 
-No se trata de un modelo entrenado, sino de un repositorio de distribución de recursos. La model card afirma de forma explícita que la conversión y el empaquetado no constituyen entrenamiento de modelo. Cada artefacto publicado debe identificar su fuente upstream, la transformación aplicada y los términos de licencia aplicables; ninguna licencia a nivel de repositorio sustituye a las condiciones del upstream.
+No se dispone de información sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF o DPO. La model card es explícita en este punto: OpenCC-Models es un repositorio de distribución de recursos, y la conversión y el empaquetado de artefactos "no son entrenamiento de modelo". Por tanto, cualquier característica arquitectónica debe consultarse en el repositorio upstream del modelo original correspondiente a cada fichero.
 
-El autor establece requisitos de integridad para la publicación: las aplicaciones en producción solo deben usar un manifiesto de recursos publicado y fijado a una revisión concreta, con longitudes de fichero y digests SHA-256 verificados. Además, los orígenes en Hugging Face y ModelScope de un mismo artefacto lógico deben proporcionar bytes finales idénticos; nombres similares, familias de modelos o etiquetas de cuantización no se consideran suficientes para tratar dos ficheros como equivalentes. No se aportan datos sobre tokens de entrenamiento, composición del dataset ni técnicas de alineación como RLHF o DPO.
+La innovación técnica relevante aquí no es de modelado, sino de integridad y trazabilidad de artefactos: cada recurso publicado debe identificar su fuente upstream, la transformación aplicada, la precisión resultante y los términos upstream aplicables. Además, los orígenes en Hugging Face y ModelScope de un mismo artefacto lógico deben proporcionar bytes de fichero final idénticos; nombres similares, familias de modelos o etiquetas de cuantización no son suficientes para tratarlos como equivalentes ni como espejos válidos.
 
 ## Capacidades
 
-- Distribución de recursos de modelos para OpenCC, AutoSubs Ultra y Subtitle Edit Ultra.
-- Etiquetado orientado a reconocimiento automático del habla (automatic-speech-recognition) y traducción (translation).
-- Conversión y empaquetado de artefactos upstream preservando identidad de modelo, formato y precisión.
-- Verificación de integridad mediante longitudes de fichero y SHA-256 en el manifiesto de publicación.
-- Publicación espejo entre Hugging Face y ModelScope con bytes finales idénticos.
-- No se documentan capacidades de generación de texto, razonamiento, código, tool calling, agentes ni multimodalidad propias del repositorio.
+- Reconocimiento automático de voz (ASR), según la etiqueta `automatic-speech-recognition` declarada en el repositorio.
+- Traducción, según la etiqueta `translation` y el pipeline asignado en Hugging Face.
+- Distribución de artefactos en múltiples formatos: ONNX, safetensors y GGUF, lo que habilita despliegue tanto en runtimes de inferencia nativos como en entornos basados en llama.cpp.
+- Integración prevista con las aplicaciones OpenCC, AutoSubs Ultra y Subtitle Edit Ultra, orientadas a flujos de subtitulado.
+- Verificación de integridad mediante longitudes de fichero y digests SHA-256 en manifiestos anclados a revisión.
+- Generación de texto, razonamiento, código, matemáticas, visión, tool calling, function calling, agentes, modo thinking, audio nativo y capacidades multilingües: no disponibles como capacidades declaradas del repositorio.
 
 ## Casos de uso
 
-- Integración en OpenCC: consumir los artefactos publicados desde un manifiesto fijado a revisión para las funciones de conversión de la aplicación, una vez completada la publicación.
-- Subtitulado automático en AutoSubs Ultra: emplear los recursos de reconocimiento automático del habla para transcribir audio y generar subtítulos, verificando previamente el SHA-256 de cada fichero.
-- Traducción de subtítulos en Subtitle Edit Ultra: usar los artefactos de traducción distribuidos para convertir subtítulos entre idiomas dentro del flujo de la aplicación.
-- Pipeline de verificación de integridad: automatizar la comprobación de longitud y digest SHA-256 de cada artefacto contra el manifiesto antes de desplegarlo en producción.
-- Espejo multi-origen: descargar el mismo artefacto desde Hugging Face o ModelScope y validar que los bytes finales coinciden, como exige la política del repositorio.
-- Auditoría de licencias: rastrear para cada artefacto su fuente upstream, transformación y términos aplicables antes de su uso comercial.
-- No es adecuado como dependencia directa en producción mientras el inventario y la publicación sigan en curso.
+- Subtitulado automático de vídeo: las aplicaciones AutoSubs Ultra y Subtitle Edit Ultra consumen los artefactos ASR de este repositorio para transcribir audio y generar subtítulos, encajando el modelo en un pipeline de posproducción donde la reproducibilidad del recurso descargado es crítica.
+- Traducción de subtítulos entre idiomas: el pipeline `translation` asignado en Hugging Face permite usar los artefactos para convertir transcripciones en subtítulos traducidos, integrándose en el mismo flujo de las aplicaciones de subtitulado.
+- Distribución interna de modelos con integridad verificable: equipos que despliegan ASR o traducción en producción pueden consumir los recursos a través de un manifiesto anclado a revisión con SHA-256 verificado, evitando derivas silenciosas entre descargas.
+- Despliegue en entornos con restricciones de runtime: la disponibilidad de artefactos ONNX permite ejecutar los modelos en runtimes de inferencia ONNX, mientras que los artefactos GGUF habilitan despliegue en llama.cpp y entornos derivados para equipos sin GPUs de datacenter.
+- Espejo controlado entre Hugging Face y ModelScope: organizaciones que operan en regiones con acceso restringido a uno de los dos hubs pueden usar el par de orígenes siempre que los bytes finales sean idénticos, tal como exige la política del repositorio.
+- Auditoría de procedencia de modelos: el requisito de que cada artefacto declare fuente upstream, transformación, precisión y licencia aplicable lo convierte en un punto de control útil para equipos de compliance que necesitan trazar qué modelo exacto corre en producción.
+- Empaquetado de recursos para aplicaciones de escritorio: el repositorio sirve como backend de descarga para las tres aplicaciones citadas, centralizando la gestión de versiones de modelos ASR y de traducción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de WER, BLEU, MMLU, HumanEval, GSM8K ni ninguna otra evaluación, y al tratarse de un repositorio de artefactos derivados, cualquier métrica correspondería al modelo upstream de cada fichero, no a OpenCC-Models como entidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; depende del modelo upstream de cada artefacto.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible (no se especifican vLLM, llama.cpp, Ollama ni TGI).
-- Latencia y throughput: no disponible.
-- Almacenamiento: el repositorio ocupa 1,2 GB, aunque el tamaño final por artefacto no está detallado.
+- VRAM estimada para inferencia: no disponible. Depende del artefacto concreto; el dato de 980.046.848 parámetros en safetensors corresponde a un único fichero y no permite extrapolar requisitos para el conjunto de 43,4 GB.
+- GPU recomendadas: no disponible. La model card no especifica hardware objetivo.
+- Compatibilidad con GPU de consumo: no disponible como recomendación oficial; la presencia de artefactos GGUF y ONNX sugiere posibilidades de despliegue en entornos de consumo, pero el repositorio no publica requisitos verificados.
+- Opciones de despliegue: ONNX Runtime para los artefactos ONNX; llama.cpp y entornos compatibles GGUF para los artefactos GGUF; runtimes que carguen safetensors para los artefactos en ese formato. vLLM, TGI, Ollama y similares no se mencionan en la información disponible.
+- Latencia y throughput estimados: no disponible.
+
+Advertencia operativa: la model card indica que las aplicaciones en producción deben usar únicamente un manifiesto de recursos publicado y anclado a revisión, con longitudes y SHA-256 verificados. Un repositorio en estado "publicación en progreso" no debe tratarse como fuente de descarga lista para producción.
 
 ## Comparativa con modelos similares
 
-| Repositorio | Tipo | Tamano | Licencia | Estado |
-|---|---|---|---|---|
-| OpenStems/OpenCC-Models | Distribución de recursos (ASR y traducción) | 1,2 GB | Por fichero, según upstream | Publicación en curso |
-| OpenStems/OpenStems-Models | Repositorio de modelos del mismo autor | no disponible | no disponible | no disponible |
+No disponible. El repositorio no declara qué modelos upstream concretos aloja, y la model card advierte que nombres similares, familias de modelos o etiquetas de cuantización no son criterio suficiente para establecer equivalencia. Sin identificar los modelos de origen, no es posible construir una comparativa fiable de parámetros, contexto, rendimiento o licencia frente a alternativas ASR o de traducción.
 
-No se dispone de información sobre otros repositorios de distribución de recursos comparables ni sobre modelos concretos con los que contrastar parámetros, contexto o rendimiento.
+| Criterio | OpenCC-Models | Alternativas comparables |
+|---|---|---|
+| Naturaleza | Repositorio de distribución de artefactos derivados | No disponible |
+| Parametros | 980.046.848 (un artefacto safetensors) | No disponible |
+| Contexto | No disponible | No disponible |
+| Formatos | ONNX, safetensors, GGUF | No disponible |
+| Licencia | Por fichero, según upstream | No disponible |
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene un modelo entrenado; es un contenedor de artefactos de terceros, por lo que hereda los sesgos y limitaciones de cada modelo upstream.
-- Riesgo de alucinación: no evaluable a nivel de repositorio; depende del modelo upstream empleado en cada caso.
-- La publicación está incompleta: el autor advierte que un repositorio vacío o una dirección de ejemplo no deben tratarse como fuente de descarga válida.
-- La licencia es por fichero y no existe una licencia única del repositorio; el uso comercial exige revisar los términos de cada upstream.
-- Es obligatorio fijar revisión y verificar longitud y SHA-256 antes de usar cualquier artefacto en producción.
-- Los espejos en Hugging Face y ModelScope deben entregar bytes idénticos; artefactos con formato o precisión distintos no son intercambiables.
-- No se especifican idiomas soportados, lo que impide garantizar cobertura lingüística para los flujos de subtitulado y traducción.
-- El repositorio registra 0 descargas y 0 likes, sin evidencia de uso en producción.
+- Estado de publicación incompleto: la model card declara que el inventario y la publicación están en progreso y que crear el repositorio no implica que los ficheros ni la integración de descarga estén listos. Un repositorio vacío o con direcciones de ejemplo no debe usarse como fuente de descarga.
+- Licencia fragmentada: la licencia `other` con `per-file-upstream-licenses` implica que cada artefacto arrastra los términos de su modelo de origen. No existe una licencia global que autorice uso comercial del conjunto; cualquier uso comercial requiere revisar fichero por fichero.
+- Riesgo de confusión entre artefactos: la model card subraya que nombres similares, familias de modelos o etiquetas de cuantización no bastan para considerar dos ficheros equivalentes, lo que introduce riesgo operativo si se seleccionan recursos por nombre en lugar de por digest.
+- Requisito de integridad estricto: los consumidores deben verificar longitudes exactas y SHA-256 contra un manifiesto anclado a revisión; obviarlo invalida la garantía de reproducibilidad que el repositorio pretende oferecer.
+- Espejos HF/ModelScope: solo son válidos si los bytes finales son idénticos. Formatos o precisiones distintas no pueden actuar como espejos entre sí.
+- Idiomas soportados: no declarados, lo que impide garantizar cobertura lingüística para casos de traducción o ASR multilingüe.
+- Sesgos y alucinaciones: no disponible. Al no ser un modelo entrenado por OpenStems, cualquier evaluación de sesgo o tasa de alucinación corresponde al modelo upstream de cada artefacto.
+- Contexto: no disponible; no se puede planificar arquitectura de aplicaciones en función de una ventana de contexto documentada.
+- Trazabilidad obligatoria: cada artefacto publicado debe identificar fuente upstream, transformación y términos aplicables; la ausencia de estos metadatos en un fichero concreto es en sí misma una advertencia.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/OpenStems/OpenCC-Models
-- Repositorio de modelos del mismo autor: https://huggingface.co/OpenStems/OpenStems-Models
-- Árbol de ficheros de OpenStems-Models: https://huggingface.co/OpenStems/OpenStems-Models/tree/main
+- No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código, demos ni documentación adicional de OpenCC, AutoSubs Ultra o Subtitle Edit Ultra.

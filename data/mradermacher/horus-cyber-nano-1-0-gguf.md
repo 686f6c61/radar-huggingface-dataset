@@ -2,83 +2,102 @@
 
 ## Resumen
 
-Horus-Cyber-Nano-1.0 es un modelo de lenguaje especializado en ciberseguridad y código seguro, desarrollado por TokenAI. Se trata del primer modelo Mixture-of-Experts (MoE) de la compañía, con 15.960.110.208 parámetros totales (15,96 mil millones) según los datos de safetensors del modelo base. Esta versión publicada por mradermacher contiene los pesos en formato GGUF, cuantizados para su ejecución en CPU y GPU con llama.cpp y herramientas compatibles.
+Horus-Cyber-Nano-1.0 es un modelo de lenguaje especializado en ciberseguridad, desarrollado por tokenai (tokenaii) y publicado originalmente en Hugging Face bajo el identificador `tokenaii/Horus-Cyber-Nano-1.0`. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo declara una arquitectura de tipo Mixture of Experts (MoE) y capacidades multimodales, orientadas a tareas de red-team, análisis de terminal, uso de herramientas y generación de código.
 
-El modelo está diseñado para tareas como análisis de vulnerabilidades, red teaming, uso de terminal y tool calling, y además incorpora componentes multimodales (archivos mmproj) que sugieren capacidad de procesar entradas visuales, aunque esta característica no se detalla en la información disponible. Su licencia es tokenai-custom-license y el idioma soportado es el inglés.
+Con aproximadamente 15.960 millones de parámetros totales según los pesos en safetensors, el modelo se posiciona en la franja de los 16B, un tamaño que permite ejecución en GPUs de consumo con cuantizaciones agresivas. Su enfoque declarado es la ciberseguridad, lo que incluye escenarios de pentesting, análisis de vulnerabilidades y automatización de flujos de trabajo en terminal. La licencia es personalizada (`tokenai-custom-license`), lo que obliga a revisar los términos antes de cualquier uso comercial.
 
-La relevancia de Horus-Cyber-Nano-1.0 radica en que es un modelo open source orientado a un caso de uso comercial concreto: la ciberseguridad y el desarrollo de código seguro. TokenAI ha anunciado que una versión completa del modelo Horus Cyber se publicará en el futuro con el respaldo del Consejo Nacional de IA de Egipto, lo que posiciona este lanzamiento como una pieza clave para el ecosistema de IA especializada en seguridad.
+La relevancia actual del modelo radica en la creciente demanda de asistentes especializados en seguridad que puedan integrarse en pipelines de agentes con tool calling y contexto de terminal. No obstante, la información pública disponible es escasa: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks, lo que limita una evaluación rigurosa de su rendimiento real.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE); tipo de backbone no especificado |
-| Parámetros totales | 15.960.110.208 (15,96 mil millones) |
-| Parámetros activos | no disponible |
+| Arquitectura | Mixture of Experts (MoE) según tags del autor; detalles no disponibles |
+| Parametros totales | 15.960.110.208 (≈15,96B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj: Q8_0 y f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
 | Idiomas soportados | inglés (en) |
-| Licencia | tokenai-custom-license |
-| Formato de pesos | GGUF (el modelo base original usa safetensors) |
+| Licencia | tokenai-custom-license (other) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); safetensors en el modelo base |
+| Modelo base | tokenaii/Horus-Cyber-Nano-1.0 |
+| Tamano del repo | 116,4 GB |
+| Descargas | 398 |
+| Fecha de creacion | 2026-09-08 |
+| Ultima actualizacion | 2026-10-12 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de Horus-Cyber-Nano-1.0 se describe en las etiquetas del repositorio como un modelo Mixture-of-Experts (MoE), lo que implica que solo una parte de los parámetros se activa durante cada token de entrada. Sin embargo, no se especifica el número de expertos, el número de parámetros activos ni el mecanismo de enrutamiento. El modelo base está alojado en tokenaii/Horus-Cyber-Nano-1.0 y la versión GGUF ha sido generada por mradermacher.
+El autor declara una arquitectura de tipo Mixture of Experts (MoE) en los tags del modelo, aunque no se especifican el número de expertos, el número de parámetros activos por token ni la estrategia de enrutamiento. Tampoco se detalla si emplea atención lineal, decodificación especulativa u otras innovaciones. La presencia de archivos `mmproj` (multi-modal supplement) en las cuantizaciones confirma que el modelo incorpora un proyector multimodal, probablemente para entrada de imágenes, aunque no se especifica qué codificador visual utiliza.
 
-No se dispone de información sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Las etiquetas indican que el modelo está orientado a ciberseguridad, código, red teaming, terminal y tool use. La presencia de archivos mmproj en el repositorio GGUF indica que el modelo tiene un componente multimodal, probablemente para procesar imágenes, aunque no se detalla el tipo de visión ni el encoder utilizado.
+No hay información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste por instrucciones. Los tags indican especialización en ciberseguridad, código, red-team, terminal y tool-use, lo que sugiere un entrenamiento orientado a dominios técnicos, pero se trata de una inferencia a partir de metadatos y no de datos verificables. La cuantización realizada por mradermacher es estática (quantize_version 2, output_tensor_quantised 1, convert_type hf) y se ofrece además una variante con quants ponderados/imatrix en el repositorio `mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo es un LLM de 15,96 mil millones de parámetros capaz de procesar instrucciones en lenguaje natural.
-- Código y ciberseguridad: las etiquetas del repositorio indican especialización en código, análisis de vulnerabilidades y red teaming.
-- Tool calling / function calling: la etiqueta `tool-use` sugiere soporte para invocar herramientas externas, aunque no se aporta documentación técnica al respecto.
-- Uso de terminal: el modelo está etiquetado como `terminal`, lo que apunta a capacidades para interpretar y generar comandos, scripts y salidas de consola.
-- Multimodalidad: existen archivos `mmproj` en formato GGUF (Q8_0 y f16) que permiten cargar un componente multimodal, probablemente para visión, aunque no se especifica el tipo de entrada.
-- Idiomas: el único idioma declarado en los metadatos es el inglés.
-- No se mencionan capacidades de "thinking mode", audio ni soporte de agentes multi-paso de forma explícita.
+- Generación de texto conversacional en inglés, con formato compatible con endpoints y pipeline conversacional.
+- Especialización declarada en ciberseguridad: análisis de vulnerabilidades, red-team y tareas ofensivas/defensivas.
+- Generación y análisis de código, orientado a scripting y automatización técnica.
+- Soporte de tool calling / function calling, según los tags `tool-use` y `endpoints_compatible`.
+- Capacidad multimodal: los archivos `mmproj` indican entrada de imágenes además de texto.
+- Operación en terminal: el tag `terminal` sugiere entrenamiento o ajuste para comandos de shell y flujos de trabajo CLI.
+- Razonamiento multi-paso y uso como agente, implícito en la combinación de tool-use y terminal, aunque no se documenta explícitamente.
+- Capacidades multilingües limitadas al inglés según el campo `language`.
 
 ## Casos de uso
 
-- Auditoría de código en pipelines CI/CD: el modelo puede analizar fragmentos de código, identificar patrones inseguros y sugerir correcciones. Su especialización en ciberseguridad lo hace adecuado para integrarse en herramientas de análisis estático o como bot de revisión en repositorios.
-- Simulación de ataques ofensivos (red teaming): gracias a las etiquetas de `red-team` y `terminal`, puede generar payloads, plantear vectores de ataque y explicar técnicas de explotación, siempre dentro de entornos autorizados.
-- Asistente de terminal y administración de sistemas: puede interpretar comandos complejos, generar scripts de automatización y traducir salidas de consola a explicaciones en lenguaje natural, útil para equipos de operaciones de seguridad (SecOps).
-- Análisis de logs y detección de intrusiones: el modelo puede procesar registros de eventos, identificar anomalías y resumir patrones de actividad sospechosa, apoyando a analistas de SOC en la triage de alertas.
-- Integración en agentes de seguridad con tool calling: si se confirma el soporte de `tool-use`, puede actuar como núcleo de un agente que consulte SIEM, escáneres de vulnerabilidades o bases de datos de CVEs para responder preguntas de seguridad.
-- Documentación y formación en ciberseguridad: puede generar explicaciones didácticas, guías de hardening y material de formación para desarrolladores, aprovechando su conocimiento especializado en código seguro.
-- Análisis multimodal de capturas de pantalla: si el componente `mmproj` funciona como visión, podría analizar capturas de interfaces de seguridad, diagramas de red o imágenes de logs, aunque esta capacidad no está verificada en la información disponible.
+- Asistente de pentesting automatizado: el modelo puede generar y explicar comandos de terminal, encadenar herramientas de reconocimiento y sugerir siguientes pasos en un flujo de red-team, aprovechando su especialización declarada y el soporte de tool calling.
+- Análisis de código orientado a seguridad: revisión de scripts y fragmentos de código para detectar patrones inseguros, inyecciones o malas prácticas, integrable en pipelines de CI/CD mediante llamadas a la API compatible con endpoints.
+- Automatización de tareas de terminal: generación de comandos de shell y secuencias de administración de sistemas, con la ventaja de un modelo pequeño (≈16B) que puede ejecutarse localmente en estaciones de trabajo de seguridad.
+- Triaje de alertas y logs: procesamiento de salidas de herramientas de seguridad (nmap, grep, logs) para resumir hallazgos y proponer acciones, en un entorno aislado sin enviar datos a la nube.
+- Formación y concienciación en ciberseguridad: generación de escenarios de ataque simulados y explicaciones didácticas para laboratorios de entrenamiento, gracias a su orientación a red-team.
+- Asistente multimodal en entornos de seguridad: análisis de capturas de pantalla de terminales o paneles de administración mediante el proyector multimodal, útil para documentar incidentes.
+- Despliegue en entornos air-gapped: al ofrecerse en GGUF con cuantizaciones desde 6,7 GB, puede ejecutarse en máquinas sin conexión, requisito habitual en equipos de seguridad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El anuncio de TokenAI menciona "early benchmark highlights", pero no se aportan cifras concretas en los datos proporcionados. Por tanto, no es posible comparar el rendimiento del modelo con otras alternativas basándose en métricas publicadas.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Los archivos GGUF del repositorio tienen los siguientes tamaños: Q2_K 6,7 GB; Q3_K_S 7,7 GB; Q3_K_M 8,4 GB; Q3_K_L 8,7 GB; IQ4_XS 8,9 GB; Q4_K_S 9,8 GB; Q4_K_M 10,6 GB; Q5_K_S 11,4 GB; Q5_K_M 12,1 GB; Q6_K 14,4 GB; Q8_0 17,1 GB. Los archivos mmproj añaden 0,7 GB (Q8_0) o 1,0 GB (f16).
-- La VRAM necesaria para inferencia debe superar el tamaño del archivo GGUF en concepto de contexto y overhead. Como orientación: Q4_K_S (9,8 GB) puede ejecutarse en una GPU con 12 GB de VRAM, mientras que Q8_0 (17,1 GB) requiere al menos 20-24 GB.
-- GPU recomendadas: RTX 4090 (24 GB) es suficiente para las cuantizaciones hasta Q8_0; A100 40 GB o H100 80 GB son adecuadas para despliegues de producción con contexto amplio y múltiples peticiones concurrentes.
-- En GPU de consumo, las opciones más viables son RTX 3060 12 GB para Q4_K_S, RTX 4070 Ti Super 16 GB para Q5_K_M y RTX 4080/4090 para Q6_K o Q8_0.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier frontend compatible con GGUF. No se menciona compatibilidad explícita con vLLM o TGI en la información disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización GGUF):
+  - Q2_K: ~6,7 GB de pesos, ~8 GB de VRAM recomendados.
+  - Q4_K_M: ~10,6 GB de pesos, ~12 GB de VRAM recomendados.
+  - Q5_K_M: ~12,1 GB de pesos, ~14 GB de VRAM recomendados.
+  - Q6_K: ~14,4 GB de pesos, ~16 GB de VRAM recomendados.
+  - Q8_0: ~17,1 GB de pesos, ~20 GB de VRAM recomendados.
+  - Añadir ~0,7-1,0 GB si se usa el proyector multimodal (`mmproj`).
+- GPU recomendadas: RTX 4090 (24 GB) para Q6_K/Q8_0; RTX 4080/4070 Ti Super (16 GB) para Q5_K_M; RTX 4060 Ti 16 GB o RTX 4070 (12 GB) para Q4_K_M; A100/H100 para despliegues concurrentes con vLLM o TGI.
+- Cabe en GPU de consumo: sí, desde Q2_K en GPUs de 8 GB hasta Q8_0 en GPUs de 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui; para el modelo base en safetensors, vLLM o TGI (previa conversión).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (ciberseguridad y código seguro) en los datos proporcionados. No se han publicado benchmarks ni comparativas oficiales. Por tanto, no es posible establecer una comparación rigurosa con alternativas como Mixtral 8x7B, Mistral 7B u otros MoE sin datos verificados.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Horus-Cyber-Nano-1.0 | ≈15,96B (MoE) | no disponible | tokenai-custom-license | GGUF, safetensors | Especializado en ciberseguridad, multimodal |
+| Modelos generalistas de ~14-16B (p. ej. Qwen2.5-14B, Mistral-Nemo-12B) | 12-14B | 32K-128K | Apache 2.0 / otras | GGUF, safetensors | No especializados en seguridad; benchmarks públicos disponibles |
+| Modelos de seguridad de gran tamano (p. ej. variantes de 70B) | 70B+ | variable | variable | variable | Mayor calidad potencial pero requisitos de hardware muy superiores |
+
+No se dispone de datos de rendimiento del modelo que permitan una comparación cuantitativa con alternativas. La comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible; no hay información sobre sesgos.
-- Riesgo de alucinación: no se han publicado evaluaciones, por lo que no se puede cuantificar. Como todo LLM, puede generar contenido falso en contextos de seguridad.
-- Limitaciones de contexto o idioma: solo inglés declarado. La longitud de contexto no está disponible, lo que impide evaluar su rendimiento en conversaciones largas o análisis de código extenso.
-- Restricciones de licencia: la licencia tokenai-custom-license no es una licencia open source estándar. Debe revisarse el texto completo antes de usar el modelo en proyectos comerciales o redistribuirlo.
-- Cuantización por terceros: los pesos GGUF han sido generados por mradermacher, no por TokenAI. La cuantización puede introducir pérdida de calidad, especialmente en las versiones más agresivas como Q2_K o IQ4_XS.
-- Uso ofensivo: al estar etiquetado como red-team, el modelo puede generar contenido relacionado con ataques. Su uso debe limitarse a entornos autorizados y cumplir con la legislación aplicable.
-- Multimodalidad no verificada: los archivos mmproj existen, pero no se ha confirmado el tipo de entrada ni el rendimiento del componente multimodal.
+- Información pública muy escasa: no se documentan contexto, dataset, benchmarks ni parámetros activos, lo que impide validar las capacidades declaradas.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente crítico en ciberseguridad, donde una sugerencia incorrecta puede tener consecuencias operativas.
+- Sesgos desconocidos: al no publicarse la composición del dataset, no es posible evaluar sesgos lingüísticos, culturales o de dominio.
+- Limitación de idioma: solo inglés declarado; el rendimiento en castellano no está garantizado.
+- Licencia personalizada (`tokenai-custom-license`): es obligatorio revisar los términos antes de uso comercial; no es una licencia open source estándar.
+- Uso dual: la orientación a red-team implica riesgos de uso malicioso; debe desplegarse con controles y en entornos autorizados.
+- Modelo cuantizado: las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para producción.
+- Fecha de creación futura (2026) en los metadatos: conviene verificar la vigencia y procedencia de los datos antes de adoptarlo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-GGUF
 - Modelo base: https://huggingface.co/tokenaii/Horus-Cyber-Nano-1.0
-- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF
-- Página del modelo: https://hf.tst.eu/model#Horus-Cyber-Nano-1.0-GGUF
-- Artículo de TokenAI: https://tokenai.llc/news/announcements/horus-cyber-nano-first-look
-- Artículo de Middle East AI News: https://www.middleeastainews.com/p/tokenai-releases-horus-cyber-nano
+- Quants imatrix: https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Horus-Cyber-Nano-1.0-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

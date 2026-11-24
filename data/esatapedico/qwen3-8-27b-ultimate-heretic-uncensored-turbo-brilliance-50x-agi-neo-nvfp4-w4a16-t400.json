@@ -60,16 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x ...",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
-      "snippet": "ULTIMATE: This model combines the power of Fable Fusion 711 (2500 likes, 5 million + downloads), with the extraordinary power of Qwen 3.8 27B (fully Heretic'ed/uncensored) multiplied by the power of Turbo Brilliance 50X V2, AGI edition."
-    },
-    {
-      "title": "esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
-      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4",
-      "snippet": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4 ... Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

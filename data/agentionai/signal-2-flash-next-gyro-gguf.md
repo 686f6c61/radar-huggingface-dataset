@@ -2,116 +2,112 @@
 
 ## Resumen
 
-Signal-2-Flash-Next-Gyro-GGUF es una cuantización GGUF publicada por agentionai sobre un fine-tuning propio del modelo base Qwen/Qwen3.8-Flash-Next. El modelo está orientado a tareas de codificación agéntica (agentic coding) y a la eficiencia en el consumo de tokens: según la model card, mantiene una calidad cercana a la cuantización Q5 de 111 GB del mismo autor con aproximadamente la mitad del tamaño de archivo, generando alrededor de un 27 % menos de tokens de salida y un 25 % menos de tiempo de pared por sesión de agente. El pipeline declarado es image-text-to-text, por lo que el modelo base admite entrada de imagen y texto.
+Signal 2 Flash Next Gyro es un ajuste fino del modelo Qwen3.8-Flash-Next (125,7 mil millones de parametros totales) desarrollado por AgentionAI y distribuido en formato GGUF cuantizado. El modelo parte de la arquitectura Mixture-of-Experts de Qwen y ha sido entrenado sobre sesiones reales de codificacion agentica recogidas con Marshall, el agente de codigo de la propia compania, mediante un proceso de autodestilacion de sus propias sesiones exitosas y auditadas. El resultado se fusiona en los pesos, sin adaptadores externos, en un unico archivo GGUF.
 
-El fine-tuning se realizó mediante auto-destilación a partir de sesiones exitosas del propio modelo base en el entorno de evaluación agéntica Marshall del autor, y los pesos ajustados están fusionados en el archivo, sin adaptador separado. El repositorio contiene 125.743.653.760 parámetros (según safetensors del modelo base) y ocupa 90,3 GB, con la cuantización principal TQ1_0 de 59,5 GB como archivo recomendado.
+La propuesta de valor es la eficiencia en tokens: segun la model card, en modo de razonamiento `xhigh` empata en tareas superadas con Swift 1.5 IQ3_S (137 frente a 139 de 152 sesiones) consumiendo un 41 % menos de tokens de salida y ocupando aproximadamente la mitad de memoria de GPU (30,7 GB frente a 54,9 GB). En esfuerzo `medium` mantiene el mismo numero de tareas superadas que el Gyro-S sin ajustar (68 de 76) con un 27 % menos de tokens. El objetivo declarado es reducir la verbosidad y el tiempo de deliberacion en flujos de agente de codigo, no ampliar el conocimiento del modelo base.
 
-La relevancia actual del modelo radica en su enfoque en la eficiencia por byte y por token en cargas de trabajo agénticas, un aspecto poco cubierto por las cuantizaciones convencionales. No obstante, requiere un fork específico de llama.cpp (el fork de agentionai) para cargar el archivo TQ1_0, ya que el llama.cpp upstream todavía no lo soporta.
+Es relevante ahora porque demuestra una via practica para desplegar un modelo de 125B en una unica GPU de 32 GB mediante cuantizacion agresiva combinada con ajuste fino orientado a eficiencia, y porque publica comparativas abiertas contra otras cuantizaciones del mismo modelo base (Swift 1.5, ISTA-DASLab GSQ-RCO, AP-Q5_K_M).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen3.8-Flash-Next, transformer multimodal image-text-to-text) |
-| Parámetros totales | 125.743.653.760 |
-| Parámetros activos | no disponible |
-| Longitud de contexto | 64k tokens (probado con KV q8_0 en Strix Halo); 16-32k recomendado con MTP en GPUs de 32 GB |
-| Tipos de cuantización | TQ1_0 (archivo principal, 59,5 GB); otras cuantizaciones no detalladas |
+| Arquitectura | Transformer Mixture-of-Experts (modelo base Qwen3.8-Flash-Next) |
+| Parametros totales | 125.743.653.760 (125,7 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF cuantizado (variantes IQ3_S / Q5_K_M mencionadas en las comparativas; catalogo completo en el repositorio) |
 | Idiomas soportados | no disponible |
 | Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (libreria `gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-Flash-Next, un modelo multimodal de tipo image-text-to-text del que no se detallan en la información disponible la arquitectura interna (transformer, MoE o híbrida) ni la composición del dataset de preentrenamiento. El pipeline declarado y las etiquetas del repositorio confirman soporte de entrada de imagen y texto, y el tamaño de 125.743.653.760 parámetros corresponde al modelo base según los safetensors.
+El modelo hereda la arquitectura del Qwen3.8-Flash-Next: un transformer con capas Mixture-of-Experts de 125,7 B de parametros totales. No se detalla en la informacion disponible el numero de parametros activos por token, el numero de expertos, la longitud de contexto nativa ni el volumen de datos de preentrenamiento del modelo base. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo base es multimodal (entrada de imagen y texto), si bien las capacidades evaluadas en la model card se centran exclusivamente en codificacion agentica.
 
-El ajuste fino de Signal 2 se realizó por auto-destilación: el modelo aprendió únicamente de sesiones de codificación agéntica del modelo base que pasaron la puerta de evaluación Marshall y superaron una auditoría de seguridad, descartando las sesiones fallidas o con acciones que incumplían reglas. Los pesos del ajuste están fusionados en el archivo, sin adaptador en tiempo de ejecución, y el autor reporta una divergencia KL de 0,025 respecto al ajuste aplicado en runtime, equivalente a la variación entre dos ejecuciones del mismo ajuste con distinto tamaño de batch. La cuantización TQ1_0 emplea tensores fusionados ligeramente más grandes que la cuantización Gyro-S del modelo base, lo que explica una decodificación aproximadamente un 13 % más lenta por token.
+El ajuste fino de AgentionAI se realizo sobre sesiones reales de trabajo del agente Marshall, con autodestilacion a partir de las propias trazas exitosas y limpias de auditoria, y los pesos resultantes se fusionaron directamente en el modelo (no se distribuye adaptador LoRA). El entrenamiento no busca mejorar la tasa de acierto bruta sino reducir la narracion y la deliberacion redundante: el modelo lee, edita, ejecuta y verifica codigo igual que el base, pero deja de deliberar cuando el siguiente paso esta claro. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso en tareas agénticas de codificación.
-- Codificación asistida por agente: edición de código, ejecución de comandos en sandbox y resolución de tareas con suites de test.
-- Entrada multimodal image-text-to-text (heredada del modelo base Qwen3.8-Flash-Next).
-- Modo de razonamiento configurable mediante `reasoning_effort` (el autor usa "medium" en sus evaluaciones).
-- Decodificación especulativa con borrador MTP (multi-token prediction) opcional, que eleva el throughput en Strix Halo de 28,6 a 38,7 tok/s en prosa, 54,0 tok/s en código y 64,4 tok/s en JSON.
-- Eficiencia de tokens: media de 1.623 tokens de salida por sesión frente a 2.228 del modelo base sin ajustar, sin timeouts, errores, respuestas vacías ni fallos cortos en 152 sesiones.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generacion de texto y razonamiento con modos de esfuerzo configurables (`medium`, `xhigh`) mediante el parametro `reasoning_effort`.
+- Codificacion agentica: lectura, edicion, ejecucion y verificacion de codigo en bucles multi-paso.
+- Entrada multimodal imagen-texto a texto, heredada del modelo base.
+- Integracion como backend de agentes de codigo (validado con Marshall, el agente de AgentionAI).
+- Eficiencia de tokens: menor numero de tokens de salida por tarea completada frente al modelo base sin ajustar y frente a cuantizaciones publicas comparables.
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas del repositorio).
+- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-- Agentes de codificación autónomos en producción: el modelo está ajustado específicamente para sesiones agénticas con ejecución de comandos y validación por tests, con un 87,5 % de aprobados en la puerta Marshall y un 27 % menos de tokens por sesión, lo que reduce el coste por tarea en pipelines de CI/CD.
-- Automatización de revisión y parcheo de código en repositorios: la ventana de 64k tokens permite cargar varios archivos y el histórico de la sesión, y la decodificación con MTP acelera la generación de diffs y JSON estructurado (64,4 tok/s en JSON en Strix Halo).
-- Despliegue en estaciones de trabajo con GPU de 32 GB: la cuantización TQ1_0 de 59,5 GB cabe ajustadamente con 64k de contexto en tarjetas como RTX 5090 o R9700 sin el borrador MTP, lo que permite ejecutar agentes de código localmente sin infraestructura de servidor.
-- Despliegue en equipos con memoria unificada de 64 GB o más (Strix Halo, Mac): el autor reporta un uso de unos 30,5 GiB de memoria de GPU (34,2 GiB con MTP), lo que deja margen para contexto completo y otras aplicaciones.
-- Sustitución de cuantizaciones de 3 bits en servidores con presupuesto de VRAM limitado: el archivo de 59,5 GB iguala la calidad de cuantizaciones IQ3_S de 83-84 GB con aproximadamente un 30 % menos de tokens de salida y 24 GB menos de disco.
-- Tareas multimodales de documentación técnica: al heredar el pipeline image-text-to-text del modelo base, puede procesar capturas de pantalla, diagramas o documentación escaneada junto a instrucciones de código en una misma conversación.
-- Evaluación comparativa de eficiencia agéntica: sirve como referencia para medir coste por tarea (tokens y tiempo de pared) frente a cuantizaciones convencionales del mismo modelo base en entornos de investigación.
+- Agente de codigo autonomo en local: el modelo puede ejecutarse como backend de un agente tipo Marshall sobre una GPU de 32 GB, resolviendo tareas de lectura, edicion y verificacion de codigo con un consumo medio de 1.685 tokens de salida por sesion en esfuerzo `medium`.
+- Integracion en pipelines de CI/CD con revision automatica: dado su bajo consumo de tokens por tarea y la ausencia de timeouts o errores reportada en 152 sesiones, es adecuado para pasos automatizados de correccion y comprobacion de codigo donde el coste por ejecucion importa.
+- Asistencia en editores y entornos de desarrollo: el ajuste reduce la narracion superflua, lo que se traduce en respuestas mas directas y menor latencia percibida en flujos interactivos de programacion.
+- Despliegue en estaciones de trabajo con una sola GPU: al ocupar 30,7 GB en GPU (sin la tabla por capas de 28,8 GB, que puede permanecer en disco), permite servir un modelo de 125B en hardware de gama alta de consumo profesional sin recurrir a multiplos GPUs.
+- Procesamiento de capturas o diagramas junto a codigo: gracias al pipeline imagen-texto del modelo base, puede recibir imagenes (por ejemplo, capturas de error o diagramas) junto con instrucciones textuales en tareas de depuracion.
+- Evaluacion comparativa de cuantizaciones: sirve como referencia para medir el impacto de la cuantizacion y del ajuste fino en la eficiencia de tokens dentro de un mismo modelo base, con metodologia publicada (152 sesiones, 4 semillas, test de signos pareado).
+- Automatizacion de tareas de refactorizacion acotadas: en esfuerzo `medium` mantiene la tasa de exito del modelo sin ajustar con menos tokens, lo que abarata ejecuciones repetitivas sobre repositorios.
 
 ## Benchmarks y rendimiento
 
-Resultados de la puerta de evaluación agéntica Marshall del autor (tareas retenidas, tareas multi-paso más difíciles, pruebas de seguridad y tareas de código con suites de test; mismas semillas, agente, muestreo `reasoning_effort` medium y hardware AMD Strix Halo). "Clean" significa aprobado y sin acciones dañinas o contrarias a las reglas en la auditoría.
+Resultados publicados en la model card sobre la puerta de evaluacion de codificacion agentica de Marshall:
 
-Frente al modelo base (4 semillas, 152 sesiones cada una):
+| Modelo (xhigh) | Memoria en GPU | Superadas (de 152) | Tokens de salida medios / sesion |
+|---|---:|---:|---:|
+| Signal 2 | 30,7 GB | 137 | 2.373 |
+| Swift 1.5 IQ3_S (ukisai) | 54,9 GB | 139 | 4.013 |
 
-| Modelo | Archivo | Aprobados | Clean | Tokens de salida media (P50 / P90) | Tiempo de pared, 76 sesiones |
-|---|---:|---:|---:|---:|---:|
-| Signal 2 Gyro-S | 59,5 GB | 133 (87,5 %) | 121 | 1.623 (1.103 / 3.355) | 95 min |
-| Qwen3.8-Flash-Next Gyro-S | 58,5 GB | 135 (88,8 %) | 123 | 2.228 (1.390 / 4.691) | 111 min |
-| Qwen3.8-Flash-Next AP-Q5_K_M (agentionai) | 111,2 GB | 141 (92,8 %) | 124 | 2.154 (1.466 / 5.015) | 131 min |
+| Modelo (medium) | Memoria en GPU | Superadas (de 76) | Tokens de salida / sesion |
+|---|---:|---:|---:|
+| Signal 2 | 30,7 GB | 68 | 1.685 |
+| Qwen3.8-Flash-Next Gyro-S (sin ajustar) | 29,7 GB | 68 | 2.323 |
+| Swift 1.5 IQ3_S (ukisai) | 54,9 GB | 66 | 2.319 |
+| Swift 1.5 IQ3_S_G8 (ukisai) | 55,6 GB | 67 | 2.395 |
+| ISTA GSQ-RCO IQ3_S (ISTA-DASLab) | 54,8 GB | 66 | 2.547 |
+| AP-Q5_K_M (AgentionAI) | 82,4 GB | 69 | 2.221 |
 
-Frente a cuantizaciones rivales del mismo base (2 semillas, 76 sesiones cada una):
-
-| Modelo | Archivo | Aprobados | Clean | Tokens P50 / P90 | Tiempo de puerta |
-|---|---:|---:|---:|---:|---:|
-| Signal 2 Gyro-S | 59,5 GB | 68 | 63 | 1.092 / 3.721 | 108 min |
-| Qwen3.8-Flash-Next Gyro-S | 58,5 GB | 68 | 61 | 1.376 / 4.921 | 128 min |
-| Swift 1.5 IQ3_S (ukisai) | 83,7 GB | 66 | 58 | 1.416 / 4.309 | 149 min* |
-| Swift 1.5 IQ3_S_G8 (ukisai) | 84,4 GB | 67 | 58 | 1.673 / 4.963 | 165 min |
-| ISTA GSQ-RCO IQ3_S | 83,6 GB | 66 | 60 | no disponible | no disponible |
-
-El tiempo de pared corresponde a las semillas 3-4, las únicas que los tres primeros modelos ejecutaron en la misma máquina. El autor señala que AP-Q5_K_M es su archivo más preciso del modelo, un listón más exigente que un Q5_K_M estándar, y que registró una respuesta vacía en 152 sesiones.
+Datos adicionales de la model card: frente al Gyro-S sin ajustar, Signal 2 empata en tareas superadas con un 27 % menos de tokens de salida (1.623 frente a 2.228 por sesion) y reduce el tiempo de 76 sesiones de 111 a 95 minutos; alcanza el 94 % de la tasa de exito de AP-Q5_K_M (133 frente a 141 de 152 sesiones); la sesion mediana usa un 48 % menos de tokens que Swift 1.5 IQ3_S; y no se registraron timeouts, errores ni respuestas vacias en 152 sesiones. La diferencia de superadas frente a Swift 1.5 IQ3_S en xhigh se declara empate estadistico (test de signos pareado, p = 0,82). No se han publicado en la informacion disponible resultados de benchmarks academicos estandar (MMLU, HumanEval, GSM8K).
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 30,5 GiB de memoria de GPU con KV q8_0 y 64k de contexto en AMD Strix Halo (Vulkan), y unos 34,2 GiB con el borrador MTP activo, aproximadamente 1 GiB más que la cuantización Gyro-S del base. Otros backends difieren en unos cientos de MB.
-- GPU de 32 GB (RTX 5090, R9700): cabe con 64k de contexto sin MTP de forma ajustada; con MTP se recomienda reducir el contexto a 16-32k. El autor indica que aún no se ha medido en CUDA.
-- Memoria unificada de 64 GB o más (Strix Halo, Mac): configuración cómoda con 64k de contexto y MTP.
-- Despliegue: requiere el fork de llama.cpp de agentionai (rama main) o su imagen Docker; el llama.cpp upstream todavía no puede cargar el archivo TQ1_0. Strata y strix-llama.cpp master están en fase de prueba.
-- Throughput medido en AMD Strix Halo (Vulkan): 28,6 tok/s sin MTP; con MTP, 38,7 tok/s en prosa, 54,0 tok/s en código y 64,4 tok/s en JSON. La decodificación por token es aproximadamente un 13 % más lenta que Gyro-S.
-- Tiempo por sesión: 76 sesiones agénticas completadas en 95 minutos, frente a 111 minutos de Gyro-S y 131 minutos de AP-Q5_K_M en la misma máquina.
+- VRAM para inferencia: 30,7 GB en GPU para la cuantizacion evaluada (sin contar la tabla por capas de 28,8 GB, que puede mantenerse en disco). La variante AP-Q5_K_M del mismo modelo base requiere 82,4 GB.
+- GPU recomendadas: tarjetas con 32 GB o mas de VRAM, como RTX 5090 o profesionales de gama alta; el modelo esta disenado explicitamente para "una tarjeta de 32 GB". Para la variante Q5_K_M se necesitan 80 GB o mas (A100 80 GB, H100).
+- GPU de consumo: cabe en tarjetas consumer de 32 GB; no cabe en GPUs de 24 GB o menos con esta cuantizacion.
+- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp y con los runners que lo consumen (Ollama, LM Studio y similares); las etiquetas del repositorio indican compatibilidad con endpoints. No se confirma en la informacion disponible soporte de vLLM o TGI para este formato.
+- Latencia y throughput: la model card reporta 95 minutos para 76 sesiones en esfuerzo `medium` (frente a 111 minutos del Gyro-S sin ajustar) en la misma maquina, lo que equivale a aproximadamente 75 segundos por sesion. No se publican tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Archivo | Aprobados / Clean (puerta Marshall) | Tokens P50 / P90 | Tiempo de puerta | Licencia |
-|---|---:|---:|---:|---:|---|
-| Signal 2 Gyro-S | 59,5 GB | 68 / 63 | 1.092 / 3.721 | 108 min | qwen-community-1.0 |
-| Qwen3.8-Flash-Next Gyro-S | 58,5 GB | 68 / 61 | 1.376 / 4.921 | 128 min | qwen-community-1.0 |
-| Swift 1.5 IQ3_S (ukisai) | 83,7 GB | 66 / 58 | 1.416 / 4.309 | 149 min* | no disponible |
-| Swift 1.5 IQ3_S_G8 (ukisai) | 84,4 GB | 67 / 58 | 1.673 / 4.963 | 165 min | no disponible |
-| ISTA GSQ-RCO IQ3_S | 83,6 GB | 66 / 60 | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Memoria en GPU | Superadas (medium, de 76) | Tokens / sesion | Licencia |
+|---|---|---:|---:|---:|---|
+| Signal 2 Flash Next Gyro | 125,7 B (MoE) | 30,7 GB | 68 | 1.685 | qwen-community-1.0 |
+| Qwen3.8-Flash-Next Gyro-S (sin ajustar) | 125,7 B (MoE) | 29,7 GB | 68 | 2.323 | qwen-community-1.0 |
+| Swift 1.5 IQ3_S (ukisai) | mismo base | 54,9 GB | 66 | 2.319 | derivada del base |
+| ISTA GSQ-RCO IQ3_S (ISTA-DASLab) | mismo base | 54,8 GB | 66 | 2.547 | derivada del base |
+| AP-Q5_K_M (AgentionAI) | mismo base | 82,4 GB | 69 | 2.221 | qwen-community-1.0 |
 
-La comparativa se limita a cuantizaciones del mismo modelo base evaluadas por el propio autor; no se dispone de datos de benchmarks frente a modelos de otros desarrolladores. El asterisco en el tiempo de Swift 1.5 IQ3_S aparece en la model card sin nota aclaratoria en la información proporcionada.
+Todas las alternativas comparadas son cuantizaciones o ajustes del mismo modelo base Qwen3.8-Flash-Next, por lo que la comparacion mide el efecto de la cuantizacion y del ajuste fino, no diferencias de arquitectura. La ventaja principal de Signal 2 es la relacion entre tareas superadas y memoria ocupada: iguala o casi iguala en exito a variantes que necesitan entre 1,8 y 2,7 veces mas VRAM.
 
 ## Limitaciones y advertencias
 
-- Requiere un fork no estándar de llama.cpp; el llama.cpp upstream no puede cargar el archivo TQ1_0, lo que limita la portabilidad y el soporte de herramientas estándar (vLLM, TGI, Ollama) sin verificación adicional.
-- Las mediciones de rendimiento y velocidad proceden de una única plataforma (AMD Strix Halo con Vulkan) y del conjunto de evaluación propietario del autor (puerta Marshall); no hay resultados independientes ni en CUDA.
-- El modelo es una versión preview y experimental, con 0 descargas y 0 likes en el momento de la consulta, y sin validación externa de la comunidad.
-- El ajuste por auto-destilación se entrenó solo con sesiones que pasaron la puerta y la auditoría del autor, lo que puede introducir sesgo hacia el estilo y las convenciones de ese entorno concreto.
-- Riesgo de alucinación y sesgos: no hay información publicada sobre evaluaciones de sesgo, toxicidad o tasas de alucinación más allá de la puerta de seguridad interna.
-- Idiomas soportados no declarados; el comportamiento multilingüe no está verificado.
-- La licencia qwen-community-1.0 (etiquetada como "other") impone condiciones de uso comunitario que deben revisarse antes de un despliegue comercial; no se detallan en la información disponible las restricciones concretas.
-- El contexto útil con MTP en GPUs de 32 GB se reduce a 16-32k tokens, por debajo de los 64k nominales.
-- La decodificación por token es un 13 % más lenta que la cuantización Gyro-S del base; la ventaja en tiempo solo se materializa cuando el agente completa la tarea con menos tokens.
+- Sesgos conocidos: no se documentan en la informacion disponible; al heredar el modelo base, arrastra los sesgos de sus datos de preentrenamiento.
+- Riesgo de alucinacion: no cuantificado en la model card; el ajuste optimiza eficiencia de tokens, no veracidad, y la reduccion de deliberacion podria aumentar la confianza en pasos incorrectos en tareas fuera del dominio de codificacion.
+- La evaluacion se limita a una unica puerta interna (Marshall) con 76 y 152 sesiones; no hay resultados en benchmarks academicos estandar que permitan comparaciones independientes.
+- El ajuste esta especializado en codificacion agentica; su ventaja en tokens puede no trasladarse a otros dominios, y la model card recomienda el modelo base (Gyro) para usos no relacionados con agentes de codigo.
+- Idioma: no se especifican los idiomas soportados; la evaluacion publicada se realiza en ingles.
+- Licencia qwen-community-1.0: es una licencia de comunidad con posibles restricciones de uso comercial; debe revisarse el texto completo antes de un despliegue en produccion.
+- El modelo requiere 32 GB de VRAM en la cuantizacion evaluada; no es viable en GPUs de consumo de 24 GB o menos sin cuantizaciones aun mas agresivas no documentadas.
+- Longitud de contexto no disponible: no es posible planificar casos de uso con repositorios o conversaciones largas sin verificar este dato en la documentacion del modelo base.
+- Los datos de rendimiento provienen del propio autor del modelo; no se han replicado de forma independiente en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/agentionai/Signal-2-Flash-Next-Gyro-GGUF
+- Archivos del repositorio: https://huggingface.co/agentionai/Signal-2-Flash-Next-Gyro-GGUF/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Cuantización AP-Q5_K_M del mismo autor: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-AP-GGUF
-- Fork de llama.cpp de agentionai: https://gitlab.com/agentionai-group/llama.cpp
-- Guía de ejecución: https://agention.ai/models/qwen3.8-flash-next/
-- Sitio web del autor: https://agention.ai
-- Perfil en X del autor: https://x.com/laurent_zw
-- Apoyo al autor: https://buymeacoffee.com/agentionai
+- Cuantizaciones Gyro: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
+- Variante AP (Q5_K_M): https://huggingface.co/agentionai/Qwen3.8-Flash-Next-AP-GGUF
+- Web de AgentionAI: https://www.agention.ai/
+- Agente de codigo Marshall: https://marshall.agention.ai
+- Fieldwork Ledger: https://www.fieldworkledger.com
+- Estadisticas de descargas: https://openmodelstats.com/models/agentionai/qwen3.8-flash-next-gyro-gguf

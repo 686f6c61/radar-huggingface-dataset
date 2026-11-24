@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Guy-Amit/gemma4-e2b-safety-decision-lora-v1",
+  "renamed_at": "2026-11-24T03:21:18.174Z",
   "benchmarks": [],
   "sources": []
 }

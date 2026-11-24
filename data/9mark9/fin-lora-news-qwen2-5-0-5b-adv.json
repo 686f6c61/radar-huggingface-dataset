@@ -38,7 +38,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 352,
+  "downloads_30d": 355,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
@@ -58,32 +58,19 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "GitHub - shaikn6/fin-lora: LoRA-tuned Qwen2.5-0.5B for financial ...",
-      "url": "https://github.com/shaikn6/fin-lora",
-      "snippet": "LoRA-tuned Qwen2.5-0.5B for financial sentiment, benchmarked against TF-IDF, FinBERT and zero-shot, with a confidence cascade (90.3% accuracy, 63% lower latency)."
+      "task": "Financial sentiment classification",
+      "dataset": "Twitter Financial News Sentiment (held-out test, training overlap removed)",
+      "metric": "Clean accuracy",
+      "value": 0.903
     },
     {
-      "title": "lewtun/Qwen2.5-0.5B-SFT-LoRA · Hugging Face",
-      "url": "https://huggingface.co/lewtun/Qwen2.5-0.5B-SFT-LoRA",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen2.5-0.5B · Models",
-      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B/summary",
-      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
-    },
-    {
-      "title": "Qwen2.5 QLoRA, LoRA, and Full Fine-tuning on Your Computer",
-      "url": "https://kaitchup.substack.com/p/qwen25-qlora-lora-and-full-fine-tuning",
-      "snippet": "Qwen2.5 LLMs range from 0.5B to 72B, offering flexible options for fine-tuning. Ideal for 24 GB GPUs, supports LoRA, QLoRA, and full fine-tuning"
+      "task": "Financial sentiment classification",
+      "dataset": "Twitter Financial News Sentiment (held-out test, training overlap removed)",
+      "metric": "Clean macro-F1 (3-class)",
+      "value": 0.876
     }
-  ]
+  ],
+  "sources": []
 }

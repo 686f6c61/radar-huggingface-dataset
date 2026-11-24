@@ -2,81 +2,83 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Lightning-30B-A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por NVIDIA, distribuido en formato GGUF por el equipo de ggml-org para su uso con llama.cpp y el ecosistema de inferencia local. Con 31.577.940.288 parametros totales y aproximadamente 3.000 millones de parametros activos por token (de ahi el sufijo A3B), esta disenado para ofrecer un equilibrio entre capacidad y eficiencia computacional: activa solo una fraccion de sus expertos en cada paso de decodificacion, lo que reduce el coste de inferencia frente a un modelo denso del mismo tamano.
+NVIDIA-Nemotron-3.5-Lightning-30B-A3B es un modelo de generación de texto de tipo Mixture of Experts (MoE) desarrollado por NVIDIA, distribuido originalmente en formato BF16 y NVFP4 bajo el identificador `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`. Esta ficha cubre la conversión a formato GGUF realizada por el equipo de ggml-org, pensada para su ejecución en llama.cpp y en el ecosistema de herramientas locales compatibles. El modelo cuenta con 31.577.940.288 parámetros totales (aproximadamente 31,6 mil millones), de los cuales se activan unos 3 mil millones por token según indica el sufijo «A3B» de su nombre.
 
-Este repositorio concreto es una conversion automatica del modelo original en BF16 (nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16) a formato GGUF, con el objetivo de facilitar su ejecucion en hardware consumer y en entornos de CPU/GPU mixtos mediante llama.cpp. La popularidad del repositorio (mas de 218.000 descargas) refleja el interes de la comunidad por disponer de alternativas cuantizadas de modelos MoE de gran tamano que puedan correr fuera de infraestructura de datacenter.
+La relevancia de esta publicación radica en que permite ejecutar un modelo MoE de gran tamaño en hardware de consumo mediante cuantización GGUF, manteniendo una huella de memoria activa reducida gracias a la activación selectiva de expertos. El repositorio de ggml-org incluye múltiples niveles de cuantización y está integrado en el flujo de conversión automática del proyecto ggml-org/convert.
 
-La relevancia actual del modelo radica en su combinacion de arquitectura MoE con un formato de pesos ampliamente soportado (GGUF), lo que permite desplegarlo en estaciones de trabajo con GPU de gama alta o incluso en configuraciones multi-GPU consumer, algo impracticable con el checkpoint BF16 original de 394,9 GB. La licencia es "other", lo que obliga a revisar los terminos especificos de NVIDIA antes de un uso comercial.
+La información pública disponible es limitada: la model card del repositorio GGUF está prácticamente vacía (incluye un «TODO: add info») y no detalla composición del dataset, longitud de contexto ni resultados de benchmarks. Por tanto, varios campos de esta ficha se marcan explícitamente como «no disponible».
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) tipo transformer (detalles de capas y atencion no disponibles) |
-| Parametros totales | 31.577.940.288 (~31,6 B) |
-| Parametros activos | ~3 B (sufijo A3B; cifra exacta no disponible) |
+| Arquitectura | Mixture of Experts (MoE), transformer; detalles internos no disponibles |
+| Parámetros totales | 31.577.940.288 (~31,6 B) |
+| Parámetros activos | ~3 B por token (según nomenclatura A3B; cifra exacta no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF cuantizado (variantes concretas no disponibles en la informacion proporcionada) |
+| Tipos de cuantización | GGUF en múltiples niveles (el repo ocupa 540,3 GB en total; niveles concretos no listados en la model card) |
 | Idiomas soportados | no disponible |
-| Licencia | other (terminos de NVIDIA; revisar antes de uso comercial) |
-| Formato de pesos | GGUF (repo de 394,9 GB con multiples ficheros) |
+| Licencia | other (licencia personalizada de NVIDIA; condiciones no detalladas en la model card) |
+| Formato de pesos | GGUF (origen en BF16 y NVFP4) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura Mixture of Experts, segun se deduce del nombre (30B-A3B) y de la estructura del checkpoint base. En un MoE de este tipo, cada token activa un subconjunto reducido de expertos (en este caso, aproximadamente 3.000 millones de parametros activos de un total de 31,6 mil millones), lo que permite mantener un coste de computo por token similar al de un modelo denso de 3B mientras se preserva la capacidad representacional de un modelo de 30B. Los detalles concretos sobre numero de expertos, estrategia de enrutamiento (top-k), tipo de atencion (completa, lineal o hibrida) y dimensiones de las capas no estan disponibles en la informacion proporcionada.
+El modelo sigue una arquitectura de mezcla de expertos (MoE) con aproximadamente 31,6 mil millones de parámetros totales y unos 3 mil millones activos por token. Este diseño permite que, en inferencia, solo se compute una fracción de la red por paso, lo que reduce el coste computacional y de memoria activa frente a un modelo denso del mismo tamaño. El repositorio de origen de NVIDIA incluye variantes en BF16, NVFP4, NVFP4-DFlash y NVFP4-DSpark, lo que sugiere optimizaciones específicas para hardware NVIDIA (formato de coma flotante de 4 bits y posibles variantes con decodificación especulativa o atención optimizada, aunque los detalles no están documentados en la información disponible).
 
-Respecto al entrenamiento, no se dispone de datos sobre el volumen de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion supervisada. La model card del repositorio GGUF es minima y se limita a indicar que se trata de una conversion automatica mediante la herramienta ggml-org/convert del checkpoint BF16 original de NVIDIA. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.) mas alla de la propia naturaleza MoE del modelo.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO o similares. La conversión a GGUF ha sido realizada automáticamente mediante la herramienta ggml-org/convert, sin que la model card documente el proceso de cuantización ni las métricas de degradación asociadas a cada nivel.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` y el pipeline `text-generation` indican soporte para dialogos multi-turno.
-- Razonamiento y generacion de codigo: capacidades esperables en un modelo de la familia Nemotron, aunque no se detallan explicitamente en la informacion disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integracion con APIs compatibles con el formato de inferencia estandar.
-- Ejecucion local: al estar en formato GGUF, es compatible con llama.cpp, Ollama y otras herramientas del ecosistema ggml.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible (los idiomas no estan listados).
-- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
+- Generación de texto conversacional: el repositorio está etiquetado como `conversational` y `text-generation`, lo que indica soporte para diálogo multi-turno.
+- Razonamiento y generación de contenido general: capacidades esperables en un modelo de esta familia, aunque no documentadas explícitamente en la información disponible.
+- Ejecución local mediante llama.cpp: compatible con `llama serve` y con la aplicación Llama (`https://llama.app`).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integración con infraestructuras de servicio compatibles.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible.
+- Modo «thinking» o razonamiento extendido: no disponible.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-- Despliegue en estaciones de trabajo con GPU consumer: gracias a la cuantizacion GGUF y a los ~3B parametros activos, el modelo puede ejecutarse en configuraciones con 1-2 GPU de gama alta (por ejemplo, RTX 4090 o RTX 5090) usando llama.cpp, algo inviable con el checkpoint BF16 de 394,9 GB.
-- Asistentes conversacionales locales: el tag `conversational` y el pipeline `text-generation` lo hacen adecuado para chatbots de escritorio o integrados en aplicaciones de productividad que requieran privacidad total, sin enviar datos a la nube.
-- Prototipado rapido de aplicaciones LLM: la posibilidad de lanzarlo con `llama serve -hf ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF` permite a desarrolladores probar prompts y flujos sin gestionar infraestructura compleja.
-- Investigacion en eficiencia de modelos MoE: su condicion de MoE cuantizado de ~31,6B totales con ~3B activos lo convierte en un banco de pruebas para estudiar el trade-off entre calidad y coste computacional en entornos de recursos limitados.
-- Generacion de codigo en entornos offline: para equipos que trabajan en redes aisladas o con requisitos de confidencialidad, el modelo puede servir como asistente de programacion local mediante integraciones con editores compatibles con llama.cpp.
-- Fine-tuning y experimentacion con adaptadores: aunque el repo es GGUF (no ideal para entrenamiento), el modelo base BF16 de NVIDIA puede usarse para ajuste fino y luego convertirse a GGUF para despliegue, cubriendo el ciclo completo de personalizacion.
+- Asistente conversacional local: el modelo puede desplegarse en estaciones de trabajo con llama.cpp y ofrecer respuestas multi-turno sin conexión a servicios en la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Prototipado de agentes en local: gracias a su naturaleza MoE con ~3 B de parámetros activos, permite iterar sobre flujos de agente en hardware de consumo antes de escalar a infraestructura mayor.
+- Generación de texto en pipelines de documentación: integrable vía `llama serve` como servicio HTTP local para resumir, reescribir o generar borradores de documentación técnica.
+- Evaluación comparativa de cuantizaciones: el repositorio GGUF facilita medir la degradación de calidad entre niveles de cuantización frente al modelo BF16 original, útil para investigación en eficiencia de inferencia.
+- Despliegue en entornos con GPU de gama alta para inferencia por lotes: la variante NVFP4 del modelo base está pensada para hardware NVIDIA con soporte de FP4, lo que permite mayor throughput en servidores.
+- Experimentación académica con arquitecturas MoE: investigadores pueden estudiar el comportamiento de activación de expertos y el equilibrio carga/calidad en un modelo de ~31,6 B con activación dispersa.
+- Sustituto local en flujos de CI/CD para tareas de texto: generación de mensajes de commit, descripciones de PR o resúmenes de cambios sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision al no detallarse las variantes de cuantizacion. Como referencia, un modelo MoE de ~31,6B parametros totales requiere cargar todos los pesos en memoria; en cuantizaciones de 4 bits esto supone del orden de 16-20 GB, y en 8 bits del orden de 30-35 GB, aunque estas cifras son estimaciones generales y no datos confirmados para este modelo concreto.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por el perfil del modelo, serian razonables GPU con 24 GB o mas de VRAM (RTX 4090, RTX 5090, A6000, L40S) o configuraciones multi-GPU, pero no hay confirmacion oficial.
-- Compatibilidad con GPU consumer: probable en cuantizaciones agresivas y con suficientes GB de VRAM; no confirmado en la informacion disponible.
-- Opciones de despliegue: llama.cpp (mediante `llama serve`), y por extension del ecosistema GGUF, herramientas como Ollama o servidores compatibles con la API de llama.cpp. vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que se recomienda usar el checkpoint BF16 original para esos motores.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de ~31,6 B en BF16 requiere del orden de 63 GB solo para pesos; las cuantizaciones GGUF de 8, 6, 5 y 4 bits reducirían esa cifra aproximadamente a 32, 24, 20 y 16 GB respectivamente, aunque estas estimaciones no están confirmadas por el autor.
+- GPU recomendadas: no disponible. Por tamaño, las variantes cuantizadas de 4-5 bits podrían caber en GPU de consumo con 24 GB (RTX 3090/4090) o 32 GB (RTX 5090), y las de mayor precisión requerirían A100/H100 o múltiples GPU.
+- Compatibilidad con GPU de consumo: plausible en cuantizaciones bajas, sin confirmación oficial.
+- Opciones de despliegue: llama.cpp y la aplicación Llama (`llama serve -hf ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF`). Para las variantes NVFP4 del modelo base, se requiere el stack de inferencia de NVIDIA (TensorRT-LLM o similar), aunque no se detalla en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Lightning-30B-A3B (este) | ~31,6 B | ~3 B | no disponible | other | GGUF / BF16 |
-| Modelos MoE comparables de ~30B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| NVIDIA-Nemotron-3.5-Lightning-30B-A3B (GGUF) | ~31,6 B | ~3 B | no disponible | other | GGUF |
+| Modelos MoE comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con alternativas concretas de la misma categoria (mismo tamano o misma tarea). Se recomienda consultar la model card oficial de NVIDIA para obtener datos comparativos.
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas concretas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion proporcionada; como todo modelo entrenado con datos web a gran escala, es probable que herede sesgos presentes en el corpus, pero no hay confirmacion oficial.
-- Riesgo de alucinacion: no cuantificado; sin benchmarks ni evaluaciones publicadas, no es posible estimar la tasa de alucinacion.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan disponibles, lo que impide garantizar un rendimiento adecuado en lenguas distintas del ingles o en tareas que requieran ventanas largas.
-- Restricciones de licencia: la licencia es "other", lo que implica que los terminos de uso (incluido el comercial) vienen definidos por NVIDIA y deben revisarse en el repositorio del modelo base antes de cualquier despliegue en produccion.
-- Conversion automatica: el repositorio GGUF ha sido generado con la herramienta ggml-org/convert sin validacion adicional documentada; pueden existir diferencias de calidad respecto al checkpoint BF16 original.
-- Ausencia de datos de evaluacion: no hay benchmarks publicados en la informacion disponible, lo que dificulta comparar su rendimiento con alternativas y evaluar su idoneidad para tareas criticas.
-- Tamano del repositorio: 394,9 GB en total, lo que exige planificar el almacenamiento y la descarga con cuidado; conviene descargar solo la variante de cuantizacion necesaria.
+- La model card del repositorio GGUF está incompleta («TODO: add info»), por lo que no hay garantías documentadas sobre el proceso de cuantización ni sobre la degradación de calidad.
+- Licencia «other»: es imprescindible revisar los términos de la licencia de NVIDIA antes de cualquier uso comercial; no se detallan restricciones en la información disponible.
+- Riesgo de alucinación: inherente a los modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
+- Sesgos: no documentados.
+- Idiomas soportados: no disponibles, lo que impide garantizar un rendimiento adecuado en castellano u otros idiomas distintos del inglés.
+- Longitud de contexto: no disponible, lo que dificulta planificar casos de uso con documentos largos.
+- El repositorio ocupa 540,3 GB por incluir múltiples cuantizaciones; conviene descargar únicamente el archivo del nivel deseado.
+- El modelo base en NVFP4 requiere hardware NVIDIA con soporte de FP4; las variantes GGUF evitan esa dependencia pero pueden perder precisión.
 
 ## Enlaces
 
@@ -85,5 +87,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 - Variante NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Variante NVFP4-DFlash: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash
 - Variante NVFP4-DSpark: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark
-- Herramienta de conversion: https://github.com/ggml-org/convert
-- Aplicacion Llama: https://llama.app
+- Herramienta de conversión: https://github.com/ggml-org/convert
+- Aplicación Llama: https://llama.app

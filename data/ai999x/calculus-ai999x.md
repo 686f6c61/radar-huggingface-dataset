@@ -2,111 +2,116 @@
 
 ## Resumen
 
-calculus-ai999x es un motor neuro-simbólico determinista para resolver problemas de cálculo, desarrollado por Ibnul Jaif Farabi bajo la organización AI999X. No es un modelo de lenguaje generativo al uso: combina un enrutador neuronal de pequeño tamaño (4.715.520 parámetros en safetensors) con un conjunto de 71 procedimientos simbólicos certificados construidos sobre SymPy y mpmath. El modelo lee una pregunta en inglés, selecciona la capacidad adecuada, calcula la respuesta de forma exacta, la verifica (por sustitución, análisis dimensional o cálculo independiente) y devuelve el resultado con pasos, fórmulas en LaTeX, unidades y supuestos. Si no puede verificar la respuesta, se niega a contestar.
+Calculus (calculus-ai999x) es un motor de cálculo simbólico y numérico empaquetado como modelo de question-answering, desarrollado por AI999X. No es un modelo de lenguaje neuronal: se trata de un motor compilado (implementado en Rust, con un build en Python puro) que resuelve 82 tipos de cálculos repartidos en 16 temas de cálculo —límites, derivadas, integrales, series, polinomios de Taylor, cálculo multivariable y vectorial, funciones especiales y diferenciación e integración numérica— devolviendo fórmula, pasos, unidades y una razón en lenguaje natural cuando una entrada falta o está fuera de rango.
 
-La propuesta de valor es el determinismo y la ausencia de alucinaciones: define siete resultados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y garantiza que las 374 respuestas documentadas se reproducen de forma idéntica en Windows y Linux con Python 3.10 a 3.14. Funciona íntegramente en CPU, sin GPU, sin red y sin clave de API, lo que lo hace apto para entornos aislados y aplicaciones educativas.
+Su relevancia radica en la propuesta de "cero alucinación": al no generar texto libre sino ejecutar cálculos deterministas, la salida es reproducible e idéntica en cada plataforma. Se distribuye como aplicación de escritorio (Windows y Linux), herramienta de línea de comandos, versión web y paquete de Python (`pip install calculus-ai999x`), todo ejecutable offline en el equipo del usuario.
 
-El modelo cubre límites, derivadas, integrales, series, polinomios de Taylor, cálculo multivariable y vectorial, funciones especiales y diferenciación e integración numérica. La versión actual es la 1.0.3, con licencia Apache-2.0, y se distribuye tanto desde Hugging Face como como paquete de Python en PyPI. El repo ocupa 0,1 GB y acumula 42 descargas en el momento de redactar esta ficha.
+El repositorio de Hugging Face declara 4.715.520 parámetros en safetensors y un tamaño de repo de 0.0 GB, lo que sugiere que los pesos publicados son mínimos o testimoniales y que la funcionalidad real reside en el motor empaquetado fuera del repo. La licencia es Apache 2.0 y el único idioma declarado es inglés.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: enrutador neuronal + capacidades simbólicas certificadas sobre SymPy y mpmath |
-| Parámetros totales | 4.715.520 |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible; la interfaz se basa en formas de pregunta documentadas, no en una ventana de contexto de LLM |
-| Tipos de cuantización | no disponible (se exporta en ONNX y safetensors, sin cuantización documentada) |
+| Arquitectura | Motor de cálculo determinista (compilado en Rust; build en Python puro); no es un transformer |
+| Parametros totales | 4.715.520 (safetensors declarados) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica: no es un modelo generativo) |
+| Tipos de cuantizacion | no disponible (no aplica) |
 | Idiomas soportados | en |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX; también se distribuye como wheel de Python (`calculus_ai999x-1.0.3-py3-none-any.whl`) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (repo); binarios de app, CLI y paquete Python para el motor |
+| Pipeline | question-answering |
+| Libreria | calculus-ai999x |
+| Cobertura funcional | 82 cálculos en 16 temas |
+| Plataformas | Windows, Linux, navegador, Python 3.10+ |
+| Ejecucion | offline, en local |
+| Descargas | 335 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es neuro-simbólica en dos capas. La primera es un componente neuronal compacto (~4,7 millones de parámetros) que actúa como enrutador: clasifica la pregunta en lenguaje natural y la mapea a una de las 71 capacidades certificadas. La segunda es un motor simbólico determinista construido sobre SymPy y mpmath que ejecuta el procedimiento correspondiente y valida el resultado antes de devolverlo. La model card declara métricas de enrutamiento (recall@1 = 0,918 y recall@5 = 0,988 sobre 12.998 preguntas verificadas de todos los modelos AI999X), lo que sugiere que el componente neuronal se evalúa por su capacidad de seleccionar la herramienta correcta, no por generar texto.
+El modelo no sigue una arquitectura de red neuronal Transformer ni MoE ni SSM. Es un motor de resolución de cálculo con 82 cálculos implementados en 16 temas, cada uno con su fórmula, sus pasos y sus unidades. La implementación principal es un motor compilado (etiquetado como Rust en los tags) que se distribuye dentro de la aplicación de escritorio, la CLI y la versión de navegador; adicionalmente existe un build en Python puro del mismo conjunto de cálculos, instalable mediante `pip install calculus-ai999x`, que no incluye el motor compilado.
 
-El conocimiento se empaqueta en un "knowledge pack" versión 1.0.0 con 374 respuestas golden documentadas. La verificación es explícita: cada respuesta se comprueba por sustitución, análisis dimensional o comparación con un cálculo independiente, y el sistema devuelve uno de siete estados posibles en lugar de improvisar. No se han publicado detalles sobre el corpus de entrenamiento del enrutador, el número de tokens utilizados, la composición del dataset ni si hubo RLHF o DPO; la model card describe el sistema como determinista y basado en reglas más cómputo simbólico, no como un modelo generativo ajustado.
+No hay información disponible sobre datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF o DPO, porque el modelo no se entrena con ese paradigma: su comportamiento se define por la lógica de los cálculos implementados. La innovación técnica destacable es el enfoque de "cero alucinación": cuando una entrada falta o está fuera de rango, el sistema devuelve una razón en lenguaje natural en lugar de un número inventado. La aplicación de escritorio además dibuja escenas y gráficas a partir de la respuesta calculada, de modo que la visualización es consistente con el resultado numérico.
 
 ## Capacidades
 
-- Resolución de límites, derivadas, integrales definidas e indefinidas, series, polinomios de Taylor, cálculo multivariable y vectorial, funciones especiales y diferenciación e integración numéricas.
-- Interfaz `ask()` que acepta preguntas en inglés en formas documentadas.
-- Interfaz tipada `solve(capability_id, **inputs)` que resuelve cualquier tarea soportada con entradas válidas garantizadas.
-- Devolución de pasos intermedios, fórmulas en LaTeX, unidades, supuestos y modelo utilizado.
-- Siete resultados explícitos que evitan respuestas no verificadas: SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT e INTERNAL_ERROR.
-- Reproducibilidad bit a bit en Windows (Python 3.13) y Linux x86-64 (Python 3.10 a 3.14).
-- Ejecución en CPU, sin GPU, sin red y sin clave de API.
-- Tareas declaradas en los tags: question answering, token classification, text classification, sentence similarity y feature extraction.
-- Idiomas: únicamente inglés.
-- No incluye tool calling genérico, agentes multi-paso ni modo "thinking"; la API es determinista y acotada.
+- Resolución de límites, incluyendo límite en un punto con escena en vivo.
+- Derivadas y derivadas direccionales.
+- Integrales definidas e indefinidas, con representación gráfica del área.
+- Integrales triples en coordenadas cilíndricas y esféricas.
+- Integrales de línea de campos vectoriales.
+- Series y coeficientes de Fourier.
+- Polinomios de Taylor con visualización de la aproximación.
+- Cálculo multivariable y vectorial.
+- Extremos absolutos en intervalos cerrados.
+- Funciones especiales.
+- Diferenciación e integración numérica.
+- Respuestas paso a paso con fórmula, pasos y unidades.
+- Devolución de una razón explicativa cuando la entrada falta o está fuera de rango, en lugar de un valor numérico.
+- Preguntas en lenguaje natural mediante `calculus.ask(...)` (15 ejemplos documentados en la model card).
+- Cuatro modos de uso: aplicación de escritorio, línea de comandos `calculus`, navegador y Python.
+- Ejecución completamente offline, sin dependencia de red.
+- No dispone de tool calling, soporte de agentes, visión, audio ni modo de razonamiento generativo; no es un LLM.
 
 ## Casos de uso
 
-- Aplicaciones de tutoría de cálculo: `ask()` devuelve pasos, LaTeX y supuestos, de modo que la interfaz puede renderizar la solución completa sin post-procesado adicional.
-- Corrección automática de deberes: comparar la respuesta del estudiante con la salida de `solve()` y clasificar el error (NEEDS_INPUT, INVALID_INPUT o resultado incorrecto).
-- Entornos air-gapped o sin conectividad: al requerir solo CPU y funcionar sin red, puede desplegarse en aulas, hospitales o infraestructuras aisladas mediante `pip install`.
-- Generación de material educativo en lote: procesar conjuntos de problemas documentados y producir soluciones verificadas con pasos y notación matemática.
-- Integración en notebooks de Jupyter para investigadores que necesitan comprobar resultados simbólicos de forma reproducible entre sistemas operativos.
-- Enrutamiento de consultas de cálculo dentro de sistemas mayores: el recall@5 de 0,988 sobre 12.998 preguntas permite usar el modelo como clasificador de capacidades antes de derivar a otros motores.
-- Verificación cruzada en pipelines de investigación: contrastar un resultado simbólico propio con la respuesta certificada del motor y detectar discrepancias.
-- Herramientas de apoyo al estudio offline en aplicaciones de escritorio o móviles empaquetadas con Python.
+- Docencia de cálculo en el aula: el profesor plantea límites, derivadas o integrales y el motor devuelve fórmula, pasos y unidades, lo que permite proyectar la resolución completa y contrastar el resultado con la escena y las gráficas generadas por la app de escritorio.
+- Autoaprendizaje y ayuda con deberes: el estudiante ejecuta la CLI o la app en local, sin conexión, y obtiene la resolución paso a paso de un ejercicio de Taylor o de extremos en un intervalo cerrado, con la ventaja de que el sistema explica por qué una entrada está fuera de rango en lugar de inventar un número.
+- Verificación de resultados en pipelines de cálculo numérico: el paquete de Python permite integrar los 82 cálculos en scripts de validación, comparando la salida simbólica con la numérica (integración numérica frente a integral definida) para detectar discrepancias.
+- Generación de material didáctico y gráficas: la app dibuja escenas y gráficas a partir de la respuesta calculada (límite en un punto, integral definida, coeficientes de Fourier, integral de línea de un campo vectorial), lo que facilita preparar figuras para apuntes o presentaciones sin herramientas adicionales.
+- Entornos sin conectividad o con requisitos de privacidad: al ejecutarse offline en Windows y Linux, es adecuado para laboratorios docentes, aulas con red restringida o entornos donde los enunciados no deben salir del equipo.
+- Prototipado rápido en Python: `pip install calculus-ai999x` ofrece un build en Python puro para probar los cálculos dentro de notebooks o scripts antes de pasar a la app o la CLI con el motor compilado.
+- Automatización de tareas repetitivas de cálculo en línea de comandos: la CLI `calculus` permite encadenar cálculos en scripts de shell para procesar lotes de ejercicios o generar tablas de resultados de forma reproducible.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (marcados como no verificados de forma independiente):
+Los datos proceden del model-index declarado por el autor. La métrica es accuracy sobre "Golden answers (459 documented questions, Windows + Linux Python 3.10-3.14)".
 
-| Tarea | Dataset | Métrica | Valor |
-|---|---|---|---|
-| calculus question answering | Golden answers (374 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | accuracy ("identical on every platform") | 1,000 |
-| calculus question answering | Capability search, 12.998 preguntas verificadas held-out de todos los modelos AI999X | recall@1 ("right capability first") | 0,918 |
-| calculus question answering | Capability search, 12.998 preguntas verificadas held-out de todos los modelos AI999X | recall@5 ("in the top five") | 0,988 |
+| Tarea | Dataset | Metrica | Valor | Verificado |
+|---|---|---|---|---|
+| calculus question answering | Golden answers (459 preguntas documentadas, Windows + Linux Python 3.10-3.14) | accuracy | 1.0 ("identical on every platform") | false |
 
-No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, GSM8K o HumanEval, ni comparaciones con otros motores de cálculo. Las cifras anteriores proceden exclusivamente del `model-index` del autor y llevan la marca `verified: false`.
+No se han publicado otros resultados de benchmarks en la información disponible. El valor 1.0 no está verificado de forma independiente y procede exclusivamente de la model card del autor.
 
 ## Requisitos de hardware
 
-- Inferencia exclusivamente en CPU; no requiere GPU, VRAM dedicada, red ni clave de API.
-- Huella en disco del repositorio: 0,1 GB, incluyendo safetensors, ONNX y el wheel de Python.
-- Compatibilidad con Python 3.10, 3.11, 3.12, 3.13 y 3.14; probado en Windows y Linux x86-64.
-- Cabe en cualquier equipo de consumo, incluidos portátiles modestos y contenedores ligeros, dado el tamaño del componente neuronal y la naturaleza simbólica del motor.
-- Despliegue mediante `pip install calculus-ai999x` o instalación directa del wheel alojado en el repositorio de Hugging Face.
-- No se documentan latencia ni throughput concretos; al ser determinista y basado en SymPy/mpmath, los tiempos dependen de la complejidad simbólica de cada problema.
-- La model card marca `inference: false`, por lo que no está pensado para la Inference API de Hugging Face; el uso previsto es local.
+- VRAM estimada para inferencia: no disponible; no es un modelo neuronal y no requiere GPU.
+- GPU recomendadas: no aplica; el motor es determinista y se ejecuta en CPU.
+- Cabe en cualquier equipo de consumo: la app de escritorio se distribuye para Windows x86_64 y Linux x86_64; el paquete de Python requiere Python 3.10 o superior.
+- Opciones de despliegue: aplicación de escritorio (Windows/Linux), CLI `calculus`, versión web en el navegador y paquete Python. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La categoría es mixta: calculus-ai999x es un motor determinista especializado, mientras que las alternativas habituales son LLM generativos de matemáticas o bibliotecas simbólicas. La comparación directa de rendimiento no es posible con los datos disponibles.
+| Modelo | Tipo | Parametros | Contexto | Enfoque | Licencia | Ejecucion |
+|---|---|---|---|---|---|---|
+| calculus-ai999x | Motor de cálculo determinista | 4.715.520 (safetensors) | no aplica | 82 cálculos en 16 temas, paso a paso, offline | Apache 2.0 | Local (app, CLI, navegador, Python) |
+| LLM generalista (p. ej. familia Llama, Mistral, Qwen) | Transformer generativo | Miles de millones | Decenas de miles de tokens | Texto libre, razonamiento, código | Varía (comunitaria o restrictiva) | GPU/CPU con vLLM, llama.cpp, Ollama |
+| SymPy | Librería de matemática simbólica en Python | no aplica | no aplica | Cálculo simbólico programático | BSD | CPU, Python |
+| Wolfram Alpha | Servicio en la nube | no disponible | no aplica | Resolución matemática amplia | Propietaria | Nube (requiere conexión) |
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| calculus-ai999x | Motor neuro-simbólico determinista | 4.715.520 (+ SymPy/mpmath) | no aplica (formas de pregunta documentadas) | Apache-2.0 | Hugging Face + PyPI |
-| Qwen2.5-Math-1.5B | LLM generativo de matemáticas | ~1.500 millones | no disponible en esta ficha | Apache-2.0 | Hugging Face |
-| Mathstral-7B-v0.1 | LLM generativo de matemáticas | ~7.000 millones | no disponible en esta ficha | Apache-2.0 | Hugging Face |
-| SymPy | Biblioteca simbólica determinista | no aplica | no aplica | BSD | PyPI |
-
-Frente a los LLM de matemáticas, calculus-ai999x ofrece determinismo y rechazo explícito en lugar de generación libre, pero cubre un dominio mucho más estrecho y solo en inglés. Frente a SymPy puro, añade enrutamiento en lenguaje natural, verificación y salida pedagógica con pasos y LaTeX.
+La comparación con LLM generalistas no es directa: calculus-ai999x no genera lenguaje libre y su propuesta es la reproducibilidad y la ausencia de alucinación en el dominio acotado del cálculo. Frente a SymPy, ofrece una interfaz de lenguaje natural, pasos y visualizaciones integradas; frente a Wolfram Alpha, la ventaja es la ejecución offline y local. No se dispone de comparativas de rendimiento publicadas frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Cobertura acotada: 71 capacidades certificadas y 374 respuestas golden documentadas; fuera de ese alcance el modelo devuelve OUT_OF_SCOPE o NEEDS_INPUT.
-- Solo admite inglés; no hay soporte multilingüe declarado.
-- No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no razona fuera del catálogo simbólico.
-- Los benchmarks del `model-index` están marcados como `verified: false`; no hay validación independiente publicada.
-- La calidad depende de SymPy y mpmath, por lo que errores o limitaciones de esas bibliotecas se propagan al motor.
-- No hay cuantizaciones documentadas; el despliegue está pensado para CPU con el wheel de Python, no para servir como endpoint de Inference API.
-- Riesgo bajo de alucinación por diseño, pero el sistema puede rechazar problemas válidos si la pregunta no encaja en las formas documentadas.
-- Licencia Apache-2.0: permite uso comercial, modificación y redistribución con atribución; conviene revisar el archivo LICENSE del repositorio.
-- El proyecto tiene 42 descargas y 0 likes, por lo que la madurez de la comunidad y el ecosistema es todavía limitada.
-- No se documentan sesgos específicos; al ser un motor simbólico y no generativo, los sesgos sociales típicos de los LLM no aplican del mismo modo, pero sí pueden aparecer sesgos de cobertura (qué problemas se consideran soportados).
+- Dominio estrictamente acotado: 82 cálculos en 16 temas de cálculo; no responde preguntas fuera de ese ámbito.
+- Idioma único: solo inglés declarado; no hay soporte multilingüe documentado.
+- No es un modelo generativo: no mantiene conversaciones abiertas, no hace tool calling ni razonamiento multi-paso fuera de los cálculos implementados.
+- El resultado de accuracy 1.0 del model-index está marcado como no verificado y procede del propio autor; debe tratarse con cautela hasta una evaluación independiente.
+- El repositorio declara 4.715.520 parámetros en safetensors pero un tamaño de repo de 0.0 GB, lo que indica que los pesos publicados no contienen el motor funcional; la funcionalidad real se obtiene instalando la app, la CLI o el paquete Python desde los enlaces del autor.
+- El build de Python es de "Python puro" y no incluye el motor compilado, por lo que su comportamiento puede diferir en rendimiento respecto a la app, la CLI y el navegador.
+- Riesgo de alucinación bajo por diseño en el dominio cubierto, pero las entradas fuera de rango devuelven una razón explicativa, no un resultado; el usuario debe interpretar correctamente ese comportamiento.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio y las condiciones de los binarios distribuidos en GitHub.
+- Solo se distribuyen binarios para Windows y Linux x86_64; no se documenta soporte para macOS ni ARM.
+- Sin datos publicados sobre latencia, throughput ni consumo de recursos en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AI999X/calculus-ai999x
-- PyPI: https://pypi.org/project/calculus-ai999x/
-- Guía de capacidades (docs): https://huggingface.co/AI999X/calculus-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/calculus-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
-- Wheel de instalación directa: https://huggingface.co/AI999X/calculus-ai999x/resolve/main/dist/calculus_ai999x-1.0.3-py3-none-any.whl
-- Licencia: https://huggingface.co/AI999X/calculus-ai999x/blob/main/LICENSE
+- Modelo en Hugging Face: https://huggingface.co/AI999X/calculus-ai999x
+- Página del modelo con demo en navegador: https://www.ai999x.com/models/calculus-ai999x/
+- Aplicación de escritorio Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-calculus-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-calculus-1.6.7-linux-x86_64.tar.gz
+- CLI Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio: https://github.com/AI999X/ai999x-desktop
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=calculus-ai999x/clip.mp4

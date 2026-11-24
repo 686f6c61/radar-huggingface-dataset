@@ -2,108 +2,93 @@
 
 ## Resumen
 
-WikiQwen-9B-GGUF es una distribución de pesos cuantizados en formato GGUF del modelo WikiQwen-9B, publicada por el usuario mradermacher. Se trata, por tanto, de una conversión de un modelo ya existente (devon7y/WikiQwen-9B) al formato de llama.cpp, no de un entrenamiento nuevo: el autor de esta ficha no documenta ningún proceso de entrenamiento propio, sino el pipeline de cuantización aplicado sobre los pesos originales.
+WikiQwen-9B-GGUF es la distribucion en formato GGUF del modelo WikiQwen-9B, un ajuste fino (SFT con LoRA) del modelo base devon7y/WikiQwen-9B, que a su vez parte de la familia Qwen (etiquetado como qwen3.5 en los metadatos). El modelo esta especializado en contenido instructivo e ilustrado paso a paso ("how-to", "instructional", "illustrated", "step-by-step"), orientado a generar guias y tutoriales conversacionales en ingles. Lo publica mradermacher, un empaquetador habitual de cuantizaciones GGUF para la comunidad de inferencia local.
 
-El modelo subyacente tiene 8.953.803.264 parámetros (aproximadamente 8,95 mil millones), según los datos reales de safetensors de la ficha original. El repositorio ocupa 27,1 GB en total, lo que refleja que incluye múltiples variantes de cuantización y no un único fichero de pesos. La nomenclatura "WikiQwen" sugiere, sin confirmación documental en la información disponible, una especialización sobre contenido tipo wiki o enciclopédico partiendo de la familia Qwen, aunque ni la arquitectura exacta ni el dataset de entrenamiento están detallados en los materiales proporcionados.
+El modelo cuenta con 8.953.803.264 parametros totales (aproximadamente 9B) en safetensors, y esta disponible en una amplia gama de cuantizaciones GGUF que van desde Q2_K (3,9 GB) hasta f16 (18,0 GB). No se trata de un modelo nuevo entrenado desde cero, sino de una adaptacion de un modelo Qwen existente mediante LoRA y SFT sobre un dataset orientado a contenido tutorial.
 
-La relevancia práctica de esta publicación es de infraestructura: al ofrecer el modelo en GGUF con un espectro amplio de cuantizaciones (desde Q2_K hasta F16), permite ejecutarlo en hardware de consumo mediante llama.cpp, Ollama o LM Studio sin necesidad de GPUs de datacenter. No obstante, la ausencia de licencia declarada, de idiomas soportados y de benchmarks publicados limita seriamente su evaluación previa a un despliegue en producción.
+Es relevante para quienes necesitan un modelo ligero, ejecutable en hardware de consumo, especializado en generacion de documentacion tecnica y guias paso a paso. Su licencia CC-BY-NC-SA-4.0 restringe el uso comercial, lo que limita su adopcion en produccion empresarial pero lo hace adecuado para investigacion, prototipado y uso personal.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere familia Qwen; no confirmado en la información proporcionada) |
-| Parámetros totales | 8.953.803.264 (aproximadamente 8,95 mil millones) |
-| Parámetros activos | no aplica (no hay indicios de arquitectura MoE) |
+| Arquitectura | Transformer (derivada de Qwen, etiquetada como qwen3.5 en metadatos); detalles no disponibles |
+| Parametros totales | 8.953.803.264 (aprox. 9B) |
+| Parametros activos | no disponible (no consta como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repositorio derivado; los pesos originales del modelo base no se especifican en la información proporcionada) |
-
-Metadatos adicionales de la conversión, extraídos de la model card: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`. No se declara `vocab_type` ni ficheros `mmproj`, lo que descarta (o al menos no documenta) capacidades multimodales.
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | ingles (segun model card) |
+| Licencia | CC-BY-NC-SA-4.0 |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base en los materiales proporcionados. El recuento de parámetros (8,95 mil millones) y el pipeline de conversión (`convert_type: hf`, es decir, partiendo de pesos en formato Hugging Face Transformers) son compatibles con un transformer decoder-only denso, pero esto es una inferencia y no un dato confirmado. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de ajuste fino supervisado, RLHF o DPO. El único indicio sobre la especialización es el propio nombre del modelo, WikiQwen, que apunta a un ajuste orientado a contenido enciclopédico o tipo wiki, sin que exista confirmación en la documentación disponible.
+La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un transformer derivado de Qwen (los tags indican "qwen3.5"). El modelo base es devon7y/WikiQwen-9B, que fue entrenado mediante LoRA y SFT (supervised fine-tuning) sobre un modelo Qwen preentrenado. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La innovación técnica de esta publicación es exclusivamente la cuantización. El autor aplica el pipeline estándar de llama.cpp (versión 2 del esquema de cuantización de tensores de salida) para generar doce variantes de precisión, desde F16 sin pérdida hasta Q2_K con compresión agresiva, pasando por el esquema IQ4_XS basado en cuantización con importancia. No se mencionan técnicas de decodificación especulativa, atención lineal ni ninguna otra modificación arquitectónica.
+La especializacion declarada es la generacion de contenido instructivo e ilustrado paso a paso, lo que sugiere que el dataset de ajuste fino contenia guias, tutoriales y documentacion estructurada en ingles. No se han publicado detalles sobre innovaciones tecnicas como decodificacion especulativa o mecanismos de atencion lineal.
 
 ## Capacidades
 
-La model card de este repositorio no documenta capacidades funcionales más allá de las etiquetas de Hugging Face: `gguf`, `endpoints_compatible`, `region:us` y `conversational`. En consecuencia:
-
-- Generación de texto conversacional: es la única capacidad respaldada explícitamente por las etiquetas del repositorio (`conversational`).
-- Razonamiento, matemáticas y generación de código: no documentado en la información disponible.
-- Soporte de tool calling o function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la información disponible.
-- Capacidades multilingües: no documentado; no se declara ningún idioma en la ficha.
-- Capacidades especiales (modo thinking, visión, audio): no documentado. La ausencia de ficheros `mmproj` en el listado de cuantizaciones indica que no se ha publicado un proyector multimodal para este repositorio, por lo que no cabe esperar visión.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face, sin que ello implique capacidades adicionales del modelo.
+- Generacion de texto conversacional en ingles, orientada a instrucciones y guias paso a paso.
+- Generacion de contenido instructivo e ilustrado ("how-to", tutoriales, documentacion estructurada).
+- Soporte de chat multi-turno (tag "conversational").
+- Compatibilidad con endpoints (tag "endpoints_compatible").
+- Capacidades de tool calling / function calling: no disponibles.
+- Capacidades de agentes y razonamiento multi-paso: no disponibles.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-Dado que no hay documentación sobre el rendimiento real del modelo, los casos siguientes se plantean como escenarios de uso viables para un transformer conversacional denso de ~9B en formato GGUF, y no como capacidades verificadas:
-
-- Asistente conversacional autoalojado: un modelo de ~9B cuantizado a Q4_K_M o Q5_K_M se ejecuta en una GPU de consumo con 8-12 GB de VRAM, lo que permite desplegar un chat interno sin depender de APIs externas ni enviar datos a terceros.
-- Generación y curación de contenido enciclopédico: si la especialización sugerida por el nombre se confirma, el modelo sería adecuado para redactar borradores de artículos, resúmenes de fuentes y normalización de entradas tipo wiki dentro de un pipeline editorial con revisión humana posterior.
-- Procesamiento por lotes en CPU: las variantes Q3_K_M y Q2_K permiten ejecutar inferencia sobre CPU con memoria RAM moderada, útil para tareas offline de resumen o clasificación de grandes volúmenes de texto donde la latencia no es crítica.
-- Prototipado rápido y evaluación interna: la disponibilidad de doce cuantizaciones permite medir la degradación de calidad frente al tamaño del fichero y decidir la configuración óptima antes de invertir en infraestructura.
-- Base para ajuste fino con LoRA o QLoRA en hardware limitado: al tratarse de un modelo denso de ~9B, cabe aplicar adaptadores de bajo rango sobre una única GPU de 24 GB, siempre que la licencia lo permita (actualmente no declarada).
-- Despliegue en el edge o en entornos aislados: GGUF es el formato de referencia de llama.cpp, por lo que el modelo puede empaquetarse en binarios autónomos para sistemas sin conectividad, como estaciones de trabajo en instalaciones industriales o de investigación.
-- Integración vía API compatible con OpenAI: llama.cpp y Ollama exponen endpoints compatibles, lo que permite sustituir un proveedor externo por esta instancia local sin reescribir el código cliente.
+- Generacion de documentacion tecnica paso a paso: el modelo esta ajustado especificamente para producir guias estructuradas, por lo que encaja en la redaccion de manuales y tutoriales en ingles.
+- Creacion de contenido educativo: puede generar lecciones ilustradas y explicaciones secuenciales para plataformas de formacion.
+- Asistente de soporte en ingles: su naturaleza conversacional permite gestionar interacciones multi-turno en escenarios de atencion al cliente de ambito tecnico.
+- Prototipado local en hardware de consumo: las cuantizaciones Q4_K_M (5,7 GB) permiten ejecutarlo en GPUs consumer de gama media-alta para pruebas rapidas.
+- Generacion de articulos de blog y guias practicas: adecuado para flujos de creacion de contenido editorial en ingles con estructura de pasos.
+- Base para experimentacion e investigacion: al ser un ajuste fino con LoRA sobre Qwen, sirve como punto de partida para estudiar tecnicas de especializacion en dominios concretos.
+- Integracion en pipelines de documentacion automatizada: mediante llama.cpp u Ollama, puede incorporarse a procesos de generacion de READMEs y guias de onboarding.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio se limita a los metadatos de cuantización y a la referencia al modelo base; no incluye MMLU, HumanEval, GSM8K ni ninguna otra métrica, y el repositorio del modelo base no ha sido consultado en detalle en los materiales proporcionados. No deben asumirse cifras de rendimiento a partir del nombre o del tamaño del modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Tamaños de pesos estimados a partir del recuento real de parámetros (8.953.803.264) y de los bits por parámetro habituales de cada esquema de llama.cpp. Son cálculos derivados, no datos publicados por el autor.
-
-| Cuantización | Peso aproximado en disco | VRAM estimada con contexto moderado |
-|---|---|---|
-| F16 | ~17,9 GB | ~20-22 GB |
-| Q8_0 | ~9,5 GB | ~11-12 GB |
-| Q6_K | ~7,3 GB | ~9-10 GB |
-| Q5_K_M | ~6,2 GB | ~8 GB |
-| Q4_K_M | ~5,4 GB | ~7 GB |
-| Q3_K_M | ~4,4 GB | ~6 GB |
-| Q2_K | ~3,0-3,3 GB | ~4-5 GB |
-
-- GPU recomendadas: para F16 o Q8_0, una A100 40 GB, H100 o RTX 6000 Ada ofrecen margen de sobra; para Q4_K_M y Q5_K_M basta una RTX 4090, RTX 4080, RTX 3090 o RTX 3060 de 12 GB.
-- Cabe en GPU de consumo: sí. Una RTX 3060 de 12 GB ejecuta Q4_K_M y Q5_K_M con contexto moderado; una RTX 4090 de 24 GB ejecuta Q8_0 e incluso F16 al límite. En Apple Silicon, 32 GB de memoria unificada permiten Q8_0 y 64 GB permiten F16.
-- Opciones de despliegue: llama.cpp (binario `llama-cli` o `llama-server`), Ollama, LM Studio, KoboldCpp, text-generation-webui y, con soporte limitado y sujeto a validación, vLLM. TGI no soporta GGUF de forma nativa.
-- Latencia y throughput: no disponibles. No se han publicado mediciones para este repositorio ni para el modelo base en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 4 GB con Q2_K, 5,5-5,7 GB con Q4_K_S/Q4_K_M, 7,5 GB con Q6_K, 9,6 GB con Q8_0 y 18 GB con f16.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090 para cuantizaciones Q4-Q8; A100 o H100 para f16 o despliegues de alta concurrencia.
+- Cabe en GPU consumer: si, en la mayoria de cuantizaciones; Q4_K_M requiere unos 6 GB de VRAM, asequible para GPUs de 8 GB o superiores.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparativa se establece por categoría de tamaño (~8-9B densos en formato GGUF). Los datos del modelo objeto de la ficha son los únicos confirmados aquí; los de los alternativas corresponden a sus fichas públicas y pueden variar.
-
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad GGUF |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WikiQwen-9B-GGUF | 8,95 mil millones | no disponible | no disponible | sí (12 cuantizaciones) |
-| Qwen3-8B | ~8,2 mil millones | 128K tokens | Apache 2.0 | sí, publicado por terceros |
-| Llama 3.1 8B | 8,03 mil millones | 128K tokens | Llama 3.1 Community License | sí, oficial y por terceros |
-| Qwen2.5-7B | 7,61 mil millones | 131.072 tokens | Apache 2.0 | sí, publicado por terceros |
+| WikiQwen-9B-GGUF | 8,95B | no disponible | CC-BY-NC-SA-4.0 | GGUF en Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (tipico) | Apache 2.0 | safetensors, GGUF |
+| Llama 3.1 8B Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF |
+| Mistral 7B Instruct | 7,2B | 32.000 tokens | Apache 2.0 | safetensors, GGUF |
 
-La diferencia crítica no es de rendimiento, que no puede evaluarse sin benchmarks, sino de certeza jurídica y de documentación: las tres alternativas declaran licencia explícita y contexto máximo, mientras que WikiQwen-9B-GGUF no declara ninguno de los dos, lo que dificulta su adopción en entornos comerciales.
+Nota: los datos de los modelos comparativos corresponden a especificaciones publicas conocidas; los de WikiQwen-9B se limitan a lo indicado en la informacion disponible. La principal desventaja competitiva de WikiQwen-9B es su licencia no comercial frente a las licencias permisivas de las alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica la licencia del modelo base ni la de esta conversión. Sin una licencia explícita, no puede asumirse permiso para uso comercial, redistribución o modificación. Es el riesgo más grave para producción.
-- Idiomas no declarados: no se indica qué lenguas soporta el modelo, ni si el entrenamiento fue monolingüe en inglés. Es probable que el rendimiento en castellano sea inferior al de un modelo con cobertura multilingüe confirmada, pero no hay datos para cuantificarlo.
-- Longitud de contexto desconocida: no se declara la ventana máxima. Cualquier diseño de aplicación que dependa de contexto largo (documentos extensos, conversaciones multi-turno largas) debe validarse empíricamente antes de comprometerse.
-- Riesgo de alucinación: no hay benchmarks ni evaluaciones de fidelidad publicadas. Si el ajuste está orientado a contenido enciclopédico, el riesgo de generar afirmaciones plausibles pero falsas con tono seguro es especialmente relevante en dominios factuales.
-- Sesgos: no se ha publicado ninguna evaluación de sesgos, toxicidad o comportamientos diferenciales por subgrupo. No puede descartarse ninguno.
-- Modelo base sin verificar en detalle: no se ha consultado la ficha de devon7y/WikiQwen-9B en los materiales disponibles, por lo que la procedencia de los pesos, la fecha de creación y el historial de entrenamiento quedan sin confirmar.
-- Procedencia de la cuantización: las cuantizaciones Q2_K y Q3_K_* implican pérdida notable de calidad respecto a F16. Para tareas que requieran precisión factual o razonamiento, no se recomienda bajar de Q4_K_M sin validación previa.
-- Popularidad nula: el repositorio registra 0 descargas y 0 likes en los datos proporcionados, lo que implica ausencia de validación por parte de la comunidad y de informes de fallos.
-- Fechas de creación y actualización poco habituales: los metadatos indican 2026-09-26, lo que puede deberse a un error de registro o a una fecha futura respecto al momento de la consulta; conviene verificarlo directamente en Hugging Face.
+- Licencia CC-BY-NC-SA-4.0: prohibido el uso comercial; ademas, las obras derivadas deben compartirse bajo la misma licencia.
+- Idioma limitado al ingles segun la model card; el rendimiento en castellano no esta garantizado.
+- Riesgo de alucinacion inherente a los modelos de ~9B, especialmente en contenido tecnico detallado.
+- Sesgos desconocidos: no se ha publicado informacion sobre evaluaciones de sesgo o seguridad.
+- Longitud de contexto no documentada, lo que dificulta planificar casos de uso con documentos largos.
+- Es una cuantizacion de terceros (mradermacher); la calidad puede variar respecto al modelo original en safetensors, especialmente en cuantizaciones bajas como Q2_K o Q3_K_M.
+- Sin benchmarks publicados: no es posible validar su rendimiento frente a alternativas con datos objetivos.
+- Modelo derivado de un ajuste LoRA sobre Qwen; puede heredar limitaciones del modelo base no documentadas.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta ficha: https://huggingface.co/mradermacher/WikiQwen-9B-GGUF
-- Modelo base declarado en la model card: https://huggingface.co/devon7y/WikiQwen-9B
-- Repositorio de llama.cpp (formato GGUF y herramientas de inferencia): https://github.com/ggml-org/llama.cpp
-- No se han encontrado papers, blogs, demos ni repositorios adicionales en la información proporcionada.
+- Repositorio GGUF: https://huggingface.co/mradermacher/WikiQwen-9B-GGUF
+- Modelo base: https://huggingface.co/devon7y/WikiQwen-9B
+- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/WikiQwen-9B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#WikiQwen-9B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -9,7 +9,7 @@
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "translation",
-  "library": "mlx",
+  "library": "basalt",
   "languages": [
     "en",
     "ja",
@@ -22,13 +22,13 @@
     "fr"
   ],
   "tags": [
-    "mlx",
+    "basalt",
     "safetensors",
     "gemma4_unified",
     "translation",
     "translategemma",
     "gemma4",
-    "basalt",
+    "mlx",
     "apple-silicon",
     "en",
     "ja",

@@ -81,11 +81,5 @@
       "value": 54.6
     }
   ],
-  "sources": [
-    {
-      "title": "Awesome Claude Video Skills - GitHub",
-      "url": "https://github.com/zhuyansen/awesome-claude-video-skills",
-      "snippet": "Awesome Claude Video Skills 中文 Open-source skills and toolkits that let Claude Code, Codex and other coding agents make …"
-    }
-  ]
+  "sources": []
 }

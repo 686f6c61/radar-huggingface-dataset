@@ -2,102 +2,106 @@
 
 ## Resumen
 
-JDI-Decision-V0.9 es un sistema multimodal de decisión desarrollado por JD.com (京东) y publicado en Hugging Face bajo el identificador `stupid-zwl/JDI-Decision-V0.9`. No es un modelo de lenguaje generativo al uso: su función es producir elecciones estructuradas y probabilidades por opción a partir de texto e imágenes, es decir, resolver tareas de decisión con un conjunto acotado de alternativas (por ejemplo, "¿qué dice este cartel: A) STOP o B) GO?"). Está construido sobre una base Qwen3.8-27B con adaptaciones de la arquitectura de decisión D3.
+JDI-Decision-V0.9 es un sistema multimodal de decision desarrollado por JD Industrials (京东工业), el brazo industrial de JD.com. Se construye sobre una base Qwen3.8-27B (etiquetada como `qwen3_5` en los tags del repositorio) con adaptaciones de la arquitectura de decision D3, y su proposito no es la generacion libre de texto sino la seleccion estructurada de opciones con probabilidades asociadas, tanto para entradas de texto como de imagen. Integra un encoder de vision propio, un componente OCR congelado basado en PaddleOCR v5 de Baidu y un backbone de decision que culmina en una capa de lectura en FP32.
 
-El sistema integra cuatro componentes: un codificador visual, un componente de reconocimiento de texto PaddleOCR v5 congelado (procedente del equipo PaddlePaddle de Baidu), un backbone de decisión y una etapa de lectura en FP32 que emite las probabilidades finales. Las ramas de OCR y de codificación visual se ejecutan en paralelo sobre una misma GPU, y la latencia reportada incluye todo el pipeline extremo a extremo.
+El modelo resuelve el problema de la toma de decisiones automatizada en contextos industriales: dada una imagen (por ejemplo, una senal, una etiqueta o un documento) y un conjunto de opciones con criterios definidos, devuelve la opcion seleccionada acompanada de su probabilidad. Esta orientado a evaluacion de sistemas de decision mas que a conversacion abierta, y su interes actual radica en que combina reconocimiento de texto visual con razonamiento sobre opciones, una combinacion poco frecuente en modelos abiertos de este tamano.
 
-El modelo tiene 26.085.330.160 parámetros (unos 26,1 mil millones) y el repositorio ocupa 52,2 GB. Es relevante para quienes necesitan un componente de decisión multimodal con salida probabilística calibrada y tooling de reproducción incluido, más que un chatbot generalista.
+Con aproximadamente 26.085 millones de parametros totales (26,09 B) y un repositorio de 52,2 GB en formato safetensors, se distribuye bajo licencia CC BY-NC 4.0, lo que restringe el uso comercial sin autorizacion expresa. La version V1 del modelo se ha trasladado a la organizacion JoyIndustrial, por lo que esta ficha corresponde exclusivamente a V0.9.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con arquitectura de decisión D3 sobre base Qwen3.8-27B; codificador visual + PaddleOCR v5 congelado + backbone de decisión + readout FP32 |
-| Parametros totales | 26.085.330.160 |
+| Arquitectura | Transformer multimodal con backbone Qwen3.8-27B y adaptaciones de decision D3; encoder de vision, OCR PaddleOCR v5 congelado y capa de lectura FP32 |
+| Parametros totales | 26.085.330.160 (~26,09 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors; el readout opera en FP32) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (los pesos OCR y las cabeceras de Paddle conservan sus terminos upstream) |
-| Formato de pesos | safetensors (libreria pytorch, con codigo personalizado `custom_code`) |
+| Licencia | CC BY-NC 4.0 (uso no comercial con atribucion; uso comercial requiere permiso separado) |
+| Formato de pesos | safetensors (libreria pytorch) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un sistema compuesto, no un transformer monolítico. La entrada de imagen se decodifica, se convierte a RGB y se redimensiona hasta un límite de píxeles antes de entrar en dos ramas paralelas: un codificador visual que extrae características de la imagen y un componente PaddleOCR v5 congelado que reconoce el texto presente. La transcripción OCR se inyecta en el estado mediante `state.image_text_transcription`, de modo que complementa la información visual en lugar de sustituirla. El backbone de decisión procesa conjuntamente las características visuales, el texto, la pregunta y las opciones, y un readout en FP32 genera la respuesta estructurada con probabilidades por opción.
+El sistema sigue un flujo de inferencia en dos ramas paralelas que se ejecutan de forma concurrente en una sola GPU. La primera rama es un encoder de vision que extrae caracteristicas de la imagen; la segunda es un componente OCR congelado basado en PaddleOCR v5, desarrollado por el equipo PaddlePaddle de Baidu, que reconoce el texto presente en la imagen. Las imagenes se decodifican, se convierten a RGB y se redimensionan para respetar un limite de pixeles antes de entrar en ambas ramas. El texto reconocido se incorpora al estado de la peticion mediante `state.image_text_transcription`, complementando —no sustituyendo— la informacion visual original.
 
-Cada petición se ejecuta en una única GPU y las características visuales solo se reutilizan dentro de esa misma petición. No se han publicado en la información disponible datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. La innovación destacable es la integración de un OCR congelado como módulo auxiliar dentro del pipeline de decisión, con verificación SHA256 de los archivos OCR descargados desde el hosting oficial de Paddle y un manifiesto de fuentes en `ocr_inference/ocr_sources.json`.
+El backbone de decision procesa conjuntamente las caracteristicas visuales, el texto transcrito, la pregunta y las opciones, y una capa de lectura en FP32 produce la respuesta estructurada junto con las probabilidades de cada opcion. Las caracteristicas visuales se reutilizan unicamente dentro de la misma peticion. No se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; la model card remite a una guia de reproduccion (REPRODUCE.md) para los detalles de la arquitectura base y del runtime de decision.
 
 ## Capacidades
 
-- Decisión multimodal estructurada: emite una elección entre opciones definidas por el usuario junto con la probabilidad asociada a cada una.
-- Procesamiento conjunto de texto e imagen, con preguntas, criterios y alternativas especificadas en la propia petición.
-- Reconocimiento de texto en imagen mediante PaddleOCR v5 congelado, integrado en el estado de la petición.
-- Salida probabilística calibrada a través de un readout en FP32, apta para umbrales y ranking de opciones.
-- Soporte de múltiples imágenes por petición (el parámetro `images` acepta una lista).
-- Punto de entrada de sistema completo (`ocr_inference.ComboEngine`) y punto de entrada interno del modelo de decisión (`inference.D3Engine`, sin OCR).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking, visión, audio: visión y OCR confirmados; thinking y audio no disponibles.
+- Decision estructurada entre opciones con criterios definidos, devolviendo la opcion elegida y su probabilidad.
+- Procesamiento multimodal de texto e imagen en una misma peticion.
+- Reconocimiento de texto en imagen mediante el componente OCR PaddleOCR v5 integrado.
+- Extraccion de caracteristicas visuales mediante encoder dedicado.
+- Soporte de preguntas con tipo `choice` e instrucciones y criterios por opcion.
+- Entrada de estado arbitrario (`state`) que permite transportar contexto adicional entre la pregunta y el modelo.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible (los idiomas no se documentan).
+- Modo de razonamiento explicito (thinking), audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Verificación documental automatizada: el sistema recibe la imagen de un documento y una pregunta con opciones (tipo de documento, presencia de firma, coherencia de campos) y devuelve la opción más probable con su probabilidad, lo que permite fijar umbrales de aceptación y derivar a revisión humana los casos de baja confianza.
-- Control de calidad en logística y almacén: clasificación de imágenes de paquetes o etiquetas con opciones predefinidas (correcto, dañado, ilegible), apoyándose en la rama OCR para leer números de seguimiento y en el readout probabilístico para priorizar inspecciones.
-- Moderación de contenido visual con criterios explícitos: cada petición define las opciones y sus criterios, de modo que el equipo puede ajustar la política sin reentrenar, y la probabilidad por opción sirve como señal de escalado.
-- Extracción de decisiones en lectura de carteles y señalética: el ejemplo de la model card (leer un cartel y elegir entre "STOP" y "GO") generaliza a paneles de control, pantallas de terminal y señalización industrial donde el OCR aporta el texto y el backbone resuelve la interpretación.
-- Enrutamiento de solicitudes en pipelines internos: usar la distribución de probabilidad sobre opciones como clasificador de intención multimodal, con latencia media reportada de 345,5 ms por petición en la configuración evaluada, adecuada para flujos interactivos.
-- Evaluación comparativa de sistemas de decisión: el paquete incluye guía de reproducción (`REPRODUCE.md`), manifiesto de exportación y hashes de payload, lo que permite reconstruir la suite y auditar respuestas y tiempos de una ejecución concreta.
-- Investigación sobre calibración probabilística: al conservar respuestas, probabilidades y timings de la ejecución evaluada, el dataset asociado sirve para estudiar la calibración del readout FP32 frente a la dificultad de la tarea.
+- Verificacion de senalizacion y etiquetas en entornos industriales: dada una fotografia de una senal o etiqueta y un conjunto de opciones cerradas ("STOP", "GO"), el sistema devuelve la lectura mas probable con su probabilidad, combinando el encoder de vision con la transcripcion OCR.
+- Inspeccion documental con opciones predefinidas: clasificar documentos escaneados en categorias cerradas (por ejemplo, tipo de albaran o estado de un formulario) aprovechando la rama OCR para el texto y la rama visual para el layout.
+- Control de calidad en linea de produccion: evaluar imagenes de piezas o componentes contra criterios de aceptacion definidos como opciones, usando la probabilidad devuelta como umbral de confianza para derivar casos dudosos a revision humana.
+- Enrutamiento de incidencias: dada una imagen de una incidencia y un conjunto de categorias de resolucion, seleccionar la categoria mas probable y usar la probabilidad como senal para el escalado automatico.
+- Extraccion de decisiones en pipelines de backoffice: integrar `ComboEngine` como paso de decision dentro de un flujo mayor, donde el estado (`state`) transporta contexto acumulado y la salida estructurada alimenta el siguiente paso.
+- Evaluacion comparativa de sistemas de decision: usar el paquete de reproduccion (`ocr_inference.ComboEngine`) y el conjunto publico Decision Index Vision para medir el comportamiento del sistema frente a alternativas sobre las mismas entradas.
+- Analisis de imagenes con texto denso: escenarios donde el texto es el contenido principal (carteles, paneles, capturas) y se necesita tanto la transcripcion como una decision sobre ella.
 
 ## Benchmarks y rendimiento
 
-El autor reporta una puntuación de 79,3601 en la suite pública Decision Index Vision, con 12.210 de 12.210 peticiones exitosas en 11 benchmarks. Se trata de una puntuación autodeclarada, no de un puesto confirmado en un leaderboard ni de la puntuación Full. La evaluación privada y la validación oficial de latencia en RTX PRO 6000 están pendientes según la model card.
+El autor reporta una puntuacion de **79,3601** en el conjunto publico Decision Index Vision, con 12.210 de 12.210 peticiones exitosas sobre 11 benchmarks. Se trata de una puntuacion autodeclarada, no de un rango confirmado en un leaderboard ni de la puntuacion completa (Full). La evaluacion privada y la validacion oficial de latencia en RTX PRO 6000 estan pendientes.
 
-Latencia por petición (incluye decodificación, OCR, codificación visual y forward de decisión; excluye carga, hashing de integridad y ejecuciones de profiling), medida con dos workers H200, una réplica completa del sistema por worker y una petición simultánea por GPU:
+La ejecucion se realizo con dos workers H200, cada uno con una replica completa del sistema y una peticion simultanea; cada peticion permanecio en una sola GPU. La latencia incluye decodificacion, OCR, codificacion visual y el forward de decision, y excluye carga, hashing de integridad y ejecuciones de profiling.
 
-| Metrica | Valor |
-|---|---|
+| Metrica de latencia | Valor |
+|---|---:|
 | Media | 345,5 ms |
 | P50 | 282,4 ms |
 | P80 | 426,8 ms |
 | P90 | 604,2 ms |
 
-No se han publicado resultados por benchmark individual (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Con 26,1 mil millones de parámetros en safetensors y un repositorio de 52,2 GB, la carga en precisión original requiere del orden de 52 GB solo para pesos, más el codificador visual, el OCR y las activaciones; el readout en FP32 añade overhead.
-- GPU recomendadas según la evaluación reportada: NVIDIA H200 (dos workers, una réplica completa por GPU). La model card menciona una validación de latencia pendiente en RTX PRO 6000.
-- GPU de consumo: no se han publicado datos que confirmen que quepa en GPU de consumo; por el tamaño de pesos, no es viable en tarjetas de 24 GB sin cuantización, y no se documentan recetas de cuantización.
-- Despliegue: el paquete incluye `ocr_inference/setup.sh` para crear un entorno Python 3.12 con CUDA y el punto de entrada `ocr_inference.ComboEngine`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: latencia media de 345,5 ms y P90 de 604,2 ms con una petición simultánea por GPU; el throughput agregado no se reporta.
+- VRAM estimada para inferencia: no disponible de forma explicita. Con 26,09 B de parametros en safetensors, los pesos en FP16 ocuparian aproximadamente 52 GB, lo que exige GPUs de 80 GB o configuraciones multi-GPU para ejecucion sin cuantizar; no se documentan variantes cuantizadas que reduzcan este requisito.
+- GPU recomendadas: el autor valida el sistema en H200 (una GPU por peticion) y menciona una validacion de latencia pendiente en RTX PRO 6000.
+- Compatibilidad con GPU de consumo: no confirmada. Por el tamano de pesos, no cabe en GPUs de consumo de 24 GB en precision completa; no se ofrecen pesos GGUF ni cuantizaciones para hacerlo viable.
+- Opciones de despliegue: el paquete incluye su propio entry point de inferencia (`ocr_inference.ComboEngine`) con un script de instalacion (`ocr_inference/setup.sh`) que descarga y verifica por SHA256 los archivos OCR oficiales de Paddle. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: media de 345,5 ms por peticion (P50 282,4 ms, P90 604,2 ms) en H200 con una peticion concurrente por GPU; el throughput agregado no se reporta.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparables publicados para este sistema, y la información proporcionada no identifica alternativas de la misma categoría (sistemas de decisión multimodal con salida probabilística). La comparación con modelos de lenguaje generalistas del mismo orden de parámetros no sería metodológicamente válida porque las tareas evaluadas son distintas.
+No se dispone de datos de rendimiento comparables de otros sistemas de decision multimodal en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible. A continuacion se contrastan caracteristicas estructurales con alternativas de la misma categoria de tamano.
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| JDI-Decision-V0.9 | 26,1 B | no disponible | Apache 2.0 | Decisión multimodal con opciones y probabilidades |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| JDI-Decision-V0.9 | ~26,09 B | no disponible | Decision multimodal con OCR integrado | CC BY-NC 4.0 | Hugging Face |
+| Qwen3 base (familia) | segun variante | no disponible | LLM generativo multimodal | Apache 2.0 en variantes abiertas | Hugging Face |
+| PaddleOCR v5 | no disponible | no disponible | OCR especializado | licencia upstream de Paddle | Paddle hosting oficial |
+
+La comparacion con modelos generativos de proposito general no es directa: JDI-Decision-V0.9 no esta disenado para generar texto libre sino para seleccionar entre opciones con probabilidad calibrada, lo que lo situa en una categoria funcional distinta.
 
 ## Limitaciones y advertencias
 
-- La puntuación de 79,3601 en Decision Index Vision es autodeclarada y corresponde a la suite pública, no a la puntuación Full ni a un ranking oficial de leaderboard.
-- La evaluación privada y la validación oficial de latencia en RTX PRO 6000 están pendientes según el propio autor, por lo que el rendimiento en producción fuera del entorno H200 evaluado no está verificado.
-- El sistema está diseñado para elegir entre opciones proporcionadas; no debe tratarse como un modelo generativo de propósito general ni como un chatbot.
-- La licencia Apache 2.0 cubre el modelo, pero los pesos OCR y las cabeceras de la build de Paddle conservan sus términos de licencia upstream, lo que exige revisión adicional para uso comercial.
-- El texto de transcripción OCR se excluye del export público del dataset de evaluación para no redistribuir contenido de benchmarks, lo que limita la reproducibilidad exacta de esa parte del pipeline.
-- No se han publicado datos sobre sesgos, tasas de alucinación, cobertura de idiomas ni longitud de contexto, lo que impide evaluar su comportamiento fuera de los benchmarks reportados.
-- La dependencia de un componente OCR congelado implica que los errores de reconocimiento de texto se propagan directamente a la decisión final.
-- El repositorio incluye código personalizado (`custom_code`), por lo que la carga requiere confiar en la implementación distribuida o revisarla.
+- Licencia CC BY-NC 4.0: el uso comercial requiere autorizacion separada de JD Industrials; los componentes de terceros (OCR Paddle y cabeceras de compilacion de Paddle) conservan sus propias licencias.
+- La puntuacion de 79,3601 en Decision Index Vision es autodeclarada y no verificada por un leaderboard; la evaluacion privada esta pendiente.
+- La validacion de latencia oficial en RTX PRO 6000 no se ha completado; las cifras de latencia publicadas corresponden a H200.
+- No se documentan la longitud de contexto, los idiomas soportados ni el regimen de cuantizacion, lo que limita la planificacion de despliegues en produccion.
+- El modelo devuelve probabilidades sobre opciones cerradas; no se especifica ningun procedimiento de calibracion ni de umbral de confianza, por lo que la probabilidad no debe interpretarse como certeza sin validacion propia.
+- La version V1 se ha trasladado a la organizacion JoyIndustrial; V0.9 es una version anterior y no debe asumirse que recibe mantenimiento.
+- El OCR congelado introduce una dependencia de un componente externo cuyo comportamiento en dominios especificos (fuentes, idiomas, ruido visual) no se documenta.
+- No se han publicado analisis de sesgos ni evaluaciones de robustez frente a entradas adversarias.
+- El repositorio tiene un volumen de 52,2 GB y requiere Python 3.12 con GPU CUDA; no se ofrecen alternativas ligeras de despliegue.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/stupid-zwl/JDI-Decision-V0.9
-- Dataset de resultados y metadatos de ejecución: https://huggingface.co/datasets/stupid-zwl/JDI-Decision-V0.9/tree/main/runs/vision-paddle-v5
-- Guía de reproducción: `REPRODUCE.md` (incluido en el repositorio)
-- Fuentes y hashes del OCR: `ocr_inference/ocr_sources.json` (incluido en el repositorio)
-- Model card en chino: `README.zh-CN.md` (incluido en el repositorio)
-- Paper, blog o demo adicionales: no disponible en la información proporcionada
+- Version V1 en la organizacion JoyIndustrial: https://huggingface.co/JoyIndustrial/JDI-Decision-V1
+- Dataset de resultados de evaluacion: https://huggingface.co/datasets/stupid-zwl/JDI-Decision-V0.9
+- Resultados de la ejecucion vision-paddle-v5: https://huggingface.co/datasets/stupid-zwl/JDI-Decision-V0.9/tree/main/runs/vision-paddle-v5
+- Guia de reproduccion (REPRODUCE.md): referenciada en la model card del repositorio
+- Licencia CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/

@@ -2,102 +2,116 @@
 
 ## Resumen
 
-qwen3.5-0.8b-travel-it-GGUF es un ajuste fino (LoRA fusionado y cuantizado) del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el autor pockettravel para la aplicación Android de código abierto Pocket Travel. Se trata de un asistente de viaje diseñado para funcionar 100 % en local (offline) en un teléfono, cuya tarea concreta es responder preguntas en italiano usando exclusivamente el CONTEXTO de guía turística que se le inyecta, con un límite de tres frases por respuesta y con rechazo explícito cuando el contexto no contiene la información solicitada.
+qwen3.5-0.8b-travel-it-GGUF es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3.5-0.8B, desarrollado por el usuario pockettravel para la aplicación Android Pocket Travel. Se trata de un asistente de viaje offline en italiano cuyo comportamiento está deliberadamente restringido: responde en un máximo de tres frases y utiliza exclusivamente la información contenida en el CONTEXTO que la aplicación inyecta en el prompt (secciones de la guía Wikivoyage recuperadas mediante búsqueda full-text en SQLite). Si el contexto no contiene la respuesta, el modelo lo declara explícitamente en lugar de improvisar.
 
-El modelo resuelve un problema acotado de generación aumentada por recuperación (RAG) en el borde: la aplicación busca en la guía Wikivoyage descargada (índice SQLite FTS), inserta una a tres secciones en el prompt y formula la pregunta. El modelo no está pensado como chatbot de propósito general ni como fuente de conocimiento: sin contexto útil debe negarse a responder. Con 752.393.024 parámetros (aproximadamente 0,75 B, comercializado como 0,8 B) y un único archivo GGUF Q4_K_M de 505 MiB, es lo bastante pequeño para caber en dispositivos móviles con unos 4 GB de RAM.
+El modelo tiene 752.393.024 parámetros y se distribuye únicamente en formato GGUF para llama.cpp, con dos cuantizaciones disponibles: Q5_K_M (versión actual, 528 MiB) y Q4_K_M (versión obsoleta, 505 MiB). El contexto de trabajo en la aplicación es de 4096 tokens. No es un chatbot de propósito general ni una fuente de conocimiento: sin contexto, el modelo rechaza la pregunta por diseño, lo que lo convierte en una pieza de una arquitectura RAG cerrada más que en un modelo conversacional autónomo.
 
-Su relevancia actual reside en la combinación de tres factores: un tamaño que permite inferencia en CPU de teléfono, una cuantización Q4_K_M calibrada con importance matrix que reduce la pérdida de calidad, y un entrenamiento orientado a la fiabilidad del rechazo (evitar alucinaciones cuando falta contexto), un comportamiento crítico en asistentes de viaje donde la información errónea tiene consecuencias reales. La licencia de los pesos es CC BY-SA 4.0, derivada de la licencia del material de entrenamiento (Wikivoyage y Wikipedia en italiano).
+Su relevancia actual radica en el enfoque de ingeniería: demuestra que un modelo de menos de mil millones de parámetros, cuantizado a 5 bits y ejecutable en un dispositivo móvil con 4 GB de RAM, puede alcanzar tasas de rechazo correcto superiores al 97% en preguntas sin respuesta en el contexto, muy por encima del modelo base sin ajustar (2-12%). La licencia cc-by-sa-4.0 permite uso comercial con atribución y compartir-al-igual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (modelo base Qwen3.5-0.8B); no disponible el detalle interno especifico |
-| Parametros totales | 752.393.024 (aprox. 0,75 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible el maximo del modelo base; la aplicacion y el ejemplo oficial usan 8192 tokens |
-| Tipos de cuantizacion | GGUF Q4_K_M con importance matrix (unico archivo publicado) |
-| Idiomas soportados | Italiano (respuesta) e ingles (entrada); entrenado para responder siempre en italiano |
-| Licencia | CC BY-SA 4.0 para los pesos; modelo base Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); sin proyector de vision (mmproj) |
+| Arquitectura | Transformer con atención completa y componentes SSM (según los tensores `attn_qkv` y `ssm_out` mencionados en la model card; detalles completos no disponibles) |
+| Parametros totales | 752.393.024 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 4096 tokens (configuración de la aplicación y de la evaluación) |
+| Tipos de cuantizacion | Q5_K_M con importance matrix (actual) y Q4_K_M con importance matrix (obsoleta); tensores Q6_K en atención completa y `ssm_out`, embeddings en Q5_K |
+| Idiomas soportados | Italiano (it) e inglés (en) |
+| Licencia | cc-by-sa-4.0 |
+| Formato de pesos | GGUF (llama.cpp); sin safetensors publicados en este repositorio |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del transformer decoder-only Qwen3.5-0.8B (un modelo de razonamiento o "thinking model" de Qwen) y se adapta mediante LoRA de 16 bits entrenado con Unsloth, fusionado posteriormente en los pesos base. El entrenamiento duro 2 epocas con la funcion de perdida aplicada unicamente a los tokens de respuesta (loss on answer tokens only), lo que concentra el aprendizaje en el formato y el estilo de salida en lugar de en la modelizacion del prompt.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer de 752 millones de parámetros. La model card menciona tensores de atención completa (`attn_qkv`) y un tensor `ssm_out`, lo que sugiere una arquitectura híbrida que combina atención con componentes de espacio de estados (SSM), aunque la ficha del autor no detalla la proporción ni la disposición de cada bloque. El ajuste se realizó con LoRA en 16 bits mediante Unsloth, con rango 16, alpha 32, tasa de aprendizaje 2e-4, batch efectivo de 16, secuencias de hasta 1024 tokens y una época. La pérdida se calculó únicamente sobre los tokens de respuesta y se ponderó por categoría de pregunta. Los adaptadores se fusionaron en los pesos base.
 
-El conjunto de datos esta compuesto por 7.317 pares sinteticos de pregunta y respuesta construidos a partir de Wikivoyage y Wikipedia en italiano (articulos de pais sobre cocina, cultura, telecomunicaciones y medios), con aproximadamente una cuarta parte de ejemplos de rechazo. Los contextos imitan la forma que genera la aplicacion: una a tres secciones, con secciones distractoras y hasta 2000 caracteres. Algunas preguntas estan en ingles, aunque el objetivo de respuesta es siempre el italiano. Una innovacion operativa destacable es la desactivacion del modo de razonamiento durante el entrenamiento (enable_thinking=False, con bloque `<think></think>` vacio en el prompt), de modo que el modelo debe ejecutarse tambien con thinking desactivado para reproducir el comportamiento aprendido. La cuantizacion se realizo con `llama-quantize` en Q4_K_M, con una matriz de importancia calibrada sobre 400 prompts de entrenamiento.
+El conjunto de entrenamiento consta de 34.171 pares sintéticos pregunta/respuesta (la model card se interrumpe en ese punto, por lo que la composición completa del dataset no está disponible). Se citan como fuentes los datasets soniawmeyer/travel-conversations-finetuning, sapienzanlp/truthful_qa_italian, DanielSc4/alpaca-cleaned-italian, PaDaS-Lab/webfaq y apple/mkqa. La plantilla de chat es ChatML simple, sin bloque `<think>` ni `enable_thinking`. La cuantización Q5_K_M se eligió tras medir una divergencia KL media de 0,020 frente a 0,057 de Q4_K_M sobre texto de guía reservado (64% menos), con un archivo solo un 5% mayor.
 
 ## Capacidades
 
-- Generacion de texto extractiva en italiano: responde en un maximo de tres frases usando solo el CONTEXTO proporcionado.
-- RAG cerrado: formatea respuestas ancladas al texto de guia inyectado, sin recurrir a conocimiento parametrico.
-- Rechazo explicito: cuando el contexto no contiene la respuesta, lo declara explicitamente en lugar de inventar.
-- Filtrado de preguntas fuera de tema: rechaza consultas ajenas al dominio de viaje segun el entrenamiento.
-- Manejo de preguntas parafraseadas y de contextos con secciones distractoras.
-- Entrada multilingue parcial: acepta preguntas en italiano e ingles, aunque responde siempre en italiano.
-- Generacion de texto conversacional de un solo turno (pipeline text-generation); no hay evidencia de soporte de tool calling, function calling ni razonamiento multi-paso en agentes.
-- Capacidad de vision del modelo base no disponible: el GGUF se convirtio sin proyector de vision, por lo que es exclusivamente texto.
+- Generación de texto en italiano restringida a un máximo de tres frases por respuesta.
+- Respuesta fundamentada exclusivamente en el contexto proporcionado en el prompt (comportamiento RAG cerrado).
+- Rechazo explícito cuando el contexto no contiene la información necesaria, con tasas medidas del 92,5-100% según la categoría de pregunta.
+- Manejo de preguntas sobre países, ciudades, historia, clima, lugares cercanos ("qué hay cerca de mí") y salidas o transportes.
+- Comprensión de preguntas formuladas fuera de las plantillas de entrenamiento (la evaluación usa preguntas parafraseadas).
+- Soporte de conversación multi-turno vía plantilla ChatML, aunque el uso previsto es de un solo turno pregunta-contexto.
+- Modelo solo texto: no incluye proyector multimodal (`mmproj`) ni capacidades de visión.
+- No dispone de tool calling, function calling ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistente de viaje offline en movil: integrado en la app Pocket Travel, responde a preguntas del usuario sobre la guia descargada de una region sin conexion a internet, con latencia aceptable en CPU de telefono.
-- RAG sobre guias Wikivoyage: la app indexa las secciones con SQLite FTS, recupera una a tres secciones relevantes y el modelo compone la respuesta anclada a ese texto.
-- Consultas de cultura, cocina y costumbres: al haber sido entrenado con articulos de pais de Wikipedia y Wikivoyage, cubre preguntas sobre gastronomia, cultura y comunicaciones de un destino.
-- Reduccion de alucinaciones en asistencia turistica: la alta tasa de rechazo medida permite desplegarlo en escenarios donde una respuesta inventada sobre precios, horarios o requisitos de entrada seria perjudicial.
-- Sistema de preguntas y respuestas de un solo turno con contexto controlado: adecuado para cualquier pipeline que requiera respuestas cortas y fieles a un fragmento de documento, no solo viajes.
-- Despliegue en hardware muy limitado: al ocupar 505 MiB en Q4_K_M y sugerir 4 GB de RAM, puede ejecutarse en telefonos de gama media, Raspberry Pi o mini-PC sin GPU.
-- Prototipado de asistentes de dominio cerrado: sirve como plantilla de ajuste fino por LoRA sobre un modelo pequeno para tareas de rechazo y respuesta extractiva.
-- Filtro de preguntas fuera de alcance: la capacidad de rechazar consultas fuera de tema puede reutilizarse como capa de control en asistentes especializados.
+- Asistente de viaje offline en Android: la aplicación Pocket Travel recupera secciones de la guía Wikivoyage descargada mediante SQLite FTS y las inyecta como contexto; el modelo responde en italiano con la información de la guía sin conexión a red, ocupando unos 623 MiB en ejecución.
+- Atención de consultas turísticas con garantía de no alucinación: en escenarios donde una respuesta inventada sobre horarios, precios o transporte tendría consecuencias prácticas, el modelo declara la ausencia de datos en lugar de especular, con un 100% de rechazo en contextos vacíos.
+- Integración en pipelines RAG de bajo consumo: sirve como generador final en arquitecturas de recuperación sobre corpus documentales pequeños (guías, folletos, FAQ) desplegadas en hardware con 4 GB de RAM o más.
+- Filtro de respondibilidad: puede emplearse para decidir si el contexto recuperado basta para responder, antes de escalar a un modelo mayor o a un operador humano, gracias a su tasa de rechazo del 99,1% en preguntas fuera de tema.
+- Despliegue en dispositivos de gama baja o entornos sin GPU: con 528 MiB de pesos y 623 MiB en uso medido en CPU x86 con llama.cpp, es viable en teléfonos, Raspberry Pi y portátiles sin acelerador dedicado.
+- Prototipado rápido de asistentes verticales en italiano: la receta LoRA (rango 16, una época, pérdida ponderada por categoría) es reproducible para otros dominios con presupuesto de entrenamiento mínimo.
+- Evaluación comparativa de cuantizaciones: el repositorio conserva la versión Q4_K_M obsoleta junto a la Q5_K_M actual, lo que permite medir el impacto de la cuantización en la tasa de rechazo sobre las mismas preguntas.
 
 ## Benchmarks y rendimiento
 
-Evaluacion sobre un conjunto de prueba retenido de 361 preguntas escritas a mano sobre 11 regiones nunca vistas en entrenamiento, formuladas fuera de las plantillas de entrenamiento. Metricas de rechazo (mayor es mejor en negativos, menor es mejor en positivos), evaluado en GGUF con llama.cpp:
+Evaluación sobre 741 preguntas reservadas de 11 países no vistos en entrenamiento, con contextos construidos como en la aplicación, decodificación greedy en llama.cpp y el mismo prompt. El modelo base de comparación es unsloth/Qwen3.5-0.8B-GGUF UD-Q4_K_XL.
 
-| Metrica | Este modelo | Modelo base (Unsloth UD-Q4_K_XL) |
+| Grupo (preguntas) | Este modelo | Modelo base |
 |---|---|---|
-| Rechaza cuando el contexto no tiene informacion util | 100 % | 23 % |
-| Rechaza preguntas fuera de tema | 100 % | 6 % |
-| Rechaza preguntas parafraseadas cuyo tema falta en el contexto | 96 % | 15 % |
-| Rechaza incorrectamente preguntas parafraseadas respondibles | 3 % | 5 % |
+| Rechaza correctamente (mayor es mejor) | | |
+| Contexto vacío, sin texto de guía (44) | 100% | 2,3% |
+| Preguntas fuera de tema (110) | 99,1% | 6,4% |
+| País, tema ausente del contexto (43) | 100% | 2,3% |
+| Ciudad, tema ausente de la página (120) | 96,7% | 2,5% |
+| Historia o clima de ciudad no cubiertos (8) | 100% | 0% |
+| "Qué hay cerca de mí" sin lugar cercano (40) | 92,5% | 12,5% |
+| Salidas sin coincidencia (10) | 80% | 0% |
+| Rechaza incorrectamente preguntas respondibles (menor es mejor) | | |
+| Preguntas de país (158) | 3,8% | 1,3% |
+| Preguntas de ciudad (50) | 2% | 2% |
+| Historia o clima de ciudad (24) | 0% | 0% |
+| "Qué hay cerca de mí" (120) | 25% | 7,5% |
+| Salidas (14) | 0% | 7,1% |
 
-Se considera rechazo cualquier respuesta reconocible del tipo "el contexto no lo dice" en los primeros 200 caracteres. No se han publicado en la informacion disponible resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni similares) para este ajuste.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card advierte que la baja tasa de rechazos incorrectos del modelo base se debe a que apenas rechaza: cuando no rechaza, responde con conocimiento propio o con texto que no contesta la pregunta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,5 GB para los pesos en Q4_K_M; con overhead de contexto (8192 tokens) el consumo practico se situa en torno a 1-1,5 GB, aunque no se especifica oficialmente.
-- RAM de dispositivo sugerida: 4 GB, segun la propia model card.
-- GPU recomendadas: no disponibles; el modelo esta orientado a inferencia en CPU. Puede ejecutarse en cualquier GPU con suficiente memoria (por ejemplo, tarjetas consumer con 2 GB o mas), pero no se documentan recomendaciones especificas.
-- Cabe en GPU consumer: si, con holgura; incluso en iGPU y en CPU de movil.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), y por compatibilidad GGUF tambien Ollama. vLLM y TGI no estan documentados para este archivo.
-- Configuracion de referencia: `llama-server -m qwen3.5-0.8b-travel-it-Q4_K_M.gguf -c 8192 --chat-template-kwargs '{"enable_thinking": false}'`.
-- Latencia y throughput: no disponibles. Al ser un modelo de 0,75 B en CPU movil, el rendimiento dependera del dispositivo; no se aportan cifras.
+- VRAM/RAM en uso: 623 MiB con Q5_K_M y 600 MiB con Q4_K_M, medidos con llama.cpp en CPU x86 con contexto 4096, batch 512 y caché KV en f16; incluye pesos, caché KV, estado recurrente y buffers de cómputo.
+- RAM de dispositivo recomendada por el autor: 4 GB o más. El modelo y la aplicación ocupan aproximadamente el 24% de esa memoria (unos 0,4 GB para la app).
+- GPU: no se especifican modelos recomendados; el caso de uso objetivo es CPU móvil y x86. Cabe en cualquier GPU consumer con más de 1 GB de VRAM libre (GTX 1050, RTX 3050 en adelante), aunque el autor no publica cifras para GPU.
+- Despliegue: llama.cpp mediante `llama-server -m qwen3.5-0.8b-travel-it-Q5_K_M.gguf -c 4096`; compatible con el ecosistema GGUF (Ollama, LM Studio) al usar plantilla ChatML estándar, aunque no se documentan integraciones específicas.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazo sin contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| qwen3.5-0.8b-travel-it-GGUF (este) | 0,75 B | 8192 (config. de app) | 100 % | CC BY-SA 4.0 | GGUF, Hugging Face |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | 23 % | Apache-2.0 | Pesos originales, Hugging Face |
-| Otros ajustes finos de viaje/RAG de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
+| qwen3.5-0.8b-travel-it (este) | 752 M | 4096 | RAG cerrado, rechazo explícito, italiano | cc-by-sa-4.0 | GGUF |
+| Qwen3.5-0.8B (base) | 752 M | no disponible en la ficha | Chatbot generalista | no disponible en la ficha | safetensors, GGUF |
+| Qwen3.5-2B travel (colección Pocket Travel) | ~2B | no disponible | Mismo enfoque, mayor tamaño | no disponible en la ficha | GGUF |
+| Qwen3.5-4B travel (colección Pocket Travel) | ~4B | no disponible | Mismo enfoque, mayor tamaño | no disponible en la ficha | GGUF |
 
-La comparacion directa relevante es con su modelo base: el ajuste incrementa la tasa de rechazo correcto del 23 % al 100 % en contextos sin informacion util, a costa de un ligero aumento de rechazos incorrectos (3 % frente a 5 % del base). No se dispone en la informacion proporcionada de otros modelos comparables de la misma categoria para ampliar la tabla.
+La comparación cuantitativa disponible se limita al modelo base: este ajuste eleva el rechazo correcto en contexto vacío del 2,3% al 100% y en preguntas fuera de tema del 6,4% al 99,1%, a costa de un aumento del rechazo incorrecto en preguntas de proximidad (del 7,5% al 25%). No se dispone de datos de benchmarks frente a otros asistentes de viaje o modelos pequeños de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La calidad y vigencia de las respuestas dependen exclusivamente del texto de guia presente en el contexto; precios, horarios, requisitos de entrada y seguridad deben verificarse con fuentes oficiales antes de viajar.
-- Entrenado para responder en italiano: las preguntas en ingles reciben respuesta en italiano.
-- Puede reproducir frases de las guias de origen de forma literal, lo que condiciona la licencia de los pesos (CC BY-SA 4.0).
-- Riesgo de alucinacion reducido pero no nulo: el modelo esta optimizado para negarse cuando falta contexto, pero no se garantiza el 100 % en todos los dominios; ademas, un 3 % de rechazos incorrectos implica que en ocasiones se negara a responder preguntas respondibles.
-- No es un chatbot de proposito general ni una fuente de conocimiento autonomo: sin contexto debe negarse, por lo que su uso fuera del patron RAG produce resultados deficientes.
-- Modo de razonamiento desactivado en entrenamiento: ejecutarlo con thinking activado puede degradar el comportamiento aprendido.
-- Sin soporte de vision en este GGUF (no incluye proyector mmproj), pese a que el modelo base puede procesar imagenes.
-- Sin evidencia de soporte de tool calling, function calling ni razonamiento multi-paso; no apto para agentes.
-- Licencia CC BY-SA 4.0 en los pesos (copyleft) frente al Apache-2.0 del modelo base: el uso comercial esta permitido, pero impone obligaciones de atribucion y de compartir bajo la misma licencia las obras derivadas; conviene revisar `ATTRIBUTION.tsv` y las condiciones antes de un despliegue comercial.
-- El repositorio tiene 0 descargas y 0 "me gusta" en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
-- No se incluye contenido de Viaggiare Sicuri (Farnesina), por lo que no debe considerarse asesoramiento oficial de seguridad en viajes.
+- Sin contexto, el modelo rechaza por diseño: no debe desplegarse como chatbot general ni como fuente de conocimiento autónoma.
+- Tasa de rechazo incorrecto del 25% en preguntas de proximidad ("qué hay cerca de mí"), el punto débil más acusado frente al modelo base (7,5%).
+- Tasa de rechazo incorrecto del 3,8% en preguntas de país y del 2% en preguntas de ciudad, ligeramente superiores a las del modelo base.
+- El archivo Q4_K_M está marcado como obsoleto, entrenado con un dataset anterior y con un 20,2% de rechazo incorrecto; solo debe usarse para pruebas o por compatibilidad con Pocket Travel 0.13 y anteriores.
+- Idiomas limitados a italiano e inglés; el comportamiento entrenado y evaluado es en italiano.
+- Riesgo de alucinación residual: aunque el entrenamiento penaliza responder sin contexto, no se documenta una garantía formal de fidelidad al contexto en todos los casos.
+- Sesgos: no se documentan análisis de sesgo; al depender de guías Wikivoyage, hereda los sesgos y lagunas de esa fuente.
+- Licencia cc-by-sa-4.0: permite uso comercial con atribución y obligación de compartir las obras derivadas bajo la misma licencia, lo que puede ser incompatible con productos propietarios que no quieran liberar modificaciones.
+- La model card está truncada en la sección de entrenamiento (composición completa del dataset y detalles de la arquitectura no disponibles).
+- Contexto máximo de 4096 tokens: insuficiente para guías extensas o conversaciones largas sin recorte de secciones.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-it-GGUF
+- Colección Pocket Travel: https://huggingface.co/collections/pockettravel/pocket-travel
+- Aplicación Pocket Travel (GitHub): https://github.com/miracle091/pocket-travel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Repositorio de la aplicacion Pocket Travel: https://github.com/miracle091/pocket-travel
+- GGUF del modelo base usado en la evaluación: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
+- Dataset de conversaciones de viaje: https://huggingface.co/datasets/soniawmeyer/travel-conversations-finetuning
+- Dataset TruthfulQA italiano: https://huggingface.co/datasets/sapienzanlp/truthful_qa_italian
+- Dataset Alpaca limpio italiano: https://huggingface.co/datasets/DanielSc4/alpaca-cleaned-italian
+- Dataset WebFAQ: https://huggingface.co/datasets/PaDaS-Lab/webfaq
+- Dataset MKQA: https://huggingface.co/datasets/apple/mkqa

@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Frequently Asked Questions (FAQ) - KI-Campus",
-      "url": "https://ki-campus.org/faq",
-      "snippet": "KI-Campus FAQ: Finde Antworten zu kostenlosen Lernangeboten, Registrierung, Kursen, Bescheinigungen, technischer Hilfe und …"
-    },
-    {
-      "title": "KI-Campus | Die Lernplattform für Künstliche Intelligenz",
-      "url": "https://ki-campus.org/",
-      "snippet": "Künstliche Intelligenz lernen: Starte jetzt auf dem KI-Campus mit kostenlosen Onlinekursen, Videos, Podcasts und Tools. Erhalte …"
-    },
-    {
-      "title": "KI-Campus - Stifterverband",
-      "url": "https://www.stifterverband.org/ki-campus",
-      "snippet": "Die eigenen Kurse des KI-Campus stehen unter einer offenen Lizenz und können flexibel weiterverwendet werden. Exzellente …"
-    },
-    {
-      "title": "KI-Campus – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/KI-Campus",
-      "snippet": "Der KI-Campus ist eine Lernplattform, die Onlinekurse, Videos und Podcasts zum Thema Künstliche Intelligenz anbietet. Die …"
-    },
-    {
-      "title": "Der KI-Campus - open.hpi.de",
-      "url": "https://open.hpi.de/pages/KICampus?locale=de",
-      "snippet": "Das primäre Ziel des Projekts KI-Campus ist es ein breites Spektrum an Interessierten in Deutschland im Bereich KI aus- und …"
-    }
-  ]
+  "sources": []
 }

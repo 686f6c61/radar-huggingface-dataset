@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Accueil - Minima",
-      "url": "https://minima.fr/",
-      "snippet": "Découvrez l'univers de Minima avec nos lunettes inspirées par le Wellness Eyewear. Des lunettes innovantes et stylées pour toute la …"
-    },
-    {
-      "title": "minima-ai/mnma_qwen3.8_27b_nvfp4 · Hugging Face",
-      "url": "https://huggingface.co/minima-ai/mnma_qwen3.8_27b_nvfp4",
-      "snippet": "mnma Qwen3.8-27B NVFP4 (Minima) A fully W4A4 build of Qwen3.8-27B by post-training quantization alone: every one of the 496 backbone linear layers — all 48 Gated DeltaNet (GDN) layers and their gate projections included — quantized to NVFP4, plus calibrated FP8 KV-cache scales. No quantization-aware training, no distillation — calibration only. Early public 4-bit builds of this model ..."
-    },
-    {
-      "title": "Boutique - Minima",
-      "url": "https://minima.fr/boutique/",
-      "snippet": "Découvrez l'univers de Minima avec nos lunettes inspirées par le Wellness Eyewear. Des lunettes innovantes et stylées pour toute la …"
-    },
-    {
-      "title": "Minima Paper Fully Quantizes Qwen3.8-27B to NVFP4 W4A4 Including Gated ...",
-      "url": "https://aiweekly.co/alerts/minima-paper-fully-quantizes-qwen38-27b-to-nvfp4-w4a4-including-gated-deltanet",
-      "snippet": "EmailSubscribeAlso get breaking AI alerts Summary The Minima paper quantizes all 496 linear layers of Qwen3.8-27B — including the 48 Gated DeltaNet blocks every prior recipe kept at FP8/BF16 — to NVFP4 W4A4, and matches BF16 within seed noise on MMLU-Pro, GSM8K, AIME'25, GPQA-Diamond, LiveCodeBench, and RULER at 64K."
-    },
-    {
-      "title": "Définitions : a minima - Dictionnaire de français Larousse",
-      "url": "https://www.larousse.fr/dictionnaires/francais/a_minima/51613",
-      "snippet": "En orthographe traditionnelle (non réformée), le a ne prend pas d'accent, comme dans a priori : faire appel a minima (de la locution …"
-    }
-  ]
+  "sources": []
 }

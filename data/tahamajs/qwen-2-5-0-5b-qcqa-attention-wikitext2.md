@@ -2,101 +2,104 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-qcqa-attention-wikitext2` es un checkpoint experimental derivado de `Qwen/Qwen2.5-0.5B` en el que se han sustituido quirúrgicamente los bloques de atencion del decodificador por el operador `QCQAAttention` (Quality and Capacity-Aware Grouped Query Attention) del registro `ATTENTION_REGISTRY` del proyecto NeuralOps. El objetivo no es ofrecer un modelo listo para produccion, sino servir como banco de pruebas reproducible para medir el impacto de operadores de atencion subcuadraticos sobre un transformer pequeno ya entrenado.
+`tahamajs/qwen-2.5-0.5b-qcqa-attention-wikitext2` es un checkpoint experimental derivado de `Qwen/Qwen2.5-0.5B` en el que el autor (tahamajs) ha sustituido quirúrgicamente los bloques de atención del decoder por el operador `QCQAAttention` (Quality and Capacity-Aware Grouped Query Attention) del registro `ATTENTION_REGISTRY` del proyecto NeuralOps. No es un modelo nuevo entrenado desde cero, sino un ejercicio de "cirugía de atención" más destilación de conocimiento para recuperar la calidad perdida tras el reemplazo.
 
-El autor aplica una topologia de sustitucion `hybrid_3_1`: 18 de las 24 capas del decodificador adoptan `qcqa_attention`, mientras que 6 capas ancla conservan la atencion cuadratica original de Qwen2 en los indices `[3, 7, 11, 15, 19, 23]`. Sobre esa arquitectura hibrida se ejecuta una destilacion de conocimiento en dos etapas (alineamiento con backbone congelado y destilacion multi-capa) sobre WikiText-2, que reduce la perplejidad de validacion desde 139,14 (baseline post-cirugia sin entrenar) hasta 25,35.
+El modelo conserva la arquitectura base de Qwen2.5-0.5B (transformer decoder-only con GQA, RoPE y SwiGLU, 896 de hidden size, 14 cabezas de query y 2 de KV con `head_dim=64`) pero intercala 18 de sus 24 capas con atención QCQA y mantiene 6 capas con atención cuadrática completa como anclas (patrón `hybrid_3_1`, índices `[3, 7, 11, 15, 19, 23]`). El ajuste se realiza sobre WikiText-2 mediante destilación en dos etapas desde el modelo base original, alcanzando una perplejidad de validación de 25,35.
 
-El modelo es relevante para investigadores interesados en eficiencia de atencion, ya que publica telemetria detallada del proceso de recuperacion de capacidad tras la sustitucion del operador, con tiempos, pasos y VRAM pico. Se distribuye unicamente con pesos de atencion (161,51 MB) y requiere recomponer el modelo base Qwen2.5-0.5B mediante el adaptador `QwenAttentionAdapter` para poder ejecutarse.
+Su relevancia es fundamentalmente investigadora: sirve como banco de pruebas reproducible para evaluar si un operador de atención subcuadrática puede sustituir a la atención estándar en un LLM pequeño sin degradar gravemente la modelización del lenguaje, y para medir el coste de recuperación vía knowledge distillation. No está pensado como modelo de producción conversacional, pese a la etiqueta `text-generation`, y sus pesos publicados son únicamente los de atención (161,51 MB), no el checkpoint completo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) con sustitucion hibrida de atencion: 18/24 capas con `QCQAAttention`, 6/24 capas con atencion cuadratica Qwen2 original |
-| Parametros totales | no disponible (deriva de Qwen2.5-0.5B, ~0,5 mil millones) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (heredada de Qwen2.5-0.5B, no declarada en la model card) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors FP16; no se declaran GGUF ni otras variantes) |
+| Arquitectura | Transformer decoder-only (Qwen2) con atención híbrida: 18/24 capas con `QCQAAttention` y 6/24 con atención cuadrática completa (patrón `hybrid_3_1`) |
+| Parametros totales | 0,5 mil millones (heredados de Qwen2.5-0.5B; no se declara recuento propio) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada; el entrenamiento usa `seq_len=512` |
+| Tipos de cuantizacion | no disponible (solo se documentan pesos en FP16/Safetensors) |
 | Idiomas soportados | en |
 | Licencia | MIT |
-| Formato de pesos | safetensors (`attention_weights.safetensors`, 161,51 MB) + `config.json` + `tokenizer.json` |
+| Formato de pesos | safetensors (`attention_weights.safetensors`, 161,51 MB) más `config.json` y `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Qwen/Qwen2.5-0.5B`, un transformer decoder-only con `hidden_size=896`, 14 cabezas de consulta, 2 cabezas KV y `head_dim=64` (GQA 14:2). Sobre esa base se aplica una cirugia de atencion con patron `hybrid_3_1`: 18 de las 24 capas se reemplazan por `QCQAAttention` mediante `QwenAttentionAdapter`, con expansion automatica de cabezas KV (7x) donde es necesario y contrato de bypass con una unica `o_proj`. Las 6 capas restantes (indices 3, 7, 11, 15, 19 y 23) se mantienen como anclas cuadraticas para preservar estabilidad.
+El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con 24 capas, `hidden_size=896`, 14 cabezas de query y 2 de KV (`head_dim=64`), RoPE y GQA nativo. Sobre esa base se aplica un `QwenAttentionAdapter` que sustituye la atención en 18 capas por `QCQAAttention`, un operador con soporte causal, bidireccional, cross-attention, GQA nativo, RoPE y operador de atención personalizado. Las 6 capas restantes (índices 3, 7, 11, 15, 19, 23) mantienen atención cuadrática completa como anclas, dando lugar al patrón intercalado `hybrid_3_1`. El adaptador gestiona una expansión 7x de cabezas KV cuando es necesario y respeta el contrato de `o_proj` único.
 
-El operador `QCQAAttention` soporta atencion causal autoregresiva, bidireccional, cross-attention, GQA nativo y RoPE, y se registra como atencion personalizada (`is_custom_attention`). El entrenamiento consiste en una destilacion de conocimiento en dos etapas sobre `Salesforce/wikitext` (`wikitext-2-raw-v1`): la etapa 1 (alineamiento con backbone congelado, `lm_head` en bypass) usa MSE y coseno de estados ocultos con peso 0,25 durante 130 pasos (54,5 s); la etapa 2 (destilacion de representaciones multi-capa) usa los mismos objetivos con peso 0,50 durante 298 pasos (125,5 s). En total, 428 pasos y 180,2 s con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando una VRAM pico de 15.970 MB en FP16 con parametros maestros en FP32.
+El entrenamiento es una destilación de conocimiento en dos etapas sobre `wikitext-2-raw-v1`. La etapa 0 (post-cirugía, sin ajuste) arroja una perplejidad causal de 139,14. La etapa 1 (alineación con backbone congelado, `lm_head` bypassado, MSE y coseno a nivel de capa con peso 0,25) dura 130 pasos (54,5 s). La etapa 2 (destilación multi-capa de representaciones, MSE y coseno con peso 0,50) dura 298 pasos (125,5 s). En total, 428 pasos de optimización en 180,2 s con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando un pico de VRAM de 15.970 MB en FP16 con parámetros maestros en FP32. La perplejidad final es 25,35, una mejora de 113,79 puntos respecto al baseline post-cirugía.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva (tarea principal declarada: causal language modeling).
-- Soporte de atencion causal, bidireccional y cross-attention a nivel de operador (segun el perfil del modulo `QCQAAttention`).
-- Soporte nativo de GQA y RoPE en las capas sustituidas.
-- Capacidad multilingue limitada al ingles (`language: en`).
-- No se declaran capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
-- El checkpoint publicado contiene unicamente pesos de atencion; el resto de pesos debe cargarse desde Qwen2.5-0.5B.
+- Generación de texto causal autorregresiva en inglés, limitada al dominio y la distribución de WikiText-2.
+- Modelización del lenguaje y cálculo de perplejidad, que es la métrica para la que fue entrenado y validado.
+- Soporte nativo de GQA y RoPE en las capas QCQA, lo que permite reutilizar el tokenizador y el pipeline de Qwen2.5-0.5B.
+- Soporte de atención bidireccional y cross-attention a nivel de operador (según la tabla de capacidades del módulo), aunque el checkpoint se entrena y evalúa en modo causal.
+- No se documenta soporte de tool calling, function calling, agentes, multi-step reasoning, visión, audio ni modo de razonamiento explícito.
+- Capacidad multilingüe: solo inglés declarado (`language: en`); no se garantiza comportamiento en otros idiomas.
 
 ## Casos de uso
 
-- Investigacion en eficiencia de atencion: permite comparar la perplejidad de un operador subcuadratico (`qcqa_attention`) frente a la atencion cuadratica original sobre el mismo backbone, con telemetria reproducible de las dos etapas de destilacion.
-- Reproduccion de experimentos de cirugia de atencion: el parche `apply_qwen_attention_surgery` y el patron `hybrid_3_1` permiten replicar el procedimiento sobre otras variantes de Qwen2.5 para estudiar la recuperacion de capacidad.
-- Benchmarking de destilacion de conocimiento: el modelo publica metricas de perplejidad antes y despues de la destilacion (139,14 frente a 25,35), util como linea base para comparar estrategias de KD en modelos pequenos.
-- Validacion de adaptadores de atencion: sirve para probar el contrato de `QwenAttentionAdapter` (expansion de cabezas KV, Single-`o_proj`) antes de desplegarlo en modelos de mayor tamano.
-- Prototipado educativo: con 0,5 mil millones de parametros y pesos de atencion de 161,51 MB, el modelo cabe en GPUs de consumo y permite experimentar con operadores de atencion personalizados sin infraestructura grande.
-- Estudio de trade-offs precision-eficiencia: la mezcla 18/24 capas subcuadraticas frente a 6/24 cuadraticas ofrece un punto de comparacion para analizar el equilibrio entre coste de atencion y calidad de modelado.
+- Investigación sobre atención subcuadrática: el checkpoint permite reproducir el experimento de sustituir atención cuadrática por `QCQAAttention` en un LLM pequeño y medir el impacto en perplejidad con un pipeline documentado (`apply_qwen_attention_surgery`).
+- Benchmarking de operadores de atención: sirve como referencia cuantitativa (PPL 25,35 en WikiText-2) para comparar `qcqa_attention` con otros operadores del `ATTENTION_REGISTRY` de NeuralOps bajo el mismo protocolo de destilación.
+- Estudio de destilación de conocimiento post-cirugía: los datos de las dos etapas (pasos, tiempos, pesos de MSE/coseno, VRAM pico) permiten analizar la eficiencia de la recuperación de calidad en modelos pequeños.
+- Validación de pipelines de carga modular: el ejemplo con `neuralops.hub.load_surgeried_model` sirve para probar la integración de pesos quirúrgicos en flujos de Hugging Face Hub.
+- Pruebas de compatibilidad con el ecosistema Qwen2.5: al conservar tokenizador y configuración base, se puede usar para verificar que adaptadores y herramientas de Qwen2.5-0.5B siguen funcionando tras el reemplazo de atención.
+- Docencia y experimentación académica: modelo de bajo coste (0,2 GB de repo, inferencia en una sola GPU consumer) para ilustrar cirugía de arquitecturas y destilación en dos etapas.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (`verified: false`):
-
-| Benchmark | Dataset / split | Metrica | Valor |
+| Benchmark | Métrica | Valor | Verificado |
 |---|---|---|---|
-| Causal language modeling | Salesforce/wikitext, `wikitext-2-raw-v1`, validation | Perplejidad | 25,35 |
+| WikiText-2 (`wikitext-2-raw-v1`, validation) | Perplejidad | 25,35 | No (declarado por el autor) |
 
-Telemetria del proceso de destilacion:
+Datos de telemetría del entrenamiento declarados por el autor:
 
-| Etapa | Pasos | Tiempo | Perplejidad |
-|---|---:|---:|---:|
-| Stage 0 (post-cirugia, sin KD) | — | — | 139,14 |
-| Stage 1 (frozen-backbone alignment) | 130 | 54,5 s | — |
-| Stage 2 (multi-layer representation KD) | 298 | 125,5 s | — |
-| Final (post-KD) | 428 | 180,2 s | 25,35 |
+| Etapa | Métrica | Valor |
+|---|---|---|
+| Stage 0 (post-cirugía, zero-shot) | Perplejidad causal | 139,14 |
+| Post-KD | Perplejidad de validación | 25,35 |
+| Delta | Mejora de perplejidad | -113,79 |
+| Stage 1 | Pasos / tiempo | 130 / 54,5 s |
+| Stage 2 | Pasos / tiempo | 298 / 125,5 s |
+| Total | Pasos / tiempo | 428 / 180,2 s |
+| Pico de VRAM | FP16 con maestros FP32 | 15.970 MB |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo base Qwen2.5-0.5B en FP16 requiere aproximadamente 1 GB de pesos; con overhead de activaciones y cache KV, cabe holgadamente en GPUs de consumo con 4-8 GB.
-- VRAM de entrenamiento observada: 15.970 MB pico con FP16 autocast y parametros maestros en FP32 durante la destilacion.
-- GPUs recomendadas: cualquier GPU consumer moderna (RTX 3060 12 GB, RTX 4060 Ti, RTX 4090) es suficiente para inferencia; para reproducir el entrenamiento se necesitan al menos 16 GB (RTX 4080, A4000, A100).
-- Despliegue: no se declaran integraciones con vLLM, llama.cpp, Ollama o TGI. La libreria declarada es `neuralops`, y la carga requiere `transformers` mas el parche `apply_qwen_attention_surgery` del repositorio NeuralOps.
+- VRAM estimada para inferencia: no disponible de forma oficial; por el tamaño del modelo (0,5B en FP16, ~1 GB de pesos) se puede inferir en GPUs consumer, pero el autor no publica cifras de inferencia.
+- VRAM de entrenamiento documentada: 15.970 MB de pico en FP16 con parámetros maestros en FP32 (destilación).
+- GPU recomendadas: no especificadas por el autor; el entrenamiento cabe en GPUs de ~16 GB (por ejemplo, RTX 4080/A4000 o superiores). Para inferencia, cualquier GPU con al menos ~2 GB libres en FP16 es suficiente en la práctica, aunque no está verificado oficialmente.
+- Cabe en GPU consumer: sí, por tamaño; el repo ocupa 0,2 GB y los pesos de atención 161,51 MB.
+- Opciones de despliegue: el autor documenta `transformers` + `safetensors` + `neuralops` (`load_surgeried_model`). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI; al no publicarse pesos GGUF, la cuantización no está disponible de forma nativa.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Atencion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Atención | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tahamajs/qwen-2.5-0.5b-qcqa-attention-wikitext2` | ~0,5 B | no disponible | Hibrida 18/24 QCQA + 6/24 cuadratica | MIT | Hugging Face (solo pesos de atencion) |
-| `Qwen/Qwen2.5-0.5B` | ~0,5 B | no disponible | Cuadratica estandar (GQA 14:2) | no disponible en la informacion | Hugging Face |
-| Otros checkpoints del NeuralOps Attention Zoo | ~0,5 B | no disponible | Otros operadores del `ATTENTION_REGISTRY` | MIT (segun el repo NeuralOps) | Hugging Face |
+| `tahamajs/qwen-2.5-0.5b-qcqa-attention-wikitext2` | 0,5B | no disponible (entreno a 512) | Híbrida QCQA 18/24 + cuadrática 6/24 | MIT | Pesos solo de atención en HF |
+| `Qwen/Qwen2.5-0.5B` (base) | 0,5B | 32.768 tokens (según Qwen2.5) | Cuadrática completa con GQA | Apache 2.0 | Pesos completos en HF |
+| Modelos de 0,5B de la familia Qwen2.5 instruct | 0,5B | 32.768 tokens | Cuadrática completa con GQA | Apache 2.0 | Pesos completos en HF |
 
-La comparacion cuantitativa con alternativas no esta disponible: el unico dato publicado es la perplejidad en WikiText-2 (25,35), sin resultados del modelo base en la misma metrica dentro de la informacion proporcionada.
+La comparación directa con el modelo base es la más informativa: el checkpoint quirúrgico solo publica pesos de atención y depende de `Qwen/Qwen2.5-0.5B` para el resto de parámetros, mientras que el base ofrece pesos completos, contexto de 32.768 tokens y licencia Apache 2.0. No se dispone de comparativas con otros modelos de atención subcuadrática en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion: no es un checkpoint listo para produccion; solo publica pesos de atencion y requiere recomponer el modelo base con el parche de cirugia.
-- Entrenado exclusivamente sobre WikiText-2 en ingles; el dominio y el idioma estan muy acotados y no se garantiza calidad en otros contextos.
-- Perplejidad de 25,35 declarada como `verified: false`; no ha sido validada de forma independiente.
-- Riesgo de alucinacion y degradacion en generacion abierta: la destilacion se limita a 428 pasos sobre un corpus pequeno, sin RLHF ni DPO.
-- La sustitucion hibrida de atencion puede introducir comportamientos no documentados en contextos largos; no se declara la longitud de contexto efectiva tras la cirugia.
-- Licencia MIT permite uso comercial, pero el modelo base Qwen2.5-0.5B tiene sus propias condiciones que deben respetarse al recomponer el checkpoint.
-- No se declaran sesgos evaluados ni filtros de seguridad.
-- Descargas y likes nulos en el momento de la consulta; sin comunidad ni soporte documentado.
+- Pesos incompletos: el repositorio solo contiene `attention_weights.safetensors`; es obligatorio cargar el modelo base `Qwen/Qwen2.5-0.5B` y aplicar la cirugía antes de cargar el estado, por lo que no es un modelo autónomo.
+- Entrenado exclusivamente en WikiText-2: la distribución es enciclopédica y en inglés; el rendimiento fuera de ese dominio no está evaluado y probablemente sea deficiente.
+- Perplejidad de 25,35 declarada por el autor y no verificada (`verified: false`); no hay benchmarks de tareas downstream (razonamiento, código, matemáticas).
+- Solo inglés declarado; no se garantiza comportamiento multilingüe.
+- Sin soporte documentado de tool calling, agentes ni modo de razonamiento.
+- Riesgo de alucinación no cuantificado; al ser un modelo de 0,5B ajustado solo para modelización de lenguaje, la generación libre puede ser incoherente.
+- Licencia MIT en el repo del autor, pero el modelo base Qwen2.5-0.5B se distribuye bajo Apache 2.0; conviene revisar la compatibilidad para uso comercial y atribución.
+- Fecha de creación declarada en el futuro (2026-11-10) en los metadatos de Hugging Face; conviene tratarla con cautela.
+- No se publican pesos GGUF ni cuantizaciones, lo que limita el despliegue en CPU o GPUs de gama baja sin trabajo adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-qcqa-attention-wikitext2
-- Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
 - Licencia NeuralOps (MIT): https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext

@@ -2,103 +2,101 @@
 
 ## Resumen
 
-Gemma 4 26B A4B es un modelo de lenguaje de gran escala desarrollado por Google, publicado bajo licencia Apache 2.0 y distribuido en formato GGUF por Xylolabs en esta ficha. Se trata de la versión base (pretrained) del modelo, sin ajuste fino por instrucciones, con arquitectura de mezcla de expertos (MoE) segun la nomenclatura "A4B" (aproximadamente 4.000 millones de parametros activos sobre un total de 25.233.142.046). El contexto nativo es de 8.192 tokens segun la model card del cuantizador.
+Xylolabs/gemma-4-26B-A4B-GGUF es una cuantización en formato GGUF del modelo base google/gemma-4-26B-A4B, publicada por Xylolabs como conjunto de ficheros de referencia para llama.cpp. El modelo original es un Gemma 4 de Google con arquitectura Mixture of Experts (MoE), 25.233.142.046 parámetros totales y una designación "A4B" que indica aproximadamente 4.000 millones de parámetros activos por token. Esta versión concreta empaqueta los pesos en un único fichero Q4_K_M de 16,796 GB, pensado para inferencia local en hardware de consumo y estaciones de trabajo.
 
-La relevancia de esta publicacion es doble: por un lado, ofrece una cuantizacion mixta Q4_K_M preservada byte a byte del modelo original de Google, pensada como formato de referencia para comparaciones de calidad; por otro, permite ejecutar un modelo de 25.000 millones de parametros en hardware de consumo gracias a su naturaleza MoE y a un peso total de 16,8 GB. La model card reporta una evaluacion de fidelidad frente al modelo BF16 original con una divergencia KL media de 0,056776 y un 89,8949 % de acuerdo en top-1.
+La relevancia de esta ficha reside en que permite ejecutar un modelo MoE de escala 26B en GPUs de 24 GB (RTX 4090, RTX 3090) con 64K de contexto, y escalar hasta 256K de contexto en GPUs de 32 GB o superiores. El autor publica además métricas de fidelidad frente al profesor BF16 (KL medio de 0,056776 y 89,8949% de acuerdo top-1), lo que permite evaluar la pérdida de calidad introducida por la cuantización.
 
-El modelo esta etiquetado para ingles y coreano, y su uso previsto es generacion de texto en modo completacion. No se trata de un modelo conversacional afinado; requiere prompts de completacion o un ajuste posterior para tareas de instrucciones.
+El modelo está etiquetado para inglés y coreano, con licencia Apache 2.0 declarada por la release original de Google. No se dispone de información sobre el proceso de entrenamiento, la composición del dataset ni resultados de benchmarks del modelo base en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) transformer, segun nomenclatura A4B del modelo base |
+| Arquitectura | Mixture of Experts (MoE), designación A4B; detalles internos no disponibles |
 | Parametros totales | 25.233.142.046 |
-| Parametros activos | aproximadamente 4.000 millones (segun nomenclatura A4B; no confirmado en la informacion disponible) |
-| Longitud de contexto | 8.192 tokens |
-| Tipos de cuantizacion | Q4_K_M mixta: Q4_K (192 tensores), Q5_0 (32), Q6_K (14), Q8_0 (28), F32 (392); promedio 5,320 bits por valor |
+| Parametros activos | ~4B (según designación A4B; cifra exacta no disponible) |
+| Longitud de contexto | Hasta 256K según tabla de hardware del autor; 64K en GPUs de 24 GB; valor máximo del modelo base no disponible |
+| Tipos de cuantizacion | Q4_K_M (único formato publicado en este repo) |
 | Idiomas soportados | en, ko |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (un unico archivo de 16.795.998.784 bytes) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de la designacion MoE implicita en el nombre "26B-A4B" y de la referencia al informe tecnico de Gemma 4 (arXiv:2607.02770). El modelo base es `google/gemma-4-26B-A4B`, publicado por Google como modelo pretrained. No se dispone en esta ficha de datos sobre numero de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO; al tratarse de la variante base, es probable que no incluya ajuste por preferencias, pero esto no se confirma en la informacion proporcionada.
+El modelo base google/gemma-4-26B-A4B emplea una arquitectura Mixture of Experts con 25.233.142.046 parámetros totales y una designación A4B que sugiere aproximadamente 4.000 millones de parámetros activos por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamaño. No se dispone de información sobre el número de expertos, la estrategia de enrutamiento, el número de capas ni la dimensión de los estados ocultos en la documentación proporcionada.
 
-La aportacion tecnica de esta publicacion concreta es la cuantizacion. Xylolabs preserva los 658 tensores originales del modelo de texto y los 25.233.142.046 valores de peso, aplicando una mezcla de precisiones: las matrices mas sensibles se mantienen en Q8_0, Q6_K o Q5_0, mientras que el grueso se cuantiza a Q4_K. El resultado es un archivo de 16,8 GB con un promedio de 5,320 bits por valor. La asignacion de memoria KV en FP16 declarada es de 1.760 MiB y se reserva un margen de trabajo de 8 GiB para la validacion de carga.
+En cuanto al entrenamiento, la información disponible no detalla el volumen de tokens, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineamiento. El autor cita el informe técnico "Gemma 4 Technical Report" (arXiv:2607.02770) como referencia, pero no se incluyen sus contenidos. La innovación técnica documentada en esta ficha es la propia cuantización: un fichero Q4_K_M de 16,796 GB con métricas de fidelidad frente al profesor BF16 (KL medio 0,056776, acuerdo top-1 del 89,8949%, 28/28 completions correctas tanto en Q4 como en BF16 y cero regresiones contadas).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en modo completacion (no instrucciones).
-- Razonamiento y conocimiento general derivados del modelo base de Google.
-- Capacidad multilingue limitada a ingles y coreano segun las etiquetas del repositorio.
-- No se documenta soporte de tool calling ni function calling en la informacion disponible.
-- No se documenta soporte de agentes ni razonamiento multi-paso en la informacion disponible.
-- No se documenta modo thinking, vision ni audio en la informacion disponible.
-- Compatible con endpoints segun la etiqueta `endpoints_compatible`.
+- Generación de texto autoregresiva en inglés y coreano, según los idiomas declarados en la model card.
+- Razonamiento y conocimiento general heredados del modelo base Gemma 4, sin que se detallen capacidades específicas en la información disponible.
+- Modo de completación raw verificada con `llama-completion` de llama.cpp (commit cd959bae), con ejemplo de continuación de texto ("The capital of France is").
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión, audio o thinking mode: no disponible en la información proporcionada.
+- Capacidades multilingües limitadas a en y ko según los metadatos del repositorio.
 
 ## Casos de uso
 
-- Completacion de texto en local: el modelo puede ejecutarse con `llama-completion` en CPU y generar continuaciones de prompts, adecuado para experimentacion y prototipado sin GPU.
-- Evaluacion de cuantizaciones: al ser un "reference format" preservado byte a byte, sirve como linea base para comparar otras cuantizaciones Q4 del mismo modelo base midiendo divergencia KL y acuerdo top-1.
-- Generacion de texto en ingles y coreano: util para tareas de redaccion o continuacion en esos dos idiomas, con la limitacion de contexto de 8.192 tokens.
-- Investigacion sobre modelos MoE: permite estudiar el comportamiento de un MoE de 25.000 millones de parametros con unos 4.000 millones activos en hardware modesto.
-- Despliegue en entornos con poca VRAM: con 16,8 GB de pesos, cabe en GPUs de consumo de 24 GB y en configuraciones CPU con suficiente RAM.
-- Base para ajuste fino posterior: al ser un modelo pretrained, puede servir de punto de partida para tareas especificas mediante fine-tuning o LoRA.
-- Pruebas de infraestructura: validacion de pipelines de inferencia GGUF (llama.cpp, servidores compatibles) antes de desplegar variantes mayores.
+- Inferencia local en GPU de consumo: con 16,8 GB en Q4_K_M, el modelo cabe en una RTX 4090 o RTX 3090 de 24 GB con 64K de contexto, lo que permite desplegar un MoE de 26B en una única GPU de escritorio sin cuantizaciones más agresivas.
+- Procesamiento de documentos largos en estaciones de trabajo: en GPUs de 32 GB (RTX 5090) o 48 GB (RTX 6000 Ada o 2 x 24 GB) el autor indica contexto de 256K, adecuado para resumir o extraer información de contratos, informes o bases de código extensas.
+- Servicio de completación de texto de baja latencia: al activar solo ~4B parámetros por token, el modelo reduce el coste por token frente a alternativas densas de 26B, lo que lo hace apto para autocompletado y generación asistida en entornos con presupuesto de cómputo limitado.
+- Despliegue en hardware unificado: la tabla del autor incluye DGX Spark (128 GB unificados), Mac Studio M5 Max y M5 Ultra (128-512 GB unificados), lo que permite ejecutar el modelo en equipos de sobremesa con memoria compartida y contexto completo de 256K.
+- Evaluación y validación de cuantizaciones: las métricas publicadas (KL 0,056776, top-1 89,8949%) permiten usar este repo como referencia para comparar otras cuantizaciones Q4 del mismo modelo base en tareas de completación.
+- Prototipado de aplicaciones en inglés y coreano: los idiomas declarados permiten construir asistentes o herramientas de generación de contenido para esos dos mercados sin necesidad de infraestructura en la nube.
+- Integración en pipelines de CI con llama.cpp: el formato GGUF y el ejemplo de `llama-completion` facilitan pruebas automáticas de generación de texto en entornos CPU (`-ngl 0`) o GPU.
 
 ## Benchmarks y rendimiento
 
-La model card reporta unicamente una evaluacion de fidelidad de la cuantizacion frente al modelo BF16 original, no benchmarks de capacidad (MMLU, HumanEval, GSM8K, etc.).
+El autor no publica benchmarks de tareas estándar (MMLU, HumanEval, GSM8K, etc.). La única evaluación disponible es la fidelidad de la cuantización frente al profesor BF16:
 
-| Metrica | Resultado |
+| Métrica | Resultado |
 |---|---|
-| KL media frente al profesor BF16 original | 0,056776 |
-| Acuerdo top-1 | 89,8949 % |
-| Completaciones correctas Q4 | 28/28 |
-| Completaciones correctas BF16 | 28/28 |
-| Regresiones o respuestas rotas contabilizadas | 0 |
-| Secuencias evaluadas | 8 secuencias crudas de 1.024 tokens |
-| Posiciones puntuadas | 8.184 |
-| Vocabulario | 262.144 entradas |
+| KL medio frente al profesor BF16 | 0,056776 |
+| Acuerdo top-1 | 89,8949% |
+| Completions correctas en Q4 | 28/28 |
+| Completions correctas en BF16 | 28/28 |
+| Regresiones o respuestas rotas contadas | 0 |
 
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) en la informacion disponible. La velocidad de inferencia tampoco se reporta.
+No se han publicado resultados de benchmarks de tareas en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 16,80 GB solo para los pesos GGUF, mas espacio para cache KV (1.760 MiB en FP16 declarados) y buffers.
-- GPU recomendadas: no especificadas en la informacion disponible; por tamano, tarjetas con 24 GB o mas (RTX 3090, RTX 4090, A100, H100) son las candidatas naturales.
-- Cabe en GPU de consumo: si, en modelos con 24 GB de VRAM o superior, dejando margen para cache KV y contexto.
-- Despliegue: llama.cpp (probado con la herramienta `llama-completion`, version v0.9.0, CUDA desactivado, `-ngl 0` y 4 hilos de CPU). No se documentan pruebas con vLLM, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles; la model card indica explicitamente que no se reporta velocidad.
+- VRAM estimada para inferencia: 16,8 GB para el fichero Q4_K_M, más la caché KV en f16 al contexto elegido y unos 2 GB para el runtime. El autor aplica la regla de que el fichero más la caché KV más 2 GB debe quedar por debajo del 90% de la memoria disponible.
+- GPU recomendadas según el autor: RTX 4090 / RTX 3090 (24 GB) con 64K de contexto; RTX 5090 (32 GB), RTX 6000 Ada o 2 x 24 GB (48 GB), H100 (80 GB), RTX PRO 6000 Blackwell (96 GB) y H200 (141 GB) con 256K de contexto; B200 (192 GB) y B300 (288 GB) también con 256K.
+- Cabe en GPU de consumo: sí, en RTX 4090 y RTX 3090 (24 GB) con 64K de contexto, y en RTX 5090 (32 GB) con 256K.
+- Hardware unificado soportado: DGX Spark (128 GB), Mac Studio M5 Max (128 GB), Mac Studio M5 Ultra (256 GB y 512 GB), todos con 256K de contexto.
+- Opciones de despliegue: llama.cpp, con el binario `llama-completion` verificado en el commit cd959bae. No se mencionan vLLM, TGI, Ollama ni otros motores en la información disponible.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Xylolabs/gemma-4-26B-A4B-GGUF (esta ficha) | 25.233.142.046 | 8.192 | Apache 2.0 | GGUF Q4_K_M | Cuantizacion de referencia con evaluacion KL |
-| google/gemma-4-26B-A4B | 25.233.142.046 | 8.192 (segun cuantizador) | Apache 2.0 | safetensors (presumiblemente) | Modelo base original de Google |
-| Otras cuantizaciones GGUF del mismo modelo base | 25.233.142.046 | 8.192 | Apache 2.0 | GGUF | No disponibles en la informacion proporcionada |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. La comparación más directa posible es con el propio modelo base sin cuantizar:
 
-No se dispone de datos sobre modelos alternativos de otros fabricantes (por ejemplo, otros MoE de tamano similar) en la informacion proporcionada.
+| Modelo | Parámetros totales | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Xylolabs/gemma-4-26B-A4B-GGUF | 25.233.142.046 | 64K-256K según hardware | GGUF Q4_K_M (16,8 GB) | Apache 2.0 | Hugging Face, 499 descargas |
+| google/gemma-4-26B-A4B (base) | 25.233.142.046 | No disponible en esta ficha | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+
+Alternativas de otros fabricantes: no disponible.
 
 ## Limitaciones y advertencias
 
-- Modelo pretrained, no afinado por instrucciones: puede no seguir instrucciones de forma fiable y requerir prompts de completacion.
-- Idiomas limitados a ingles y coreano; el rendimiento en castellano no esta garantizado.
-- Contexto de 8.192 tokens, inferior al de muchos modelos contemporaneos con ventanas de 32.000 a 128.000 tokens.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han publicado evaluaciones de sesgo ni de seguridad.
-- La evaluacion de calidad se limita a 28 completaciones y 8 secuencias; es una muestra pequena y no sustituye a benchmarks estandar.
-- La cuantizacion Q4_K_M introduce degradacion respecto a BF16 (KL media de 0,056776), aunque el autor reporta cero regresiones en su conjunto de prueba.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantia ni respaldo del modelo original de Google.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta; no hay evidencia de adopcion amplia.
-- No se documentan pruebas con backends distintos de llama.cpp ni con aceleracion GPU.
+- La cuantización Q4_K_M introduce pérdida de calidad medible: KL medio de 0,056776 y acuerdo top-1 del 89,8949% frente al profesor BF16, es decir, aproximadamente un 10% de discrepancia en la predicción top-1.
+- Solo se publica un único formato (Q4_K_M); no hay variantes Q5, Q6, Q8 ni ficheros BF16 en este repositorio, lo que limita el ajuste fino entre memoria y calidad.
+- Idiomas declarados únicamente inglés y coreano; el rendimiento en castellano u otros idiomas no está documentado y no puede asumirse.
+- No hay información sobre sesgos, tasas de alucinación ni evaluaciones de seguridad del modelo base en la documentación proporcionada.
+- La licencia Apache 2.0 la declara el autor citando la release original de Google; el repositorio no incluye un fichero legal raíz del proveedor primario, solo el texto estándar de Apache Software Foundation en LICENSE y un NOTICE con el alcance de referencia.
+- El autor indica explícitamente que el modelo se proporciona "as is", sin garantía ni respaldo de Google, y que no está afiliado ni respaldado por Google.
+- El contexto máximo real del modelo base no se documenta; los valores de 64K y 256K provienen de la tabla de recomendaciones de hardware del autor, no de una especificación oficial del modelo.
+- No se documentan capacidades de tool calling, agentes, visión ni audio, por lo que no deben asumirse en producción sin validación previa.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/gemma-4-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
-- Licencia: https://huggingface.co/Xylolabs/gemma-4-26B-A4B-GGUF/blob/main/LICENSE
-- Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770
-- Herramienta llama.cpp completion: https://github.com/ggml-org/llama.cpp/blob/cd959bae99ff4bed22bef2604f45241c09bbb8c8/tools/completion/README.md
-- Repositorio Xylolabs (referenciado en la model card): https://github.com/XylolabsInc/tensix-bfp-gptq
+- Informe técnico citado: https://arxiv.org/abs/2607.02770
+- Herramienta de completación de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/cd959bae99ff4bed22bef2604f45241c09bbb8c8/tools/completion/README.md
+- Repositorio de Xylolabs referenciado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Licencia en el repositorio: https://huggingface.co/Xylolabs/gemma-4-26B-A4B-GGUF/blob/main/LICENSE

@@ -2,79 +2,82 @@
 
 ## Resumen
 
-gpt-oss-20b es un modelo de lenguaje de código abierto desarrollado por OpenAI, liberado bajo licencia Apache 2.0. Forma parte de la familia gpt-oss, que incluye también el modelo más grande gpt-oss-120b. Está diseñado para ofrecer un rendimiento sólido en tareas de razonamiento y uso de herramientas, con un coste de despliegue reducido y optimizado para hardware de consumo. Según OpenAI, estos modelos superan a otros modelos abiertos de tamaño similar en tareas de razonamiento y demuestran capacidades robustas de tool calling, además de estar pensados para aplicaciones agénticas.
+GPT-OSS-20B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado originalmente por OpenAI y publicado como pesos abiertos bajo licencia Apache 2.0. La ficha que nos ocupa, `Noah-H309/gpt-oss-20b`, es una redistribución en formato GGUF de dichos pesos, empaquetada específicamente para su uso con LM Studio. No se trata de un modelo nuevo ni de un fine-tuning, sino de una conversión de los pesos oficiales manteniendo la cuantización MXFP4 original con la que OpenAI los liberó.
 
-El repositorio Noah-H309/gpt-oss-20b en Hugging Face proporciona una versión cuantizada del modelo original en formato mxfp4 (cuantización inicial publicada por OpenAI), orientada a su uso con LM Studio. El modelo base es openai/gpt-oss-20b, y la cuantización se ha realizado únicamente con el formato mxfp4, sin conversión adicional a otros formatos como GGUF, a pesar de que el repositorio incluya etiquetas relacionadas con GGUF y LM Studio.
+El modelo cuenta con 20.914.757.184 parámetros totales (aproximadamente 20,9 mil millones) y una arquitectura MoE que activa solo una fracción de ellos por token, lo que permite un equilibrio entre capacidad y coste de inferencia. El repositorio ocupa 13,8 GB, un tamaño que refleja la cuantización a 4 bits (MXFP4) aplicada a los pesos.
 
-Al ser un modelo de 20 mil millones de parámetros, ofrece un equilibrio entre capacidad y eficiencia, lo que lo hace adecuado para entornos con recursos limitados, como estaciones de trabajo con una sola GPU o incluso hardware de consumo. No se dispone de detalles sobre la arquitectura exacta (si es densa o MoE), ni sobre la longitud de contexto o los idiomas soportados en la información proporcionada.
+Su relevancia radica en que facilita el despliegue local del modelo de OpenAI en entornos de escritorio mediante LM Studio, sin necesidad de infraestructura en la nube. Es una opción práctica para desarrolladores que quieren evaluar o integrar un modelo de pesos abiertos de OpenAI en sus flujos locales, aunque la información publicada en esta ficha concreta es limitada y remite al repositorio oficial para detalles técnicos completos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 20 mil millones (según denominación del modelo) |
+| Arquitectura | Mixture of Experts (MoE), transformer (detalles no disponibles en la informacion proporcionada) |
+| Parametros totales | 20.914.757.184 (aprox. 20,9 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | mxfp4 (cuantización inicial publicada por OpenAI) |
+| Tipos de cuantizacion | MXFP4 (cuantizacion inicial de OpenAI); formato GGUF |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | mxfp4 (posiblemente safetensors, no confirmado) |
+| Formato de pesos | GGUF (repo de 13,8 GB); pesos originales en safetensors segun metadatos de parametros |
 
 ## Arquitectura y entrenamiento
 
-No se ha proporcionado información detallada sobre la arquitectura interna del modelo. OpenAI lo describe como un modelo de lenguaje de pesos abiertos, pero no especifica si se trata de un transformer denso o de una arquitectura de mezcla de expertos (MoE). Tampoco se han publicado datos sobre el número de tokens de entrenamiento, la composición del dataset o el uso de técnicas como RLHF o DPO. La única información técnica disponible es que el modelo original se distribuye con cuantización inicial en formato mxfp4, que es un formato de punto flotante de 4 bits con escala microscópica, diseñado para reducir el uso de memoria manteniendo la calidad.
+La informacion disponible indica que se trata de un modelo MoE (Mixture of Experts) de aproximadamente 20,9 mil millones de parametros totales. La model card del repositorio no detalla el numero de expertos, el numero de parametros activos por token, la longitud de contexto nativa ni la composicion del dataset de entrenamiento. Tampoco se especifica si hubo fases de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas concretas como decodificacion especulativa o mecanismos de atencion alternativa.
 
-Dado que el modelo está orientado a tareas de razonamiento y uso de herramientas, es probable que haya sido entrenado con un enfoque específico para mejorar estas capacidades, pero no hay confirmación en los materiales disponibles.
+El dato tecnico mas relevante que si se proporciona es que los pesos fueron cuantizados en MXFP4 por OpenAI en la release inicial, y que esta redistribucion mantiene esa cuantizacion. Para obtener detalles sobre la arquitectura interna, el proceso de entrenamiento y las innovaciones tecnicas, es necesario consultar el repositorio oficial `openai/gpt-oss-20b`, al que la model card remite explicitamente.
 
 ## Capacidades
 
-- Razonamiento avanzado: según OpenAI, el modelo supera a otros modelos abiertos de tamaño similar en tareas de razonamiento, lo que lo hace adecuado para problemas complejos de lógica y matemáticas.
-- Uso de herramientas (tool calling): el modelo demuestra capacidades sólidas para invocar funciones externas, lo que permite integrarlo en pipelines de automatización y agentes.
-- Tareas agénticas: está diseñado para aplicaciones donde el modelo debe tomar decisiones y ejecutar acciones de forma autónoma, como en sistemas de agente multi-paso.
-- Eficiencia en despliegue: al ser de tamaño medio (20B) y con cuantización de 4 bits, puede ejecutarse en hardware de consumo, reduciendo costes de inferencia.
-- Conversación: el repositorio lo etiqueta como "conversational", lo que indica su capacidad para mantener diálogos multi-turno.
-
-No se han especificado capacidades multimodales (visión, audio) ni se ha confirmado soporte multilingüe.
+- Generacion de texto conversacional: el tag `conversational` indica soporte para dialogos multi-turno.
+- Razonamiento y generacion de codigo: capacidades esperables en un modelo de esta categoria, aunque no se detallan en la informacion proporcionada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: gracias a su capacidad conversacional y de razonamiento, el modelo puede gestionar consultas de usuarios en entornos de soporte, manteniendo el contexto de la conversación y resolviendo problemas con lógica.
-- Generación de código asistida: con su capacidad de tool calling, puede integrarse en entornos de desarrollo para generar, revisar o completar código, así como para ejecutar comandos o scripts mediante llamadas a herramientas.
-- Agentes autónomos de automatización: el modelo puede actuar como cerebro de un agente que interactúa con APIs, bases de datos o servicios web, ejecutando tareas de forma secuencial y tomando decisiones basadas en los resultados.
-- Análisis de datos y razonamiento lógico: su rendimiento en tareas de razonamiento lo hace útil para interpretar datos, extraer conclusiones o generar informes a partir de información estructurada.
-- Asistentes personales locales: al poder ejecutarse en hardware de consumo (por ejemplo, con LM Studio), es viable desplegarlo como asistente personal privado que gestione tareas como resúmenes, programación de citas o búsqueda de información.
-- Prototipado rápido de aplicaciones de IA: los desarrolladores pueden utilizarlo para crear prototipos de chatbots o sistemas de razonamiento sin necesidad de acceder a APIs de pago, gracias a su licencia Apache 2.0 y su tamaño manejable.
+- Evaluacion local de modelos de pesos abiertos: gracias al formato GGUF y su integracion con LM Studio, un desarrollador puede descargar el modelo y probarlo en su maquina sin configurar infraestructura de servidores, lo que acelera la comparacion con otras alternativas.
+- Prototipado de asistentes conversacionales: el tag `conversational` y el formato GGUF permiten montar rapidamente un chatbot de prueba en local para validar flujos de dialogo antes de pasar a produccion.
+- Desarrollo offline o con requisitos de privacidad: al ejecutarse en local, el modelo permite procesar texto sin enviar datos a servicios externos, adecuado para entornos con restricciones de confidencialidad.
+- Integracion en pipelines de LM Studio: el repositorio esta empaquetado especificamente para LM Studio, por lo que encaja en flujos de trabajo que ya usan esta herramienta para gestionar y servir modelos.
+- Experimentacion academica: investigadores que necesitan un modelo de ~20 B con licencia Apache 2.0 pueden usar esta distribucion para experimentos de prompting, evaluacion o analisis de comportamiento sin coste de API.
+- Base para fine-tuning o adaptaciones: al ser pesos abiertos con licencia permisiva, puede servir como punto de partida para ajustes posteriores, aunque la cuantizacion MXFP4 puede requerir trabajar con los pesos originales en safetensors para entrenamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La documentación de OpenAI menciona que el modelo "supera a modelos abiertos de tamaño similar en tareas de razonamiento", pero no se proporcionan cifras concretas (como MMLU, HumanEval, GSM8K, etc.) en los materiales consultados.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 20 mil millones de parámetros y cuantización de 4 bits (mxfp4), el tamaño del modelo en memoria sería aproximadamente de 10 GB (20B × 0,5 bytes por parámetro), más overhead de activaciones y caché. Esto podría caber en una GPU con 12-16 GB de VRAM, aunque no se ha confirmado oficialmente.
-- GPU recomendadas: se espera que funcione en GPUs de consumo como la RTX 3090 (24 GB), RTX 4090 (24 GB) o incluso GPUs con 16 GB como la RTX 4080, dependiendo de la longitud de contexto y el tamaño de lote. Para producción, GPUs como la A100 (40-80 GB) ofrecerían mayor margen.
-- Despliegue en consumer GPU: sí, es viable en GPUs de gama alta para consumidores, especialmente con cuantización de 4 bits.
-- Opciones de despliegue: al estar orientado a LM Studio, puede ejecutarse en esa plataforma. También es compatible con frameworks como vLLM, llama.cpp o TGI, aunque no se ha confirmado explícitamente. El formato mxfp4 puede requerir soporte específico en el runtime.
-- Latencia y throughput: no se han proporcionado datos concretos. Se espera una latencia baja en hardware moderno debido al tamaño reducido, pero no hay cifras oficiales.
+- VRAM estimada para inferencia: el repositorio GGUF ocupa 13,8 GB, por lo que se necesita al menos esa cantidad de memoria (VRAM o RAM unificada) para cargar los pesos, mas overhead adicional para el contexto y el runtime.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: el tamano de 13,8 GB sugiere que puede caber en GPUs con 16 GB o mas de VRAM (por ejemplo, RTX 4080/4090 o equivalentes), aunque no se confirma en la informacion disponible.
+- Opciones de despliegue: LM Studio (objetivo principal del repositorio); otros runtimes compatibles con GGUF como llama.cpp u Ollama no se mencionan explicitamente pero son plausibles por el formato.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de tamaño similar (por ejemplo, Qwen2.5-14B, Llama-3.1-8B, Mistral-7B) en la información proporcionada. La única afirmación es que supera a modelos abiertos de tamaño similar en razonamiento, pero sin números concretos. Por tanto, no es posible realizar una comparativa objetiva.
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Noah-H309/gpt-oss-20b (esta ficha) | 20,9 B | no disponible | Apache 2.0 | GGUF (MXFP4) | Redistribucion para LM Studio |
+| openai/gpt-oss-20b | 20,9 B | no disponible | Apache 2.0 | safetensors (original) | Pesos oficiales de OpenAI |
+| Otras alternativas de ~20 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+
+La unica comparacion solida disponible es con el modelo base oficial, del que esta ficha es una conversion de formato. No se dispone de datos de rendimiento ni de especificaciones de modelos alternativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se ha publicado información específica sobre sesgos del modelo. Como cualquier modelo de lenguaje, puede reflejar sesgos presentes en sus datos de entrenamiento, aunque no se han documentado.
-- Riesgo de alucinación: no se ha evaluado públicamente su tasa de alucinación. Es recomendable validar las respuestas en aplicaciones críticas.
-- Limitaciones de contexto e idioma: se desconoce la longitud máxima de contexto soportada y los idiomas cubiertos. Esto puede limitar su uso en aplicaciones que requieran ventanas largas o multilingüismo.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero OpenAI ha publicado una política de uso específica para gpt-oss (gpt-oss usage policy) que debe revisarse antes de desplegarlo en producción.
-- Formato de cuantización: el repositorio ofrece únicamente cuantización mxfp4, que puede no ser compatible con todos los runtimes. Es posible que se necesiten conversiones adicionales a otros formatos (GGUF, etc.) para ciertos entornos, aunque no se han proporcionado.
+- La informacion publicada en esta ficha es muy escasa: no se detallan contexto, idiomas, parametros activos ni capacidades concretas, lo que dificulta evaluar el modelo solo con estos datos.
+- Al ser una cuantizacion MXFP4, puede haber una perdida de precision respecto a los pesos originales en safetensors, aunque OpenAI la aplico en su release inicial.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no se dispone de datos especificos de evaluacion para este modelo.
+- Sesgos conocidos: no disponible en la informacion proporcionada.
+- Limitaciones de contexto o idioma: no disponible en la informacion proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; conviene revisar los terminos del modelo base oficial para cualquier condicion adicional.
+- Para produccion, se recomienda validar el comportamiento con los pesos oficiales y consultar la documentacion de OpenAI, ya que esta redistribucion no anade garantias ni evaluaciones propias.
 
 ## Enlaces
 
-- Repositorio Hugging Face (versión cuantizada): https://huggingface.co/Noah-H309/gpt-oss-20b
-- Modelo original en Hugging Face: https://huggingface.co/openai/gpt-oss-20b
-- Blog de OpenAI (anuncio): https://openai.com/index/introducing-gpt-oss/
-- Documentación de la API de OpenAI: https://developers.openai.com/api/docs/models/gpt-oss-20b
-- Repositorio GitHub de gpt-oss: https://github.com/openai/gpt-oss
-- Model card de OpenAI: https://openai.com/index/gpt-oss-model-card/
+- Repositorio de esta ficha: https://huggingface.co/Noah-H309/gpt-oss-20b
+- Modelo base oficial: https://huggingface.co/openai/gpt-oss-20b

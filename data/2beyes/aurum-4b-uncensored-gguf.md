@@ -2,79 +2,65 @@
 
 ## Resumen
 
-Aurum 4B Uncensored (GGUF) es una cuantización en formato GGUF del modelo Qwen3.5-4B de Alibaba, publicada por el usuario 2Beyes. Se trata de una edición "abliterated" que elimina el comportamiento de rechazo del modelo original manteniendo el resto de pesos, la torre de visión y la cabeza de predicción multi-token (MTP) de Qwen. El resultado es un modelo multimodal de 4.326 millones de parámetros orientado a chat cotidiano y tool calling en tarjetas gráficas de 8 GB.
+Aurum 4B v1 Uncensored es una variante del modelo Qwen3.5-4B de Alibaba en la que se ha eliminado el comportamiento de rechazo (refusal) mediante una edición quirúrgica de pesos. Lo desarrolla el usuario 2Beyes y se distribuye en formato GGUF para su uso con llama.cpp, además de una versión completa en safetensors BF16. El modelo conserva íntegramente los pesos originales de Qwen3.5-4B, incluida la torre de visión y la cabeza de predicción multi-token (MTP), y solo modifica las proyecciones de salida de atención y de la FFN en las capas 4 a 31 para eliminar las negativas a peticiones dañinas.
 
-La relevancia del modelo reside en su estrategia de edición: en lugar de un fine-tuning completo o una destilación, el autor toma la diferencia de pesos entre Qwen3.5-4B y un modelo "Heretic-Abliterated" y conserva únicamente las direcciones singulares responsables de la supresión de rechazos (las 8 principales en las proyecciones de salida de atención de las capas 4–31 y la principal en `mlp.down_proj`). El resto de cambios del modelo de referencia no se incluyen, de modo que el conocimiento y las capacidades de Qwen se preservan en teoría intactos.
+La propuesta es relevante porque ofrece un modelo de 4.326 millones de parámetros que cabe en tarjetas gráficas de 8 GB, con soporte de tool calling, visión y modo thinking, sin las restricciones de alineación del modelo base. Frente a otras variantes "abliterated" que aplican un fine-tuning de destilación completo, Aurum limita el cambio a la dirección de rechazo, preservando el conocimiento original de Qwen.
 
-El modelo se distribuye con licencia Apache 2.0, soporta entrada imagen-texto, tool calling mediante plantilla Jinja y decodificación especulativa con su propia cabeza MTP. Está pensado explícitamente para entornos controlados y advierte de que no debe desplegarse donde usuarios que no hayan elegido un modelo sin censura puedan acceder a él.
+La licencia es Apache 2.0 y el idioma declarado es únicamente inglés. El repositorio GGUF ocupa 33,6 GB e incluye cuantizaciones desde Q3_K_M hasta Q8_0, además del proyector de visión en F16.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (hereda la de Qwen3.5-4B; incluye torre de visión y cabeza MTP) |
-| Parametros totales | 4.326.350.848 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 16.384 tokens en el ejemplo de llama.cpp; no se especifica el máximo nativo |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q4_0, Q3_K_M (todas con importance matrix) |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer (base Qwen3.5-4B) con torre de visión y cabeza MTP |
+| Parámetros totales | 4.326.350.848 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada (el ejemplo de llama.cpp usa `-c 16384`) |
+| Tipos de cuantización | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q4_0, Q3_K_M |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp b12289); safetensors BF16 disponible en el repo hermano |
+| Formato de pesos | GGUF (llama.cpp b12289) y safetensors BF16 en repo separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B, un transformer multimodal con torre de visión y cabeza de predicción multi-token (MTP) que permite decodificación especulativa nativa. La edición aplicada es puramente geométrica: se calcula la diferencia de pesos respecto a `insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated` y se retienen solo las direcciones singulares dominantes asociadas al comportamiento de rechazo. En atención se conservan las 8 direcciones principales de `self_attn.o_proj` y `linear_attn.out_proj` en las capas 4–31 (aproximadamente el 98 % del cambio); en las FFN se retiene la dirección principal de `mlp.down_proj` únicamente en los tensores donde concentra más de la mitad del cambio.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer multimodal con torre de visión y cabeza de predicción multi-token (MTP) para decodificación especulativa. No se ha reentrenado: la modificación consiste en tomar la diferencia de pesos entre Qwen3.5-4B y el modelo insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated, y conservar únicamente la componente que elimina los rechazos. En concreto, se aplican las 8 direcciones singulares principales del cambio (aproximadamente el 98 % de la variación) sobre los pesos de salida de atención (`self_attn.o_proj` / `linear_attn.out_proj`) de las capas 4 a 31, y la dirección principal sobre `mlp.down_proj` solo en los tensores donde representa más de la mitad del cambio. El fine-tuning de destilación del modelo de origen no se incluye.
 
-No se realizó ningún entrenamiento adicional ni RLHF/DPO sobre el modelo resultante: el config, tokenizer y chat template provienen del modelo Heretic (mismo tokenizer que Qwen3.5). La conversión a GGUF se hizo con llama.cpp b12289 y todas las cuantizaciones emplean una importance matrix calculada sobre un blend hermano de Aurum con texto de calibración compuesto por prosa, código y chats de tool calling. Durante el desarrollo el build se denominó `c-v1u` y se seleccionó frente a otros dos candidatos por precisión en tool calling, conocimiento y ausencia de rechazos.
+El config, tokenizer y chat template provienen del modelo Heretic (mismo tokenizer que Qwen3.5). Las cuantizaciones GGUF se generaron con llama.cpp b12289 usando una importance matrix calculada sobre una mezcla Aurum hermana, con texto de calibración de prosa, código y chats con tool calls. El proyector de visión es el original de Qwen3.5-4B (GGUF de Unsloth) y no se modifica.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés.
-- Razonamiento y conocimiento general (MMLU-Redux 74,9; GPQA Diamond 49,5 en Q4 con thinking off).
-- Tool calling y function calling mediante plantilla Jinja (`--jinja` en llama.cpp).
-- Razonamiento multi-paso con herramientas (BFCL v3 no-live promedio 85,9).
-- Comprensión de imágenes gracias a la torre de visión de Qwen3.5-4B (proyector `mmproj` F16 separado).
-- Modo thinking activable mediante `enable_thinking` en la plantilla de chat, igual que Qwen3.5.
-- Decodificación especulativa con la cabeza MTP propia del modelo.
-- Generación de código (velocidad medida en 79–81 tok/s en Q4 con MTP en una RX 6600).
-- Sin comportamiento de rechazo ante peticiones dañinas (0 rechazos de 100 prompts en `mlabonne/harmful_behaviors`).
+- Generación de texto conversacional multi-turno.
+- Razonamiento con modo thinking activable mediante `enable_thinking` en el chat template (los benchmarks publicados son con thinking desactivado).
+- Tool calling y function calling (requiere `--jinja` en llama.cpp).
+- Comprensión de imágenes mediante la torre de visión original de Qwen3.5-4B (pipeline `image-text-to-text`).
+- Decodificación especulativa nativa mediante la cabeza MTP, con aproximadamente 1,4x de aceleración en código con 2 tokens de draft.
+- Capacidades multilingües limitadas al inglés según la model card.
+- Ausencia de rechazos: 0 negativas en 100 prompts dañinos de prueba según el autor.
 
 ## Casos de uso
 
-- Asistente de chat local en GPU de 8 GB: con Q4_K_M (2,8 GB) y el proyector de visión (0,7 GB) cabe holgadamente en una RX 6600 o RTX 3060, permitiendo conversaciones multi-turno con contexto de 16k tokens sin depender de la nube.
-- Automatización de agentes con herramientas: el soporte de tool calling vía Jinja y su BFCL de 85,9 lo hacen adecuado para pipelines donde el modelo debe decidir qué función invocar (APIs, consultas a bases de datos, operaciones de fichero) en entornos internos controlados.
-- Procesamiento de documentos con imagen: al conservar la torre de visión, puede extraer información de capturas, formularios o diagramas y combinarla con texto en un mismo flujo.
-- Generación de código en local para prototipado: la velocidad de 79–81 tok/s en Q4_K_M con MTP activo permite usarlo como autocompletado o generador en editores sin conexión.
-- Investigación sobre alineación y edición de pesos: sirve como caso de estudio reproducible de abliteration selectiva por SVD, útil para estudiar qué direcciones codifican el rechazo sin destruir el resto de capacidades.
-- Evaluación de robustez y red-teaming: al no rechazar peticiones, es útil como modelo "sujeto" en pruebas internas de filtros de salida, clasificadores de seguridad o políticas de contenido, siempre en sandbox.
-- Despliegue en dispositivos con recursos limitados: la variante Q3_K_M (2,3 GB) permite ejecución en CPU o GPUs integradas para tareas de chat simple y clasificación.
+- Asistente conversacional local en equipos de 8 GB de VRAM: con Q4_K_M (2,8 GB) y el proyector de visión (0,7 GB) cabe holgadamente en una RX 6600 o RTX 3060, permitiendo chat multi-turno con contexto de 16K tokens.
+- Automatización de agentes con tool calling: el soporte de function calling vía `--jinja` permite integrarlo en flujos que consultan APIs, bases de datos o sistemas de ficheros, con la ventaja de la decodificación MTP para reducir latencia.
+- Procesamiento de documentos con imágenes: la torre de visión permite extraer información de capturas, formularios o diagramas combinándola con razonamiento textual en un único modelo.
+- Generación de código en pipelines locales: la velocidad medida (hasta 79 tokens/s en código con Q4_K_M en RX 6600) lo hace viable para autocompletado y generación de tests en entornos de desarrollo sin GPU de datacenter.
+- Investigación sobre alineación y seguridad: al eliminar los rechazos de forma controlada y documentada, sirve como banco de pruebas para estudiar el comportamiento de modelos sin salvaguardas y diseñar capas de filtrado externas.
+- Fine-tuning y merging: la versión BF16 en safetensors permite ajustar el modelo o fusionarlo con otros adaptadores, manteniendo la edición de rechazo como punto de partida.
+- Despliegue en entornos air-gapped: al ser GGUF y funcionar con llama.cpp, puede ejecutarse sin conexión en hardware de consumo para tareas de análisis de texto e imagen.
 
 ## Benchmarks y rendimiento
 
-Resultados del autor con Q4_K_M en llama.cpp, thinking off, decodificación greedy y sin system prompt, comparados con `Qwen3.8-4B-Distill-Heretic-Abliterated` (Q4_K_M):
+El autor publica una comparación frente a Distill-Heretic 4B (insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated, en GGUF Q4_K_M de yachen4ever), ambos ejecutados en llama.cpp con Q4_K_M, thinking desactivado, decodificación greedy y sin system prompt. Los resultados numéricos concretos no se detallan en el texto de la model card (se remiten a imágenes: `benchmark-comparison.png` y `bfcl-netgraph.png`), por lo que no se reproducen cifras aquí. El autor indica que Aurum iguala la precisión en tool calling, conserva más conocimiento y no presenta rechazos, y advierte que las cifras de Qwen publicadas corresponden a BF16 con thinking largo y BFCL v4, por lo que no son directamente comparables.
 
-| Benchmark | Modelo previo | Aurum 4B |
+| Métrica (Q4_K_M, thinking off) | Aurum 4B | Distill-Heretic 4B |
 |---|---|---|
-| IFEval prompt strict / loose (541) | 72,8 / 75,8 | 78,6 / 81,5 |
-| IFEval instruction strict / loose | 81,3 / 83,8 | 85,3 / 87,5 |
-| BFCL v3 non-live promedio (1.240) | 68,7 | 85,9 |
-| BFCL simple / multiple / parallel / parallel-multiple | 65,2 / 74,5 / 48,0 / 62,0 | 92,0 / 92,5 / 82,0 / 82,0 |
-| BFCL irrelevance | 93,8 | 80,8 |
-| MMLU-Redux 2.0 (5.330) | 75,0 | 74,9 |
-| GPQA Diamond (198) | 42,9 | 49,5 |
+| Resultados numéricos | no disponibles en el texto | no disponibles en el texto |
+| Tasa de rechazos (100 prompts dañinos) | 0 | no disponible |
 
-Rechazos:
+Métricas de cuantización publicadas por el autor (frente a BF16):
 
-| Test | Modelo previo | Qwen3.5-4B oficial | Blend Aurum anterior | Aurum 4B |
+| Fichero | Tamaño | KL vs BF16 | Mismo token top | Velocidad prosa/código (tok/s) |
 |---|---|---|---|---|
-| Rechazos de 100 prompts dañinos | 0 | 72 | 20 | 0 |
-| Sobre-rechazo (30 prompts inocuos × 3) | 1,1 % | no disponible | 0 % | 0 % |
-
-Calidad de cuantización frente a BF16 (corpus de chat largo):
-
-| Fichero | Tamaño | KL vs BF16 | Mismo top token | Velocidad prosa / código (tok/s) |
-|---|---|---|---|---|
-| BF16 | 8,7 GB | 0 | 100 % | no medido |
+| BF16 | 8,7 GB | 0 | 100 % | no medida |
 | Q8_0 | 4,6 GB | 0,0028 | 98,6 % | 47 / 64 |
 | Q6_K | 3,6 GB | 0,0067 | 97,2 % | 48 / 67 |
 | Q5_K_M | 3,2 GB | 0,0111 | 96,2 % | 57 / 76 |
@@ -84,44 +70,42 @@ Calidad de cuantización frente a BF16 (corpus de chat largo):
 | Q4_0 | 2,6 GB | 0,0544 | 90,9 % | 58 / 81 |
 | Q3_K_M | 2,3 GB | 0,0906 | 87,9 % | 59 / 80 |
 
-Notas del autor: las cifras publicadas por Qwen corresponden a BF16 con thinking largo y BFCL v4, por lo que no son directamente comparables. En GPQA se aplicó un límite de 3.072 tokens de respuesta y 84 de las 198 respuestas de Aurum lo agotaron (frente a 6 del modelo previo), por lo que su puntuación real con límite mayor sería probablemente superior.
+Mediciones en RX 6600 8 GB con Vulkan, llama.cpp b12289 y MTP con 2 tokens de draft.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q3_K_M ≈ 2,3 GB; Q4_K_M ≈ 2,8 GB; Q5_K_M ≈ 3,2 GB; Q6_K ≈ 3,6 GB; Q8_0 ≈ 4,6 GB; BF16 ≈ 8,7 GB. Añadir 0,7 GB si se usa el proyector de visión.
-- GPU recomendadas: cualquier GPU con 8 GB o más (RX 6600, RTX 3060/4060) para Q4_K_M; RTX 4090, A100 o H100 no son necesarias y solo aportan mayor throughput.
+- VRAM estimada: 2,3 GB (Q3_K_M), 2,8 GB (Q4_K_M, recomendado), 3,6 GB (Q6_K), 4,6 GB (Q8_0) y 8,7 GB (BF16). Añadir 0,7 GB para el proyector de visión si se usa entrada de imagen.
+- GPU recomendadas: cualquier GPU con 8 GB o más para las cuantizaciones Q4 y Q5 (RX 6600, RTX 3060, RTX 4060). Para Q8_0 se recomienda 8 GB o más; para BF16, 12 GB o más.
 - Cabe en GPU de consumo: sí, desde 4 GB con Q3_K_M y desde 8 GB con Q4_K_M más visión.
-- Opciones de despliegue: llama.cpp (versión b12289 o superior), llama-server con `--jinja`; el repo hermano en safetensors permite transformers y vLLM.
-- Throughput medido por el autor: 57 tok/s en prosa y 79 tok/s en código con Q4_K_M y MTP (2 tokens de draft) sobre RX 6600 con Vulkan. El MTP aporta aproximadamente 1,4× de aceleración en código; drafts de más de 2 tokens resultaron más lentos en esa tarjeta.
+- Opciones de despliegue: llama.cpp (llama-server), con soporte de Ollama y otros frontends compatibles con GGUF. La versión BF16 en safetensors permite transformers y vLLM.
+- Latencia y throughput: 57 tok/s en prosa y 79 tok/s en código con Q4_K_M en RX 6600 (Vulkan); la decodificación MTP aporta aproximadamente 1,4x en código. Drafts de más de 2 tokens resultaron más lentos en esa tarjeta.
+- Comando de referencia: `llama-server -m Aurum-4B-Q4_K_M.gguf --mmproj mmproj-Aurum-4B-F16.gguf --jinja -c 16384 -ngl 999 --spec-type draft-mtp --spec-draft-n-max 2`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Aurum 4B Uncensored | 4,33 B | 16k en ejemplo | Apache 2.0 | GGUF, safetensors | Sin rechazos, tool calling, visión, MTP |
-| Qwen3.5-4B (oficial) | 4,33 B | no disponible | Apache 2.0 | safetensors, GGUF | 72 rechazos de 100 prompts dañinos; referencia de capacidades |
-| Qwen3.8-4B-Distill-Heretic-Abliterated | ~4 B | no disponible | no disponible | GGUF | Modelo previo comparado; BFCL 68,7, IFEval 72,8 |
-| insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated | ~4 B | no disponible | no disponible | safetensors | Fuente de la edición de rechazos; incluye destilación adicional que Aurum no incorpora |
+| Aurum 4B Uncensored | 4.326 M | no disponible | Apache 2.0 | GGUF, safetensors | Sin rechazos, visión y MTP, pesos Qwen originales |
+| Qwen/Qwen3.5-4B | 4.326 M | no disponible | no disponible en la información | safetensors | Modelo base con alineación completa |
+| insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated | 4.326 M (base) | no disponible | no disponible en la información | safetensors, GGUF (yachen4ever) | Destilación de Qwen3.8 más abliteration con Heretic |
+| yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF | 4.326 M (base) | no disponible | no disponible en la información | GGUF Q4_K_M | Cuantización del anterior usada como referencia en benchmarks |
 
 ## Limitaciones y advertencias
 
-- Modelo explícitamente sin censura: 0 rechazos ante 100 prompts dañinos. No debe desplegarse en entornos accesibles a usuarios que no hayan optado por un modelo sin filtros.
-- Es un modelo de 4B: comete errores factuales y puede invocar herramientas cuando ninguna encaja (BFCL irrelevance 80,8, inferior al 93,8 del modelo previo).
-- Riesgo de alucinación inherente al tamaño; verificar resultados de herramientas antes de confiar en ellos.
-- Solo declara soporte de inglés; el rendimiento en castellano no está documentado.
-- La cuantización Q3_K_M y Q4_0 degradan notablemente la fidelidad (KL 0,0906 y 0,0544; mismo top token 87,9 % y 90,9 %).
-- El conteo de rechazos se basa en frases marcadoras, no en revisión manual: es una estimación.
-- El límite de contexto máximo nativo no se especifica; el ejemplo usa 16.384 tokens.
-- La licencia Apache 2.0 permite uso comercial, pero la ausencia de filtros traslada al desplegador toda la responsabilidad legal y ética sobre el contenido generado.
-- El modelo base Qwen3.5-4B y el modelo Heretic de referencia no detallan su licencia en la información disponible; conviene verificarla antes de un uso comercial derivado.
-- El repositorio ocupa 33,6 GB por acumular todas las cuantizaciones; descargar solo el fichero necesario.
+- Modelo sin censura: no rechaza peticiones dañinas (0 rechazos en 100 prompts de prueba según el autor). No debe desplegarse en entornos donde usuarios que no hayan optado por un modelo sin filtros puedan acceder a él.
+- Riesgo de alucinación inherente a un modelo de 4B, agravado por la ausencia de salvaguardas conversacionales.
+- Idioma limitado al inglés según la model card; el rendimiento en castellano no está documentado.
+- La longitud de contexto no se especifica en la información disponible; el ejemplo usa 16K, pero no se confirma el máximo soportado.
+- Las modificaciones de pesos pueden degradar ligeramente el conocimiento o la coherencia en dominios sensibles; el autor reporta que Aurum conserva más conocimiento que la variante con destilación, pero no publica cifras detalladas en el texto.
+- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal sobre el contenido generado recae en el desplegador.
+- El uso de MTP requiere flags específicos de llama.cpp y puede no estar disponible en otros runtimes.
+- La model card advierte que las comparaciones con cifras publicadas de Qwen no son directas (BF16 con thinking largo frente a Q4 sin thinking).
 
 ## Enlaces
 
-- Hugging Face (GGUF): https://huggingface.co/2Beyes/Aurum-4B-Uncensored-GGUF
-- Safetensors BF16: https://huggingface.co/2Beyes/Aurum-4B-Uncensored
+- Repositorio GGUF: https://huggingface.co/2Beyes/Aurum-4B-Uncensored-GGUF
+- Repositorio BF16 safetensors: https://huggingface.co/2Beyes/Aurum-4B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Modelo fuente de la edición: https://huggingface.co/insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
-- Modelo previo comparado: https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF
+- Modelo de referencia para la edición de rechazo: https://huggingface.co/insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
+- GGUF de referencia para benchmarks: https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Dataset de evaluación de rechazos: https://huggingface.co/datasets/mlabonne/harmful_behaviors

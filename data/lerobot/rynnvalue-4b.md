@@ -2,48 +2,49 @@
 
 ## Resumen
 
-RynnValue-4B es un modelo de valor (value model) para robótica, condicionado por lenguaje, desarrollado por Alibaba DAMO Academy y empaquetado para su uso en LeRobot por el equipo de Hugging Face. Se construye sobre Qwen3-VL y su tarea es estimar, a partir de un vídeo de trayectoria y una descripción textual de la tarea, el tiempo restante en segundos hasta que la tarea se completa. Esta señal de "distancia temporal al éxito" funciona como función de recompensa densa para entrenamiento por refuerzo, filtrado de datos y selección de políticas en robótica.
+RynnValue-4B es un modelo de valor (*value model*) para robótica, condicionado por lenguaje y construido sobre Qwen3-VL. Dado un vídeo de trayectoria y una descripción textual de la tarea, predice el tiempo restante en segundos hasta completar la tarea y una señal de éxito. Lo publica el equipo de LeRobot (Hugging Face) como modelo de recompensa para su framework de aprendizaje robótico de extremo a extremo.
 
-El modelo tiene 5.144.979.456 parámetros (aproximadamente 5,1 mil millones) según los pesos en safetensors, y se distribuye con licencia Apache 2.0. El repositorio ocupa 10,3 GB y la librería asociada es LeRobot. La relevancia actual radica en que proporciona una recompensa escalar y continua alineada con instrucciones en lenguaje natural, algo que escasea en el ecosistema de modelos abiertos para manipulación robótica.
+El modelo se distribuye en formato safetensors con 5.144.979.456 parámetros reales (pese al "4B" del nombre), un repositorio de 10,3 GB y licencia Apache 2.0. Es un *fine-tune* del modelo base Alibaba-DAMO-Academy/RynnValue-4B, empaquetado para su uso con la librería `lerobot` y la pipeline `robotics`.
 
-La model card indica explícitamente que se trata de un modelo de inferencia únicamente dentro de LeRobot: no puede entrenarse con `lerobot-train`. La información pública disponible es escasa y no incluye detalles sobre datos de entrenamiento, longitud de contexto ni benchmarks.
+Su relevancia radica en que proporciona una función de recompensa densa y basada en visión-lenguaje para tareas de manipulación robótica, lo que permite evaluar el progreso de una política sin necesidad de anotaciones manuales por paso. En LeRobot es un modelo de solo inferencia: no se puede entrenar con `lerobot-train`.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer (basada en Qwen3-VL) |
-| Parámetros totales | 5.144.979.456 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Vision-language transformer basada en Qwen3-VL (modelo de valor condicionado por lenguaje) |
+| Parametros totales | 5.144.979.456 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin cuantizar) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se describe como un value model condicionado por lenguaje construido sobre Qwen3-VL, es decir, un transformer multimodal que procesa vídeo de trayectoria junto con una descripción de tarea. La salida no es texto generativo, sino una predicción escalar de tiempo restante en segundos hasta la finalización de la tarea, lo que lo convierte en un reward model con señal temporal densa.
+RynnValue-4B se apoya en Qwen3-VL, un transformer multimodal de visión-lenguaje, y se especializa como modelo de valor para robótica. La entrada combina un vídeo de trayectoria con una descripción de tarea en lenguaje natural; la salida son dos cabezas de predicción: el tiempo restante hasta la finalización de la tarea (en segundos) y una señal de éxito. Esta formulación de "distancia temporal" convierte el problema de estimar progreso en una regresión sobre tiempo restante.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas más allá de la formulación de "temporal distance" que aparece en las etiquetas del repositorio. El modelo base declarado es Alibaba-DAMO-Academy/RynnValue-4B, sobre el que se ha realizado un fine-tuning para su integración en LeRobot.
+El modelo es un *fine-tune* del checkpoint Alibaba-DAMO-Academy/RynnValue-4B. La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. Tampoco se documentan innovaciones de decodificación o atención específicas más allá de la herencia arquitectónica de Qwen3-VL.
 
 ## Capacidades
 
-- Predicción de tiempo restante hasta completar una tarea robótica a partir de vídeo de trayectoria y descripción textual.
-- Comprensión de vídeo e imagen combinada con lenguaje natural, heredada de la base Qwen3-VL.
-- Generación de recompensas densas y escalares adecuadas para RL, filtrado de datos y ranking de trayectorias.
-- Condicionamiento por instrucciones en lenguaje natural para definir el objetivo de la tarea.
+- Predicción del tiempo restante (en segundos) hasta completar una tarea robótica a partir de un vídeo de trayectoria y una descripción textual.
+- Predicción de éxito de la tarea (`predict_success`), útil como señal de recompensa o criterio de parada.
+- Comprensión de vídeo combinada con condicionamiento por lenguaje natural (visión-lenguaje).
 - Integración nativa con el ecosistema LeRobot mediante `RewardModelConfig` y `make_reward_model`.
-- No se documenta soporte de tool calling, agentes multi-paso, audio ni modos de razonamiento explícito.
+- Uso como modelo de recompensa para evaluar políticas robóticas en entornos de manipulación.
+- Solo inferencia: no soporta entrenamiento dentro de LeRobot.
+- Soporte de tool calling, agentes o modo thinking: no disponible en la información.
 
 ## Casos de uso
 
-- Entrenamiento por refuerzo en manipulación robótica: usar el tiempo restante predicho como recompensa densa para guiar políticas de imitación o RL, evitando recompensas binarias escasas al final del episodio.
-- Filtrado y curación de datasets de demostraciones: puntuar cada trayectoria con la estimación de tiempo restante y descartar episodios anómalos o inconsistentes con la instrucción.
-- Selección de políticas en evaluación: comparar varias políticas candidatas ejecutando rollouts y midiendo la recompensa media predicha por RynnValue.
-- Detección temprana de fallos: monitorizar la predicción de tiempo restante durante la ejecución y activar recuperación si no decrece, señal de que la tarea se ha estancado.
-- Anotación automática de progreso: generar etiquetas de progreso temporal sobre vídeos de robot para entrenar modelos auxiliares o para visualización en herramientas de análisis.
-- Investigación en reward modeling multimodal: servir como baseline reproducible y abierto para estudiar funciones de recompensa condicionadas por lenguaje en robótica.
+- Evaluación de políticas robóticas: usar `predict_remaining_time` como métrica de progreso para comparar checkpoints de una política entrenada con LeRobot sin anotación manual por frame.
+- Recompensa densa para *reinforcement learning*: emplear la señal de tiempo restante como recompensa intermedia que guíe al agente hacia la finalización de la tarea.
+- Criterio de parada temprana en ejecución: consultar `predict_success` para detener una política cuando el modelo estima que la tarea está completada, evitando sobreactuación.
+- Filtrado y curación de datasets: puntuar episodios grabados según el tiempo restante predicho para descartar demostraciones de baja calidad o incompletas.
+- Monitorización en producción: estimar en tiempo real cuánto falta para que un robot termine una tarea y alertar si la predicción no decrece (posible bloqueo).
+- Investigación en modelos de valor: comparar la formulación de distancia temporal frente a clasificadores de éxito binarios en tareas de manipulación con condicionamiento por lenguaje.
 
 ## Benchmarks y rendimiento
 
@@ -51,36 +52,40 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: en torno a 10-11 GB solo para pesos, más memoria para activaciones y procesamiento de vídeo; se recomienda al menos 16-24 GB.
-- VRAM estimada con cuantización a 8 bits: aproximadamente 5-6 GB de pesos, más overhead; con 4 bits, en torno a 3 GB de pesos.
-- GPU recomendadas: A100 40/80 GB o H100 para lotes grandes y vídeos de alta resolución; RTX 4090 (24 GB) para inferencia en FP16 con lotes pequeños.
-- GPU de consumo: cabe en RTX 4090 y potencialmente en GPUs de 16 GB con cuantización; en GPUs de 8 GB requeriría cuantización agresiva y no está documentado.
-- Opciones de despliegue: la vía soportada es LeRobot (`make_reward_model`); no se documenta soporte oficial de vLLM, llama.cpp, Ollama ni TGI, dado que la salida es un escalar y no texto generativo.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 5.144.979.456 parámetros en fp16 se requieren aproximadamente 10,3 GB solo para pesos; en fp32, unos 20,6 GB. El procesamiento de vídeo añade memoria para activaciones y frames.
+- GPU recomendadas: A100 (40/80 GB) o H100 para inferencia cómoda en fp16 con vídeo de alta resolución; RTX 4090 (24 GB) viable en fp16 para lotes pequeños.
+- GPU de consumo: cabe en RTX 4090 y RTX 3090 (24 GB) en fp16; en tarjetas de 16 GB requeriría cuantización, no documentada por el autor.
+- Opciones de despliegue: la vía soportada es la librería `lerobot` (`RewardModelConfig.from_pretrained` + `make_reward_model`) sobre PyTorch. No se documenta soporte de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RynnValue-4B (lerobot) | 5,14 B | no disponible | Value/reward model robótico condicionado por lenguaje | Apache 2.0 | Hugging Face, LeRobot |
-| Qwen3-VL (base) | no disponible en la información | no disponible | Vision-language general | no disponible en la información | Hugging Face |
-| Alternativas de reward modeling robótico | no disponible | no disponible | no disponible | no disponible | no disponible |
+| lerobot/RynnValue-4B | 5.144.979.456 | no disponible | Modelo de valor / recompensa robótica (visión-lenguaje) | Apache 2.0 | Hugging Face |
+| Alibaba-DAMO-Academy/RynnValue-4B | no disponible | no disponible | Modelo de valor robótico (base) | no disponible | Hugging Face |
+| Políticas ACT de LeRobot (p. ej. SO-101) | no disponible | no disponible | Política de imitación (no es modelo de valor) | no disponible | Hugging Face |
 
-No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría.
+La información disponible no permite una comparación cuantitativa de rendimiento con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Solo inferencia en LeRobot: no puede entrenarse con `lerobot-train`, lo que limita su uso como base para fine-tuning dentro del flujo estándar.
-- Información pública muy escasa: no hay datos sobre sesgos, composición del dataset ni evaluación, lo que dificulta estimar su robustez fuera de la distribución de entrenamiento.
-- Riesgo de alucinación en la estimación temporal: la predicción de tiempo restante puede ser incorrecta en tareas ambiguas, entornos visualmente distintos o instrucciones poco específicas.
-- Dependencia del modelo base Qwen3-VL: hereda sus limitaciones de idioma, visión y sesgos, no documentadas en esta ficha.
-- Idiomas soportados no disponibles: no se puede garantizar un rendimiento multilingüe en las descripciones de tarea.
-- Uso comercial permitido por Apache 2.0, pero sin garantías del autor sobre idoneidad para producción.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de su calidad frente a alternativas.
+- Modelo de solo inferencia en LeRobot: no se puede reentrenar con `lerobot-train`.
+- No se documentan sesgos conocidos ni evaluación de robustez frente a dominios visuales distintos al de entrenamiento.
+- Riesgo de alucinación inherente a los modelos de visión-lenguaje; las predicciones de tiempo restante y éxito deben tratarse como estimaciones, no como verdad de referencia.
+- Idiomas soportados no especificados; el condicionamiento por lenguaje depende de las capacidades heredadas de Qwen3-VL.
+- Longitud de contexto no documentada, lo que limita planificar el tamaño de las trayectorias de vídeo procesables.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base del que deriva debe verificarse de forma independiente.
+- Sin datos publicados de benchmarks, latencia ni throughput; la validación en producción corre a cargo del integrador.
+- Requiere el preprocesador propio del modelo para construir el `batch` de entrada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/lerobot/RynnValue-4B
 - Modelo base: https://huggingface.co/Alibaba-DAMO-Academy/RynnValue-4B
-- Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
+- Repositorio LeRobot: https://github.com/huggingface/lerobot
+- Guía LeRobot SO-101: https://huggingface.co/docs/lerobot/so101
+- Ruta de aprendizaje LeRobot: https://www.roboticscenter.ai/learn/paths/lerobot
+- Tutoriales LeRobot (YouTube): https://www.youtube.com/playlist?list=PLo2EIpI_JMQu5zrDHe4NchRyumF2ynaUN
+- LeRobot Visualizer: https://mylerobot.com/lerobot/

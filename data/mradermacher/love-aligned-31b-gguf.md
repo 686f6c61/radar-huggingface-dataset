@@ -2,126 +2,103 @@
 
 ## Resumen
 
-Love-Aligned-31B-GGUF es el repositorio de cuantizaciones GGUF del modelo UnstableLlama/Love-Aligned-31B, publicado por mradermacher, un autor conocido por generar versiones cuantizadas de modelos abiertos para su ejecución local. Se trata de un modelo de aproximadamente 30.697 millones de parametros (30,7B) afinado mediante LoRA y posteriormente alineado con DPO (Direct Preference Optimization) sobre una base que, segun la etiqueta `gemma4` de la model card, pertenece a la familia Gemma 4. Su orientacion es conversacional y afectiva: el nombre "Love-Aligned" y las etiquetas `alignment` y `conversational` indican un ajuste fino orientado a respuestas de tono empatico y relacional en ingles.
+Love-Aligned-31B-GGUF es la distribucion en formato GGUF del modelo Love-Aligned-31B, publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. El modelo original, desarrollado por UnstableLlama, es un ajuste fino de una base de la familia Gemma 4 (segun la etiqueta "gemma4" de la model card) con 30.697.345.596 parametros (aproximadamente 31B), orientado a conversacion y alineamiento mediante DPO (Direct Preference Optimization) y LoRA. La relevancia de esta publicacion radica en que pone a disposicion de la comunidad variantes cuantizadas estaticas del modelo, desde Q2_K (12,0 GB) hasta Q8_0 (32,7 GB), lo que permite ejecutarlo en hardware de consumo que no podria cargar los pesos completos en precision alta.
 
-El problema que resuelve es practico: permitir ejecutar un modelo de 31B alineado por preferencias en hardware local o en servidores modestos, sin necesidad de cargar los pesos originales en safetensors. El repositorio ofrece 13 variantes GGUF que van desde 12,0 GB (Q2_K) hasta 32,7 GB (Q8_0), ademas de dos ficheros `mmproj` (0,9 GB y 1,3 GB) que actuan como suplemento multimodal, lo que sugiere capacidad de vision heredada del modelo base.
+El repositorio incluye tambien suplementos multimodales (mmproj) en Q8_0 y f16, lo que sugiere que el modelo base incorpora capacidad de vision, aunque la model card no detalla la arquitectura exacta ni el proceso de entrenamiento. La licencia es Apache 2.0, lo que facilita su uso comercial, y el unico idioma declarado es el ingles. Con 352 descargas y 1 like en el momento de la consulta, se trata de una publicacion reciente (creada en septiembre de 2026 y actualizada en octubre del mismo ano) y de nicho, sin benchmarks publicados en la informacion disponible.
 
-Es relevante ahora porque los modelos de ~30B cuantizados a 4 bits caben en GPU de consumo con 24 GB de VRAM, lo que acerca capacidades de alineacion por DPO a entornos de investigacion y despliegue con requisitos de privacidad. Conviene senalar que el repositorio no tiene descargas ni valoraciones registradas y que la model card no documenta longitud de contexto, composicion del dataset ni resultados de benchmarks.
+Esta ficha describe principalmente el artefacto GGUF y sus implicaciones practicas de despliegue; los detalles de entrenamiento y evaluacion del modelo original no estan disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `gemma4` en la model card, sugiere familia Gemma 4) |
-| Parametros totales | 30.697.345.596 (~30,7B) |
+| Arquitectura | Transformer (familia Gemma 4, segun etiqueta "gemma4"); detalles no disponibles |
+| Parametros totales | 30.697.345.596 (aproximadamente 31B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | mmproj-Q8_0, mmproj-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16; variantes imatrix en repositorio separado |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base esta en safetensors |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 | Tamano del repositorio | 213,9 GB |
-| Tipo de cuantizacion | estatica (no se ofrecen cuantizaciones ponderadas/imatrix) |
 | Modelo base | UnstableLlama/Love-Aligned-31B |
-| Libreria declarada | transformers, gguf |
+| Metodo de alineamiento | DPO con LoRA (segun etiquetas) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo (numero de capas, dimension oculta, mecanismo de atencion ni tipo de positional encoding). Las etiquetas de la model card (`gemma4`, `lora`, `dpo`, `alignment`, `conversational`) permiten reconstruir el proceso: se parte de una base de la familia Gemma 4, se aplica un ajuste fino con LoRA sobre el modelo UnstableLlama/Love-Aligned-31B y despues una etapa de alineacion con DPO, que optimiza el modelo para preferir respuestas con un tono afectivo y relacional concreto.
+La informacion disponible no detalla la arquitectura interna del modelo original. Las etiquetas de la model card indican "gemma4", lo que apunta a que Love-Aligned-31B se construye sobre una base de la familia Gemma 4 de Google, con aproximadamente 31B parametros. El ajuste se realizo mediante LoRA y posteriormente DPO, una tecnica de alineamiento que optimiza el modelo para preferir respuestas consideradas mejores por un conjunto de preferencias humanas o sinteticas. El resultado se orienta a uso conversacional ("conversational" en las etiquetas).
 
-No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de idiomas ni los hiperparametros de la etapa DPO. La presencia de los ficheros `mmproj` (proyector multimodal en Q8_0 y f16) indica que el modelo base incorpora una torre de vision y que estas cuantizaciones estan preparadas para conservar esa capacidad, aunque la model card no documenta que tareas multimodales se entrenaron ni con que datos. Las cuantizaciones son estaticas: el autor indica explicitamente que no hay versiones ponderadas/imatrix y que no las tiene planificadas, por lo que la calidad relativa frente a cuantizaciones ponderadas de referencia no esta medida.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de preferencias, ni sobre innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, etc.). Tampoco se documenta el proceso de cuantizacion mas alla de lo habitual en mradermacher: cuantizaciones estaticas generadas con llama.cpp, con la nota de que las variantes imatrix (ponderadas) estan en un repositorio separado (Love-Aligned-31B-i1-GGUF) y suelen ofrecer mejor calidad por tamano que las estaticas equivalentes. La presencia de ficheros mmproj confirma que el modelo base incluye un codificador multimodal para imagenes, aunque no se especifica su arquitectura.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con tono empatico y relacional, fruto del ajuste DPO.
-- Conversaciones multi-turno de caracter afectivo o de acompanamiento emocional.
-- Redaccion creativa y generacion de texto libre en ingles.
-- Capacidad multimodal probable: el repositorio incluye ficheros `mmproj` Q8_0 y f16 que actuan como suplemento multimodal, lo que apunta a soporte de entrada de imagenes heredado del modelo base. No esta confirmado en la model card.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas a ingles (`language: en`); no se declara soporte de otros idiomas.
-- Modo de razonamiento explicito (thinking mode): no disponible en la informacion proporcionada.
-- Capacidades de codigo y matematicas: no documentadas; el ajuste esta orientado a conversacion, no a tareas tecnicas.
+- Generacion de texto conversacional en ingles, con alineamiento orientado a respuestas preferidas por humanos (DPO).
+- Capacidad multimodal: el repositorio incluye suplementos mmproj (Q8_0 y f16), lo que permite procesar imagenes junto con texto en llama.cpp y derivados.
+- Razonamiento y respuesta multi-turno: el ajuste conversacional sugiere soporte para dialogos, aunque no hay documentacion sobre modo de pensamiento explicito.
+- Capacidades multilingues: limitadas al ingles segun la model card; no se declaran otros idiomas.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades especiales (audio, thinking mode, etc.): no documentadas.
 
 ## Casos de uso
 
-- Asistente conversacional de acompanamiento emocional en ingles: el ajuste DPO sobre preferencias orientadas a la afectividad hace que el modelo mantenga un tono empatico y consistente en dialogos multi-turno, adecuado para aplicaciones de bienestar digital que operen exclusivamente en ingles.
-- Chatbot de consejo relacional: el modelo puede gestionar conversaciones sobre relaciones personales con respuestas matizadas, aprovechando que la alineacion se ha optimizado especificamente para ese dominio.
-- Generacion de contenido creativo y narrativa en ingles: util para redactar ficcion, guiones o material editorial con carga emocional, ejecutandose en local con la cuantizacion Q8_0 (32,7 GB) cuando se prioriza la calidad.
-- Personajes virtuales y roleplay conversacional: las cuantizaciones Q4_K_S y Q4_K_M (17,9 GB y 18,8 GB) permiten mantener personajes con memoria de conversacion en una unica GPU de 24 GB, con latencias compatibles con uso interactivo.
-- Investigacion sobre alineacion con DPO: sirve como caso de estudio reproducible de una etapa DPO aplicada sobre un modelo de ~31B, util para comparar el efecto del ajuste por preferencias en el tono de las respuestas frente al modelo base sin alinear.
-- Despliegue local con requisitos de privacidad: al ser un GGUF ejecutable en llama.cpp u Ollama sin conexion, permite procesar conversaciones sensibles en infraestructura propia, sin enviar datos a APIs externas.
-- Prototipado multimodal en local: si el modelo base conserva la torre de vision, la combinacion del GGUF principal con el fichero `mmproj-f16` (1,3 GB) permitiria probar entrada de imagenes en llama.cpp para tareas de descripcion o dialogo sobre imagenes en ingles.
+- Asistente conversacional local en ingles: el modelo puede desplegarse con llama.cpp u Ollama usando la cuantizacion Q4_K_M (18,8 GB) para mantener dialogos multi-turno en una estacion de trabajo con GPU de 24 GB, sin depender de APIs externas.
+- Prototipado de chatbots alineados: gracias al ajuste DPO, es adecuado para experimentar con tecnicas de alineamiento y comparar respuestas frente al modelo base, en entornos de investigacion con requisitos de privacidad.
+- Procesamiento de documentos con imagenes: los suplementos mmproj permiten usar el modelo para tareas de pregunta-respuesta sobre capturas, diagramas o documentos escaneados, combinando texto e imagen en una sola sesion.
+- Evaluacion de cuantizaciones: el repositorio ofrece un espectro amplio (Q2_K a Q8_0), lo que lo convierte en un banco de pruebas para medir la degradacion de calidad y el impacto en perplejidad segun el nivel de cuantizacion.
+- Generacion de contenido asistida en ingles: redaccion de borradores, resumenes y reescritura de textos en un pipeline local, usando la variante Q5_K_M (21,9 GB) para un equilibrio entre calidad y huella de memoria.
+- Despliegue en servidores con multiples usuarios: con Q8_0 (32,7 GB) en una GPU A100 40 GB o H100, se puede servir mediante llama.cpp server o vLLM (si soporta la arquitectura) para cargas de inferencia concurrentes en ingles.
+- Fine-tuning posterior o investigacion de alineamiento: al estar bajo Apache 2.0 y disponible en safetensors en el repo original, sirve como punto de partida para nuevos ajustes LoRA/DPO en ingles.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card del repositorio unicamente incluye un grafico externo comparativo de perplejidad entre tipos de cuantizacion de baja calidad (enlace a `nethype.de`), sin cifras concretas asociadas a este modelo. No hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones de alineacion o seguridad.
-
 ## Requisitos de hardware
 
-Estimaciones de VRAM a partir del tamano de cada fichero GGUF, anadiendo margen para cache KV, buffers y overhead del runtime (no son cifras publicadas por el autor):
-
-| Cuantizacion | Tamano del fichero | VRAM estimada en inferencia |
-|---|---|---|
-| Q2_K | 12,0 GB | ~14-15 GB |
-| Q3_K_S | 13,9 GB | ~16-17 GB |
-| Q3_K_M | 15,4 GB | ~17-18 GB |
-| Q3_K_L | 16,7 GB | ~18-19 GB |
-| IQ4_XS | 17,0 GB | ~19-20 GB |
-| Q4_K_S | 17,9 GB | ~20-21 GB |
-| Q4_K_M | 18,8 GB | ~21-22 GB |
-| Q5_K_S | 21,4 GB | ~24-25 GB |
-| Q5_K_M | 21,9 GB | ~24-26 GB |
-| Q6_K | 25,3 GB | ~28-30 GB |
-| Q8_0 | 32,7 GB | ~36-38 GB |
-| mmproj-f16 | 1,3 GB | adicional si se usa vision |
-| mmproj-Q8_0 | 0,9 GB | adicional si se usa vision |
-
-- Cabe en GPU de consumo: Q4_K_S y Q4_K_M en RTX 4090 o RTX 3090 (24 GB); Q3_K_M o IQ4_XS en tarjetas de 16 GB con offload parcial de capas a CPU; Q4_K_M y Q5_K_M en equipos Apple Silicon con 32 GB de memoria unificada.
-- No cabe en GPU de consumo: Q6_K y Q8_0 requieren A100 40 GB, A100 80 GB, H100 80 GB o configuraciones multi-GPU.
-- Opciones de despliegue: llama.cpp y sus interfaces (llama-server, llama-cpp-python), Ollama, LM Studio, koboldcpp, text-generation-webui, Jan. vLLM y TGI no ofrecen soporte completo y nativo de pesos GGUF, por lo que no son la via recomendada para este repositorio.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
-- Nota de memoria: la ventana de contexto no esta documentada, por lo que el consumo de cache KV no puede acotarse y las cifras de VRAM deben considerarse como minimos con contexto corto.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K: 12,0 GB de pesos; unos 14-16 GB en total con contexto moderado.
+  - Q3_K_M: 15,4 GB; unos 17-19 GB en total.
+  - IQ4_XS: 17,0 GB; unos 19-21 GB en total.
+  - Q4_K_M: 18,8 GB; unos 21-23 GB en total.
+  - Q5_K_M: 21,9 GB; unos 24-26 GB en total.
+  - Q6_K: 25,3 GB; unos 27-29 GB en total.
+  - Q8_0: 32,7 GB; unos 35-37 GB en total.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M o Q5_K_S; RTX 3090 (24 GB) para Q4; A100 40 GB o H100 para Q8_0 y contextos largos; A6000 (48 GB) para Q8_0 con margen.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K y contexto reducido, con riesgo de desbordamiento a RAM.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, koboldcpp y otros frontends compatibles con GGUF. vLLM y TGI requeririan soporte de la arquitectura Gemma 4 y no esta confirmado en la informacion disponible.
+- Latencia y throughput: no disponibles; dependeran de la GPU, la cuantizacion y la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de modelos comparables de terceros en la informacion proporcionada (parametros, contexto, benchmarks o licencia de alternativas de ~30B). La comparacion se limita, por tanto, a las variantes del propio repositorio:
-
-| Variante | Parametros | Contexto | Licencia | Formato | Rendimiento |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Love-Aligned-31B (modelo base, safetensors) | 30,7B | no disponible | apache-2.0 | safetensors | no disponible |
-| Love-Aligned-31B-GGUF Q8_0 | 30,7B | no disponible | apache-2.0 | GGUF | no disponible |
-| Love-Aligned-31B-GGUF Q4_K_M | 30,7B | no disponible | apache-2.0 | GGUF | no disponible |
-| Love-Aligned-31B-GGUF Q2_K | 30,7B | no disponible | apache-2.0 | GGUF | no disponible |
-| Alternativas de ~30B de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Love-Aligned-31B-GGUF | 30,7B | no disponible | Apache 2.0 | GGUF | Ajuste DPO sobre base Gemma 4; multimodal via mmproj; solo ingles |
+| Gemma 2 27B (referencia de familia) | 27B | 8K (tipico) | Gemma license | safetensors, GGUF | Base generalista de Google; comparacion orientativa, no confirmada como ancestro directo |
+| Mistral Small 24B (referencia de tamano) | 24B | 32K-128K segun version | Apache 2.0 | safetensors, GGUF | Alternativa europea de tamano similar con licencia permisiva |
+| Qwen2.5 32B (referencia de tamano) | 32,5B | 32K-128K segun version | Apache 2.0 | safetensors, GGUF | Multilingue y con buen rendimiento en codigo; contexto mayor |
 
-El autor clasifica Q4_K_S y Q4_K_M como "rapidas y recomendadas", Q6_K como "muy buena calidad", Q8_0 como "rapida, mejor calidad" y Q3_K_M como "calidad inferior". Estas etiquetas son valoraciones cualitativas del cuantizador, no resultados medidos.
+La comparativa es orientativa: no se dispone de benchmarks del modelo para confrontar rendimiento, y la base exacta (Gemma 4) no esta documentada en detalle. La ventaja principal de esta publicacion es la disponibilidad inmediata de cuantizaciones GGUF y los suplementos multimodales; su desventaja frente a alternativas es el soporte exclusivo de ingles y la ausencia de datos de evaluacion.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte de ingles (`language: en`). No hay evidencia de capacidades en castellano ni en otros idiomas.
-- Contexto no documentado: se desconoce la longitud de contexto soportada, lo que impide dimensionar correctamente la cache KV y estimar el comportamiento en conversaciones largas.
-- Ausencia de benchmarks: no hay ninguna metrica publicada (MMLU, HumanEval, GSM8K ni evaluaciones de alineacion), por lo que no es posible verificar la calidad frente al modelo base ni frente a alternativas.
-- Repositorio sin validacion de la comunidad: 0 descargas y 0 valoraciones en el momento de la consulta, lo que implica ausencia de verificacion independiente sobre la fidelidad de las cuantizaciones.
-- Sesgo de alineacion afectiva: un ajuste DPO orientado a un tono afectivo concreto puede incrementar la complacencia y la sicofantia, degradando el rendimiento en tareas tecnicas, de razonamiento estricto o de recuperacion de hechos.
-- Riesgo de alucinacion: no hay datos de evaluacion de veracidad; en dominios factuales el modelo puede generar afirmaciones incorrectas con seguridad.
-- Ambito sensible: los casos de uso de apoyo emocional o consejo relacional no deben presentarse como sustituto de atencion psicologica o profesional.
-- Licencia: el repositorio declara apache-2.0, que permite uso comercial, pero la model card no aclara la licencia del modelo base UnstableLlama/Love-Aligned-31B ni las condiciones de los datos de ajuste. Conviene verificar la cadena de licencias antes de un despliegue en produccion.
-- Cuantizaciones estaticas: no existen versiones ponderadas/imatrix, y el propio autor senala que no estan planificadas. Las cuantizaciones de 2 y 3 bits (Q2_K, Q3_K_S, Q3_K_M, Q3_K_L) implican perdida de calidad significativa para un modelo de este tamano.
-- Soporte multimodal no confirmado: los ficheros `mmproj` sugieren capacidad de vision, pero la model card no documenta tareas, datos ni calidad de esa capacidad.
-- Sin soporte en vLLM/TGI: al tratarse de GGUF, los stacks de servido de alto rendimiento habituales en produccion no son aplicables directamente.
+- Solo soporta ingles segun la model card; el rendimiento en castellano no esta garantizado y probablemente sea deficiente.
+- No hay benchmarks publicados, por lo que la calidad real del ajuste DPO y su posible degradacion frente al modelo base son desconocidas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje de 31B; sin evaluacion no se puede acotar su magnitud.
+- El ajuste DPO puede introducir sesgos hacia estilos de respuesta concretos ("love-aligned") no documentados; se desconoce la composicion del dataset de preferencias.
+- Las cuantizaciones Q2_K y Q3_K_S degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior, o las variantes imatrix del repositorio i1.
+- El repositorio ocupa 213,9 GB en total; descargar solo el fichero necesario para evitar consumo excesivo de disco.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones de la base Gemma 4 subyacente, ya que los terminos de la familia Gemma pueden imponer restricciones adicionales al uso comercial.
+- No hay informacion sobre tool calling ni soporte de agentes; no asumir estas capacidades en produccion sin validacion previa.
+- El soporte multimodal depende de los ficheros mmproj y de la version de llama.cpp; la integracion puede requerir configuracion adicional.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Love-Aligned-31B-GGUF
 - Modelo base: https://huggingface.co/UnstableLlama/Love-Aligned-31B
-- Pagina resumen de descargas del cuantizador: https://hf.tst.eu/model#Love-Aligned-31B-GGUF
-- Peticiones de cuantizacion y FAQ: https://huggingface.co/mradermacher/model_requests
-- Grafico comparativo de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Empresa del cuantizador: https://www.nethype.de/
-- Ficheros directos: https://huggingface.co/mradermacher/Love-Aligned-31B-GGUF/resolve/main/Love-Aligned-31B.Q4_K_M.gguf y https://huggingface.co/mradermacher/Love-Aligned-31B-GGUF/resolve/main/Love-Aligned-31B.mmproj-f16.gguf
-
-Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (contenido de un foro hungaro sobre relaciones personales y modelismo). No se ha encontrado documentacion adicional, paper ni blog tecnico sobre Love-Aligned-31B en la informacion proporcionada.
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Love-Aligned-31B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Love-Aligned-31B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

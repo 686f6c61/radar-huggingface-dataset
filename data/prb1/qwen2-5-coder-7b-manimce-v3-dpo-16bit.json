@@ -5,7 +5,7 @@
   "author": "PRB1",
   "url": "https://huggingface.co/PRB1/Qwen2.5-Coder-7B-ManimCE-V3-DPO-16bit",
   "created_at": "2026-11-17T18:39:40.000Z",
-  "updated_at": "2026-11-18T20:33:27.000Z",
+  "updated_at": "2026-11-23T23:13:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 78,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

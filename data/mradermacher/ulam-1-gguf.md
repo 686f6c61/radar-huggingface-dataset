@@ -2,112 +2,103 @@
 
 ## Resumen
 
-Ulam-1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo base Ulam-1, publicado por el usuario ulamai en Hugging Face. No se trata por tanto de un modelo entrenado desde cero por mradermacher, sino de una conversión de pesos ya existentes a formatos optimizados para inferencia local con llama.cpp y derivados. El modelo base cuenta con 26.895.998.464 parámetros reales (aproximadamente 26,9 mil millones), según los datos de safetensors disponibles.
+Ulam-1 es un modelo de lenguaje multimodal orientado a razonamiento matemático y matemática de investigación, desarrollado por ulamai. Esta ficha documenta la versión GGUF publicada por mradermacher, un cuantizador independiente que distribuye pesos estáticos del modelo original `ulamai/Ulam-1`. El modelo cuenta con 26.895.998.464 parámetros totales (aproximadamente 26,9 mil millones) y está construido sobre una arquitectura de la familia Qwen 3.5, según la etiqueta `qwen3_5` de la model card.
 
-La relevancia de este repositorio es práctica: al ofrecer hasta doce niveles de cuantización distintos (desde x-f16 hasta Q2_K, pasando por Q3_K_S, Q4_K_M, IQ4_XS o Q8_0), permite desplegar un modelo de casi 27.000 millones de parámetros en hardware que va desde GPUs de consumo con 12-16 GB de VRAM hasta configuraciones de servidor. El repositorio ocupa 103,9 GB en total, suma de todas las variantes publicadas.
+El modelo se distribuye bajo licencia Apache 2.0 y está entrenado específicamente para tareas de razonamiento matemático, con especial énfasis en trayectorias de razonamiento de investigación verificadas. Los datasets declarados son `ulamai/verified-research-reasoning-trajectories` y `ulamai/Math-RL-Tasks`, lo que sugiere un entrenamiento con datos de razonamiento matemático de alta calidad y posiblemente reforzado con aprendizaje por refuerzo. La model card indica únicamente inglés como idioma soportado.
 
-La información pública disponible sobre este repositorio es muy limitada. La model card únicamente indica que se trata de cuantizaciones estáticas del modelo ulamai/Ulam-1, e incluye metadatos internos de la herramienta de conversión (quantize_version 2, output_tensor_quantised 1, convert_type hf). No se documentan en el repositorio ni la arquitectura del modelo base, ni el contexto, ni los idiomas soportados, ni la licencia. Las búsquedas web realizadas no han devuelto información técnica relevante sobre Ulam-1: los resultados obtenidos tratan sobre certificaciones AML, sin relación alguna con el modelo. Por tanto, buena parte de las especificaciones que siguen figuran como "no disponible".
+La relevancia de esta versión GGUF radica en que permite desplegar un modelo de casi 27 mil millones de parámetros en hardware de consumo mediante cuantización, con opciones desde 10,8 GB (Q2_K) hasta 28,7 GB (Q8_0). El repositorio ocupa 187,9 GB e incluye tanto los pesos cuantizados como los suplementos multimodales (mmproj) necesarios para el procesamiento de visión.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base ulamai/Ulam-1, sin documentar en este repo) |
-| Parametros totales | 26.895.998.464 (26,9 mil millones, dato real de safetensors) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (familia Qwen 3.5, segun etiqueta `qwen3_5`) |
+| Parametros totales | 26.895.998.464 (~26,9 mil millones) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas derivadas de pesos en formato HF) |
-| Tamano del repositorio | 103,9 GB (conjunto de todas las cuantizaciones) |
-| Etiquetas declaradas | gguf, endpoints_compatible, conversational, region:us |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | Ingles (segun model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base Ulam-1 en la informacion disponible. El repositorio de cuantizaciones no incluye ningun detalle sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido. El unico dato estructural fiable es el recuento de parametros: 26.895.998.464, lo que situa al modelo en la categoria de aproximadamente 27.000 millones de parametros. El tag "conversational" sugiere un ajuste orientado a dialogo, pero no hay confirmacion documental.
+La información disponible indica que Ulam-1 se basa en la arquitectura Qwen 3.5, un transformer multimodal con capacidad de procesamiento de texto e imagen (el repositorio incluye ficheros `mmproj` para el proyector multimodal). El tamaño de 26,9 mil millones de parámetros lo sitúa en la gama de modelos densos de gran escala, aunque no se especifica si emplea mezcla de expertos (MoE) ni el número de parámetros activos.
 
-Respecto al proceso de entrenamiento, no hay informacion disponible sobre el volumen de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Lo unico verificable en este repositorio es el proceso de conversion: la model card incluye metadatos de la herramienta de cuantizacion (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf), que indican una conversion desde pesos en formato Hugging Face a GGUF con cuantizacion estatica de tensores. No se especifica que tensores quedaron excluidos de la cuantizacion ni si se preservo algun modulo en precision completa.
+En cuanto al entrenamiento, los datasets declarados son `ulamai/verified-research-reasoning-trajectories` (trayectorias de razonamiento de investigación verificadas) y `ulamai/Math-RL-Tasks` (tareas matemáticas para aprendizaje por refuerzo). Esto sugiere un pipeline de entrenamiento centrado en razonamiento matemático con verificación y posiblemente RL. No se dispone de información sobre el número total de tokens de entrenamiento, la composición detallada del dataset ni si se aplicaron técnicas como RLHF o DPO más allá de lo que indican los nombres de los datasets. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" del repositorio apunta a un uso previsto de dialogo multi-turno, aunque no se detallan capacidades concretas.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el modelo puede servirse mediante APIs compatibles con OpenAI en infraestructuras de inferencia habituales.
-- Ejecucion local con llama.cpp: al estar en formato GGUF, es compatible con el ecosistema llama.cpp, Ollama, LM Studio y servidores derivados.
-- Razonamiento, codigo, matematicas y vision: no disponible. No hay confirmacion de ninguna de estas capacidades en la informacion proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible. No se declara ninguna lista de idiomas.
-- Capacidades especiales (modo thinking, audio, vision): no disponible.
+- Generación de texto conversacional en inglés.
+- Razonamiento matemático y resolución de problemas, con especial orientación a matemática de investigación.
+- Procesamiento multimodal: el repositorio incluye suplementos `mmproj` que habilitan entrada de imágenes junto con texto.
+- Razonamiento multi-paso orientado a trayectorias de investigación (según el dataset de entrenamiento `verified-research-reasoning-trajectories`).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes autónomos: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-Debido a la ausencia de documentacion tecnica sobre el modelo base, los casos siguientes son escenarios plausibles derivados del tamano del modelo, del formato GGUF y del tag "conversational"; no estan confirmados por el autor.
-
-- Asistente conversacional autoalojado: con 26,9 mil millones de parametros y cuantizacion Q4_K_M, el modelo puede desplegarse en una GPU de 24 GB para mantener conversaciones multi-turno sin enviar datos a servicios externos, lo que resulta adecuado en entornos con requisitos de privacidad.
-- Prototipado en estaciones de trabajo con GPU de consumo: las variantes Q3_K_M o IQ4_XS (estimadas en 13-14,5 GB) permiten probar el modelo en tarjetas de 16 GB, algo inviable con pesos en FP16 (53,8 GB).
-- Servicio de inferencia en CPU: las cuantizaciones Q2_K y Q3_K_S, con tamanos estimados en torno a 9-12 GB, hacen posible ejecutar el modelo en servidores sin GPU dedicada, sacrificando calidad por viabilidad.
-- Despliegue con API compatible con OpenAI: gracias al tag "endpoints_compatible", el modelo puede integrarse como backend en aplicaciones que ya consumen la API de OpenAI, reduciendo el trabajo de adaptacion del cliente.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce niveles distintos del mismo modelo, lo que permite medir empiricamente la degradacion de calidad frente a la reduccion de memoria en una tarea concreta.
-- Generacion de texto por lotes en pipelines internos: con suficiente VRAM y una cuantizacion Q8_0 (estimada en 28,6 GB), puede usarse para tareas de resumen, reescritura o clasificacion a gran escala en infraestructura propia.
-- Experimentacion academica: para investigadores que necesiten un modelo de ~27B ejecutable en laboratorio sin clúster, la version Q4_K_M ofrece un compromiso razonable entre fidelidad y requisitos de hardware.
+- Resolución de problemas matemáticos avanzados: el modelo puede abordar demostraciones y problemas de matemática de investigación, aprovechando su entrenamiento específico en trayectorias de razonamiento verificadas para generar cadenas de razonamiento paso a paso.
+- Asistencia en investigación matemática: útil para explorar conjeturas, verificar pasos intermedios de demostraciones y generar borradores de argumentos formales, gracias a su especialización en razonamiento de investigación.
+- Tutoría matemática interactiva: puede mantener conversaciones multi-turno explicando conceptos y resolviendo ejercicios, adecuado para plataformas educativas que requieran un modelo desplegable localmente.
+- Análisis de documentos con contenido matemático: gracias al componente multimodal (mmproj), puede procesar imágenes de ecuaciones o diagramas junto con texto explicativo.
+- Generación de datos sintéticos de razonamiento: puede utilizarse para producir trayectorias de razonamiento matemático que sirvan como datos de entrenamiento para modelos más pequeños, dado su enfoque en reasoning verificado.
+- Despliegue en entornos con requisitos de privacidad: al ser un modelo GGUF ejecutable con llama.cpp u Ollama, permite inferencia local sin enviar datos a servicios externos, adecuado para instituciones que manejan material de investigación sensible.
+- Prototipado de pipelines de razonamiento matemático: integrable en entornos de investigación donde se necesite evaluar cadenas de razonamiento sobre problemas de matemáticas sin depender de APIs comerciales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los resultados de busqueda web proporcionados incluyen datos de MMLU, HumanEval, GSM8K, MT-Bench o cualquier otra metrica de evaluacion para Ulam-1 o sus cuantizaciones. Tampoco se documenta la perdida de calidad (perplexity delta) de cada nivel de cuantizacion respecto a los pesos originales.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones calculadas a partir del numero de parametros (26,9 mil millones) y del ancho de bits tipico de cada cuantizacion. No proceden de mediciones publicadas por el autor y deben verificarse consultando el tamano real de cada archivo. A la cifra del modelo hay que sumar la cache KV, que depende del contexto configurado y puede anadir varios GB en ventanas largas.
-
-| Cuantizacion | Tamano estimado del modelo | VRAM estimada en inferencia |
-|---|---|---|
-| x-f16 | ~53,8 GB | ~56 GB o mas |
-| Q8_0 | ~28,6 GB | ~31 GB o mas |
-| Q6_K | ~22,2 GB | ~25 GB o mas |
-| Q5_K_M | ~19,2 GB | ~22 GB o mas |
-| Q5_K_S | ~18,5 GB | ~21 GB o mas |
-| Q4_K_M | ~16,3 GB | ~19 GB o mas |
-| Q4_K_S | ~15,5 GB | ~18 GB o mas |
-| Q3_K_L | ~14,5 GB | ~17 GB o mas |
-| IQ4_XS | ~14,3 GB | ~17 GB o mas |
-| Q3_K_M | ~13,1 GB | ~16 GB o mas |
-| Q3_K_S | ~11,8 GB | ~15 GB o mas |
-| Q2_K | ~8,7 GB | ~12 GB o mas |
-
-- GPU de consumo compatibles: RTX 4090 y RTX 3090 (24 GB) pueden ejecutar Q8_0 y superiores con margen moderado; RTX 4080/4070 Ti Super (16 GB) quedan limitadas a Q3_K_M, IQ4_XS o inferiores; tarjetas de 12 GB solo admiten Q2_K o despliegue parcial con offload a CPU.
-- GPU profesionales: A100 40 GB, A100 80 GB, H100 80 GB y L40S 48 GB permiten ejecutar cualquier cuantizacion, incluidas Q6_K y Q8_0, con contexto amplio.
-- Despliegue mixto GPU/CPU: llama.cpp permite repartir capas entre VRAM y RAM del sistema, de modo que un modelo Q4_K_M puede ejecutarse en una GPU de 12 GB si se dispone de 16-32 GB de RAM adicional.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF que respeten el tag "endpoints_compatible". Para mayor rendimiento en GPU, una alternativa seria convertir los pesos originales a otros formatos y usar vLLM o TGI, aunque el repositorio no ofrece esas variantes.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
+- VRAM estimada para inferencia según cuantización:
+  - Q2_K: ~10,8 GB
+  - Q3_K_S: ~12,2 GB
+  - Q3_K_M: ~13,4 GB
+  - Q3_K_L: ~14,4 GB
+  - IQ4_XS: ~15,3 GB
+  - Q4_K_S: ~15,7 GB
+  - Q4_K_M: ~16,6 GB
+  - Q5_K_S: ~18,8 GB
+  - Q5_K_M: ~19,3 GB
+  - Q6_K: ~22,2 GB
+  - Q8_0: ~28,7 GB
+  - Suplemento multimodal mmproj-Q8_0: ~0,7 GB adicionales
+  - Suplemento multimodal mmproj-f16: ~1,0 GB adicionales
+- GPU recomendadas: para cuantizaciones Q4_K_M o superiores se recomienda una GPU con al menos 24 GB de VRAM (RTX 3090, RTX 4090, A10G). Para Q8_0 se necesita una GPU de 32 GB o más (A100 40GB, H100, RTX 5090 si está disponible). Para Q2_K–Q3_K puede bastar una GPU de 12–16 GB (RTX 4070 Ti, RTX 4080).
+- Cabe en GPU de consumo: sí, en cuantizaciones Q2_K a Q5_K_M con GPUs de 12–24 GB. Las cuantizaciones Q6_K y Q8_0 requieren GPUs de gama alta o profesionales.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. El modelo base en safetensors puede servirse con vLLM o TGI, pero esta versión GGUF está pensada para llama.cpp y derivados.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de contexto, licencia, idiomas ni rendimiento de Ulam-1, por lo que la comparacion se limita al parametro del tamano. Se incluyen como referencia modelos abiertos de la misma franja de parametros, con datos publicos ampliamente conocidos.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Ulam-1 (esta ficha) | ~26,9 B | no disponible | Apache 2.0 | GGUF / safetensors | Especializado en razonamiento matemático, multimodal |
+| Qwen 2.5 32B | ~32,5 B | 128K (según versión) | Apache 2.0 | safetensors, GGUF | Modelo generalista de tamaño similar, sin especialización matemática declarada |
+| DeepSeek-R1-Distill-Qwen-32B | ~32,8 B | 128K (según versión) | MIT | safetensors, GGUF | Destilado de razonamiento, orientado a matemáticas y código |
+| Gemma 3 27B | ~27 B | 128K | Gemma license | safetensors, GGUF | Modelo multimodal generalista de tamaño comparable |
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Ulam-1 (via Ulam-1-GGUF) | 26,9 mil millones | no disponible | no disponible | Solo se conoce el recuento de parametros y las cuantizaciones GGUF |
-| Mistral Small 3 | 24 mil millones | 32.000 tokens | Apache 2.0 | Alternativa de tamano similar con licencia permisiva |
-| Gemma 2 | 27 mil millones | 8.192 tokens | Gemma Terms | Tamano practicamente identico, con terminos de uso propios |
-| Qwen2.5 | 32 mil millones | hasta 128.000 tokens | Apache 2.0 (mayoria de variantes) | Ligeramente mayor, con contexto declarado muy superior |
-
-La comparacion de rendimiento real no es posible: no hay benchmarks publicados de Ulam-1 en la informacion disponible, de modo que cualquier afirmacion sobre calidad relativa seria especulativa.
+Nota: los datos de contexto y rendimiento de los modelos comparables provienen de conocimiento general y no de la información proporcionada en esta ficha; se incluyen como referencia orientativa. No se dispone de benchmarks de Ulam-1 para una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se conocen arquitectura, contexto, dataset de entrenamiento ni proceso de alineacion, lo que impide evaluar el modelo con criterios rigurosos.
-- Licencia no declarada: sin licencia explicita no puede asumirse permiso para uso comercial. Es imprescindible consultar el repositorio del modelo base (ulamai/Ulam-1) antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion: no cuantificado. Al no existir evaluaciones publicadas, se desconoce la tasa de fabricacion de hechos, especialmente en dominios especializados.
-- Idiomas no declarados: se desconoce el soporte real de castellano y de otras lenguas, asi como la calidad relativa entre idiomas.
-- Perdida por cuantizacion: las variantes de baja precision (Q2_K, Q3_K_S) degradan la calidad de forma notable en modelos de este tamano. Para uso serio se recomienda Q4_K_M o superior.
-- Contexto limitado por VRAM: aunque el modelo base soportase ventanas largas, la cache KV puede exceder la memoria disponible en GPUs de consumo con cuantizaciones grandes.
-- Procedencia del repositorio: se trata de una cuantizacion de terceros, no de pesos oficiales del autor del modelo. La integridad y fidelidad de la conversion no estan verificadas por el creador original.
-- Metadatos anómalos: las fechas de creacion y actualizacion del repositorio (septiembre de 2026) resultan inconsistentes con el momento de publicacion tipico, lo que aconseja tratar los metadatos como poco fiables.
-- Repositorio con cero descargas y cero valoraciones: no existe retroalimentacion de la comunidad que permita validar su funcionamiento.
+- Sesgos conocidos: no documentados en la información disponible; al estar entrenado principalmente con datos matemáticos en inglés, puede presentar sesgos de dominio y culturales derivados de esos datos.
+- Riesgo de alucinación: presente como en cualquier modelo generativo; en matemáticas de investigación el riesgo es especialmente crítico, ya que puede producir demostraciones plausibles pero incorrectas. Se recomienda verificación humana.
+- Limitaciones de contexto o idioma: la model card solo declara inglés; el rendimiento en castellano u otros idiomas no está garantizado. La longitud de contexto no está documentada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, con obligación de incluir el aviso de licencia y la atribución correspondiente.
+- Caveats para producción: esta versión GGUF es una cuantización estática realizada por un tercero (mradermacher), no por el autor original; las cuantizaciones de baja precisión (Q2_K, Q3_K) degradan la calidad. No hay datos publicados de benchmarks ni de latencia. El repositorio es grande (187,9 GB) y contiene múltiples ficheros; es necesario descargar únicamente la cuantización deseada. La fecha de creación del repositorio (2026) y la escasa adopción (416 descargas, 0 likes) sugieren que debe evaluarse con cautela antes de usarlo en producción.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Ulam-1-GGUF
 - Modelo base: https://huggingface.co/ulamai/Ulam-1
-- Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
+- Dataset de trayectorias de razonamiento: https://huggingface.co/datasets/ulamai/verified-research-reasoning-trajectories
+- Dataset de tareas matemáticas RL: https://huggingface.co/datasets/ulamai/Math-RL-Tasks
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Ulam-1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

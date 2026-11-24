@@ -2,103 +2,102 @@
 
 ## Resumen
 
-math-foundations-ai999x es un solver determinista de fundamentos matematicos empaquetado como modelo de Hugging Face por AI999X, con autoría declarada de Ibnul Jaif Farabi. No es un modelo de lenguaje generativo: se presenta como un motor de Python que interpreta una pregunta en ingles o una llamada tipada, selecciona una de sus 119 capacidades certificadas (algebra, trigonometria, precalculo, numeros complejos, fracciones, ecuaciones cuadraticas, sistemas de ecuaciones, inecuaciones, polinomios, logaritmos, ley de senos, circunferencia unitaria, secciones conicas), calcula la respuesta de forma exacta, la verifica y la devuelve con pasos, unidades, LaTeX y supuestos. Si no puede verificar el resultado, se niega a responder en lugar de aproximar.
+Math Foundations (math-foundations-ai999x) es un motor de cálculo matemático determinista empaquetado y distribuido como modelo en Hugging Face por el autor AI999X. No es un modelo de lenguaje neuronal: es un conjunto de 106 cálculos organizados en 34 temas que cubren aritmética, fracciones, porcentajes, ratios, ecuaciones e inecuaciones algebraicas, funciones, exponenciales y logaritmos, trigonometría, precálculo y números complejos. Cada cálculo devuelve su fórmula, sus pasos intermedios, sus unidades y, cuando una entrada falta o está fuera de rango, una razón en lenguaje natural en lugar de un número inventado.
 
-El repositorio pesa 0,1 GB y los pesos en safetensors suman 4.715.520 parametros, un orden de magnitud propio de un encoder pequeno o de una capa de enrutamiento, no de un transformer generativo de gran escala. La model card declara `inference: false` en Hugging Face y distribuye el uso real mediante una aplicacion de escritorio, una CLI, un paquete de Python (`pip install math-foundations-ai999x`) y una version WebAssembly, todas ejecutando el mismo programa compilado en Rust de forma offline sobre CPU.
+El paquete se presenta en cuatro formatos de uso: aplicación de escritorio para Windows y Linux, interfaz de línea de comandos, versión web y biblioteca de Python (`pip install math-foundations-ai999x`). En sistemas Windows y Linux x86-64 se instala un motor compilado (etiquetado como "rust" en los tags); en macOS y ARM se instala una implementación en Python puro que, según el autor, produce las mismas respuestas. Todo el cómputo ocurre en local, sin llamadas de red, lo que encaja con la etiqueta "offline" y con la afirmación de "zero-hallucination" del autor.
 
-Su relevancia actual reside en la propuesta de "cero alucinaciones" para dominios matematicos acotados: frente a LLM generativos que producen pasos plausibles pero incorrectos, este modelo opta por el rechazo explicito cuando la verificacion falla. El soporte es unicamente en ingles y la licencia es Apache-2.0.
+El artefacto declarado en safetensors contiene 4.715.520 parámetros, un orden de magnitud coherente con tablas de coeficientes y metadatos de fórmulas más que con un transformer. El pipeline declarado es `question-answering` y el idioma soportado es únicamente inglés. La licencia es Apache 2.0. Su relevancia actual reside en ofrecer una alternativa verificable y reproducible a los LLM para matemáticas de nivel preuniversitario, donde la alucinación numérica es un problema conocido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (no se describe transformer, MoE ni SSM; se distribuye como motor determinista en Rust con pesos safetensors y exportacion ONNX) |
-| Parametros totales | 4.715.520 |
+| Arquitectura | Motor de cálculo determinista empaquetado como artefacto de modelo; no es un transformer neuronal. Componente compilado (tag "rust") en Windows/Linux x86-64 y build en Python puro en macOS/ARM |
+| Parametros totales | 4.715.520 (según safetensors del repo) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (se mencionan safetensors y ONNX, sin detallar cuantizaciones) |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX |
+| Longitud de contexto | No disponible (no es un modelo generativo con ventana de contexto) |
+| Tipos de cuantizacion | No disponible (no aplica; el motor no se distribuye en GGUF ni formatos cuantizados) |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors en el repo de Hugging Face; distribución funcional vía paquetes de escritorio (ZIP/tar.gz), CLI y wheel de Python |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe una arquitectura de red neuronal convencional. El modelo se presenta como un motor determinista que enruta la consulta hacia una de 119 capacidades matematicas certificadas, ejecuta el calculo exacto, lo verifica y compone la respuesta con pasos, unidades, LaTeX y supuestos. La implementacion distribuida es un programa compilado en Rust (Windows, Linux y WebAssembly) y un paquete de Python 3.10-3.14; los pesos safetensors (4.715.520 parametros) y la exportacion ONNX acompanan ese motor, presumiblemente para tareas auxiliares de clasificacion, similitud semantica o extraccion de caracteristicas declaradas en los tags.
+No hay evidencia de entrenamiento neuronal. El autor describe "one compiled engine" que resuelve 106 cálculos en 34 temas, cada uno con fórmula, pasos y unidades. Los tags incluyen "rust" y "python", lo que sugiere un núcleo compilado con bindings o una implementación paralela en Python puro para plataformas no x86-64. El artefacto safetensors de 4,7 M de parámetros es consistente con un volcado de tablas de constantes, coeficientes y metadatos de fórmulas, no con pesos de atención.
 
-No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o ajuste supervisado. La unica referencia a evaluacion es un conjunto de 625 preguntas documentadas con respuestas doradas, ejecutadas en Windows y Linux sobre Python 3.10-3.14. La innovacion tecnica declarada es la verificacion con rechazo: el sistema no emite una respuesta si no puede comprobarla, lo que la model card denomina "zero wrong answers" y "zero-hallucination".
+La innovación declarada no es algorítmica en el sentido de los LLM, sino de ingeniería: paridad de respuestas entre plataformas (Windows y Linux, Python 3.10 a 3.14), ejecución totalmente offline y sustitución de resultados por explicaciones cuando la entrada es inválida o está fuera de dominio. No se documentan datos de entrenamiento, RLHF, DPO ni técnicas de decodificación especulativa porque no aplican a este tipo de artefacto.
 
 ## Capacidades
 
-- Resolucion de algebra elemental: fracciones, ecuaciones cuadraticas, sistemas de ecuaciones, inecuaciones y polinomios.
-- Trigonometria y precalculo: ley de senos, circunferencia unitaria y secciones conicas.
-- Numeros complejos y logaritmos.
-- Generacion de soluciones paso a paso con unidades, notacion LaTeX y supuestos explicitos.
-- Rechazo verificado: devuelve una negativa explicita indicando que falta cuando no puede verificar el resultado.
-- Tareas auxiliares declaradas en los tags: question answering, token classification, text classification, sentence similarity y feature extraction.
-- Ejecucion completamente offline sobre CPU, sin GPU, sin clave de API y sin conexion a internet.
-- Distribucion multiplataforma: aplicacion de escritorio (Windows/Linux), CLI `math-foundations`, WebAssembly en navegador y paquete de Python.
-- No se declara soporte de tool calling, function calling, razonamiento multi-paso generativo, vision, audio ni modo de pensamiento.
+- Resolución paso a paso de 106 cálculos en 34 temas: aritmética, fracciones, porcentajes, ratios, ecuaciones lineales y cuadráticas, sistemas de ecuaciones, inecuaciones (incluidas de valor absoluto), polinomios, exponenciales y logaritmos.
+- Trigonometría y precálculo: ley de senos con caso ambiguo (SSA), círculo unitario, secciones cónicas (por ejemplo, centro y radio de una circunferencia desde su ecuación general), vectores y distancia entre puntos.
+- Aritmética con números complejos y coeficiente de un término en un desarrollo binomial.
+- Devolución de fórmula, pasos intermedios y unidades junto al resultado.
+- Gestión explícita de entradas ausentes o fuera de rango: devuelve una razón en lenguaje natural en lugar de un número.
+- Ejecución offline en local, sin dependencia de red.
+- Cuatro interfaces: app de escritorio (Windows/Linux), CLI `math-foundations`, versión web y API de Python.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso abierto, visión, audio ni modo "thinking"; tampoco generación de texto libre.
 
 ## Casos de uso
 
-- Ayuda con deberes de matematicas de secundaria y bachillerato: el modelo resuelve ecuaciones, inecuaciones y sistemas mostrando pasos intermedios y supuestos, lo que permite al estudiante seguir el razonamiento en lugar de recibir solo el resultado.
-- Verificacion de ejercicios en plataformas educativas: al ser determinista y devolver resultados identicos en Windows y Linux, puede actuar como corrector de referencia en pipelines de evaluacion automatizada sin depender de un LLM generativo.
-- Generacion de contenido matematico en LaTeX: la salida incluye notacion LaTeX y unidades, adecuada para insertar directamente en apuntes, libros o documentacion tecnica.
-- Entornos sin conectividad: aulas, laboratorios air-gapped o dispositivos sin acceso a red pueden ejecutar la version WebAssembly o la CLI en Rust sin instalar Python ni enviar datos a un servidor.
-- Preprocesamiento y enrutamiento en pipelines de IA: los tags de token classification, text classification y sentence similarity permiten usar el modelo como clasificador previo que decida si una consulta matematica es resoluble por el motor antes de derivarla a otro sistema.
-- Integracion en aplicaciones de escritorio: el paquete de Python (`pip install math-foundations-ai999x`) y la CLI permiten incorporar el solver a herramientas de productividad, calculadoras avanzadas o asistentes de estudio locales.
-- Validacion de respuestas de otros modelos: dado su caracter determinista y su politica de rechazo, puede usarse como comprobador de resultados generados por LLM en dominios de algebra y trigonometria acotados.
+- Tutoría de matemáticas preuniversitarias: la app de escritorio muestra fórmula, pasos y unidades para cada ejercicio, lo que permite al estudiante seguir la resolución sin depender de un LLM que pueda inventar un paso intermedio.
+- Verificación automática de ejercicios en plataformas educativas: la CLI `math-foundations` puede invocarse desde scripts de corrección para validar respuestas de álgebra, trigonometría y precálculo con resultado determinista y reproducible.
+- Generación de material didáctico con gráficas: las escenas y gráficos del escritorio (raíces de una cuadrática, ley de senos en el caso ambiguo, circunferencia desde su forma general) se dibujan a partir del resultado calculado, útiles para preparar transparencias o apuntes.
+- Integración en pipelines de Python para ciencia e ingeniería: `pip install math-foundations-ai999x` permite resolver sistemas de ecuaciones, logaritmos o vectores dentro de notebooks y scripts sin enviar datos a un servicio externo.
+- Entornos con requisitos de privacidad o air-gapped: al ejecutarse offline en Windows y Linux, es apto para aulas, laboratorios o dispositivos sin conectividad donde no se puede usar una API de LLM.
+- Detección de entradas inválidas en formularios matemáticos: al devolver una razón en lugar de un número cuando la entrada está fuera de rango, sirve como capa de validación en aplicaciones educativas que reciben datos de usuarios.
+- Soporte a docentes para preparar soluciones de referencia: el formato paso a paso con unidades facilita generar claves de corrección consistentes entre plataformas (Windows y Linux, Python 3.10-3.14).
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados por el autor en el model-index son los siguientes:
+Los únicos datos disponibles son los declarados por el autor en el model-index. No se han publicado resultados de benchmarks estándar (MMLU, GSM8K, HumanEval) porque el artefacto no es un LLM generativo.
 
-| Tarea | Dataset | Metrica | Valor | Verificado |
+| Tarea | Dataset | Métrica | Valor | Verificado |
 |---|---|---|---|---|
-| Question answering (math foundations) | Golden answers (625 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1,0 | No |
+| Question answering (math foundations) | Golden answers (681 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 ("identical on every platform") | No |
 
-El valor 1,0 corresponde a respuestas identicas en todas las plataformas probadas segun la declaracion del autor; la metrica figura como no verificada de forma independiente. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+El valor 1.0 corresponde a coincidencia con las 681 respuestas doradas del propio autor; no es una evaluación independiente ni comparable con benchmarks de LLM.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica; el modelo se ejecuta sobre CPU sin GPU.
-- GPU recomendadas: ninguna; no requiere aceleracion grafica.
-- Compatibilidad con GPU de consumo: irrelevante, ya que el diseno es CPU-only.
-- Opciones de despliegue: aplicacion de escritorio AI999X (Windows x86-64, Linux x86-64), CLI `math-foundations`, WebAssembly en navegador y paquete de Python 3.10-3.14. No se documenta despliegue con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. El tamano del binario de escritorio es de 7,5 MB y el repositorio completo ocupa 0,1 GB, lo que sugiere una huella de memoria muy reducida.
+- VRAM: no aplica; el motor no requiere GPU.
+- CPU: cualquier x86-64 para el build compilado (Windows/Linux); cualquier plataforma con Python 3.10+ para el build en Python puro (macOS, ARM).
+- RAM: no disponible en la información proporcionada; por el tamaño del artefacto (repo de 0,0 GB y 4,7 M de parámetros) el consumo esperado es bajo, pero el autor no publica cifras.
+- GPU recomendadas: ninguna; no hay soporte CUDA ni ROCm documentado.
+- Despliegue: app de escritorio (ZIP Windows, tar.gz Linux), CLI `math-foundations`, versión web en la página del modelo y paquete de Python. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, coherente con que no sea un modelo de lenguaje.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| math-foundations-ai999x | 4.715.520 | No disponible | Solver determinista con rechazo verificado | Apache-2.0 | Hugging Face, PyPI, escritorio, CLI, WASM |
-| LLM generativos para matematicas (p. ej. variantes especializadas de 7B-70B) | Miles de millones | 4K-128K tipicamente | Generacion autoregresiva con riesgo de alucinacion | Variable | Hugging Face, APIs |
-| Librerias de algebra computacional (SymPy y similares) | No aplica (no neuronal) | No aplica | Calculo simbolico determinista | BSD o similar | PyPI |
+| Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
+|---|---|---|---|---|---|---|
+| math-foundations-ai999x | Motor de cálculo determinista | 4.715.520 (artefacto) | No aplica | Inglés | Apache 2.0 | 106 cálculos en 34 temas con pasos y unidades |
+| SymPy | Biblioteca CAS en Python | No aplica | No aplica | Multiidioma (API en inglés) | BSD | Álgebra simbólica, cálculo, ecuaciones |
+| Wolfram Alpha API | Servicio en la nube | No disponible | No aplica | Multiidioma | Propietaria | Amplio dominio matemático, requiere red |
+| LLM de propósito general (p. ej. familia Llama) | Transformer generativo | Miles de millones | Decenas de miles de tokens | Multilingüe | Variable | Razonamiento abierto con riesgo de alucinación numérica |
 
-La comparacion cuantitativa con alternativas concretas no esta disponible en la informacion proporcionada. La diferencia cualitativa principal frente a LLM generativos es el rechazo explicito en lugar de la respuesta plausible; frente a librerias de algebra computacional, la diferencia es la interfaz en lenguaje natural y la seleccion automatica entre 119 capacidades certificadas.
+La comparación con SymPy es la más directa por naturaleza determinista y offline; la diferencia principal es que math-foundations-ai999x ofrece una app de escritorio con escenas y gráficos y una CLI, mientras que SymPy es una biblioteca. Frente a Wolfram Alpha, la ventaja es la ejecución local sin red; la desventaja, un dominio mucho más acotado (34 temas preuniversitarios). Frente a un LLM, la ventaja es la reproducibilidad y la ausencia de alucinación numérica; la desventaja, la falta de lenguaje natural libre y de generalización fuera de los 106 cálculos.
 
 ## Limitaciones y advertencias
 
-- Cobertura acotada: solo resuelve las 119 capacidades certificadas de fundamentos matematicos; no es un modelo de proposito general ni cubre matematicas avanzadas fuera de ese catalogo.
-- Idioma: unicamente ingles; las consultas en castellano no estan soportadas segun la metadata del modelo.
-- Sin datos de sesgo: no se documentan evaluaciones de sesgo, y al no ser un modelo generativo de lenguaje el riesgo de sesgo social es bajo, pero tampoco hay evidencia publicada al respecto.
-- Riesgo de alucinacion: el autor declara cero alucinaciones mediante rechazo verificado, pero esta afirmacion no ha sido verificada de forma independiente (la metrica figura como `verified: false`).
-- Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion con atribucion; conviene revisar el archivo LICENSE del repositorio para condiciones exactas.
-- Madurez: el repositorio tiene 75 descargas y 0 likes en el momento de la consulta, con version 1.0.3 y actualizacion reciente; el ecosistema es de un unico autor y no hay evidencia de adopcion amplia.
-- `inference: false` en Hugging Face: el modelo no se puede ejecutar directamente desde la infraestructura de inferencia del Hub; requiere descargar la aplicacion, la CLI o el paquete de Python.
-- Dependencia de la verificacion interna: si la comprobacion del motor tiene un fallo no documentado, el rechazo podria no activarse; no se publican auditorias externas del mecanismo.
+- Cobertura acotada a 106 cálculos en 34 temas de matemáticas preuniversitarias; no resuelve cálculo diferencial e integral, álgebra lineal avanzada, estadística inferencial ni demostraciones.
+- Solo inglés: no hay soporte de castellano ni de otros idiomas en la interfaz ni en las explicaciones.
+- No es un modelo generativo: no mantiene conversaciones, no admite contexto multi-turno ni tool calling.
+- El benchmark declarado (accuracy 1.0 sobre 681 preguntas) es interno, no verificado y no comparable con evaluaciones independientes; debe interpretarse como prueba de regresión del autor, no como rendimiento general.
+- La paridad de respuestas entre el build compilado y el build en Python puro la afirma el autor; no hay verificación externa publicada.
+- El campo `inference: false` en la model card indica que el artefacto no está pensado para inferencia estándar en Hugging Face; el uso real pasa por los paquetes de escritorio, CLI o Python.
+- Riesgo de alucinación: el autor lo declara nulo por diseño determinista, pero la ausencia de validación independiente impide confirmarlo en todos los casos límite.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución; conviene revisar el archivo LICENSE del repo para condiciones adicionales.
+- El repositorio tiene 0,0 GB de tamaño declarado y 339 descargas en el momento de la consulta; la madurez del proyecto y el soporte a largo plazo no están garantizados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/math-foundations-ai999x
-- Organizacion AI999X en Hugging Face: https://huggingface.co/AI999X
-- Documentacion en el repositorio: https://huggingface.co/AI999X/math-foundations-ai999x/tree/main/docs
-- Evaluacion en el repositorio: https://huggingface.co/AI999X/math-foundations-ai999x/tree/main/evaluation
-- Paquete de Python en PyPI: https://pypi.org/project/math-foundations-ai999x/
-- Aplicacion de escritorio y CLI: https://www.ai999x.com/desktop-cli/
-- Probar en el navegador (WebAssembly): https://www.ai999x.com/models/math-foundations-ai999x/#try
-- Sitio web del proyecto: https://ai999x.com
-- Repositorio GitHub y release v1.0.3: https://github.com/AI999X/math-foundations-ai999x/releases/tag/v1.0.3
-- Descargas de escritorio (ultima version): https://www.ai999x.com/downloads/desktop/latest/
-- Checksums SHA256: https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo en el sitio del autor: https://www.ai999x.com/models/math-foundations-ai999x/
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=math-foundations-ai999x/clip.mp4
+- App de escritorio Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-math-foundations-1.6.7-windows-x86_64.zip
+- App de escritorio Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-math-foundations-1.6.7-linux-x86_64.tar.gz
+- CLI Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio: https://github.com/AI999X/ai999x-desktop
+- Instalación Python: `pip install math-foundations-ai999x`

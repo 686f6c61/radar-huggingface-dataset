@@ -2,103 +2,101 @@
 
 ## Resumen
 
-Gemma-4-E2B-it-GGUF es la distribucion en formato GGUF del modelo Gemma 4 E2B en su variante instruction-tuned, publicada por Renesas para su plataforma embebida R-Car X5H con acelerador NPU NPX6. El modelo base es google/gemma-4-E2B-it, un transformer decoder-only de la familia Gemma 4 con parametros "elasticos" (E2B, aproximadamente 2B de parametros efectivos), aunque el repositorio declara 4.647.450.147 parametros totales en safetensors. Esta release es exclusivamente de texto: entrada y salida textual, con vision, audio y video anunciados como proximas entregas.
+Gemma-4-E2B-it-GGUF es una distribución en formato GGUF del modelo Gemma 4 E2B-it de Google, publicada por Renesas para ejecutar generación de texto y chat sobre la plataforma Renesas R-Car X5H con acelerador NPU NPX6. El modelo base es un transformer decoder-only de la familia Gemma 4, en su variante "E2B" (elastic parameters, aproximadamente 2B de parámetros efectivos) e instruido (it). El repositorio incluye los pesos en FP16 en formato GGUF, el tokenizer, la plantilla de chat y un instalador autoextraíble con los grafos NPU, firmware y módulos de kernel necesarios para el despliegue en la placa.
 
-La relevancia de esta ficha no esta en el modelo en si, sino en el empaquetado: Renesas proporciona un runner nativo (`gemma4-e2b-runner`) compilado para xOS-v4.34 sobre R-Car X5H, junto con los pesos FP16 en GGUF, tokenizer, plantilla de chat y scripts de configuracion de la NPU. Es, por tanto, un artefacto de despliegue para hardware automotriz e industrial, no un checkpoint de proposito general para servidores GPU.
+La relevancia de esta ficha es que no se trata de un checkpoint genérico para GPU de centro de datos, sino de un artefacto de despliegue en hardware embebido automotriz. Renesas proporciona un runner específico para R-Car X5H (xOS-v4.34) y publica mediciones de throughput en esa plataforma: 11,3 tokens/s en FP16 y 27,2–29,5 tokens/s en W4A16 sobre una NPU de 12 núcleos a 1066 MHz, con prefill de 829 tokens en 0,577–0,708 s. Estas cifras son las únicas de rendimiento publicadas en la información disponible.
 
-El repositorio ocupa 12,6 GB e incluye unicamente los artefactos FP16 en el momento de la ultima actualizacion (noviembre de 2026); la cuantizacion W4A16 y el proyector multimodal estan marcados como "coming soon" en la model card, aunque la seccion de inferencia ya documenta una CLI W4A16 con soporte de audio, lo que sugiere que parte del material esta en preparacion o parcialmente publicado.
+El modelo es solo texto en esta release; la entrada de imagen, audio y vídeo se anuncia como "coming soon", aunque la model card lista el audio como completado en la hoja de ruta y describe un codificador de audio opcional de unos 615 MB que el runner carga desde un safetensors separado. La licencia es Gemma, con las restricciones de uso que esta implica.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 4, variante E2B con parametros elasticos) |
-| Parametros totales | 4.647.450.147 (safetensors); ~2B efectivos segun la model card |
-| Parametros activos | no disponible (no se documenta si es MoE) |
+| Arquitectura | Gemma 4 decoder-only, variante E2B (elastic parameters) |
+| Parámetros totales | 4.647.450.147 (según safetensors del modelo base) |
+| Parámetros activos | no disponible (no se especifica si es MoE; E2B se describe como "elastic parameters", no como mezcla de expertos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP16 (publicado); W4A16 anunciado como "coming soon" |
+| Tipos de cuantización | FP16 (GGUF publicado); W4A16 (4-bit pesos, 16-bit activaciones, anunciado y medido en la placa); W8A8 para audio-encode; int4/int8 en los grafos NPU |
 | Idiomas soportados | no disponible |
-| Licencia | Gemma (terminos de uso de Google) |
-| Formato de pesos | GGUF (FP16); tokenizer.json, tokenizer_config.json, generation_config.json, chat_template.jinja, processor_config.json |
+| Licencia | Gemma |
+| Formato de pesos | GGUF (FP16, 9,3 GB, 601 tensores); safetensors para el codificador de audio (~615 MB, 752 tensores) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo como un "Gemma 4 decoder-only language model (E2B, elastic parameters)". No se detalla la composicion interna de capas, el mecanismo de atencion ni la naturaleza exacta de los parametros elasticos (si implican poda dinamica, anchos variables por capa o un esquema de mezcla de expertos). Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; el modelo base es la variante instruction-tuned oficial de Google, por lo que esas fases se heredan de google/gemma-4-E2B-it, pero no se documentan en este repositorio.
+El modelo base es Gemma 4 E2B-it de Google, un transformer decoder-only de la familia Gemma 4 con "elastic parameters" y unos 4.647 millones de parámetros totales según el safetensors del checkpoint. La model card del repositorio de Renesas no detalla la composición del dataset de entrenamiento, el número de tokens, ni si hubo RLHF, DPO u otras etapas de alineación posteriores al instruction tuning; esa información corresponde a la model card oficial de Google, que no se incluye en la información proporcionada.
 
-La innovacion tecnica destacable de este empaquetado es la integracion con la NPU NPX6 del R-Car X5H: el runner incluye firmwares, modulos de kernel y scripts (`setup_npu.sh`) para ejecutar la inferencia sobre la NPU en lugar de la CPU. La CLI documentada expone opciones de prefill por lotes (`--no-batched-prefill`, `--no-padded-prefill`), seleccion de cluster NPU (`--npu-idx 0|1`), impresion de metricas (`--print-stats`) y, en la ruta W4A16, entrada de audio mediante un encoder que opera sobre ventanas fijas de 30 segundos (750 tokens) en FP16 sobre la NPU.
+La innovación técnica relevante en esta distribución no está en el modelo sino en el pipeline de despliegue: Renesas compila los grafos NPU con coeficientes int4/int8 precalculados (unos 2,5 GB), incluye el firmware de la NPU (14 ELFs por NPU), los módulos de kernel (`snps_accel`, `snps_arcsync`, `snps_rproc`) y scripts de arranque (`setup_npu.sh`, `npuN_power_on.sh`, `npuN_run.sh`). El runner lee los pesos de texto del GGUF y, opcionalmente, los pesos del codificador de audio desde un safetensors extraído del checkpoint de Hugging Face mediante peticiones HTTP por rangos, sin descargar el fichero completo de 10 GB. Nada se compila en la placa: el instalador es autoextraíble.
 
 ## Capacidades
 
-- Generacion de texto y chat conversacional multi-turno (pipeline text-generation, etiqueta `conversational`).
-- Instrucciones: variante `-it`, con plantilla de chat incluida (`chat_template.jinja`).
-- Entrada y salida exclusivamente textual en esta release; vision, audio y video no estan disponibles en los artefactos publicados.
-- La CLI W4A16 documentada incluye transcripcion de audio (`--audio` con WAV mono de 16 kHz, hasta 30 s) y pesos de audio separados, aunque el artefacto correspondiente figura como "coming soon".
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Modo thinking: no disponible en la informacion proporcionada.
+- Generación de texto y chat conversacional en modo solo texto en esta release.
+- Instrucción y alineación conversacional propias de la variante `-it` de Gemma 4.
+- Entrada de audio: la hoja de ruta la marca como completada y el runner admite un WAV mono de 16 kHz de hasta 30 s mediante el codificador de audio opcional; la codificación de un clip de 30 s se mide en 81,6 ms en W8A8.
+- Entrada de imagen y vídeo: anunciadas como "coming soon", no disponibles en esta release.
+- Tool calling / function calling: no se documenta en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no se documenta en la información disponible.
+- Capacidades multilingües: no disponible; la model card no lista idiomas.
 
 ## Casos de uso
 
-- Asistente de voz a bordo en automocion: el runner admite entrada de audio WAV mono de 16 kHz con un encoder de ventana fija de 30 s sobre la NPU, lo que permite transcripcion y respuesta conversacional en el propio vehiculo sin conexion a la nube. Es adecuado porque todo el pipeline (encoder de audio y decodificador de texto) se ejecuta en el R-Car X5H.
-- Procesamiento de lenguaje natural en cabina (HMI): generacion de respuestas y resumenes de comandos del conductor sobre texto, con el modelo corriendo en la NPU NPX6 y sin depender de un servidor externo. La naturaleza text-only de esta release encaja con interfaces de linea de comandos o dialogos escritos.
-- Automatizacion industrial en el borde: clasificacion y resumen de registros de planta, alertas y ordenes de trabajo en un PLC o gateway basado en X5H, aprovechando que el modelo cabe en la memoria del SoC y no requiere GPU dedicada.
-- Transcripcion y post-procesado de notas de voz: la ruta W4A16 documentada permite transcribir segmentos de hasta 30 s con instrucciones de formato (digitos en cifra, sin saltos de linea), util para actas y registros de mantenimiento.
-- Prototipado de asistentes embebidos para clientes de Renesas: el instalador `gemma4-e2b-runner-0.1.0-Linux.sh` y la estructura de directorios documentada permiten desplegar un chat funcional en la placa en pocos pasos, lo que sirve como base para demos y evaluaciones de concepto.
-- Investigacion en eficiencia de inferencia en NPU: las opciones `--print-stats`, `--no-batched-prefill` y `--npu-idx` permiten medir throughput de prefill y decode y comparar rutas FP16 frente a W4A16, util para caracterizar el rendimiento real del acelerador.
-- Chat de texto en dispositivos con requisitos de privacidad: al ejecutarse localmente en la placa, los datos no salen del dispositivo, lo que encaja en entornos con requisitos de confidencialidad (sanitario, industrial, defensa).
+- Asistente de voz embebido en el vehículo: el runner acepta audio de 16 kHz de hasta 30 s y lo codifica en 81,6 ms, de modo que un sistema de infoentretenimiento puede transcribir y responder en la propia placa sin enviar audio a la nube.
+- Chat de texto en cabina para control por lenguaje natural: con 27,2–29,5 tokens/s en W4A16, el modelo puede generar respuestas de una o dos frases en aproximadamente un segundo, suficiente para confirmaciones y consultas de estado.
+- Procesamiento de lenguaje natural en el vehículo con conectividad intermitente: al ejecutarse íntegramente sobre la NPX6, permite clasificación de intenciones, resumen de notificaciones o extracción de entidades sin depender de un enlace externo.
+- Prototipado de funciones de IA generativa en la plataforma R-Car X5H: el instalador autoextraíble y el runner permiten validar el comportamiento del modelo en el hardware objetivo antes de integrarlo en un producto, sin recompilar nada en la placa.
+- Evaluación de precisión y latencia en NPU para ingeniería de producto: las mediciones de prefill (829 tokens en 0,577–0,708 s) y de decode permiten dimensionar presupuestos de tiempo real para funciones de asistencia.
+- Despliegue de un modelo de 4,6B parámetros en un SoC automotriz sin GPU dedicada: el uso de grafos int4/int8 precompilados y pesos FP16 en GGUF demuestra la viabilidad de servir un LLM de este tamaño en el presupuesto térmico y de memoria de un sistema embebido.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son mediciones de throughput en hardware R-Car X5H (1 NPU, 12 nucleos, 1066 MHz, batch size 1, entrada de texto), realizadas hardware-in-the-loop con xOS-v4.34 y NPX Toolkit. No hay resultados de precision (MMLU, HumanEval, GSM8K) publicados: la model card indica "TBD — not yet measured/published for this repo".
+No se han publicado resultados de benchmarks de precisión (MMLU, HumanEval, GSM8K, etc.) en la información disponible; la model card indica explícitamente "TBD — not yet measured/published for this repo". Las únicas métricas publicadas son de throughput en la placa R-Car X5H (1 NPU, 12 núcleos, 1066 MHz, batch 1):
 
-| Modelo | Precision | Dispositivo | Throughput decode (tok/s) | Prefill (tok/s) | Tipo |
-|---|---|---|---|---|---|
-| Gemma-4-E2B-it | FP16 | X5H, 1 NPU, 12 nucleos, 1066 MHz | 11,3 | no disponible | Medido |
-| Gemma-4-E2B-it | W4A16 | X5H, 1 NPU, 12 nucleos, 1066 MHz | 22,92 | 1025,66 | Medido |
-
-No se han publicado resultados de benchmarks de calidad en la informacion disponible.
+| Modelo / fase | Precisión | Dispositivo | Throughput | Tipo |
+|---|---|---|---|---|
+| Decode | FP16 | X5H, 1 NPU, 12 núcleos, 1066 MHz | 11,3 tokens/s | Medido |
+| Decode | W4A16 | X5H, 1 NPU, 12 núcleos, 1066 MHz | 27,2 tokens/s (frío), 29,5 tokens/s (warmup) | Medido |
+| Prefill | W4A16 | X5H, 1 NPU, 12 núcleos, 1066 MHz | 829 tokens de entrada en 0,708 s a 1170 tokens/s (frío); 0,577 s a 1436 tokens/s (warmup) | Medido |
+| Audio-encode | W8A8 | X5H, 1 NPU, 12 núcleos, 1066 MHz | clip de 30 s en 81,6 ms | Medido |
 
 ## Requisitos de hardware
 
-- Hardware objetivo: placa Renesas R-Car X5H con NPU NPX6 y sistema xOS-v4.34. No es un modelo pensado para GPU de servidor ni para PC de escritorio.
-- VRAM estimada para inferencia: no aplica en el hardware objetivo (la NPU usa memoria del SoC). El repositorio completo ocupa 12,6 GB; el GGUF FP16 es el artefacto principal.
-- GPU recomendadas: no disponibles; el runner esta compilado para `rcar-x5hv1`. No se documenta soporte para A100, H100 ni RTX 4090.
-- Compatibilidad con GPU de consumo: no documentada. El formato GGUF permitiria, en teoria, cargar los pesos con llama.cpp en otras plataformas, pero Renesas no publica binarios ni instrucciones para ello y la plantilla de chat y el tokenizer deberian validarse por separado.
-- Opciones de despliegue: runner propietario `gemma4-e2b-runner` (v0.1.0 para FP16, v0.2.0 para W4A16), con `setup_npu.sh` para inicializar la NPU. No se mencionan vLLM, TGI, Ollama ni llama.cpp en la documentacion del repositorio.
-- Latencia y throughput: 11,3 tok/s en decode FP16 y 22,92 tok/s en decode W4A16; prefill de 1025,66 tok/s en W4A16. El prefill FP16 no se reporta.
-- Almacenamiento: instalador, firmwares, modulos de kernel y pesos; la descarga selectiva se hace con `hf download Renesas/Gemma-4-E2B-it-GGUF --repo-type=model --include "fp16/*"`.
+- Plataforma objetivo: placa Renesas R-Car X5H (b001, doble NPX48K) con NPU NPX6 y acceso root, sistema xOS-v4.34.
+- Espacio en disco: aproximadamente 2 GB para el paquete de instalación y unos 2,5 GB adicionales una vez instalado; el GGUF FP16 ocupa 9,3 GB y el codificador de audio opcional unos 615 MB.
+- VRAM: no aplica en el sentido convencional; el modelo se ejecuta sobre la memoria del SoC y la NPU, no sobre una GPU discreta. No se especifica el consumo de memoria en ejecución.
+- GPU recomendadas: no disponible; el artefacto está empaquetado para NPU NPX6, no para CUDA.
+- Compatibilidad con GPU de consumo: no disponible; el runner incluido es un binario para R-Car X5H y no se documenta su uso con llama.cpp, Ollama, vLLM o TGI.
+- Opciones de despliegue: instalador autoextraíble `gemma4-e2b-runner-0.1.0-Linux.sh` (FP16) y `gemma4-e2b-runner-0.3.0-Linux.sh` (W4A16), con `setup_npu.sh` y el binario `gemma4-e2b-runner`.
+- Latencia y throughput: ver tabla de benchmarks; en FP16, 11,3 tokens/s de decode; en W4A16, 27,2–29,5 tokens/s y prefill de 829 tokens en 0,577–0,708 s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Renesas/Gemma-4-E2B-it-GGUF | 4.647.450.147 totales (~2B efectivos) | no disponible | GGUF FP16 + runner NPU X5H | Gemma | Empaquetado para hardware Renesas; sin benchmarks de calidad |
-| google/gemma-4-E2B-it | no disponible | no disponible | safetensors (modelo base) | Gemma | Checkpoint original de Google; referencia para validar calidad |
-| Otros GGUF de la familia Gemma 4 | no disponible | no disponible | GGUF | Gemma | No se dispone de datos en la informacion proporcionada |
+| Renesas/Gemma-4-E2B-it-GGUF | 4.647.450.147 | no disponible | 11,3 tok/s FP16 y 27,2–29,5 tok/s W4A16 en R-Car X5H | Gemma | GGUF + runner para X5H |
+| google/gemma-4-E2B-it | no disponible | no disponible | no disponible en la información proporcionada | Gemma | Checkpoint original en Hugging Face |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de informacion suficiente para comparar con alternativas de otros fabricantes en la misma categoria (modelos de ~2B efectivos para borde). Los datos de contexto, benchmarks y disponibilidad de terceros no estan publicados en las fuentes consultadas.
+No se dispone de datos de benchmarks de precisión ni de otros modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Release text-only: no admite imagen, audio ni video en los artefactos publicados, pese a que la CLI W4A16 documenta flags de audio. No debe asumirse multimodalidad hasta que se publiquen el proyector y los pesos correspondientes.
-- Ausencia total de benchmarks de calidad: no hay MMLU, HumanEval, GSM8K ni evaluaciones de seguridad publicadas; cualquier decision de produccion debe basarse en evaluacion propia.
-- Dependencia de hardware propietario: el runner solo esta compilado para R-Car X5H (xOS-v4.34) y NPX6; no hay binarios para GPU ni para CPU generica. El modelo no es portable tal cual a infraestructura cloud convencional.
-- Idiomas no declarados: la model card no especifica cobertura linguistica; no se puede garantizar calidad en castellano ni en otros idiomas sin evaluacion.
-- Longitud de contexto no documentada: impide planificar casos de uso con documentos largos o conversaciones extensas.
-- Licencia Gemma: sujeta a los terminos de uso de Google, con restricciones de uso comercial y clausulas de uso aceptable que deben revisarse antes de integrar en producto. La redistribucion de pesos y derivados esta condicionada por dicha licencia.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; en dominios regulados (automocion, sanitario) requiere validacion y salvaguardas adicionales.
-- Sesgos: no se documenta ninguna evaluacion de sesgo ni mitigacion; se heredan los del modelo base de Google.
-- Madurez del empaquetado: W4A16 y el proyector multimodal figuran como "coming soon", mientras que la seccion de inferencia ya los describe; conviene verificar la disponibilidad real de cada artefacto antes de disenar una integracion.
-- Version del runner y del sistema (xOS-v4.34) acopladas: actualizaciones de firmware pueden romper la compatibilidad de los binarios publicados.
+- Solo texto en esta release: la entrada de imagen y vídeo está anunciada como "coming soon"; el audio se lista como completado pero requiere descargar y extraer un codificador separado.
+- No hay benchmarks de precisión publicados: la model card marca la exactitud como "TBD", por lo que no se puede evaluar la calidad del modelo frente a alternativas con datos objetivos.
+- Dependencia total del hardware: el runner es un binario para R-Car X5H con xOS-v4.34 y NPU NPX6; no se documenta su uso en GPU, CPU genérica ni en otros SoCs.
+- Idiomas soportados no disponibles: la model card no lista idiomas, lo que impide garantizar cobertura multilingüe.
+- Riesgo de alucinación: no se documentan evaluaciones de fidelidad ni de tasas de alucinación; como todo LLM generativo, puede producir contenido incorrecto, especialmente en dominios especializados.
+- Sesgos: no se documentan análisis de sesgo en la información disponible.
+- Licencia Gemma: el uso comercial y la redistribución están sujetos a los términos de la licencia Gemma de Google, que incluyen restricciones de uso aceptable; conviene revisarlos antes de integrar el modelo en un producto.
+- Madurez del artefacto: el repositorio tiene 369 descargas y 0 likes, y la versión del runner es 0.1.0 (FP16) y 0.3.0 (W4A16), lo que sugiere un estado temprano para producción.
+- Longitud de contexto no documentada: no se puede planificar el dimensionamiento de memoria para conversaciones largas a partir de la información disponible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Renesas/Gemma-4-E2B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
-- Model card oficial de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
-- Renesas Electronics (sitio corporativo): https://www.renesas.com/
-- Renesas Electronics (Wikipedia): https://en.wikipedia.org/wiki/Renesas_Electronics
-- Renesas Electronics (Wikipedia en frances): https://fr.wikipedia.org/wiki/Renesas_Electronics
-- Renesas en L'Embarque: https://lembarque.com/entreprise/renesas
-- Productos de Renesas: https://www.renesas.com/en/products
+- Model card oficial de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
+- Banner de Gemma 4: https://ai.google.dev/gemma/images/gemma4_banner.png
+- Pesos GGUF FP16 (espejo citado en la model card): https://huggingface.co/SthRen0125/google_gemma-4-E2B-it/resolve/main/gemma-4-E2B-it_text_model_gguf/gemma-4-E2B-it-F16.gguf
+- Renesas (sitio corporativo): https://www.renesas.com/en
+- Renesas en Wikipedia: https://en.wikipedia.org/wiki/Renesas_Electronics
+- Productos Renesas: https://www.renesas.com/en/products
+- Sobre Renesas: https://www.renesas.com/en/about

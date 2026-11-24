@@ -2,76 +2,99 @@
 
 ## Resumen
 
-Colossus-2.1-GGUF es un repositorio de cuantizaciones estáticas del modelo Colossus-2.1, publicado por el usuario mradermacher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de los pesos originales de KSTRLAI/Colossus-2.1 al formato GGUF, el estándar de facto para la inferencia eficiente en CPU y GPU de consumo mediante llama.cpp y sus derivados.
+Colossus-2.1-GGUF es la distribucion en formato GGUF del modelo Colossus-2.1, desarrollado originalmente por KSTRLAI y cuantizado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 4.022 millones de parametros (4B) orientado a tareas de matematicas, fisica, generacion de codigo y conversacion. La informacion de la model card lo etiqueta con la familia `qwen3`, lo que sugiere que su arquitectura deriva de la familia Qwen3, aunque no se detalla explicitamente la arquitectura en la documentacion disponible.
 
-La información pública disponible es extremadamente limitada: el repositorio no incluye pipeline declarado, licencia, idiomas soportados ni una model card descriptiva más allá de los metadatos de la propia conversión. La model card únicamente indica que se trata de "static quants" del modelo base de KSTRLAI y enumera las variantes de cuantización generadas.
+El modelo original se publica bajo licencia Apache 2.0 y esta disponible en formato transformers (safetensors), mientras que esta version ofrece los pesos en GGUF para su uso con llama.cpp y herramientas compatibles. El repositorio contiene un conjunto completo de cuantizaciones estaticas que van desde Q2_K (1,8 GB) hasta f16 (8,2 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con poca VRAM hasta estaciones de trabajo.
 
-Por tanto, esta ficha documenta lo que se puede verificar del repositorio (autor, formato, conjunto de cuantizaciones disponibles) y marca explícitamente como "no disponible" cualquier dato sobre arquitectura, entrenamiento, benchmarks o licencia que no consta en la información proporcionada. Es relevante para desarrolladores que quieran ejecutar Colossus-2.1 en hardware limitado, pero debe evaluarse con cautela dada la ausencia de documentación sobre el modelo original.
+La relevancia de esta ficha radica en que facilita la evaluacion rapida del modelo para desarrolladores que necesitan un modelo compacto de 4B especializado en razonamiento cientifico y codigo, con opciones de cuantizacion que lo hacen viable en entornos con recursos limitados. No obstante, la documentacion publicada es escasa: no se detallan la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas) |
+| Arquitectura | No disponible (etiquetado como familia `qwen3`; probable transformer, sin confirmar) |
+| Parametros totales | 4.022.468.096 (4B) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Ingles (segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (version cuantizada); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Colossus-2.1 (KSTRLAI/Colossus-2.1). La model card del repositorio de cuantizaciones no describe el tipo de transformer, el número de parámetros, la composición del dataset de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. La model card lo etiqueta con el tag `qwen3`, lo que apunta a una arquitectura de tipo transformer decoder-only derivada o compatible con la familia Qwen3, pero no se confirma explicitamente ni se detallan aspectos como el tipo de atencion, la presencia de capas MoE o el uso de atencion lineal.
 
-Lo único verificable a partir de los metadatos de la conversión es el proceso de cuantización: se han generado cuantizaciones estáticas (quantize_version 2) con tensores de salida cuantizados (output_tensor_quantised 1) y tipo de conversión "hf" (a partir de pesos en formato Hugging Face). No consta si se ha preservado un módulo mmproj (proyector multimodal), lo que sugiere que no se ha detectado o no aplica.
+Tampoco se especifican los datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. Los tags `math`, `physics` y `code` sugieren un enfasis en dominios cientificos y de programacion, pero se desconoce como se configuro ese entrenamiento. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa y no se incluye.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas del modelo en la información disponible.
-- No consta soporte de tool calling o function calling.
-- No consta soporte de agentes ni razonamiento multi-paso.
-- No consta información sobre capacidades multilingües.
-- No consta información sobre modos especiales (thinking mode, visión, audio).
-- La única capacidad verificable es la de ejecución en formato GGUF mediante runtimes compatibles (llama.cpp, Ollama, LM Studio, etc.), derivada del propio formato de los pesos.
+- Generacion de texto y conversacion multi-turno (tag `chat`, `conversational`).
+- Razonamiento matematico (tag `math`).
+- Razonamiento en fisica (tag `physics`).
+- Generacion de codigo (tag `code`).
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere soporte para despliegue como servicio compatible con APIs de inferencia.
+- Capacidades multilingues: limitadas al ingles segun la model card; no se documentan otros idiomas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue en CPU: al estar disponible en GGUF, el modelo puede ejecutarse en servidores sin GPU mediante llama.cpp, lo que permite probar Colossus-2.1 en entornos de bajo coste. La idoneidad real depende de las capacidades del modelo base, no documentadas.
-- Inferencia en GPU de consumo: las variantes Q4_K_M y Q5_K_M permiten ajustar el uso de VRAM en tarjetas de gama media, aunque se desconoce el tamaño del modelo y, por tanto, si cabe en una GPU concreta.
-- Prototipado local: útil para desarrolladores que quieran evaluar el modelo antes de comprometerse con una infraestructura mayor, usando Ollama o LM Studio para una puesta en marcha rápida.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece un abanico amplio (desde Q2_K hasta x-f16), lo que permite medir la degradación de calidad frente al tamaño en un mismo modelo.
-- Integración en pipelines offline: al no requerir servicios en la nube, encaja en flujos con requisitos de privacidad o sin conectividad.
-- Experimentación académica: sirve como base para estudiar el impacto de la cuantización en modelos de los que no se dispone de documentación pública, siempre que se valide su comportamiento empíricamente.
+- Asistencia en resolucion de problemas matematicos: el modelo puede emplearse como tutor o asistente para resolver ecuaciones, explicar pasos intermedios y verificar resultados, aprovechando su especializacion en `math` y su tamano compacto para despliegue local.
+- Apoyo a estudiantes de fisica: dado el tag `physics`, puede utilizarse para explicar conceptos, resolver problemas de mecanica o electromagnetismo y generar ejercicios, con la ventaja de poder ejecutarse en hardware de consumo mediante cuantizaciones Q4_K_M o Q5_K_M.
+- Generacion de codigo en entornos con recursos limitados: con 4B parametros y cuantizacion Q4, puede integrarse en editores o pipelines de CI/CD para autocompletado, generacion de tests o explicacion de fragmentos de codigo, aunque sin datos de benchmarks que confirmen su calidad frente a alternativas.
+- Prototipado de chatbots conversacionales: su naturaleza `chat` y `conversational` permite construir asistentes conversacionales de proposito general o especializados en dominios cientificos, desplegables con llama.cpp u Ollama en una sola GPU.
+- Inferencia local en portatiles o estaciones de trabajo: las cuantizaciones desde Q2_K (1,8 GB) hasta Q8_0 (4,4 GB) permiten ejecutar el modelo en GPUs de consumo con 4-8 GB de VRAM, lo que facilita pruebas offline y desarrollo sin dependencia de la nube.
+- Evaluacion comparativa de modelos pequenos: util para investigadores que necesitan un modelo de 4B con licencia permisiva (Apache 2.0) como linea base en experimentos de razonamiento cientifico o generacion de codigo, pudiendo alternar entre cuantizaciones para estudiar el impacto en calidad.
+- Despliegue como servicio compatible con endpoints: gracias al tag `endpoints_compatible`, puede servirse mediante infraestructuras que expongan una API compatible con OpenAI o similar, integrandose en aplicaciones existentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al desconocerse el número de parámetros del modelo base.
-- GPU recomendadas: no disponible por la misma razón.
-- Viabilidad en GPU de consumo: no determinable sin conocer el tamaño del modelo; las cuantizaciones Q2_K a Q5_K_M amplían el rango de hardware posible.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no son opciones nativas para este formato sin conversión adicional.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia (segun cuantizacion):
+  - Q2_K: ~1,8 GB de pesos, aproximadamente 2,5-3 GB de VRAM con contexto moderado.
+  - Q4_K_M: ~2,6 GB de pesos, aproximadamente 3,5-4 GB de VRAM.
+  - Q8_0: ~4,4 GB de pesos, aproximadamente 5,5-6 GB de VRAM.
+  - f16: ~8,2 GB de pesos, aproximadamente 9-10 GB de VRAM.
+- GPU recomendadas:
+  - Consumer: RTX 3060 (12 GB), RTX 4060 Ti (8/16 GB), RTX 4070, RTX 4090.
+  - Profesionales: A100, H100 (sobredimensionadas para este tamano, utiles para servir multiples instancias).
+- Cabe en GPU de consumo: si, en la mayoria de GPUs con 6 GB o mas de VRAM usando cuantizaciones Q4 o Q5; las cuantizaciones Q2 y Q3 caben en GPUs con 4 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el modelo base puede servirse con vLLM o TGI en formato safetensors (no confirmado en la documentacion).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha identificado en la información proporcionada ningún modelo comparable, ni se conocen los parámetros, contexto o licencia de Colossus-2.1 que permitan establecer una comparación rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Colossus-2.1 (este modelo) | 4B | No disponible | Apache 2.0 | GGUF, safetensors | Especializado en math, physics y code |
+| Qwen3 (variantes de ~4B) | ~4B | No disponible en esta ficha | Apache 2.0 (segun familia) | GGUF, safetensors | Familia referenciada por los tags; comparacion directa no confirmada |
+| Otros modelos de 4B de proposito general | ~4B | Variable | Variable | GGUF, safetensors | No disponible comparacion concreta sin datos de benchmarks |
+
+No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas. La comparativa se limita a parametros y licencia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card descriptiva: no hay información sobre arquitectura, entrenamiento, datos ni evaluación.
-- Licencia no declarada: no se puede confirmar si el uso comercial está permitido; debe consultarse el repositorio original KSTRLAI/Colossus-2.1 antes de cualquier despliegue en producción.
-- Idiomas no declarados: se desconoce el soporte multilingüe real.
-- Riesgo de alucinación y sesgos: no evaluable sin documentación ni benchmarks.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda validar empíricamente antes de usar en producción.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
-- El autor del repositorio (mradermacher) es un tercero respecto al autor del modelo (KSTRLAI); la fidelidad de la conversión no está verificada de forma independiente.
+- Idiomas: la model card solo declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado y probablemente sea limitado.
+- Longitud de contexto desconocida: no se especifica la ventana de contexto, lo que impide garantizar su idoneidad para tareas de contexto largo.
+- Ausencia de benchmarks: no hay datos publicados de MMLU, HumanEval, GSM8K u otras metricas, por lo que la calidad real del modelo no puede verificarse objetivamente.
+- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar informacion incorrecta, especialmente en dominios cientificos donde la precision es critica; se recomienda verificacion humana.
+- Sesgos: no se documentan evaluaciones de sesgo; al desconocerse la composicion del dataset de entrenamiento, no se pueden descartar sesgos.
+- Cuantizaciones de baja calidad: las variantes Q2_K y Q3_K_M degradan la calidad de forma notable segun las notas del cuantizador; para produccion se recomienda Q4_K_M o superior.
+- Licencia Apache 2.0: permisiva para uso comercial, pero el modelo base es de un tercero (KSTRLAI) y conviene verificar la model card original por si hubiera condiciones adicionales no reflejadas en esta ficha.
+- Documentacion escasa: la falta de informacion sobre entrenamiento, arquitectura y evaluacion limita la confianza para despliegues en produccion sin validacion previa.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Colossus-2.1-GGUF
-- Modelo base: https://huggingface.co/KSTRLAI/Colossus-2.1
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Colossus-2.1-GGUF
+- Modelo base original: https://huggingface.co/KSTRLAI/Colossus-2.1
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Colossus-2.1-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Colossus-2.1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

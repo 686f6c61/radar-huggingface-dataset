@@ -2,53 +2,51 @@
 
 ## Resumen
 
-Krypton-Fly-3.0-GGUF es la distribucion en formato GGUF del modelo Krypton-Fly-3.0, desarrollado originalmente por myjellylabs y cuantizado por mradermacher, un colaborador habitual de la comunidad que publica versiones ligeras de modelos abiertos. El modelo base es un transformer multimodal de aproximadamente 8.950 millones de parametros (8,95B), orientado a tareas de razonamiento, generacion de codigo, uso de terminal, investigacion profunda (deep-research) y conversacion, segun las etiquetas declaradas en la model card.
+Krypton-Fly-3.0 es un modelo de lenguaje multimodal desarrollado por myjellylabs, orientado a tareas de razonamiento, generacion de codigo, uso de terminal y deep research. Esta ficha documenta concretamente la version cuantizada en formato GGUF publicada por mradermacher, un contribuidor habitual de la comunidad que genera cuantizaciones estaticas de modelos abiertos para su uso con llama.cpp y herramientas compatibles.
 
-La relevancia de esta ficha radica en que el repositorio ofrece un conjunto amplio de cuantizaciones estaticas (desde Q2_K hasta f16, ademas de los ficheros mmproj para la parte multimodal), lo que permite desplegar el modelo en hardware de consumo con un consumo de VRAM relativamente bajo. Sin embargo, la informacion publicada por el autor es muy escasa: no se detallan datos de entrenamiento, longitud de contexto, benchmarks ni procedimiento de alineacion, por lo que muchas especificaciones deben marcarse como no disponibles.
+El modelo base cuenta con 8.953.803.264 parametros (aproximadamente 9B) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. La model card del autor incluye etiquetas que indican capacidades multimodales, entrenamiento con DPO y soporte para ingles y hindi. El repositorio GGUF incluye un fichero mmproj (proyector multimodal) en dos precisiones, lo que confirma el soporte de entrada de imagenes.
 
-El modelo declara soporte para ingles y hindi, licencia Apache 2.0 y compatibilidad con la libreria transformers. La model card del cuantizador es una plantilla estandar de mradermacher y no aporta informacion tecnica adicional sobre el modelo base mas alla de la lista de ficheros y sus tamanos.
+La relevancia de esta publicacion radica en que facilita el despliegue local del modelo en hardware de consumo mediante cuantizaciones que van desde Q2_K (4,0 GB) hasta f16 (18,0 GB), con opciones intermedias recomendadas como Q4_K_M (5,8 GB) y Q8_0 (9,6 GB). No se dispone de informacion detallada sobre la longitud de contexto ni sobre los datos de entrenamiento en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetada como multimodal y transformer; no se detalla si es densa o MoE) |
-| Parametros totales | 8.953.803.264 (8,95B) |
+| Arquitectura | no disponible (modelo transformer multimodal, segun etiquetas) |
+| Parametros totales | 8.953.803.264 (~9B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, ademas de mmproj-f16 y mmproj-Q8_0 para la parte multimodal |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en Q8_0 y f16 |
 | Idiomas soportados | en, hi |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en safetensors via transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Las etiquetas del repositorio indican que se trata de un modelo multimodal con capacidades de razonamiento, codigo, terminal y deep-research, y que ha pasado por una fase de DPO (Direct Preference Optimization) segun la etiqueta `dpo`. El numero de parametros (8,95B) sugiere un transformer de tamano medio, pero no se especifica si emplea atencion lineal, decodificacion especulativa u otras innovaciones.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. Las etiquetas del repositorio indican que se trata de un modelo multimodal con capacidades de razonamiento, codigo, terminal y deep research, y que ha pasado por una fase de entrenamiento con DPO (Direct Preference Optimization). El repositorio incluye ficheros mmproj, lo que confirma la presencia de un proyector multimodal para el procesamiento de imagenes junto con el modelo de lenguaje.
 
-En cuanto a los datos de entrenamiento, no se publica el numero de tokens, la composicion del dataset ni el procedimiento de alineacion mas alla de la mencion a DPO. La model card del cuantizador no incluye informacion sobre el proceso de entrenamiento del modelo original; unicamente documenta el proceso de cuantizacion estatica a GGUF (quantize_version 2, convert_type hf). No se dispone de informacion sobre el modelo de vision asociado ni sobre el proyector multimodal mas alla de la existencia de los ficheros mmproj.
+El modelo base fue publicado por myjellylabs y posteriormente cuantizado por mradermacher mediante un proceso de conversion a formato HF y cuantizacion estatica (quantize_version 2, output_tensor_quantised 1). No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni detalles sobre la innovacion tecnica empleada.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y hindi.
-- Razonamiento multi-paso, segun la etiqueta `reasoning`.
-- Generacion y asistencia en codigo, segun la etiqueta `coding`.
-- Uso de terminal y ejecucion de comandos, segun la etiqueta `terminal`.
-- Investigacion profunda (deep-research), segun la etiqueta `deep-research`.
-- Capacidades multimodales: el repositorio incluye ficheros `mmproj` (proyector multimodal) en f16 y Q8_0, lo que indica soporte de entrada de imagenes, aunque no se detalla que tipos de modalidad cubre.
-- Alineacion mediante DPO, segun la etiqueta `dpo`.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: la etiqueta `reasoning` sugiere capacidad, pero no se detalla el soporte de agentes.
-- Capacidades multilingues: limitadas a ingles e hindi segun la model card.
+- Generacion de texto conversacional multi-turno.
+- Razonamiento (etiqueta "reasoning" en el repositorio).
+- Generacion y asistencia en codigo (etiqueta "coding").
+- Uso de terminal y ejecucion de comandos (etiqueta "terminal").
+- Deep research, orientado a tareas de investigacion y sintesis de informacion.
+- Procesamiento multimodal de imagenes mediante el proyector mmproj incluido.
+- Entrenamiento con DPO, orientado a alinear las respuestas con preferencias humanas.
+- Soporte de ingles y hindi.
 
 ## Casos de uso
 
-- Asistente de codigo en local: con cuantizaciones Q4_K_M (5,8 GB) o Q5_K_M (6,6 GB), el modelo puede ejecutarse en una GPU de consumo de 8-12 GB de VRAM para autocompletado, explicacion y refactorizacion de codigo en ingles.
-- Automatizacion de terminal y DevOps: la etiqueta `terminal` sugiere que el modelo puede generar y explicar comandos de shell; se usaria como asistente en scripts de automatizacion o en un CLI interactivo.
-- Investigacion asistida (deep-research): para resumir y sintetizar documentos tecnicos en ingles, aunque sin datos publicados sobre longitud de contexto no se puede garantizar el manejo de documentos largos.
-- Atencion al cliente en hindi e ingles: el soporte bilingue declarado permite desplegar un chatbot para usuarios de la India o comunidades hindi, con cuantizacion Q4_K_S (5,5 GB) en servidores modestos.
-- Procesamiento multimodal de imagenes: gracias a los ficheros mmproj, puede integrarse en pipelines que requieran describir o razonar sobre imagenes, aunque la ausencia de documentacion sobre el modelo de vision limita su uso en produccion sin validacion previa.
-- Prototipado e investigacion: al ser Apache 2.0 y estar disponible en GGUF, es adecuado para experimentar con llama.cpp u Ollama en estaciones de trabajo sin GPU dedicada de gama alta.
-- Despliegue en CPU: la cuantizacion Q2_K (4,0 GB) o Q3_K_S (4,4 GB) permite ejecucion en CPU con RAM suficiente, util para pruebas offline o entornos sin acelerador.
+- Asistencia en programacion dentro del IDE: el modelo puede generar y explicar codigo en ingles, integrarse mediante llama.cpp u Ollama y usarse como copiloto local en entornos con GPU de consumo.
+- Automatizacion de tareas de terminal: gracias a su etiqueta "terminal", puede interpretar y proponer comandos de shell, lo que permite construir agentes de operaciones que ejecuten tareas de administracion de sistemas con supervision humana.
+- Investigacion y sintesis documental: su orientacion a "deep research" lo hace adecuado para resumir y contrastar fuentes en flujos de trabajo de analisis, siempre que se valide la salida por riesgo de alucinacion.
+- Procesamiento de documentos con imagenes: al incluir proyector multimodal, puede extraer informacion de capturas, diagramas o formularios escaneados en pipelines de digitalizacion.
+- Despliegue local en estaciones de trabajo: con cuantizaciones de 4 a 6 GB (Q2_K a Q5_K_M) cabe en GPU de consumo como RTX 3060 de 12 GB o RTX 4070, lo que permite prototipado sin depender de la nube.
+- Atencion al cliente en ingles e hindi: el soporte bilingue permite atender consultas en ambos idiomas en mercados donde el hindi es relevante, con la salvedad de que no se documenta soporte de castellano.
+- Evaluacion de modelos y experimentacion academica: al ser Apache 2.0 y estar disponible en GGUF, es util para reproducir experimentos de cuantizacion y comparar calidad entre precisiones.
 
 ## Benchmarks y rendimiento
 
@@ -56,41 +54,48 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos + overhead aproximado):
-  - Q2_K: ~4,0 GB de pesos, ~5-6 GB de VRAM total.
-  - Q3_K_M: ~4,8 GB de pesos, ~6-7 GB de VRAM total.
-  - Q4_K_M: ~5,8 GB de pesos, ~7-8 GB de VRAM total.
-  - Q5_K_M: ~6,6 GB de pesos, ~8-9 GB de VRAM total.
-  - Q6_K: ~7,5 GB de pesos, ~9-10 GB de VRAM total.
-  - Q8_0: ~9,6 GB de pesos, ~11-12 GB de VRAM total.
-  - f16: ~18,0 GB de pesos, ~20 GB de VRAM total.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4-Q8; A100 o H100 para f16 y despliegues de alta concurrencia.
-- Cabe en GPU de consumo: si, desde Q4_K_S en adelante en GPUs de 8 GB o mas; Q2_K y Q3_K_S pueden caber en GPUs de 6 GB con contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; el modelo base (safetensors) es compatible con transformers y, presumiblemente, con vLLM y TGI, aunque no se confirma en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~4,0 GB.
+  - Q3_K_M: ~4,8 GB.
+  - Q4_K_M: ~5,8 GB (recomendado por el autor como rapido y de buena calidad).
+  - Q5_K_M: ~6,6 GB.
+  - Q6_K: ~7,5 GB.
+  - Q8_0: ~9,6 GB.
+  - f16: ~18,0 GB.
+  - Proyector multimodal adicional: 0,7 GB (Q8_0) o 1,0 GB (f16).
+- GPU recomendadas: para Q4_K_M o Q5_K_M basta una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4070; para Q8_0 se recomienda una RTX 4080/4090 o una A100/H100 en entornos de servidor; para f16 se necesita al menos 24 GB de VRAM (RTX 3090/4090, A100 40 GB).
+- Cabe en GPU de consumo: si, en la mayoria de cuantizaciones de 4 a 6 bits.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base admite transformers. No se documenta soporte especifico para vLLM o TGI en la informacion disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente sobre el modelo base (arquitectura, contexto, benchmarks) para establecer una comparativa rigurosa con alternativas de la misma categoria. Se indica "no disponible".
+No se dispone de datos de rendimiento ni de especificaciones completas del modelo base que permitan una comparativa rigurosa. A continuacion se indican alternativas de tamano similar (aproximadamente 8-9B) con licencia permisiva, sin comparar rendimiento al no haber benchmarks publicados:
+
+| Modelo | Parametros | Contexto | Licencia | Formato GGUF |
+|---|---|---|---|---|
+| Krypton-Fly-3.0 | ~9B | no disponible | Apache 2.0 | Si (mradermacher) |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | Si |
+| Qwen2.5 7B | 7B | 128K | Apache 2.0 | Si |
+| Mistral 7B v0.3 | 7B | 32K | Apache 2.0 | Si |
 
 ## Limitaciones y advertencias
 
-- La model card del cuantizador es una plantilla generica y no aporta informacion sobre sesgos, datos de entrenamiento ni evaluaciones del modelo base.
-- Riesgo de alucinacion: no evaluado; al no haber benchmarks publicados, no se puede estimar su fiabilidad en tareas de razonamiento o codigo.
-- Cobertura linguistica limitada a ingles e hindi; no se declara soporte de castellano.
-- Longitud de contexto desconocida, lo que impide garantizar el manejo de conversaciones o documentos largos.
-- El modelo base tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una adopcion muy baja y ausencia de validacion por parte de la comunidad.
-- Aunque la licencia es Apache 2.0 (permite uso comercial), la falta de documentacion sobre el origen de los datos de entrenamiento impide verificar el cumplimiento de las condiciones de las fuentes subyacentes.
-- El repositorio ocupa 83,4 GB, por lo que la descarga completa de todas las cuantizaciones requiere espacio considerable; se recomienda descargar solo la variante necesaria.
-- No se han publicado cuantizaciones ponderadas/imatrix por parte del cuantizador; solo estan disponibles las estaticas.
+- Solo se documentan los idiomas ingles y hindi; no hay soporte declarado de castellano, lo que limita su uso en produccion en espanol.
+- No se dispone de informacion sobre la longitud de contexto, lo que impide garantizar conversaciones largas o procesamiento de documentos extensos.
+- Riesgo de alucinacion inherente a los modelos de ~9B, especialmente en tareas de deep research y generacion de codigo; se recomienda validacion humana.
+- No se han publicado benchmarks, por lo que no es posible verificar empiricamente las capacidades declaradas en las etiquetas.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad; el autor recomienda Q4_K_S, Q4_K_M y Q8_0.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base podria tener condiciones adicionales no reflejadas en la informacion disponible; conviene revisar la model card del modelo base.
+- El repositorio GGUF tiene un tamano de 83,4 GB por incluir todas las cuantizaciones; la descarga debe hacerse fichero a fichero.
+- No hay informacion sobre sesgos conocidos ni sobre el proceso de filtrado del dataset de entrenamiento.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Krypton-Fly-3.0-GGUF
 - Modelo base: https://huggingface.co/myjellylabs/Krypton-Fly-3.0
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Krypton-Fly-3.0-GGUF
-- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Krypton-Fly-3.0-i1-GGUF
+- Pagina de descarga del autor: https://hf.tst.eu/model#Krypton-Fly-3.0-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del cuantizador: https://www.nethype.de/
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

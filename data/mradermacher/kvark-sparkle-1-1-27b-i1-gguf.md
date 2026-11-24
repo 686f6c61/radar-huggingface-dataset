@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Kvark-Sparkle-1.1-27B-i1-GGUF es la versión cuantizada con imatrix del modelo Egzakta/Kvark-Sparkle-1.1-27B, publicada por mradermacher. Se trata de un modelo de lenguaje de 27.320.697.856 parámetros (unos 27,3 mil millones) orientado a razonamiento eficiente, RAG agéntico y question answering sobre documentos. La model card del cuantizador lo etiqueta con los identificadores qwen3.8, mtp y kvark, lo que sugiere una base derivada de la familia Qwen3 con soporte de multi-token prediction, aunque el autor original no detalla la arquitectura en la información disponible.
+Kvark-Sparkle-1.1-27B-i1-GGUF es la versión cuantizada con imatrix del modelo Egzakta/Kvark-Sparkle-1.1-27B, un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) orientado a razonamiento eficiente, RAG agéntico y question answering sobre documentos. La cuantización la firma mradermacher, un publicador habitual de GGUF en Hugging Face, y se distribuye en el repositorio con licencia Apache 2.0. El modelo base está etiquetado internamente con la referencia "qwen3.8", lo que sugiere una arquitectura derivada de la familia Qwen, aunque esta ficha no puede confirmar detalles de diseño que no aparecen en la información disponible.
 
-El repositorio ofrece únicamente pesos en formato GGUF, con cuantizaciones estáticas (Q2_K a Q6_K, Q4_0, Q4_1) y cuantizaciones i1 generadas a partir de un fichero imatrix, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados. El rango de tamaños va de 11,0 GB (i1-Q2_K) a 22,5 GB (i1-Q6_K), pasando por 15,9 GB en i1-Q4_K_S y 16,9 GB en i1-Q4_K_M.
+El interés de esta publicación es doble. Por un lado, ofrece el modelo en formatos GGUF de 11,0 GB (i1-Q2_K) a 22,5 GB (i1-Q6_K), lo que permite ejecutarlo en hardware de consumo con cuantizaciones de 4 bits de unos 16-17 GB. Por otro, la model card declara capacidades específicas de razonamiento agéntico y de recuperación documental, con soporte de inglés y serbio como idiomas, y menciona "mtp" (multi-token prediction) entre sus etiquetas.
 
-La relevancia actual del modelo radica en su combinación de tamaño medio-grande (27B), licencia Apache 2.0 y disponibilidad de cuantizaciones de alta calidad con imatrix, lo que lo hace atractivo para despliegues locales de asistentes con razonamiento y pipelines de recuperación aumentada. No obstante, la información pública disponible sobre el modelo base es escasa: no se han publicado especificaciones de contexto, datos de entrenamiento ni resultados de benchmarks en la documentación consultada.
+La relevancia actual radica en que combina un tamaño de 27B —que suele requerir GPU de 24 GB o más en cuantizaciones medias— con un conjunto de cuantizaciones estáticas e imatrix que cubren desde 11 GB hasta 22,5 GB. No se han publicado en la información disponible resultados de benchmarks, longitud de contexto ni detalles del dataset de entrenamiento, por lo que las secciones correspondientes se marcan como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card menciona qwen3.8 y mtp como tags, sin detallar la arquitectura) |
-| Parametros totales | 27.320.697.856 (27,3 B) |
+| Arquitectura | no disponible (etiqueta interna "qwen3.8"; probable familia transformer derivada de Qwen, sin confirmar) |
+| Parametros totales | 27.320.697.856 (~27,3B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; además de cuantizaciones estáticas en el repo mradermacher/Kvark-Sparkle-1.1-27B-GGUF |
-| Idiomas soportados | en, sr (inglés y serbio, según los tags de la model card) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix); estáticos en el repo hermano Kvark-Sparkle-1.1-27B-GGUF |
+| Idiomas soportados | en (inglés), sr (serbio) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (más fichero imatrix en GGUF para generar cuantizaciones propias) |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix y estáticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base Egzakta/Kvark-Sparkle-1.1-27B. Los tags de la model card incluyen "qwen3.8" y "mtp", lo que apunta a una base derivada de la familia Qwen3 con multi-token prediction (MTP), una técnica que permite predecir varios tokens por paso y acelera la decodificación. Asimismo, los tags "reasoning" y "efficient-reasoning" indican que el modelo está optimizado para cadenas de razonamiento con un coste computacional contenido, aunque no se especifica si emplea modos de pensamiento explícitos ni qué metodología de alineación (RLHF, DPO u otra) se aplicó.
+No se dispone en la información proporcionada de detalles sobre la arquitectura interna del modelo base Egzakta/Kvark-Sparkle-1.1-27B: no se especifica si es un transformer denso, un MoE o una arquitectura híbrida, ni el número de capas, cabezas de atención o dimensión oculta. La etiqueta "qwen3.8" en la model card sugiere una base de la familia Qwen, y la etiqueta "mtp" apunta a multi-token prediction como técnica de decodificación, pero ninguno de estos extremos se confirma con documentación técnica en la información disponible.
 
-Tampoco se han publicado datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni innovaciones técnicas adicionales más allá de las etiquetas mencionadas. La única información técnica concreta y verificable procede del proceso de cuantización: mradermacher ha generado cuantizaciones i1 (importancia ponderada) a partir de un fichero imatrix, un método que ajusta la precisión por tensor según su importancia para reducir la degradación de calidad en comparación con las cuantizaciones estáticas del mismo tamaño.
+Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o similares. Lo que sí consta es el proceso de cuantización: mradermacher ha generado cuantizaciones i1 (imatrix) a partir de la matriz de importancia incluida en el repositorio (Kvark-Sparkle-1.1-27B.imatrix.gguf, 0,1 GB) y ofrece además cuantizaciones estáticas en un repositorio separado. La model card indica que se trata de un modelo de visión y que los ficheros mmproj, si existen, se alojan en el repositorio estático, aunque no se confirma que esta variante incluya proyección multimodal.
 
 ## Capacidades
 
-- Generación de texto conversacional, con etiqueta "conversational" en el repositorio.
-- Razonamiento explícito y eficiente (tags "reasoning" y "efficient-reasoning").
-- RAG agéntico (tag "agentic-rag"): el modelo está orientado a flujos de recuperación aumentada con agentes.
-- Question answering sobre documentos (tag "document-qa").
-- Soporte multilingüe limitado a inglés y serbio según los metadatos disponibles.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita su integración en servicios de inferencia.
-- No se documentan capacidades de visión, audio, tool calling explícito ni modo de pensamiento estructurado en la información disponible.
+- Generación de texto conversacional y razonamiento, con etiquetas explícitas de "reasoning" y "efficient-reasoning" en la model card.
+- RAG agéntico (agentic-rag): el modelo está etiquetado para su uso en pipelines de recuperación aumentada con agentes.
+- Question answering sobre documentos (document-qa).
+- Soporte declarado de tool calling / function calling: no se detalla explícitamente en la información disponible, pero las etiquetas de agentic-rag y endpoints_compatible apuntan a integración con APIs compatibles.
+- Capacidades multilingües limitadas a inglés y serbio según el campo `language` de la model card.
+- Posible capacidad de visión: la model card indica "This is a vision model", aunque los ficheros mmproj no se incluyen en este repositorio.
+- Modo de razonamiento eficiente ("efficient-reasoning") y posible decodificación con multi-token prediction ("mtp"), sin documentación adicional.
 
 ## Casos de uso
 
-- Asistente documental interno: el modelo puede responder preguntas sobre corpus documentales (tag "document-qa") desplegado con llama.cpp u Ollama, usando la cuantización i1-Q4_K_M (16,9 GB) para equilibrar calidad y requisitos de memoria en una estación de trabajo con 24 GB de VRAM.
-- Pipeline RAG agéntico: gracias a su orientación "agentic-rag", puede integrarse como generador final en sistemas que recuperan fragmentos de una base vectorial y requieren síntesis con razonamiento multi-paso, con la ventaja de ejecutarse en local sin depender de APIs externas.
-- Atención al cliente en inglés y serbio: el soporte de ambos idiomas permite desplegar un asistente bilingüe para mercados de habla inglesa y serbia, con la cuantización i1-Q5_K_M (19,6 GB) en una GPU de 24 GB o superior.
-- Análisis de contratos y documentación legal: la combinación de razonamiento y QA sobre documentos permite extraer cláusulas y responder consultas sobre textos largos, siempre que la longitud de contexto del modelo base (no publicada) sea suficiente.
-- Generación de borradores técnicos con razonamiento: el tag "efficient-reasoning" sugiere un coste de inferencia contenido para tareas de razonamiento, lo que lo hace apto para generar explicaciones paso a paso en herramientas de desarrollo internas.
-- Despliegue en hardware de consumo: con la cuantización i1-IQ3_M (12,9 GB) o i1-Q4_K_S (15,9 GB) puede ejecutarse en GPUs de 16-24 GB (RTX 4080, RTX 4090, RTX 3090) mediante llama.cpp, lo que facilita prototipado y pruebas sin infraestructura de centro de datos.
-- Servicio de inferencia compatible con endpoints: el tag "endpoints_compatible" permite exponerlo como API HTTP en plataformas de serving que acepten GGUF, integrándolo en aplicaciones existentes con mínima adaptación.
+- RAG agéntico sobre corpus documentales: el modelo está etiquetado específicamente para agentic-rag, por lo que encaja en pipelines donde un agente formula consultas, recupera fragmentos y sintetiza respuestas con trazabilidad de fuentes.
+- Question answering sobre documentación técnica interna: con cuantización i1-Q4_K_M (16,9 GB) puede desplegarse en una única GPU de 24 GB para responder preguntas sobre manuales, contratos o bases de conocimiento.
+- Asistente conversacional multilingüe inglés-serbio: útil para organizaciones que operan en los Balcanes y necesitan un modelo que cubra ambos idiomas con licencia Apache 2.0.
+- Generación de código y razonamiento paso a paso: aunque no hay benchmarks publicados, las etiquetas de reasoning permiten su uso en tareas de análisis y explicación de código, con verificación humana obligatoria.
+- Despliegue en hardware de consumo: la cuantización i1-IQ3_M (12,9 GB) o i1-Q4_K_S (15,9 GB) permite ejecución local en GPUs de 16-24 GB mediante llama.cpp u Ollama, útil para prototipado y entornos con requisitos de privacidad.
+- Extracción estructurada de información de documentos largos: adecuado para pipelines de procesamiento por lotes donde se prioriza coste por token bajo frente a latencia interactiva.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye la matriz de importancia y varias familias de cuantización, lo que permite medir la degradación de calidad entre i1-Q2_K y i1-Q6_K en un caso de uso concreto.
 
 ## Benchmarks y rendimiento
 
@@ -53,48 +53,41 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos + overhead de contexto y KV cache):
-  - i1-Q2_K (11,0 GB): ~12-13 GB.
-  - i1-IQ3_M (12,9 GB): ~14-15 GB.
-  - i1-Q4_K_S (15,9 GB): ~17-18 GB.
-  - i1-Q4_K_M (16,9 GB): ~18-19 GB.
-  - i1-Q5_K_M (19,6 GB): ~21-22 GB.
-  - i1-Q6_K (22,5 GB): ~24-25 GB.
-- GPU recomendadas: para cuantizaciones Q4-Q5, RTX 4090 (24 GB), RTX 3090 (24 GB) o A100 40 GB; para Q6_K, A100 40 GB o H100; para Q2-Q3, RTX 4080 (16 GB) o RTX 4060 Ti 16 GB.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantizaciones hasta Q5_K_M; en GPUs de 16 GB con IQ3_M o inferiores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere soporte en plataformas de serving con endpoints HTTP. No se documenta soporte para vLLM o TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin caché KV): 11,0 GB (i1-Q2_K), 12,4-12,9 GB (i1-Q3_K_S a i1-IQ3_M), 13,6-14,7 GB (i1-Q3_K_M a i1-Q3_K_L), 15,4-17,4 GB (i1-IQ4_XS a i1-Q4_1), 19,1-19,6 GB (i1-Q5_K_S y i1-Q5_K_M), 22,5 GB (i1-Q6_K).
+- GPU recomendadas: A100 40/80 GB, H100 80 GB o L40S 48 GB para las cuantizaciones más altas con contexto largo; RTX 4090 (24 GB) o RTX 3090 (24 GB) para i1-Q4_K_M e i1-Q5_K_M con margen ajustado; RTX 4080 (16 GB) para i1-IQ3_M o i1-Q4_K_S.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 (24 GB) con cuantizaciones de 4-5 bits; en RTX 4080/4070 Ti Super (16 GB) con cuantizaciones de 3-4 bits; en GPUs de 12 GB solo con i1-Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y servidores compatibles con la API de OpenAI (la etiqueta endpoints_compatible lo indica). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se recomienda verificar compatibilidad antes de producción.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kvark-Sparkle-1.1-27B-i1-GGUF (este) | 27,3 B | no disponible | Apache 2.0 | GGUF | Cuantizaciones i1 con imatrix; idiomas en/sr |
-| mradermacher/Kvark-Sparkle-1.1-27B-GGUF | 27,3 B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estáticas del mismo modelo base |
-| Egzakta/Kvark-Sparkle-1.1-27B | 27,3 B | no disponible | Apache 2.0 | safetensors (presumiblemente) | Modelo base sin cuantizar |
-| Qwen3-32B (referencia de familia) | 32 B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Familia citada en los tags; comparación no verificada con datos de benchmark |
+| Kvark-Sparkle-1.1-27B (i1-GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF | Hugging Face (este repo) |
+| Kvark-Sparkle-1.1-27B (estático GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF | Hugging Face (repo hermano de mradermacher) |
+| Egzakta/Kvark-Sparkle-1.1-27B (base) | 27,3B | no disponible | Apache 2.0 | safetensors | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparativa se limita a parámetros, licencia y formato.
+No se dispone de información sobre modelos comparables de otros autores (por ejemplo, Qwen2.5-32B, Gemma-2-27B o Mistral-Small) en los datos proporcionados, por lo que no se incluyen cifras de rendimiento comparado.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks, por lo que no es posible verificar la calidad real del modelo frente a alternativas.
-- La longitud de contexto no está documentada; planificar despliegues con contexto largo sin confirmación previa es arriesgado.
-- El soporte de idiomas se limita a inglés y serbio según los metadatos; el rendimiento en castellano no está garantizado ni documentado.
-- Riesgo de alucinación inherente a los modelos de 27B sin datos de alineación publicados; en dominios especializados (legal, médico, financiero) requiere verificación humana.
-- Sesgos conocidos: no documentados. Al no publicarse la composición del dataset de entrenamiento, no es posible evaluar sesgos de dominio, geográficos o lingüísticos.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base podría tener restricciones adicionales no reflejadas en esta ficha; conviene revisar la model card de Egzakta/Kvark-Sparkle-1.1-27B antes de un despliegue en producción.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad; para producción se recomienda Q4_K_M o superior.
-- El repositorio pesa 218,6 GB y contiene múltiples cuantizaciones; descargar solo el fichero GGUF necesario para evitar consumo innecesario de almacenamiento.
-- No se documenta soporte de tool calling ni de agentes multi-paso con formato estructurado, pese al tag "agentic-rag"; validar el comportamiento antes de integrarlo en pipelines críticos.
+- No hay benchmarks publicados: la calidad real del modelo en razonamiento, código o QA documental no puede verificarse con datos objetivos.
+- Idiomas limitados: solo inglés y serbio declarados; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Longitud de contexto desconocida: no se puede garantizar el comportamiento en documentos largos ni en conversaciones multi-turno extensas.
+- Riesgo de alucinación: como cualquier LLM de 27B sin datos de evaluación publicados, puede generar contenido plausible pero falso, especialmente en QA documental.
+- La model card indica que es un modelo de visión, pero los ficheros mmproj no están en este repositorio; si se necesita multimodalidad, hay que acudir al repositorio estático y verificar su disponibilidad.
+- Las cuantizaciones de 2-3 bits (i1-Q2_K, i1-IQ3_S) degradan la calidad de forma notable; para producción se recomienda i1-Q4_K_M o superior.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base es de un autor tercero (Egzakta) y conviene revisar su model card original por si añade restricciones adicionales.
+- El repositorio ocupa 218,6 GB en total; la descarga selectiva de una sola cuantización es posible, pero requiere conocer el nombre exacto del fichero.
+- No se documentan sesgos conocidos, datos de entrenamiento ni procesos de alineación, lo que dificulta evaluar riesgos de contenido.
 
 ## Enlaces
 
-- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Kvark-Sparkle-1.1-27B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kvark-Sparkle-1.1-27B-i1-GGUF
 - Modelo base: https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B
-- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Kvark-Sparkle-1.1-27B-GGUF
-- Página de descargas del cuantizador: https://hf.tst.eu/model#Kvark-Sparkle-1.1-27B-i1-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de tipos de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Kvark-Sparkle-1.1-27B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Kvark-Sparkle-1.1-27B-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Empresa del autor de las cuantizaciones: https://www.nethype.de/

@@ -2,48 +2,48 @@
 
 ## Resumen
 
-Liminar-Gemma-4-31B-GGUF es la versión cuantizada en formato GGUF del modelo Liminar-Gemma-4-31B, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversión estática de los pesos originales alojados en el repositorio LICDIA-UNLu/Liminar-Gemma-4-31B, lo que permite su despliegue en entornos con recursos limitados mediante herramientas compatibles con GGUF (llama.cpp, Ollama, entre otras). El modelo base parece derivar de la familia Gemma 4, si bien no se dispone de documentación técnica oficial sobre su entrenamiento o procedencia exacta.
+Liminar-Gemma-4-31B-GGUF es la versión cuantizada en formato GGUF del modelo Liminar-Gemma-4-31B, desarrollado originalmente por el LICDIA-UNLu (Laboratorio de Investigación y Desarrollo en Inteligencia Artificial de la Universidad Nacional de Luján, Argentina). La cuantización la firma mradermacher, un conocido publicador de quants en Hugging Face. El modelo está especializado en normativa y legislación universitaria argentina, según indican las etiquetas de la model card ("liminar", "argentina", "universidades", "normativa").
 
-El repositorio contiene únicamente los ficheros cuantizados, con un total de 30.697.345.596 parámetros reales según los safetensors asociados, y un tamaño de repositorio de 173,2 GB que refleja la suma de todas las variantes de cuantización publicadas (desde Q2_K hasta F16). La ficha del autor no incluye información sobre arquitectura, datos de entrenamiento, licencia o idiomas soportados, por lo que muchos apartados de esta ficha deben marcarse como no disponibles.
+Se trata de un modelo conversacional derivado de la familia Gemma, con aproximadamente 30.700 millones de parámetros totales (30.697.345.596 según los pesos en safetensors del modelo base). La versión GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo inviable con los pesos completos en precisión original.
 
-La relevancia de esta publicación es práctica: ofrece múltiples niveles de cuantización (Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS y F16) que permiten ajustar el consumo de memoria y la calidad de salida en función del hardware disponible. No obstante, la ausencia de información sobre el modelo base limita seriamente cualquier evaluación rigurosa de sus capacidades.
+La relevancia de esta ficha radica en que ofrece un punto de acceso práctico a un modelo de nicho (dominio jurídico-normativo universitario argentino) en cuantizaciones que van de 12,0 GB (Q2_K) a 32,7 GB (Q8_0), lo que abre su uso en entornos con recursos limitados. No obstante, la información pública disponible sobre el modelo base es escasa: no se detallan benchmarks, composición del dataset de entrenamiento ni longitud de contexto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el modelo base deriva presumiblemente de la familia Gemma, sin confirmar) |
-| Parametros totales | 30.697.345.596 |
+| Arquitectura | no disponible (derivado de la familia Gemma; sin detalles publicados) |
+| Parametros totales | 30.697.345.596 (~30,7 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | es (español, según la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Liminar-Gemma-4-31B. El nombre sugiere una variante de la familia Gemma con aproximadamente 31 mil millones de parámetros, pero la model card del repositorio GGUF no aporta detalles sobre si se trata de un transformer denso, un modelo con mezcla de expertos o una arquitectura híbrida. Tampoco se documentan los datos de entrenamiento, el número de tokens procesados, la composición del corpus ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo base Liminar-Gemma-4-31B. Por el nombre y el tamaño (≈30,7 B de parámetros) se infiere que deriva de la familia Gemma de Google, pero la model card del repositorio cuantizado no especifica si se trata de un transformer denso, un MoE o una variante híbrida, ni detalla innovaciones como atención lineal o decodificación especulativa.
 
-La única información técnica disponible se refiere al proceso de conversión: la model card indica `convert_type: hf` (conversión desde pesos Hugging Face), `output_tensor_quantised: 1` y `quantize_version: 2`, lo que confirma que se trata de una cuantización estática generada con las herramientas habituales del ecosistema GGUF. No se documentan innovaciones arquitectónicas ni técnicas de decodificación específicas.
+Tampoco se publican datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF/DPO o técnicas de ajuste fino. Las etiquetas ("liminar", "argentina", "universidades", "normativa") sugieren un ajuste orientado a normativa universitaria argentina, pero no hay documentación que cuantifique ese ajuste. La cuantización realizada por mradermacher es estática (quantize_version 2, output_tensor_quantised 1, convert_type hf) y no incluye quants ponderados con imatrix en el momento de la publicación.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` sugiere que el modelo está orientado a diálogo, aunque no se detallan capacidades específicas.
-- Razonamiento, código, matemáticas y visión: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto conversacional en español, orientada a consultas sobre normativa y legislación universitaria argentina.
+- Respuesta a preguntas sobre el dominio "liminar" y el marco normativo de universidades (según las etiquetas del modelo).
+- Conversación multi-turno (etiqueta "conversational").
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Capacidades multilingües: limitadas al español según la model card; no se documentan otros idiomas.
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Despliegue local en equipos con GPU de consumo: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de ~31B parámetros en GPUs con 24 GB de VRAM (por ejemplo, RTX 4090) mediante llama.cpp u Ollama, sacrificando algo de precisión a cambio de viabilidad en hardware asequible.
-- Prototipado de asistentes conversacionales: el tag `conversational` y la disponibilidad de cuantizaciones ligeras (Q2_K, Q3_K_S) facilitan pruebas rápidas de chatbots en entornos de desarrollo con recursos limitados.
-- Inferencia en CPU con cuantizaciones agresivas: las variantes Q2_K y Q3_K_S reducen el peso del modelo lo suficiente como para ejecutarse en servidores sin GPU, útil para tareas de generación de texto de baja latencia crítica.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece doce variantes distintas, lo que permite medir el impacto de la cuantización en la calidad de salida para un mismo modelo base, un caso útil en investigación sobre compresión de modelos.
-- Integración en pipelines con endpoints compatibles: el tag `endpoints_compatible` indica que el modelo puede servirse a través de infraestructuras de inferencia estándar (por ejemplo, TGI o vLLM con soporte GGUF), aunque no se especifican detalles de compatibilidad.
-- Fine-tuning posterior sobre pesos cuantizados: aunque no es el flujo habitual, las variantes F16 y Q8_0 permiten servir como punto de partida para ajustes ligeros en entornos con memoria limitada.
+- Consulta de normativa universitaria argentina: el modelo puede responder preguntas sobre reglamentos, estatutos y resoluciones del ámbito universitario, aprovechando su ajuste específico al dominio "liminar" y "universidades".
+- Asistencia a estudiantes y personal administrativo: un chatbot que resuelva dudas sobre trámites, plazos y requisitos normativos dentro de una institución, desplegado localmente con llama.cpp.
+- Soporte a la gestión documental jurídica: resumen y explicación de textos normativos para equipos de secretaría o asesoría legal universitaria.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_S (17,9 GB) y Q4_K_M (18,8 GB) permiten ejecución en estaciones de trabajo con GPU de 24 GB, sin depender de servicios en la nube.
+- Prototipado de asistentes conversacionales en español: base para experimentos de ajuste adicional o evaluación en dominios administrativos hispanohablantes.
+- Investigación en IA aplicada al derecho: análisis de cómo un modelo de ~30 B ajustado a un corpus normativo concreto responde a preguntas de dominio, con licencia Apache 2.0 que facilita la experimentación.
 
 ## Benchmarks y rendimiento
 
@@ -51,35 +51,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según el número de parámetros y la cuantización):
-  - F16: ~61 GB (no cabe en GPUs de consumo).
-  - Q8_0: ~33 GB (requiere A100 40 GB, H100 o múltiples GPUs).
-  - Q6_K: ~25 GB (límite de una RTX 4090 de 24 GB, posible con offloading parcial).
-  - Q5_K_M / Q5_K_S: ~21-22 GB (cabe en RTX 4090 24 GB).
-  - Q4_K_M / Q4_K_S: ~18-19 GB (cabe en RTX 4090, RTX 3090, A6000).
-  - Q3_K_L / Q3_K_M / Q3_K_S: ~14-16 GB (cabe en RTX 4080, RTX 4070 Ti Super).
-  - Q2_K: ~11-12 GB (cabe en RTX 4070, RTX 3060 12 GB).
-  - IQ4_XS: ~17 GB (cabe en RTX 4090).
-- GPU recomendadas: A100 40/80 GB o H100 para F16 y Q8_0; RTX 4090, RTX 3090 o A6000 para Q4-Q6; GPUs de gama media (RTX 4070, 4080) para Q2-Q3.
-- Despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. Para variantes de mayor precisión puede requerirse offloading a CPU/RAM.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización): Q2_K ≈ 12,0 GB; Q3_K_S ≈ 13,9 GB; Q4_K_S ≈ 17,9 GB; Q4_K_M ≈ 18,8 GB; Q5_K_M ≈ 21,9 GB; Q6_K ≈ 25,3 GB; Q8_0 ≈ 32,7 GB (tamaños de fichero, la VRAM real añade overhead de contexto y caché KV).
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_S; A100 40 GB o H100 para Q6_K y Q8_0 con contexto amplio; GPUs de 16 GB solo para Q2_K/Q3_K_S con contexto reducido.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 y Q5; en GPUs de 16 GB con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; para los pesos originales, transformers/vLLM/TGI (no verificados con este modelo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base ni sobre alternativas comparables en la información proporcionada.
+No se dispone de datos de rendimiento del modelo base ni de alternativas directamente comparables en el mismo nicho (normativa universitaria argentina). Se ofrece una comparación estructural básica con modelos de tamaño similar de la familia Gemma y equivalentes abiertos:
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Nicho |
+|---|---|---|---|---|---|
+| Liminar-Gemma-4-31B (este) | ~30,7 B | no disponible | Apache 2.0 | GGUF / safetensors | Normativa universitaria argentina |
+| Gemma 2 27B (referencia de familia) | ~27 B | no disponible en esta ficha | Gemma license | safetensors / GGUF | Propósito general |
+| Modelos 30B clase Llama (referencia) | ~30 B | no disponible en esta ficha | Llama license | safetensors / GGUF | Propósito general |
+
+La comparación cuantitativa de rendimiento no está disponible; los datos de las alternativas se incluyen solo como referencia de categoría y deben verificarse en sus fichas oficiales.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card no especifica licencia, idiomas, arquitectura ni datos de entrenamiento, lo que impide evaluar su idoneidad para producción.
-- Licencia no disponible: no puede confirmarse si el uso comercial está permitido; debe consultarse el repositorio del modelo base (LICDIA-UNLu/Liminar-Gemma-4-31B) antes de cualquier despliegue.
-- Procedencia incierta: el nombre sugiere una variante de Gemma, pero no hay confirmación oficial; el uso de pesos derivados puede estar sujeto a los términos de la licencia original de Gemma.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no se han publicado evaluaciones que lo cuantifiquen.
-- Sesgos: no documentados.
-- Limitaciones de contexto e idioma: desconocidas.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de salida; se recomienda validar en el caso de uso concreto.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
+- No se han publicado benchmarks ni evaluaciones independientes; el rendimiento real es desconocido.
+- El ajuste al dominio "normativa universitaria argentina" puede provocar respuestas desactualizadas o incorrectas si la legislación cambia; verificar siempre contra fuentes oficiales.
+- Riesgo de alucinación inherente a modelos generativos, agravado por la falta de documentación sobre el corpus de entrenamiento.
+- Idiomas: la model card solo declara español; el uso en otros idiomas no está garantizado.
+- Longitud de contexto no documentada: no se puede planificar el despliegue para documentos largos sin verificación empírica.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base podría arrastrar restricciones de la familia Gemma; conviene revisar la licencia del modelo original LICDIA-UNLu/Liminar-Gemma-4-31B.
+- Los quants Q2_K y Q3_K_M tienen calidad reducida según la propia model card; para producción se recomienda Q4_K_M o superior.
+- No hay quants ponderados con imatrix disponibles en el momento de la publicación.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Liminar-Gemma-4-31B-GGUF
 - Modelo base: https://huggingface.co/LICDIA-UNLu/Liminar-Gemma-4-31B
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Liminar-Gemma-4-31B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de quants (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `CreativeHub008/model-app` es una publicación de Hugging Face realizada por el usuario CreativeHub008 en marzo de 2026, con una actualización posterior en agosto de 2026. Se distribuye bajo licencia Apache 2.0 y cuenta con aproximadamente 317,5 millones de parámetros, lo que lo sitúa en la gama de modelos de tamaño medio-pequeño. Los tags indican que se ofrecen pesos en formatos ONNX y GGUF, lo que sugiere que está preparado para su despliegue en entornos de inferencia locales y optimizados, aunque no se especifica la arquitectura interna ni el propósito exacto del modelo.
+`CreativeHub008/model-app` es un modelo publicado en Hugging Face por el usuario CreativeHub008 bajo licencia Apache 2.0. El repositorio contiene pesos en formato ONNX y GGUF, lo que sugiere que el modelo está pensado para inferencia en entornos de producción ligeros y para despliegue en CPU o GPU de gama baja mediante runtimes como ONNX Runtime o llama.cpp. No obstante, la model card pública no incluye información sustancial sobre el modelo: se limita a declarar la licencia, sin describir arquitectura, datos de entrenamiento ni capacidades.
 
-La model card publicada por el autor está prácticamente vacía: únicamente incluye la línea de licencia, sin descripción, instrucciones de uso, datos de entrenamiento ni ejemplos. Esta ausencia de documentación limita seriamente la evaluación técnica y la adopción del modelo en entornos de producción, ya que no es posible conocer sus capacidades, limitaciones ni el dominio para el que fue diseñado. A pesar de ello, el número de parámetros y los formatos disponibles permiten inferir que se trata de un modelo de lenguaje de tamaño moderado, posiblemente adecuado para tareas de generación de texto o clasificación, pero sin confirmación oficial.
+El dato más concreto disponible es el recuento de parámetros en safetensors: 317.542.020 parámetros, es decir, aproximadamente 318 millones. Esto sitúa al modelo en la categoría de modelos pequeños, comparable en escala a la familia GPT-2 (355M) o a modelos tipo DistilBERT en número de parámetros, aunque la arquitectura exacta no está documentada. El tamaño del repositorio es de 6,0 GB, lo que es coherente con la presencia de múltiples formatos de pesos (ONNX y GGUF) que duplican o multiplican el espacio ocupado respecto a un único checkpoint.
 
-Dado que la información disponible es muy escasa, esta ficha se basa únicamente en los datos objetivos extraídos del repositorio y en estimaciones razonables derivadas del tamaño del modelo. Se recomienda precaución antes de utilizar este modelo en proyectos reales, y se insta a consultar directamente al autor o al repositorio para obtener detalles adicionales.
+La relevancia de esta ficha es limitada por la escasez de información verificable. El modelo acumula 393 descargas y 0 likes en el momento de la consulta, y no se ha publicado pipeline, idiomas soportados ni resultados de evaluación. Cualquier evaluación rigurosa del modelo requeriría inspeccionar los archivos del repositorio y ejecutar pruebas propias, algo que no puede deducirse de la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -14,67 +14,74 @@ Dado que la información disponible es muy escasa, esta ficha se basa únicament
 |---|---|
 | Arquitectura | no disponible |
 | Parametros totales | 317.542.020 |
-| Parametros activos | no disponible |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (se infieren formatos ONNX y GGUF por los tags) |
+| Tipos de cuantizacion | no disponible (el repo incluye GGUF y ONNX, pero no se detallan niveles) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX, GGUF (según tags) |
+| Formato de pesos | safetensors, ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura del modelo (tipo de transformer, número de capas, dimensiones ocultas, etc.) ni sobre el proceso de entrenamiento (volumen de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). La model card no incluye ninguna sección técnica al respecto. El único dato concreto es el número de parámetros (317.542.020), que sugiere un modelo de tamaño medio, pero sin más detalles no es posible determinar si se trata de un modelo denso, un MoE o una arquitectura híbrida.
+No se dispone de información sobre la arquitectura del modelo. La model card no describe si se trata de un transformer decoder-only, encoder-only, un modelo híbrido o cualquier otra variante. Tampoco se documentan el número de capas, la dimensión de los embeddings, el número de cabezas de atención ni la función de activación. El recuento de 317,5 millones de parámetros es el único dato estructural disponible y proviene del análisis de los archivos safetensors del repositorio.
 
-Los formatos de pesos disponibles (ONNX y GGUF) indican que el modelo ha sido convertido o exportado para su uso con herramientas de inferencia optimizadas como llama.cpp, Ollama o entornos ONNX Runtime. Sin embargo, no se especifican las cuantizaciones concretas (por ejemplo, Q4_K_M, Q8_0, FP16) ni el contexto de entrenamiento.
+Respecto al entrenamiento, no hay datos sobre el número de tokens utilizados, la composición del dataset, el corpus lingüístico ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. Tampoco se indica si el modelo fue entrenado desde cero o es un fine-tuning de un modelo base existente. La presencia de pesos en ONNX y GGUF sugiere un interés en la exportación y el despliegue, pero no aporta información sobre el proceso de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (atención lineal, decodificación especulativa, mezcla de expertos) sería especulativa y no se incluye.
 
 ## Capacidades
 
-No se han documentado capacidades específicas del modelo. Dado que no hay descripción ni ejemplos en la model card, no es posible confirmar si el modelo es capaz de:
-- Generación de texto
-- Razonamiento
-- Generación de código
-- Soporte de tool calling o function calling
-- Capacidades multilingües
-- Modo de pensamiento o razonamiento extendido
-
-Se recomienda asumir que el modelo podría tener capacidades genéricas de procesamiento de lenguaje natural, pero sin validación oficial. Cualquier afirmación al respecto sería especulativa y contraria a las reglas de esta ficha.
+- No se han documentado capacidades específicas en la información disponible.
+- No consta soporte de tool calling ni function calling.
+- No consta soporte de agentes ni de razonamiento multi-paso.
+- No se especifican capacidades multilingües ni idiomas concretos.
+- No se indica la existencia de modo de razonamiento (thinking mode), visión, audio ni otras modalidades.
+- La única capacidad implícita es la inferencia en formato ONNX y GGUF, derivada de los formatos de pesos publicados.
 
 ## Casos de uso
 
-No se dispone de información suficiente para proponer casos de uso concretos y realistas. La ausencia de documentación impide conocer el dominio de aplicación, el rendimiento en tareas específicas o los requisitos de integración. Por tanto, no se pueden enumerar aplicaciones prácticas fiables. Se sugiere contactar con el autor o esperar a que se publique una model card completa antes de considerar su uso en proyectos reales.
+- Despliegue en entornos con ONNX Runtime: el repositorio incluye pesos ONNX, por lo que el modelo puede integrarse en pipelines de inferencia que ya utilicen este runtime, por ejemplo en servicios de backend con requisitos de portabilidad entre CPU y GPU.
+- Inferencia en CPU mediante llama.cpp: la presencia de pesos GGUF permite ejecutar el modelo con llama.cpp u Ollama en máquinas sin GPU dedicada, algo adecuado para prototipos y entornos de desarrollo locales.
+- Pruebas de integración en CI/CD: al ser un modelo pequeño (318M parámetros) y con licencia Apache 2.0, puede usarse como modelo de prueba en pipelines que validen infraestructura de serving sin incurrir en costes elevados de GPU.
+- Experimentación académica con modelos pequeños: investigadores que necesiten un checkpoint de ~318M parámetros para estudiar comportamiento de modelos pequeños o técnicas de cuantización pueden utilizar este repositorio como punto de partida, siempre que verifiquen previamente la calidad del modelo.
+- Fine-tuning ligero: el tamaño reducido y la licencia permisiva permiten adaptar el modelo a tareas específicas con recursos limitados, aunque se desconoce su rendimiento base.
+- Evaluación comparativa de formatos: el repositorio permite comparar el rendimiento de los mismos pesos en ONNX frente a GGUF, útil para decidir el formato de despliegue en un proyecto concreto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni ninguna otra métrica estándar. Tampoco se ofrecen comparaciones con otros modelos. Por tanto, no es posible evaluar su rendimiento relativo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Dado el tamaño de 317,5 millones de parámetros, se puede estimar el consumo de memoria para inferencia, aunque hay que tener en cuenta que no se conocen las cuantizaciones exactas. En FP16, los pesos ocuparían aproximadamente 635 MB (317.542.020 × 2 bytes). En cuantizaciones de 8 bits (Q8) serían unos 317 MB, y en 4 bits (Q4) unos 159 MB. El tamaño del repositorio (2.8 GB) sugiere que se incluyen varias versiones cuantizadas y formatos.
-
-- VRAM estimada para inferencia: entre 1 GB y 2 GB dependiendo de la cuantización y el tamaño del lote. Para FP16, unos 1.5 GB incluyendo activaciones y overhead.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060, etc.) podría ejecutar el modelo en cuantización Q4 o Q8. También es viable en CPU con llama.cpp u Ollama.
-- Si cabe en consumer GPU: sí, en GPUs de gama media con 6-8 GB de VRAM se puede ejecutar cómodamente incluso en FP16.
-- Opciones de despliegue: llama.cpp, Ollama, ONNX Runtime, vLLM (si se convierte a formato adecuado), TGI (si se convierte a safetensors).
-- Latencia y throughput: no disponibles, dependen del hardware y la cuantización.
-
-Estas estimaciones son orientativas y no sustituyen a pruebas reales.
+- VRAM estimada para inferencia en FP16: aproximadamente 0,64 GB solo para pesos (318M × 2 bytes), más overhead de activaciones y KV cache.
+- VRAM estimada en cuantización de 8 bits: en torno a 0,32 GB para pesos.
+- VRAM estimada en cuantización de 4 bits: en torno a 0,16 GB para pesos.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para FP16, incluidas GTX 1650, RTX 3050 o superiores. Para cuantizaciones de 4 bits, cabe en GPUs integradas con asignación de memoria compartida.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs consumer actuales, e incluso en CPU.
+- Opciones de despliegue: ONNX Runtime (formato ONNX), llama.cpp u Ollama (formato GGUF). No se confirma compatibilidad con vLLM o TGI, que requieren formatos y arquitecturas específicas no documentadas aquí.
+- Latencia y throughput: no disponibles. Dependerán en gran medida de la arquitectura, que no se ha especificado.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría, ya que no se conoce la arquitectura ni el propósito del modelo. Sin datos de benchmarks ni descripción, no es posible establecer una comparación fiable con alternativas como modelos de 350M de parámetros (por ejemplo, algunos modelos GPT-2 o Phi-2) o modelos de 1B. Se indica "no disponible".
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
+|---|---|---|---|---|---|
+| CreativeHub008/model-app | 317,5M | no disponible | Apache 2.0 | safetensors, ONNX, GGUF | Sin benchmarks ni model card sustantiva |
+| GPT-2 (355M) | 355M | 1024 tokens | MIT | safetensors, GGUF (comunidad) | Modelo de referencia pequeño, ampliamente evaluado |
+| DistilBERT | 66M | 512 tokens | Apache 2.0 | safetensors, ONNX | Encoder para clasificación, no generativo |
+| Qwen2.5-0.5B | 494M | 32 768 tokens | Apache 2.0 | safetensors, GGUF, ONNX | Modelo generativo pequeño con benchmarks públicos |
+
+La comparación es limitada porque se desconoce la arquitectura y las capacidades reales de `model-app`. Los modelos alternativos citados cuentan con documentación y evaluaciones públicas que permiten valorarlos, mientras que este repositorio no ofrece esa información.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card no describe el modelo, su entrenamiento, sus capacidades ni sus limitaciones. Esto impide una evaluación técnica rigurosa.
-- Riesgo de alucinación y sesgos: al ser un modelo de lenguaje, es probable que presente alucinaciones y sesgos, pero no hay información para confirmarlo ni mitigarlo.
-- Incertidumbre sobre el propósito: no se sabe si el modelo está diseñado para generación de texto, clasificación, embeddings u otra tarea. Usarlo fuera de su dominio real podría dar resultados erróneos.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero al no haber atribución clara ni documentación, el usuario asume la responsabilidad de su uso.
-- Formato de pesos: aunque se ofrecen ONNX y GGUF, no se especifican las versiones exactas ni las cuantizaciones, lo que puede complicar la integración en algunos entornos.
-- Reputación del autor: el perfil CreativeHub008 no muestra actividad relevante ni otros modelos conocidos, lo que añade incertidumbre sobre la calidad del modelo.
+- Ausencia total de model card sustantiva: no se documentan arquitectura, datos de entrenamiento, idiomas ni limitaciones, lo que impide evaluar riesgos de sesgo o alucinación.
+- Riesgo de alucinación desconocido: al no conocerse el proceso de entrenamiento ni los datos utilizados, no puede estimarse la fiabilidad de las salidas.
+- Idiomas no especificados: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma.
+- Contexto desconocido: se desconoce la longitud máxima de secuencia, lo que impide planificar casos de uso con contexto largo.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero el usuario asume toda la responsabilidad sobre el comportamiento del modelo y sobre posibles reclamaciones derivadas de los datos de entrenamiento, que no se detallan.
+- Procedencia incierta: el autor (CreativeHub008) no tiene un historial verificable en la información proporcionada, y el modelo no cuenta con likes ni documentación de respaldo.
+- Recomendación: antes de usar el modelo en producción, inspeccionar los archivos del repositorio, ejecutar evaluaciones propias y verificar que la arquitectura es compatible con el runtime elegido.
 
 ## Enlaces
 
-- [Repositorio del modelo en Hugging Face](https://huggingface.co/CreativeHub008/model-app)
-- [Perfil del autor en Hugging Face](https://huggingface.co/CreativeHub008)
+- [Hugging Face: CreativeHub008/model-app](https://huggingface.co/CreativeHub008/model-app)
 
-No se han encontrado papers, blogs, demos u otros recursos adicionales relacionados con este modelo.
+No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

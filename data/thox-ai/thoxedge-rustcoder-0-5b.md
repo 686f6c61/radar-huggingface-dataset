@@ -2,102 +2,99 @@
 
 ## Resumen
 
-ThoxEdge-RustCoder-0.5B es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-0.5B-Instruct desarrollado por THOX.ai, orientado a la generación y compleción de código en Rust. Se trata de un modelo de 494 millones de parámetros (0,5B) entrenado mediante LoRA de rango 32 sobre un corpus público de código Rust bajo licencia Apache-2.0, con 74.606 ejemplos filtrados que producen código. Los pesos del adaptador LoRA se han fusionado en los pesos base, por lo que el repositorio distribuye únicamente safetensors completos.
+ThoxEdge-RustCoder-0.5B es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-0.5B-Instruct desarrollado por THOX.ai, orientado a la compleción de código en Rust. Se trata de un LoRA de rango 32 fusionado en los pesos base, entrenado sobre un corpus público de código Rust bajo licencia Apache-2.0 con 74.606 ejemplos filtrados de producción de código. El modelo forma parte de la línea ThoxEdge, pensada para inferencia local en dispositivos de borde dentro del ecosistema THOX (ThoxAir, ThoxMini) y para el nivel más económico de su enrutador ThoxRoute.
 
-El modelo está pensado para ocupar el nivel más económico de la pila de enrutamiento de THOX (ThoxRoute) y ofrecer compleción de Rust de bajo coste en entornos de escritorio o servidor. No obstante, el propio autor advierte de que, con 0,5B de parámetros, no es un buen programador de Rust: la mejora medida sobre el modelo base es modesta y el modelo falla aproximadamente siete de cada diez problemas del benchmark HumanEval-Rust.
+Con 494.032.768 parámetros reales (0,5B), el modelo hereda la arquitectura transformer decoder-only de la familia Qwen2 y su tokenizador. Su relevancia radica en ser un ejemplo de especialización vertical de un modelo pequeño para un lenguaje concreto (Rust), con una mejora medida y verificada mediante ejecución real de código en MultiPL-E HumanEval-Rust: 28,21% en modo chat frente al 25,64% del base, sobre 156 problemas compilados y ejecutados.
 
-Su relevancia actual es limitada y muy específica: sirve como ejemplo de ajuste fino pequeño, reproducible y con evaluación ejecutada (compilación y ejecución de aserciones) sobre un modelo base abierto, y como pieza de bajo coste dentro de un stack propietario. La licencia Apache-2.0 y el origen abierto del corpus facilitan su inspección y reutilización, pero su utilidad práctica fuera de ese nicho es reducida.
+Es importante subrayar que el propio autor lo describe explícitamente como un modelo de 0,5B que **no** es un buen programador de Rust, sino una medición de delta con el mismo arnés de evaluación. Su utilidad es la compleción barata y local de fragmentos de Rust, no la resolución autónoma de problemas complejos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
+| Arquitectura | Transformer decoder-only (Qwen2), fine-tune LoRA rango 32 fusionado |
 | Parametros totales | 494.032.768 (0,5B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible; el repositorio solo distribuye safetensors (la model card menciona una escala GGUF de unos 260 MB, pero no se incluye en este repo) |
-| Idiomas soportados | en (ingles) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF Q8_0 publicado en el repo; safetensors en precisión original |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (model.safetensors, 988.097.824 bytes) |
+| Formato de pesos | Safetensors (`model.safetensors`, 988.097.824 B) y GGUF (`ThoxEdge-RustCoder-0.5B-q8_0.gguf`, 531.675.904 B) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Qwen2, heredado directamente de Qwen2.5-Coder-0.5B-Instruct. Sobre esos pesos se aplicó un ajuste fino supervisado (SFT) con LoRA de rango 32, entrenado con 74.606 ejemplos filtrados de un corpus público de código Rust con licencia Apache-2.0. Posteriormente, el adaptador LoRA se fusionó en los pesos base, de modo que el checkpoint distribuido no requiere cargar adaptadores adicionales.
+El modelo es un transformer decoder-only de la familia Qwen2, tomado de Qwen2.5-Coder-0.5B-Instruct como base. Sobre él se aplicó un ajuste fino supervisado (SFT) mediante LoRA de rango 32, posteriormente fusionado en los pesos base, de modo que el checkpoint distribuido es un modelo denso estándar sin adaptadores separados. El corpus de entrenamiento es un conjunto público de código Rust bajo licencia Apache-2.0, filtrado hasta 74.606 ejemplos que producen código. No se documentan en la información disponible detalles sobre el número total de tokens, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO adicionales.
 
-No se documentan en la información disponible el número total de tokens de entrenamiento, la composición detallada del dataset, ni si hubo fases de RLHF o DPO. La model card menciona un defecto del renderizador de entrenamiento que colocó campos auxiliares de salida dentro del bloque de código en aproximadamente la mitad de las filas de tres categorías de entrenamiento; según el autor, no produjo regresión medida, pero el checkpoint conserva una sensibilidad al prompt que se describe en detalle en la sección de evaluación.
+Una particularidad técnica relevante es la distribución de parámetros: una parte importante de los 0,5B reside en la matriz de embeddings, que no se cuantiza de forma agresiva. Por ello, la escalera GGUF del modelo ocupa solo unos 260 MB útiles en la práctica y el autor advierte que no cabe en los dispositivos más pequeños de su familia. El modelo incluye plantilla de chat (`chat_template.jinja`), lo que permite invocarlo en modo conversacional, y su rendimiento depende críticamente del formato del prompt: el autor documenta que la formulación "Complete the Rust code. Output only the missing code." produce fragmentos y baja al 2,56%, mientras que pedir explícitamente el cuerpo completo de la función alcanza el 28,21%.
 
 ## Capacidades
 
-- Generación y compleción de código en Rust, con especial énfasis en cuerpos de funciones completos.
-- Generación de texto conversacional en inglés, heredada del modelo base Instruct.
-- Razonamiento y código general (no específicamente Rust) procedente del modelo base Qwen2.5-Coder, aunque el ajuste fino puede haber estrechado ese comportamiento hacia Rust.
-- Plantilla de chat incluida (chat_template.jinja), lo que permite uso en modo conversacional además de modo compleción.
-- Compatibilidad con text-generation-inference y endpoints compatibles, según los tags del repositorio.
+- Generación de texto y compleción de código, con especialización en Rust.
+- Compleción de cuerpos de funciones Rust cuando se solicita de forma explícita y en lenguaje natural.
+- Modo conversacional mediante plantilla de chat Jinja incluida en el repo.
+- Generación de código en otros lenguajes heredada del base Qwen2.5-Coder, aunque sin especialización medida.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada; el modelo está declarado para compleción de código, no para uso agéntico.
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Soporte de agentes y razonamiento multi-paso: no disponible; el modelo está orientado a compleción puntual.
+- Capacidades multilingües: limitadas al inglés como idioma declarado.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- **Autocompletado de Rust en editores y IDE**: el modelo puede sugerir cuerpos de funciones a partir de una firma y un enunciado en lenguaje natural. Es adecuado porque fue entrenado específicamente sobre ejemplos de Rust y funciona con prompts del tipo "Write the complete body of the Rust function below".
-- **Generación de fragmentos de código en pipelines de CI/CD**: dado su tamaño reducido (0,5B), puede desplegarse en CPU o GPU modesta para generar borradores de tests o funciones auxiliares que luego pasan por compilación y revisión humana.
-- **Prototipado rápido de utilidades Rust**: para snippets de baja criticidad (parseo, manipulación de cadenas, estructuras de datos sencillas) donde el coste de inferencia importa más que la tasa de acierto.
-- **Enrutamiento de bajo coste en un stack multi-modelo**: el modelo está diseñado para ocupar el nivel más barato de ThoxRoute; puede usarse como primera pasada y escalar a un modelo mayor cuando la compilación falla.
-- **Generación de documentación y comentarios de código Rust**: peticiones en lenguaje natural sobre funciones existentes para producir descripciones o ejemplos de uso.
-- **Evaluación y experimentación académica**: como caso de estudio de ajuste fino LoRA reproducible sobre un modelo base abierto, con evaluación ejecutada y delta medido frente al base.
-- **Asistencia offline en escritorio**: al ser un modelo de 0,5B, puede ejecutarse localmente en un portátil para tareas de compleción sin conexión, siempre que se acepte su baja tasa de acierto.
+- **Autocompletado de Rust en el editor**: integrado como servidor de compleción local (por ejemplo, vía llama.cpp u Ollama) para sugerir cuerpos de funciones mientras se escribe. Su tamaño de 0,5B permite latencias bajas en CPU y GPU de consumo, y su especialización en Rust mejora la tasa de acierto frente al base en este lenguaje concreto.
+- **Generación de esqueletos y funciones auxiliares en proyectos Rust**: útil para producir implementaciones de funciones pequeñas y bien delimitadas (parseo, transformaciones, wrappers) donde el contexto necesario es corto y la tarea está claramente especificada en el prompt.
+- **Asistente de código en dispositivos de borde y entornos sin conectividad**: al publicarse en Ollama (`ollama run thox-ai/thoxedge-rustcoder-0.5b`) y en GGUF Q8_0, puede desplegarse en portátiles y estaciones de trabajo sin GPU dedicada, manteniendo el código fuente en local.
+- **Generación masiva de borradores de tests unitarios en Rust**: el modelo puede producir plantillas de tests y aserciones simples a partir de la firma de una función, que luego se revisan y ejecutan en CI.
+- **Prototipado rápido de utilidades Rust en scripts internos**: para tareas de herramienta interna donde el coste de un modelo mayor no se justifica, el modelo ofrece una alternativa gratuita y local con licencia Apache-2.0.
+- **Cascada de enrutamiento en producción**: como primer nivel de un sistema de enrutamiento de modelos (ThoxRoute), resolviendo peticiones triviales de Rust y derivando las complejas a modelos mayores, reduciendo coste por token.
+- **Educación y ejemplos de Rust**: generación de fragmentos ilustrativos y ejercicios de práctica en entornos docentes, con revisión humana obligatoria.
 
 ## Benchmarks y rendimiento
 
-Evaluación publicada por el autor: MultiPL-E HumanEval-Rust, 156 problemas, ejecutados (compilación y ejecución de aserciones), decodificación greedy, ambos modelos evaluados en el mismo trabajo.
-
-| Modelo | Modo compleción | Modo chat |
+| Benchmark | ThoxEdge-RustCoder-0.5B | Qwen2.5-Coder-0.5B-Instruct (base) |
 |---|---|---|
-| Modelo base (Qwen2.5-Coder-0.5B-Instruct) | 21,15% (33/156) | 25,64% (40/156) |
-| ThoxEdge-RustCoder-0.5B | 25,64% (40/156) | 28,21% (44/156) |
-| Delta | +4,49 pp | +2,57 pp |
+| MultiPL-E HumanEval-Rust (156 problemas, ejecutados, modo chat) | 28,21% | 25,64% |
+| MultiPL-E HumanEval-Rust con prompt "Output only the missing code" | 2,56% | No disponible |
 
-El autor indica que el suelo de ruido del harness es de aproximadamente ±1 problema (±0,64 pp), que ambos deltas lo superan y que diferencias inferiores a 1,5 pp deben tratarse como empate. La evaluación es deliberadamente generosa (una respuesta de solo cuerpo o de función completa se acepta si cualquiera de las dos compila), por lo que estos números no son comparables con las tablas públicas de MultiPL-E; la medición válida es el delta entre filas. No se publica resultado GATE49 de THOX para este modelo.
+El resto de benchmarks (MMLU, GSM8K, HumanEval en Python, etc.) no se han publicado en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 1 GB para los pesos (988 MB de safetensors), más overhead de activaciones y caché KV; en la práctica, alrededor de 1,5-2 GB.
-- En cuantización de 8 bits: en torno a 0,5-0,6 GB de pesos; en 4 bits, unos 0,3 GB, aunque el autor advierte que una gran parte de los parámetros reside en el embedding, que no se cuantiza bien, por lo que la escala GGUF del modelo ocupa unos 260 MB y no cabe en los dispositivos más pequeños de THOX.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) es suficiente; también A100 y H100, aunque están sobredimensionadas para este modelo.
-- Cabe en GPU consumer y en CPU: sí, en la práctica totalidad de GPU consumer modernas e incluso en inferencia por CPU.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; vLLM, llama.cpp y Ollama no están confirmados en la información disponible, y el repositorio no incluye GGUF.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- **VRAM estimada en safetensors (fp16/bf16)**: aproximadamente 1 GB para los pesos, más overhead de activaciones y caché KV; viable en GPUs con 2-4 GB.
+- **VRAM estimada en GGUF Q8_0**: aproximadamente 0,5-0,6 GB de pesos; ejecutable en CPU sin GPU dedicada.
+- **GPU recomendadas**: cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) es sobredimensionada para este modelo; también funciona en iGPU y CPU.
+- **Cabe en GPU de consumo**: sí, en todas las GPU de consumo actuales con 4 GB o más; en CPU es plenamente funcional.
+- **Opciones de despliegue**: transformers (safetensors), llama.cpp (GGUF Q8_0), Ollama (`thox-ai/thoxedge-rustcoder-0.5b`), text-generation-inference (tag `text-generation-inference` en el repo) y endpoints compatibles.
+- **Latencia y throughput**: no disponibles de forma numérica en la información proporcionada; por el tamaño, se espera latencia de decodificación en el orden de decenas de tokens por segundo en CPU y cientos en GPU de consumo, aunque no se confirma con datos publicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | HumanEval-Rust (mejor modo) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxEdge-RustCoder-0.5B | 0,5B | no disponible | 28,21% (chat, harness propio) | Apache-2.0 | Hugging Face, safetensors |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | no disponible | 25,64% (chat, harness propio) | Apache-2.0 | Hugging Face, safetensors y GGUF |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible | no disponible | Apache-2.0 | Hugging Face |
-| Modelos Rust-specific de mayor tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
+| ThoxEdge-RustCoder-0.5B | 0,5B | No disponible | Rust (fine-tune) | Apache-2.0 | HF, Ollama, GGUF |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5B | No disponible en la información | Código general | Apache-2.0 | HF, Ollama |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | No disponible en la información | Código general | Apache-2.0 | HF, Ollama |
+| Modelos Rust específicos de 0,5B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparación directa más relevante es con el modelo base, del que este checkpoint es un ajuste fino: la mejora medida es de +2,57 pp en modo chat y +4,49 pp en modo compleción, dentro de un harness no comparable con leaderboards públicos. Frente a Qwen2.5-Coder-1.5B-Instruct, el modelo de THOX tiene menos parámetros y, presumiblemente, menor capacidad general, aunque no se dispone de datos de benchmark comparables en la información proporcionada.
+La comparación directa más relevante es con su modelo base, ya que el fine-tune solo aporta una mejora medida de 2,57 puntos porcentuales en MultiPL-E HumanEval-Rust. Para tareas de Rust más exigentes, un modelo de 1,5B o superior del mismo linaje probablemente supere a este checkpoint, aunque no se dispone de datos ejecutados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Tasa de acierto baja**: falla aproximadamente siete de cada diez problemas de HumanEval-Rust (28,21% pass@1 en su mejor modo); no es un buen programador de Rust y no debe usarse sin revisión humana.
-- **Sensibilidad al prompt**: la frase "Complete the Rust code. Output only the missing code." produce fragmentos y baja el resultado al 2,56%, frente al 28,21% con la formulación recomendada ("Write the complete body of the Rust function below."). Es un comportamiento frágil en producción.
-- **Defecto del renderizador de entrenamiento**: en aproximadamente la mitad de las filas de tres categorías, campos auxiliares de salida quedaron dentro del bloque de código; el autor afirma que no causó regresión medida, pero el checkpoint conserva la sensibilidad descrita.
-- **Idioma**: solo inglés; no hay soporte declarado de castellano ni de otros idiomas.
-- **Contexto**: no se documenta la longitud de contexto en la información disponible; no debe asumirse la del modelo base sin verificación.
-- **Cuantización**: no se distribuye GGUF en el repositorio y el embedding limita la reducción de tamaño, por lo que no cabe en los dispositivos más pequeños de THOX.
-- **Ámbito excluido**: usos médicos, legales, financieros, de seguridad crítica o cualquier decisión de alto riesgo sin revisión humana; control no supervisado de dispositivos físicos sin paso de confirmación.
-- **Licencia**: Apache-2.0 permite uso comercial, pero el modelo se distribuye "tal cual", sin garantías; el autor no ofrece soporte ni compromiso de mantenimiento.
-- **Sesgos**: no se documentan sesgos específicos en la información proporcionada; al derivar de Qwen2.5-Coder, hereda los sesgos del corpus del modelo base, no evaluados aquí.
-- **Riesgo de alucinación**: alto en código, dado el tamaño reducido y la baja tasa de acierto; las APIs o crates inventados son un riesgo plausible en producción.
+- **Capacidad limitada por tamaño**: el propio autor advierte que es un modelo de 0,5B y que **no** es un buen programador de Rust; los resultados son una medición de delta, no una garantía de calidad.
+- **Sensibilidad extrema al prompt**: la formulación "Output only the missing code" degrada el rendimiento al 2,56% frente al 28,21% con la formulación recomendada; en producción hay que controlar el formato del prompt.
+- **Solo inglés**: el idioma declarado es únicamente inglés, lo que limita su uso en entornos hispanohablantes sin traducción previa.
+- **Riesgo de alucinación**: como todo modelo generativo de código, puede producir APIs inexistentes, firmas incorrectas o código que compila pero no hace lo esperado; requiere compilación y tests en CI.
+- **Idioma de especialización único**: la mejora medida se limita a Rust; en otros lenguajes se comporta esencialmente como el base.
+- **Restricciones de licencia**: Apache-2.0 permite uso comercial, pero el modelo se distribuye junto a material promocional de una campaña de Kickstarter; conviene revisar el texto completo de la licencia y el corpus de entrenamiento antes de un despliegue comercial.
+- **Contexto no documentado**: no se especifica la longitud de contexto soportada, lo que impide planificar tareas de contexto largo.
+- **No apto para decisiones de alto riesgo**: el autor excluye explícitamente usos médicos, legales, financieros y de seguridad crítica sin revisión humana, así como el control no supervisado de dispositivos físicos.
+- **No cabe en los dispositivos más pequeños de THOX**: por la proporción de parámetros en embeddings, la escalera GGUF ocupa solo unos 260 MB útiles y el autor indica que no encaja en los dispositivos más pequeños de su familia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxEdge-RustCoder-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
-- Benchmark MultiPL-E (referencia del harness): no disponible en la información proporcionada
-- Blog o paper de THOX.ai: no disponible en la información proporcionada
-- Repositorio de código o demo: no disponible en la información proporcionada
+- Página de THOX.ai: https://thox.ai/
+- Demo de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
+- Campaña de Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
+- Ollama: `ollama run thox-ai/thoxedge-rustcoder-0.5b`
+- Paper o blog técnico del fine-tune: no disponible en la información proporcionada.

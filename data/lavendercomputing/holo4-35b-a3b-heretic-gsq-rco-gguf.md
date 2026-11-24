@@ -2,88 +2,99 @@
 
 ## Resumen
 
-Holo4-35B-A3B-Heretic-GSQ-RCO-GGUF es una compilación de cuantizaciones GGUF en precisión mixta por tensor del modelo Hcompany/Holo4-35B-A3B, un modelo de lenguaje y visión de tipo mezcla de expertos (MoE) orientado a Computer Use. Lo publica el usuario lavendercomputing y deriva de una versión "abliterated" (sin censura) generada con la herramienta Heretic sobre el checkpoint original de Hcompany, que a su vez se apoya en la arquitectura Qwen3.6 MoE. El modelo está pensado para ejecutarse en llama.cpp y consumir capturas de pantalla como entrada para producir clics, texto y llamadas a herramientas como salida.
+Holo4-35B-A3B es un modelo de lenguaje y visión de tipo mezcla de expertos (MoE) desarrollado por Hcompany, orientado específicamente a tareas de *computer use*: recibe capturas de pantalla y devuelve clics, texto y llamadas a herramientas. Esta ficha describe la variante publicada por lavendercomputing, que aplica una cuantización GGUF de precisión mixta por tensor (GSQ-RCO) sobre una versión del modelo sometida a *abliteration* con Heretic, una técnica sin entrenamiento que elimina la dirección de rechazo de determinadas matrices de pesos.
 
-El modelo base cuenta con aproximadamente 34.660 millones de parámetros totales, 40 bloques con 256 expertos enrutados por bloque y 8 activos por token, una ventana de contexto de 262.144 tokens y un vocabulario de 248.320 tokens. La familia Holo4 lo posiciona como el miembro de tamaño medio, más barato y rápido, destinado a funcionar detrás de un arnés de agente. El autor reporta un resultado de proveedor de 30,9% en OSWorld 2.0 con un coste de 0,61 dólares por tarea.
+El modelo base emplea la arquitectura Qwen3.6 MoE: 40 bloques (30 de atención lineal y 10 de atención completa), 256 expertos enrutados por bloque con 8 activos por token, una ventana de contexto de 262.144 tokens y un vocabulario de 248.320 entradas. El resultado de la cuantización es un archivo Q4_K_M de 19,32 GiB con 4,78 bits por peso, generado mediante una búsqueda de asignación de tipos por tensor optimizada contra la entropía cruzada del siguiente token.
 
-La relevancia de esta ficha radica en que ofrece variantes cuantizadas de 2,3 a 4,0 bits por peso (bpw) con una escalera de precisión ponderada por bloques de expertos, además de una cabeza MTP para decodificación especulativa. La licencia es Apache-2.0 tanto para esta compilación como para el modelo base Qwen, lo que facilita su uso comercial. No obstante, la procedencia pasa por una única generación intermedia de cuantización (Q6_K) y no existe un maestro BF16 público de la versión abliterated, lo que conviene tener en cuenta al evaluar la fidelidad de los pesos.
+La relevancia de esta publicación es doble: por un lado, ofrece una build GGUF ejecutable en llama.cpp de un modelo de *computer use* de tamaño medio; por otro, documenta con detalle inusual el proceso de cuantización (asignación por tensor, presupuesto de bytes exacto, calibración y resultados por grupo de pesos), lo que la convierte en una referencia útil para quien necesite evaluar el impacto de la cuantización mixta en modelos MoE multimodales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (Qwen3.6 MoE): 40 bloques, 256 expertos enrutados por bloque, 8 activos por token |
-| Parametros totales | 34.660.610.688 |
-| Parametros activos | 8 expertos de 256 por token (no se especifica el recuento exacto de parámetros activos) |
+| Arquitectura | Transformer MoE híbrido (Qwen3.6 MoE): 40 bloques, 30 de atención lineal + 10 de atención completa, 256 expertos enrutados por bloque, 8 activos por token |
+| Parametros totales | 34.660.610.688 (34,66 B) |
+| Parametros activos | 8 de 256 expertos enrutados por token (número exacto de parámetros activos no disponible) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | IQ2_XXS (2,34 bpw), IQ2_S (2,50 bpw), IQ3_XXS (3,01 bpw), IQ3_S (3,51 bpw), IQ4_XS (4,00 bpw); MTP draft head en Q8_0 |
+| Tipos de cuantizacion | Q4_K_M (GSQ-RCO), IQ4_XS, IQ3_S, IQ3_XXS, IQ2_S, IQ2_XXS (GGUF); tipos por tensor entre IQ1_S y Q6_K en la build Q4_K_M |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); proyector de visión mmproj en BF16 |
+| Formato de pesos | GGUF (llama.cpp); proyector de visión en `mmproj.f16.gguf` |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3.6 MoE: 40 bloques transformer con 256 expertos enrutados por bloque y 8 activos por token, un vocabulario de 248.320 tokens y una ventana de contexto de 262.144 tokens. Aproximadamente el 92% de los parámetros se concentra en las matrices `ffn_(gate|up|down)_exps`, lo que explica que la estrategia de cuantización se centre en los bloques de expertos. El enrutador (`ffn_gate_inp`) se mantiene en f32 porque llama.cpp no lo cuantiza, y las normas y sesgos unidimensionales quedan en fp32.
+El modelo base es un transformer MoE con atención híbrida: 30 de los 40 bloques usan atención lineal y los 10 restantes atención completa, lo que reduce el coste computacional en contextos largos manteniendo capacidad de atención global. Cada bloque contiene 256 expertos enrutados de los que se activan 8 por token, además de expertos compartidos. El vocabulario es de 248.320 tokens y el contexto alcanza los 262.144 tokens. La arquitectura corresponde a la familia Qwen3.6 MoE, según indica la model card.
 
-Sobre el entrenamiento original no se aportan datos en la información disponible (número de tokens, composición del dataset, uso de RLHF o DPO). La modificación "Heretic" es un pase de abliteración sin entrenamiento: estima la dirección de rechazo del modelo y la proyecta fuera de determinadas matrices de pesos, buscando bajo una cota de divergencia KL y conservando la prueba que supera la batería de tests de comportamiento. Al no implicar ajuste fino, el autor afirma que se preservan las capacidades generales, los trazos de razonamiento (`[Start thinking]`) y el tool calling. La procedencia de las cuantizaciones es: BF16 de Hcompany (70 GB) → abliteración Heretic + cuantización inmediata a Q6_K (6,58 bpw, por jduraes) → estas compilaciones de 2,3 a 4,0 bpw con la imatrix de mradermacher. Las variantes de 2 bits y la de 4,0 se recuantizaron desde el mismo Q6_K con `--allow-requantize`, sin rehacer la abliteración.
+Sobre el entrenamiento original de Hcompany/Holo4-35B-A3B no se proporciona información en los datos disponibles (número de tokens, composición del dataset, uso de RLHF o DPO: no disponible). La variante aquí descrita incorpora dos transformaciones: primero, una *abliteration* con Heretic (proyecta fuera de ciertas matrices la dirección de rechazo estimada, bajo una cota KL, sin fine-tuning); después, una cuantización GSQ-RCO que, para cada uno de los 432 tensores de texto cuantizables, selecciona el tipo GGML óptimo mediante una búsqueda categórica optimizada contra la entropía cruzada del siguiente token a través del forward real del modelo, con estimador straight-through de Gumbel, presupuesto exacto de 4,8 bpw y calibración con 128 secuencias de 2048 tokens de un corpus mixto de agente, chat y código. La build Q4_K_M se generó a partir del GGUF Q6_K de jduraes (dequantizado exacto), por lo que está a una generación de cuantización del BF16 original.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de pensamiento explícito (`[Start thinking]`).
-- Comprensión de imágenes: entrada de capturas de pantalla mediante el proyector de visión BF16 (`mmproj.f16.gguf`).
-- Computer Use: producción de clics, escritura de texto y llamadas a herramientas a partir de la pantalla.
-- Tool calling / function calling, integrable en arneses de agente.
-- Razonamiento multi-paso orientado a tareas de agente.
-- Decodificación especulativa mediante cabeza MTP en Q8_0 (sujeta a la limitación descrita más abajo).
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto y razonamiento conversacional multi-turno.
+- Comprensión de imágenes: pipeline `image-text-to-text`, con entrada de capturas de pantalla.
+- *Computer use*: salida de clics, escritura y acciones sobre interfaces gráficas, pensado para ejecutarse dentro de un arnés de agente.
+- Llamadas a herramientas (*tool calling* / *function calling*) según el diseño del modelo base orientado a agentes.
+- Razonamiento multi-paso y flujos de agente.
+- Capacidades multilingües: no disponible (no se especifican idiomas).
+- La variante Heretic elimina la dirección de rechazo, lo que reduce las negativas del modelo a ciertas peticiones (ver limitaciones).
+- Cabeza MTP (*multi-token prediction*) incluida como archivo separado (`mtp-...-Q8_0.gguf`, 868 MiB) para decodificación especulativa.
 
 ## Casos de uso
 
-- Automatización de escritorio y navegador: el modelo recibe capturas de pantalla y emite clics, texto y llamadas a herramientas, adecuado para arneses de agente que operan interfaces gráficas con contexto de 262.144 tokens.
-- Agentes de Computer Use en producción: su posicionamiento como miembro "barato y rápido" de la familia Holo4 lo hace apto para tareas repetitivas donde el coste por tarea importa, con la referencia de 0,61 dólares por tarea reportada por el proveedor.
-- Despliegue en hardware limitado: las variantes IQ2 e IQ3 permiten ejecutar un MoE de ~35B en equipos con VRAM moderada usando llama.cpp, algo inviable con el BF16 de 70 GB.
-- Evaluación de modelos sin censura: útil para investigadores que estudian el efecto de la abliteración sobre el comportamiento de rechazo manteniendo razonamiento y tool calling.
-- Pruebas de pipelines de agente con decodificación especulativa: la cabeza MTP Q8_0 permite experimentar con aceleración de generación en llama.cpp.
-- Prototipado de asistentes visuales: combinación de entrada de imagen y salida estructurada para tareas de extracción o interacción sobre capturas.
-- Investigación sobre cuantización extrema: la escalera de precisión por bloques de expertos sirve para medir el impacto de 2,3 frente a 4,0 bpw en un MoE grande.
+- Automatización de tareas de escritorio: el modelo recibe capturas de pantalla y emite acciones (clic, tecleo) dentro de un arnés de agente; su contexto de 262.144 tokens permite mantener el historial completo de una sesión larga sin truncar.
+- Agentes de navegación web: interpretación de páginas renderizadas y generación de secuencias de interacción; la atención lineal en 30 de 40 bloques reduce el coste por token en sesiones con muchas capturas acumuladas.
+- Pruebas de regresión de interfaces (QA automatizado): un agente basado en el modelo puede recorrer flujos de la aplicación, detectar estados inesperados y registrar los pasos, ejecutándose en local con llama.cpp sobre el GGUF Q4_K_M.
+- Asistencia en pipelines de CI/CD para validación de UI: integrado como paso que verifica visualmente el resultado de un despliegue y reporta discrepancias mediante tool calling.
+- Extracción de datos de documentos e imágenes: al ser image-text-to-text, puede transcribir y estructurar información de capturas o formularios dentro de un flujo con herramientas.
+- Despliegue en hardware de gama alta para consumo: la build IQ2_XXS (9,43 GiB) permite ejecutar el modelo en una sola GPU de consumo con 12-16 GB de VRAM, útil para prototipos de agentes de computer use en estación de trabajo.
+- Investigación sobre abliteration y cuantización: la documentación por tensor y el archivo de asignación permiten estudiar el efecto de la precisión mixta en modelos MoE multimodales.
 
 ## Benchmarks y rendimiento
 
-El único dato de rendimiento reportado en la información disponible es el resultado de proveedor del modelo base: OSWorld 2.0 al 30,9% con un coste de 0,61 dólares por tarea. No se han publicado resultados de benchmarks propios de esta compilación cuantizada (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor menciona pruebas de humo de carga y salida de razonamiento coherente con llama.cpp en CPU a ~5–7 t/s, valor que él mismo califica de señal de humo y no de cifra de servicio.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente indica que la build Q4_K_M carga y responde en llama.cpp upstream (`2277e75`) en CPU; no se aportan métricas de MMLU, HumanEval, GSM8K ni de tareas de computer use.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según el archivo: IQ2_XXS 9,43 GiB, IQ2_S 10,09 GiB, IQ3_XXS 12,16 GiB, IQ3_S 14,18 GiB, IQ4_XS 16,14 GiB; añadir el proyector de visión BF16 para entrada de imagen.
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, las variantes IQ3 e IQ4 caben en GPUs de consumo de 16–24 GB de VRAM.
-- Cabe en GPU de consumo: sí, las variantes de 2 a 4 bpw son compatibles con tarjetas de 12–24 GB, aunque el dato no lo confirma el autor explícitamente.
-- Opciones de despliegue: llama.cpp (llama-cli y tooling asociado); el repositorio está marcado como compatible con endpoints.
-- Latencia y throughput: solo se reporta ~5–7 t/s en CPU como prueba de humo; no hay cifras de servicio en GPU.
+- VRAM estimada para inferencia (pesos + overhead de contexto y proyector de visión):
+  - IQ2_XXS (9,43 GiB): ~11-13 GB con contexto moderado.
+  - IQ2_S (10,09 GiB): ~12-14 GB.
+  - IQ3_XXS (12,16 GiB): ~14-16 GB.
+  - IQ3_S (14,18 GiB): ~16-18 GB.
+  - IQ4_XS (16,14 GiB): ~18-20 GB.
+  - Q4_K_M (19,32 GiB): ~21-24 GB; requiere contexto KV adicional para ventanas largas.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M con contexto contenido; A100 40/80 GB o H100 para contexto largo (262.144 tokens) y mayor throughput; RTX 3090/4080 (24/16 GB) para IQ3/IQ4.
+- Cabe en GPU de consumo: sí, en RTX 4090 para Q4_K_M; en GPUs de 12-16 GB con las variantes IQ2/IQ3.
+- Opciones de despliegue: llama.cpp (probado en CPU con la build upstream `2277e75`); el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI. No se confirma soporte específico de vLLM u Ollama en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Holo4-35B-A3B-Heretic-GSQ-RCO-GGUF (esta ficha) | 34,66B totales, MoE 8/256 activos | 262.144 | Apache-2.0 | GGUF en HF |
-| Hcompany/Holo4-35B-A3B (base) | 34,66B totales, MoE 8/256 activos | 262.144 | Apache-2.0 | BF16, FP8, NVFP4 y q4_k_m GGUF |
-| jduraes/Holo4-35B-A3B-heretic-Q6_K | 34,66B totales, MoE 8/256 activos | 262.144 | Apache-2.0 (según base) | GGUF Q6_K |
-| Qwen/Qwen3.6-35B-A3B | no disponible en detalle | no disponible | Apache-2.0 | no disponible |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Formato |
+|---|---|---|---|---|---|
+| Holo4-35B-A3B Heretic GSQ-RCO (esta ficha) | 34,66 B totales, 8 expertos activos | 262.144 | Imagen-texto (computer use) | Apache-2.0 | GGUF |
+| Hcompany/Holo4-35B-A3B (base) | 34,66 B totales | 262.144 | Imagen-texto | Apache-2.0 | safetensors/GGUF |
+| jduraes/Holo4-35B-A3B-heretic-Q6_K | 34,66 B totales | 262.144 | Imagen-texto | Apache-2.0 | GGUF Q6_K |
+| Qwen/Qwen3.6-35B-A3B (base arquitectónico) | ~35 B totales | no disponible | Texto | Apache-2.0 | safetensors |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteración elimina la dirección de rechazo sin entrenamiento; puede aumentar la probabilidad de contenido no deseado y reducir salvaguardas, algo crítico en producción.
-- Riesgo de alucinación inherente al modelo base; no se aportan evaluaciones específicas de fidelidad tras la cuantización.
-- Las variantes de 2 bits son "agresivas por diseño"; el propio autor recomienda IQ3 o IQ4 para trabajos sensibles a la calidad.
-- La procedencia pasa por una única generación intermedia (Q6_K) y no existe maestro BF16 público de la versión abliterated; la fidelidad respecto al BF16 original no está garantizada.
-- La cabeza MTP incluida no proporciona una capa MTP integrada utilizable: el checkpoint del proveedor declara la cabeza pero no incluye pesos `mtp.*`, por lo que la decodificación especulativa queda limitada.
-- La imatrix se construyó contra el modelo base no abliterated; los nombres y dimensiones de tensor coinciden, pero no se validó específicamente sobre la versión modificada.
-- Idiomas soportados no disponibles; no se puede confirmar cobertura multilingüe.
-- Licencia Apache-2.0 permite uso comercial, pero conviene verificar las obligaciones de atribución y las implicaciones del contenido generado sin censura.
+- La *abliteration* con Heretic elimina la dirección de rechazo sin fine-tuning; esto puede aumentar la probabilidad de respuestas a peticiones que el modelo original rechazaría y trasladar ese efecto a dominios no previstos. No hay evaluación de seguridad publicada para esta variante.
+- La build Q4_K_M está a una generación de cuantización del BF16 (BF16 → Q6_K → Q4_K_M); la calidad está acotada por el Q6_K de origen y no se compara contra BF16 en la model card.
+- La búsqueda GSQ-RCO se detuvo manualmente a los 119 pasos, antes de cumplir su criterio de convergencia; cuatro tensores quedaron con asignación por debajo de p=0,9 (`blk.38.ffn_gate_exps`, `blk.7.attn_q`, `blk.9.attn_gate`, `blk.2.attn_gate`), lo que introduce incertidumbre sobre su óptimo.
+- Las builds IQ4_XS, IQ3_S, IQ3_XXS, IQ2_S e IQ2_XXS son escaleras heurísticas heredadas con imatrix, no búsquedas GSQ-RCO; su calidad relativa no está documentada.
+- El proyector de visión no está incluido en el repositorio; hay que descargarlo de `jduraes/Holo4-35B-A3B-heretic-Q6_K` (`mmproj.f16.gguf`) para usar entrada de imagen.
+- Solo se ha verificado la carga en llama.cpp upstream en CPU; el comportamiento en GPU, vLLM u otros runtimes no está confirmado.
+- Idiomas soportados no especificados; no hay evaluación multilingüe.
+- Riesgo de alucinación y sesgos: no disponible (no se publican evaluaciones).
+- Licencia Apache-2.0 permite uso comercial, pero la ausencia de evaluaciones de seguridad de la variante abliterada traslada al desplegador la responsabilidad de filtrado y moderación.
 
 ## Enlaces
 
-- Hugging Face (esta compilación): https://huggingface.co/lavendercomputing/Holo4-35B-A3B-Heretic-GSQ-RCO-GGUF
-- Modelo base Hcompany: https://huggingface.co/Hcompany/Holo4-35B-A3B
-- Tarjeta de referencia del proveedor (GGUF): https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF
-- Fuente Heretic Q6_K: https://huggingface.co/jduraes/Holo4-35B-A3B-heretic-Q6_K
-- Matriz de importancia: https://huggingface.co/mradermacher/Holo4-35B-A3B-i1-GGUF
-- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
+- Repositorio Hugging Face: https://huggingface.co/lavendercomputing/Holo4-35B-A3B-Heretic-GSQ-RCO-GGUF
+- Modelo base: https://huggingface.co/Hcompany/Holo4-35B-A3B
+- GGUF de referencia del proveedor: https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF
+- Fuente Q6_K con abliteration y proyector de visión: https://huggingface.co/jduraes/Holo4-35B-A3B-heretic-Q6_K
+- Base arquitectónica: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Heretic (abliteration): https://github.com/p-e-w/heretic
+- llama.cpp: https://github.com/ggml-org/llama.cpp

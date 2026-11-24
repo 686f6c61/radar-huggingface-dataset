@@ -5,7 +5,7 @@
   "author": "OVHaiLLM",
   "url": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-MLX",
   "created_at": "2026-11-16T19:59:27.000Z",
-  "updated_at": "2026-11-22T09:17:24.000Z",
+  "updated_at": "2026-11-23T08:55:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -104,7 +104,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 10,
+  "likes": 11,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

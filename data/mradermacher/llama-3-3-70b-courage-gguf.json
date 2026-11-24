@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama-3.3-70b-courage-GGUF",
+  "slug": "mradermacher-llama-3-3-70b-courage-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.3-70b-courage-GGUF",
+  "created_at": "2025-09-06T07:02:32.000Z",
+  "updated_at": "2026-11-24T00:28:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:KaraKaraModel/Llama-3.3-70b-courage",
+    "base_model:quantized:KaraKaraModel/Llama-3.3-70b-courage",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303046432,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "KaraKaraModel/Llama-3.3-70b-courage",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,94 +2,106 @@
 
 ## Resumen
 
-kaggle-llm-124m-base es un modelo de lenguaje de 123,6 millones de parámetros entrenado desde cero por el desarrollador independiente somdevsheel. Se trata de un transformer decoder-only de estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin sesgos y embeddings atados) con 12 capas, dimensión oculta 768 y una ventana de contexto de 1024 tokens. Su relevancia no reside en el rendimiento absoluto, sino en su carácter demostrativo: el autor documenta el entrenamiento completo de un modelo base en GPUs gratuitas de Kaggle (2x NVIDIA T4) durante 10,9 horas, con un presupuesto de 0,98 miles de millones de tokens de FineWeb-Edu.
+prajna-ai-124m-base (publicado originalmente como `kaggle-llm-124m-base`) es un modelo de lenguaje de 123,6 millones de parametros entrenado desde cero por el desarrollador independiente somdevsheel. Es un transformer decoder-only de estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin biases y embeddings atados) con 12 capas, dimension oculta 768, 12 cabezas de atencion y FFN de 2048. El modelo se entreno integramente en GPUs gratuitas de Kaggle (2x NVIDIA T4) en fp16 con DDP, lo que lo convierte en un ejemplo de referencia de preentrenamiento de bajo presupuesto.
 
-Es un modelo de completado de texto, no un modelo de chat ni de instrucciones; el autor publica una variante conversacional separada (kaggle-llm-124m-chat). Está pensado como referencia reproducible para quienes quieren entender el pipeline de preentrenamiento a pequeña escala, no como una alternativa a modelos de producción.
+El modelo se entreno en tres etapas: 1,92B tokens de FineWeb-Edu (muestra sample-10BT, sin repeticion de tokens), un segundo tramo de preentrenamiento continuado sobre datos no vistos y una fase final de extension de contexto de 1024 a 4096 tokens con 580M tokens de un corpus en ingles centrado en la India (Sangraha filtrado, Wikipedia en ingles sobre la India y archivos no vistos de FineWeb-Edu). El resultado es un modelo de completado de texto, no de chat, con licencia Apache 2.0 y solo ingles.
 
-La licencia Apache 2.0 y el formato safetensors lo hacen fácilmente reutilizable, pero sus limitaciones son explícitas: aproximadamente 8 tokens por parámetro, muy por debajo de lo compute-optimal, lo que se traduce en conocimiento del mundo muy limitado y una alta propensión a generar afirmaciones fluidas pero incorrectas.
+Su relevancia es doble: por un lado demuestra que es posible reproducir un pipeline completo de preentrenamiento (tokenizer, schedules ajustados a limites de sesion de 12 horas, extension de contexto con ajuste de RoPE theta) con hardware consumer; por otro, sirve como base para la version de instrucciones `prajna-ai-124m-chat` del mismo autor y como punto de partida para experimentos academicos de bajo coste.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin sesgos, embeddings atados) |
-| Parametros totales | 123.587.328 (85,0 M no pertenecientes a embeddings) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 1024 tokens |
-| Tipos de cuantizacion | No disponible (el autor solo documenta carga en fp16) |
-| Idiomas soportados | Ingles |
+| Arquitectura | Transformer decoder-only estilo LLaMA (RoPE, RMSNorm pre-norm, SwiGLU, sin biases, embeddings atados) |
+| Parametros totales | 123.587.328 (85,0M no-embedding) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens (RoPE theta 100.000; version previa de 1024 tokens en revision `13f120f`) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el autor no documenta GGUF ni cuantizaciones oficiales) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (repositorio de 0,2 GB) |
+| Formato de pesos | safetensors (libreria transformers); repositorio de 0,7 GB |
 
-Especificaciones adicionales: 12 capas, hidden 768, 12 cabezas de atención, FFN 2048, tokenizador GPT-2 BPE con vocabulario ampliado a 50.304.
+Detalles adicionales de forma: 12 capas, hidden 768, 12 cabezas, FFN 2048, tokenizer GPT-2 BPE con vocabulario ampliado a 50.304.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el diseño canónico de LLaMA a escala reducida: decoder-only con rotary positional embeddings (RoPE), normalización RMSNorm en configuración pre-norm, activación SwiGLU en la FFN, ausencia de términos de sesgo en las capas lineales y embeddings de entrada y salida atados. El tokenizador es GPT-2 BPE con el vocabulario rellenado hasta 50.304 entradas.
+La arquitectura es un transformer decoder-only denso de estilo LLaMA con 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y FFN de 2048 con activacion SwiGLU. Usa RMSNorm en pre-norm, RoPE con theta 10.000 en las etapas iniciales y 100.000 tras la extension de contexto, sin terminos de bias y con embeddings de entrada y salida atados. El tokenizer es GPT-2 BPE con el vocabulario rellenado hasta 50.304 entradas.
 
-El entrenamiento se realizó sobre 0,98 miles de millones de tokens de FineWeb-Edu (muestra sample-10BT), sin repetir ningún token. Se ejecutaron 1.865 pasos de 524.288 tokens cada uno, con PyTorch DDP sobre 2x NVIDIA T4 en precisión mixta fp16 con escalado de pérdida. El optimizador fue AdamW (betas 0,9 y 0,95) con weight decay 0,1, learning rate máximo de 1,2e-3, 200 pasos de warmup y decaimiento coseno hasta el 10 %. El schedule se ajustó al límite de 12 horas de la sesión de Kaggle cronometrando los primeros pasos. La pérdida de validación final fue 3,43 (perplejidad 31), descendiendo desde 10,97 en el paso 0. No se documenta RLHF, DPO ni ninguna fase de alineación posterior.
+El entrenamiento se realizo en tres fases sobre 2x NVIDIA T4 con PyTorch DDP, precision mixta fp16 con loss scaling y AdamW (beta 0,9/0,95, weight decay 0,1). La fase 1 consumio 1,92B tokens de FineWeb-Edu (sample-10BT) sin repeticion, en 1.865 pasos de 524.288 tokens con LR pico 1,2e-3, warmup de 200 pasos y decaimiento coseno hasta el 10 %, alcanzando una loss de validacion de 3,43. La fase 2 continuo el preentrenamiento 1.796 pasos mas sobre datos no vistos con LR pico 6e-4 y un schedule coseno nuevo, bajando la loss a 3,30. Los schedules se ajustaron cronometrando los primeros pasos para encajar en el limite de sesion de 12 horas de Kaggle.
+
+La fase 3 extendio el contexto de 1024 a 4096 tokens subiendo RoPE theta a 100.000 y entreno 2.211 pasos de 262.144 tokens (580M tokens en total) sobre un corpus en ingles centrado en la India: Sangraha en ingles filtrado por tematica india (260M tokens), articulos de Wikipedia en ingles relacionados con la India (100M) y archivos no vistos de FineWeb-Edu (247M) para limitar el olvido. La loss en texto general a 1024 tokens subio ligeramente (3,26 a 3,31) a cambio de manejar contextos de 4K y mejorar notablemente en tematica india (loss de 2,82 a 2,76 a 4096 tokens).
 
 ## Capacidades
 
-- Generación de texto por completado autoregresivo en inglés, con muestreo configurable (temperature, top_k).
-- Modelado de lenguaje base: no está ajustado para seguir instrucciones ni para mantener diálogos estructurados.
-- Capacidad limitada de razonamiento y conocimiento factual, derivada del escaso presupuesto de entrenamiento (8 tokens por parámetro).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: solo inglés.
-- Capacidades especiales (thinking mode, visión, audio): no disponibles.
-- Compatible con text-generation-inference y endpoints según los tags del repositorio.
+- Generacion de texto autoregresiva y completado de texto en ingles; no es un modelo de chat ni sigue instrucciones en esta version base.
+- Razonamiento y conocimiento del mundo limitados: con unos 20 tokens por parametro, el conocimiento factual es escaso y propenso a errores fluidos.
+- Manejo de contextos de hasta 4096 tokens, util para completar documentos o mantener coherencia en pasajes largos.
+- Mejora especifica en contenido en ingles sobre la India (cultura, geografia, entidades y tematica regional) gracias a la fase 3.
+- Capacidad de continuacion de codigo o texto tecnico solo en la medida en que aparezca en FineWeb-Edu; no hay entrenamiento especifico de codigo.
+- Sin soporte documentado de tool calling, function calling, agentes, vision, audio ni modo thinking.
+- Multilingue: no; solo ingles.
 
 ## Casos de uso
 
-- Experimentación educativa con preentrenamiento: sirve como punto de partida reproducible para estudiar el pipeline completo (tokenización, schedule de learning rate, DDP en GPUs consumer) con un coste de cómputo mínimo.
-- Completado de texto de dominio restringido: dado su entrenamiento exclusivo en FineWeb-Edu, puede usarse para generar continuaciones de prosa educativa o técnica en inglés, siempre con revisión humana.
-- Base para fine-tuning supervisado: sus 123,6 M de parámetros permiten ajustarlo en una única GPU consumer para tareas específicas de clasificación, extracción o generación acotada.
-- Ablaciones y estudios de scaling: al ser un modelo pequeño con hiperparámetros documentados, es útil para comparar variantes arquitectónicas o de datos a bajo coste.
-- Prototipado rápido de pipelines de inferencia: su tamaño (0,2 GB en safetensors, fp16) permite validar integraciones con transformers o TGI en entornos sin GPU dedicada.
-- Docencia y divulgación: ejemplifica de forma tangible las limitaciones de un modelo infraentrenado, útil para explicar por qué el presupuesto de tokens importa.
+- Completado de texto y autocompletado en editores: el modelo puede continuar frases o parrafos en ingles con 4096 tokens de contexto, adecuado para prototipos de asistencia de escritura donde no se requiere un modelo de chat.
+- Generacion de datos sinteticos para aumentar corpus: sirve para producir texto de dominio general o tematica india que luego se filtra y se usa en experimentos de destilacion o aumentacion de datos.
+- Investigacion academica sobre preentrenamiento de bajo presupuesto: es una base reproducible (Apache 2.0) para estudiar schedules, extension de contexto con RoPE theta y efectos del preentrenamiento continuado en GPUs T4.
+- Fine-tuning ligero para tareas de clasificacion o generacion especifica: con 123,6M de parametros cabe en una sola GPU consumer y permite ajustar clasificadores de texto, etiquetado o resumen extractivo con pocos recursos.
+- Base para modelos de instrucciones: el propio autor lo usa como punto de partida de `prajna-ai-124m-chat`, por lo que es un candidato natural para experimentos de SFT y DPO a pequeña escala.
+- Prototipado de pipelines de inferencia: por su tamaño reducido (0,7 GB en safetensors) es util para validar integraciones con transformers, TGI o endpoints compatibles antes de escalar a modelos mayores.
+- Demos educativas de tokenizacion y generacion: permite ilustrar el funcionamiento de un LLM completo en cursos o talleres sin necesidad de infraestructura dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. El único dato de evaluación reportado por el autor es la pérdida de validación de 3,43 (perplejidad 31) sobre FineWeb-Edu, con la siguiente evolución:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor solo reporta losses de validacion:
 
-| Paso | 0 | 250 | 500 | 1000 | 1500 | 1864 |
-|---|---|---|---|---|---|---|
-| Pérdida de validación | 10,97 | 4,88 | 4,05 | 3,65 | 3,48 | 3,43 |
+| Metrica | Contexto 1024 | Contexto 4096 |
+|---|---|---|
+| Loss de validacion, FineWeb-Edu (general) | 3,31 (antes de la extension: 3,26) | 3,25 (antes de la extension: 5,02) |
+| Loss de validacion, ingles centrado en la India | 2,82 (antes: 3,59) | 2,76 (antes: 5,11) |
+
+Evolucion de la loss de validacion durante el entrenamiento:
+
+| Paso | 0 | 250 | 500 | 1000 | 1500 | 1864 | 2865 | 3365 | 3661 |
+|---|---|---|---|---|---|---|---|---|---|
+| Loss de validacion | 10,97 | 4,88 | 4,05 | 3,65 | 3,48 | 3,43 | 3,38 | 3,32 | 3,30 |
+
+Los pasos posteriores a 1864 corresponden al preentrenamiento continuado; la loss sube brevemente (3,48 en el paso 2115) al reiniciarse el LR y despues cae por debajo de la fase 1.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en fp16, los pesos ocupan aproximadamente 0,25 GB; con overhead de activaciones y caché KV para 1024 tokens, cabe holgadamente en 1-2 GB de VRAM.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el autor entrenó en 2x NVIDIA T4, y la inferencia funciona en T4, RTX 3060, RTX 4090, A100 o H100 sin aprovechar su capacidad.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer moderna (GTX 1650 en adelante) e incluso en CPU para generación de baja latencia.
-- Opciones de despliegue: transformers (documentado por el autor), text-generation-inference (tag del repositorio) y endpoints compatibles; llama.cpp u Ollama requerirían conversión a GGUF, no documentada por el autor.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: en fp16 los pesos ocupan aproximadamente 0,25 GB; con overhead de activaciones y cache KV para 4096 tokens, el consumo se mantiene por debajo de 2 GB en la mayoria de configuraciones.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; el autor entreno en 2x NVIDIA T4, y el modelo funciona en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problema.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer modernas e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: transformers (referencia del autor), text-generation-inference (el repo incluye el tag `text-generation-inference` y `endpoints_compatible`); llama.cpp u Ollama requeririan conversion a GGUF, no publicada oficialmente.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamaño (123,6M de parametros) se espera un throughput alto en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| kaggle-llm-124m-base | 123,6 M | 1024 | 0,98 B tokens FineWeb-Edu | Apache 2.0 | Hugging Face |
-| GPT-2 (124M) | 124 M | 1024 | WebText (~40 GB) | MIT (pesos publicados) | Hugging Face |
-| Pythia-160M | 160 M | 2048 | The Pile (~300 B tokens) | Apache 2.0 | Hugging Face |
-| SmolLM-135M | 135 M | 2048 | 600 B tokens (FineWeb-Edu y otros) | Apache 2.0 | Hugging Face |
+| prajna-ai-124m-base | 123,6M | 4096 | Apache 2.0 | en | Preentrenado desde cero en 2x T4; base, no chat |
+| GPT-2 small | 124M | 1024 | MIT | en | Referencia clasica de mismo tamaño; sin entrenamiento reciente ni contexto extendido |
+| SmolLM-135M | 135M | 2048 | Apache 2.0 | en | Entrenado por Hugging Face con mas tokens y pipeline mas pulido; contexto menor |
+| Pythia-160m | 160M | 2048 | Apache 2.0 | en | Suite de investigacion con checkpoints intermedios; ligeramente mayor |
 
-La comparación con GPT-2, Pythia-160M y SmolLM-135M sitúa a este modelo en la misma clase de tamaño, pero con un presupuesto de datos sustancialmente menor (0,98 B frente a cientos de miles de millones de tokens). No se dispone de benchmarks comparativos publicados para kaggle-llm-124m-base, por lo que la comparación de rendimiento no puede cuantificarse.
+La comparacion con GPT-2 small, SmolLM-135M y Pythia-160m es por categoria (modelos densos de ~100-200M parametros). No hay benchmarks publicados de prajna-ai-124m-base que permitan comparar rendimiento real frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Entrenado con aproximadamente 8 tokens por parámetro, muy por debajo del régimen compute-optimal: conocimiento del mundo muy limitado.
-- Alta propensión a generar afirmaciones fluidas pero incorrectas (alucinación), reconocida explícitamente por el autor.
-- Solo inglés; no hay soporte multilingüe.
-- Sin filtrado de seguridad más allá del filtro educativo de FineWeb-Edu; no debe desplegarse en aplicaciones orientadas a usuarios sin capas adicionales de moderación.
-- No es un modelo de chat ni de instrucciones; usarlo como tal produce resultados deficientes.
-- Ventana de contexto de solo 1024 tokens, insuficiente para tareas de contexto largo.
-- Sin datos de benchmarks que permitan estimar su calidad en tareas downstream.
-- La licencia Apache 2.0 permite uso comercial, pero la ausencia de alineación y de evaluaciones desaconseja su uso en producción sin fine-tuning y validación previas.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación por parte de la comunidad.
+- Conocimiento del mundo limitado: se entreno con unos 20 tokens por parametro, en el limite de lo compute-optimal, por lo que produce con frecuencia afirmaciones fluidas pero incorrectas.
+- Riesgo alto de alucinacion en preguntas factuales; no debe usarse como fuente de verdad sin verificacion.
+- Solo ingles; no soporta castellano ni otros idiomas de forma fiable.
+- No es un modelo de chat: no sigue instrucciones ni mantiene formato conversacional; para ello existe la variante `prajna-ai-124m-chat`.
+- Sin filtrado de seguridad mas alla del propio de los datasets de origen (FineWeb-Edu, Sangraha, Wikipedia); puede generar contenido sesgado o inapropiado.
+- La licencia Apache 2.0 permite uso comercial, pero la ausencia de benchmarks y de evaluaciones de sesgo hace recomendable una evaluacion propia antes de produccion.
+- El contexto de 4096 tokens se obtuvo con solo 580M tokens de entrenamiento de extension; la calidad en el extremo superior de la ventana puede degradarse frente a modelos entrenados nativamente a esa longitud.
+- No hay cuantizaciones oficiales publicadas (GGUF, AWQ, GPTQ), lo que limita el despliegue en herramientas como Ollama o llama.cpp sin conversion manual.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/somdevsheel/kaggle-llm-124m-base
-- Variante conversacional: https://huggingface.co/somdevsheel/kaggle-llm-124m-chat
-- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Version de chat: https://huggingface.co/somdevsheel/prajna-ai-124m-chat
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset Sangraha: https://huggingface.co/datasets/ai4bharat/sangraha
+- Dataset Wikipedia (Wikimedia): https://huggingface.co/datasets/wikimedia/wikipedia

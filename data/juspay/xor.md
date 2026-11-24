@@ -2,106 +2,106 @@
 
 ## Resumen
 
-Xor es un modelo derivado de Qwen/Qwen3.6-35B-A3B, desarrollado por Juspay Technologies, orientado a tareas de decision tipada. No es un modelo de proposito general con prompt libre: es una version post-entrenada que se sirve a traves de una API compatible con TypeSafe en el endpoint `/v1/systemone`, donde el cliente envia un estado y un mapa de preguntas tipadas y recibe probabilidades o decisiones estructuradas.
+Xor 1.2 es un modelo derivado de Qwen/Qwen3.6-35B-A3B, desarrollado por Juspay, especializado en tareas de decisión tipada (typed decision tasks). Se trata de un ajuste fino mediante LoRA de rango 16 fusionado en los pesos base BF16, orientado a producir decisiones estructuradas con probabilidades calibradas en lugar de generación de texto libre. El modelo se sirve a través de una API compatible con TypeSafe en el endpoint `/v1/systemone`.
 
-El modelo conserva la arquitectura del checkpoint base: un transformer causal con mezcla de expertos (MoE) de 35.107.181.936 parametros totales y aproximadamente 3.000 millones de parametros activados por token, liberado en BF16 con pesos ya fusionados (no requiere cargar ni fusionar adaptadores). La licencia es Apache 2.0 y el pipeline declarado es text-generation, con soporte adicional de entrada image-text-to-text.
+La propuesta diferencial no es el modelo en sí, sino el conjunto de modelo más capa de servicio: el runtime realiza lectura determinista de candidatos de un solo token, evaluación del orden de opciones en sentido directo e inverso, calibración de probabilidades y conversión de esquema. Esto convierte al modelo en un clasificador probabilístico de propósito general con soporte multimodal (hasta ocho imágenes o un vídeo por petición), no en un chatbot convencional.
 
-Su relevancia actual esta en el nicho de clasificacion y puntuacion con incertidumbre calibrada: en lugar de generar texto libre, devuelve decisiones binarias, categoricas u ordinales con distribucion de probabilidad completa, evaluacion en orden directo e inverso de las opciones y calibracion en la capa de servicio. El autor publica una autoevaluacion sobre las capas publicas de JEVBench con una precision de 1.0000 en el nivel Easy y 0.7748 en el nivel Hard public.
+Con 35.000 millones de parámetros totales y aproximadamente 3.000 millones activos por token, la arquitectura es un transformer MoE causal heredado de Qwen3.6. La licencia Apache 2.0 y la disponibilidad de un bundle de servicio reproducible lo hacen relevante para equipos que necesitan decisiones auditables con latencias del orden de decenas de milisegundos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con mezcla de expertos (MoE) |
-| Parametros totales | 35.107.181.936 (35 B) |
-| Parametros activos | Aproximadamente 3 B por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (release validado en BF16; pesos fusionados) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Mixture-of-experts causal (transformer), base Qwen3.6-35B-A3B |
+| Parametros totales | 35.107.181.936 |
+| Parametros activos | Aproximadamente 3.000 millones por token |
+| Longitud de contexto | Maximo de 250.000 tokens de prefill (configuracion validada) |
+| Tipos de cuantizacion | BF16 en la release publicada; no se documentan otras cuantizaciones |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers); el despliegue validado usa SGLang |
+| Formato de pesos | Safetensors (pesos fusionados, sin adaptadores) |
 
 ## Arquitectura y entrenamiento
 
-La ficha del autor solo indica que Xor es una version post-entrenada del checkpoint `Qwen/Qwen3.6-35B-A3B`, descrito como un modelo de lenguaje causal con mezcla de expertos, BF16 y pesos completamente fusionados. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras fases de alineamiento. Tampoco se especifican innovaciones de atencion o decodificacion en el modelo en si.
+El modelo parte del checkpoint `Qwen/Qwen3.6-35B-A3B` en su revisión `995ad96eacd98c81ed38be0c5b274b04031597b0`. Sobre esa base se aplicó un post-entrenamiento con LoRA de rango 16, posteriormente fusionado en los pesos BF16, de modo que el artefacto distribuido contiene pesos completos y no requiere carga ni fusión de adaptadores en tiempo de inferencia. No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-La innovacion declarada esta en la capa de servicio que acompana al modelo y que forma parte de la configuracion de inferencia publicada: lectura determinista de candidatos de un solo token, evaluacion del orden de opciones en sentido directo e inverso, calibracion de probabilidades y conversion a esquema. El autor advierte explicitamente de que esta capa de servicio debe usarse para obtener resultados reproducibles, es decir, el modelo no esta pensado para invocarse como un generador de texto convencional. El tipo de pregunta `noul` devuelve una probabilidad binaria, `choice` una decision categorica con su distribucion completa y `score` una puntuacion ordinal esperada con su distribucion.
+La innovación técnica relevante reside en la capa de servicio más que en el entrenamiento: la interfaz acepta un estado y un mapa de preguntas tipadas con tres modalidades (`noul` para probabilidad binaria, `choice` para decisión categórica con distribución completa y `score` para puntuación ordinal esperada con distribución completa). El servidor ejecuta lectura determinista de logprobs de candidatos de un solo token, evalúa el orden de las opciones en ambos sentidos para mitigar sesgos posicionales y aplica calibración de probabilidades antes de la conversión de esquema. El runtime validado es una imagen SGLang parcheada que corrige el manejo de resultados de candidate-logprob para evitar un fallo del planificador cuando coinciden peticiones de scoring y de generación simple en el mismo lote.
 
 ## Capacidades
 
-- Clasificacion tipada con tres modalidades: `noul` (probabilidad binaria), `choice` (decision categorica y distribucion completa) y `score` (puntuacion ordinal esperada y distribucion).
-- Entrada multimodal: las peticiones pueden incluir un array `images` con hasta ocho URL de imagen o data URL, y las preguntas tipadas pueden clasificar informacion procedente de esas imagenes junto con el texto.
-- Salida con incertidumbre calibrada: distribuciones de probabilidad y metricas de calibracion (Brier, ECE) reportadas en la evaluacion publica.
-- Robustez al orden de opciones: la capa de servicio evalua las opciones en orden directo e inverso.
-- Salida estructurada validada contra esquema: la evaluacion reporta validez de esquema estricta de 1.0000 en las tres capas publicas de JEVBench.
-- Generacion de texto conversacional: el pipeline declarado es text-generation y el tag conversational esta presente, aunque la interfaz documentada es la de decision tipada.
-- No se documenta en la informacion disponible soporte de tool calling, function calling ni comportamiento agentico multi-paso.
-- Idiomas soportados: no disponible.
+- Clasificación binaria con probabilidad calibrada mediante la modalidad `noul`.
+- Decisión categórica con distribución de probabilidad completa sobre las opciones mediante `choice`.
+- Puntuación ordinal con valor esperado y distribución completa mediante `score`.
+- Procesamiento multimodal: hasta ocho imágenes en formato data URL o un vídeo data URL por petición, combinables con texto.
+- Evaluación robusta al orden de opciones gracias a la lectura forward y reverse.
+- Salida con esquema validado y conversión determinista de tipos.
+- Razonamiento multi-turno limitado: la interfaz está orientada a decisiones puntuales sobre un estado dado, no a diálogo abierto.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documenta soporte explícito de tool calling ni de agentes multi-paso.
 
 ## Casos de uso
 
-- Decisiones binarias automatizadas con umbral de confianza: usando el tipo `noul`, el modelo devuelve una probabilidad que un sistema posterior puede comparar contra un umbral para aprobar, denegar o escalar una operacion, en lugar de interpretar texto generado libremente.
-- Triaje y enrutado categorico: con el tipo `choice` se obtiene la categoria asignada y la distribucion completa, lo que permite enrutar tickets, incidencias o solicitudes a un equipo concreto y detectar casos ambiguos cuando la masa de probabilidad esta repartida.
-- Puntuacion ordinal de riesgo o calidad: con el tipo `score` se obtiene una puntuacion esperada y su distribucion, util para scoring de riesgo, priorizacion de colas o evaluacion de calidad con grados.
-- Clasificacion asistida por imagenes: las peticiones aceptan hasta ocho imagenes por URL o data URL, de modo que se puede clasificar documentacion escaneada, capturas o formularios junto con texto adicional sin un pipeline de vision separado.
-- Validacion de decisiones en sistemas de pago o riesgo: al tratarse de un modelo de Juspay, un uso natural es la clasificacion de operandos de riesgo y revision, siempre que se valide con datos propios del dominio y se verifique la calibracion.
-- Modulo de evaluacion en pipelines de investigacion: la salida tipada con distribuciones permite calcular metricas de calibracion (Brier, ECE) de forma directa, lo que facilita comparar variantes de modelo con un harness objetivo como JEVBench.
-- Anotacion asistida con control de calidad: la combinacion de decision y distribucion permite marcar automaticamente las muestras de baja confianza para revision humana, reduciendo coste de anotacion.
-- Servicio interno de decision a baja latencia: en la configuracion validada, las latencias p50 reportadas van de 0,0766 s en el nivel Easy a 0,1361 s en el nivel Hard public, lo que encaja con servicios sincronos de decision, no con generacion de documentos largos.
+- Moderación de contenido con umbral calibrado: usar `noul` para obtener una probabilidad de incumplimiento por publicación y fijar el punto de corte según la tolerancia a falsos positivos, aprovechando la calibración ECE de 0.0733 reportada.
+- Triaje de tickets de soporte: enviar el estado del ticket y un conjunto de categorías en `choice` para obtener la categoría más probable junto con la distribución completa, lo que permite derivar a revisión humana cuando la masa de probabilidad está repartida.
+- Enrutamiento de solicitudes en pipelines internos: clasificar la intención de una petición entrante entre un conjunto cerrado de handlers, con latencias p50 de 0.067 s medidas en H200 para decisiones simples.
+- Evaluación ordinal de calidad: usar `score` para puntuar respuestas generadas por otro modelo en una escala de 1 a 5, obteniendo el valor esperado y la distribución para detectar evaluaciones poco confiables.
+- Inspección visual de documentos: pasar hasta ocho imágenes junto con preguntas tipadas para clasificar documentos escaneados (tipo de documento, presencia de firma, legibilidad) en una sola petición.
+- Verificación de cumplimiento normativo: decidir si un fragmento de texto cumple una política concreta, con evaluación en ambos órdenes de opciones para reducir el sesgo posicional inherente a los clasificadores basados en LLM.
+- Control de calidad en pipelines de datos: filtrar pares pregunta-respuesta con una decisión binaria calibrada antes de incorporarlos a un conjunto de entrenamiento.
 
 ## Benchmarks y rendimiento
 
-El autor publica una autoevaluacion sobre las capas publicas de JEVBench (harness commit `fd51755eb0c0b546ca206d764faf3302feca913e`, adaptador `typesafe`, una peticion simultanea), ejecutada sobre 2 x NVIDIA RTX PRO 6000 Blackwell Server Edition de 96 GB con tensor parallelism 2. El propio autor indica que no es un ranking oficial de JEVBench y que ha solicitado una evaluacion independiente del conjunto completo, incluidos los elementos reservados, en el issue #20 del repositorio de JEVBench.
+Auto-evaluación pública de JEVBench con el bundle de servicio sin modificar, sobre 1 x NVIDIA H200 NVL (143 GB), TP1, DP1, caché de peticiones desactivada, harness en el commit `1bcc55eb6c8cffde2306b3db03ede39b61c6152a`:
 
-| Capa | Intentos | Validos | Correctos | Precision | Precision macro | Brier medio | ECE | p50 | p95 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Easy | 48 | 48 | 48 | 1,0000 | 1,0000 | 0,0018 | 0,0257 | 0,0766 s | 0,0888 s |
-| Original | 72 | 72 | 70 | 0,9722 | 0,9722 | 0,0897 | 0,1285 | 0,0773 s | 0,0812 s |
-| Hard public | 111 | 111 | 86 | 0,7748 | 0,8033 | 0,3460 | 0,0579 | 0,1361 s | 0,3887 s |
+| Tier | Intentadas | Validas | Correctas | Precision | p50 | p95 |
+|---|---:|---:|---:|---:|---:|---:|
+| Easy | 48 | 48 | 48 | 1.0000 | 0.0679 s | 0.0709 s |
+| Original | 72 | 72 | 69 | 0.9583 | 0.0670 s | 0.0701 s |
+| Hard public | 111 | 111 | 91 | 0.8198 | 0.0832 s | 0.1845 s |
+| Todas las publicas | 231 | 231 | 208 | 0.9004 | 0.0691 s | 0.1616 s |
 
-El exito operativo, la cobertura, la validez de esquema y la validez de esquema estricta fueron 1,0000 en las tres capas publicas. No se han publicado en la informacion disponible resultados de benchmarks generalistas como MMLU, HumanEval o GSM8K.
+Metricas agregadas sobre las 231 decisiones: precision macro 0.9070, Brier medio 0.1790, ECE 0.0733. El exito operativo, la cobertura, la validez de esquema y la validez estricta de esquema fueron 1.0000 en todos los casos.
+
+Estos resultados son auto-evaluaciones sobre los tiers públicos de JEVBench y no constituyen una clasificación oficial del benchmark. Las latencias son específicas del hardware indicado y se midieron localmente sin sobrecarga de red. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de propósito general en la información disponible.
 
 ## Requisitos de hardware
 
-- Los ficheros del modelo ocupan aproximadamente 66 GB; el repositorio completo ocupa 70,2 GB y la instalacion documentada requiere unos 120 GB de disco libre.
-- La configuracion validada por el autor usa 2 x NVIDIA RTX PRO 6000 Blackwell Server Edition de 96 GB cada una, con tensor parallelism 2 y una fraccion de memoria estatica de 0,85.
-- El autor advierte de que la configuracion validada de SGLang reserva una cantidad sustancial de VRAM para la cache KV; presupuestos de prefill menores pueden funcionar en otras configuraciones de dos GPU, pero no estan cubiertos por la validacion.
-- Presupuesto maximo de prefill tokens en la configuracion validada: 250.000.
-- No cabe en una GPU de consumo en la precision liberada (BF16, 66 GB de pesos): una RTX 4090 de 24 GB es insuficiente por si sola; no se documentan cuantizaciones alternativas validadas.
-- Opciones de despliegue: el autor despliega con SGLang mediante una imagen fijada por digest (`lmsysorg/sglang@sha256:6bcaa47db52f78ce0d67863b8b2431221b79bc23204a80cad757fa819d00e921`), empaquetada en un bundle de servicio con Docker Compose. Los pesos tambien se publican en formato transformers/safetensors. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Entorno requerido: Linux x86-64, CLI de Hugging Face, Docker Engine con Docker Compose v2 y NVIDIA Container Toolkit.
-- Latencia reportada en la configuracion validada: p50 de 0,0766 s (Easy), 0,0773 s (Original) y 0,1361 s (Hard public); p95 de 0,0888 s, 0,0812 s y 0,3887 s respectivamente, con una peticion a la vez. El autor indica que las mediciones solo son comparables con el mismo modelo de GPU, numero de GPU, configuracion de tensor parallelism e imagen de servicio fijada.
-- Throughput no disponible.
+- VRAM estimada: los ficheros del modelo ocupan aproximadamente 66 GB en BF16; el runtime validado reserva una fracción estática de memoria de 0.85 sobre una GPU de 143 GB.
+- GPU recomendadas: NVIDIA H200 NVL (143 GB) es la única configuración validada oficialmente. No se documenta validación sobre A100, H100 ni RTX 4090.
+- GPU de consumo: no cabe en GPU de consumo convencionales en BF16; no se han publicado cuantizaciones que permitan reducir el requisito.
+- Paralelismo: la configuración validada es tensor parallelism 1 y data parallelism 1. Cada worker de DP carga una réplica completa del modelo.
+- Despliegue: imagen SGLang parcheada `prakhar1611/xor-sglang` (digest `sha256:94c48d2a...`), sobre base `lmsysorg/sglang` (digest `sha256:6bcaa47d...`). Se requiere Linux x86-64, Docker Engine con Compose v2 reciente, NVIDIA Container Toolkit y unos 120 GB de disco libre.
+- Latencia y throughput: p50 de 0.067 s y p95 de 0.1616 s sobre las 231 decisiones públicas, medidas con una petición a la vez en H200. No se reporta throughput agregado ni rendimiento bajo concurrencia.
+- Prefill máximo: 250.000 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Parametros activos | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---|---|---|---|---|---|
-| juspay/xor | 35 B | ~3 B por token | no disponible | Apache 2.0 | Decision tipada con probabilidades calibradas y entrada de imagenes | Hugging Face, pesos fusionados y bundle de servicio SGLang |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35 B | ~3 B por token | no disponible | Apache 2.0 | Modelo de lenguaje causal MoE de proposito general | Hugging Face |
-| Otras alternativas de clasificacion tipada | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Activos | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| Xor 1.2 | 35B | ~3B | 250.000 prefill | Apache 2.0 | Decision tipada calibrada con capa de servicio |
+| Qwen3.6-35B-A3B | 35B | ~3B | No disponible | Apache 2.0 | LLM generativo multimodal base |
+| Modelos de clasificación dedicados | Variable (tipicamente <1B) | No aplica | Corto | Variable | Clasificación supervisada por tarea |
 
-La informacion proporcionada no incluye resultados de benchmarks de modelos comparables en la misma tarea, por lo que no es posible establecer una comparacion cuantitativa de rendimiento frente a alternativas.
+La comparación directa con el modelo base es la más informativa: Xor 1.2 hereda la arquitectura y el conocimiento de Qwen3.6-35B-A3B pero restringe la interfaz a decisiones tipadas con calibración, a cambio de perder flexibilidad generativa. Frente a clasificadores dedicados de pequeño tamaño, Xor 1.2 aporta generalidad mediante instrucciones en lenguaje natural y soporte multimodal, con un coste de hardware muy superior. No se dispone de datos de benchmarks comparativos frente a alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. El autor no documenta analisis de sesgo.
-- Riesgo de alucinacion: el modelo no genera texto libre en su interfaz documentada, sino decisiones leidas sobre candidatos de un solo token; aun asi, la capa de calibracion es la que garantiza la interpretacion correcta de esas probabilidades y forma parte obligatoria de la configuracion de inferencia publicada.
-- La autoevaluacion publicada es una ejecucion propia sobre las capas publicas de JEVBench y no un ranking oficial; la caida de precision del nivel Easy (1,0000) al nivel Hard public (0,7748) indica que el rendimiento en casos dificiles es notablemente inferior. No se han publicado resultados sobre los elementos reservados del conjunto.
-- Calibracion heterogenea: el Brier medio sube de 0,0018 en Easy a 0,3460 en Hard public, y el ECE es de 0,1285 en Original, lo que sugiere que las probabilidades no son igualmente fiables en todos los niveles de dificultad.
-- Limitaciones de contexto: no se documenta la longitud de contexto nativa; el unico dato operativo es el presupuesto maximo de prefill de 250.000 tokens en la configuracion validada, que depende del hardware y de la reserva de memoria para la cache KV.
-- Limitaciones de idioma: no disponible.
-- El servicio no requiere clave de API cuando se enlaza a localhost; el autor advierte de que los despliegues remotos deben anadir autenticacion, TLS, limites de tasa y limites de tamano de peticion en la capa de entrada.
-- Para resultados reproducibles es obligatorio usar la capa de servicio publicada; una invocacion directa del modelo sin esa capa no reproduce los resultados reportados.
-- Licencia Apache 2.0, sin restricciones de uso comercial indicadas en la informacion disponible, con la salvedad de las condiciones del modelo base, que es tambien Apache 2.0.
-- Entrada multimodal limitada a un maximo de ocho imagenes por peticion.
+- Las cifras de JEVBench son auto-evaluaciones sobre los tiers públicos, no una clasificación oficial; el rendimiento en datos privados o de dominio específico puede diferir notablemente.
+- El tier Hard public baja a 0.8198 de precisión, lo que indica degradación clara en decisiones complejas.
+- La calibración presenta un ECE de 0.0733 y un Brier medio de 0.1790, aceptables pero no perfectos; en producción conviene recalibrar sobre datos propios.
+- La interfaz no está diseñada para generación de texto libre ni para diálogo multi-turno; usarla así queda fuera del contrato validado.
+- El modelo no distingue de forma fiable entre imágenes y vídeo cuando se envían juntos en la misma petición; se recomienda enviar un solo tipo de medio.
+- Límite estricto de 8 MB por cuerpo de petición, con unos 6 MB útiles de medios tras la codificación base64; las peticiones mayores se rechazan con HTTP 422.
+- Los resultados reproducibles exigen usar el bundle de servicio y el runtime SGLang parcheado publicados; otras configuraciones de hardware o paralelismo deben validarse de forma independiente.
+- El servicio no requiere clave de API cuando se despliega con la configuración por defecto, lo que supone un riesgo si se expone fuera de localhost.
+- No se documentan sesgos conocidos ni cobertura de idiomas; la información disponible no permite evaluar el comportamiento fuera del inglés.
+- La licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base deben verificarse por separado.
+- La rama `release/xor-1.2` es mutable; para reproducibilidad byte a byte debe fijarse su hash de commit.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/juspay/xor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- JEVBench (repositorio del harness de evaluacion): https://github.com/fstandhartinger/jevbench
-- Issue de evaluacion independiente del conjunto completo: https://github.com/fstandhartinger/jevbench/issues/20
-- Organizacion Juspay en Hugging Face: https://huggingface.co/juspay/datasets
-- Repositorio juspay/AI: https://github.com/juspay/AI
-- Servidores MCP de Juspay: https://github.com/juspay/juspay-mcp
+- JEVBench: https://github.com/fstandhartinger/jevbench
+- Imagen SGLang parcheada: https://hub.docker.com/r/prakhar1611/xor-sglang
+- Imagen base SGLang: https://hub.docker.com/r/lmsysorg/sglang

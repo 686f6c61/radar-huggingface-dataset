@@ -2,96 +2,112 @@
 
 ## Resumen
 
-Decider-2b-Artemis-GGUF es una versión cuantizada, creada por TurinTech con su herramienta Artemis, del modelo decider-2b de Mapika. No se trata de un modelo conversacional genérico, sino de un modelo de decisión especializado: recibe un estado y una lista de preguntas, cada una con sus propias opciones, y devuelve en una sola pasada una probabilidad para cada opción. Esto lo hace ideal para enrutar tareas, clasificar tickets o tomar decisiones tipadas dentro de pipelines de agentes.
+decider-2b-Artemis-GGUF es una versión cuantizada en formato GGUF del modelo Mapika/decider-2b, publicada por TurinTech dentro de su línea Artemis de compresión de modelos. No es un modelo conversacional al uso: se trata de un modelo de decisión que recibe un estado (por ejemplo, el texto de una incidencia) y una o varias preguntas con opciones cerradas, y devuelve en un único forward pass la probabilidad de cada opción. El objetivo es sustituir a un LLM grande en tareas de clasificación y enrutamiento estructurado, reduciendo coste y latencia.
 
-La relevancia de esta ficha radica en la cuantización: el archivo por defecto, `decider-2b-Artemis-Q4_K_M.gguf`, ocupa 1,273 GB y reproduce las respuestas del modelo original en BF16 en el 93,65 % de 2.000 decisiones del conjunto final de evaluación, frente al 89,45 % de la cuantización Q4_K_M estándar de Mapika. Con unos 1.880 millones de parámetros, puede ejecutarse en una GPU pequeña o directamente en CPU.
+El modelo cuenta con 1.881.825.088 parámetros totales y un repositorio de 1,3 GB, con el fichero Q4_K_M ocupando 1.273 GB y requiriendo unos 3,97 GiB de memoria de GPU. Está pensado para ejecutarse en un portátil o en una GPU pequeña mediante llama-cpp-python, y conserva el 93,65 % de las respuestas del modelo original según las métricas declaradas por el autor, frente al 89,45 % de la cuantización Q4_K_M original de Mapika.
 
-Un detalle importante: solo funciona como modelo de decisión a través del script `decide_gguf.py` de Mapika sobre llama-cpp-python. Servidores estándar como llama-server, Ollama o LM Studio lo tratan como un modelo de texto convencional, por lo que no exponen su interfaz de decisión.
+Su relevancia actual radica en que ofrece una alternativa determinista y de bajo coste para decisiones tipadas (enrutamiento de tickets, etiquetado, triaje) sin necesidad de generar texto libre, con licencia Apache 2.0 y despliegue local. La contrapartida es que no funciona como chatbot ni a través de servidores estándar: requiere el script `decide_gguf.py` de Mapika sobre llama-cpp-python.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo de decisión sobre base decider-2b; detalles no disponibles) |
-| Parametros totales | 1.881.825.088 (~1,88 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens (contexto por defecto de `decide_gguf.py`) |
-| Tipos de cuantizacion | Q4_K_M (archivo por defecto, `decider-2b-Artemis-Q4_K_M.gguf`); otras variantes no disponibles |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | no disponible |
+| Parámetros totales | 1.881.825.088 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | GGUF; el fichero publicado es Q4_K_M |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
+| Modelo base | Mapika/decider-2b |
+| Pipeline declarado | text-classification |
+| Tamaño del repositorio | 1,3 GB |
+| Descargas | 368 |
+| Librería | gguf |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Mapika/decider-2b, un modelo de decisión de tipo transformer cuyo propósito es, dado un estado y varias preguntas con opciones, calcular la distribución de probabilidad sobre las opciones de cada pregunta en una única pasada de inferencia. Las preguntas de tipo sí/no o de puntuación se formulan como elecciones con sus opciones escritas textualmente, y la selección se realiza a la temperatura de elección definida en `decider_config.json` (2,465 en esta configuración).
+No se dispone de información sobre la arquitectura interna del modelo base Mapika/decider-2b en la documentación proporcionada. Por el pipeline declarado (text-classification) y por su funcionamiento descrito, el modelo opera como un clasificador de opciones: dado un estado y una lista de preguntas con sus opciones, produce una distribución de probabilidad sobre cada opción en un solo forward pass, en lugar de generar texto autoregresivamente.
 
-La variante Artemis es una cuantización generada por TurinTech con su herramienta Artemis. Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO) no hay datos disponibles en la información proporcionada.
+La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La innovación destacable de esta publicación es la compresión Artemis de TurinTech aplicada sobre la cuantización Q4_K_M de Mapika: el autor declara una conservación del 93,65 % de respuestas idénticas al original, frente al 89,45 % de la Q4_K_M de referencia, y cero cambios en las respuestas clasificadas como "confidentes". El modelo se ejecuta exclusivamente mediante el script `decide_gguf.py` sobre llama-cpp-python; no es compatible con el endpoint `/v1/systemone` de llama-server, ni con Ollama, ni con LM Studio en modo decisión.
 
 ## Capacidades
 
-- Clasificación de texto estructurada: dada una entrada (estado) y múltiples preguntas con opciones, devuelve para cada pregunta la opción más probable, su confianza y la probabilidad de todas las opciones, en una sola pasada.
-- Decisiones multi-pregunta simultáneas: en el ejemplo de la model card, clasifica un ticket a la vez por departamento (billing/technical/sales) y urgencia (low/medium/high).
-- Salida calibrada en probabilidades: `decide()` devuelve un objeto con `choice`, `confidence` y `probs` por pregunta, lo que permite aplicar umbrales de confianza en producción.
-- Ejecución en GPU o CPU: `GGUFDecider(path, n_gpu_layers=0)` fuerza ejecución en CPU; con llama-cpp-python compilado con CUDA usa la GPU automáticamente.
-- No soporta (por diseño): generación de texto libre, tool calling, agentes multi-paso, visión ni audio. No es un modelo conversacional pese a la etiqueta `conversational` del repositorio.
+- Clasificación y decisión estructurada: devuelve, para cada pregunta, la opción más probable, su probabilidad y la distribución completa sobre todas las opciones.
+- Soporte de múltiples preguntas simultáneas en una misma llamada, cada una con su propio conjunto de opciones.
+- Salida probabilística calibrada, apta para umbrales de confianza y lógica de escalado.
+- Enrutamiento de tickets y triaje por departamento, urgencia u otras etiquetas cerradas.
+- No es un modelo conversacional: no mantiene diálogo ni genera texto libre.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: clasifica automáticamente cada incidencia por departamento (facturación, técnico, ventas) y nivel de urgencia en una sola llamada, con probabilidades por opción para aplicar umbrales de escalamiento.
-- Orquestación de agentes: un agente supervisor puede usar el modelo para decidir en cada paso qué herramienta o subagente invocar, dado el estado actual y el catálogo de opciones.
-- Clasificación de intenciones en chatbots: mapea el mensaje del usuario a una intención cerrada (reembolso, consulta técnica, queja) con su distribución de probabilidad, útil para derivar a flujos distintos.
-- Moderación y filtrado de contenido: decisiones tipadas sí/no sobre si un mensaje cumple una política, evaluando varias políticas en paralelo en la misma pasada.
-- Selección de parámetros en pipelines: decidir entre configuraciones discretas (por ejemplo, nivel de verbosidad, modelo destino, prioridad de cola) en función del contexto de ejecución.
-- Sistemas embebidos o edge: con 1,273 GB de descarga y ~3 GiB de memoria pico en CPU, cabe en máquinas sin GPU dedicada para tomar decisiones locales sin depender de APIs externas.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto de la incidencia y una pregunta con opciones (billing, technical, sales) y devuelve la probabilidad de cada departamento; en el ejemplo de la model card asigna 0,957 a billing para un cargo duplicado.
+- Triaje por urgencia: una segunda pregunta con opciones low/medium/high permite priorizar la cola de atención sin un LLM generativo, con una sola pasada por el modelo.
+- Etiquetado de contenido a escala: clasificación de documentos o mensajes en categorías cerradas con salida probabilística, útil para pipelines de moderación o catalogación.
+- Clasificación de intenciones en asistentes: determinar la intención del usuario entre un conjunto fijo de acciones antes de derivar a otro sistema.
+- Enrutamiento en sistemas multiagente: seleccionar qué herramienta o agente debe atender una petición a partir de la distribución de probabilidad devuelta.
+- Despliegue en local o en el borde: con 1.273 GB de fichero y unos 3,97 GiB de memoria, puede ejecutarse en un portátil o en una GPU pequeña para decisiones sensibles que no deben salir del dispositivo.
+- Filtrado previo en pipelines de datos: descartar o marcar registros según categorías con umbral de confianza, reduciendo el coste frente a un LLM generativo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por TurinTech (no verificados de forma independiente), sobre el conjunto final del dataset LocalLLaMA/typed-decisions (2.000 decisiones, una única evaluación):
+Resultados declarados por el autor (no verificados) sobre el conjunto LocalLLaMA/typed-decisions, "Final set":
 
-| Métrica | Valor | Comparación |
+| Tarea | Métrica | Valor |
 |---|---|---|
-| Acuerdo con el modelo BF16 original | 93,65 % | 89,45 % para la Q4_K_M de Mapika (1,274 GB) |
-| Cambios en respuestas con alta confianza | 0 | no disponible |
-| Accuracy en el conjunto final | 61,15 % | no disponible |
+| Agreement with the original | Same answer (%) | 93,65 |
+| Agreement with the original | Confident changes | 0 |
+| Typed decisions | Accuracy (%) | 61,15 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+Comparación de conservación frente a la cuantización de referencia:
+
+| Versión | Same answer as original (%) |
+|---|---|
+| decider-2b-Artemis-GGUF (Q4_K_M) | 93,65 |
+| Mapika Q4_K_M | 89,45 |
+
+No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- Descarga: 1,273 GB para el archivo por defecto `decider-2b-Artemis-Q4_K_M.gguf` (repo completo: 1,3 GB).
-- Memoria pico medida: 3,97 GiB en una NVIDIA A100-SXM4-80GB con contexto de 32.768 tokens; 2,95 GiB en compilación solo CPU.
-- Consumer GPUs: no hay mediciones publicadas, pero con ~4 GiB de memoria pico debería caber con holgura en GPUs como la RTX 3060 de 12 GB o la RTX 4060 Ti; no disponible una lista verificada.
-- CPU: viable; la compilación solo CPU consume ~2,95 GiB y produce probabilidades ligeramente distintas a la GPU (diferencias relevantes solo en decisiones ajustadas).
-- Despliegue: únicamente mediante el script `decide_gguf.py` de Mapika sobre llama-cpp-python 0.3.36 y el paquete `decider-ai` 1.5.0. Para GPU NVIDIA hay que compilar llama-cpp-python con `CMAKE_ARGS="-DGGML_CUDA=on"`. No funciona como modelo de decisión en llama-server, Ollama ni LM Studio (lo cargan como modelo de texto genérico). Probado solo en Linux, con Python 3.12. Ten en cuenta que `pip install decider-ai` arrastra PyTorch (varios GB) aunque el script no lo usa para ejecutar el modelo.
+- VRAM estimada: 3,97 GiB según la model card para el fichero Q4_K_M de 1.273 GB.
+- GPU recomendadas: probado en NVIDIA A100 con llama-cpp-python compilado con CUDA (`CMAKE_ARGS="-DGGML_CUDA=on"`); por su tamaño, cabe en GPU de consumo con al menos 4 GiB de VRAM libre.
+- Ejecución en CPU: soportada mediante `GGUFDecider(path, n_gpu_layers=0)`.
+- Despliegue: exclusivamente mediante `decide_gguf.py` de Mapika sobre llama-cpp-python 0.3.36 y decider-ai 1.5.0; no compatible con llama-server (`/v1/systemone`), Ollama ni LM Studio en modo decisión.
+- Entorno probado: Python 3.12, solo Linux; requiere compilador C++, CMake y CUDA toolkit con `nvcc` en el PATH para la build con GPU.
+- Nota de instalación: `decider-ai` arrastra PyTorch (varios GB) como dependencia aunque `decide_gguf.py` no ejecuta el modelo en PyTorch.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Acuerdo con BF16 (typed-decisions) | Licencia |
-|---|---|---|---|---|
-| turintech/decider-2b-Artemis-GGUF (Q4_K_M) | 1,88 B | GGUF | 93,65 % | Apache 2.0 |
-| Mapika decider-2b Q4_K_M | 1,88 B | GGUF | 89,45 % | no disponible |
-| Mapika/decider-2b (original) | 1,88 B | BF16 | 100 % (referencia) | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Enfoque |
+|---|---|---|---|---|---|
+| decider-2b-Artemis-GGUF | 1.881.825.088 | no disponible | apache-2.0 | GGUF (Q4_K_M) | Decisión tipada con salida probabilística |
+| Mapika/decider-2b (base) | no disponible | no disponible | no disponible | no disponible | Decisión tipada, modelo original |
+| Mapika/decider-2b-GGUF (Q4_K_M) | no disponible | no disponible | no disponible | GGUF | Decisión tipada, cuantización de referencia (89,45 % de conservación) |
 
-No hay alternativas de otros fabricantes en la misma categoría (modelos de decisión tipados de ~2B) en la información disponible.
+No se dispone de datos suficientes sobre modelos comparables de la misma categoría (clasificadores de decisión tipada) para ampliar la comparativa con parámetros, contexto y rendimiento.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional ni generador de texto: solo produce decisiones tipadas y únicamente a través de `decide_gguf.py`; intentar usarlo en Ollama, LM Studio o llama-server como modelo de texto dará resultados sin sentido para el caso de uso previsto.
-- Discrepancia CPU/GPU: las compilaciones CPU y GPU dan probabilidades ligeramente distintas; en decisiones ajustadas (como el ejemplo de urgencia de la model card) pueden elegir opciones diferentes. Si despliegas en producción, fija la plataforma y calibra los umbrales sobre ella.
-- La accuracy absoluta publicada (61,15 %) es moderada; el 93,65 % mide acuerdo con el original BF16, no calidad intrínseca. Evalúa el modelo en tu dominio antes de confiar en él.
-- Resultados no verificados: las métricas provienen del propio autor (TurinTech) y están marcadas como no verificadas.
-- Sesgos conocidos y riesgo de alucinación: no disponibles; al ser un clasificador con opciones cerradas, el riesgo de alucinación textual es bajo, pero puede asignar confianza alta a opciones incorrectas.
-- Idiomas soportados: no disponible; probablemente optimizado para inglés (el dataset de evaluación y los ejemplos están en inglés), sin garantías para castellano.
-- Entorno: probado solo en Linux; la instalación de la build CUDA requiere compilador C++, CMake y el toolkit de CUDA con `nvcc` en el PATH.
-- Licencia: Apache 2.0, sin restricciones para uso comercial, aunque la licencia del modelo base Mapika/decider-2b no está especificada en la información disponible.
+- No es un modelo conversacional: no genera texto libre ni mantiene diálogo; su uso está restringido a decisiones con opciones cerradas.
+- Requiere el script `decide_gguf.py` de Mapika y llama-cpp-python; no funciona con Ollama, LM Studio ni llama-server en modo decisión, lo que limita su integración en despliegues estándar.
+- La precisión declarada en decisiones tipadas es del 61,15 %, moderada; conviene validar con datos propios antes de producción.
+- Los resultados de benchmarks son declarados por el autor y no están verificados (`verified: false`).
+- No se documentan sesgos conocidos, riesgo de alucinación ni limitaciones de idioma; al no ser generativo, el riesgo de alucinación textual es bajo, pero la calibración de probabilidades debe evaluarse en el dominio de uso.
+- Solo se ha probado en Linux; el soporte en otros sistemas no está confirmado.
+- La instalación de `decider-ai` arrastra PyTorch (varios GB) innecesariamente para la inferencia GGUF.
+- Licencia Apache 2.0: permite uso comercial, pero debe conservarse el aviso de licencia y atribución correspondiente.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/turintech/decider-2b-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/decider-2b-Artemis-GGUF
 - Modelo base: https://huggingface.co/Mapika/decider-2b
-- GGUF original y scripts (`decide_gguf.py`, `decider_config.json`): https://huggingface.co/Mapika/decider-2b-GGUF (revisión `0df001b8fe4e5298c5dd45d875d3795fcdaea0ab`)
-- Resultados en la model card: https://huggingface.co/turintech/decider-2b-Artemis-GGUF#results
-- Hilo de feedback de TurinTech: https://huggingface.co/spaces/turintech/README/discussions/1
-- Web del autor: https://turintech.ai
-- Dataset de evaluación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+- Cuantización de referencia de Mapika: https://huggingface.co/Mapika/decider-2b-GGUF
+- TurinTech: https://www.turintech.ai
+- Otros modelos de TurinTech: https://huggingface.co/turintech
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai

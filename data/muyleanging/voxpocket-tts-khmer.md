@@ -2,116 +2,114 @@
 
 ## Resumen
 
-VoxPocket-TTS-Khmer es un modelo de síntesis de voz (text-to-speech) especializado en jemer (khmer), desarrollado por el usuario muyleanging y publicado en Hugging Face bajo licencia Apache 2.0. Se construye como un ajuste fino de openbmb/VoxCPM1.5, un modelo TTS de la familia VoxCPM, y incorpora datos destilados de VoxCPM2 (2,38B parámetros), su modelo "profesor". El resultado es un modelo de 0,89B parámetros que genera audio a 44,1 kHz y que, según el autor, supera en calidad de lectura de jemer a su propio profesor siendo 2,7 veces más pequeño.
+VoxPocket-TTS-Khmer es un modelo de síntesis de voz (text-to-speech) especializado en jemer (khmer) y en code-mixing jemer-inglés, desarrollado por el usuario muyleanging a partir de un fine-tuning del modelo base openbmb/VoxCPM1.5. Con aproximadamente 0,89B parámetros (801.729.856 según los safetensors), genera audio a 44,1 kHz y está diseñado para leer jemer con claridad, clonar voces a partir de clips cortos y aplicar estilos emocionales o descripciones de voz.
 
-El modelo resuelve un problema concreto: la escasez de sistemas TTS de calidad para jemer, un idioma de bajos recursos, y la necesidad de manejar texto mixto jemer-inglés, habitual en contextos reales. Además de leer jemer y frases con palabras en inglés, permite clonar una voz a partir de un clip corto (4-9 segundos) y aplicar estilos emocionales (susurro, enfado, alegría, sorpresa, tristeza) o descripciones de voz sin necesidad de referencia de audio.
+El modelo resuelve el problema de la baja disponibilidad de TTS de calidad para jemer, un idioma de bajos recursos, y lo hace con un tamaño contenido que permite inferencia en GPU de consumo. Su relevancia actual radica en que supera en precisión de lectura a su modelo profesor VoxCPM2 (2,38B) en sus pruebas internas, siendo 2,7 veces más pequeño, un 33% más rápido y consumiendo un 38% menos energía.
 
-Es relevante ahora porque demuestra que un ajuste fino eficiente sobre un modelo base abierto puede superar a un modelo mayor en una lengua específica, con menores requisitos de memoria (3,8-6,3 GB de VRAM en una RTX 5090) y menor consumo energético. El repositorio ocupa 13,2 GB e incluye varios checkpoints intermedios.
+La arquitectura subyacente es la de VoxCPM (no se detalla en la información disponible más allá de la librería voxcpm), con pesos en safetensors, licencia Apache 2.0 y soporte para jemer (km) e inglés (en).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo TTS basado en VoxCPM1.5) |
-| Parámetros totales | 801.729.856 (0,89B según el autor) |
-| Parámetros activos | no aplica (no es MoE) |
+| Arquitectura | VoxCPM (fine-tuning de openbmb/VoxCPM1.5); detalles internos no disponibles |
+| Parametros totales | 801.729.856 (~0,89B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | jemer (km), inglés (en); mezcla jemer-inglés |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | jemer (km), ingles (en); incluye code-mixing jemer-ingles |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Frecuencia de muestreo | 44.100 Hz |
-| Modelo base | openbmb/VoxCPM1.5 |
-| Librería | voxcpm |
-| Tamaño del repositorio | 13,2 GB |
+| Frecuencia de muestreo | 44.1 kHz |
+| Libreria | voxcpm |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo (tipo de transformer, mecanismo de atención o componentes del decodificador acústico). Se sabe que hereda la arquitectura de VoxCPM1.5 y que la inferencia se realiza mediante la librería `voxcpm`, con parámetros como `cfg_value` (2.0 en los ejemplos) e `inference_timesteps` (10 en los ejemplos), lo que sugiere un proceso de generación iterativa con guiado por clasificador libre. El modelo opera a 44,1 kHz.
+El modelo parte del checkpoint previo de VoxPocket (VoxCPM 1.5 fine-tuneado en jemer) y se entrena durante una pasada completa adicional de 43.200 pasos, con learning rate 2e-5 con warm-up y batch efectivo de 18 clips. No se detalla en la información disponible la arquitectura interna (transformer, difusión, etc.) más allá de que pertenece a la familia VoxCPM y usa la librería voxcpm.
 
-El entrenamiento parte del checkpoint previo de VoxPocket (VoxCPM 1.5 ajustado a jemer) y se extiende durante una pasada completa adicional de 43.200 pasos, con tasa de aprendizaje 2e-5 con warm-up y batch efectivo de 18 clips. Los datos suman 778.028 clips y aproximadamente 1.010 horas de audio único (1.247 horas contando el habla real dos veces): 237 horas de habla real jemer con doble peso, unas 600 horas de habla sintética generada por VoxCPM2 y filtrada por un reconocedor de voz (se conservan solo clips con ≤15% de error de letras), incluyendo 340 horas nuevas de habla estilizada y emocional, lectura larga multioración y frases jemer con palabras en inglés, más 157 horas de pares clip de voz + estilo para permitir el cambio de tono en voces clonadas. El entrenamiento se realizó en una única NVIDIA RTX 5090 de 32 GB con CUDA 13.
+Los datos de entrenamiento suman 778.028 clips y aproximadamente 1.010 horas de audio único (1.247 h contando el habla real dos veces): 237 h de habla real jemer con doble peso, unas 600 h de habla sintética generada por VoxCPM2 y filtrada por un reconocedor de voz (se conservan solo clips con ≤15% de error de letras), incluyendo 340 h nuevas de habla estilizada y emocional, lectura larga multi-frase y frases jemer con palabras inglesas, más 157 h de pares clip de voz + estilo para permitir cambio de tono en voces clonadas. No se menciona RLHF ni DPO en la información disponible.
 
 ## Capacidades
 
-- Síntesis de voz en jemer con lectura de texto nativo.
-- Lectura de texto mixto jemer-inglés (code-mixing) y de inglés plano.
-- Clonación de voz a partir de un clip de referencia limpio de 4-9 segundos, acompañado de la transcripción exacta de lo que se dice en el clip.
-- Control de estilo mediante etiquetas entre paréntesis al inicio del texto: susurro, enfado, alegría, sorpresa, tristeza, excitación, calma, tono de locutor de noticias.
-- Diseño de voz sin clip de referencia, mediante descripción textual entre paréntesis (por ejemplo, "mujer joven, voz clara y brillante, tono alegre").
-- Generación de audio a 44,1 kHz.
-- Streaming con tiempo hasta el primer sonido de 64 ms según el benchmark del autor.
-- No se menciona soporte de tool calling, agentes ni otras modalidades (visión, audio de entrada) en la información disponible.
+- Síntesis de voz en jemer a 44,1 kHz con una mediana de 3,7% de error de letras en frases no vistas (checkpoint principal, paso 30.000).
+- Lectura de jemer mezclado con palabras en inglés y de inglés plano.
+- Clonación de voz a partir de un clip limpio de 4-9 segundos junto con la transcripción exacta de lo que se dice en él.
+- Control de estilo emocional mediante etiquetas entre corchetes: susurro, enfado, alegría, sorpresa, tristeza, excitación, calma, tono serio de locutor.
+- Diseño de voz sin clip de referencia, describiendo la voz y el tono entre corchetes.
+- Generación de audio en streaming con tiempo hasta el primer sonido de 64 ms.
+- Lectura de párrafos cortos (hasta ~3 frases) en una sola pasada; para textos largos se recomienda dividir en frases.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión ni audio de entrada.
 
 ## Casos de uso
 
-- Audiolibros y lectura de prensa en jemer: el modelo lee párrafos de hasta unas tres frases con buena calidad; para textos largos se recomienda dividir en oraciones y concatenar el audio, lo que encaja en un pipeline de segmentación + síntesis + unión.
-- Doblaje y locución con control emocional: las etiquetas de estilo permiten generar la misma frase en tono neutro, alegre o enfadado sin cambiar de voz, útil para producción de contenido multimedia.
-- Asistentes de voz y atención al cliente en jemer: con clonación de voz se puede mantener una identidad sonora de marca consistente y generar respuestas con baja latencia (64 ms hasta el primer sonido en streaming).
-- Localización de contenido con code-mixing: al leer frases jemer con términos técnicos en inglés (nombres de productos, siglas), evita tener que traducir o transliterar esos términos.
-- Accesibilidad: conversión de texto a voz para personas con discapacidad visual en jemer, con voces personalizadas mediante clonación a partir de un clip del propio usuario o de un familiar.
-- Investigación en TTS para lenguas de bajos recursos: sirve como punto de partida para ajustes finos en otros idiomas o para estudiar destilación de modelos mayores (VoxCPM2) a modelos pequeños.
-- Prototipado rápido en aplicaciones móviles o de escritorio: con 0,89B parámetros y 1,9 GB de RAM de CPU, es viable en entornos con recursos limitados comparado con modelos de 2,38B.
+- Locución de noticias y contenido editorial en jemer: el modelo incluye un estilo "serious and clear news-reader tone" y lee párrafos cortos de forma fiable, adecuado para generar boletines o artículos narrados.
+- Audiolibros y lectura de documentos: dividiendo el texto en frases y uniendo el audio, se puede narrar contenido largo con una voz clonada consistente.
+- Atención al cliente y asistentes de voz en jemer: la clonación de voz y el streaming con 64 ms hasta el primer sonido permiten respuestas conversacionales de baja latencia.
+- Doblaje y localización de contenido: el soporte de code-mixing jemer-inglés permite leer guiones que mezclan préstamos ingleses, habituales en el habla real jemer.
+- Generación de voz con matices emocionales para videojuegos o podcasts: las etiquetas de estilo (susurro, enfado, alegría, tristeza) permiten variar el tono de un mismo personaje clonado.
+- Accesibilidad y lectores de pantalla: síntesis local en GPU de consumo (3,8 GB de VRAM en texto corto) para convertir texto jemer en voz en entornos con recursos limitados.
+- Creación de voces sintéticas personalizadas: el modo de diseño de voz sin clip permite generar voces descritas por texto para prototipos y demos.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados por el autor usan un clip de voz fijo, cfg 2.0, 10 pasos y semilla 0, con un reconocedor de voz jemer (seanghay/Qwen3-ASR-0.6B-Khmer) que transcribe la salida y cuenta errores de letras sobre 40 frases no vistas en entrenamiento (menor es mejor).
+Resultados de lectura sobre 40 frases no vistas, con el mismo clip de voz, cfg 2.0, 10 pasos y semilla 0; el error se mide con el reconocedor seanghay/Qwen3-ASR-0.6B-Khmer contando errores de letras jemer (menor es mejor):
 
-| 40 frases retenidas | Error mediano | Error medio | Frases con >10% de errores |
+| Modelo | Error mediano | Error medio | Frases con >10% de errores |
 |---|---|---|---|
-| VoxPocket (esta versión) | 4,3% | 6,1% | 8/40 |
-| VoxPocket (versión anterior) | 6,6% | 7,2% | 10/40 |
+| VoxPocket (esta version) | 4,3% | 6,1% | 8/40 |
+| VoxPocket (version anterior) | 6,6% | 7,2% | 10/40 |
 | VoxCPM2 (2,38B) | 4,8% | 7,0% | 12/40 |
 
-El autor indica que en una segunda máquina el mismo test da 3,7% (checkpoint de 30.000 pasos) frente a 5,1% de la versión anterior, y que el error mediano en frases retenidas es del 3,7% (frente a 5,1% previo), con 7 de 40 frases mal leídas frente a 12 de la versión anterior.
+En una segunda máquina, el mismo test da 3,7% (paso 30.000) frente a 5,1% de la versión anterior.
 
 Rendimiento en 1× NVIDIA GeForce RTX 5090:
 
-| Métrica | VoxPocket | VoxCPM2 |
+| Metrica | VoxPocket | VoxCPM2 |
 |---|---|---|
-| Parámetros | 0,89B | 2,38B |
+| Parametros | 0,89B | 2,38B |
 | Velocidad | 3,6× tiempo real | 2,7× |
 | Tiempo hasta el primer sonido (streaming) | 64 ms | 77 ms |
 | Memoria GPU pico (texto corto / largo) | 3,8 / 6,3 GB | 6,5 / 8,9 GB |
 | Potencia GPU hablando | 173 W | 205 W |
-| Energía por minuto de habla | 0,80 Wh | 1,29 Wh |
+| Energia por minuto de habla | 0,80 Wh | 1,29 Wh |
 | RAM de CPU | 1,9 GB | 3,1 GB |
 
-Calidad por checkpoint (error mediano de letras): paso 30.000 (principal) 3,7%; paso 35.000 4,0%; paso 40.000 4,0%; final-43.200 4,0%.
+Checkpoints alternativos: paso 35.000 y 40.000 con 4,0% de error mediano, y final-43.200 con 4,0%.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 3,8 GB con texto corto y 6,3 GB con texto largo en una RTX 5090, según el benchmark del autor.
+- VRAM estimada para inferencia: 3,8 GB de pico en texto corto y 6,3 GB en texto largo (medido en RTX 5090).
 - RAM de CPU: 1,9 GB.
-- GPU recomendadas: NVIDIA RTX 5090 (32 GB) es la empleada en los benchmarks y en el entrenamiento; por el reducido consumo de memoria, es probable que quepa en GPUs consumer con 8 GB o más, aunque no se han publicado pruebas en otras GPUs.
-- Cabe en GPU consumer: sí, según los datos de memoria pico (3,8-6,3 GB), en tarjetas con al menos 8 GB de VRAM; no hay mediciones publicadas para modelos concretos distintos de la RTX 5090.
-- Opciones de despliegue: librería `voxcpm` (ejemplos oficiales con `VoxCPM.from_pretrained` y `load_denoiser=False`); existe una demo en Hugging Face Spaces. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: 64 ms hasta el primer sonido en streaming y 3,6× tiempo real en RTX 5090; consumo de 173 W durante la síntesis.
+- GPU recomendadas: NVIDIA RTX 5090 (referencia de las pruebas); por el bajo consumo de VRAM, cabe en GPU de consumo con al menos ~6-7 GB libres para texto largo.
+- Cabe en GPU de consumo: sí, según las cifras de memoria pico (3,8-6,3 GB); no se detallan modelos concretos más allá de la RTX 5090.
+- Opciones de despliegue: librería voxcpm mediante `VoxCPM.from_pretrained` con `load_denoiser=False`; no se documentan en la información disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: 3,6× tiempo real y 64 ms hasta el primer sonido en streaming en RTX 5090.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Licencia | Contexto | Rendimiento en jemer (error mediano) | Disponibilidad |
+| Modelo | Parametros | Idiomas | Error mediano (lectura jemer) | Velocidad (RTX 5090) | Memoria GPU pico (corto/largo) | Licencia |
 |---|---|---|---|---|---|---|
-| VoxPocket-TTS-Khmer | 0,89B | km, en | Apache 2.0 | no disponible | 4,3% (test GPU) / 3,7% (segunda máquina) | Hugging Face, demo en Spaces |
-| VoxCPM2 | 2,38B | no disponible en la información | no disponible | no disponible | 4,8% (test GPU) | modelo base/profesor citado; disponibilidad no detallada |
-| VoxCPM1.5 | no disponible | no disponible | no disponible | no disponible | no disponible | modelo base en openbmb/VoxCPM1.5 |
-| VoxPocket (versión anterior) | no disponible | km, en | no disponible | no disponible | 6,6% (test GPU) | checkpoint previo del mismo autor |
+| VoxPocket-TTS-Khmer | 0,89B | km, en | 4,3% | 3,6× tiempo real | 3,8 / 6,3 GB | Apache 2.0 |
+| VoxCPM2 | 2,38B | no disponible en detalle | 4,8% | 2,7× tiempo real | 6,5 / 8,9 GB | no disponible |
+| VoxPocket (version anterior) | no disponible | km, en | 6,6% | no disponible | no disponible | no disponible |
+
+No se dispone en la información proporcionada de otros modelos TTS comparables para jemer.
 
 ## Limitaciones y advertencias
 
-- En párrafos muy largos (450+ caracteres) comete muchos errores y VoxCPM2 es mejor en ese régimen; se recomienda dividir el texto en oraciones.
-- La clonación de voz requiere un clip limpio de 4-9 segundos y la transcripción exacta de lo que se dice en él; clips ruidosos o transcripciones incorrectas degradan el resultado.
-- Las palabras duplicadas con el signo jemer `ៗ` deben escribirse completas o expandirse en el paso de texto previo.
-- Los benchmarks son autoinformados por el autor, con un único reconocedor de voz como evaluador y 40 frases de test; no hay evaluación independiente publicada.
-- El entrenamiento usa unas 600 horas de habla sintética generada por VoxCPM2, lo que puede propagar sesgos o artefactos del modelo profesor.
-- No se dispone de información sobre sesgos demográficos, de género o acento, ni sobre tasas de alucinación o contenido no fiable en la síntesis.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base (VoxCPM1.5) y los datos de entrenamiento deben verificarse por separado; la información disponible no detalla las licencias de los datasets de audio real.
-- Solo se han publicado pruebas en una GPU (RTX 5090); el rendimiento en otros hardware es desconocido.
-- El uso de clonación de voz plantea riesgos de suplantación; no se documentan mecanismos de marca de agua o detección en la información disponible.
+- En párrafos muy largos (450+ caracteres) comete muchos errores y VoxCPM2 es mejor en ese escenario; se recomienda dividir el texto en frases.
+- Las palabras duplicadas con el signo `ៗ` deben escribirse expandidas o el paso de texto debe expandirlas; de lo contrario puede fallar.
+- La clonación de voz requiere clips limpios de 4-9 segundos y la transcripción exacta de lo dicho en el clip.
+- Los errores de lectura medidos (3,7-4,3% mediano) implican que aún hay frases con mala pronunciación (8 de 40 con >10% de errores).
+- No se documentan en la información disponible sesgos específicos, tasas de alucinación ni limitaciones de idioma más allá del jemer e inglés.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base openbmb/VoxCPM1.5 y de los datos de entrenamiento antes de producción.
+- Parte del entrenamiento usa habla sintética generada por VoxCPM2, lo que puede introducir artefactos del modelo profesor.
+- No se detallan requisitos de atribución ni restricciones adicionales en la model card.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/muyleanging/VoxPocket-TTS-Khmer
 - Demo en Spaces: https://huggingface.co/spaces/muyleanging/VoxPocket-TTS-Demo
-- Dataset de entrenamiento: https://huggingface.co/datasets/muyleanging/VoxPocket-TTS-Khmer
+- Dataset de entrenamiento: https://huggingface.co/datasets/muyleanging/VoxPocket-TTS-Khmer-Data-Preview
 - Modelo base: https://huggingface.co/openbmb/VoxCPM1.5
 - Reconocedor usado en la evaluación: https://huggingface.co/seanghay/Qwen3-ASR-0.6B-Khmer

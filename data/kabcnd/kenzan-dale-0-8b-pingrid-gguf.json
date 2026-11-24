@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "id": "kabcnd/Kenzan-Dale-0.8B-PinGrid-GGUF",
+  "slug": "kabcnd-kenzan-dale-0-8b-pingrid-gguf",
+  "author": "kabcnd",
+  "url": "https://huggingface.co/kabcnd/Kenzan-Dale-0.8B-PinGrid-GGUF",
+  "created_at": "2026-11-24T00:48:09.000Z",
+  "updated_at": "2026-11-24T00:48:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "kenzan",
+    "pingrid",
+    "bash",
+    "shell",
+    "nl2bash",
+    "cli",
+    "qwen3_5",
+    "gated-deltanet",
+    "imatrix",
+    "conversational",
+    "apple-silicon",
+    "metal",
+    "llama.cpp",
+    "text-generation",
+    "es",
+    "en",
+    "base_model:manuelgscom/dale-0.8b",
+    "base_model:quantized:manuelgscom/dale-0.8b",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1291854896,
+  "storage_human": "1.3 GB",
+  "context_length": 262144,
+  "base_model": "manuelgscom/dale-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "dale bash test v2",
+      "metric": "Strict JSON Contract Validity (Q4_K_M / Q3_K)",
+      "value": 100
+    },
+    {
+      "task": null,
+      "dataset": "dale bash test v2",
+      "metric": "Primary Utility Match vs Reference (Q4_K_M PinGrid)",
+      "value": 90.27
+    }
+  ],
+  "sources": []
+}

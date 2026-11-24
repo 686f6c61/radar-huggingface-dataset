@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mlx-community/Qwen3.5-35B-A3B-4bit · Hugging Face",
-      "url": "https://huggingface.co/mlx-community/Qwen3.5-35B-A3B-4bit",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "mlx-community/Qwen3.5-35B-A3B-OptiQ-4bit at main - Hugging Face",
-      "url": "https://huggingface.co/mlx-community/Qwen3.5-35B-A3B-OptiQ-4bit/tree/main/optiq",
-      "snippet": "like 3 Follow MLX Community 15.6k Text Generation MLX Safetensors qwen3_5_moe quantized mixed-precision 4bit 8bit optiq apple-silicon qwen3.5 conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Qwen 3.5 MLX on Apple Silicon (2026): 35B-A3B in 19.5GB, 9B at 25-35 ...",
-      "url": "https://willitrunai.com/blog/qwen-3-5-mlx-apple-silicon-guide",
-      "snippet": "Qwen 3.5 35B-A3B MLX 4-bit uses ~19.5GB; 9B fits 16GB Macs at 25-35 tok/s. Full MLX memory + tok/s per variant, M4 16GB to M3 Ultra 512GB."
-    },
-    {
-      "title": "mlx-community/Qwen3.5-35B-A3B-4bit — AICHINA.news | AI China News",
-      "url": "https://aichina.news/models/mlx-community/Qwen3.5-35B-A3B-4bit/",
-      "snippet": "This model is a 4-bit quantized version of the Qwen3.5-35B-A3B, hosted on Modelers.cn for the Huawei Ascend AI ecosystem. It leverages Alibaba&#x27;s Qwen3.5 architecture, specifically the Mixture-of-Experts (MoE) variant which balances a large 35B total parameter count with a highly efficient 3B active parameter path per token."
-    },
-    {
-      "title": "Qwen3.5 35B A3B OptiQ 4bit by mlx-community - LLM Explorer",
-      "url": "https://llm-explorer.com/model/mlx-community%2FQwen3.5-35B-A3B-OptiQ-4bit,3EiEQnOGs710BUVldF5Ffn",
-      "snippet": "Qwen3.5 35B A3B OptiQ 4bit is an open-source 35b LLM by mlx-community. VRAM 22.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
-    }
-  ]
+  "sources": []
 }

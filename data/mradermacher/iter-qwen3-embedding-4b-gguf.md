@@ -2,80 +2,94 @@
 
 ## Resumen
 
-ITER-Qwen3-Embedding-4B-GGUF es una colección de cuantizaciones en formato GGUF del modelo de embeddings ITER-Qwen3-Embedding-4B, desarrollado por el laboratorio ielabgroup y cuantizado por mradermacher. El modelo original está diseñado para tareas de similitud de frases, búsqueda densa, búsqueda agéntica y deep research, y se basa en la familia Qwen3-Embedding de Alibaba, concretamente en la variante de 4 mil millones de parámetros. Esta versión GGUF permite ejecutar el modelo en entornos con recursos limitados, como CPU o GPUs de consumo, sin necesidad de frameworks pesados.
+ITER-Qwen3-Embedding-4B-GGUF es la distribucion en formato GGUF del modelo de embeddings densos ielabgroup/ITER-Qwen3-Embedding-4B, publicada por el usuario mradermacher. El modelo original, desarrollado por el grupo ielab, deriva de la familia Qwen3-Embedding y esta orientado a tareas de similitud semantica, recuperacion densa (dense retrieval), busqueda agentica y deep research. Con 4.021.774.336 parametros, se posiciona en el segmento de embeddings de tamano medio, donde el equilibrio entre calidad de representacion y coste de inferencia es critico.
 
-La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de embeddings de alto rendimiento en producción, aprovechando la cuantización para reducir el uso de memoria y acelerar la inferencia. Al estar licenciado bajo Apache 2.0, es apto para uso comercial y modificación. El repositorio incluye múltiples niveles de cuantización, desde Q2_K hasta f16, lo que permite ajustar el equilibrio entre calidad y eficiencia según el hardware disponible.
+Esta version GGUF existe para permitir la ejecucion del modelo en entornos con recursos limitados: llama.cpp, Ollama y otros runners compatibles con GGUF, ademas de despliegues en CPU o GPU de gama consumer. El repositorio incluye cuantizaciones estaticas desde Q2_K (1,8 GB) hasta f16 (8,1 GB), lo que facilita su integracion en pipelines de recuperacion de informacion sin necesidad de infraestructura de datacenter.
+
+La relevancia actual del modelo radica en su orientacion a busqueda agentica y deep research, casos de uso en auge donde los sistemas RAG necesitan embeddings de alta calidad que puedan ejecutarse localmente y con baja latencia. La licencia Apache 2.0 y la disponibilidad de cuantizaciones ligeras lo hacen atractivo para prototipado rapido y despliegues en produccion con restricciones de hardware.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base: ielabgroup/ITER-Qwen3-Embedding-4B, basado en Qwen3-Embedding-4B) |
-| Parametros totales | 4.021.774.336 (4B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
+| Arquitectura | Transformer (derivado de Qwen3-Embedding), encoder para embeddings densos |
+| Parametros totales | 4.021.774.336 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo ITER-Qwen3-Embedding-4B en la documentacion proporcionada. Se sabe que es un modelo de embeddings densos, probablemente basado en la arquitectura transformer de Qwen3, pero no se confirma el numero de capas, dimensiones ocultas ni el mecanismo de atencion. Tampoco se han publicado datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas como RLHF o DPO. La unica referencia tecnica es el tag arxiv:2608.27912, que sugiere la existencia de un paper asociado, pero su contenido no esta accesible en la informacion recopilada.
+El modelo base ielabgroup/ITER-Qwen3-Embedding-4B es un encoder transformer derivado de Qwen3-Embedding, disenado especificamente para generar representaciones vectoriales densas de texto. Al tratarse de un modelo de embeddings, su salida es un vector por secuencia de entrada, no texto generado; la arquitectura subyacente corresponde a la de Qwen3-Embedding con 4.021 millones de parametros. La informacion disponible no detalla el numero de capas, dimensiones ocultas ni la dimension del embedding resultante.
 
-La cuantizacion realizada por mradermacher es estatica, es decir, se aplica una conversion directa de los pesos originales a formatos de menor precision sin recalibracion con datos de validacion. Esto implica que la degradacion de calidad puede ser mayor que en cuantizaciones con imatrix, aunque los tamaños resultantes son significativamente menores.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o ajuste contrastivo especifico. Los tags del modelo indican que esta optimizado para dense-retrieval, agentic-search y deep-research, lo que sugiere un entrenamiento orientado a tareas de recuperacion, pero no se aportan detalles tecnicos sobre el proceso. Esta version GGUF es una conversion estatica del modelo original realizada por mradermacher, sin cambios en la arquitectura; las cuantizaciones se generaron con el conversor estandar de llama.cpp (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1).
 
 ## Capacidades
 
-- Generacion de embeddings de texto para similitud semantica (sentence-similarity).
-- Búsqueda densa (dense retrieval) sobre colecciones documentales.
-- Soporte para busqueda agéntica (agentic search) y deep research, segun los tags del modelo.
-- Capacidad multilingue limitada: solo se declara ingles (en).
-- No se menciona soporte para tool calling, generacion de texto libre ni razonamiento multi-paso; es un modelo puramente de representacion vectorial.
+- Generacion de embeddings densos para similitud semantica y recuperacion de informacion.
+- Recuperacion densa (dense retrieval) en pipelines RAG.
+- Busqueda agentica (agentic search): representacion de consultas y documentos en flujos multi-paso.
+- Deep research: indexacion y recuperacion sobre corpus extensos.
+- Soporte de similitud entre frases (pipeline sentence-similarity).
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- Capacidad conversacional segun los tags del modelo.
+- No es un modelo generativo de texto: no produce respuestas, solo vectores.
+- No dispone de soporte multimodal, tool calling ni modo thinking.
 
 ## Casos de uso
 
-- Búsqueda semantica en bases de conocimiento: el modelo puede indexar documentos y consultas en un mismo espacio vectorial, permitiendo recuperar pasajes relevantes mediante similitud coseno. Su cuantizacion Q4_K_M (2.6 GB) lo hace viable en servidores con poca RAM.
-- Sistemas de recomendacion basados en contenido: al convertir items y perfiles de usuario en embeddings, se pueden calcular similitudes para sugerir productos, articulos o recursos.
-- Deduplicacion de documentos: comparar embeddings de textos para detectar duplicados o variantes cercanas en grandes corpus, gracias a la eficiencia de la cuantizacion.
-- Clasificacion de textos: usar los embeddings como caracteristicas de entrada para clasificadores ligeros (regresion logistica, SVM) en tareas de analisis de sentimiento o categorizacion.
-- Chatbots con recuperacion aumentada (RAG): integrar el modelo en un pipeline de retrieval para alimentar a un LLM generativo con contexto relevante, reduciendo costes de inferencia al usar una version cuantizada.
-- Indexacion de documentacion tecnica: generar embeddings de manuales, guias y APIs para habilitar busquedas precisas en entornos de desarrollo, aprovechando la licencia Apache 2.0 para uso comercial.
+- Recuperacion aumentada por generacion (RAG) en produccion: el modelo genera embeddings de documentos y consultas para un indice vectorial; su tamano de 4B parametros y las cuantizaciones Q4_K_M (2,6 GB) permiten ejecutarlo en una GPU consumer junto al generador.
+- Busqueda semantica en bases de conocimiento internas: indexacion de documentacion corporativa en ingles y recuperacion por similitud semantica, con despliegue en llama.cpp u Ollama sobre CPU si no hay GPU disponible.
+- Sistemas de busqueda agentica: representacion de subconsultas generadas por un agente en flujos de deep research multi-paso, donde la baja latencia de las cuantizaciones ligeras (Q4_K_S, 2,5 GB) reduce el coste por paso.
+- Deduplicacion y clustering de documentos: calculo de similitud entre pares de textos para agrupar contenido redundante en corpus grandes, aprovechando que el modelo solo requiere un forward pass por documento.
+- Filtrado de candidatos en pipelines de moderacion o recomendacion: comparacion de textos contra un conjunto de referencia mediante similitud coseno, con la cuantizacion Q8_0 (4,4 GB) como opcion de maxima calidad en GPU de 8 GB.
+- Prototipado rapido en entornos sin GPU: uso de la cuantizacion Q2_K (1,8 GB) en portatiles o contenedores CPU para validar la calidad de recuperacion antes de escalar a infraestructura mayor.
+- Evaluacion de calidad de embeddings en investigacion: comparacion de cuantizaciones (de Q2_K a f16) sobre un mismo benchmark de retrieval para medir la degradacion introducida por la compresion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni metricas especificas de retrieval como nDCG o MRR para este modelo. Se recomienda consultar el paper asociado (arxiv:2608.27912) o el repositorio del modelo base para obtener evaluaciones comparativas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun el archivo GGUF elegido, se necesitan aproximadamente 1.8 GB (Q2_K) hasta 8.1 GB (f16) de memoria. Para Q4_K_M (recomendado) se requieren unos 2.6 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3050) puede ejecutar las cuantizaciones Q4 o inferiores. Para f16 se recomienda una GPU con 8+ GB (RTX 3070, A10, etc.).
-- En CPU: con llama.cpp o herramientas compatibles, se puede ejecutar en equipos con 4-8 GB de RAM, dependiendo de la cuantizacion.
-- Opciones de despliegue: llama.cpp, Ollama (si se importa el GGUF), vLLM (con soporte para embeddings), o cualquier framework que acepte GGUF.
-- Latencia y throughput: no se dispone de mediciones oficiales. En general, las cuantizaciones Q4_K_M ofrecen un buen equilibrio entre velocidad y calidad, con latencias de milisegundos por embedding en GPU moderna.
+- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas overhead del runtime. Q2_K: ~1,8 GB; Q4_K_M: ~2,6 GB; Q8_0: ~4,4 GB; f16: ~8,1 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060/4060 o superiores para Q8_0; A100/H100 no son necesarias para este tamano, pero pueden usarse para alto throughput en batch.
+- Cabe en GPU consumer: si, practicamente todas las GPU modernas con 4-8 GB de VRAM para las cuantizaciones Q4 a Q8_0.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y cualquier runner compatible con GGUF; el modelo base admite transformers y endpoints compatibles.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| ITER-Qwen3-Embedding-4B-GGUF (este) | 4B | No disponible | Apache-2.0 | GGUF | Cuantizacion de mradermacher, solo ingles |
-| Qwen3-Embedding-4B-GGUF (mradermacher) | 4B | No disponible | Apache-2.0 | GGUF | Version sin ajuste ITER, misma base |
-| BGE-M3 (BAAI) | 568M | 8192 | MIT | safetensors/ONNX | Multilingue, mas pequeño, sin cuantizacion GGUF oficial |
+| ITER-Qwen3-Embedding-4B-GGUF | 4,02B | no disponible | en | Apache 2.0 | GGUF |
+| Qwen3-Embedding-4B (base de la familia) | ~4B | no disponible | multilingue (segun familia) | Apache 2.0 | safetensors, GGUF |
+| Modelos de embeddings de 4B alternativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa es limitada por falta de datos de rendimiento. ITER-Qwen3-Embedding-4B-GGUF se distingue por su ajuste especifico para busqueda agéntica, pero no se puede cuantificar su ventaja sin benchmarks.
+La informacion disponible no permite establecer una comparativa cuantitativa con alternativas concretas; solo se confirma que el modelo deriva de la familia Qwen3-Embedding y que comparte licencia Apache 2.0 con ella.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no es adecuado para textos en otros idiomas.
-- La cuantizacion estatica puede degradar la calidad de los embeddings, especialmente en niveles bajos como Q2_K o Q3_K.
-- No se han publicado evaluaciones de sesgos o alucinaciones; al ser un modelo de embeddings, el riesgo de alucinacion es bajo, pero la calidad de las representaciones depende del entrenamiento original.
-- La licencia Apache-2.0 permite uso comercial, pero se debe verificar que el modelo base (ielabgroup/ITER-Qwen3-Embedding-4B) no tenga restricciones adicionales.
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es una publicacion reciente o poco difundida; se recomienda validar su funcionamiento antes de usarlo en produccion.
+- Solo soporta ingles segun los metadatos del modelo; no se garantiza calidad en otros idiomas.
+- Es un modelo de embeddings, no generativo: no puede responder preguntas ni mantener conversaciones por si mismo.
+- No se dispone de informacion sobre sesgos del modelo base ni sobre evaluaciones de robustez.
+- Riesgo de alucinacion no aplicable en el sentido generativo, pero si de recuperaciones irrelevantes si el corpus o las consultas no estan bien alineados con el dominio de entrenamiento.
+- La cuantizacion introduce degradacion de calidad; las cuantizaciones Q2_K y Q3_K_M son las mas agresivas y el autor advierte de "lower quality" en Q3_K_M.
+- No hay informacion sobre la longitud de contexto soportada, lo que impide planificar el troceado de documentos con precision.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base y de los datos de entrenamiento originales.
+- Las cuantizaciones ponderadas/imatrix no estan disponibles segun el autor, lo que limita la comparacion de calidad frente a otras distribuciones GGUF.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/ITER-Qwen3-Embedding-4B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/ITER-Qwen3-Embedding-4B-GGUF
 - Modelo base: https://huggingface.co/ielabgroup/ITER-Qwen3-Embedding-4B
-- Pagina de descargas alternativa: https://hf.tst.eu/model#ITER-Qwen3-Embedding-4B-GGUF
-- Paper asociado (referencia en tags): arxiv:2608.27912
-- Repositorio de Qwen3-Embedding (para contexto): https://github.com/QwenLM/Qwen3-Embedding
+- Pagina de descargas del autor: https://hf.tst.eu/model#ITER-Qwen3-Embedding-4B-GGUF
+- Paper de referencia (arXiv): https://arxiv.org/abs/2608.27912
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Empresa del autor: https://www.nethype.de/

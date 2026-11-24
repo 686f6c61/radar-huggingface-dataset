@@ -2,91 +2,90 @@
 
 ## Resumen
 
-forge-v3 es un modelo multimodal de tipo image-text-to-text desarrollado por SZL Holdings, construido como ajuste fino supervisado (SFT) sobre `SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3`, que a su vez deriva de la familia Qwen 3.5. Con 873.438.784 parametros (aproximadamente 0,87 mil millones), el modelo esta orientado a tareas de extraccion y grounding documental: su nombre y linaje ("receiptagent", "estate doctrine, source-grounded") sugieren un uso centrado en el procesamiento de recibos, justificantes y documentos estructurados con trazabilidad de la fuente.
+forge-v3 es un modelo de generacion de texto de 873.438.784 parametros publicado por SZLHOLDINGS, un espacio de modelos gobernados que enfatiza la trazabilidad de resultados mediante ficheros de "recibos" (receipts) auditables. El modelo se construye sobre `SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3`, un ajuste fino supervisado (SFT) de la familia Qwen 3.5 en su variante de 0,8 mil millones de parametros, segun indica la etiqueta `qwen3_5` del repositorio.
 
-El modelo se ha entrenado dentro de lo que el autor denomina "fail-closed launch contract", un pipeline gobernado (`szl-forge`) que impone pines inmutables de artefactos, una particion de holdout disjunta por grupos (group-disjoint split, semilla 3407) y recibos de admision del operador. Esta infraestructura de entrenamiento esta documentada en el repositorio GitHub `szl-holdings/szl-forge`, un kit de QLoRA basado en Unsloth. La relevancia de forge-v3 no reside tanto en su rendimiento como en su caracter de artefacto reproducible y auditable: cada etapa del entrenamiento queda fijada a un commit o revision concreta.
+La propuesta diferencial del autor no es el rendimiento bruto sino la honestidad metodologica: la model card declara explicitamente que cualquier cifra no incluida en sus recibos de auditoria se marca como UNKNOWN en lugar de inventarse. Esto lo convierte en un artefacto interesante para equipos que necesitan modelos pequenos, desplegables en hardware modesto y con licencia permisiva (Apache 2.0), dentro de pipelines donde la verificabilidad del origen del modelo importa tanto como la calidad de la generacion.
 
-El propio autor lo etiqueta explicitamente como `RESEARCH_CANDIDATE` y `NOT_PROMOTED`, y advierte de que no esta certificado en calidad ni dispone de benchmarks amplios. La evaluacion sobre el holdout disjunto por grupos esta pendiente de publicacion en el momento de redactar esta ficha. Se distribuye bajo licencia Apache 2.0 y con solo 2 descargas y 0 likes en Hugging Face, lo que lo situa como un experimento interno de un ecosistema corporativo mas que como un modelo listo para produccion.
+Por su tamano, forge-v3 encaja en la categoria de modelos compactos para inferencia en CPU o GPU de consumo, orientados a tareas acotadas como agentes de recibos, extraccion estructurada o asistentes de dominio especifico. No obstante, la informacion publica disponible es muy limitada: no se detallan idiomas, composicion del dataset de entrenamiento, contexto maximo ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), derivado de Qwen 3.5; detalles internos no disponibles |
-| Parametros totales | 873.438.784 (0,87 B) |
+| Arquitectura | Transformer (familia Qwen 3.5, derivado de `szl-receiptagent-qwen35-0.8b-sft-v3`) |
+| Parametros totales | 873.438.784 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; cuantizaciones GGUF/otros no confirmadas) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-forge-v3 es un ajuste fino SFT sobre el checkpoint `szl-receiptagent-qwen35-0.8b-sft-v3` (revision fijada `0340c300`), que hereda la arquitectura de la familia Qwen 3.5 en su variante de 0,8 B y anade capacidad de entrada de imagen (pipeline image-text-to-text). No se detalla en la informacion disponible el numero de capas, dimensiones ocultas, mecanismo de atencion ni el esquema exacto de fusion vision-lenguaje; tampoco se especifica la longitud de contexto nativa.
+forge-v3 es un artefacto derivado de un modelo base de la familia Qwen 3.5 de 0,8 mil millones de parametros, segun la etiqueta `qwen3_5` y el identificador del modelo base `szl-receiptagent-qwen35-0.8b-sft-v3`. El sufijo `sft` del modelo base sugiere un ajuste fino supervisado sobre el modelo preentrenado original, presumiblemente orientado a tareas de agente de recibos (receipt agent). No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.).
 
-El entrenamiento se realizo sobre el corpus "Doctrine-corpus-v2 SFT student (estate doctrine, source-grounded)", con una particion de validacion disjunta por grupos y semilla 3407. El proceso esta gobernado por el pipeline `szl-forge` (contrato de lanzamiento #708), que exige pines inmutables, un minimo de corpus ("corpus floor") y un recibo de admision `ADMITTED_FOR_TRAINING`. Los recibos de evaluacion se publican por oleada en el dataset `model-eval-receipts`. No se documentan fases de RLHF, DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+La model card es deliberadamente parca en detalles tecnicos y remite a los ficheros de recibos del "estate mesh" del autor para cualquier afirmacion de entrenamiento o evaluacion. Cualquier dato no respaldado por un recibo fechado se declara UNKNOWN. Esta politica de documentacion, aunque poco convencional, evita la inflacion de metricas habitual en model cards y traslada la carga de verificacion al consumidor del modelo.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato multimodal image-text-to-text (entrada de imagen y texto).
-- Extraccion y grounding documental: el linaje "receiptagent" y la doctrina "source-grounded" apuntan a tareas de lectura de recibos y justificantes con referencia a la fuente.
-- Procesamiento de documentos con estructura (recibos, facturas, justificantes) segun el corpus de entrenamiento declarado.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; no se declara lista de idiomas.
-- Modo thinking, audio u otras capacidades especiales: no disponible.
+- Generacion de texto autoregresiva estandar, heredada de la arquitectura Qwen 3.5.
+- Ajuste fino supervisado orientado, por el nombre del modelo base, a tareas de agente de recibos (procesamiento de documentos, extraccion de campos, conversacion transaccional).
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: no disponibles (el campo de idiomas figura como no disponible).
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
+- Compatible con la libreria `transformers` y, por tanto, con el ecosistema estandar de inferencia (vLLM, TGI, llama.cpp si se generan cuantizaciones).
 
 ## Casos de uso
 
-- Extraccion de datos de recibos y justificantes: el modelo puede recibir la imagen de un recibo y devolver los campos estructurados (importe, fecha, comercio) apoyandose en su entrenamiento sobre doctrina "source-grounded" para citar la region de origen.
-- Digitalizacion de archivos de gastos: integrado en un pipeline de ingestion documental, procesaria lotes de imagenes y generaria registros normalizados para sistemas de contabilidad.
-- Verificacion con trazabilidad: al haber sido entrenado con enfasis en grounding, encaja en flujos donde cada dato extraido debe poder rastrearse hasta el documento original, util en auditoria interna.
-- Prototipado de asistentes documentales: su tamano de 0,87 B permite desplegarlo en entornos de desarrollo con recursos limitados para validar flujos conversacionales sobre documentos antes de escalar a modelos mayores.
-- Investigacion sobre entrenamiento gobernado: sirve como caso de estudio reproducible de pipelines con pines inmutables y holdout disjunto, gracias a la documentacion del contrato de lanzamiento y los recibos de evaluacion.
-- Evaluacion comparativa de tecnicas QLoRA: al derivar de un kit basado en Unsloth (`szl-forge`), es util para experimentar con recetas de ajuste fino sobre modelos pequenos multimodales.
-- Filtrado previo en pipelines OCR: como primera etapa barata que descarta o clasifica imagenes antes de enviarlas a un modelo mayor, reduciendo coste computacional.
+- Extraccion estructurada de datos de recibos y facturas: dado el nombre del modelo base (`receiptagent`), es plausible usarlo para convertir documentos de gasto en JSON con campos normalizados (fecha, importe, proveedor, impuestos) en pipelines de contabilidad automatizada.
+- Agente de conciliacion de gastos: el modelo puede gestionar conversaciones multi-turno para resolver discrepancias entre recibos y extractos bancarios, aunque la ventana de contexto no esta documentada y debe validarse empiricamente.
+- Asistente de atencion al cliente de dominio acotado: por su tamano (873 M parametros) puede desplegarse en una sola GPU de consumo o incluso en CPU, lo que permite servir respuestas de baja latencia en entornos con presupuesto de infraestructura limitado.
+- Prototipado rapido de pipelines de agentes: al ser Apache 2.0 y pesar unos 3,5 GB en safetensors, es adecuado para experimentar con frameworks de agentes (LangGraph, AutoGen) sin coste de licencia ni necesidad de hardware especializado.
+- Clasificacion y enrutamiento de documentos financieros: el modelo puede usarse como clasificador zero-shot o few-shot de tipos de recibo y decidir el flujo downstream dentro de un sistema de gestion documental.
+- Inferencia en el borde (edge) o entornos air-gapped: al caber en memoria de una GPU consumer o en RAM de servidor, permite desplegar un asistente de dominio especifico en instalaciones sin conectividad externa.
+- Base para ajuste fino adicional: su licencia permisiva y tamano compacto lo convierten en punto de partida para SFT/LoRA sobre dominios verticales (legal, sanitario, logistico) con costes de entrenamiento reducidos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la evaluacion sobre el holdout disjunto por grupos esta "pendiente de publicacion" y que el modelo no ha pasado una certificacion de calidad ni dispone de benchmarks amplios.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ninguna cifra de benchmark mas alla de lo medido en una auditoria fechada, y no se incluye ninguna en el repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 0,87 B parametros, en FP16 requiere aproximadamente 1,8 GB solo para pesos; en BF16 similar. En cuantizacion de 8 bits, en torno a 1 GB; en 4 bits, alrededor de 0,5 GB. Hay que sumar el overhead del codificador visual y del runtime (KV cache, activaciones), por lo que en la practica conviene reservar 3-4 GB en FP16.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060 de 12 GB o superior permite ejecutarlo con holgura en FP16. Tambien cabe en GPUs de 8 GB (RTX 3070, RTX 4060) e incluso en 6 GB con cuantizacion. Para servir en produccion, una A10G, L4 o T4 resulta adecuada por su bajo consumo.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU con 6 GB o mas; tambien es viable en CPU para inferencia no interactiva.
-- Opciones de despliegue: transformers (libreria declarada), ademas de vLLM, TGI o llama.cpp/Ollama si se generan los pesos en los formatos correspondientes (no se publican conversiones oficiales).
+- VRAM estimada para inferencia en precision completa (fp16/bf16): aproximadamente 1,7-1,8 GB solo para pesos, mas overhead de activaciones y cache KV (tipicamente 2,5-4 GB en total segun longitud de contexto).
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 1 GB para pesos; en 4 bits, aproximadamente 0,5 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16 (RTX 3050, RTX 4060, T4); para mayor throughput, A10G, L4 o RTX 4090.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 4 GB o mas; tambien es viable en CPU con cuantizacion GGUF si se generan los pesos correspondientes.
+- Opciones de despliegue: `transformers` (confirmado por la libreria declarada), vLLM, TGI y llama.cpp/Ollama previa conversion a GGUF (no se distribuyen cuantizaciones en el repo).
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| forge-v3 (SZLHOLDINGS) | 0,87 B | no disponible | image-text-to-text | Apache 2.0 | Hugging Face, 2 descargas |
-| Qwen2.5-VL-3B (Alibaba) | 3 B | 32k (tipico en la familia) | vision-lenguaje | Apache 2.0 | ampliamente disponible |
-| SmolVLM-500M (Hugging Face) | 0,5 B | no disponible en esta ficha | vision-lenguaje | Apache 2.0 | ampliamente disponible |
-| Florence-2-base (Microsoft) | 0,23 B | no disponible en esta ficha | vision-lenguaje | MIT | ampliamente disponible |
+| SZLHOLDINGS/forge-v3 | 873 M | no disponible | Apache 2.0 | Hugging Face, safetensors | Derivado de Qwen 3.5 0,8B con SFT; documentacion centrada en trazabilidad |
+| Qwen2.5-0.5B / Qwen3-0.6B | 0,5-0,6 B | 32 K (Qwen2.5) | Apache 2.0 | Hugging Face, amplio ecosistema | Alternativa generica de referencia en el mismo rango de tamano |
+| Llama 3.2 1B | 1,2 B | 128 K | Llama 3.2 Community License | Hugging Face, Ollama | Mayor contexto, pero licencia con restricciones de uso comercial |
+| SmolLM2-1.7B | 1,7 B | 8 K | Apache 2.0 | Hugging Face | Mayor tamano y mejor rendimiento general reportado, pero mas coste de inferencia |
 
-La comparacion con alternativas de la misma categoria es aproximada: forge-v3 no publica contexto, benchmarks ni idiomas, por lo que la eleccion frente a SmolVLM o Florence-2 solo puede basarse en el linaje documental y en la infraestructura de trazabilidad, no en rendimiento medido.
+La comparativa es orientativa: no se dispone de benchmarks publicados de forge-v3 que permitan una comparacion cuantitativa con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Estado declarado por el autor: `RESEARCH_CANDIDATE` y `NOT_PROMOTED`; no esta certificado en calidad ni ha superado benchmarks amplios.
-- Evaluacion pendiente: los resultados sobre el holdout disjunto por grupos no se han publicado, por lo que no hay evidencia cuantitativa de su rendimiento.
-- Riesgo de alucinacion: sin datos de evaluacion ni de tecnicas de mitigacion, el riesgo es desconocido y potencialmente alto en tareas de extraccion de datos donde la precision es critica.
-- Idiomas: no se declara lista de idiomas soportados; no se puede asumir cobertura multilingue.
-- Contexto: longitud de contexto no documentada; no apto para documentos muy largos sin verificacion previa.
-- Sesgos: no se documentan analisis de sesgo; el corpus "estate doctrine" es especifico de un dominio y puede introducir sesgos de dominio.
-- Licencia: Apache 2.0 permite uso comercial, pero el estado de investigacion y la ausencia de certificacion desaconsejan su uso en produccion sin evaluacion propia.
-- Adopcion minima: 2 descargas y 0 likes indican ausencia de validacion por la comunidad; no hay evidencia externa de funcionamiento.
-- Dependencia del ecosistema del autor: la trazabilidad depende de artefactos alojados en repositorios de SZL Holdings (contratos, recibos), lo que limita la reproducibilidad fuera de ese entorno.
+- Ausencia de benchmarks y de documentacion tecnica detallada: no es posible evaluar su calidad frente a alternativas sin realizar una evaluacion propia.
+- Riesgo de alucinacion inherente a los modelos de 0,8 B: la capacidad de razonamiento y la fidelidad factual son limitadas en comparacion con modelos de mayor tamano; no es adecuado para tareas que requieran alta precision sin verificacion posterior.
+- Idiomas soportados no declarados: no se puede asumir un buen rendimiento en castellano sin validacion empirica.
+- Contexto maximo no documentado: planificar el despliegue asumiendo un contexto conservador y medir el comportamiento en conversaciones largas.
+- Sesgos desconocidos: no se documenta la composicion del dataset de entrenamiento ni procesos de mitigacion de sesgos.
+- Licencia Apache 2.0: permisiva para uso comercial, pero el autor no ofrece garantias sobre el rendimiento ni sobre el cumplimiento normativo en dominios regulados.
+- Modelo base de procedencia: al derivar de un SFT de Qwen 3.5, hereda las limitaciones del modelo original, no documentadas en esta ficha.
+- La model card remite a "receipt files" externos para cualquier afirmacion de entrenamiento o evaluacion; conviene verificar esos recibos en el repositorio de GitHub del autor antes de confiar en cualquier metrica.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/forge-v3
 - Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
-- Repositorio del kit de entrenamiento: https://github.com/szl-holdings/szl-forge
-- Contrato de lanzamiento #708: https://github.com/szl-holdings/szl-forge/pull/708
-- Recibos de evaluacion: https://huggingface.co/datasets/SZLHOLDINGS/model-eval-receipts
-- Modelos del autor: https://huggingface.co/models?author=SZLHOLDINGS&sort=modified
+- Organizacion del autor en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Organizacion en GitHub: https://github.com/szl-holdings
+- Herramienta de generacion de model cards: https://github.com/szl-holdings/estate-cards

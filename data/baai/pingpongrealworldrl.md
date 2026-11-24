@@ -2,81 +2,97 @@
 
 ## Resumen
 
-PingPongRealWorldRL es un repositorio publicado en Hugging Face por el Beijing Academy of Artificial Intelligence (BAAI) bajo licencia Apache 2.0. A pesar de su nombre, que sugiere un modelo de reinforcement learning aplicado al tenis de mesa en entornos reales, la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia. No se especifica si se trata de un modelo de lenguaje, un modelo de politica (policy) para control robotico, un dataset de entrenamiento o un entorno de simulacion.
+PingPongRealWorldRL es un sistema de despliegue y aprendizaje por refuerzo en linea para un robot de tenis de mesa Unitree H2, publicado por BAAI (Beijing Academy of Artificial Intelligence). No se trata de un modelo de lenguaje, sino de un runtime de robotica compuesto por varios procesos cooperativos: un generador de movimiento CLoSD congelado que produce trayectorias de referencia, una politica de seguimiento tambien congelada que controla el cuerpo del robot, y un aprendiz TD3 opcional que refina siete objetivos articulares del brazo derecho a partir de resultados medidos de la pelota.
 
-La informacion disponible en el momento de redactar esta ficha es practicamente nula: cero descargas, cero likes, sin pipeline declarado, sin idiomas indicados y sin documentacion asociada. El repositorio fue creado y actualizado el 3 de noviembre de 2026, lo que sugiere una publicacion reciente y posiblemente incompleta o en proceso de documentacion.
+El sistema opera en un bucle cerrado a multiples frecuencias: la politica de seguimiento se ejecuta a 50 Hz sobre observaciones de 182 dimensiones para producir 31 acciones articulares, mientras que un puente C++ traduce las ordenes a comandos LowCmd a 1000 Hz. La correccion residual del brazo derecho consume 213 entradas y genera 7 salidas normalizadas. La captura de movimiento OptiTrack alimenta un predictor de pelota via ZMQ, y las puntuaciones medidas de pelota y raqueta cierran episodios que alimentan al aprendiz TD3 en GPU.
 
-Dado que no se dispone de arquitectura, tamano, contexto ni datos de entrenamiento, todos los apartados tecnicos de esta ficha se marcan como "no disponible". Se recomienda consultar directamente el repositorio para verificar si el autor ha publicado posteriormente pesos, codigo o documentacion adicional.
+Su relevancia radica en que ejemplifica el paradigma de aprendizaje residual en linea sobre hardware real: la politica base y el generador CLoSD permanecen congelados mientras un actor-critico TD3 aprende correcciones sobre el brazo de golpeo. El paquete incluye los pesos ONNX de inferencia, el bundle de runtime CLoSD, el modelo de rebote calibrado y los assets MJCF del robot, todo bajo licencia Apache-2.0 para el codigo original, con la advertencia explicita de que el residuo exportado no esta cualificado para hardware (`hardware_qualified=false`).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Sistema multi-proceso: politica de seguimiento (red neuronal, 182→31), generador CLoSD, actor residual TD3 (213→7), puente C++ |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (no es un modelo de lenguaje) |
+| Tipos de cuantizacion | no disponible (exportaciones ONNX para inferencia) |
+| Idiomas soportados | en (documentacion y codigo) |
+| Licencia | Apache-2.0 (codigo original); materiales de terceros sujetos a sus propias licencias |
+| Formato de pesos | ONNX (politica base y residuo), PyTorch (.pt para CLoSD runtime), JSON (metadatos y calibracion), MJCF (assets del robot) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card disponible. El nombre del repositorio, "PingPongRealWorldRL", sugiere un posible enfoque de reinforcement learning aplicado a una tarea de tenis de mesa en entorno real, pero se trata unicamente de una inferencia a partir del identificador y no de un dato confirmado por el autor.
+El sistema se organiza en torno a tres componentes de aprendizaje congelados o parcialmente entrenables. La politica de seguimiento base (`h2_stageC_model_10500.onnx`) mapea 182 observaciones a 31 acciones articulares con normalizacion embebida en el grafo ONNX. El generador de movimiento CLoSD (`model_80000.closd-runtime.pt`) produce la referencia de movimiento en CUDA. El actor residual (`h2_stageC10500_online_ball_000010_residual.onnx`) recibe 213 entradas y emite 7 correcciones normalizadas para el brazo derecho, entrenado con TD3 (actor-critico con aprendizaje de politica determinista) usando como senal los resultados medidos de pelota y raqueta.
 
-Tampoco se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas especificas. Toda esta seccion queda pendiente de documentacion por parte del autor.
+El flujo de datos combina captura OptiTrack via ROS, un adaptador de mocap, comunicacion ZMQ, un predictor de pelota y un planificador que genera comandos de referencia para CLoSD. El puente C++ (H2BR) actua como interfaz de memoria compartida entre el controlador Python y el hardware, traduciendo a comandos LowCmd a 1000 Hz. La configuracion incluida especifica 100 bolas de calentamiento validas, 200 bolas en linea, tasa de aprendizaje del actor de 1e-6 y 1500 actualizaciones de calentamiento del critico, valores que el autor describe como ajustes experimentales y no como un optimo reclamado. El residuo ONNX exportado proviene de una ejecucion con 100 bolas de calentamiento y 10 bolas en linea; no puede reanudar entrenamiento.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la model card.
-- No consta soporte de generacion de texto, razonamiento, codigo ni matematicas.
-- No consta soporte de tool calling ni function calling.
-- No consta soporte de agentes ni razonamiento multi-paso.
-- No consta informacion sobre capacidades multilingues.
-- No consta informacion sobre modos especiales (thinking, vision, audio).
+- Control de robot humanoide Unitree H2 para tenis de mesa mediante politica de seguimiento a 50 Hz.
+- Generacion de movimiento de referencia con CLoSD sobre CUDA.
+- Aprendizaje por refuerzo en linea con TD3 sobre siete articulaciones del brazo derecho.
+- Prediccion de trayectoria de pelota con modelo de rebote calibrado (`real_ball_hybrid_bounce.json`).
+- Integracion con captura de movimiento OptiTrack via ROS y ZMQ.
+- Simulacion offline en MuJoCo con validacion de preflight y comprobacion de regresion.
+- Control de seguridad con arranque manual L1 y parada latcheada R1.
+- Ejecucion en modo simulacion, simulacion en vivo y hardware real mediante entry points separados.
 
 ## Casos de uso
 
-No es posible enumerar casos de uso concretos sin informacion sobre la naturaleza del artefacto (modelo de lenguaje, policy de RL, dataset o entorno). A continuacion se indican escenarios genericos condicionados a que el repositorio resulte ser un modelo de politica para control robotico, que es la interpretacion mas plausible del nombre:
-
-- Control de robot manipulador en tareas de tenis de mesa: si el repositorio contiene una policy entrenada con RL, podria emplearse para generar acciones de control en tiempo real a partir de observaciones del entorno.
-- Simulacion a real (sim-to-real): un modelo entrenado en simulacion podria transferirse a un brazo robotico fisico para tareas de golpeo.
-- Investigacion en RL aplicado: serviria como referencia reproducible para comparar algoritmos de RL en tareas de contacto fisico.
-- Evaluacion de tecnicas de imitation learning: si incluye datos de demostracion, podria usarse como base para entrenamiento por imitacion.
-- Benchmark de robustez: como entorno de evaluacion de politicas ante variaciones de velocidad y rotacion de la pelota.
-- Docencia: como material de estudio en cursos de robotica y aprendizaje por refuerzo.
-
-Estos casos son hipoteticos y deben verificarse contra la documentacion real del repositorio antes de cualquier uso.
+- Investigacion en robotica de manipulacion deportiva: el sistema permite estudiar el aprendizaje residual en linea sobre un brazo de golpeo real, con la politica base congelada y solo siete grados de libertad ajustables, lo que reduce el espacio de busqueda y acelera la convergencia.
+- Validacion de pipelines de RL sim-a-real: el flujo preflight + `run_sim_shm.py` con MuJoCo permite verificar el contrato de observaciones y acciones antes de tocar hardware, reduciendo riesgos de comisionado.
+- Desarrollo de predictores de pelota: el modelo de rebote calibrado y el adaptador de mocap sirven como base para experimentos de prediccion de trayectorias con datos reales de OptiTrack.
+- Benchmarking de algoritmos actor-critico: la configuracion TD3 con tasas de aprendizaje y calentamientos documentados permite reproducir y comparar variantes de RL en un dominio fisico acotado.
+- Docencia en sistemas roboticos multi-proceso: la arquitectura de memoria compartida, ZMQ y puente C++ a 1000 Hz es un caso practico de integracion de control en tiempo real con aprendizaje en Python.
+- Prototipado de tenis de mesa robotico: los assets MJCF y la pose de arranque (`frozen_closd_ready_pose_toeout_lowload.npz`) permiten montar una simulacion completa del H2 con raqueta antes de adquirir hardware.
+- Estudio de seguridad en robots humanoides: los mecanismos de arranque y parada latcheada, junto con la validacion suspendida de los 31 IDs de motor, sirven como referencia para protocolos de comisionado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de exito, precision de golpeo ni tasas de convergencia, y advierte que el residuo exportado registra `hardware_qualified=false`.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible; el repositorio ocupa 0.1 GB, pero no se detalla el consumo de memoria de los modelos ONNX ni del bundle CLoSD.
+- GPU recomendadas: no disponible; la model card solo indica que CLoSD se ejecuta en CUDA y que el aprendiz TD3 corre en GPU.
+- Compatibilidad con GPU de consumo: no confirmada; no se especifican modelos concretos (RTX 4090, A100, H100).
+- Opciones de despliegue: runtime propio con entry points `run_real_shm.py`, `run_sim_shm.py`, `run_live_sim_shm.py` y `predictor.py`; simulacion en MuJoCo; puente C++ con ROS 2. No se menciona vLLM, llama.cpp, Ollama ni TGI, que no aplican a este sistema.
+- Latencia y throughput: politica de seguimiento a 50 Hz y puente a 1000 Hz; no se publican latencias extremo a extremo ni throughput del aprendiz.
+- Requisitos de plataforma: Linux con PyTorch CUDA, entorno ROS y sistema de captura OptiTrack configurado; la validacion de build y runtime en Linux queda pendiente segun la model card.
 
 ## Comparativa con modelos similares
 
-No disponible. Sin conocer la categoria del artefacto (modelo de lenguaje, policy de RL, dataset o entorno) ni sus especificaciones, no es posible establecer una comparacion significativa con alternativas.
+| Sistema | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| BAAI PingPongRealWorldRL | Runtime de robotica + RL residual TD3 | no disponible | no aplica | Apache-2.0 (codigo) | Pesos ONNX y CLoSD incluidos; residuo no cualificado para hardware |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de informacion sobre sistemas equivalentes de tenis de mesa robotico con aprendizaje residual en linea en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: la model card solo contiene la licencia, lo que impide evaluar el artefacto.
-- Cero descargas y cero likes en el momento de la consulta, lo que sugiere que el repositorio no ha sido validado por la comunidad.
-- Riesgo de que el repositorio este incompleto o en proceso de publicacion.
-- No se puede verificar el origen de los datos de entrenamiento ni posibles sesgos.
-- No se puede evaluar el riesgo de alucinacion ni de comportamiento inseguro en produccion.
-- La licencia Apache 2.0 permite uso comercial, pero al no existir documentacion sobre el contenido real no puede confirmarse que los pesos o datos subyacentes esten libres de restricciones adicionales.
-- No debe desplegarse en produccion sin una revision manual del contenido del repositorio.
+- El residuo ONNX exportado registra `hardware_qualified=false`; no establece rendimiento ni cualificacion para una instalacion nueva.
+- El residuo ONNX no puede reanudar entrenamiento; es necesario entrenar desde cero o reanudar un checkpoint propio completo.
+- El paquete no incluye el entrenamiento de la politica base, el entrenamiento de CLoSD ni ejecuciones historicas de entrenamiento.
+- La suite de regresion completa (`tests/`) no esta incluida en la copia publicada; el comisionado de hardware requiere aceptacion de regresion desde un checkout de desarrollo que coincida con esta release.
+- La validacion de build y runtime en Linux queda pendiente segun la model card.
+- Las rutas historicas `v1`/`v2` se conservan como referencia, pero sus pesos y arboles upstream no forman parte de esta release.
+- La licencia Apache-2.0 cubre solo el codigo original; los modelos de terceros y assets del robot mantienen sus propias licencias.
+- Los ajustes de configuracion (100 bolas de calentamiento, 200 en linea, lr 1e-6, 1500 actualizaciones del critico) son experimentales y no un optimo reclamado.
+- Riesgo de dano fisico: el sistema controla un humanoide real; se exige comisionado especifico del sitio, verificacion suspendida de los 31 IDs de motor y respeto de los mecanismos L1/R1.
+- No se publican sesgos, tasas de alucinacion ni limitaciones de idioma porque no es un modelo de lenguaje.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/BAAI/PingPongRealWorldRL
-- Organizacion BAAI en Hugging Face: https://huggingface.co/BAAI
-- No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/BAAI/PingPongRealWorldRL
+- Documentacion de setup: docs/SETUP.md (incluido en el repositorio)
+- Puente C++: cpp_lowcmd_bridge/README.md (incluido en el repositorio)
+- Configuracion: config.yaml (incluido en el repositorio)
+- Politica base: policies/h2/h2_stageC_model_10500.onnx
+- Generador CLoSD: closd/H2/model_80000.closd-runtime.pt
+- Actor residual: policies/h2/h2_stageC10500_online_ball_000010_residual.onnx y .json
+- Assets del robot: assets/robot_description/h2/mjcf/h2_pingpong.xml
+- Pose de arranque: ready_pose/H2/frozen_closd_ready_pose_toeout_lowload.npz
+- Calibracion de rebote: models/real_ball_hybrid_bounce.json
+- Licencia: LICENSE (Apache-2.0)

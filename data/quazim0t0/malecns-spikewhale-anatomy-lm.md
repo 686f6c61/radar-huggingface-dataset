@@ -2,111 +2,104 @@
 
 ## Resumen
 
-MaleCNS-SpikeWhale-Anatomy-LM es un artefacto de investigación publicado por el usuario Quazim0t0 en Hugging Face: una red neuronal de impulsos (SNN) construida desde cero cuyo estado recurrente no es una pila densa de capas LIF, sino la matriz de conectividad del conectoma **MaleCNS v1.0** de *Drosophila melanogaster* (cerebro más cordón nervioso ventral), con 167.565 neuronas anatómicas y 25.623.478 aristas dirigidas. El modelo reutiliza la primitiva LIF de SpikeWhale (`lif.py`: spikes duros, pendiente fast-sigmoid 20, soft reset, clamp DERF 30) y entrena únicamente los valores sinápticos de una matriz CSR dispersa mediante autograd restringido a los elementos no nulos.
+MaleCNS-SpikeWhale-Anatomy-LM es un artefacto de investigación desarrollado por el usuario Quazim0t0 que combina una red neuronal de impulsos (spiking neural network, SNN) con el conectoma del sistema nervioso central de la mosca de la fruta (*Drosophila melanogaster*), concretamente la versión MaleCNS v1.0 de Janelia/Google. El modelo no es un transformer convencional: el núcleo recurrente es la matriz de conectividad real del cerebro de la mosca, sobre la que se entrena un autograd disperso (solo valores sinápticos no nulos) y un decodificador de texto de 32,7 millones de parámetros que nunca ve los tokens directamente, sino únicamente la actividad de 4.320 células de lectura del cerebro simulado.
 
-Se trata de un *fine-tune*/continuación del modelo base Quazim0t0/SpikeWhale-SNN-216M, del que hereda tokenizador byte-level con vocabulario de 16.512 entradas y el pipeline de datos. El checkpoint publicado corresponde al paso 1.000 de 50.000 y está explícitamente marcado por el autor como **undertrained y no utilizable como modelo de lenguaje**: la entropía cruzada de entrenamiento es de 4,892 nats/token (frente a ~9,71 de azar uniforme), la tasa de disparo del readout se mantiene en ~0,65 % y la decodificación greedy es degenerada.
+El modelo parte de SpikeWhale-SNN-216M como base y se ha afinado durante 14.580 pasos. En ese punto es capaz de generar fragmentos de inglés, aunque el propio autor lo califica explícitamente como "undertrained" y "not a usable language model". Su interés es científico: demuestra que el estado del cerebro simulado es la única vía por la que el decodificador accede al texto, y que corromper las sinapsis entrenadas o sustituir el estado cerebral por el de otra secuencia hace colapsar la perplejidad.
 
-Su relevancia es exclusivamente metodológica: demuestra que es viable usar un conectoma biológico real como sustrato recurrente de un modelo de lenguaje con autograd disperso, y documenta con detalle los modos de fallo encontrados (latching de la clique de Kenyon, alcance insuficiente del atlas sensorial con un solo tick, explosión de logits con Muon a 0,02 sobre la cabeza).
+Es relevante ahora porque publica el conectoma entrenado en el mismo formato exacto que el fichero de Janelia (`connectome-weights-male-cns-v1.0-minconf-0.5.feather`), lo que permite reutilizarlo en herramientas que lean ese formato. La licencia es Apache 2.0 y el repo pesa 3,2 GB.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | SNN LIF de spikes duros con matriz recurrente = conectoma MaleCNS v1.0 de Drosophila (cerebro + VNC), almacenada en CSR disperso |
-| Parametros totales | No disponible como cifra única; se documentan 25.623.478 aristas dirigidas y una matriz dispersa `W` de 25,6 M de pesos, más embedding de 64 dim, inyección de hubs y cabeza lineal de 128 dim |
-| Parametros activos | No procede (no es MoE); el cómputo es disperso sobre los nnz de la CSR |
-| Longitud de contexto | 256 tokens (secuencia de entrenamiento); no se declara ventana superior |
-| Tipos de cuantizacion | No disponible (solo se publican checkpoints PyTorch en `.pt`) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache 2.0 (el conectoma MaleCNS v1.0 subyacente es CC-BY 4.0) |
-| Formato de pesos | PyTorch (`.pt`): `checkpoints/step1000.pt` y `checkpoints/male_cns_spikewhale.pt`; no hay safetensors ni GGUF |
-| Neuronas anatómicas | 167.565 |
-| Aristas dirigidas | 25.623.478 |
-| Ticks por token | 4 (corriente mantenida en todos los ticks; 1 tick = 1 salto sináptico) |
-| Tokenizador | Byte-level length-max de SpikeWhale, vocabulario 16.512 |
-| Tamaño del repositorio | 0,4 GB |
+| Arquitectura | SNN recurrente con conectoma biológico (MaleCNS v1.0 de *Drosophila*), neurona LIF dura y decodificador de 4 bloques |
+| Parametros totales | no disponible (repo de 3,2 GB; decodificador de 32,7M y base SpikeWhale-SNN-216M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | PyTorch; exportación adicional en Feather (`connectome-weights-male-cns-v1.0-fly14580.feather`) |
 
 ## Arquitectura y entrenamiento
 
-El flujo de cómputo del checkpoint es el siguiente: el id de token se proyecta a un embedding de 64 dimensiones; esa señal se inyecta como corriente sobre 5 ganadores de grupos sensoriales más los 32 primeros de las 256 células con mayor grado de salida (drive 0,8); a continuación se ejecutan 4 ticks LIF con la corriente mantenida, donde la recurrencia se calcula como `(W @ spikes) / sqrt(in_degree) * rec_scale(5)`. Los spikes de las células de Kenyon reentran en `W` (`mask_kenyon=false`), con un tope de masa de spikes de 80. La lectura se toma de `tanh(pre-reset)` sobre la unión de Kenyon y los hubs, pasa por LayerNorm y una capa lineal de 128 dimensiones hasta el vocabulario de 16.512. En esta ejecución `kc_drive = 0`, es decir, no se aplica hash 128-hot del token sobre Kenyon. Las ganancias de neurotransmisor están congeladas; solo se entrenan `W`, el embedding, `hub_in` y la cabeza.
+El núcleo es una SNN LIF dura construida desde cero con la primitiva de SpikeWhale (`lif.py`: picos duros, pendiente sigmoide rápida de 20, reset suave, clamp DERF de 30). La matriz recurrente no es una pila densa de 4x1488 como en SpikeWhale, sino el conectoma MaleCNS v1.0 de Janelia/Google. Las sinapsis se entrenan con autograd restringido a valores no nulos a través de una representación CSR dispersa. El decodificador (32,7M, 4 bloques) solo recibe como entrada las 4.320 células de lectura del cerebro, de modo que todo token pasa por las sinapsis entrenadas de la mosca.
 
-El optimizador combina MuonEq-R para matrices 2D (excepto la capa de salida) con AdamW para parámetros 1D, embedding y salida, con picos de 1e-3 (Adam) y 5e-3 (Muon) y warmup 0. Los datos se sirven en streaming con una mezcla 40 % FineWeb-Edu / 40 % mezcla estilo DCLM / 20 % IFM, la misma del pretrain del modelo padre FruitFly. No se documenta ningún uso de RLHF, DPO o ajuste por preferencias. La innovación técnica central es el autograd restringido a los nnz de una CSR dispersa sobre una topología fija impuesta por un conectoma biológico, en lugar de una matriz densa aprendida.
+El entrenamiento alcanzó el paso 14.580. Los registros del autor documentan que el conectoma entrenado es imprescindible: en el paso 1.000, CE entrenada 5,07 frente a 16,3 con valores barajados y 33,7 con `rec_scale=0`; en el paso 2.855, CE 5,00 frente a 26,96 con sinapsis barajadas, 21,82 con signos aleatorios y 90,37 con `rec_scale=0`. La ganancia del estado cerebral (`brain_gain`) subió de 4,3 a 5,3-5,8 y, en los últimos pasos, a +7,04/+8,15; dar al decodificador el estado de otra secuencia eleva la CE de 3,16-3,50 a 10,20-11,66. También se midió el coste de la restricción de Dale (+0,22 nats en el paso 2.948, +1,70 en el 3.440) y se ajustaron ocho tipos de neurotransmisor con cableado congelado (CE de validación de 3,03 a 2,86).
 
 ## Capacidades
 
-- Generación de texto: formalmente soportada por el pipeline `text-generation`, pero en la práctica degenerada. La decodificación greedy emite un punto y líneas en blanco; el muestreo con T=0,8 y top-50 produce inglés fragmentado.
-- Razonamiento, matemáticas y código: no disponible; no hay evidencia de ninguna de estas capacidades a 1.000 pasos de entrenamiento.
-- Tool calling / function calling: no soportado.
-- Agentes y razonamiento multi-paso: no soportado.
-- Capacidades multilingües: no; el modelo está entrenado y etiquetado únicamente en inglés.
-- Capacidades especiales: cómputo neuromórfico con spikes duros y recurrencia multi-salto sobre un conectoma real; modo de lectura sobre la unión Kenyon ∪ hubs; sin visión, audio ni *thinking mode*.
-- Continuación del entrenamiento: el checkpoint permite reanudar en el paso 1.001, aunque los momentos del optimizador no se guardan y se reinician.
+- Generación de texto en inglés a nivel de fragmentos, no fluido (estado en el paso 14.580).
+- Razonamiento visual: la fase 0 ya barajó el lóbulo óptico y el modelo supera a su gemelo reconfigurado en tarea de paralaje (0,42 frente a ≤0,35 con píxeles y 0,31 sin movimiento).
+- Procesamiento de estímulos visuales vía VPN tokens, DINOv2 y Daisy, con acoplamiento ocular medido de 0,63 a 0,85.
+- Circuito de recompensa tipo PAM/PPL1 con 316 y 16 células y sinapsis DAN reales sobre 8.615 células (4.061/4.064 Kenyon).
+- Tarea de odores con cuerpo de hongo: 4.064 Kenyon, 97 MBON y 340 DAN; recuperación de la vía PPL1-gamma1pedc → MBON11.
+- Diferenciación de estímulos gustativos (azúcar 222 Hz frente a amargo 21 Hz en MN9 original; tras entrenamiento el amargo cae a 0 Hz).
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Capacidades multilingües: solo inglés.
+- Modo thinking, visión o audio como producto: no disponible; la visión existe solo como estímulo experimental.
 
 ## Casos de uso
 
-- Investigación en neurociencia computacional: emplear el conectoma MaleCNS v1.0 como matriz recurrente permite estudiar cómo fluye la información a través de circuitos biológicos reales (grupos sensoriales, Kenyon, hubs de alto grado) bajo una tarea de predicción de siguiente token.
-- Reproducción de experimentos de autograd disperso: el repositorio incluye `sparse_mm.py` y `train_anatomy.py`, lo que permite replicar el entrenamiento con gradientes calculados únicamente sobre los nnz de una CSR de 25,6 M de aristas en una GPU de 12 GB.
-- Estudio de modos de fallo en SNN: el model card documenta cinco fallos reproducibles (atlas sensorial que no alcanza Kenyon con 1 tick, latching de la clique de Kenyon al 80-99 %, cabeza que ve un 128-hot del token actual, explosión de logits con Muon 0,02 y OOM en BPTT de 8 ticks). Sirve como banco de pruebas negativo para quienes diseñan SNN profundas.
-- Comparación de sustratos: permite contrastar de forma controlada una topología biológica dispersa frente a las 4 capas densas LIF × 1488 del modelo padre, usando la misma primitiva `lif.py` y el mismo tokenizador.
-- Docencia y divulgación: el repositorio incluye `atlas/` con grupos sensoriales e índice de Kenyon, `logs/train_anatomy_1k.jsonl` con métricas por paso y volcados de generación, material adecuado para explicar qué es un tick, un salto sináptico y una lectura pre-reset.
-- Base para futuras extensiones: el checkpoint y el artefacto de topología congelada (`male_cns_spikewhale.pt`) permiten experimentar con estrategias de inyección de corriente (hub inject, kc_drive) o con readouts alternativos sin redefinir la conectividad.
-- Atención al cliente, generación de código en producción o cualquier aplicación de cara al usuario: **no recomendado**; el propio autor indica que no es un modelo de lenguaje utilizable.
+- Investigación en neurociencia computacional: reproducir el experimento de ablación de sinapsis (`W`) y comparar CE entrenada frente a sinapsis barajadas, signos aleatorios y `rec_scale=0` para estudiar qué información codifica el conectoma.
+- Estudio de conectomas: cargar el fichero Feather exportado en herramientas que lean el formato de Janelia y analizar los pesos sinápticos entrenados con los mismos body IDs y ordenación.
+- Experimentos de neuromodulación: analizar el ajuste de ocho tipos de neurotransmisor con cableado congelado (Glu/histamina con umbral 0,82/0,84; DA con umbral 0,808 y ganancia 1,286) y su efecto sobre la CE de validación.
+- Evaluación de circuitos sensoriales: usar las tareas de azúcar/amargo y de odores (cuerpo de hongo) como banco de pruebas de codificación específica de circuito.
+- Visión bioinspirada: emplear la tarea de paralaje y la comparación con el gemelo de grado preservado para estudiar qué aporta la estructura del lóbulo óptico frente a un cableado aleatorio.
+- Docencia y divulgación: ilustrar con un caso real y reproducible las diferencias entre una SNN con conectoma biológico y una pila densa convencional, incluidos los bugs de generación detectados y corregidos (CE de test de 4,44 a 3,18 y de 4,16 a 2,80).
+- Reproducibilidad de artefactos: verificar la congelación de sinapsis durante 30 días simulados (CE de lenguaje 2,7627 bit-idéntica) como control de estabilidad en entrenamientos largos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos numéricos son métricas internas de entrenamiento:
+El autor publica el "curiosity benchmark" sobre la red (ARC / PIQA / ArithMark / WikiText-2), pero no se incluyen los valores numéricos en la información disponible.
 
-| Metrica | Valor | Nota |
-|---|---|---|
-| Cross-entropy de entrenamiento (paso 1000) | 4,892 nats/token | Referencia de azar uniforme: ln(16512) ≈ 9,71 |
-| Mejor cross-entropy registrada | 4,010 | Paso 896 |
-| Tasa de disparo del readout | ~0,65 % | Kenyon/readout no latch; rango 0,4-0,7 % |
-| `w_grad` | ~0,08 | Activo |
-| Ticks por token | 4 | Corriente mantenida todos los ticks |
-| Secuencia / batch | 256 tokens, batch 2 × accum 2 | |
-| Velocidad de entrenamiento | ~79 s/paso | RTX 3060 12 GB, ~3 GB de VRAM |
-| Pasos completados | 1.000 / 50.000 | Ejecución pausada |
-| Bits/token del modelo padre (referencia) | ~3,98 bits/token a ~32k pasos | SpikeWhale-SNN-216M con `W_rec` densa |
+| Medición | Resultado |
+|---|---|
+| CE entrenada frente a sinapsis barajadas (paso 1.000) | 5,07 frente a 16,3 |
+| CE entrenada frente a `rec_scale=0` (paso 1.000) | 5,07 frente a 33,7 |
+| CE entrenada frente a sinapsis barajadas (paso 2.855) | 5,00 frente a 26,96 |
+| CE entrenada frente a signos aleatorios (paso 2.855) | 5,00 frente a 21,82 |
+| CE con cerebro correcto frente a cerebro ajeno (pasos 14.520-14.580) | 3,16-3,50 frente a 10,20-11,66 |
+| Tarea de odores, congelado 2948 | ninguno 0,47; backprop 0,71; DAN real → MBON 0,67; recompensa global 0,64 |
+| Paralaje, mosca frente a gemelo reconfigurado | 0,42 frente a ≤0,35 (píxeles) y 0,31 (sin movimiento) |
+| CE de validación con ocho tipos de neurotransmisor (paso 14.580) | 3,03 → 2,86 |
+| Coste de Dale | +0,22 nats (paso 2.948); +1,70 (paso 3.440) |
 
 ## Requisitos de hardware
 
-- Entrenamiento verificado: una única RTX 3060 de 12 GB, con ~3 GB de VRAM ocupados y ~79 s por paso (secuencia 256, batch 2, accum 2, 4 ticks).
-- Inferencia: el repositorio completo ocupa 0,4 GB, por lo que el checkpoint cabe con holgura en cualquier GPU consumer (RTX 3060, 4060, 4090) e incluso en CPU, aunque no hay latencias publicadas.
-- OOM conocido: BPTT completo de 8 ticks con secuencia 512 y batch 2 agota los 12 GB si se hace checkpoint en cada tick.
-- Opciones de despliegue: no hay soporte para vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia estándar. El despliegue requiere PyTorch y el código propio del repositorio (`code/generate.py` con `sparse_mm.py`), además de copiar o enlazar `male_cns_spikewhale.pt` a `../../output/` respecto a `experiments/anatomy_lm`, o editar las rutas del script.
-- Latencia y throughput de inferencia: no disponibles.
-- Nota operativa: al reanudar el entrenamiento, los momentos de Adam y Muon no están en el checkpoint y se reinician; el scheduler coseno usa el índice de paso.
+- VRAM estimada para inferencia: no disponible; el repo ocupa 3,2 GB, pero no se detalla la huella en memoria ni la cuantización.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: no disponible; la librería declarada es PyTorch y no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Sustrato recurrente | Pesos | Ticks / contexto | Rendimiento | Licencia |
-|---|---|---|---|---|---|
-| MaleCNS-SpikeWhale-Anatomy-LM | Conectoma MaleCNS v1.0: 167.565 neuronas, 25.623.478 aristas dirigidas (CSR) | `W` dispersa de 25,6 M + embedding 64 + hub inject + cabeza 128 | 4 ticks/token (1 tick = 1 salto sináptico), seq 256 | CE 4,892 nats/token a 1.000 pasos; generación degenerada | Apache 2.0 (conectoma CC-BY 4.0) |
-| SpikeWhale-SNN-216M (modelo base) | 4 capas LIF densas × 1488 con `W_in` / `W_rec` aprendidas | ~216 M | 1 tick/token mezcla la capa completa | ~3,98 bits/token tras ~32k pasos | No disponible en la información proporcionada |
-| Alternativas de terceros | No disponible: no se documenta en la información proporcionada ningún otro modelo público que use un conectoma completo como matriz recurrente de un LM | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia |
+|---|---|---|---|---|
+| MaleCNS-SpikeWhale-Anatomy-LM | no disponible (decodificador 32,7M) | no disponible | SNN con conectoma de *Drosophila* | Apache 2.0 |
+| SpikeWhale-SNN-216M (modelo base) | 216M | no disponible | SNN densa (pila 4x1488) | no disponible |
+| Transformers densos de ~200M | ~200M | variable | Transformer convencional | variable |
 
-La comparación relevante es interna: ambos modelos comparten `lif.py`, tokenizador y mezcla de datos, y difieren en que el modelo padre aprende una recurrencia densa mientras que este impone una topología biológica fija y dispersa.
+No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigación no utilizable: el propio autor lo etiqueta como *undertrained* y "not a usable language model". No debe desplegarse en producción ni evaluarse como un LM convencional.
-- Generación degenerada: greedy emite un punto seguido de líneas en blanco; el muestreo produce inglés fragmentado y sin coherencia.
-- Entrenamiento incompleto: 1.000 de 50.000 pasos previstos, con cross-entropy de 4,892 nats/token frente a 9,71 de azar uniforme.
-- Sesgos conocidos: no se documentan análisis de sesgo; el entrenamiento usa FineWeb-Edu, una mezcla estilo DCLM e IFM, por lo que hereda los sesgos de esas fuentes sin ningún ajuste posterior.
-- Riesgo de alucinación: total. Al no haber adquirido gramática ni conocimiento factual, cualquier salida fluida sería incidental y no verificable.
-- Limitación de idioma: solo inglés; el vocabulario es byte-level con 16.512 entradas.
-- Limitación de contexto: 256 tokens de secuencia de entrenamiento, sin mecanismo documentado para extrapolar a ventanas mayores.
-- Restricciones de licencia: los pesos se publican bajo Apache 2.0, lo que permite uso comercial del modelo. Sin embargo, el conectoma MaleCNS v1.0 es CC-BY 4.0 (FlyEM, HHMI Janelia; University of Cambridge; MRC LMB; Google Research), por lo que su reutilización exige atribución.
-- Caveats de reproducibilidad: los momentos del optimizador no se guardan en el checkpoint; el scheduler coseno depende del índice de paso; `generate.py` espera rutas concretas del árbol de entrenamiento que hay que recrear manualmente.
-- Modos de fallo ya observados: 1 tick/token impide que el atlas sensorial alcance Kenyon (0 % de células de Kenyon activadas); secuencia 512 con recurrencia fuerte provoca latching de la clique de Kenyon (80-99 %); intensidad 1.1 sobre Kenyon hace que la cabeza vea un 128-hot del token actual y colapse a "the the the"; Muon a 0,02 sobre la capa de salida dispara `logit_rms` y lleva la CE de 7 a 15.
-- Cero adopción verificable: 0 descargas y 0 "likes" en el momento de la consulta.
+- El propio autor lo declara "Research artifact. Undertrained. Not a usable language model": solo produce fragmentos de inglés, no texto fluido.
+- Riesgo alto de alucinación y de generación incoherente; no apto para producción.
+- Solo soporta inglés y no hay datos sobre longitud de contexto efectiva.
+- Sesgos conocidos: no documentados.
+- La licencia Apache 2.0 permite uso comercial, pero el estado de entrenamiento hace inviable ese uso en la práctica.
+- El decodificador depende por completo del estado cerebral: sin señal del cerebro no hay texto, y con el estado de otra secuencia la CE se dispara (~7 nats).
+- Las ablaciones de `W` también silencian la red unas 7 veces, por lo que parte del daño medido puede atribuirse a la ausencia de actividad y no solo a la corrupción sináptica.
+- El proyecto está detenido ("done for now"); no se garantiza mantenimiento ni actualizaciones.
+- El fichero Feather exportado está congelado en el paso 14.580 y no refleja entrenamiento posterior.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Quazim0t0/MaleCNS-SpikeWhale-Anatomy-LM
-- Modelo base (SpikeWhale-SNN-216M): https://huggingface.co/Quazim0t0/SpikeWhale-SNN-216M
-- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
-- Conectoma MaleCNS v1.0 (FlyEM, Janelia): https://male-cns.janelia.org/
-- Referencia del conectoma: Berg et al., *Cell* 2026 (citado en el model card)
-- Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a documentación de soporte de Windows File Explorer (support.microsoft.com, elevenforum.com) y no guardan ninguna relación con el modelo ni con redes neuronales de impulsos.
+- Modelo base: https://huggingface.co/Quazim0t0/SpikeWhale-SNN-216M
+- Conectoma entrenado exportado: https://huggingface.co/Quazim0t0/MaleCNS-SpikeWhale-Anatomy-LM/blob/main/exports/connectome-weights-male-cns-v1.0-fly14580.feather
+- Conectoma de referencia Janelia/Google MaleCNS v1.0: no disponible en la información proporcionada
+- Paper, blog o demo adicionales: no disponible en la información proporcionada

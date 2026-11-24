@@ -2,121 +2,114 @@
 
 ## Resumen
 
-Qwen2.5-3B-ToolCall-Abstain-v6 es un ajuste fino del modelo Qwen2.5-3B-Instruct de Alibaba Qwen, publicado por el usuario siva-0104 en Hugging Face. El modelo está especializado en tool calling (llamada a funciones) con capacidad de abstención: dado un turno de usuario y una lista de esquemas de herramientas en JSON, el modelo emite una o varias llamadas `<tool_call>`, formula una pregunta para solicitar información faltante, o declara que ninguna herramienta de la lista es aplicable. El problema que aborda es el sesgo de los modelos base a invocar herramientas incluso cuando no procede, lo que degrada la fiabilidad de agentes pequeños desplegados localmente.
+qwen2.5-3b-toolcall-abstain-v6 es un ajuste fino del modelo Qwen2.5-3B-Instruct de Alibaba, desarrollado por el usuario siva-0104, orientado especificamente a la invocacion de herramientas (tool calling) con capacidad de abstencion. El modelo recibe una peticion del usuario y un conjunto de esquemas de herramientas en JSON, y decide entre emitir una o varias llamadas estructuradas, solicitar informacion faltante o declarar que ninguna herramienta disponible es aplicable. Esta ultima capacidad, la abstencion ante herramientas irrelevantes, es el eje diferencial del ajuste frente a otros modelos de la misma familia.
 
-Arquitectura transformer decoder-only de 3.085.938.688 parámetros (unos 3,09 mil millones), derivada de Qwen2.5-3B-Instruct. El ajuste se realizó con QLoRA en 4 bits NF4 (r=16, alpha=32) sobre 8.366 filas de datos públicos de function calling, y el adaptador se fusionó en los pesos finales. El repositorio incluye el modelo fusionado en fp16, una versión MLX de 4 bits para Apple Silicon y el adaptador LoRA por separado.
+El modelo parte de una arquitectura transformer densa de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) y se ha entrenado mediante QLoRA en 4 bits NF4 con rango 16, fusionando posteriormente el adaptador en los pesos finales. El repositorio incluye el modelo fusionado en fp16, una version cuantizada en 4 bits para MLX (Apple Silicon) y el adaptador LoRA original. Su proposito es servir como motor de agentes locales pequenos, donde el coste computacional y la latencia importan, integrado en pipelines que recuperan herramientas de una biblioteca mayor y validan las llamadas contra el esquema antes de ejecutarlas.
 
-Su relevancia actual radica en que demuestra que un modelo de 3B puede alcanzar un 89,7% de exactitud en BFCL simple y un 87,1% de abstención correcta en BFCL irrelevance con un coste de entrenamiento de 169 minutos en una GPU T4 gratuita de Kaggle. Es un caso práctico de ajuste eficiente orientado a agentes locales con recuperación de herramientas y validación de esquemas.
+La relevancia actual del modelo radica en su enfoque en la fiabilidad del tool calling en entornos con muchas herramientas candidatas y distractores: segun los datos declarados por el autor, alcanza un 100% de abstencion correcta ante herramientas no coincidentes y mejora sustancialmente al modelo base en conjuntos como xLAM (de 38,7 a 77,3 de exact match), Hermes (de 41,3 a 59,3) y ToolACE (de 27,3 a 53,7). Los benchmarks son, no obstante, autoinformados con un scorer propio y no verificados por el leaderboard oficial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
-| Parámetros totales | 3.085.938.688 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (el entrenamiento truncó a 1.024 tokens) |
-| Tipos de cuantización | fp16 (modelo fusionado), 4-bit NF4 para el entrenamiento QLoRA, 4-bit MLX |
-| Idiomas soportados | inglés (en) |
-| Licencia | qwen-research (Qwen Research License, solo investigación y evaluación, no comercial) |
-| Formato de pesos | safetensors (transformers), MLX 4-bit, adaptador LoRA |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-3B-Instruct) |
+| Parametros totales | 3.085.938.688 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el entrenamiento trunca a 1.024 tokens) |
+| Tipos de cuantizacion | fp16 (pesos fusionados), 4 bits NF4 (QLoRA en entrenamiento), 4 bits MLX (version para Apple Silicon) |
+| Idiomas soportados | ingles (en) |
+| Licencia | qwen-research (license: other, con license_name qwen-research) |
+| Formato de pesos | safetensors (modelo fusionado fp16 y adaptador LoRA); MLX para la variante de 4 bits |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-3B-Instruct, un transformer decoder-only con atención causal estándar, y se ajusta mediante QLoRA con cuantización 4-bit NF4, rango LoRA 16 y alpha 32. El entrenamiento usa optimizador con tasa de aprendizaje 2e-4 y scheduler coseno, batch efectivo de 16, una sola época y cálculo de pérdida únicamente sobre la respuesta del asistente. El adaptador resultante se fusiona en los pesos base, dando lugar al modelo fp16 publicado en la raíz del repositorio.
+El modelo es un transformer denso de la familia Qwen2.5, con 3.085.938.688 parametros, obtenido por ajuste fino supervisado del checkpoint Qwen2.5-3B-Instruct. El entrenamiento se realizo con QLoRA en 4 bits NF4, rango LoRA r=16 y alpha=32, tasa de aprendizaje 2e-4 con decaimiento coseno, batch efectivo de 16, una sola epoca y calculo de perdida unicamente sobre la respuesta. El adaptador resultante se fusiono en los pesos, dando lugar al modelo fp16 publicado. El entrenamiento se ejecuto en una GPU T4 gratuita de Kaggle: 44 minutos para la variante de 0,5B, 100 minutos para la de 1,5B y 169 minutos para la de 3B.
 
-Los datos de entrenamiento son exclusivamente públicos y con control de fuga: xLAM function-calling 60k (CC-BY-4.0, con cita a APIGen y xLAM), Glaive function-calling v2 (Apache-2.0), Hermes function-calling v1 (Apache-2.0) y ToolACE (Apache-2.0), más negativos sintéticos de herramientas no coincidentes. El conjunto final consta de 8.366 filas tras aplicar un límite de 1.024 tokens, de las cuales el 24% son filas sin llamada. Aproximadamente el 49% de las filas de llamada incluyen entre 1 y 4 herramientas distractoras de aspecto similar recuperadas de la biblioteca de entrenamiento. No se usaron datos de When2Call ni de BFCL, y los splits están separados por nombre de herramienta con verificación de fuga mediante `leak_check.py` (0 coincidencias de consultas BFCL). El autor declara una superposición informativa: 13 de las 9.314 definiciones de funciones de BFCL son idénticas en nombre y descripción a una herramienta de entrenamiento, aunque con consultas distintas.
+Los datos de entrenamiento son exclusivamente publicos y sometidos a un control de fuga (leak-gated): xLAM function-calling 60k (CC-BY-4.0, con gating), Glaive function-calling v2 (Apache-2.0, con respuestas de relleno fusionadas con la llamada posterior), Hermes function-calling v1 (Apache-2.0), ToolACE (Apache-2.0) y negativos sinteticos de herramientas no coincidentes. Aproximadamente el 49% de las filas de llamada incluyen entre 1 y 4 herramientas distractoras de aspecto similar recuperadas de la biblioteca de herramientas de entrenamiento. El conjunto final consta de 8.559 filas (8.366 tras el limite de 1.024 tokens), de las cuales el 24% son filas sin llamada. No se emplearon datos de When2Call ni de BFCL, y los splits son disjuntos por nombre de herramienta; el autor declara que `leak_check.py` pasa con 0 coincidencias de consultas BFCL y ningun nombre de herramienta de test en entrenamiento, aunque reconoce que 13 de las 9.314 definiciones de funciones de BFCL son identicas en nombre y descripcion a una herramienta de entrenamiento (solapamiento informativo sin coincidencia de consultas).
 
 ## Capacidades
 
-- Generación de llamadas a herramientas en formato `<tool_call>{"name": ..., "arguments": {...}}</tool_call>`, incluyendo varias llamadas en una misma respuesta.
-- Abstención explícita: el modelo puede indicar que ninguna herramienta de la lista es aplicable, en lugar de forzar una llamada.
-- Solicitud de información faltante mediante preguntas de aclaración, aunque con limitaciones documentadas.
-- Razonamiento multi-paso orientado a agentes: el pipeline del autor recupera las 5 herramientas más similares por embedding, valida las llamadas contra el esquema y ejecuta sobre MCP (Model Context Protocol).
-- Tool calling y function calling con esquemas JSON en el mensaje de sistema, siguiendo la plantilla de chat de Qwen.
-- Decodificación restringida por esquema con lm-format-enforcer (probada en 0.5B y 1.5B, no en 3B por memoria), que garantiza llamadas analizables y válidas contra el esquema.
-- Capacidades multilingües: solo inglés.
-- No dispone de visión, audio ni modo de pensamiento explícito más allá del razonamiento implícito del modelo base.
+- Generacion de llamadas a herramientas en formato estructurado `<tool_call>{"name": ..., "arguments": {...}}</tool_call>`, incluyendo multiples llamadas en una misma respuesta.
+- Abstencion explicita: el modelo puede declarar que ninguna de las herramientas listadas es aplicable o solicitar la informacion que falta para decidir.
+- Tool calling y function calling a partir de esquemas JSON suministrados en el prompt.
+- Integracion en pipelines de agentes sobre MCP (Model Context Protocol), con recuperacion de herramientas por similitud de embeddings y validacion de llamadas contra el esquema antes de la ejecucion.
+- Razonamiento multi-paso limitado a la seleccion y encadenamiento de llamadas dentro de un turno conversacional.
+- Capacidad multilingue restringida al ingles segun la model card.
+- No se declaran capacidades de vision, audio ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Agentes locales de escritorio: el modelo puede ejecutarse en un portátil con GPU de consumo y decidir entre un conjunto pequeño de herramientas (por ejemplo, abrir aplicaciones, consultar archivos, enviar correos) con una tasa de éxito del 93,5% en la evaluación de agente sobre MCP con 10 herramientas y 49 consultas.
-- Automatización de atención al cliente con herramientas acotadas: dado un catálogo de funciones (consultar pedido, tramitar devolución, escalar a humano), el modelo emite la llamada correcta o pregunta por el dato que falta, reduciendo llamadas erróneas frente al modelo base.
-- Enrutamiento de consultas en pipelines RAG con function calling: el modelo decide si la consulta requiere una herramienta, si debe aclararse o si no aplica ninguna, lo que permite descartar consultas fuera de dominio antes de ejecutar acciones costosas.
-- Validación previa a ejecución en CI/CD: combinado con decodificación restringida por esquema (lm-format-enforcer), genera llamadas con el 100% de validez sintáctica y de esquema en las pruebas del autor, lo que facilita integrarlo en pipelines que validan antes de invocar APIs.
-- Prototipado de agentes MCP: al seguir el protocolo MCP en el pipeline de referencia, sirve como base para construir asistentes que descubren herramientas y ejecutan llamadas validadas contra el esquema.
-- Investigación sobre abstención y calibración: el modelo es un punto de partida reproducible (entrenamiento en T4 gratuita, datos públicos, script de verificación de fuga) para estudiar cuándo un SLM debe declinar el uso de herramientas.
-- Filtrado de herramientas en bibliotecas grandes: con recuperación top-5 por embedding, el modelo puede operar sobre bibliotecas de hasta 12.641 herramientas, aunque con caída documentada de rendimiento cuando la recuperación falla.
+- Agentes locales de escritorio o embebidos: el modelo, con 3,09 mil millones de parametros y una version MLX de 4 bits, puede ejecutarse en un portatil con Apple Silicon y gestionar la seleccion de herramientas de un asistente personal sin conexion a la nube.
+- Orquestacion de herramientas en asistentes de soporte tecnico: dado un catalogo de funciones (consultar pedidos, abrir incidencias, escalar a humano), el modelo decide que llamada emitir y, cuando la peticion es ambigua, solicita los datos que faltan en lugar de inventar argumentos.
+- Enrutamiento seguro con abstencion: en produccion, ante peticiones que no corresponden a ninguna herramienta disponible, el modelo responde que no procede ejecutar ninguna, lo que evita llamadas erroneas; el autor reporta un 100% de abstencion correcta en el conjunto de herramientas no coincidentes.
+- Pipelines de agentes sobre MCP: con recuperacion top-5 de herramientas por similitud de embeddings y validacion de esquema, el modelo encadena llamadas en flujos de automatizacion de tareas; el autor reporta un 93,5% de exito de llamada en 49 consultas con 10 herramientas.
+- Prototipado rapido de integraciones de function calling: al estar disponible en transformers y text-generation-inference, sirve para validar disenos de esquemas de herramientas y flujos de agente antes de migrar a modelos mayores.
+- Filtrado y clasificacion de intenciones en backends de bajo coste: el modelo puede actuar como primera etapa que decide si una consulta requiere una accion externa, reduciendo el numero de llamadas a modelos mas grandes y caros.
+- Evaluacion comparativa de tecnicas de abstencion: el repositorio incluye codigo de evaluacion y un scorer propio, util para investigadores que quieran reproducir o extender las mediciones de fiabilidad en tool calling.
 
 ## Benchmarks y rendimiento
 
-Resultados del scorer propio del autor (no el verificador oficial de BFCL), una sola semilla, BFCL en modo solo informe:
+Datos declarados por el autor con scorer propio, no verificados por el leaderboard oficial de BFCL (una sola semilla; BFCL en modo report-only).
 
-| Conjunto | 0.5B | 1.5B | 3B |
+| Conjunto | 0.5B | 1.5B | 3B (este modelo) |
 |---|---|---|---|
 | BFCL simple, exact match | 79,3 | 83,7 | 89,7 |
-| BFCL irrelevance, abstención correcta | 75,8 | 84,2 | 87,1 |
-| BFCL live simple / live irrelevance | 44,6 / 71,7 | 56,6 / 77,0 | 66,3 / 77,0 |
-| xLAM / Hermes / ToolACE exact (tests sin fuga) | 68,0 / 48,0 / 44,3 | 71,7 / 53,3 / 49,0 | 77,3 / 59,3 / 53,7 |
-| Herramientas no coincidentes, abstención | 99,7 | 99,7 | 100 |
-| Agente sobre MCP, 49 consultas, 10 herramientas: éxito de llamada | 80,6% | 93,5% | 93,5% |
+| BFCL irrelevance, abstained | 75,8 | 84,2 | 87,1 |
+| BFCL live simple, exact match | 44,6 | 56,6 | 66,3 |
+| BFCL live irrelevance, abstained | 71,7 | 77,0 | 77,0 |
+| xLAM (held-out), exact match | 68,0 | 71,7 | 77,3 |
+| Hermes (held-out), exact match | 48,0 | 53,3 | 59,3 |
+| ToolACE (held-out), exact match | 44,3 | 49,0 | 53,7 |
+| Herramientas no coincidentes, abstained | 99,7 | 99,7 | 100 |
+| Agente sobre MCP, 49 consultas, 10 herramientas: exito de llamada | 80,6% | 93,5% | 93,5% |
 
-Comparación con el modelo base (Qwen2.5-3B-Instruct sin ajustar, mismo prompt y scorer):
+Comparacion con el modelo base (Qwen2.5-3B-Instruct):
 
-| Conjunto | Base 3B → v6 |
-|---|---|
-| BFCL simple, exact | 90,7 → 89,7 |
-| BFCL live simple, exact | 59,3 → 66,3 |
-| BFCL irrelevance, abstención | 79,3 → 87,1 |
-| BFCL live irrelevance, abstención | 65,3 → 77,0 |
-| xLAM, exact | 38,7 → 77,3 |
-| Hermes, exact | 41,3 → 59,3 |
-| ToolACE, exact | 27,3 → 53,7 |
-| Glaive, precisión de decisión | 90,0 → 99,0 |
-| Herramientas no coincidentes, abstención | 98,7 → 100,0 |
-
-El autor advierte que las filas del modelo base usan los primeros 150 elementos por conjunto (los del v6 usan hasta 300), por lo que la base es más ruidosa (aproximadamente ±8 puntos). No se pudo repetir la evaluación con el mismo tamaño por agotamiento de la cuota de GPU gratuita.
+| Conjunto | Base 3B | v6 (3B) |
+|---|---|---|
+| BFCL simple, exact | 90,7 | 89,7 |
+| BFCL live simple, exact | 59,3 | 66,3 |
+| BFCL irrelevance, abstained | 79,3 | 87,1 |
+| BFCL live irrelevance, abstained | 65,3 | 77,0 |
+| xLAM, exact | 38,7 | 77,3 |
+| Hermes, exact | 41,3 | 59,3 |
+| ToolACE, exact | 27,3 | 53,7 |
+| Glaive, decision accuracy | 90,0 | 99,0 |
+| Herramientas no coincidentes, abstained | 98,7 | 100,0 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: en torno a 6,2 GB solo para pesos (3,09 mil millones de parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica se recomienda disponer de 8 GB o más.
-- VRAM estimada en 4 bits (MLX o cuantización GGUF equivalente): aproximadamente 1,6-2 GB para pesos, viable en GPUs integradas y en Apple Silicon con memoria unificada.
-- GPU recomendadas: cualquier GPU con 8 GB o más para fp16 (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4090, A100, H100). Para 4 bits basta con 4 GB.
-- Cabe en GPU de consumo: sí, en todas las mencionadas; el entrenamiento del autor se realizó en una T4 gratuita de Kaggle en 169 minutos para la variante 3B.
-- Opciones de despliegue: transformers (referencia del autor), text-generation-inference (el modelo está etiquetado como compatible con endpoints), vLLM, llama.cpp y Ollama mediante conversión a GGUF, y mlx-lm para Apple Silicon con la versión 4-bit incluida.
-- Latencia y throughput: no disponibles en la información proporcionada. El autor solo documenta tiempos de entrenamiento, no de inferencia.
+- VRAM estimada para inferencia: aproximadamente 6,2 GB en fp16 (3,09 mil millones de parametros), alrededor de 2-2,5 GB en cuantizacion de 4 bits.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 (RTX 3060 Ti, RTX 4060, RTX 4090); A100 o H100 no son necesarias para este tamano, aunque pueden usarse para servir muchas peticiones concurrentes.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en fp16 y en tarjetas con 4 GB o mas en 4 bits.
+- Apple Silicon: el repositorio incluye una version MLX de 4 bits que se ejecuta con `mlx-lm`.
+- Opciones de despliegue: transformers, text-generation-inference (el modelo declara endpoints compatibles), llama.cpp u Ollama si se generan pesos GGUF a partir del modelo fusionado, y `mlx-lm` en Mac.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| siva-0104/qwen2.5-3b-toolcall-abstain-v6 | 3,09B | no disponible | Tool calling con abstención | qwen-research (no comercial) | Hugging Face, fp16 + MLX 4-bit + adaptador |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (según la ficha oficial de Qwen) | Instrucción general | qwen-research | Hugging Face |
-| Qwen2.5-1.5B-Instruct (variante del mismo autor) | 1,5B | no disponible | Tool calling con abstención | qwen-research | Hugging Face |
-| Qwen2.5-0.5B-Instruct (variante del mismo autor) | 0,5B | no disponible | Tool calling con abstención | qwen-research | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| qwen2.5-3b-toolcall-abstain-v6 | 3,09B | no disponible | qwen-research | Tool calling con abstencion, ajuste QLoRA |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | no disponible | qwen-research | Modelo base generalista con tool calling |
+| Variantes Qwen2.5-Instruct 0.5B y 1.5B ajustadas por el mismo autor | 0,5B / 1,5B | no disponible | qwen-research | Misma receta de tool calling con abstencion, menor coste |
 
-Frente al modelo base, el ajuste mejora de forma clara en conjuntos de múltiples llamadas y mixtos (xLAM 38,7 → 77,3; ToolACE 27,3 → 53,7) y en abstención (BFCL irrelevance 79,3 → 87,1), mientras que en BFCL simple queda dentro del ruido (90,7 → 89,7). Las variantes de 0,5B y 1,5B del mismo autor ofrecen un compromiso menor en precisión (89,7 y 83,7 en BFCL simple) a cambio de menor huella de memoria.
+Frente al modelo base, el ajuste mejora la abstencion en BFCL irrelevance (79,3 a 87,1) y en BFCL live irrelevance (65,3 a 77,0), asi como los conjuntos held-out de xLAM, Hermes y ToolACE, a costa de una ligera perdida en BFCL simple (90,7 a 89,7). Las variantes de 0,5B y 1,5B del mismo autor ofrecen alternativas de menor coste con rendimiento inferior en todos los conjuntos medidos. No se dispone de comparaciones con otros modelos de tool calling de terceros en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Debilidad ante información faltante: en las pruebas del autor, el modelo de 1,5B inventa un valor en lugar de preguntar en 4 de 6 consultas; el de 3B, en 3 de 6.
-- La abstención es imperfecta: BFCL irrelevance se sitúa entre el 76% y el 84% según la variante, y una puerta de similitud añade algunos puntos a costa de llamadas válidas.
-- Con bibliotecas de miles de herramientas el recuperador es el cuello de botella: la herramienta correcta aparece en el top-5 solo en el 70% de las consultas con 12.641 herramientas (94% con 100), y el manejo de "ninguna herramienta encaja" cae del 93-100% con 10 herramientas al 15-19% cuando el top-5 procede de la biblioteca completa (muestra de portátil, n=100 por condición). Incluir 100 herramientas en el prompt empeora aún más el resultado (exact match del 6% en 0,5B y del 29% en 1,5B).
-- La decodificación restringida por esquema garantiza llamadas válidas sintácticamente, pero no argumentos correctos; además, no se probó en el modelo de 3B por limitaciones de memoria.
-- La evaluación de agente es pequeña (49 consultas); diferencias inferiores a unos 10 puntos son ruido.
-- Solo inglés; no hay ajuste de seguridad más allá del modelo base, y las salidas de las herramientas deben tratarse como no confiables.
-- Licencia Qwen Research: uso restringido a investigación y evaluación, sin uso comercial.
-- El modelo se entrenó con truncamiento a 1.024 tokens, por lo que el rendimiento en contextos más largos no está validado.
-- Sesgos conocidos: no se documentan análisis específicos de sesgo en la información proporcionada; al heredar del modelo base, arrastra los sesgos de sus datos de entrenamiento.
+- Los benchmarks son autoinformados con un scorer propio, de una sola semilla y no verificados por el leaderboard oficial de BFCL; deben interpretarse como indicativos.
+- El modelo solo declara soporte de ingles; su rendimiento en castellano u otros idiomas no esta documentado.
+- El entrenamiento trunca a 1.024 tokens, lo que limita el tamano practico de los esquemas de herramientas y el historial conversacional que el modelo maneja con fiabilidad, aunque el contexto arquitectonico del modelo base no se detalla en la informacion disponible.
+- Riesgo de alucinacion en la generacion de argumentos: el autor recomienda validar las llamadas contra el esquema antes de ejecutarlas, lo que sugiere que no todas las salidas son necesariamente validas.
+- Sesgos conocidos: no documentados en la informacion proporcionada; al derivar de Qwen2.5-Instruct, hereda los sesgos del modelo base y de los datos publicos de tool calling empleados.
+- Licencia qwen-research: restricciones de uso comercial segun los terminos de Qwen; es necesario revisar el enlace de licencia del modelo base antes de un despliegue en produccion.
+- El autor reconoce un solapamiento informativo: 13 de 9.314 definiciones de funciones de BFCL coinciden en nombre y descripcion con herramientas de entrenamiento, aunque sin coincidencia de consultas.
+- El modelo esta pensado para bibliotecas de herramientas recuperadas por similitud (top 5) y no para catalogos masivos presentados completos en el prompt.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/siva-0104/qwen2.5-3b-toolcall-abstain-v6
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
-- Repositorio con código, evaluación y pipeline de agente: https://github.com/siva-0104/toolcall-slm
-- xLAM function-calling 60k (dataset citado por el autor): no disponible enlace directo en la información proporcionada
-- Glaive function-calling v2 (dataset citado por el autor): no disponible enlace directo en la información proporcionada
-- Hermes function-calling v1 (dataset citado por el autor): no disponible enlace directo en la información proporcionada
-- ToolACE (dataset citado por el autor): no disponible enlace directo en la información proporcionada
-- Referencias APIGen / xLAM citadas por el autor: no disponible enlace directo en la información proporcionada
+- Codigo, evaluacion y pipeline de agente: https://github.com/siva-0104/toolcall-slm

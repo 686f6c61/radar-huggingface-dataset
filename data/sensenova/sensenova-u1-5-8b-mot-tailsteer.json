@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SenseNova - Multimodal AI Model Platform",
-      "url": "https://www.sensenova.ai/",
-      "snippet": "SenseNova is a multimodal AI platform by SenseTime, offering AI capabilities for enterprises worldwide."
-    },
-    {
-      "title": "日日新 - 商汤科技大模型平台 | SenseNova",
-      "url": "https://www.sensenova.cn/",
-      "snippet": "商汤通过12个模拟评测、8款机器人的系统研究，尝试回答具身智能问题，并同步开源日日新 SenseNova-RoboRSI 框架与27B具身模 …"
-    },
-    {
-      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: …",
-      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
-      "snippet": "Apr 27, 2026 · The fastest way to experience SenseNova-U1 is through SenseNova-Studio — a 🆓 free online playground where you …"
-    },
-    {
-      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
-      "url": "https://arxiv.org/abs/2609.11929",
-      "snippet": "Sep 10, 2026 · We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and …"
-    },
-    {
-      "title": "[2605.12500] SenseNova-U1: Unifying Multimodal Understanding and ...",
-      "url": "https://arxiv.org/abs/2605.12500",
-      "snippet": "May 12, 2026 · Hence, we introduce SenseNova-U1, a native unified multimodal paradigm built upon NEO-unify, in which …"
-    }
-  ]
+  "sources": []
 }

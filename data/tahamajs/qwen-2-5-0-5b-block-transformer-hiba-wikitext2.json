@@ -53,6 +53,13 @@
   "removal_pattern": null,
   "renamed_to": "Hooshaai/qwen-2.5-0.5b-block-transformer-hiba-wikitext2",
   "renamed_at": "2026-11-14T08:47:42.524Z",
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Causal Language Modeling",
+      "dataset": "WikiText-2 (wikitext-2-raw-v1)",
+      "metric": "WikiText-2 Post-KD Perplexity",
+      "value": 399.26
+    }
+  ],
   "sources": []
 }

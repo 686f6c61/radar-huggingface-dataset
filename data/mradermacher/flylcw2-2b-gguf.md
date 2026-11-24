@@ -2,95 +2,91 @@
 
 ## Resumen
 
-`flylcw2-2B-GGUF` es una coleccion de cuantizaciones estaticas en formato GGUF del modelo `flylcw/flylcw2-2B`, publicada por el usuario mradermacher. El repositorio no contiene un modelo original, sino una conversion a GGUF de un modelo base de 2.390.384.448 parametros (aproximadamente 2,39 mil millones), pensada para su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama. La model card es practicamente un volcado de metadatos del proceso de cuantizacion, sin descripcion funcional del modelo.
+flylcw2-2B es un modelo de lenguaje de 2.390.384.448 parámetros (aproximadamente 2,4 mil millones) desarrollado por el usuario flylcw y publicado en Hugging Face bajo licencia MIT. Se trata de un modelo de arquitectura derivada de la familia Qwen 3.5, según la etiqueta `qwen3_5` de la model card, orientado exclusivamente a texto y con foco en el idioma chino. La ficha que nos ocupa corresponde a la versión cuantizada en formato GGUF elaborada por mradermacher, un conocido creador de cuantizaciones de la comunidad.
 
-La relevancia de esta ficha es limitada por la escasez de informacion disponible: no se documentan arquitectura, datos de entrenamiento, licencia, idiomas ni resultados de benchmarks. El valor practico del repositorio reside en ofrecer multiples niveles de cuantizacion (desde Q2_K hasta F16, pasando por Q4_K_M, Q5_K_M, Q8_0 e IQ4_XS) de un modelo conversacional de ~2,4B parametros, lo que permite desplegarlo en hardware modesto.
+La relevancia de esta ficha reside en que facilita el despliegue local del modelo base en hardware modesto: las cuantizaciones disponibles van desde 1,3 GB (Q2_K) hasta 4,9 GB (f16), lo que permite ejecutarlo en GPUs de consumo e incluso en CPU con llama.cpp. El modelo está pensado para tareas conversacionales y de generación de texto en chino, y su licencia MIT elimina restricciones de uso comercial, algo poco habitual en modelos de su categoría.
 
-Dado el tamano del modelo y el formato GGUF, el caso de uso natural es la inferencia local en CPU o en GPUs de consumo, con fines conversacionales. Cualquier evaluacion de calidad, seguridad o idoneidad para produccion requiere consultar el modelo base original, ya que este repositorio solo aporta la conversion de formato.
+No obstante, la información pública disponible es muy limitada: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja fielmente lo que se puede verificar y marca explícitamente como "no disponible" todo aquello que no consta en la documentación consultada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 2.390.384.448 (~2,39B) |
+| Arquitectura | Transformer derivada de Qwen 3.5 (etiqueta `qwen3_5`); detalles no disponibles |
+| Parametros totales | 2.390.384.448 (~2,4 B) |
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye presumiblemente en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Chino (zh); otros idiomas no disponibles |
+| Licencia | MIT |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tamano del repo | 22,5 GB (incluye todas las cuantizaciones) |
+| Modelo base | flylcw/flylcw2-2B |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base `flylcw/flylcw2-2B`: la model card del repositorio GGUF no describe si se trata de un transformer denso, un modelo MoE, un hibrido SSM o cualquier otra variante, ni detalla el numero de capas, dimensiones ocultas o mecanismo de atencion. Tampoco se documentan los datos de entrenamiento (numero de tokens, composicion del corpus), la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+La model card del repositorio cuantizado no aporta detalles sobre la arquitectura interna más allá de la etiqueta `qwen3_5`, que sugiere que el modelo base sigue el diseño de la familia Qwen 3.5 de Alibaba. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención (si es atención completa, lineal o híbrida), ni si emplea mezcla de expertos. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Lo unico verificable es el proceso de conversion: los metadatos indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, lo que sugiere una conversion desde pesos en formato Hugging Face a GGUF mediante la herramienta estandar de llama.cpp. El repositorio ocupa 22,5 GB, coherente con la inclusion de la variante F16 (que por si sola rondaria los 4,8 GB para 2,39B parametros) junto con el resto de cuantizaciones.
+La información disponible se limita a los aspectos de cuantización: mradermacher ha generado cuantizaciones estáticas (no ponderadas por imatrix) en doce variantes, desde Q2_K hasta f16. La model card indica que las cuantizaciones ponderadas por imatrix no estaban disponibles en el momento de la publicación y que podrían solicitarse mediante una discusión en la comunidad. No hay innovaciones técnicas documentadas más allá de las propias del modelo base, que no se detallan.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta orientado a dialogos de multiples turnos, aunque no se detalla su calidad ni su formato de prompt.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura de inferencia estandar (por ejemplo, Hugging Face Inference Endpoints con backend compatible).
-- Ejecucion en motores GGUF: al distribuirse en GGUF, es ejecutable con llama.cpp, Ollama y otros runners que soportan este formato.
-- Tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional en chino, según la etiqueta `conversational` y el idioma declarado (`zh`).
+- Procesamiento exclusivo de texto: la etiqueta `text-only` descarta capacidades multimodales (visión o audio).
+- Razonamiento y generación de contenido general: no hay documentación específica que confirme capacidades avanzadas de código o matemáticas.
+- Soporte de tool calling / function calling: no disponible en la información consultada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al chino según la documentación; el resto de idiomas no está confirmado.
+- Modo de pensamiento (thinking mode), visión o audio: no disponible.
 
 ## Casos de uso
 
-- Prototipado conversacional local: gracias a su tamano de ~2,39B parametros y a las cuantizaciones Q4_K_M o Q5_K_M, el modelo puede ejecutarse en un portatil con CPU moderna o GPU de consumo para probar flujos de chat sin depender de la nube.
-- Asistente de escritorio offline: integrado en Ollama, permite ofrecer un chatbot local en aplicaciones de escritorio sin conexion, con la ventaja de que los datos del usuario no salen del equipo.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 variantes de cuantizacion, lo que lo hace util para medir el impacto de la cuantizacion (de Q2_K a F16) en la calidad de las respuestas de un mismo modelo base.
-- Filtrado y clasificacion de texto ligera: para tareas de etiquetado o resumen de textos cortos en entornos con recursos limitados, donde un modelo de 2,4B puede bastar y el coste por inferencia es minimo.
-- Base para ajuste fino o experimentacion: al ser un modelo pequeno, sirve como punto de partida para experimentos de destilacion o ajuste con LoRA en hardware de gama media, aunque la falta de licencia documentada es un riesgo.
-- Educacion e investigacion: util para estudiar el comportamiento de modelos pequenos cuantizados y el compromiso entre tamano, velocidad y fidelidad respecto al modelo original en F16.
+- Asistente conversacional en chino para aplicaciones de mensajería: el modelo puede gestionar diálogos multi-turno en chino con un coste computacional muy bajo gracias a sus ~2,4 B de parámetros, lo que permite desplegarlo en servidores modestos o incluso en dispositivos locales.
+- Prototipado rápido de chatbots: al estar disponible en GGUF desde 1,3 GB, permite iterar sobre prompts y flujos conversacionales en un portátil sin necesidad de GPU dedicada, usando llama.cpp u Ollama.
+- Generación de texto en entornos con requisitos de licencia permisiva: la licencia MIT permite integrar el modelo en productos comerciales cerrados sin obligación de compartir código ni pesos derivados.
+- Educación e investigación sobre cuantización: el repositorio ofrece doce variantes de cuantización del mismo modelo, lo que lo convierte en un caso práctico para estudiar el impacto de la cuantización en la calidad de salida en un modelo pequeño.
+- Despliegue en el borde (edge computing): con cuantizaciones Q4_K_S de 1,6 GB, el modelo puede ejecutarse en dispositivos con poca memoria, como Raspberry Pi de gama alta o mini-PCs, para tareas de generación de texto sin conexión.
+- Filtrado y clasificación de texto en chino: aunque no está documentado específicamente, un modelo conversacional de 2,4 B puede adaptarse mediante prompting a tareas de etiquetado o resumen de textos cortos en chino con latencia baja.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y para 2,39B parametros):
-  - F16: ~4,8 GB de pesos.
-  - Q8_0: ~2,5 GB.
-  - Q6_K: ~2,0 GB.
-  - Q5_K_M: ~1,7 GB.
-  - Q4_K_M: ~1,5 GB.
-  - Q3_K_M: ~1,1 GB.
-  - Q2_K: ~0,9 GB.
-  - IQ4_XS: ~1,3 GB.
-  - A estas cifras hay que sumar el espacio para el contexto KV cache, que crece con la longitud de contexto (no documentada).
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para las cuantizaciones bajas; una RTX 3060 de 12 GB o superior permite ejecutar F16 con contexto amplio. En GPU de datacenter (A100, H100) el modelo es sobredimensionado para su tamano y solo tendria sentido en escenarios de muchas peticiones concurrentes.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 4 GB o mas de VRAM para cuantizaciones Q4/Q5; tambien es viable en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; la etiqueta `endpoints_compatible` apunta a despliegue gestionado.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K ~1,3 GB; Q3_K_S ~1,3 GB; Q3_K_M ~1,4 GB; Q3_K_L ~1,5 GB; IQ4_XS ~1,6 GB; Q4_K_S ~1,6 GB; Q4_K_M ~1,7 GB; Q5_K_S ~1,8 GB; Q5_K_M ~1,9 GB; Q6_K ~2,1 GB; Q8_0 ~2,7 GB; f16 ~4,9 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4/Q5; una RTX 3060, RTX 4060 o superior permite ejecutar Q8_0 con holgura. Para f16 se recomienda al menos 6-8 GB de VRAM (RTX 3060 Ti, RTX 4060 Ti, RTX 4070).
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q8_0 con GPUs de 4 GB o más; f16 requiere una GPU de gama media.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con el pipeline correspondiente.
+- Latencia y throughput estimados: no disponibles en la información consultada. Al tratarse de un modelo de ~2,4 B, se espera un throughput alto en GPU de consumo, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| flylcw2-2B-GGUF | ~2,39B | no disponible | no disponible | GGUF | Repositorio de cuantizaciones de un modelo base sin documentar |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (segun documentacion publica del modelo) | Apache 2.0 (segun documentacion publica) | safetensors, GGUF | Alternativa pequena con licencia permisiva y benchmarks publicados |
-| Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens (segun documentacion publica) | Llama 3.2 Community License | safetensors, GGUF | Modelo pequeno de Meta con ecosistema amplio |
-| Gemma 2 2B | ~2,6B | 8.192 tokens (segun documentacion publica) | Gemma Terms of Use | safetensors, GGUF | Tamano comparable, con documentacion completa |
+| flylcw2-2B (esta ficha) | ~2,4 B | no disponible | MIT | GGUF, safetensors | Chino, text-only |
+| Qwen2.5-1.5B | ~1,5 B | 32K (según documentación pública de Qwen) | Apache 2.0 | safetensors, GGUF | Multilingüe, familia Qwen |
+| Qwen2.5-3B | ~3 B | 32K (según documentación pública de Qwen) | Qwen License | safetensors, GGUF | Multilingüe, familia Qwen |
+| Llama 3.2-1B | ~1,2 B | 128K (según documentación pública de Meta) | Llama 3.2 Community License | safetensors, GGUF | Multilingüe, text-only |
 
-La comparativa con estos modelos es orientativa: no se dispone de datos de rendimiento del modelo flylcw2-2B que permitan una comparacion cuantitativa, y su licencia no esta documentada, lo que dificulta evaluar su idoneidad frente a alternativas con terminos claros.
+La comparativa se basa en datos públicos de los modelos alternativos; para flylcw2-2B no se dispone de contexto ni benchmarks verificables, por lo que la comparación de rendimiento no es posible. La principal ventaja diferencial de flylcw2-2B es su licencia MIT, más permisiva que la de Llama 3.2 y Qwen2.5-3B, aunque su especialización en chino limita su aplicabilidad fuera de ese idioma.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no se conocen arquitectura, datos de entrenamiento, idiomas ni contexto, lo que impide evaluar sesgos, calidad o seguridad del modelo.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; en produccion esto es un bloqueante legal hasta verificar el modelo base.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; sin benchmarks ni evaluaciones publicadas no es posible cuantificarlo.
-- Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no se pueden anticipar sesgos de genero, raza, idioma o dominio.
-- Contexto limitado o desconocido: la longitud de contexto no esta publicada, por lo que no se debe asumir soporte para conversaciones largas o documentos extensos.
-- Cuantizaciones agresivas: las variantes Q2_K y Q3_K pueden degradar notablemente la coherencia; para produccion se recomienda Q4_K_M o superior.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Modelo base de origen incierto: el autor `flylcw` no dispone de documentacion publica conocida sobre el entrenamiento, lo que anade riesgo de procedencia de los datos.
+- Sesgos conocidos: no documentados; al entrenarse presumiblemente con datos en chino, puede reflejar sesgos culturales y lingüísticos de ese corpus.
+- Riesgo de alucinación: inherente a los modelos de ~2,4 B; la falta de benchmarks impide cuantificarlo, pero se espera mayor propensión a errores factuales que en modelos de mayor tamaño.
+- Limitaciones de contexto e idioma: la longitud de contexto no está documentada; el soporte se limita al chino según la model card, por lo que su uso en castellano u otros idiomas no está garantizado.
+- Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones significativas, pero conviene verificar la licencia del modelo base (flylcw/flylcw2-2B), ya que la model card del cuantizado solo declara MIT para el conjunto.
+- Caveats para producción: las cuantizaciones son estáticas (sin imatrix), lo que puede degradar la calidad en las variantes de menor bits (Q2_K, Q3_K_S); para producción se recomienda Q4_K_M o superior. No hay información sobre estabilidad, toxicidad ni evaluación de seguridad.
+- El repositorio tiene 657 descargas y 0 likes en el momento de la consulta, lo que indica una adopción muy limitada y poca validación comunitaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/flylcw2-2B-GGUF
 - Modelo base: https://huggingface.co/flylcw/flylcw2-2B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Página de descargas del cuantizador: https://hf.tst.eu/model#flylcw2-2B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

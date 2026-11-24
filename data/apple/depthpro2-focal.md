@@ -2,80 +2,84 @@
 
 ## Resumen
 
-DepthPro2-focal es un estimador de longitud focal (focal length) y campo de visión (FOV) desarrollado por Apple como componente auxiliar de la familia Depth Pro 2, un sistema de estimación de profundidad monocular métrica y temporalmente consistente. El modelo resuelve un problema concreto: cuando una fotografía o un vídeo no incluye metadatos EXIF con la distancia focal de la cámara, los modelos de profundidad métrica no pueden producir medidas en unidades absolutas (metros) sin conocer la calibración intrínseca. Este estimador predice esa longitud focal en píxeles a partir de la imagen, habilitando la inferencia métrica sobre material sin calibrar.
+DepthPro2-focal es un estimador de longitud focal (focal length) y campo de visión (field-of-view) desarrollado por Apple, publicado bajo el paraguas del proyecto Depth Pro 2, un sistema de estimación de profundidad monocular métrica, nítida y temporalmente consistente. Este checkpoint concreto no estima profundidad por sí mismo: es el submódulo `FOVEstimator` que predice la longitud focal en píxeles de una fotografía o de los fotogramas de un vídeo, un dato necesario para convertir la profundidad relativa en profundidad métrica cuando los metadatos EXIF de la cámara no están disponibles.
 
-Con 23.455.450 parámetros (aproximadamente 23,5 M), es un modelo muy ligero diseñado para ejecutarse como módulo previo al modelo principal de profundidad (DepthPro2-H). Acepta tanto imágenes individuales como secuencias de fotogramas (tensores con forma `(T, 3, H, W)`), lo que lo hace adecuado para vídeo. Se distribuye en formato safetensors dentro de la librería `depth-pro-2` y se carga mediante `FOVEstimator.from_pretrained`.
+El modelo es muy compacto: 23.455.450 parámetros (unos 23,5 millones) y un repositorio de 0,1 GB, lo que lo sitúa en la categoría de modelos ligeros de visión. Se distribuye en formato safetensors y se integra con la librería `depth-pro-2` del propio repositorio de Apple, cargándose como componente del modelo principal DepthPro2-H o de forma independiente.
 
-Su relevancia radica en que elimina la dependencia de metadatos de cámara en pipelines de profundidad métrica, un requisito habitual en fotografía de consumo, vídeo de móvil o datasets web donde el EXIF suele estar ausente o ser poco fiable. La licencia es de solo uso en investigación (Apple AMLR), lo que restringe su uso comercial.
+Su relevancia radica en que resuelve un problema práctico de calibración de cámara "en el salvaje": inferir la focal a partir de una sola imagen sin conocer los intrínsecos. La licencia es de investigación no comercial (Apple Machine Learning Research Model license), lo que condiciona su uso en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo específico de estimación de FOV/longitud focal dentro de la librería `depth-pro-2`) |
-| Parámetros totales | 23.455.450 |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (procesa imágenes y secuencias de fotogramas) |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible (modelo visual, no lingüístico) |
-| Licencia | Apple AMLR (apple-amlr), solo investigación |
-| Formato de pesos | safetensors |
+| Arquitectura | no disponible (submódulo FOVEstimator del sistema Depth Pro 2; arquitectura concreta no detallada en la información) |
+| Parametros totales | 23.455.450 |
+| Parametros activos | no disponible (no es MoE según la información) |
+| Longitud de contexto | no disponible (modelo de visión; no aplica ventana de texto) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; soporte bfloat16 en la carga de referencia) |
+| Idiomas soportados | no disponible (modelo de visión, independiente de idioma) |
+| Licencia | apple-amlr (Apple Machine Learning Research Model license; solo investigación, no comercial) |
+| Formato de pesos | safetensors (`model.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles publicados sobre la arquitectura interna del estimador en la información proporcionada. El modelo pertenece a la familia Depth Pro 2, cuyo trabajo técnico se titula "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth" (Hu, Mihajlovic, Duong, Lipson, Dong, Delaunoy, Richter, Koltun, 2026). El estimador de FOV es un componente separado del modelo principal de profundidad: se entrena y distribuye de forma independiente para predecir la longitud focal en píxeles (`f_px`) a partir de la imagen de entrada.
+La información disponible no detalla la arquitectura interna del estimador de focal más allá de que se integra en el sistema Depth Pro 2 como un componente `FOVEstimator` que opera sobre tensores de imagen normalizados (`to_normalized_tensor`) y devuelve la longitud focal en píxeles (`focal_length_px`). Acepta tanto imágenes individuales como secuencias de fotogramas con forma `(T, 3, H, W)`, lo que indica que puede procesar vídeo de forma temporal. El modelo principal Depth Pro 2 se describe en el informe técnico arXiv:2611.26603 como un sistema de profundidad monocular métrica "nítida y temporalmente consistente".
 
-La API expuesta (`FOVEstimator`, `focal_length_px`) y la forma de los tensores de entrada (`(T, 3, H, W)`) indican que el modelo opera sobre RGB normalizado y admite tanto una imagen como una secuencia temporal de fotogramas, produciendo una estimación de focal por fotograma. No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o ajuste fino supervisado.
+No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF/DPO (poco probables en un modelo de visión de este tipo). Tampoco se detallan innovaciones técnicas concretas del estimador de focal. Todo ello debe considerarse "no disponible".
 
 ## Capacidades
 
 - Estimación de longitud focal en píxeles a partir de una imagen RGB individual.
-- Estimación de campo de visión (FOV) derivada de la focal predicha.
-- Procesamiento de secuencias de vídeo: acepta tensores de forma `(T, 3, H, W)` y devuelve estimaciones por fotograma.
-- Calibración de cámara implícita para habilitar la inferencia de profundidad métrica en imágenes sin EXIF.
-- Integración como módulo previo al modelo principal DepthPro2-H para fotografías y vídeos sin focal conocida.
-- No es un modelo de lenguaje: no soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
+- Estimación de campo de visión (field-of-view) derivada de la focal.
+- Procesamiento de secuencias de vídeo: acepta tensores `(T, 3, H, W)` y devuelve una focal por fotograma.
+- Calibración de cámara sin metadatos EXIF.
+- Integración como submódulo del modelo de profundidad DepthPro2-H para obtener profundidad métrica.
+- Uso independiente mediante la clase `FOVEstimator`.
+- Soporte de precisión bfloat16 y ejecución en GPU (CUDA) según los ejemplos de la model card.
+- No dispone de generación de texto, tool calling, agentes ni capacidades multilingües: es un modelo puramente visual.
 
 ## Casos de uso
 
-- **Profundidad métrica sobre fotos sin EXIF**: cuando una imagen carece de metadatos de distancia focal, este estimador predice `f_px` y permite que DepthPro2-H genere mapas de profundidad en metros en lugar de valores relativos. Es el caso de uso principal del modelo.
-- **Vídeo de móvil sin calibración**: para clips grabados con cámaras cuyo EXIF se ha eliminado o es inconsistente, el modelo procesa la secuencia completa `(T, 3, H, W)` y aporta una focal por fotograma, habilitando reconstrucción de profundidad temporalmente consistente.
-- **Pipelines de datasets web**: en la curación de datasets visuales a gran escala, muchas imágenes pierden sus metadatos; este estimador permite recuperar una calibración aproximada antes del etiquetado de profundidad.
-- **Preprocesado en fotogrametría ligera**: para aplicaciones que necesitan una estimación inicial de intrínsecos antes de un ajuste bundle más costoso, el modelo ofrece un punto de partida rápido con solo 23,5 M de parámetros.
-- **Reprocesado de archivos fotográficos antiguos**: fotografías digitalizadas o exportadas sin EXIF pueden calibrarse para su uso en herramientas de profundidad métrica o de efecto bokeh sintético.
-- **Investigación en percepción 3D**: como bloque de calibración en estudios académicos sobre profundidad monocular, donde la licencia de solo investigación encaja con el uso previsto.
+- Calibración automática de cámaras en pipelines de fotogrametría: cuando las imágenes no incluyen EXIF, el modelo infiere la focal para reconstruir intrínsecos y alimentar el sistema de profundidad métrica.
+- Estimación de profundidad métrica en fotografía: combinado con DepthPro2-H, permite obtener profundidad en unidades métricas reales a partir de una sola foto sin datos de calibración.
+- Procesamiento de vídeo monoculo: al aceptar secuencias `(T, 3, H, W)`, permite estimar la focal por fotograma para estabilizar la escala métrica en vídeos de drones o cámaras de acción.
+- Reconstrucción 3D y SLAM: la focal estimada sirve como inicialización de intrínsecos en pipelines de estructura-por-movimiento o SLAM monocular.
+- Preprocesado en datasets de visión: normalización de la escala de imágenes de origen diverso antes de entrenar o evaluar modelos de profundidad.
+- Realidad aumentada y efectos visuales: estimación de la focal para alinear objetos virtuales con la perspectiva real de una captura.
+- Investigación académica en visión por computador: al ser un modelo ligero (23,5 M de parámetros) y de licencia de investigación, es adecuado para experimentos reproducibles en laboratorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card remite a un informe técnico en arXiv cuyo identificador aparece como "TODO" y a una página de proyecto, pero no se incluyen cifras de error de focal (por ejemplo, error angular medio) ni comparativas numéricas.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: con 23,5 M de parámetros, los pesos en bfloat16 ocupan aproximadamente 47 MB; en float32, unos 94 MB. La VRAM real dependerá de la resolución de entrada y del tamaño del lote.
-- **GPU recomendadas**: cualquier GPU con soporte CUDA es suficiente; el ejemplo oficial usa `.to("cuda")` con `torch.bfloat16`. Una RTX 4090, A100 o H100 están sobradamente capacitadas; también una GPU de gama de entrada.
-- **Consumer GPU**: sí, cabe holgadamente en cualquier GPU de consumo moderna e incluso en iGPU con suficiente memoria compartida, dado el reducido tamaño del modelo.
-- **Despliegue**: la vía documentada es la librería `depth-pro-2` instalada desde el repositorio de GitHub (`pip install "git+https://github.com/apple-aiml-research/ml-depth-pro-2"`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo visual de este tipo).
-- **Latencia y throughput**: no disponible en la información proporcionada.
+- VRAM estimada para inferencia: muy baja; con 23,5 M de parámetros en bfloat16 el peso ocupa aproximadamente 47 MB, por lo que la huella de memoria es mínima (inferior a 1 GB incluyendo activaciones de imagen).
+- GPU recomendadas: cualquier GPU CUDA moderna; los ejemplos usan `cuda` y `torch.bfloat16`. Funciona en RTX 4090, A100, H100 y GPUs de gama media.
+- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, e incluso GPUs integradas con suficiente memoria para tensores de imagen.
+- Opciones de despliegue: la vía oficial es la librería `depth-pro-2` instalada desde el repositorio de GitHub de Apple, con carga de pesos vía `huggingface_hub` y `safetensors`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de estimación de focal ni datos de rendimiento que permitan una comparación rigurosa. El modelo forma parte de la familia Depth Pro 2 (existen otros tamaños bajo `apple/DepthPro2`), pero no se detallan sus especificaciones en la documentación disponible.
+No disponible. La información proporcionada no incluye modelos comparables de estimación de focal ni datos de rendimiento de alternativas.
 
 ## Limitaciones y advertencias
 
-- **Licencia restrictiva**: los pesos se publican bajo la Apple Machine Learning Research Model License, limitada a investigación científica no comercial y desarrollo académico. El uso comercial requiere licencia aparte.
-- **Dependencia del modelo principal**: el estimador por sí solo no produce profundidad; debe combinarse con DepthPro2-H u otro modelo de profundidad métrica para el caso de uso completo.
-- **Precisión de la focal**: no se han publicado métricas de error, por lo que no es posible cuantificar la fiabilidad de la estimación en distintos tipos de escena, longitudes focales o condiciones de iluminación.
-- **Riesgo de estimaciones erróneas**: en imágenes con poca textura, escenas sintéticas o campos de visión extremos, la predicción de focal puede desviarse y propagar error a la profundidad métrica.
-- **Sin soporte lingüístico ni de agentes**: no es un modelo de lenguaje; no admite instrucciones en lenguaje natural, tool calling ni razonamiento multi-paso.
-- **Documentación incompleta**: el informe técnico enlazado apunta a un identificador arXiv pendiente ("TODO"), por lo que faltan detalles de entrenamiento, evaluación y sesgos.
-- **Sesgos**: no se documentan sesgos conocidos, pero al ser un modelo visual entrenado con datos no especificados, puede heredar sesgos de distribución del dataset de entrenamiento.
+- Licencia apple-amlr: uso exclusivamente para investigación científica no comercial y desarrollo académico; no apta para producción comercial sin licencia adicional.
+- Modelo especializado: solo estima focal/campo de visión; no genera profundidad por sí mismo ni texto, y no sustituye al modelo principal DepthPro2-H.
+- Dependencia de la librería `depth-pro-2` y de la API interna (`FOVEstimator`, `to_normalized_tensor`), lo que puede implicar fragilidad ante cambios de versión.
+- No se documentan sesgos, tasas de error ni comportamiento en dominios fuera de distribución (p. ej. cámaras con distorsión fuerte, ojo de pez, imágenes sintéticas).
+- Riesgo de estimación errónea de focal en imágenes sin estructura geométrica suficiente o con recortes agresivos.
+- Sin información sobre idiomas ni sesgos culturales (no aplica, al ser un modelo visual).
+- Alucinación no aplica en el sentido textual, pero sí existe riesgo de predicciones de focal plausibles pero incorrectas sin señal de confianza documentada.
+- Verificar siempre la compatibilidad de la versión de pesos con la versión de la librería antes de desplegar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/apple/DepthPro2-focal
+- Hugging Face: https://huggingface.co/apple/DepthPro2-focal
 - Repositorio GitHub: https://github.com/apple-aiml-research/ml-depth-pro-2
-- Página de proyecto: https://apple-aiml-research.github.io/ml-depth-pro-2/
-- Familia completa de modelos: https://huggingface.co/apple/DepthPro2
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.26603
+- Página del proyecto: https://apple-aiml-research.github.io/ml-depth-pro-2/
+- Modelos de todos los tamaños: https://huggingface.co/apple/DepthPro2
 - Licencia del modelo: https://github.com/apple-aiml-research/ml-depth-pro-2/blob/main/LICENSE_MODEL
-- Informe técnico (arXiv): https://arxiv.org/abs/TODO (identificador pendiente en la información disponible)

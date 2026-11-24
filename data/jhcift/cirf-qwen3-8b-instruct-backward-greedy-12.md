@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CIRF-Qwen3-8B-Instruct-Backward-Greedy-12 es un ajuste fino del modelo Qwen3-8B de Alibaba, desarrollado por el usuario JhCIFT dentro de la familia experimental CIRF (siglas no expandidas en la model card). El modelo introduce un mecanismo de "tokens funcionales" que obliga al modelo a emitir una traza explícita de razonamiento delimitada por los tokens especiales `[sof]` (start of function) y `[eof]` (end of function), seguida de la respuesta final. Esta variante concreta se ha entrenado con una selección "backward-greedy" que limita a un máximo de 12 tokens de resultado explícitos por ejemplo de entrenamiento, lo que reduce la longitud de las trazas y debería contener el coste de inferencia.
+CIRF-Qwen3-8B-Instruct-Backward-Greedy-12 es un ajuste fino del modelo Qwen3-8B de Alibaba, desarrollado por el usuario JhCIFT bajo el marco experimental CIRF (probablemente "Continuous Intermediate Reasoning Format" o similar, aunque la model card no expande el acronimo). El modelo adapta el transformer denso original para que razone mediante una secuencia de "tokens funcionales" (`[f_0]` a `[f_511]`) delimitados por `[sof]` y `[eof]`, intercalando valores de resultado opcionales. El objetivo es explicitar el proceso de razonamiento en un formato estructurado y verificable, en lugar de la cadena de pensamiento en lenguaje natural.
 
-El modelo parte de la arquitectura transformer densa de Qwen3-8B, con 8.192.758.784 parámetros totales, y mantiene los pesos en BF16 con la actualización LoRA fusionada en los pesos densos. Incorpora 514 tokens nuevos (`[sof]`, `[eof]` y `[f_0]` a `[f_511]`) con sus embeddings y filas de salida entrenadas, de modo que se carga con Transformers estándar sin necesidad de PEFT ni del código CIRF original. El repositorio ocupa 16,4 GB.
+Se trata de una variante concreta dentro de una familia de ocho modelos CIRF publicados por el mismo autor, en este caso con seleccion "backward-greedy" y un presupuesto maximo de 12 tokens de resultado explicitos por ejemplo de entrenamiento. El modelo tiene 8.192.758.784 parametros (8,2 mil millones), se distribuye en safetensors BF16 con la actualizacion LoRA ya fusionada en los pesos densos y mantiene la licencia Apache 2.0 del modelo base.
 
-Su relevancia es acotada pero interesante para investigación: explora una forma alternativa de razonamiento estructurado (trazas de tokens funcionales en lugar de lenguaje natural libre) y publica resultados en varios conjuntos de matemáticas y sentido común. Es un modelo de nicho, con cero descargas y cero likes en el momento de redactar esta ficha, sin benchmarks comparativos frente a modelos de referencia y con soporte declarado únicamente para inglés.
+Su relevancia es fundamentalmente de investigacion: propone una interfaz de razonamiento alternativa al chat convencional (sin plantilla de chat, prompt terminado en `[sof]`) y publica resultados en tareas aritmeticas y de sentido comun. No es un modelo de proposito general listo para produccion, sino una prueba de concepto sobre como estructurar el razonamiento de un LLM con vocabulario funcional dedicado.
 
 ## Especificaciones tecnicas
 
@@ -14,94 +14,93 @@ Su relevancia es acotada pero interesante para investigación: explora una forma
 |---|---|
 | Arquitectura | Transformer denso (derivado de Qwen3-8B) con vocabulario extendido de tokens funcionales CIRF |
 | Parametros totales | 8.192.758.784 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible en la informacion proporcionada (heredada de Qwen3-8B, no confirmada en la model card) |
-| Tipos de cuantizacion | No se publican pesos cuantizados; los pesos se distribuyen en BF16 (safetensors) |
-| Idiomas soportados | Ingles (`en`) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (el modelo base Qwen3-8B soporta contexto nativo largo, pero la model card no lo declara para este ajuste) |
+| Tipos de cuantizacion | no disponible oficialmente; al estar en safetensors BF16 es convertible a GGUF/AWQ/GPTQ con herramientas externas |
+| Idiomas soportados | ingles (declarado en la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16, Transformers) |
+| Formato de pesos | safetensors (BF16, LoRA fusionada) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune supervisado de Qwen3-8B, un transformer denso de 8B parámetros. La modificación principal es la incorporación de 514 tokens especiales al vocabulario: `[sof]` y `[eof]` como delimitadores de la traza de razonamiento, y `[f_0]` a `[f_511]` como tokens funcionales que el modelo emite durante dicha traza, opcionalmente acompañados de valores de resultado. El prompt de entrada tiene el formato `QUESTION[sof]` y no se utiliza plantilla de chat: el modelo genera la traza, emite `[eof]` y a continuación la respuesta final, deteniéndose en el token EOS del tokenizador.
+El modelo parte de Qwen3-8B, un transformer decoder-only denso, y le anade 514 tokens nuevos al vocabulario: `[sof]` (start of function trace), `[eof]` (end of function trace) y 512 tokens funcionales `[f_0]`...`[f_511]`. Estos tokens tienen filas de embedding y de salida entrenadas especificamente. El ajuste se realizo mediante LoRA, cuya actualizacion se fusiono posteriormente en los pesos densos BF16, de modo que el checkpoint carga con Transformers estandar sin PEFT ni codigo CIRF adicional.
 
-El entrenamiento parte del modelo "full-result" de la misma familia y aplica una selección backward-greedy de resultados con un presupuesto máximo de 12 tokens de resultado explícitos por ejemplo. La actualización LoRA resultante se fusiona en los pesos densos BF16, incluyendo los embeddings y filas de salida de los nuevos tokens, de forma que el checkpoint es autocontenido. La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; únicamente se documentan los artefactos `training_config.json`, `provenance.json` y `export_verification.json`, que no se reproducen en la información disponible.
+El entrenamiento es supervisado (no se menciona RLHF ni DPO) sobre el modelo "Full" de la misma familia, aplicando una seleccion "backward-greedy" de resultados con un presupuesto de como maximo 12 tokens de resultado explicitos por ejemplo. La model card indica que se probaron 91 disenos candidatos y que la revision actual (2026-11-08) incorpora la seleccion final; la revision inicial `aebd4e1` (2026-11-02) corresponde a una seleccion intermedia con 56 de 91 disenos evaluados. El formato de inferencia no usa plantilla de chat: el prompt es `PREGUNTA[sof]` y el modelo emite una traza de tokens funcionales con valores de resultado opcionales, seguida de `[eof]` y la respuesta final, terminando en el token EOS del tokenizer.
 
 ## Capacidades
 
-- Generación de texto con razonamiento estructurado mediante trazas de tokens funcionales delimitadas por `[sof]` y `[eof]`.
-- Razonamiento aritmético y matemático de varios pasos (evaluado en GSM8K, MultiArith, SVAMP y MATH-500 según la model card).
-- Razonamiento de sentido común (CommonsenseQA, StrategyQA).
-- Tareas de seguimiento de estado y paridad (Coin Flip).
-- Emisión de valores de resultado intermedios dentro de la traza, con un presupuesto controlado de tokens de resultado (12 en esta variante).
-- Carga directa con Transformers sin PEFT ni código adicional; compatible con text-generation-inference y endpoints compatibles según los tags del repositorio.
-- Soporte multilingüe: no disponible; la model card declara únicamente inglés.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: no documentadas; el mecanismo de tokens funcionales es un razonamiento interno, no un protocolo de herramientas.
-- Visión o audio: no disponible.
+- Razonamiento estructurado mediante trazas de tokens funcionales (`[f_0]`-`[f_511]`) en lugar de cadena de pensamiento en lenguaje natural.
+- Resolucion de problemas aritmeticos y de razonamiento de varios pasos (GSM8K, MultiArith, SVAMP, Coin Flip).
+- Razonamiento de sentido comun (CommonsenseQA).
+- Generacion de texto en ingles como capacidad heredada del modelo base.
+- Formato de salida determinista con decodificacion greedy y limite configurable de tokens funcionales.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo "thinking" explicito mas alla de la traza CIRF.
+- Capacidad multilingue limitada al ingles segun la model card.
 
 ## Casos de uso
 
-- Investigación sobre razonamiento estructurado: comparar trazas de tokens funcionales frente a cadenas de pensamiento en lenguaje natural, usando las variantes de la familia CIRF (Full, Zero-Results, Backward-Greedy-3/6/12/18/24) como ablation controlada del presupuesto de tokens de resultado.
-- Evaluación de robustez aritmética: ejecutar el modelo sobre GSM8K, SVAMP o MultiArith con el protocolo incluido (`inference.py`) para reproducir las cifras publicadas y analizar la tasa de acierto con trazas limitadas a 32 tokens funcionales.
-- Prototipado de decodificación restringida: el formato `QUESTION[sof]` y la parada en EOS permiten integrar el modelo en pipelines que necesitan separar de forma determinista la traza de razonamiento de la respuesta final, por ejemplo para auditoría o filtrado.
-- Análisis de paridad y seguimiento de estado: tareas tipo Coin Flip, donde el modelo muestra un 88,15% de acierto con corrección de paridad, útil para estudiar cómo los modelos pequeños manejan estados discretos.
-- Fine-tuning posterior sobre dominios específicos: al ser un checkpoint autocontenido en safetensors con licencia Apache 2.0, sirve como base para experimentos de ajuste con vocabulario funcional ya integrado.
-- Docencia y reproducción de experimentos: el repositorio incluye scripts y artefactos de verificación que facilitan reproducir el protocolo de evaluación en un entorno con solo Torch y Transformers.
+- Investigacion sobre formatos de razonamiento: el modelo sirve como banco de pruebas para comparar trazas de tokens funcionales frente a cadenas de pensamiento en lenguaje natural en tareas de razonamiento aritmetico.
+- Evaluacion de tecnicas de compresion de trazas: la familia de variantes (Greedy-3, 6, 12, 18, 24, Zero-Results) permite estudiar el equilibrio entre presupuesto de tokens de resultado y precision en GSM8K y MultiArith.
+- Generacion de explicaciones verificables en dominios acotados: al separar la traza (`[sof]`...`[eof]`) de la respuesta final, es posible auditar el proceso intermedio de forma programatica.
+- Reproduccion de experimentos: el repositorio incluye `inference.py`, `training_config.json`, `provenance.json` y `export_verification.json`, lo que facilita replicar el protocolo de evaluacion (greedy, maximo 384 tokens nuevos y 32 tokens funcionales).
+- Docencia y divulgacion: ilustra de forma concreta como se puede modificar el vocabulario y el espacio de salida de un LLM para imponer una estructura de razonamiento.
+- Baseline para ajustes posteriores: al cargar con Transformers estandar y licencia Apache 2.0, puede servir como punto de partida para experimentos propios de razonamiento estructurado.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card (decodificación greedy, máximo 384 tokens nuevos y 32 tokens funcionales, puntuación por coincidencia exacta):
+Resultados publicados en la model card (decodificacion greedy, maximo 384 tokens nuevos y 32 tokens funcionales, puntuacion por coincidencia exacta):
 
-| Conjunto de test | Preguntas | Precisión |
+| Test set | Preguntas | Precision |
 |---|---:|---:|
-| GSM8K | 1.319 | 62,55% |
-| MultiArith | 178 | 100,00% |
-| SVAMP | 300 | 81,33% |
-| CommonsenseQA | 1.221 | 80,75% |
-| Coin Flip (corregido por paridad) | 3.333 | 88,15% |
+| GSM8K | 1.319 | 66,49% |
+| MultiArith | 178 | 99,44% |
+| SVAMP | 300 | 84,67% |
+| CommonsenseQA | 1.221 | 81,82% |
+| Coin Flip (corregido por paridad) | 3.333 | 92,32% |
 
-La model card indica que los resultados completos por dataset, incluyendo MATH-500, StrategyQA y latencia con batch 1, están en `test_results.json`, pero no se reproducen en la información disponible. No se han publicado comparaciones directas con otros modelos en la información proporcionada.
+La model card indica que los resultados completos por dataset, incluidos MATH-500, StrategyQA y latencia con batch 1, estan en `test_results.json`. No se proporcionan en la informacion disponible los valores de MATH-500 ni StrategyQA, ni comparaciones directas con el modelo base Qwen3-8B u otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 16,4 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomienda al menos 24 GB para contexto moderado.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para BF16; en GPUs de 16 GB sería necesario cuantizar, pero no se publican pesos GGUF ni cuantizados.
-- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y potencialmente en RTX 3090 (24 GB) en BF16; en GPUs de 16 GB requiere cuantización no oficial.
-- Opciones de despliegue: Transformers (soporte oficial), text-generation-inference y endpoints compatibles según los tags; no se documenta soporte para vLLM, llama.cpp u Ollama, y la ausencia de pesos GGUF limita el despliegue en CPU.
-- Latencia y throughput: no disponibles en la información proporcionada; la model card remite a `test_results.json` para la latencia con batch 1.
+- VRAM estimada en BF16: aproximadamente 16,4 GB solo para pesos (8,19 mil millones de parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomienda 24 GB o mas para contexto moderado.
+- En cuantizacion de 8 bits: alrededor de 8-9 GB de pesos; en 4 bits: alrededor de 4-5 GB, aunque estas conversiones no estan publicadas oficialmente y requieren herramientas externas (llama.cpp, AutoAWQ, GPTQ).
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para BF16 con contexto corto; RTX 3090 (24 GB) tambien es viable.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 en BF16 con contexto limitado, y en GPUs de 8-12 GB si se cuantiza a 4-8 bits.
+- Opciones de despliegue: Transformers (protocolo oficial documentado), text-generation-inference (tag `text-generation-inference` en el repo) y endpoints compatibles; llama.cpp/Ollama/vLLM no estan documentados oficialmente para este checkpoint, aunque al ser un transformer estandar deberian ser adaptables.
+- Latencia y throughput: la model card menciona latencia con batch 1 en `test_results.json`, pero los valores no estan incluidos en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
-| CIRF-Qwen3-8B-Instruct-Backward-Greedy-12 | 8,19B | No disponible | Apache 2.0 | Fine-tune con tokens funcionales y presupuesto de 12 tokens de resultado |
-| Qwen/Qwen3-8B (base) | 8B | No disponible en esta ficha | Apache 2.0 | Modelo original de Alibaba; sin mecanismo CIRF |
-| CIRF-Qwen3-8B-Instruct-Full | 8,19B (presumible) | No disponible | Apache 2.0 | Variante sin restricción de tokens de resultado |
-| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19B (presumible) | No disponible | Apache 2.0 | Variante sin valores de resultado explícitos |
+| CIRF-Qwen3-8B-Instruct-Backward-Greedy-12 | 8,19 B | no disponible | Apache 2.0 | Razonamiento con tokens funcionales CIRF |
+| CIRF-Qwen3-8B-Instruct-Full | 8,19 B (base comun) | no disponible | Apache 2.0 | Variante CIRF sin seleccion backward-greedy |
+| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19 B (base comun) | no disponible | Apache 2.0 | Variante CIRF sin valores de resultado explicitos |
+| Qwen/Qwen3-8B (base) | 8,19 B | contexto nativo largo de Qwen3 (no declarado aqui) | Apache 2.0 | LLM de proposito general con modo thinking |
 
-No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
+La comparacion con Qwen3-8B en benchmarks no esta disponible en la informacion proporcionada; la model card no incluye una tabla comparativa frente al modelo base ni frente a otras variantes CIRF.
 
 ## Limitaciones y advertencias
 
-- Modelo de nicho con cero descargas y cero likes en el momento de la ficha; no hay validación independiente de los resultados publicados.
-- Solo se declara soporte para inglés; el rendimiento en castellano u otros idiomas no está documentado.
-- El formato de prompt es rígido (`QUESTION[sof]`, sin plantilla de chat) y requiere decodificar con `skip_special_tokens=False` y parar en EOS, no en `[eof]`; un uso incorrecto produce salidas malformadas.
-- El protocolo de evaluación limita las trazas a 32 tokens funcionales forzando `[eof]`; los resultados pueden no ser representativos con otros límites.
-- La corrección de paridad en Coin Flip indica que aproximadamente el 20% de las etiquetas del dataset discrepan de la paridad real de los lanzamientos, lo que introduce incertidumbre en esa métrica.
-- GSM8K al 62,55% está por debajo de lo esperable en modelos de 8B de última generación, lo que sugiere que el mecanismo de tokens funcionales no compensa la pérdida de capacidades del ajuste.
-- Riesgo de alucinación: no evaluado ni documentado; la traza de tokens funcionales no garantiza la corrección del resultado final.
-- Sesgos conocidos: no documentados.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías y el modelo deriva de Qwen3-8B, cuyos términos deben respetarse.
-- No se publican pesos cuantizados (GGUF, AWQ, GPTQ), lo que limita el despliegue en hardware modesto.
+- Modelo de investigacion: no esta disenado ni validado para uso en produccion ni para conversacion general; el formato de prompt es no estandar (`PREGUNTA[sof]`, sin plantilla de chat).
+- Solo ingles declarado; el rendimiento en otros idiomas no esta evaluado.
+- Requiere decodificacion greedy y `skip_special_tokens=False`; el uso de sampling o el truncado en `[eof]` en lugar de EOS puede degradar los resultados.
+- La evaluacion impone un limite de 32 tokens funcionales y fuerza `[eof]` al alcanzarlo; sin ese limite el comportamiento puede diferir.
+- La puntuacion de Coin Flip se corrige por paridad porque aproximadamente el 20% de las etiquetas del dataset no coinciden con la paridad de los lanzamientos descritos; esto indica fragilidad en la evaluacion de esa tarea.
+- Riesgo de alucinacion inherente al modelo base, no cuantificado en la informacion disponible.
+- Sesgos del modelo base Qwen3-8B heredados; no se documenta ninguna mitigacion especifica.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; el estado experimental del ajuste desaconseja su uso comercial directo.
+- El checkpoint se actualizo el 2026-11-08; la revision anterior (`aebd4e1`) corresponde a una seleccion intermedia de disenos, lo que puede afectar a la reproducibilidad si no se fija la revision.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-12
+- Revision inicial: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-12/tree/aebd4e1e205559cb38a1f376fe299cdac4955d9a
+- Variante Full: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Full
+- Variante Zero-Results: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results
+- Variante Backward-Greedy-3: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-3
+- Variante Backward-Greedy-6: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-6
+- Variante Backward-Greedy-18: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-18
+- Variante Backward-Greedy-24: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-24
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- CIRF-Qwen3-8B-Instruct-Full: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Full
-- CIRF-Qwen3-8B-Instruct-Zero-Results: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results
-- CIRF-Qwen3-8B-Instruct-Backward-Greedy-3: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-3
-- CIRF-Qwen3-8B-Instruct-Backward-Greedy-6: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-6
-- CIRF-Qwen3-8B-Instruct-Backward-Greedy-18: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-18
-- CIRF-Qwen3-8B-Instruct-Backward-Greedy-24: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-24
+- No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

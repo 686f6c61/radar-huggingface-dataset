@@ -2,84 +2,96 @@
 
 ## Resumen
 
-`Phoonnx/glowtts-en-us-blizzard_fls` es un modelo de síntesis de voz (text-to-speech) en formato ONNX publicado por el usuario Phoonnx. Se trata de una exportación de una voz concreta del proyecto GlowTTS, identificada internamente como `larynx/en-us-blizzard_fls-glow_tts`, empaquetada para su uso con la librería `phoonnx`, un runtime de inferencia de TTS desarrollado por TigreGotico. El modelo no es un desarrollo original de arquitectura, sino un artefacto derivado: una voz preentrenada de GlowTTS (originalmente asociada al conjunto de datos Blizzard y al ecosistema Larynx) convertida a ONNX para despliegue ligero.
+`Phoonnx/glowtts-en-us-blizzard_fls` es un modelo de sintesis de voz (text-to-speech) basado en la arquitectura Glow-TTS, desarrollado originalmente por Rhasspy dentro del proyecto Larynx y reempaquetado por Phoonnx en formato ONNX para su uso con su libreria de TTS homonima. El modelo genera espectrogramas a partir de fonemas IPA del ingles estadounidense, que posteriormente son convertidos a audio por el vocoder HiFi-GAN `hifigan-multi-vctk-small`, descargado automaticamente por la libreria.
 
-La relevancia de este artefacto es fundamentalmente práctica: permite ejecutar síntesis de voz en inglés estadounidense con una huella de repositorio muy reducida (0,1 GB) y sin dependencia de frameworks pesados de deep learning, lo que facilita su integración en aplicaciones de escritorio, asistentes locales o pipelines de generación de audio en entornos con recursos limitados. GlowTTS es un modelo de síntesis no autorregresivo basado en normalizing flows, conocido por su velocidad de inferencia y su entrenamiento estable en comparación con arquitecturas autorregresivas como Tacotron 2.
+La relevancia de este modelo reside en su empaquetado: convierte un modelo Larynx clasico en un artefacto ONNX consumible desde Python y desde el ecosistema OVOS (Open Voice OS) mediante el plugin `ovos-tts-plugin-phoonnx`. Esto lo hace util para asistentes de voz autoalojados, prototipos de sintesis y entornos donde se prefiere inferencia ONNX ligera frente a frameworks de deep learning completos.
 
-No obstante, la información publicada es extremadamente escasa: la model card se limita a indicar el origen del artefacto y a señalar que la licencia es `other` sin especificar sus términos. No se documentan parámetros, contexto, datos de entrenamiento ni métricas de calidad. Cualquier evaluación rigurosa del modelo requiere consultar el repositorio original `Phoonnx/phoonnx-glowtts` y el proyecto Larynx.
+El repositorio ocupa aproximadamente 0,1 GB y esta orientado exclusivamente al idioma `en-US`. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto ni los datos de entrenamiento originales; la model card se limita a describir el empaquetado y el uso. La licencia figura como `other`, sin que se haya registrado una licencia concreta para este modelo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | GlowTTS (síntesis TTS no autorregresiva basada en normalizing flows), exportada a ONNX |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no disponible (modelo TTS; la longitud se rige por la duración del texto de entrada) |
-| Tipos de cuantización | no disponible (el artefacto se distribuye en ONNX; no se documentan variantes cuantizadas) |
-| Idiomas soportados | inglés estadounidense (según el identificador `en-us`); no se documenta cobertura adicional |
-| Licencia | `other` (sin términos especificados en la model card) |
+| Arquitectura | Glow-TTS (texto a espectrograma) + vocoder HiFi-GAN (`hifigan-multi-vctk-small`) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo TTS, no autoregresivo de contexto) |
+| Tipos de cuantizacion | no disponible (pesos distribuidos en ONNX) |
+| Idiomas soportados | `en-US` (ingles estadounidense) |
+| Licencia | `other` (sin licencia concreta registrada; consultar el release upstream) |
 | Formato de pesos | ONNX |
+| Entrada de texto | fonemas gruut en alfabeto IPA |
+| Vocoder asociado | `hifigan-multi-vctk-small` |
+| Tamano del repositorio | ~0,1 GB |
+| Libreria | phoonnx |
+| Pipeline | text-to-speech |
 
 ## Arquitectura y entrenamiento
 
-GlowTTS es un modelo de síntesis de voz no autorregresivo que emplea una arquitectura de normalizing flows para transformar una distribución latente en un espectrograma mel, junto con un módulo de duración que predice la alineación entre fonemas y frames. Esta aproximación permite inferencia paralela (frente a la generación secuencial de Tacotron) y un entrenamiento más estable que los modelos basados en GAN o en alineamiento attention autorregresivo. El artefacto aquí publicado es la exportación ONNX de una voz concreta entrenada sobre datos del corpus Blizzard, dentro del ecosistema Larynx.
+Glow-TTS es un modelo de sintesis no autoregresivo que combina un encoder Transformer con un flujo normalizador invertible (Glow) para mapear texto (en este caso, fonemas IPA) a espectrogramas mel. La alineacion entre fonemas y frames de audio se resuelve mediante busqueda de alineamiento monotono (MAS), lo que evita el uso de un modelo de atencion autoregresivo y permite sintesis en paralelo. El espectrograma resultante se convierte en audio mediante el vocoder HiFi-GAN `hifigan-multi-vctk-small`, entrenado sobre el corpus multi-hablante VCTK.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset, la presencia de fine-tuning con RLHF/DPO (poco habitual en TTS) ni innovaciones técnicas adicionales más allá de las propias de GlowTTS. La model card no documenta el proceso de exportación a ONNX, las versiones de las herramientas utilizadas ni las posibles pérdidas de fidelidad respecto al checkpoint original.
+Este empaquetado concreto proviene del release `en-us_blizzard_fls-glow_tts.tar.gz` del proyecto Larynx v1.0 de Rhasspy. El identificador `blizzard_fls` sugiere el uso del corpus Blizzard (voz femenina) como fuente de datos, aunque la model card no detalla el numero de tokens, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables habitualmente en TTS de este tipo). El front-end de texto se delega en `scriptconv`, que normaliza el texto y lo convierte a fonemas mediante `GruutPhonemizer` del modulo `scriptconv.phonemizers.mul`, instalado con el extra `scriptconv[gruut]`.
 
 ## Capacidades
 
-- Síntesis de voz (text-to-speech) en inglés estadounidense a partir de texto de entrada.
-- Generación de audio mediante un vocoder externo (el modelo produce representaciones mel; el vocoder no se incluye en este repositorio).
-- Inferencia ligera gracias al formato ONNX, compatible con runtimes como ONNX Runtime.
-- Integración con la librería `phoonnx` mediante el identificador de voz `larynx/en-us-blizzard_fls-glow_tts`.
-- No se documenta soporte de tool calling, agentes, razonamiento multi-step, visión, audio de entrada ni modo thinking (no aplicables a un modelo TTS).
-- No se documentan capacidades multilingües más allá del inglés estadounidense.
+- Sintesis de voz en ingles estadounidense (`en-US`) a partir de texto plano.
+- Generacion de espectrogramas mel mediante Glow-TTS y conversion a audio WAV mediante HiFi-GAN.
+- Normalizacion de texto y fonemizacion IPA via `scriptconv` y `GruutPhonemizer`.
+- Integracion directa con el ecosistema OVOS a traves del plugin `ovos-tts-plugin-phoonnx`.
+- Ejecucion sobre runtime ONNX, lo que permite despliegue ligero sin frameworks de entrenamiento.
+- Salida directa a fichero WAV mediante `voice.synthesize_wav(text, wav_file)`.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio de entrada.
+- No es un modelo multilingue: unicamente `en-US`.
 
 ## Casos de uso
 
-- Asistentes de voz locales: el modelo puede generar respuestas habladas en inglés en aplicaciones de escritorio o dispositivos embebidos, aprovechando su tamaño reducido (0,1 GB) y el formato ONNX para ejecución sin GPU dedicada.
-- Lectura de textos y accesibilidad: conversión de documentos, artículos o notificaciones a audio para usuarios con discapacidad visual, con latencia baja gracias a la inferencia paralela de GlowTTS.
-- Integración en pipelines de `phoonnx`: uso directo mediante el identificador de voz documentado para construir sistemas TTS personalizados dentro del ecosistema TigreGotico.
-- Prototipado rápido de interfaces conversacionales: generación de locuciones de prueba en inglés para validar flujos de voz antes de invertir en modelos comerciales o voces neuronales de mayor calidad.
-- Sistemas de anuncios y avisos automatizados: síntesis de mensajes cortos en entornos de kiosco, transporte o domótica, donde el coste computacional y el tamaño del artefacto son críticos.
-- Investigación y docencia en TTS: estudio comparativo de arquitecturas de normalizing flows frente a modelos autorregresivos o difusos, usando una voz de referencia reproducible en formato ONNX.
+- Asistentes de voz autoalojados en OVOS: el modelo se selecciona en `mycroft.conf` mediante el plugin `ovos-tts-plugin-phoonnx`, de modo que un asistente local puede sintetizar respuestas sin depender de servicios en la nube.
+- Sintesis de voz en dispositivos de borde: al distribuirse en ONNX y ocupar ~0,1 GB, puede ejecutarse en entornos con recursos limitados donde no es viable cargar un framework completo de deep learning.
+- Generacion de avisos y notificaciones habladas en ingles: util para sistemas de domotica o monitoreo que necesitan leer mensajes cortos en `en-US` con baja latencia.
+- Prototipado de interfaces de voz: permite validar rapidamente un flujo TTS en Python usando `TTSModelManager` y `voice.synthesize_wav` antes de invertir en modelos mas grandes.
+- Accesibilidad: lectura en voz alta de contenido textual en ingles para aplicaciones de asistencia, aprovechando la salida WAV directa del modelo.
+- Pruebas de regresion en pipelines de TTS: al ser un artefacto ONNX versionado, sirve como referencia estable para comparar calidad acustica frente a otros modelos Glow-TTS del mismo collection.
+- Educacion e investigacion: ejemplo didactico de un pipeline TTS completo (fonemizador gruut, Glow-TTS, HiFi-GAN) empaquetado de forma reproducible.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; por el tamaño del repositorio (0,1 GB) y la naturaleza de GlowTTS, se espera un consumo moderado, apto para ejecución en CPU.
-- GPU recomendadas: no documentadas; el formato ONNX permite ejecución en CPU y en GPU de gama baja, pero no se especifican modelos concretos (A100, H100, RTX 4090, etc.).
-- Compatibilidad con GPU de consumo: previsiblemente sí, dado el reducido tamaño del artefacto, aunque no se confirma en la documentación.
-- Opciones de despliegue: ONNX Runtime y la librería `phoonnx`; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI (no aplicables a TTS).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible. El repositorio ocupa ~0,1 GB, por lo que el modelo cabe holgadamente en cualquier GPU consumer, aunque no se especifica el consumo real de memoria.
+- GPU recomendadas: no disponible. Dado el tamano del artefacto, cualquier GPU moderna (incluidas GTX/RTX de gama media) deberia ser suficiente; no se documentan requisitos minimos.
+- Cabe en GPU consumer: si, por el tamano del repositorio (~0,1 GB), aunque no se confirma con datos oficiales.
+- Opciones de despliegue: `phoonnx` (runtime ONNX), plugin `ovos-tts-plugin-phoonnx` para OVOS. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a TTS).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Tamaño | Idiomas | Licencia | Formato |
+| Modelo | Arquitectura | Idioma | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Phoonnx/glowtts-en-us-blizzard_fls` | GlowTTS (flows) | 0,1 GB (repo) | en-US | `other` (sin especificar) | ONNX |
-| Piper (voces en-US) | VITS (flows + GAN) | ~decenas de MB por voz | múltiples | MIT / varias | ONNX |
-| Coqui TTS (voces GlowTTS) | GlowTTS | variable | múltiples | MPL 2.0 / varias | PyTorch, ONNX |
-| Larynx (voces originales) | GlowTTS | variable | múltiples | varias (por voz) | TensorFlow, ONNX |
+| `Phoonnx/glowtts-en-us-blizzard_fls` | Glow-TTS + HiFi-GAN | en-US | ONNX | other (sin licencia concreta) | Hugging Face, via phoonnx |
+| Otros modelos del collection Glow-TTS de Phoonnx | Glow-TTS + HiFi-GAN | segun modelo | ONNX | other | Hugging Face, via phoonnx |
+| Modelos Larynx originales (Rhasspy) | Glow-TTS + vocoder | varios | tarball | segun release upstream | GitHub releases de rhasspy/larynx |
+| Modelos TTS neuronales de gran escala (p. ej. VITS, Piper) | VITS / otros | varios | ONNX / otros | variable | Hugging Face, repositorios propios |
 
-La comparación cuantitativa de calidad (MOS, latencia, WER) no está disponible en la información proporcionada. Piper y Larynx son las alternativas más directas por formato y filosofía de despliegue ligero; Coqui TTS ofrece el ecosistema de referencia para GlowTTS en PyTorch.
+No se dispone de datos de rendimiento comparativo (MOS, latencia, throughput) en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Licencia `other` sin términos especificados: no se aclara si se permite uso comercial, modificación o redistribución; es imprescindible contactar con el autor o consultar el repositorio original antes de usarlo en producción.
-- La model card no documenta la procedencia exacta de los datos de entrenamiento ni posibles restricciones derivadas del corpus Blizzard.
-- Riesgo de artefactos y pronunciación incorrecta inherente a los modelos TTS entrenados con datos limitados; no se publican métricas de calidad (MOS, WER) que permitan evaluarlo.
-- Cobertura lingüística restringida al inglés estadounidense; no se documenta soporte de otros idiomas ni de code-switching.
-- El modelo produce representaciones mel; requiere un vocoder compatible para generar audio final, lo que añade una dependencia no incluida en el repositorio.
-- Sin descargas ni likes registrados y con fecha de creación futura en los metadatos (2026-11-14), lo que sugiere un artefacto reciente o con metadatos inconsistentes; la comunidad no ha validado su funcionamiento.
-- No se documentan sesgos específicos, pero al ser una voz entrenada sobre un corpus concreto puede reflejar características demográficas y de estilo limitadas.
+- Licencia `other` sin licencia concreta registrada: es imprescindible revisar el release upstream de Rhasspy/Larynx antes de cualquier uso comercial.
+- Unicamente soporta `en-US`; no es adecuado para otros idiomas.
+- Requiere un front-end de fonemizacion gruut (`scriptconv[gruut]`); el texto debe procesarse con el fonemizador correcto para obtener resultados validos.
+- Depende de un vocoder externo (`hifigan-multi-vctk-small`) que phoonnx descarga automaticamente; sin el, no se genera audio.
+- No se documentan sesgos conocidos, pero al derivar de un corpus Blizzard de un unico hablante, la diversidad vocal es limitada.
+- Riesgo de alucinacion no aplicable en el sentido de LLM, pero si puede producir pronunciaciones incorrectas en palabras fuera del vocabulario o no inglesas.
+- No se dispone de informacion sobre el numero de parametros, datos de entrenamiento ni metricas de calidad (MOS), lo que dificulta evaluar su rendimiento frente a alternativas.
+- El modelo esta pensado para inferencia ONNX via phoonnx; no se documenta soporte para otros runtimes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Phoonnx/glowtts-en-us-blizzard_fls
-- Repositorio de origen: https://huggingface.co/Phoonnx/phoonnx-glowtts
-- Librería phoonnx: https://github.com/TigreGotico/phoonnx
+- Release upstream (Larynx v1.0): https://github.com/rhasspy/larynx/releases/download/v1.0/en-us_blizzard_fls-glow_tts.tar.gz
+- Libreria phoonnx: https://github.com/TigreGotico/phoonnx
+- Libreria scriptconv: https://github.com/TigreGotico/scriptconv
+- Collection Glow-TTS de Phoonnx: https://huggingface.co/collections/Phoonnx/glow-tts-6af8ea830386ac5f126ba7e3
+- Vocoder HiFi-GAN: https://huggingface.co/Phoonnx/hifigan-multi-vctk-small

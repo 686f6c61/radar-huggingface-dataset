@@ -2,101 +2,100 @@
 
 ## Resumen
 
-FineWeb-Edu 124M base (stage 2) es la conversión al formato estándar de Hugging Face Qwen3 de un modelo GPT de 124 millones de parámetros entrenado desde cero por el autor aramkris en el proyecto tinystories-ARM-model. No es un modelo Qwen: únicamente adopta el formato de ficheros de Qwen3 para que `transformers`, llama.cpp, Ollama y LM Studio puedan ejecutarlo sin código específico del proyecto. El modelo es un modelo base, es decir, continúa texto educativo y narrativo, pero no sigue instrucciones.
+FineWeb-Edu 124M base (stage 2) es la conversión al formato estándar de Qwen3 de un modelo GPT de 124 millones de parámetros entrenado desde cero por el autor aramkris en el proyecto tinystories-ARM-model. No es un modelo Qwen: únicamente adopta el formato de ficheros y la configuración de Qwen3 para que herramientas estándar como transformers, llama.cpp, Ollama o LM Studio puedan ejecutarlo sin código propietario del proyecto original.
 
-El modelo original se entrenó sobre los datasets BaoMinhTran/mini-fineweb-edu y HuggingFaceTB/cosmopedia, con una ventana de contexto de 512 tokens. La versión publicada aquí incluye pesos en bfloat16 para `transformers` (329 MB) y dos ficheros GGUF (bfloat16 de 326 MB y Q8_0 de 174 MB) generados con el conversor de llama.cpp. Su relevancia es fundamentalmente metodológica: demuestra que es posible reescribir un transformer con LayerNorm y QK-norm al esquema de Qwen3 (RMSNorm, epsilon único) sin reentrenar, mediante centrado del flujo residual y escalado de las proyecciones Q y K por √10.
+El modelo es un modelo base (no ajustado a instrucciones) especializado en continuar texto de tipo educativo: artículos web, explicaciones, guías prácticas y relatos. Su ventana de contexto es de 512 tokens, lo que lo sitúa en la categoría de modelos pequeños para tareas acotadas y experimentación. Se distribuye en bfloat16 (safetensors y GGUF) y en cuantización de 8 bits (Q8_0), con licencia MIT.
 
-La conversión está verificada numéricamente contra el modelo original en PyTorch: la pérdida en conjuntos held-out difiere como máximo 0.0013, la mayor diferencia de logits en float32 es 9e-5 y la generación greedy es idéntica token a token. La licencia es MIT.
+Su relevancia radica en dos factores: por un lado, demuestra que es posible exportar exactamente un transformer con LayerNorm al esquema de Qwen3 (que usa RMSNorm) mediante una transformación matemática de los pesos sin reentrenar; por otro lado, ofrece un caso de estudio reproducible de entrenamiento desde cero con verificación numérica rigurosa frente al modelo PyTorch original. Los parámetros reales en safetensors son 162.150.144, aunque el autor lo denomine "124M".
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT (LayerNorm sin sesgo, QK-norm), reescrito al esquema Qwen3 (RMSNorm) |
-| Parametros totales | 162.150.144 (safetensors); el autor lo describe como "124M" |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only estilo GPT con formato Qwen3 (LayerNorm sin bias en lugar de RMSNorm) |
+| Parámetros totales | 162.150.144 (según safetensors); el autor lo denomina 124M |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | bfloat16 (safetensors y GGUF), Q8_0 (GGUF) |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantización | bfloat16 (safetensors y GGUF), Q8_0 (GGUF de 8 bits) |
+| Idiomas soportados | inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (bfloat16), GGUF (bfloat16 y Q8_0) |
+| Formato de pesos | safetensors, GGUF (bf16 y Q8_0) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only entrenado desde cero, con normas de bloque de tipo LayerNorm sin sesgo y normalización de query/key (QK-norm). Para la conversión a formato Qwen3 se aplicaron tres transformaciones sin reentrenamiento: centrado del flujo residual (entradas de embedding y todas las matrices que escriben en él) para que LayerNorm y RMSNorm sean equivalentes; mantenimiento de los embeddings originales en la capa de salida, de modo que los embeddings de entrada y salida quedan destados (untied); y escalado de las proyecciones de query y key por √10 para que el epsilon único de Qwen3 reproduzca el efecto de la QK-norm original.
+El modelo sigue el diseño de Qwen3 con una diferencia clave: las normas de bloque son LayerNorm sin bias, mientras que Qwen3 emplea RMSNorm. Para que la conversión sea exacta, el script `serving/export_hf.py` hace que el flujo residual tenga media cero (centrando los embeddings de entrada y todas las matrices que escriben en él), lo que iguala ambas funciones de normalización. La capa de salida conserva los embeddings originales (no atados) y las proyecciones query y key se escalan por √10 para que el único epsilon de Qwen3 actúe como el QK-norm del modelo original. No hay reentrenamiento: es el mismo modelo transformado matemáticamente.
 
-Los datos de entrenamiento provienen de BaoMinhTran/mini-fineweb-edu y HuggingFaceTB/cosmopedia, orientados a texto educativo web, historias y tutoriales. No se dispone de información sobre el número exacto de tokens de entrenamiento, la composición detallada del dataset ni si hubo fases de RLHF o DPO en este modelo base (el autor publica por separado una variante chat con DPO: fineweb-edu-124m-chat-dpo-qwen3). Los ficheros GGUF se generaron con el conversor oficial de llama.cpp.
+El entrenamiento se realizó desde cero en el proyecto tinystories-ARM-model sobre los datasets BaoMinhTran/mini-fineweb-edu y HuggingFaceTB/cosmopedia, orientados a texto educativo. No se dispone de información sobre el número exacto de tokens de entrenamiento, la composición detallada del dataset ni si hubo fases de RLHF o DPO en esta versión base. Los ficheros GGUF se generaron con el conversor de llama.cpp. La verificación frente al modelo PyTorch original muestra diferencias mínimas: la pérdida en conjuntos held-out difiere en menos de 0,0013, la mayor diferencia de logits en float32 es de 9e-5 y la generación greedy es idéntica token a token.
 
 ## Capacidades
 
-- Generación de texto por continuación de prompt: texto educativo, historias y tutoriales.
-- Modelo base sin ajuste de instrucciones: no responde a preguntas ni sigue comandos de forma fiable.
-- Capacidades multilingües limitadas al inglés.
-- Sin soporte documentado de tool calling ni function calling.
-- Sin soporte documentado de agentes ni razonamiento multi-paso.
-- Sin capacidades de visión, audio ni modo de razonamiento explícito.
-- Ejecutable en `transformers` (bfloat16), llama.cpp, Ollama y LM Studio mediante el formato Qwen3.
+- Generación y continuación de texto en inglés sobre temática educativa: artículos web, explicaciones, guías prácticas y relatos.
+- Modelo base sin ajuste a instrucciones: no sigue órdenes ni mantiene formato conversacional de forma fiable.
+- No dispone de soporte documentado de tool calling ni function calling.
+- No dispone de soporte documentado de agentes ni razonamiento multi-paso.
+- Capacidad multilingüe limitada al inglés.
+- No dispone de visión, audio ni modo de razonamiento explícito (thinking mode).
+- Ejecutable en transformers (bfloat16), llama.cpp, Ollama y LM Studio gracias al formato Qwen3.
 
 ## Casos de uso
 
-- Investigación sobre conversión de formatos: sirve como caso verificado de reescritura de un transformer con LayerNorm/QK-norm al esquema Qwen3 sin reentrenar, con métricas de equivalencia numérica publicadas.
-- Experimentos de entrenamiento desde cero a pequeña escala: su tamaño (162M parámetros, 512 tokens de contexto) permite reproducir pipelines completos de preentrenamiento en hardware modesto.
-- Generación de texto educativo de relleno: continuación de párrafos sobre ciclos naturales, explicaciones sencillas o tutoriales, útil para pruebas de pipelines de generación.
-- Evaluación de cuantización: la comparación bfloat16 frente a Q8_0 con pérdidas y benchmarks casi idénticos permite estudiar el impacto de la cuantización en modelos pequeños.
-- Despliegue local de bajo coste: los GGUF de 174 MB y 326 MB caben en cualquier equipo y permiten probar integraciones con llama.cpp, Ollama o LM Studio sin GPU.
-- Base para ajuste fino posterior: al ser un modelo base con licencia MIT, puede servir de punto de partida para fine-tuning supervisado o DPO en dominios concretos, como hizo el autor con la variante chat.
-- Test de infraestructura de serving: su reducido tamaño lo hace adecuado para validar endpoints compatibles con text-generation-inference y APIs HTTP de llama-server.
+- Generación de texto educativo de dominio acotado: el modelo puede completar fragmentos sobre ciclos naturales, procesos científicos o tutoriales sencillos, aprovechando su entrenamiento sobre FineWeb-Edu y Cosmopedia; útil para prototipos de contenido didáctico breve.
+- Experimentación académica con entrenamiento desde cero: sirve como referencia reproducible para estudiar cómo se comporta un transformer pequeño entrenado en dominios específicos y cómo se exporta a formatos estándar.
+- Pruebas de pipelines de inferencia: al ser compatible con llama.cpp, Ollama y LM Studio, permite validar infraestructura de despliegue local con un modelo de menos de 350 MB en disco.
+- Generación de texto en dispositivos con recursos limitados: sus 162 millones de parámetros y su versión Q8_0 de 174 MB permiten ejecución en CPU y en hardware de gama baja para tareas de autocompletado o generación de borradores.
+- Docencia y divulgación sobre LLM: el modelo y su proceso de conversión exacta (LayerNorm a RMSNorm mediante centrado del flujo residual) constituyen un material didáctico concreto sobre cómo funcionan las normalizaciones y la exportación de pesos.
+- Evaluación comparativa de cuantizaciones: las versiones bf16 y Q8_0 con métricas verificadas (HellaSwag, LAMBADA, ARC-Easy, PIQA, WinoGrande) permiten medir el impacto real de la cuantización de 8 bits en un modelo pequeño con diferencias documentadas de décimas de punto.
+- Generación de texto de relleno o aumentación de datos: para tareas donde se necesita texto sintético en inglés de temática educativa y no se requiere instrucción, el modelo puede producir continuaciones controladas por prompt.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor comparando el modelo original en PyTorch con las versiones GGUF en llama.cpp:
+Resultados publicados por el autor en la model card, comparando el modelo original en PyTorch con las versiones en llama.cpp (bfloat16 y 8 bits):
 
-| Metrica | Original (PyTorch) | llama.cpp bfloat16 | llama.cpp 8-bit |
+| Métrica | Original (PyTorch) | llama.cpp bfloat16 | llama.cpp 8 bits |
 |---|---|---|---|
-| Pérdida held-out Mini FineWeb-Edu | 3.2957 | 3.2959 | 3.2963 |
-| HellaSwag (acc_norm) | 32.26% | 32.26% | 32.22% |
-| LAMBADA | 20.34% | 20.32% | 20.28% |
-| ARC-Easy | 46.84% | 46.76% | 46.72% |
-| PIQA | 62.40% | 62.30% | 62.24% |
-| WinoGrande | 49.88% | 50.04% | 49.64% |
-| Media de los cinco benchmarks | 42.35 | 42.34 | 42.22 |
+| Pérdida en Mini FineWeb-Edu held-out | 3,2957 | 3,2959 | 3,2963 |
+| HellaSwag (acc_norm) | 32,26 % | 32,26 % | 32,22 % |
+| LAMBADA | 20,34 % | 20,32 % | 20,28 % |
+| ARC-Easy | 46,84 % | 46,76 % | 46,72 % |
+| PIQA | 62,40 % | 62,30 % | 62,24 % |
+| WinoGrande | 49,88 % | 50,04 % | 49,64 % |
+| Media de los cinco benchmarks | 42,35 | 42,34 | 42,22 |
 
-LAMBADA medida a través de la API HTTP de llama-server: 20.36%. No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible.
+La model card indica además que LAMBADA a través de la API HTTP de llama-server obtiene 20,36 %. No se han publicado resultados de benchmarks en la información disponible más allá de estos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en bfloat16 (329 MB de pesos) y alrededor de 200-300 MB en Q8_0 (174 MB), más el overhead del runtime.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100. Funciona en CPU sin problema.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, integradas) y en equipos sin GPU.
-- Opciones de despliegue: `transformers`, llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, y endpoints compatibles con text-generation-inference.
-- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera generación en tiempo real incluso en CPU, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: inferior a 1 GB en bfloat16 y aproximadamente 0,5 GB en Q8_0, considerando pesos y estados de activación para contexto de 512 tokens.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; modelos como RTX 3060, RTX 4060 o superiores son más que suficientes. También funciona en CPU.
+- Cabe en cualquier GPU de consumo actual e incluso en placas integradas con memoria compartida.
+- Opciones de despliegue: transformers (bfloat16), llama.cpp, Ollama, LM Studio y cualquier herramienta compatible con Qwen3.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| fineweb-edu-124m-base-qwen3 | 162M | 512 | MIT | Modelo base, solo inglés, conversión verificada a formato Qwen3 |
-| fineweb-edu-124m-chat-dpo-qwen3 | no disponible | no disponible | no disponible | Variante chat con DPO del mismo autor; orientada a instrucciones |
-| GPT-2 small | 124M | 1024 | MIT | Referencia clásica de tamaño similar; no disponible comparación de rendimiento en la información proporcionada |
-| Qwen3 (modelos oficiales) | no disponible | no disponible | no disponible | Solo comparte formato de ficheros; no es un modelo Qwen |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| fineweb-edu-124m-base-qwen3 | 162.150.144 | 512 | MIT | safetensors, GGUF | Base, solo inglés, dominio educativo |
+| Qwen3 (modelos pequeños de referencia) | no disponible en la información | no disponible | no disponible | no disponible | El modelo solo comparte formato, no arquitectura ni pesos |
+| fineweb-edu-124m-chat-dpo-qwen3 | no disponible | no disponible | MIT (según repo del autor) | no disponible | Variante ajustada con DPO para chat del mismo autor |
 
-No se dispone de datos de benchmarks comparativos con estos modelos en la información proporcionada.
+No se dispone de datos de benchmarks de modelos alternativos comparables en la información proporcionada; la comparativa se limita a la relación con la familia Qwen3 (solo formato) y la variante chat del mismo autor.
 
 ## Limitaciones y advertencias
 
-- Modelo base: no sigue instrucciones; para uso conversacional debe emplearse la variante chat del mismo autor.
-- Ventana de contexto muy corta (512 tokens), insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Solo entrenado y evaluado en inglés; el rendimiento en otros idiomas no está documentado y previsiblemente será deficiente.
-- Riesgo alto de alucinación y de texto incoherente en temas fuera de la distribución de fineweb-edu y cosmopedia.
-- Rendimiento modesto en benchmarks (media de 42.35 en cinco tareas), coherente con su tamaño; no apto para tareas que requieran razonamiento complejo.
-- Sin soporte documentado de tool calling, agentes ni multimodalidad.
-- Aunque la licencia es MIT y permite uso comercial, la calidad del modelo limita su aplicación en producción real.
-- La equivalencia numérica con el modelo original está verificada, pero depende de las transformaciones descritas; modificaciones del flujo residual o de los embeddings pueden romperla.
+- Es un modelo base: no sigue instrucciones ni mantiene diálogos; para uso conversacional debe emplearse la variante chat-dpo.
+- Ventana de contexto muy corta (512 tokens), insuficiente para documentos largos o conversaciones extensas.
+- Solo entrenado y evaluado en inglés; el rendimiento en otros idiomas no está garantizado.
+- Riesgo de alucinación y de generar contenido factualmente incorrecto, especialmente en dominios fuera del texto educativo.
+- Sesgos heredados de los datasets FineWeb-Edu y Cosmopedia, que pueden reflejar sesgos de la web y de textos sintéticos.
+- Rendimiento modesto en benchmarks (media de 42,35 en cinco tareas), adecuado para experimentación pero no para producción de alta exigencia.
+- La licencia MIT permite uso comercial, pero el modelo no incluye garantías ni soporte.
+- La conversión depende de una transformación matemática específica; modificaciones posteriores de los pesos sin repetir el proceso pueden romper la equivalencia con el modelo original.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/aramkris/fineweb-edu-124m-base-qwen3
-- Modelo base original: https://huggingface.co/aramkris/fineweb-edu-124m-base
+- Modelo en Hugging Face: https://huggingface.co/aramkris/fineweb-edu-124m-base-qwen3
+- Modelo base: https://huggingface.co/aramkris/fineweb-edu-124m-base
 - Variante chat con DPO: https://huggingface.co/aramkris/fineweb-edu-124m-chat-dpo-qwen3
 - Repositorio del proyecto: https://github.com/a-ramakrishnan/tinystories-ARM-model
 - Script de exportación a Hugging Face: https://github.com/a-ramakrishnan/tinystories-ARM-model/blob/main/serving/export_hf.py

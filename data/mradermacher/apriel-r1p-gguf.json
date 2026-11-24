@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Apriel-R1P-GGUF",
+  "slug": "mradermacher-apriel-r1p-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Apriel-R1P-GGUF",
+  "created_at": "2025-09-06T08:06:01.000Z",
+  "updated_at": "2026-11-24T00:27:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ConicCat/Apriel-R1P",
+    "base_model:quantized:ConicCat/Apriel-R1P",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 188,
+  "trending_score": 0,
+  "parameters": 14974182400,
+  "parameters_human": "14.97B",
+  "storage_bytes": 103191863584,
+  "storage_human": "103.2 GB",
+  "context_length": 65536,
+  "base_model": "ConicCat/Apriel-R1P",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,116 +2,107 @@
 
 ## Resumen
 
-JIMMY-4B-ZERO-REGRESSION es un checkpoint experimental publicado por el usuario luisbrel en Hugging Face, derivado del modelo google/gemma-4-e4b-it mediante un proceso de post-entrenamiento basado en un bucle de auto-mejora recursiva (RSI, *recursive self-improvement*). El autor indica que el ajuste se realizó localmente sobre hardware Apple Silicon (M4 Max) y que no empleó destilación de un modelo profesor ni un pipeline convencional de fine-tuning por descenso de gradiente. El modelo se distribuye en formato MLX cuantizado a 4 bits, pensado para inferencia nativa en chips de Apple.
+Jimmy-4B-Zero-Regression es un checkpoint experimental de 4B publicado por el investigador independiente luisbrel, derivado del modelo base google/gemma-4-e4b-it y ajustado localmente en Apple Silicon (M4 Max de 128 GB) mediante el framework MLX. El proyecto nace como un ejercicio de calibración geométrica dirigida sobre una arquitectura compacta de tipo edge, con el objetivo declarado de preservar el comportamiento de razonamiento del modelo original mientras se modifican selectivamente ciertos tensores. El checkpoint se distribuye en formato MLX de 4 bits y está pensado para inferencia nativa en chips de Apple.
 
-El checkpoint cuenta con 7.463.013.418 parámetros según los pesos en safetensors, aunque el nombre comercial lo etiqueta como "4B" (probablemente por herencia de la nomenclatura del modelo base, que en Gemma se refiere a parámetros efectivos o activos). El tamaño del repositorio es de 4,2 GB, coherente con una cuantización de 4 bits. La longitud de contexto, el número de tokens de entrenamiento y la composición del dataset no se detallan en la información disponible.
+La relevancia del modelo no reside en una mejora de capacidades, sino en su transparencia metodológica: el autor documenta un proceso de evaluación con puertas estadísticas estrictas (ParetoAnchorGate) y publica un veredicto negativo honesto. Una reevaluación potenciada con 50 muestras por suite (400 evaluaciones autorregresivas en total) frente al Gemma-4-4B base reconstruido por SHA-256 registró una regresión de -4,0 % en MATH-500 y un delta macro neto de -0,5 %, lo que condujo al veredicto oficial REJECTED_REGRESSION. Los resultados del piloto inicial de 56 evaluaciones, que sugerían una mejora de +8,93 %, quedan formalmente retractados por falta de potencia estadística.
 
-Su relevancia es limitada pero ilustrativa: se presenta como una prueba de concepto de post-entrenamiento sin gradientes sobre Apple Silicon, con una evaluación local de 56 generaciones que reporta mejoras en matemáticas y ciencia respecto al modelo base. No obstante, el tamaño muestral es muy reducido y el modelo tiene cero descargas en el momento de la ficha, por lo que debe considerarse estrictamente experimental.
+Se trata, por tanto, de un artefacto de investigación para reproducibilidad de resultados negativos, no de un modelo recomendado para producción. El repositorio ocupa 4,2 GB, acumula 354 descargas y declara licencia Apache 2.0, aunque el modelo base Gemma arrastra sus propias condiciones de uso.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (heredada de Gemma-4-E4B-it); detalles internos no disponibles |
-| Parametros totales | 7.463.013.418 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits (MLX) |
-| Idiomas soportados | inglés (en) |
-| Licencia | Apache 2.0 (heredada del modelo base, con enlace a la licencia de Gemma 4) |
-| Formato de pesos | safetensors, formato MLX (mlx-lm) |
+| Arquitectura | Transformer denso (derivado de Gemma 4, familia E4B) |
+| Parametros totales | 7.463.013.418 (según safetensors); el autor describe la escala como 4,3B edge dense |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantizacion | 4 bits (formato MLX) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 (con license_link a las condiciones de Gemma 4 de Google) |
+| Formato de pesos | MLX (safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo google/gemma-4-e4b-it, un transformer de la familia Gemma 4. La información proporcionada no detalla el número de capas, dimensiones ocultas, mecanismos de atención ni si incorpora componentes MoE. El checkpoint se distribuye cuantizado a 4 bits en formato MLX, lo que reduce el peso a 4,2 GB y permite ejecución en memoria unificada de Apple Silicon.
+El modelo parte de google/gemma-4-e4b-it, un transformer denso de la familia Gemma 4 orientado a despliegue en el borde. Sobre ese checkpoint, el autor aplicó un post-entrenamiento de calibración selectiva: según la prueba de reconstrucción SHA-256 documentada, de los 1.355 tensores del modelo solo 6 difieren del base, concretamente los correspondientes a `layers.{20,26}.mlp.down_proj.{weight,scales,biases}`. Intercambiando `layers.20.mlp.down_proj` se reconstruye exactamente el checkpoint base sin editar, lo que confirma que la intervención es extremadamente localizada y no un reentrenamiento amplio.
 
-El método de entrenamiento declarado es un bucle de auto-mejora recursiva (RSI): se generan versiones candidatas, se evalúan contra objetivos de generación reales y solo se retienen las iteraciones prometedoras. El autor afirma explícitamente que no se usó destilación de un modelo profesor ni un pipeline convencional de descenso de gradiente. También declara una "descontaminación certificada" con cero solapamiento de 13-gramas respecto a los splits de los benchmarks evaluados. No se especifica el volumen de datos de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El proyecto se enmarca en una línea de investigación sobre "calibración geométrica" de modelos compactos y emplea un pipeline de evaluación propio con puertas estadísticas (ParetoAnchorGate.strict_rsi_gate) que exige un mínimo de 50 muestras por suite para aceptar cualquier promoción. La innovación destacable no es arquitectónica sino metodológica: la publicación de resultados negativos con trazabilidad criptográfica de la reconstrucción del base.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con plantilla de chat aplicable mediante `tokenizer.apply_chat_template`.
-- Razonamiento matemático multi-paso y matemáticas de competición, según la evaluación local del autor.
-- Generación de código Python (evaluado con HumanEval en la model card).
-- Cumplimiento de restricciones estrictas de formato e instrucciones (IFEval).
-- Razonamiento científico a nivel de educación secundaria (ARC-Challenge).
-- *Grounding* de GUI y DOM, según la suite incluida en la evaluación del autor.
-- Capacidades multilingües: solo inglés declarado.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode).
+- Generación de texto conversacional en inglés, heredada del modelo base Gemma-4-e4b-it.
+- Razonamiento matemático de nivel medio: 48,0 % en MATH-500 y 92,0 % en GSM8K con 50 muestras por suite.
+- Razonamiento científico y de sentido común: 84,0 % en ARC-Challenge.
+- Seguimiento de instrucciones de formato: 100,0 % en IFEval (50/50).
+- Generación de código: el piloto reporta 75,0 % en HumanEval con n=8, dato no reevaluado a n=50 y por tanto no concluyente.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- **Prototipado de razonamiento matemático en local**: el modelo puede resolver problemas aritméticos y algebraicos multi-paso en un Mac con Apple Silicon, útil para experimentar con asistentes de estudio sin conexión a la nube. La mejora reportada en GSM8K (+25 puntos) sugiere que el post-entrenamiento RSI incidió en este tipo de tareas.
-- **Generación de código en entornos sin GPU dedicada**: al ejecutarse con `mlx-lm` sobre memoria unificada, permite autocompletar y generar funciones Python en un portátil Mac, integrándose en editores o scripts locales. HumanEval se mantiene en el 75% del modelo base, sin regresión según el autor.
-- **Evaluación de técnicas de post-entrenamiento sin gradientes**: investigadores interesados en RSI pueden usar este checkpoint como referencia reproducible de un pipeline alternativo al fine-tuning clásico, comparando sus resultados con el modelo base.
-- **Asistentes conversacionales de un solo idioma en edge**: para aplicaciones en inglés desplegadas en dispositivos Apple, el formato MLX 4-bit reduce el consumo de memoria y permite respuestas conversacionales con latencia local aceptable.
-- **Generación con restricciones de formato estrictas**: dado el 100% en IFEval, puede emplearse para producir salidas JSON, listas o plantillas con requisitos de formato rígidos en pipelines de extracción de datos.
-- **Automatización de tareas de interfaz (GUI/DOM)**: la suite de *grounding* evaluada sugiere uso potencial en agentes que localizan elementos de interfaz a partir de descripciones en lenguaje natural, aunque la evidencia es limitada (8 generaciones por suite).
-- **Investigación educativa en ciencia**: con un 87,5% en ARC-Challenge según el autor, puede servir como base para tutores de ciencias a nivel escolar en inglés.
+- Reproducción de resultados negativos en investigación: el checkpoint sirve para replicar el pipeline de evaluación del autor (400 evaluaciones autorregresivas sobre MATH-500, GSM8K, ARC-Challenge e IFEval) y verificar de forma independiente el veredicto REJECTED_REGRESSION.
+- Estudio de calibración selectiva de tensores: dado que solo 6 tensores difieren del base, es un caso de laboratorio útil para analizar cómo modificaciones localizadas en capas MLP profundas afectan al razonamiento matemático sin tocar otras capacidades.
+- Auditoría de puertas estadísticas: permite experimentar con umbrales de potencia muestral (comparar n=4, n=8 y n=50 por suite) y observar la diferencia entre intervalos binomiales del 52,71 % y el 5,82 % de cota superior al 95 %.
+- Inferencia local en Apple Silicon: al estar en formato MLX de 4 bits y ocupar 4,2 GB, puede ejecutarse en Macs con chip M-series para tareas de generación de texto en inglés sin conexión.
+- Docencia sobre evaluación de modelos: ilustra de forma concreta por qué un piloto de 56 evaluaciones no basta para afirmar una mejora y cómo se retracta formalmente una conclusión previa.
+- Pruebas de regresión en pipelines de post-entrenamiento: como referencia de "qué no hacer" al promocionar un checkpoint, útil para diseñar gates de promoción con muestras mínimas por suite.
 
 ## Benchmarks y rendimiento
 
-Los datos provienen exclusivamente de la evaluación local del autor: 56 generaciones, ocho por suite y dos ensayos. El tamaño muestral es muy pequeño (8 generaciones por suite), por lo que los porcentajes tienen alta varianza y no deben compararse con evaluaciones estándar de la industria.
+Reevaluación potenciada a n=50 por suite (400 evaluaciones autorregresivas) frente al Gemma-4-4B base reconstruido por SHA-256, ejecutada en M4 Max de 128 GB con MLX:
 
-| Suite | Gemma-4 base | jimmy-4b-zero-regression | Delta |
+| Suite (n=50 cada una) | Base Gemma-4-4B | jimmy-4b | Delta neto |
 |---|---|---|---|
-| GSM8K (matemáticas multi-paso) | 50,0% | 75,0% | +25,0 |
-| MATH-500 (matemáticas de competición) | 25,0% | 37,5% | +12,5 |
-| HumanEval (código Python) | 75,0% | 75,0% | 0,0 |
-| IFEval (restricciones estrictas) | 100,0% | 100,0% | 0,0 |
-| ARC-Challenge (ciencia) | 75,0% | 87,5% | +12,5 |
-| Artificial Analysis v5 Multi-Quadrant | 100,0% | 100,0% | 0,0 |
-| GUI & DOM Grounding | 62,5% | 75,0% | +12,5 |
-| Media macro | 69,6% | 78,6% | +9,0 |
+| MATH-500 | 52,0 % (26/50) | 48,0 % (24/50) | -4,0 % |
+| GSM8K | 90,0 % (45/50) | 92,0 % (46/50) | +2,0 % |
+| ARC-Challenge | 84,0 % (42/50) | 84,0 % (42/50) | 0,0 % |
+| IFEval | 100,0 % (50/50) | 100,0 % (50/50) | 0,0 % |
+| Macro (n=400) | — | — | -0,5 % |
 
-Desglose por ensayo (relevante para juzgar estabilidad):
+Piloto histórico de n=56 (4 preguntas × 2 intentos en 7 suites), superseded y retractado:
 
-| Suite | Base ensayo 1 | Base ensayo 2 | Final ensayo 1 | Final ensayo 2 |
-|---|---|---|---|---|
-| GSM8K | 75,0% | 25,0% | 75,0% | 75,0% |
-| MATH-500 | 25,0% | 25,0% | 50,0% | 25,0% |
-| HumanEval | 75,0% | 75,0% | 75,0% | 75,0% |
-| IFEval | 100,0% | 100,0% | 100,0% | 100,0% |
-| ARC-Challenge | 100,0% | 50,0% | 100,0% | 75,0% |
-| Artificial Analysis v5 | 100,0% | 100,0% | 100,0% | 100,0% |
-| GUI & DOM Grounding | 50,0% | 75,0% | 75,0% | 75,0% |
+| Suite (n=8) | Base Gemma-4 (4B) | jimmy-4b | Delta |
+|---|---|---|---|
+| GSM8K | 50,0 % | 75,0 % | +25,0 % |
+| HumanEval | 75,0 % | 75,0 % | 0,0 % |
 
-No se han publicado resultados de benchmarks independientes ni estandarizados en la información disponible.
+El veredicto oficial es REJECTED_REGRESSION (outcome: "HONEST_NEGATIVE_REJECTED"). Los datos de referencia de modelos frontera que aparecían en comparaciones anteriores están marcados como [DISPUTED — RE-RUN REQUIRED] y fueron retirados por no estar fundamentados.
 
 ## Requisitos de hardware
 
-- **VRAM/memoria**: el repositorio ocupa 4,2 GB en cuantización 4-bit; se necesita al menos esa cantidad de memoria unificada más el espacio para el contexto y el runtime de MLX. En la práctica, un Mac con 16 GB de memoria unificada debería poder cargarlo con margen.
-- **GPU recomendadas**: el modelo está empaquetado para MLX, por lo que el hardware objetivo son chips Apple Silicon (M1, M2, M3, M4 y variantes Pro/Max/Ultra). No se distribuyen pesos en formatos para CUDA (GGUF, safetensors estándar para transformers), por lo que su uso en GPU NVIDIA o AMD requeriría conversión no documentada.
-- **Consumer GPU**: no aplica en el sentido habitual; el equivalente es un Mac con Apple Silicon. No hay indicación de que funcione directamente en RTX 4090 u otras GPU de consumo sin reconversión.
-- **Despliegue**: `mlx-lm` es la vía documentada (`pip install mlx-lm` y `mlx_lm.load`). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- **Latencia y throughput**: no disponibles. El autor solo indica que las evaluaciones se ejecutaron con generaciones autorregresivas reales sobre Metal en un M4 Max.
+- VRAM/ memoria unificada estimada: aproximadamente 4,2 GB para los pesos en 4 bits, más overhead de contexto y activaciones; el autor ejecuta en un M4 Max de 128 GB de memoria unificada.
+- GPU recomendadas: el formato es MLX, por lo que el entorno objetivo son chips de Apple (M1, M2, M3, M4 y variantes Pro, Max y Ultra). No se documenta soporte para CUDA.
+- Cabe en GPU de consumo: sí, en cualquier Mac con Apple Silicon y al menos 8 GB de memoria unificada; en el ecosistema NVIDIA requeriría conversión previa a otro formato, no documentada.
+- Opciones de despliegue: MLX y mlx-lm son las vías nativas. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| jimmy-4b-zero-regression | 7,46 mil millones (4-bit) | no disponible | Apache 2.0 | MLX safetensors | Hugging Face, 0 descargas |
-| google/gemma-4-e4b-it (base) | no disponible en la información | no disponible | Gemma 4 (Apache 2.0 según enlace) | safetensors | Hugging Face, modelo oficial |
-| Alternativas de tamaño similar (p. ej. Gemma 3 4B, Qwen 2.5 7B) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | MATH-500 (n=50) | GSM8K (n=50) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| jimmy-4b-zero-regression | 7,46B en safetensors (escala 4,3B) | No disponible | 48,0 % | 92,0 % | Apache 2.0 | Hugging Face, formato MLX |
+| Gemma-4-4B base (google/gemma-4-e4b-it) | Escala 4,3B | No disponible | 52,0 % | 90,0 % | Términos Gemma 4 | Hugging Face, múltiples formatos |
+| Gemma-4-4B base reconstruido (SHA-256) | Idéntico al base | No disponible | 52,0 % | 90,0 % | Términos Gemma 4 | Reconstrucción local verificable |
 
-La comparativa con alternativas externas no puede completarse con rigor porque la información proporcionada no incluye datos de otros modelos. La única comparación documentada es contra el modelo base, con las cifras de la sección de benchmarks.
+La comparativa relevante es interna: el checkpoint calibrado rinde peor que su propio base en MATH-500 y solo mejora marginalmente en GSM8K, sin superar la puerta de promoción. No se dispone de datos de otros modelos de 4B comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Evaluación no fiable estadísticamente**: 8 generaciones por suite y dos ensayos implican intervalos de confianza muy amplios; una diferencia de +12,5 puntos equivale a una sola generación acertada de más. La varianza entre ensayos del modelo base (GSM8K 75% vs 25%) evidencia la inestabilidad de la medición.
-- **Cero validación independiente**: no hay benchmarks de terceros, ni descargas, ni comunidad que haya replicado los resultados.
-- **Riesgo de alucinación**: inherente a los modelos de lenguaje; no se documentan mitigaciones específicas.
-- **Idioma**: solo inglés declarado; el rendimiento en castellano no está evaluado y probablemente sea inferior.
-- **Contexto**: la longitud de contexto no se especifica, lo que impide planificar aplicaciones que dependan de ventanas largas.
-- **Licencia**: Apache 2.0 heredada, pero el enlace apunta a la licencia de Gemma 4 de Google; conviene verificar los términos de uso comercial de la familia Gemma antes de desplegar en producción.
-- **Formato restringido**: al estar en MLX, no es directamente utilizable en infraestructura CUDA; requiere conversión y validación adicionales.
-- **Método no reproducible**: el autor no publica detalles del bucle RSI, hiperparámetros ni datos de entrenamiento, por lo que el proceso no es auditable.
-- **Nombre engañoso**: la etiqueta "4B" no coincide con los 7,46 mil millones de parámetros del checkpoint; conviene no asumir el tamaño por el nombre.
-- **Madurez**: creado y actualizado el mismo día (2026-11-05), sin historial de mantenimiento.
+- Regresión demostrada: -4,0 % en MATH-500 a n=50, con veredicto oficial REJECTED_REGRESSION; no debe presentarse como una mejora sobre el base.
+- Resultados retractados: las cifras del piloto de n=56 (+8,93 % macro) están formalmente superseded y no deben citarse como evidencia.
+- Potencia estadística: el propio autor documenta que con n=4 la cota superior binomial al 95 % es del 52,71 %, lo que invalida conclusiones con muestras pequeñas.
+- Idiomas: solo inglés; sin soporte multilingüe declarado.
+- Contexto: la longitud de ventana no está documentada, lo que impide planificar cargas con prompts largos.
+- Formato: exclusivamente MLX, lo que limita su uso fuera del ecosistema Apple Silicon.
+- Licencia: aunque el repo declara Apache 2.0, el modelo base Gemma 4 remite a las condiciones de uso de Google (license_link), que pueden imponer restricciones adicionales al uso comercial; conviene revisarlas antes de cualquier despliegue productivo.
+- Alucinación y sesgos: no se documentan evaluaciones específicas de sesgo ni de tasa de alucinación; al ser un derivado de Gemma 4, hereda los riesgos del base sin mitigaciones adicionales conocidas.
+- Uso previsto: artefacto de investigación para reproducibilidad de resultados negativos; no recomendado para producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/luisbrel/jimmy-4b-zero-regression
+- Modelo en Hugging Face: https://huggingface.co/luisbrel/jimmy-4b-zero-regression
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Librería MLX-LM: https://github.com/ml-explore/mlx-lm
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.
+- Framework MLX: no disponible en la información proporcionada
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

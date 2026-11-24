@@ -2,106 +2,97 @@
 
 ## Resumen
 
-`semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2-fob` es un modelo de lenguaje de investigación desarrollado por el usuario de Hugging Face `dimitarpg13` dentro de la familia Semantic Simulation (Gen 3). No es un transformer ni usa atención: es un modelo de lenguaje conservativo basado en un potencial escalar y mecánica lagrangiana, entrenado como un flujo de gradiente de primer orden verdadero (FO-b-PMX). Forma parte de un estudio de ablación pre-registrado que compara pares de modelos entrenados con dinámica de primer y segundo orden sobre el mismo presupuesto de tokens.
+semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2-fob es un modelo de lenguaje de investigación desarrollado por dimitarpg13 dentro de la familia Semantic Simulation (SemSimula), una línea experimental que abandona la arquitectura transformer y el mecanismo de atención en favor de un núcleo conservativo basado en mecánica lagrangiana y potenciales escalares. Este checkpoint concreto (FO-b-PMX) entrena ese núcleo como un flujo de gradiente de primer orden verdadero, con 64 pozos de memoria en modo Poisson, sobre OpenWebText.
 
-El modelo emplea 64 "pozos" de memoria en modo Poisson (Poisson-mode registers) sobre un núcleo conservativo con potencial gaussiano anisotrópico, integrado mediante un esquema BAOAB y geometría riemanniana con métrica de Jacobi. Tiene una dimensión de modelo d384, dos capas (l2), y se entrenó sobre OpenWebText con un presupuesto exacto de 532,48 millones de tokens (32.500 pasos × 32 × 512). Su resultado principal es una perplejidad de validación de 54,02 a bloque 512, prácticamente empatada con su gemelo de segundo orden PMX (54,63), lo que constituye la conclusión central del par: sin los pozos, el segundo orden aportaba un 4,9%; con ellos, la diferencia desaparece.
+El modelo forma parte de un estudio escalonado ("ladder study") pre-registrado que compara pares de modelos entrenados con dinámica de segundo orden (con velocidad e inercia) frente a primer orden (sin velocidad), manteniendo constante todo lo demás. Su relevancia es metodológica más que de producto: sirve para aislar si la dinámica de segundo orden aporta ganancia medible cuando existen mecanismos de memoria explícitos. El resultado declarado es que, con los 64 pozos Poisson activos, el gemelo de primer orden iguala al de segundo (54,02 frente a 54,63 de perplejidad), lo que el autor interpreta como una sustitución de la memoria inercial por la memoria estructural de los pozos.
 
-La relevancia es fundamentalmente investigadora: explora si la memoria de los pozos sustituye a la inercia de la dinámica de segundo orden, y demuestra que un modelo sin atención y con memoria de inferencia constante puede alcanzar perplejidades competitivas en su régimen. No está pensado para uso en producción.
+Se trata de un modelo pequeño de investigación (repo de 0,3 GB), con vocabulario y entrenamiento exclusivamente en inglés, licencia CC-BY-4.0 y pesos en formato PyTorch. No está pensado para producción ni para uso general, sino para reproducir y auditar el experimento de ablación de mecanismos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de lenguaje conservativo no-transformer, sin atención; potencial escalar con 64 pozos de memoria en modo Poisson, integración BAOAB, geometría riemanniana (métrica de Jacobi) |
+| Arquitectura | No transformer, sin atención; núcleo conservativo (modelo basado en energía, potencial escalar, mecánica lagrangiana) con 64 pozos de memoria en modo Poisson y dinámica de primer orden (flujo de gradiente) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (entrenado y evaluado a bloque 512) |
+| Longitud de contexto | no disponible (evaluación a bloque de 512 tokens) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (en) |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | PyTorch (pytorch); safetensors/GGUF no disponible |
-| Dimensión del modelo | d384 |
-| Capas | 2 (l2) |
-| Pozos de memoria | 64 (pm64), modo Poisson pmx16 |
-| Orden de dinámica | primer orden (first-order, FO-b) |
-| Presupuesto de entrenamiento | 532.480.000 tokens (32.500 pasos × 32 × 512) |
-| Dataset | Skylion007/openwebtext |
-| Tamaño del repo | 0,3 GB |
+| Idiomas soportados | en (inglés) |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | PyTorch (librería pytorch); no se especifica safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo pertenece a la línea "conservative language model" de Semantic Simulation: en lugar de atención, el estado se evolve bajo un potencial escalar mediante dinámica lagrangiana. Esta variante concreta (FO-b-PMX) se entrena como un flujo de gradiente de primer orden verdadero, relajando exactamente los pozos y los modos rígidos, sin velocidad ni inercia en ningún punto. Incorpora 64 pozos de memoria en modo Poisson (Poisson-mode registers) con un potencial gaussiano anisotrópico, integrado con el esquema BAOAB y formulado sobre geometría riemanniana con métrica de Jacobi y geodesicas riemannianas. La inferencia tiene memoria constante por diseño (constant-memory-inference).
+El modelo pertenece a la generación 3 de SemSimula y se describe como "fully-conservative": la dinámica se deriva de un potencial escalar y se integra con un esquema tipo BAOAB (integrador de dinámica de Langevin) sobre una geometría riemanniana con métrica de Jacobi y geodésicas riemannianas. No hay atención ni mecanismo transformer; la inferencia se declara de memoria constante. La variante PMX añade 64 pozos de memoria en modo Poisson (etiqueta pm64, con pmx16 asociado al estudio de ablación), que actúan como atractores donde se almacena información. En este checkpoint (sufijo fob, "first-order b") los pozos y los modos rígidos se relajan exactamente y no existe variable de velocidad: es un flujo de gradiente puro de primer orden.
 
-El entrenamiento usó exactamente 532.480.000 tokens de OpenWebText (32.500 pasos de 32 secuencias × 512 tokens), el mismo presupuesto y calendario que el resto de la escalera Gen 3, con gradientes en vivo. El estudio es pre-registrado: de las cuatro predicciones (FBX1–FBX4), dos fallaron y dos acertaron. FBX1 (el segundo orden se impone en los pozos, al menos 3% de ventaja) falló con −1,1%; FBX2 (la brecha con pozos supera a la brecha sin pozos en 2 puntos) falló; FBX3 (los pozos ayudan a un modelo de primer orden) acertó con −11,7%; FBX4 (los pozos de primer orden entrenan de forma estable) acertó. La hipótesis propuesta es la "sustitución de memoria": los pozos proporcionan la memoria que de otro modo aportaría la inercia de segundo orden.
+El entrenamiento usa OpenWebText (Skylion007/openwebtext) con un presupuesto exacto de 532.480.000 tokens (32.500 pasos × 32 × 512), el mismo presupuesto y calendario que el resto de la escalera Gen 3. La evaluación se realiza sobre los tokens de validación propios de OpenWebText con bloques de 512. El experimento está pre-registrado con cuatro predicciones (FBX1-FBX4): dos fallaron (FBX1 y FBX2, que anticipaban ventaja del segundo orden) y dos acertaron (FBX3, los pozos ayudan a un modelo de primer orden, con −11,7% frente al modelo sin pozos; y FBX4, estabilidad de entrenamiento de los pozos en primer orden). No se documenta RLHF, DPO ni ajuste por preferencias.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés (pipeline `text-generation`).
-- Modelado de lenguaje a nivel de token con perplejidad competitiva en su régimen (54,02 a bloque 512 sobre OpenWebText).
-- Inferencia con memoria constante, sin crecimiento del coste con la longitud de secuencia.
-- Mecanismo de memoria interna mediante 64 pozos de modo Poisson.
-- No dispone de tool calling ni function calling.
-- No dispone de soporte de agentes ni razonamiento multi-paso explícito.
-- Multilingüe: solo inglés.
-- No dispone de modo thinking, visión ni audio.
+- Generación de texto autoregresiva en inglés, con perplejidad de validación declarada sobre OpenWebText.
+- Modelado de lenguaje a nivel de token con ventana de bloque de 512 tokens en la configuración evaluada.
+- Inferencia de memoria constante, según la etiqueta del autor (constant-memory-inference), derivada del núcleo conservativo sin atención.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingüe más allá del inglés.
+- No se documentan capacidades de visión, audio, modo "thinking" ni matemáticas.
+- Capacidad especial: los 64 pozos de memoria Poisson como mecanismo de almacenamiento de información, objeto del estudio de ablación.
 
 ## Casos de uso
 
-- Investigación en arquitecturas alternativas al transformer: sirve como punto de comparación controlado para estudiar si la dinámica de segundo orden aporta ventaja frente a la de primer orden cuando existen mecanismos de memoria explícitos.
-- Estudio de sustitución de memoria: permite replicar el experimento de pares (primer vs. segundo orden) con y sin pozos para validar la hipótesis de que los pozos reemplazan funcionalmente a la inercia.
-- Ablación de mecanismos pre-registrada: útil como referencia metodológica para grupos que quieran diseñar estudios con predicciones registradas de antemano y evaluar aciertos y fallos.
-- Evaluación de modelos sin atención: sirve para medir perplejidad y estabilidad de entrenamiento en regímenes de bajo presupuesto (532M tokens) frente a líneas transformer equivalentes.
-- Prototipado de inferencia de memoria constante: útil para explorar despliegues donde el coste de memoria no debe crecer con la longitud de contexto.
-- Docencia y divulgación: ejemplo concreto de modelo de lenguaje basado en mecánica lagrangiana y potencial escalar, con resultados numéricos publicados y trazables.
+- Reproducción de experimentos de ablación: el checkpoint permite replicar el par de primer orden frente a segundo orden con 64 pozos y verificar la perplejidad declarada de 54,02 sobre la validación de OpenWebText.
+- Investigación en modelos basados en energía: sirve como banco de pruebas para estudiar si la dinámica de segundo orden aporta ganancia cuando existen mecanismos de memoria explícitos, con un diseño pre-registrado y presupuesto de tokens fijo.
+- Estudio de arquitecturas sin atención: útil para medir el comportamiento de un núcleo conservativo con inferencia de memoria constante frente a baselines transformer de tamaño comparable.
+- Análisis de estabilidad de entrenamiento: el resultado FBX4 (los pozos de primer orden entrenan de forma estable) convierte al modelo en referencia para estudiar la relajación exacta de modos rígidos en flujos de gradiente.
+- Docencia e investigación sobre mecánica lagrangiana aplicada a aprendizaje automático: el modelo materializa conceptos de potencial escalar, geodésicas riemannianas e integración BAOAB en un artefacto ejecutable.
+- Evaluación comparativa de perplejidad en corpus de código y texto: el mismo diseño se replica en la escalera sobre Python y TinyStories, lo que permite contrastar dominios con el mismo presupuesto de 315M o 532,5M de tokens.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index (no verificados):
+Datos declarados por el autor en la model card (no verificados de forma independiente):
 
-| Modelo | Corpus, tokens | Perplejidad validación (bloque 512) |
+| Modelo (OpenWebText, 532,5M tokens) | Orden | Perplejidad validación (bloque 512) |
 |---|---|---|
-| FO-b-PMX (este modelo, 64 pozos) | OpenWebText, 532,5M | 54,02 |
-| PMX (segundo orden, 64 pozos) | OpenWebText, 532,5M | 54,63 |
-| FO-b-PMX-K16 (primer orden, 16 pozos) | OpenWebText, 532,5M | 53,73 |
-| PMX-K16 (segundo orden, 16 pozos) | OpenWebText, 532,5M | 54,24 |
-| FO-b-PM2-PMX16 (primer orden, 2 pozos) | OpenWebText, 532,5M | 53,81 |
-| PM2-PMX16 (segundo orden, 2 pozos) | OpenWebText, 532,5M | 54,71 |
-| FO-b-OWT (primer orden, sin pozos) | OpenWebText, 532,5M | 61,16 |
-| SR2 (segundo orden, sin pozos) | OpenWebText, 532,5M | 58,32 |
+| PMX (64 pozos, segundo orden) | 2.º | 54,63 |
+| FO-b-PMX (este modelo, 64 pozos, primer orden) | 1.º | 54,02 |
+| PMX-K16 (16 pozos, segundo orden) | 2.º | 54,24 |
+| FO-b-PMX-K16 (16 pozos, primer orden) | 1.º | 53,73 |
+| PM2-PMX16 (2 pozos, segundo orden) | 2.º | 54,71 |
+| FO-b-PM2-PMX16 (2 pozos, primer orden) | 1.º | 53,81 |
+| SR2 (sin pozos, segundo orden) | 2.º | 58,32 |
+| FO-b-OWT (sin pozos, primer orden) | 1.º | 61,16 |
 
-Detalle de este modelo: perplejidad asentada 54,02 (media de las tres últimas evaluaciones: 53,95, 54,16, 53,96); mejor valor 52,18 en el paso 31.000. Frente a su gemelo de segundo orden, la diferencia es de −1,1% (empate dentro de la variabilidad razonable entre semillas).
+Detalle de este checkpoint: perplejidad asentada 54,02 (media de las tres últimas evaluaciones de 500 pasos: 53,95, 54,16 y 53,96); mejor valor 52,18 en el paso 31.000. El autor reporta que la diferencia de −1,1% frente a su gemelo de segundo orden es un empate dentro de la dispersión plausible entre semillas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; el repositorio ocupa 0,3 GB, lo que sugiere que el modelo cabe holgadamente en GPUs de consumo, pero no se publican cifras de parámetros ni de memoria.
-- GPU recomendadas: no disponibles; por tamaño de repo, cualquier GPU con al menos unos pocos GB de VRAM debería poder cargarlo.
-- GPU de consumo: probablemente sí (d384, 2 capas, repo de 0,3 GB), aunque no confirmado por el autor.
-- Opciones de despliegue: solo se declara PyTorch como librería; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0,3 GB, lo que sugiere un modelo pequeño que probablemente cabe en GPU de consumo, pero no se publican parámetros totales ni requisitos oficiales.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no confirmada oficialmente; por el tamaño del repo (0,3 GB) es plausible en tarjetas con 8-16 GB, pero debe verificarse.
+- Opciones de despliegue: el modelo se distribuye como pesos PyTorch con librería pytorch; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y al no ser transformer es improbable que funcione en esos motores sin adaptación.
+- Latencia y throughput: no disponible. La model card solo declara inferencia de memoria constante.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Contexto | Perplejidad (OWT, bloque 512) | Licencia |
-|---|---|---|---|---|
-| FO-b-PMX (este) | Conservador, primer orden, 64 pozos | no disponible | 54,02 | CC-BY-4.0 |
-| PMX (gemelo) | Conservador, segundo orden, 64 pozos | no disponible | 54,63 | CC-BY-4.0 |
-| FO-b-OWT | Conservador, primer orden, sin pozos | no disponible | 61,16 | CC-BY-4.0 |
-| SR2 | Conservador, segundo orden, sin pozos | no disponible | 58,32 | CC-BY-4.0 |
+| Modelo | Parámetros | Contexto | Perplejidad (OpenWebText) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| FO-b-PMX (este modelo) | no disponible | no disponible (eval. a 512) | 54,02 | CC-BY-4.0 | Hugging Face, 864 descargas |
+| PMX (gemelo de segundo orden) | no disponible | no disponible (eval. a 512) | 54,63 | CC-BY-4.0 | Hugging Face |
+| FO-b-OWT (primer orden sin pozos) | no disponible | no disponible (eval. a 512) | 61,16 | CC-BY-4.0 | Hugging Face |
+| SR2 (segundo orden sin pozos) | no disponible | no disponible (eval. a 512) | 58,32 | CC-BY-4.0 | Hugging Face |
 
-No se dispone de comparación con modelos transformer de referencia en la información proporcionada.
+No se dispone de comparación con modelos transformer de propósito general de tamaño equivalente, ya que la información proporcionada no incluye sus métricas sobre el mismo protocolo de evaluación.
 
 ## Limitaciones y advertencias
 
-- Modelo exclusivamente de investigación; no validado para uso en producción.
-- Solo inglés; sin capacidades multilingües.
-- Contexto de entrenamiento y evaluación limitado a bloque 512; no se documenta ventana de contexto mayor.
-- Riesgo de alucinación no evaluado ni documentado por el autor.
-- Sesgos del corpus OpenWebText heredados sin mitigación documentada.
-- Sin soporte documentado de tool calling, agentes ni razonamiento multi-paso.
-- Resultados de perplejidad declarados como no verificados (`verified: false`).
-- Dos de las cuatro predicciones pre-registradas fallaron; la interpretación de "sustitución de memoria" es una hipótesis del autor, no un resultado establecido.
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero el modelo no está pensado ni validado para ello.
-- No se publican recuento de parámetros, requisitos de hardware ni instrucciones de despliegue.
+- Modelo de investigación: no está diseñado ni validado para uso en producción, atención al cliente ni generación de código fiable.
+- Entrenado únicamente en inglés y sobre OpenWebText, un corpus de texto web con los sesgos propios de esa fuente (sesgo de dominio, registro y demografía).
+- Riesgo de alucinación no cuantificado; con perplejidad de validación en torno a 54 sobre bloques de 512, la calidad de generación es propia de un modelo pequeño de laboratorio.
+- No se documentan parámetros totales, longitud de contexto máxima, tipos de cuantización ni formatos alternativos de pesos, lo que dificulta planificar el despliegue.
+- Al no ser transformer ni usar atención, es incompatible con los motores de inferencia estándar (vLLM, llama.cpp, TGI) sin trabajo de adaptación.
+- La licencia CC-BY-4.0 permite uso comercial con atribución, pero el estado experimental del modelo desaconseja cualquier uso comercial real.
+- Los resultados de benchmarks son declarados por el autor y marcados como no verificados; las conclusiones del estudio (sustitución de memoria) son una interpretación del autor, no un hecho establecido.
+- Las diferencias de perplejidad reportadas (−1,1%, −0,9%, −1,6%) están dentro de la dispersión entre semillas según el propio autor, por lo que no deben leerse como mejoras significativas.
 
 ## Enlaces
 
@@ -109,19 +100,10 @@ No se dispone de comparación con modelos transformer de referencia en la inform
 - Gemelo de segundo orden (PMX): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2
 - Primer orden sin pozos (FO-b-OWT): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2-fob
 - Segundo orden sin pozos (SR2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-sr2
-- Variante 16 pozos, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2-fob
-- Variante 16 pozos, segundo orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2
-- Variante 2 pozos, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob
-- Variante 2 pozos, segundo orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2
-- TinyStories segundo orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2
-- TinyStories primer orden entre capas: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fo
-- TinyStories primer orden verdadero: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob
-- TinyStories 2 pozos, segundo orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2
-- TinyStories 2 pozos, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob
-- Python code, segundo orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
-- Python code, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob
-- Python code 2 pozos, segundo orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-pm2-pmx16-sr2
-- Python code 2 pozos, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-pm2-pmx16-sr2-fob
-- Colección primer vs. segundo orden: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
-- Colección Gen 3 (escalera OpenWebText): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
+- Variante con 16 pozos, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2-fob
+- Variante con 2 pozos, primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob
+- Par TinyStories de primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob
+- Par Python de primer orden: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob
+- Colección primer vs segundo orden: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
+- Colección Gen 3 (ladder OpenWebText): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
 - Dataset OpenWebText: https://huggingface.co/datasets/Skylion007/openwebtext

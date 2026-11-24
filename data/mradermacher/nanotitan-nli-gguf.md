@@ -2,74 +2,101 @@
 
 ## Resumen
 
-NanoTitan-NLI-GGUF es una versión cuantizada en formato GGUF del modelo NanoTitan-NLI desarrollado por blueprint-ai, realizada por mradermacher. Se trata de un modelo de clasificación de texto de pequeño tamaño, con 33,2 millones de parámetros, especializado en inferencia de lenguaje natural (NLI), clasificación zero-shot y extracción de características. Su licencia MIT y su formato GGUF lo convierten en una opción interesante para integrar en aplicaciones de producción con restricciones de recursos, especialmente en entornos de CPU o dispositivos con poca memoria.
+NanoTitan-NLI-GGUF es la version cuantizada en formato GGUF del modelo NanoTitan-NLI, desarrollado originalmente por blueprint-ai-bot y convertido por mradermacher. Se trata de un modelo encoder de tipo transformer con 33.213.315 parametros (aproximadamente 33 millones), disenado especificamente para tareas de inferencia de lenguaje natural (NLI), clasificacion zero-shot y extraccion de caracteristicas. Su reducido tamano lo convierte en una opcion extremadamente ligera para tareas de clasificacion de texto en produccion.
 
-El modelo base fue entrenado sobre una combinación de datasets como MultiNLI, AG News, SST-2, TweetEval, Subj y Rotten Tomatoes, lo que le confiere capacidad para tareas de razonamiento textual y clasificación. La versión GGUF incluye doce niveles de cuantización, desde Q2_K hasta f16, lo que permite ajustar el equilibrio entre tamaño y calidad según el caso de uso. Aunque el modelo es pequeño y ligero, su relevancia radica en la posibilidad de desplegar capacidades de inferencia de lenguaje natural en entornos con requisitos mínimos de hardware.
+El modelo resuelve el problema de clasificar relaciones entre pares de frases (implicacion, contradiccion, neutralidad) y de realizar clasificacion zero-shot sobre textos, tareas fundamentales en pipelines de NLP como filtrado de contenido, deteccion de contradicciones en bases de conocimiento o enrutamiento de consultas. Al estar disponible en formato GGUF con cuantizaciones desde Q2_K hasta f16, puede ejecutarse en CPU y en hardware de gama baja sin necesidad de GPU dedicada.
 
-## Especificaciones técnicas
+Su relevancia actual radica en que ofrece capacidades de clasificacion NLI en un paquete de menos de 0,2 GB en su version f16, lo que facilita el despliegue en entornos con recursos limitados, aplicaciones de borde (edge computing) y sistemas donde la latencia y el consumo de memoria son criticos. La licencia MIT permite uso comercial sin restricciones adicionales.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Transformer encoder (derivada del modelo base NanoTitan-NLI) |
 | Parametros totales | 33.213.315 |
-| Parametros activos | no disponible |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, IQ4_XS, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (version cuantizada); safetensors en el modelo base |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base (blueprint-ai/NanoTitan-NLI). Por el numero de parametros (33,2 M) y el tipo de tareas, se trata probablemente de un transformer encoder de tamano compacto, pero no hay confirmacion oficial. El modelo fue entrenado sobre los datasets nyu-mll/multi_nli, fancyzhx/ag_news, SetFit/sst2, cardiffnlp/tweet_eval, SetFit/subj y cornell-movie-review-data/rotten_tomatoes, segun los metadatos de la model card. No se menciona el uso de tecnicas como RLHF o DPO, ni innovaciones arquitectonicas especificas. La version GGUF fue generada mediante cuantizacion estatica del modelo original, sin aplicar pesos imatrix o tecnicas de cuantizacion dinamica.
+El modelo base NanoTitan-NLI es un transformer encoder de aproximadamente 33 millones de parametros, orientado a tareas de comprension del lenguaje y clasificacion. La informacion disponible no detalla la configuracion exacta de capas, dimensiones ocultas ni mecanismos de atencion especificos. El modelo ha sido entrenado sobre un conjunto de datasets que incluyen MultiNLI (nyu-mll/multi_nli) para inferencia de lenguaje natural, AG News (fancyzhx/ag_news) para clasificacion tematica, SST-2 (SetFit/sst2) para analisis de sentimiento, TweetEval (cardiffnlp/tweet_eval) para texto de redes sociales, Subj (SetFit/subj) para subjetividad y Rotten Tomatoes (cornell-movie-review-data/rotten_tomatoes) para resenas de cine.
+
+La informacion proporcionada no especifica el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas destacables como decodificacion especulativa o atencion lineal. La version GGUF ha sido generada mediante cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) a partir de los pesos en formato Hugging Face del modelo base.
 
 ## Capacidades
 
-- Clasificacion de texto de tipo NLI (natural language inference): determina si una premisa implica, contradice o es neutral respecto a una hipotesis.
-- Clasificacion zero-shot: permite clasificar textos en categorias arbitrarias sin entrenamiento previo, usando el mecanismo de NLI.
-- Extraccion de caracteristicas (feature extraction): genera representaciones vectoriales del texto para tareas de similitud o embeddings.
-- Analisis de sentimiento: puede evaluar la polaridad de opiniones (positiva, negativa, neutral) gracias a datasets como SST-2 y TweetEval.
-- Clasificacion de topicos: entrena con AG News y subj, permite categorizar noticias o textos por tematica.
-- Capacidad multilingue: no disponible, el modelo solo soporta ingles.
-- No se ha informado de soporte de tool calling, agentes o razonamiento multi-paso.
+- Clasificacion de texto: el modelo esta disenado para tareas de text-classification, incluyendo clasificacion binaria y multiclase.
+- Inferencia de lenguaje natural (NLI): determina la relacion logica entre un par de frases (implicacion, contradiccion, neutralidad).
+- Clasificacion zero-shot: puede asignar etiquetas a textos sin entrenamiento especifico previo sobre esas categorias, segun los tags del modelo.
+- Extraccion de caracteristicas (feature-extraction): genera representaciones vectoriales de texto utilizables en pipelines downstream.
+- Analisis de sentimiento: entrenado sobre SST-2 y Rotten Tomatoes, adecuado para clasificar polaridad en resenas y textos cortos.
+- Clasificacion tematica: entrenado sobre AG News, puede categorizar noticias y textos en topics predefinidos.
+- Procesamiento de texto de redes sociales: el dataset TweetEval indica capacidad para manejar texto informal y ruidoso.
+- Deteccion de subjetividad: el dataset Subj permite distinguir entre texto objetivo y subjetivo.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y multi-step reasoning: no disponible (modelo encoder, no generativo).
+- Capacidades multilingues: solo ingles.
+- Capacidades especiales: no se documentan modos de pensamiento, vision ni audio.
 
 ## Casos de uso
 
-- Moderacion de contenido en redes sociales: el modelo puede clasificar comentarios como ofensivos o neutros, evaluando la relacion entre un texto y una politica de moderacion, gracias a su capacidad zero-shot y su entrenamiento con TweetEval.
-- Analisis de sentimiento en encuestas o reseñas: usando los datos de SST-2 y Rotten Tomatoes, el modelo puede puntuar la polaridad de opiniones en tiempo real con un coste computacional minimo, integrable en pipelines de procesamiento de texto.
-- Clasificacion de noticias en categorias: con el dataset AG News, el modelo puede asignar etiquetas tematicas (deportes, economia, tecnologia, etc.) a articulos, adecuado para sistemas de recomendacion o agregadores de contenido.
-- Deteccion de contradicciones en documentos: en entornos legales o de verificacion de hechos, el modelo puede comparar pares de frases y detectar si son contradictorias, aprovechando su entrenamiento en MultiNLI.
-- Clasificacion zero-shot en bases de conocimiento: permite etiquetar documentos o correos con categorias personalizadas sin necesidad de reentrenar el modelo, solo definiendo hipotesis descriptivas.
-- Extraccion de embeddings para busqueda semantica: usando la funcion de feature extraction, se pueden generar representaciones vectoriales de textos para indexar y buscar en sistemas de recuperacion de informacion, con un bajo coste de memoria.
+- Filtrado de contradicciones en bases de conocimiento: el modelo puede comparar pares de afirmaciones extraidas de una KB y detectar si se contradicen, usando su capacidad NLI para mantener la coherencia factual en sistemas de gestion del conocimiento.
+- Clasificacion zero-shot de tickets de soporte: sin entrenamiento adicional, se pueden definir categorias (facturacion, tecnico, reclamacion) y el modelo asigna cada ticket a la categoria mas probable, aprovechando su capacidad de zero-shot-classification.
+- Moderacion de contenido en redes sociales: entrenado sobre TweetEval, puede clasificar textos informales y detectar categorias como toxicidad, emociones o temas, integrándose en pipelines de moderacion con latencia minima.
+- Analisis de sentimiento en resenas de productos: su entrenamiento sobre SST-2 y Rotten Tomatoes lo hace adecuado para clasificar polaridad en resenas de cine, restaurantes o productos, con despliegue en CPU.
+- Enrutamiento de consultas en buscadores: clasificar la intencion de una consulta (navegacional, informacional, transaccional) mediante clasificacion zero-shot para dirigirla al modulo adecuado del sistema de busqueda.
+- Deduplicacion semantica de documentos: usando feature-extraction, se generan embeddings de textos y se detectan duplicados o near-duplicates en grandes corpus, con la ventaja de que el modelo cabe en memoria en cualquier maquina.
+- Clasificacion de noticias en tiempo real: con AG News como dataset de entrenamiento, puede categorizar articulos entrantes en topics (deportes, tecnologia, politica) en un pipeline de ingesta de noticias de bajo coste.
+- Deteccion de subjetividad en foros: distinguir opiniones de hechos en comentarios de usuarios para priorizar contenido objetivo en sistemas de reputacion o analisis de opinion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de rendimiento en pruebas estandar como MMLU, HumanEval o GLUE para este modelo especifico. El autor de la cuantizacion no incluye metricas de evaluacion en la model card.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantizaciones de 0,1 GB (Q4_K_M) el modelo puede ejecutarse en GPU con menos de 1 GB de VRAM; en f16 ocupa alrededor de 0,2 GB.
-- GPU recomendadas: cualquier GPU moderna con soporte de CUDA o Vulkan, incluyendo RTX 3060, RTX 4090, o incluso GPUs integradas de bajo perfil. Tambien es viable en CPU pura.
-- Cabe en hardware consumer: si, puede ejecutarse en una Raspberry Pi 4 con suficiente RAM (2 GB) usando llama.cpp, o en cualquier portatil con 4 GB de RAM.
-- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python, o servidores de inferencia como TGI (si se convierte a safetensors). El formato GGUF es compatible con llama.cpp y sus derivados.
-- Latencia y throughput: al ser un modelo de solo 33M de parametros, la latencia es de milisegundos en CPU moderna; en GPU puede procesar cientos de peticiones por segundo. No se proporcionan mediciones exactas.
+- VRAM estimada para inferencia: inferior a 0,2 GB en f16; inferior a 0,1 GB en cuantizaciones Q4_K_M o Q2_K. El modelo completo en f16 ocupa aproximadamente 0,2 GB en disco.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; el modelo puede ejecutarse en GPUs integradas y en CPU sin problema.
+- Cabe en consumer GPU: si, en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090, etc.) e incluso en Raspberry Pi y dispositivos de borde.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base puede desplegarse con transformers y Text Embedding Inference (TEI) para feature-extraction.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; dado el tamano reducido, se espera latencia de milisegundos en CPU y throughput alto en lote, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables de la misma categoria (NLI de pequeno tamano) en la informacion proporcionada. No se puede establecer una comparativa con alternativas como BERT-base (110M) o DistilBERT (66M) sin datos de rendimiento verificados.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| NanoTitan-NLI-GGUF | 33,2 M | no disponible | en | MIT | GGUF |
+| MiniLM-L6-v2 (referencia) | 22,7 M | 512 tokens | multilingue (variantes) | Apache 2.0 | safetensors, GGUF |
+| DistilBERT-base (referencia) | 66 M | 512 tokens | en (mayoritariamente) | Apache 2.0 | safetensors, GGUF |
+| DeBERTa-v3-xsmall (referencia) | 22 M | 512 tokens | en | MIT | safetensors, GGUF |
+
+Nota: los datos de los modelos de referencia son orientativos y no provienen de la informacion proporcionada; se incluyen para contextualizar el tamano y la categoria. No se dispone de datos de rendimiento comparativo del modelo NanoTitan-NLI frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Sesgo de idioma: el modelo solo soporta ingles, lo que limita su uso en aplicaciones multilingues.
-- Riesgo de alucinacion: aunque es un modelo de clasificacion y no genera texto libre, puede producir falsos positivos en la deteccion de contradicciones o en la clasificacion zero-shot si las hipotesis no estan bien formuladas.
-- Capacidad limitada: con 33M de parametros, su rendimiento en tareas complejas de razonamiento sera inferior al de modelos mas grandes (por ejemplo, 350M o 1B).
-- Cuantizaciones de baja precision: los quants Q2_K y Q3_* pueden degradar significativamente la calidad de las predicciones; se recomienda usar Q4_K_M o superior para produccion.
-- Sin garantias de soporte: el modelo es una cuantizacion comunitaria (mradermacher) y no hay documentacion oficial del modelo base sobre limitaciones de contexto o recomendaciones de uso.
+- Sesgos conocidos: al entrenarse sobre datasets como MultiNLI, TweetEval y Rotten Tomatoes, puede heredar sesgos de genero, raza y edad presentes en dichos corpus; no se documentan analisis de sesgo en la informacion disponible.
+- Riesgo de alucinacion: al ser un modelo encoder de clasificacion, no genera texto libre, por lo que el riesgo de alucinacion se limita a clasificaciones erroneas o asignaciones de etiquetas con alta confianza pero incorrectas.
+- Limitaciones de contexto: la longitud maxima de contexto no esta documentada; los modelos encoder de este tamano suelen limitarse a 512 tokens, lo que restringe el procesamiento de documentos largos.
+- Limitaciones de idioma: solo soporta ingles; su uso con textos en castellano u otros idiomas producira resultados degradados.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, modificacion y redistribucion sin restricciones adicionales, siempre que se incluya el aviso de copyright.
+- Caveats para produccion: las cuantizaciones Q2_K y Q3_K pueden degradar la calidad de clasificacion; se recomienda Q4_K_M o superior para produccion. No se han publicado evaluaciones formales de rendimiento en la informacion disponible, por lo que se recomienda validar el modelo sobre el dominio especifico antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio del modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/NanoTitan-NLI-GGUF
-- Modelo base: https://huggingface.co/blueprint-ai/NanoTitan-NLI
-- Proyecto NanoTitan (posiblemente relacionado): https://github.com/vpareek2/NanoTitan
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
-- Solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- Hugging Face (modelo cuantizado): https://huggingface.co/mradermacher/NanoTitan-NLI-GGUF
+- Modelo base: https://huggingface.co/blueprint-ai-bot/NanoTitan-NLI
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#NanoTitan-NLI-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests
+- Dataset MultiNLI: https://huggingface.co/datasets/nyu-mll/multi_nli
+- Dataset AG News: https://huggingface.co/datasets/fancyzhx/ag_news
+- Dataset SST-2: https://huggingface.co/datasets/SetFit/sst2
+- Dataset TweetEval: https://huggingface.co/datasets/cardiffnlp/tweet_eval
+- Dataset Subj: https://huggingface.co/datasets/SetFit/subj
+- Dataset Rotten Tomatoes: https://huggingface.co/datasets/cornell-movie-review-data/rotten_tomatoes

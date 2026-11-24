@@ -2,90 +2,88 @@
 
 ## Resumen
 
-OpenThai 2.0 es un modelo de inteligencia artificial tailandés de código abierto con 27.400 millones de parámetros, desarrollado por iApp Technology y AIEAT sobre la base de Qwen3.8-27B. Esta variante concreta es la cuantización INT8 W8A8 (GPTQ) del modelo completo, que conserva la torre de visión y el cabezal de decodificación especulativa (MTP) en bf16 para mantener las capacidades de lectura de documentos y la velocidad de generación.
+OpenThai 2.0.1 INT8 W8A8 es una cuantización de pesos y activaciones a 8 bits del modelo multimodal `iapp/openthai2.0-qwen3.8-27b`, desarrollado por iApp en el marco del proyecto OpenThai (anteriormente OpenThaiGPT) y presentado junto a AIEAT. El modelo base parte de la familia Qwen 3.5 (tag `qwen3_5`) y está especializado en tailandés e inglés, con capacidades declaradas de OCR y visión. Esta variante concreta no introduce capacidades nuevas: su propósito es reducir el coste de inferencia manteniendo el comportamiento del modelo original.
 
-El modelo resuelve la falta de modelos abiertos tailandeses de alta calidad: lee documentos y escritura manual tailandesa a nivel especialista, responde con conocimiento local del país y destaca en uso agéntico de herramientas (BFCL 0,820), manteniendo la inteligencia general del modelo base. Su relevancia actual radica en ser uno de los pocos modelos abiertos bilingües tailandés-inglés con visión, OCR y capacidades agénticas en un solo paquete, disponible en formato cuantizado para GPU de 40 GB.
+La cuantización se ha realizado con llm-compressor mediante GPTQ en modo W8A8 (pesos y activaciones en INT8) y empaquetado con `compressed-tensors` para su uso directo en vLLM. La torre de visión, la cabeza `lm_head` y la cabeza draft MTP se mantienen en bf16, de modo que las partes sensibles a la precisión no se degradan. El resultado son 27.360.632.560 parámetros en un repositorio de 152,7 GB.
+
+Su relevancia práctica está en dos puntos: el soporte de decodificación especulativa mediante la cabeza MTP (con una corrección publicada el 31 de agosto de 2026 que restauró los tensores `mtp.*` que faltaban en las primeras subidas) y la licencia Apache 2.0, que permite uso comercial sin restricciones adicionales. Es un modelo pensado para despliegue en producción con vLLM, no para experimentación en hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3.5) con torre de visión y cabezal MTP para decodificacion especulativa |
-| Parametros totales | 27.356.728.560 (~27,4B) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens |
-| Tipos de cuantizacion | INT8 W8A8 (GPTQ); torre de visión y MTP en bf16 |
-| Idiomas soportados | Tailandes (th), ingles (en) |
+| Arquitectura | Transformer multimodal (familia Qwen 3.5, tag `qwen3_5`), con torre de visión y cabeza MTP para decodificación especulativa |
+| Parametros totales | 27.360.632.560 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada; el ejemplo de despliegue usa `--max-model-len 32768` |
+| Tipos de cuantizacion | INT8 W8A8 (pesos y activaciones) vía GPTQ con `compressed-tensors`; torre de visión, `lm_head` y cabeza MTP en bf16 |
+| Idiomas soportados | tailandés (th), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compressed-tensors) |
+| Formato de pesos | safetensors (`compressed-tensors`), más `model-mtp.safetensors` en bf16 (0,85 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base OpenThai 2.0 se construye sobre Qwen3.8-27B, un transformer denso de 27.400 millones de parametros con arquitectura Qwen3.5. Anade una torre de vision especializada en lectura de documentos y escritura manual tailandesa, asi como un cabezal MTP (multi-token prediction) para decodificacion especulativa. La cuantizacion INT8 W8A8 se realizo con llmcompressor, calibrando con 512x2048 muestras de ultrachat, y manteniendo la torre de vision y el cabezal MTP en bf16 para no degradar la lectura de documentos ni la velocidad de generacion.
+El modelo base es un transformer multimodal de la familia Qwen 3.5 con 27.360 millones de parámetros, que combina un tronco de lenguaje con una torre de visión para tareas de OCR y comprensión de documentos. Incluye una cabeza MTP (multi-token prediction) de una capa (`mtp_num_hidden_layers: 1`) que actúa como draft head para decodificación especulativa en vLLM con el método `qwen3_5_mtp`.
 
-El entrenamiento incluye conocimiento especifico de Tailandia (historia, cultura, legislacion, geografia) y ajuste para razonamiento agentico. El modelo razona antes de responder, lo que requiere dejar el parametro max_tokens sin definir o por encima de 8192 tokens, y mantener un repetition_penalty de 1,05. Los datos exactos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF o DPO) no estan disponibles en la informacion proporcionada.
+Esta variante INT8 se generó con llm-compressor aplicando GPTQ sobre pesos y activaciones, con calibración exclusivamente textual sobre ultrachat (512 muestras de 2048 tokens). La configuración de cuantización excluye explícitamente la torre de visión, `lm_head` y todos los tensores `mtp.*` mediante la regla `re:.*mtp.*` en `quantization_config.ignore`. La corrección del 31 de agosto de 2026 es relevante técnicamente: las primeras subidas no contenían tensores `mtp.*` porque el export cargó el modelo con una clase de transformers sin módulo MTP, de modo que con `--speculative-config` vLLM ejecutaba una draft head sin pesos, rechazaba todos los drafts (longitud media de aceptación 1,00) y decodificaba aproximadamente 1,6 veces más lento que sin el flag. La versión corregida alcanza una longitud media de aceptación de 1,63 bajo vLLM 0.26 con `num_speculative_tokens: 2`, frente a 1,61 del modelo bf16 de producción. No se dispone de detalles sobre el volumen de tokens de preentrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo base.
 
 ## Capacidades
 
-- Lectura de documentos tailandeses y escritura manual a nivel especialista, con una reduccion del 60% de errores frente al modelo base.
-- Conocimiento profundo de Tailandia: responde preguntas sobre historia, cultura, legislacion y geografia del pais.
-- Uso agentico de herramientas (tool calling): lidera a su modelo base y a Typhoon 2.5 en benchmarks BFCL (0,820).
-- Razonamiento multi-paso: el modelo genera una cadena de razonamiento antes de responder.
-- Decodificacion especulativa mediante cabezal MTP, que acelera la generacion sin perdida de calidad.
-- Capacidades multilingues tailandes-ingles, con generacion de texto natural y explicativa en tailandes.
-- Vision artificial (vision-language): integra la torre de vision para tareas OCR y comprension de imagenes de documentos.
+- Generación de texto y razonamiento en tailandés e inglés, con modo de razonamiento compatible con `--reasoning-parser qwen3` en vLLM.
+- Comprensión de imágenes y OCR, gracias a la torre de visión conservada en bf16 (etiquetas `ocr` y `vision` del repositorio).
+- Procesamiento de documentos y extracción de texto estructurado, orientado al mercado tailandés.
+- Decodificación especulativa con cabeza MTP integrada, que acelera la generación en vLLM.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
+- Multilingüismo limitado a tailandés e inglés según los metadatos del modelo.
 
 ## Casos de uso
 
-- Digitalizacion de documentos administrativos tailandeses: el modelo puede transcribir y estructurar escritura manual y documentos escaneados en tailandes, reduciendo errores de OCR en un 60% frente a modelos base genericos.
-- Atencion al cliente automatizada en tailandes: con 32.768 tokens de contexto y capacidades agenticas, puede gestionar conversaciones multi-turno y consultar bases de conocimiento o APIs mediante tool calling.
-- Asistente legal y gubernamental: su conocimiento de legislacion tailandesa (puntuacion de 0,842 en examenes nacionales) permite responder consultas sobre normativa local con precision.
-- Agente autonomo con herramientas: gracias a su rendimiento BFCL de 0,820, puede integrarse en pipelines que requieren planificacion multi-paso y ejecucion de llamadas a funciones.
-- Educacion y evaluacion: util para generar material didactico en tailandes, corregir examenes y responder preguntas sobre el curriculo nacional tailandes.
-- Investigacion historica y cultural: su conocimiento especializado de Tailandia permite responder consultas sobre historia, cultura y patrimonio que los modelos generalistas fallan.
-- Despliegue de OCR en produccion: la cuantizacion INT8 (~29 GB) permite ejecutar el modelo en GPU de 40 GB, manteniendo la torre de vision en bf16 para preservar la calidad de lectura.
+- Digitalización de documentos administrativos tailandeses: el modelo puede procesar imágenes de formularios, facturas y documentos oficiales y extraer campos estructurados, aprovechando la torre de visión en bf16 y el soporte nativo de tailandés con alfabeto no latino.
+- OCR en pipelines de archivo histórico: adecuado para digitalizar corpus en tailandés donde los motores OCR convencionales tienen tasas de error elevadas por la segmentación de palabras y los diacríticos.
+- Atención al cliente en tailandés: generación de respuestas multi-turno en un servicio orientado a usuarios tailandeses, con contexto de hasta 32.768 tokens en la configuración de despliegue de referencia.
+- Despliegue en producción con vLLM: la cuantización W8A8 reduce el peso de pesos y activaciones frente a bf16, y la cabeza MTP aporta una aceleración de decodificación medible (aceptación media 1,63), lo que se traduce en menor coste por token servido.
+- Procesamiento de documentación técnica bilingüe tailandés-inglés: traducción y resumen de manuales, contratos o documentación regulatoria donde conviven ambos idiomas.
+- Moderación y clasificación de contenido en tailandés: clasificación de textos y mensajes con un modelo que comprende el idioma de forma nativa, desplegado sobre infraestructura con GPU de 80 GB.
+- Extracción de información de capturas de pantalla e interfaces: al conservar la visión en bf16, es viable para tareas de lectura de UI y verificación de contenido visual.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Nota |
-|---|---|---|
-| Examens nacionales tailandeses | 0,842 | Supera al modelo base |
-| BFCL (agente con herramientas) | 0,820 | Lidera frente al modelo base y Typhoon 2.5 |
-| Error en lectura de escritura manual tailandesa | -60% vs modelo base | Reduccion de errores |
-
-No se han publicado en la informacion disponible resultados de benchmarks generales como MMLU, HumanEval o GSM8K para esta variante cuantizada. El modelo base (bf16) mantiene la inteligencia general de Qwen3.8-27B, segun el autor.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite explícitamente a la del modelo base (`iapp/openthai2.0-qwen3.8-27b`) para benchmarks y prompts. El único dato de rendimiento publicado es la longitud media de aceptación de la decodificación especulativa: 1,63 con la cabeza MTP corregida, frente a 1,61 en bf16 de producción y 1,00 (sin aceleración efectiva) en las subidas defectuosas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~29 GB para los pesos en INT8 W8A8, mas overhead de activaciones y KV cache. Cabe en GPU de 40 GB.
-- GPUs recomendadas: H100 (validada en pruebas de humo), A100 40GB, A6000 48GB, o cualquier GPU con 40 GB o mas de VRAM.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) sin cuantizacion adicional o tecnicas de offloading; el autor menciona formatos para MacBook y Blackwell en la familia completa, pero esta variante INT8 requiere 40 GB.
-- Opciones de despliegue: vLLM (comando oficial proporcionado), con soporte para reasoning parser qwen3 y trust-remote-code. Tambien compatible con el ecosistema compressed-tensors.
-- Latencia y throughput: no disponible en la informacion proporcionada. La decodificacion especulativa con cabezal MTP deberia mejorar el throughput frente a la version bf16.
+- VRAM estimada para inferencia: los pesos INT8 de 27.360 millones de parámetros ocupan aproximadamente 27,4 GB, más la torre de visión y `lm_head` en bf16 y la cabeza MTP (0,85 GB). En la práctica se necesita al menos una GPU de 40 GB para contexto moderado y una de 80 GB para contexto largo con caché KV amplia.
+- GPU recomendadas: A100 80 GB, H100 80 GB, L40S 48 GB. No se recomienda A100 40 GB si se necesita el contexto completo de 32.768 tokens.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) con los pesos INT8 completos más caché KV; sería necesario un esquema de offload o una cuantización adicional a 4 bits no publicada en este repositorio.
+- Opciones de despliegue: vLLM es el runtime de referencia, con `--trust-remote-code`, `--max-model-len 32768`, `--reasoning-parser qwen3` y `--speculative-config '{"method":"qwen3_5_mtp","num_speculative_tokens":2}'`. El formato `compressed-tensors` no es compatible directamente con llama.cpp u Ollama sin conversión adicional.
+- Latencia y throughput: no disponibles de forma absoluta; la decodificación especulativa con la cabeza MTP corregida aporta una longitud media de aceptación de 1,63, lo que implica un ahorro sustancial de pasos de decodificación frente a la generación autoregresiva estándar.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | BFCL | Notas |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThai 2.0 INT8 (este) | 27,4B | 32K | Apache 2.0 | 0,820 | Cuantizado, vision y OCR |
-| OpenThai 2.0 bf16 (base) | 27,4B | 32K | Apache 2.0 | inferior a 0,820 | Precision completa, mayor VRAM |
-| Typhoon 2.5 | no disponible | no disponible | no disponible | inferior a 0,820 | Modelo tailandes competidor |
-| Qwen3.8-27B (base generica) | 27,4B | 32K | Apache 2.0 | no disponible | Sin vision ni conocimiento tailandes |
+| iapp/openthai2.0-qwen3.8-27b-INT8-W8A8 | 27,36 B | no disponible (ejemplo con 32.768) | INT8 W8A8 | Apache 2.0 | Hugging Face, vLLM |
+| iapp/openthai2.0-qwen3.8-27b (base) | 27,36 B | no disponible | bf16 | Apache 2.0 | Hugging Face |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La información proporcionada no incluye otros modelos comparables de la misma categoría (multimodales en tailandés de ~27 B). La comparación más directa disponible es con el modelo base en bf16, del que esta variante hereda capacidades y del que solo se diferencia por la cuantización y por la corrección de la cabeza MTP.
 
 ## Limitaciones y advertencias
 
-- Modelo centrado en tailandes e ingles: su rendimiento en otros idiomas no esta garantizado ni documentado.
-- La cuantizacion INT8 puede introducir una ligera degradacion de calidad frente al modelo bf16, aunque el autor afirma que la torre de vision y el cabezal MTP se mantienen en bf16 para preservar las capacidades criticas.
-- El modelo razona antes de responder: si se limita max_tokens por debajo de 8192, las respuestas pueden truncarse. Requiere configurar repetition_penalty en 1,05.
-- Riesgo de alucinacion: como todo modelo generativo, puede inventar informacion, especialmente en dominios fuera de su conocimiento tailandes.
-- Requisitos de VRAM elevados (~29 GB): no es desplegable en GPU de consumo de 24 GB sin cuantizacion adicional u offloading.
-- Sesgos: al estar entrenado con datos tailandeses, puede reflejar sesgos culturales y lingüisticos propios de ese contexto. No se han documentado evaluaciones de sesgo.
-- Datos de entrenamiento no publicos: no se han publicado detalles sobre el dataset, su composicion ni el proceso de alineacion (RLHF o DPO), lo que dificulta la auditoria.
+- La calibración GPTQ se realizó únicamente con texto (ultrachat, 512×2048); no se ha calibrado con datos multimodales, por lo que el comportamiento de la torre de visión bajo cuantización no está documentado más allá de que se mantiene en bf16.
+- Riesgo de degradación por cuantización W8A8 en tareas sensibles a la precisión numérica; no se han publicado evaluaciones comparativas INT8 frente a bf16.
+- Las copias descargadas antes del 31 de agosto de 2026 carecen de los tensores `mtp.*` y, con `--speculative-config`, decodifican aproximadamente 1,6 veces más lento. Es necesario volver a descargar o servir sin el flag.
+- Idiomas limitados a tailandés e inglés; el rendimiento en castellano u otras lenguas no está documentado y probablemente sea deficiente.
+- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad para tareas de OCR o extracción documental.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Licencia Apache 2.0: permite uso comercial y modificación sin restricciones adicionales, con la obligación habitual de conservar el aviso de licencia.
+- El repositorio ocupa 152,7 GB, muy por encima del tamaño de los pesos INT8, lo que sugiere la presencia de múltiples artefactos (posiblemente pesos en otros formatos o checkpoints intermedios); conviene revisar la lista de ficheros antes de la descarga.
+- El despliegue requiere `--trust-remote-code`, lo que implica ejecutar código del repositorio; conviene auditar el código antes de usarlo en producción.
 
 ## Enlaces
 
-- Modelo cuantizado: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-INT8-W8A8
-- Modelo base bf16: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b
-- Pagina oficial de OpenThai 2.0: https://iapp.co.th/openmodels/openthai2p0
-- Blog de lanzamiento: https://iapp.co.th/blog/openthai2p0-launch
-- Anuncio de AIEAT: https://openthai.aieat.or.th/en/openthai2p0
+- Repositorio Hugging Face: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-INT8-W8A8
+- Modelo base: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b
+- Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados corresponden a la International Association of Privacy Professionals, sin relación con el proyecto OpenThai).

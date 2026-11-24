@@ -2,91 +2,109 @@
 
 ## Resumen
 
-Qwen3.8-4B-Distill-Decensored-MTP-Q4_K_M-GGUF es una cuantización GGUF del modelo `empero-ai/Qwen3.8-4B-Distill`, una destilación de parámetros completos de un modelo mayor (Qwen3.8 2.4T-A95B) sobre la arquitectura de `Qwen/Qwen3.5-4B` del equipo Qwen (Alibaba). Sobre esa base, el autor hUh63 aplica un proceso de "decensoring" con la herramienta Heretic v2.1.0.dev0 (snapshot de desarrollo, no versión estable) y publica el resultado en formato Q4_K_M para llama.cpp, con la particularidad de conservar la cabeza MTP (multi-token prediction) integrada en el propio archivo.
+Qwen3.8-4B-Distill-Decensored-MTP-Q4_K_M-GGUF es una cuantización GGUF en Q4_K_M, realizada por el usuario hUh63, de una destilación de parámetros completos del modelo Qwen3.8 2.4T-A95B (según la model card) hacia la arquitectura de Qwen3.5-4B del equipo Qwen de Alibaba. Sobre esa destilación, el autor aplica un proceso de "decensoring" con Heretic v2.1.0.dev0 (snapshot de desarrollo) que debilita deliberadamente la alineación de seguridad del modelo original mediante ablación de direcciones en el espacio de pesos (método ARA con extensión de magnitud del task vector).
 
-El interés técnico principal reside en dos decisiones: por un lado, la preservación byte a byte de las 15 matrices `mtp.*` del checkpoint original (que transformers 5.22.2 no mapea en su `state_dict`), reconstruidas mediante un shard de parcheo que ordena al final; por otro, la elevación de toda la capa MTP (`blk.32.*`) a Q8_0 mediante `--tensor-type-file`, con el objetivo de estabilizar la aceptación del borrador en decodificación especulativa. El resultado es un único archivo GGUF que permite decodificación especulativa sin modelo borrador separado ni flag `-md`.
+El modelo está orientado a investigación sobre alineación, edición de pesos y evaluación de robustez de salvaguardas, no a uso en producción. La revisión publicada documenta con detalle el protocolo de evaluación (100 prompts de harmful_behaviors y 100 de harmless_alpaca, decodificación greedy, 64 tokens nuevos) y los resultados medidos: 33/100 rechazos con KL 0.0152 frente al modelo base, que rechaza 98/100. El autor reconoce explícitamente que no alcanza el objetivo declarado de ≤6/100 rechazos con KL ≤0.02.
 
-Se trata, sin embargo, de un artefacto experimental: el propio autor advierte que debilita deliberadamente la alineación de seguridad del modelo fuente, que la cuantización Q4_K_M es con pérdida y que no se ha ejecutado ningún benchmark estándar (MMLU, GSM8K, etc.). La licencia es Apache-2.0, heredada de la línea base. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el pipeline declarado es `image-text-to-text` (multimodal con visión).
+El repositorio incluye además pesos en formato GGUF cuantizados con llama.cpp y un conjunto de artefactos de trazabilidad (curvas KL vs λ, frente de Pareto, registros de puntos evaluados). La información disponible no permite confirmar el número real de parámetros del modelo base, ya que el dato de safetensors del repo (333.514.240) no es coherente con la denominación "4B" ni con el tamaño del repo (3.5 GB), lo que se detalla en la sección de limitaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3.5-4B) con cabeza MTP/NextN integrada (1 capa, `mtp_num_hidden_layers = 1`); proyector de visión separado |
-| Parametros totales | 333.514.240 (dato real de safetensors) |
+| Arquitectura | Transformer denso (arquitectura Qwen3.5-4B), con soporte de decodificación especulativa MTP (multi-token prediction) |
+| Parametros totales | No disponible de forma fiable; el repo declara 333.514.240 en safetensors, incoherente con la denominación "4B" y con el tamaño del repo (3.5 GB) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (tronco de texto, `general.file_type` 15 = MOSTLY_Q4_K_M); MTP en Q8_0; proyector de visión en F16; normas en F32 |
-| Idiomas soportados | en, zh, ko, ja, ru, es, fr (y `ara` en los tags) |
+| Tipos de cuantizacion | Q4_K_M (con imatrix), según tags del repo; no se listan otras variantes en la información disponible |
+| Idiomas soportados | en, zh, ko, ja, ru, es, fr |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); dos archivos: tronco de texto + `mmproj` de visión |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una destilación de parámetros completos de Qwen3.8 2.4T-A95B (un modelo de mezcla de expertos de gran escala) hacia la arquitectura densa de Qwen3.5-4B, realizada por Empero. Sobre esa arquitectura se conserva la cabeza MTP (NextN) del checkpoint original: 15 tensores `mtp.*` con una única capa oculta. En el GGUF resultante, `convert_hf_to_gguf.py` (`_QwenMtpMixin`) eleva `block_count` de 32 a 33 y mapea `mtp.*` a `blk.32.nextn.*`, `blk.32.attn_*` y `blk.32.ffn_*`. Las dos normas pre-fc se asignan de forma cruzada (`enorm` ← `mtp.pre_fc_norm_embedding`, `hnorm` ← `mtp.pre_fc_norm_hidden`); un intercambio de nombres produce un archivo que carga pero genera borradores de baja calidad. El GGUF declara `qwen35.nextn_predict_layers = 1`.
+La model card describe el modelo base como una destilación de parámetros completos de Qwen3.8 2.4T-A95B (un modelo MoE de 2,4 billones de parámetros totales y 95.000 millones activos, según la nomenclatura indicada) hacia la arquitectura densa de Qwen3.5-4B. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO en la destilación original de empero-ai.
 
-El proceso de decensoring emplea Heretic v2.1.0.dev0 (commit `75a640b7eb`, ARA estándar + scorers estándar + Optuna TPE), con datasets de sonda de mlabonne y una configuración reducida a 8 trials, batch 4 y generaciones de 16 tokens para ajustarse a 8 núcleos de CPU y 16 GiB de RAM (22 minutos, pico de RSS de 9,1 GB). Solo 14 de las 64 matrices candidatas fueron modificadas; el resto del checkpoint (torre de visión, embeddings, normas y las 15 matrices MTP) permanece byte-idéntico al original, con SHA256 documentados en `heretic_ara_report.json`. La cuantización se realizó con imatrix sobre un corpus multilingüe, matemático, de código y razonamiento, con `--nextn` para que la capa MTP también recibiera estadísticas de importancia. No se documenta en la información disponible el número de tokens de entrenamiento del modelo base ni la composición del dataset de destilación.
+La innovación técnica principal documentada es el proceso de decensoring. En lugar de reoptimizar los seis parámetros de ARA (ablación por adaptadores LoRA) en cada intento, esta revisión fija una única dirección de ablación ΔW (el punto de menor KL del round anterior, medido sobre 100 prompts) y escala su magnitud con un escalar λ según W_eff(λ) = W_base + λ·ΔW, con ΔW = B @ A. El valor λ = 0 recupera el modelo original, λ = 1 corresponde al punto ancla de ARA y λ > 1 extrapola en la misma dirección. La implementación escala los pesos de lora_B por λ, ya que ARA usa lora_alpha = r = 1 y preserve_row_magnitudes solo afecta a la pérdida de optimización, no al peso desplegado. El proceso incluye una prueba de humo determinista que exige KL(λ=0) ≈ 0 y, en caso contrario, revierte automáticamente a la búsqueda en el espacio de parámetros. La bisección de frontera localiza λ* = 1.1797 con presupuesto de KL 0.02.
+
+La cuantización se realizó con llama.cpp en Q4_K_M con imatrix. El autor advierte que Q4_K_M es con pérdida (lossy) y que no se ejecutó ningún benchmark estándar (MMLU, GSM8K, etc.).
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Razonamiento con cadena de pensamiento (chain-of-thought), según los tags del repositorio.
-- Comprensión de imágenes y texto (pipeline `image-text-to-text`, proyector de visión F16 de 298 tensores y 672.422.944 bytes).
-- Tool calling y function calling.
-- Decodificación especulativa con cabeza MTP integrada en el mismo archivo GGUF (sin modelo borrador separado).
-- Soporte multilingüe declarado: inglés, chino, coreano, japonés, ruso, español y francés (más `ara` en los tags).
-- Generación sin las restricciones de alineación de seguridad del modelo fuente (decensored/abliterated).
+- Generación de texto y razonamiento general, heredados del modelo base Qwen3.5-4B (no se detallan capacidades específicas en la información disponible).
+- Procesamiento de imagen y texto: el pipeline declarado es image-text-to-text y los tags incluyen vision, por lo que el modelo base es multimodal.
+- Soporte de decodificación especulativa mediante MTP (multi-token prediction), integrado en el build.
+- Capacidades multilingües declaradas para en, zh, ko, ja, ru, es y fr.
+- Comportamiento "decensored": el modelo reduce deliberadamente la tasa de rechazos ante prompts dañinos (33/100 frente a 98/100 del base), lo que constituye una capacidad buscada por el autor para investigación sobre alineación.
+- No se documenta en la información disponible soporte de tool calling, function calling ni razonamiento agéntico multi-paso.
 
 ## Casos de uso
 
-- Investigación sobre alineación y decensoring: el repositorio incluye la configuración completa de Heretic (`config.toml`), los 8 trials de Optuna (`heretic_study.json`) y el informe ARA con diferencias por matriz, lo que permite reproducir y auditar exactamente qué pesos se modificaron y cuáles no.
-- Evaluación de decodificación especulativa con MTP en llama.cpp: al llevar la cabeza NextN dentro del GGUF y en Q8_0, sirve para medir tasas de aceptación del borrador sin gestionar un segundo modelo; útil para comparar configuraciones de precisión de la capa MTP.
-- Despliegue local en hardware modesto: con 3,5 GB de repositorio y cuantización Q4_K_M, el tronco de texto cabe en equipos de consumo; adecuado para prototipos de asistentes conversacionales en local.
-- Procesamiento de documentos con imagen: el `mmproj` F16 permite tareas de image-text-to-text (descripción de capturas, extracción de información de figuras) en pipelines con llama.cpp.
-- Automatización con herramientas: sus capacidades de tool calling y function calling permiten integrarlo en agentes que invocan APIs o scripts, con la salvedad de que no hay benchmarks que validen la calidad tras la cuantización.
-- Experimentación multilingüe: cubre siete idiomas declarados, lo que permite probar flujos de traducción o atención al cliente en español, francés, ruso, japonés, coreano y chino con un único modelo.
-- Estudio de robustez de cuantización: los archivos `calibration.txt`, `perplexity-corpus.txt` y `tensor_types.txt` permiten replicar el cálculo de perplejidad y comparar el efecto del Q4_K_M frente al BF16 de origen.
+- Investigación sobre alineación y salvaguardas: el modelo sirve para estudiar cómo responde un sistema con alineación debilitada frente a prompts dañinos, usando el protocolo de 100 prompts publicado y comparando con el modelo base (98/100 rechazos) para medir el efecto de la ablación.
+- Estudio de edición de pesos y task vectors: la dirección ΔW y el barrido de λ documentados permiten reproducir y extender el análisis de cómo la magnitud de una ablación afecta al equilibrio entre utilidad (KL) y reducción de rechazos.
+- Evaluación de robustez de clasificadores de seguridad: al generar respuestas con distintos niveles de cumplimiento (desde 2/100 hasta 98/100 rechazos según λ), puede emplearse como conjunto de pruebas para validar filtros y moderadores.
+- Análisis de la degradación por cuantización: comparar el comportamiento del Q4_K_M con el modelo BF16 de origen en tareas controladas permite cuantificar el impacto de la cuantización de 4 bits sobre el equilibrio utilidad-seguridad.
+- Experimentación local con llama.cpp: el formato GGUF y la cuantización Q4_K_M permiten ejecutar el modelo en hardware de consumo para pruebas de inferencia y decodificación especulativa con MTP.
+- Docencia y divulgación técnica: el repositorio incluye artefactos trazables (tv_curve.json, pareto.json, points24.jsonl, summary.json) útiles para explicar frentes de Pareto y compensaciones entre métricas en cursos de IA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no se ejecutó ningún benchmark estándar (MMLU, GSM8K, etc.) y advierte de que no debe asumirse que la capacidad equivale a la del original alineado. El repositorio incluye un corpus de perplejidad (`perplexity-corpus.txt`) y un script de reevaluación (`eval_official.py`) con marcadores de rechazo y KL del primer token, pero los resultados numéricos no se recogen en la información proporcionada.
+Los únicos datos publicados son del protocolo de decensoring del autor (100 prompts de harmful_behaviors y 100 de harmless_alpaca, greedy, 64 tokens nuevos). No se ejecutaron benchmarks estándar (MMLU, GSM8K, HumanEval, etc.).
+
+| Punto | λ | Rechazos (harmful_behaviors test[:100]) | KL vs base (harmless_alpaca test[:100]) | Estado |
+|---|---:|---:|---:|---|
+| 200 | 3.0 | 2/100 | 0.1088 | evaluado |
+| 201 | 1.5 | 20/100 | 0.0292 | evaluado |
+| 202 | 1.1797 | 35/100 | 0.0205 | evaluado |
+| 203 | 1.0 | 33/100 | 0.0152 | evaluado (build publicado) |
+| 204 | 0.5 | 84/100 | 0.0049 | evaluado |
+| 205 | 0.0 | 98/100 | -0.0000 | evaluado |
+
+| Modelo | Rechazos | KL vs base |
+|---|---:|---:|
+| empero-ai/Qwen3.8-4B-Distill (BF16 base) | 98/100 | 0 (por definición) |
+| Este build (λ = 1.0000) | 33/100 | 0.0152 |
+| Objetivo declarado | ≤ 6/100 | ≤ 0.02 |
+| Mejor ronda previa de 24 núcleos | 28/100 | 0.0244 |
+| Upload anterior de 8 núcleos | 10/100 | 0.0407 |
+
+El autor reconoce que el objetivo no se cumplió: el KL está dentro de presupuesto, pero la tasa de rechazos (33/100) supera el umbral de ≤6/100. El conteo de rechazos usa los marcadores de palabra clave de Heretic, por lo que una respuesta cauta pero conforme que empiece con un aviso cuenta como rechazo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa 3,5 GB; el tronco de texto Q4_K_M más el `mmproj` F16 (aproximadamente 0,67 GB) requieren en torno a 4-5 GB de memoria para inferencia, aunque la cifra exacta no está publicada.
-- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, el modelo es apto para GPUs de consumo con 6-8 GB o más, y para A100/H100 en despliegues con concurrencia.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y equivalentes, dado el tamaño del archivo.
-- Opciones de despliegue: llama.cpp (formato nativo, con soporte de la cabeza NextN); no se confirma compatibilidad con vLLM, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles. La build se realizó en CPU (8 núcleos AMD EPYC 9754, AVX-512/VNNI, 16 GiB RAM, sin GPU), pero no se publican cifras de rendimiento de inferencia.
+- VRAM estimada para inferencia: no disponible de forma explícita en la información proporcionada. El repo ocupa 3,5 GB, lo que da una referencia aproximada del tamaño de los pesos Q4_K_M, pero no se detalla el consumo en ejecución.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; el tamaño del repo (3,5 GB) sugiere que podría caber en GPUs de consumo con suficiente VRAM, pero no se aportan mediciones.
+- Opciones de despliegue: llama.cpp (herramienta usada para la cuantización); no se documentan otras opciones como vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles. El build incorpora MTP para decodificación especulativa, pero no se publican cifras de aceleración.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Qwen3.8-4B-Distill-Decensored-MTP-Q4_K_M (este) | 333.514.240 | No disponible | Apache-2.0 | GGUF Q4_K_M + mmproj F16 | Decensored con Heretic v2.1.0.dev0; MTP integrado en Q8_0 |
-| empero-ai/Qwen3.8-4B-Distill | No disponible | No disponible | Apache-2.0 | Safetensors (BF16) | Modelo fuente alineado; sin decensoring ni cuantización |
-| Qwen/Qwen3.5-4B | No disponible | No disponible | No disponible | No disponible | Arquitectura base del equipo Qwen; referencia de capacidades originales |
+| Modelo | Parámetros | Contexto | Rechazos (protocolo del autor) | KL vs base | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| Este build (Qwen3.8-4B-Distill-Decensored, Q4_K_M) | No disponible de forma fiable (denominado 4B) | No disponible | 33/100 | 0.0152 | Apache-2.0 | GGUF |
+| empero-ai/Qwen3.8-4B-Distill (BF16) | No disponible de forma fiable (denominado 4B) | No disponible | 98/100 | 0 (por definición) | Apache-2.0 | safetensors (según modelo base) |
+| Qwen/Qwen3.5-4B | 4B (según denominación) | No disponible | No evaluado en este protocolo | No aplica | Apache-2.0 (según el repo) | No disponible |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes; la comparación se limita a linaje, licencia y formato.
+La comparación con alternativas de la misma categoría (otros modelos decensored o ablacionados) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El build debilita deliberadamente la alineación de seguridad del modelo fuente; el riesgo de cumplimiento es responsabilidad del usuario.
-- La cuantización Q4_K_M es con pérdida; no se ha verificado que la capacidad se mantenga respecto al BF16 original.
-- No se ejecutaron benchmarks estándar, por lo que no hay evidencia publicada de calidad en MMLU, GSM8K, HumanEval ni tareas similares.
-- Heretic v2.1.0.dev0 es un snapshot de desarrollo, no una versión estable; los resultados pueden no ser reproducibles con versiones posteriores.
-- Riesgo de alucinación inherente a los modelos de 4B y potencialmente agravado por la cuantización y el decensoring.
-- Longitud de contexto no documentada en la información disponible; no debe asumirse una ventana larga.
-- El pipeline declarado es `image-text-to-text`, pero no se publican evaluaciones de calidad de la torre de visión tras la conversión.
-- La licencia Apache-2.0 se hereda de la línea base, pero el uso comercial de un modelo decensored puede conllevar obligaciones adicionales según la jurisdicción y el caso de uso.
-- El repositorio registra 0 descargas y 0 likes: no hay validación comunitaria ni informes independientes de funcionamiento.
+- El build debilita deliberadamente la alineación de seguridad del modelo de origen; el autor lo restringe a investigación y uso local, y la responsabilidad de cumplimiento recae en el usuario.
+- El objetivo declarado de decensoring no se alcanzó: 33/100 rechazos frente al umbral de ≤6/100, aunque el KL (0.0152) sí está dentro del presupuesto de 0.02.
+- La cuantización Q4_K_M es con pérdida y puede degradar tanto la calidad como el comportamiento de seguridad respecto al modelo BF16.
+- No se ejecutaron benchmarks estándar (MMLU, GSM8K, HumanEval, etc.), por lo que no hay evidencia publicada sobre capacidades generales.
+- Heretic 2.1.0.dev0 es un snapshot de desarrollo, no una versión estable, lo que añade riesgo de reproducibilidad.
+- El conteo de rechazos depende de marcadores de palabra clave de Heretic; respuestas conformes con avisos iniciales cuentan como rechazo, lo que limita la interpretación exacta de la métrica.
+- Existe una incoherencia entre el número de parámetros declarado en safetensors (333.514.240) y la denominación "4B" del modelo, así como con el tamaño del repo (3,5 GB); conviene verificar el modelo base antes de cualquier uso.
+- No se documentan sesgos conocidos, riesgo de alucinación, limitaciones de contexto ni restricciones adicionales de licencia más allá de Apache-2.0 en la información disponible.
+- El modelo tiene 0 likes y 361 descargas en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/hUh63/Qwen3.8-4B-Distill-Decensored-MTP-Q4_K_M-GGUF
-- Modelo base destilado: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
+- Repositorio Hugging Face: https://huggingface.co/hUh63/Qwen3.8-4B-Distill-Decensored-MTP-Q4_K_M-GGUF
+- Modelo base de la destilación: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Arquitectura base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Heretic (p-e-w): https://github.com/p-e-w/heretic
+- Heretic (herramienta de decensoring): https://github.com/p-e-w/heretic
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Licencia del modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill/raw/main/README.md
-- Perfil de mlabonne (datasets de sonda): https://huggingface.co/mlabonne
+- Perfiles de evaluación (mlabonne): https://huggingface.co/mlabonne

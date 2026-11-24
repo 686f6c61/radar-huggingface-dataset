@@ -2,91 +2,86 @@
 
 ## Resumen
 
-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (MXFP4) es una publicación de Solstice-AI que empaqueta en formato MXFP4 el merge comunitario del mismo nombre creado por DavidAU. Se trata de un modelo multimodal de tipo image-text-to-text (incluye torre de visión y proyector `mmproj`) orientado a conversación, derivado de la familia Qwen según las etiquetas del repositorio (`qwen`, `qwen3.8`, `qwen3_5`). La aportación de Solstice-AI no es el entrenamiento, sino la cuantización a 4 bits con el formato OCP Microscaling FP4 (MXFP4) mediante `compressed-tensors` y su empaquetado para servir con vLLM y SGLang.
+Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4 es una cuantización en formato OCP Microscaling FP4 (MXFP4) de un modelo derivado de la familia Qwen3.8, publicada por Solstice-AI. El modelo original y la fusión GAIN fueron realizados por DavidAU, mientras que Solstice-AI se encarga de la cuantización y el empaquetado. Se distribuye mediante `compressed-tensors` con escalado dinámico por grupos y está orientado a inferencia de alto rendimiento en aceleradores modernos, con soporte declarado para vLLM y SGLang.
 
-El interés del modelo está en dos factores: por un lado, la ventana de contexto declarada en el ejemplo de despliegue del propio autor, que llega a 262.144 tokens con una sola GPU (`--tensor-parallel-size 1`); por otro, el uso de MXFP4 con escalado dinámico por grupo, que reduce la huella de memoria frente a los pesos originales manteniendo compatibilidad con aceleradores modernos. El modelo se presenta además como "uncensored" (etiquetas `heretic`, `project-heretic`), es decir, sin las capas de alineación de seguridad habituales.
+El modelo se presenta como multimodal (pipeline `image-text-to-text`), con soporte de visión mediante proyector `mmproj`, y está etiquetado como "uncensored" dentro del ecosistema Project Heretic. La model card indica una ventana de contexto máxima de 262.144 tokens en la configuración de servicio con vLLM. Los idiomas declarados son inglés y chino.
 
-Conviene señalar de entrada una discrepancia relevante: el nombre comercial indica 27B de parámetros, pero los pesos safetensors publicados en el repositorio suman 460.730.096 parámetros y el tamaño total del repositorio es de 1,0 GB. Esa cifra es compatible con un proyector multimodal o con un subconjunto de pesos, no con un modelo de 27B en 4 bits (que ocuparía del orden de 14 GB). No hay información que resuelva esta contradicción, por lo que debe verificarse antes de cualquier uso en producción.
+Un dato relevante y contradictorio: el nombre del modelo indica "27B", pero el recuento real de parámetros en safetensors es de 460.730.096 (aproximadamente 0,46 mil millones), y el tamaño del repositorio es de 1,0 GB. Esta discrepancia debe tenerse en cuenta antes de cualquier despliegue en producción, ya que las estimaciones de VRAM y rendimiento basadas en el nombre no se corresponden con el artefacto publicado.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) con torre de visión y proyector `mmproj`; familia Qwen según etiquetas (`qwen`, `qwen3.8`, `qwen3_5`). Detalles internos (número de capas, atención, MoE) no disponibles |
-| Parámetros totales | 460.730.096 según los pesos safetensors publicados; el nombre del modelo indica "27B". Discrepancia no resuelta en la información disponible |
-| Parámetros activos | no disponible (no se confirma que la arquitectura sea MoE) |
-| Longitud de contexto | 262.144 tokens, según el ejemplo de servicio con vLLM publicado por el autor (`--max-model-len 262144`) |
-| Tipos de cuantización | MXFP4 (OCP Microscaling FP4, 4 bits con escalado dinámico por grupo) vía `compressed-tensors`. La etiqueta `gguf` figura en el repositorio, pero no se documentan archivos GGUF |
-| Idiomas soportados | inglés (en) y chino (zh) |
+| Arquitectura | Transformer (derivada de Qwen3.8; detalles específicos no disponibles) |
+| Parámetros totales | 460.730.096 (según safetensors); el nombre indica "27B" |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (según configuración de ejemplo en vLLM) |
+| Tipos de cuantización | MXFP4 (OCP Microscaling FP4, 4 bits, escalado dinámico por grupos vía `compressed-tensors`) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors con `compressed-tensors` (MXFP4); GGUF mencionado en etiquetas sin confirmar |
+| Formato de pesos | `compressed-tensors` (MXFP4); tags indican también GGUF y `mmproj` para visión |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna más allá de lo que indican las etiquetas y la pipeline declarada. El modelo es multimodal: procesa imagen y texto y genera texto (`image-text-to-text`), con una torre de visión y un proyector `mmproj` que se empaquetan junto al modelo de lenguaje. La nomenclatura Qwen (`qwen`, `qwen3.8`, `qwen3_5`) apunta a una base de esa familia, sobre la que DavidAU aplicó un merge comunitario identificado con los nombres "TWIN TURBO", "Fable", "Cold Fusion", "709-L" y "GAIN". No se detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF, DPO u optimización por preferencias.
+La información disponible no detalla la arquitectura interna más allá de su ascendencia Qwen3.8 y la etiqueta `qwen3_5` en los tags. Se trata de un transformer multimodal con capacidad de visión (pipeline `image-text-to-text` y presencia de `mmproj`), lo que implica un codificador visual acoplado a un modelo de lenguaje. El modelo base es una fusión GAIN ("Cold-Fusion", "TWIN-TURBO", "Fable") realizada por DavidAU sobre un modelo Qwen3.8 de 27B, posteriormente ajustada dentro del proyecto Heretic para eliminar restricciones de contenido ("uncensored").
 
-El trabajo de Solstice-AI es de cuantización y empaquetado, no de entrenamiento. La conversión a MXFP4 se realiza con `compressed-tensors` y escalado dinámico por grupo, el formato de microscaling FP4 definido por OCP, pensado para aprovechar las rutas de cómputo de 4 bits de aceleradores recientes. No se documenta ninguna innovación en decodificación (especulativa o similar), ni técnicas de atención lineal o híbrida. El autor tampoco publica la receta de calibración de la cuantización, el conjunto de calibración empleado ni métricas de degradación respecto a los pesos originales.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO. La innovación técnica documentada se limita al formato de cuantización: MXFP4 con escalado dinámico por grupos, que reduce el peso a 4 bits por parámetro manteniendo bloques de escala compartidos, lo que permite mayor throughput en aceleradores con soporte nativo de FP4. No se documentan técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con pipeline declarada de conversación.
-- Procesamiento de imágenes junto a texto (image-text-to-text): descripción, extracción de información y razonamiento sobre contenido visual, siempre que la torre de visión esté efectivamente incluida en los pesos publicados.
-- Contexto declarado de 262.144 tokens, adecuado para documentos largos, repositorios de código extensos o historiales de conversación muy prolongados.
-- Capacidad multilingüe limitada a inglés y chino según los metadatos de idioma.
-- Variante "uncensored" (`heretic`, `project-heretic`): el modelo se distribuye sin las capas de rechazo y alineación de seguridad, de modo que responde a peticiones que un modelo alineado rechazaría.
-- Inferencia de alto rendimiento en 4 bits: compatible con vLLM y SGLang a través de `compressed-tensors`.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Modo de razonamiento explícito ("thinking"), audio o generación de imagen: no documentados.
+- Generación de texto conversacional multi-turno.
+- Procesamiento de imagen y texto combinados (image-text-to-text) mediante proyector `mmproj`.
+- Razonamiento y generación de contenido sin las restricciones habituales de alineación (etiqueta "uncensored").
+- Soporte multilingüe limitado a inglés y chino según la model card.
+- Compatibilidad con motores de inferencia de alto rendimiento: vLLM y SGLang, con soporte de tensor parallelism.
+- No se documenta soporte explícito de tool calling, function calling ni razonamiento agéntico multi-paso.
+- No se documentan modos de "thinking" ni capacidades de audio.
 
 ## Casos de uso
 
-- Procesamiento de documentos largos con contexto de 262.144 tokens: análisis de contratos, informes técnicos o expedientes completos en una sola pasada, sin fragmentación ni pérdida de referencias cruzadas entre secciones.
-- Automatización documental con entrada visual: digitalización y extracción estructurada de datos a partir de capturas, formularios escaneados o diagramas, combinando la torre de visión con la generación de texto.
-- Asistentes conversacionales de dominio cerrado en inglés o chino: atención multi-turno con historial extenso, aprovechando la ventana de contexto y el formato de conversación declarado.
-- Investigación sobre alineación y seguridad: al ser una variante sin censura, sirve como referencia para estudiar qué comportamientos afloran al retirar las capas de rechazo y para construir clasificadores o evaluaciones comparativas.
-- Revisión de código y documentación técnica a gran escala en pipelines internos: lectura de repositorios completos dentro de la ventana de contexto para resumir cambios, detectar dependencias o generar documentación. Requiere validar previamente que los pesos publicados corresponden al modelo completo.
-- Despliegue de alto rendimiento en infraestructura propia: servir con vLLM o SGLang en MXFP4 para maximizar el número de peticiones concurrentes por GPU cuando el presupuesto de memoria es la restricción principal.
-- Prototipado de producto multimodal en mercados de habla inglesa o china: clasificación de imágenes con justificación textual, moderación asistida o generación de descripciones para catálogos.
-- Generación de datos sintéticos: al no aplicar filtros de rechazo, puede emplearse para producir corpus de entrenamiento o de evaluación con contenido que otros modelos se negarían a generar, siempre dentro del marco legal aplicable.
+- Despliegue de chat multimodal en producción: el modelo acepta entradas de imagen y texto, por lo que puede integrarse en asistentes que respondan preguntas sobre capturas, diagramas o documentos escaneados, siempre que se valide primero la coherencia entre el nombre "27B" y los 0,46B reales de parámetros.
+- Procesamiento de documentos largos en inglés o chino: la ventana de 262.144 tokens permite ingerir contratos, informes o hilos de conversación extensos en una sola pasada, útil para resumen y extracción de entidades.
+- Inferencia de alto throughput en aceleradores con FP4: el formato MXFP4 y el soporte de vLLM/SGLang lo hacen adecuado para servir muchas peticiones concurrentes en hardware con soporte nativo de microscaling, reduciendo el coste por token frente a FP16.
+- Investigación sobre alineación y censura: al ser una variante "uncensored" de Project Heretic, sirve como objeto de estudio para comparar comportamientos de rechazo frente al modelo base alineado.
+- Prototipado rápido en entornos con poca VRAM: con un repositorio de 1,0 GB, el artefacto cabe en GPUs de consumo, lo que facilita pruebas locales antes de escalar.
+- Evaluación comparativa de técnicas de cuantización: permite medir la degradación de calidad de MXFP4 frente a otros formatos (GGUF, FP8) sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor no incluye tablas de MMLU, HumanEval, GSM8K, MMMU ni evaluaciones de contexto largo (RULER o similares), ni métricas de degradación de la cuantización MXFP4 frente a los pesos originales.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada (estimación aritmética a partir del nombre "27B", no dato confirmado): unos 14-15 GB solo para los pesos en MXFP4, más caché KV. La caché KV a 262.144 tokens es el factor dominante y puede superar con holgura el tamaño de los pesos según el número de capas y cabezas; en la práctica exige decenas de GB adicionales o reducir `--max-model-len`.
-- Alternativa si se confirma la cifra real de 460.730.096 parámetros y el repositorio de 1,0 GB: el conjunto completo cabría en cualquier GPU de consumo e incluso en CPU, lo que reforzaría la hipótesis de que el repositorio contiene solo el proyector multimodal o un subconjunto de pesos.
-- GPU recomendadas para el escenario de 27B: A100 80 GB, H100 80 GB o L40S 48 GB para contexto largo; A6000 48 GB como alternativa.
-- GPU de consumo: una RTX 4090 o RTX 3090 (24 GB) podría ejecutar los pesos en MXFP4 con contextos moderados; una RTX 5090 (32 GB) da más margen. El contexto completo de 262.144 tokens no es realista en 24 GB sin cuantizar la caché KV.
-- Opciones de despliegue: vLLM y SGLang son las soportadas explícitamente por el autor mediante `compressed-tensors`; el comando publicado usa `--tensor-parallel-size 1`, es decir, una sola GPU. llama.cpp u Ollama solo serían viables si existieran archivos GGUF, extremo no confirmado pese a la etiqueta `gguf`.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo, TTFT ni resultados de concurrencia.
+- VRAM estimada: con 460,7 M de parámetros en MXFP4 (4 bits), los pesos ocupan aproximadamente 0,23 GB; el repositorio completo es de 1,0 GB, por lo que la inferencia cabe holgadamente en GPUs de consumo con 4-8 GB de VRAM, incluyendo la caché KV para contextos moderados.
+- La ventana de 262.144 tokens exige una caché KV considerable; para contextos muy largos se recomienda GPU con 24 GB o más (RTX 4090, A100, H100) o bien tensor parallelism.
+- GPUs recomendadas para producción: A100, H100 o aceleradores con soporte nativo de FP4 (generaciones recientes de NVIDIA). En consumer, RTX 4090 y superiores.
+- Opciones de despliegue: vLLM (`vllm serve` con `--max-model-len 262144`) y SGLang, según la model card. El tag GGUF sugiere compatibilidad adicional con llama.cpp/Ollama, aunque no se documenta explícitamente.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Observaciones |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Solstice-AI/...-MXFP4 (este modelo) | 460,7 M en los safetensors publicados (nombre: 27B) | 262.144 tokens según el ejemplo de vLLM del autor | Apache 2.0 | safetensors MXFP4 (`compressed-tensors`) | Cuantización y empaquetado de Solstice-AI; variante sin censura |
-| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (modelo base) | no disponible (nombre: 27B) | no disponible | no disponible | no disponible | Pesos originales sin cuantizar; mismo comportamiento esperado con mayor huella de memoria |
-| Otros cuantizados MXFP4 de 4 bits de la familia Qwen | no disponible | no disponible | no disponible | MXFP4 | No se dispone de datos verificables en la información proporcionada |
+| Este modelo (MXFP4) | 460,7 M (real) / "27B" (nombre) | 262.144 | Apache 2.0 | compressed-tensors MXFP4 | Cuantización de un merge GAIN uncensored |
+| Modelo base DavidAU (sin cuantizar) | no disponible | no disponible | Apache 2.0 | safetensors | Referencia de calidad previa a cuantización |
+| Qwen3.8-27B original | 27B (según nombre) | no disponible | no disponible | no disponible | Modelo de partida de la familia Qwen3.8 |
+
+No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de tamaño no resuelta: el nombre indica 27B, los pesos safetensors publicados suman 460.730.096 parámetros y el repositorio ocupa 1,0 GB. Verificar la integridad y la completitud de los pesos antes de cualquier uso en producción; es posible que falten archivos o que solo se haya publicado el proyector multimodal.
-- Ausencia total de evaluación: no hay benchmarks, ni comparación con los pesos originales, ni medición del impacto de la cuantización MXFP4 en la calidad.
-- Modelo "uncensored": no incorpora capas de rechazo ni filtros de alineación. Puede generar contenido ofensivo, ilegal o peligroso sin advertencia. Requiere moderación externa y un análisis de responsabilidad legal antes de exponerlo a usuarios finales.
-- Riesgo de alucinación no cuantificado: al no existir evaluaciones publicadas, no puede estimarse la tasa de fabricación de hechos, especialmente en tareas multimodales o de contexto largo.
-- Idiomas: solo inglés y chino están declarados. El castellano no está soportado oficialmente y su rendimiento es impredecible.
-- Contexto largo: los 262.144 tokens son el valor configurado en el ejemplo de servicio, no una métrica verificada de rendimiento efectivo. Es esperable degradación en el extremo de la ventana.
-- Etiquetas contradictorias: el repositorio incluye la etiqueta `gguf` pero solo se describen pesos safetensors con `compressed-tensors`. No asumir compatibilidad con llama.cpp u Ollama sin comprobarlo.
-- Licencia: los pesos derivados se publican bajo Apache 2.0, lo que en principio permite uso comercial, pero la licencia y las condiciones del modelo base y del merge original no se detallan en la información disponible. Verificar la cadena completa de licencias antes de explotarlo comercialmente.
-- Procedencia opaca: el modelo base es un merge comunitario con nombres no estándar ("Cold Fusion", "TWIN TURBO", "Fable", "GAIN", "Project Heretic") sin paper, sin dataset documentado y sin detalle del proceso de entrenamiento o desalineación.
-- Sin validación de la comunidad: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe retroalimentación independiente sobre su comportamiento real.
+- Discrepancia crítica entre el nombre ("27B") y el recuento real de parámetros (460,7 M): verificar el artefacto antes de dimensionar infraestructura.
+- Modelo etiquetado como "uncensored": puede generar contenido sin filtros de seguridad, lo que supone un riesgo para despliegues públicos y requiere moderación externa.
+- Riesgo de alucinación no cuantificado; al ser un modelo pequeño en parámetros reales, la fiabilidad factual puede ser limitada.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado.
+- La fusión GAIN y los ajustes Heretic pueden introducir degradaciones no documentadas respecto al Qwen3.8 original.
+- Aunque la licencia es Apache 2.0, el uso comercial debe revisarse contra las licencias del modelo base y de los componentes del merge.
+- Solo 342 descargas y 0 likes en el momento de la consulta: ecosistema de validación muy reducido.
+- No se documentan evaluaciones de seguridad, sesgos ni robustez.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4
-- Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
-- Perfil del cuantizador (Solstice-AI): https://huggingface.co/Solstice-AI
-- Perfil del autor del merge (DavidAU): https://huggingface.co/DavidAU
-- La búsqueda web realizada no ha devuelto ningún enlace relevante sobre el modelo: los resultados obtenidos corresponden a páginas sobre el solsticio astronómico y a una empresa de materiales avanzados, sin relación con esta publicación. No se dispone por tanto de paper, blog técnico, repositorio de código ni demo asociados.
+- Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
+- Perfil del autor del modelo original: https://huggingface.co/DavidAU
+- Perfil del cuantizador: https://huggingface.co/Solstice-AI

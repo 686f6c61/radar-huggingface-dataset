@@ -2,91 +2,86 @@
 
 ## Resumen
 
-Spellspeak Glyph 2B es un modelo de lenguaje conversacional especializado en diálogos de personajes no jugadores (NPC), roleplay y agentes de voz, desarrollado originalmente por jptaylor y publicado con licencia Apache 2.0. La versión aquí descrita es una recuantización en formato GGUF realizada por mradermacher, orientada a su ejecución local mediante llama.cpp y otras herramientas compatibles. El modelo base está construido sobre la arquitectura Gemma 4 (según las etiquetas del repositorio), lo que sitúa su diseño en la familia de transformers densos de Google adaptados a tareas de conversación.
+spellspeak-glyph-2b-i1-GGUF es la version cuantizada en formato GGUF del modelo jptaylor/spellspeak-glyph-2b, un modelo de lenguaje orientado a dialogos de personajes no jugadores (NPC), roleplay y agentes conversacionales para videojuegos. La cuantizacion la realiza mradermacher, un colaborador habitual de la comunidad que publica versiones optimizadas de modelos abiertos para su uso con llama.cpp. El modelo base emplea una arquitectura derivada de la familia Gemma (etiquetada como gemma4 en los metadatos) y esta disenado especificamente para mantener conversaciones coherentes y con personalidad en entornos interactivos.
 
-El interés de esta ficha radica en que ofrece un modelo pequeño (en torno a 2 000 millones de parámetros nominales, con 4 628 569 635 parámetros reales contabilizados en los safetensors del repositorio, cifra que probablemente incluye embeddings y cabezas de salida) empaquetado en múltiples cuantizaciones que van desde 2,4 GB hasta 3,9 GB, lo que permite desplegarlo en hardware de consumo. Está pensado para integrarse en videojuegos, asistentes conversacionales y pipelines de agentes de voz donde la latencia y el coste por token importan más que el razonamiento complejo.
+El dato de parametros totales reportado en safetensors es de 4.628.569.635, es decir, aproximadamente 4,6 mil millones de parametros, aunque el nombre comercial del modelo lo etiqueta como "2b". Esta discrepancia sugiere que el identificador "2b" puede referirse al modelo base original sobre el que se hizo fine-tuning o a una convencion de nombres, mientras que el checkpoint publicado contiene mas pesos de los que sugiere la etiqueta. El repositorio ocupa 73,3 GB e incluye un amplio abanico de cuantizaciones, desde IQ1_S (2,4 GB) hasta Q6_K (3,9 GB), lo que permite desplegarlo en hardware muy diverso.
 
-La relevancia actual del modelo reside en su nicho: diálogo con personalidad consistente y bajo coste computacional. No obstante, la información pública disponible es escasa (la model card del repositorio GGUF se limita a listar cuantizaciones y no documenta entrenamiento, benchmarks ni idiomas), por lo que muchas especificaciones deben marcarse como no disponibles.
+La relevancia de esta ficha radica en que combina un modelo especializado en dialogo de personajes con el ecosistema GGUF, lo que facilita su integracion en motores de juego, prototipos de agentes conversacionales y pipelines locales sin depender de APIs en la nube. La licencia Apache 2.0 permite uso comercial, un factor decisivo para estudios y equipos de desarrollo que quieran incorporar IA conversacional en productos de entretenimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso basado en Gemma 4 (según etiquetas del repositorio; detalles no disponibles) |
-| Parametros totales | 4 628 569 635 (según safetensors del repositorio); denominación comercial "2B" |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, Q2_K_S, Q2_K, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones i1/imatrix) |
-| Idiomas soportados | Inglés (etiqueta `en` en la model card); resto no disponible |
+| Arquitectura | Transformer derivada de Gemma (etiqueta "gemma4" en metadatos); detalles exactos no disponibles |
+| Parametros totales | 4.628.569.635 (segun safetensors); el nombre comercial indica "2b" |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL, Q2_K_S, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (cuantizaciones i1/imatrix) |
+| Idiomas soportados | Ingles (segun model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base original en safetensors/transformers |
+| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de la etiqueta `gemma4`, que indica que el modelo base jptaylor/spellspeak-glyph-2b se construye sobre la familia Gemma 4 de Google. Se trata, por tanto, de un transformer denso con atención estándar (no se documenta atención lineal, SSM ni arquitecturas híbridas). El repositorio GGUF no incluye información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna mas alla de la etiqueta "gemma4" en los metadatos y la referencia a la familia Gemma. Se trata, por tanto, de un transformer decoder-only con atencion por capas, pero no se especifican numero de capas, dimensiones ocultas, cabezas de atencion ni mecanismos adicionales (atencion lineal, decodificacion especulativa, etc.). El modelo base jptaylor/spellspeak-glyph-2b esta orientado a dialogue y roleplay, lo que sugiere un fine-tuning sobre un modelo preentrenado de la familia Gemma con datos de conversaciones de personajes, aunque no se publican detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-La innovación técnica destacable de esta publicación concreta no está en el modelo sino en el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (matriz de importancia) para el modelo, lo que mejora la calidad de las cuantizaciones de baja precisión respecto a las estáticas. El repositorio incluye también el archivo imatrix (`spellspeak-glyph-2b.imatrix.gguf`, 0,1 GB) para que otros puedan generar sus propias cuantizaciones. Las etiquetas sugieren un enfoque de ajuste fino orientado a diálogo de NPC, roleplay y agentes de voz, aunque no se especifica la metodología.
+La cuantizacion i1 de mradermacher emplea ficheros imatrix (importance matrix) para calcular pesos de importancia por tensor y mejorar la calidad de las cuantizaciones de baja precision. El repositorio incluye el propio fichero imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Las cuantizaciones estaticas equivalentes estan disponibles en un repositorio separado (spellspeak-glyph-2b-GGUF). No se han publicado innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional con énfasis en diálogo de personajes (NPC) y roleplay.
-- Mantenimiento de personalidad y estilo consistentes en conversaciones multi-turno (según el propósito declarado en las etiquetas).
-- Orientado a agentes de voz y asistentes conversacionales de baja latencia.
-- Capacidades multilingües: solo se declara inglés; el resto no disponible.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el enfoque del modelo es conversacional, no de razonamiento.
-- Capacidades de visión, audio o modo "thinking": no disponibles.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`) para despliegue como servicio.
+- Generacion de texto conversacional orientada a dialogos de personajes (NPC) y roleplay.
+- Mantenimiento de personalidad y coherencia en conversaciones multi-turno, segun los tags del modelo (npc, dialogue, games, roleplay).
+- Soporte para agentes de voz (voice-agents) y IA conversacional, segun los metadatos.
+- Capacidad multilingue limitada: la model card solo declara ingles.
+- No se documenta soporte de tool calling, function calling, vision, audio ni modo de razonamiento explicito (thinking mode) en la informacion disponible.
+- El modelo base se etiqueta como vision model en la model card del cuantizador, pero los ficheros mmproj (si existen) estarian en el repositorio estatico, no en este.
 
 ## Casos de uso
 
-- Diálogo de NPC en videojuegos: el modelo puede generar respuestas de personajes con personalidad consistente en tiempo real, y su tamaño reducido (2,4-3,9 GB en GGUF) permite ejecutarlo en la misma máquina que el juego o en un servidor local de bajas prestaciones.
-- Agentes de voz para atención al cliente: al estar orientado a conversación y ser compatible con llama.cpp, puede integrarse en pipelines de voz a texto + LLM + texto a voz con latencia baja en GPUs de consumo.
-- Prototipado de asistentes conversacionales: sirve para validar flujos de diálogo y prompts de sistema antes de migrar a modelos mayores, gracias a su licencia Apache 2.0 y a la variedad de cuantizaciones disponibles.
-- Roleplay y entretenimiento interactivo: la etiqueta `roleplay` indica un ajuste específico para mantener personajes, útil en aplicaciones de ficción interactiva o chatbots temáticos.
-- Despliegue en hardware embebido o de borde: las cuantizaciones IQ2/IQ3 (2,5-3,2 GB) permiten ejecución en dispositivos con poca memoria, como mini-PCs o GPUs integradas, para demos offline.
-- Investigación en cuantización: el repositorio incluye imatrix y cuantizaciones i1, lo que lo convierte en un caso de estudio para evaluar la degradación de calidad en modelos conversacionales pequeños.
-- Generación de diálogo en herramientas de modding: puede integrarse mediante llama.cpp en motores de juego o mods que expongan una API local de generación de texto.
+- NPCs en videojuegos: el modelo puede gestionar dialogos ramificados y mantener la personalidad del personaje a lo largo de una conversacion, integrandose en el motor del juego mediante llama.cpp para inferencia local sin latencia de red.
+- Prototipado de agentes conversacionales: permite construir rapidamente demos de asistentes con personalidad usando las cuantizaciones Q4_K_M o Q5_K_M, que ofrecen un equilibrio razonable entre calidad y tamano (3,5-3,7 GB).
+- Roleplay y entretenimiento interactivo: adecuado para aplicaciones de ficcion interactiva o chatbots de personajes donde se requiere coherencia narrativa y estilo consistente.
+- Agentes de voz: al estar etiquetado para voice-agents, puede combinarse con pipelines de texto a voz para asistentes hablados con personalidad definida.
+- Despliegue en hardware de consumo: las cuantizaciones IQ2 e IQ3 (2,5-3,4 GB) permiten ejecutar el modelo en GPUs con 4-6 GB de VRAM o en CPU, facilitando pruebas en portatiles y estaciones de trabajo modestas.
+- Investigacion sobre dialogo de personajes: util como base para experimentos de fine-tuning adicional o evaluacion de tecnicas de cuantizacion en tareas conversacionales especializadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio GGUF no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones conversacionales, y tampoco se aportan comparaciones con el modelo base sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5-3,0 GB para cuantizaciones IQ2/Q2, 3,2-3,5 GB para IQ3/Q3, 3,5-3,7 GB para Q4/Q5 y 3,9 GB para Q6_K, más el overhead del contexto y de llama.cpp (típicamente 0,5-1 GB adicionales).
-- GPU recomendadas: cualquier GPU con 6 GB o más de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobradas. También funciona en GPUs integradas con memoria compartida suficiente.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs discretas modernas (GTX 1060 6 GB en adelante) e incluso en algunas integradas con 8 GB de RAM asignada.
-- Opciones de despliegue: llama.cpp (formato nativo), Ollama (importando el GGUF), servidores compatibles con endpoints (etiqueta `endpoints_compatible`), y cualquier runtime que soporte GGUF. No se documenta soporte para vLLM o TGI en la información disponible.
-- Latencia y throughput estimados: no disponibles; al ser un modelo de ~2B en cuantización Q4, se espera decodificación interactiva en GPUs de consumo, pero no se aportan cifras medidas.
+- VRAM estimada para inferencia: entre 2,5 GB (IQ2_XXS) y 4,5 GB (Q6_K) aproximadamente, segun el tamano del fichero GGUF y el overhead de contexto y KV cache.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 8 GB, RTX 4090, A100 o H100 para despliegues de mayor throughput; cualquier GPU con al menos 6 GB de VRAM puede ejecutar las cuantizaciones IQ3 o Q4.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 6 GB o mas; las cuantizaciones IQ2 permiten incluso GPUs de 4 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python); el formato es compatible con endpoints compatibles segun los tags.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Spellspeak Glyph 2B (esta ficha) | ~2B nominales (4,63B en safetensors) | No disponible | Apache 2.0 | GGUF, safetensors | Especializado en diálogo de NPC y roleplay |
-| Gemma 2 2B | 2,6B | 8K | Gemma License | safetensors, GGUF | Modelo generalista de Google; licencia no Apache |
-| Qwen2.5 1.5B | 1,5B | 32K | Apache 2.0 | safetensors, GGUF | Generalista multilingüe con buen soporte de herramientas |
-| Llama 3.2 1B | 1,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Generalista con contexto largo; licencia restrictiva |
+| spellspeak-glyph-2b-i1-GGUF | ~4,6 B (etiqueta 2b) | no disponible | Apache 2.0 | GGUF | Especializado en NPC y roleplay |
+| Modelos Gemma base (familia) | 2B / 7B | no disponible | Gemma license | safetensors, GGUF | Uso general, no especializado en dialogo |
+| Alternativas de roleplay GGUF | no disponible | no disponible | variable | GGUF | No se dispone de datos comparativos en la informacion |
 
-La comparación con Gemma 2 2B, Qwen2.5 1.5B y Llama 3.2 1B es orientativa: no se dispone de benchmarks del modelo de esta ficha que permitan comparar rendimiento real. La ventaja diferencial de Spellspeak Glyph 2B es su especialización conversacional y su licencia Apache 2.0, frente a las licencias más restrictivas de Gemma y Llama.
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada; la comparativa se limita a la familia Gemma como referencia arquitectonica.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados; al ser un ajuste sobre Gemma 4 entrenado presumiblemente con datos conversacionales, puede heredar sesgos del modelo base y del corpus de roleplay.
-- Riesgo de alucinación: alto en tareas factuales; el modelo está orientado a diálogo creativo, no a recuperación de hechos verificables.
-- Limitaciones de contexto o idioma: solo se declara inglés; la longitud de contexto no está documentada, lo que impide planificar conversaciones largas con garantías.
-- Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, pero conviene verificar la licencia del modelo base original (jptaylor/spellspeak-glyph-2b) y de Gemma 4, ya que las licencias de los modelos derivados pueden arrastrar condiciones adicionales.
-- Caveats para producción: la falta de benchmarks y de documentación de entrenamiento dificulta la evaluación de calidad; las cuantizaciones IQ1/IQ2 degradan notablemente la coherencia y solo deberían usarse en escenarios experimentales.
-- El repositorio tiene 0 likes y la model card no documenta el proceso de ajuste, por lo que la trazabilidad del modelo es limitada.
+- Sesgos conocidos: no documentados en la informacion disponible; al ser un fine-tuning sobre Gemma, puede heredar sesgos del modelo base.
+- Riesgo de alucinacion: presente como en cualquier modelo generativo; en roleplay puede ser menos problematico, pero en usos informativos requiere validacion.
+- Limitaciones de contexto o idioma: solo se declara ingles; la longitud de contexto no esta documentada, lo que impide garantizar conversaciones largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base jptaylor/spellspeak-glyph-2b y de la familia Gemma subyacente.
+- Caveat de produccion: la discrepancia entre el nombre "2b" y los 4,6 B parametros reales puede afectar a la planificacion de recursos; verificar el checkpoint antes de desplegar.
+- Las cuantizaciones IQ1 e IQ2 de baja precision degradan notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/spellspeak-glyph-2b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/spellspeak-glyph-2b-i1-GGUF
 - Modelo base: https://huggingface.co/jptaylor/spellspeak-glyph-2b
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/spellspeak-glyph-2b-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#spellspeak-glyph-2b-i1-GGUF
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Grafo comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Ejemplo de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/spellspeak-glyph-2b-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#spellspeak-glyph-2b-i1-GGUF
+- FAQ y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Grafico de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

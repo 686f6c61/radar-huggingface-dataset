@@ -2,90 +2,95 @@
 
 ## Resumen
 
-KAM-7B es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) publicado por Bahattin Yunus Çetin bajo el identificador `bahattinyunus/kam-7b-gguf`. Se distribuye exclusivamente en formato GGUF cuantizado (4 y 8 bits) y está pensado para su ejecución local mediante Ollama o llama.cpp, con soporte declarado para CPU y GPU. La model card lo describe como un "cerebro cognitivo autónomo" que combina la tradición chamánica del Altái con el principio de energía libre de Karl Friston, la telemetría del kernel Linux vía eBPF y mutación JIT en memoria con C++20; se trata, en la práctica, de una capa de posicionamiento conceptual sobre un modelo base derivado de la familia Qwen2.5, según indican sus etiquetas.
+KAM-7B (Ulu Kam) es un modelo de lenguaje de 7.615.616.512 parámetros publicado por el desarrollador independiente Bahattin Yunus Çetin bajo el identificador `bahattinyunus/kam-7b-gguf`. Según la model card, se trata de una adaptación del modelo base Qwen 2.5 7B orientada a turco ("duru Türkçe") y a un marco conceptual que el autor denomina "Active Inference" (inferencia activa) inspirado en el principio de energía libre de Karl Friston. El modelo se distribuye principalmente en formato GGUF para su uso con Ollama y despliegue local aislado (air-gapped).
 
-El modelo declara un contexto de 16.384 tokens y está orientado a turco (idioma principal, con especial énfasis en fluidez y corrección morfológica) e inglés como secundario. Su licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las obligaciones de atribución habituales.
+El modelo forma parte de una "flota" de ocho repositorios publicados por el mismo autor (kam:apex basado en Qwen3-8B, kam:r1 basado en DeepSeek-R1 7B, kam:coder, variantes nano de 1.5B y un módulo Edge-MoE de 848 parámetros). La model card mezcla la descripción del modelo de lenguaje con la de un "motor de sistema operativo cognitivo autónomo" que incluye componentes externos al modelo (agentes ReAct/CodeAct, hooks eBPF, JIT en C++20, módulos de ciberdefensa). Es importante separar esas afirmaciones del comportamiento verificable del propio modelo de pesos.
 
-Su relevancia actual es limitada pero concreta: cubre el nicho de modelos pequeños, cuantizados y desplegables en hardware modesto para tareas de generación de texto en turco, un idioma con menor cobertura en el ecosistema open source que el inglés o el castellano. No obstante, el repositorio no incluye resultados de benchmarks, detalles del dataset de entrenamiento ni información verificable sobre el proceso de ajuste, por lo que debe evaluarse con cautela antes de cualquier uso en producción.
+La relevancia del modelo es limitada y debe contextualizarse: se trata de un proyecto individual, con 351 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados en la información disponible y con una model card que contiene afirmaciones técnicas no verificables (por ejemplo, "100.0% Benchmark" sin especificar el conjunto de evaluación). Resulta útil como ejemplo de fine-tuning comunitario en turco sobre Qwen 2.5, pero no como modelo de referencia para producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de Qwen2.5, según etiquetas del autor; detalles no disponibles) |
-| Parámetros totales | 7.615.616.512 (~7,6 B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 16.384 tokens |
-| Tipos de cuantización | GGUF 4-bit y 8-bit (según model card) |
-| Idiomas soportados | Turco (tr), inglés (en) |
+| Arquitectura | Transformer decoder-only (derivado de Qwen 2.5 7B; no se detalla la arquitectura interna en la informacion disponible) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | no disponible (no es un modelo MoE según la informacion disponible) |
+| Longitud de contexto | 16K tokens (según la model card: "16K bağlamlı") |
+| Tipos de cuantizacion | GGUF (el repo pesa 4,7 GB; no se detallan los niveles de cuantizacion disponibles) |
+| Idiomas soportados | turco (tr), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de 4,7 GB) |
+| Formato de pesos | GGUF (repo `kam-7b-gguf`); el dato de parámetros procede de safetensors según la información de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de las etiquetas del repositorio, que apuntan a Qwen2.5 como base y a DeepSeek-R1 como referencia de destilación o inspiración para el razonamiento. No se especifica si se trata de un transformer denso estándar con atención de múltiples cabezas, ni se documentan innovaciones como decodificación especulativa, atención lineal o capas híbridas SSM. El tamaño de 7,6 B parámetros encaja con la variante Qwen2.5-7B, pero el autor no confirma explícitamente la correspondencia.
+La información disponible no detalla la arquitectura interna más allá de indicar que el modelo deriva de Qwen 2.5 7B, un transformer decoder-only con atención completa estándar. El autor etiqueta el proyecto con conceptos como "liquid-neural-networks", "bitnet-b158" y "active-inference", pero esos términos aparecen asociados al ecosistema KAM en su conjunto (incluido el módulo Edge-MoE de 848 parámetros) y no se documenta que el modelo de 7B implemente capas de redes neuronales líquidas ni cuantización BitNet b1.58. No se especifica el número de tokens de entrenamiento, la composición del dataset de ajuste ni si se aplicaron fases de RLHF o DPO.
 
-Tampoco se publican datos sobre el corpus de entrenamiento: no se indica el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. La model card menciona conceptos como "inferencia activa" y "minimización de entropía de Shannon" como marco filosófico del modelo, pero no los traduce en detalles técnicos verificables sobre el proceso de entrenamiento. Cualquier afirmación sobre el pipeline de ajuste debe considerarse no disponible.
+Tampoco se documentan innovaciones técnicas verificables en el propio modelo de pesos (decodificación especulativa, atención lineal, etc.). Las afirmaciones sobre hooks eBPF con latencias inferiores a 12 μs, parcheo JIT en memoria en 41,2 ms o agentes ReAct de seis pasos corresponden a componentes de software del repositorio GitHub del autor, no al modelo de lenguaje, y no pueden atribuirse a los pesos publicados en este repositorio.
 
 ## Capacidades
 
-- Generación de texto conversacional en turco e inglés, con énfasis declarado en fluidez morfológica y sintaxis SOV del turco.
-- Razonamiento de un solo turno y multi-turno dentro de la ventana de 16.384 tokens.
-- Soporte declarado de tool calling y function calling (etiqueta `endpoints_compatible` en el repositorio).
-- Capacidad de razonamiento multi-paso y uso como agente, según las etiquetas `autonomous-systems` y `active-inference`.
-- Generación de código y conocimiento técnico en áreas como eBPF, C++20 y telemetría de sistemas Linux, según la model card.
-- Capacidades multilingües limitadas a turco e inglés; no se declara soporte de otros idiomas.
-- No se declaran capacidades de visión, audio ni modo "thinking" explícito.
+- Generación de texto conversacional en turco e inglés.
+- Comprensión y generación en turco, presumiblemente reforzada mediante ajuste fino sobre Qwen 2.5 (no se documenta el método).
+- Razonamiento y respuesta multi-turno dentro de una ventana de 16K tokens.
+- Integración con Ollama mediante `ollama run hf.co/bahattinyunus/kam-7b-gguf`.
+- Soporte de tool calling y function calling: no documentado en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: atribuidas al ecosistema KAM (ReAct + CodeAct), no verificadas en el modelo de pesos.
+- Capacidades de visión o audio: no disponibles.
+- Modo "thinking" explícito: no documentado para este modelo (sí para la variante kam:r1 basada en DeepSeek-R1).
 
 ## Casos de uso
 
-- Asistencia conversacional en turco para atención al cliente: el modelo puede mantener diálogos multi-turno de hasta 16.384 tokens, suficiente para conservar el historial de una conversación de soporte sin truncamientos frecuentes, y su énfasis en turco nativo reduce los errores morfológicos típicos de modelos entrenados principalmente en inglés.
-- Generación de documentación técnica en turco: útil para equipos que redactan manuales, guías de operación o documentación de infraestructura en turco y necesitan un modelo que respete la sintaxis SOV y la terminología técnica.
-- Prototipado de agentes autónomos locales: al ejecutarse en GGUF con Ollama, puede integrarse en pipelines de agentes que requieran inferencia en local sin conexión a la nube, con tool calling para invocar APIs o scripts.
-- Análisis y resumen de telemetría de sistemas: la model card menciona optimización de telemetría de vuelo y hooks de eBPF; el modelo puede emplearse para resumir logs o generar explicaciones de trazas en entornos Linux.
-- Educación y divulgación en turco: generación de material didáctico, explicaciones de conceptos técnicos y respuestas a preguntas frecuentes en turco, aprovechando su contexto de 16K para incluir fragmentos largos de documentación.
-- Desarrollo de asistentes de código en turco: integración en IDE o CLI para autocompletado y explicación de fragmentos de C++20, scripts de shell o configuración de sistemas, con la ventaja de ejecutarse en hardware de consumo.
-- Experimentación en investigación sobre inferencia activa: el marco del free energy principle que declara el autor puede servir como banco de pruebas para estudiar cómo un LLM pequeño responde a prompts que simulan minimización de sorpresa sensorial.
+- Asistencia conversacional en turco: el modelo puede gestionar diálogos multi-turno en turco con una ventana de 16K tokens, adecuado para chatbots de atención al cliente orientados al mercado turco donde se priorice el despliegue local.
+- Despliegue air-gapped en entornos con requisitos de soberanía de datos: al distribuirse en GGUF y ejecutarse con Ollama, puede operar sin conexión a servicios en la nube, útil en administraciones públicas o sectores regulados que exijan procesamiento local.
+- Prototipado rápido en estaciones de trabajo: su tamaño de 4,7 GB en GGUF permite probar el modelo en portátiles con GPU de consumo, sirviendo para validar ideas antes de migrar a modelos mayores.
+- Generación de contenido en turco: redacción de borradores, resúmenes y respuestas dentro de aplicaciones editoriales o de soporte interno donde el idioma principal sea el turco.
+- Base para experimentación académica sobre ajuste fino: al estar construido sobre Qwen 2.5 7B y publicarse con licencia Apache 2.0, puede servir como punto de partida para estudiar técnicas de adaptación lingüística en turco.
+- Evaluación comparativa de la familia KAM: útil para investigadores interesados en analizar las diferencias entre las variantes del autor (apex, r1, coder) sobre distintas bases (Qwen3-8B, DeepSeek-R1 7B, Qwen 2.5 7B).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona "100.0% Benchmark" y "60/60 Tests Passing", pero no especifica qué conjunto de evaluación, metodología ni métricas se emplearon, por lo que estos datos no son verificables ni comparables.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4,5-5 GB en cuantización 4-bit y 8-9 GB en 8-bit, considerando los 7,6 B parámetros y el overhead de la ventana de contexto.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para 8-bit; A100 o H100 no son necesarias para este tamaño.
-- Cabe en GPU de consumo: sí, en modelos con 8 GB o más de VRAM en 4-bit; en 8-bit se recomienda 12 GB o más.
-- Opciones de despliegue: Ollama (`ollama run hf.co/bahattinyunus/kam-7b-gguf`), llama.cpp, y cualquier runtime compatible con GGUF (LM Studio, text-generation-webui). No se declara soporte nativo para vLLM o TGI en formato GGUF.
-- Latencia y throughput estimados: no disponibles; dependerán del hardware y la cuantización. En una RTX 4090 con 4-bit es razonable esperar decenas de tokens por segundo, pero el autor no publica cifras.
+- VRAM estimada: aproximadamente 5-6 GB para el archivo GGUF de 4,7 GB con overhead de contexto; entre 15 y 16 GB en FP16 (7.615 millones de parámetros × 2 bytes).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090 para cuantizaciones mayores y contextos largos; A100/H100 solo si se requiere FP16 y alto throughput.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM usando cuantizaciones GGUF de 4-5 bits; en 6 GB puede requerir cuantización Q4 y contexto reducido.
+- Opciones de despliegue: Ollama (soporte oficial según la model card), llama.cpp por ser formato GGUF, y potencialmente vLLM o TGI si se convierte a safetensors (no documentado).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KAM-7B (este modelo) | ~7,6 B | 16.384 | Apache 2.0 | GGUF | Enfoque en turco, sin benchmarks publicados |
-| Qwen2.5-7B | ~7,6 B | 32.768 (base) | Apache 2.0 | Safetensors, GGUF | Base probable; multilingüe amplio, benchmarks públicos |
-| Llama 3.1 8B | ~8 B | 131.072 | Llama 3.1 Community | Safetensors, GGUF | Multilingüe, ecosistema amplio, benchmarks públicos |
-| Mistral 7B | ~7,3 B | 32.768 | Apache 2.0 | Safetensors, GGUF | Referencia en modelos pequeños, benchmarks públicos |
+| KAM-7B (Ulu Kam) | 7,6B | 16K | Apache 2.0 | GGUF en HF | Ajuste comunitario sobre Qwen 2.5 7B, foco en turco |
+| Qwen 2.5 7B (base) | 7,6B | 128K (según documentación de Alibaba) | Apache 2.0 | safetensors, GGUF, múltiples proveedores | Modelo base original; benchmarks públicos extensos |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Alternativa generalista con licencia no Apache |
+| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa europea con soporte multilingüe |
 
-La comparativa se basa en características declaradas; no se dispone de datos de rendimiento de KAM-7B que permitan una comparación cuantitativa con estas alternativas.
+La comparación con el Qwen 2.5 7B original es la más directa, dado que KAM-7B deriva de él. No se dispone de datos que permitan afirmar mejoras medibles sobre la base en tareas de turco.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no es posible verificar la calidad del modelo frente a su base declarada (Qwen2.5) ni frente a alternativas.
-- Sin documentación del dataset de entrenamiento ni del proceso de ajuste: no se puede evaluar el riesgo de contaminación, sesgos de dominio ni calidad de la alineación.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, lo que indica ausencia de validación por parte de la comunidad.
-- La model card mezcla conceptos filosóficos (chamanismo, free energy principle) con afirmaciones técnicas no verificadas; parte del contenido debe tratarse como marketing y no como especificación técnica.
-- Riesgo de alucinación no cuantificado; al ser un modelo pequeño y sin benchmarks, se recomienda validación humana en dominios factuales.
-- Soporte limitado a turco e inglés; no se declara ni garantiza funcionamiento en castellano u otros idiomas.
-- Aunque la licencia Apache 2.0 permite uso comercial, la falta de trazabilidad del entrenamiento impide descartar obligaciones adicionales derivadas de datos de terceros.
-- El contexto de 16.384 tokens es inferior al de su base probable (Qwen2.5-7B soporta 32.768), lo que puede limitar casos de uso con documentos largos.
-- No se declara soporte para vLLM o TGI, lo que restringe el despliegue en infraestructura de serving de alto rendimiento.
+- Ausencia de benchmarks verificables: las afirmaciones de rendimiento de la model card no están respaldadas por metodología pública.
+- Riesgo de alucinación: como cualquier modelo de 7B, especialmente sin datos de evaluación publicados; el ajuste fino sobre una base generalista puede incrementar la confianza en respuestas incorrectas.
+- Sesgos: no documentados; el ajuste en turco puede introducir sesgos culturales o lingüísticos no evaluados.
+- Cobertura limitada de idiomas: solo turco e inglés; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
+- Contexto de 16K: inferior a los 128K de la base Qwen 2.5 7B, lo que puede limitar tareas de documento largo.
+- Discrepancia entre la model card y el modelo: gran parte del contenido describe un sistema de agentes y ciberdefensa externo al modelo; no debe asumirse que los pesos incorporen esas capacidades.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene auditar el modelo antes de integrarlo en producción.
+- Proyecto individual con escasa tracción (351 descargas, 0 likes): sin comunidad de validación ni mantenimiento garantizado.
+- Fecha de creación indicada como 2026-11-03 en los metadatos, lo que resulta anómala y conviene verificar.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/bahattinyunus/kam-7b-gguf
-- GitHub del autor: https://github.com/bahattinyunus/kam
+- Repositorio GitHub del proyecto: https://github.com/bahattinyunus/kam
+- Variante kam:apex (Qwen3-8B): https://huggingface.co/bahattinyunus/kam-apex-8b-gguf
+- Variante kam:r1 (DeepSeek-R1 7B): https://huggingface.co/bahattinyunus/kam-r1-gguf
+- Variante kam:coder: https://huggingface.co/bahattinyunus/kam-coder-7b-gguf
+- Variante kam:r1-nano (1.5B): https://huggingface.co/bahattinyunus/kam-r1-nano-1.5b-gguf
+- Variante kam:coder-nano (1.5B): https://huggingface.co/bahattinyunus/kam-coder-nano-1.5b-gguf
+- Variante kam:1.5b-edge: https://huggingface.co/bahattinyunus/kam-1.5b-edge-gguf
+- Módulo KAM-Edge-MoE (BitNet b1.58): https://huggingface.co/bahattinyunus/kam-edge-moe-b158
 - Perfil del autor: https://github.com/bahattinyunus
-- Repositorio base probable (Qwen2.5): https://huggingface.co/Qwen/Qwen2.5-7B
-- Referencia de razonamiento (DeepSeek-R1): https://huggingface.co/deepseek-ai/DeepSeek-R1

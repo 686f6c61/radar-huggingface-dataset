@@ -2,114 +2,112 @@
 
 ## Resumen
 
-Gemma 4 31B IT GGUF es una coleccion de cuantizaciones en formato GGUF del modelo google/gemma-4-31B-it, publicada por Xylolabs para su uso con llama.cpp sobre CUDA, Metal o CPU. El modelo base es un transformer denso multimodal de Google DeepMind, instruction-tuned, que acepta texto e imagen como entrada y genera texto, con una ventana de contexto de hasta 256K tokens y soporte de mas de 140 idiomas. Esta publicacion no introduce pesos nuevos: convierte los originales a GGUF y los cuantiza en siete variantes (de Q8_0 a Q2_K), incluyendo una version con matriz de importancia (IQ4_XS-imat).
+Gemma 4 31B IT GGUF es una versión cuantizada en formato GGUF del modelo multimodal `google/gemma-4-31B-it`, desarrollada por Google DeepMind y convertida por Xylolabs para su uso con llama.cpp en CUDA, Metal o CPU. El modelo base es un transformer multimodal de aproximadamente 30.700 millones de parámetros que acepta entradas de texto e imagen y genera texto, con variantes preentrenadas e instruidas dentro de la familia Gemma 4.
 
-La relevancia de esta ficha es practica: permite ejecutar un modelo de 30.697.345.596 parametros en hardware de consumo o en servidores de una sola GPU, con metricas de degradacion medidas frente a BF16 (KL medio y coincidencia top-1). El autor documenta ademas una comparacion directa con las cuantizaciones de Unsloth para Q6_K y Q5_K_M, lo que facilita la eleccion de fichero segun el presupuesto de VRAM y la tolerancia a perdida de calidad.
+Esta ficha cubre específicamente la distribución GGUF de Xylolabs, que ofrece ocho niveles de cuantización (desde Q8_0 hasta Q2_K) más dos proyectores de visión (mmproj) en F16 y Q8_0. El paquete incluye una tabla de fidelidad frente al modelo BF16 original medida con divergencia KL y acuerdo top-1, lo que permite elegir el compromiso entre tamaño y precisión con datos concretos.
 
-La licencia declarada es Apache 2.0, heredada del release de Gemma 4, y el repositorio incluye el proyector de vision en F16 (mmproj) necesario para el pipeline image-text-to-text. El modelo esta etiquetado con los idiomas en y ko, aunque la model card de Google describe soporte multilingue amplio en el modelo original.
+Su relevancia práctica radica en que permite ejecutar un modelo multimodal de 31B en hardware de consumo y estaciones de trabajo: desde una RTX 4090 con 24 GB (usando Q3_K_M a 32K de contexto) hasta una H100 o Mac Studio con memoria unificada, donde el Q8_0 cabe holgadamente a 256K de contexto. La licencia Apache 2.0 facilita el uso comercial sin las restricciones adicionales de otras familias de modelos abiertos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (texto e imagen), instruction-tuned; familia Gemma 4 con variantes densas y MoE, esta es densa |
-| Parametros totales | 30.697.345.596 |
-| Parametros activos | no disponible (variante densa, no MoE) |
-| Longitud de contexto | hasta 256K tokens (modelo base); el ejemplo de ejecucion usa -c 8192 |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, IQ4_XS-imat, Q3_K_M, IQ3_M, Q2_K |
-| Idiomas soportados | en, ko (etiquetas del repo); el modelo base declara mas de 140 idiomas |
+| Arquitectura | Transformer multimodal (texto e imagen), familia Gemma 4 |
+| Parámetros totales | 30.697.345.596 (30,7B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | hasta 256K según hardware y cuantización (tabla del autor); ejemplo de ejecución con `-c 8192` |
+| Tipos de cuantización | Q8_0, Q6_K, Q5_K_M, IQ4_XS-imat, Q3_K_M, IQ3_M, Q2_K; proyectores de visión F16 y Q8_0 |
+| Idiomas soportados | en, ko (según metadatos); el modelo base declara soporte multilingüe |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (un fichero por cuantizacion, tokenizer y chat template incluidos); proyector de vision mmproj en F16 |
-
-Tabla de ficheros y calidad respecto a BF16 (8.048 posiciones de texto en ingles y coreano, formato chat):
-
-| Quant | Tamano | KL medio vs BF16 | Mismo top-1 vs BF16 |
-|---|---|---|---|
-| Q8_0 | 32,64 GB | 0,0015 | 97,36% |
-| Q6_K | 25,20 GB | 0,0048 | 95,78% |
-| Q5_K_M | 21,85 GB | 0,0116 | 94,02% |
-| IQ4_XS-imat | 16,74 GB | 0,0493 | 88,24% |
-| Q3_K_M | 15,29 GB | 0,1086 | 83,72% |
-| IQ3_M | 14,42 GB | 0,1230 | 83,13% |
-| Q2_K | 11,92 GB | 0,4023 | 71,12% |
-
-Receta de tensores: las matrices de pesos y el embedding atado usan el tipo de cuantizacion del fichero; las normas y otros vectores pequenos (422 tensores) se mantienen en F32.
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia Gemma 4 de Google DeepMind, que combina variantes densas y Mixture-of-Experts en cinco tamanos (E2B, E4B, 12B, 26B A4B y 31B). Esta ficha corresponde a la variante densa de 31B en version instruction-tuned, con arquitectura transformer multimodal: procesa texto e imagen con soporte de relacion de aspecto y resolucion variable, y en otros tamanos de la familia (E2B, E4B, 12B) tambien audio. La familia incorpora modos de razonamiento configurables (thinking modes) y soporte nativo del rol `system` en el chat template.
+El modelo base es un transformer multimodal de Google DeepMind que procesa texto e imagen como entrada y genera texto como salida. La familia Gemma 4 incluye variantes preentrenadas e instruidas; esta distribución parte de la variante instruida (`-it`). El modelo incorpora un modo de razonamiento ("thinking") que puede desactivarse en tiempo de ejecución mediante `--chat-template-kwargs '{"enable_thinking":false}'`, lo que sugiere un entrenamiento orientado a instrucciones y razonamiento multi-paso.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base, ya que la model card incluida en el repositorio esta truncada. La innovacion tecnica documentada en esta publicacion es la cuantizacion: Xylolabs aplica una receta con normas en F32 y una variante con matriz de importancia (IQ4_XS-imat), y publica metricas de divergencia KL frente a su propia pasada en BF16 con transformers, lo que permite estimar la perdida de calidad de cada fichero de forma cuantitativa.
+Los detalles concretos de composición del dataset de entrenamiento, número de tokens, uso de RLHF/DPO y técnicas específicas de atención no están disponibles en la información proporcionada. La model card enlaza el paper arXiv:2607.02770, que presumiblemente contiene la descripción técnica completa del modelo base.
+
+En cuanto a la conversión, Xylolabs realizó la cuantización a GGUF con llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior). La variante IQ4_XS-imat emplea una matriz de importancia (imatrix) para preservar pesos relevantes. El autor publica métricas de fidelidad frente al BF16 original: divergencia KL media y acuerdo top-1 en texto inglés y coreano, lo que permite cuantificar la pérdida de precisión por cuantización.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modos de pensamiento configurables (`enable_thinking` en el chat template).
-- Procesamiento de imagen ademas de texto (pipeline image-text-to-text), mediante el proyector `mmproj-gemma-4-31B-it-F16.gguf`.
-- Generacion de codigo y capacidades agenticas mejoradas respecto a generaciones anteriores de Gemma, segun la model card de Google.
-- Soporte nativo de function calling / tool calling.
-- Soporte nativo del rol `system` para conversaciones estructuradas.
-- Capacidades multilingues: etiquetado en en y ko en este repo; el modelo base declara mas de 140 idiomas.
-- Contexto largo de hasta 256K tokens en el modelo base.
-- Ejecucion en llama.cpp sobre CUDA, Metal o CPU, con `llama-cli` y `llama-server`.
+- Generación de texto y razonamiento conversacional multi-turno.
+- Comprensión de imágenes (image-text-to-text) mediante los proyectores mmproj incluidos.
+- Modo de razonamiento ("thinking") activable o desactivable por configuración.
+- Capacidades multilingües, con evaluación explícita en inglés y coreano.
+- Ejecución local en CUDA, Metal y CPU mediante llama.cpp.
+- Compatibilidad con `llama-server` para despliegue como API compatible con endpoints.
+- Soporte de plantilla de chat Jinja (`--jinja`).
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y audio: no disponibles en la información proporcionada (el audio se menciona solo para variantes E2B, E4B y 12B del modelo base).
 
 ## Casos de uso
 
-- Asistente conversacional multi-turno en local: con contexto de hasta 256K tokens en el modelo base, se puede mantener historiales largos y documentos de referencia en la misma ventana; la cuantizacion Q5_K_M (21,85 GB) ofrece un equilibrio razonable entre VRAM y calidad (KL 0,0116).
-- Analisis de documentos con imagenes: el pipeline image-text-to-text y el proyector F16 permiten extraer informacion de capturas, diagramas o formularios escaneados junto con texto, desplegando `llama-server` con el mmproj.
-- Generacion de codigo en pipelines de desarrollo: el soporte de tool calling y el rol `system` permiten integrar el modelo en asistentes de IDE o en flujos de CI/CD que invocan herramientas externas mediante function calling.
-- Despliegue en hardware de consumo: con Q3_K_M (15,29 GB) o IQ4_XS-imat (16,74 GB) el modelo cabe en GPUs consumer de 24 GB de VRAM, lo que habilita prototipado y uso personal sin infraestructura de servidor.
-- Atencion al cliente automatizada en ingles y coreano: el modelo esta evaluado en estos dos idiomas y soporta conversaciones multi-turno con contexto largo; Q6_K (25,20 GB, 95,78% de coincidencia top-1) reduce el riesgo de respuestas degradadas en produccion.
-- Agentes autonomos con razonamiento multi-paso: los thinking modes configurables y el function calling nativo permiten construir agentes que planifican, invocan APIs y verifican resultados, ejecutados con `llama-server` como backend compatible con endpoints.
-- Investigacion sobre cuantizacion: las metricas KL y top-1 publicadas por el autor permiten estudiar el impacto de distintas recetas (imat frente a estandar, Q6_K frente a Unsloth) en un modelo multimodal de 31B.
+- Asistente conversacional local con contexto largo: desplegado con `llama-server` en una H100 o Mac Studio con 128 GB, el Q8_0 permite ventanas de hasta 256K tokens para mantener historiales extensos sin truncar.
+- Análisis de documentos con imágenes: gracias al pipeline image-text-to-text y los proyectores mmproj, puede procesar capturas, diagramas o páginas escaneadas junto a texto en tareas de extracción y resumen.
+- Procesamiento por lotes en estaciones de trabajo: con Q5_K_M (21,8 GB) en una RTX 5090 de 32 GB a 32K de contexto, adecuado para pipelines de clasificación y generación de contenido con latencia controlada.
+- Despliegue en hardware de consumo: con Q3_K_M (15,3 GB) en una RTX 4090 o RTX 3090 de 24 GB a 32K de contexto, permite prototipado y uso personal de un modelo de 31B multimodal.
+- Aplicaciones multilingües inglés-coreano: el autor valida la fidelidad de cuantización en ambos idiomas, lo que respalda su uso en productos dirigidos a esos mercados.
+- Inferencia en entornos sin GPU: los GGUF funcionan en CPU, lo que habilita despliegues en servidores sin acelerador o en portátiles, sacrificando throughput por disponibilidad.
+- Integración en herramientas de desarrollo: al ser compatible con llama.cpp y `llama-server`, puede conectarse a interfaces tipo OpenAI-compatible para pruebas y evaluación interna.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo proporciona metricas de fidelidad de cuantizacion (KL medio y coincidencia top-1 frente a BF16), recogidas en la tabla de especificaciones tecnicas.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas de fidelidad de cuantización frente al BF16 original:
 
-Comparacion de ficheros con las cuantizaciones de Unsloth (misma build, textos y referencia):
+| Cuantización | Tamaño | KL media (menor es mejor) | Top-1 |
+|---|---:|---:|---:|
+| Q8_0 | 32,636 GB | 0,0015 | 97,36% |
+| Q6_K | 25,201 GB | 0,0048 | 95,78% |
+| Unsloth Q6_K | 25,200 GB | 0,0054 | 95,47% |
+| Q5_K_M | 21,846 GB | 0,0116 | 94,02% |
+| Unsloth Q5_K_M | 21,660 GB | 0,0118 | 93,68% |
+| IQ4_XS-imat | 16,736 GB | 0,0493 | 88,24% |
+| Q3_K_M | 15,287 GB | 0,1086 | 83,72% |
+| IQ3_M | 14,424 GB | 0,1230 | 83,13% |
+| Q2_K | 11,916 GB | 0,4023 | 71,12% |
 
-| Fichero | Tamano | KL medio vs BF16 | Mismo top-1 vs BF16 |
-|---|---|---|---|
-| Xylolabs Q6_K | 25,20 GB | 0,0048 | 95,78% |
-| Unsloth Q6_K | 25,20 GB | 0,0054 | 95,47% |
-| Xylolabs Q5_K_M | 21,85 GB | 0,0116 | 94,02% |
-| Unsloth Q5_K_M | 21,66 GB | 0,0118 | 93,68% |
-| Q8_0 (ambos) | 32,64 GB | 0,0015 | no disponible |
+Las métricas se midieron con llama.cpp en texto inglés y coreano. Los proyectores de visión ocupan 1,199 GB (F16) y 0,810 GB (Q8_0). No se proporcionan datos de latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamano del fichero mas overhead de contexto y cache KV. Rangos: 11,92 GB (Q2_K) hasta 32,64 GB (Q8_0); el proyector de vision F16 anade un consumo adicional no cuantificado en la informacion disponible.
-- GPU recomendadas: para Q8_0 y Q6_K se requiere una GPU de 40-48 GB (A100 40GB, A6000, L40S) o reparto entre varias; Q5_K_M e IQ4_XS-imat encajan en 24 GB (RTX 4090, A10G, L4 24GB); Q3_K_M, IQ3_M y Q2_K permiten configuraciones en torno a 16 GB.
-- Cabe en GPU consumer: si, desde Q5_K_M hacia abajo en GPUs de 24 GB; las variantes Q3 y Q2 abren la puerta a GPUs de 16 GB.
-- Opciones de despliegue: llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior), con `llama-cli` y `llama-server`; el repo esta etiquetado como `endpoints_compatible`. No se documentan otras opciones (vLLM, TGI, Ollama) en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: desde 11,9 GB (Q2_K) hasta 32,6 GB (Q8_0) solo para pesos; hay que sumar la caché KV en f16 según contexto y unos 2 GB de runtime.
+- Regla del autor: el archivo debe caber junto a la caché KV más 2 GB por debajo del 90% de la memoria disponible.
+- GPU recomendadas según la tabla del autor:
+  - RTX 4090 / RTX 3090 (24 GB): Q3_K_M a 32K de contexto.
+  - RTX 5090 (32 GB): Q5_K_M a 32K de contexto.
+  - RTX 6000 Ada o 2 x 24 GB (48 GB): Q8_0 a 64K de contexto.
+  - H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), DGX Spark (128 GB unificada), Mac Studio M5 Max (128 GB), H200 (141 GB), B200 (192 GB), Mac Studio M5 Ultra (256/512 GB), B300 (288 GB): Q8_0 a 256K de contexto.
+- Cabe en GPU de consumo: sí, con Q3_K_M o inferiores en tarjetas de 24 GB.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`) con commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior; CUDA, Metal o CPU. Otros motores como vLLM, TGI u Ollama no se mencionan en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Gemma 4 31B IT GGUF (Xylolabs) | 30,697B | hasta 256K (base) | GGUF, 7 cuantizaciones | Apache 2.0 | Metricas KL y top-1 publicadas; incluye mmproj F16 |
-| Gemma 4 31B IT GGUF (Unsloth) | 30,697B | hasta 256K (base) | GGUF | Apache 2.0 | Solo comparables Q8_0, Q6_K y Q5_K_M; KL ligeramente superior en Q6_K y Q5_K_M |
-| Gemma 4 31B IT (Google) | 30,697B | hasta 256K | safetensors | Apache 2.0 | Pesos originales en BF16; requiere transformers, no llama.cpp |
+| Gemma 4 31B IT GGUF (Xylolabs) | 30,7B | hasta 256K según hardware | GGUF | Apache 2.0 | Multimodal, cuantizaciones con métricas KL publicadas |
+| Gemma 4 31B IT (Google) | 30,7B | no disponible en la información | safetensors (presumible) | Apache 2.0 | Modelo base BF16 de referencia |
+| Unsloth Q6_K / Q5_K_M (Gemma 4 31B) | 30,7B | no disponible | GGUF | Apache 2.0 | Comparado por el autor: KL 0,0054 / 0,0118 y top-1 95,47% / 93,68%, ligeramente inferiores a las de Xylolabs |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo con modelos de otros desarrolladores de tamano similar; la comparacion se limita a variantes del mismo modelo base y a las cuantizaciones alternativas de Unsloth.
+No se dispone de datos de benchmarks de tareas para comparar con alternativas de otros desarrolladores; la comparación se limita a las cuantizaciones de Unsloth incluidas en la tabla del autor.
 
 ## Limitaciones y advertencias
 
-- Las metricas de calidad son de fidelidad de cuantizacion, no de rendimiento en tareas; un KL bajo no garantiza ausencia de degradacion en razonamiento o codigo.
-- Q2_K presenta una divergencia notable (KL 0,4023, 71,12% de coincidencia top-1): no es recomendable para produccion.
-- El repo solo etiqueta en y ko como idiomas; el soporte de mas de 140 idiomas corresponde al modelo base y no ha sido verificado en estas cuantizaciones.
-- La model card copiada de Google esta truncada en el repositorio, por lo que faltan detalles de entrenamiento, sesgos evaluados y recomendaciones de uso seguro.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan evaluaciones especificas de veracidad en esta publicacion.
-- La licencia Apache 2.0 se hereda del release de Gemma 4; el autor declara no estar afiliado ni respaldado por Google. Conviene revisar el fichero LICENSE y NOTICE del repositorio antes de un uso comercial.
-- Requiere una build concreta de llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior); versiones anteriores pueden no cargar el modelo.
-- El consumo de VRAM del proyector de vision no esta cuantificado en la informacion disponible.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan mitigaciones específicas en la información disponible.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas: los metadatos solo declaran inglés y coreano; el rendimiento en castellano no está validado por el autor.
+- La cuantización introduce degradación medible: Q2_K cae a 71,12% de acuerdo top-1 y Q3_K_M a 83,72%, por lo que no se recomiendan para tareas sensibles a la precisión.
+- El modo "thinking" está activado por defecto según la guía de ejecución; debe desactivarse explícitamente para respuestas directas.
+- Requiere una versión concreta o posterior de llama.cpp (`cd959bae`); versiones anteriores pueden no cargar los archivos.
+- La licencia Apache 2.0 se mantiene desde la release de Gemma 4; el autor declara no estar afiliado ni respaldado por Google.
+- El tamaño del repositorio (140,1 GB) implica una descarga considerable; conviene seleccionar solo el archivo necesario.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/gemma-4-31B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Codigo llama.cpp (commit referenciado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio de Xylolabs citado en la model card: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Paper referenciado en los tags (arXiv:2607.02770): https://arxiv.org/abs/2607.02770
-- Licencia en el repositorio: https://huggingface.co/Xylolabs/gemma-4-31B-it-GGUF/blob/main/LICENSE
+- Paper referenciado: https://arxiv.org/abs/2607.02770
+- llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Repositorio de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Licencia: https://huggingface.co/Xylolabs/gemma-4-31B-it-GGUF/blob/main/LICENSE

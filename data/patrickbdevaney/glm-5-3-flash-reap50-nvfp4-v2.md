@@ -2,100 +2,108 @@
 
 ## Resumen
 
-GLM-5.3-Flash-REAP50-NVFP4-v2 es una versión podada y cuantizada del modelo multimodal `zai-org/GLM-5.3-Flash`, publicada por el usuario patrickbdevaney. Se trata de un transformer híbrido de tipo `Glm5NextForConditionalGeneration` con 45 capas de decodificador (34 de atención lineal KDA y 11 de atención MLA con DSA sparse attention), 165.500 millones de parámetros tras la poda y una torre de visión de 24 bloques. El modelo original tenía 321.300 millones de parámetros; esta variante elimina el 50 % de los expertos enrutados (144 de 288 por capa) mediante REAP y almacena los expertos enrutados y compartidos en NVFP4.
+GLM-5.3-Flash-REAP50-NVFP4-v2 es una versión podada y cuantizada del modelo multimodal `zai-org/GLM-5.3-Flash`, publicada por el usuario patrickbdevaney. Se trata de un derivado de la familia GLM-5.3 orientado a inferencia en dispositivos con 128 GB de memoria unificada, construido específicamente para una NVIDIA Jetson AGX Thor. El autor aplica una poda de expertos del 50 % (REAP, *Router-weighted Expert Activation Pruning*) sobre las capas MoE del modelo base y almacena los expertos en NVFP4 con cuantización solo de pesos.
 
-La motivación principal es el despliegue en dispositivos de memoria limitada: con 98,2 GiB en disco, es la variante pensada para caber en un único dispositivo de 128 GB, y fue construida y probada en una NVIDIA Jetson AGX Thor. Frente al modelo sin podar, mantiene una concordancia top-1 de 0,8386 sobre 241.516 tokens reservados, evaluada con teacher forcing, lo que la convierte en una opción práctica para inferencia local de un modelo de gran tamaño con capacidades de imagen y texto.
+El modelo conserva 144 de los 288 expertos enrutados de cada capa MoE, mantiene el enrutamiento top-8 y el experto compartido original, y añade el bloque MTP (multi-token prediction) también podado. El resultado ocupa 98,2 GiB en disco y conserva una longitud de contexto de 1.048.576 tokens, aunque la calibración se hizo con secuencias de 2.048 tokens. La arquitectura subyacente es híbrida: 45 capas de decodificador, de las cuales 34 son de atención lineal KDA y 11 son MLA con atención dispersa DSA, más una torre de visión de 24 bloques.
 
-Es relevante ahora porque combina tres técnicas de compresión (poda estructurada de expertos, cuantización NVFP4 de solo pesos y formato `compressed-tensors`) manteniendo una ventana de contexto de 1.048.576 tokens y licencia MIT, lo que facilita su uso comercial y su integración en stacks de transformers.
+La relevancia de esta ficha es doble. Por un lado, documenta una técnica de compresión agresiva (poda de expertos más cuantización FP4) aplicada a un modelo de 321.300 millones de parámetros. Por otro, la propia model card incluye una actualización de evaluación de noviembre de 2026 que degrada seriamente las expectativas: el modelo conserva el 94,8 % de la puntuación en HumanEval+, pero agota el límite de tokens en el 44-72 % de las peticiones de conocimiento general, con MMLU-Pro de 44 frente a 84 sobre 100 del modelo sin podar. El autor recomienda, para uso general en 128 GB, el GGUF `UD-Q2_K_XL` sin podar.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `Glm5NextForConditionalGeneration` (`glm5_next`); 45 capas: 34 KDA linear-attention + 11 MLA con DSA sparse attention; capas 0-2 MLP densas, capas 3-44 MoE; hidden size 4096; torre de visión de 24 bloques |
-| Parámetros totales | 165.470.880.558 (165,5B) tras la poda; el conteo del Hub en este repo cuenta bytes empaquetados, no pesos |
-| Parámetros activos | no disponible (el autor no los calculó); top-8 routing + 1 experto compartido |
-| Longitud de contexto | 1.048.576 tokens (`max_position_embeddings`, sin cambios); la calibración usó secuencias de 2.048 tokens |
-| Tipos de cuantización | NVFP4 weight-only (group size 16, escalas de grupo FP8 E4M3, escala global F32) para expertos enrutados y compartidos, incluido el bloque MTP; BF16 para atención KDA/MLA, indexador DSA, capas densas 0-2, routers, embeddings, `lm_head`, torre de visión y pesos de hiperconexión; F32 para tensores de estado pequeños; sin escalas de activación ni `input_scale` |
+| Arquitectura | `Glm5NextForConditionalGeneration` (`glm5_next`): 45 capas de decodificador, 34 capas de atención lineal KDA y 11 capas MLA con atención dispersa DSA; capas 0-2 con MLP denso, capas 3-44 MoE; torre de visión de 24 bloques; tamaño oculto 4096 |
+| Parametros totales | 165.470.880.558 (165,5 B) según safetensors; el recuento del Hub cuenta bytes empaquetados, no pesos |
+| Parametros activos | no disponible (el autor no los calculó); enrutamiento top-8 con 1 experto compartido |
+| Longitud de contexto | 1.048.576 tokens (`max_position_embeddings`, sin cambios respecto al base); calibración con secuencias de 2.048 tokens |
+| Tipos de cuantizacion | NVFP4 solo de pesos (grupo de 16, escalas de grupo FP8 E4M3, escala global F32) en expertos enrutados y compartidos, incluido el bloque MTP; BF16 en atención KDA y MLA, indexador DSA, capas densas 0-2, routers, embeddings, `lm_head`, torre de visión e hiperconexiones; F32 en tensores de estado pequeños; sin escalas de activación ni `input_scale` |
 | Idiomas soportados | no disponible |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | `safetensors` con `compressed-tensors`, esquema `nvfp4-pack-quantized`; 62 shards; 98,2 GiB (105.393.931.276 bytes) |
+| Formato de pesos | safetensors con `compressed-tensors`, esquema `nvfp4-pack-quantized`; 62 shards; 98,2 GiB (105.393.931.276 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido que alterna 34 capas de atención lineal KDA con 11 capas de atención MLA que incorporan DSA (sparse attention). Las tres primeras capas usan MLP denso y las 42 restantes son MoE con 288 expertos enrutados por capa, top-8 routing y un experto compartido. Incluye un bloque MTP (multi-token prediction) como capa 45, podado también a 144 expertos (`num_nextn_predict_layers: 1`). La ventana de contexto nativa es de 1.048.576 tokens.
+El modelo base GLM-5.3-Flash emplea una arquitectura híbrida de atención: 34 de sus 45 capas usan KDA (atención lineal), mientras que 11 capas usan MLA con atención dispersa DSA, lo que reduce el coste computacional del contexto largo. Las capas 0-2 mantienen un MLP denso y las capas 3-44 son MoE con 288 expertos enrutados, enrutamiento top-8 y un experto compartido. Se incluye un bloque MTP como capa 45 para decodificación especulativa. El modelo es multimodal, con una torre de visión de 24 bloques que habilita la tarea `image-text-to-text`.
 
-La poda se realizó con REAP (Router-weighted Expert Activation Pruning, arXiv:2510.13999), calibrada sobre un corpus multi-dominio con licencias permisivas que incluye pares reales imagen-texto. La mezcla está ponderada para un modelo de código y agentes: agéntico 24 %, código 21 %. La versión v2 usa una selección de expertos de segunda pasada (pass-2 REAP) y una curación (healing) mediante escalar por capa medido. El autor documenta que una tercera pasada experimental (v3, con HOPE y `protect_frac` 0.04) no ha sido evaluada y presenta defectos de construcción, por lo que no se recomienda. La cuantización NVFP4 se aplica solo a los pesos de los expertos; el resto de componentes permanece en BF16 para preservar la calidad de atención y visión.
+Sobre el proceso de compresión: el autor aplica REAP (*Router-weighted Expert Activation Pruning*) en una segunda pasada (pass-2), conservando 144 de 288 expertos por capa. La selección se complementa con un *healing* mediante un escalar por capa medido empíricamente, que corrige la deriva introducida por la poda. El bloque MTP también se poda a 144 expertos (`num_nextn_predict_layers: 1`). La cuantización NVFP4 es solo de pesos y no incluye escalas de activación, lo que simplifica el despliegue pero limita el ajuste fino de calibración. No se documentan en la información disponible los datos de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF o DPO).
+
+Existe una tercera pasada experimental (v3, en la subcarpeta `pass3-hope/`) que usa selección HOPE con un suelo de dominio (`protect_frac` 0,04), pero el autor advierte de dos defectos de construcción: el *healing* usó el estimador de reserva (primer momento) en lugar del medido, y la build NVFP4 de v3 cuantiza además las proyecciones q/k/v de KDA (102 tensores), lo que reduce el tamaño a 93,6 GiB. No ha sido evaluada y no debe tratarse como una mejora.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno.
-- Procesamiento de imagen y texto (`image-text-to-text`), gracias a la torre de visión de 24 bloques incluida en el modelo.
-- Generación de código, con una mezcla de calibración orientada explícitamente a código (21 %).
-- Razonamiento agéntico y multi-step, con una mezcla de calibración del 24 % en datos agénticos.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Modo thinking: no disponible en la información proporcionada.
-- Decodificación multi-token (MTP) disponible como capa 45, útil para decodificación especulativa.
+- Generación de texto conversacional multi-turno, con soporte de contexto de hasta 1.048.576 tokens.
+- Procesamiento de imagen y texto (`image-text-to-text`): la torre de visión de 24 bloques se mantiene en BF16, sin cuantizar.
+- Generación de código: conserva el 94,8 % de la puntuación de HumanEval+ del modelo sin podar en generación emparejada.
+- Razonamiento y conocimiento general: capacidad severamente degradada tras la poda; el modelo agota el límite de tokens en el 44-72 % de las peticiones de conocimiento general e instrucciones.
+- Decodificación especulativa mediante el bloque MTP (multi-token prediction), presente y podado a 144 expertos.
+- Atención lineal KDA y atención dispersa DSA para eficiencia en contextos largos.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo *thinking* explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue en dispositivos de borde con 128 GB: el modelo cabe en 98,2 GiB y fue probado en una Jetson AGX Thor, lo que permite ejecutar un modelo multimodal de 165,5B en hardware embebido de alta gama sin clúster.
-- Asistente de código en local: la mezcla de calibración incluye un 21 % de datos de código y el modelo conserva tool calling y contexto largo, adecuado para autocompletado, revisión de parches y generación de tests en entornos con requisitos de privacidad.
-- Agentes autónomos multi-paso: el 24 % de datos agénticos en la calibración y la ventana de 1.048.576 tokens permiten mantener historiales largos de herramientas y observaciones en un solo contexto.
-- Análisis de documentos extensos con imágenes: la combinación de torre de visión y contexto de un millón de tokens permite procesar informes, planos o capturas junto con texto largo en una sola pasada.
-- Atención al cliente automatizada: conversaciones multi-turno con contexto largo y capacidad de razonamiento, con la ventaja de que el modelo puede ejecutarse en infraestructura propia por su licencia MIT.
-- Prototipado e investigación en poda de MoE: al publicarse las selecciones v1, v2 y v3 con métricas de concordancia top-1, sirve como referencia reproducible para estudiar el impacto de REAP y NVFP4 en modelos de gran tamaño.
-- Inferencia cuantizada en producción con vLLM o TGI: el formato `compressed-tensors` y los pesos safetensors facilitan el despliegue en servidores con una sola GPU de 128 GB.
+- Asistencia de código en dispositivos edge: el modelo conserva el 94,8 % del rendimiento en HumanEval+ del modelo sin podar, por lo que puede emplearse para autocompletado, generación de funciones y revisión de código en una Jetson AGX Thor o en cualquier dispositivo con 128 GB de memoria unificada, sin depender de la nube.
+- Despliegue en estaciones de trabajo con una sola GPU de 128 GB: al ocupar 98,2 GiB, cabe en una GPU profesional de gran memoria o en un sistema de memoria unificada, lo que permite servir un modelo de 165,5 B de parámetros en una sola máquina.
+- Procesamiento de documentos con imagen y texto: la torre de visión en BF16 permite extraer información de capturas, formularios o diagramas y combinarla con texto en la misma ventana de contexto de 1 M de tokens.
+- Análisis de repositorios completos: la ventana de 1.048.576 tokens permite cargar árboles de código extensos y hacer preguntas sobre ellos en una sola pasada, aprovechando las capas de atención lineal KDA para reducir el coste del contexto largo.
+- Prototipado e investigación sobre poda de expertos: el repositorio documenta con detalle las tres pasadas de selección (v1, v2, v3), las métricas de acuerdo top-1 y los artefactos de *healing*, lo que lo convierte en material de referencia para estudiar el impacto de REAP y HOPE en modelos MoE multimodales.
+- Evaluación comparativa de cuantización FP4: al existir una versión hermana en FP8 (160,6 GiB) con el mismo conjunto de expertos, permite medir en condiciones controladas la pérdida de calidad atribuible a NVFP4 frente a FP8.
+- Inferencia en entornos con restricciones de memoria y sin conectividad: el formato `compressed-tensors` y la licencia MIT facilitan el despliegue en hardware propio para casos de privacidad de datos.
+
+No se recomienda su uso para atención al cliente automatizada, asistentes de conocimiento general ni tareas de instrucción abierta, dado que el propio autor documenta que agota el límite de tokens en la mayoría de esas peticiones.
 
 ## Benchmarks y rendimiento
 
-| Métrica | v2 NVFP4 (este repo) | v2 FP8 | v1 FP8 | Modelo sin podar |
-|---|---|---|---|---|
-| Concordancia top-1 (241.516 tokens, teacher forcing) | 0,8386 | 0,8425 | 0,8370 | referencia |
-| Tamaño en disco | 98,2 GiB | 160,6 GiB | 157,0 GiB | 305,8 GiB (FP8) |
-| Bloque MTP | sí (144 expertos) | sí | no | sí |
+| Metrica | Resultado | Referencia |
+|---|---|---|
+| Acuerdo top-1 con el modelo sin podar (241.516 tokens reservados, *teacher-forced*) | 0,8386 | Modelo sin podar = 1,0 |
+| HumanEval+ (generación emparejada) | 94,8 % de la puntuación del modelo sin podar | Modelo sin podar |
+| MMLU-Pro | 44 / 100 | 84 / 100 del modelo sin podar |
+| Peticiones que agotan el límite de tokens (conocimiento general e instrucciones) | 44-72 % | Modelo sin podar |
+| Acuerdo top-1 de la versión FP8 hermana (v2) | 0,8425 | Modelo sin podar = 1,0 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La única métrica de calidad publicada es la concordancia top-1 frente al modelo sin podar.
+No se han publicado resultados de MMLU, GSM8K ni otros benchmarks estándar en la información disponible. La comparación con el GGUF `UD-Q2_K_XL` sin podar (101 GiB) es cualitativa: el autor indica que midió mejor para uso general en 128 GB, pero no aporta cifras.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 98,2 GiB de pesos en NVFP4; se necesita un dispositivo con al menos 128 GB de memoria unificada o VRAM para acomodar pesos, caché KV y activaciones.
-- GPU recomendadas: NVIDIA Jetson AGX Thor (probado por el autor); GPUs de 128 GB o más, como H100 NVL de 94 GB no es suficiente, se requiere H200 (141 GB) o configuraciones multi-GPU.
-- Consumer GPU: no cabe en RTX 4090 (24 GB) ni en GPUs de 48 GB; requiere hardware de clase servidor o módulos unificados de 128 GB.
-- Opciones de despliegue: `transformers` con `compressed-tensors`; el autor publica builds GGUF para llama.cpp en `GLM-5.3-Flash-REAP50-GGUF`; vLLM y TGI no están confirmados en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria estimada: 98,2 GiB de pesos en disco; se requiere un dispositivo con al menos 128 GB de memoria unificada o VRAM para acomodar pesos y estados de inferencia con holgura.
+- GPU recomendadas: NVIDIA Jetson AGX Thor (plataforma de construcción y prueba del autor); cualquier GPU o sistema con 128 GB de memoria, como GPUs profesionales de gran capacidad.
+- Cabe en GPU de consumo: no. Ninguna GPU de consumo actual (RTX 4090 con 24 GB, RTX 5090 con 32 GB) dispone de memoria suficiente para los 98,2 GiB de pesos.
+- Opciones de despliegue: `transformers` con soporte de `compressed-tensors` (librería declarada); el autor publica builds GGUF para llama.cpp en el repositorio `GLM-5.3-Flash-REAP50-GGUF`. Soporte de vLLM, TGI u Ollama: no disponible en la información proporcionada.
+- Latencia y throughput: no disponibles. El bloque MTP habilita decodificación especulativa, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-REAP50-NVFP4-v2 | 165,5B (podado de 321,3B) | 1.048.576 | NVFP4 + BF16, safetensors | MIT | Hugging Face |
-| GLM-5.3-Flash-REAP50-FP8-v2 | 165,5B | 1.048.576 | FP8, safetensors | MIT | Hugging Face |
-| GLM-5.3-Flash-REAP50-GGUF | 165,5B | 1.048.576 | GGUF | MIT | Hugging Face |
-| zai-org/GLM-5.3-Flash (base) | 321,3B | 1.048.576 | FP8, safetensors | MIT | Hugging Face |
-
-No se dispone de datos de benchmarks comparativos con otras familias de modelos en la información proporcionada.
+| GLM-5.3-Flash-REAP50-NVFP4-v2 (este) | 165,5 B (podado al 50 % de expertos) | 1.048.576 | NVFP4, 98,2 GiB | MIT | Top-1 0,8386; MMLU-Pro 44; HumanEval+ al 94,8 % |
+| GLM-5.3-Flash-REAP50-FP8-v2 | 165,5 B (mismo conjunto de expertos) | 1.048.576 | FP8, 160,6 GiB | MIT | Top-1 0,8425; recomendado como maestro cuando la memoria lo permite |
+| zai-org/GLM-5.3-Flash (base) | 321,3 B | 1.048.576 | FP8, 305,8 GiB | MIT | Sin podar; referencia de calidad (MMLU-Pro 84) |
+| unsloth/GLM-5.3-Flash-GGUF (`UD-Q2_K_XL`) | 321,3 B (cuantizado, sin podar) | 1.048.576 | GGUF, 101 GiB | MIT | Medido mejor que este modelo para uso general en 128 GB según el autor |
 
 ## Limitaciones y advertencias
 
-- La poda del 50 % de expertos reduce la calidad: la concordancia top-1 es 0,8386, es decir, aproximadamente un 16 % de tokens difieren del modelo sin podar.
-- La variante v3 (`pass3-hope/`) no ha sido evaluada y presenta dos defectos documentados: curación con estimador de reserva (sobrecorrección de ~30 %) y cuantización NVFP4 de las proyecciones q/k/v de KDA que cuesta −0,0023 top-1; no debe tratarse como una mejora.
-- La carpeta `pass3-hope/` carece de `preprocessor_config.json` y `processor_config.json`; para entrada de imagen hay que copiarlos desde la raíz del repo.
-- El conteo de parámetros del Hub cuenta bytes empaquetados, no pesos; el dato real de safetensors es 165.470.880.558.
-- Los parámetros activos no fueron calculados, lo que dificulta estimar coste computacional por token.
-- No hay información sobre sesgos, idiomas soportados ni tasas de alucinación.
-- La licencia MIT permite uso comercial, pero se hereda del modelo base y conviene verificar las condiciones del mismo.
-- El tamaño de 98,2 GiB limita el despliegue a hardware de 128 GB o configuraciones multi-GPU; no es viable en GPUs de consumo.
-- No se han publicado benchmarks estándar, por lo que la evaluación de capacidades específicas (código, matemáticas, visión) queda pendiente de validación por el usuario.
+- Degradación severa en conocimiento general e instrucciones: MMLU-Pro cae de 84 a 44 sobre 100 y el modelo agota el límite de tokens en el 44-72 % de esas peticiones. No es apto para uso general conversacional.
+- El propio autor recomienda, para uso general en 128 GB, el GGUF `UD-Q2_K_XL` sin podar (101 GiB) antes que este checkpoint.
+- La poda elimina el 50 % de los expertos enrutados; el acuerdo top-1 de 0,8386 implica que aproximadamente 1 de cada 6 predicciones difiere del modelo sin podar en evaluación *teacher-forced*.
+- La cuantización NVFP4 es solo de pesos, sin escalas de activación ni tensores `input_scale`, lo que puede introducir errores adicionales en regímenes de activación no calibrados.
+- La calibración se realizó con secuencias de 2.048 tokens, muy por debajo de la ventana declarada de 1.048.576; el comportamiento en contextos largos no está validado.
+- La subcarpeta `pass3-hope/` (v3) es experimental, no evaluada y con dos defectos de construcción documentados: *healing* con estimador de reserva (sobrecorrección de ~30 % frente al medido) y cuantización NVFP4 de las proyecciones q/k/v de KDA. No debe usarse en producción.
+- Idiomas soportados no documentados; no hay garantías de calidad multilingüe.
+- Riesgo de alucinación: no cuantificado en la información disponible, pero previsiblemente elevado en tareas de conocimiento general dado el fallo de instrucciones documentado.
+- Sesgos conocidos: no documentados en la información disponible.
+- Licencia MIT heredada del modelo base, lo que permite uso comercial; sin embargo, la calidad degradada en conocimiento general limita su idoneidad para productos de cara al público.
+- El recuento de parámetros del Hub cuenta bytes empaquetados, no pesos; el dato fiable es el recuento de safetensors (165,5 B). Los parámetros activos no fueron calculados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4-v2
-- Árbol de archivos: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4-v2/tree/main
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Variante FP8 v2: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2
-- Variante FP8 v1: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8
-- Variante NVFP4 v1: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4
-- Builds GGUF: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF
-- Paper REAP: https://arxiv.org/abs/2510.13999
+- Versión FP8 hermana (v2): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2
+- Versión v1 FP8 (obsoleta): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8
+- Versión v1 NVFP4 (obsoleta): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4
+- Builds GGUF para llama.cpp: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF
+- GGUF sin podar `UD-Q2_K_XL`: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
+- Paper de referencia citado en los tags: arXiv:2510.13999 (https://arxiv.org/abs/2510.13999)

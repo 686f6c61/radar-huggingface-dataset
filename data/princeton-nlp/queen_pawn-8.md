@@ -2,96 +2,93 @@
 
 ## Resumen
 
-queen_pawn-8 es un modelo de analisis de posiciones de ajedrez desarrollado por princeton-nlp. No se trata de un modelo de lenguaje convencional: combina un decodificador SmolLM3-3B afinado, un modulo de cross-attention de tipo Flamingo entrenado y un codificador de tablero LC0 BT5. Su funcion es generar texto explicativo sobre jugadas a partir de una posicion dada en notacion FEN, razonando sobre el tablero gracias a la ruta de condicionamiento por tablero.
+QUEEN (PAWN-8) es un modelo especializado en analisis de ajedrez y seleccion de jugadas desarrollado por el grupo princeton-nlp. Combina un decodificador de lenguaje SmolLM3-3B afinado con un codificador de tablero LC0 BT5 (procedente de Leela Chess Zero), dando lugar a una arquitectura de tipo Flamingo en la que la representacion del tablero se inyecta como condicionamiento en el modelo de lenguaje. El resultado es un modelo de 3.075 millones de parametros capaz de razonar sobre posiciones de ajedrez expresadas en notacion FEN y proponer jugadas en formato UCI.
 
-El modelo es una release de inferencia del checkpoint sol-full-8 en el paso 17.500. Tiene 3.075.256.320 parametros (aproximadamente 3,08 mil millones) y el repositorio ocupa 9,0 GB, de los cuales unos 8,4 GiB corresponden a los pesos combinados en BF16. La salida es JSON e incluye el texto legible, los tokens de punto de vista del modelo y, cuando es posible extraerla, una jugada legal en formato UCI.
+La propuesta diferencial es la integracion completa: todos los pesos y el codigo de inferencia se incluyen en el repositorio, de modo que no es necesario instalar LC0 ni Stockfish por separado. El modelo no es un motor UCI ejecutable, sino un generador condicionado por tablero que produce texto y una jugada; su interes reside en explorar el uso de modelos de lenguaje como motores de ajedrez con justificacion textual, no solo con evaluacion numerica.
 
-Es relevante porque ejemplifica un patron poco habitual: condicionar un LLM a un estado estructurado (el tablero) mediante cross-attention aprendida, en lugar de serializar el estado como texto. Para desarrolladores e investigadores interesados en IA aplicada a dominios con estado formal, este modelo es un caso de estudio concreto de arquitectura hibrida LLM mas encoder externo.
+El modelo esta pensado para experimentacion e investigacion: requiere Linux, GPU NVIDIA con soporte BF16 y un driver compatible con CUDA 13, y solo se ha validado en una H100 de 80 GB. La licencia combinada no esta declarada de forma explicita, aunque el modelo base SmolLM3-3B es Apache-2.0 y el codificador LC0 tiene sus propios terminos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decodificador SmolLM3-3B afinado, con cross-attention Flamingo aprendida y codificador de tablero LC0 BT5 (BT5-1024x15x32h-rpe-swa-3700000); condicionado por tablero |
-| Parametros totales | 3.075.256.320 (3,08 mil millones) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (unico dtype validado en el entorno de origen: BF16) |
-| Idiomas soportados | en (ingles) |
-| Licencia | no disponible; la model card no aserta una licencia global para la release combinada y remite a los terminos de los componentes upstream (SmolLM3-3B, Apache-2.0; codificador de Leela Chess Zero) |
-| Formato de pesos | safetensors (decodificador fusionado en la raiz) mas xattn.pt (cross-attention) y pesos del codificador LC0 convertidos en lc0/ |
+| Arquitectura | Flamingo (decodificador SmolLM3-3B con codificador de tablero LC0 BT5 inyectado por condicionamiento) |
+| Parametros totales | 3.075.256.320 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2304 tokens (configuracion de evaluacion por defecto) |
+| Tipos de cuantizacion | no disponible (solo se documenta BF16) |
+| Idiomas soportados | en |
+| Licencia | no disponible (modelo base Apache-2.0; terminos del codificador LC0 aplicables; sin licencia global declarada) |
+| Formato de pesos | safetensors (con codigo de inferencia propio) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de HuggingFaceTB/SmolLM3-3B, un decodificador transformer de aproximadamente 3B parametros, y lo afina para la tarea de analisis de ajedrez. Sobre ese decodificador se anade una ruta de cross-attention inspirada en Flamingo, entrenada de forma independiente y almacenada como xattn.pt, que inyecta informacion del tablero en la generacion. El estado del tablero no se serializa como texto: lo procesa el codificador LC0 BT5-1024x15x32h-rpe-swa-3700000, un transformer con atencion por pares relativos y sliding window attention, procedente de Leela Chess Zero y convertido para este release.
+La arquitectura es un hibrido de tipo Flamingo: un decodificador transformer SmolLM3-3B (preentrenado por HuggingFaceTB) recibe condicionamiento visual de un codificador de tablero Leela Chess Zero, concretamente el modelo BT5-1024x15x32h-rpe-swa-3700000. El codificador transforma la posicion FEN en una representacion latente que se inyecta en el decodificador, de forma que la generacion de texto y de jugada queda condicionada por el estado del tablero. El repositorio incluye codigo personalizado (tag `custom-code`), por lo que no basta con cargar el modelo mediante `AutoModelForCausalLM`: hay que usar el runner `infer.py` incluido, que incorpora el condicionamiento.
 
-La model card indica que se trata de una release de inferencia del checkpoint sol-full-8, en el paso 17.500. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO; esos datos no estan disponibles en la informacion proporcionada. El release excluye explicitamente los datos de entrenamiento, el estado del optimizador y los conjuntos de evaluacion. Como innovacion tecnica destacable esta la combinacion de un decoder LLM con un encoder de tablero especifico del dominio y una cross-attention aprendida, integrados en un runner de inferencia autocontenido.
+No se ha publicado informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. La model card solo documenta los detalles de inferencia y evaluacion: temperatura 0,6, top-k 20, top-p 0,95, 2048 tokens de salida, penalizacion por repeticion 1,0, BF16 y ejecucion eager V1 con prefix caching desactivado. La semilla base es 20260823 y las semillas de cada peticion se derivan de un hash de la semilla base, el identificador de partida y el ply del FEN. El entorno fijado usa PyTorch 2.13.0, Transformers 5.15.0 y vLLM 0.27.1.
 
 ## Capacidades
 
-- Generacion de texto explicativo sobre jugadas de ajedrez a partir de una posicion en FEN.
-- Analisis de posiciones condicionado por el tablero mediante cross-attention, no por descripcion textual.
-- Emision de una jugada legal en formato UCI cuando el texto generado permite extraerla (best_move_uci).
-- Manejo de historial de posiciones: acepta una lista cronologica de FEN previos mediante --history; sin historial usa la convencion de "sin historial" del encoder.
-- Decodificacion controlable: temperatura, top-k y top-p configurables, ademas de decodificacion greedy con --temperature 0.
-- Salida estructurada en JSON con text, raw_text (tokens de punto de vista del modelo) y best_move_uci.
-- Capacidad multilingue: no disponible; el modelo declara unicamente ingles (en).
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Vision, audio u otras modalidades: no disponible; la unica entrada estructurada es el tablero de ajedrez.
+- Analisis de posiciones de ajedrez a partir de un FEN y seleccion de jugada en notacion UCI.
+- Generacion de explicaciones y lineas criticas en texto (con verificacion de legalidad de la linea).
+- Condicionamiento por tablero mediante codificador LC0, sin dependencia de Stockfish ni LC0 en tiempo de ejecucion.
+- Uso de historial de partida (`--history`) para reconstruir el contexto de una peticion de evaluacion.
+- Salida estructurada en JSON con `text`, `raw_text`, `best_move_uci`, `move_source` y la linea critica verificada.
+- Fallback determinista: si la respuesta no es parseable, se elige una jugada legal aleatoria con semilla y se etiqueta en `move_source`.
+- Capacidad multilingue limitada al ingles.
+- No soporta tool calling ni function calling, ni se documentan capacidades de agente o razonamiento multi-paso mas alla de la linea critica.
+- Inferencia solo en GPU; no hay soporte de CPU.
 
 ## Casos de uso
 
-- Analisis de posiciones para entrenadores: dada una posicion en FEN, el modelo genera una explicacion en lenguaje natural que el entrenador puede revisar con el alumno; el condicionamiento por tablero evita errores de descripcion textual de la posicion.
-- Generacion de comentarios automaticos para partidas: alimentando un historial cronologico de FEN mediante --history, se puede construir un comentario jugada a jugada para publicar en un visor de partidas.
-- Preprocesado para motores de ajedrez: usar el modelo para producir candidatos de jugada en UCI y un razonamiento asociado, que despues se validan con un motor antes de integrarlos en un pipeline de analisis.
-- Investigacion en condicionamiento de LLM sobre estado formal: sirve como banco de pruebas para estudiar como la cross-attention Flamingo modula la generacion respecto al texto autoregresivo puro.
-- Herramientas didacticas interactivas: un frontend que envie FEN y reciba JSON con texto y jugada sugerida, mostrando ambos al usuario en una interfaz de estudio.
-- Etiquetado asistido de datasets de ajedrez: generar explicaciones candidatas para posiciones que posteriormente son revisadas y corregidas por anotadores humanos.
-- Evaluacion comparativa de representaciones de tablero: sirve para comparar el rendimiento de un encoder LC0 frente a enfoques que serializan el tablero como texto, ya que expone la ruta de condicionamiento de forma aislada.
+- Analisis de posiciones en herramientas de estudio: dado un FEN, el modelo devuelve una jugada y una explicacion textual que puede mostrarse al usuario junto a la linea critica, util para plataformas de entrenamiento ajedrecistico que quieran comentarios en lenguaje natural.
+- Investigacion en modelos de lenguaje aplicados a ajedrez: permite comparar el rendimiento de un decodificador condicionado por tablero frente a motores clasicos en tareas de seleccion de jugada y generacion de variantes.
+- Generacion de comentarios de partida: combinando el historial de FENs con el runner, se pueden producir descripciones de jugadas y lineas para articulos o retransmisiones, asumiendo que las explicaciones pueden contener errores.
+- Evaluacion de robustez de modelos condicionados: el etiquetado explicito de `move_source` y el fallback con semilla facilitan reproducir y auditar el comportamiento ante respuestas no parseables.
+- Prototipado de asistentes de ajedrez en entornos de investigacion con GPU: el repositorio incluye pesos y codigo, lo que reduce la integracion a descargar y ejecutar `infer.py`.
+- Benchmarking de arquitecturas Flamingo en dominios estructurados: el modelo sirve como caso de estudio de inyeccion de un codificador especializado (LC0) en un LLM pequeno de 3B parametros.
+- Reproduccion de evaluaciones Elo: la configuracion por defecto (temperatura, top-k, top-p, semillas) esta fijada para replicar la evaluacion del autor, lo que facilita experimentos comparativos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo menciona un smoke test end-to-end en BF16 sobre CUDA con una unica posicion, ejecutado en una H100 de 80 GB con una fraccion de memoria vLLM de 0,20, y remite a VALIDATION.json para las comprobaciones realizadas sobre el paquete exportado. El autor indica expresamente que esta prueba es una verificacion de ejecucion, no un benchmark de precision ajedrecistica ni una especificacion minima de GPU validada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos combinados ocupan unos 8,4 GiB; hay que sumar espacio para el decodificador, la cross-attention, el encoder, la cache KV y las activaciones. El autor propone 24 GiB o mas como configuracion de partida conservadora, no como minimo medido.
-- GPU recomendadas: se ha verificado una H100 de 80 GB (fraccion de memoria vLLM de 0,20 en el smoke test). Cualquier GPU NVIDIA con CUDA y 24 GiB o mas es un punto de partida razonable. No hay datos de consumo en GPUs de gama consumer.
-- Compatibilidad con GPU consumer: no disponible; no se especifica ninguna RTX en la informacion proporcionada.
-- CPU: la inferencia en CPU no esta implementada; el runner detecta CUDA y falla de forma explicita cuando no esta disponible.
-- Opciones de despliegue: el paquete incluye un runner propio (infer.py) que usa vLLM; se ejecuta con Python 3.12 y un entorno fijado en requirements-inference.txt. No se contempla cargar solo los pesos de la raiz con AutoModelForCausalLM, porque eso omite la ruta de condicionamiento por tablero.
-- Configuracion relevante: el runner usa ejecucion eager, el runner V1 en proceso y prefix caching desactivado de forma deliberada. No se debe activar prefix caching, ya que prompts de texto identicos pueden corresponder a tableros distintos.
-- Latencia y throughput: no disponible. Solo se documenta que las explicaciones largas pueden requerir --max-tokens 8192 y que las salidas truncadas pueden no contener jugada.
+- VRAM estimada: no disponible de forma explicita; el modelo se ejecuta en BF16 y la descarga total ronda los 8,4 GiB, por lo que se necesita espacio y memoria suficientes para el decodificador y el codificador cargados por separado.
+- GPU recomendadas: H100 80 GB (unico hardware validado por el autor). GPUs mas pequenas no estan validadas.
+- GPU de consumo: no se documenta compatibilidad con RTX 4090 u otras GPUs consumer; al no estar validadas, no se puede confirmar que quepan.
+- Requisitos de sistema: Linux, driver compatible con CUDA 13, soporte BF16 y `uv` para gestionar el entorno.
+- Opciones de despliegue: runner propio `infer.py` con vLLM 0.27.1, Transformers 5.15.0 y PyTorch 2.13.0; no se documenta soporte para llama.cpp, Ollama ni TGI.
+- Parametros de inferencia: `--gpu-memory-utilization` por defecto 0,72, batch capacity 32 y context length 2304.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa con alternativas. La comparacion siguiente se limita a los datos publicados en la informacion disponible y marca como no disponible cualquier metrica de rendimiento.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| princeton-nlp/queen_pawn-8 | 3,08 mil millones (mas encoder y cross-attention) | no disponible | no disponible | no disponible; terminos upstream aplicables | Hugging Face, 0 descargas y 0 likes en el momento del registro |
-| SmolLM3-3B (modelo base) | aproximadamente 3B | no disponible en esta informacion | no disponible | Apache-2.0 | Hugging Face |
-| Leela Chess Zero (encoder BT5) | no disponible | no disponible | no disponible | terminos de LC0 | lczero.org |
+| QUEEN (PAWN-8) | 3.075 M | 2304 | Ajedrez (FEN a jugada y texto) | no disponible (base Apache-2.0) | Pesos y codigo en HF |
+| SmolLM3-3B | 3B | no disponible en esta ficha | Lenguaje general | Apache-2.0 | HF |
+| Leela Chess Zero BT5 | no disponible | no aplica | Ajedrez (motor) | terminos LC0 | lczero.org |
 
-No se han identificado en la informacion proporcionada otros modelos de lenguaje de ajedrez condicionados por tablero con los que comparar de forma directa.
+La comparacion con motores de ajedrez clasicos (Stockfish, LC0) no es directa: QUEEN no es un ejecutable UCI y sus explicaciones pueden ser incorrectas. Frente a SmolLM3-3B, la diferencia es el condicionamiento por tablero y el codigo de inferencia especifico.
 
 ## Limitaciones y advertencias
 
-- Las explicaciones y variantes generadas pueden ser incorrectas; el autor pide validar las jugadas antes de usarlas.
-- No es un oraculo de ajedrez verificado ni un ejecutable UCI; la jugada emitida es una extraccion del texto, no una eleccion garantizada por un motor.
-- Si la generacion se trunca, la salida puede no contener ninguna jugada y best_move_uci quedara como null.
-- El modelo solo declara soporte de ingles; no hay capacidades multilingues documentadas.
-- No se debe cargar unicamente los pesos de la raiz con AutoModelForCausalLM: se omite la ruta de condicionamiento por tablero y el resultado carece de sentido.
-- No se debe activar prefix caching en el despliegue, porque prompts de texto identicos pueden referirse a tableros diferentes y no deben compartir cache condicionada.
-- La inferencia en CPU no esta implementada y el runner falla si CUDA no esta disponible.
-- El release excluye datos de entrenamiento, estado del optimizador y conjuntos de evaluacion, lo que impide auditar sesgos o composicion del dataset.
-- Licencia: la model card no aserta una licencia global para la release combinada; los terminos de los componentes upstream (SmolLM3-3B y Leela Chess Zero) siguen siendo aplicables. No hay confirmacion de uso comercial, por lo que conviene revisar los terminos upstream antes de desplegarlo en produccion.
-- No hay benchmarks de precision ajedrecistica publicados, solo un smoke test de ejecucion.
-- Riesgo de alucinacion: la propia model card advierte que el texto generado puede ser incorrecto, algo esperable en un decodificador de 3B con decodificacion muestreada por defecto (temperatura 0,6, top-k 20, top-p 0,95).
-- Sesgos conocidos: no disponible.
+- El propio autor advierte que las explicaciones y variantes pueden ser erroneas; no debe tratarse como fuente de verdad ajedrecistica.
+- No es un ejecutable UCI y no sustituye a un motor de ajedrez en pipelines de analisis convencionales.
+- Solo se ha validado en una H100 80 GB; el rendimiento en GPUs menores es desconocido.
+- No soporta inferencia en CPU.
+- Solo idioma ingles.
+- La licencia combinada no esta declarada; el modelo base es Apache-2.0 pero el codificador LC0 tiene terminos propios, por lo que el uso comercial requiere revision legal.
+- Riesgo de alucinacion en las explicaciones y lineas generadas, aunque la linea critica se verifica en legalidad.
+- El texto muestreado puede variar segun hardware, versiones de librerias y batching, lo que afecta a la reproducibilidad exacta.
+- Un FEN aislado no permite recuperar el historial de la partida; para reproducir una evaluacion hay que aportar `--history` y el indice de partida.
+- El fallback a jugada legal aleatoria con semilla puede enmascarar fallos de parseo si no se revisa `move_source`.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/princeton-nlp/queen_pawn-8
+- Modelo en Hugging Face: https://huggingface.co/princeton-nlp/queen_pawn-8
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Leela Chess Zero: https://lczero.org/
+- Instalacion de uv: https://docs.astral.sh/uv/getting-started/installation/

@@ -2,101 +2,107 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Lightning-30B-A3B es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por NVIDIA, distribuido originalmente en BF16 y aquí publicado como cuantización GGUF por el usuario Xylolabs. El modelo combina una arquitectura híbrida con capas Mamba-2, capas MoE y capas de atención clásica, lo que lo sitúa en la familia de modelos Nemotron orientados a eficiencia en inferencia manteniendo un tamaño total de aproximadamente 32.900 millones de parámetros con solo unos 3.000 millones activos por token (de ahí el sufijo A3B).
+NVIDIA-Nemotron-3.5-Lightning-30B-A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por NVIDIA, con 32.913.266.240 parametros totales y aproximadamente 3.000 millones de parametros activos por token (de ahi el sufijo A3B). La arquitectura combina capas transformer con Mamba-2, una hibridacion orientada a reducir el coste computacional en contextos largos manteniendo calidad de generacion. El modelo base se distribuye en BF16 bajo licencia OpenMDW-1.1.
 
-Esta ficha cubre específicamente la conversión GGUF Q4_K_M publicada por Xylolabs, pensada para su uso con llama.cpp y entornos de inferencia local. El archivo conserva los valores cuantizados originales, el tokenizador y los metadatos de chat, y ocupa unos 25,4 GB en disco, lo que lo hace viable en GPUs de gama alta de consumo y en servidores con suficiente VRAM.
+Esta ficha corresponde concretamente a la conversion a GGUF realizada por Xylolabs, publicada el 14 de noviembre de 2026, que permite ejecutar el modelo en llama.cpp sobre CUDA, Metal o CPU. El repositorio contiene una unica cuantizacion Q4_K_M de 25,43 GB, junto con el tokenizer original, la plantilla de chat y el modulo MTP (Multi-Token Prediction) del modelo base.
 
-La relevancia de esta publicación radica en que permite ejecutar un modelo Nemotron de 30B con activación dispersa en hardware asequible, manteniendo las capacidades conversacionales y de razonamiento del modelo base, con soporte declarado para inglés y coreano.
+La relevancia practica del artefacto esta en que hace accesible un MoE de 32,9 B parametros con ventanas de contexto de hasta 256K tokens en hardware de consumo y estaciones de trabajo, algo que la version BF16 original no permite por su huella de memoria. La cuantizacion conserva un 92,13% de coincidencia en top-1 frente al BF16 de referencia, con una divergencia KL media de 0,0346 sobre 8.188 posiciones de texto en ingles y coreano.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 52 capas principales (23 Mamba-2, 23 MoE, 6 de atención); incluye módulo MTP adicional |
-| Parametros totales | 32.913.266.240 (~32,9 B) |
-| Parametros activos | ~3 B (sufijo A3B; no se detalla el desglose exacto en la información disponible) |
-| Longitud de contexto | No disponible en la información proporcionada (los metadatos originales no se modifican; el ejemplo de uso limita a 2.048 tokens y las evaluaciones usan 8.192) |
-| Tipos de cuantizacion | GGUF Q4_K_M mixto (tipos reales: BF16, F32, Q4_K, Q5_0, Q8_0); media de 6,179 bits por peso |
-| Idiomas soportados | Inglés (en), coreano (ko) |
+| Arquitectura | MoE hibrida transformer + Mamba-2 (segun tags del autor) |
+| Parametros totales | 32.913.266.240 (32,9 B) |
+| Parametros activos | ~3 B (denominacion A3B) |
+| Longitud de contexto | Hasta 256K tokens en la tabla de hardware del autor; 32K con offload en GPU de 24 GB |
+| Tipos de cuantizacion | Q4_K_M (unica disponible en este repo) |
+| Idiomas soportados | Ingles (en), coreano (ko) |
 | Licencia | OpenMDW-1.1 |
 | Formato de pesos | GGUF (llama.cpp) |
+| Tamano del archivo Q4_K_M | 25,43 GB |
+| Modulo adicional | Incluye modulo MTP (Multi-Token Prediction) |
+| Commit minimo de llama.cpp | `cd959bae99ff4bed22bef2604f45241c09bbb8c8` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido de 52 capas que alterna 23 capas Mamba-2 (modelo de espacio de estados), 23 capas MoE y 6 capas de atención tradicional. Cada capa MoE conserva 128 expertos enrutados más un experto compartido. Adicionalmente incluye un módulo MTP (multi-token prediction) cuyos pesos se conservan íntegramente en esta conversión, aunque su uso como drafter requiere una implementación compatible separada.
+La arquitectura declarada en los metadatos es una hibridacion de transformer con Mamba-2, es decir, capas de atencion combinadas con capas de espacio de estados (SSM). Este diseno busca mantener la calidad de un modelo denso grande con un coste de atencion reducido en secuencias largas, algo coherente con la ventana de contexto de hasta 256K tokens que el autor documenta en su tabla de recomendaciones de hardware. El modelo es MoE, con 32,9 B parametros totales y alrededor de 3 B activos por token, lo que explica que una cuantizacion de 25,43 GB pueda ejecutarse con latencias razonables en GPUs de consumo.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card de esta conversión remite a la model card original de NVIDIA para la receta de entrenamiento. La conversión a GGUF fue realizada con llama.cpp sin nuevo entrenamiento, calibración ni cuantización adicional: se preservan los valores cuantizados existentes y los metadatos de tokenizador y chat.
+No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras) en la informacion proporcionada; la model card de esta conversion remite explicitamente a la model card original de NVIDIA para la receta de entrenamiento. La innovacion tecnica documentada en este repositorio es la inclusion del modulo MTP, que habilita decodificacion multi-token y por tanto puede acelerar la generacion especulativa en llama.cpp. La cuantizacion Q4_K_M se evaluo contra el paso BF16 en transformers, con divergencia KL media de 0,0346 y 92,13% de coincidencia top-1 sobre 8.188 posiciones de texto en ingles y coreano.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés y coreano.
-- Razonamiento con modo de pensamiento (thinking mode) configurable mediante `enable_thinking` en la plantilla de chat.
-- Soporte de plantilla Jinja (`--jinja`) para formateo de chat en llama.cpp.
-- Arquitectura MoE con activación dispersa (~3 B activos de ~32,9 B totales) para eficiencia en inferencia.
-- Predicción multi-token mediante el módulo MTP incluido (requiere implementación compatible).
-- Capacidades de tool calling y agentes: no disponibles explícitamente en la información proporcionada; deben validarse contra el modelo base.
-- Capacidades de visión o audio: no disponibles.
+- Generacion de texto conversacional multi-turno, con plantilla de chat incluida en el archivo GGUF.
+- Razonamiento y generacion de texto largo gracias a ventanas de contexto de hasta 256K tokens (segun la tabla de hardware del autor).
+- Soporte multilingue limitado a ingles y coreano, segun los metadatos de idioma del modelo.
+- Decodificacion multi-token mediante el modulo MTP incluido en los pesos.
+- Inferencia en llama.cpp sobre CUDA, Metal y CPU, con soporte de offload de expertos a RAM del sistema.
+- Compatibilidad con endpoints (tag `endpoints_compatible` en los metadatos de Hugging Face).
+- No se documenta en la informacion disponible soporte explicito de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede gestionar diálogos multi-turno con plantilla de chat Jinja en llama.cpp, adecuado para despliegues en estación de trabajo con una sola GPU de 24-32 GB.
-- Razonamiento con cadena de pensamiento: activando `enable_thinking` se obtienen respuestas razonadas paso a paso, útil para tareas analíticas donde la latencia no es crítica.
-- Procesamiento bilingüe inglés-coreano: atención al cliente o traducción asistida en entornos donde se requieran ambos idiomas.
-- Prototipado de agentes y pipelines: la arquitectura MoE con ~3 B activos reduce el coste computacional por token, lo que facilita iteraciones rápidas en desarrollo.
-- Inferencia en el borde o servidores modestos: el archivo Q4_K_M de 25,4 GB cabe en GPUs consumer de gama alta (por ejemplo, RTX 4090 de 24 GB requiere offloading parcial; A6000 o RTX 5090 de 32 GB permiten carga completa).
-- Evaluación comparativa de cuantizaciones: al preservar los valores cuantizados originales y publicar métricas KL frente al BF16, sirve como referencia reproducible para estudiar el impacto de la cuantización en modelos híbridos Mamba-2/MoE.
-- Investigación sobre arquitecturas híbridas SSM-transformer: permite experimentar con capas Mamba-2 y MoE en hardware asequible sin necesidad de clústeres multi-GPU.
+- Asistente conversacional autoalojado: el modelo puede desplegarse con `llama-server` en una estacion de trabajo con una RTX 5090 (32 GB) y mantener conversaciones multi-turno con contexto de hasta 128K tokens, sin depender de APIs externas.
+- Procesamiento de documentos largos en ingles o coreano: con 256K tokens de contexto en un H100 o en un Mac Studio con memoria unificada, es viable resumir o extraer informacion de contratos, informes o expedientes extensos en una sola pasada.
+- Analisis de codigo y bases de codigo: la ventana larga permite cargar varios ficheros fuente en el contexto para tareas de revision, explicacion o generacion de parches, ejecutando el modelo en local con llama.cpp.
+- Traduccion y asistencia bilingue ingles-coreano: el soporte declarado de ambos idiomas lo hace adecuado para herramientas internas de traduccion o atencion al cliente en esos mercados.
+- Despliegue en hardware de consumo con offload de expertos: usando `--n-cpu-moe` en una RTX 4090 o RTX 3090 de 24 GB, se pueden descargar los expertos de las primeras capas a RAM del sistema y mantener el resto en VRAM, habilitando inferencia local a menor velocidad.
+- Procesamiento por lotes en servidores con GPU profesional: en una H200, B200 o B300, el modelo Q4_K_M de 25,43 GB deja amplio margen de VRAM para cache KV a 256K tokens, lo que permite servir varias peticiones concurrentes con llama-server.
+- Generacion aumentada por recuperacion (RAG) sobre corpus coreanos o ingleses: el contexto largo reduce la necesidad de trocear documentos y permite inyectar muchos fragmentos recuperados en un solo prompt.
 
 ## Benchmarks y rendimiento
 
-La model card de esta conversión no reporta benchmarks estándar (MMLU, HumanEval, GSM8K, etc.). Sí incluye una evaluación de fidelidad de la cuantización frente al BF16 original:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El unico dato de evaluacion proporcionado es la fidelidad de la cuantizacion respecto al BF16 de referencia:
 
-| Metrica | Q4_K_M (esta conversion) | BF16 original |
-|---|---|---|
-| Aciertos en conjunto de referencia | 32/33 + 6/7 | 31/33 + 7/7 |
-| Perdidas contadas | 0 | — |
-| Respuestas rotas | 0 | — |
-| KL media vs. BF16 | 0,107224 | — |
-
-La KL media se midió sobre cuatro secuencias emparejadas de 2.048 tokens en inglés y coreano, con 8.188 posiciones evaluadas. Las ejecuciones actuales usan contexto de 8.192 tokens. No se reporta velocidad ni throughput.
-
-No se han publicado resultados de benchmarks estándar en la información disponible.
+| Metrica | Valor |
+|---|---|
+| Cuantizacion evaluada | Q4_K_M |
+| Tamano | 25,43 GB |
+| Divergencia KL media vs BF16 | 0,0346 |
+| Coincidencia top-1 vs BF16 | 92,13% |
+| Posiciones evaluadas | 8.188 (texto en ingles y coreano) |
+| Referencia | Paso BF16 en transformers |
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~25,42 GB solo para los pesos GGUF, más espacio para caché KV, estado recurrente (capas Mamba-2) y buffers de trabajo.
-- GPU recomendadas: A100 40/80 GB, H100, RTX A6000 (48 GB), RTX 5090 (32 GB) para carga completa; RTX 4090 (24 GB) requiere offloading parcial de capas a CPU.
-- Cabe en GPU consumer: sí, en modelos de 32 GB o superiores; en 24 GB con offloading.
-- Opciones de despliegue: llama.cpp (probado con la versión referenciada en la model card, etiquetada como v0.9.0), y por extensión cualquier frontend compatible con GGUF (Ollama, LM Studio, llama-cpp-python). vLLM y TGI no están confirmados para este formato.
-- Latencia y throughput: no reportados en la información disponible.
+- VRAM estimada para inferencia: 25,43 GB para el archivo Q4_K_M, mas cache KV en f16 al contexto elegido, mas unos 2 GB de runtime. La regla del autor es que el archivo, el KV cache y el runtime quepan en el 90% de la memoria disponible.
+- GPU de 24 GB (RTX 4090, RTX 3090): no cabe entero; requiere offload de expertos a RAM del sistema con `--n-cpu-moe N` y contexto de hasta 32K.
+- GPU de 32 GB (RTX 5090): cabe completo con contexto de hasta 128K.
+- GPU de 48 GB (RTX 6000 Ada o 2 x 24 GB): contexto de hasta 256K.
+- GPU de 80 GB (H100): contexto de hasta 256K con margen amplio para concurrencia.
+- GPU de 96 GB (RTX PRO 6000 Blackwell), 141 GB (H200), 192 GB (B200) y 288 GB (B300): contexto de hasta 256K.
+- Memoria unificada: DGX Spark (128 GB), Mac Studio M5 Max (128 GB) y Mac Studio M5 Ultra (256 GB y 512 GB) soportan el archivo completo con contexto de hasta 256K.
+- Opciones de despliegue: llama.cpp (commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` o posterior), con los binarios `llama-cli` y `llama-server`. Compilacion con `-DGGML_CUDA=ON` para NVIDIA; soporte Metal y CPU incluido.
+- Latencia y throughput: no se han publicado cifras de tokens por segundo en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Nemotron-3.5-Lightning-30B-A3B (esta conversion GGUF) | ~32,9 B | ~3 B | No disponible | OpenMDW-1.1 | GGUF Q4_K_M |
-| Nemotron-3.5-Lightning-30B-A3B BF16 (original) | ~32,9 B | ~3 B | No disponible | OpenMDW-1.1 | Safetensors BF16 |
-| Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
+No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no esta disponible. A continuacion se comparan unicamente los atributos documentados de este artefacto frente a su propia version BF16 de referencia:
 
-No se dispone de información sobre modelos comparables de la misma categoría (híbridos Mamba-2/MoE de ~30 B) en la documentación proporcionada. Se recomienda consultar la model card original de NVIDIA para referencias cruzadas.
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Nemotron-3.5-Lightning-30B-A3B Q4_K_M (Xylolabs) | 32,9 B totales, ~3 B activos | Hasta 256K | GGUF | OpenMDW-1.1 | Hugging Face, llama.cpp |
+| Nemotron-3.5-Lightning-30B-A3B BF16 (NVIDIA) | 32,9 B totales, ~3 B activos | No disponible en esta ficha | Safetensors (BF16) | OpenMDW-1.1 | Hugging Face |
+
+Comparativas con otros modelos MoE de tamano similar (por ejemplo, familias tipo Qwen MoE o Mixtral): no disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo inglés y coreano declarados; el rendimiento en castellano no está garantizado ni evaluado.
-- Contexto: la longitud máxima de contexto no se especifica en esta conversión; los metadatos originales se conservan, pero el ejemplo de uso limita a 2.048 tokens y las evaluaciones a 8.192.
-- Módulo MTP: los pesos se conservan pero requieren una implementación compatible separada; no se ha validado su funcionamiento en esta conversión.
-- Fidelidad de cuantización: la KL media de 0,107 frente a BF16 indica degradación medible; para tareas sensibles puede ser preferible el BF16 original.
-- Sesgos y alucinaciones: no documentados en la información proporcionada; deben evaluarse contra el modelo base y la model card de NVIDIA.
-- Licencia OpenMDW-1.1: conviene revisar los términos completos en el archivo `LICENSE` del repositorio antes de uso comercial; la conversión se distribuye "tal cual", sin garantía ni respaldo de NVIDIA.
-- Evaluación: las pruebas de la model card cubren textos almacenados y prompts cortos; una integración real necesita su propia evaluación de tarea.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: poca validación comunitaria; considerar reproducibilidad y procedencia.
-- No se reportan velocidades de inferencia, lo que impide estimar latencia en producción sin pruebas propias.
+- Idiomas: solo se declaran ingles y coreano; el rendimiento en castellano no esta verificado y previsiblemente sera inferior.
+- Una unica cuantizacion disponible (Q4_K_M); no hay variantes Q5, Q6, Q8 ni f16 en este repositorio, lo que limita el ajuste fino entre calidad y memoria.
+- Perdida de fidelidad por cuantizacion: 7,87% de divergencia en top-1 respecto al BF16, lo que puede afectar a tareas sensibles a tokens exactos (codigo, matematicas, extraccion de entidades).
+- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni de tasas de alucinacion en la informacion disponible.
+- Sesgos: no se documentan analisis de sesgo en la informacion proporcionada.
+- Licencia OpenMDW-1.1: es necesario revisar los terminos completos del fichero `LICENSE` antes de un uso comercial; la model card no resume las restricciones.
+- Relacion con NVIDIA: Xylolabs declara no estar afiliada ni respaldada por NVIDIA; el artefacto es una conversion de terceros, no una release oficial.
+- Dependencia de version: requiere un commit concreto de llama.cpp o posterior; versiones anteriores pueden no cargar correctamente el modulo MTP o la arquitectura hibrida.
+- El rendimiento en contextos de 256K depende criticamente del hardware; en GPUs de 24 GB el contexto practico baja a 32K con offload.
+- No se documenta soporte de tool calling ni de agentes, por lo que integrarlo en pipelines de automatizacion requiere validacion previa.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta conversión: https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
+- Repositorio GGUF: https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
-- Documentación GGUF + llama.cpp: https://huggingface.co/docs/hub/gguf-llamacpp
-- Repositorio llama.cpp (rama referenciada): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio del autor (Xylolabs): https://github.com/XylolabsInc/tensix-bfp-gptq
-- Licencia OpenMDW-1.1: https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/blob/main/LICENSE
+- Licencia (OpenMDW-1.1): https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/blob/main/LICENSE
+- llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Repositorio de herramientas de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq

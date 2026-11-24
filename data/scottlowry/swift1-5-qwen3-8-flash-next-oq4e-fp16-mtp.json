@@ -45,11 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Does anyone have Swift 1.5 Qwen 3.8 27B oQe6? : r/oMLX - Reddit",
-      "url": "https://www.reddit.com/r/oMLX/comments/1wwhwu3/does_anyone_have_swift_15_qwen_38_27b_oqe6/",
-      "snippet": "vor 4 Tagen ... https://huggingface.co/txgsync/Qwen3.8-Flash-Next-Dynamic-oQ5e-BF16-PLE-mtp ... Swift1.5-Qwen3.8-Flash-Next is phenomenal vs. base 3.8-Flash! 260 ..."
-    }
-  ]
+  "sources": []
 }

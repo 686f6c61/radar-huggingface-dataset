@@ -2,100 +2,123 @@
 
 ## Resumen
 
-MoziAI-35B-V3.8 es un ajuste fino (finetune) del modelo base Ornith-1.5-35B-A3B, publicado por el usuario chenyumo y asociado al equipo del creador de contenido financiero Chen Yumo. Se distribuye principalmente en formato GGUF para llama.cpp bajo licencia Apache-2.0 y está orientado a despliegue local en hardware de consumo. El modelo parte de una arquitectura MoE de 35.505.251.456 parámetros totales, con linaje declarado Qwen3.5-35B-A3B / Qwen3.6-35B-A3B, e incorpora componentes de Gemma 4 según la model card.
+MoziAier-35B-V3.9 es un modelo de lenguaje multimodal de tipo Mixture of Experts (MoE) desarrollado por el equipo de Chen Yumo, orientado al dominio financiero y publicado bajo el identificador `chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored` en Hugging Face. Con 34.660.610.688 parametros totales (aproximadamente 35B), se construye sobre el modelo base `ornith-ai/Ornith-1.5-35B-A3B`, aunque la model card indica que esta version cambia el sustrato a Occamy-1.0-35B-A3B, de arquitectura Qwen3.6-35B-A3B. El modelo se distribuye principalmente en formato GGUF para llama.cpp y esta disenado para ejecutarse localmente, incluso en GPU de consumo.
 
-La propuesta diferencial del autor es triple: una cuantización propia denominada MoziSmartBit que comprime el modelo hasta unos 15,9 GB (frente a los aproximadamente 22 GB de un Q4_K_M estándar), un marco de razonamiento estructurado llamado "seven-dimensional thinking" con marcadores `moziAI-Think` y un mecanismo de iteración de agente `moziAI-Loop`. A ello se suma un enfoque vertical en finanzas, soporte declarado de tool calling, capacidades multimodales (visión) y una variante "uncensored" sin moderación de contenido.
+La propuesta central de esta version es la capacidad de "long-horizon": ejecucion estable de tareas multi-paso a lo largo de una ventana de contexto de clase 250K (256K tokens, 262.144 en concreto). Esto lo hace adecuado para agentes que encadenan decenas de llamadas a herramientas, analisis de documentos extensos o trabajo de ingenieria sobre multiples ficheros. Ademas, incorpora vision (lectura de capturas de pantalla y graficos), tool calling con llamadas paralelas y un modo de razonamiento estructurado en siete dimensiones con mecanismo de auto-verificacion (LOOP).
 
-Es relevante ahora porque combina varias tendencias simultáneas: modelos MoE de tamaño medio que caben en GPU de consumo, cuantizaciones agresivas con decodificación especulativa (MTP) y ajustes de dominio vertical sobre bases abiertas. No obstante, la información pública disponible es fundamentalmente la model card del autor: no hay paper, no hay resultados de benchmarks verificables y la mayor parte de las afirmaciones de rendimiento no están respaldadas por evaluaciones independientes.
+El aspecto mas diferenciador es su esquema de cuantizacion hibrida propietario, MoziSmartBit, que reduce el fichero principal a 12,99 GB (IQ3_XXS en las capas de expertos con imatrix de occamy), frente a los 21-22 GB tipicos de un Q4_K_M para un MoE de 35B. Esto baja el suelo de VRAM a 8 GB con offload a RAM del sistema. El modelo se declara "uncensored" y libre para uso comercial, con soporte principal de chino e ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts) tipo transformer, linaje declarado Qwen3.5-35B-A3B / Qwen3.6-35B-A3B con componentes Gemma 4 |
-| Parametros totales | 35.505.251.456 (35,5 B) |
-| Parametros activos | no disponible (la model card no publica el número de expertos activos ni la proporción de activación) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con cuantización propietaria MoziSmartBit (tamaño de referencia ~15,9 GB, ratio de compresión declarado 4,5x); se menciona comparación con Q4_K_M estándar (~22 GB); matriz de calibración imatrix |
-| Idiomas soportados | zh, en (metadatos del repo); la model card declara soporte de 201 idiomas y dialectos con optimización especial del chino |
-| Licencia | apache-2.0 (componentes upstream Qwen/Gemma Apache-2.0, incrementos Ornith MIT según NOTICE) |
-| Formato de pesos | GGUF (librería llama-cpp) |
-| Modelo base | ornith-ai/Ornith-1.5-35B-A3B |
-| Tamaño del repositorio | 47,8 GB |
-| Pipeline | text-generation |
-| Fecha de publicación | 2026-08-10 (creación); actualización 2026-09-25; versión V3.8 fechada 2026-09-01 |
-| Descargas / likes | 7.658 / 26 |
+| Arquitectura | Transformer MoE (arquitectura Qwen3.6-35B-A3B, base Occamy-1.0-35B-A3B) |
+| Parametros totales | 34.660.610.688 (~35B) |
+| Parametros activos | no disponible (etiquetado como A3B, sin cifra exacta publicada) |
+| Longitud de contexto | 262.144 tokens (256K; presets recomendados de 192K en 16 GB y 250K en 24 GB+) |
+| Tipos de cuantizacion | MoziSmartBit hibrida (IQ3_XXS en capas de expertos + imatrix occamy); mmproj en Q8_0 |
+| Idiomas soportados | chino (en), ingles (zh); chino especialmente ajustado |
+| Licencia | other (la model card indica "free for commercial use") |
+| Formato de pesos | GGUF (llama.cpp); plantilla de chat embebida en `tokenizer.chat_template` |
+| Tamano del fichero principal | 12,99 GB (IQ3_XXS) |
+| Fichero de vision | 0,57 GB (mmproj Q8_0) |
+| Perdida de cuantizacion | PPL 8,3044 (+0,47% frente a BF16) |
+| Decodificacion especulativa | no soportada (sin cabeza MTP; debe permanecer desactivada) |
+| Tamano del repositorio | 62,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino sobre Ornith-1.5-35B-A3B, una base MoE de 35,5 B parámetros totales que el autor describe como alineada con la arquitectura Qwen3.5-35B-A3B / Qwen3.6-35B-A3B e integrando componentes de Gemma 4. Al ser una arquitectura MoE, solo una fracción de los parámetros se activa por token, lo que explica que un modelo de 35 B pueda ejecutarse en GPUs de consumo con unos 20 GB de VRAM. El repositorio incluye el tag `MTP`, que en el ecosistema Qwen corresponde a multi-token prediction, y la model card dedica una sección a "speculative decoding acceleration", lo que sugiere que el modelo incorpora cabezas de predicción multi-token para acelerar la decodificación especulativa.
+El modelo es un transformer de tipo Mixture of Experts con 35B parametros totales y la designacion A3B, que sugiere del orden de 3B parametros activos por token, aunque la cifra exacta de parametros activos no se publica en la informacion disponible. La arquitectura declarada es Qwen3.6-35B-A3B, implementada sobre el modelo base Occamy-1.0-35B-A3B. La model card menciona que el equipo combina este sustrato con su propia metodologia de entrenamiento, un marco de razonamiento en siete dimensiones y un mecanismo de agente denominado LOOP, orientado a la auto-verificacion en tareas complejas.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset de ajuste fino, ni si se emplearon técnicas de RLHF, DPO o similares. La model card menciona de forma genérica "datos financieros propios" y capacidades de dominio financiero, pero sin cifras ni detalles metodológicos. Las innovaciones declaradas son de posprocesado e inferencia más que de arquitectura: la cuantización MoziSmartBit (estrategia diferenciada por capas adaptada a la estructura MoE, con calibración imatrix), el marco de razonamiento en siete dimensiones con niveles 0, 1 y 2 según complejidad de la tarea, y el bucle de agente `moziAI-Loop` de dos rondas (ejecutar/evaluar y ajustar/verificar). Ninguna de estas afirmaciones está acompañada de evaluaciones reproducibles.
+No se detallan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La innovacion tecnica mas documentada es la cuantizacion hibrida MoziSmartBit, que aplica IQ3_XXS a las capas de expertos con una imatrix especifica de occamy y logra una perdida de perplejidad de solo +0,47% respecto a BF16. Tambien destaca la integracion de la plantilla de chat directamente en el GGUF, lo que elimina la necesidad de un fichero jinja externo. El modelo no incorpora cabeza MTP, por lo que la decodificacion especulativa no esta disponible y debe desactivarse explicitamente en los despliegues.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con marcadores explícitos de razonamiento (`moziAI-Think`) y de iteración (`moziAI-Loop`).
-- Razonamiento estructurado por niveles de complejidad: respuesta rápida en dos dimensiones para consultas simples, cinco dimensiones para análisis y siete dimensiones para desarrollo de código y estrategia.
-- Programación general declarada: desarrollo full-stack, depuración y diseño de arquitectura en Python, JavaScript, TypeScript, Go y Rust.
-- Tool calling / function calling, con optimización declarada para llamadas a herramientas en contexto financiero.
-- Comportamiento de agente con reflexión y auto-verificación en dos rondas para tareas complejas.
-- Capacidades multimodales: el tag `vision` y el título "multimodal" indican soporte de entrada de imágenes, aunque no se detallan resoluciones, formato de prompt ni arquitectura del codificador visual.
-- Capacidades financieras: preguntas y respuestas de dominio, programación cuantitativa y análisis de datos financieros.
-- Multilingüismo declarado de 201 idiomas y dialectos, con optimización específica para chino; los metadatos del repo solo listan zh y en.
-- Modo "uncensored": sin moderación de contenido en la salida.
-- Decodificación especulativa vía MTP para acelerar la inferencia.
+- Generacion de texto y razonamiento estructurado mediante un marco de siete dimensiones que adapta la profundidad del pensamiento a la complejidad de la tarea.
+- Razonamiento multi-paso con mecanismo LOOP de auto-verificacion para tareas de largo horizonte.
+- Tool calling y function calling, con formato correcto en llamadas de un solo turno y multi-turno, y soporte de llamadas paralelas.
+- Capacidades de agente: ejecucion estable de decenas de llamadas a herramientas dentro de una ventana de contexto de clase 250K.
+- Vision: lectura de capturas de pantalla locales y comprension de graficos mediante el proyector mmproj.
+- Dominio financiero: preguntas y respuestas financieras, codificacion de estrategias cuantitativas y uso de herramientas en ese contexto.
+- Capacidades multilingues con chino e ingles como idiomas principales, con ajuste especial del chino.
+- Modo "uncensored": el autor declara ausencia de filtros de rechazo, lo que amplia el rango de respuestas pero traslada al usuario la responsabilidad de uso.
+- Analisis de documentos largos y trabajo sobre multiples ficheros sin perder el hilo de la tarea.
 
 ## Casos de uso
 
-- Análisis financiero asistido en local: el modelo puede procesar informes, comparar métricas y redactar resúmenes de resultados manteniendo los datos dentro de la infraestructura propia, lo que resulta adecuado para entornos con requisitos de confidencialidad y para evitar costes por token en la nube.
-- Generación y revisión de código en pipelines de CI/CD: con soporte de tool calling y un modo de razonamiento de siete dimensiones orientado a desarrollo, puede integrarse como paso de revisión automática, generación de tests o corrección de parches en Python, Go o Rust.
-- Agentes multi-paso con auto-verificación: el mecanismo `moziAI-Loop` está pensado para flujos donde el modelo descompone la tarea, ejecuta, evalúa y corrige; encaja en automatizaciones de extracción y transformación de datos o en asistentes de operaciones.
-- Asistencia conversacional de dominio con contexto largo: para atención a usuarios en productos financieros o de análisis, siempre que se valide externamente la longitud de contexto real, ya que no está publicada.
-- Procesamiento de documentos con imágenes: gracias al soporte declarado de visión, puede emplearse para extraer información de capturas de pantalla, tablas escaneadas o gráficos financieros, aunque la ausencia de especificaciones del componente visual obliga a validar la calidad antes de producción.
-- Investigación y análisis sin restricciones de contenido: el modo uncensored permite discusión abierta de temas sensibles en entornos académicos o de análisis de riesgos, con la advertencia de que elimina también las salvaguardas frente a contenido dañino.
-- Despliegue en estaciones de trabajo con GPU de consumo: al ocupar unos 15,9 GB en MoziSmartBit, permite ejecutar un MoE de 35 B en una única GPU de 20-24 GB, útil para prototipado y demos sin infraestructura cloud.
+- Agentes autonomos de larga duracion: el modelo puede encadenar decenas de llamadas a herramientas y mantener el estado de la tarea dentro de una ventana de hasta 262.144 tokens, lo que permite flujos de automatizacion que no caben en modelos de contexto corto.
+- Analisis de documentacion financiera extensa: informes anuales, prospectos o transcripciones de resultados pueden cargarse completos en contexto para extraccion de cifras, comparativas y resumenes con trazabilidad a la fuente.
+- Generacion y revision de codigo cuantitativo: soporta tool calling para integrarse en pipelines que ejecutan tests, consultan APIs de datos de mercado o validan estrategias, y su contexto largo permite trabajar sobre repositorios completos.
+- Asistencia en atencion al cliente especializada: conversaciones multi-turno con historial largo e integracion de herramientas de consulta de cuentas o productos, con la ventaja de despliegue local para datos sensibles.
+- Ingenieria sobre multiples ficheros: tareas de refactorizacion o auditoria que requieren leer y correlacionar varios archivos, aprovechando la estabilidad multi-paso declarada en contexto de clase 250K.
+- Analisis de graficos e imagenes tecnicas: con el proyector de vision puede leer capturas de pantalla, dashboards y graficos financieros para extraer tendencias o valores.
+- Despliegue en entornos con hardware limitado: al caber en 8 GB de VRAM con offload y en 16 GB con contexto de 192K, permite prototipado local de agentes sin depender de infraestructura cloud.
+- Procesamiento por lotes de documentos en equipos de consumo: con 12,99 GB de fichero y KV cache q4_0, un equipo con 24 GB puede ejecutar la ventana completa mas vision de forma segura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks verificables en la información disponible. La model card incluye una sección de benchmarks, pero no se han proporcionado las cifras concretas ni la metodología de evaluación, por lo que no es posible presentar una tabla comparativa sin inventar datos. Las únicas afirmaciones cuantitativas del autor son de eficiencia de cuantización (15,9 GB frente a ~22 GB de Q4_K_M, retención declarada de ~99 % de la precisión FP16) y no de calidad en tareas estándar.
+La model card no publica cifras numericas de MMLU, GSM8K ni HumanEval; solo indica que existe una evaluacion "MoziAier-35B-3.9" sobre esos benchmarks sin desglosar resultados. Los unicos datos cuantitativos disponibles son los siguientes:
+
+| Metrica | Resultado |
+|---|---|
+| Perdida de cuantizacion (PPL) | 8,3044 (+0,47% frente a BF16) |
+| Contexto largo | Prueba de estres de clase 250K superada; recuperacion precisa de hechos plantados |
+| Tool calling | Formato correcto en un turno y multi-turno; llamadas paralelas soportadas |
+| Vision | Comprension de capturas de pantalla y lectura de graficos verificadas |
+| MMLU / GSM8K / HumanEval | no disponible (sin cifras publicadas) |
+
+No se han publicado resultados numericos de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 15,9 GB para los pesos en MoziSmartBit; hay que añadir el espacio de la caché KV, que depende de la longitud de contexto (no publicada) y del número de secuencias concurrentes.
-- GPU recomendadas: el autor indica que funciona en GPUs de consumo con 20 GB de VRAM o más; encajan RTX 4090 (24 GB), RTX 3090 (24 GB), RTX 4080 Super (16 GB, justo al límite) y GPUs profesionales como A100 o H100 para mayor concurrencia y contexto.
-- Cabe en GPU de consumo: sí, según el autor, en tarjetas de 20-24 GB con la cuantización propietaria; en configuraciones de 16 GB requeriría cuantizaciones más agresivas no documentadas.
-- Opciones de despliegue: llama.cpp (librería declarada), y por extensión servidores compatibles con GGUF como Ollama o llama-cpp-python; la model card menciona "endpoints_compatible" y una sección de métodos de despliegue. No se confirma soporte de vLLM o TGI, que habitualmente requieren pesos safetensors y no GGUF.
-- Latencia y throughput: no disponibles. El autor promociona la decodificación especulativa MTP como aceleración, pero sin cifras de tokens por segundo.
+- VRAM minima: 8 GB, con offload de capas a RAM del sistema; contexto resultante de 16K-32K con KV cache q4_0 y velocidad reducida.
+- VRAM recomendada: 16 GB para contexto de 192K (unos 0,4 GB de margen); 24 GB o mas para 256K completo con vision.
+- Configuracion medida: 16 GB de VRAM con contexto de 250K consume aproximadamente 15,5 GB, en el limite; el autor recomienda probarlo en el propio equipo.
+- El KV cache debe ser q4_0; con q8_0 la VRAM se incrementa lo suficiente como para no caber en una tarjeta de 16 GB.
+- GPU recomendadas: no se especifican modelos concretos (A100, H100, RTX 4090) en la informacion disponible; los presets se expresan por cantidad de VRAM.
+- Cabe en GPU de consumo: si, desde 8 GB con offload y de forma holgada en 16 GB y 24 GB.
+- Opciones de despliegue: llama.cpp (`llama-server` con `--jinja`, `-ngl 999`, `-fa on`, `-ctk q4_0 -ctv q4_0`), Ollama (via Modelfile), LM Studio y Jan. El servidor por defecto usa el puerto 20016 y expone API compatible con `/v1/chat/completions`.
+- No debe pasarse `--chat-template-file`: la plantilla ya esta embebida en el GGUF y un fichero externo la sobrescribiria.
+- Decodificacion especulativa: debe permanecer desactivada (sin cabeza MTP).
+- Latencia y throughput: no disponibles en la informacion proporcionada; el autor solo advierte que el modo con offload es mas lento.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion tipica | Licencia | Notas |
 |---|---|---|---|---|---|
-| MoziAI-35B-A3B-MOE-MTP-Uncensored | 35,5 B totales (activos no disponibles) | no disponible | Apache-2.0 | GGUF | Finetune financiero con cuantización propietaria y modo uncensored |
-| Ornith-1.5-35B-A3B (modelo base) | 35,5 B totales | no disponible | MIT + Apache-2.0 según el autor | no disponible en la información | Base directa; sin las capas de ajuste financiero ni MoziSmartBit |
-| Familia Qwen3.5-35B-A3B / Qwen3.6-35B-A3B | 35 B clase MoE | no disponible | Apache-2.0 (según el autor) | safetensors y GGUF en el ecosistema | Arquitectura de referencia declarada; ecosistema de herramientas más amplio y evaluaciones públicas |
+| MoziAier-35B-V3.9 (este modelo) | ~35B MoE | 262.144 | IQ3_XXS hibrida, 12,99 GB | other (uso comercial declarado) | Vision, tool calling, modo uncensored, plantilla embebida |
+| Q4_K_M de un MoE de 35B (referencia del autor) | ~35B MoE | segun modelo | Q4_K_M, 21-22 GB | segun modelo | Sin las optimizaciones de MoziSmartBit; mayor huella en disco |
+| Ornith-1.5-35B-A3B (modelo base declarado) | ~35B MoE | no disponible | no disponible | no disponible | Sustrato original; la model card indica que los numeros de V3.8 no son comparables con V3.9 |
+| Occamy-1.0-35B-A3B (base de V3.9) | ~35B MoE | no disponible | no disponible | no disponible | Arquitectura Qwen3.6-35B-A3B; referencia de evaluacion de esta version |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y formato.
+No se dispone de datos de benchmarks comparativos con alternativas de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, licencia y formato de distribucion.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks verificables: las afirmaciones de precisión (~99 % de FP16) y de superioridad en dominio financiero no están respaldadas por evaluaciones públicas ni independientes.
-- Riesgo de alucinación especialmente relevante en el dominio financiero, donde el propio autor reconoce una tolerancia muy baja al error; no hay datos de tasas de alucinación.
-- Longitud de contexto no publicada, lo que impide planificar despliegues que dependan de ventanas largas.
-- Idiomas: los metadatos solo declaran zh y en; la afirmación de 201 idiomas procede de la model card y no está verificada, y el castellano no figura entre los idiomas declarados en los metadatos.
-- El modo uncensored elimina la moderación de contenido, lo que supone un riesgo directo en producción: no hay filtro frente a contenido dañino, ilegal o inseguro, y la responsabilidad recae íntegramente en el desplegador.
-- Licencia Apache-2.0 declarada, pero con componentes upstream de distinta procedencia (Qwen, Gemma, Ornith) y un fichero NOTICE; conviene revisar la cadena de atribución antes de un uso comercial.
-- La cuantización MoziSmartBit es propietaria y no está documentada en detalle; la reproducibilidad de sus resultados y su compatibilidad con herramientas estándar de GGUF no están garantizadas.
-- El soporte de visión se anuncia pero carece de especificaciones (codificador, resolución, formato de prompt), por lo que no debe asumirse en producción sin pruebas.
-- El repositorio ocupa 47,8 GB, lo que implica descargas grandes y espacio en disco considerable aunque el modelo cuantizado ocupe menos.
-- Proyecto de un único autor con 26 likes y sin paper asociado: menor garantía de mantenimiento, soporte y corrección de errores a largo plazo.
+- La etiqueta "uncensored" implica ausencia declarada de filtros de rechazo; en produccion es necesario implementar controles propios de contenido y cumplimiento normativo.
+- Riesgo de alucinacion no cuantificado: no se publican tasas de error ni evaluaciones de fidelidad, y el dominio financiero es especialmente sensible a inexactitudes.
+- Idiomas: soporte principal de chino e ingles; el rendimiento en castellano no esta documentado y no deberia asumirse.
+- La licencia es "other" con declaracion de uso comercial gratuito en la model card; conviene revisar los terminos exactos antes de un despliegue comercial, ya que la etiqueta de Hugging Face no es una licencia estandar.
+- Sin cabeza MTP: la decodificacion especulativa no esta disponible y debe desactivarse; activarla puede degradar el rendimiento o fallar.
+- El KV cache debe ser q4_0; usar q8_0 rompe el preset de 16 GB y puede impedir la carga.
+- El contexto de 250K en 16 GB queda en el limite medido (unos 15,5 GB); es necesario validar estabilidad en el hardware concreto.
+- Con 8 GB de VRAM el modelo funciona con offload a RAM, con latencia notablemente mayor; no es adecuado para cargas interactivas exigentes.
+- No se detallan datos de entrenamiento, composicion del dataset ni proceso de alineacion, lo que dificulta evaluar sesgos conocidos.
+- El repositorio ocupa 62,3 GB, muy por encima del fichero principal; la descarga completa puede no ser necesaria si solo se requieren los GGUF.
+- La model card mezcla referencias a distintos modelos base (Ornith-1.5 y Occamy-1.0), lo que complica la trazabilidad de las evaluaciones.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored
-- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Licencia: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP/blob/main/LICENSE
-- README en inglés: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP/blob/main/V3.8/README.en.md
-- README en chino simplificado: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP/blob/main/V3.8/README.zh.md
-- README en español: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP/blob/main/V3.8/README.es.md
-- Paper, blog técnico o demo: no disponibles en la información proporcionada.
+- Modelo base declarado: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- README en chino simplificado: README.zh.md (referenciado en la model card)
+- README en chino tradicional: README.zh-hant.md (referenciado en la model card)
+- README en japones: README.ja.md (referenciado en la model card)
+- README en coreano: README.ko.md (referenciado en la model card)
+- README en hindi: README.hi.md (referenciado en la model card)
+- README en aleman: README.de.md (referenciado en la model card)
+- README en frances: README.fr.md (referenciado en la model card)
+- README en neerlandes: README.nl.md (referenciado en la model card)
+- README en italiano: README.it.md (referenciado en la model card)
+- README en ruso: README.ru.md (referenciado en la model card)
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

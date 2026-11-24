@@ -2,123 +2,106 @@
 
 ## Resumen
 
-economics-finance-ai999x es un motor de resolución de problemas de economía y finanzas para Python, publicado por la organización AI999X (creador e ingeniero: Ibnul Jaif Farabi). No es un modelo generativo al uso: se presenta como un motor neuro-simbólico determinista que combina una capa de lectura de preguntas en inglés con 96 procedimientos certificados de cálculo simbólico (sympy, mpmath). El paquete pesa 4.715.520 parámetros en safetensors y se distribuye también en ONNX, con licencia Apache-2.0.
+`economics-finance-ai999x` es un artefacto publicado en Hugging Face por el usuario AI999X bajo la etiqueta de pipeline `question-answering`, pero que en la práctica no es un modelo de lenguaje neuronal: se trata de un motor de cálculo compilado (con implementación principal en Rust y un *build* en Python puro) que resuelve 105 cálculos de economía y finanzas distribuidas en 15 temas. Cada cálculo devuelve la fórmula aplicada, los pasos intermedios, las unidades y un mensaje explicativo cuando una entrada falta o está fuera de rango, en lugar de un número inventado. El repositorio declara 4.715.520 parámetros en formato safetensors, un dato que debe interpretarse con cautela dado que la model card no describe ninguna red neuronal.
 
-El problema que aborda es el de la fiabilidad numérica: en lugar de generar texto plausible, el sistema selecciona una capacidad certificada, calcula el resultado, lo verifica (sustitución inversa, comprobación dimensional o cálculo independiente) y devuelve la respuesta junto con pasos, unidades, LaTeX y supuestos. Si no puede verificar, emite un rechazo explícito entre siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) en vez de aproximar.
+El objetivo declarado es ofrecer respuestas deterministas y verificables (el autor lo etiqueta como "zero-hallucination") para dominios como valor temporal del dinero, préstamos y anualidades, bonos, acciones y opciones, teoría de carteras, medidas de riesgo, matemática actuarial, microeconomía, macroeconomía y econometría. Se distribuye en cuatro formatos: aplicación de escritorio para Windows y Linux, interfaz de línea de comandos, versión web y paquete de Python instalable mediante `pip`. Todo el cómputo se ejecuta localmente y sin conexión.
 
-Es relevante por su planteamiento de despliegue: funciona íntegramente offline sobre CPU, sin GPU, sin clave de API y sin red, y declara resultados idénticos en Windows y Linux sobre Python 3.10 a 3.14. Cubre valor temporal del dinero, préstamos y anualidades, bonos, acciones y opciones, teoría de carteras, medidas de riesgo, matemática actuarial, microeconomía, macroeconomía y econometría. La cobertura declarada es de 384 respuestas documentadas ("golden answers") reproducidas de forma exacta.
+Su relevancia actual es acotada pero específica: cubre el nicho de herramientas de resolución paso a paso para docencia y asistencia de ejercicios (homework help), donde los LLM generativos fallan con frecuencia por alucinación aritmética. La licencia Apache 2.0 y la ausencia de dependencia de GPU lo hacen desplegable en entornos muy restringidos. No obstante, la información pública es escasa y el propio autor no aporta detalles sobre arquitectura, datos de entrenamiento ni metodología de evaluación más allá de una métrica de accuracy declarada y no verificada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura de preguntas basada en reglas + 96 capacidades simbólicas certificadas (sympy, mpmath); no es un transformer generativo |
-| Parametros totales | 4.715.520 |
+| Arquitectura | No disponible (motor de cálculo compilado; implementación principal en Rust con build en Python puro; la model card no describe red neuronal) |
+| Parametros totales | 4.715.520 (según safetensors del repositorio) |
 | Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (la interfaz es `ask()` sobre formas de pregunta documentadas y `solve(capability_id, **inputs)`; no se declara ventana de contexto) |
-| Tipos de cuantizacion | No disponible (no se documentan cuantizaciones; el runtime es Python puro sobre CPU) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX; distribución adicional como wheel de Python (`economics_finance_ai999x-1.0.0-py3-none-any.whl`) |
-| Version | 1.0.0 (knowledge pack 1.0.1) |
-| Capacidades certificadas | 96 procedimientos |
-| Respuestas doradas | 384 respuestas documentadas |
-| Entorno de ejecucion | CPU únicamente, offline, sin GPU, sin red y sin clave de API |
-| Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13 y 3.14) |
-| Tareas declaradas | Question answering, token classification, text classification, sentence similarity, feature extraction |
-| Inferencia alojada en HF | No (`inference: false` en los metadatos de la model card) |
+| Longitud de contexto | No disponible (no es un modelo generativo de contexto) |
+| Tipos de cuantizacion | No disponible (no se publican pesos cuantizables; el paquete se distribuye como binario compilado o build Python) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (declarado en el repositorio); distribución funcional como binarios Windows/Linux y paquete `pip` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no sigue el patrón transformer. Se describe como un motor neuro-simbólico compuesto por dos capas: una capa de lectura que interpreta preguntas en inglés llano o llamadas tipadas, y un conjunto de 96 capacidades simbólicas certificadas que realizan el cálculo exacto mediante sympy y mpmath. Cada respuesta se somete a una comprobación posterior —sustitución del resultado en la ecuación original, análisis dimensional o contraste con un cálculo independiente— antes de devolverse. El paquete incluye pesos en safetensors (4,7 M de parámetros) y una exportación ONNX, lo que sugiere componentes neuronales ligeros para las tareas de clasificación y similitud declaradas junto al núcleo simbólico.
+La documentación disponible no describe una arquitectura de transformer, MoE, SSM ni híbrida. El artefacto se presenta como "one compiled engine" con cuatro interfaces de acceso (escritorio, CLI, navegador y Python) y una implementación principal en Rust, con un *fallback* en Python puro para plataformas no x86-64 como macOS y ARM. El funcionamiento consiste en resolver 105 cálculos predefinidos en 15 temas, cada uno con su fórmula, sus pasos y sus unidades, y con validación de rangos de entrada que devuelve una explicación cualitativa en lugar de un resultado cuando los datos no son válidos.
 
-No se ha publicado información sobre el proceso de entrenamiento: no se indica número de tokens, composición del corpus, ni si hubo RLHF, DPO o ajuste supervisado. La model card tampoco detalla el origen de los componentes neuronales ni la metodología de certificación de las 96 capacidades. Lo que sí se documenta es el mecanismo de garantía: siete estados de salida explícitos y un conjunto de evaluación de 384 respuestas doradas cuya reproducción exacta se verifica en cada plataforma soportada.
-
-La innovación destacable no es algorítmica sino de diseño del contrato de salida: el sistema antepone el rechazo a la aproximación y expone trazabilidad completa (pasos, fórmulas en LaTeX, unidades, supuestos y capacidad utilizada). Para el caso de uso financiero, esto convierte cada respuesta en un artefacto auditable.
+No se publica información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones de inferencia (decodificación especulativa, atención lineal, etc.), lo que es coherente con la naturaleza no generativa del artefacto. La etiqueta `library_name: economics-finance-ai999x` sugiere una librería propia y no un *runtime* estándar de Hugging Face, y la model card marca `inference: false`, lo que indica que el modelo no está pensado para servirse mediante la infraestructura de inferencia de Hugging Face.
 
 ## Capacidades
 
-- Resolución de problemas de valor temporal del dinero: VAN, TIR y flujos de caja descontados. Ejemplo documentado: TIR de `[-1000, 300, 400, 500]` = 0,0889634.
-- Cálculo de préstamos y anualidades: cuota, número de pagos, total pagado e intereses totales. Ejemplo documentado: principal 200.000, tipo anual 6 %, 30 años → cuota 1.199,1, 360 pagos, total pagado 431.676, intereses 231.676.
-- Valoración de bonos: precio, rendimiento corriente y cupón a partir de valor nominal, cupón, años, TIR y frecuencia. Ejemplo documentado: nominal 1.000, cupón 5 %, 10 años, TIR 6 %, frecuencia 2 → precio 925,613 y rendimiento corriente 0,0540183.
-- Valoración de opciones con Black-Scholes: precio de call y put más las componentes d1 y d2. Ejemplo documentado: spot 100, strike 100, t=1, r=0,05, volatilidad 0,2 → call 10,4506 y put 5,57353.
-- Teoría de carteras y medidas de riesgo, incluida value-at-risk, según la cobertura declarada de 96 capacidades.
-- Matemática actuarial y econometría.
-- Microeconomía y macroeconomía.
-- Interfaz dual: `ask()` para preguntas en inglés documentado y `solve(capability_id, **inputs)` como interfaz tipada garantizada.
-- Explicabilidad integrada: pasos, fórmulas en LaTeX, unidades, supuestos y modelo utilizado en cada respuesta.
-- Rechazo controlado ante entradas incompletas, ambiguas, inválidas o fuera de alcance, con indicación de lo que falta.
-- Tareas auxiliares de clasificación de texto y tokens, similitud entre frases y extracción de características (según los tags y la model card).
-- No soporta tool calling genérico, razonamiento multi-paso abierto, visión, audio ni modo "thinking" generativo.
+- Resolución de 105 cálculos de economía y finanzas en 15 temas, con fórmula, pasos intermedios y unidades.
+- Valor temporal del dinero: valor actual neto (NPV), tasa interna de retorno (IRR) y cálculos relacionados.
+- Préstamos y anualidades: pago de préstamo amortizable, cuota de anualidades y tablas asociadas.
+- Bonos: precio del bono a partir de su rendimiento y cálculos de rentabilidad.
+- Acciones y opciones: precios de opciones mediante Black-Scholes.
+- Teoría de carteras y medidas de riesgo, incluido valor en riesgo (VaR).
+- Matemática actuarial: seguros dotales (endowment insurance) y cálculos asociados.
+- Microeconomía: equilibrio de mercado y excedente con curvas lineales.
+- Macroeconomía y econometría: cálculos incluidos en el temario declarado.
+- Contabilidad de costes: variaciones de coste estándar (precio y cantidad de materiales, tarifa y eficiencia de mano de obra).
+- Finanzas de consumo: cargo financiero de tarjeta de crédito por saldo medio diario.
+- Validación de entradas: devuelve una razón explicativa en lugar de un número cuando falta un dato o está fuera de rango.
+- Ejecución local y sin conexión en escritorio (Windows, Linux), CLI, navegador y Python 3.10+.
+- No se documenta soporte de *tool calling*, agentes, razonamiento multi-paso generativo, visión, audio ni modo *thinking*.
 
 ## Casos de uso
 
-- Corrección automática de ejercicios de finanzas: el sistema devuelve pasos, unidades y LaTeX, de modo que un profesor o una plataforma de e-learning puede comparar el procedimiento del alumno con el registrado y señalar en qué paso diverge, sin riesgo de que el corrector invente una solución.
-- Tutoría con garantía de exactitud: en una aplicación de ayuda a deberes, el motor responde con una solución verificada o con una negativa explícita indicando qué dato falta, lo que evita el patrón habitual de un LLM que rellena huecos con cifras plausibles pero falsas.
-- Motor de cálculo en entornos air-gapped: banca, aseguradoras o departamentos de riesgos con prohibición de salida a internet pueden desplegar el paquete vía `pip` y ejecutarlo en CPU, sin dependencia de servicios externos ni de claves de API.
-- Guardarraíl numérico sobre un LLM: un asistente generativo redacta la explicación y delega el número final en `solve()`, de forma que la cifra publicada procede de un procedimiento certificado y no de una muestra del modelo de lenguaje.
-- Automatización de back-office financiero: cálculo repetible de cuotas de préstamo, precios de bono y primas de opción dentro de un pipeline, con resultados idénticos entre entornos Windows y Linux, lo que simplifica la reproducibilidad entre desarrollo y producción.
-- Material docente y documentación técnica: generación de enunciados resueltos con fórmulas en LaTeX listas para insertar en apuntes, notebooks o exámenes, incluyendo los supuestos del modelo utilizado.
-- Análisis de riesgo y cálculos actuariales: obtención de medidas como VaR o valoraciones actuariales en informes internos donde se exige trazabilidad del procedimiento y de los supuestos.
-- Pruebas de regresión de software financiero: las 384 respuestas doradas sirven como suite de referencia para validar que una refactorización del código de cálculo no altera los resultados.
+- Docencia de finanzas cuantitativas: el motor devuelve la fórmula y los pasos intermedios de cada cálculo, lo que permite usarlo como generador de soluciones razonadas en asignaturas de valor temporal del dinero, bonos y opciones, sin riesgo de aritmética inventada.
+- Asistencia de ejercicios (homework help): con 453 preguntas documentadas como referencia de evaluación, encaja en plataformas de corrección automática que necesitan respuestas deterministas y reproducibles en Windows y Linux con Python 3.10 a 3.14.
+- Validación de cálculos en pipelines financieros: al ejecutarse como paquete `pip` (`pip install economics-finance-ai999x`), puede invocarse desde scripts de Python para verificar NPV, IRR o precios de bonos frente a implementaciones propias, actuando como oráculo de referencia.
+- Entornos con requisitos de privacidad: al funcionar completamente offline y sin GPU, es adecuado para despachos contables, aseguradoras o departamentos financieros que no pueden enviar datos a servicios en la nube.
+- Formación interna en riesgos y actuaría: los cálculos de VaR, seguros dotales y medidas de riesgo permiten construir ejercicios interactivos con la aplicación de escritorio, donde los gráficos y escenas se redibujan a partir de la respuesta calculada.
+- Integración en CLI para analistas: la herramienta `economics-finance` en línea de comandos permite resolver cálculos puntuales (pago de préstamo, precio de bono, Black-Scholes) dentro de flujos de trabajo de terminal sin salir del entorno local.
+- Prototipado de aplicaciones educativas en navegador: la versión web permite incrustar la resolución paso a paso en materiales docentes sin infraestructura de servidor propia.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles son los declarados por el autor en el `model-index`. No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u otros).
+Los únicos datos disponibles son los declarados por el autor en el `model-index` de la model card, sin verificación independiente.
 
-| Tarea | Conjunto de evaluacion | Metrica | Valor | Verificado |
+| Benchmark | Dataset | Métrica | Valor | Notas |
 |---|---|---|---|---|
-| Question answering de economia y finanzas | Golden answers (384 preguntas documentadas; Windows + Linux, Python 3.10-3.14) | Accuracy | 1,0 (identico en todas las plataformas) | No (`verified: false`) |
+| Question answering (economía y finanzas) | Golden answers (453 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 | "identical on every platform"; `verified: false` |
 
-Advertencia: se trata de una autoevaluación sobre un conjunto propio de 384 preguntas, definido por el mismo autor y no auditado de forma independiente. El valor 1,0 mide la reproducibilidad de respuestas ya documentadas, no la capacidad de resolver preguntas nuevas fuera de ese conjunto.
+No se han publicado resultados de benchmarks en la información disponible más allá de esta métrica declarada. No hay datos de MMLU, HumanEval, GSM8K ni de comparación con otros sistemas.
 
 ## Requisitos de hardware
 
-- VRAM: 0 GB. El motor no requiere GPU; está diseñado para ejecutarse en CPU.
-- Huella de pesos: 4,7 M de parámetros, aproximadamente 19 MB en fp32 y unos 9 MB en fp16, además de la exportación ONNX. Estimación propia a partir del recuento de parámetros.
-- RAM: no se documenta cifra oficial. El proceso de Python con sympy y mpmath añade sobrecarga de intérprete; conviene reservar al menos unos cientos de MB por proceso. Estimación, no dato del autor.
-- GPU recomendadas: ninguna. Cualquier CPU x86-64 moderna es suficiente; no se publican cifras de latencia ni de throughput.
-- Compatibilidad consumer: cabe en cualquier equipo, incluidos portátiles de gama baja y entornos tipo Raspberry Pi, siempre que haya un intérprete de Python 3.10-3.14.
-- Opciones de despliegue: `pip install economics-finance-ai999x` desde PyPI, instalación directa del wheel alojado en Hugging Face, o consumo del artefacto ONNX con ONNX Runtime. No es compatible con vLLM, llama.cpp, Ollama ni TGI, al no ser un transformer generativo.
-- Sistemas validados: Windows con Python 3.13 y Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14. No se declara soporte de macOS ni de ARM.
+- VRAM estimada para inferencia: no aplica; el artefacto no requiere GPU y ejecuta el cómputo en CPU.
+- GPU recomendadas: ninguna; no se documenta aceleración por GPU.
+- Cabe en cualquier equipo de consumo: la aplicación de escritorio se distribuye para Windows y Linux x86-64, y el paquete `pip` instala un build Python puro en macOS y ARM.
+- Opciones de despliegue: aplicación de escritorio (Windows/Linux), CLI `economics-finance` (Windows/Linux), versión web en el navegador y paquete Python 3.10+ vía `pip`.
+- Latencia y throughput: no disponibles; al tratarse de cálculos deterministas y locales, la latencia depende del cálculo concreto y del hardware, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Criterio | economics-finance-ai999x | Llama 3.1 8B | Qwen2.5-Math 7B | QuantLib |
-|---|---|---|---|---|
-| Categoria | Motor simbolico de dominio financiero | LLM generativo de proposito general | LLM especializado en matematicas | Biblioteca de calculo financiero |
-| Parametros | 4,7 M | 8 000 M (aprox.) | 7 000 M (aprox.) | No aplica |
-| Longitud de contexto | No disponible | 128 000 tokens | No disponible | No aplica |
-| Determinismo | Si, por diseno | No (muestreo) | No (muestreo) | Si |
-| Verificacion de resultados | Si, con rechazo explicito | No | No | No (solo calcula) |
-| Explicacion paso a paso en LaTeX | Si | Si, pero no verificada | Si, pero no verificada | No |
-| Ejecucion offline en CPU | Si, sin GPU | Requiere GPU o cuantizacion para uso comodo | Requiere GPU o cuantizacion | Si |
-| Idiomas | Ingles | Multilingue | Multilingue | No aplica (API) |
-| Licencia | Apache-2.0 | Llama 3.1 Community License | Apache-2.0 | QuantLib License (BSD modificada) |
-| Benchmarks publicos comparables | No disponible | Amplia bateria publica | Amplia bateria publica | No aplica |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| economics-finance-ai999x | Motor de cálculo determinista (Rust/Python) | 4.715.520 (declarados) | No aplica | Apache 2.0 | Hugging Face, `pip`, escritorio, CLI, web |
+| LLM generativo de propósito general (p. ej. familia Llama, Mistral, Qwen) | Transformer decoder | Miles de millones | Decenas de miles de tokens | Licencias variables | Hugging Face, múltiples runtimes |
+| Librerías financieras (p. ej. NumPy/NumPy-financial, QuantLib) | Librería de cálculo | No aplica | No aplica | BSD/GPL según proyecto | PyPI, GitHub |
 
-La comparación relevante no es de rendimiento en benchmarks, que no existe para este modelo, sino de contrato: frente a un LLM, economics-finance-ai999x renuncia a la generalidad y a la generación libre para garantizar exactitud y trazabilidad en un dominio acotado; frente a QuantLib, añade interpretación de lenguaje natural, explicación y mecanismo de rechazo, a costa de una cobertura fija de 96 procedimientos.
+La comparación con LLM generativos no es directa: `economics-finance-ai999x` no genera lenguaje libre ni razona sobre texto, sino que resuelve un conjunto cerrado de cálculos con validación de entradas. Frente a librerías como QuantLib o `numpy-financial`, su diferenciación es la salida paso a paso con unidades y explicaciones, junto con las interfaces de escritorio y web. No se dispone de datos de rendimiento comparativo con ninguna de estas alternativas.
 
 ## Limitaciones y advertencias
 
-- El resultado de accuracy 1,0 procede de una autoevaluación sobre 384 preguntas definidas por el propio autor y marcada como `verified: false`. No debe interpretarse como una precisión del 100 % en preguntas nuevas.
-- La cobertura está limitada a los 96 procedimientos certificados. Cualquier cuestión fuera de ese catálogo se resuelve con OUT_OF_SCOPE, no con una respuesta aproximada; es una limitación funcional importante si se espera un asistente abierto.
-- Solo admite inglés. Las formas de pregunta documentadas están en inglés y no se declara soporte de otros idiomas, lo que incluye el castellano.
-- No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno con contexto largo ni soporta tool calling genérico. La longitud de contexto no está documentada.
-- La calidad depende de que la pregunta encaje en las formas documentadas o de que se use la interfaz tipada `solve()`. Las preguntas mal formuladas pueden caer en UNRECOGNIZED_FORMAT o AMBIGUOUS.
-- El modelo está marcado con `inference: false` en Hugging Face, por lo que no se puede probar mediante la Inference API de la plataforma; hay que instalarlo localmente.
-- Riesgo de sesgo residual en la capa de lectura de lenguaje natural: al ser sensible a la formulación, distintas redacciones de la misma pregunta podrían no reconocerse como equivalentes.
-- Riesgo de alucinación bajo por diseño (el sistema rechaza en lugar de adivinar), pero no nulo: si una capacidad certificada contiene un error de implementación o un supuesto inadecuado, el resultado se devolverá como verificado sin que la comprobación lo detecte.
-- Madurez temprana: versión 1.0.0, 0 descargas y 0 likes en el momento de la consulta, sin adopción pública ni revisión independiente documentada. Conviene tratarlo como proyecto emergente antes de integrarlo en producción crítica.
-- La licencia Apache-2.0 permite uso comercial, pero el proyecto se financia con donaciones y no se declara hoja de ruta de mantenimiento ni compromiso de soporte a largo plazo.
-- No se declara soporte de macOS ni de arquitecturas ARM, lo que puede afectar a despliegues en portátiles Apple Silicon o en servidores ARM.
+- La model card no describe arquitectura, datos de entrenamiento ni metodología de evaluación; la etiqueta `question-answering` puede inducir a error a quien espere un modelo de lenguaje.
+- El resultado de accuracy 1.0 sobre 453 preguntas está declarado por el autor y marcado como `verified: false`; no hay evaluación independiente.
+- El alcance está limitado a 105 cálculos en 15 temas; no cubre consultas abiertas, razonamiento sobre texto libre ni dominios fuera del temario declarado.
+- Solo soporta inglés (`language: en`); no se documenta soporte multilingüe, lo que limita su uso en castellano sin adaptación.
+- No se documentan sesgos, pero al ser un motor determinista el riesgo relevante no es la alucinación generativa sino la incorrecta validación de rangos o la omisión de casos límite en las fórmulas implementadas.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar el archivo `LICENSE` del repositorio y las condiciones de las dependencias compiladas en los binarios distribuidos.
+- El tamaño del repositorio es de 0.0 GB según Hugging Face, lo que sugiere que los binarios y el paquete `pip` se distribuyen fuera del repositorio (GitHub Releases), con la dependencia de disponibilidad que ello implica.
+- La fecha de creación declarada (2026-10-25) y la de actualización (2026-11-21) deben tomarse como metadatos del repositorio; no hay historial público de versiones en la información disponible.
+- Para producción, la ausencia de cifras de latencia y de pruebas de regresión publicadas obliga a validar el motor contra casos conocidos antes de integrarlo en flujos críticos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/economics-finance-ai999x
-- Paquete en PyPI: https://pypi.org/project/economics-finance-ai999x/
-- Guía de capacidades (docs en el repositorio): https://huggingface.co/AI999X/economics-finance-ai999x/tree/main/docs
-- Evaluación (respuestas doradas): https://huggingface.co/AI999X/economics-finance-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web del proyecto: https://ai999x.com
-- Apoyo al desarrollo (Buy Me a Coffee): https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo en el sitio del autor: https://www.ai999x.com/models/economics-finance-ai999x/
+- Capacidades del modelo: https://www.ai999x.com/models/economics-finance-ai999x/#capabilities
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-economics-finance-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-economics-finance-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio: https://github.com/AI999X/ai999x-desktop
+- Vídeo de demostración: https://www.ai999x.com/?ax_shot=economics-finance-ai999x/clip.mp4

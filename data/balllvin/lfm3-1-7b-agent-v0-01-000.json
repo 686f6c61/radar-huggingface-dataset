@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LiquidAI/LFM3-1.7B · Hugging Face",
-      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-      "snippet": "In the system prompt, tell the model when to search: You only have one tool right now: search_tools, which searches a catalog of many more tools. If none of your current tools can handle a request, call search_tools to find one, then call the tool it returns. Works with vLLM, SGLang, and LFM3-compatible llama.cpp builds."
-    },
-    {
-      "title": "LFM3-1.7B - Liquid AI Docs",
-      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
-      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
-    }
-  ]
+  "sources": []
 }

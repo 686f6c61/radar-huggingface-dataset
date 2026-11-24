@@ -51,7 +51,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 377,
+  "downloads_30d": 381,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -76,5 +76,11 @@
       "value": 1
     }
   ],
-  "sources": []
+  "sources": [
+    {
+      "title": "Street View photos come from two sources, Google and our contributors.",
+      "url": "https://maps.google.fr/intl/en/streetview/explore/",
+      "snippet": "Learn about what Street View is, where we've been, and where we're going. To share Street View imagery, our engineering team is …Read more"
+    }
+  ]
 }

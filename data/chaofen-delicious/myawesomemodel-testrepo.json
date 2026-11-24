@@ -39,31 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Board Game Arena - Play board games online for free!",
-      "url": "https://en.boardgamearena.com/",
-      "snippet": "«BGA has digital board games you won't find anywhere else.» Dave Neumann - Jan 2016 Join the Arena. Now."
-    },
-    {
-      "title": "Board Game Arena – Jouez à des jeux de société en ligne gratuitement",
-      "url": "https://fr.boardgamearena.com/",
-      "snippet": "«Allez vous entrainer sur BGA, et foutre la patée à tous vos potes.» Dr Mops - TTtv BGA de l`interview Rejoignez l'Arène. Maintenant."
-    },
-    {
-      "title": "BGA Diffusion, votre fournisseur expert du marquage textile",
-      "url": "https://bgadiffusion.fr/",
-      "snippet": "BGA Diffusion le leader en solutions de marquage textile. Avec une expertise reconnu dans la broderie, l'impression directe sur …"
-    },
-    {
-      "title": "Latest releases on BGA - Login to Board Game Arena!",
-      "url": "https://en.boardgamearena.com/account",
-      "snippet": "BGA processes the personal data that is needed to create an account and provide you with access to all of our online services. Read …"
-    },
-    {
-      "title": "Connectez-vous à Board Game Arena ! • Board Game Arena",
-      "url": "https://fr.boardgamearena.com/account",
-      "snippet": "Dernières sorties sur BGA Vous avez peut-être manqué ces jeux ! Le Mode de jeu vous permet d'alterner entre des parties en Mode …"
-    }
-  ]
+  "sources": []
 }

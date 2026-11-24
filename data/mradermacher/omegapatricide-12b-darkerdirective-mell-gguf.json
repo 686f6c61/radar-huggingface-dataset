@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/OmegaPatricide-12B-DarkerDirective-Mell-GGUF",
+  "slug": "mradermacher-omegapatricide-12b-darkerdirective-mell-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OmegaPatricide-12B-DarkerDirective-Mell-GGUF",
+  "created_at": "2025-09-05T10:47:02.000Z",
+  "updated_at": "2026-11-24T00:31:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:pot99rta/OmegaPatricide-12B-DarkerDirective-Mell",
+    "base_model:quantized:pot99rta/OmegaPatricide-12B-DarkerDirective-Mell",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692267872,
+  "storage_human": "84.7 GB",
+  "context_length": 1024000,
+  "base_model": "pot99rta/OmegaPatricide-12B-DarkerDirective-Mell",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

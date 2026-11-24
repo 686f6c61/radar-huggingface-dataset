@@ -2,53 +2,52 @@
 
 ## Resumen
 
-Kataguru-Polyglot-264E-35B-A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por el usuario kataguru, orientado a tareas multilingues, generacion de codigo, tool calling y razonamiento. La ficha que nos ocupa corresponde a la cuantizacion GGUF realizada por mradermacher, un conocido publicador de cuantizaciones para llama.cpp, que ofrece el modelo en una amplia gama de formatos i1 (imatrix) desde Q2_K hasta Q6_K. El modelo base tiene 36.537.721.984 parametros totales segun los datos de safetensors, y su nombre sugiere una arquitectura MoE con 264 expertos y aproximadamente 35B de parametros totales con unos 3B activos por token.
+Kataguru-Polyglot-264E-35B-A3B es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por kataguru, orientado a tareas multilingues, traduccion, generacion de codigo, tool calling y razonamiento agentico. La version aqui descrita es una cuantizacion GGUF realizada por mradermacher mediante el metodo imatrix, que permite ejecutar el modelo en hardware de consumo con perdida controlada de calidad. El modelo base cuenta con 36.537.721.984 parametros totales (aproximadamente 36,5 mil millones) y sigue la arquitectura qwen3_5_moe, segun las etiquetas de la model card.
 
-El modelo esta disenado explicitamente para un publico multilingue que incluye no solo lenguas mayoritarias (ingles) sino tambien lenguas aglutinantes y de bajos recursos como fines, estonio, hungaro, lituano, letón, islandes, euskera, georgiano, gales y turco. Ademas, declara capacidades de codigo, function calling, agentes, RAG cross-lingue, traduccion, vision, STEM, matematicas y razonamiento. La licencia es Apache 2.0, lo que facilita su uso comercial.
+El modelo destaca por su enfoque en lenguas aglutinantes y de bajos recursos (finlandes, estonio, hungaro, lituano, letón, islandes, euskera, georgiano, gales y turco), ademas del ingles, lo que lo posiciona como una alternativa especializada frente a modelos multilingues generalistas. Incorpora capacidades multimodales (vision), razonamiento STEM y matematicas, y esta etiquetado como "uncensored", lo que implica ausencia de filtros de rechazo en las respuestas.
 
-La relevancia de esta ficha concreta radica en que la cuantizacion GGUF permite ejecutar un modelo MoE de ~36B parametros en hardware de consumo, algo impensable con los pesos bf16 originales. Con cuantizaciones i1-Q4_K_M de 22,4 GB, el modelo puede desplegarse en una GPU de 24 GB o en configuraciones CPU+GPU, manteniendo la mayor parte de la calidad del modelo original gracias al uso de imatrix.
+La relevancia actual de esta ficha radica en que la cuantizacion imatrix permite desplegar un MoE de 36,5B en GPUs de consumo con cuantizaciones de 4 bits (aproximadamente 22 GB), manteniendo un equilibrio razonable entre calidad y requisitos de memoria, algo critico para investigadores que necesitan evaluar modelos multilingues sin acceso a clusters de gran escala.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), presumiblemente basada en Qwen3.5-MoE segun el tag `qwen3_5_moe` |
-| Parametros totales | 36.537.721.984 (36,5B) |
-| Parametros activos | no disponible (el nombre sugiere ~3B activos, pero no se confirma en la informacion) |
+| Arquitectura | Mezcla de expertos (MoE), familia qwen3_5_moe, transformer |
+| Parametros totales | 36.537.721.984 (aproximadamente 36,5B) |
+| Parametros activos | no disponible (la nomenclatura "A3B" sugiere aproximadamente 3B activos, pero no se confirma en la informacion proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-Q3_K_M, i1-Q3_K_L, i1-IQ3_S, i1-IQ3_M, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix); estaticas disponibles en repositorio separado |
 | Idiomas soportados | en, fi, et, hu, lt, lv, is, eu, ka, cy, tr |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1); el modelo base en safetensors/bf16 |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones); safetensors y bfloat16 en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio. El tag `qwen3_5_moe` sugiere que el modelo base emplea una arquitectura MoE inspirada en la familia Qwen3.5, con atencion transformer estandar y capas de expertos dispersos. El nombre "264E" apunta a 264 expertos, y "35B-A3B" a aproximadamente 35B parametros totales con unos 3B activos por token, aunque estos datos no se confirman explicitamente en la model card.
+El modelo base sigue una arquitectura de mezcla de expertos (MoE) de la familia qwen3_5_moe, con 36,5 mil millones de parametros totales. La nomenclatura "264E-35B-A3B" sugiere 264 expertos, 35B de parametros totales y aproximadamente 3B de parametros activos por token, aunque estos detalles no se confirman explicitamente en la informacion proporcionada. La model card incluye etiquetas que indican soporte multimodal (vision) y un modo de razonamiento, asi como entrenamiento orientado a tool calling y agentes.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o instruction tuning. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La cuantizacion i1 de mradermacher utiliza un fichero imatrix (incluido en el repo, 0,5 GB) para mejorar la calidad de las cuantizaciones de baja precision, lo que es relevante para mantener el rendimiento en formatos Q2/Q3.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o decodificacion especulativa. La cuantizacion aqui presentada es de tipo imatrix (importance matrix), generada por mradermacher con la version 2 del proceso de cuantizacion y con el tensor de salida cuantizado, lo que mejora la calidad respecto a cuantizaciones estaticas equivalentes en tamano.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento general.
-- Generacion de codigo y asistencia a programacion (tags `code`, `coding`, `coder`).
-- Tool calling y function calling para integracion con APIs y agentes.
-- Razonamiento agentico multi-paso (tag `agentic`).
-- RAG y RAG cross-lingue (tag `cross-lingual-rag`).
-- Traduccion entre idiomas, con enfasis en lenguas aglutinantes y de bajos recursos.
-- Capacidades multimodales y de vision (tags `multimodal`, `vision`).
-- STEM, matematicas y razonamiento (tags `stem`, `math`, `reasoning`).
-- Soporte multilingue para en, fi, et, hu, lt, lv, is, eu, ka, cy, tr.
-- Modelo "uncensored" segun el tag, lo que implica menor filtrado de contenido.
+- Generacion de texto conversacional multi-turno en once idiomas (ingles, finlandes, estonio, hungaro, lituano, letón, islandes, euskera, georgiano, gales y turco).
+- Traduccion y traduccion cruzada entre lenguas aglutinantes y de bajos recursos.
+- Generacion y asistencia en codigo (etiquetas "code", "coder", "coding").
+- Tool calling y function calling para integracion en pipelines externos.
+- Razonamiento agentico multi-paso (etiqueta "agentic").
+- Recuperacion aumentada (RAG) y RAG translingue (etiquetas "rag", "cross-lingual-rag").
+- Capacidades multimodales de vision (etiqueta "multimodal", "vision"; los ficheros mmproj, si existen, se alojan en el repositorio estatico).
+- Razonamiento STEM y matematicas (etiquetas "stem", "math", "reasoning").
+- Modelo sin censura ("uncensored"), sin filtros de rechazo declarados.
 
 ## Casos de uso
 
-- Traduccion tecnica entre lenguas de bajos recursos: el modelo puede traducir documentacion tecnica entre fines, estonio, hungaro, lituano, letón, islandes, euskera, georgiano, gales y turco, aprovechando su entrenamiento especifico en lenguas aglutinantes y su tag de traduccion.
-- RAG cross-lingue: en un pipeline de recuperacion documental multilingue, el modelo puede formular respuestas en el idioma del usuario a partir de fragmentos recuperados en otro idioma, gracias a sus capacidades de traduccion y RAG cross-lingue.
-- Asistencia a programacion en produccion: con soporte de tool calling y function calling, puede integrarse en pipelines de CI/CD para generar parches, explicar errores de compilacion o invocar herramientas de analisis estatico.
-- Agentes automatizados multi-paso: su tag `agentic` y su soporte de function calling lo hacen adecuado para orquestar tareas que requieren varias llamadas a herramientas, como consultas a bases de datos seguidas de sintesis de resultados.
-- Atencion al cliente multilingue: puede gestionar conversaciones multi-turno en varios idiomas europeos y caucasicos, aunque la longitud de contexto no esta documentada y debe validarse empiricamente.
-- Analisis de documentos con vision: el tag `multimodal` y `vision` sugiere capacidad de procesar imagenes junto a texto, util para extraer informacion de capturas, diagramas o documentos escaneados.
-- Generacion de contenido STEM y matematicas: para resolver problemas matematicos o explicar conceptos cientificos, apoyandose en los tags `stem`, `math` y `reasoning`.
+- Traduccion profesional entre lenguas nordicas y balticas: el modelo cubre finlandes, estonio, hungaro, lituano, letón e islandes, lo que permite construir servicios de traduccion para administraciones publicas o medios regionales sin depender de APIs propietarias.
+- Atencion al cliente multilingue en la UE: con soporte para once idiomas y capacidad conversacional multi-turno, puede desplegarse como backend de chatbots para mercados nordicos y balticos.
+- Generacion de codigo en produccion: las etiquetas de tool calling y function calling permiten integrarlo en pipelines de CI/CD o asistentes de IDE que invocan herramientas externas (linters, compiladores, APIs).
+- RAG translingue: un mismo corpus en finlandes puede consultarse en georgiano o euskera gracias a las capacidades de recuperacion cruzada, util en entornos academicos y bibliotecarios.
+- Agentes automatizados de investigacion: el modo agentico y el razonamiento multi-paso permiten orquestar tareas de busqueda, sintesis y verificacion sobre fuentes documentales.
+- Analisis de documentos con vision: al ser un modelo multimodal, puede procesar imagenes o capturas junto a texto, por ejemplo para extraer informacion de formularios escaneados en idiomas minoritarios.
+- Evaluacion de sesgos y robustez linguistica: al estar etiquetado como "uncensored", sirve como caso de estudio para investigadores que analizan el comportamiento de modelos sin alineamiento restrictivo.
 
 ## Benchmarks y rendimiento
 
@@ -56,48 +55,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
-  - i1-Q2_K: ~13,7 GB
-  - i1-IQ3_S: ~16,2 GB
-  - i1-Q3_K_M: ~17,8 GB
-  - i1-IQ4_XS: ~19,8 GB
-  - i1-Q4_K_S: ~21,1 GB
-  - i1-Q4_K_M: ~22,4 GB (recomendado por el autor)
-  - i1-Q5_K_M: ~26,2 GB
-  - i1-Q6_K: ~30,2 GB
-- GPU recomendadas: para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente para los pesos; para Q5/Q6 se recomienda A100 40 GB, H100 o RTX 6000 Ada (48 GB).
-- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4 o inferiores; en GPUs de 16 GB solo con Q2_K o IQ3_S y contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; para el modelo base en safetensors, vLLM o TGI (no confirmado para esta arquitectura MoE concreta).
-- Latencia y throughput: no disponibles. Al ser MoE con ~3B activos (segun el nombre), el throughput deberia ser superior al de un modelo denso de 36B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia segun cuantizacion: i1-Q2_K ~13,7 GB; i1-IQ3_S ~16,2 GB; i1-Q4_K_M ~22,4 GB; i1-Q5_K_M ~26,2 GB; i1-Q6_K ~30,2 GB (tamanos de fichero; la VRAM necesaria es ligeramente superior por el contexto y el overhead de llama.cpp).
+- GPU recomendadas: para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q6_K se recomienda una A100 40 GB, H100 o dos GPUs de 24 GB.
+- Cabe en GPU de consumo: si, en cuantizaciones de 2 a 4 bits (Q2_K a Q4_K_M) cabe en GPUs de 16-24 GB como RTX 4080, 4090, 3090 o 4060 Ti de 16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con la API de endpoints (etiqueta "endpoints_compatible"); vLLM y TGI no estan confirmados para este formato GGUF.
+- Latencia y throughput: no disponibles. Al ser un MoE con aproximadamente 3B de parametros activos (segun nomenclatura), se espera un throughput superior al de un modelo denso de 36B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales:
-
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kataguru-Polyglot-264E-35B-A3B (i1-GGUF) | 36,5B | no disponible (~3B por nombre) | no disponible | Apache 2.0 | GGUF |
-| Modelo base Kataguru-Polyglot-264E-35B-A3B | 36,5B | no disponible | no disponible | Apache 2.0 | safetensors/bf16 |
-| Alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Kataguru-Polyglot-264E-35B-A3B (este) | 36,5B totales, ~3B activos (segun nomenclatura) | no disponible | apache-2.0 | GGUF, safetensors | Enfoque multilingue en lenguas aglutinantes, vision, tool calling |
+| Qwen3-MoE (familia base) | variable | no disponible | apache-2.0 (segun familia) | safetensors, GGUF | Arquitectura de referencia; el modelo aqui descrito deriva de qwen3_5_moe |
+| Mixtral 8x7B | 46,7B totales, 12,9B activos | 32k (segun version) | apache-2.0 | safetensors, GGUF | MoE generalista, sin enfoque en lenguas minoritarias |
+| Llama 3.1 8B | 8B densos | 128k | Llama 3.1 Community License | safetensors, GGUF | Menor tamano, sin capacidades multimodales ni cobertura de lenguas balticas/nordicas |
+
+La comparacion con modelos de la misma categoria es limitada porque no se dispone de datos de rendimiento del modelo. La principal ventaja diferencial es la cobertura de once idiomas, incluyendo lenguas de bajos recursos, junto con vision y tool calling en un unico checkpoint.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks, por lo que el rendimiento real en tareas concretas no esta validado de forma independiente.
-- El modelo se distribuye con el tag `uncensored`, lo que implica un filtrado de seguridad reducido; no es adecuado para aplicaciones dirigidas a menores o sin moderacion adicional.
-- La longitud de contexto no esta documentada; no debe asumirse un contexto largo sin validacion empirica.
-- La lista de idiomas soportados no incluye el castellano; su rendimiento en espanol es desconocido y probablemente inferior al de los idiomas declarados.
-- Las cuantizaciones de baja precision (Q2_K, IQ3_XXS) pueden degradar notablemente la calidad, especialmente en tareas de razonamiento y codigo; el autor recomienda Q4_K_M o superior.
-- Aunque la licencia es Apache 2.0, el modelo base podria tener restricciones adicionales no reflejadas en esta ficha; conviene revisar la model card del modelo base antes de uso comercial.
-- El tag `multimodal`/`vision` sugiere capacidades de vision, pero no se documenta que fichero mmproj acompana a estas cuantizaciones (el autor indica `skip_mmproj` vacio, sin confirmacion).
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas.
+- No se dispone de informacion sobre sesgos conocidos; al cubrir lenguas de bajos recursos, es probable que el rendimiento sea desigual entre idiomas.
+- Riesgo de alucinacion no cuantificado: no hay benchmarks publicados que permitan estimar la tasa de errores facticos.
+- La etiqueta "uncensored" implica ausencia de filtros de rechazo, lo que supone un riesgo para despliegues en produccion sin capas de moderacion adicionales.
+- Longitud de contexto no confirmada: no se puede garantizar el soporte de ventanas largas sin verificacion empirica.
+- La licencia apache-2.0 permite uso comercial, pero el modelo base podria tener condiciones adicionales no reflejadas en la cuantizacion; conviene revisar el repositorio original.
+- El repositorio GGUF pesa 287,4 GB en total (suma de todas las cuantizaciones); descargar solo el fichero necesario.
+- Los ficheros mmproj para vision, si existen, estan en el repositorio estatico separado, no en este.
+- No hay garantia de que vLLM o TGI soporten este GGUF; el despliegue recomendado es llama.cpp u Ollama.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizacion i1-GGUF): https://huggingface.co/mradermacher/Kataguru-Polyglot-264E-35B-A3B-i1-GGUF
+- Repositorio Hugging Face (cuantizacion imatrix): https://huggingface.co/mradermacher/Kataguru-Polyglot-264E-35B-A3B-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Kataguru-Polyglot-264E-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/kataguru/Kataguru-Polyglot-264E-35B-A3B
-- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/Kataguru-Polyglot-264E-35B-A3B-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Kataguru-Polyglot-264E-35B-A3B-i1-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Empresa del cuantizador: https://www.nethype.de/

@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Qwen3-VL-32B-Instruct es un modelo denso de visión-lenguaje de 32 000 millones de parámetros perteneciente a la familia Qwen3-VL, desarrollado originalmente por el equipo Qwen de Alibaba. Combina un codificador visual con un decodificador transformer denso y emplea embeddings posicionales Interleaved-MRoPE junto con fusión de características multinivel DeepStack. El repositorio analizado, publicado por furiosa-ai, empaqueta los pesos originales del modelo junto con un Furiosa Executable Bundle (FXB) para ejecutarlo sobre aceleradores FuriosaAI RNGD mediante la librería Furiosa-LLM.
+Qwen3-VL-32B-Instruct es un modelo denso de visión-lenguaje de 32 mil millones de parámetros (33.357.390.064 parámetros reales según los pesos en safetensors) perteneciente a la familia Qwen3-VL, desarrollada originalmente por el equipo Qwen de Alibaba. Combina un codificador visual con un decodificador transformer denso y está diseñado para tareas de comprensión visual como OCR, análisis de documentos y gráficos, razonamiento espacial y comprensión de vídeo, además de generación de texto y soporte nativo de tool calling.
 
-La relevancia de esta ficha reside en que demuestra la portabilidad del modelo fuera del ecosistema GPU convencional: el mismo checkpoint que corre en vLLM, SGLang o Transformers se puede desplegar en hardware NPU específico de FuriosaAI con una estrategia de paralelismo tensorial de 32 PEs repartidos en cuatro tarjetas RNGD. El modelo base upstream está liberado bajo licencia Apache 2.0, lo que facilita su uso comercial.
+El repositorio `furiosa-ai/Qwen3-VL-32B-Instruct` no es un modelo nuevo ni un fine-tuning: es un empaquetado del modelo upstream `Qwen/Qwen3-VL-32B-Instruct` junto con un Furiosa Executable Bundle (FXB) para ejecutarlo sobre aceleradores FuriosaAI RNGD mediante la librería `furiosa-llm`. Es relevante para quienes despliegan el modelo en hardware NPU de FuriosaAI, ya que incluye la configuración de paralelismo y las opciones de servidor específicas para esa plataforma.
 
-Se trata de la edición Instruct (sin modo de razonamiento explícito), orientada a tareas de comprensión visual como OCR, análisis de documentos y gráficos, razonamiento espacial y comprensión de vídeo, además de soporte nativo de tool calling. El repositorio no aplica cuantización: los pesos se distribuyen en la misma precisión que el modelo original.
+La edición publicada es la variante **Instruct** (sin modo de razonamiento explícito), con licencia Apache 2.0 y pesos en precisión original (sin cuantización aplicada en este bundle).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3-VL densa (codificador visual + decodificador transformer denso), Interleaved-MRoPE y DeepStack |
+| Arquitectura | Qwen3-VL (transformer denso con codificador visual; Interleaved-MRoPE y DeepStack) |
 | Parametros totales | 33.357.390.064 |
-| Parametros activos | no aplica (modelo denso) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | ninguna (se distribuye en la precision original del modelo upstream) |
-| Idiomas soportados | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | no disponible (el bundle no aplica cuantizacion; pesos en precision original) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (mas Furiosa Executable Bundle, FXB) |
+| Formato de pesos | safetensors (repo de 168,5 GB) + Furiosa Executable Bundle (FXB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3-VL en su variante densa: un codificador de visión acoplado a un decodificador transformer denso de 32 000 millones de parámetros. Incorpora dos innovaciones técnicas destacadas en la serie: Interleaved-MRoPE, que intercala componentes rotacionales para mejorar la generalización posicional en secuencias multimodales largas, y DeepStack, un mecanismo de fusión de características visuales a múltiples niveles de profundidad del decodificador. La entrada es imagen más texto y la salida es texto.
+El modelo sigue la arquitectura Qwen3-VL en su variante densa: un codificador visual acoplado a un decodificador transformer denso de 32B parámetros. Incorpora embeddings posicionales Interleaved-MRoPE y fusión multinivel de características DeepStack, orientados a preservar información espacial y de detalle en la comprensión de imágenes y vídeo. La entrada es imagen + texto y la salida es texto.
 
-La información proporcionada no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Tampoco se especifican innovaciones adicionales como decodificación especulativa o atención lineal. El repositorio de furiosa-ai no reentrena el modelo: únicamente lo empaqueta con un bundle ejecutable para FuriosaAI RNGD y documenta la estrategia de paralelismo tensorial (32 PEs, cuatro tarjetas RNGD con 8 PEs por tarjeta).
+No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo upstream. El bundle de FuriosaAI no modifica los pesos: se distribuye en la misma precisión que el modelo original de Qwen, y en RNGD se ejecuta con un tamaño de paralelismo tensorial de 32 PEs, lo que corresponde a cuatro tarjetas RNGD (8 PEs por tarjeta).
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal a partir de entradas de imagen y texto.
-- Comprensión visual: OCR, análisis de documentos, interpretación de gráficos y tablas.
+- Comprensión de imágenes: descripción, respuesta a preguntas visuales y análisis de contenido gráfico.
+- OCR y análisis de documentos: extracción de texto y comprensión de documentos y gráficos.
 - Razonamiento espacial sobre imágenes.
 - Comprensión de vídeo junto con texto.
-- Soporte nativo de tool calling / function calling, expuesto mediante el parser `hermes` en Furiosa-LLM.
-- API compatible con OpenAI para mensajes multimodales con partes `image_url` (URL remota, base64 en línea o ruta local `file://` con el flag correspondiente).
-- Edición Instruct sin modo de pensamiento explícito (no es la variante thinking).
-- Capacidades multilingües: no detalladas en la información proporcionada.
+- Generación de texto conversacional multi-turno.
+- Tool calling / function calling nativo, mediante el parser `hermes` en el servidor de Furiosa-LLM.
+- Entrada multimodal estilo OpenAI: mensajes con partes `image_url` (URL remota, base64 `data:` o ruta local `file://` con el flag correspondiente).
+- Modo Instruct (no thinking): no se documenta modo de razonamiento extendido en esta edición.
 
 ## Casos de uso
 
-- Digitalización y extracción de datos de documentos: el modelo puede procesar facturas, formularios e informes en formato imagen y devolver texto estructurado, aprovechando sus capacidades de OCR y análisis de documentos.
-- Análisis de gráficos financieros o científicos: interpretación de ejes, tendencias y valores a partir de capturas o figuras embebidas en informes, útil en pipelines de business intelligence.
-- Automatización de atención al cliente multimodal: gestión de conversaciones multi-turno donde el usuario adjunta capturas de pantalla o fotos de productos, con soporte de tool calling para consultar sistemas internos.
-- Moderación y descripción de contenido visual: generación de descripciones y etiquetas para catálogos de imágenes o vídeos, con límites configurables de imágenes por prompt (`--image-limit-per-prompt`).
-- Asistentes de accesibilidad: descripción detallada de imágenes y vídeos para usuarios con discapacidad visual, integrable mediante la API compatible con OpenAI.
-- Agentes con razonamiento multi-paso sobre documentos: combinación de tool calling y comprensión visual para flujos donde el agente lee una imagen, consulta una herramienta externa y sintetiza la respuesta.
-- Despliegue sobre aceleradores FuriosaAI RNGD: escenarios con requisitos de eficiencia energética o disponibilidad de hardware NPU, donde el bundle FXB permite servir el modelo con `furiosa-llm serve` sin recompilar.
+- Digitalización y extracción de datos de documentos: el modelo procesa imágenes de facturas, formularios o escaneos y devuelve texto estructurado, aprovechando sus capacidades de OCR y análisis de documentos.
+- Análisis de gráficos e informes: interpretación de tablas y gráficos en capturas o PDFs renderizados para responder preguntas de negocio.
+- Asistencia multimodal en atención al cliente: conversaciones multi-turno en las que el usuario adjunta capturas de pantalla o fotos de productos y el modelo responde en el mismo hilo.
+- Automatización con agentes: combinación de tool calling con entrada visual para flujos en los que el agente inspecciona una imagen y decide invocar funciones externas (por ejemplo, consultar un catálogo o abrir un ticket).
+- Moderación y análisis de contenido visual: clasificación y descripción de imágenes o fotogramas de vídeo en pipelines de revisión.
+- Accesibilidad: generación de descripciones textuales de imágenes y vídeo para lectores de pantalla o subtitulado asistido.
+- Despliegue en infraestructura NPU: servir el modelo sobre FuriosaAI RNGD mediante `furiosa-llm serve` con API compatible con OpenAI, útil en entornos que ya operan hardware de FuriosaAI.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada; el repositorio ocupa 164,7 GB en safetensors, lo que da una referencia del tamaño de los pesos en su precisión original.
-- GPU recomendadas: no especificadas en la información proporcionada.
-- Hardware objetivo documentado: FuriosaAI RNGD, con paralelismo tensorial de 32 PEs sobre cuatro tarjetas (8 PEs por tarjeta).
-- Compatibilidad con GPU de consumo: no disponible en la información proporcionada.
-- Opciones de despliegue: Furiosa-LLM (`furiosa-llm serve`), con API compatible con OpenAI; el modelo upstream también funciona en vLLM, SGLang y Transformers según la model card.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/VRAM equivalente: el bundle está pensado para FuriosaAI RNGD; el repo ocupa 168,5 GB en safetensors, por lo que en GPUs convencionales se requiere cuantización para caber en memoria razonable (no se documentan cuantizaciones específicas en esta ficha).
+- GPU recomendadas: no disponible para GPU; el hardware objetivo documentado es FuriosaAI RNGD con cuatro tarjetas (paralelismo tensorial de 32 PEs).
+- ¿Cabe en GPU de consumo? No en precisión original con 32B parámetros y ~168 GB de pesos; requeriría cuantización, no documentada aquí.
+- Opciones de despliegue: `furiosa-llm serve` sobre RNGD (API compatible con OpenAI). El modelo upstream también es ejecutable con vLLM, SGLang y Transformers según la model card.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| furiosa-ai/Qwen3-VL-32B-Instruct | 33,36 B (denso) | no disponible | Apache 2.0 | Hugging Face, empaquetado para FuriosaAI RNGD |
-| Qwen/Qwen3-VL-32B-Instruct | 32 B (denso) | no disponible | Apache 2.0 | Hugging Face, upstream |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
+| furiosa-ai/Qwen3-VL-32B-Instruct (este) | 33,36B (denso) | no disponible | Apache 2.0 | Hugging Face, bundle para RNGD |
+| Qwen/Qwen3-VL-32B-Instruct (upstream) | 32B (denso) | no disponible | Apache 2.0 | Hugging Face, vLLM/SGLang/Transformers |
+| Otros modelos de la familia Qwen3-VL | no disponible | no disponible | no disponible | no disponible |
 
-La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de otros fabricantes, por lo que la comparativa se limita al modelo upstream y a la ausencia de alternativas documentadas.
+No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repositorio está orientado específicamente a FuriosaAI RNGD y a la librería Furiosa-LLM; para otros frameworks hay que remitirse al modelo upstream.
-- No se ha aplicado cuantización, por lo que el consumo de memoria es el de los pesos originales (164,7 GB en el repo), lo que limita su despliegue a hardware de gama alta.
-- La variante es Instruct, sin modo de pensamiento; no se debe esperar razonamiento extendido tipo thinking.
-- No se detallan sesgos conocidos ni tasas de alucinación en la información proporcionada.
-- No se especifican los idiomas soportados, lo que impide garantizar calidad multilingüe sin evaluación previa.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo upstream y de las dependencias de Furiosa-LLM.
-- El soporte de tool calling requiere arrancar el servidor con `--enable-auto-tool-choice --tool-call-parser hermes`.
-- Para imágenes locales es necesario habilitar `--allowed-local-media-path`; las URL remotas pueden restringirse con `--allowed-media-domains`.
+- Sesgos: no documentados en la información disponible; cabe esperar los sesgos del dataset de entrenamiento del modelo upstream.
+- Riesgo de alucinación: presente como en cualquier LLM; especialmente relevante en OCR y lectura de gráficos, donde conviene validar las extracciones.
+- Contexto e idiomas: la longitud de contexto y la lista de idiomas no se detallan en esta ficha.
+- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia y condiciones del modelo upstream y de las dependencias de Furiosa-LLM.
+- Hardware: el bundle FXB está ligado a FuriosaAI RNGD; para otras plataformas debe usarse el modelo upstream.
+- Precisión: al no aplicarse cuantización, los requisitos de memoria son elevados (repo de 168,5 GB).
+- Modo Instruct: no incluye modo de razonamiento extendido; para tareas que lo requieran debe considerarse otra variante.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-32B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-32B-Instruct
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
-- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Documentación Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guía de modelos visión-lenguaje: https://developer.furiosa.ai/latest/en/furiosa_llm/vision-language.html
 - Guía de tool calling: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html
 - Instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
-- Sitio de FuriosaAI: https://furiosa.ai
+- FuriosaAI: https://furiosa.ai

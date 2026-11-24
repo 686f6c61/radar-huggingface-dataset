@@ -2,101 +2,101 @@
 
 ## Resumen
 
-Eshbar-lulilla es un ajuste fino completo del modelo google/gemma-4-31B-it, desarrollado por el usuario plantwaterer y publicado en Hugging Face. No es un modelo conversacional de propósito general: está especializado en toma de decisiones sobre preguntas de opción múltiple, con un motor propio (`eshbar_lulilla:Engine`) que combina inferencia estándar del transformer con un almacén de conocimiento y un ejecutor aritmético exacto para preguntas numéricas o de sí/no. El modelo hereda la arquitectura Gemma 4 de 31 273 088 876 parámetros y una ventana de contexto de 32 768 tokens.
+Eshbar-lulilla es un ajuste fino completo (continued full fine-tune) del modelo multimodal google/gemma-4-31B-it, desarrollado por el usuario plantwaterer. Se trata de la tercera iteracion de una cadena de fine-tunes que parte de liquamen y continua en haimation, y esta especializada en tareas de toma de decisiones y respuesta a preguntas de opcion multiple. El modelo conserva la torre de vision del modelo base, por lo que mantiene capacidades image-text-to-text, y anade un motor de inferencia propio (`eshbar_lulilla:Engine`) empaquetado en el repositorio.
 
-La relevancia del modelo reside en su enfoque híbrido: cuando la primera pasada de inferencia no alcanza un umbral de confianza (0,925 para opciones numéricas, 0,75 para sí/no), el sistema delega en un almacén de estadísticas a nivel de país o genera un pequeño programa Python que se ejecuta en un kernel GPU, cambiando la respuesta solo si el valor calculado coincide exactamente con una opción. Esta arquitectura busca reducir errores en tareas de decisión estructurada, y el autor reporta una puntuación pública de 70,27 en el Decision Index 0.3.
+La relevancia del modelo reside en su enfoque hibrido: combina un transformer multimodal de 31.273 millones de parametros con un sistema de ejecucion de codigo y un almacen de conocimiento integrado para responder preguntas numericas y binarias (si/no) cuando la primera pasada del modelo no alcanza un umbral de confianza. Ademas, incorpora una cabeza de prediccion multi-token (draft head) de Gemma-4 para decodificacion especulativa verificada por el propio modelo.
 
-El modelo se distribuye con licencia Apache-2.0, incluye pesos en safetensors (63,7 GB de repositorio) y está pensado para ejecutarse en una única GPU con al menos 75 GB de VRAM en bf16. No se han publicado datos sobre idiomas soportados ni resultados de benchmarks independientes más allá de la puntuación del Decision Index.
+Segun la model card, el modelo alcanza la posicion 15 de 345 en el Decision Index 0.4.1 con una puntuacion completa de 70,30, y una puntuacion de 70,27 (puesto 33) en la suite publica auto-evaluada. Requiere una GPU con al menos 75 GB de VRAM en bf16, lo que lo situa en el segmento de despliegue profesional.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Gemma 4), con capas de atención completa y de ventana deslizante; incluye cabecera de predicción multi-token (draft head) |
-| Parámetros totales | 31 273 088 876 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 32 768 tokens (max_len) |
-| Tipos de cuantización | No disponible (el autor solo menciona bf16 para inferencia) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer multimodal (Gemma-4) con capas de atencion completa bidireccional y capas locales causales de 1.024 tokens; torre de vision congelada |
+| Parametros totales | 31.273.088.876 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (capas locales de 1.024 tokens; contexto global no especificado) |
+| Tipos de cuantizacion | no disponible (entrenado e inferido en bf16) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (librería transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino completo (continued full fine-tune) de plantwaterer/liquamen, que a su vez deriva de google/gemma-4-31B-it. Incorpora una cabecera propia de última capa y un motor de inferencia empaquetado en el repositorio (`eshbar_lulilla:Engine`), con ficheros de motor, cabecera, almacén y ejecutor fijados por MD5 en `PINS.json` y verificados en la carga. La inferencia se realiza en bf16 con atención empaquetada para documentos: las capas de atención completa son bidireccionales dentro de un prompt, mientras que las capas de ventana deslizante son causales. Para peticiones por debajo de un límite de longitud, la respuesta se promedia sobre 4 órdenes de opciones. En decisiones binarias sí/no se integra una posterior de Laplace.
+El modelo es un transformer multimodal derivado de google/gemma-4-31B-it (revision `842da3794eaa0b77d5f08bae87a17459d91ff475`). Mantiene la torre de vision congelada y una arquitectura de atencion mixta: capas de atencion completa que operan de forma bidireccional dentro de un prompt y capas de ventana deslizante con atencion causal limitada a 1.024 tokens. El ajuste fino se realizo sobre los pesos de plantwaterer/haimation, que a su vez proviene de plantwaterer/liquamen.
 
-El entrenamiento parte de los datos de liquamen, que incluyen registros de ANLI (CC BY-NC 4.0) y ACOS (sin licencia declarada aguas arriba). A esta base se añaden particiones de entrenamiento descontaminadas de CLINC150 (CC BY 3.0), BANKING77 (CC BY 4.0), HoVer (CC BY-SA 4.0), WinoGrande (CC BY) y las cohortes del Habermas Machine (CC BY 4.0); posiciones de entrenamiento de ChessBench etiquetadas con Stockfish (CC BY 4.0, porciones CC0); preguntas sintéticas generadas con los constructores de tareas del kit público Decision Index (simulador de electrodomésticos y vocabulario de acordes POP909), eliminando todos los problemas de desarrollo y test del kit; y datos de LLM Bayesian Teaching Data (CC BY 4.0), MedMCQA (MIT) y preguntas sintéticas del autor. El autor declara que no se utilizó ninguna partición de test de ningún benchmark.
-
-La innovación técnica principal es el mecanismo de respuesta en dos pasadas: si la primera pasada no supera los umbrales de confianza, el sistema puede (a) consultar un almacén de conocimiento incluido con estadísticas a nivel de país, o (b) generar una función Python corta (decodificación greedy de hasta 320 tokens nuevos) con una cabecera de borrador de predicción multi-token cuyas propuestas verifica el propio modelo token a token, y ejecutarla con un ejecutor de aritmética exacta en un kernel GPU (con intérprete de respaldo de resultados idénticos). La respuesta solo cambia si el valor devuelto coincide exactamente con una opción y la función lo ha calculado; en ese caso la opción elegida recibe probabilidad 0,99 y el resto se reparte proporcionalmente a la primera pasada.
+El entrenamiento consistio en 3.122 actualizaciones con un tamano de lote global de 64, lo que suma 199.803 preguntas de decision (a partir de 200.034 filas tras descartar 231 con un error de etiquetado). Se uso `pack_tokens = 8.192`, AdamW en fp32 fusionado con `betas = (0.9, 0.95)`, `weight_decay = 0.0` y recorte de gradiente de 1.0. Se aplicaron offsets de caso-control de Prentice-Pyke sobre 4.921 filas binarias dispersas, seguido de un reajuste de la cabeza de la ultima capa con temperatura `T = 1.4004`. La innovacion tecnica principal es el motor de inferencia empaquetado, que incluye un almacen de conocimiento (estadisticas a nivel de pais), un ejecutor de aritmetica exacta como kernel de GPU y una cabeza de borrador de prediccion multi-token de Gemma-4 para decodificacion especulativa verificada token a token.
 
 ## Capacidades
 
-- Toma de decisiones sobre preguntas de opción múltiple, con especial énfasis en opciones numéricas y binarias sí/no.
-- Razonamiento estructurado mediante generación de programas Python cortos para cálculo exacto cuando la respuesta directa no es fiable.
-- Consulta a un almacén de conocimiento integrado con estadísticas a nivel de país.
-- Decodificación especulativa mediante cabecera de borrador multi-token (Gemma-4 multi-token-prediction assistant), con verificación token a token por el propio modelo.
-- Generación de texto conversacional (pipeline declarado: text-generation).
-- Procesamiento de imagen y texto (tag image-text-to-text), heredado de la arquitectura Gemma 4 multimodal.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad general; el flujo de dos pasadas es específico de la tarea de decisión.
-- Capacidades multilingües: no disponible.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generacion de texto y respuesta a preguntas de opcion multiple con calibracion de probabilidades (softmax a temperatura ajustada de 1,4004).
+- Decisiones binarias si/no con posterior de Laplace integrada.
+- Razonamiento numerico: cuando la primera pasada no supera el umbral de confianza (0,925 para opciones numericas, 0,75 para si/no), el modelo genera una funcion Python corta (maximo 320 tokens nuevos) y la ejecuta con un interprete de aritmetica exacta.
+- Consulta a un almacen de conocimiento integrado con estadisticas a nivel de pais para preguntas numericas.
+- Procesamiento de imagen y texto (image-text-to-text) gracias a la torre de vision heredada de Gemma-4.
+- Decodificacion especulativa mediante cabeza de borrador multi-token, con verificacion por el propio modelo.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Evaluación automatizada de exámenes tipo test con opciones numéricas: el modelo responde preguntas de opción múltiple y, cuando la confianza es baja, genera y ejecuta una función Python para calcular el valor exacto, lo que resulta adecuado para preguntas de estadística o aritmética donde la respuesta directa del LLM es propensa a error.
-- Sistemas de decisión binaria en producción: para preguntas de sí/no, la integración de una posterior de Laplace sobre las decisiones binarias proporciona una salida probabilística calibrada, útil en flujos de aprobación o verificación automatizada.
-- Consulta de indicadores socioeconómicos por país: el almacén de conocimiento integrado (basado en datos de Our World in Data, V-Dem y otras fuentes) permite responder preguntas numéricas sobre estadísticas nacionales cuando el valor coincide exactamente con una de las opciones.
-- Investigación en evaluación de modelos de decisión: el modelo se integra con el kit apolinario/decision-index mediante un comando de ejecución reproducible, lo que facilita la comparación de puntuaciones en el Decision Index 0.3.
-- Clasificación de intenciones y dominios conversacionales: el ajuste incluye particiones de entrenamiento de CLINC150 y BANKING77, por lo que puede emplearse en tareas de enrutamiento de consultas en asistentes de banca o atención al cliente, aunque no se han publicado métricas específicas para estas tareas.
-- Razonamiento sobre posiciones de ajedrez: el entrenamiento con posiciones de ChessBench etiquetadas por Stockfish sugiere capacidad para evaluar o seleccionar jugadas en formato de decisión estructurada.
-- Despliegue en una única GPU de alta gama: con 62 GB de pesos en bf16, cabe en una RTX PRO 6000 (96 GB), lo que permite servir el modelo en una sola tarjeta para entornos de investigación o evaluación por lotes.
+- Evaluacion automatizada de opciones multiples: el modelo esta entrenado especificamente sobre 199.803 preguntas de decision, por lo que es adecuado para bancos de preguntas tipo test, evaluaciones de conocimiento y tareas de seleccion entre alternativas con probabilidades calibradas.
+- Respuesta a preguntas estadisticas por pais: el almacen de conocimiento integrado con datos de Our World in Data permite resolver consultas numericas sobre indicadores nacionales sin necesidad de calculo externo.
+- Verificacion aritmetica en pipelines de decision: la generacion y ejecucion de funciones Python con aritmetica exacta permite obtener resultados numericos verificables en lugar de aproximaciones del modelo de lenguaje.
+- Sistemas de decision binaria con incertidumbre cuantificada: la posterior de Laplace sobre decisiones si/no proporciona una medida de confianza integrada, util en entornos donde la calibracion es critica.
+- Procesamiento de documentos con imagen y texto: la torre de vision permite extraer informacion de capturas, formularios o graficos y combinarla con razonamiento textual en una sola pasada.
+- Despliegue en entornos con GPU profesional unica: al caber en una RTX PRO 6000 (96 GB), es viable en estaciones de trabajo con una sola GPU, sin necesidad de infraestructura multi-GPU.
+- Evaluacion de modelos de decision: el modelo sirve como referencia en tableros como el Decision Index, donde compite con otros fine-tunes de la misma familia.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado | Notas |
-|---|---|---|
-| Decision Index 0.3 (puntuación pública) | 70,27 | Autoevaluado por el autor (self-run) |
+| Benchmark | Puntuacion | Rango | Comparativa |
+|---|---|---|---|
+| Decision Index 0.4.1 (full score) | 70,30 | 15 / 345 | +1,16 sobre liquamen (69,14) |
+| Decision Index 0.4.1 (same-skill) | 66,58 | 16 | +2,64 sobre liquamen |
+| Decision Index 0.4.1 (new-domain) | 59,64 | 17 | -0,89 sobre liquamen |
+| Suite publica (auto-evaluada) | 70,27 | 33 | +4,48 sobre liquamen (65,79); +2,83 sobre haimation (67,44) |
+| Suite publica (raw) | 77,52 | no disponible | no disponible |
+| Suite publica (breadth) | 69,72 | no disponible | no disponible |
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor reporta latencias medidas en una RTX PRO 6000 Blackwell sobre 1 000 peticiones: mediana 302 ms, media 693 ms, p80 928 ms, p95 2 165 ms en la muestra pública del tablero; en una muestra de 1 000 peticiones con el triple de tasa de enrutamiento, mediana 195 ms, media 421 ms, p80 347 ms. La carga del modelo y el calentamiento (hasta unos cuatro minutos) no están incluidos.
+Latencia medida en una RTX PRO 6000 Blackwell sobre 1.000 peticiones: mediana 302 ms, media 693 ms, p80 928 ms, p95 2.165 ms. En una muestra con ocho veces la tasa de enrutamiento: mediana 195 ms, media 421 ms, p80 347 ms. No se incluye la carga del modelo ni el calentamiento (hasta unos cuatro minutos).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al menos 75 GB en bf16 (pesos de 62 GB).
-- GPU recomendadas: una RTX PRO 6000 (96 GB) es suficiente según el autor; no se mencionan A100 ni H100 en la información disponible.
-- ¿Cabe en GPU de consumo? No: 62 GB de pesos en bf16 exceden la VRAM de cualquier GPU de consumo actual (RTX 4090 con 24 GB, etc.).
-- Opciones de despliegue: el motor propio `eshbar_lulilla:Engine` se ejecuta en proceso desde el repositorio, invocado mediante el kit decision-index (`python -m decision_index run --engine eshbar_lulilla:Engine`). El kernel del ejecutor se distribuye precompilado para sm_75 a sm_120. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: mediana de 302 ms y p95 de 2 165 ms por petición en la muestra pública de 1 000 solicitudes; mediana de 195 ms en la muestra con mayor tasa de enrutamiento. Throughput agregado no disponible.
+- VRAM estimada: al menos 75 GB en bf16 (pesos de 62 GB).
+- GPU recomendada: una RTX PRO 6000 (96 GB) es suficiente; tambien cabe en A100 80 GB o H100 80 GB.
+- No cabe en GPU de consumo (RTX 4090 con 24 GB, RTX 3090 con 24 GB) en bf16 sin cuantizacion, y no se documentan opciones cuantizadas.
+- Opciones de despliegue: el motor propio `eshbar_lulilla:Engine` se ejecuta en proceso desde el repositorio; el kernel del ejecutor viene precompilado para sm_75 a sm_120. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: mediana de 302 ms por peticion en la muestra publica de 1.000 filas; el calentamiento puede tardar hasta cuatro minutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plantwaterer/eshbar-lulilla | 31 273 088 876 | 32 768 tokens | Decisión sobre opción múltiple con motor híbrido | Apache-2.0 | Hugging Face (933 descargas) |
-| google/gemma-4-31B-it | No disponible en la información proporcionada | No disponible | Modelo base conversacional multimodal | No disponible en la información proporcionada | Hugging Face (modelo base) |
-| plantwaterer/liquamen | No disponible en la información proporcionada | No disponible | Modelo base del ajuste fino | No disponible en la información proporcionada | Hugging Face |
-
-No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada.
+| eshbar-lulilla | 31,27 B | no disponible | 70,30 (puesto 15) | Apache-2.0 | Hugging Face |
+| plantwaterer/haimation | no disponible | no disponible | 67,44 (suite publica) | no disponible | Hugging Face |
+| plantwaterer/liquamen | no disponible | no disponible | 69,14 (full score) | no disponible | Hugging Face |
+| google/gemma-4-31B-it | 31 B (aproximado) | no disponible | no disponible | Apache-2.0 (segun modelo base) | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- El modelo está especializado en decisiones de opción múltiple; su uso como modelo conversacional general no está validado y las capacidades fuera de ese dominio no están documentadas.
-- Riesgo de alucinación en la primera pasada: el mecanismo de segunda pasada solo se activa bajo condiciones estrictas (pregunta única, opciones numéricas o sí/no, y confianza por debajo de los umbrales 0,925 o 0,75); en el resto de casos la respuesta es la de la primera pasada sin verificación adicional.
-- El almacén de conocimiento cubre únicamente estadísticas a nivel de país y está licenciado CC BY-SA 4.0, con datos de Our World in Data (CC BY 4.0) y V-Dem (CC BY-SA 4.0); los valores están redondeados a tres cifras significativas y reindexados, por lo que no deben usarse como fuente primaria.
-- Los datos de entrenamiento incluyen ANLI (CC BY-NC 4.0), de uso no comercial, y ACOS, sin licencia declarada aguas arriba; aunque los pesos se publican como Apache-2.0, estas procedencias deben tenerse en cuenta en una revisión legal para uso comercial.
-- Idiomas soportados no documentados; no hay garantías de rendimiento multilingüe.
-- El modelo requiere una GPU con al menos 75 GB de VRAM en bf16, lo que limita su despliegue a hardware profesional.
-- La puntuación de 70,27 en el Decision Index 0.3 es autoevaluada por el autor (self-run) y no ha sido verificada de forma independiente.
-- La generación de programas Python y su ejecución en un kernel GPU introduce una superficie de fallo adicional; el autor indica que el intérprete de respaldo produce resultados idénticos, pero no se detallan los modos de fallo del kernel.
-- No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni comparativas independientes.
+- El modelo esta especializado en tareas de decision y opcion multiple; su rendimiento en generacion abierta, codigo general o conversacion no esta documentado.
+- El almacen de conocimiento integrado cubre solo estadisticas a nivel de pais y esta licenciado bajo CC BY-SA 4.0, lo que impone obligaciones de atribucion y comparticion derivadas del uso de esos datos.
+- El ejecutor de codigo (`eshbar/xr_runtime/`) deriva de LOOM (Apache-2.0, modificado) y requiere revision de su LICENSE y NOTICE para uso en produccion.
+- La decodificacion especulativa puede producir diferencias en el programa generado cuando los dos logits superiores estan dentro de un ulp en bf16, aunque no se observaron cambios en las respuestas medidas (0 cambios en 2.000 peticiones).
+- El modelo requiere al menos 75 GB de VRAM, lo que excluye GPU de consumo y limita el despliegue a infraestructura profesional.
+- No se documentan sesgos conocidos, riesgos de alucinacion especificos ni limitaciones de idioma en la informacion proporcionada.
+- La licencia Apache-2.0 permite uso comercial, pero los componentes de terceros (store_table.json, xr_runtime) tienen licencias propias que deben respetarse.
+- Los resultados del Decision Index son una instantanea del 21 de noviembre de 2026 y pueden variar con actualizaciones del tablero.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/plantwaterer/eshbar-lulilla
+- Hugging Face: https://huggingface.co/plantwaterer/eshbar-lulilla
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Modelo predecesor: https://huggingface.co/plantwaterer/liquamen
-- Kit Decision Index: https://huggingface.co/apolinario/decision-index
-- Ejecutor derivado de LOOM: https://github.com/mkturkcan/Loom
-- ChessBench (searchless_chess): https://github.com/google-deepmind/searchless_chess
-- LLM Bayesian Teaching Data: https://doi.org/10.5281/zenodo.17677329
-- MedMCQA: https://github.com/medmcqa/medmcqa
+- Modelo predecesor (haimation): https://huggingface.co/plantwaterer/haimation
+- Modelo predecesor (liquamen): https://huggingface.co/plantwaterer/liquamen
+- Decision Index board: https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Kit de evaluacion: apolinario/decision-index (commit 9eb2dbe2a358004c8782c66e40a83ac07b953fec)
+- Repositorio LOOM (ejecutor derivado): https://github.com/mkturkcan/Loom
+- Asistente Gemma-4 (draft head): https://huggingface.co/google/gemma-4-31B-it-assistant

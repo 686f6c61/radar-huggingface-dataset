@@ -5,7 +5,7 @@
   "author": "KikoCis",
   "url": "https://huggingface.co/KikoCis/Qwen3.8-27B-GGUF",
   "created_at": "2026-08-17T19:11:22.000Z",
-  "updated_at": "2026-11-22T17:45:47.000Z",
+  "updated_at": "2026-11-23T17:45:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 6534,
+  "downloads_30d": 6595,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

@@ -2,100 +2,103 @@
 
 ## Resumen
 
-Lumina 2.75M es un modelo de lenguaje causal autoregresivo de muy pequeno tamano (2.750.976 parametros) desarrollado por jacopof y entrenado integramente desde cero para la lengua italiana. Se distribuye bajo licencia MIT en formato safetensors con un peso de aproximadamente 11 MB, lo que lo situa en la categoria de modelos para edge computing y despliegue en navegador. No reutiliza pesos de modelos preentrenados ni tokenizers preconfigurados: emplea un tokenizer a nivel de byte con un vocabulario de 259 tokens.
+Lumina-Next 135M es un modelo de lenguaje de tipo decoder-only desarrollado por Jacopo Forti (usuario `jacopof` en Hugging Face) como parte del ecosistema "Lumina AI". Está disenado especificamente para inferencia en dispositivos edge (portatiles, CPU y GPU de consumo) con una especializacion clara en codigo Python, logica formal y lengua italiana. El checkpoint publicado corresponde al step 8.025 de un proceso de entrenamiento acumulativo de 8.000 pasos.
 
-El modelo se posiciona explicitamente como una alternativa honesta frente a la tendencia a la alucinacion de los grandes modelos: esta entrenado para responder con precision dentro de un perimetro acotado de conocimiento (definiciones cientificas, conceptos informaticos, astronomia, saludos) y para declarar de forma explicita cuando una pregunta queda fuera de lo que ha aprendido. Su ventana de contexto es de tan solo 165 bytes, lo que limita severamente las conversaciones multi-turno.
+La arquitectura es un transformer clasico con Grouped Query Attention (GQA) en proporcion 3:1, RMSNorm pre-attention y pre-MLP, activacion SwiGLU y embeddings atados (tied embeddings). El modelo declara 103,39 millones de parametros efectivos con tied embeddings, aunque el recuento real de parametros en safetensors es de 225.952.512 (correspondiente a la version con embeddings no atados). El contexto nativo es de 8.192 tokens, extensible hasta 32.768 mediante YaRN.
 
-Su relevancia actual reside en la demostracion de que es posible entrenar un modelo funcional desde cero con recursos muy limitados (una sola GPU RTX 5060) y desplegarlo con latencia inferior a 0,1 s en CPU o GPU estandar, en cualquier portatil, Raspberry Pi, movil o incluso dentro del navegador mediante JavaScript. Es un ejercicio tecnico y educativo mas que una herramienta de produccion general.
+La relevancia del modelo radica en su enfoque en eficiencia extrema y su licencia MIT, que permite uso comercial sin restricciones. No obstante, el propio autor advierte que el benchmark reportado (87,5% sobre 8 preguntas locales) no constituye una medida general de capacidad, y que el modelo puede producir repeticiones o texto incoherente en respuestas largas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only con atencion SDPA |
-| Parametros totales | 2.750.976 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 165 bytes |
-| Tipos de cuantizacion | no disponible (el autor solo documenta safetensors nativo) |
-| Idiomas soportados | italiano (it) |
+| Arquitectura | Transformer decoder-only con GQA, RMSNorm, SwiGLU y RoPE con YaRN |
+| Parametros totales | 225.952.512 (safetensors); 103,39M con tied embeddings |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 8.192 tokens nativo; hasta 32.768 con YaRN |
+| Tipos de cuantizacion | No especificados; se distribuye en safetensors, ONNX y GGUF (compatible con llama.cpp, que permite cuantizaciones estandar) |
+| Idiomas soportados | Italiano (unico idioma declarado) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (model.safetensors), con codigo de modelado propio (modeling_lumina.py) |
+| Formato de pesos | safetensors, pytorch_model.bin, ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
 
-Lumina es un transformer causal decoder-only de 6 bloques, con dimension oculta de 192, 6 cabezas de atencion (dimension por cabeza de 32), capa feed-forward de 768 (expansion 4x) y activacion GELU aproximada. Aplica LayerNorm antes de la atencion y antes de la FFN, usa embeddings atados (la matriz de salida comparte pesos con el embedding de entrada) y emplea atencion multi-cabeza causal con mecanismo SDPA. El tokenizer es a nivel de byte puro: 256 bytes UTF-8 mas los tokens especiales BOS (256), EOS (257) y PAD (258), para un total de 259 tokens de vocabulario.
+El modelo emplea una arquitectura transformer decoder-only con innovaciones orientadas a eficiencia: Grouped Query Attention con 9 cabezas de query y 3 de key/value (head_dim = 64), RMSNorm aplicado antes de atencion y antes del MLP, activacion SwiGLU con dimension de feed-forward de 1.536, y RoPE con frecuencia base theta = 500.000,0 e interpolacion YaRN para extension de contexto. El tokenizer es un Byte-Level BPE con vocabulario de 32.000 tokens, entrenado conjuntamente sobre Python, SQL, Git e italiano.
 
-El entrenamiento se realizo desde cero, sin pesos preentrenados, sin APIs externas y con un tokenizer construido por el autor. Se uso el optimizador AdamW con Cosine Annealing, dropout de 0,1 y weight decay de 0,05, sobre una unica GPU RTX 5060. La model card no especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; el autor describe el objetivo de entrenamiento como "afinidad y honestidad delimitada", orientado a que el modelo responda con precision en su dominio y rechace honestamente las preguntas fuera de perimetro.
+El entrenamiento acumula 8.025 pasos con un throughput medio cercano a 14.000 tokens/s. La tabla de convergencia del autor muestra una reduccion de la loss de entropia cruzada desde 8,9042 (step 0) hasta 0,1353 (step 8.025). No se especifica el volumen total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. El autor menciona que la aplicacion Lumina incorpora controles locales deterministicos que no forman parte de los pesos publicados.
 
 ## Capacidades
 
-- Generacion de texto en italiano en dominios acotados: definiciones cientificas, conceptos informaticos basicos, astronomia y saludos.
-- Respuesta a preguntas de verificacion libre (probes) con reconocimiento de sinonimos y variaciones de saludo.
-- Generalizacion sobre reformulaciones de preguntas conocidas (distinta puntuacion y prefijos).
-- Rechazo explicito y honesto ante preguntas fuera de su conocimiento, con la frase "Non lo so: e fuori da cio che ho imparato. Prova una domanda piu semplice."
-- Ejecucion en navegador web mediante Web Worker (JavaScript).
-- No dispone de soporte documentado de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento.
-- Capacidad multilingue practicamente inexistente: solo italiano, y condicionada por el vocabulario a nivel de byte y la ventana de 165 bytes.
+- Generacion de texto en italiano con soporte de plantilla de chat basada en tokens especiales `<|im_start|>` y `<|im_end|>`.
+- Generacion de codigo Python, con tokenizer entrenado especificamente sobre codigo Python, SQL y Git.
+- Razonamiento logico formal basico y explicacion de reglas gramaticales italianas (auxiliares essere/avere).
+- Conocimiento factual limitado en dominios como geografia, ciencia y calendario, segun el benchmark declarado por el autor.
+- Soporte de contexto largo (8.192 tokens nativo, 32.768 con YaRN), adecuado para documentos extensos o conversaciones multi-turno.
+- Capacidad de "honestidad" declarada: el modelo reconoce incertidumbre sobre fechas futuras, segun la tabla de convergencia.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al italiano declarado.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Demostracion educativa de entrenamiento de un LLM desde cero: sirve para ilustrar en cursos y talleres el ciclo completo (tokenizer a nivel de byte, arquitectura transformer, entrenamiento en una GPU consumer) con un coste computacional minimo.
-- Asistente de FAQ acotado en italiano: puede gestionar preguntas frecuentes de un dominio cerrado (definiciones, conceptos basicos) y declinar las que quedan fuera, lo que reduce el riesgo de respuestas inventadas en atencion al usuario de bajo riesgo.
-- Despliegue embebido en dispositivos sin recursos: sus 11 MB permiten ejecutarlo en Raspberry Pi, moviles o microcontroladores con suficiente memoria, con latencia inferior a 0,1 s en CPU estandar.
-- Chatbot de navegador sin backend: al ejecutarse en un Web Worker, permite ofrecer un asistente de demostracion completamente local, sin llamadas a servidores y con privacidad por diseno.
-- Filtro o clasificador ligero de intenciones en italiano: su capacidad de reconocer el intento del usuario incluso con sinonimos y saludos distintos (85,7% en probes) puede aprovecharse como primera capa de enrutamiento antes de un modelo mayor.
-- Prototipado rapido de interfaces conversacionales: permite validar UX de chat y flujos de rechazo honesto sin incurrir en costes de inferencia en la nube.
-- Componente de juguete para investigacion sobre alucinacion y calibracion: su comportamiento de rechazo medido (66,7% de reconocimiento fuera de perimetro, 2,9% de falsos rechazos) lo hace util como caso de estudio de calibracion en modelos pequenos.
+- **Asistente de codigo Python en local**: el modelo puede integrarse en editores o IDEs para autocompletado y generacion de fragmentos Python, ejecutandose en CPU o GPU de consumo gracias a sus ~103M parametros efectivos y su formato GGUF compatible con llama.cpp.
+- **Procesamiento de documentacion tecnica en italiano**: con 8.192 tokens de contexto nativo (32.768 con YaRN), puede resumir o responder preguntas sobre manuales, normativas o documentacion extensa en italiano sin necesidad de infraestructura cloud.
+- **Generacion de consultas SQL**: el tokenizer entrenado sobre SQL permite generar y completar consultas a partir de descripciones en italiano, util en herramientas internas de analitica.
+- **Correccion gramatical italiana**: el modelo ha sido entrenado para explicar reglas gramaticales (auxiliares essere/avere) y puede emplearse en herramientas de revision de texto italiano, aunque con verificacion humana dada su tendencia a la incoherencia en respuestas largas.
+- **Prototipado rapido en edge**: por su tamano y licencia MIT, es adecuado para experimentar con pipelines de generacion de texto en dispositivos sin GPU dedicada, usando la exportacion ONNX con dynamic axes para DirectML o CPU.
+- **Educacion y demos de IA**: su bajo coste de inferencia y su licencia permisiva lo hacen util para talleres, demos y entornos docentes donde se ensenen fundamentos de LLM sin depender de APIs externas.
+- **Filtrado y clasificacion de texto italiano**: puede emplearse como modelo base para tareas de clasificacion o extraccion de informacion en italiano, con fine-tuning posterior sobre datos especificos.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la model card son evaluaciones internas con greedy decoding sobre cientos de ejemplos de validacion no vistos durante el entrenamiento. No son benchmarks estandar de la comunidad (MMLU, HumanEval, GSM8K) y no hay comparacion con otros modelos.
+El autor publica una tabla de convergencia interna con un benchmark deterministico de 8 preguntas (16 puntos), no comparable con benchmarks estandar como MMLU, HumanEval o GSM8K. No se han publicado resultados en benchmarks estandar en la informacion disponible.
 
-| Ambito de prueba | Precision sobre datos no vistos | Comportamiento |
-|---|---|---|
-| Definiciones y conceptos tecnicos | 98,2% | Explica correctamente con frases nuevas |
-| Preguntas de verificacion libre (probes) | 85,7% | Reconoce la intencion con sinonimos y saludos distintos |
-| Preguntas conocidas con reformulaciones | 79,1% | Generalizacion robusta ante puntuacion y prefijos variados |
-| Reconocimiento de hechos fuera de perimetro | 66,7% | Rechaza honestamente en lugar de inventar |
-| Falsos rechazos (errores de bloqueo) | 2,9% | Responde casi siempre cuando la pregunta es valida |
+| Ciclo | Step | Loss CE | Score benchmark (16 pts) |
+|---|---|---|---|
+| Baseline | 0 | 8,9042 | 0,0% (0/16) |
+| Ciclo 1 | 500 | 3,6652 | 0,0% (0/16) |
+| Ciclo 2 | 1.500 | 1,9958 | 25,0% (4/16) |
+| Ciclo 3 | 2.500 | 1,5491 | 31,2% (5/16) |
+| Ciclo 4 | 3.500 | 1,1533 | 37,5% (6/16) |
+| Ciclo 5 | 5.000 | 0,7269 | 37,5% (6/16) |
+| Ciclo 6 | 6.500 | 0,4548 | 50,0% (8/16) |
+| Ciclo 7 | 8.025 | 0,1353 | 87,5% (14/16) |
 
-No se han publicado resultados de benchmarks estandar en la informacion disponible.
+El autor advierte explicitamente que este benchmark es un control local sobre 8 preguntas y no una medida general de inteligencia. La aritmetica queda como area pendiente de mejora segun la propia model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en cualquier configuracion; el modelo nativo pesa unos 11 MB en safetensors y los 2,75 M de parametros en FP32 ocupan aproximadamente 11 MB, por lo que cabe holgadamente en cualquier GPU.
-- GPU recomendadas: no requiere GPU dedicada; el autor lo entreno en una RTX 5060 y reporta latencia inferior a 0,1 s tanto en GPU como en CPU estandar.
-- Cabe en cualquier GPU consumer, incluida la gama mas baja, y en CPU, Raspberry Pi, moviles y navegador web.
-- Opciones de despliegue: el repositorio incluye `modeling_lumina.py` (carga via `from_pretrained`) y `generate.py` para linea de comandos; tambien se documenta ejecucion en navegador mediante Web Worker. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado que el modelo usa un codigo de modelado propio y un tokenizer a nivel de byte no compatible con los pipelines estandar.
-- Latencia y throughput: latencia de respuesta inferior a 0,1 s segun el autor; no se publican cifras de throughput (tokens por segundo).
+- **VRAM estimada para inferencia**: el checkpoint safetensors ocupa 394 MB; en bfloat16 la inferencia requiere aproximadamente 0,5 GB de VRAM, y en cuantizacion de 8 bits o 4 bits puede ejecutarse en menos de 0,3 GB.
+- **GPU recomendadas**: cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; tambien funciona en GPUs integradas y CPU.
+- **Compatibilidad con GPU de consumo**: si, cabe holgadamente en cualquier GPU de consumo e incluso en dispositivos con poca memoria.
+- **Opciones de despliegue**: llama.cpp (formato GGUF), LM Studio, ONNX Runtime (con DirectML o CPU), PyTorch/Transformers con el codigo `modeling_lumina_next.py` proporcionado por el autor.
+- **Latencia y throughput**: no se han publicado mediciones de latencia o throughput de inferencia en la informacion disponible, salvo el throughput de entrenamiento (~14.000 tokens/s).
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks estandar ni de comparaciones publicadas por el autor frente a otros modelos. A continuacion se comparan caracteristicas objetivas con alternativas de la misma categoria (modelos muy pequenos para edge y demostracion); los datos de rendimiento de los alternativos no se incluyen porque no se han proporcionado en la informacion disponible.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Idiomas |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Formato |
 |---|---|---|---|---|---|
-| Lumina 2.75M | 2,75 M | 165 bytes | MIT | safetensors | italiano |
-| Modelos tipo TinyLlama / SmolLM (referencia de categoria) | cientos de millones | miles de tokens | variable (MIT/Apache en varios) | safetensors, GGUF | multilingue |
-| Modelos de juguete tipo nanoGPT (referencia de categoria) | < 10 M | variable | MIT | safetensors / PyTorch | ingles principalmente |
+| Lumina-Next 135M | 103,39M (tied) / 225,9M (safetensors) | 8.192 (32.768 con YaRN) | MIT | Italiano | safetensors, ONNX, GGUF |
+| SmolLM-135M (HuggingFaceTB) | 135M | 2.048 | Apache 2.0 | Ingles (principalmente) | safetensors, GGUF |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Multilingue | safetensors, GGUF |
+| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 | Ingles | safetensors, GGUF |
 
-La comparacion de rendimiento con alternativas concretas no esta disponible en la informacion proporcionada.
+Los datos de los modelos comparables corresponden a informacion publica general; no se dispone de comparaciones de rendimiento directas con Lumina-Next 135M en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto de solo 165 bytes, lo que impide conversaciones multi-turno reales y practicamente cualquier prompt de longitud media.
-- Conocimiento muy limitado y acotado a un perimetro estrecho; fuera de el, el modelo rechaza o puede producir respuestas incorrectas.
-- Riesgo de alucinacion residual: aunque el autor reporta un 66,7% de reconocimiento de preguntas fuera de perimetro, un tercio de estos casos no se detectan correctamente.
-- Tokenizer a nivel de byte con vocabulario de 259 tokens: ineficiente en longitud de secuencia y sin compatibilidad con tokenizers estandar, lo que complica la integracion con ecosistemas como Hugging Face Transformers, vLLM o llama.cpp.
-- Solo soporta italiano; no hay capacidades multilingues documentadas.
-- No dispone de tool calling, agentes, vision ni modo de razonamiento; no es apto para tareas de codigo, matematicas avanzadas ni recuperacion de informacion en tiempo real.
-- La licencia MIT permite uso comercial, pero el modelo no esta pensado ni validado para produccion; su uso comercial en tareas criticas no esta respaldado por evaluaciones independientes.
-- El numero de descargas (112) y la ausencia de likes indican una adopcion muy baja y escasa validacion por parte de la comunidad.
-- No se documentan sesgos especificos ni la composicion del dataset de entrenamiento, lo que impide evaluar sesgos de forma rigurosa.
+- **Riesgo de alucinacion elevado**: el propio autor advierte que el modelo puede producir repeticiones o texto incoherente en respuestas largas, y que requiere verificacion externa para calculos, datos actualizados y decisiones importantes.
+- **Benchmark no representativo**: el 87,5% reportado corresponde a 8 preguntas locales (16 puntos), no a un benchmark estandar; no debe interpretarse como capacidad general.
+- **Aritmetica debil**: segun la model card, la aritmetica sigue siendo un area pendiente de mejora.
+- **Idioma limitado**: solo se declara soporte de italiano; el rendimiento en otros idiomas no esta garantizado.
+- **Sesgos**: no se ha publicado informacion sobre sesgos conocidos ni sobre la composicion del dataset de entrenamiento.
+- **Licencia**: MIT permite uso comercial sin restricciones, pero el autor no ofrece garantias sobre el rendimiento en produccion.
+- **Controles de la aplicacion no incluidos**: la aplicacion Lumina incorpora controles deterministicos locales que no forman parte de los pesos publicados, por lo que el comportamiento del modelo desnudo puede diferir del producto final.
+- **Datos de entrenamiento no documentados**: no se especifica el volumen de tokens, la composicion del dataset ni el uso de RLHF/DPO, lo que dificulta evaluar la calidad y los sesgos del modelo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/jacopof/lumina
-- Demo en vivo (Hugging Face Space): https://huggingface.co/spaces/jacopof/lumina-chat
-- Repositorio alternativo citado en la model card: https://huggingface.co/jacopof/lumina-2.75m
-- Licencia MIT: https://opensource.org/licenses/MIT
+- [Hugging Face: jacopof/lumina](https://huggingface.co/jacopof/lumina)
+- [Perfil del autor: Jacopo Forti (jacopof)](https://huggingface.co/jacopof)
+- No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "tiptoi® | Système Éducatif Électronique | Ravensburger",
-      "url": "https://www.ravensburger.fr/fr-FR/produits/tiptoi",
-      "snippet": "Découvrez tiptoi®, le système d'apprentissage interactif qui transforme la lecture et le jeu en expérience sonore. Sans écran ni …Read more"
-    },
-    {
-      "title": "Votre lecteur tiptoi - ravensburger.fr",
-      "url": "https://www.ravensburger.fr/fr-FR/decouvrir/tiptoi",
-      "snippet": "Comment connecter la station de chargement à mon réseau Wi-Fi ? Branchez la station à une prise secteur via le câble fourni. …"
-    },
-    {
-      "title": "tiptoi® - Das spielerische Lernsystem von Ravensburger",
-      "url": "https://www.ravensburger.de/de-DE/entdecken/tiptoi",
-      "snippet": "Kinder ab 2 Jahren entdecken ihre Welt tippend. tiptoi ® begleitet sie beim Entdecken Ihrer Umgebung, dem Lernen erster Wörter …"
-    },
-    {
-      "title": "tiptoi® Manager zum Download - Ravensburger",
-      "url": "https://www.ravensburger.de/de-DE/entdecken/tiptoi/tiptoi-manager",
-      "snippet": "Der tiptoi® Manager ist ein Programm für Mac oder PC, mit dem du die Audiodateien für deine tiptoi® Produkte einfach und bequem …"
-    },
-    {
-      "title": "tiptoi® Manager à télécharger - ravensburger.be",
-      "url": "https://www.ravensburger.be/fr-BE/ravensburger/discover/tiptoi/tiptoi-manager",
-      "snippet": "Le tiptoi ® Gestionnaire est un programme pour Mac ou PC qui vous permet de télécharger, mettre à jour et synchroniser facilement …"
-    }
-  ]
+  "sources": []
 }

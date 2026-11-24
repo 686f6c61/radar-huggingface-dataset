@@ -2,107 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-NVFP4-Coder-Lean es una derivación podada a nivel arquitectónico del checkpoint `nvidia/Qwen3.8-Flash-Next-NVFP4`, publicada por el usuario elisepaul. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 131.744.657.299 parámetros totales según los pesos en safetensors, del cual se conservan intactos el enrutamiento completo (10 expertos enrutados + 1 compartido por token) y la capacidad de razonamiento del modelo fundacional, pero se eliminan las proyecciones multimodales y el shard auxiliar de embeddings PLE de 51,2 GB.
+Qwen3.8-Flash-Next-NVFP4-Coder-Lean es una derivación del checkpoint `nvidia/Qwen3.8-Flash-Next-NVFP4`, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 131.744 millones de parámetros totales, adaptado por el usuario elisepaul para ejecución en un único nodo NVIDIA DGX Spark (GB10, 128 GiB de memoria unificada LPDDR5x). El modelo original es multimodal y de propósito general; esta variante elimina las proyecciones de visión y el shard auxiliar de embeddings N-gram (PLE) para quedarse en un alcance estrictamente texto y código, reduciendo el peso cargado en memoria de 123,5 GiB a 74,91 GiB.
 
-El objetivo del autor es permitir el despliegue en un único nodo NVIDIA DGX Spark (GB10, 128 GiB de memoria unificada LPDDR5x) sin recurrir a swap del sistema operativo. Para ello reduce la huella cargada de 123,5 GiB a 74,91 GiB, restaura las 744 capas densas en MXFP8 nativo y mantiene residente el proponedor MTP (Multi-Token Prediction) para decodificación especulativa. El resultado declarado son velocidades de 24,4-36,0 tok/s en un solo stream y hasta 202,3 tok/s agregados con 8 streams concurrentes.
+La motivación es puramente de ingeniería de despliegue: el checkpoint completo no cabe en la memoria unificada de un DGX Spark sin provocar paginación del sistema operativo y degradar la generación. Coder-Lean conserva el enrutamiento MoE completo (10 expertos enrutados más 1 compartido por token), restaura las capas densas en MXFP8 nativo e incorpora un proponente MTP (Multi-Token Prediction) residente en memoria para decodificación especulativa, con velocidades medidas de 50,8 a 66,9 tok/s en un solo stream.
 
-Es relevante ahora porque demuestra una receta de serving de producción para hardware Blackwell de un solo nodo con memoria unificada, un escenario donde los checkpoints MoE de gran tamaño suelen provocar paginación de memoria virtual y degradar la generación. La licencia es la NVIDIA Open Model License, y el modelo está pensado específicamente para generación de código y flujos de agentes de desarrollo.
+El resultado es una receta de serving para vLLM sobre Blackwell (sm_121), orientada a generación de código y flujos de agentes de desarrollo, con licencia NVIDIA Open Model License y soporte de inglés, chino y código.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atención híbrida GDN (Gated Delta Net) lineal + atención completa; decodificación especulativa MTP |
-| Parametros totales | 131.744.657.299 |
-| Parametros activos | 10 expertos enrutados + 1 compartido por token (el modelo base se describe como 119,6B MoE con 512 micro-expertos enrutados, 10 enrutados por token) |
-| Longitud de contexto | Hasta 262k-1M tokens de KV cache según memoria libre (22-32 GiB de headroom); no se especifica la ventana máxima oficial del modelo base |
-| Tipos de cuantizacion | NVFP4 (W4A16_NVFP4) en capas MoE; MXFP8 (`float8_e4m3fn`) en 744 capas lineales densas; MTP en NVFP4; tags adicionales: FP4, FP8, MXFP8 |
+| Arquitectura | Transformer MoE (512 micro-expertos enrutados + 1 compartido, 10 enrutados por token) con atención lineal híbrida GDN y capas densas en MXFP8 |
+| Parametros totales | 131.744.657.299 (131,7B) |
+| Parametros activos | 10 expertos enrutados + 1 compartido por token (el número exacto de parámetros activos no está disponible) |
+| Longitud de contexto | Hasta 262k–1M tokens según KV cache disponible (híbrido GDN); valor nominal no disponible |
+| Tipos de cuantizacion | NVFP4 (W4A16_NVFP4) en capas MoE; MXFP8 (`float8_e4m3fn`) en capas densas; MTP en NVFP4 |
 | Idiomas soportados | en, zh, code |
-| Licencia | nvidia-open-model-license (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | safetensors (11 shards, 74,91 GiB); librería vLLM |
+| Licencia | nvidia-open-model-license |
+| Formato de pesos | safetensors (11 shards, 74,91 GiB), biblioteca vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una poda del checkpoint `nvidia/Qwen3.8-Flash-Next-NVFP4`, que se distribuye como release multimodal unificado con proyecciones de visión y un shard PLE (N-gram Prediction Layer Embedding) sin comprimir de 51,2 GB. Coder-Lean elimina esas dos partes para quedarse con un alcance puramente texto/código, pero preserva el enrutamiento MoE completo (10 expertos enrutados + 1 compartido por token), de modo que según el autor mantiene paridad bit-exacta con los pesos fundacionales de lenguaje. La arquitectura combina atención lineal GDN (Gated Delta Net) con atención completa, lo que permite cachés KV de gran tamaño con coste reducido.
+El modelo es un transformer MoE con 512 micro-expertos enrutados y 1 experto compartido, activando 10 expertos enrutados por token. Incorpora atención lineal híbrida GDN (Gated Delta Net) que permite ventanas de contexto muy largas con estado recurrente, y un proponente MTP (Multi-Token Prediction) de 4.637 tensores (1,60 GB en NVFP4) que actúa como cabezal de decodificación especulativa. Las 744 capas lineales densas (`linear_attn`, `self_attn`, `shared_expert`) se restauran en MXFP8 nativo, lo que reduce las lecturas del bus de memoria de 7,5 GB/token a aproximadamente 2,6 GB/token.
 
-La innovación técnica principal es la compresión selectiva: las capas MoE se mantienen en NVFP4 (W4A16_NVFP4, con group scaling vía kernel CUTLASS de FlashInfer), mientras que las 744 capas lineales densas (`linear_attn`, `self_attn`, `shared_expert`) se restauran en MXFP8 nativo, lo que reduce las lecturas de bus de memoria densas de 7,5 GB/token a ~2,6 GB/token. Además se injertan 4.637 tensores MTP (1,60 GB en NVFP4) como proponedor especulativo residente en memoria, con tasas de aceptación declaradas del 97,5 % en contexto largo y 99,1 % en appends de 32k. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens ni si hubo RLHF/DPO; el único dataset citado es `princeton-nlp/SWE-bench_Lite`, empleado como referencia de evaluación.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en la información proporcionada. El checkpoint base es `nvidia/Qwen3.8-Flash-Next-NVFP4`, y esta variante no reentrena pesos: poda capas multimodales y el shard PLE, y recuantiza capas densas. El dataset asociado en la model card es `princeton-nlp/SWE-bench_Lite`, lo que sugiere evaluación orientada a tareas de ingeniería de software.
 
 ## Capacidades
 
-- Generación de texto y código: el modelo está orientado explícitamente a code generation y flujos de desarrollo.
-- Razonamiento y resolución de problemas de ingeniería de software, evaluado sobre SWE-bench Lite según los tags del repositorio.
-- Soporte de agentes y razonamiento multi-paso (tag `agent`).
-- Decodificación especulativa con MTP integrado, que acelera la generación en 2,6x-3,9x según el autor.
-- Capacidad multilingüe limitada a inglés, chino y código.
-- Atención lineal híbrida GDN que permite contextos de 262k-1M tokens en función de la memoria disponible.
-- Soporte de prefix caching con una tasa de acierto declarada del 92,5 % en appends.
-- No se documenta soporte de tool calling ni function calling en la información disponible.
-- No se documentan capacidades de visión ni audio en esta derivación (fueron podadas del modelo base).
+- Generación de texto y código en inglés, chino y lenguajes de programación.
+- Razonamiento multi-paso y flujos de agente para desarrollo de software.
+- Decodificación especulativa mediante MTP con aceleración de 2,6× a 3,9× frente a decodificación autorregresiva.
+- Soporte de contexto largo (hasta 262k–1M tokens según KV cache) gracias a atención lineal híbrida GDN.
+- Serving concurrente multi-stream (hasta 8 streams con `max-num-seqs: 8`).
+- Capacidades multimodales (visión) eliminadas deliberadamente en esta variante.
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible.
 
 ## Casos de uso
 
-- Serving de código en un único DGX Spark: el modelo cabe residente en 74,91 GiB sobre 128 GiB de memoria unificada, lo que permite desplegar un MoE de más de 130B parámetros en un nodo de escritorio sin swap y con 22-32 GiB libres para KV cache.
-- Asistente de repositorio con contexto largo: gracias a la atención lineal GDN y a los 262k-1M tokens de KV cache posibles, se puede indexar y navegar un repositorio completo en una sola conversación, con una tasa de aceptación de draft del 97,5 % en contexto largo.
-- Agentes de resolución de issues: el modelo está evaluado sobre SWE-bench Lite y etiquetado como agente, por lo que encaja en pipelines que reciben un issue, exploran el código y proponen un parche multi-paso.
-- Generación de código en producción con vLLM: la integración nativa con vLLM, FlashInfer CUTLASS y ModelOpt permite servir el modelo con prefix caching (92,5 % de acierto) y decodificación especulativa para reducir latencia en autocompletado.
-- Servicio multi-usuario en un solo nodo: con 4-8 streams concurrentes el throughput agregado escala hasta 202,31 tok/s, adecuado para un equipo pequeño de desarrolladores compartiendo una instancia.
-- Evaluación e investigación de cuantización FP4/FP8: el checkpoint sirve como referencia práctica de cómo combinar NVFP4 en MoE con MXFP8 en capas densas sobre Blackwell (sm_121), útil para estudiar compromisos de precisión y rendimiento.
-- Prototipado de asistentes de código en chino e inglés: al soportar ambos idiomas más código, puede emplearse en equipos bilingües sin cambiar de modelo.
+- Generación de código en producción: el modelo conserva el enrutamiento MoE completo y puede integrarse en pipelines de CI/CD para autocompletado, revisión y generación de parches, con 50,8–66,9 tok/s en un solo stream sobre DGX Spark.
+- Agentes de ingeniería de software: el dataset SWE-bench_Lite asociado y el contexto largo permiten resolver issues multi-archivo con razonamiento multi-paso.
+- Asistente de desarrollo en estación de trabajo local: cabe en 74,91 GiB de memoria unificada de un único DGX Spark, dejando 22–32 GiB para KV cache, lo que permite desplegarlo en hardware de sobremesa Blackwell.
+- Serving multi-usuario en un solo nodo: con 8 streams concurrentes alcanza 165,47 tok/s agregados (20,68 tok/s por stream), adecuado para equipos pequeños.
+- Procesamiento de repositorios completos: la ventana de hasta 262k–1M tokens permite analizar bases de código extensas en una sola pasada.
+- RAG sobre documentación técnica: la caché de prefijo con 92,5% de hit rate en appends reduce la latencia en consultas repetidas sobre el mismo contexto.
+- Generación bilingüe (inglés/chino) de documentación técnica y código comentado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, SWE-bench) en la información disponible. Los únicos datos numéricos publicados son métricas de runtime medidas por el autor:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos de rendimiento publicados son de sistema, medidos en DGX Spark (GB10):
 
-| Metrica | Valor declarado |
+| Metrica | Valor |
 |---|---|
-| Decodificación single-stream, contexto corto (~80 tokens de código) | 25,25 tok/s (2,64x vs AR puro) |
-| Decodificación single-stream, contexto 32k | 36,01 tok/s (3,88x vs AR puro) |
-| Throughput agregado 2 streams, contexto corto | 57,90 tok/s (28,95 tok/s por stream) |
-| Throughput agregado 2 streams, contexto 32k | 70,19 tok/s (35,09 tok/s por stream) |
-| Throughput agregado 4-8 streams | 83,63-202,31 tok/s |
-| Tasa de aceptación de draft MTP (contexto largo) | 97,5 % |
-| Tasa de aceptación de draft MTP (32k) | 99,1 % |
-| Prefix cache append hit rate | 92,5 % (`--max-num-batched-tokens 1024`) |
-| Latencia de append con prefix cache | 1,09 s |
+| Decodificación single-stream (120 tokens) | 66,90 tok/s (TTFT 0,175 s, decodificación 1,79 s) |
+| Decodificación single-stream (600 tokens) | 60,47 tok/s (TTFT 0,171 s, decodificación 9,92 s) |
+| Rango single-stream | 50,80–66,90 tok/s (2,55–2,75× vs autorregresivo) |
+| 2 streams agregados | 80,33 tok/s (40,17 tok/s/stream) |
+| 4 streams agregados | 118,30 tok/s (29,58 tok/s/stream) |
+| 8 streams agregados | 165,47 tok/s (20,68 tok/s/stream) |
+| Hit rate de prefix cache | 92,5% (`--max-num-batched-tokens 1024`) |
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 74,91 GiB residentes para los pesos; 22-32 GiB adicionales para KV cache según contexto.
-- Plataforma objetivo: 1x NVIDIA DGX Spark (Blackwell GB10, compute capability sm_121), 128 GiB de memoria unificada LPDDR5x (~121,6 GiB usables), ancho de banda teórico ~273 GB/s.
-- Swap: estrictamente 0 bytes (`swapoff -a`); el autor lo marca como requisito.
-- GPU recomendadas: DGX Spark / GB10. No se documenta compatibilidad con A100, H100 ni RTX 4090; el modelo usa kernels NVFP4 y MXFP8 específicos de Blackwell.
-- ¿Cabe en GPU consumer? No hay datos para RTX 4090 u otras consumer; el tamaño de pesos (74,91 GiB) excede la VRAM de cualquier GPU consumer actual.
-- Despliegue: vLLM exclusivamente, con contenedor `vllm-node:latest` o `eugr/spark-vllm-b12x-coderlean:latest`, CUDA 13.0, PyTorch 2.9+ y backend FlashInfer CUTLASS NVFP4 MoE (`FLASHINFER_CUTLASS`).
-- Latencia y throughput: ver tabla de benchmarks; 25,25-36,01 tok/s single-stream y hasta 202,31 tok/s agregados con 8 streams.
+- Memoria: 74,91 GiB residentes para los pesos; se recomiendan al menos 96–128 GiB de memoria unificada para dejar 22–32 GiB a KV cache.
+- GPU objetivo: NVIDIA DGX Spark (GB10, sm_121, 128 GiB LPDDR5x unificada). Requiere arquitectura Blackwell para las instrucciones NVFP4 y MXFP8.
+- No cabe en GPUs de consumo convencionales (RTX 4090 con 24 GB, etc.) por el tamaño del checkpoint.
+- Despliegue: vLLM con kernels FlashInfer CUTLASS para NVFP4; el modelo está empaquetado como receta de serving para un solo nodo.
+- Latencia: TTFT de ~0,17 s; decodificación de 1,79 s para 120 tokens y 9,92 s para 600 tokens en single-stream.
+- Throughput: hasta 165,47 tok/s agregados con 8 streams concurrentes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-NVFP4-Coder-Lean | 131,7B totales, 10+1 expertos activos | 262k-1M (según KV) | nvidia-open-model-license | Hugging Face, vLLM | Podado para DGX Spark, sin visión ni PLE |
-| nvidia/Qwen3.8-Flash-Next-NVFP4 (base) | 119,6B MoE, 512 micro-expertos, 10 enrutados | No disponible | nvidia-open-model-license | Hugging Face | Multimodal completo, ~123,5 GiB cargados, requiere más memoria |
-| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se dispone de datos de otros modelos comparables en la información proporcionada |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qwen3.8-Flash-Next-NVFP4-Coder-Lean | 131,7B (MoE, 10+1 activos) | hasta 262k–1M (según KV) | nvidia-open-model-license | Hugging Face, vLLM |
+| nvidia/Qwen3.8-Flash-Next-NVFP4 (base) | 119,6B MoE | no disponible | nvidia-open-model-license | Hugging Face |
+| Alternativas de código abierto de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo es una poda no oficial del checkpoint de NVIDIA; no está publicado por NVIDIA y su comportamiento puede diferir del original.
-- Se han eliminado las capacidades multimodales (visión) y el shard PLE, por lo que no debe esperarse paridad total con el modelo base en tareas que dependan de esas componentes.
-- El autor afirma paridad bit-exacta solo en los pesos de lenguaje fundacionales; no hay validación independiente de calidad publicada.
-- Los benchmarks de calidad (SWE-bench, HumanEval, etc.) no se han publicado; solo hay métricas de throughput y latencia.
-- Licencia NVIDIA Open Model License: conviene revisar sus términos antes de uso comercial, ya que las restricciones específicas no se detallan en la información disponible.
-- Riesgo de alucinación y sesgos: no documentado en la información proporcionada; aplican los riesgos habituales de un modelo de código de gran tamaño.
-- Dependencia fuerte de hardware: requiere Blackwell (sm_121), CUDA 13.0, PyTorch 2.9+, FlashInfer CUTLASS y vLLM; no es portable a otras pilas sin trabajo adicional.
-- Requiere swap desactivado y memoria unificada de 128 GiB; en configuraciones menores puede haber paginación y degradación severa.
+- Modelo podado: no soporta visión ni el shard PLE original; no debe usarse para tareas multimodales.
+- Riesgo de alucinación inherente a modelos de lenguaje; no se han publicado evaluaciones de fidelidad en la información disponible.
 - Idiomas limitados a inglés, chino y código; el rendimiento en castellano no está documentado.
-- El repositorio tiene 835 descargas y 1 like en el momento de la consulta, lo que indica validación comunitaria muy limitada.
+- Licencia NVIDIA Open Model License: revisar condiciones para uso comercial y redistribución antes de producción.
+- Requiere hardware Blackwell (sm_121); no es desplegable en GPUs Ampere, Ada o anteriores sin recuantización adicional.
+- Dependencia de vLLM y kernels FlashInfer CUTLASS específicos; la portabilidad a otros runtimes (llama.cpp, Ollama, TGI) no está documentada.
+- El modelo es una derivación de terceros (elisepaul), no una release oficial de NVIDIA ni de Qwen; la validación de calidad recae en el usuario.
+- El contexto máximo efectivo depende de la KV cache disponible tras cargar los 74,91 GiB de pesos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/elisepaul/Qwen3.8-Flash-Next-NVFP4-Coder-Lean
 - Modelo base: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Dataset de evaluación: https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite
-- Paper referenciado (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
-- Contenedor vLLM para DGX Spark: `eugr/spark-vllm-b12x-coderlean:latest` (Docker Hub, no verificado en la búsqueda)
-- Repositorio vLLM: https://github.com/vllm-project/vllm
+- Paper de referencia (arXiv): https://arxiv.org/abs/2501.12948
+- Perfil del colaborador: https://huggingface.co/hfsameh
+- vLLM: https://github.com/vllm-project/vllm
 - FlashInfer: https://github.com/flashinfer-ai/flashinfer
 - NVIDIA ModelOpt: https://github.com/NVIDIA/TensorRT-Model-Optimizer

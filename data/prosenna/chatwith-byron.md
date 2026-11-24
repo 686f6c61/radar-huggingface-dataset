@@ -2,49 +2,48 @@
 
 ## Resumen
 
-ChatWith — Byron es un paquete de modelo empaquetado específicamente para la aplicación Android ChatWith, distribuido por el usuario prosenna en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un ajuste fino mediante LoRA sobre Ministral 3 3B Instruct 2512 (un modelo de la familia Ministral de Mistral AI), orientado a un caso de uso muy concreto: la generación de fichas de biografía, órdenes y opiniones dentro de la app ChatWith. El paquete incluye el modelo cuantizado en GGUF Q4_K_M, el tokenizador y una estructura de manifiesto propia del formato 1 de ChatWith.
+ChatWith — Byron es un paquete de modelo conversacional publicado por el usuario prosenna en Hugging Face, pensado para su integración en la aplicación Android ChatWith (versión 0.2.5, versionCode 7, o posterior). No se trata de un modelo entrenado desde cero, sino de un ajuste fino mediante LoRA sobre Ministral 3 3B Instruct 2512, un modelo base de 3.429.006.336 parámetros, distribuido en formato GGUF Q4_K_M generado con llama.cpp b12190. El paquete incluye además un tokenizador propio (`ministral3-3b-vocab.gguf`), un manifiesto, lógica en JavaScript y un índice de fichas de personaje.
 
-El modelo base tiene 3.429.006.336 parámetros (~3,4 mil millones), lo que lo sitúa en la gama de modelos pequeños aptos para dispositivos con recursos limitados. La distribución se realiza como un archivo ZIP (`byron_q4.zip`) que contiene una carpeta `byron/` con todos los artefactos necesarios para que la app cargue el modelo. La cuantización Q4_K_M se generó con llama.cpp build b12190.
+El propósito del modelo es dar vida a un personaje conversacional concreto ("Byron") dentro de la app ChatWith, con un formato de paquete propietario de tipo 1 que agrupa pesos, tokenizador y metadatos en una única carpeta `byron/`. El repositorio ocupa 17,3 GB, aunque el peso del GGUF Q4_K_M de un modelo de 3,4B parámetros debería rondar los 2 GB; el resto del tamaño corresponde presumiblemente a otros artefactos del paquete y a los ficheros de suma de verificación.
 
-La relevancia de esta ficha es limitada y fundamentalmente práctica: se trata de una demo experimental de un desarrollador individual, sin licencia declarada, sin benchmarks publicados y sin documentación técnica detallada. Resulta útil como ejemplo de empaquetado de modelos para aplicaciones móviles concretas, pero no como modelo de propósito general para producción.
+La relevancia del modelo es limitada y muy específica: es una demo experimental de un personaje para una app concreta, sin model card técnica detallada, sin licencia declarada y sin resultados de benchmarks. Su interés para desarrolladores e investigadores es el de un ejemplo de empaquetado de un modelo GGUF con LoRA de personaje para despliegue móvil, no el de un modelo de propósito general.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (hereda la de Ministral 3 3B Instruct 2512; detalles no disponibles) |
-| Parámetros totales | 3.429.006.336 (~3,4 B) |
-| Parámetros activos | no disponible (no es MoE según los datos disponibles) |
+| Arquitectura | no disponible (modelo base: Ministral 3 3B Instruct 2512; ajuste LoRA) |
+| Parámetros totales | 3.429.006.336 |
+| Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_K_M (GGUF); el paquete solo distribuye esta cuantización |
+| Tipos de cuantización | Q4_K_M (GGUF) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (modelo) y GGUF (tokenizador, `ministral3-3b-vocab.gguf`); empaquetado en ZIP con manifiesto JSON y lógica JS |
+| Formato de pesos | GGUF (dentro de un paquete propietario `byron/` con manifiesto, lógica JS y tokenizador GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Ministral 3 3B Instruct 2512, un transformer de ~3,4 mil millones de parámetros. Sobre él se aplicó un ajuste LoRA (Low-Rank Adaptation) entrenado por el autor para el dominio específico de ChatWith: fichas de biografía, órdenes y opiniones. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO adicionales.
+El modelo es un ajuste fino LoRA sobre Ministral 3 3B Instruct 2512, un transformer de 3,4B parámetros. La información disponible no detalla la composición del dataset de ajuste, el número de tokens de entrenamiento, ni si se emplearon técnicas de RLHF o DPO. El único dato técnico concreto es el pipeline de conversión: los pesos se exportaron a GGUF Q4_K_M con llama.cpp b12190 y se empaquetaron junto a un tokenizador GGUF específico (`ministral3-3b-vocab.gguf`).
 
-La innovación técnica destacable no está en el modelo en sí, sino en el formato de empaquetado: el ZIP contiene un manifiesto (`manifiesto.json`), lógica de aplicación (`logica.js`), cabecera (`cabecera.txt`), un índice de fichas (`fichas/indice.json`), el tokenizador en GGUF y el modelo cuantizado en GGUF Q4_K_M generado con llama.cpp b12190. Este formato está diseñado para que la app Android ChatWith (versión 0.2.5, versionCode 7 o posterior) cargue el modelo y sus metadatos de forma autocontenida.
+La innovación principal no está en el modelo sino en el formato de distribución: un paquete de formato 1 de ChatWith que incluye `manifiesto.json`, `logica.js`, `cabecera.txt`, `fichas/indice.json`, el tokenizador y el GGUF del modelo, más un fichero `SHA256SUMS` para verificación de integridad. Este diseño permite que la app Android cargue el personaje de forma autocontenida.
 
 ## Capacidades
 
-- Generación de texto conversacional en el contexto de la app ChatWith.
-- Generación de fichas de biografía, órdenes y opiniones (el dominio específico del LoRA).
-- Inferencia local en dispositivo mediante llama.cpp (formato GGUF).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el ajuste está orientado a tareas concretas de la app.
-- Capacidades multilingües: no disponible; no se declaran idiomas.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Generación de texto conversacional multi-turno (el modelo base es Instruct y el ajuste LoRA está orientado a personaje).
+- Interpretación de un personaje concreto ("Byron") definido por las fichas y la lógica del paquete ChatWith.
+- Ejecución local en dispositivo Android a través de la app ChatWith, sin depender de una API remota.
+- Tokenización propia empaquetada, lo que garantiza consistencia entre el tokenizador y los pesos.
+- Verificación de integridad mediante `SHA256SUMS`.
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Generación de fichas de biografía dentro de ChatWith: el LoRA está entrenado específicamente para producir fichas de personaje con estructura y estilo consistentes, lo que lo hace adecuado para esta tarea concreta dentro de la app.
-- Generación de órdenes y opiniones en el contexto de ChatWith: el ajuste cubre estos tipos de contenido, de modo que la app puede producir respuestas coherentes con su modelo de datos.
-- Despliegue en Android de bajo consumo: al ser un modelo de ~3,4 B en Q4_K_M, puede ejecutarse en dispositivos móviles mediante llama.cpp, lo que permite inferencia local sin conexión.
-- Prototipado de asistentes conversacionales especializados: sirve como ejemplo de cómo empaquetar un modelo base con un LoRA de dominio y distribuirlo como paquete autocontenido para una app.
-- Pruebas de integración del formato ChatWith: útil para desarrolladores que quieran validar el cargador de paquetes de la app (manifiesto, tokenizador, modelo) antes de entrenar sus propios LoRA.
-- Demo educativa de fine-tuning con LoRA sobre modelos pequeños: el paquete documenta el flujo completo (base + LoRA + cuantización GGUF + empaquetado), lo que puede servir de referencia para experimentos similares.
+- Chat de personaje en Android: la app ChatWith carga la carpeta `byron/` y ofrece una conversación con el personaje Byron en local, sin conexión a servidores externos.
+- Demo de empaquetado de modelos GGUF: sirve como referencia para desarrolladores que quieran distribuir un modelo cuantizado junto a tokenizador, manifiesto y lógica de personaje en un único paquete.
+- Pruebas de integración de llama.cpp en móvil: el GGUF Q4_K_M generado con llama.cpp b12190 permite validar el rendimiento de inferencia de un modelo de 3,4B en hardware Android.
+- Prototipado de asistentes conversacionales con personalidad: el LoRA de personaje permite experimentar con respuestas caracterizadas sin reentrenar el modelo base.
+- Verificación de despliegues: el uso de `SHA256SUMS` facilita comprobar que los pesos y el tokenizador no se han corrompido en la distribución.
+- Evaluación comparativa de cuantizaciones: al estar en Q4_K_M, puede compararse con otras cuantizaciones del mismo modelo base para medir el impacto en calidad y velocidad.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +51,34 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_M, un modelo de ~3,4 B ocupa aproximadamente 2-2,5 GB de pesos; se recomienda al menos 4 GB de memoria disponible para el modelo y el contexto.
-- GPU recomendadas: no se especifican; para inferencia en servidor, cualquier GPU con ≥6 GB de VRAM (RTX 3060, RTX 4060, A10, etc.) es suficiente para esta cuantización.
-- ¿Cabe en GPU de consumo? Sí, en tarjetas con ≥6 GB de VRAM; también en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp (build b12190 o posterior, según el autor), y por extensión cualquier runtime compatible con GGUF (Ollama, llama-cpp-python). vLLM y TGI no están confirmados para este paquete.
+- VRAM estimada para inferencia: un GGUF Q4_K_M de 3,4B parámetros ocupa aproximadamente 2 GB en disco y en memoria; la VRAM necesaria para GPU sería del orden de 2-3 GB, aunque este dato no está confirmado en la información proporcionada.
+- GPU recomendadas: no disponibles en la información.
+- Compatibilidad con GPU de consumo: por tamaño, un modelo de 3,4B en Q4_K_M cabría en GPUs de consumo con 4 GB o más de VRAM, pero no se confirma en la documentación.
+- Opciones de despliegue: llama.cpp (versión b12190 o compatible, según el GGUF) y la app Android ChatWith 0.2.5 (versionCode 7) o posterior. No se documenta soporte para vLLM, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| ChatWith — Byron (este modelo) | ~3,4 B | no disponible | no disponible | GGUF Q4_K_M en Hugging Face |
-| Ministral 3B Instruct (base) | ~3,4 B | no disponible en esta ficha | no disponible en esta ficha | pesos originales del autor de Ministral |
-| Modelos pequeños tipo Llama 3.2 3B / Qwen2.5 3B | ~3 B | no disponible en esta ficha | no disponible en esta ficha | múltiples formatos (safetensors, GGUF) |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Observaciones |
+|---|---|---|---|---|---|
+| ChatWith — Byron | 3,4B | no disponible | no disponible | GGUF Q4_K_M en paquete ChatWith | Ajuste LoRA de personaje sobre Ministral 3 3B Instruct 2512 |
+| Ministral 3 3B Instruct 2512 (base) | 3,4B | no disponible | no disponible | safetensors / GGUF | Modelo base sin ajuste de personaje |
+| Otros GGUF de ~3B para móvil | ~3B | variable | variable | GGUF | No se dispone de datos comparativos concretos en la información proporcionada |
 
-La comparación cuantitativa no es posible porque no se han publicado benchmarks ni especificaciones de contexto para este paquete. La diferencia principal frente a los modelos base es el ajuste LoRA de dominio y el empaquetado específico para ChatWith.
+No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- Demo experimental: el propio autor advierte que el modelo puede equivocarse y que no es una fuente fiable de información.
-- Sin licencia declarada: no se especifica licencia, lo que impide determinar si el uso comercial está permitido; hay que contactar con el autor antes de usarlo en producción.
-- Sin idiomas declarados: no se garantiza soporte multilingüe ni un rendimiento uniforme entre idiomas.
-- Sin benchmarks: no hay datos objetivos de calidad, por lo que no se puede comparar su rendimiento con alternativas.
-- Riesgo de alucinación: al ser un modelo pequeño ajustado con LoRA sobre un dominio concreto, es probable que genere contenido plausible pero incorrecto fuera de ese dominio.
-- Dependencia de la app: el paquete está diseñado para ChatWith 0.2.5 (versionCode 7) o posterior; no es un modelo de propósito general cargable directamente en otros pipelines sin extraer el GGUF del ZIP.
-- Sesgos: no se documentan sesgos conocidos, pero al no haber información sobre los datos de entrenamiento del LoRA, no se pueden evaluar.
-- Repositorio con 0 descargas y 0 likes: no hay evidencia de uso ni validación por parte de la comunidad.
+- Es una demo experimental: el propio autor advierte que puede equivocarse y que no debe considerarse una fuente fiable.
+- No se declara licencia, lo que impide determinar si el uso comercial está permitido; conviene contactar con el autor antes de cualquier uso en producción.
+- No se documentan idiomas soportados; el comportamiento multilingüe es incierto.
+- No se documenta la longitud de contexto, lo que limita la planificación de conversaciones largas.
+- Riesgo de alucinación inherente a un modelo de 3,4B ajustado para personaje y sin benchmarks publicados.
+- El paquete está atado a la app ChatWith (versión 0.2.5 o posterior) y a su formato propietario; no es directamente reutilizable en otros entornos sin extraer el GGUF y el tokenizador.
+- El tamaño del repositorio (17,3 GB) es desproporcionado respecto al peso esperado del GGUF, lo que puede complicar la descarga y el almacenamiento.
+- No hay información sobre sesgos del modelo base ni del ajuste LoRA.
+- No se documentan garantías de soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/prosenna/chatwith-byron
-- Modelo base referenciado: Ministral 3 3B Instruct 2512 (no se proporciona enlace directo en la información disponible)
-- llama.cpp (runtime de cuantización, build b12190): no se proporciona enlace en la información disponible
-- App ChatWith (Android): no se proporciona enlace en la información disponible

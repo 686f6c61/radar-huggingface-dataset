@@ -2,112 +2,105 @@
 
 ## Resumen
 
-Fastino-Nemotron-3.5-Lightning-Healthcare es un modelo de lenguaje especializado en el dominio sanitario y biomédico, desarrollado por Fastino Labs en colaboración con NVIDIA. Se basa en el checkpoint base NVIDIA Nemotron 3.5 Lightning (publicado el 29 de julio de 2026) y ha sido post-entrenado mediante un adaptador LoRA combinado (denominado E17b) que integra tareas de conversación clínica, razonamiento médico, extracción de información biomédica y uso de herramientas para administración clínica. El repositorio contiene un checkpoint fusionado listo para usar, por lo que no es necesario adjuntar ningún LoRA adicional.
+Fastino-Nemotron-3.5-Lightning-Healthcare es un modelo de lenguaje especializado en dominios sanitario y biomédico, desarrollado por Fastino Labs en colaboración con NVIDIA. Se construye sobre el checkpoint base NVIDIA Nemotron 3.5 Lightning (publicado el 29 de julio de 2026) y añade el adaptador combinado de salud E17b de Fastino, distribuido como checkpoint fusionado listo para ejecutar. No requiere cargar un LoRA adicional por separado.
 
-El modelo es una mezcla de expertos (MoE) con aproximadamente 31.500 millones de parámetros totales y solo 3.000 millones activos por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Está pensado para aplicaciones como el resumen de notas clínicas, la detección de errores médicos, la extracción de conceptos biomédicos y la asistencia a agentes médicos con capacidad de llamada a herramientas. Su licencia Apache 2.0 facilita su adopción tanto en investigación como en entornos comerciales, aunque el idioma soportado es únicamente inglés.
+Arquitectura de mezcla de expertos (MoE) con 31.577.937.344 parámetros totales y aproximadamente 3.000 millones activos por token, según indica el autor en la model card. El modelo está orientado a conversación clínica, respuesta a preguntas biomédicas, cálculo clínico, detección y corrección de errores médicos, extracción de conceptos biomédicos, resumen de notas clínicas y tareas de administración clínica con uso de herramientas.
 
-La relevancia de este modelo radica en su enfoque específico para el sector salud, con un proceso de post-entrenamiento gestionado de forma autónoma por un agente de fine-tuning de Fastino, que ha logrado mejoras sustanciales en benchmarks como HealthBench Pro (+5,8 puntos porcentuales) y BC5CDR (+24,6 puntos) respecto al modelo base. Aunque aún no está validado clínicamente, representa una opción práctica para desarrolladores que necesitan un LLM open source orientado a tareas médicas y administrativas.
+Su relevancia radica en el ajuste fino dirigido sobre un modelo base de propósito general con una receta construida de forma autónoma por el agente de Fastino, con mejoras medibles en benchmarks clínicos como HealthBench Core (+6,54 pp), MEDEC (+11,32 pp en precisión de flag) y BC5CDR (+24,59 pp) respecto al checkpoint base. La licencia Apache 2.0 facilita su adopción en entornos comerciales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) basada en NVIDIA Nemotron 3.5 Lightning |
-| Parametros totales | 31.577.937.344 (según safetensors) |
-| Parametros activos | 3.000 millones (aprox.) |
-| Longitud de contexto | No especificada (en el ejemplo de uso se configura 4096, pero no es el límite máximo) |
-| Tipos de cuantizacion | BF16 (pesos publicados) |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Mezcla de expertos (MoE), familia Nemotron H (`nemotron_h`) |
+| Parametros totales | 31.577.937.344 (~31,6 B) |
+| Parametros activos | ~3 B (según model card) |
+| Longitud de contexto | no disponible (el ejemplo de la model card usa `max_model_len=4096`, no se declara el máximo) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre la arquitectura MoE de NVIDIA Nemotron 3.5 Lightning, un transformer con activación por expertos que reduce el coste de inferencia al activar solo una fracción de los parámetros por token. El checkpoint base fue liberado el 29 de julio de 2026 y el post-entrenamiento se realizó mediante un adaptador LoRA de rango 64, entrenado durante dos épocas sobre un conjunto de 72.358 ejemplos deduplicados. El proceso incluyó una mezcla equilibrada de datos de instrucción sanitaria general, conversaciones de estilo médico, razonamiento biomédico, cálculo clínico, detección y corrección de errores médicos, resumen de diálogos clínicos, extracción de conceptos biomédicos y trayectorias de uso de herramientas para administración clínica y agentes médicos.
+El modelo parte del checkpoint NVIDIA Nemotron 3.5 Lightning, un transformer de mezcla de expertos de ~31,6 B de parámetros totales con ~3 B activos por token, lo que permite un coste de inferencia muy inferior al de un modelo denso del mismo tamaño. Sobre esa base se aplicó un ajuste fino con LoRA de rango 64 durante dos épocas, con tasa de aprendizaje 1,5e-4, tamaño de lote 32 y empaquetado de secuencias desactivado. El adaptador resultante se fusionó en el checkpoint final publicado.
 
-El entrenamiento se llevó a cabo con un learning rate de 1,5e-4, batch size de 32 y sin empaquetado de secuencias. El agente de fine-tuning de Fastino (descrito en arXiv:2604.09791) gestionó de forma autónoma la construcción de conjuntos de evaluación, la curación de datos, la exploración de mezclas de entrenamiento e hiperparámetros, la recuperación de experimentos fallidos y la selección final del checkpoint. No se menciona el uso de RLHF o DPO; el proceso se basa en fine-tuning supervisado con LoRA.
+El conjunto de entrenamiento consta de 72.358 ejemplos deduplicados que cubren instrucciones generales de salud y conversaciones de estilo médico, respuesta a preguntas biomédicas, cálculo clínico, detección y corrección de errores médicos, resumen de diálogo clínico y generación de notas, extracción de conceptos biomédicos, químicos y de enfermedades, trayectorias de uso de herramientas en administración clínica y trayectorias de tareas de agentes médicos. La mezcla final reponderó ligeramente los ejemplos difíciles de estilo HealthBench. Las filas de evaluación, desarrollo y ciegas, junto con sus etiquetas, se excluyeron del entrenamiento. La receta fue construida de forma autónoma por el Fastino Fine-Tuning Agent, que generó conjuntos de evaluación, curó datos, exploró mezclas e hiperparámetros y seleccionó el checkpoint final.
 
 ## Capacidades
 
-- Generación de texto y conversación en dominio clínico: mantiene diálogos de estilo médico, responde preguntas biomédicas y redacta notas clínicas.
-- Razonamiento médico: realiza cálculos clínicos (p. ej., dosis, escalas) y detecta o corrige errores en historiales médicos.
-- Extracción de información biomédica: identifica conceptos, enfermedades, productos químicos y entidades clínicas en textos (evaluado en MedMentions y BC5CDR).
-- Resumen de notas clínicas: genera resúmenes concisos y precisos a partir de historiales completos, sin añadir información no presente.
-- Uso de herramientas y agentes: soporta trayectorias de tool-use para administración clínica (p. ej., navegación por portales de salud) y tareas de agentes médicos (evaluado en HealthAdminBench y MedAgent).
-- Capacidad multilingüe: no disponible; solo inglés.
+- Generación de texto y razonamiento clínico en inglés.
+- Respuesta a preguntas biomédicas y cálculo clínico.
+- Detección y corrección de errores médicos en textos clínicos.
+- Extracción de conceptos biomédicos, entidades químicas y enfermedades.
+- Resumen de diálogos clínicos y generación de notas.
+- Uso de herramientas (*tool calling*) en tareas de administración clínica, incluidas trayectorias basadas en navegador.
+- Tareas de agente médico con razonamiento multi-paso.
+- Conversación multi-turno con rol de sistema configurable.
+- Multilingüe: no disponible (solo se declara inglés).
 
 ## Casos de uso
 
-- Resumen de notas clínicas en hospitales: el modelo puede condensar historiales extensos en viñetas estructuradas, facilitando la revisión rápida por parte de profesionales. Su capacidad para no añadir información no presente reduce el riesgo de errores en la documentación.
-- Detección de errores médicos en registros electrónicos: gracias a su entrenamiento en MEDEC, puede señalar discrepancias en medicación, dosis o diagnósticos, actuando como un segundo par de ojos en auditorías de calidad.
-- Extracción de entidades biomédicas para investigación: convierte textos clínicos no estructurados en datos estructurados (enfermedades, fármacos, síntomas) para alimentar bases de datos o pipelines de análisis, con mejoras notables en BC5CDR y MedMentions.
-- Asistente de administración clínica con tool-use: integrado en un agente, puede interactuar con sistemas de gestión hospitalaria (citas, historiales, formularios) mediante llamadas a herramientas, reduciendo carga administrativa.
-- Soporte a la decisión clínica en entornos de baja complejidad: responde preguntas biomédicas de referencia (PubMedQA) y realiza cálculos clínicos básicos, útil como apoyo para personal no especializado.
-- Generación de documentación para ensayos clínicos: resume diálogos entre pacientes y médicos, extrae eventos adversos o genera informes de seguimiento, aprovechando su capacidad de resumen y extracción.
+- Resumen de notas clínicas: el modelo puede condensar notas de ingreso, evolución o alta en viñetas concisas sin añadir información ausente, como muestra el ejemplo de la model card con un paciente con insuficiencia cardíaca descompensada.
+- Detección y corrección de errores en documentación médica: con una precisión de flag del 64,98% en MEDEC, resulta adecuado para revisiones automatizadas de informes antes de su firma.
+- Extracción de entidades biomédicas: con 72,51% en BC5CDR y 40,30% en MedMentions ST21pv, puede alimentar pipelines de anotación de literatura científica y registros electrónicos.
+- Respuesta a preguntas biomédicas: útil como asistente de consulta sobre literatura médica, con un 65,00% en PubMedQA en el conjunto evaluado.
+- Cálculo clínico: soporta tareas de dosificación, índices y puntuaciones clínicas (54,18% en MedCalc), integrable en herramientas de apoyo a la decisión.
+- Administración clínica con agentes: con un 29,95% en HealthAdminBench y 40,00% de tasa de éxito global en MedAgent, puede automatizar tareas de portal del paciente y gestión de citas mediante *tool calling*.
+- Asistente conversacional de salud: para triaje inicial o educación sanitaria en inglés, con un 56,21% en HealthBench Core.
 
 ## Benchmarks y rendimiento
 
-Los resultados presentados provienen de la model card del autor y utilizan el mismo checkpoint base, prompts, decodificación y evaluador para cada fila.
-
-### Benchmarks in-domain
-
-| Benchmark | Alcance de evaluación | Julio 29 base | Fastino-Healthcare | Cambio |
-| --- | --- | ---: | ---: | ---: |
+| Benchmark | Ámbito | Base 29 jul | Fastino-Healthcare | Cambio |
+|---|---|---:|---:|---:|
 | HealthBench Pro | ciego, n=180 | 26,83% | 32,64% | +5,80 pp |
 | HealthAdminBench | ciego | 25,67% | 29,95% | +4,28 pp |
-| MedAgent public v1/v2, Overall SR | ciego, n=150 | 36,00% | 40,00% | +4,00 pp |
+| MedAgent public v1/v2, SR global | ciego, n=150 | 36,00% | 40,00% | +4,00 pp |
 | HealthBench Core | ciego, n=700 | 49,67% | 56,21% | +6,54 pp |
 | PubMedQA | emparejado, n=500 | 59,00% | 65,00% | +6,00 pp |
 | MedCalc | emparejado, n=275 | 49,09% | 54,18% | +5,09 pp |
-| MEDEC, flag accuracy | emparejado, n=574 | 53,66% | 64,98% | +11,32 pp |
-| MEDEC, sentence accuracy | emparejado, n=574 | 48,08% | 62,89% | +14,81 pp |
+| MEDEC, precisión de flag | emparejado, n=574 | 53,66% | 64,98% | +11,32 pp |
+| MEDEC, precisión de frase | emparejado, n=574 | 48,08% | 62,89% | +14,81 pp |
 | MedMentions ST21pv | emparejado, n=878 | 19,74% | 40,30% | +20,55 pp |
 | BC5CDR | emparejado, n=500 | 47,92% | 72,51% | +24,59 pp |
 
-HealthAdminBench usó Task Description + Portal Guidance con modo de observación de árbol de accesibilidad. MedAgent reporta Overall Success Rate. MEDEC flag y sentence accuracy se reportan por separado.
-
-### Transferencia a benchmarks no vistos
-
-| Benchmark | Alcance de evaluación | Julio 29 base | Fastino-Healthcare | Cambio |
-| --- | --- | ---: | ---: | ---: |
-| EkaCare | transferencia, n=1.066 | 12,95% | 32,83% | +19,88 pp |
-| BC5CDR a BioRED | transferencia, n=66 | (dato no disponible en la información proporcionada) | | |
-
-Nota: el valor para BC5CDR a BioRED no aparece completo en la información disponible; se indica como no disponible.
+Las puntuaciones de base y ajustado emplean el mismo checkpoint del 29 de julio, las mismas entradas, prompts, ajustes de decodificación, ruta de inferencia y evaluador. HealthAdminBench usó descripción de tarea más guía de portal con observación del árbol de accesibilidad. No se han publicado resultados de benchmarks de transferencia a tareas no vistas en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos BF16 ocupan aproximadamente 66 GB antes de overhead en runtime. Se recomienda una GPU con al menos 80 GB de memoria.
-- GPU recomendadas: NVIDIA A100 80GB, H100 80GB, o GPUs de 80 GB similares. También es posible usar tensor parallelism en varias GPUs de menor capacidad (p. ej., 2× RTX 4090 de 24 GB cada una, aunque el modelo completo no cabe en una sola).
-- Inferencia en consumer GPU: no recomendable para el modelo completo en BF16; se requeriría cuantización (no publicada) o particionado en múltiples GPUs.
-- Opciones de despliegue: el quickstart oficial usa vLLM (versión 0.23.0) con `trust_remote_code=True`. También es compatible con Transformers mediante el pipeline de generación de texto. No se mencionan otros runners como llama.cpp u Ollama.
-- Latencia y throughput: no se proporcionan datos específicos. Al ser MoE con 3B activos, el coste por token es menor que un modelo denso de 30B, pero no se ofrecen cifras concretas.
+- Pesos en BF16: aproximadamente 66 GB antes de la sobrecarga en tiempo de ejecución.
+- GPU recomendada: una GPU de 80 GB o superior (A100 80 GB, H100 80 GB) o paralelismo tensorial en varias GPU.
+- GPU de consumo: no cabe en tarjetas de 24 GB (RTX 4090) ni de 48 GB en BF16; requeriría cuantización, no publicada por el autor.
+- Despliegue: vLLM 0.23.0 con `trust_remote_code=True`, `dtype="bfloat16"` y `max_model_len=4096` según el ejemplo del autor; también compatible con el ecosistema `transformers` y con endpoints compatibles.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas con otros modelos sanitarios en la información proporcionada. La única comparación disponible es con el modelo base NVIDIA Nemotron 3.5 Lightning, que es el mismo checkpoint sin el adaptador de Fastino. Se recomienda evaluar contra alternativas como Meditron-70B, Llama-3-Med42 o BioMistral, pero no se incluyen datos en la documentación.
+| Modelo | Parámetros | Activos | Contexto | Licencia | Especialización |
+|---|---|---|---|---|---|
+| Fastino-Nemotron-3.5-Lightning-Healthcare | ~31,6 B | ~3 B | no disponible | Apache 2.0 | Salud y biomedicina |
+| nvidia/Nemotron-3.5-Lightning | ~31,6 B | ~3 B | no disponible | no disponible | Propósito general |
+| Alternativas clínicas de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Especialización |
-| --- | --- | --- | --- | --- |
-| Fastino-Nemotron-3.5-Lightning-Healthcare | ~31,5B (MoE, 3B activos) | No especificado | Apache 2.0 | Sanitario, biomédico |
-| NVIDIA Nemotron 3.5 Lightning (base) | ~31,5B (MoE, 3B activos) | No especificado | Apache 2.0 | General |
-| Otras alternativas (Meditron, BioMistral) | No disponible | No disponible | No disponible | No disponible |
+La comparación directa con otros modelos clínicos de la misma categoría no está disponible en la información proporcionada; la referencia más cercana y documentada es el propio checkpoint base, frente al que se miden todas las mejoras de la tabla de benchmarks.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo inglés; no es adecuado para entornos clínicos en castellano u otros idiomas sin traducción previa.
-- Validación clínica: el modelo no ha sido validado clínicamente; no debe usarse como única fuente para decisiones médicas reales sin supervisión profesional.
-- Riesgo de alucinación: como cualquier LLM, puede generar información plausible pero incorrecta, especialmente en contextos médicos complejos. Se recomienda verificar siempre las salidas.
-- Contexto limitado: no se ha especificado la longitud máxima de contexto; el ejemplo usa 4096 tokens, pero puede ser superior. Para documentos clínicos largos, puede ser necesario truncar o dividir el texto.
-- Cuantización: solo se publican pesos BF16; no hay versiones cuantizadas (GGUF, AWQ, etc.), lo que limita su uso en hardware de consumo.
-- Dependencia de código remoto: el modelo requiere `trust_remote_code=True` en Transformers y vLLM, lo que implica ejecutar código del repositorio; se debe auditar antes de usar en producción.
-- Datos de entrenamiento: el conjunto de fine-tuning proviene de fuentes diversas; no se detalla la procedencia exacta, por lo que puede haber sesgos en poblaciones o condiciones médicas poco representadas.
+- Solo soporta inglés; no se declara cobertura multilingüe.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente crítico en contexto clínico: no debe usarse como sustituto del juicio profesional médico.
+- Sesgos conocidos: no disponible.
+- La longitud máxima de contexto no se declara; el ejemplo del autor limita a 4096 tokens, lo que puede ser insuficiente para historiales clínicos extensos.
+- El checkpoint se publica únicamente en BF16, sin versiones cuantizadas oficiales, lo que limita su despliegue en hardware de consumo.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre exactitud clínica; el uso en producción sanitaria exige validación y supervisión humana.
+- Los benchmarks in-domain son de ámbito ciego o emparejado pero acotado (n entre 150 y 878); el rendimiento en dominios no vistos no está documentado.
+- Requiere `trust_remote_code=True` en vLLM, lo que implica ejecutar código del repositorio.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare
-- Blog de lanzamiento (Fastino): https://fastino.ai/blog/fastino-nemotron-3-5-lightning-finance-and-healthcare
-- Paper arXiv (agente de fine-tuning): https://arxiv.org/abs/2604.09791
+- Modelo en Hugging Face: https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Healthcare
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Lightning
-- Colaboración Fastino-NVIDIA: https://fastino.ai/nvidia-collaboration
-- Sitio de Fastino Labs: https://fastino.ai/
+- Paper: https://arxiv.org/abs/2604.09791
+- Blog de lanzamiento: https://fastino.ai/blog/fastino-nemotron-3-5-lightning-finance-and-healthcare
+- Agente de ajuste fino: https://agent.fastino.ai/
+- Página de producto: https://fastino.ai/lp/fastino-nemotron
+- X/Twitter: https://x.com/fastinoAI

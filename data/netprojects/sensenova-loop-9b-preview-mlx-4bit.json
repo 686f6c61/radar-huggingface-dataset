@@ -51,21 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - OpenSenseNova/SenseNova-Loop",
-      "url": "https://github.com/OpenSenseNova/SenseNova-Loop",
-      "snippet": "SenseNova-Loop-9B-Preview is a multimodal language model developed for long-context and agentic workflows. It accepts text and images and generates text for applications that combine document understanding, coding, and interaction with external tools. The model combines a looped decoder with two-stream manifold-constrained hyper-connections (mHC). A contiguous block of decoder layers is ..."
-    },
-    {
-      "title": "SenseNova-Loop-9B-Preview - Hugging Face",
-      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
-      "snippet": "Image-Text-to-Text model with 10B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "SenseTime open-sources SenseNova-Loop-9B-Preview, a 9B looped ...",
-      "url": "https://aicoder.com/news/news-20261030-sensetime-sensenova-loop-9b-preview-looped-transformer-mhc-open-source-agentic",
-      "snippet": "There has been plenty of research on looped models, but few open-weight ones are ready for agent workflows. SenseTime's SenseNova-Loop-9B-Preview, open-sourced on Oct 30, turns that idea into a deployable multimodal model aimed at long context, document understanding, coding, and tool use. Architecture The model has 32 distinct decoder layers."
-    }
-  ]
+  "sources": []
 }

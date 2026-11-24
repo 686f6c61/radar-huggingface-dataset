@@ -37,16 +37,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models by SZL Holdings – Hugging Face",
-      "url": "https://huggingface.co/models?author=SZLHOLDINGS&sort=modified",
-      "snippet": "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent Text Generation • 2B•Updated 4 days ago• 39"
-    },
-    {
-      "title": "GitHub - szl-holdings/szl-forge: SZL Forge: QLoRA kit that fine-tunes ...",
-      "url": "https://github.com/szl-holdings/szl-forge",
-      "snippet": "What SZL Forge is A QLoRA fine-tuning kit built on Unsloth. A set of model-specific curricula, schemas, qualification tools, signed evidence, and protected publication contracts. A way to produce locally controlled model derivatives on supported hardware; hardware fit, run completion, and artifact quality must be observed per run."
-    }
-  ]
+  "sources": []
 }

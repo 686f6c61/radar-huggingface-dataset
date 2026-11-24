@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 355,
+  "downloads_30d": 391,
   "trending_score": 0,
   "parameters": 486346909,
   "parameters_human": "486.3M",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bubble Shooter kostenlos online spielen",
-      "url": "https://www.shooter-bubble.de/",
-      "snippet": "Bubble Shooter ist eines der beliebtesten Onlinespiele, bei uns kannst Du das Game kostenlos und ohne Anmeldung spielen. Viel …"
-    },
-    {
-      "title": "Bubble Shooter 3 kostenlos online spielen",
-      "url": "https://www.shooter-bubble.de/bubble-shooter-3.php",
-      "snippet": "Bubble Shooter 3 ist die neuste Version des beliebten Browserspiels. Bei uns kannst Du Bubble Shooter 3 kostenlos und ohne …"
-    },
-    {
-      "title": "Puzzle Bobble kostenlos online spielen - Shooter-Bubble.de",
-      "url": "https://www.shooter-bubble.de/puzzle-bobble.php",
-      "snippet": "Puzzle Bobble ist ein Spieleklassiker und die Vorlage für das beliebte Bubble Shooter. Bei uns kannst Du Puzzle Bobble kostenlos …"
-    },
-    {
-      "title": "Number Lines spielen - Shooter-Bubble.de",
-      "url": "https://www.shooter-bubble.de/number-lines.php",
-      "snippet": "Number Lines ist neben Bubble Shooter eines der großen Kultspiele im Internet. Man zielt mit einer Kanone, die einzelne Bälle …"
-    },
-    {
-      "title": "Shooter-Bubble.de",
-      "url": "https://www.shooter-bubble.de/ads.php",
-      "snippet": "ownerdomain=protomedia.org managerdomain=traffective.com google.com, pub-7095332606745705, RESELLER, f08c47fec0942fa0 …"
-    }
-  ]
+  "sources": []
 }

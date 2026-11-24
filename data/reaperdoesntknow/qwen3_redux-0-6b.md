@@ -2,59 +2,51 @@
 
 ## Resumen
 
-Qwen3_Redux-0.6B es un modelo de lenguaje publicado en Hugging Face por el usuario reaperdoesntknow bajo el identificador `reaperdoesntknow/Qwen3_Redux-0.6B`. Por el nombre y el tag `qwen3_redux` cabe inferir que se trata de una variante o derivado de la familia Qwen3 de Alibaba, en su version de aproximadamente 0,6 mil millones de parametros (661.416.463 parametros reales segun los pesos en safetensors). El repositorio ocupa 5,0 GB y utiliza la libreria `transformers` con pesos en formato safetensors.
+Qwen3_Redux-0.6B es un checkpoint de lenguaje publicado por el usuario reaperdoesntknow en Hugging Face, construido sobre el backbone `Qwen/Qwen3-0.6B` de Alibaba. No se trata de un modelo Qwen3 estándar: la configuración declara una arquitectura propia denominada `Qwen3Redux` (tipo `qwen3_redux`) que añade capas simbólicas, memoria y mecanismos de razonamiento iterativo sobre el transformer original. El checkpoint cuenta con 661.416.463 parámetros totales según los pesos en safetensors.
 
-La model card esta practicamente vacia: es la plantilla autogenerada por Hugging Face y no incluye informacion sobre autor real, datos de entrenamiento, licencia, idiomas, arquitectura concreta ni procedimiento de ajuste. Tampoco se declara pipeline, licencia ni idiomas soportados en los metadatos del repositorio. Esto limita enormemente cualquier evaluacion rigurosa: la mayor parte de los apartados de esta ficha deben marcarse como "no disponible".
+El modelo incorpora en su configuración elementos poco convencionales en la familia Qwen3: dos capas simbólicas de dimensión 256, una memoria de 256 posiciones, profundidad de pensamiento de 3 y 6 pasos de razonamiento, además de una célula líquida LTC (liquid time-constant) con solver semi-implícito y 6 despliegues ODE. La configuración también activa atención enrutada (`routed_top_k=2`) y una variante de discrepancia. Estos campos describen la implementación, no capacidades demostradas.
 
-Su relevancia actual es limitada y fundamentalmente especulativa: se trata de un modelo pequeno (sub-1000 M de parametros) con muy pocas descargas (169) y cero likes en el momento de la consulta, publicado en octubre de 2026 y actualizado en noviembre del mismo ano. Resulta util unicamente como objeto de estudio de un posible fine-tuning comunitario sobre una base Qwen3 pequena, pero no como modelo listo para produccion sin una evaluacion propia previa.
+La relevancia de este checkpoint es fundamentalmente de investigación: explora una arquitectura híbrida que combina atención transformer con componentes simbólicos y dinámicos. Sin embargo, el repositorio inspeccionado no incluye la implementación personalizada necesaria para cargar el modelo, no documenta el entrenamiento ni publica evaluaciones, y no declara licencia. Su uso en producción no está respaldado por evidencia alguna.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer derivado de Qwen3; no confirmado) |
+| Arquitectura | Qwen3Redux (transformer con capas simbólicas, memoria y razonamiento iterativo sobre backbone Qwen3-0.6B) |
 | Parametros totales | 661.416.463 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no hay GGUF en el repo) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 40.960 posiciones máximas configuradas (maximum position embeddings) |
+| Tipos de cuantizacion | no disponible (pesos publicados en float32) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
+| Licencia | no disponible (no declarada en el repositorio) |
 | Formato de pesos | safetensors |
-| Libreria | transformers |
-| Tamano del repositorio | 5,0 GB |
-| Tag de arquitectura | qwen3_redux |
-| Referencia citada en tags | arxiv:1910.09700 (paper de Lacoste et al. sobre impacto ambiental, citado en la plantilla) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura interna. El nombre del modelo y el tag `qwen3_redux` sugieren una base Qwen3, que en su variante de ~0,6B es un transformer decoder-only con atencion por grupos (GQA) y posiblemente atencion lineal o hibrida segun la generacion, pero esto no puede confirmarse con los datos del repositorio. El recuento real de parametros (661.416.463) es coherente con un modelo de la clase 0,6B, aunque ligeramente superior a los 0,6B nominales, lo que podria deberse a embeddings o cabezas adicionales.
+La arquitectura declarada es `Qwen3Redux`, con tipo de modelo `qwen3_redux`. El backbone es `Qwen/Qwen3-0.6B` en la revisión `c1899de289a04d12100db370d81485cdf75e47ca`, con 28 capas transformer, tamaño oculto de 1024, tamaño intermedio de 3072, 16 cabezas de atención y 8 cabezas clave/valor (GQA). Sobre esta base se añaden 2 capas simbólicas de dimensión 256 con 4 cabezas simbólicas, una memoria de tamaño 256, profundidad de pensamiento de 3 y 6 pasos de razonamiento con 8 muestras de discrepancia y 6 intenciones.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, ni sobre si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La model card es la plantilla por defecto de Hugging Face y todos los campos de entrenamiento aparecen como "[More Information Needed]". El unico enlace tecnico presente en los metadatos es el paper arXiv:1910.09700, que corresponde al calculo de impacto ambiental de Lacoste et al. y no describe el modelo en si. No se puede confirmar ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, thinking mode, etc.).
+La configuración habilita la variante de discrepancia y atención enrutada con `routed_top_k=2`, e incorpora una célula líquida LTC con solver `semi_implicit`, 6 despliegues ODE, tiempo transcurrido 1.0, al menos 2 pasos de refinamiento y tolerancia de refinamiento 0.01. El vocabulario es de 151.936 tokens y el dtype configurado es float32, con la versión de Transformers registrada 4.57.6.
+
+No se documenta la receta de entrenamiento: se desconocen los datasets, su licencia, el preprocesado, la duración, el número de tokens, el optimizador, el hardware y los criterios de selección de checkpoints. Tampoco se indica si hubo RLHF, DPO u otra fase de alineamiento. La implementación personalizada de `Qwen3Redux` no está incluida en el repositorio inspeccionado y `config.json` carece de entrada `auto_map`, por lo que no es posible cargar el modelo con `AutoModelForCausalLM.from_pretrained(...)` sin las clases personalizadas correspondientes.
 
 ## Capacidades
 
-- Generacion de texto: presumiblemente si, por tratarse de un modelo de lenguaje causal, aunque no hay documentacion que lo confirme.
-- Razonamiento: no disponible.
-- Generacion de codigo: no disponible.
-- Matematicas: no disponible.
-- Vision: no disponible (no se declaran modulos multimodales).
+- Generación de texto autoregresiva heredada del backbone Qwen3-0.6B, sujeta a la correcta carga de la arquitectura personalizada.
+- Razonamiento iterativo configurado mediante 6 pasos de razonamiento y profundidad de pensamiento de 3 (parámetros de configuración, no capacidades verificadas).
+- Componentes simbólicos y de memoria que, según la configuración, podrían aportar procesamiento estructurado adicional (no demostrado).
 - Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (thinking mode, audio, etc.): no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad verificada.
+- Capacidades multilingües: no disponibles (idiomas no declarados).
+- Capacidades especiales (visión, audio, thinking mode explícito): no disponibles.
 
 ## Casos de uso
 
-Dada la ausencia de documentacion, los casos de uso son hipoteticos y deben validarse experimentalmente antes de cualquier despliegue:
-
-- Prototipado rapido en local: con ~661 M de parametros, el modelo puede cargarse en una GPU de consumo para experimentar con generacion de texto sin coste de API, siempre que se valide su calidad con prompts propios.
-- Fine-tuning de bajo coste: su tamano permite ajustarlo en una sola GPU consumer (por ejemplo, con LoRA o QLoRA) para tareas especificas de dominio, partiendo de la base Qwen3 si se confirma su procedencia.
-- Educacion e investigacion: util como ejemplo de modelo comunitario derivado de una familia conocida para estudiar diferencias de comportamiento frente al modelo base original.
-- Generacion de texto auxiliar en entornos con recursos limitados: resumenes cortos o clasificacion de texto simple, previa evaluacion de calidad.
-- Base para experimentos de cuantizacion: al ser un modelo pequeno, sirve para comparar tecnicas de cuantizacion (aunque el repo no incluye GGUF, se podria generar a partir de los safetensors).
-- Integracion en pipelines de `transformers`: al declarar esa libreria, puede cargarse con `AutoModelForCausalLM` y `AutoTokenizer` si la configuracion es compatible, para pruebas de integracion.
-
-En ningun caso se recomienda su uso en produccion sin una evaluacion de calidad, sesgos y seguridad propia.
+- Investigación de arquitecturas híbridas: el checkpoint permite estudiar la combinación de atención transformer con capas simbólicas, memoria y dinámica LTC una vez implementadas las clases personalizadas necesarias.
+- Reproducción de configuraciones: sirve para validar la implementación de los campos `routed_top_k`, solver `semi_implicit` y despliegues ODE descritos en `config.json`.
+- Experimentación con razonamiento iterativo: los parámetros de pasos de razonamiento y profundidad de pensamiento permiten explorar variantes de inferencia multi-paso en entornos de investigación controlados.
+- Estudio de atención enrutada: la configuración `routed_top_k=2` y la variante de discrepancia ofrecen un punto de partida para analizar mecanismos de enrutamiento de atención.
+- Base para fine-tuning experimental: el backbone Qwen3-0.6B subyacente es ligero, lo que facilita experimentos de ajuste en hardware modesto, siempre que se disponga de la implementación.
+- Docencia y análisis de model cards: el repositorio ejemplifica buenas prácticas de documentación de limitaciones (ausencia de licencia, falta de benchmarks, necesidad de implementación personalizada).
 
 ## Benchmarks y rendimiento
 
@@ -62,40 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en fp16/bf16, aproximadamente 1,3-1,5 GB solo para pesos (661 M parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica, entre 2 y 4 GB segun longitud de contexto y batch.
-- En cuantizacion de 8 bits: ~0,7 GB de pesos; en 4 bits: ~0,4 GB de pesos.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060 12 GB, RTX 4060 8 GB, RTX 4090 24 GB); tambien cabe en GPUs de 4-8 GB e incluso en CPU con llama.cpp si se generan pesos GGUF (no incluidos en el repo).
-- Cabe en consumer GPU: si, con margen amplio.
-- Opciones de despliegue: `transformers` (declarado), y previsiblemente vLLM, TGI o llama.cpp si la arquitectura es compatible y se convierten los pesos; no hay artefactos de despliegue publicados.
-- Latencia y throughput estimados: no disponible (no se han publicado mediciones).
+- VRAM estimada para inferencia: con 661 millones de parámetros en float32, los pesos ocupan aproximadamente 2,65 GB; en float16 unos 1,3 GB y en int8 unos 0,66 GB (estimación teórica, no verificada).
+- GPU recomendadas: no disponible (no se documentan pruebas de despliegue).
+- Cabe en GPU de consumo: sí, en términos de tamaño de pesos cabría en GPUs con 4-8 GB de VRAM, pero la carga requiere la implementación personalizada no incluida en el repositorio.
+- Opciones de despliegue: no disponible; vLLM, llama.cpp, Ollama y TGI no están documentados como compatibles, y la naturaleza personalizada de la arquitectura impide asumir soporte estándar.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Qwen3_Redux-0.6B | 661 M | no disponible | no disponible | Hugging Face, 169 descargas | Model card vacia, sin benchmarks |
-| Qwen3-0.6B (base oficial) | ~600 M | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3) | Hugging Face oficial | Modelo base documentado por Alibaba |
-| Qwen2.5-0.5B | ~500 M | no disponible en esta ficha | Apache 2.0 (segun familia Qwen2.5) | Hugging Face oficial | Alternativa pequena ampliamente usada |
-| SmolLM2-360M / 1.7B | 360 M / 1,7 B | no disponible en esta ficha | Apache 2.0 | Hugging Face (HuggingFaceTB) | Familia pequena documentada |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qwen3_Redux-0.6B | 661.416.463 | 40.960 (configurado) | no disponible | Pesos publicados, implementación no incluida |
+| Qwen3-0.6B (backbone) | ~0,6B | no disponible en esta ficha | no disponible en esta ficha | Modelo estándar de Alibaba |
+| Alternativas de ~0,5-1B | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa con Qwen3-0.6B y Qwen2.5-0.5B es la mas relevante por tamano y probable procedencia, pero los datos de contexto y rendimiento de este modelo concreto no estan publicados, por lo que no se puede establecer una comparacion cuantitativa.
+La comparación con modelos de la misma categoría no puede completarse con los datos proporcionados; no se dispone de información verificada sobre rendimiento relativo ni de alternativas evaluadas en las mismas condiciones.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada; no hay informacion sobre entrenamiento, datos, licencia ni evaluacion.
-- Licencia no declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o tratar el modelo como no licenciado para produccion.
-- Procedencia incierta: el nombre sugiere base Qwen3, pero no se confirma el modelo original ni el proceso de ajuste, lo que impide conocer sus sesgos heredados.
-- Riesgo de alucinacion: no evaluado; en modelos pequenos de esta clase es habitualmente elevado.
-- Idiomas: no declarados; no se puede garantizar soporte de castellano ni de otros idiomas.
-- Contexto: no declarado; no se debe asumir una ventana larga.
-- Sesgos: no documentados ni evaluados.
-- Reproducibilidad: sin codigo de entrenamiento ni hiperparametros, el modelo no es reproducible.
-- Madurez: 169 descargas y 0 likes indican escasa validacion por la comunidad; no hay evidencia de uso en produccion.
-- Seguridad: sin evaluaciones de seguridad publicadas; no apto para aplicaciones sensibles sin auditoria propia.
+- Ausencia de licencia: no se declara licencia en el repositorio, por lo que la redistribución y el uso comercial no están autorizados explícitamente; debe confirmarse con el propietario.
+- Implementación no incluida: el repositorio no contiene las clases personalizadas de `Qwen3Redux` ni `auto_map`, lo que impide la carga estándar con Transformers.
+- Sin benchmarks ni evaluación reproducible: no hay evidencia de calidad, razonamiento o rendimiento.
+- Sin receta de entrenamiento: se desconocen datasets, tokens, alineamiento y posibles sesgos heredados del backbone.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; no se documentan mitigaciones.
+- Contexto configurado no verificado: las 40.960 posiciones son un límite de configuración, no una garantía de calidad en contexto largo.
+- Idiomas no declarados: no se puede asegurar cobertura multilingüe.
+- Cambiar `model_type` a `qwen3` no reproduce la arquitectura personalizada y produciría una carga incorrecta.
+- No apto para decisiones consecuenciales sin verificación independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3_Redux-0.6B
-- Paper citado en los tags (impacto ambiental, no describe el modelo): https://arxiv.org/abs/1910.09700
-- Repositorio de la familia Qwen3 (referencia, no confirmado como base): https://huggingface.co/Qwen
-- No se han encontrado papers, blogs, repos ni demos adicionales en la informacion disponible.
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3_Redux-0.6B
+- Archivos del repositorio: https://huggingface.co/reaperdoesntknow/Qwen3_Redux-0.6B/tree/main
+- Configuración publicada: https://huggingface.co/reaperdoesntknow/Qwen3_Redux-0.6B/blob/main/config.json
+- Backbone Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

@@ -2,93 +2,98 @@
 
 ## Resumen
 
-Gemma 4 12B IT Abliterated 4-bit MLX (text-only) es una conversión del modelo Gemma 4 12B de Google, publicada por el usuario divinetribe, orientada a la inferencia local en Apple Silicon mediante la librería MLX. Parte de `google/gemma-4-12B-it`, pasa por una versión abliterated (eliminación de la dirección de rechazo en el espacio de activaciones) publicada como `OpenYourMind/gemma-4-12B-it-abliterated-uncensored`, y se cuantiza a 4 bits para su uso en Mac.
+Gemma 4 12B IT Abliterated 4-bit MLX (text-only) es una conversión del modelo `google/gemma-4-12B-it` realizada por el usuario `divinetribe`, que combina tres transformaciones: la eliminación del alineamiento de rechazo (abliteration) sobre el checkpoint instruct original, la cuantización a 4 bits en formato MLX para Apple Silicon y la eliminación de las torres multimodales (visión y audio) para dejar únicamente el modelo de lenguaje. El resultado es un checkpoint de 11.907.350.320 parámetros (aproximadamente 11,9 mil millones) que ocupa 11 GB en el repositorio y que, según el autor, se carga con `mlx-lm` sin necesidad de parchear la librería.
 
-El problema concreto que resuelve es de compatibilidad: Google distribuye el checkpoint de 12B con `model_type: gemma4_unified` (texto, visión y audio en un único checkpoint), mientras que `mlx-lm` en la versión publicada en PyPI (0.31.3) solo incorpora un cargador para `gemma4`. Cualquier build MLX estándar del 12B falla con `ValueError: Model type gemma4_unified not supported`. Esta conversión elimina las torres multimodales (`vision_embedder`, `embed_vision`, `embed_audio`) y reetiqueta el modelo como `gemma4`, de modo que carga directamente con `mlx_lm` sin parchear nada.
+El problema que resuelve es eminentemente práctico: `google/gemma-4-12B-it` se distribuye con `model_type: gemma4_unified` (texto, visión y audio en un único checkpoint), mientras que la versión de `mlx-lm` publicada en PyPI (0.31.3) carece de loader para ese tipo y aborta con `ValueError: Model type gemma4_unified not supported`. Este repositorio elimina las torres multimodales, reetiqueta el modelo como `gemma4` y conserva los pesos cuantizados a 4 bits sin recuantizar, de modo que funciona con un `pip install mlx-lm` estándar en un Mac con Apple Silicon.
 
-El resultado es un modelo de 11.907.350.320 parámetros (≈11,9B) en safetensors, con pesos de 4 bits y un tamaño de repositorio de 11,0 GB. Está pensado para Macs con Apple Silicon de 24 GB o más, con un enfoque text-only y en inglés. La licencia es la Gemma, con las restricciones de uso que esta implica.
+Es relevante para desarrolladores que quieren ejecutar un modelo de 12B en local con fines de generación de texto sin restricciones de contenido, sobre todo en equipos de 24-32 GB de memoria unificada. No obstante, conviene tener presente que la ventaja de compatibilidad es transitoria: el autor documenta que el soporte para `gemma4_unified` ya está fusionado en `mlx-lm` main (PR #1349) y llegará a PyPI, momento en el que la ventaja diferencial se reduce a la abliteración.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 4), checkpoint original multimodal `gemma4_unified` reducido a la torre de texto |
-| Parametros totales | 11.907.350.320 (≈11,9B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only (familia Gemma 4), checkpoint derivado de `gemma4_unified` con las torres de visión y audio eliminadas; reetiquetado como `gemma4` |
+| Parametros totales | 11.907.350.320 (11,9 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits (MLX); existen builds 4-bit, 8-bit y bf16 en `mlx-community` del modelo base |
-| Idiomas soportados | en (inglés) |
-| Licencia | gemma |
-| Formato de pesos | safetensors (MLX), repositorio de 11,0 GB |
+| Tipos de cuantizacion | 4 bits (MLX); el repositorio incluye únicamente esta cuantización |
+| Idiomas soportados | en (inglés, según la model card) |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | safetensors (MLX), 11,0 GB de repositorio |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de la familia Gemma 4, con 11,9B parámetros. El checkpoint original de Google, `google/gemma-4-12B-it`, se distribuye como `gemma4_unified` e integra torres de visión y audio junto al modelo de lenguaje. Esta conversión conserva únicamente los tensores `language_model.*` y descarta el resto, por lo que el modelo resultante es estrictamente text-only.
+La arquitectura subyacente es un transformer decoder-only de la familia Gemma 4, en su variante instruct (`gemma-4-12B-it`). El checkpoint original de Google es multimodal unificado (texto, visión y audio); esta conversión elimina los tensores de `vision_embedder`, `embed_vision`, `embed_audio` y similares, conservando exclusivamente los tensores `language_model.*`. La model card indica explícitamente que los pesos abliterados a 4 bits se preservan byte a byte y que no se ha recuantizado nada en el proceso.
 
-La cadena de transformación es: base `google/gemma-4-12B-it` (instruction-tuned) → abliteration publicada por OpenYourMind → cuantización a 4 bits en MLX por divinetribe → eliminación de torres multimodales y reetiquetado a `model_type: gemma4`. Según la model card, los pesos abliterated de 4 bits se preservan byte a byte, sin recuantizar. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original, más allá de que se trata de una variante instruction-tuned.
+Sobre el entrenamiento no se aportan datos en la información disponible: no se especifican el número de tokens, la composición del dataset, ni si hubo RLHF, DPO o una fase de post-entrenamiento concreta. La abliteración, que es la modificación más relevante respecto al modelo original, es una intervención post-hoc sobre los pesos orientada a eliminar la dirección de rechazo del modelo; la model card no detalla la metodología exacta empleada por `OpenYourMind` ni los datos de calibración usados. Tampoco se documentan innovaciones de inferencia como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con modo instruction-tuned heredado de Gemma 4 12B IT.
-- Razonamiento y respuesta multi-turno en formato chat.
-- Ejecución local en Apple Silicon mediante `mlx_lm`, con API Python (`load`, `generate`) y soporte para servidores MLX.
-- Comportamiento "uncensored" derivado de la abliteration: menor tendencia a rechazar peticiones, sin garantías de ausencia total de filtros.
-- Integración como modelo local en el proyecto Claude Code Local, que expone una API compatible con Anthropic sobre MLX.
-- Sin capacidades de visión ni audio: las torres multimodales han sido eliminadas del checkpoint.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según los metadatos del modelo.
+- Generación de texto conversacional en inglés, con el modo instruct heredado de `gemma-4-12B-it`.
+- Razonamiento y respuesta multi-turno, orientado a uso como asistente local.
+- Comportamiento sin censura (abliterated): el modelo no aplica los rechazos típicos del alineamiento original, lo que permite generar contenido que el checkpoint base declinaría.
+- Integración con servidores MLX nativos, incluido el servidor Anthropic-API de `claude-code-local`, que permite usarlo como backend de agentes de código en local.
+- Capacidades multimodales: no disponibles en esta conversión (las torres de visión y audio se han eliminado deliberadamente).
+- Soporte de tool calling / function calling: no documentado en la información disponible.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo thinking explícito: no documentado.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: cargar el modelo con `mlx_lm` y mantener diálogos multi-turno en inglés sin conexión a internet, aprovechando que los pesos de 4 bits ocupan aproximadamente 7 GB y caben en un Mac de 24 GB.
-- Agente de código en local con Claude Code Local: usar el modelo como backend de un servidor MLX compatible con la API de Anthropic para ejecutar tareas de agente sobre el sistema de ficheros en Apple Silicon.
-- Prototipado de aplicaciones de texto en entornos sin GPU dedicada: emplear el modelo como sustituto local de APIs en fases de desarrollo, con la ventaja de que carga en la versión estándar de `mlx-lm` sin parches.
-- Experimentación con modelos abliterated: comparar el comportamiento de rechazo frente al Gemma 4 12B IT original en tareas de evaluación de sesgos y alineación.
-- Generación de texto en pipelines de CI o scripts de macOS: invocar el modelo desde Python con `mlx_lm.generate` para tareas de resumen, reescritura o clasificación textual en inglés.
-- Despliegue en estaciones de trabajo Mac con 32 GB de RAM unificada: servir el modelo mediante un servidor MLX para varios clientes ligeros en una red local, sin necesidad de GPU NVIDIA.
+- Asistente conversacional local en Mac: el modelo se carga con `mlx_lm.load()` en un equipo Apple Silicon de 24-32 GB y sirve para conversaciones multi-turno sin conexión, sin enviar datos a la nube.
+- Backend de agentes de código en local: integrado en el servidor MLX nativo de Anthropic API del proyecto `claude-code-local`, permite ejecutar Claude Code íntegramente en el dispositivo con un modelo de 12B cuantizado a 4 bits.
+- Generación de texto sin filtros para investigación: útil para estudiar comportamiento de modelos abliterated, evaluar sesgos residuales o comparar respuestas frente al checkpoint alineado.
+- Prototipado de aplicaciones de escritorio en macOS: el formato MLX y el tamaño de aproximadamente 7 GB de pesos en memoria lo hacen viable en portátiles con memoria unificada, sin GPU dedicada.
+- Redacción y generación de contenido en inglés en entornos offline: adecuado para flujos de trabajo donde la latencia de red o la privacidad son críticos.
+- Experimentación con cuantización MLX: sirve como referencia de cómo adaptar checkpoints multimodales a loaders de texto, útil para quien necesite replicar el proceso con otros modelos.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la información disponible.
 
+La model card no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otros modelos. Tampoco se aportan datos de latencia o throughput medidos, más allá de la indicación cualitativa de que el modelo "funciona cómodamente" en un Mac de 32 GB con aproximadamente 7 GB de pesos en 4 bits.
+
 ## Requisitos de hardware
 
-- VRAM/RAM unificada estimada: aproximadamente 7 GB de pesos en 4 bits según la model card; el repositorio completo ocupa 11,0 GB.
-- Hardware recomendado: Apple Silicon con al menos 24 GB de memoria unificada; la model card indica que funciona cómodamente en un Mac de 32 GB.
-- GPU NVIDIA: no aplicable de forma nativa, ya que los pesos están en formato MLX. Para CUDA sería necesario convertir a otro formato (GGUF, safetensors estándar) o usar el modelo base.
-- Cabe en GPU consumer: sí, en el ecosistema Apple Silicon (M-series con 24 GB o más). No hay datos para GPUs consumer NVIDIA en formato MLX.
-- Opciones de despliegue: `mlx-lm` (versión PyPI 0.31.3 o superior), servidores MLX con la variable `MLX_MODEL`, y el entorno Claude Code Local.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/memoria unificada estimada: aproximadamente 7 GB para los pesos en 4 bits según la model card; el repositorio completo ocupa 11 GB en disco.
+- Memoria recomendada: 24 GB de memoria unificada como mínimo según el autor; 32 GB para funcionar con holgura junto al contexto y el resto del sistema.
+- GPU dedicadas: no aplica; el formato MLX está diseñado para Apple Silicon (M1/M2/M3/M4 y variantes Pro/Max/Ultra). No se documenta soporte para A100, H100 o RTX 4090.
+- GPU de consumo: no aplica en el sentido habitual; el equivalente es un Mac con chip de la serie M.
+- Opciones de despliegue: `mlx-lm` (carga directa con `load()` y `generate()`), servidor MLX nativo (`MLX_MODEL=...`) y el servidor Anthropic-API de `claude-code-local`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| divinetribe/gemma-4-12B-it-abliterated-4bit-mlx-text | 11,9B | no disponible | No (text-only) | gemma | safetensors MLX 4-bit | Carga en `mlx-lm` 0.31.3 sin parches |
-| mlx-community (builds 4-bit/8-bit/bf16 de Gemma 4 12B) | 11,9B | no disponible | Sí (unified) | gemma | safetensors MLX | Fallan en `mlx-lm` 0.31.3 con `gemma4_unified not supported` |
-| divinetribe/gemma-4-31b-it-abliterated-4bit-mlx | ≈31B | no disponible | No | gemma | safetensors MLX 4-bit | Versión mayor del mismo autor, carga en `mlx_lm` |
-| google/gemma-4-12B-it | 11,9B | no disponible | Sí (texto, visión, audio) | gemma | safetensors | Modelo base original, instruction-tuned |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| `divinetribe/gemma-4-12B-it-abliterated-4bit-mlx-text` (este) | 11,9 B | no disponible | MLX safetensors 4-bit | gemma | Solo texto, abliterated, carga en `mlx-lm` 0.31.3 |
+| `divinetribe/gemma-4-12B-it-abliterated-4bit-mlx` | 11,9 B (presumible) | no disponible | MLX safetensors 4-bit | gemma | Mismo modelo con torres multimodales; falla en `mlx-lm` 0.31.3 según la model card |
+| `mlx-community` builds de Gemma 4 12B (4-bit/8-bit/bf16) | 11,9 B | no disponible | MLX safetensors | gemma | Alineados, multimodales; fallan en `mlx-lm` 0.31.3 con `gemma4_unified` |
+| `divinetribe/gemma-4-31b-it-abliterated-4bit-mlx` | 31 B (presumible) | no disponible | MLX safetensors 4-bit | gemma | Versión mayor de la misma familia; requiere más memoria |
+
+Los datos de rendimiento comparado no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration reduce los rechazos, pero no elimina los sesgos del modelo base ni garantiza un comportamiento seguro; el contenido generado puede ser inapropiado, ofensivo o incorrecto.
-- Riesgo de alucinación inherente a un modelo de 12B: no debe usarse como fuente de verdad sin verificación.
-- El modelo solo soporta inglés según los metadatos; el rendimiento en castellano u otros idiomas no está garantizado.
-- La longitud de contexto no está documentada en la información disponible.
-- Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribución; es necesario revisar los términos antes de un despliegue en producción.
-- Al ser text-only, no puede procesar imágenes ni audio pese a provenir de un checkpoint multimodal.
-- La ventaja de compatibilidad con `mlx-lm` es temporal: cuando se publique la corrección de mlx-lm (PR #1349, ya en `main`), los builds estándar de `mlx-community` cargarán igualmente y la única diferencia será la abliteration.
-- El soporte de tool calling no está documentado; conviene validarlo empíricamente antes de usarlo en agentes.
-- Los pesos en formato MLX no son directamente utilizables en GPUs NVIDIA ni en servidores CUDA sin conversión.
+- La abliteración elimina los mecanismos de rechazo del modelo, lo que incrementa el riesgo de generar contenido dañino, sesgado o inexacto sin advertencia. No es recomendable para aplicaciones orientadas al público sin filtros adicionales.
+- Riesgo de alucinación: inherente a los modelos de 12B y potencialmente agravado por la pérdida de alineamiento; no se han publicado evaluaciones de fidelidad factual.
+- Idiomas: la model card declara únicamente inglés; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Contexto: la longitud de contexto no se especifica en la información disponible, por lo que no se puede garantizar el comportamiento en conversaciones largas.
+- Licencia Gemma: el uso comercial está sujeto a los Gemma Terms of Use de Google, que imponen restricciones y obligaciones de atribución; la abliteración no exime de su cumplimiento.
+- Compatibilidad transitoria: la ventaja de carga en `mlx-lm` 0.31.3 desaparecerá cuando se publique el PR #1349 en PyPI, momento en el que los builds estándar de `mlx-community` también cargarán.
+- Plataforma: exclusivo para Apple Silicon; no hay pesos GGUF ni safetensors estándar para CUDA.
+- Sin datos de benchmarks ni evaluaciones independientes: no se puede verificar la calidad del modelo frente a alternativas.
+- El repositorio muestra 0 likes y 999 descargas en el momento de la consulta, lo que sugiere una validación comunitaria todavía limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/divinetribe/gemma-4-12B-it-abliterated-4bit-mlx-text
 - Modelo base abliterated: https://huggingface.co/OpenYourMind/gemma-4-12B-it-abliterated-uncensored
 - Modelo original de Google: https://huggingface.co/google/gemma-4-12B-it
-- Versión 31B del mismo autor: https://huggingface.co/divinetribe/gemma-4-31b-it-abliterated-4bit-mlx
+- Versión MLX con torres multimodales: https://huggingface.co/divinetribe/gemma-4-12B-it-abliterated-4bit-mlx
+- Versión 31B de la misma familia: https://huggingface.co/divinetribe/gemma-4-31b-it-abliterated-4bit-mlx
 - Colección Abliterated MLX for Apple Silicon: https://huggingface.co/collections/divinetribe/abliterated-mlx-for-apple-silicon
-- Proyecto Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
+- Repositorio Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
 - Perfil del autor en GitHub: https://github.com/nicedreamzapp
 - Leaderboard Agent-12: https://nicedreamzapp.github.io/agent12/
-- PR de mlx-lm que corrige el cargador: https://github.com/ml-explore/mlx-lm/pull/1349
+- PR de mlx-lm que añade soporte `gemma4_unified`: https://github.com/ml-explore/mlx-lm/pull/1349

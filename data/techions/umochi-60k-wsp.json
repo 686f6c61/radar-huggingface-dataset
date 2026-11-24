@@ -55,55 +55,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "MultiPL-E Java Code Generation",
-      "dataset": "MultiPL-E (multiple-java)",
-      "metric": "Pass@1",
-      "value": 76.82
-    },
-    {
-      "task": "MultiPL-E Java Code Generation",
-      "dataset": "MultiPL-E (multiple-java)",
-      "metric": "Pass@10",
-      "value": 88.45
-    },
-    {
-      "task": "MultiPL-E JavaScript Code Generation",
-      "dataset": "MultiPL-E (multiple-js)",
-      "metric": "Pass@1",
-      "value": 81.24
-    },
-    {
-      "task": "MultiPL-E JavaScript Code Generation",
-      "dataset": "MultiPL-E (multiple-js)",
-      "metric": "Pass@10",
-      "value": 91.6
-    },
-    {
-      "task": "Software Engineering Bug Resolution",
-      "dataset": "SWE-bench Java Lite",
-      "metric": "Pass Rate",
-      "value": 100
-    },
-    {
-      "task": "Hard Netty Zero-Copy Leak Gate",
-      "dataset": "Netty Composite Zero-Copy under PARANOID",
-      "metric": "Leak Free Pass Rate",
-      "value": 100
-    },
-    {
-      "task": "Project Loom Virtual Thread Defense",
-      "dataset": "Loom 50K Thread Carrier Pinning Gate",
-      "metric": "Non-Pinning Pass Rate",
-      "value": 100
-    },
-    {
-      "task": "Three.js Anti-AI-Slop 3D Graphics",
-      "dataset": "Three.js InstancedMesh WebGPU Benchmark",
-      "metric": "Anti-Slop Audit Score",
-      "value": 100
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

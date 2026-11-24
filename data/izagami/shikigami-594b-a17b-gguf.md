@@ -2,112 +2,100 @@
 
 ## Resumen
 
-Shikigami-594B-A17B-GGUF es una cuantización extrema del modelo Inkling 2 Small de Thinking Machines, un transformer de mezcla de expertos (MoE) con 594.000 millones de parámetros totales y 17.000 millones activos por token, distribuidos en 384 expertos enrutados con top-8. El autor, izagami, publica versiones GGUF a 2 bits (RVQ2) y a aproximadamente 1 bit (RVQ1 y TQ1) empleando cuantización vectorial residual (RVQ) y un código de trellis estilo QTIP, respectivamente. El objetivo es hacer viable en hardware de consumo y en GPUs Intel Arc la inferencia de un modelo que en BF16 ocuparía más de 1 TB.
+Shikigami-594B-A17B-GGUF es una cuantización extrema de Inkling 2 Small, el modelo multimodal de tipo Mixture-of-Experts desarrollado por Thinking Machines. El modelo original cuenta con 594.000 millones de parámetros totales y 17.000 millones activos por token, seleccionando 8 expertos de un total de 384. Esta versión, publicada por el usuario izagami, comprime los pesos hasta aproximadamente 1,1 bits por parámetro mediante una combinación de poda de expertos, reducción de la dimensión intermedia y codificación en trellis inspirada en QTIP, logrando un archivo de 80 GB que cabe en equipos de 96 GB de memoria unificada.
 
-La relevancia de esta ficha reside en que demuestra que un MoE de casi 600.000 millones de parámetros puede servirse a velocidades interactivas (hasta 57 tokens/s en decodificación con decodificación especulativa) sobre tres Intel Arc Pro B70 de 32 GB, algo impensable con cuantizaciones convencionales. El modelo conserva la torre de visión en BF16 (23 capas ViT, 0,66 GB) y acepta entrada de imagen y texto, lo que lo sitúa en la categoría image-text-to-text.
+La relevancia de esta ficha es doble. Por un lado, documenta un experimento técnico poco habitual: llevar un MoE de casi 600.000 millones de parámetros a un formato de 1 bit que pueda ejecutarse en hardware de consumo profesional, concretamente en GPUs Intel Arc Pro B70 y en el NVIDIA DGX Spark (GB10). Por otro, advierte de que el resultado no compensa en la mayoría de casos: según las mediciones del propio autor, el modelo pequeño de la misma familia (Inkling 2 Mini, 26B) supera a esta cuantización en precisión, velocidad y consumo de memoria.
 
-La contrapartida es importante: los formatos RVQ1, RVQ2 y TQ1 no son tipos nativos de llama.cpp ni de Ollama, LM Studio o Unsloth; requieren el motor XeStrata (rama `b70-local`, SYCL) y, en el caso de TQ1, un commit concreto del 19 de noviembre de 2026. Es, por tanto, un artefacto para experimentación avanzada en hardware Intel más que una opción de despliegue estándar.
+El modelo acepta entradas de texto e imagen (pipeline image-text-to-text) y se distribuye bajo licencia Apache 2.0, aunque el uso queda sujeto a la Acceptable Use Policy de Thinking Machines. No es una distribución oficial y requiere forks específicos de llama.cpp o del motor XeStrata para cargarse, ya que los formatos estándar (llama.cpp upstream, Ollama, LM Studio) no reconocen sus archivos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos), 384 expertos enrutados, top-8; torre de vision ViT de 23 capas |
-| Parametros totales | 594B (319.741.454.939 segun safetensors del repo base) |
-| Parametros activos | 17B por token |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | RVQ2 (2 bits, ~152,9 GB), RVQ1 (1,2 bits, ~84,2 GB), TQ1 (trellis, 2,06 bits/peso, ~84,2 GB); atencion, embeddings y cabeza de salida en Q6_K; router en F32; torre de vision en BF16 |
-| Idiomas soportados | no disponibles (la model card incluye evaluacion en ingles y japones) |
-| Licencia | Apache 2.0 (derivado de Inkling 2 Small; sujeto a la Acceptable Use Policy de Thinking Machines) |
-| Formato de pesos | GGUF (tensores de expertos tipo 150 `RVQ2X8` en RVQ; bytes crudos `.tq` + `.tq_gain` en TQ1); vision en `mmproj-BF16.gguf` |
+| Arquitectura | Transformer Mixture-of-Experts (MoE), 384 expertos con 8 activos por token; encoder de visión ViT de 23 capas |
+| Parametros totales | 594B (modelo original); 80.807.523.518 según safetensors del repo cuantizado |
+| Parametros activos | 17B |
+| Longitud de contexto | 16.384 tokens en la configuración de ejemplo del autor (no se documenta el máximo del modelo base) |
+| Tipos de cuantizacion | TQ1 (~1,1 bits por peso, trellis QTIP); encoder de visión en BF16; draft model en Q8_0 |
+| Idiomas soportados | No disponible (la model card incluye texto en japonés e inglés; no se detalla la cobertura) |
+| Licencia | Apache 2.0, sujeta a la Acceptable Use Policy de Thinking Machines |
+| Formato de pesos | GGUF con expertos en trellis propietario (`.tq` / `.tq_gain`), dividido en 10 archivos; `mmproj-BF16.gguf` para visión; draft model GGUF aparte |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Inkling 2 Small es un transformer de mezcla de expertos con 384 expertos enrutados y activación top-8, lo que da 17B parámetros activos sobre 594B totales. Shikigami no reentrena ni ajusta el modelo: es una cuantización post-entrenamiento. Los expertos enrutados se almacenan con cuantización vectorial residual (RVQ) en las variantes RVQ1/RVQ2: cada 8 pesos consecutivos de una fila se codifican como un código de 16 bits formado por dos índices de 8 bits en dos codebooks de 256 entradas de vectores de 8 dimensiones (un par de codebooks por capa), sumados y multiplicados por una ganancia FP16 por fila, resultando en 2,0 bits por peso más las ganancias.
+El modelo base, Inkling 2 Small, es un transformer disperso de tipo MoE con 384 expertos y enrutamiento top-8, lo que da 17.000 millones de parámetros activos sobre un total de 594.000 millones. Incorpora un encoder de visión de 23 capas (ViT) con proyector, y un modelo draft DSpark para decodificación especulativa (distribuido como `mtp.safetensors` en el repo original). No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-La variante TQ1 emplea un código de trellis con desplazamiento de bits inspirado en QTIP: teselas de 16x16 (256 pesos) de 66 bytes (2,06 bits/peso), con un estado inicial de 14 bits y 255 símbolos de 2 bits; el peso se calcula mediante una función determinista sobre el estado (sin codebook) y una ganancia FP16 por fila, aplicando una transformada de Hadamard de 64 puntos con signos fijos a la entrada de cada matriz. Los códigos se buscaron con un algoritmo de Viterbi sobre los 2^14 estados posibles. En RVQ1 y TQ1 se podan y estrechan expertos por capa (anchos 2304/1728/1152/576) para minimizar el error de salida al tamaño objetivo. Los códigos se seleccionaron para preservar la salida de cada experto sobre activaciones de calibración del modelo original. No se dispone de información sobre datos de entrenamiento, número de tokens ni etapas de RLHF/DPO del modelo base.
+La innovación de esta versión es el esquema de compresión. El autor poda los expertos menos utilizados de cada capa y reduce la dimensión intermedia de los restantes a 2.304, 1.728, 1.152 o 576, agrupados en `_g1`, `_g2`, etc. La selección de qué podar y cuánto reducir se optimiza minimizando el error de salida respecto al tamaño. Los expertos resultantes se almacenan como código trellis con desplazamiento de bits (estilo QTIP): cada tile de 256 pesos (16×16) se codifica en trellis, alcanzando ~1,1 bits por peso. El router se trunca a los expertos conservados. El encoder de visión no se cuantiza y se mantiene en BF16.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno (pipeline `conversational`).
-- Entrada de imagen y texto (image-text-to-text): la torre de visión ViT de 23 capas procesa imágenes mediante el encoder `ink2_vision.py`, que asigna un token a cada celda de 40x40 píxeles y reescala imágenes de más de 1024 celdas.
-- Razonamiento agéntico y uso de herramientas: la model card evalúa explícitamente texto "agentic / tool use" con KL de 0,038 en RVQ2 y 0,059 en RVQ1.
-- Generación de código: evaluada con KL de 0,020 (RVQ2) y 0,050 (RVQ1), con decodificación a 57 tokens/s en TQ1 para prompts de código.
-- Capacidades multilingües: se reportan métricas para inglés y japonés (KL 0,033/0,067 en RVQ2; 0,110/0,205 en RVQ1).
-- Conocimiento factual (trivia): evaluado, aunque es el área donde la cuantización pierde más calidad (KL 0,249 en RVQ2 y 1,272 en RVQ1).
-- Compatibilidad con API OpenAI de imágenes (`image_url`) a través del servidor de XeStrata, integrable con Open WebUI.
-- Plantilla de chat y tokenizador originales de Inkling 2 Small incluidos en los metadatos GGUF.
+- Generación de texto conversacional multi-turno.
+- Razonamiento con modo de pensamiento explícito (thinking), con nivel de esfuerzo configurable (`reasoning_effort: "none"` para desactivarlo).
+- Entrada de imágenes: el encoder ViT procesa imágenes en parches de 40×40 píxeles (1 token por parche; imágenes de más de 1.024 parches se reescalan).
+- Tool calling y ejecución de tareas con herramientas: el autor reporta 70/70 tareas de agente completadas en sus pruebas.
+- Capacidades multilingües parciales, con presencia documentada de japonés e inglés.
+- Decodificación especulativa mediante el draft model DSpark (hasta 3 tokens de especulación en la configuración de ejemplo).
+- No se documentan capacidades de audio ni de vídeo.
 
 ## Casos de uso
 
-- Despliegue de un MoE de 594B en hardware Intel Arc: con tres Arc Pro B70 (32 GB cada una) y 89 GB de RAM, RVQ1 mantiene todos los expertos en VRAM y decodifica a 29,5 tokens/s, lo que permite servir un modelo de escala frontera en un escritorio de gama alta.
-- Asistentes agénticos con uso de herramientas: la variante RVQ1 conserva un top-1 del 95,9% en texto agéntico respecto al original, adecuada para pipelines de function calling donde la fidelidad de la distribución de tokens importa.
-- Generación de código en local: TQ1 alcanza 57 tokens/s en decodificación de código con decodificación especulativa DSpark, suficiente para autocompletado y revisión de código en un flujo de desarrollo individual.
-- Procesamiento de documentos con imágenes: la torre de visión en BF16 permite pasar capturas, diagramas o formularios al modelo vía el servidor de XeStrata con partes `image_url`, útil para extracción de información de documentos escaneados.
-- Investigación en cuantización extrema: RVQ1, RVQ2 y TQ1 sirven como casos de estudio reproducibles de RVQ y códigos de trellis aplicados a MoE, con métricas de KL y top-1 publicadas para calibrar el compromiso tamaño/calidad.
-- Evaluación comparativa de motores de inferencia: al requerir XeStrata (SYCL) y no funcionar en llama.cpp, el modelo es un banco de pruebas para medir rendimiento de decodificación especulativa y offloading de expertos a RAM fijada sobre PCIe (RVQ2: 59% de expertos en VRAM, 15,5 tokens/s).
-- Experimentación multilingüe inglés-japonés: las métricas publicadas por idioma permiten validar la degradación de la cuantización en japonés (KL 0,205 en RVQ1) antes de usarla en productos para ese mercado.
+- Experimentación con cuantización extrema en MoE: el modelo sirve como banco de pruebas para investigar poda de expertos, codificación trellis y el impacto de ~1 bit por peso en la calidad, comparando perplexity y precisión frente a cuantizaciones de 4 bits.
+- Despliegue en hardware de memoria unificada de 96 GB: permite ejecutar un MoE de 594B en un DGX Spark (GB10) o en tres Intel Arc Pro B70, escenarios donde un modelo de ese tamaño en BF16 sería inviable.
+- Procesamiento de documentos con imagen y texto: gracias al encoder ViT en BF16 y al pipeline image-text-to-text, puede emplearse para extracción de información de capturas, formularios o diagramas, siempre con validación humana.
+- Agentes con tool calling en entornos controlados: las 70 tareas de agente completadas en las pruebas del autor sugieren viabilidad para flujos multi-paso, aunque con la advertencia de los bucles de razonamiento.
+- Investigación sobre decodificación especulativa: la integración del draft DSpark y el vocabulario reducido a 32.768 tokens permiten estudiar el equilibrio entre velocidad y verificación en el modelo objetivo.
+- Evaluación comparativa de familias MoE: útil para contrastar el comportamiento de un modelo grande cuantizado frente al modelo pequeño de la misma familia (Inkling 2 Mini) en tareas de razonamiento y código.
+- No recomendado como base para producción de atención al cliente ni generación de código crítica, dado que el propio autor desaconseja su uso frente a Mini salvo interés experimental.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card proporciona métricas de fidelidad de cuantización frente al modelo original en BF16 sobre texto retenido:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de evaluación son los del autor:
 
-| Texto | RVQ2 KL | RVQ2 top-1 | RVQ1 KL | RVQ1 top-1 |
-|---|---|---|---|---|
-| Agéntico / uso de herramientas | 0,038 | 96,6% | 0,059 | 95,9% |
-| Código | 0,020 | 96,5% | 0,050 | 94,9% |
-| Inglés | 0,033 | 95,5% | 0,110 | 91,0% |
-| Japonés | 0,067 | 92,1% | 0,205 | 87,1% |
-| Conocimiento (trivia) | 0,249 | 84,7% | 1,272 | 63,3% |
+| Metrica | Shikigami-594B-A17B (TQ1) | Inkling 2 Mini (26B) |
+|---|---|---|
+| Precisión en set de 45 problemas difíciles (temp. 0,8) | 40–41 aciertos | 43–45 aciertos |
+| Tareas de agente completadas | 70/70 | 70/70 |
+| Velocidad de generación (GB10) | 25 tok/s (sin draft); 21–34 tok/s (con DSpark) | 58 tok/s |
+| Memoria necesaria | ~77 GB | ~20 GB |
+| Perplexity (texto de prueba, fork llama.cpp) | 2,794 (vs. 2,793 en conversión propia) | No disponible |
 
-Rendimiento medido en 3x Intel Arc Pro B70 (32 GB), 89 GB de RAM del sistema, decodificación greedy y prompts cortos:
-
-| Variante | VRAM | Decodificación | Carga |
-|---|---|---|---|
-| RVQ1 | Todos los expertos en VRAM | 29,5 tok/s | ~40 s |
-| RVQ2 | ~59% de expertos en VRAM, resto desde RAM fijada por PCIe | 15,5 tok/s | 40-60 s |
-| TQ1 + DSpark | Todos los expertos en VRAM | 57 / 45 / 50 tok/s (código / japonés / agéntico) | no disponible |
-| RVQ1 (mismos prompts) | Todos los expertos en VRAM | 59 / 49 / 53 tok/s (código / japonés / agéntico) | no disponible |
-
-Prefill: 118 tok/s en TQ1 y 132 tok/s en RVQ1. TQ1 presenta aproximadamente un 8% menos de KL que RVQ1 al mismo tamaño. El autor advierte que las cifras de KL no son comparables con las de otros publicadores por diferencias en el texto y el procedimiento de evaluación.
+Rendimiento en Intel Arc Pro B70 ×3 (XeStrata, decodificación greedy con DSpark): generación de 56 tok/s en código, 53 tok/s en agente y 42 tok/s en japonés; prefill de ~265 tok/s con prompt de 4.719 tokens. En GB10 con el fork de llama.cpp: prefill de 717–763 tok/s y decode de 21–34 tok/s.
 
 ## Requisitos de hardware
 
-- VRAM estimada: RVQ1 y TQ1 ocupan 84,2 GB; RVQ2 ocupa 152,9 GB. La torre de visión añade 0,66 GB en BF16.
-- Configuración mínima reportada: 3x Intel Arc Pro B70 (32 GB cada una) más 89 GB de RAM del sistema. RVQ1 y TQ1 caben íntegramente en 96 GB de VRAM; RVQ2 requiere offloading parcial a RAM fijada.
-- GPU recomendadas: Intel Arc Pro B70 (probado); el motor XeStrata usa SYCL, por lo que el soporte está orientado a GPUs Intel. No hay datos de funcionamiento en A100, H100 o RTX 4090.
-- En GPU de consumo: no cabe en ninguna GPU de consumo actual (la variante más pequeña son 84,2 GB); requiere múltiples GPUs o offloading a RAM del sistema.
-- Opciones de despliegue: exclusivamente XeStrata, rama `b70-local` (compilación SYCL según `docs/BUILD.md`); TQ1 necesita el commit 4b1a8fbdb (2026-11-19) o posterior. llama.cpp, Ollama, LM Studio y Unsloth no pueden cargar estos ficheros.
-- Latencia y throughput: decodificación de 29,5 tok/s (RVQ1) y 15,5 tok/s (RVQ2) sin decodificación especulativa; 45-57 tok/s con DSpark en TQ1; prefill de 118-132 tok/s; carga de 40-60 s.
+- VRAM/memoria estimada: ~77 GB en uso real (GB10); el archivo TQ1 ocupa 80,0 GB y el repo completo 413,7 GB. El encoder de visión añade 0,66 GB y el draft model 1,87 GB.
+- GPU recomendadas: NVIDIA DGX Spark (GB10) con memoria unificada; 3× Intel Arc Pro B70 (32 GB cada una) más 89 GB de RAM del sistema, con todos los expertos en VRAM.
+- No cabe en GPUs de consumo convencionales (RTX 4090, 24 GB) ni en configuraciones de 48 GB.
+- Opciones de despliegue: exclusivamente forks específicos. Para Intel Arc, XeStrata rama `b70-local` (commit 4b1a8fbdb o posterior, backend SYCL); para GB10, fork de llama.cpp rama `ink2v` (tag `ink2v-20261123-0050`) o el port `gb10-port` de XeStrata. No funciona en llama.cpp upstream, Ollama, LM Studio ni Unsloth.
+- Latencia y throughput: prefill de 265 tok/s (B70×3) y 461–763 tok/s (GB10); decode de 21–56 tok/s según plataforma y uso de decodificación especulativa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Formato / cuantización | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Shikigami-594B-A17B (RVQ1/TQ1) | 594B | 17B | no disponible | GGUF propietario (RVQ2X8 / trellis), ~84,2 GB | Apache 2.0 | HF, motor XeStrata |
-| Shikigami-594B-A17B (RVQ2) | 594B | 17B | no disponible | GGUF propietario, ~152,9 GB | Apache 2.0 | HF, motor XeStrata |
-| Inkling 2 Small (original) | 594B | 17B | no disponible | BF16 (safetensors) | Apache 2.0 | HF, Thinking Machines |
-| Cuantizaciones GGUF estándar (Q4_K_M, Q2_K) | no disponible | no disponible | no disponible | GGUF estándar (llama.cpp) | según modelo base | ecosistema llama.cpp |
-
-La comparación directa con cuantizaciones GGUF convencionales no es posible porque el autor no publica variantes en tipos estándar de llama.cpp; la única alternativa práctica al original en BF16 son estas variantes RVQ/TQ, que exigen un motor específico.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Shikigami-594B-A17B-GGUF (TQ1) | 594B totales / 17B activos | 16.384 (config. ejemplo) | Apache 2.0 + AUP | GGUF con motor propietario | ~1,1 bits/peso, 80 GB, multimodal |
+| Inkling 2 Small (original) | 594B / 17B activos | No disponible | Apache 2.0 + AUP | Pesos completos en HF | Referencia de calidad; requiere hardware muy superior |
+| Inkling 2 Mini | 26B | No disponible | No disponible en la información | GGUF (p. ej. unsloth/Inkling-2-Mini-GGUF) | Mejor precisión, 58 tok/s y ~20 GB según el autor |
+| Cuantizaciones de 4 bits de Inkling 2 Small | 594B / 17B activos | No disponible | Apache 2.0 + AUP | No detallada | Presentan también bucles de razonamiento según el autor; mayor tamaño que TQ1 |
 
 ## Limitaciones y advertencias
 
-- No es una versión oficial de Thinking Machines; es un derivado no oficial bajo Apache 2.0 y sujeto a la Acceptable Use Policy del autor original.
-- Incompatible con llama.cpp, Ollama, LM Studio y Unsloth: los tensores de expertos usan el tipo GGUF 150 (`RVQ2X8`) o bytes crudos `.tq`, no reconocidos por el ecosistema estándar.
-- Requiere hardware Intel Arc y compilación manual de XeStrata (SYCL); no hay soporte documentado para NVIDIA ni AMD.
-- Pérdida de calidad notable en conocimiento factual: KL de 0,249 y top-1 del 84,7% en RVQ2; en RVQ1 el top-1 cae al 63,3%, lo que desaconseja su uso en tareas de recuperación de hechos.
-- Degradación acusada en japonés con RVQ1 (KL 0,205, top-1 87,1%) frente a RVQ2 (KL 0,067, top-1 92,1%).
-- Las cifras de KL no son comparables con las de otros publicadores por diferencias de texto y procedimiento; el autor lo advierte explícitamente.
-- Riesgo de alucinación inherente al modelo base, agravado por la cuantización a 1 bit en dominios factuales.
-- Longitud de contexto e idiomas soportados no documentados en la información disponible.
-- La evaluación de rendimiento se hizo con prompts cortos y decodificación greedy; el throughput en producción con prompts largos y sampling puede diferir.
-- El encoder de visión corre en CPU con NumPy, lo que añade latencia al procesamiento de imágenes.
+- Bucles de razonamiento: Inkling 2 tiende a repetir la misma verificación en su bloque de pensamiento, especialmente al depurar código. La cuantización agrava el problema (una vez entra en el bucle, cuesta más salir). Se mitiga con detección de repetición en el servidor (7 repeticiones de 20 caracteres en 400, o 4 de 48 en 2.400) o con `reasoning_effort: "none"`, que redujo los bucles de 8/20 a 2/20 en las pruebas del autor.
+- Pérdida de calidad frente al modelo pequeño de la familia: en el set de 45 problemas difíciles, TQ1 acierta 40–41 frente a 43–45 de Mini. El autor recomienda usar Mini salvo interés explícito en el experimento.
+- Compatibilidad restringida: no carga en llama.cpp upstream, Ollama, LM Studio ni Unsloth; requiere forks concretos y, en el caso de XeStrata, backend SYCL.
+- Riesgo de alucinación inherente a un modelo de ~1 bit por peso; no se han publicado evaluaciones de sesgo ni de robustez.
+- Cobertura de idiomas no documentada; la model card está en japonés e inglés, sin lista oficial de lenguas.
+- Restricciones de uso: aunque la licencia es Apache 2.0, se aplica la Acceptable Use Policy de Thinking Machines; no es una distribución oficial del desarrollador original.
+- Para producción se recomienda fijar límites de tokens de salida y usar el modelo con validación humana, dado el comportamiento de bucle y la falta de benchmarks estándar.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/izagami/Shikigami-594B-A17B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/izagami/Shikigami-594B-A17B-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Small
-- Motor XeStrata (rama b70-local): https://github.com/izagami/XeStrata/tree/b70-local
-- Política de uso aceptable de Thinking Machines: https://thinkingmachines.ai/model-acceptable-use-policy
+- Repositorio XeStrata (rama b70-local): https://github.com/imagami3/XeStrata/tree/b70-local
+- Port de XeStrata para GB10: https://github.com/imagami3/XeStrata/tree/gb10-port
+- Fork de llama.cpp para GB10 (rama ink2v): https://github.com/imagami3/llama.cpp/tree/ink2v
+- Cuantización GGUF de Inkling 2 Mini: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Acceptable Use Policy de Thinking Machines: https://thinkingmachines.ai/model-acceptable-use-policy
+- Revisión anterior del TQ1 (84,2 GB): https://huggingface.co/imagami/Shikigami-594B-A17B-GGUF/tree/6151b2011bd2f1f3793f52df88086e6e74ec21b5

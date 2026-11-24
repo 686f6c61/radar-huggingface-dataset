@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 349,
+  "downloads_30d": 344,
   "trending_score": 0,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Association des Copropriétaires rue David, 1 à Feluy",
-      "url": "https://syndicdata.be/fr/acp/0758498527/association-des-coproprietaires-rue-david-1-a-feluy-7181-seneffe",
-      "snippet": "Consultez le profil de Association des Copropriétaires rue David, 1 à Feluy, avec syndic, adresse et historique de gestion."
-    },
-    {
-      "title": "Association des Copropriétaires rue David, 1 à Feluy",
-      "url": "https://syndicdata.be/en/hoa/0758498527/association-des-coproprietaires-rue-david-1-a-feluy-7181-seneffe",
-      "snippet": "View the profile of Association des Copropriétaires rue David, 1 à Feluy, including property manager, address, and management history."
-    },
-    {
-      "title": "ACP RUE DAVID, 1 A FELUY VME - 0758.498.527 - Feluy (7181)",
-      "url": "https://trendstop.levif.be/fr/detail/758498527/acp-rue-david-1-a-feluy.aspx",
-      "snippet": "Consultez les données de ASSOCIATION DES COPROPRIETAIRES RUE DAVID, 1 A FELUY (0758.498.527) à Feluy (7181) ou …"
-    },
-    {
-      "title": "Association des Copropriétaires rue David, 1 à Feluy Seneffe",
-      "url": "https://www.webhero.be/ondernemingsgids/bedrijfsgegevens/association-des-coproprietaires-rue-david-1-a-feluy-758498527",
-      "snippet": "Bedrijfsgegevens van Association des Copropriétaires rue David, 1 à Feluy in Seneffe met adres Rue David 1, Seneffe"
-    },
-    {
-      "title": "ARC UNARC - Association des responsables de copropriétés",
-      "url": "https://arc-copro.fr/",
-      "snippet": "2 days ago · ARC, UNARC , Association des responsables de copropriétés, au service des copropriétaires. Plusieurs milliers …"
-    }
-  ]
+  "sources": []
 }

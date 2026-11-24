@@ -2,102 +2,102 @@
 
 ## Resumen
 
-Este repositorio contiene una construcción NVFP4 de precisión mixta de FLUX 3 Image Klein Base, el modelo de generación de imágenes de Black Forest Labs. El autor, BennyDaBall, ha re-cuantizado los pesos originales en BF16 a un formato combinado NVFP4 (FP4 de 4 bits con escalas de bloque) + 8 bits (formato INT8 ConvRot) + bf16 para las capas pequeñas de embedding y modulación, con el objetivo de reducir el tamaño del fichero y acelerar la inferencia en GPUs NVIDIA Blackwell sin sacrificar fidelidad respecto al modelo original.
+FLUX 3 Image Klein Base NVFP4 (build de BennyDaBall) es una cuantización mixta de FLUX 3 Image Klein Base de Black Forest Labs, empaquetada como archivo único para ComfyUI. El modelo base es un transformer de difusión (DiT) para generación de imágenes a partir de texto; esta versión reduce el peso de 11,08 GB (BF16) a 5,71 GB combinando capas en NVFP4 (W4A4), capas en 8 bits en formato INT8 ConvRot de BFL y capas pequeñas de embedding y modulación en bf16. No es un modelo nuevo: es un artefacto de inferencia cuantizado, con relación declarada `quantized` respecto a `black-forest-labs/flux-3-image-klein-comfy`.
 
-La motivación del proyecto es clara: la cuantización NVFP4 oficial de BFL degrada notablemente la calidad de imagen (LPIPS medio de 0.136 frente a BF16), mientras que esta construcción comunitaria logra 2.8 veces menos error medio (LPIPS de 0.049) usando técnicas de cuantización post-entrenamiento como GPTQ con búsqueda de escalas mediante Schur Replay. El resultado es un fichero de 5,71 GB pensado para ComfyUI, que se ejecuta como drop-in replacement del modelo original sin cambiar el workflow.
+La relevancia de esta ficha es práctica: el autor publica métricas reproducibles frente a las tres alternativas oficiales de BFL (BF16, INT8 ConvRot y NVFP4), con LPIPS, SSIM, tiempo por imagen, VRAM pico y una prueba de renderizado de texto. Según esos datos, este build queda mucho más cerca del BF16 que el NVFP4 oficial (LPIPS medio 0,049 frente a 0,136) y es algo más rápido (8,57 s/imagen frente a 9,21 s/imagen en una RTX 5090), a costa de un archivo algo mayor (5,71 GB frente a 5,26 GB). Frente al INT8 oficial es más rápido (2,2 %) pero ligeramente menos fiel en la mayoría de imágenes.
 
-Es relevante ahora porque las GPUs de la serie RTX 50 (arquitectura Blackwell) soportan nativamente cómputo FP4, y las cuantizaciones de 4 bits permiten ejecutar modelos de difusión grandes en tarjetas de consumo con VRAM limitada manteniendo velocidad competitiva. La adopción es aún minoritaria (19 descargas y 2 likes en el momento de redactar la ficha), pero la metodología documentada es de interés técnico para la comunidad.
+El público objetivo es quien ya ejecuta FLUX 3 Klein Base en ComfyUI sobre GPU Blackwell y quiere reducir VRAM y tiempo de muestreo sin aceptar la degradación del NVFP4 oficial. Requiere hardware con soporte FP4 nativo (RTX 50 series o RTX PRO Blackwell) para aprovechar la aceleración; en GPUs sin esa capacidad las capas NVFP4 no ofrecen la ventaja de velocidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) de FLUX 3 Image Klein Base, cuantizado post-entrenamiento |
+| Arquitectura | Transformer de difusion (DiT) para text-to-image; cuantizacion mixta NVFP4 + INT8 ConvRot + bf16 |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (usa text encoder Qwen3-VL 4B en bf16) |
-| Tipos de cuantizacion | NVFP4 (W4A4, escalas de activación estáticas) + INT8 ConvRot + bf16 (precisión mixta por capa) |
-| Idiomas soportados | en (prompts; el text encoder subyacente es multilingue, pero no esta documentado) |
-| Licencia | flux-kommunity-license (other) |
-| Formato de pesos | safetensors (single-file, formato diffusion-single-file para ComfyUI) |
-
-Datos adicionales: tamaño del fichero 5,71 GB (5.712.184.969 bytes), tamaño del repositorio 5,7 GB, pipeline text-to-image.
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen; el codificador de texto es `qwen3vl_4b_bf16`, externo al archivo) |
+| Tipos de cuantizacion | NVFP4 (W4A4, escalas de activacion estaticas) en capas principales; 8 bits en formato INT8 ConvRot de BFL; bf16 en embeddings y modulacion |
+| Idiomas soportados | en (segun metadatos del repo) |
+| Licencia | flux-kommunity-license (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors de archivo unico (`flux3-image-klein-base-nvfp4-bdb.safetensors`), 5,71 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es FLUX 3 Image Klein Base de Black Forest Labs, un modelo de difusión de tipo DiT (transformer de difusión) para texto a imagen. Este repositorio no entrena nada: es una cuantización post-entrenamiento (PTQ) del modelo original en BF16. La construcción mezcla tres precisiones por capa: los bloques principales en NVFP4 (W4A4, con escalas de activación estáticas calibradas sobre las trayectorias propias del sampler de Klein), capas sensibles en 8 bits en el formato INT8 ConvRot de BFL (con sus marcadores de atención int8), y bf16 para las capas pequeñas de embedding y modulación. La selección de qué capas permanecen en 8 bits se hizo midiendo el daño en calidad por milisegundo ganado, mediante escaneos de sensibilidad por capa con captions de validación.
+El modelo subyacente es FLUX 3 Image Klein Base, un transformer de difusion de Black Forest Labs que genera imagenes de 1024x1024 (y resoluciones superiores, como 1936x1088 en 16:9) a partir de texto, con un codificador de texto Qwen3-VL 4B en bf16 y un VAE separados. Esta ficha no cubre el entrenamiento del modelo base: no se dispone de datos sobre tokens de entrenamiento, composicion del dataset ni etapas de RLHF o DPO, y el autor no los documenta.
 
-Los pesos NVFP4 se resolvieron con GPTQ (Frantar et al., 2022) integrando la búsqueda de escala de bloque Schur Replay (arXiv 2609.36654), cuyo conjunto de candidatos incluye los puntos Four Over Six (arXiv 2512.02010, MIT Han Lab y NVIDIA). Ambos trabajos se evaluaron originalmente sobre modelos de lenguaje; su aplicación a un DiT es una integración propia del autor. Las capas de 8 bits se re-cuantizaron desde BF16 con GPTQ en la base rotada ConvRot, reduciendo el error de pesos de esas capas unas 10 veces frente a round-to-nearest. La calibración usó 24 captions x 11 de los 50 pasos del sampler, ambas ramas CFG, a 1024x1024; las captions del conjunto de evaluación nunca se usaron para calibrar. No se dispone de datos del entrenamiento original del modelo base en la información proporcionada.
+Lo que si esta documentado en detalle es el proceso de cuantizacion. Las capas NVFP4 se resuelven con GPTQ (Frantar et al., 2022), eligiendo la escala de bloque dentro del bucle de GPTQ mediante Schur Replay (arXiv 2609.36654), cuyo conjunto de candidatos incluye los puntos Four Over Six (arXiv 2512.02010, MIT Han Lab y NVIDIA) bajo la escala global 4/6. Las capas sensibles se mantienen en 8 bits en el formato INT8 ConvRot de BFL, recuantizadas desde BF16 con GPTQ en la base rotada, con seleccion de escala por fila mediante el mismo criterio de replay; el autor reporta una reduccion de aproximadamente 10x del error de pesos de esas capas frente a round-to-nearest. La calibracion uso 24 captions x 11 de los 50 pasos del sampler, en ambas ramas de CFG, a 1024x1024, con captions de oro reservados para evaluacion. La eleccion de que capas quedan en 8 bits se hizo por dano medido por milisegundo a partir de escaneos de sensibilidad por capa.
 
 ## Capacidades
 
-- Generacion de texto a imagen a 1024x1024 (y otras resoluciones como 1936x1088 en 16:9), con el mismo comportamiento que el modelo base en BF16 salvo un pequeño margen de error de cuantización.
-- Representacion fiel del texto dentro de las imágenes: en pruebas de lectura letra a letra por lectores humanos, acierta 76 de 78 cadenas, igual que la versión INT8 de BFL y una menos que BF16.
-- Compatibilidad total con el workflow estándar de ComfyUI para Klein Base: mismo text encoder (qwen3vl_4b_bf16), mismo VAE y mismos ajustes de sampler; solo cambia el nombre del fichero en el nodo Load Diffusion Model.
-- Metadatos de cuantización por capa en el campo `comfy_quant` del fichero, útiles para auditoría y depuración.
-- No soporta tool calling, agentes ni razonamiento multi-paso: es un modelo de difusión para generación de imágenes, no un LLM.
+- Generacion de imagenes a partir de texto (text-to-image) en resoluciones de 1024x1024 y superiores, incluido 16:9 a 1936x1088.
+- Renderizado de texto dentro de la imagen: en la prueba del autor, 76 de 78 cadenas citadas leidas correctamente por lectores ciegos, frente a 75/78 del BF16 y 78/78 del NVFP4 oficial.
+- Ejecucion en ComfyUI con el flujo de trabajo estandar de Klein Base, sin cambios en text encoder, VAE ni sampler.
+- Inferencia con aceleracion FP4 en GPUs NVIDIA Blackwell (RTX 50 series, RTX PRO Blackwell).
+- No se documentan capacidades de tool calling, agentes, vision de entrada, audio ni modo de razonamiento: es exclusivamente un modelo de generacion de imagen.
 
 ## Casos de uso
 
-- Generacion de imágenes en GPUs de consumo con VRAM limitada: con 16,3 GiB de VRAM pico (incluyendo escritorio), cabe en una RTX 5080 de 16 GB, permitiendo generar a 1024x1024 sin offloading.
-- Produccion de imágenes a alta velocidad en RTX 5090: 8,57 segundos por imagen a 1024x1024 con 50 pasos, un 2,2% más rápido que la versión INT8 ConvRot de BFL y un 7,0% más rápido que la NVFP4 oficial.
-- Workflows de ComfyUI existentes sin migración: al ser un drop-in replacement, cualquier pipeline que ya use Klein Base puede sustituir el fichero sin tocar el grafo, el text encoder ni el sampler.
-- Generacion por lotes con calidad controlada: la cercanía a BF16 (SSIM 0,940, LPIPS medio 0,049) permite usarlo en pipelines de generación masiva donde la versión NVFP4 oficial introduciría deriva visible.
-- Renderizado de texto en imágenes (carteles, logos, mockups): la prueba de lectura de texto indica fidelidad casi idéntica a BF16 en la representación de cadenas citadas en el prompt.
-- Experimentacion en cuantización de modelos de difusión: el README documenta la metodología completa (GPTQ, Schur Replay, Four Over Six, escaneo de sensibilidad por capa), útil como referencia para quien quiera replicar el proceso en otros DiT.
-- Generacion en formato 16:9 para contenido audiovisual: las pruebas a 1936x1088 confirman funcionamiento consistente en resoluciones distintas de 1024x1024.
+- Prototipado rapido de conceptos visuales en local: con 5,71 GB y unos 8,57 s por imagen a 1024x1024 y 50 pasos en una RTX 5090, permite iterar decenas de variaciones por sesion sin depender de APIs externas.
+- Ilustracion con texto integrado: la tasa de acierto en renderizado de cadenas (76/78) lo hace adecuado para carteles, mockups de interfaz o packaging donde el texto debe ser legible, aunque conviene revisar cada render.
+- Pipelines de generacion por lotes en ComfyUI: al ser un archivo unico que sustituye al BF16 en el nodo Load Diffusion Model, se integra en flujos existentes cambiando solo el nombre del archivo.
+- Despliegue en estaciones con una sola GPU de consumo Blackwell: el pico de VRAM medido de 16,3 GiB (incluyendo unos 3 GiB de escritorio) cabe en tarjetas de 24 GB y deja margen para el text encoder y el VAE.
+- Generacion de material grafico a resolucion 16:9 para video o presentaciones: el autor incluye ejemplos a 1936x1088 con el mismo sampler y semilla por fila.
+- Comparacion de calidad entre cuantizaciones: el repositorio publica la rejilla de comparacion y las metricas por imagen, util para decidir entre BF16, INT8, NVFP4 oficial y este build en una instalacion concreta.
+- Evaluacion de tecnicas de cuantizacion (GPTQ con Schur Replay sobre un DiT): sirve como referencia practica para investigadores que quieran aplicar estas tecnicas a modelos de difusion.
 
 ## Benchmarks y rendimiento
 
-Datos medidos por el autor en RTX 5090, ComfyUI 0.42.3, torch 2.14.0 + CUDA 13.0, 1024x1024, 50 pasos, CFG 3.5, euler/simple. Conjunto de evaluación: 16 captions x 6 seeds = 96 renders por fichero, comparados contra BF16 con la misma caption y seed.
+Datos publicados por el autor en una RTX 5090 con ComfyUI 0.42.3, 1024x1024, 50 pasos, CFG 3.5, euler/simple. La fidelidad se mide contra el render BF16 con la misma caption y semilla (96 renders por archivo: 16 captions x 6 semillas).
 
-| Fichero | Tamaño | LPIPS vs BF16 (media / mediana) | SSIM | s/img | VRAM pico |
+| Archivo | Tamano | LPIPS vs BF16 (media / mediana) | SSIM | s/imagen | VRAM pico |
 |---|---:|---:|---:|---:|---:|
 | BF16 (BFL) | 11,08 GB | referencia | 1 | 20,13 | 20,9 GiB |
 | INT8 ConvRot (BFL) | 5,81 GB | 0,034 / 0,021 | 0,958 | 8,76 | 16,4 GiB |
 | NVFP4 (BFL) | 5,26 GB | 0,136 / 0,114 | 0,845 | 9,21 | 16,1 GiB |
-| **NVFP4 (este repo)** | **5,71 GB** | **0,049 / 0,023** | **0,940** | **8,57** | **16,3 GiB** |
+| NVFP4 (este repo) | 5,71 GB | 0,049 / 0,023 | 0,940 | 8,57 | 16,3 GiB |
 
-Conclusiones del autor sobre estos datos: esta construcción es más cercana a BF16 que la NVFP4 de BFL en 91 de 96 imágenes (2,8 veces menos LPIPS medio, 5,0 veces menos mediana); INT8 ConvRot sigue siendo más cercana a BF16 en la mayoría de imágenes (65 de 96), pero es un 2,2% más lenta. En la prueba de texto dentro de imágenes: BF16 75/78, INT8 76/78, esta construcción 76/78, NVFP4 de BFL 78/78. No hay benchmarks estandarizados (FID, CLIP score, etc.) ni comparaciones con otros modelos de difusión.
+- Este build queda mas cerca del BF16 que el NVFP4 oficial en 91 de 96 imagenes (2,8x menor LPIPS medio, 5,0x menor mediana).
+- El INT8 ConvRot oficial queda mas cerca del BF16 que este build en 65 de 96 imagenes.
+- Velocidad: mediana en caliente de 5 ejecuciones; este build es un 2,2 % mas rapido que INT8 ConvRot y un 7,0 % mas rapido que el NVFP4 oficial.
+- Texto: 26 cadenas citadas x 3 semillas, lectura ciega; BF16 75/78, INT8 76/78, este build 76/78, NVFP4 oficial 78/78.
+- No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible; no aplican a un modelo de generacion de imagen.
 
 ## Requisitos de hardware
 
-- VRAM: unos 16,3 GiB de VRAM pico medidos a 1024x1024 (incluyendo ~3 GiB de uso de escritorio); BF16 necesita 20,9 GiB, así que la cuantización ahorra unos 4,6 GiB.
-- GPU: obligatoria una NVIDIA Blackwell para aprovechar el cómputo FP4 (RTX 50 series o RTX PRO Blackwell). Medido en RTX 5090. En GPUs anteriores, los tensores NVFP4 no obtendrán el speed-up de FP4 y probablemente no funcionen correctamente con este fichero.
-- Consumer GPUs: cabe en una RTX 5080 (16 GB) o superior; la RTX 5090 (32 GB) es la configuración de referencia del autor. En tarjetas de 12 GB no hay datos disponibles.
-- Software: ComfyUI 0.42.3 o compatible, comfy-kitchen 0.2.40, torch 2.14.0 + CUDA 13.0, lanzado con `--use-ck-attention` (atención int8 de Comfy Kitchen) según el setup de pruebas del autor.
-- Despliegue: ComfyUI es el entorno documentado (formato diffusion-single-file, carpeta `ComfyUI/models/diffusion_models/`). No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI (no aplicables a un DiT de difusión de todos modos, salvo wrappers específicos).
-- Rendimiento: 8,57 segundos por imagen a 1024x1024 con 50 pasos en RTX 5090 (mediana cálida de 5 ejecuciones).
+- VRAM estimada: pico medido de 16,3 GiB en una RTX 5090 con unos 3 GiB de uso de escritorio, es decir, en torno a 13 GiB efectivos para el modelo y el resto del grafo.
+- GPU recomendadas: NVIDIA Blackwell con soporte FP4 nativo (RTX 50 series, RTX PRO Blackwell) para obtener la aceleracion NVFP4; en otras GPUs el archivo puede cargarse pero sin la ventaja de velocidad FP4.
+- Cabe en GPU de consumo: si, en tarjetas de 24 GB (RTX 5090, RTX 4090 y similares) con margen para el codificador Qwen3-VL 4B y el VAE; el BF16 de referencia necesita 20,9 GiB y queda mas ajustado.
+- Despliegue: ComfyUI (probado con 0.42.3 y comfy-kitchen 0.2.40, torch 2.14.0 + CUDA 13.0, con `--use-ck-attention`). No se documentan otros runners (vLLM, TGI, llama.cpp, Ollama) para este artefacto.
+- Latencia y throughput: 8,57 s por imagen a 1024x1024 y 50 pasos en RTX 5090; no se publican cifras para otras GPUs ni para lotes.
 
 ## Comparativa con modelos similares
 
-Comparativa entre las variantes cuantizadas del mismo modelo base disponibles según el README (no es una comparativa entre modelos distintos, sino entre builds del mismo modelo):
-
-| Variante | Tamaño | Fidelidad vs BF16 | Velocidad (RTX 5090) | VRAM pico | Notas |
+| Modelo | Tamano | Contexto / resolucion | Fidelidad vs BF16 (LPIPS medio) | s/imagen (RTX 5090) | Licencia |
 |---|---:|---|---:|---:|---|
-| BF16 (BFL) | 11,08 GB | referencia | 20,13 s/img | 20,9 GiB | Máxima calidad, requiere GPUs de gama alta |
-| INT8 ConvRot (BFL) | 5,81 GB | LPIPS 0,034 (la más fiel cuantizada) | 8,76 s/img | 16,4 GiB | Buen equilibrio calidad/velocidad |
-| NVFP4 (BFL) | 5,26 GB | LPIPS 0,136 (deriva visible) | 9,21 s/img | 16,1 GiB | La más rápida no lo es: 5,2% más lenta que INT8 en este setup |
-| NVFP4 (este repo) | 5,71 GB | LPIPS 0,049 | 8,57 s/img | 16,3 GiB | La más rápida y mucho más fiel que la NVFP4 oficial |
+| FLUX 3 Image Klein Base BF16 (BFL) | 11,08 GB | 1024x1024 y superiores | referencia | 20,13 | flux-kommunity-license |
+| FLUX 3 Image Klein Base INT8 ConvRot (BFL) | 5,81 GB | 1024x1024 y superiores | 0,034 | 8,76 | flux-kommunity-license |
+| FLUX 3 Image Klein Base NVFP4 (BFL) | 5,26 GB | 1024x1024 y superiores | 0,136 | 9,21 | flux-kommunity-license |
+| Este build (NVFP4 mixto) | 5,71 GB | 1024x1024 y superiores | 0,049 | 8,57 | flux-kommunity-license |
 
-Alternativas de la misma categoría (text-to-image cuantizado para consumo) como SDXL, Flux.1 Dev o Stable Diffusion 3.5: no disponible, no hay datos comparativos en la información proporcionada.
+No se dispone de datos para comparar con otros modelos de generacion de imagen de la misma categoria (por ejemplo, otras familias text-to-image) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Requiere GPU NVIDIA Blackwell: en tarjetas RTX 30/40 o anteriores no se obtiene el speed-up FP4 y el fichero puede no funcionar; no hay datos de compatibilidad.
-- La deriva respecto a BF16 existe: aunque mucho menor que la NVFP4 oficial, algunas imágenes concretas (por ejemplo, la del terrier en la hoja de comparación) derivan más en todos los ficheros cuantizados.
-- La versión INT8 ConvRot de BFL es más fiel a BF16 en la mayoría de imágenes (65 de 96); si la prioridad absoluta es fidelidad y no velocidad, esa variante puede preferirse.
-- Licencia flux-kommunity-license: se trata de una licencia "other" con restricciones propias de Black Forest Labs; conviene revisar los términos para uso comercial antes de desplegar en producción. No hay datos sobre los términos exactos en la información proporcionada.
-- Proyecto comunitario de un solo autor: 19 descargas y 2 likes en el momento de la ficha, sin auditoría independiente de los resultados; las métricas provienen del propio autor con metodología documentada pero no verificada por terceros.
-- BFL recomienda su prompt upsampler y salida a 2K para mejores resultados; las pruebas del autor se hicieron sin upsampler, por lo que los números de calidad pueden diferir del uso recomendado por BFL.
-- Riesgo de alucinación visual típico de modelos de difusión: anatomía incorrecta, texto estilizado erróneo (documentado: una "i" en tiza estilizada que falla también en BF16 e INT8) y ausencia ocasional de espacios en el texto renderizado.
-- Soporte de idiomas de los prompts: la model card declara solo inglés; no hay datos sobre comportamiento con prompts en castellano.
+- Es un artefacto de cuantizacion, no un modelo entrenado: hereda los sesgos y limitaciones del FLUX 3 Image Klein Base y anade el error propio de la cuantizacion.
+- Fidelidad limitada: aunque queda cerca del BF16, el INT8 oficial es mas fiel en 65 de 96 imagenes; si la prioridad es maxima similitud con BF16, este build no es la mejor opcion.
+- Dependencia de hardware: la aceleracion FP4 requiere GPU Blackwell; en otras GPUs el rendimiento puede no superar al INT8.
+- Idiomas: metadatos limitados a ingles (`en`); el comportamiento con prompts en castellano no esta documentado.
+- Licencia: flux-kommunity-license, etiquetada como `other`; hay que revisar `LICENSE.md` antes de cualquier uso comercial, ya que impone condiciones adicionales sobre el modelo base.
+- Riesgo de alucinacion visual y de errores en texto renderizado: el propio autor reporta dos fallos en 78 cadenas (una "i" estilizada y un espacio ausente).
+- Reproducibilidad: las metricas provienen de una unica configuracion (ComfyUI 0.42.3, RTX 5090, sampler concreto); no se han verificado de forma independiente.
+- El repositorio tiene 380 descargas y 2 likes en el momento de la consulta: es un build de autor individual, sin el respaldo de un equipo de mantenimiento.
 
 ## Enlaces
 
-- Modelo cuantizado (este repo): https://huggingface.co/BennyDaBall/flux-3-image-klein-base-NVFP4
-- Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/flux-3-image-klein-base-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
+- Modelo base para ComfyUI: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Paper Schur Replay: https://arxiv.org/abs/2609.36654
 - Paper Four Over Six (MIT Han Lab y NVIDIA): https://arxiv.org/abs/2512.02010
-- Paper GPTQ (Frantar et al., 2022): no disponible enlace directo en la información proporcionada
-- Licencia: LICENSE.md en el repositorio (flux-kommunity-license)
+- Perfil del autor en X: https://x.com/BennyDaBall_OG
+- Apoyo al autor (Ko-fi): https://ko-fi.com/bennydaball

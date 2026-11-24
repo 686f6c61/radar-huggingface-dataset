@@ -2,94 +2,81 @@
 
 ## Resumen
 
-convertor/ming-image-gguf es una conversion al formato GGUF del modelo de generacion de imagenes inclusionAI/Ming-Image-0.1-Design, publicada por el usuario convertor. Se trata, por tanto, de un artefacto de cuantizacion y empaquetado, no de un modelo entrenado desde cero: su valor esta en hacer desplegable un pipeline de difusion de aproximadamente 6.154.901.056 parametros en entornos donde no se dispone de GPU de centro de datos, apoyandose en cuantizacion de 4 bits (nvfp4) y en la posibilidad de descargar parte del computo a CPU.
+Ming-Image-0.1-Design es un modelo de difusion para generacion y edicion de imagenes desarrollado por inclusionAI. Este repositorio concreto, `convertor/ming-image-gguf`, es una conversion a formato GGUF del modelo original, publicada por el usuario convertor, que permite ejecutar el modelo en entornos de inferencia locales basados en GGUF en lugar de depender de los pesos originales en safetensors.
 
-El pipeline que documenta la model card no es un unico fichero: incluye un modelo de difusion (ming-image-0.1-design-nvfp4.gguf), un VAE en bf16 (pig_ming_image_vae_bf16.gguf) y un codificador de texto basado en un LLM (ming_image_0.1_ling_mini_2.0-nvfp4.gguf). La invocacion se realiza con la herramienta `ggk diffuser engine`, con soporte de atencion flash para difusion (`--diffusion-fa`) y offload a CPU (`--offload-to-cpu`), con un valor de referencia de 12 pasos de muestreo.
+El modelo combina un backbone de difusion (denominado `diffusion-model` en los ejemplos de uso) con un codificador de texto tipo CLIP, un adaptador y un VAE, y admite tambien un modulo de vision para tareas de edicion de imagen a partir de una imagen de referencia. Con aproximadamente 6.150 millones de parametros en el checkpoint en safetensors, se situa en la gama de modelos de difusion de tamano medio, lo que facilita su despliegue en GPU de consumo con cuantizacion.
 
-Su relevancia es practica: permite ejecutar generacion de imagenes a partir de texto en hardware de gama de consumo o en servidores sin aceleradores dedicados, a costa de la perdida de fidelidad inherente a la cuantizacion. El repositorio es muy reciente, con cero descargas y cero likes en el momento de la consulta, y no incluye benchmarks ni documentacion tecnica adicional sobre el entrenamiento del modelo base.
+La relevancia de esta ficha radica en que el repositorio GGUF expone comandos concretos de inferencia (texto a imagen, edicion de imagen y descomposicion por capas) y demuestra que el modelo puede ejecutarse con cuantizaciones nvfp4 y q8_0, reduciendo requisitos de VRAM. No obstante, la informacion publicada es escasa: no hay model card tecnica detallada del autor original, ni benchmarks, ni lista de idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (pipeline de difusion: modelo de difusion + VAE + codificador de texto LLM, segun la model card) |
-| Parametros totales | 6.154.901.056 |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | Modelo de difusion (texto a imagen) con codificador de texto CLIP, adaptador y VAE; modulo de vision opcional para edicion |
+| Parametros totales | 6.154.908.736 (segun safetensors del repo) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | nvfp4 (modelo de difusion y LLM codificador), bf16 (VAE) |
+| Tipos de cuantizacion | nvfp4 (modelo de difusion y modulo de vision), q8_0 (modulo de vision), f16 (CLIP y adaptador), bf16 (VAE) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF |
-| Modelo base | inclusionAI/Ming-Image-0.1-Design |
-| Tipo de artefacto | conversion / cuantizacion de un modelo de terceros |
-| Tamano del repositorio | 3,7 GB |
-| Fecha de publicacion | 2026-09-26 |
-| Descargas / likes | 0 / 0 |
-| Pipeline declarado en Hugging Face | no disponible |
+| Formato de pesos | GGUF (repo); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento: la model card de este repositorio no describe el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Lo unico deducible del material proporcionado es la estructura del pipeline de inferencia, que separa tres componentes: un modelo de difusion (invocado con `--diffusion-model`), un VAE (`--vae`) y un modelo de lenguaje que actua como codificador de texto de las instrucciones (`--llm`), en este caso identificado como `ling_mini_2.0`.
+La informacion disponible describe un pipeline de difusion para generacion de imagenes condicionada por texto. El flujo de inferencia requiere varios componentes separados: un `diffusion-model` (el backbone generativo), un VAE (`pig_ming_image_vae_bf16.gguf`), un codificador de texto CLIP (`pig_clip-f16.gguf`) y un adaptador (`pig_ming_adapter-f16.gguf`). Para tareas de edicion de imagen se anade un modulo de vision (`pig_ming_vision-nvfp4.gguf` o `pig_ming_vision-q8_0.gguf`) que procesa una imagen de referencia.
 
-La innovacion tecnica del repositorio es exclusivamente de despliegue: la cuantizacion a nvfp4 reduce el peso del modelo de difusion y del codificador de texto, mientras que el VAE se mantiene en bf16 para preservar la calidad de reconstruccion de la imagen. El motor de inferencia emplea atencion flash aplicada a difusion (`--diffusion-fa`) y permite descargar tensores a CPU (`--offload-to-cpu`), lo que habilita ejecucion en equipos con VRAM limitada a cambio de mayor latencia. La model card fija 12 pasos de muestreo en sus ejemplos, un valor bajo que sugiere optimizacion por velocidad mas que por maxima calidad.
+Los ejemplos del repositorio muestran inferencia con 12 pasos de muestreo, resoluciones de 512x512, atencion de difusion acelerada (`--diffusion-fa`) y opcion de descarga a CPU (`--offload-to-cpu`). Tambien se documenta una variante `ming-image-0.1-design-layer-nvfp4.gguf` orientada a "layer decompose", es decir, descomposicion de una imagen de entrada en capas. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (text-to-image), incluidos prompts largos y detallados con indicaciones de iluminacion, composicion y estilo.
-- Renderizado de texto dentro de la imagen: los ejemplos de la model card muestran carteles legibles ("PIG is the best", "GGUF") generados a partir del prompt, lo que indica cierta capacidad de tipografia integrada.
-- Estilos ilustrados y de tipo anime, segun los dos ejemplos publicados por el autor.
-- Inferencia con cuantizacion de 4 bits (nvfp4) manteniendo el VAE en bf16.
-- Ejecucion con offload parcial a CPU, lo que amplia el rango de hardware compatible.
-- Control del numero de pasos de muestreo mediante parametro de linea de comandos (12 pasos en los ejemplos).
-- No disponible: soporte de tool calling, capacidades de agente, razonamiento multi-paso, modalidad de audio, modo de pensamiento explicito, soporte multilingue declarado, image-to-image, inpainting o control por pose/estructura.
+- Generacion de imagenes a partir de prompts de texto (text to image), con control de resolucion y numero de pasos.
+- Edicion de imagen guiada por prompt y por imagen de referencia (`--ref-image`), usando el modulo de vision.
+- Descomposicion por capas de una imagen de entrada (layer decompose), segun el ejemplo del repositorio.
+- Inferencia con atencion de difusion acelerada (`--diffusion-fa`).
+- Ejecucion con cuantizacion nvfp4 para reducir huella de memoria.
+- Soporte de descarga parcial a CPU (`--offload-to-cpu`) para entornos con VRAM limitada.
+- Soporte de archivo de prompt (`--prompt-file`) para prompts largos o estructurados.
+- No se documenta soporte de tool calling, agentes, audio ni modo thinking.
 
 ## Casos de uso
 
-- Generacion de ilustraciones en equipos sin GPU de centro de datos: gracias a la cuantizacion nvfp4 y al flag `--offload-to-cpu`, el pipeline puede ejecutarse en estaciones de trabajo con GPU de gama media o incluso con recursos limitados, algo inviable con pesos sin cuantizar de un modelo de este tamano.
-- Creacion de recursos graficos para prototipos de videojuegos o aplicaciones: la capacidad de renderizar texto legible dentro de la imagen permite generar carteles, rotulos y elementos de interfaz ficticios para maquetas y presentaciones.
-- Produccion por lotes de material editorial ilustrado: al invocarse desde linea de comandos, el pipeline se integra facilmente en scripts que generan variantes de una misma ilustracion cambiando el prompt, util para portadas, banners o articulos.
-- Pruebas comparativas de cuantizacion: investigadores que estudien el impacto de nvfp4 frente a precision completa pueden usar este repositorio como punto de partida para medir degradacion de calidad y ahorro de VRAM en un modelo de difusion real.
-- Despliegue en entornos sin conexion o con requisitos de privacidad: al ser pesos locales en formato GGUF, la generacion de imagenes no requiere enviar prompts a servicios externos, lo que resulta adecuado en contextos con datos sensibles o redes aisladas.
-- Automatizacion de assets para documentacion tecnica: generar diagramas conceptuales o ilustraciones de apoyo a partir de descripciones textuales dentro de un flujo de integracion continua que produzca y archive las imagenes resultantes.
-- Evaluacion cualitativa de prompts en iteraciones rapidas: con 12 pasos de muestreo y atencion flash para difusion, el ciclo de prueba y error sobre un mismo prompt es corto, lo que facilita ajustar redaccion y detalle antes de lanzar una generacion de mayor calidad.
+- Generacion de ilustraciones para prototipos de producto: el modelo permite crear imagenes de 512x512 con 12 pasos, adecuado para iterar rapidamente sobre conceptos visuales en fases de diseno.
+- Edicion de imagenes existentes: con `--ref-image` y el modulo de vision, se puede transformar una imagen de referencia (por ejemplo, anadir gafas de sol a un animal) manteniendo la composicion original.
+- Descomposicion de capas para postproduccion: la variante `layer-nvfp4` permite separar una imagen en capas, util para flujos de trabajo de edicion grafica.
+- Despliegue local en estaciones de trabajo con GPU de consumo: la cuantizacion nvfp4 y la opcion `--offload-to-cpu` permiten ejecutar el modelo sin infraestructura de datacenter.
+- Generacion de assets para contenido editorial o redes sociales: prompts con estilos definidos (por ejemplo, "volumetric lighting, sunset hour") producen imagenes consistentes con la direccion artistica indicada.
+- Experimentacion e investigacion en difusion: al estar en GGUF y con licencia MIT, es adecuado para probar pipelines de inferencia alternativos y comparar cuantizaciones (nvfp4 frente a q8_0).
+- Integracion en herramientas de escritorio o CLI: los comandos documentados (`ggk`) permiten automatizar la generacion de imagenes desde scripts.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye metricas cuantitativas (FID, CLIP score, HPSv2 u otras), y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, unicamente paginas sin vinculacion alguna con el proyecto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. A partir del tamano del repositorio (3,7 GB) y del uso de nvfp4, una estimacion razonable es de 8 a 12 GB de VRAM con offload parcial a CPU, y de 12 a 16 GB si se cargan el modelo de difusion, el VAE en bf16 y el codificador de texto simultaneamente en memoria de GPU. Estas cifras son estimaciones derivadas del formato de cuantizacion, no datos confirmados por el autor.
-- GPU recomendadas: no hay recomendacion oficial. Por rango de memoria, serian compatibles tarjetas de consumo con 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090); para generacion por lotes tendrian sentido A100 o H100.
-- Cabe en GPU de consumo: si, segun las estimaciones anteriores, especialmente activando `--offload-to-cpu`. El repositorio de 3,7 GB sugiere que los pesos cuantizados son manejables en almacenamiento y memoria de un equipo personal.
-- Opciones de despliegue: el unico motor documentado es `ggk diffuser engine`, invocado desde linea de comandos con los ficheros GGUF del modelo de difusion, el VAE y el LLM. No se mencionan vLLM, Ollama, llama.cpp ni TGI; estos ultimos estan orientados a modelos de lenguaje y no cubren un pipeline de difusion de estas caracteristicas.
-- Latencia y throughput: no disponibles. La model card solo indica 12 pasos de muestreo y el uso de atencion flash para difusion, sin tiempos de ejecucion ni imagenes por segundo.
+- VRAM estimada para inferencia: no disponible de forma explicita. El repo ocupa 8,4 GB en total, incluyendo todos los componentes; el modelo de difusion cuantizado en nvfp4 y el VAE en bf16 son los principales consumidores.
+- GPU recomendadas: no disponible. La presencia de cuantizacion nvfp4 sugiere soporte en GPU modernas; no se especifica que generaciones son compatibles.
+- Cabe en GPU de consumo: probablemente si, dado el tamano del modelo (6,15 mil millones de parametros) y las cuantizaciones disponibles, pero no se confirma en la informacion proporcionada.
+- Opciones de despliegue: motor `ggk` (comandos documentados en la model card). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. Los ejemplos usan 12 pasos de muestreo, lo que reduce el coste frente a configuraciones de 20-50 pasos, pero no se aportan tiempos.
 
 ## Comparativa con modelos similares
 
-No disponible. La busqueda web no ha proporcionado informacion sobre modelos comparables, y la model card de este repositorio no ofrece datos de rendimiento que permitan situarlo frente a alternativas. Como unico punto de comparacion verificable esta el propio modelo base sin cuantizar:
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Estado |
-|---|---|---|---|---|---|
-| convertor/ming-image-gguf | 6.154.901.056 | no disponible | GGUF (nvfp4 / bf16 en VAE) | MIT | conversion de terceros, 0 descargas |
-| inclusionAI/Ming-Image-0.1-Design | no disponible | no disponible | no disponible | no disponible | modelo base original |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | sin datos en la busqueda realizada |
+No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Artefacto de terceros: el repositorio lo publica el usuario convertor, no el equipo responsable del modelo base (inclusionAI), por lo que no existe garantia de fidelidad respecto a los pesos originales.
-- Sin validacion de la comunidad: cero descargas y cero likes en el momento de la consulta, y publicacion muy reciente (26 de septiembre de 2026). No hay casos de exito reportados por terceros.
-- Sin benchmarks: no hay metricas objetivas de calidad de imagen, por lo que no se puede cuantificar la degradacion introducida por la cuantizacion nvfp4.
-- Degradacion por cuantizacion: la cuantizacion a 4 bits de un modelo de difusion suele afectar al detalle fino, a la coherencia de texturas y a la fidelidad del texto renderizado. Conviene validar los resultados con prompts reales antes de usarlo en produccion.
-- Idiomas no declarados: se desconoce que lenguas comprende correctamente el codificador de texto; los ejemplos publicados estan en ingles.
-- Restricciones de licencia: el repositorio declara licencia MIT, pero se trata de una conversion de un modelo de terceros. Es imprescindible verificar la licencia del modelo base inclusionAI/Ming-Image-0.1-Design antes de cualquier uso comercial, ya que la licencia del derivado no puede ampliar los derechos del original.
-- Ausencia de informacion sobre sesgos: no hay documentacion sobre sesgos de representacion, contenido nocivo o filtros de seguridad aplicados al modelo base ni a esta conversion.
-- Limitaciones de despliegue: la unica herramienta documentada es `ggk diffuser engine`, lo que reduce la portabilidad frente a formatos con ecosistema mas amplio. No se documentan requisitos de version ni compatibilidad.
-- Sin datos de contexto: no se especifica la longitud maxima de prompt soportada por el codificador de texto, lo que complica el diseno de prompts largos y estructurados.
-- Riesgo de alucinacion entendido como generacion de contenido visual inexacto: al no haber evaluacion publicada, no se puede estimar la tasa de imagenes incoherentes o con anatomia incorrecta.
+- La model card del repositorio GGUF es una conversion; no incluye la documentacion tecnica del modelo original (datos de entrenamiento, sesgos, evaluaciones).
+- No se especifican los idiomas soportados por el codificador de texto; el soporte multilingue es incierto.
+- Riesgo de alucinacion visual y de artefactos propios de modelos de difusion; no hay evaluaciones publicadas que lo cuantifiquen.
+- La licencia MIT permite uso comercial, pero conviene verificar la licencia del modelo base `inclusionAI/Ming-Image-0.1-Design` antes de desplegar en produccion.
+- El pipeline requiere multiples archivos (diffusion model, VAE, CLIP, adaptador y, opcionalmente, modulo de vision); un error en la combinacion de versiones puede degradar la calidad.
+- La cuantizacion nvfp4 puede introducir perdida de calidad frente a los pesos originales; no se documenta la magnitud de esa perdida.
+- No hay informacion sobre sesgos demograficos, de genero o culturales en las imagenes generadas.
+- El modelo esta orientado a generacion de imagenes; no debe evaluarse como modelo de lenguaje.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/convertor/ming-image-gguf
 - Modelo base: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
-- Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a paginas de comics y manga sin relacion alguna con el modelo, por lo que se descartan como fuentes.
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

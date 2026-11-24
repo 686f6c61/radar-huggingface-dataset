@@ -1,63 +1,96 @@
 # NikiKrutan/Qwen3.8-27B-MTP-GGUF
 
 ## Resumen
-Qwen3.8-27B-MTP-GGUF es una colección de cuantizaciones GGUF del modelo Qwen3.8-27B, generadas por NikiKrutan con un método experimental denominado "niki-allocator". El modelo base es un LLM multimodal (imagen y texto) de 27 320 millones de parámetros, con capacidades de razonamiento, visión y un contexto de 256K tokens. La relevancia de estas cuantizaciones radica en que incluyen el módulo MTP (multi-token prediction), que acelera la decodificación en llama.cpp, y en que el autor presenta una comparación exhaustiva de calidad frente a otros proveedores de GGUF (unsloth, bartowski, lmstudio-community, etc.), basada en métricas de divergencia como KLD y RMS Δp. El repositorio contiene 15 tamaños de cuantización que van desde aproximadamente 8,5 GB hasta 23 GB, con un tamaño total de 231 GB. Licenciado bajo Apache-2.0, permite uso comercial sin restricciones adicionales.
 
-## Especificaciones técnicas
-| Parámetro | Valor |
+Qwen3.8-27B-MTP-GGUF es una colección de cuantizaciones GGUF del modelo Qwen/Qwen3.8-27B, publicada por el usuario NikiKrutan. El modelo base es un transformer denso de 27.320.697.856 parámetros (unos 27,3 mil millones) desarrollado por el equipo Qwen, orientado a razonamiento con modo *thinking*, generación de código, uso agéntico y conversación multimodal de entrada imagen-texto. Esta publicación no entrena ni modifica los pesos: su valor está en el proceso de cuantización.
+
+El autor emplea una herramienta experimental propia, `niki-allocator`, que asigna el tipo de cuantización por tensor individual en lugar de por grupos de tensores o capas, estimando la mejor opción para cada tensor y validando las candidatas con ejecuciones reales de divergencia KL (KLD). Según la model card, el proceso consumió 95 horas de cómputo con 2 GPU a carga cercana al 100 %, materializó 27 TB de GGUF intermedios y requirió 72 horas de trabajo humano. El resultado es un conjunto de cuantizaciones con métricas de calidad (KLD media, RMS Δp, p95/p99/p99.9, coincidencia de top-1 y perplejidad) comparadas frente a las de unsloth, AtomicChat, bartowski, lmstudio-community, mudler y byteshape.
+
+La relevancia práctica es doble: por un lado, ofrece alternativas GGUF de alta fidelidad para desplegar un modelo de 27B en llama.cpp y entornos compatibles; por otro, conserva la cuantización de la cabeza MTP (*multi-token prediction*), que el autor defiende como útil incluso en cuantizaciones de baja precisión, frente a la decisión de unsloth v3.0 de eliminarla en sus variantes pequeñas.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo multimodal (texto e imagen) tipo transformer con módulo MTP |
-| Parámetros totales | 27 320 697 856 (27,3B) |
-| Parámetros activos | No aplicable (no es MoE) |
-| Longitud de contexto | 256K tokens (según documentación de Unsloth) |
-| Tipos de cuantización | 15 tamaños de GGUF (entre ~8,5 GB y ~23 GB) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Arquitectura | Transformer denso (sin mezcla de expertos); detalles internos del modelo base no disponibles en la informacion proporcionada |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF cuantizado con asignacion por tensor (metodo `niki-allocator`); niveles concretos no listados en la informacion proporcionada |
+| Idiomas soportados | No disponible (la model card menciona corpus de evaluacion en ingles, ruso y multilingue, pero no declara idiomas soportados) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (pesos base en safetensors en el modelo original) |
 
 ## Arquitectura y entrenamiento
-El modelo base Qwen3.8-27B es un transformer multimodal con visión y lenguaje, entrenado para razonamiento y tareas de codificación. No se dispone de detalles sobre el dataset de entrenamiento ni el proceso de alineación (RLHF, DPO, etc.) en la información proporcionada. Las cuantizaciones de este repositorio no modifican la arquitectura del modelo, sino que optimizan la asignación de tipos de bitset por tensor mediante la herramienta experimental "niki-allocator". El autor reporta 95 horas de cómputo en dos GPUs, 27 TB de archivos GGUF descartados y 72 horas de trabajo manual para producir estas versiones. El módulo MTP (multi-token prediction) se incluye en todos los tamaños, a diferencia de otros proveedores que lo eliminan en cuantizaciones pequeñas, y el autor defiende que funciona bien incluso en quants de menor tamaño.
+
+El modelo base Qwen3.8-27B es un transformer denso de 27,3B parámetros. La información disponible no detalla el número de capas, dimensión oculta, mecanismo de atención ni composición del dataset de entrenamiento. La model card del repositorio cuantizado sí confirma la presencia de una cabeza MTP (*multi-token prediction*), un módulo auxiliar de predicción multi-token que puede emplearse para decodificación especulativa y que el autor cuantiza explícitamente en sus variantes.
+
+El trabajo de este repositorio es exclusivamente de cuantización. El método `niki-allocator` opera a granularidad de tensor individual: estima el tipo óptimo para cada tensor, materializa las asignaciones candidatas y las evalúa con ejecuciones KLD reales sobre dos corpus de referencia. El corpus `niki-small-plus-2` cubre código, prompts agénticos, razonamiento, lógica dura, inglés y ruso; el corpus `independent-v2` cubre textos multilingües, web, artículos científicos, matemáticas y textos legales, sin trazas de razonamiento ni código. Las comparaciones se hicieron con cuantizaciones descargadas el 16 y el 21 de agosto de 2026.
 
 ## Capacidades
-- Generación de texto y razonamiento avanzado con modo "thinking" activado por defecto (el modelo puede generar cadenas de razonamiento extensas).
-- Entrada multimodal: procesa imágenes y video (según documentación de Unsloth y el pipeline_tag `image-text-to-text`).
-- Soporte para tareas de codificación y uso agéntico (tags `coding`, `agentic`).
-- Conversación multi-turno con contexto de 256K tokens, adecuado para documentos largos o historiales extensos.
-- MTP integrado: acelera la decodificación en llama.cpp, con mejoras reportadas de +33% a +145% en GPUs de consumo (según el repositorio `sudoingX/qwen38-mtp`).
-- No se confirma explícitamente el soporte de tool calling o function calling en la información disponible.
+
+- Generación de texto conversacional multi-turno.
+- Razonamiento explícito en modo *thinking* (etiqueta `thinking` en el repositorio).
+- Generación y asistencia de código (etiqueta `coding`).
+- Flujos agénticos y razonamiento multi-paso (etiqueta `agentic`).
+- Entrada multimodal imagen-texto (`pipeline_tag: image-text-to-text`), heredada del modelo base.
+- Decodificación especulativa mediante la cabeza MTP incluida en las cuantizaciones.
+- Compatibilidad con endpoints (`endpoints_compatible`) y con llama.cpp.
+- Soporte de *tool calling* / *function calling*: no confirmado explícitamente en la información proporcionada.
 
 ## Casos de uso
-- **Atención al cliente automatizada**: el contexto de 256K tokens permite gestionar conversaciones largas y recordar detalles de interacciones previas, manteniendo coherencia en diálogos multi-turno.
-- **Asistente de generación de código**: el modelo está entrenado para tareas de codificación; su MTP reduce la latencia de generación, lo que lo hace útil en entornos de desarrollo integrado (IDEs) o agentes de programación.
-- **Análisis de documentos con imágenes**: al ser multimodal, puede extraer información de gráficos, diagramas o capturas de pantalla dentro de documentos extensos, útil en tareas de revisión de informes o extracción de datos.
-- **Razonamiento sobre documentos largos**: con su ventana de 256K tokens, puede procesar libros, papers o expedientes completos para resúmenes o respuestas basadas en contenido específico.
-- **Despliegue local en GPUs de consumo**: las cuantizaciones de 8,5-23 GB permiten ejecutar el modelo en hardware de gama alta (RTX 4090, 24 GB) o incluso en GPUs de 12 GB con los quants más pequeños, usando llama.cpp o Ollama.
-- **Prototipado rápido de agentes**: su capacidad de razonamiento y el soporte de MTP facilitan experimentación con flujos de razonamiento multi-step en entornos de investigación.
+
+- Asistencia de código en local: desplegar una cuantización GGUF en llama.cpp sobre una estación de trabajo con GPU de consumo para autocompletado, revisión de parches y explicación de código, aprovechando la preservación de la cabeza MTP para decodificación especulativa.
+- Agentes autónomos con pasos múltiples: usar el modo *thinking* para tareas de planificación y ejecución encadenada donde el modelo debe razonar antes de actuar, con la ventaja de que el GGUF corre en infraestructura propia sin dependencia de API.
+- Procesamiento de documentos con imagen: al heredar la modalidad imagen-texto, puede extraer y razonar sobre contenido de capturas, diagramas o páginas escaneadas en pipelines de digitalización.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye gráficas de KLD, RMS Δp, p95/p99/p99.9, coincidencia de top-1 y perplejidad, lo que permite elegir el nivel de cuantización según el presupuesto de VRAM y el corpus objetivo (código/agéntico frente a multilingüe/científico).
+- Despliegue en entornos con VRAM limitada: seleccionar una variante de menor tamaño para servir el modelo en una sola GPU consumer, aceptando la pérdida de fidelidad documentada en las gráficas.
+- Sustitución de cuantizaciones de terceros: comparar directamente contra las versiones de unsloth, bartowski o lmstudio-community sobre los mismos corpus para decidir qué proveedor usar en producción.
+- Investigación sobre cuantización: reutilizar la metodología de asignación por tensor y las métricas publicadas como referencia para estudiar el impacto de la cuantización selectiva en modelos de ~27B.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks del modelo base (como MMLU, HumanEval, GSM8K) en la información proporcionada. El autor incluye comparativas de calidad de cuantización entre su versión y las de otros proveedores (unsloth, bartowski, lmstudio-community, mudler, byteshape, AtomicChat) mediante gráficos de KLD media, RMS Δp, PPL y métricas de cola (p95, p99, p99.9), pero no se aportan cifras numéricas en el texto de la model card. Los gráficos están disponibles en el repositorio de Hugging Face.
+
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente aporta métricas de fidelidad de cuantización (KLD media, RMS Δp, p95/p99/p99.9 de KLD, coincidencia de top-1 y perplejidad) frente a cuantizaciones de otros proveedores, sin valores numéricos en el texto extraído y sin resultados de MMLU, HumanEval, GSM8K ni similares.
 
 ## Requisitos de hardware
-- Los quants de ~8,5 GB caben en GPUs con 12 GB de VRAM (RTX 3060, RTX 4070) y pueden funcionar con desacoplamiento CPU+GPU si es necesario.
-- Los quants de ~23 GB requieren al menos 24 GB de VRAM (RTX 4090, A5000, A100 40GB) para inferencia completa.
-- Para usar el MTP de forma eficiente, se recomienda llama.cpp (compilado con soporte para MTP) y una GPU de consumo moderna; se reportan mejoras de +33% a +145% en velocidad de decodificación según el repositorio `sudoingX/qwen38-mtp`.
-- Opciones de despliegue: llama.cpp, Ollama (si se convierte a formato GGUF), o cualquier runtime que acepte GGUF. No se menciona compatibilidad con vLLM en esta información.
+
+- VRAM estimada: no disponible con cifras concretas. Como referencia de orden de magnitud, un modelo denso de 27,3B en FP16 requiere aproximadamente 55 GB solo para pesos; las cuantizaciones GGUF reducen esa cifra de forma proporcional a los bits por peso, pero el repositorio no publica el tamaño de cada archivo en la información disponible.
+- GPU recomendadas: no especificadas por el autor. Para FP16 serían necesarias A100 80 GB, H100 o varias GPU; para cuantizaciones de 4-5 bits, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) son candidatas plausibles, si bien el dato no está confirmado en la información proporcionada.
+- GPU de consumo: probablemente viable en tarjetas de 24 GB con cuantizaciones bajas, condicionado al tamaño real de cada archivo GGUF, que no se detalla.
+- Opciones de despliegue: llama.cpp (etiqueta explícita), y por extensión los runners compatibles con GGUF (Ollama, LM Studio, servidores basados en llama.cpp). Compatibilidad declarada con endpoints.
+- Latencia y throughput: no disponibles. La cabeza MTP permite decodificación especulativa, lo que en principio aumenta el throughput, pero no se publican mediciones.
 
 ## Comparativa con modelos similares
-- El autor compara sus quants con los de unsloth, bartowski, lmstudio-community, mudler, byteshape y AtomicChat para el mismo modelo base Qwen3.8-27B. Según sus métricas (KLD, RMS Δp), afirma que sus cuantizaciones ofrecen mejor calidad que la mayoría de los competidores, aunque no se proporcionan números concretos.
-- En cuanto al modelo base, Qwen3.8-27B se posiciona como un modelo multimodal de 27B con contexto largo, comparable a otros modelos de 27B como Qwen2.5-27B (solo texto) o Gemma-3-27B (multimodal), pero no hay datos de rendimiento comparativo en la información disponible.
+
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| NikiKrutan/Qwen3.8-27B-MTP-GGUF | 27,3B | No disponible | GGUF | Apache 2.0 | Cuantizacion por tensor con MTP preservado; metricas KLD publicadas |
+| unsloth/Qwen3.8-27B-GGUF | 27,3B (base comun) | No disponible | GGUF | Apache 2.0 | Elimina MTP en cuantizaciones bajas segun la model card; comparado en las graficas |
+| bartowski/Qwen3.8-27B-GGUF | 27,3B (base comun) | No disponible | GGUF | Apache 2.0 | Cuantizacion por grupos; comparado en las graficas |
+| lmstudio-community/Qwen3.8-27B-GGUF | 27,3B (base comun) | No disponible | GGUF | Apache 2.0 | Orientado a LM Studio; comparado en las graficas |
+
+También se comparan en la model card las cuantizaciones de AtomicChat, mudler (APEX) y byteshape, todas sobre el mismo modelo base. No se dispone de comparación con modelos de arquitectura distinta.
 
 ## Limitaciones y advertencias
-- El modelo base puede generar alucinaciones y sesgos, como cualquier LLM de su tamaño; se recomienda validar las respuestas en aplicaciones críticas.
-- El modo "thinking" por defecto puede consumir un número excesivo de tokens (hasta 20 000 en respuestas cortas, según un artículo de dev.to), lo que incrementa el tiempo de respuesta y el coste computacional.
-- Aunque las cuantizaciones son de alta calidad, siempre hay una pérdida de precisión respecto al modelo en punto flotante; las métricas del autor indican que las diferencias son pequeñas, pero no nulas.
-- No se especifican los idiomas soportados; se presume multilingüismo por ser un modelo de Qwen, pero no está confirmado.
-- El repositorio tiene un tamaño de 231 GB, lo que puede suponer un coste de descarga elevado si se necesitan varios quants.
-- La licencia Apache-2.0 permite uso comercial, pero se debe verificar que el modelo base no tenga restricciones adicionales (no se indica en la información).
+
+- Es una cuantización, no un modelo nuevo: hereda todos los sesgos y limitaciones del Qwen3.8-27B original, que no se documentan en la información disponible.
+- Riesgo de alucinación: inherente al modelo base; no se publican tasas de alucinación ni evaluaciones de veracidad.
+- Las métricas de calidad presentadas (KLD, perplejidad, coincidencia de top-1) son medidas de fidelidad respecto al modelo original, no de capacidad en tareas downstream. Una KLD baja no garantiza mejor rendimiento en un caso de uso concreto.
+- Las gráficas comparativas son elaboradas por el propio autor del repositorio, con corpus propios (`niki-small-plus-2`) y un corpus independiente (`independent-v2`); conviene leerlas con cautela por posible sesgo de selección.
+- El autor reconoce haber aplicado una corrección de tamaño fijo a las cuantizaciones MTP de unsloth v3.0 para una comparación "sin MTP", lo que introduce una manipulación metodológica que él mismo califica de poco honesta para el usuario final.
+- El tamaño del repositorio (231 GB) implica que la descarga completa es costosa; conviene bajar solo la variante necesaria.
+- Idiomas soportados no declarados: no se puede garantizar calidad en castellano sin evaluación propia.
+- Licencia Apache 2.0 permite uso comercial, pero debe conservarse el aviso de licencia y verificar las condiciones del modelo base Qwen3.8-27B.
+- No se dispone de información sobre latencia, throughput ni requisitos de VRAM por variante, lo que dificulta el dimensionamiento previo en producción.
 
 ## Enlaces
-- Hugging Face (repo de cuantizaciones): https://huggingface.co/NikiKrutan/Qwen3.8-27B-MTP-GGUF
+
+- Repositorio Hugging Face: https://huggingface.co/NikiKrutan/Qwen3.8-27B-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
-- Artículo de dev.to sobre ejecución local: https://dev.to/jamilxt/qwen-38-27b-topped-hacker-news-in-a-day-heres-how-to-run-it-locally-from-spring-boot-cee
-- Repositorio sobre MTP y velocidad: https://github.com/sudoingX/qwen38-mtp
+- Fine-tune recomendado por el autor (Kiwen1.2-27B): https://huggingface.co/NikiKrutan/Kiwen1.2-27B-MTP-GGUF
+- Cuantizaciones unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Cuantizaciones AtomicChat: https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF
+- Cuantizaciones bartowski: https://huggingface.co/bartowski/Qwen3.8-27B-GGUF
+- Cuantizaciones lmstudio-community: https://huggingface.co/lmstudio-community/Qwen3.8-27B-GGUF
+- Cuantizaciones mudler (APEX): https://huggingface.co/mudler/Qwen3.8-27B-APEX-GGUF
+- Cuantizaciones byteshape: https://huggingface.co/byteshape/Qwen3.8-27B-GGUF

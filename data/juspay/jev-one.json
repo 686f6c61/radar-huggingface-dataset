@@ -47,31 +47,5 @@
   "renamed_to": "juspay/xor",
   "renamed_at": "2026-11-11T05:51:37.093Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Smarrito numero di cellulare associato all'account Poste ID",
-      "url": "https://forum.italia.it/t/smarrito-numero-di-cellulare-associato-allaccount-poste-id/24541",
-      "snippet": "Jun 14, 2021 · Qualche anno fa creai il mio account Poste ID, cui associai il mio vecchio numero di cellulare. Ora non mi ricordo la …"
-    },
-    {
-      "title": "Problema di validazione dei dati anagrafici sulle fonti autoritative",
-      "url": "https://forum.italia.it/t/problema-di-validazione-dei-dati-anagrafici-sulle-fonti-autoritative/32913",
-      "snippet": "Feb 17, 2023 · Ciao, ho SPID con Poste.ID attivo ormai da diversi anni, ad inizio settimana è scaduta la mia carta di identità, sto …"
-    },
-    {
-      "title": "Cambiare dispositivo autorizzato con spid di poste italiane",
-      "url": "https://forum.italia.it/t/cambiare-dispositivo-autorizzato-con-spid-di-poste-italiane/10342",
-      "snippet": "Jun 28, 2019 · ciao a tutti, utilizzo un account spid di poste italiane per accedere ai vari enti accreditati. Ho acquistato un nuovo …"
-    },
-    {
-      "title": "Non riconosce le credenziali di Poste ID - SPID - Forum Italia",
-      "url": "https://forum.italia.it/t/non-riconosce-le-credenziali-di-poste-id/19319",
-      "snippet": "Dec 11, 2020 · Fatto, ho disinstallato e reinstallato daccapo l’applicazione ma le credenziali di accesso tramite Spid di Poste-Id non …"
-    },
-    {
-      "title": "Tracciabilità della spedizione carta d'identità - Forum Italia",
-      "url": "https://forum.italia.it/t/tracciabilita-della-spedizione-carta-didentita/16538",
-      "snippet": "Sep 13, 2020 · Buongiorno. Se ha scelto l’invio presso la sua abitazione, può seguire il tracciamento accedendo al sito di Poste …"
-    }
-  ]
+  "sources": []
 }

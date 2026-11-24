@@ -2,88 +2,83 @@
 
 ## Resumen
 
-Codixor/vision-gguf es un repositorio de pesos convertidos para el ecosistema rcumfy, una herramienta desarrollada por el mismo autor que agrupa los motores vision.cpp y stable-diffusion.cpp. No se trata de un modelo de lenguaje generativo al uso, sino de un paquete de artefactos de vision y personalizacion de imagenes: por un lado, el codificador visual CLIP ViT-H/14 (variante LAION-2B de OpenCLIP, en formato GGUF F16) y, por otro, los pesos de PhotoMaker V2 de TencentARC en safetensors, reorganizados para encajar con el layout de stable-diffusion.cpp.
+Codixor/vision-gguf es un repositorio de pesos convertidos para el ecosistema rcumfy y sus motores de inferencia (vision.cpp y stable-diffusion.cpp). No se trata de un modelo de lenguaje generativo, sino de un paquete de dos artefactos: una torre de visión CLIP ViT-H/14 en formato GGUF y los pesos de PhotoMaker v2 en safetensors, ambos reempaquetados para su uso en pipelines de generación de imagen condicionada por identidad facial.
 
-El interes practico del repositorio es la distribucion de pesos ya convertidos sin depender de Python ni PyTorch: la conversion se realizo con la herramienta `vision.cpp/tools/convert-rs`, escrita en Rust. Esto simplifica el despliegue en entornos donde no se quiere arrastrar el stack de PyTorch, y permite alimentar directamente pipelines de generacion de imagen condicionada por rostro (PhotoMaker) junto con el codificador CLIP que esas tuberias necesitan.
+El repositorio lo publica el usuario Codixor y agrupa 632.076.800 parámetros en total según los safetensors, con un tamaño de repositorio de 5,0 GB. La conversión se realizó sin Python ni PyTorch, usando la herramienta `vision.cpp/tools/convert-rs`, un detalle relevante para entornos que buscan cadenas de conversión ligeras y reproducibles.
 
-El dato de parametros reportado por safetensors (632.076.800) corresponde a los tensores del codificador CLIP ViT-H/14, no a un modelo de lenguaje. El repositorio ocupa 3,1 GB e incluye pesos con licencias distintas por fichero (MIT para el CLIP y Apache-2.0 para PhotoMaker V2), de ahi la licencia "other" con nombre "per-file". No hay informacion publicada sobre benchmarks, idiomas ni pipeline asociado.
+Su relevancia actual es acotada pero concreta: sirve como fuente de pesos listos para consumir en flujos de image-to-image con preservación de identidad sobre stable-diffusion.cpp, evitando al desarrollador tener que convertir manualmente CLIP y PhotoMaker v2. La licencia es heterogénea (per-file), con MIT para el GGUF de CLIP y Apache-2.0 para PhotoMaker v2.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Codificador visual CLIP ViT-H/14 (OpenCLIP, LAION-2B) y pesos PhotoMaker V2 para stable-diffusion.cpp |
-| Parametros totales | 632.076.800 (tensores safetensors del CLIP ViT-H/14) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | F16 en el fichero GGUF del CLIP; safetensors sin cuantizar para PhotoMaker V2 |
-| Idiomas soportados | No disponible |
-| Licencia | Other, nombre "per-file": MIT para `CLIP-ViT-H-14-F16.gguf`, Apache-2.0 para `photomaker-v2.safetensors` |
-| Formato de pesos | GGUF (CLIP) y safetensors (PhotoMaker V2) |
+| Arquitectura | CLIP ViT-H/14 (torre de visión) + PhotoMaker v2 (adaptador de identidad) |
+| Parámetros totales | 632.076.800 (según safetensors) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | F16 (archivo `CLIP-ViT-H-14-F16.gguf`); safetensors sin cuantizar para PhotoMaker v2 |
+| Idiomas soportados | no disponible |
+| Licencia | per-file: MIT (CLIP GGUF), Apache-2.0 (PhotoMaker v2) |
+| Formato de pesos | GGUF y safetensors |
 
 ## Arquitectura y entrenamiento
 
-El componente CLIP es un Vision Transformer ViT-H/14 entrenado por OpenCLIP sobre el dataset LAION-2B, empaquetado originalmente en el formato de ComfyUI (`clip_vision_h.safetensors`) y reconvertido a GGUF F16 con el arquetipo `clip` de vision.cpp. El autor indica que la salida coincide con una referencia en NumPy con coseno 1.0000, lo que sugiere una conversion numericamente fiel sin perdida apreciable de precision mas alla del propio F16.
+El componente de visión es un CLIP ViT-H/14 procedente de OpenCLIP, entrenado sobre LAION-2B y reempaquetado desde el formato de ComfyUI (`clip_vision_h.safetensors`). La conversión a GGUF emplea el arquetipo `clip` de vision.cpp y, según la model card, coincide con una referencia en NumPy hasta coseno 1.0000, lo que indica una conversión numéricamente fiel sin pérdida apreciable de precisión.
 
-PhotoMaker V2 es un adaptador de identidad para modelos de difusion desarrollado por TencentARC: en inferencia requiere un embedding de identidad facial adicional, que no forma parte de este repositorio. Los tensores se han copiado byte a byte desde el `.bin` original (leido como datos, nunca ejecutado como pickle) y renombrados al esquema de stable-diffusion.cpp. No hay informacion sobre datos de entrenamiento propios, procesos de RLHF/DPO ni innovaciones de decodificacion, ya que el repositorio solo redistribuye pesos convertidos.
+El segundo componente, PhotoMaker v2, proviene de TencentARC/PhotoMaker-V2 y se distribuye como safetensors con los tensores byte-idénticos al binario original, renombrados al esquema de stable-diffusion.cpp. El proceso de conversión leyó el `.bin` original como datos, sin ejecutarlo (evitando el riesgo de deserialización de pickle). No se documentan datos de entrenamiento propios, ni fases de RLHF/DPO, ni innovaciones de decoding: es un repositorio de conversión y empaquetado, no de entrenamiento.
 
 ## Capacidades
 
-- Extraccion de embeddings visuales mediante CLIP ViT-H/14, util como condicionador en pipelines de difusion (por ejemplo, IP-Adapter o ControlNet basados en CLIP vision).
-- Personalizacion de identidad facial en generacion de imagen con PhotoMaker V2, tomando una o varias fotos de referencia y un embedding de cara en tiempo de inferencia.
-- Conversion y carga sin Python ni PyTorch: los pesos estan pensados para los motores vision.cpp y stable-diffusion.cpp.
-- Compatibilidad con el formato GGUF para el codificador CLIP, lo que facilita su uso en runtimes nativos.
-- No soporta generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes ni modo thinking: no es un modelo de lenguaje.
-- Capacidades multilingues: no disponibles (no aplica a un codificador visual).
+- Extracción de embeddings de imagen mediante la torre CLIP ViT-H/14, utilizable como codificador visual en pipelines de difusión.
+- Condicionamiento por identidad facial mediante PhotoMaker v2, que requiere un face ID embedding adicional en tiempo de inferencia.
+- Integración con stable-diffusion.cpp para generación de imagen guiada por referencia de identidad.
+- Compatibilidad con el ecosistema rcumfy y vision.cpp.
+- Conversión reproducible sin dependencia de Python ni PyTorch.
+- No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso; no es un modelo de lenguaje.
 
 ## Casos de uso
 
-- Generacion de retratos personalizados: usar PhotoMaker V2 junto con un modelo de difusion base para producir imagenes de una persona concreta a partir de una o varias fotos de referencia, manteniendo rasgos faciales consistentes entre generaciones.
-- Integracion en stable-diffusion.cpp: desplegar el pipeline completo en C++ sin dependencias de Python, util en aplicaciones de escritorio o entornos embebidos donde el stack de PyTorch no es viable.
-- Condicionamiento visual en pipelines de difusion: emplear el CLIP ViT-H/14 en GGUF como extractor de caracteristicas para adaptadores de imagen (estilo, composicion o referencia visual).
-- Herramientas de edicion fotografica con identidad: construir funciones de "retrato con mi cara" o avatares consistentes dentro de una app de edicion, cargando los pesos ya convertidos.
-- Prototipado e investigacion en vision por computador: reutilizar el codificador CLIP en experimentos de retrieval o clasificacion zero-shot, con la ventaja de un formato ligero y portable.
-- Validacion de conversiones: servir como referencia para verificar que una conversion GGUF de CLIP reproduce fielmente la salida del original (el autor documenta coincidencia coseno 1.0000 frente a NumPy).
-- Distribucion de pesos en entornos air-gapped: al no requerir Python ni ejecutar pickles, el repositorio simplifica la instalacion en sistemas con restricciones de seguridad.
+- Retratos personalizados con identidad consistente: combinar el CLIP GGUF como codificador y PhotoMaker v2 como adaptador para generar variaciones de un mismo rostro en stable-diffusion.cpp, aprovechando que los pesos ya están en el layout esperado por el motor.
+- Despliegue en entornos sin Python: al haberse convertido con `convert-rs` y distribuirse en GGUF, encaja en contenedores mínimos o sistemas embebidos donde no se quiere arrastrar PyTorch.
+- Reproducción de pipelines ComfyUI en C++: el CLIP ViT-H/14 reempaquetado desde ComfyUI permite replicar el codificador visual de flujos existentes en un runtime nativo.
+- Auditoría de conversiones: el repositorio documenta la equivalencia numérica (coseno 1.0000) y la identidad byte a byte de los tensores, lo que lo hace útil como referencia para validar herramientas de conversión propias.
+- Prototipado de aplicaciones de edición de imagen con preservación de sujeto, usando PhotoMaker v2 sobre un modelo base de difusión compatible con stable-diffusion.cpp.
+- Distribución ligera de pesos para demos locales: el tamaño de 5,0 GB y el formato GGUF facilitan su empaquetado en imágenes de contenedor o artefactos descargables.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La única métrica aportada es la fidelidad de conversión del CLIP GGUF frente a una referencia NumPy (coseno 1.0000), que valida la conversión pero no el rendimiento del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el CLIP ViT-H/14 en F16 ocupa aproximadamente 1,2-1,3 GB (632 M parametros a 2 bytes); el fichero safetensors de PhotoMaker V2 anade el resto hasta los 3,1 GB del repositorio.
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para cargar CLIP y PhotoMaker junto a un modelo de difusion base; se recomienda una RTX 3060/4060 o superior para pipelines completos de generacion de imagen.
-- Cabe en GPU de consumo: si, el codificador CLIP por si solo cabe en GPUs de gama media e incluso en iGPU con suficiente memoria compartida; el pipeline completo depende del modelo de difusion que se anade.
-- Opciones de despliegue: vision.cpp, stable-diffusion.cpp y la herramienta rcumfy del autor; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de pesos).
+- VRAM estimada: no disponible de forma oficial; el repositorio ocupa 5,0 GB, por lo que el CLIP en F16 y PhotoMaker v2 en safetensors requieren al menos ese orden de magnitud, más la VRAM del modelo base de difusión con el que se combinen.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; depende del modelo de difusión acompañante y del backend de stable-diffusion.cpp.
+- Opciones de despliegue: vision.cpp y stable-diffusion.cpp (motores del ecosistema rcumfy); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que además no aplican a este tipo de pesos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Uso |
-|---|---|---|---|---|
-| Codixor/vision-gguf (CLIP ViT-H/14) | 632 M | GGUF F16 | MIT (fichero CLIP) | Codificador visual para difusion |
-| OpenCLIP ViT-H/14 LAION-2B (original) | 632 M | safetensors | MIT | Codificador visual, requiere PyTorch |
-| ComfyUI `clip_vision_h.safetensors` | 632 M | safetensors | MIT | Codificador visual en ComfyUI |
-| TencentARC/PhotoMaker-V2 | No disponible | `.bin` (pickle) | Apache-2.0 | Personalizacion de identidad facial |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Codixor/vision-gguf | 632.076.800 | no aplica | GGUF + safetensors | per-file (MIT / Apache-2.0) | Hugging Face, 364 descargas |
+| TencentARC/PhotoMaker-V2 (original) | no disponible | no aplica | bin / safetensors | Apache-2.0 | Hugging Face |
+| OpenCLIP ViT-H/14 LAION-2B (original) | no disponible | no aplica | safetensors | MIT | Hugging Face |
 
-La diferencia principal frente a los originales no esta en el modelo sino en el empaquetado: formato GGUF, conversion en Rust y ausencia de dependencia de Python/PyTorch. El rendimiento deberia ser equivalente al original al ser una conversion fiel, aunque no hay benchmarks publicados que lo confirmen.
+La comparativa se limita a los artefactos de origen, ya que no se dispone de datos de rendimiento ni de alternativas equivalentes empaquetadas para stable-diffusion.cpp en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling ni agentes; cualquier evaluacion debe hacerse en el contexto de vision o generacion de imagen.
-- PhotoMaker V2 requiere un embedding de identidad facial en tiempo de inferencia que no se incluye en el repositorio; sin ese componente el adaptador no es funcional por si solo.
-- Licencias mixtas por fichero: el CLIP es MIT, pero PhotoMaker V2 es Apache-2.0 y su uso comercial queda sujeto a las condiciones de TencentARC y del modelo de difusion base que se combine.
-- Riesgo de sesgos y alucinacion visual: al derivar de LAION-2B, el codificador CLIP hereda los sesgos del dataset web; PhotoMaker puede reproducir o exagerar rasgos de identidad y no garantiza fidelidad absoluta al rostro de referencia.
-- El repositorio tiene 0 descargas y 0 likes, sin pipeline declarado ni idiomas documentados; la validacion externa es practicamente inexistente.
-- La fecha de creacion indicada (2026-11-12) es futura respecto a la mayoria de referencias, lo que conviene verificar antes de integrarlo en produccion.
-- La conversion se realizo con herramientas del propio autor (`vision.cpp/tools/convert-rs`); no hay verificacion independiente mas alla de la referencia NumPy mencionada en la model card.
-- No hay informacion sobre contexto, cuantizaciones alternativas (Q4, Q8) ni soporte en otros runtimes, lo que limita la planificacion de despliegues a gran escala.
+- No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling; cualquier uso en ese sentido es un error de categoría.
+- PhotoMaker v2 exige un face ID embedding en inferencia; sin él, el condicionamiento por identidad no funciona.
+- La licencia es per-file y heterogénea; para uso comercial debe verificarse cada archivo por separado (MIT para CLIP, Apache-2.0 para PhotoMaker v2) y las condiciones del modelo base de difusión empleado.
+- El repositorio tiene 0 likes y 364 descargas, con actividad muy reciente (creado y actualizado en noviembre de 2026); no hay evidencia de uso en producción ni validación externa.
+- Riesgo de sesgos y alucinaciones visuales inherente a los modelos de difusión y a CLIP entrenado sobre LAION-2B; no se documentan evaluaciones al respecto.
+- No se especifican idiomas soportados ni limitaciones de contexto, ya que no aplican a esta arquitectura.
+- Dependencia del ecosistema rcumfy y de herramientas propias del autor; la interoperabilidad con otros runtimes no está garantizada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Codixor/vision-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Codixor/vision-gguf
 - Repositorio rcumfy: https://github.com/codixor/rcumfy
-- PhotoMaker V2 (TencentARC): https://huggingface.co/TencentARC/PhotoMaker-V2
-- OpenCLIP (referencia del codificador ViT-H/14 LAION-2B): no disponible en la informacion proporcionada
-- vision.cpp y stable-diffusion.cpp: no disponibles como enlaces directos en la informacion proporcionada
+- PhotoMaker v2 original: https://huggingface.co/TencentARC/PhotoMaker-V2

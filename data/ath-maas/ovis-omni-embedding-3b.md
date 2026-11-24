@@ -2,118 +2,101 @@
 
 ## Resumen
 
-Ovis-Omni-Embedding-3B es un modelo de embeddings universal de 3.000 millones de parámetros desarrollado por ATH-MaaS, diseñado para mapear texto, imágenes, documentos visuales, vídeo, audio y entradas multimodales intercaladas a un único espacio de representación coherente. A diferencia de aproximaciones que añaden torres específicas por modalidad, el modelo se inicializa desde Qwen2.5-Omni-3B y conserva su tokenizador de texto, codificador de visión, codificador de audio y backbone Thinker compartido; únicamente se eliminan el módulo Talker de generación de voz y la cabeza de modelado de lenguaje. El embedding de recuperación se obtiene directamente del estado oculto de la última capa en el último token no de relleno.
+Ovis-Omni-Embedding-3B es un modelo de embeddings universal de 3.000 millones de parametros desarrollado por ATH-MaaS, disenado para mapear texto, imagenes, documentos visuales, video, audio y entradas multimodales intercaladas a un unico espacio de representacion coherente. Esto permite recuperacion any-to-any (cualquier modalidad contra cualquier modalidad) con un solo codificador, en lugar de mantener torres de embedding separadas por modalidad. El modelo se inicializa a partir de Qwen2.5-Omni-3B y conserva su tokenizador de texto nativo, el codificador visual, el codificador de audio y el backbone Thinker compartido, eliminando el Talker de generacion de voz y la cabeza de modelado de lenguaje.
 
-El modelo es un bi-encoder (no un cross-encoder): consultas y candidatos se codifican de forma independiente y se ordenan por similitud coseno tras normalización L2, sin generación de respuestas ni atención cruzada entre consulta y candidato. Está pensado para búsqueda multimodal, generación aumentada por recuperación (RAG), recomendación, recuperación de documentos visuales, búsqueda de vídeo y audio y recuperación agéntica sobre herramientas, interfaces y memoria.
+La relevancia del modelo reside en su caracter bi-encoder omni-modal: codifica consultas y candidatos de forma independiente y usa la similitud coseno entre vectores L2-normalizados para el ranking, lo que lo hace adecuado para busqueda multimodal, RAG, recomendacion y recuperacion agentica sobre herramientas, interfaces y memoria. Segun la model card, alcanza 58,46 de media en el benchmark MMEB-v3 (190 datasets), superando al mejor baseline comparado por 5,19 puntos y liderando el agregado de cada grupo de modalidad.
 
-Su relevancia actual radica en que unifica seis grupos de tareas de recuperación (imagen, vídeo, documento visual, texto, audio y agente) en un solo encoder, con resultados que lideran el benchmark omni-modal MMEB-v3 (190 conjuntos de datos) con una puntuación global de 58,46, superando al mejor baseline comparado por 5,19 puntos. La licencia Apache 2.0 facilita su adopción comercial.
+La licencia es Apache 2.0 y los pesos se distribuyen en formato safetensors con la libreria transformers. El repositorio ocupa 11,2 GB y acumula 340 descargas y 64 likes en el momento de la consulta. El modelo se publico el 20 de septiembre de 2026 y se actualizo el 10 de octubre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (backbone Thinker de Qwen2.5-Omni) con TMRoPE, codificador de vision y codificador de audio nativos |
-| Parametros totales | ~3B |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | Transformer causal multimodal (Qwen2.5-Omni Thinker) con TMRoPE; bi-encoder para retrieval |
+| Parametros totales | 3B (aproximado, segun nombre del modelo) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en safetensors) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Pipeline | feature-extraction |
-| Tamano del repositorio | 11,1 GB |
-| Fecha de creacion | 2026-09-20 |
-| Ultima actualizacion | 2026-09-24 |
-| Descargas / likes | 48 / 26 |
 
 ## Arquitectura y entrenamiento
 
-Ovis-Omni-Embedding-3B parte de Qwen2.5-Omni-3B y reutiliza su pila nativa completa: tokenizador de texto, codificador de visión, codificador de audio y el backbone Thinker compartido que procesa texto, tokens visuales y tokens acústicos como una única secuencia intercalada. El modelo incorpora el time-aligned multimodal rotary position embedding (TMRoPE) de Qwen2.5-Omni, que preserva la alineación temporal entre audio y vídeo. La cabeza de generación de lenguaje y el módulo Talker se eliminan, y la representación de recuperación es simplemente el estado oculto de la última capa en el último token no de relleno, sin cabezas de proyección específicas por modalidad. La recuperación se realiza como bi-encoder: se formatea la consulta con una instrucción de tarea mediante el procesador y la plantilla de chat nativos, se codifican consulta y candidato por separado, se extrae el estado oculto final, se normaliza L2 y se ordena por similitud coseno.
+El modelo parte de Qwen2.5-Omni-3B y conserva su tokenizador de texto nativo, el codificador visual, el codificador de audio y el backbone Thinker compartido. Se eliminan el Talker de generacion de voz y la cabeza de modelado de lenguaje. La entrada se formatea con una instruccion de retrieval mediante el procesador y la plantilla de chat nativos; los tokens de texto, visuales y acusticos se procesan como una unica secuencia intercalada por el Transformer causal compartido. El embedding de retrieval es directamente el estado oculto de la ultima capa en el ultimo token no de padding, sin cabezas de proyeccion especificas por modalidad. El TMRoPE (time-aligned multimodal rotary position embedding) de Qwen2.5-Omni preserva la alineacion temporal entre audio y video.
 
-El entrenamiento consta de tres etapas. La primera es un preentrenamiento contrastivo omni-modal con candidatos mezclados globalmente y negativos in-batch entre dispositivos, combinando aprendizaje contrastivo focal sensible a la dificultad con destilación de distribuciones de similitud a partir de expertos complementarios por modalidad. La segunda es un ajuste fino homogéneo a parámetros completos con datos de alta calidad: cada micro-lote procede de un único conjunto de datos y se deduplica candidatos para evitar colisiones positivas y falsos negativos in-batch. La tercera es una destilación de embeddings con annealing, que conserva los ejemplos resueltos por el profesor, sobremuestrea los ejemplos no resueltos por el estudiante y aplica supervisión forward-KL adaptativa a la confianza. Además, se describe un módulo de descomposición de bajo rango en tiempo de inferencia que combina una base PCA compartida con adaptadores residuales ligeros para producir embeddings compactos.
+El entrenamiento se organiza en tres etapas. La primera es un preentrenamiento contrastivo omni-modal con candidatos mezclados globalmente y negativos in-batch entre dispositivos, combinando aprendizaje contrastivo focal consciente de la dificultad con destilacion de distribuciones de similitud desde expertos de modalidad complementarios. La segunda es un ajuste fino homogeneo de parametros completos con datos de alta calidad, donde cada micro-batch proviene de un unico dataset y la deduplicacion de candidatos evita colisiones de positivos y falsos negativos in-batch. La tercera es una destilacion de embeddings con annealing que retiene ejemplos corregidos por el profesor, sobremuestrea ejemplos no resueltos del estudiante y aplica supervision forward-KL adaptativa a la confianza. Ademas, en inferencia se emplea un modulo de descomposicion de bajo rango que combina una base PCA compartida con adaptadores residuales ligeros para embeddings compactos, sin anadir torres en tiempo de inferencia.
 
 ## Capacidades
 
-- Generacion de embeddings multimodales en un unico espacio para texto, imagenes, documentos visuales, video, audio y entradas intercaladas.
-- Recuperacion any-to-any: cualquier modalidad soportada puede recuperar cualquier otra dentro del mismo espacio de representacion.
-- Recuperacion de texto a texto y clasificacion tratando etiquetas, pasajes y candidatos como elementos del mismo espacio.
-- Busqueda de imagen, video y audio mediante similitud coseno sobre embeddings normalizados.
-- Recuperacion de documentos visuales (paginas escaneadas, documentos con layout).
-- Recuperacion agentica sobre herramientas, interfaces y memoria (grupo "Agent" de MMEB-v3).
-- Base para sistemas RAG multimodales.
-- No realiza generacion de respuestas ni cross-attention consulta-candidato: es puramente un encoder de recuperacion.
-- Soporte de tool calling / function calling: no disponible (el modelo no genera texto).
-- Modo thinking, vision o audio generativo: no disponible (son capacidades eliminadas respecto al modelo base).
+- Generacion de embeddings de retrieval para texto, imagenes, documentos visuales, video, audio y entradas multimodales intercaladas en un unico espacio.
+- Recuperacion any-to-any: consulta en una modalidad contra candidatos en cualquier otra modalidad.
+- Recuperacion de documentos visuales (paginas, capturas, PDFs renderizados).
+- Busqueda de video y busqueda de audio.
+- Recuperacion agentica sobre herramientas, interfaces y memoria.
+- Uso como bi-encoder: codificacion independiente de consultas y candidatos, sin atencion cruzada query-candidato ni generacion de respuestas.
+- Soporte de instrucciones de retrieval mediante la plantilla de chat nativa.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Tool calling / function calling: no disponible como capacidad generativa (el modelo no genera texto).
 
 ## Casos de uso
 
-- Busqueda multimodal empresarial: indexar un corpus mixto de texto, imagenes, PDFs escaneados y video, y recuperar items relevantes desde una consulta en cualquier modalidad, gracias al espacio de embeddings unico.
-- RAG multimodal: usar el modelo como recuperador en pipelines de generacion aumentada, codificando consultas y candidatos de forma independiente para alimentar un LLM generativo posterior.
-- Recomendacion de contenido: representar usuarios, items y contexto (imagen, video, audio) en el mismo espacio para sistemas de recomendacion basados en similitud.
-- Recuperacion de documentos visuales: localizar paginas o figuras concretas en repositorios de documentos escaneados (el grupo "Visual document" obtiene 78,26 en MMEB-v3).
-- Busqueda de video y audio: recuperar clips por contenido semantico o por consulta textual, apoyandose en TMRoPE para la alineacion temporal audio-video.
-- Recuperacion agentica: dotar a agentes de una capa de memoria y recuperacion de herramientas o interfaces (grupo "Agent", 45,52 en MMEB-v3).
-- Deduplicacion y clustering multimodal: agrupar elementos similares de distintas modalidades mediante similitud coseno.
-- Moderacion y clasificacion: tratar etiquetas como candidatos y asignar la mas similar a cada entrada.
+- Busqueda multimodal empresarial: indexar un corpus heterogeneo (texto, imagenes, PDFs, video, audio) y permitir consultas en cualquier modalidad contra cualquier candidato, gracias al espacio de embedding unico y al enfoque bi-encoder.
+- RAG multimodal: recuperar pasajes, figuras, clips de video o fragmentos de audio relevantes para aumentar la generacion de un LLM, usando la similitud coseno sobre embeddings L2-normalizados.
+- Recuperacion de documentos visuales: localizar paginas o capturas relevantes en repositorios de documentos escaneados o renderizados, aprovechando el codificador visual y la puntuacion de 78,26 en el grupo de documentos visuales de MMEB-v3.
+- Busqueda de video y audio: localizar clips por contenido visual o acustico, con alineacion temporal preservada por TMRoPE.
+- Sistemas de recomendacion: representar items de distinta naturaleza (imagenes de producto, descripciones textuales, videos) en un mismo espacio para calcular similitud usuario-item.
+- Recuperacion agentica: dotar a agentes de memoria y acceso a herramientas e interfaces mediante embeddings, con la ventaja de un unico codificador para todas las modalidades.
+- Moderacion o deduplicacion de contenido multimodal: comparar items entre modalidades para detectar duplicados o contenido similar.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en MMEB-v3 (190 conjuntos de datos; grupos agregados por modalidad). La model card indica que el modelo alcanza 58,46 global, supera al mejor baseline comparado por 5,19 puntos y lidera la puntuacion agregada de todos los grupos de modalidad:
+Resultados en MMEB-v3 (190 datasets) segun la model card:
 
 | Grupo | Ovis-Omni-Embedding-3B | Mejor baseline comparado | Margen |
 |---|---:|---:|---:|
-| Image | 77,55 | 73,83 | +3,72 |
+| Imagen | 77,55 | 73,83 | +3,72 |
 | Video | 64,99 | 59,37 | +5,62 |
-| Visual document | 78,26 | 75,37 | +2,89 |
-| Text | 47,15 | 43,62 | +3,53 |
+| Documento visual | 78,26 | 75,37 | +2,89 |
+| Texto | 47,15 | 43,62 | +3,53 |
 | Audio | 50,08 | 43,17 | +6,91 |
-| Agent | 45,52 | 39,42 | +6,10 |
-| **Todos los 190 conjuntos** | **58,46** | 53,27 | +5,19 |
+| Agente | 45,52 | 39,42 | +6,10 |
+| Todos los 190 datasets | 58,46 | 53,27 | +5,19 |
 
-Nota: el extracto de la model card termina en la frase "Across the 31 aggregate and sub-task e...", por lo que no se dispone del detalle de las 31 tareas agregadas y subtareas. No se han publicado en la informacion disponible resultados de otros benchmarks como MMLU, HumanEval o GSM8K (el modelo es de embeddings, no generativo).
+La model card indica que el modelo lidera el agregado de cada grupo de modalidad y que supera al mejor baseline por 5,19 puntos en la media global. No se proporcionan resultados de MMLU, HumanEval ni GSM8K, que no aplican a un modelo de embeddings.
 
 ## Requisitos de hardware
 
-Estimaciones basadas en el tamano de ~3B parametros y en el tamano del repositorio (11,1 GB). No son datos confirmados por el autor y deben tomarse como orientativos:
-
-- VRAM estimada en BF16/FP16: aproximadamente 8-12 GB, sumando pesos del backbone y de los codificadores de vision y audio mas activaciones.
-- VRAM estimada en cuantizacion de 8 bits: aproximadamente 4-6 GB.
-- VRAM estimada en cuantizacion de 4 bits: aproximadamente 3-4 GB (los formatos de cuantizacion concretos no estan confirmados en la informacion disponible).
-- GPU de centro de datos: A100, H100, L40S para inferencia de alto throughput o indexacion a gran escala.
-- GPU de consumo: cabe previsiblemente en tarjetas con 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) en cuantizacion reducida; en BF16 conviene disponer de 16 GB o mas.
-- Opciones de despliegue: transformers de forma nativa (biblioteca declarada); el tag "endpoints_compatible" sugiere compatibilidad con Inference Endpoints. Otras opciones (vLLM, TGI, llama.cpp, Ollama) no estan confirmadas en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita; el repositorio de pesos ocupa 11,2 GB, lo que sugiere que en precision completa (fp16/bf16) se necesita del orden de 6-8 GB para los 3B parametros, mas memoria para codificadores visual y de audio y para el procesamiento de entradas multimodales.
+- GPU recomendadas: no disponibles en la informacion proporcionada; por tamano, cabria esperar GPUs de 16 GB o superiores, pero no se confirma.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible.
+- Opciones de despliegue: transformers (libreria declarada); otras opciones como vLLM, llama.cpp, Ollama o TGI no estan confirmadas para este modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no identifica por nombre los modelos baseline comparados en MMEB-v3, por lo que no es posible construir una comparativa nominal fiable. Datos disponibles:
+| Modelo | Parametros | Contexto | Rendimiento (MMEB-v3) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Ovis-Omni-Embedding-3B | 3B | no disponible | 58,46 | Apache 2.0 | Hugging Face |
+| Baseline mas fuerte comparado (sin identificar en la model card) | no disponible | no disponible | 53,27 | no disponible | no disponible |
+| Ovis-Embedding-VL-2B | 2B | no disponible | no disponible | no disponible | mencionado en la figura de arquitectura |
+| Ovis-Embedding-VL-9B | 9B | no disponible | no disponible | no disponible | mencionado en la figura de arquitectura |
 
-| Aspecto | Ovis-Omni-Embedding-3B | Baselines de MMEB-v3 |
-|---|---|---|
-| Parametros | ~3B | no disponible |
-| Contexto | no disponible | no disponible |
-| MMEB-v3 global | 58,46 | 53,27 (mejor baseline) |
-| Modalidades | Texto, imagen, video, audio, documento visual, agente | no disponible |
-| Licencia | apache-2.0 | no disponible |
-| Disponibilidad | Hugging Face (ATH-MaaS) | no disponible |
-
-Comparativa nominal con alternativas concretas: no disponible.
+La model card no identifica por nombre los modelos comparados en MMEB-v3; solo reporta el mejor baseline agregado. Los modelos Ovis-Embedding-VL-2B y 9B aparecen en las figuras del informe tecnico como parte de la misma familia, pero sin datos de rendimiento en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible en la informacion proporcionada; al derivar de Qwen2.5-Omni-3B hereda los sesgos de su corpus de entrenamiento, no documentados aqui.
-- Riesgo de alucinacion: bajo en el sentido generativo, ya que el modelo no genera texto; el riesgo se traslada a falsos positivos en la ordenacion por similitud.
-- El modelo es un bi-encoder sin cross-attention consulta-candidato, por lo que no puede aprovechar interacciones finas entre consulta y candidato que si explotaria un cross-encoder.
-- Limitaciones de contexto e idioma: no disponibles; no se especifican idiomas soportados ni longitud de contexto.
-- El modelo no genera respuestas; para RAG requiere emparejarlo con un LLM generativo.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones heredadas del modelo base Qwen2.5-Omni-3B del que se inicializa.
-- La extraccion de embeddings depende de usar correctamente la plantilla de chat y el procesador nativos; un formateo incorrecto de la instruccion de recuperacion puede degradar la calidad.
-- No se documentan en la informacion disponible los formatos de cuantizacion, el rendimiento en produccion ni los requisitos exactos de hardware.
+- Es un bi-encoder de retrieval: no genera respuestas ni realiza atencion cruzada entre consulta y candidato, por lo que no sirve para tareas generativas.
+- Riesgo de alucinacion no aplica directamente al no generar texto, pero la calidad del ranking depende de la calidad de los embeddings y del corpus indexado.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Idiomas soportados: no disponibles; no se confirma cobertura multilingue.
+- Longitud de contexto: no disponible, lo que limita la planificacion de documentos o videos largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los componentes heredados de Qwen2.5-Omni-3B.
+- El rendimiento en el grupo de texto (47,15) es notablemente inferior al de imagen y documento visual, lo que puede limitar casos de uso centrados exclusivamente en texto.
+- No se documentan requisitos de hardware ni latencias, lo que dificulta la planificacion de produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
 - Repositorio GitHub: https://github.com/ATH-MaaS/Ovis-Omni-Embedding
-- Informe tecnico (arXiv): https://arxiv.org/html/2609.25165v1
-- PDF del informe tecnico: https://arxiv.org/pdf/2609.25165
-- Modelo base: Qwen2.5-Omni-3B (referenciado en la model card; enlace directo no proporcionado)
+- Informe tecnico (arXiv): https://arxiv.org/pdf/2609.25165

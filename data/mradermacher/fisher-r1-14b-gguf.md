@@ -2,77 +2,95 @@
 
 ## Resumen
 
-Fisher-R1-14B-GGUF es una versión cuantizada en formato GGUF del modelo Fisher-R1-14B, desarrollado por el usuario May2222 y cuantizado por mradermacher. El modelo base está orientado a tareas de estadística, pruebas de hipótesis y uso de herramientas (tool-use), según las etiquetas del repositorio. Esta ficha cubre únicamente la variante GGUF, que facilita la ejecución local en CPU y GPU con herramientas como llama.cpp u Ollama.
+Fisher-R1-14B-GGUF es la distribucion en formato GGUF del modelo Fisher-R1-14B, un modelo de lenguaje de 14.770.033.664 parametros (aproximadamente 14,8 mil millones) desarrollado por el usuario May2222 y cuantizado por mradermacher. El modelo esta especializado en estadistica, contraste de hipotesis y uso de herramientas (tool use), y se distribuye bajo licencia Apache 2.0. Esta orientado exclusivamente al idioma ingles.
 
-El modelo tiene aproximadamente 14 770 millones de parámetros y se distribuye bajo licencia Apache 2.0. La documentación oficial del modelo base es muy escasa: no se publican detalles sobre arquitectura interna, proceso de entrenamiento, dataset utilizado (más allá de la mención a May2222/P-Bench) ni resultados de benchmarks. Por tanto, muchas especificaciones técnicas quedan sin confirmar.
+La relevancia de esta publicacion reside en que facilita el despliegue local del modelo original mediante el formato GGUF, compatible con llama.cpp, Ollama y otras herramientas de inferencia en CPU y GPU de consumo. El repositorio ofrece once variantes de cuantizacion estatica, desde Q2_K (5,9 GB) hasta Q8_0 (15,8 GB), lo que permite ajustar el modelo a distintos presupuestos de memoria.
 
-A pesar de la falta de información, la existencia de cuantizaciones GGUF (desde Q2_K hasta Q8_0) permite su uso en entornos con recursos limitados, aunque se recomienda consultar la documentación del modelo original antes de adoptarlo en producción.
+No se dispone de informacion publica sobre la arquitectura interna, la longitud de contexto ni el proceso de entrenamiento del modelo base en la informacion proporcionada. La model card del repositorio se limita a describir el proceso de cuantizacion y las variantes disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 14 770 033 664 (14,77 B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Parametros totales | 14.770.033.664 (aprox. 14,8 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
-| Idiomas soportados | ingles (segun metadatos) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas; no hay quants con imatrix) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (modelo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo Fisher-R1-14B. El repositorio del modelo base (May2222/Fisher-R1-14B) no incluye una model card detallada ni documentacion tecnica. Se sabe que el modelo fue entrenado sobre el dataset May2222/P-Bench, pero se desconocen el numero de tokens, la composicion exacta del dataset y si se aplicaron tecnicas como RLHF o DPO. La unica referencia fiable es que el modelo base utiliza la libreria transformers de Hugging Face.
+No se dispone de informacion sobre la arquitectura del modelo base Fisher-R1-14B en la documentacion proporcionada. El nombre "R1" sugiere una posible inspiracion en la familia DeepSeek-R1, pero este dato no esta confirmado en la informacion disponible. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o aprendizaje por refuerzo.
 
-La version GGUF aqui descrita es una cuantizacion estatica realizada por mradermacher, que convierte los pesos originales a distintos niveles de precision para reducir el tamano y permitir su ejecucion en hardware variado. No se ha aplicado imatrix ni cuantizacion ponderada, segun el autor.
+La unica informacion sobre datos de entrenamiento es la referencia al dataset May2222/P-Bench, que aparece en las etiquetas del repositorio y probablemente se utilizo para evaluar o afinar el modelo en tareas de contraste de hipotesis estadistico. El proceso de cuantizacion aplicado por mradermacher es de tipo estatico (quantize_version 2, output_tensor_quantised 1, convert_type hf), sin cuantizacion ponderada por imatrix, que el autor indica que no esta disponible en el momento de la publicacion.
 
 ## Capacidades
 
-- Segun las etiquetas del modelo, esta especializado en estadistica y pruebas de hipotesis, aunque no se aportan ejemplos concretos de tareas.
-- Soporta tool-use (uso de herramientas), lo que sugiere capacidad para interactuar con APIs o funciones externas, aunque no se documenta ningun protocolo especifico.
-- El idioma principal es ingles; no hay indicios de soporte multilingue.
-- No se mencionan capacidades de vision, audio o modo de razonamiento explicito.
+- Generacion de texto conversacional en ingles.
+- Razonamiento estadistico y contraste de hipotesis, segun las etiquetas del modelo.
+- Uso de herramientas (tool use / function calling), indicado en las etiquetas del repositorio.
+- Compatibilidad con endpoints de inferencia (etiqueta endpoints_compatible).
+- Capacidad conversacional multi-turno (etiqueta conversational).
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades de vision, audio o modo thinking explicito: no disponibles.
 
 ## Casos de uso
 
-Dado que no se ha publicado documentacion sobre casos de uso concretos, las siguientes aplicaciones son inferencias razonables basadas en las etiquetas del modelo, pero no estan validadas por el autor:
-
-- Analisis estadistico asistido: podria emplearse para generar explicaciones de conceptos de estadistica, interpretar resultados de pruebas de hipotesis o redactar informes tecnicos.
-- Automatizacion de procesos de decision basados en datos: su posible soporte de tool-use permitiria conectarlo a librerias de calculo estadistico (por ejemplo, scipy o R) mediante llamadas a funciones.
-- Generacion de codigo para analisis de datos: podria ayudar a escribir scripts de Python o R para realizar contrastes de hipotesis, aunque no hay evidencia de su rendimiento en esta tarea.
-- Educacion y formacion: como asistente para estudiantes de estadistica que necesiten explicaciones paso a paso de procedimientos de inferencia.
-- Integracion en pipelines de ciencia de datos: si el modelo maneja tool-use de forma fiable, podria actuar como agente que consulta bases de datos o ejecuta pruebas estadisticas bajo demanda.
-- Prototipado rapido en entornos locales: gracias a las cuantizaciones GGUF, puede probarse en equipos con recursos modestos antes de decidir una adopcion mas amplia.
+- Analisis estadistico asistido: el modelo puede interpretar resultados de tests de hipotesis, explicar p-valores, tamanos del efecto e intervalos de confianza en un contexto conversacional, aprovechando su especializacion declarada en estadistica.
+- Automatizacion de informes de experimentos: integrado en pipelines de analisis, puede redactar resumenes interpretativos de resultados estadisticos generados por herramientas externas mediante tool calling.
+- Asistente de investigacion en ciencias de datos: uso como copiloto para formular hipotesis nulas y alternativas, seleccionar pruebas adecuadas (t-test, chi-cuadrado, ANOVA) y justificar la eleccion.
+- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones Q4_K_S (8,7 GB) y Q4_K_M (9,1 GB), puede ejecutarse en GPUs de consumo con 12 GB o mas de VRAM mediante llama.cpp u Ollama.
+- Prototipado de agentes con herramientas estadisticas: el soporte de tool use permite conectarlo a librerias como SciPy o statsmodels para ejecutar calculos reales y razonar sobre los resultados.
+- Educacion y tutoria en estadistica: generacion de explicaciones paso a paso sobre conceptos de inferencia estadistica en ingles, con la ventaja de ejecucion privada y sin coste por token.
+- Evaluacion de pipelines de cuantizacion: las once variantes permiten comparar la degradacion de calidad en tareas estadisticas segun el nivel de cuantizacion, util para decidir el equilibrio entre tamano y precision.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo. Tampoco se ofrecen comparaciones con modelos similares en el repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni metricas especificas sobre el dataset P-Bench, y la model card se limita a listar las cuantizaciones y su tamano en disco.
 
 ## Requisitos de hardware
 
-- Los tamaños de los archivos GGUF oscilan entre 5,9 GB (Q2_K) y 15,8 GB (Q8_0). Para cargar el modelo en memoria se necesita al menos esa cantidad de VRAM o RAM, mas overhead del runtime.
-- Con cuantizaciones Q4_K_M (9,1 GB) o Q5_K_M (10,6 GB) es factible ejecutarlo en GPUs de consumo con 12 GB o 16 GB de VRAM, como una RTX 3060 12GB o RTX 4070 Ti 16GB.
-- Las versiones Q6_K (12,2 GB) y Q8_0 (15,8 GB) requieren GPUs con 16 GB o mas, como una RTX 4080, RTX 4090 o una A100.
-- En CPU pura, se puede ejecutar con llama.cpp, aunque la latencia sera alta para modelos de 14B. Se recomienda al menos 32 GB de RAM para cuantizaciones grandes.
-- Herramientas de despliegue compatibles: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime que soporte GGUF.
-- No se dispone de mediciones de latencia o throughput especificas para este modelo.
+- VRAM estimada para inferencia, segun cuantizacion: Q2_K ~5,9 GB; Q3_K_S ~6,8 GB; Q3_K_M ~7,4 GB; Q3_K_L ~8,0 GB; IQ4_XS ~8,3 GB; Q4_K_S ~8,7 GB; Q4_K_M ~9,1 GB; Q5_K_S ~10,4 GB; Q5_K_M ~10,6 GB; Q6_K ~12,2 GB; Q8_0 ~15,8 GB. A estos valores hay que anadir el espacio para el contexto KV cache, que depende de la longitud de contexto configurada.
+- GPUs recomendadas: RTX 4090 (24 GB) para Q4 a Q8 con contexto amplio; RTX 4080 / 4070 Ti Super (16 GB) para Q4_K_M o Q5_K_M; RTX 4060 Ti (16 GB) para Q4_K_M; GPUs de 8 GB solo admiten Q2_K o Q3_K_S con contexto reducido. Para despliegues en servidor, A100 o H100 permiten Q8_0 con contexto largo y mayor throughput.
+- Cabe en GPU de consumo: si, en modelos con 12 GB o mas de VRAM para cuantizaciones Q4 y superiores; en 8 GB solo con cuantizaciones Q2/Q3.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. El modelo base tambien puede servirse con vLLM o TGI en formato safetensors, aunque esta distribucion es especificamente GGUF.
+- Latencia y throughput: no disponibles. Dependen del hardware, de la cuantizacion y del backend; no se han publicado mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa fiable. El modelo Fisher-R1-14B no tiene documentacion publica que permita contrastar su rendimiento con alternativas como Llama-3.1-8B, Qwen2.5-14B o Mistral-7B. La unica referencia es su tamano (14,7B) y su licencia Apache 2.0, que es permisiva para uso comercial. Se recomienda buscar el modelo base en Hugging Face para obtener mas detalles antes de cualquier comparacion.
+No se dispone de datos de rendimiento del modelo que permitan una comparativa cuantitativa fiable. A continuacion se comparan caracteristicas objetivas con alternativas de tamano similar del ecosistema abierto, sin afirmar superioridad en calidad:
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Especializacion |
+|---|---|---|---|---|---|
+| Fisher-R1-14B (este) | ~14,8 B | no disponible | Apache 2.0 | GGUF, safetensors | Estadistica, tool use, ingles |
+| Qwen2.5-14B-Instruct | ~14,7 B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors, GGUF | Proposito general, multilingue |
+| Mistral-Nemo-12B-Instruct | ~12 B | 128.000 tokens | Apache 2.0 | safetensors, GGUF | Proposito general, multilingue |
+| Phi-4-14B | ~14,7 B | 16.000 tokens | MIT | safetensors, GGUF | Razonamiento, matematicas |
+
+La comparativa de rendimiento real no esta disponible porque Fisher-R1-14B no publica resultados de benchmarks en la informacion accesible.
 
 ## Limitaciones y advertencias
 
-- No existe documentacion tecnica sobre sesgos, alucinaciones o limitaciones de contexto. Al ser un modelo especializado en estadistica, podria generar respuestas incorrectas si se le piden calculos complejos sin verificacion externa.
-- La cuantizacion puede degradar la precision numerica, especialmente en tareas de razonamiento estadistico donde los calculos exactos son criticos. Se recomienda usar cuantizaciones altas (Q6_K o Q8_0) si se requiere maxima fidelidad.
-- El modelo solo soporta ingles; no es adecuado para tareas en otros idiomas.
-- La licencia Apache 2.0 permite uso comercial, pero al no conocerse el origen de los datos de entrenamiento (dataset May2222/P-Bench), no se puede garantizar que no existan problemas de derechos de autor o privacidad.
-- El repositorio GGUF no incluye instrucciones de uso especificas mas alla de las genericas para archivos GGUF. Se aconseja probar el modelo en un entorno controlado antes de integrarlo en produccion.
+- Idioma: el modelo esta declarado solo para ingles; su rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Alucinacion: no hay datos publicados sobre tasas de alucinacion ni evaluaciones de fidelidad en tareas estadisticas, un dominio donde los errores numericos o conceptuales son especialmente costosos.
+- Contexto: se desconoce la longitud maxima de contexto del modelo base, lo que impide planificar despliegues con documentos largos.
+- Cuantizacion: las variantes Q2_K y Q3_K_M degradan la calidad de forma notable segun las notas del propio autor; para uso en produccion se recomienda Q4_K_M o superior.
+- Sin quants con imatrix: el autor indica que no hay cuantizaciones ponderadas por imatrix disponibles, que suelen ofrecer mejor relacion calidad/tamano que las estaticas.
+- Trazabilidad limitada: el modelo base (May2222/Fisher-R1-14B) tiene pocas descargas y una unica interaccion registrada, sin documentacion tecnica sobre entrenamiento ni evaluacion independiente.
+- Licencia: Apache 2.0 permite uso comercial, pero al ser una cuantizacion de un modelo de origen poco documentado conviene verificar la procedencia de los datos de entrenamiento antes de usarlo en produccion regulada.
+- Especializacion estrecha: las etiquetas indican foco en estadistica y tool use; no hay evidencia de que sea competitivo en codigo, matematicas generales o tareas creativas.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Fisher-R1-14B-GGUF
-- Modelo base (sin cuantizar): https://huggingface.co/May2222/Fisher-R1-14B
-- Dataset de entrenamiento mencionado: https://huggingface.co/datasets/May2222/P-Bench
-- Pagina del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Repositorio GGUF: https://huggingface.co/mradermacher/Fisher-R1-14B-GGUF
+- Modelo base: https://huggingface.co/May2222/Fisher-R1-14B
+- Dataset de referencia: https://huggingface.co/datasets/May2222/P-Bench
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Fisher-R1-14B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -16,8 +16,8 @@
     "text-to-image",
     "lora",
     "template:diffusion-lora",
-    "base_model:abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-    "base_model:adapter:abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+    "base_model:abenzerps/Qwen-Image-2.1-Turbo-Quantized",
+    "base_model:adapter:abenzerps/Qwen-Image-2.1-Turbo-Quantized",
     "license:apache-2.0",
     "region:us"
   ],

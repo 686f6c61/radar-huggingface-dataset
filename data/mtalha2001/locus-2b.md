@@ -2,110 +2,108 @@
 
 ## Resumen
 
-LOCUS-2B es un modelo de *visual grounding* (localización visual) desarrollado por Muhammad Talha (MTalha2001) que recibe una imagen y una expresión en lenguaje natural («el hombre de la camisa roja») y devuelve la caja delimitadora del objeto referido en píxeles. Se construye sobre Qwen/Qwen3-VL-2B-Instruct, al que se le añade una pequeña cabeza de regresión de cajas y se le somete a un ajuste fino completo del modelo de lenguaje y del fusionador visual.
+Locus-2B es un modelo de grounding visual (localización de expresiones referenciales) construido sobre Qwen/Qwen3-VL-2B-Instruct. Dado un enunciado en lenguaje natural y una imagen, devuelve la caja delimitadora del objeto referido en píxeles, o responde que el objeto no está en la imagen. Lo desarrolla MTalha2001 y se publica bajo licencia Apache-2.0 con pesos en safetensors.
 
-La innovación es la receta «Locus» (Locate Once, Check Until Settled): la imagen se preprocesa una sola vez y cada expresión se resuelve como una rama corta sobre el prefijo cacheado; la cabeza de cajas genera un borrador en una sola pasada y ese borrador se renderiza como los tokens de coordenadas que el modelo escribiría, para que el propio modelo los verifique en paralelo mediante iteración de Jacobi hasta que el borrador deja de cambiar. Con aceptación exacta, la caja devuelta coincide con la respuesta greedy del modelo en tokens de coordenadas, pero alcanzada en unas pocas pasadas en lugar de un paso de decodificación por token.
+La innovación principal es la receta **Locus** (Locate Once, Check Until Settled): la imagen se precalcula una sola vez, cada expresión se ejecuta como una rama corta sobre el prefijo cacheado, una cabeza de cajas genera un borrador en una pasada y el propio modelo verifica en paralelo todos los tokens de coordenadas mediante iteración de Jacobi hasta que el borrador deja de cambiar. Con aceptación exacta, la caja devuelta coincide con la respuesta greedy del modelo en coordenadas, alcanzada en unas pocas pasadas en lugar de un paso de decodificación por token.
 
-Su relevancia es práctica: consigue precisión de modelo de 2B con latencias de decodificación especulativa (43,5 ms con solo la cabeza y 102,2 ms con verificación exacta por expresión en una RTX A6000), lo que lo hace viable en pipelines que deben localizar muchos objetos sobre una misma imagen. El modelo tiene 1.746.808.325 parámetros, licencia Apache-2.0 y solo soporta inglés.
+La versión v1.1 (noviembre de 2026) añade respuestas de "no está en la imagen", mejora sustancial en objetos pequeños y entrena con filas de no-target, contraste de categoría, objetivo pequeño e intercambio de sustantivos, además de aumentación de oclusión, zoom, texto y fotométrica. El modelo tiene 1.746.808.325 parámetros totales y está pensado exclusivamente para consultas de grounding en inglés.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (VLM) de Qwen3-VL-2B-Instruct + cabeza de cajas añadida; verificación por decodificación especulativa con iteración de Jacobi |
-| Parámetros totales | 1.746.808.325 (según safetensors) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada |
-| Tipos de cuantización | no disponible; pesos publicados en safetensors (bf16) |
+| Arquitectura | Transformer multimodal (Qwen3-VL-2B-Instruct) con cabeza de cajas añadida y verificador por iteración de Jacobi |
+| Parametros totales | 1.746.808.325 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (`model.safetensors` + `locus_config.json`); el codificador visual, el tokenizador y el resto de pesos se descargan aparte desde Qwen/Qwen3-VL-2B-Instruct |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (model.safetensors con cabeza de cajas, LM y vision merger; el encoder visual, tokenizer y resto de pesos se descargan de Qwen/Qwen3-VL-2B-Instruct) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-VL-2B-Instruct (transformer multimodal con torre visual y fusionador) y le añade una cabeza de cajas de pequeño tamaño. El repositorio solo contiene los pesos que el entrenamiento modificó: la cabeza de cajas, el modelo de lenguaje completamente ajustado y el fusionador visual; el codificador visual y el tokenizador permanecen congelados y se toman del modelo base. La inferencia sigue tres etapas: precarga única de la imagen, borrador de la caja en una pasada por la cabeza, y verificación del borrador renderizado como tokens de coordenadas mediante iteración de Jacobi en paralelo, conservando el prefijo aceptado y corrigiendo el siguiente token hasta la convergencia.
+El modelo parte de Qwen3-VL-2B-Instruct y aplica fine-tuning completo del modelo de lenguaje y del vision merger a lr 1e-5, entrenando conjuntamente la cabeza de cajas y el verificador durante 48.000 pasos con 4 imágenes x 4 expresiones por paso. La cabeza de cajas genera un borrador en una pasada; ese borrador se renderiza como los tokens de coordenadas que el modelo escribiría y el modelo verifica todos ellos en paralelo mediante iteración de Jacobi hasta que el borrador se estabiliza. Con aceptación exacta (`accept=1.0`), la caja resultante es la respuesta greedy en tokens de coordenadas del propio modelo, pero alcanzada en una media de 5,72 pasadas en lugar de un paso por token.
 
-El entrenamiento consistió en un ajuste fino completo del modelo de lenguaje y del fusionador visual con tasa de aprendizaje 1e-5, con la cabeza y el verificador entrenados conjuntamente durante 36.000 pasos, equivalentes a 2,00 épocas (el mismo presupuesto que Jag). Los datos son las particiones de entrenamiento de RefCOCO, RefCOCO+ y RefCOCOg sobre imágenes de COCO, eliminando toda imagen que aparezca en cualquier partición de evaluación. No se mencionan fases de RLHF ni DPO; el objetivo es puramente de localización. El modo `accept=1.0` (por defecto) devuelve la caja greedy exacta en tokens de coordenadas, `accept=0.7` o `0.5` aplica aceptación típica (menos pasadas, sin equivalencia exacta con greedy) y `verify=False` devuelve el borrador de una sola pasada de la cabeza.
+Los datos de entrenamiento son los splits de train de RefCOCO, RefCOCO+ y RefCOCOg, más un 15% de filas adicionales: expresiones no-target de gRefCOCO y filas de contraste de categoría, objetivo pequeño e intercambio de sustantivos construidas a partir de anotaciones de instancias de COCO-2017. Se aplica aumentación con oclusores de COCO pegados (p = 0,3), zoom-out (0,15), reformulación de la petición (0,1) y cambios fotométricos (0,15). Toda imagen que aparece en cualquier split de evaluación se elimina de todos los datos de entrenamiento.
 
 ## Capacidades
 
-- Localización visual (*visual grounding*): devuelve `[x0, y0, x1, y1]` en píxeles para una expresión referencial sobre una imagen.
-- Comprensión de expresiones referenciales (REC) sobre imágenes de COCO/RefCOCO en inglés.
-- Procesamiento por lotes de varias expresiones sobre una misma imagen reutilizando el prefijo cacheado, lo que reduce el coste por consulta.
-- Decodificación especulativa verificada: la cabeza actúa como *drafter* de los tokens de coordenadas del propio modelo.
-- Modos de aceptación configurables (exacta 1.0, típica 0.5/0.7) y modo sin verificación para mínima latencia.
-- No soporta *tool calling*, agentes ni razonamiento multi-paso; responde únicamente consultas de grounding (las demás preguntas deben dirigirse al modelo base).
-- Multilingüe: no; solo inglés.
+- Grounding visual de expresiones referenciales: devuelve la caja `[x0, y0, x1, y1]` en píxeles para un enunciado y una imagen.
+- Respuesta de no-target: indica que el objeto no está en la imagen (`no_target=True`, `box=None`) para parte de las expresiones sin objetivo.
+- Procesamiento por lotes de expresiones sobre una misma imagen: la imagen se precalcula una vez y cada expresión corre como rama corta sobre el prefijo cacheado.
+- Decodificación especulativa con verificación exacta: `accept=1.0` (greedy exacto), `accept=0.5` (aceptación típica, menos pasadas) y `verify=False` (borrador de la cabeza en una pasada).
+- Replay de CUDA graphs (`graphs=True`) para formas de imagen ya vistas.
+- Solo inglés y solo consultas de grounding; otras preguntas deben dirigirse al modelo base.
 
 ## Casos de uso
 
-- Anotación semiautomática de datasets: dado un conjunto de imágenes y descripciones, el modelo genera cajas para preetiquetar y el equipo humano solo revisa, con 90,01 de Acc@0.5 en una pasada y 89,30 con verificación exacta.
-- Robótica de manipulación e interacción: un operador indica «la taza azul junto al portátil» y el sistema obtiene la caja en píxeles (43,5-102,2 ms) para proyectarla al espacio del brazo o del sistema de agarre.
-- Control de interfaces gráficas y automatización de escritorio: localizar el botón o campo descrito en lenguaje natural para agentes de automatización que necesitan coordenadas clicables.
-- Edición y retoque de imágenes: selección automática del objeto referido para aplicar recortes, máscaras o filtros sin intervención manual, reutilizando el prefijo de imagen para múltiples selecciones.
-- Búsqueda visual en catálogos y comercio electrónico: localizar «la chaqueta del modelo de la derecha» en una imagen de producto para generar recortes o etiquetas de región.
-- Moderación y análisis de contenido: localizar regiones descritas en una imagen para revisión humana o para aplicar políticas por zona (por ejemplo, marcas o personas concretas).
-- Accesibilidad: descripción asistida que vincula una petición verbal del usuario con la región concreta de la escena, útil en aplicaciones de lectura de entorno.
-- Inspección industrial y análisis documental: localizar campos, componentes o defectos nombrados en una imagen de alta resolución con 640² píxeles de entrada.
+- Anotación automática de datasets de detección: generar cajas para expresiones referenciales sobre imágenes COCO o similares, con la opción de obtener la respuesta greedy exacta del modelo para garantizar reproducibilidad en la anotación.
+- Sistemas de búsqueda visual por descripción: dado un catálogo de imágenes y una consulta como "el hombre de camiseta roja", localizar el objeto; el prefill único de la imagen permite evaluar varias expresiones sobre la misma imagen con coste marginal bajo.
+- Moderación y verificación de contenido: comprobar si un objeto descrito aparece en una imagen y en qué región, usando la respuesta de no-target para descartar falsos positivos.
+- Robótica e interfaces de manipulación: localizar el objeto referido por una instrucción en lenguaje natural para alimentar un pipeline de agarre o navegación, con latencias de 98-226 ms por petición en una RTX A6000.
+- Control de calidad en líneas de producción: detectar objetos pequeños o ausentes en imágenes de inspección, apoyándose en la mejora de v1.1 para objetivos de menos del 2% de la imagen (40,0% Acc@0.5 a 640², 47,8% a 1024²).
+- Asistentes de accesibilidad: describir la posición de objetos solicitados por un usuario en una imagen, integrando el modelo como módulo de grounding dentro de un asistente multimodal más amplio.
+- Evaluación de pipelines de visión: usar la verificación exacta como referencia para medir la calidad de cabezas de regresión más rápidas, comparando el borrador de una pasada con la salida verificada.
 
 ## Benchmarks y rendimiento
 
-Media sobre las 8 particiones val y test de RefCOCO / RefCOCO+ / RefCOCOg, a 640² píxeles. «Passes» es el número medio de pasadas secuenciales por expresión.
+Media sobre los 8 splits val y test de RefCOCO / RefCOCO+ / RefCOCOg, a 640² píxeles. "Passes" es la media de pasadas secuenciales por expresión.
 
 | Salida | Acc@0.5 | Acc@0.75 | Acc@0.9 | Passes |
 |---|---|---|---|---|
-| Cabeza (una pasada) | 90,01 | 79,79 | 54,87 | 1 |
-| Verificada, exacta (greedy) | 89,30 | 80,31 | 59,13 | 5,60 |
-| Verificada, típica (α = 0,5) | 89,60 | 80,49 | 58,95 | 3,43 |
+| Cabeza (una pasada) | 89,48 | 79,32 | 55,51 | 1 |
+| Verificado, exacto (greedy) | 88,46 | 79,51 | 59,43 | 5,72 |
+| Verificado, típico (α = 0,5) | 88,92 | 80,00 | 59,16 | 3,06 |
+| v1.0, verificado, exacto | 89,30 | 80,31 | 59,13 | 5,60 |
 
-Comparación con modelos de referencia sobre las mismas filas:
+Referencias en las mismas filas: Jag-0,8B (cabeza de regresión) 88,16 / 76,51 / 48,76; LocateAnything-3B (tokens de caja) 88,68 / 80,82 / 65,55.
 
-| Modelo | Enfoque | Acc@0.5 | Acc@0.75 | Acc@0.9 |
-|---|---|---|---|---|
-| Jag-0.8B | cabeza de regresión | 88,16 | 76,51 | 48,76 |
-| LocateAnything-3B | tokens de caja | 88,68 | 80,82 | 65,55 |
-| LOCUS-2B (exacto) | cabeza + verificación | 89,30 | 80,31 | 59,13 |
+Casos específicos a través de `ground`:
 
-Latencia en una RTX A6000, batch 1, entradas de 512², con CUDA graphs: 43,5 ms con solo la cabeza y 102,2 ms por expresión con verificación exacta. No se han publicado resultados de MMLU, HumanEval ni GSM8K, y no serían representativos de un modelo especializado en grounding.
+| Métrica | v1.0 | v1.1 |
+|---|---|---|
+| Ref-L4 val, objetivos bajo 2% de la imagen, Acc@0.5, 640² | 16,7 | 40,0 |
+| Igual, a 1024² | 32,2 | 47,8 |
+| gRefCOCO no-target respondidas "no está en la imagen" | 0,0% | 60,0% |
+
+Latencia en una RTX A6000, batch 1, RefCOCO testA a 640², media de ms por petición: 226 sin graphs, 111 con `graphs=True` en una forma de imagen vista por primera vez, 98 cuando las formas se repiten.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 4-5 GB solo para los pesos en bf16 (1,75B parámetros), más la torre visual del modelo base y las activaciones; en la práctica, entre 8 y 10 GB para inferencia cómoda a 512-640² con caché de imagen.
-- GPU recomendadas: RTX A6000 (configuración medida por el autor), A100/H100 para mayor concurrencia, y RTX 4090/3090 para uso individual.
-- Cabe en GPU de consumo: sí, en tarjetas de 12-16 GB sin problema; en 8 GB es ajustado y exigiría cuantización, para la que no se publican pesos preparados.
-- Requiere GPU CUDA de forma explícita según la model card; no se documenta soporte de CPU.
-- Opciones de despliegue: el paquete propio `locus` (`pip install git+https://github.com/muhammad-talha-ad/LOCUS`) con `from_pretrained` y `ground`; no se documentan integraciones con vLLM, TGI, llama.cpp ni Ollama, ni pesos GGUF.
-- Rendimiento: 43,5 ms (cabeza, una pasada) y 102,2 ms (verificación exacta) por expresión en RTX A6000, batch 1, 512², con CUDA graphs. El coste marginal por expresión adicional sobre la misma imagen es bajo gracias al prefijo cacheado.
+- GPU CUDA obligatoria: el código de inferencia (`locus.hub`) requiere una GPU CUDA.
+- VRAM estimada: no disponible en la información proporcionada; con 1.746.808.325 parámetros en bf16, el peso del modelo ronda los 3,5 GB, a lo que se suma el encoder visual y los pesos adicionales descargados de Qwen/Qwen3-VL-2B-Instruct y las cachés de prefijo por imagen.
+- GPU recomendadas: RTX A6000 es la referencia medida por el autor (98-226 ms por petición). Por tamaño, debería caber en GPUs de consumo con suficiente VRAM, aunque no se publican medidas en ellas.
+- Opciones de despliegue: el paquete propio `locus` (`pip install -e <code repo>`) con `from_pretrained` y `ground`; soporte de CUDA graphs para formas repetidas. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Throughput: no disponible más allá de la latencia por petición indicada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Acc@0.5 (RefCOCO media) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| LOCUS-2B | 1,75B | no disponible | 89,30 (exacto) / 90,01 (cabeza) | Apache-2.0 | Hugging Face + GitHub |
-| Jag-0.8B | 0,8B (aprox.) | no disponible | 88,16 | no disponible | no disponible |
-| LocateAnything-3B | 3B (aprox.) | no disponible | 88,68 (65,55 en Acc@0.9) | no disponible | no disponible |
-| Qwen3-VL-2B-Instruct (base, zero-shot) | 2B (aprox.) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Modelo | Parámetros | Enfoque | Acc@0.5 (media 8 splits) | Acc@0.9 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Locus-2B v1.1 (exacto) | 1,75 B | Cabeza de cajas + verificación Jacobi | 88,46 | 59,43 | Apache-2.0 | Hugging Face |
+| Locus-2B v1.1 (típico) | 1,75 B | Igual, aceptación α = 0,5 | 88,92 | 59,16 | Apache-2.0 | Hugging Face |
+| Jag-0,8B | 0,8 B | Cabeza de regresión | 88,16 | 48,76 | no disponible | no disponible |
+| LocateAnything-3B | 3 B | Tokens de caja | 88,68 | 65,55 | no disponible | no disponible |
 
-LOCUS-2B mejora a Jag-0.8B en las tres métricas con algo más del doble de parámetros, y se sitúa ligeramente por encima de LocateAnything-3B en Acc@0.5 pese a tener menos parámetros, aunque queda claramente por debajo en Acc@0.9 (59,13 frente a 65,55), es decir, en precisión de cajas muy ajustadas. La ventaja frente a LocateAnything-3B está en el coste: menos parámetros y verificación paralela en lugar de un token por paso.
+Locus-2B iguala o supera ligeramente a Jag-0,8B en Acc@0.5 y Acc@0.9, y queda por debajo de LocateAnything-3B en Acc@0.9 (59,43 frente a 65,55) con menor número de parámetros.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente con la familia RefCOCO; no se ha validado en dominios fuera de COCO y el propio autor advierte que el rendimiento se degrada en objetos pequeños (en las imágenes Objects365 de Ref-L4 queda muy por debajo del modelo base zero-shot).
-- Solo responde consultas de grounding; cualquier otra pregunta debe dirigirse a Qwen3-VL-2B-Instruct.
-- Solo inglés: no hay soporte declarado de castellano ni de otros idiomas.
-- La verificación es más lenta que la cabeza sola y que una cabeza de regresión pura (102,2 ms frente a 43,5 ms), por lo que en despliegues de baja latencia hay que elegir entre exactitud y velocidad.
-- La equivalencia exacta con la decodificación greedy se cumple en bf16 solo hasta el redondeo, que también hace que dos ejecuciones greedy con formas de batch distintas difieran.
-- Requiere GPU CUDA; no se documentan pesos cuantizados, GGUF ni soporte de CPU.
-- Los pesos son Apache-2.0, pero las anotaciones de entrenamiento provienen de RefCOCO/RefCOCO+/RefCOCOg sobre imágenes COCO: hay que revisar los términos de esos datasets para uso comercial.
-- Riesgo de alucinación de cajas: al ser un modelo generativo de coordenadas, puede devolver una región plausible aunque el objeto no exista en la imagen; conviene umbralizar o validar en producción.
-- Sesgos heredados del modelo base y de la distribución de COCO (escenas cotidianas, anotaciones en inglés), con posible peor cobertura en dominios alejados.
+- La precisión en RefCOCO es ligeramente inferior a la de v1.0 (88,46 frente a 89,30 en Acc@0.5 exacto).
+- Los objetos pequeños siguen siendo el caso débil: 40,0% Acc@0.5 a 640² para objetivos bajo el 2% de la imagen; una segunda pasada a 1024² ayuda (47,8%).
+- La respuesta "no está en la imagen" solo se da para parte de las expresiones sin objetivo (60,0% en gRefCOCO); el resto recibe una caja.
+- La verificación es más lenta que la cabeza sola y que una cabeza de regresión pura.
+- La exactitud se refiere al decode greedy de este modelo; en bf16 se mantiene hasta el redondeo que también hace diferir dos ejecuciones greedy con formas de batch distintas.
+- El modelo solo responde consultas de grounding; otras preguntas deben dirigirse al modelo base Qwen3-VL-2B-Instruct.
+- Solo soporta inglés.
+- Requiere GPU CUDA; no se documenta inferencia en CPU.
+- Los términos de las anotaciones de entrenamiento (RefCOCO/+/g y gRefCOCO sobre imágenes COCO) deben revisarse para uso comercial, aunque los pesos sean Apache-2.0.
+- Riesgo de alucinación de cajas en expresiones sin objetivo cuando no se activa la respuesta no-target.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MTalha2001/LOCUS-2B
-- Página del proyecto: https://muhammad-talha-ad.github.io/LOCUS/
-- Paper (arXiv 2610.35053): https://arxiv.org/abs/2610.35053
-- Código en GitHub: https://github.com/muhammad-talha-ad/LOCUS
-- Modelo hermano LOCUS-0.8B: https://huggingface.co/MTalha2001/LOCUS-0.8B
-- Modelo base Qwen3-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
-- Perfil del autor: https://huggingface.co/MTalha2001/models
+- Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
+- Repositorio de código (referenciado en la model card como `<code repo>`, con `CHANGELOG.md`): no disponible como URL concreta en la información proporcionada
+- Paper, blog o demo: no disponible en la información proporcionada

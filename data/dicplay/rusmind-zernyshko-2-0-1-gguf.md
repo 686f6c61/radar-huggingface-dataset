@@ -2,92 +2,91 @@
 
 ## Resumen
 
-RusMind Зёрнышко 2.0.1 es un modelo de lenguaje compacto de 342 millones de parámetros desarrollado por DICPlay (Rusia), entrenado íntegramente desde cero y publicado en formato GGUF para su uso con llama.cpp, LM Studio y Ollama. Forma parte de la línea "Зёрнышко" (semilla) de la familia RusMind, orientada a ejecución local en hardware modesto, incluso teléfonos, con un enfoque explícito en el idioma ruso mediante un tokenizador propio de 48 000 tokens.
+RusMind Zernyshko 2.0.1 es un modelo de lenguaje compacto de 342 millones de parámetros desarrollado por DICPlay, entrenado desde cero con un enfoque específico en el idioma ruso. Forma parte de la familia RusMind, una línea de modelos presentada por el autor como "IA nacional" rusa. Esta versión 2.0.1 es un ajuste fino de la 2.0 orientado a mejorar la coherencia conversacional multi-turno, el cálculo aritmético dentro de diálogos y la explicación de conceptos cotidianos.
 
-El modelo emplea una arquitectura transformer-decoder convencional (RMSNorm, RoPE, SwiGLU, GQA con 16 cabezas de consulta y 4 de clave/valor), 26 capas y una dimensión oculta de 1024, con una ventana de contexto de 4096 tokens. Se entrenó sobre 4,5 mil millones de tokens (Wikipedia en ruso, web rusa, diálogos, código y problemas) y posteriormente se afinó para tareas prácticas como aritmética, generación de JSON, llamada a herramientas y conversación multi-turno.
+La arquitectura es un transformer decoder convencional con RMSNorm, RoPE, SwiGLU y atención GQA con ratio 16/4, distribuido en 26 capas con dimensión oculta de 1024. Emplea un tokenizador propio de 48.000 tokens entrenado sobre ruso y una ventana de contexto de 4096 tokens. El formato de diálogo es ChatML y los pesos se distribuyen en GGUF con la disposición estándar de llama.cpp para garantizar compatibilidad con LM Studio, Ollama y llama.cpp.
 
-La versión 2.0.1 es un ajuste sobre 2.0 centrado en la coherencia conversacional y la persistencia de la identidad del modelo. Su relevancia radica en ser un ejemplo de modelo "from scratch" en ruso, con licencia propia restrictiva para uso comercial, distribuido en cuantizaciones que caben en menos de 400 MB.
+Su relevancia radica en ser un modelo entrenado íntegramente desde cero (no un fine-tune de un modelo occidental) y en su tamaño extremadamente reducido, que permite inferencia completamente offline en portátiles y teléfonos. No obstante, su rendimiento absoluto es muy limitado: el propio autor reporta un 0,054 en MERA 2.0, lo que lo sitúa lejos de modelos rusos de mayor escala.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder (RMSNorm, RoPE, SwiGLU, GQA 16/4) |
-| Parametros totales | 342 283 264 (342 M); 26 capas × 1024 |
-| Parametros activos | No aplica (modelo denso) |
+| Parametros totales | 342.283.264 (342 M) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 4096 tokens |
-| Tipos de cuantizacion | Q8_0 (367 MB), Q4_K_M (219 MB), F16 (688 MB); bf16 en safetensors (685 MB) |
+| Tipos de cuantizacion | F16, Q8_0, Q4_K_M (GGUF); bf16 en safetensors |
 | Idiomas soportados | Ruso (ru) |
 | Licencia | RusMind License (DICPlay); uso no comercial libre, comercial bajo contrato |
-| Formato de pesos | GGUF (llama.cpp, LM Studio, Ollama); safetensors en repo separado |
-| Vocabulario | 48 000 tokens, tokenizador propio entrenado en ruso |
-| Formato de dialogo | ChatML |
+| Formato de pesos | GGUF (llama.cpp), safetensors (Transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder denso de 26 capas con dimensión 1024, normalización RMSNorm, embeddings posicionales rotatorios (RoPE), activación SwiGLU y atención con grouped-query attention (16 cabezas de consulta, 4 de clave/valor). Los pesos, el tokenizador de 48 000 tokens (entrenado específicamente en ruso) y los datos de entrenamiento son propios, sin inicialización desde otro modelo. La versión GGUF utiliza la disposición estándar de llama para garantizar compatibilidad con llama.cpp, LM Studio y Ollama.
+El modelo es un transformer decoder de 26 capas con dimensión 1024, normalización RMSNorm, embeddings posicionales rotatorios (RoPE), activación SwiGLU y atención con query grouping (GQA) en ratio 16/4. El tokenizador es propio, con un vocabulario de 48.000 tokens entrenado específicamente sobre ruso, lo que difiere del tokenizador Llama estándar. Para la versión GGUF se ha adoptado la disposición de tensores estándar de llama.cpp, lo que permite cargarlo en herramientas convencionales sin conversiones adicionales.
 
-El preentrenamiento consumió 4,5 mil millones de tokens procedentes de Wikipedia en ruso, web en ruso, diálogos propios, código y problemas. Posteriormente se aplicó un ajuste supervisado orientado a habilidades prácticas: cálculo aritmético, generación de código, salida en JSON, traducción, llamada a herramientas, cortesía y calibración de la abstención ("no lo sé"). No se documenta el uso de RLHF ni DPO. La versión 2.0.1 añade un ajuste adicional sobre 2.0 centrado en mantener el hilo conversacional en el segundo y tercer turno, resolver operaciones dentro del diálogo y reforzar la identidad del modelo.
+El entrenamiento se realizó desde cero sobre aproximadamente 4.500 millones de tokens, con una mezcla de Wikipedia en ruso, web rusa, datos conversacionales propios, código y problemas matemáticos. Posteriormente se aplicó un ajuste fino orientado a habilidades prácticas: aritmética, generación de código, salida en JSON, traducción, invocación de herramientas, cortesía y calibración de la honestidad ("decir que no sabe"). No se documenta el uso de RLHF o DPO, ni se detalla la composición exacta del dataset más allá de las categorías mencionadas.
 
 ## Capacidades
 
-- Generación de texto conversacional en ruso con formato ChatML.
-- Razonamiento aritmético básico y resolución de problemas verbales sencillos (por ejemplo, velocidad = distancia / tiempo).
-- Generación de código y salida estructurada en JSON a partir de instrucciones en lenguaje natural.
-- Llamada a herramientas (tool calling) con salida en JSON, por ejemplo `{"tool": "weather", "args": {"city": "..."}}`.
-- Conversación multi-turno con mantenimiento de contexto en el segundo y tercer mensaje.
-- Explicación de conceptos cotidianos en ruso (familia, amistad, volcán, espacio).
-- Abstención explícita ("no lo sé") cuando el modelo no dispone de información.
-- Capacidad multilingüe: limitada al ruso según la model card; no se declaran otros idiomas.
-- No se documentan capacidades de visión, audio, modo "thinking" ni agentes multi-paso autónomos.
+- Generación de texto conversacional en ruso con soporte multi-turno (ChatML).
+- Aritmética básica dentro de la conversación (sumas, cálculo de velocidad a partir de distancia y tiempo).
+- Generación de código en contextos sencillos.
+- Salida estructurada en JSON a partir de lenguaje natural.
+- Tool calling / function calling con formato JSON (`{"tool": ..., "args": {...}}`).
+- Explicación de conceptos cotidianos (familia, amistad, volcán, espacio).
+- Capacidad declarada de admitir desconocimiento en lugar de alucinar.
+- Sin soporte de visión, audio ni modo de razonamiento extendido.
+- Multilingüe limitado: solo ruso declarado.
 
 ## Casos de uso
 
-- Asistente conversacional local en ruso: el modelo puede gestionar diálogos multi-turno de hasta 4096 tokens y mantener el hilo tras saludos o preguntas de identidad, lo que lo hace adecuado para chatbots de escritorio o móvil que funcionan sin conexión.
-- Ejecución en dispositivos móviles y de bajo consumo: con la cuantización Q4_K_M (219 MB) cabe en la memoria de un teléfono moderno y permite inferencia offline, útil para aplicaciones de asistencia personal sin dependencia de la nube.
-- Extracción de datos estructurados: a partir de una frase como "el portátil cuesta 55 000 rublos", el modelo devuelve JSON con campos `product` y `price`, lo que facilita su integración en pipelines de procesamiento de documentos o formularios.
-- Enrutado y llamada a herramientas en asistentes ligeros: el modelo emite llamadas JSON a funciones (por ejemplo, consulta meteorológica) que un orquestador externo puede ejecutar, adecuado para prototipos de agentes simples en entornos con recursos limitados.
-- Educación y práctica de ruso: puede explicar conceptos cotidianos y resolver problemas aritméticos paso a paso, útil en aplicaciones de tutoría para estudiantes o para aprendizaje del idioma.
-- Prototipado e investigación de modelos "from scratch": su tamaño reducido, su licencia de investigación y su tokenizador propio lo hacen apropiado para experimentos académicos sobre entrenamiento desde cero en ruso, análisis de tokenizadores o estudios de calibración de la abstención.
-- Generación de código en entornos de desarrollo locales: puede producir fragmentos de código y respuestas en JSON dentro de asistentes de edición que se ejecutan en el portátil del desarrollador, sin enviar datos a servicios externos.
+- Asistente conversacional offline en dispositivos móviles: con 219 MB en Q4_K_M y 4096 tokens de contexto, puede ejecutarse en teléfonos mediante llama.cpp u Ollama para responder consultas cotidianas sin conexión.
+- Extracción de datos estructurados en pipelines ligeros: convierte frases en ruso a JSON (por ejemplo, producto y precio) para alimentar sistemas de inventario o formularios en entornos con recursos limitados.
+- Enrutamiento de intenciones y tool calling en agentes pequeños: el modelo emite llamadas JSON a herramientas (por ejemplo, `weather`) útiles en asistentes de voz o bots de bajo coste.
+- Educación y práctica de ruso: explicación de vocabulario básico y resolución de problemas aritméticos elementales en un entorno controlado y sin dependencia de la nube.
+- Prototipado rápido en LM Studio: al estar disponible en el catálogo integrado, permite probar flujos conversacionales en ruso en minutos sin infraestructura.
+- Filtrado o clasificación previa en pipelines de bajo presupuesto: por su tamaño, puede ejecutarse en CPU y servir como primera etapa antes de invocar modelos mayores.
+- Demostraciones de investigación sobre modelos "from scratch": útil para estudiar el comportamiento de modelos pequeños entrenados con tokenizador propio en ruso.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | RusMind Zernyshko 2.0 | Referencia indicada |
+| Benchmark | RusMind Zernyshko 2.0.1 | Referencia indicada por el autor |
 |---|---|---|
-| Prueba práctica interna (120 preguntas) | 74 puntos | 53,5 puntos (misma base antes del ajuste) |
-| MERA 2.0 (puntuación global) | 0,054 | Mejor de la línea Zernyshko |
+| MERA 2.0 (puntuación global) | 0,054 (versión 2.0) | no disponible |
+| Test práctico interno (120 preguntas) | 74 (versión 2.0) frente a 53,5 antes del ajuste | no disponible |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos anteriores proceden de pruebas internas del autor y no son directamente comparables con evaluaciones públicas.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos de MERA 2.0 y del test interno corresponden a la versión 2.0, no específicamente a la 2.0.1.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,4 GB con Q8_0, 0,25 GB con Q4_K_M y 0,7 GB con F16, incluyendo overhead de contexto.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; funciona también en CPU sin GPU dedicada.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1050, RTX 3050, RTX 4090, etc.) y en iGPU.
-- Despliegue: llama.cpp (`llama-cli -hf DICPlay/RusMind-Zernyshko-2.0.1-GGUF -cnv`), LM Studio (búsqueda "RusMind Zernyshko"), Ollama (`ollama run hf.co/DICPlay/RusMind-Zernyshko-2.0.1-GGUF`) y Transformers con los pesos safetensors del repo base.
-- Latencia y throughput: no disponibles en la información proporcionada; por tamaño, se espera inferencia interactiva en CPU y muy rápida en GPU, pero no se aportan cifras medidas.
+- VRAM estimada: menos de 1 GB en todas las cuantizaciones; Q4_K_M requiere aproximadamente 0,3 GB y Q8_0 alrededor de 0,5 GB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100. Funciona en CPU sin problema.
+- Cabe en GPU consumer: sí, en cualquier RTX, GTX o iGPU con más de 1 GB de memoria; también en Raspberry Pi y teléfonos.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf ...`), Ollama (`ollama run hf.co/...`), LM Studio (búsqueda "RusMind Zernyshko") y Transformers con los safetensors del repo base.
+- Latencia y throughput: no disponible en la información proporcionada; por el tamaño, se espera inferencia en tiempo real incluso en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind Zernyshko 2.0.1 | 342 M | 4096 | Ruso | RusMind License (no comercial libre; comercial bajo contrato) | GGUF, safetensors |
-| Qwen2.5-0.5B | 494 M | 32 768 | Multilingüe (incluye ruso) | Apache 2.0 | GGUF, safetensors |
-| SmolLM2-360M | 362 M | 8192 | Principalmente inglés | Apache 2.0 | GGUF, safetensors |
-| TinyLlama-1.1B | 1,1 B | 2048 | Inglés | Apache 2.0 | GGUF, safetensors |
+| RusMind Zernyshko 2.0.1 | 342 M | 4096 | ru | RusMind License (no comercial libre) | GGUF y safetensors en HF |
+| Qwen2.5-0.5B | 500 M | 32.768 | multilingüe | Apache 2.0 | HF, GGUF, Ollama |
+| SmolLM2-360M | 360 M | 8192 | inglés principalmente | Apache 2.0 | HF, GGUF |
+| TinyLlama-1.1B | 1.100 M | 2048 | inglés | Apache 2.0 | HF, GGUF |
 
-La comparación con Qwen2.5-0.5B, SmolLM2-360M y TinyLlama-1.1B se ofrece por categoría de tamaño; no se dispone de resultados de benchmarks comunes que permitan una comparación de rendimiento directa. RusMind se diferencia por su especialización en ruso y su tokenizador propio, pero su licencia es más restrictiva que la de las alternativas citadas.
+Los modelos comparables de tamaño similar (Qwen2.5-0.5B, SmolLM2-360M) ofrecen contextos mayores y licencias permisivas, pero no están especializados en ruso. RusMind Zernyshko se distingue por su tokenizador específico para ruso y su entrenamiento desde cero, aunque su rendimiento absoluto es inferior y su licencia restringe el uso comercial.
 
 ## Limitaciones y advertencias
 
-- Sesgos: al entrenarse principalmente con Wikipedia y web en ruso, puede reproducir sesgos presentes en esas fuentes; no se documenta ningún proceso de mitigación.
-- Alucinación: el modelo declara capacidad de abstención, pero al ser un modelo de 342 M parámetros el riesgo de respuestas incorrectas o inventadas en temas fuera de su distribución es alto.
-- Contexto limitado: 4096 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Idioma: soporte declarado únicamente en ruso; el rendimiento en castellano u otros idiomas no está garantizado.
-- Licencia: la RusMind License permite uso personal, no comercial, investigación y evaluación; el uso comercial, la reventa, la distribución de versiones modificadas y la integración en productos requieren contrato escrito con DICPlay.
-- Producción: los benchmarks son internos y de escala reducida (120 preguntas, MERA 2.0 con 0,054); no hay evidencia pública de robustez en cargas reales.
-- Fecha de publicación: la model card indica creación en noviembre de 2026; verificar la vigencia y el estado del repositorio antes de adoptarlo.
+- Rendimiento global muy bajo: MERA 2.0 de 0,054 indica una calidad limitada incluso en ruso.
+- Riesgo elevado de alucinación en temas fuera de su dominio; el propio autor enfatiza la calibración de "no sé" como mitigación, no como garantía.
+- Solo soporta ruso; no se declara ni evalúa el rendimiento en otros idiomas.
+- Contexto corto (4096 tokens) que limita tareas de documentos largos o conversaciones extensas.
+- Licencia restrictiva: uso comercial, redistribución de versiones modificadas o integración en productos requiere contrato escrito con DICPlay.
+- Sin datos publicados sobre sesgos, composición exacta del dataset ni evaluaciones independientes.
+- El tokenizador propio de 48.000 tokens implica que no es compatible con herramientas que asumen el vocabulario Llama estándar más allá de la carga en llama.cpp.
+- Los resultados reportados corresponden a la versión 2.0; la 2.0.1 no tiene métricas propias publicadas.
 
 ## Enlaces
 
@@ -97,4 +96,5 @@ La comparación con Qwen2.5-0.5B, SmolLM2-360M y TinyLlama-1.1B se ofrece por ca
 - Archivo Q4_K_M: https://huggingface.co/DICPlay/RusMind-Zernyshko-2.0.1-GGUF/blob/main/RusMind-Zernyshko-2.0.1-Q4_K_M.gguf
 - Archivo F16: https://huggingface.co/DICPlay/RusMind-Zernyshko-2.0.1-GGUF/blob/main/RusMind-Zernyshko-2.0.1-F16.gguf
 - Licencia: https://huggingface.co/DICPlay/RusMind-Zernyshko-2.0.1-GGUF/blob/main/LICENSE
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada.
+- Contacto Telegram: https://t.me/DanKirillin
+- Contacto MAX: https://max.ru/u/f9LHodD0cOIENg5eShucR-RyhC02ijx-XXjPGcPbjBRy6_KKvmdKIu9tdQU

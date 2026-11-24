@@ -2,99 +2,90 @@
 
 ## Resumen
 
-Pocket TTS 7M (English) es un modelo de síntesis de voz (text-to-speech) de 7,1 millones de parámetros, destilado por Kyutai a partir de su Pocket TTS y ajustado con *reward fine-tuning* (publicado en octubre de 2026). Este repositorio no es el checkpoint original, sino su exportación a loom.cpp: un único fichero GGUF autodescriptivo que incluye las topologías de grafo, el tokenizador y el script de ejecución necesarios para inferir sin dependencias externas. Lo publica `loom-ai-org`, la organización detrás del motor loom.cpp y del runtime `loom-py`.
+Pocket TTS 7M (English) es un modelo de síntesis de voz (text-to-speech) de muy reducido tamaño distribuido por loom-ai-org como exportación del modelo `kyutai/pocket-tts` al formato GGUF propio del motor loom.cpp. El modelo suma 7.119.793 parámetros y está pensado para inferencia local ligera: convierte texto en inglés directamente en audio, sin necesidad de fonemizador externo, ya que codifica el texto por sí mismo. Su relevancia radica en el tamaño (unos 0,1 GB de repositorio) y en que incluye una voz integrada y un mecanismo de streaming de audio por fragmentos.
 
-La arquitectura no es un transformer de texto convencional: el modelo se compone de un *flow language model* de 4,2 M de parámetros que opera sobre latentes del códec Mimi, más un decodificador de 2,6 M de parámetros que produce la forma de onda a 24 kHz. El propio modelo codifica el texto, de modo que no requiere fonemizador ni librería de pronunciación, y lleva una voz incorporada (`alba`), con otras 26 voces disponibles como ficheros separados.
+La arquitectura interna, según la model card, combina un modelo de lenguaje de flujo de 4,2 millones de parámetros que opera sobre latentes del códec Mimi y un decodificador de 2,6 millones de parámetros. Se trata de la destilación de 7M de Pocket TTS realizada por Kyutai, con ajuste fino por recompensa, por lo que sacrifica calidad frente al modelo completo a cambio de un coste computacional mínimo.
 
-Su relevancia está en la relación tamaño/coste: 7 M de parámetros y un repositorio de 0,1 GB permiten ejecutar TTS en CPU, dispositivos empotrados o móvil, sin GPU dedicada. Como contrapartida, es una destilación explícitamente orientada a tamaño y no a calidad máxima, y hereda las restricciones de uso de Kyutai sobre suplantación de voz y clonación.
+La exportación la produce loom-exporter y se ejecuta con la librería `loom-py` (paquete `loom-py-rt` en PyPI). El modelo está licenciado bajo CC-BY-4.0, heredada del modelo base, y solo soporta inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Modelo de lenguaje de flujo (*flow language model*) de 4,2 M de parámetros sobre latentes del códec Mimi + decodificador de 2,6 M de parámetros; exportado como grafo GGUF para loom.cpp |
-| Parametros totales | 7.120.881 (7,1 M) |
-| Parametros activos | No aplica: no es un modelo MoE |
+| Arquitectura | Modelo de lenguaje de flujo (4,2M parámetros) sobre latentes del códec Mimi + decodificador (2,6M parámetros) |
+| Parámetros totales | 7.119.793 |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | F32 (sin cuantizar, verificado contra la referencia) y al menos una variante cuantizada; los tipos y nombres de fichero concretos no estan detallados en la informacion disponible |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | CC-BY-4.0, heredada de `kyutai/pocket-tts`; se mantienen las restricciones de uso de Kyutai y las licencias propias de cada voz |
-| Formato de pesos | GGUF autodescriptivo (grafos, tokenizador y driver embebidos), generado con loom-exporter |
+| Tipos de cuantización | F32 y otras precisiones cuantizadas (el repositorio contiene varios ficheros GGUF; no se detallan los esquemas exactos) |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | CC-BY-4.0 |
+| Formato de pesos | GGUF (con grafos, tokenizador y driver embebidos; exportado por loom-exporter) |
 
 ## Arquitectura y entrenamiento
 
-El modelo separa generación de latentes y síntesis de audio. Un modelo de lenguaje de flujo de 4,2 M de parámetros modela latentes del códec neural Mimi, y un decodificador de 2,6 M de parámetros reconstruye la señal a una frecuencia de muestreo de 24 kHz (valor que el usuario debe pasar explícitamente, ya que el checkpoint no lo declara necesariamente). El *front end* de texto está integrado en el propio modelo: aplica la regla `replace_characters` de la referencia y la regla v4 de punto decimal, lo que exige `loom-py-rt` 1.0.0rc19 o superior para reproducir el comportamiento exacto con guiones, comillas tipográficas y puntos entre cifras.
+El modelo es una destilación de 7M parámetros de Pocket TTS de Kyutai, publicada en octubre de 2026 y sometida a ajuste fino por recompensa (reward fine-tuning). Internamente se descompone en dos piezas: un modelo de lenguaje de flujo de 4,2M de parámetros que modela latentes del códec de audio Mimi, y un decodificador de 2,6M de parámetros que convierte esos latentes en forma de onda. El texto se codifica dentro del propio modelo, de modo que no requiere un fonemizador separado.
 
-El entrenamiento parte de `kyutai/pocket-tts`: es una destilación a 7 M de parámetros con *reward fine-tuning*, y la propia model card indica que sacrifica calidad frente al modelo completo. La exportación a loom.cpp conserva los parámetros sin modificar en el fichero F32 y deriva de ellos las versiones cuantizadas. La decodificación es estocástica por defecto, con la temperatura del checkpoint (0,3), de modo que dos llamadas producen resultados distintos salvo que se fije `seed`. No se detallan en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni el pipeline de alineación más allá de la mención al *reward fine-tuning*.
+La exportación a loom.cpp genera un único fichero GGUF autodescriptivo que transporta sus propias topologías de grafo, el tokenizador y el script de driver. El fichero F32 contiene los parámetros sin modificar; el resto de ficheros del repositorio son cuantizaciones derivadas de este. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de ajuste por recompensa.
 
 ## Capacidades
 
 - Síntesis de voz a partir de texto en inglés, con salida de audio a 24 kHz.
-- Codificación de texto propia: no necesita fonemizador externo ni dependencias de pronunciación.
-- Voz incorporada (`alba`) utilizable sin configuración adicional.
-- Selección entre 27 voces: la incorporada más 26 ficheros de voz en `voices/`, invocados por nombre (descarga desde el repositorio la primera vez) o por ruta a un fichero propio.
-- Ficheros de voz vinculados criptográficamente a estos pesos mediante huella (*fingerprint*), de forma que no son intercambiables con otras tallas de Pocket TTS ni con el modelo completo.
-- Control de reproducibilidad mediante `seed` y acceso a los parámetros del driver embebido a través de `model.infer(...)` y `model.driver_source`.
-- Introspección del tokenizador y de las voces disponibles desde la API (`model.tokenizer`, `model.voices`).
-- No incluye el codificador Mimi, por lo que no soporta clonación de voz a partir de una grabación.
-- No dispone de tool calling, capacidades de agente, visión ni procesamiento multimodal.
+- Codificación de texto integrada: no necesita fonemizador externo.
+- Voz integrada por defecto (`alba`) y selección entre 26 voces adicionales empaquetadas como ficheros de voz en `voices/`.
+- Generación en streaming: el driver del modelo entrega el audio por fragmentos que, unidos, equivalen a la forma de onda completa de `infer`.
+- Carga de ficheros de voz propios mediante el parámetro `voice=`, siempre que sean compatibles con la huella de estos pesos.
+- Muestreo estocástico por defecto con temperatura 0,3 del checkpoint, de modo que dos llamadas producen resultados distintos.
+- No se documentan capacidades de tool calling, razonamiento multi-paso, visión ni audio de entrada.
 
 ## Casos de uso
 
-- **Lectura de contenido en dispositivos empotrados**: con 7,1 M de parámetros, el modelo cabe en una Raspberry Pi o en un móvil y permite leer notificaciones, artículos o interfaces de accesibilidad sin conexión ni GPU, usando el runtime loom-py sobre el GGUF.
-- **Accesibilidad y lectores de pantalla**: integración en aplicaciones de escritorio que conviertan texto en audio en tiempo de ejecución; el modelo no necesita fonemizador, lo que simplifica el empaquetado y elimina dependencias nativas pesadas.
-- **Avisos e IVR en sistemas telefónicos**: generación previa de prompts de voz a 24 kHz para centralitas y mensajes de espera, con voces con licencia CC0 o CC-BY según el uso comercial previsto.
-- **Prototipado rápido de asistentes conversacionales**: validación de flujos de voz antes de invertir en un modelo TTS mayor, usando `pocket-tts-loom` o el modelo completo de Kyutai como paso posterior si la calidad resulta insuficiente.
-- **Generación de datos sintéticos de audio para pruebas**: creación de corpus de audio en inglés para testear pipelines ASR, sistemas de subtitulado o herramientas de diarización, controlando la semilla para reproducir conjuntos concretos.
-- **Pruebas de regresión en CI/CD de infraestructura de voz**: al ser un GGUF pequeño y determinista con `seed`, sirve como caso de prueba fijo para verificar versiones del runtime, cambios en el tokenizador o regresiones en el *front end* de texto.
-- **Audiolibros y boletines automatizados de bajo coste**: síntesis por lotes de textos largos en servidores sin GPU, aceptando la menor calidad de una destilación de 7 M a cambio de un coste de cómputo mínimo.
+- Lectura de contenido web en local: el modelo puede convertir artículos o notas en audio sin salir del dispositivo, con un repositorio de 0,1 GB y sin dependencias de fonemización, lo que simplifica el despliegue en aplicaciones de escritorio.
+- Asistentes de voz embebidos: gracias al modo streaming, se puede reproducir cada fragmento de audio conforme se genera, reduciendo la latencia percibida en interfaces conversacionales.
+- Audiolibros y boletines automatizados: la selección entre 27 voces permite asignar timbres distintos a secciones o personajes, siempre respetando la licencia de cada grabación de voz.
+- Accesibilidad en aplicaciones: integración de la síntesis en lectores de pantalla o herramientas de apoyo para usuarios con discapacidad visual, con la ventaja de que todo el procesamiento ocurre en local.
+- Pruebas y prototipado de pipelines TTS: al ser un modelo de 7M parámetros, sirve para validar arquitecturas de generación de audio y flujos de streaming antes de pasar al modelo completo `pocket-tts-loom`.
+- Generación de avisos y notificaciones habladas: para sistemas de domótica o monitorización que necesitan mensajes cortos en inglés con bajo coste computacional y sin conexión a servicios externos.
+- Investigación en destilación de modelos de voz: permite estudiar el comportamiento de un modelo de flujo sobre latentes Mimi a escala reducida, con pesos en formato GGUF y driver accesible mediante `model.driver_source`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente declara que el modelo es una destilación orientada a tamaño que intercambia calidad por reducción de parámetros frente a `pocket-tts-loom`, sin cifras objetivas de MOS, WER ni latencia.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: inferior a 1 GB en cualquier precisión. Cálculo a partir de los 7.120.881 parámetros: unos 28,5 MB en F32, unos 14,2 MB en FP16, unos 7,1 MB en int8 y unos 3,6 MB en int4, sin contar el búfer del decodificador ni el audio generado.
-- **GPU recomendadas**: no requiere GPU. Cualquier GPU consumer sirve e incluso resulta sobredimensionada; el modelo está pensado para ejecución en CPU.
-- **GPU consumer**: cabe holgadamente en cualquier tarjeta, incluida una GTX 1050 o una iGPU integrada. También es viable en ARM (Raspberry Pi, Apple Silicon) y en dispositivos móviles.
-- **Opciones de despliegue**: exclusivamente el ecosistema loom, es decir, el runtime `loom-py-rt` (PyPI, con extra `[hub]`) sobre el motor loom.cpp. No hay soporte indicado para vLLM, llama.cpp, Ollama ni TGI, dado que el GGUF incluye grafos propios que esos motores no interpretan.
-- **Latencia y throughput**: no disponibles en la información proporcionada. La velocidad de descarga de los ficheros de voz desde el Hub en el primer uso sí puede añadir latencia inicial.
-- **Almacenamiento**: el repositorio completo ocupa 0,1 GB, incluyendo los 26 ficheros de voz adicionales.
+- VRAM estimada: muy baja; con 7,1M de parámetros, el fichero F32 ocupa del orden de decenas de MB y las versiones cuantizadas menos aún. El repositorio completo pesa 0,1 GB.
+- GPU recomendadas: cualquier GPU con soporte para el motor loom.cpp; no se especifican modelos concretos en la documentación.
+- Compatibilidad con GPU de consumo: previsiblemente cabe en cualquier GPU de consumo e incluso en CPU, dado el tamaño del modelo, aunque no se aportan cifras oficiales.
+- Opciones de despliegue: `loom-py` (paquete `loom-py-rt[hub]>=1.0.0`) sobre el motor loom.cpp. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / runtime | Notas |
-|---|---|---|---|---|---|---|
-| `loom-ai-org/pocket-tts-7m-loom` | 7,1 M | No disponible | en | CC-BY-4.0 + restricciones de Kyutai + licencia por voz | GGUF para loom.cpp / `loom-py-rt` | Destilación con reward fine-tuning, voz incorporada y 26 voces en ficheros |
-| `loom-ai-org/pocket-tts-loom` | No disponible | No disponible | No disponible | No disponible | GGUF para loom.cpp | Exportación del modelo completo de Kyutai; mayor calidad según la model card |
-| `kyutai/pocket-tts` | No disponible | No disponible | en (segun este export) | CC-BY-4.0 con restricciones de uso | Pesos originales (formato no detallado) | Modelo de referencia del que deriva este export; incluye codificador Mimi para clonación |
-| Otras tallas de Pocket TTS | No disponible | No disponible | No disponible | No disponible | No disponible | La model card menciona otras tallas, pero no aporta parámetros ni resultados |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| pocket-tts-7m-loom (este modelo) | 7,1M | No disponible | Inglés | CC-BY-4.0 | GGUF (loom.cpp) |
+| kyutai/pocket-tts (modelo base) | No disponible en la información | No disponible | Inglés | CC-BY-4.0 (heredada) | No disponible |
+| loom-ai-org/pocket-tts-loom (modelo completo) | No disponible en la información | No disponible | Inglés | No disponible | GGUF (loom.cpp) |
 
-No se dispone de datos de benchmarks que permitan comparar calidad objetiva entre estas variantes.
+No se dispone de datos de rendimiento comparativo entre estas variantes; la model card indica únicamente que la versión de 7M sacrifica calidad frente al modelo completo a cambio de tamaño.
 
 ## Limitaciones y advertencias
 
-- **Restricciones de uso de Kyutai**: la publicación original prohíbe, entre otras cosas, la suplantación o clonación de voz sin consentimiento explícito y lícito, y presentar el audio generado como grabación auténtica de una persona real. Estas restricciones viajan con los pesos y prevalecen sobre la licencia CC-BY-4.0.
-- **Calidad de destilación**: es una versión de 7 M de parámetros, ajustada por recompensa y orientada a tamaño; la propia model card reconoce que sacrifica calidad frente al modelo completo.
-- **Licencias de voz heterogéneas**: cada voz se rige por la licencia de su grabación, no por la del modelo. `cosette` y `jean` son CC-BY-NC-4.0 (no comercial), y `daan`, `juergen` y `rafael` no tienen licencia declarada por Kyutai. Las voces CC-BY exigen atribución al dataset o al hablante de origen.
-- **Sin clonación de voz**: el export no incluye el codificador Mimi, por lo que no se puede clonar una voz a partir de una grabación; solo se pueden usar las voces publicadas o ficheros de voz propios incompatibles con otros modelos.
-- **Compatibilidad de runtime**: requiere `loom-py-rt` 1.0.0rc19 o superior para procesar correctamente guiones, comillas tipográficas y puntos entre cifras. Una versión anterior carga el modelo y sintetiza, pero altera la preparación de parte del texto.
-- **Frecuencia de muestreo manual**: si no se pasa `sample_rate=24000` y el GGUF no la declara, una tasa incorrecta no provoca error, sino reproducción a velocidad equivocada.
-- **Solo inglés**: no hay soporte de otros idiomas en este export.
-- **Salida no determinista por defecto**: la temperatura 0,3 implica variación entre llamadas; la reproducibilidad exige fijar `seed`.
-- **Riesgo de alucinación acústica**: no se documentan métricas de fidelidad de pronunciación ni de estabilidad en textos largos, por lo que conviene validar con muestras propias antes de producción.
-- **Sesgos**: no se documenta ningún análisis de sesgos de las voces ni de cobertura de acentos o registros.
-- **Adopción nula**: el repositorio registra 0 descargas y 0 valoraciones en el momento de la consulta, sin ecosistema de terceros ni informes independientes.
+- Se aplican las restricciones de uso de Kyutai: se prohíbe la suplantación o clonación de voces sin consentimiento explícito y lícito, así como presentar el audio generado como grabación genuina de una persona real. Estas restricciones viajan con los pesos.
+- Es un modelo destilado: la calidad es inferior a la del modelo completo `pocket-tts-loom`.
+- Solo una voz (`alba`) está integrada; las otras 26 son ficheros de voz cuya licencia corresponde a la grabación, no al modelo. Dos voces (`cosette` y `jean`) son CC-BY-NC-4.0, es decir, no comerciales, y tres (`daan`, `juergen`, `rafael`) no tienen licencia declarada por Kyutai.
+- La clonación de voz a partir de una grabación requiere el codificador Mimi, que esta exportación no incluye.
+- El muestreo es estocástico por defecto (temperatura 0,3), por lo que dos llamadas producen resultados distintos.
+- El modelo solo soporta inglés; no se documentan otros idiomas.
+- El parámetro `sample_rate` debe pasarse manualmente (24 kHz); una tasa incorrecta no provoca error, sino reproducción a velocidad equivocada.
+- No se dispone de información sobre sesgos, tasas de alucinación ni comportamiento en dominios específicos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/loom-ai-org/pocket-tts-7m-loom
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
-- Exportación del modelo completo: https://huggingface.co/loom-ai-org/pocket-tts-loom
-- Dataset de voces de Kyutai: https://huggingface.co/kyutai/tts-voices
-- Motor de inferencia loom.cpp: https://github.com/loom-ai-org/loom.cpp
-- Runtime loom-py: https://github.com/loom-ai-org/loom-py
-- Paquete en PyPI (`loom-py-rt`): https://pypi.org/project/loom-py-rt/
+- Modelo completo exportado: https://huggingface.co/loom-ai-org/pocket-tts-loom
+- Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
+- Repositorio loom-py: https://github.com/loom-ai-org/loom-py
 - Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter
-- Nota sobre la búsqueda web: los resultados obtenidos corresponden a Loom (grabador de pantalla) y Loom (marca de ropa), sin relación con este modelo, por lo que no se han incluido como fuentes.
+- Voces de Kyutai: https://huggingface.co/kyutai/tts-voices

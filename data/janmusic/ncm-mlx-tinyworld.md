@@ -2,104 +2,106 @@
 
 ## Resumen
 
-ncm-mlx-tinyworld es un conjunto de pesos de demostración publicado por Jan Music (usuario `janmusic`) que implementa Next-Concept Modeling (NCM), un paradigma de generación de texto no autorregresivo y de grueso a fino descrito por Kumbong et al. en arXiv:2610.14162. El paquete incluye tres componentes entrenados sobre TinyWorld, un lenguaje sintético de 15.360 frases de 32 caracteres: un generador de conceptos de 5,0 M de parámetros, un códec multiescala con cuantización vectorial residual (RVQ) de 1,3 M de parámetros y una línea base autorregresiva a nivel de carácter de 4,8 M de parámetros con la misma anchura y profundidad.
+NCM-TinyWorld-5M-MLX es un modelo de generación de texto de 5,0 millones de parámetros que implementa Next-Concept Modeling (NCM), un paradigma de decodificación no autorregresiva y de grueso a fino desarrollado por Kumbong et al. (arXiv:2610.14162). Lo publica janmusic como implementación independiente en MLX, la librería de Apple para Apple Silicon, y está entrenado sobre TinyWorld, un lenguaje sintético de 15.360 frases de 32 caracteres como `ann sees two red cats.`. El modelo es un ejemplo didáctico: no está pensado para texto real, sino para demostrar el funcionamiento del método.
 
-El interés del modelo es metodológico, no de producto. El generador escribe una frase en 6 pasos de grueso a fino (1, 2, 4, 8, 16 y 32 posiciones de código, una pasada hacia delante por paso) más una decodificación del códec, frente a los 32 pasos secuenciales del modelo autorregresivo. Es decir, sustituye la generación token a token por una jerarquía de conceptos que se refinan progresivamente, lo que reduce el número de llamadas al modelo de 32 a 7 por secuencia.
+El sistema consta de tres piezas: un generador de 4.972.160 parámetros con atención en bloque diagonal y sin condicionamiento por prompt, un códec multiescala de cuantización vectorial residual (1.301.248 valores) y una línea base autorregresiva de 4.752.921 parámetros a nivel de carácter. El generador escribe una frase en 6 niveles de grueso a fino (1, 2, 4, 8, 16 y 32 posiciones de código, una llamada al generador por nivel) más una decodificación del códec, en lugar de 32 pasos secuenciales de carácter. Todo el pipeline se entrena en unos 5,5 minutos en un portátil Apple Silicon.
 
-Se trata de una implementación independiente en MLX, orientada a Apple Silicon, no afiliada a Stanford ni a HazyResearch, y cuyos pesos no son compatibles con los checkpoints oficiales de NCM. No es un modelo de propósito general: no acepta instrucciones, no tiene condicionamiento por prompt y solo ha sido entrenado y evaluado sobre la gramática sintética TinyWorld. Su valor es servir como referencia reproducible (entrenamiento completo en unos 5,5 minutos) para estudiar el equilibrio entre calidad y latencia de NCM frente a un autorregresivo del mismo tamaño.
+Su relevancia es metodológica: demuestra que la decodificación paralela jerárquica puede reducir las llamadas al modelo de 32 a 6 y mejorar la latencia en lote 1 (4,5 ms frente a 30,5 ms de la línea base), a costa de una precisión menor a este tamaño. El autor advierte explícitamente de que el NCM es menos preciso que la línea base autorregresiva del mismo tamaño (89,8 % frente a 98,6 % de frases válidas a T=1,0) y que el resultado no dice nada sobre texto real.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer no autorregresivo de grueso a fino (Next-Concept Modeling) con códec RVQ multiescala; atención block-diagonal en el generador |
-| Parámetros totales | 5,0 M (generador) + 1,3 M (códec) + 4,8 M (línea base AR incluida en el repo) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32 posiciones de carácter (frases de 32 caracteres); sin contexto conversacional |
-| Tipos de cuantización | no disponible (pesos en float32 safetensors; no se documentan variantes GGUF, INT8 ni INT4) |
-| Idiomas soportados | en (inglés sintético restringido a la gramática TinyWorld) |
+| Arquitectura | Transformer con atención en bloque diagonal, decodificación no autorregresiva de grueso a fino (Next-Concept Modeling) |
+| Parametros totales | 4.972.160 (generador); 4.752.921 (línea base AR); códec de 1.301.248 valores |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32 posiciones de carácter (frases de 32 caracteres); sin condicionamiento por prompt |
+| Tipos de cuantizacion | no disponible (pesos en float32 safetensors) |
+| Idiomas soportados | inglés (en); vocabulario sintético de TinyWorld |
 | Licencia | MIT |
-| Formato de pesos | safetensors (float32) + JSON de configuración; librería MLX |
+| Formato de pesos | safetensors (float32), cargados por `ncm_mlx` |
 
 ## Arquitectura y entrenamiento
 
-El sistema se compone de dos redes. El códec emplea un encoder transformer contextual con LayerNorm, seis niveles de cuantización vectorial residual y un decoder transformer; convierte las frases de 32 caracteres en una jerarquía de códigos de 1, 2, 4, 8, 16 y 32 posiciones. El generador, con atención block-diagonal y sin condicionamiento por prompt, produce esa jerarquía en seis pasadas hacia delante, una por nivel de granularidad, y el códec reconstruye la frase final en una única decodificación. La línea base autorregresiva comparte anchura y profundidad con el generador y se apoya en caché KV.
+El generador es un transformer de 4,97 M de parámetros con atención en bloque diagonal y sin condicionamiento por prompt (el mejor paso de validación fue el 1.500 de 3.000). La generación sigue una jerarquía de 6 niveles con 1, 2, 4, 8, 16 y 32 posiciones de código: cada nivel se produce con una única llamada al generador y el resultado se decodifica una sola vez con el códec. El códec es un transformer contextual con encoder, LayerNorm, seis niveles de cuantización vectorial residual y decoder, entrenado primero y congelado después para entrenar el generador sobre la jerarquía de códigos. La línea base autorregresiva, de anchura y profundidad equivalentes, opera a nivel de carácter con caché KV.
 
-Los datos son íntegramente sintéticos: 12.000 frases generadas para entrenamiento, 1.000 de validación y 2.360 nunca vistas para evaluación. El códec se entrenó en 52 segundos, el generador en 266 segundos (3.000 pasos, con el mejor checkpoint de validación en el paso 1.500) y la línea base en 134 segundos, todo sobre un Apple M5 Pro de 64 GB con macOS 26.5 y MLX 0.32.3, con otros servicios de GPU en ejecución. El pipeline completo de entrenamiento tarda unos 5,5 minutos con `mise run train`. No se documenta uso de RLHF, DPO ni ajuste por preferencias; el entrenamiento es puramente de modelado generativo sobre la gramática sintética. Como innovación destacable, el esquema de grueso a fino reduce las llamadas al modelo por secuencia de 32 a 6 más una decodificación, a costa de una mayor tasa de error local en este tamaño.
+El entrenamiento se realiza sobre TinyWorld, un lenguaje sintético de gramática controlada con 15.360 frases de 32 caracteres, tokenizadas por carácter y rellenadas a 32 posiciones. Todo el pipeline (códec más generador) se entrena en aproximadamente 5,5 minutos en un portátil Apple Silicon. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO. La innovación técnica principal es la decodificación paralela jerárquica con cuantización vectorial residual multiescala, que sustituye los 32 pasos secuenciales por 6 llamadas al generador más una decodificación.
 
 ## Capacidades
 
-- Generación de frases en el lenguaje sintético TinyWorld, con estructura gramatical del tipo `ann sees two red cats.`
-- Generación no autorregresiva de grueso a fino en 6 pasos más una decodificación del códec.
-- Cumplimiento de la regla de concordancia de número a nivel de frase cuando la salida es bien formada (99,8 % en el generador).
-- Reconstrucción exacta de frases por parte del códec: 100 % de las frases de validación reconstruidas y 100 % de uso del codebook en todos los niveles.
-- Muestreo configurable por CLI: temperatura, semilla y top-k.
+- Generación de texto a nivel de carácter sobre el lenguaje sintético TinyWorld, con frases de 32 caracteres.
+- Decodificación no autorregresiva de grueso a fino en 6 niveles (1, 2, 4, 8, 16, 32 posiciones de código).
+- Concordancia de número gramatical cuando la frase está bien formada (99,8 % de acierto).
+- Reconstrucción exacta de frases mediante el códec (100 % de frases de validación reconstruidas).
+- Control de muestreo mediante temperatura, semilla y top-k expuestos en la CLI.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingües: solo inglés sintético.
 - No dispone de modo thinking, visión ni audio.
-- No acepta instrucciones ni condicionamiento por prompt de usuario.
+- No acepta prompts: el generador no está condicionado por entrada.
 
 ## Casos de uso
 
-- Investigación sobre generación no autorregresiva: el paquete permite reproducir el experimento E1 completo en minutos y comparar directamente NCM con un autorregresivo del mismo tamaño, lo que resulta adecuado para estudiar el compromiso entre calidad y número de llamadas al modelo.
-- Docencia y divulgación de arquitecturas generativas: la escala de 5 M de parámetros y el entrenamiento de 5,5 minutos hacen viable ejecutar el ciclo completo en un portátil Apple Silicon durante una clase o taller.
-- Pruebas de latencia en entornos de recursos limitados: con p50 de 4,5 ms por secuencia a batch 1, sirve para medir el comportamiento de un sampler jerárquico frente a uno secuencial en hardware consumer.
-- Validación de implementaciones MLX: el repositorio incluye tests de exactitud en CPU y comandos de evaluación, útil para verificar portes o comparar versiones de MLX.
-- Experimentación con códecs RVQ: el códec de 1,3 M de parámetros con seis niveles y reconstrucción exacta del 100 % puede reutilizarse como banco de pruebas para esquemas de tokenización jerárquica.
-- Generación de datos sintéticos controlados: dado que la validez se comprueba con un parser, el modelo puede emplearse para producir corpus TinyWorld etiquetados y ampliar el conjunto de evaluación de otros experimentos.
-- Estudio de atención block-diagonal: el generador permite analizar el efecto de patrones de atención estructurados en modelos pequeños sin el coste de entrenar a mayor escala.
+- Docencia e investigación sobre decodificación no autorregresiva: el modelo sirve para reproducir en un portátil Apple Silicon el funcionamiento completo de NCM, con demo nivel a nivel y evaluación de calidad en JSON, en unos minutos de entrenamiento.
+- Estudio de latencia en decodificación paralela: permite medir la diferencia entre 6 llamadas al generador y 32 pasos autorregresivos con caché KV en lote 1, 16 y 256, útil para evaluar estrategias de inferencia de bajo coste.
+- Experimentación con códecs de cuantización vectorial residual: el códec de seis niveles y 1,3 M de valores puede estudiarse de forma aislada, ya que reconstruye el 100 % de las frases de validación y usa el 100 % del codebook en cada nivel.
+- Validación de pipelines de MLX y Metal: sirve como caso de prueba mínimo para verificar la instalación de MLX, la carga de safetensors float32 y la ejecución en GPU Metal o CUDA.
+- Comparación de paradigmas de generación: la línea base autorregresiva incluida (4,75 M de parámetros) permite contrastar precisión y latencia frente al generador NCM en el mismo lenguaje y con la misma anchura y profundidad.
+- Reproducción de resultados académicos: el modelo y los comandos de evaluación permiten replicar las métricas de validez del parser de TinyWorld a distintas temperaturas (T=1,0 y T=0,7) y verificar la afirmación del autor sobre el rendimiento relativo.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el experimento E1 (Apple M5 Pro, 64 GB, macOS 26.5, MLX 0.32.3, con otros servicios de GPU en ejecución; 2 x 512 muestras por temperatura; validez comprobada por el parser de TinyWorld).
+Resultados declarados por el autor (experimento E1 en Apple M5 Pro de 64 GB con MLX 0.32.3; validez evaluada por el parser de TinyWorld; 2 × 512 muestras por temperatura). No están verificados de forma independiente.
 
-| Métrica | NCM generator | AR baseline + KV cache |
-|---|---|---|
-| Frases válidas, T = 1.0 | 89,8 % | 98,6 % |
-| Frases válidas, T = 0.7 | 95,8 % | 99,8 % |
-| Concordancia de número cuando la frase es bien formada | 99,8 % | 100 % |
-| Válidas y no presentes en entrenamiento, T = 1.0 | 16,3 % | 23,5 % |
+| Metrica | NCM generator | AR baseline + KV cache |
+|---|---:|---:|
+| Frases válidas, T = 1,0 | 89,8 % | 98,6 % |
+| Frases válidas, T = 0,7 | 95,8 % | 99,8 % |
+| Concordancia de número cuando la frase es válida | 99,8 % | 100 % |
+| Válidas y no presentes en entrenamiento, T = 1,0 | 16,3 % | 23,5 % |
 | Llamadas al modelo por secuencia | 6 + 1 decodificación | 32 |
-| Latencia p50, batch 1 / 16 / 256 | 4,5 / 5,8 / 37,8 ms | 30,5* / 22,9 / 49,8 ms |
+| Latencia p50, lote 1 / 16 / 256 | 4,5 / 5,8 / 37,8 ms | 30,5 / 22,9 / 49,8 ms |
 
-\* La p50 del AR a batch 1 fue de 19,8 ms en una ejecución anterior idéntica; las latencias con lotes pequeños dependen de la carga de la GPU.
-
-Métricas del códec, medidas por separado de la calidad del generador: 100 % de frases de validación reconstruidas exactamente y 100 % de uso del codebook en todos los niveles.
+El códec reconstruye exactamente el 100 % de las frases de validación y usa el 100 % del codebook en cada nivel. Las frases no vistas representan el 16,4 % del lenguaje, por lo que ambos modelos se acercan a la tasa esperada de muestreo del lenguaje completo. La latencia p50 de la línea base en lote 1 fue de 19,8 ms en una ejecución anterior idéntica; las mediciones en lote pequeño dependen de la carga de la GPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en float32 para el conjunto generador + códec (19,9 MB + 5,2 MB de pesos); no se documentan variantes cuantizadas.
-- GPU recomendadas: Apple Silicon con Metal (el autor usó un M5 Pro de 64 GB); en Linux, MLX con CUDA sobre GPU NVIDIA.
-- Cabe en cualquier GPU consumer actual: el tamaño del repo es de 0,0 GB y los pesos individuales no superan los 20 MB.
-- Opciones de despliegue: exclusivamente MLX a través del paquete `ncm-mlx` (comandos `demo`, `eval` y `baseline`); no hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: p50 de 4,5 ms a batch 1, 5,8 ms a batch 16 y 37,8 ms a batch 256 para el generador NCM; 30,5 ms, 22,9 ms y 49,8 ms respectivamente para la línea base AR. Ninguno de los dos samplers está compilado.
-- La CPU solo se emplea para los tests de exactitud del repositorio; la inferencia requiere GPU Metal o CUDA.
+- VRAM estimada: no disponible; con 5 M de parámetros en float32, los pesos ocupan del orden de decenas de MB, muy por debajo de cualquier GPU consumer.
+- GPU recomendadas: Apple Silicon (Metal) o GPU NVIDIA con CUDA mediante MLX; el autor ejecuta las pruebas en un Apple M5 Pro de 64 GB.
+- Cabe en cualquier GPU consumer; de hecho, el entrenamiento completo se realiza en un portátil Apple Silicon en unos 5,5 minutos.
+- La CPU solo se usa para los tests de exactitud del repositorio; las demos y evaluaciones requieren GPU (Metal o CUDA).
+- Opciones de despliegue: CLI de `ncm_mlx` (`demo`, `eval`, `baseline`), instalada con `uv` y el grupo `cuda` en Linux NVIDIA; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia p50 medida: 4,5 ms en lote 1, 5,8 ms en lote 16 y 37,8 ms en lote 256 para el generador NCM. No se publica throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ncm-mlx-tinyworld (generador) | 5,0 M + 1,3 M de códec | 32 caracteres | No autorregresivo, grueso a fino | MIT | Hugging Face + GitHub |
-| Línea base AR incluida en el repo | 4,8 M | 32 caracteres | Autorregresivo por carácter con caché KV | MIT | Incluida en el mismo repo |
-| Checkpoints oficiales de NCM (Kumbong et al.) | no disponible | no disponible | No autorregresivo, grueso a fino | no disponible | No compatible con estos pesos |
+| Modelo | Parametros | Contexto | Frases válidas (T=1,0) | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| NCM-TinyWorld-5M-MLX (NCM) | 4,97 M | 32 caracteres | 89,8 % | MIT | Hugging Face, MLX |
+| AR baseline incluida (autorregresiva) | 4,75 M | 32 caracteres | 98,6 % | MIT | Incluida en el mismo repositorio |
+| Otros modelos de la categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos publicados que permitan comparar este modelo con alternativas de propósito general de la misma categoría; la única comparación documentada es interna, frente a la línea base autorregresiva del propio repositorio.
+La única alternativa comparable documentada es la línea base autorregresiva que acompaña al modelo, con la misma anchura y profundidad y entrenada sobre el mismo lenguaje. No se dispone de información sobre otros modelos NCM comparables ni sobre modelos de tamaño similar en texto real.
 
 ## Limitaciones y advertencias
 
-- Lenguaje sintético y minúsculo: no maneja texto abierto, no acepta prompts ni sigue instrucciones; su calidad sobre texto real es desconocida.
-- A este tamaño, el generador NCM es menos preciso que la línea base autorregresiva de igual tamaño: unos 9 puntos menos de validez a T = 1.0. Los errores son en su mayoría fallos ortográficos locales (por ejemplo, `ret fox`), mientras que la regla de concordancia a nivel de frase casi siempre se respeta.
-- La ventaja de latencia depende de la contención de la GPU y ninguno de los samplers está compilado, por lo que las cifras no son directamente extrapolables a producción.
-- Los speedups de 10-31x del paper original comparan NCM con modelos de difusión de lenguaje en GPU; no se reclama ninguna mejora de velocidad frente a LLM grandes.
-- Los pesos son incompatibles con los checkpoints oficiales de NCM publicados por los autores del método.
-- Las matmuls en fp32 sobre Metal tienen precisión reducida (en torno a 1e-3 de error relativo), lo que puede afectar a la reproducibilidad exacta.
-- Licencia MIT: permite uso comercial, pero el modelo no tiene aplicación comercial real dada su naturaleza sintética y su ausencia de condicionamiento por prompt.
-- No se documentan sesgos sociales ni de dominio, porque el corpus de entrenamiento es una gramática artificial; cualquier evaluación de sesgo sobre texto real carece de sentido en este modelo.
+- Modelo didáctico de juguete: el propio autor advierte de que a este tamaño el NCM es menos preciso que la línea base autorregresiva del mismo tamaño y que el resultado no dice nada sobre texto real.
+- Solo genera frases del lenguaje sintético TinyWorld; no es utilizable para texto natural ni para tareas generales.
+- No acepta prompts ni condicionamiento: el generador no está condicionado por entrada.
+- Contexto limitado a 32 posiciones de carácter.
+- Solo inglés sintético; sin capacidades multilingües.
+- Riesgo de frases inválidas según la gramática del parser (aproximadamente un 10 % a T=1,0 y un 4 % a T=0,7).
+- Baja tasa de frases válidas no vistas en entrenamiento (16,3 % a T=1,0), cercana a la tasa esperada por el tamaño del lenguaje.
+- Implementación independiente no afiliada a HazyResearch ni a Stanford, e incompatible con los checkpoints NCM publicados por sus autores.
+- Licencia MIT, que permite uso comercial, pero el alcance práctico del modelo es exclusivamente de investigación y docencia.
+- Requiere GPU Metal o CUDA; la CPU solo se usa para tests de exactitud.
+- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/janmusic/ncm-mlx-tinyworld
-- Repositorio de la implementación: https://github.com/janmus1c/ncm-mlx
-- Paper de Next-Concept Modeling (Kumbong et al.): https://arxiv.org/abs/2610.14162
-- Documentación de uv, necesaria para reproducir: https://docs.astral.sh/uv/
+- Hugging Face: https://huggingface.co/janmusic/ncm-mlx-tinyworld
+- Repositorio GitHub: https://github.com/janmus1c/ncm-mlx
+- Documentación: https://janmus1c.github.io/ncm-mlx/
+- Working paper (Zenodo): https://doi.org/10.5281/zenodo.23953213
+- Paper NCM (arXiv): https://arxiv.org/abs/2610.14162
+- Demo de replay (Hugging Face Spaces): https://huggingface.co/spaces/janmusic/NCM-Refinement-Replay

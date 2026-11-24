@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/WizardMath-AgentEvol-GGUF",
+  "slug": "mradermacher-wizardmath-agentevol-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WizardMath-AgentEvol-GGUF",
+  "created_at": "2025-09-04T21:25:10.000Z",
+  "updated_at": "2026-11-24T00:35:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "evolutionary",
+    "language-model",
+    "en",
+    "base_model:openfree/WizardMath-AgentEvol",
+    "base_model:quantized:openfree/WizardMath-AgentEvol",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 143,
+  "trending_score": 0,
+  "parameters": 6738423808,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564882880,
+  "storage_human": "59.6 GB",
+  "context_length": 2048,
+  "base_model": "openfree/WizardMath-AgentEvol",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

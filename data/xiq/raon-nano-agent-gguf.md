@@ -2,135 +2,114 @@
 
 ## Resumen
 
-Raon-nano-agent es un modelo de lenguaje de 3.130.811.440 parámetros (aproximadamente 3,13 mil millones) publicado por el usuario xiq en Hugging Face, distribuido en formato GGUF para su uso con llama.cpp. Se trata de un ajuste fino del modelo base `xiq/Raon-1-nano-heretic`, sobre el que se han fusionado cuatro LoRAs entrenadas para tareas de agente: control de interfaz de Android a partir del árbol de accesibilidad textual, navegación web (a partir de Mind2Web), conversación en persa y descompilación de ensamblador a C. La escala de fusión elegida, 0,75, se seleccionó sobre filas no vistas durante el entrenamiento.
+Raon-nano-agent es un modelo de lenguaje de 3.130.811.440 parámetros (aproximadamente 3,13 mil millones) especializado en control de agentes, distribuido en formato GGUF por el usuario xiq. Se construye a partir del modelo base `xiq/Raon-1-nano-heretic`, al que se le han fusionado cuatro LoRAs independientes orientadas a tareas concretas: control de interfaz de Android mediante árbol de accesibilidad textual, navegación web agéntica, conversación en persa y descompilación de ensamblador a C.
 
-El modelo se presenta explícitamente como experimental y su propia model card advierte de que las métricas publicadas miden principalmente la capacidad de aprender formatos de salida (JSON estructurado para acciones de agente), no la calidad frente a otros agentes del mercado. La licencia es Apache 2.0 y el repositorio ocupa 11,7 GB, lo que sugiere la publicación de varias cuantizaciones GGUF del mismo modelo.
+El modelo es experimental y su propia model card lo presenta como tal. La relevancia actual reside en que demuestra una técnica de fusión de LoRAs (merge scale de 0,75, elegido sobre filas no vistas) que transforma un modelo base que apenas generaba JSON válido en uno que produce JSON correcto el 100 % de las veces en las tareas evaluadas, con mejoras drásticas en formato y estructura de acciones. Es, por tanto, más interesante como caso de estudio de ajuste fino multi-tarea que como modelo de producción.
 
-Su relevancia actual es acotada y muy específica: cubre un nicho poco atendido (agentes móviles y web con salida JSON estricta, más descompilación asistida) sobre una arquitectura que requiere una rama no mainline de llama.cpp (la de KRAFTON, etiqueta `raon-1-nano-preview`), lo que limita su adopción directa en producción sin trabajo adicional de integración.
+La licencia es Apache 2.0 y la arquitectura subyacente no se detalla en la información disponible; el autor indica que llama.cpp convencional aún no carga esta arquitectura y remite a una rama específica del repositorio de KRAFTON. El contexto recomendado en los ejemplos de ejecución es de 16 384 tokens.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base `xiq/Raon-1-nano-heretic`; requiere la rama `raon-1-nano-preview` de llama.cpp de KRAFTON, lo que indica una arquitectura no soportada por llama.cpp mainline) |
-| Parametros totales | 3.130.811.440 (aproximadamente 3,13 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 16.384 tokens (valor usado en el ejemplo de ejecución con `--ctx-size 16384`; no se especifica el máximo soportado) |
-| Tipos de cuantizacion | GGUF; se menciona explícitamente Q4_K_M en el ejemplo de ejecución, sin listado completo de variantes |
-| Idiomas soportados | no disponibles oficialmente; el entrenamiento incluye datos de chat en persa (traducidos automáticamente) y datos en inglés de AndroidControl y Mind2Web |
+| Arquitectura | no disponible (el autor indica que requiere una rama específica de llama.cpp, `raon-1-nano-preview`, de KRAFTON) |
+| Parámetros totales | 3.130.811.440 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 16 384 tokens (valor usado en los ejemplos de ejecución del autor) |
+| Tipos de cuantización | GGUF; el ejemplo de la model card usa Q4_K_M |
+| Idiomas soportados | no disponible como lista formal; se entrena explícitamente para persa y las tareas de agente se formulan en inglés |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repositorio de 11,7 GB); el modelo base se distribuye en safetensors según los metadatos |
+| Formato de pesos | GGUF (repo de 11,7 GB); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se detalla la arquitectura interna del modelo base en la información disponible. El hecho de que la model card indique que llama.cpp mainline no puede cargar esta arquitectura y remita a una rama específica de KRAFTON (`raon-1-nano-preview`) sugiere una variante de transformer no estándar, pero no se confirma el tipo exacto (transformer denso, híbrido, SSM u otro).
+La información disponible no detalla la arquitectura interna del modelo base `xiq/Raon-1-nano-heretic` (no se especifica si es un transformer denso, MoE o híbrido). Lo que sí se documenta es el proceso de ajuste: se fusionaron cuatro LoRAs sobre el modelo base, cada una entrenada con un conjunto de datos distinto convertido a filas de chat. Las cuatro habilidades son: control de UI de Android a partir del árbol de accesibilidad textual (datos de AndroidControl), agente de navegación web (Mind2Web, split de entrenamiento), chat en persa (Maux-Persian-SFT-30k, traducido automáticamente) y descompilación de ensamblador a C (decompile-bench de LLM4Binary).
 
-El entrenamiento consiste en la fusión de cuatro LoRAs sobre el modelo base, con una escala de fusión de 0,75 elegida mediante evaluación sobre filas no vistas. Los datos de cada LoRA son: AndroidControl convertido a filas de chat para control de UI Android; osunlp/Mind2Web (split de entrenamiento) convertido a filas de chat para agente de navegación web; xmanii/Maux-Persian-SFT-30k (traducido automáticamente) para chat en persa; y LLM4Binary/decompile-bench para descompilación de ensamblador a C. No se especifica el número total de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO. Las LoRAs se entrenaron con el modo de razonamiento desactivado, por lo que el modelo debe ejecutarse con `--reasoning off` (`enable_thinking=false`).
+La escala de fusión elegida fue 0,75, seleccionada evaluando sobre filas no vistas. Un detalle técnico relevante es que las LoRAs se entrenaron con el modo de razonamiento (thinking) desactivado, por lo que el autor recomienda ejecutar con `--reasoning off` o `enable_thinking=false`. No se documentan el volumen total de tokens de entrenamiento, la composición completa del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional, con soporte declarado de chat multi-turno.
-- Control de interfaz de Android: genera acciones estructuradas en JSON a partir de un árbol de accesibilidad textual.
-- Agente de navegación web: produce acciones JSON (tipo de acción, elemento objetivo) a partir de observaciones de página, entrenado con Mind2Web.
-- Chat en persa, aunque con calidad experimental y regresión medida en la proporción de caracteres en persa.
-- Descompilación de ensamblador a código C, con salida plausible pero no verificada como compilable.
-- Salida en JSON crudo: en las evaluaciones, el 100 % de las generaciones en Android y web fueron JSON puro tras la fusión.
-- No se documenta soporte de tool calling genérico, function calling estándar, visión, audio ni modo de razonamiento (de hecho, el thinking debe desactivarse).
+- Control de interfaz de Android: genera acciones estructuradas en JSON a partir de un árbol de accesibilidad textual, incluyendo tipo de acción y elemento objetivo.
+- Navegación web agéntica: produce acciones de navegador (clic, selección de elemento) en formato JSON sobre observaciones de página.
+- Conversación en persa: respuestas en prosa en dicho idioma, aunque el propio autor las describe como cortas y superficiales.
+- Descompilación de ensamblador a C: genera código C plausible a partir de ensamblador.
+- Salida JSON estructurada: el 100 % de las generaciones evaluadas en Android y web fueron JSON válido tras la fusión.
+- Soporte de tool calling / function calling: no disponible de forma explícita en la información.
+- Soporte de agentes multi-paso: orientado a agentes de un paso (predicción de la siguiente acción); no se documenta razonamiento multi-paso.
+- Modo thinking: desactivado por diseño en el entrenamiento de las LoRAs.
 
 ## Casos de uso
 
-- Automatización de pruebas de UI en Android: el modelo puede generar acciones JSON (clic, entrada de texto, desplazamiento) a partir del árbol de accesibilidad, lo que permite construir agentes de test que operen sobre la jerarquía de vistas en lugar de coordenadas; su precisión en el elemento objetivo es baja (aproximadamente 9 %), por lo que encaja mejor como generador de candidatos que como controlador autónomo.
-- Agente de navegación web supervisado: con un 50 % de coincidencia exacta en las filas evaluadas y un 90 % de acierto en el tipo de acción, es adecuado para prototipos de scraping guiado o asistentes de formularios donde un humano valide la acción propuesta.
-- Extracción estructurada de acciones en pipelines de automatización: al producir JSON crudo de forma consistente, puede integrarse como paso intermedio que transforma observaciones textuales en comandos parseables por un orquestador.
-- Asistencia a la descompilación en análisis de malware o ingeniería inversa: dado un fragmento de ensamblador, genera C legible como punto de partida para un analista; la F1 de tokens de código medida es de 19,12, por lo que requiere revisión manual obligatoria.
-- Prototipado de asistentes en persa: útil para experimentación con conversación en ese idioma, siempre que se acepte que la proporción de respuestas en persa bajó al 61,48 % tras la fusión y que la superposición de palabras con la referencia es de aproximadamente el 11 %.
-- Investigación sobre fusión de LoRAs: el repositorio incluye un informe de benchmarks (`bench_report.json`) con comparativas base frente a fusionado sobre filas no vistas, lo que lo convierte en un caso de estudio reproducible para quienes investigan técnicas de merge de adaptadores.
+- Automatización de pruebas de UI en Android: el modelo puede generar secuencias de acciones (clics, entradas de texto) sobre el árbol de accesibilidad para pilotar tests instrumentados, aunque la precisión de elemento objetivo (~9 %) limita su uso a escenarios tolerantes a fallos.
+- Asistente de navegación web supervisado: dado que acierta el tipo de acción el 90 % de las veces y el elemento objetivo el 57,5 %, es viable como generador de borradores de acciones que un humano o un verificador posterior valide antes de ejecutar.
+- Extracción estructurada de acciones en pipelines de agentes: su capacidad de emitir JSON válido al 100 % lo hace útil como formateador de decisiones dentro de un orquestador que valide el esquema.
+- Prototipado de asistentes en persa: para demos y pruebas de concepto de chat en persa con respuestas breves, aceptando la limitación de profundidad y la calidad de la traducción automática del corpus.
+- Investigación en descompilación asistida: como generador de primeras versiones de código C a partir de ensamblador, siempre con revisión manual y verificación de compilación posterior.
+- Estudio de técnicas de fusión de LoRAs: el modelo sirve como referencia reproducible para investigar cómo afecta la escala de merge al equilibrio entre tareas y al formato de salida.
+- Despliegue local en entornos con recursos limitados: al ser un GGUF de ~3,1 B de parámetros en Q4_K_M, cabe en GPUs de consumo y permite experimentar con agentes sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
-Los datos provienen de la model card y comparan el modelo base `xiq/Raon-1-nano-heretic` con el modelo fusionado, ambos en bf16 desde los pesos de Hugging Face, con thinking desactivado y decodificación greedy, sobre filas no vistas durante el entrenamiento.
+Los datos provienen de la propia model card, comparando el modelo base con el fusionado, ambos en bf16 desde los pesos de HF, thinking off, decodificación greedy y sobre filas nunca entrenadas. Los tamaños de muestra son pequeños (40 filas en Android y web, 8 en descompilación).
 
-### Control de UI Android (40 filas generadas)
-
-| Métrica | Base | Fusionado | Cambio |
+| Tarea y métrica | Base | Fusionado | Cambio |
 |---|---:|---:|---:|
-| Pérdida en held-out | 3,38 | 0,32 | -3,06 |
-| JSON crudo únicamente (%) | 0,00 | 100,00 | +100,00 |
-| Tipo de acción correcto (%) | 0,00 | 62,50 | +62,50 |
-| Elemento objetivo correcto (%) | 0,00 | 9,09 | +9,09 |
-| Coincidencia exacta (%) | 0,00 | 10,00 | +10,00 |
+| Android: loss en held-out | 3,38 | 0,32 | −3,06 |
+| Android: JSON válido % | 0,00 | 100,00 | +100,00 |
+| Android: tipo de acción % | 0,00 | 62,50 | +62,50 |
+| Android: elemento objetivo % | 0,00 | 9,09 | +9,09 |
+| Android: exact match % | 0,00 | 10,00 | +10,00 |
+| Web: loss en held-out | 3,89 | 0,22 | −3,67 |
+| Web: JSON válido % | 17,50 | 100,00 | +82,50 |
+| Web: tipo de acción % | 30,00 | 90,00 | +60,00 |
+| Web: elemento objetivo % | 0,00 | 57,50 | +57,50 |
+| Web: exact match % | 0,00 | 50,00 | +50,00 |
+| Persa: loss en held-out | 1,63 | 1,01 | −0,62 |
+| Persa: respuesta en persa % | 98,92 | 94,98 | −3,94 |
+| Persa: word F1 % | 13,37 | 15,86 | +2,48 |
+| Persa: bucle/degeneración % | 85,71 | 23,81 | −61,90 |
+| Asm→C: loss en held-out | 3,15 | 1,55 | −1,60 |
+| Asm→C: similitud de caracteres % | 9,67 | 11,02 | +1,34 |
+| Asm→C: code token F1 % | 13,35 | 19,12 | +5,77 |
 
-### Agente de navegación web (40 filas generadas)
-
-| Métrica | Base | Fusionado | Cambio |
-|---|---:|---:|---:|
-| Pérdida en held-out | 3,89 | 0,22 | -3,67 |
-| JSON crudo únicamente (%) | 17,50 | 100,00 | +82,50 |
-| Tipo de acción correcto (%) | 30,00 | 90,00 | +60,00 |
-| Elemento objetivo correcto (%) | 0,00 | 57,50 | +57,50 |
-| Coincidencia exacta (%) | 0,00 | 50,00 | +50,00 |
-
-### Chat en persa (8 filas generadas)
-
-| Métrica | Base | Fusionado | Cambio |
-|---|---:|---:|---:|
-| Pérdida en held-out | 1,63 | 1,01 | -0,62 |
-| Respuesta en persa (%) | 96,16 | 61,48 | -34,68 |
-| F1 de palabras frente a referencia (%) | 9,07 | 10,96 | +1,89 |
-| Palabras medias | 19,25 | 17,00 | -2,25 |
-
-### Descompilación de ensamblador a C (8 filas generadas)
-
-| Métrica | Base | Fusionado | Cambio |
-|---|---:|---:|---:|
-| Pérdida en held-out | 3,15 | 1,55 | -1,60 |
-| Similitud de caracteres (%) | 9,67 | 11,02 | +1,34 |
-| F1 de tokens de código (%) | 13,35 | 19,12 | +5,77 |
-
-Advertencias del propio autor: el modelo base nunca fue entrenado en estos formatos de salida, por lo que gran parte de la mejora en JSON refleja el aprendizaje del formato y no la calidad frente a otros agentes; las muestras son pequeñas (40 filas en Android y web, 8 en persa y descompilación); Android es débil (el elemento objetivo solo se acierta en torno al 9 %, con frecuente recurso a clics por coordenadas); persa empeora en una métrica; y las filas de Android y web provienen de los mismos datasets de entrenamiento (posiblemente los mismos episodios o sitios), por lo que esas cifras son optimistas.
+El propio autor advierte que el modelo base nunca fue entrenado en estos formatos de salida, por lo que buena parte de la mejora en JSON refleja el aprendizaje del formato y no una comparación justa frente a otros agentes. No se han publicado comparaciones con modelos de referencia en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 3,13 mil millones de parámetros, en Q4_K_M el peso ronda los 1,9-2,0 GB; con contexto de 16.384 tokens hay que sumar la caché KV, que depende de la arquitectura (no disponible). En bf16 el peso completo ocupa aproximadamente 6,3 GB, más caché KV.
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU con al menos 4-6 GB de VRAM libre debería poder ejecutar la cuantización Q4_K_M, y una GPU de 8-12 GB permite contextos largos y mayor paralelismo.
-- Cabe en GPU de consumo: previsiblemente sí, en tarjetas tipo RTX 3060, RTX 4060 o superiores con la cuantización Q4_K_M; no confirmado por el autor.
-- Opciones de despliegue: llama.cpp, obligatoriamente desde la rama `raon-1-nano-preview` de KRAFTON (`git clone -b raon-1-nano-preview https://github.com/krafton-ai/llama.cpp`), compilando con `-DGGML_CUDA=ON` para GPU. Se usan `llama-cli` y `llama-server`; llama.cpp mainline no carga la arquitectura. No se documenta compatibilidad con vLLM, TGI, Ollama ni otros motores.
-- Latencia y throughput: no disponibles; no se publican mediciones.
+- VRAM estimada: no disponible de forma explícita; para un modelo de ~3,1 B en Q4_K_M cabe holgadamente en GPUs de consumo (8 GB o menos), aunque el repo completo ocupa 11,7 GB por incluir varias cuantizaciones.
+- GPU recomendadas: no especificadas por el autor. Cualquier GPU con soporte CUDA para llama.cpp (RTX 3060/4090, A100, H100) es suficiente; el ejemplo de compilación usa `GGML_CUDA=ON`.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 8 GB o más en cuantización Q4_K_M.
+- Opciones de despliegue: llama.cpp, pero obligatoriamente la rama `raon-1-nano-preview` de KRAFTON (`github.com/krafton-ai/llama.cpp`), ya que la línea principal no carga esta arquitectura. El ejemplo usa `llama-server` con `--reasoning off --ctx-size 16384`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparaciones publicadas por el autor frente a otros modelos. Como referencia de categoría, se comparan alternativas de tamaño similar (aproximadamente 3 mil millones de parámetros) orientadas a agentes o a despliegue en dispositivos:
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. Como referencia estructural, se trata de un modelo de ~3,1 B parámetros, licencia Apache 2.0 y formato GGUF, especializado en agentes; los modelos comparables de esa franja (por ejemplo, modelos de 3 B orientados a agentes) no aparecen evaluados en la model card, por lo que la comparación cuantitativa no está disponible.
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---:|---|---|---|---|
-| xiq/raon-nano-agent | 3,13 mil M | 16.384 (usado en el ejemplo) | Apache 2.0 | GGUF | Requiere rama no mainline de llama.cpp; benchmarks solo frente a su base |
-| Qwen2.5-3B-Instruct | 3,09 mil M | 32.768 | Apache 2.0 | safetensors, GGUF | Soporte amplio en llama.cpp, vLLM y Ollama; sin entrenamiento específico de agente móvil |
-| Llama-3.2-3B-Instruct | 3,21 mil M | 131.072 | Llama 3.2 Community License | safetensors, GGUF | Mayor contexto; licencia con restricciones para grandes empresas |
-| Phi-3.5-mini-instruct | 3,82 mil M | 131.072 | MIT | safetensors, GGUF | Enfoque en razonamiento y código; sin capacidades de agente de UI |
-
-Los datos de parámetros y contexto de los modelos comparados son de conocimiento general y no provienen de la información proporcionada sobre este modelo; el rendimiento relativo no está disponible porque el autor no publica comparaciones cruzadas.
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Raon-nano-agent | 3,13 B | 16 384 (uso recomendado) | Apache 2.0 | GGUF |
+| Alternativas de ~3 B para agentes | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modelo explícitamente experimental: el propio autor advierte de que las métricas miden principalmente el aprendizaje de formatos de salida frente a un base que producía texto degenerado o en bucle.
-- Android es débil: el tipo de acción se acierta en torno al 62,5 % de los casos, pero el elemento objetivo solo en aproximadamente el 9 %, con recurso frecuente a clics por coordenadas.
-- Persa con regresión: la proporción de respuestas en persa cayó del 96,16 % al 61,48 % y la superposición de palabras con la referencia es de aproximadamente el 11 %; el autor recomienda tratarlo como experimental.
-- Descompilación no verificada: la salida es C plausible pero no se comprueba que compile ni que reproduzca el comportamiento del binario original.
-- Riesgo de alucinación: elevado en tareas generativas abiertas, especialmente en persa y descompilación, dado el bajo F1 medido.
-- Sesgos: no documentados; los datos de persa son traducciones automáticas, lo que puede introducir artefactos de traducción, y los de Android y web provienen de datasets públicos concretos con posible sesgo de dominio.
-- Muestras de evaluación pequeñas (8 filas en persa y descompilación), lo que hace que una sola fila mueva la métrica 12,5 puntos.
-- Optimismo en las cifras de Android y web: las filas de evaluación provienen de los mismos datasets de entrenamiento, posiblemente con los mismos episodios o sitios.
-- Restricciones de despliegue: no funciona con llama.cpp mainline; requiere la rama de KRAFTON, lo que complica el mantenimiento, la integración en producción y el soporte de otros motores como vLLM u Ollama.
-- El modo de razonamiento debe desactivarse (`--reasoning off`), por lo que no se aprovecha el thinking del modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero la falta de garantías y la calidad experimental desaconsejan su uso en producción sin evaluación propia.
+- Modelo explícitamente experimental según su autor; no recomendado para producción sin validación adicional.
+- Android es débil: el tipo de acción acierta el 62,5 %, pero el elemento objetivo exacto solo el 9,09 %; el modelo recurre con frecuencia a clics por coordenadas.
+- Las métricas de Android y web proceden de los mismos datasets de entrenamiento (filas distintas, posiblemente mismos episodios o sitios), por lo que son optimistas.
+- Muestras muy pequeñas: 40 filas en Android y web, 8 en descompilación; una sola fila mueve las métricas 2,5 y 12,5 puntos respectivamente.
+- Persa: respuestas cortas y superficiales, corpus traducido automáticamente, y la proporción de respuestas en persa baja ligeramente (98,92 % → 94,98 %).
+- Descompilación: las salidas son C plausible pero no verificado que compile ni que reproduzca el comportamiento del binario original.
+- Riesgo de alucinación y de degeneración en bucle: aunque el bucle baja del 85,71 % al 23,81 % en persa, sigue presente en casi una de cada cuatro generaciones.
+- Requiere una rama no estándar de llama.cpp, lo que complica el despliegue y la integración con herramientas estándar.
+- Licencia Apache 2.0 permite uso comercial, pero las limitaciones técnicas y la falta de validación desaconsejan hacerlo sin evaluación propia.
+- No se documentan sesgos específicos ni lista formal de idiomas soportados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xiq/raon-nano-agent-GGUF
 - Modelo base: https://huggingface.co/xiq/Raon-1-nano-heretic
-- Rama de llama.cpp de KRAFTON: https://github.com/krafton-ai/llama.cpp (rama `raon-1-nano-preview`)
-- Dataset Mind2Web (osunlp): https://huggingface.co/datasets/osunlp/Mind2Web
-- Dataset Maux-Persian-SFT-30k (xmanii): https://huggingface.co/datasets/xmanii/Maux-Persian-SFT-30k
-- Dataset decompile-bench (LLM4Binary): https://huggingface.co/datasets/LLM4Binary/decompile-bench
-- Dataset AndroidControl: no disponible enlace directo en la información proporcionada
-- Informe de benchmarks: `bench_report.json` dentro del repositorio del modelo
+- Rama de llama.cpp requerida: https://github.com/krafton-ai/llama.cpp (rama `raon-1-nano-preview`)
+- Dataset AndroidControl: no disponible como enlace directo en la información
+- Dataset Mind2Web (osunlp/Mind2Web): no disponible como enlace directo en la información
+- Dataset Maux-Persian-SFT-30k (xmanii): no disponible como enlace directo en la información
+- Dataset decompile-bench (LLM4Binary): no disponible como enlace directo en la información

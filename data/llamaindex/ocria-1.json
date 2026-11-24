@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "id": "llamaindex/OCRia-1",
+  "slug": "llamaindex-ocria-1",
+  "author": "llamaindex",
+  "url": "https://huggingface.co/llamaindex/OCRia-1",
+  "created_at": "2026-11-13T21:52:49.000Z",
+  "updated_at": "2026-11-24T01:29:52.000Z",
+  "license": "ocria-1-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "joblib",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "pdf",
+    "markdown",
+    "document-parsing",
+    "tables",
+    "charts",
+    "parsebench",
+    "conversational",
+    "en",
+    "arxiv:2611.00092",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10380452104,
+  "storage_human": "10.4 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LlamaIndex | AI Agents for Document OCR + Workflows",
+      "url": "https://www.llamaindex.ai/",
+      "snippet": "npm install @llamaindex/liteparse 02 LiteParse Parse Any Document. Locally. Fast. Open-source document parsing from the team …Read more"
+    },
+    {
+      "title": "LlamaIndex Framework, by the makers of LlamaParse",
+      "url": "https://developers.llamaindex.ai/python/framework/",
+      "snippet": "LlamaIndex is the company behind LlamaParse, the document parsing platform for AI agents. The LlamaIndex framework is our …Read more"
+    },
+    {
+      "title": "LlamaIndex - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LlamaIndex",
+      "snippet": "LlamaIndex specializes in agentic optical character recognition (OCR) and document intelligence infrastructure, developing tools and …Read more"
+    },
+    {
+      "title": "AI Agent Framework For Context-Aware Apps - llamaindex.ai",
+      "url": "https://www.llamaindex.ai/llamaindex",
+      "snippet": "The developer-trusted framework for building context-aware AI agents LlamaIndex empowers developers with everything needed to …Read more"
+    },
+    {
+      "title": "Qu’est-ce que LlamaIndex - IBM",
+      "url": "https://www.ibm.com/fr-fr/think/topics/llamaindex",
+      "snippet": "LlamaIndex est un cadre d’harmonisation des données open source pour la production d’applications de grands modèles de langage …Read more"
+    }
+  ]
+}

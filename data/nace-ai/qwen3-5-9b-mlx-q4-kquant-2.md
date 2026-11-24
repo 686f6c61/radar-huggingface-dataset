@@ -2,111 +2,98 @@
 
 ## Resumen
 
-Qwen3.5-9B-MLX-Q4-KQuant es una cuantización de 4 bits del modelo multimodal Qwen/Qwen3.5-9B, publicada por nace-ai para el ecosistema MLX de Apple. El paquete reduce los pesos del modelo de lenguaje a 5,29 GB (4,726 bits por peso de media) manteniendo intacta la torre de visión del modelo base, fijada por hash (333 tensores, 912 MB). El resultado es un paquete MLX estándar que se carga con `mlx-lm` sin dependencias adicionales y que conserva la plantilla de chat y el tokenizador originales byte a byte.
+Qwen3.5-9B-MLX-Q4-KQuant es una cuantización de 4 bits del modelo Qwen3.5-9B de Alibaba Qwen, publicada por el usuario nace-ai y empaquetada específicamente para Apple Silicon mediante la librería MLX. El modelo base es un transformer multimodal de aproximadamente 9.410 millones de parámetros que acepta entradas de imagen y texto (pipeline `image-text-to-text`) y está orientado a conversación, con modo de razonamiento ("thinking") activado por defecto. Esta versión concreta emplea una cuantización mixta de 4 bits con algunas capas en 5 bits (`down_proj` e `in_proj_z`), lo que según el autor la sitúa unas 2,7 veces más cerca del modelo BF16 original que el pack de 4 bits de mlx-community (KL 0,030 frente a 0,081).
 
-El modelo base es un transformer denso de 9.409.813.744 parámetros con capacidad image-text-to-text, es decir, acepta imágenes y texto como entrada y genera texto. Esta cuantización está pensada para ejecutar inferencia local en hardware Apple Silicon, donde MLX aprovecha la memoria unificada del sistema en lugar de depender de VRAM dedicada.
+La relevancia de esta ficha radica en su enfoque: no es un modelo nuevo, sino un pack de pesos optimizado para ejecutar un modelo de 9B multimodal en Macs con memoria unificada de 16 GB o más, con un peso de ficheros de 6,2 GB para la variante Q4 y 7,1 GB para Q5. El autor incluye además comparativas de divergencia KL frente a otros packs MLX públicos y probó la inferencia en varias herramientas del ecosistema Apple (mlx-lm, mlx-vlm, LM Studio, SwiftLM, LocalAI, Osaurus, vllm-mlx, mlx-openai-server).
 
-La relevancia de este paquete reside en su metodología de evaluación: el autor publica la divergencia KL frente al modelo bf16 tanto en texto original (0,0301) como en texto de chat y tool-calls (0,1038), junto con los resultados de 20 pruebas de tool calling en las que las 20 colocaron la llamada y completaron el ciclo. Esto permite comparar la pérdida de calidad frente a otras seis cuantizaciones MLX del mismo modelo base con datos verificables.
+La licencia es Apache 2.0, heredada del modelo base, y el idioma declarado en la model card es únicamente inglés. El repo tiene 352 descargas y 1 like en el momento de la consulta, con fecha de creación en noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal (image-text-to-text); detalles internos del modelo base no disponibles |
+| Arquitectura | Transformer multimodal (image-text-to-text) del modelo base Qwen3.5-9B; pesos cuantizados para MLX |
 | Parametros totales | 9.409.813.744 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | 4 bits con KQuant (4,726 bits por peso de media); existe variante Q5 del mismo autor |
-| Idiomas soportados | Ingles (segun la model card y los tags del repo) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors para MLX (3 archivos, 6.201.878.976 bytes en total) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4 mixta (~4,2 bits por peso, 4,7 contando escalas; `down_proj` e `in_proj_z` en 5 bits) y Q5 mixta (~5,05 bits por peso, 5,55 contando escalas; 5/6/8 bits por tensor) |
+| Idiomas soportados | en (inglés) según la model card |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (pack MLX) |
 
 ## Arquitectura y entrenamiento
 
-El paquete es una cuantización, no un entrenamiento nuevo. El autor aplica KQuant, su marco de cuantización para MLX, que ajusta cada grupo de pesos contra el comportamiento del modelo en texto real en lugar de limitarse a minimizar el error sobre los valores de los pesos. El resultado se escribe como un paquete MLX ordinario: los mismos archivos y el mismo formato que cualquier otra cuantización MLX, sin pasos de instalación adicionales.
+No se dispone de información sobre la arquitectura interna del modelo base Qwen3.5-9B en la documentación proporcionada: no se detalla si es un transformer denso, MoE o híbrido, ni el número de tokens de entrenamiento, la composición del dataset o si hubo fases de RLHF/DPO. Lo que sí documenta el autor es el proceso de cuantización: un esquema mixto por tensor que asigna 4 bits a la mayoría de pesos y 5 bits a `down_proj` e `in_proj_z` en la variante Q4, y 5/6/8 bits por tensor en la variante Q5. El autor reporta que la Q4 queda a una divergencia KL de 0,030 respecto al BF16 original y la Q5 a 0,010, frente a 0,081 del pack de 4 bits de mlx-community.
 
-Los pesos del modelo de lenguaje ocupan 5.289.699.840 bytes a 4,72622 bits por peso de media. La torre de visión del modelo base se conserva sin cuantizar, fijada por hash (333 tensores, 912.020.960 bytes). El tokenizador y la plantilla de chat son idénticos byte a byte a los del modelo base. La ejecución de referencia se realizó con mlx 0.32.4, mlx-lm 0.32.2, transformers 5.22.2 y numpy 2.5.4 sobre una NVIDIA H200 de 151 GB. No se dispone de información sobre los datos de entrenamiento del modelo base Qwen3.5-9B ni sobre si hubo RLHF o DPO.
+El modelo base incorpora un modo de razonamiento que genera contenido en `reasoning_content` antes de la respuesta final, y admite desactivarlo mediante `reasoning_effort: "none"` o `enable_thinking: false` en la plantilla de chat. También soporta entrada de imágenes mediante partes `image_url` en formato OpenAI.
 
 ## Capacidades
 
-- Generación de texto conversacional con plantilla de chat compatible con el modelo base.
-- Entrada multimodal image-text-to-text: procesa imágenes junto con texto gracias a la torre de visión preservada.
-- Tool calling y function calling: la model card reporta 20 de 20 pruebas de tool calling con éxito (colocación de la llamada y ciclo completo).
-- Razonamiento multi-turno en formato de chat.
-- Modo "thinking-off" documentado en las pruebas del autor (las 20 pruebas de tool calling se ejecutaron con el modo de pensamiento desactivado).
-- Soporte de inglés como idioma principal según la model card.
-- No se documentan capacidades de audio ni de generación de imágenes.
+- Generación de texto conversacional multi-turno.
+- Razonamiento con modo "thinking" activado por defecto (contenido separado en `reasoning_content`).
+- Comprensión de imágenes (image-text-to-text): acepta URLs http(s) o data URLs base64.
+- Tool calling / function calling: el autor verificó que varias herramientas (Kapitsa, mlx-lm, mlx-vlm, LM Studio, SwiftLM, LocalAI, Osaurus, vllm-mlx, mlx-openai-server) colocaron correctamente una llamada a herramienta; solo `llm-tool` de Apple no lo hizo.
+- Aritmética y tareas de razonamiento elementales (el ejemplo de la model card usa `17 * 23`).
+- Capacidades multilingües: la model card solo declara inglés; no se documentan otros idiomas.
 
 ## Casos de uso
 
-- Asistentes locales en macOS: el paquete se ejecuta con `mlx-lm` sobre Apple Silicon aprovechando la memoria unificada, lo que permite desplegar un modelo de 9B multimodal en un portátil o Mac Studio sin GPU dedicada.
-- Automatización de tool calling en flujos de agente: las 20 pruebas de llamada a herramientas con éxito y la KL medida específicamente sobre texto de tool-calls (0,1038) lo hacen adecuado para pipelines donde el modelo debe emitir llamadas estructuradas a APIs.
-- Procesamiento de documentos con imágenes: al conservar la torre de visión, puede recibir capturas, diagramas o formularios escaneados junto con instrucciones textuales y devolver descripciones o extracciones en texto.
-- Prototipado rápido de aplicaciones multimodales: al ser un paquete MLX estándar, se integra en scripts de `mlx-lm` sin capas de compatibilidad adicionales, lo que acelera la iteración en entornos de desarrollo sobre Mac.
-- Evaluación comparativa de cuantizaciones: los datos de KL publicados (texto original y chat/tool-calls) permiten usarlo como referencia para medir el impacto de distintas estrategias de cuantización en un mismo modelo base.
-- Despliegue con requisitos de memoria ajustados: con 5,29 GB de pesos de lenguaje frente a los 5,04 GB de las cuantizaciones mlx-community y lmstudio-community, ofrece una alternativa con mejor fidelidad al bf16 (KL 0,0301 frente a 0,0814 y 0,0806 respectivamente) a costa de unos 250 MB adicionales.
-- Chats conversacionales multirregreso en local: la plantilla de chat y el tokenizador idénticos al modelo base garantizan compatibilidad con aplicaciones existentes construidas para Qwen3.5-9B.
+- Asistente conversacional local en Mac: el pack Q4 (6,2 GB) cabe en equipos con 16 GB o más de memoria unificada, lo que permite ejecutar un modelo de 9B multimodal sin conexión a la nube mediante Kapitsa, mlx-lm o LM Studio.
+- Análisis de imágenes en escritorio: integración con flujos que envían capturas o fotos como `image_url` para descripción, respuesta a preguntas visuales o extracción de información, usando mlx-vlm o el servidor compatible con OpenAI de Kapitsa.
+- Automatización con agentes y tool calling: el modelo coloca llamadas a herramientas en la mayoría de los runtimes MLX probados, lo que permite construir agentes locales que consulten APIs o ejecuten acciones estructuradas.
+- Razonamiento matemático asistido: el modo thinking por defecto está pensado para problemas que requieren pasos intermedios; puede desactivarse para respuestas rápidas en tareas simples.
+- Servidor OpenAI-compatible local: Kapitsa expone endpoints OpenAI, Anthropic y Ollama en `127.0.0.1:8000`, lo que permite sustituir una API remota por inferencia local en herramientas existentes.
+- Prototipado e investigación en Apple Silicon: al ser un pack MLX con métricas de divergencia KL publicadas, sirve para comparar esquemas de cuantización y evaluar el impacto en calidad frente a BF16.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas de fidelidad de cuantización y de tool calling:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas de fidelidad de cuantización:
 
-| Prueba | KQuant Q4 (este repo) | Tokens evaluados |
-|---|---:|---:|
-| KL frente al modelo bf16, texto original (menor es mejor) | 0,0301 | 32.704 |
-| KL frente al modelo bf16, texto de chat y tool-calls (menor es mejor) | 0,1038 | 65.472 |
-| Pruebas de tool calling con éxito (thinking-off) | 20 de 20 | no disponible |
+| Pack | Bits por peso | Tamano descarga | KL a BF16 (menor = mejor) | Memoria recomendada |
+|---|---|---|---|---|
+| Nace Q4 (este repo) | ~4,2 (4,7 con escalas) | 6,2 GB | 0,030 | 16 GB+ |
+| Nace Q5 (este repo) | ~5,05 (5,55 con escalas) | 7,1 GB | 0,010 | 16 GB+ |
+| mlx-community 4-bit (referencia) | 4 | no disponible | 0,081 | no disponible |
 
-Comparativa de fidelidad publicada por el autor (KL sobre texto original, GB de pesos de lenguaje):
-
-| Paquete | GB (lenguaje) | KL texto original |
-|---|---:|---:|
-| KQuant Q5 | 6,213 | 0,0097 |
-| Brooooooklyn UD-Q4_K_XL | 7,169 | 0,0261 |
-| mlx-community OptiQ | 7,101 | 0,0292 |
-| KQuant Q4 (este repo) | 5,290 | 0,0301 |
-| mlx-works oQ4e-mtp | 5,134 | 0,0427 |
-| lmstudio-community 4-bit | 5,038 | 0,0806 |
-| mlx-community 4-bit | 5,038 | 0,0814 |
+El autor indica que su Q4 es 2,7 veces más cercana al BF16 que el pack de 4 bits de mlx-community, con un 5 % más de peso de modelo de lenguaje (5,29 GB frente a 5,04 GB). No se aportan datos de latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: los pesos de lenguaje ocupan 5,29 GB y la torre de visión 912 MB; el repo completo son 6,2 GB. Hay que sumar la memoria del KV cache y del runtime, por lo que se recomienda un mínimo de 8-10 GB de memoria unificada disponible.
-- Hardware objetivo: Apple Silicon con MLX (series M1, M2, M3, M4 y sus variantes Pro, Max y Ultra). La ejecución de referencia del autor se hizo en una NVIDIA H200 de 151 GB, pero el formato MLX está orientado a Apple Silicon.
-- Cabe en GPU de consumo: sí, en equipos Apple con al menos 8-10 GB de memoria unificada; no está pensado para GPUs NVIDIA o AMD de consumo por el formato MLX.
-- Opciones de despliegue: `mlx-lm` (comando `mlx_lm.generate` documentado en la model card). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no soportan el formato MLX de este paquete.
-- Latencia y throughput: no disponibles. El autor no publica mediciones de velocidad.
+- VRAM/RAM estimada: 16 GB o más de memoria unificada para ambas variantes (Q4 6,2 GB, Q5 7,1 GB de descarga, más ~2 GB para conversación). El autor advierte que es una regla aproximada, no una medición.
+- Plataforma: exclusivamente Apple Silicon (MLX); no aplica a GPU NVIDIA o AMD.
+- GPU recomendadas: el autor probó en un M5 Pro; no se especifican otros chips. No cabe en GPUs de consumo tipo RTX 4090 porque el formato es MLX, no GGUF/CUDA.
+- Despliegue: Kapitsa (`kapitsa serve --model 9b:q4`), mlx-lm (`mlx_lm.generate`, `mlx_lm.server`), mlx-vlm, LM Studio con motor MLX, SwiftLM, LocalAI con backend MLX, Osaurus, vllm-mlx, mlx-openai-server y `llm-tool` de Apple.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| nace-ai/Qwen3.5-9B-MLX-Q4-KQuant | 9,41B | no disponible | MLX safetensors 4-bit | Apache 2.0 | KL 0,0301 en texto original; 5,29 GB de pesos de lenguaje |
-| nace-ai/Qwen3.5-9B-MLX-Q5-KQuant | 9,41B | no disponible | MLX safetensors 5-bit | Apache 2.0 | KL 0,0097; 6,21 GB; mayor fidelidad a costa de espacio |
-| mlx-community/Qwen3.5-9B-OptiQ-4bit | 9,41B | no disponible | MLX 4-bit | Apache 2.0 | KL 0,0292; 7,10 GB; más cercano al bf16 pero un 34 % más grande |
-| mlx-community/Qwen3.5-9B-4bit | 9,41B | no disponible | MLX 4-bit | Apache 2.0 | KL 0,0814; 5,04 GB; menor tamaño y peor fidelidad |
+| nace-ai/Qwen3.5-9B-MLX-Q4-KQuant | 9,41 B | no disponible | MLX safetensors | Apache 2.0 | KL 0,030 a BF16; Q4 mixta |
+| mlx-community 4-bit (Qwen3.5-9B) | ~9,4 B (base) | no disponible | MLX | Apache 2.0 (heredada) | KL 0,081 a BF16 según el autor |
+| lmstudio-community 4-bit (Qwen3.5-9B) | ~9,4 B (base) | no disponible | MLX | Apache 2.0 (heredada) | Pack MLX público citado en la comparativa del autor |
+| mlx-works oQ4e-mtp | ~9,4 B (base) | no disponible | MLX | no disponible | Pack MLX público citado en la comparativa del autor |
+
+No se dispone de datos de rendimiento en benchmarks para ninguno de los packs comparados; la única métrica objetiva publicada es la divergencia KL frente al BF16.
 
 ## Limitaciones y advertencias
 
-- Idiomas: la model card declara únicamente inglés; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
-- Fidelidad en tool calling: la KL sobre texto de chat y tool-calls (0,1038) es más de tres veces superior a la de texto original (0,0301), lo que indica mayor desviación en ese tipo de entrada; conviene validar los flujos de agente antes de producción.
-- Plataforma: el formato MLX solo se ejecuta en el ecosistema Apple (mlx-lm); no es portable a vLLM, llama.cpp, Ollama ni TGI sin conversión adicional.
-- Sin benchmarks estándar: no hay datos publicados de MMLU, HumanEval, GSM8K ni similares para este paquete ni para el modelo base en la información disponible, por lo que no se puede comparar su rendimiento de tarea con alternativas.
-- Riesgo de alucinación: inherente a los modelos generativos; no se documentan mitigaciones específicas en esta cuantización.
-- Sesgos: no se documentan sesgos conocidos en la model card; al ser una cuantización, hereda los del modelo base Qwen3.5-9B, no detallados en la información disponible.
-- Contexto: la longitud de contexto no está especificada en la información proporcionada.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen/Qwen3.5-9B por si añaden restricciones adicionales.
-- Madurez: el repo tiene 0 descargas y 0 likes en el momento de la consulta, lo que implica poca validación comunitaria.
+- Solo inglés: la model card declara únicamente `en`; el rendimiento en castellano u otros idiomas no está documentado y podría degradarse.
+- Solo Apple Silicon: el formato MLX no es portable a CUDA, ROCm ni CPU convencional; requiere Macs con memoria unificada suficiente.
+- Longitud de contexto no documentada: no se puede garantizar el comportamiento en conversaciones largas.
+- Riesgo de alucinación: inherente a los modelos generativos; no hay evaluaciones publicadas de fidelidad factual para esta cuantización.
+- La cuantización introduce degradación: aunque el autor reporta KL bajo (0,030 en Q4), no es idéntico al BF16 y puede afectar a tareas sensibles.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.5-9B, que pueden incluir términos adicionales.
+- El modo thinking está activado por defecto y aumenta el consumo de tokens; desactivarlo cambia los parámetros de muestreo recomendados (temp 0,7, top_p 0,8 frente a temp 1,0, top_p 0,95).
+- El autor advierte que la regla de "16 GB+" es aproximada y que `kapitsa doctor` debe verificar el equipo concreto.
+- Repo con muy poca tracción (352 descargas, 1 like): menor validación comunitaria que packs de organizaciones consolidadas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q4-KQuant
+- Hugging Face: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q4-KQuant
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Variante Q5 del mismo autor: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q5-KQuant
-- Cuantización Brooooooklyn UD-Q4_K_XL: https://huggingface.co/Brooooooklyn/Qwen3.5-9B-UD-Q4_K_XL-mlx
-- Cuantización mlx-community OptiQ: https://huggingface.co/mlx-community/Qwen3.5-9B-OptiQ-4bit
-- Cuantización mlx-works oQ4e-mtp: https://huggingface.co/mlx-works/Qwen3.5-9B-oQ4e-mtp
-- Cuantización lmstudio-community 4-bit: https://huggingface.co/lmstudio-community/Qwen3.5-9B-MLX-4bit
-- Cuantización mlx-community 4-bit: https://huggingface.co/mlx-community/Qwen3.5-9B-4bit
-- Resultados de la ejecución de validación: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q4-KQuant/blob/main/results.json
-- Revisión fijada de este paquete: https://huggingface.co/nace-ai/Qwen3.5-9B-MLX-Q4-KQuant/tree/a85825603b69316332aae4c267dc407129ac918b
+- Repositorio de Kapitsa: https://github.com/nace-ai/kapitsa
+- Documentación de mlx-lm: https://github.com/ml-explore/mlx-lm
+- Documentación de mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Assets de la model card (gráfica KL): https://huggingface.co/nace-ai/Qwen3.5-9B-MLX/resolve/main/assets/nace-dark.svg
+- No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

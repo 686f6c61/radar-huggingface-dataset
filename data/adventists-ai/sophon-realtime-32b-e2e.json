@@ -53,9 +53,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "GitHub - adventists-ai/sophon-realtime: Sophon-Realtime v1: open full ...",
+      "title": "GitHub - adventists-ai/sophon-realtime: Open full-duplex voice models ...",
       "url": "https://github.com/adventists-ai/sophon-realtime",
-      "snippet": "Sophon-Realtime v1 is an open full-duplex voice model: it listens while you talk, hears how you say things, and answers with a voice that carries tone of its own. 🚀 Coming soon. Weights, code and docs go live on November 9, 2026 at 10:00 Beijing time (13:00 Melbourne · Nov 8, 18:00 San Francisco). ⭐ Star this repo, or Watch → Custom → Releases, to be notified the moment it's out."
+      "snippet": "Nov 9, 2026 · Sophon-Realtime v1 is an open full-duplex voice model family: it listens while you talk, hears how you say things, and …Read more"
+    },
+    {
+      "title": "adventists-ai/Sophon-Realtime-4B-E2E · Hugging Face",
+      "url": "https://huggingface.co/adventists-ai/Sophon-Realtime-4B-E2E",
+      "snippet": "Nov 16, 2026 · Use it for local demos, companions and characters, and research on turn-taking; use the 32B builds or the hosted API …Read more"
+    },
+    {
+      "title": "Sophon-Realtime 32B E2E – open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/sophon-realtime-32b-e2e",
+      "snippet": "Nov 8, 2026 · Sophon-Realtime 32B E2E is Adventists AI’s full-duplex voice model build. It listens while speaking, supports …Read more"
+    },
+    {
+      "title": "Sophon API Docs",
+      "url": "https://api.adventists.ai/console/docs?lang=en",
+      "snippet": "Sophon is Adventists AI's full-duplex realtime voice model: it listens continuously, decides on its own when you have finished, speaks …Read more"
+    },
+    {
+      "title": "adventists-ai/sophon-realtime | HotRepo",
+      "url": "https://hotrepo.ai/adventists-ai/sophon-realtime",
+      "snippet": "Nov 10, 2026 · What it is Sophon-Realtime v1 is an open family of full-duplex speech models built on a shared 32B brain. The model …Read more"
     }
   ]
 }

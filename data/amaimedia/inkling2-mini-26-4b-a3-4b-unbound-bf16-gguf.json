@@ -41,13 +41,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 619,
   "trending_score": 0,
   "parameters": 26388646440,
   "parameters_human": "26.39B",
-  "storage_bytes": 186123393644,
-  "storage_human": "186.1 GB",
+  "storage_bytes": 49593140957,
+  "storage_human": "49.6 GB",
   "context_length": 1048576,
   "base_model": "thinkingmachines/Inkling-2-Mini",
   "formats": [

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/AMchat-GGUF",
+  "slug": "mradermacher-amchat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AMchat-GGUF",
+  "created_at": "2024-12-22T10:44:55.000Z",
+  "updated_at": "2026-11-24T00:45:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "math",
+    "en",
+    "base_model:axyzdong/AMchat",
+    "base_model:quantized:axyzdong/AMchat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 7737708544,
+  "parameters_human": "7.74B",
+  "storage_bytes": 68856096768,
+  "storage_human": "68.9 GB",
+  "context_length": 8192,
+  "base_model": "axyzdong/AMchat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

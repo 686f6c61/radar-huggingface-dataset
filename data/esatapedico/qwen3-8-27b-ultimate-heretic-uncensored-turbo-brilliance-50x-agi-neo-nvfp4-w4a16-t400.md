@@ -2,90 +2,87 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint cuantizado en NVFP4 (W4A16) del modelo `DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored`, un tune de la familia Qwen3.8 de 27B con ajuste "Heretic/uncensored" y el refinamiento Turbo Brilliance 50x AGI-NEO. El autor del checkpoint cuantizado es `esatapedico`, que no entrena el modelo sino que produce conversiones de pesos optimizadas para servir en vLLM sobre GPUs Blackwell (sm_120).
+Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-W4A16-T400 es un checkpoint cuantizado en NVFP4 (W4A16) del modelo de 27B denso DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored, un fine-tune de Qwen3.8-27B orientado a generacion sin censura ("heretic") y a razonamiento intensivo ("Turbo-Brilliance-50x-AGI-NEO"). Lo publica el usuario esatapedico, que actua como cuantizador, no como autor del modelo base. El checkpoint esta pensado para servir con vLLM en GPUs Blackwell (sm_120) y sigue el patron de excepciones de tipo JC1DA: cuantiza solo las proyecciones `Linear` del transformer y mantiene en BF16 la torre de vision, el cabezal MTP, `lm_head`, las dinamicas DeltaNet y las normas.
 
-La relevancia técnica está en el formato: se trata de un checkpoint `compressed-tensors` con formato `nvfp4-pack-quantized`, es decir, pesos en 4 bits con escalas FP8 E4M3 y tamaño de grupo 16, en modo weight-only (activaciones en 16 bits). Se empaquetan 400 tensores NVFP4 que cubren el MLP de las 64 capas, las proyecciones Q/K/V/O de las 16 capas de atención completa y las proyecciones `in_proj_qkv/z/out_proj` del DeltaNet en las 48 capas de atención lineal. La cabeza de salida, el tower de visión, la cabeza MTP y las dinámicas del Gated DeltaNet se mantienen en BF16.
+La relevancia tecnica esta en la receta de cuantizacion: 400 tensores NVFP4 empaquetados (MLP de las 64 capas, Q/K/V/O de las 16 capas de atencion completa y las proyecciones DeltaNet de las 48 capas de atencion lineal), con escalas FP8 E4M3, grupo de 16 y cuantizacion weight-only sin corpus de calibracion (datafree). El resultado es un unico shard de 20,59 GB que reduce a la mitad el peso del checkpoint BF16 de 27B, manteniendo intactos los componentes sensibles a la precision.
 
-El modelo base es un transformer híbrido denso de 27B parámetros (27.781.427.952 según safetensors) con atención completa combinada con capas Gated DeltaNet, torre de visión y cabeza MTP para decodificación especulativa. El repo pesa 20,6 GB en un único shard y está pensado para servir con vLLM, con soporte indirecto para llama.cpp vía conversión a GGUF con tensores NVFP4 nativos (GGML type 40).
+El modelo base es un hibrido denso de 27B con atencion completa y atencion lineal Gated DeltaNet, torre de vision y cabezal MTP (multi-token prediction) para decodificacion especulativa. La licencia declarada es Apache-2.0. El checkpoint tiene 409 descargas y ningun "like" en el momento de redactar esta ficha, lo que indica una adopcion todavia muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (atención completa + Gated DeltaNet), con torre de visión y cabeza MTP |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 W4A16 (pesos 4 bits, escalas FP8 E4M3, grupo 16, weight-only); resto en BF16 |
-| Idiomas soportados | en, multilingual |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (`compressed-tensors`, `nvfp4-pack-quantized`); GGUF vía conversión |
+| Arquitectura | Transformer hibrido: 16 capas de atencion completa + 48 capas de atencion lineal Gated DeltaNet, con torre de vision y cabezal MTP |
+| Parametros totales | 27.781.427.952 (27,78 mil millones) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | NVFP4 W4A16 (pesos 4 bits, activaciones 16 bits, escalas FP8 E4M3, grupo de 16, weight-only, datafree); resto en BF16 |
+| Idiomas soportados | Ingles y multilingue (segun tags; lista completa no disponible) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (un unico shard de 20.593.107.888 bytes) con `compressed-tensors` `nvfp4-pack-quantized`; no incluye GGUF en el repo |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer híbrido de 27B parámetros densos que combina 16 capas de atención completa con 48 capas de atención lineal basadas en Gated DeltaNet. Esta mezcla reduce el coste de atención en secuencias largas manteniendo calidad en recuperación de contexto. Incluye además una torre de visión (pipeline `image-text-to-text`), lo que lo habilita para tareas multimodales, y una cabeza MTP (multi-token prediction) de 15 tensores que actúa como borrador para decodificación especulativa.
+El modelo base es un transformer hibrido de 27B denso con dos tipos de capa: 16 capas de atencion completa (con proyecciones Q, K, V y O) y 48 capas de atencion lineal basadas en Gated DeltaNet, que incluyen `in_proj_qkv`, `in_proj_z`, `out_proj`, `conv1d` e `in_proj_a`/`in_proj_b`. Incorpora ademas una torre de vision (el pipeline declarado es image-text-to-text), un cabezal MTP de 15 tensores para decodificacion especulativa y un `lm_head` independiente. Esta estructura hibrida busca reducir el coste de atencion en contextos largos manteniendo calidad en las capas de atencion completa.
 
-El proceso de cuantización de este checkpoint es datafree (sin corpus de calibración) y weight-only: se cuantizan 400 tensores `Linear` (192 del MLP en 64 capas, 64 de Q/K/V/O en las 16 capas de atención completa y 144 del DeltaNet en las 48 capas lineales). Quedan en BF16 el `lm_head`, el tower de visión, la cabeza MTP, las `conv1d` y `in_proj_a`/`in_proj_b` del Gated DeltaNet, las normas y las escalas. El `lm_head` se deja sin cuantizar deliberadamente porque vLLM ejecuta la cabeza de salida en precisión completa y ninguna versión de vLLM carga cabezas NVFP4 en `compressed-tensors`. No se dispone de información sobre el dataset de entrenamiento del modelo base ni sobre si hubo RLHF/DPO.
+Sobre el entrenamiento del modelo base no hay informacion en la model card: se desconoce el numero de tokens, la composicion del dataset, si hubo RLHF/DPO o las tecnicas de alineacion aplicadas. Lo que si documenta el autor del checkpoint es la receta de cuantizacion: 400 tensores `Linear` empaquetados en NVFP4 (192 del MLP en 64 capas, 64 de Q/K/V/O en 16 capas, 144 de DeltaNet en 48 capas), con escalas FP8 E4M3 y grupo de 16, sin calibracion. Se mantienen en BF16 la torre de vision, el cabezal MTP (verificado bit-identico al origen), `lm_head`, `conv1d`, `in_proj_a`/`in_proj_b`, normas y escalas. La innovacion destacable es la preservacion del MTP en BF16 para no romper la decodificacion especulativa en vLLM, y la decision de no cuantizar `lm_head` porque ninguna version de vLLM carga un cabezal NVFP4 de compressed-tensors.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento de propósito general.
-- Comprensión de imágenes y texto (pipeline `image-text-to-text`), con torre de visión intacta en BF16.
-- Decodificación especulativa mediante cabeza MTP, pensada para acelerar la generación en vLLM.
-- Soporte multilingüe declarado (etiqueta `multilingual`, aunque la model card solo lista `en` y `multilingual`).
-- Integración con vLLM mediante `compressed-tensors` (detección automática desde `config.json`).
-- Conversión a GGUF para llama.cpp con soporte NVFP4 (GGML type 40).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-step: no disponible en la información proporcionada.
+- Generacion de texto conversacional multi-turno en ingles y otros idiomas (multilingue segun tags).
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`), con torre de vision en BF16.
+- Razonamiento intensivo segun el tune "Turbo-Brilliance-50x-AGI-NEO" del modelo base; el autor no detalla que capacidades concretas anade el tune.
+- Decodificacion especulativa mediante cabezal MTP conservado en BF16, compatible con vLLM.
+- Generacion sin censura ("uncensored"/"heretic") segun la denominacion del modelo base; no se documenta el alcance real del desbloqueo.
+- Tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Servicio de inferencia en GPUs Blackwell: el checkpoint está diseñado para vLLM sobre sm_120, con lo que se reduce el peso en VRAM a ~20,6 GB frente a los ~55 GB que ocuparía en BF16, permitiendo servir un 27B en una sola GPU de 24-32 GB.
-- Despliegue multimodal en producción: al conservar la torre de visión en BF16, se puede usar para tareas de image-text-to-text (descripción de imágenes, VQA, extracción de información de documentos escaneados) sin perder precisión en la parte visual.
-- Generación de texto a baja latencia: la cabeza MTP habilita decodificación especulativa en vLLM, útil en asistentes conversacionales donde el tiempo hasta el primer token y el throughput importan.
-- Chat conversacional multi-turno: el modelo base es de tipo conversacional con plantilla de chat incluida (`chat_template.jinja` de 248 KB), adecuado para asistentes con historial largo.
-- Investigación sobre cuantización NVFP4: sirve como referencia para estudiar el impacto de W4A16 con grupo 16 y escalas FP8 E4M3 en modelos híbridos con DeltaNet, comparándolo con el checkpoint gemelo de 256 tensores.
-- Pipelines de conversión a GGUF: el checkpoint se declara como fuente de cuantización para builds GGUF, por lo que encaja en flujos que necesitan servir el mismo modelo en llama.cpp y en vLLM.
-- Evaluación de modelos "uncensored" en entornos controlados: el tune Heretic elimina restricciones de rechazo, útil para investigación de alineamiento y análisis de sesgos, siempre con las cautelas legales correspondientes.
+- Servicio de inferencia en GPU Blackwell con vLLM: el checkpoint esta disenado especificamente para sm_120 y `--quantization compressed-tensors`, de modo que se puede desplegar en produccion con un unico shard de 20,59 GB y aprovechar el ahorro de VRAM frente al BF16.
+- Decodificacion especulativa de alto throughput: al conservar el cabezal MTP en BF16, el modelo puede usar multi-token prediction en vLLM para aumentar tokens por segundo en cargas de generacion larga.
+- Procesamiento de documentos con imagen: la torre de vision intacta permite tareas image-text-to-text (descripcion, extraccion de datos de capturas o formularios) sin degradacion por cuantizacion.
+- Investigacion sobre cuantizacion NVFP4: sirve como referencia reproducible de una receta W4A16 datafree con 400 tensores y excepciones documentadas, util para comparar con la variante de 256 tensores del mismo autor.
+- Generacion creativa sin filtros: el caracter "uncensored" del tune base lo hace adecuado para entornos controlados de escritura creativa o roleplay donde los filtros estandar resultan limitativos.
+- Evaluacion comparativa de checkpoints cuantizados: al publicarse junto a la variante NVFP4 de 256 tensores, permite medir el impacto de una receta mas agresiva (400 tensores) sobre calidad y latencia en el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo documenta verificaciones de integridad del checkpoint: censo de 400 de 400 objetivos `Linear` empaquetados, 15 tensores MTP presentes en BF16 y bit-identicos al origen, preflight PASS y tamano total de 20.593.107.888 bytes en un unico shard.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~20,6 GB solo de pesos; con overhead de KV cache y activaciones, se recomienda al menos 24 GB para contextos cortos y 32-48 GB para contextos largos.
-- GPU recomendadas: Blackwell (sm_120) para NVFP4 nativo, es decir, RTX 50xx (5090, 5080), B200 y RTX PRO Blackwell. No se garantiza soporte en arquitecturas anteriores (Ampere, Hopper) porque NVFP4 requiere kernels específicos.
-- Cabe en GPU consumer: sí, en RTX 5090 (32 GB) y potencialmente en RTX 5080 (16 GB) solo con contexto muy reducido, dado que los pesos ya ocupan 20,6 GB.
-- Opciones de despliegue: vLLM con `--quantization compressed-tensors` (autodetectado); llama.cpp reciente con soporte NVFP4 (GGML type 40) previa conversión con `convert_hf_to_gguf.py --outtype auto`. Ollama y TGI no están mencionados en la información disponible.
-- Latencia y throughput: no disponible. La cabeza MTP está pensada para decodificación especulativa, pero no se publican cifras.
+- VRAM estimada para inferencia: el checkpoint pesa 20,59 GB en disco; en vLLM hay que sumar cache KV y overhead del runtime, por lo que se recomienda un minimo de 24-32 GB de VRAM efectiva.
+- GPU recomendadas: Blackwell sm_120 (RTX 50xx, B200) por el soporte nativo de NVFP4; el autor indica explicitamente Blackwell como plataforma objetivo.
+- Cabe en GPU de consumo: si, en tarjetas Blackwell con 24 GB o mas (por ejemplo RTX 5090 de 32 GB), siempre que se ajuste la longitud de contexto y el numero de secuencias concurrentes.
+- Opciones de despliegue: vLLM con `--quantization compressed-tensors` (autodetectado desde la config); el tag incluye llama.cpp pero el repo no contiene GGUF, por lo que llama.cpp exigiria una conversion aparte no incluida.
+- FP8 KV cache: disponible como flag de runtime en vLLM, no como bytes del checkpoint.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (NVFP4-T400) | 27,78B | no disponible | NVFP4 W4A16, 400 tensores | apache-2.0 | Solo vLLM/llama.cpp con NVFP4; requiere Blackwell |
-| esatapedico/...-NVFP4 (256 tensores) | 27,78B | no disponible | NVFP4 W4A16, 256 tensores | apache-2.0 | Receta conservadora, mismo modelo base |
-| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF | 27B | no disponible | GGUF (varias) | apache-2.0 (heredada) | Versión GGUF del mismo tune, sin NVFP4 |
-| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27B | no disponible | BF16 | apache-2.0 | Modelo base sin cuantizar |
+| Este checkpoint (NVFP4 W4A16 T400) | 27,78B | no disponible | NVFP4 W4A16, 400 tensores | Apache-2.0 | Solo safetensors, orientado a vLLM/Blackwell |
+| esatapedico/...-NVFP4 (256 tensores) | 27,78B | no disponible | NVFP4, 256 tensores | Apache-2.0 | Misma base, receta mas conservadora |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored | 27B | no disponible | BF16 | Apache-2.0 | Modelo base sin cuantizar |
+| Qwen3.8-27B (original) | 27B | no disponible | BF16 y otras | no disponible | Modelo de partida del tune; sin datos de benchmark en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- El checkpoint solo es cargable por versiones de vLLM con soporte `compressed-tensors` NVFP4 y por llama.cpp con GGML type 40; otras herramientas (Ollama, TGI, transformers estándar) pueden no cargarlo.
-- Requiere GPU Blackwell (sm_120); en Ampere o Hopper no hay kernels NVFP4 y el modelo no se podrá servir con esta cuantización.
-- El modelo base es un tune "Heretic/uncensored": se eliminan los rechazos de seguridad, lo que implica riesgo de generar contenido dañino, ilegal o sexualmente explícito. No apto para producción orientada al público sin filtros adicionales.
-- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad ni benchmarks; al ser un tune sobre un modelo base no verificado, el riesgo es mayor que en el modelo original de Qwen.
-- La cuantización es datafree y weight-only: no hay calibración, por lo que la degradación respecto a BF16 no está medida ni documentada.
-- El `lm_head` y la cabeza MTP se mantienen en BF16, lo que añade unos GB al peso total y limita la reducción de VRAM respecto a otras recetas.
-- La licencia apache-2.0 se hereda del modelo base, pero el uso comercial de un modelo "uncensored" puede incumplir términos de servicio de plataformas o legislación local; conviene revisar el marco legal aplicable.
-- Idiomas: aunque se declara `multilingual`, la model card solo enumera `en` y `multilingual`; el rendimiento en castellano no está documentado.
-- Longitud de contexto: no disponible en la información proporcionada, lo que impide planificar despliegues con ventanas largas.
+- La model card no documenta sesgos del modelo base ni del tune; el caracter "uncensored" implica que puede generar contenido que otros modelos rechazan, con el riesgo reputacional y legal que ello conlleva.
+- Riesgo de alucinacion no cuantificado: no hay benchmarks de veracidad ni de razonamiento en la informacion disponible.
+- La cuantizacion datafree (sin calibracion) puede degradar la calidad frente al BF16 original; no se aportan metricas de degradacion.
+- Dependencia fuerte de vLLM y de GPUs Blackwell: el checkpoint no incluye GGUF y no se garantiza su carga en otras plataformas o versiones de vLLM.
+- La licencia Apache-2.0 se hereda del modelo base, pero el uso comercial de un tune "heretic" conviene revisarlo con atencion por el contenido que puede producir.
+- Longitud de contexto e idiomas exactos no disponibles: la ficha multilingue es generica y no se detalla cobertura por idioma.
+- Adopcion muy baja (409 descargas, 0 likes) y sin validacion independiente conocida; tratar como experimental.
+- El nombre del repositorio acumula terminos de marketing ("AGI-NEO", "Brilliance-50x") sin respaldo tecnico documentado.
 
 ## Enlaces
 
-- Hugging Face (este checkpoint): https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-W4A16-T400
-- Checkpoint gemelo de 256 tensores: https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4
+- Hugging Face: https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-W4A16-T400
+- Variante de 256 tensores: https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
-- Versión GGUF del tune: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
-- Otro checkpoint del mismo autor: https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4
-- Sitio del autor: https://www.esatapedico.com
+- Sitio del autor del checkpoint: https://www.esatapedico.com

@@ -2,87 +2,88 @@
 
 ## Resumen
 
-Valdam Vision 2.5 es un modelo de vision-lenguaje (VLM) publicado por Inserloft-AI bajo licencia Apache 2.0. Combina un codificador Vision Transformer preentrenado con un decodificador Transformer autorregresivo que aplica cross-attention sobre los embeddings de parches visuales. El modelo está orientado a tres tareas concretas: descripción de escenas, OCR con reconstrucción espacial de diseño y moderación de contenido en modo zero-shot.
+Valdam Vision 2.5 es un modelo de visión-lenguaje (VLM) desarrollado por Inserloft-AI, orientado a tareas de image-to-text: descripción de escenas visuales, extracción de texto con enfoque OCR y clasificación zero-shot de contenido de imágenes. Combina un encoder visual Vision Transformer preentrenado (`google/vit-huge-patch14-224-in21k`) con una capa de proyección lineal y normalización, y un decoder Transformer autorregresivo con atención cruzada sobre las representaciones visuales. El checkpoint liberado contiene 949.702.066 parámetros en formato safetensors (repositorio de 3,8 GB).
 
-Con 949.702.066 parámetros totales (aproximadamente 950 millones) y un repositorio de 3,8 GB en formato safetensors, se sitúa en la gama media de los VLM, lo que lo hace desplegable en hardware relativamente modesto. Soporta inglés y español, y su pipeline declarado en Hugging Face es `image-to-text`.
+El modelo se distribuye con licencia Apache 2.0 y soporta inglés y español. Incluye además un componente separado de moderación llamado Valdam Shield, basado en similitud semántica con CLIP ViT-L/14, que compara la imagen contra categorías textuales predefinidas (contenido seguro, explícito/nudity, violencia, símbolos de odio) y devuelve una señal de similitud, no una probabilidad calibrada.
 
-Su relevancia actual radica en la combinación de OCR espacial y moderación zero-shot en un único modelo de menos de mil millones de parámetros con licencia permisiva, un perfil poco habitual en el ecosistema open source, donde estas capacidades suelen requerir modelos de mayor tamaño o servicios propietarios. No obstante, la información pública disponible es limitada y no se han publicado resultados de benchmarks en la documentación accesible.
+Su relevancia actual reside en la combinación, en un único paquete Apache 2.0, de comprensión visual, OCR y cribado de seguridad para pipelines de moderación de contenido, con inferencia local mediante scripts propios (`architecture.py`, `inference.py`) y pesos en safetensors. No es un modelo entrenado desde cero: reutiliza un backbone visual preentrenado junto con proyección y decoder propios.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (encoder) + Transformer decoder autorregresivo con cross-attention |
-| Parametros totales | 949.702.066 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Híbrida: encoder ViT + proyección lineal + LayerNorm + decoder Transformer autorregresivo con cross-attention |
+| Parámetros totales | 949.702.066 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | en, es |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (model.safetensors) |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors sin cuantizar) |
+| Idiomas soportados | inglés (en), español (es) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`model.safetensors`), más `config.json` y `vocab.json` |
+| Backbone visual | `google/vit-huge-patch14-224-in21k` |
+| Tarea principal | image-to-text |
+| Métricas declaradas en model card | BLEU, METEOR, ROUGE |
+| Componente de moderación | Valdam Shield (CLIP ViT-L/14, similitud semántica) |
+| Tamaño del repositorio | 3,8 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el patrón encoder-decoder multimodal: un Vision Transformer preentrenado actúa como codificador de imagen y proyecta los parches visuales a un espacio de embeddings; un decodificador Transformer autorregresivo genera texto aplicando cross-attention sobre dichos embeddings. El repositorio incluye `architecture.py` con la definición de ambos componentes y `config.json` con los hiperparámetros.
+La arquitectura es híbrida y modular. El encoder visual es un ViT preentrenado (`google/vit-huge-patch14-224-in21k`), que extrae representaciones de parches de la imagen. Una proyección lineal mapea la dimensión oculta del encoder a la dimensión de embedding del decoder, seguida de LayerNorm. El decoder es un Transformer autorregresivo construido con componentes de PyTorch, con self-attention causal y cross-attention sobre las representaciones visuales, y una capa de salida que proyecta los estados ocultos al espacio de vocabulario definido en `vocab.json`. La inferencia se realiza mediante `ValdamVisionLocalPredictor`, que recibe un tensor de imagen preprocesado con `ViTImageProcessor` y genera texto de forma secuencial.
 
-La moderación de contenido (denominada "Valdam Shield") no se implementa como una cabeza de clasificación entrenada, sino mediante coincidencia de similitud semántica con CLIP ViT-L/14, lo que explica su carácter zero-shot. El OCR espacial reconstruye el orden de lectura y los párrafos a partir de coordenadas espaciales de los elementos detectados en el diseño.
-
-No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal.
+La model card indica explícitamente que el modelo es un desarrollo híbrido de Inserloft y no una arquitectura visual construida desde cero: el backbone visual es preentrenado y el resto (proyección, decoder y pesos del checkpoint) es propio. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste por preferencias. Tampoco se detalla la innovación de decodificación ni optimizaciones de atención. El componente Valdam Shield es independiente del VLM y se basa en CLIP ViT-L/14 para comparar la imagen con categorías textuales.
 
 ## Capacidades
 
-- Generación de descripciones de escenas mediante generación autorregresiva de texto condicionada por la imagen.
-- OCR con reconstrucción de layout: recupera orden de lectura y agrupación en párrafos a partir de coordenadas espaciales.
-- Moderación de contenido zero-shot mediante similitud semántica CLIP ViT-L/14 (Valdam Shield).
-- Generación de texto multimodal en inglés y español.
-- Inferencia local con latencia declarada de aproximadamente 0,08 s en hardware estándar.
-- No se documenta soporte de tool calling, function calling, razonamiento multi-paso, agentes, audio ni modo de pensamiento explícito.
+- Generación de descripciones de escenas visuales a partir de una imagen de entrada.
+- Extracción de texto orientada a OCR en capturas de pantalla, documentos y composiciones gráficas.
+- Clasificación zero-shot de contenido de imagen mediante etiquetas textuales (tag declarado en el repositorio).
+- Cribado de seguridad (Valdam Shield) con categorías de contenido seguro, explícito/nudity, violencia e iconografía de odio, expresado como señal de similitud.
+- Generación de texto autorregresiva en inglés y español.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta modo thinking, entrada de audio ni vídeo.
+- La interfaz de inferencia devuelve una secuencia de texto generada; no expone coordenadas de bounding-box ni representación estructurada de layout documental.
 
 ## Casos de uso
 
-- Digitalización de documentos con layout complejo: el modelo reconstruye el orden de lectura y los párrafos a partir de coordenadas espaciales, adecuado para facturas, formularios y maquetas editoriales donde el OCR plano pierde la estructura.
-- Moderación de contenido en plataformas UGC: el enfoque zero-shot basado en CLIP ViT-L/14 permite filtrar imágenes sin necesidad de reentrenar un clasificador específico por categoría.
-- Descripción automática de imágenes para accesibilidad: generación de texto alternativo en inglés y español para catálogos, intranets o aplicaciones de lectura de pantalla.
-- Etiquetado y enriquecimiento de datasets visuales: generación de descripciones y metadatos textuales a escala sobre lotes de imágenes antes de entrenar otros modelos.
-- Preprocesado en pipelines de visión documental: extracción de texto y estructura previa a sistemas RAG o de gestión documental, con salida en texto plano.
-- Prototipado rápido en local: con menos de mil millones de parámetros y pesos safetensors, permite iterar en una sola GPU sin depender de APIs externas, útil para pruebas de concepto en equipos con recursos limitados.
+- Descripción automática de imágenes para accesibilidad: el modelo genera texto descriptivo a partir de una imagen RGB, útil para alt-text en catálogos, CMS o aplicaciones de lectura asistida.
+- Extracción de texto en capturas y documentos: al estar orientado a OCR, permite transcribir texto de screenshots y material gráfico pesado en texto, integrándose en pipelines de digitalización.
+- Moderación de contenido en plataformas: Valdam Shield compara imágenes contra categorías predefinidas y devuelve una señal de similitud que puede usarse como primer filtro antes de la revisión humana.
+- Enriquecimiento de metadatos en DAM (gestión de activos digitales): generación de descripciones y etiquetas a partir de imágenes para búsqueda y catalogación.
+- Clasificación zero-shot de imágenes: uso de etiquetas textuales personalizadas para cribar lotes de imágenes sin reentrenamiento.
+- Procesamiento local y privado: inferencia mediante scripts propios en `cuda` o `cpu`, adecuada para entornos donde los datos no deben salir de la infraestructura.
+- Soporte bilingüe en atención al cliente basada en imágenes: interpretación de capturas enviadas por usuarios en inglés o español y generación de una respuesta textual descriptiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card declara métricas BLEU, METEOR y ROUGE en los metadatos, pero no incluye valores numéricos ni conjuntos de evaluación. El único dato de rendimiento declarado es una latencia media de inferencia de aproximadamente 0,08 s "en hardware estándar", sin especificar la GPU ni el tamaño de entrada.
+No se han publicado resultados de benchmarks en la información disponible. La model card declara las métricas BLEU, METEOR y ROUGE como campos de metadatos, pero no incluye valores numéricos ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: en torno a 2 GB solo para pesos (950 M de parámetros), más el codificador ViT y las activaciones; presupuesto realista de 4-6 GB según resolución de imagen y longitud de salida.
-- VRAM estimada en fp32: aproximadamente 3,8 GB solo para pesos, más overhead del encoder y del contexto visual.
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 4070); para mayor throughput, A10G, L4 o A100.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más, incluidas RTX 3060 Ti, RTX 4060 Ti y superiores.
-- Opciones de despliegue: el autor proporciona `inference.py` con la clase `ValdamVisionLocalPredictor`; no se documenta soporte oficial para vLLM, llama.cpp, Ollama ni TGI, y al no publicarse variantes GGUF, llama.cpp requeriría conversión manual.
-- Latencia y throughput: latencia declarada de ~0,08 s por respuesta; no se especifican tokens por segundo ni condiciones de medición.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 949,7 millones de parámetros en safetensors, los pesos en fp32 ocupan aproximadamente 3,8 GB; en fp16 rondarían 1,9 GB, sin contar el backbone visual y las activaciones.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una GPU con 8-16 GB de VRAM (por ejemplo, RTX 3060/4070/4090) debería ser suficiente para cargar pesos en fp16, aunque no hay cifras publicadas.
+- Cabe en GPU de consumo: previsiblemente sí, dado el tamaño del checkpoint, aunque el requisito exacto no está documentado.
+- Opciones de despliegue: la model card solo documenta inferencia local con `inference.py` y `ValdamVisionLocalPredictor` sobre PyTorch, con dependencias `torch`, `torchvision`, `transformers`, `safetensors`, `pillow` y CLIP de OpenAI. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
-|---|---|---|---|---|---|
-| Valdam Vision 2.5 | 949,7 M | no disponible | en, es | Apache 2.0 | VLM + OCR espacial + moderacion zero-shot |
-| Qwen2-VL-2B | ~2 B | 32k (declarado por el autor de Qwen) | multilingue | Apache 2.0 | VLM generalista |
-| Florence-2 (base) | ~0,23 B | no disponible | en | MIT | VLM multitarea (captioning, deteccion, OCR) |
-| PaliGemma-3B | ~3 B | no disponible | multilingue | Gemma license | VLM generalista |
-
-La comparación se ofrece a título orientativo: no se dispone de resultados de benchmarks de Valdam Vision 2.5, por lo que no es posible establecer una comparación cuantitativa de rendimiento con estas alternativas. La principal diferencia cualitativa es la inclusión de moderación zero-shot vía CLIP y OCR con reconstrucción de layout como capacidades de primera clase, frente al enfoque generalista de los modelos citados.
+No disponible. La información proporcionada no incluye comparaciones con otros modelos de visión-lenguaje ni datos de rendimiento que permitan establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones cuantitativas (MMLU, HumanEval, GSM8K, benchmarks de OCR o de moderación); el rendimiento real es desconocido.
-- La moderación zero-shot basada en similitud CLIP ViT-L/14 es sensible a umbrales y a la formulación de las categorías; puede producir falsos positivos y falsos negativos sin calibración específica por dominio.
-- Riesgo de alucinación en descripciones de escenas y en la transcripción OCR, especialmente con texto de baja resolución, tipografías no latinas o layouts densos.
-- Cobertura lingüística limitada a inglés y español; no se documenta comportamiento en otros idiomas.
-- Longitud de contexto no documentada, lo que impide planificar el uso con documentos largos o muchas imágenes por consulta.
-- El modelo tiene 42 descargas y 0 likes en el momento de la consulta, con un único commit: no hay evidencia de validación por parte de la comunidad.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni documenta procedencia de los datos de entrenamiento, lo que puede implicar riesgos de cumplimiento en despliegues regulados.
-- La latencia de 0,08 s declarada no especifica hardware ni condiciones; debe medirse en el entorno de producción objetivo.
+- No se documentan sesgos conocidos; al entrenarse presumiblemente con datos no especificados, el riesgo de sesgo visual y lingüístico no puede descartarse.
+- Riesgo de alucinación inherente a la generación autorregresiva: las descripciones pueden incluir contenido no presente en la imagen.
+- La salida de Valdam Shield es una señal de similitud, no una probabilidad calibrada, y no sustituye una moderación humana integral.
+- La interfaz no devuelve bounding-boxes ni layout estructurado, lo que limita su uso en extracción documental estructurada.
+- Idiomas limitados a inglés y español; no se documenta cobertura multilingüe adicional.
+- Longitud de contexto no especificada; el ejemplo de inferencia usa `max_len=64`, lo que sugiere salidas cortas.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el checkpoint; conviene validar el comportamiento en el dominio de producción.
+- El modelo depende de un backbone visual externo (`google/vit-huge-patch14-224-in21k`) y de CLIP de OpenAI para Valdam Shield, lo que añade dependencias de descarga y versiones.
+- La implementación requiere que `config.json` y `vocab.json` coincidan con el checkpoint liberado; desajustes rompen la inferencia.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Inserloft-AI/Valdam-Vision-2.5
-- Sitio del autor: https://research.inserloft.com
+- Backbone visual: https://huggingface.co/google/vit-huge-patch14-224-in21k
+- CLIP de OpenAI (dependencia de Valdam Shield): https://github.com/openai/CLIP

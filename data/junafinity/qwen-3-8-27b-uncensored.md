@@ -2,87 +2,93 @@
 
 ## Resumen
 
-Qwen-3.8-27B-Uncensored es un checkpoint derivado de Qwen/Qwen3.8-27B, desarrollado por junafinity, en el que se ha eliminado la dirección de rechazo (refusal) del modelo mediante una técnica de abliteración automática llamada ZeroFuse. El resultado es un modelo multimodal (imagen, vídeo y texto) que conserva todas las capacidades del modelo original pero sin los mecanismos de rechazo entrenados por seguridad. Está pensado exclusivamente como instrumento de investigación para red teaming y ciberseguridad defensiva, no para uso general.
+Qwen-3.8-27B-Uncensored es una compilación derivada del modelo multimodal Qwen/Qwen3.8-27B, publicada por el usuario junafinity bajo la marca VeriSafe.Live. No se trata de un ajuste fino ni de un entrenamiento adicional: es una edición directa de pesos mediante la técnica de *abliteration*, que ortogonaliza la dirección de rechazo en un subconjunto de tensores del modelo base. El resultado es un checkpoint estándar de Hugging Face (~52 GB en bf16) que conserva la arquitectura, la visión y las cabezas `mtp.*` del original, sin sobrecoste en inferencia.
 
-Se trata de una edición directa de pesos, no de un fine-tuning: no hay entrenamiento con gradientes, LoRA ni adaptadores. La intervención se limita a eliminar una proyección de rango 1 de un subconjunto de tensores del decoder de lenguaje, dejando intactos el vision tower, los embeddings y la cabeza de salida. El modelo mantiene la arquitectura original de Qwen3.8-27B, con 27.781 millones de parámetros y un tamaño de checkpoint de aproximadamente 52 GB en bf16. La licencia es Apache 2.0, lo que permite uso comercial con las restricciones que el propio autor especifica en la model card.
+El modelo resuelve un problema específico de investigación: medir el techo real de capacidad de un modelo cuando se eliminan sus rechazos aprendidos. La premisa del autor es que el entrenamiento de seguridad suprime la *manifestación* de una capacidad, no la capacidad en sí, por lo que un modelo abliterado sirve como mitad de tratamiento en un par controlado frente al base original. Con 27.781.427.952 parámetros reales (según safetensors) y licencia Apache 2.0, se posiciona como instrumento para *red teaming*, evaluación de pilas defensivas y trabajo de interpretabilidad.
 
-La relevancia de este modelo radica en que permite medir el techo real de capacidad de un modelo de seguridad, separando lo que el modelo puede hacer de lo que se le ha enseñado a rechazar. Es una herramienta de control experimental para evaluar filtros, clasificadores y capas de moderación externas.
+La relevancia actual radica en su enfoque metodológico: al ser una edición rank-1 especificada sobre un tramo de capas conocido, permite comparaciones limpias base-vs-abliterado, algo que los fine-tunes convencionales no ofrecen con la misma claridad experimental. El modelo base referenciado (Qwen3.8-27B) no está verificado en la información proporcionada, por lo que los datos de arquitectura y entrenamiento del padre se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), basado en Qwen3.8-27B |
-| Parametros totales | 27.781.427.952 (27,8 B) |
-| Parametros activos | no disponible (no se especifica si es MoE; el nombre sugiere modelo denso) |
-| Longitud de contexto | no disponible (no se publica en la ficha; el modelo base Qwen3.8-27B soporta contexto largo, pero no se confirma) |
-| Tipos de cuantizacion | bf16 (checkpoint principal), 8-bit MLX (variante para Apple Silicon) |
-| Idiomas soportados | no disponible (el modelo base Qwen3.8-27B es multilingue, pero no se detalla en esta ficha) |
+| Arquitectura | Transformer multimodal (image-text-to-text), derivada de Qwen/Qwen3.8-27B; detalles internos no disponibles |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | bf16 (control); 8-bit MLX en repo hermano; 4-bit/g64 mixto en cabeza MTP opcional |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer multimodal de 27,8 mil millones de parámetros que procesa imágenes, vídeo y texto. La arquitectura del decoder de lenguaje es la estándar de Qwen, con atención por capas y MLP. No se ha realizado ningún entrenamiento adicional: el checkpoint es una edición directa de los pesos originales.
+El modelo es un transformer multimodal con pipeline `image-text-to-text`, heredado íntegramente del base Qwen/Qwen3.8-27B. La modificación aplicada es una proyección rank-1 eliminada de un subconjunto de tensores que escriben en el residual del modelo de lenguaje, ortogonalizando la dirección de rechazo. No hay entrenamiento por gradiente, LoRA, adaptador ni destilación: los tensores son los originales de Qwen con esa edición puntual. Se conservan la torre de visión y las cabezas `mtp.*` (multi-token prediction) del padre, lo que sugiere decodificación especulativa nativa disponible.
 
-La técnica empleada es abliteración, siguiendo la línea de trabajo de Arditi et al. (2024). ZeroFuse, la herramienta utilizada, estima la dirección de rechazo del modelo, la ortogonaliza fuera de los escritores del residual stream y ejecuta una búsqueda de dos objetivos para maximizar la eliminación de rechazos minimizando la perturbación de la distribución de salida. Los pesos modificados son únicamente `o_proj` de atención y `down_proj` de MLP en las capas del decoder; el vision tower, los embeddings, la cabeza de salida y las normalizaciones permanecen bit-idénticos al modelo base. No hay hooks en tiempo de inferencia ni vectores de control, por lo que el overhead es cero.
+El proceso de abliteración actúa sobre un tramo de capas conocido y especificado, lo que convierte al par (base, abliterado) en un control experimental limpio para estudiar el rechazo residual. El autor advierte que la abliteración elimina una dirección, no una política: sobreviven algunos rechazos por reafirmación multi-turno, direccionamiento mediante system prompt y rutas de visión. No se dispone de datos sobre número de tokens de entrenamiento, composición del dataset ni etapas de RLHF/DPO del modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: conserva todas las capacidades lingüísticas y de razonamiento del modelo base Qwen3.8-27B.
-- Comprensión multimodal: procesa imágenes y vídeo, ya que el vision tower no ha sido modificado.
-- Sin rechazos por seguridad: el modelo no incorpora los mecanismos de rechazo entrenados, lo que permite generar contenido que el modelo base declinaría.
-- Tool calling y function calling: hereda las capacidades del modelo base, aunque no se documentan explícitamente en esta ficha.
-- Multilingüe: el modelo base es multilingüe, pero no se especifican los idiomas concretos en esta variante.
-- Sin modo de pensamiento especial: no se menciona un modo "thinking" adicional; el comportamiento es el del modelo base sin capa de rechazo.
+- Generación de texto conversacional multi-turno, heredada del base Qwen3.8-27B.
+- Procesamiento de imagen y texto conjuntamente (pipeline image-text-to-text), con torre de visión en bf16.
+- Decodificación especulativa mediante cabezas `mtp.*` nativas, con cabeza draft opcional publicada aparte.
+- Capacidad de cumplimiento sin rechazos en dominios que el base declinaría, útil para medición de techo de capacidad.
+- Razonamiento y generación en dominios sensibles (seguridad, exploits, contenido restringido) sin las supresiones del modelo original.
+- Compatibilidad con endpoints (`endpoints_compatible` en tags), lo que facilita despliegue como servicio.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling y uso de agentes: no disponible explícitamente en la información, aunque se heredarían del base si este los soporta.
 
 ## Casos de uso
 
-- Medición del techo de capacidad: usar el modelo como mitad de tratamiento en un par controlado frente al modelo base para determinar qué puede producir realmente un sistema en un dominio concreto, independientemente de los rechazos.
-- Evaluación de capas defensivas: probar filtros de entrada, clasificadores de salida y APIs de moderación cuando el propio modelo no contribuye con rechazos, para identificar huecos en el plano de control defensivo.
-- Aislamiento de superficie de ataque: en bucles automatizados de red teaming, eliminar rechazos no relacionados permite aislar el control bajo prueba (inyección de prompts, abuso de herramientas, exfiltración de datos, bypass de políticas).
-- Generación de datos etiquetados para detección: producir completaciones etiquetadas para entrenar o evaluar modelos de moderación de contenido y detección de abuso.
-- Investigación en interpretabilidad: el par base vs. abliterado sirve como control experimental limpio para estudiar cómo se codifica el rechazo en el espacio residual.
-- Pruebas de robustez de sistemas de agentes: evaluar cómo se comportan los agentes que usan este modelo cuando se les pide ejecutar acciones que el modelo base rechazaría, para validar políticas de seguridad externas.
+- **Red teaming automatizado**: el modelo actúa como objetivo no renuente en bucles de ataque, aislando el control bajo prueba (inyección de prompt, abuso de herramientas, exfiltración de datos) sin que rechazos irrelevantes detengan el ciclo.
+- **Medición de techo de capacidad**: emparejado con el base original, permite acotar superiormente lo que los pesos pueden producir en un dominio, independientemente de los rechazos publicados.
+- **Evaluación de pilas defensivas**: al no contribuir con rechazos propios, prueba filtros de entrada, clasificadores de salida, defensas anti-inyección y APIs de moderación para encontrar huecos en el plano de control defensivo.
+- **Generación de datos etiquetados para moderación**: produce completaciones para entrenar o evaluar modelos de detección de abuso y clasificación de salida, con la ventaja de no bloquear las muestras negativas necesarias.
+- **Interpretabilidad del rechazo residual**: al ser una edición rank-1 especificada sobre capas conocidas, sirve para estudiar qué rechazos sobreviven y por qué (multi-turno, system prompt, visión).
+- **Investigación multimodal sin restricciones**: análisis de imágenes y texto conjunto en escenarios donde el base declinaría, con la torre de visión intacta en bf16.
+- **Despliegue local en Apple Silicon**: mediante el repo hermano de 8 bits MLX (~28 GB), para experimentación en estaciones Mac con memoria unificada amplia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones. Tampoco se publican datos de throughput o latencia, ya que el autor indica que este checkpoint no es una "SKU de velocidad" y no publica tok/s.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que este checkpoint de control no es una SKU de velocidad y no publica tok/s. Tampoco se reporta la ganancia de aceptación de la cabeza MTP opcional en prompts difíciles, que queda como no medida.
 
 ## Requisitos de hardware
 
-- Checkpoint bf16 (~52 GB): requiere al menos 60 GB de VRAM para inferencia con overhead de runtime. GPU recomendadas: A100 80GB, H100 80GB, o configuraciones multi-GPU.
-- Variante 8-bit MLX (~28 GB): diseñada para Apple Silicon con 32 GB o más de memoria unificada (por ejemplo, M1 Pro/Max, M2 Pro/Max, M3 Pro/Max).
-- No cabe en GPUs de consumo típicas (RTX 4090 tiene 24 GB, insuficiente para bf16; la versión 8-bit podría caber con cuantización adicional, pero no se ofrece oficialmente).
-- Opciones de despliegue: transformers con carga estándar, vLLM (compatible con el formato), llama.cpp (si se convierte a GGUF), MLX para Apple Silicon.
-- Latencia y throughput: no disponibles.
+- VRAM estimada en bf16: ~52 GB de pesos, más overhead de activaciones y caché KV; se recomienda GPU de 80 GB para margen cómodo.
+- GPU recomendadas: A100 80 GB, H100 80 GB, o multi-GPU con sharding para bf16.
+- Cuantización 8-bit MLX: ~28 GB, viable en Apple Silicon con memoria unificada de 32 GB o superior (visión en bf16, `mtp.*` descartado por `mlx-vlm`).
+- Consumer GPU: no cabe en bf16 en RTX 4090 (24 GB); requeriría cuantización agresiva no publicada en la información disponible.
+- Opciones de despliegue: `transformers` (formato nativo), `mlx-vlm` para Apple Silicon; vLLM, llama.cpp, Ollama y TGI no se confirman en la información, aunque el tag `endpoints_compatible` sugiere compatibilidad con servicios de endpoints.
+- Latencia y throughput: no disponibles; el autor no publica tok/s para este checkpoint.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,8 B | no disponible | Apache 2.0 | Modelo original con capa de rechazo intacta |
-| Qwen-3.8-27B-Uncensored (este) | 27,8 B | no disponible | Apache 2.0 | Abliterado, sin rechazos, mismo rendimiento base |
-| Qwen3.8-27B AEON Uncensored | 27,8 B | no disponible | Apache 2.0 | Otra abliteración comunitaria con metodología KL-drift (según blog de MindStudio) |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen-3.8-27B-Uncensored | 27.781.427.952 | no disponible | imagen-texto | Apache 2.0 | Abliterado, control bf16, ~52 GB |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | imagen-texto | no disponible | Modelo original con rechazos; mitad de control del par |
+| Qwen-3.8-27B-Uncensored-8-Bit-MLX | mismo base | no disponible | imagen-texto | Apache 2.0 | Cuantizado 8-bit MLX, ~28 GB, `mtp.*` descartado |
+| qwen38-mtp-head-fc-bf16-4bit | cabeza draft | no aplica | no aplica | no disponible | Cabeza MTP opcional, ganancia de aceptación no medida |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes. La diferencia principal es el método de abliteración y el hecho de que este checkpoint conserva el vision tower intacto.
+No se dispone de datos de rendimiento comparado con alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No debe exponerse como endpoint público sin una capa de moderación independiente: la abliteración elimina una dirección, no una política, y algunos rechazos pueden sobrevivir (reafirmación multi-turno, steering por system prompt, rechazos en la ruta de visión).
-- Riesgo de alucinación: al igual que el modelo base, puede generar contenido falso o inventado, especialmente en dominios especializados.
-- Sesgos: hereda los sesgos del modelo base Qwen3.8-27B, que no se documentan en esta ficha.
-- Limitaciones de contexto: no se especifica la longitud máxima de contexto; se recomienda consultar la documentación del modelo base.
-- Restricciones de uso: el autor limita explícitamente el uso a investigación de red teaming y ciberseguridad defensiva. Aunque la licencia es Apache 2.0, el despliegue sin moderación es desaconsejado y puede violar políticas de plataformas.
-- Sin garantías de rendimiento: al ser una edición de pesos sin entrenamiento, no hay métricas publicadas que validen que las capacidades se mantienen al 100% en todos los dominios.
+- **Riesgo de seguridad**: elimina la dirección de rechazo, no la política; no debe exponerse como endpoint público sin una capa de moderación independiente.
+- **Rechazos residuales**: sobreviven rechazos por reafirmación multi-turno, direccionamiento mediante system prompt y rutas de visión, lo que puede producir comportamiento inconsistente.
+- **Sesgos**: no documentados en la información disponible; se heredarían los del base, no caracterizados aquí.
+- **Alucinación**: no medida; sin benchmarks publicados no puede acotarse su tasa.
+- **Licencia**: Apache 2.0 permite uso comercial, pero el despliegue conlleva la responsabilidad de la moderación que los guardrails originales cubrían.
+- **Idiomas y contexto**: no disponibles, lo que impide planificar despliegues multilingües o de contexto largo con garantías.
+- **Verificación del base**: el modelo padre Qwen/Qwen3.8-27B no está confirmado en la información proporcionada; los datos de arquitectura y entrenamiento del original quedan sin verificar.
+- **Producción**: el autor exige reportar siempre el delta frente al base y re-medir sobre prompts propios; no es una SKU de velocidad ni publica tok/s.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Colección de la familia: https://huggingface.co/collections/junafinity/qwen-38-27b-uncensored-apple-silicon-6a896c726b52be3a0b63400e
-- Variante MLX 8-bit: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX
-- Cabeza MTP opcional: https://huggingface.co/junafinity/qwen38-mtp-head-fc-bf16-4bit
-- Herramienta ZeroFuse: https://github.com/junainfinity/ZeroFuse
-- Blog sobre abliteración AEON (referencia metodológica): https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
-- Artículo de referencia sobre abliteración (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
+- [Hugging Face: junafinity/Qwen-3.8-27B-Uncensored](https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored)
+- [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Repo hermano 8-bit MLX](https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX)
+- [Cabeza MTP opcional](https://huggingface.co/junafinity/qwen38-mtp-head-fc-bf16-4bit)
+- [Colección de la familia](https://huggingface.co/collections/junafinity/qwen-38-27b-uncensored-apple-silicon-6a896c726b52be3a0b63400e)
+- [VeriSafe.Live](https://verisafe.live)
+- [Paper de referencia (arxiv:2406.11717)](https://arxiv.org/abs/2406.11717)

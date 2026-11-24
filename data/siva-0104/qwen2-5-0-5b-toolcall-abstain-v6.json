@@ -54,6 +54,49 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "BFCL v3 simple (own scorer)",
+      "metric": "Exact match",
+      "value": 79.3
+    },
+    {
+      "task": null,
+      "dataset": "BFCL v3 live simple (own scorer)",
+      "metric": "Exact match",
+      "value": 44.6
+    },
+    {
+      "task": null,
+      "dataset": "BFCL v3 irrelevance (own scorer)",
+      "metric": "Abstained correctly",
+      "value": 75.8
+    },
+    {
+      "task": null,
+      "dataset": "BFCL v3 live irrelevance (own scorer)",
+      "metric": "Abstained correctly",
+      "value": 71.7
+    },
+    {
+      "task": null,
+      "dataset": "xLAM function calling, held-out split",
+      "metric": "Exact match",
+      "value": 68
+    },
+    {
+      "task": null,
+      "dataset": "Hermes function calling, held-out split",
+      "metric": "Exact match",
+      "value": 48
+    },
+    {
+      "task": null,
+      "dataset": "ToolACE, held-out split",
+      "metric": "Exact match",
+      "value": 44.3
+    }
+  ],
   "sources": []
 }

@@ -29,7 +29,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7809649274,
+  "storage_bytes": 7808696915,
   "storage_human": "7.8 GB",
   "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-base-4B",

@@ -2,102 +2,99 @@
 
 ## Resumen
 
-ThoxOS-Kernel-0.8B es un modelo de lenguaje de 0,8B parámetros desarrollado por Thox-ai (THOX.ai) como "estudiante" de triaje de kernel y sistema operativo. Se trata de un fine-tune con LoRA de precisión completa (fp-LoRA) sobre Qwen/Qwen3.5-0.8B, destilado a partir del modelo profesor ThoxOS-Kernel-27B y fusionado en los pesos base. Su propósito es clasificar y enrutar peticiones relacionadas con el sistema operativo y el kernel, ejecutar diagnósticos de primera línea, responder preguntas fundamentadas sobre runbooks y escalar todo lo que exceda el triaje a modelos pares o al modelo de nivel host mediante MeshStack.
+ThoxOS-Kernel-0.8B es un modelo de lenguaje de 752 millones de parámetros (0,8B) desarrollado por THOX.ai, un fine-tune mediante fp-LoRA sobre Qwen/Qwen3.5-0.8B y destilado del modelo profesor ThoxOS-Kernel-27B. Su propósito es actuar como "estudiante" de triaje de kernel y sistema operativo dentro del ecosistema ThoxOS, clasificando y enrutando peticiones de sistema, ejecutando diagnósticos de primera línea y respondiendo consultas fundamentadas en runbooks. Está dimensionado para ejecutarse en el hardware propio de la compañía: ThoxAir y el paquete host ThoxKey.
 
-El modelo está dimensionado para ejecutarse en dispositivos de borde de la familia THOX (ThoxAir y el paquete host ThoxKey) y se distribuye con pesos en safetensors y cuantizaciones GGUF (Q4_K_M, Q8_0 y Q4_0), además de empaquetado para Ollama. Su principio de diseño es explícito: el modelo propone, pero el arnés (harness) dispone; nunca ejecuta acciones del sistema directamente.
+El modelo se publica con licencia Apache 2.0, pesos en safetensors y tres cuantizaciones GGUF (Q4_K_M, Q8_0, Q4_0), y está disponible en Ollama. Su relevancia radica en su tamaño reducido (apto para dispositivos de borde) combinado con una especialización vertical clara: no es un modelo generalista, sino un componente de triaje dentro de una arquitectura mayor donde "el modelo propone y el arnés dispone", es decir, nunca ejecuta acciones de sistema directamente.
 
-La relevancia actual radica en su enfoque de despliegue en borde con licencia Apache 2.0 y acceso público sin restricciones, orientado a agentes de sistema operativo de bajo consumo. No obstante, la model card reporta una divergencia de medición no resuelta en sus resultados de evaluación (37/49 frente a 27/49 en GATE49), lo que conviene tener en cuenta al evaluar su fiabilidad.
+El autor advierte de una divergencia de medición en curso: la ejecución original de GATE49 (1 de noviembre de 2026) arrojó 37/49, mientras que una remedición sobre la ruta normalizada (8 de noviembre de 2026) con los pesos publicados arrojó 27/49. Ambos resultados se mantienen publicados y el caso está bajo revisión, lo que debe tenerse en cuenta al evaluar el modelo para producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (fine-tune de Qwen/Qwen3.5-0.8B, tag `qwen3_5_text`) |
-| Parametros totales | 752.393.024 (0,75B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M, Q8_0, Q4_0; safetensors en precisión original |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer (qwen3_5_text), fine-tune fp-LoRA fusionado sobre Qwen/Qwen3.5-0.8B |
+| Parámetros totales | 752.393.024 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | safetensors (fp), GGUF Q4_K_M, GGUF Q8_0, GGUF Q4_0 |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura transformer de Qwen/Qwen3.5-0.8B y se obtiene mediante un fine-tune con LoRA de precisión completa (fp-LoRA) fusionado posteriormente en los pesos base. El entrenamiento lo realizó THOX internamente, incluyendo la conversión a GGUF. La destilación se llevó a cabo a partir del modelo profesor ThoxOS-Kernel-27B, que había superado las puertas de calidad (gate-passed). Los datos provienen del corpus v3 de Thox-ai/thoxos-kernel-sft, compuesto por el corpus humano/derivado de kernel más trazas generadas por el profesor de 27B, admitidas únicamente tras aplicar filtros: ejecución en sandbox para las filas de comandos y comprobaciones de factualidad para la prosa.
+El modelo parte de Qwen/Qwen3.5-0.8B, un transformer de la familia Qwen3.5, y se obtiene mediante un fine-tune con fp-LoRA que posteriormente se fusiona en los pesos base. El entrenamiento se realizó internamente en THOX.ai, incluyendo la conversión a GGUF. La supervisión proviene de destilación desde ThoxOS-Kernel-27B, el modelo profesor de la misma familia, ya validado contra la compuerta de evaluación GATE49.
 
-No se dispone de información sobre el número total de tokens de entrenamiento, la composición detallada del dataset ni el uso de RLHF o DPO. La innovación técnica destacable es el esquema de destilación con filtrado por ejecución en sandbox y verificación factual, así como el diseño de "el modelo propone, el arnés dispone", que separa la inferencia del modelo de la ejecución real de acciones del sistema.
+La especialización es de dominio: triaje de kernel y sistema operativo, clasificación y enrutamiento de peticiones, diagnósticos de primera línea y respuestas fundamentadas en runbooks. El diseño operativo separa explícitamente la propuesta del modelo de la ejecución de acciones: el modelo nunca ejecuta acciones de sistema por sí mismo, sino que emite recomendaciones que un arnés externo valida y ejecuta. No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación y enrutamiento de peticiones relacionadas con el sistema operativo y el kernel.
-- Diagnósticos de primera línea sobre problemas de sistema.
-- Respuesta a preguntas fundamentadas sobre runbooks (procedimientos operativos).
-- Escalado de casos que exceden el triaje a modelos pares (ThoxMini, ThoxClip) o al modelo de nivel host mediante MeshStack.
-- Generación de texto conversacional y de tipo text-generation.
-- Capacidad de agente de sistema operativo (os-agent) con separación estricta entre propuesta y ejecución.
+- Generación de texto conversacional orientada a triaje de sistema operativo y kernel.
+- Clasificación y enrutamiento de peticiones de sistema (OS-task bench reportado en la evaluación original).
+- Diagnósticos de primera línea y respuestas fundamentadas en runbooks.
+- Escalado de casos fuera del alcance del triaje hacia pares ThoxMini o ThoxClip.
+- Postura de rechazo (refusal posture) medida en la ejecución de evaluación del 1 de noviembre de 2026.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Modo thinking, visión o audio: no disponible.
+- Capacidades de agente multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: solo inglés declarado.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Triaje de incidencias de sistema operativo: el modelo clasifica y enruta peticiones de soporte relacionadas con kernel y SO, derivando los casos complejos al modelo host de 27B mediante MeshStack.
-- Diagnóstico de primera línea en dispositivos de borde: al ejecutarse en ThoxAir y ThoxKey, puede realizar comprobaciones iniciales de estado del sistema sin depender de la nube.
-- Asistente de runbooks: responde preguntas fundamentadas sobre procedimientos operativos gracias a su entrenamiento sobre el corpus de kernel filtrado por factualidad.
-- Agente de soporte en Ollama: su empaquetado y cuantización Q4_K_M (529 MB) permiten desplegarlo localmente con `ollama run Thox-ai/thoxos-kernel-0.8b` para asistencia técnica ligera.
-- Filtro de escalado en pipelines de agentes: actúa como primera capa que decide si una consulta la puede resolver el propio modelo o debe escalarse a un modelo mayor, reduciendo coste de inferencia.
-- Prototipado de agentes de sistema en investigación: su licencia Apache 2.0 y acceso público sin restricciones permiten experimentar con arquitecturas de agente OS sin ataduras de licencia.
-- Despliegue en hardware de consumo: con cuantizaciones de 500-800 MB, puede integrarse en entornos con recursos muy limitados para tareas de triaje.
+- Triaje de incidencias en dispositivos de borde: el modelo clasifica y enruta peticiones de kernel y sistema operativo en ThoxAir y ThoxKey, derivando lo que excede su alcance a pares de mayor capacidad o al profesor de 27B. Su tamaño de 0,8B permite ejecución local sin depender de la nube.
+- Diagnóstico de primera línea en soporte técnico: responde consultas fundamentadas en runbooks, lo que reduce el tiempo de resolución de incidencias recurrentes y libera a los operadores humanos para casos complejos.
+- Asistente de operaciones en el host pack ThoxKey: integrado mediante Ollama con la cuantización Q4_K_M (529 MB), puede residir permanentemente en el dispositivo y atender consultas de sistema con baja huella de memoria.
+- Enrutamiento dentro de una arquitectura multi-agente: al emitir solo propuestas que un arnés valida y ejecuta, encaja como primer eslabón de una cadena donde ThoxMini o ThoxClip asumen el razonamiento de mayor profundidad.
+- Despliegue en pipelines de CI/CD para validación de configuraciones: el modelo puede clasificar solicitudes de cambio y señalar las que requieren revisión humana antes de aplicarse, siempre bajo supervisión del arnés.
+- Evaluación e investigación de destilación: al ser un estudiante de un profesor de 27B con resultados de compuerta publicados y una divergencia de medición documentada, sirve como caso de estudio reproducible sobre la fiabilidad de la destilación en modelos sub-1B.
+- Prototipado en hardware de recursos limitados: las cuantizaciones Q4_0 (501 MB) y Q4_K_M (529 MB) permiten experimentar con llama.cpp u Ollama en equipos consumer sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-La model card reporta los siguientes resultados de evaluación, con una divergencia de medición no resuelta:
+| Benchmark | Resultado | Fecha / notas |
+|---|---|---|
+| GATE49 | 37/49 | Ejecución original, 2026-11-01 |
+| GATE49 (ruta normalizada) | 27/49 | Remedición sobre pesos publicados, 2026-11-08; divergencia bajo revisión |
+| GATE-K | Medido en la ejecución del 2026-11-01 | Resultados reportados en la sección Evaluation de la model card |
+| Sondas P16/P17 | Medidas en la ejecución del 2026-11-01 | Resultados reportados en la sección Evaluation de la model card |
+| OS-task bench | Medido en la ejecución del 2026-11-01 | Resultados reportados en la sección Evaluation de la model card |
+| Refusal posture | Medida en la ejecución del 2026-11-01 | Resultados reportados en la sección Evaluation de la model card |
 
-| Evaluación | Resultado | Fecha | Notas |
-|---|---|---|---|
-| GATE49 | 37/49 | 2026-11-01 | Ejecución original de la puerta |
-| GATE49 (ruta normalizada) | 27/49 | 2026-11-08 | Re-medición de los pesos publicados; divergencia bajo revisión |
-| GATE-K | medido en la ejecución de 2026-11-01 | 2026-11-01 | Resultados reportados en la sección Evaluation |
-| Sondas P16/P17 | medido en la ejecución de 2026-11-01 | 2026-11-01 | Resultados reportados en la sección Evaluation |
-| OS-task bench | medido en la ejecución de 2026-11-01 | 2026-11-01 | Resultados reportados en la sección Evaluation |
-| Postura de rechazo | medido en la ejecución de 2026-11-01 | 2026-11-01 | Escapes de acciones destructivas: cero en el conjunto de sondas |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. No se han publicado resultados de cualificación de dispositivos; el modelo no está cualificado en hardware ThoxAir.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. No se reclaman resultados de cualificación de dispositivo: el modelo no está cualificado para hardware ThoxAir.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,5-0,8 GB con cuantizaciones GGUF (Q4_0: 501 MB, Q4_K_M: 529 MB, Q8_0: 812 MB); alrededor de 1,5 GB en safetensors a precisión original.
-- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cabe en cualquier GPU consumer moderna.
-- Cabe en GPU de consumo: sí, dado su tamaño (0,75B parámetros) y sus cuantizaciones inferiores a 1 GB.
-- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxos-kernel-0.8b`), llama.cpp (`llama-cli`), y descarga directa de GGUF vía `hf download`. Soporte de vLLM o TGI: no disponible en la información.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 0,5 GB con Q4_0 (501 MB), 0,53 GB con Q4_K_M (529 MB), 0,81 GB con Q8_0 (812 MB) y 1,5 GB con safetensors fp (1.504.827.608 bytes), sin contar overhead de contexto y runtime.
+- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU consumer con al menos 2 GB de VRAM libre es suficiente para las cuantizaciones GGUF.
+- Cabe en GPU consumer: sí, en cualquier GPU con 2 GB o más de VRAM; también es viable en CPU.
+- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxos-kernel-0.8b`), llama.cpp (`llama-cli` con los GGUF), descarga directa de GGUF vía `hf download`. vLLM y TGI no se mencionan en la información disponible.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxOS-Kernel-0.8B | 0,75B | no disponible | Apache 2.0 | Triaje de kernel/SO destilado | Público, sin restricciones |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | no disponible | no disponible | Modelo base generalista | Público |
-| ThoxOS-Kernel-27B (profesor) | 27B | no disponible | no disponible | Triaje de kernel/SO de nivel host | no disponible |
+| ThoxOS-Kernel-0.8B | 752 M | No disponible | Apache 2.0 | Triaje de kernel/OS, destilado de un profesor de 27B | Hugging Face, Ollama, GGUF |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8B | No disponible | No disponible en la información proporcionada | Generalista | Hugging Face |
+| ThoxOS-Kernel-27B (modelo profesor) | 27B | No disponible | No disponible en la información proporcionada | Triaje de kernel/OS, superó GATE49 | Ecosistema THOX (no se detalla disponibilidad pública) |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia y enfoque.
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Divergencia de medición no resuelta: GATE49 pasó de 37/49 a 27/49 en la re-medición normalizada de los mismos pesos publicados; el estado es "bajo revisión" en la planificación Phase 1 / K-Core.
-- No cualificado en hardware ThoxAir: no se reclaman resultados de cualificación de dispositivos.
-- Idioma: solo inglés según la model card; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Riesgo de alucinación: pese al filtrado por factualidad del corpus, no se reportan métricas de tasa de alucinación.
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo hereda las condiciones del modelo base Qwen/Qwen3.5-0.8B, cuyos términos no se detallan.
-- Seguridad operativa: el modelo nunca debe ejecutar acciones del sistema directamente; requiere un arnés que valide y ejecute las propuestas. Los escapes de acciones destructivas se reportaron como cero en el conjunto de sondas, pero no se especifica el alcance de dicho conjunto.
-- Longitud de contexto no documentada: limita la planificación de casos de uso con contexto largo.
-- Modelo de nicho: su utilidad está acotada al triaje de kernel/SO; no es un modelo generalista.
+- Divergencia de medición sin resolver: GATE49 pasó de 37/49 a 27/49 en la remedición normalizada; el rendimiento real en producción es incierto hasta que se cierre la revisión.
+- El modelo no está cualificado para hardware ThoxAir; no se reclaman resultados de cualificación de dispositivo.
+- Solo soporta inglés; no se declaran capacidades multilingües.
+- Especialización estrecha: está entrenado para triaje de kernel y OS, por lo que su rendimiento en tareas generales será inferior al de su modelo base.
+- Riesgo de alucinación en respuestas sobre runbooks y diagnósticos: el diseño exige que un arnés externo valide y ejecute cualquier acción, y el modelo nunca debe ejecutar acciones de sistema directamente.
+- Sesgos conocidos: no se documentan en la información disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero deben respetarse los términos de la licencia del modelo base Qwen/Qwen3.5-0.8B, cuyos detalles no se incluyen en la información proporcionada.
+- La model card incluye material promocional (campaña de Kickstarter) y notas del fundador que no constituyen especificaciones técnicas; conviene separar ese contenido de la evaluación técnica.
+- El repositorio tiene 0 likes y 1745 descargas en el momento de la consulta, lo que indica una adopción todavía limitada y poca validación externa por parte de la comunidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Thox-ai/ThoxOS-Kernel-0.8B
-- Corpus de entrenamiento: https://huggingface.co/Thox-ai/thoxos-kernel-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Modelo profesor (ThoxOS-Kernel-27B): no disponible como enlace directo en la información proporcionada
-- Paper, blog o repositorio adicional: no disponible en la información proporcionada
+- Demo de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
+- Campaña de Kickstarter: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai?ref=hf-thoxos-kernel-0-8b

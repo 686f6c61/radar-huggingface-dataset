@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "HDTenEightyP/nanoGPT-S1I",
+  "slug": "hdteneightyp-nanogpt-s1i",
+  "author": "HDTenEightyP",
+  "url": "https://huggingface.co/HDTenEightyP/nanoGPT-S1I",
+  "created_at": "2026-11-23T23:09:32.000Z",
+  "updated_at": "2026-11-23T23:16:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation-inference",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164527079,
+  "storage_human": "165 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

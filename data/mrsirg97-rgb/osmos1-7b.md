@@ -2,121 +2,109 @@
 
 ## Resumen
 
-osmos1.7b es un modelo de generación de texto de 1.728 millones de parámetros publicado por el usuario mrsirg97-rgb en Hugging Face, distribuido exclusivamente en formato GGUF y afinado a partir de LiquidAI/LFM3-1.7B de Liquid AI. Se presenta como un agente de código compacto orientado a entornos de borde ("edge"), con soporte declarado de tool calling y un proceso de ajuste fino realizado directamente sobre la rejilla de cuantización Q4_0, de modo que el archivo de 1,36 GB no sería una copia cuantizada de un modelo mayor, sino el resultado entrenado en esa precisión.
+osmos1.7b es un modelo de lenguaje de 1.700 millones de parámetros (1.728.801.600 exactos) especializado en tareas de agente y coding agéntico, desarrollado por el usuario mrsirg97-rgb y publicado en Hugging Face. Se trata de un fine-tune del modelo base LiquidAI/LFM3-1.7B de Liquid AI, que emplea una arquitectura híbrida de convoluciones cortas y atención con 262.000 tokens de contexto nativo. El modelo está diseñado para ejecutarse en dispositivos de borde (teléfonos, portátiles) y para funcionar como agente siempre activo dentro del runtime libosmos, también desarrollado por el autor.
 
-La model card describe una receta de entrenamiento propia ("recipe v ii") centrada en evitar el colapso de diversidad que sufren los modelos pequeños ajustados sobre transcripciones de agentes: en lugar de entrenar sobre las palabras de otro modelo, se muestrean turnos generados por el propio modelo base en cada punto de decisión de sesiones reales de un ingeniero, conservando solo aquellos que reproducen la misma herramienta sobre el mismo objetivo. El modelo se presenta como "liberado", es decir, con la dirección de rechazo proyectada fuera de sus escritores residuales, y declara un 0% de rechazos tanto en peticiones dañinas como en peticiones seguras que parecen dañinas (XSTest).
+La propuesta diferencial del modelo es su receta de entrenamiento, denominada v-r13, que evita entrenar sobre las transcripciones literales de otros modelos o de un ingeniero concreto. En su lugar, en cada punto de decisión de una sesión real de agente, el modelo base genera la respuesta por sí mismo y solo se conservan aquellas muestras que reproducen la misma herramienta y el mismo objetivo que el ingeniero original, garantizando que el estilo de razonamiento sea propio del modelo y no una copia. El entrenamiento cubre ventanas de hasta 56.000 tokens, con una mediana de contexto de 22.700 tokens, lo que lo orienta a tareas de agente de larga duración.
 
-Es relevante ahora por su enfoque poco habitual: entrenamiento dentro del cuantizador, atención dispersa latente (LSA) para contexto largo sobre las seis capas de atención completa del modelo base, y un objetivo explícito de agente de código siempre activo en hardware de consumo. No obstante, el modelo cuenta con 37 descargas y 0 likes en el momento de la consulta, no dispone de benchmarks estándar publicados y su licencia heredada (lfm1.0) impone restricciones que conviene revisar antes de cualquier uso comercial.
+El modelo se distribuye principalmente en formato GGUF (BF16, 3,47 GB) y está pensado para su uso con el runtime libosmos. Su relevancia actual reside en la combinación de un tamaño reducido apto para hardware de consumo, un contexto nativo muy amplio y un enfoque de entrenamiento orientado a la toma de decisiones agénticas más que al conocimiento general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida de convoluciones cortas y atención (heredada de LFM3-1.7B); atención dispersa latente (LSA) en las seis capas de atención completa |
+| Arquitectura | Híbrida de convoluciones cortas y atención (heredada de LFM3-1.7B) |
 | Parametros totales | 1.728.801.600 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 262.000 tokens nativos en el modelo base; el autor publica mapas LSA para contexto largo, sin especificar la ventana efectiva final |
-| Tipos de cuantizacion | Q4_0 (entrenado en esa rejilla) y BF16; no se documentan otras |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.000 tokens nativos; entrenado en ventanas de hasta 56.000 tokens |
+| Tipos de cuantizacion | BF16 (principal); entrenado contra caché KV Q4_0; validado con caché f16, Q8 y Q4_0 |
 | Idiomas soportados | Inglés (en) |
-| Licencia | lfm1.0 (campo license: other con license_name: lfm1.0) |
-| Formato de pesos | GGUF (vibes1.7b-Q4_0.gguf, vibes1.7b-BF16.gguf) y safetensors para los mapas LSA |
-| Tamano del repositorio | 11,0 GB |
+| Licencia | lfm1.0 (other) |
+| Formato de pesos | GGUF (osmos1.7b-BF16.gguf) |
 | Modelo base | LiquidAI/LFM3-1.7B |
-| Pipeline | text-generation |
+| Tamano del repositorio | 19,5 GB |
 | Libreria | gguf |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda de LFM3-1.7B una arquitectura híbrida que combina convoluciones cortas con capas de atención completa; según la model card, solo seis capas (2, 6, 10, 14, 18 y una más no detallada en el texto disponible) son de atención completa, y sobre ellas se aplica la atención dispersa latente (LSA) mediante mapas publicados en `vibes1.7b-lsa-maps.safetensors` (0,8 MB). El contexto nativo declarado del base es de 262.000 tokens.
+El modelo hereda de LFM3-1.7B una arquitectura híbrida que combina convoluciones cortas con mecanismos de atención, lo que le permite sostener un contexto nativo de 262.000 tokens con un coste computacional contenido para su tamaño. Sobre esta base, el autor aplica un proceso de "liberación" que proyecta fuera la dirección de rechazo de los escritores residuales del modelo, atravesando sus post-norms; el resultado es un modelo que rechaza el 0 % de las peticiones dañinas y solo el 1 % de las peticiones seguras que parecen inseguras en el conjunto XSTest.
 
-El entrenamiento se realizó como un LoRA dentro del cuantizador Q4_0, plegado después en los códigos de cuantización, de forma que los valores Q4_0 son el objeto entrenado y no una conversión posterior. Los datos provienen de sesiones reales de agente de un único ingeniero, reproducidas en palabras del propio modelo base: en cada punto de decisión se generan varias muestras y solo se conservan las que ejecutan la misma herramienta sobre el mismo objetivo y parsean correctamente. A ello se suma un conjunto de respuestas en la voz del ingeniero y una porción de su código propio en Go, C y Rust, sin archivos generados por IA. El autor documenta que entrenar sobre turnos de otros modelos reduce la variedad de aperturas de pensamiento del 51% al 11-14% y provoca bucles de copia literal, motivo por el que se evita esa fuente. No se documentan fases de RLHF ni DPO.
+El entrenamiento sigue la receta v-r13. En lugar de aprender de las palabras de otros modelos o de un ingeniero, en cada punto de decisión de sesiones reales de agente el modelo base genera varias respuestas y solo se retienen las que coinciden con la herramienta y el objetivo de la sesión original y que además parsean correctamente. El conjunto final consta de 8.862 ejemplos, 196 millones de tokens de contexto y 6,9 millones de tokens entrenados, en una sola pasada de aproximadamente 9 horas sobre dos RTX 5090. Las ventanas de entrenamiento alcanzan los 56.000 tokens, con 8.145 puntos de decisión y una mediana de contexto de 22.700 tokens, sin empaquetado de ejemplos. Junto a estas decisiones se incluye un pool de lectura curado con código de sistemas del ingeniero (Go, C y Rust) a longitud completa con sus tests de comportamiento, pull requests fusionados en un motor de inferencia y una porción menor de código de motores de inferencia de terceros, excluyendo archivos generados y TypeScript.
+
+Una innovación destacable es el entrenamiento en BF16 contra una caché KV cuantizada a Q4_0: los pesos se entrenan en BF16 mientras cada clave y valor que lee la atención se redondea a Q4_0, de modo que el modelo mantiene su rendimiento tanto con caché f16 como Q8 o Q4.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con un registro coloquial y conciso ("vibes") que el autor ilustra con respuestas literales de ejemplo.
-- Agente de código en harness de desarrollador: ejecución de shell (bash), lectura de archivos, edición y ejecución de tests.
-- Tool calling / function calling, capacidad heredada del modelo base y reforzada en el ajuste fino orientado a decisiones de herramienta.
-- Razonamiento multi-paso dentro de sesiones de agente, con turnos de pensamiento propios y soporte de contexto largo mediante LSA.
-- Capacidad de código en Go, C, Rust, Python y TypeScript; el autor reporta mejoras en repositorios no vistos, incluido TypeScript, que no forma parte de los datos de entrenamiento.
-- Modo de "liberación": se elimina la dirección de rechazo, con 0% de rechazos declarados en prompts dañinos y en XSTest.
-- No se documentan capacidades de visión, audio ni modo de pensamiento explícito separado.
+- Generación de texto conversacional en inglés.
+- Coding agéntico: uso de shell, lectura y escritura de archivos, edición de código y ejecución de tests dentro de un harness de agente.
+- Tool calling y function calling, con énfasis en seleccionar la herramienta correcta sobre el objetivo correcto.
+- Razonamiento multi-paso en sesiones largas, con contexto de hasta 56.000 tokens durante el entrenamiento y 262.000 tokens nativos.
+- Capacidad de mantener el hilo en tareas profundas donde el modelo ha leído decenas de archivos y debe recordar el objetivo.
+- Manejo de contextos largos con degradación controlada de perplejidad (validado a 16K, 32K y 48K sobre código Zig).
+- Capacidades multilingües limitadas al inglés.
+- No se documentan capacidades de visión, audio ni modo de pensamiento explícito.
 
 ## Casos de uso
 
-- Agente de código siempre activo en portátil o dispositivo de borde: con 1,36 GB en Q4_0 y 175 tokens/s de decodificación en un AMD Strix Halo, puede mantenerse residente en memoria y atender tareas de shell, lectura y edición sin depender de la nube.
-- Automatización de tareas de mantenimiento en repositorios pequeños: el modelo ejecuta comandos, inspecciona archivos y aplica ediciones; el autor reporta 144 ediciones frente a 97 del base en 20 tareas de sus propios repositorios.
-- Resolución de incidencias guiada por mensaje de commit: usando el mensaje como tarea y los tests ocultos del commit como criterio, el modelo resolvió 4 de 25 tareas completas frente a 1 del base, lo que lo hace útil como primer intento automático en pipelines de CI.
-- Asistente de terminal integrado en herramientas de desarrollo: su mezcla de herramientas (77% bash, 12% lectura, 8% edición) encaja en flujos de tipo "run, check, fix" más que en chat de conocimiento general.
-- Prototipado de agentes con tool calling en hardware de consumo: sirve para validar harnesses y bucles de agente antes de escalar a modelos mayores de la misma familia (vibes27b, vibes224b).
-- Re-cuantización y experimentación: el archivo BF16 de 3,47 GB permite probar otros formatos y runtimes partiendo de los mismos valores entrenados.
-- Evaluación de técnicas de entrenamiento en cuantización: útil para investigadores que quieran reproducir o analizar el ajuste LoRA dentro de la rejilla Q4_0 y el efecto de la proyección de la dirección de rechazo.
+- Agente de coding en local para desarrolladores: el modelo opera dentro de un harness con acceso a shell, archivos y tests, y puede completar tareas de reparación o implementación sobre repositorios reales; su ventana de 56.000 tokens entrenados le permite recordar el estado de la tarea tras leer múltiples archivos.
+- Automatización de tareas de mantenimiento en CI/CD: dado un repositorio en el commit padre y una descripción de tarea, el modelo puede proponer cambios y ejecutar la suite de tests para validarlos, como demuestra el banco de commits reales con 52 intentos.
+- Asistente siempre activo en dispositivos de borde: con 1,7B parámetros y un archivo BF16 de 3,47 GB, cabe en teléfonos y portátiles y puede mantenerse en ejecución continua para tareas de agente de fondo.
+- Edición de código sobre bases de código de sistemas en Go, C y Rust: el pool de lectura incluye código de sistemas a longitud completa con tests de comportamiento, lo que lo hace adecuado para refactorizaciones guiadas por tests.
+- Procesamiento de repositorios extensos con contexto largo: con 262.000 tokens nativos y buen comportamiento de perplejidad a 48K, puede analizar codebases grandes en una sola pasada sin truncar.
+- Despliegue con memoria limitada mediante caché KV cuantizada: al entrenarse contra Q4_0, el modelo mantiene la calidad con caché Q4 (coste de ~0,2 % de perplejidad), lo que reduce la VRAM necesaria para contextos largos en GPUs de consumo.
+- Integración en pipelines de agentes propios a través de libosmos: el modelo está construido para ejecutarse en ese runtime, lo que facilita su uso como motor de decisión en flujos de tool calling.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas propias de pérdida en datos reservados y de comportamiento de agente, todas sobre el archivo Q4_0:
-
-| Pérdida en datos reservados | Original BF16 | Original Q4_0 | osmos1.7b Q4_0 |
-|---|---|---|---|
-| Repositorio no visto | 0,857 | 0,917 | 0,846 |
-| SQLite (C, no entrenado) | 1,395 | 1,480 | 1,406 |
-| Redis (C, no entrenado) | 1,300 | 1,370 | 1,318 |
-| requests (Python, no entrenado) | 1,193 | 1,249 | 1,203 |
-| zod (TypeScript, no entrenado) | 0,939 | 0,989 | 0,932 |
-| Respuestas en la voz del ingeniero | 2,819 | 2,852 | 2,241 |
-
-| Comportamiento de agente (20 tareas) | Original Q4_0 | osmos1.7b Q4_0 |
-|---|---|---|
-| Llamadas a herramienta distintas | 78% | 78% |
-| Pensamientos repetidos literalmente | 14,3% | 11,9% |
-| Intentos en bucle (llamada 20+ veces) | 0 de 20 | 1 de 20 |
-| Ediciones realizadas | 97 | 144 |
-| Mezcla de herramientas | bash 65%, read 25%, edit 6% | bash 77%, read 12%, edit 8% |
-
-| Trabajo real (commits reservados, 25 intentos) | Original Q4_0 | osmos1.7b Q4_0 |
-|---|---|---|
-| Pasó un test objetivo | 3 | 5 |
-| Resuelto completo sin romper nada | 1 | 4 |
-| Tests objetivo superados | 10,7% | 20,0% |
-
-| Rendimiento en hardware | Valor |
+| Benchmark | Resultado |
 |---|---|
-| Decodificación en AMD Strix Halo (Q4_0) | 175 tokens/s |
-| Procesamiento de prompt en AMD Strix Halo | ~5.000 tokens/s |
-| Porcentaje del ancho de banda de memoria aprovechado | ~92% |
+| Commits reales, 52 intentos, caché f16 | 9 passed, 2 partial, score medio 0,202, 0 builds rotos, 0 falsos "done" |
+| Commits reales, 52 intentos, caché Q8 | 11 passed, 2 partial, score medio 0,247, 0 builds rotos, 0 falsos "done" |
+| Perplejidad TigerBeetle (Zig) 16K | 2,424 (vs 2,525 de v-r10) |
+| Perplejidad TigerBeetle (Zig) 32K | 2,060 (vs 2,138 de v-r10) |
+| Perplejidad TigerBeetle (Zig) 48K | 2,073 (vs 2,150 de v-r10) |
+| Perplejidad evt (held-out) | 2,590 (base: 2,666) |
+| Perplejidad TigerBeetle | 6,079 (base: 6,393) |
+| Perplejidad Netty (Java) | 1,958 (base: 2,000) |
+| Perplejidad OCaml | 5,131 (base: 5,283) |
+| Perplejidad Haskell | 4,597 (base: 4,719) |
+| Perplejidad Fortran | 3,099 (base: 3,184) |
+| Perplejidad texto general en inglés | 6,81 (base: 7,18; -5,1 %) |
+| LiveCodeBench, 60 problemas | 38 resueltos (base BF16: 41; v-r10 Q4_0: 39) |
+| Rechazos en prompts dañinos | 0 % |
+| Rechazos en XSTest (seguros que parecen inseguros) | 1 % |
+| Concordancia con el token siguiente del base | 90 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~1,4 GB para el archivo Q4_0 y ~3,5 GB para el BF16, a los que hay que sumar la caché KV según la longitud de contexto efectiva.
-- GPU recomendadas: el autor valida un AMD Strix Halo (memoria unificada); por tamaño, cualquier GPU con 4 GB o más de VRAM puede alojar el Q4_0.
-- Cabe en GPU de consumo: sí, en RTX 3060, RTX 4060, RTX 4090 y equivalentes, así como en portátiles con memoria unificada.
-- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF; el autor referencia su propio proyecto libosmos, y los tags del repositorio indican compatibilidad con endpoints. No se documenta soporte explícito de vLLM ni TGI.
-- Latencia y throughput: 175 tokens/s de decodificación y ~5.000 tokens/s de prefill en Strix Halo con Q4_0; no hay cifras publicadas para otras GPU.
+- VRAM estimada para inferencia: el archivo BF16 ocupa 3,47 GB; con caché KV f16 el consumo adicional depende de la longitud de contexto. Con caché Q4_0 el coste de memoria de la caché se reduce aproximadamente a la mitad respecto a f16, con un coste de ~0,2 % de perplejidad.
+- GPU recomendadas: el entrenamiento se realizó sobre dos RTX 5090; para inferencia, el tamaño permite GPUs de consumo como RTX 4090, RTX 3090 o RTX 5090, así como GPUs de datacenter (A100, H100) si se requiere mayor throughput.
+- Cabe en GPU de consumo: sí, con 1,7B parámetros y pesos BF16 de 3,47 GB es viable en GPUs de consumo con 8 GB o más de VRAM, y en teléfonos y portátiles según el autor.
+- Opciones de despliegue: el modelo se distribuye en GGUF, por lo que es compatible con llama.cpp y con el runtime libosmos para el que fue construido; no se documentan otras opciones en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| osmos1.7b | 1,73 B | 262K nativos (LSA para largo) | lfm1.0 | GGUF | Ajuste dentro de Q4_0, orientado a agente de código, sin benchmarks estándar |
-| LiquidAI/LFM3-1.7B | 1,73 B | 262K | lfm1.0 | safetensors y GGUF | Modelo base; el autor reporta que osmos1.7b lo supera en código reservado y en tareas de agente |
-| vibes27b | no disponible | no disponible | no disponible | no disponible | Miembro de la misma familia, orientado a portátil con GPU; sin datos publicados en la información disponible |
-| vibes224b | 224 B (MoE) | no disponible | no disponible | no disponible | Miembro insignia de la familia; sin datos publicados en la información disponible |
+| osmos1.7b | 1,73B | 262K nativo (entrenado a 56K) | lfm1.0 | GGUF | Fine-tune agéntico de LFM3-1.7B; LiveCodeBench 38/60 |
+| LiquidAI/LFM3-1.7B (base) | 1,7B | 262K | lfm1.0 | safetensors/GGUF | Base sin fine-tune agéntico; LiveCodeBench 41/60; perplejidad general 7,18 |
+| osmos1.7b v-r10 (release previa) | 1,7B | no disponible | lfm1.0 | GGUF | Versión anterior con ventanas de ~6K tokens; LiveCodeBench 39/60; perplejidad TigerBeetle 2,525 a 16K |
+
+No se dispone de datos de benchmarks de otros modelos de la misma categoría en la información proporcionada para ampliar la comparativa.
 
 ## Limitaciones y advertencias
 
-- No es una mejora de conocimiento general: el autor indica explícitamente que midió código y trabajo de agente, no chat ni trivia; el rendimiento en preguntas factuales puede ser pobre.
-- Entrenado sobre las sesiones de un único ingeniero: el estilo, las decisiones de herramienta y la mezcla bash/read/edit reflejan un flujo de trabajo concreto y pueden no generalizar a otros equipos o convenciones.
-- Riesgo de bucles: el autor reporta 1 de 20 intentos bloqueado en un error de compilación (no por copia literal) y un 11,9% de pensamientos repetidos palabra por palabra en intentos completos.
-- Riesgo de alucinación no cuantificado: no hay evaluación publicada de factualidad ni de tasa de alucinación.
-- Idioma: solo inglés; no se declara soporte de castellano ni de otros idiomas.
-- Contexto largo: los 262K tokens corresponden al modelo base; el autor publica mapas LSA pero no especifica la ventana efectiva ni métricas de recuperación en contexto largo.
-- La "liberación" elimina la dirección de rechazo: 0% de rechazos declarados tanto en prompts dañinos como en XSTest, lo que implica ausencia de salvaguardas de contenido y traslada toda la responsabilidad de filtrado al despliegue.
-- Licencia lfm1.0: es una licencia distinta de las abiertas estándar, con posibles restricciones de uso comercial; debe revisarse el archivo LICENSE antes de producción.
-- Madurez: 37 descargas y 0 likes en el momento de la consulta, sin benchmarks de terceros ni validación independiente; los resultados proceden únicamente del autor.
-- El repositorio ocupa 11,0 GB pese a que los archivos declarados suman ~4,8 GB, lo que sugiere contenido adicional no documentado en la información disponible.
+- El modelo solo soporta inglés; no se documentan capacidades multilingües.
+- Está afinado para coding agéntico y no constituye una mejora de conocimiento general; su rendimiento en LiveCodeBench es ligeramente inferior al del base (38 frente a 41 de 60).
+- La mayoría de los fallos en el banco de commits reales se debieron a agotar el límite de 30 minutos, no a errores de corrección, lo que sugiere limitaciones de velocidad en tareas largas.
+- La liberación de la dirección de rechazo implica que el modelo rechaza el 0 % de prompts dañinos; esto supone un riesgo de seguridad relevante para despliegues en producción sin filtros externos.
+- La licencia lfm1.0 ("other") impone condiciones que deben revisarse antes de uso comercial; no se detallan en la información disponible.
+- El modelo se distribuye principalmente como GGUF y está orientado al runtime libosmos; la compatibilidad con otros stacks de inferencia no está documentada.
+- Riesgo de alucinación y de bucles de copia inherente a los modelos pequeños; la receta v-r13 se diseñó específicamente para mitigar la copia de pensamientos previos, pero no se ofrecen garantías.
+- El repositorio ocupa 19,5 GB, lo que incluye artefactos adicionales más allá del archivo BF16 de 3,47 GB.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mrsirg97-rgb/osmos1.7b
-- Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Repositorio del runtime del autor: https://github.com/mrsirg97-rgb/libosmos
-- No se han encontrado en la información disponible papers, blogs ni demos adicionales.
+- [Modelo en Hugging Face](https://huggingface.co/mrsirg97-rgb/osmos1.7b)
+- [Modelo base LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B)
+- [Runtime libosmos](https://github.com/mrsirg97-rgb/libosmos)

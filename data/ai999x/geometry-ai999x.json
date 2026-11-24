@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 370,
+  "downloads_30d": 372,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -62,7 +62,7 @@
   "benchmarks": [
     {
       "task": "geometry question answering",
-      "dataset": "Golden answers (375 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (391 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }

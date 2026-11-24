@@ -2,81 +2,89 @@
 
 ## Resumen
 
-Hy4-flash ROCmFPX es una colección de cuantizaciones GGUF de tipo "hardware-aware" del modelo tencent/Hy4-flash, publicada por el usuario Harsha001. No se trata de un modelo entrenado desde cero, sino de una redistribución cuantizada pensada específicamente para ejecutar un modelo de mezcla de expertos (MoE) de gran tamaño en hardware AMD consumer y de gama alta, en concreto el APU Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada, de los cuales 96 GB se configuran como memoria de GPU.
+Hy4-flash ROCmFPX es una distribución de cuantizaciones GGUF del modelo tencent/Hy4-flash, publicada por el usuario Harsha001 y optimizada específicamente para GPUs AMD. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) de 220B parámetros totales, de los cuales 12B están activos por token, con 42 capas y 512 expertos con enrutamiento top-16. Incluye una tabla de búsqueda "Engram" de 64B parámetros que se consulta por filas y puede residir en CPU o SSD.
 
-El modelo base, Hy4-flash, es un transformer MoE de 220 000 millones de parámetros totales, de los cuales 64 000 millones corresponden a una tabla de búsqueda denominada Engram y 12 000 millones se activan por token. Tiene 42 capas y 512 expertos con enrutamiento top-16. Esta distribución permite que el coste computacional por token sea mucho menor que el de un modelo denso equivalente, mientras que la tabla Engram se consulta por filas y puede residir en CPU o SSD sin ocupar VRAM.
+La relevancia de esta publicación radica en que adapta un modelo de gran tamaño para que la parte correspondiente a GPU quepa íntegramente en un único AMD Ryzen AI Max+ 395 (Strix Halo, 128 GB de memoria unificada, con 96 GB configurados como memoria de GPU). Los ficheros de 4 bits ocupan entre 80,4 y 84,7 GiB en la parte de GPU, mientras que la tabla Engram (33 GiB en Q4_0) se delega a CPU o SSD.
 
-La relevancia de esta ficha radica en que demuestra una estrategia de despliegue viable para modelos MoE de escala frontier en equipos de un solo nodo con memoria unificada, usando formatos de cuantización propios (ROCmFPX) y una bifurcación específica de llama.cpp. La información disponible es limitada: no hay datos de benchmarks publicados, no se detallan los idiomas soportados y el repositorio no registra descargas ni valoraciones.
+Las cuantizaciones están construidas con los formatos ROCmFPX y una importance matrix derivada de texto agéntico (ejecuciones de agentes de código, tool calls, function calling, tareas de shell y bases de datos), lo que las orienta a trabajo con agentes, tool calling y código, con inglés como idioma prioritario. Esta distribución es solo de texto: no incluye el codificador de visión ni el drafter DFly2 del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con tabla Engram (arquitectura `hy_v4_flash` en llama.cpp) |
-| Parametros totales | 220B (incluye 64B de tabla Engram) |
+| Arquitectura | Transformer MoE (arquitectura `hy_v4_flash`), 42 capas, 512 expertos, enrutamiento top-16 |
+| Parametros totales | 218.938.417.140 (≈220B), de los cuales 64B corresponden a la tabla Engram |
 | Parametros activos | 12B por token |
-| Longitud de contexto | 65 536 tokens en el ejemplo de ejecución (`-c 65536`); no se especifica el máximo del modelo base |
-| Tipos de cuantizacion | Q4_0_ROCMFP4_STRIX_O8 (expertos ROCmFP4, resto Q8_0_ROCMFPX); Q4_0_ROCMFP4_FAST_O8; Q6_K_ROCMFPX; Q8_0_ROCMFPX; tabla Engram en Q4_0 o Q8_0 |
-| Idiomas soportados | no disponible (la model card indica "English first") |
-| Licencia | Tencent Hy License, Version 1.0 (derivada de Apache 2.0 con términos comerciales adicionales en la sección 10) |
-| Formato de pesos | GGUF dividido en partes de hasta 45 GB |
+| Longitud de contexto | No disponible en la informacion proporcionada (el ejemplo de ejecucion usa `-c 65536`) |
+| Tipos de cuantizacion | Q4_0_ROCMFP4 + Q8_0_ROCMFPX (expertos en Q4_0_ROCMFP4, resto en Q8_0_ROCMFPX); variante Q4_0_ROCMFP4_FAST; tabla Engram en Q4_0; token embedding en Q8_0 |
+| Idiomas soportados | No disponible (la model card indica "English first") |
+| Licencia | Tencent Hy License, Version 1.0 (derivada de Apache 2.0 con terminos comerciales adicionales, seccion 10) |
+| Formato de pesos | GGUF dividido en partes de maximo 45 GB (3 partes en el ejemplo) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con 42 capas y 512 expertos, con enrutamiento top-16, lo que resulta en 12 000 millones de parámetros activos por token sobre un total de 220 000 millones. Una parte sustancial del total (64 000 millones) corresponde a la tabla Engram, un componente de búsqueda por filas que se consulta una vez por token y que, por su patrón de acceso, no necesita residir en memoria de GPU. Esta es la clave que hace viable el despliegue en un único Strix Halo: la parte que sí debe estar en GPU se reduce a 84,7 GiB en la cuantización recomendada de 4 bits.
+El modelo base es un transformer MoE con 42 capas, 512 expertos y enrutamiento top-16, con 220B parámetros totales y 12B activos por token. Una particularidad estructural es la tabla Engram de 64B parámetros, que se consulta mediante lookups por fila (una fila por token) y por tanto no requiere memoria de GPU; puede mantenerse en CPU o, con mmap, en SSD. La distribución ROCmFPX añade escalas de tensor propietarias del formato y mantiene el token embedding en Q8_0.
 
-Las cuantizaciones se generaron con una matriz de importancia derivada de texto agéntico: ejecuciones de agentes de código, llamadas a herramientas, function calling y tareas de shell y bases de datos, renderizadas con la plantilla de chat del propio modelo e incluyendo los esquemas de herramientas. Esto significa que los cuantizadores están optimizados para trabajo agéntico y de código, no para generación de prosa. Se aplicaron escalas de tensor ROCmFPX y se mantuvo el embedding de tokens en Q8_0. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo base.
+Las cuantizaciones se generaron con una importance matrix construida a partir de texto agéntico: ejecuciones de agentes de código, tool calls, function calling y tareas de shell y bases de datos, renderizadas con la plantilla de chat del propio modelo e incluyendo los esquemas de herramientas. No se dispone de información sobre el número de tokens de entrenamiento del modelo base, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card menciona un drafter DFly2 en el modelo original (no incluido aquí), lo que sugiere decodificación especulativa en la versión completa.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de pensamiento configurable mediante `reasoning_effort` (`high` para thinking, valor por defecto, o `no_think`).
-- Soporte de tool calling y function calling, con plantilla de chat compatible con esquemas de herramientas (`--jinja`).
-- Orientación a flujos agénticos: ejecución de tareas de código, shell y bases de datos en múltiples pasos.
-- Cuantizaciones calibradas específicamente con datos de agentes de código, lo que favorece el rendimiento en ese dominio.
-- Capacidad multilingüe: no disponible; la model card indica prioridad al inglés.
-- Visión: no incluida en esta distribución (el codificador visual del modelo base no está presente).
-- Decodificación especulativa: no incluida (el drafter DFly2 no está presente en estos ficheros).
+- Generación de texto conversacional (pipeline `text-generation`).
+- Razonamiento con modo de pensamiento configurable mediante `reasoning_effort`: `"high"` (thinking, por defecto) o `"no_think"`.
+- Tool calling y function calling, con esquemas de herramientas integrados en la plantilla de chat.
+- Flujos agénticos y razonamiento multi-paso (orientación declarada de las cuantizaciones).
+- Generación de código y tareas de shell y bases de datos.
+- Capacidades multilingües: no disponibles; la model card indica prioridad de inglés.
+- Visión: no incluida en esta distribución (el codificador de visión del modelo base no está presente).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
 
 ## Casos de uso
 
-- Agentes de código en local: el modelo puede ejecutar bucles de razonamiento multi-paso con llamadas a herramientas sobre un contexto de 65 536 tokens, adecuado para refactorizaciones y tareas de reparación de código en un equipo de sobremesa con Strix Halo.
-- Automatización de operaciones de shell: gracias al calibrado con tareas de shell y bases de datos, es adecuado para agentes que interpretan salidas de terminal y ejecutan comandos correctivos.
-- Asistente de function calling en pipelines internos: la plantilla con esquemas de herramientas permite integrarlo como planificador que decide qué API invocar en flujos de automatización.
-- Prototipado de agentes sobre hardware AMD consumer: permite validar comportamiento agéntico de un MoE de 220B sin acceso a clústeres, manteniendo la tabla Engram en CPU o SSD mediante mmap.
-- Evaluación de cuantizaciones para despliegue: los cuatro niveles (Q4_0, Q4_0 FAST, Q6_K, Q8_0) permiten comparar calidad frente a requisitos de memoria en el mismo hardware.
-- Servicio de inferencia de un solo nodo con llama-server: el binario con soporte Vulkan o ROCm/HIP expone una API compatible con OpenAI para integrarse en aplicaciones existentes.
-- Procesamiento de documentos largos en inglés: el contexto de 65 536 tokens permite resumir o extraer información de documentos extensos, aunque sin garantías multilingües.
+- Agentes de código en local: el modelo puede ejecutar bucles de tool calling y function calling sobre un entorno de desarrollo, aprovechando que las cuantizaciones se calibraron con texto de agentes de código y que la parte de GPU cabe en una única máquina Strix Halo.
+- Automatización de tareas de shell y bases de datos: adecuado para agentes que generan y ejecutan comandos o consultas SQL, escenario incluido explícitamente en la importance matrix.
+- Asistente de programación con contexto largo: el ejemplo de ejecución emplea `-c 65536`, por lo que puede manejar conversaciones y ficheros de código extensos en una sola sesión.
+- Despliegue en estaciones de trabajo AMD sin GPU de datacenter: al estar dimensionado para un Ryzen AI Max+ 395 con 96 GB como memoria de GPU, permite servir un MoE de 220B en hardware de consumo profesional.
+- Razonamiento con control de coste: el modo `"no_think"` permite desactivar el pensamiento extendido para respuestas rápidas, y `"high"` para tareas que requieren razonamiento profundo.
+- Inferencia con llama.cpp vía `llama-server`: integrable como servidor compatible con endpoints para aplicaciones conversacionales y pipelines internos.
+- Experimentación e investigación sobre cuantización: los formatos ROCmFPX y las variantes `STRIX`/`STRIXFAST` permiten comparar calidad y velocidad en hardware AMD.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que los números de calidad sobre conversaciones agénticas reservadas (solo tokens del asistente) se añadirán más adelante, y que todos los ficheros superaron una prueba de humo antes de la subida. No se deben inferir cifras de MMLU, HumanEval o GSM8K a partir de esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que cada fichero pasó una prueba de humo antes de la subida y que los números de calidad sobre chats agénticos retenidos (solo tokens del asistente) se añadirán más adelante.
 
 ## Requisitos de hardware
 
-- VRAM estimada para la parte de GPU según cuantización: 84,7 GiB (Q4_0_ROCMFP4_STRIX_O8), 80,4 GiB (Q4_0_ROCMFP4_FAST_O8), aproximadamente 117 GiB (Q6_K_ROCMFPX) y aproximadamente 149 GiB (Q8_0_ROCMFPX).
-- La tabla Engram se mantiene fuera de la GPU: 33 GiB en Q4_0 o 63 GiB en Q8_0, en CPU o SSD mediante mmap.
-- GPU recomendadas: AMD Ryzen AI Max+ 395 (Strix Halo, 128 GB, 96 GB configurados como memoria de GPU) para las variantes de 4 bits; para Q6_K se requieren dos Strix Halo o GPUs de clase MI; para Q8_0, GPUs de clase MI300 como referencia.
-- No cabe en GPUs consumer convencionales (RTX 4090, 24 GB); el diseño está pensado para memoria unificada de gran capacidad.
-- Opciones de despliegue: bifurcación ROCmFPX de llama.cpp, rama `hy4-flash`, compilada con Vulkan o ROCm/HIP; se usa `llama-server` con `-ngl 99`, `-ot "per_layer_token_embd=CPU"`, `-c 65536` y `--jinja`. No se menciona soporte en vLLM, Ollama o TGI.
+- VRAM estimada: 84,7 GiB para la parte de GPU en `Q4_0_STRIX` y 80,4 GiB en `Q4_0_STRIXFAST`; la tabla Engram en Q4_0 ocupa 33 GiB adicionales en CPU o SSD.
+- Hardware objetivo: AMD Ryzen AI Max+ 395 (Strix Halo), 128 GB de memoria, con 96 GB configurados como memoria de GPU.
+- GPU recomendadas: AMD con soporte ROCm/HIP o Vulkan; el fork de llama.cpp debe compilarse con Vulkan o ROCm/HIP.
+- Cabe en GPU de consumo: sí, en el caso concreto de Strix Halo con 128 GB; no se indica compatibilidad con GPUs de menos memoria.
+- Opciones de despliegue: fork ROCmFPX de llama.cpp, rama `hy4-flash`, mediante `llama-server` con `-ngl 99 -ot "per_layer_token_embd=CPU" -c 65536 --jinja`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos, y el modelo base (tencent/Hy4-flash) no cuenta con cifras publicadas en esta ficha. Cualquier comparación cuantitativa sería especulativa.
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Hy4-flash ROCmFPX (esta ficha) | ≈220B (64B en tabla Engram) | 12B | No disponible | Tencent Hy License 1.0 | GGUF en Hugging Face |
+| tencent/Hy4-flash (base) | ≈220B | 12B | No disponible | Tencent Hy License 1.0 | Pesos originales en Hugging Face |
+| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+No se dispone de información sobre otros modelos comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados: la calidad real de estas cuantizaciones frente al modelo base en precisión completa no está documentada.
-- Las cuantizaciones están calibradas con datos agénticos y en inglés; el rendimiento en prosa, otros dominios o idiomas distintos del inglés puede degradarse de forma no medida.
-- La licencia Tencent Hy License 1.0 deriva de Apache 2.0 pero añade términos comerciales para grandes negocios de Model-as-a-Service (sección 10); es necesario revisar el fichero LICENSE antes de un uso comercial.
-- El modelo base puede presentar sesgos y alucinaciones propios de los modelos de lenguaje; no se documentan evaluaciones de seguridad ni de sesgo.
-- Esta distribución no incluye visión ni decodificación especulativa, por lo que no reproduce todas las capacidades del modelo original.
-- El despliegue requiere una bifurcación no estándar de llama.cpp; no hay garantía de compatibilidad con versiones upstream ni con otros runtimes.
-- El repositorio no registra descargas ni valoraciones, y la model card advierte de que los datos de calidad están pendientes; conviene tratarlo como una publicación experimental.
-- El contexto máximo real del modelo base no se especifica; el valor de 65 536 corresponde al ejemplo de ejecución.
+- Solo texto: esta distribución no incluye el codificador de visión ni el drafter DFly2 del modelo base.
+- Idioma: la model card indica prioridad de inglés; no se detallan idiomas soportados.
+- Calibración sesgada a agentes: la importance matrix se construyó con texto agéntico, por lo que la calidad en otros dominios (por ejemplo, redacción de ensayos) puede ser inferior a la esperada.
+- Riesgo de alucinación: no se han publicado evaluaciones de calidad ni benchmarks que permitan cuantificarlo.
+- Licencia: Tencent Hy License 1.0 deriva de Apache 2.0 e incluye términos comerciales adicionales para grandes negocios de Model-as-a-Service (sección 10); es necesario revisar el fichero LICENSE antes de un uso comercial.
+- Hardware restringido: los ficheros están dimensionados para Strix Halo con 96 GB como memoria de GPU; no se documenta su funcionamiento en otras configuraciones.
+- Dependencia de un fork: requiere el fork ROCmFPX de llama.cpp (rama `hy4-flash`) con soporte para la arquitectura `hy_v4_flash` y las escalas de tensor ROCmFPX.
+- Repositorio de terceros: la publicación la mantiene el usuario Harsha001, no Tencent; el crédito del modelo corresponde a Tencent.
+- Estado de validación: solo se menciona una prueba de humo por fichero; no hay métricas de calidad publicadas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Harsha001/Hy4-flash-ROCmFPX
+- Modelo en Hugging Face: https://huggingface.co/Harsha001/Hy4-flash-ROCmFPX
 - Modelo base: https://huggingface.co/tencent/Hy4-flash
 - Repositorio ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX

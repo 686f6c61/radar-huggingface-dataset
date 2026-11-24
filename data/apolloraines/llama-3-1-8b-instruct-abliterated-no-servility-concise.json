@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 383,
+  "downloads_30d": 382,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Meta-Llama-3.1-8B-Instruct-abliterated - Hugging Face",
-      "url": "https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
-      "snippet": "🦙 Meta-Llama-3.1-8B-Instruct-abliterated Open LLM Leaderboard Evaluation Results 🦙 Meta-Llama-3.1-8B-Instruct-abliterated 🦙 Llama 3.1 70B Instruct lorablated This is an uncensored version of Llama 3.1 8B Instruct created with abliteration (see this article to know more about it). Special thanks to @FailSpy for the original code and ..."
-    },
-    {
-      "title": "richardyoung/llama-3.1-8b-instruct-abliterated",
-      "url": "https://ollama.com/richardyoung/llama-3.1-8b-instruct-abliterated",
-      "snippet": "An uncensored, abliterated build of Meta&#x27;s **Llama 3.1 8B Instruct**. Abliteration surgically removes the model&#x27;s learned refusal direction while preserving its general capabilities"
-    },
-    {
-      "title": "Meta-Llama-3.1-8B-Instruct-abliterated-GGUF - Hugging Face",
-      "url": "https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated-GGUF",
-      "snippet": "🦙 Meta-Llama-3.1-8B-Instruct-abliterated 🦙 Llama 3.1 70B Instruct lorablated This is an uncensored version of Llama 3.1 8B Instruct created with abliteration (see this article to know more about it). Special thanks to @FailSpy for the original code and technique. Please follow him if you&#x27;re interested in abliterated models."
-    },
-    {
-      "title": "llama3:8b-instruct-q8_0",
-      "url": "https://ollama.com/library/llama3:8b-instruct-q8_0",
-      "snippet": "Meta Llama 3, a family of models developed by Meta Inc. are new state-of-the-art , available in both 8B and 70B parameter sizes (pre-trained or instruction-tuned)."
-    },
-    {
-      "title": "Open-source AI Models for Any Application | Llama 3",
-      "url": "https://developer.meta.com/ai/models/llama-3/",
-      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
-    }
-  ]
+  "sources": []
 }

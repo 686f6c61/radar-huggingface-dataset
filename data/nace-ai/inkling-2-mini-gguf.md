@@ -2,96 +2,100 @@
 
 ## Resumen
 
-Inkling-2-Mini-GGUF es una conversión de pesos a formato GGUF del modelo Inkling 2 Mini, desarrollado originalmente por Thinking Machines Lab. La conversión la publica Nace.AI, un proyecto especializado en cuantización de pesos de modelos abiertos. El repositorio contiene una única variante cuantizada, IQ4_XS, orientada a inferencia local con llama.cpp, y no incluye la visión ni el módulo MTP (multi-token prediction) del modelo original.
+Inkling-2-Mini es un modelo de lenguaje desarrollado por Thinking Machines (organización responsable del checkpoint original `thinkingmachines/Inkling-2-Mini`). Esta ficha concreta corresponde a la versión cuantizada en formato GGUF publicada por Nace.AI, que ofrece pesos optimizados para inferencia local y en GPU de consumo, con tamaños que van desde 15,734 GB (4,83 bits por peso) hasta 19,103 GB para el archivo NVFP4 nativo (5,86 bits por peso). El checkpoint base cuenta con 26.070.390.272 parámetros (aproximadamente 26.000 millones), lo que lo sitúa en la franja de modelos medianos-grandes con capacidad para razonamiento, generación de código y conversación multi-turno.
 
-El modelo base es un transformer de aproximadamente 26.070 millones de parámetros (según los safetensors del checkpoint original), lo que lo sitúa en la categoría de modelos de tamaño medio-grande. La model card de esta conversión no documenta la longitud de contexto, los idiomas soportados ni los datos de entrenamiento; esa información debe consultarse en la model card del modelo fuente.
+La relevancia de esta publicación radica en el trabajo de cuantización de Nace.AI, que combina pesos expertos en NVFP4 nativo con compresión del resto de matrices expertas y retroalimentación de error ajustada por calibración en diez matrices de atención. El resultado es un archivo de 4,8 bits por peso que alcanza un KL held-out de 0,007144 frente al checkpoint original con activaciones BF16, medido sobre 4.088 tokens con vocabulario completo. Esto permite ejecutar un modelo de 26B parámetros en hardware relativamente modesto manteniendo una fidelidad de distribución de tokens muy alta.
 
-La relevancia de esta ficha es doble: por un lado, permite ejecutar un modelo de 26B en hardware de consumo o en servidores de gama media gracias a la cuantización a ~4,7 bits por peso (15,46 GB); por otro, el autor publica una métrica de fidelidad (KL media de 0,021 frente a una referencia de cuantización de activaciones) que permite evaluar la degradación introducida por la cuantización.
+La licencia Apache 2.0 facilita el uso comercial y la integración en productos, algo poco habitual en modelos de este tamaño. El modelo base es de tipo Mixture-of-Experts (MoE), aunque los detalles completos de arquitectura, contexto e idiomas no están disponibles en la información proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Inkling 2 Mini; detalles de arquitectura no disponibles en esta conversión) |
-| Parametros totales | 26.070.385.152 (~26,07 mil millones) |
+| Arquitectura | Mixture-of-Experts (MoE), según pesos expertos NVFP4; detalles completos no disponibles |
+| Parametros totales | 26.070.390.272 (≈26B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ4_XS (4,745 bits/peso); routers y tensores de control de bucle en F32; atención, embeddings y cabeza de salida en Q8 |
+| Tipos de cuantizacion | GGUF IQ4_XS (4,83 bpw), NVFP4 nativo (5,86 bpw) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero `Inkling-2-Mini-IQ4_XS.gguf`, 15,462 GB) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo base. La model card de la conversión menciona componentes que permiten inferir algunos rasgos: existen «loop controllers» y «loop-scale», lo que sugiere un mecanismo de bucles recurrentes en el backbone; se citan kernels SiTU para las activaciones de los expertos y una «output head» con softcapping sobre acumuladores FP32, lo que apunta a una arquitectura con mezcla de expertos (MoE) y a una cabeza de salida con saturación suave. También se menciona un módulo MTP (multi-token prediction) que no se incluye en esta conversión.
+El modelo base Inkling-2-Mini es un transformer con arquitectura Mixture-of-Experts, según se deduce de la presencia de "pesos expertos" en NVFP4 y de la mención a "matrices de atención" en el proceso de cuantización. El checkpoint original incluye componentes de visión y MTP (multi-token prediction), aunque los archivos GGUF publicados excluyen explícitamente ambos y contienen solo el backbone de texto. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
 
-El proceso de cuantización es de solo pesos (weight-only): los pesos empaquetados se decodifican a F32 y se recuantizan. No se reproduce la cuantización de activaciones del modelo original. La referencia de evaluación usa el checkpoint original en un bucle de Transformers fijado, con cuantización de referencia Hopper de SGLang para las activaciones de expertos y multiplicaciones de matrices en BF16 con escalas externas separadas. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+La innovación técnica principal de esta publicación es el esquema "Nace Weight Space Quantization": el archivo de 4,8 bits por peso conserva los pesos expertos en NVFP4 nativo y comprime el resto de pesos expertos, aplicando retroalimentación de error ajustada por calibración en diez matrices de atención. La evaluación se realizó con activaciones BF16 sobre 4.088 tokens de vocabulario completo, usando conjuntos disjuntos de calibración, desarrollo y evaluación. El resultado de KL held-out de 0,007144 indica que la distribución de tokens del modelo cuantizado es muy próxima a la del original. Para ejecutar el archivo se requiere un parche de runtime (`inkling2-physical-scale.patch`) sobre llama.cpp en un commit específico, compilado con CUDA para arquitectura 100 (NVIDIA B200).
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` del repositorio indica uso previsto para diálogo.
-- Razonamiento y respuesta a instrucciones: inferido del uso conversacional, aunque no se documentan capacidades específicas en la model card de la conversión.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integración con infraestructuras de inferencia tipo API.
-- Capacidades multimodales: el modelo base incluye visión, pero esta conversión GGUF omite explícitamente el backbone de visión, por lo que no hay soporte de imagen.
-- Multi-token prediction: el módulo MTP del modelo original no está incluido en esta conversión.
-- Tool calling, agentes, multilingüismo y modo thinking: no disponible en la información proporcionada.
+- Generación de texto conversacional: el tag `conversational` y la inclusión en `endpoints_compatible` indican soporte para diálogo multi-turno.
+- Razonamiento y generación de código: el ejemplo de la model card ("Explain merge sort") sugiere uso para explicaciones técnicas y código.
+- Capacidad de predicción multi-token (MTP): presente en el checkpoint original, aunque excluida de los archivos GGUF publicados.
+- Capacidad de visión: presente en el modelo base, pero no incluida en los GGUF de esta publicación.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en estación de trabajo: con 15,46 GB en IQ4_XS, el modelo cabe en una GPU de 24 GB (RTX 3090/4090) o en un Mac con memoria unificada de 32 GB o más, permitiendo prototipado sin depender de la nube.
-- Despliegue en servidores con llama.cpp: el repositorio documenta el comando exacto con `llama-cli` y el PR de llama.cpp requerido, lo que facilita reproducir el entorno de ejecución en producción.
-- Evaluación de la degradación por cuantización: la métrica KL publicada (0,021 sobre 2.040 posiciones) permite comparar esta conversión con otras alternativas antes de adoptarla en un pipeline.
-- Chatbot de asistencia en entornos con requisitos de privacidad: al ejecutarse en hardware propio, los datos no salen de la infraestructura del operador.
-- Generación de texto y resumen de documentos: uso genérico de un modelo conversacional de 26B, siempre que la longitud de contexto del modelo base lo permita (dato no disponible aquí).
-- Base para fine-tuning o experimentación: al ser Apache 2.0 y estar en GGUF, sirve como punto de partida para pruebas de calidad antes de invertir en el checkpoint completo en BF16.
+- Inferencia local en estaciones de trabajo con GPU única: el archivo IQ4_XS de 15,734 GB cabe en GPUs con 16-24 GB de VRAM, lo que permite ejecutar un modelo de 26B parámetros en hardware de consumo de gama alta (RTX 4090, RTX 5090) o profesionales (A6000, L40S).
+- Asistentes de código en IDE: el modelo puede integrarse en herramientas de autocompletado y explicación de código, como sugiere el ejemplo de la model card, con latencia razonable gracias al tamaño compacto del archivo cuantizado.
+- Chat conversacional self-hosted: al ser `endpoints_compatible`, puede desplegarse tras una API compatible con OpenAI para aplicaciones de atención al cliente o asistentes internos, manteniendo los datos en infraestructura propia.
+- Experimentación e investigación en cuantización: el KL held-out documentado (0,007144) y los scripts de evaluación publicados permiten reproducir y comparar metodologías de cuantización sobre modelos MoE.
+- Despliegue en entornos con restricciones de memoria: el archivo NVFP4 de 19,103 GB es adecuado para GPUs Blackwell (B200, RTX 50) que soportan nativamente FP4, reduciendo el ancho de banda de memoria requerido.
+- Prototipado rápido con llama.cpp: el parche de runtime y las instrucciones de compilación permiten montar un entorno de pruebas en minutos sobre CUDA, útil para validar prompts y flujos antes de escalar a producción.
+- Fine-tuning ligero o destilación sobre el modelo cuantizado: no recomendado directamente sobre GGUF, pero el checkpoint base Apache 2.0 permite entrenar adaptadores y luego cuantizarlos.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica la métrica de fidelidad de la cuantización, no benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.).
-
-| Metrica | Valor |
+| Metrica | Resultado |
 |---|---|
-| Tamano del artefacto | 15,462 GB |
-| Bits por peso | 4,745 |
-| KL media vs. referencia Source-QDQ | 0,021 |
-| Posiciones de token evaluadas | 2.040 |
-| Split | held-out |
+| KL held-out (IQ4_XS 4,83 bpw, 4.088 tokens, BF16 activations) | 0,007144 |
+| Tamano IQ4_XS | 15,734 GB |
+| Tamano NVFP4 nativo | 19,103 GB |
 
-No se han publicado resultados de benchmarks de tareas en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~15,5 GB solo para los pesos en IQ4_XS; con caché KV y overhead de llama.cpp, prever 18-22 GB para contextos moderados.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40/80 GB, H100 para despliegues de mayor concurrencia.
-- GPU de consumo: cabe en RTX 4090 y RTX 3090; en GPUs de 16 GB no entra con comodidad y requeriría offloading a CPU.
-- Apple Silicon: viable en equipos con 32 GB de memoria unificada o más (el ejemplo de compilación de la model card usa `-DGGML_METAL=ON`).
-- Opciones de despliegue: llama.cpp en el commit `2a28df0f9bd55c4975b6bffb35229a6020720f13` del PR #32704; el tag `endpoints_compatible` sugiere también servidores compatibles con endpoints.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: ~16 GB para el archivo IQ4_XS (15,734 GB de pesos más overhead de contexto y KV cache); ~20 GB para el archivo NVFP4 nativo (19,103 GB más overhead).
+- GPU recomendadas: NVIDIA B200 (plataforma usada para la evaluación y compilación de referencia), GPUs Blackwell con soporte FP4 nativo para el archivo NVFP4, y GPUs Ada/Hopper (RTX 4090, L40S, A100, H100) para el archivo IQ4_XS.
+- GPU de consumo: sí, el archivo IQ4_XS cabe en RTX 4090 (24 GB) y RTX 5090 (32 GB); en GPUs de 16 GB (RTX 4080, 4070 Ti Super) el margen es ajustado y puede requerir offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp con CUDA (compilación específica en el commit `2a28df0f9bd55c4975b6bffb35229a6020720f13` más el parche `inkling2-physical-scale.patch`); otros runtimes (vLLM, TGI, Ollama) no están documentados para este formato y requieren verificación.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo base ni de alternativas comparables en la información proporcionada, por lo que la comparativa cuantitativa no está disponible. A nivel estructural:
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Inkling-2-Mini (esta ficha) | 26B | no disponible | GGUF IQ4_XS, NVFP4 | Apache 2.0 | Hugging Face |
+| Alternativas de ~26B MoE | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Formato | Licencia | Notas |
-|---|---|---|---|---|
-| Inkling-2-Mini-GGUF (IQ4_XS) | ~26,07B | GGUF | Apache 2.0 | Conversion de Nace.AI; sin vision ni MTP |
-| Inkling-2-Mini (original) | ~26,07B | safetensors (BF16) | Apache 2.0 | Modelo fuente de Thinking Machines; incluye vision y MTP |
-| Alternativas de tamano similar | no disponible | no disponible | no disponible | Sin datos en la informacion disponible |
+No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- La conversión omite el backbone de visión y el módulo MTP: no es equivalente funcionalmente al modelo original.
-- La cuantización es solo de pesos; no reproduce la cuantización de activaciones de la referencia, por lo que la KL de 0,021 mide acuerdo con una referencia concreta, no paridad bit a bit con el runtime original.
-- Requiere un PR específico de llama.cpp (el fix de loop-scale es obligatorio); otras versiones pueden producir resultados incorrectos.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta: no hay validación comunitaria documentada.
-- No se documentan sesgos, riesgos de alucinación ni comportamiento multilingüe en la información disponible.
-- Licencia Apache 2.0 permite uso comercial, pero debe conservarse la atribución a Thinking Machines Lab según NOTICE y la model card del modelo fuente.
-- El tamaño del repo (15,5 GB) y la ausencia de variantes Q2/Q3/Q5/Q8 limitan las opciones de despliegue en hardware restringido.
+- Los archivos GGUF excluyen visión y MTP: no es posible usar capacidades multimodales ni predicción multi-token con estos pesos.
+- Requiere un parche específico de llama.cpp y un commit concreto; otros forks o versiones estables pueden no cargar el modelo correctamente.
+- El KL held-out de 0,007144 es bajo pero no nulo: puede haber degradación en tareas sensibles a la distribución exacta de tokens (generación creativa, código de baja frecuencia, lenguajes raros).
+- No hay información sobre sesgos, idiomas soportados ni rendimiento multilingüe; se recomienda evaluación propia antes de producción.
+- Riesgo de alucinación inherente a modelos de este tamaño; no se documentan mitigaciones específicas.
+- La licencia Apache 2.0 permite uso comercial, pero se debe consultar el `NOTICE`, el archivo `MODIFICATIONS-4.8bpw.md` y la política de uso del modelo base enlazada en su model card.
+- El archivo NVFP4 requiere hardware Blackwell para aprovechar FP4 nativo; en GPUs anteriores el rendimiento puede degradarse.
+- No se documentan latencias ni throughput; el rendimiento real dependerá de la GPU, del tamaño de contexto y del número de capas offloaded.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nace-ai/Inkling-2-Mini-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Sitio de Nace.AI: https://www.nace.ai/
-- PR de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/pull/32704
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- Pull request de runtime: https://github.com/ggml-org/llama.cpp/pull/32704
+- Evaluación IQ4_XS: `evaluation/iq4-xs-4.8bpw.json` (en el repositorio)
+- Evaluación NVFP4: `evaluation.json` (en el repositorio)
+- Parche de runtime: `runtime/inkling2-physical-scale.patch` (en el repositorio)
+- Licencia: `LICENSE` (en el repositorio)
+- Aviso legal: `NOTICE` (en el repositorio)
+- Modificaciones: `MODIFICATIONS-4.8bpw.md` (en el repositorio)

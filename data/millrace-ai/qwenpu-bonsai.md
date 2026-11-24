@@ -2,104 +2,106 @@
 
 ## Resumen
 
-QwenPU on Bonsai-27B Q1_0 es un checkpoint experimental (v0.1) publicado por millrace-ai que injerta un circuito RISC-V vectorial, denominado QwenPU, dentro del decoder del modelo Bonsai-27B de Prism ML. El resultado es un GGUF de 3,8 GB que combina los pesos del modelo base cuantizados a 1 bit (Q1_0) con coeficientes de circuito disperso y snapshots de un programa invitado (guest) de tres tokens del dataset stories260K. No se trata de un modelo de lenguaje nuevo ni de un ajuste fino: es un artefacto de investigación que demuestra la ejecución de un circuito ajeno dentro del forward pass CUDA de un LLM.
+Bonsai-QwenPU 27B es un checkpoint GGUF experimental publicado por millrace-ai que combina los pesos del modelo Bonsai-27B de prism-ml con un circuito RISC-V vectorial integrado en el forward pass de CUDA. El modelo base es un transformer de 26.895.998.464 elementos tensoriales con arquitectura declarada `qwen35`, anchura oculta de 5.120 y 64 bloques de lenguaje. La modificación añade 23 subcapas de circuito activas que se ejecutan como nodos GGML personalizados respaldados por CUDA, junto con instantáneas de estado de un guest de tres tokens (pesos int4 del dataset stories260K).
 
-El modelo base, Bonsai-27B, es una compresión extrema del Qwen3.6-27B de Alibaba, diseñada por la startup estadounidense Prism ML para caber en dispositivos móviles. QwenPU añade 23 subcapas de circuito activas implementadas como nodos GGML personalizados con respaldo CUDA, agrupadas en 13 bloques por el emisor de capas estándar fijado a una revisión concreta de llama.cpp. Las coordenadas del circuito retenidas contribuyen a la normalización residual del modelo, de modo que bytes de tensores idénticos pueden producir logits distintos.
+El interés técnico del checkpoint no reside en sus capacidades de generación de texto, sino en la demostración de que es posible incrustar un intérprete de instrucciones RISC-V dentro del grafo de cómputo de un LLM cuantizado en Q1_0 y ejecutarlo de forma verificable en una GPU Pascal (GTX 1080, `sm_61`). La validación publicada compara trazas de ejecución token a token contra un intérprete de referencia independiente, con coincidencia total de 150.405 tokens de traza en la prueba de tres tokens.
 
-La relevancia de este checkpoint es acotada pero técnica: valida que un circuito RISC-V de invitado puede ejecutarse dentro del decoder de un LLM con estado de host intacto, y publica trazas de ejecución reproducibles. No está pensado para uso conversacional general, y su ámbito de validación declarado se limita a un único token por llamada en la secuencia cero con un prefijo de tool-call fijo.
+El modelo está pensado para reproducir el experimento, no para uso en producción: requiere una compilación parcheada de llama.cpp para Windows CUDA, es incompatible con llama.cpp estándar, LM Studio y Ollama, y su cobertura declarada se limita a un decodificador de una sola GPU completamente descargado, un token por llamada en la secuencia cero y un prefijo de tool-call fijo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Bonsai-27B, derivado de Qwen3.6-27B) con sublayers de circuito RISC-V QwenPU inyectadas como nodos GGML/CUDA |
-| Parametros totales | 26.917.758.976 |
+| Arquitectura | Transformer `qwen35` con circuito RISC-V vectorial integrado en CUDA (23 subcapas activas, 13 bloques) |
+| Parametros totales | 26.917.758.976 elementos tensoriales (26.895.998.464 del GGUF base + 21.760.512 de circuito y guest) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q1_0 (1 bit) en el checkpoint publicado; el guest incluye pesos int4 de stories260K |
+| Longitud de contexto | 262.144 tokens declarados en la cabecera del GGUF |
+| Tipos de cuantizacion | Q1_0 (checkpoint publicado); pesos del guest en int4 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`Bonsai-27B-Q1_0-QwenPU-stories260k.gguf`, 3.825.213.248 bytes) + manifiesto JSON |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (854 tensores) |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint parte del GGUF de Bonsai-27B en cuantización Q1_0 y le añade, mediante un exportador, coeficientes de circuito disperso y snapshots con nombre del guest. Estos snapshots aportan el estado inicial de programa y máquina, incluidos los pesos int4 del guest stories260K. El exportador verificó igualdad byte a byte de las 851 cargas útiles de tensores originales y de las entradas de metadatos del GGUF de origen.
+El checkpoint parte de los tensores empaquetados de Bonsai-27B en Q1_0, sin reentrenamiento: el exportador verifica igualdad byte a byte de los 851 tensores originales y de las entradas de metadatos del GGUF original. Sobre esa base se añaden coeficientes de circuito disperso y instantáneas de estado de máquina del guest, que incluyen los pesos int4 del modelo stories260K. El decodificador parcheado ejecuta las 23 subcapas de circuito como nodos GGML personalizados con soporte CUDA, agrupadas en 13 bloques por el emisor de capa estándar fijado.
 
-El decoder parcheado ejecuta 23 sublayers de circuito activas como nodos GGML con respaldo CUDA personalizado, agrupadas en 13 bloques por el emisor de capas estándar de la revisión fijada. Las coordenadas de circuito retenidas intervienen en la normalización residual del modelo, por lo que el resultado no es equivalente al Bonsai original aunque los tensores sean idénticos. No hay información sobre el volumen de datos de entrenamiento, composición del dataset ni uso de RLHF o DPO; el modelo base hereda el entrenamiento de Qwen3.6-27B, pero no se detalla en la información disponible.
+La innovación clave es que las coordenadas retenidas del circuito contribuyen a la normalización residual del modelo de lenguaje, de modo que bytes de tensores idénticos pueden producir logits distintos según el estado del circuito. La anchura oculta es de 5.120 y cada bloque tiene 17.408 filas de FFN. No se documentan datos de entrenamiento adicionales, número de tokens, composición del dataset ni fases de RLHF o DPO, ya que el proceso es de integración y cuantización, no de preentrenamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional heredada del modelo base Bonsai-27B, sujeta a la degradación propia de la cuantización Q1_0.
-- Ejecución de un circuito RISC-V vectorial de invitado dentro del forward pass CUDA del decoder, con trazas de ejecución comparables contra un intérprete de referencia independiente.
-- Generación de texto por parte del guest stories260K: con el prefijo fijo `Run<tool_call></tool_call>` produjo `Once upon a` en la validación sobre GTX 1080.
-- Soporte de tool calling: el prefijo validado es explícitamente de tool-call, aunque el alcance declarado se limita a ese prefijo fijo.
-- Preservación del estado del host: la caché y la posición de texto de Bonsai permanecieron sin cambios mientras corría el circuito en las tres pruebas.
-- No hay información sobre capacidades multilingües, razonamiento multi-paso autónomo, visión, audio ni modo thinking.
+- Generación de texto base heredada de Bonsai-27B (no evaluada en este checkpoint).
+- Ejecución de un guest RISC-V de tres tokens con pesos int4 de stories260K dentro del forward pass de CUDA.
+- Soporte de prefijo de tool-call fijo (`Run<tool_call></tool_call>`) como punto de entrada validado.
+- Trazas de ejecución verificables contra un intérprete de referencia independiente.
+- Dispatch autónomo en CUDA descrito parcialmente en la documentación (cobertura incompleta).
+- Capacidades multilingües: no disponibles.
+- Vision, audio, thinking mode: no disponibles.
 
 ## Casos de uso
 
-- Investigación en ejecución de circuitos dentro de LLM: el checkpoint permite reproducir trazas de ejecución de un circuito RISC-V embebido en el decoder y compararlas con un intérprete de referencia, usando el validador incluido y el manifiesto junto al GGUF.
-- Verificación de portabilidad de runtimes: sirve para comprobar que una build parcheada de llama.cpp (revisión `9fcaed763ccda38ea81068ad9d7f991aaddca451`, objetivo `sm_61`) reproduce las trazas publicadas en hardware Pascal.
-- Estudio de cuantización extrema a 1 bit: el artefacto documenta cómo un modelo de 27B en Q1_0 ocupa 3,8 GB y qué diferencias de logits introduce el circuito (máximo absoluto de aproximadamente 0,106 en reposo y 0,107 tras el handoff).
-- Pruebas de regresión de kernels CUDA personalizados: los informes de validación vectorial y de decoder permiten usar el checkpoint como fixture para detectar cambios en nodos GGML respaldados por CUDA.
-- Demostración de integración guest-host: el caso del guest stories260K de tres tokens ilustra el handoff entre el estado del LLM y un programa invitado con pesos int4 propios.
-- Auditoría de reproducibilidad de artefactos: los SHA-256 del GGUF y del manifiesto, junto con los ELF incluidos con rutas de build redactadas, permiten reconstruir el mismo GGUF y contrastar identidad de runtime.
+- Reproducción de investigación en cómputo heterogéneo: permite replicar el experimento de incrustar un intérprete RISC-V en el grafo de un LLM cuantizado, con trazas de referencia y manifiesto de validación incluidos.
+- Estudio de decodificación especulativa implícita: el circuito actúa como coprocesador dentro del forward pass, útil para analizar cómo el estado de máquina afecta a los logits del modelo anfitrión.
+- Verificación de integridad de checkpoints: el manifiesto y los hashes SHA-256 permiten auditar la cadena de exportación y la igualdad byte a byte de los tensores originales.
+- Docencia sobre cuantización extrema: Q1_0 con 26.900 millones de elementos en 3,825 GB sirve como caso práctico de compromise entre tamaño y fidelidad numérica.
+- Pruebas de compatibilidad de runtimes: útil para validar compilaciones parcheadas de llama.cpp en GPUs Pascal y detectar divergencias frente a binarios estándar.
+- Benchmark de memoria en GPUs consumer: el pico medido de 5.403 MiB de VRAM en una GTX 1080 permite estudiar límites de despliegue en hardware antiguo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo aporta métricas de validación de ejecución:
-
 | Prueba | Resultado en GTX 1080 |
 |---|---|
-| Hasta el primer producto matriz-vector | 3.252 tokens de traza de ejecución coincidentes |
-| 1 token de stories260K | `Once`, con 51.187 tokens de traza coincidentes |
-| 3 tokens de stories260K | `Once upon a`, con 150.405 tokens de traza coincidentes, 618 tokens de traza/s en el bucle nativo y 246,9 s de tiempo de pared de la sonda |
-| Memoria, ejecución de 3 tokens | 5.403 MiB de VRAM pico muestreada en todo el dispositivo (1.192 MiB de línea base) y 4,80 GiB de working set de RAM del árbol de procesos |
-| Mutación de coeficiente | La salida `8` pasó a `0`; restaurar el coeficiente restauró la traza exacta |
-| Comparación con stock | IDs greedy coincidentes con diferencias máximas absolutas de logit de aproximadamente 0,106 en reposo y 0,107 tras el handoff |
+| Hasta el primer producto matriz-vector | 3.252 tokens de traza coincidentes |
+| 1 token stories260K | `Once`, 51.187 tokens de traza coincidentes |
+| 3 tokens stories260K | `Once upon a`, 150.405 tokens de traza coincidentes |
+| Velocidad en bucle nativo | 618 tokens de traza/s |
+| Tiempo de sonda de 3 tokens | 246,9 s de tiempo de pared |
+| VRAM pico (3 tokens) | 5.403 MiB (línea base 1.192 MiB) |
+| RAM del árbol de procesos | 4,80 GiB de working set pico |
+| Mutación de coeficiente | Salida `8` pasa a `0`; restaurar el coeficiente restaura la traza exacta |
+| Comparación con Bonsai original | IDs greedy coincidentes, diferencia máxima de logit ~0,106 en reposo y ~0,107 tras el handoff |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: alrededor de 5,4 GiB de pico medido en una ejecución de 3 tokens con el modelo totalmente descargado en una sola GPU; el archivo GGUF pesa 3,8 GB.
-- GPU recomendadas: la única configuración validada es una GTX 1080 (Pascal, `sm_61`). No hay datos de validación en A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, al menos en GTX 1080 según la validación publicada.
-- Opciones de despliegue: exclusivamente la build parcheada de Windows CUDA de Prism llama.cpp en la revisión `9fcaed763ccda38ea81068ad9d7f991aaddca451`. Stock llama.cpp, LM Studio y Ollama son incompatibles con este formato.
-- Latencia y throughput: 618 tokens de traza de ejecución por segundo en el bucle nativo y 246,9 s de tiempo de pared para la sonda de 3 tokens en GTX 1080. No hay cifras de throughput de generación de lenguaje.
-- RAM de host: 4,80 GiB de pico en el árbol de procesos durante la ejecución de 3 tokens.
+- VRAM estimada: ~5,4 GB en el checkpoint Q1_0 de 3,825 GB durante la prueba de tres tokens (medido en GTX 1080).
+- GPU validadas: GTX 1080 (Pascal, `sm_61`). El build apunta explícitamente a esta arquitectura.
+- GPU recomendadas: no disponibles más allá de la GTX 1080 documentada.
+- Cabe en GPU consumer: sí, al menos en GTX 1080 con 8 GB; no se documentan pruebas en otras.
+- Despliegue: exclusivamente mediante compilación parcheada de llama.cpp para Windows CUDA (guía v0.1.0). llama.cpp estándar, LM Studio y Ollama son incompatibles.
+- Latencia y throughput: 618 tokens de traza/s en bucle nativo; 246,9 s para una sonda de tres tokens, incluyendo overhead de validación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenPU on Bonsai-27B Q1_0 (este) | 26.917.758.976 | no disponible | Q1_0 | Apache-2.0 | Circuito RISC-V embebido en el decoder; validación limitada a prefijo fijo |
-| Bonsai-27B (Prism ML) | 27B (aproximado) | no disponible | Q1_0 y otras variantes; la menor ocupa 3,9 GB | Apache-2.0 | Compresión extrema de Qwen3.6-27B para móvil, portátil y navegador |
-| Qwen3.6-27B (Alibaba) | 27B (aproximado) | no disponible | no disponible | Apache-2.0 | Modelo base original, sin compresión extrema |
+| millrace-ai/qwenpu-bonsai | 26,9 B (Q1_0) | 262.144 | LLM + circuito RISC-V en CUDA | Apache 2.0 | GGUF parcheado, 383 descargas |
+| prism-ml/Bonsai-27B-gguf | 26,9 B | 262.144 | LLM base cuantizado | no disponible | GGUF estándar |
+| millrace-ai/qwenpu-bonsai-27b-stock-prism | 26,9 B | no disponible | Variante para Prism sin parchear | no disponible | Checkpoint separado |
+
+No se dispone de datos de rendimiento comparables entre estas variantes más allá de la diferencia máxima de logit (~0,106) reportada frente al Bonsai original.
 
 ## Limitaciones y advertencias
 
-- Ámbito de validación restringido: solo cubre un decoder totalmente descargado en una única GPU, un token por llamada en la secuencia cero y el prefijo de tool-call fijo. Un guest de 60 tokens, el dispatch autónomo en la ruta CUDA y la serialización del estado del circuito quedan fuera del alcance validado.
-- La calidad lingüística amplia no está evaluada; la model card la excluye explícitamente del alcance.
-- Requiere una build concreta y parcheada de llama.cpp en Windows con CUDA y objetivo `sm_61`; cualquier otro runtime estándar fallará.
-- Los pesos en Q1_0 implican una degradación de calidad sustancial respecto al modelo de 27B en precisión superior; no hay métricas publicadas que la cuantifiquen.
-- Riesgo de alucinación: no evaluado en la información disponible.
-- Sesgos conocidos: no documentados en la información disponible.
-- Idiomas soportados: no disponibles; no se puede asumir cobertura multilingüe.
-- Licencia Apache-2.0 permite uso comercial, pero el checkpoint incorpora componentes de terceros (Bonsai, QwenPU, Qwenputer, stories260K) cuyas licencias se detallan en el directorio `licenses` del repositorio; conviene revisarlas antes de un uso en producción.
-- El checkpoint no está pensado para producción: es un artefacto experimental v0.1 con cero descargas y cero likes en el momento de la consulta.
+- Cobertura limitada: solo decodificador de una GPU completamente descargado, un token por llamada en secuencia cero y prefijo de tool-call fijo.
+- Incompatible con runtimes estándar: llama.cpp, LM Studio y Ollama no funcionan con este formato; requiere compilación propia.
+- Solo Windows CUDA validado en Pascal `sm_61`; no hay garantías en otras arquitecturas.
+- El dispatch autónomo en CUDA aparece descrito de forma parcial en la documentación disponible.
+- Riesgo de alucinación y sesgos del modelo base no evaluados en este checkpoint.
+- Idiomas soportados no declarados.
+- Uso comercial permitido por Apache 2.0, pero la viabilidad práctica en producción es dudosa por la dependencia de un build parcheado y la ausencia de benchmarks de calidad.
+- El estado del circuito altera los logits del modelo anfitrión, por lo que la reproducibilidad exige conservar el manifiesto y el estado del guest.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/millrace-ai/qwenpu-bonsai
-- Modelo base: https://huggingface.co/prism-ml/Bonsai-27B-gguf
-- Repositorio del proyecto: https://github.com/tim-osterhus/qwenpu-bonsai
-- Instrucciones de build y lanzamiento en Windows: https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/docs/REPRODUCE.md
-- Identidad de runtime: https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/release-v0.1/runtime-identity.json
-- Procedencia del guest: https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/guests/README.md
-- Informe de validación de historia: https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/release-v0.1/validation.json
-- Informe de validación vectorial v0.1: https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/release-v0.1/vector-validation.json
-- Informe histórico de validación vectorial: https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/decoder-validation/validation.json
-- Licencia de distribución: https://huggingface.co/millrace-ai/qwenpu-bonsai/blob/main/LICENSE
-- Licencias de componentes: https://github.com/tim-osterhus/qwenpu-bonsai/tree/v0.1.0/licenses
-- Avisos: https://huggingface.co/millrace-ai/qwenpu-bonsai/blob/main/NOTICE
-- Guía de Bonsai 27B: https://regolo.ai/bonsai-27b-explained-how-a-27b-model-runs-locally/
-- Artículo sobre Bonsai 27B en iPhone: https://www.notebookcheck.net/AI-without-the-cloud-This-language-model-now-fits-on-your-iPhone.1345243.0.html
+- [Modelo en Hugging Face](https://huggingface.co/millrace-ai/qwenpu-bonsai)
+- [Modelo base Bonsai-27B-gguf](https://huggingface.co/prism-ml/Bonsai-27B-gguf)
+- [Variante stock Prism](https://huggingface.co/millrace-ai/qwenpu-bonsai-27b-stock-prism)
+- [Release original en GitHub](https://github.com/tim-osterhus/qwenpu-bonsai/releases/tag/v0.1.0)
+- [Guía de compilación y ejecución en Windows](https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/docs/REPRODUCE.md)
+- [Identidad del runtime](https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/release-v0.1/runtime-identity.json)
+- [Informe de validación de historias](https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/release-v0.1/validation.json)
+- [Informe de validación vectorial v0.1](https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/release-v0.1/vector-validation.json)
+- [Informe histórico de validación vectorial](https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/results/forward/decoder-validation/validation.json)
+- [Procedencia del guest](https://github.com/tim-osterhus/qwenpu-bonsai/blob/v0.1.0/guests/README.md)
+- [Verificación en cuatro hosts](https://github.com/tim-osterhus/qwenpu-bonsai/blob/d1bdc3f10e405494ee59f0f05262d2f476ac1204/results/forward/standard-layer/evidence-snapshot.json)

@@ -2,84 +2,84 @@
 
 ## Resumen
 
-`mtp-Qwen3.5-9B-GGUF` es un repositorio de pesos en formato GGUF que contiene exclusivamente la cabeza MTP (Multi Token Prediction) extraída y cuantizada del modelo Qwen/Qwen3.5-9B, publicado por el usuario christian-steinert. No se trata de un modelo completo, sino de un componente auxiliar diseñado para habilitar decodificación especulativa en derivados de Qwen3.5-9B que han perdido dicha cabeza durante procesos de fine-tuning o conversión (por ejemplo, los modelos Mitra de traducción tibetano-sánscrito-pali del mismo autor).
+`mtp-Qwen3.5-9B-GGUF` es un artefacto derivado de Qwen3.5-9B publicado por el usuario christian-steinert. No es un modelo generativo completo, sino la cabeza de Multi Token Prediction (MTP) extraida del modelo oficial y reempaquetada en formato GGUF para su uso con llama.cpp. Su funcion es actuar como modelo borrador en un esquema de decodificacion especulativa: predice varios tokens por paso y el modelo principal los valida antes de aceptarlos.
 
-La relevancia de esta pieza es práctica: el MTP permite que el modelo principal prediga varios tokens por paso de decodificación y los valide contra el modelo base antes de aceptarlos, lo que acelera la generación sin alterar la calidad del resultado. El repositorio incluye cuantizaciones GGUF de la cabeza, pensadas para cargarse junto al modelo principal mediante los parámetros `--spec-type draft-mtp` de llama.cpp.
+El artefacto resulta relevante para quienes trabajan con derivados de Qwen3.5-9B que han perdido la cabeza MTP durante el proceso de ajuste fino o conversion (por ejemplo, los modelos de traduccion de Dharmamitra). Reinsertar esta cabeza permite recuperar aceleracion en la generacion sin sacrificar calidad, ya que cada token propuesto se contrasta contra el modelo principal.
 
-Conviene subrayar que el tamaño del repo (2,4 GB) y el recuento de parámetros en safetensors (2.277.532.160) corresponden a los artefactos publicados, no al modelo completo de 9B. El modelo base Qwen3.5-9B está bajo licencia Apache-2.0, que se hereda en estas cuantizaciones.
+El repositorio contiene unicamente los pesos de la cabeza MTP cuantizados, con un total de 2.277.532.160 parametros segun los metadatos de safetensors y un tamano de repositorio de 4,0 GB. La licencia es Apache-2.0, heredada del modelo base Qwen/Qwen3.5-9B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Cabeza MTP (Multi Token Prediction) para decodificacion especulativa, derivada de un transformer Qwen3.5 |
-| Parametros totales | 2.277.532.160 (artefacto safetensors del repo; el modelo base Qwen3.5-9B tiene ~9B) |
+| Arquitectura | Cabeza Multi Token Prediction (MTP) para decodificacion especulativa, derivada de Qwen3.5-9B |
+| Parametros totales | 2.277.532.160 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (heredada del modelo base, no declarada en la model card) |
-| Tipos de cuantizacion | GGUF; se menciona explicitamente Q8_0 en el ejemplo de uso |
-| Idiomas soportados | no disponible; la model card indica que el MTP acelera lenguas con las que esta familiarizado, citando el ingles como ejemplo |
-| Licencia | Apache-2.0 (heredada de Qwen/Qwen3.5-9B) |
-| Formato de pesos | GGUF (safetensors en el conteo de parametros del repo) |
+| Longitud de contexto | no disponible (depende del modelo base al que se acopla) |
+| Tipos de cuantizacion | GGUF (se menciona Q8_0 en el ejemplo de uso; no se detalla el catalogo completo) |
+| Idiomas soportados | no disponible (los tags citan tibetano, sanscrito y pali; la model card indica mejor aceleracion en idiomas familiares para la cabeza MTP, como el ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es una cabeza MTP extraida del checkpoint oficial Qwen/Qwen3.5-9B y posteriormente cuantizada a GGUF. La MTP es un mecanismo de prediccion multi-token que actua como borrador en un esquema de decodificacion especulativa: propone varios tokens candidatos por paso y el modelo principal los valida, aceptando solo aquellos que coinciden con su propia distribucion. Segun la model card, la calidad del resultado es identica a la del modelo sin MTP precisamente porque cada token predicho se valida contra el modelo principal antes de aceptarse.
+El artefacto no es un transformer autonomo sino la cabeza MTP extraida de Qwen3.5-9B y recuantizada a GGUF. La MTP es un mecanismo de prediccion multi-token que se emplea como borrador en decodificacion especulativa: propone una secuencia corta de tokens candidatos que el modelo principal verifica. Segun la model card, la calidad del resultado es identica a la del modelo sin MTP porque cada token predicho se valida contra el modelo principal antes de aceptarse; la ganancia se produce en velocidad de generacion, no en exactitud.
 
-No se detallan en la informacion disponible los datos de entrenamiento de la cabeza MTP, el numero de tokens utilizados, la composicion del dataset ni si hubo etapas de RLHF o DPO. Tampoco se especifica la arquitectura interna exacta de la cabeza mas alla de su funcion. El unico detalle tecnico operativo documentado es su integracion en llama.cpp mediante los parametros `--spec-type draft-mtp`, `--model-draft`, `--spec-draft-n-max 3` y `--spec-draft-p-min 0.75`, que controlan el numero maximo de tokens borrador y el umbral minimo de probabilidad para aceptarlos.
+No se proporcionan en la informacion disponible datos sobre el volumen de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO especificas para esta cabeza. Tampoco se detalla la arquitectura interna de la cabeza MTP mas alla de su funcion. El autor indica que el release oficial de Qwen3.5-9B ya incorpora esta cabeza, por lo que este repositorio solo es necesario para restaurar la funcionalidad MTP en derivados que la hayan eliminado.
 
 ## Capacidades
 
-- Prediccion multi-token (MTP) como borrador para decodificacion especulativa en llama.cpp.
-- Aceleracion de la generacion en lenguas con las que la cabeza esta familiarizada, citandose el ingles como ejemplo en la model card.
-- Restauracion de la funcionalidad MTP en derivados de Qwen3.5-9B que hayan perdido la cabeza durante fine-tuning o conversion.
-- Integracion con modelos Mitra de traduccion (tibetano, sanscrito, pali) publicados por el mismo autor.
-- No realiza generacion de texto por si misma: requiere combinarse con un modelo base Qwen3.5-9B.
+- Prediccion especulativa multi-token como modelo borrador (`draft-mtp`) en llama.cpp.
+- Aceleracion de la generacion cuando el modelo principal se ejecuta con decodificacion especulativa habilitada.
+- Integracion con `llama-cli` y `llama-server` mediante los parametros `--spec-type draft-mtp`, `--model-draft`, `--spec-draft-n-max` y `--spec-draft-p-min`.
+- Restauracion de la funcionalidad MTP en derivados de Qwen3.5-9B que carecen de ella (por ejemplo, modelos de traduccion ajustados).
+- No genera texto de forma autonoma: requiere acoplarse a un modelo base Qwen3.5-9B.
 - No se documentan capacidades de tool calling, agentes, vision ni audio para este artefacto.
 
 ## Casos de uso
 
-- Aceleracion de inferencia en traduccion tibetano-sanscrito-pali: cargando esta cabeza junto a los modelos Mitra Qwen3.5 Translate en llama.cpp se recupera la decodificacion especulativa y se reduce la latencia por token en produccion.
-- Despliegue de asistentes conversacionales sobre derivados fine-tuneados de Qwen3.5-9B: cualquier modelo ajustado que haya perdido la MTP puede recuperar velocidad de generacion sin reentrenar ni modificar los pesos principales.
-- Servidores llama.cpp con `llama-server`: la cabeza se carga como modelo borrador adicional y el servidor aplica validacion contra el modelo principal, manteniendo la calidad intacta.
-- Evaluacion comparativa de velocidad: permite medir la ganancia de throughput de la decodificacion especulativa frente a la generacion estandar en el mismo hardware y modelo base.
-- Pipelines de traduccion de textos budistas clasicos: al combinarse con los modelos Mitra, acelera la generacion en lenguas con las que la cabeza esta familiarizada, manteniendo la validacion token a token.
-- Reproduccion de resultados: investigadores que trabajan con variantes de Qwen3.5-9B pueden restaurar el comportamiento original del checkpoint oficial sin descargar de nuevo el modelo completo.
+- Aceleracion de inferencia en traduccion: acoplar la cabeza MTP a un derivado de Qwen3.5-9B especializado en traduccion (como los modelos Dharmamitra) para recuperar velocidad de generacion sin alterar la calidad de las traducciones, ya que cada token se valida contra el modelo principal.
+- Despliegue de servidores de inferencia de baja latencia: en `llama-server`, cargar el modelo principal junto con `--model-draft` apuntando a este GGUF permite servir peticiones con decodificacion especulativa y reducir el tiempo por token en produccion.
+- Recuperacion de pipelines existentes: si un equipo convirtio o ajusto un modelo Qwen3.5-9B y perdio la cabeza MTP, este artefacto restaura la aceleracion sin necesidad de reentrenar ni volver a descargar el modelo oficial completo.
+- Evaluacion comparativa de decodificacion especulativa: usar el mismo modelo base con y sin esta cabeza para medir la ganancia real de throughput en un hardware concreto y calibrar `--spec-draft-n-max` y `--spec-draft-p-min`.
+- Experimentacion con modelos derivados: util para autores de fine-tunes sobre Qwen3.5-9B que quieran publicar variantes ligeras sin duplicar la cabeza MTP en cada release.
+- Pruebas de integracion en llama.cpp: validar el soporte de `draft-mtp` en versiones recientes de llama.cpp antes de adoptarlo en un stack de produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente afirma una mejora significativa de la velocidad de generacion en lenguas familiares para la cabeza MTP, sin cifras concretas de throughput ni de latencia.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo afirma cualitativamente que la MTP puede mejorar de forma significativa la velocidad de generacion en idiomas familiares para la cabeza (como el ingles), sin cifras de throughput ni latencia.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision; el repo ocupa 2,4 GB en total y la cuantizacion Q8_0 citada es la unica referenciada, por lo que la cabeza anade una fraccion modesta sobre el modelo principal.
-- GPU recomendadas: no especificadas; al ejecutarse en llama.cpp, es compatible con el mismo hardware que el modelo base Qwen3.5-9B.
-- Cabe en GPU de consumo: si, siempre que el modelo base Qwen3.5-9B quepa junto con la cabeza borrador en la VRAM disponible.
-- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`) con los parametros `--spec-type draft-mtp`, `--model-draft`, `--spec-draft-n-max` y `--spec-draft-p-min`.
-- Latencia y throughput: no disponibles; la model card solo indica mejora cualitativa de velocidad en lenguas familiares.
+- VRAM adicional estimada: el repositorio ocupa 4,0 GB en total; la carga efectiva depende de la cuantizacion elegida (el ejemplo de la model card usa Q8_0). No se dispone de cifras oficiales de VRAM por cuantizacion.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Al ser un complemento del modelo principal, el requisito dominante es el del modelo base Qwen3.5-9B, no el de la cabeza MTP.
+- GPU de consumo: la cabeza MTP es un componente adicional de ~2,28 mil millones de parametros; el limite practico vendra del modelo principal. No se confirma compatibilidad con GPU consumer especificas.
+- Opciones de despliegue: llama.cpp (`llama-cli` y `llama-server`) con soporte de `--spec-type draft-mtp`. No se documenta soporte en vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles; la mejora depende del idioma, del hardware y de los parametros `--spec-draft-n-max` y `--spec-draft-p-min`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mtp-Qwen3.5-9B-GGUF | Cabeza MTP cuantizada | 2.277.532.160 (artefacto) | no disponible | Apache-2.0 | Hugging Face, 23 descargas |
-| Qwen/Qwen3.5-9B | Modelo completo con MTP incluida | ~9B | no disponible | Apache-2.0 | Hugging Face (oficial) |
-| mitra-qwen35-translate-GGUF | Derivado de traduccion sin MTP | ~9B (base) | no disponible | Apache-2.0 | Hugging Face (mismo autor) |
+| mtp-Qwen3.5-9B-GGUF (este) | Cabeza MTP cuantizada para decodificacion especulativa | 2.277.532.160 | no disponible | Apache-2.0 | GGUF en Hugging Face |
+| Qwen/Qwen3.5-9B | Modelo completo con cabeza MTP integrada | no disponible en la informacion | no disponible | Apache-2.0 | Hugging Face |
+| mitra-qwen35-translate-GGUF | Derivado de traduccion de Qwen3.5-9B sin cabeza MTP | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 
-La comparativa relevante no es frente a otros modelos de la misma categoria, sino frente al checkpoint oficial: Qwen3.5-9B ya incluye la cabeza MTP, por lo que este repositorio solo aporta valor cuando se usa con derivados que la han perdido. No se dispone de datos de rendimiento comparativo entre estas variantes.
+No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: sin un modelo base Qwen3.5-9B combinado, el archivo no genera texto.
-- La ganancia de velocidad depende del idioma: la model card solo garantiza mejora en lenguas familiares para la cabeza MTP, citando el ingles; en otras lenguas el beneficio puede ser menor o nulo.
-- No se documentan sesgos, riesgos de alucinacion ni limitaciones de contexto especificos de este artefacto; hereda los del modelo base Qwen3.5-9B.
-- La licencia Apache-2.0 se hereda del modelo original; el autor declara que no pretende ningun cambio de licencia, pero conviene verificar los terminos del checkpoint base para uso comercial.
-- El repositorio tiene un unico mantenedor y un volumen de descargas muy bajo (23), lo que reduce la validacion comunitaria y el soporte.
-- Los parametros de decodificacion especulativa (`--spec-draft-n-max`, `--spec-draft-p-min`) requieren ajuste empirico; valores inadecuados pueden degradar el rendimiento en lugar de mejorarlo.
-- No se han publicado evaluaciones independientes de calidad ni de velocidad para esta cuantizacion concreta.
+- No es un modelo autonomo: sin un modelo base Qwen3.5-9B al que acoplarse, el artefacto no genera texto.
+- La ganancia de velocidad depende del idioma: la model card indica que la MTP es mas efectiva en idiomas familiares para esa parte del modelo (como el ingles), por lo que el beneficio puede ser menor en otros idiomas.
+- Requiere una version de llama.cpp con soporte de `--spec-type draft-mtp`; en versiones sin ese soporte los pesos no son utilizables.
+- La calidad no mejora respecto al modelo sin MTP: cada token se valida contra el modelo principal, de modo que el beneficio es exclusivamente de velocidad.
+- No se documentan sesgos, tasas de alucinacion ni evaluaciones de seguridad para este artefacto; los riesgos heredados son los del modelo base Qwen3.5-9B.
+- Licencia Apache-2.0 heredada del modelo base; el autor no introduce cambios de licencia, pero conviene verificar las condiciones del modelo base para uso comercial.
+- El repositorio tiene pocas descargas (395) y ningun like en el momento de la consulta, lo que limita la evidencia de uso en produccion.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/christian-steinert/mtp-Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
-- Modelo Mitra Qwen3.5 Translate (GGUF): https://huggingface.co/christian-steinert/mitra-qwen35-translate-GGUF
+- Derivado de traduccion mencionado: https://huggingface.co/christian-steinert/mitra-qwen35-translate-GGUF

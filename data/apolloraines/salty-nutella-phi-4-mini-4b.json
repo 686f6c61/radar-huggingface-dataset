@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 349,
+  "downloads_30d": 350,
   "trending_score": 0,
   "parameters": 3836021760,
   "parameters_human": "3.84B",
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "New Teams - Backgrounds Folder | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/new-teams---backgrounds-folder/3960752",
-      "snippet": "Dec 22, 2021 · Recently, Microsoft released the new version of Teams for businesses, allowing the option to move end users to the …"
-    },
-    {
-      "title": "‎Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
-    },
-    {
-      "title": "Microsoft Teams Blog | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
-      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
-    },
-    {
-      "title": "ApolloRaines/Phi-4-mini-Instruct-Desyced at main - Hugging Face",
-      "url": "https://huggingface.co/ApolloRaines/Phi-4-mini-Instruct-Desyced/tree/main",
-      "snippet": "ApolloRaines / Phi-4-mini-Instruct-Desyced like 0 Text Generation Safetensors GGUF English phi3 phi phi-4 desyced anti-sycophancy conversational custom_code License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "如何在 outlook 中使用 Teams 会议加载项-百度经验",
-      "url": "https://jingyan.baidu.com/article/acf728fd70c4b6b9e510a3ad.html",
-      "snippet": "Oct 17, 2022 · 1、打开 outlook，切换到日历 2、点击”我的日历“，之后右边显示相应的”Teams 会议“，默认情况下，它们会在会议开始 …"
-    }
-  ]
+  "sources": []
 }

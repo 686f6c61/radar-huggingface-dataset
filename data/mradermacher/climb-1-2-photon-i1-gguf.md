@@ -2,75 +2,88 @@
 
 ## Resumen
 
-Climb-1.2-Photon-i1-GGUF es una colección de cuantizaciones en formato GGUF del modelo Climb-1.2-Photon, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversión de pesos (quantization-only) realizada con el pipeline habitual de este autor, que aplica cuantizaciones ponderadas con matriz de importancia (imatrix) sobre el modelo original alojado en el repositorio Climb-Ai/Climb-1.2-Photon. No es, por tanto, un modelo entrenado desde cero, sino una redistribución optimizada para inferencia local.
+Climb-1.2-Photon-i1-GGUF es la colección de cuantizaciones GGUF con imatrix del modelo Climb-1.2-Photon, publicada por el usuario mradermacher. El modelo base lo desarrolla Climb-Ai y está orientado a tareas de asistencia en terminal: generación y explicación de comandos de shell, automatización de flujos en Linux y soporte tipo copilot para entornos CLI. La model card etiqueta el modelo con los identificadores linux, bash, terminal, cli y copilot, además de qwen3_5, lo que sugiere una arquitectura derivada de la familia Qwen 3.5.
 
-La información disponible sobre el modelo base es muy limitada. El repositorio no incluye pipeline declarado, licencia, idiomas ni model card más allá de los metadatos de la conversión. El dato de parámetros totales reportado en safetensors (481.182) es inconsistente con el nombre "1.2" del modelo y con el tamaño del repo (0.0 GB), por lo que no debe interpretarse como un recuento fiable de parámetros. Cualquier evaluación técnica del modelo debe remitirse al repositorio original del autor.
+Se trata de un modelo compacto: los pesos en safetensors del modelo base suman 752.393.024 parámetros (aproximadamente 0,75 mil millones), lo que lo sitúa en la gama de modelos pequeños capaces de ejecutarse en hardware de consumo. El repositorio GGUF ocupa 11,1 GB en total porque incluye más de veinte variantes de cuantización, desde IQ1_S (0,4 GB) hasta Q6_K (0,7 GB); cada archivo individual es muy ligero.
 
-La relevancia de esta ficha radica en que permite localizar las cuantizaciones GGUF disponibles y conocer los formatos ofrecidos, pero no sustituye a la documentación del modelo base, que es la fuente autorizada para arquitectura, entrenamiento, licencia y capacidades.
+Su relevancia práctica radica en la combinación de tamaño reducido, licencia Apache 2.0 y disponibilidad en formato GGUF, lo que permite desplegarlo localmente con llama.cpp u Ollama sin dependencia de servicios en la nube, algo útil para asistentes de terminal que operan sobre código y comandos potencialmente sensibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el dato de safetensors, 481.182, no es coherente con el nombre del modelo ni con el tamaño del repo) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye presumiblemente en safetensors, aunque no se confirma |
+| Arquitectura | Transformer (derivada de la familia Qwen 3.5, segun el tag qwen3_5; detalles no disponibles) |
+| Parametros totales | 752.393.024 |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, Q2_K_S, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, Q4_0, Q4_K_S, IQ4_XS, IQ4_NL, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (todas con imatrix) |
+| Idiomas soportados | Ruso (ru) e ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Climb-1.2-Photon: ni el repositorio de cuantizaciones ni los metadatos accesibles indican si se trata de un transformer denso, un MoE, un modelo híbrido o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o técnicas de alineación.
+La informacion disponible no detalla la arquitectura interna mas alla del tag qwen3_5, que apunta a una variante de la familia Qwen 3.5 de Alibaba. Con 752 millones de parametros se trata de un modelo denso de escala pequena, adecuado para inferencia en CPU y GPU de gama baja. No se han publicado en la informacion proporcionada datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-Lo único documentado en esta ficha es el proceso de conversión: cuantizaciones ponderadas con imatrix (weighted/imatrix quants) generadas con quantize_version 2 y convert_type hf, lo que indica que los pesos originales provienen de un checkpoint en formato Hugging Face y fueron convertidos al formato GGUF mediante las herramientas estándar de llama.cpp. El conjunto de cuantizaciones cubre un rango amplio, desde IQ1_S/IQ1_M (para entornos con memoria muy restringida) hasta Q6_K (para máxima fidelidad dentro de GGUF).
+La aportacion tecnica de este repositorio concreto es la cuantizacion con imatrix (importance matrix), un proceso que calcula la importancia de cada tensor usando un corpus de calibracion y mejora la calidad de las cuantizaciones de baja precision respecto a las estaticas. El autor ofrece ademas cuantizaciones estaticas en un repositorio paralelo (Climb-1.2-Photon-GGUF) y publica el propio archivo imatrix para que terceros puedan generar sus propias variantes.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas del modelo base en la información disponible.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirma capacidad multilingüe ni lista de idiomas.
-- No se confirma capacidad de visión, audio ni modo "thinking".
-- La única capacidad verificable de este repositorio es la de servir pesos cuantizados en GGUF para inferencia con llama.cpp y herramientas compatibles.
+- Generacion de texto conversacional en ruso e ingles.
+- Asistencia especializada en terminal: generacion, explicacion y correccion de comandos de shell (bash) y flujos de trabajo en Linux.
+- Soporte tipo copilot para entornos CLI, segun las etiquetas del modelo.
+- Capacidad de conversacion multi-turno (etiqueta conversational).
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
+- No hay evidencia en la informacion disponible de soporte de tool calling, agentes, vision, audio ni modo thinking explicito.
 
 ## Casos de uso
 
-- Inferencia local en CPU o GPU de gama baja: las cuantizaciones IQ1_S, IQ1_M e IQ2 permiten ejecutar el modelo en equipos con 4-8 GB de RAM/VRAM, a costa de una pérdida de calidad significativa.
-- Despliegue en servidores sin GPU: al estar en GGUF, el modelo puede ejecutarse con llama.cpp en CPU, lo que facilita pruebas de concepto en infraestructura sin aceleradores.
-- Evaluación comparativa de cuantizaciones: el amplio conjunto de variantes (de IQ1 a Q6_K) permite medir el impacto de la cuantización en la calidad de salida para este modelo concreto.
-- Integración en aplicaciones de escritorio: herramientas como Ollama, LM Studio o KoboldCpp consumen GGUF directamente, lo que permite prototipar interfaces de chat locales.
-- Pipelines de generación de texto offline: para entornos con requisitos de privacidad que impidan llamadas a APIs externas, una cuantización Q4_K_M o Q5_K_M ofrece un equilibrio razonable entre tamaño y fidelidad.
-- Fine-tuning ligero sobre pesos cuantizados: algunas herramientas permiten adaptar modelos GGUF con LoRA, aunque el soporte depende del ecosistema y no está confirmado para este modelo.
+- Asistente de terminal local: el modelo puede sugerir comandos bash a partir de una descripcion en lenguaje natural y explicar que hace cada opcion; su tamano permite ejecutarlo en la misma maquina donde se trabaja, sin enviar comandos a un servicio externo.
+- Automatizacion de scripts de administracion: generar plantillas de scripts de shell para tareas repetitivas (backups, monitorizacion, limpieza de logs) y revisar scripts existentes en busca de errores.
+- Documentacion de infraestructura: convertir secuencias de comandos en explicaciones paso a paso para wikis internas o runbooks de operaciones.
+- Formacion de desarrolladores junior en Linux: un asistente interactivo que responde dudas sobre permisos, tuberias, procesos y utilidades del sistema en conversaciones multi-turno.
+- Integracion en editores y herramientas CLI: al ser un GGUF pequeno, puede embeberse en plugins de terminal o entornos de desarrollo para autocompletado y explicacion de comandos con baja latencia.
+- Despliegue en entornos con restricciones de privacidad: al ejecutarse localmente con licencia Apache 2.0, encaja en equipos donde no se permite enviar informacion de sistemas a APIs externas.
+- Prototipado rapido de asistentes conversacionales bilingues ruso-ingles sobre hardware modesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: no disponible con precisión, ya que se desconoce el número real de parámetros del modelo base. Como referencia orientativa, las cuantizaciones IQ1/IQ2 ocupan aproximadamente 1,5-3 bits por parámetro, Q4_K_M en torno a 4,5 bits por parámetro y Q6_K cerca de 6,5 bits por parámetro; el requisito exacto depende del tamaño real del modelo.
-- GPU recomendadas: no disponible. La elección depende del tamaño del modelo base, que no se ha confirmado.
-- Compatibilidad con GPU de consumo: no confirmada; dependerá del tamaño real del modelo y de la cuantización elegida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF de forma nativa, por lo que requerirían los pesos originales en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: cada cuantizacion ocupa entre 0,4 GB (IQ1_S) y 0,7 GB (Q6_K) en disco; en memoria se requiere un margen adicional para el contexto y el runtime, por lo que en la practica basta con aproximadamente 1-2 GB de RAM o VRAM.
+- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; tambien funciona en CPU. No se requiere A100 ni H100.
+- Cabe holgadamente en GPU de consumo: GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060 y superiores.
+- Opciones de despliegue: llama.cpp, Ollama y otros runtimes compatibles con GGUF; el modelo base usa la libreria transformers.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información suficiente sobre el modelo base (tamaño, arquitectura, contexto, licencia) para establecer una comparación rigurosa con alternativas de la misma categoría.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Climb-1.2-Photon-i1-GGUF | 752 M | No disponible | ru, en | Apache 2.0 | GGUF |
+| Qwen2.5-Coder-0.5B (referencia de la familia) | 0,5 B | 32 K (segun documentacion publica de Qwen) | Multilingue | Apache 2.0 | safetensors, GGUF |
+| Qwen2.5-Coder-1.5B (referencia de la familia) | 1,5 B | 32 K (segun documentacion publica de Qwen) | Multilingue | Apache 2.0 | safetensors, GGUF |
+
+La comparativa con modelos de la familia Qwen se ofrece como referencia de categoria por tamano y orientacion a codigo; no se dispone de datos de rendimiento de Climb-1.2-Photon para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- La licencia no está declarada en este repositorio; antes de cualquier uso comercial debe consultarse la licencia del modelo original en Climb-Ai/Climb-1.2-Photon.
-- El dato de parámetros totales (481.182) es incoherente con el nombre del modelo y con el tamaño del repositorio, por lo que no debe usarse para dimensionar infraestructura.
-- Las cuantizaciones de baja precisión (IQ1_S, IQ1_M, IQ2_XXS) degradan notablemente la calidad de generación y pueden producir salidas incoherentes; no son adecuadas para producción.
-- No hay información sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas del modelo base.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin evidencia de validación por parte de la comunidad.
-- Al ser una conversión de terceros, no existe garantía de que los pesos cuantizados reproduzcan fielmente el comportamiento del modelo original.
+- Modelo de 752 millones de parametros: su capacidad de razonamiento complejo y de generacion de codigo es limitada en comparacion con modelos de mayor escala.
+- Idiomas: solo se declaran ruso e ingles; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- Riesgo de alucinacion en comandos de shell: un comando incorrecto puede tener consecuencias destructivas; se recomienda validacion humana antes de ejecutar cualquier sugerencia en produccion.
+- No hay informacion publicada sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y este repositorio de cuantizaciones son artefactos distintos; conviene verificar la licencia del modelo base Climb-Ai/Climb-1.2-Photon antes de redistribuir.
+- Las cuantizaciones de muy baja precision (IQ1_S, IQ1_M, Q2_K_S) degradan notablemente la calidad; el propio autor las describe como "for the desperate" o "very low quality".
+- No se dispone de informacion sobre la longitud de contexto soportada, lo que impide garantizar conversaciones o ficheros largos.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/Climb-1.2-Photon-i1-GGUF
+- Repositorio GGUF con imatrix: https://huggingface.co/mradermacher/Climb-1.2-Photon-i1-GGUF
 - Modelo base: https://huggingface.co/Climb-Ai/Climb-1.2-Photon
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Climb-1.2-Photon-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Climb-1.2-Photon-i1-GGUF
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -2,94 +2,100 @@
 
 ## Resumen
 
-thox-micro-125m-instruct-GGUF es la distribucion en formato GGUF del modelo Thox-ai/thox-micro-125m-instruct, un modelo de 123.587.328 parametros (aproximadamente 125M) desarrollado por Thox-ai (THOX.ai LLC). No se trata de un asistente de proposito general: el propio autor lo define como un "device-role responder", es decir, un modelo disenado para responder consultas sobre el estado y el rol de un dispositivo en el que se ejecuta localmente, bajo el lema "Your AI. Your Data. Your Rules.".
+thox-micro-125m-instruct-GGUF es la distribucion en formato GGUF del modelo Thox-ai/thox-micro-125m-instruct, un modelo de lenguaje de 123,6 millones de parametros desarrollado desde cero por THOX.ai LLC. No se trata de un asistente general, sino de un "device-role responder": un modelo especializado en responder consultas sobre identidad, estado y localidad de datos dentro del ecosistema THOX, pensado para ejecutarse en dispositivos de borde (edge) y derivar las peticiones generales a un modelo de mayor tamano.
 
-El repositorio contiene tres builds cuantizadas (Q4_0, Q4_K_M y F16) pensadas para inferencia en el dispositivo (on-device) y entornos edge, con llama.cpp como runtime de referencia. El objetivo declarado es ofrecer respuestas de chat con plantilla ChatML en hardware muy limitado, priorizando el consumo minimo de memoria y la privacidad de los datos, que no abandonan el dispositivo.
+El repositorio contiene tres builds cuantizados: Q4_0 (81,3 MB, objetivo para dispositivo), Q4_K_M (84,7 MB) y F16 (249,0 MB). El modelo usa una plantilla de chat ChatML con los tokens especiales `<|im_start|>` y `<|im_end|>`, y esta disenado para ejecutarse con llama.cpp, llama-server u Ollama en hardware local.
 
-Su relevancia actual radica en el nicho de modelos ultraligeros para edge: con un pico de memoria de 191 MB y ~450 tok/s de decodificacion en una maquina de desarrollo x86_64 (4 hilos), se posiciona como una alternativa mas rapida y ligera que SmolLM2-360M-Instruct en el mismo harness. La licencia Apache-2.0 facilita su integracion comercial, aunque su ambito funcional es estrecho y especifico.
+Su relevancia radica en el enfoque local-first: un modelo diminuto, con licencia Apache-2.0 y sin modelo base externo (entrenado from scratch), que prioriza la privacidad y la ejecucion en dispositivo frente a la capacidad generalista. Es una pieza de infraestructura para el stack THOX (thoxos, meshstack), no un modelo de proposito general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma explicita; el autor menciona una dimension FFN de 2048, compatible con un transformer decoder |
-| Parametros totales | 123.587.328 (aproximadamente 125M) |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | No disponible (modelo transformer entrenado desde cero; detalles no publicados) |
+| Parametros totales | 123.587.328 (123,6 M) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_0 (objetivo de dispositivo), Q4_K_M, F16 (fuente de re-cuantizacion); el autor indica que Q8_0 tambien es aplicable |
+| Tipos de cuantizacion | Q4_0, Q4_K_M, F16 |
 | Idiomas soportados | Ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Licencia | Apache-2.0 (Copyright (c) 2026 THOX.ai LLC) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de dos datos concretos: el modelo tiene 123.587.328 parametros y una dimension FFN de 2048. Esta dimension es relevante porque, segun el autor, divide limpiamente en bloques Q4_0, lo que permite usar el formato legacy Q4_0 (seguro a nivel escalar en ARMv6) en lugar de verse obligado a los K-quants, como ocurre con el modelo THOX de 327M (FFN dim 3413). El modelo usa una plantilla de chat ChatML y reutiliza filas de vocabulario no usadas para los tokens de ChatML, por lo que los ficheros cuantizados ocupan lo mismo que los del modelo base sin ajustar.
+La model card indica que el modelo fue entrenado por THOX desde cero como parte de su linea de investigacion de modelos pequenos, sin utilizar un modelo base externo. No se publican detalles sobre el numero de capas, dimensiones de atencion, tipo de transformer ni composicion del corpus de entrenamiento; la unica referencia tecnica concreta es que la dimension de la FFN es 2048, dato que se menciona para justificar que divide limpiamente en bloques Q4_0.
 
-No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La variante "instruct" implica un proceso de ajuste para seguir instrucciones, dado que el autor distingue entre el modelo "tuned" y el "untuned base", y el chat template embebido soporta turnos de sistema, usuario y asistente. Los metadatos GGUF incluyen `tokenizer.ggml.eos_token_id = 50258` (`<|im_end|>`), `padding_token_id = 50258` y como tokens de fin de generacion tanto `<|endoftext|>` como `<|im_end|>`.
+No se documenta el uso de RLHF, DPO ni tecnicas de alineacion adicionales. El ajuste por instrucciones se refleja en la plantilla ChatML embebida en los metadatos GGUF (`tokenizer.chat_template`), con `eos_token_id = 50258` (`<|im_end|>`) y `padding_token_id = 50258`. Tanto `<|endoftext|>` como `<|im_end|>` actuan como tokens de fin de generacion. Los ficheros cuantizados tienen el mismo tamano que el modelo base sin ajustar porque los tokens de ChatML reutilizan filas de vocabulario no usadas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con plantilla ChatML (turnos de sistema, usuario y asistente).
-- Respuestas especificas de "rol de dispositivo": responde a preguntas sobre si los datos salen del dispositivo y sobre el propio funcionamiento del modelo en el hardware local.
-- Ejecucion on-device y edge, con parada limpia de generacion: el autor reporta 7 de 7 paradas limpias usando su prompt de sistema.
-- Compatible con `endpoints_compatible` y servidores HTTP de llama.cpp (`llama-server --jinja`).
-- Razonamiento general, codigo, matematicas, vision, audio, tool calling y uso como agente: no documentados en la informacion disponible (el autor insiste en que no es un asistente general).
-- Capacidades multilingues: solo ingles.
+- Generacion de texto conversacional en ingles con formato ChatML.
+- Respuestas de rol de dispositivo: identidad THOX, estado del sistema y localidad de datos (si los datos salen o no del dispositivo).
+- Parada limpia de generacion: la model card reporta 7 de 7 paradas limpias con su system prompt en la evaluacion realizada.
+- Ejecucion local en dispositivo mediante llama.cpp, llama-server y Ollama.
+- Plantilla de chat embebida, compatible con `llama-server --jinja`.
+- No soporta tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking segun la informacion disponible.
+- Capacidad multilingue limitada al ingles.
 
 ## Casos de uso
 
-- Asistente de privacidad embebido en dispositivo: el modelo esta disenado para responder a preguntas como "¿mis datos salen de este dispositivo?" usando su prompt de sistema, de modo que el propio hardware pueda comunicar al usuario su politica de datos local.
-- Chat local en hardware ultraligero: con 191 MB de pico de RSS en Q4_0, cabe en dispositivos con memoria muy limitada y permite conversaciones de rol acotado sin conexion a red.
-- Sistemas embebidos e IoT con ARM: la eleccion de Q4_0 como formato objetivo (seguro a nivel escalar en ARMv6) lo hace apto para placas antiguas o de bajos recursos donde los K-quants no son viables.
-- Interfaz de estado del dispositivo: puede integrarse como capa de lenguaje que traduzca el estado interno de un equipo a respuestas legibles para el usuario final.
-- Demostraciones de IA local con garantias de privacidad: util para prototipos o productos que deben demostrar que ninguna peticion sale del dispositivo, dado que todo el pipeline cabe en el propio equipo.
-- Pruebas de inferencia en CPU de alto rendimiento: sus ~450 tok/s en decodificacion lo hacen adecuado como banco de pruebas de pipelines llama.cpp en x86_64 antes de portar a otros entornos.
+- Respuesta de identidad en dispositivo: el modelo responde a preguntas como "¿que eres?" o "¿quien te ejecuta?" dentro de un producto THOX, usando su system prompt especifico y su ventana de contexto reducida para respuestas cortas y deterministas.
+- Verificacion de localidad de datos: integrado en la interfaz de un dispositivo THOX para contestar si los datos abandonan el dispositivo, con generacion a temperatura 0 y parada controlada en `<|im_end|>`.
+- Enrutador de peticiones: al ser un responder de rol de dispositivo, las consultas generales se derivan a un modelo mayor; el modelo micro gestiona el saludo, la identidad y el estado antes del enrutado.
+- Demostracion de privacidad local-first: permite mostrar en una demo que la inferencia ocurre en el dispositivo con 191 MB de RSS pico en Q4_0, sin llamadas a la nube.
+- Prototipado en hardware de borde: con 81,3 MB en Q4_0 cabe en dispositivos con memoria muy limitada, lo que facilita pruebas de integracion en firmware o sistemas embebidos con llama.cpp.
+- Generacion de respuestas de estado del sistema: mensajes breves sobre el estado del dispositivo o del stack THOX (thoxos, meshstack) en flujos de UI conversacional.
+- Evaluacion de pipelines GGUF: sirve como modelo de prueba minimo para validar plantillas ChatML, metadatos de tokenizer y despliegues con Ollama (`ollama run hf.co/Thox-ai/thox-micro-125m-instruct-GGUF:Q4_K_M`).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El unico dato de rendimiento medido por el autor es el siguiente, obtenido en una maquina de desarrollo x86_64 con 4 hilos y advertido explicitamente como "no es una cifra de dispositivo":
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card solo reporta metricas de ejecucion en una maquina host, no en el hardware objetivo:
 
-| Modelo / metrica | Pico de RSS | Decodificacion | Paradas limpias (con prompt de sistema) |
-|---|---|---|---|
-| thox-micro-125m-instruct Q4_0 | 191 MB | ~450 tok/s | 7 de 7 |
-| SmolLM2-360M-Instruct Q4_0 | 473 MB | ~163 tok/s | 1 de 7 |
+| Metrica | Valor | Condiciones |
+|---|---|---|
+| Memoria pico (RSS) | 191 MB | Q4_0, maquina host |
+| Velocidad de decodificacion | ~450 tok/s | Q4_0, maquina host |
+| Paradas limpias | 7 de 7 | Con su system prompt |
+| Validacion en dispositivo objetivo | No realizada | Pendiente |
+| Resultado THOX GATE49 | No publicado | — |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: Q4_0 con un pico de 191 MB de RSS en x86_64; el fichero Q4_0 pesa 81.319.136 bytes (~81 MB) y el F16, 248.988.128 bytes (~249 MB).
-- GPU recomendadas: no se especifican; el modelo esta orientado a CPU y a ejecucion on-device, por lo que no requiere una GPU dedicada.
-- Cabe en GPU de consumo: si, en cualquier GPU de consumo actual, aunque su objetivo no es ese escenario; esta pensado para CPU y dispositivos edge.
-- Opciones de despliegue: llama.cpp (`llama-completion` con `-no-cnv` y `llama-server --jinja`), y por compatibilidad general con GGUF, tambien Ollama y otros runtimes basados en llama.cpp.
-- Latencia y throughput: ~450 tok/s de decodificacion en Q4_0 sobre una maquina x86_64 con 4 hilos (cifra de desarrollo, no de dispositivo).
-- Nota del autor: no validado todavia en una Raspberry Pi Zero 2 W.
+- VRAM/RAM estimada: Q4_0 ocupa 81,3 MB en disco; el pico de RSS medido es de 191 MB en Q4_0. F16 ocupa 249,0 MB en disco.
+- GPU recomendadas: no se especifican; por tamano, el modelo es viable en CPU y en cualquier GPU consumer.
+- Cabe en GPU consumer: si, en cualquier GPU con al menos ~0,5 GB de memoria libre, y en CPU pura.
+- Opciones de despliegue: llama.cpp (`llama-completion`, `llama-server --jinja`), Ollama (`ollama run thox-ai/thox-micro-125m-instruct` o `hf.co/Thox-ai/thox-micro-125m-instruct-GGUF:Q4_K_M`). No se documenta soporte de vLLM ni TGI.
+- Latencia y throughput: ~450 tok/s de decodificacion en Q4_0 sobre la maquina host de evaluacion; no hay datos del dispositivo objetivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento medido (Q4_0, mismo harness) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| thox-micro-125m-instruct | 123.587.328 | No disponible | 191 MB RSS, ~450 tok/s, 7/7 paradas limpias | Apache-2.0 | Hugging Face (GGUF) |
-| SmolLM2-360M-Instruct | ~360M | No disponible | 473 MB RSS, ~163 tok/s, 1/7 paradas limpias | No disponible | Hugging Face |
-| THOX 327M (mencionado por el autor) | ~327M | No disponible | No disponible | No disponible | Hugging Face |
+No se dispone de datos de benchmarks que permitan una comparacion de rendimiento fiable. A continuacion se comparan caracteristicas estructurales con alternativas de tamano similar del ecosistema open source:
 
-Los datos de comparacion proceden exclusivamente de las mediciones del autor en su harness de pruebas; no son cifras equivalentes de benchmarks estandar.
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| thox-micro-125m-instruct-GGUF | 123,6 M | No disponible | Apache-2.0 | Responder de rol de dispositivo, from scratch, solo ingles |
+| SmolLM2-135M-Instruct | 135 M | 8.192 tokens (segun documentacion publica del modelo) | Apache-2.0 | Asistente general pequeno, multilingue |
+| Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens (segun documentacion publica del modelo) | Apache-2.0 | Asistente general, multilingue, tool calling |
+| TinyLlama-1.1B-Chat | 1,1 B | 2.048 tokens (segun documentacion publica del modelo) | Apache-2.0 | Chat general en ingles |
+
+La comparacion de rendimiento con estos modelos no esta disponible porque THOX no publica resultados de benchmarks estandar para thox-micro-125m-instruct.
 
 ## Limitaciones y advertencias
 
-- No es un asistente de proposito general: el autor lo define como un "device-role responder", por lo que su uso fuera de ese ambito puede dar resultados pobres.
-- Solo soporta ingles; no hay capacidades multilingues documentadas.
-- No se han publicado datos sobre sesgos, alucinacion o robustez fuera del caso de uso previsto.
-- Longitud de contexto no disponible: se desconoce la ventana maxima soportada.
-- Rendimiento medido en x86_64 con 4 hilos; el autor advierte que no es una cifra de dispositivo y que el modelo aun no se ha validado en Raspberry Pi Zero 2 W.
-- La licencia Apache-2.0 permite uso comercial, con copyright de THOX.ai LLC, pero conviene revisar los terminos del modelo base antes de redistribuir.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema de soporte y comunidad practicamente inexistente.
-- Existen ficheros con sufijos de cuantizacion en mayusculas de una subida anterior en el repositorio del modelo base, segun una fuente externa; conviene verificar que se descarga la build deseada.
+- No es un asistente general: la model card excluye explicitamente chat general, QA factual, aritmetica, codigo y cualquier uso critico para la seguridad.
+- Condicionamiento por system prompt: la model card del modelo base documenta un problema conocido de condicionamiento por system prompt; consultar la card de origen.
+- Solo ingles: no hay soporte multilingue declarado.
+- Longitud de contexto no publicada: no se puede planificar su uso en conversaciones largas sin verificar el valor real.
+- Cuantizacion: Q4_0 y Q4_K_M intercambian precision por tamano; la propia card advierte de esta perdida de exactitud.
+- Sin validacion en hardware objetivo: las metricas de rendimiento se midieron en una maquina host, no en el dispositivo destino.
+- Sin resultado GATE49: no hay evaluacion interna THOX publicada para este modelo.
+- Licencia Apache-2.0: permite uso comercial, pero el modelo esta pensado para el ecosistema THOX y su utilidad fuera de ese contexto es muy limitada.
+- Riesgo de alucinacion: no se documenta ninguna evaluacion de fidelidad factual; al ser un modelo de 123,6 M, la generacion fuera de su dominio de rol es poco fiable.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Thox-ai/thox-micro-125m-instruct-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Thox-ai/thox-micro-125m-instruct-GGUF
 - Modelo base: https://huggingface.co/Thox-ai/thox-micro-125m-instruct
-- Version GGUF del modelo base: https://huggingface.co/Thox-ai/thox-micro-125m-GGUF
-- Modelo thox-micro-125m: https://huggingface.co/Thox-ai/thox-micro-125m
-- Fichero de pesos safetensors: https://huggingface.co/Thox-ai/thox-micro-125m/blob/main/model.safetensors
-- ThoxMini-125M-role: https://huggingface.co/Thox-ai/ThoxMini-125M-role
-- Ficha y endpoint en FriendliAI: https://friendli.ai/models/Thox-ai/thox-micro-125m
+- Ollama: https://ollama.com/thox-ai/thox-micro-125m-instruct
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

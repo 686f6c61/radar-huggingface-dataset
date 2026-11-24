@@ -47,7 +47,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 343,
+  "downloads_30d": 344,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -67,7 +67,7 @@
   "benchmarks": [
     {
       "task": "signal processing question answering",
-      "dataset": "Golden answers (334 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (357 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }

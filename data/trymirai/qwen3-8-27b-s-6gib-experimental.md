@@ -2,85 +2,94 @@
 
 ## Resumen
 
-Qwen3.8-27B-S-6GiB-experimental es una cuantizacion experimental del modelo base Qwen/Qwen3.8-27B, publicada por el usuario independiente trymirai bajo el identificador trymirai/Qwen3.8-27B-S-6GiB-experimental. Se trata de una compresion agresiva orientada a reducir el peso en disco y en memoria, con tecnicas de cuantizacion de 2 bits y 8 bits segun los tags del repositorio, y con el objetivo declarado de que el resultado pueda ejecutarse en un espacio cercano a los 6 GiB. El repositorio incluye los tags "uzu" y "mirai", que no corresponden a ningun formato de cuantizacion estandar ampliamente documentado, por lo que debe tratarse como un artefacto de investigacion sin garantias de compatibilidad con runtimes convencionales.
+Mirai's Qwen3.8-27B Small (6 GiB) es una cuantizacion experimental del modelo Qwen/Qwen3.8-27B, desarrollada por el equipo de Mirai Labs (usuario `trymirai` en Hugging Face). Su objetivo es comprimir un modelo de aproximadamente 27.000 millones de parametros en un fichero de pesos de menos de 6 GiB, lo que se traduce en unos 1,9 bits por peso, para permitir inferencia local eficiente en Apple silicon.
 
-El dato mas relevante para evaluar el artefacto es la discrepancia entre el nombre del modelo y el contenido real de los pesos: el modelo base se anuncia como de 27B parametros, pero el recuento real de parametros en los ficheros safetensors es de 6.365.062.938 (aproximadamente 6,37 mil millones). Esto sugiere que la publicacion no es una mera cuantizacion del modelo original, sino una version podada o destilada, o bien que el nombre del modelo base no se corresponde con su tamano real. En cualquier caso, el consumidor debe verificar los pesos antes de asumir capacidades propias de un modelo de 27B.
+El checkpoint se ha construido con cuantizacion post-entrenamiento seguida de dos rondas de destilacion consciente de cuantizacion (quantization-aware distillation), utilizando un codec de trellis de estilo QTIP con rotaciones aleatorias de estructura de Kronecker para mitigar los valores atipicos de los pesos. El resultado son 6.365.063.968 parametros almacenados en safetensors, aunque el modelo base completo es considerablemente mayor.
 
-La relevancia de esta ficha es acotada: se trata de un experimento con 6 descargas y 0 likes en el momento de la consulta, acceso restringido y sin documentacion de benchmarks, idiomas ni proceso de entrenamiento. Resulta util como referencia de tecnicas de compresion extrema, pero no como candidato para produccion sin una evaluacion propia exhaustiva.
+La relevancia de esta ficha radica en que es un ejemplo de cuantizacion extrema (por debajo de 2 bits por peso) orientada a hardware de consumo, con una metrica de calidad explicita (divergencia KL de 0.2040674 y concordancia top-1 del 85,26% frente al profesor base). No obstante, es un artefacto experimental, con soporte limitado a un runtime propietario (`uzu`) y a macOS sobre Apple silicon.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (hereda del modelo base Qwen/Qwen3.8-27B; no se documenta en el repositorio) |
-| Parametros totales | 6.365.062.938 (segun safetensors); el nombre indica 27B, discrepancia no aclarada |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen/Qwen3.8-27B; detalles no disponibles en la informacion proporcionada) |
+| Parametros totales | 6.365.063.968 (pesos cuantizados almacenados); modelo base de ~27B |
+| Parametros activos | no disponible (no se indica que el modelo base sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 2-bit y 8-bit (segun tags); formato propietario "uzu"/"mirai" no documentado |
+| Tipos de cuantizacion | 2-bit (codec trellis QTIP, 6/7/8 bits de transicion por grupo de cuatro pesos, ~1,9 bits/peso de media); embedding de entrada con code D4 de 2 bits; cabeza de salida con enteros de 3 bits |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con esquema de cuantizacion propio) |
+| Formato de pesos | safetensors (libreria `uzu`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna en la documentacion proporcionada. El modelo se declara como derivado de Qwen/Qwen3.8-27B, por lo que la topologia subyacente corresponderia a la familia Qwen3, pero el repositorio no detalla numero de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora componentes MoE. Tampoco se especifica si el proceso de compresion incluye poda estructurada, destilacion o unicamente cuantizacion de pesos, lo que impide determinar si el recuento de 6,37B parametros corresponde a un modelo podado o a un error de etiquetado.
+El modelo base es Qwen/Qwen3.8-27B, un transformer de aproximadamente 27.000 millones de parametros del que no se detallan en la informacion proporcionada ni la composicion del dataset, ni el numero de tokens de entrenamiento, ni si hubo RLHF o DPO. La ficha del checkpoint cuantizado remite a la model card original para esos datos.
 
-Respecto al entrenamiento, no hay informacion sobre volumen de tokens, composicion del dataset, fases de preentrenamiento, ajuste supervisado o alineacion mediante RLHF/DPO. Los tags "uzu" y "mirai" apuntan a un pipeline de cuantizacion propio del autor, sin paper ni repositorio de codigo enlazado en la informacion disponible. Cualquier afirmacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o kernels especializados seria especulativa y no debe asumirse.
+La innovacion tecnica de esta version reside en el proceso de cuantizacion: se emplea el mismo codec de trellis de estilo QTIP que la variante "Mirai Small", con 8, 7 o 6 bits de transicion por grupo de cuatro pesos, seleccionados matriz a matriz segun el coste medido, de forma que el fichero final queda por debajo de 6 GiB. Se aplican rotaciones aleatorias con estructura de Kronecker para reducir los valores atipicos de los pesos, el embedding de entrada usa un code lattice D4 de 2 bits y la cabeza de salida usa enteros de 3 bits. El pipeline completo es cuantizacion post-entrenamiento mas dos rondas de destilacion consciente de cuantizacion. Los pesos de vision, MTP y del especulador quedan excluidos del computo de tamano.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es text-generation, por lo que la funcionalidad basica esperada es la generacion autoregresiva de texto.
-- Razonamiento y codigo: no disponible; no se documenta ninguna evaluacion ni capacidad especifica, y la compresion a 2 bits suele degradar tareas de razonamiento y codigo de forma significativa.
-- Tool calling / function calling: no disponible; no se declara soporte.
-- Soporte de agentes y razonamiento multi-paso: no disponible; no se declara soporte.
-- Capacidades multilingues: no disponible; el campo de idiomas no esta cumplimentado en el repositorio.
-- Capacidades especiales (modo thinking, vision, audio): no disponible; no se declara ninguna.
-- Ejecucion en memoria reducida: la unica capacidad diferencial documentada es el objetivo de compresion hacia ~6 GiB, segun el nombre del repositorio.
+- Generacion de texto: es la tarea declarada en el pipeline (`text-generation`).
+- Razonamiento y conocimiento general: heredados del modelo base Qwen3.8-27B, aunque degradados por la cuantizacion agresiva (concordancia top-1 del 85,26% con el profesor).
+- Soporte de tool calling / function calling: no confirmado para este checkpoint en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion proporcionada.
+- Capacidades multilingues: no disponibles; la model card no las declara.
+- Capacidades especiales: el modelo base incluye pesos de vision, MTP y especulador, pero estos no forman parte de este checkpoint cuantizado.
 
 ## Casos de uso
 
-- Experimentacion con cuantizacion extrema: el artefacto sirve para estudiar el impacto de la cuantizacion a 2 bits sobre un modelo base, midiendo la degradacion de perplejidad y de tareas generativas frente al original. Es adecuado por su tamano reducido y su licencia permisiva, no por su calidad final.
-- Investigacion sobre poda y destilacion: dado el recuento real de 6,37B parametros frente a los 27B nominales, el modelo permite analizar tecnicas de reduccion de parametros y comparar la calidad retenida, siempre que se disponga del modelo base para la comparacion.
-- Pruebas de infraestructura de inferencia en entornos con poca VRAM: con un peso objetivo de ~6 GiB, puede utilizarse para validar pipelines de despliegue en GPUs de gama media o en CPU, verificando compatibilidad de runtimes antes de invertir en modelos mayores.
-- Educacion y demostraciones: util para explicar en talleres como funciona la cuantizacion y que compromisos introduce, dado que el modelo es pequeno en disco y de acceso controlado pero gratuito.
-- Evaluacion de riesgos de artefactos no documentados: sirve como caso practico para formar a equipos en la verificacion de pesos, licencias y procedencia antes de adoptar un modelo de Hugging Face.
-- Prototipado interno sin requisitos de calidad estrictos: para generar texto de relleno o datos sinteticos de baja criticidad donde la fidelidad no sea un requisito, siempre que la licencia Apache 2.0 y las condiciones de acceso lo permitan.
+- Inferencia local en Mac con Apple silicon: el caso de uso principal declarado por el autor; se instala con `brew install mirai` y se ejecuta con `mirai --model trymirai/Qwen3.8-27B-S-6GiB`, aprovechando que el fichero de pesos cabe en 6 GiB de memoria unificada.
+- Prototipado offline en portatiles: permite probar un modelo de escala ~27B sin GPU dedicada ni conexion a servicios en la nube, util para experimentar con prompts y flujos antes de pasar a un despliegue mayor.
+- Evaluacion de tecnicas de cuantizacion extrema: sirve como referencia practica para investigadores que estudien codecs trellis, rotaciones de Kronecker o destilacion consciente de cuantizacion, con metricas KL publicadas.
+- Generacion de texto asistida en entornos con restricciones de memoria: adecuado para tareas de redaccion o resumen de baja exigencia donde el coste de memoria es el factor limitante.
+- Educacion y demos: util para mostrar en talleres como un modelo grande puede ejecutarse en hardware de consumo mediante cuantizacion por debajo de 2 bits.
+- Baseline para comparativas de calidad: la metrica de divergencia KL frente al profesor permite medir el impacto de otras tecnicas de compresion sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Metrica | Resultado |
+|---|---|
+| Divergencia KL frente al profesor (romakl, 20 conversaciones, 14.456 tokens) | 0.2040674 |
+| Concordancia top-1 con el profesor | 85,26% |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en safetensors de aproximadamente 6,37B parametros y cuantizacion mixta de 2 y 8 bits, el peso en disco y en memoria deberia situarse en el entorno de los 6 GiB indicados en el nombre, mas overhead de activaciones y cache KV.
-- GPUs recomendadas: no disponible; al no documentarse el runtime compatible, no puede confirmarse el soporte en A100, H100 ni RTX 4090. Por tamano, cabria esperar ejecucion en GPUs consumer con 8-12 GB de VRAM, pero la compatibilidad del formato "uzu" es la incognita principal.
-- Cabe en GPU consumer: probablemente si por tamano (gama RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 en adelante), condicionado a que exista un runtime que cargue el formato propietario.
-- Opciones de despliegue: no disponible. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI; el tag "uzu" sugiere un cargador propio no estandar.
-- Latencia y throughput estimados: no disponible.
+- VRAM/memoria estimada: inferior a 6 GiB solo para los pesos; hay que sumar el overhead del runtime y la cache KV, cuyo tamano depende de la longitud de contexto (no disponible).
+- GPU recomendadas: no se especifican GPU dedicadas; el autor declara soporte unicamente para Apple silicon.
+- Compatibilidad con GPU de consumo: no confirmada para CUDA; el runtime `uzu` solo soporta Apple silicon segun la model card.
+- Opciones de despliegue: CLI `mirai` (Homebrew) o compilacion desde el repositorio `uzu` de Mirai; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trymirai/Qwen3.8-27B-S-6GiB-experimental | 6,37B reales (27B nominales) | no disponible | Apache 2.0 | Gated, 6 descargas | Cuantizacion experimental 2/8-bit, formato no estandar |
-| Qwen/Qwen3.8-27B (modelo base) | 27B nominales | no disponible | no disponible en esta ficha | Publico en Hugging Face | Referencia de calidad original; requiere mas VRAM |
-| Alternativas de ~7B cuantizadas a 4 bits (familia Qwen/Llama) | ~7B | 8K-128K segun modelo | Apache 2.0 o similar | Amplia | Formatos GGUF/AWQ estandar, soporte en llama.cpp y vLLM |
+| trymirai/Qwen3.8-27B-S-6GiB-experimental | 6.365.063.968 almacenados (~27B base) | no disponible | ~1,9 bits/peso | Apache 2.0 | Hugging Face, runtime `uzu` (Apple silicon) |
+| Qwen/Qwen3.8-27B (modelo base) | ~27B | no disponible | pesos originales | Apache 2.0 | Hugging Face |
+| Mirai Small (variante de referencia) | no disponible | no disponible | trellis QTIP con 8/7/6 bits de transicion | no disponible | no disponible |
 
-La comparativa con modelos de la misma categoria es limitada porque no se dispone de datos de rendimiento del artefacto. Frente a una cuantizacion estandar a 4 bits de un modelo de ~7B, este repositorio ofrece un peso similar pero con un esquema de compresion mas agresivo (2 bits) y sin runtime documentado, lo que reduce su utilidad practica.
+No se dispone de datos suficientes para comparar rendimiento con alternativas de cuantizacion de otros proveedores.
 
 ## Limitaciones y advertencias
 
-- Discrepancia critica de parametros: el nombre indica 27B pero los safetensors contienen 6,37B; no debe asumirse el comportamiento de un modelo de 27B.
-- Cuantizacion a 2 bits: este nivel de compresion degrada de forma notable la coherencia, el razonamiento y la fidelidad factual; se espera una tasa de alucinacion elevada y no medida.
-- Formato propietario: los tags "uzu" y "mirai" no corresponden a formatos estandar; la carga puede requerir codigo del autor no incluido en la informacion.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones, lo que anade friccion y puede limitar la reproducibilidad.
-- Falta de documentacion: sin model card detallada, sin idiomas declarados, sin benchmarks y sin descripcion del dataset; imposible evaluar sesgos o cobertura linguistica.
-- Riesgo de sesgos: al desconocerse los datos de entrenamiento y el proceso de alineacion, no puede descartarse la presencia de sesgos del modelo base ni los introducidos por la compresion.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad de verificar que la cadena de licencias del modelo base y de los datos subyacentes lo permita.
-- Madurez: 6 descargas y 0 likes, creado en septiembre de 2026 y actualizado en noviembre de 2026; sin comunidad ni soporte, no recomendable para produccion sin validacion propia.
+- Cuantizacion extrema: ~1,9 bits por peso implica una perdida medible de calidad; la concordancia top-1 con el profesor es del 85,26%, por lo que aproximadamente uno de cada siete tokens predichos difiere del modelo original.
+- Caracter experimental: el nombre del checkpoint lo declara explicitamente; no debe considerarse una version estable para produccion.
+- Soporte de plataforma limitado: solo Apple silicon mediante el runtime `uzu`; no hay soporte documentado para CUDA, ROCm ni CPU generica.
+- Idiomas no declarados: no se puede asumir un comportamiento multilingue concreto sin evaluacion propia.
+- Riesgo de alucinacion: inherente al modelo base y potencialmente amplificado por la cuantizacion; no hay evaluaciones de fidelidad publicadas para este checkpoint.
+- Sesgos: no se documentan sesgos especificos en la informacion proporcionada.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base y las condiciones del runtime `uzu`, que es software independiente.
+- Artefactos excluidos: vision, MTP y especulador no estan incluidos, por lo que no se deben esperar capacidades multimodales ni decodificacion especulativa.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/trymirai/Qwen3.8-27B-S-6GiB-experimental
-- Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
-- Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.8-27B-S-6GiB-experimental
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
+- Blog de cuantizacion de Mirai: https://trymirai.com/blog/quantization
+- Repositorio del runtime uzu: https://github.com/trymirai/uzu
+- Guia de ejecucion de uzu: https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
+- Herramienta de evaluacion romakl: https://github.com/trymirai/romakl
+- Runtime Prism (llama.cpp modificado): https://github.com/PrismML-Eng/llama.cpp

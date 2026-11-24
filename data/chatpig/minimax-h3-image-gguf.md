@@ -2,49 +2,53 @@
 
 ## Resumen
 
-`chatpig/minimax-h3-image-gguf` es una cuantizacion en formato GGUF del modelo MiniMax-H3-Image, publicado por el usuario chatpig sobre el modelo base `MiniMaxAI/MiniMax-H3-Image`. Se trata de un modelo de generacion y edicion de imagenes condicionado por texto, distribuido en un repositorio de 12,6 GB que incluye pesos cuantizados del modelo de difusion, un LLM auxiliar (aparentemente basado en Qwen3-VL de 32B, segun el comando de ejemplo de la model card) y un VAE en FP16. El modelo declara 20.113.670.232 parametros totales en safetensors.
+`chatpig/minimax-h3-image-gguf` es una distribucion en formato GGUF del modelo de generacion y edicion de imagenes MiniMax-H3-Image, publicado originalmente por MiniMaxAI. El repositorio lo mantiene el usuario chatpig y su funcion es empaquetar los pesos del modelo base en cuantizaciones compatibles con el motor `ggk`, un runtime de difusion que permite ejecutar el pipeline completo (modelo de difusion, codificador de texto, VAE y upsampler de prompt) en hardware de consumo.
 
-La relevancia de esta publicacion es practica: la model card demuestra que el modelo puede ejecutarse en equipos con VRAM insuficiente mediante `--offload-to-cpu`, usando un scheduler de 6 pasos con `cfg-scale 1` y sigmas predefinidos. Esto lo situa en el terreno de la generacion de imagenes de alta calidad ejecutable en hardware de consumo, algo poco habitual en modelos de esta escala.
+El modelo base MiniMax-H3-Image es un modelo de difusion texto-a-imagen con capacidad de edicion de imagenes por instruccion. El repositorio incluye el modelo de difusion podado y cuantizado (`minimax_h3_image_pruned-nvfp4.gguf`), el VAE en FP16 (`minimax_h3_image_vae_fp16-f16.gguf`) y depende de un modelo de lenguaje externo como codificador de texto: por defecto Qwen3-VL de 32B en cuantizacion Q2_K_M, aunque la model card documenta alternativas de 4B y 9B con adaptadores y `mmproj` para vision.
 
-No obstante, la informacion disponible es muy limitada: no se especifican licencia, idiomas soportados, pipeline ni resultados de benchmarks. La model card se limita a dos ejemplos de uso (generacion texto-a-imagen y edicion de imagen) sin documentar arquitectura, datos de entrenamiento ni evaluaciones.
+La relevancia practica del repositorio es que reduce el coste de inferencia de un pipeline de imagen de gran tamano hasta el punto de que, segun el autor, puede ejecutarse con menos de 6 GB de VRAM mediante streaming de residencia automatica. El recuento de parametros reportado en safetensors es de 20.113.670.232, correspondiente al conjunto del repositorio, no a un unico transformer.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion con LLM auxiliar y VAE, segun los comandos de la model card) |
-| Parametros totales | 20.113.670.232 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | modelo de difusion (texto-a-imagen e imagen-a-imagen) con codificador de texto LLM externo y VAE |
+| Parametros totales | 20.113.670.232 (reportado en safetensors, agregado del repo) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (se mencionan variantes int8 para el modelo de difusion y q2_k_m para el LLM auxiliar) |
+| Tipos de cuantizacion | NVFP4 (modelo de difusion podado), Q2_K_M (LLM de 32B), Q4_K_M (LLM de 4B y 9B), FP16/F16 (VAE, mmproj y adaptador), W4A8 (variante `p-h3-image_w4a8.safetensors`), int8_convrot (soportado por ggk) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF, safetensors (el repositorio declara parametros en safetensors y distribuye ficheros GGUF) |
+| Formato de pesos | GGUF (principal), safetensors (variante W4A8) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base MiniMax-H3-Image. Los comandos de ejemplo de la model card revelan una estructura de tres componentes: un modelo de difusion (`minimax_h3_image_pruned_int8_convrot.safetensors`), un LLM auxiliar en GGUF (`qwen3vl_32b_minimax_h3-q2_k_m.gguf`) y un VAE (`minimax_h3_image_vae_fp16-f16.gguf`). El sufijo `convrot` sugiere algun tipo de transformacion de convolucion rotada, y `pruned` indica que el modelo de difusion ha sido podado antes de la cuantizacion a int8.
+El repositorio no contiene un transformer autorregresivo, sino los artefactos de un pipeline de difusion. El componente central es `minimax_h3_image_pruned-nvfp4.gguf`, un modelo de difusion podado y cuantizado a NVFP4 que genera la imagen a partir de latentes. Junto a el se distribuye `minimax_h3_image_vae_fp16-f16.gguf`, el autoencoder variacional que decodifica los latentes a pixeles en precision FP16.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal. El uso de un scheduler de 6 pasos con sigmas explicitos (`1.0, 0.9675..., 0.8875..., 0.75, 0.5327..., 0.2320..., 0.0`) apunta a un modelo de difusion destilado o de muestreo rapido, pero esto es una inferencia a partir de los comandos, no un dato confirmado.
+El condicionamiento textual no lo realiza el propio modelo de difusion, sino un LLM externo que actua como codificador: la configuracion por defecto usa `qwen3vl_32b_minimax_h3-q2_k_m.gguf`, un Qwen3-VL de 32B cuantizado a Q2_K_M. La model card documenta dos vias alternativas: sustituir el 32B por un Qwen3-VL de 4B con un adaptador especifico (`qwen3vl_4b_adapter-f16.gguf`), o anadir un upsampler de prompt independiente de 9B (`qwen3.5-9b-q4_k_m.gguf`) o de 4B (`qwen3vl-4b-it-q4_k_m.gguf`), con soporte de vision mediante `mmproj` en FP16. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base uso RLHF o DPO.
+
+La innovacion tecnica destacable es el motor `ggk`: soporta atencion con Flash Attention para difusion (`--diffusion-fa`), offload a CPU (`--offload-to-cpu`), un esquema de sigmas de muestreo predefinido para 6 pasos y streaming de residencia automatica para maquinas con poca VRAM. El muestreo documentado usa `--steps 6 --cfg-scale 1`, es decir, solo 6 pasos de difusion sin classifier-free guidance, lo que reduce drasticamente el coste frente a los 20-50 pasos habituales.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de descripciones textuales (texto-a-imagen), segun el ejemplo "a lovely pig holding a sign says GGUF".
-- Edicion de imagenes existentes mediante instrucciones en lenguaje natural, segun el ejemplo "Edit Picture 1. Put a pair of black sunglasses on the sheep, keep everything else unchanged."
-- Ejecucion con offload a CPU (`--offload-to-cpu`), lo que permite inferencia en equipos con VRAM limitada.
-- Uso de atencion flash para difusion (`--diffusion-fa`), orientado a reducir el consumo de memoria durante la generacion.
-- Muestreo rapido con 6 pasos y `cfg-scale 1`, lo que sugiere un modo de inferencia de baja latencia.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision adicional, audio ni modo thinking.
-- No se especifican capacidades multilingues.
+- Generacion de imagenes a partir de texto (text-to-image) con prompts descriptivos.
+- Edicion de imagenes por instruccion en lenguaje natural, preservando el resto de la escena (por ejemplo, anadir gafas de sol a un sujeto sin modificar el entorno).
+- Condicionamiento multimodal: el codificador Qwen3-VL permite procesar la imagen de entrada junto con la instruccion de edicion.
+- Mejora o expansion de prompt (prompt upsampling) mediante un LLM auxiliar de 4B o 9B, con variante con vision.
+- Sustitucion del codificador de 32B por uno de 4B con adaptador, reduciendo requisitos de memoria.
+- Ejecucion con streaming de residencia automatica en GPUs con menos de 6 GB de VRAM.
+- Soporte de formatos int8_convrot y W4A8 en el motor ggk.
+- No se documenta soporte de tool calling, agentes, audio ni modo thinking; son capacidades no aplicables a un modelo de difusion.
 
 ## Casos de uso
 
-- Generacion de ilustraciones para prototipado rapido: un desarrollador puede lanzar el comando de la model card con un prompt descriptivo y obtener una imagen en 6 pasos, lo que resulta adecuado para iterar sobre conceptos visuales sin depender de servicios en la nube.
-- Edicion de imagenes en flujos de diseno: la capacidad de edicion condicionada por texto ("pon gafas de sol al personaje, deja el resto igual") permite modificar assets existentes sin herramientas de retoque manual, util para ajustes rapidos en produccion de contenido.
-- Ejecucion en estaciones de trabajo sin GPU de gama alta: gracias a `--offload-to-cpu`, el modelo puede correr en equipos con VRAM insuficiente, lo que lo hace viable para investigadores con hardware limitado que necesiten generar imagenes localmente.
-- Automatizacion de variaciones de imagen en pipelines de marketing: integrado en un script, el modelo puede generar multiples variantes de un mismo prompt (por ejemplo, distintos productos o escenarios) para pruebas A/B de creatividades.
-- Generacion de material visual para documentacion tecnica: el modelo puede producir diagramas o ilustraciones conceptuales a partir de descripciones textuales, reduciendo la dependencia de bancos de imagenes.
-- Investigacion en cuantizacion de modelos de difusion: el repositorio sirve como referencia para estudiar el impacto de la poda y la cuantizacion int8/q2_k_m en la calidad de generacion de un modelo de 20B parametros.
+- Generacion de ilustraciones para prototipado de producto: con 6 pasos y cfg-scale 1, el pipeline produce imagenes en una sola pasada rapida, adecuado para iterar sobre conceptos visuales antes de encargar arte final.
+- Edicion de imagenes en flujo de trabajo fotografico: la capacidad de imagen-a-imagen con instruccion permite retoques localizados (anadir o quitar objetos, cambiar accesorios) sin herramientas de mascaras manuales.
+- Despliegue en estaciones de trabajo con GPU de gama baja: el streaming de residencia automatica y el offload a CPU permiten ejecutar el pipeline en equipos con menos de 6 GB de VRAM, ampliando el acceso frente a los modelos de difusion que exigen 24 GB o mas.
+- Automatizacion de variantes creativas para marketing: el upsampler de prompt de 4B o 9B reescribe una idea breve en un prompt detallado, lo que permite generar lotes de imagenes coherentes a partir de una sola linea de entrada.
+- Integracion en pipelines de CI o scripts por lotes: al ser un binario CLI (`ggk`) con argumentos deterministas (rutas de modelo, sigmas, pasos), se puede orquestar desde scripts para generar conjuntos de imagenes de prueba en cada build.
+- Investigacion sobre cuantizacion de modelos de difusion: la convivencia de NVFP4, W4A8, int8_convrot y Q2_K_M en un mismo repositorio permite comparar calidad y consumo de memoria entre esquemas sobre el mismo modelo base.
+- Edicion asistida por vision: con `--prompt-upsampler-vision` y `mmproj`, el sistema puede interpretar la imagen de entrada para reformular la instruccion de edicion antes de aplicarla.
 
 ## Benchmarks y rendimiento
 
@@ -52,28 +56,30 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. El repositorio ocupa 12,6 GB, y la model card indica que el modelo funciona "incluso sin suficiente VRAM" mediante `--offload-to-cpu`, por lo que el requisito minimo depende del grado de offload configurado.
-- GPU recomendadas: no disponibles. El ejemplo de la model card esta disenado para funcionar con offload a CPU, lo que sugiere que no requiere una GPU de datacenter.
-- Compatibilidad con GPU de consumo: probable gracias al offload, pero no se especifica que modelos concretos (RTX 4090, RTX 3090, etc.) se han probado.
-- Opciones de despliegue: el unico binario mencionado es `ggk`, con flags `--diffusion-model`, `--llm`, `--vae`, `--offload-to-cpu`, `--diffusion-fa`, `--steps`, `--cfg-scale`, `--sigmas` y `-r` para imagen de referencia. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. Solo se sabe que el muestreo se realiza en 6 pasos.
+- VRAM estimada: no disponible de forma agregada. El autor afirma que el streaming de residencia automatica funciona en GPUs con menos de 6 GB de VRAM; el repo completo ocupa 25,8 GB, por lo que la VRAM necesaria depende de que componentes se mantengan residentes.
+- Componentes y su peso: modelo de difusion podado en NVFP4, VAE en FP16, LLM codificador de 32B en Q2_K_M (o alternativas de 4B/9B en Q4_K_M) y, opcionalmente, adaptador y `mmproj` en FP16.
+- GPU recomendadas: no disponible. La model card no especifica modelos concretos (A100, H100, RTX 4090, etc.).
+- Cabe en GPU de consumo: si, segun el autor, incluso en GPUs con menos de 6 GB de VRAM gracias al streaming de residencia automatica y al flag `--offload-to-cpu`.
+- Opciones de despliegue: motor `ggk` (CLI) con soporte de `--diffusion-fa`, `--offload-to-cpu`, `--prompt-upsampler` y `--llm-adapter`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible. Solo se documenta el regimen de muestreo (6 pasos, cfg-scale 1, sigmas predefinidas).
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria, y no se dispone de datos de rendimiento del modelo base MiniMax-H3-Image ni de sus alternativas.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de generacion y edicion de imagenes que permitan una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta especificada, lo que impide determinar si el uso comercial esta permitido. Es imprescindible consultar la licencia del modelo base `MiniMaxAI/MiniMax-H3-Image` antes de cualquier despliegue en produccion.
-- No se documentan sesgos conocidos, pero al ser un modelo de generacion de imagenes entrenado con datos no especificados, es probable que reproduzca sesgos presentes en sus datos de entrenamiento.
-- Riesgo de alucinacion visual: como todo modelo generativo de imagenes, puede producir contenido incoherente, artefactos o elementos no solicitados, especialmente con prompts ambiguos.
-- La cuantizacion a int8 y q2_k_m puede degradar la calidad de las imagenes respecto al modelo original en precision completa; no se han publicado comparativas de calidad.
-- No se especifican limitaciones de contexto ni de idioma; la model card solo muestra prompts en ingles.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, lo que indica que es una publicacion reciente y poco validada por la comunidad.
-- Los resultados de busqueda web proporcionados no estan relacionados con el modelo (se refieren a una plataforma de videochat llamada Chatpig), por lo que no aportan informacion tecnica adicional.
+- La licencia no esta indicada en el repositorio, por lo que no se puede confirmar si el uso comercial esta permitido; hay que consultar la licencia del modelo base MiniMaxAI/MiniMax-H3-Image antes de desplegarlo en produccion.
+- Los idiomas soportados no estan documentados; el comportamiento multilingue del codificador de texto no se puede garantizar.
+- El pipeline depende de varios artefactos externos (LLM codificador, VAE, adaptador, `mmproj`, upsampler) cuyas versiones deben coincidir; una combinacion incorrecta puede degradar la calidad o fallar.
+- La configuracion por defecto usa un LLM de 32B cuantizado a Q2_K_M, una cuantizacion agresiva que puede afectar a la fidelidad del condicionamiento textual; la alternativa de 4B con adaptador reduce memoria pero tambien capacidad.
+- El muestreo con 6 pasos y cfg-scale 1 es un regimen de baja fidelidad; puede producir artefactos o menor adherencia al prompt en escenas complejas.
+- Riesgo de sesgos y alucinacion visual: no hay informacion sobre la composicion del dataset de entrenamiento del modelo base, por lo que no se pueden evaluar sesgos demograficos o estilisticos.
+- El repositorio no declara pipeline en Hugging Face ni resultados de evaluacion, lo que limita la validacion objetiva de calidad.
+- La fecha de creacion del repositorio (2026-11-10) y el reducido numero de descargas (369) y likes (2) indican una adopcion temprana y poca validacion por parte de la comunidad.
+- Los resultados de busqueda web disponibles corresponden a servicios de videochat ajenos al modelo y no aportan informacion tecnica relevante.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/chatpig/minimax-h3-image-gguf
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
-- No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

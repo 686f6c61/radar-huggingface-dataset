@@ -2,48 +2,48 @@
 
 ## Resumen
 
-Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo base adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion, un modelo de 7.463.013.674 parametros totales segun los pesos en safetensors del repositorio original. La conversion y cuantizacion la ha realizado el mismo autor del modelo base, adityabhushannagar, empleando llama.cpp 1.0.0-dev (build 12366, commit 31953bcf7) dentro del Space BYOGGUF. El repositorio se publico el 20 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni likes.
+Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo base adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion, publicada por el mismo autor (adityabhushannagar). El repositorio no contiene pesos originales, sino conversiones desde safetensors a F16 y posteriores cuantizaciones realizadas con llama.cpp (version 1.0.0-dev, build 12366, commit 31953bcf7) dentro del Space BYOGGUF. Su proposito es facilitar la ejecucion local del modelo base en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El interes practico de esta ficha esta en el paquete de cuantizaciones: seis ficheros GGUF que van desde Q8_0 (7,43 GB) hasta Q3_K_M (4,49 GB), lo que permite ejecutar un modelo de aproximadamente 7,5 mil millones de parametros en hardware de consumo mediante llama.cpp. El modelo base combina, por el nombre, componentes de la familia Gemma 4, Nemotron y Bolt, si bien la model card no documenta la arquitectura interna, los datos de entrenamiento ni el contexto soportado.
+El modelo base, segun su denominacion, parece derivar de la familia Gemma (4B) fusionada con componentes Nemotron y Bolt, aunque la model card del repositorio GGUF no aporta detalles sobre arquitectura, datos de entrenamiento ni capacidades. El dato objetivo disponible es el recuento de parametros en safetensors: 7.463.013.674, lo que indica que el nombre "4B" del identificador no se corresponde con el tamano real de los pesos (~7,46 mil millones de parametros). Esta discrepancia es relevante para estimar requisitos de memoria.
 
-Se trata, por tanto, de una publicacion de conveniencia para inferencia local: no aporta pesos nuevos ni innovaciones de arquitectura, sino una conversion reproducible del modelo base a GGUF. La licencia declarada es Apache 2.0, heredada del modelo original. No hay informacion publicada sobre benchmarks, idiomas soportados ni capacidades especificas mas alla de la etiqueta "conversational".
+La relevancia de esta publicacion es practica: ofrece seis niveles de cuantizacion (de Q2_K a Q5_K_M) con tamanos entre 4,08 GB y 5,33 GB, lo que permite desplegar el modelo en GPUs consumer y en CPU. La licencia declarada es Apache 2.0 y el repositorio acumula 745 descargas, lo que sugiere un uso moderado pero real. No se han publicado benchmarks ni especificaciones tecnicas detalladas en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el nombre sugiere una fusion de componentes Gemma 4, Nemotron y Bolt; no documentada) |
-| Parametros totales | 7.463.013.674 |
-| Parametros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_S, Q4_K_M, Q3_K_L, Q3_K_M |
-| Idiomas soportados | No disponible |
+| Arquitectura | no disponible (el nombre sugiere base tipo Gemma con fusion de componentes Nemotron/Bolt; no confirmado) |
+| Parametros totales | 7.463.013.674 (segun safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q5_K_M (mas F16 intermedio) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
+| Formato de pesos | GGUF (generado con llama.cpp 1.0.0-dev, build 12366) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre "Gemma-4-E-4B-Nemotron-Bolt-Fusion" sugiere una fusion de pesos o de componentes procedentes de la familia Gemma 4, de NVIDIA Nemotron y de un componente denominado Bolt, pero la model card no detalla la topologia (transformer denso, MoE, hibrido), el numero de capas, las dimensiones ocultas ni el mecanismo de atencion. Tampoco se documentan los datos de entrenamiento, el volumen de tokens, la composicion del corpus ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. El identificador "Gemma-4-E-4B-Nemotron-Bolt-Fusion" sugiere una composicion o fusion de componentes de la familia Gemma con elementos denominados Nemotron y Bolt, pero la model card del repositorio GGUF no detalla si se trata de un transformer denso, un modelo MoE, una fusion de pesos (merge) o un fine-tuning. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similares.
 
-Lo unico verificable tecnicamente es el proceso de cuantizacion: conversion de los pesos originales en safetensors a F16 y posterior cuantizacion con llama.cpp 1.0.0-dev (build 12366, commit 31953bcf7) en el Space BYOGGUF. No se indican metodos de calibracion especificos ni se documentan perdidas de calidad por cuantizacion. Cualquier afirmacion sobre innovaciones tecnicas del modelo base (atencion lineal, decodificacion especulativa, etc.) careceria de respaldo en la informacion disponible.
+Lo unico verificable es el proceso de cuantizacion: conversion de safetensors a F16 y posterior cuantizacion con llama.cpp en el Space BYOGGUF, con seis variantes K-quant. El recuento de parametros (7,46 mil millones) es el unico dato estructural fiable y contradice la etiqueta "4B" del nombre, por lo que conviene tratarlo como un modelo de ~7,5B a efectos de memoria y rendimiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la unica etiqueta funcional declarada es "conversational", lo que indica un uso previsto de dialogo multi-turno.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta "endpoints_compatible", lo que sugiere que puede servirse a traves de la infraestructura de inferencia de Hugging Face.
-- Ejecucion local con llama.cpp: los ficheros GGUF permiten inferencia en CPU y GPU mediante llama-server, llama-cli y herramientas derivadas.
-- Capacidades de razonamiento, codigo, matematicas, vision, audio o tool calling: no disponibles en la documentacion.
-- Soporte multilingue: no disponible; no se declara ninguna lista de idiomas.
-- Modo thinking o razonamiento extendido: no disponible.
+- Generacion de texto conversacional: el tag `conversational` del repositorio indica uso previsto para dialogos multi-turno, aunque no se detallan capacidades especificas.
+- Compatibilidad con llama.cpp: los pesos GGUF permiten inferencia local con `llama-server`, `llama-cli` y herramientas derivadas.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse mediante APIs compatibles con el formato de Hugging Face Endpoints.
+- Capacidades de razonamiento, codigo, matematicas, vision, audio o tool calling: no disponibles en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Capacidades multilingues: no disponibles (no se declaran idiomas).
 
 ## Casos de uso
 
-- Prototipado de chatbots en local: con el fichero Q4_K_M (4,94 GB) se puede levantar un servidor compatible con la API de OpenAI mediante `llama-server -hf adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF:Q4_K_M` y probar flujos conversacionales sin depender de servicios en la nube.
-- Evaluacion de modelos fusionados: investigadores interesados en el efecto de las fusiones de pesos pueden comparar las respuestas del modelo base en safetensors frente a las versiones cuantizadas Q8_0 y Q4_K_M para medir la degradacion introducida por la cuantizacion.
-- Despliegue en estaciones de trabajo sin GPU dedicada: las variantes Q3_K_M (4,49 GB) y Q3_K_L (4,65 GB) permiten inferencia en CPU con RAM modesta, util para entornos de desarrollo o demos offline.
-- Integracion en aplicaciones de escritorio: al ser GGUF, el modelo puede embeberse en herramientas tipo Ollama o interfaces graficas basadas en llama.cpp para asistentes locales con privacidad de datos.
-- Pruebas de regresion de pipelines de cuantizacion: el repositorio sirve como caso de prueba reproducible del Space BYOGGUF y de la build concreta de llama.cpp empleada.
-- Experimentacion educativa: para cursos o talleres sobre cuantizacion de modelos, los seis niveles disponibles permiten ilustrar el compromiso entre tamano en disco y calidad de salida.
+- Prototipado local de asistentes conversacionales: con la variante Q4_K_S (4,82 GB) el modelo cabe en GPUs consumer de 8 GB y permite iterar sobre prompts y flujos de dialogo sin depender de APIs externas.
+- Despliegue en estaciones de trabajo sin GPU dedicada: la variante Q2_K (4,08 GB) puede ejecutarse en CPU con llama.cpp, adecuada para pruebas de integracion o demos internas con latencia moderada.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece seis niveles K-quant del mismo modelo, lo que permite medir la degradacion de calidad frente al ahorro de memoria en un pipeline propio.
+- Servicio de chat ligero en entornos con requisitos de privacidad: al ejecutarse en local mediante `llama-server`, los datos no salen del equipo, lo que encaja en escenarios con datos sensibles.
+- Integracion en aplicaciones de escritorio o CLI: el formato GGUF y la licencia Apache 2.0 facilitan embeber el modelo en herramientas distribuidas a terceros.
+- Fines educativos y de investigacion: util para estudiar el efecto de la cuantizacion K-quant en modelos de ~7,5B y para reproducir experimentos con llama.cpp en hardware modesto.
 
 ## Benchmarks y rendimiento
 
@@ -51,50 +51,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (incluye pesos y overhead de contexto variable):
-  - Q8_0: aproximadamente 8-9 GB.
-  - Q6_K: aproximadamente 6,5-7,5 GB.
-  - Q5_K_S: aproximadamente 6-7 GB.
-  - Q4_K_M: aproximadamente 5,5-6,5 GB.
-  - Q3_K_L: aproximadamente 5-6 GB.
-  - Q3_K_M: aproximadamente 5-5,5 GB.
-- GPU recomendadas: no disponibles en la documentacion. Por tamano, una RTX 4090 (24 GB) o RTX 4080 (16 GB) alojan comodamente cualquier variante; una RTX 4060 Ti de 16 GB o una RTX 3060 de 12 GB cubren Q4_K_M y superiores con contexto moderado.
-- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas para las variantes Q4_K_M y Q3; las variantes Q6_K y Q8_0 requieren 12-16 GB para operar con comodidad.
-- Opciones de despliegue: llama.cpp (llama-server, llama-cli), y por compatibilidad de formato, herramientas derivadas como Ollama, LM Studio o text-generation-webui. El autor menciona ejecucion en GPU Blackwell a traves del Space BYOGGUF.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K: ~4,1 GB de pesos; ~5-6 GB en total con contexto moderado.
+  - Q3_K_S / Q3_K_M / Q3_K_L: ~4,3-4,7 GB de pesos; ~5,5-7 GB en total.
+  - Q4_K_S: ~4,8 GB de pesos; ~6-7,5 GB en total.
+  - Q5_K_M: ~5,3 GB de pesos; ~7-8,5 GB en total.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090; en el ambito profesional, A100 o H100 si se busca mayor throughput o contextos largos.
+- Cabe en GPU consumer: si, en tarjetas con 8 GB o mas para Q4_K_S y Q5_K_M; Q2_K y Q3 pueden caber en 6 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), Ollama (importando el GGUF), y cualquier runtime compatible con GGUF. El autor menciona ejecucion en GPUs Blackwell a traves del Space BYOGGUF.
+- Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo base ni de sus cuantizaciones, por lo que la comparacion se limita a parametros y formato. Se comparan variantes del mismo modelo y el modelo base en safetensors.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Gemma-4-E-4B-Nemotron-Bolt-Fusion (base) | 7.463.013.674 | No disponible | safetensors | Apache 2.0 | Hugging Face |
-| Este repositorio (Q8_0) | 7.463.013.674 | No disponible | GGUF | Apache 2.0 | Hugging Face |
-| Este repositorio (Q4_K_M) | 7.463.013.674 | No disponible | GGUF | Apache 2.0 | Hugging Face |
-| Este repositorio (Q3_K_M) | 7.463.013.674 | No disponible | GGUF | Apache 2.0 | Hugging Face |
+| Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF (este) | 7,46B (segun safetensors) | no disponible | Apache 2.0 | GGUF (Q2_K a Q5_K_M) | Cuantizaciones de un modelo base no documentado; sin benchmarks |
+| Gemma 2 9B (referencia de familia) | 9B | 8K | Gemma Terms | safetensors, GGUF | Modelo oficial de Google con documentacion y benchmarks publicos |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Amplia disponibilidad de cuantizaciones y soporte de tool calling |
+| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | safetensors, GGUF | Referencia Apache 2.0 de tamano similar, con benchmarks publicos |
 
-No se han identificado en la informacion proporcionada modelos alternativos comparables de la misma categoria con datos verificables.
+La comparativa es orientativa: el modelo de esta ficha no publica contexto, idiomas ni resultados, por lo que la eleccion frente a alternativas consolidadas exige evaluacion empirica propia.
 
 ## Limitaciones y advertencias
 
-- Ausencia de documentacion: la model card no describe arquitectura, datos de entrenamiento, contexto, idiomas ni capacidades, lo que impide evaluar su idoneidad para produccion.
-- Cero traccion verificable: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso o validacion por parte de la comunidad.
-- Riesgo de alucinacion: no cuantificado; sin benchmarks ni evaluaciones publicadas no puede estimarse la fiabilidad de las respuestas.
-- Degradacion por cuantizacion: las variantes Q3_K_M y Q3_K_L, con 4,49 y 4,65 GB respectivamente, implican una perdida de precision mayor que Q6_K o Q8_0; no se han publicado mediciones de esa degradacion.
-- Procedencia del modelo base: el nombre sugiere una fusion de pesos de terceros (Gemma, Nemotron, Bolt) sin que se detalle la composicion ni los terminos de las licencias de origen; conviene verificar la model card original antes de un uso comercial.
-- Licencia: Apache 2.0 declarada, lo que en principio permite uso comercial, pero la cadena de licencias de los componentes fusionados no esta documentada.
-- Idiomas: sin lista declarada; no debe asumirse un rendimiento multilingue solido.
-- Fecha de publicacion futura (2026-11-20) y autor unico sin historial verificable en la informacion disponible: tratar con cautela en entornos de produccion.
+- Ausencia total de documentacion tecnica: no se especifican arquitectura, contexto, idiomas ni datos de entrenamiento, lo que dificulta evaluar su idoneidad para produccion.
+- Discrepancia de nombre y tamano: el identificador indica "4B" pero los safetensors suman 7,46B parametros; conviene verificar el modelo base antes de dimensionar infraestructura.
+- Riesgo de alucinacion: sin benchmarks ni evaluaciones publicadas, no hay evidencia sobre la fiabilidad factual del modelo.
+- Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no es posible anticipar sesgos de genero, idioma, cultura o dominio.
+- Perdida de calidad por cuantizacion: las variantes Q2_K y Q3 pueden degradar el rendimiento frente a F16; se recomienda Q5_K_M o Q4_K_S para uso sensible a calidad.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base declara la misma licencia sin aclarar la procedencia de los componentes fusionados (Gemma, Nemotron, Bolt), lo que conviene revisar en el repositorio original antes de un despliegue comercial.
+- Madurez: repositorio creado y actualizado el mismo dia (2026-11-20), con 1 like y 745 descargas; no hay garantia de mantenimiento ni de soporte.
+- Idiomas: no declarados; el rendimiento en castellano es incierto.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF
 - Modelo base: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion
-- Space BYOGGUF utilizado para la conversion: https://huggingface.co/spaces/juiceb0xc0de/BYOGGUF
-- Fichero Q8_0: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF/blob/main/Gemma-4-E-4B-Nemotron-Bolt-Fusion-Q8_0.gguf
-- Fichero Q6_K: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF/blob/main/Gemma-4-E-4B-Nemotron-Bolt-Fusion-Q6_K.gguf
-- Fichero Q5_K_S: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF/blob/main/Gemma-4-E-4B-Nemotron-Bolt-Fusion-Q5_K_S.gguf
-- Fichero Q4_K_M: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF/blob/main/Gemma-4-E-4B-Nemotron-Bolt-Fusion-Q4_K_M.gguf
-- Fichero Q3_K_L: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF/blob/main/Gemma-4-E-4B-Nemotron-Bolt-Fusion-Q3_K_L.gguf
-- Fichero Q3_K_M: https://huggingface.co/adityabhushannagar/Gemma-4-E-4B-Nemotron-Bolt-Fusion-GGUF/blob/main/Gemma-4-E-4B-Nemotron-Bolt-Fusion-Q3_K_M.gguf
+- Space BYOGGUF (usado para la cuantizacion): https://huggingface.co/spaces/juiceb0xc0de/BYOGGUF
+- llama.cpp: https://github.com/ggml-org/llama.cpp

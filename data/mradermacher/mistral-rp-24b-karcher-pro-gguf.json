@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Mistral-RP-24b-karcher-pro-GGUF",
+  "slug": "mradermacher-mistral-rp-24b-karcher-pro-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-RP-24b-karcher-pro-GGUF",
+  "created_at": "2025-09-04T14:02:41.000Z",
+  "updated_at": "2026-11-24T00:37:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:win10/Mistral-RP-24b-karcher-pro",
+    "base_model:quantized:win10/Mistral-RP-24b-karcher-pro",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407743328,
+  "storage_human": "161.4 GB",
+  "context_length": 131072,
+  "base_model": "win10/Mistral-RP-24b-karcher-pro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

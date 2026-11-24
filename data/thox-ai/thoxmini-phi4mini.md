@@ -2,95 +2,98 @@
 
 ## Resumen
 
-ThoxMini-Phi4Mini es un ajuste fino (fine-tuning) del modelo Microsoft Phi-4-mini-instruct, desarrollado por Thox-ai (THOX.ai). Se trata de un modelo de generación de texto de aproximadamente 3.840 millones de parámetros, orientado a edge AI y despliegue local-first. THOX entrenó un adaptador LoRA de rango 32 sobre el corpus de factualidad "Wave B" de la compañía y fusionó los pesos en-house, de modo que el modelo responde preguntas sobre productos y empresa a partir de hechos canónicos y declina responder cuando la información no ha sido publicada.
+ThoxMini-Phi4Mini es un ajuste fino (fine-tuning) del modelo Phi-4-mini-instruct de Microsoft, desarrollado por Thox-ai (THOX.ai) como asistente conversacional de referencia para su linea de dispositivos locales ThoxMini y como carga util (payload) del host en su ecosistema ThoxKey/ThoxBeam. El modelo parte de la arquitectura transformer densa de Phi-4-mini y se ha especializado mediante un adaptador LoRA (r32) entrenado sobre el corpus de factualidad "THOX Wave B", posteriormente fusionado en los pesos completos (merged weights) en bf16. El objetivo declarado es que el modelo responda preguntas sobre productos y empresa de THOX a partir de hechos canonicos, rechace responder cuando no hay informacion publicada y evite la fabricacion de datos.
 
-El modelo se presenta como el "flagship assistant" de la línea ThoxMini y como payload anfitrión para ThoxKey/ThoxBeam. La arquitectura subyacente es la de Phi-4-mini-instruct (transformer denso de la familia Phi-3/Phi-4), con licencia MIT y pesos disponibles en safetensors (bf16 fusionado) y GGUF (Q4_K_M y Q8_0). El idioma declarado es únicamente inglés.
+El modelo tiene 3.836.021.760 parametros (aproximadamente 3,8B) y se distribuye en formato safetensors (dos shards, ~7,7 GB en bf16) y en cuantizaciones GGUF Q4_K_M (~2,5 GB) y Q8_0 (~4,1 GB), ademas de un Modelfile para Ollama. La licencia es MIT y el unico idioma declarado es el ingles. Su relevancia actual radica en el enfoque "local-first" y "edge-ai": un modelo de ~3,8B pensado para ejecutarse en hardware de consumo o en dispositivos dedicados, con pesos abiertos y acceso publico sin gating.
 
-Es relevante por su enfoque en control de alucinaciones mediante ajuste sobre un corpus factual propietario, su licencia permisiva (MIT) y su distribución lista para Ollama y despliegue en hardware modesto. No obstante, el propio autor indica que el estado del artefacto es "baseline establecido, no promocionado": la sonda flagship de 6 preguntas solo pasa 3.
+El autor es explicito sobre el estado del modelo: "BASELINE ESTABLISHED — NOT PROMOTED". Supera una bateria de 49 preguntas (GATE49) con 47/49 aciertos, empatando con el mejor resultado de su flota, pero falla una prueba adicional de 6 prompts (flagship probe) con 3/6, por lo que no se considera promocionado a produccion general. Esta ficha recoge esa advertencia de forma literal, ya que condiciona su uso en entornos reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base: microsoft/Phi-4-mini-instruct) |
+| Arquitectura | Transformer denso (Phi-4-mini-instruct de Microsoft), ajuste fino LoRA r32 fusionado |
 | Parametros totales | 3.836.021.760 (~3,8B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | bf16 (safetensors), Q8_0 (GGUF), Q4_K_M (GGUF) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Phi-4-mini-instruct; no confirmada en la model card) |
+| Tipos de cuantizacion | bf16 (safetensors), GGUF Q4_K_M, GGUF Q8_0 |
 | Idiomas soportados | en (ingles) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (2 shards, bf16 fusionado) y GGUF |
+| Formato de pesos | safetensors (2 shards), GGUF (Q4_K_M, Q8_0), Modelfile para Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Microsoft Phi-4-mini-instruct, un transformer denso de la familia Phi. THOX aplicó un ajuste fino supervisado (SFT) mediante un adaptador LoRA de rango 32 sobre el dataset propietario `Thox-ai/thox-factory-sft-v5`, correspondiente al corpus de factualidad "Wave B" de la compañía. Posteriormente fusionó el adaptador con los pesos base en-house, generando el build de pesos completos que se publica en este repositorio (el repositorio fuente de pesos fusionados, `Thox-ai/ThoxMini-Phi4Mini-Merged`, se conserva como registro de build).
+El modelo hereda la arquitectura transformer densa de microsoft/Phi-4-mini-instruct. Sobre esa base, THOX entreno un adaptador LoRA con rango 32 (r32) utilizando el dataset propietario "Thox-ai/thox-factory-sft-v5", descrito como corpus de factualidad "THOX Wave B". Posteriormente, el adaptador se fusiono en los pesos completos en bf16 (merged weights) y se publico como build independiente; el repositorio de origen del merge (Thox-ai/ThoxMini-Phi4Mini-Merged) se conserva como registro de construccion. El entrenamiento es de tipo SFT (supervised fine-tuning), segun las etiquetas del repositorio; no se menciona RLHF ni DPO en la informacion disponible.
 
-El objetivo del ajuste es que el modelo responda preguntas sobre productos y empresa de THOX a partir de hechos canónicos, decline lo que la compañía no ha publicado y se detenga en lugar de divagar hacia la fabricación. La configuración desplegada incluye, además del adaptador fusionado, un system prompt de hechos de dispositivo ("grounded device-facts system prompt"), y el autor indica que el modelo nunca se despliega "en crudo". No se especifica en la información disponible el número de tokens de entrenamiento ni la composición detallada del dataset, ni si hubo etapas de RLHF o DPO.
+La innovacion tecnica declarada no es arquitectonica sino de comportamiento: el modelo se disena para "responder desde hechos canonicos, declinar lo no publicado y detenerse en lugar de divagar hacia la fabricacion". La configuracion desplegada incluye un system prompt de hechos de dispositivo (grounded device-facts system prompt) y se distribuye junto a un Modelfile de Ollama que refleja esa configuracion. No se especifican en la model card el numero de tokens de entrenamiento, la composicion detallada del dataset ni si hubo tecnicas como decodificacion especulativa o atencion lineal. El autor indica que Phi-4-mini gano una reevaluacion interna del 2026-10-28 (thinking-off) en completado de tareas y enrutamiento de herramientas frente a otras alternativas.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, orientada a asistencia de producto.
-- Respuesta a preguntas factuales sobre productos y empresa de THOX a partir de un corpus canónico.
-- Declinación controlada: el modelo está ajustado para rechazar responder sobre información no publicada.
-- Razonamiento multi-turno y conversacional (heredado de Phi-4-mini-instruct).
-- Enrutamiento de herramientas (tool routing): el autor menciona que Phi-4-mini ganó la evaluación de THOX en "task completion and tool routing".
-- Capacidad de ejecución en edge y local-first, con variantes GGUF para Ollama.
-- No se documentan capacidades de visión, audio ni modo "thinking" en la información disponible.
+- Generacion de texto conversacional en ingles, orientada a asistencia multi-turno.
+- Respuesta factual sobre productos y empresa de THOX a partir de un corpus canonico, con rechazo explicito de lo no publicado.
+- Enrutamiento de herramientas (tool routing): el autor menciona que el modelo gano la reevaluacion en esta tarea, lo que sugiere soporte de function calling en la configuracion desplegada.
+- Comportamiento de "detencion" ante incertidumbre, disenado para reducir la fabricacion de datos.
+- Capacidades heredadas de Phi-4-mini-instruct (razonamiento, matematicas, codigo) presentes en la base, aunque no se documentan especificamente para este ajuste.
+- Soporte de despliegue local: GGUF para llama.cpp/Ollama y safetensors para transformers.
+- No se documentan capacidades de vision, audio ni modo "thinking" en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de atención al cliente sobre catálogo propio: el ajuste sobre un corpus factual cerrado permite responder consultas de producto sin inventar especificaciones, declinando lo no publicado. Adecuado para soporte de primer nivel con control de alucinación.
-- Base para agentes locales en dispositivos de borde: al ser un modelo de ~3,8B con GGUF Q4_K_M de ~2,5 GB, puede ejecutarse en hardware de consumo y servir como motor conversacional en despliegues local-first.
-- Enrutamiento de herramientas en flujos agenticos: el autor reporta que el modelo base ganó la evaluación interna de tool routing, por lo que puede emplearse para decidir qué función invocar en pipelines de automatización.
-- Payload anfitrión en arquitecturas mesh: en el esquema ThoxKey/ThoxBeam, el host ejecuta este modelo y sirve al dispositivo cliente, lo que permite centralizar la inferencia en un equipo con más recursos.
-- Sustituto de Phi-4-mini-instruct en aplicaciones que requieran respuestas ancladas a un dominio factual concreto, manteniendo la licencia MIT para uso comercial.
-- Prototipado rápido con Ollama: los GGUF Q4_K_M y Q8_0 y el Modelfile incluido permiten levantar el modelo con un único comando para pruebas de integración.
+- Asistencia al cliente sobre productos THOX: el modelo esta entrenado para responder con hechos canonicos sobre la linea ThoxMini y declinar lo no publicado, lo que lo hace adecuado para un bot de soporte de primer nivel donde la precision factual importa mas que la creatividad.
+- Despliegue en dispositivos edge y hardware de consumo: con ~3,8B parametros y una cuantizacion Q4_K_M de ~2,5 GB, puede ejecutarse en equipos con recursos limitados o en la propia caja ThoxMini, manteniendo los datos en la red local.
+- Asistente local "local-first" en LAN: el ecosistema ThoxBeam sirve el modelo al dispositivo ThoxKey sin que este ejecute el modelo en local, lo que permite un asistente privado que funciona offline tras el emparejamiento.
+- Enrutamiento de herramientas en pipelines de agentes: el autor reporta buen rendimiento en tool routing, por lo que puede usarse como capa de seleccion de herramientas en un agente multi-paso de dominio acotado.
+- Prototipado rapido con Ollama: el repositorio incluye un Modelfile con la configuracion desplegada, lo que permite levantar el modelo con `ollama run` y evaluar su comportamiento conversacional sin infraestructura adicional.
+- Base para ajustes de dominio en ingles: al ser un modelo MIT de ~3,8B con pesos abiertos y safetensors, sirve como punto de partida para fine-tunings verticales (soporte, documentacion interna) en entornos con presupuesto de GPU limitado.
+- Experimentacion academica con modelos pequenos: util para estudiar el efecto de SFT y merging de LoRA en la factualidad y la tasa de rechazo de un modelo de ~3,8B.
 
 ## Benchmarks y rendimiento
 
-El autor publica resultados de su evaluación interna, no de benchmarks estándar de la comunidad:
+Los unicos datos publicados por el autor son internos y no comparables con benchmarks estandar:
 
-| Evaluacion | Resultado |
-|---|---|
-| GATE49 (conjunto de desarrollo, 49 preguntas) | 47/49 (empata con el mejor de la flota) |
-| Sonda flagship (6 prompts) | 3/6 (no supera la promocion) |
+| Evaluacion | Resultado | Notas |
+|---|---|---|
+| GATE49 (49 preguntas, development set) | 47/49 | Empata con el mejor resultado de la flota THOX |
+| Flagship probe (6 prompts) | 3/6 | Insuficiente para promocion; el autor lo declara como fallo |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: en torno a 8 GB para los pesos (3,8B parámetros a 2 bytes), más overhead de contexto y KV cache.
-- VRAM estimada en Q8_0: aproximadamente 4,1 GB para los pesos (tamaño del archivo GGUF: 4.084.611.264 B).
-- VRAM estimada en Q4_K_M: aproximadamente 2,5 GB para los pesos (tamaño del archivo GGUF: 2.493.840.576 B).
-- GPU recomendadas: no especificadas por el autor. Por tamaño, cabe con holgura en RTX 4090, RTX 3090 y GPUs de 8-16 GB; en Q4_K_M puede ejecutarse incluso en GPUs de 4-6 GB o en CPU.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones publicadas, especialmente en Q4_K_M.
-- Opciones de despliegue: Ollama (soporte explícito con Modelfile incluido), llama.cpp (formato GGUF), transformers (safetensors), y por el tag `text-generation-inference` se infiere compatibilidad con TGI; vLLM no se menciona explícitamente.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: ~2,5-3 GB con GGUF Q4_K_M; ~4-5 GB con GGUF Q8_0; ~8 GB con safetensors en bf16 (pesos ~7,7 GB mas overhead de activaciones y KV cache).
+- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060/4060, RTX 4070/4090) para bf16; GPUs con 4-6 GB pueden ejecutar Q4_K_M. Para despliegue servidor, A100/H100 no son necesarias por el tamano, pero permiten mayor throughput con vLLM/TGI.
+- Cabe en GPU consumer: si, en la mayoria de GPUs con 6-8 GB o mas, especialmente con cuantizacion GGUF.
+- Opciones de despliegue: Ollama (Modelfile incluido), llama.cpp (GGUF), transformers (safetensors), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`), vLLM (compatible con arquitectura Phi-3/Phi-4, aunque no confirmado explicitamente en la card).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| ThoxMini-Phi4Mini | ~3,8B | no disponible | MIT | Hugging Face, GGUF, Ollama | Ajuste factual propietario; estado baseline no promocionado |
-| microsoft/Phi-4-mini-instruct | ~3,8B | no disponible | MIT | Hugging Face | Modelo base; capacidades generales sin anclaje factual de THOX |
-| Modelos de ~3-4B de la familia Llama/Qwen | no disponible | no disponible | variable | Hugging Face | Alternativas de tamano similar; datos no verificados en esta ficha |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| ThoxMini-Phi4Mini | ~3,8B | no disponible | MIT | Ajuste SFT de dominio THOX; estado "not promoted" segun el autor |
+| microsoft/Phi-4-mini-instruct | ~3,8B | no disponible en esta ficha | MIT | Modelo base; capacidades generales de razonamiento, matematicas y codigo |
+| Qwen2.5-3B-Instruct | ~3,1B | no disponible en esta ficha | Apache 2.0 | Alternativa multilingue de tamano similar para despliegue local |
+| Llama-3.2-3B-Instruct | ~3,2B | no disponible en esta ficha | Llama 3.2 Community License | Alternativa popular en el segmento de ~3B para edge |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+La comparacion de rendimiento con estas alternativas no esta disponible: el autor solo publica evaluaciones internas (GATE49 y flagship probe) sin resultados de benchmarks publicos que permitan una comparacion directa.
 
 ## Limitaciones y advertencias
 
-- Estado del artefacto: el autor declara explícitamente "BASELINE ESTABLISHED — NOT PROMOTED"; la sonda flagship solo pasa 3 de 6 prompts, por lo que no debe tratarse como un modelo promocionado ni validado para producción crítica.
-- Idioma: solo inglés declarado; no hay soporte multilingüe documentado.
-- Especialización estrecha: el ajuste está orientado a hechos de producto y empresa de THOX; fuera de ese dominio, su comportamiento puede degradarse respecto al modelo base.
-- Riesgo de alucinación: aunque el ajuste busca reducirla mediante declinación, persiste el riesgo inherente a los modelos generativos; el autor recomienda desplegarlo siempre con el system prompt de hechos de dispositivo, nunca "en crudo".
-- Sesgos: no se documentan evaluaciones de sesgo en la información disponible.
-- Longitud de contexto: no especificada; conviene verificar la configuración de `config.json` antes de usarlo en tareas de contexto largo.
-- Licencia MIT: permisiva para uso comercial, pero el modelo base es de Microsoft y el corpus de ajuste es propietario de THOX; conviene revisar los términos del dataset `thox-factory-sft-v5` si se redistribuye.
-- Documentación con contenido promocional y notas de fundador que no aportan datos técnicos verificables; los benchmarks publicados son internos y no reproducibles de forma independiente.
+- Estado del modelo: el propio autor lo declara "BASELINE ESTABLISHED — NOT PROMOTED", con un fallo de 3/6 en la prueba flagship probe; no debe asumirse listo para produccion general.
+- Especializacion estrecha: el ajuste esta orientado a factualidad sobre productos THOX; su comportamiento fuera de ese dominio depende del modelo base y no esta evaluado.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta documentado.
+- Riesgo de alucinacion: aunque el entrenamiento busca reducirla mediante rechazo de lo no publicado, no hay evaluacion publica de la tasa de alucinacion fuera del conjunto de desarrollo.
+- Contexto: la longitud de contexto no se confirma en la model card; conviene verificar la del modelo base antes de disenar flujos con contexto largo.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantias ni soporte; los terminos del modelo base de Microsoft deben respetarse en la medida en que apliquen.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible.
+- Dependencia de configuracion: el comportamiento desplegado incluye un system prompt especifico; usarlo sin ese prompt puede degradar la factualidad y la tasa de rechazo.
+- Trazabilidad: el repositorio de merge se conserva como registro, pero no se detallan la composicion ni el tamano del dataset de entrenamiento.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Thox-ai/ThoxMini-Phi4Mini
-- Repositorio de pesos fusionados: https://huggingface.co/Thox-ai/ThoxMini-Phi4Mini-Merged
+- Repositorio de merge: https://huggingface.co/Thox-ai/ThoxMini-Phi4Mini-Merged
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
-- Dataset de ajuste: https://huggingface.co/datasets/Thox-ai/thox-factory-sft-v5
+- Dataset de entrenamiento: https://huggingface.co/datasets/Thox-ai/thox-factory-sft-v5
+- Demo de dispositivos: https://thox.ai/#demo-callout-home_lineup
+- Campana Kickstarter: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai

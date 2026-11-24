@@ -2,97 +2,99 @@
 
 ## Resumen
 
-Ssiat 1.0 (씨앗, "semilla" en coreano) es un modelo de lenguaje causal de 254,7 millones de parametros, entrenado desde cero y exclusivamente en coreano por el desarrollador independiente MOGODIK. Su objetivo declarado no es competir en conocimiento general, sino ofrecer una base lo bastante pequena para entrenar y ejecutar chatbots de personaje en hardware de consumo: el autor afirma que una LoRA de personaje con 50-80 ejemplos se completa en 1-2 minutos en una RTX 5060 Ti de 16 GB, y que la inferencia cuantizada cabe en dispositivos como una Raspberry Pi Zero 2W o un Galaxy Watch 4.
+Ssiat 1.0 (씨앗, "semilla" en coreano) es un modelo de lenguaje causal de 254,7 millones de parámetros desarrollado por MOGODIK, entrenado desde cero y especializado exclusivamente en coreano. Su objetivo no es competir en conocimiento general, sino ofrecer una base ligera y fácilmente adaptable para la creación de chatbots de personaje en hardware de consumo: el autor reporta que un ajuste fino LoRA con 50-80 ejemplos se completa en 1-2 minutos en una GPU RTX 5060 Ti de 16 GB.
 
-El modelo se distribuye como base "en blanco": no tiene nombre, personalidad ni estilo propios, y esta pensado para ser afinado con datos de personaje antes de usarse. Emplea el formato de chat estilo ChatML (`<|im_start|>` / `<|im_end|>`) y una ventana de contexto de 1024 tokens, una limitacion deliberada coherente con su tamano y su publico objetivo (estudiantes, aficionados y desarrolladores que quieren iterar rapido sin costes de API).
+El modelo se distribuye como base sin personalidad definida (sin nombre, carácter ni estilo propios), pensado para que el desarrollador lo especialice mediante fine-tuning. La arquitectura es un transformer causal de tipo Llama con una ventana de contexto de 1024 tokens, pesos en safetensors y GGUF, y licencia Apache 2.0. El repositorio ocupa 7,7 GB e incluye varios ejemplos de personajes ya entrenados.
 
-La revision de noviembre de 2026 anadio preentrenamiento con aproximadamente 540 000 tokens de texto de sentido comun en tres epocas y un nuevo entrenamiento conversacional con dialogos cotidianos cortos, reduciendo respuestas incoherentes y la invencion de nombres propios, a costa de un mayor uso de respuestas de eco ("yo tambien"). La licencia Apache 2.0 permite uso comercial sin restricciones practicas.
+La relevancia actual del modelo reside en su enfoque *edge*: el autor afirma que, cuantizado, puede ejecutarse en dispositivos como una Raspberry Pi Zero 2W o un Galaxy Watch 4, y que en teoría basta con 256 MB de RAM y CPU para inferencia. La versión de noviembre de 2026 mejoró la coherencia conversacional mediante preentrenamiento adicional con texto plano de sentido común (unas 540 000 tokens durante 3 épocas) y un nuevo entrenamiento conversacional con diálogos cotidianos breves.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (causal-lm), etiquetado como familia llama; detalles de capas y dimensiones no disponibles |
-| Parametros totales | 254 706 688 (254,7 M) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer causal (familia Llama), entrenado desde cero |
+| Parametros totales | 254.706.688 (254,7 M) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 1024 tokens |
-| Tipos de cuantizacion | GGUF disponible en el repositorio; niveles concretos no disponibles |
-| Idiomas soportados | Coreano unicamente (ko); sin capacidad funcional en ingles |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (Transformers) y GGUF (llama.cpp) |
+| Tipos de cuantizacion | GGUF (disponible en el repositorio); niveles concretos no disponibles |
+| Idiomas soportados | Coreano exclusivamente (ko) |
+| Licencia | Apache License 2.0 |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer causal denso de 254,7 M de parametros, desarrollado "from-scratch" (sin partir de pesos de un modelo mayor) y con un tokenizador cuyo pre-tokenizer usa el fallback de GPT-2, lo que ha causado problemas de codificacion de prompts en el motor de inferencia propietario de Ollama. El preentrenamiento consta de 781 000 pasos; la model card no especifica el numero total de tokens de esa fase ni la composicion del corpus mas alla de que es coreano.
+El modelo es un transformer causal denso de 254,7 M de parámetros, etiquetado por el autor como perteneciente a la familia Llama y entrenado desde cero (*from-scratch*) en lugar de partir de un modelo preentrenado mayor. El preentrenamiento consta de 781 000 pasos según la model card. En la actualización de noviembre de 2026 se realizó un preentrenamiento adicional con aproximadamente 540 000 tokens de texto plano de sentido común durante 3 épocas, seguido de un nuevo entrenamiento conversacional con datos de diálogo cotidiano breve.
 
-Sobre esa base se aplico, en la revision de noviembre de 2026, un preentrenamiento adicional con aproximadamente 540 000 tokens de texto llano de sentido comun durante tres epocas, seguido de un nuevo entrenamiento conversacional con dialogos diarios cortos. El resultado declarado es una reduccion de respuestas fuera de contexto y de nombres inventados, un aumento de respuestas de eco y una ligera disminucion de jerga de internet; la exactitud en preguntas factuales no mejoro, porque no se amplio el volumen de conocimiento. No se documenta el uso de RLHF o DPO, ni innovaciones como decodificacion especulativa o atencion lineal. Tambien se corrigio el `eos_token_id`, que estaba mal configurado y hacia que la generacion no se detuviera al emitir el token de fin de turno usado en el entrenamiento conversacional.
+El modelo emplea el formato de chat ChatML (`<|im_start|>` / `<|im_end|>`) y un tokenizador con pre-tokenizer de tipo GPT-2 como respaldo, detalle relevante porque el motor de inferencia propio de Ollama lo procesa incorrectamente y produce respuestas degradadas; el autor recomienda usar llama.cpp directamente. No se documentan innovaciones como decodificación especulativa, atención lineal o arquitecturas híbridas SSM. Tampoco se detalla la composición del corpus de preentrenamiento ni si se aplicaron fases de RLHF o DPO; la información disponible solo menciona entrenamiento supervisado conversacional.
 
 ## Capacidades
 
-- Generacion de texto conversacional en coreano, con turnos cortos y registro coloquial.
-- Mantenimiento de personaje tras afinado: segun el autor, con 30 ejemplos se fija el tono y la personalidad, y en torno a 1000 ejemplos el personaje se sostiene de forma natural ante preguntas no vistas en el entrenamiento.
-- Coherencia de personaje en conversaciones de mas de 10 turnos, manteniendo el registro sin colapsar en repeticiones, en comparacion con modelos el doble mas grandes bajo las mismas condiciones.
-- Respuesta a preguntas de sentido comun simples y conversacion cotidiana, tras el preentrenamiento adicional de 2026-11.
-- No soporta tool calling ni function calling (no documentado).
-- No soporta razonamiento multi-paso ni uso como agente (no documentado).
-- Multilingue: no; el modelo es exclusivamente coreano y no maneja ingles.
-- Matematicas y calculo aritmetico: no; el autor lo declara explicitamente fuera de alcance.
-- Vision y audio: no disponibles.
-- Modo "thinking" o cadena de razonamiento explicita: no disponible.
+- Generación de texto conversacional en coreano, con formato multi-turno ChatML.
+- Mantenimiento de personaje: con 30 ejemplos de estilo y personalidad ya se aprecia un carácter definido; con alrededor de 1000 ejemplos el autor reporta conversaciones que se sienten humanas, incluyendo respuestas coherentes a preguntas no vistas en el entrenamiento.
+- Estabilidad en diálogos largos: según el autor, mantiene el registro más de 10 turnos sin caer en bucles, en comparación con modelos del doble de tamaño bajo las mismas condiciones.
+- Adaptabilidad mediante LoRA: el modelo base no tiene identidad propia y está diseñado para especializarse con conjuntos pequeños de datos.
+- No soporta *tool calling* ni *function calling* (no documentado).
+- No soporta razonamiento multi-paso orientado a agentes ni modo *thinking*.
+- No soporta visión, audio ni otras modalidades.
+- Capacidades multilingües nulas: no funciona en inglés según el autor.
+- No resuelve matemáticas ni cálculos.
+- El sistema de prompts de sistema es débil: el autor indica que el modelo tiende a ignorarlos y que la personalización debe hacerse por fine-tuning.
 
 ## Casos de uso
 
-- Creacion de chatbots de personaje autoalojados: el desarrollador prepara 50-80 ejemplos de dialogo con el tono y la personalidad deseados, entrena una LoRA en 1-2 minutos en una GPU de 16 GB y sirve el modelo con `llama-server`, eliminando el coste por mensaje de las APIs comerciales.
-- Prototipado rapido de personajes para juegos o narrativa interactiva: al completarse un ciclo de entrenamiento en minutos, se puede reescribir el dataset y volver a evaluar el resultado varias veces al dia, algo inviable con modelos grandes.
-- Docencia y practicas de ajuste fino: estudiantes pueden recorrer el ciclo completo (curacion de datos, LoRA, evaluacion cualitativa) en hardware asequible, con un modelo de 254,7 M que cabe en memoria de consumo.
-- Despliegue en dispositivos embebidos y wearables: con cuantizacion, el autor situa la inferencia en una Raspberry Pi Zero 2W o un Galaxy Watch 4, habilitando asistentes de personaje sin conexion ni backend.
-- Juguetes interactivos y dispositivos IoT con voz sintetizada: la ventana de 1024 tokens y el tamano reducido permiten ejecucion local en CPU con un consumo de memoria del orden de cientos de megabytes.
-- Filtro o generador de respuestas de personaje en coreano para prototipos de compania conversacional: el modelo produce turnos breves y coloquiales adecuados para pruebas de UX antes de escalar a un modelo mayor.
-- Servicio de inferencia de alto rendimiento en un solo acelerador: el autor reporta aproximadamente 470,25 tokens por segundo en una A100, suficiente para atender muchas sesiones concurrentes de un personaje concreto.
+- Chatbots de personaje en dispositivos de consumo: un desarrollador puede entrenar un personaje con 50-80 ejemplos mediante LoRA y desplegarlo localmente en una GPU de gama media, evitando costes por token de APIs comerciales.
+- Prototipado rápido de personajes: gracias a que un ajuste LoRA tarda 1-2 minutos en una RTX 5060 Ti de 16 GB, es posible iterar sobre el dataset varias veces al día y comparar resultados.
+- Despliegue en *edge*: el autor afirma que, cuantizado, el modelo puede ejecutarse en una Raspberry Pi Zero 2W o un Galaxy Watch 4, lo que permite asistentes conversacionales offline sin conectividad ni servicios en la nube.
+- Docencia y prácticas de fine-tuning: estudiantes pueden entrenar y evaluar un modelo conversacional completo con recursos mínimos, algo inviable con modelos de miles de millones de parámetros.
+- Ficción interactiva y *roleplay*: el formato ChatML y la capacidad de mantener personajes durante más de 10 turnos lo hacen adecuado para narrativa conversacional con personajes con voz propia.
+- Experimentación con datos sintéticos de diálogo en coreano: al ser un modelo pequeño y de licencia permisiva, puede usarse para generar corpus conversacionales de dominio restringido que luego se filtren manualmente.
+- Integración en aplicaciones de escritorio o móviles con llama.cpp: el autor documenta el uso de `llama-server` con GGUF, lo que facilita incrustar el modelo en herramientas locales sin dependencias de la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El unico dato de rendimiento medido que aporta el autor es el throughput de inferencia: aproximadamente 470,25 tokens por segundo en una A100. Las afirmaciones sobre mantenimiento de personaje frente a modelos el doble mas grandes son cualitativas y no van acompanadas de cifras ni de una metodologia publicada.
+No se han publicado resultados de benchmarks en la información disponible.
+
+Los únicos datos de rendimiento aportados por el autor son de throughput: aproximadamente 470,25 tokens por segundo en un acelerador A100. No se especifica la cuantización ni el lote empleados en esa medición.
 
 ## Requisitos de hardware
 
-- Inferencia en precision completa (fp32): unos 1,0 GB de pesos; en bf16/fp16, aproximadamente 0,5 GB, mas el coste de la cache KV para 1024 tokens, que es reducido.
-- Cuantizaciones GGUF de 4-8 bits: el autor afirma que el modelo puede ejecutarse con 256 MB de RAM y CPU, lo que corresponde a los niveles mas agresivos de cuantizacion.
-- GPU de consumo: cabe holgadamente en cualquier GPU con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3050, RTX 4060 y RTX 4090; no se requiere GPU de centro de datos.
-- GPU profesionales: A100 y H100 sobredimensionadas para inferencia, pero utiles para el throughput reportado de 470,25 tokens/s en A100 y para entrenamiento de LoRA a mayor escala.
-- Entrenamiento de LoRA: el autor cita 1-2 minutos por personaje con 50-80 ejemplos en una RTX 5060 Ti de 16 GB.
-- Opciones de despliegue: llama.cpp (`llama-server`, con el GGUF del repositorio), Transformers con `AutoModelForCausalLM`, y cualquier runtime compatible con GGUF. Evitar Ollama: su motor de inferencia interno mal codifica los prompts por el pre-tokenizer del modelo y produce respuestas distintas de las aprendidas o corruptas.
-- Latencia y throughput: solo se dispone del dato de A100 (aprox. 470,25 tokens/s); no hay cifras publicadas para CPU ni para GPU de consumo.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 254,7 M de parámetros, los pesos en precisión de 16 bits ocupan aproximadamente 0,5 GB, y en cuantizaciones de 4 bits alrededor de 0,15-0,2 GB, si bien estas cifras son estimaciones de cálculo y no datos publicados por el autor.
+- El autor afirma que, en teoría, el modelo funciona con 256 MB de RAM y CPU.
+- GPU recomendadas: el autor cita una RTX 5060 Ti de 16 GB para el fine-tuning LoRA (1-2 minutos por personaje con 50-80 ejemplos) y una A100 para la medición de throughput.
+- Cabe en cualquier GPU de consumo con al menos 1-2 GB de VRAM libre en cuantización; también en CPU.
+- Opciones de despliegue: llama.cpp y `llama-server` (recomendado por el autor), transformers con `AutoModelForCausalLM`, y GGUF para otros runners compatibles.
+- Advertencia de despliegue: el autor confirma que Ollama produce respuestas incorrectas o corruptas con este modelo por un fallo en el manejo del pre-tokenizer; debe evitarse o verificarse con cuidado.
+- Latencia y throughput: aproximadamente 470,25 tokens por segundo en A100 según el autor; no hay datos para otras plataformas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas. A continuacion se contrastan caracteristicas verificables con modelos de tamano y proposito proximos.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La siguiente tabla recoge únicamente características verificables de modelos pequeños de la misma categoría; los datos de los competidores se indican como no disponibles cuando no se han podido confirmar en la información proporcionada.
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Enfoque |
+| Modelo | Parámetros | Contexto | Idioma principal | Licencia | Estado |
 |---|---|---|---|---|---|
-| Ssiat 1.0 | 254,7 M | 1024 | Apache 2.0 | Solo coreano | Base para personajes en edge, entrenada desde cero |
-| Qwen2.5-0.5B | 494 M | 32 768 | Apache 2.0 | Multilingue (incluye coreano) | Modelo generalista pequeno |
-| SmolLM2-360M | 362 M | 8192 | Apache 2.0 | Principalmente ingles | Modelo generalista pequeno |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Principalmente ingles | Modelo generalista pequeno |
+| Ssiat 1.0 (MOGODIK) | 254,7 M | 1024 | Coreano | Apache 2.0 | Disponible en Hugging Face |
+| Qwen2.5-0.5B | 0,5 B | 32 768 (versión base) | Multilingüe | Apache 2.0 | Disponible en Hugging Face |
+| SmolLM2-360M | 360 M | 8192 | Inglés | Apache 2.0 | Disponible en Hugging Face |
+| Gemma 2 2B | 2 B | 8192 | Multilingüe | Gemma Terms | Disponible en Hugging Face |
 
-Ssiat 1.0 es el unico de la lista disenado explicitamente para un solo idioma y para afinado de personaje con muy pocos ejemplos, a costa de un contexto mucho menor y de ausencia total de capacidades en ingles, matematicas y conocimiento factual amplio. No se han publicado comparaciones de rendimiento con ninguno de estos modelos en la informacion disponible.
+Diferencias cualitativas: Ssiat 1.0 es el único de la lista entrenado desde cero y exclusivamente en coreano, con un contexto mucho más corto (1024 tokens) y sin capacidades multilingües ni de razonamiento general. Su ventaja declarada es la facilidad de fine-tuning para personajes y su huella mínima en hardware. Los modelos de la comparativa ofrecen mayor contexto y conocimiento general, pero requieren más recursos y no están especializados en coreano conversacional.
 
 ## Limitaciones y advertencias
 
-- Conocimiento del mundo y exactitud factual debiles: el propio autor lo presenta como el precio de la velocidad y el tamano reducido.
-- No maneja ingles ni matematicas; cualquier tarea fuera del coreano conversacional fallara.
-- Memoria de contexto limitada: 1024 tokens y dificultad reconocida para recordar hechos mencionados antes en conversaciones largas, lo que afecta a dialogos de muchos turnos con informacion acumulada.
-- Riesgo de alucinacion en preguntas factuales; el preentrenamiento de sentido comun de 2026-11 no amplio el volumen de conocimiento, solo la calidad del dialogo.
-- El modelo base no tiene personalidad: sin afinado con al menos 50 ejemplos (idealmente cientos), el personaje queda debil o inexistente.
-- Respuestas de eco ("yo tambien") mas frecuentes tras la revision de noviembre de 2026, y persistencia de jerga de internet en menor medida.
-- Sesgos: no se documentan evaluaciones de sesgo; al entrenarse solo con datos coreanos, cabe esperar sesgos culturales y linguisticos propios de ese corpus, sin cuantificacion disponible.
-- Bug conocido en Ollama por el pre-tokenizer (fallback GPT-2); usar llama.cpp directamente o un runtime que respete el tokenizador del modelo.
-- El `eos_token_id` estuvo mal configurado hasta la revision de noviembre de 2026; versiones anteriores pueden no detener la generacion al final del turno. La revision anterior esta disponible con `revision="82b8af7b1f44d8f6745ccae60508235c5cf9a802"`.
-- Licencia Apache 2.0: permite uso comercial y modificacion sin restricciones adicionales, pero el autor no ofrece garantias de calidad para produccion.
+- Conocimiento del mundo y precisión factual débiles, según el propio autor.
+- No funciona en inglés y no maneja matemáticas ni cálculos.
+- Memoria limitada de hechos previos en conversaciones largas, incluso dentro de la ventana de 1024 tokens.
+- Ignora los prompts de sistema en gran medida; la personalización debe hacerse mediante fine-tuning.
+- El modelo base no tiene identidad ni personalidad: sin fine-tuning, las respuestas son genéricas.
+- Riesgo de alucinación alto en preguntas factuales, coherente con su tamaño y su corpus de entrenamiento.
+- La versión de noviembre de 2026 aumentó las respuestas de eco del tipo "yo también" y redujo el registro de internet ("ㄹㅇ", "ㅇㅋ"), según el autor.
+- Bug corregido en `eos_token_id`: en versiones anteriores el modelo no detenía la generación al emitir el token de fin de turno. Los ejemplos de personaje del repositorio se entrenaron sobre la versión previa, accesible con la revisión `82b8af7b1f44d8f6745ccae60508235c5cf9a802`.
+- Incompatibilidad conocida con Ollama por el tratamiento del pre-tokenizer.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero no se documentan garantías ni evaluaciones de sesgo; al ser un modelo entrenado desde cero con corpus no detallado, no es posible evaluar sesgos conocidos.
+- Para producción, la ventana de 1024 tokens limita la gestión de conversaciones largas y obliga a truncar o resumir el historial.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MOGODIK/ssiat-1.0
-- Revision anterior (2026-09): https://huggingface.co/MOGODIK/ssiat-1.0/tree/82b8af7b1f44d8f6745ccae60508235c5cf9a802
-- Repositorio llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp
-- No se han encontrado en la informacion proporcionada papers, blogs tecnicos, demos ni repositorios adicionales del autor.
+- Revisión anterior (ejemplos de personaje): https://huggingface.co/MOGODIK/ssiat-1.0/tree/82b8af7b1f44d8f6745ccae60508235c5cf9a802
+- No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos fuera de la model card y el repositorio de Hugging Face.

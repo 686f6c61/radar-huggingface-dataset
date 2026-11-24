@@ -2,97 +2,103 @@
 
 ## Resumen
 
-Vox MENS Qwen3.5-9B es un adaptador QLoRA sobre el modelo base Qwen/Qwen3.5-9B, publicado por el usuario brbrainerd dentro del proyecto Vox MENS. Su propósito es especializar el modelo base en la generación y razonamiento de código para Vox, un lenguaje de programación full-stack y "AI-native" en el que tablas de base de datos, endpoints de backend, componentes reactivos de interfaz y agentes de IA tipados conviven en un único fichero `.vox` verificado por el compilador. El adaptador busca mejorar las comprobaciones reales del compilador Vox sobre prompts reservados sin degradar la precisión general en ingeniería de software.
+Vox Mens 9B es un ajuste fino (fine-tune) supervisado del modelo Qwen3.5-9B de Alibaba, desarrollado por el usuario brbrainerd y publicado bajo licencia Apache 2.0. Su propósito es especializarse en la generación y reparación de código en Vox, un lenguaje full-stack que permite definir en un único archivo tablas de base de datos, consultas y mutaciones de backend, componentes de interfaz web y flujos de trabajo que compilan a Rust y TypeScript. El modelo parte de una arquitectura transformer con Gated Delta Networks (según los tags del repositorio) y cuenta con 8.953.803.264 parámetros totales.
 
-El checkpoint etiquetado como "9B" está marcado como **not-trained** en la model card: la ejecución de entrenamiento consta en el registro del proyecto, pero los pesos del adaptador no están incluidos en este repositorio. El tamaño del repositorio es de 0.0 GB, lo que es coherente con esa ausencia de pesos. Por tanto, esta ficha describe el modelo tal y como lo declara su autor, no un artefacto descargable y ejecutable en el momento de la consulta.
+El modelo resuelve un problema concreto: al ser Vox un lenguaje más reciente que Rust o TypeScript, los modelos generalistas tienden a generar sintaxis incorrecta que no compila. Vox Mens 9B se ha entrenado con ejemplos verificados de `.vox` para que los desarrolladores puedan generar y corregir código Vox localmente en Windows, Linux o Mac, o mediante endpoints de inferencia alojados, sin depender de APIs en la nube de alto coste.
 
-La relevancia del modelo es doble: por un lado, ilustra una estrategia de especialización por tallas (4B, 9B, 27B) orientada a distintos perfiles de hardware, con el 9B apuntado a portátiles de alta memoria y estudios compactos con Apple Silicon; por otro, ejemplifica el patrón de adaptadores QLoRA publicados como artefactos ligeros sobre un modelo base grande, con licencia Apache 2.0 y un playground asociado en Hugging Face Spaces.
+La relevancia actual del modelo radica en su enfoque en un nicho específico (el lenguaje Vox) y en su tamaño de 9B, que lo sitúa en el rango de GPU de escritorio y portátiles de alta memoria. El autor declara un pass@1 del 80,77 % en su benchmark interno de generación de código (52 ítems), frente al 17,3 % del modelo base, lo que indica una mejora sustancial en la tarea objetivo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Adaptador QLoRA sobre Qwen/Qwen3.5-9B (el modelo base se describe con gated delta networks como innovación de arquitectura; la arquitectura exacta del adaptador no se detalla) |
-| Parametros totales | No disponible (el nombre indica 9B para el modelo base; el adaptador no declara recuento de parámetros) |
-| Parametros activos | No disponible |
+| Arquitectura | Transformer con Gated Delta Networks (según tags del repositorio); fine-tune del modelo base Qwen/Qwen3.5-9B |
+| Parámetros totales | 8.953.803.264 (8,95B) |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | QLoRA implica cuantización del modelo base durante el entrenamiento; los tipos concretos de cuantización para inferencia no se detallan |
-| Idiomas soportados | Inglés (en) |
+| Tipos de cuantización | No disponible (el autor menciona QLoRA durante el entrenamiento, no cuantizaciones de inferencia publicadas) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | No disponible; el repositorio no contiene los pesos del adaptador (tamaño 0.0 GB) |
+| Formato de pesos | Safetensors + PEFT (adaptadores); el autor menciona checkpoint standalone con manifiesto de verificación BLAKE3 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador QLoRA sobre Qwen/Qwen3.5-9B, con revisión del modelo base fijada en `c202236235762e1c871ad0ccb60c8ee5ba337b9a` y relación declarada `adapter`. La librería asociada es `vox`, y entre las etiquetas figuran `gated-delta-networks`, `qlora` y `candle`, lo que sugiere que el ecosistema de referencia combina la arquitectura del modelo base con herramientas de inferencia en Rust (Candle) y un pipeline propio del proyecto. No se detalla en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
+El modelo se basa en Qwen3.5-9B, un transformer de 8,95B parámetros. Los tags del repositorio indican el uso de Gated Delta Networks, un mecanismo de atención lineal recurrente que el autor asocia a la arquitectura del modelo base. El ajuste fino se realizó mediante QLoRA y RS-LoRA, según los tags, con un pico de memoria medido de 49.580 MiB durante la ejecución del entrenamiento de 9B (dato `run_summary` de la model card). Los datos de entrenamiento provienen del dataset `brbrainerd/vox-mens-data-vox-lang`, compuesto por ejemplos verificados de código Vox, y la evaluación se realizó sobre `brbrainerd/vox-mens-eval-vox-lang-bench`.
 
-El criterio de publicación declarado es exigente: antes de publicarse, el modelo debe mejorar comprobaciones reales del compilador Vox sobre prompts reservados sin perder precisión general en ingeniería de software. El dataset de evaluación asociado es `brbrainerd/vox-mens-eval-vox-lang-bench`. El estado "not-trained" indica que, aunque la ejecución de entrenamiento está registrada, los pesos del adaptador no se han subido a este repositorio, por lo que no es posible verificar el resultado de ese criterio a partir del artefacto publicado.
+El autor no detalla el número total de tokens de entrenamiento ni la composición exacta del dataset. La model card menciona que el modelo se entrena para ciclos multi-step de `state_machine` y `workflow`, con retroalimentación de errores de `vox check` hasta que los tipos se mantienen, lo que sugiere un enfoque en corrección iterativa de código. No se menciona RLHF ni DPO en la información disponible.
 
 ## Capacidades
 
-- Generación de código para el lenguaje Vox: tablas de base de datos, endpoints de backend, componentes reactivos de interfaz y agentes de IA tipados en ficheros `.vox`.
-- Razonamiento sobre tipos del compilador y verificación de restricciones del lenguaje.
-- Planificación de funcionalidades multi-fichero.
-- Conexión de esquemas de base de datos con actores.
-- Conversación y generación de texto de propósito general heredadas del modelo base Qwen3.5-9B (etiquetas `conversational` y `text-generation`).
-- Capacidades de código general (`code`) más allá del lenguaje Vox.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explícita; el dominio Vox incluye agentes tipados como concepto del lenguaje, no como capacidad declarada del modelo.
-- Capacidades multilingües: limitadas al inglés según el campo `language`.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
+- Generación de código en Vox (`.vox`): funciones, tablas, consultas, mutaciones, componentes de UI y flujos de trabajo.
+- Reparación de código Vox a partir de errores de compilación (`vox check`), con ciclos multi-step hasta que los tipos se mantienen.
+- Generación de tests en Vox (ejemplo `@test` con `assert` en la model card).
+- Razonamiento en modo thinking: el autor reporta evaluaciones de regresión en GSM8K, MATH500 y un benchmark propio `vox_think`.
+- Conversación multi-turno (tag `conversational`).
+- Soporte de tool calling / function calling: no se menciona explícitamente en la información disponible.
+- Soporte de agentes y multi-step reasoning: el modelo está orientado a ciclos multi-step de workflow y state machine, según la model card.
+- Capacidades multilingües: solo inglés declarado (`en`).
+- Capacidades especiales: modo thinking (evaluado en los benchmarks de razonamiento), integración con `vox mens serve` para servir el checkpoint de forma nativa.
 
 ## Casos de uso
 
-- Desarrollo de aplicaciones full-stack en Vox: el modelo generaría ficheros `.vox` completos que combinan esquema de base de datos, endpoints y componentes de interfaz, aprovechando que el compilador verifica la coherencia entre capas. Es adecuado porque el adaptador se entrenó (según el criterio declarado) contra comprobaciones reales del compilador.
-- Planificación de funcionalidades multi-fichero: en un portátil de alta memoria o un estudio compacto con Apple Silicon, el 9B serviría para descomponer una funcionalidad en cambios coordinados sobre varios ficheros `.vox`, una tarea que el autor sitúa explícitamente en este tamaño.
-- Conexión de esquemas de base de datos con actores: el modelo razonaría sobre los tipos del esquema y generaría el cableado hacia los actores del backend, un escenario típico del lenguaje y para el que el adaptador está especializado.
-- Asistencia en migraciones y refactorizaciones dentro del ecosistema Vox: dado que el compilador actúa como verificador, el modelo puede proponer cambios y el desarrollador validarlos con las comprobaciones del compilador, reduciendo el riesgo de romper contratos de tipos.
-- Evaluación comparativa de tallas del proyecto Vox MENS: el 9B se posiciona entre el 4B (máquinas pequeñas) y el 27B (arquitectura de repositorio completo), por lo que sirve como punto intermedio en pruebas de calidad frente a coste de hardware.
-- Prototipado en el playground: el Space `brbrainerd/vox-mens-playground` permite probar el checkpoint sin despliegue local, útil para evaluar si el modelo encaja en un flujo de trabajo antes de invertir en infraestructura.
-- Generación de código general en inglés: al estar construido sobre Qwen3.5-9B, puede emplearse en tareas de código fuera de Vox, aunque sin garantías específicas del adaptador.
+- Generación de código Vox en producción: el modelo escribe archivos `.vox` completos con tablas, consultas y componentes de UI, adecuado para equipos que adoptan Vox y necesitan asistencia de código específica del lenguaje en lugar de modelos generalistas que generan Rust o TypeScript incorrecto.
+- Reparación automática de errores de compilación: integrado en un ciclo con `vox check`, el modelo recibe el error y regenera el código hasta que compila; útil en pipelines de CI/CD para corregir fallos de tipos en archivos Vox.
+- Asistencia en el editor para desarrolladores Vox: al ejecutarse localmente con Ollama o vLLM, ofrece autocompletado y generación de funciones sin enviar código a APIs externas, lo que reduce costes y preserva la confidencialidad.
+- Generación de tests unitarios en Vox: el modelo produce funciones `@test` con aserciones (ejemplo `smoke` en la model card), útil para aumentar la cobertura en proyectos Vox.
+- Prototipado de workflows y state machines: el modelo está entrenado para ciclos multi-step de `workflow` y `state_machine`, adecuado para generar la lógica de backend y las transiciones de estado en una aplicación Vox.
+- Despliegue en endpoints de inferencia alojados: mediante Hugging Face Inference Providers (`:auto` o `:featherless-ai`) con cliente compatible con OpenAI, útil para equipos que no disponen de GPU local pero necesitan generación de código Vox.
+- Formación y documentación interna: el modelo puede generar ejemplos de código Vox para tutoriales o documentación técnica, dado su entrenamiento en ejemplos verificados del lenguaje.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El dataset de evaluación `brbrainerd/vox-mens-eval-vox-lang-bench` está referenciado, pero no se incluyen métricas numéricas en la model card ni en los metadatos proporcionados.
+Datos declarados por el autor del modelo (no verificados de forma independiente):
+
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| Generación de código Vox | Vox held-out bench (52 ítems) | pass@1 (qwen3_non_thinking_codegen_v1) | 0,8077 (80,77 %) |
+| Regresión de razonamiento (thinking) | gsm8k_think (128 ítems) | accuracy | 0,8594 (85,94 %) |
+| Regresión de razonamiento (thinking) | math500_think (128 ítems) | accuracy | 0,4453 (44,53 %) |
+| Regresión de razonamiento (thinking) | vox_think (128 ítems) | accuracy | 0,7500 (75,00 %) |
+
+La model card indica que el modelo base obtiene 9/52 (17,3 %) en el held-out bench de Vox, frente a 42/52 (80,8 %) del modelo ajustado. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K completo) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible para el adaptador, ya que los pesos no están en el repositorio. Para el modelo base de 9B, las estimaciones habituales dependerían de la cuantización, pero no se aportan cifras en la información disponible.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: el autor orienta el 9B a "portátiles de alta memoria y estudios compactos con Apple Silicon", lo que sugiere ejecución local en equipos de gama alta, pero no se especifican modelos concretos de GPU.
-- Opciones de despliegue: la librería declarada es `vox` y entre las etiquetas figura `candle`; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 8,95B parámetros, en FP16 se requieren aproximadamente 18 GB de VRAM; en cuantización de 8 bits, unos 9-10 GB; en 4 bits, unos 5-6 GB (estimaciones orientativas, no confirmadas por el autor).
+- GPU recomendadas: el autor menciona GPU de escritorio, portátiles de alta memoria y endpoints alojados; no especifica modelos concretos (A100, H100, RTX 4090).
+- ¿Cabe en GPU consumer? El autor indica que el modelo está orientado a GPU de escritorio y portátiles de alta memoria, lo que sugiere que sí es viable en GPUs consumer de gama alta, pero no se confirma qué modelos exactos.
+- Opciones de despliegue: Ollama (`ollama run hf.co/brbrainerd/vox-mens-qwen3.5-9b`), vLLM (`vllm serve brbrainerd/vox-mens-qwen3.5-9b`), Python/transformers, `vox mens serve` (servidor nativo del ecosistema Vox, puerto 11435) y Hugging Face Inference Providers.
+- Latencia y throughput estimados: no disponibles.
+- Memoria de entrenamiento: pico de QLoRA de 49.580 MiB durante el run de 9B (dato del autor).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad de pesos |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vox MENS Qwen3.5-9B | 9B (modelo base) | No disponible | Código Vox vía adaptador QLoRA | Apache 2.0 | No (estado not-trained, repo 0.0 GB) |
-| Vox MENS 4B | No disponible | No disponible | Código Vox, orientado a máquinas pequeñas | No disponible | No disponible en la información proporcionada |
-| Vox MENS 27B | No disponible | No disponible | Código Vox, arquitectura de repositorio completo | No disponible | No disponible en la información proporcionada |
-| Qwen/Qwen3.5-9B | 9B | No disponible | Modelo base generalista | No disponible en la información proporcionada | Sí (modelo base referenciado) |
+| Vox Mens 9B | 8,95B | No disponible | Código Vox (fine-tune de Qwen3.5-9B) | Apache 2.0 | Hugging Face, Ollama, vLLM, `vox mens serve` |
+| Qwen/Qwen3.5-9B (base) | 9B (aprox.) | No disponible | Propósito general | No disponible en la información | Hugging Face |
+| Vox Mens 4B | No disponible | No disponible | Código Vox (variante menor) | No disponible | Mencionado por el autor |
+| Vox Mens 27B | No disponible | No disponible | Código Vox (variante mayor) | No disponible | Mencionado por el autor |
 
-La comparación se limita a las tallas del propio proyecto Vox MENS y al modelo base, que son los únicos términos de referencia presentes en la información. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
+El autor menciona explícitamente las variantes 4B y 27B de la familia Vox Mens, pero no proporciona sus especificaciones detalladas. No se dispone de datos de benchmarks comparativos con modelos de propósito general en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los pesos del adaptador no están incluidos en el repositorio (estado not-trained, tamaño 0.0 GB): el modelo no es descargable ni ejecutable tal cual desde este artefacto.
-- El criterio de calidad declarado (mejorar comprobaciones del compilador Vox sin perder precisión general) no puede verificarse sin los pesos ni sin métricas publicadas.
-- Idiomas: solo inglés declarado; no hay soporte multilingüe documentado.
-- Sesgos conocidos: no disponible en la información proporcionada; al heredar el modelo base, arrastraría los sesgos de este, que no se detallan.
-- Riesgo de alucinación: no cuantificado; en generación de código, el compilador Vox actúa como mitigación parcial, pero no se documenta su eficacia.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base Qwen3.5-9B, cuya licencia no se detalla en la información proporcionada.
-- Especialización estrecha: el adaptador está orientado al lenguaje Vox; su utilidad fuera de ese dominio depende del modelo base y no está garantizada por el adaptador.
-- Dependencia de la librería `vox` y del ecosistema del proyecto: la integración con herramientas estándar de inferencia no está documentada.
-- Fecha de creación y actualización (16 de noviembre de 2026) y ausencia de descargas o likes: el artefacto es reciente y sin validación comunitaria en el momento de la consulta.
+- Especialización estrecha: el modelo está ajustado para Vox; su rendimiento en otros lenguajes o tareas generales puede degradarse respecto al modelo base.
+- Idioma: solo se declara soporte de inglés (`en`); no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Riesgo de alucinación: como todo modelo generativo, puede producir APIs o sintaxis Vox inexistentes, especialmente en construcciones poco representadas en el dataset de entrenamiento.
+- Contexto: no se especifica la longitud de contexto soportada, lo que impide evaluar su idoneidad para archivos Vox muy grandes o conversaciones multi-turno extensas.
+- Benchmarks no verificados: los resultados de la model card están marcados como `verified: false` y provienen de conjuntos de evaluación internos del autor (52 ítems en el held-out bench, 128 ítems en las pruebas de razonamiento), por lo que deben interpretarse con cautela.
+- Licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-9B puede tener sus propias condiciones que conviene revisar antes de un despliegue en producción.
+- Dependencia del ecosistema Vox: muchas de sus capacidades (reparación con `vox check`, `vox mens serve`) requieren herramientas del ecosistema Vox, lo que limita su uso fuera de ese entorno.
+- Datos de entrenamiento no detallados: no se especifica el volumen de tokens ni la composición exacta del dataset, lo que dificulta evaluar sesgos o cobertura.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/brbrainerd/vox-mens-qwen3.5-9b
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Playground: https://huggingface.co/spaces/brbrainerd/vox-mens-playground?model=brbrainerd/vox-mens-qwen3.5-9b
-- Índice de la escalera de tallas: https://huggingface.co/brbrainerd/vox-mens-index
-- Documentación de modelos MENS: https://voxlang.org/reference/mens-models/
-- Documentación sobre cómo se generan las fichas: https://voxlang.org/reference/mens-models/#how-the-cards-are-made
-- Leyenda de estados: https://voxlang.org/reference/mens-models/#state-legend
+- Documentación de modelos Vox Mens: https://voxlang.org/reference/mens-models/
 - Lenguaje Vox: https://voxlang.org
+- Playground (Space): https://huggingface.co/spaces/brbrainerd/vox-mens-playground
 - Dataset de evaluación: https://huggingface.co/datasets/brbrainerd/vox-mens-eval-vox-lang-bench
+- Dataset de entrenamiento: https://huggingface.co/datasets/brbrainerd/vox-mens-data-vox-lang
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

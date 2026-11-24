@@ -84,7 +84,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 341,
+  "downloads_30d": 344,
   "trending_score": 0,
   "parameters": 307542544,
   "parameters_human": "307.5M",
@@ -105,31 +105,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Horizons Le parti - Édouard Philippe",
-      "url": "https://horizonsleparti.fr/",
-      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !"
-    },
-    {
-      "title": "Horizon - Ville de Meaux",
-      "url": "https://www.ville-meaux.fr/ma-ville-et-actualites/annuaire-des-associations/horizon",
-      "snippet": "Horizon 20 Rue Ampère 77100 Meaux 01 60 09 93 93 Site Internet Association humanitaire, d'entraide, sociale Directeur : M. CATE …"
-    },
-    {
-      "title": "Association ARILE I Ressourcerie Horizon | Meaux - Facebook",
-      "url": "https://www.facebook.com/ressourceriearile/",
-      "snippet": "Sep 11, 2026 · 🌱Bonne nouvelle ! 🌱 Les légumes du Jardin de Cocagne Saint-Faron seront disponibles à la Ressourcerie Horizon tous …"
-    },
-    {
-      "title": "VMware Horizon",
-      "url": "https://horizon.nvidia.com/",
-      "snippet": "You can connect to your desktop and applications by using the VMware Horizon Client or through the browser. The VMware Horizon …"
-    },
-    {
-      "title": "Écouter Horizon en direct et gratuit",
-      "url": "https://www.radio-en-ligne.fr/horizon",
-      "snippet": "Écoutez Horizon en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
-    }
-  ]
+  "sources": []
 }

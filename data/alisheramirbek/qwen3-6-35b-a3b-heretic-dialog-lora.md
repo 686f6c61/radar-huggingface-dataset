@@ -2,93 +2,93 @@
 
 ## Resumen
 
-`AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario AlisherAmirbek. No se trata de un modelo completo, sino de un delta de pesos (formato PEFT/safetensors) que debe aplicarse sobre el modelo base `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic`, a su vez una variante "uncensored/heretic" de la familia Qwen3.6 con arquitectura MoE (35B totales, 3B activos, segun la nomenclatura del identificador).
+Qwen3.6-35B-A3B-heretic-dialog-lora es un adaptador LoRA de ajuste supervisado (SFT) orientado a conversacion, publicado por el usuario AlisherAmirbek sobre el modelo base llmfan46/Qwen3.6-35B-A3B-uncensored-heretic. Se distribuye como repositorio PEFT en formato safetensors, con un tamano de repositorio de 111,9 GB, lo que sugiere que incluye pesos completos o consolidados ademas del adaptador. El pipeline declarado es text-generation y la libreria de referencia es peft.
 
-El adaptador esta orientado a conversacion: la unica documentacion sustantiva de la model card describe una actualizacion de "dialog SFT" con 996 ejemplos de entrenamiento y 100 de validacion, en la que se reescribieron 527 respuestas objetivo para anadir explicaciones, matices y ejemplos. El objetivo declarado es mejorar la calidad y profundidad de las respuestas conversacionales del modelo base, no anadir capacidades nuevas.
+El nombre del modelo indica una arquitectura de mezcla de expertos (MoE) con aproximadamente 35 000 millones de parametros totales y unos 3000 millones de parametros activos por token, aunque esta informacion no esta confirmada en la model card. El ajuste se ha realizado con QLoRA de rango 16, alpha 32 y dropout 0, sobre 1385 objetivos de entrenamiento en una unica epoca desde el modelo base fijado.
 
-Su relevancia es limitada y muy especifica: se trata de un experimento de la comunidad con 163 descargas y 1 "like" en el momento de redactar esta ficha, sin licencia declarada, sin idiomas declarados y con una model card generada a partir de la plantilla por defecto de Hugging Face en la que la mayoria de los campos figuran como "[More Information Needed]". Cualquier evaluacion rigurosa debe hacerse contra el modelo base, cuyas especificaciones no se detallan en la informacion disponible.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: la model card es una plantilla sin rellenar en la mayoria de sus secciones, no se declara licencia ni idiomas, y el autor no publica resultados de evaluacion. La unica documentacion tecnica concreta es una nota de actualizacion del entrenamiento de dialogo fechada el 6 de noviembre de 2026, centrada en preguntas de ubicacion por codigo postal.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre modelo base MoE; arquitectura del base no detallada en la informacion disponible |
-| Parametros totales | 35B en el modelo base (segun identificador); tamano del adaptador no disponible |
-| Parametros activos | 3B en el modelo base (segun identificador "A3B"); no confirmado en documentacion |
+| Arquitectura | no disponible (el nombre sugiere MoE con 35B totales y 3B activos; sin confirmar en la model card) |
+| Parametros totales | no disponible (el identificador indica 35B) |
+| Parametros activos | no disponible (el identificador indica A3B, es decir, 3B activos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible para el adaptador; el base podria cuantizarse, pero no se documenta |
+| Tipos de cuantizacion | no disponible (el entrenamiento uso QLoRA, lo que implica cuantizacion de 4 bits durante el ajuste, no necesariamente para inferencia) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (PEFT), libreria `peft` 0.19.1 |
-| Tamano del repositorio | 48,6 GB |
-| Modelo base | `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic` |
-| Framework de entrenamiento | TRL + Unsloth (segun tags) |
-| Pipeline | text-generation |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
+| Libreria | peft 0.19.1 |
+| Modelo base | llmfan46/Qwen3.6-35B-A3B-uncensored-heretic |
+| Metodo de ajuste | QLoRA, rango 16, alpha 32, dropout 0 |
+| Tamano del repositorio | 111,9 GB |
+| Descargas | 377 |
+| Likes | 1 |
 
 ## Arquitectura y entrenamiento
 
-El artefacto publicado es un adaptador LoRA, no un modelo completo. Los tags indican `peft`, `lora`, `sft`, `transformers`, `trl` y `unsloth`, lo que sugiere un entrenamiento supervisado de ajuste fino con las librerias TRL y Unsloth sobre el checkpoint `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic`. La arquitectura subyacente corresponde al modelo base (familia Qwen3.6, presumiblemente un transformer con mezcla de expertos de 35B parametros totales y 3B activos, a juzgar por el identificador), pero no se aporta ninguna especificacion tecnica verificable sobre atencion, normalizacion, tokenizador ni estrategia de enrutamiento de expertos.
+La model card no describe la arquitectura del modelo base. Por el identificador Qwen3.6-35B-A3B se deduce una familia Qwen de tercera generacion con diseno MoE de 35 000 millones de parametros totales y aproximadamente 3000 millones activos, pero no hay confirmacion documental en la informacion disponible. El adaptador es un LoRA de ajuste supervisado entrenado con TRL y Unsloth sobre el checkpoint heretic de llmfan46, que a su vez parte de una variante Qwen3.6.
 
-La unica informacion concreta sobre el entrenamiento aparece en la seccion "Dialog training update — 2026-11-02" de la model card: 996 ejemplos de entrenamiento y 100 de validacion sin modificar; de 689 objetivos elegibles no pertenecientes a HOT.com se revisaron y reescribieron 527, pasando de una longitud media de 55,4 palabras a 112,1 palabras (mediana de 110); se preservaron los 307 casos excluidos de HOT.com y el contexto privado del agente; se realizo una epoca con 249 pasos de optimizador, batch efectivo de 4 (microbatch 1, acumulacion de gradientes 4) y validacion cada 50 pasos. No se documentan hiperparametros de LoRA (rango, alpha, dropout), tasa de aprendizaje, precision numerica ni composicion del dataset. No hay evidencia de RLHF, DPO ni decodificacion especulativa.
+El entrenamiento documentado corresponde a la etapa 1 de SFT de dialogo, con 1385 objetivos de entrenamiento, una epoca desde el modelo base fijado, 347 pasos de optimizador y batch efectivo de 4 (microbatch 1 con acumulacion de 4). Se uso tasa de aprendizaje 2e-4 con schedule lineal, AdamW de 8 bits y semilla 3407. La perdida media de entrenamiento fue 1,580594 y no se ejecuto validacion, por lo que esta revision carece de perdida de validacion. La actualizacion del 6 de noviembre de 2026 anadio 46 filas nuevas centradas en preguntas de ubicacion por codigo postal, donde el usuario envia solo un numero y el modelo debe preguntar a que area se refiere.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada del modelo base y ajustada mediante SFT de dialogo.
-- Respuestas con mayor extension y explicaciones adicionales: el entrenamiento reescribio respuestas breves (media de 55,4 palabras) hacia respuestas mas desarrolladas (media de 112,1 palabras).
-- Diferenciaciones y ejemplos anadidos en las respuestas, segun la descripcion del autor.
-- Preservacion de casos de "brevedad explicita" y "evidencia limitada": el autor indica que las peticiones breves de enlaces y los casos de poca evidencia se mantienen cortos.
-- Razonamiento, codigo, matematicas, vision, tool calling, agentes y capacidades multilingues: no disponibles en la informacion proporcionada para este adaptador; dependen del modelo base y no se documentan.
-- Modo "thinking": no disponible.
-- Capacidad "uncensored": heredada del nombre del modelo base, pero sin documentacion tecnica que la respalde en esta ficha.
+- Generacion de texto conversacional multi-turno, segun el pipeline declarado text-generation y la etiqueta conversational.
+- Ajuste especifico para dialogos con preguntas de aclaracion, en particular cuando el usuario proporciona un codigo postal sin contexto adicional.
+- Capacidad de razonamiento, codigo y matematicas: no disponible en la informacion proporcionada, aunque el modelo base Qwen3.6 probablemente las soporte.
+- Soporte de tool calling o function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible, no se declaran idiomas.
+- Modo thinking, vision o audio: no disponible.
+- Al ser un adaptador sobre una variante "uncensored-heretic", se espera un comportamiento menos restrictivo en contenido sensible, aunque esto no se documenta formalmente.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales con respuestas mas explicativas: el adaptador esta entrenado especificamente para alargar y enriquecer respuestas de dialogo, por lo que encaja en bots de soporte o tutoria donde se prefieren explicaciones detalladas a respuestas telegraficas.
-- Investigacion sobre SFT de dialogo: los datos publicados (996 ejemplos, 527 reescrituras, metricas de longitud antes/despues) permiten reproducir o comparar metodologias de reescritura de objetivos en ajuste supervisado.
-- Experimentacion con modelos "uncensored" en entornos controlados: util para estudiar el comportamiento de variantes sin alineacion estricta, siempre con revision humana y filtros externos.
-- Generacion de contenido divulgativo o educativo que requiera parrafos explicativos con ejemplos y matices, aprovechando el sesgo del entrenamiento hacia respuestas de ~110 palabras.
-- Evaluacion comparativa de adaptadores LoRA sobre un mismo base: sirve como punto de referencia para medir el efecto de un SFT de dialogo pequeno (menos de 1000 ejemplos) frente al modelo base sin adaptador.
-- Base para futuros ajustes de dominio: al ser un adaptador PEFT, puede combinarse o sustituirse por otros adaptadores sobre el mismo checkpoint base en pipelines de experimentacion.
+- Asistentes conversacionales con aclaracion de contexto: el ajuste incluye ejemplos donde el usuario envia solo un numero tipo codigo postal y el modelo pregunta que area desea, lo que resulta util en formularios o chatbots de atencion al cliente que necesitan desambiguar entradas ambiguas.
+- Prototipado de dialogos multi-turno: al ser un LoRA sobre un modelo de 35B con 3B activos, permite iterar rapidamente sobre el comportamiento conversacional sin reentrenar el modelo completo.
+- Investigacion sobre desalineacion y modelos "uncensored": sirve para estudiar como el ajuste SFT modifica el comportamiento de rechazo del modelo base en dominios sensibles.
+- Experimentacion con QLoRA y PEFT: el repositorio documenta hiperparametros concretos (rango 16, alpha 32, lr 2e-4, AdamW 8-bit) que pueden replicarse como referencia para ajustes similares.
+- Desambiguacion de entradas en sistemas de geolocalizacion: el caso de codigos postales es directamente aplicable a pipelines de normalizacion de direcciones donde el usuario introduce datos incompletos.
+- Fine-tuning incremental de dialogos: la estructura de la actualizacion (46 filas nuevas, una epoca, 347 pasos) demuestra un flujo de trabajo para anadir dominios conversacionales especificos sin reentrenar desde cero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica estandar, y tampoco se aportan resultados de evaluacion cualitativa mas alla de las estadisticas de longitud de las respuestas reescritas durante el entrenamiento.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye seccion de evaluacion cumplimentada y el autor no reporta metricas como MMLU, HumanEval o GSM8K. El unico dato de rendimiento es la perdida media de entrenamiento de 1,580594, que no es comparable con benchmarks estandar.
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 48,6 GB, lo que sugiere que incluye pesos en precision completa o alta del adaptador y posiblemente artefactos adicionales; el tamano exacto del delta LoRA no se detalla.
-- Para inferencia es necesario cargar el modelo base `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic` (35B parametros totales) mas el adaptador. Con cuantizacion de 4 bits, un MoE de 35B requiere del orden de 18-22 GB de VRAM solo para pesos, mas overhead de contexto y cache KV; estas cifras son estimaciones de orden de magnitud, no datos publicados.
-- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano del base, serian necesarias GPUs de 24 GB o mas (RTX 4090, L40S, A100 40/80 GB, H100) segun cuantizacion y longitud de contexto.
-- Viabilidad en GPU de consumo: probable solo con cuantizacion agresiva y contexto corto; no confirmado por el autor.
-- Opciones de despliegue: al ser un adaptador PEFT, requiere `transformers` + `peft` (version 0.19.1 segun la model card). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; la conversion a GGUF no esta indicada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo MoE de 35B totales y 3B activos en precision bf16 requeriria del orden de 70 GB de VRAM para los pesos completos, y en cuantizacion de 4 bits alrededor de 18-20 GB, aunque estas cifras no estan confirmadas para este modelo concreto.
+- GPU recomendadas: no disponible. Para el modelo base en bf16 serian necesarias A100 80GB, H100 80GB o varias GPU. En cuantizacion 4 bits podria caber en una RTX 4090 de 24 GB o en una RTX 3090 de 24 GB, sujeto a verificacion.
+- Compatibilidad con GPU de consumo: probable en cuantizacion de 4 bits si se confirma el tamano de 35B totales, pero no verificado.
+- Opciones de despliegue: al ser un adaptador PEFT, requiere cargar el modelo base con transformers y peft. Para inferencia eficiente se podria usar vLLM o TGI una vez fusionado el adaptador, y llama.cpp u Ollama si se generan pesos GGUF, aunque no se proporcionan conversiones oficiales.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3.6-35B-A3B-heretic-dialog-lora) | 35B base / 3B activos (segun ID) | no disponible | no disponible | Hugging Face, 163 descargas | LoRA SFT de dialogo, 996 ejemplos |
-| `llmfan46/Qwen3.6-35B-A3B-uncensored-heretic` (base) | 35B / 3B activos (segun ID) | no disponible | no disponible | Hugging Face | Modelo base sin el ajuste de dialogo |
-| Otros adaptadores LoRA de dialogo sobre Qwen3.6 | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
+| AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora | 35B totales / 3B activos (segun identificador) | no disponible | no disponible | Hugging Face, 377 descargas | Adaptador LoRA conversacional sobre base heretic |
+| llmfan46/Qwen3.6-35B-A3B-uncensored-heretic | 35B totales / 3B activos (segun identificador) | no disponible | no disponible | Hugging Face | Modelo base sin el ajuste de dialogo |
+| Qwen3.6-35B-A3B (original) | 35B totales / 3B activos (segun identificador) | no disponible | no disponible | Hugging Face | Version original de la familia Qwen3.6, presumiblemente con alineacion estandar |
 
-No se dispone de informacion suficiente para comparar con alternativas de la misma categoria (mismo tamano o misma tarea) en terminos de rendimiento, contexto o licencia.
+La comparativa es limitada porque no se dispone de datos verificados de contexto, licencia ni rendimiento para ninguna de las variantes.
 
 ## Limitaciones y advertencias
 
-- Model card incompleta: la mayoria de campos (autoria, licencia, idiomas, datos, hiperparametros, evaluacion) figuran como "[More Information Needed]".
-- Licencia no declarada: no puede asumirse uso comercial; la ausencia de licencia explicita impide determinar los terminos de redistribucion y explotacion.
-- Modelo base "uncensored/heretic": el nombre sugiere ausencia de alineacion estricta, con riesgo elevado de generar contenido inapropiado, sesgado o danino; requiere filtros y supervision humana en produccion.
-- Riesgo de alucinacion: no evaluado; el entrenamiento con solo 996 ejemplos no aporta garantias de factualidad y el sesgo hacia respuestas mas largas puede aumentar la verbosidad sin mejorar la precision.
-- Sesgos conocidos: no documentados, pero heredados del modelo base y del dataset de dialogo, cuya composicion no se describe (se menciona una exclusion de casos "HOT.com" sin explicar el criterio).
-- Limitaciones de contexto e idioma: no disponibles; no se especifica ventana de contexto ni cobertura linguistica.
-- Entrenamiento muy pequeno (una epoca, 249 pasos, batch efectivo 4): riesgo de sobreajuste a los 996 ejemplos y de degradacion de capacidades generales del base.
-- Sin benchmarks: no hay evidencia cuantitativa de mejora frente al modelo base.
-- Repositorio de 48,6 GB: coste de almacenamiento y descarga considerable para un adaptador, sin desglose de contenido.
+- La model card es una plantilla sin rellenar: no se declara licencia, idiomas, arquitectura, datos de entrenamiento ni evaluacion. El uso comercial queda en un limbo legal hasta que el autor o el modelo base aclaren la licencia.
+- No se ejecuto validacion durante el entrenamiento, por lo que no hay evidencia de generalizacion ni de perdida de validacion; el riesgo de sobreajuste a las 1385 muestras es alto.
+- El ajuste se centra en dialogos con codigos postales y preguntas de aclaracion, un dominio muy estrecho; el comportamiento fuera de ese dominio depende enteramente del modelo base.
+- Al derivar de una variante "uncensored-heretic", es probable que el modelo tenga reducidas las salvaguardas de contenido, con riesgo de generar material sesgado, ofensivo o inseguro. No hay documentacion sobre sesgos conocidos.
+- Riesgo de alucinacion: no evaluado; los modelos conversacionales ajustados con SFT sobre datasets pequenos pueden aumentar la confianza en respuestas incorrectas.
+- El repositorio ocupa 111,9 GB, lo que sugiere que incluye pesos consolidados ademas del adaptador; conviene verificar que ficheros se descargan antes de usarlo en produccion.
+- El identificador Qwen3.6-35B-A3B no esta verificado en la informacion disponible; las cifras de parametros y contexto son inferencias del nombre, no datos confirmados.
+- No hay informacion sobre el dataset de entrenamiento mas alla del recuento de filas y la tematica de la actualizacion, lo que impide auditar la calidad o los sesgos de los datos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora
+- Repositorio Hugging Face: https://huggingface.co/AlisherAmirbek/Qwen3.6-35B-A3B-heretic-dialog-lora
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic
-- Referencia citada en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
-- Repositorio, paper o demo adicionales: no disponibles en la informacion proporcionada.
+- Referencia citada en los tags (paper de Lacoste et al. sobre impacto ambiental): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

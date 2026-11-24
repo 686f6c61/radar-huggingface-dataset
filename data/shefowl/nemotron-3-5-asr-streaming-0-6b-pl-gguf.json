@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "shefowl/nemotron-3.5-asr-streaming-0.6b-pl-GGUF",
+  "slug": "shefowl-nemotron-3-5-asr-streaming-0-6b-pl-gguf",
+  "author": "shefowl",
+  "url": "https://huggingface.co/shefowl/nemotron-3.5-asr-streaming-0.6b-pl-GGUF",
+  "created_at": "2026-11-23T20:59:56.000Z",
+  "updated_at": "2026-11-23T21:00:38.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "speech-recognition",
+    "streaming",
+    "polish",
+    "fastconformer",
+    "rnnt",
+    "automatic-speech-recognition",
+    "pl",
+    "base_model:shefowl/nemotron-3.5-asr-streaming-0.6b-pl",
+    "base_model:quantized:shefowl/nemotron-3.5-asr-streaming-0.6b-pl",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 648268960,
+  "parameters_human": "648.3M",
+  "storage_bytes": 2592289440,
+  "storage_human": "2.6 GB",
+  "context_length": null,
+  "base_model": "shefowl/nemotron-3.5-asr-streaming-0.6b-pl",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

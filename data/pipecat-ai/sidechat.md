@@ -2,101 +2,112 @@
 
 ## Resumen
 
-Sidechat es un clasificador de texto pequeno y experimental disenado para agentes de voz que conversan con varias personas a la vez. Desarrollado por pipecat-ai, su funcion es decidir, para cada intervencion en una conversacion multipartita, si el agente debe hablar ahora, esperar o ignorar la linea, y si esa linea iba dirigida a el, estaba abierta a la sala o simplemente hablaba de el. Resuelve un problema concreto de los asistentes conversacionales en entornos grupales: la deteccion de destinatario (addressee detection) y la gestion de turnos (turn-taking) cuando no hay una unica persona hablando.
+Sidechat es un clasificador de texto pequeno desarrollado por pipecat-ai para gestionar el turn-taking en agentes de voz que conversan con varias personas a la vez. El modelo recibe cada linea transcrita de una conversacion multi-participante y decide si el agente debe hablar en ese momento, esperar a ver si alguien mas interviene o mantenerse en silencio. Resuelve un problema concreto de los sistemas de voz: evitar que el bot responda a frases dirigidas a otras personas y, a la vez, detectar cuando se le esta llamando.
 
-El modelo parte del encoder Ettin-150M de jhu-clsp y se distribuye en formato ONNX, con una version fp32 de 598 MB y una cuantizada int8 de 267 MB. Esta pensado para integrarse en pipelines de Pipecat, el framework de agentes de voz del mismo autor, y funciona con etiquetas de hablante anonimas ("Speaker 1"), de modo que la senal proviene del nombre del agente y del ritmo de los ultimos turnos.
+Tecnicamente es un encoder Ettin (jhu-clsp/ettin-encoder-150m y ettin-encoder-32m) con cabezas de clasificacion para intent, respond y unclear, exportado a ONNX y pensado para ejecutarse en CPU. Se distribuye en dos builds: uno por defecto de 150M parametros y otro llamado `agent-1x`, un two-tower de 32M destilado del primero y optimizado para latencia en hardware muy limitado. La ficha actual corresponde a la version experimental rc0.3.1.
 
-Se trata de la primera release entrenada, identificada como `side-r3-ettin-150m-s0`, y el propio autor la marca como experimental: los nombres, las salidas y la calibracion pueden cambiar entre versiones. Su relevancia actual radica en que aborda un problema poco cubierto por los LLM genericos (saber a quien va dirigida cada frase en una reunion o conversacion grupal) con un modelo lo bastante pequeno para ejecutarse en CPU.
+La relevancia actual esta en que permite filtrado de turnos local y sin llamadas a API en pipelines de Pipecat, con tasas de acierto declaradas muy altas en la deteccion de lineas ajenas y en la deteccion de peticiones que nombran al agente. El modelo esta marcado explicitamente como experimental por el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer (base: jhu-clsp/ettin-encoder-150m) con cabezas de clasificacion para `intent`, `respond` y `unclear` |
-| Parametros totales | 150M (heredados del encoder base Ettin-150M) |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Arquitectura | Encoder transformer Ettin con cabezas de clasificacion (intent, respond, unclear); build `agent-1x` es two-tower destilado |
+| Parametros totales | 150M (build por defecto); 32M (build `agent-1x`) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | fp32 (`model.onnx`, 598 MB) e int8 (`model-int8.onnx`, 267 MB) |
-| Idiomas soportados | ingles (`en`) |
+| Tipos de cuantizacion | fp32 e int8 (ONNX) |
+| Idiomas soportados | en (solo ingles) |
 | Licencia | BSD-2-Clause |
 | Formato de pesos | ONNX (`model.onnx`, `model-int8.onnx`) |
+| Modelo base | jhu-clsp/ettin-encoder-150m, jhu-clsp/ettin-encoder-32m |
+| Tarea (pipeline) | text-classification |
+| Tamano del repo | 2.7 GB |
+| Descargas | 347 |
+| Likes | 4 |
 
 ## Arquitectura y entrenamiento
 
-Sidechat se construye sobre el encoder Ettin-150M (licencia MIT), un transformer encoder de 150 millones de parametros, al que se anaden tres cabezas de salida: `intent` (clasificacion del destinatario de la linea), `respond` (probabilidad de que el agente deba hablar ahora) y `unclear` (la linea encaja igual de bien con el agente y con otra persona). El entrenamiento consistio en 2 epocas sobre 235.069 lineas: 219.793 procedentes de conversaciones multipartitas generadas y etiquetadas segun la guia del proyecto, y 15.276 lineas de personas reales extraidas de reuniones AMI (dataset `ACloudCenter/ami-addressee`, CC BY 4.0), excluyendo todas las reuniones de test. En el 60% de las lineas de entrenamiento los hablantes eran anonimos, en el 25% tenian nombre y en el 15% no estaban etiquetados.
+El modelo parte de los encoders Ettin (licencia MIT) de jhu-clsp y anade cabezas de clasificacion para predecir intent (dirigido al agente de forma directa o indirecta, abierto a la sala, sobre el agente u otro), respond (probabilidad de que el agente deba hablar ahora) y unclear (la linea encaja igual con el agente y con otra persona). El build por defecto usa el encoder de 150M; el build `agent-1x` es un two-tower de 32M destilado del modelo grande, que codifica las lineas anteriores mientras la persona habla para reducir la latencia por linea.
 
-No se menciona el uso de RLHF ni DPO; el modelo es un clasificador supervisado, no un generador. La innovacion principal es el diseno de la tarea: en lugar de depender de nombres de hablante, el modelo usa el nombre del agente y el ritmo de los ultimos turnos como senal, lo que permite operar en escenarios donde los hablantes son anonimos. La calibracion y los umbrales de decision (`respond`, `wait`, `ignore`) viven en `config.json`, y la version int8 tiene sus propios umbrales.
+El entrenamiento combina datos generados propios (conversaciones multi-participante etiquetadas segun la guia del proyecto, publicadas en pipecat-ai/sidechat-gen) con datos publicos, entre ellos el dataset AMI de addressee (ACloudCenter/ami-addressee). No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Clasificacion de destinatario: determina si una linea va dirigida al agente de forma directa o indirecta, esta abierta a la sala, habla sobre el agente o es otra cosa.
-- Prediccion de respuesta: devuelve la probabilidad de que el agente deba hablar ahora (cerca de 0,5 para una pregunta abierta a la sala).
-- Deteccion de ambiguedad: la salida `unclear` indica cuando la linea encaja igual de bien con el agente y con otra persona.
-- Decision de turno: la funcion `decide` traduce las probabilidades en `respond`, `wait` (hablar solo si nadie mas lo hace) o `ignore`, segun los umbrales de `config.json`.
-- Soporte de hablantes anonimos: funciona con etiquetas genericas como "Speaker 1".
-- Uso de historial conversacional: acepta los turnos previos (incluidos los del propio agente) como contexto para la decision.
-- Inferencia en CPU: disponible en fp32 e int8 mediante ONNX Runtime.
-- No soporta tool calling, generacion de texto, vision, audio ni razonamiento multietapa; es exclusivamente un clasificador de texto en ingles.
+- Clasificacion de turno en conversaciones multi-participante: decide `respond`, `wait` o `ignore` para cada linea transcrita.
+- Deteccion de destinatario (addressee detection) con hablantes anonimos ("Speaker 1"), sin necesidad de identificacion de voz.
+- Prediccion de intent: dirigido al agente (directa o indirectamente), abierto a la sala, sobre el agente u otro.
+- Senal de incertidumbre (`unclear`) cuando la linea encaja igual con el agente y con otra persona.
+- Funcionamiento local en CPU, sin llamadas a API externas.
+- Build `agent-1x` con metodo `prepare` para pre-codificar el historial mientras habla el interlocutor.
+- Soporte de integracion con Pipecat mediante el componente `PipecatSidechat` y con el runtime propio del proyecto (`sidechat.runtime`).
+- Capacidad multilingue: no, solo ingles.
 
 ## Casos de uso
 
-- Agentes de voz en reuniones: el modelo permite que un asistente integrado en una llamada grupal decida si debe intervenir o mantenerse a la escucha, usando la etiqueta anonima de cada hablante y el historial de turnos.
-- Asistentes de sala en entornos presenciales: en una sala con microfonos y varios participantes, Sidechat filtra que lineas van dirigidas al agente y evita que responda a conversaciones ajenas.
-- Atencion al cliente con varias personas en linea: en una llamada donde intervienen cliente y agente humano, el modelo distingue las peticiones dirigidas al bot de las conversaciones entre personas.
-- Moderacion de turnos en demos de Pipecat: el propio autor lo usa como base para la demo de audiencia diaria, donde el agente debe decidir cuando hablar ante un publico.
-- Preprocesado de pipelines de voz: se puede colocar antes del LLM generativo para descartar lineas irrelevantes y reducir llamadas innecesarias al modelo grande.
-- Investigacion en turn-taking: sirve como baseline reproducible para experimentos de deteccion de destinatario, con datos de entrenamiento y evaluacion publicados en el repositorio.
-- Despliegue en dispositivos con CPU limitada: la version int8 (267 MB) permite ejecutar la clasificacion en un vCPU, aunque con latencias de centenares de milisegundos.
+- Agente de voz en reuniones multi-participante: Sidechat se situa entre el agregador de usuario y el LLM para que el modelo solo responda a los turnos dirigidos al bot, evitando interrumpir conversaciones entre personas.
+- Asistente de sala para reservas o consultas: cuando alguien dice "Can you check that for us?" sin nombrar al agente, el modelo mantiene la linea en espera y responde si nadie mas interviene, aprovechando la tasa declarada del 91% de retencion de peticiones reales sin nombre.
+- Filtrado de falsos positivos de STT: con tasas declaradas de 0,2% de lineas ajenas respondidas por error, sirve para reducir respuestas no solicitadas en produccion.
+- Despliegue en hardware muy limitado: el build `agent-1x` int8 ocupa 195 MB y tarda unos 7 ms por linea en 1 vCPU (unos 10 ms en medio CPU), lo que permite ejecutarlo en dispositivos de borde o contenedores con 0,5 vCPU y 1 GiB.
+- Prototipado rapido de turn-taking: el runtime independiente (`pip install git+https://github.com/pipecat-ai/sidechat`) permite probar la clasificacion fuera de Pipecat con `SidechatRequest`, `Agent` y `Turn`.
+- Investigacion sobre destinatario en dialogos: los datasets publicados (sidechat-gen y ami-addressee) permiten reproducir el etiquetado y comparar variantes.
+- Integracion en pipelines de CI para agentes conversacionales: al ser ONNX y local, se puede incluir en tests automatizados de turn-taking sin depender de servicios externos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor contra Jev (el modelo usado en la demo de audiencia diaria de Pipecat), con hablantes anonimos. El propio autor advierte que son baselines, no benchmarks formales: las etiquetas siguen su propia guia y la eleccion entre rondas de entrenamiento miro estos conjuntos.
+Resultados declarados por el autor en la model card (comparaciones, no benchmarks formales, segun sus propias notas):
 
-| Conjunto | Sidechat | Jev |
-|---|---|---|
-| Duplex-MPE, 52.336 lineas | 96,7% | 83,1% |
-| ... lineas para otros, respondidas directamente | 0,2% | 0,4% |
-| ... peticion al agente sin su nombre, respondida | 38,8% | 26,6% |
-| Social AI Ambient Bench, 15.793 lineas | 98,7% | 85,4% |
-| AMI (reuniones etiquetadas), 8.875 lineas | 99,9% | 85,2% |
-| 270 lineas escritas a mano | 87,4% | 77,8% |
+| Metrica | Default (150M) | `agent-1x` (32M) | Jev (hosted) |
+|---|---|---|---|
+| Duplex-MPE, decisiones correctas (52.336 lineas) | 96,4% | 95,7% | 83,1% |
+| Social AI Ambient Bench, correctas (15.793) | 96,9% | 97,5% | 85,4% |
+| AMI, correctas (8.875) | 99,0% | 98,7% | 85,2% |
+| Duplex-MPE, lineas ajenas retenidas | 0,8% | 0,7% | 16,0% |
+| Duplex-MPE, peticiones solo por contexto respondidas | 29,3% | 10,2% | 26,6% |
+| Peticiones reales sin nombre, retenidas (2.705) | 90,9% | 86,6% | 82,1% |
+| Tiempo por linea en 1 vCPU | 303 ms | 7 ms | 49 a 149 ms |
 
-Latencia mediana por linea (historial corto / 8 lineas previas, un hilo): 10 / 52 ms en un M5 Max, 66 / 253 ms en 1 vCPU, 507 / 648 ms en 0,5 vCPU (int8: 103 / 532 ms). En una CPU cloud pequena es mas lento que una llamada API a Jev.
+Ademas, la card declara: peticiones que nombran al agente respondidas 99,6% (default) y 99,7% (`agent-1x`); lineas de personas respondidas por error 0,2% y 0,3%; lineas de personas retenidas 0,8% y 0,7%. El int8 decide igual que fp32 en el 98,5% a 99,9% de las lineas de test.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo es pequeno; en fp32 ocupa 598 MB y en int8 267 MB, por lo que cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: no se especifican; al ser un encoder de 150M, una RTX 4090 o incluso una GPU integrada son suficientes. Tambien funciona en CPU.
-- Cabe en GPU consumer: si, en cualquier GPU con al menos 1 GB de memoria libre.
-- Opciones de despliegue: ONNX Runtime mediante el paquete `sidechat` (`pip install git+https://github.com/pipecat-ai/sidechat`), cargando los ficheros con `snapshot_download` de `huggingface_hub`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: medianas de 10-52 ms en Apple M5 Max, 66-253 ms en 1 vCPU y 507-648 ms en 0,5 vCPU; la version int8 reduce la latencia en el caso de 0,5 vCPU (103 ms con historial corto).
+- Inferencia en CPU; no se especifica requisito de GPU.
+- Build por defecto: 325 MB en int8, 150M parametros, unos 303 ms por linea en 1 vCPU; requiere 1 vCPU o mas.
+- Build `agent-1x`: 195 MB en int8, 32M parametros, unos 7 ms por linea en 1 vCPU y unos 10 ms en medio CPU; requiere 0,5 vCPU y 1 GiB.
+- Cabe en hardware de consumo y en dispositivos de borde; no necesita GPU dedicada.
+- Despliegue mediante ONNX Runtime con el runtime propio del proyecto (`sidechat.runtime.load`) o integrado en Pipecat (`PipecatSidechat`); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: los tiempos por linea anteriores son los unicos datos publicados; throughput agregado no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Duplex-MPE (correctas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pipecat-ai/sidechat | 150M | no disponible | Deteccion de destinatario y turn-taking | BSD-2-Clause | ONNX en Hugging Face |
-| Jev | no disponible | no disponible | Deteccion de destinatario en la demo de Pipecat | no disponible | no disponible |
-| jhu-clsp/ettin-encoder-150m | 150M | no disponible | Encoder generico (modelo base) | MIT | Hugging Face |
+| Sidechat default | 150M | no disponible | 96,4% | BSD-2-Clause | ONNX local, Hugging Face |
+| Sidechat `agent-1x` | 32M | no disponible | 95,7% | BSD-2-Clause | ONNX local, Hugging Face |
+| Jev | no disponible | no disponible | 83,1% | no disponible (servicio hosted) | API alojada |
 
-Jev es el unico comparable directo con datos de rendimiento en la informacion disponible; el resto de alternativas no se documentan. Ettin-150M es el modelo base, no un competidor en la misma tarea.
+No se dispone de datos de otros clasificadores de addressee comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: la primera release (`side-r3-ettin-150m-s0`) puede cambiar de salidas, nombres y calibracion en versiones futuras.
-- Solo ingles: no soporta otros idiomas.
-- Peticiones sin el nombre del agente: antes de que el agente haya hablado, se responden menos de la mitad de las veces (38,8% en Duplex-MPE).
-- Datos mayoritariamente generados: la mayoria de las lineas de entrenamiento son sinteticas; solo AMI procede de habla real, lo que puede limitar la generalizacion a conversaciones reales.
-- Riesgo de falsos positivos y negativos en la decision de turno: los umbrales de `config.json` deben calibrarse para cada despliegue.
-- Latencia en CPU limitada: en 0,5 vCPU supera los 500 ms por linea, lo que puede ser inadecuado para interacciones en tiempo real.
-- Licencia BSD-2-Clause: permisiva para uso comercial, pero conviene revisar las condiciones del modelo base Ettin-150M (MIT) y del dataset AMI (CC BY 4.0) si se redistribuyen datos.
-- No es un generador: no produce respuestas, solo clasifica; requiere un LLM separado para la generacion.
+- Modelo marcado como experimental (rc0.3.1): salidas, nombres y calibracion pueden cambiar entre releases.
+- Solo admite texto en ingles.
+- Las peticiones que solo el contexto marca como dirigidas al agente se detectan mal: 29% respondidas por el build por defecto y 10% por `agent-1x`.
+- Un follow-up sin nombre justo despues de que el agente responda es dificil de distinguir de una conversacion dirigida a otra persona.
+- Alrededor de 1 de cada 100 lineas de personas en reuniones reales se retiene para una pausa, sobre todo preguntas entre personas sin nombre.
+- Depende de la calidad del STT: el autor recomienda pasar el nombre del agente como keyterm (por ejemplo, en Deepgram) porque nombres poco comunes se transcriben mal y la peticion se pierde.
+- Riesgo de alucinacion: no disponible como tal (es un clasificador, no un generador); el riesgo se traslada a falsos positivos y negativos de clasificacion.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Licencia BSD-2-Clause: permisiva para uso comercial, pero conviene revisar las condiciones de los modelos base Ettin (MIT) y de los datasets empleados.
+- Los numeros de la card son comparaciones bajo la guia de etiquetado del propio proyecto, no benchmarks independientes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/pipecat-ai/sidechat
 - Codigo: https://github.com/pipecat-ai/sidechat
-- Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-150m
-- Dataset de entrenamiento (AMI): https://huggingface.co/datasets/ACloudCenter/ami-addressee
-- Dataset de evaluacion Duplex-MPE: https://huggingface.co/datasets/ChengqianMa/Duplex-MPE
-- Dataset de evaluacion Social AI Ambient Bench: https://huggingface.co/datasets/text-ai/social-ai-ambient-bench
+- Integracion en Pipecat (PR): https://github.com/pipecat-ai/pipecat/pull/6934
+- Dataset de entrenamiento: https://huggingface.co/datasets/pipecat-ai/sidechat-gen
+- Dataset AMI addressee: https://huggingface.co/datasets/ACloudCenter/ami-addressee
+- Dataset Duplex-MPE: https://huggingface.co/datasets/ChengqianMa/Duplex-MPE
+- Social AI Ambient Bench: https://huggingface.co/datasets/text-ai/social-ai-ambient-bench
+- Encoder base Ettin 150M: https://huggingface.co/jhu-clsp/ettin-encoder-150m

@@ -2,75 +2,145 @@
 
 ## Resumen
 
-Ripple-65B-Preview-SAGE-REXL3-5.41bpw es una cuantización de precisión mixta del modelo base ricursiveAI/Ripple-65B-Preview, publicada por el usuario vcruz305 en Hugging Face. El repositorio contiene pesos en formato ExLlamaV3 (exllamav3) bajo la técnica propietaria REXL3 (SAGE-REXL3), con un tamaño efectivo de 5,41 bits por peso (bpw) y un total de 22.611.689.552 parámetros almacenados en safetensors. El objetivo es ofrecer una versión compacta del modelo original apta para inferencia en GPUs de consumo mediante el runtime ExLlamaV3.
+Ripple-65B-Preview-SAGE-REXL3-5.41bpw es una cuantización de precisión mixta en formato EXL3 (trellis) del modelo base ricursiveAI/Ripple-65B-Preview, publicada por el usuario vcruz305. El pack está pensado para servir el modelo en dispositivos de clase 48 GB, con un peso GPU residente de aproximadamente 42,1 GiB y un tamaño de repositorio de 45,2 GB repartido en 10 shards safetensors. La cuantización se ha realizado con SAGE, un método propio de precisión mixta para EXL3 en el que cada tensor emplea un valor de K distinto que los kernels leen en tiempo de carga.
 
-La relevancia de esta ficha radica en que documenta un artefacto de cuantización, no un modelo fundacional: su interés práctico depende enteramente del modelo base Ripple-65B-Preview, del que no se dispone de información técnica detallada en la información proporcionada. La licencia declarada es Apache 2.0, aunque el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
+El dato de parámetros declarado en los safetensors es de 22.611.689.552, muy inferior a los 65B que sugiere el nombre comercial del modelo base. Esta discrepancia debe tenerse en cuenta al planificar el despliegue y al comparar con otras alternativas. El modelo es de tipo text-generation y conversacional, con licencia Apache 2.0 heredada del modelo base y acceso restringido (gated) con revisión manual de solicitudes.
 
-El nombre del repositorio sugiere un modelo de aproximadamente 65.000 millones de parámetros, pero el recuento real de safetensors indica 22.611.689.552 parámetros, una discrepancia que conviene tener en cuenta al planificar el despliegue. No se han publicado idiomas soportados, benchmarks ni detalles de arquitectura en la información disponible.
+La relevancia de este pack reside en su receta de servicio: SGLang 0.5.19 con el plugin sglang-exl3 y decodificación especulativa DFlash2 mediante un draft EXL3 de 4,55 bpw. El autor reporta métricas de velocidad medidas en una NVIDIA RTX PRO 6000 Blackwell de 96 GB y una evaluación de calidad frente al release oficial en BF16 con una concordancia Top-1 del 99,34% y una KLD media de 0,0005.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: ricursiveAI/Ripple-65B-Preview) |
-| Parametros totales | 22.611.689.552 (según safetensors); el nombre del repo indica 65B |
+| Arquitectura | no disponible (model_type `ricursive`; pesos en formato EXL3 trellis) |
+| Parametros totales | 22.611.689.552 (según safetensors) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | ExLlamaV3 / REXL3 SAGE de precisión mixta, 5,41 bpw |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | 131.072 tokens (configurado en el servicio de referencia con `--context-length 131072`) |
+| Tipos de cuantizacion | EXL3 trellis de precisión mixta SAGE a 5,41 bpw; drafts DFlash2 EXL3 a 4,55, 3,60 y 3,08 bpw |
+| Idiomas soportados | no disponible (la model card incluye una categoría de evaluación multilingüe, sin listado de idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors con custom_code (exllamav3) |
+| Formato de pesos | safetensors EXL3 (trellis), 10 shards, índice `model.safetensors.index.json`, `quant_method: exl3` |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base ricursiveAI/Ripple-65B-Preview en la documentación proporcionada. El artefacto aquí descrito es una cuantización de precisión mixta generada con la técnica SAGE-REXL3, empaquetada para el runtime ExLlamaV3. La etiqueta "ricursive" en los tags sugiere alguna forma de recursión o procesamiento iterativo, pero no hay confirmación técnica al respecto.
+No se dispone de información sobre la arquitectura interna del modelo base en la documentación proporcionada. El campo `model_type` es `ricursive` y los pesos se distribuyen como tensores trellis EXL3 con distintos valores de K por tensor. La model card menciona dos elementos que apuntan a un diseño híbrido de atención: por un lado, el pool de KV se describe como `SWAKVPool` híbrido con 117.376 tokens de atención completa y 93.888 tokens de ventana deslizante; por otro, la receta de servicio configura una longitud de contexto de 131.072 tokens. No se detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
-Tampoco se han publicado datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni si hubo fases de RLHF, DPO o ajuste por preferencias. La cuantización a 5,41 bpw implica una mezcla de precisiones por capa o por tensor, típica de los esquemas de cuantización mixta que buscan preservar capas sensibles (por ejemplo, atenciones o proyecciones de salida) en mayor precisión mientras comprimen el resto.
+La innovación técnica documentada es la cuantización SAGE: un esquema de precisión mixta para EXL3 en el que cada tensor recibe un valor de K diferente y los kernels lo leen directamente del tensor trellis en el momento de la carga. El pack se complementa con decodificación especulativa DFlash2 mediante un draft EXL3 de 4,55 bpw, integrada a través del plugin sglang-exl3 para SGLang 0.5.19. El autor reporta que el proceso de cuantización conserva el 99,34% de concordancia Top-1 y una KLD media de 0,0005 respecto al release oficial en BF16.
 
 ## Capacidades
 
-- Generación de texto y conversación: el pipeline declarado es text-generation y los tags incluyen "conversational".
-- Cuantización mixta de alta compresión: 5,41 bpw sobre 22.611.689.552 parámetros, lo que reduce el peso en disco y VRAM frente a los pesos originales.
-- Compatibilidad con ExLlamaV3: requiere el runtime exllamav3 y código personalizado (custom_code) para cargar los pesos.
-- Capacidades específicas del modelo base (razonamiento, código, matemáticas, tool calling, agentes, multilingüismo, visión o audio): no disponibles en la información proporcionada.
+- Generación de texto conversacional multi-turno con ventana de contexto de hasta 131.072 tokens en la configuración de referencia.
+- Razonamiento y matemáticas: la evaluación SixCat reporta un 100,0% en la categoría Math y un 83,3% en Knowledge.
+- Generación y edición de código: 95,0% en Coding y un Top-1 del 99,74% frente a BF16 en la categoría swe_patch.
+- Uso de herramientas (tool calling / function calling): 90,0% en la categoría Tool Use de SixCat.
+- Seguimiento de instrucciones: 85,0% en Instruction Following y un Top-1 del 99,58% frente a BF16 en ifeval.
+- Capacidad multilingüe: se evalúa una categoría multilingual con Top-1 del 98,97% frente a BF16, aunque no se listan los idiomas concretos.
+- Modo thinking: la evaluación SixCat se ejecuta con `thinking=on`, lo que indica soporte de un modo de razonamiento explícito.
+- Decodificación especulativa: compatible con drafts DFlash2 EXL3 a 4,55, 3,60 y 3,08 bpw.
+- Capacidades de visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Despliegue en GPU de consumo: la cuantización a 5,41 bpw permite cargar el modelo en GPUs con menos VRAM que la versión original, usando ExLlamaV3 como backend de inferencia.
-- Servicio de generación de texto conversacional: al estar etiquetado como "conversational" y "text-generation", puede emplearse en asistentes de chat multi-turno, siempre que se valide el comportamiento real del modelo base.
-- Experimentación con cuantización mixta: útil para investigadores que quieran comparar la calidad de SAGE-REXL3 frente a otros esquemas (GPTQ, AWQ, EXL2) sobre el mismo modelo base.
-- Inferencia de baja latencia en entornos locales: ExLlamaV3 está optimizado para GPUs NVIDIA y ofrece decodificación rápida, adecuada para prototipos y demos interactivas.
-- Evaluación comparativa de artefactos cuantizados: sirve como referencia para medir la degradación de calidad respecto a los pesos originales en tareas de generación libre.
-- Integración en pipelines de investigación: al ser un repositorio gated con licencia Apache 2.0, puede incorporarse a flujos internos de experimentación una vez aceptadas las condiciones de acceso.
+- Atención al cliente automatizada: el modelo puede mantener conversaciones multi-turno con contexto largo gracias a su ventana de 131.072 tokens, lo que permite arrastrar el historial completo de un cliente sin truncar y sin perder coherencia en la respuesta.
+- Generación de código en producción: con un 95,0% en la categoría Coding de SixCat y soporte de tool calling, puede integrarse en pipelines de revisión y generación de parches, como sugiere el 99,74% de Top-1 frente a BF16 en swe_patch.
+- Asistentes con uso de herramientas: el 90,0% en Tool Use lo hace adecuado para agentes que encadenan llamadas a APIs, consultas a bases de datos y ejecución de funciones en varios pasos.
+- Razonamiento matemático y tutoría: el 100,0% en Math de SixCat permite emplearlo en resolución de problemas paso a paso y en sistemas de apoyo educativo con verificación de resultados.
+- Procesamiento de documentos largos: las pruebas long17k, con 10.654 tokens evaluados en un contexto de 17.408 tokens y un Top-1 del 98,70% frente a BF16, respaldan su uso en resumen y extracción sobre documentos extensos.
+- Despliegue en un solo dispositivo de 48 GB: con aproximadamente 42,1 GiB de pesos residentes y texto únicamente, encaja en GPUs profesionales de esa clase, lo que facilita servir el modelo sin infraestructura multi-GPU.
+- Servicio de alto rendimiento con SGLang: la receta con SGLang 0.5.19, el plugin sglang-exl3 y el draft DFlash2 permite prefill de hasta 1.802,2 tok/s y decodificación de 64,8 tok/s en prompts cortos sobre una RTX PRO 6000 Blackwell de 96 GB.
+- Evaluación de calidad de cuantizaciones: el pack y sus métricas de KLD y concordancia Top-1 sirven como referencia para comparar otras cuantizaciones del mismo modelo base antes de pasar a producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Evaluación SixCat (`challenge-v1`, `thinking=on`, temperatura 0,6, semilla 1, 20 ítems por categoría, decodificación especulativa DFlash2 activada) sobre el pack de 5,41 bpw:
+
+| Categoria | Resultado |
+|---|---:|
+| Overall | 88,89% (118/120 puntuados) |
+| Knowledge | 83,3% |
+| Math | 100,0% |
+| Truthfulness | 80,0% |
+| Instruction Following | 85,0% |
+| Coding | 95,0% |
+| Tool Use | 90,0% |
+
+Calidad frente al release oficial en BF16 (55.535 tokens de turno de asistente evaluados):
+
+| Pack | Huella residente | KLD media | KLD p50 | Top-1 | Top-5 | Solapamiento Top-5 |
+|---|---:|---:|---:|---:|---:|---:|
+| Este pack, 5,41 bpw | ~42,1 GiB | 0,0005 | 0,000004 | 99,34% | 99,998% | 95,63% |
+| Release oficial BF16 | nativa | 0 | 0 | 100% | 100% | 100% |
+
+Desglose por categoría frente a BF16:
+
+| Categoria | KLD media | KLD p50 | Top-1 | Solapamiento Top-5 |
+|---|---:|---:|---:|---:|
+| general | 0,0003 | 0,000001 | 99,54% | 95,32% |
+| prose_narrative | 0,0005 | 0,000020 | 99,39% | 96,68% |
+| multilingual | 0,0011 | 0,000041 | 98,97% | 96,12% |
+| reasoning | 0,0003 | 0,000001 | 99,57% | 95,58% |
+| code | 0,0002 | 0,000002 | 99,70% | 96,09% |
+| ifeval | 0,0001 | 0,000001 | 99,58% | 93,58% |
+| gpqa_stem | 0,0013 | 0,000324 | 98,12% | 97,37% |
+| swe_patch | 0,0002 | 0,000002 | 99,74% | 96,01% |
+| math | 0,0003 | 0,000003 | 99,33% | 94,72% |
+| cyber | 0,0004 | 0,000001 | 99,58% | 94,58% |
+| mmlu_pro | 0,0002 | 0,000001 | 99,31% | 94,71% |
+
+Suites de contexto largo frente a BF16:
+
+| Suite | Contexto | Tokens evaluados | KLD media | KLD p50 | Top-1 | Top-5 | Solapamiento Top-5 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| wiki1100 | prefijo de 1.100 tokens | 890 | 0,001269 | 0,000467 | 98,54% | 100% | 97,64% |
+| long17k | contexto de 17.408 tokens | 10.654 | 0,001272 | 0,000438 | 98,70% | 100% | 97,19% |
+
+Rendimiento de servicio medido en una NVIDIA RTX PRO 6000 Blackwell de 96 GB (`sm_120`), `TP=1`, este pack más draft DFlash2 de 4,55 bpw, `--context-length 131072`, `--mem-fraction-static 0.82` y CUDA graphs activados:
+
+| Metrica | 403 tok | 1564 tok | 3152 tok |
+|---|---:|---:|---:|
+| Prefill en frío (tok/s) | 1.096,5 – 1.118,6 | 1.672,6 – 1.674,7 | 1.796,3 – 1.802,2 |
+| Decodificación greedy `t=0.0` (tok/s) | 64,8 | 44,9 | 49,3 |
+| Decodificación con muestreo `t=0.6` (tok/s) | 53,1 | 41,2 | 51,3 |
+| Longitud aceptada DFlash2 (tok/ronda) | 2,05 – 3,55 | 1,40 – 2,70 | 2,30 – 2,70 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 22.611.689.552 parámetros a 5,41 bpw, el peso de los pesos ronda los 15,3 GB (22,61e9 × 5,41 / 8). A ello hay que sumar caché KV, overhead del runtime y buffers, por lo que se recomienda al menos 20-24 GB de VRAM para contexto moderado.
-- GPUs recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40/80 GB, H100 80 GB. En GPUs de 16 GB podría no caber con contexto largo.
-- GPU de consumo: sí, cabe en RTX 4090 y RTX 3090; en RTX 4080 (16 GB) es ajustado y probablemente requiera contexto reducido.
-- Opciones de despliegue: ExLlamaV3 es el runtime nativo (librería declarada). No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, dado que el formato es específico de ExLlamaV3.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 42,1 GiB de pesos residentes en GPU; el despliegue de referencia consume unos 83 GB de VRAM en total, incluyendo un pool KV híbrido `SWAKVPool` de 30,11 GB y 2,19 GB de pesos del draft.
+- GPU recomendadas: el autor valida el despliegue en una NVIDIA RTX PRO 6000 Blackwell de 96 GB (`sm_120`) con `TP=1`. Para GPUs de 48 GB se apunta a un encaje sin el draft, dado que los pesos residentes son de unos 42,1 GiB.
+- Cabe en GPU de consumo: no disponible como dato validado; por tamaño de pesos, una GPU de 48 GB es el mínimo razonable y las de 24 GB no admiten el pack completo.
+- Opciones de despliegue: ExLlamaV3 (librería declarada) y SGLang 0.5.19 con el plugin sglang-exl3; la receta de servicio, los scripts de lanzamiento y los parámetros de ajuste están en el repositorio Ripple-65B-Preview-EXL3-SGLang-recipe.
+- Latencia y throughput: prefill en frío de 1.096,5 a 1.802,2 tok/s según tamaño de prompt; decodificación greedy de 44,9 a 64,8 tok/s y con muestreo de 41,2 a 53,1 tok/s en la configuración medida. Con `--context-length 131072` el pool KV admite 117.376 tokens de atención completa o 93.888 de ventana deslizante.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre modelos comparables de la misma categoría, ni de datos de rendimiento del modelo base que permitan una comparación rigurosa.
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Ripple-65B-Preview-SAGE-REXL3 5,41 bpw (este pack) | 22.611.689.552 | 131.072 tokens (config. de servicio) | EXL3 trellis 5,41 bpw | Apache 2.0 | Hugging Face, acceso gated |
+| ricursiveAI/Ripple-65B-Preview (base) | no disponible | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Ripple-65B-Preview-DFlash2-SAGE-REXL3 (drafts) | no disponible | no disponible | EXL3 a 4,55 / 3,60 / 3,08 bpw | Apache 2.0 (heredada) | Hugging Face |
+
+No se dispone de datos de benchmarks estándar ni de información sobre modelos de otros autores que permitan una comparación cuantitativa adicional.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
-- Discrepancia de tamaño: el nombre indica 65B, pero el recuento real de safetensors es de 22.611.689.552 parámetros; conviene verificar el modelo base antes de planificar el hardware.
-- Dependencia de ExLlamaV3: el formato es específico y requiere el runtime exllamav3 con custom_code; no es portable a otros motores sin conversión.
-- Falta de información sobre el modelo base: no se conocen arquitectura, contexto, idiomas ni datos de entrenamiento, lo que impide evaluar sesgos, alucinación o calidad real.
-- Licencia: Apache 2.0 declarada, pero debe confirmarse que el modelo base permite uso comercial, ya que la cuantización hereda las restricciones del original.
-- Riesgo de degradación por cuantización: a 5,41 bpw puede haber pérdida de calidad respecto a los pesos originales, especialmente en tareas de razonamiento o código.
-- Sin benchmarks publicados: no hay evidencia empírica de rendimiento en este repositorio.
+- Discrepancia de nomenclatura: el nombre comercial indica 65B, pero los safetensors declaran 22.611.689.552 parámetros; conviene verificar el recuento real antes de dimensionar infraestructura.
+- Acceso restringido: el repositorio es gated y las solicitudes se revisan manualmente, lo que puede retrasar su uso en entornos de producción.
+- Dependencia de ecosistema: el pack requiere ExLlamaV3 o SGLang 0.5.19 con el plugin sglang-exl3; no es un formato portable a otras pilas de inferencia sin conversión.
+- Degradación de calidad por cuantización: aunque la concordancia Top-1 es del 99,34%, la KLD media sube a 0,0013 en gpqa_stem y a 0,001269 en wiki1100, y la concordancia Top-1 baja al 98,12% en gpqa_stem y al 98,54% en wiki1100.
+- Riesgo de alucinación: la categoría Truthfulness de SixCat obtiene un 80,0%, el valor más bajo del conjunto evaluado; debe validarse la salida en dominios sensibles.
+- Idiomas: no se publica la lista de idiomas soportados; la categoría multilingual muestra la mayor KLD media (0,0011) y el Top-1 más bajo (98,97%) entre las categorías generales.
+- Evaluación limitada: SixCat emplea 20 ítems por categoría y 118 de 120 puntuados, por lo que la significación estadística de los porcentajes es reducida.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor solicita citar el modelo base; el acceso gated añade una condición práctica de aceptación.
+- Datos de arquitectura y entrenamiento ausentes: no se dispone de información sobre dataset, número de tokens ni fases de alineación, lo que dificulta auditar sesgos conocidos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw
+- Modelo en Hugging Face: https://huggingface.co/vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Receta de servicio SGLang: https://github.com/vcruz305/Ripple-65B-Preview-EXL3-SGLang-recipe
+- Plugin SGLang EXL3: https://github.com/vcruz305/sglang-exl3
+- Drafts DFlash2 cuantizados: https://huggingface.co/vcruz305/Ripple-65B-Preview-DFlash2-SAGE-REXL3
+- ExLlamaV3: https://github.com/turboderp-org/exllamav3
+- Perfil del autor: https://huggingface.co/vcruz305

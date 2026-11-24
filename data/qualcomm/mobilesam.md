@@ -2,101 +2,111 @@
 
 ## Resumen
 
-MobileSam es una versión ligera del modelo Segment Anything (SAM) de Meta, optimizada por Qualcomm para su despliegue en dispositivos móviles y embebidos. Se trata de un transformer encoder-decoder que, a partir de un prompt (punto, caja o máscara), genera la segmentación semántica de un objeto en una imagen sin necesidad de entrenamiento adicional. El modelo está basado en el checkpoint `vit_t` (ViT-Tiny) y ha sido pre-exportado a formatos ONNX, QNN_DLC y TFLITE para ejecutarse directamente en la NPU de los chipsets Snapdragon y Dragonwing.
+MobileSam es un modelo de segmentacion de imagenes basado en prompts (promptable segmentation) desarrollado originalmente por Meta AI Research (el repositorio de referencia es `facebookresearch/segment-anything`) y empaquetado por Qualcomm para su despliegue optimizado en dispositivos con aceleracion NPU. El modelo sigue la estela de Segment Anything Model (SAM) pero reduce drasticamente el coste computacional del codificador de imagenes, haciendolo viable en movil, PC con Snapdragon y plataformas embebidas (Dragonwing, SA/QCS de automocion e IoT).
 
-La relevancia de MobileSam radica en su capacidad para llevar la segmentación por prompts a entornos con recursos limitados, donde el SAM original (con backbones ViT-B o ViT-H) resulta demasiado pesado. Con un total de aproximadamente 13,1 millones de parámetros (6,95M en el encoder y 6,16M en el decoder), el modelo alcanza latencias de entre 2,5 y 15 ms en hardware Qualcomm, lo que lo hace viable para aplicaciones en tiempo real. El repositorio de Hugging Face incluye los pesos pre-exportados y las herramientas para reexportarlos con configuraciones personalizadas mediante la librería Qualcomm AI Hub Models.
+La arquitectura es un transformer encoder-decoder: el codificador genera embeddings de la imagen y un decodificador ligero opera sobre esos embeddings para producir mascaras a partir de prompts (puntos o cajas). En esta version de Qualcomm, el checkpoint es `vit_t` (ViT tiny), con un codificador de 6,95 M de parametros y un decodificador de 6,16 M, lo que suma aproximadamente 13,1 M de parametros y unos 50 MB en float. La resolucion de entrada es 720p (720x1280).
+
+Su relevancia actual radica en que permite segmentacion interactiva de alta calidad en el propio dispositivo (on-device), sin enviar imagenes a la nube, con latencias de decodificador de entre 2 y 9 ms en NPU segun el chipset. La licencia Apache 2.0 y la disponibilidad de artefactos preexportados en ONNX, QNN_DLC y TFLITE facilitan su integracion en productos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (basado en SAM con backbone ViT-Tiny) |
-| Parametros totales | 13,11 M (encoder: 6,95 M, decoder: 6,16 M) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no aplica (modelo de vision, no texto) |
-| Tipos de cuantizacion | float (ONNX, QNN_DLC, TFLITE) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer encoder-decoder (ViT tiny + decodificador ligero de mascaras) |
+| Parametros totales | ~13,1 M (6,95 M encoder + 6,16 M decoder) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision; entrada 720x1280) |
+| Tipos de cuantizacion | float (los artefactos publicados son float; exportacion custom via AI Hub Models) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch (repo), ONNX, QNN_DLC, TFLITE (pre-exportados) |
+| Formato de pesos | PyTorch (repo), ONNX, QNN_DLC, TFLITE |
 
 ## Arquitectura y entrenamiento
 
-MobileSam sigue la arquitectura de SAM: un encoder de imagenes (ViT-Tiny) que genera embeddings y un decoder ligero que opera sobre esos embeddings para producir mascaras de segmentacion a partir de prompts. El modelo fue entrenado mediante destilacion de conocimiento desde el SAM original con backbone ViT-H, lo que permite reducir drasticamente el numero de parametros manteniendo una calidad de segmentacion aceptable. El paper de referencia es "MobileSAM: Faster Segment Anything" (arXiv:2306.14289). No se han publicado detalles sobre el dataset de entrenamiento ni sobre el uso de tecnicas como RLHF o DPO, ya que es un modelo de vision y no de lenguaje.
+MobileSam es un transformer encoder-decoder para segmentacion guiada por prompts. El codificador de imagenes (ViT tiny) procesa la imagen de entrada a 720p y genera un embedding; el decodificador ligero consume ese embedding junto con el prompt (puntos o cajas) y produce mascaras. Esta separacion permite calcular el embedding una sola vez y reutilizarlo para multiples prompts interactivos, lo que reduce la latencia percibida en flujos de anotacion.
 
-La innovacion principal de esta version de Qualcomm es la optimizacion especifica para su hardware: los pesos pre-exportados estan compilados para ejecutarse en la NPU de los chipsets Snapdragon y Dragonwing, con soporte para los runtimes QAIRT (Qualcomm AI Runtime) y ONNX Runtime. El modelo acepta una resolucion de entrada de 720p (720x1280) y se puede reexportar con formas de entrada personalizadas mediante la libreria `qai_hub_models`.
+La model card de Qualcomm no detalla el dataset de entrenamiento, el numero de tokens ni si hubo fases de RLHF/DPO (no aplica en segmentacion). La innovacion principal respecto a SAM es la reduccion del codificador a una variante tiny, que baja el coste de computo y memoria hasta hacerlo desplegable en NPU moviles. Qualcomm anade el trabajo de compilacion y perfilado con Qualcomm AI Hub Workbench, con artefactos preexportados para QAIRT 2.51 y ONNX Runtime 1.30.0.
 
 ## Capacidades
 
-- Segmentacion de imagenes por prompts: acepta puntos, cajas o mascaras como entrada para segmentar objetos concretos.
-- Segmentacion sin entrenamiento adicional: el modelo generaliza a clases no vistas, ya que no depende de una taxonomia fija.
-- Generacion de embeddings de imagen: el encoder produce representaciones que pueden reutilizarse para multiples prompts sobre la misma imagen.
-- Optimizacion para hardware Qualcomm: ejecucion en NPU con latencias de 2,5 a 15 ms segun el chipset.
-- Soporte de exportacion personalizada: permite ajustar pesos, formas de entrada y configuraciones de runtime.
-- No incluye capacidades de texto, tool calling, agentes ni razonamiento multimodal.
+- Segmentacion de imagenes guiada por prompts de punto y de caja (point-based y box-based segmentation).
+- Segmentacion sin entrenamiento adicional (zero-shot) sobre nuevas imagenes, gracias a la naturaleza promptable del modelo.
+- Generacion de embeddings de imagen reutilizables para multiples consultas de segmentacion sobre la misma imagen.
+- Ejecucion on-device en NPU de Qualcomm con latencias de decodificador de 2 a 9 ms.
+- Exportacion a ONNX, QNN_DLC y TFLITE con pesos y formas de entrada personalizables.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo puramente de vision.
+- No dispone de modo thinking, vision multimodal ni audio.
 
 ## Casos de uso
 
-- Edicion de imagenes en movil: recortar o eliminar objetos de una foto en tiempo real usando un punto o una caja como prompt. MobileSam permite hacerlo en el dispositivo sin enviar datos a la nube.
-- Realidad aumentada: segmentar objetos del entorno para superponer contenido virtual, con latencias de 3-6 ms en Snapdragon 8 Gen 3, suficiente para aplicaciones interactivas.
-- Automatizacion de procesos de diseno: extraer siluetas de productos o personas en flujos de trabajo de diseno grafico, sustituyendo tareas manuales de recorte.
-- Vision por computador en robotica: segmentacion de objetos en tiempo real para robots moviles o drones, aprovechando el bajo consumo de la NPU de Qualcomm.
-- Analisis medico en dispositivos: segmentacion de estructuras en imagenes medicas (por ejemplo, organos en ecografias) con privacidad de datos al procesarse localmente.
-- Aplicaciones de accesibilidad: identificar y resaltar objetos en la escena para personas con discapacidad visual, usando prompts de voz convertidos a puntos.
+- Edicion fotografica en movil: el usuario toca un objeto y el modelo devuelve la mascara al instante; con decodificador de ~2-3 ms en Snapdragon 8 Elite, la respuesta es imperceptible y todo el procesamiento ocurre en el dispositivo.
+- Anotacion semiautomatica de datasets: el codificador se ejecuta una vez por imagen y el decodificador se reutiliza para cada prompt, acelerando el etiquetado de mascaras en pipelines de datos de vision.
+- Recorte y eliminacion de fondos en aplicaciones de consumo: la segmentacion por caja o punto permite aislar sujetos sin subir la imagen a la nube, lo que ayuda al cumplimiento de privacidad.
+- Vision por computador en automocion e IoT: los chipsets SA8650P, SA8255P y Dragonwing IQ-9075 ejecutan el decodificador en 5-6 ms, habilitando segmentacion en cabina o en camaras industriales.
+- Realidad aumentada: segmentacion de personas u objetos para efectos de oclusion y composicion en tiempo real sobre la NPU del dispositivo.
+- Preprocesado en pipelines de vision industrial: generar mascaras de regiones de interes antes de un clasificador o detector, reduciendo el area a procesar por etapas posteriores.
+- Herramientas de accesibilidad: seleccion de objetos por toque para usuarios con dificultades motoras, con respuesta local y baja latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precision (mIoU, Dice, etc.) en la informacion disponible. Sin embargo, la tabla de rendimiento de Qualcomm proporciona latencias de inferencia para el decoder en diferentes chipsets, medidas con ONNX y QNN_DLC en precision float:
+La model card no publica resultados de benchmarks de calidad de segmentacion (mIoU, Dice, etc.) en la informacion disponible. Si incluye metricas de latencia y memoria en NPU por chipset y runtime:
 
-| Chipset | Runtime | Tiempo de inferencia (ms) | Memoria pico (MB) |
-|---|---|---|---|
-| Snapdragon X2 Elite | ONNX | 2,634 | 4 |
-| Snapdragon X Elite | ONNX | 6,155 | 11 |
-| Snapdragon 8 Gen 3 | ONNX | 4,064 | 1-269 |
-| Snapdragon 8 Gen 1 | ONNX | 14,638 | 5-236 |
-| Snapdragon 8 Elite | ONNX | 3,186 | 0-235 |
-| Snapdragon 8 Elite Gen 5 | ONNX | 2,539 | 2-215 |
-| Snapdragon X2 Elite | QNN_DLC | 3,03 | 4 |
-| Snapdragon X Elite | QNN_DLC | 5,911 | 4 |
-| Snapdragon 8 Gen 3 | QNN_DLC | 3,782 | 4-221 |
-| Snapdragon 8 Gen 1 | QNN_DLC | 11,744 | 0-220 |
-| Snapdragon 8 Elite | QNN_DLC | 2,852 | 0-221 |
-| Snapdragon 8 Elite Gen 5 | QNN_DLC | 2,557 | 4-194 |
+| Runtime | Chipset | Precision | Inferencia decoder (ms) | Memoria pico (MB) | Unidad |
+|---|---|---|---|---|---|
+| ONNX | Snapdragon 8 Elite Extreme Gen 6 Mobile | float | 2,066 | 2 - 104 | NPU |
+| ONNX | Snapdragon 8 Elite Gen 5 For Galaxy Mobile | float | 2,538 | 3 - 216 | NPU |
+| ONNX | Snapdragon 8 Elite For Galaxy Mobile | float | 2,962 | 1 - 211 | NPU |
+| ONNX | Snapdragon X2 Elite | float | 2,602 | 4 - 4 | NPU |
+| ONNX | Snapdragon X Elite | float | 5,959 | 11 - 11 | NPU |
+| ONNX | Snapdragon 8 Gen 3 Mobile | float | 4,149 | 0 - 243 | NPU |
+| QNN_DLC | Snapdragon 8 Elite Extreme Gen 6 Mobile | float | 2,041 | 2 - 88 | NPU |
+| QNN_DLC | Snapdragon 8 Elite Gen 5 For Galaxy Mobile | float | 2,509 | 4 - 208 | NPU |
+| QNN_DLC | Snapdragon 8 Gen 1 Mobile | float | 8,919 | 0 - 210 | NPU |
+| QNN_DLC | Dragonwing IQ-9075 | float | 6,359 | 6 - 13 | NPU |
+| QNN_DLC | SA8650P | float | 6,389 | 0 - 196 | NPU |
+| TFLITE | Snapdragon 8 Elite Gen 5 For Galaxy Mobile | float | 2,149 | 0 - 184 | NPU |
 
-Estos datos corresponden unicamente al decoder; el encoder no aparece en la tabla publicada. La unidad de computo principal es la NPU en todos los casos.
+No se han publicado resultados de benchmarks de calidad (mIoU, Dice, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica directamente, ya que el modelo esta disenado para NPU de Qualcomm. En CPU/GPU generica, el encoder (26,6 MB) y el decoder (23,7 MB) en float requieren menos de 100 MB de memoria combinada.
-- GPUs recomendadas: no es el objetivo del modelo; esta pensado para chipsets Snapdragon (8 Gen 1, 8 Gen 3, 8 Elite, X Elite, X2 Elite) y Dragonwing (QCS8450, SA8650P, etc.).
-- Compatibilidad con GPU de consumo: el modelo es tan ligero que puede ejecutarse en cualquier GPU moderna (incluso integradas) con mas de 2 GB de VRAM, aunque no se han publicado benchmarks en ese escenario.
-- Opciones de despliegue: Qualcomm AI Hub Workbench, ONNX Runtime, TFLite, y la libreria `qai_hub_models` para exportacion personalizada.
-- Latencia y throughput: segun la tabla anterior, entre 2,5 y 15 ms en NPU de Qualcomm, dependiendo del chipset y runtime.
+- VRAM estimada: el modelo completo en float ocupa unos 50 MB (23,7 MB decoder + 26,6 MB encoder); la memoria pico medida en NPU varia entre 4 MB y 243 MB segun chipset y runtime.
+- GPU recomendadas: no aplica en el flujo principal; el modelo esta optimizado para NPU de Qualcomm (Snapdragon 8 Gen 1/3/Elite, Snapdragon X Elite/X2 Elite, Dragonwing IQ-8275/IQ-9075/IQ-X7181/Q-8750, SA8650P, SA8255P, SA8295P, QCS8450, QCS8550).
+- Cabe en GPU consumer: si, en cualquier GPU con mas de 1 GB de VRAM en formato PyTorch/ONNX float; en NPU movil cabe holgadamente.
+- Opciones de despliegue: Qualcomm AI Hub Models (exportacion custom), QAIRT 2.51, ONNX Runtime 1.30.0, TFLITE; el repo original de PyTorch permite inferencia en CPU/GPU.
+- Latencia: decodificador entre 2,0 y 8,9 ms en NPU segun chipset; el codificador no tiene latencia publicada en la informacion disponible.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precision (mIoU en COCO) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MobileSam (Qualcomm) | 13,11 M | 720p | no disponible | Apache 2.0 | Hugging Face, Qualcomm AI Hub |
-| SAM ViT-B | 91 M | 1024x1024 | ~46 (aprox.) | Apache 2.0 | GitHub, Hugging Face |
-| SAM ViT-H | 636 M | 1024x1024 | ~51 (aprox.) | Apache 2.0 | GitHub, Hugging Face |
-| FastSAM | 68 M | 1024x1024 | ~37 (aprox.) | Apache 2.0 | GitHub, Hugging Face |
+| Modelo | Parametros | Entrada | Licencia | Enfoque |
+|---|---|---|---|---|
+| MobileSam (Qualcomm) | ~13,1 M | 720x1280 | Apache 2.0 | Segmentacion promptable on-device |
+| SAM (Meta, ViT-B/L/H) | 91 M - 636 M (solo encoder) | 1024x1024 | Apache 2.0 | Segmentacion promptable de alta calidad, coste elevado |
+| SAM 2 (Meta) | no disponible en la informacion | no disponible | no disponible | Segmentacion de imagen y video |
+| FastSAM | no disponible en la informacion | no disponible | no disponible | Segmentacion basada en YOLO, todo en una etapa |
 
-Los datos de precision de SAM y FastSAM son aproximados y provienen de los papers originales; no se han verificado en esta ficha. MobileSam sacrifica precision por velocidad y eficiencia, siendo adecuado para despliegue en borde.
+No se dispone de datos de calidad (mIoU) para comparar el rendimiento de segmentacion de MobileSam frente a SAM o FastSAM en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser un modelo de segmentacion generica, puede fallar en objetos poco representados en los datos de entrenamiento (no se han publicado detalles del dataset).
-- Riesgo de alucinacion: en segmentacion, puede generar mascaras espurias cuando el prompt es ambiguo o la imagen tiene mucho ruido.
-- Limitaciones de contexto: la resolucion de entrada esta fijada a 720p en la configuracion pre-exportada; otras resoluciones requieren reexportacion.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero los pesos pre-exportados estan optimizados para hardware Qualcomm; su uso en otras plataformas puede requerir recompilacion.
-- Caveat de produccion: la tabla de rendimiento solo cubre el decoder; el encoder puede tener latencias mayores y no se ha publicado su rendimiento en NPU.
-- Dependencia de Qualcomm: el soporte de QNN_DLC y TFLITE esta ligado a los runtimes de Qualcomm; en otros dispositivos habra que usar ONNX o PyTorch.
+- No es un modelo de lenguaje: no procesa texto, no soporta tool calling ni razonamiento multi-paso.
+- La model card no documenta sesgos especificos; como modelo de vision entrenado con datos no descritos, puede heredar sesgos de representacion de su dataset original.
+- Riesgo de mascaras imprecisas en objetos pequenos, oclusiones complejas o bordes finos, propio de la variante tiny del codificador.
+- La resolucion de entrada esta fijada a 720p en los artefactos preexportados; otras formas requieren exportacion custom.
+- Los artefactos publicados son solo en precision float; no hay variantes cuantizadas listadas, lo que puede limitar el despliegue en hardware con restricciones de memoria.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del checkpoint original y de los artefactos de Qualcomm AI Hub.
+- El rendimiento depende del chipset: en Snapdragon 8 Gen 1 el decodificador tarda 8,9 ms frente a 2,0 ms en 8 Elite Extreme Gen 6.
+- No se publican metricas de calidad de segmentacion, por lo que la evaluacion en produccion requiere validacion propia.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/qualcomm/MobileSam
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/mobilesam
-- Qualcomm AI Hub (automocion): https://aihub.qualcomm.com/automotive/models/mobilesam
-- Repositorio GitHub (Qualcomm AI Hub Models): https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/mobilesam
-- Paper original (MobileSAM): https://arxiv.org/abs/2306.14289
-- Repositorio SAM de Meta: https://github.com/facebookresearch/segment-anything
+- Repositorio AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/mobilesam
+- Implementacion original de MobileSam (referenciada en la model card): https://github.com/facebookresearch/segment-anything
+- Paper de referencia (arXiv 2306.14289): https://arxiv.org/abs/2306.14289
+- Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
+- Descarga ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/mobilesam/releases/v0.67.0/mobilesam-onnx-float.zip
+- Descarga QNN_DLC float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/mobilesam/releases/v0.67.0/mobilesam-qnn_dlc-float.zip
+- Descarga TFLITE float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/mobilesam/releases/v0.67.0/mobilesam-tflite-float.zip

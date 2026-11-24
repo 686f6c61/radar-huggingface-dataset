@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "aaro765/BanBTP-2.0-BannerBTP-comparison",
+  "slug": "aaro765-banbtp-2-0-bannerbtp-comparison",
+  "author": "aaro765",
+  "url": "https://huggingface.co/aaro765/BanBTP-2.0-BannerBTP-comparison",
+  "created_at": "2026-08-06T02:18:12.000Z",
+  "updated_at": "2026-11-23T21:01:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparison And Benefits of Top 3 Bridge Aggregators (UPDATED 2026)",
+      "url": "https://coindoo.com/comparison-and-benefits-of-top-3-bridge-aggregators/",
+      "snippet": "Dec 16, 2024 · Discover how bridge aggregators like Socket, Rubic, and Jumper Exchange optimize cross-chain transactions for …Read more"
+    }
+  ]
+}

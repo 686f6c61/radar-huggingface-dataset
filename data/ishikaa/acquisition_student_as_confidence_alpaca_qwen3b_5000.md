@@ -1,97 +1,82 @@
 # ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000
 
 ## Resumen
+El modelo `ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000` es un checkpoint de la familia Qwen2 con 3.085.938.688 parametros (aproximadamente 3,1 mil millones), publicado en Hugging Face por el usuario `ishikaa`. Por el nombre del repositorio y las etiquetas asociadas (`qwen2`, `text-generation`, `conversational`), se trata de un ajuste fino del modelo base Qwen2-3B orientado a generacion de texto conversacional, presumiblemente entrenado sobre un subconjunto de 5000 ejemplos del dataset Alpaca con algun esquema de seleccion por confianza ("confidence") y posiblemente dentro de un marco de destilacion o adquisicion de datos ("acquisition_student_AS").
 
-`ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `ishikaa`, con 3.085.938.688 parametros (unos 3,09 mil millones) almacenados en safetensors y un repositorio de 6,2 GB. Por el nombre y las etiquetas, se trata de un modelo estudiante (destilacion o entrenamiento supervisado) derivado de la familia Qwen2, ajustado sobre un subconjunto de 5.000 ejemplos de tipo Alpaca y orientado a producir respuestas con algun tipo de senal de confianza. La model card es la plantilla automatica de Hugging Face y no aporta informacion sobre el modelo base, los datos de entrenamiento ni la licencia.
+La model card es la plantilla generada automaticamente por Hugging Face y no aporta informacion sustantiva: no documenta el proceso de entrenamiento, los datos exactos, la licencia ni los idiomas soportados. Toda la informacion tecnica disponible proviene de los metadatos del Hub (tags, tamano del repo, numero de parametros en safetensors) y de la convencion de nombres de la familia Qwen2.
 
-El interes de esta ficha es limitado pero real: es un ejemplo tipico de artefacto de investigacion publicado sin documentacion, con cero descargas y cero likes en el momento de la consulta. Sirve para ilustrar como se distribuyen checkpoints derivados de Qwen2 en el Hub y que precauciones hay que tomar antes de reutilizarlos, pero no hay evidencia publica de su calidad, de su comportamiento en tareas concretas ni de las condiciones legales de uso. Cualquier evaluacion debe hacerse localmente, partiendo de la base de que se desconoce el proceso de entrenamiento.
-
-Conviene subrayar que la etiqueta `arxiv:1910.09700` que aparece en los tags no corresponde a un paper de este modelo: es el enlace al articulo de Lacoste et al. (2019) sobre el calculador de impacto de Machine Learning que forma parte de la plantilla automatica de model card.
+Su relevancia es limitada y experimental: con 335 descargas y 0 likes, es un artefacto de investigacion mas que un modelo listo para produccion. Resulta util como referencia para quienes estudian tecnicas de seleccion de datos de ajuste fino o quieren inspeccionar un fine-tune pequeno de Qwen2, pero no debe tratarse como un modelo con garantias de calidad, licencia o soporte.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con configuracion Qwen2 (tag `qwen2`); modelo base exacto no confirmado |
-| Parametros totales | 3.085.938.688 (aprox. 3,09 B) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE en la informacion disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en el repositorio (solo pesos safetensors); se pueden generar cuantizaciones GGUF, AWQ o GPTQ con herramientas externas |
+| Arquitectura | Transformer decoder-only (familia Qwen2, segun tag `qwen2`) |
+| Parametros totales | 3.085.938.688 (aproximadamente 3,1 B) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (el modelo base Qwen2-3B emplea 32.768 tokens, pero no se confirma para este checkpoint) |
+| Tipos de cuantizacion | no disponible en el repo; al ser compatible con transformers y safetensors, es cuantizable con GPTQ, AWQ, bitsandbytes o GGUF mediante herramientas externas |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (libreria `transformers`) |
-| Tamano del repositorio | 6,2 GB |
-| Pipeline declarado | text-generation |
-| Descargas / likes | 0 / 0 |
-| Fecha de publicacion en el Hub | 25 de septiembre de 2026 (segun metadatos del Hub) |
+| Formato de pesos | safetensors (repo de 6,2 GB, pesos en precision de 16 bits) |
 
 ## Arquitectura y entrenamiento
+La arquitectura subyacente es la de Qwen2, un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). El tag `qwen2` del Hub confirma la familia, y el recuento de parametros (3,09 B) es coherente con el modelo Qwen2-3B. No se dispone de informacion sobre el numero de capas, dimension oculta, cabezas de atencion ni vocabulario especificos de este checkpoint.
 
-La unica informacion tecnica fiable es la etiqueta `qwen2` y el recuento de parametros del archivo safetensors. Una configuracion Qwen2 tipica es un transformer decoder-only con normalizacion RMSNorm previa, atencion con sesgo QKV (QKV bias), RoPE, SwiGLU en el MLP y atencion agrupada por consultas (GQA). El recuento de 3,085.938.688 parametros es compatible con los checkpoints de ~3 B de la familia Qwen, aunque no se puede confirmar cual es el modelo base original a partir de los datos disponibles. La longitud de contexto tampoco se declara en la model card ni en los metadatos consultados.
-
-Sobre el entrenamiento solo se puede inferir del propio identificador: `alpaca` sugiere ajuste supervisado sobre un dataset en formato Alpaca (instruccion, entrada, salida), `5000` apunta a 5.000 ejemplos utilizados, `student` indica que el checkpoint es un modelo alumno dentro de un esquema de destilacion o de aprendizaje por transferencia, `acquisition` y `confidence` sugieren que el objetivo de entrenamiento incorpora una funcion de adquisicion o una estimacion de confianza, posiblemente en un contexto de aprendizaje activo o de destilacion selectiva de ejemplos. No hay ninguna confirmacion de estos extremos en la model card, que se limita a la plantilla por defecto con campos `[More Information Needed]`. Tampoco se documenta el uso de RLHF, DPO, LoRA, precision mixta ni hiperparametros de entrenamiento.
+El nombre del repositorio sugiere un ajuste fino supervisado (SFT) sobre un subconjunto de 5000 ejemplos del dataset Alpaca, con un criterio de seleccion basado en confianza ("AS_confidence") y un rol de "student" que apunta a un esquema de destilacion o aprendizaje por adquisicion de datos. No obstante, la model card no documenta hiperparametros, numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO o cualquier otra etapa de alineamiento. Tampoco se especifica la precision de entrenamiento (fp16, bf16, etc.). Toda esta informacion debe considerarse no disponible.
 
 ## Capacidades
-
-- Generacion de texto conversacional: el pipeline declarado es `text-generation` y el tag `conversational` sugiere que el checkpoint esta orientado a dialogos de instrucciones y respuestas.
-- Seguimiento de instrucciones de tipo Alpaca: el ajuste aparente con formato Alpaca implica cierta capacidad de responder a instrucciones en el estilo de ese dataset.
-- Razonamiento basico y generacion de codigo: herencia esperable del modelo base Qwen2 si la destilacion no ha degradado sus capacidades; sin datos que lo confirmen.
-- Multilinguismo: no disponible. La familia Qwen2 suele ser multilingue, pero no hay declaracion para este checkpoint concreto.
-- Tool calling / function calling: no disponible. No hay plantilla de chat ni formato de herramientas documentado.
-- Soporte de agentes y razonamiento multi-paso: no disponible; un ajuste con 5.000 ejemplos y sesgo hacia confianza no suele preservar estas capacidades si no se entrenaron de forma explicita.
-- Modo de pensamiento (thinking), vision o audio: no disponible; no hay indicios de que el checkpoint sea multimodal.
-- Salida de puntuaciones de confianza: plausible por el identificador, pero no documentada ni verificable sin inspeccionar la cabeza de salida del modelo.
+- Generacion de texto autoregresiva en formato conversacional, segun el tag `conversational` y el pipeline `text-generation`.
+- Razonamiento basico e instrucciones en ingles (el dataset Alpaca es predominantemente en ingles), aunque no se confirma el soporte multilingue.
+- Compatible con `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo en infraestructura de Hugging Face.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidad multilingue: no disponible; probablemente limitada al ingles por la composicion de Alpaca.
+- Al ser un fine-tune pequeno sobre 5000 ejemplos, se espera que conserve las capacidades generales del base Qwen2-3B, pero sin garantias documentadas.
 
 ## Casos de uso
-
-- Reproduccion de experimentos de destilacion: el checkpoint se puede cargar con `transformers` y usarse como alumno de referencia para comparar estrategias de destilacion sobre Qwen de ~3 B, siempre que se documente internamente su procedencia.
-- Analisis de estimacion de incertidumbre: si el modelo expone efectivamente senales de confianza, sirve para estudiar como se correlacionan con la exactitud en un conjunto de validacion propio antes de integrarlo en cualquier sistema.
-- Prototipado rapido de asistentes conversacionales en local: con aproximadamente 3 B de parametros cabe en una GPU de consumo en cuantizacion de 4 bits, lo que permite montar una demo de chat sin coste de API.
-- Generacion de texto en entornos con recursos limitados: al ser un modelo pequeno, se puede ejecutar en una sola GPU de gama media o incluso en CPU con cuantizacion agresiva, util para pruebas offline.
-- Generacion de pares instruccion-respuesta sinteticos: se puede emplear como generador auxiliar de datos dentro de un pipeline de aumento de dataset, filtrando despues con un modelo mayor.
-- Investigacion sobre modelos "alumno" en aprendizaje activo: el nombre sugiere un bucle de adquisicion de ejemplos; sirve como pieza de un banco de pruebas academico para medir el efecto de la seleccion de muestras.
-- Evaluacion de riesgos de checkpoints no documentados: es un caso de estudio util para equipos de gobernanza de modelos que quieran auditar que se puede y que no se puede inferir de una model card automatica con licencia ausente.
+- Experimentacion academica en seleccion de datos: el checkpoint sirve para reproducir o comparar estrategias de filtrado por confianza sobre Alpaca, ya que su nombre codifica el criterio de seleccion empleado.
+- Prototipado rapido de asistentes conversacionales en ingles: con 3,1 B de parametros cabe en una GPU consumer y permite iterar sobre prompts sin infraestructura dedicada.
+- Evaluacion de destilacion student-teacher: util para medir cuanto retiene un student de 3 B respecto a un teacher mayor cuando se entrena con 5000 ejemplos seleccionados.
+- Base para nuevos fine-tunes: al ser un checkpoint transformers estandar en safetensors, se puede continuar el entrenamiento con LoRA o QLoRA sobre dominios especificos.
+- Pruebas de despliegue en TGI o endpoints de Hugging Face: los tags `text-generation-inference` y `endpoints_compatible` facilitan montar un servicio de inferencia de bajo coste.
+- Analisis de sesgos y calidad en modelos pequenos: sirve como caso de estudio de como un SFT con pocos ejemplos afecta a la coherencia y a la fidelidad respecto al base.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye la seccion de evaluacion cumplimentada, no hay tabla de resultados (MMLU, HumanEval, GSM8K u otros) y la busqueda web no ha devuelto ningun material relacionado con este checkpoint. Cualquier cifra que se quiera usar debera medirse localmente.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: en fp16/bf16, unos 6,2 GB de pesos mas overhead de activaciones y cache KV; en int8, alrededor de 3,2 GB; en 4 bits, del orden de 1,8-2,2 GB. Son estimaciones derivadas del recuento de parametros, no medidas sobre este checkpoint.
-- GPU recomendadas para fp16: NVIDIA A100 40 GB, H100, L40S o RTX 4090 24 GB, con margen amplio para contexto largo.
-- GPU de consumo: cabe holgadamente en RTX 3090/4090 (24 GB) y RTX 4080/4070 Ti Super (16 GB) en precision completa; en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 8 GB, RTX 3070) es recomendable cuantizar a 8 o 4 bits.
-- Despliegue: la etiqueta `text-generation-inference` y `endpoints_compatible` indican compatibilidad con TGI y con los endpoints de Hugging Face; tambien es desplegable con vLLM. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, ya que el repositorio solo contiene safetensors.
-- Latencia y throughput: no disponible. No hay mediciones publicadas ni configuracion de referencia.
+- VRAM estimada en fp16: aproximadamente 6,2 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, entre 8 y 10 GB para contextos moderados.
+- VRAM estimada en cuantizacion 8 bits: alrededor de 3,5-4 GB.
+- VRAM estimada en cuantizacion 4 bits (GGUF Q4_K_M o GPTQ): alrededor de 2-2,5 GB, lo que permite ejecucion en GPUs consumer de gama media.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A10G, L4 o A100 para mayor throughput.
+- Cabe en GPU consumer: si, en tarjetas con 8 GB o mas en fp16 y en tarjetas con 4-6 GB si se cuantiza.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (soportado por tags), vLLM (compatible con arquitectura Qwen2), llama.cpp/Ollama (previa conversion a GGUF), y endpoints de Hugging Face.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-La comparativa es orientativa, porque no se ha confirmado cual es el modelo base de este checkpoint. Los datos de las alternativas provienen de su documentacion publica y conviene verificarlos en el momento de la evaluacion.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000 | 3,09 B | no disponible | no disponible | Hugging Face (335 descargas) | Fine-tune experimental sobre Alpaca |
+| Qwen2-3B (base) | 3,09 B | 32.768 tokens | Apache 2.0 (segun publicacion original de Qwen) | Hugging Face, oficial | Base del presente checkpoint; documentacion completa |
+| Llama 3.2 3B Instruct | 3,21 B | 131.072 tokens | Llama 3.2 Community License | Hugging Face, oficial | Alternativa con contexto muy superior y licencia conocida |
+| Phi-3-mini | 3,8 B | 4.096-128.000 tokens (segun variante) | MIT | Hugging Face, oficial | Modelo pequeno con buen rendimiento en razonamiento |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| `ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000` | 3,09 B | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
-| Qwen2.5-3B (referencia de familia) | 3,09 B | 32.768 tokens, ampliable con YaRN | Apache-2.0 | safetensors y GGUF, ampliamente desplegado |
-| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | safetensors y GGUF |
-
-Frente a estas alternativas, el checkpoint de `ishikaa` no aporta informacion verificable sobre contexto, licencia ni rendimiento, por lo que en un entorno de produccion la comparacion se resuelve a favor de cualquiera de los modelos con licencia explicita y evaluaciones publicas.
+La comparativa se basa en datos publicos de los modelos alternativos; para este checkpoint no hay datos de rendimiento que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
-
-- Licencia no disponible: sin una licencia declarada no hay autorizacion explicita de uso comercial, redistribucion ni modificacion. En la practica equivale a "todos los derechos reservados" hasta que el autor se pronuncie.
-- Model card vacia: todos los campos relevantes (datos de entrenamiento, idiomas, modelo base, uso previsto, limitaciones) estan sin cumplimentar, por lo que no se puede auditar el origen de los datos ni posible contaminacion de benchmarks.
-- Riesgo de alucinacion: un ajuste con solo 5.000 ejemplos sobre un modelo de 3 B tiende a producir respuestas plausibles pero incorrectas, especialmente en dominios especializados y en tareas de razonamiento largo.
-- Idiomas no declarados: no se puede garantizar un comportamiento correcto en castellano ni en ningun otro idioma distinto del que aparezca en el dataset Alpaca utilizado.
-- Capacidades potencialmente degradadas: si el objetivo de entrenamiento estaba centrado en confianza o en un subconjunto pequeno de datos, es probable que se hayan perdido capacidades de tool calling, agentes o codigo respecto al modelo base.
-- Sin benchmarks ni validacion independiente: cero descargas y cero likes implican que no hay terceros que hayan reportado resultados, sesgos observados ni fallos conocidos.
-- Metadatos a verificar: la fecha de publicacion registrada en el Hub es posterior a la fecha habitual de consulta, lo que sugiere que conviene comprobar la trazabilidad del repositorio antes de apoyarse en el.
-- Sin plantilla de chat documentada: no se especifica que formato de prompt espera el modelo, de modo que las respuestas pueden degradarse si se aplica una plantilla distinta de la usada en el ajuste.
-- Uso responsable: al desconocerse la composicion del dataset, no se puede descartar la presencia de sesgos sociales, contenido toxico o datos personales en el entrenamiento.
+- La model card esta vacia (plantilla automatica): no hay informacion sobre datos, hiperparametros, evaluacion ni uso previsto.
+- Licencia no especificada: no se puede garantizar el uso comercial; hay que contactar con el autor o asumir riesgo legal.
+- Idiomas no declarados: probablemente limitado al ingles por el dataset Alpaca; el rendimiento en castellano es incierto.
+- Riesgo de alucinacion y de sobreajuste a los 5000 ejemplos de entrenamiento, dado el bajo volumen de datos de SFT.
+- Sin garantias de calidad ni de alineamiento: no se documenta RLHF, DPO ni filtros de seguridad.
+- Numero de descargas muy bajo (335) y 0 likes: sin validacion por parte de la comunidad.
+- Fecha de creacion en el Hub (2026-10-14) posterior a la fecha de referencia habitual; conviene verificar la integridad del repositorio antes de usarlo en produccion.
+- No se recomienda su uso en produccion sin una evaluacion propia exhaustiva y sin aclarar la licencia.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000
-- Paper citado en las etiquetas (plantilla de model card, no del modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
-- Calculador de impacto de Machine Learning referenciado en la plantilla: https://mlco2.github.io/impact
-- No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este checkpoint.
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_alpaca_qwen3b_5000
+- Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ML: https://mlco2.github.io/impact#compute
+- Documentacion de Qwen2 (familia base): no disponible en la informacion proporcionada
+- Repositorio o paper del autor sobre el metodo de adquisicion por confianza: no disponible

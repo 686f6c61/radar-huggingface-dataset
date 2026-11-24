@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 326,
+  "downloads_30d": 425,
   "trending_score": 0,
   "parameters": 980046848,
   "parameters_human": "980.0M",
@@ -45,16 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OpenStems-Models - Hugging Face",
-      "url": "https://huggingface.co/OpenStems/OpenStems-Models",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "OpenStems/OpenStems-Models at main - Hugging Face",
-      "url": "https://huggingface.co/OpenStems/OpenStems-Models/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

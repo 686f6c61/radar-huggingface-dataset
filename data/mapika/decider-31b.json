@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 394,
+  "downloads_30d": 386,
   "trending_score": 0,
   "parameters": 20868591152,
   "parameters_human": "20.87B",
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "\"Tout le monde paie\" pour la guerre en Iran, avertit le Qatar, la ...",
-      "url": "https://fr.euronews.com/2026/10/06/tout-le-monde-paie-pour-la-guerre-en-iran-avertit-le-qatar-la-mediation-se-poursuit",
-      "snippet": "1 day ago · La guerre en Iran perturbe le commerce mondial. Les puissances régionales renforcent la défense saoudienne. Le Qatar …"
-    },
-    {
-      "title": "Le Qatar avertit que \"tout le monde paie\" la guerre en Iran, la ...",
-      "url": "https://news.cridem.org/C_Info.php?article=797155",
-      "snippet": "1 day ago · EURONEWS - La guerre en Iran perturbe le commerce mondial, les puissances régionales voulant renforcer la défense …"
-    },
-    {
-      "title": "Le Qatar avertit que \"tout le monde paie\" la guerre en Iran, la ...",
-      "url": "https://qatar.fr/international/le-qatar-avertit-que-tout-le-monde-paie-la-guerre-en-iran-la-mediation-continue/",
-      "snippet": "23 hours ago · La guerre en Iran perturbe le commerce mondial, les puissances régionales voulant renforcer la défense saoudienne. …"
-    },
-    {
-      "title": "Guerre au Moyen-Orient: le Qatar affirme que les négociations",
-      "url": "https://www.bfmtv.com/international/moyen-orient/iran/guerre-au-moyen-orient-le-qatar-affirme-que-les-negociations-entre-l-iran-et-les-etats-unis-se-poursuivent_AD-202610060593.html",
-      "snippet": "1 day ago · Le Qatar, qui joue le rôle de médiateur dans la guerre au Moyen-Orient, a affirmé ce mardi 6 octobre que les discussions …"
-    },
-    {
-      "title": "Guerre au Moyen-Orient : les négociations se poursuivent entre l'Iran ...",
-      "url": "https://www.lefigaro.fr/international/guerre-au-moyen-orient-les-negociations-se-poursuivent-entre-l-iran-et-les-etats-unis-selon-le-qatar-20261006?msockid=37b8f27114986f330e88e59a150e6e90",
-      "snippet": "1 day ago · Le Qatar, qui joue le rôle de médiateur dans la guerre au Moyen-Orient, a affirmé mardi 6 octobre que les discussions se …"
-    }
-  ]
+  "sources": []
 }

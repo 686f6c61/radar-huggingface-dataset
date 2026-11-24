@@ -2,88 +2,91 @@
 
 ## Resumen
 
-OTel-2.0-LLM-31B-IT-i1-GGUF es una reedición cuantizada del modelo OTel-2.0-LLM-31B-IT publicado originalmente por Red Hat AI (RedHatAI). El autor de esta versión, mradermacher, es un conocido generador de cuantizaciones GGUF de la comunidad y en este caso aplica cuantización con matriz de importancia (imatrix) sobre los pesos originales en formato Hugging Face. El modelo base cuenta con 30.697.345.596 parámetros, lo que lo sitúa en la categoría de modelos densos de aproximadamente 31B, y está orientado a uso conversacional (etiqueta "conversational" e "IT" en el nombre, indicando ajuste por instrucciones).
+OTel-2.0-LLM-31B-IT es un modelo de lenguaje de gran tamano especializado en el dominio de las telecomunicaciones, desarrollado originalmente por Red Hat (RedHatAI) en el marco de la iniciativa Open Telco AI, con la colaboracion de GSMA, AT&T, Microsoft, Dell y AMD. El modelo parte de una base Gemma (la model card enlaza la licencia de Gemma 4) y ha sido sometido a un post-entrenamiento de adaptacion de dominio mediante OSFT (Orthogonal Subspace Fine-Tuning), una tecnica de aprendizaje continuo que permite especializar el modelo sin perder capacidades generales.
 
-La relevancia de esta ficha radica en que el modelo base está especializado en el dominio de OpenTelemetry (OTel), tal y como sugiere su nombre, lo que lo hace potencialmente útil para tareas de observabilidad, instrumentación y diagnóstico de sistemas distribuidos. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican licencia, idiomas, arquitectura detallada ni datos de entrenamiento en la información proporcionada, por lo que muchas de las filas de especificaciones deben marcarse como "no disponible".
+Con 30.697.345.596 parametros totales (aproximadamente 30,7 mil millones), el modelo esta disenado para tareas de instruction-following, generacion aumentada por recuperacion (RAG) y tool calling en contextos de operadores y proveedores de telecomunicaciones. La ficha que nos ocupa es la cuantizacion GGUF realizada por mradermacher, que ofrece el modelo en una amplia gama de niveles de cuantizacion (desde IQ1_S hasta Q6_K) con pesos ponderados por imatrix, lo que facilita su despliegue en hardware de consumo y en entornos con llama.cpp u Ollama.
 
-El repositorio ocupa 90,2 GB e incluye un conjunto amplio de cuantizaciones (desde IQ1_S hasta Q6_K, además de Q4_0 y Q4_1), lo que permite desplegar el modelo en un rango amplio de hardware, desde GPUs de consumo con poca VRAM hasta servidores con GPUs profesionales. El pipeline no está declarado en la información disponible.
+La relevancia actual del modelo radica en su enfoque vertical: frente a los modelos generalistas, OTel-2.0 apunta a casos de uso telco concretos (soporte a redes, configuracion, diagnostico, documentacion tecnica) y anade capacidades multimodales (la model card lo etiqueta como modelo de vision). La licencia Apache 2.0 declarada facilita su adopcion comercial, aunque conviene revisar la licencia base de Gemma enlazada en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer denso, inferido del tamaño y del formato GGUF) |
-| Parametros totales | 30.697.345.596 |
-| Parametros activos | no aplica (no es MoE según la información disponible) |
+| Arquitectura | Transformer (base Gemma), post-entrenado con OSFT; multimodal (vision) segun etiquetas de la model card |
+| Parametros totales | 30.697.345.596 (~30,7 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base está en formato Hugging Face (safetensors) |
-| Tamano del repositorio | 90,2 GB |
-| Pipeline declarado | no disponible |
-| Etiquetas | gguf, endpoints_compatible, region:us, imatrix, conversational |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (ponderadas con imatrix) |
+| Idiomas soportados | ingles (en) |
+| Licencia | Apache 2.0 (con enlace a licencia de Gemma 4 en la model card) |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. El nombre y el tamaño (30,7B parámetros) son compatibles con un transformer denso de tipo decoder-only, pero no se confirma en la información disponible. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. La etiqueta "IT" en el nombre sugiere un ajuste por instrucciones, y la etiqueta "conversational" indica que el modelo está orientado a diálogo multi-turno.
+El modelo base RedHatAI/OTel-2.0-LLM-31B-IT es un transformer denso de aproximadamente 30,7 mil millones de parametros construido sobre una base Gemma y adaptado al dominio de telecomunicaciones. La innovacion tecnica central es el uso de OSFT (Orthogonal Subspace Fine-Tuning), una variante de ajuste fino que restringe las actualizaciones a subespacios ortogonales, permitiendo el aprendizaje continuo y la adaptacion de dominio sin degradar de forma catastrofica las capacidades previamente adquiridas. Segun las etiquetas de la model card, el modelo ha sido post-entrenado para instruction-following, tool calling y RAG, y se distribuye como modelo multimodal (vision).
 
-La innovación técnica documentada en esta ficha es la cuantización con matriz de importancia (imatrix) aplicada por mradermacher sobre los pesos originales de RedHatAI. El uso de imatrix permite ponderar la importancia de cada tensor durante la cuantización, lo que típicamente mejora la calidad de las cuantizaciones de baja precisión (especialmente en rangos IQ1, IQ2 e IQ3) en comparación con la cuantización uniforme. El repositorio incluye la práctica totalidad de niveles de cuantización disponibles en el ecosistema llama.cpp, desde IQ1_S hasta Q6_K.
+No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion exacta del dataset telco ni si se aplicaron fases de RLHF o DPO mas alla del post-entrenamiento mencionado. Esta version concreta es una cuantizacion GGUF realizada por mradermacher, que aplica cuantizacion ponderada por imatrix (fichero imatrix incluido en el repositorio para generar cuantizaciones propias). Los ficheros mmproj necesarios para la parte de vision, si existen, se alojan en el repositorio estatico de cuantizaciones del mismo autor.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según la etiqueta "conversational" del repositorio.
-- Ajuste por instrucciones (IT), orientado a seguir indicaciones del usuario.
-- Especialización probable en el dominio de OpenTelemetry y observabilidad, derivada del nombre del modelo base (OTel-2.0-LLM), aunque no se detalla en la información disponible.
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que sugiere integración con infraestructuras de despliegue tipo API.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
+- Generacion de texto e instruction-following en ingles, con especializacion en contenido tecnico de telecomunicaciones.
+- Tool calling / function calling, orientado a la integracion con sistemas y APIs del dominio telco.
+- Soporte para RAG (generacion aumentada por recuperacion), pensado para consultar documentacion tecnica y bases de conocimiento de operadores.
+- Capacidades multimodales (vision) segun la model card; requiere los ficheros mmproj correspondientes del repositorio estatico.
+- Razonamiento multi-paso y soporte de agentes, segun las etiquetas de instruction-following y tool-calling.
+- Adaptacion de dominio mediante OSFT, que preserva capacidades generales mientras especializa en telecomunicaciones.
+- Compatibilidad con vLLM y con el ecosistema transformers/llama.cpp (formato GGUF).
 
 ## Casos de uso
 
-- Asistencia en instrumentación con OpenTelemetry: el modelo, presuntamente especializado en el dominio OTel, podría ayudar a generar y revisar código de instrumentación (traces, métricas, logs) en aplicaciones, aunque esta capacidad no está confirmada en la documentación disponible.
-- Atención al cliente automatizada: al estar etiquetado como "conversational" e "IT", puede emplearse en sistemas de diálogo multi-turno, siempre que se valide su calidad y su ventana de contexto real, que no está documentada.
-- Despliegue en entornos con VRAM limitada: gracias a la disponibilidad de cuantizaciones desde IQ1_S hasta Q6_K, es posible ejecutar el modelo en GPUs de consumo mediante llama.cpp u Ollama, ajustando el nivel de cuantización al hardware disponible.
-- Generación de documentación técnica: el modelo puede redactar y resumir documentación de sistemas distribuidos y observabilidad, aprovechando su posible especialización en el dominio.
-- Prototipado rápido de asistentes conversacionales: la variedad de cuantizaciones permite iterar rápidamente en local antes de escalar a un despliegue en servidor.
-- Integración en pipelines de API compatibles: la etiqueta "endpoints_compatible" sugiere que puede servirse detrás de endpoints compatibles con OpenAI, facilitando su integración en aplicaciones existentes.
-- Análisis y explicación de configuraciones de observabilidad: el modelo podría ayudar a interpretar ficheros de configuración del OpenTelemetry Collector y explicar sus parámetros, aunque esta capacidad no está verificada en la información disponible.
+- Soporte tecnico a operadores: el modelo puede responder consultas sobre configuracion de red, protocolos y procedimientos telco, apoyandose en RAG sobre la documentacion interna del operador para reducir alucinaciones.
+- Asistente de documentacion tecnica: resumir y responder preguntas sobre especificaciones de GSMA, 3GPP o manuales de equipos, usando la ventana de contexto del modelo para ingerir fragmentos extensos.
+- Automatizacion de diagnostico: integrado como agente con tool calling para consultar APIs de monitorizacion y proponer acciones de remediacion en incidencias de red.
+- Generacion de scripts de configuracion: producir plantillas y comandos para equipos de red a partir de descripciones en lenguaje natural, con validacion posterior en pipelines de CI/CD.
+- Analisis de imagenes tecnicas: gracias a su componente multimodal, interpretar capturas de paneles de gestion, diagramas de topologia o fotografias de equipos para asistir en tareas de campo.
+- Atencion al cliente telco: gestionar conversaciones multi-turno sobre facturacion, planes y servicios, con capacidad de invocar funciones internas para consultar el estado de una linea.
+- Formacion interna: generar materiales y cuestionarios para ingenieros de red a partir de la base documental de la organizacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamaño del modelo (30,7B parámetros), las cuantizaciones de 4 bits requieren del orden de 17-20 GB de VRAM, las de 5-6 bits del orden de 22-28 GB, y las de 2-3 bits del orden de 10-14 GB; estas cifras son estimaciones y no están confirmadas por el autor.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría esperar un funcionamiento adecuado en A100 40/80 GB, H100, L40S o RTX 6000 Ada para cuantizaciones medias-altas.
-- ¿Cabe en GPU de consumo? Las cuantizaciones bajas (IQ1_S, IQ2_XXS, IQ2_XS, Q2_K) podrían caber en GPUs de consumo con 12-16 GB de VRAM, y las cuantizaciones de 4 bits en GPUs de 24 GB (RTX 3090, RTX 4090), aunque no hay confirmación oficial.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; la etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints tipo API. No se confirma soporte de vLLM o TGI para este formato.
-- Latencia y throughput estimados: no disponible en la información proporcionada.
+- VRAM estimada para inferencia segun cuantizacion: desde ~7,3 GB (i1-IQ1_S, calidad muy degradada) hasta ~25,3 GB (i1-Q6_K). La opcion recomendada i1-Q4_K_M ocupa ~18,8 GB y la i1-Q5_K_M ~21,9 GB.
+- GPU recomendadas: para cuantizaciones Q4/Q5 en precision de calidad, se requiere una GPU con 24 GB o mas (RTX 3090, RTX 4090, A10G, L4 en configuraciones con offload). Para despliegues de produccion con mayor throughput, A100 40/80 GB o H100.
+- Cabe en GPU de consumo: si, en cuantizaciones IQ3/IQ4 (a partir de ~13 GB) en GPUs de 16-24 GB; las cuantizaciones Q5/Q6 requieren 24 GB o reparto parcial en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF; para el modelo base en safetensors, vLLM y transformers. La parte de vision requiere los ficheros mmproj del repositorio estatico.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con modelos de la misma categoría, ya que no se conocen los benchmarks, la licencia ni la arquitectura detallada del modelo base. Se indica "no disponible".
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| OTel-2.0-LLM-31B-IT-i1-GGUF | 30,7B | no disponible | no disponible | GGUF | Cuantización imatrix de RedHatAI/OTel-2.0-LLM-31B-IT |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos para comparar |
+| OTel-2.0-LLM-31B-IT (esta ficha) | ~30,7 B | no disponible | Telecomunicaciones, tool calling, vision | Apache 2.0 | GGUF (y safetensors en el base) |
+| Modelos generalistas de ~30 B (p. ej. Gemma base) | ~27-31 B | no disponible | Proposito general | Licencia Gemma | safetensors, GGUF |
+| Modelos telco de ~7-8 B | ~7-8 B | no disponible | Telecomunicaciones | variable | safetensors, GGUF |
+
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada; la comparativa se limita a tamano, licencia y especializacion. Para una evaluacion cuantitativa seria necesario consultar benchmarks publicados del modelo base RedHatAI/OTel-2.0-LLM-31B-IT.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Riesgo de alucinación: no cuantificado; como todo modelo generativo, existe riesgo de generar información incorrecta, especialmente en dominios técnicos especializados como OpenTelemetry.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados, lo que impide garantizar su idoneidad para casos de uso multilingües o de contexto largo.
-- Restricciones de licencia: la licencia no está disponible, por lo que no se puede confirmar si el uso comercial está permitido. Se recomienda contactar con el autor del modelo base (RedHatAI) antes de usarlo en producción.
-- Cuantizaciones de muy baja precisión (IQ1_S, IQ2_XXS): pueden degradar notablemente la calidad de las respuestas; se recomienda validar cada nivel de cuantización en la tarea concreta.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de la comunidad sobre su calidad o estabilidad.
-- El repositorio ocupa 90,2 GB, lo que requiere espacio en disco considerable para descargar varias cuantizaciones.
-- No se confirma soporte de tool calling, agentes ni razonamiento multi-paso, capacidades habitualmente críticas en producción.
+- Idioma: el modelo esta entrenado y orientado principalmente al ingles; el rendimiento en castellano no esta garantizado ni documentado.
+- Especializacion de dominio: su ajuste a telecomunicaciones puede reducir el rendimiento en tareas generales fuera de ese ambito en comparacion con modelos generalistas del mismo tamano.
+- Riesgo de alucinacion: como todo LLM, puede inventar especificaciones tecnicas, comandos o referencias normativas; en entornos de red conviene validar las salidas antes de aplicarlas.
+- Licencia: la model card declara Apache 2.0 pero enlaza la licencia de Gemma 4; es imprescindible verificar los terminos aplicables antes de un uso comercial, ya que la licencia base de Gemma puede imponer restricciones adicionales.
+- Cuantizaciones extremas: las variantes IQ1 e IQ2 degradan notablemente la calidad; no se recomiendan para produccion.
+- Vision: la funcionalidad multimodal depende de ficheros mmproj alojados en el repositorio estatico; sin ellos, el modelo funciona solo como texto.
+- Contexto: no se ha publicado la longitud de contexto, por lo que no se puede garantizar el comportamiento en conversaciones o documentos muy largos.
+- Sesgos: no se documentan evaluaciones de sesgo; al estar entrenado sobre datos telco y en ingles, puede reflejar sesgos de esas fuentes.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/OTel-2.0-LLM-31B-IT-i1-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/OTel-2.0-LLM-31B-IT-i1-GGUF
 - Modelo base: https://huggingface.co/RedHatAI/OTel-2.0-LLM-31B-IT
+- Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/OTel-2.0-LLM-31B-IT-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#OTel-2.0-LLM-31B-IT-i1-GGUF
+- Preguntas frecuentes y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Licencia de Gemma 4 (enlazada en la model card): https://ai.google.dev/gemma/docs/gemma_4_license
+- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

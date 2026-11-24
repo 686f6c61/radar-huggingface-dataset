@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 18,
-  "downloads_30d": 356,
+  "downloads_30d": 360,
   "trending_score": 12,
   "parameters": 1746808325,
   "parameters_human": "1.75B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MTalha2001/LOCUS-2B · Hugging Face",
-      "url": "https://huggingface.co/MTalha2001/LOCUS-2B",
-      "snippet": "Locus-2B grounds a referring expression in an image and returns its bounding box. It is Qwen/Qwen3-VL-2B-Instruct with a small box head, trained with the Locus (Locate Once, Check Until Settled) recipe: The image is prefilled once; every expression about it runs as a short branch over the cached ..."
-    },
-    {
-      "title": "MTalha2001 (Muhammad Talha) - Hugging Face",
-      "url": "https://huggingface.co/MTalha2001/models",
-      "snippet": "MTalha2001&#x27;s models1 Sort: Recently updated MTalha2001/SatEdit Image-Text-to-Image •Updated 3 days ago• 2"
-    },
-    {
-      "title": "GitHub - muhammad-talha-ad/LOCUS",
-      "url": "https://github.com/muhammad-talha-ad/LOCUS/tree/main",
-      "snippet": "Locus uses the head as a speculative drafter for the model&#x27;s own coordinate tokens. The draft is rendered as the tokens the model would write, and the same model checks all of them in parallel by Jacobi iteration, keeping the prefix it agrees with and correcting the next token until the draft stops changing."
-    },
-    {
-      "title": "Train a Custom AI Image LoRA: 12 Steps [2026]",
-      "url": "https://tech-insider.org/train-custom-ai-image-lora-2026/",
-      "snippet": "Learn how to train a custom AI image LoRA for Flux or SDXL in 12 steps, using Kohya_ss, ai-toolkit, or cloud tools like fal.ai and Civitai."
-    },
-    {
-      "title": "Amazon Strands Decider 2B: Open Agent AI Model [2026]",
-      "url": "https://tech-insider.org/amazon-strands-decider-2b-open-source-agent-model-2026/",
-      "snippet": "Amazon released Strands Decider 2B, a free open-source AI model that picks agent decisions in ~115ms. Here is what it does and why it matters."
-    }
-  ]
+  "sources": []
 }

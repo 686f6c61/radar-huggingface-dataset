@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "XxNoelW/Agora-1.0-hf",
+  "slug": "xxnoelw-agora-1-0-hf",
+  "author": "XxNoelW",
+  "url": "https://huggingface.co/XxNoelW/Agora-1.0-hf",
+  "created_at": "2026-11-23T22:07:23.000Z",
+  "updated_at": "2026-11-23T22:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "agora",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888867,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

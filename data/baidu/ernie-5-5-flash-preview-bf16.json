@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "baidu/ERNIE-5.5-Flash-Preview-BF16",
+  "slug": "baidu-ernie-5-5-flash-preview-bf16",
+  "author": "baidu",
+  "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview-BF16",
+  "created_at": "2026-11-23T09:01:08.000Z",
+  "updated_at": "2026-11-24T02:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie5_5_moe",
+    "text-generation",
+    "ERNIE5.5",
+    "MoE",
+    "agent",
+    "en",
+    "zh",
+    "arxiv:2610.24766",
+    "arxiv:2610.17959",
+    "arxiv:2610.40577",
+    "base_model:baidu/ERNIE-5.5-Flash-Base",
+    "base_model:finetune:baidu/ERNIE-5.5-Flash-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": 299559159366,
+  "parameters_human": "299.56B",
+  "storage_bytes": 599602777255,
+  "storage_human": "599.6 GB",
+  "context_length": null,
+  "base_model": "baidu/ERNIE-5.5-Flash-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baidu - 百度一下，你就知道",
+      "url": "https://gate.baidu.com/",
+      "snippet": "百度是全球领先的中文搜索引擎，致力于让用户便捷获取信息，找到所需。"
+    },
+    {
+      "title": "百度一下",
+      "url": "https://wap.baidu.com/",
+      "snippet": "全球最大的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关 ...Read more"
+    },
+    {
+      "title": "Baidu - 百度一下，你就知道",
+      "url": "https://global.baidu.com/",
+      "snippet": "百度是全球领先的中文搜索引擎，致力于帮助用户便捷获取信息并找到所需内容。"
+    },
+    {
+      "title": "Baidu - 百度一下，你就知道",
+      "url": "https://sp1.baidu.com/",
+      "snippet": "百度是全球领先的中文搜索引擎，致力于让用户更便捷地获取信息，拥有庞大的中文网页数据库。"
+    },
+    {
+      "title": "百度一下，你就知道",
+      "url": "https://www5.baidu.com/s",
+      "snippet": "百度是全球领先的中文搜索引擎，致力于让用户便捷地获取信息并找到所求内容。"
+    }
+  ]
+}

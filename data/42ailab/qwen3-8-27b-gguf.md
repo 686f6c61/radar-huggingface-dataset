@@ -1,79 +1,91 @@
 # 42ailab/Qwen3.8-27B-GGUF
 
 ## Resumen
-Qwen3.8-27B es un modelo de lenguaje de 27.320.697.856 parametros desarrollado por el equipo Qwen de Alibaba, distribuido bajo licencia Apache-2.0. La ficha que nos ocupa, `42ailab/Qwen3.8-27B-GGUF`, no es un modelo nuevo ni una conversion propia: se trata de una copia byte a byte de dos ficheros GGUF generados por unsloth y publicados originalmente en `unsloth/Qwen3.8-27B-GGUF`. El repositorio actua como respaldo para garantizar la disponibilidad de los mismos bytes si el repositorio original se renombra, se elimina o se sobrescribe.
 
-El modelo esta orientado a tareas de codigo y de agentes, e incorpora vision integrada, lo que se refleja en el tag `image-text-to-text` y en la presencia de un proyector visual separado (`mmproj-F16.gguf`). El repositorio incluye unicamente la cuantizacion UD-Q4_K_M (15,33 GiB) junto con el proyector de vision en F16 (884,6 MiB), lo que permite desplegar el modelo en equipos con recursos moderados mediante llama.cpp u otros runners compatibles con GGUF.
+Qwen3.8-27B es un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) desarrollado por el equipo Qwen de Alibaba y publicado bajo licencia Apache-2.0. El repositorio analizado, `42ailab/Qwen3.8-27B-GGUF`, es una redistribución en formato GGUF preparada por 42ailab para su integración en la aplicación de escritorio 42model; los archivos son byte a byte idénticos a los publicados por unsloth en `unsloth/Qwen3.8-27B-GGUF`, que realizó la conversión. El modelo pertenece a una nueva generación de la familia Qwen y está orientado a tareas de programación y de agentes, con capacidad de visión integrada (pipeline `image-text-to-text`).
 
-La relevancia de esta ficha es doble: por un lado, documenta un modelo de la generacion Qwen3.8 con capacidades multimodales y de agente; por otro, ilustra una practica de preservacion de artefactos (backup verificado por sha256) frente a la volatilidad de los repositorios de conversiones de terceros.
+La relevancia de esta ficha radica en que ofrece un modelo de 27B con visión y soporte para flujos agénticos en un formato cuantizado (UD-Q4_K_M, 15,33 GiB) que puede ejecutarse en hardware de consumo de gama alta, manteniendo la licencia permisiva Apache-2.0 del modelo original. El repositorio incluye además un proyector de visión separado (`mmproj-F16.gguf`, 884,6 MiB) necesario para el procesamiento de imágenes en llama.cpp y derivados.
+
+No se dispone de información publicada en la model card sobre arquitectura interna, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks; los datos que siguen se limitan a lo verificable en el repositorio y en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer de la familia Qwen3.8; la model card no detalla la arquitectura interna) |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo transformer de la familia Qwen, sin detalle en la model card) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | UD-Q4_K_M (unica cuantizacion incluida en este repositorio); proyector visual en F16 |
+| Tipos de cuantizacion | UD-Q4_K_M (archivo principal); proyector de vision en F16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`Qwen3.8-27B-UD-Q4_K_M.gguf` + `mmproj-F16.gguf`) |
+| Formato de pesos | GGUF (`Qwen3.8-27B-UD-Q4_K_M.gguf`, `mmproj-F16.gguf`) |
 
 ## Arquitectura y entrenamiento
-La informacion proporcionada no detalla la arquitectura interna del modelo base Qwen3.8-27B: la model card del repositorio de respaldo se limita a describirlo como un modelo de 27B de la nueva generacion Qwen, fuerte en codigo y tareas de agente, con vision integrada. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion (RLHF, DPO u otras).
 
-Lo que si se documenta con precision es el proceso de conversion a GGUF: los ficheros fueron generados por unsloth y este repositorio los reproduce sin modificacion alguna. Se incluyen dos artefactos: los pesos cuantizados en UD-Q4_K_M (15,33 GiB, sha256 `322e194ff79741c7baa497c240f677f54b201b0efab44ca8e50f122b39123482`) y el proyector de vision en F16 (884,6 MiB, sha256 `cbb841a9ee0636b2ec172f5bb8df2ea8dfeb01e90fe7c6126581d662a0b4e43e`). La presencia de este segundo fichero confirma que la modalidad de imagen se gestiona mediante un adaptador separado del cuerpo del modelo, un patron habitual en llama.cpp.
+La model card no detalla la arquitectura interna del modelo (tipo de atención, capas, cabezas, uso de MoE o de mecanismos híbridos). Lo único verificable es que se trata de un modelo de la nueva generación Qwen con 27,3 B de parámetros y que incorpora un proyector de visión independiente en formato F16, lo que confirma una arquitectura multimodal con codificador visual acoplado al modelo de lenguaje. El pipeline declarado en Hugging Face es `text-generation`, y las etiquetas incluyen `image-text-to-text`, coherente con la capacidad de visión.
+
+Tampoco se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación. La conversión a GGUF fue realizada por unsloth y redistribuida sin modificaciones por 42ailab; no se documentan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.) en la model card.
 
 ## Capacidades
-- Generacion de texto conversacional (pipeline `text-generation`).
-- Razonamiento y resolucion de tareas de codigo, segun la descripcion del autor ("strong at coding and agent tasks").
-- Capacidades de agente: el modelo esta posicionado para tareas de agente, aunque la model card no detalla el soporte concreto de tool calling ni de razonamiento multi-paso.
-- Vision integrada: entrada image-text-to-text, con proyector visual F16 incluido en el repositorio.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Modo thinking u otras capacidades especiales: no disponible.
+
+- Generación de texto conversacional y de propósito general, según la etiqueta `conversational` del repositorio.
+- Capacidad de visión integrada (pipeline `image-text-to-text`), con proyector `mmproj-F16.gguf` para el procesamiento de imágenes.
+- Orientación declarada a tareas de programación y de agentes, según la descripción del autor.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Uso de imatrix en la cuantización (`imatrix`), técnica que mejora la calidad de los GGUF cuantizados.
+- Soporte de tool calling / function calling: no confirmado en la información disponible.
+- Capacidades multilingües: no disponibles.
+- Modo de razonamiento (thinking mode): no confirmado en la información disponible.
 
 ## Casos de uso
-- Asistencia a la programacion en local: con la cuantizacion UD-Q4_K_M (15,33 GiB) el modelo puede ejecutarse en un equipo de sobremesa con GPU de 24 GB o con CPU y RAM suficiente, ofreciendo generacion y explicacion de codigo sin enviar el codigo a servicios externos.
-- Agentes de automatizacion de tareas de desarrollo: el posicionamiento del modelo en tareas de agente permite integrarlo en flujos que encadenan pasos (leer un repositorio, proponer un parche, ejecutar pruebas) siempre que el runtime soporte el protocolo de herramientas correspondiente.
-- Analisis de capturas y diagramas: gracias al proyector de vision, puede procesar imagenes junto con texto, por ejemplo para interpretar diagramas de arquitectura o capturas de errores y proponer correcciones.
-- Despliegue en entornos con requisitos de soberania del dato: al ser Apache-2.0 y ejecutable en local via GGUF, encaja en organizaciones que no pueden usar APIs en la nube.
-- Preservacion de artefactos en pipelines de ML: el repositorio sirve como fuente estable de bytes verificables por sha256 para builds reproducibles que dependan de esta cuantizacion concreta.
-- Prototipado rapido con 42model: el modelo se puede descargar desde la libreria de la aplicacion de escritorio o con `42model download qwen3.8:27b-ud-q4_k_m`, lo que facilita pruebas de concepto sin configurar un stack de inferencia desde cero.
-- Evaluacion comparativa de cuantizaciones: util como referencia fija (Q4_K_M) al medir degradacion de calidad frente a otras cuantizaciones del mismo modelo base.
+
+- Asistencia de programación en local: el modelo, con 27,3 B de parámetros y cuantización UD-Q4_K_M de 15,33 GiB, puede ejecutarse en una estación de trabajo con GPU de consumo de gama alta para autocompletado, revisión de código y generación de parches sin enviar código a servicios externos.
+- Análisis de documentos con imágenes: gracias al proyector de visión, puede procesar capturas de pantalla, diagramas o documentos escaneados junto con texto, útil para extracción de información en flujos de digitalización.
+- Agentes autónomos de desarrollo: su orientación declarada a tareas de agentes permite integrarlo en bucles de razonamiento multi-paso para tareas como resolución de issues o generación de tests, siempre que se valide el soporte real de tool calling.
+- Despliegue en escritorio con 42model: el repositorio está empaquetado para descarga directa mediante `42model download qwen3.8:27b-ud-q4_k_m`, lo que simplifica la puesta en marcha para usuarios finales.
+- Prototipado de asistentes conversacionales: la etiqueta `conversational` y la compatibilidad con endpoints permiten montar un servicio de chat interno con llama.cpp o servidores compatibles.
+- Inferencia en entornos con requisitos de licencia permisiva: la licencia Apache-2.0 permite uso comercial y modificación sin las restricciones de licencias copyleft o de uso limitado.
+- Evaluación comparativa de modelos abiertos: al ser un GGUF reproducible con digests sha256 verificables, es adecuado para experimentos de evaluación reproducibles en local.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible.
+
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: los pesos UD-Q4_K_M ocupan 15,33 GiB; el proyector de vision anade 884,6 MiB. En la practica se necesita margen adicional para el contexto KV, por lo que una GPU de 24 GB es el objetivo comodo para carga completa con vision.
-- GPU recomendadas: RTX 4090 (24 GB) o A100/H100 para despliegues con concurrencia; en GPUs de 16 GB puede requerirse descarga parcial de capas a CPU.
-- Cabe en GPU de consumo: si, en tarjetas de 24 GB (RTX 3090, RTX 4090) con la cuantizacion incluida; en 16 GB solo con offloading parcial.
-- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF; el repositorio esta etiquetado como `endpoints_compatible`. Tambien puede cargarse desde la aplicacion 42model.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+
+- VRAM estimada para inferencia: aproximadamente 15,3 GiB para los pesos en UD-Q4_K_M, más el proyector de visión (884,6 MiB) y el espacio de contexto y caché KV; en la práctica se recomienda al menos 18-20 GiB de VRAM para contexto moderado.
+- GPU recomendadas: NVIDIA RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40/80 GB, H100; en GPUs de 16 GB no cabe la cuantización Q4_K_M completa con visión.
+- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090 y modelos con 24 GB o más; también es posible la ejecución parcial en CPU con llama.cpp si la VRAM es insuficiente.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, koboldcpp), servidores compatibles con endpoints; vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que se recomienda verificar la versión.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato disponible | Notas |
+| Modelo | Parametros | Contexto | Vision | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (esta ficha, GGUF de 42ailab) | 27.320.697.856 | no disponible | Apache-2.0 | GGUF (UD-Q4_K_M + mmproj F16) | Respaldo byte a byte de la conversion de unsloth; vision integrada |
-| Qwen3.8-27B (original de Qwen, en ModelScope) | 27.320.697.856 | no disponible | Apache-2.0 | no disponible en la informacion | Repositorio oficial del modelo base |
-| unsloth/Qwen3.8-27B-GGUF | 27.320.697.856 | no disponible | Apache-2.0 | GGUF (varias cuantizaciones) | Conversion original; el repositorio de esta ficha solo replica 2 ficheros |
+| Qwen3.8-27B (este) | 27,3 B | no disponible | Sí | Apache-2.0 | GGUF |
+| Modelos Qwen de generaciones anteriores (p. ej. Qwen2.5-32B) | ~32 B | no disponible en esta ficha | No en todas las variantes | Apache-2.0 (mayoría) | safetensors, GGUF |
+| Gemma 3 27B | 27 B | no disponible en esta ficha | Sí (variante multimodal) | Gemma Terms of Use | safetensors, GGUF |
+| Mistral Small 3.1 24B | 24 B | no disponible en esta ficha | Sí | Apache-2.0 | safetensors, GGUF |
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparacion cuantitativa con modelos de otras familias.
+La comparación se limita a categorías y licencias; no se dispone de datos de rendimiento comparativo en la información proporcionada, por lo que no se pueden establecer conclusiones cuantitativas.
 
 ## Limitaciones y advertencias
-- Este repositorio no es un modelo nuevo ni una conversion propia: es una copia de dos ficheros de unsloth. Cualquier actualizacion del modelo base no se reflejara aqui salvo que el mantenedor la replique.
-- Solo se incluye una cuantizacion (UD-Q4_K_M); no hay versiones Q2, Q3, Q5, Q6, Q8 ni F16 en este repositorio.
-- La model card no documenta sesgos conocidos, riesgo de alucinacion ni limitaciones de idioma; deben asumirse los riesgos habituales de un LLM de 27B sin evaluacion publicada en esta ficha.
-- Longitud de contexto no disponible: no se puede garantizar el comportamiento en conversaciones o documentos largos sin verificacion previa.
-- La licencia Apache-2.0 permite uso comercial, pero la atribucion de la conversion corresponde a unsloth y la del modelo base al equipo Qwen; conviene conservar los avisos de licencia.
-- El tag `endpoints_compatible` sugiere compatibilidad con APIs de inferencia, pero no se detalla que endpoints ni que version de protocolo.
-- La fecha de creacion del repositorio (2026-11-07) y el reducido numero de descargas (130) indican un artefacto reciente y poco validado por la comunidad.
+
+- La model card no documenta sesgos conocidos, riesgos de alucinación ni evaluaciones de seguridad; se recomienda validación empírica antes de producción.
+- No se especifican los idiomas soportados ni la calidad relativa por idioma; el uso en castellano debe evaluarse empíricamente.
+- La longitud de contexto no está documentada, lo que impide planificar cargas de trabajo con ventanas largas sin pruebas previas.
+- El repositorio es una redistribución de terceros (42ailab) de una conversión de unsloth; aunque los digests sha256 permiten verificar integridad, la responsabilidad del modelo original recae en el equipo Qwen.
+- La licencia Apache-2.0 permite uso comercial, pero conviene revisar el archivo `LICENSE` incluido y las condiciones del modelo original en ModelScope.
+- El soporte de tool calling y de modo de razonamiento no está confirmado en la información disponible; no debe asumirse en diseños de agentes.
+- La cuantización UD-Q4_K_M introduce una pérdida de precisión respecto a los pesos originales en safetensors; para tareas sensibles a la calidad numérica se recomienda evaluar cuantizaciones superiores (Q5, Q6, Q8) si el hardware lo permite.
+- El proyector de visión debe cargarse junto con el modelo para habilitar el procesamiento de imágenes; su omisión desactiva esa capacidad.
 
 ## Enlaces
+
 - Repositorio Hugging Face: https://huggingface.co/42ailab/Qwen3.8-27B-GGUF
-- Repositorio ModelScope del respaldo: https://modelscope.cn/models/42ailab/Qwen3.8-27B-GGUF
-- Conversion original de unsloth (ModelScope): https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF
-- Sitio del mantenedor: https://42ailab.com
-- Aplicacion de escritorio 42model: https://42model.com
+- Repositorio original de la conversión GGUF (unsloth): https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF
+- Modelo original en ModelScope: https://modelscope.cn/models/42ailab/Qwen3.8-27B-GGUF
+- Sitio de 42ailab: https://42ailab.com
+- Aplicación 42model: https://42model.com

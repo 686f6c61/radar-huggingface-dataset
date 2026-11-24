@@ -50,7 +50,7 @@
   "sources": [
     {
       "title": "Semiconductor & Embedded System Solutions | Renesas",
-      "url": "https://www.renesas.com/",
+      "url": "https://www.renesas.com/en",
       "snippet": "Renesas is a global company providing high-performance semiconductors and embedded solutions enabling innovation in …"
     },
     {
@@ -59,19 +59,19 @@
       "snippet": "Renesas Electronics Corporation (Japanese: ルネサス エレクトロニクス株式会社, Hepburn: Runesasu Erekutoronikusu Kabushiki …"
     },
     {
-      "title": "Renesas Electronics — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Renesas_Electronics",
-      "snippet": "Renesas Electronics Corporation (ルネサス エレクトロニクス, Renesasu erekutoronikusu?) est un important fabricant de semi …"
-    },
-    {
-      "title": "Renesas : actualités et articles | L'Embarqué",
-      "url": "https://lembarque.com/entreprise/renesas",
-      "snippet": "Jun 19, 2026 · Le concepteur et fabricant de semi-conducteurs Renesas Electronics est issu de la fusion de NEC Electronics et de …"
+      "title": "Renesas Careers",
+      "url": "https://jobs.renesas.com/",
+      "snippet": "Our People and culture play a key role in making your experience at Renesas rewarding, and we need more talented people across …"
     },
     {
       "title": "Products | Renesas",
       "url": "https://www.renesas.com/en/products",
       "snippet": "Explore the Renesas Products page to efficiently navigate a wide array of semiconductor solutions. Discover microcontrollers, cutting …"
+    },
+    {
+      "title": "About Renesas | Renesas",
+      "url": "https://www.renesas.com/en/about",
+      "snippet": "Renesas Electronics is a leading global supplier of microcontrollers, analog power devices and SoCs, providing innovative …"
     }
   ]
 }

@@ -2,87 +2,88 @@
 
 ## Resumen
 
-LGT-Agent-1B-v1 es un modelo de generación de texto publicado en Hugging Face por el usuario akhandyadav05 bajo el identificador `akhandyadav05/LGT-Agent-1B-v1`. Se distribuye en formato safetensors con arquitectura declarada como Llama y está pensado para tareas de generación de texto y conversación, según las etiquetas del repositorio (`text-generation`, `conversational`, `text-generation-inference`, `endpoints_compatible`). El nombre sugiere un ajuste orientado a uso como agente, aunque no hay documentación que lo confirme.
+LGT-Agent-1B-v1 es un modelo de lenguaje de tipo causal para generacion de texto y conversacion, publicado en Hugging Face por el usuario akhandyadav05. Segun los metadatos del repositorio, esta construido sobre la arquitectura Qwen2 (tag `qwen2` en el Hub) y cuenta con 1.543.714.304 parametros reales, segun los pesos en formato safetensors. El repositorio ocupa 7,5 GB, lo que sugiere que se distribuyen pesos en precision alta (probablemente bf16/fp16) ademas de posibles ficheros auxiliares.
 
-El modelo cuenta con 1.100.048.384 parámetros (aproximadamente 1,1 mil millones), lo que lo sitúa en la franja de modelos pequeños desplegables en hardware de consumo. El repositorio ocupa 2,2 GB, coherente con pesos en precisión de 16 bits para ese número de parámetros. La model card es la plantilla automática de Hugging Face y no contiene información sustantiva: no se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+El modelo esta etiquetado para `text-generation`, `conversational` y es compatible con `text-generation-inference` y con `endpoints_compatible`, lo que indica que puede desplegarse en infraestructura de inferencia estandar del ecosistema Hugging Face. El nombre "Agent" sugiere un ajuste orientado a tareas de agente, aunque la model card no documenta ese ajuste ni ningun detalle sobre el entrenamiento.
 
-La relevancia de esta ficha es limitada y fundamentalmente descriptiva: se trata de un checkpoint sin documentación técnica, sin métricas publicadas y con cero descargas y cero valoraciones en el momento de la consulta. Cualquier evaluación de su calidad requiere pruebas empíricas por parte del usuario, ya que no existe evidencia publicada que la respalde.
+La relevancia de esta ficha es limitada por la escasez de informacion verificable: la model card es la plantilla autogenerada de Hugging Face y no contiene datos sobre datos de entrenamiento, licencia, idiomas, contexto ni evaluaciones. Todo lo que se afirma a continuacion proviene de los metadatos del Hub o de inferencias razonables a partir de la arquitectura Qwen2; lo que no consta se marca explicitamente como no disponible.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (según etiqueta del repositorio; detalles no disponibles) |
-| Parámetros totales | 1.100.048.384 (dato real de safetensors) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer causal basada en Qwen2 (segun tag del Hub) |
+| Parametros totales | 1.543.714.304 (1,54 mil millones) |
+| Parametros activos | no disponible (no es MoE segun los metadatos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (el repositorio contiene safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (no se publican ficheros GGUF en el repo) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La única información arquitectónica disponible es la etiqueta `llama` del repositorio, que indica una familia de transformer decoder-only con normalización RMSNorm y atención multi-cabeza, si bien no se confirma ninguna variante concreta (RoPE, GQA, SwiGLU, etc.). El recuento exacto de parámetros (1.100.048.384) corresponde a un modelo de aproximadamente 1,1B, consistente con configuraciones tipo Llama de 16 a 24 capas, pero no hay `config.json` ni documentación en la información proporcionada que permita verificarlo.
+Los metadatos identifican el modelo con el tag `qwen2`, lo que implica una arquitectura transformer decoder-only con las convenciones de Qwen2: atencion con RoPE, normalizacion RMSNorm, activacion SwiGLU y sesgos en las proyecciones QKV (Qwen2 introdujo sesgos en query, key y value respecto a Qwen1.5). El tamano de 1,54 mil millones de parametros encaja con la variante Qwen2-1.5B, aunque no se confirma que sea un fine-tune directo de ese checkpoint base.
 
-No se dispone de información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La model card incluye únicamente los marcadores `[More Information Needed]` en todas las secciones de detalles, datos y procedimiento de entrenamiento.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, la longitud de contexto efectiva ni hiperparametros. La model card es la plantilla autogenerada y todos los campos relevantes estan marcados como "[More Information Needed]". El sufijo "Agent" del nombre sugiere un ajuste para uso en agentes (posiblemente con datos de tool calling o trayectorias multi-paso), pero no existe documentacion que lo respalde. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto autoregresiva, según la etiqueta `text-generation`.
-- Uso conversacional multi-turno, según la etiqueta `conversational`.
-- Compatibilidad declarada con Text Generation Inference (TGI) y con endpoints de Hugging Face (`text-generation-inference`, `endpoints_compatible`).
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (el nombre incluye "Agent", pero no hay documentación que lo respalde).
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto causal y conversacional, segun la pipeline declarada (`text-generation`, `conversational`).
+- Compatibilidad con Text Generation Inference (TGI) y con los endpoints de Hugging Face, segun los tags del repositorio.
+- Presunta capacidad de razonamiento y codigo heredada de la base Qwen2, aunque no se verifica en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible (el nombre sugiere orientacion a agentes, pero no se documenta).
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible (no se declaran idiomas).
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Experimentación con modelos pequeños en local: el tamaño de 1,1B permite cargar el checkpoint en una GPU de consumo para pruebas de generación de texto, prototipado rápido y comparación con otros modelos de la misma franja.
-- Despliegue con Text Generation Inference: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, puede servirse mediante TGI o los Inference Endpoints de Hugging Face para pruebas de latencia y throughput.
-- Base para ajuste fino (fine-tuning) en tareas concretas: al ser un modelo pequeño, es viable aplicar LoRA o QLoRA sobre él para dominios específicos, siempre que se valide primero su calidad base.
-- Evaluación comparativa de checkpoints de la comunidad: útil como punto de referencia en estudios internos sobre modelos de ~1B parámetros, dado que no hay benchmarks publicados.
-- Generación de texto en entornos con recursos limitados: con cuantización a 8 o 4 bits (no publicada, pero factible con herramientas estándar) cabría en GPUs de 4-8 GB de VRAM.
-- Prototipos de asistentes conversacionales: la etiqueta `conversational` sugiere un ajuste orientado a diálogo, aunque su idoneidad en producción debe validarse empíricamente por la ausencia de documentación.
+- Prototipado rápido de asistentes conversacionales: con 1,54 mil millones de parametros, el modelo puede ejecutarse en una unica GPU de consumo y servir como base para validar prompts y flujos conversacionales antes de escalar a modelos mayores.
+- Despliegue en el ecosistema Hugging Face Endpoints: al ser `endpoints_compatible`, puede levantarse como endpoint gestionado sin trabajo adicional de empaquetado, util para demos internas y pruebas de integracion.
+- Inferencia en hardware modesto: el tamano permite ejecutarlo en GPUs de 8-16 GB en fp16/bf16, adecuado para entornos de desarrollo sin acceso a clusters.
+- Experimentacion con ajuste fino: al ser un modelo pequeno, es viable hacer LoRA o QLoRA sobre el para dominios concretos (soporte, clasificacion, extraccion) con recursos limitados.
+- Base para pipelines de agentes experimentales: el nombre del modelo sugiere ese proposito, aunque sin documentacion de tool calling debe validarse empiricamente antes de usarlo en produccion.
+- Generacion de texto por lotes (resumen, reescritura, clasificacion generativa): su tamano reducido permite alto throughput en tareas de generacion corta donde no se requiere el rendimiento de un modelo de 7B o superior.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 2,2 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, entre 3 y 5 GB según longitud de contexto y batch.
-- VRAM estimada en cuantización de 8 bits: alrededor de 1,1-1,5 GB para pesos.
-- VRAM estimada en cuantización de 4 bits: alrededor de 0,6-0,8 GB para pesos.
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para fp16 (RTX 3060, RTX 4060, RTX 4090, A10, L4); para cuantización 4/8 bits, GPUs con 4 GB o más.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060/4060 y superiores; también en GPUs integradas o Apple Silicon con suficiente memoria unificada.
-- Opciones de despliegue: transformers (nativo), Text Generation Inference (TGI), vLLM (compatible con arquitectura Llama), llama.cpp/Ollama si se genera un GGUF (no publicado en el repositorio).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada en fp16/bf16: aproximadamente 3,1 GB solo para pesos, mas overhead de activaciones y cache KV (tipicamente 4-6 GB en total para contextos moderados).
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 1,6 GB para pesos; en 4 bits, alrededor de 0,8 GB, aunque no se publican ficheros GGUF y habria que generarlos.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 (RTX 3060 Ti, RTX 4060, RTX 4090); A100/H100 no son necesarias para inferencia individual, aunque pueden usarse para servir en lote.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 8 GB o mas.
+- Opciones de despliegue: transformers (nativo), Text Generation Inference (tag `text-generation-inference`), y potencialmente llama.cpp/Ollama si se generan pesos GGUF (no incluidos).
+- Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LGT-Agent-1B-v1 | 1,1B | no disponible | no disponible | Hugging Face (0 descargas) |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
-| Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, documentación completa |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, benchmarks publicados |
+| LGT-Agent-1B-v1 | 1,54 B | no disponible | no disponible | Hugging Face |
+| Qwen2-1.5B | 1,54 B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face |
+| Qwen2.5-1.5B | 1,54 B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens (segun documentacion de SmolLM2) | Apache 2.0 (segun SmolLM2) | Hugging Face |
 
-La comparación se limita a parámetros y disponibilidad: LGT-Agent-1B-v1 no publica contexto, licencia ni resultados, por lo que no es posible contrastar rendimiento con las alternativas citadas.
+La comparativa se basa en datos publicos de los modelos alternativos; para LGT-Agent-1B-v1 no hay datos de rendimiento ni licencia que permitan una comparacion cuantitativa. La principal diferencia practica es la ausencia de documentacion y de licencia explicita, frente a las licencias Apache 2.0 de las alternativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática, sin información sobre datos, entrenamiento, evaluación ni uso previsto.
-- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; en producción debe tratarse como no autorizado hasta verificación.
-- Riesgo de alucinación: no evaluado; sin benchmarks ni pruebas publicadas, el comportamiento factual es desconocido.
-- Sesgos conocidos: no documentados; al no conocerse el corpus de entrenamiento, no se pueden identificar sesgos de género, idioma o dominio.
-- Idiomas soportados: no disponibles; no se puede garantizar calidad en castellano ni en ningún otro idioma.
-- Longitud de contexto: no disponible; esto condiciona el diseño de aplicaciones multi-turno o de documentos largos.
-- Madurez del repositorio: cero descargas y cero valoraciones en el momento de la consulta, creado y actualizado el mismo día (12 de noviembre de 2026), lo que sugiere un checkpoint recién subido y sin validación comunitaria.
-- Nombre potencialmente engañoso: la etiqueta "Agent" en el nombre no va acompañada de documentación sobre tool calling, planificación o razonamiento multi-paso.
+- La model card es la plantilla autogenerada; no hay informacion sobre datos de entrenamiento, sesgos, alineacion ni evaluaciones de seguridad.
+- Licencia no declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o tratar el modelo como no licenciado para produccion.
+- Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano ni en otros idiomas distintos del que se uso en el ajuste (presumiblemente ingles).
+- Longitud de contexto no documentada: planificar contextos largos sin verificacion empirica es arriesgado.
+- Riesgo de alucinacion inherente a un modelo de 1,5B sin documentacion de alineacion; no apto para tareas de alta precision sin validacion.
+- El nombre "Agent" no esta respaldado por documentacion de tool calling ni de entrenamiento con trayectorias; no asumir capacidades de agente sin pruebas.
+- Sin benchmarks publicados: no se puede comparar su calidad con la base Qwen2-1.5B ni con alternativas.
+- Repositorio de 7,5 GB para 1,54B parametros sugiere pesos duplicados o en multiples precisiones; revisar los ficheros antes de descargar.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/akhandyadav05/LGT-Agent-1B-v1
-- Referencia citada en la model card (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
+- Modelo en Hugging Face: https://huggingface.co/akhandyadav05/LGT-Agent-1B-v1
+- Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
+- Documentacion de Qwen2 (arquitectura base segun tag): https://huggingface.co/Qwen/Qwen2-1.5B
+- Text Generation Inference: https://github.com/huggingface/text-generation-inference

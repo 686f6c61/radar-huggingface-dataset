@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ModelFitCheck — will this LLM fit your GPU?",
-      "url": "https://modelfitcheck.com/",
-      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    },
-    {
-      "title": "Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF - Hugging Face",
-      "url": "https://huggingface.co/Luigi/Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF",
-      "snippet": "GGUF quantizations of tiiuae/Falcon-H1-Tiny-100M-Multilingual-Instruct model. This is a 100M parameter multilingual instruction-tuned Falcon H1 Tiny model with hybrid Transformer + Mamba architecture, optimized for edge deployment."
-    },
-    {
-      "title": "Mungert/SmolVLM-256M-Instruct-GGUF · Hugging Face",
-      "url": "https://huggingface.co/Mungert/SmolVLM-256M-Instruct-GGUF",
-      "snippet": "Instructions to use Mungert/SmolVLM-256M-Instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Mungert/SmolVLM-256M-Instruct-GGUF with Transformers:"
-    },
-    {
-      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
-      "url": "https://civitaiarchive.com/",
-      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
-    }
-  ]
+  "sources": []
 }

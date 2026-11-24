@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 333,
+  "downloads_30d": 335,
   "trending_score": 0,
   "parameters": 4715520,
   "parameters_human": "4.7M",
@@ -61,21 +61,9 @@
   "benchmarks": [
     {
       "task": "calculus question answering",
-      "dataset": "Golden answers (374 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (459 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
-    },
-    {
-      "task": "calculus question answering",
-      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
-      "metric": "right capability first",
-      "value": 0.918
-    },
-    {
-      "task": "calculus question answering",
-      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
-      "metric": "in the top five",
-      "value": 0.988
     }
   ],
   "sources": []

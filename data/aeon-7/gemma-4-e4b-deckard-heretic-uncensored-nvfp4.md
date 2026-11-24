@@ -2,115 +2,102 @@
 
 ## Resumen
 
-Gemma-4-E4B-DECKARD-HERETIC-Uncensored-NVFP4 es un modelo drafter de decodificación especulativa EAGLE (E4B) construido sobre la arquitectura Gemma 4 y publicado por el usuario AEON-7. No es un modelo de chat autónomo, sino un componente auxiliar que acelera la inferencia del modelo objetivo AEON-7/Gemma-4-31B-it-DECKARD-HERETIC-Uncensored-NVFP4 mediante decodificación especulativa de 5 tokens. Está cuantizado en NVFP4 AWQ con NVIDIA ModelOpt 0.42.0 y optimizado específicamente para GPUs Blackwell (SM 12.1), en particular la NVIDIA DGX Spark (GB10) con memoria unificada de 128 GB.
+Gemma-4-E4B-DECKARD-HERETIC-Uncensored-NVFP4 es un modelo *drafter* de decodificación especulativa EAGLE, destilado del modelo Gemma 4 31B DECKARD HERETIC Uncensored y cuantizado a NVFP4 AWQ con NVIDIA ModelOpt 0.42.0. Lo publica el usuario AEON-7 en Hugging Face y su función no es responder peticiones de forma autónoma, sino proponer tokens candidatos que el modelo objetivo de 31B verifica en cada paso de generación. Con 7.941.798.218 parámetros reales según los pesos safetensors y un repositorio de 10,2 GB, actúa como acelerador de inferencia en hardware Blackwell.
 
-El modelo cuenta con 7.941.798.218 parámetros totales según los pesos en safetensors, 42 capas (35 de ventana deslizante y 7 de atención completa), un tamaño oculto de 2560, 8 cabezas de atención (2 cabezas KV) con head_dim de 256 y global_head_dim de 512, y una ventana deslizante de 512 tokens. Soporta un contexto máximo de 131.072 tokens y un vocabulario de 262.144 tokens. El repositorio ocupa 10,2 GB y el peso del modelo se declara en 9,6 GB.
+El modelo hereda la arquitectura Gemma 4 con 42 capas (35 de ventana deslizante y 7 de atención completa), tamaño oculto de 2560, 8 cabezas de atención con 2 cabezas KV, `head_dim` de 256 y `global_head_dim` de 512. La ventana deslizante es de 512 tokens y el contexto máximo declarado alcanza los 131.072 tokens, con un vocabulario de 262.144 entradas. La cuantización NVFP4 AWQ reduce el peso a 9,6 GB, lo que permite ejecutarlo junto al objetivo de 31B en la memoria unificada de una DGX Spark (GB10, SM 12.1) de 128 GB.
 
-Su relevancia actual radica en que permite desplegar el modelo objetivo de 31B con aceleración especulativa en hardware Blackwell de gama workstation, con throughput que escala linealmente con la concurrencia (de 7,6 tok/s agregados con 1 petición a 42,7 tok/s con 4). Es un artefacto de infraestructura más que un modelo de propósito general: su valor depende enteramente de emparejarse con el target correcto y de aplicar los parches de vLLM que el autor distribuye.
+Su relevancia es doble: por un lado, demuestra un flujo completo de decodificación especulativa EAGLE con cuantización FP4 nativa en GPUs Blackwell y ARM64; por otro, arrastra la modificación "abliterated" o *refusal-removed* del modelo base, de modo que la política de rechazo del modelo original queda alterada. Está pensado para despliegues con vLLM 0.19.1 parcheado, caché KV en FP8, *chunked prefill* y *prefix caching*.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (drafter EAGLE E4B), transformer con 42 capas (35 sliding-window + 7 full-attention) |
-| Parámetros totales | 7.941.798.218 |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Gemma 4 (E4B, drafter EAGLE para decodificacion especulativa) |
+| Parametros totales | 7.941.798.218 |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantización | NVFP4 AWQ (ModelOpt 0.42.0); KV cache en FP8 |
-| Idiomas soportados | en (inglés) |
+| Tipos de cuantizacion | NVFP4 AWQ (ModelOpt 0.42.0); pesos de 4 bits; cache KV en FP8 en el despliegue de referencia |
+| Idiomas soportados | en (ingles) |
 | Licencia | gemma |
-| Formato de pesos | safetensors (repo de 10,2 GB; modelo de 9,6 GB) |
-| Tamaño oculto | 2560 |
-| Cabezas de atención | 8 (2 KV heads), head_dim=256, global_head_dim=512 |
-| Ventana deslizante | 512 tokens |
-| Vocabulario | 262.144 tokens |
-| Modelo objetivo | AEON-7/Gemma-4-31B-it-DECKARD-HERETIC-Uncensored-NVFP4 |
-| Tokens especulativos | 5 |
-| Pipeline | text-generation |
-| Librería | transformers |
+| Formato de pesos | safetensors (cuantizacion nvfp4, libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un drafter EAGLE sobre Gemma 4, con 42 capas que combinan 35 capas de atención de ventana deslizante (512 tokens) y 7 capas de atención completa. El diseño de atención usa 8 cabezas con solo 2 cabezas KV, head_dim de 256 y global_head_dim de 512, lo que reduce el coste de memoria del KV cache. El modelo se distribuye cuantizado en NVFP4 AWQ mediante NVIDIA ModelOpt 0.42.0, un formato nativo de 4 bits pensado para las unidades tensor de las GPUs Blackwell.
+El modelo es un *drafter* EAGLE construido sobre la arquitectura Gemma 4: 42 capas, de las cuales 35 usan atención de ventana deslizante de 512 tokens y 7 emplean atención completa, con tamaño oculto de 2560, 8 cabezas de atención y 2 cabezas KV (`head_dim` de 256, `global_head_dim` de 512). El vocabulario es de 262.144 tokens. La cuantizacion se realizo con NVIDIA ModelOpt 0.42.0 en formato NVFP4 AWQ, orientada a las unidades tensor de cuarta generacion de Blackwell (SM 12.1, arquitectura GB10 de la DGX Spark), con soporte declarado para kernels FlashInfer-CUTLASS y cache KV en FP8.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El modelo base declarado es DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking, del que este artefacto es una derivación cuantizada y especializada como drafter. La innovación técnica principal no está en el entrenamiento sino en el pipeline de despliegue: decodificación especulativa EAGLE con 5 tokens, chunked prefill, prefix caching, KV cache en FP8 y parches específicos sobre vLLM 0.19.1 (eagle_patched.py, serving_chat_patched.py y modelopt_patched.py) para habilitar la decodificación especulativa con Gemma 4.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en la informacion proporcionada. El modelo base es DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking, una variante del Gemma 4 31B instruct con el comportamiento de rechazo suprimido (*abliterated*) y modo de razonamiento. La innovacion tecnica principal es el uso de decodificacion especulativa EAGLE con 5 tokens candidatos por paso, combinada con cuantizacion FP4 nativa y un conjunto de tres parches sobre vLLM 0.19.1 para habilitar el pipeline en Gemma 4.
 
 ## Capacidades
 
-- Generación de texto como drafter especulativo: propone tokens que el modelo objetivo de 31B verifica, acelerando la decodificación sin alterar la distribución final del target.
-- Decodificación especulativa EAGLE con 5 tokens especulativos por paso.
-- Soporte de tool calling y function calling a través del parser `gemma4` en vLLM (`--enable-auto-tool-choice --tool-call-parser gemma4`).
-- Modo de razonamiento (thinking) mediante el parser `gemma4` (`--reasoning-parser gemma4`), heredado del target.
-- Capacidades multimodales y vision-language declaradas en las etiquetas del modelo (image-text-to-text, vision, multimodal), aunque el drafter en sí opera sobre el flujo del target.
-- Conversación multi-turno y modo chat a través de la API compatible con OpenAI de vLLM.
-- Soporte de contexto largo hasta 131.072 tokens con chunked prefill y prefix caching.
-- Capacidad de generación de código y razonamiento (etiquetas coding y reasoning), condicionada al comportamiento del modelo objetivo.
-- Idiomas: únicamente inglés según la model card.
+- Generacion de tokens candidatos para decodificacion especulativa EAGLE sobre el modelo objetivo de 31B.
+- Razonamiento y modo *thinking* heredados del modelo base DECKARD HERETIC.
+- Generacion de codigo y tareas de instruccion en ingles.
+- Soporte de *tool calling* y *function calling* a traves del parser `gemma4` de vLLM.
+- Capacidades multimodales (vision-lenguaje) heredadas de la familia Gemma 4, etiquetadas como `image-text-to-text` y `vision-language`.
+- Contexto largo de hasta 131.072 tokens con ventana deslizante de 512 tokens.
+- Compatibilidad con *chunked prefill*, *prefix caching* y API compatible con OpenAI.
+- Comportamiento sin rechazo (*refusal-removed*) por la modificacion abliterated del modelo base.
+- Idiomas: unicamente ingles segun la model card.
 
 ## Casos de uso
 
-- Aceleración de inferencia del target de 31B en DGX Spark: el drafter se empareja con AEON-7/Gemma-4-31B-it-DECKARD-HERETIC-Uncensored-NVFP4 para reducir la latencia por token mediante decodificación especulativa EAGLE de 5 tokens, con throughput medido de 7,6 a 42,7 tok/s agregados según concurrencia.
-- Servicio de chat compatible con OpenAI en producción: el stack vLLM con este drafter expone `/v1/chat/completions`, lo que permite integrarlo en aplicaciones existentes sin cambiar el cliente.
-- Atención al cliente multi-turno con contexto largo: los 131.072 tokens de contexto y el prefix caching permiten mantener conversaciones extensas con reutilización de prefijos y menor coste de prefill.
-- Pipelines agénticos con tool calling: el parser `gemma4` y `--enable-auto-tool-choice` habilitan flujos de agente que invocan funciones externas, con el drafter acelerando las respuestas del target.
-- Asistentes de código en entornos de desarrollo: las etiquetas coding y reasoning, junto con la aceleración especulativa, permiten completar y razonar sobre código con latencia reducida en GPUs Blackwell.
-- Despliegue en hardware ARM64/Blackwell (GB10, SM 12.1): el modelo está etiquetado para aarch64 y arm64, lo que lo hace adecuado para estaciones Grace-Blackwell y DGX Spark con memoria unificada.
-- Evaluación de razonamiento con modo thinking: el `--reasoning-parser gemma4` permite separar cadenas de razonamiento de la respuesta final en aplicaciones de análisis.
+- Aceleracion de inferencia en produccion: se despliega junto al Gemma 4 31B DECKARD HERETIC NVFP4 en vLLM y propone 5 tokens por paso, reduciendo la latencia por token del modelo objetivo en hardware Blackwell.
+- Despliegue en estaciones DGX Spark: con 9,6 GB de pesos, cabe holgadamente en los 128 GB de memoria unificada junto al objetivo de 31B, permitiendo servir un modelo de 31B en un equipo de sobremesa.
+- Servicio de chat compatible con OpenAI: el stack parcheado expone `/v1/chat/completions` con `--enable-auto-tool-choice` y `--tool-call-parser gemma4`, lo que permite integrarlo en aplicaciones existentes sin cambiar el cliente.
+- Agentes con llamadas a herramientas: el soporte de *function calling* y el razonamiento multi-paso del modelo base permiten construir agentes que consultan APIs externas en flujos de varias etapas.
+- Procesamiento de documentos largos en ingles: el contexto de 131.072 tokens con *prefix caching* resulta adecuado para resumir o extraer informacion de contratos, informes o bases de codigo extensas.
+- Generacion de codigo asistida: el modelo base esta orientado a tareas de *coding* y el drafter acelera la generacion en entornos de autocompletado o revision de codigo.
+- Investigacion sobre decodificacion especulativa: sirve como referencia reproducible para medir el impacto de EAGLE con cuantizacion FP4 en GPUs SM 12.1 y en ARM64.
+- Experimentacion con modelos sin rechazo: para equipos que investigan el comportamiento de modelos abliterated en tareas de red teaming controlado.
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido en NVIDIA DGX Spark (GB10, SM 12.1, 128 GB de memoria unificada) con el target 31B DECKARD AWQ_FULL más este drafter E4B, 5 tokens especulativos y 300 tokens máximos por petición:
+Los unicos datos publicados son mediciones de *throughput* en DGX Spark (GB10, SM 12.1, 128 GB de memoria unificada) con el objetivo 31B DECKARD AWQ_FULL, 5 tokens especulativos y 300 tokens maximos por peticion:
 
-| Concurrencia | tok/s agregados | tok/s por petición | Latencia media (300 tokens) |
+| Concurrencia | tok/s agregados | tok/s por peticion | Latencia media (300 tok) |
 |---:|---:|---:|---:|
 | 1 | 7,6 | 8,9 | 39,4 s |
 | 2 | 21,7 | 10,8 | 27,7 s |
 | 4 | 42,7 | 10,7 | 28,1 s |
 
-El autor declara cero errores en todas las ejecuciones de prueba y un escalado lineal del throughput con la concurrencia. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible; al ser un drafter, su calidad se mide por la tasa de aceptación de tokens especulativos, dato que no se proporciona.
+El autor indica cero errores en todas las pruebas y escalado lineal del *throughput* con la concurrencia. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el drafter: aproximadamente 9,6 GB en NVFP4, según el tamaño declarado del modelo; el repo completo ocupa 10,2 GB.
-- El drafter no funciona de forma aislada: requiere el modelo objetivo de 31B, por lo que el consumo conjunto de memoria es muy superior al del drafter.
-- GPU recomendadas: NVIDIA DGX Spark (GB10, SM 12.1) como plataforma de referencia; otras GPUs Blackwell con soporte NVFP4 y SM 12.1.
-- Memoria unificada: en DGX Spark (128 GB) el autor recomienda `--gpu-memory-utilization` entre 0,6 y 0,7; por encima de ~0,8 el pool compartido CPU+GPU provoca page thrashing. Los buffers de verificación de EAGLE no se contabilizan en esa fracción, por lo que hay que dejar margen adicional (0,65 en el ejemplo).
-- GPUs discretas con VRAM dedicada pueden usar fracciones más altas de memoria.
-- Despliegue: vLLM 0.19.1 con tres parches obligatorios (eagle_patched.py, serving_chat_patched.py, modelopt_patched.py) e imagen Docker `ghcr.io/aeon-7/vllm-spark-gemma4-nvfp4-awq:latest`.
-- Variables de entorno recomendadas: `VLLM_TEST_FORCE_FP8_MARLIN=1`, `VLLM_MARLIN_USE_ATOMIC_ADD=1`, `VLLM_ALLOW_LONG_MAX_MODEL_LEN=1`, `TORCH_MATMUL_PRECISION=high`, `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`.
-- Configuración de servicio: `--quantization modelopt`, `--kv-cache-dtype fp8`, `--max-model-len 131072`, `--max-num-seqs 4`, `--enable-chunked-prefill`, `--enable-prefix-caching`.
-- Latencia y throughput: ver tabla de benchmarks; 39,4 s para 300 tokens con concurrencia 1 y 28,1 s con concurrencia 4.
-- No se documenta soporte para llama.cpp, Ollama ni TGI; el formato NVFP4 y los parches de vLLM limitan el despliegue al stack descrito.
+- VRAM estimada para inferencia: 9,6 GB para los pesos del drafter en NVFP4; el despliegue de referencia reserva ademas el objetivo de 31B y la cache KV en FP8.
+- GPU recomendadas: NVIDIA DGX Spark (GB10, SM 12.1) como plataforma de referencia; cualquier GPU Blackwell compatible con NVFP4 y los kernels FlashInfer-CUTLASS.
+- Cabe en GPU de consumo: no disponible; la model card solo documenta despliegue en Blackwell con memoria unificada.
+- Opciones de despliegue: vLLM 0.19.1 con los tres parches del autor (`eagle_patched.py`, `serving_chat_patched.py`, `modelopt_patched.py`) e imagen Docker `ghcr.io/aeon-7/vllm-spark-gemma4-nvfp4-awq:latest`. No se documenta soporte para llama.cpp, Ollama ni TGI.
+- Ajuste de memoria: en la DGX Spark se recomienda `--gpu-memory-utilization` entre 0,6 y 0,7; por encima de 0,8 el pool compartido CPU+GPU provoca *page thrashing*. Con decodificacion especulativa hay que dejar margen extra porque los buffers de verificacion no se contabilizan en esa fraccion.
+- Latencia y throughput: 8,9 tok/s por peticion con concurrencia 1 y 42,7 tok/s agregados con concurrencia 4, segun las mediciones del autor.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre drafters EAGLE alternativos comparables en la documentación proporcionada. La comparación más directa es con el propio modelo objetivo sin decodificación especulativa, pero no se aportan cifras de throughput del target sin drafter.
-
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Función |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Funcion |
 |---|---|---|---|---|---|
-| Gemma-4-E4B-DECKARD-HERETIC-Uncensored-NVFP4 | 7,94 B | 131.072 | NVFP4 AWQ | gemma | Drafter EAGLE |
-| AEON-7/Gemma-4-31B-it-DECKARD-HERETIC-Uncensored-NVFP4 | no disponible | no disponible | NVFP4 AWQ | gemma | Modelo objetivo |
-| DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking | no disponible | no disponible | no disponible | gemma | Modelo base del target |
+| Gemma-4-E4B-DECKARD-HERETIC-Uncensored-NVFP4 (este) | 7,94 B | 131.072 | NVFP4 AWQ | gemma | Drafter EAGLE para Gemma 4 31B |
+| Gemma-4-31B-it-DECKARD-HERETIC-Uncensored-NVFP4 | 31 B (aproximado, no confirmado) | 131.072 | NVFP4 AWQ | gemma | Modelo objetivo que verifica las propuestas |
+| Drafter EAGLE estandar de Gemma | no disponible | no disponible | no disponible | gemma | Alternativa generica de decodificacion especulativa |
+
+No se dispone de datos publicados de rendimiento comparativo frente a otros drafters EAGLE ni frente a modelos de tamano similar en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: solo tiene sentido como drafter del target AEON-7/Gemma-4-31B-it-DECKARD-HERETIC-Uncensored-NVFP4; usarlo con otro target o de forma independiente no está soportado.
-- Requiere parches manuales de vLLM 0.19.1; sin ellos la decodificación especulativa con Gemma 4 no funciona.
-- Dependencia de hardware muy específica: NVFP4, SM 12.1 y arquitecturas Blackwell (GB10, aarch64/arm64); no hay soporte documentado para GPUs anteriores ni para CPU.
-- Idiomas: solo inglés declarado, lo que limita su uso en castellano u otros idiomas.
-- Modelo "uncensored" y "abliterated": se ha eliminado el comportamiento de rechazo, lo que incrementa el riesgo de generar contenido dañino, sesgado o inapropiado sin filtros; requiere moderación externa en producción.
-- Riesgo de alucinación heredado del target; el drafter no corrige la veracidad, solo acelera la generación.
-- Licencia Gemma: sujeta a los términos de uso de Gemma de Google, con posibles restricciones para uso comercial; conviene revisar las condiciones antes de desplegar.
-- En DGX Spark, configurar `--gpu-memory-utilization` por encima de ~0,8 provoca page thrashing en la memoria unificada.
-- Los buffers de verificación de EAGLE no se contabilizan en la fracción de memoria de vLLM, lo que puede provocar OOM si no se deja margen.
-- Sin datos publicados de tasa de aceptación de tokens especulativos ni de calidad, por lo que el beneficio real de aceleración depende del dominio y del prompt.
-- El modelo base es una variante de terceros (DavidAU) sobre Gemma 4, no una versión oficial de Google.
+- Modelo *abliterated* y *refusal-removed*: la supresion del comportamiento de rechazo puede producir contenido inapropiado, danoso o ilegal. No es apto para aplicaciones de cara al publico sin filtros externos.
+- Solo soporta ingles segun la model card; el rendimiento en otros idiomas no esta documentado.
+- Es un drafter, no un modelo autonomo: sin el objetivo de 31B y los parches de vLLM no produce respuestas utiles en el flujo previsto.
+- Requiere vLLM 0.19.1 con tres parches no oficiales que se montan sobre el codigo de la libreria; cualquier actualizacion de vLLM puede romper la integracion.
+- Dependencia de hardware Blackwell (SM 12.1) y de kernels NVFP4/FlashInfer-CUTLASS; no hay soporte documentado para GPUs Ampere, Ada ni para CPU.
+- Riesgo de alucinacion inherente al modelo base, agravado por el modo *thinking* y por la ausencia de datos de evaluacion de calidad publicados.
+- La licencia Gemma impone condiciones de uso, incluida la politica de uso prohibido de Google; conviene revisarlas antes de un despliegue comercial.
+- El autor advierte de *page thrashing* en memoria unificada si se eleva `--gpu-memory-utilization` por encima de 0,8.
+- El repositorio tiene 410 descargas y 3 likes en el momento de la consulta, por lo que la validacion comunitaria es muy limitada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AEON-7/Gemma-4-E4B-DECKARD-HERETIC-Uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/AEON-7/Gemma-4-E4B-DECKARD-HERETIC-Uncensored-NVFP4
 - Modelo objetivo: https://huggingface.co/AEON-7/Gemma-4-31B-it-DECKARD-HERETIC-Uncensored-NVFP4
 - Modelo base: https://huggingface.co/DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking
-- Repositorio GitHub con parches: https://github.com/AEON-7/Gemma-4-31B-DECKARD-HERETIC-Uncensored-NVFP4
+- Repositorio GitHub con los parches de vLLM: https://github.com/AEON-7/Gemma-4-31B-DECKARD-HERETIC-Uncensored-NVFP4
 - Imagen Docker: ghcr.io/aeon-7/vllm-spark-gemma4-nvfp4-awq:latest
-- Apoyo al autor: https://lotusmake.com/support?via=tea
+- Apoyo al autor: https://lotusmake.com/support

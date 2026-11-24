@@ -2,49 +2,50 @@
 
 ## Resumen
 
-CalibForge-35B-A3B-v2-i1-GGUF es una colección de cuantizaciones GGUF del modelo CalibForge-35B-A3B-v2, publicado por el usuario mradermacher en Hugging Face. El modelo base pertenece a AweAI-Team y, por su nomenclatura, se presenta como un modelo de arquitectura Mixture of Experts (MoE) con aproximadamente 35.000 millones de parámetros totales y unos 3.000 millones de parámetros activos por token (de ahí el sufijo "35B-A3B"). El repositorio contiene únicamente los pesos cuantizados en formato GGUF, generados con el pipeline de cuantización de llama.cpp, e incluye variantes con y sin importance matrix (imatrix) ponderada.
+CalibForge-35B-A3B-v2 es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por AweAI-Team, especializado en tareas de agente de terminal (terminal-agent) y ajustado mediante supervisión fina (SFT). Con 34.660.610.688 parámetros totales y una designación "35B-A3B" que indica aproximadamente 3.000 millones de parámetros activos por token, el modelo está pensado para ejecutar comandos, interpretar salidas de terminal y resolver tareas de automatización en entornos de línea de comandos. La model card lo vincula al preprint arXiv:2608.06352 y al dataset AweAI-Team/CalibForge.
 
-La relevancia de este repositorio radica en que permite ejecutar un modelo MoE de gran tamaño en hardware de consumo mediante cuantizaciones agresivas (desde IQ1_S hasta Q6_K), manteniendo un tamaño de repositorio de solo 0,4 GB, lo que sugiere que las cuantizaciones de menor bits son extremadamente compactas. Sin embargo, la información pública disponible es muy limitada: no se especifican licencia, idiomas, pipeline ni resultados de benchmarks, y la model card del repositorio es prácticamente inexistente más allá de los metadatos de cuantización.
+La ficha que nos ocupa corresponde a la cuantización GGUF realizada por mradermacher, publicada bajo el identificador mradermacher/CalibForge-35B-A3B-v2-i1-GGUF. Se trata de cuantizaciones ponderadas con imatrix (i1) del modelo base AweAI-Team/CalibForge-35B-A3B-v2, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El repositorio ocupa 371,0 GB e incluye 24 variantes de cuantización, desde IQ1_S (7,6 GB) hasta Q6_K (28,6 GB), además del fichero imatrix para generar cuantizaciones propias.
 
-El dato de parámetros totales reportado en los metadatos de Hugging Face (96.047.470) entra en contradicción con la nomenclatura del modelo (35B-A3B). Esta discrepancia debe tenerse en cuenta al evaluar el modelo, ya que no es posible verificar el tamaño real a partir de la información proporcionada.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo MoE de 35B orientado a agentes de terminal en equipos sin GPUs de数据中心. La licencia Apache 2.0 facilita su uso comercial, y la disponibilidad de cuantizaciones de bajo bit permiten experimentar incluso en GPUs de consumo con 8-12 GB de VRAM, a costa de una pérdida de calidad que el propio autor advierte en las variantes más agresivas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la nomenclatura sugiere MoE, sin confirmar) |
-| Parametros totales | 96.047.470 según metadatos de Hugging Face; la nomenclatura indica 35B (no confirmado) |
-| Parametros activos | no disponible (la nomenclatura sugiere ~3B, sin confirmar) |
+| Arquitectura | Mixture of Experts (MoE); detalles de capas y atención no disponibles |
+| Parametros totales | 34.660.610.688 (34,66B) |
+| Parametros activos | aproximadamente 3B (según designación A3B; cifra exacta no disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, small-IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tipos de cuantizacion | i1 con imatrix: IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base CalibForge-35B-A3B-v2. La nomenclatura "35B-A3B" es consistente con un transformer de tipo Mixture of Experts con aproximadamente 35.000 millones de parámetros totales y 3.000 millones activos por token, pero este dato no está confirmado en la información proporcionada. Tampoco se especifican los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La información disponible confirma que se trata de un modelo MoE con 34,66B parámetros totales y aproximadamente 3B activos por token, pero no detalla el número de expertos, la estrategia de enrutamiento ni la configuración de atención. El modelo base es AweAI-Team/CalibForge-35B-A3B-v2, afinado mediante SFT (supervised fine-tuning) sobre el dataset AweAI-Team/CalibForge, orientado a tareas de agente de terminal. La model card referencia el preprint arXiv:2608.06352, que presumiblemente describe el proceso de entrenamiento y calibración, aunque su contenido no está disponible en la información proporcionada.
 
-En cuanto al proceso de cuantización, la model card indica que se trata de cuantizaciones ponderadas con importance matrix (weighted/imatrix quants) generadas con el pipeline de llama.cpp (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf). Se ofrecen 24 variantes de cuantización que abarcan desde IQ1_S (la más agresiva) hasta Q6_K (la de mayor precisión), lo que permite ajustar el equilibrio entre tamaño y calidad según el hardware disponible.
+La innovación destacable de esta ficha no está en el modelo en sí, sino en el proceso de cuantización: mradermacher aplica cuantizaciones ponderadas con imatrix (i1), que utilizan una matriz de importancia calculada sobre el dataset de calibración para preservar mejor los pesos relevantes en bits bajos. El autor indica que las variantes IQ suelen ser preferibles a las no-IQ de tamaño similar, y que IQ3_S "beats Q3_K*". La model card también menciona que el modelo es de visión y que los ficheros mmproj, si existen, están en el repositorio estático (mradermacher/CalibForge-35B-A3B-v2-GGUF), no en este.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperada por tratarse de un modelo de lenguaje, aunque no se detalla en la información disponible.
-- Razonamiento y matemáticas: no disponible.
-- Generación de código: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de texto conversacional en inglés, con especialización en tareas de agente de terminal.
+- Ejecución e interpretación de comandos de línea de comandos (terminal-agent), incluyendo la resolución de tareas multi-paso.
+- Razonamiento orientado a agentes: el tag "terminal-agent" y el ajuste SFT sobre CalibForge sugieren entrenamiento específico para planificación y ejecución de acciones en entornos de shell.
+- Capacidad de visión según la model card ("This is a vision model"), aunque los ficheros mmproj no están incluidos en este repositorio y deben obtenerse del repositorio estático.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Capacidades multilingües: limitadas al inglés según el campo language.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere integración con infraestructuras de despliegue estándar.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones de menor tamaño (IQ1_S, IQ1_M, IQ2_XXS) permiten ejecutar un modelo de gran tamaño en GPUs con poca VRAM o incluso en CPU, algo inviable con los pesos en precisión completa.
-- Experimentación con modelos MoE: la disponibilidad de 24 variantes de cuantización facilita comparar el impacto de la compresión en la calidad de las respuestas de un modelo MoE.
-- Inferencia en entornos con restricciones de memoria: el tamaño compacto del repositorio (0,4 GB) sugiere que las cuantizaciones de menor bits pueden caber en dispositivos con recursos limitados.
-- Pruebas de concepto y prototipado: útil para evaluar el comportamiento del modelo base antes de invertir en infraestructura para pesos completos.
-- Investigación sobre cuantización: el conjunto de variantes con y sin imatrix permite estudiar el efecto de diferentes técnicas de cuantización en el rendimiento.
-- Evaluación comparativa de cuantizaciones: permite medir la degradación de calidad entre IQ1_S y Q6_K en una misma tarea.
+- Automatización de tareas de administración de sistemas: el modelo puede interpretar instrucciones en lenguaje natural y generar secuencias de comandos de shell para tareas de mantenimiento, monitorización o despliegue, gracias a su ajuste específico como terminal-agent.
+- Agentes de CI/CD: integrado en pipelines, puede analizar salidas de compilación o logs de error y proponer comandos de corrección, reduciendo la intervención manual en tareas repetitivas.
+- Asistente de terminal interactivo: desplegado con llama.cpp u Ollama en una estación de trabajo, ofrece sugerencias de comandos contextuales y explica salidas de herramientas CLI al desarrollador.
+- Diagnóstico y resolución de incidencias en servidores: con una ventana de contexto adecuada (no confirmada), puede procesar secuencias de logs y proponer pasos de remediación paso a paso.
+- Generación de scripts de automatización: a partir de una descripción en inglés, produce scripts de bash o PowerShell para tareas de aprovisionamiento, backups o limpieza de disco.
+- Educación y formación en línea de comandos: sirve como tutor que explica comandos, flags y errores comunes en entornos Linux, con la ventaja de ejecutarse localmente en hardware de consumo gracias a las cuantizaciones de 8-12 GB.
+- Prototipado de agentes autónomos en investigación: su naturaleza MoE con ~3B activos permite iterar rápidamente en experimentos de agentes multi-paso con un coste computacional moderado.
 
 ## Benchmarks y rendimiento
 
@@ -52,29 +53,45 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma fiable, ya que el tamaño real del modelo no está confirmado. El repositorio completo ocupa 0,4 GB, lo que sugiere que las cuantizaciones individuales son muy compactas.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: probable para las cuantizaciones de menor bits (IQ1_S, IQ1_M, IQ2_XXS) dado el reducido tamaño del repositorio, aunque no confirmado.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF (vLLM con soporte GGUF, entre otros).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (según cuantización, tamaño de fichero):
+  - IQ1_S: 7,6 GB; IQ1_M: 8,3 GB; IQ2_XXS: 9,6 GB; IQ2_XS: 10,6 GB; IQ2_S: 10,8 GB; IQ2_M: 11,8 GB.
+  - Q2_K_S: 12,3 GB; Q2_K: 13,0 GB; IQ3_XXS: 13,7 GB; IQ3_XS: 14,6 GB; Q3_K_S: 15,3 GB; IQ3_S: 15,4 GB; IQ3_M: 15,5 GB; Q3_K_M: 16,9 GB; Q3_K_L: 18,2 GB.
+  - IQ4_XS: 18,8 GB; Q4_0: 19,9 GB; Q4_K_S: 20,0 GB; Q4_K_M: 21,3 GB; Q4_1: 21,9 GB.
+  - Q5_K_S: 24,1 GB; Q5_K_M: 24,8 GB; Q6_K: 28,6 GB.
+- GPU recomendadas: para cuantizaciones Q4_K_M o superiores, se recomienda una GPU con 24 GB o más (RTX 3090, RTX 4090, A100 40GB, H100). Para cuantizaciones IQ2/IQ3, una RTX 4060 Ti de 16 GB o una RTX 4070 Ti Super de 16 GB pueden ser suficientes, aunque con margen ajustado.
+- Cabe en GPU de consumo: sí, en las cuantizaciones IQ1_S a IQ3_M (7,6-15,5 GB) en GPUs de 8-16 GB; las variantes Q4_K_M y superiores requieren 24 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con servidores de inferencia estándar. Para el modelo base en safetensors, vLLM o TGI serían opciones, aunque no se confirman en la información disponible.
+- Latencia y throughput estimados: no disponibles. Al ser un MoE con ~3B activos, se espera un throughput superior al de un modelo denso de 35B, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información suficiente sobre el modelo base ni sobre alternativas comparables de la misma categoría para establecer una comparativa rigurosa.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada. Se indica "no disponible" para una comparación rigurosa. Como referencia cualitativa, modelos MoE de tamaño similar (por ejemplo, familias con ~30-40B totales y ~3B activos) suelen compartir la ventaja de un coste de inferencia reducido, pero no se pueden establecer comparaciones numéricas sin datos verificados.
+
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| CalibForge-35B-A3B-v2 (i1-GGUF) | 34,66B | ~3B | no disponible | Apache 2.0 | GGUF |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Discrepancia en el número de parámetros: los metadatos de Hugging Face reportan 96.047.470 parámetros, mientras que la nomenclatura indica 35B-A3B. No es posible determinar el tamaño real del modelo con la información disponible.
-- Licencia no especificada: no se indica la licencia del modelo base ni de las cuantizaciones, lo que impide confirmar si el uso comercial está permitido.
-- Idiomas no especificados: se desconoce qué idiomas soporta el modelo.
-- Sin benchmarks: no hay datos de rendimiento que permitan evaluar la calidad del modelo.
-- Riesgo de degradación por cuantización: las variantes de menor bits (IQ1_S, IQ1_M, IQ2_XXS) pueden degradar significativamente la calidad de las respuestas.
-- Riesgo de alucinación: inherente a los modelos de lenguaje, sin datos específicos disponibles.
-- Sesgos conocidos: no disponible.
-- Model card mínima: la documentación del repositorio es prácticamente inexistente, lo que dificulta la evaluación en producción.
-- Fecha de creación futura: el repositorio figura creado el 2026-11-20, lo que puede indicar un error en los metadatos o un modelo de fecha no fiable.
+- El modelo está entrenado y etiquetado únicamente en inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- Las cuantizaciones de muy bajo bit (IQ1_S, IQ1_M, Q2_K_S) conllevan una pérdida de calidad significativa; el propio autor las describe como "for the desperate" o "very low quality". No se recomiendan para producción.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en la generación de comandos de terminal: un comando incorrecto puede tener consecuencias destructivas. Se recomienda validación humana y entornos aislados.
+- La longitud de contexto no está documentada, lo que dificulta planificar tareas que requieran ventanas largas.
+- Aunque la licencia es Apache 2.0, el uso comercial debe verificar las condiciones del modelo base y del dataset de entrenamiento, no detalladas en la información disponible.
+- La capacidad de visión no está disponible en este repositorio (los ficheros mmproj están en el repositorio estático), por lo que el despliegue multimodal requiere pasos adicionales.
+- El repositorio tiene 371,0 GB y solo 1 like y 4.909 descargas en el momento de la consulta, lo que sugiere una adopción limitada y poca validación comunitaria.
+- No se han publicado benchmarks, por lo que el rendimiento real en tareas de agente de terminal no está cuantificado.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/CalibForge-35B-A3B-v2-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/CalibForge-35B-A3B-v2-i1-GGUF
 - Modelo base: https://huggingface.co/AweAI-Team/CalibForge-35B-A3B-v2
+- Dataset de entrenamiento: https://huggingface.co/datasets/AweAI-Team/CalibForge
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/CalibForge-35B-A3B-v2-GGUF
+- Página de resumen del autor: https://hf.tst.eu/model#CalibForge-35B-A3B-v2-i1-GGUF
+- Preprint referenciado: arXiv:2608.06352 (no se dispone de URL directa en la información proporcionada)
+- Guía de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests

@@ -2,89 +2,105 @@
 
 ## Resumen
 
-govai 2B es un ajuste fino mediante QLoRA del modelo Qwen3.5-2B, desarrollado por govailabs con el objetivo de ofrecer un asistente conversacional para usuarios sin experiencia previa en inteligencia artificial. El modelo está entrenado para responder con lenguaje llano, adaptar la longitud de la respuesta a la pregunta y citar fuentes numeradas cuando responde a partir de resultados de búsqueda web. Se distribuye principalmente como un archivo GGUF cuantizado Q4_K_M de 1,31 GB, pensado para ejecutarse íntegramente en local en un ordenador convencional.
+govai 2.4 es un asistente conversacional de aproximadamente 2.000 millones de parámetros desarrollado por govai labs, distribuido en formato GGUF y pensado para ejecutarse de forma local y totalmente offline en ordenadores personales. Está afinado a partir de Qwen/Qwen3.5-2B y se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Su propuesta central es ofrecer un asistente privado que quepa en un único fichero de 1,31 GB (cuantización Q4_K_M) y funcione tanto en GPU de consumo como en CPU.
 
-Con 1.942.653.248 parámetros totales (aproximadamente 2B), el modelo se posiciona en la gama baja de tamaño, lo que permite su despliegue en hardware de consumo con unos 3 GB de memoria gráfica. Su relevancia actual reside en el enfoque de "asistente de recuperación aumentada" (RAG) integrado: el modelo está específicamente entrenado para responder únicamente a partir de resultados de búsqueda proporcionados y admitir explícitamente cuando no encuentra una respuesta fiable, en lugar de inventarla.
+La versión 2.4 introduce soporte de tool calling con definiciones de función al estilo OpenAI, compatible con Ollama (`tools`) y llama.cpp (`--jinja`). El modelo incorpora además un modo de razonamiento opcional ("thinking") que se puede activar para problemas complejos y desactivar para respuestas rápidas. Está orientado a tareas de chat general, matemáticas escolares, ciencia, explicaciones paso a paso y automatización ligera con herramientas.
 
-El modelo soporta inglés, hindi y telugu, y se publica bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en aplicaciones de escritorio. Forma parte del ecosistema de la aplicación govai, que descarga este archivo en el primer arranque.
+El modelo soporta inglés (su idioma principal), hindi y telugu, y se distribuye con una aplicación de escritorio para Windows que integra búsqueda web, lectura de ficheros locales, calculadora y memoria. Con 360 descargas y 1 like en Hugging Face, es un proyecto de nicho centrado en privacidad, despliegue en dispositivo y asistencia educativa.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-2B); no se detalla la variante exacta |
-| Parametros totales | 1.942.653.248 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (publicado); el modelo base admite otras cuantizaciones GGUF |
-| Idiomas soportados | Ingles, hindi, telugu |
+| Arquitectura | Transformer (fine-tune de Qwen/Qwen3.5-2B); detalles internos no disponibles |
+| Parámetros totales | 1.942.653.248 (~2B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 16.384 tokens (recomendado) |
+| Tipos de cuantización | Q4_K_M (fichero publicado de 1,31 GB); otras no disponibles |
+| Idiomas soportados | Inglés (mejor), hindi, telugu |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q4_K_M); el modelo base en safetensors |
+| Formato de pesos | GGUF (compatible con llama.cpp y Ollama) |
 
 ## Arquitectura y entrenamiento
 
-govai 2B es un ajuste fino QLoRA de Qwen3.5-2B con rango 32, alpha 64 y una única época de entrenamiento. El conjunto de datos de ajuste consta de aproximadamente 1.850 conversaciones escritas específicamente para el estilo deseado: frases cortas, comparaciones cotidianas, ausencia de jerga y respuestas cuya longitud se ajusta a la pregunta (una o dos líneas para un dato puntual, respuesta breve con puntos clave para "explica", y respuesta completa con encabezados y resumen "In short" para "en detalle").
+govai 2.4 es un fine-tune del modelo Qwen/Qwen3.5-2B, por lo que hereda la arquitectura transformer del modelo base. La model card no detalla la composición del dataset de entrenamiento, el número de tokens utilizados ni si se emplearon técnicas de RLHF o DPO; esa información no está disponible. Sí se indica que las preguntas de evaluación se filtraron mediante una comprobación de solapamiento de 8 palabras para evitar contaminación, lo que sugiere un cuidado explícito en la separación entre entrenamiento y test.
 
-La innovación principal no es arquitectónica sino de comportamiento: el modelo está entrenado para responder de forma fundamentada a partir de resultados de búsqueda numerados, citando cada dato como [1], copiando los números exactamente y respondiendo "I couldn't find a reliable answer to that." cuando no hay información fiable. También se entrena para gestionar preguntas de seguimiento en conversaciones multi-turno y para producir respuestas básicas en hindi y telugu. No se especifica en la información disponible si hubo RLHF o DPO, ni el número de tokens de entrenamiento del modelo base.
+La innovación técnica destacable de la versión 2.4 es el soporte de tool calling: el modelo emite llamadas a funciones con esquema OpenAI, decide cuándo invocar una herramienta y cuándo responder directamente, y puede encadenar varias llamadas. También incorpora un modo de razonamiento ("thinking") activable por el usuario. No se documentan innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, hindi y telugu.
-- Respuestas en lenguaje llano, con longitud adaptada a la pregunta.
-- Respuestas fundamentadas en resultados de búsqueda web con citas numeradas ([1], [2], etc.).
-- Abstención explícita cuando no hay respuesta fiable en las fuentes proporcionadas.
-- Gestión de preguntas de seguimiento en conversaciones multi-turno.
-- Modo "thinking" del modelo base disponible pero desaconsejado para respuestas directas (se recomienda desactivarlo, p. ej. `think: false` en Ollama).
-- No se documenta soporte de tool calling, function calling, agentes autónomos, visión, audio ni matemáticas avanzadas.
+- Generación de texto conversacional en inglés, hindi y telugu, con respuestas en lenguaje sencillo.
+- Razonamiento paso a paso y modo "thinking" opcional para problemas difíciles (recomendado reservar 4.096+ tokens).
+- Matemáticas escolares: 82,4% en GSM8K (250 preguntas, sin thinking).
+- Ciencia y conocimiento general: 83,3% en ARC-Challenge y 61,8% en MMLU.
+- Tool calling / function calling con definiciones al estilo OpenAI (Ollama `tools`, llama.cpp `--jinja`).
+- Llamadas múltiples a herramientas en una misma interacción (78% en BFCL v3 multi-call).
+- Capacidad de decidir no invocar ninguna herramienta cuando ninguna encaja (85% en BFCL v3).
+- Integración con herramientas de ficheros locales (buscar, listar, leer) en la aplicación de escritorio.
+- Ejecución totalmente offline en dispositivo.
 
 ## Casos de uso
 
-- Asistente de escritorio para principiantes: la aplicación govai descarga el modelo en el primer arranque y lo ejecuta completamente offline en un PC convencional, ofreciendo explicaciones en lenguaje sencillo sin requerir conexión ni conocimientos técnicos.
-- Búsqueda web con respuestas citadas: el modelo recibe resultados de búsqueda numerados y responde citando cada dato con su referencia, lo que permite construir un asistente que muestre fuentes verificables al usuario.
-- Atención al cliente de bajo coste: con aproximadamente 3 GB de VRAM y respuestas breves ajustadas a la pregunta, puede desplegarse en equipos modestos para resolver consultas frecuentes con un tono claro y directo.
-- Educación y alfabetización digital: ideal para explicar conceptos de IA a personas sin formación técnica, con respuestas graduadas según la profundidad solicitada ("explica" frente a "en detalle").
-- Despliegue en local con Ollama o llama.cpp: integrable en flujos de trabajo de escritorio o scripts mediante `ollama run` o `llama-cli`, sin dependencia de servicios en la nube.
-- Asistente multilingüe básico para usuarios de hindi y telugu: útil para responder consultas sencillas en estas lenguas, con la advertencia de que su calidad es inferior a la del inglés.
-- Prototipado de pipelines RAG: sirve como modelo de referencia para validar arquitecturas de recuperación aumentada con abstención ante falta de evidencia, gracias a su entrenamiento específico en citación y rechazo de respuestas no fundamentadas.
+- Asistente personal offline en el escritorio: la aplicación de Windows integra el modelo con búsqueda web, calculadora y memoria, de modo que el usuario puede mantener conversaciones privadas sin enviar datos a la nube; encaja por su tamaño reducido y su licencia permisiva.
+- Atención al cliente en entornos con requisitos de privacidad: al ejecutarse en local y soportar tool calling, puede consultar APIs internas o bases de conocimiento sin exponer datos a terceros.
+- Automatización de tareas sobre ficheros locales: con herramientas de búsqueda, listado y lectura (solo lectura), el modelo puede localizar documentos, PDFs u hojas de cálculo y responder preguntas sobre ellos; la model card reporta 20/20 en selección de herramienta y 19/20 en uso del resultado.
+- Tutoría educativa: sus resultados en GSM8K (82,4%) y ARC-Challenge (83,3%) lo hacen adecuado para resolver y explicar problemas de matemáticas y ciencia de nivel escolar, con explicaciones paso a paso bajo demanda.
+- Integración en pipelines de agentes ligeros: el soporte de function calling con esquema OpenAI permite conectarlo a frameworks de agentes que necesiten un modelo pequeño y rápido (~150 tokens/s en GPU de gaming).
+- Prototipado y desarrollo en local: al ser GGUF compatible con Ollama y llama.cpp, sirve para probar flujos de chat y tool calling en máquinas sin GPU dedicada antes de escalar a modelos mayores.
+- Asistencia multilingüe en inglés, hindi y telugu: útil para aplicaciones dirigidas a usuarios de India que necesiten un asistente ligero y desplegable en dispositivo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que los resultados de GSM8K, ARC-Challenge y MMLU frente al modelo base están en ejecución y se añadirán próximamente.
+Resultados publicados por el autor con el fichero Q4_K_M, temperatura 0, respuestas incompletas contadas como erróneas y sin solapamiento de 8 palabras con el entrenamiento.
+
+| Benchmark | govai 2.3 | govai 2.4 |
+|---|---|---|
+| BFCL v3 · una llamada (100) | 21% | 85% |
+| BFCL v3 · elegir la herramienta correcta (100) | 38% | 85% |
+| BFCL v3 · varias llamadas a la vez (100) | 6% | 78% |
+| BFCL v3 · ninguna herramienta encaja, no llamar (100) | 95% | 85% |
+| BFCL v3 · media | 40,0% | 83,2% |
+| Ficheros propios: herramienta correcta (20) | 12/20 | 20/20 |
+| Ficheros propios: respuesta usa el resultado (20) | 8/20 | 19/20 |
+| GSM8K · matemáticas escolares (250), sin thinking | 82,8% | 82,4% |
+| ARC-Challenge · ciencia (300), sin thinking | 83,0% | 83,3% |
+| MMLU · conocimiento (400), sin thinking | 61,5% | 61,8% |
+
+No se han publicado resultados de benchmarks frente a otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3 GB con cuantización Q4_K_M (según la model card).
-- Tamaño en disco: 1,31 GB para el archivo GGUF Q4_K_M.
-- GPU recomendadas: no se especifican modelos concretos; el requisito de ~3 GB de VRAM permite su ejecución en GPU de consumo como GTX 1650, RTX 3050, RTX 4060 o superiores, así como en iGPU con memoria unificada suficiente.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 4 GB o más de VRAM.
-- Opciones de despliegue: Ollama (`ollama run hf.co/venkatagovindneelapu/govai:Q4_K_M`), llama.cpp (`llama-cli -hf venkatagovindneelapu/govai --jinja`) y la aplicación de escritorio govai.
-- Latencia y throughput: no disponibles.
-- Ajustes recomendados: temperatura 0,3 (0,2 para respuestas basadas en búsqueda), top_p 0,9, top_k 20; desactivar el modo "thinking".
+- VRAM estimada: el fichero Q4_K_M ocupa 1,31 GB; con contexto de 16.384 tokens se recomienda prever al menos 2-3 GB de memoria total (pesos más caché KV), aunque el autor no publica una cifra exacta.
+- GPU recomendadas: el autor indica ~150 tokens/s en "una GPU de gaming"; no se especifican modelos concretos (A100, H100, RTX 4090, etc.).
+- Cabe en GPU de consumo: sí, por tamaño (1,31 GB en Q4_K_M) es apto para GPUs de consumo con 4 GB o más de VRAM.
+- Funciona en CPU: el autor lo describe como "usable on CPU".
+- Opciones de despliegue: Ollama (`ollama run hf.co/govailabs/govai:Q4_K_M`), llama.cpp (`llama-cli -hf govailabs/govai --jinja`), llama-cpp-python, y la aplicación de escritorio para Windows.
+- Latencia y throughput: ~150 tokens/s en GPU de gaming según el autor; sin datos para CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| govai 2B | ~1,94B | No disponible | en, hi, te | Apache 2.0 | GGUF Q4_K_M | Ajuste QLoRA de Qwen3.5-2B orientado a lenguaje llano y RAG con citas |
-| Qwen3.5-2B (base) | ~2B | No disponible | No disponible | Apache 2.0 | Safetensors, GGUF | Modelo base; sin el ajuste de estilo ni el comportamiento de citación |
-| Alternativas de ~2B de la familia Llama/Gemma | No disponible | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la información proporcionada |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| govai 2.4 | ~2B | 16.384 | Apache 2.0 | GGUF | Fine-tune de Qwen3.5-2B; tool calling; offline |
+| Qwen3.5-2B (base) | ~2B | no disponible | no disponible | no disponible | Modelo base del que deriva govai |
+| Alternativas de ~2B con tool calling | no disponible | no disponible | no disponible | no disponible | No se dispone de datos en la información proporcionada |
 
-No se dispone de datos de benchmarks comparativos publicados para govai 2B, por lo que la comparación se limita a parámetros, licencia y formato.
+No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría; los datos de terceros no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo de 2.000 millones de parámetros: comete errores factuales, especialmente sobre personas, lugares y acontecimientos recientes; la aplicación compensa esto con búsqueda web.
-- Las respuestas en hindi y telugu son de menor calidad que las respuestas en inglés.
-- No proporciona asesoramiento médico, legal ni financiero profesional; las respuestas importantes deben verificarse.
-- Riesgo de alucinación inherente al tamaño del modelo, mitigado parcialmente por el entrenamiento en abstención ante falta de fuentes.
-- No se documenta la longitud de contexto soportada, lo que limita la planificación de despliegues con documentos largos.
-- El modelo está pensado para ejecutarse con el modo "thinking" desactivado; su uso con el modo activado puede degradar la experiencia.
-- Licencia Apache 2.0: permite uso comercial, pero se distribuye "tal cual", sin garantías de ningún tipo; debe conservarse el aviso `NOTICE` y la atribución a Qwen (Alibaba Cloud).
-- El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica una adopción muy temprana y poca validación comunitaria.
+- Modelo pequeño: puede equivocarse en hechos, especialmente sobre personas, lugares, fechas y eventos recientes; el autor recomienda verificar datos importantes o usar la búsqueda web de la aplicación.
+- Las llamadas a herramientas pueden ser erróneas o carecer de argumentos; conviene revisar qué hará una herramienta antes de ejecutarla y priorizar herramientas de solo lectura.
+- Cobertura lingüística limitada a inglés, hindi y telugu; el inglés es el idioma con mejor rendimiento.
+- Contexto recomendado de 16.384 tokens; superarlo puede degradar la calidad.
+- El instalador de Windows no está firmado digitalmente, lo que puede activar advertencias de SmartScreen.
+- No se documentan sesgos específicos en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero no se detallan restricciones adicionales más allá de las de la propia licencia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/govailabs/govai
-- Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
-- Ejecución en Ollama: `ollama run hf.co/venkatagovindneelapu/govai:Q4_K_M`
-- Ejecución en llama.cpp: `llama-cli -hf venkatagovindneelapu/govai --jinja`
+- Hugging Face: https://huggingface.co/govailabs/govai
+- Licencia: https://huggingface.co/govailabs/govai/blob/main/LICENSE
+- Aplicación Windows: https://huggingface.co/govailabs/govai/resolve/main/desktop/govai-setup-windows.exe?download=true
+- Ollama: https://ollama.com
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

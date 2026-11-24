@@ -2,102 +2,121 @@
 
 ## Resumen
 
-Inkling 2 Mini es un modelo multimodal de propósito general desarrollado por Thinking Machines Lab, publicado el 20 de noviembre de 2026 con pesos abiertos bajo licencia Apache 2.0. Acepta entradas de texto e imagen y genera texto, y está diseñado para aplicaciones de tipo agéntico, asistentes de código, chatbots y sistemas de generación aumentada por recuperación (RAG). La versión aquí documentada es la cuantización GGUF realizada por Xylolabs, pensada para ejecución local con llama.cpp sobre CUDA, Metal o CPU.
+Inkling 2 Mini es un modelo multimodal (image-text-to-text) de arquitectura MoE desarrollado por Thinking Machines Lab, distribuido aquí en formato GGUF por Xylolabs para su uso con llama.cpp. El repositorio contiene cuantizaciones del modelo base `thinkingmachines/Inkling-2-Mini`, con 26.070 millones de parámetros totales según los pesos en safetensors, e incluye un proyector de visión separado (`mmproj`) que habilita la entrada de imágenes. La ficha se centra en la edición GGUF, que es la que documenta el autor de la cuantización.
 
-El modelo base es un transformer de tipo mezcla de expertos (MoE) con 26.070.390.272 parámetros totales, según los metadatos de safetensors. Se distribuye originalmente como un checkpoint de aproximadamente 20 GB en precisiones mixtas NVFP4 y MXFP8, lo que permite su ejecución en hardware de consumo razonablemente potente: una NVIDIA DGX Spark, equipos Apple Silicon con 32 GB o más de memoria unificada, o GPUs con 32 GB o más de VRAM. Es relevante ahora porque combina capacidades multimodales y de tool use en un tamaño que cabe en estaciones de trabajo locales, algo poco habitual en modelos de esta categoría.
+La relevancia de esta publicación está en la calidad de las cuantizaciones: Xylolabs aplica una matriz de importancia propia sobre el fichero NVFP4 original y publica métricas de divergencia KL y acuerdo top-1 frente a la referencia F32, lo que permite elegir el fichero según el compromiso tamaño/fidelidad. Las cuantizaciones de 17,6 GB (NVFP4-XL, NVFP4-Lite) mantienen un KL medio en WikiText-2 de 0,0026–0,0030, muy por debajo del baseline Q4_K_M de llama.cpp (0,0167).
 
-La versión de Xylolabs incluye la torre de visión en archivos `mmproj` separados y excluye el drafter MTP (`mtp.safetensors`) del modelo original. El repositorio ocupa 41,5 GB e incluye dos variantes de cuantización: NVFP4 con el resto en BF16 (22,92 GB) y NVFP4 con el resto en Q8_0 (17,63 GB).
+El modelo se publica bajo licencia Apache 2.0, con la salvedad de que está sujeto a la Model Acceptable Use Policy de Thinking Machines. La ventana de contexto indicada en las tablas de hardware del autor llega hasta 1M tokens en configuraciones de memoria grande, aunque el dato de contexto nativo del modelo base no se detalla en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con mezcla de expertos (MoE) |
-| Parametros totales | 26.070.390.272 |
+| Arquitectura | MoE (mixture of experts); transformer multimodal con proyector de visión |
+| Parametros totales | 26.070.390.272 (26,07 B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el ejemplo de la model card usa `-c 32768`) |
-| Tipos de cuantizacion | NVFP4 (expertos) + BF16; NVFP4 (expertos) + Q8_0; torre de visión en BF16 o Q8_0 |
-| Idiomas soportados | Inglés y soporte multilingüe general |
-| Licencia | Apache 2.0 (sujeta a la Model Acceptable Use Policy de Thinking Machines) |
-| Formato de pesos | GGUF (llama.cpp); el modelo base usa safetensors en NVFP4/MXFP8 |
+| Longitud de contexto | no disponible como spec del modelo; el autor documenta configuraciones de hasta 1M tokens con KV cache f16 en hardware de 80 GB o más |
+| Tipos de cuantizacion | NVFP4, NVFP4-Lite, NVFP4-XL, IQ4_XS, Q3_K_M, IQ3_XXS, Q2_K, IQ2_XXS (texto); BF16 y Q8_0 (proyector de visión) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 (sujeta a la Model Acceptable Use Policy de Thinking Machines) |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye también en NVFP4 y safetensors |
 
 ## Arquitectura y entrenamiento
 
-Inkling 2 Mini es un modelo multimodal de arquitectura transformer con capas de mezcla de expertos (MoE), según las etiquetas del repositorio y la información del modelo base. Procesa texto e imágenes: la torre de visión se distribuye por separado en los archivos `mmproj`, lo que permite cargarla de forma independiente del tronco del modelo en llama.cpp. El checkpoint original se distribuye en precisiones mixtas NVFP4 y MXFP8, una elección que reduce el peso a unos 20 GB manteniendo los expertos en formato de baja precisión.
+El modelo base es un transformer con mezcla de expertos (MoE) y capacidad multimodal image-text-to-text, según los tags del repositorio y el pipeline declarado. La edición GGUF omite el "MTP drafter" (drafter de decodificación especulativa multi-token) presente en el modelo original, por lo que estas cuantizaciones no incluyen esa capacidad de decodificación especulativa. El proyector de visión se distribuye como fichero separado (`mmproj`), en BF16 (641,81 MB) o Q8_0 (345,91 MB).
 
-No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card original menciona que el modelo está pensado para instrucciones, conversación y tareas visuales, y que puede post-entrenarse con la plataforma Miles y con Tinker. Tampoco se detalla si incorpora innovaciones como decodificación especulativa en el checkpoint distribuido; de hecho, el drafter MTP del modelo original se ha excluido explícitamente de esta conversión GGUF.
+Las cuantizaciones de 15,73 GB a 8,49 GB usan los tipos por tensor y tamaños de Unsloth, cuantizados a partir del fichero NVFP4 con una matriz de importancia propia de Xylolabs. Los ficheros NVFP4, NVFP4-Lite y NVFP4-XL se derivan directamente del NVFP4 original. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general a partir de entradas de texto.
-- Comprensión de imágenes y respuesta en texto (pipeline `image-text-to-text`).
-- Soporte de tool calling y function calling, orientado a sistemas agénticos.
-- Razonamiento multi-paso y uso en pipelines de agentes.
-- Asistencia de código en múltiples lenguajes de programación.
-- Conversación multi-turno e instrucciones de propósito general.
-- Soporte multilingüe general, con inglés como idioma principal.
-- Integración con RAG y sistemas de recuperación aumentada.
-- No se documenta modo de razonamiento explícito (thinking mode), audio ni otras modalidades adicionales.
+- Generación de texto conversacional y razonamiento general (tag `conversational`).
+- Procesamiento de imágenes junto con texto (image-text-to-text) mediante el proyector `mmproj`.
+- Integración con llama.cpp y endpoints compatibles (`endpoints_compatible`).
+- Cuantización MoE con escalas por experto (NVFP4), que requiere llama.cpp `b12611` o posterior.
+- Soporte de plantillas de chat vía `--jinja` en `llama-server`.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Idiomas soportados: no disponible.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Asistentes de código en local: el modelo puede integrarse en editores o pipelines de CI/CD para autocompletar, revisar y explicar código en varios lenguajes, ejecutándose en una estación de trabajo con GPU de 32 GB o en Apple Silicon con 32 GB de memoria unificada.
-- Atención al cliente automatizada: admite conversaciones multi-turno e instrucciones, y su naturaleza multimodal permite adjuntar capturas o imágenes en el flujo de soporte; el contexto de trabajo recomendado en el ejemplo de llama.cpp es de 32.768 tokens.
-- Sistemas agénticos con tool calling: al soportar function calling, puede orquestar llamadas a APIs, consultas a bases de datos y acciones multi-paso en un agente autónomo ejecutado en infraestructura propia.
-- RAG sobre documentación técnica: combinado con un índice vectorial, puede responder preguntas sobre manuales y bases de conocimiento internas, incluyendo páginas escaneadas o diagramas gracias a la torre de visión.
-- Procesamiento de documentos con imágenes: extracción y descripción de información de capturas, gráficos o formularios, útil en digitalización de archivos y moderación de contenido visual.
-- Prototipado e investigación con fine-tuning: al ser Apache 2.0 y estar disponible en Tinker y Miles, sirve como base para experimentos de post-entrenamiento y ajuste a dominios concretos sin coste de licencia.
-- Despliegue en el borde o en local: la variante NVFP4+Q8_0 de 17,63 GB permite inferencia en una DGX Spark o en un Mac con 32 GB, útil para entornos con requisitos de privacidad que impiden enviar datos a la nube.
+- Despliegue local multimodal en estación de trabajo: con `Inkling-2-Mini-NVFP4-XL.gguf` (17,6 GB) más el `mmproj` BF16 cabe en una RTX 4090/3090 de 24 GB con 32K de contexto, permitiendo procesar capturas de pantalla o documentos escaneados junto a instrucciones de texto sin salir del equipo.
+- Asistente conversacional de contexto largo: en una H100 de 80 GB el autor documenta hasta 1M tokens de contexto con el fichero NVFP4, lo que habilita resumir o consultar corpus extensos (manuales, expedientes, historiales) en una sola sesión.
+- Servidor de inferencia ligero con `llama-server`: el flag `--jinja` y la compatibilidad con endpoints permiten exponer el modelo como API compatible con clientes OpenAI en entornos de desarrollo y pruebas.
+- Prototipado en hardware de consumo: `Inkling-2-Mini-IQ2_XXS.gguf` (8,49 GB) permite ejecutar el modelo en GPUs de 12–16 GB, con la contrapartida de un KL de 0,1086 en WikiText-2 y un top-1 del 86,2 %, adecuado solo para tareas tolerantes a degradación.
+- Evaluación comparativa de cuantizaciones: las tablas de KL y top-1 publicadas permiten seleccionar el fichero óptimo por hardware y medir el impacto real de la cuantización antes de desplegar en producción.
+- Procesamiento por lotes en clúster: con un B200 o B300 (192–288 GB) se puede servir el fichero NVFP4 con contexto de 1M y margen para concurrencia, útil para pipelines de análisis documental masivo.
+- Uso en Mac Studio con memoria unificada: los perfiles M5 Max y M5 Ultra (128–512 GB) permiten ejecutar el modelo completo con contexto máximo sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica métricas de fidelidad de cuantización (divergencia KL media frente a la referencia F32 y acuerdo top-1), medidas con llama.cpp sobre fragmentos de 512 tokens de tres textos. No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+
+| Cuantizacion | Tamano | WikiText-2 KL | top-1 | Chat KL | top-1 | Held-out KL | top-1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| NVFP4 | 22,92 GB | 0,0023 | 98,0 % | 0,0219 | 97,4 % | 0,0021 | 98,1 % |
+| Unsloth UD-Q8_K_XL | 22,87 GB | 0,0024 | 97,9 % | 0,0202 | 97,4 % | 0,0022 | 98,3 % |
+| Unsloth UD-Q4_K_XL | 17,63 GB | 0,0029 | 97,6 % | 0,0221 | 97,2 % | 0,0027 | 97,8 % |
+| NVFP4-Lite | 17,63 GB | 0,0030 | 97,6 % | 0,0194 | 97,3 % | 0,0027 | 97,9 % |
+| NVFP4-XL | 17,61 GB | 0,0026 | 97,8 % | 0,0214 | 97,2 % | 0,0024 | 97,9 % |
+| llama.cpp baseline Q4_K_M | 17,48 GB | 0,0167 | 94,4 % | 0,0594 | 94,1 % | 0,0131 | 95,0 % |
+| Unsloth UD-IQ4_XS | 15,73 GB | 0,0036 | 97,3 % | 0,0226 | 96,9 % | 0,0036 | 97,5 % |
+| IQ4_XS | 15,73 GB | 0,0037 | 97,4 % | 0,0232 | 96,9 % | 0,0035 | 97,5 % |
+| Unsloth UD-Q3_K_XL | 13,63 GB | 0,0136 | 95,2 % | 0,0354 | 95,6 % | 0,0116 | 95,6 % |
+| Q3_K_M | 13,63 GB | 0,0153 | 94,9 % | 0,0450 | 95,1 % | 0,0134 | 95,3 % |
+| Unsloth UD-IQ3_XXS | 11,66 GB | 0,0263 | 93,0 % | 0,0642 | 93,4 % | 0,0206 | 94,2 % |
+| IQ3_XXS | 11,66 GB | 0,0317 | 92,2 % | 0,0956 | 92,3 % | 0,0252 | 93,4 % |
+| Unsloth UD-Q2_K_XL | 9,14 GB | 0,0688 | 89,2 % | 0,0958 | 90,4 % | 0,0597 | 90,5 % |
+| Q2_K | 9,14 GB | 0,0857 | 87,9 % | 0,1470 | 88,8 % | 0,0733 | 89,1 % |
+| Unsloth UD-IQ2_XXS | 8,49 GB | 0,0857 | 88,1 % | 0,1145 | 89,8 % | 0,0734 | 89,4 % |
+| IQ2_XXS | 8,49 GB | 0,1086 | 86,2 % | 0,1962 | 87,9 % | 0,0900 | 87,8 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 32 GB o más recomendados por el autor del modelo base; la variante NVFP4+Q8_0 ocupa 17,63 GB en disco y la NVFP4+BF16 22,92 GB, a lo que hay que sumar el `mmproj` (345,91 MB en Q8_0 o 641,81 MB en BF16) y el espacio de caché KV para el contexto.
-- GPU recomendadas: NVIDIA DGX Spark (soporte oficial), GPUs con 32 GB o más de VRAM; el ejemplo de llama.cpp compila con `-DGGML_CUDA=ON` para NVIDIA.
-- Apple Silicon: MacBooks, Mac minis y Mac Studios con 32 GB o más de memoria unificada, con soporte vía Metal, Ollama y Exo Labs.
-- Cabe en GPU de consumo: sí, en tarjetas con 24-32 GB de VRAM (por ejemplo, RTX 3090/4090 de 24 GB con cuantización Q8_0 y contexto moderado), aunque el autor recomienda 32 GB o más.
-- Opciones de despliegue: llama.cpp (commit `29b52d39` o posterior, PR #32694), vLLM, SGLang, TokenSpeed, NVIDIA Dynamo, Unsloth, Ollama, Exo Labs, Llama App, Hugging Face y la plataforma Tinker.
-- Latencia y throughput: no disponibles.
+- Criterio del autor: un fichero cabe cuando su tamaño más la KV cache a ese contexto (f16) más 2 GB de runtime queda por debajo del 90 % de la memoria disponible.
+- RTX 4090 / RTX 3090 (24 GB): `NVFP4-XL` (17,6 GB) con 32K de contexto.
+- RTX 5090 (32 GB): `NVFP4` (22,9 GB) con 64K de contexto.
+- RTX 6000 Ada o 2 × 24 GB (48 GB): `NVFP4` con 512K de contexto.
+- H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), DGX Spark (128 GB unificada), Mac Studio M5 Max (128 GB unificada), H200 (141 GB), B200 (192 GB), Mac Studio M5 Ultra (256/512 GB), B300 (288 GB): `NVFP4` con 1M de contexto.
+- GPU de consumo: sí, el modelo cabe en GPUs de 24 GB con el fichero NVFP4-XL; para 12–16 GB hay que recurrir a IQ3_XXS (11,66 GB) o IQ2_XXS (8,49 GB).
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`) con release `b12611` o posterior; versiones anteriores omiten las escalas NVFP4 por experto y producen salidas incorrectas. El proyector de visión se carga con `--mmproj`; para uso solo texto se omite.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Inkling 2 Mini (esta ficha) | 26,07 B (MoE) | no disponible | Texto + imagen | Apache 2.0 | Pesos abiertos en HF, GGUF, Tinker |
-| Modelos comparables de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks de tareas del modelo base en la información proporcionada, por lo que la comparativa se limita a la fidelidad de cuantización publicada por el autor frente a las cuantizaciones de Unsloth y al baseline de llama.cpp sobre el mismo modelo.
 
-No se dispone de información sobre modelos alternativos de la misma categoría en la documentación proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
+| Variante | Tamano | WikiText-2 KL | top-1 | Licencia |
+|---|---:|---:|---:|---|
+| NVFP4 (Xylolabs) | 22,92 GB | 0,0023 | 98,0 % | Apache 2.0 |
+| Unsloth UD-Q8_K_XL | 22,87 GB | 0,0024 | 97,9 % | Apache 2.0 |
+| NVFP4-XL (Xylolabs) | 17,61 GB | 0,0026 | 97,8 % | Apache 2.0 |
+| Unsloth UD-Q4_K_XL | 17,63 GB | 0,0029 | 97,6 % | Apache 2.0 |
+| llama.cpp baseline Q4_K_M | 17,48 GB | 0,0167 | 94,4 % | Apache 2.0 |
+| IQ4_XS (Xylolabs) | 15,73 GB | 0,0037 | 97,4 % | Apache 2.0 |
+| IQ2_XXS (Xylolabs) | 8,49 GB | 0,1086 | 86,2 % | Apache 2.0 |
+
+Comparativa con modelos de otros autores de tamaño y categoría similares: no disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación inherente a los modelos generativos; no se documentan tasas específicas.
-- Sesgos conocidos: no documentados en la información disponible; cabe esperar sesgos derivados de los datos de entrenamiento, no especificados.
-- Idiomas: el soporte principal es el inglés, con soporte multilingüe general sin garantías de calidad por idioma.
-- Longitud de contexto: no se publica el máximo oficial; el ejemplo de la model card usa 32.768 tokens, pero no debe asumirse como límite definitivo.
-- Licencia: Apache 2.0 permite uso comercial, pero el uso está sujeto a la Model Acceptable Use Policy de Thinking Machines, que puede imponer restricciones adicionales.
-- La conversión GGUF excluye el drafter MTP, por lo que no se dispone de decodificación especulativa en esta variante.
-- Xylolabs no está afiliada ni respaldada por Thinking Machines Lab; la calidad de la cuantización es responsabilidad del conversor.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria de la conversión.
-- Para producción, conviene validar la variante de cuantización (NVFP4+BF16 frente a NVFP4+Q8_0) según el hardware y el impacto en calidad.
+- Las cuantizaciones de 2–3 bits (IQ2_XXS, Q2_K, IQ3_XXS) degradan notablemente la fidelidad: KL de 0,1086 y top-1 del 86,2 % en el caso de IQ2_XXS, frente a 0,0023 y 98,0 % del NVFP4. No son recomendables para tareas sensibles a la precisión.
+- Los ficheros NVFP4 requieren llama.cpp `b12611` o posterior; compilaciones anteriores ignoran las escalas por experto y generan salida incorrecta sin aviso.
+- La edición GGUF omite el MTP drafter del modelo original, por lo que no se beneficia de la decodificación especulativa multi-token.
+- El proyector de visión es un fichero separado; sin `--mmproj` el modelo funciona solo con texto.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; aplicable el riesgo habitual de los modelos generativos.
+- Idiomas soportados y limitaciones de contexto nativo: no disponibles.
+- Licencia Apache 2.0, pero sujeta a la Model Acceptable Use Policy de Thinking Machines; es necesario revisar ambas antes de un uso comercial.
+- Xylolabs es independiente de Thinking Machines Lab; los cambios respecto al modelo base se documentan en el fichero NOTICE del repositorio.
+- El repositorio tiene 1 like y 15.349 descargas en el momento de la consulta; la validación comunitaria es aún escasa.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Xylolabs/Inkling-2-Mini-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Licencia en el repositorio: https://huggingface.co/Xylolabs/Inkling-2-Mini-GGUF/blob/main/LICENSE
+- Licencia: https://huggingface.co/Xylolabs/Inkling-2-Mini-GGUF/blob/main/LICENSE
 - Model Acceptable Use Policy: https://thinkingmachines.ai/model-acceptable-use-policy/
-- Playground de Tinker: https://tinker.thinkingmachines.ai/playground
-- Tinker Cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
-- Paquete tml-renderers: https://pypi.org/project/tml-renderers/
-- Blog de Hugging Face sobre Inkling 2 Mini: https://hf.co/blog/inkling2mini
-- Receta de SGLang: https://docs.sglang.io/cookbook/autoregressive/ThinkingMachines/Inkling-2-Mini
-- Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling-2-Mini
-- TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#inkling-2-mini
-- Unsloth: https://unsloth.ai/docs/inkling-2-mini
-- Llama App: https://llama.app/
-- Miles (post-entrenamiento): https://miles.radixark.com/docs/models/thinkingmachines/inkl
-- llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/29b52d398b294509746ec0a3f28948a3107c0213
+- llama.cpp: https://github.com/ggml-org/llama.cpp
 - Repositorio de herramientas de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq

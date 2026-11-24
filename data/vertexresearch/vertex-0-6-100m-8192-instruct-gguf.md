@@ -2,85 +2,86 @@
 
 ## Resumen
 
-Vertex-0.6-100M-8192-Instruct es un modelo de lenguaje de 97 millones de parámetros desarrollado por VertexResearch, basado en la arquitectura Qwen3 y diseñado específicamente para inferencia eficiente en entornos con recursos limitados. Su versión GGUF, publicada bajo licencia Apache 2.0, está optimizada para ejecutarse con llama.cpp, lo que permite desplegarlo en CPU, GPU de baja gama o incluso en dispositivos de borde. El modelo ofrece una ventana de contexto de 8192 tokens con RoPE theta de 1M, una característica notable para un modelo de este tamaño.
+Vertex-0.6-100M-8192-Instruct es un modelo de lenguaje conversacional de 96.752.192 parámetros (aproximadamente 97M) desarrollado por VertexResearch. Se trata de un modelo Instruct con plantilla ChatML, soporte de tool calling y una ventana de contexto de 8192 tokens configurada mediante RoPE theta de 1M. La arquitectura es Qwen3, lo que lo sitúa en la familia de transformadores densos empleados por la serie Qwen3, aunque reescalada a un tamaño muy reducido orientado a despliegue en entornos con recursos mínimos.
 
-La relevancia de este modelo radica en su propuesta de llevar capacidades de chat y tool calling a un rango de parámetros donde normalmente predominan modelos de cientos de millones o miles de millones. Su licencia permisiva y su formato GGUF lo convierten en una opción atractiva para desarrolladores que necesitan un modelo ligero, con soporte para ChatML y llamadas a herramientas, sin depender de servicios en la nube. La cuantización Q8_0, recomendada por el autor, reduce el tamaño a 104 MB, lo que lo hace viable incluso en RAM de un solo gigabyte.
+La versión publicada bajo el identificador Vertex-0.6-100M-8192-Instruct-GGUF contiene únicamente cuantizaciones en formato GGUF para su uso con llama.cpp, con 11 variantes que van desde BF16 (195 MB) hasta Q2_K (62 MB). El modelo base es VertexResearch/Vertex-0.6-100M-8192-Instruct y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+
+Su relevancia radica en dos factores: por un lado, ofrece una ventana de contexto de 8192 tokens en un modelo de menos de 100M de parámetros, algo poco habitual en esta escala; por otro, el autor advierte explícitamente de que el modelo "no es el más coherente todavía y necesita más ajuste", con divagación, repetición e inconsistencias esperables, especialmente en generaciones largas. Es, por tanto, un modelo experimental más que una opción de producción.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Qwen3 (transformer con atención causal) |
-| Parametros totales | 96.752.192 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer denso, familia Qwen3 |
+| Parámetros totales | 96.752.192 (≈97M) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 8192 tokens (RoPE theta 1M) |
-| Tipos de cuantizacion | BF16, Q8_0, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, Q3_K_M, Q3_K_S, Q2_K |
+| Tipos de cuantización | BF16, Q8_0, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp), safetensors en el modelo base |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3, que es un transformer de decodificación autorregresiva con atención causal, normalización RMSNorm y activaciones SwiGLU. La configuración de 97 millones de parámetros es una variante compacta de la familia Qwen3, con una tabla de embeddings que domina el tamaño total del archivo, como señala el autor en la model card. El contexto de 8192 tokens se logra mediante RoPE con theta de 1M, un valor alto que permite extrapolar posiciones más allá del entrenamiento original con menor degradación.
+El modelo emplea una arquitectura transformer densa basada en Qwen3, con 96.752.192 parámetros totales. La ventana de contexto de 8192 tokens se consigue mediante RoPE con theta de 1M, un valor elevado que permite extender la longitud de contexto efectiva más allá de la ventana nativa. La plantilla de chat es ChatML y los tokens de fin de secuencia configurados son `</s>` y `<|im_end|>`.
 
-No se han publicado detalles sobre el proceso de entrenamiento en la información disponible. Se desconoce el número de tokens utilizados, la composición del dataset, si se aplicaron técnicas de RLHF o DPO, o si hubo algún ajuste fino adicional. El modelo base es VertexResearch/Vertex-0.6-100M-8192-Instruct, que sí existe en formato safetensors, pero no se han encontrado papers ni documentación técnica al respecto. El formato de chat es ChatML, con los tokens especiales `</s>` y `<|im_end|>` como delimitadores de fin de secuencia.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. El autor indica únicamente que el modelo es Instruct y que soporta tool calling, sin detallar el proceso de ajuste. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. La model card señala que, a 97M de parámetros, la tabla de embeddings domina el tamaño del archivo, lo que explica que las cuantizaciones de baja precisión ahorren menos espacio de lo habitual.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés, siguiendo el formato ChatML.
-- Tool calling / function calling: el modelo soporta invocación de herramientas, una capacidad clave para integrarlo en agentes y flujos de trabajo automatizados.
-- Inferencia local eficiente: gracias a su tamaño y a las cuantizaciones GGUF, puede ejecutarse en CPU, GPU de baja gama y dispositivos de borde sin necesidad de infraestructura en la nube.
-- Ventana de contexto de 8192 tokens: suficiente para mantener conversaciones largas o procesar documentos de tamaño moderado.
-- Compatibilidad con llama.cpp: se integra con el ecosistema de herramientas de llama.cpp, incluyendo servidores HTTP y clientes CLI.
-- No se han reportado capacidades de visión, audio ni razonamiento multimodal; es un modelo exclusivamente de texto.
+- Generación de texto conversacional en inglés con plantilla ChatML.
+- Modo instruct: responde a instrucciones y mantiene diálogos multi-turno.
+- Tool calling / function calling, según los tags del modelo.
+- Ventana de contexto de 8192 tokens, adecuada para conversaciones y documentos moderadamente largos.
+- Compatible con endpoints (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No se documentan capacidades de visión, audio ni modo thinking explícito.
 
 ## Casos de uso
 
-- Asistente de chat en aplicaciones móviles o de escritorio: al ocupar menos de 100 MB en cuantización Q4, el modelo puede integrarse en aplicaciones que requieren respuestas de texto sin conexión, como un asistente personal de notas o un bot de ayuda en una app de productividad.
-- Tool calling en agentes locales: su soporte de function calling permite construir agentes que consulten APIs, bases de datos o ejecuten acciones simples (por ejemplo, buscar en una base de datos local o enviar un correo) desde un script en Python o Node.js usando llama.cpp.
-- Filtrado y clasificación de texto en pipelines de datos: su tamaño y velocidad lo hacen útil para tareas de clasificación de correo, categorización de tickets de soporte o extracción de entidades en flujos de procesamiento por lotes.
-- Generación de respuestas en foros o sistemas de comentarios moderados: puede pre-generar respuestas a preguntas frecuentes en un sitio web, reduciendo la carga de un modelo más grande y el coste de inferencia.
-- Prototipado rápido de aplicaciones de chat: los desarrolladores pueden usarlo como un modelo de arranque para validar el flujo de una aplicación de conversación antes de migrar a un modelo más grande, ya que es rápido de descargar y ejecutar en cualquier máquina.
-- Educación y experimentación: su licencia Apache 2.0 y su tamaño lo hacen ideal para estudiar arquitecturas de atención y para hacer fine-tuning con recursos limitados, como un laboratorio universitario o un desarrollador individual.
-- Ejecución en dispositivos de borde (edge computing): con 62-65 MB en cuantización Q2_K o Q4_0, el modelo puede caber en microcontroladores o en la RAM de un Raspberry Pi, lo que permite asistentes de voz o de texto en entornos industriales o domóticos.
+- Prototipado rápido de asistentes conversacionales: el modelo cabe en menos de 200 MB en BF16 y arranca en cualquier máquina con llama.cpp, lo que permite validar flujos de chat y plantillas ChatML antes de escalar a modelos mayores.
+- Pruebas de integración de tool calling: al soportar function calling y estar empaquetado en GGUF, sirve para verificar pipelines de agentes y parsing de llamadas a herramientas en entornos de desarrollo con recursos limitados.
+- Experimentación educativa: su tamaño reducido y su contexto de 8192 tokens permiten estudiar el comportamiento de un transformer Qwen3 a pequeña escala, incluyendo efectos de cuantización en la coherencia.
+- Evaluación de cuantizaciones: la disponibilidad de 11 variantes (de BF16 a Q2_K) facilita comparar la degradación de calidad por bit en modelos pequeños, un caso de estudio útil para investigadores.
+- Despliegue en dispositivos edge o entornos embebidos: con cuantizaciones de 62-104 MB, puede ejecutarse en hardware con memoria muy limitada donde modelos mayores no caben.
+- Generación de texto auxiliar de baja latencia: tareas cortas como etiquetado, respuestas breves o completado de plantillas en las que la coherencia a largo plazo no es crítica.
+- Base para fine-tuning experimental: al ser Apache 2.0 y tener 97M de parámetros, es un punto de partida asequible para ajustes específicos de dominio en una sola GPU consumer.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo en la model card ni en los resultados de búsqueda web.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en cuantización Q8_0 (104 MB) cabe en cualquier GPU moderna, incluso en iGPUs. En Q4_0 (65 MB) puede ejecutarse en GPUs con menos de 1 GB de VRAM.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (GTX 1050, GTX 1650, RTX 3060, etc.) o simplemente CPU. No se requiere una GPU de gama alta.
-- CPU: es viable ejecutarlo en CPU con llama.cpp; el modelo completo (BF16, 195 MB) puede procesar tokens a velocidades de decenas de tokens por segundo en un procesador moderno.
-- Opciones de despliegue: llama.cpp (CLI, servidor HTTP), Ollama, llama-cpp-python, o cualquier framework compatible con GGUF. También se puede usar con Transformers cargando el modelo base safetensors.
-- Latencia y throughput: no hay datos publicados, pero dado el tamaño del modelo, la latencia es del orden de milisegundos por token en CPU y de microsegundos en GPU, aunque depende del hardware y de la cuantización.
+- VRAM estimada para inferencia: inferior a 1 GB en todas las cuantizaciones; BF16 requiere unos 195 MB de pesos más overhead de contexto KV, y Q8_0 unos 104 MB.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre; no requiere A100 ni H100. Funciona en GPUs integradas y en CPU.
+- Cabe en GPU consumer: sí, en cualquier RTX (incluso series antiguas), GTX, iGPU moderna o incluso en CPU pura.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), y por extensión Ollama u otros frontends compatibles con GGUF. No se documenta soporte para vLLM o TGI en la información disponible.
+- Latencia y throughput: no disponibles. Por el tamaño, se espera latencia muy baja en hardware moderno, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Arquitectura | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| Vertex-0.6-100M-8192-Instruct | 97M | 8192 | Qwen3 (transformer) | inglés | Apache 2.0 | GGUF, safetensors |
-| Falcon-H1-Tiny-Multilingual-100M-Instruct | 100M | no disponible | Transformer + Mamba (híbrida) | multilingüe | no disponible | GGUF |
-| SmolVLM-256M-Instruct | 256M | no disponible | Transformer con visión | multilingüe | no disponible | GGUF |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Vertex-0.6-100M-8192-Instruct | ≈97M | 8192 | Apache 2.0 | GGUF | Modelo experimental; el autor advierte de incoherencia y repetición |
+| Qwen3 (variantes pequeñas de la familia) | no disponible | no disponible | no disponible | no disponible | Arquitectura de referencia declarada; no se dispone de datos comparativos concretos en la información proporcionada |
+| Alternativas de <200M parámetros | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación facilitada |
 
-La comparativa se basa en modelos de tamaño similar disponibles en GGUF. Falcon-H1-Tiny ofrece una arquitectura híbrida con Mamba y soporte multilingüe, mientras que SmolVLM-256M añade capacidades de visión. Vertex se distingue por su arquitectura Qwen3 pura, su contexto de 8192 tokens y su licencia Apache 2.0, pero carece de soporte multilingüe y de visión. No se dispone de datos de rendimiento comparativo.
+No se dispone de datos de rendimiento comparativo entre este modelo y alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo soporta inglés. Cualquier entrada en otro idioma degradará significativamente la calidad de las respuestas.
-- Tamaño reducido: con 97 millones de parámetros, la capacidad de razonamiento complejo, matemáticas avanzadas o generación de código es limitada en comparación con modelos de 1B o 7B. Es adecuado para tareas simples de conversación y clasificación.
-- Riesgo de alucinación: como todos los modelos pequeños, puede generar respuestas plausibles pero incorrectas, especialmente en contextos largos o preguntas de conocimiento general.
-- Cuantización: el autor recomienda Q8_0 o superior para mantener calidad, ya que la cuantización de baja precisión (Q2_K, Q3_K) degrada significativamente el rendimiento en modelos pequeños.
-- Sin datos de entrenamiento: no se ha publicado información sobre el dataset ni sobre el proceso de entrenamiento, lo que dificulta evaluar sesgos o alucinaciones sistemáticas.
-- Sin soporte de visión ni audio: es un modelo de texto puro; no puede procesar imágenes ni sonido.
-- Uso comercial: la licencia Apache 2.0 permite uso comercial sin restricciones, pero la ausencia de documentación técnica puede complicar la integración en producción.
+- Coherencia limitada: el propio autor advierte de divagación, repetición e inconsistencias, especialmente en generaciones largas. No es apto para producción sin validación exhaustiva.
+- Riesgo de alucinación elevado: en modelos de esta escala, la fiabilidad factual es baja y no debe usarse para tareas que requieran precisión.
+- Idioma: solo inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Contexto: aunque la ventana es de 8192 tokens, la calidad del modelo puede degradarse mucho antes de alcanzar ese límite.
+- Cuantización: el autor indica que la cuantización perjudica desproporcionadamente a modelos pequeños y recomienda Q8_0 o superior, preferiblemente BF16.
+- Tool calling: se anuncia soporte, pero no hay documentación sobre su fiabilidad ni ejemplos de uso; conviene validarlo empíricamente.
+- Licencia: Apache 2.0 permite uso comercial, pero las limitaciones de calidad hacen desaconsejable su uso en entornos productivos sin evaluación previa.
+- Sesgos: no se documentan sesgos conocidos ni procesos de mitigación; al desconocerse el dataset de entrenamiento, no es posible evaluar sesgos sistemáticos.
 
 ## Enlaces
 
-- [Hugging Face: VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF)
-- [Hugging Face: VertexResearch/Vertex-0.6-100M-8192-Instruct (modelo base)](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct)
-- [ModelFitCheck — herramienta para comprobar si un modelo cabe en tu GPU](https://modelfitcheck.com/)
-- [GGUF Model Discovery: buscador de modelos GGUF](https://local-ai-zone.github.io/)
-- [Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF (modelo comparable)](https://huggingface.co/Luigi/Falcon-H1-Tiny-Multilingual-100M-Instruct-GGUF)
-- [Mungert/SmolVLM-256M-Instruct-GGUF (modelo comparable)](https://huggingface.co/Mungert/SmolVLM-256M-Instruct-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct)
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

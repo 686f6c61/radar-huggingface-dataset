@@ -43,31 +43,5 @@
   "renamed_to": "sergolsub/d3-v3.1.0-27B-MLX-8bit",
   "renamed_at": "2026-11-23T12:17:51.613Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "sergolsub/mlx-d3-turbo-27B · Hugging Face",
-      "url": "https://huggingface.co/sergolsub/mlx-d3-turbo-27B",
-      "snippet": "Measured (Mac mini M4 Pro 48 GB, MLX 8-bit) Not measured locally — 27.8 GB planned on disk (stream-converted upload-and-free; weights never held on this machine). Family reference — d3-v3.1.0-27B, same backbone, measured on this machine: on disk 28.15 GB · load 7.08 s · peak resident memory 15.78 GB · median decision 2141 ms"
-    },
-    {
-      "title": "sergolsub/mlx-mammoth-v1-27B · Hugging Face",
-      "url": "https://huggingface.co/sergolsub/mlx-mammoth-v1-27B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - serag-ai/D3",
-      "url": "https://github.com/serag-ai/D3",
-      "snippet": "D3 is a specialized Small Language Model (SLM) with roughly 70M parameters, designed for accurate and efficient Drug-Drug Interaction (DDI) severity prediction. Given a pair of drugs, D3 classifies the severity of their interaction as minor, moderate, or major. Despite being up to 1,000x smaller than the large language models it is compared against, D3 reaches a 0.858 F1 score with competitive ..."
-    },
-    {
-      "title": "What is Decision 3.0? vLLM Semantic Router&#x27;s New Open Decision Models",
-      "url": "https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/",
-      "snippet": "Bottom line: Best: a 9B model now beats last generation&#x27;s 27B. Worst: scores are self-reported against live board data. What is Decision 3.0? Decision 3.0 is a set of open decision models from vLLM Semantic Router that return probabilities instead of text. You pass a state (text or JSON), optional images, and named questions."
-    },
-    {
-      "title": "oMLX — LLM inference, optimized for your Mac",
-      "url": "https://omlx.ai/",
-      "snippet": "Native macOS inference server built on MLX. Paged SSD KV caching, continuous batching, and drop-in API for Claude Code, OpenClaw, and Cursor."
-    }
-  ]
+  "sources": []
 }

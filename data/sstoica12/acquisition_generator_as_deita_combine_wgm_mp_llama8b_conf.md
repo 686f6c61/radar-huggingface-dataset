@@ -2,96 +2,91 @@
 
 ## Resumen
 
-`sstoica12/acquisition_generator_AS_deita_combine_WGM_MP_llama8b_conf` es un modelo de generación de texto publicado en Hugging Face por el usuario `sstoica12`, con un total de 14.770.033.664 parámetros confirmados a partir de los pesos en safetensors y un repositorio de 59,1 GB (consistente con pesos en fp32). El pipeline declarado es `text-generation` y la librería es `transformers`. No dispone de descargas ni de "likes" en el momento de la consulta, y su model card es la plantilla autogenerada por el Hub, sin ninguna sección completada por el autor.
+El modelo `sstoica12/acquisition_generator_AS_deita_combine_WGM_MP_llama8b_conf` es un checkpoint de tipo text-generation publicado en Hugging Face por el usuario sstoica12. A pesar de que su nombre incluye la referencia "llama8b", los metadatos de pesos safetensors indican un total de 14.770.033.664 parametros, lo que corresponde a una familia de aproximadamente 14,7 mil millones de parametros, no a los 8 mil millones que sugiere el nombre. La etiqueta de arquitectura declarada en el Hub es `qwen2`, por lo que el modelo se apoya en la arquitectura transformer decoder-only de la familia Qwen2.
 
-El nombre del repositorio sugiere un fine-tune o checkpoint derivado de un flujo de trabajo denominado "acquisition generator" (probablemente generación de datos de adquisición o destilación), con los sufijos `combine_WGM_MP` y `conf`. Existe una discrepancia relevante en los metadatos: el nombre indica `llama8b`, la etiqueta de arquitectura indica `qwen2` y el recuento real de parámetros (14,77 mil millones) no corresponde a ninguno de los dos tamaños citados, sino a la franja de 14B. Cualquier evaluación debe partir de esta ambigüedad.
+El modelo parece estar orientado a la generacion de "acquisition" (adquisiciones) en un contexto de combinacion de datos (WGM, MP, combine, deita en el identificador), lo que sugiere un fine-tuning sobre un modelo base Qwen2 para una tarea especifica de generacion de textos o conversaciones. La model card es la plantilla automatica de Hugging Face sin rellenar, por lo que no hay informacion sobre datos de entrenamiento, licencia, idiomas ni procedimiento de ajuste.
 
-La relevancia del modelo es en este momento limitada: se trata de un checkpoint sin documentación, sin licencia declarada, sin idiomas declarados y sin resultados de evaluación publicados. Es útil únicamente como objeto de inspección técnica o como base para experimentos internos, no como componente listo para producción.
+Su relevancia actual es limitada: se trata de un checkpoint de investigacion con escasa documentacion, 374 descargas y ningun "like", sin resultados de benchmarks publicados. Resulta util principalmente como referencia para quien quiera reproducir o inspeccionar un fine-tuning sobre Qwen2 de ~14,7B, pero no como modelo listo para produccion sin una evaluacion previa por parte del usuario.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only; la etiqueta del Hub indica `qwen2`, mientras que el nombre del repositorio indica `llama8b` (discrepancia no resuelta por el autor) |
-| Parámetros totales | 14.770.033.664 (14,77B), dato real de los safetensors |
-| Parámetros activos | No aplica: no hay indicios de arquitectura MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No se han publicado cuantizaciones; el repositorio solo contiene safetensors en fp32 (59,1 GB). La conversión a bf16, GPTQ/AWQ o GGUF requeriría realizarla por cuenta propia |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (ausencia de licencia implica derechos reservados por defecto) |
-| Formato de pesos | safetensors (fp32) |
+| Arquitectura | Transformer decoder-only (familia Qwen2, segun tag del Hub) |
+| Parametros totales | 14.770.033.664 (14,77B, segun safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan GGUF ni otras variantes) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir la arquitectura con rigor. Las etiquetas del Hub apuntan a la familia Qwen2, mientras que el identificador del repositorio hace referencia a Llama 8B, y el recuento de parámetros (14,77B) contradice ambas referencias. El tamaño del repositorio (59,1 GB) es coherente con pesos en precisión completa (4 bytes por parámetro), lo que sugiere que el checkpoint se subió sin convertir a bf16 ni a ningún formato cuantizado.
+La arquitectura declarada en los tags del Hub es `qwen2`, lo que implica un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y sesgo QKV, siguiendo el diseno de la familia Qwen2. El recuento de parametros de safetensors (14,77B) es coherente con un modelo de la familia Qwen2 de ~14B, no con un 8B, pese a la referencia "llama8b" del identificador.
 
-No hay ningún dato sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, las fases de alineación (RLHF, DPO, SFT) ni las hiperparámetros de entrenamiento: la model card mantiene los marcadores `[More Information Needed]` en todas las secciones. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, atención híbrida). El único identificador arXiv presente en las etiquetas, `1910.09700`, corresponde al artículo de Lacoste et al. sobre el cálculo del impacto de emisiones de carbono, incluido en la plantilla estándar del Hub, y no a un paper sobre este modelo.
+No hay informacion en la model card sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.). La model card es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]". El nombre del repositorio sugiere un fine-tuning sobre un dataset combinado (WGM, MP, Deita) para una tarea de generacion de adquisiciones, pero no se aporta detalle verificable.
 
 ## Capacidades
 
-- Generación de texto conversacional: es la única capacidad declarada explícitamente mediante el pipeline `text-generation` y la etiqueta `conversational`.
-- Compatibilidad con Text Generation Inference y endpoints compatibles, según las etiquetas `text-generation-inference` y `endpoints_compatible`.
-- Razonamiento, matemáticas y generación de código: no documentados; no hay evidencia publicada de que el modelo los soporte de forma específica.
-- Tool calling / function calling: no disponible; no se declara plantilla de chat ni formato de herramientas.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; el autor no declara ningún idioma.
-- Capacidades especiales (modo "thinking", visión, audio): no disponible; no se declaran.
+- Generacion de texto autoregresiva (pipeline `text-generation`).
+- Conversacion multi-turno (tag `conversational`).
+- Compatible con Text Generation Inference (tag `text-generation-inference`) y con `endpoints_compatible`.
+- Uso mediante la libreria `transformers`.
+- Capacidades de razonamiento, codigo, matematicas, vision o audio: no disponible (no se documentan).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes o multi-step reasoning: no disponible.
+- Capacidades multilingues: no disponible.
+- Modo "thinking", vision o audio: no disponible.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipotéticos y asumen que el checkpoint se comporta como un modelo conversacional genérico de ~14B; ninguno está respaldado por evaluación publicada.
-
-- Experimentación interna con checkpoints intermedios: el modelo puede utilizarse como base para comparar el efecto de distintas fases de un pipeline de generación de datos, dado el ecosistema de repositorios hermanos del mismo autor.
-- Generación de datos sintéticos para ajuste fino: con 14,77B de parámetros y pesos completos, puede emplearse para producir pares instrucción-respuesta en grandes volúmenes antes de filtrar y destilar a modelos menores.
-- Sustitución de un modelo base en un pipeline existente de Qwen2 o Llama: al estar en formato `transformers` estándar, puede cargarse con `AutoModelForCausalLM` y evaluarse en una tarea concreta antes de decidir su adopción.
-- Investigación sobre evaluación de modelos sin documentación: sirve como caso de estudio de deriva de metadatos (nombre, arquitectura declarada y parámetros incoherentes) y de su impacto en la reproducibilidad.
-- Despliegue en entorno controlado con TGI: las etiquetas indican compatibilidad con Text Generation Inference, lo que permite servirlo mediante una API compatible con OpenAI para pruebas de integración.
-- Reproducción de experimentos académicos de análisis de modelos: al conservar los pesos en fp32, es adecuado para estudiar precisión numérica, atención o representaciones internas sin la pérdida introducida por la cuantización.
+- Experimentacion academica con fine-tunings sobre Qwen2: el checkpoint sirve como punto de partida para inspeccionar como un ajuste sobre datos combinados (WGM, MP, Deita) modifica el comportamiento de un modelo base de ~14,7B, comparando respuestas antes y despues del ajuste.
+- Generacion de texto conversacional en prototipos: al estar etiquetado como `conversational`, puede emplearse en demos de chatbot con `transformers` y un servidor de inferencia, siempre que se valide la calidad de las respuestas.
+- Evaluacion comparativa de checkpoints: util para pipelines de evaluacion interna que comparen variantes de fine-tuning sobre la misma base Qwen2, midiendo deriva respecto al modelo original.
+- Reproduccion de experimentos de investigacion: el repositorio permite descargar los pesos safetensors y reproducir el proceso de inferencia descrito por el autor, aunque la falta de documentacion limita la reproducibilidad completa.
+- Servicio de inferencia con TGI: al incluir el tag `text-generation-inference`, puede desplegarse en un endpoint compatible con TGI para pruebas de latencia y throughput en un entorno controlado.
+- Generacion de datos sinteticos para tareas de "acquisition": por el nombre del repositorio, podria emplearse para generar textos de adquisicion en un dominio concreto, aunque sin documentacion del dataset de entrenamiento el dominio real queda sin verificar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en fp32: aproximadamente 59,1 GB solo para los pesos, más caché KV; se necesitan GPUs de 80 GB (A100, H100) o sharding en varias GPUs.
-- VRAM tras conversión a bf16: alrededor de 29,5 GB para los pesos, lo que encaja en una A100 40 GB, L40S 48 GB o H100.
-- GPU consumer: no cabe en una RTX 4090 (24 GB) en bf16 ni en fp32. Solo sería viable con una cuantización de 4 bits (~9 GB de pesos, estimación teórica a partir del número de parámetros), que el autor no ha publicado y habría que generar.
-- Opciones de despliegue: `transformers` (librería declarada), Text Generation Inference (etiqueta `text-generation-inference`) y endpoints compatibles con la API de OpenAI (etiqueta `endpoints_compatible`). vLLM, llama.cpp u Ollama requerirían conversión previa de formato.
-- Latencia y throughput: no disponible; no hay mediciones publicadas.
-- Almacenamiento: 59,1 GB para el repositorio completo más el espacio temporal necesario para cualquier conversión de formato.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 29,5 GB solo para pesos (14,77B x 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomienda al menos 32-40 GB.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 15-16 GB para pesos, mas overhead; requiere al menos 24 GB.
+- VRAM estimada en cuantizacion de 4 bits: en torno a 8-9 GB para pesos, mas overhead; requiere al menos 12-16 GB.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB para FP16 sin cuantizar; RTX 4090 (24 GB) para 8 bits; RTX 3090/4090 o equivalentes de 24 GB para 4 bits.
+- Cabe en GPU consumer: si, en configuraciones cuantizadas (4 u 8 bits) sobre RTX 3090, RTX 4090 o GPUs con 16-24 GB; en FP16 completo no cabe en GPUs consumer de 24 GB.
+- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (tag `text-generation-inference`), endpoints compatibles (tag `endpoints_compatible`). No se confirma soporte de llama.cpp, Ollama ni TGI en formato GGUF, ya que no se publican pesos GGUF.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`..._AS_deita_..._llama8b_conf`) | 14,77B | No disponible | No disponible | Hugging Face, 0 descargas |
-| `sstoica12/..._AS_grape_combine_WGM_MP_llama8b_conf` | ~14,8B | 32K (según ficha de Featherless) | No disponible | Hugging Face, Featherless, Friendli |
-| `sstoica12/..._AS_confidence_combine_WGM_MP_llama8b_conf` | No disponible | No disponible | No disponible | Hugging Face |
-| `sstoica12/acquisition_student_original_combine_WGM_MP_llama8b_conf_5000` | No disponible | No disponible | No disponible | Hugging Face |
-| Alternativas consolidadas de la franja 8B-14B (Qwen2.5-14B, Llama-3.1-8B) | 8B-14B | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
+| `sstoica12/acquisition_generator_AS_deita_combine_WGM_MP_llama8b_conf` | 14,77B | no disponible | no disponible | Hugging Face, 374 descargas |
+| Qwen2-7B (base) | 7,6B | 32.768 tokens (segun documentacion publica de Qwen2) | Apache 2.0 (Qwen2 base) | Hugging Face, ampliamente distribuido |
+| Qwen2-72B (base) | 72,7B | 32.768 tokens (segun documentacion publica de Qwen2) | Apache 2.0 (Qwen2 base) | Hugging Face, ampliamente distribuido |
+| Llama 3 8B | 8,0B | 8.192 tokens (segun documentacion publica de Llama 3) | Llama 3 Community License | Hugging Face, ampliamente distribuido |
 
-La comparación con modelos de la competencia no puede realizarse con rigor: no hay datos de rendimiento de este checkpoint ni de sus hermanos. El único dato de contexto (32K) proviene de la ficha de un modelo hermano en un proveedor externo y no está confirmado para este repositorio.
+Nota: los datos de los modelos comparativos provienen de su documentacion publica; los del modelo analizado no estan disponibles en la informacion proporcionada, por lo que la comparacion de rendimiento no puede realizarse.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: sin un archivo de licencia explícito, rigen los derechos de autor por defecto, por lo que no puede asumirse permiso de uso comercial, redistribución ni modificación.
-- Model card autogenerada sin contenido: no se documentan datos de entrenamiento, evaluación, sesgos ni uso previsto; cualquier despliegue se hace sin garantías.
-- Ambigüedad de arquitectura: el nombre apunta a Llama 8B, las etiquetas a Qwen2 y los pesos a 14,77B. Cargar el modelo con la clase equivocada o asumir un tokenizador incorrecto puede producir resultados silenciosamente erróneos.
-- Riesgo de alucinación no cuantificado: al no existir evaluación publicada, no hay forma de estimar la tasa de error en tareas de factualidad.
-- Idiomas no declarados: se desconoce si el modelo conserva competencia multilingüe o está especializado en un único idioma.
-- Longitud de contexto no declarada: no debe asumirse la ventana de 32K de los modelos hermanos.
-- Sin validación comunitaria: 0 descargas y 0 "likes" implican ausencia de pruebas independientes.
-- Origen "acquisition generator": el nombre sugiere un modelo entrenado para generar datos de adquisición o destilación, no un asistente general; su comportamiento fuera de ese dominio es impredecible.
-- Pesos en fp32: 59,1 GB de repositorio complican el almacenamiento, la transferencia y el despliegue en infraestructura modesta.
+- Model card sin rellenar: no hay informacion sobre datos de entrenamiento, sesgos, licencia ni uso previsto, lo que impide evaluar su idoneidad para produccion.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; debe contactarse con el autor antes de cualquier despliegue comercial.
+- Riesgo de alucinacion: al ser un modelo generativo sin evaluacion publicada, no se puede descartar un comportamiento alucinatorio, especialmente en dominios especializados.
+- Idiomas soportados no documentados: no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
+- Longitud de contexto no disponible: no se puede planificar su uso en tareas de contexto largo sin verificacion empirica.
+- Discrepancia entre nombre y parametros: el identificador menciona "llama8b" pero los pesos suman 14,77B, lo que puede inducir a error sobre el modelo base real.
+- Sin benchmarks ni evaluaciones publicadas: no hay evidencia cuantitativa de calidad, por lo que cualquier uso en produccion requiere una evaluacion propia.
+- Escasa traccion en el Hub (0 likes, 374 descargas): no hay comunidad ni soporte documentado.
+- El tag `arxiv:1910.09700` corresponde a la calculadora de impacto de Lacoste et al. (2019) citada en la plantilla, no a un paper del modelo; no debe interpretarse como referencia tecnica del mismo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_generator_AS_deita_combine_WGM_MP_llama8b_conf
-- Modelo hermano (`AS_confidence`): https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_combine_WGM_MP_llama8b_conf
-- Modelo hermano (`AS_grape`, Hugging Face): https://huggingface.co/sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf
-- Modelo hermano (`AS_grape`, ficha en Featherless): https://featherless.ai/models/sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf
-- Modelo hermano (`AS_grape`, ficha en FriendliAI): https://friendli.ai/models/sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf
-- Modelo relacionado (`acquisition_student_original_..._5000`): https://huggingface.co/sstoica12/acquisition_student_original_combine_WGM_MP_llama8b_conf_5000
-- Registro en Free2AITools: https://free2aitools.com/model/sstoica12/acquisition_generator_as_confidence_combine_wgm_mp_llama8b_conf
-- Artículo citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono; incluido en la plantilla del Hub, no es el paper del modelo): https://arxiv.org/abs/1910.09700
+- [Hugging Face: sstoica12/acquisition_generator_AS_deita_combine_WGM_MP_llama8b_conf](https://huggingface.co/sstoica12/acquisition_generator_AS_deita_combine_WGM_MP_llama8b_conf)
+- [Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning (referencia de la plantilla)](https://arxiv.org/abs/1910.09700)
+- [Machine Learning Impact calculator](https://mlco2.github.io/impact#compute)

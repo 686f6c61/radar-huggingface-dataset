@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "axteam/Qwen3.5-4B-NVFP4A16 · Hugging Face",
-      "url": "https://huggingface.co/axteam/Qwen3.5-4B-NVFP4A16",
-      "snippet": "Image-Text-to-Text model with 5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "axteam/Qwen3.5-0.8B-NVFP4A16 · Hugging Face",
-      "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16",
-      "snippet": "Image-Text-to-Text model with 0.9B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Qwen3.5 4B - Jetson AI Lab",
-      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-4b/",
-      "snippet": "Qwen3.5 4B offers a balanced point in the Qwen3.5 family for local multimodal instruction following, visual understanding, and agent-style workloads on Jetson. Inputs and Outputs"
-    },
-    {
-      "title": "qwen3.5:4b - ollama.com",
-      "url": "https://ollama.com/library/qwen3.5:4b",
-      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
-    },
-    {
-      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
-      "url": "https://github.com/ABDtmx/Qwen3.5",
-      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
-    }
-  ]
+  "sources": []
 }

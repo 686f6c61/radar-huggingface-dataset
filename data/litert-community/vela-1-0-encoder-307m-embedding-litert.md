@@ -2,111 +2,114 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-Embedding-LiteRT es la conversión a LiteRT (`.tflite`) y LiteRT-LM (`.litertlm`) del modelo de embeddings de frases vllm-sr/Vela-1.0-Encoder-307M-Embedding (revisión `290318fd`), publicado por la comunidad `litert-community`. Se trata de un encoder ModernBERT de 22 capas y 307 M de parámetros que produce vectores de 768 dimensiones mediante mean pooling y normalización L2, con soporte Matryoshka para truncar el vector entre 64 y 768 dimensiones y tokenizador Gemma de 256 000 entradas. No es un modelo generativo: su única salida es la representación vectorial de una frase.
+Vela-1.0-Encoder-307M-Embedding-LiteRT es la conversion al formato LiteRT (`.tflite`) y LiteRT-LM (`.litertlm`) del modelo de embeddings de frases vllm-sr/Vela-1.0-Encoder-307M-Embedding, un encoder ModernBERT de 22 capas y 307 millones de parametros que produce vectores de 768 dimensiones mediante mean pooling y normalizacion L2. La conversion la mantiene el colectivo litert-community usando litert-torch 0.10.0 sobre LiteRT 2.2.0 y LiteRT-LM 0.18.0, y su objetivo es llevar un embedder multilingue de calidad a inferencia en dispositivo (Android, macOS) con aceleracion por NPU y GPU.
 
-El problema que resuelve es la ejecución de embeddings de calidad en dispositivos móviles sin depender de un servidor. Para ello la conversión fija ventanas estáticas de 64, 128, 256 y 512 tokens (un fichero por ventana), de modo que el coste de inferencia es el de la ventana elegida y no el de la longitud real del texto. Incluye pooling y normalización dentro del grafo, así que el vector devuelto es el mismo que produce `sentence-transformers` para el mismo texto, con un suelo de similitud coseno de 0,99977 medido sobre 4 184 textos en Mac, y de 0,9994 en la NPU de un Galaxy S26.
+El modelo resuelve el problema de ejecutar recuperacion semantica y similitud de frases en moviles y equipos de sobremesa sin depender de un servidor: en una Galaxy S26 embebe un texto de hasta 64 tokens en 6,8 ms sobre la NPU, y en GPU mantiene los resultados de busqueda en SciFact dentro de 0,003 del nDCG@10 de la referencia en float32 (0,48633 a 0,48813 frente a 0,48581). Es relevante porque demuestra que un encoder de 307M con tokenizer Gemma de 256k entradas puede desplegarse en produccion en el borde con perdida de precision despreciable.
 
-Su relevancia ahora es práctica: permite búsqueda semántica, deduplicación y clasificación por similitud dentro de una app Android, con latencias de 6,8 ms a 68,4 ms por texto según la ventana en la NPU del Galaxy S26. El repo ocupa 4,4 GB porque incluye todas las variantes y la tabla de embeddings; cada artefacto individual pesa entre 221 MB y 624 MB.
+La pieza publicada incluye cuatro ventanas estaticas (64, 128, 256 y 512 tokens) en dos variantes: una de un solo fichero para CPU (ids de token como entrada) y otra con tabla de embeddings alojada en el host para GPU y NPU. Todo el peso se almacena en float16 y la licencia es Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder ModernBERT, 22 capas, atención alterna global / ventana deslizante ±64; mean pooling + normalización L2 dentro del grafo |
-| Parámetros totales | 307 M (según el nombre del modelo base) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | 512 tokens como máximo; ventanas estáticas de 64, 128, 256 y 512 tokens |
-| Dimensión del embedding | 768; Matryoshka truncable a 64, 128, 256 y 512 |
-| Tokens especiales | `<bos>` = 2 y `<eos>` = 1, añadidos por el post-procesador del tokenizador |
-| Tipos de cuantización | float16 en pesos (weight-only) con activaciones float32; se probó int8 y se descartó por pérdida de paridad |
-| Idiomas soportados | multilingüe (paridad verificada en inglés, español, japonés y chino) |
+| Arquitectura | ModernBERT (encoder transformer, 22 capas, atencion alterna global / ventana deslizante ±64, RoPE YaRN) |
+| Parametros totales | 307M |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | ventanas estaticas de 64, 128, 256 y 512 tokens (un fichero por ventana) |
+| Tipos de cuantizacion | float16 (pesos y tabla de tokens); activaciones float32; int8 probado y descartado |
+| Idiomas soportados | multilingue (evaluado en en, es, ja, zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.tflite` (LiteRT), `.litertlm` (LiteRT-LM) y tabla de embeddings `.bin` float16 de [256000, 768] |
-| Tokenizador | Gemma, 256 000 tokens (`tokenizer.json` del repo base) |
-| Tamaño de los artefactos | 614–616 MB por ventana (forma CPU); 221–223 MB + tabla de 393 MB (forma GPU/NPU); 624 MB el bundle `.litertlm` |
+| Formato de pesos | `.tflite` (LiteRT) y `.litertlm` (LiteRT-LM); tabla de embeddings en `.bin` float16 |
+| Dimension del embedding | 768 (Matryoshka truncable a 64–768) |
+| Pooling | mean pooling + normalizacion L2 dentro del grafo |
+| Tokenizer | Gemma, 256.000 entradas, `<bos>` = 2 y `<eos>` = 1 |
+| Entrada del grafo | `input_ids` int32 [1,L] + `attention_mask` float32 [1,L], o `inputs_embeds` float32 [1,L,768] en variante GPU/NPU |
+| Salida del grafo | `embedding` float32 [1,768] |
+| Tamano de ficheros | 614–616 MB (CPU un fichero), 221–223 MB + tabla de 393 MB (GPU/NPU), 624 MB (`.litertlm`) |
+| Tamano del repo | 4,4 GB |
+| Libreria | litert |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un encoder ModernBERT de 22 capas y 768 dimensiones ocultas, con capas de atención que alternan global y ventana deslizante de ±64 tokens, tablas YaRN de RoPE congeladas como constantes y un tokenizador Gemma de 256 000 entradas. Sobre la salida del encoder se aplica mean pooling y normalización L2, ambas integradas en el grafo convertido, por lo que la salida es directamente un embedding de frase normalizado, listo para similitud coseno o producto escalar.
+El modelo base es un encoder ModernBERT de 22 capas con dimension oculta de 768, atencion alternando capas globales y capas de ventana deslizante de ±64 tokens, y tablas RoPE YaRN del publicador incorporadas como constantes en el grafo. La conversion traza directamente el encoder con la atencion escrita de forma explicita, anade mean pooling y normalizacion L2, y genera un `.tflite` por ventana estatica. Los pesos se convierten a float16 con ai-edge-quantizer en modo weight-only, manteniendo activaciones en float32.
 
-La información disponible no detalla el corpus de entrenamiento del modelo base (número de tokens, composición del dataset ni si hubo ajuste con RLHF o DPO); esos datos corresponden a la model card del modelo original, no a esta conversión. Lo que sí documenta la conversión es el proceso técnico: trazado directo del encoder con litert-torch 0.10.0 y litert-converter 0.5.0.dev20260912, un `.tflite` por ventana y pesos convertidos a float16 con ai-edge-quantizer. Para evitar desbordamientos de float16 (la suma de cuadrados de las entradas de las LayerNorms llega a 4·10⁷, por encima de los 65 504 de float16), las LayerNorms de las capas 12–21 y la final se calculan sobre x·2⁻⁶ (con eps·2⁻¹²) y las de las capas 9–11 sobre x·2⁻², reescritura que es exacta en float32. Se probó una tabla de tokens int8 y se rechazó: el error de redondeo por fila (0,75 % de media, 2,1 % en `<bos>`) desplazaba hasta un 0,7 % el coseno en frases cortas (suelo 0,9929 sobre 3 918 textos); float16 mantiene el suelo en 0,9998. Los pesos int8 de las capas fully-connected fallaron todavía más (suelo 0,964).
+Una innovacion tecnica destacable es el reescalado de las LayerNorms: las de las capas 12–21 y la normalizacion final se calculan sobre x·2⁻⁶ (con eps·2⁻¹²) y las de las capas 9–11 sobre x·2⁻², porque la suma de cuadrados de sus entradas alcanza 4e7 en float32, por encima del maximo de float16 (65.504). Esta reescritura es exacta en float32 (bit a bit identica al grafo plano) y mantiene finitos los caminos de GPU con almacenamiento float16. Se probo una tabla de tokens en int8 y se descarto: el error de redondeo por fila (0,75 % de media, 2,1 % en `<bos>`) desplaza frases cortas hasta un 0,7 % en coseno (suelo 0,9929 sobre 3.918 textos); float16 mantiene el suelo en 0,9998. Los pesos FC en int8 fallan mas (suelo de coseno 0,964).
+
+La separacion en dos formas de grafo responde al delegado GPU: este no acepta una tabla de tokens float16 dentro del grafo (`EMBEDDING_LOOKUP: Empty quantization params`), de modo que la forma de un solo fichero es para CPU y las variantes `_embeds_` reciben las filas ya consultadas desde el host y se ejecutan por completo en GPU (Metal, todas las operaciones aceleradas) y en NPU. El pooling se escribe como multiplicacion / suma / rsqrt en lugar de un select enmascarado, que el delegado tambien rechaza. No se dispone de informacion sobre el dataset de entrenamiento del modelo base (numero de tokens, composicion, RLHF/DPO).
 
 ## Capacidades
 
-- Generación de embeddings de frases normalizados de 768 dimensiones, con pooling y normalización incluidos en el grafo.
-- Similitud semántica y similitud de pares de frases (`pipeline_tag: sentence-similarity`).
-- Truncado Matryoshka: el mismo vector sirve a 64, 128, 256, 512 o 768 dimensiones, útil para indexación en dos fases.
-- Recuperación de información (retrieval) por similitud coseno, con top-1 medido al 100 % de acuerdo con la referencia en consultas no casi-empate.
-- Multilingüe, con paridad verificada sobre PAWS-X en inglés, español, japonés y chino.
-- Ejecución en dispositivo: CPU, GPU (Metal en Mac, delegado GPU en Android) y NPU Qualcomm HTP mediante LiteRT 2.2.0 C-API y LiteRT-LM `EmbeddingEngine`.
-- Soporte del patrón `inputs_embeds` para que el host resuelva las filas de la tabla de tokens y el grafo corra entero en GPU o NPU.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto, código, matemáticas, visión o audio: es exclusivamente un encoder de representaciones.
+- Generacion de embeddings de frases: devuelve un vector normalizado de 768 dimensiones identico al que produce sentence-transformers para el mismo texto.
+- Similitud semantica y recuperacion densa (pipeline `sentence-similarity`), validada en SciFact y STS-B v2.
+- Embeddings multilingues: evaluado en ingles, espanol, japones y chino (PAWS-X test).
+- Embeddings Matryoshka: truncables de 768 a 64 dimensiones para reducir coste de almacenamiento y busqueda.
+- Ventanas estaticas de 64, 128, 256 y 512 tokens, seleccionando el fichero mas pequeno que cubra la longitud del texto.
+- Inferencia en dispositivo con aceleracion por NPU y GPU (Metal en macOS, GPU y NPU en Galaxy S26 y Pixel 8a).
+- No soporta tool calling, agentes, vision ni audio: es exclusivamente un encoder de embeddings.
 
 ## Casos de uso
 
-- Búsqueda semántica dentro de una app Android: se indexan los documentos del usuario con el fichero de ventana 512 y se consulta con el de 64, con 6,8 ms por consulta en la NPU de un Galaxy S26 y sin llamadas de red.
-- Deduplicación de registros y notas: con la forma Matryoshka de 128 dimensiones se comparan pares por coseno y se descartan duplicados en local, útil cuando el volumen no justifica un servicio servidor.
-- Clasificación zero-shot por similitud: se comparan los embeddings de los textos contra los de un conjunto de etiquetas descriptivas, sin entrenamiento adicional y con el modelo ejecutándose en el propio dispositivo.
-- Filtrado y moderación de contenido en el cliente: cálculo de similitud contra una lista de patrones de referencia, con la ventaja de que el texto no sale del teléfono.
-- Recuperación aumentada (RAG) en el borde: el encoder indexa fragmentos y consultas, y el texto recuperado se envía a un LLM remoto, reduciendo el contexto transmitido frente a enviar los documentos completos.
-- Agrupación (clustering) y mapas semánticos de conversaciones o tickets: los embeddings de 64–256 dimensiones permiten agrupar por similitud con coste bajo en CPU móvil.
-- Detección de similitud entre idiomas: al ser multilingüe, permite emparejar una consulta en español con documentos en inglés o japonés usando el espacio vectorial compartido.
-- Prototipado en Mac: la forma CPU de un fichero se ejecuta sin GPU y se usa para validar pipelines de paridad antes de desplegar en Android.
+- Busqueda semantica en aplicaciones Android: embeber consultas y documentos en el propio dispositivo con la variante NPU (6,8 ms para 64 tokens en Galaxy S26) y evitar enviar texto del usuario a un servidor.
+- Deduplicacion y agrupacion de textos en el borde: calcular similitudes coseno entre pares con la ventana de 512 tokens para detectar duplicados en notas, correos o registros locales.
+- Recuperacion aumentada en asistentes offline: indexar una base documental pequena con embeddings Matryoshka de 64–256 dimensiones y hacer retrieval local en macOS o Android sin conexion.
+- Moderacion y clasificacion de contenido multilingue: usar los embeddings como caracteristica de entrada a un clasificador ligero, aprovechando el soporte de en, es, ja y zh.
+- Sistemas de recomendacion de articulos o productos: precalcular embeddings del catalogo con la variante CPU de un solo fichero y servir la similitud en el cliente.
+- Filtrado previo en pipelines RAG híbridos: usar el embedder en dispositivo para descartar candidatos antes de llamar a un modelo mayor en servidor, reduciendo latencia y coste.
+- Agrupacion de tickets de soporte por tematica: embeber descripciones con la ventana de 128 o 256 tokens y clusterizar por similitud coseno en local.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Valor | Ámbito |
+| Metrica | Resultado | Referencia |
 |---|---|---|
-| STS-B v2, Spearman | 0,811864 (referencia del autor); 0,811867 reproducido con el stack de referencia | 1 362 pares de test |
-| Paridad coseno frente a la referencia | ≥ 0,99977 | 4 184 textos, todas las ventanas, Mac CPU |
-| Paridad coseno, export float32 | 0,99999977 | mismo conjunto (suelo de ruido del conversor) |
-| Acuerdo top-1 en retrieval | 100 % | 1 738–1 873 consultas por ventana, sin casi-empates |
-| Spearman de cosenos de pares | 0,9999995 | conjunto de paridad |
-| Delta en STS-B v2 Spearman | +0,000004 | frente a la referencia |
-| Paridad coseno en NPU (Galaxy S26) | ≥ 0,9994 | 140–497 textos por ventana |
-| Paridad coseno en GPU (S26, Pixel 8a, FP32) | ≥ 0,99997 | subconjunto por dispositivo |
-| Control sin tokens especiales | 0,31 | confirma que `<bos>`/`<eos>` son necesarios |
-| Latencia NPU Galaxy S26 (L64 / L128 / L256 / L512) | 6,8 / 13,1 / 28,0 / 68,4 ms | una llamada por texto, mediana de 20 tras 5 calentamientos |
+| nDCG@10 en SciFact (GPU, precision por defecto) | 0,48633 – 0,48813 | float32: 0,48581 |
+| Coseno frente a referencia float32 (Mac CPU, todas las ventanas) | ≥ 0,99977 | 1,0 |
+| Coseno frente a referencia (NPU Galaxy S26) | ≥ 0,9994 | 1,0 |
+| Coseno frente a referencia (GPU S26 y Pixel 8a en FP32) | ≥ 0,99997 | 1,0 |
+| Coseno frente a referencia (CPU de ambos moviles) | ≥ 0,99997 | 1,0 |
+| Acuerdo top-1 en recuperacion | 100 % (1.738–1.873 consultas por ventana) | — |
+| Spearman de cosenos de pares | 0,9999995 | — |
+| Spearman STS-B v2 | +0,000004 frente a referencia | 0,811867 (referencia) |
+| Latencia de embedding (64 tokens, NPU Galaxy S26) | 6,8 ms | — |
 
-Cabe subrayar que todas las cifras de paridad miden la fidelidad de la conversión frente al modelo original, no la calidad del modelo. El único dato de calidad publicado es el Spearman de 0,811864 en STS-B v2, heredado de la model card del modelo base.
+No se han publicado resultados de benchmarks del modelo base (MMLU, HumanEval, GSM8K u otros) en la informacion disponible; al ser un encoder de embeddings, esas metricas no aplican.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: el artefacto más grande pesa 624 MB; la forma CPU de un fichero, 614–616 MB; la forma GPU/NPU, 221–223 MB más una tabla de 393 MB. Conviene reservar del orden de 1–1,5 GB de memoria durante la carga, ya que los pesos float16 se desquantizan al cargar en la forma CPU.
-- No está pensado para GPU de escritorio: no hay requisito de A100, H100 ni RTX 4090 en la información disponible, y el modelo no se distribuye en formatos para esos entornos.
-- Cabe de sobra en hardware de consumo: la validación incluye un Mac con CPU, un Galaxy S26 (NPU Qualcomm HTP y GPU) y un Pixel 8a (GPU y CPU).
-- Despliegue: LiteRT 2.2.0 C-API, LiteRT-LM `EmbeddingEngine` para el bundle `.litertlm`, y delegados GPU (Metal, GPU de Android) y NPU (Qualcomm HTP con compilación JIT). No hay soporte de vLLM, TGI, llama.cpp ni Ollama, porque no es un modelo generativo.
-- Latencia: 6,8 / 13,1 / 28,0 / 68,4 ms en la NPU del Galaxy S26 para L64/L128/L256/L512, con el móvil en estado térmico 0 y sin límite de frecuencia de CPU. Las cifras de GPU y CPU por modelo se detallan en la model card; el resto de combinaciones no está disponible en la información extraída.
-- Throughput: no disponible. Las medidas publicadas son de una llamada por texto, no de lotes.
+- VRAM/RAM estimada: 614–616 MB por fichero CPU; 221–223 MB + 393 MB de tabla para GPU/NPU; 624 MB para el bundle `.litertlm`. El repo completo ocupa 4,4 GB.
+- GPU recomendadas: cualquier GPU compatible con el delegado LiteRT (Metal en Mac; GPU integrada en Galaxy S26 y Pixel 8a). No se especifican requisitos de A100, H100 ni RTX 4090 porque el objetivo es inferencia en dispositivo.
+- Cabe en GPU de consumo y en moviles: validado en Galaxy S26 (NPU y GPU), Pixel 8a (GPU y CPU) y CPU de Mac.
+- Opciones de despliegue: LiteRT (`.tflite`) y LiteRT-LM `EmbeddingEngine` (`.litertlm`); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia: 6,8 ms para 64 tokens en NPU Galaxy S26; no se publican cifras de throughput.
 
 ## Comparativa con modelos similares
 
-| Variante | Formato | Tamaño | Entrada | Backend | Paridad coseno |
+| Modelo | Parametros | Contexto | Formato | Licencia | Despliegue en dispositivo |
 |---|---|---|---|---|---|
-| `vela_L{64,128,256,512}_fp16.tflite` | `.tflite` | 614–616 MB | `input_ids` + `attention_mask` | CPU | ≥ 0,99977 |
-| `vela_L{64..512}_embeds_fp16.tflite` + `tok_embeddings_fp16.bin` | `.tflite` + `.bin` | 221–223 MB + 393 MB | `inputs_embeds` + `attention_mask` | GPU / NPU | ≥ 0,9994 (NPU), ≥ 0,99997 (GPU) |
-| `Vela-1.0-Encoder-307M-Embedding_fp16.litertlm` | `.litertlm` | 624 MB | texto | LiteRT-LM `EmbeddingEngine` | ≥ 0,99977 |
-| `vllm-sr/Vela-1.0-Encoder-307M-Embedding` (original) | safetensors / `sentence-transformers` | no disponible | texto | PyTorch CPU/GPU | referencia (1,0) |
+| Vela-1.0-Encoder-307M-Embedding-LiteRT | 307M | 64–512 (ventanas) | tflite / litertlm | Apache 2.0 | Si (NPU, GPU, CPU) |
+| vllm-sr/Vela-1.0-Encoder-307M-Embedding | 307M | no disponible | safetensors (base) | no disponible | No (requiere conversion) |
+| ModernBERT-base (referencia de arquitectura) | no disponible | no disponible | safetensors | no disponible | No de forma nativa |
 
-No se dispone en la información proporcionada de datos sobre modelos de terceros comparables (por ejemplo, otros encoders multilingües del mismo orden de parámetros convertidos a LiteRT), por lo que la comparación externa se considera no disponible. Las alternativas reales dentro del ecosistema son las tres formas LiteRT de esta ficha frente al modelo PyTorch original: misma calidad, distintos compromisos de tamaño, backend y latencia.
+No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Límite duro de 512 tokens: los textos más largos deben trocearse; no hay variante de contexto largo.
-- Ventanas estáticas: el coste de inferencia es el de la ventana elegida, no el de la longitud del texto, de modo que un texto de 5 tokens en la ventana 512 paga 68,4 ms en la NPU del S26 en lugar de 6,8 ms.
-- Solo produce embeddings: no genera texto, no razona, no usa herramientas y no responde preguntas. Cualquier expectativa de modelo conversacional es un error de uso.
-- No hay riesgo de alucinación en el sentido generativo, pero sí de recuperar pasajes irrelevantes si el embedding no discrimina bien el dominio; el único dato de calidad publicado (STS-B v2, 0,811864) procede del autor y no se ha verificado de forma independiente.
-- Preprocesado frágil: hay que recortar espacios antes de tokenizar, porque un espacio final se convierte en un token `▁` suelto; y hay que usar el `tokenizer.json` del repo base, cuyos tokens `<bos>` = 2 y `<eos>` = 1 son obligatorios (sin ellos la paridad cae a 0,31).
-- Solo float16: no hay versión int8 publicada, así que no se puede reducir más el peso sin salir de la paridad documentada.
-- Sesgos: la información disponible no documenta evaluaciones de sesgo ni de equidad para el modelo base ni para esta conversión.
-- Idiomas: aunque la etiqueta es multilingüe, la verificación de paridad solo cubre inglés, español, japonés y chino; el rendimiento en otras lenguas no está medido.
-- Madurez: el repositorio tiene 27 descargas y 0 likes en el momento de la consulta, con lo que no hay validación externa de la comunidad; conviene ejecutar el conjunto de paridad propio antes de producción.
-- Licencia Apache 2.0, que permite uso comercial, pero la información disponible no detalla las condiciones del corpus de entrenamiento del modelo base; conviene revisar su model card antes de un despliegue comercial.
-- El grafo CPU requiere que el delegado GPU no intervenga; en GPU/NPU hay que usar la forma `_embeds_` y resolver la tabla de tokens en el host, y el delegado rechaza `SELECT_V2` con condición broadcast, motivo por el que el pooling se escribe como multiply / sum / rsqrt.
+- Solo produce embeddings: no genera texto, no soporta tool calling ni razonamiento multi-paso.
+- Ventana maxima de 512 tokens; textos mas largos deben truncarse o partirse.
+- La variante de un solo fichero es solo para CPU; en GPU y NPU es obligatorio usar los ficheros `_embeds_` con la tabla de tokens en el host.
+- El delegado GPU rechaza ciertas operaciones (tabla de tokens float16 en el grafo, `SELECT_V2` con condicion broadcast), lo que condiciona el diseno del grafo.
+- La cuantizacion a int8 degrada la similitud coseno por debajo del umbral de 0,999; solo float16 cumple los criterios de precision.
+- Es necesario eliminar espacios finales antes de tokenizar: un espacio residual se convierte en un token `▁` suelto y altera el vector.
+- El tokenizer debe anadir `<bos>` y `<eos>` como hace sentence-transformers; sin ellos la similitud cae a 0,31.
+- No se dispone de informacion sobre sesgos del modelo base ni sobre su dataset de entrenamiento.
+- Riesgo de alucinacion no aplica directamente, pero la calidad del retrieval depende de la similitud semantica y puede fallar en dominios muy especializados.
+- Licencia Apache 2.0 permite uso comercial con atribucion; verificar los terminos del modelo base vllm-sr/Vela-1.0-Encoder-307M-Embedding.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT
 - Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M-Embedding
-- Herramientas citadas en la model card (litert-torch 0.10.0, litert-converter 0.5.0.dev20260912, ai-edge-quantizer, LiteRT 2.2.0, LiteRT-LM `EmbeddingEngine`): se mencionan sin enlace directo en la información disponible; sus URL no están disponibles.
-- Resultados de la búsqueda web: no contenían enlaces relevantes al modelo (devolvieron páginas de France Travail), por lo que no se incluye ningún otro enlace.
+- LiteRT: https://ai.google.dev/edge/litert
+- LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
+- litert-torch: https://github.com/google-ai-edge/litert-torch
+- ai-edge-quantizer: https://github.com/google-ai-edge/ai-edge-quantizer
+- sentence-transformers: https://sphinx-doc.org/sentence-transformers (documentacion oficial)

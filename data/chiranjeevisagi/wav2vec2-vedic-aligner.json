@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "forced_alignment_tutorial.ipynb - Colab",
-      "url": "https://colab.research.google.com/github/pytorch/audio/blob/gh-pages/main/_downloads/160356f33d521341c47ec6b1406a3c2e/forced_alignment_tutorial.ipynb",
-      "snippet": "Note This tutorial was originally written to illustrate a usecase for Wav2Vec2 pretrained model. TorchAudio now has a set of APIs designed for forced alignment. The CTC forced alignment API tutorial _ illustrates the usage of :py:func: torchaudio.functional.forced_align, which is the core API. If you are looking to align your corpus, we recommend to use :py:class: torchaudio.pipelines ..."
-    },
-    {
-      "title": "Forced Alignment with Wav2Vec2 — Torchaudio 2.8.0 documentation",
-      "url": "https://docs.pytorch.org/audio/2.8/tutorials/forced_alignment_tutorial.html",
-      "snippet": "Note This tutorial was originally written to illustrate a usecase for Wav2Vec2 pretrained model. TorchAudio now has a set of APIs designed for forced alignment. The CTC forced alignment API tutorial illustrates the usage of torchaudio.functional.forced_align (), which is the core API. If you are looking to align your corpus, we recommend to use torchaudio.pipelines.Wav2Vec2FABundle, which ..."
-    },
-    {
-      "title": "Forced Alignment with Wav2Vec2 — Torchaudio 2.11 documentation",
-      "url": "https://docs.pytorch.org/audio/stable/tutorials/forced_alignment_tutorial.html",
-      "snippet": "Note This tutorial was originally written to illustrate a usecase for Wav2Vec2 pretrained model. TorchAudio now has a set of APIs designed for forced alignment. The CTC forced alignment API tutorial illustrates the usage of torchaudio.functional.forced_align (), which is the core API. If you are looking to align your corpus, we recommend to use torchaudio.pipelines.Wav2Vec2FABundle, which ..."
-    },
-    {
-      "title": "forced_alignment_with_torchaudio_tutorial.ipynb - Colab",
-      "url": "https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/73f018bc28451dc1e7a8b5dc1204833f/forced_alignment_with_torchaudio_tutorial.ipynb",
-      "snippet": "Forced Alignment with Wav2Vec2 Author Moto Hira _ This tutorial shows how to align transcript to speech with torchaudio, using CTC segmentation algorithm described in CTC-Segmentation of Large Corpora for German End-to-end Speech Recognition _."
-    },
-    {
-      "title": "Wav2Vec2 - Hugging Face",
-      "url": "https://huggingface.co/docs/transformers/v4.40.2/model_doc/wav2vec2",
-      "snippet": "Wav2Vec2 is a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Wav2Vec2 model was trained using connectionist temporal classification (CTC) so the model output has to be decoded using Wav2Vec2CTCTokenizer."
-    }
-  ]
+  "sources": []
 }

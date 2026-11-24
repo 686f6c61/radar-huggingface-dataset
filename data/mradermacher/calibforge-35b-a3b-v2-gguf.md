@@ -2,97 +2,106 @@
 
 ## Resumen
 
-CalibForge-35B-A3B-v2-GGUF es una distribucion de cuantizaciones estaticas en formato GGUF del modelo base CalibForge-35B-A3B-v2, publicado por el usuario mradermacher en Hugging Face. El modelo original lo desarrolla AweAI-Team, y este repositorio se limita a ofrecer los pesos convertidos a distintos niveles de cuantizacion para su uso con llama.cpp y herramientas compatibles. El nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token, aunque no se ha publicado documentacion tecnica que lo confirme.
+CalibForge-35B-A3B-v2-GGUF es la distribucion en formato GGUF del modelo CalibForge-35B-A3B-v2, desarrollado por el equipo AweAI-Team y cuantizado por mradermacher. Se trata de un modelo de lenguaje de gran escala con arquitectura de mezcla de expertos (MoE), disenado especificamente para tareas de agente de terminal (terminal-agent) y ajustado mediante supervision fina (SFT). El modelo base cuenta con aproximadamente 34.660 millones de parametros totales, de los cuales 3.000 millones estan activos por token segun la nomenclatura A3B, lo que permite un equilibrio entre capacidad y eficiencia computacional.
 
-El dato verificable es el recuento de parametros en safetensors: 34.660.610.688 parametros totales, lo que encaja con la cifra de "35B" del nombre. El repositorio ocupa 69,7 GB e incluye los cuantizados x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. No se dispone de informacion sobre licencia, idiomas, pipeline o datos de entrenamiento en la informacion proporcionada.
+La relevancia de esta publicacion radica en su orientacion a tareas de automatizacion de terminal y ejecucion de comandos, un nicho cada vez mas demandado en el desarrollo de agentes autonomos. El modelo esta disponible bajo licencia Apache 2.0, lo que facilita su adopcion tanto en entornos de investigacion como comerciales. La cuantizacion GGUF realizada por mradermacher permite desplegar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, ampliando significativamente su accesibilidad.
 
-La relevancia de esta publicacion es practica: permite ejecutar un modelo de ~35B con activaciones de ~3B en hardware de consumo mediante cuantizacion agresiva (Q4_K_M ocupa del orden de 20 GB), algo imposible con un modelo denso del mismo tamano. Sin embargo, la ausencia de model card tecnica, benchmarks y licencia clara limita seriamente su adopcion en produccion.
+Esta ficha se centra en la version cuantizada GGUF, que ofrece 11 variantes de cuantizacion desde Q2_K hasta Q8_0, con tamanos que van desde 13,0 GB hasta 37,0 GB. El modelo esta etiquetado para uso conversacional y agentes de terminal, con soporte unicamente para ingles segun la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (inferida del nombre "35B-A3B"; no confirmada en documentacion) |
-| Parametros totales | 34.660.610.688 |
-| Parametros activos | ~3B (inferido del sufijo "A3B"; no confirmado) |
+| Arquitectura | Mezcla de expertos (MoE), transformer (detalles no disponibles) |
+| Parametros totales | 34.660.610.688 (aproximadamente 34,66 mil millones) |
+| Parametros activos | 3 mil millones (segun nomenclatura A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con llama.cpp) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado), safetensors (modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo base en la documentacion disponible. El nombre "35B-A3B" sigue la convencion habitual para modelos de mezcla de expertos, donde el primer numero indica parametros totales y el segundo los parametros activos por token; en este caso, aproximadamente 35.000 millones totales y 3.000 millones activos. El recuento de safetensors confirma los 34,66 mil millones de parametros totales, pero no hay datos sobre numero de expertos, top-k de enrutamiento, atencion (estandar, GQA, lineal) ni funcion de activacion.
+El modelo base CalibForge-35B-A3B-v2 emplea una arquitectura de mezcla de expertos (MoE) con aproximadamente 34,66 mil millones de parametros totales y 3 mil millones de parametros activos por token. Esta configuracion permite que el modelo mantenga una capacidad de representacion propia de un modelo denso de mayor tamano mientras reduce el coste computacional por inferencia, ya que solo se activa una fraccion de los expertos para cada token. Los detalles especificos sobre el numero de expertos, la estrategia de enrutamiento o la composicion exacta de la arquitectura no estan disponibles en la informacion proporcionada.
 
-Tampoco se dispone de informacion sobre el corpus de entrenamiento, numero de tokens procesados, composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR. La model card del repositorio GGUF se limita a indicar que son cuantizaciones estaticas del modelo AweAI-Team/CalibForge-35B-A3B-v2, generadas con un proceso de conversion de tipo "hf" y version de cuantizacion 2. No hay innovaciones tecnicas documentadas (decodificacion especulativa, atencion lineal, modos de razonamiento) en la informacion proporcionada.
+El entrenamiento del modelo se realizo mediante supervision fina (SFT) sobre el dataset AweAI-Team/CalibForge, segun los metadatos de la model card. El modelo esta especializado en tareas de agente de terminal, lo que sugiere que el dataset de entrenamiento incluye ejemplos de interaccion con terminales, ejecucion de comandos y flujos de trabajo de agente. No se dispone de informacion sobre el numero total de tokens de entrenamiento, la composicion detallada del dataset, ni si se aplicaron tecnicas adicionales como RLHF o DPO. La referencia al paper arXiv:2608.06352 en las etiquetas sugiere la existencia de una publicacion tecnica asociada, aunque su contenido no esta disponible en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la unica etiqueta funcional disponible es "conversational", que sugiere un modelo ajustado para dialogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse a traves de infraestructura de inferencia estandar (por ejemplo, TGI o vLLM con soporte GGUF).
-- Razonamiento y generacion de codigo: no disponible (sin datos que lo confirmen).
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (vision, audio, modo thinking): no disponible.
+- Generacion de texto conversacional en ingles, orientada a interacciones multi-turno.
+- Ejecucion de tareas de agente de terminal (terminal-agent): el modelo esta especificamente ajustado para interpretar y generar comandos de terminal, gestionar flujos de trabajo en linea de comandos y asistir en tareas de automatizacion de sistemas.
+- Razonamiento multi-paso orientado a agentes: la naturaleza de las tareas de terminal requiere planificacion secuencial y ejecucion de comandos encadenados.
+- Ajuste mediante SFT para tareas de agente, lo que implica capacidad de seguir instrucciones estructuradas y mantener coherencia en flujos de trabajo prolongados.
+- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion disponible, aunque es plausible dado el enfoque en agentes.
+- Capacidades multilingues: limitadas al ingles segun la model card.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales: con la cuantizacion Q4_K_M (del orden de 20 GB) el modelo puede ejecutarse en una GPU de consumo de 24 GB o en CPU con RAM suficiente, lo que permite iterar sobre prompts y flujos de dialogo sin coste de API. Es adecuado por su etiqueta "conversational" y su bajo numero de parametros activos, que reduce la latencia frente a un denso de 35B.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes (desde Q2_K hasta f16), lo que permite medir la degradacion de calidad frente al coste de memoria en un mismo modelo. Util para decidir el punto de equilibrio en un despliegue real.
-- Despliegue en entornos con GPU limitada: al activar solo ~3B parametros por token, el modelo puede servir peticiones concurrentes en una sola A100 40 GB o en dos RTX 4090, con mayor throughput que un denso equivalente. Requiere validar primero la calidad, dado que no hay benchmarks publicados.
-- Fine-tuning y destilacion sobre el modelo base: las cuantizaciones f16 y Q8_0 sirven como referencia de comportamiento para comparar contra adaptadores LoRA entrenados sobre el modelo original, aunque para entrenamiento conviene usar los safetensors del repositorio base.
-- Servicio de chat en infraestructura propia: con la etiqueta "endpoints_compatible", puede integrarse en un endpoint HTTP compatible con OpenAI mediante llama.cpp server u Ollama, util para equipos que necesitan confidencialidad de datos sin salir de su red.
-- Investigacion sobre modelos MoE de acceso abierto: permite estudiar el comportamiento de un MoE de ~35B/3B activos en tareas de razonamiento y dialogo, siempre que se documenten las limitaciones de licencia antes de publicar resultados.
+- Automatizacion de tareas de administracion de sistemas: el modelo puede interpretar instrucciones en lenguaje natural y generar los comandos de terminal correspondientes para tareas como gestion de ficheros, monitorizacion de procesos o configuracion de servicios, gracias a su ajuste especifico en terminal-agent.
+- Asistente de linea de comandos interactivo: integrado en una shell o herramienta CLI, el modelo puede sugerir comandos, explicar su funcionamiento y corregir errores en tiempo real, aprovechando su entrenamiento en SFT sobre interacciones de terminal.
+- Generacion de scripts de automatizacion: el modelo puede producir scripts de shell o secuencias de comandos para pipelines de CI/CD, tareas de despliegue o mantenimiento programado, adecuado por su enfoque en entornos de terminal.
+- Agente autonomo de resolucion de incidencias: en un pipeline de operaciones, el modelo puede recibir una descripcion de un problema (por ejemplo, un servicio caido) y generar una secuencia de comandos de diagnostico y reparacion, gracias a su capacidad de razonamiento multi-paso.
+- Educacion y formacion en entornos Linux/Unix: el modelo puede actuar como tutor interactivo que explica comandos, propone ejercicios practicos y evalua las respuestas del usuario en un entorno de terminal simulado.
+- Integracion en herramientas de desarrollo (IDE, terminales integradas): el modelo puede asistir a desarrolladores en la ejecucion de comandos de compilacion, testing o gestion de dependencias, aprovechando su especializacion en terminal y su licencia Apache 2.0 para integracion comercial.
+- Despliegue en local para entornos con requisitos de privacidad: gracias a las cuantizaciones GGUF (desde 13,0 GB en Q2_K), el modelo puede ejecutarse en estaciones de trabajo sin conexion a servicios en la nube, adecuado para entornos con datos sensibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni del modelo base ni de las cuantizaciones. Tampoco se dispone de mediciones de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun el tamano del repo de 69,7 GB y el recuento de parametros):
-  - Q2_K: del orden de 12-13 GB.
-  - Q3_K_M: del orden de 15-16 GB.
-  - Q4_K_M: del orden de 20-21 GB.
-  - Q5_K_M: del orden de 24-25 GB.
-  - Q6_K: del orden de 28-29 GB.
-  - Q8_0: del orden de 36-37 GB.
-  - f16: del orden de 69 GB.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M o Q5_K_M; A100 40 GB o H100 para Q8_0 y f16; dos RTX 4090 o una RTX 6000 Ada (48 GB) para Q8_0.
-- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
-- Opciones de despliegue: llama.cpp (llama-server), Ollama, LM Studio y cualquier runtime compatible con GGUF; vLLM solo si soporta el formato GGUF en la version desplegada.
-- Latencia y throughput: no disponibles. Al ser un MoE con ~3B activos, se espera un throughput notablemente superior al de un denso de 35B, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia segun cuantizacion:
+  - Q2_K: aproximadamente 13,0 GB
+  - Q3_K_S: aproximadamente 15,3 GB
+  - Q3_K_M: aproximadamente 16,9 GB
+  - Q3_K_L: aproximadamente 18,2 GB
+  - IQ4_XS: aproximadamente 19,0 GB
+  - Q4_K_S: aproximadamente 20,0 GB
+  - Q4_K_M: aproximadamente 21,3 GB
+  - Q5_K_S: aproximadamente 24,1 GB
+  - Q5_K_M: aproximadamente 24,8 GB
+  - Q6_K: aproximadamente 28,6 GB
+  - Q8_0: aproximadamente 37,0 GB
+- GPU recomendadas: para las cuantizaciones mas bajas (Q2_K a Q4_K_M), una GPU con 24 GB de VRAM (RTX 3090, RTX 4090) es suficiente. Para Q5_K_M y Q6_K se recomienda una GPU con 32 GB o mas (A100 40GB, RTX A6000). Para Q8_0 se necesita una GPU con 40-48 GB (A100 40GB, A6000 48GB) o bien ejecucion en CPU con suficiente RAM.
+- Compatibilidad con GPU de consumo: si, las cuantizaciones Q2_K a Q4_K_M caben en GPUs de consumo con 24 GB de VRAM (RTX 3090, RTX 4090). Las cuantizaciones Q5 y superiores requieren GPUs profesionales o configuraciones multi-GPU.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. Tambien es posible usar vLLM o TGI con el modelo base en safetensors, aunque no se dispone de confirmacion explicita para esta version cuantizada.
+- Latencia y throughput estimados: no disponibles. Al tratarse de un modelo MoE con 3 mil millones de parametros activos, se espera un throughput superior al de un modelo denso de 35B, pero no se han proporcionado mediciones concretas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo, por lo que la comparativa se limita a caracteristicas estructurales.
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|---|
+| CalibForge-35B-A3B-v2-GGUF | 34,66B | 3B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Modelo comparable 1 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo comparable 2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo comparable 3 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| CalibForge-35B-A3B-v2 | 34,66B | ~3B (inferido) | no disponible | no disponible | GGUF |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 32.768 (extensible) | Apache 2.0 | safetensors, GGUF |
-| Mixtral 8x7B | 46,7B | 12,9B | 32.768 | Apache 2.0 | safetensors, GGUF |
-| DeepSeek-V2-Lite | 15,7B | 2,4B | 32.768 | licencia propia | safetensors, GGUF |
-
-La comparativa con Qwen3-30B-A3B es la mas directa por tamano y numero de parametros activos, pero no se puede establecer una comparacion de calidad sin benchmarks del modelo CalibForge.
+No se dispone de informacion suficiente para establecer una comparativa con modelos alternativos de la misma categoria, ya que no se han proporcionado datos de rendimiento ni especificaciones de modelos comparables en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card tecnica: no hay informacion sobre datos de entrenamiento, alineacion, contexto maximo ni idiomas, lo que impide evaluar sesgos y riesgos de forma rigurosa.
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido. Es un bloqueo para cualquier despliegue en produccion hasta que el autor del modelo base lo aclare.
-- Benchmarks inexistentes: no hay evidencia publicada de calidad; cualquier afirmacion sobre su rendimiento seria especulativa.
-- Riesgo de alucinacion: sin datos de alineacion ni evaluaciones, no se puede acotar el riesgo de respuestas inventadas, especialmente en dominios factuales.
-- Parametros activos inferidos: la cifra de ~3B activos proviene solo del nombre del modelo y no esta confirmada en documentacion; el rendimiento real depende del enrutamiento de expertos, que no se ha verificado.
-- Cuantizaciones de baja precision: Q2_K y Q3_K_S pueden degradar notablemente la calidad; en modelos MoE el enrutamiento es sensible a la cuantizacion de las capas de expertos.
-- Repositorio sin descargas ni likes: no hay senal de validacion por parte de la comunidad, lo que aumenta el riesgo de que el modelo base tenga problemas no documentados.
-- Contexto desconocido: no se puede planificar su uso en tareas de contexto largo (RAG, analisis de documentos) sin conocer la ventana real.
+- Idioma: el modelo esta entrenado unicamente en ingles segun la model card, por lo que su rendimiento en castellano u otros idiomas puede ser deficiente.
+- Especializacion: el ajuste SFT esta orientado a tareas de terminal-agent, lo que puede limitar su rendimiento en tareas genericas de generacion de texto o conversacion no relacionadas con entornos de terminal.
+- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar comandos o instrucciones incorrectas, especialmente en entornos de terminal donde un error puede tener consecuencias graves (borrado de ficheros, configuraciones erroneas). Se recomienda supervision humana en produccion.
+- Sesgos conocidos: no se dispone de informacion sobre sesgos especificos del modelo.
+- Limitaciones de contexto: la longitud de contexto no esta disponible en la informacion proporcionada, lo que impide evaluar su idoneidad para tareas que requieran ventanas extensas.
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificacion y redistribucion, pero se recomienda verificar los terminos del modelo base original y del dataset de entrenamiento.
+- Caveat para produccion: al ser una cuantizacion GGUF, las versiones de menor precision (Q2_K, Q3_K_S) pueden degradar la calidad de las respuestas. Para produccion se recomienda Q4_K_M o superior. Ademas, la ausencia de benchmarks publicados impide estimar su rendimiento real frente a alternativas.
+- Fecha de creacion: el modelo fue creado el 2026-11-20, lo que sugiere que puede ser reciente y carecer de validacion independiente por parte de la comunidad (0 likes, 854 descargas en el momento de la consulta).
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/CalibForge-35B-A3B-v2-GGUF
-- Modelo base: https://huggingface.co/AweAI-Team/CalibForge-35B-A3B-v2
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/CalibForge-35B-A3B-v2-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/AweAI-Team/CalibForge-35B-A3B-v2
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/CalibForge-35B-A3B-v2-i1-GGUF
+- Pagina de resumen del modelo: https://hf.tst.eu/model#CalibForge-35B-A3B-v2-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/AweAI-Team/CalibForge
+- Paper de referencia: arXiv:2608.06352 (https://arxiv.org/abs/2608.06352)
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- GitHub del autor: https://github.com/mradermacher
+- nethype GmbH: https://www.nethype.de/

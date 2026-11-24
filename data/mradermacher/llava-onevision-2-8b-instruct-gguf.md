@@ -2,51 +2,50 @@
 
 ## Resumen
 
-LLaVA-OneVision-2-8B-Instruct es un modelo multimodal vision-lenguaje desarrollado por el equipo LMMS-Lab (lmms-lab-encoder), sucesor de la familia LLaVA-OneVision. Combina un codificador visual con un modelo de lenguaje base de la familia Qwen3, lo que le permite procesar imagenes y video ademas de texto, con una ventana de entrada image-text-to-text y video-text-to-text. El modelo cuenta con 8.190.735.360 parametros totales y se distribuye bajo licencia Apache 2.0.
+LLaVA-OneVision-2-8B-Instruct es un modelo multimodal vision-lenguaje de 8.190 millones de parametros desarrollado por el equipo LMMS-Lab (lmms-lab-encoder). Forma parte de la segunda generacion de la familia LLaVA-OneVision, construida sobre un backbone de lenguaje Qwen3, y esta disenado para tareas de imagen-a-texto y video-a-texto en modalidad conversacional. El modelo combina un encoder visual con un LLM de 8B, lo que le permite procesar tanto imagenes estaticas como secuencias de video dentro de una unica arquitectura.
 
-La ficha que nos ocupa no es el modelo original, sino la coleccion de cuantizaciones GGUF publicadas por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. Estas versiones estaticas (sin imatrix) van desde Q2_K (3,4 GB) hasta f16 (16,5 GB), e incluyen los ficheros mmproj necesarios para el procesamiento multimodal en llama.cpp. Esto permite ejecutar un modelo vision-lenguaje de 8B en hardware de consumo.
+La ficha que nos ocupa no es el modelo original, sino la cuantizacion GGUF publicada por mradermacher, un conocido creador de cuantizaciones para llama.cpp. Esta version permite ejecutar el modelo en hardware de consumo mediante tecnicas de cuantizacion de 2 a 16 bits, con ficheros que van desde 3,4 GB (Q2_K) hasta 16,5 GB (f16). Se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial, y soporta oficialmente ingles y chino.
 
-Su relevancia actual radica en que democratiza la inferencia multimodal local: al ofrecer cuantizaciones de 4-6 GB, un modelo capaz de describir imagenes, responder preguntas sobre video y mantener conversaciones multimodales puede desplegarse en GPUs consumer, algo reservado hasta hace poco a entornos con aceleradores de datacenter.
+Su relevancia actual radica en que democratiza el acceso a un modelo multimodal de ultima generacion en formato GGUF, compatible con llama.cpp y ecosistemas derivados (Ollama, LM Studio, etc.), algo especialmente util para desarrolladores que necesitan inferencia local de vision-lenguaje sin depender de GPUs de datacenter.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (codificador visual + LLM base Qwen3) |
+| Arquitectura | Multimodal vision-lenguaje (encoder visual + LLM Qwen3) |
 | Parametros totales | 8.190.735.360 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16; mmproj en Q8_0 y f16 |
-| Idiomas soportados | ingles (en), chino (zh) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K (mas mmproj Q8_0 y f16) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (original en safetensors/transformers) |
+| Formato de pesos | GGUF (original en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue el paradigma LLaVA: un codificador visual que proyecta las representaciones de imagen y video al espacio de embeddings de un modelo de lenguaje, de forma que el LLM puede razonar sobre el contenido visual como si fueran tokens de texto. En esta segunda iteracion de OneVision, el backbone linguistico es de la familia Qwen3, segun indican las etiquetas del repositorio. La arquitectura es, por tanto, un transformer multimodal denso (no MoE) de aproximadamente 8,2 mil millones de parametros.
+El modelo sigue el paradigma LLaVA: un encoder visual que proyecta representaciones de imagen y video hacia el espacio de embeddings de un modelo de lenguaje. En esta segunda iteracion de OneVision, el backbone linguistico es Qwen3, lo que aporta las capacidades de razonamiento y generacion de texto de dicha familia. El modelo base original es `lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct`, y esta version GGUF es una conversion estatica (sin imatrix) realizada con `convert_type: hf` y `quantize_version: 2`.
 
-No se dispone en la informacion proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset multimodal ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones especificas como decodificacion especulativa o atencion lineal. Las cuantizaciones publicadas por mradermacher son estaticas (sin imatrix ni pesos ponderados), lo que implica una ligera perdida de calidad frente a cuantizaciones ponderadas en los rangos bajos (Q2-Q3).
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF/DPO o decodificacion especulativa. La model card del cuantizador no incluye estos datos, y la del modelo base no se ha facilitado. Se recomienda consultar la model card original de LMMS-Lab para obtener esa informacion.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento conversacional multi-turno.
-- Comprension de imagenes (image-text-to-text): descripcion, VQA, OCR y razonamiento visual.
-- Comprension de video (video-text-to-text): resumen y pregunta-respuesta sobre secuencias de video.
-- Capacidades multilingues limitadas a ingles y chino.
-- Formato conversacional (Instruct), optimizado para seguir instrucciones.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking explicito, vision nativa adicional o audio: no disponible en la informacion proporcionada.
+- Generacion de texto a partir de imagenes (image-text-to-text) en modalidad conversacional multi-turno.
+- Comprension de video (video-text-to-text), permitiendo describir y razonar sobre secuencias de frames.
+- Razonamiento visual: respuesta a preguntas sobre el contenido de imagenes (VQA).
+- Capacidades de LLM subyacente (Qwen3): generacion de texto, razonamiento y probablemente codigo y matematicas, aunque no se detallan explicitamente en la informacion disponible.
+- Soporte multilingue limitado a ingles y chino segun los metadatos.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere integracion con infraestructura de inferencia estandar.
+- No se confirma soporte de tool calling, function calling ni modos de agente en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistencia a personas con discapacidad visual: el modelo puede describir en tiempo real el contenido de imagenes capturadas por la camara del movil, generando descripciones detalladas en ingles o chino; su tamano de 8B permite ejecucion local en un portatil con GPU consumer.
-- Moderacion de contenido visual: clasificacion y descripcion automatica de imagenes subidas por usuarios en plataformas, usando la cuantizacion Q4_K_M (5,1 GB) para mantener latencia baja en servidores modestos.
-- Analisis de video de vigilancia o industrial: resumen de secuencias de video y respuesta a preguntas sobre eventos concretos, desplegable en edge devices con llama.cpp y el fichero mmproj correspondiente.
-- Extraccion de informacion de documentos escaneados: OCR y respuesta a preguntas sobre facturas, formularios o capturas, combinando el codificador visual con el LLM en un unico pipeline GGUF.
-- Prototipado rapido de aplicaciones multimodales: investigadores que necesitan validar una idea de VQA o video-QA sin acceso a GPUs de datacenter pueden usar la cuantizacion Q5_K_M (6,0 GB) en una RTX 4060 Ti o superior.
-- Educacion y tutoria visual: un tutor que responde preguntas sobre diagramas, graficos o experimentos grabados en video, ejecutandose en local para preservar la privacidad de los materiales del estudiante.
-- Generacion de descripciones para accesibilidad web: alt-text automatico para catalogos de imagenes en ingles y chino, integrable en pipelines de preprocesado por lotes con llama.cpp.
+- Descripcion automatica de imagenes en pipelines de accesibilidad: el modelo puede generar alt-text descriptivo para catalogos de imagenes, aprovechando su naturaleza image-text-to-text y su formato GGUF para despliegue en servidores modestos.
+- Analisis de video para moderacion de contenido: procesamiento de secuencias de frames para detectar contenido inapropiado, gracias al soporte video-text-to-text.
+- Asistencia en documentacion tecnica: extraccion de informacion de capturas de pantalla, diagramas o figuras para generar documentacion, con inferencia local via llama.cpp.
+- Prototipado rapido en estaciones de trabajo sin GPU de datacenter: las cuantizaciones Q4_K_S (4,9 GB) permiten ejecutar el modelo en GPUs de consumo de 8 GB o superiores.
+- Investigacion en vision-lenguaje: experimentacion con un modelo LLaVA-OneVision-2 de 8B en entornos academicos con recursos limitados, comparando cuantizaciones.
+- Aplicaciones de escritorio offline: integracion en herramientas de escritorio (via LM Studio u Ollama) que requieren procesamiento de imagenes sin conexion a la nube, por privacidad de datos.
+- Chat multimodal en ingles o chino: atencion al cliente o asistentes conversacionales que reciben imagenes del usuario, limitado a esos dos idiomas.
 
 ## Benchmarks y rendimiento
 
@@ -54,46 +53,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos + overhead de contexto y KV cache):
-  - Q2_K: ~4-5 GB
-  - Q3_K_M: ~5-6 GB
-  - Q4_K_M: ~6-7 GB
-  - Q5_K_M: ~7-8 GB
-  - Q6_K: ~8-9 GB
-  - Q8_0: ~10-11 GB
-  - f16: ~17-18 GB
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090, A100 y H100 para despliegues de mayor concurrencia.
-- Cabe en GPU consumer: si, desde una RTX 3060 12 GB con Q4_K_M o Q5_K_M; las cuantizaciones Q2-Q3 caben incluso en GPUs de 6-8 GB, con perdida notable de calidad.
-- Opciones de despliegue: llama.cpp (con soporte mmproj para vision), Ollama, LM Studio y otros frontends compatibles con GGUF. Para el modelo original en safetensors, transformers con el codigo de LLaVA-OneVision-2.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~3,4 GB
+  - Q3_K_M: ~4,2 GB
+  - Q4_K_S / Q4_K_M: ~4,9-5,1 GB
+  - Q5_K_M: ~6,0 GB
+  - Q6_K: ~6,8 GB
+  - Q8_0: ~8,8 GB
+  - f16: ~16,5 GB
+  - Anadir ~0,1 GB para el proyector multimodal (mmproj).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones altas; A100/H100 no necesarias para este tamano.
+- Cabe en GPU de consumo: si, desde una RTX 3060 8 GB con Q4_K_S, o 12 GB con Q6_K. Para Q8_0 se recomienda 12-16 GB de VRAM.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. Para el modelo original en safetensors: transformers, vLLM (si soporta la arquitectura), TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LLaVA-OneVision-2-8B-Instruct (este) | 8,19B | no disponible | Apache 2.0 | GGUF, safetensors | Vision + video, base Qwen3, en/zh |
-| LLaVA-OneVision-7B (generacion anterior) | ~7B | no disponible | Apache 2.0 | safetensors, GGUF | Vision + video, base Qwen2 |
-| Qwen2.5-VL-7B-Instruct | ~7B | no disponible | Apache 2.0 | safetensors, GGUF | Vision + video, en/zh/multilingue |
-| InternVL2-8B | ~8B | no disponible | MIT | safetensors | Vision, multilingue |
+| LLaVA-OneVision-2-8B-Instruct (este, GGUF) | 8,19B | no disponible | Apache 2.0 | GGUF | Vision + video, EN/ZH |
+| LLaVA-OneVision-2-8B-Instruct (original) | 8,19B | no disponible | Apache 2.0 | safetensors | Requiere transformers/vLLM |
+| LLaVA-OneVision 7B (generacion anterior) | ~7B | no disponible | Apache 2.0 | safetensors/GGUF | Vision + video, base Qwen2 |
+| Qwen2.5-VL-7B-Instruct | ~7B | no disponible | Apache 2.0 | safetensors/GGUF | Vision, multilingue amplio |
 
-La comparativa se limita a modelos de la misma categoria (vision-lenguaje de 7-8B con licencia permisiva); los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada.
+La comparativa se limita a lo que se puede inferir de la informacion disponible; no se dispone de datos de rendimiento comparativo entre estos modelos en el material proporcionado.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion proporcionada; al entrenarse con datos web y multimodales, es previsible que herede sesgos de genero, raza y cultura, pero no hay evaluacion publicada.
-- Riesgo de alucinacion: inherente a los modelos generativos; en tareas de VQA y descripcion de imagenes puede inventar objetos o texto no presentes, especialmente con cuantizaciones bajas (Q2_K, Q3_K).
-- Limitaciones de idioma: solo se declaran ingles y chino; el rendimiento en castellano no esta garantizado y probablemente sea deficiente.
-- Limitaciones de contexto: la longitud de contexto no esta documentada en la informacion disponible, lo que impide planificar despliegues con ventanas largas de video o documentos extensos.
-- Cuantizaciones estaticas: las versiones publicadas no usan imatrix ni pesos ponderados, por lo que Q2-Q3 pierden calidad de forma apreciable; se recomienda Q4_K_M o superior para produccion.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia y los terminos del modelo base original (lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct) y del backbone Qwen3.
-- Caveat de produccion: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta; es una publicacion reciente sin validacion comunitaria, por lo que conviene evaluar la calidad de las cuantizaciones antes de adoptarlas.
+- Idiomas oficialmente soportados solo ingles y chino; el rendimiento en castellano no esta garantizado ni documentado.
+- Riesgo de alucinacion inherente a los modelos vision-lenguaje, especialmente en descripcion de imagenes con detalles ambiguos o texto pequeno.
+- La cuantizacion introduce perdida de calidad; las variantes Q2_K y Q3_K_S pueden degradar notablemente las capacidades de razonamiento visual.
+- No se dispone de informacion sobre sesgos especificos del modelo ni sobre la composicion del dataset de entrenamiento, lo que dificulta evaluar sesgos demograficos o culturales.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base original y de sus dependencias (Qwen3, encoder visual) por si hubiera restricciones adicionales.
+- El tamano del repositorio (73,4 GB) incluye todas las cuantizaciones; descargar solo el fichero necesario.
+- No se confirma soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
+- La fecha de creacion (2026-11-20) y el bajo numero de descargas (578) sugieren que es una publicacion reciente con poca validacion comunitaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/LLaVA-OneVision-2-8B-Instruct-GGUF
 - Modelo base original: https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/LLaVA-OneVision-2-8B-Instruct-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#LLaVA-OneVision-2-8B-Instruct-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

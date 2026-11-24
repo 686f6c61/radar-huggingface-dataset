@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/llama-2-34b-uncode-GGUF",
+  "slug": "mradermacher-llama-2-34b-uncode-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama-2-34b-uncode-GGUF",
+  "created_at": "2025-09-06T11:17:15.000Z",
+  "updated_at": "2026-11-24T00:26:14.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:the_pile_books3",
+    "dataset:togethercomputer/RedPajama-Data-1T-Sample",
+    "base_model:chargoddard/llama-2-34b-uncode",
+    "base_model:quantized:chargoddard/llama-2-34b-uncode",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 159,
+  "trending_score": 0,
+  "parameters": 33743970304,
+  "parameters_human": "33.74B",
+  "storage_bytes": 229453794080,
+  "storage_human": "229.5 GB",
+  "context_length": 16384,
+  "base_model": "chargoddard/llama-2-34b-uncode",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

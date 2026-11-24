@@ -41,6 +41,19 @@
   "removal_pattern": null,
   "renamed_to": "fireviewer/yolo11m-fire-smoke",
   "renamed_at": "2026-11-12T05:28:51.545Z",
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "FireViewer · validation",
+      "metric": "mAP@0.50:0.95 (%)",
+      "value": 38.63
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "FireViewer · validation",
+      "metric": "mAP@0.50 (%)",
+      "value": 65.07
+    }
+  ],
   "sources": []
 }

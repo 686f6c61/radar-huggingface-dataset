@@ -2,88 +2,104 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Artemis-GGUF es una cuantizacion mixta en formato GGUF del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el usuario `turintech`. Se trata de una distribucion de inferencia de texto pensada para ejecucion en CPU mediante llama.cpp, con un peso total de 385,58 GB repartido en siete shards obligatorios. El modelo base cuenta con 748.494.643.824 parametros segun los datos de safetensors, lo que lo situa en la categoria de modelos de gran escala orientados a servidor.
+DeepSeek-V4.1-Flash-1017-Artemis-GGUF es una cuantizacion en formato GGUF del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por TurinTech bajo el nombre de su pipeline de compresion Artemis. El modelo base es un transformer de tipo mixture-of-experts (MoE) orientado a generacion de texto, con 748.494.643.824 parametros totales segun los metadatos de safetensors del repositorio. Esta version esta pensada para inferencia en CPU mediante llama.cpp, no para servicio en GPU.
 
-La relevancia de esta publicacion radica en que ofrece una ruta de despliegue verificada sobre CPU con llama.cpp, incluyendo tablas Engram y un encoder oficial especifico de DeepSeek en lugar de una plantilla de chat generica. No obstante, el autor advierte explicitamente de que la operacion en GPU no ha sido cualificada y de que las pruebas realizadas son ocho comprobaciones basicas nativas, no un benchmark de calidad amplio.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de gran escala en hardware sin aceleradores, a costa de un consumo de memoria muy elevado. TurinTech distribuye dos conjuntos de shards: Q3_K (siete ficheros, 385,58 GB) y Q2_K (seis ficheros, 330,38 GB). El repositorio completo ocupa 716,0 GB. La licencia declarada es MIT, heredada del modelo base.
 
-La licencia es MIT, lo que facilita el uso comercial, pero las limitaciones practicas de memoria (254,01 GB de RSS pico observado en CPU con 2 TB de RAM) y la ausencia de datos de rendimiento comparativo hacen que esta ficha deba leerse con cautela: es una cuantizacion de nicho, sin descargas ni likes en el momento de la consulta, y con soporte limitado a la ruta de llama.cpp documentada.
+La model card es deliberadamente conservadora: describe una validacion con ocho prompts fijos por conjunto, revisados a mano, y advierte de que no se trata de un benchmark ni de una comparativa entre cuantizaciones. No se publican datos de arquitectura interna, contexto, idiomas ni rendimiento en tareas estandar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base DeepSeek-V4.1-Flash-1017; no se detalla en la informacion proporcionada) |
+| Arquitectura | transformer con mezcla de expertos (MoE), segun etiquetas del autor; detalles internos no disponibles |
 | Parametros totales | 748.494.643.824 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el ejemplo de servidor usa `-c 4096`, pero no se especifica el contexto nativo del modelo) |
-| Tipos de cuantizacion | Q3_K mixta (precisiones mixtas por tensor; Q3 no implica 3 bits en todos los tensores) |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | no disponible (la invocacion de ejemplo de llama.cpp usa `-c 4096`) |
+| Tipos de cuantizacion | Q3_K (385,58 GB, 7 shards) y Q2_K (330,38 GB, 6 shards) |
+| Idiomas soportados | no disponible (la validacion incluye un prompt en espanol) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (7 shards, 385,583 GB total) |
+| Formato de pesos | GGUF (shards multiples) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. La model card del GGUF unicamente indica que se trata de un modelo de tipo chat, que incluye tablas Engram y que no incluye draft/MTP ni el proyector de vision. La presencia de tablas Engram sugiere un mecanismo de memoria o recuperacion asociado al modelo base, pero no se detalla su funcionamiento ni su integracion en el grafo de computo.
+El modelo base es un transformer con mezcla de expertos, segun las etiquetas `moe` y `mixture-of-experts` de la model card. No se dispone de informacion sobre el numero de expertos, la topologia de enrutamiento, el numero de capas ni la dimension oculta, ni sobre el volumen o la composicion del corpus de entrenamiento, el uso de RLHF o DPO, o innovaciones como decodificacion especulativa o atencion lineal. Todos estos datos deben consultarse en la model card del modelo base.
 
-Tampoco se especifican datos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) ni innovaciones tecnicas del modelo base. La cuantizacion Artemis Q3 aplica precisiones mixtas por tensor, lo que implica que la compresion no es uniforme y que el tamano final (385,58 GB) no se corresponde con una regla simple de bits por parametro. El unico commit de llama.cpp validado es `149f5641`, y la carga se realiza mediante `--load-mode mmap --lazy-mode on` con `-ngl 0` y `--device none`, es decir, sin offload a GPU.
+La aportacion de TurinTech es la compresion con Artemis y el empaquetado en GGUF. La model card indica que se requiere una version de llama.cpp con soporte para DeepSeek V4.1 Flash; se probo con la release v0.9.0 y el commit `149f5641`, sin que se establezca una build minima. La ruta validada es CPU pura: `--device none -ngl 0`, carga por mmap con `--lazy-mode on`, 8 hilos de computo y 8 de batch, contexto de 4096, batch 128 y micro-batch 64. La integracion con Ollama y LM Studio no esta soportada ni cualificada.
 
 ## Capacidades
 
-- Generacion de texto en modo chat, con encoder oficial de DeepSeek (`encode_messages(messages, thinking_mode="chat")`).
-- Formateo de tool calls: una de las ocho comprobaciones nativas superadas incluye el formateo de llamadas a herramientas.
-- Generacion de JSON estructurado, validada en las pruebas basicas del autor.
-- Generacion de codigo, validada en las pruebas basicas del autor.
-- Texto multilingue, validado en las pruebas basicas del autor.
-- Modo de razonamiento (`thinking_mode`) soportado por el encoder oficial, aunque no se detalla su comportamiento.
-- Vision: no incluida en esta cuantizacion (el proyector de vision no esta presente).
-- Draft/MTP: no incluido en esta cuantizacion.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
+- Generacion de texto y conversacion multi-turno mediante el endpoint `/completion` de llama-server.
+- Razonamiento con modo "thinking": la card menciona un prompt de aritmetica con thinking activado y el encoder `encode_messages(messages, thinking_mode="chat")`.
+- Llamada a herramientas (tool calling): se valida un prompt de tool call y el parser `parse_message_from_completion_text` lee la respuesta incluyendo tool calls. Las llamadas no se ejecutaron.
+- Generacion de codigo: se incluye un prompt de codigo, aunque el codigo generado no se ejecuto.
+- Salida estructurada en JSON: uno de los ocho prompts de validacion produce JSON.
+- Resumen de texto: prompt de resumen incluido en la validacion.
+- Capacidad multilingue limitada en la evidencia disponible: un unico prompt en espanol, que en Q2_K se corto en el limite de 256 tokens.
+- Recuperacion de informacion de turnos anteriores dentro de la conversacion (prompt de recall).
 
 ## Casos de uso
 
-- Despliegue en CPU de gran memoria para experimentacion con modelos de 748B: el modelo esta pensado para servidores con 2 TB de RAM y carga lazy de tablas Engram, lo que permite ejecutar inferencia sin GPU dedicada, a costa de velocidad reducida.
-- Generacion de JSON estructurado en pipelines de datos: las pruebas nativas confirman la produccion de JSON valido, adecuado para extraccion de entidades o rellenado de esquemas en procesos batch.
-- Formateo de tool calls en entornos de agentes: el encoder oficial y la validacion de tool-call formatting permiten integrar el modelo en orquestadores que esperan llamadas a funciones con formato DeepSeek.
-- Generacion de codigo en flujos de revision o documentacion: las comprobaciones de codigo superadas sugieren uso para tareas de asistencia offline donde la latencia no es critica.
-- Procesamiento de texto multilingue en lote: la validacion multilingue permite su uso en tareas de traduccion o clasificacion sobre corpus, siempre que el throughput en CPU sea aceptable para el volumen.
-- Reproduccion de experimentos con el modelo base en entornos sin GPU: al ser una cuantizacion verificada con hashes SHA-256 por shard, sirve para replicar resultados de DeepSeek-V4.1-Flash-1017 en infraestructura CPU-only.
-- Evaluacion comparativa de cuantizaciones Q3 en modelos de gran escala: util para estudiar el impacto de precisiones mixtas en calidad y memoria, dado el desglose detallado de shards y el RSS pico documentado.
+- Procesamiento por lotes en servidores sin GPU: el modelo se puede servir con llama-server en CPU y cargar por mmap, lo que permite reutilizar hosts con mucha RAM para tareas de generacion no interactivas, como resumir o clasificar grandes volumenes de documentos.
+- Analisis de documentos extensos con contexto de 4096 tokens: la configuracion probada admite conversaciones de varios turnos y recuperacion de informacion previa, util para asistentes internos sobre bases documentales acotadas.
+- Generacion de codigo asistida en entornos aislados: con tool calling validado a nivel de formato, puede integrarse en flujos donde el codigo se revisa antes de ejecutarse, por ejemplo generacion de parches que pasan por revision humana.
+- Extraccion de datos estructurados: el prompt JSON de la validacion sugiere uso en pipelines de normalizacion de registros, siempre con validacion posterior del esquema.
+- Prototipado y evaluacion de modelos grandes sin infraestructura de aceleradores: util para equipos que quieren medir el comportamiento cualitativo de un MoE de este tamano antes de invertir en GPU.
+- Traduccion y respuestas en espanol en entornos controlados: la validacion incluye un prompt en espanol, aunque el corte a 256 tokens en Q2_K obliga a fijar limites de generacion mas amplios y a verificar la calidad por idioma.
+- Experimentacion con cuantizaciones de muy baja precision: comparar Q3_K y Q2_K sobre el mismo conjunto de prompts para estudiar la degradacion de calidad en modelos MoE de gran escala.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que las ocho comprobaciones nativas superadas (JSON, codigo, texto multilingue y formateo de tool calls) no constituyen un benchmark de calidad amplio, y que la velocidad comparativa y la operacion en GPU no han sido evaluadas. El unico dato de rendimiento es el RSS pico observado de 254,01 GB en CPU con 2 TB de RAM y carga lazy de Engram, que no constituye un requisito minimo de memoria.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye unicamente una validacion funcional con ocho prompts fijos por conjunto de shards:
+
+| Fichero | Tamano | Prompts completados (de 8) | Cortados por limite de tokens (de 8) | RSS pico del servidor en CPU |
+|---|---|---|---|---|
+| TurinTech Q3_K | 385,58 GB | 8 | 0 | 254,01 GB |
+| TurinTech Q2_K | 330,38 GB | 7 | 1 | 372,65 GB |
+
+Los prompts cubren explicacion, JSON, codigo, resumen, espanol, recall de un turno anterior, tool call y aritmetica con thinking. El codigo y las tool calls no se ejecutaron. El autor advierte explicitamente de que esta prueba no es un benchmark, no compara con ficheros de otros publicadores y no permite ordenar las dos cuantizaciones. El RSS pico se observo en un host compartido con 2 TB de RAM y no constituye un requisito minimo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en la ruta validada (CPU-only, `-ngl 0`); no se ha cualificado el uso de GPU.
-- Memoria de sistema: el autor probo con 2 TB de RAM; el RSS pico observado fue de 254,01 GB, dato que excluye otra memoria del sistema y no debe interpretarse como minimo.
-- GPU recomendadas: no disponible; la operacion en GPU no ha sido cualificada.
-- Compatibilidad con GPU de consumo: no disponible; no se ha evaluado.
-- Opciones de despliegue: llama.cpp commit `149f5641` mediante `llama-server`, con `--load-mode mmap`, `--lazy-mode on`, `-t 8 -tb 8 -c 4096 -b 128 -ub 64 --no-warmup`. Ollama, LM Studio y chat-completions genericos no han sido cualificados.
-- Latencia y throughput: no disponibles; el autor advierte de que la generacion en CPU puede ser lenta y no emite ninguna afirmacion al respecto.
+- RAM: el conjunto Q3_K ocupa 385,58 GB en disco y registro un RSS pico de 254,01 GB; el Q2_K ocupa 330,38 GB y registro 372,65 GB de RSS pico. Se recomienda un host con al menos 512 GB de RAM para Q3_K y con margen amplio para Q2_K, dado el RSS observado.
+- GPU: no se cualifico el servicio en GPU. La ruta probada es CPU con `--device none -ngl 0`. No hay datos de VRAM para A100, H100 ni RTX 4090; con 748.494 millones de parametros totales, el modelo no cabe en ninguna GPU de consumo en estas cuantizaciones.
+- GPU de consumo: no cabe. Ni siquiera en configuraciones multi-GPU de gama alta sin offloading masivo a RAM.
+- Despliegue: llama.cpp con soporte para DeepSeek V4.1 Flash (probado con v0.9.0 y commit `149f5641`), mediante `llama-server` y el endpoint `/completion`. Ollama y LM Studio no estan soportados ni cualificados. No se menciona soporte de vLLM ni TGI para estos ficheros GGUF.
+- Codificacion de peticiones: obligatorio usar el encoder propio del modelo base, `encode_messages(messages, thinking_mode="chat")` de `encoding/encoding.py` en el repositorio deepseek-ai/DeepSeek-V4.1-Flash-1017 (commit `1bae0e1`), enviar la cadena a `/tokenize` con `"add_special": false, "parse_special": true` y pasar la lista de tokens como `prompt` de `/completion`.
+- Parametros de inferencia probados: `temperature: 0`, `seed: 0`, `n_predict: 256` (128 para recall, 384 para tool call, 1024 para thinking), `cache_prompt: false`, `stream: false`.
+- Latencia y throughput: no disponibles. La card no publica tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos que permitan una comparacion rigurosa. Como referencia estructural, esta cuantizacion se diferencia de otras distribuciones GGUF del mismo modelo base por su conjunto de shards (7 archivos, 385,583 GB), su licencia MIT y su validacion limitada a CPU con llama.cpp; no se dispone de datos para comparar con otras cuantizaciones Q3 o Q4 del mismo modelo ni con modelos de tamano similar.
+| Modelo | Parametros totales | Contexto | Formato | Licencia | Evidencia de rendimiento |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017-Artemis-GGUF (esta ficha) | 748,49 B | no disponible | GGUF Q3_K / Q2_K | MIT | Validacion funcional de 8 prompts; sin benchmarks |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (modelo base) | 748,49 B | no disponible | safetensors | MIT | no disponible en esta ficha |
+| Otras cuantizaciones GGUF del mismo modelo base | no disponible | no disponible | GGUF | MIT (presumible) | no disponible |
+
+No se dispone de informacion sobre alternativas comparables de la misma categoria en el material proporcionado; la comparativa con modelos de otros autores queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- El primer shard es el punto de entrada del cargador, no un modelo autonomo; es obligatorio descargar los siete shards en el mismo directorio.
-- La cuantizacion Q3 usa precisiones mixtas por tensor; no debe asumirse una compresion uniforme de 3 bits.
-- No incluye draft/MTP ni el proyector de vision; las capacidades multimodales y de decodificacion especulativa del modelo base no estan disponibles en esta distribucion.
-- Es obligatorio usar el encoder oficial de DeepSeek; las plantillas de chat genericas, Ollama, LM Studio y la compatibilidad con chat-completions no han sido cualificadas.
-- La operacion en GPU no ha sido cualificada; solo se ha validado la ruta CPU con llama.cpp commit `149f5641`.
-- Las ocho comprobaciones nativas no constituyen un benchmark de calidad; no hay datos de MMLU, HumanEval, GSM8K ni similares.
-- El autor no emite ninguna afirmacion sobre latencia o throughput; la generacion en CPU puede ser lenta.
-- El RSS pico de 254,01 GB no es un requisito minimo de memoria y excluye otra memoria del sistema.
-- No se dispone de informacion sobre sesgos, riesgo de alucinacion, limitaciones de contexto o idioma del modelo base.
-- La licencia MIT permite uso comercial, pero la ausencia de datos de calidad y de soporte en GPU limita su idoneidad para produccion sin evaluacion adicional.
-- El repositorio no registra descargas ni likes en el momento de la consulta, lo que reduce la evidencia externa sobre su comportamiento.
+- No se han publicado benchmarks; la unica evidencia de calidad es una validacion manual de ocho prompts, insuficiente para decisiones de produccion.
+- El codigo y las tool calls generados durante la validacion no se ejecutaron, por lo que no hay garantia de correccion funcional.
+- El Q2_K no completo uno de los ocho prompts: la respuesta en espanol se corto en el limite de 256 tokens. La calidad multilingue y la robustez de esta cuantizacion estan sin verificar.
+- El consumo de memoria es extremo: cientos de GB de RAM. El RSS pico de Q2_K (372,65 GB) supero al de Q3_K (254,01 GB) en el host de prueba, lo que sugiere un comportamiento de memoria no trivial que debe medirse en el hardware objetivo.
+- La ruta de servicio en GPU no esta cualificada; usar aceleradores exige validacion propia.
+- El endpoint correcto es `/completion`, no chat completions. Usar la API de chat sin el encoder propio del modelo puede producir resultados incorrectos.
+- La integracion con Ollama y LM Studio no esta soportada; los botones automaticos del Hub no constituyen una prueba de compatibilidad.
+- No hay informacion sobre sesgos, riesgo de alucinacion especifico, idiomas soportados ni limitaciones de contexto mas alla de los 4096 tokens usados en la prueba.
+- La licencia MIT se hereda del modelo base; conviene verificar el fichero LICENSE enlazado en el repositorio base antes de uso comercial.
+- Descargas y adopcion muy bajas (394 descargas, 5 likes en el momento de la consulta): ecosistema de soporte limitado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/turintech/DeepSeek-V4.1-Flash-1017-Artemis-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Encoder oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/encoding/encoding.py
+- Encoder del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/encoding/encoding.py
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/1bae0e1088993b9b82de08f59de5be5a34e42170/LICENSE
-- Commit de llama.cpp validado: https://github.com/ggml-org/llama.cpp/commit/149f5641b931aaf33697d70f9abc90c3e5300247
+- Resultados completos y metodo: RESULTS.md en el repositorio de TurinTech
+- Web de TurinTech: https://www.turintech.ai
+- Perfil de TurinTech en Hugging Face: https://huggingface.co/turintech
+- Discord de TurinTech: https://discord.gg/5mCDSyU9sT
+- LinkedIn de TurinTech: https://www.linkedin.com/company/turintechai

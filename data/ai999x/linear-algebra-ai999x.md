@@ -2,104 +2,102 @@
 
 ## Resumen
 
-linear-algebra-ai999x es un motor determinista de álgebra lineal para Python desarrollado por AI999X (autor: Ibnul Jaif Farabi). A diferencia de un modelo de lenguaje generativo, se trata de un solver especializado que interpreta preguntas en inglés o llamadas tipadas, selecciona una de sus 89 capacidades certificadas, calcula el resultado de forma exacta, lo verifica y devuelve la respuesta acompañada de pasos, unidades, LaTeX y supuestos. Cuando no puede verificar un resultado, se niega a responder en lugar de aproximar, lo que el autor denomina "zero wrong answers".
+Linear Algebra (linear-algebra-ai999x) es un motor de cálculo numérico determinista empaquetado como artefacto compatible con el ecosistema de Hugging Face. Lo desarrolla AI999X y no es un modelo de lenguaje neuronal: es un motor compilado (Rust, con enlace a Python) que resuelve 89 cálculos de álgebra lineal y métodos numéricos organizados en 13 temas, devolviendo para cada uno la fórmula, los pasos intermedios y las unidades. Cubre vectores, matrices, determinantes, sistemas lineales, valores propios, descomposiciones (LU, QR, SVD), mínimos cuadrados, matrices dispersas y métodos numéricos como búsqueda de raíces, interpolación y cuadratura.
 
-El repositorio incluye pesos en safetensors y ONNX con 4.715.520 parámetros totales y un tamaño de 0,1 GB, pero la model card describe el producto como un programa compilado en Rust (con variantes para escritorio, línea de comandos y WebAssembly) y un paquete de Python instalable vía `pip`. La inferencia se ejecuta íntegramente en CPU, sin GPU, sin clave de API y sin conexión a internet, lo que lo sitúa en una categoría distinta a la de los LLM: es una herramienta de cálculo simbólico-numérico empaquetada con artefactos de modelo.
+El problema que resuelve es la fiabilidad en la resolución de ejercicios y cálculos de álgebra lineal: en lugar de generar una respuesta probable, ejecuta un algoritmo numérico y devuelve el resultado exacto junto a la traza de pasos. Cuando una entrada falta o está fuera de rango, el motor devuelve una explicación en lenguaje natural en vez de un número inventado, lo que el autor comercializa como "zero-hallucination".
 
-Su relevancia actual reside en el nicho de resolución verificable de problemas matemáticos: frente a los asistentes generativos que pueden alucinar en cálculos matriciales, este motor declara resultados idénticos en Windows y Linux sobre un conjunto de 399 preguntas documentadas. La licencia Apache-2.0 y el soporte de Python 3.10 a 3.14 facilitan su integración en pipelines educativos y de validación numérica.
+Es relevante para desarrolladores e investigadores que necesitan un componente verificable y offline para pipelines educativos, herramientas de cálculo o validación de resultados, sin depender de una API en la nube. Se distribuye como aplicación de escritorio (Windows y Linux), CLI, versión web y paquete de Python. El repositorio declara 4.715.520 parámetros en safetensors, un dato que no se corresponde con la naturaleza no neuronal del motor y que debe interpretarse con cautela.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (motor determinista de cálculo; pesos en safetensors y ONNX, sin arquitectura transformer descrita) |
-| Parámetros totales | 4.715.520 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX |
+| Arquitectura | Motor de cálculo numérico compilado (Rust) con enlace a Python; no es un transformer ni una red neuronal |
+| Parametros totales | 4.715.520 (declarados en safetensors; ver advertencias) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica: no es un modelo de lenguaje) |
+| Tipos de cuantizacion | no disponible (no aplica) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (declarado); distribución principal como binarios compilados y paquete pip |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe una arquitectura de red neuronal convencional ni un proceso de entrenamiento con tokens, datasets de preentrenamiento o fases de RLHF/DPO. El sistema se presenta como un motor determinista que combina un conjunto de 89 capacidades certificadas de álgebra lineal con verificación interna del resultado. Los artefactos publicados incluyen pesos en safetensors (4.715.520 parámetros) y ONNX, además de binarios compilados en Rust para escritorio, CLI y WebAssembly.
+No hay arquitectura neuronal ni fase de entrenamiento. El motor es un conjunto de rutinas numéricas compiladas en Rust que implementan 89 cálculos en 13 temas: álgebra matricial básica, determinantes, inversas, sistemas lineales, descomposiciones LU y QR (Householder), SVD, mínimos cuadrados, valores y vectores propios, número de condición, matrices dispersas y métodos numéricos (Newton para raíces, interpolación, cuadratura, ecuación de Poisson 1-D por diferencias finitas). Cada cálculo expone su fórmula, los pasos intermedios y las unidades del resultado.
 
-La innovación destacable no es arquitectónica en el sentido habitual, sino de diseño: el motor selecciona una capacidad certificada, computa exactamente, comprueba el resultado y, si no puede verificarlo, emite una negativa explícita indicando qué falta. Esta política de rechazo es el mecanismo central para evitar respuestas incorrectas. No se dispone de detalles sobre la composición del dataset de entrenamiento ni sobre el procedimiento de certificación de las 89 capacidades.
+La innovación destacable no es algorítmica sino de ingeniería y de contrato de salida: determinismo entre plataformas (el autor declara resultados idénticos en Windows y Linux con Python 3.10 a 3.14), ejecución completamente offline, y manejo explícito de entradas inválidas devolviendo una razón en lenguaje natural en lugar de un valor. No se documentan datos de entrenamiento, RLHF ni DPO porque no aplican.
 
 ## Capacidades
 
-- Resolución de sistemas lineales, cálculo de determinantes, inversas y descomposiciones LU, QR y SVD.
-- Mínimos cuadrados, valores y vectores propios, y operaciones con matrices dispersas.
-- Búsqueda de raíces, interpolación y cuadratura numérica.
-- Respuestas paso a paso con unidades, LaTeX y supuestos explicitados.
-- Negativa verificable cuando el problema no puede resolverse con garantías.
-- Procesamiento de preguntas en inglés en lenguaje natural y llamadas tipadas desde Python.
-- Ejecución offline en CPU, sin GPU ni conexión de red.
-- Distribución multiplataforma: aplicación de escritorio, CLI `linear-algebra`, WebAssembly en navegador y paquete `pip`.
-- Tareas declaradas en los tags: question answering, token classification, text classification, sentence similarity y feature extraction.
+- Cálculo de determinantes, inversas y sistemas lineales con traza de pasos.
+- Descomposiciones matriciales: LU, QR (Householder) y SVD.
+- Valores y vectores propios de matrices de pequeño tamaño (p. ej. 2x2 documentado).
+- Mínimos cuadrados y ajuste de recta de regresión.
+- Número de condición de una matriz.
+- Tratamiento de matrices dispersas.
+- Métodos numéricos: búsqueda de raíces (Newton), interpolación y cuadratura.
+- Ecuación de Poisson 1-D por diferencias finitas.
+- Salida con fórmula, pasos y unidades; explicación textual ante entradas ausentes o fuera de rango.
+- Ejecución offline y determinista; cuatro interfaces: escritorio, CLI, navegador y Python.
+- No soporta tool calling, agentes, razonamiento multi-turno ni generación de texto libre: no es un LLM.
 
 ## Casos de uso
 
-- Docencia de álgebra lineal: el motor genera soluciones paso a paso con LaTeX, lo que permite al estudiante revisar el procedimiento completo y no solo el resultado final.
-- Corrección automática de ejercicios: al ser determinista y devolver resultados idénticos en Windows y Linux, encaja en pipelines de evaluación donde la reproducibilidad es un requisito.
-- Validación numérica en investigación: sirve como referencia independiente para comprobar resultados de descomposiciones SVD, QR o LU obtenidos con otras librerías.
-- Integración en herramientas de cálculo offline: el paquete `pip` permite incorporar el solver a cuadernos o scripts sin depender de servicios en la nube ni de claves de API.
-- Aplicaciones de escritorio educativas: los binarios Rust de 7,6 MB permiten distribuir un asistente de álgebra lineal que funciona sin Python instalado y sin conexión.
-- Sistemas de ayuda al estudio con garantía de no alucinación: en entornos donde una respuesta incorrecta es costosa, la política de rechazo explícito resulta preferible a una aproximación generativa.
-- Procesamiento por lotes de problemas matriciales: la ejecución en CPU y el bajo tamaño del repositorio (0,1 GB) facilitan el despliegue en servidores sin aceleradores.
+- Corrección automática de ejercicios de álgebra lineal: el motor devuelve el resultado exacto y los pasos, de modo que un sistema de evaluación puede comparar la traza del alumno con la del motor sin riesgo de respuestas inventadas.
+- Generación de material didáctico: producción de enunciados resueltos con fórmula, pasos y unidades para determinantes, sistemas y descomposiciones, exportables desde la CLI o el paquete de Python.
+- Validación de implementaciones numéricas propias: usar el motor como referencia determinista para comprobar los resultados de una librería de álgebra lineal en desarrollo, aprovechando la paridad declarada entre plataformas.
+- Herramienta de escritorio para estudiantes e ingenieros sin conexión: la app de Windows y Linux permite resolver cálculos en entornos sin red, con escenas y gráficas generadas a partir del resultado calculado.
+- Integración en pipelines de Python: `pip install linear-algebra-ai999x` permite invocar los 89 cálculos desde scripts de análisis de datos, con la misma respuesta en Windows y Linux (x86-64) y una build Python pura en macOS y ARM.
+- Preprocesado numérico en flujos de cálculo científico: resolución de sistemas, mínimos cuadrados y SVD como paso previo determinista antes de un modelo estadístico, sin dependencia de servicios externos.
+- Soporte en docencia asistida por ordenador: el comportamiento ante entradas inválidas (devolver una razón en vez de un número) encaja en tutores automáticos que deben explicar por qué un problema está mal planteado.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden del model-index declarado por el autor y no han sido verificados de forma independiente.
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
 
-| Tarea | Dataset | Métrica | Valor | Estado |
-|---|---|---|---|---|
-| Linear algebra question answering | Golden answers (399 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1,0 | No verificado (`verified: false`) |
+| Tarea | Dataset | Metrica | Valor |
+|---|---|---|---|
+| Question answering de algebra lineal | Golden answers (399 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 ("identical on every platform") |
 
-No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos.
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, y no serian aplicables a un motor no neuronal.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; la inferencia se ejecuta en CPU.
-- GPU recomendadas: no aplica.
-- Compatibilidad con GPU de consumo: no aplica; el sistema está diseñado para CPU.
-- Despliegue: paquete `pip` (`pip install linear-algebra-ai999x`), aplicación de escritorio para Windows y Linux, CLI `linear-algebra`, y ejecución en navegador vía WebAssembly.
-- Tamaño de los binarios: 7,6 MB para la aplicación de escritorio de álgebra lineal (Windows x86-64).
-- Latencia y throughput: no disponibles.
+- VRAM: no aplica. El motor no ejecuta inferencia sobre GPU; el cálculo corre en CPU.
+- GPU recomendadas: ninguna. No requiere aceleración gráfica.
+- Consumer GPU: irrelevante; funciona en cualquier CPU x86-64 con Windows o Linux, y en macOS y ARM mediante la build Python pura.
+- Despliegue: aplicación de escritorio (Windows, Linux), CLI `linear-algebra`, versión web en el navegador y paquete de Python 3.10+ (`pip install linear-algebra-ai999x`). No se soportan vLLM, llama.cpp, Ollama ni TGI porque no es un modelo de lenguaje.
+- Latencia y throughput: no disponibles en la información proporcionada. Al ser rutinas numéricas compiladas sobre matrices de pequeño tamaño, la latencia esperada es de orden de microsegundos a milisegundos, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Herramienta | Tipo | Cobertura | Determinismo | Licencia | Distribución |
 |---|---|---|---|---|---|
-| linear-algebra-ai999x | Motor determinista de álgebra lineal | 4.715.520 | No disponible | Apache-2.0 | Hugging Face, PyPI, binarios Rust, WebAssembly |
-| SymPy | Librería de matemáticas simbólicas en Python | No aplica | No aplica | BSD | PyPI |
-| NumPy / SciPy | Librerías de cálculo numérico | No aplica | No aplica | BSD | PyPI |
+| linear-algebra-ai999x | Motor numérico + pasos | 89 cálculos en 13 temas | Declarado entre plataformas | Apache-2.0 | Escritorio, CLI, web, Python |
+| NumPy / SciPy | Librería numérica | Amplia, sin traza de pasos didáctica | Depende de BLAS y plataforma | BSD | Python |
+| SymPy | Álgebra simbólica | Cálculo exacto y simbólico | Determinista | BSD | Python |
+| Wolfram Alpha | Servicio en la nube | Muy amplia, con pasos | No determinista entre versiones | Propietaria | API/web |
 
-No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La diferencia principal frente a SymPy y NumPy/SciPy es la interfaz en lenguaje natural, la verificación interna y la política de rechazo, junto con la distribución como aplicación de escritorio y WebAssembly.
+La comparación con modelos de lenguaje de la misma categoría (question-answering) no es pertinente: el artefacto se etiqueta como `question-answering` en el Hub, pero no genera lenguaje. Frente a NumPy y SciPy, su diferenciador es la traza de pasos y el contrato de salida ante errores; frente a SymPy, no ofrece cálculo simbólico exacto; frente a Wolfram Alpha, funciona offline y es de código abierto.
 
 ## Limitaciones y advertencias
 
-- Solo admite inglés; no hay soporte declarado para castellano ni otros idiomas.
-- El alcance se limita al álgebra lineal y áreas afines (raíces, interpolación, cuadratura); no es un modelo de propósito general.
-- No se dispone de información sobre sesgos, aunque al ser un motor determinista el riesgo de sesgo estadístico es distinto al de un LLM.
-- El resultado de accuracy 1,0 está marcado como no verificado y procede del propio autor; debe tratarse con cautela.
-- La model card no documenta el proceso de certificación de las 89 capacidades ni los criterios de rechazo.
-- El rendimiento y la latencia no están documentados.
-- Aunque la licencia es Apache-2.0, conviene revisar el archivo LICENSE del repositorio para confirmar los términos exactos de uso comercial.
-- El proyecto tiene un único autor y un mantenimiento reciente (creado en octubre de 2026, actualizado en noviembre de 2026); la continuidad a largo plazo no está garantizada.
+- No es un modelo de lenguaje: no genera texto libre, no mantiene conversaciones y no soporta tool calling ni razonamiento multi-step en el sentido de un LLM.
+- Solo soporta inglés (`en`); no hay interfaz ni salidas en castellano.
+- El recuento de 4.715.520 parámetros en safetensors no encaja con un motor numérico no neuronal; trátese como un dato declarado sin verificación independiente.
+- El benchmark de accuracy 1.0 procede de un conjunto de 399 preguntas definido por el propio autor y marcado como no verificado (`verified: false`); no es una evaluación externa.
+- La paridad entre plataformas se declara para Windows y Linux con Python 3.10-3.14; en macOS y ARM se usa una build Python pura, lo que puede afectar al rendimiento aunque el autor afirma que las respuestas son iguales.
+- El alcance está acotado a matrices de pequeño tamaño y a los 89 cálculos documentados; no es una librería de álgebra lineal de propósito general para matrices grandes o dispersas a escala industrial.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio por si hubiera condiciones adicionales.
+- El tamaño del repositorio se declara como 0.0 GB, lo que sugiere que los binarios se distribuyen fuera del Hub (GitHub Releases); verificar la procedencia antes de desplegar en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/linear-algebra-ai999x
-- Página del modelo y demo en navegador: https://www.ai999x.com/models/linear-algebra-ai999x/#try
-- Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
-- Paquete de Python (PyPI): https://pypi.org/project/linear-algebra-ai999x/
-- Documentación: https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/evaluation
-- Organización en Hugging Face: https://huggingface.co/AI999X
-- Sitio web: https://ai999x.com
-- Repositorio GitHub y releases: https://github.com/AI999X/linear-algebra-ai999x/releases/tag/v1.0.3
-- Checksums: https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
-- Descargas (última versión): https://www.ai999x.com/downloads/desktop/latest/
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo con demo en navegador: https://www.ai999x.com/models/linear-algebra-ai999x/
+- Repositorio de escritorio y CLI: https://github.com/AI999X/ai999x-desktop
+- Release v1.6.7 (Windows): https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-linear-algebra-1.6.7-windows-x86_64.zip
+- Release v1.6.7 (Linux): https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-linear-algebra-1.6.7-linux-x86_64.tar.gz
+- CLI Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=linear-algebra-ai999x/clip.mp4

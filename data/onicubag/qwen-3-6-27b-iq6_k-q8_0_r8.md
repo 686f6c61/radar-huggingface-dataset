@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Qwen-3.6-27B-IQ6_K-Q8_0_R8 es una publicacion alojada en Hugging Face por el usuario onicubag bajo licencia MIT. Por la nomenclatura del identificador, se trata de una cuantizacion en formato GGUF del modelo Qwen-3.6-27B, con un esquema de cuantizacion mixta que combina tensores en IQ6_K con tensores en Q8_0 (el sufijo R8 sugiere un tratamiento especifico de las capas o tensores asociados a la atencion o a las matrices de proyeccion). El modelo base seria un transformer denso de aproximadamente 27.000 millones de parametros de la familia Qwen 3.6.
+Qwen-3.6-27B-IQ6_K-Q8_0_R8 es una cuantizacion GGUF publicada por el usuario onicubag a partir de un modelo de la familia Qwen 3.6 con aproximadamente 26.900 millones de parametros (26.895.998.464 segun los pesos en safetensors). No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formato GGUF con una combinacion de cuantizaciones mixta (IQ6_K para parte de las capas y Q8_0 para otras, con el sufijo R8 probablemente indicando cuantizacion de 8 bits en las capas de atencion o en tensores concretos). El repositorio ocupa 22,3 GB.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card publicada no contiene mas que la linea de licencia, sin descripcion, sin especificaciones, sin datos de entrenamiento ni resultados de evaluacion. Ademas, el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion son identicas, lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
+El modelo esta pensado explicitamente para usuarios de PicoLM y de ik_llama, dos runtimes de inferencia centrados en CPU y en hardware modesto. La model card es minimalista ("no nonsense model for PicoLM or ik_llama users") y no aporta informacion sobre el modelo base exacto, el dataset de entrenamiento ni los resultados de evaluacion. La licencia declarada es Apache 2.0, heredada del modelo original.
 
-Por tanto, todo lo que sigue distingue entre lo que puede inferirse de la nomenclatura del repositorio y lo que no esta documentado. Cualquier dato no verificable se marca como "no disponible" en lugar de extrapolarse desde el modelo base.
+Su relevancia es practica: ofrece una version de ~27B en un unico fichero GGUF de 22,3 GB con calidad cercana a 8 bits en las partes sensibles, lo que permite desplegar un modelo grande en estaciones de trabajo con 24-32 GB de RAM/VRAM sin recurrir a cuantizaciones mas agresivas como Q4_K_M. Los tags incluyen `endpoints_compatible` y `conversational`, lo que sugiere que el autor lo ha probado con el endpoint compatible con la API de OpenAI de PicoLM.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer denso, segun el modelo base Qwen-3.6-27B; no confirmado en la model card) |
-| Parametros totales | no disponible (el identificador indica 27B en el modelo de origen; el recuento exacto tras cuantizacion no se documenta) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen 3.6; detalles no disponibles en la model card) |
+| Parametros totales | 26.895.998.464 (~26,9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ6_K y Q8_0 (cuantizacion mixta GGUF, segun el identificador del repositorio) |
+| Tipos de cuantizacion | IQ6_K + Q8_0 (cuantizacion mixta, sufijo R8) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | GGUF (inferido del esquema de cuantizacion IQ6_K / Q8_0) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de 22,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion en la model card sobre la arquitectura del modelo base, el volumen de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion empleadas (RLHF, DPO u otras). El unico dato tecnico derivable del identificador es el esquema de cuantizacion: una mezcla de bloques IQ6_K (cuantizacion de aproximadamente 6 bits con cuantizacion de importancia, orientada a preservar los pesos mas sensibles) y Q8_0 (8 bits por peso en bloques), lo que sugiere que el autor reservo mayor precision para determinadas capas o tensores y aplico una compresion mas agresiva al resto. El sufijo R8 no se explica en la model card y no puede interpretarse con certeza.
+No hay informacion publicada en la model card sobre la arquitectura interna del modelo base Qwen 3.6, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Por la nomenclatura y el tamano, se trata presumiblemente de un transformer decoder-only de la familia Qwen, pero no se puede confirmar si incorpora innovaciones como attention lineal, decodificacion especulativa o modos de razonamiento extendido.
 
-Este tipo de cuantizacion mixta es habitual en el ecosistema llama.cpp para reducir el tamano del fichero manteniendo la fidelidad numerica en las capas criticas, pero el autor no publica la receta exacta, la herramienta empleada ni las metricas de degradacion respecto al modelo original. Tampoco se documenta si se realizo alguna validacion de perplejidad o de calidad tras la cuantizacion.
+Lo unico verificable es el proceso de cuantizacion: el autor ha generado un GGUF con una mezcla de IQ6_K (cuantizacion de ~6,6 bits con importancia por bloques) y Q8_0 (8 bits por bloque), presumiblemente asignando Q8_0 a las capas mas sensibles (atencion, embeddings o normas) y IQ6_K al resto de las matrices de proyeccion. Esta estrategia busca minimizar la perdida de calidad respecto a un Q8_0 completo a cambio de un ahorro de espacio de aproximadamente el 20-25 %. El sufijo R8 sugiere que los tensores de atencion o las capas recurrentes se mantienen a 8 bits.
 
 ## Capacidades
 
-- No se documentan capacidades especificas en la model card.
-- Por herencia del modelo base indicado en el nombre (Qwen-3.6-27B), cabria esperar generacion de texto, razonamiento y codigo, pero esto no esta verificado en el repositorio.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional: el tag `conversational` indica que el modelo esta preparado para dialogos multi-turno.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` apunta a que puede servirse mediante una API compatible con OpenAI (presumiblemente la de PicoLM).
+- Razonamiento y codigo: no confirmado en la model card, pero esperable en un modelo de la familia Qwen de ~27B; no disponible como dato verificado.
+- Tool calling / function calling: no disponible.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible (no se listan idiomas).
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Despliegue local en entornos con GPU de gama alta: el formato GGUF permite ejecutar el modelo con llama.cpp u Ollama en estaciones de trabajo con suficiente memoria, aunque el autor no publica requisitos ni instrucciones de uso.
-- Evaluacion comparativa de esquemas de cuantizacion: el repositorio puede servir como referencia para medir la perdida de calidad de una mezcla IQ6_K/Q8_0 frente al modelo original, siempre que el usuario realice sus propias mediciones.
-- Pruebas de integracion en pipelines de inferencia: al ser un GGUF, es compatible con servidores tipo llama.cpp server o con wrappers de OpenAI API, lo que facilita prototipado.
-- Investigacion sobre cuantizacion mixta: util para estudiar como afecta la asignacion de precision por capas al rendimiento en tareas de razonamiento.
-- Uso educativo: permite ilustrar el flujo completo de conversion de pesos a GGUF y la seleccion de tipos de cuantizacion.
-- Experimentacion con licencia permisiva: la licencia MIT facilita su incorporacion en proyectos internos o comerciales, sujeto a las condiciones del modelo base original, que no se detallan.
-
-En todos los casos, la ausencia de documentacion obliga a validar el comportamiento del modelo antes de cualquier uso en produccion.
+- Inferencia local en CPU con PicoLM o ik_llama: el modelo esta empaquetado en un unico GGUF de 22,3 GB pensado para estos runtimes, de modo que un equipo con 32 GB de RAM puede cargarlo y servir conversaciones sin GPU dedicada.
+- Despliegue en estaciones de trabajo con una sola GPU de 24 GB: la cuantizacion mixta IQ6_K/Q8_0 ocupa menos que un Q8_0 completo, lo que permite cargar el modelo en una RTX 4090 o A5000 con offload parcial de capas a CPU si fuera necesario.
+- Servicio de chat interno con API compatible OpenAI: gracias al tag `endpoints_compatible`, se puede exponer como backend de una interfaz tipo ChatGPT o integrarlo en herramientas que ya hablan el protocolo de OpenAI, cambiando solo la URL base.
+- Prototipado de asistentes conversacionales de dominio general: un modelo de ~27B con licencia Apache 2.0 permite iterar sobre prompts y flujos de dialogo sin coste de API y sin restricciones de uso comercial.
+- Evaluacion comparativa de cuantizaciones: util para medir la degradacion de calidad de IQ6_K+Q8_0 frente a Q8_0 o Q6_K completos en tareas de generacion y razonamiento, usando el mismo modelo base.
+- Fine-tuning ligero sobre el modelo original y re-cuantizacion: al disponer de la licencia Apache 2.0 y del modelo base publico, se puede ajustar el modelo con LoRA y volver a convertirlo a GGUF con este mismo esquema de cuantizacion para despliegue en CPU.
+- Entornos sin conectividad o con requisitos de privacidad: al ejecutarse integramente en local con PicoLM/ik_llama, los datos no salen de la maquina, lo que encaja en escenarios con datos sensibles.
 
 ## Benchmarks y rendimiento
 
@@ -53,35 +53,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la model card. Como referencia orientativa, un modelo denso de 27B en cuantizacion de 6-8 bits requiere del orden de 20-30 GB de memoria para los pesos, mas el espacio para el contexto y el KV cache, pero esta cifra no la proporciona el autor y debe verificarse con el fichero real.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada; probablemente requiera GPUs con 24 GB o mas, o configuraciones multi-GPU, pero no hay datos del autor.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF son las opciones naturales, aunque no se documentan en el repositorio.
+- VRAM/RAM estimada: el fichero GGUF pesa 22,3 GB; se necesita al menos esa cantidad de memoria mas overhead del runtime (tipicamente 1-3 GB adicionales para el contexto KV). Con contexto largo, el consumo de KV cache puede anadir varios GB.
+- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para carga completa en VRAM; A5000/A6000 (24-48 GB) y A100/H100 para despliegues con contexto largo o varias sesiones concurrentes.
+- Cabe en GPU de consumo: si en RTX 4090/3090 (24 GB) con contexto moderado; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo con offload parcial a CPU o reduciendo el contexto.
+- Opciones de despliegue: PicoLM e ik_llama (mencionados por el autor); tambien llama.cpp y Ollama por ser formato GGUF estandar, aunque no estan confirmados en la model card.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| onicubag/Qwen-3.6-27B-IQ6_K-Q8_0_R8 | no disponible (27B segun identificador) | no disponible | GGUF | MIT | Hugging Face, 0 descargas |
-| Modelo base Qwen-3.6-27B | no disponible | no disponible | no disponible | no disponible | no verificado en la informacion proporcionada |
-| Otras cuantizaciones GGUF del mismo modelo base | no disponible | no disponible | GGUF | depende del autor | no disponible |
+| Qwen-3.6-27B-IQ6_K-Q8_0_R8 (este) | ~26,9B | no disponible | GGUF mixto IQ6_K/Q8_0 | Apache 2.0 | Optimizado para PicoLM/ik_llama, 22,3 GB |
+| Modelo base Qwen 3.6 27B (original) | ~26,9B | no disponible | safetensors | Apache 2.0 | Pesos sin cuantizar; requiere mas memoria |
+| Cuantizacion Q8_0 estandar del mismo modelo | ~26,9B | no disponible | GGUF Q8_0 | Apache 2.0 | Mayor tamano (~28 GB), maxima fidelidad |
+| Cuantizacion Q4_K_M del mismo modelo | ~26,9B | no disponible | GGUF Q4_K_M | Apache 2.0 | ~16-17 GB, menor calidad, cabe en GPUs de 16 GB |
 
-No se dispone de informacion suficiente para establecer una comparativa tecnica rigurosa con alternativas concretas.
+No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- La model card no contiene descripcion, instrucciones de uso ni datos de entrenamiento; no es posible verificar el origen exacto de los pesos.
-- El repositorio registra 0 descargas y 0 likes, sin evidencia de validacion por la comunidad.
-- La cuantizacion mixta IQ6_K/Q8_0 puede introducir degradacion respecto al modelo original; el autor no publica metricas de perplejidad ni evaluaciones.
-- No se documentan sesgos conocidos, pero tampoco se descartan; al no haber informacion sobre el dataset de entrenamiento, no puede evaluarse este aspecto.
-- Riesgo de alucinacion: no evaluado en este repositorio.
-- Limitaciones de contexto e idioma: no disponibles.
-- La licencia MIT del repositorio no necesariamente cubre las restricciones del modelo base original; conviene verificar la licencia de Qwen-3.6-27B antes de un uso comercial.
-- No se especifica la herramienta de cuantizacion ni la version de llama.cpp compatible, lo que puede provocar problemas de carga en runners desactualizados.
-- Uso en produccion desaconsejado sin una evaluacion previa propia.
+- La model card no documenta el modelo base exacto, el contexto maximo ni los idiomas; cualquier uso en produccion requiere validacion propia.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de esta escala; no hay evaluaciones publicadas que lo cuantifiquen.
+- La cuantizacion mixta IQ6_K/Q8_0 introduce una perdida de calidad no medida frente a los pesos originales en safetensors; conviene evaluar en las tareas objetivo antes de desplegar.
+- Sesgos conocidos: no documentados; se heredan los del modelo base, que no se especifica.
+- Licencia Apache 2.0: permite uso comercial, pero el autor de la cuantizacion no ofrece garantias ni soporte; verificar la licencia del modelo base original.
+- El repositorio tiene pocas descargas (374) y cero likes, y fue creado en noviembre de 2026; no hay evidencia de validacion por la comunidad.
+- Compatibilidad: al ser un GGUF estandar deberia funcionar en llama.cpp, pero el autor solo menciona PicoLM e ik_llama; probar el tokenizador y la plantilla de chat antes de integrar.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/onicubag/Qwen-3.6-27B-IQ6_K-Q8_0_R8
-- No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion proporcionada.
+- Modelo en Hugging Face: https://huggingface.co/onicubag/Qwen-3.6-27B-IQ6_K-Q8_0_R8
+- PicoLM (runtime mencionado por el autor): https://github.com/whoreson/picolm/
+- ik_llama.cpp (runtime alternativo mencionado): no disponible enlace directo en la informacion proporcionada

@@ -5,7 +5,7 @@
   "author": "Manprot",
   "url": "https://huggingface.co/Manprot/MP-01-100M-Preview",
   "created_at": "2026-11-02T17:22:56.000Z",
-  "updated_at": "2026-11-08T15:13:59.000Z",
+  "updated_at": "2026-11-23T07:39:29.000Z",
   "license": "to-be-decided",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 917,
+  "downloads_30d": 928,
   "trending_score": 0,
   "parameters": 100623744,
   "parameters_human": "100.6M",
@@ -61,16 +61,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Manprot/MP-01-100M-base · Hugging Face",
-      "url": "https://huggingface.co/Manprot/MP-01-100M-base",
-      "snippet": "MP-01 100M base is a 100.6M-parameter decoder-only language model made by Manprot. It is not a pure base model. It started from chat fine-tuned weights, so it can show chat-style behaviour. It continues text but does not follow instructions reliably. A separate local cooldown (170 steps from step ..."
-    },
-    {
-      "title": "Manprot (Manprot) – Models - Hugging Face",
-      "url": "https://huggingface.co/Manprot/models",
-      "snippet": "Team members 1 Manprot's models1 Sort: Recently updated Manprot/MP-01-100M-base Text Generation • 0.1B•Updated about 9 hours ago• 159 • 3"
-    }
-  ]
+  "sources": []
 }

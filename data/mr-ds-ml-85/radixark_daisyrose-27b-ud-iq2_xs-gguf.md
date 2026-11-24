@@ -2,94 +2,87 @@
 
 ## Resumen
 
-DaisyRose-27B es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por RadixArk, obtenido mediante un post-entrenamiento con aprendizaje por refuerzo (RL) sobre Qwen3.8-27B. Segun la model card del autor de la cuantizacion, el entrenamiento se realizo sobre aproximadamente 1.200 tareas de agente de horizonte largo curadas, durante 18 dias en 144 GPU H200. Mantiene la arquitectura, el tokenizador y la plantilla de chat de Qwen3.8-27B de forma identica byte a byte, lo que permite reutilizar mapas de cuantizacion disenados para el modelo base.
+DaisyRose-27B es un modelo de lenguaje multimodal (image-text-to-text) desarrollado por RadixArk, derivado de Qwen3.8-27B mediante un post-entrenamiento basado exclusivamente en aprendizaje por refuerzo (RL) sobre aproximadamente 1.200 tareas de agente de horizonte largo cuidadosamente seleccionadas. El modelo conserva de forma byte a byte la arquitectura, el tokenizador y la plantilla de chat de Qwen3.8-27B, lo que permite reutilizar mapas tensoriales de cuantización diseñados para el modelo base. Esta ficha concreta describe la requantización comunitaria UD-IQ2_XS publicada por Mr-DS-ML-85, orientada a ejecución en hardware de gama baja.
 
-La ficha que nos ocupa no es el modelo original, sino una recuantizacion comunitaria en formato GGUF: `RadixArk_DaisyRose-27B-UD-IQ2_XS`, publicada por el usuario Mr-DS-ML-85. Se trata de una cuantizacion de 2 bits (2,31 bits por peso) que reduce el modelo a 7,69 GB, con el objetivo declarado de ejecutar un modelo de 27B en una GPU de 8 GB o en CPU. La receta de seleccion de tipos por tensor se toma del esquema Unsloth Dynamic V3.1, aunque el autor aclara explicitamente que no es un lanzamiento oficial de Unsloth: los pesos, la imatrix y el empaquetado son trabajo comunitario.
+La relevancia de esta variante radica en su compresión extrema: un modelo de 26.900 millones de parámetros reducido a 7,69 GB (2,31 bits por peso) mediante una receta de cuantización dinámica inspirada en Unsloth Dynamic V3.1, con 755 tensores repartidos en 12 tipos de cuantización distintos. Esto permite ejecutar un modelo de 27B en una GPU de 8 GB de VRAM o incluso en CPU, a costa de una degradación de calidad que el autor no cuantifica.
 
-Su relevancia actual reside en la posibilidad de desplegar un modelo de 27B con capacidades multimodales, razonamiento y uso como agente en hardware muy limitado. No obstante, la calidad de una cuantizacion de 2 bits es inherentemente degradada, y el propio autor documenta limitaciones de compatibilidad con motores de inferencia alternativos a llama.cpp.
+Se distribuye en formato GGUF para llama.cpp y requiere una versión mínima del motor (`b94959a`, 19 de noviembre de 2026) que soporte el layout tensorial fusionado de la familia Qwen3.5 (`attn_qkv_gate`, `ssm_beta_alpha`). Incluye un archivo de proyección multimodal separado (`mmproj`) necesario para el procesamiento de imágenes y una variante con cabeza MTP para decodificación especulativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con capas SSM/DeltaNet y atencion (heredada de Qwen3.8-27B); incluye cabeza NextN/MTP opcional |
-| Parametros totales | 27B (heredados del modelo base) |
+| Arquitectura | Transformer hibrido con atencion lineal (DeltaNet/SSM) y atencion completa, derivado de Qwen3.8-27B; layout tensorial fusionado de la familia Qwen3.5 |
+| Parametros totales | 26.895.998.464 (26,9B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de uso emplea `-c 8192`) |
-| Tipos de cuantizacion | IQ2_XS como tipo global; mezcla por tensor: F32, IQ2_XXS, IQ1_S, Q8_0, IQ3_XXS, IQ2_XS, IQ2_S, IQ3_S, Q4_K, Q3_K, Q2_K, IQ4_XS (12 tipos) |
+| Longitud de contexto | no disponible en la informacion proporcionada (los ejemplos de uso emplean `-c 8192` y `-c 1024`) |
+| Tipos de cuantizacion | GGUF UD-IQ2_XS: 12 tipos por tensor (F32, IQ1_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ3_XXS, IQ3_S, IQ4_XS, Q2_K, Q3_K, Q4_K, Q8_0); 2,31 bpw |
 | Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); ficheros: `RadixArk_DaisyRose-27B-UD-IQ2_XS.gguf` (7,69 GB), variante `-MTP.gguf` (7,93 GB), `mmproj-DaisyRose-27B-f16.gguf` (0,93 GB para vision) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base DaisyRose-27B conserva la arquitectura de Qwen3.8-27B, que segun los nombres de tensor documentados combina capas de atencion con componentes de tipo SSM/DeltaNet (`ssm_a`, `ssm_conv1d`, `ssm_dt`, `ssm_beta_alpha`, `ssm_out`), es decir, una arquitectura hibrida. El post-entrenamiento descrito es exclusivamente RL sobre tareas de agente de horizonte largo, sin que la informacion disponible detalle la composicion del dataset ni si hubo fases adicionales de DPO o RLHF. El modelo incluye una cabeza NextN/MTP (multi-token prediction) que puede emplearse para decodificacion especulativa.
+El modelo base DaisyRose-27B parte de Qwen3.8-27B y aplica un post-entrenamiento basado únicamente en RL sobre unas 1.200 tareas de agente de horizonte largo, con un coste declarado de 18 días en 144 GPU H200. No se especifica en la información disponible la composición del dataset, el número de tokens de entrenamiento ni si se emplearon técnicas adicionales como DPO. La arquitectura subyacente combina capas de atención lineal de tipo DeltaNet con estados SSM (`ssm_a`, `ssm_conv1d`, `ssm_dt`, `ssm_beta_alpha`) y atención clásica, siguiendo el diseño de la familia Qwen3.5.
 
-La cuantizacion se construyo con `llama-quantize` en modo `--allow-requantize` partiendo del Q8_0 (8,37 bpw) de bartowski, aplicando una imatrix especifica del modelo (583 fragmentos de `calibration-v6.txt`) y una tabla de tipos por tensor de 755 entradas derivada del esquema Unsloth Dynamic V3.1. El resultado son 2,31 bpw: las capas iniciales quedan en IQ1_S, las capas finales suben a IQ3_S/Q3_K/IQ4_XS y la cabeza de salida mantiene Q3_K. La variante MTP anade 15 tensores (8 en Q4_0, 7 normas F32) por 0,24 GB adicionales.
+La innovación técnica de esta publicación concreta no está en el entrenamiento sino en la cuantización: se aplica la selección de capas por tensor de la receta Unsloth Dynamic V3.1 (extraída de la cabecera de su `UD-IQ2_XS` para Qwen3.8-27B) a los pesos de DaisyRose. Las primeras capas se cuantizan a IQ1_S, el último bloque recibe IQ3_S/Q3_K/IQ4_XS y la cabeza de salida mantiene Q3_K, siguiendo la curva clásica de "más bits donde más importan". Las normas y parámetros SSM críticos se conservan en F32. La variante `-MTP` añade el bloque NextN (`blk.64.*`, 15 tensores, 8 en Q4_0) para decodificación especulativa con `--spec-type draft-mtp`.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno con plantilla de chat de Qwen3.8.
-- Razonamiento con modo de pensamiento activado por defecto (`reasoning_effort = xhigh` en la plantilla).
-- Capacidades de agente y razonamiento multi-paso, derivadas del entrenamiento RL sobre tareas de horizonte largo.
-- Entrada de imagenes (vision-language, imagen-texto-a-texto) mediante el fichero `mmproj` en F16.
-- Generacion de codigo (heredada del modelo base; no se aportan benchmarks que la cuantifiquen).
-- Decodificacion especulativa mediante la cabeza MTP en la variante `-MTP`.
-- Soporte multilingue limitado a ingles y chino.
-- Compatibilidad con tool calling a traves de la plantilla Jinja (`--jinja`); no se detalla el formato exacto en la informacion disponible.
+- Generación de texto conversacional multi-turno, con plantilla de chat idéntica a Qwen3.8-27B.
+- Razonamiento explícito: el modo *thinking* está activado por defecto en la plantilla.
+- Procesamiento de imágenes y texto (pipeline `image-text-to-text`), previa carga del archivo `mmproj-DaisyRose-27B-f16.gguf`.
+- Capacidades de agente y razonamiento multi-paso, heredadas del post-entrenamiento RL sobre tareas de horizonte largo.
+- Soporte de tool calling / function calling a través de la plantilla Jinja (`--jinja`).
+- Multilingüe limitado a inglés y chino.
+- Decodificación especulativa mediante cabeza MTP en la variante correspondiente.
 
 ## Casos de uso
 
-- Inferencia en GPU de consumo de 8 GB: el fichero de 7,69 GB permite cargar un modelo de 27B con `-ngl 14 -c 1024` en una RTX 4060, a costa de derivar parte de las capas a CPU. Adecuado para prototipado local y pruebas de concepto.
-- Despliegue en CPU o equipos de borde: al ser GGUF compatible con llama.cpp, Ollama, LM Studio y KoboldCpp, puede ejecutarse en servidores sin GPU para tareas de generacion por lotes no interactivas.
-- Procesamiento de documentos con imagenes: combinando el modelo con `mmproj-DaisyRose-27B-f16.gguf` puede extraer texto y describir capturas, diagramas o formularios en entornos con recursos muy limitados.
-- Agentes automatizados de bajo coste: sus capacidades de razonamiento multi-paso permiten construir flujos de agente en ingles o chino para tareas acotadas, aceptando la perdida de precision propia de 2 bits.
-- Asistente conversacional local con contexto moderado: con `-c 8192` y atencion flash (`-fa`), sirve para chat multi-turno en estaciones de trabajo sin GPU dedicada de gran capacidad.
-- Evaluacion y experimentacion con cuantizaciones extremas: util como referencia para medir la degradacion de calidad de IQ2_XS frente al modelo en BF16 o Q8_0 en tareas concretas.
-- Decodificacion especulativa en hardware limitado: la variante MTP permite probar `--spec-type draft-mtp` en llama.cpp, aunque el autor no midio la tasa de aceptacion.
+- Despliegue en estaciones de trabajo sin GPU dedicada: con 7,69 GB de pesos y planificación `--pof auto`, el modelo puede repartir las capas 0-15 en host (1,30 GB) y las 15-64 en GPU (5,50 GB), permitiendo inferencia de un 27B en equipos modestos.
+- Prototipado de agentes en local: las capacidades de razonamiento multi-paso y tool calling permiten construir pipelines de agente en una sola máquina antes de migrar a infraestructura mayor.
+- Análisis de imágenes en entornos con VRAM limitada: con el `mmproj` cargado, admite entrada image-text-to-text en una GPU de 8 GB, útil para clasificación o descripción de imágenes en edge.
+- Evaluación comparativa de cuantizaciones: sirve como referencia de la degradación de calidad de un 27B a 2,31 bpw frente a cuantizaciones mayores del mismo modelo base.
+- Inferencia en CPU para tareas de procesamiento por lotes no interactivas, donde el throughput de 5,7 tok/s en RTX 4060 resulta aceptable para generación asíncrona.
+- Investigación sobre decodificación especulativa: la variante MTP permite medir tasas de aceptación de borradores en un modelo multimodal comprimido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-Los unicos datos de rendimiento aportados son de velocidad de inferencia en una RTX 4060 de 8 GB con `-ngl 14 -c 1024`: 5,7 tok/s con el fichero ligero y 5,2 tok/s con la variante MTP en decodificacion simple. El autor indica que `-ngl 99` provoca OOM porque los 7,69 GB de pesos no dejan espacio para la cache KV en una tarjeta de 8 GB.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente reporta métricas de velocidad en una RTX 4060 de 8 GB con `-ngl 14 -c 1024`: 5,7 tok/s para el archivo ligero y 5,2 tok/s para la variante MTP en decodificación simple, sin medir la tasa de aceptación del borrador especulativo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 7,69 GB solo para pesos en el fichero ligero; 7,93 GB en la variante MTP; anadir 0,93 GB si se usa el `mmproj` para vision y el espacio de la cache KV segun contexto.
-- GPU recomendadas: RTX 4060 8 GB (verificado por el autor con offload parcial), GPUs de 12 GB o mas para offload completo con contexto reducido; A100/H100 no son necesarias y el modelo esta pensado para hardware modesto.
-- Cabe en GPU de consumo: si, en tarjetas de 8 GB con offload parcial a CPU; en 12-16 GB con mayor numero de capas en GPU.
-- Opciones de despliegue: llama.cpp (`llama-server`), Ollama, LM Studio y KoboldCpp. SGLang y vLLM no son compatibles con GGUF. El motor `inx` (Infernix) falla al cargar por el layout de tensores fusionado (`blk.16.attn_qkv.weight` no encontrado).
-- Latencia y throughput: 5,7 tok/s (ligero) y 5,2 tok/s (MTP) en RTX 4060 8 GB con `-ngl 14 -c 1024`; sin datos para otros hardware.
+- VRAM estimada: 7,69 GB para los pesos del archivo ligero; 7,93 GB para la variante MTP; 0,93 GB adicionales para el `mmproj` si se usa entrada de imagen.
+- GPU recomendadas: RTX 4060 8 GB verificada por el autor con `-ngl 14`; con `-ngl 99` se produce OOM porque los pesos no dejan espacio para la caché KV. GPUs de 12-16 GB permiten mayor offload de capas y contextos más largos.
+- Cabe en GPU de consumo: sí, en tarjetas de 8 GB o más con offload parcial de capas; también en CPU.
+- Opciones de despliegue: llama.cpp ≥ `b94959a` (obligatorio), Ollama, LM Studio y KoboldCpp solo si su llama.cpp embebido es igual o posterior a esa versión. SGLang y vLLM no soportan GGUF. `inx` (Infernix) falla por esperar el layout tensorial dividido.
+- Latencia y throughput: 5,7 tok/s (archivo ligero) y 5,2 tok/s (MTP) en RTX 4060 8 GB con `-ngl 14 -c 1024`; sin datos para otras configuraciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RadixArk_DaisyRose-27B-UD-IQ2_XS (esta ficha) | 27B | no disponible | IQ2_XS, 2,31 bpw, 7,69 GB | apache-2.0 | GGUF en Hugging Face |
-| Qwen3.8-27B-UD-IQ2_XS (Unsloth) | 27B | no disponible | IQ2_XS, 7,63 GB | no disponible en la informacion | GGUF oficial de Unsloth |
-| RadixArk/DaisyRose-27B (base) | 27B | no disponible | BF16 y otras | apache-2.0 | Hugging Face |
-| bartowski/RadixArk_DaisyRose-27B-GGUF | 27B | no disponible | Q8_0 (8,37 bpw) y otras | apache-2.0 | GGUF en Hugging Face |
+| DaisyRose-27B UD-IQ2_XS (esta ficha) | 26,9B | no disponible | GGUF IQ2_XS, 2,31 bpw, 7,69 GB | Apache 2.0 | Hugging Face, comunidad |
+| Qwen3.8-27B UD-IQ2_XS (Unsloth) | 27B | no disponible | GGUF IQ2_XS, 7,63 GB | Apache 2.0 | Hugging Face, oficial Unsloth |
+| RadixArk/DaisyRose-27B (base) | 26,9B | no disponible | safetensors (BF16 presumiblemente) | Apache 2.0 | Hugging Face, oficial |
 
-La diferencia de tamano frente a la cuantizacion equivalente de Unsloth es de un +0,83 %, atribuible a la receta por tensor y al empaquetado comunitario.
+El archivo ligero es un 0,83% más grande que el `UD-IQ2_XS` oficial de Unsloth para Qwen3.8-27B, diferencia atribuible a los pesos del post-entrenamiento RL. No se dispone de datos de rendimiento comparado entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- Cuantizacion de 2 bits: la degradacion de calidad frente al modelo en BF16 o Q8_0 es esperable y no esta cuantificada con benchmarks en la informacion disponible.
-- No es un lanzamiento oficial de Unsloth: la receta de seleccion por tensor se reutiliza, pero los pesos, la imatrix y el empaquetado son trabajo comunitario sin validacion externa.
-- Compatibilidad limitada: solo carga en llama.cpp y derivados (Ollama, LM Studio, KoboldCpp); falla en el motor `inx` por el layout fusionado de tensores y no es compatible con SGLang ni vLLM.
-- Idiomas: solo ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje y agravado por la cuantizacion agresiva; no se aportan evaluaciones de fidelidad.
-- Contexto: la longitud de contexto nativa no se especifica; el ejemplo de uso limita a 8192 tokens y en 8 GB de VRAM el contexto practico es muy reducido (1024 tokens en la prueba del autor).
-- Modo de pensamiento activado por defecto con `reasoning_effort = xhigh`, lo que incrementa el consumo de tokens y la latencia si no se ajusta la plantilla.
-- La cabeza MTP no tiene medida la tasa de aceptacion, por lo que el beneficio de la decodificacion especulativa no esta verificado.
-- Licencia apache-2.0 declarada, pero conviene verificar las condiciones del modelo base y de las herramientas de cuantizacion empleadas antes de un uso comercial en produccion.
+- No es una publicación oficial de Unsloth: la receta de selección de capas es de Unsloth, pero los pesos, la imatrix y el empaquetado son trabajo comunitario, sin garantías de calidad.
+- No se han publicado evaluaciones de la degradación de calidad a 2,31 bpw; a esta tasa de bits es esperable una pérdida notable de precisión en razonamiento y código, aunque no cuantificada.
+- Requiere llama.cpp ≥ `b94959a`; versiones anteriores abortan al cargar con `check_tensor_dims: tensor 'blk.0.ssm_beta.weight' not found`.
+- Incompatible con `inx` (Infernix) por el layout tensorial fusionado, y con SGLang y vLLM por ser GGUF.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado.
+- El modo *thinking* está activado por defecto, lo que incrementa la latencia y el consumo de tokens si no se desactiva.
+- Riesgo de alucinación inherente a los modelos de 27B comprimidos a 2 bits, sin datos específicos publicados.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los datos de RL podrían imponer condiciones adicionales no detalladas en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Mr-DS-ML-85/RadixArk_DaisyRose-27B-UD-IQ2_XS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mr-DS-ML-85/RadixArk_DaisyRose-27B-UD-IQ2_XS-GGUF
 - Modelo base: https://huggingface.co/RadixArk/DaisyRose-27B
-- GGUF de referencia de bartowski: https://huggingface.co/bartowski/RadixArk_DaisyRose-27B-GGUF
-- Motor Infernix citado por el autor: https://huggingface.co/Mr-DS-ML-85/Infernix
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- No se han encontrado en la informacion proporcionada papers, blogs ni demos adicionales.
+- Motor Infernix (inx): https://huggingface.co/Mr-DS-ML-85/Infernix
+- llama.cpp (commit mínimo `b94959a`): https://github.com/ggml-org/llama.cpp
+- Receta Unsloth Dynamic V3.1: no disponible como enlace en la informacion proporcionada

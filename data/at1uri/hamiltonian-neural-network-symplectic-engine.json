@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "At1uri/hamiltonian-neural-network-symplectic-engine",
+  "slug": "at1uri-hamiltonian-neural-network-symplectic-engine",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/hamiltonian-neural-network-symplectic-engine",
+  "created_at": "2026-11-24T03:17:39.000Z",
+  "updated_at": "2026-11-24T03:17:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hamiltonian_neural_network",
+    "physics-informed-ml",
+    "hamiltonian-neural-networks",
+    "symplectic-integrators",
+    "dynamical-systems",
+    "scientific-computing",
+    "python",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8705,
+  "parameters_human": "8705",
+  "storage_bytes": 35420,
+  "storage_human": "35420 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Symplectic Phase Space Prediction",
+      "dataset": "At1uri/hamiltonian-phase-space-benchmarks",
+      "metric": "Energy Conservation Relative Drift (ΔH/H)",
+      "value": 0.0000015
+    },
+    {
+      "task": "Symplectic Phase Space Prediction",
+      "dataset": "At1uri/hamiltonian-phase-space-benchmarks",
+      "metric": "Liouville Phase Volume Divergence",
+      "value": 0.000335
+    },
+    {
+      "task": "Symplectic Phase Space Prediction",
+      "dataset": "At1uri/hamiltonian-phase-space-benchmarks",
+      "metric": "Symplectic 2-Form Preservation Error",
+      "value": 0.0000021
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "MarkovEfim/Qwen2.5-7B-Instruct-V-CORE-L1-GGUF",
+  "slug": "markovefim-qwen2-5-7b-instruct-v-core-l1-gguf",
+  "author": "MarkovEfim",
+  "url": "https://huggingface.co/MarkovEfim/Qwen2.5-7B-Instruct-V-CORE-L1-GGUF",
+  "created_at": "2026-11-24T02:48:01.000Z",
+  "updated_at": "2026-11-24T02:49:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "l1-norm",
+    "lean4",
+    "vcore-l1-certified",
+    "en",
+    "ru",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 5858358368,
+  "storage_human": "5.9 GB",
+  "context_length": 32768,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

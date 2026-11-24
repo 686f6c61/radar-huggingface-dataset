@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "latkes/factprobe-replication-gvv2-adapters",
+  "slug": "latkes-factprobe-replication-gvv2-adapters",
+  "author": "latkes",
+  "url": "https://huggingface.co/latkes/factprobe-replication-gvv2-adapters",
+  "created_at": "2026-11-24T02:15:50.000Z",
+  "updated_at": "2026-11-24T02:25:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "factprobe-replication",
+    "gv-training-v2",
+    "olmo-2-13b",
+    "generator-validator-consistency",
+    "base_model:allenai/OLMo-2-1124-13B",
+    "base_model:adapter:allenai/OLMo-2-1124-13B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5759125464,
+  "storage_human": "5.8 GB",
+  "context_length": null,
+  "base_model": "allenai/OLMo-2-1124-13B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latkes - Galettes de pommes de terre de Hanouka (recette …",
+      "url": "https://www.peko-peko.fr/recettes/latkes/",
+      "snippet": "Dec 12, 2022 · Les latkes sont des galettes de pommes de terre similaires aux röstis, qui font partie des traditions culinaires juives, …"
+    },
+    {
+      "title": "Latke - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Latke",
+      "snippet": "Latkes today are most commonly made with potatoes, although other vegetables are also sometimes used. There are two main …"
+    },
+    {
+      "title": "Latkes - Cuisine AZ",
+      "url": "https://www.cuisineaz.com/recettes/latkes-102238.aspx",
+      "snippet": "Jul 10, 2021 · Les latkes sont des galettes ou crêpes de pommes de terre, typique de la cuisine d'Europe de l'Est. Elles sont …"
+    },
+    {
+      "title": "Latkes (galettes de pommes de terre frites) - Juliette Rivkah",
+      "url": "https://julietterivkah.com/recette/latkes-galettes-pommes-de-terre/",
+      "snippet": "Les latkes sont de délicieuses galettes de pommes de terre frites qui représentent l’un des plats phare de Hanouka. Durant cette …"
+    },
+    {
+      "title": "Galette de pommes de terre — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Galette_de_pommes_de_terre",
+      "snippet": "En Suisse, elle s'appelle le rösti, et se distingue des précédents, particulièrement des latkes, par l'absence d'œufs ou d'ingrédients …"
+    }
+  ]
+}

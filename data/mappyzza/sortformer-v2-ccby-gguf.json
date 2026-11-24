@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Mappyzza/sortformer-v2-ccby-gguf",
+  "slug": "mappyzza-sortformer-v2-ccby-gguf",
+  "author": "Mappyzza",
+  "url": "https://huggingface.co/Mappyzza/sortformer-v2-ccby-gguf",
+  "created_at": "2026-11-23T23:42:35.000Z",
+  "updated_at": "2026-11-23T23:49:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "speaker-diarization",
+    "sortformer",
+    "transcribe.cpp",
+    "audio-classification",
+    "fr",
+    "en",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2",
+    "base_model:quantized:nvidia/diar_streaming_sortformer_4spk-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117711368,
+  "parameters_human": "117.7M",
+  "storage_bytes": 236173824,
+  "storage_human": "236 MB",
+  "context_length": null,
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

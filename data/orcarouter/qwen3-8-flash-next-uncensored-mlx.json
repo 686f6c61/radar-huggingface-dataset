@@ -69,29 +69,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
-      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
-      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "OrcaRouter is a production AI gateway: one OpenAI-compatible endpoint with adaptive routing, load balancing, automatic failover, …Read more"
     },
     {
-      "title": "orcarouter/Qwen3.8-27B-Uncensored",
-      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
-      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+      "title": "OrcaRouter — Passerelle IA : routage LLM adaptatif",
+      "url": "https://www.orcarouter.ai/fr",
+      "snippet": "OrcaRouter est une passerelle IA de production : un point d'accès compatible OpenAI avec routage adaptatif, répartition de charge, …Read more"
     },
     {
-      "title": "GitHub - newbdez33/qwen3.8: Qwen3.8-27B-Uncensored-MLX local deployment ...",
-      "url": "https://github.com/newbdez33/qwen3.8",
-      "snippet": "Qwen3.8-27B-Uncensored-MLX local deployment guide for Apple Silicon - newbdez33/qwen3.8"
+      "title": "Welcome to OrcaRouter - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/introduction",
+      "snippet": "OrcaRouter exposes OpenAI, Anthropic, and Gemini surfaces directly, and translates between them when you call across protocols …Read more"
     },
     {
-      "title": "README.md · orcarouter/Qwen3.8-27B-Uncensored-GGUF at main",
-      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF/blob/main/README.md",
-      "snippet": "GGUF conversions of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. These files run in llama.cpp (CPU / CUDA / Metal / ROCm), quantized from 2-bit to 16-bit, with a separate mmproj file ..."
+      "title": "Bienvenue sur OrcaRouter - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/fr/introduction",
+      "snippet": "Routage intelligent Chaînes de repli via extra_body.models, routeurs nommés et orcarouter/auto pour sélectionner le modèle vivant …Read more"
     },
     {
-      "title": "zomiailabs/Qwen3.8-27B-Uncensored-MLX · Hugging Face",
-      "url": "https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX",
-      "snippet": "This repository is a mirror of orcarouter/Qwen3.8-27B-Uncensored-MLX (Apache 2.0), uploaded by Zomi AI Labs for internal deployment. The model files are byte-identical to the source repository."
+      "title": "OrcaRouter Playground — Test 200+ AI models in your browser",
+      "url": "https://www.orcarouter.ai/playground",
+      "snippet": "Try OpenAI, Anthropic, Google and 200+ other models directly in the OrcaRouter playground. No credit card required; compare …Read more"
     }
   ]
 }

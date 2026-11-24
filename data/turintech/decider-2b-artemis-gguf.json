@@ -52,7 +52,7 @@
     {
       "task": "Agreement with the original",
       "dataset": "Final set",
-      "metric": "Same as BF16 (%)",
+      "metric": "Same answer (%)",
       "value": 93.65
     },
     {
@@ -62,7 +62,7 @@
       "value": 0
     },
     {
-      "task": "Agreement with the original",
+      "task": "Typed decisions",
       "dataset": "Final set",
       "metric": "Accuracy (%)",
       "value": 61.15

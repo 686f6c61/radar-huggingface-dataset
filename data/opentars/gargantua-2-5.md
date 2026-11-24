@@ -2,97 +2,102 @@
 
 ## Resumen
 
-Gargantua 2.5 es un modelo afinado por el proyecto openTARS a partir de Gemma 4 E4B (Apache-2.0). Está pensado como el motor principal del asistente openTARS: un agente local capaz de abrir programas, escribir texto, buscar en la web, ejecutar comandos y leer imágenes. El modelo conserva el contrato de 19 herramientas de las versiones anteriores de la familia Gargantua, lo que facilita su integración en flujos de automatización de escritorio.
+Gargantua 2.5 es un modelo de lenguaje multimodal (texto, imagen y audio) desarrollado por MastLLM para el asistente local openTARS. Se trata de un ajuste fino de Gemma 4 E4B (un modelo de Google con arquitectura transformer y licencia Apache-2.0), entrenado sobre datos propios de uso de herramientas y acciones de texto, manteniendo el mismo contrato de 19 herramientas que las versiones anteriores de la familia Gargantua.
 
-El ajuste se realizó sobre datos propios de tool-use y acciones de texto del proyecto openTARS. La primera ejecución de entrenamiento completó una época y 1.949 pasos: los primeros 1.200 en una Colab T4 en fp16 y los 749 restantes en una RTX 3050 de 6 GB en bf16, con las capas del decodificador en 4 bits y excluyendo el 1,8 % de ejemplos más largos (por encima de 2.048 tokens) para que cupiera en la GPU.
+El modelo está pensado para ejecutarse en local, incluso en hardware de consumo: los pesos se distribuyen en formato GGUF con cuantización Q4_K_M (4,9 GB) más un proyector multimodal F16 (0,99 GB). Con 7.463.013.674 parámetros totales, el objetivo declarado del autor es ofrecer un asistente capaz de abrir programas, escribir, buscar en la web, ejecutar comandos y leer imágenes sin depender de la nube.
 
-La distribución se hace en formato GGUF para llama.cpp y Ollama, con un archivo de pesos cuantizado Q4_K_M de 4,9 GB y un proyector multimodal F16 de 0,99 GB para imágenes y audio. Su relevancia actual radica en que ofrece capacidades multimodales y de uso de herramientas en un tamaño que cabe en GPUs de consumo, con licencia Apache-2.0 y despliegue local.
+Su relevancia actual radica en la combinación de tool-use nativo, soporte de visión y audio experimental, y un tamaño que cabe en una GPU de 6 GB o incluso en CPU con 8,6 GB de RAM. El entrenamiento se completó en una sola época (1.949 pasos), parte en una Colab T4 y parte en una RTX 3050 de 6 GB, lo que condiciona tanto sus capacidades como sus limitaciones.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (base Gemma 4 E4B), con proyector para imagen y audio |
-| Parámetros totales | 7.463.013.674 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 8.192 tokens (valor usado en el comando de ejemplo de llama-server) |
-| Tipos de cuantización | Q4_K_M (pesos), F16 (proyector multimodal) |
-| Idiomas soportados | portugués (pt), inglés (en) |
+| Arquitectura | Transformer (derivada de Gemma 4 E4B) con proyector multimodal para vision y audio |
+| Parametros totales | 7.463.013.674 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 8.192 tokens (valor usado en el ejemplo de despliegue con `-c 8192`); el maximo nativo del modelo base no se especifica |
+| Tipos de cuantizacion | Q4_K_M (pesos principales, 4,9 GB) y F16 (proyector multimodal, 0,99 GB); el entrenamiento uso decodificador en 4 bits en la fase final |
+| Idiomas soportados | portugues (pt) e ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (llama.cpp) y artefacto para Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Gemma 4 E4B, un transformer multimodal con proyector para entrada de imagen y audio. El ajuste fino se realizó sobre datos propios del proyecto openTARS centrados en tool-use y acciones de texto, manteniendo el contrato de 19 herramientas de las versiones previas de Gargantua. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El modelo parte de Gemma 4 E4B, un transformer multimodal de Google, y se ajusta mediante fine-tuning supervisado sobre datos propios de MastLLM centrados en tool-use y acciones de texto. No se menciona uso de RLHF ni DPO en la informacion disponible. El entrenamiento consistio en una sola epoca de 1.949 pasos: los primeros 1.200 pasos se ejecutaron en una Colab T4 en fp16 y los 749 restantes en una RTX 3050 de 6 GB en bf16, con las capas del decodificador en 4 bits y excluyendo el 1,8 % de ejemplos mas largos (por encima de 2.048 tokens) para que cupieran en 6 GB de VRAM.
 
-El entrenamiento se completó en una época con 1.949 pasos. La primera fase (1.200 pasos) se ejecutó en una Colab T4 en fp16; la segunda (749 pasos) en una RTX 3050 de 6 GB en bf16, con las capas del decodificador cuantizadas a 4 bits y descartando el 1,8 % de ejemplos más largos de 2.048 tokens. No se documentan innovaciones arquitectónicas adicionales más allá del proyector multimodal heredado del modelo base.
+La innovacion principal no esta en la arquitectura sino en el contrato de herramientas: el modelo mantiene las mismas 19 herramientas que las versiones previas de Gargantua, lo que facilita la integracion con el asistente openTARS. El componente multimodal se implementa mediante un proyector separado (`mmproj`) que permite entrada de imagen y audio a traves de llama.cpp, aunque el propio proyecto marca la entrada de audio como experimental.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional en portugués e inglés.
-- Uso de herramientas (tool calling) con un contrato fijo de 19 herramientas orientado a acciones de escritorio: abrir programas, escribir, buscar en la web y ejecutar comandos.
-- Comprensión de imágenes: lectura y descripción de contenido visual.
-- Entrada de audio: conversión de voz a texto (marcada como experimental en llama.cpp).
-- Acciones de texto: reescritura, resumen, traducción, consultas sobre un texto e ignorar instrucciones ocultas en él.
-- Ejecución local mediante llama.cpp y Ollama.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- Modo de pensamiento desactivable mediante `think=false` en la aplicación openTARS.
+- Generacion de texto conversacional en portugues e ingles.
+- Tool calling / function calling con un contrato fijo de 19 herramientas (abrir programas, escribir, buscar en la web, ejecutar comandos).
+- Acciones de texto: reescritura, resumen, traduccion y respuesta sobre un texto dado.
+- Resistencia parcial a instrucciones ocultas en el texto de entrada (evaluado en sus propias pruebas).
+- Vision: lectura y descripcion de imagenes mediante el proyector multimodal.
+- Audio: transcripcion de peticiones habladas cortas (experimental en llama.cpp).
+- Razonamiento multi-paso orientado a tareas cotidianas dentro del asistente openTARS.
+- Modo de pensamiento desactivable: la aplicacion envia `think=false` para este modelo.
 
 ## Casos de uso
 
-- Asistente de escritorio automatizado: el modelo puede abrir programas, escribir texto y ejecutar comandos mediante su contrato de 19 herramientas, integrándose en la aplicación openTARS para automatizar tareas cotidianas del usuario.
-- Automatización de tareas de texto en local: reescritura, resumen y traducción de documentos con un modelo que cabe en 6 GB de VRAM, adecuado para equipos sin GPU de gama alta.
-- Descripción y consulta de imágenes: lectura de imágenes para responder preguntas sobre su contenido, útil en flujos de accesibilidad o catalogación de archivos visuales.
-- Dictado y transcripción de voz corta: conversión de voz a texto en inglés y portugués para notas breves, con latencias de 2 a 3,5 segundos en CPU según las pruebas del autor.
-- Agente local con búsqueda web: combinación de tool calling y búsqueda para responder consultas que requieren información actualizada, con verificación web añadida por la aplicación.
-- Despliegue en entornos con privacidad estricta: al ejecutarse íntegramente en local vía llama.cpp u Ollama, permite procesar datos sensibles sin enviarlos a servicios externos.
-- Prototipado de agentes con tool-use: el contrato fijo de herramientas y la licencia Apache-2.0 facilitan experimentar con flujos multi-paso y acciones de texto en investigación aplicada.
+- Asistente de escritorio local: el modelo interpreta ordenes en lenguaje natural y las traduce en llamadas a las 19 herramientas disponibles para abrir programas, escribir texto o ejecutar comandos, sin salir de la maquina del usuario.
+- Automatizacion de tareas cotidianas: con una tasa de 47/48 en la prueba portable de 48 tareas y 68/80 en la prueba de 80 tareas, es adecuado para flujos de productividad personal donde la latencia importa mas que la precision absoluta.
+- Procesamiento de documentos con imagenes: puede describir y responder preguntas sobre imagenes capturadas, util para digitalizar notas, capturas o fotografias en un pipeline local.
+- Transcripcion de ordenes por voz: con 6/6 en peticiones habladas cortas (2-3,5 s por peticion en CPU), sirve para interfaces de voz simples en ingles y portugues.
+- Traduccion y resumen en local: las tareas de reescritura, resumen y traduccion obtuvieron 75/76 en las pruebas del autor, lo que lo hace viable para preprocesar texto sin enviar datos a terceros.
+- Despliegue en hardware modesto: con 4,9 GB de pesos en Q4_K_M cabe en una RTX 3050 de 6 GB o en CPU con 8,6 GB de RAM, lo que permite prototipar asistentes en equipos de gama baja.
+- Integracion via Ollama: al publicarse como `ProjectOpenTARS/Gargantua-2.5:latest`, se puede desplegar con un solo comando en entornos de desarrollo y pruebas.
 
 ## Benchmarks y rendimiento
 
-Resultados de las suites de pruebas propias del proyecto openTARS, ejecutadas en una RTX 3050 de 6 GB con la aplicación openTARS y sus atajos desactivados (no son benchmarks públicos):
+Los datos siguientes proceden de las suites de prueba propias de openTARS, ejecutadas en una RTX 3050 de 6 GB el 13 de noviembre de 2026. No son benchmarks publicos ni comparables con MMLU, HumanEval o GSM8K.
 
 | Prueba | Resultado |
 |---|---|
-| Elección de herramienta (21 casos) | 21/21; 1,2 s por petición en GPU, 3,1 s en CPU |
-| Acciones de texto (reescritura, resumen, traducción, consulta, ignorar instrucciones ocultas) | 75/76 |
-| Respuestas inventadas o erróneas en 48 preguntas (modelo solo / dentro de la app) | 6 / 7 |
-| Prueba portátil openTARS (48 tareas cotidianas) | 47/48 |
+| Eleccion de herramienta (21 casos) | 21/21; 1,2 s por peticion en GPU, 3,1 s en CPU |
+| Acciones de texto (reescribir, resumir, traducir, preguntar, ignorar instrucciones ocultas) | 75/76 |
+| Respuestas inventadas o erroneas en 48 preguntas (modelo solo / dentro de la app) | 6 / 7 |
+| Prueba portable openTARS (48 tareas cotidianas) | 47/48 |
 | Prueba openTARS de 80 tareas | 68/80 |
-| Voz a texto, 6 peticiones cortas (3 en inglés, 3 en portugués, voces sintéticas), solo CPU | 6/6; 2 a 3,5 s cada una |
+| Voz a texto, 6 peticiones cortas (3 en ingles, 3 en portugues, voces sinteticas), solo CPU | 6/6; 2 a 3,5 s cada una |
 
-Rendimiento en CPU (llama.cpp b12032, 16 hilos, medido sobre una exportación anterior del mismo modelo): 1,4 s para una respuesta corta, 3,9 s para responder sobre una imagen, 14,1 s para un prompt de 1.200 tokens y 8,6 GB de RAM.
+Rendimiento en CPU (llama.cpp b12032, 16 hilos, medido sobre una exportacion anterior del mismo modelo): 1,4 s para una respuesta corta, 3,9 s para responder sobre una imagen, 14,1 s para un prompt de 1.200 tokens, con 8,6 GB de RAM.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 6 GB para el archivo Q4_K_M (4,9 GB) más el proyector F16 (0,99 GB); el autor confirma que el entrenamiento cupo en una RTX 3050 de 6 GB.
-- GPU recomendadas: RTX 3050 de 6 GB como mínimo validado; GPUs con 8 GB o más (RTX 3060, 4060, 4070) ofrecen mayor margen. Para mayor throughput, A100 o H100 no están documentadas en la información disponible.
-- Cabe en GPU de consumo: sí, al menos en RTX 3050 de 6 GB.
+- VRAM estimada: aproximadamente 6 GB para cargar el GGUF Q4_K_M (4,9 GB) mas el proyector F16 (0,99 GB) con algo de margen para el contexto.
+- GPU recomendadas: RTX 3050 de 6 GB (probada por el autor), RTX 3060/4060 de 8 GB o superiores; A100 y H100 funcionan pero estan sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: si, al menos en tarjetas con 6 GB o mas de VRAM en cuantizacion Q4_K_M.
+- Alternativa en CPU: funciona con 8,6 GB de RAM y 16 hilos, con latencias de 1,4 a 14,1 s segun la tarea.
 - Opciones de despliegue: llama.cpp (`llama-server`, probado con build b12032) y Ollama (`ProjectOpenTARS/Gargantua-2.5:latest`).
-- Latencia y throughput: 1,2 s por petición de tool-call en GPU y 3,1 s en CPU; 1,4 s para respuesta corta en CPU; 3,9 s para consulta sobre imagen en CPU; 14,1 s para prompt de 1.200 tokens en CPU. Consumo de 8,6 GB de RAM en CPU.
+- Parametros de muestreo recomendados: temperatura 0,4, top_p 0,95, top_k 64.
+- Latencia y throughput: 1,2 s por peticion de herramienta en GPU y 3,1 s en CPU; no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+No se dispone de datos publicos de benchmarks que permitan una comparacion rigurosa con alternativas. La siguiente tabla recoge solo los datos disponibles del propio modelo y referencias generales de su modelo base.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Gargantua 2.5 | 7.463.013.674 | 8.192 tokens | Apache-2.0 | GGUF | Ajuste de Gemma 4 E4B con tool-use y multimodal |
-| Gemma 4 E4B (base) | no disponible | no disponible | Apache-2.0 | no disponible | Modelo base sin ajuste de tool-use específico |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparación en la información proporcionada |
+| Gargantua 2.5 | 7.463.013.674 | 8.192 (usado en despliegue) | Apache-2.0 | GGUF, Ollama | Fine-tune de Gemma 4 E4B con tool-use y vision/audio |
+| Gemma 4 E4B (base) | no disponible en la informacion | no disponible | Apache-2.0 | safetensors, GGUF | Modelo original de Google sin el ajuste de herramientas |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos comparativos |
 
 ## Limitaciones y advertencias
 
-- Es débil señalando elementos pequeños de interfaz por posición: 0 de 40 en la prueba de pantalla del autor; no fue entrenado con capturas de pantalla.
-- El audio solo se probó con frases sintéticas cortas; no se han medido voces reales, ruido ni grabaciones largas, y llama.cpp marca la entrada de audio como experimental.
-- Las tareas de editor de texto y las de "mirar este archivo de imagen" fallan a veces en la prueba de 80 tareas (68/80).
-- Puede equivocarse en datos factuales: 6 respuestas inventadas o erróneas de 48 preguntas en el modelo solo y 7 dentro de la app.
-- Idiomas limitados a portugués e inglés; no se documenta soporte de castellano.
-- Riesgo de alucinación presente; la aplicación openTARS añade avisos y comprobaciones web para mitigarlo.
-- Licencia Apache-2.0 permite uso comercial, pero se recomienda verificar los términos del modelo base Gemma 4 E4B.
-- El contexto de 8.192 tokens limita tareas con documentos largos; el entrenamiento excluyó ejemplos de más de 2.048 tokens.
+- Debil en la localizacion de elementos pequenos de interfaz por posicion: 0 de 40 en la prueba de pantalla del autor; no fue entrenado con capturas de pantalla y la app openTARS hace clic por nombres de accesibilidad.
+- El audio solo se ha probado con frases sinteticas cortas; no hay mediciones con voces reales, ruido ni grabaciones largas, y llama.cpp marca la entrada de audio como experimental.
+- Las tareas de editor de texto y las de "mirar este archivo de imagen" fallan en ocasiones en la prueba de 80 tareas (68/80).
+- Riesgo de alucinacion: se registraron 6 respuestas inventadas o erroneas de 48 preguntas con el modelo solo y 7 dentro de la app; la aplicacion anade avisos y comprobaciones web.
+- Cobertura linguistica limitada a portugues e ingles; no se declara soporte de castellano.
+- Entrenamiento de una sola epoca y con parte de los ejemplos largos excluidos, lo que puede limitar el rendimiento en prompts extensos.
+- Licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Gemma 4 E4B y de los datos de entrenamiento propios de MastLLM antes de desplegarlo en produccion.
+- No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K); las cifras disponibles son pruebas internas del autor y no comparables con terceros.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/OpenTARS/Gargantua-2.5
-- Proyecto openTARS: https://project-opentars.github.io/OpenTARS/
+- Modelo en Hugging Face: https://huggingface.co/OpenTARS/Gargantua-2.5
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it
-- Ollama: `ProjectOpenTARS/Gargantua-2.5:latest`
+- Perfil del autor en Hugging Face: https://huggingface.co/Mast-LLM
+- Pagina del proyecto openTARS: https://mastllm.github.io/OpenTARS/
+- Version en Ollama: `ProjectOpenTARS/Gargantua-2.5:latest`

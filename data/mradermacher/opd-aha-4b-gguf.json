@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/YAM-AI-4B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/YAM-AI-4B-GGUF",
-      "snippet": "If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files."
-    },
-    {
-      "title": "translategemma-4b-it-GGUF huggingface.co api & mradermacher translategemma-4b-it-GGUF github AI Model - Toolify",
-      "url": "https://www.toolify.ai/ai-model/mradermacher-translategemma-4b-it-gguf",
-      "snippet": "translategemma-4b-it-GGUF huggingface.co Url & mradermacher translategemma-4b-it-GGUF github link, click to try the AI model(translategemma-4b-it-GGUF) demo, you can see the example of translategemma-4b-it-GGUF huggingface.co Model."
-    },
-    {
-      "title": "AI Model Catalog | Microsoft Foundry Models",
-      "url": "https://ai.azure.com/catalog/models/mradermacher-msmarco-bert-base-dot-v5-gguf",
-      "snippet": "mradermacher-msmarco-bert-base-dot-v5-gguf · Version: 1 · HuggingFace•Last updated May 2025 · OverviewBenchmarksBenchmarks · mradermacher/msmarco-bert-base-dot-v5-GGUF powered by Hugging Face Inference Toolkit · Original Model Card · feature-extraction Task on Hugging Face ·"
-    },
-    {
-      "title": "mradermacher/scout-4b-GGUF Free Chat Online - skywork.ai - Skywork ai",
-      "url": "https://skywork.ai/blog/models/mradermacher-scout-4b-gguf-free-chat-online-skywork-ai/",
-      "snippet": "The mradermacher/scout-4b-GGUF is a quantized large language model with 4 billion parameters, specifically optimized for efficient local inference on consumer-grade hardware."
-    },
-    {
-      "title": "mradermacher/Ares-4B-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Ares-4B-i1-GGUF",
-      "snippet": "See https://huggingface.co/mradermacher/model_requests for some answers to questions you might have and/or if you want some other model quantized."
-    }
-  ]
+  "sources": []
 }

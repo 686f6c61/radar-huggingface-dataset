@@ -2,91 +2,108 @@
 
 ## Resumen
 
-Inkling-2-Mini es un modelo de mezcla de expertos (MoE) de 26.070.385.152 parámetros totales desarrollado por Thinking Machines, del que AtomicChat publica una conversión a formato GGUF para su uso con llama.cpp. El modelo acepta entrada de texto e imagen (pipeline image-text-to-text) y emplea una arquitectura poco habitual: un núcleo con bucles en el que las 12 capas centrales de las 24 totales se ejecutan tres veces, lo que incrementa la profundidad efectiva del cómputo sin aumentar el número de parámetros. De los 26,4B de parámetros, solo 3,4B están activos por token, gracias a 128 expertos con 8 activos por capa.
+Inkling-2-Mini es un modelo de mezcla de expertos (MoE) de 26.070 millones de parámetros totales con 3.400 millones activos por token, desarrollado por Thinking Machines. Combina entrada de texto e imagen y emplea una arquitectura poco habitual: un núcleo con bucles en el que las 12 capas centrales de un total de 24 se ejecutan tres veces, lo que da lugar a 48 pasadas de capa efectivas. Esta ficha describe la versión GGUF publicada por AtomicChat, pensada para inferencia local con llama.cpp.
 
-La relevancia de esta publicación es doble. Por un lado, pone a disposición de la comunidad un modelo multimodal con licencia Apache-2.0 en cuantizaciones que van desde BF16 (52,2 GB) hasta Q4_K_M (17,4 GB), lo que permite ejecutarlo en hardware de consumo. Por otro, requiere una versión específica de llama.cpp (el PR ggml-org/llama.cpp#32695, en borrador en el momento de la publicación) porque las versiones estables no cargan correctamente la arquitectura con bucles del modelo.
+La relevancia de esta publicación reside en el trabajo de cuantización: AtomicChat distribuye ficheros con tipos por tensor (denominados AD, Atomic Dynamic) y una matriz de importancia propia, con métricas de fidelidad frente al BF16 original medidas con `llama-perplexity --kl-divergence`. Los resultados permiten elegir un fichero de 4 bits que retiene el 96,3 % de coincidencia en el token top-1 con solo 16,53 GB en disco, frente a los 52,2 GB del BF16.
 
-El repositorio incluye además el proyector de visión en F16 y BF16 (0,64 GB) necesario para el procesamiento de imágenes, y el autor anuncia cuantizaciones dinámicas (AD) con matriz de importancia para el rango de 10 a 24 GB.
+El modelo base lo distribuye el proveedor en NVFP4 y MXFP8; el BF16 de referencia de este repositorio es esa checkpoint desquantizada. La licencia es Apache-2.0 tanto en el modelo base como en esta cuantización.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con nucleo en bucle (looped core); 24 capas, de las cuales las 12 centrales se ejecutan 3 veces |
-| Parametros totales | 26.070.385.152 (26,4B) |
-| Parametros activos | 3,4B (128 expertos, 8 activos por capa) |
-| Longitud de contexto | no disponible (el ejemplo de ejecucion usa `-c 32768`) |
-| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M; proyectores de vision en F16 y BF16 |
-| Idiomas soportados | no disponible (la model card menciona una respuesta de prueba en chino) |
+| Arquitectura | Transformer MoE con núcleo en bucle (looped core); 24 capas, las 12 centrales ejecutadas 3 veces (48 pasadas efectivas) |
+| Parametros totales | 26.070.385.152 (26,07 B) |
+| Parametros activos | 3,4 B (128 expertos, 8 activos por token) |
+| Longitud de contexto | no disponible (solo se indica que 4 de las 24 capas usan atención completa y el resto una ventana de 1024 tokens) |
+| Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, y variantes AD: Q6_K, Q5_K, Q4_K, IQ4_XS, IQ3_S, IQ3_XXS, IQ2_S, IQ2_XXS, IQ2_M, IQ2_XXS-Q2, IQ1_M, IQ1_S |
+| Idiomas soportados | no disponible (el corpus de calibración cubre 30 idiomas, pero no se publica la lista de idiomas soportados) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); checkpoint original del proveedor en NVFP4/MXFP8 |
+| Formato de pesos | GGUF (llama.cpp); proyector de visión en GGUF F16/BF16/Q8_0; BF16 de referencia en 2 partes |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de mezcla de expertos con 24 capas y un diseño de "núcleo en bucle": las 12 capas intermedias se aplican tres veces en secuencia, de modo que el cómputo efectivo equivale a 48 pasadas de capa con solo 24 bloques de parámetros. Cada capa enruta los tokens hacia 128 expertos, de los cuales se activan 8, lo que resulta en 3,4B de parámetros activos sobre un total de 26,4B. El modelo procesa tanto texto como imágenes mediante un proyector de visión independiente que se distribuye como archivo GGUF aparte.
+El modelo es un transformer de mezcla de expertos con 128 expertos y 8 activos por token, sobre un total de 26,07 B de parámetros y 3,4 B activos. Su rasgo diferencial es el núcleo en bucle: de las 24 capas, las 12 centrales se recorren tres veces, de modo que el cómputo efectivo equivale a 48 pasadas de capa. Solo 4 de las 24 capas emplean atención completa; el resto utiliza una ventana de 1024 tokens, lo que mantiene pequeño el coste de la caché KV. El modelo acepta entrada de texto e imagen mediante un proyector de visión independiente (`mmproj-Inkling-2-Mini-*.gguf`).
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF, DPO u otras) en la información proporcionada. La model card de AtomicChat indica que los archivos BF16 se obtuvieron desquantizando el checkpoint del proveedor, originalmente en NVFP4/MXFP8. Una particularidad técnica relevante para la cuantización es que la proyección descendente de los expertos tiene filas de 1152 elementos, un tamaño que los k-quants de llama.cpp no admiten; por ello la herramienta sustituye el tipo en esa capa: Q8_0 en las 24 capas de Q6_K, Q8_0 en la mitad de las capas y Q5_1 en el resto para Q5_K_M, y Q8_0 con Q5_0 para Q4_K_M.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. El proveedor distribuye los pesos en NVFP4 y MXFP8, y el BF16 de referencia de este repositorio se obtiene desquantizando esa checkpoint. La cuantización de AtomicChat emplea una matriz de importancia calculada con 4,76 M tokens del corpus de calibración renderizados con la plantilla de chat del modelo, en 6 fragmentos; dos se procesaron en BF16 y cuatro en Q8_0 por falta de GPU libre con capacidad para los 52 GB del BF16. Los expertos concentran el 94 % de los pesos y absorben la compresión, mientras que la atención y los controladores del bucle se mantienen en Q8_0. Además, se ofrece un drafter opcional DSpark para decodificación especulativa.
 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno.
-- Procesamiento de imágenes (image-text-to-text) mediante el proyector de visión incluido.
-- Razonamiento configurable mediante el parámetro `reasoning_effort` de la plantilla de chat, con seis niveles: `none`, `minimal`, `low`, `medium`, `high` y `xhigh` (valor por defecto 0.9).
-- Llamada a herramientas (tool calling), verificada por el autor con `--jinja` en llama-server.
-- Capacidad multilingüe, al menos parcial: se ha probado una respuesta en chino.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- No se dispone de información sobre capacidades de audio ni sobre soporte de agentes multi-paso más allá del tool calling.
+- Entrada de imagen junto con texto (pipeline `image-text-to-text`), mediante el proyector `mmproj`.
+- Razonamiento y respuesta a instrucciones en formato chat.
+- Capacidades multilingües: el corpus de calibración de la cuantización cubre 30 idiomas, aunque no se detalla el conjunto de idiomas soportados por el modelo.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Ejecución local offline mediante llama.cpp.
+- No se documenta en la información disponible soporte explícito de tool calling, function calling ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Asistente local con imágenes: el modelo puede responder preguntas sobre capturas de pantalla, diagramas o fotografías usando el proyector F16 (0,64 GB) junto con la cuantización Q4_K_M (17,4 GB), lo que lo hace viable en una GPU de consumo de 24 GB.
-- Chat de escritorio offline: integrable en aplicaciones que ejecutan modelos localmente, como la propia Atomic Chat, gracias al formato GGUF y a la licencia Apache-2.0 sin restricciones de uso comercial.
-- Automatización con herramientas: el soporte de tool calling verificado permite construir asistentes que consulten APIs o ejecuten funciones, con el nivel de razonamiento ajustable según la latencia tolerada.
-- Análisis de documentos con componentes visuales: gráficos, tablas escaneadas o interfaces de usuario pueden enviarse como imagen junto con instrucciones de texto para extraer información estructurada.
-- Razonamiento con presupuesto de cómputo variable: el parámetro `reasoning_effort` permite usar `low` o `minimal` en tareas simples y `high` o `xhigh` en problemas que requieran cadenas de razonamiento largas, equilibrando coste y calidad.
-- Despliegue en servidores modestos: con Q4_K_M (17,4 GB) o Q5_K_M (19,8 GB) puede servirse mediante llama-server en una única GPU de 24 GB, con contexto configurable hasta 32768 tokens en el ejemplo del autor.
-- Experimentación e investigación: al ser Apache-2.0 y estar disponible en múltiples cuantizaciones, sirve para estudiar el comportamiento de arquitecturas MoE con bucles y para comparar su calidad frente a transformers convencionales del mismo tamaño.
+- Asistente conversacional local: con 3,4 B de parámetros activos y ficheros desde 16,53 GB en 4 bits, el modelo puede ejecutarse en una estación de trabajo con una sola GPU consumer de gama alta y mantener conversaciones multi-turno sin conexión.
+- Análisis de documentos con imágenes: la entrada image-text-to-text permite adjuntar capturas, diagramas o páginas escaneadas junto a una pregunta en texto, con el proyector Q8_0 de 0,35 GB para minimizar el coste de VRAM.
+- Despliegue en equipos con VRAM limitada: las variantes IQ2 e IQ1 (desde 6,88 GB) permiten probar el modelo en GPUs de 8-12 GB, aceptando la pérdida de fidelidad documentada (top-1 del 79,5 % en IQ1_S).
+- Prototipado de aplicaciones de visión y lenguaje: al estar en GGUF y ser compatible con llama.cpp, se integra en herramientas de escritorio como Atomic Chat o en scripts propios sin depender de servicios en la nube.
+- Evaluación de técnicas de cuantización: el repositorio de métricas (`AtomicChat/Inkling-2-Mini-GGUF-metrics`) permite reproducir la comparación entre presets de llama.cpp y recetas AD por tensor.
+- Generación asistida en local con decodificación especulativa: el drafter DSpark opcional está pensado para acelerar la inferencia en configuraciones compatibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente proporciona métricas de fidelidad de la cuantización frente al BF16 de referencia, medidas con `llama-perplexity --kl-divergence` sobre un corpus neutro de 30 idiomas con 87 fragmentos de 4096 tokens:
+
+| Fichero | Tamano (GB) | Top-1 | KLD media |
+|---|---:|---:|---:|
+| BF16 (referencia, 2 partes) | 52,2 | — | — |
+| Q8_0 | 27,74 | 97,7 % | 0,0033 |
+| AD-Q6_K | 23,79 | 97,6 % | 0,0037 |
+| Q6_K (preset) | 23,40 | 97,3 % | 0,0047 |
+| Q5_K_M (preset) | 19,81 | 96,3 % | 0,0079 |
+| AD-Q5_K | 19,07 | 97,1 % | 0,0052 |
+| Q4_K_M (preset) | 17,38 | 94,7 % | 0,0165 |
+| AD-Q4_K | 16,53 | 96,3 % | 0,0080 |
+| AD-IQ4_XS | 15,00 | 95,8 % | 0,0101 |
+| AD-IQ3_S | 13,34 | 94,2 % | 0,0205 |
+| AD-IQ3_XXS | 12,58 | 93,3 % | 0,0271 |
+| AD-IQ2_S | 11,56 | 91,3 % | 0,047 |
+| AD-IQ2_XXS | 10,43 | 88,5 % | 0,084 |
+| AD-IQ2_M | 8,67 | 85,7 % | 0,130 |
+| AD-IQ2_XXS-Q2 | 7,90 | 84,3 % | 0,158 |
+| AD-IQ1_M | 7,26 | 81,1 % | 0,236 |
+| AD-IQ1_S | 6,88 | 79,5 % | 0,278 |
+
+El propio autor señala que el techo de fidelidad es del 97-98 % (incluso Q8_0 solo coincide con el token top-1 del BF16 el 97,7 % de las veces), posiblemente por la acumulación de redondeo a lo largo de las 48 pasadas del bucle; no se ha verificado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 52,2 GB para BF16, 27,7 GB para Q8_0, 23,4 GB para Q6_K, 19,8 GB para Q5_K_M y 17,4 GB para Q4_K_M, más 0,64 GB del proyector de visión si se usa entrada de imagen. Hay que añadir la memoria para la caché KV según la longitud de contexto.
-- GPU recomendadas: A100 80 GB o H100 para BF16; A100 40 GB, L40S o RTX 6000 Ada para Q8_0; RTX 4090 (24 GB) o RTX 3090 para Q5_K_M y Q4_K_M.
-- Cabe en GPU de consumo: sí, en tarjetas de 24 GB con Q4_K_M o Q5_K_M; las cuantizaciones AD anunciadas para el rango de 10 a 24 GB ampliarán las opciones.
-- Opciones de despliegue: llama.cpp compilado desde el PR ggml-org/llama.cpp#32695 (commit `6196d98`), con `llama-server` y la opción `--jinja`; no funciona con versiones estables de llama.cpp que no incluyan dicho PR. No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- VRAM estimada: tamaño del fichero más la caché KV más aproximadamente 1 GB de buffers. La caché KV es reducida porque solo 4 de 24 capas usan atención completa y el resto una ventana de 1024 tokens.
+- Rango práctico: desde unos 8 GB (AD-IQ1_S, 6,88 GB) hasta unos 28-29 GB (Q8_0, 27,74 GB); el BF16 requiere más de 52 GB.
+- GPU consumer: los ficheros AD-Q4_K (16,53 GB) y AD-IQ4_XS (15,00 GB) caben en GPUs de 24 GB; las variantes IQ3 e IQ2 permiten bajar a 12-16 GB.
+- GPU profesionales: las mediciones de la model card se realizaron en H100 y A10.
+- Opciones de despliegue: llama.cpp (builds recientes; algunas variantes requieren versiones concretas, ver limitaciones), Atomic Chat y cualquier frontend compatible con GGUF.
 - Latencia y throughput: no disponibles.
+- Nota de compatibilidad: los ficheros Q5_K_M y Q4_K_M con preset de llama.cpp siguen el layout del PR #32695 y no cargan en la build b12600.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Inkling-2-Mini | 26,4B | 3,4B | no disponible | Apache-2.0 | GGUF, NVFP4/MXFP8 |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no está disponible. A modo de referencia estructural, este modelo se sitúa en la categoría de MoE de ~26 B totales con ~3,4 B activos y entrada multimodal, con licencia Apache-2.0 y pesos en GGUF, lo que facilita su despliegue local frente a alternativas de mayor tamaño o con licencias más restrictivas.
 
 ## Limitaciones y advertencias
 
-- Requiere una compilación específica de llama.cpp (PR #32695, en borrador al publicarse); las versiones estables no cargan la arquitectura con bucles.
-- El nivel `none` de `reasoning_effort` no desactiva por completo el razonamiento, según advierte el propio proveedor.
-- La cuantización k-quant no puede representar directamente las filas de 1152 de la proyección descendente de los expertos, por lo que llama.cpp sustituye tipos y la calidad de los presets Q6_K, Q5_K_M y Q4_K_M puede diferir de la esperada por su nombre; el autor aún no ha publicado métricas de KLD frente a BF16.
-- No hay información sobre sesgos, tasas de alucinación ni evaluación de seguridad del modelo.
-- La cobertura de idiomas no está documentada; solo se ha verificado una respuesta en chino.
-- No se dispone de datos sobre el entrenamiento (tokens, composición del dataset, alineación), lo que limita la evaluación de riesgos.
-- La licencia Apache-2.0 permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar el archivo LICENSE del repositorio y la licencia del modelo base.
-- Existe una variante sin censura en preparación (AtomicChat/Inkling-2-Mini-Uncensored-GGUF), lo que sugiere que el modelo base incorpora algún tipo de alineación de seguridad no detallada.
+- El techo de fidelidad de la cuantización es del 97-98 % en top-1 frente al BF16; no se alcanza una coincidencia superior ni siquiera en Q8_0.
+- Los ficheros de 1 y 2 bits pierden calidad de forma acusada (top-1 del 79,5 % en IQ1_S y KLD de 0,278); solo son adecuados cuando no cabe nada mayor.
+- Los presets Q5_K_M y Q4_K_M no cargan en la build b12600 de llama.cpp por el layout del PR #32695.
+- No se publica la lista de idiomas soportados ni el contexto máximo del modelo; el uso multilingüe más allá de los 30 idiomas del corpus de calibración no está verificado.
+- No se documentan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad.
+- El modelo base se distribuye en NVFP4 y MXFP8; el BF16 de referencia es una desquantización, no el checkpoint original en precisión completa.
+- La matriz de importancia se calculó parcialmente sobre Q8_0 (cuatro de seis fragmentos) en lugar de BF16, lo que puede introducir un sesgo menor en las recetas de cuantización.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar el fichero LICENSE del repositorio y las condiciones del modelo base.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/AtomicChat/Inkling-2-Mini-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Variante sin censura (en progreso): https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF
-- PR de llama.cpp necesario: https://github.com/ggml-org/llama.cpp/pull/32695
-- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- Aplicación Atomic Chat: https://atomic.chat/
+- Métricas de cuantización: https://huggingface.co/datasets/AtomicChat/Inkling-2-Mini-GGUF-metrics
+- Guía de ejecución local: https://atomic.chat/blog/guides/how-to-run-inkling-2-mini-locally
+- Atomic Chat: https://atomic.chat/
 - GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
 - Discord: https://discord.gg/8wGSsvmg4V
 - X (Twitter): https://x.com/atomic_chat_hq

@@ -2,102 +2,108 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8-dynamic es una cuantización en FP8 dinámico del modelo Qwen/Qwen3.8-27B, publicada por AzatAI como una release comunitaria. El objetivo principal es permitir el despliegue eficiente en GPUs de arquitectura Ada (SM 8.9, como RTX 4090, L40S o RTX 6000 Ada), donde el formato FP8 block-128 utilizado en la versión oficial de Qwen no dispone de kernels CUTLASS optimizados y cae a implementaciones Triton más lentas. Al usar escalas per-channel para pesos y per-token dinámicas para activaciones, este checkpoint aprovecha el kernel `CutlassFP8ScaledMMLinearKernel` en Ada, Hopper y Blackwell.
+Qwen3.8-27B-FP8-dynamic es una cuantización comunitaria en FP8 del modelo multimodal Qwen/Qwen3.8-27B, publicada por el usuario AzatAI. No se trata de un lanzamiento oficial de Qwen, sino de una conversión de pesos realizada con LLM Compressor 0.13.0 en formato `compressed-tensors`, pensada para reducir el espacio en disco de 55,6 GB (BF16) a unos 30 GB y permitir el despliegue del modelo completo, con caché KV en FP8 y la totalidad de su ventana de contexto de 262.144 tokens, en una única GPU de 48 GB.
 
-El modelo base es un transformer multimodal de la serie Qwen3.5 con atención híbrida: combina capas de atención completa con capas de atención lineal Gated DeltaNet, e incorpora un codificador de visión, por lo que el pipeline es `image-text-to-text`. Tiene aproximadamente 27.800 millones de parámetros y un tamaño en disco de unos 37 GB. La cuantización se realizó con LLM Compressor 0.13.0 sin necesidad de datos de calibración, y se conservan en BF16 las proyecciones de Gated DeltaNet, el codificador visual, embeddings, `lm_head` y la cabeza MTP (Multi-Token Prediction) para mantener la decodificación especulativa.
+El modelo subyacente es un transformer híbrido de la familia Qwen3.5 (identificador de arquitectura `qwen3_5`), con 27.781.427.952 parámetros totales y pipeline `image-text-to-text`, lo que implica capacidades de visión además de texto. La cuantización aplica FP8 E4M3 con escalas por canal en los pesos y escalas dinámicas por token en las activaciones, manteniendo en BF16 el codificador visual, los embeddings, el `lm_head` y la cabeza MTP (multi-token prediction) que habilita la decodificación especulativa.
 
-La relevancia de este modelo radica en que ofrece una alternativa práctica para ejecutar un LLM de 27B con capacidades multimodales, razonamiento (thinking mode), tool calling y generación de código en hardware de gama media-alta, con un rendimiento medido de hasta 103 tokens por segundo en tareas de código bajo decodificación especulativa en 2x RTX 6000 Ada.
+Su relevancia práctica radica en la elección del esquema de cuantización: frente al FP8 block-128 del checkpoint oficial, que en vLLM requiere SM90 o superior para usar los kernels CUTLASS o DeepGEMM, el esquema por canal con activaciones dinámicas funciona sobre Ada (SM 8.9), incluyendo RTX 4090, RTX 6000 Ada y L40S, además de Hopper y Blackwell. Esto lo convierte en una opción útil para equipos con GPUs profesionales de generación Ada que quieran servir un modelo multimodal de 27B con contexto largo en hardware relativamente asequible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 (transformer híbrido: full attention + Gated DeltaNet linear attention, vision encoder, MTP head) |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (probado con prompts de 36k tokens) |
-| Tipos de cuantizacion | FP8 dinámico (E4M3) per-channel para pesos, per-token para activaciones; capas seleccionadas en BF16 |
-| Idiomas soportados | no disponible (el modelo base Qwen3.8-27B es multilingüe, pero no se especifica la lista) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (compressed-tensors) |
+| Arquitectura | Transformer híbrido `qwen3_5` con Gated DeltaNet (atención lineal) y capas de atención estándar; incluye codificador visual y cabeza MTP |
+| Parametros totales | 27.781.427.952 (27,78B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | FP8 E4M3 con escalas por canal en pesos y escalas dinámicas por token en activaciones; capas en BF16: codificador visual, `embed_tokens`, `lm_head`, cabeza MTP y proyecciones de compuerta `in_proj_a` / `in_proj_b` de Gated DeltaNet |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 (heredada del modelo base, archivo LICENSE incluido sin cambios) |
+| Formato de pesos | safetensors en formato `compressed-tensors`; incluye `model_mtp.safetensors`; tamaño del repo 67,2 GB, pesos en disco ~30 GB |
 
 ## Arquitectura y entrenamiento
 
-Este checkpoint no es un modelo entrenado desde cero, sino una cuantización del modelo base Qwen/Qwen3.8-27B. La arquitectura subyacente corresponde a la serie Qwen3.5: un transformer con atención híbrida donde una parte de las capas usa atención completa (full attention) y otra parte usa Gated DeltaNet, una variante de atención lineal que reduce el coste computacional en secuencias largas. Además, el modelo incluye un codificador de visión (por eso el pipeline es `image-text-to-text`) y una cabeza MTP que permite decodificación especulativa de múltiples tokens.
+La arquitectura corresponde al modelo base Qwen/Qwen3.8-27B: un transformer híbrido de la familia `qwen3_5` que combina capas de atención con capas Gated DeltaNet (atención lineal con estado recurrente). El checkpoint cuantizado conserva esa estructura y cuantiza únicamente los módulos `Linear` dentro de los bloques del transformer; las proyecciones `in_proj_qkv`, `in_proj_z` y `out_proj` de Gated DeltaNet pasan a FP8, mientras que las pequeñas compuertas `in_proj_a` e `in_proj_b` permanecen en BF16, replicando la partición del FP8 oficial de Qwen. También se mantienen en BF16 el codificador visual, `embed_tokens`, `lm_head` y los tensores `mtp.*`, lo que preserva la posibilidad de decodificación especulativa.
 
-La cuantización se realizó con LLM Compressor 0.13.0 mediante el modificador `QuantizationModifier` con esquema `FP8_DYNAMIC`. Se cuantizaron únicamente los módulos `Linear` dentro de los bloques transformer, con escalas per-channel para los pesos y escalas per-token dinámicas para las activaciones. Se excluyeron explícitamente de la cuantización las proyecciones de `linear_attn` (Gated DeltaNet), el codificador visual, `embed_tokens`, `lm_head`, las puertas de los MLP (`mlp.gate` y `shared_expert_gate`) y la cabeza MTP, que se mantienen en BF16. Este esquema no requiere datos de calibración, lo que simplifica el proceso de creación.
-
-El proceso de cuantización se ejecutó en CPU, con aproximadamente 250 GB de RAM para manejar los 55,6 GB del modelo original en BF16. La cabeza MTP se copió sin cambios desde el checkpoint base, lo que permite que vLLM la utilice como drafter para decodificación especulativa.
+El proceso de cuantización se realizó con LLM Compressor 0.13.0 aplicando el esquema `FP8_DYNAMIC`, que no requiere datos de calibración, y se ejecutó en CPU (el autor indica que ~250 GB de RAM es un margen cómodo para el origen BF16 de 55,6 GB). No se dispone de información sobre el dataset de entrenamiento del modelo base, el número de tokens, ni si hubo fases de RLHF o DPO; esos datos no están incluidos en la información proporcionada. La innovación técnica destacable de esta ficha es la elección de FP8 por canal frente a block-128 para habilitar los kernels CUTLASS FP8 en SM 8.9 (Ada) con CUDA 12.4 o superior, según la referencia al código de vLLM v0.19.0 (`cutlass_scaled_mm_supports_fp8` frente a `cutlass_scaled_mm_supports_block_fp8`).
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo con modo "thinking" activable por petición (desactivado por defecto en el despliegue recomendado).
-- Generación de código y soporte de tool calling / function calling mediante el parser `qwen3_coder`.
-- Capacidades multimodales: acepta entradas de imagen y texto (pipeline `image-text-to-text`), aunque la cuantización no afecta al codificador visual.
-- Decodificación especulativa con MTP (Multi-Token Prediction) integrada, que acelera la generación sin necesidad de un drafter externo.
-- Soporte de agentes y multi-step reasoning gracias a la combinación de tool calling y modo thinking.
-- Capacidades multilingües heredadas del modelo base, aunque no se ha publicado una lista oficial de idiomas para este checkpoint.
-- Compatibilidad con vLLM para despliegue en producción, incluyendo prefix caching y tensor parallelism.
+- Generación de texto conversacional multi-turno, con plantilla de chat propia y modo de razonamiento (thinking) activado por defecto en la plantilla, desactivable por petición.
+- Comprensión de imágenes y texto combinados (pipeline `image-text-to-text`), con codificador visual mantenido en BF16.
+- Generación de código: el autor reporta 96,3 en HumanEval y 91,5 en HumanEval+ con decodificación greedy y thinking desactivado.
+- Tool calling / function calling: soportado en vLLM mediante `--enable-auto-tool-choice` y el parser `qwen3_coder`; el autor verifica que una llamada a herramienta con entrada visual pasa.
+- Razonamiento multi-paso y agentes: compatible con el parser de razonamiento `qwen3` y con decodificación especulativa MTP, que acelera cargas de generación de código (hasta 103 tok/s en TP=2 según las mediciones del autor).
+- Recuperación en contexto largo: el autor reporta una prueba correcta de recuperación de una línea concreta en un prompt de 224.071 tokens.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en entornos de desarrollo: el modelo puede integrarse en IDEs o pipelines de CI/CD para generar, revisar y completar código. Su soporte de tool calling permite conectarlo a ejecutores de pruebas o repositorios, y la decodificación especulativa con MTP reduce la latencia en tareas de autocompletado (medido a 103 tok/s en una tarea de pytest con 2x RTX 6000 Ada).
-- Atención al cliente automatizada con contexto largo: gracias a la ventana de contexto amplia (probada con prompts de 36k tokens) y al modo thinking, puede gestionar conversaciones multi-turno complejas, manteniendo el historial y razonando sobre la intención del usuario. El despliegue con vLLM y prefix caching permite reutilizar el procesamiento de mensajes previos.
-- Análisis de documentos con imágenes: al ser multimodal, puede procesar capturas de pantalla, diagramas o documentos escaneados junto con texto, extrayendo información y respondiendo preguntas sobre el contenido visual. Esto es útil en sectores como legal, médico o técnico.
-- Agente autónomo para automatización de tareas: con el parser de tool calling `qwen3_coder` y el modo thinking, el modelo puede planificar y ejecutar secuencias de acciones (llamadas a APIs, consultas a bases de datos, generación de informes) de forma autónoma, manteniendo el estado a lo largo de múltiples pasos.
-- Inferencia en producción con GPUs de gama media: el formato FP8 per-channel permite ejecutar el modelo en GPUs Ada como RTX 4090 o L40S, que no soportan eficientemente el FP8 block-128. Esto reduce el coste de hardware frente a la necesidad de GPUs Hopper o Blackwell, manteniendo un rendimiento competitivo.
-- Investigación y prototipado de sistemas multimodales: al ser una cuantización de un modelo abierto con licencia Apache-2.0, es adecuado para experimentar con razonamiento visual, generación de código y agentes en entornos académicos o de I+D, sin restricciones de uso comercial.
+- Asistencia de código en producción: con 96,3 en HumanEval y soporte de tool calling, el modelo puede integrarse en pipelines de CI/CD para generar parches, escribir tests de pytest y resolver tareas de refactorización; la decodificación especulativa MTP eleva el rendimiento a 103 tok/s en configuraciones TP=2 según las mediciones del autor.
+- Análisis de documentos largos con imágenes: la ventana de 262.144 tokens y el codificador visual permiten procesar informes, contratos o expedientes completos con figuras y tablas incrustadas en una sola pasada, sin trocear el contexto.
+- Agentes autónomos con herramientas: el soporte de `qwen3_coder` como parser de tool calls y el modo thinking permiten construir bucles de razonamiento multi-paso con invocación de APIs externas, con la opción de desactivar el razonamiento para reducir latencia en tareas simples.
+- Atención al cliente multimodal: conversaciones multi-turno con contexto largo, donde el cliente puede adjuntar capturas o fotos de producto; el modelo mantiene el hilo gracias a la ventana extendida y a la caché de prefijos habilitada en vLLM.
+- Despliegue en hardware Ada de gama profesional: al usar kernels CUTLASS FP8 en SM 8.9, encaja en servidores con RTX 6000 Ada o L40S de 48 GB, un perfil habitual en equipos que no tienen acceso a Hopper.
+- Extracción de información estructurada sobre corpus extensos: la prueba de recuperación en 224.071 tokens sugiere viabilidad para localizar datos concretos en bases documentales grandes, con la latencia asociada (161 s en la medición del autor para ese prompt).
+- Prototipado e investigación con presupuesto de VRAM ajustado: al caber en una sola GPU de 48 GB con contexto completo y caché KV en FP8, permite experimentar con un modelo multimodal de 27B sin clúster multi-GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que no se ha ejecutado ninguna suite de evaluación sobre este checkpoint. Se menciona que RedHatAI reporta puntuaciones casi idénticas para la misma receta de cuantización en el modelo hermano Qwen3.6-35B-A3B, pero esto se presenta como una indicación, no como una medición de este modelo concreto.
+Datos publicados por el autor de la cuantización. No se han publicado resultados de benchmarks del modelo base en la información disponible.
 
-Sí se proporcionan mediciones de rendimiento de inferencia en 2x RTX 6000 Ada (SM 8.9) con vLLM 0.19.0 y tensor parallelism 2:
-
-| Metrica | Sin MTP | Con MTP k=3 |
-|---|---|---|
-| Decodificación, prosa | 38,7 tok/s | 63,3 tok/s |
-| Decodificación, código (tarea pytest) | - | 103 tok/s |
-| Decodificación, chat muestreado (temp. 0,7) | - | 50-71 tok/s |
-| Prompt de 36k tokens, tiempo hasta 16 tokens de salida, sin caché | 10,2 s | 9,6 s (chunk 32768) |
-| Mismo prompt, con prefix caching | 0,7 s | 0,6 s |
-| Memoria GPU por tarjeta a 0,9 de utilización | 45,4 GB | 45,4 GB |
-| KV cache libre por tarjeta al inicio | 23,9 GiB | 20,9 GiB |
-
-La tasa de aceptación de MTP es de 2,56 tokens por paso en prosa (0,75 / 0,49 / 0,33 por posición) y 3,6 en código.
+| Metrica | Valor |
+|---|---|
+| HumanEval (EvalPlus, greedy, thinking off) | 96,3 |
+| HumanEval+ (EvalPlus, greedy, thinking off) | 91,5 |
+| Decode, código, MTP k=3, 1x RTX 6000 Ada | 55,9 tok/s |
+| Decode, prosa, MTP k=3, 1x RTX 6000 Ada | 39,6 tok/s |
+| Decode, entrada de 16K tokens, MTP k=3, 1x RTX 6000 Ada | 32,5 tok/s |
+| Prompt de 224.071 tokens, recuperar una línea | correcto, 161 s |
+| Llamada a herramienta con visión | pasa |
+| Decode, prosa, TP=2 sin MTP | 38,7 tok/s |
+| Decode, prosa, TP=2 con MTP k=3 | 63,3 tok/s |
+| Decode, código (pytest), TP=2 con MTP k=3 | 103 tok/s |
+| Decode, chat muestreado (temp. 0,7), TP=2 con MTP k=3 | 50-71 tok/s |
+| Prompt de 36K tokens, tiempo hasta 16 tokens de salida, sin caché | 10,2 s (sin MTP) / 9,6 s (con MTP, chunk 32768) |
+| Mismo prompt con prefix caching | 0,7 s (sin MTP) / 0,6 s (con MTP) |
+| Aceptación MTP | 2,56 tokens por paso en prosa (por posición 0,75 / 0,49 / 0,33); 3,6 en código |
 
 ## Requisitos de hardware
 
-- VRAM estimada: las mediciones con contexto largo (36k tokens) y alta utilización alcanzan 45,4 GB por GPU en configuración TP=2. Los pesos ocupan aproximadamente 18,4 GB por GPU en esa configuración, por lo que con contextos más cortos o menor batch podría caber en GPUs de 24 GB, aunque no se ha verificado.
-- GPUs recomendadas: cualquier GPU con soporte FP8 y SM 8.9 o superior. Se ha validado en 2x RTX 6000 Ada (48 GB). También es compatible con Hopper (H100) y Blackwell (B200) mediante los kernels CUTLASS o DeepGEMM.
-- GPUs consumer: sí, es posible ejecutarlo en RTX 4090 (24 GB) en configuración TP=2 o con cuantización adicional, aunque no se han publicado mediciones específicas. En Ada, el kernel `CutlassFP8ScaledMMLinearKernel` está disponible con CUDA >= 12.4.
-- Opciones de despliegue: vLLM (>= 0.17.0) es la opción recomendada, con soporte para tensor parallelism, prefix caching, decodificación especulativa MTP y tool calling. También puede usarse con transformers para inferencia básica, aunque sin las optimizaciones de vLLM.
-- Latencia y throughput: en 2x RTX 6000 Ada, se midieron 38,7 tok/s en prosa sin MTP y 63,3 tok/s con MTP; en código, 103 tok/s con MTP. El tiempo de procesamiento de un prompt de 36k tokens hasta la primera salida es de 10,2 s sin caché y 0,7 s con prefix caching.
+- VRAM estimada: ~30 GB de pesos en FP8; el autor indica que pesos, caché KV en FP8 y contexto completo de 262.144 tokens caben en una GPU de 48 GB.
+- GPU recomendadas: RTX 6000 Ada, L40S o RTX 4090 (Ada, SM 8.9) para aprovechar los kernels CUTLASS FP8; también funciona en Hopper (H100) y Blackwell. En SM 8.9 requiere CUDA 12.4 o superior.
+- Cabe en consumer GPU: sí en RTX 4090 (24 GB) solo si se reduce contexto y número de secuencias; el escenario medido por el autor es una RTX 6000 Ada de 48 GB.
+- Despliegue: vLLM >= 0.17.0 (el autor usa 0.31.0 en las mediciones de una GPU y 0.19.0 en TP=2); formato `compressed-tensors`. No se mencionan otras opciones como llama.cpp, Ollama o TGI.
+- Ajuste crítico de memoria: mantener `--max-num-seqs` bajo (32 en el ejemplo del autor), porque cada slot de secuencia reserva un estado fijo de Gated DeltaNet; con el número por defecto, el profiler de CUDA graphs pide unos 13 GiB adicionales y el arranque se queda sin memoria. Con 32 slots, la caché KV aloja 354.406 tokens.
+- Latencia y throughput: ver tabla de benchmarks; en TP=2 con dos RTX 6000 Ada se usan 45,4 GB por tarjeta con utilización 0,9 y quedan 23,9 GiB (sin MTP) o 20,9 GiB (con MTP) de caché KV por tarjeta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Contexto | Compatibilidad Ada | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | 27,8B | BF16 | no disponible | no (requiere mucha VRAM) | Apache-2.0 | Modelo original, 55,6 GB en disco |
-| Qwen/Qwen3.8-27B-FP8 (oficial) | 27,8B | FP8 block-128 | no disponible | limitada (fallback a Triton) | Apache-2.0 | Release oficial de Qwen |
-| AzatAI/Qwen3.8-27B-FP8-dynamic | 27,8B | FP8 per-channel dinámico | no disponible | sí (CUTLASS FP8 GEMM) | Apache-2.0 | Cuantización comunitaria, incluye MTP |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| AzatAI/Qwen3.8-27B-FP8-dynamic | 27,78B | 262.144 | FP8 por canal, activaciones dinámicas | Apache-2.0 | Cuantización comunitaria; kernels CUTLASS FP8 en Ada, Hopper y Blackwell |
+| Qwen/Qwen3.8-27B | 27,78B | 262.144 | BF16 | Apache-2.0 | Modelo base; 55,6 GB en disco |
+| Qwen/Qwen3.8-27B-FP8 (oficial) | 27,78B | 262.144 | FP8 block-128 | Apache-2.0 | En vLLM, block-128 requiere SM90+ para CUTLASS/DeepGEMM; en Ada cae a un kernel Triton |
 
-La principal diferencia frente al FP8 oficial es la compatibilidad con GPUs Ada: el formato per-channel permite usar kernels CUTLASS optimizados en SM 8.9, mientras que el block-128 requiere Hopper o Blackwell para un rendimiento óptimo. Además, este checkpoint conserva la cabeza MTP, lo que habilita la decodificación especulativa sin configuración adicional.
+No se dispone de datos de benchmarks de los dos checkpoints de Qwen en la información proporcionada, por lo que no se puede comparar rendimiento numérico entre ellos más allá de la equivalencia en HumanEval+ que el autor señala entre v1 y v2 de su cuantización.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización de comunidad, no una release oficial de Qwen. No se ha ejecutado ninguna suite de evaluación sobre este checkpoint, por lo que se desconoce el impacto exacto en la calidad de las respuestas.
-- La longitud de contexto máxima no está especificada. Aunque se probó con prompts de 36k tokens, no se garantiza que el modelo soporte contextos mayores sin degradación.
-- Los idiomas soportados no están documentados para esta cuantización. Se asume que hereda las capacidades multilingües del modelo base, pero no hay confirmación.
-- El modo thinking está activado por defecto en la plantilla de chat; si no se desea, hay que desactivarlo explícitamente en el despliegue. Esto puede afectar a la latencia y al formato de las respuestas.
-- La decodificación especulativa con MTP requiere vLLM >= 0.17.0 y, según la documentación, vLLM ignora `min_p` y `logit_bias` cuando está activa.
-- Al ser una cuantización FP8, puede haber una ligera pérdida de precisión en comparación con el modelo en BF16, especialmente en tareas numéricas o de razonamiento complejo.
-- El despliegue en GPUs consumer (24 GB) no está verificado; las mediciones se realizaron con 2x RTX 6000 Ada de 48 GB. Es posible que se necesite reducir el contexto o el batch para evitar desbordamiento de memoria.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base y de las herramientas utilizadas (LLM Compressor, vLLM).
+- Es una cuantización comunitaria, no oficial de Qwen; el autor lo indica explícitamente y conviene validar el comportamiento antes de usarla en producción.
+- La cuantización FP8 puede introducir degradaciones frente al BF16 en tareas sensibles; el autor solo aporta comparación de HumanEval+ entre sus propias versiones v1 y v2, no frente al modelo base.
+- El rendimiento medido se limita a HumanEval/HumanEval+, pruebas de recuperación en contexto largo y latencia; no hay datos publicados de MMLU, GSM8K u otros benchmarks en la información disponible.
+- Idiomas soportados no disponibles: no se puede confirmar la cobertura multilingüe del modelo base a partir de esta ficha.
+- En una sola GPU hay que limitar `--max-num-seqs`; con los valores por defecto el arranque agota la memoria por la reserva de estado de Gated DeltaNet.
+- Bajo decodificación especulativa, vLLM ignora `min_p` y `logit_bias`, lo que afecta al control fino de la generación.
+- El modo thinking está activado por defecto en la plantilla de chat; si no se desactiva, aumenta la latencia y el consumo de tokens de salida.
+- Riesgo de alucinación y sesgos: no se documentan en la información proporcionada; deben asumirse los del modelo base, no evaluados aquí.
+- Licencia Apache-2.0 permite uso comercial, pero se hereda del modelo base y el archivo LICENSE se incluye sin modificar; conviene revisar los términos upstream antes de un despliegue comercial.
+- El repo ocupa 67,2 GB en total, aunque los pesos en FP8 son ~30 GB; hay que prever ese espacio en disco y en la caché de descarga.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AzatAI/Qwen3.8-27B-FP8-dynamic
+- Hugging Face: https://huggingface.co/AzatAI/Qwen3.8-27B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor
-- DOI asociado: doi:10.57967/hf/9989
+- Licencia upstream: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
+- LLM Compressor: https://github.com/vllm-project/llm-compressor
+- DOI: https://doi.org/10.57967/hf/9989

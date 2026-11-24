@@ -5,7 +5,7 @@
   "author": "Grawnch",
   "url": "https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-v5-2.26bpw-TokenWing",
   "created_at": "2026-11-15T07:18:23.000Z",
-  "updated_at": "2026-11-15T07:57:57.000Z",
+  "updated_at": "2026-11-23T05:28:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

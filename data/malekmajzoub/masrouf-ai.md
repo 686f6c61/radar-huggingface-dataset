@@ -2,81 +2,78 @@
 
 ## Resumen
 
-Masrouf AI es un modelo de lenguaje especializado en asistencia financiera conversacional, desarrollado por el usuario malekmajzoub como componente del asistente en el dispositivo (on-device) de la aplicación de gestión de dinero Masrouf. Se trata de un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-1.7B, un transformer denso de 1.720.574.976 parámetros, orientado a interpretar mensajes de usuario en inglés, árabe libanés, arabizi (árabe transliterado con caracteres latinos) o mezclas de estos idiomas, y a generar respuestas breves en el formato de respuesta propio de la aplicación.
+Masrouf AI es un modelo de lenguaje de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones) desarrollado por malekmajzoub, obtenido mediante ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-1.7B. Está diseñado específicamente como asistente en el teléfono para Masrouf, una aplicación de gestión de dinero, con el objetivo de interpretar mensajes entrantes (en inglés, árabe libanés, arabizi o mezclas de estos) y convertirlos en el formato de respuesta de la aplicación, además de redactar respuestas breves a partir de hechos que la propia app calcula.
 
-El modelo resuelve un problema muy concreto: transformar mensajes financieros informales y multilingües en una estructura de respuesta que la app pueda procesar, y redactar contestaciones cortas a partir de hechos que la propia aplicación calcula. Un aspecto destacable es su enfoque de privacidad: según la model card, el modelo fue entrenado exclusivamente con personas, nombres y mensajes ficticios, y no accede a datos reales de usuarios. Esto lo posiciona como un componente de inferencia local dentro de una arquitectura donde el procesamiento sensible permanece en el dispositivo.
+El modelo resuelve un problema muy concreto: la interpretación y generación de respuestas en un contexto de asistencia financiera móvil, con soporte para variantes dialectales del árabe y transliteraciones informales (arabizi). Su relevancia radica en que es un modelo pequeño (1,7B) optimizado para ejecución en dispositivo (on-device), con una versión cuantizada GGUF Q4_K_M de 1056 MB, lo que permite desplegarlo en teléfonos sin depender de la nube y sin exponer datos personales.
 
-Su relevancia actual radica en la combinación de tres factores: un tamaño reducido (1,7 mil millones de parámetros) que permite ejecución local, una distribución en formato GGUF cuantizado Q4_K_M de aproximadamente 1 GB, y una licencia Apache 2.0 que facilita su integración comercial. El modelo se publica como un artefacto empaquetado para despliegue en teléfono, no como un modelo de propósito general.
+La información disponible sobre arquitectura, contexto, datos de entrenamiento y benchmarks es limitada: la model card es muy escueta y no detalla estos aspectos. Se sabe que deriva de Qwen3-1.7B, que soporta inglés y árabe, y que se distribuye bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen/Qwen3-1.7B) |
+| Arquitectura | no disponible (derivado de Qwen/Qwen3-1.7B) |
 | Parametros totales | 1.720.574.976 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (GGUF); el repo incluye el fichero `masrouf-1.7b-r5-q4km.gguf` |
-| Idiomas soportados | Ingles, arabe (libanes), arabizi y mezclas de estos |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF Q4_K_M (fichero publicado); otras no disponibles |
+| Idiomas soportados | en, ar (incluye árabe libanés, arabizi y mezclas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizado Q4_K_M); el modelo base dispone de safetensors |
+| Formato de pesos | GGUF (Q4_K_M); safetensors en el repo base según metadatos |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3-1.7B, un transformer denso de 1,7 mil millones de parámetros. No se dispone de información detallada sobre la composición exacta de la arquitectura interna (número de capas, dimensiones de atención, tipo de atención) más allá de lo que aporta el modelo base. El ajuste fino se realizó sobre Qwen/Qwen3-1.7B con el objetivo de adaptarlo a dos tareas específicas: la lectura de mensajes entrantes (en inglés, árabe libanés, arabizi o mezclas) para mapearlos al formato de respuesta de Masrouf, y la generación de respuestas cortas a partir de hechos calculados por la aplicación.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Al ser un ajuste fino de Qwen/Qwen3-1.7B, hereda la arquitectura del modelo base, pero la model card no especifica si se trata de un transformer denso estándar, ni detalla innovaciones como atención lineal o decodificación especulativa.
 
-Según la model card, el entrenamiento utilizó únicamente datos sintéticos: personas, nombres y mensajes inventados. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. El identificador del fichero (`r5`) sugiere una quinta revisión o iteración del ajuste, aunque no se detalla su significado. El resultado se distribuye exclusivamente como GGUF cuantizado Q4_K_M, lo que indica que el autor priorizó la eficiencia de despliegue en dispositivo sobre la preservación de pesos en precisión completa.
+En cuanto al entrenamiento, la model card indica que el modelo fue ajustado para leer mensajes en inglés, árabe libanés, arabizi o mezclas, y producir respuestas en el formato de Masrouf, así como para redactar respuestas cortas a partir de hechos calculados por la aplicación. Se menciona explícitamente que se entrenó solo con personas, nombres y mensajes ficticios, lo que implica un dataset sintético orientado a proteger la privacidad. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Interpretación de mensajes financieros en inglés, árabe libanés, arabizi y mezclas de idiomas, mapeándolos al formato de respuesta de la aplicación Masrouf.
-- Generación de respuestas breves a partir de hechos que la aplicación calcula previamente, sin acceso a datos reales de usuarios.
-- Conversación multi-turno en el contexto de asistencia financiera (etiqueta `conversational` en los metadatos).
-- Ejecución on-device: el formato GGUF Q4_K_M permite inferencia local en dispositivos con recursos limitados.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de la infraestructura de endpoints de Hugging Face.
-- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo de pensamiento explícito.
+- Generación de texto conversacional en inglés y árabe, con soporte para árabe libanés, arabizi y mezclas de idiomas.
+- Interpretación de mensajes entrantes y conversión al formato de respuesta de la aplicación Masrouf.
+- Redacción de respuestas breves a partir de hechos proporcionados por la aplicación (no genera datos financieros por sí mismo).
+- Ejecución en dispositivo (on-device) gracias a su tamaño reducido y a la cuantización GGUF Q4_K_M.
+- Orientado a conversaciones de asistencia financiera en el contexto de una app de dinero.
+- No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Asistente financiero en el teléfono: el modelo se ejecuta localmente dentro de la app Masrouf para interpretar los mensajes del usuario y generar respuestas en el formato esperado, sin enviar datos a servidores externos.
-- Procesamiento de mensajes multilingües informales: usuarios que escriben en árabe libanés, arabizi o mezclas de inglés y árabe pueden interactuar con la app sin necesidad de cambiar de idioma ni de registro.
-- Clasificación y normalización de entradas: el modelo convierte mensajes no estructurados en la estructura de respuesta que la aplicación necesita para continuar su flujo lógico.
-- Generación de respuestas a partir de hechos calculados: la app calcula saldos, categorías o resúmenes y el modelo redacta una contestación breve y natural para el usuario.
-- Escenarios de privacidad estricta: al ejecutarse en el dispositivo y haberse entrenado solo con datos sintéticos, encaja en productos financieros donde el tratamiento de datos personales está regulado y se prefiere el procesamiento local.
-- Prototipado de asistentes conversacionales de dominio específico: sirve como ejemplo de ajuste fino de un modelo de 1,7B para una tarea vertical con formato de salida fijo, replicable en otros dominios con requisitos similares de privacidad y latencia.
+- Asistente financiero en aplicación móvil: el modelo interpreta los mensajes que el usuario escribe en la app de Masrouf (en inglés, árabe libanés, arabizi o mezclas) y los transforma en el formato de respuesta esperado, permitiendo una interacción natural sin salir del teléfono.
+- Procesamiento de mensajes multilingües informales: al soportar arabizi y mezclas de árabe e inglés, puede gestionar entradas de usuarios que escriben de forma coloquial, algo habitual en comunidades del Líbano y Oriente Medio.
+- Generación de respuestas breves basadas en hechos: la app calcula datos (por ejemplo, saldos o resúmenes) y el modelo redacta una respuesta corta y comprensible para el usuario, sin inventar cifras.
+- Despliegue on-device con privacidad: al ejecutarse localmente con un GGUF de 1056 MB, permite ofrecer asistencia sin enviar datos del usuario a servidores externos, adecuado para aplicaciones financieras sensibles.
+- Prototipado de asistentes de dominio específico: sirve como ejemplo de ajuste fino de un modelo pequeño (1,7B) para una tarea concreta de formato y estilo, replicable en otros dominios con recursos limitados.
+- Integración en apps móviles con recursos limitados: su tamaño y cuantización permiten incluirlo en aplicaciones para dispositivos de gama media, reduciendo costes de infraestructura en comparación con modelos en la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero GGUF Q4_K_M ocupa 1056 MB, por lo que la inferencia requiere aproximadamente 1,1-1,5 GB de memoria, dependiendo del backend y del contexto utilizado.
-- GPU recomendadas: no se especifican. Por tamaño, el modelo puede ejecutarse en GPUs de consumo como RTX 3060, RTX 4060 o superiores; también es viable en CPU.
-- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 2 GB de VRAM libre; el diseño está orientado a ejecución en teléfono.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; también es compatible con endpoints de Hugging Face según los metadatos.
+- VRAM estimada para inferencia: el fichero GGUF Q4_K_M ocupa 1056 MB, por lo que se puede ejecutar con aproximadamente 1,5-2 GB de memoria disponible, dependiendo del backend y del contexto.
+- GPU recomendadas: no se especifican; por su tamaño, puede ejecutarse en GPUs de consumo como RTX 3060, RTX 4060 o superiores, así como en GPUs integradas y en CPU.
+- Cabe en GPU de consumo: sí, gracias a su cuantización Q4_K_M y a su tamaño de 1,7B parámetros.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; los tags indican "endpoints_compatible", lo que sugiere compatibilidad con endpoints de inferencia.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Masrouf AI | 1,72B | No disponible | Apache 2.0 | GGUF Q4_K_M | Ajuste fino de dominio financiero, multilingüe en/ar, orientado a on-device |
-| Qwen/Qwen3-1.7B (base) | 1,72B | No disponible | Apache 2.0 | Safetensors, GGUF | Modelo generalista del que deriva; no especializado en el formato de Masrouf |
-| Alternativas de ~1-2B para on-device | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados de modelos comparables en la información proporcionada |
+| Masrouf AI (este modelo) | 1,72B | no disponible | Apache 2.0 | GGUF Q4_K_M en Hugging Face | Ajuste fino de Qwen3-1.7B para asistente financiero on-device en en/ar |
+| Qwen/Qwen3-1.7B | 1,7B | no disponible en la información | Apache 2.0 | Hugging Face | Modelo base; capacidades generales, sin ajuste específico para Masrouf |
+| Otros modelos de ~1-2B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio muy restringido: está ajustado para el formato de respuesta de Masrouf y para mensajes financieros; su rendimiento fuera de ese contexto no está documentado y probablemente sea limitado.
-- Riesgo de alucinación: como todo modelo generativo, puede producir respuestas incorrectas; la model card indica que las respuestas se construyen a partir de hechos calculados por la app, lo que mitiga pero no elimina el riesgo.
-- Idiomas limitados: solo se documentan inglés, árabe libanés y arabizi; no hay soporte declarado para castellano ni para otros idiomas.
-- Longitud de contexto no documentada: se desconoce la ventana máxima, lo que dificulta planificar conversaciones largas.
-- Datos de entrenamiento sintéticos: no se especifica el volumen ni la diversidad del dataset, por lo que no puede evaluarse la cobertura de casos reales.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar las obligaciones de atribución.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: proyecto muy reciente y sin validación comunitaria.
+- Sesgos conocidos: no documentados en la model card; al entrenarse con datos sintéticos, podrían existir sesgos derivados del proceso de generación de esos datos.
+- Riesgo de alucinación: el modelo está diseñado para redactar respuestas a partir de hechos que la app calcula, pero no se documenta ningún mecanismo de verificación; podría generar respuestas incorrectas si se usa fuera de ese flujo controlado.
+- Limitaciones de contexto e idioma: solo se documentan inglés y árabe (incluyendo libanés y arabizi); no se especifica la longitud de contexto soportada, lo que limita su uso en conversaciones largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base Qwen3-1.7B y citar adecuadamente.
+- Caveats para producción: la información técnica es muy escasa (sin benchmarks, sin detalles de entrenamiento, sin contexto); se recomienda validar el comportamiento en el dominio concreto antes de desplegarlo. El modelo está especializado en el formato de Masrouf, por lo que su uso fuera de ese contexto puede degradar la calidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/malekmajzoub/masrouf-ai
-- Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
+- Hugging Face: https://huggingface.co/malekmajzoub/masrouf-ai
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

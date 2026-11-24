@@ -2,53 +2,57 @@
 
 ## Resumen
 
-OPD-Aha-4B-GGUF es la version cuantizada en formato GGUF del modelo CewEhao/OPD-Aha-4B, publicada por el usuario mradermacher, especializado en la conversion de pesos a GGUF para inferencia local. El modelo original es un modelo de vision-lenguaje (VLM) de aproximadamente 4.841 millones de parametros, orientado a comprension visual de grano fino y razonamiento multimodal, segun las etiquetas declaradas por el autor de la ficha. La cuantizacion permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles con GGUF.
+OPD-Aha-4B-GGUF es la version cuantizada en formato GGUF del modelo multimodal OPD-Aha-4B, desarrollado originalmente por CewEhao y convertida por mradermacher, un conocido creador de cuantizaciones de la comunidad de Hugging Face. Se trata de un modelo vision-language de aproximadamente 4.840 millones de parametros (4,84 B) orientado a la comprension visual de grano fino y al razonamiento multimodal, entrenado mediante tecnicas de destilacion on-policy y aprendizaje por refuerzo. Su licencia Apache 2.0 y su reducido tamano lo hacen especialmente interesante para despliegues en hardware de consumo.
 
-El modelo base se asocia en sus etiquetas a tecnicas de destilacion on-policy (on-policy distillation) y aprendizaje por refuerzo (reinforcement-learning), lo que sugiere que su entrenamiento combina ajuste supervisado con optimizacion basada en recompensas y destilacion desde un modelo mayor. No obstante, la model card publicada por el cuantizador no aporta detalles sobre la arquitectura interna, el volumen de datos de entrenamiento ni la composicion del dataset.
+La relevancia de esta publicacion radica en que ofrece el modelo original en un abanico amplio de cuantizaciones (desde Q2_K hasta f16, pasando por IQ4_XS y la serie Q3-Q8), lo que permite ejecutar un modelo multimodal de casi 5.000 millones de parametros en GPUs consumer con VRAM limitada. El repositorio incluye ademas los ficheros mmproj necesarios para el procesamiento de imagenes en llama.cpp.
 
-La relevancia de esta publicacion es fundamentalmente practica: ofrece una familia completa de cuantizaciones (desde Q2_K hasta F16, ademas de los ficheros mmproj necesarios para la parte visual) que permite desplegar un VLM de 4B en equipos con GPU modesta o incluso en CPU. Al tratarse de una licencia Apache 2.0, es apta para uso comercial, aunque el idioma declarado se limita al ingles.
+No obstante, la informacion publicada es escasa: la model card del cuantizador es generica y no detalla arquitectura interna, datos de entrenamiento, longitud de contexto ni resultados de benchmarks. Esta ficha refleja unicamente los datos verificables disponibles y marca explicitamente como "no disponible" todo aquello que no se ha podido confirmar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No especificada en la informacion disponible; descrita como modelo de vision-lenguaje (VLM) multimodal con proyector visual (ficheros mmproj) |
-| Parametros totales | 4.841.450.496 (aproximadamente 4,84 mil millones) |
-| Parametros activos | No aplica segun la informacion disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; complementos multimodales mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Vision-language model (transformers); detalles internos no disponibles |
+| Parametros totales | 4.841.450.496 (4,84 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base esta en formato transformers/Hugging Face) |
+| Formato de pesos | GGUF (quantizaciones estaticas); modelo base en safetensors |
+| Tamano del repositorio | 45,4 GB (incluye todas las variantes) |
+| Modelo base | CewEhao/OPD-Aha-4B |
+| Cuantizador | mradermacher |
+| Fecha de creacion | 14 de septiembre de 2026 |
+| Ultima actualizacion | 8 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Las etiquetas de la ficha lo clasifican como vision-language-model con capacidades de fine-grained visual understanding y multimodal reasoning, y los ficheros publicados incluyen complementos multimodal projector (mmproj) en precision Q8_0 y f16. Esto es coherente con una arquitectura tipica de VLM: un codificador visual conectado mediante un proyector a un modelo de lenguaje de tipo transformer, todo ello serializado en GGUF con un fichero separado para la proyeccion visual, tal como espera llama.cpp.
+El modelo base OPD-Aha-4B es un vision-language model segun las etiquetas del repositorio, con enfasis en comprension visual de grano fino (fine-grained visual understanding) y razonamiento multimodal. El pipeline declarado es reinforcement-learning, y las etiquetas incluyen on-policy-distillation y reinforcement-learning, lo que sugiere que el entrenamiento combino destilacion on-policy con tecnicas de RL para mejorar el razonamiento. No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, la arquitectura exacta del encoder visual ni los detalles del proceso de alineamiento (RLHF/DPO).
 
-En cuanto al entrenamiento, las etiquetas mencionan on-policy distillation y reinforcement learning, lo que apunta a un proceso de ajuste que combina destilacion sobre trayectorias generadas por el propio modelo con optimizacion por recompensa. El pipeline declarado en Hugging Face es reinforcement-learning. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases adicionales de RLHF o DPO. La unica innovacion tecnica verificable en esta publicacion concreta es la propia cuantizacion estatica a multiples niveles de precision (incluyendo tipos IQ), que preserva el proyector multimodal en cuantizaciones separadas.
+La version aqui descrita es una cuantizacion estatica realizada por mradermacher con la herramienta de conversion a GGUF (convert_type hf, quantize_version 2). Se ofrecen tanto cuantizaciones estandar como una variante con imatrix (repositorio OPD-Aha-4B-i1-GGUF), que suele preservar mejor la calidad en tamanos bajos. Los ficheros mmproj (Q8_0 y f16) son el complemento multimodal necesario para procesar imagenes en llama.cpp. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multimodal en ingles.
-- Comprension visual de grano fino (fine-grained visual understanding), orientada a tareas donde el detalle de la imagen es relevante.
-- Razonamiento multimodal de varios pasos, segun la etiqueta multimodal-reasoning.
-- Procesamiento de imagenes mediante el proyector visual incluido en los ficheros mmproj.
-- Capacidad de conversacion multi-turno (etiqueta conversational).
-- Compatibilidad declarada con endpoints (endpoints_compatible) para su despliegue como servicio.
+- Comprension de imagenes y texto (vision-language): el modelo acepta entradas multimodales y genera respuestas en lenguaje natural.
+- Comprension visual de grano fino: orientado a tareas que requieren atencion a detalles pequenos en la imagen (segun las etiquetas del autor).
+- Razonamiento multimodal: capacidad declarada de razonar sobre la informacion visual combinada con texto.
+- Generacion de texto conversacional: el repositorio esta marcado como "conversational" y es compatible con endpoints.
+- Entrenamiento con aprendizaje por refuerzo y destilacion on-policy: orientado a mejorar la calidad del razonamiento (segun metadatos).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y multi-step reasoning de texto: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el enfasis en RL sugiere capacidades de razonamiento, pero no hay confirmacion.
 - Capacidades multilingues: limitadas al ingles segun el campo language.
-- Capacidades especiales (modo thinking, audio, etc.): no disponible en la informacion proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Analisis de documentos con imagenes: el modelo puede recibir capturas, diagramas o formularios escaneados junto con una pregunta en ingles y devolver una descripcion o extraccion de informacion, aprovechando su orientacion a comprension visual de grano fino.
-- Descripcion detallada de imagenes para accesibilidad: generacion de texto alternativo extenso y preciso para catalogos de imagenes o plataformas de contenido, ejecutable localmente gracias a las cuantizaciones Q4 y Q5.
-- Control de calidad visual en linea de produccion: integrado mediante llama.cpp o un servidor compatible con GGUF, el modelo puede inspeccionar fotografias de producto y responder a criterios predefinidos en ingles.
-- Asistencia en investigacion sobre imagenes cientificas: analisis de graficos, placas o figuras para resumir tendencias y responder preguntas concretas, con la ventaja de que los datos no salen del equipo local.
-- Prototipado de aplicaciones VLM en hardware de consumo: uso como modelo de referencia para desarrolladores que quieran validar un pipeline multimodal antes de escalar a modelos mayores, gracias a su tamano de 4B.
-- Educacion y tutoria con material grafico: el modelo puede responder preguntas sobre diagramas o ilustraciones en ingles, en un escenario de bajo coste por ejecucion local.
-- Clasificacion y etiquetado asistido de imagenes: generacion de etiquetas o descripciones estructuradas para conjuntos de datos de entrenamiento, con precision ajustable segun la cuantizacion elegida.
+- Analisis de documentos e imagenes tecnicas: el modelo puede recibir una captura o fotografia junto con una pregunta y extraer informacion concreta; su enfoque en comprension de grano fino resulta adecuado para diagramas, esquemas y tablas.
+- Asistencia en accesibilidad: descripcion detallada de imagenes para usuarios con discapacidad visual, aprovechando la capacidad de analisis visual fino y la generacion de texto conversacional.
+- Moderacion de contenido visual: clasificacion y descripcion de imagenes en pipelines automatizados, con despliegue local en GPUs consumer gracias a las cuantizaciones Q4/Q5.
+- Prototipado de asistentes multimodales en local: con Q4_K_M (3,2 GB) y el mmproj Q8_0 (0,5 GB) se puede montar un asistente visual en una RTX 3060 o superior usando llama.cpp u Ollama.
+- Investigacion en destilacion on-policy y RL multimodal: el modelo sirve como referencia reproducible para estudiar el efecto de estas tecnicas en modelos de ~5 B, con pesos abiertos y licencia permisiva.
+- Extraccion de informacion de capturas de pantalla: lectura de interfaces, formularios o graficos para automatizar tareas de scraping visual asistido, siempre con validacion humana dado el riesgo de alucinacion.
+- Educacion y tutoria visual: explicacion de figuras cientificas o mapas en entornos con requisitos de privacidad, al poder ejecutarse integramente en local sin enviar imagenes a la nube.
 
 ## Benchmarks y rendimiento
 
@@ -56,46 +60,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (valores aproximados segun el numero de parametros; los tamanos exactos por cuantizacion no se detallan en la informacion disponible salvo los ficheros mmproj):
-  - F16: en torno a 10 GB.
-  - Q8_0: en torno a 5-6 GB.
-  - Q5_K_M / Q5_K_S: en torno a 3,5-4 GB.
-  - Q4_K_M / Q4_K_S / IQ4_XS: en torno a 2,8-3,2 GB.
-  - Q3_K_L / Q3_K_M / Q3_K_S: en torno a 2,2-2,7 GB.
-  - Q2_K: en torno a 1,8-2 GB.
-  - Hay que sumar aproximadamente 0,5-0,8 GB adicionales por el proyector multimodal (mmproj-Q8_0 o mmproj-f16).
-- GPU recomendadas: para F16 o Q8_0, una GPU de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080); para cuantizaciones Q4 o Q5, una GPU de 8 GB (RTX 3070, RTX 4060 Ti) es suficiente; en entornos profesionales, A100 o H100 no son necesarias dado el tamano del modelo.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas segun la cuantizacion elegida; las cuantizaciones Q2_K y Q3 pueden ejecutarse incluso en equipos con 4-6 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con GGUF (por ejemplo llama-cpp-python), y cualquier runtime que soporte el formato con ficheros mmproj para la parte visual.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia (solo pesos del modelo de lenguaje): Q2_K ~2,2 GB; Q3_K_M ~2,6 GB; IQ4_XS/Q4_K_S ~3,0 GB; Q4_K_M ~3,2 GB; Q5_K_M ~3,6 GB; Q6_K ~4,1 GB; Q8_0 ~5,3 GB; f16 ~9,8 GB.
+- Complemento multimodal: sumar 0,5 GB (mmproj Q8_0) o 0,8 GB (mmproj f16).
+- VRAM total recomendada: entre 4 GB (Q4_K_S + mmproj Q8_0) y 11 GB (f16 + mmproj f16), mas margen para el contexto KV cache.
+- GPU consumer: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090; en 8 GB es viable con Q4_K_M y contexto moderado.
+- GPU profesional: A100, H100 y L40S sin problema; utiles para servir varias instancias o contextos largos.
+- Opciones de despliegue: llama.cpp (soporte multimodal via mmproj), Ollama, y servidores compatibles con endpoints GGUF; vLLM y TGI requeririan el modelo base en safetensors, no las cuantizaciones GGUF.
+- Latencia y throughput: no disponibles; dependen de la GPU, la cuantizacion y la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-No se han encontrado en la informacion disponible modelos comparables con datos verificables de rendimiento. A modo de referencia estructural, el mismo cuantizador publica otras familias de 4B en GGUF, pero no se dispone de especificaciones que permitan una comparacion rigurosa.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Datos de rendimiento |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OPD-Aha-4B-GGUF | 4,84 mil millones | No disponible | Apache 2.0 | GGUF | No disponible |
-| Comparativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
+| OPD-Aha-4B (este) | 4,84 B | no disponible | Apache 2.0 | GGUF + safetensors | Vision-language, RL/on-policy distillation, solo ingles |
+| Qwen2.5-VL-3B | ~3,75 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF comunitario | Vision-language multilingue, ampliamente adoptado |
+| Qwen2.5-VL-7B | ~8,3 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF comunitario | Mayor capacidad, requiere mas VRAM |
+| InternVL2.5-4B | ~4,2 B | no disponible en esta ficha | MIT (segun publicacion de InternVL) | safetensors, GGUF comunitario | Vision-language con buen rendimiento en benchmarks publicos |
+
+Nota: los datos de los modelos comparativos provienen de sus respectivas documentaciones publicas; no se dispone de benchmarks del OPD-Aha-4B para una comparacion cuantitativa directa.
 
 ## Limitaciones y advertencias
 
-- Idiomas: el unico idioma declarado es el ingles; no hay evidencia de soporte fiable en castellano ni en otros idiomas.
-- Sesgos conocidos: no se documentan en la informacion disponible, pero al no detallarse la composicion del dataset de entrenamiento no puede descartarse la presencia de sesgos visuales y culturales.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje y vision-lenguaje; no hay evaluaciones publicadas que cuantifiquen este riesgo en este modelo concreto.
-- Limitaciones de contexto: se desconoce la longitud maxima de contexto, lo que impide planificar despliegues con entradas largas o muchas imagenes por conversacion.
-- Restricciones de licencia: la licencia es Apache 2.0, por lo que el uso comercial esta permitido; conviene verificar de forma independiente las condiciones del modelo base CewEhao/OPD-Aha-4B en su repositorio original.
-- Caveats para produccion: al tratarse de una cuantizacion estatica (no imatrix/pesada) y no disponer de cuantizaciones ponderadas, puede haber una perdida de calidad superior a la habitual en los niveles mas bajos (Q2_K, Q3_K_S); se recomienda validar con datos propios antes de desplegar.
-- Advertencia sobre la fecha de publicacion: la ficha figura creada el 14 de septiembre de 2026; conviene comprobar el estado y las actualizaciones del repositorio antes de depender de el.
-- Sin resultados de benchmarks publicados, el rendimiento real frente a alternativas de la misma categoria no puede evaluarse a partir de la informacion disponible.
+- Idiomas: el modelo declara unicamente ingles; el rendimiento en castellano no esta garantizado ni documentado.
+- Alucinacion: como todo modelo generativo, puede inventar detalles visuales o textuales; en tareas de extraccion de informacion conviene validar las salidas.
+- Sesgos: no se documentan evaluaciones de sesgo; al entrenarse con datos no especificados, pueden persistir sesgos de los corpus de origen.
+- Contexto: se desconoce la longitud maxima de contexto, lo que dificulta planificar conversaciones largas o documentos extensos.
+- Cuantizaciones agresivas: Q2_K y Q3_K_S degradan la calidad; para produccion se recomienda Q4_K_M o superior, y valorar las variantes imatrix del repositorio i1.
+- Vision en llama.cpp: requiere cargar correctamente el fichero mmproj junto al modelo; una configuracion incorrecta desactiva la entrada de imagenes.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene revisar la model card del modelo base por si anade condiciones.
+- Madurez: el modelo es reciente (septiembre de 2026) y cuenta con pocas descargas (405) y cero likes, por lo que la evidencia de la comunidad es escasa.
+- Repositorio pesado: el repo completo ocupa 45,4 GB; descargar solo la cuantizacion necesaria.
 
 ## Enlaces
 
-- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/OPD-Aha-4B-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/OPD-Aha-4B-GGUF
 - Modelo base: https://huggingface.co/CewEhao/OPD-Aha-4B
-- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#OPD-Aha-4B-GGUF
-- Solicitudes y FAQ del cuantizador: https://huggingface.co/mradermacher/model_requests
-- Grafico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia de TheBloke para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Empresa del cuantizador: https://www.nethype.de/
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/OPD-Aha-4B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#OPD-Aha-4B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

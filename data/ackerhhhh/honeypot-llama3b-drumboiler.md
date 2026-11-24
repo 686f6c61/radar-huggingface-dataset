@@ -2,51 +2,48 @@
 
 ## Resumen
 
-`AckerHHHH/honeypot-llama3B-drumboiler` es un modelo publicado en Hugging Face por el usuario AckerHHHH el 5 de noviembre de 2026. El nombre sugiere una adaptacion o fine-tuning de un modelo de la familia Llama de 3B parametros, pero esta inferencia no esta confirmada por ninguna documentacion oficial: la model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva sobre el modelo.
+AckerHHHH/honeypot-llama3B-drumboiler es un modelo de generacion de texto publicado en Hugging Face por el usuario AckerHHHH, con un total de 3.212.749.824 parametros (aproximadamente 3,2 mil millones) almacenados en formato safetensors. Por el nombre y las etiquetas asociadas (llama, unsloth), se trata de un ajuste fino o derivado de la familia Llama 3 de Meta, probablemente entrenado con la libreria Unsloth para optimizar el proceso de fine-tuning. El repositorio ocupa 6,5 GB, lo que es coherente con pesos en precision de 16 bits para un modelo de este tamano.
 
-El repositorio tiene un tamano de 0,1 GB, lo que resulta llamativamente pequeno para un modelo de 3B parametros en precision completa (que rondaria los 6 GB en fp16). Esto sugiere que el repositorio podria contener unicamente pesos cuantizados, adaptadores LoRA, o incluso un checkpoint incompleto o de prueba. El tag `unsloth` apunta a que el entrenamiento o la conversion se realizo con la libreria Unsloth, habitual para fine-tuning eficiente de modelos Llama.
+La model card es practicamente un esqueleto autogenerado por Hugging Face: todos los campos de informacion (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". Esto significa que no hay documentacion tecnica fiable sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo. El nombre "honeypot" (tarro de miel) y "drumboiler" (caldera de tambor) sugiere que podria tratarse de un experimento, una prueba de concepto o incluso un modelo senuelo, pero no hay confirmacion en la informacion disponible.
 
-La relevancia de este modelo es muy limitada en el momento de redactar esta ficha: cero descargas, un unico like, sin licencia declarada, sin idiomas declarados y sin pipeline definido. No debe considerarse un modelo listo para produccion ni para evaluacion seria sin una inspeccion directa de los archivos del repositorio.
+El modelo es relevante principalmente como caso de estudio de publicaciones en Hugging Face sin documentacion, y como ejemplo de un checkpoint de ~3B parametros que podria desplegarse en hardware de consumo. Sin embargo, la ausencia total de informacion sobre licencia, datos y evaluacion lo hace inadecuado para uso en produccion sin una auditoria previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere familia Llama, sin confirmar) |
-| Parametros totales | no disponible (el nombre sugiere 3B, sin confirmar) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
+| Arquitectura | Transformer (familia Llama 3, segun tags; detalles no disponibles) |
+| Parametros totales | 3.212.749.824 (~3,2 mil millones) |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors, probablemente fp16/bf16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (tag del repositorio) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla generica de Hugging Face con todos los campos marcados como `[More Information Needed]`. El unico indicio tecnico es el tag `unsloth`, que indica que el autor utilizo la libreria Unsloth, especializada en fine-tuning con LoRA/QLoRA de bajo consumo de memoria sobre modelos tipo Llama, Mistral y Qwen.
+La unica informacion disponible sobre la arquitectura es la etiqueta "llama" y el tag "unsloth", que indican que el modelo deriva de la familia Llama 3 de Meta y que el fine-tuning se realizo probablemente con la libreria Unsloth, conocida por optimizar el entrenamiento de modelos Llama en GPUs de consumo mediante tecnicas como LoRA/QLoRA y kernels personalizados. El numero de parametros (3,2 mil millones) no coincide exactamente con ninguno de los tamanos oficiales de Llama 3 (8B, 70B) ni de Llama 3.2 (1B, 3B), por lo que podria tratarse de un modelo 3B con embeddings o cabezas adicionales, o de un checkpoint con vocabulario extendido.
 
-El tamano del repositorio (0,1 GB) es incompatible con un checkpoint completo de un modelo de 3B parametros en safetensors fp16. Las hipotesis plausibles son: (a) el repositorio contiene solo adaptadores LoRA, (b) contiene pesos cuantizados a 4 bits de un modelo muy pequeno, o (c) el push se realizo de forma incompleta. No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni si se aplico RLHF, DPO o SFT.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card no proporciona ningun detalle sobre hiperparametros, regimen de entrenamiento ni infraestructura utilizada.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la informacion disponible.
-- No hay evidencia de soporte de tool calling, function calling ni razonamiento multi-paso.
-- No hay evidencia de capacidades multimodales (vision, audio) ni de modo de razonamiento explicito.
-- El tag `endpoints_compatible` indica que el repositorio esta preparado para desplegarse mediante Hugging Face Inference Endpoints, lo que implica compatibilidad con la API de transformers.
-- El nombre "honeypot" podria indicar un modelo senuelo o de prueba, pero esto es especulacion no confirmada.
+- Generacion de texto autoregresiva (pipeline text-generation declarado).
+- Compatibilidad con transformers y text-generation-inference (tags del repositorio).
+- Compatibilidad con endpoints de Hugging Face (tag endpoints_compatible).
+- Fine-tuning potencial sobre Llama 3 (tag unsloth), lo que sugiere capacidad base de instrucciones, aunque no confirmado.
+- No hay informacion sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-Dado que no existe documentacion funcional ni evaluacion publicada, los casos de uso solo pueden plantearse como escenarios hipoteticos condicionados a una validacion previa del checkpoint:
-
-- Evaluacion interna de fine-tunings: si el repositorio contiene adaptadores LoRA sobre un Llama 3B, podria usarse como base para experimentar con Unsloth en entornos de investigacion con recursos limitados.
-- Pruebas de infraestructura de despliegue: util como artefacto de prueba para validar pipelines de Inference Endpoints o de carga con transformers antes de desplegar modelos reales.
-- Reproduccion de experimentos de la comunidad: si el autor publica posteriormente detalles, podria servir para reproducir un fine-tuning concreto.
-- Docencia y formacion: como ejemplo de repositorio incompleto o de model card sin rellenar, util para ilustrar buenas practicas de publicacion en Hugging Face.
-- Auditoria de seguridad de modelos: el nombre "honeypot" podria sugerir un uso como senuelo en estudios de deteccion de modelos maliciosos, aunque no hay confirmacion.
-- Analisis forense de checkpoints: inspeccion de los archivos safetensors para determinar que contienen realmente y comparar con las expectativas de un Llama 3B.
-
-En ningun caso se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni aplicaciones con usuarios finales sin una evaluacion exhaustiva previa.
+- Experimentacion academica con checkpoints de ~3B parametros: el modelo puede cargarse en una GPU de consumo para estudiar el comportamiento de fine-tunings de Llama 3 sin documentar, comparando salidas con el modelo base.
+- Pruebas de infraestructura de despliegue: sirve para validar pipelines con transformers, TGI o endpoints de Hugging Face antes de migrar a modelos documentados.
+- Generacion de texto creativo de bajo riesgo en entornos controlados: con 3,2B parametros y pesos safetensors, puede ejecutarse en local para prototipos de escritura asistida, asumiendo que la calidad no esta garantizada.
+- Investigacion sobre modelos "honeypot" o senuelo: el nombre sugiere que podria usarse para estudiar como los sistemas de evaluacion detectan modelos sin documentacion o con comportamientos anomalos.
+- Base para fine-tuning posterior: al ser un checkpoint Llama-compatible, podria servir como punto de partida para ajustes con Unsloth, aunque la falta de licencia clara es un riesgo legal.
+- Educacion sobre publicacion de modelos: como ejemplo de model card vacia, util en talleres sobre buenas practicas de documentacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +51,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Si se confirma que es un Llama de 3B en fp16, requeriria aproximadamente 6-7 GB de VRAM; en cuantizacion 4 bits, unos 2-3 GB.
-- GPU recomendadas: no disponible. Para un hipotetico 3B, una RTX 3060 de 12 GB o superior seria suficiente en fp16; una RTX 4090 o A100 no serian necesarias.
-- Compatibilidad con GPU de consumo: probablemente si, si el modelo es realmente de 3B, pero no confirmado.
-- Opciones de despliegue: transformers (libreria declarada), Hugging Face Inference Endpoints (tag `endpoints_compatible`). No hay evidencia de soporte de vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en fp16: aproximadamente 6,4 GB solo para pesos, mas overhead de activaciones y KV cache (estimacion tipica de 8-10 GB para contexto moderado).
+- VRAM estimada en cuantizacion 8 bits: ~3,2 GB para pesos; en 4 bits: ~1,6-2 GB para pesos.
+- GPU recomendadas: RTX 3090, RTX 4090, A10G, L4 para fp16; RTX 3060 12 GB o superior para cuantizacion.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas en fp16, y en tarjetas con 4-6 GB usando cuantizacion (aunque no se publican pesos GGUF en el repo).
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag), endpoints de Hugging Face. No se confirma soporte de vLLM, llama.cpp u Ollama, aunque al ser safetensors Llama-compatible podrian funcionar con conversion manual.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque no se conocen los parametros reales, la licencia ni el rendimiento del modelo. A modo de referencia, si se confirmase que es un Llama de 3B, los comparables habituales serian Llama 3.2 3B Instruct (Meta, licencia Llama 3.2 Community License), Qwen2.5 3B (Alibaba, licencia Apache 2.0) y Phi-3.5-mini (Microsoft, licencia MIT). Ninguno de estos datos puede contrastarse con el modelo descrito.
+| Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
+|---|---|---|---|---|---|
+| AckerHHHH/honeypot-llama3B-drumboiler | 3,2B | no disponible | no disponible | Practicamente nula | Hugging Face |
+| Llama 3.2 3B (Meta) | 3,2B | 128K | Llama 3.2 Community License | Completa (paper, model card) | Hugging Face, oficial |
+| Qwen2.5 3B (Alibaba) | 3,1B | 32K (128K en variantes) | Apache 2.0 | Completa | Hugging Face, oficial |
+| Phi-3-mini (Microsoft) | 3,8B | 4K (128K en variantes) | MIT | Completa | Hugging Face, oficial |
 
-| Modelo | Parametros | Contexto | Licencia | Estado |
-|---|---|---|---|---|
-| honeypot-llama3B-drumboiler | no disponible | no disponible | no disponible | sin documentar |
-| Llama 3.2 3B Instruct | 3B | 128k | Llama 3.2 Community License | publicado y documentado |
-| Qwen2.5 3B | 3B | 32k | Apache 2.0 | publicado y documentado |
-| Phi-3.5-mini | 3,8B | 128k | MIT | publicado y documentado |
+La comparativa muestra que el modelo de AckerHHHH carece de la documentacion, licencia clara y contexto declarado que si ofrecen las alternativas oficiales. En parametros es practicamente identico a Llama 3.2 3B, lo que refuerza la hipotesis de que deriva de el, pero sin las garantias legales ni tecnicas del original.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada y no aporta informacion sobre entrenamiento, datos, evaluacion ni uso previsto.
-- Licencia no declarada: no se puede asumir uso comercial permitido. Cualquier despliegue en produccion requiere contactar con el autor o inspeccionar los metadatos del repositorio.
-- Riesgo elevado de checkpoint incompleto o corrupto: 0,1 GB es un tamano anomalo para un modelo de 3B.
-- Sin evaluacion publicada: no hay benchmarks, ni pruebas de sesgo, alucinacion o calidad.
-- Nombre potencialmente enganoso: "honeypot" podria indicar que el modelo no es lo que parece; conviene tratarlo con cautela en entornos de seguridad.
-- Sin idiomas declarados: no se puede garantizar soporte de castellano ni de ningun otro idioma.
-- Cero descargas y un unico like: no hay senales de uso real en la comunidad que permitan inferir su calidad.
-- Fecha de creacion futura (2026-11-05): el timestamp del repositorio es posterior a la fecha actual, lo que sugiere metadatos manipulados o un error del sistema; esto refuerza la necesidad de inspeccion manual.
+- Ausencia total de model card: no se puede verificar el desarrollador, los datos de entrenamiento, la licencia ni las capacidades reales.
+- Licencia no disponible: riesgo legal importante para cualquier uso comercial o redistribucion; no se puede asumir herencia de la licencia Llama 3.
+- Riesgo elevado de alucinacion y comportamientos no documentados: al no haber evaluacion, no se conoce la calidad de las salidas.
+- Posible modelo "honeypot" o senuelo: el nombre sugiere que podria tener comportamientos intencionadamente anomalos o servir como trampa para pipelines automaticos.
+- Idiomas no declarados: no se puede garantizar soporte de castellano ni de ningun otro idioma.
+- Contexto no declarado: imposible planificar aplicaciones multi-turno o de contexto largo.
+- Sin benchmarks: no hay evidencia de rendimiento en MMLU, HumanEval, GSM8K ni otras tareas.
+- Fecha de creacion futura (2026-11-05) en los metadatos: inconsistencia que sugiere datos de publicacion poco fiables o manipulados.
+- No recomendado para produccion sin auditoria completa de pesos, comportamiento y licencia.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/AckerHHHH/honeypot-llama3B-drumboiler
-- Libreria Unsloth (tag del repositorio): https://github.com/unslothai/unsloth
-- Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
-- Calculadora ML Impact: https://mlco2.github.io/impact
-- No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la informacion disponible.
+- Hugging Face: https://huggingface.co/AckerHHHH/honeypot-llama3B-drumboiler
+- Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
+- Calculadora ML Impact: https://mlco2.github.io/impact#compute
+- Unsloth (libreria de fine-tuning mencionada en tags): https://github.com/unslothai/unsloth
+- Llama 3.2 (familia base probable): https://huggingface.co/meta-llama/Llama-3.2-3B

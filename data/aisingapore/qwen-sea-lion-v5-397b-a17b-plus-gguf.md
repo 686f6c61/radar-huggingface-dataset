@@ -2,95 +2,94 @@
 
 ## Resumen
 
-Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF es la distribucion en formato GGUF del modelo Qwen-SEA-LION-v5-397B-A17B-Plus, desarrollado por el AI Products Pillar de AI Singapore y financiado por el National Research Foundation de Singapur. Forma parte de la familia SEA-LION (Southeast Asian Languages In One Network), una coleccion de modelos disenados especificamente para las lenguas del sudeste asiatico. Esta variante GGUF esta pensada para su uso con llama.cpp y ofrece tres niveles de cuantizacion junto con un codificador visual independiente.
+Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF es la distribucion en formato GGUF del modelo Qwen-SEA-LION-v5-397B-A17B-Plus, desarrollado por el AI Products Pillar de AI Singapore con financiacion del National Research Foundation Singapore. Forma parte de la familia SEA-LION (Southeast Asian Languages In One Network), una coleccion de modelos orientada especificamente a las lenguas del sudeste asiatico. Este repositorio concreto contiene exclusivamente los pesos cuantizados para su uso con llama.cpp, no el modelo original.
 
-El modelo es un transformer causal multimodal (texto e imagen) de gran escala. Segun los pesos en safetensors, cuenta con 568.998.952.192 parametros totales, aunque la nomenclatura comercial lo etiqueta como 397B-A17B, lo que sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 17.000 millones de parametros activos por token. Dispone de una ventana de contexto de 262.144 tokens y cobertura de nueve idiomas, incluyendo birmano, chino, ingles, indonesio, filipino, malayo, tamil, tailandes y vietnamita.
+El modelo es un transformer causal multimodal con encoder de vision, derivado de la arquitectura Qwen 3.5 en su variante 397B-A17B, lo que indica un diseno de mezcla de expertos (MoE) con aproximadamente 397 mil millones de parametros totales y 17 mil millones activos por token. El dato real de safetensors del repositorio base asciende a 568.998.952.192 parametros, cifra que incluye los componentes adicionales del modelo (encoder de vision, cabezas auxiliares y tablas n-gram). La longitud de contexto declarada es de 262.144 tokens.
 
-Su relevancia actual reside en dos factores: por un lado, cubre lenguas del sudeste asiatico que suelen estar infrarrepresentadas en los grandes modelos generalistas; por otro, se distribuye bajo licencia MIT, lo que facilita su adopcion comercial. La variante GGUF permite desplegar un modelo de este tamano en infraestructura local con llama.cpp, algo poco habitual en modelos con capacidades multimodales y contexto tan extenso.
+Su relevancia actual radica en dos factores: por un lado, cubre nueve idiomas (birmano, chino, ingles, indonesio, filipino, malayo, tamil, tailandes y vietnamita) con licencia MIT, algo poco habitual en modelos de este tamano; por otro, ofrece cuantizaciones Q4_K_M, Q6_K y Q8_0 que permiten desplegar un modelo de casi 400B en hardware mas modesto que el requerido por los pesos BF16. El repositorio incluye ademas un parche necesario para llama.cpp, ya que la compilacion estandar carga los ficheros pero genera texto corrupto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con mezcla de expertos (MoE) y codificador visual; arquitectura Qwen4Exp segun la model card |
-| Parametros totales | 568.998.952.192 (segun safetensors); etiquetado comercial como 397B |
-| Parametros activos | Aproximadamente 17.000 millones (denominacion A17B) |
+| Arquitectura | Transformer causal con encoder de vision; mezcla de expertos (MoE) segun la nomenclatura A17B; atencion lineal con puerta de salida SiLU |
+| Parametros totales | 568.998.952.192 (safetensors del modelo base); 397B-A17B segun nomenclatura comercial |
+| Parametros activos | 17B (indicado en el nombre del modelo) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GGUF Q4_K_M, Q6_K y Q8_0; codificador visual en F16 |
-| Idiomas soportados | Birmano, chino, ingles, indonesio, filipino, malayo, tamil, tailandes y vietnamita |
+| Tipos de cuantizacion | GGUF Q4_K_M, Q6_K y Q8_0; encoder de vision en F16 |
+| Idiomas soportados | Birmano (my), chino (zh), ingles (en), indonesio (id), filipino (fil), malayo (ms), tamil (ta), tailandes (th), vietnamita (vi) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (con fichero separado mmproj para el codificador visual) |
+| Formato de pesos | GGUF (ficheros divididos en el caso de Q8_0); modelo base en BF16, FP8 y NVFP4 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer causal con mezcla de expertos (MoE), identificada en la model card como Qwen4Exp. Los ficheros GGUF conservan el modelo de lenguaje completo, incluidas sus tablas de n-gramas y una capa de prediccion multi-token (MTP, multi-token prediction), lo que exige una compilacion de llama.cpp compatible con dicha arquitectura. El codificador visual se distribuye como un fichero independiente (`mmproj`) que funciona con cualquiera de las tres cuantizaciones, y el tokenizador, la plantilla de chat y los parametros de muestreo por defecto se mantienen sin cambios respecto al modelo original.
+La arquitectura es un transformer causal de tipo mezcla de expertos con atencion lineal y una puerta de salida implementada con activacion SiLU. Esta particularidad es critica: la implementacion upstream de llama.cpp para Qwen4Exp emplea una puerta sigmoide, por lo que los ficheros GGUF de este repositorio requieren un parche (`llama.cpp-silu-gate.patch`) que ensena al runtime a leer la clave `qwen4exp.ssm.output_gate_silu`. Sin el parche, llama.cpp carga los pesos pero produce texto corrupto. El modelo conserva ademas las tablas n-gram y la cabeza de prediccion multi-token (MTP) del modelo original.
 
-En cuanto al entrenamiento, la model card remite a la ficha del modelo base (aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus) para los detalles, y advierte explicitamente de que el entrenamiento es experimental y sigue en curso. No se proporcionan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El modelo deriva de la familia Qwen 3.5 (Qwen3.5-397B-A17B y Qwen3.8-Flash-Next), cuyas fichas se citan como referencia para los detalles de entrenamiento y evaluacion de base.
+El encoder de vision se distribuye como un fichero separado (`mmproj-...gguf`, 0,9 GB en F16) compatible con cualquiera de las tres cuantizaciones del modelo de lenguaje. El tokenizador, la plantilla de chat y los valores por defecto de muestreo no se han modificado respecto al modelo base. No se dispone en la informacion proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional en nueve idiomas del sudeste asiatico y en ingles y chino.
-- Razonamiento multimodal: procesa imagenes junto con texto gracias al codificador visual independiente (pipeline image-text-to-text).
-- Modo de pensamiento (thinking mode) controlable mediante `enable_thinking` en la plantilla de chat.
-- Prediccion multi-token (MTP) integrada en los pesos, orientada a acelerar la decodificacion.
-- Contexto largo de 262.144 tokens para documentos extensos y conversaciones multi-turno prolongadas.
-- Soporte de plantilla de chat estilo Jinja y compatibilidad con la API de chat completions de estilo OpenAI a traves de llama-server.
-- Capacidad de recibir imagenes codificadas en base64 mediante el cliente OpenAI.
-- No se documenta en la informacion disponible soporte explicito de tool calling o function calling, ni capacidades de audio.
+- Generacion de texto y razonamiento en nueve idiomas del sudeste asiatico mas chino e ingles.
+- Modo de razonamiento explicito (thinking) activado por defecto, desactivable mediante `enable_thinking: false` en `chat_template_kwargs`.
+- Procesamiento de imagen y texto combinados (pipeline `image-text-to-text`), con encoder de vision separado.
+- Prediccion multi-token (MTP), util para decodificacion especulativa y aceleracion de inferencia.
+- Conversacion multi-turno con contexto de hasta 262.144 tokens.
+- Compatibilidad con la API de chat de OpenAI a traves de `llama-server` (`/v1/chat/completions`).
+- Interfaz web integrada en llama.cpp para chat con adjuncion de imagenes.
+- Soporte de plantilla Jinja (`--jinja`) para el formateo de conversaciones.
 
 ## Casos de uso
 
-- Atencion al cliente multilingue en el sudeste asiatico: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, tailandes, vietnamita o filipino con una ventana de 262.144 tokens, lo que permite mantener historial extenso y documentacion de referencia en el mismo contexto.
-- Procesamiento de documentacion comercial y logistica regional: tal como ilustra el ejemplo de la model card (exportacion de durian congelado de Medan a Singapur), el modelo responde en el idioma del usuario con formatos estructurados, util para asistencia aduanera y cadenas de suministro.
-- Analisis de imagenes con descripcion en lengua local: gracias al codificador visual, se pueden enviar fotografias o documentos escaneados y obtener descripciones o extraccion de informacion en birmano, tamil o filipino, idiomas con poca cobertura en modelos generalistas.
-- Despliegue local en infraestructura propia: la version Q4_K_M (338 GB) permite servir el modelo con llama.cpp sin depender de APIs externas, relevante para organizaciones con requisitos de soberania de datos.
-- Investigacion linguistica y evaluacion de modelos para lenguas del sudeste asiatico: el modelo sirve como referencia para estudiar rendimiento en idiomas de bajos recursos y comparar con modelos generalistas.
-- Generacion de contenido y resumenes en contextos academicos o administrativos regionales: el contexto largo facilita resumir informes extensos o actas en el idioma original sin truncamientos.
-- Prototipado de asistentes multimodales con licencia permisiva: la licencia MIT permite integrar el modelo en productos comerciales sin las restricciones habituales de otros modelos de gran escala.
+- Atencion al cliente multilingue en el sudeste asiatico: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, tailandes, vietnamita o filipino con una ventana de 262.144 tokens, lo que permite mantener el historial completo de un cliente y su documentacion adjunta en una sola sesion.
+- Procesamiento de documentos comerciales con imagenes: gracias al encoder de vision, puede extraer datos de facturas, albaranes o formularios escaneados y responder preguntas sobre ellos, combinando la entrada visual con contexto textual largo.
+- Analisis de imagenes medicas o agricolas en idiomas locales: el soporte de tamil, birmano o filipino permite desplegar asistentes de descripcion de imagenes en regiones donde los modelos generalistas rinden peor.
+- Generacion de contenido en lenguas minoritarias: redaccion de articulos, resumenes o traducciones en birmano, tamil o filipino, idiomas con menor representacion en corpus de entrenamiento masivos.
+- Asistencia logistica y aduanera regional: el ejemplo de la model card (exportacion de durian congelado de Medan a Singapur) ilustra el uso para consultas sobre documentacion de exportacion, tiempos de transito y riesgos de cadena de frio en rutas del sudeste asiatico.
+- Despliegue en infrastructura propia con llama.cpp: al ofrecer cuantizaciones Q4_K_M (338 GB), Q6_K (467 GB) y Q8_0 (605 GB), permite servir el modelo en clusters con GPUs de 80 GB repartidas, sin depender de APIs externas.
+- Investigacion linguistica comparada: la licencia MIT y la disponibilidad de pesos abiertos facilitan estudios de rendimiento por idioma y evaluaciones de sesgo en lenguas del sudeste asiatico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que la evaluacion corresponde al modelo base y remite a su ficha, pero no incluye cifras concretas en el material proporcionado.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada segun cuantizacion: Q4_K_M ocupa 338 GB, Q6_K 467 GB y Q8_0 605 GB (dividido en dos ficheros). El codificador visual anade 0.9 GB en F16.
-- Al tratarse de un modelo MoE de gran escala, el requisito de memoria es muy elevado incluso en cuantizaciones agresivas; no cabe en GPUs de consumo individuales.
-- GPU recomendadas: no se especifican en la informacion disponible; por el volumen de pesos, se requiere un entorno multi-GPU de clase servidor (A100, H100 u equivalentes) o un sistema con suficiente memoria unificada o RAM del sistema.
-- Despliegue: llama.cpp mediante `llama-server`, con soporte de `--mmproj` para entrada de imagen y `-c 262144` para contexto completo.
+- VRAM estimada para inferencia: aproximadamente 338 GB para Q4_K_M, 467 GB para Q6_K y 605 GB para Q8_0, mas 0,9 GB del encoder de vision si se usa entrada de imagen. Estas cifras exigen repartir el modelo entre varias GPUs o recurrir a memoria unificada.
+- GPU recomendadas: no es viable en una unica GPU consumer. Se requieren configuraciones multi-GPU con A100 80 GB, H100 80 GB o H200; por ejemplo, cinco A100 de 80 GB para Q4_K_M con margen para el contexto, u ocho para Q8_0.
+- No cabe en GPUs consumer (RTX 4090, 3090, etc.) de forma completa; solo seria posible con offloading parcial a RAM del sistema, con latencia muy elevada.
+- Opciones de despliegue: llama.cpp con el parche `llama.cpp-silu-gate.patch` aplicado sobre el commit `401563f10ec60754e688cd3165c1343cf4be9642` (master a 2026-11-18), compilado con `-DGGML_CUDA=ON`. El servidor se lanza con `llama-server` y el flag `--mmproj` para vision. No se documenta soporte para vLLM, TGI u Ollama en la informacion disponible.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
-- La compilacion de llama.cpp debe soportar la arquitectura Qwen4Exp del modelo; versiones antiguas no seran compatibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF | 568.998.952.192 totales (A17B activos) | 262.144 | Si (9 idiomas) | MIT | GGUF |
-| Qwen-SEA-LION-v5-397B-A17B-Plus (BF16) | 568.998.952.192 totales (A17B activos) | 262.144 | Si (9 idiomas) | MIT | Safetensors |
-| Qwen3.5-397B-A17B (base) | No disponible en la informacion | No disponible en la informacion | No especificado | No disponible en la informacion | No disponible en la informacion |
+| Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF | 568,9B totales / 17B activos | 262.144 | 9 | MIT | GGUF |
+| Qwen-SEA-LION-v5-397B-A17B-Plus (BF16) | 568,9B totales / 17B activos | 262.144 | 9 | MIT | Safetensors |
+| Qwen-SEA-LION-v5-397B-A17B-Plus-FP8 | 568,9B totales / 17B activos | 262.144 | 9 | MIT | FP8 |
+| Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 | 568,9B totales / 17B activos | 262.144 | 9 | MIT | NVFP4 |
 
-La comparativa con otros modelos de la misma categoria (por ejemplo, alternativas MoE de gran escala centradas en lenguas asiaticas) no esta disponible en la informacion proporcionada. Las variantes FP8 y NVFP4 del mismo modelo base ofrecen alternativas de cuantizacion para despliegues con otro tipo de hardware.
+No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no ha sido alineado para seguridad; los desarrolladores deben aplicar su propio ajuste de seguridad y medidas de proteccion adicionales.
-- No se ha probado la robustez frente a prompting adversarial.
-- Riesgo de alucinacion documentado por el autor: puede generar contenido irrelevante o elementos ficticios no fundamentados en el contexto.
-- El entrenamiento es experimental y sigue en curso, segun la propia model card.
-- La cobertura linguistica se limita a los nueve idiomas declarados; el rendimiento fuera de ellos no esta garantizado.
-- El requisito de memoria (338 GB en la cuantizacion mas ligera) limita severamente el despliegue a infraestructura de gran escala.
-- La licencia MIT permite uso comercial, pero los autores declinan toda responsabilidad por reclamaciones derivadas del uso de los pesos.
-- La compatibilidad depende de una compilacion de llama.cpp que soporte la arquitectura Qwen4Exp; no funcionara con versiones genericas.
+- El modelo no ha sido alineado para seguridad segun la propia model card; los desarrolladores deben aplicar su propio ajuste de seguridad antes de usarlo en produccion.
+- Requiere una compilacion parcheada de llama.cpp: la version estandar carga los pesos pero genera texto corrupto por la diferencia entre la puerta SiLU y la sigmoide de Qwen4Exp.
+- El repositorio ocupa 1.411 GB, lo que exige almacenamiento considerable y una descarga larga.
+- El contexto de 262.144 tokens, aunque amplio, implica un coste de memoria KV elevado en produccion; no se documentan tecnicas de compresion de cache en la informacion disponible.
+- La cobertura linguistica se limita a los nueve idiomas declarados; el rendimiento en otras lenguas no esta documentado.
+- Riesgo de alucinacion no cuantificado: no se han publicado evaluaciones de fidelidad en la informacion disponible.
+- No se documentan sesgos conocidos ni evaluaciones de sesgo en la model card.
+- La licencia MIT permite uso comercial sin restricciones adicionales, pero los autores declinan cualquier responsabilidad por danos derivados del uso.
+- El modelo base tiene versiones BF16, FP8 y NVFP4; la eleccion de GGUF limita el despliegue a llama.cpp y ecosistemas compatibles, sin soporte documentado para vLLM o TGI.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF
-- Modelo base (BF16): https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus
-- Variante FP8: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-FP8
-- Variante NVFP4: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4
-- Coleccion SEA-LION v5: https://huggingface.co/collections/aisingapore/sea-lion-v5-6afab40ea2b5b627e9930703
-- Sitio oficial de SEA-LION: https://sea-lion.ai
+- Repositorio Hugging Face: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF
+- Modelo base: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus
+- Version FP8: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-FP8
+- Version NVFP4: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4
+- Coleccion SEA-LION v5: https://huggingface.co/collections/aisingapore/sea-lion-v5
+- Sitio oficial SEA-LION: https://sea-lion.ai
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
-- Modelo Qwen3.5-397B-A17B: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
-- Modelo Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia MIT: https://mit-license.org/

@@ -2,63 +2,56 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-BaseQuant-V1 es una cuantizacion del modelo Qwen/Qwen3.6-35B-A3B publicada por basecompute bajo licencia Apache 2.0. Se distribuye en dos formatos: un bundle propietario `.base` para el runtime baseRT y un fichero GGUF para llama.cpp. El objetivo es ofrecer una version comprimida del modelo original manteniendo la distribucion de probabilidad del siguiente token lo mas cercana posible al modelo en BF16, medido mediante divergencia KL sobre un conjunto de validacion reservado.
+Qwen3.6-35B-A3B-BaseQuant-V1 es una cuantización del modelo Qwen/Qwen3.6-35B-A3B publicada por el usuario basecompute bajo el paraguas de su herramienta BaseQuant. No se trata de un modelo entrenado desde cero, sino de una compilación cuantizada del modelo base de Qwen, distribuida en dos formatos: un bundle propietario `.base` para el runtime baseRT y un fichero GGUF compatible con llama.cpp. El objetivo es ofrecer una alternativa de cuantización con una divergencia KL baja respecto al modelo BF16 original, manteniendo el tower de visión y la cabeza MTP para decodificación especulativa en el bundle `.base`.
 
-El modelo base Qwen3.6-35B-A3B es un transformer de tipo mixture-of-experts (MoE) con 34.660.610.688 parametros totales, segun los datos de safetensors del repositorio. La nomenclatura "A3B" del nombre indica aproximadamente 3 mil millones de parametros activos por token, aunque este dato no se confirma de forma explicita en la informacion disponible. El repositorio ocupa 45,2 GB y la variante cuantizada Medium pesa 23,08 GB en formato `.base` y 22,13 GB en GGUF.
+El modelo base subyacente, Qwen3.6-35B-A3B, es un transformer de tipo Mixture of Experts con 34.660.610.688 parámetros totales (34,66 mil millones) según los safetensors del repositorio, del cual se activa solo una fracción por token (el sufijo A3B sugiere aproximadamente 3 mil millones de parámetros activos, aunque este dato no se confirma de forma explícita en la información disponible). La cuantización Medium ocupa 23,08 GB en formato `.base` y 22,13 GB en GGUF, lo que la sitúa en el rango de cuantizaciones de 4 bits para un modelo de este tamaño.
 
-La relevancia de esta publicacion radica en que el bundle `.base` incluye la torre de vision y la cabeza MTP (multi-token prediction) para decodificacion especulativa, capacidades que habitualmente se pierden en las cuantizaciones GGUF convencionales. Ademas, el autor publica una comparativa de divergencia KL frente a la cuantizacion `UD-Q4_K_M` de unsloth, del mismo tamano, lo que permite evaluar la fidelidad de la compresion con una metrica objetiva.
+La relevancia de esta ficha radica en que documenta una de las primeras compilaciones cuantizadas verificables de la familia Qwen3.6, con métricas de divergencia KL publicadas por categoría y una comparación directa con la cuantización `UD-Q4_K_M` de unsloth. Está pensada para desarrolladores que necesitan desplegar el modelo en hardware con VRAM limitada sin renunciar a la fidelidad respecto al BF16, y que quieran evaluar si el runtime baseRT o el ecosistema llama.cpp se ajusta mejor a su infraestructura.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mixture-of-experts); detalles internos no disponibles |
-| Parametros totales | 34.660.610.688 |
-| Parametros activos | aproximadamente 3B (inferido de la nomenclatura A3B; no confirmado en la informacion) |
-| Longitud de contexto | 32.768 tokens (valor usado en el ejemplo de llama-server con `-c 32768`); contexto nativo del modelo base no disponible |
-| Tipos de cuantizacion | Un unico tamano "Medium" (23,08 GB en `.base`, 22,13 GB en GGUF); nivel de bits no especificado |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer Mixture of Experts (MoE), según el nombre del modelo base; detalles internos no disponibles |
+| Parametros totales | 34.660.610.688 (34,66 mil millones) |
+| Parametros activos | Aproximadamente 3 mil millones (inferido del sufijo A3B; no confirmado en la información disponible) |
+| Longitud de contexto | 32.768 tokens en el ejemplo de llama.cpp del autor; contexto máximo del modelo base no disponible |
+| Tipos de cuantizacion | Medium (23,08 GB en `.base`, 22,13 GB en GGUF); no se detalla el esquema exacto de bits |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | bundle `.base` (baseRT) y GGUF (llama.cpp) |
+| Formato de pesos | `.base` (bundle baseRT) y GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer con arquitectura de mezcla de expertos (MoE), segun refleja la nomenclatura A3B y el recuento de parametros totales (34,66B). La informacion disponible no detalla el numero de expertos, la estrategia de enrutamiento ni la dimension de las capas. El bundle `.base` incorpora ademas dos componentes que no aparecen en el GGUF: una torre de vision y una cabeza MTP (multi-token prediction) destinada a decodificacion especulativa, lo que sugiere que el modelo base es multimodal y admite aceleracion por prediccion de multiples tokens.
+La información disponible no describe la arquitectura interna del modelo base Qwen3.6-35B-A3B más allá de su naturaleza MoE y su tamaño total de 34,66 mil millones de parámetros. El sufijo A3B indica que se activan aproximadamente 3 mil millones de parámetros por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamaño. El bundle `.base` incluye además el tower de visión y la cabeza MTP (Multi-Token Prediction) para decodificación especulativa, lo que confirma que el modelo base es multimodal y que soporta generación acelerada de tokens.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o similares en el modelo original. Respecto a esta cuantizacion en concreto, el autor no especifica el algoritmo empleado (GPTQ, AWQ, calibracion propia u otro), aunque la denominacion "BaseQuant" y la inclusion de una metrica de divergencia KL sugieren un proceso de calibracion orientado a preservar la distribucion de salida. La evaluacion de fidelidad se realizo sobre 58 prompts en diez categorias y 32.507 tokens puntuados, un conjunto que, segun el autor, no se uso para construir los ficheros.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base. La contribución específica de esta publicación es la cuantización: el autor reporta la divergencia KL de la distribución del siguiente token respecto al modelo BF16 sobre 32.507 tokens puntuados en 58 prompts de diez categorías, con un valor global de 0,00462 para el bundle `.base` y 0,00476 para el GGUF. Estos valores son ligeramente inferiores al 0,00467 de la cuantización `UD-Q4_K_M` de unsloth, lo que sugiere una fidelidad competitiva en el mismo rango de tamaño.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con soporte de chat (tag `conversational`).
-- Razonamiento y matematicas: la evaluacion de fidelidad incluye categorias especificas de Math y Science con divergencia KL baja.
-- Generacion de codigo, incluida la categoria "Agentic coding" en la evaluacion de cuantizacion.
-- Uso de herramientas (tool use / function calling), con categoria dedicada en la evaluacion.
-- Capacidades multilingues, con categoria dedicada en la evaluacion.
-- Vision: la torre de vision esta presente en el bundle `.base`, aunque no se detalla que tareas de imagen soporta.
-- Decodificacion especulativa mediante cabeza MTP (solo en el bundle `.base`, no en el GGUF).
-- Procesamiento de contexto largo: la evaluacion incluye una categoria "Long context" con 2.048 tokens puntuados.
+- Generación de texto conversacional, según el tag `conversational` del repositorio.
+- Razonamiento y matemáticas, con categorías específicas evaluadas en la tabla de divergencia KL (Math, Science, Research).
+- Generación de código y coding agéntico, con categorías dedicadas en la evaluación (Code, Agentic coding).
+- Uso de herramientas (tool use), evaluado como categoría independiente en la tabla de KL.
+- Capacidades multilingües, evaluadas como categoría independiente en la tabla de KL.
+- Visión, ya que el bundle `.base` incluye el tower de visión del modelo base.
+- Decodificación especulativa mediante la cabeza MTP incluida en el bundle `.base`.
+- Contexto largo, con una categoría específica de long context en la evaluación y 32.768 tokens configurados en el ejemplo de llama.cpp.
+- Compatibilidad con endpoints, según el tag `endpoints_compatible`.
 
 ## Casos de uso
 
-- Asistente conversacional multi-turno: el modelo mantiene el tag `conversational` y la evaluacion muestra divergencia KL de 0,00634 en la categoria Chat (GGUF), lo que indica que la cuantizacion preserva el comportamiento conversacional del original. Adecuado para chatbots de atencion al cliente desplegados con llama.cpp.
-
-- Generacion de codigo en produccion: la categoria Code obtiene 0,00434 de divergencia KL en GGUF, y la categoria Agentic coding 0,00490. Esto permite integrar el modelo en pipelines de CI/CD o asistentes de IDE donde la fidelidad al modelo original es critica para evitar regresiones en el codigo generado.
-
-- Agentes con tool calling: la categoria Tool use registra 0,00517 de divergencia KL en GGUF. El modelo puede gestionar flujos de agente con llamadas a funciones, apropiado para orquestacion de tareas automatizadas donde se requiere que el modelo siga emitiendo las llamadas correctas tras la cuantizacion.
-
-- Analisis de documentos largos: con contexto de 32.768 tokens configurado en llama.cpp y una divergencia de 0,00438 en la categoria Long context, el modelo es apto para resumir o extraer informacion de contratos, informes o articulos extensos.
-
-- Razonamiento matematico y cientifico: las categorias Math (0,00318) y Science (0,00510) en GGUF muestran una fidelidad alta, lo que lo hace util para tutoria automatizada, resolucion de problemas paso a paso o generacion de ejercicios con solucion.
-
-- Procesamiento multilingue: la categoria Multilingual obtiene la divergencia mas baja de la tabla (0,00213 en GGUF), lo que sugiere que la cuantizacion degrada minimamente el comportamiento en idiomas distintos del ingles. Apropiado para traduccion o atencion al cliente en varios idiomas.
-
-- Inferencia multimodal en local: el bundle `.base` conserva la torre de vision, por lo que puede desplegarse con baseRT para tareas de descripcion de imagenes o extraccion de informacion de capturas, aunque los detalles de la torre no estan documentados.
-
-- Decodificacion acelerada: la cabeza MTP del bundle `.base` permite decodificacion especulativa, util en escenarios de baja latencia donde el throughput importa, como asistentes interactivos.
+- Despliegue en servidores con VRAM limitada: la cuantización Medium ocupa 22-23 GB, lo que permite ejecutar un modelo MoE de 34,66 mil millones de parámetros en una única GPU de 24 GB (RTX 4090, L4, A10G) usando llama.cpp con `-ngl 99`, algo inviable con el modelo en BF16.
+- Asistentes conversacionales multi-turno: el tag `conversational` y la categoría Chat de la evaluación KL (0,00634-0,00648) indican que la cuantización preserva bien el comportamiento conversacional, adecuado para chatbots de atención al cliente con contexto de hasta 32.768 tokens.
+- Generación de código en pipelines de CI/CD: la baja divergencia en la categoría Code (0,00427-0,00434) y el soporte de tool use permiten integrar el modelo en flujos de revisión automática de código o generación de tests dentro de herramientas de desarrollo.
+- Agentes autónomos con uso de herramientas: la categoría Tool use (0,00474-0,00517) y la inclusión de la cabeza MTP para decodificación especulativa hacen que el modelo sea apto para agentes que encadenan llamadas a funciones con latencia reducida.
+- Procesamiento de documentos largos: la categoría Long context (0,00427-0,00438) con 2.048 tokens evaluados sugiere que la cuantización mantiene la fidelidad en ventanas extensas, útil para resumen y extracción de información de contratos o informes.
+- Análisis multimodal de imágenes: el tower de visión incluido en el bundle `.base` permite tareas de descripción de imágenes o extracción de información visual, siempre que se use el runtime baseRT 0.5.2 o superior.
+- Investigación en cuantización: la tabla de divergencia KL por categoría y la comparación con `UD-Q4_K_M` de unsloth convierten este repositorio en un punto de referencia para estudiar el impacto de la cuantización en distintas tareas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor publica unicamente una tabla de divergencia KL respecto al modelo BF16 sobre texto reservado, que mide fidelidad de la cuantizacion, no calidad absoluta del modelo.
+No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta divergencia KL respecto al modelo BF16, que no es un benchmark de capacidad sino una medida de fidelidad de la cuantización:
 
 | Categoria | Tokens | BaseQuant `.base` | BaseQuant GGUF | unsloth `UD-Q4_K_M` |
 |---|---:|---:|---:|---:|
@@ -72,41 +65,41 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 | Research | 2.123 | 0,00737 | 0,00848 | 0,00584 |
 | Science | 4.382 | 0,00467 | 0,00510 | 0,00490 |
 | Tool use | 2.667 | 0,00474 | 0,00517 | 0,00519 |
-| **Total** | 32.507 | 0,00462 | 0,00476 | 0,00467 |
-
-Lectura de los datos: el bundle `.base` supera al GGUF en la mayoria de categorias (0,00462 frente a 0,00476 en el total), y ambos estan en linea con unsloth `UD-Q4_K_M` (0,00467). El GGUF es peor en Research (0,00848 frente a 0,00584 de unsloth) y Math (0,00318 frente a 0,00265), y mejor en Long context (0,00438 frente a 0,00536). El `.base` es la opcion mas fiel en Agentic coding, Code, Long context, Tool use y Chat.
+| **Todos** | 32.507 | **0,00462** | **0,00476** | **0,00467** |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero Medium pesa 22,13 GB (GGUF) y 23,08 GB (`.base`). Para inferencia completa en GPU se necesitan al menos 24 GB de VRAM, mas el espacio para el contexto KV; con 32.768 tokens de contexto el requisito sube por encima de 24 GB.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para despliegue comodo con contexto largo. En consumer, una RTX 3090 o RTX 4090 (24 GB) puede alojar los pesos, pero el contexto de 32.768 tokens probablemente requiera offload parcial a CPU o reducir la ventana.
-- Cabe en consumer GPU: si, en RTX 3090/4090 con 24 GB, con limitaciones de contexto; en GPUs de 16 GB solo con offload a CPU.
-- Opciones de despliegue: baseRT (`basert serve`), SuperFluid (`superfluid serve` con runtime basert), llama.cpp (`llama-server`). El bundle `.base` requiere baseRT, con la version indicada como "TODO-VERSION" en la model card, es decir, no concretada.
-- Latencia y throughput: no disponibles. La cabeza MTP del bundle `.base` esta pensada para decodificacion especulativa y deberia mejorar el throughput, pero no se publican cifras.
+- VRAM estimada para inferencia: aproximadamente 22-23 GB para la cuantización Medium, más overhead de contexto KV. Con 32.768 tokens de contexto, la VRAM adicional puede ser significativa y depende de la arquitectura MoE del modelo base.
+- GPU recomendadas: RTX 4090 (24 GB), L4 (24 GB), A10G (24 GB) para la cuantización Medium en una sola GPU; A100 40/80 GB y H100 para mayor margen de contexto o mayor throughput.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y potencialmente en RTX 3090 (24 GB), siempre que el contexto se limite para no agotar la VRAM.
+- Opciones de despliegue: baseRT 0.5.2 o superior (bundle `.base`), llama.cpp (GGUF), SuperFluid con runtime basert, y endpoints compatibles según el tag del repositorio.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-BaseQuant-V1 | 34,66B (MoE, ~3B activos) | 32.768 configurado | `.base`, GGUF | Apache 2.0 | KL total 0,00462 (`.base`) / 0,00476 (GGUF) |
-| unsloth `UD-Q4_K_M` de Qwen3.6-35B-A3B | 34,66B (MoE) | no disponible | GGUF | Apache 2.0 | KL total 0,00467; referencia del autor |
-| Qwen/Qwen3.6-35B-A3B (BF16) | 34,66B (MoE) | no disponible | safetensors | Apache 2.0 | Modelo de referencia; sin cuantizar |
+| BaseQuant-V1 (este) | 34,66 mil M (MoE, ~3 mil M activos) | 32.768 en ejemplo | Apache 2.0 | `.base`, GGUF | KL global 0,00462-0,00476 |
+| unsloth `UD-Q4_K_M` del mismo base | 34,66 mil M (MoE) | No disponible | Apache 2.0 (heredada) | GGUF | KL global 0,00467; mejor en Math y Research |
+| Qwen/Qwen3.6-35B-A3B (BF16) | 34,66 mil M (MoE) | No disponible | Apache 2.0 | Safetensors | Modelo de referencia sin cuantizar |
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
+La comparación se limita al mismo modelo base en distintas formas de distribución, ya que la información disponible no incluye otros modelos de la misma categoría. El bundle `.base` supera a `UD-Q4_K_M` en ocho de las diez categorías evaluadas, mientras que `UD-Q4_K_M` obtiene mejor divergencia en Math (0,00265 frente a 0,00304) y Research (0,00584 frente a 0,00737).
 
 ## Limitaciones y advertencias
 
-- Solo se publica un tamano de cuantizacion ("Medium"); no hay variantes mas pequenas para hardware limitado ni versiones de mayor precision.
-- El bundle `.base` requiere una version de baseRT indicada como "TODO-VERSION" en la model card, es decir, no especificada; puede haber problemas de compatibilidad.
-- El GGUF presenta mayor divergencia KL que el `.base` en Research (0,00848 frente a 0,00584 de unsloth) y en Math (0,00318 frente a 0,00265), por lo que para tareas de investigacion o matematicas conviene evaluar el `.base` o el modelo BF16.
-- El GGUF no incluye la torre de vision ni la cabeza MTP; la decodificacion especulativa solo esta disponible en el bundle `.base`.
-- No se documentan los idiomas soportados ni los sesgos del modelo base; el autor no publica evaluaciones de seguridad o alineacion.
-- Riesgo de alucinacion inherente al modelo base, no evaluado en la model card.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion ni validacion independiente de las metricas.
-- La licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen/Qwen3.6-35B-A3B, que conviene verificar por separado.
+- Sesgos conocidos: no disponibles en la información proporcionada; dependen del modelo base Qwen3.6-35B-A3B.
+- Riesgo de alucinación: no cuantificado; la cuantización puede amplificar ligeramente los errores del modelo base, aunque la divergencia KL reportada es baja.
+- Limitaciones de contexto: el ejemplo de llama.cpp usa 32.768 tokens, pero el contexto máximo del modelo base no se especifica; superar la ventana configurada puede degradar la calidad.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.6-35B-A3B, ya que la licencia del derivado hereda la del original.
+- El bundle `.base` requiere baseRT 0.5.2 o superior; versiones anteriores no son compatibles.
+- La cuantización Medium es la única publicada; no hay variantes de menor o mayor tamaño en este repositorio.
+- El rendimiento en Math y Research es peor que el de `UD-Q4_K_M` de unsloth, por lo que para cargas intensivas en matemáticas o investigación podría ser preferible la alternativa.
+- No se especifican los idiomas soportados ni el esquema exacto de bits de la cuantización, lo que dificulta estimar con precisión el impacto en tareas específicas.
+- El repositorio tiene solo 381 descargas y 2 likes en el momento de la consulta, lo que indica una validación comunitaria limitada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/basecompute/Qwen3.6-35B-A3B-BaseQuant-V1
+- Repositorio en Hugging Face: https://huggingface.co/basecompute/Qwen3.6-35B-A3B-BaseQuant-V1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Instalador de SuperFluid: https://superfluid.sh/install.sh
+- Cuantización de referencia de unsloth: no disponible en la información proporcionada.

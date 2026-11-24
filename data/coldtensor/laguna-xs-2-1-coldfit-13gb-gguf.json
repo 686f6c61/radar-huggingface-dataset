@@ -5,7 +5,7 @@
   "author": "ColdTensor",
   "url": "https://huggingface.co/ColdTensor/Laguna-XS-2.1-Coldfit-13GB-GGUF",
   "created_at": "2026-11-19T04:56:10.000Z",
-  "updated_at": "2026-11-19T05:47:22.000Z",
+  "updated_at": "2026-11-23T19:57:01.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

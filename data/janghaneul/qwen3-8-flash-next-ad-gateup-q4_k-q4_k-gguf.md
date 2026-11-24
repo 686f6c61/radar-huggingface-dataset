@@ -2,95 +2,96 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-AD-gateup-Q4_K-Q4_K-GGUF es una cuantización GGUF de Qwen3.8-Flash-Next, un modelo de lenguaje de arquitectura MoE desarrollado por el equipo Qwen (Alibaba). El trabajo de cuantización lo firma el usuario janghaneul, que publica dos variantes de compresión orientadas a inferencia local de modelos MoE en llama.cpp y motores derivados, con una receta propia denominada AD-5.00bpw-Q5_K_M. El modelo base cuenta con 176.943.899.520 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de los modelos masivos con enrutamiento disperso.
+Qwen3.8-Flash-Next es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por el equipo Qwen (Alibaba). Esta ficha documenta una cuantización GGUF de terceros, publicada por el usuario janghaneul bajo el nombre `Qwen3.8-Flash-Next-AD-gateup-Q4_K-Q4_K-GGUF`, pensada para inferencia local de MoE en llama.cpp (y en el runtime Strata). El modelo base cuenta con 176.943.899.520 parámetros totales según los pesos en safetensors, y esta build concreta emplea una receta de cuantización de 5,00 bpw denominada `AD-5.00bpw-Q5_K_M`.
 
-La relevancia de esta ficha no está en el modelo original, sino en la estrategia de asignación de bits: el autor concentra la precisión en los expertos de puerta y subida (gate/up), que identifica como el grupo que determina la calidad, mientras degrada deliberadamente los expertos de bajada a IQ4_NL y mantiene atención, expertos compartidos, embeddings y la tabla PLE n-gram en Q8_0. Es un caso práctico de cuantización guiada por medición, con pruebas sobre 161 problemas de código ejecutable en MultiPL-E humaneval-cpp y 5 ejecuciones por variante.
+El problema que resuelve esta publicación es el de hacer viable el despliegue local de un MoE de gran tamaño con un equilibrio medido entre calidad y RAM residente. La receta mantiene en Q8_0 todo lo que no son expertos enrutados (atención, `ssm_out` de tipo GDN, expertos compartidos, embeddings y la tabla n-gram PLE) y en IQ4_NL los expertos `down`, mientras que la variación se concentra en los expertos `gate`/`up`, que son los que determinan la calidad en este modelo. Se ofrecen dos builds: `AD-404bpw-q4_k_m` (la recomendada, 109,78 GiB totales y 59,11 GiB residentes con el PLE en streaming) y `AD-467bpw-q5_k_m` (119,05 GiB totales, 68,37 GiB residentes).
 
-El resultado son dos builds de tres shards cada uno, con 119,05 GiB y 109,78 GiB en disco, y una huella residente de 68,37 GiB y 59,11 GiB respectivamente cuando el motor hace streaming de la tabla n-gram. La licencia es qwen-community-1.0, lo que condiciona el uso comercial.
+La relevancia actual es doble: por un lado, demuestra una metodología de cuantización guiada por medición (6 variantes × 161 problemas × 5 ejecuciones sobre MultiPL-E humaneval-cpp) en lugar de una asignación uniforme de bits; por otro, documenta con detalle la composición byte a byte de los tensores, algo poco habitual en publicaciones de cuantización de terceros. La licencia del modelo base es `qwen-community-1.0`, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con atención, GDN (ssm_out), expertos compartidos y tabla PLE n-gram; detalles completos del modelo base no disponibles |
-| Parametros totales | 176.943.899.520 (según safetensors del modelo base) |
+| Arquitectura | Transformer MoE con atención y capas GDN (`ssm_out`), expertos compartidos y tabla n-gram PLE (`per_layer_token_embd`); el modelo base es Qwen3.8-Flash-Next |
+| Parametros totales | 176.943.899.520 (pesos safetensors del modelo base) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q4_K, IQ3_S, IQ2_S, IQ4_NL, Q8_0, F32/F16, BF16 (tensores hc_*) |
+| Tipos de cuantizacion | GGUF: Q4_K, IQ2_S, IQ3_S, IQ4_NL, Q8_0, F32/F16, BF16 (builds `AD-404bpw-q4_k_m` y `AD-467bpw-q5_k_m`) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (license: other) |
-| Formato de pesos | GGUF dividido en 3 shards |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en la model card) |
+| Formato de pesos | GGUF (3 shards por build; librería `gguf`, runtime llama.cpp / Strata) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos (MoE), según se deduce de los nombres de tensores presentes en la cuantización: `ffn_gate_exps`, `ffn_up_exps` y `ffn_down_exps` para los expertos enrutados, `attn_qkv` y `attn_gate` para la atención, `ssm_out` para una capa de tipo GDN (atención lineal con estado), expertos compartidos, y una tabla `per_layer_token_embd` que el autor describe como tabla PLE n-gram de acceso aleatorio. También aparecen tensores `hc_*` (hyper-connection), que en el build Q4_K se mantienen en BF16 tras la actualización del 12 de noviembre de 2026. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+El modelo base Qwen3.8-Flash-Next es un MoE con atención estándar combinada con capas GDN (cuyo tensor de salida aparece como `ssm_out`), expertos compartidos y una tabla n-gram PLE (`per_layer_token_embd`) de gran tamaño: 50,66 GiB en Q8_0, lo que la convierte en el mayor bloque individual del repositorio. La publicación de cuantización no aporta datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF, DPO u otras etapas de alineación; esos datos corresponden a la model card del modelo base y no están disponibles en la información proporcionada.
 
-La innovación técnica relevante está en la cuantización, no en el entrenamiento. El autor parte de la receta AD-5.00bpw-Q5_K_M y sustituye únicamente los tensores gate/up de los expertos: en el build Q4_K, los 96 tensores gate/up pasan a Q4_K, lo que según sus pruebas internas eliminó todos los errores restantes a cambio de 15,3 GiB adicionales. Los expertos de bajada quedan en IQ4_NL porque `moe_intermediate_size=640` no es divisible por 256 y los tipos de bloque 256 caen en fallback. La tabla PLE n-gram se mantiene en Q8_0 porque carece de estadísticas de imatrix y cuantizarla por debajo de ~5 bpw degrada el comportamiento de recuperación. Los tensores no expertos (atención, GDN, embeddings) se mantienen en Q8_0, unos 5 GiB en total, como seguro de calidad.
+La innovación técnica de esta build es la asignación selectiva de bits. Partiendo de la receta `AD-5.00bpw-Q5_K_M` de AtomicChat, se sustituyen únicamente los tensores de expertos `gate`/`up`: en la build Q4_K, los 96 tensores pasan a Q4_K; en la build ligera, 8 tensores quedan en Q4_K (capas 40, 44, 45 y 47, las de mayor tolerancia), 80 en IQ3_S y 8 en IQ2_S (capas 32, 34, 36 y 39, las de menor tolerancia). La colocación por niveles se apoya en el consenso de tres asignaciones independientes (AtomicChat AD, ISTA GSQ y agention Gyro). Los expertos `down` permanecen en IQ4_NL (48 tensores, 21,09 GiB), limitados por `moe_intermediate_size=640` y el bloque de 32. Los tensores `hc_*` (hyper-connection) se subieron de Q8_0 a BF16 en la revisión del 12 de noviembre de 2026, con un coste de +0,55 GiB y una mejora de puntuación.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es text-generation y el tag `conversational` está presente.
-- Razonamiento y código: el autor valida la calidad con MultiPL-E humaneval-cpp, lo que indica competencia en generación de código ejecutable.
-- Mezcla de expertos con enrutamiento disperso: 176,9 mil millones de parámetros totales distribuidos en 48 capas de expertos de bajada.
-- Capacidad de recuperación mediante tabla PLE n-gram de acceso aleatorio, mantenida en Q8_0 para preservar el comportamiento de retrieval.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; la model card incluye texto en inglés y coreano, pero no se declara cobertura de idiomas.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
+- Generación de texto conversacional (`pipeline_tag: text-generation`, etiqueta `conversational`).
+- Generación de código, evidenciada por la evaluación ejecutable sobre MultiPL-E humaneval-cpp (161 problemas, 5 ejecuciones por variante).
+- Razonamiento multi-turno dentro de un chat (`atomic-chat` como etiqueta de la publicación).
+- Inferencia local de un MoE de gran tamaño mediante llama.cpp y el runtime Strata, con streaming de la tabla n-gram PLE.
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- Capacidades de visión, audio, tool calling, function calling y agentes: no disponibles en la información proporcionada.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-- Inferencia local de un MoE de gran tamaño en estaciones de trabajo con 64-96 GB de RAM: el build IQ2_S-IQ3_S-Q4_K deja 59,11 GiB residentes con la tabla PLE en streaming, lo que permite ejecutarlo en máquinas que no podrían cargar el modelo completo.
-- Generación de código en pipelines internos: el autor valida el build con MultiPL-E humaneval-cpp sobre 161 problemas y 5 ejecuciones, de modo que es adecuado para tareas de completado y síntesis de código donde se prioriza la corrección ejecutable.
-- Asistentes conversacionales de contexto largo: la arquitectura incluye atención y capas GDN, y la tabla PLE n-gram favorece la recuperación de patrones, útil en diálogos multi-turno con historial extenso.
-- Despliegue con llama.cpp y motores compatibles (Strata): los GGUF de tres shards están pensados para estos runtimes, lo que facilita integrarlos en herramientas de línea de comandos y servidores locales.
-- Experimentación en investigación sobre cuantización: los dos builds permiten comparar el efecto de asignar bits a gate/up frente a down, con métricas publicadas y diferencias de tamaño documentadas.
-- Servicio de inferencia con requisitos de memoria ajustados: el build Q4_K, con 68,37 GiB residentes, es la opción de mayor calidad cuando se dispone de RAM suficiente, mientras que el build lean reduce 9,26 GiB a costa de degradar 12 capas de gate/up.
-- Evaluación comparativa de recetas de cuantización: la model card documenta la sustitución de la receta AD-5.00 y el cambio de hc_* de Q8_0 a BF16, lo que sirve como referencia reproducible para otros equipos.
+- Evaluación de cuantizaciones en local: la publicación incluye una metodología reproducible (6 variantes × 161 problemas × 5 ejecuciones sobre MultiPL-E humaneval-cpp) que sirve para validar asignaciones de bits antes de desplegar un MoE grande en hardware propio.
+- Servicio de generación de código en estación de trabajo: con 59,11 GiB residentes en la build `AD-404bpw-q4_k_m` y 79,4 tok/s medidos, es adecuada para un servidor de un solo nodo con RAM abundante que atienda peticiones de completado de código.
+- Asistente conversacional autoalojado: la etiqueta `conversational` y la compatibilidad con endpoints permiten montar un chat multi-turno sobre llama.cpp sin depender de una API externa.
+- Investigación sobre asignación de bits por capa: las tablas de composición byte a byte (Q4_K ×8 en capas 40/44/45/47, IQ2_S ×8 en 32/34/36/39) permiten reproducir y contrastar la hipótesis de que `gate`/`up` concentra la calidad del modelo.
+- Despliegue con presupuesto de RAM ajustado: la build ligera reduce 9,26 GiB residentes frente a la Q4_K (59,11 frente a 68,37 GiB) a cambio de 1,4 puntos de precisión en la métrica citada (143,8 frente a 142,4 sobre 161).
+- Comparación de runtimes: la publicación está pensada para llama.cpp y Strata, de modo que sirve para medir diferencias de throughput y de gestión de memoria entre ambos con el mismo conjunto de pesos.
 
 ## Benchmarks y rendimiento
 
-La model card no publica una tabla de benchmarks estándar (MMLU, GSM8K, HumanEval) con puntuaciones numéricas. El autor menciona una evaluación interna sobre 6 variantes de cuantización × 161 problemas × 5 ejecuciones con puntuación ejecutable en MultiPL-E humaneval-cpp, y afirma que la asignación de gate/up a Q4_K quedó en la parte alta del grupo y eliminó todos los errores restantes, pero no se incluyen las cifras concretas.
+Los únicos datos de rendimiento publicados en la información disponible son los de la evaluación ejecutable MultiPL-E humaneval-cpp realizada por el autor de la cuantización (161 problemas, 5 ejecuciones por variante):
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Build | Puntuacion (sobre 161) | Porcentaje | RAM residente (PLE en streaming) | Throughput |
+|---|---:|---:|---:|---:|
+| `AD-404bpw-q4_k_m` | 143,8 | 89,3 % | 59,11 GiB | 79,4 tok/s |
+| `AD-467bpw-q5_k_m` | 142,4 | 88,4 % | 68,37 GiB | 74,5 tok/s |
+
+No se han publicado resultados de benchmarks del modelo base (MMLU, GSM8K, HumanEval estándar u otros) en la información disponible. Los valores anteriores corresponden a la comparación interna entre las dos builds de esta publicación y no son directamente comparables con cifras de terceros.
 
 ## Requisitos de hardware
 
-- VRAM/RAM para el build Q4_K: 119,05 GiB en disco, 68,37 GiB residentes con la tabla PLE en streaming.
-- VRAM/RAM para el build IQ2_S-IQ3_S-Q4_K: 109,78 GiB en disco, 59,11 GiB residentes con la tabla PLE en streaming.
-- Tamaño del repositorio completo: 320,5 GB, ya que incluye ambos builds y sus shards.
-- GPU recomendadas: no disponibles en la información proporcionada. Por volumen de memoria, requiere GPU de centro de datos con 80 GB (A100, H100) o configuraciones multi-GPU; no cabe en GPU de consumo.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en modelos similares; la huella residente mínima documentada es de 59,11 GiB.
-- Opciones de despliegue: llama.cpp y motores derivados (Strata), según la model card; vLLM, TGI u Ollama no se mencionan.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- RAM residente: 59,11 GiB para `AD-404bpw-q4_k_m` y 68,37 GiB para `AD-467bpw-q5_k_m`, en ambos casos con la tabla n-gram PLE (50,66 GiB) en streaming.
+- Espacio en disco: 109,78 GiB totales para la build ligera y 119,05 GiB para la Q4_K, repartidos en 3 shards por build (shard1 47,70 GiB, shard2 11,42 GiB, shard3 50,66 GiB en la build ligera tras la revisión del 12-11-2026).
+- VRAM estimada para inferencia: no disponible. Por el volumen residente, el despliegue requiere RAM de sistema abundante o offload parcial; no cabe en GPUs de consumo de 24 GB ni en configuraciones de 48 GB sin offload.
+- GPU recomendadas: no disponible en la información proporcionada. El tamaño residente sugiere nodos con 64-96 GB de memoria unificada o RAM de sistema amplia.
+- Cabe en GPU de consumo: no, según los requisitos de memoria residente indicados.
+- Opciones de despliegue: llama.cpp y el runtime Strata (citados explícitamente); vLLM, Ollama y TGI no se mencionan en la información disponible.
+- Latencia y throughput: 79,4 tok/s para la build ligera y 74,5 tok/s para la Q4_K, medidos por el autor en su entorno de servicio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-AD-gateup (este) | 176,9 B | no disponible | GGUF Q4_K / IQ2_S-IQ3_S-Q4_K | qwen-community-1.0 | Hugging Face, 785 descargas |
-| Qwen/Qwen3.8-Flash-Next (base) | 176,9 B | no disponible | safetensors originales | qwen-community-1.0 | Hugging Face |
-| AtomicChat AD-5.00bpw-Q5_K_M | 176,9 B | no disponible | GGUF Q5_K_M | no disponible | referenciado en la model card |
-| ISTA GSQ / agention Gyro | 176,9 B | no disponible | asignaciones propias | no disponible | referenciados como comparación de asignación |
+| `AD-404bpw-q4_k_m` (esta publicacion) | 176,9 B (base) | no disponible | qwen-community-1.0 | GGUF | 143,8/161 en MultiPL-E humaneval-cpp; 59,11 GiB residentes; 79,4 tok/s |
+| `AD-467bpw-q5_k_m` (misma publicacion) | 176,9 B (base) | no disponible | qwen-community-1.0 | GGUF | 142,4/161; 68,37 GiB residentes; 74,5 tok/s |
+| `AD-5.00bpw-Q5_K_M` de AtomicChat (receta de origen) | 176,9 B (base) | no disponible | qwen-community-1.0 | GGUF | Receta de partida; gate/up en IQ2_S ×72 + IQ3_S ×24; no disponible el detalle de puntuación |
+| Modelo base Qwen3.8-Flash-Next (BF16) | 176,9 B | no disponible | qwen-community-1.0 | safetensors | Referencia de calidad completa; sin datos de benchmarks en la información disponible |
 
-La comparación con modelos de otros fabricantes no está disponible en la información proporcionada. Las alternativas identificables son otras cuantizaciones del mismo modelo base, no modelos distintos.
+No se dispone de datos para comparar con modelos de otros fabricantes de la misma categoría (por ejemplo, otros MoE de tamaño comparable) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia qwen-community-1.0: es una licencia comunitaria con condiciones específicas; conviene revisar el texto enlazado antes de cualquier uso comercial.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no cuantificado; no hay evaluaciones de fidelidad publicadas.
-- Idiomas soportados: no declarados; no se puede asumir cobertura multilingüe.
-- Longitud de contexto: no disponible; condiciona el diseño de aplicaciones con historial largo.
-- Cuantización agresiva: el build lean degrada 12 capas de gate/up y cuatro capas (32, 34, 36, 39) a IQ2_S, lo que puede afectar a la calidad en tareas distintas de las evaluadas.
-- Validación limitada a código: las pruebas del autor se centran en MultiPL-E humaneval-cpp; no hay evidencia publicada sobre razonamiento, matemáticas o multilingüismo.
-- Requisitos de memoria elevados: 59-68 GiB residentes mínimos, fuera del alcance de GPU de consumo.
-- Streaming de la tabla PLE: requiere un motor que soporte acceso aleatorio a la tabla desde disco; sin esa función, la huella de memoria crece hasta el tamaño total del build.
-- Repositorio de 320,5 GB: la descarga y el almacenamiento son costosos; el autor advierte de que las actualizaciones pueden requerir re-descargar shards concretos.
-- Fecha de creación futura (2026-11-07): los datos de la ficha proceden de la model card y no se han verificado de forma independiente.
+- La licencia `qwen-community-1.0` impone condiciones específicas para uso comercial; es necesario revisar el texto completo enlazado en la model card del modelo base antes de desplegar en producción.
+- Es una cuantización de terceros, no oficial de Qwen: la calidad y la integridad de los pesos dependen del autor de la publicación y no están avaladas por el equipo del modelo base.
+- La pérdida de calidad frente al modelo en BF16 no está cuantificada en la información disponible; los 89,3 % y 88,4 % corresponden solo a MultiPL-E humaneval-cpp y no cubren razonamiento general, matemáticas ni otros idiomas.
+- El requisito de memoria residente (59-68 GiB) excluye su uso en GPUs de consumo y obliga a hardware de gama alta o a configuraciones con offload.
+- La tabla n-gram PLE (50,66 GiB) debe servirse en streaming; un runtime que no soporte esta modalidad no podrá cargar el modelo con los requisitos de RAM indicados.
+- Riesgo de alucinación, sesgos conocidos y limitaciones idiomáticas del modelo base: no disponibles en la información proporcionada.
+- La build `AD-404bpw-q4_k_m` fue reemplazada el 12-11-2026 (shards 1 y 2, con `hc_*` en BF16 y renombrado desde `AD-405bpw-q4_k_m`); descargas anteriores deben actualizarse para reproducir las cifras publicadas.
+- La model card está redactada en inglés y coreano; no hay documentación en castellano.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/janghaneul/Qwen3.8-Flash-Next-AD-gateup-Q4_K-Q4_K-GGUF
+- Repositorio de la cuantización: https://huggingface.co/janghaneul/Qwen3.8-Flash-Next-AD-gateup-Q4_K-Q4_K-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
+- Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

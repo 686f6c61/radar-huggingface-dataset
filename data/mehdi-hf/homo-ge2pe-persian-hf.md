@@ -2,84 +2,97 @@
 
 ## Resumen
 
-Homo-GE2PE-Persian-HF es un modelo de generación de pronunciación (G2P, grapheme-to-phoneme) para persa, desarrollado originalmente por Elnaz Rahmati y colaboradores, y reempaquetado por mehdi-hf en formato transformers nativo. El modelo resuelve dos problemas del procesamiento del persa: la restauración del ezafe (la vocal de enlace entre un sustantivo y su modificador, que no se escribe en la escritura persa) y la desambiguación de homógrafos (palabras que se escriben igual pero se pronuncian distinto, como کرم que puede ser *karam* "generosidad" o *kerem* "crema"). Su arquitectura es un T5 encoder-decoder basado en google/byt5-small, con 8.264.064 parámetros en total, y opera a nivel de bytes, lo que le permite manejar la escritura persa sin necesidad de un tokenizador específico.
+Homo-GE2PE-Persian-HF es un modelo de conversión grafema-fonema (G2P) para persa (farsi) empaquetado en formato nativo de transformers por el usuario mehdi-hf. No se trata de un modelo nuevo: los pesos son idénticos a los de MahtaFetrat/Homo-GE2PE-Persian, desarrollado por Elnaz Rahmati y colaboradores, y el sufijo `-HF` sigue la convención de empaquetado (como `Llama-2-7b-hf`), no una nueva versión. El repositorio original distribuía pesos comprimidos junto a una copia vendorizada de Parsivar y un wrapper `GE2PE.py`; este repo ofrece un `from_pretrained()` limpio sin dependencias adicionales.
 
-Este repositorio no es un modelo nuevo: los pesos son byte-idénticos a los de MahtaFetrat/Homo-GE2PE-Persian. La diferencia es el empaquetado: el original incluye una dependencia externa (Parsivar) y un wrapper personalizado (GE2PE.py), mientras que esta versión es un modelo T5 estándar que se puede cargar directamente con `from_pretrained()`. Esto lo convierte en un frontend de pronunciación apto para integrarse en pipelines de TTS como pocket-tts-farsi, con un coste computacional muy bajo.
+El problema que resuelve es específico y bien delimitado: la escritura persa omite las vocales cortas y nunca escribe el ezafe (la `-e` de enlace entre sustantivo y modificador), por lo que la pronunciación debe inferirse. Además, el persa contiene homógrafos cuya vocalización cambia el significado (por ejemplo, `کرم` como *karam* "generosidad" frente a *kerem* "crema"). El modelo produce una romanización fonémica que restaura vocales, ezafe y desambigua homógrafos, lo que lo convierte en el frontend de pronunciación de pipelines de síntesis de voz (TTS).
 
-## Especificaciones tecnicas
+Arquitectura T5 (text2text-generation) con 8.264.064 parámetros, derivada de `google/byt5-small`. Está pensado para integrarse como componente previo a un motor TTS persa, y el propio autor lo usa como frontend de `pocket-tts-farsi`. Es relevante ahora porque el autor recomienda dos reemplazos más recientes (`persian-g2p-tiny` de 8,3M parámetros y `persian-g2p-0.6b` de 596M parámetros) con mayor precisión y soporte explícito de marcadores de ezafe.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | T5 (encoder-decoder) basado en google/byt5-small, byte-level |
-| Parametros totales | 8.264.064 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | fa (persa) |
-| Licencia | MIT |
-| Formato de pesos | safetensors |
+| Arquitectura | T5 (encoder-decoder, text2text-generation), derivada de `google/byt5-small` |
+| Parámetros totales | 8.264.064 |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (max_length de generación configurado a 512 en el ejemplo de uso) |
+| Tipos de cuantización | no disponible (pesos en safetensors; no se documentan cuantizaciones oficiales) |
+| Idiomas soportados | persa (fa) |
+| Licencia | MIT (© 2025 Elnaz Rahmati); modelo base `google/byt5-small` bajo Apache 2.0 |
+| Formato de pesos | safetensors (formato nativo de transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo usa la arquitectura T5 con codificación byte-level, heredada de ByT5-small. Esto significa que no depende de un tokenizador con vocabulario fijo, sino que opera sobre bytes, lo que es especialmente útil para el persa por su escritura y su uso del ZWNJ (zero-width non-joiner). El modelo fue entrenado desde la base de google/byt5-small (Apache 2.0) con el dataset HomoRich-G2P-Persian, que contiene 528.891 oraciones persas anotadas con su pronunciación, incluyendo información sobre ezafes y homógrafos. El artículo que lo acompaña (arXiv:2505.12973) aboga por un enfoque de G2P basado en datos ricos y modelos rule-based, en lugar de soluciones más complejas.
+El modelo es un T5 encoder-decoder de 8,26M parámetros construido sobre `google/byt5-small`, lo que implica tokenización a nivel de byte (byt5), adecuada para manejar la escritura persa y sus variantes de codificación sin depender de un vocabulario subword específico. La tarea es text2text-generation: recibe texto persa y emite una romanización fonémica con notación interna propia de GE2PE.
 
-La innovación técnica principal del modelo es su capacidad de desambiguar homógrafos y restaurar ezafes usando contexto. La versión reempaquetada elimina la dependencia de Parsivar, un normalizador persa que se usaba en el original. Según las mediciones del autor del reempaquetado, al eliminar Parsivar se mejoran todas las métricas en el benchmark SentenceBench, porque Parsivar fusionaba preposiciones con la palabra siguiente de forma inconsistente con las anotaciones de referencia. El modelo emite una romanización interna propia (GE2PE) que requiere mapeo para compararse con notaciones convencionales; por ejemplo, el símbolo `1` marca la inserción de un ezafe y no es un fonema.
+El entrenamiento se realizó sobre el dataset HomoRich-G2P-Persian, compuesto por 528.891 frases persas anotadas, según la model card del autor original. La contribución principal del paper (*Fast, Not Fancy: Rethinking G2P with Rich Data and Rule-Based Models*, arXiv:2505.12973) es precisamente la desambiguación de homógrafos y la restauración del ezafe mediante datos ricos en anotación. No se documentan en la información disponible detalles sobre RLHF, DPO ni composición exacta del dataset más allá del número de frases.
+
+Una innovación práctica de este reempaquetado es la eliminación de Parsivar del pipeline de inferencia. El autor mide en SentenceBench (400 frases) que eliminar Parsivar mejora todas las métricas, porque el normalizador fusiona preposiciones con la palabra siguiente (`beqadre` frente a `be qadar-e`). Aun así, recomienda usar algún normalizador razonable en producción para manejar `ي`/`ك` árabes, dígitos sueltos e inconsistencias de ZWNJ.
 
 ## Capacidades
 
-- Generación de G2P (grapheme-to-phoneme) para persa: convierte texto persa a notación fonética romanizada.
-- Restauración de ezafe: inserta la vocal de enlace entre sustantivo y modificador en contextos donde la escritura persa no la representa.
-- Desambiguación de homógrafos: distingue entre lecturas alternativas de palabras homógrafas en función del contexto (por ejemplo, کرم como *karam* o *kerem*).
-- Integración directa con transformers: el modelo se carga con `AutoTokenizer` y `T5ForConditionalGeneration`, sin dependencias adicionales.
-- Funcionamiento en CPU: al ser un modelo de 8 millones de parámetros, puede ejecutarse en entornos sin GPU.
-- No soporta tool calling, vision, audio ni procesamiento multimodal.
+- Conversión grafema-fonema (G2P) de texto persa a romanización fonémica.
+- Restauración del ezafe (la `-e` de enlace) en construcciones nominales, marcada internamente con el flag `1`.
+- Desambiguación de homógrafos persas según contexto (por ejemplo, `کرم` como *karam* frente a *kerem*).
+- Restauración de vocales cortas omitidas en la escritura persa.
+- Generación por beams (el ejemplo oficial usa `num_beams=5`, `max_length=512`, `early_stopping=True`).
+- Procesamiento por lotes (`batch_decode` sobre listas de frases).
+- No soporta tool calling, function calling, agentes, visión, audio ni modo thinking: es un modelo especializado de traducción texto-a-texto.
+- Capacidad multilingüe limitada al persa (etiqueta `fa`).
 
 ## Casos de uso
 
-- Frontend de un sistema TTS persa: el modelo convierte texto escrito a fonemas, que luego se alimentan a un sintetizador de voz. Su tamaño reducido permite ejecutarlo en tiempo real incluso en CPU.
-- Normalización de pronunciación en asistentes de voz: cuando el usuario ha escrito texto libre, el modelo corrige la pronunciación de homógrafos antes de la síntesis.
-- Lectura asistida para estudiantes de persa: puede pronunciar automáticamente palabras ambiguas en libros o artículos.
-- Accesibilidad para personas con dislexia: una aplicación de ayuda a la lectura puede desambiguar pronunciaciones y mostrar la vocalización correcta.
-- Análisis fonológico en lingüística computacional: investigadores pueden usar el modelo para generar transcripciones fonéticas de corpus persas sin necesidad de herramientas externas pesadas.
-- Integración en pipelines de procesamiento de lenguaje natural: el modelo puede preprocesar texto para sistemas de reconocimiento de voz (ASR) persa, alineando la ortografía con la pronunciación esperada.
+- Frontend de pronunciación para TTS persa: el modelo convierte texto escrito a una representación fonémica que un motor TTS puede sintetizar; es exactamente el uso para el que el autor lo reempaquetó (`pocket-tts-farsi`, TTS en CPU).
+- Generación de léxicos de pronunciación: procesar por lotes corpus persas para producir transcripciones fonémicas que alimenten diccionarios de pronunciación o sistemas de reconocimiento de voz.
+- Normalización de texto para pipelines de voz: integrar el modelo antes de un TTS para resolver homógrafos que, de otro modo, se sintetizarían con la vocalización equivocada.
+- Investigación en G2P persa: servir como baseline reproducible de 8,26M parámetros para comparar con modelos mayores (`persian-g2p-0.6b`) o con enfoques basados en reglas.
+- Evaluación de calidad de pronunciación: usar las salidas del modelo como referencia para medir PER/WER de otros sistemas G2P persas, aplicando el mapeo de notación documentado.
+- Despliegue en entornos con recursos limitados: al tener 8,26M parámetros, cabe en CPU y en GPUs de consumo, lo que permite ejecutarlo embebido en aplicaciones de accesibilidad o lectura en voz alta sin infraestructura dedicada.
+- Anotación asistida de corpus: preanotar frases persas con vocalización y ezafe para su posterior revisión humana en proyectos de datos lingüísticos.
 
 ## Benchmarks y rendimiento
 
-| Metrica (SentenceBench, 400 oraciones) | Original (con Parsivar) | Este repo |
+Resultados medidos en SentenceBench (400 frases) según la model card del reempaquetado, comparando la versión original (con Parsivar) frente a este repo (sin Parsivar):
+
+| Métrica | Original (con Parsivar) | Este repo (sin Parsivar) |
 |---|---|---|
-| PER (phoneme error rate) ↓ | 3,47 % | 3,22 % |
-| WER (word error rate) ↓ | 19,47 % | 16,07 % |
-| Homograph accuracy ↑ | 67,45 % | 70,28 % |
+| PER ↓ | 3,47 % | 3,22 % |
+| WER ↓ | 19,47 % | 16,07 % |
+| Homograph ↑ | 67,45 % | 70,28 % |
 | Ezafe F1 ↑ | 82,76 % | 85,04 % |
 
-No se han publicado resultados adicionales de benchmarks en la informacion disponible, como MMLU, HumanEval o GSM8K, porque este modelo no esta pensado para tareas generales de razonamiento o codigo. Los resultados presentados son los que constan en la model card del autor del reempaquetado, basados en el benchmark SentenceBench.
+Advertencia del autor: comparar cadenas sin aplicar el mapeo de notación (la salida interna de GE2PE difiere de la columna `phoneme` de SentenceBench) produce un PER de aproximadamente el 30 % en lugar del 3 % real.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo tiene ~8M parametros, por lo que la inferencia requiere menos de 100 MB de memoria en precision f32. En cuantizacion ligera o en CPU, la memoria total es inferior a 1 GB.
-- GPU recomendada: no se requiere GPU especifica. Cualquier GPU moderna (incluso una integrada) o directamente una CPU sirve para ejecutarlo con latencia aceptable.
-- Compatibilidad con GPU de consumo: si, se puede ejecutar en tarjetas de gama baja como GTX 1650 o inferiores.
-- Opciones de despliegue: gracias a su formato transformers, es compatible con pipelines de Hugging Face, y se puede servir con TGI, vLLM (aunque no es necesario) o simplemente con PyTorch en un script.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dada la pequenez del modelo, se espera una latencia inferior a 100 ms en CPU para frases cortas, pero no hay datos publicados.
+- VRAM estimada para inferencia: muy baja; con 8,26M parámetros en fp32 el modelo ocupa aproximadamente 33 MB de pesos, y en fp16 unos 17 MB. Cabe holgadamente en cualquier GPU y en CPU.
+- GPU recomendadas: no requiere GPU dedicada; funciona en CPU. Cualquier GPU consumer (por ejemplo, RTX 3060, RTX 4090) es más que suficiente, aunque no se documentan requisitos específicos.
+- Cabe en GPU consumer: sí, en todas las GPU consumer actuales e incluso en entornos sin GPU.
+- Opciones de despliegue: transformers (`AutoTokenizer` + `T5ForConditionalGeneration`), text-generation-inference (etiqueta `text-generation-inference` en el repo) y endpoints compatibles (etiqueta `endpoints_compatible`). No se documenta soporte explícito de llama.cpp, Ollama o TGI más allá de la etiqueta.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| mehdi-hf/Homo-GE2PE-Persian-HF | 8.264.064 | no disponible | MIT | safetensors | Reempaquetado sin Parsivar, pesos identicos al original |
-| MahtaFetrat/Homo-GE2PE-Persian | 8.264.064 | no disponible | MIT | original (zip + wrapper GE2PE.py) | Version original, requiere Parsivar y wrapper |
-| google/byt5-small | ~300M | no disponible | Apache 2.0 | safetensors | Modelo base preentrenado sin ajuste fino para G2P persa |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| mehdi-hf/Homo-GE2PE-Persian-HF (este) | 8,26M | no disponible | MIT | Reempaquetado de Homo-GE2PE-Persian; salida con notación interna y flag `1` de ezafe |
+| mehdi-hf/persian-g2p-tiny | 8,3M | no disponible | MIT | Reemplazo recomendado por el autor: mayor precisión, marcadores `-e`/`-ye` explícitos, salida estándar sin remapeo y soporte de override de kasra |
+| mehdi-hf/persian-g2p-0.6b | 596M | no disponible | Apache-2.0 | Reemplazo recomendado: máxima precisión en homógrafos y ezafe |
+| MahtaFetrat/Homo-GE2PE-Persian | no disponible | no disponible | MIT (según este repo) | Modelo original; pesos idénticos, empaquetado con Parsivar y wrapper `GE2PE.py` |
 
-La comparativa se limita a modelos relacionados porque no se dispone de otros modelos G2P persas comparables en la informacion disponible. La diferencia clave entre este reempaquetado y el original es la eliminacion de Parsivar, que mejora las metricas de error y la precision en homografos y ezafe.
+No se dispone de datos de benchmarks comparativos entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se han documentado sesgos especificos en la informacion disponible, pero el modelo se entreno solo con persa y su comportamiento dependera de la composicion del dataset HomoRich.
-- Riesgo de alucinacion: como todo modelo generativo, puede producir salidas incorrectas en textos con caracteres arabes (ي/ك), digitos extranos o inconsistencias de ZWNJ para los que no fue entrenado.
-- Limitaciones de contexto: no se ha especificado la longitud de contexto del modelo. Por su arquitectura ByT5, se recomienda usar tramos de texto cortos (frases u oraciones); el autor sugiere `max_length=512` en la decodificacion.
-- Restricciones de licencia: el modelo es MIT, lo que permite uso comercial. Sin embargo, el modelo base google/byt5-small es Apache 2.0, y la informacion del repositorio incluye atribuciones en NOTICE.md. Es responsabilidad del usuario cumplir con ambas licencias en produccion.
-- Caveat para produccion: es obligatorio normalizar el texto de entrada en un sistema real; si no se hace, el modelo puede fallar. El autor del reempaquetado recomienda usar un normalizador razonable o aplicar normalizacion propia, pero no incluye ninguno.
-- Advertencia sobre la notacion de salida: la romanizacion que emite el modelo difiere de la notacion fonetica convencional. Para comparar con otros sistemas hay que mapear los simbolos (por ejemplo, `/` a `a`, `a` a `A`, `1` se elimina). Ignorar este mapeo produce errores de aproximadamente el 30% en PER, en lugar del ~3% real.
+- No es un modelo nuevo: los pesos son idénticos a `MahtaFetrat/Homo-GE2PE-Persian`; el crédito corresponde a los autores originales.
+- La notación de salida es interna de GE2PE y difiere de la notación convencional de SentenceBench; sin aplicar el mapeo documentado, las métricas de comparación se degradan drásticamente (PER ~30 % frente a ~3 %).
+- El flag `1` de ezafe no es un fonema y debe eliminarse incondicionalmente; el wrapper original solo lo hacía cuando los recuentos de palabras coincidían.
+- Requiere normalización de entrada en producción: el modelo no está entrenado para manejar `ي`/`ك` árabes, dígitos sueltos ni inconsistencias de ZWNJ.
+- Especializado exclusivamente en persa; no soporta otros idiomas.
+- No soporta tool calling, agentes, visión ni audio.
+- Riesgo de alucinación en la vocalización de palabras poco frecuentes u homógrafos ambiguos en contexto; la precisión en homógrafos es del 70,28 % en SentenceBench, lo que implica errores en aproximadamente tres de cada diez casos.
+- Licencia MIT para el modelo reempaquetado; el modelo base `google/byt5-small` es Apache 2.0, con atribución completa en `NOTICE.md`.
+- El autor recomienda migrar a `persian-g2p-tiny` o `persian-g2p-0.6b` para producción por su mayor precisión y mejor formato de salida.
 
 ## Enlaces
 
@@ -87,5 +100,9 @@ La comparativa se limita a modelos relacionados porque no se dispone de otros mo
 - Modelo original: https://huggingface.co/MahtaFetrat/Homo-GE2PE-Persian
 - Dataset HomoRich: https://huggingface.co/datasets/MahtaFetrat/HomoRich-G2P-Persian
 - Benchmark SentenceBench: https://huggingface.co/datasets/MahtaFetrat/SentenceBench
-- Articulo en arXiv: https://arxiv.org/abs/2505.12973
-- Modelo TTS asociado: https://huggingface.co/mehdi-hf/pocket-tts-farsi
+- Paper: https://arxiv.org/abs/2505.12973
+- Reemplazo recomendado (tiny): https://huggingface.co/mehdi-hf/persian-g2p-tiny
+- Reemplazo recomendado (0.6b): https://huggingface.co/mehdi-hf/persian-g2p-0.6b
+- TTS persa que usa este modelo: https://huggingface.co/mehdi-hf/pocket-tts-farsi
+- Parsivar: https://github.com/ICTRC/Parsivar
+- Modelo base: https://huggingface.co/google/byt5-small

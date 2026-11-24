@@ -1,101 +1,88 @@
 # ImAXISOG/iris-gemma-4-e4b-it-mlx
 
 ## Resumen
+Iris Gemma 4 E4B (MLX) es un ajuste fino mediante LoRA del modelo google/gemma-4-E4B-it, desarrollado por ImAXISOG para la aplicación Iris, una app de escritura y corrección en dispositivo. El modelo está especializado en dos tareas concretas: corregir ortografía, gramática, mayúsculas y puntuación sin alterar el resto del texto, y reescribir mensajes según tonos predefinidos (profesional, amigable, más corto, más claro o divertido). No está entrenado para ninguna otra función, lo que lo convierte en una herramienta muy enfocada en lugar de un modelo generalista.
 
-Iris Gemma 4 E4B (MLX) es un ajuste fino del modelo multimodal `google/gemma-4-E4B-it` de Google, publicado por ImAXISOG como el motor de escritura en local de Iris, una aplicación de gramática y tono para macOS y Windows. El modelo resuelve una tarea muy acotada: corregir ortografía, gramática y puntuación sin alterar nada más, y reescribir mensajes en cinco tonos predefinidos (Professional, Friendly, Shorter, Clearer, Funny) preservando el significado y la voz del autor. Está pensado para ejecutarse en el dispositivo del usuario, no en servidor.
+Con 7.636.276.266 parámetros totales (según los safetensors del repositorio) y un tamaño de repo de 4,6 GB, se distribuye en formato MLX cuantizado a 4 bits con group size 64, orientado a Apple Silicon. Lee inglés, hindi (devanagari) e hinglish, pero siempre responde en inglés. Su licencia Apache 2.0, aunque basada en una versión modificada de Gemma 4, permite uso comercial con condiciones.
 
-Técnicamente es un fine-tune con LoRA sobre el modelo base, con el adaptador fusionado en los pesos, cuantizado a 4 bits y con los pesos de audio eliminados. Conserva los pesos de imagen para que los cargadores estándar de MLX funcionen. El repositorio ocupa 4,6 GB y los safetensors declaran 7.636.276.266 parámetros totales. La longitud de contexto no se especifica en la información disponible.
+La relevancia actual radica en su enfoque en dispositivo (on-device) y su rendimiento medido en pruebas ciegas por un modelo de IA: supera a su modelo base sin entrenar en tareas de corrección (90% frente a 52% en inglés) y en tonos (93% frente a 86% en profesional y amigable), lo que lo posiciona como una opción práctica para aplicaciones de escritura en Macs con 16 GB o más de memoria.
 
-Su relevancia radica en el enfoque de despliegue: inferencia local en Apple silicon con un pico de memoria de 3,7 GB en mensajes cortos y 4,1 GB a 6.000 caracteres, con unos 0,3 s por respuesta, además de una variante GGUF para Windows que ronda 1,05 s por respuesta solo con CPU. La licencia Apache 2.0 facilita su integración comercial.
+## Especificaciones tecnicas
 
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (base Gemma 4 E4B), ajuste fino con LoRA fusionado; no se detalla la arquitectura interna en la información disponible |
-| Parámetros totales | 7.636.276.266 (según safetensors) |
-| Parámetros activos | no disponible |
+| Arquitectura | Transformer (basado en google/gemma-4-E4B-it, ajuste fino con LoRA) |
+| Parametros totales | 7.636.276.266 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | 4-bit (pesos del repositorio MLX); existe variante GGUF con archivo de 4,6 GB |
-| Idiomas soportados | inglés (en), hindi en devanagari (hi) e hinglish (hindi escrito con alfabeto latino, según la model card) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX); GGUF en el repositorio hermano |
+| Tipos de cuantizacion | 4-bit (group size 64) en MLX; existe versión GGUF (4,58 GB) |
+| Idiomas soportados | en, hi (lee hindi e hinglish; responde siempre en inglés) |
+| Licencia | Apache 2.0 (versión modificada de Gemma 4) |
+| Formato de pesos | safetensors (MLX); también disponible GGUF |
 
 ## Arquitectura y entrenamiento
-
-El modelo parte de `google/gemma-4-E4B-it`, un transformer multimodal de Google, y se ha ajustado con LoRA sobre ejemplos de escritura. Según la model card, esos ejemplos se redactaron y revisaron con ayuda de modelos de IA y después se filtraron para que ninguno se pareciera a los borradores de prueba usados en la evaluación. El adaptador LoRA se fusionó en los pesos finales, que se cuantizaron a 4 bits y a los que se eliminaron los pesos de audio. Se mantienen los pesos de imagen para compatibilidad con cargadores estándar.
-
-El entrenamiento se realizó con las instrucciones cortas propias de cada modo de la aplicación Iris y con el modo de razonamiento (thinking) desactivado. La model card advierte que otras instrucciones funcionan pero no fueron medidas. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. Como innovación de despliegue, la aplicación Iris mantiene en disco la tabla de embeddings por capa (`embed_tokens_per_layer`) y lee solo las filas necesarias por token, además de descartar las capas de imagen al cargar; con ello las respuestas no cambian y el pico de memoria baja a las cifras indicadas, frente a unos 5,8 GB con un cargador estándar. Iris empareja el modelo con el drafter `mlx-community/gemma-4-E4B-it-assistant-bf16`, lo que sugiere decodificación especulativa.
+El modelo se basa en la arquitectura transformer de google/gemma-4-E4B-it, sobre la que se aplicó un ajuste fino con LoRA. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. El entrenamiento está orientado exclusivamente a dos tareas de escritura: corrección (Fix) y reescritura por tonos (Professional, Friendly, Shorter, Clearer, Funny), manteniendo todos los puntos, quién hace qué y las preguntas como preguntas. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
-
-- Corrección de ortografía, gramática y puntuación en inglés, hindi y hinglish, con la restricción explícita de no modificar nada más del texto.
-- Reescritura con control de tono: Professional, Friendly, Shorter, Clearer y Funny, manteniendo significado y voz del autor.
-- Generación de texto conversacional en el pipeline `text-generation`.
-- Procesamiento de imagen heredado del modelo base (pesos conservados), aunque no es una capacidad medida ni documentada para este fine-tune.
-- Capacidad de audio eliminada en este ajuste (pesos de audio retirados).
-- No se documenta soporte de tool calling, function calling ni comportamiento agéntico multi-paso.
-- Modo de razonamiento (thinking) desactivado durante el entrenamiento; no se reporta su comportamiento con thinking activado.
+- Corrección de ortografía, gramática, mayúsculas y puntuación sin modificar el resto del texto (preserva formas cortas, jerga y voz casual).
+- Reescritura de mensajes en cinco tonos: Professional, Friendly, Shorter, Clearer y Funny, conservando el contenido y las preguntas.
+- Lectura de inglés, hindi (devanagari) e hinglish (hindi escrito con letras latinas), con respuesta siempre en inglés.
+- Generación de texto conversacional y text-generation según pipeline declarado.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio.
+- No se documenta modo thinking ni capacidades multimodales.
 
 ## Casos de uso
-
-- Corrección gramatical integrada en un editor de texto: el modelo recibe un borrador y devuelve la misma frase con ortografía, gramática y puntuación corregidas sin reescritura estilística, lo que encaja con editores que necesitan cambios mínimos y trazables.
-- Reescritura de correos profesionales: con el tono Professional, transforma un mensaje informal en uno adecuado para el ámbito laboral manteniendo el contenido; útil en clientes de correo de escritorio.
-- Acortado de mensajes para chat: el tono Shorter condensa un texto largo conservando la intención, aplicable a asistentes de mensajería con límite de caracteres.
-- Clarificación de instrucciones: el tono Clearer reescribe párrafos confusos en documentación interna o tickets de soporte, mejorando la legibilidad sin cambiar los hechos.
-- Soporte multilingüe para equipos con India: la cobertura de hindi en devanagari y hinglish permite corregir y reescribir mensajes en contextos laborales donde se mezcla inglés e hindi, un caso frecuente en empresas tecnológicas con equipos en India.
-- Aplicación de escritura en local con privacidad: al ejecutarse en el dispositivo con 3,7-4,1 GB de pico de memoria en Apple silicon, es apto para procesar textos sensibles sin enviarlos a la nube.
-- Despliegue en Windows sin GPU: la variante GGUF corre en CPU de portátil con unos 1,05 s por respuesta, lo que permite integrarla en aplicaciones de escritorio con requisito de 16 GB de RAM.
+- Corrección de borradores en inglés en aplicaciones de escritura: el modelo corrige faltas y puntuación sin alterar el estilo del usuario, adecuado para mensajes informales y profesionales gracias a su entrenamiento específico en Fix (90% de aceptación en pruebas ciegas).
+- Reescritura de correos profesionales: transforma un mensaje en tono Professional conservando todos los puntos y preguntas, útil para comunicación laboral en inglés.
+- Acortamiento y clarificación de mensajes: la función Shorter y Clearer permite condensar textos largos manteniendo la información esencial, con un 90% de "would send" en pruebas.
+- Normalización de mensajes en hinglish a inglés: lee drafts en hindi o hinglish y los corrige en inglés (95% de aceptación en Fix), útil para equipos con personal multilingüe en India.
+- Aplicaciones on-device en Apple Silicon: al ser MLX 4-bit con 4,54 GB y un pico de 3,6 GB, puede ejecutarse en Macs de 16 GB sin conexión, ideal para apps de privacidad.
+- Generación de respuestas con tono divertido: la función Funny (66% de "would send") sirve para mensajes informales y sociales, aunque con menor fiabilidad que otros tonos.
+- Integración en flujos de escritura asistida: como modelo especializado, puede incrustarse en editores de texto o clientes de correo para sugerir correcciones y reescrituras en tiempo real.
 
 ## Benchmarks y rendimiento
+Datos declarados por el autor (no verificados):
 
-La model card reporta una evaluación ciega por respuesta sobre borradores redactados solo para prueba, a temperatura 0 y con las instrucciones cortas de Iris, comparando con el Gemma 4 E4B-it sin ajustar:
+| Tarea | Gemma 4 E4B-it sin entrenar | Iris Lighter (E2B) | Iris Best quality (E4B) |
+|---|---|---|---|
+| English Fix: accepted (50 drafts) | 52% | 86% | 90% |
+| Professional and Friendly: would send (100 answers) | 86% | 88% | 93% |
+| Shorter and Clearer: would send (100 answers) | 75% | 86% | 90% |
+| Funny: would send (50 answers) | 4% | 56% | 66% |
+| Hindi and Hinglish, Fix (into English): accepted (82 drafts) | 91% | 71% | 95% |
+| Hindi and Hinglish, tones (into English): would send (240 answers) | 71% | 47% | 76% |
 
-| Prueba | Gemma 4 E4B-it (antes) | Iris Gemma 4 E4B |
-|---|---|---|
-| Fix, inglés (50 borradores): aceptados | 52% | 90% |
-| Professional y Friendly (100): enviaría | 86% | 93% |
-| Shorter y Clearer (100): enviaría | 75% | 90% |
-| Funny (50): enviaría | 4% | 66% |
-| Fix, hindi y hinglish (82): aceptados | 91% | 95% |
-| Tonos en hindi (240): enviaría | 71% | 76% |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. Las métricas de latencia y memoria son: 0,3 s por respuesta y 3,7-4,1 GB de pico en Apple silicon; 1,05 s por respuesta en CPU de portátil con la variante GGUF.
+Evaluación ciega por un modelo de IA, respuesta por respuesta, sobre borradores creados solo para pruebas. El autor indica que diferencias inferiores a unos 8 puntos están dentro del ruido.
 
 ## Requisitos de hardware
-
-- VRAM/memoria estimada: 3,7 GB de pico en mensajes cortos y 4,1 GB a 6.000 caracteres en Apple silicon con las optimizaciones de Iris; unos 5,8 GB de pico con un cargador MLX estándar. En Windows, el archivo GGUF ocupa 4,6 GB y el proceso usa 3,8 GB propios, con 8,4 GB totales en una máquina de 51 GB; se recomiendan 16 GB de RAM.
-- GPU recomendadas: no se especifican modelos de GPU; el despliegue documentado es en Apple silicon (MLX) y en CPU de portátil (GGUF).
-- ¿Cabe en GPU de consumo? No hay datos para RTX 4090 u otras GPU de consumo en la información disponible; el foco es Apple silicon y CPU.
-- Opciones de despliegue: mlx-swift-lm con `MLXVLM` (lo que usa Iris), otros cargadores MLX compatibles con Gemma 4, y llama.cpp u otros motores GGUF para la variante cuantizada.
-- Latencia y throughput: aproximadamente 0,3 s por respuesta en Apple silicon y 1,05 s por respuesta en CPU de portátil con GGUF. No se reporta throughput en tokens por segundo.
+- VRAM/memoria estimada: 3,6 GB en pico en Mac (MLX 4-bit); en Windows con llama.cpp, 3,9 GB más el archivo de 4,6 GB en memoria, 8,4 GB en total.
+- GPU recomendadas: Apple Silicon (Mac con 16 GB o más para la versión Best quality); en Windows, PC con 16 GB o más.
+- Cabe en GPU consumer: sí, en Macs de 16 GB; para Macs de 8 GB se recomienda la versión Lighter (E2B, 2,9 GB en pico).
+- Opciones de despliegue: MLX (Apple Silicon); llama.cpp y GGUF para Windows (repositorio iris-gemma-4-e4b-it-gguf).
+- Latencia y throughput: no disponibles; el autor advierte que en Windows, si falta memoria, el sistema descarga el archivo y las respuestas se ralentizan.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento (Fix inglés) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iris Gemma 4 E4B (MLX) | 7.636.276.266 | no disponible | Corrección y tono de escritura, en/hi/hinglish, local | Apache 2.0 | Hugging Face (MLX y GGUF) |
-| google/gemma-4-E4B-it | no disponible en la información | no disponible | Modelo base multimodal generalista | Licencia Gemma 4 (enlace en la model card) | Hugging Face |
-| mlx-community/gemma-4-E4B-it-assistant-bf16 | no disponible | no disponible | Drafter para decodificación especulativa | no disponible | Hugging Face |
-
-No se dispone de datos de benchmarks estándar ni de especificaciones de contexto de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa se limita a los resultados de la evaluación propia recogidos en la sección anterior.
+| Iris Gemma 4 E4B (MLX) | 7.636.276.266 | no disponible | 90% accepted | Apache 2.0 (mod. Gemma 4) | MLX y GGUF |
+| Iris Lighter (E2B) | no disponible | no disponible | 86% accepted | Apache 2.0 (mod. Gemma 4) | MLX y GGUF |
+| Gemma 4 E4B-it sin entrenar | no disponible | no disponible | 52% accepted | Gemma 4 | Hugging Face |
 
 ## Limitaciones y advertencias
-
-- El ajuste está especializado en las instrucciones cortas de Iris por modo; otras instrucciones funcionan pero no se han medido, por lo que el rendimiento fuera de ese formato es incierto.
-- El modo de razonamiento (thinking) se desactivó en el entrenamiento; no se documenta su comportamiento con thinking activado.
-- Cobertura lingüística limitada a inglés, hindi y hinglish; el castellano no figura entre los idiomas soportados.
-- El tono Funny mejora del 4% al 66% de respuestas que el evaluador enviaría, pero sigue siendo el modo con menor tasa de aceptación y el más propenso a resultados inadecuados.
-- No se han probado escenarios clave: un Mac de 8 GB, un portátil Windows real, documentos largos en términos de calidad (solo memoria), tonos personalizados ni reglas de estilo propias del escritor.
-- Riesgo de alucinación y de introducir cambios no deseados: la tarea de corrección exige no modificar nada más, pero un 10% de los borradores en inglés no fueron aceptados en la prueba de Fix.
-- Los ejemplos de entrenamiento se generaron y revisaron con ayuda de modelos de IA, lo que puede introducir sesgos estilísticos o de contenido no documentados.
-- Licencia Apache 2.0 para este ajuste, con enlace a la licencia de Gemma 4; conviene revisar los términos del modelo base para uso comercial.
-- El repositorio no registra descargas ni likes, y no hay evidencia de uso en producción más allá de la propia aplicación Iris.
+- Modelo especializado exclusivamente en corrección y reescritura por tonos; no es adecuado para tareas generales de razonamiento, código o matemáticas.
+- Siempre responde en inglés, aunque lea hindi e hinglish; no genera respuestas en hindi.
+- El tono Funny obtiene solo un 66% de "would send", con mayor riesgo de resultados no aceptables.
+- Los benchmarks son declarados por el autor, evaluados por un modelo de IA y no verificados de forma independiente; diferencias menores a 8 puntos pueden ser ruido.
+- No se documentan sesgos conocidos, pero al derivar de Gemma 4 puede heredar sesgos del modelo base.
+- Riesgo de alucinación no cuantificado; en corrección, el modelo puede alterar texto si no se respetan las instrucciones de preservar la voz del usuario.
+- Licencia Apache 2.0 sobre una versión modificada de Gemma 4; revisar los términos de la licencia de Gemma 4 para uso comercial.
+- Los requisitos para Windows no se han confirmado en un PC real ni en equipos de 8 GB, según el autor.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/ImAXISOG/iris-gemma-4-e4b-it-mlx
-- Variante GGUF: https://huggingface.co/ImAXISOG/iris-gemma-4-e4b-it-gguf
+- Hugging Face: https://huggingface.co/ImAXISOG/iris-gemma-4-e4b-it-mlx
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Drafter para decodificación especulativa: https://huggingface.co/mlx-community/gemma-4-E4B-it-assistant-bf16
+- Versión GGUF: https://huggingface.co/ImAXISOG/iris-gemma-4-e4b-it-gguf
+- Versión Lighter (E2B) MLX: https://huggingface.co/ImAXISOG/iris-gemma-4-e2b-it-mlx
+- Colección de modelos Iris: https://huggingface.co/collections/ImAXISOG/iris-writing-models-6afd5f1c54a5d9692f56c625
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

@@ -2,59 +2,58 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-WSP-SFT-Compressed es una edicion estructuralmente comprimida y afinada mediante SFT del checkpoint `deepseek-ai/DeepSeek-V4.1-Flash`, un modelo MoE de 552.000 millones de parametros. El autor, identificado en Hugging Face como EverythingIsForGod, aplica una combinacion de poda de capas del backbone Causal Encoder-Decoder (CED), destilacion de expertos MoE guiada por dominio y ajuste supervisado multiepoca para especializar el modelo en ingenieria de software, diseno de sistemas distribuidos, seguridad de redes y pentesting etico.
+DeepSeek-V4.1-Flash-WSP-SFT-Compressed es un checkpoint experimental publicado por el usuario EverythingIsForGod en Hugging Face, derivado del modelo base `deepseek-ai/DeepSeek-V4.1-Flash` (un MoE de 552B de parámetros y 475,24 GiB). El autor aplica una compresión estructural agresiva —de 40 a 8 capas y de 384 a 24 expertos enrutados por capa— combinada con destilación de expertos guiada por dominio y un fine-tuning supervisado (SFT) de 8 épocas orientado a ingeniería de software, diseño de sistemas distribuidos, ciberseguridad ofensiva/defensiva y auditoría de bug bounty. El resultado es un único fichero safetensors de 7,37 GiB que se ejecuta con un motor de inferencia portable en PyTorch puro sobre CPU y GPUs de consumo.
 
-El resultado es un checkpoint de 7,37 GiB (`model0-mp1.safetensors`) que reduce drasticamente el peso original de 475,24 GiB, manteniendo 8 de las 40 capas del backbone CED original y 24 de los 384 expertos enrutados por capa (4 activos por token). El modelo se distribuye con un motor de inferencia portable en PyTorch puro que sustituye los kernels `tilelang` especificos de Hopper/Blackwell por implementaciones compatibles con CPU y GPU de consumo.
+La relevancia del modelo es, sin embargo, principalmente metodológica y no práctica: la propia model card advierte de que se trata de un checkpoint de investigación infraentrenado. Una evaluación independiente citada por el autor (crédito a `@Sakura721`) y auditorías end-to-end posteriores confirman una perplejidad superior a 1e6 y una generación de texto incoherente sin un reentrenamiento masivo de "curación" en clústeres de GPU. El autor redirige explícitamente a otros modelos suyos verificados y coherentes para uso en producción.
 
-La relevancia de esta ficha radica en que documenta un experimento de compresion agresiva sobre un modelo frontera, con licencia MIT y orientado a casos de uso de ciberseguridad y desarrollo. No obstante, la ausencia de benchmarks publicados y de datos de evaluacion independiente obliga a tratar sus capacidades declaradas con cautela.
+Por tanto, esta ficha describe un artefacto de investigación sobre técnicas de weight-space programming y compresión de MoE, no un modelo listo para despliegue. Su interés radica en documentar un pipeline de truncado estructural, destilación de expertos por dominio y SFT sobre un modelo frontera, así como en las lecciones sobre los límites de la compresión sin reentrenamiento posterior.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Causal Encoder-Decoder (CED) con capas MoE; transformer con backbone CED |
-| Parametros totales | 552B en el modelo base; el checkpoint comprimido no declara recuento de parametros resultante (no disponible) |
-| Parametros activos | 4 expertos enrutados activos por token sobre 24 retenidos por capa (no se declara el total de parametros activos) |
+| Arquitectura | Causal Encoder-Decoder (CED) con MoE; transformer con capas encoder-decoder y enrutado de expertos |
+| Parámetros totales | no disponible (el modelo base es de 552B; el checkpoint comprimido no declara su recuento exacto) |
+| Parámetros activos | no disponible (el modelo base activa 4 expertos por token; el comprimido mantiene 4 activos sobre 24 retenidos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (se distribuye en safetensors; el motor portable opera en PyTorch) |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors; el motor es PyTorch puro, no se documentan GGUF ni otras cuantizaciones) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model0-mp1.safetensors`, 7,37 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de un backbone Causal Encoder-Decoder (CED) de 40 capas con mezcla de expertos. La compresion estructural retiene 8 capas ancla (`[0, 1, 2, 8, 20, 28, 36, 39]`), preservando las capas de entrada, salida y las fuentes de KV/Index. En la capa MoE, se clasifican los 384 expertos enrutados de cada capa mediante el router `sqrtsoftplus` frente a embeddings de tokens de curriculos de ingenieria de software, diseno de sistemas, seguridad de redes, CEH, pentesting y bug bounty. Se conservan los 24 expertos mas afines a esos dominios y se pliega la afinidad de enrutamiento de los expertos descartados en el experto retenido mas cercano. Adicionalmente se aplica una mejora de subespacio principal mediante SVD de bajo rango sobre `attn.wo_a.weight`.
+El modelo parte del backbone Causal Encoder-Decoder de DeepSeek-V4.1-Flash, con 40 capas y 384 expertos enrutados por capa. La compresión estructural reduce las capas de 40 a 8, preservando las capas ancla del encoder-decoder y las capas fuente de KV/Index en los índices `[0, 1, 2, 8, 20, 28, 36, 39]`. A continuación, se destilan los expertos MoE: se clasifican los 384 expertos enrutados de cada capa mediante el router `sqrtsoftplus` frente a embeddings de tokens de currículos de ingeniería de software, diseño de sistemas, seguridad de red, CEH, pentesting y bug bounty; se retienen los 24 expertos más especializados por capa (4 activos por token) y se pliega la afinidad de enrutado de los expertos descartados en su experto retenido más cercano. También se aplica una mejora de subespacio principal mediante SVD de bajo rango sobre `attn.wo_a.weight`.
 
-El ajuste supervisado se realizo durante 8 epocas con AdamW, Cosine Annealing LR y LoRA de rango 16, sobre un corpus que cubre estructuras concurrentes seguras en C/Rust/Python, rate limiters atomicos con Redis Lua, arquitecturas idempotentes, validacion BGP RPKI/ROA, TCP SYN Cookies, TLS 1.3 1-RTT con PFS, deteccion y endurecimiento de Active Directory (Kerberoasting, Pass-the-Hash, Golden Ticket), prevencion de SSRF (CWE-918) con DNS rebinding, bloqueo TOCTOU (CWE-362), verificacion JWT/OAuth, aislamiento multi-tenant BOLA/IDOR, endurecimiento XXE y limites de complejidad de consultas GraphQL. La progresion de perdida de entropia cruzada va de 14,1267 en la epoca 1 a 6,0728 en la epoca 8, con perplejidad final de 433,87. El motor de inferencia portable en PyTorch puro sustituye los kernels `tilelang` limitados a Hopper/Blackwell, lo que permite ejecucion en CPU y GPU de consumo.
+Sobre esa estructura comprimida se ejecuta un SFT de 8 épocas con AdamW, Cosine Annealing LR y LoRA de rango 16, cubriendo estructuras concurrentes seguras en C/Rust/Python, limitadores de tasa atómicos con Redis Lua, validación BGP RPKI/ROA, TCP SYN Cookies, TLS 1.3 1-RTT PFS, detección y endurecimiento de Active Directory (Kerberoasting, Pass-the-Hash, Golden Ticket), prevención de SSRF (CWE-918) con DNS rebinding, bloqueo de condiciones de carrera TOCTOU (CWE-362), verificación JWT/OAuth, aislamiento multi-tenant BOLA/IDOR, endurecimiento XXE y límites de complejidad de consultas GraphQL. La progresión de pérdida va de 14,1267 (perplejidad 1.365.029,08) en la época 1 a 6,0728 (perplejidad 433,87) en la época 8. El autor sustituye los kernels `tilelang` exclusivos de Hopper/Blackwell por un `kernel.py` portable para CPU y GPUs de consumo.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de codigo en el pipeline `text-generation`.
-- Razonamiento especializado en ingenieria de software: estructuras concurrentes seguras frente a bloqueos y desbordamientos en C, Rust y Python.
-- Diseno de sistemas distribuidos: rate limiters con Redis Lua, arquitecturas idempotentes y patrones de consistencia.
-- Seguridad de redes: validacion BGP RPKI/ROA, DAI y DHCP Snooping en capa 2, TCP SYN Cookies en capa 4, TLS 1.3 1-RTT con PFS.
-- Deteccion y endurecimiento de Active Directory: Kerberoasting, Pass-the-Hash y Golden Ticket.
-- Pentesting etico y auditoria de bug bounty: SSRF (CWE-918), TOCTOU (CWE-362), JWT/OAuth, BOLA/IDOR, XXE y limites de complejidad GraphQL.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
+- Generación de texto conversacional y de código en el pipeline `text-generation`.
+- Especialización declarada en ingeniería de software y concurrencia (C, Rust, Python).
+- Diseño de sistemas distribuidos: rate limiters atómicos, arquitecturas idempotentes.
+- Ciberseguridad defensiva: DAI, DHCP Snooping, BGP RPKI/ROA, SYN Cookies, TLS 1.3, detección de ataques en Active Directory.
+- Pentesting ético y auditoría de bug bounty: SSRF, TOCTOU, JWT/OAuth, BOLA/IDOR, XXE, GraphQL.
+- Inferencia portable en CPU y GPU de consumo mediante motor PyTorch puro.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponibles (no se declaran idiomas).
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Revision de codigo concurrente en produccion: el modelo puede analizar estructuras de bloqueo y desbordamiento en C, Rust y Python, y proponer alternativas seguras, gracias al SFT especifico sobre concurrencia segura.
-- Auditoria de seguridad de APIs web: se emplearia para identificar SSRF con DNS rebinding, condiciones de carrera TOCTOU, fallos de verificacion JWT/OAuth y aislamiento multi-tenant BOLA/IDOR en revisiones de codigo y diseno.
-- Endurecimiento de infraestructura de red: el modelo puede generar y revisar configuraciones de BGP RPKI/ROA, DAI, DHCP Snooping, TCP SYN Cookies y TLS 1.3 con PFS en entornos de produccion.
-- Deteccion de ataques en Active Directory: se usaria para redactar reglas de deteccion y guias de endurecimiento frente a Kerberoasting, Pass-the-Hash y Golden Ticket en auditorias de identidad.
-- Diseno de sistemas distribuidos idempotentes: el modelo puede proponer arquitecturas con rate limiters atomicos en Redis Lua y patrones idempotentes para servicios expuestos a reintentos.
-- Formacion y laboratorios de ciberseguridad: dado su ajuste sobre curriculos CEH y bug bounty, puede emplearse como asistente en entornos controlados de aprendizaje y resolucion de retos.
-- Despliegue en hardware de consumo: el motor PyTorch portable y el checkpoint de 7,37 GiB permiten ejecutar el modelo en CPU y GPU de consumo, lo que facilita prototipado local sin infraestructura Hopper/Blackwell.
+- Investigación sobre compresión de MoE: el checkpoint sirve como caso de estudio reproducible de truncado estructural (40→8 capas) y destilación de expertos (384→24) sobre un modelo de 552B, útil para medir el impacto de estas técnicas en perplejidad y coherencia.
+- Estudio de weight-space programming: permite analizar cómo el plegado de afinidad de enrutado y la mejora por SVD de bajo rango afectan al comportamiento del router `sqrtsoftplus` en dominios especializados.
+- Docencia sobre límites del fine-tuning: la progresión de perplejidad por época (de 1.365.029 a 433,87) ilustra por qué el SFT no compensa una compresión destructiva sin reentrenamiento a gran escala.
+- Desarrollo de motores de inferencia portables: el `kernel.py` en PyTorch puro que sustituye a los kernels `tilelang` es reutilizable como referencia para ejecutar modelos MoE en CPU y GPUs de consumo.
+- Generación de currículos y material de formación en ciberseguridad: los datos de SFT cubren CEH, pentesting y bug bounty, por lo que el checkpoint puede usarse como fuente de ejemplos de entrenamiento, no como generador fiable.
+- Evaluación de riesgos en pipelines de modelos comprimidos: sirve para diseñar pruebas de coherencia y perplejidad que detecten checkpoints no aptos antes de llegar a producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de entrenamiento reportada es la progresion de perdida y perplejidad del SFT:
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible. El único dato cuantitativo publicado es la progresión de pérdida y perplejidad durante el SFT:
 
-| Epoca | Cross-Entropy Loss | Perplejidad |
+| Época | Cross-Entropy Loss | Perplejidad |
 |---|---|---|
 | 1 | 14,1267 | 1.365.029,08 |
 | 2 | 10,4454 | 34.386,74 |
@@ -65,36 +64,39 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 | 7 | 6,1397 | 463,90 |
 | 8 | 6,0728 | 433,87 |
 
+La model card advierte de que, pese a esta progresión, la evaluación independiente confirma perplejidad superior a 1e6 e incoherencia en la generación sin reentrenamiento de curación.
+
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint pesa 7,37 GiB en safetensors; en precision completa de los pesos almacenados requiere al menos ese espacio, mas overhead de activaciones y KV cache no cuantificado (no disponible).
-- GPU recomendadas: no disponible en la informacion proporcionada; el autor indica compatibilidad con GPU de consumo al sustituir los kernels `tilelang` por PyTorch portable.
-- Cabe en GPU de consumo: si, segun el autor, al eliminar la dependencia de kernels Hopper/Blackwell; no se especifican modelos concretos.
-- Opciones de despliegue: motor propio `run_deepseek_v41.py` con `torch`, `safetensors` y `tokenizers`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: el fichero de pesos ocupa 7,37 GiB, por lo que en FP16/BF16 se necesita aproximadamente esa cantidad más overhead de activaciones y KV cache; en CPU se puede ejecutar con el motor PyTorch puro.
+- GPU recomendadas: no se especifican; el autor indica que el motor portable funciona en CPUs estándar y GPUs de consumo, en contraste con los kernels `tilelang` originales limitados a Hopper/Blackwell.
+- Cabe en GPU de consumo: sí, según el tamaño del checkpoint (7,37 GiB), aunque no se documentan requisitos mínimos concretos ni modelos de GPU probados.
+- Opciones de despliegue: motor propio `run_deepseek_v41.py` con `torch`, `safetensors` y `tokenizers`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-WSP-SFT-Compressed | 552B en base; comprimido a 7,37 GiB | no disponible | MIT | Hugging Face | Version comprimida y SFT del base |
-| deepseek-ai/DeepSeek-V4.1-Flash | 552B | no disponible | no disponible en esta ficha | Hugging Face | Modelo base original, 475,24 GiB |
-| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la informacion proporcionada |
+| Modelo | Parámetros | Contexto | Licencia | Estado |
+|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-WSP-SFT-Compressed | no disponible (base 552B) | no disponible | MIT | Experimental, incoherente sin reentrenamiento |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B | no disponible | no disponible | Modelo original de referencia |
+| EverythingIsForGod/DeepSeek-R1-Distill-Qwen-7B-WSP-SFT-GGUF | 7B | no disponible | no disponible | Verificado coherente y baja perplejidad, según el autor |
+| EverythingIsForGod/Qwen2.5-Coder-7B-WSP-GGUF | 7B | no disponible | no disponible | GGUF Q4_K_M de 4,36 GiB, según el autor |
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks ni evaluaciones independientes; las capacidades declaradas provienen unicamente de la model card del autor.
-- La compresion de 40 a 8 capas y de 384 a 24 expertos por capa implica una perdida sustancial de capacidad respecto al modelo base de 552B; el rendimiento en tareas fuera del dominio de SFT puede degradarse de forma significativa.
-- La perplejidad final de 433,87 sigue siendo elevada en terminos absolutos, lo que sugiere un ajuste limitado incluso en el dominio objetivo.
-- Riesgo de alucinacion en contenido tecnico de seguridad: el modelo puede generar configuraciones o recomendaciones plausibles pero incorrectas, peligrosas en entornos de produccion.
-- Sesgos conocidos: no disponible; no se documenta evaluacion de sesgos.
-- Idiomas soportados: no disponible; el SFT se describe en ingles tecnico, por lo que el rendimiento en castellano no esta garantizado.
-- Restricciones de licencia: licencia MIT, que permite uso comercial, pero el modelo base y los datos de entrenamiento pueden tener condiciones adicionales no reflejadas en esta ficha.
-- El uso en ciberseguridad ofensiva debe limitarse a entornos autorizados; el autor lo enmarca en pentesting etico y bug bounty.
-- El checkpoint tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion de la comunidad.
-- El motor de inferencia es un script propio (`run_deepseek_v41.py`) no estandarizado; la integracion con ecosistemas como vLLM o TGI no esta soportada segun la informacion disponible.
+- Checkpoint experimental e infraentrenado: la evaluación independiente y las auditorías posteriores confirman perplejidad superior a 1e6 y generación de texto incoherente sin un reentrenamiento de curación a gran escala en clúster de GPU.
+- No apto para producción: el propio autor redirige a otros modelos verificados para uso real en código y ciberseguridad.
+- La compresión estructural (40→8 capas, 384→24 expertos) degrada severamente la calidad del modelo base de 552B.
+- Sesgos conocidos: no disponibles.
+- Riesgo de alucinación: elevado, derivado de la incoherencia documentada.
+- Limitaciones de contexto e idioma: no disponibles.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, pero la calidad del checkpoint lo desaconseja.
+- Caveat para producción: el motor de inferencia es propio y en PyTorch puro; no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, lo que limita su integración en infraestructuras estándar.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/EverythingIsForGod/DeepSeek-V4.1-Flash-WSP-SFT-Compressed
+- Modelo en Hugging Face: https://huggingface.co/EverythingIsForGod/DeepSeek-V4.1-Flash-WSP-SFT-Compressed
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Alternativa verificada (DeepSeek-R1-Distill-Qwen-7B-WSP-SFT-GGUF): https://huggingface.co/EverythingIsForGod/DeepSeek-R1-Distill-Qwen-7B-WSP-SFT-GGUF
+- Alternativa verificada (Qwen2.5-Coder-7B-WSP-GGUF): https://huggingface.co/EverythingIsForGod/Qwen2.5-Coder-7B-WSP-GGUF

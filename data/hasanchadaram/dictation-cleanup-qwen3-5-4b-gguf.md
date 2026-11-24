@@ -2,84 +2,95 @@
 
 ## Resumen
 
-`dictation-cleanup-qwen3.5-4b-gguf` es una conversión al formato GGUF de un modelo Qwen 3.5 de 4B de parámetros, publicada por el usuario hasanchadaram en Hugging Face. El nombre sugiere un ajuste fino orientado a la limpieza de texto dictado (dictation cleanup), es decir, la corrección y normalización de transcripciones de voz para producir texto legible, aunque la model card no documenta explícitamente el proceso de entrenamiento ni el dataset utilizado.
+Dictation Cleanup - Qwen3.5-4B GGUF es un ajuste fino del modelo Qwen3.5-4B de Alibaba (distribuido por Unsloth) especializado en una única tarea: limpiar transcripciones de dictado en inglés generadas por sistemas de reconocimiento de voz (ASR). El modelo elimina muletillas, falsos arranques y repeticiones, aplica autocorrecciones habladas, corrige puntuación y formato, y devuelve únicamente el texto limpio, sin explicaciones ni respuestas conversacionales. Lo desarrolla el usuario hasanchadaram y se publica bajo licencia Apache-2.0.
 
-El modelo se distribuye exclusivamente en formato GGUF para su uso con llama.cpp, con dos ficheros: una cuantización Q4_K_M para inferencia de texto y un proyector multimodal (mmproj) en BF16 que habilita capacidades de visión. Los tags incluyen `vision-language-model`, `qwen3_5` y `endpoints_compatible`, lo que indica que el modelo base es multimodal y compatible con despliegues tipo endpoint.
+La propuesta de valor es concreta: sustituir el prompt de sistema que normalmente se inyecta para tareas de limpieza por un modelo que ya incorpora ese comportamiento en sus pesos. Esto simplifica pipelines de dictado (ASR → limpieza → revisión/inserción) y reduce tokens de contexto consumidos. El modelo no procesa audio, solo texto, y está pensado para ejecutarse localmente.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de conversión reciente (noviembre de 2026), sin descargas ni validación comunitaria, y con información muy escasa sobre licencia, idiomas o rendimiento. Resulta útil como punto de partida para experimentar con Qwen 3.5 4B en local, pero no debe considerarse un modelo listo para producción sin una evaluación propia.
+La arquitectura subyacente es la de Qwen3.5-4B (transformer denso de aproximadamente 4.326 millones de parámetros, según los safetensors del modelo base), ajustado mediante LoRA supervisado en Unsloth Studio y distribuido como modelo fusionado cuantizado a Q4_K_M en formato GGUF para llama.cpp. La versión publicada es la "structure-v2"; el autor menciona una v3 y una v4 no publicadas como pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen 3.5 4B, multimodal visión-lenguaje); detalles internos no disponibles |
-| Parametros totales | 4.326.350.848 (4,33B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 (proyector mmproj) y Q4_K_M (pesos del LLM) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (llama.cpp) |
+| Arquitectura | Transformer denso (heredada de Qwen3.5-4B); ajuste fino con LoRA |
+| Parametros totales | 4.326.350.848 (~4,33 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4.096 tokens configurados en entrenamiento; no se valida calidad en dictados largos |
+| Tipos de cuantizacion | Q4_K_M (única publicada en el repo) |
+| Idiomas soportados | Inglés (etiqueta `language: en`) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (modelo fusionado, sin adaptador separado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo deriva de la familia Qwen 3.5 en su variante de 4B parámetros, según el nombre del repositorio y los tags. Los tags `vision-language-model` y la presencia de un fichero `mmproj` confirman que el modelo base incorpora un codificador visual y es capaz de procesar imágenes junto con texto. No obstante, la model card no aporta información sobre el número de capas, la dimensión oculta, el mecanismo de atención ni la composición del dataset de entrenamiento.
+El modelo parte de Qwen3.5-4B, un transformer denso de unos 4,33 mil millones de parámetros, y se ajusta mediante supervisión (SFT) con LoRA en Unsloth Studio. El resultado se fusiona en un modelo completo y se cuantiza a Q4_K_M para su distribución en GGUF, de modo que no requiere cargar un adaptador aparte. La longitud de secuencia configurada durante el entrenamiento fue de 4.096 tokens, aunque el autor aclara explícitamente que esto no constituye una garantía de calidad en dictados largos ni una especificación de requisitos mínimos de RAM/VRAM.
 
-La conversión a GGUF se realizó con Unsloth, según indica el autor. No se documenta si hubo ajuste fino adicional sobre el modelo Qwen 3.5 4B para la tarea de limpieza de dictado, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se especifican los tokens de entrenamiento ni las innovaciones técnicas del modelo base (por ejemplo, atención lineal, decodificación especulativa o modos de razonamiento extendido), por lo que estos datos deben consultarse en la documentación oficial de Qwen.
+El conjunto de datos de entrenamiento es `hasanchadaram/dictation-cleanup`, en su configuración `structure-v2`. Los pares de entrenamiento son mensajes usuario/asistente sin mensaje de sistema, sin prefijo de tarea y sin envoltorio del transcript. La ejecución de entrenamiento identificada es `unsloth_Qwen3.5-4B_1793521666`, con paso final 620. El autor indica que posteriormente entrenó una variante v3 (dataset `notation-v3`, 2.571 ejemplos) cuyos pesos no son los publicados aquí, y que un dataset mixto v4 no se ha usado para entrenar ningún modelo. No se detalla en la información disponible la composición exacta del dataset ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional, según el tag `conversational`.
-- Procesamiento multimodal visión-lenguaje: el fichero `mmproj` permite pasar imágenes al modelo mediante `llama-mtmd-cli`.
-- Limpieza y normalización de texto dictado, presumiblemente el propósito del ajuste, aunque no se detalla el formato de entrada/salida esperado.
-- Compatibilidad con llama.cpp y con endpoints compatibles (`endpoints_compatible`).
-- Soporte de plantillas de chat mediante el flag `--jinja`.
-- No se documenta soporte explícito de tool calling, function calling, agentes multi-paso, modo thinking ni capacidades de audio.
+- Limpieza de transcripciones de dictado en inglés: eliminación de muletillas, falsos arranques y repeticiones accidentales.
+- Corrección de mayúsculas, puntuación, ortografía y gramática preservando el significado y la voz del hablante.
+- Aplicación de autocorrecciones habladas no ambiguas y comandos de puntuación o salto de línea dictados.
+- Formateo de listas, procedimientos, párrafos y cuerpos de correo cuando el transcript aporta esa estructura.
+- Preservación de nombres, identificadores, cantidades, negaciones e incertidumbre.
+- Devolución exclusiva del texto limpio, sin explicación ni respuesta conversacional.
+- No responde preguntas dictadas ni ejecuta comandos: una pregunta dictada vuelve como pregunta limpia.
+- Sin soporte de tool calling, agentes, visión, audio ni modo thinking (el autor recomienda desactivar thinking y herramientas en el servidor).
+- Capacidad multilingüe: no disponible (solo inglés).
 
 ## Casos de uso
 
-- Limpieza de transcripciones de voz: el modelo puede recibir texto procedente de ASR (reconocimiento automático del habla) y devolver una versión corregida con puntuación, mayúsculas y eliminación de muletillas, que es el propósito declarado por el nombre del repositorio.
-- Post-procesado en pipelines de subtitulado: integrado tras un motor de ASR para generar subtítulos legibles antes de su publicación, aprovechando el formato GGUF para ejecución en CPU o GPU modesta.
-- Asistentes de dictado en local: despliegue con llama.cpp en estaciones de trabajo sin conexión, útil en entornos con requisitos de privacidad donde no se puede enviar audio o texto a la nube.
-- Prototipado de aplicaciones multimodales: el proyector `mmproj` permite experimentar con entradas de imagen y texto en local usando `llama-mtmd-cli`, por ejemplo para describir capturas o extraer texto de imágenes.
-- Evaluación comparativa de cuantizaciones: el par BF16 (proyector) y Q4_K_M (LLM) facilita medir la degradación de calidad entre precisión completa y cuantización de 4 bits en tareas de corrección de texto.
-- Base para ajuste fino posterior: al ser un GGUF derivado de un modelo de 4B, puede servir como referencia para comparar con versiones afinadas propias, aunque para reentrenar habría que partir de los pesos originales en safetensors.
+- Integración en pipelines de dictado por voz: el modelo se coloca entre el ASR y la app de destino; recibe el transcript crudo y devuelve texto limpio listo para insertar. Es adecuado porque el comportamiento de limpieza está en los pesos y no requiere prompt de sistema.
+- Edición de correos y mensajes de trabajo: un dictado como "um can you send the report by thursday no wait friday period" se convierte en "Can you send the report by Friday?". Útil en clientes de correo con dictado integrado.
+- Documentación técnica hablada: el modelo formatea listas y procedimientos dictados en párrafos estructurados, lo que encaja en flujos de captura de notas de reunión o especificaciones habladas.
+- Herramientas de accesibilidad: usuarios que redactan por voz pueden obtener texto con puntuación y mayúsculas correctas antes de enviarlo, sin revisión manual exhaustiva.
+- Despliegue local y privado: al ejecutarse con llama.cpp en un único fichero GGUF Q4_K_M, permite limpieza de transcripciones en entornos sin conexión o con requisitos de privacidad, sin enviar texto a servicios externos.
+- Postprocesado por lotes de transcripciones: para volúmenes moderados de texto dictado, un servidor llama.cpp con `--jinja` y `--reasoning off` puede servir peticiones con temperatura 0 para obtener salidas deterministas y reproducibles.
+- Prototipado de asistentes de escritura por voz: sirve como componente de limpieza en demos de asistentes locales, dado su tamaño reducido y su licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye comparaciones cualitativas "antes/después" del ajuste fino (por ejemplo, el modelo base responde con instrucciones para editar un calendario en lugar de limpiar el texto), pero no tablas de MMLU, HumanEval, GSM8K ni métricas cuantitativas de limpieza.
 
 ## Requisitos de hardware
 
-- VRAM estimada para Q4_K_M: aproximadamente 2,5-3 GB para los pesos del LLM, más el proyector mmproj en BF16 (unos 0,5-1 GB adicionales si se usa el modo multimodal). El tamaño total del repositorio es de 3,5 GB.
-- Cabe en GPUs de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB, e incluso en GPUs con 6-8 GB de VRAM usando Q4_K_M en modo solo texto.
-- Ejecución en CPU viable con llama.cpp, con throughput moderado pero funcional para tareas de limpieza de texto por lotes.
-- Despliegue recomendado: llama.cpp (`llama-cli`, `llama-mtmd-cli`, `llama-server`). No se documenta compatibilidad con vLLM, TGI u Ollama, aunque al ser GGUF estándar debería poder importarse en Ollama.
-- Latencia y throughput estimados: no disponibles; dependen del hardware y de la cuantización.
+- VRAM estimada para inferencia: no disponible de forma oficial. El autor aclara que los 4.096 tokens de entrenamiento no son una especificación de RAM/VRAM mínima. Como referencia orientativa no validada por el autor, un modelo denso de ~4,3 mil millones de parámetros en Q4_K_M ocupa del orden de 2,5-3 GB de pesos, más overhead de contexto.
+- GPU recomendadas: no disponible en la información proporcionada.
+- ¿Cabe en GPU de consumo? No confirmado por el autor; por tamaño de pesos, es plausible en GPUs de consumo con suficiente VRAM, pero no hay validación publicada.
+- Opciones de despliegue: llama.cpp (servidor `llama-server` con `--jinja --reasoning off -c 4096`), descarga vía `hf download`. No se mencionan vLLM, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
 |---|---|---|---|---|---|
-| dictation-cleanup-qwen3.5-4b-gguf | 4,33B | no disponible | Sí (mmproj) | no disponible | GGUF |
-| Qwen 3.5 4B (base oficial) | ~4B | no disponible en esta ficha | Sí | no disponible en esta ficha | safetensors / GGUF |
-| Modelos de limpieza de dictado típicos (p. ej. ajustes de 1-3B) | 1-3B | variable | No habitual | variable | GGUF / safetensors |
+| dictation-cleanup-qwen3.5-4b-gguf | ~4,33 mil M | 4.096 (entrenamiento) | Limpieza de dictado en inglés | Apache-2.0 | GGUF Q4_K_M |
+| Qwen3.5-4B (base, Unsloth) | ~4,33 mil M | no disponible | Modelo generalista | Apache-2.0 | safetensors / GGUF |
+| Qwen3.5-4B-GGUF (Unsloth) | ~4,33 mil M | no disponible | Modelo generalista cuantizado | Apache-2.0 | GGUF |
 
-La comparativa con alternativas concretas no está disponible en la información proporcionada; se recomienda consultar la documentación oficial de Qwen 3.5 para contrastar contexto, licencia y benchmarks del modelo base.
+La comparación relevante es con el modelo base sin ajustar: en la prueba cualitativa de la model card, el base responde a un dictado de edición de calendario con instrucciones para hacerlo manualmente, mientras que el ajustado devuelve el texto limpio. No se dispone de comparaciones con otros modelos especializados en limpieza de transcripciones.
 
 ## Limitaciones y advertencias
 
-- Información muy escasa: no se documentan licencia, idiomas, contexto ni dataset de entrenamiento, lo que impide evaluar su idoneidad para uso comercial.
-- Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de calidad ni de que el ajuste funcione según lo sugerido por el nombre.
-- Riesgo de alucinación inherente a los modelos de 4B, especialmente en tareas de corrección donde el modelo podría reescribir contenido en lugar de limitarse a normalizarlo.
-- La cuantización Q4_K_M introduce pérdida de precisión respecto a BF16; en tareas sensibles a matices (puntuación, nombres propios) conviene validar con muestras propias.
-- El proyector multimodal en BF16 requiere cargar el fichero `mmproj` adicional; sin él, el modelo funciona solo como LLM de texto.
-- No se especifican sesgos conocidos ni limitaciones idiomáticas; al desconocer los idiomas soportados, no se puede garantizar un rendimiento adecuado en castellano.
-- Restricciones de licencia para uso comercial: no disponibles; verificar la licencia del modelo Qwen 3.5 base antes de cualquier despliegue productivo.
+- Solo inglés: no hay soporte multilingüe declarado.
+- No procesa audio: requiere un sistema ASR previo.
+- No responde preguntas ni ejecuta comandos; si se usa fuera de su tarea, el comportamiento no está garantizado.
+- La entrada compuesta solo de muletillas tiene objetivo vacío en entrenamiento, pero el autor advierte que ese comportamiento está poco representado y no está garantizado.
+- Calidad en dictados largos no validada: los 4.096 tokens son la longitud de entrenamiento, no una garantía de rendimiento en textos extensos.
+- Riesgo de alucinación y de generar contenido no dictado: el autor insiste en que no debe componer contenido ausente; conviene validar la salida en producción.
+- Sesgos: no se documentan sesgos específicos en la información disponible; al heredar el modelo base, pueden persistir sesgos de Qwen3.5-4B.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar la licencia del modelo base Qwen3.5-4B enlazada en la model card.
+- En producción, si `finish_reason` no es `stop`, el autor recomienda conservar el transcript original en lugar de usar la salida.
+- Versión publicada es v2; existen v3 y v4 del autor no publicadas como pesos, lo que puede generar confusión sobre la versión "actual".
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/hasanchadaram/dictation-cleanup-qwen3.5-4b-gguf
-- Unsloth (herramienta de conversión): https://github.com/unslothai/unsloth
-- llama.cpp (runtime recomendado): no se proporciona enlace en la información disponible
-- Documentación oficial de Qwen 3.5: no se proporciona enlace en la información disponible
+- Modelo en Hugging Face: https://huggingface.co/hasanchadaram/dictation-cleanup-qwen3.5-4b-gguf
+- Dataset de entrenamiento: https://huggingface.co/datasets/hasanchadaram/dictation-cleanup
+- Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B
+- Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3.5-4B
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
+- GGUF del modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
+- llama.cpp server: https://github.com/ggml-org/llama.cpp/tree/master/tools/server
+- Perfil del autor: https://huggingface.co/hasanchadaram

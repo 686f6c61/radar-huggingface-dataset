@@ -2,98 +2,93 @@
 
 ## Resumen
 
-JiRackTernaryGemma4_26b es una migración del modelo multimodal google/gemma-4-26B-A4B-it a la arquitectura ternaria JiRack, desarrollada por CMSManhattan. Se trata de un transformer decoder con mezcla de expertos (MoE) de aproximadamente 26.000 millones de parámetros totales y unos 4.000 millones activos por token (128 expertos, top-8), en el que se ha eliminado la torre de visión (~550M de parámetros) para dejar un modelo puramente de texto orientado a inferencia en CPU y entornos con poca memoria. El checkpoint declara 25.971.339.294 parámetros reales en safetensors.
+JiRackTernaryGemma4_26b es una migración del modelo multimodal `google/gemma-4-26B-A4B-it` a la arquitectura ternaria propietaria JiRack, publicada por el usuario CMSManhattan. El modelo conserva el decoder de tipo Mixture-of-Experts (MoE) de Gemma 4 con 128 expertos y top-8, unos 26.000 millones de parámetros totales y aproximadamente 4.000 millones activos por token, pero elimina la torre de visión oficial (unos 550 millones de parámetros) para reducir el consumo de memoria y habilitar contextos largos en hardware modesto. El resultado es un modelo estrictamente de texto.
 
-La innovación principal es la ternarización de pesos al estilo BitNet b1.58: las proyecciones q/k/v/o, el MLP denso y los 128 expertos pasan a pesos ternarios, mientras que las embeddings (con lm_head atado), el router, las normas y el layer_scalar se mantienen en precisión completa. El objetivo declarado es reducir el consumo de RAM/VRAM y liberar memoria para contextos largos, manteniendo a la vez un pipeline de cuantización consciente del entrenamiento (QAT) para desplegar en GGUF, llama.cpp y Ollama.
+La innovación principal es la ternarización de pesos siguiendo el enfoque BitNet b1.58: las matrices de atención (`q/k/v/o`), el MLP denso y los 128 expertos se almacenan en precisión ternaria, mientras que embeddings, `lm_head`, router, normalizaciones y `layer_scalar` permanecen en precisión completa. Esto permite ejecutar un modelo de casi 26.000 millones de parámetros en CPU y en GPUs de consumo mediante cuantizaciones GGUF, con un tamaño de fichero de entre 13 GB (Q3_K_M) y 50 GB (F16).
 
-El modelo se publica bajo licencia MIT y soporta 13 idiomas, con un tokenizador propio (CMSManhattan/GemmaRoboticsTokenizer) que añade etiquetas específicas de robótica, routing, FIM, media y mood. Está pensado para casos de uso de código, tool calling, robótica y routing, aunque el propio autor advierte de que todavía no se ha probado con contextos grandes.
+El modelo se distribuye con licencia MIT, soporta trece idiomas y viene acompañado de un tokenizador extendido (`CMSManhattan/GemmaRoboticsTokenizer`) con etiquetas específicas para robótica, routing, FIM y tool calling. Está pensado para despliegues con restricciones de memoria, agentes y automatización de herramientas, si bien el propio autor advierte que no se ha probado con contextos grandes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder con mezcla de expertos (MoE) y atencion hibrida sliding/full; pesos ternarios (BitNet b1.58) en la mayoria de matrices |
+| Arquitectura | Transformer decoder MoE con pesos ternarios (JiRack / BitNet b1.58), 30 capas (5 sliding : 1 full attention) |
 | Parametros totales | 25.971.339.294 (~26B) |
 | Parametros activos | ~4B por token (128 expertos, top-8) |
-| Longitud de contexto | 262.144 en el checkpoint; esta exportacion usa una tabla RoPE de 4.096 salvo que se reconstruya |
-| Tipos de cuantizacion | Pesos ternarios en q/k/v/o, MLP denso y los 128 expertos; bf16 en embeddings/lm_head atado, router, normas y layer_scalar. GGUF disponibles: F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M |
+| Longitud de contexto | 262.144 en el checkpoint original; la exportación usa tabla RoPE de 4.096 salvo reconstrucción |
+| Tipos de cuantizacion | Ternario nativo (QAT), F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M |
 | Idiomas soportados | en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th |
 | Licencia | MIT |
-| Formato de pesos | safetensors (bf16, 13 shards) y GGUF |
+| Formato de pesos | safetensors (bf16, 13 shards, ~49 GB), GGUF |
+
+Otros datos técnicos: vocabulario de 262.144 tokens con embeddings atados, dimensión oculta 2.816, 16 cabezas de atención, atención deslizante con `head_dim` 256 / 8 KV heads / RoPE θ 10k / ventana 1024, atención completa con `head_dim` 512 / 2 KV heads / RoPE proporcional θ 1e6 / rotary parcial 0,25 / `k_eq_v` sin `v_proj`, MLP denso de 2.112 con GeGLU (`gelu_pytorch_tanh`), RMSNorm con ε = 1e-6 y softcap de 30,0.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de la configuracion de texto de google/gemma-4-26B-A4B-it: vocabulario de 262.144 tokens con embeddings atadas, dimension oculta de 2.816, 30 capas con patron de atencion 5 sliding : 1 full y 16 cabezas. Las capas sliding usan head_dim 256 con 8 cabezas KV, RoPE con theta 10k y ventana de 1024; las capas full usan head_dim 512 con 2 cabezas KV, RoPE proporcional con theta 1e6, rotary parcial de 0,25 y k_eq_v (sin proyeccion v). Cada token pasa ademas por un MLP denso de 2.112 con activacion GeGLU (gelu_pytorch_tanh), y la MoE dispone de 128 expertos de 704 con top-8. Las normas son RMSNorm simple (x * w / rms(x), epsilon 1e-6) y hay softcap de logits de 30,0.
+El modelo parte del config de texto de `google/gemma-4-26B-A4B-it` y aplica una ruta de Quantization-Aware Training (QAT) hacia pesos ternarios. La arquitectura combina atención deslizante y atención completa en proporción 5:1, con un MLP denso que se aplica a todos los tokens y una capa MoE de 128 expertos de dimensión 704 con enrutamiento top-8. Los elementos ternarizados son las proyecciones de atención (`q/k/v/o`), el MLP denso y los 128 expertos; quedan en precisión completa los embeddings y el `lm_head` atados, el router, las normalizaciones y el `layer_scalar`. La torre de visión del modelo original se ha eliminado por completo.
 
-La ternarizacion sigue el camino BitNet b1.58 con QAT y estimador straight-through, controlado por un parametro lambda. El autor indica que durante el QAT el mecanismo de routing debe permanecer congelado y que solo debe empezar a entrenarse el router cuando lambda alcance 1,0 y se haya verificado la calidad del modelo base. La torre de visión del modelo original se ha descartado (recorte de ~550M de parametros) para ahorrar RAM/VRAM y dejar espacio a contextos largos. No se especifican en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO adicionales.
+El autor documenta una advertencia relevante sobre el proceso de entrenamiento: durante el QAT el mecanismo de routing debe permanecer congelado y el entrenamiento del router solo debe iniciarse cuando el parámetro lambda alcance 1,0 y se haya verificado la calidad del modelo base. Las cuantizaciones GGUF publicadas se generaron a partir de la exportación FP16, no del checkpoint ternario nativo. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO adicionales.
 
 ## Capacidades
 
-- Generacion de texto conversacional en 13 idiomas (en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th).
-- Razonamiento en modo thinking opcional, activable mediante la bandera enable_thinking de la plantilla de chat (Gemma 4 nativa).
-- Generacion y asistencia de codigo, con soporte de etiquetas FIM (fill-in-the-middle) en el tokenizador extendido.
-- Tool calling / function calling, con etiquetas dedicadas de routing (por ejemplo __ROBOTICS__, __CODING__).
-- Casos de robotica y routing, apoyados por el tokenizador CMSManhattan/GemmaRoboticsTokenizer.
-- Capacidades de agente y razonamiento multi-paso derivadas del modelo base.
-- Inferencia eficiente en CPU y equipos de baja memoria gracias a los pesos ternarios y a los GGUF de bajo bit.
-- Modelo solo texto: no conserva la torre de vision del modelo original.
+- Generación de texto conversacional con plantilla de chat nativa de Gemma 4 (`<|turn>user` / `<|turn>model` / `<turn|>`).
+- Razonamiento con modo thinking controlable mediante el flag `enable_thinking` de la plantilla (no mediante sufijo `</think>`).
+- Tool calling y function calling, reforzado por el tokenizador extendido `GemmaRoboticsTokenizer` con etiquetas de routing y herramientas.
+- Capacidades orientadas a agentes y razonamiento multi-paso, según las etiquetas del modelo (`routing`, `tool-call`, `robotics`).
+- Generación de código, con soporte de tokens FIM (fill-in-the-middle) en el tokenizador extendido.
+- Multilingüismo en trece idiomas: inglés, chino, japonés, coreano, francés, español, portugués, alemán, italiano, ruso, árabe, vietnamita y tailandés.
+- Capacidades especiales declaradas en el tokenizador: etiquetas de robótica (`__ROBOTICS__`, `__CODING__`, etc.) y de estado de ánimo (mood).
+- Sin capacidad de visión: la torre multimodal fue eliminada en esta migración.
 
 ## Casos de uso
 
-- Asistente de codigo en local: el modelo puede generar y completar codigo con FIM en un portatil o estacion sin GPU dedicada, usando los GGUF Q4_K_M (~16 GB) o Q3_K_M (~13 GB) sobre llama.cpp u Ollama.
-- Tool calling en pipelines de automatizacion: sus etiquetas de routing y su plantilla de chat permiten integrarlo como planificador que decide que funcion invocar dentro de un agente.
-- Robotica y control de bajo nivel: el tokenizador GemmaRoboticsTokenizer anade etiquetas especificas (__ROBOTICS__) para tareas de instruccion y enrutado en sistemas roboticos.
-- Atencion al cliente multilingue: cubre 13 idiomas con una unica plantilla de chat Gemma 4, util para desplegar un unico modelo en varios mercados.
-- Despliegue en el borde (edge) y entornos aislados: al ser MIT y funcionar en CPU, puede ejecutarse en maquinas sin GPU y sin dependencia de APIs externas.
-- Procesamiento por lotes en servidores modestos: con ~4B de parametros activos por token, el coste computacional por token es menor que el de un modelo denso de 26B, lo que reduce el tiempo de proceso en CPU.
-- Generacion asistida con modo thinking: para tareas que requieren varios pasos de razonamiento antes de responder, se puede activar enable_thinking en la plantilla.
-- Enrutado de peticiones y clasificacion con etiquetas personalizadas: las etiquetas extra del tokenizador permiten marcar dominios (codigo, robotica, mood) dentro de un mismo flujo.
+- Atención al cliente automatizada en hardware sin GPU dedicada: la cuantización Q4_K_M (~16 GB) permite servir conversaciones multi-turno en un servidor CPU con suficiente RAM, aprovechando el vocabulario multilingüe para clientes en trece idiomas.
+- Agentes de tool calling en producción: el tokenizador extendido con etiquetas de routing y la arquitectura MoE con solo ~4B parámetros activos permiten construir agentes que invocan APIs con latencia contenida y bajo coste de cómputo por token.
+- Automatización de robótica e integración con controladores: las etiquetas `__ROBOTICS__` del tokenizador y la orientación explícita del modelo a routing permiten usarlo como capa de decisión en pipelines de instrucciones hacia actuadores.
+- Asistencia de código con FIM: los tokens de fill-in-the-middle del tokenizador permiten integrar el modelo en editores y pipelines de CI/CD para completado y generación de parches, con despliegue local vía Ollama.
+- Despliegue en edge y estaciones de trabajo modestas: la ruta ternaria BitNet b1.58 y las cuantizaciones Q3_K_M (~13 GB) y Q4_K_M (~16 GB) hacen viable ejecutar un modelo de 26B en equipos sin GPU de datacenter.
+- Procesamiento de documentos largos en CPU: aunque el autor advierte que no se ha probado con contextos grandes, el checkpoint soporta hasta 262.144 tokens (con reconstrucción de la tabla RoPE), lo que habilita resumen y extracción sobre corpus extensos en entornos con RAM abundante.
+- Experimentación e investigación en cuantización ternaria: el modelo sirve como referencia práctica para estudiar QAT ternario sobre arquitecturas MoE, con pesos safetensors y GGUF disponibles para reproducir experimentos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica ademas que el modelo todavia no se ha probado con contextos grandes y pide aviso si se detectan diferencias de calidad respecto al modelo original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- safetensors bf16: ~50 GB de RAM/VRAM residentes, pese a que solo ~4B de parametros se activan por token.
-- GGUF F16: ~50 GB.
-- GGUF Q8_0: ~28 GB.
-- GGUF Q6_K: ~22 GB.
-- GGUF Q5_K_M: ~19 GB.
-- GGUF Q4_K_M: ~16 GB, recomendado para uso diario.
-- GGUF Q3_K_M: ~13 GB, opcion para memoria baja.
-- Configuracion recomendada por el autor: 24-32 GB de RAM con Q4_K_M; 48 GB o mas para Q6/Q8/F16; 16-24 GB para Q3_K_M.
-- GPU de consumo: Q4_K_M (~16 GB) es viable en una RTX 4090 o RTX 3090 de 24 GB; Q3_K_M (~13 GB) puede entrar en tarjetas de 16 GB. No cabria completo en GPUs de 8-12 GB sin offload parcial a CPU.
-- CPU: es el escenario objetivo de los pesos ternarios; en equipos sin AVX2 el autor recomienda exportar MKL_ENABLE_INSTRUCTIONS=AVX.
-- Opciones de despliegue: llama.cpp y Ollama (tag previsto cmsmanhattan/JiRackTernaryGemma4-26b-q4), ademas de Transformers con codigo personalizado (custom_code y auto_map a la clase JiRackTernaryGemma4_26b). No se confirma soporte de vLLM ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada según cuantización: F16 ~50 GB, Q8_0 ~28 GB, Q6_K ~22 GB, Q5_K_M ~19 GB, Q4_K_M ~16 GB (recomendada por el autor para uso diario), Q3_K_M ~13 GB.
+- Los pesos safetensors en bf16 ocupan ~49 GB repartidos en 13 shards; la inferencia en PyTorch requiere al menos esa cantidad de memoria más el overhead de activaciones.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, las cuantizaciones Q4_K_M y Q3_K_M caben en GPUs de consumo con 16-24 GB (por ejemplo, RTX 4090 con 24 GB para Q4_K_M), y las variantes F16 y Q8_0 requieren GPUs de datacenter tipo A100 o H100 de 40-80 GB.
+- El modelo está diseñado explícitamente para CPU: las etiquetas incluyen `cpu`, `low-memory` y `efficient`, y el autor indica que en equipos sin AVX2 debe exportarse `MKL_ENABLE_INSTRUCTIONS=AVX`.
+- Opciones de despliegue: llama.cpp, Ollama (tag previsto `cmsmanhattan/JiRackTernaryGemma4-26b-q4`), GGUF genérico y carga en PyTorch mediante la clase personalizada `JiRackTernaryGemma4_26b` con `auto_map`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Precision | Vision | Licencia |
+| Modelo | Parámetros totales / activos | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|
-| JiRackTernaryGemma4_26b | ~26B totales / ~4B activos | 262.144 en el checkpoint; 4.096 en esta exportacion | Ternaria + bf16 en capas criticas | No (torre eliminada) | MIT |
-| google/gemma-4-26B-A4B-it | ~26B totales / ~4B activos | 262.144 | bf16 | Si (~550M) | no disponible en la informacion proporcionada |
-| Otros modelos ternarios tipo BitNet b1.58 | no disponible | no disponible | no disponible | no disponible | no disponible |
+| JiRackTernaryGemma4_26b | ~26B / ~4B (MoE, top-8) | 262.144 (exportación con RoPE 4.096) | MIT | safetensors, GGUF | Ternario BitNet b1.58, solo texto, orientado a CPU |
+| google/gemma-4-26B-A4B-it | ~26B / ~4B (MoE, top-8) | 262.144 | Términos de Gemma (no MIT) | safetensors | Modelo base multimodal, incluye torre de visión |
+| Gemma 4 26B-A4B en cuantización GGUF convencional | ~26B / ~4B | 262.144 | Términos de Gemma | GGUF | Cuantización post-entrenamiento, sin ruta ternaria nativa |
+
+No se dispone de datos de benchmarks que permitan comparar el rendimiento cualitativo frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de calidad frente al modelo base.
-- El propio autor advierte de que el modelo no se ha probado con contextos grandes; la tabla RoPE de esta exportacion es de 4.096 salvo que se reconstruya, pese a que el checkpoint declara 262.144.
-- El tokenizador extendido tiene 262.251 tokens, 107 mas alla del token_emb del checkpoint (262.144). Esos identificadores no deben emitirse hasta hacer resize_token_embeddings(len(tokenizer)) y entrenar las filas nuevas.
-- Con thinking desactivado el modelo sigue emitiendo un bloque vacio <|channel>thought\n<channel|> que hay que eliminar del historial.
-- La ternarizacion degrada inevitablemente la precision numerica de q/k/v/o, MLP denso y expertos; el router y las capas criticas se mantienen en bf16 para compensar.
-- El QAT exige congelar el router hasta que lambda llegue a 1,0; entrenar el router antes de ese punto puede deteriorar la calidad.
-- No conserva capacidades de vision al haberse eliminado la torre correspondiente.
-- Aunque la licencia es MIT, conviene verificar las condiciones del modelo base google/gemma-4-26B-A4B-it para usos comerciales, ya que su licencia no se especifica en la informacion disponible.
-- El repositorio tiene 257,9 GB de tamano, lo que dificulta su descarga completa sin planificar que shards o GGUF se necesitan.
-- Riesgo de alucinacion: no se documentan mitigaciones especificas ni evaluaciones de sesgo.
+- El autor indica explícitamente que el modelo no se ha probado con contextos grandes y pide reportar diferencias de calidad frente al original.
+- La exportación usa una tabla RoPE de 4.096 posiciones salvo que se reconstruya, por lo que el contexto efectivo puede ser mucho menor que las 262.144 posiciones del checkpoint original.
+- La torre de visión ha sido eliminada: no admite entradas de imagen.
+- El tokenizador extendido añade 107 tokens por encima de los 262.144 del `token_emb` del checkpoint; no deben emitirse esos ids sin redimensionar los embeddings (`resize_token_embeddings`) y entrenar las filas nuevas.
+- Con thinking desactivado el modelo sigue emitiendo un bloque vacío `<|channel>thought\n<channel|>` que debe eliminarse del historial de conversación.
+- La ternarización y el QAT pueden introducir degradación de calidad respecto al modelo base; no se han publicado evaluaciones que lo cuantifiquen.
+- Riesgo de alucinación y sesgos heredados del modelo base Gemma 4, sin documentación adicional en la información disponible.
+- La licencia MIT del artefacto no exime de verificar las condiciones de uso del modelo base de Google del que deriva.
+- El proceso de QAT exige congelar el router hasta que lambda alcance 1,0; alterar ese orden puede degradar el enrutamiento de expertos.
+- El repositorio ocupa 257,9 GB, lo que exige planificación de almacenamiento para descargar todas las variantes.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryGemma4_26b
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryGemma4_26b
 - Tokenizador: https://huggingface.co/CMSManhattan/GemmaRoboticsTokenizer
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- IDE y servicios JiRack: https://www.jirack.com
-
-Nota: la busqueda web no devolvio resultados relevantes sobre este modelo (los enlaces encontrados tratan sobre ChatGPT, GitHub Copilot y otros temas sin relacion), por lo que no se anaden referencias externas adicionales.
+- Ollama (tag previsto): https://ollama.com/cmsmanhattan/JiRackTernaryGemma4-26b-q4

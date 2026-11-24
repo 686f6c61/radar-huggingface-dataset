@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Wravn/PrivaScope-content-control",
+  "slug": "wravn-privascope-content-control",
+  "author": "Wravn",
+  "url": "https://huggingface.co/Wravn/PrivaScope-content-control",
+  "created_at": "2026-11-23T22:50:00.000Z",
+  "updated_at": "2026-11-23T23:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "en",
+    "base_model:mukund/privbert",
+    "base_model:quantized:mukund/privbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124652553,
+  "parameters_human": "124.7M",
+  "storage_bytes": 624562518,
+  "storage_human": "625 MB",
+  "context_length": null,
+  "base_model": "mukund/privbert",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

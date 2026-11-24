@@ -2,93 +2,87 @@
 
 ## Resumen
 
-sionic-K-SAT-MATH-3B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo sionic-K-SAT-MATH-3B, publicada por el usuario mradermacher. El modelo original lo desarrolla sionic-ai y, por su nombre, está orientado a tareas de matemáticas y razonamiento tipo SAT (satisfacibilidad). Esta versión GGUF permite ejecutar el modelo en CPUs y GPUs de consumo mediante llama.cpp y herramientas compatibles, sin necesidad de infraestructura de servidor.
+sionic-K-SAT-MATH-3B es un modelo de lenguaje especializado en razonamiento matematico, desarrollado originalmente por sionic-ai y distribuido en formato GGUF por mradermacher. El modelo parte de una base de aproximadamente 4.170 millones de parametros (etiquetado comercialmente como "3B") y ha sido afinado mediante GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo, para mejorar su desempeno en tareas de resolucion de problemas matematicos, con especial enfasis en el examen de acceso a la universidad coreano (CSAT, Suneung).
 
-Aunque el nombre comercial indica "3B", los pesos en safetensors suman 4.169.800.704 parámetros (aproximadamente 4,17 mil millones), un dato relevante a la hora de estimar requisitos de memoria. El repositorio contiene 12 variantes de cuantización (desde Q2_K hasta F16, incluyendo IQ4_XS) y ocupa 37,8 GB en total, por lo que cada archivo individual pesa una fracción de ese total.
+La relevancia de esta ficha radica en que se trata de una cuantizacion estatica del modelo original, publicada en multiples formatos GGUF que van desde Q2_K (1,9 GB) hasta f16 (8,4 GB), lo que permite desplegarlo en hardware de consumo. El modelo declara soporte para coreano e ingles y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integracion en pipelines locales mediante llama.cpp u Ollama.
 
-La información publicada es escasa: no se detallan licencia, idiomas, pipeline ni datos de entrenamiento. Esta ficha recoge lo disponible y marca explícitamente como "no disponible" todo aquello que la model card no especifica.
+La informacion disponible sobre arquitectura interna, composicion del dataset de entrenamiento y resultados de benchmarks es limitada: la model card original no detalla estos aspectos, por lo que varios campos de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base sionic-K-SAT-MATH-3B; familia transformer presumible por el formato GGUF, sin confirmar) |
-| Parametros totales | 4.169.800.704 (según safetensors del modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (transformer, segun la libreria transformers) |
+| Parametros totales | 4.169.800.704 (aprox. 4,17 mil millones) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas generadas a partir del modelo en formato HF) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | coreano (ko), ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base sionic-K-SAT-MATH-3B: la model card de esta versión GGUF solo indica que se trata de cuantizaciones estáticas del modelo original de sionic-ai. El proceso de conversión se realizó desde formato HF (convert_type: hf) con quantize_version 2 y cuantización de tensores de salida activada (output_tensor_quantised: 1).
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Por la libreria declarada (transformers) y el tamano de parametros, se trata presumiblemente de un transformer decoder-only de aproximadamente 4,17 mil millones de parametros, pero la model card no confirma la familia arquitectonica, el numero de capas ni la dimension de las cabezas de atencion.
 
-Tampoco hay datos publicados sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas como decodificación especulativa o atención lineal. El nombre del modelo sugiere un enfoque en matemáticas y problemas SAT, pero no se aporta evidencia técnica en la información disponible.
+En cuanto al entrenamiento, la unica informacion disponible es que el modelo ha sido ajustado mediante GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo con optimizacion de politica relativa a grupos, orientada a mejorar el razonamiento matematico. El modelo esta especializado en el examen CSAT coreano y en matematicas en general. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases adicionales de SFT o DPO. Las cuantizaciones publicadas por mradermacher son estaticas (no ponderadas por imatrix), segun indica el propio autor.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo está preparado para diálogo.
-- Razonamiento matemático: el nombre del modelo (MATH) apunta a un entrenamiento o ajuste orientado a problemas matemáticos, aunque no se detalla el alcance.
-- Razonamiento tipo SAT: el identificador K-SAT sugiere capacidad para problemas de satisfacibilidad booleana, sin documentación que lo confirme.
-- Tool calling / function calling: no disponible en la información publicada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto conversacional en coreano e ingles.
+- Razonamiento matematico y resolucion de problemas, con especial orientacion al examen CSAT coreano.
+- Razonamiento paso a paso (la naturaleza del ajuste con GRPO sugiere cadenas de razonamiento, aunque no se documenta explicitamente un modo "thinking").
+- Soporte de conversacion multi-turno (tag `conversational`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling, vision, audio ni capacidades de agente multi-paso.
 
 ## Casos de uso
 
-- Resolución de problemas matemáticos en local: desplegando una cuantización Q4_K_M o Q5_K_M con llama.cpp, el modelo puede resolver ejercicios de álgebra y cálculo en un portátil con GPU de consumo, sin enviar datos a la nube.
-- Asistencia en entornos educativos offline: al ser GGUF, puede integrarse en aplicaciones de tutoría matemática que funcionan sin conexión, útil en aulas con conectividad limitada.
-- Experimentación con problemas SAT: investigadores pueden probar el modelo sobre instancias de satisfacibilidad booleana para evaluar su comportamiento cualitativo, dado el nombre del modelo.
-- Prototipado rápido de chatbots conversacionales: la etiqueta conversational y el formato GGUF permiten montar un endpoint compatible con la API de OpenAI mediante llama.cpp server o Ollama.
-- Evaluación de cuantizaciones: el repositorio ofrece 12 variantes, lo que permite comparar la degradación de calidad entre Q2_K y F16 en tareas matemáticas concretas.
-- Inferencia en CPU sin GPU: las cuantizaciones Q3_K_S y Q4_K_S caben en memoria RAM de equipos modestos, habilitando pruebas en hardware sin acelerador dedicado.
-- Integración en pipelines de CI para validación de respuestas matemáticas: con un servidor local compatible con endpoints, se puede automatizar la comprobación de soluciones en tests.
+- Tutoria matematica en coreano: el modelo puede resolver y explicar problemas de matematicas de nivel de bachillerato y de preparacion del CSAT, aprovechando su ajuste especifico con GRPO sobre este dominio.
+- Generacion de problemas y soluciones para plataformas educativas: util para crear bancos de ejercicios con solucion razonada en coreano, dado su entrenamiento orientado al examen de acceso universitario.
+- Despliegue local en hardware de consumo: gracias a las cuantizaciones Q4_K_S (2,6 GB) y Q4_K_M (2,7 GB), puede ejecutarse en portatiles con GPU modesta o incluso en CPU mediante llama.cpp, lo que lo hace adecuado para herramientas educativas offline.
+- Asistente de estudio bilingue coreano-ingles: permite a estudiantes coreanos practicar matematicas y a estudiantes angloparlantes trabajar problemas en ingles, dentro de los dos idiomas declarados.
+- Evaluacion de pipelines de razonamiento matematico: su tamano reducido y su especializacion lo convierten en un candidato para pruebas comparativas de tecnicas de RL aplicadas a matematicas.
+- Integracion en asistentes de chat con contexto conversacional: el tag `conversational` y la compatibilidad con endpoints permiten montarlo detras de una API compatible con OpenAI en herramientas de chat autoalojadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (4,17 mil millones de parámetros, pesos más overhead de contexto):
-  - F16: aproximadamente 8,5-9 GB.
-  - Q8_0: aproximadamente 4,5-5 GB.
-  - Q5_K_M: aproximadamente 3-3,5 GB.
-  - Q4_K_M: aproximadamente 2,5-3 GB.
-  - Q3_K_M: aproximadamente 2-2,5 GB.
-  - Q2_K: aproximadamente 1,5-2 GB.
-- GPU recomendadas: RTX 3060 12 GB o superior para F16 y Q8_0; RTX 4060 Ti 8 GB o RTX 3070 para Q5_K_M y Q4_K_M; GPUs de datacenter (A100, H100) no son necesarias para este tamaño, aunque pueden usarse para mayor throughput.
-- Cabe en GPU de consumo: sí, todas las cuantizaciones caben en GPUs con 4 GB o más de VRAM, salvo F16 que requiere alrededor de 8-9 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con endpoints (el repositorio incluye la etiqueta endpoints_compatible).
-- Latencia y throughput: no disponibles en la información publicada.
+- VRAM estimada para inferencia: aproximadamente 2,5-3 GB con cuantizaciones Q4 (Q4_K_S: 2,6 GB; Q4_K_M: 2,7 GB); alrededor de 4,5-5 GB con Q8_0 (4,5 GB) y 9-10 GB con f16 (8,4 GB), incluyendo overhead de contexto.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4 (por ejemplo, GTX 1650, RTX 3050); RTX 3060/4060 o superiores para Q8_0; A100/H100 no son necesarias dado el tamano del modelo.
+- Cabe en GPU de consumo: si, practicamente cualquier GPU consumer moderna con 4 GB o mas puede ejecutar las cuantizaciones Q4; las versiones Q2_K (1,9 GB) y Q3 (2,1-2,4 GB) caben incluso en iGPU con memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base (safetensors) puede servirse con vLLM o TGI, aunque las cuantizaciones publicadas aqui son GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| sionic-K-SAT-MATH-3B-GGUF | 4,17 B | no disponible | no disponible | GGUF | Cuantizaciones estáticas de un modelo especializado en matemáticas/SAT |
-| Qwen2.5-Math-1.5B-Instruct | 1,5 B | 4.096 tokens | Apache 2.0 | safetensors, GGUF | Modelo matemático con licencia permisiva y benchmarks publicados |
-| Phi-3-mini (3,8 B) | 3,8 B | 4.096 tokens (128K en variante long) | MIT | safetensors, GGUF | Modelo generalista pequeño con buen rendimiento en razonamiento |
-| Llama-3.2-3B-Instruct | 3,2 B | 128K tokens | Llama 3.2 Community License | safetensors, GGUF | Modelo generalista con contexto largo y amplia disponibilidad de cuantizaciones |
+No se dispone de datos de benchmarks ni de comparaciones oficiales en la informacion proporcionada. Como referencia estructural, se puede comparar con otros modelos de ~3-4B, pero los datos de rendimiento no estan disponibles para este modelo.
 
-La comparación es orientativa: no hay datos de benchmarks del modelo sionic que permitan contrastar rendimiento real frente a estas alternativas.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| sionic-K-SAT-MATH-3B (este) | 4,17B | no disponible | Apache 2.0 | GGUF / safetensors | Especializado en matematicas y CSAT coreano, ajustado con GRPO |
+| Alternativas de ~3-4B | no disponible | no disponible | no disponible | no disponible | No se han identificado comparaciones publicadas en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; es imprescindible contactar con sionic-ai antes de usarlo en producción.
-- Idiomas no documentados: se desconoce si el modelo está entrenado en castellano o si su rendimiento fuera del inglés es aceptable.
-- Contexto desconocido: sin la longitud de contexto publicada, no se pueden planificar aplicaciones con ventanas largas.
-- Riesgo de alucinación: inherente a los modelos generativos; en matemáticas puede producir razonamientos plausibles pero incorrectos.
-- Sesgos: no hay información sobre la composición del dataset de entrenamiento ni sobre evaluaciones de sesgo.
-- Cuantizaciones agresivas: Q2_K y Q3_K_S pueden degradar notablemente la precisión en tareas matemáticas, donde los errores numéricos son críticos.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la validación comunitaria.
-- Modelo base poco documentado: la ausencia de model card detallada del original limita la evaluación de su calidad y procedencia.
+- La model card no documenta sesgos conocidos; al estar especializado en el examen CSAT coreano, su rendimiento fuera de ese dominio (matematicas generales, otras materias, conversacion abierta) puede degradarse.
+- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar pasos de razonamiento plausibles pero incorrectos; en matematicas esto es especialmente critico y requiere verificacion.
+- Idiomas limitados a coreano e ingles; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
+- Longitud de contexto no documentada: no se puede asumir una ventana larga para problemas extensos o conversaciones prolongadas.
+- Las cuantizaciones Q2_K y Q3_K_M pueden degradar notablemente la calidad; el propio autor marca Q3_K_M como "lower quality".
+- Las cuantizaciones publicadas son estaticas, no ponderadas con imatrix, lo que puede suponer una perdida de calidad algo mayor frente a cuantizaciones ponderadas equivalentes.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar la model card del modelo base (sionic-ai/sionic-K-SAT-MATH-3B) por si hubiera condiciones adicionales no reflejadas en la cuantizacion.
+- El modelo base es de fecha reciente (noviembre de 2026) y cuenta con pocas descargas (423) y cero likes, lo que indica escasa validacion comunitaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/sionic-K-SAT-MATH-3B-GGUF
 - Modelo base: https://huggingface.co/sionic-ai/sionic-K-SAT-MATH-3B
-- Paper, blog o demo: no disponible en la información proporcionada.
+- Pagina de descargas del autor: https://hf.tst.eu/model#sionic-K-SAT-MATH-3B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de comparacion de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

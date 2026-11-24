@@ -17,14 +17,14 @@
     "qwen",
     "qwen3",
     "text-generation",
-    "base_model:3MPER0RR/Qwen3-06B-3MPER0RR-abliterated",
-    "base_model:quantized:3MPER0RR/Qwen3-06B-3MPER0RR-abliterated",
+    "base_model:3MPER0RR/Qwen3-0.6B-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/Qwen3-0.6B-3MPER0RR-abliterated",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 163,
+  "downloads_30d": 164,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "3MPER0RR/Qwen3-0.6B-3MPER0RR-abliterated-Q8_0-GGUF",
+  "renamed_at": "2026-11-24T02:05:46.928Z",
   "benchmarks": [],
   "sources": []
 }

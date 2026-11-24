@@ -2,114 +2,120 @@
 
 ## Resumen
 
-Maris3D SLM Blender 0.5B es un modelo de lenguaje pequeno (SLM) afinado especificamente para generar escenas 3D en Blender a partir de descripciones en lenguaje natural. Lo desarrolla slm4apps y se distribuye bajo licencia Apache 2.0. Parte de Qwen2.5-Coder-0.5B-Instruct como modelo base, con 494 millones de parametros totales, y esta disenado para ejecutarse integramente en local, sin conexion a internet, sobre hardware modesto.
+Maris3D SLM Blender 0.5B es un modelo de lenguaje pequeno (SLM) especializado en la generacion de escenas 3D en Blender a partir de descripciones en lenguaje natural. Lo desarrolla slm4apps y se distribuye como un fine-tune del modelo base Qwen2.5-Coder-0.5B-Instruct, con licencia Apache 2.0 y pesos en formato GGUF para su uso con llama.cpp y Ollama. Su proposito no es la generacion de texto generalista, sino actuar como planificador semantico dentro del ecosistema Maris3D: el modelo describe en palabras que objetos componen una escena, cuantos hay, de que estan hechos y donde se situan, y es el codigo de la aplicacion el que traduce esas palabras a llamadas exactas de la API de Blender.
 
-La propuesta central es una division de responsabilidades: el modelo no escribe coordenadas ni numeros, sino que responde en un pequeno lenguaje de palabras (que objetos, cuantas unidades, relaciones espaciales como "detras" o "encima de", y tamanos relativos como "la mitad" o "el doble"). La aplicacion Maris3D traduce esas palabras a llamadas de herramienta exactas de Blender, construye la escena y la verifica leyendola de vuelta. De este modo se evita el problema clasico de los SLM al generar valores numericos precisos.
+La propuesta tecnica es deliberadamente minimalista: el modelo nunca escribe numeros ni coordenadas, de modo que todos los calculos de tamano y posicion los realiza el codigo determinista de la aplicacion. Esto reduce el riesgo de alucinacion geometrica y permite que un modelo de solo 494 millones de parametros resuelva una tarea de tool calling estructurada con una calidad utilizable. El paquete se compone de un archivo base de 531 MB y un adaptador LoRA de 23 MB, y funciona de forma completamente offline en CPU de portatil (28,5 tok/s en un procesador de 4 nucleos con 876 MB de memoria, medido con el adaptador 0.2.0).
 
-Es relevante ahora porque demuestra que un modelo de 0.5B, cuantizado a Q8_0 y ejecutado en CPU de portatil a 28,5 tokens por segundo con 876 MB de memoria, puede automatizar tareas de modelado 3D asistido por voz o texto. La version actual es la 0.2.2, que introduce un unico adaptador LoRA para planificacion, diseno de partes, edicion por palabras y conversacion, ademas de animacion gestionada por codigo de la aplicacion.
+Es relevante ahora porque demuestra que un SLM de menos de 0,5B puede resolver dominios verticales concretos mediante fine-tuning sobre un formato de salida restringido, sin necesidad de GPU ni de conectividad. El repositorio incluye ademas un modelo experimental entrenado desde cero, Maris3D SLM Blender Tiny 0.02B (24,5 millones de parametros, 50 MB), que sirve como referencia de hasta donde se puede comprimir la tarea.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-Coder-0.5B-Instruct) |
-| Parametros totales | 494.032.768 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (base GGUF); adaptador LoRA en F16 GGUF |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2.5-Coder-0.5B-Instruct); el modelo Tiny usa arquitectura Llama de 10 capas y anchura 384 |
+| Parametros totales | 494.032.768 (0,5B); Tiny 0.02B: 24,5 millones |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible para el 0.5B; Tiny 0.02B: 2.048 tokens |
+| Tipos de cuantizacion | GGUF Q8_0 (base) y F16 (adaptador LoRA); Tiny en F16 |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (base Q8_0 y adaptador LoRA F16) |
+| Formato de pesos | GGUF (llama.cpp / Ollama) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del transformer decoder-only Qwen2.5-Coder-0.5B-Instruct, adaptado mediante LoRA. La distribucion separa dos artefactos: un fichero base GGUF de 531 MB con cuantizacion Q8_0 (los pesos de la version 0.1 con metadatos Maris3D) y un adaptador LoRA en GGUF F16 de 23 MB que aporta las capacidades de la version 0.2 (planificacion, diseno de partes, edicion por palabras y conversacion). El adaptador 0.2.2 se entreno adicionalmente con filas de edicion y de partes, y se construyo mezclando dos de sus checkpoints.
+El modelo parte de Qwen2.5-Coder-0.5B-Instruct, un transformer decoder-only de 494 millones de parametros, y se adapta mediante un fine-tune LoRA que se distribuye como adaptador separado en F16 (23 MB) sobre el archivo base en Q8_0 (531 MB). El entrenamiento se orienta a cuatro tareas concretas dentro del ecosistema Maris3D: planificacion de escenas (que objetos, cuantos y donde), diseno de las partes de un objeto nuevo, edicion por palabras (por ejemplo, "haz el banco azul") y conversacion de soporte. La innovacion principal es el formato de salida: el modelo emite exclusivamente palabras y categorias semanticas, y la aplicacion traduce esas etiquetas a llamadas de herramienta de Blender, calculando todos los numeros en codigo. Esto convierte una tarea de generacion de escenas en un problema de clasificacion y planificacion acotado.
 
-La innovacion tecnica principal no reside en la arquitectura sino en el diseno de la interfaz: el modelo emite un lenguaje de palabras en lugar de llamadas de herramienta con coordenadas. La aplicacion compila esas palabras a tool calls de Blender y calcula por codigo todos los tamanos y posiciones. El modelo nunca escribe un numero. La animacion tambien la genera el codigo de la aplicacion a partir de la descripcion. El modelo esta marcado como "uncensored by training": el fine-tune elimina el comportamiento de rechazo, de modo que peticiones de arte oscuro (armas, gore, atrezo de terror) se planifican como cualquier otra. No se dispone de informacion sobre el volumen de tokens de entrenamiento ni sobre la composicion del dataset.
+El modelo Tiny 0.02B se entreno desde cero en dos etapas: primero con Simple English Wikipedia (`wikimedia/wikipedia`, `20231101.simple`, CC BY-SA 3.0 y GFDL) y despues con los datos de tarea de Maris3D. Usa un vocabulario propio de 17.665 entradas, de las cuales 1.281 son palabras completas de Blender (tamanos, lugares, colores, acabados), y sus pesos finales son la media de tres checkpoints (pasos 5.670, 7.560 y 15.192) seleccionados por puntuacion en la tarea, no por perdida en validacion. No se dispone de informacion sobre el volumen total de tokens de entrenamiento del modelo 0.5B, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Planificacion de escenas 3D: a partir de una frase, decide que objetos incluir, cuantos, de que material y su disposicion relativa.
-- Diseno de partes de objetos nuevos: genera las partes constituyentes de un objeto que pasan las reglas de la aplicacion.
-- Edicion por palabras: interpreta ordenes como "haz la mesa mas oscura" o "mueve la lampara junto al sofa" y describe el cambio para que el codigo lo aplique y lo verifique.
-- Conversacion sobre la escena: responde preguntas a partir de lo que hay construido.
-- Generacion de animaciones descritas en lenguaje natural (por ejemplo, "una pelota que bota dos veces"), materializada por codigo de la aplicacion.
-- Soporte de tool calling: la aplicacion traduce la salida del modelo a llamadas de herramienta de Blender.
-- Ejecucion completamente offline en local.
-- Comportamiento sin rechazos (uncensored) para peticiones de arte 3D, incluido atrezo oscuro.
+- Generacion de planes de escena en lenguaje natural: identifica objetos, cantidades, materiales y relaciones espaciales relativas a partir de una frase.
+- Tool calling estructurado orientado a la API de Blender, mediado por la aplicacion Maris3D, que convierte las palabras del modelo en llamadas exactas.
+- Edicion incremental de escenas existentes mediante instrucciones en lenguaje natural ("Make the bench blue", "Move the lamp to the left of the bench").
+- Diseno de las partes de un objeto nuevo que cumplen las reglas de la aplicacion.
+- Conversacion de soporte y aclaraciones dentro del flujo de la aplicacion (96,1 % de respuestas correctas en 152 turnos, segun el autor).
+- Comportamiento sin rechazos por entrenamiento: planifica solicitudes de arte oscuro (armas, gore, atrezo de terror) como cualquier otra, con 0 de 18 rechazos en la prueba del autor.
+- Ejecucion completamente offline en CPU, sin GPU ni conexion de red.
 - Capacidades multilingues limitadas al ingles.
+- No dispone de vision, audio ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Creacion de escenas 3D por voz o texto en Blender: el usuario describe "un parque con un banco, un arbol detras del banco y una farola junto al banco" y el modelo planifica la escena completa, que la aplicacion construye y verifica. Adecuado por su precision en planificacion (97,3 % en conjuntos retenidos) y su ejecucion en CPU.
-- Edicion iterativa de escenas existentes: ordenes como "haz el banco azul" o "mueve la farola a la izquierda del banco" se traducen en cambios concretos aplicados por codigo, lo que permite refinar escenas sin escribir scripts.
-- Previsualizacion rapida de conceptos de arte: artistas de game art pueden generar atrezo de terror, armas o props oscuros sin bloqueos de rechazo, gracias al comportamiento uncensored del fine-tune.
-- Animacion basica sin keyframes manuales: descripciones como "una luna girando alrededor de un planeta" se convierten en animaciones generadas por la aplicacion, util para prototipado de movimiento.
-- Asistente conversacional de escena: el modelo responde preguntas sobre lo que hay construido, util para revisar o documentar una escena en curso.
-- Automatizacion en pipelines de generacion de contenido 3D: al ejecutarse offline en 876 MB de memoria y 28,5 tok/s en una CPU de 4 nucleos, puede integrarse en entornos sin GPU ni conectividad, como estaciones de trabajo de artistas o entornos aislados.
-- Instalacion y prueba en portatiles modestos: el instalador de una linea descarga y verifica los ficheros, lo que facilita evaluaciones rapidas sin infraestructura dedicada.
+- Generacion de escenas 3D en Blender desde una frase: el usuario escribe "a park with a bench, a tree behind the bench and a lamp next to the bench" y la aplicacion construye la escena completa; el modelo aporta la planificacion semantica y el codigo calcula geometria y posiciones.
+- Edicion iterativa de escenas en produccion de arte: permite cambiar colores, mover objetos o sustituir materiales conversacionalmente, lo que agiliza iteraciones de blocking en pipelines de game art.
+- Creacion de prototipos rapidos de escenarios para videojuegos: con 1.456 descargas y un flujo de instalacion de un solo comando, un equipo puede generar atrezo y distribuciones de escena preliminares sin salir de Blender.
+- Asistente offline en estaciones de trabajo sin conectividad: al ejecutarse en CPU con 876 MB de memoria, encaja en portatiles y entornos air-gapped donde no se permite enviar datos a la nube.
+- Automatizacion de tareas repetitivas de set dressing: instrucciones en lote como "anade tres arboles alrededor de la casa" se traducen en llamadas de herramienta verificables por la aplicacion.
+- Generacion de arte oscuro o de terror sin bloqueos: el modelo no rechaza solicitudes de props violentos o de horror, lo que resulta util en estudios de videojuegos que necesitan ese tipo de contenido.
+- Integracion como planificador en agentes de herramienta: el patron de salida en palabras y traduccion a llamadas exactas es replicable en otros dominios con API determinista.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor del modelo (no verificados de forma independiente):
+Resultados declarados por el autor (no verificados de forma independiente):
 
-| Benchmark | Metrica | Resultado |
+| Benchmark | Metrica | Maris3D 0.5B |
 |---|---|---|
-| Maris3D 180-request benchmark (medido en 0.2.0) | full-scene pass % | 23,3 |
-| Maris3D 180-request benchmark (medido en 0.2.0) | usable scene % | 75,0 |
+| Maris3D 180-request benchmark (medido en 0.2.0) | Escena completa correcta (%) | 23,3 |
+| Maris3D 180-request benchmark (medido en 0.2.0) | Escena utilizable (%) | 75,0 |
 
-Metricas adicionales reportadas en la model card (conjuntos retenidos, sin verificacion independiente):
+Otras metricas reportadas en la model card:
 
-| Metrica | Resultado |
+| Prueba | Resultado |
 |---|---|
-| Planificacion correcta de objetos (2.951 de 3.033 objetos en 716 frases) | 97,3 % |
-| Diseno de partes de objeto nuevo que pasa las reglas (1.268 nombres) | 99,0 % |
-| Respuestas conversacionales correctas (152 turnos) | 96,1 % |
-| Turnos sin invencion de datos (383 turnos) | 0 invenciones |
-| Adiciones exactas de la escena demo 0.1 (203 de 204) | 99,5 % |
-| Peticiones oscuras rechazadas (0 de 18) | 0 % |
+| Planificacion de objetos correctos en conjuntos held-out | 97,3 % (2.951 de 3.033 objetos en 716 frases) |
+| Diseno de partes de un objeto nuevo que pasan las reglas de la app | 99,0 % (1.268 nombres) |
+| Respuestas conversacionales correctas | 96,1 % (152 turnos) |
+| Turnos sin invencion de datos | 383 turnos |
+| Reconstruccion exacta de la escena demo 0.1 | 203 de 204 anadidos exactos (99,5 %) |
+| Rechazos en prueba de contenido oscuro | 0 de 18 |
 
-Rendimiento de inferencia declarado: 28,5 tok/s en CPU de portatil de 4 nucleos, con 876 MB de memoria (medido con el adaptador 0.2.0).
+Comparativa interna con el modelo Tiny 0.02B (mismos conjuntos de 150 filas):
+
+| Conjunto | Tiny 0.02B | Maris3D 0.5B (0.2.1) |
+|---|---|---|
+| Comandos directos: camara, luz, texto, acabado | 97,6 % | 76,1 % |
+| Disenos de objeto que pasan todas las comprobaciones | 52,0 % | 31,3 % |
+
+Rendimiento de inferencia declarado: 28,5 tok/s en CPU de portatil de 4 nucleos con 876 MB de memoria (adaptador 0.2.0); el Tiny alcanza unos 590 tok/s de escritura y 7.400 tok/s de lectura de prompt en un Apple M3 con 4 hilos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no requiere GPU; el modelo base Q8_0 (531 MB) mas el adaptador (23 MB) caben en memoria RAM. La model card reporta 876 MB de memoria en uso durante la inferencia en CPU.
-- GPU recomendadas: no disponibles; el diseno apunta a ejecucion en CPU. Cualquier GPU consumer con suficiente memoria podria ejecutarlo via llama.cpp, pero no se han publicado requisitos especificos.
-- Cabe en GPU consumer: si, por tamano (menos de 1 GB de pesos), aunque no se documentan configuraciones.
-- Opciones de despliegue: llama.cpp (formato GGUF), Ollama (se incluye un Modelfile con la entrada `maris3d-slm-blender-0.5b`) y la aplicacion Maris3D para Blender 4.2 o superior.
-- Latencia y throughput: 28,5 tok/s en CPU de 4 nucleos segun el autor.
-- Requisitos de software: Python 3.9+ y Blender 4.2+.
+- VRAM estimada: no requiere GPU; el paquete completo (base Q8_0 de 531 MB mas adaptador de 23 MB) ocupa aproximadamente 876 MB de memoria RAM en CPU.
+- GPU recomendadas: no disponibles ni necesarias; el modelo esta disenado para inferencia en CPU.
+- Cabe en cualquier GPU consumer (RTX 4090, RTX 3060, etc.) con holgura, pero no se aprovecha de ella de forma significativa.
+- Despliegue: llama.cpp y Ollama (el repositorio incluye un `Modelfile` con la entrada `maris3d-slm-blender-0.5b`), integrado en el add-on de Blender 4.2+ mediante `maris3d serve start`.
+- Latencia y throughput: 28,5 tok/s en CPU de 4 nucleos (modelo 0.5B); el Tiny 0.02B alcanza unos 590 tok/s de generacion en Apple M3.
+- Requisitos de instalacion: Python 3.9+ y Blender 4.2+.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| Maris3D SLM Blender 0.5B | 494 M | no disponible | Generacion de escenas Blender via tool calling | Apache 2.0 | GGUF en Hugging Face, instalador de una linea |
-| Qwen2.5-Coder-0.5B-Instruct | 494 M | no disponible | Generacion de codigo general | Apache 2.0 | Hugging Face |
-| Alternativas especializadas en Blender | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Maris3D SLM Blender 0.5B | 494 M | No disponible | Tool calling para Blender, offline | Apache 2.0 | GGUF |
+| Qwen2.5-Coder-0.5B-Instruct (base) | 494 M | No disponible | Generacion de codigo generalista | Apache 2.0 | Safetensors, GGUF |
+| Maris3D SLM Blender Tiny 0.02B | 24,5 M | 2.048 | Misma tarea, modelo desde cero | Apache 2.0 | GGUF |
 
-El modelo base Qwen2.5-Coder-0.5B-Instruct es el punto de comparacion natural por compartir arquitectura y tamano, pero carece de la especializacion en planificacion de escenas y del diseno de lenguaje de palabras. No se dispone de informacion sobre otros modelos comparables de la misma categoria.
+No se dispone de datos de benchmarks comparativos con otros modelos de proposito general en la informacion proporcionada. La comparacion relevante es interna: frente a su modelo base, Maris3D anade la capacidad de planificacion de escenas y edicion por palabras a costa de perder generalidad; frente al Tiny, el 0.5B es mejor en planes de escena completa y ediciones por palabras, mientras que el Tiny supera al 0.5B en comandos directos y disenos de objeto.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se documenta soporte multilingue.
-- La longitud de contexto no esta disponible en la informacion proporcionada.
-- El modelo no genera numeros ni coordenadas: depende de la aplicacion Maris3D para compilar palabras a llamadas de herramienta. No es util como generador de scripts de Blender autonomo.
-- La version 0.2 es incompatible con la aplicacion 0.1 (cambio incompatible); es necesario usar la aplicacion 0.2 correspondiente.
-- El benchmark oficial de escena completa muestra un 23,3 % de pass completo, lo que indica que muchas peticiones no producen escenas exactas aunque si usables (75 %).
+- El modelo solo habla ingles; no soporta castellano ni otros idiomas.
+- No escribe numeros: no puede copiar valores exactos, y la aplicacion debe leerlos del texto de la peticion en codigo.
+- La tasa de escena completa correcta es baja (23,3 % en el benchmark de 180 peticiones), aunque la de escena utilizable alcanza el 75 %; no es apto para produccion sin supervision.
+- El contexto del modelo Tiny esta limitado a 2.048 tokens; el del 0.5B no se especifica.
+- No se han publicado datos sobre sesgos; al ser un fine-tune de Qwen2.5-Coder, hereda los sesgos del modelo base.
+- Riesgo de alucinacion en la planificacion semantica: el autor reporta 383 turnos sin invencion en sus pruebas, pero no hay verificacion independiente.
+- El modelo esta "uncensored by training": no rechaza solicitudes de contenido violento o de terror, lo que exige control de contenido por parte de la aplicacion en entornos con menores o politicas estrictas.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo Tiny incorpora texto de Simple English Wikipedia bajo CC BY-SA 3.0 y GFDL, lo que puede imponer obligaciones de atribucion y compartir igual sobre esa porcion.
 - Los benchmarks son declarados por el autor y no estan verificados de forma independiente.
-- Riesgo de alucinacion: la model card reporta 0 invenciones en 383 turnos, pero no se dispone de evaluacion independiente.
-- Comportamiento uncensored: no aplica rechazos, lo que puede ser inadecuado en entornos con requisitos de moderacion de contenido.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base Qwen2.5-Coder-0.5B-Instruct tambien es Apache 2.0; conviene revisar los terminos de la aplicacion Maris3D por separado.
-- La cuantizacion Q8_0 del base limita la precision numerica, aunque el diseno evita que el modelo emita numeros.
+- El modelo esta disenado para funcionar dentro del ecosistema Maris3D; su uso fuera de ese pipeline requiere reimplementar la capa de traduccion de palabras a llamadas de herramienta.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/slm4apps/Maris3D-Blender
+- Modelo en Hugging Face: https://huggingface.co/slm4apps/Maris3D-Blender
 - Repositorio GitHub: https://github.com/slm4apps/maris3d
 - Releases: https://github.com/slm4apps/maris3d/releases
-- Licencia en GitHub: https://github.com/slm4apps/maris3d/blob/main/LICENSE
-- Version anterior 0.1.0: https://huggingface.co/slm4apps/Maris3D-Blender/tree/v0.1.0
+- Licencia: https://github.com/slm4apps/maris3d/blob/main/LICENSE
 - Blender: https://www.blender.org
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
+- Dataset de texto del Tiny: https://huggingface.co/datasets/wikimedia/wikipedia

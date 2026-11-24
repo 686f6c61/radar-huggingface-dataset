@@ -2,109 +2,107 @@
 
 ## Resumen
 
-minipfn TabPFN v2 classifier es una reimplementación desde cero del clasificador TabPFN v2 descrito por Hollmann et al. en *Nature* (2025). Lo desarrolla Aiden-Jeon como parte del proyecto de código abierto minipfn y se distribuye con licencia Apache-2.0. No es el checkpoint oficial de PriorLabs: usa código y pesos propios, entrenados sobre el prior sintético abierto de TabICL.
+minipfn TabPFN v2 classifier es una reimplementacion desde cero del clasificador TabPFN v2 descrito por Hollmann et al. en el articulo publicado en Nature (2025). Lo desarrolla el usuario independiente aiden-jeon y se distribuye bajo licencia Apache 2.0. No es el checkpoint oficial de TabPFN v2 ni utiliza codigo o pesos oficiales: es una reproduccion independiente que sigue los metodos del articulo y entrena con el prior abierto de TabICL.
 
-El modelo resuelve el problema de la clasificación tabular en conjuntos de datos pequeños mediante aprendizaje en contexto (in-context learning). En lugar de entrenar pesos con los datos del usuario, el modelo recibe las filas de entrenamiento como contexto en el propio prompt y predice directamente sobre las filas de test. Esto elimina la necesidad de ajuste fino y reduce el coste computacional en escenarios con pocas muestras.
+El modelo es una red neuronal preajustada por el prior (prior-data-fitted network, PFN) especializada en clasificacion tabular de datos pequenos. En lugar de entrenar pesos por tarea, `fit` solo ajusta el preprocesado de cada miembro del ensemble y usa las filas de entrenamiento como contexto en tiempo de inferencia (in-context learning). Con 7.244.746 parametros, 12 capas y una ventana de contexto de hasta 2.048 filas de entrenamiento mas 128 filas reservadas, esta pensado para tablas de menos de 75.000 celdas y hasta 160 caracteristicas.
 
-Técnicamente es un transformer de 12 capas y 7.244.746 parámetros, con atención alternada sobre características y sobre filas, que admite hasta 10 clases, cualquier número de características y hasta 2.048 filas de entrenamiento. Su relevancia radica en que reproduce, con recursos modestos (unas 370 H100-horas), un modelo fundacional tabular publicado en *Nature*, y en que publica de forma transparente las curvas de entrenamiento, los resultados por dataset y las limitaciones observadas.
+Es relevante porque reproduce con medios modestos (unas 370 horas de H100) un modelo de referencia en clasificacion tabular de datos tabulares pequenos, alcanzando un ROC AUC medio de 0,9238 en los 29 conjuntos AMLB del articulo, frente al 0,9323 del modelo oficial. Publica curvas de entrenamiento, checkpoints intermedios y un analisis honesto de las diferencias por dataset.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer TabPFN v2 (atención sobre características y sobre filas) |
-| Parámetros totales | 7.244.746 |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | hasta 2.048 filas de entrenamiento y hasta 160 características (entrenamiento); en inferencia, cualquier número de filas y características según la model card |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no aplica (modelo tabular, no lingüístico) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (`model.safetensors`) + `config.json` |
+| Arquitectura | Transformer TabPFN v2 con atencion alterna sobre caracteristicas y sobre filas; 12 capas, emsize 192, 6 cabezas, MLP 4x emsize; post-LayerNorm sin parametros afines; 2 caracteristicas por token |
+| Parametros totales | 7.244.746 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 2.048 filas de entrenamiento mas 128 filas reservadas; hasta 160 caracteristicas; menos de 75.000 celdas por tabla |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo tabular, no linguistico) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (`model.safetensors`), cargable con PyTorch |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de 12 capas con dimensión de embedding 192, 6 cabezas de atención y MLP de 4× la dimensión de embedding. Cada capa aplica primero atención entre características y después atención entre filas, con post-LayerNorm sin parámetros afines. Cada token representa 2 características. La salida cubre hasta 10 clases.
+La arquitectura es un transformer TabPFN v2 en el que cada capa aplica primero atencion a lo largo de las caracteristicas y despues a lo largo de las filas. Cada token contiene dos caracteristicas, el modelo usa post-LayerNorm sin parametros afines y admite hasta 10 clases. La inferencia por defecto usa un ensemble de 4 miembros; cada miembro baraja caracteristicas y clases, anade una columna aleatoria de identificador de fila y alterna entre caracteristicas por cuantiles con componentes SVD y una transformacion de potencia Yeo-Johnson. Las columnas categoricas con 20 o menos categorias se codifican one-hot en todos los miembros (`one_hot="all"`) si la tabla no supera las 160 columnas. La temperatura del softmax es 0,9.
 
-El entrenamiento usa el prior de grafos SCM de TabICL con las reglas de tamaño de tabla del paper: filas de entrenamiento uniformes entre 1 y 2.048 más 128 filas reservadas, número de características muestreado de una Beta(0,95; 8,0) escalada a 1–160, menos de 75.000 celdas por tabla y, en el 30 % de las tablas, valores ausentes al azar con tasa 0–30 %. Se entrenaron 500.000 pasos con batch de 64 tablas, Adam con lr 2e-4, 10.000 pasos de warmup y schedule coseno sobre 2M pasos, en bf16 y con clipping de gradiente 1,0. El cómputo fue de 8×H100 para los pasos 0–300k y 16×H100 para 300k–500k, unas 35 horas de reloj y aproximadamente 370 H100-horas. La pérdida colapsó cuatro veces y un guard automático reanudó desde estados sanos guardados 2k–4k pasos antes. La cross-entropy de validación final es 0,740.
-
-En inferencia se usa un ensemble de 4 miembros según los valores por defecto del paper: cada miembro baraja características y clases, añade una columna aleatoria de identificador de fila y alterna entre características por cuantiles más componentes SVD y una transformación de potencia Yeo-Johnson. La temperatura del softmax es 0,9.
+El entrenamiento usa el prior SCM de grafo de TabICL con las reglas de tamano de tabla del articulo: filas de entrenamiento uniformes entre 1 y 2.048 mas 128 filas reservadas, caracteristicas con distribucion Beta(0,95, 8,0) escaladas a 1-160, menos de 75.000 celdas por tabla y un 30 % de tablas con valores faltantes aleatorios a una tasa del 0-30 %. Se entrenaron 500.000 pasos con batch de 64 tablas, Adam con lr 2e-4, 10.000 pasos de warmup y schedule coseno sobre 2 millones de pasos, en bf16 y con recorte de gradiente de 1,0. El computo fue de 8xH100 para los pasos 0-300k y 16xH100 para 300k-500k, unas 35 horas de reloj y aproximadamente 370 horas de H100. La perdida colapso de forma subita cuatro veces; en cada caso un guardado automatico retrocedio a un estado sano guardado 2.000-4.000 pasos antes y reanudo con datos nuevos. La entropia cruzada de validacion final es 0,740.
 
 ## Capacidades
 
-- Clasificación tabular supervisada con hasta 10 clases.
-- Aprendizaje en contexto: `fit` no entrena pesos, solo ajusta el preprocesado de cada miembro del ensemble sobre las filas de entrenamiento.
-- Soporte de cualquier número de características y de filas en inferencia (el entrenamiento cubrió hasta 160 características y 2.048 filas).
-- Manejo de valores ausentes, ya que el 30 % de las tablas de entrenamiento incluían missing values al azar.
-- Acepta DataFrames de pandas con columnas categóricas.
+- Clasificacion tabular supervisada con hasta 10 clases y cualquier numero de caracteristicas y filas dentro de los limites de entrenamiento.
+- Aprendizaje en contexto: no requiere entrenamiento de pesos por tarea, solo el ajuste del preprocesado del ensemble.
+- Manejo nativo de valores faltantes (entrenado con tasas de ausencia del 0-30 %).
+- Soporte de columnas categoricas mediante codificacion one-hot automatica (hasta 20 categorias por columna).
 - Salida de probabilidades por clase mediante `predict_proba`, con columnas en el orden de `clf.classes_`.
-- No soporta regresión: el regresor es un modelo separado.
-- No soporta tool calling, agentes, visión, audio ni capacidades multilingües.
+- Ensemble interno de 4 miembros con barajado de caracteristicas y clases y transformaciones alternas para robustez.
+- No soporta generacion de texto, codigo, vision, audio, tool calling ni razonamiento multi-paso: es exclusivamente un clasificador tabular.
 
 ## Casos de uso
 
-- Clasificación de clientes en tablas pequeñas de CRM: con unas pocas miles de filas y decenas de variables, el modelo predice la probabilidad de conversión o abandono sin entrenamiento adicional, usando las filas históricas como contexto.
-- Triaje clínico preliminar sobre datos tabulares de pacientes: adecuado cuando el conjunto es pequeño y contiene valores ausentes, gracias al entrenamiento con missing values al azar y a la ventana de 2.048 filas.
-- Detección de fraude en transacciones con pocas muestras etiquetadas: el aprendizaje en contexto permite obtener probabilidades calibradas sin reentrenar y sin GPU de gran tamaño, dado el reducido número de parámetros.
-- Clasificación de riesgo crediticio en entidades con datos limitados: el modelo produce `predict_proba` directamente utilizable para umbrales de decisión, con soporte de variables categóricas vía pandas.
-- Prototipado rápido en ciencia de datos: sustituye el ciclo de entrenamiento y validación por un `fit` que solo ajusta el preprocesado, lo que acelera la experimentación sobre los 29 datasets de AMLB.
-- Evaluación comparativa de pipelines tabulares: al replicar el benchmark del paper con `scripts/eval_tabpfn_v2.py`, sirve como referencia reproducible para contrastar preprocesados y estrategias de imputación.
-- Clasificación de imágenes representadas como características tabulares agregadas (por ejemplo, descriptores de forma o textura), siempre que el número de características no supere el rango de entrenamiento.
+- Clasificacion de riesgo crediticio en carteras pequenas: con unas pocas miles de filas y decenas de caracteristicas (importe, historial, categoria), el modelo produce probabilidades calibradas sin entrenamiento especifico, adecuado para prototipos rapidos de scoring.
+- Deteccion de fraude en transacciones de bajo volumen: tablas de hasta 2.048 filas de entrenamiento y 160 caracteristicas caben en el contexto, lo que permite evaluar un modelo nuevo por cada lote de datos historicos sin reentrenar.
+- Prediccion de abandono de clientes (churn): el manejo nativo de valores faltantes y columnas categoricas one-hot simplifica el preprocesado de datos de CRM con campos incompletos.
+- Triaje clinico sobre datos tabulares pequenos: clasificacion de pacientes en hasta 10 clases a partir de analiticas y variables demograficas, usando las filas historicas como contexto en lugar de un entrenamiento supervisado clasico.
+- Clasificacion de calidad industrial o mantenimiento predictivo: con sensores tabulares de pocas filas por lote, el modelo se ajusta en inferencia y permite comparar rapidamente distintos conjuntos de caracteristicas.
+- Baseline rapido en competiciones y evaluacion de datos tabulares (AMLB, OpenML): sirve como referencia reproducible con el script `scripts/tabpfn_v2/eval.py`, que descarga las tareas de OpenML y evalua con los pliegues oficiales.
+- Seleccion de caracteristicas y analisis exploratorio: al no requerir entrenamiento, permite iterar sobre subconjuntos de columnas y medir el ROC AUC con coste de computo bajo.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre los 29 datasets de clasificación de AMLB, con ROC AUC media sobre los 10 folds de OpenML:
+Evaluacion sobre los 29 conjuntos de clasificacion AMLB del articulo, media de ROC AUC sobre los 10 pliegues de OpenML, con ajustes de inferencia por defecto (`one_hot="all"`):
 
-| Checkpoint | ROC AUC media |
-|---|---|
-| 100k pasos | 0,9169 |
-| 200k pasos | 0,9222 |
-| 300k pasos | 0,9203 |
-| 400k pasos | 0,9196 |
-| 500k pasos (este modelo) | 0,9235 |
-| Paper (TabPFN v2) | 0,9323 |
+| Checkpoint | ROC AUC medio | Con `one_hot="off"` |
+|---|---|---|
+| 100k pasos | 0,9175 | 0,9169 |
+| 200k pasos | 0,9225 | 0,9222 |
+| 300k pasos | 0,9208 | 0,9203 |
+| 400k pasos | 0,9197 | 0,9196 |
+| 500k pasos (este modelo) | 0,9238 | 0,9235 |
+| Articulo (TabPFN v2 oficial) | 0,9323 | no disponible |
 
-Brecha por dataset frente al paper:
+Brechas por dataset frente al articulo:
 
 | Dataset | Brecha |
 |---|---|
-| philippine (5.832 filas × 308 características) | −0,105 |
-| GesturePhaseSegmentationProcessed | −0,047 |
-| wine-quality-white | −0,025 |
+| philippine (5.832 filas x 308 caracteristicas) | -0,105 |
+| GesturePhaseSegmentationProcessed | -0,047 |
+| wine-quality-white | -0,025 |
 
-Excluyendo philippine, GesturePhaseSegmentationProcessed, wine-quality-white, kc1 y first-order-theorem-proving, la brecha media es de −0,002.
+Sin philippine, GesturePhaseSegmentationProcessed, wine-quality-white, kc1 y first-order-theorem-proving, la brecha media es de -0,002.
 
 ## Requisitos de hardware
 
-- El modelo tiene 7,2 M de parámetros, por lo que los pesos en fp32 ocupan unos 29 MB y en bf16 unos 14 MB; cabe holgadamente en cualquier GPU consumer.
-- VRAM estimada para inferencia: menos de 1 GB para los pesos; el consumo real depende del tamaño de la tabla de contexto (hasta 2.048 filas × 160 características) y del ensemble de 4 miembros.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; para tablas grandes se recomienda una RTX 4090, A100 o H100 por margen y velocidad.
-- Cabe en GPU consumer: sí, en tarjetas como RTX 3060, RTX 4060 o superiores.
-- Despliegue: el paquete `minipfn` se instala con `uv pip install "minipfn @ git+https://github.com/Aiden-Jeon/minipfn"`; la inferencia se hace vía `minipfn.tabpfn_v2.hub.from_pretrained` y `TabPFNv2Classifier`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo de texto.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 7,24 millones de parametros en bf16 los pesos ocupan unos 14,5 MB, por lo que el cuello de botella es el contexto (hasta 2.048 filas x 160 caracteristicas), no el tamano del modelo.
+- GPU recomendadas: el entrenamiento uso 8xH100 y 16xH100; para inferencia cualquier GPU con suficiente memoria para el contexto deberia bastar, aunque no se publican mediciones.
+- Cabe en GPU de consumo: previsiblemente si, dado el tamano de pesos, aunque no se aportan cifras de memoria ni de latencia.
+- Opciones de despliegue: paquete Python `minipfn` instalable con `uv pip install "minipfn @ git+https://github.com/Aiden-Jeon/minipfn"`; clase `TabPFNv2Classifier` con API estilo scikit-learn (`fit`, `predict_proba`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / filas | ROC AUC AMLB | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | ROC AUC AMLB (29 datasets) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minipfn TabPFN v2 classifier (este) | 7,2 M | hasta 2.048 filas, 160 características | 0,9235 | Apache-2.0 | Hugging Face + GitHub |
-| TabPFN v2 oficial (PriorLabs) | no disponible | no disponible | 0,9323 | no disponible en la información | GitHub PriorLabs/TabPFN |
-| TabICL | no disponible | no disponible | no disponible | BSD-3-Clause (prior) | GitHub soda-inria/tabicl |
+| minipfn TabPFN v2 classifier (este) | 7.244.746 | 2.048 filas + 128 reservadas, 160 caracteristicas | 0,9238 | Apache 2.0 | Hugging Face, 355 descargas |
+| TabPFN v2 oficial (PriorLabs) | no disponible en la informacion | no disponible en la informacion | 0,9323 | no disponible en la informacion | GitHub PriorLabs/TabPFN |
+| TabICL (soda-inria) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | GitHub soda-inria/tabicl (usado como prior) |
+| minipfn TabPFN v2 regressor | no disponible en la informacion | no disponible en la informacion | no aplica (regresion) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- El dataset philippine queda unas 0,10 por debajo del paper en todos los checkpoints de 100k a 500k; limitar columnas (500, 300 o 160) o filas de entrenamiento (4.096 o 2.048) no corrige la brecha y la causa es desconocida.
-- El comportamiento puede variar entre checkpoints: en mfeat-factors, los checkpoints de 300k y 400k puntúan 0,94 en los 10 folds, mientras que 200k y 500k puntúan 1,00.
-- La atención entre filas se vuelve muy concentrada durante el entrenamiento, con cabezas que asignan casi todo el peso a una sola fila (attention sink); es la causa probable de los cuatro colapsos de pérdida.
-- Solo clasificación; la regresión requiere un modelo separado.
-- No es el checkpoint oficial de TabPFN v2 y no usa código ni pesos oficiales, por lo que los resultados no son directamente intercambiables con los de PriorLabs.
-- El modelo no maneja texto ni otros dominios no tabulares; no hay capacidades multilingües ni de generación.
-- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades pueden estar mal calibradas en tablas fuera de la distribución de entrenamiento (más de 160 características, más de 2.048 filas o más de 10 clases).
-- Licencia Apache-2.0: permite uso comercial, pero el prior de entrenamiento procede de TabICL (BSD-3-Clause), sin que se incluya código de TabICL en el repositorio.
+- No es el checkpoint oficial de TabPFN v2: no usa codigo ni pesos oficiales y rinde por debajo del modelo del articulo (0,9238 frente a 0,9323 de ROC AUC medio).
+- El dataset philippine queda unos 0,10 por debajo del articulo en todos los checkpoints (100k a 500k); dos comprobaciones en inferencia (limitar columnas por miembro a 500, 300 o 160; limitar filas de entrenamiento a 4.096 o 2.048) no corrigieron la brecha y la causa es desconocida.
+- El comportamiento puede variar entre checkpoints: en mfeat-factors, los checkpoints de 300k y 400k puntuan 0,94 en los 10 pliegues, mientras que 200k y 500k puntuan 1,00.
+- La atencion sobre filas se agudiza durante el entrenamiento: algunas cabezas concentran casi todo el peso en una sola fila (attention sink), probable origen de los cuatro colapsos de perdida que obligaron a retroceder el entrenamiento.
+- Solo clasificacion: el modelo de regresion es un modelo separado (aiden-jeon/minipfn-tabpfn-v2-regressor).
+- Limites de contexto: hasta 2.048 filas de entrenamiento, 160 caracteristicas y menos de 75.000 celdas por tabla; fuera de esos rangos el comportamiento no esta garantizado.
+- Riesgo de alucinacion y sesgos: no se documentan sesgos especificos, pero al ser un modelo entrenado sobre un prior sintetico, su comportamiento en datos reales fuera de la distribucion del prior puede degradarse sin aviso.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo se distribuye sin garantias y el autor no ofrece soporte ni mantenimiento.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier
-- Repositorio de código: https://github.com/Aiden-Jeon/minipfn
-- Paper TabPFN v2 (Nature): https://doi.org/10.1038/s41586-024-08328-6
+- Modelo de regresion: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-regressor
+- Repositorio de codigo: https://github.com/Aiden-Jeon/minipfn
+- Articulo TabPFN v2 (Nature, 2025): https://doi.org/10.1038/s41586-024-08328-6
 - TabPFN oficial (PriorLabs): https://github.com/PriorLabs/TabPFN
 - Prior TabICL: https://github.com/soda-inria/tabicl

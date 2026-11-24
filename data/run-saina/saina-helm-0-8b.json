@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Run - Play it Online at Coolmath Games",
-      "url": "https://www.coolmathgames.com/0-run",
-      "snippet": "Play Run now at Coolmath Games. This game requires a huge amount of concentration and memorization as you progress through …"
-    },
-    {
-      "title": "i-Run",
-      "url": "https://www.i-run.fr/",
-      "snippet": "Sur i-Run, profitez de chaussures de sport et d'équipements de grandes marques : Nike, Asics, Adidas, Hoka, ..., pour le Running, …"
-    },
-    {
-      "title": "Run 3 Online",
-      "url": "https://run3.io/",
-      "snippet": "Run through outer space as a little critter in Run 3. Avoid falling into the open gap as you leap through each level."
-    },
-    {
-      "title": "Run 3 - Play Online at Coolmath Games",
-      "url": "https://www.coolmathgames.com/0-run-3",
-      "snippet": "Run 3 is a Coolmath Games classic where you swerve through space in a race to the finish. Play hundreds of new levels in this fast …"
-    },
-    {
-      "title": "RUN Assurance - Assurance Moto, Scooter & Quad en ligne",
-      "url": "https://www.runassurance.com/",
-      "snippet": "Pour offrir à chacun les garanties légales minimales pour prendre la route, RUN Assurance propose des formules tiers abordables et …"
-    }
-  ]
+  "sources": []
 }

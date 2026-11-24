@@ -2,56 +2,54 @@
 
 ## Resumen
 
-Llama-V-JEPA-LM-Qwen3-1.7B es un modelo de lenguaje y vídeo desarrollado por el usuario kkt94, que combina un codificador visual congelado V-JEPA 2.1 (ViT-L, un modelo del mundo) con el modelo de lenguaje Qwen3-1.7B mediante un puente espectral. El resultado es un sistema multimodal que acepta vídeo y texto y produce texto, orientado a tareas de pregunta-respuesta sobre vídeo (video question answering) y a la comprensión de dinámicas temporales y de movimiento.
+Llama-V-JEPA-LM-Qwen3-1.7B es un modelo de lenguaje y vídeo desarrollado por el autor independiente kkt94 dentro de la familia Llama-V-JEPA-LM. Combina un codificador de vídeo congelado basado en el modelo del mundo V-JEPA 2.1 (ViT-L) con el modelo de lenguaje Qwen3-1.7B, unidos mediante un puente espectral que convierte cada clip de 32 fotogramas en 1.024 tokens visuales. El objetivo es dotar a un modelo de lenguaje compacto de capacidad para razonar sobre la dinámica temporal del vídeo: dirección, orden, velocidad, posición, conteo y finalización de acciones.
 
-El modelo aborda el problema de dotar a un LLM compacto de capacidad para interpretar el movimiento, el orden, la dirección, la velocidad y los cambios de estado en secuencias de vídeo, sin necesidad de anotación humana adicional. Para ello emplea supervisión contrafactual: transformaciones a nivel de píxel sobre vídeos públicos generan variantes con respuestas equilibradas y fijadas por construcción. Se entrenó sobre 4,60 millones de muestras públicas.
+El modelo se entrena con supervisión contrafactual: transformaciones a nivel de píxel sobre vídeos públicos generan variantes equilibradas en respuestas, cuyas respuestas quedan fijadas por construcción y difieren únicamente en cómo cambia la escena. Así, el modelo de lenguaje aprende a leer la dinámica que el codificador del modelo del mundo ya codifica, sin necesidad de nuevas anotaciones humanas. El entrenamiento emplea 4,60 millones de muestras públicas.
 
-Con 2.032.915.456 parámetros totales y licencia Apache-2.0, es relevante ahora por su eficiencia (1.024 tokens visuales por clip de 32 fotogramas, independientemente de la resolución) y por sus resultados declarados, que superan a modelos abiertos de su clase en la mayoría de benchmarks de vídeo. El prefijo "Llama" del nombre proviene de que los datos de entrenamiento incluyen el split FGQA de PLM-Video-Human, cuya licencia exige ese prefijo.
+Su relevancia radica en que un modelo de solo 2.032.915.456 parámetros totales supera, según el autor, a todos los modelos abiertos de su clase de tamaño en tareas de vídeo: obtiene una media de 66,02 en 12 métricas sobre 11 benchmarks de vídeo, frente a 52,45 de Qwen3-VL-2B. El prefijo «Llama» del nombre se debe a que los datos de entrenamiento incluyen el split FGQA de PLM-Video-Human, cuya licencia exige ese prefijo en los modelos entrenados con él.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Modelo de lenguaje y vídeo: codificador visual V-JEPA 2.1 (ViT-L, congelado) + LLM Qwen3-1.7B + puente espectral |
-| Parametros totales | 2.032.915.456 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Modelo de lenguaje Qwen3-1.7B acoplado a un codificador de vídeo V-JEPA 2.1 (ViT-L) congelado mediante un puente espectral |
+| Parámetros totales | 2.032.915.456 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | Safetensors (librería transformers, con custom_code) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura une un codificador de vídeo V-JEPA 2.1 (ViT-L) congelado, que actúa como modelo del mundo, con el modelo de lenguaje Qwen3-1.7B, que se ajusta completamente (1,72 B de parámetros). La conexión se realiza mediante un puente espectral que transforma cada clip de 32 fotogramas en 1.024 tokens visuales, con independencia de la resolución de entrada. Esto mantiene bajo el coste de prefill del LLM: 3,3 TFLOPs por clip en una H100, frente a 7,0–40,5 TFLOPs de los modelos abiertos de su clase.
+La arquitectura une un codificador de vídeo V-JEPA 2.1 (ViT-L) congelado, que actúa como modelo del mundo, con el modelo de lenguaje Qwen3-1.7B a través de un puente espectral. Cada clip de 32 fotogramas se proyecta en 1.024 tokens visuales con independencia de la resolución de entrada, lo que mantiene el coste de prefill del modelo de lenguaje constante. El codificador de vídeo no se entrena; solo se adapta la interfaz hacia el modelo de lenguaje.
 
-El entrenamiento emplea supervisión contrafactual: transformaciones de píxel sobre vídeos públicos generan variantes con respuestas equilibradas, fijadas por construcción, que difieren únicamente en cómo cambia la escena. Así el modelo aprende a leer dinámicas (dirección, velocidad, orden, estado) a partir de lo que codifica el modelo del mundo. Se entrenó sobre 4,60 millones de muestras públicas. No se especifican en la información disponible detalles sobre RLHF/DPO ni sobre la composición exacta del dataset más allá de la mención al split FGQA de PLM-Video-Human.
+El entrenamiento se basa en supervisión contrafactual sobre 4,60 millones de muestras públicas. Las transformaciones de píxel de vídeos públicos generan variantes con respuestas equilibradas y fijadas por construcción, que difieren solo en la dinámica de la escena, de modo que el modelo aprende a interpretar dirección, orden, posición, velocidad, conteo y finalización. No se detalla en la información disponible el uso de RLHF o DPO, ni la composición exacta del dataset más allá de las fuentes citadas.
 
 ## Capacidades
 
-- Generación de texto a partir de vídeo y texto (video-text-to-text).
-- Pregunta-respuesta sobre vídeo (video question answering).
-- Comprensión de movimiento y cambio temporal: dirección, orden, posición, velocidad, conteo y finalización de acciones.
-- Extracción de características (feature-extraction) y etiquetado como modelo del mundo (world-model).
-- Capacidades multimodales de vídeo e idioma.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Capacidad especial: uso de un codificador V-JEPA 2.1 congelado y supervisión contrafactual para lectura de dinámicas.
+- Respuesta a preguntas sobre vídeo (video question answering) en inglés.
+- Razonamiento sobre dinámica temporal: dirección, orden, posición, velocidad, conteo y finalización de acciones.
+- Comprensión de cambios de estado y relaciones temporales entre fotogramas.
+- Procesamiento de clips de 32 fotogramas con 1.024 tokens visuales por clip, a cualquier resolución de entrada.
+- Extracción de características (feature-extraction) según los tags del modelo.
+- Integración con la librería transformers mediante código personalizado (custom_code).
+- No se documentan en la información disponible capacidades de tool calling, agentes, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Pregunta-respuesta sobre vídeo en inglés: el modelo responde a preguntas sobre el contenido y la evolución temporal de clips de 32 fotogramas, adecuado por su entrenamiento específico en video QA y sus resultados en MVBench, PerceptionTest y NExT-QA.
-- Análisis de movimiento y dinámica de escenas: permite determinar dirección, velocidad, orden de acciones y cambios de estado, gracias a la supervisión contrafactual que entrena la lectura de dinámicas.
-- Indexación y descripción de archivos de vídeo: al convertir cada clip en 1.024 tokens visuales a cualquier resolución, se puede procesar vídeo de forma compacta para generar descripciones o metadatos.
-- Detección de cambios de estado en secuencias: útil para tareas de seguimiento de acciones y finalización de eventos en vídeos públicos, apoyándose en el codificador V-JEPA 2.1.
-- Evaluación comparativa de modelos de vídeo: sirve como referencia de la clase 2B para experimentos de video QA, dado su rendimiento declarado frente a Qwen3-VL-2B.
-- Investigación en modelos del mundo: el diseño con codificador congelado y puente espectral facilita experimentos sobre representaciones visuales y su transferencia al lenguaje.
-- Prototipado con recursos limitados: su tamaño de 2,03 B de parámetros y su bajo coste de prefill (3,3 TFLOPs por clip en H100) permiten desplegarlo en entornos de investigación con hardware moderado.
+- Análisis de vigilancia y monitorización: el modelo puede responder preguntas sobre dirección y velocidad de objetos en clips de 32 fotogramas, adecuado para detectar cambios de estado en secuencias de cámara.
+- Indexación y búsqueda semántica de vídeo: la extracción de características y la conversión de clips en 1.024 tokens permiten generar representaciones compactas para motores de búsqueda sobre archivos audiovisuales.
+- Control de calidad en líneas de producción: la capacidad de leer orden, posición y finalización de acciones permite verificar pasos de procesos grabados en vídeo.
+- Análisis deportivo: la comprensión de dirección, velocidad y orden temporal sirve para responder consultas sobre jugadas y secuencias de movimiento.
+- Evaluación de contenido educativo o demostrativo: responder preguntas sobre el desarrollo de un procedimiento mostrado en vídeo, aprovechando la comprensión de la secuencia de estados.
+- Investigación en modelos del mundo: al usar un codificador V-JEPA congelado, sirve como banco de pruebas para estudiar cómo un modelo de lenguaje interpreta representaciones latentes de dinámica visual.
+- Asistencia a personas con discapacidad visual: descripción de cambios y acciones en secuencias cortas de vídeo, con la limitación de que solo opera en inglés.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados) en tareas de video question answering:
+Resultados declarados por el autor del modelo (no verificados):
 
 | Benchmark | Métrica | Valor |
 |---|---|---|
@@ -68,51 +66,41 @@ Resultados declarados por el autor (no verificados) en tareas de video question 
 | Vinoground text | text pair accuracy | 63,2 |
 | Vinoground video | video pair accuracy | 50,8 |
 
-El autor declara una media de 66,02 en las 12 puntuaciones sobre 11 benchmarks de vídeo, frente a 52,45 de Qwen3-VL-2B. También reporta una media de 95,0 en seis conjuntos retenidos (frente a 43,8 de Qwen3-VL-2B, con azar en 33,3). Estos datos proceden de la model card y no están verificados de forma independiente.
+Media de las 12 métricas: 66,02, frente a 52,45 de Qwen3-VL-2B según el autor. En seis conjuntos retenidos (ratios de velocidad no vistos, corpus fuente no visto, combinaciones no vistas y un simulador no visto; azar 33,3), el modelo obtiene una media de 95,0 frente a 43,8 de Qwen3-VL-2B. El autor indica que es el mejor modelo abierto de la clase 2B en 9 de las 12 métricas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 2,03 B de parámetros, en precisión completa (fp16/bf16) el peso ronda los 4 GB, y el repositorio ocupa 4,1 GB.
-- GPU recomendadas: el autor reporta mediciones en una H100 (3,3 TFLOPs de prefill por clip y 83 ms hasta el primer token en total).
-- ¿Cabe en GPU de consumo? No confirmado en la información disponible; por tamaño de parámetros sería viable en GPUs de consumo con memoria suficiente, pero no se aportan datos de VRAM ni de cuantización.
-- Opciones de despliegue: transformers (librería declarada, con custom_code). No se confirman vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 83 ms hasta el primer token en total según el autor; throughput no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 2.032.915.456 parámetros, en FP16 rondaría los 4 GB solo para los pesos, más el codificador de vídeo y las activaciones.
+- GPU recomendadas: el autor cita una H100 para el prefill de un clip (3,3 TFLOPs en 22 ms); no se detallan otras GPU.
+- Cabe en GPU de consumo: probablemente sí en modelos con 8 GB o más de VRAM en FP16, aunque este dato no está confirmado en la información disponible.
+- Opciones de despliegue: transformers con código personalizado (custom_code); no se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: prefill de un clip de 1.024 tokens visuales en 22 ms en una H100 (3,3 TFLOPs); no se detalla el throughput de generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento (media 12 scores) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Media 12 métricas de vídeo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-V-JEPA-LM-Qwen3-1.7B | 2,03 B | no disponible | 66,02 (declarado) | Apache-2.0 | Hugging Face |
-| Qwen3-VL-2B | clase 2B | no disponible | 52,45 (declarado por el autor) | no disponible en esta ficha | Hugging Face |
-| Otros modelos abiertos de clase 2B | clase 2B | no disponible | no disponible | no disponible | no disponible |
+| Llama-V-JEPA-LM-Qwen3-1.7B | 2.032.915.456 | No disponible | 66,02 | Apache-2.0 | Hugging Face |
+| Qwen3-VL-2B | Clase 2B | No disponible | 52,45 | No disponible | No disponible |
 
-El autor sitúa a Llama-V-JEPA-LM-Qwen3-1.7B por delante de todos los modelos abiertos de su clase en 9 de las 12 puntuaciones, con ventajas destacadas en SSv2 (91,6 frente a 61,7), Vinoground text (63,2 frente a 40,0), MVP (54,6 frente a 32,3) y Vinoground video (50,8 frente a 29,6). No se dispone de datos comparativos adicionales verificados.
+No se dispone en la información proporcionada de datos de un tercer modelo comparable (parámetros, contexto, licencia ni resultados) para completar la comparativa.
 
 ## Limitaciones y advertencias
 
-- Resultados de benchmarks declarados por el autor y no verificados de forma independiente.
-- Idiomas: solo inglés según la model card; no se garantiza rendimiento en castellano u otros idiomas.
-- Longitud de contexto no especificada; no se puede evaluar su comportamiento en conversaciones o vídeos largos.
-- Riesgo de alucinación: no documentado en la información disponible, pero inherente a los modelos generativos.
-- Sesgos conocidos: no documentados; al entrenarse con vídeos públicos, pueden heredarse sesgos de esos datos.
-- Restricción de licencia: aunque la licencia es Apache-2.0, el nombre "Llama" deriva de que los datos incluyen el split FGQA de PLM-Video-Human, cuya licencia exige el prefijo "Llama" a los modelos entrenados con él; conviene revisar las implicaciones para uso comercial.
-- Requiere custom_code en transformers, lo que puede complicar el despliegue en otros frameworks.
-- No se aportan datos sobre cuantización ni sobre compatibilidad con motores de inferencia habituales.
-- El modelo está orientado a vídeo y texto; no se documentan capacidades de audio, tool calling ni agentes.
+- Solo soporta inglés, lo que limita su uso en entornos en castellano sin adaptación.
+- Los resultados de benchmarks son declarados por el autor y no están verificados.
+- No se documenta la longitud de contexto del modelo de lenguaje subyacente.
+- El codificador de vídeo está congelado: la adaptación al dominio se limita al puente espectral y al modelo de lenguaje.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en preguntas sobre detalles finos de la escena no cubiertos por las transformaciones de entrenamiento.
+- El rendimiento en TOMATO (50,9) y MotionBench (54,3) es notablemente inferior al de otros benchmarks, lo que sugiere dificultades en tareas de comprensión de movimiento complejo.
+- La licencia Apache-2.0 permite uso comercial, pero el prefijo «Llama» deriva de la licencia de los datos PLM-Video-Human; conviene revisar las condiciones de ese dataset antes de un despliegue comercial.
+- No se documentan sesgos específicos ni evaluaciones de seguridad en la información disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kkt94/Llama-V-JEPA-LM-Qwen3-1.7B
-- Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
-- Dataset PLM-Video-Human (split FGQA): https://huggingface.co/datasets/facebook/PLM-Video-Human
-- Dataset MVBench: https://huggingface.co/datasets/OpenGVLab/MVBench
-- Dataset PerceptionTest: https://huggingface.co/datasets/lmms-lab/PerceptionTest
-- Dataset TVBench: https://huggingface.co/datasets/FunAILab/TVBench
-- Dataset TempCompass: https://huggingface.co/datasets/lmms-lab/TempCompass
-- Dataset TOMATO: https://huggingface.co/datasets/yale-nlp/TOMATO
-- Dataset MotionBench: https://huggingface.co/datasets/zai-org/MotionBench
-- Dataset NExT-QA: https://huggingface.co/datasets/lmms-lab/NExTQA
-- Dataset MVP: https://huggingface.co/datasets/facebook/minimal_video_pairs
-- Dataset TemporalBench: https://huggingface.co/datasets/microsoft/TemporalBench
-- Dataset Something-Something v2: https://huggingface.co/datasets/HuggingFaceM4/something_something_v2
-- Dataset Vinoground: https://huggingface.co/datasets/HanSolo9682/Vinoground
+- Modelo en Hugging Face: https://huggingface.co/kkt94/Llama-V-JEPA-LM-Qwen3-1.7B
+- Paper: https://arxiv.org/abs/2611.17831
+- Código e informe técnico: https://github.com/kkt94/Llama-V-JEPA-LM
+- Demo en vivo (Llama-V-JEPA-LM-Llama3.1-8B, ZeroGPU): https://huggingface.co/spaces/kkt94/llama-v-jepa-lm-8b
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
+- Dataset PLM-Video-Human: https://huggingface.co/datasets/facebook/PLM-Video-Human

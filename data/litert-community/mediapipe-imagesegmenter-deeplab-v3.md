@@ -2,108 +2,117 @@
 
 ## Resumen
 
-MediaPipe-ImageSegmenter-DeepLab-V3 es un modelo de segmentación semántica de propósito general empaquetado en formato TensorFlow Lite (`.tflite`) y distribuido por la comunidad `litert-community` para su uso con la tarea `ImageSegmenter` de MediaPipe. Se trata de una implementación de la arquitectura DeepLab-v3 con atrous spatial pyramid pooling (ASPP) que toma imágenes RGB de `257 x 257` píxeles y produce logits por píxel para 21 clases del conjunto Pascal VOC, incluyendo fondo, persona, vehículos, animales y mobiliario.
+MediaPipe DeepLab-v3 es un modelo de segmentación semántica de propósito general empaquetado como `deeplab_v3.tflite` (2,78 MB, FP32) para la tarea MediaPipe Image Segmenter. Lo distribuye la comunidad `litert-community` a partir de los artefactos oficiales de Google AI Edge y resuelve un problema muy concreto: dotar de segmentación densa a aplicaciones Android, iOS, web, Python y Flutter sin depender de un servidor, ejecutando la inferencia en el propio dispositivo.
 
-El modelo es extremadamente compacto (2,78 MB en FP32) y está diseñado para inferencia en dispositivo (on-device) en Android, iOS, web, Python y Flutter, sin necesidad de backend. Es relevante porque ofrece un componente listo para producción de segmentación semántica de baja latencia dentro del ecosistema MediaPipe, con metadatos TFLite embebidos (`labelmap.txt` y `labels.txt`) que simplifican la integración.
+El modelo es una implementación de DeepLab-v3 con atrous spatial pyramid pooling (ASPP) que recibe un tensor RGB `[1, 257, 257, 3]` y devuelve logits por píxel `[1, 257, 257, 21]` correspondientes a las 21 clases de Pascal VOC (fondo, persona, animales, vehículos, mobiliario, etc.). No es un modelo generativo ni un LLM: es un segmentador convolucional compacto pensado para latencia baja y huella mínima en hardware móvil.
 
-La relevancia actual radica en su naturaleza reproducible: los binarios del repositorio son byte-idénticos a los artefactos oficiales servidos por Google desde `storage.googleapis.com/mediapipe-models`, lo que facilita la verificación de procedencia y el despliegue en pipelines de visión por computador en el borde.
+Su relevancia actual reside en el formato: LiteRT/TFLite con metadatos `TFLITE_METADATA` embebidos (`labelmap.txt`, `labels.txt`), lo que permite cargarlo directamente con la API `ImageSegmenter` de MediaPipe sin preprocesado manual de etiquetas. La licencia Apache 2.0 facilita su integración comercial en productos de visión por computador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeepLab-v3 con atrous spatial pyramid pooling (ASPP); red neuronal convolucional para segmentación semántica |
+| Arquitectura | DeepLab-v3 con atrous spatial pyramid pooling (ASPP), red convolucional |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión; entrada fija de `[1, 257, 257, 3]`) |
-| Tipos de cuantizacion | FP32 (float32); el repositorio solo distribuye la variante FP32 |
-| Idiomas soportados | no aplica (modelo de visión, sin capacidades lingüísticas) |
+| Longitud de contexto | no aplica (modelo de visión, entrada fija 257 x 257) |
+| Tipos de cuantizacion | FP32 (float32); no se distribuyen variantes cuantizadas en el repo |
+| Idiomas soportados | no disponible (no procesa texto; etiquetas en inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`.tflite`), con metadatos `TFLITE_METADATA` embebidos |
-| Tamano del artefacto | 2,78 MB (2.780.176 bytes) |
-| Entrada | `sub_7`: `[1, 257, 257, 3]`, float32, normalización `mean=[127.5]`, `std=[127.5]` |
-| Salida | `ResizeBilinear_3`: `[1, 257, 257, 21]`, float32 (logits/probabilidades por píxel) |
-| Clases | 21 (Pascal VOC: background, aeroplane, bicycle, bird, boat, bottle, bus, car, cat, chair, cow, dining table, dog, horse, motorbike, person, potted plant, sheep, sofa, train, tv) |
-| Resolución de entrada | `257 x 257` |
+| Formato de pesos | TFLite (`deeplab_v3.tflite`, LiteRT) con metadatos embebidos |
+
+Especificaciones adicionales del tensor:
+
+| Elemento | Detalle |
+|---|---|
+| Entrada | `sub_7`, shape `[1, 257, 257, 3]`, float32, normalización `mean=[127.5]`, `std=[127.5]` |
+| Salida | `ResizeBilinear_3`, shape `[1, 257, 257, 21]`, float32 (logits/probabilidades por clase) |
+| Clases | 21 de Pascal VOC (0 background … 20 tv) |
+| Tamano del fichero | 2.780.176 bytes (2,78 MB) |
 | SHA-256 | `ff36e24d40547fe9e645e2f4e8745d1876d6e38b332d39a82f0bf0f5d1d561b3` |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura DeepLab-v3, una red convolucional para segmentación semántica que emplea atrous spatial pyramid pooling (ASPP) para capturar contexto multi-escala mediante convoluciones dilatadas a distintas tasas. La entrada es una imagen RGB de `257 x 257` píxeles normalizada con media y desviación estándar de 127.5, y la salida es un tensor de `257 x 257 x 21` con logits por píxel para cada una de las 21 clases Pascal VOC. El grafo está optimizado para TFLite y se ejecuta a través del runtime LiteRT/MediaPipe.
+DeepLab-v3 es una red convolucional totalmente segmentadora que combina un backbone convolucional con ASPP para capturar contexto multi-escala mediante convoluciones dilatadas a distintas tasas. En esta variante MediaPipe, la entrada se fija a 257 x 257 píxeles y la salida se remuestrea con `ResizeBilinear` hasta la resolución de entrada, produciendo 21 canales de logits, uno por clase Pascal VOC. El modelo se exporta a TFLite con metadatos que declaran el nombre `ImageSegmenter`, versión `1` y autor `MediaPipe`, e incluyen los ficheros `labelmap.txt` y `labels.txt` empaquetados.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO, ya que el modelo es puramente de visión y la model card no detalla el proceso de entrenamiento. La innovación técnica destacable es la inclusión de metadatos TFLite embebidos (`labelmap.txt` y `labels.txt`) y la verificación de procedencia byte a byte contra los artefactos oficiales de Google, lo que garantiza reproducibilidad. El modelo está pensado para inferencia en dispositivo y no incorpora mecanismos de decodificación especulativa ni atención lineal.
+La información disponible no detalla el número de tokens de entrenamiento (no aplica), la composición exacta del dataset ni si hubo fases de ajuste fino posteriores al entrenamiento original de DeepLab-v3 sobre Pascal VOC. Tampoco se documentan innovaciones adicionales como decodificación especulativa o atención lineal, propias de modelos generativos y ajenas a este tipo de segmentador. El artefacto distribuido es FP32 sin variantes cuantizadas en el repositorio.
 
 ## Capacidades
 
-- Segmentación semántica densa por píxel sobre 21 clases Pascal VOC (fondo, persona, animales, vehículos, mobiliario).
-- Generación de máscaras de categoría (`output_category_mask=True`) y máscaras de confianza opcionales (`output_confidence_masks`).
-- Ejecución en dispositivo (on-device) en Android, iOS, web, Python y Flutter mediante MediaPipe Tasks.
-- Integración con el runtime LiteRT/TFLite y el ecosistema MediaPipe (`ImageSegmenter`).
-- Extracción de primer plano y efectos fotográficos basados en las clases segmentadas.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües (es un modelo exclusivamente de visión).
-- No dispone de modo de pensamiento (thinking mode), visión generativa, audio ni otras capacidades multimodales más allá de la segmentación de imágenes.
+- Segmentación semántica densa por píxel sobre 21 clases de Pascal VOC.
+- Clases cubiertas: `background`, `aeroplane`, `bicycle`, `bird`, `boat`, `bottle`, `bus`, `car`, `cat`, `chair`, `cow`, `dining table`, `dog`, `horse`, `motorbike`, `person`, `potted plant`, `sheep`, `sofa`, `train`, `tv`.
+- Generación de máscara de categorías (`output_category_mask=True`) y máscaras de confianza por clase (`output_confidence_masks`).
+- Ejecución en modo imagen (`VisionRunningMode.IMAGE`) mediante la API `ImageSegmenter` de MediaPipe.
+- Despliegue multiplataforma: Android (Kotlin/Java), iOS (Swift), web (JavaScript/TypeScript), Python y Flutter (Dart).
+- No soporta tool calling, agentes, razonamiento multi-paso ni procesamiento de lenguaje natural: es exclusivamente un modelo de visión.
+- No dispone de modo thinking, visión generativa, audio ni capacidades multimodales más allá de la imagen de entrada.
 
 ## Casos de uso
 
-- **Extracción de primer plano en apps móviles**: el modelo segmenta la clase `person` (índice 15) y permite generar máscaras para sustituir fondos en tiempo real en Android o iOS, con latencias de ~123,93 ms en CPU y ~103,30 ms en GPU sobre Pixel 6.
-- **Efectos fotográficos y edición**: uso de las máscaras por categoría para aplicar desenfoque selectivo, cambio de color o recorte por clase (por ejemplo, aislar `cat`, `dog` o `car`) en aplicaciones de retoque.
-- **Comprensión de escenas en el borde**: clasificación y localización densa de objetos Pascal VOC en dispositivos sin conectividad, útil en aplicaciones de realidad aumentada o asistentes de accesibilidad que describen la escena.
-- **Automatización de recortes en pipelines de datos**: procesamiento por lotes en Python para generar máscaras de segmentación sobre datasets de imágenes y alimentar etapas posteriores de anotación o aumento de datos.
-- **Segmentación en web con JavaScript**: integración en aplicaciones web mediante MediaPipe Web para segmentar imágenes subidas por el usuario directamente en el navegador, sin enviar datos a un servidor.
-- **Prototipado rápido en Flutter**: uso del paquete `flutter-mediapipe` para incorporar segmentación semántica en apps multiplataforma con un único artefacto de 2,78 MB.
-- **Filtros y máscaras en videollamadas**: segmentación de la clase `person` para aplicar fondos virtuales o difuminado en tiempo real en aplicaciones de comunicación.
+- **Efecto de fondo en videollamadas o apps de cámara**: usar la clase `person` de la máscara de salida para separar al usuario del fondo y aplicar desenfoque o sustitución en tiempo real en Android, iOS o web, aprovechando el tamaño de 2,78 MB y la inferencia on-device.
+- **Moderación de contenido visual en el cliente**: detectar clases sensibles (por ejemplo, `person` en contextos no permitidos) antes de subir una imagen a un servidor, reduciendo coste de backend y preservando privacidad.
+- **Segmentación para realidad aumentada**: generar máscaras de suelo, mobiliario (`chair`, `sofa`, `dining table`) o vehículos para anclar objetos virtuales en apps AR móviles con MediaPipe Tasks.
+- **Preprocesado en pipelines de visión por computador**: producir máscaras semánticas gruesas como etapa previa a detectores o clasificadores en aplicaciones de bajo consumo, por ejemplo en dispositivos embebidos o navegador.
+- **Análisis de escenas en aplicaciones de accesibilidad**: identificar clases como `car`, `bus`, `person` o `dog` para describir el entorno a usuarios con discapacidad visual, ejecutando el modelo localmente sin conexión.
+- **Prototipado rápido en Python y notebooks**: validar la tarea de segmentación con el quickstart de MediaPipe y `hf_hub_download`, útil para pruebas de concepto antes de portar a móvil o web.
+- **Automatización de recorte en apps de edición fotográfica**: generar máscaras de `person`, `cat`, `dog` o `potted plant` para recortes automáticos o stickers en Flutter y web.
 
 ## Benchmarks y rendimiento
 
-La model card reporta latencias medias de extremo a extremo del pipeline MediaPipe Tasks para la variante DeepLab-V3:
+La model card incluye una sección de latencias de la documentación oficial de MediaPipe Image Segmenter, pero la tabla de resultados aparece truncada en la información proporcionada, por lo que no es posible reproducir cifras concretas de latencia por dispositivo.
 
-| Variante | Dispositivo | Latencia CPU | Latencia GPU |
-|---|---|---:|---:|
-| DeepLab-V3 | Pixel 6 | 123,93 ms | 103,30 ms |
+| Benchmark | Resultado |
+|---|---|
+| Latencia CPU/GPU por dispositivo | no disponible (tabla truncada en la información recibida) |
+| Métricas de precisión (mIoU, pixel accuracy) | no disponible |
+| Comparación con otros modelos | no disponible |
 
-No se han publicado resultados de benchmarks de precisión (mIoU, pixel accuracy, etc.) en la información disponible.
+No se han publicado resultados de benchmarks de precisión (mIoU, accuracy) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el modelo es de 2,78 MB en FP32; la huella de memoria es mínima y cabe holgadamente en cualquier GPU consumer, e incluso en memoria compartida de dispositivos móviles.
-- **GPU recomendadas**: no requiere GPU dedicada; funciona en CPU de dispositivos móviles (Pixel 6 reportado) y en GPUs integradas. Para despliegues en servidor, cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es más que suficiente, aunque el modelo está pensado para el borde.
-- **Compatibilidad con GPU consumer**: sí, cabe en cualquier GPU consumer e incluso en dispositivos sin GPU dedicada.
-- **Opciones de despliegue**: MediaPipe Tasks (`ImageSegmenter`) en Python, Android, iOS, web y Flutter; runtime LiteRT/TFLite. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
-- **Latencia y throughput estimados**: ~123,93 ms en CPU y ~103,30 ms en GPU sobre Pixel 6 para el pipeline completo de MediaPipe Tasks. No se dispone de datos de throughput para otros dispositivos.
+- **VRAM/RAM estimada**: al ser un modelo de 2,78 MB en FP32, la huella de memoria es mínima; cabe holgadamente en cualquier dispositivo móvil, navegador o equipo de escritorio. No requiere GPU dedicada.
+- **GPU recomendadas**: no aplica en el sentido de GPUs de datacenter; funciona en CPU móvil y en GPUs integradas. La documentación de MediaPipe reporta latencias para CPU y GPU en dispositivos móviles, aunque las cifras concretas no están disponibles en la información recibida.
+- **Consumer GPU**: no necesita GPU de consumo; puede ejecutarse en CPU de teléfonos de gama media y en navegadores mediante WebAssembly/WebGL.
+- **Opciones de despliegue**: MediaPipe Tasks (Python, Android, iOS, web, Flutter), LiteRT/TFLite runtime, y el ecosistema `litert-community`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
+- **Latencia y throughput**: la model card remite a los benchmarks oficiales de MediaPipe Image Segmenter, pero los valores numéricos no están disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Clases | Resolución | Licencia | Formato | Latencia reportada |
-|---|---|---|---:|---|---|---|
-| MediaPipe-ImageSegmenter-DeepLab-V3 | Segmentación semántica | 21 (Pascal VOC) | 257 x 257 | Apache 2.0 | TFLite | 123,93 ms CPU / 103,30 ms GPU (Pixel 6) |
-| Otros modelos de la familia MediaPipe Image Segmenter | Segmentación semántica | no disponible | no disponible | no disponible | TFLite | no disponible |
-| Alternativas de segmentación en el borde (por ejemplo, variantes ligeras de DeepLab) | Segmentación semántica | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Tipo | Entrada | Clases | Tamano | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| MediaPipe DeepLab-v3 (este) | Segmentación semántica | 257 x 257 | 21 (Pascal VOC) | 2,78 MB FP32 | Apache 2.0 | Hugging Face, LiteRT |
+| Otros segmentadores MediaPipe (p. ej. SelfieSegmenter, HairSegmenter) | Segmentación binaria/específica | variable | 1-2 | no disponible | Apache 2.0 | MediaPipe |
+| DeepLab-v3 original (TensorFlow) | Segmentación semántica | variable | 21 (Pascal VOC) | mayor | Apache 2.0 | TF Model Garden |
+| Segment Anything (SAM) | Segmentación promptable | 1024 x 1024 | sin clases fijas | cientos de MB | Apache 2.0 | Meta AI |
 
-No se dispone de información suficiente en la documentación proporcionada para establecer una comparativa cuantitativa con alternativas concretas de la misma categoría.
+La comparación cuantitativa de rendimiento con estas alternativas no está disponible en la información proporcionada. La diferencia principal frente a SAM es que este modelo produce clases semánticas fijas de Pascal VOC con un tamaño tres órdenes de magnitud menor, a costa de menor granularidad y vocabulario cerrado.
 
 ## Limitaciones y advertencias
 
-- **Restricción de vocabulario**: el modelo solo segmenta las 21 clases Pascal VOC; los objetos fuera de ese vocabulario no se separan y se asignan a la clase más probable entre las disponibles.
-- **Resolución fija**: la entrada está limitada a `257 x 257`, lo que puede producir pérdida de detalle en bordes finos y objetos pequeños.
-- **Sesgos**: no se ha publicado un informe de equidad (fairness) específico para DeepLab-v3 en la página de documentación de MediaPipe; se desconoce el comportamiento diferencial por demografía, iluminación o tipo de escena.
-- **Riesgo de alucinación**: no aplica en el sentido generativo, pero pueden producirse segmentaciones erróneas en píxeles ambiguos o de baja confianza.
-- **Licencia**: Apache 2.0 permite uso comercial, pero se recomienda verificar la procedencia del binario (el repositorio garantiza identidad byte a byte con los artefactos oficiales de Google).
-- **Caveat de producción**: el modelo está pensado para inferencia en dispositivo; para cargas de servidor de alta concurrencia conviene evaluar el throughput real y el consumo energético en el hardware objetivo.
-- **Sin soporte lingüístico ni multimodal**: no debe emplearse para tareas de texto, audio o razonamiento; su ámbito es exclusivamente la segmentación de imágenes.
+- **Vocabulario cerrado**: solo segmenta 21 clases de Pascal VOC; cualquier objeto fuera de esa lista se etiquetará como `background` o como la clase más próxima, lo que limita su uso en dominios específicos (medicina, industria, satélite).
+- **Resolución de entrada baja**: 257 x 257 píxeles implica pérdida de detalle en objetos pequeños o escenas con muchos elementos; la máscara se remuestrea, pero la información original ya está limitada.
+- **Sesgos del dataset**: Pascal VOC tiene una distribución demográfica y geográfica concreta; el rendimiento puede degradarse en escenas no representadas (interiores no occidentales, iluminación extrema, etc.).
+- **Riesgo de segmentación errónea**: al ser un modelo convolucional compacto, puede confundir clases visualmente similares (`chair` vs `sofa`, `car` vs `bus`) y producir bordes imprecisos.
+- **Sin cuantización oficial en el repo**: solo se distribuye FP32; para reducir aún más el tamaño habría que cuantizar manualmente, con posible pérdida de precisión.
+- **Licencia Apache 2.0**: permite uso comercial, pero conviene revisar las condiciones de los artefactos originales de Google AI Edge y MediaPipe de los que deriva.
+- **Sin soporte de texto ni multilingüe**: las etiquetas están en inglés y el modelo no procesa lenguaje; cualquier localización debe hacerse en la capa de aplicación.
+- **Mantenimiento comunitario**: el repositorio lo mantiene `litert-community`, no Google directamente; la versión y el soporte pueden no coincidir con los artefactos oficiales de MediaPipe.
 
 ## Enlaces
 
-- [Hugging Face: litert-community/MediaPipe-ImageSegmenter-DeepLab-V3](https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3)
-- [Archivo del modelo `deeplab_v3.tflite`](https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3/blob/main/deeplab_v3.tflite)
-- [Documentación de MediaPipe Image Segmenter](https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter)
-- [Demo web de Image Segmenter](https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/image_segmenter)
-- [Guía de configuración en Python](https://developers.google.com/edge/mediapipe/solutions/setup_python)
-- [Guía de configuración en Web/JavaScript](https://developers.google.com/edge/mediapipe/solutions/setup_web)
-- [Guía de configuración en Android](https://developers.google.com/edge/mediapipe/solutions/setup_android)
-- [Guía de configuración en iOS](https://developers.google.com/edge/mediapipe/solutions/setup_ios)
-- [Guía de configuración en Flutter](https://developers.google.com/edge/mediapipe/solutions/setup_flutter)
-- [Ejemplo Android en mediapipe-samples](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/android)
-- [Ejemplo iOS en mediapipe-samples](https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/ios)
-- [Notebook de Python en Colab](https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/image_segmentation/python/image_segmentation.ipynb)
-- [Ejemplo Flutter en flutter-mediapipe](https://github.com/google/flutter-mediapipe/tree/main/samples/vision/image_segmenter)
-- [Artefacto oficial servido por Google](https://storage.googleapis.com/mediapipe-models/deeplab_v3.tflite)
+- Hugging Face: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3
+- Fichero del modelo: https://huggingface.co/litert-community/MediaPipe-ImageSegmenter-DeepLab-V3/blob/main/deeplab_v3.tflite
+- Documentación MediaPipe Image Segmenter: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter
+- Benchmarks oficiales: https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter#benchmarks
+- Guía de setup Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
+- Guía de setup Web: https://developers.google.com/edge/mediapipe/solutions/setup_web
+- Guía de setup Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
+- Guía de setup iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
+- Guía de setup Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
+- Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/image_segmenter
+- Código fuente demo web: https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/image-segmenter.ts
+- Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/android
+- Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_segmentation/ios
+- Notebook Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/image_segmentation/python/image_segmentation.ipynb
+- Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/image_segmenter

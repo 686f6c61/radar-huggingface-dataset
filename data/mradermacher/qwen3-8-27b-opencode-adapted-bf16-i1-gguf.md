@@ -2,78 +2,101 @@
 
 ## Resumen
 
-Qwen3.8-27B-opencode-adapted-bf16-i1-GGUF es una cuantizacion en formato GGUF del modelo Qwen3.8-27B-opencode-adapted-bf16, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversion a cuantizacion de tipo imatrix (importance matrix) del modelo original alojado en el repositorio de prithivMLmods, lo que sugiere un modelo derivado o adaptado a partir de la familia Qwen3 orientado a tareas de generacion de codigo (la etiqueta "opencode" en el nombre apunta a un ajuste fino para este dominio). El repositorio contiene unicamente los pesos cuantizados, sin model card tecnica detallada ni documentacion adicional.
+`mradermacher/Qwen3.8-27B-opencode-adapted-bf16-i1-GGUF` es una recopilación de cuantizaciones GGUF con imatrix (metodo i1) del modelo `prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16`, un ajuste fino orientado a tareas de agentes y edición de código (etiquetas `opencode`, `agents`, `harbor`, `openenv`). El autor de las cuantizaciones es mradermacher, especializado en publicar versiones comprimidas de modelos abiertos para su uso con llama.cpp y ecosistemas compatibles.
 
-El modelo cuenta con 27.320.697.856 parametros totales (aproximadamente 27,3 mil millones), lo que lo situa en la categoria de modelos de gran tamano que requieren hardware de gama alta para inferencia. El repositorio ocupa 11,2 GB, un tamano coherente con cuantizaciones agresivas (probablemente Q2 a Q4) de un modelo de esta magnitud, aunque el desglose exacto por archivo no esta disponible en la informacion proporcionada.
+El modelo base tiene 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) y se distribuye bajo licencia Apache 2.0. Está entrenado sobre el ecosistema de entornos Harbor/OpenEnv con técnicas de RL (GRPO y async-GRPO) y adaptadores LoRA, según las etiquetas de la model card. El repositorio incluye únicamente pesos GGUF cuantizados (no safetensors), con un tamaño total de 220,5 GB repartido entre las distintas variantes.
 
-La relevancia de esta ficha es limitada por la escasez de datos: no se dispone de informacion sobre licencia, idiomas, benchmarks, arquitectura detallada ni proceso de entrenamiento. Se trata de un artefacto de cuantizacion mas que de un modelo documentado de forma independiente, y su evaluacion practica requeriria consultar el modelo base original.
+Esta ficha se centra en la versión cuantizada i1-GGUF, que resulta relevante para desarrolladores que quieran ejecutar un modelo de 27B orientado a agentes en hardware de consumo o en servidores modestos, eligiendo el nivel de cuantización en función de la VRAM disponible. La model card no aporta detalles sobre arquitectura interna, contexto o datos de entrenamiento más allá de las etiquetas y los datasets citados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer, derivado de Qwen3) |
-| Parametros totales | 27.320.697.856 (~27,3 B) |
+| Arquitectura | no disponible (modelo base transformer, segun tags `transformers`) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizacion imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | en (segun model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors/bf16 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo en la documentacion proporcionada. El nombre del repositorio indica que se trata de una cuantizacion GGUF (formato de llama.cpp) del modelo Qwen3.8-27B-opencode-adapted-bf16, que a su vez parece ser una adaptacion del modelo Qwen3 de 27B orientada a tareas de codigo ("opencode"). No obstante, no se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o ajuste supervisado.
+La información disponible no detalla la arquitectura interna del modelo base (`prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16`). Por las etiquetas y el nombre se infiere que parte de una familia Qwen3 (27B) y que ha sido adaptado mediante LoRA y entrenamiento con refuerzo (GRPO y async-GRPO) sobre entornos de agentes (`harbor`, `openenv`), usando los datasets `harness-hub/scale800-harbor`, `harness-hub/harness-adapters`, `harness-hub/termgrade-train-harbor` y `ai-and/termgrade-environments`. La etiqueta `mtp` sugiere soporte de multi-token prediction, aunque no se aportan detalles técnicos.
 
-La unica innovacion tecnica documentada es el uso de cuantizacion con importance matrix (imatrix), una tecnica que pondera la cuantizacion segun la importancia de los pesos para reducir la perdida de calidad en comparacion con la cuantizacion uniforme. El repositorio incluye una amplia gama de niveles de cuantizacion, desde IQ1_S hasta Q6_K, lo que permite ajustar el equilibrio entre tamano y fidelidad. No se dispone de informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones.
+No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF/DPO adicionales. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal. Esta ficha se limita a lo declarado en la model card del repositorio de cuantizaciones y a los metadatos de Hugging Face.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta "conversational" en el repositorio sugiere soporte para dialogos multi-turno.
-- Generacion y asistencia en codigo: la denominacion "opencode" indica un ajuste orientado a tareas de programacion, aunque no se detalla el alcance exacto.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el modelo puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
-- Capacidades multilingues: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto conversacional (tag `conversational`).
+- Orientación a tareas de agentes y razonamiento multi-paso (tags `agents`, `harbor`, `openenv`).
+- Edición y asistencia de código en el contexto de `opencode`.
+- Soporte declarado de tool calling / function calling a través de los entornos de agente (no se detalla el formato exacto).
+- Entrenamiento con RL (GRPO, async-GRPO) orientado a mejorar el comportamiento en entornos de ejecución.
+- Capacidad multimodal: la model card indica "This is a vision model", con ficheros `mmproj` disponibles en el repositorio estático (`mradermacher/Qwen3.8-27B-opencode-adapted-bf16-GGUF`).
+- Soporte declarado de `text-generation-inference` como librería compatible.
+- Idiomas: inglés (`en`) según la model card.
 
 ## Casos de uso
 
-- Asistencia en programacion en local: gracias a su formato GGUF y a la disponibilidad de cuantizaciones desde IQ1_S hasta Q6_K, el modelo puede ejecutarse en estaciones de trabajo con llama.cpp u Ollama, permitiendo autocompletado y generacion de codigo sin conexion a servicios en la nube.
-- Despliegue en entornos con recursos limitados: las cuantizaciones de 2 y 3 bits (Q2_K, IQ3_M, IQ3_XXS) reducen el peso del modelo a unos pocos gigabytes, lo que facilita su ejecucion en GPUs de consumo con VRAM moderada, a costa de cierta perdida de calidad.
-- Prototipado de asistentes conversacionales: la naturaleza conversacional del modelo permite construir chatbots de proposito general para pruebas internas antes de escalar a modelos mayores o con licencia comercial clara.
-- Integracion en pipelines de CI/CD para revision de codigo: el modelo puede emplearse para generar sugerencias o detectar patrones en diffs, siempre que se valide su calidad en el dominio concreto, dado que no hay benchmarks publicados.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece multiples niveles de cuantizacion del mismo modelo, lo que permite a investigadores medir el impacto de la cuantizacion imatrix en tareas de codigo y conversacion.
-- Experimentacion academica con modelos de ~27B: sirve como base para estudiar el comportamiento de modelos de gran tamano cuantizados en entornos de investigacion con presupuesto de hardware limitado.
+- Asistente de código en IDE o CLI: integrado en flujos tipo `opencode`, el modelo puede generar y editar código en un repositorio, aprovechando su adaptación a entornos de agente y su licencia Apache 2.0 para uso comercial.
+- Automatización de tareas de terminal: los datasets `termgrade` y `harbor` apuntan a entrenamiento en ejecución de comandos y resolución de tareas de shell; útil para agentes que operan sobre máquinas virtuales o contenedores.
+- Agente multi-paso con tool calling: adecuado para pipelines donde el modelo debe decidir qué herramienta invocar, ejecutar y validar el resultado, gracias al entrenamiento con GRPO sobre entornos.
+- Evaluación de modelos en entornos reproducibles: el formato GGUF con imatrix permite desplegar el modelo en llama.cpp para experimentar con harness de agentes sin depender de GPUs de datacenter.
+- Prototipado en hardware de consumo: las variantes i1-Q4_K_M (17,1 GB) o i1-IQ3_M (13,1 GB) permiten ejecutar un 27B en GPUs de 16-24 GB de VRAM.
+- Investigación en RL para agentes: al estar entrenado con GRPO/async-GRPO, sirve como base para estudiar transferencia de políticas de agente a modelos cuantizados.
+- Despliegue con visión: si se descargan los ficheros `mmproj` del repositorio estático, puede emplearse en tareas que combinen imagen y texto, aunque la model card no detalla el alcance multimodal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el tamano del repositorio (11,2 GB) y en el numero de parametros (27,3 B), las cuantizaciones de 2-3 bits ocuparian del orden de 8-12 GB, las de 4 bits en torno a 15-17 GB, las de 5 bits unos 19-20 GB y las de 6 bits aproximadamente 22-23 GB. Estas cifras son estimaciones y no estan confirmadas por el autor.
-- GPU recomendadas: no disponible. Para cuantizaciones de 4 bits o superiores seria necesario al menos una GPU con 16-24 GB de VRAM (RTX 4090, RTX 3090, A10G); para las cuantizaciones mas agresivas podria bastar con 12 GB.
-- Cabe en GPU de consumo: probablemente si, en configuraciones de 12-24 GB de VRAM segun la cuantizacion elegida, aunque no hay confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF. La etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada según cuantización (tamaño de fichero como referencia mínima, más overhead de contexto y KV cache):
+  - i1-Q2_K: ~11,3 GB
+  - i1-IQ3_S: ~12,9 GB
+  - i1-IQ3_M: ~13,1 GB
+  - i1-Q3_K_M: ~13,8 GB
+  - i1-Q4_K_S: ~15,9 GB
+  - i1-Q4_K_M: ~17,1 GB
+  - i1-Q5_K_M: ~19,7 GB
+  - i1-Q6_K: ~22,5 GB
+- GPU recomendadas: no especificadas por el autor. Por tamaño, una RTX 4090 (24 GB) puede alojar hasta i1-Q6_K; una RTX 4080/4070 Ti Super (16 GB) queda limitada a i1-Q4_K_S/i1-Q4_K_M con contexto moderado; GPUs de 24 GB o más (A10G, L4, A100 40/80 GB, H100) permiten contextos mayores.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) con cuantizaciones Q4-Q6; en GPUs de 16 GB con Q3-Q4 y contexto reducido.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, KoboldCpp), así como servidores compatibles con GGUF. El tag `text-generation-inference` sugiere compatibilidad con TGI, aunque el formato GGUF no es el nativo de TGI; se recomienda verificar.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones comparables de otros modelos, y el modelo base original (Qwen3.8-27B-opencode-adapted-bf16) carece de documentacion publica en esta ficha. Como referencia estructural, podria compararse con otros modelos de ~27B en formato GGUF de la familia Qwen, pero no se dispone de datos verificables para establecer una comparacion rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-opencode-adapted-bf16-i1-GGUF (este) | 27,3 B | no disponible | Apache 2.0 | GGUF i1 | Ajuste para agentes/código, visión declarada |
+| Qwen3.8-27B-opencode-adapted-bf16 (base) | 27,3 B | no disponible | Apache 2.0 | safetensors bf16 | Pesos completos, sin cuantizar |
+| Qwen3.8-27B-opencode-adapted-bf16-GGUF (estático) | 27,3 B | no disponible | Apache 2.0 | GGUF estático | Incluye ficheros `mmproj` para visión |
+
+No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia declarada: no se especifica la licencia del modelo, lo que impide determinar si su uso comercial esta permitido. Es imprescindible consultar el repositorio del modelo base original antes de cualquier uso en produccion.
-- Falta de documentacion: no hay model card tecnica, benchmarks, ni informacion sobre el proceso de entrenamiento, lo que dificulta evaluar su calidad y adecuacion.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de esta escala, agravado por la ausencia de evaluaciones publicadas.
-- Perdida de calidad por cuantizacion: las cuantizaciones de 1 y 2 bits (IQ1_S, IQ2_XXS, IQ2_XS) pueden degradar notablemente el rendimiento, especialmente en tareas de codigo y razonamiento.
-- Idiomas no confirmados: se desconoce el soporte multilingue real del modelo.
-- Sesgos: no disponible informacion sobre sesgos conocidos.
-- Procedencia incierta: el modelo deriva de una adaptacion no oficial de Qwen3, por lo que su comportamiento puede diferir del modelo original de Alibaba.
-- Fecha de creacion futura (2026-11-20): el repositorio presenta una fecha de creacion posterior a la actual, lo que sugiere posibles inconsistencias en los metadatos o un artefacto de publicacion; conviene verificar la integridad del repositorio antes de su uso.
+- Solo se declara soporte de inglés (`en`); el rendimiento en castellano no está verificado.
+- No se documentan sesgos conocidos ni evaluación de alucinación; al ser un ajuste fino sobre un modelo base no identificado con detalle, estos riesgos deben evaluarse empíricamente.
+- La longitud de contexto no está especificada, lo que impide planificar despliegues con ventanas largas sin pruebas previas.
+- Las cuantizaciones de baja precisión (Q2, IQ2, Q3) degradan la calidad; para producción se recomienda Q4_K_M o superior.
+- La model card no detalla el formato de tool calling ni la plantilla de chat; es necesario consultar el modelo base para integrarlo correctamente.
+- El repositorio contiene únicamente GGUF; para fine-tuning o evaluación con transformers hay que acudir al modelo base en bf16.
+- Aunque la licencia es Apache 2.0, conviene verificar la licencia del modelo base original por si impone restricciones adicionales.
+- El tamaño total del repo (220,5 GB) obliga a descargar solo la variante necesaria; no se recomienda clonar completo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-opencode-adapted-bf16-i1-GGUF
-- Modelo base original: https://huggingface.co/prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16
+- Repositorio de cuantizaciones i1: https://huggingface.co/mradermacher/Qwen3.8-27B-opencode-adapted-bf16-i1-GGUF
+- Repositorio de cuantizaciones estáticas (incluye `mmproj`): https://huggingface.co/mradermacher/Qwen3.8-27B-opencode-adapted-bf16-GGUF
+- Modelo base: https://huggingface.co/prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16
+- Página de conveniencia del autor: https://hf.tst.eu/model#Qwen3.8-27B-opencode-adapted-bf16-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

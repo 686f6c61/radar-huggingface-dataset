@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 343,
+  "downloads_30d": 349,
   "trending_score": 0,
   "parameters": 6240231632,
   "parameters_human": "6.24B",
@@ -53,32 +53,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Onlyfans? : r/Piracy - Reddit",
-      "url": "https://www.reddit.com/r/Piracy/comments/1boj8b1/onlyfans/",
-      "snippet": "Mar 26, 2024 · Never tried to do this, is there an Onlyfans piracy site to download an entire catalogue of a single creator at once? …"
+      "task": "Humanity's Last Exam (text-only, self-graded)",
+      "dataset": "HLE",
+      "metric": "Original accuracy",
+      "value": 0.1214
     },
     {
-      "title": "OnlyFans bots / outsourced : r/Scams - Reddit",
-      "url": "https://www.reddit.com/r/Scams/comments/1c5ksdg/onlyfans_bots_outsourced/",
-      "snippet": "A reminder of the rules in r/scams: no contact information (including last names, phone numbers, etc). Be civil to one another (no …"
+      "task": "SciCode (no-background, upstream harness)",
+      "dataset": "SciCode",
+      "metric": "Main-problem solve rate",
+      "value": 0.046
     },
     {
-      "title": "GalesburgLeaked - Reddit",
-      "url": "https://www.reddit.com/r/GalesburgLeaked/",
-      "snippet": "• Post pics of your favorite girls from Galesburg, or even promote your onlyfans!"
-    },
-    {
-      "title": "dgafbellaofficiall (u/dgafbellaofficiall) - Reddit",
-      "url": "https://www.reddit.com/user/dgafbellaofficiall/",
-      "snippet": "u/dgafbellaofficiall Jan 29, 2024 Cake day Trophy Case"
-    },
-    {
-      "title": "pipersrockelle - Reddit",
-      "url": "https://www.reddit.com/r/pipersrockelle/",
-      "snippet": "r/pipersrockelle members online Create a post FeedAbout Hot Open sort options Hot New Top Rising Change post view Card …"
+      "task": "SciCode (no-background, upstream harness)",
+      "dataset": "SciCode",
+      "metric": "Substep correctness",
+      "value": 0.302
     }
-  ]
+  ],
+  "sources": []
 }

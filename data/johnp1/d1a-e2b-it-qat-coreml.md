@@ -2,108 +2,101 @@
 
 ## Resumen
 
-D1A-E2B-it QAT Core ML es una conversión al formato Core ML del modelo D1A-E2B-it QAT v0.6, un modelo de decisión y chat derivado de Google Gemma 4 E2B-it QAT (w4a16). Lo publica JohnP1 y su función principal no es generar texto libre, sino recibir un documento y un conjunto de preguntas cerradas (sí/no, opción múltiple o puntuación) y devolver, en una sola pasada hacia delante, una probabilidad calibrada para cada opción. Al desactivar el adaptador D1A, los mismos pesos se comportan como Gemma 4 E2B-it QAT y funcionan como modelo conversacional multimodal.
+D1A-E2B-it QAT Core ML es la conversión a Core ML del modelo de decisión D1A, derivado a su vez de google/gemma-4-E2B-it-qat-w4a16-ct. Lo desarrolla JohnP1 y su propósito no es generar texto libre, sino responder preguntas cerradas sobre un documento: cada pregunta es de sí/no, de elección múltiple o de puntuación, y el modelo devuelve en un único forward pass una probabilidad calibrada para cada opción. Al no producir texto generado, toda respuesta es necesariamente una opción válida, lo que elimina el riesgo de respuestas fuera de formato.
 
-El paquete ocupa 4,6 GB e incluye 35 capas decodificadoras divididas en cinco partes, la cabeza de salida cuantizada a int8, la torre de visión, el codificador de audio conformer en fp32, los embeddings en 4 bits y un runner de referencia en Python. Está pensado para ejecutarse en Apple Silicon mediante GPU, no en la Neural Engine.
+El modelo mantiene el tronco de Gemma 4 E2B cuantizado a 4 bits con quantisation-aware training (QAT) y añade un adaptador de decisión, una cabeza de puntero y una temperatura de calibración (1,91 en la versión 0.7). Con el adaptador desactivado, el mismo artefacto se comporta como Gemma 4 E2B-it QAT y mantiene capacidad de chat. La versión 0.7 se ha afinado sobre actos de diálogo e intenciones en inglés y japonés, con una mejora reportada de +15,9 puntos en actos de diálogo sobre 498 preguntas reservadas.
 
-Su relevancia actual reside en la combinación de cuantización QAT, formato Core ML y un paradigma de decisión con probabilidades calibradas, orientado a inferencia local en dispositivos Apple. No obstante, el propio autor lo marca como experimental y verificado únicamente en un Mac con M1 Max, sin pruebas en iPhone ni iPad.
+La relevancia actual está en el despliegue on-device sobre Apple Silicon: el paquete ocupa 4,6 GB, funciona en GPU mediante Core ML y está pensado para aplicaciones que necesitan clasificar y decidir localmente sin enviar documentos a la nube. Es un proyecto experimental, verificado solo en Mac (M1 Max) y todavía no probado en iPhone ni iPad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decodificador (Gemma 4 E2B-it) con adaptador D1A de decisión; conversión Core ML |
+| Arquitectura | Transformer (Gemma 4 E2B) con adaptador de decisión y cabeza de puntero, convertido a Core ML |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
-| Longitud de contexto | 1.536 tokens de entrada (prefill en dos tamaños: 512 y 1.536); caché KV de 2.048 posiciones para chat |
-| Tipos de cuantizacion | Pesos de texto int4 (QAT w4a16, 276 capas lineales); cabeza de salida int8 por fila; embeddings 4 bits en grupos de 64; codificador de audio en fp32 |
-| Idiomas soportados | en, ja |
+| Longitud de contexto | 1.536 tokens para decisiones y prompts de chat; 2.048 posiciones en total (prompt más respuesta) |
+| Tipos de cuantizacion | 4 bits con QAT en el tronco (w4a16); adaptador en fp16 |
+| Idiomas soportados | inglés y japonés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Core ML (.mlpackage), safetensors (embeddings y cabeza D1A) |
+| Formato de pesos | Core ML (paquetes `trunk_*`, `head.safetensors`, `d1a_config.json`, `io.json`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Gemma 4 E2B-it sometido a entrenamiento con cuantización (QAT) en configuración w4a16, es decir, pesos de 4 bits y activaciones de 16 bits. Sobre él se aplica un adaptador D1A que añade una cabeza de puntero con temperatura de calibración de 1,55; esta cabeza produce una distribución de probabilidad sobre las opciones de cada pregunta sin generar texto, lo que garantiza que toda respuesta sea una opción válida. La conversión a Core ML divide las 35 capas decodificadoras en cinco paquetes que comparten una única copia de los pesos y exponen tres funciones: `prefill_512`, `prefill_1536` y `decode` (un token sobre la caché de 2.048 posiciones).
+El modelo parte de Gemma 4 E2B-it con cuantización de 4 bits entrenada con QAT (w4a16), sobre la que se injerta un adaptador de decisión como rama fp16 independiente dentro de cada paquete `trunk_*`. El adaptador consta de 410 tensores y afecta únicamente a las proyecciones del tronco de texto; los encoders, el `lm_head`, los embeddings y los ficheros de golden de la versión 0.6 permanecen sin cambios. La conversión a Core ML está configurada para GPU (`compute_units` ALL o CPU_AND_GPU), no para Neural Engine.
 
-El autor conserva intactos los enteros y escalas de la QAT de Google en las 276 capas lineales int4, sin recuantizar. La validación se hizo contra la build MLX y contra PyTorch fp32 en CPU: cero respuestas invertidas en 42 respuestas de decisión y en 28 respuestas de medios, con un cambio máximo de probabilidad de 0,0017 frente a fp32 en decisiones y de 0,040 en medios. La torre de visión alcanza coseno por token ≥ 0,9996 y el codificador de audio 1,0 frente a fp32. No se dispone de información sobre el volumen de tokens de entrenamiento ni sobre la composición del dataset.
+El ajuste de la versión 0.7 se realizó sobre actos de diálogo e intenciones en inglés y japonés, usando el dataset AmazonScience/massive como referencia declarada. La calibración se ajustó con una temperatura de 1,91 (frente a 1,55 en 0.6). Según la model card, la mejora en actos de diálogo es de +15,9 puntos [+12,2, +19,7] sobre 498 preguntas reservadas, la clasificación de intenciones no cambia y el resto de suites D1A agrupadas arroja −0,38 (no significativo), con una calibración ligeramente peor en algunas suites. La sustitución de pesos se verificó byte a byte: reescribir los tensores de 0.6 reproduce paquetes idénticos por sha256.
 
 ## Capacidades
 
-- Decisión calibrada: dada una pregunta cerrada (sí/no, opción múltiple o puntuación), devuelve probabilidad por opción en una sola pasada, sin texto generado.
-- Chat conversacional multimodal cuando se desactiva el adaptador D1A.
-- Procesamiento de imágenes: torre de visión con 2.520 parches convertidos en 280 tokens.
-- Procesamiento de vídeo: 630 parches por fotograma convertidos en 70 tokens; clips de 16 fotogramas.
-- Procesamiento de audio: conformer que convierte 3.000 tramas mel (30 segundos) en 750 tokens.
-- Clasificación de texto (pipeline declarado: text-classification).
+- Clasificación y decisión sobre documentos: responde preguntas de sí/no, elección múltiple y puntuación con probabilidad calibrada por opción en un solo forward pass.
+- Actos de diálogo e intenciones: distingue acuerdos, rechazos, agradecimientos, peticiones y comandos, con mejora específica en la versión 0.7.
+- Chat conversacional: con el adaptador desactivado se comporta como Gemma 4 E2B-it QAT.
+- Multimodalidad: procesa fotos, clips de voz y vídeo (16 fotogramas por clip en las pruebas).
+- Salida estructurada por construcción: al elegir entre opciones, no hay texto generado ni respuestas inválidas.
 - Decodificación greedy en el runner de referencia.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: no disponible en la información proporcionada.
-- Idiomas: inglés y japonés.
+- Capacidades multilingües limitadas a inglés y japonés.
 
 ## Casos de uso
 
-- Triaje documental en local: enviar un contrato o informe y un conjunto de preguntas de cumplimiento (¿contiene cláusula de confidencialidad?, ¿supera el umbral de importe?) y obtener probabilidades calibradas por opción, útil para priorizar revisión humana sin enviar datos a la nube.
-- Moderación y etiquetado de contenido multimedia: clasificar fotos, clips de voz o vídeo según criterios predefinidos, aprovechando que el modelo devuelve siempre una opción válida y una probabilidad interpretable.
-- Asistente conversacional en Mac: con el adaptador desactivado, usar la variante Gemma 4 E2B-it QAT para diálogo multimodal (texto, imagen, audio) en aplicaciones de escritorio para Apple Silicon.
-- Extracción de señales en atención al cliente: puntuar transcripciones de llamadas (30 segundos de audio por petición) con preguntas tipo "¿el cliente solicita cancelación?" y usar la probabilidad como umbral de escalado.
-- Análisis de vídeo para control de calidad: procesar clips cortos de 16 fotogramas y responder preguntas binarias sobre presencia de objetos o defectos, aceptando la latencia de 8-11 segundos por clip en M1 Max.
-- Prototipado de pipelines de decisión sin servidor: emplear el runner de referencia en Python y los ficheros de `goldens/` para validar una integración antes de portar la lógica de host a una app nativa.
-- Investigación sobre calibración: comparar la temperatura de calibración (1,55) y las probabilidades del modelo frente a alternativas generativas en tareas de clasificación cerrada.
+- Triaje documental local: dado un contrato o informe y una batería de preguntas cerradas, el modelo devuelve probabilidades por opción en una sola pasada, adecuado para flujos donde no se puede enviar el documento a un servicio externo.
+- Verificación de consentimiento y conformidad: preguntas de sí/no con umbral de confianza (por encima de 0,6) para decidir si un usuario ha aceptado una condición, integrable en apps de escritorio macOS.
+- Análisis de conversaciones de soporte: clasificación de actos de diálogo e intenciones en inglés y japonés para etiquetar tickets y detectar acuerdos, rechazos o peticiones.
+- Asistencia por voz on-device: clips de audio procesados en aproximadamente 0,4 s por petición en M1 Max, útil para dictado con intención o comandos hablados.
+- Revisión de fotos y vídeo con preguntas cerradas: por ejemplo, comprobar presencia de elementos en una imagen o en un clip corto, con la advertencia de que el vídeo tarda entre 8 y 11 s por clip de 16 fotogramas.
+- Enrutado de comandos en aplicaciones de Apple Silicon: distinguir si una entrada es un comando o conversación informal antes de derivarla a otro componente.
+- Preetiquetado de datasets: generar probabilidades calibradas para revisión humana en tareas de clasificación de intenciones.
 
 ## Benchmarks y rendimiento
 
-| Prueba | Resultado |
-|---|---|
-| Decisiones: 28 peticiones reales, 42 respuestas | 0 respuestas invertidas frente a MLX; cambio máximo de probabilidad 0,0017 frente a fp32 |
-| Medios (fotos, voz, vídeo): 14 peticiones, 28 respuestas | 0 invertidas frente a MLX; cambio máximo 0,040 |
-| Codificador de foto y vídeo frente a fp32 (18 elementos) | coseno por token ≥ 0,9996 |
-| Codificador de voz frente a fp32 (4 clips) | coseno por token 1,0 |
-| Chat: 8 fotos, 427 tokens forzados | coseno del estado oculto final ≥ 0,99977; 1 token distinto de 427 |
-| Chat: 1.000 tokens en una respuesta | estable (valores finitos en todo el recorrido) |
-| Pesos de texto 4 bits | 276 capas con enteros y escalas QAT de Google exactos |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card reporta únicamente comprobaciones internas:
 
-Rendimiento del modelo (build MLX, según el autor): frente a D1A-E2B-it v0.6, +0,40 en pooled [−0,21, +1,02], +3,5 en severidad de PR, +1,7 en etiquetas de PR, 11 % más rápido, pero −5,2 [−7,9, −2,6] en transfer-v4 (tipos de tarea fuera de entrenamiento).
+| Comprobacion | Resultado |
+|---|---|
+| 28 peticiones de decisión (42 respuestas) frente a MLX v0.7 | misma respuesta en las 42; cambio máximo de probabilidad 0,028, medio 0,005 |
+| Las respuestas son de v0.7 y no de v0.6 | cambio medio 0,005 frente a MLX v0.7 y 0,044 frente a Core ML v0.6; desactivar el adaptador mueve una respuesta hasta 0,39 |
+| Reproduccion del check de v0.6 en el mismo Mac | respuestas coincidentes con tolerancia de 0,00005 |
+| 14 peticiones multimedia (28 respuestas) frente a MLX v0.7 | cambio máximo de 0,068 en respuestas multimedia y 0,048 en decisiones |
+| Actos de dialogo v0.7 sobre 498 preguntas reservadas | +15,9 puntos [+12,2, +19,7] |
 
 ## Requisitos de hardware
 
-- Verificado únicamente en Apple M1 Max con macOS y GPU; sin pruebas en iPhone ni iPad.
-- La Neural Engine no está soportada: requiere una disposición de pesos distinta que no se ha construido. Configuración `compute_units` ALL o CPU_AND_GPU.
-- Tamaño en disco: 4,6 GB (trunk 1,1 GB, lm_head 0,40 GB, visión 0,34 GB, audio 1,18 GB, embeddings 1,55 GB).
-- VRAM/unified memory estimada: no disponible de forma explícita; el conjunto de pesos ronda los 4,6 GB, por lo que se necesita al menos esa cantidad de memoria unificada más el estado de la caché KV.
-- GPU recomendadas: Apple Silicon (M1 Max verificado). Compatibilidad con A100, H100 o RTX 4090: no aplica, es un formato Core ML.
-- Despliegue: Core ML con runner de referencia en Python (`reference/d1a_coreml_qat.py`). vLLM, llama.cpp, Ollama y TGI no son aplicables a este formato.
-- Latencia en M1 Max: 0,4 s por petición de foto o clip de voz; vídeo de 16 fotogramas, 0,9 s de codificación y 8-11 s de respuesta (unos 1.200 tokens a tamaño 1.536).
+- VRAM o memoria unificada: el paquete ocupa 4,6 GB en disco; el repositorio completo pesa 5,7 GB.
+- GPU recomendadas: Apple Silicon con GPU compatible con Core ML; verificado en Apple M1 Max.
+- No probado en iPhone ni iPad; el Neural Engine no está soportado (requiere otro layout de pesos no construido).
+- Despliegue: Core ML con `compute_units` ALL o CPU_AND_GPU, más el runner de referencia en Python (`reference/d1a_coreml_qat.py`). No hay app ni servidor listos.
+- Latencia observada en M1 Max: aproximadamente 0,4 s por petición en fotos y voz; 0,9 s de codificación y 8-11 s de respuesta por clip de vídeo de 16 fotogramas (unos 1.200 tokens con tamaño 1.536).
+- No hay datos de throughput agregado ni de despliegue con vLLM, llama.cpp, Ollama o TGI, ya que el formato es Core ML.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| D1A-E2B-it QAT Core ML (este) | no disponible | 1.536 entrada / 2.048 posiciones | Core ML | Apache 2.0 | Solo Apple Silicon GPU, experimental |
-| JohnP1/d1a-e2b-it-qat-mlx-q4 (v0.7) | mismos pesos | mismo | MLX | Apache 2.0 | Mejor en actos de diálogo en inglés y japonés; referencia de comparación del autor |
-| google/gemma-4-E2B-it-qat-w4a16-ct | no disponible | no disponible | safetensors | no disponible en la información | Modelo base de Google sin adaptador D1A |
+| D1A-E2B-it QAT Core ML | no disponible | 1.536 / 2.048 posiciones | Core ML | Apache 2.0 | Decisión calibrada on-device, multimodal, en y ja |
+| JohnP1/d1a-e2b-it-qat-mlx-q4 | no disponible | no disponible | MLX | Apache 2.0 | Misma familia en MLX; referencia de paridad para la conversión Core ML |
+| google/gemma-4-E2B-it-qat-w4a16-ct | no disponible | no disponible | no disponible | no disponible | Modelo base de Google; chat generalista sin adaptador de decisión |
 
-No se dispone de datos de benchmarks comparativos con modelos de la misma categoría fuera de las builds del propio autor.
+No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado experimental: verificado solo en un Mac con M1 Max; sin pruebas en iPhone ni iPad.
-- Sin soporte de Neural Engine, lo que limita el aprovechamiento energético y el rendimiento en dispositivos móviles.
-- No incluye app ni servidor listos para producción; solo modelos Core ML, datos de host y un runner de referencia en Python.
-- Límite de 1.536 tokens de entrada para decisiones y chat, con 2.048 posiciones totales (prompt más respuesta).
-- Decodificación greedy únicamente en el runner de referencia.
-- Vídeo lento en Mac: 8-11 s por clip de 16 fotogramas.
+- Verificado solo en Mac (M1 Max, macOS, GPU); sin pruebas en iPhone ni iPad.
+- El Neural Engine no está soportado; solo GPU o CPU.
+- No incluye aplicación ni servidor: el repositorio contiene los modelos Core ML, los datos de host y un runner de referencia en Python.
+- Límites de longitud: decisiones hasta 1.536 tokens (dos tamaños de prefill, 512 y 1.536); chat hasta 1.536 tokens de prompt y 2.048 posiciones totales.
+- El vídeo es lento en Mac: 8-11 s por clip de 16 fotogramas en M1 Max.
+- Las respuestas sobre fotos, voz y vídeo son menos exactas que las decisiones: cambio máximo de 0,068 frente al modelo de precisión completa en 28 respuestas multimedia.
+- En actos de diálogo, algunos rechazos y matices se leen como acuerdo; conviene confirmar cuando la probabilidad superior esté por debajo de 0,6.
 - Solo inglés y japonés.
-- Riesgo de alucinación en modo chat; en modo decisión el riesgo se traslada a la calibración de probabilidades.
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base Gemma está sujeto a los términos de Google, que deben verificarse.
-- El autor documenta un bug de PyTorch en MPS con las búsquedas de embeddings que afectaba a los tokens de inicio y fin de imagen; se corrigió con un workaround, pero conviene tenerlo en cuenta al validar con otras herramientas.
+- Proyecto experimental: los cambios entre versiones afectan al adaptador, la cabeza de puntero y la temperatura de calibración, y la actualización in-place exige borrar la carpeta `.compiled/`.
+- Riesgo de sesgo y alucinación no cuantificado en la información disponible; al no generar texto libre, el riesgo de respuestas inválidas se reduce, pero no el de una clasificación errónea con alta confianza.
+- Licencia Apache 2.0, que permite uso comercial; conviene revisar las condiciones del modelo base de Google.
 
 ## Enlaces
 
-- [Hugging Face: JohnP1/d1a-e2b-it-qat-coreml](https://huggingface.co/JohnP1/d1a-e2b-it-qat-coreml)
-- [Build MLX v0.7: JohnP1/d1a-e2b-it-qat-mlx-q4](https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4)
-- [Modelo base: google/gemma-4-E2B-it-qat-w4a16-ct](https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct)
-- [Scorecard de evaluación](https://github.com/jonpol01/d1a/blob/main/docs/reports/2026-10-25-e2b-it-qat-scorecard.md)
-- [Repositorio del proyecto D1A](https://github.com/jonpol01/d1a)
-- [Issue del proyecto sobre el bug de MPS](https://github.com/jonpol01/d1a/issues/353)
-- [Issue de PyTorch sobre el bug de MPS](https://github.com/pytorch/pytorch/issues/188756)
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e2b-it-qat-coreml
+- Modelo MLX de referencia: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4
+- Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct
+- Dataset de referencia: https://huggingface.co/datasets/AmazonScience/massive
+- Repositorio del proyecto (referenciado en la model card): https://github.com/jonpol01/d1a
+- Incidencias citadas: jonpol01/d1a#386 y jonpol01/d1a#394

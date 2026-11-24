@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "empero-ai/PiVo-1.4M · Hugging Face",
-      "url": "https://huggingface.co/empero-ai/PiVo-1.4M",
-      "snippet": "How many parameters does a voice need? PiVo is our attempt at an answer: two English voices, Pi and Vo, from a complete text-to-speech stack with 1,401,562 learned parameters, vocoder included. A 584,965-parameter acoustic model predicts vocoder features, and an 816,597-parameter FARGAN-derived ..."
-    },
-    {
-      "title": "empero-ai/PiVo-1.4M at main - Hugging Face",
-      "url": "https://huggingface.co/empero-ai/PiVo-1.4M/tree/main",
-      "snippet": "/ PiVo-1.4M Like 43 Text-to-Speech ONNX English pivo fargan cpu english small-model License:apache-2.0 Model card FilesFiles and versions xet Community 4 Copy to bucket main PiVo-1.4M 15.4 MB Ctrl+K Ctrl+K 1 contributor History:3 commits empero-ai Upload technical_report.pdf 515d84f verified4 days ago LICENSESUpload 34 files4 days ago ..."
-    }
-  ]
+  "sources": []
 }

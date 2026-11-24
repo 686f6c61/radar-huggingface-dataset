@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "EEU/EEU-Qwen2.5-1.5B-Instruct-abliterated",
+  "renamed_at": "2026-11-24T03:05:44.696Z",
   "benchmarks": [],
   "sources": []
 }

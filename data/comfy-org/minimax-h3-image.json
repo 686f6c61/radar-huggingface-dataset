@@ -5,7 +5,7 @@
   "author": "Comfy-Org",
   "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
   "created_at": "2026-11-08T20:37:23.000Z",
-  "updated_at": "2026-11-18T20:03:25.000Z",
+  "updated_at": "2026-11-23T10:46:27.000Z",
   "license": "minimax-h3-image-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",
@@ -20,9 +20,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 778,
+  "likes": 782,
   "downloads_30d": 4037965,
-  "trending_score": 38.5,
+  "trending_score": 35,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 160306564241,
@@ -39,11 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …Read more"
-    }
-  ]
+  "sources": []
 }

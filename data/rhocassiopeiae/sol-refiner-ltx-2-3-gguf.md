@@ -2,48 +2,50 @@
 
 ## Resumen
 
-SoL-Refiner LTX-2.3 es un modelo de refinamiento de vídeo (pipeline `video-to-video`) desarrollado por NVIDIA a partir de Lightricks LTX-2.3. Su función es mejorar la calidad de secuencias de vídeo generadas o existentes, actuando como un refinador de un solo paso (*one-step*), lo que reduce el coste computacional frente a pipelines de difusión iterativos. El modelo original lo publica el equipo de NVIDIA Labs dentro del proyecto Sana/SoL-Refiner, y esta ficha describe la cuantización comunitaria en GGUF publicada por el usuario RhoCassiopeiae.
+SoL-Refiner LTX-2.3 GGUF es una cuantización comunitaria del modelo NVIDIA SoL-Refiner LTX-2.3 One-Step, un modelo de refinamiento de vídeo (video-to-video) construido sobre la arquitectura del transformer audiovisual Lightricks LTX-2.3. El modelo original lo desarrolla NVIDIA (a través de Efficient-Large-Model) y esta versión la publica el usuario RhoCassiopeiae en Hugging Face bajo licencia LTX-2 Community License Agreement.
 
-El checkpoint original contiene 19.714.944.369 parámetros (aproximadamente 19,7 mil millones) en formato safetensors, lo que lo sitúa en la gama alta de modelos de vídeo. La versión aquí documentada redistribuye los pesos cuantizados en tres niveles (Q4_K, Q6_K y Q8_0) para reducir los requisitos de almacenamiento y de memoria de inferencia, con tamaños de 12,4 GB, 17,2 GB y 21,6 GB respectivamente.
+El modelo resuelve el problema del refinamiento y mejora de calidad de vídeo existente: recibe un vídeo de entrada y produce una versión refinada del mismo en un solo paso de inferencia (One-Step), lo que reduce drásticamente el coste computacional frente a los pipelines de difusión multi-paso. Con 13.850.422.513 parámetros totales y un repositorio de 117,3 GB, está pensado para integrarse en flujos de postproducción y encoding de vídeo.
 
-Es relevante ahora porque combina dos tendencias: la consolidación de LTX-2.3 como base abierta para generación y edición de vídeo, y la aparición de refinadores de un solo paso que permiten integrar mejora de calidad en flujos de postproducción sin reentrenar el modelo generativo completo. La licencia es la LTX-2 Community License Agreement, con restricciones específicas de uso y redistribución.
+La relevancia de esta versión concreta reside en sus cuantizaciones GGUF (Q4_K, Q6_K y Q8_0), que reducen el peso de 21,6 GB (Q8_0 completo) hasta 8,46 GB (Q4_K solo vídeo), permitiendo ejecutar el refinamiento en GPUs de consumo. Además, se ofrecen variantes "video-only" que eliminan los tensores de audio para workflows que no lo necesitan.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión para vídeo derivado de LTX-2.3; detalles de bloques no especificados en la información disponible) |
-| Parametros totales | 19.714.944.369 (19,7 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer audiovisual (derivado de Lightricks LTX-2.3), refinamiento one-step |
+| Parametros totales | 13.850.422.513 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K, Q6_K, Q8_0 (GGUF) |
-| Idiomas soportados | no disponible |
-| Licencia | LTX-2 Community License Agreement (license_name: ltx-2-community-license-agreement) |
-| Formato de pesos | GGUF (cuantizado); el checkpoint base está en safetensors |
+| Tipos de cuantizacion | Q4_K, Q6_K, Q8_0 (variantes completas y video-only) |
+| Idiomas soportados | no disponible (modelo de vídeo, no de texto) |
+| Licencia | ltx-2-community-license-agreement (LTX-2 Community License Agreement) |
+| Formato de pesos | GGUF (repo de 117,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles técnicos sobre la arquitectura interna del modelo en la información proporcionada. El nombre y el pipeline (`video-to-video`) indican que se trata de un modelo de difusión orientado a vídeo, derivado de Lightricks LTX-2.3, y que NVIDIA lo ha adaptado como refinador de un solo paso. La variante "One-Step" sugiere que el proceso de refinamiento se resuelve en una única evaluación del modelo, en lugar de requerir una cadena larga de pasos de denoising.
+El modelo base es un transformer audiovisual derivado de Lightricks LTX-2.3, adaptado por NVIDIA como SoL-Refiner en configuración One-Step, es decir, un refinador que genera la salida refinada en una sola evaluación del modelo en lugar de un proceso iterativo de difusión. La arquitectura conserva componentes de atención cruzada audio-vídeo en la variante completa; la variante video-only elimina los tensores específicos de audio y los componentes de atención cruzada audio-vídeo no utilizados.
 
-Tampoco se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de alineación como RLHF o DPO. La model card del repositorio cuantizado indica únicamente que los pesos han sido cuantizados para reducir requisitos de almacenamiento y memoria, que se trata de una modificación comunitaria no oficial de NVIDIA ni de Lightricks, y que el repositorio no incluye la implementación privada de cuantización ni su flujo de trabajo.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO, ya que la model card no los detalla. La modificación aplicada en este repositorio es exclusivamente de cuantización (a Q4_K, Q6_K y Q8_0) y de poda de tensores de audio en las variantes video-only; el autor indica que la eliminación de tensores de audio no introduce pérdida de cuantización adicional, aunque la equivalencia numérica con las versiones completas depende de la implementación de inferencia.
 
 ## Capacidades
 
-- Refinamiento de vídeo (*video-to-video*): mejora de calidad de secuencias existentes o generadas, actuando como etapa de postproceso.
-- Funcionamiento en un solo paso: el refinador está diseñado para producir la salida refinada con una única pasada, lo que simplifica la integración en pipelines.
-- Compatibilidad con LTX-2.3: al derivar del modelo base de Lightricks, se integra en flujos que ya utilicen esa familia.
-- Cuantización GGUF: permite ejecutar el modelo con menor huella de memoria según el nivel elegido (Q4_K, Q6_K, Q8_0).
-- Capacidades de generación de texto, código, matemáticas, tool calling, agentes o multilingüismo: no disponibles; este es un modelo de vídeo, no un LLM.
-- Capacidades de visión, audio o thinking mode: no disponibles en la información proporcionada.
+- Refinamiento de vídeo video-to-video en un solo paso de inferencia (One-Step).
+- Mejora de calidad visual de vídeo existente (reducción de artefactos, nitidez, fidelidad perceptual).
+- Procesamiento audiovisual completo en las variantes "Full" (audio + vídeo).
+- Procesamiento exclusivo de vídeo en las variantes "video-only", con menor consumo de memoria.
+- Integración en pipelines de encoding y análisis de calidad de vídeo (el autor cita la aplicación Chromastering como ejemplo).
+- No soporta generación de texto ni tool calling: es un modelo generativo de vídeo, no un LLM.
+- Capacidades multilingües: no aplicables (modelo no textual).
 
 ## Casos de uso
 
-- Postproducción de vídeo generado: aplicar el refinador sobre clips producidos por LTX-2.3 u otros generadores para mejorar nitidez, coherencia temporal y calidad perceptual antes de la entrega final.
-- Restauración y mejora de material de archivo: usar el modelo como etapa de refinamiento sobre secuencias de baja calidad, siempre que el flujo de trabajo admita un modelo de vídeo a vídeo de ~20 B parámetros.
-- Integración en aplicaciones de codificación y análisis de vídeo: la model card menciona explícitamente Chromastering, una aplicación de codificación y análisis de calidad que incorpora refinamiento con IA; el modelo encaja como componente de mejora previa a la codificación.
-- Pipelines de mejora por lotes: con la variante Q4_K (12,4 GB) se puede desplegar en GPUs de consumo alto para procesar lotes de clips en un servidor de postproducción.
-- Prototipado e investigación en difusión de vídeo: la disponibilidad de pesos GGUF en varios niveles permite estudiar el impacto de la cuantización en la calidad del refinamiento sin necesidad de los pesos completos en safetensors.
-- Evaluación comparativa de calidad perceptual: al ser un refinador de un solo paso, sirve como referencia en estudios que comparen refinadores one-step frente a pipelines multi-paso en términos de coste y fidelidad.
+- Postproducción y masterización de vídeo: el modelo refina material rodado o comprimido previamente, mejorando la calidad perceptual antes de la codificación final; encaja en flujos donde se necesita una pasada rápida de mejora sin pipelines de difusión multi-paso.
+- Restauración de vídeo comprimido: aplicar el refinador sobre vídeos con artefactos de compresión para recuperar detalle antes de reencodificar, aprovechando la variante Q4_K video-only (8,46 GB) en GPUs de consumo.
+- Preprocesado en pipelines de encoding: integrado en aplicaciones como Chromastering, el modelo actúa como etapa de refinamiento AI previa a la codificación con códecs avanzados.
+- Análisis de calidad perceptual: generar versiones refinadas de referencia para comparar métricas de calidad objetivas frente al original.
+- Flujos de trabajo con HDR: combinado con herramientas de visualización HDR nativa, el refinamiento puede aplicarse antes de la conversión de espacio de color.
+- Prototipado e investigación en video-to-video: las cuantizaciones GGUF permiten experimentar con el refinador en hardware asequible sin necesidad de clústeres multi-GPU.
+- Despliegue en estaciones de trabajo locales: la variante Q8_0 video-only (14,3 GB) cabe en GPUs de 16 GB o más, habilitando refinamiento local sin servicios en la nube.
 
 ## Benchmarks y rendimiento
 
@@ -51,38 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; como referencia orientativa por tamaño de fichero, Q4_K ocupa 12,4 GB, Q6_K 17,2 GB y Q8_0 21,6 GB, a lo que hay que sumar la memoria para activaciones y para el pipeline de vídeo (frames, latentes y buffers), que la información disponible no cuantifica.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño de pesos, Q8_0 (21,6 GB) requiere GPUs con al menos 24 GB de VRAM para los pesos, antes de contar activaciones; Q4_K (12,4 GB) es la opción más viable en GPUs de consumo de gama alta.
-- ¿Cabe en GPU de consumo? Q4_K es la variante con más probabilidades de caber en GPUs de consumo con 16-24 GB, condicionado por el consumo de activaciones del pipeline de vídeo, que no se detalla.
-- Opciones de despliegue: el formato GGUF sugiere motores compatibles con GGUF (por ejemplo llama.cpp y derivados); la model card indica que la compatibilidad depende del motor de inferencia y del formato exacto de los tensores. No se confirma soporte de vLLM, TGI u Ollama en la información disponible.
+- VRAM estimada para pesos: Q4_K completo 12,4 GB; Q6_K completo 17,2 GB; Q8_0 completo 21,6 GB; Q4_K video-only 8,46 GB; Q6_K video-only 11,5 GB; Q8_0 video-only 14,3 GB. A estas cifras hay que sumar la memoria de activaciones y del decodificador de vídeo, no cuantificada en la información disponible.
+- GPUs recomendadas: no especificadas por el autor; por tamaño de pesos, una RTX 4090 (24 GB) puede alojar cualquier variante completa en Q8_0, y una GPU de 16 GB cubre las variantes video-only Q8_0 y Q6_K.
+- Cabe en GPU de consumo: sí, al menos las variantes video-only Q4_K y Q6_K en GPUs de 12-16 GB; las variantes completas requieren 16-24 GB según cuantización.
+- Opciones de despliegue: el formato es GGUF, por lo que se orienta a motores de inferencia compatibles con GGUF; el autor advierte que las variantes video-only requieren un motor capaz de cargar el conjunto reducido de tensores. No se detallan motores concretos (llama.cpp, ComfyUI u otros) en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Formato | Tamano | Licencia | Notas |
 |---|---|---|---|---|---|
-| SoL-Refiner LTX-2.3 One-Step (esta ficha, GGUF comunitario) | 19,7 B | no disponible | video-to-video (refinamiento) | LTX-2 Community License | GGUF Q4_K/Q6_K/Q8_0 en Hugging Face |
-| Efficient-Large-Model/SoL-Refiner-LTX-2.3-One-Step (original NVIDIA) | 19,7 B | no disponible | video-to-video (refinamiento) | LTX-2 Community License | Pesos originales en Hugging Face |
-| Lightricks/LTX-2.3 (modelo base) | no disponible | no disponible | generación/edición de vídeo | LTX-2 Community License | Pesos en Hugging Face |
+| SoL-Refiner LTX-2.3 GGUF (este) | 13,85 B | GGUF Q4_K/Q6_K/Q8_0 | 8,46-21,6 GB | LTX-2 Community | Cuantización comunitaria, variantes video-only |
+| SoL-Refiner LTX-2.3 One-Step (original NVIDIA) | 13,85 B | safetensors | no disponible | LTX-2 Community | Modelo base sin cuantizar |
+| Lightricks LTX-2.3 | no disponible | no disponible | no disponible | LTX-2 Community | Modelo audiovisual original sobre el que se construye |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización comunitaria no oficial: no está publicada por NVIDIA ni por Lightricks, y no se garantiza que los resultados sean idénticos a los del checkpoint sin cuantizar.
-- La cuantización puede alterar la precisión numérica y la calidad de salida; el nivel Q4_K es el más agresivo y el más susceptible de degradación.
-- La compatibilidad con motores de inferencia depende del formato exacto de los tensores subidos; no se documenta qué motores están verificados.
-- Licencia restrictiva: la LTX-2 Community License Agreement impone restricciones de uso y redistribución; es obligatorio conservar los textos de licencia, la atribución y los avisos de modificación en redistribuciones posteriores.
-- Si el checkpoint incluye pesos de Gemma 3 o derivados, se aplican adicionalmente los Términos de uso y la Política de usos prohibidos de Google.
-- No se especifican sesgos conocidos, riesgos de alucinación ni limitaciones de idioma para este modelo; al ser un modelo de vídeo, estos conceptos no aplican de la misma forma que en un LLM.
-- No hay información sobre límites de resolución, duración de clip o número de frames soportados; conviene consultar la documentación original de NVIDIA y del motor de inferencia antes de usarlo en producción.
-- El repositorio no incluye la implementación de cuantización ni su flujo de trabajo, por lo que no es reproducible a partir de esta publicación.
+- Es una modificación comunitaria, no una release oficial de NVIDIA ni de Lightricks; no hay garantía de equivalencia bit a bit con el checkpoint sin cuantizar.
+- La cuantización puede alterar la precisión numérica y la calidad de salida; el autor no reclama resultados idénticos al original.
+- Las variantes video-only no pueden generar ni procesar audio y exigen un motor de inferencia que no dependa de los tensores de audio eliminados.
+- La licencia LTX-2 Community License Agreement impone restricciones de uso y redistribución; es obligatorio conservar los textos de licencia, la atribución y los avisos de modificación en redistribuciones.
+- Si un checkpoint incluye pesos de Gemma 3 o derivados, se aplican adicionalmente los Gemma Terms of Use y la Gemma Prohibited Use Policy de Google.
+- No se dispone de información sobre sesgos, tasas de alucinación visual ni limitaciones de resolución o duración de vídeo.
+- El repositorio no incluye la implementación privada de cuantización ni su workflow; la compatibilidad depende del motor de inferencia y del formato exacto de los tensores.
+- Modelo sin descargas ni likes relevantes (340 descargas, 0 likes) y sin validación comunitaria extensa en el momento de la consulta.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/RhoCassiopeiae/SoL-Refiner-LTX-2.3-GGUF
-- Modelo original NVIDIA: https://huggingface.co/Efficient-Large-Model/SoL-Refiner-LTX-2.3-One-Step
-- Proyecto SoL-Refiner (NVIDIA Labs): https://nvlabs.github.io/Sana/Sol-Refiner/
-- Modelo base Lightricks LTX-2.3: https://huggingface.co/Lightricks/LTX-2.3
-- Licencia LTX-2 Community License Agreement: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2
-- Aplicación Chromastering (mencionada en la model card): https://www.chromastering.app
+- Repositorio Hugging Face: https://huggingface.co/RhoCassiopeiae/SoL-Refiner-LTX-2.3-GGUF
+- Modelo base NVIDIA: https://huggingface.co/Efficient-Large-Model/SoL-Refiner-LTX-2.3-One-Step
+- Proyecto NVIDIA SoL-Refiner: https://nvlabs.github.io/Sana/Sol-Refiner/
+- Lightricks LTX-2.3: https://huggingface.co/Lightricks/LTX-2.3
+- Licencia LTX-2: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2
+- Aplicación Chromastering: https://www.chromastering.app

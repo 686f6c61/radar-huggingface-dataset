@@ -2,117 +2,121 @@
 
 ## Resumen
 
-Nemotron-3.5-Embed-1B-mlx-bf16 es la conversion a MLX del modelo de embeddings multimodal Nemotron-3.5-Embed-1B-BF16 desarrollado por NVIDIA. Lo publica el usuario netprojects (NetProjects), que no tiene vinculacion con NVIDIA y solo cambia el formato para que el modelo pueda ejecutarse de forma nativa en Apple Silicon. El modelo original esta pensado para recuperacion de informacion (retrieval): proyecta consultas de texto y documentos (texto o imagenes de pagina) en un mismo espacio vectorial, de modo que una pregunta textual puede recuperar tanto pasajes escritos como paginas escaneadas o capturas.
+Nemotron-3.5-Embed-1B-mlx-bf16 es la conversion a MLX del modelo de embeddings multimodal nvidia/Nemotron-3.5-Embed-1B-BF16, desarrollado originalmente por NVIDIA y adaptado para Apple Silicon por NetProjects. El modelo resuelve el problema de recuperacion de informacion (retrieval) en un espacio vectorial unificado: consultas de texto y documentos que pueden ser texto o imagenes de pagina se proyectan en el mismo espacio, lo que permite busqueda semantica sobre corpus mixtos sin pipelines separados.
 
-Arquitectonicamente deriva de mistralai/Ministral-3-3B-Instruct-2512-BF16 (Apache-2.0) y se presenta como un modelo de tipo mistral3 con torre de lenguaje, codificador de vision y proyector. Cuenta con 1.554.710.528 parametros totales segun los pesos safetensors, una ventana de hasta 32.768 tokens y soporte de embeddings Matryoshka (vectores truncables a 1024 o 512 dimensiones sin reentrenar). Su relevancia ahora radica en que ofrece retrieval multimodal de calidad competitiva (nDCG@10 de 0.7645 en ViDoRe v3 Computer Science) con una huella de memoria moderada (2,64 GB en inferencia de texto) y una fidelidad numerica practicamente identica a la implementacion de referencia de NVIDIA en float32.
+La arquitectura deriva de mistralai/Ministral-3-3B-Instruct-2512-BF16 (Apache-2.0) e incorpora una torre de lenguaje de 1.554.710.528 parametros totales, un encoder de vision y un proyector, con pooling de media y normalizacion L2 calculados en float32. Soporta contexto de hasta 32.768 tokens, embeddings Matryoshka (dimensiones reducidas como 512 o 1024) y un unico formato de entrada por documento (texto o imagen de pagina).
 
-Esta build concreta esta orientada a equipos Apple Silicon: usa la libreria MLX, mantiene la torre de lenguaje en bf16, conserva el codificador de vision y el proyector en bf16 y calcula pooling y normalizacion L2 en float32. El repositorio ocupa 3,1 GB y la licencia es OpenMDW 1.1, la misma del modelo original.
+La relevancia actual radica en que es una de las pocas builds MLX de un modelo de embeddings multimodal de NVIDIA, lo que permite ejecutar retrieval con imagenes de pagina en hardware Apple Silicon sin depender de CUDA. El repositorio mantiene precision bf16 en la torre de lenguaje y en el encoder de vision, con un tamano de 3,0 GB, y declara fidelidad numerica practicamente identica al codigo original de NVIDIA en float32.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal tipo mistral3 (torre de lenguaje + codificador de vision + proyector) |
+| Arquitectura | Transformer multimodal (torre de lenguaje derivada de Ministral-3-3B-Instruct-2512, encoder de vision y proyector) |
 | Parametros totales | 1.554.710.528 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | bf16 (esta build); no se documentan otras cuantizaciones en la informacion disponible |
-| Idiomas soportados | en (ingles) |
-| Licencia | OpenMDW License Agreement 1.1 (openmdw-1.1) |
-| Formato de pesos | safetensors (MLX) |
+| Idiomas soportados | en |
+| Licencia | OpenMDW License Agreement version 1.1 (openmdw-1.1); modelo base construido sobre Ministral-3-3B-Instruct-2512 (Apache-2.0) |
+| Formato de pesos | safetensors (MLX, bf16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder de embeddings multimodal construido sobre Ministral-3-3B-Instruct-2512-BF16. Incorpora una torre de lenguaje, un codificador de vision y un proyector que alinea ambas modalidades en un unico espacio vectorial; las consultas se formatean con el prefijo `query: …` y los documentos con `passage: …` a traves de la plantilla de chat de NVIDIA. El pooling es de tipo mean pooling seguido de normalizacion L2, calculados en float32 en esta build para preservar la precision. Admite una imagen por documento y hasta 32.768 tokens de entrada. La informacion disponible no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+El modelo es un encoder de retrieval multimodal construido sobre Ministral-3-3B-Instruct-2512-BF16. La torre de lenguaje se mantiene en bf16, mientras que el encoder de vision y el proyector tambien se conservan en bf16; las normas, el mean pooling y la normalizacion L2 se calculan en float32. La salida son vectores L2-normalizados, de modo que la similitud coseno se obtiene con un producto escalar. Soporta embeddings Matryoshka, lo que permite truncar la dimension del vector (por ejemplo a 512 o 1024) con perdida controlada de rendimiento.
 
-La innovacion practica de esta publicacion es la conversion a MLX con fidelidad numerica verificada: la similitud coseno frente al codigo de referencia de NVIDIA en float32 es de 0.9999 (minimo) y 1.0000 (media) tanto en SciFact como en documentos largos y paginas de imagen, con coincidencia total en top-1 y top-10. Ademas, el modelo soporta embeddings Matryoshka, lo que permite truncar los vectores a 1024 o 512 dimensiones manteniendo buena parte del rendimiento (nDCG@10 de 0.7561 y 0.7286 respectivamente en ViDoRe v3 CS).
+Las entradas siguen el chat template de NVIDIA: las consultas se prefijan con `query: …` y los documentos con `passage: …`. Cada documento admite un unico elemento, ya sea texto o una imagen de pagina. La build se convirtio desde la revision upstream `e24ca1e346bcc53572bd7bdc02b3e8ebf66c197c` y no documenta en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO; esos datos corresponden a la model card original de NVIDIA, que no se incluye aqui.
+
+La innovacion tecnica destacable de esta build es la fidelidad numerica respecto al codigo de referencia: la tokenizacion es identica en todas las entradas y la similitud coseno minima medida frente a NVIDIA en float32 es de 0,9999, con coincidencia total en top-1 y top-10 en los conjuntos de prueba.
 
 ## Capacidades
 
-- Generacion de embeddings de texto para similitud semantica y recuperacion (sentence-similarity, retrieval).
-- Embeddings multimodales: procesa texto e imagenes de pagina en el mismo espacio vectorial, permitiendo consultas de texto contra documentos escaneados.
-- Soporte de documentos compuestos: acepta entradas con texto e imagen simultaneamente (por ejemplo, una figura con su pie de foto).
-- Embeddings Matryoshka: truncado a 1024 o 512 dimensiones para reducir coste de almacenamiento y busqueda.
-- Normalizacion L2 de los vectores, de modo que la similitud coseno se obtiene con un simple producto escalar.
-- Servidor local compatible con la API `/v1/embeddings` (estilo OpenAI) y `/v1/rerank` (estilo Cohere/Jina).
-- Capacidades multilingues: solo ingles segun la model card.
-- No se documentan capacidades de tool calling, agentes ni modo de razonamiento (thinking), al tratarse de un modelo de embeddings y no generativo.
+- Generacion de embeddings de texto para similitud semantica y recuperacion (pipeline `feature-extraction`, tarea `sentence-similarity`).
+- Embeddings multimodales: consultas de texto contra documentos de texto o imagenes de pagina en el mismo espacio vectorial.
+- Retrieval de documentos largos, con soporte de hasta 32.768 tokens por entrada.
+- Embeddings Matryoshka: truncado de dimensiones (por ejemplo 512 o 1024) para reducir coste de almacenamiento y busqueda.
+- Servidor local con endpoints estilo OpenAI `/v1/embeddings` y estilo Cohere/Jina `/v1/rerank`, con imagenes en data URL o base64.
+- Soporte de un unico formato de entrada por documento (texto o imagen), no combinaciones multiples en la misma entrada.
+- Capacidades multilingues limitadas al ingles (`en`) segun la informacion disponible.
+- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, modo thinking, audio ni generacion de texto.
 
 ## Casos de uso
 
-- Busqueda semantica en documentacion tecnica: indexar manuales y articulos como `passage:` y consultar con `query:`, aprovechando la ventana de 32.768 tokens para pasajes largos sin trocear en exceso.
-- Recuperacion sobre PDFs escaneados: al aceptar imagenes de pagina, permite buscar directamente sobre paginas renderizadas sin necesidad de OCR previo, util en archivos historicos o documentos con maquetacion compleja.
-- RAG multimodal: alimentar un pipeline de generacion aumentada con contexto recuperado tanto de texto como de figuras y tablas, usando el endpoint `/v1/embeddings` del servidor incluido.
-- Reranking de resultados: emplear el endpoint `/v1/rerank` para reordenar candidatos de un buscador previo y mejorar la precision final.
-- Clasificacion y deduplicacion de documentos: calcular similitudes entre embeddings para agrupar documentos casi identicos o detectar duplicados en corpus grandes.
-- Busqueda en bases de conocimiento cientificas: el rendimiento medido en SciFact (nDCG@10 de 0.7501) lo hace adecuado para recuperacion de literatura cientifica en ingles.
-- Prototipado local en Mac: desarrollar y validar pipelines de retrieval en un portatil con Apple Silicon antes de desplegar en infraestructura con GPU, gracias a que la build MLX corre de forma nativa.
-- Indexacion con vectores reducidos: usar dimensiones Matryoshka de 512 para reducir el almacenamiento del indice vectorial a costa de una perdida moderada de calidad (0.7286 frente a 0.7645 en ViDoRe v3 CS).
+- Busqueda semantica sobre documentacion tecnica: el modelo indexa fragmentos de hasta 32.768 tokens y permite consultas en lenguaje natural con similitud coseno directa, adecuado para bases de conocimiento internas en ingles.
+- Recuperacion sobre paginas escaneadas: al aceptar imagenes de pagina como documentos, se puede construir un indice de PDFs escaneados sin OCR previo, usando el encoder de vision para proyectar la pagina al mismo espacio que las consultas de texto.
+- Reranking en pipelines RAG: el servidor local expone `/v1/rerank` estilo Cohere/Jina, de modo que se puede insertar como segunda etapa tras un retrieval inicial por BM25 o embeddings ligeros.
+- Busqueda multimodal en informes y articulos cientificos: mezcla de abstracts de texto y figuras o tablas como imagenes en un unico indice, util para revisiones de literatura en ingles.
+- Deduplicacion y clustering de documentos: los vectores L2-normalizados y las dimensiones Matryoshka reducidas (512) permiten agrupar grandes volumenes con coste de almacenamiento bajo.
+- Despliegue en estaciones de trabajo Apple Silicon: la build MLX permite ejecutar el modelo en local sin GPU NVIDIA, con un pico de memoria medido de 2,64 GB en inferencia de texto por lotes de 1.
+- Prototipado de sistemas de recomendacion basados en contenido: similitud entre descripciones de texto e imagenes de catalogo dentro del mismo espacio vectorial.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos en esta build frente a la implementacion de referencia de NVIDIA en float32:
+Resultados medidos en esta build MLX, comparados con el codigo de referencia de NVIDIA en float32 y con las puntuaciones publicadas por NVIDIA.
 
-| Test | Entradas | Coseno a NVIDIA (min / media) | Mismo top-1 | Solapamiento top-10 |
+| Prueba | Metrica | Esta build | Referencia NVIDIA |
+|---|---|---|---|
+| SciFact (200 consultas y abstracts) | Coseno minimo / medio vs NVIDIA | 0,9999 / 1,0000 | — |
+| SciFact (200 consultas y abstracts) | Top-1 coincidente | 40/40 | — |
+| SciFact (200 consultas y abstracts) | Solapamiento top-10 | 1,00 | — |
+| Documentos largos (4K+ tokens) e imagenes de pagina (52 entradas) | Coseno minimo / medio vs NVIDIA | 0,9999 / 1,0000 | — |
+| Documentos largos e imagenes de pagina | Top-1 coincidente | 10/10 | — |
+| ViDoRe v3 Computer Science (ingles), 1.360 imagenes de pagina | nDCG@10 | 0,7645 | 0,7642 (publicado por NVIDIA en MTEB) |
+| ViDoRe v3 Computer Science, vectores Matryoshka 1024-d | nDCG@10 | 0,7561 | — |
+| ViDoRe v3 Computer Science, vectores Matryoshka 512-d | nDCG@10 | 0,7286 | — |
+| ViDoRe v3 Computer Science | Recall@100 | 0,9717 | — |
+| SciFact (BEIR), 300 consultas y 5.183 abstracts | nDCG@10 | 0,7501 | — |
+| SciFact (BEIR) | Recall@100 | 0,96 | — |
+
+Rendimiento de inferencia de texto (documentos por segundo, con otros servidores de modelos detenidos):
+
+| Tokens por entrada | Lote | Docs/s | Tokens/s | Memoria pico |
 |---|---|---|---|---|
-| SciFact (consultas y abstracts) | 200 | 0.9999 / 1.0000 | 40/40 | 1.00 |
-| Documentos largos (4K+ tokens) y paginas de imagen | 52 (3 largos, 8 imagen) | 0.9999 / 1.0000 | 10/10 | 1.00 |
+| 506 | 1 | 46,7 | 23.629 | 2,64 GB |
+| 506 | 16 | 59,2 | 29.956 | 3,16 GB |
+| 506 | 64 | 56,25 | 28.462 | 4,47 GB |
+| 4090 | 1 | 3,94 | 16.124 | 2,95 GB |
+| 4090 | 16 | 3,99 | 16.307 | 6,7 GB |
+| 4090 | 64 | 3,93 | 16.087 | 19,97 GB |
 
-Recuperacion sobre imagenes de pagina, ViDoRe v3 Computer Science (ingles, 1.360 imagenes, nDCG@10 segun MTEB):
-
-| Configuracion | nDCG@10 | Recall@100 |
-|---|---|---|
-| Esta build | 0.7645 | 0.9717 |
-| Puntuacion publicada por NVIDIA (modelo original) | 0.7642 | no disponible |
-| Esta build, Matryoshka 1024 d | 0.7561 | no disponible |
-| Esta build, Matryoshka 512 d | 0.7286 | no disponible |
-
-Recuperacion de texto, SciFact (BEIR), conjunto de test completo (300 consultas, 5.183 abstracts): nDCG@10 de 0.7501 y Recall@100 de 0.96.
-
-Rendimiento de inferencia de texto (documentos por segundo):
-
-| Tokens por entrada | Batch | Docs/s | Tokens/s | Memoria pico |
-|---|---|---|---|---|
-| 506 | 1 | 46.7 | 23.629 | 2.64 GB |
-| 506 | 16 | 59.2 | 29.956 | 3.16 GB |
-| 506 | 64 | 56.25 | 28.462 | 4.47 GB |
-| 4090 | 1 | 3.94 | 16.124 | 2.95 GB |
-| 4090 | 16 | 3.99 | 16.307 | 6.7 GB |
-| 4090 | 64 | 3.93 | 16.087 | 19.97 GB |
+Las mediciones de velocidad se realizaron en un Apple M5 Max de 128 GB. No se han publicado resultados de MMLU, HumanEval o GSM8K en la informacion disponible, dado que el modelo es un encoder de embeddings y no un modelo generativo.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: alrededor de 2,64 GB de memoria pico en inferencia de texto con batch 1 y entradas de 506 tokens; sube a 4,47 GB con batch 64. Con entradas de 4.096 tokens la memoria pico alcanza 2,95 GB (batch 1) y 19,97 GB (batch 64).
-- GPU recomendadas: el modelo esta pensado para Apple Silicon (probado en Apple M5 Max de 128 GB); los datos de la tabla con entradas de 4.096 tokens corresponden a una RTX 4090.
-- Cabe en GPU de consumo: si, tanto en Apple Silicon como en una RTX 4090 para las configuraciones medidas.
-- Opciones de despliegue: MLX con el paquete `nemotron_mlx` (`pip install git+https://github.com/internet-projects/nemotron-retrieval-mlx`), servidor local incluido con endpoints `/v1/embeddings` y `/v1/rerank`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
-- Latencia y throughput: 46,7 documentos/s (23.629 tokens/s) con batch 1 en Apple Silicon; 59,2 documentos/s (29.956 tokens/s) con batch 16. En RTX 4090, 3,94 documentos/s con batch 1 y 3,99 con batch 16.
+- VRAM o memoria unificada estimada: 2,64 GB de pico con lote de 1 y entradas de 506 tokens; 3,16 GB con lote de 16; 4,47 GB con lote de 64. Para entradas de 4.096 tokens el pico sube a 2,95 GB con lote de 1 y hasta 19,97 GB con lote de 64.
+- Hardware de referencia: Apple M5 Max con 128 GB de memoria unificada, plataforma sobre la que se midieron los resultados.
+- Cabe en GPU de consumo: si, en tarjetas con al menos 5 GB de VRAM efectiva para lotes pequenos en bf16; no se documentan pruebas en RTX 4090, A100 ni H100 en la informacion disponible.
+- Opciones de despliegue: libreria MLX mediante el paquete `nemotron_mlx` (instalable desde `git+https://github.com/internet-projects/nemotron-retrieval-mlx`), y servidor local integrado con `python -m nemotron_mlx.server --embed netprojects/Nemotron-3.5-Embed-1B-mlx-bf16 --port 8095`, que expone `/v1/embeddings` y `/v1/rerank`.
+- No se documentan opciones de despliegue con vLLM, llama.cpp, Ollama ni TGI para esta build MLX en la informacion disponible.
+- Throughput medido: 46,7 docs/s con lote de 1 y entradas de 506 tokens; 59,2 docs/s con lote de 16; 56,25 docs/s con lote de 64.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Embed-1B-mlx-bf16 (esta build) | 1.554.710.528 | 32.768 tokens | Texto + imagen de pagina | OpenMDW 1.1 | Hugging Face (netprojects) |
-| nvidia/Nemotron-3.5-Embed-1B-BF16 | no disponible en la informacion | 32.768 tokens | Texto + imagen de pagina | OpenMDW 1.1 | Hugging Face (nvidia) |
-| Ministral-3-3B-Instruct-2512-BF16 (modelo base) | no disponible en la informacion | no disponible | Texto | Apache-2.0 | Hugging Face (mistralai) |
+| Nemotron-3.5-Embed-1B-mlx-bf16 (esta build) | 1.554.710.528 | 32.768 tokens | Texto e imagen de pagina | OpenMDW 1.1 | safetensors MLX bf16 |
+| nvidia/Nemotron-3.5-Embed-1B-BF16 | no disponible en la informacion proporcionada | 32.768 tokens | Texto e imagen de pagina | OpenMDW 1.1 | safetensors (transformers) |
+| Ministral-3-3B-Instruct-2512-BF16 | no disponible en la informacion proporcionada | no disponible | Texto | Apache-2.0 | safetensors |
 
-No se dispone de datos de benchmarks de modelos comparables de terceros en la informacion proporcionada para establecer una comparacion cuantitativa.
+La comparacion con alternativas de la misma categoria (modelos de embeddings multimodales de ~1B parametros) no esta disponible en la informacion proporcionada. El modelo base de NVIDIA es la referencia directa y comparte arquitectura y pesos, diferenciandose unicamente en el formato y la libreria de ejecucion.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no se documentan capacidades multilingues.
-- Es un modelo de embeddings, no generativo: no produce texto, razonamiento ni codigo.
-- Admite una sola imagen por documento; no se documenta soporte de multiples imagenes por pasaje.
-- La licencia OpenMDW 1.1 es distinta de Apache-2.0 y debe revisarse antes de uso comercial; el repositorio incluye el acuerdo completo en `LICENSE`.
-- Esta build esta pensada exclusivamente para MLX y Apple Silicon; no es portable directamente a otros runtimes sin conversion.
-- No se documentan sesgos conocidos ni tasas de alucinacion en la informacion disponible (al no ser generativo, el riesgo de alucinacion se traslada al sistema que consuma los embeddings).
-- La calidad en documentos muy largos o idiomas distintos del ingles no esta medida en la informacion disponible.
-- El autor de la conversion no esta afiliado a NVIDIA; cualquier incidencia debe contrastarse con el modelo original.
+- Idioma: el modelo declara soporte unicamente de ingles (`en`); el rendimiento en castellano u otros idiomas no esta documentado y previsiblemente sera inferior.
+- Entrada por documento: cada documento admite un unico elemento, texto o imagen, no combinaciones de texto e imagen en la misma entrada.
+- No es un modelo generativo: no produce texto, codigo ni respuestas; solo vectores de embedding. No dispone de tool calling ni de razonamiento multi-paso.
+- Fidelidad numerica: aunque la similitud coseno frente a NVIDIA es de 0,9999 en las pruebas, no es una igualdad exacta; en produccion con umbrales muy ajustados conviene validar con el conjunto propio.
+- Licencia: OpenMDW 1.1 no es una licencia permisiva tipo Apache o MIT; es necesario revisar el archivo `LICENSE` del repositorio antes de un uso comercial. El modelo base Ministral-3-3B-Instruct-2512 es Apache-2.0, segun el aviso `NOTICE`.
+- Sesgos: no se documentan en la informacion disponible evaluaciones de sesgo del modelo original ni de esta build.
+- Alucinacion: al ser un encoder de retrieval, el riesgo se traslada al pipeline aguas abajo; un retrieval con recall imperfecto (Recall@100 de 0,96 en SciFact) puede omitir documentos relevantes.
+- Dependencia de plataforma: la build esta pensada para Apple Silicon y la libreria MLX; no se garantiza su funcionamiento en CUDA ni en CPU sin MLX.
+- Repositorio con 0 likes y 389 descargas en el momento de la consulta: comunidad pequena, sin soporte documentado mas alla del repositorio de codigo.
+- No afiliado a NVIDIA: el mantenimiento corre a cargo de NetProjects y la responsabilidad sobre el modelo original recae en NVIDIA.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/netprojects/Nemotron-3.5-Embed-1B-mlx-bf16
-- Modelo original de NVIDIA: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
+- Repositorio Hugging Face: https://huggingface.co/netprojects/Nemotron-3.5-Embed-1B-mlx-bf16
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
 - Codigo de conversion y servidor: https://github.com/internet-projects/nemotron-retrieval-mlx
 - MLX: https://github.com/ml-explore/mlx
 - mlx-lm: https://github.com/ml-explore/mlx-lm
@@ -120,4 +124,3 @@ No se dispone de datos de benchmarks de modelos comparables de terceros en la in
 - Coleccion de builds MLX de NetProjects: https://huggingface.co/collections/netprojects/netprojects-mlx-builds-6ae3b2683a59a1b4fc4c0c3a
 - Todos los modelos de NetProjects: https://huggingface.co/netprojects
 - NetProjects: https://netprojects.com
-- Modelo base Ministral: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16

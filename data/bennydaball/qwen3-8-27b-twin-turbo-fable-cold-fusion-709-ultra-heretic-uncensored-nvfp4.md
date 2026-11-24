@@ -2,105 +2,89 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion GGUF en formato NVFP4 del modelo DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored, un ajuste fino de 27.320.697.856 parametros (27,32 mil millones) derivado a su vez de la familia Qwen3.8 y orientado a conversacion, uso de herramientas y entrada de imagenes. El autor del cuantizado es el usuario BennyDaBall, mientras que el entrenamiento, la plantilla de chat, el desbloqueo de censura ("Heretic") y los modos de razonamiento son trabajo de DavidAU. El modelo base tiene una ventana de contexto nativa de 262.144 tokens y una arquitectura hibrida que combina atencion, capas Gated DeltaNet y MLP en 64 capas de texto, mas una capa adicional de prediccion multi-token (MTP).
+Este repositorio no contiene un modelo entrenado desde cero, sino una cuantización NVFP4 en formato GGUF del fine-tune de DavidAU `Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored`, publicada por el usuario BennyDaBall. El trabajo original parte de una base de la familia Qwen3.8 con 27.320.697.856 parámetros (unos 27,3 mil millones) y la somete a un proceso de tuning propio ("Cold Fusion" / GAIN), a un comportamiento de razonamiento corto ("TWIN-TURBO") y a un proceso de des-censura ("Heretic") que elimina las negativas del modelo. El resultado es un modelo multimodal de tipo image-text-to-text con tool calling y plantillas de chat con modos de pensamiento conmutables.
 
-El problema que resuelve este repositorio concreto es el de tamano y velocidad de ejecucion: el checkpoint original en BF16 ocupa 51,8 GiB, mientras que esta version NVFP4 ocupa 18,34 GiB, manteniendo la cabeza MTP y el proyector de vision. Esto permite ejecutar un modelo de 27B con contexto largo en una unica GPU de consumo de la generacion Blackwell (probado en una RTX 5090 de 32 GB), usando llama.cpp o LM Studio sin Python ni vLLM.
+La aportación concreta de este repositorio es el cambio de formato de almacenamiento: una cuantización en una sola pasada desde los safetensors BF16 del autor original, manteniendo intactos el cabezal MTP (multi-token prediction) y la torre de visión. El backbone de atención, Gated DeltaNet y MLP de las 64 capas de texto se almacena como tensores GGML de tipo 40 (`nvfp4`), el formato de coma flotante de 4 bits de NVIDIA con kernels hardware en Blackwell, mientras que el cabezal MTP, el cabezal de salida y los embeddings se conservan en BF16. El resultado ocupa 18,34 GiB frente a los 51,8 GiB del BF16 original, con 262.144 tokens de contexto nativo.
 
-Su relevancia ahora es doble: por un lado, es un ejemplo temprano de cuantizacion nativa NVFP4 (tipo de tensor GGML 40) aplicada a un modelo multimodal, con kernels de hardware en Blackwell; por otro, conserva la cabeza MTP en BF16, lo que habilita decodificacion especulativa autocontenida sin modelo borrador externo. Cabe senalar que el repositorio no tiene descargas ni "likes" en el momento de la consulta y que no se han publicado resultados de benchmarks asociados a esta conversion.
+Es relevante ahora porque demuestra un patrón de despliegue local eficiente en GPUs Blackwell de consumo: un modelo de 27B multimodal con contexto de 256K, decodificación especulativa auto-contenida (sin modelo draft externo) y tool calling, ejecutable en una única RTX 5090 de 32 GB mediante LM Studio o llama.cpp. La licencia es Apache 2.0 y el único idioma declarado es el inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido: atencion, Gated DeltaNet y MLP en 64 capas de texto, mas una capa de prediccion multi-token (MTP) en el bloque 64; torre de vision separada |
-| Parametros totales | 27.320.697.856 (27,32 mil millones) |
-| Parametros activos | No aplica: la informacion disponible no describe el modelo como MoE |
+| Arquitectura | Transformer híbrido con atención, Gated DeltaNet y MLP; 64 capas de texto más capa MTP; torre de visión separada (mmproj) |
+| Parámetros totales | 27.320.697.856 (27,3B) |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | NVFP4 (tipo de tensor GGML 40) en las matrices grandes de atencion, Gated DeltaNet y MLP de las 64 capas; BF16 en la cabeza MTP, la cabeza de salida, los embeddings de tokens y el proyector de vision. El repo de DavidAU ofrece ademas K-quants e imatrix para hardware no Blackwell |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp / LM Studio); fichero principal de 18,34 GiB y mmproj BF16 de 0,87 GiB |
-| Modelo base | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored (relacion: quantized) |
-| Tamano del repositorio | 20,6 GB |
-| Plantilla de chat | Incluida en el GGUF y como chat_template.jinja (sha256 4e52a372...); variante v2 en chat_template-tturbo-v2.jinja |
-| Artefactos adicionales | Qwen3.8-27B-NVFP4-imatrix.dat (13,01 MiB), mapa por tensor de 866 lineas (24 KB), BUILD-MANIFEST.json, SHA256SUMS.txt |
+| Tipos de cuantización | NVFP4 (backbone, tensor GGML tipo 40); BF16 (cabezal MTP, embeddings, cabezal de salida, proyector de visión). El autor remite a su repo NEO MTP GGUF para K-quants e imatrix quants en hardware no Blackwell |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (principal 18,34 GiB + `mmproj` BF16 de 0,87 GiB); origen en safetensors BF16 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura descrita en la model card no es un transformer denso clasico: las 64 capas de texto combinan mecanismos de atencion con capas Gated DeltaNet y MLP, lo que la situa en la categoria de modelos hibridos (atencion mas capas recurrentes/lineales). Sobre esas 64 capas se anade un bloque 64 dedicado a prediccion multi-token (MTP), que el autor del cuantizado ha preservado en BF16 dentro del GGUF precisamente para que el propio modelo pueda autoespecular durante la decodificacion. Ademas, el modelo incorpora una torre de vision, con un proyector multimodal `mmproj` en BF16 convertido desde el mismo checkpoint de DavidAU, no tomado de otro modelo de la familia.
+La arquitectura es un transformer híbrido de 64 capas de texto que combina mecanismos de atención con capas Gated DeltaNet y bloques MLP; las matrices grandes de estas tres familias se cuantizan a NVFP4, mientras que los componentes sensibles a precisión (embeddings, cabezal de salida y cabezal MTP) permanecen en BF16. El modelo incluye una capa adicional (`blk.64`) de multi-token prediction, lo que permite decodificación especulativa auto-generada sin modelo draft externo. Dispone además de una torre de visión independiente, convertida desde el mismo checkpoint BF16 del autor original y no tomada de otro modelo Qwen3.8.
 
-En cuanto al entrenamiento, esta ficha no puede detallarlo: la model card del cuantizador indica explicitamente que no se entreno ni edito nada, y que el trabajo de ajuste (Cold Fusion / GAIN, comportamiento TWIN-TURBO de razonamiento corto, cinco modos de "thinking" y cinco de "instruct", el desbloqueo Heretic y las plantillas de chat) pertenece integramente a DavidAU. Por tanto, el numero de tokens de entrenamiento, la composicion del dataset y el uso de RLHF o DPO no estan disponibles en la informacion proporcionada. La innovacion tecnica de este repositorio es de formato: cuantizacion NVFP4 en una sola pasada desde los safetensors BF16, aplicando una matriz de importancia (imatrix) para el redondeo, con la plantilla de chat embebida verificada byte a byte (sha256 4e52a372...) y con suma de comprobacion SHA256 publicada para los ficheros principales.
+El entrenamiento no lo realiza este repositorio: el fine-tune, el tuning "Cold Fusion" / GAIN, el comportamiento de razonamiento corto TWIN-TURBO, los cinco modos de pensamiento y los cinco modos instruct, así como el proceso Heretic de des-censura, son obra de DavidAU. El repositorio de BennyDaBall documenta una cuantización en una sola pasada con una importance matrix (`Qwen3.8-27B-NVFP4-imatrix.dat`, 13,01 MiB) y un mapa de precisión por tensor de 866 líneas pasado a `llama-quantize`. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO. La plantilla de chat de DavidAU se incrusta sin modificar (sha256 `4e52a372...`, verificado byte a byte tras la conversión), con una segunda plantilla v2 incluida como archivo aparte para harnesses de agentes.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con contexto nativo de hasta 262.144 tokens.
-- Razonamiento con modos conmutables desde el propio mensaje: etiquetas tipo `{REASON:imedium}` para respuesta directa sin bloque de pensamiento o `{REASON:low}` para pensamiento breve; la etiqueta persiste hasta que se cambia.
-- Uso de herramientas (tool use) y function calling, segun las etiquetas del repositorio.
-- Flujos de agente y razonamiento multi-paso, con una plantilla v2 especifica para entornos tipo agent harness.
-- Vision multimodal: entrada de imagenes y texto mediante el fichero `mmproj` BF16 emparejado (pipeline declarado: image-text-to-text).
-- Decodificacion especulativa autocontenida mediante la cabeza MTP integrada, sin necesidad de modelo borrador externo.
-- Generacion de codigo: no se documenta de forma explicita en la model card, pero es una capacidad esperable en un modelo de esta familia; no hay evaluacion publicada en este repositorio.
-- Capacidades multilingues: no disponibles; el modelo declara unicamente ingles.
-- Modo "uncensored": el ajuste Heretic del modelo base reduce los rechazos y filtros de contenido, lo que constituye una capacidad funcional pero tambien un riesgo (ver limitaciones).
+- Generación de texto conversacional multi-turno con contexto nativo de 262.144 tokens.
+- Razonamiento con modos conmutables mediante etiquetas tipo `{REASON:imedium}` o `{REASON:low}`: respuesta directa sin bloque de pensamiento o pensamiento breve; la etiqueta persiste hasta cambiarla.
+- Cinco modos de pensamiento y cinco modos instruct definidos por el autor original.
+- Entrada de imágenes (pipeline image-text-to-text) mediante el proyector `mmproj` BF16.
+- Tool calling / function calling y uso conversacional orientado a agentes; el autor recomienda su plantilla v2 para harnesses de agentes.
+- Decodificación especulativa con cabezal MTP integrado (parámetros medidos: máximo 3 tokens draft, probabilidad mínima de continuación 0,2).
+- Comportamiento "uncensored" por el proceso Heretic: ausencia de negativas en temas que los modelos alineados rechazan.
+- Capacidades multilingües limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada en ingles: con 262.144 tokens de contexto se pueden mantener conversaciones multi-turno que incluyan historial completo, politicas de empresa y fichas de producto sin truncar, y el modo `{REASON:low}` permite respuestas rapidas sin bloque de razonamiento visible.
-- Analisis de documentos largos con soporte visual: informes, contratos o expedientes escaneados pueden enviarse como imagen (via `mmproj`) junto a texto de apoyo, aprovechando que el contexto cubre documentos de cientos de paginas en una sola pasada.
-- Extraccion estructurada de datos: convertir facturas, albaranes o capturas de paneles en JSON u otro formato estructurado, combinando vision y tool calling para volcar el resultado en un sistema posterior.
-- Generacion y revision de codigo en pipelines de CI/CD: el modelo puede integrarse como paso de revision o generacion mediante function calling, invocando linters, ejecutores de tests o APIs internas; el contexto largo permite pasar repositorios o diffs extensos completos.
-- Agentes multi-paso en local: con la plantilla v2 y tool calling se pueden construir agentes que encadenen busqueda, lectura de ficheros y llamadas a API, todo ejecutado en una sola GPU sin dependencia de servicios externos.
-- Soporte tecnico sobre capturas de pantalla: un usuario envia la imagen de un error o de una interfaz y el modelo, con vision, describe el estado y propone pasos, con el historial de la incidencia en contexto.
-- Prototipado y experimentacion en estacion de trabajo: al ocupar 18,34 GiB mas 0,87 GiB de vision, el modelo cabe en una RTX 5090 de 32 GB, lo que permite iterar con datos sensibles sin enviarlos a terceros.
-- Redaccion y edicion de contenido sin filtros tematicos: el ajuste uncensored resulta adecuado para ficcion adulta, temas sensibles o investigacion sobre sesgos, siempre con revision humana y con las advertencias legales correspondientes.
+- Asistente conversacional local con privacidad total: el modelo cabe en una RTX 5090 de 32 GB y se ejecuta con LM Studio o llama.cpp sin Python ni vLLM, de modo que los datos no salen de la máquina; adecuado para entornos con requisitos de confidencialidad.
+- Análisis de documentos largos: con 262.144 tokens de contexto nativo se pueden ingerir contratos, expedientes o bases de código completas en una sola pasada sin técnicas de recuperación.
+- Procesamiento de imágenes con descripción y extracción de información: la torre de visión permite tareas de image-text-to-text como lectura de capturas, diagramas o documentación escaneada, combinada con razonamiento posterior.
+- Automatización de agentes con tool calling: la plantilla v2 y el soporte de function calling permiten construir pipelines donde el modelo decide qué herramienta invocar; el MTP integrado reduce la latencia de generación en estos bucles.
+- Generación de código y razonamiento técnico en local: útil en flujos de desarrollo donde se quiere un modelo de 27B sin dependencia de API, con contexto suficiente para repositorios medianos.
+- Investigación sobre des-censura y alineación: el proceso Heretic lo convierte en objeto de estudio para comparar comportamientos alineados frente a no alineados sobre la misma base, en entornos controlados.
+- Prototipado rápido de aplicaciones de IA generativa: al ser un único archivo GGUF con plantilla incrustada, se integra en demos y pruebas de concepto con LM Studio en minutos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y la busqueda web realizada no devolvio resultados relevantes sobre este modelo. Tampoco se aportan cifras de latencia o tokens por segundo: el autor solo menciona que activar la decodificacion especulativa MTP proporciona una mejora de velocidad, sin cuantificarla.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de despliegue: 18,34 GiB de peso en NVFP4 frente a 51,8 GiB en BF16, y la configuración de decodificación especulativa probada (3 tokens draft, 0,2 de probabilidad mínima de continuación) sobre una RTX 5090 de 32 GB con `sm_120`.
 
 ## Requisitos de hardware
 
-- GPU con arquitectura NVIDIA Blackwell obligatoria para los kernels NVFP4 nativos (la model card cita `sm_120`, es decir, RTX 5090, y por extension la familia RTX 50 y las GPU de centro de datos Blackwell).
-- Prueba de referencia del autor: una unica RTX 5090 de 32 GB, con la que se construyo y midio el modelo.
-- VRAM: 18,34 GiB para los pesos de texto y 0,87 GiB adicionales si se usa vision; a partir de ahi hay que sumar cache KV y buffers. El autor no publica una cifra total, por lo que el consumo exacto de VRAM en inferencia no esta disponible.
-- Contexto: el ejemplo de llama.cpp del autor usa `--ctx-size 131072` con cache KV cuantizada en `q8_0` (`-ctk q8_0 -ctv q8_0`) y flash attention activada; el maximo nativo es 262.144 tokens, pero no se documenta el consumo de VRAM a esa longitud.
-- GPU de consumo: si, en RTX 5090 de 32 GB segun el autor. En tarjetas de 24 GB (RTX 4090, RTX 3090) los pesos por si solos ocuparian 18,34 GiB, dejando muy poco margen para cache KV y buffers; no hay confirmacion de funcionamiento en esas tarjetas.
-- GPUs no Blackwell: no hay kernels NVFP4 nativos en llama.cpp para esas arquitecturas; el propio autor remite a los K-quants e imatrix del repositorio NEO MTP GGUF de DavidAU.
-- Opciones de despliegue: LM Studio (runtime llama.cpp CUDA 12 2.41.0 probado) y llama.cpp, con `llama-server` y `--spec-type draft-mtp`. No es compatible con vLLM: la model card indica explicitamente "no Python, no vLLM".
-- Versiones minimas: llama.cpp release oficial b11026 (build Windows CUDA 13.4) o superior. Un build del 1 de septiembre de 2026 cargaba el modelo pero fallaba al activar `--spec-type draft-mtp`.
-- Configuracion de decodificacion especulativa recomendada: maximo 3 tokens borrador (equivalente a `--spec-draft-n-max 3`) y probabilidad minima de continuacion 0,2.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: 18,34 GiB solo para los pesos de texto; añadir 0,87 GiB si se carga el proyector de visión. El espacio para caché KV depende de la longitud de contexto configurada y no se detalla en la información disponible.
+- GPU recomendadas: NVIDIA Blackwell con kernels NVFP4 nativos; el autor construyó y midió sobre una RTX 5090 de 32 GB (`sm_120`).
+- Cabe en GPU de consumo: sí, en RTX 5090 de 32 GB. En GPUs no Blackwell no se garantiza el rendimiento de los kernels NVFP4; el autor remite a su repo NEO MTP GGUF para K-quants e imatrix quants destinados a ese hardware.
+- Opciones de despliegue: LM Studio (runtime llama.cpp CUDA 12 versión 2.41.0) y llama.cpp (release oficial b11026, build Windows CUDA 13.4). Se requiere una versión reciente: una build de llama.cpp del 2026-09-01 cargaba el modelo pero fallaba al activar `--spec-type draft-mtp`.
+- Latencia y throughput: no disponibles. La decodificación especulativa con MTP está pensada para reducir la latencia, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No hay resultados de benchmarks que permitan comparar el rendimiento con modelos de la misma categoria. La comparacion disponible se limita a variantes del mismo modelo en distintos formatos:
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (NVFP4 GGUF) | 27,32 B | 262.144 | GGUF NVFP4 | apache-2.0 | 18,34 GiB; requiere GPU Blackwell; incluye MTP en BF16 y mmproj |
-| DavidAU/...-ULTRA-HERETIC-Uncensored (BF16) | 27,32 B | 262.144 | safetensors BF16 | apache-2.0 | 51,8 GiB; checkpoint fuente original del cuantizado |
-| DavidAU/...-NM-DAU-NEO-MTP-GGUF (K-quants / imatrix) | 27,32 B | 262.144 | GGUF (K-quants) | apache-2.0 | Alternativa para hardware no Blackwell; tamanos concretos no disponibles en la informacion proporcionada |
+| Este modelo (NVFP4 GGUF) | 27,3B | 262.144 | GGUF NVFP4 + MTP BF16 + mmproj BF16 | Apache 2.0 | Solo Blackwell; multimodal; sin benchmarks publicados |
+| DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored (origen) | 27,3B | 262.144 | Safetensors BF16 (51,8 GiB) | Apache 2.0 | Mismo comportamiento; requiere más VRAM o cuantización propia |
+| DavidAU/...-NM-DAU-NEO-MTP-GGUF | 27,3B | 262.144 | GGUF K-quants e imatrix quants | Apache 2.0 | Alternativa para hardware no Blackwell |
 
-Alternativas de otros autores con arquitectura, contexto o licencia comparables: no disponible.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored": el ajuste Heretic del modelo base reduce deliberadamente los mecanismos de rechazo, lo que aumenta el riesgo de generar contenido danino, ilegal, sesgado o inexacto. Requiere moderacion externa y revision humana en cualquier despliegue con usuarios.
-- Riesgo de alucinacion: no hay evaluaciones de fidelidad publicadas para este ajuste; el contexto de 262.144 tokens no elimina el riesgo y puede amplificar errores cuando se alimentan documentos muy largos.
-- Idioma: solo se declara ingles. El uso en castellano no esta validado y previsiblemente degradara la calidad.
-- Sesgos: no se documenta ninguna evaluacion de sesgos ni de seguridad en la informacion disponible.
-- Restricciones de licencia: los metadatos declaran apache-2.0, lo que en principio permite uso comercial, pero el modelo deriva de un ajuste fino de un modelo de terceros y el nombre del repositorio usa la denominacion "Qwen3.8" sin ser un artefacto oficial de Qwen. Conviene verificar los terminos del modelo base antes de un uso comercial y revisar la cuestion de marcas.
-- Dependencia de hardware: los tensores NVFP4 solo funcionan con kernels nativos en Blackwell. En otras GPU hay que acudir a las cuantizaciones K-quant del repositorio de DavidAU.
-- Dependencia de version de runtime: se requiere un llama.cpp o LM Studio muy recientes; builds antiguos fallan al activar MTP.
-- Riesgo de inestabilidad: la propia model card advierte de un cierre inesperado ("crash") con un build concreto de llama.cpp al habilitar `--spec-type draft-mtp`.
-- Madurez y validacion: el repositorio registra 0 descargas y 0 "likes", y no incluye benchmarks propios. Es un artefacto reciente y sin validacion independiente.
-- Consumo de VRAM: aunque los pesos son de 18,34 GiB, el contexto completo de 262.144 tokens o incluso 131.072 con cache KV y buffers puede superar la capacidad de una GPU de 32 GB; no hay cifras publicadas.
-- Trazabilidad: el cuantizador afirma haber preservado la plantilla de chat byte a byte y publica sumas SHA256, pero no hay verificacion externa de esas comprobaciones en la informacion disponible.
+- Solo inglés declarado: no hay soporte multilingüe verificado, pese a que la base Qwen suele ser multilingüe.
+- Modelo des-censurado ("Heretic"): no aplica negativas de seguridad, por lo que puede generar contenido dañino, ilegal o inexacto sin filtro; requiere moderación externa en producción.
+- Riesgo de alucinación no cuantificado: no hay benchmarks publicados que permitan estimar la fiabilidad factual.
+- Dependencia de hardware: los kernels NVFP4 son específicos de Blackwell; en otras GPUs el rendimiento puede degradarse o requerir otras cuantizaciones.
+- Dependencia de versión del runtime: el MTP integrado y los tensores NVFP4 son adiciones recientes de llama.cpp; versiones antiguas fallan al activar la decodificación especulativa.
+- Licencia Apache 2.0 permite uso comercial, pero el comportamiento des-censurado traslada al desplegador la responsabilidad legal y ética del contenido generado.
+- El repositorio es una cuantización, no un modelo entrenado: los fallos de comportamiento deben atribuirse al fine-tune de DavidAU, no al cuantizador.
+- El contexto nativo de 262.144 tokens no implica que la caché KV quepa en 32 GB a plena longitud; no se documentan requisitos de VRAM por longitud de contexto.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/BennyDaBall/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NVFP4
-- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
-- Repositorio NEO MTP GGUF y guia de uso de DavidAU (K-quants e imatrix para hardware no Blackwell): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NM-DAU-NEO-MTP-GGUF
-- Perfil del autor del cuantizado en X: https://x.com/BennyDaBall_OG
-- La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (los resultados obtenidos correspondian a paginas de un operador de telefonia sin relacion con el contenido).
+- Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
+- Guía de uso y repo NEO MTP GGUF del autor original: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NM-DAU-NEO-MTP-GGUF
+- Perfil del cuantizador en X: https://x.com/BennyDaBall_OG
+- Apoyo al cuantizador (Ko-fi): https://ko-fi.com/bennydaball

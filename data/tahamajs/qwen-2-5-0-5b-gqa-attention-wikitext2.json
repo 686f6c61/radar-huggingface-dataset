@@ -53,12 +53,13 @@
   "removal_pattern": null,
   "renamed_to": "Hooshaai/qwen-2.5-0.5b-gqa-attention-wikitext2",
   "renamed_at": "2026-11-14T08:47:50.784Z",
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "2025-01-06 Qwen2.5 Technical Report Qwen Team https://huggingf...",
-      "url": "https://arxiv.org/pdf/2412.15115",
-      "snippet": "Recently, we release the details of our latest version of the Qwen series, Qwen2.5. In terms of the open- weight part, we release pre-trained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B,"
+      "task": "Causal Language Modeling",
+      "dataset": "WikiText-2 (wikitext-2-raw-v1)",
+      "metric": "WikiText-2 Post-KD Perplexity",
+      "value": 126.42
     }
-  ]
+  ],
+  "sources": []
 }

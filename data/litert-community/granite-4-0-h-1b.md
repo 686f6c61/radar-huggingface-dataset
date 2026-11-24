@@ -2,104 +2,102 @@
 
 ## Resumen
 
-`litert-community/granite-4.0-h-1b` es la conversión al formato LiteRT-LM (`.litertlm`) del modelo `ibm-granite/granite-4.0-h-1b` de IBM, publicada por la comunidad LiteRT (la organización que agrupa los modelos listos para el runtime on-device de Google, antes conocido como TensorFlow Lite). El objetivo no es ofrecer un modelo nuevo, sino empaquetar los pesos originales de IBM en un grafo ejecutable por LiteRT-LM en dispositivos móviles y de borde, con delegación completa a GPU en Android (OpenCL sobre Mali) y en Apple (Metal).
+Granite-4.0-h-1b es un modelo de lenguaje de IBM con arquitectura híbrida que combina bloques Mamba2 (selective-scan) con un pequeño número de bloques de atención con grouped-query attention. Esta ficha concreta, publicada por litert-community, no es el modelo original en PyTorch sino una conversión al formato LiteRT-LM (`.litertlm`) de Google, pensada para inferencia on-device en dispositivos móviles y edge. El resultado es un artefacto de 1,68 GB en cuantización int8 dinámica que puede ejecutarse en Android, iOS y macOS a través del runtime LiteRT-LM.
 
-La relevancia técnica del artefacto está en que, según el autor, es el primer LLM híbrido Mamba2 servido por el runtime LiteRT-LM publicado y, desde la actualización del 2026-08-13, el primero que ejecuta su selective scan en una GPU móvil. La arquitectura de IBM combina 36 capas Mamba2 con 4 capas de atención con grouped-query attention, de modo que solo esas 4 capas mantienen KV cache (con un presupuesto de 4096 tokens) y el resto usa estado recurrente de tamaño constante.
+El modelo resuelve el problema de desplegar un LLM con contexto razonablemente largo en hardware con memoria limitada. Al sustituir la mayor parte de la caché KV por un estado recurrente de tamaño constante, el consumo de memoria crece muy poco con la longitud de contexto: solo las 4 capas de atención mantienen KV, con un presupuesto de 4096 tokens. Según la model card, es el primer LLM híbrido Mamba2 servido por el runtime LiteRT-LM publicado y, desde la actualización del 13 de agosto de 2026, el primero en ejecutar su selective scan en una GPU móvil.
 
-El fichero publicado es una única variante `int8` de 1,68 GB, con cuantización dinámica en capas lineales y embedding mientras convoluciones y selective scan permanecen en coma flotante. Requiere litert-lm ≥ 0.15 y está pensado para inferencia local en teléfonos, no para servidores.
+La relevancia actual viene de su madurez práctica: funciona en litert-lm 0.15.0, 0.16.1, 0.17.1, 0.18.0 y 0.19.2, con decodificación en CPU a 39,2 tok/s tras la reconversión de agosto, y con delegación completa del grafo a GPU verificada en Metal (macOS, iPhone 17 Pro) y en Arm Mali con OpenCL (Pixel 8a). La licencia Apache 2.0 y el soporte de tool calling lo hacen apto para integraciones en producción, con las salvedades de runtime que se detallan más abajo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba2 (selective scan) + atención GQA; 36 capas Mamba2 y 4 capas de atención |
-| Parametros totales | clase 1B/1.5B (cifra exacta no disponible en la información proporcionada) |
+| Arquitectura | Híbrida: 36 capas Mamba2 (selective-scan) + 4 capas de atención con grouped-query attention |
+| Parametros totales | clase 1B/1.5B (valor exacto no disponible) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 4096 tokens de presupuesto KV en las 4 capas de atención; el resto del estado es constante |
-| Tipos de cuantizacion | int8 dinámica en lineales y embedding; convs y selective scan en float |
+| Longitud de contexto | 4096 tokens (presupuesto KV de las 4 capas de atención) |
+| Tipos de cuantizacion | int8 dinámica en capas lineales y embedding; convoluciones y selective scan en coma flotante |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors en `ibm-granite/granite-4.0-h-1b` |
+| Formato de pesos | LiteRT-LM (`.litertlm`), fichero `granite-4.0-h-1b_int8.litertlm` de 1,68 GB |
+| Modelo base | ibm-granite/granite-4.0-h-1b |
+| Runtime | LiteRT-LM 0.15.0, 0.16.1, 0.17.1, 0.18.0 y 0.19.2 |
+| Tamano del repo | 8,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base de IBM emplea una arquitectura híbrida en la que los bloques Mamba2 (selective-scan) se intercalan con un número reducido de bloques de atención con grouped-query attention. En esta variante de clase 1B/1.5B la proporción es de 36 capas Mamba2 frente a 4 de atención. La consecuencia práctica es que las capas Mamba2 mantienen un estado recurrente de convolución y SSM de tamaño constante por capa en lugar de una KV cache que crece con el contexto, por lo que el consumo de memoria se mantiene casi plano respecto a la longitud de la secuencia; solo las 4 capas de atención acumulan KV, con un presupuesto declarado de 4096 tokens.
+El modelo base de IBM emplea una arquitectura híbrida en la que los bloques Mamba2 constituyen la mayoría de la profundidad (36 de 40 capas) y solo 4 capas usan atención con grouped-query attention. Los bloques Mamba2 mantienen por capa un estado recurrente de tamaño constante (convolución más SSM) en lugar de una caché KV que crece con el contexto, de modo que el coste de memoria es prácticamente plano respecto a la longitud de la secuencia; únicamente las 4 capas de atención acumulan KV, con un presupuesto declarado de 4096 tokens. Esta conversión concreta no aporta detalles sobre el corpus de entrenamiento, el número de tokens ni si hubo RLHF o DPO: esa información corresponde a la model card del modelo original de IBM, no a este artefacto.
 
-La conversión a LiteRT-LM se rehizo el 2026-08-13 reexpresando el selective scan como productos matriciales por lotes, con todos los tensores de rango ≤ 4 y sin intermedios de broadcast gigantes. Según el autor, esto produjo dos efectos medidos con el mismo protocolo y máquina: la decodificación en CPU pasó de 11,4 a 39,2 tok/s (aproximadamente 3,5×) y el grafo pasó a delegarse por completo a la GPU, verificado en macOS (Metal), iPhone 17 Pro (Metal) y Pixel 8a (Arm Mali, OpenCL). La ejecución en GPU exige activaciones en fp32, que el bundle declara. No se dispone de información sobre el dataset de entrenamiento, el número de tokens ni las etapas de RLHF o DPO del modelo base en la documentación proporcionada.
+La innovación técnica de esta ficha está en el proceso de conversión, no en el entrenamiento. La reconversión del 13 de agosto de 2026 reexpresó el selective scan como productos matriciales por lotes, con todos los tensores de rango ≤ 4 y sin intermedios de broadcast gigantes. Las consecuencias medidas en la misma máquina y protocolo son dos: la decodificación en CPU pasó de 11,4 a 39,2 tok/s (unas 3,5 veces más rápida) y el grafo pasó a delegarse por completo a la GPU. La ejecución en GPU exige activaciones en fp32, que el fichero declara explícitamente. La equivalencia numérica del scan reescrito se verifica en cada exportación con una autocomprobación interna; además, el export en coma flotante que respalda este fichero coincide con el modelo PyTorch de Hugging Face a nivel de logits en una comparación de decodificación teacher-forced de 8 pasos: diferencia máxima por posición ≤ 1,1e-4, correlación 1,000000 y top-1 y top-5 idénticos en todas las posiciones.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en formato de chat, con plantilla de chat incluida en el bundle.
-- Razonamiento aritmético básico y respuesta a preguntas de cultura general, verificado en una puerta de sanidad de 8 preguntas.
-- Tool calling / function calling: desde el reempaquetado del 2026-10-14 (solo metadatos, con `llm_model_type qwen2p5`) el runtime analiza la llamada a herramienta y la plantilla de chat renderiza los resultados de herramienta.
-- Ejecución on-device con delegación completa a GPU en Android (OpenCL) y Apple (Metal), y ejecución en CPU.
-- Estado recurrente de tamaño constante, lo que permite conversaciones largas con memoria casi plana.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- No se documentan capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
+- Generación de texto autoregresiva en formato de chat, con plantilla de conversación que renderiza resultados de herramientas desde el reempaquetado del 14 de octubre de 2026.
+- Razonamiento aritmético básico y respuesta a preguntas de cultura general: la comprobación de sanidad de 8 preguntas se supera con 7/8 en CPU y en GPU.
+- Tool calling / function calling: el runtime analiza la llamada a herramienta y el resultado llega al modelo en litert-lm 0.18.0 tras el reempaquetado de metadatos.
+- Inferencia on-device con memoria casi constante respecto al contexto, gracias al estado recurrente de Mamba2.
+- Ejecución en CPU y en GPU (Metal en macOS e iOS, OpenCL sobre Arm Mali en Android).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistentes de texto embebidos en aplicaciones Android: el bundle se integra mediante `com.google.ai.edge.litert:litert` y se ejecuta con delegación OpenCL completa en un Pixel 8a, sin conexión de red ni coste por token de API.
-- Funciones de resumen y reescritura dentro de una app iOS: con el grafo delegado a Metal en iPhone 17 Pro, el modelo procesa prompts cortos localmente y evita enviar texto del usuario a servidores externos.
-- Agentes locales con tool calling: la plantilla de chat renderiza resultados de herramienta y el runtime parsea la llamada, lo que permite encadenar consultas a APIs locales (calendario, contactos, ficheros) en un flujo de varios pasos sobre el dispositivo.
-- Respuesta a preguntas sobre documentos de hasta 4096 tokens: el presupuesto KV de las 4 capas de atención acota el contexto útil, adecuado para correos, notas o fichas técnicas de longitud media.
-- Clasificación y extracción de información en pipelines de borde: al mantener memoria casi plana con la longitud, se pueden procesar muchos textos cortos en un mismo dispositivo sin que la huella crezca por petición, reiniciando el Engine entre conversaciones.
-- Prototipado e investigación de arquitecturas híbridas Mamba2: al ser, según el autor, el primer LLM híbrido Mamba2 servido por LiteRT-LM, sirve como banco de pruebas para medir latencia y delegación de operadores en hardware móvil real.
-- Aplicaciones de privacidad estricta (sanidad, finanzas personales): la inferencia ocurre íntegramente en el dispositivo con pesos Apache 2.0, sin dependencia de un proveedor cloud.
+- Asistentes integrados en aplicaciones Android: el fichero se ejecuta con delegación completa del grafo en OpenCL sobre un Pixel 8a (Arm Mali), sin operadores rechazados y con todos los subgrafos delegados, lo que permite un asistente local sin conexión dentro de una app.
+- Funciones de texto en apps iOS y macOS: la delegación a Metal está verificada en macOS y en iPhone 17 Pro, de modo que el modelo puede generar respuestas y resúmenes en el propio dispositivo sin enviar datos a un servidor.
+- Automatización con herramientas en el cliente: al soportar tool calling en litert-lm 0.18.0, puede invocar funciones locales (calendario, ficheros, APIs del sistema) y consumir sus resultados dentro de la conversación.
+- Procesamiento de documentos con contexto moderado: con 4096 tokens de ventana y memoria plana gracias a Mamba2, encaja en tareas de resumen o extracción sobre fragmentos de texto de extensión acotada en dispositivos con poca RAM.
+- Prototipado y evaluación de arquitecturas híbridas: sirve como referencia ejecutable de un LLM Mamba2 híbrido en el runtime LiteRT-LM, útil para medir latencia y consumo en hardware real antes de apostar por arquitecturas similares.
+- Educación y demostraciones offline: al caber en 1,68 GB y funcionar en CPU de escritorio a 39,2 tok/s, permite desplegar un chatbot de demostración en un portátil sin GPU dedicada.
+- Pruebas de regresión de runtimes: la model card documenta comparaciones entre versiones del runtime (0.15.0 a 0.19.2) y entre ficheros, lo que lo convierte en un caso de prueba práctico para validar actualizaciones de LiteRT-LM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K completos) en la información disponible. Los únicos datos medidos que aporta el autor son los siguientes:
-
-| Metrica | Valor | Contexto |
+| Metrica | Resultado | Condiciones |
 |---|---|---|
-| Puerta de sanidad (8 preguntas) | 7/8 en CPU y GPU | Mac, litert-lm 0.15.0 y 0.16.0, tras el fix de metadatos del 2026-08-28; el fallo es `17 + 25` respondido como `43` |
-| Puerta de sanidad, fichero previo al fix | 8/8 | respondía `42` a `17 + 25` |
-| GSM8K (50 preguntas, comparación de dos ficheros) | coinciden en 40, discrepan en 10 (6 a favor del fichero antiguo) | el autor lo califica de ruido con ese tamaño de muestra |
-| Decodificación en CPU | 11,4 → 39,2 tok/s | tras la reconversión del 2026-08-13, misma máquina y protocolo |
-| Fidelidad del export float frente a PyTorch | max\|diff logits\| ≤ 1,1e-4 por posición, correlación 1.000000, top-1 y top-5 idénticos | decodificación teacher-forced de 8 pasos |
-| Delegación de operadores en Pixel 8a | 0 operadores rechazados, todos los subgrafos delegados a OpenCL | verificado end-to-end |
+| Sanity check de 8 preguntas | 7/8 | int8, CPU y GPU, Mac, litert-lm 0.15.0 y 0.16.0 |
+| Sanity check de 8 preguntas (fichero previo al fix) | 8/8 | int8, fichero anterior al 2026-08-28 |
+| GSM8K, 50 preguntas | 40 coincidencias entre ambos ficheros; las 10 discrepancias se reparten 6-4 a favor del antiguo | muestra pequena, diferencia atribuida a ruido |
+| Decodificacion en CPU | 39,2 tok/s (antes 11,4 tok/s) | misma maquina y protocolo, tras reconversion 2026-08-13 |
+| Equivalencia con PyTorch | max\|diff logit\| ≤ 1,1e-4, correlacion 1,000000, top-1 y top-5 identicos | decodificacion teacher-forced de 8 pasos, export float |
+| Delegacion GPU | 0 operadores rechazados, todos los subgrafos delegados | Pixel 8a, Arm Mali, OpenCL |
+
+No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaño del fichero publicado: 1,68 GB (`granite-4.0-h-1b_int8.litertlm`); el repositorio completo ocupa 6,7 GB.
-- VRAM/RAM estimada para inferencia: no disponible de forma explícita; el autor advierte que la ejecución en GPU requiere activaciones fp32 y que ello tiene un coste de memoria que no cuantifica en la información disponible.
-- GPU validadas: Arm Mali con OpenCL (Pixel 8a), Apple Metal (macOS e iPhone 17 Pro).
-- CPU: soportada y validada; 39,2 tok/s de decodificación en Mac tras la reconversión.
-- No cabe plantearse A100, H100 o RTX 4090: el bundle está orientado a dispositivos de borde y el runtime es LiteRT-LM, no vLLM ni TGI.
-- Opciones de despliegue: exclusivamente LiteRT-LM ≥ 0.15 (validado en 0.15.0 y 0.16.0; las notas de comportamiento se refieren a 0.18.0 y 0.19.1). No hay soporte documentado para llama.cpp, Ollama, vLLM ni TGI con este fichero.
-- Latencia y throughput: 39,2 tok/s en decodificación CPU en Mac; no se publican cifras de throughput en GPU móvil.
+- VRAM/RAM estimada: el fichero int8 ocupa 1,68 GB en disco; la ejecución en GPU requiere activaciones en fp32, lo que incrementa el consumo de memoria respecto a la ruta de CPU (la model card no cuantifica ese coste).
+- GPU recomendadas: no hay una lista oficial; la validación cubre Metal en macOS e iPhone 17 Pro y OpenCL sobre Arm Mali en Pixel 8a.
+- Cabe en hardware de consumo: sí. Verificado en Pixel 8a, iPhone 17 Pro y CPU de Mac; la decodificación en CPU de escritorio alcanza 39,2 tok/s.
+- Opciones de despliegue: exclusivamente el runtime LiteRT-LM (versiones 0.15.0, 0.16.1, 0.17.1, 0.18.0 y 0.19.2 en CPU; GPU en Mac con 0.19.2). No se distribuye en GGUF, safetensors ni otros formatos en este repositorio.
+- Latencia y throughput: 39,2 tok/s en decodificación por CPU en Mac tras la reconversión de agosto de 2026; no se publican cifras de throughput en GPU ni de latencia de primer token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|---|
-| `litert-community/granite-4.0-h-1b` | clase 1B/1.5B | 4096 tokens KV (4 capas de atención) | `.litertlm`, LiteRT-LM | Apache 2.0 | Híbrido Mamba2 + GQA, int8, 1,68 GB, delegación GPU móvil |
-| `ibm-granite/granite-4.0-h-1b` | clase 1B/1.5B | no disponible | safetensors, PyTorch | Apache 2.0 | Modelo base de referencia; requiere stack de servidor o GPU de escritorio |
-| `litert-community/Qwen3-4B` | 4B | no disponible | `.litertlm`, LiteRT-LM | no disponible en la información | Alternativa del mismo catálogo LiteRT, mayor tamaño y presumiblemente mayor huella |
-| Modelos Gemma de la familia LiteRT | no disponible | no disponible | `.litertlm`, LiteRT-LM | no disponible en la información | Mismo runtime y mismo público objetivo on-device |
+| granite-4.0-h-1b (LiteRT-LM, esta ficha) | clase 1B/1,5B | 4096 | Híbrida Mamba2 + atención | Apache 2.0 | `.litertlm` int8, 1,68 GB, on-device |
+| ibm-granite/granite-4.0-h-1b (original) | clase 1B/1,5B | no disponible | Híbrida Mamba2 + atención | Apache 2.0 | Pesos PyTorch en Hugging Face |
+| Alternativas de ~1B para edge | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La información proporcionada no incluye datos de benchmarks ni especificaciones de otros modelos comparables de la misma categoría, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- La puerta de sanidad del fichero publicado es 7/8, no 8/8: falla `17 + 25` respondiendo `43`. Es un fallo aritmético elemental y debe tenerse en cuenta en cualquier uso que dependa de cálculo exacto.
-- El autor reconoce que el fix de metadatos del 2026-08-28 alteró la decodificación greedy: eliminar el `start_token` que anteponía `<|end_of_text|>` cambió respuestas en empates cercanos. Las puntuaciones medidas sobre el fichero anterior no se trasladan automáticamente.
-- Bug de runtime documentado: en litert-lm 0.18.0, crear una nueva Conversation sobre un Engine que ya ejecutó otra reutiliza el estado recurrente de la conversación previa y no lo reinicia (issue #3165). La recomendación es crear un Engine nuevo por conversación. El fix existe en main desde el 2026-11-03 (commit e1f86b05, continuación del PR #3945) pero ninguna release lo incorpora, incluida v0.19.1.
-- La prueba de este bug no pudo completarse sobre el fichero `_int8`: en el Engine nuevo la pregunta sobre la capital devolvió una respuesta vacía en ambas ejecuciones, por lo que la comparación no se realizó.
-- Presupuesto de contexto limitado a 4096 tokens en las 4 capas de atención; más allá de ese límite el modelo no mantiene KV de esas capas.
-- La ejecución en GPU exige activaciones fp32, con coste de memoria no cuantificado en la documentación.
-- Idiomas soportados no documentados; no se puede asumir calidad en castellano sin evaluación propia.
-- Riesgo de alucinación y sesgos: no se publica ninguna evaluación al respecto en la información disponible.
-- La licencia Apache 2.0 permite uso comercial, pero el artefacto depende del runtime LiteRT-LM y de sus versiones; fijar la versión del runtime es imprescindible en producción.
-- El repositorio pesa 6,7 GB frente a los 1,68 GB del fichero int8: conviene descargar solo el fichero necesario.
+- Una conversación por Engine: en litert-lm 0.18.0 el runtime reutiliza el estado recurrente de una conversación anterior al iniciar una nueva sobre el mismo Engine, sin reiniciar el estado. El fallo está reportado y existe un parche en la rama principal de LiteRT-LM desde el 3 de noviembre de 2026 (commit e1f86b05), pero ninguna versión publicada lo incorpora todavía (v0.19.1 no lo incluye). La solución práctica es crear un Engine nuevo por conversación; la primera conversación de cada Engine no se ve afectada.
+- El fichero int8 obtiene 7/8 en la comprobación de sanidad: falla en 17 + 25, respondiendo 43. La retirada del token `start_token` en el arreglo de metadatos del 28 de agosto de 2026 desplaza la decodificación voraz en casos ajustados, en ambas direcciones.
+- La medición de 8/8 en iPhone 17 Pro sobre GPU se realizó con el fichero anterior al arreglo de metadatos y no se ha repetido.
+- La comparación de GSM8K se hizo sobre 50 preguntas; la propia model card califica de ruido la diferencia de 6 a 4 en las discrepancias.
+- El contexto efectivo está limitado a 4096 tokens por el presupuesto KV de las 4 capas de atención; no debe asumirse una ventana mayor aunque el estado de Mamba2 sea de tamaño constante.
+- No hay información sobre sesgos, idiomas soportados ni tasas de alucinación en la documentación disponible.
+- La licencia Apache 2.0 permite uso comercial, pero las limitaciones del runtime (gestión de estado entre conversaciones y delegación GPU en Android) deben resolverse antes de desplegar en producción.
+- La ejecución en GPU exige activaciones fp32, con el coste de memoria asociado que la model card no detalla.
+- El repositorio ocupa 8,4 GB aunque el fichero int8 pesa 1,68 GB; conviene descargar solo el fichero necesario.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/granite-4.0-h-1b
-- Árbol de ficheros: https://huggingface.co/litert-community/granite-4.0-h-1b/tree/main
-- Modelo base de IBM: https://huggingface.co/ibm-granite/granite-4.0-h-1b
-- Organización LiteRT Community: https://huggingface.co/litert-community
+- Modelo base original: https://huggingface.co/ibm-granite/granite-4.0-h-1b
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Issue del bug de Conversation/Engine: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
-- Pull request relacionado: https://github.com/google-ai-edge/LiteRT-LM/pull/3945
-- Commit del fix en main: https://github.com/google-ai-edge/LiteRT-LM/commit/e1f86b05bf8a731331622a2622440e9f93d9a9f5
-- Medición de LiteRT en Android (Galaxy S26): https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md
+- Informe del fallo de estado entre conversaciones: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
+- Parche en la rama principal de LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM/commit/e1f86b05bf8a731331622a2622440e9f93d9a9f5
+- Medición de equivalencia de LiteRT en Android: https://github.com/john-rocky/apple-silicon-llm-bench/blob/main/results/android/tinyhybridnet-three-runtimes.md

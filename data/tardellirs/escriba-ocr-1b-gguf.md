@@ -2,86 +2,104 @@
 
 ## Resumen
 
-Escriba-OCR-1B-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario tardellirs en Hugging Face. El nombre del modelo sugiere un sistema de reconocimiento óptico de caracteres (OCR) con aproximadamente 1.000 millones de parámetros, empaquetado en el formato GGUF que emplea llama.cpp para inferencia cuantizada en CPU y GPU de consumo. Sin embargo, la información pública disponible en la ficha de Hugging Face es extremadamente limitada: no se especifica licencia, idiomas soportados, pipeline de la librería Transformers ni detalles de arquitectura o entrenamiento.
+Escriba-OCR-1B-GGUF es la distribucion en formato GGUF de Escriba-OCR-1B, un modelo vision-lenguaje de aproximadamente 596 millones de parametros (etiquetado comercialmente como "1B") especializado en el reconocimiento de texto manuscrito (HTR/OCR) de redacciones en portugues, concretamente ensayos escritos a mano por estudiantes para el examen ENEM de Brasil. Lo desarrolla el usuario tardellirs y se distribuye bajo licencia CC BY-NC 4.0. Su rasgo definitorio es que preserva los errores del alumno en la transcripcion, en lugar de corregirlos, lo que lo hace util para evaluacion educativa.
 
-La relevancia de este repositorio radica en su formato de distribución: GGUF permite ejecutar modelos en hardware modesto mediante cuantizaciones de 2 a 8 bits, lo que facilita el despliegue local de un modelo OCR de tamaño medio sin necesidad de GPUs de datacenter. No obstante, la ausencia de documentación técnica, métricas de evaluación y especificación de licencia implica que cualquier evaluación rigurosa debe realizarse empíricamente tras descargar los pesos.
+La relevancia de esta version GGUF es practica: permite ejecutar el modelo en CPU convencional mediante llama.cpp, sin GPU, de modo que las redacciones de los estudiantes no tienen que salir de los ordenadores del centro educativo. Los ficheros cuantizados reducen el modelo a entre 0,66 GB y 2,0 GB en disco (incluyendo el proyector de vision), con una calidad de transcripcion equivalente a los pesos originales segun las mediciones del autor.
 
-Dado que no hay información publicada sobre el proceso de entrenamiento, los datos utilizados ni los resultados de benchmarks, esta ficha se limita a describir lo verificable desde el repositorio y a señalar explícitamente los datos no disponibles, sin inferir cifras que no puedan contrastarse.
+El modelo se construye sobre LightOnOCR-3-1B (© LightOn, Apache 2.0) y se entrena con el corpus BRESSAY. Esta ficha cubre la variante GGUF; los detalles completos de entrenamiento y benchmarks remiten a la model card del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere un transformer orientado a OCR, sin confirmar) |
-| Parametros totales | aproximadamente 1B (inferido del nombre "1B", no confirmado en la ficha) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (variantes concretas no especificadas en la ficha) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF |
-| Tamano del repositorio | no disponible |
-| Pipeline declarado | no disponible |
-| Descargas | 0 |
-| Fecha de creacion | 2026-11-20 |
+| Arquitectura | Vision-lenguaje (image-text-to-text); transformer con proyector de vision, derivada de LightOnOCR-3-1B |
+| Parametros totales | 596.049.920 (segun safetensors del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens en la configuracion de servidor recomendada (`-c 8192`) |
+| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16 (modelo); Q4_K_M, Q8_0, F16 (proyector de vision) |
+| Idiomas soportados | Portugues (pt), portugues de Brasil; no se declaran otros idiomas |
+| Licencia | CC BY-NC 4.0 (solo uso no comercial) |
+| Formato de pesos | GGUF (para llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo en la ficha de Hugging Face. El sufijo "OCR" en el nombre indica que está orientado a tareas de reconocimiento de texto en imágenes, y el sufijo "GGUF" confirma que los pesos están empaquetados para su uso con llama.cpp y ecosistemas compatibles (Ollama, LM Studio, kobold.cpp, entre otros). No obstante, no se detalla si se trata de un transformer encoder-decoder, un modelo de visión-lenguaje (VLM) o una arquitectura híbrida.
+El modelo es un vision-lenguaje de tipo image-text-to-text que combina un codificador de vision con un modelo de lenguaje y un proyector multimodal, partiendo de la base LightOnOCR-3-1B. La inferencia procesa la imagen de la pagina (redimensionada a 1200 px en el lado mayor, lo que genera aproximadamente 1700 tokens visuales) y produce la transcripcion como texto generado de forma autorregresiva.
 
-Tampoco hay información sobre el volumen de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Todos estos datos deben considerarse no disponibles hasta que el autor publique documentación adicional o un model card completo.
+El entrenamiento se realizo sobre el corpus BRESSAY, un conjunto de redacciones manuscritas en portugues, con el objetivo explicito de preservar los errores ortograficos y gramaticales del estudiante. La model card de esta variante GGUF no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO; esos datos corresponden a la model card del modelo base. La innovacion principal no es arquitectonica sino de objetivo: una transcripcion fiel y con errores conservados, orientada a evaluacion educativa.
 
 ## Capacidades
 
-- Reconocimiento óptico de caracteres (OCR): el nombre del modelo indica extracción de texto a partir de imágenes, aunque no se especifica si cubre texto impreso, manuscrito, tablas o fórmulas.
-- Generación de texto derivada de la transcripción: al ser un modelo de lenguaje subyacente de aproximadamente 1B de parámetros, podría producir texto estructurado a partir del contenido reconocido, si bien esto no está confirmado.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; la ficha no declara idiomas.
-- Modo thinking, visión general, audio u otras capacidades especiales: no disponible.
-- Ejecución local en CPU/GPU mediante llama.cpp: confirmado por el formato GGUF.
+- Reconocimiento de texto manuscrito (HTR) sobre imagenes de redacciones en portugues.
+- Transcripcion que preserva errores del alumno (error-preserving), en lugar de normalizar o corregir.
+- Entrada exclusivamente de imagen, sin prompt de texto: el modelo espera solo la imagen de la pagina.
+- Salida de texto plano con la transcripcion de la pagina.
+- Ejecucion en CPU sin GPU mediante llama.cpp, con API compatible con OpenAI a traves de `llama-server`.
+- Procesamiento pagina a pagina, con decodificacion greedy (`--temp 0`, `repetition_penalty=1.05`).
+- Soporte de cuantizacion de 4, 5, 6, 8 y 16 bits tanto del modelo como del proyector de vision.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision general, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Digitalización de documentos escaneados en entornos con requisitos de privacidad: al ejecutarse localmente en formato GGUF, el modelo permite procesar facturas, contratos o formularios sin enviar imágenes a servicios en la nube, lo que resulta adecuado para sectores regulados.
-- Extracción de texto en estaciones de trabajo sin GPU dedicada: las cuantizaciones GGUF de un modelo de ~1B pueden ejecutarse en CPU con consumo de RAM moderado, lo que habilita el OCR en portátiles y equipos de oficina convencionales.
-- Preprocesado en pipelines de documentos: integración como primer paso de un flujo que digitaliza PDFs escaneados antes de aplicar indexación semántica o búsqueda sobre el texto extraído.
-- Automatización de archivo histórico: procesamiento por lotes de imágenes de archivos y bibliotecas para generar transcripciones revisables por personal humano.
-- Asistencia a la accesibilidad: conversión de texto presente en imágenes (carteles, capturas, documentos fotografiados) a texto plano legible por lectores de pantalla, siempre que la calidad del OCR se valide empíricamente.
-- Prototipado e investigación: base para experimentos de comparación de cuantizaciones GGUF en tareas OCR, dado el reducido tamaño del modelo y su facilidad de despliegue con llama.cpp u Ollama.
+- Digitalizacion de redacciones del ENEM en centros educativos: el modelo transcribe las redacciones manuscritas en un servidor local con CPU, de modo que los documentos de los alumnos no salen de la red del centro.
+- Evaluacion pedagogica con errores conservados: al mantener las faltas del estudiante, el profesorado puede analizar patrones de error ortografico y gramatical sin que el OCR los enmascare.
+- Despliegue en aulas con hardware modesto: con Q4_K_M + proyector Q4_K_M (0,66 GB, unos 2,7 GB de RAM pico) funciona en un equipo de escritorio convencional, sin GPU.
+- Correccion asistida por lotes: el cliente `escriba transcribe photos/ --name class-3a` genera un `.txt` por imagen, lo que permite procesar una clase completa y volcar las transcripciones a un pipeline de evaluacion.
+- Revision y verificacion manual: el visor local (`escriba viewer`) permite comparar pagina e transcripcion en el navegador para auditar resultados.
+- Archivo y conservacion documental: transcripcion masiva de examenes manuscritos para su indexacion y busqueda posterior.
+- Investigacion en HTR educativo: uso del modelo como linea base para estudios sobre reconocimiento de escritura manuscrita en portugues con preservacion de errores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica mediciones sobre 30 paginas aleatorias del split de test de BRESSAY, en una VM de 4 vCPU (AMD EPYC Turin, 16 GB RAM) con llama.cpp compilado con `GGML_NATIVE=ON`. CER insensible a mayusculas, por pagina y limitado al 100%.
+
+| Variante | Ficheros (texto + vision) | CER | Tiempo por pagina | Codificacion de imagen | Generacion de texto | RAM pico |
+|---|---|---|---|---|---|---|
+| Pesos originales, vLLM en GPU (referencia) | 2,0 GB | 2,56% | 2,3 s | no disponible | no disponible | no disponible |
+| F16 + mmproj F16 | 2,0 GB | 2,60% | 69 s | 41 s | 28 tok/s | 3,6 GB |
+| Q8_0 + mmproj Q8_0 | 1,1 GB | 2,60% | 70 s | 49 s | 38 tok/s | 2,9 GB |
+| Q4_K_M + mmproj F16 | 1,2 GB | 2,55% | 55 s | 37 s | 47 tok/s | 3,0 GB |
+| Q4_K_M + mmproj Q8_0 | 0,85 GB | 2,54% | 66 s | 48 s | 45 tok/s | 2,8 GB |
+| Q4_K_M + mmproj Q4_K_M | 0,66 GB | 2,60% | 53 s | 35 s | 45 tok/s | 2,7 GB |
+
+Las diferencias de CER entre cuantizaciones son de 0,05 puntos o menos, dentro del ruido entre paginas. Redimensionar a 1000 px en lugar de 1200 px reduce el tiempo en aproximadamente un tercio, pero eleva el CER en torno a 0,4 puntos, por lo que el autor no lo recomienda. No se publican resultados de MMLU, HumanEval ni GSM8K para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~1B en GGUF, las cuantizaciones de 4 bits suelen ocupar del orden de 0,6-1 GB y las de 8 bits alrededor de 1-1,5 GB, aunque estas cifras no están confirmadas para este repositorio concreto.
-- GPU recomendadas: no disponibles. Por tamaño, cabría esperar compatibilidad con GPUs de consumo con 4-8 GB de VRAM (RTX 3050, RTX 4060, RTX 3060), pero no hay validación publicada.
-- Cabe en GPU de consumo: probablemente sí, dado el tamaño nominal de 1B y el formato GGUF, aunque sin confirmación del autor.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF. vLLM y TGI no son opciones nativas para GGUF sin conversión previa.
-- Latencia y throughput estimados: no disponibles.
+- VRAM: no aplica en la configuracion recomendada; la inferencia es en CPU. RAM pico medida entre 2,7 GB (Q4_K_M + mmproj Q4_K_M) y 3,6 GB (F16 + mmproj F16).
+- GPU recomendadas: no requeridas. La referencia de calidad se obtuvo con vLLM en GPU (2,3 s por pagina), pero la model card no especifica el modelo de GPU.
+- Cabe en hardware de consumo: si, en cualquier CPU moderna; el propio modelo esta pensado para ejecutarse sin GPU. Las CPU sin AVX-512 son mas lentas.
+- Opciones de despliegue: `llama-server` (API compatible con OpenAI), `llama-mtmd-cli` (linea de comandos) y el cliente/visor `escriba` (repositorio github.com/tardellirs/escriba-ocr). No se documenta soporte para vLLM, TGI ni Ollama en esta variante.
+- Latencia y throughput medidos en 4 vCPU: entre 53 y 70 s por pagina segun variante; generacion de texto de 28 a 47 tok/s; la mayor parte del tiempo se consume en la codificacion de la imagen (35 a 49 s).
+- Configuracion de servidor recomendada: `--temp 0 --repeat-penalty 1.05 -c 8192 --cache-ram 0 -np 1`; `--cache-ram 0` evita que la cache de prompt crezca hasta 8 GB y `-np 1` evita el error "failed to find a memory slot" al dividirse el contexto en varios slots.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
-| Escriba-OCR-1B-GGUF | ~1B (inferido) | no disponible | GGUF | no disponible | Hugging Face (0 descargas) |
-| Alternativas OCR open source de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Escriba-OCR-1B-GGUF | 596 M | 8192 | GGUF / llama.cpp en CPU | CC BY-NC 4.0 | Especializado en HTR de portugues con preservacion de errores |
+| LightOnOCR-3-1B | no disponible | no disponible | safetensors | Apache 2.0 | Modelo base de Escriba; uso general de OCR, no especifico de portugues educativo |
+| Escriba-OCR-1B (original) | 596 M | no disponible | safetensors / vLLM en GPU | CC BY-NC 4.0 | Pesos de referencia; requiere GPU y ofrece 2,3 s por pagina |
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas concretas, ya que la ficha del modelo no declara arquitectura, licencia ni métricas que permitan emparejarlo con modelos comparables de la misma categoría.
+No se dispone en la informacion proporcionada de otros modelos comparables de HTR para portugues con preservacion de errores.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripción de arquitectura, datos de entrenamiento ni evaluación, lo que impide valorar su calidad antes de probarlo.
-- Licencia no especificada: no puede confirmarse si el uso comercial está permitido; en producción debe tratarse como licencia desconocida hasta que el autor la declare.
-- Idiomas no declarados: se desconoce si el OCR cubre castellano, inglés u otras lenguas, y si maneja alfabetos no latinos.
-- Riesgo de alucinación: como modelo generativo subyacente, podría producir texto no presente en la imagen; requiere validación con métricas de error (CER/WER) antes de uso crítico.
-- Sesgos desconocidos: al no documentarse el dataset, no pueden evaluarse sesgos de dominio (manuscritos, tipografías, idiomas minoritarios).
-- Repositorio sin tracción: 0 descargas y 1 like en la fecha de consulta, lo que reduce la probabilidad de que existan informes de terceros sobre su comportamiento real.
-- Fecha de creación futura en la ficha (2026-11-20): conviene verificar la integridad del repositorio y la coherencia de los metadatos antes de confiar en él para flujos automatizados.
+- Licencia CC BY-NC 4.0: uso exclusivamente no comercial. Los datos de entrenamiento (BRESSAY) solo pueden usarse para investigacion y docencia no comerciales, lo que restringe cualquier despliegue productivo comercial.
+- Ambito linguistico limitado al portugues (de Brasil); no se declaran capacidades multilingues.
+- Entrenado especificamente con redacciones manuscritas del ENEM; el rendimiento fuera de ese dominio (otra caligrafia, otros formatos, otras lenguas) no esta documentado.
+- Riesgo de error de transcripcion: el CER de referencia es de aproximadamente 2,5% a 2,6%, por lo que la salida no debe considerarse exacta sin revision.
+- La preservacion de errores es intencionada: el modelo no corrige ortografia ni gramatica, lo que lo hace inadecuado para tareas que requieran texto normalizado.
+- Requiere seguir estrictamente la configuracion de entrenamiento (imagen a 1200 px en el lado mayor, solo imagen sin prompt, decodificacion greedy con `repetition_penalty=1.05`); desviarse de ella puede degradar la calidad.
+- En CPU sin AVX-512 el rendimiento es notablemente inferior; la latencia de 53 a 70 s por pagina limita su uso en escenarios de alto volumen en tiempo real.
+- No se documentan sesgos especificos, pero al derivar de un modelo base y de un corpus educativo concreto puede heredar sesgos de ambos.
+- No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, por lo que no debe emplearse como modelo generalista.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/tardellirs/Escriba-OCR-1B-GGUF
-- No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.
+- Modelo GGUF en Hugging Face: https://huggingface.co/tardellirs/Escriba-OCR-1B-GGUF
+- Modelo base (pesos originales): https://huggingface.co/tardellirs/Escriba-OCR-1B
+- Modelo base de LightOn: https://huggingface.co/lightonai/LightOnOCR-3-1B
+- Repositorio del cliente y visor escriba-ocr: https://github.com/tardellirs/escriba-ocr
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Dataset BRESSAY: https://zenodo.org/records/11637681
+- Logotipo del modelo: https://huggingface.co/tardellirs/Escriba-OCR-1B-GGUF/resolve/main/assets/escriba-logo.png

@@ -55,5 +55,11 @@
       "value": 4.42
     }
   ],
-  "sources": []
+  "sources": [
+    {
+      "title": "alkove · PyPI",
+      "url": "http://go/v1/AYYpLM86goRTawThzAHLidUeYYn9qSh82NrtDTbmg-1PP196OBxo9jqHczfXgDkq896KfZeG7XnORwso0GM2MiIqRNU1_WowclPXa8PuVJrI4E_cICUB3Lrxq1bO4TDCc5xOwwIBd5rF-VnEdec-Jd4ZYdB6LbqNxDiZd12iMr941IDEl2IpDz-DTRHKwjz15XgA",
+      "snippet": "On-device voice input for Python: keep the user's voice and drop the rest (Focus), find where they speak (Cue), hear a wake word typed in 7 languages (Spot, Lex), know who is speaking (Timbre). It runs natively on the CPU, one thread per stream. No server, no key, no telemetry. The core is the one the web SDK runs in WebAssembly: for the same 16 kHz audio, the output is the same to the bit. Preview (0.x). A minor version may break the API until 1.0; a patch never does. Read this first. Alkove is made for a near microphone and one person: a phone, a headset, a laptop, a caller on a line."
+    }
+  ]
 }

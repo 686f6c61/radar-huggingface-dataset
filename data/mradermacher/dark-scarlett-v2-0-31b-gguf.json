@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "mradermacher/Dark-Scarlett-v1.0-26B-A4B-i1-GGUF at main",
-      "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-26B-A4B-i1-GGUF/tree/main",
-      "snippet": "Instructions to use mradermacher/Dark-Scarlett-v1.-26B-A4B-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "ReadyArt/Dark-Scarlett-v2.0-31B | LLMs .INFO",
-      "url": "https://llms.info/models/readyart-dark-scarlett-v2-0-31b-1324",
-      "snippet": "safetensors, gemma4, gemma-4, roleplay, conversational"
-    },
-    {
-      "title": "ReadyArt/Dark-Scarlett-v2.0-31B-GGUF | LLMs .INFO",
-      "url": "https://llms.info/models/readyart-dark-scarlett-v2-0-31b-gguf-1326",
-      "snippet": "gemma-4, roleplay, conversational, instruct, apache-2.0"
-    },
-    {
-      "title": "Architecture graph for ReadyArt/Dark-Scarlett-v2.0-31B.",
-      "url": "https://hfviewer.com/ReadyArt/Dark-Scarlett-v2.0-31B",
-      "snippet": "ReadyArt/Dark-Scarlett-v2.-31B architecture at a glance ReadyArt/Dark-Scarlett-v2.-31B is a model (gemma4_text architecture). It uses 60 transformer layers, a hidden size of 5,376, and 32 query heads with 16 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 21,504."
-    }
-  ]
+  "sources": []
 }

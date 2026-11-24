@@ -2,87 +2,102 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-UNCENSORED-HERETIC-GGUF es un modelo de lenguaje publicado en Hugging Face por el usuario "leakked" el 18 de noviembre de 2026. Se trata de una distribución en formato GGUF de un modelo de 9.000 millones de parámetros (según se deduce del sufijo "9B" del nombre), presumiblemente derivado de la familia SenseNova de SenseTime, aunque no se dispone de documentación que confirme el linaje exacto ni el proceso de ajuste aplicado.
+SenseNova-Loop-9B-UNCENSORED-HERETIC-GGUF es una cuantización Q4_K_M en formato GGUF del modelo SenseNova-Loop-9B, publicado por el usuario leakked. El modelo original lo desarrolla SenseTime / OpenSenseNova y es un transformer de aproximadamente 8.960 millones de parámetros (8,96 B) orientado a generación de texto y razonamiento. Esta edición concreta aplica una ablación selectiva de pesos sobre el checkpoint original para reducir la tasa de rechazos y, después, lo cuantiza a Q4_K_M, dando como resultado un único archivo de 5,6 GB ejecutable en llama.cpp.
 
-El nombre sugiere un ajuste orientado a eliminar los mecanismos de rechazo y alineación de seguridad ("uncensored") y a modificar el estilo de respuesta ("heretic"), una práctica habitual en la comunidad de modelos derivados. Sin embargo, la model card publicada no contiene más que la declaración de licencia Apache 2.0, sin descripción técnica, datos de entrenamiento, benchmarks ni instrucciones de uso.
+Su relevancia práctica reside en que comprime un modelo de 9 B con ventana de contexto declarada de 512K tokens en un GGUF de 5,6 GB, lo que permite inferencia local en hardware de consumo con suficiente memoria. El autor declara soporte para inglés y francés, mantiene la plantilla de chat original y está pensado para respuestas directas y modos de razonamiento más profundos. La licencia es Apache 2.0.
 
-La relevancia de esta ficha es limitada desde el punto de vista técnico: no hay información verificable sobre arquitectura, contexto, cuantizaciones disponibles ni rendimiento. Se documenta lo que consta y se marcan explícitamente como "no disponible" todos los campos que el autor no ha especificado.
+Conviene tratarlo como un derivado comunitario no oficial: la edición de pesos altera el comportamiento del modelo base y no cuenta con la validación del equipo original de SenseTime. La model card reporta métricas internas (fidelidad al base ≈97 %, ≈3 rechazos por cada 100 peticiones, 30/30 en precisión factual sobre un set pequeño), pero no hay benchmarks públicos estandarizados en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer denso, sin confirmar) |
-| Parametros totales | 9B (inferido del nombre, no confirmado en la model card) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio es GGUF, pero no se listan los niveles incluidos) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer (modelo base SenseNova-Loop-9B; detalles internos no disponibles) |
+| Parametros totales | 8.956.949.376 (≈8,96 B) |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 512K tokens (ventana del modelo base, segun la model card) |
+| Tipos de cuantizacion | Q4_K_M (unica publicada en este repo) |
+| Idiomas soportados | Ingles y frances (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (archivo `SenseNova-Loop-9B-Uncensored-Q4_K_M.gguf`) |
+| Tamano del repo | 5,6 GB |
+| Modelo base | sensenova/SenseNova-Loop-9B |
+| Runtime compatible | llama.cpp (requiere soporte de `sensenova_loop`, p. ej. fork de GuideboardLabs) |
+| Cuantizacion con imatrix | Si (tag `imatrix`) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo. Por el tamaño declarado en el nombre (9B) y la convención de la familia SenseNova, cabe suponer un transformer decoder-only denso, pero el autor no lo confirma en la model card ni en los metadatos del repositorio.
+El modelo base SenseNova-Loop-9B es un transformer de 8,96 B parámetros desarrollado por SenseTime / OpenSenseNova. La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron fases de RLHF o DPO. La model card del derivado tampoco aporta estos datos del base; únicamente confirma que la ventana de contexto es de 512K tokens y que el modelo soporta modos de respuesta directa y de razonamiento profundo mediante su plantilla de chat original.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o ajuste supervisado. El sufijo "UNCENSORED-HERETIC" indica que se ha realizado algún tipo de ajuste destinado a reducir los rechazos del modelo base, pero se desconoce el método, el volumen de datos utilizado y la procedencia de estos. No se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos) ni se referencia ningún paper.
+La innovación de este checkpoint no está en la arquitectura, sino en el post-procesado: el autor aplica una ablación dirigida de pesos sobre el checkpoint de publicación para reducir la tasa de rechazos, preservando la generación bilingüe y el razonamiento, y después cuantiza a Q4_K_M con matriz de importancia (imatrix). El resultado es un GGUF de 5,6 GB que conserva la plantilla de chat original. El autor indica que fue probado con un fork de llama.cpp de GuideboardLabs con backend HIP sobre una AMD Radeon RX 9070 XT, lo que implica que el runtime estándar de llama.cpp puede no reconocer la arquitectura `sensenova_loop` sin ese soporte específico.
 
 ## Capacidades
 
-- Generación de texto autoregresiva: capacidad básica esperable en un modelo de 9B, aunque no verificada por el autor.
-- Razonamiento y conocimiento general: no disponible, sin benchmarks ni ejemplos publicados.
-- Generación de código y matemáticas: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (el campo de idiomas del repositorio está vacío).
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Comportamiento sin filtros de seguridad: es la única característica declarada implícitamente por el nombre del modelo, sin especificación técnica de cómo se ha conseguido.
+- Generación de texto conversacional multi-turno en inglés y francés.
+- Razonamiento en modo directo y en modo de razonamiento extendido (thinking), según la plantilla de chat original.
+- Respuestas de carácter factual: el autor reporta 30/30 en un set interno de precisión factual, tanto en modo directo como de razonamiento.
+- Reducción de rechazos: ≈3 rechazos por cada 100 peticiones según la model card.
+- Ejecución local en CPU/GPU mediante llama.cpp y runtimes compatibles con GGUF.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite servirlo tras una API compatible con el formato de Hugging Face.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo puede emplearse como objeto de estudio para analizar qué tipo de contenido genera un modelo sin los filtros habituales, en un entorno controlado y con revisión ética previa.
-- Evaluación de robustez de filtros: útil para probar clasificadores de contenido y sistemas de moderación frente a respuestas que un modelo alineado rechazaría.
-- Pruebas de red teaming: sirve como generador de casos adversarios en ejercicios de seguridad ofensiva autorizados.
-- Experimentación local con GGUF: al distribuirse en formato GGUF, puede cargarse en llama.cpp u Ollama para pruebas de inferencia en hardware de consumo, siempre que se confirmen los niveles de cuantización disponibles.
-- Docencia sobre riesgos de modelos no alineados: permite ilustrar en un aula o taller las diferencias entre un modelo con RLHF y uno sin él.
-- Comparación de estilos de respuesta: útil en estudios de estilo y tono ("heretic") frente a modelos base, si se dispone de la versión original para contrastar.
-
-No se recomienda su uso en producción orientada a usuarios finales, atención al cliente, generación de código en CI/CD ni ningún escenario donde la ausencia de filtros suponga un riesgo legal o reputacional.
+- Asistente conversacional local en francés e inglés: el modelo mantiene conversaciones multi-turno con la plantilla de chat original y un contexto declarado de 512K tokens, adecuado para sesiones largas sin truncar el historial.
+- Despliegue en estación de trabajo con GPU de consumo: el GGUF Q4_K_M de 5,6 GB cabe en GPUs con 8 GB o más de VRAM, permitiendo un asistente privado sin conexión a servicios en la nube.
+- Procesamiento de documentos largos en francés: con la ventana de 512K tokens se pueden ingerir informes, contratos o transcripciones extensas y pedir resúmenes o extracción de datos, siempre que la memoria del runtime lo permita.
+- Generación de contenido sin filtros editoriales agresivos: la ablación reduce los rechazos, lo que resulta útil en tareas creativas o de análisis sensible donde un exceso de negativas interrumpe el flujo (con las advertencias de la sección de limitaciones).
+- Prototipado de razonamiento paso a paso: el modo de razonamiento extendido permite experimentar con cadenas de pensamiento en investigación sobre interpretabilidad o evaluación de modelos pequeños.
+- Evaluación comparativa de derivados no oficiales: sirve como caso de estudio de cómo una ablación de pesos afecta a la fidelidad respecto al base, con la métrica declarada de ≈97 % de fidelidad.
+- Integración en pipelines de generación de texto vía API local: el tag `endpoints_compatible` facilita montarlo detrás de un servidor compatible y conectarlo a aplicaciones existentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card solo incluye métricas internas del autor, recogidas en la siguiente tabla:
+
+| Metrica (interna, autor) | Resultado |
+|---|---|
+| Fidelidad al modelo base | ≈97 % |
+| Tasa de rechazos | ≈3 / 100 peticiones |
+| Precisión factual (set interno) | 30 / 30 (modo directo y razonamiento) |
+| Ventana de contexto | 512K tokens (base) |
+| Tamano del GGUF | 5,6 GB |
+
+Estas cifras no son comparables con benchmarks públicos y provienen de un set de prueba pequeño y no documentado en detalle.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión al no conocerse los niveles de cuantización del repositorio. Como referencia orientativa para un modelo denso de 9B: en FP16 requiere aproximadamente 18 GB de VRAM; en cuantización Q8 alrededor de 10 GB; en Q4 alrededor de 5-6 GB. Estas cifras son estimaciones genéricas, no datos del autor.
-- GPU recomendadas: no disponible. Para FP16 haría falta una GPU con 24 GB o más (RTX 3090/4090, A10G, L4, A100). Para cuantizaciones Q4 podría caber en GPUs de 8 GB.
-- ¿Cabe en GPU de consumo? Previsiblemente sí en cuantizaciones bajas (Q4/Q5) en tarjetas de 8-12 GB, pero no confirmado por el autor.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa sin conversión previa.
-- Latencia y throughput: no disponible.
+- VRAM estimada: el archivo Q4_K_M ocupa 5,6 GB; se recomienda al menos 6-8 GB de VRAM para cargar el modelo completo en GPU, dejando margen para el contexto KV.
+- GPU recomendadas: AMD Radeon RX 9070 XT (probada por el autor con HIP), NVIDIA RTX 4090, RTX 4080, RTX 3090 y GPUs con 8 GB o más de VRAM.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM en cuantización Q4_K_M; en GPUs con menos memoria puede recurrirse a offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp (se requiere soporte de `sensenova_loop`, p. ej. el fork de GuideboardLabs), servidores compatibles con endpoints GGUF y runtimes que acepten GGUF. No se documenta compatibilidad con vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: no disponibles. La model card advierte que el razonamiento puede tardar mucho tiempo y que la longitud de contexto práctica depende de la memoria y la configuración del runtime.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B-UNCENSORED-HERETIC-GGUF | 9B (inferido) | no disponible | Apache 2.0 | GGUF | Hugging Face |
-| Modelos SenseNova originales (SenseTime) | variable | no disponible | no disponible | no disponible | no disponible |
-| Otros derivados "uncensored" de ~9B en GGUF | ~7-9B | variable | variable | GGUF | Hugging Face |
+| SenseNova-Loop-9B-UNCENSORED-HERETIC (este) | ≈8,96 B | 512K (base) | GGUF Q4_K_M | Apache 2.0 | Derivado comunitario con ablación de pesos; sin benchmarks publicos |
+| sensenova/SenseNova-Loop-9B (base) | ≈8,96 B | 512K | safetensors | Apache 2.0 | Checkpoint oficial de SenseTime; sin ablación |
+| Alternativas de 9B de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
-No se dispone de datos de rendimiento del modelo analizado ni de comparaciones verificables con alternativas concretas. La comparativa se limita a parámetros y licencia.
+No se dispone de información suficiente para comparar rendimiento con otras alternativas de tamaño similar; los datos de benchmarks del base y de terceros no están incluidos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: no hay model card sustantiva, ni datos de entrenamiento, ni benchmarks, lo que impide evaluar su calidad de forma objetiva.
-- Riesgo elevado de alucinación: sin información sobre el ajuste ni sobre el modelo base, no puede estimarse la fiabilidad factual.
-- Comportamiento sin filtros: el nombre indica que se han eliminado los mecanismos de rechazo, lo que implica riesgo de generar contenido ofensivo, ilegal o dañino. No debe desplegarse de cara al público sin moderación externa.
-- Licencia Apache 2.0 declarada, pero la procedencia del modelo base no está confirmada; si el modelo original tuviera una licencia más restrictiva, la relicencia podría ser problemática.
-- Idiomas no declarados: no puede garantizarse un rendimiento aceptable en castellano.
-- Longitud de contexto desconocida: no apto para tareas que requieran ventanas largas sin verificación previa.
-- Repositorio sin descargas ni interacción (0 descargas, 0 likes en el momento de la consulta): no hay evidencia de uso ni de validación por parte de la comunidad.
-- Fecha de creación futura (2026-11-18) en los metadatos: posible inconsistencia que conviene verificar antes de confiar en el repositorio.
+- Derivado no oficial: la ablación de pesos puede alterar el comportamiento y la fiabilidad respecto al modelo base; no está validado por SenseTime / OpenSenseNova.
+- Riesgo de alucinación: inherente a modelos de este tamaño; la métrica 30/30 procede de un set interno pequeño y no debe extrapolarse.
+- Mezcla de idiomas: el autor advierte que en respuestas en francés pueden aparecer ocasionalmente caracteres de otros idiomas.
+- Latencia: el modo de razonamiento puede tardar mucho tiempo; no es adecuado para aplicaciones con requisitos estrictos de tiempo real sin ajuste del modo.
+- Contexto práctico: aunque el base declara 512K tokens, la longitud efectiva depende de la memoria disponible y de la configuración del runtime; no se garantiza en hardware de consumo.
+- Idiomas limitados: solo inglés y francés según la model card; no se documenta soporte de español.
+- Licencia: Apache 2.0 permite uso comercial, pero el derivado hereda las condiciones del base y conviene revisar la licencia del checkpoint original antes de producción.
+- Runtime: requiere un fork específico de llama.cpp con soporte de `sensenova_loop`; el llama.cpp estándar puede no cargarlo.
+- Sesgos conocidos: no documentados en la información disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/leakked/SenseNova-Loop-9B-UNCENSORED-HERETIC-GGUF
-- No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/leakked/SenseNova-Loop-9B-UNCENSORED-HERETIC-GGUF
+- Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
+- Fork de llama.cpp con soporte `sensenova_loop`: https://github.com/GuideboardLabs/llama.cpp-sensenova-loop
+- Organización OpenSenseNova: https://huggingface.co/sensenova

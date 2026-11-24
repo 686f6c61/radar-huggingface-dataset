@@ -1,109 +1,117 @@
 # FINAL-Bench/Darwin-180B-RSI
 
 ## Resumen
-Darwin-180B-RSI es un modelo de lenguaje multimodal de tipo vision-lenguaje desarrollado por FINAL-Bench (asociado al laboratorio VIDRAFT) y publicado en Hugging Face bajo licencia Qwen Community 1.0. Se construye sobre la familia Qwen 3.8, concretamente hereda las capas de expertos de Qwen3.8-Flash-Next y reconstruye las capas de atención y de experto compartido mediante un proceso de auto-mejora recursiva (recursive self-improvement, RSI) a nivel de modelo. Con 179.999.981.459 parámetros reales en safetensors (180B), es un modelo MoE disperso de gran escala orientado a razonamiento experto, matemáticas, ciencia, derecho y parsing de documentos.
+Darwin-180B-RSI es un modelo multimodal de tipo image-text-to-text desarrollado por FINAL-Bench (con VIDRAFT como entidad asociada en la documentación) y construido sobre la arquitectura Qwen3.8. Se trata de un transformer de mezcla de expertos (MoE) disperso con atención híbrida (atención lineal combinada con atención completa) y una longitud de contexto de 262.144 tokens. Con 179.999.981.459 parámetros totales declarados en los safetensors, se posiciona en la categoría de modelos de gran escala orientados a razonamiento experto, matemáticas, ciencia, derecho y comprensión documental multimodal.
 
-El modelo destaca por combinar una ventana de contexto de 262.000 tokens con atención híbrida (atención lineal más atención completa), lo que permite razonamiento de cadena de pensamiento (thinking) extendido hasta 131K tokens en las evaluaciones. Incorpora además una innovación propietaria denominada Zero-Token-Confidence (ZTC), orientada a la estimación de confianza y detección de alucinaciones, y un modo de pensamiento explícito para tareas STEM y legales.
+La propuesta diferencial del modelo es el entrenamiento mediante "recursive self-improvement" (RSI) a nivel de modelo: según la model card, hereda las capas de expertos de Qwen3.8-Flash-Next y reconstruye únicamente las capas de atención y de expertos compartidos mediante un proceso iterativo de auto-mejora. Incorpora además un mecanismo denominado ZTC (zero-token-confidence) para estimación de confianza y detección de alucinaciones, y un modo de razonamiento explícito ("thinking") con cadenas de pensamiento de hasta 131K tokens.
 
-Su relevancia actual radica en los resultados declarados por el autor: primer modelo de pesos abiertos en razonamiento matemático y científico en el ranking SuperCLUE de noviembre de 2026 (73,68), por delante de DeepSeek-V4.1-Flash y Gemini-4-Argon, y con puntuaciones muy altas en GPQA Diamond (94,44), MMLU-Pro (88,12) y AIME 2026 (100,0 con voto mayoritario). Es el único modelo coreano del tablero y se distribuye con soporte para vLLM y API compatible con OpenAI.
+Su relevancia actual radica en los resultados declarados en el ranking SuperCLUE de noviembre de 2026, donde la variante Darwin-180B-RSI-R3 obtiene 73,68 en razonamiento matemático y científico, situándose como el primer modelo de pesos abiertos de la tabla y solo por detrás de GPT-6.1-Sol. Es, además, el único modelo coreano presente en dicho ranking, con soporte declarado de inglés, coreano, chino, japonés y otros idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE disperso con atención híbrida (lineal + completa); vision-lenguaje |
+| Arquitectura | Transformer MoE disperso con atención híbrida (lineal + completa), basado en Qwen3.8 |
 | Parametros totales | 179.999.981.459 (180B) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262.000 tokens (262K) |
+| Longitud de contexto | 262.144 tokens (262K) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, ko, zh, ja, multilingual |
-| Licencia | qwen-community-1.0 (license: other) |
-| Formato de pesos | safetensors (repo de 360 GB) |
+| Licencia | qwen-community-1.0 (license: other, license_name: qwen-community-1.0) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
-La arquitectura es un transformer de mezcla de expertos (MoE) disperso con atención híbrida: combina capas de atención lineal con capas de atención completa, lo que habilita el contexto largo de 262K tokens con un coste computacional reducido en las capas lineales. El modelo es multimodal (pipeline image-text-to-text), con capacidades de visión integradas para tareas como MMMU-Pro y parsing de documentos. Según la model card, las capas de expertos se heredan de Qwen3.8-Flash-Next y solo se reconstruyen las capas de atención y de experto compartido mediante auto-mejora recursiva (RSI) a nivel de modelo, un enfoque que el autor denomina model-level RSI.
+El modelo emplea una arquitectura de mezcla de expertos dispersa (sparse MoE) sobre una base Qwen3.8, con atención híbrida que combina mecanismos de atención lineal y atención completa para sostener ventanas de contexto de 262K tokens con un coste computacional controlado. Según la documentación del autor, las capas de expertos provienen de Qwen3.8-Flash-Next, mientras que las capas de atención y los expertos compartidos se reconstruyen mediante un proceso de recursive self-improvement (RSI) a nivel de modelo, apoyado en un pipeline interno denominado VIDRAFT.
 
-No se dispone de datos sobre el número exacto de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO. La model card menciona el modo thinking (cadena de pensamiento) con presupuestos de hasta 131K tokens en evaluación, y la innovación Zero-Token-Confidence (ZTC) para estimación de confianza y detección de alucinaciones. Se referencia el paper arXiv:2605.14386 y arXiv:2609.20269, aunque su contenido no está disponible en la información proporcionada.
+El entrenamiento incluye un modo de razonamiento con cadenas de pensamiento extensas (hasta 131K tokens en las evaluaciones declaradas) y un mecanismo ZTC (zero-token-confidence) orientado a la estimación de confianza y la detección de alucinaciones. No se especifican en la información disponible el número exacto de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco se detalla el número de expertos ni cuántos se activan por token.
 
 ## Capacidades
-- Generación de texto y razonamiento experto en matemáticas, ciencia y STEM, con modo thinking y cadenas de pensamiento de hasta 131K tokens.
-- Razonamiento multimodal: comprensión de imágenes y texto (image-text-to-text), evaluado en MMMU-Pro.
-- Razonamiento legal: resolución de preguntas de opción múltiple y preguntas abiertas (LEXam, LEXam-hard).
-- Parsing de documentos multilingüe y OCR, con puntuación en MDPBench.
-- Salida estructurada y cumplimiento de formato (IFStruct v1.0), con soporte para tool calling y function calling según los tags del modelo.
-- Capacidades multilingües en inglés, coreano, chino, japonés y otros idiomas.
-- Estimación de confianza y detección de alucinaciones mediante Zero-Token-Confidence (ZTC).
-- Soporte de agentes y razonamiento multi-paso a través del modo thinking y la ventana de 262K tokens.
-- Despliegue compatible con vLLM y API compatible con OpenAI.
+- Generación de texto y razonamiento experto en matemáticas, ciencia y disciplinas STEM, con modo "thinking" y cadenas de pensamiento largas.
+- Razonamiento multimodal image-text-to-text: comprensión de imágenes y documentos, con resultados declarados en MMMU-Pro (visión).
+- Parsing de documentos y OCR multilingüe, evaluado en MDPBench.
+- Cumplimiento de salida estructurada (structured output), evaluado en IFStruct v1.0 con una tasa de aprobación declarada del 98,95 %.
+- Razonamiento jurídico, tanto en formato de opción múltiple (LEXam) como en preguntas abiertas (LEXam-hard).
+- Capacidades multilingües declaradas en inglés, coreano, chino, japonés y otros idiomas.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explícitamente, aunque el modo thinking y la estimación de confianza ZTC son compatibles con flujos agénticos.
+- Estimación de confianza y detección de alucinaciones mediante el mecanismo ZTC.
+- Despliegue compatible con vLLM y API compatible con OpenAI, según los tags del repositorio.
 
 ## Casos de uso
-- Razonamiento científico y matemático asistido: el modelo puede resolver problemas de nivel graduado y competición (GPQA Diamond, AIME) con cadenas de pensamiento largas, útil en herramientas de investigación y tutoría avanzada.
-- Revisión legal y análisis de contratos: con contexto de 262K tokens puede procesar expedientes completos y responder preguntas de opción múltiple o abiertas, como demuestra su rendimiento en LEXam.
-- Parsing y extracción de documentos multilingües: adecuado para pipelines de OCR y digitalización de documentos en inglés, coreano, chino y japonés, con salida estructurada verificable.
-- Generación de código y salida estructurada en producción: su alta tasa de cumplimiento en IFStruct (98,95) y el soporte de tool calling lo hacen apto para integraciones en pipelines de CI/CD y agentes automatizados.
-- Asistencia multimodal en análisis de imágenes técnicas: interpretación de diagramas, gráficos y capturas en entornos de ingeniería o educación, gracias a sus capacidades vision-language.
-- Detección de alucinaciones en sistemas críticos: el mecanismo ZTC permite estimar confianza en las respuestas y activar revisiones humanas en dominios de alto riesgo.
-- Agentes autónomos multi-paso: la ventana de 262K tokens y el modo thinking permiten mantener estado y razonamiento prolongado en flujos de trabajo complejos.
+- Razonamiento científico y matemático asistido: el modelo puede resolver problemas de nivel graduado y competición con cadenas de pensamiento de hasta 131K tokens, adecuado para herramientas de investigación que requieran verificación paso a paso.
+- Análisis jurídico documental: con resultados declarados en LEXam y LEXam-hard, puede emplearse para responder preguntas de opción múltiple sobre normativa y para borradores de análisis jurídico abierto, siempre con revisión humana.
+- Parsing y extracción de documentos multilingües: su evaluación en MDPBench y su contexto de 262K tokens permiten procesar contratos, informes o expedientes completos en varios idiomas en una sola pasada.
+- Generación de salidas estructuradas en pipelines: con una tasa de aprobación declarada del 98,95 % en IFStruct, es apto para extracción de datos, rellenado de formularios y generación de JSON validable en sistemas de integración.
+- Asistencia multimodal sobre imágenes técnicas: interpretación de diagramas, gráficos y capturas para tareas de soporte técnico o análisis de documentación visual, apoyándose en sus resultados en MMMU-Pro.
+- Detección de respuestas de baja confianza: el mecanismo ZTC puede integrarse en sistemas de control de calidad para marcar respuestas potencialmente alucinadas antes de mostrarlas al usuario final.
+- Despliegue en infraestructura propia con vLLM: la compatibilidad declarada con vLLM y API compatible con OpenAI facilita su integración como backend en aplicaciones existentes.
 
 ## Benchmarks y rendimiento
-Datos declarados por el autor del modelo (no verificados de forma independiente):
 
-| Benchmark | Metrica | Resultado |
+| Benchmark | Métrica | Resultado |
 |---|---|---|
-| GPQA Diamond | Accuracy (voto mayoritario, hasta 16 muestras, thinking 131K) | 94,44 |
-| MMLU-Pro | Accuracy (muestra única, thinking 131K) | 88,12 |
-| MMMU-Pro (vision) | Accuracy (voto mayoritario, 3 muestras, thinking 131K) | 79,48 |
-| LEXam (MCQ, 4 opciones) | Accuracy (voto mayoritario, 4 muestras, thinking 32K) | 68,94 |
-| LEXam-hard | Judge score (DeepSeek-R1-0528, muestra única) | 45,72 |
-| MDPBench (public) | Overall (scoring oficial, thinking on) | 83,65 |
-| IFStruct v1.0 | Pass rate (harness oficial, temperatura 0, thinking on) | 98,95 |
-| AIME 2026 | Accuracy (voto mayoritario, 16 muestras, thinking 131K) | 100,0 |
-| AIME 2026 | Accuracy media sobre 16 muestras | 98,75 |
-| HMMT Feb 2026 | Accuracy (voto mayoritario, 16 muestras, thinking 131K) | 100,0 |
-| HMMT Feb 2026 | Accuracy media sobre 16 muestras | 96,59 |
+| GPQA Diamond | Accuracy (majority vote, hasta 16 muestras, 131K thinking) | 94,44 |
+| MMLU-Pro | Accuracy (single sample, 131K thinking) | 88,12 |
+| MMMU-Pro (vision) | Accuracy (majority vote, 3 muestras, 131K thinking) | 79,48 |
+| LEXam (MCQ, 4 opciones) | Accuracy (majority vote, 4 muestras, 32K thinking) | 68,94 |
+| LEXam-hard | Judge score (DeepSeek-R1-0528, single sample) | 45,72 |
+| MDPBench (public) | Overall (official scoring, thinking on) | 83,65 |
+| IFStruct v1.0 | Pass rate (official harness, temperature 0, thinking on) | 98,95 |
+| AIME 2026 | Accuracy (majority vote, 16 muestras, 131K thinking) | 100,00 |
+| AIME 2026 | Mean accuracy over 16 muestras | 98,75 |
+| HMMT Feb 2026 | Accuracy (majority vote, 16 muestras, 131K thinking) | 100,00 |
+| HMMT Feb 2026 | Mean accuracy over 16 muestras | 96,59 |
 
-En el ranking SuperCLUE de noviembre de 2026, Darwin-180B-RSI-R3 obtuvo 73,68 en razonamiento matemático y científico, primer puesto entre modelos de pesos abiertos y segundo global entre 19 modelos, por detrás de GPT-6.1-Sol (76,32) y por delante de Gemini-4-Argon (71,05), DeepSeek-V4.1-Flash (71,05), Grok-4.7 (68,42) y Qwen3.8-Max (68,42). En el índice global de inteligencia quedó 9.º de 19 y 5.º entre pesos abiertos, con 43,08 frente a los 39,81 de su modelo padre Qwen3.8-Flash.
+Resultados de SuperCLUE noviembre 2026 (índice de razonamiento matemático y científico):
+
+| Modelo | Desarrollador | Pesos abiertos | Razonamiento matemático y científico |
+|---|---|---|---|
+| GPT-6.1-Sol | OpenAI | No | 76,32 |
+| Darwin-180B-RSI-R3 | VIDRAFT | Sí | 73,68 |
+| Gemini-4-Argon | Google | No | 71,05 |
+| DeepSeek-V4.1-Flash | DeepSeek | Sí | 71,05 |
+| Grok-4.7 | xAI | No | 68,42 |
+| Qwen3.8-Max-0902 | Alibaba | No | 68,42 |
+| GLM-5.3 | Zhipu AI | Sí | 65,79 |
+| Kimi-K3.1-Pro | Moonshot | Sí | 63,16 |
+| Qwen3.8-Flash (padre de Darwin-180B) | Alibaba | Sí | 57,89 |
+
+Todos los resultados de benchmarks son datos declarados por el autor del modelo y no han sido verificados de forma independiente (verified: false en el model-index).
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: no disponible de forma oficial; con 180B parámetros en safetensors el peso completo en FP16 requiere aproximadamente 360 GB de memoria, por lo que la inferencia en precisión completa exige múltiples GPU.
-- GPU recomendadas: el tag del modelo menciona B200; para despliegue en precisión completa se necesitan configuraciones multi-GPU de clase H100/B200. No hay datos oficiales sobre cuantizaciones para GPU de consumo.
-- ¿Cabe en GPU de consumo? No en precisión completa; no se dispone de información sobre versiones cuantizadas (GGUF, AWQ, GPTQ) que permitan ejecución en RTX 4090 u otras GPU de consumo.
-- Opciones de despliegue: vLLM y API compatible con OpenAI según los tags; no se confirma soporte de llama.cpp, Ollama o TGI.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 180B parámetros en safetensors (360 GB de repositorio), la inferencia en precisión completa requiere múltiples aceleradores de gran memoria; en cuantizaciones de 8 bits o 4 bits el requisito se reduce, pero no se han publicado cifras oficiales.
+- GPU recomendadas: el tag del repositorio menciona B200; por tamaño, se requieren configuraciones multi-GPU de clase A100/H100/B200. No se especifican configuraciones mínimas validadas.
+- ¿Cabe en GPU de consumo? No de forma realista para el modelo completo con 180B parámetros; se necesitaría cuantización agresiva y múltiples GPU, sin datos oficiales que lo confirmen.
+- Opciones de despliegue: vLLM (declarado en los tags) y endpoint compatible con OpenAI; soporte de llama.cpp, Ollama o TGI no confirmado en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Desarrollador | Pesos abiertos | Razonamiento mat. y ciencia (SuperCLUE nov 2026) | Contexto | Licencia |
+| Modelo | Parámetros | Contexto | Pesos abiertos | Licencia | Razonamiento math/science (SuperCLUE nov 2026) |
 |---|---|---|---|---|---|
-| Darwin-180B-RSI-R3 | VIDRAFT / FINAL-Bench | Si | 73,68 | 262K | qwen-community-1.0 |
-| Qwen3.8-Flash (padre) | Alibaba | Si | 57,89 | no disponible | no disponible |
-| DeepSeek-V4.1-Flash | DeepSeek | Si | 71,05 | no disponible | no disponible |
-| GLM-5.3 | Zhipu AI | Si | 65,79 | no disponible | no disponible |
-| Kimi-K3.1-Pro | Moonshot | Si | 63,16 | no disponible | no disponible |
-| GPT-6.1-Sol | OpenAI | No | 76,32 | no disponible | propietaria |
-| Gemini-4-Argon | Google | No | 71,05 | no disponible | propietaria |
+| Darwin-180B-RSI | 180B (MoE) | 262K | Sí | qwen-community-1.0 | 73,68 |
+| Qwen3.8-Flash (padre) | no disponible | no disponible | Sí | no disponible | 57,89 |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | Sí | no disponible | 71,05 |
+| GLM-5.3 | no disponible | no disponible | Sí | no disponible | 65,79 |
+| Kimi-K3.1-Pro | no disponible | no disponible | Sí | no disponible | 63,16 |
+
+La comparación se limita a los datos publicados en la model card; no se dispone de parámetros, contexto ni licencia de los modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
-- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (verified: false en el model-index).
-- No se dispone de información sobre sesgos conocidos, datos de entrenamiento ni procesos de alineación (RLHF/DPO).
-- Riesgo de alucinación inherente a los modelos generativos; el mecanismo ZTC mitiga pero no elimina el problema.
-- El soporte de idiomas se limita a en, ko, zh, ja y multilingüe; el rendimiento en castellano no está documentado.
-- La licencia qwen-community-1.0 impone restricciones que deben revisarse antes de uso comercial; el modelo se distribuye como license: other.
-- El tamaño de 180B parámetros y el repo de 360 GB dificultan el despliegue en infraestructura modesta; no hay cuantizaciones oficiales publicadas.
-- El contexto de 262K tokens puede degradar la calidad en los extremos de la ventana; no hay datos oficiales sobre rendimiento por posición.
-- El origen de los datos de SuperCLUE corresponde a capturas de pantalla de noviembre de 2026 y no a una verificación reproducible.
+- Todos los resultados de benchmarks son declarados por el autor y figuran como no verificados; deben interpretarse con cautela hasta que existan evaluaciones independientes.
+- El uso de majority vote con hasta 16 muestras y 131K tokens de thinking infla los resultados respecto a una inferencia de una sola pasada; el rendimiento en producción con muestreo único será inferior (por ejemplo, 98,75 de media frente a 100,00 en AIME 2026).
+- No se detalla la composición del dataset de entrenamiento ni si hubo RLHF/DPO, lo que dificulta evaluar sesgos y alineación.
+- Riesgo de alucinación inherente a los modelos de razonamiento largo; el mecanismo ZTC se presenta como mitigación, pero no hay datos públicos de su eficacia.
+- Cobertura idiomática declarada limitada a en, ko, zh, ja y multilingüe; el rendimiento en castellano no está documentado.
+- Licencia qwen-community-1.0 (license: other): es necesario revisar los términos del archivo LICENSE del repositorio antes de un uso comercial, ya que las condiciones no se detallan en la información disponible.
+- El tamaño de 180B parámetros implica costes de despliegue elevados y requisitos multi-GPU; no es adecuado para entornos con recursos limitados.
+- El proceso de recursive self-improvement y la herencia de capas de Qwen3.8-Flash-Next no están descritos con detalle técnico verificable en la información disponible.
 
 ## Enlaces
 - Hugging Face: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI
-- SuperCLUE (ranking general, noviembre 2026): https://www.superclueai.com/homepage
-- Paper arXiv:2605.14386: https://arxiv.org/abs/2605.14386
-- Paper arXiv:2609.20269: https://arxiv.org/abs/2609.20269
-- Dataset GPQA Diamond: https://huggingface.co/datasets/Idavidrein/gpqa
-- Dataset MMLU-Pro: https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
-- Dataset MMMU-Pro: https://huggingface.co/datasets/MMMU/MMMU_Pro
-- Dataset LEXam: https://huggingface.co/datasets/LEXam-Benchmark/LEXam
-- Dataset LEXam-hard: https://huggingface.co/datasets/joelniklaus/LEXam-hard
-- Dataset MDPBench: https://huggingface.co/datasets/Delores-Lin/MDPBench
-- Dataset IFStruct v1.0: https://huggingface.co/datasets/LiquidAI/ifstruct-v1.0
-- Dataset AIME 2026: https://huggingface.co/datasets/MathArena/aime_2026
-- Dataset HMMT Feb 2026: https://huggingface.co/datasets/MathArena/hmmt_feb_2026
+- Licencia: https://huggingface.co/FINAL-Bench/Darwin-180B-RSI/blob/main/LICENSE
+- SuperCLUE: https://www.superclueai.com/homepage
+- Paper referenciado (arXiv:2605.14386): https://arxiv.org/abs/2605.14386
+- Paper referenciado (arXiv:2609.20269): https://arxiv.org/abs/2609.20269
+- Assets de prensa (banner SuperCLUE): https://huggingface.co/datasets/VIDraft/press-assets/resolve/main/press/superclue_banner_darwin_2026-11.png
+- Assets de prensa (índice de inteligencia): https://huggingface.co/datasets/VIDraft/press-assets/resolve/main/press/superclue_intelligence_index_2026-11.png

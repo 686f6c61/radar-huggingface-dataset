@@ -2,121 +2,115 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje autónomo, sino una cabeza de predicción multi-token (MTP) concebida como "sidecar" o borrador (*drafter*) para decodificación especulativa sobre el modelo cuantizado `caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed`. Lo publica el usuario caslca el 10 de septiembre de 2026 bajo licencia Apache-2.0, en formato MLX safetensors, y su versión reparada que aquí se documenta se distribuye con 424.699.392 parámetros (unos 0,42 B) en un repositorio de 0,3 GB. La model card es explícita al respecto: es un predictor, no un modelo de lenguaje independiente.
+Este repositorio no contiene un modelo de chat autónomo, sino un **predictor MTP (multi-token prediction) externo** para el modelo `caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed`, un Qwen de 27B cuantizado a aproximadamente 4,5 bits por peso. El drafter se usa junto al modelo objetivo para acelerar la decodificación especulativa: propone varios tokens por paso y el modelo grande los verifica, reduciendo el coste por token generado. El checkpoint tiene 424.699.392 parámetros (~0,42B), un tamaño coherente con una cabeza predictora ligera en lugar de un transformer completo.
 
-El problema que resuelve es concreto: acelerar la decodificación del modelo destino sin reentrenarlo. Durante la generación, la cabeza MTP propone varios tokens candidatos por paso que el modelo destino verifica en paralelo; cuando la propuesta se acepta, se avanza más de un token por iteración. En las mediciones publicadas sobre un Apple M5 Max de 64 GB con MLX (`mlx-vlm` revisión 420c01e1 y `mlx-serve` revisión 0ccc684), la versión reparada alcanza 1,836x de velocidad mediana de decodificación frente a la decodificación especulativa desactivada, con una tasa de aceptación de borradores del 84,5 % (3843 de 4548) y un tiempo de generación agregado de 1,123 h frente a 2,691 h.
+El autor, `caslca`, publica el artefacto con licencia Apache 2.0 y formato MLX/safetensors, orientado a ejecución en Apple Silicon (los experimentos documentados se hicieron en un M5 Max de 64 GB con MLX y Metal). La model card es inusualmente detallada: documenta la reparación de siete vectores de normalización (se les suma 1.0 con redondeo BF16), los hashes SHA256 de los ficheros original y reparado, y campañas de evaluación ON/OFF del predictor con intervalos pareados.
 
-Su relevancia actual es doble. Por un lado, documenta una reparación reproducible de un sidecar defectuoso: siete vectores de normalización conservaban un desplazamiento de convención que solo se corrige cuando las claves mantienen el prefijo `mtp.`, y la corrección se aplicó sumando 1,0 en BF16 con redondeo a par más cercano, dejando los 22 tensores de matriz/cuantización intactos. Por otro, aporta evidencia emparejada de que la aceleración no degrada la calidad de código de forma apreciable, con una diferencia combinada de −0,33 pp en HumanEvalPlus y MBPPPlus dentro del margen de equivalencia predeclarado de ±5 pp.
+Su relevancia es práctica: los autores de despliegues locales en Mac necesitan acelerar modelos de 27B cuantizados sin cambiar la calidad de salida. Este drafter reporta una relación de tiempo total de 0,417 (ON frente a OFF) en una pantalla de tres tareas, con una tasa de aceptación del 84,5%, aunque el propio autor advierte que la ganancia no es aceleración pura de kernel y que las pruebas son acotadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Cabeza MTP (multi-token prediction) para decodificación especulativa; etiqueta `qwen3_5_mtp`. Detalle interno de capas no disponible |
-| Parametros totales | 424.699.392 (≈ 0,42 B), según pesos safetensors |
-| Parametros activos | no aplica (arquitectura densa, no es MoE) |
-| Longitud de contexto | no disponible (la hereda del modelo destino; no se publica en este repositorio) |
-| Tipos de cuantizacion | Repositorio etiquetado como `4-bit`; el modelo base usa cuantización OptiQ de 4,5 bpw. El sidecar conserva 22 tensores de matriz/cuantización sin modificar y 7 vectores de normalización corregidos en BF16. Detalle por tensor no disponible |
+| Arquitectura | Predictor MTP (multi-token prediction) para decodificación especulativa; tag `qwen3_5_mtp` |
+| Parametros totales | 424.699.392 (~0,42B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible como spec propia; las pruebas del autor llegan a 128K y 156K con el modelo objetivo |
+| Tipos de cuantizacion | 4-bit (tag `4-bit`); el modelo base asociado es una cuantización mixta de ~4,5 bpw |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería `mlx`) |
-| Modelo destino requerido | caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed |
-| Tensores del sidecar | 29 payloads: 22 de matriz/cuantización + 7 de normalización reparados |
+| Modelo base | caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed |
 | Tamaño del repositorio | 0,3 GB |
-| Descargas / likes | 0 / 0 (a fecha de la información) |
-| Versión de pesos original (SHA256) | 26967a026f91d3bc1ce440584e931e41311e224c9467c376e5b06c45a402f968 |
-| Versión reparada (SHA256) | ff4d5cfc53e8de65afc6bf2b0734ede4b32c7a4b9e7ac5d5b047413630cc0353 |
+| Revision publicada | `74bb2bc1feb60dbb8302bc8e6021d0be01f8f18d` (2026-09-10) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es una cabeza MTP de tipo borrador (*drafter*) asociada al modelo cuantizado Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed. Su función es proponer secuencias cortas de tokens candidatos que el modelo destino valida en un único paso de verificación; el mecanismo encaja en el marco de decodificación especulativa y depende de una implementación MTP compatible en el servidor de inferencia. Con 424,7 M de parámetros y 0,3 GB de repositorio, su huella es pequeña frente a los aproximadamente 27 B del modelo destino.
+El artefacto es una cabeza MTP que predice varios tokens futuros para alimentar un bucle de decodificación especulativa sobre el modelo Qwen de 27B cuantizado. No se ha realizado entrenamiento sobre el tronco del modelo objetivo ni modificación de sus pesos, según indica el autor. La intervención documentada es una reparación de extracción: el checkpoint original conservaba siete offsets de normalización de Hugging Face y la extracción reparada les suma 1.0 con redondeo BF16, dejando 22 tensores de matriz/cuantización sin cambios. Los 29 payloads reparados se validaron contra un control funcional independiente.
 
-No hubo entrenamiento nuevo ni modificación de los pesos del modelo destino: la cabeza original se distribuyó junto al checkpoint y este repositorio es una reparación. El fallo consistía en siete desplazamientos de normalización heredados de las convenciones de Hugging Face; su cargador solo convierte esos desplazamientos cuando las claves conservan el prefijo `mtp.`, de modo que se reparó la convención sumando 1,0 en BF16 con redondeo a par más cercano sobre los siete vectores de normalización. Los 22 tensores de matriz y cuantización quedaron sin tocar, y los 29 payloads resultantes coinciden con el sidecar del modelo base que funcionaba de forma independiente. No se documentan datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF o DPO.
+El autor publica los hashes de los ficheros de tensores (original `26967a02...f968`, reparado `ff4d5cfc...0353`) y advierte explícitamente de no sustituir el `optiq/mtp.safetensors` empaquetado original por este directorio reparado. No se detallan datos de entrenamiento (número de tokens, composición del dataset, RLHF/DPO) porque el repositorio no entrena un modelo generativo, sino que distribuye un predictor derivado.
 
 ## Capacidades
 
-- Predicción de tokens borrador para decodificación especulativa sobre el modelo destino indicado; no es un generador de texto autónomo.
-- Aceleración de la decodificación: 1,836x de velocidad mediana en un cribado de tres tareas frente a la decodificación especulativa desactivada, en Apple M5 Max de 64 GB con MLX.
-- Tasa de aceptación de borradores del 84,5 % (3843 de 4548 propuestas) en la configuración medida.
-- Reducción del tiempo de generación agregado en la campaña combinada: 1,123 h con la cabeza activada frente a 2,691 h desactivada (ratio emparejado 0,417; IC del 95 % [0,238; 0,603]).
-- Conservación de la calidad en tareas de código verificadas por ejecución (HumanEvalPlus y MBPPPlus), con todos los ítems convergiendo.
-- Integración con el ecosistema MLX: `mlx-vlm` y `mlx-serve` en las revisiones documentadas.
-- No consta soporte de *tool calling*, *function calling*, agentes, multilingüismo, visión, audio ni modo de razonamiento propio: esas capacidades pertenecen al modelo destino, no al borrador.
+- Predicción especulativa de múltiples tokens para acelerar la generación del modelo objetivo de 27B.
+- Integración con runtimes MLX: las pruebas citan MLX-VLM `420c01e1` y MLX-Serve `0ccc684` sobre MLX/Metal 0.32.2.
+- Soporte de decodificación con `native16` KV y retirada de caché de sesión inactiva en el runtime del autor.
+- No es un modelo de chat autónomo: no genera respuestas por sí solo ni debe usarse como modelo independiente.
+- No se documentan capacidades propias de tool calling, agentes, visión o audio; las pruebas de visión (20 imágenes) y de razonamiento en contexto largo (128K, 156K) evalúan el sistema completo con el modelo objetivo, no al drafter de forma aislada.
 
 ## Casos de uso
 
-- Aceleración de asistentes de código autohospedados en Apple Silicon: desplegando el sidecar junto al modelo destino bajo `mlx-serve`, la mediana de velocidad de decodificación se multiplica por 1,836, lo que se traduce en respuestas completas en menos de la mitad de tiempo en la campaña medida.
-- Reducción de coste en lotes de generación larga: el ratio de tiempo de reloj emparejado de 0,417 convierte trabajos de horas en trabajos de decenas de minutos, útil para regenerar documentación o parches sobre grandes bases de código.
-- Puertas de calidad en CI/CD: dado que la decodificación especulativa puede alterar las salidas, el modelo encaja en pipelines que ejecutan HumanEvalPlus o MBPPPlus como prueba de regresión antes de promover una revisión del servidor de inferencia.
-- Investigación en decodificación especulativa: el repositorio ofrece un caso controlado con hashes de origen y destino, tasas de aceptación y presupuestos de tokens, ideal para comparar cabezas MTP frente a otras estrategias de borrador.
-- Recuperación de sidecars defectuosos: sirve como referencia reproducible para diagnosticar desplazamientos de normalización en cabezas MTP distribuidas sin el prefijo `mtp.` en las claves.
-- Evaluación comparativa de configuraciones de servidor: permite medir el efecto de cambios en el *target temperature* (0,5 en las pruebas) y en el esfuerzo de razonamiento sobre la aceptación del borrador.
-- Prototipado en estación de trabajo de un solo equipo: al requerir únicamente memoria unificada de 64 GB y no una GPU dedicada, permite validar ideas de generación de código sin clúster.
+- Aceleración de inferencia local en Apple Silicon: desplegar el drafter junto al Qwen de 27B cuantizado en MLX para reducir el tiempo de pared en generación de código y matemáticas, aprovechando la tasa de aceptación reportada del 84,5% en la pantalla de tres tareas.
+- Asistencia a programación agéntica: el autor lo marca como primera elección aprobada por el operador para coding agéntico (B1/C1) a temperatura 0,5 y esfuerzo de razonamiento medio, con MTP reparado activado.
+- Investigación y asistencia de diseño: mismo perfil de uso aprobado por el operador, adecuado para sesiones de razonamiento medio con contexto largo.
+- Evaluación de decodificación especulativa: servir como componente de referencia para medir aceptación, ratios de decodificación y latencia frente a configuraciones OFF en pipelines de investigación.
+- Procesamiento de contexto largo en local: las pruebas de recuperación (25/25 prompts hasta 128K) y de seguimiento variable en cadena-4 (39/39 hasta 156K) indican viabilidad en flujos de documento largo, siempre con las cautelas del autor sobre alcance.
+- Verificación de pipelines de serving: usar los hashes y la comparación con control independiente para validar extracciones de cabezas MTP en despliegues propios.
 
 ## Benchmarks y rendimiento
 
-Calidad de código en tareas verificadas por ejecución (evaluador nativo ARM64 de EvalPlus, 50 tareas × 3 muestras por brazo, temperatura del destino 0,5, esfuerzo de razonamiento medio; 600 respuestas convergidas):
+Resultados publicados por el autor. La configuración M36 es TQ4 histórica, esfuerzo de razonamiento medio, temperatura 0,5, semillas pareadas, M5 Max 64 GB; EvalPlus nativo ARM64 para código.
 
-| Dataset | Tareas × muestras por brazo | Estricto OFF | Estricto reparado ON | ON − OFF, IC emparejado del 95 % |
+| Dataset | Tareas x tiradas por estado | OFF estricto | ON reparado estricto | ON−OFF, intervalo pareado 95% |
 |---|---:|---:|---:|---|
-| HumanEvalPlus | 50 × 3 | 92,0 % | 90,67 % | −1,33 pp [−5,33; +2,0] |
-| MBPPPlus | 50 × 3 | 84,67 % | 85,33 % | +0,67 pp [−2,0; +4,67] |
-| Combinado, peso de ítem igual | 100 × 3 | 88,33 % | 88,0 % | −0,33 pp [−3,0; +2,33] |
+| HumanEvalPlus | 50x3 | 92,0% | 90,67% | −1,33 pp [−5,33, +2,0] |
+| MBPPPlus | 50x3 | 84,67% | 85,33% | +0,67 pp [−2,0, +4,67] |
+| Pooled diagnóstico | 100x3 | 88,33% | 88,0% | −0,33 pp [−3,0, +2,33] |
 
-Velocidad en el cribado de tres tareas:
+Pantalla de decodificación de tres tareas: 1,836x de ratio, aceptación 84,5%; generación completa 1,123 h ON frente a 2,691 h OFF, ratio de pared 0,417 [0,238, 0,603], ratio de tokens 0,778 [0,463, 1,082]. El autor señala que las longitudes de salida cambian y hay una cola larga en OFF, por lo que no es aceleración pura de kernel.
 
-| Metrica | Valor |
-|---|---|
-| Velocidad mediana de decodificación, reparado ON frente a OFF | 1,836x |
-| Tasa de aceptación de borradores | 3843 / 4548 (84,5 %) |
-| Respuestas convergentes en el cribado | 6 de 6 |
-| Tiempo de generación combinado ON | 1,123 h |
-| Tiempo de generación combinado OFF | 2,691 h |
-| Ratio de tiempo de reloj emparejado | 0,417; IC del 95 % [0,238; 0,603] |
-| Ratio de tokens de salida | 0,778; IC del 95 % [0,463; 1,082] |
-| Diferencia mínima detectable, por dataset | 17,7 pp |
-| Diferencia mínima detectable, agrupada | 12,5 pp |
+Certificación M40 (2026-09-13, TQ4 histórica, cap 262144, presupuesto de pensamiento 81920):
+
+| Eje y tamaño | OFF | ON | Interpretación pareada |
+|---|---:|---:|---|
+| Math500, 100 | 97% | 99% | +2 pp [0, +5]; PASS del operador, helper bruto no concluyente en el borde |
+| Prosa de investigación, 40 pares | — | — | Preferencia OFF 0,40 [0,29, 0,53], Holm p=0,099; sin potencia |
+| Cadena-4 en 128K, 3 tiradas | 3/3 | 3/3 | Sin hits de presupuesto |
+| Puerta de visión, 20 fotos | 20/20 | 20/20 | Puerta limitada de descripción de fotos |
+
+Pantalla de regresión C84 (2026-09-14, cinco tareas congeladas por eje, 20 peticiones por estado):
+
+| Eje | Puntuación AFTER | Tiempo de tarea AFTER/BEFORE [95%] | Ratio de decodificación por petición [95%] |
+|---|---:|---:|---:|
+| math500 | 5/5 | 1,022 [1,007, 1,031] | 0,986 [0,974, 0,996] |
+| humanevalplus | 4/5 | 1,012 [1,008, 1,022] | 0,995 [0,977, 1,016] |
+| mbppplus | 5/5 | 1,025 [1,014, 1,036] | 0,977 [0,962, 0,991] |
+| cjudge | 5 empates revisados | 1,018 [1,008, 1,031] | 0,983 [0,970, 0,994] |
 
 ## Requisitos de hardware
 
-- VRAM/memoria para el sidecar: aproximadamente 0,3 GB según el tamaño del repositorio; se carga junto al modelo destino.
-- Memoria para el modelo destino: no confirmada por el autor. A partir del nombre del modelo base (27 B a 4,5 bpw) se puede estimar del orden de 15 GB de pesos más el sobrecoste de caché KV y activaciones; tómese como estimación derivada, no como dato publicado.
-- Hardware de la evidencia: Apple M5 Max con 64 GB de memoria unificada, con las revisiones `mlx-vlm` 420c01e1 y `mlx-serve` 0ccc684.
-- GPU dedicadas (A100, H100, RTX 4090 y similares): no disponibles para este artefacto, que se distribuye en formato MLX y depende de implementación MTP compatible.
-- Opciones de despliegue: `mlx-vlm` y `mlx-serve` en el ecosistema MLX. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y rendimiento: 1,836x de velocidad mediana de decodificación y ratio de tiempo de reloj de 0,417 en la campaña citada; no se publican valores absolutos de tokens por segundo ni latencia por token.
-- Aviso de proporcionalidad: el tiempo de reloj mejora en parte por longitudes de salida distintas y comportamiento de cola larga, no solo por una decodificación más rápida; el brazo OFF de HumanEvalPlus incluyó una respuesta convergida de 48.353 tokens.
+- VRAM/unificada estimada: el repositorio ocupa 0,3 GB; el drafter es marginal frente al modelo objetivo de 27B cuantizado a ~4,5 bpw, que domina los requisitos de memoria.
+- Hardware validado: Apple M5 Max con 64 GB de memoria unificada, MLX/Metal 0.32.2.
+- GPU NVIDIA: no hay datos publicados de ejecución del drafter en CUDA; la librería declarada es `mlx`, específica de Apple Silicon.
+- Cabe en GPU de consumo: el drafter por sí solo sí; el sistema completo depende del modelo de 27B cuantizado.
+- Despliegue: MLX-VLM y MLX-Serve según las pruebas del autor. No se documentan vLLM, llama.cpp, Ollama ni TGI para este artefacto.
+- Latencia y throughput: ratio de pared 0,417 [0,238, 0,603] y ratio de tokens 0,778 [0,463, 1,082] en la pantalla de tres tareas; ratio de decodificación por petición entre 0,977 y 0,995 en C84.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos publicados para comparar esta cabeza MTP con otros borradores del ecosistema (EAGLE, Medusa, borradores destilados o *lookahead* por n-gramas). La comparación que sí está documentada es interna a este artefacto:
-
-| Configuracion | Aceptacion de borradores | Velocidad relativa | Notas |
-|---|---|---|---|
-| Sidecar reparado (este repositorio) | 3843 / 4548 (84,5 %) | 1,836x mediana | 22 tensores sin cambios + 7 normas reparadas; 29 payloads verificados |
-| Sidecar original (claves despojadas) | 0 / 12.516 | 0,620x | Aceptación nula; se ejecutó un control positivo del modelo base antes de interpretar el cero |
-| Decodificación especulativa desactivada (OFF) | no aplica | 1,0x (referencia) | Generación combinada de 2,691 h frente a 1,123 h |
-
-Comparación con alternativas de terceros: no disponible.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter | 0,42B | no disponible | Apache 2.0 | safetensors (MLX) | Drafter MTP, no autónomo |
+| caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed | 27B (nominal) | no disponible | no disponible en la información | safetensors (MLX) | Modelo objetivo; sin drafter |
+| `optiq/mtp.safetensors` (empaquetado original) | no disponible | no disponible | no disponible | safetensors | Extracción original con siete offsets sin reparar; el autor desaconseja sustituirlo |
+| Otros drafters especulativos de propósito general | no disponible | no disponible | no disponible | no disponible | No se dispone de comparativa publicada en la información |
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje independiente: sin el modelo destino exacto y una implementación MTP compatible no produce resultados útiles.
-- La decodificación especulativa puede alterar las salidas; no está garantizado que sea sin pérdida (*lossless*). Cualquier despliegue en producción debe validar sus propias salidas, no asumir equivalencia con la decodificación no especulativa.
-- Potencia estadística limitada: la diferencia mínima detectable nominal es de 17,7 pp por dataset y 12,5 pp agrupada. El intervalo combinado cabe dentro del margen de equivalencia de ±5 pp, pero HumanEvalPlus por separado queda inconcluso.
-- El intervalo de HumanEvalPlus llega hasta −5,33 pp, de modo que no puede descartarse una degradación relevante en esa tarea concreta.
-- La evidencia cubre únicamente tres tareas de código verificadas por ejecución, con 600 respuestas convergidas; no establece capacidad de contexto largo ni calidad de código subjetiva.
-- La reparación depende de que el cargador conserve el prefijo `mtp.` en las claves; si se renombran las claves, la conversión de desplazamientos no se aplica y el sidecar vuelve a comportarse como el original defectuoso.
-- El sidecar original mostraba una tasa de aceptación de 0 sobre 12.516 propuestas; cualquier variante sin la corrección de normalización debe considerarse inservible hasta prueba en contrario.
-- La mejora de tiempo de reloj mezcla longitudes de salida distintas y comportamiento de cola larga, por lo que no debe interpretarse como una ganancia pura de velocidad de decodificación.
-- Licencia Apache-2.0 según las etiquetas del repositorio, con atribución y licencia siguiendo los artefactos de origen; conviene verificar los términos del modelo destino antes de un uso comercial.
-- Sin adopción comunitaria: 0 descargas y 0 likes, sin validación independiente de la reparación más allá de la evidencia declarada por el autor.
-- Evidencia de hardware restringida a un Apple M5 Max de 64 GB; el comportamiento en otras plataformas no está caracterizado.
-- Riesgo de uso indebido si se trata como generador de texto: la model card lo describe explícitamente como predictor.
+- No es un modelo de chat: usarlo como modelo independiente produce resultados inválidos.
+- Las pruebas son acotadas: el autor advierte que no establecen equivalencia amplia de calidad en `native16` ni certifican imágenes arbitrarias, OCR, diagramas complejos o razonamiento a contexto completo.
+- Los intervalos con discordancia cero no prueban equivalencia universal; el MDE nominal es de 17,7 pp por dataset y 12,5 pp en pooled.
+- La evidencia M40 se obtuvo con TQ4 y no puede extrapolarse silenciosamente a `native16`.
+- La pantalla C84 usa 5 ítems por eje (MDE nominal 56 pp) y una revisión de prosa no ciega con un solo revisor.
+- La ganancia de tiempo incluye longitudes de salida distintas y una cola larga en OFF; no es aceleración pura de kernel.
+- Riesgo de alucinación y sesgos: no evaluados de forma específica para el drafter; heredados del modelo objetivo.
+- Idiomas soportados no documentados.
+- No sustituir el `optiq/mtp.safetensors` original por este directorio reparado; verificar hashes antes de desplegar.
+- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad de validación recae en el integrador.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter
 - Modelo base: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed
-- Paper, blog, repositorio de código o demo: no disponible
-- Resultados de la búsqueda web: no se encontró ningún enlace relevante para este modelo; los resultados devueltos correspondían a páginas de Google Maps y Google Earth, sin relación con el artefacto.
+- Revisión publicada: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter/tree/74bb2bc1feb60dbb8302bc8e6021d0be01f8f18d
+- No se han encontrado papers, blogs, repos de código ni demos adicionales en la información proporcionada.

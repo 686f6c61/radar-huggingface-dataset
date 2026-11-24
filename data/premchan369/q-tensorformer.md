@@ -2,105 +2,97 @@
 
 ## Resumen
 
-Q-TensorFormer es una arquitectura de investigación de código abierto publicada por Premchand Yadav (usuario Premchan369 en Hugging Face) que explora la asignación dinámica de recursos computacionales en transformers. El modelo propone adaptar en tiempo de inferencia el rango tensorial, la complejidad de atención y la precisión de la caché KV en función del valor informacional marginal de cada token, con el objetivo de habilitar inferencia en dispositivos con recursos limitados (edge AI, on-device). Se distribuye con licencia Apache 2.0 y está etiquetado como modelo de generación de texto en inglés.
+Q-TensorFormer es un modelo de lenguaje para generación de texto publicado en Hugging Face por Premchan369 (V C Premchand Yadav) junto con Dr. Madala Guru Brahmam, ambos vinculados a la School of Computer Science and Engineering de la VIT-AP University (India). El modelo se presenta como un trabajo de investigación orientado a inferencia de altas prestaciones en entornos *edge*, combinando atención con Grouped-Query Attention (GQA) y Rotary Position Embeddings (RoPE) con un mecanismo propietario de segmentación dinámica de rangos Tensor-Train denominado Zero-SVD, junto con control adaptativo basado en estabilidad de Lyapunov.
 
-La propuesta técnica combina capas Tensor-Train personalizadas con autograd, atención agrupada (GQA) con RoPE, cuantización de caché KV en INT4 e INT8 empaquetada a nivel de bit, y un controlador PID en bucle cerrado con banda muerta de histéresis (τ = 0.15) para regular la asignación de recursos. El repositorio incluye exportación a GGUF v3 y ONNX, un tokenizador determinista de 256 subpalabras y 107 pruebas unitarias documentadas como superadas.
+El problema que aborda es el de la inferencia de modelos generativos bajo restricciones severas de memoria, ancho de banda y térmicas, típicas de dispositivos *edge* como Jetson Orin, Jetson Thor, Raspberry Pi o Apple Silicon. La propuesta técnica consiste en ajustar dinámicamente el rango de descomposición Tensor-Train de las capas según la entropía del contexto y el margen térmico disponible, reduciendo cómputo en tokens predecibles (puntuación, texto de baja perplejidad) y aumentándolo en tokens de razonamiento.
 
-Es relevante ahora porque aborda dos problemas candentes en el despliegue de LLM: la reducción del coste de memoria de la caché KV en contextos largos y la adaptación dinámica del cómputo a restricciones de hardware. No obstante, el tamaño del repositorio es de 0.0 GB y no se especifican parámetros del modelo ni longitud de contexto, lo que sugiere que se trata de un testbed de investigación más que de un modelo listo para producción.
+El modelo se distribuye con licencia Apache 2.0, únicamente en inglés, con un repositorio de tamaño prácticamente nulo (0.0 GB) en el momento de la consulta, lo que sugiere que los pesos publicados no están disponibles en el Hub o son de un tamaño muy reducido. La model card incluye documentación extensa, un *paper* IEEE de seis páginas, manuscritos LaTeX para IEEE Transactions y NeurIPS, y referencias a adaptadores para vLLM y TensorRT-LLM, así como a un *checkpoint* canónico en `checkpoints/qtensorformer_canonical_trained.pt`.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con capas Tensor-Train personalizadas, GQA con RoPE, atención con attention sinks |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer decoder-only con Grouped-Query Attention (GQA), Rotary Position Embeddings (RoPE) y segmentación dinámica Tensor-Train (Zero-SVD) |
+| Parametros totales | no disponible (la model card menciona una variante "tiny" en los ejemplos de código, sin cifra publicada) |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | KV cache INT4 e INT8 empaquetada a nivel de bit; exportación GGUF v3 y ONNX |
+| Tipos de cuantizacion | no disponible (se mencionan KV-cache quantization y soporte ONNX/ONNX Runtime, sin detallar formatos) |
 | Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers, custom_code) |
+| Formato de pesos | safetensors (tag del repositorio); también se referencia un checkpoint PyTorch `.pt` en `checkpoints/qtensorformer_canonical_trained.pt` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se describe como un transformer con sustitución de capas lineales por capas Tensor-Train (TT) con autograd personalizado y operaciones `einsum` por lotes. Incorpora Grouped-Query Attention (GQA) con Rotary Position Embeddings (RoPE) y un mecanismo de attention sinks para preservar la estabilidad en streaming. El rango tensorial se selecciona dinámicamente sin SVD entre los valores r ∈ {1, 2, 4, 8, 16}, y la asignación de recursos se formula como un problema de optimización lagrangiana resuelto mediante subgradiente dual. Un controlador PID con banda muerta de histéresis (τ = 0.15) cierra el bucle de control sobre un vector de estado informacional de token normalizado de 8 dimensiones (z_t).
+La arquitectura es un transformer decoder-only con atención de tipo Grouped-Query Attention y RoPE, sobre el que se aplica una descomposición Tensor-Train (TT) de las matrices de pesos. La innovación central, Zero-SVD Dynamic Tensor-Train Slicing, consiste en seleccionar dinámicamente el rango TT de cada capa en función de la entropía del contexto y del margen térmico del hardware, de modo que los tokens de alta entropía (razonamiento, matemáticas) reciben rangos mayores y los de baja entropía (puntuación, texto predecible) rangos menores. Este control se formaliza, según la documentación, mediante funciones de Lyapunov que garantizan estabilidad del bucle de adaptación, y se complementa con bandits contextuales para la política de selección de rango.
 
-El repositorio menciona decodificación auto-especulativa (single-model TT drafting con r_draft = 1 → r_target = 8), una caché KV con "anclas semánticas" que preserva posiciones críticas mediante umbrales de entropía y sorpresa, y un motor TT fusionado. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO.
+El entrenamiento se realizó, según los *tags* y la model card, sobre los datasets Wikitext y OpenWebText, con métricas declaradas de perplejidad, latencia y throughput. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset, ni si hubo fases de RLHF o DPO. La model card menciona integración con técnicas de *speculative decoding*, *paged attention*, *continuous batching*, *attention sinks* y cuantización de KV-cache, así como adaptadores para vLLM y TensorRT-LLM, pero no se detallan los detalles de implementación ni los resultados de ablación.
 
 ## Capacidades
 
-- Generación de texto en inglés mediante pipeline `text-generation` con integración en `transformers` (AutoModel / AutoConfig).
-- Asignación dinámica de cómputo por token: rango tensorial variable (r ∈ {1, 2, 4, 8, 16}) y complejidad de atención adaptativa.
-- Cuantización de caché KV en INT4 e INT8 con empaquetado a nivel de bit para reducir el uso de memoria en contextos largos.
-- Preservación de atención mediante attention sinks en modo streaming, evitando el colapso de la atención.
-- Decodificación auto-especulativa sin memoria adicional (0 MB extra de VRAM) con drafting TT interno.
-- Control de recursos en bucle cerrado mediante PID y optimización lagrangiana con subgradiente dual.
-- Exportación a GGUF v3 y ONNX para despliegue en runtimes alternativos.
-- Tokenizador determinista UTF-8 de 256 subpalabras.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking explícito.
+- Generación de texto autoregresiva en inglés.
+- Razonamiento de tipo *chain-of-thought* (los *tags* referencian DeepSeek-R1 y GSM8K como inspiración y benchmark objetivo).
+- Ajuste dinámico del cómputo por token mediante segmentación de rangos Tensor-Train (adaptive computation).
+- Soporte de *continuous batching* y *paged attention* a través de un adaptador vLLM incluido en el repositorio (`src/vllm_adapter.py`).
+- Soporte de *speculative decoding* y cuantización de KV-cache (declarado en los *tags*).
+- Exportación a ONNX y ejecución con ONNX Runtime (declarado en los *tags*).
+- Servido mediante API REST compatible con OpenAI, con streaming SSE y FastAPI (declarado en los *tags*).
+- Telemetría de hardware y optimización de eficiencia energética (declarado en los *tags*).
+- Capacidades multilingües: limitadas al inglés.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Visión, audio: no disponible.
 
 ## Casos de uso
 
-- Inferencia en dispositivos edge: el modelo está diseñado explícitamente para restricciones de memoria y cómputo, con cuantización de caché KV INT4/INT8 y rango tensorial adaptativo que permite ajustar el coste por token según el hardware disponible.
-- Investigación en eficiencia de transformers: sirve como banco de pruebas reproducible (107 tests, scripts de evaluación) para estudiar asignación dinámica de recursos, control PID y optimización lagrangiana en modelos de lenguaje.
-- Despliegue on-device con presupuesto de memoria ajustado: la caché KV con anclas semánticas reduce el tráfico DRAM (reportado 87,50 % de reducción, de 262 KB a 32,7 KB) preservando posiciones críticas, útil en asistentes locales con contexto largo.
-- Generación de texto en streaming: los attention sinks evitan el colapso de la atención en secuencias largas, adecuado para aplicaciones de dictado o chat continuo en local.
-- Evaluación de decodificación especulativa: el mecanismo de drafting TT interno (1,38x de aceleración reportada con 0 MB extra) puede integrarse en pipelines de investigación que comparen estrategias de aceleración sin duplicar el modelo.
-- Exportación a runtimes ligeros: los formatos GGUF v3 y ONNX permiten probar el modelo en llama.cpp u otros motores compatibles para validar el comportamiento de las capas TT fuera de PyTorch.
-- Prototipado de sistemas de control adaptativo en NLP: el vector de estado informacional de 8 dimensiones y el controlador PID son reutilizables como componentes en investigaciones sobre cómputo condicional.
+- Inferencia en dispositivos *edge* con restricciones térmicas: el modelo está diseñado para ajustar el rango Tensor-Train según el margen térmico disponible (por ejemplo, `hardware_thermal_margin_c=14.2` en el ejemplo de la model card), lo que lo hace adecuado para despliegues en Jetson Orin, Jetson Thor o Raspberry Pi donde la disipación es limitada.
+- Servido de altas prestaciones con vLLM: el adaptador `VLLMContinuousBatchingAdapter` permite planificar rangos TT por secuencia en función de la entropía, útil en entornos con múltiples peticiones concurrentes y presupuestos de latencia estrictos (por ejemplo, `target_latency_budget_ms=20.0`).
+- Razonamiento con presupuesto variable: la asignación dinámica de rangos permite dar más cómputo a tokens de razonamiento (rank 16 en el ejemplo) y menos a puntuación (rank 4), lo que encaja en pipelines de generación de código o matemáticas donde solo una fracción de los tokens requiere capacidad plena.
+- Integración en servicios compatibles con OpenAI: al declarar API REST con FastAPI y streaming SSE, puede desplegarse como *backend* de un asistente conversacional sin necesidad de adaptar el cliente.
+- Prototipado en Google Colab: la model card incluye un *notebook* de inicio rápido (`notebooks/quickstart.ipynb`) y un *Space* interactivo, lo que facilita la evaluación preliminar por parte de investigadores.
+- Investigación en compresión de modelos: la combinación de descomposición Tensor-Train, Zero-SVD y control de Lyapunov lo convierte en una plataforma para estudiar políticas de cómputo adaptativo y estabilidad en bucles de control de inferencia.
+- Evaluación de eficiencia energética: los *tags* de *green AI*, telemetría de hardware y eficiencia energética sugieren su uso en estudios comparativos de consumo en *edge* frente a modelos densos equivalentes.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor en las ejecuciones `RUN-20261013-QTF-HARDENING` y `RUN-20261021-NEURIPS-IEEE-STATISTICAL`:
-
-| Métrica | Resultado reportado | Contexto |
-|---|---|---|
-| Significancia estadística vs. rango estático | p = 1,00e-15; Cohen's d = 1,354 | 50 ensayos emparejados, 1.000 remuestreos bootstrap, favorable a LinUCB |
-| Decodificación auto-especulativa | 1,38x de aceleración, 0 MB extra de VRAM | Drafting TT r=1 → r=8, 100 % de aceptación |
-| Motor TT fusionado | -96,9 % de tráfico de memoria (21,6 MB → 0,67 MB) | Intensidad operacional 32,27x (0,02 → 0,73 FLOPs/Byte) |
-| Caché KV con anclas semánticas | 87,50 % de reducción de DRAM (262 KB → 32,7 KB) | Umbrales de entropía/sorpresa |
-
-No se han publicado en la información disponible resultados en benchmarks estándar de NLP (MMLU, HumanEval, GSM8K u otros).
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona métricas declaradas (perplejidad, latencia, throughput) y referencias a GSM8K, pero no incluye cifras concretas ni tablas comparativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0.0 GB y no se declaran parámetros totales, por lo que no puede calcularse una estimación fiable.
-- GPU recomendadas: no disponible en la información proporcionada.
-- Compatibilidad con GPU de consumo: no confirmada; el enfoque en edge AI sugiere viabilidad en hardware limitado, pero no se aportan cifras.
-- Opciones de despliegue: `transformers` con `custom_code` (AutoModel / AutoConfig), exportación GGUF v3 (compatible con llama.cpp) y ONNX.
-- Latencia y throughput: solo se reporta la aceleración relativa de 1,38x por decodificación auto-especulativa; no se aportan valores absolutos de latencia ni tokens por segundo.
-- Requiere PyTorch 2.10 o superior según los badges del repositorio.
+- VRAM estimada para inferencia: no disponible (el tamaño del modelo no se declara; el repositorio ocupa 0.0 GB, lo que impide estimar).
+- GPU recomendadas: la model card menciona explícitamente NVIDIA Hopper H100, Blackwell B200, Jetson Orin y Jetson Thor como plataformas objetivo; también Apple Silicon y Raspberry Pi en los *tags*.
+- Cabe en GPU de consumo: no disponible; el ejemplo de código usa `torch.float16` y una variante "tiny", lo que sugiere que una configuración reducida podría caber en GPU de consumo, pero no se confirma.
+- Opciones de despliegue: vLLM (adaptador incluido), NVIDIA TensorRT-LLM, ONNX Runtime, PyTorch con `transformers` y `trust_remote_code=True`, API REST compatible con OpenAI vía FastAPI.
+- Latencia y throughput estimados: no disponible; solo se menciona un presupuesto de latencia objetivo de 20 ms en el ejemplo del adaptador vLLM, sin cifras medidas.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (transformers con cómputo adaptativo y cuantización de caché KV) ni datos que permitan una comparación rigurosa de parámetros, contexto o rendimiento.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Q-TensorFormer | no disponible | no disponible | Apache 2.0 | Hugging Face (repo 0.0 GB) |
+| SmolLM2 | no disponible en la información | no disponible | no disponible | Hugging Face (referenciado en *tags*) |
+| Qwen2.5 | no disponible en la información | no disponible | no disponible | Hugging Face (referenciado en *tags*) |
+| Llama 3.2 | no disponible en la información | no disponible | no disponible | Hugging Face (referenciado en *tags*) |
+
+Los *tags* del repositorio referencian SmolLM2, Qwen2.5 y Llama 3.2 como modelos comparables o inspiradores, pero no se aportan datos de rendimiento ni de tamaño que permitan una comparación cuantitativa. No disponible información adicional para completar la comparativa.
 
 ## Limitaciones y advertencias
 
-- No se declaran parámetros totales, longitud de contexto ni datos de entrenamiento, lo que impide evaluar su calidad frente a modelos de producción.
-- Solo soporta inglés según la etiqueta de idioma; no hay evidencia de capacidades multilingües.
-- El repositorio ocupa 0.0 GB, lo que sugiere que los pesos publicados pueden ser mínimos o de demostración; conviene verificar antes de usarlo en producción.
-- Los benchmarks reportados son internos del autor y miden métricas de eficiencia (memoria, velocidad, significancia estadística), no calidad de generación; no hay resultados en MMLU, HumanEval o GSM8K.
-- Los resultados de reducción de memoria y aceleración provienen de scripts propios del repositorio y no de una evaluación independiente.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible; al ser un modelo de investigación sin evaluación de calidad publicada, no deben asumirse garantías.
-- Licencia Apache 2.0 permite uso comercial, pero la ausencia de pesos verificables y de evaluación de calidad desaconseja su uso en producción sin validación previa.
-- Requiere `custom_code` y PyTorch 2.10+, lo que puede complicar la integración en entornos con versiones anteriores.
+- Solo soporta inglés; no se declaran capacidades multilingües.
+- No se han publicado resultados de benchmarks verificables (MMLU, HumanEval, GSM8K) en la información disponible, por lo que el rendimiento real es desconocido.
+- El repositorio ocupa 0.0 GB, lo que sugiere que los pesos pueden no estar efectivamente publicados o son de un tamaño muy reducido; conviene verificar la integridad de los archivos antes de un despliegue en producción.
+- Requiere `trust_remote_code=True` para cargar el modelo, lo que implica ejecutar código del autor; debe auditarse antes de usar en entornos sensibles.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados; el entrenamiento sobre Wikitext y OpenWebText puede introducir sesgos propios de corpus web en inglés.
+- La licencia Apache 2.0 permite uso comercial, pero la model card no detalla restricciones adicionales sobre los datos de entrenamiento ni sobre los *checkpoints* derivados.
+- Las afirmaciones de estabilidad de Lyapunov y de ganancias de throughput no están respaldadas por tablas de resultados en la información proporcionada; deben tratarse como propuestas teóricas hasta su verificación independiente.
+- El uso de control adaptativo basado en margen térmico implica dependencia del hardware; el comportamiento puede variar entre plataformas no listadas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Premchan369/Q-TensorFormer
-- Documentación oficial: https://premchan369.github.io/Q-TensorFormer/
-- Arquitectura: https://premchan369.github.io/Q-TensorFormer/architecture.html
-- Metodología: https://premchan369.github.io/Q-TensorFormer/methodology.html
-- Benchmarks: https://premchan369.github.io/Q-TensorFormer/benchmarks.html
-- Inferencia edge: https://premchan369.github.io/Q-TensorFormer/edge-inference.html
-- Entrenamiento: https://premchan369.github.io/Q-TensorFormer/training.html
-- Referencia de API: https://premchan369.github.io/Q-TensorFormer/documentation.html
-- Investigación relacionada: https://premchan369.github.io/Q-TensorFormer/research.html
-- Limitaciones: https://premchan369.github.io/Q-TensorFormer/limitations.html
-- Contribución: https://premchan369.github.io/Q-TensorFormer/contributing.html
-- Space en vivo: https://huggingface.co/spaces/Premchan369/Q-TensorFormer
-- Notebook de inicio rápido (Colab): https://colab.research.google.com/github/Premchan369/Q-TensorFormer/blob/main/notebooks/quickstart.ipynb
-- Repositorio GitHub: https://github.com/Premchan369/Q-TensorFormer
-- Paper (NeurIPS e IEEE, camera-ready): reports/NEURIPS_CAMERA_READY_PAPER.md (en el repositorio)
-- Auditoría de integridad científica: reports/SCIENTIFIC_INTEGRITY_AUDIT.md (en el repositorio)
+- Paper IEEE (PDF): https://huggingface.co/Premchan369/Q-TensorFormer/resolve/main/paper/q_tensorformer_ieee_paper.pdf
+- Space interactivo: https://huggingface.co/spaces/Premchan369/Q-TensorFormer
+- Documentación: https://premchan369.github.io/Q-TensorFormer/
+- Notebook de inicio rápido en Colab: https://colab.research.google.com/github/Premchan369/Q-TensorFormer/blob/main/notebooks/quickstart.ipynb
+- Checkpoint canónico: https://huggingface.co/Premchan369/Q-TensorFormer/tree/main/checkpoints
+- Repositorio GitHub (referenciado en los enlaces de la model card): https://github.com/Premchan369/Q-TensorFormer
+- Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

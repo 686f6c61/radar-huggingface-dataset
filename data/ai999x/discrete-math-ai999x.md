@@ -2,117 +2,108 @@
 
 ## Resumen
 
-discrete-math-ai999x es un motor determinista de resolución de problemas de matemática discreta para Python, publicado por la organización AI999X (creador e ingeniero: Ibnul Jaif Farabi). No es un transformer autoregresivo al uso: la model card lo describe como un motor neuro-simbólico en el que una capa de lectura basada en reglas interpreta la pregunta o llamada tipada y delega el cálculo en 99 procedimientos simbólicos certificados (sympy, mpmath). El resultado se devuelve con pasos, fórmulas en LaTeX, unidades y supuestos, o con una negativa explícita si no se puede verificar.
+Discrete Math (discrete-math-ai999x) es un motor de cálculo determinista empaquetado y distribuido con el formato de un modelo de Hugging Face, desarrollado por AI999X. No es un modelo de lenguaje neuronal: es un motor compilado (con build en Rust y enlace Python) que resuelve 103 cálculos de matemática discreta organizados en 9 temas (teoría de números, aritmética modular, combinatoria, teoría de grafos y algoritmos de redes, lógica y matemáticas de la criptografía), devolviendo para cada uno la fórmula, los pasos intermedios, las unidades y una explicación en lenguaje natural cuando una entrada falta o está fuera de rango.
 
-El paquete se distribuye como librería Python propia (`discrete_math_ai999x`, versión 1.0.1) y como wheel instalable desde el repositorio de Hugging Face. Los pesos publicados en safetensors suman 4.715.520 parámetros (4,72 M) y el repositorio completo ocupa 0,1 GB. La ejecución es exclusivamente en CPU, sin GPU, sin red y sin clave de API, lo que lo hace adecuado para entornos aislados.
+Su propuesta de valor es la ausencia de alucinación por construcción: al no generar texto libre sino ejecutar un procedimiento cerrado, la respuesta es reproducible e idéntica en cada plataforma. Se ofrece en cuatro formatos de uso (aplicación de escritorio para Windows y Linux, línea de comandos `discrete-math`, versión web y paquete Python 3.10+) y funciona íntegramente en local, sin conexión.
 
-Su relevancia actual está en la propuesta de "cero respuestas incorrectas por diseño": siete resultados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) sustituyen a la generación libre, y el autor declara 538 respuestas doradas reproducidas de forma idéntica en Windows (Python 3.13) y Linux x86-64 (Python 3.10 a 3.14).
+El repositorio declara 4.715.520 parámetros en safetensors, un dato que debe interpretarse con cautela dado que el artefacto real es un motor de cálculo y no una red neuronal entrenada. El modelo está etiquetado para la tarea de question-answering, solo en inglés y con licencia Apache 2.0. Es relevante ahora como ejemplo de una categoría emergente: "modelos" que en realidad son herramientas deterministas publicadas en Hugging Face, útiles para entornos educativos y pipelines donde se exige exactitud verificable en lugar de generación probabilística.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura basada en reglas + 99 capacidades simbólicas certificadas (no es un transformer generativo) |
-| Parámetros totales | 4.715.520 (4,72 M) según safetensors |
-| Longitud de contexto | no disponible (la unidad de entrada es una pregunta documentada o una llamada `solve(capability_id, **inputs)`) |
-| Tipos de cuantización | no disponible (no se documentan variantes cuantizadas; ejecución en CPU sobre Python) |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX; distribución adicional como wheel de Python (`.whl`) |
-| Versión del paquete | 1.0.1 (import `discrete_math_ai999x`) |
-| Knowledge pack | 1.0.0 |
-| Capacidades certificadas | 99 |
-| Respuestas doradas | 538 |
-| Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
-| Runtime | solo CPU, offline; sin GPU, sin red, sin API key |
-| Descargas / likes en Hugging Face | 24 / 0 |
-| Fecha de creación / actualización | 2026-10-25 / 2026-10-27 |
+| Arquitectura | Motor de cálculo determinista compilado (build Rust + enlace Python); no es un transformer ni una red neuronal entrenada |
+| Parametros totales | 4.715.520 (declarados en safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica: no hay ventana de contexto de tokens) |
+| Tipos de cuantizacion | no disponible (no aplica: no hay pesos cuantizables en el sentido habitual) |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (según metadatos del repo); distribución principal como binarios compilados y paquete pip |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es híbrida y no generativa. Una capa de lectura basada en reglas convierte la pregunta en lenguaje natural (formas documentadas) o la llamada tipada en una invocación a una de las 99 capacidades certificadas, que se ejecutan sobre sympy y mpmath. Cada respuesta se verifica antes de devolverse mediante sustitución inversa, comprobación dimensional o comparación con un cálculo independiente. Los tags del repositorio (token-classification, text-classification, sentence-similarity, feature-extraction, onnx) apuntan a un componente neuronal pequeño empaquetado junto al núcleo simbólico; la información disponible no detalla la función exacta de esos 4,72 M de parámetros.
+La arquitectura no es un transformer, un MoE ni un modelo híbrido SSM: es un motor de cálculo determinista. Según la model card, un único motor compilado resuelve 103 cálculos en 9 temas, cada uno con su fórmula, sus pasos y sus unidades. La implementación se distribuye como binario compilado para Windows y Linux (x86-64) y como build en Python puro para macOS y ARM, que produce las mismas respuestas. El paquete `discrete-math-ai999x` se instala vía `pip` en Python 3.10+.
 
-No se han publicado datos de entrenamiento: no hay cifra de tokens, composición del dataset, ni referencias a RLHF, DPO o ajuste por instrucciones. El conocimiento del sistema reside en el "knowledge pack" 1.0.0 y en los procedimientos simbólicos, no en los pesos. La innovación destacable es el contrato de salida determinista con siete estados posibles y la reproducibilidad declarada entre plataformas: el autor afirma que las 538 respuestas documentadas se reproducen de forma idéntica en cada combinación de sistema operativo y versión de Python probada.
+No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF o DPO, porque el artefacto no se entrena mediante aprendizaje estadístico: la "lógica" del modelo es el propio algoritmo implementado. La innovación técnica destacable es precisamente la ausencia de generación libre: cada respuesta se deriva de un procedimiento cerrado, lo que garantiza reproducibilidad entre plataformas y elimina la alucinación en las entradas válidas. La model card menciona explícitamente "zero-hallucination" y "offline" como propiedades de diseño.
 
 ## Capacidades
 
-- Resolución de problemas de teoría de números, aritmética modular (inverso modular, teorema chino del resto), combinatoria (desarreglos, coeficientes), estructura de grafos (número cromático, coloración), lógica proposicional (tautologías, tablas de verdad) y matemática de la criptografía (RSA).
-- Interfaz dual: `ask()` acepta preguntas en inglés en formas documentadas y `solve(capability_id, **inputs)` ofrece una interfaz tipada garantizada para tareas soportadas con entradas válidas.
-- Salida explicativa con pasos intermedios, fórmulas en LaTeX, unidades, supuestos y el procedimiento utilizado, apta para cuadernos, aplicaciones de tutoría y correctores de deberes.
-- Negativa explícita ante entradas incompletas, ambiguas, inválidas o fuera de alcance, en lugar de una respuesta aproximada.
-- Determinismo y reproducibilidad entre plataformas y versiones de Python, orientado a tests de regresión.
-- Tareas declaradas en los tags: question-answering, token-classification, text-classification, sentence-similarity y feature-extraction.
-- Ejecución offline en CPU, sin dependencia de red, GPU ni credenciales.
-- No se documentan modo "thinking", visión, audio, tool calling genérico ni razonamiento multi-paso fuera del flujo de resolución simbólica.
+- Cálculo determinista en 9 temas de matemática discreta: teoría de números, aritmética modular, combinatoria, teoría de grafos y algoritmos de redes, lógica proposicional, criptografía (incluido RSA), conversión de bases, diagramas de Venn y métodos de reparto (apportionment).
+- Resolución paso a paso: devuelve fórmula, pasos intermedios y unidades para cada cálculo.
+- Manejo explícito de entradas inválidas: cuando falta un dato o está fuera de rango, devuelve una explicación en lenguaje natural en lugar de un número.
+- Capacidades documentadas en la model card: inverso multiplicativo modular, derangements, número cromático de un grafo pequeño, test de tautología, cifrado afín, conversión de base (radix), diagrama de Venn con tres conjuntos (inclusión-exclusión) y reparto con métodos Hamilton, Jefferson, Webster, Adams y Huntington-Hill.
+- Visualización: la aplicación de escritorio dibuja escenas y gráficos a partir de la respuesta calculada.
+- Cuatro modos de uso: aplicación de escritorio (Windows, Linux), CLI `discrete-math`, navegador y API Python.
+- Ejecución offline y local: no requiere conexión a internet ni envío de datos a servidores.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso generativo: no disponible (el multi-paso existe solo dentro de cada cálculo).
+- Capacidades multilingües: no disponible (solo inglés).
+- Capacidades especiales: modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Corrección automática de ejercicios de matemática discreta en un LMS: invocando `solve()` con el `capability_id` correspondiente se obtiene una respuesta determinista con pasos y LaTeX, lo que permite calificar de forma reproducible y auditar cada corrección.
-- Tutor offline en aulas o exámenes sin conectividad: al ejecutarse solo en CPU y sin red ni clave de API, puede desplegarse en equipos aislados o en portátiles de alumnos sin exposición de datos.
-- Verificación cruzada de respuestas generadas por otros modelos: el motor actúa como comprobador simbólico en un pipeline donde un LLM propone y este paquete valida o emite `OUT_OF_SCOPE`/`INVALID_INPUT`.
-- Docencia de criptografía introductoria: cálculo de inversos modulares, resolución de sistemas por teorema chino del resto y operaciones asociadas a RSA con justificación paso a paso.
-- Generación de bancos de problemas con solución verificada: las 538 respuestas doradas sirven como conjunto de regresión para validar actualizaciones del propio paquete o de sistemas que lo integren.
-- Enrutado de consultas matemáticas dentro de un sistema mayor: los tags de clasificación y similitud, junto al recall@5 de 0,988 declarado sobre 12.998 preguntas, permiten seleccionar la capacidad adecuada antes de ejecutar el cálculo.
-- Material docente reproducible en notebooks: la salida con LaTeX, unidades y supuestos se inserta directamente en apuntes o informes sin posprocesado manual.
+- Docencia de matemática discreta: el motor devuelve fórmula, pasos y unidades para cada ejercicio, lo que permite usarlo como corrector automático o como generador de soluciones razonadas en asignaturas de teoría de números, combinatoria y lógica.
+- Verificación de cálculos criptográficos: el cálculo del inverso multiplicativo modular y el cifrado afín son operaciones habituales en la enseñanza de RSA y criptografía clásica; el motor las resuelve con pasos auditables, útil en laboratorios de seguridad.
+- Automatización de deberes con resultados verificables: al ser determinista y offline, encaja en entornos donde no se puede depender de un LLM generativo por riesgo de alucinación, como plataformas de evaluación automática.
+- Integración en pipelines Python: el paquete `pip install discrete-math-ai999x` permite invocar los 103 cálculos desde scripts y notebooks, por ejemplo para validar ejercicios generados por otro sistema o para construir datasets de referencia con solución garantizada.
+- Herramienta de escritorio para estudiantes sin conexión: la app para Windows y Linux funciona sin internet, lo que la hace adecuada para aulas con conectividad limitada o para uso en exámenes controlados.
+- Cálculo de reparto (apportionment): los métodos Hamilton, Jefferson, Webster, Adams y Huntington-Hill permiten resolver ejercicios de sistemas electorales y ciencia política con resultados reproducibles.
+- Visualización de grafos y conjuntos: el número cromático y los diagramas de Venn de tres conjuntos con inclusión-exclusión se representan gráficamente en la app, útil para materiales didácticos.
+- Referencia en investigación sobre herramientas deterministas: sirve como caso de estudio de publicación de motores de cálculo con formato de modelo en Hugging Face.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card; ninguno figura como verificado de forma independiente (`verified: false`).
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
 
-| Tarea | Conjunto de evaluación | Métrica | Valor | Nota del autor |
-|---|---|---|---|---|
-| Question answering (matemática discreta) | Golden answers (538 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1,000 | "Idéntico en todas las plataformas" |
-| Question answering (matemática discreta) | Capability search, 12.998 preguntas verificadas reservadas de todos los modelos AI999X | Recall@1 | 0,918 | "Capacidad correcta en primera posición" |
-| Question answering (matemática discreta) | Capability search, 12.998 preguntas verificadas reservadas de todos los modelos AI999X | Recall@5 | 0,988 | "En el top cinco" |
+| Tarea | Dataset | Métrica | Valor |
+|---|---|---|---|
+| discrete math question answering | Golden answers (566 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | accuracy | 1.0 ("identical on every platform") |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks estándar de LLM en la información disponible, ni comparaciones numéricas con modelos de la competencia.
+No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) ni comparaciones con modelos de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; la ejecución es exclusivamente en CPU (0 GB de VRAM).
-- GPU: no necesaria ni soportada según la documentación; el runtime declarado es CPU only.
-- Cabe en cualquier equipo de consumo: el repositorio completo ocupa 0,1 GB y las dependencias son Python con sympy y mpmath.
-- CPU compatible: x86-64 en Linux y Windows probados; no se documentan pruebas en ARM ni macOS.
-- Versiones de Python soportadas y probadas: 3.10, 3.11, 3.12, 3.13 y 3.14 (Linux); 3.13 en Windows.
-- Opciones de despliegue: `pip install discrete-math-ai999x` desde PyPI o instalación del wheel alojado en el repositorio de Hugging Face; uso como librería embebida en scripts y notebooks. No aplica despliegue con vLLM, llama.cpp, Ollama o TGI, al no ser un transformer autoregresivo.
+- VRAM estimada para inferencia: no aplica en el sentido habitual; es un motor de cálculo compilado, no un modelo neuronal con pesos que cargar en GPU.
+- GPU recomendadas: no disponible; no se documenta uso de GPU.
+- ¿Cabe en GPU de consumo? No aplica: la ejecución es en CPU.
+- Plataformas soportadas: Windows y Linux x86-64 (binario compilado); macOS y ARM mediante build Python puro con las mismas respuestas; Python 3.10+.
+- Opciones de despliegue: aplicación de escritorio, CLI `discrete-math`, versión web en la página del modelo y paquete pip.
 - Latencia y throughput: no disponible.
+- Tamaño del repositorio: 0.0 GB según metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
-| Modelo | Enfoque | Capacidades certificadas | Respuestas doradas | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| discrete-math-ai999x | Motor neuro-simbólico determinista, matemática discreta | 99 | 538 | en | Apache-2.0 | Hugging Face + PyPI + GitHub |
-| algebra-ai999x | Motor determinista, álgebra | 56 | 230 | no disponible | Apache-2.0 (según PyPI) | PyPI |
-| math-foundations-ai999x | Motor determinista, fundamentos de matemáticas | 119 | 625 | no disponible | Apache-2.0 (según PyPI) | PyPI |
-| ai999x-encoder | Encoder BERT "tiny" en ONNX para búsqueda de capacidades y similitud semántica | no aplica | no aplica | en | Apache-2.0 | Hugging Face |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| discrete-math-ai999x (AI999X) | Motor de cálculo determinista | 4.715.520 (declarados) | no aplica | Apache 2.0 | Hugging Face, pip, app de escritorio, CLI, web |
+| SymPy | Librería de matemática simbólica en Python | no aplica | no aplica | BSD | pip |
+| Wolfram Alpha / Wolfram Language | Motor de conocimiento computacional | no aplica | no aplica | propietaria | API y web |
+| LLM de propósito general (p. ej. Llama, Qwen) | Transformer generativo | miles de millones | miles de tokens | variable | Hugging Face y otros |
 
-Los tres primeros comparten filosofía (cálculo verificado y negativa explícita) y se diferencian por dominio y cobertura; el cuarto es un componente neuronal de recuperación, no un solucionador. No se dispone de recuentos de parámetros ni de benchmarks comparables de algebra-ai999x y math-foundations-ai999x en la información proporcionada.
+La comparación con LLM generativos es la más relevante para el lector: frente a ellos, discrete-math-ai999x no alucina en los cálculos cubiertos, pero no generaliza a preguntas fuera de sus 103 procedimientos ni mantiene conversación. Frente a SymPy, ofrece una interfaz de aplicación y CLI ya empaquetada con pasos y visualizaciones, aunque su cobertura temática es mucho más acotada. No se dispone de datos de rendimiento comparativo publicados.
 
 ## Limitaciones y advertencias
 
-- Solo admite inglés; no hay soporte documentado de castellano ni de otros idiomas.
-- Dominio cerrado: únicamente cubre las áreas declaradas (teoría de números, aritmética modular, combinatoria, grafos, lógica proposicional y matemática de la criptografía). Cualquier otra rama de las matemáticas queda fuera de alcance y devuelve `OUT_OF_SCOPE`.
-- No genera texto libre ni razona fuera de sus 99 capacidades; `ask()` solo interpreta formas de pregunta documentadas y, en caso contrario, devuelve `UNRECOGNIZED_FORMAT`.
-- Los benchmarks son autodeclarados y figuran con `verified: false`; no se ha localizado replicación independiente de la accuracy de 1,0 ni del recall@1 de 0,918.
-- El propio `model-index` etiqueta la métrica de accuracy de 1,0 como no verificada, por lo que no debe citarse como resultado auditado.
-- `inference: false` en los metadatos de la model card: Hugging Face no ofrece inferencia alojada para este repositorio.
-- Tracción comunitaria muy baja (24 descargas y 0 likes), lo que limita la validación por terceros y el soporte disponible.
-- Requiere la librería propia `discrete-math-ai999x`; no es consumible con `transformers`, vLLM ni llama.cpp.
-- La reproducibilidad bit a bit se declara solo para las plataformas y versiones de Python probadas; no se documentan pruebas en macOS, ARM ni en otras versiones del intérprete.
-- Los metadatos del repositorio declaran fechas de creación y actualización en 2026, posteriores a la mayor parte del ecosistema de referencia; conviene contrastarlas antes de citarlas.
-- Licencia Apache-2.0: permite uso comercial y modificación con obligaciones de atribución y sin garantías; el autor solicita donaciones de forma independiente a la licencia.
+- Cobertura cerrada: solo resuelve los 103 cálculos documentados en 9 temas; cualquier pregunta fuera de ese conjunto no obtiene respuesta generativa.
+- No es un modelo de lenguaje: no mantiene conversaciones, no redacta texto libre ni razona sobre problemas abiertos; los tags de "question-answering" deben interpretarse como resolución de consultas estructuradas.
+- Solo inglés: no hay soporte documentado de otros idiomas.
+- El dato de "4.715.520 parámetros" y el formato safetensors deben tomarse con cautela; el artefacto real es un motor compilado, y no se documenta qué representan esos pesos.
+- El benchmark declarado (accuracy 1.0 sobre 566 preguntas) está marcado como `verified: false` y procede del propio autor; no hay validación independiente.
+- Sin información sobre sesgos: al ser determinista, el riesgo de sesgo estadístico es bajo, pero no se documenta auditoría alguna.
+- Riesgo de alucinación: bajo por diseño en las entradas válidas; el riesgo se traslada a la interpretación errónea de entradas fuera de rango, que el motor rechaza con una explicación en lugar de un resultado.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución; conviene revisar el archivo LICENSE del repositorio para confirmar los términos exactos.
+- Sin datos sobre latencia, throughput ni límites de tamaño de entrada; para producción a gran escala habría que medirlos.
+- El proyecto tiene 343 descargas y 0 likes en el momento de la consulta, con creación en octubre de 2026 y última actualización en noviembre de 2026; la madurez y el mantenimiento a largo plazo no están garantizados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/discrete-math-ai999x
-- Repositorio GitHub: https://github.com/AI999X/discrete-math-ai999x
-- Paquete PyPI: https://pypi.org/project/discrete-math-ai999x/
-- Guía de capacidades (docs): https://huggingface.co/AI999X/discrete-math-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/discrete-math-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Modelos AI999X filtrados por tag: https://huggingface.co/models?other=ai999x
-- Sitio web del autor: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
-- Modelo relacionado, álgebra: https://pypi.org/project/algebra-ai999x/
-- Modelo relacionado, fundamentos de matemáticas: https://pypi.org/project/math-foundations-ai999x/
-- Ficha de terceros del encoder AI999X: https://free2aitools.com/model/ai999x/ai999x-encoder
+- Página del modelo con demo web: https://www.ai999x.com/models/discrete-math-ai999x/
+- Aplicación de escritorio (Windows): https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-discrete-math-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio (Linux): https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-discrete-math-1.6.7-linux-x86_64.tar.gz
+- CLI (Windows): https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI (Linux): https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio: https://github.com/AI999X/ai999x-desktop
+- Clip de demostración (MP4): https://www.ai999x.com/?ax_shot=discrete-math-ai999x/clip.mp4
+- Instalación Python: `pip install discrete-math-ai999x`

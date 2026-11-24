@@ -1,89 +1,107 @@
 # AtomicChat/Inkling-2-Mini-Uncensored-GGUF
 
 ## Resumen
+Inkling-2-Mini-Uncensored-GGUF es una compilación no censurada del modelo thinkingmachines/Inkling-2-Mini, publicada por AtomicChat. Se distribuye como adaptador LoRA y como tres archivos GGUF ya fusionados con la edición, pensados para ejecutarse en llama.cpp. El modelo base es un Mixture of Experts (MoE) de 26.400 millones de parámetros totales con 3.400 millones activos y una arquitectura de núcleo con bucles (looped core) que comparte pesos entre pasadas. Acepta entrada de texto e imagen, lo que lo sitúa en la categoría image-text-to-text.
 
-Inkling-2-Mini-Uncensored-GGUF es una compilación no censurada (uncensored) del modelo thinkingmachines/Inkling-2-Mini, publicada por AtomicChat, el equipo detrás de la aplicación Atomic Chat para ejecutar modelos de pesos abiertos en local y sin conexión. El modelo base es un mixture-of-experts (MoE) de 26,4 mil millones de parámetros con 3,4 mil millones activos y un núcleo recurrente (looped core), capaz de aceptar entrada de texto e imagen. Esta variante elimina la dirección de rechazo (refusal direction) de los pesos que escriben en el residual stream, de modo que el modelo responde a peticiones que el original rechazaría.
+La modificación consiste en un LoRA de rango 1 aplicado sobre 49 puntos que escriben en el flujo residual (salida de atención, expertos enrutados de las 24 capas y el embedding de tokens). El objetivo declarado es eliminar la dirección de rechazo por capa, medida a partir de la diferencia de activaciones medias entre indicaciones dañinas e inofensivas en inglés y ruso. El resultado son respuestas sin rechazo en las pruebas del autor, con una degradación de perplejidad (KLD) medida frente al BF16 original.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso de modificación de pesos orientada a eliminar el comportamiento de rechazo, una práctica cada vez más habitual en el ecosistema de modelos abiertos. Por otro, el repositorio se encuentra en estado "in progress": en el momento de la publicación solo están disponibles los metadatos y el adaptador LoRA, mientras que los ficheros GGUF definitivos aún no se han publicado. El tamaño del repositorio es de 1,3 GB y el número de parámetros reportado en safetensors es de 318.256.128, un dato que no coincide con los 26,4B anunciados en la model card y que conviene tratar con cautela.
-
-La licencia es Apache-2.0, la misma que el modelo base. La arquitectura recurrente del modelo base exige una versión de llama.cpp que incluya el PR ggml-org/llama.cpp#32695 (draft en el momento de la publicación); las versiones estándar de llama.cpp no cargan este modelo.
+Su relevancia práctica es doble: ofrece una vía para ejecutar un MoE multimodal de ~26B en hardware de consumo mediante cuantizaciones GGUF, y documenta con métricas de KLD y top-1 la fidelidad de cada cuantización respecto al original. La licencia Apache-2.0 facilita su integración comercial, aunque el contenido no censurado exige controles de seguridad propios.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con núcleo recurrente (looped core), transformer; entrada texto e imagen |
-| Parametros totales | 26,4B (según model card); 318.256.128 reportados en safetensors (dato discrepante) |
-| Parametros activos | 3,4B |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (cuantizaciones estándar de llama.cpp; niveles concretos no disponibles) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer Mixture of Experts (MoE) con núcleo con bucles (looped core); 24 capas, 12 de ellas con pesos compartidos entre tres pasadas |
+| Parametros totales | 26.070.385.152 (~26,4B) |
+| Parametros activos | ~3,4B |
+| Longitud de contexto | 32.768 tokens en la configuración de ejemplo (`-c 32768`); máximo nativo no disponible |
+| Tipos de cuantizacion | AD-Q4_K (16,53 GB), AD-IQ3_S (13,34 GB), AD-IQ2_M (8,67 GB); LoRA en GGUF (0,04 GB); proyector de visión F16/BF16 (0,64 GB) |
+| Idiomas soportados | No disponible (la model card solo documenta pruebas en inglés y ruso) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF; adaptador LoRA para llama.cpp (`--lora-scaled`) |
+| Formato de pesos | GGUF (llama.cpp), con proyector multimodal mmproj separado |
 
 ## Arquitectura y entrenamiento
+El modelo base es un MoE con 24 capas y un núcleo con bucles: 12 capas comparten pesos a lo largo de tres pasadas, de modo que una sola edición de pesos cubre las 48 pasadas efectivas. Los 26,4B parámetros totales activan unos 3,4B por token, lo que reduce el coste de inferencia frente a un denso equivalente. El modelo procesa texto e imagen mediante un proyector multimodal independiente (mmproj) que se mantiene sin cambios respecto al original.
 
-El modelo base es un MoE de 26,4B parámetros totales con 3,4B activos y un núcleo recurrente (looped core), lo que implica que el modelo reutiliza bloques de cómputo en varias pasadas internas. Acepta entrada multimodal de texto e imagen, según el pipeline image-text-to-text declarado. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo base.
-
-La modificación de AtomicChat consiste en eliminar la dirección de rechazo de los pesos que escriben en el residual stream. El repositorio incluye un adaptador LoRA pensado para cargarse con `--lora-scaled` en llama.cpp, además de ficheros GGUF con la edición ya aplicada (aún no publicados en el momento de la ficha). La model card indica que se reportarán métricas de rechazos antes y después, XSTest (falsos rechazos en prompts seguros), MMLU y KLD frente al modelo original, pero estos datos no están disponibles todavía.
+La edición de AtomicChat es un LoRA de rango 1 sobre los 49 puntos que escriben en el flujo residual: salida de atención y expertos enrutados de las 24 capas, más el embedding de tokens. La dirección de rechazo se calcula por capa como la diferencia entre activaciones medias en indicaciones dañinas e inofensivas, en inglés y ruso, proyectando fuera la media de las inofensivas y agrupando indicaciones con y sin razonamiento. No se dispone de datos sobre el volumen de tokens de entrenamiento del modelo base ni sobre el uso de RLHF/DPO.
 
 ## Capacidades
-
-- Generación de texto y razonamiento conversacional multi-turno.
-- Procesamiento de imágenes junto con texto (pipeline image-text-to-text).
-- Respuesta a peticiones que el modelo base rechazaría, por la eliminación de la dirección de rechazo.
-- Carga mediante adaptador LoRA sobre el modelo base en llama.cpp.
-- Capacidades de tool calling, agentes o thinking mode: no disponible en la información proporcionada.
-- Cobertura multilingüe: no disponible.
+- Generación de texto conversacional multi-turno con ventana de 32.768 tokens en la configuración documentada.
+- Entrada de imagen junto a texto (pipeline image-text-to-text) mediante el proyector mmproj.
+- Razonamiento explícito con niveles de esfuerzo (`none`, `low`, `high`) y presupuesto de tokens de razonamiento (3.072 tokens en las pruebas).
+- Respuestas sin rechazo en las indicaciones dañinas evaluadas por el autor (0 rechazos en inglés y ruso, con y sin razonamiento).
+- Capacidad multilingüe parcial documentada en inglés y ruso; cobertura de otros idiomas no disponible.
+- Compatibilidad con `llama-server` y plantillas Jinja (`--jinja`), lo que habilita integración en flujos tipo chat.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso autónomo: no disponible en la información proporcionada.
 
 ## Casos de uso
-
-- Investigación sobre alineación y rechazo: el adaptador LoRA permite comparar el comportamiento del modelo con y sin la dirección de rechazo sobre el mismo conjunto de prompts, midiendo tasas de rechazo y falsos rechazos con XSTest.
-- Evaluación de robustez de salvaguardas: útil para estudiar hasta qué punto una edición de pesos en el residual stream altera el comportamiento de seguridad de un MoE multimodal.
-- Desarrollo de aplicaciones locales de escritorio: al estar empaquetado en GGUF y orientado a llama.cpp, encaja en la app Atomic Chat para ejecución offline en el equipo del usuario.
-- Experimentación con arquitecturas recurrentes: el núcleo looped del modelo base permite estudiar el comportamiento de MoE con reutilización de bloques en tareas de razonamiento.
-- Prototipado de asistentes multimodales: la entrada de imagen y texto habilita pruebas de descripción de imágenes o respuesta a preguntas visuales en local.
-- Análisis de discrepancias de metadatos: el repositorio sirve como caso de estudio sobre la diferencia entre parámetros anunciados (26,4B) y parámetros reportados en safetensors (318M), relevante para pipelines de verificación de modelos.
+- Investigación sobre alineación y rechazo: el adaptador LoRA permite comparar el comportamiento del modelo con y sin la dirección de rechazo eliminada, usando las mismas indicaciones y el mismo decodificador greedy, lo que facilita estudios reproducibles sobre mecanismos de negativa.
+- Despliegue local en estaciones de trabajo: con la cuantización AD-IQ3_S (13,34 GB) el modelo cabe en GPUs de consumo de 16 GB o más, permitiendo chat multimodal sin conexión a servicios externos.
+- Procesamiento de documentos con imagen: el pipeline image-text-to-text permite extraer y resumir información de capturas, formularios o diagramas junto a texto de contexto largo dentro de los 32.768 tokens.
+- Generación de contenido creativo sin restricciones de estilo: el modelo responde a indicaciones que el original rechazaría, útil en entornos controlados de escritura de ficción o guiones donde se requiere explorar temas sensibles.
+- Evaluación de cuantizaciones: los datos de KLD y top-1 por archivo (0,0115 y 95,6% en Q4_K; 0,0235 y 93,8% en IQ3_S; 0,132 y 85,7% en IQ2_M) permiten elegir el equilibrio entre tamaño y fidelidad para un presupuesto de memoria concreto.
+- Asistente conversacional en ruso e inglés: las pruebas del autor cubren ambos idiomas con indicaciones dañinas e inofensivas, lo que respalda su uso en aplicaciones bilingües de atención al usuario.
+- Prototipado de agentes con razonamiento: los niveles de esfuerzo y el presupuesto de tokens de razonamiento permiten ajustar latencia y profundidad de análisis en tareas de varios pasos, siempre que se validen las capacidades de tool calling por cuenta del integrador.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible. La model card aporta métricas de fidelidad de cuantización y de comportamiento de rechazo:
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que se reportarán rechazos antes y después, XSTest, MMLU y KLD, pero en el momento de la ficha esos datos no están incluidos.
+| Metrica | Original | Con el adaptador | Umbral | Resultado |
+|---|---:|---:|---|---|
+| KLD frente a BF16, AD-Q4_K | 0,0080 (base) | 0,0115 | — | — |
+| Top-1 frente a BF16, AD-Q4_K | 96,3% (base) | 95,6% | — | — |
+| KLD frente a BF16, AD-IQ3_S | 0,0205 (base) | 0,0235 | — | — |
+| Top-1 frente a BF16, AD-IQ3_S | 94,2% (base) | 93,8% | — | — |
+| KLD frente a BF16, AD-IQ2_M | 0,130 (base) | 0,132 | — | — |
+| Top-1 frente a BF16, AD-IQ2_M | 85,7% (base) | 85,7% | — | — |
+| Indicaciones dañinas rechazadas, inglés (81), sin razonamiento | 81 (100%) | 0 | ≤3% | Pasa |
+| Indicaciones dañinas rechazadas, ruso (100), sin razonamiento | 91 (91%) | 0 | ≤3% | Pasa |
+| Indicaciones dañinas rechazadas, validación inglés/ruso (104/100) | 100% / 89% | 0 / 0 | ≤3% | Pasa |
+| Indicaciones dañinas rechazadas con razonamiento, esfuerzo `low` (30) | 28 | 0 | ≤1 | Pasa |
+| Indicaciones dañinas rechazadas con razonamiento, esfuerzo `high` (30) | 26 | 0 | ≤1 | Pasa |
+| Indicaciones seguras rechazadas en XSTest (250) | 10 (4,0%) | 0 | ≤ original + 1 pt | Pasa |
+| Respuestas vacías | 0 | 0 | ≤1% | Pasa |
+
+Las métricas de KLD y top-1 se calcularon sobre un corpus neutral de 87 fragmentos de 4.096 tokens, con decodificación greedy. La model card menciona además una prueba de cierre del razonamiento en 3.072 tokens con esfuerzo `high` sobre indicaciones inofensivas, cuyo resultado queda truncado en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: no disponible con precisión. Con 26,4B parámetros totales y 3,4B activos, una cuantización Q4 requeriría del orden de 15-17 GB de VRAM solo para pesos; el repositorio actual ocupa 1,3 GB, lo que sugiere que los GGUF completos aún no están publicados.
-- GPU recomendadas: no disponible en la información proporcionada.
-- Viabilidad en GPU de consumo: no confirmada; dependerá del tamaño final de los GGUF publicados.
-- Despliegue: llama.cpp con el PR ggml-org/llama.cpp#32695 obligatorio; las versiones sin ese PR no cargan el modelo. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: unos 9 GB para AD-IQ2_M (8,67 GB de pesos), unos 14 GB para AD-IQ3_S (13,34 GB) y unos 17 GB para AD-Q4_K (16,53 GB), más el proyector de visión (0,64 GB) y la caché KV para el contexto elegido.
+- GPU recomendadas: A100 40/80 GB o H100 para contexto completo de 32.768 tokens con Q4_K y margen para lotes; RTX 4090 (24 GB) para Q4_K o IQ3_S con contexto moderado; RTX 4080/4070 Ti Super (16 GB) para IQ3_S; GPUs de 12 GB para IQ2_M con contexto reducido.
+- Cabe en GPU de consumo: sí, en las tres cuantizaciones, con IQ2_M como opción para 12 GB e IQ3_S para 16 GB.
+- Opciones de despliegue: llama.cpp (`llama-server`) con soporte de la arquitectura de bucles de Inkling 2 (build b12600 o superior, PR #32694); el adaptador LoRA se carga con `--lora` sobre cualquier GGUF del repositorio base convertido al diseño fusionado.
+- Latencia y throughput estimados: no disponibles; dependen del hardware, de la cuantización y de la longitud del razonamiento generado.
+- Advertencia de compatibilidad: no mezclar GGUF del diseño antiguo (PR #32695) con la implementación fusionada (PR #32694).
 
 ## Comparativa con modelos similares
+No se dispone de datos de benchmarks del modelo base ni de alternativas comparables en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia.
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Inkling-2-Mini-Uncensored-GGUF | 26,4B totales / 3,4B activos (MoE) | no disponible | Apache-2.0 | Variante uncensored con LoRA y GGUF; requiere llama.cpp con PR #32695 |
-| thinkingmachines/Inkling-2-Mini | 26,4B totales / 3,4B activos (MoE) | no disponible | Apache-2.0 | Modelo base original, con comportamiento de rechazo intacto |
-| AtomicChat/Inkling-2-Mini-GGUF | 26,4B totales / 3,4B activos (MoE) | no disponible | Apache-2.0 | Cuantizaciones GGUF del modelo original sin modificar |
-
-No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Inkling-2-Mini-Uncensored (este) | ~26,4B | ~3,4B | 32.768 en configuración documentada | Apache-2.0 | GGUF + LoRA |
+| thinkingmachines/Inkling-2-Mini (base) | ~26,4B | ~3,4B | No disponible | Apache-2.0 | Pesos originales |
+| Alternativas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
-
-- El repositorio está en estado "in progress": los GGUF definitivos y las métricas prometidas (rechazos, XSTest, MMLU, KLD) aún no están publicados.
-- Existe una discrepancia entre los 26,4B parámetros anunciados en la model card y los 318.256.128 parámetros reportados en safetensors; conviene verificar el modelo antes de usarlo en producción.
-- La eliminación de la dirección de rechazo implica que el modelo responderá a peticiones que el original rechaza; el autor declara que la responsabilidad del uso recae en el usuario.
-- Requiere una versión de llama.cpp con el PR #32695, que era un draft en el momento de la publicación; las releases estándar no cargan el modelo.
-- No hay información sobre sesgos, riesgo de alucinación, idiomas soportados ni longitud de contexto.
-- La licencia Apache-2.0 permite uso comercial, pero la modificación de seguridad puede contravenir políticas de uso aceptable de plataformas que integren el modelo base.
-- No se han publicado métricas de degradación (KLD) frente al modelo original, por lo que se desconoce el impacto de la edición en la calidad general.
+- El modelo elimina deliberadamente el rechazo ante indicaciones dañinas: 0 rechazos en las pruebas del autor frente a 81/81 en inglés y 91/100 en ruso del original. No es apto para despliegues públicos sin filtros externos de seguridad.
+- Riesgo de alucinación no cuantificado: no se han publicado métricas de veracidad ni de MMLU en la información disponible.
+- La cobertura lingüística documentada se limita a inglés y ruso; el rendimiento en castellano u otros idiomas no está verificado.
+- La cuantización IQ2_M presenta una fidelidad notablemente inferior (KLD 0,132; top-1 85,7%), con riesgo de degradación en tareas sensibles a la precisión.
+- El razonamiento del modelo puede no cerrarse dentro del presupuesto de tokens configurado; la model card reporta una prueba al respecto con resultado truncado.
+- Requiere llama.cpp b12600 o superior con la arquitectura de bucles fusionada; versiones anteriores o diseños de GGUF antiguos no son compatibles.
+- Licencia Apache-2.0: permite uso comercial, pero el integrador asume la responsabilidad legal y ética del contenido generado sin censura.
+- Las capacidades de tool calling, agentes y multi-paso no están documentadas y deben validarse antes de usarlas en producción.
 
 ## Enlaces
-
-- Hugging Face: https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Cuantizaciones originales: https://huggingface.co/AtomicChat/Inkling-2-Mini-GGUF
-- PR de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/pull/32695
-- Atomic Chat: https://atomic.chat/
+- GGUF del modelo base: https://huggingface.co/AtomicChat/Inkling-2-Mini-GGUF
+- Guía de ejecución local: https://atomic.chat/blog/guides/how-to-run-inkling-2-mini-uncensored-locally
+- Aplicación Atomic Chat: https://atomic.chat/
 - GitHub de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat
 - Discord: https://discord.gg/8wGSsvmg4V
 - X (Twitter): https://x.com/atomic_chat_hq
+- PR de llama.cpp con la arquitectura de bucles fusionada: https://github.com/ggml-org/llama.cpp/pull/32694
+- PR anterior de llama.cpp (diseño obsoleto): https://github.com/ggml-org/llama.cpp/pull/32695
+- Dataset de indicaciones dañinas: https://huggingface.co/datasets/mlabonne/harmful_behaviors
+- Dataset XSTest: https://huggingface.co/datasets/walledai/XSTest

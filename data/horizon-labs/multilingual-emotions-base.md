@@ -1,110 +1,101 @@
 # Horizon-Labs/multilingual-emotions-base
 
 ## Resumen
+Multilingual Emotions (base) es un clasificador multi-etiqueta de emociones desarrollado por Horizon-Labs que reproduce las 28 etiquetas del corpus GoEmotions de Google (admiration, amusement, anger, ... , surprise, neutral) sobre texto en ingles y otros 35 idiomas. Se presenta como alternativa multilingue directa a modelos GoEmotions solo en ingles como SamLowe/roberta-base-go_emotions: mantiene el mismo conjunto de etiquetas y la misma salida sigmoide multi-etiqueta, de modo que puede sustituir a esos modelos sin cambiar el esquema de anotacion. Esta construido sobre jhu-clsp/mmBERT-base, un encoder ModernBERT multilingue, con licencia Apache-2.0.
 
-Multilingual Emotions (base) es un clasificador de emociones multi-etiqueta desarrollado por Horizon-Labs, construido sobre el modelo base jhu-clsp/mmBERT-base, un codificador de arquitectura ModernBERT con 307.551.772 parámetros (aproximadamente 308M). Su objetivo es trasladar el esquema de 28 etiquetas de Google GoEmotions (admiration, amusement, anger, ..., surprise, neutral) desde el inglés a un entorno multilingüe: la model card indica soporte para inglés y otros 35 idiomas, con la misma salida sigmoide multi-etiqueta que usan los modelos GoEmotions en inglés.
+El modelo tiene 307.551.772 parametros (unos 308M) y un repositorio de 3,1 GB que incluye pesos en safetensors y exportaciones ONNX para CPU y navegador via transformers.js. La tarea es text-classification con cabecera multi-etiqueta: cada etiqueta recibe una probabilidad independiente, de forma que un texto puede activar varias emociones o solo neutral. Incluye un fichero thresholds.json con umbrales por etiqueta calibrados sobre el conjunto de validacion de GoEmotions, y un mapeo ekman_mapping.json para agrupar las 28 etiquetas en las 6 emociones de Ekman.
 
-El modelo se presenta como alternativa multilingüe directa ("drop-in") a SamLowe/roberta-base-go_emotions: conserva las mismas etiquetas y el mismo tipo de salida, de modo que puede sustituir a un clasificador inglés sin rehacer el etiquetado. Es relevante ahora porque permite aplicar un esquema de anotación muy extendido en investigación sobre emociones (GoEmotions) a textos escritos en decenas de idiomas sin traducción previa, y porque distribuye artefactos ONNX (incluido un cuantizado int8 de 641 MB) para ejecución en CPU y en navegador mediante transformers.js.
-
-Técnicamente es un clasificador de texto (pipeline text-classification), no un modelo generativo. Cada etiqueta recibe una probabilidad independiente, por lo que un mismo texto puede activar varias emociones o solo neutral. El modelo incluye ficheros auxiliares como thresholds.json (un umbral por etiqueta, calibrado sobre el conjunto de validación de GoEmotions) y ekman_mapping.json (agrupación en las 6 emociones de Ekman). La licencia es Apache-2.0 y el modelo base también es Apache-2.0.
+Su relevancia actual radica en cubrir el hueco de la clasificacion emocional multilingue con etiquetas estandarizadas y licencia permisiva, algo poco habitual: la mayoria de alternativas son solo en ingles o usan conjuntos de etiquetas propios. Ademas ofrece una version reducida (multilingual-emotions-small, 141M) y una demo en el navegador en Hugging Face Spaces.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Codificador transformer (basado en ModernBERT; modelo base jhu-clsp/mmBERT-base) |
-| Parametros totales | 307.551.772 (aproximadamente 308M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | fp32 y ONNX int8 (model_quantized.onnx, 641 MB); el int8 coincide con fp32 en el 99,1% de 448 textos de prueba con las 28 etiquetas a umbral 0,5 |
-| Idiomas soportados | 36 idiomas: en, de, fr, es, pt, it, nl, pl, ru, uk, cs, ro, sv, da, no, fi, hu, el, tr, ar, he, fa, hi, mr, bn, ur, zh, ja, ko, vi, th, id, sw, af, tt, ha y multilingüe |
+| Arquitectura | Transformer encoder (ModernBERT / mmBERT-base) con cabecera de clasificacion multi-etiqueta |
+| Parametros totales | 307.551.772 (308M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | ONNX int8 (model_quantized.onnx, embeddings int8, 641 MB); dtype q8 en transformers.js; safetensors fp32 |
+| Idiomas soportados | 36 idiomas: en, de, fr, es, pt, it, nl, pl, ru, uk, cs, ro, sv, da, no, fi, hu, el, tr, ar, he, fa, hi, mr, bn, ur, zh, ja, ko, vi, th, id, sw, af, tt, ha |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX (fp32 y cuantizado int8) |
+| Formato de pesos | safetensors, ONNX (fp32 e int8) |
 
 ## Arquitectura y entrenamiento
+El modelo parte de jhu-clsp/mmBERT-base, un encoder de la familia ModernBERT adaptado a multiples idiomas, y anade una cabeza de clasificacion con activacion sigmoide para las 28 etiquetas de GoEmotions en regimen multi-etiqueta. La salida no es una distribucion softmax excluyente, sino 28 probabilidades independientes, lo que permite detectar emociones simultaneas (por ejemplo, gratitud y alegria) o marcar neutral cuando ninguna supera su umbral.
 
-El modelo es un codificador de clasificación de texto construido sobre mmBERT-base (jhu-clsp), una arquitectura derivada de ModernBERT orientada a lenguas múltiples. Con 308M de parámetros, emite una salida de clasificación multi-etiqueta con activación sigmoide independiente por etiqueta, sobre las 28 clases del esquema GoEmotions. Se distribuyen pesos en safetensors y varios artefactos ONNX, además de una variante cuantizada int8 destinada a inferencia en CPU y a ejecución en el navegador con transformers.js.
-
-En cuanto a los datos, la model card declara que el dataset de referencia es google-research-datasets/go_emotions y que los benchmarks se usaron únicamente para evaluación, eliminando del entrenamiento los textos que también aparecían en ellos. La información disponible no detalla el número de tokens de entrenamiento, la composición completa del corpus ni si se emplearon etapas de RLHF o DPO; al tratarse de un clasificador de encoder y no de un modelo generativo, estos procedimientos de alineación habituales en LLM no aplican del mismo modo. Como características técnicas destacables, el modelo incluye un fichero thresholds.json con un umbral calibrado por etiqueta para el conjunto de validación de GoEmotions (pensado sobre todo para etiquetas raras como grief, pride, relief o nervousness) y un fichero ekman_mapping.json para agrupar las 28 etiquetas en las 6 emociones de Ekman.
+El entrenamiento combina el corpus original google-research-datasets/go_emotions (comentarios de Reddit en ingles) con Horizon-Labs/go-emotions-multilingual, un conjunto multilingue derivado. La model card indica que los benchmarks se usaron solo para evaluacion y que se eliminaron los textos de entrenamiento que tambien aparecian en ellos, lo que reduce el riesgo de contaminacion. No se especifican en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion detallada del dataset multilingue ni si se aplicaron tecnicas de RLHF o DPO (poco habituales en un encoder de clasificacion). Como innovacion practica destacan los umbrales por etiqueta calibrados en validacion y la exportacion ONNX int8, que coincide con fp32 en el 99,1% de 448 textos de prueba con todas las etiquetas umbralizadas a 0,5.
 
 ## Capacidades
-
-- Clasificación de emociones multi-etiqueta con las 28 etiquetas de GoEmotions (admiration, amusement, anger, annoyance, approval, caring, confusion, curiosity, desire, disappointment, disapproval, disgust, embarrassment, excitement, fear, gratitude, grief, joy, love, nervousness, optimism, pride, realization, relief, remorse, sadness, surprise, neutral).
-- Salida sigmoide con una probabilidad independiente por etiqueta: un texto puede recibir varias emociones simultáneamente o solo neutral.
-- Clasificación multilingüe en 36 idiomas, incluidos español, inglés, alemán, francés, portugués, italiano, neerlandés, polaco, ruso, ucraniano, checo, rumano, sueco, danés, noruego, finés, húngaro, griego, turco, árabe, hebreo, persa, hindi, maratí, bengalí, urdu, chino, japonés, coreano, vietnamita, tailandés, indonesio, suajili, afrikáans, tártaro y hausa.
-- Umbrales por etiqueta mediante thresholds.json, calibrados sobre la validación de GoEmotions, para ajustar la sensibilidad especialmente en emociones poco frecuentes.
-- Agrupación en las 6 emociones de Ekman (anger, disgust, fear, joy, sadness, surprise) mediante ekman_mapping.json, tomando el máximo por grupo.
-- Ejecución en CPU y en navegador mediante los artefactos ONNX y transformers.js (dtype q8).
-- Integración directa con el pipeline text-classification de transformers y compatibilidad declarada con text-embeddings-inference y endpoints.
-- No dispone de generación de texto, tool calling, function calling, capacidades de agente ni razonamiento multi-paso: es un codificador de clasificación, no un modelo generativo.
+- Clasificacion multi-etiqueta de emociones con las 28 etiquetas de GoEmotions (admiration, amusement, anger, annoyance, approval, caring, confusion, curiosity, desire, disappointment, disapproval, disgust, embarrassment, excitement, fear, gratitude, grief, joy, love, nervousness, optimism, pride, realization, relief, remorse, sadness, surprise, neutral).
+- Salida de probabilidad independiente por etiqueta, con soporte de umbrales por etiqueta mediante thresholds.json.
+- Agrupacion en las 6 emociones de Ekman (anger, disgust, fear, joy, sadness, surprise) mediante ekman_mapping.json y maximo por grupo.
+- Cobertura multilingue en 36 idiomas, con ejemplos en la model card en ingles, aleman, espanol y chino.
+- Inferencia en CPU y navegador gracias a las exportaciones ONNX y al soporte de transformers.js con dtype q8.
+- Compatibilidad con text-embeddings-inference y endpoints compatibles segun los tags del repositorio.
+- No soporta generacion de texto, tool calling, agentes ni vision: es exclusivamente un clasificador de texto.
 
 ## Casos de uso
-
-- Moderación de contenido multilingüe: clasificar comentarios de usuarios en 36 idiomas y activar reglas automáticas cuando se detectan emociones como anger, disgust o annoyance, sin necesidad de traducir previamente el texto.
-- Análisis de opiniones y reseñas de producto: aplicar el clasificador a reseñas en distintos idiomas para obtener un perfil emocional por reseña y agregarlo por producto, categoría o mercado.
-- Monitorización de redes sociales y escucha activa de marca: procesar menciones multilingües en tiempo casi real y priorizar las que concentran emociones negativas (fear, sadness, remorse) frente a las positivas (gratitude, joy, admiration).
-- Priorización en atención al cliente: puntuar el tono emocional de los tickets entrantes para enrutar primero los casos con alta carga de frustración o enfado y ofrecer respuestas más cuidadas.
-- Análisis de encuestas abiertas y NPS: clasificar respuestas de texto libre en varios idiomas y cruzar las emociones detectadas con métricas cuantitativas de satisfacción.
-- Investigación en ciencias sociales y estudios de opinión: aplicar un esquema de anotación homogéneo (GoEmotions) a corpus multilingües, aprovechando thresholds.json para mantener consistencia entre anotaciones.
-- Detección temprana de señales de riesgo emocional: usar las etiquetas grief, sadness, fear o nervousness como señales de alerta en foros de apoyo, con revisión humana posterior obligatoria.
-- Clasificación en el navegador sin enviar datos a un servidor: mediante los artefactos ONNX y transformers.js, ejecutar la clasificación en el propio cliente para casos con requisitos de privacidad.
+- Moderacion de comunidades multilingues: clasificar comentarios en 36 idiomas y priorizar los que activan anger, disgust o disapproval por encima de su umbral, usando thresholds.json para reducir falsos positivos en etiquetas raras.
+- Analisis de sentimiento y emociones en resenas de producto: agregar las probabilidades de joy, gratitude, disappointment y annoyance por producto y por mercado linguistico, comparando mercados en una misma escala de etiquetas.
+- Monitorizacion de redes sociales y escucha activa de marca: procesar menciones en multiples idiomas con un unico modelo y agrupar en las 6 emociones de Ekman para dashboards ejecutivos.
+- Atencion al cliente: enrutar tickets o mensajes de chat hacia equipos especializados cuando se detectan fear, nervousness o remorse, y medir la evolucion emocional de una conversacion multi-turno clasificando cada mensaje por separado.
+- Investigacion en psicologia y ciencias sociales: anotar corpus multilingues con etiquetas estandarizadas de GoEmotions, aprovechando que el modelo conserva el esquema de SamLowe/roberta-base-go_emotions para comparar con estudios previos en ingles.
+- Analisis de salud mental y bienestar (con supervision humana): senalar textos con sadness, grief o nervousness elevados para revision por parte de moderadores o profesionales, nunca como decision automatica.
+- Clasificacion en el navegador o en el edge: usar la version ONNX int8 con transformers.js para procesar texto localmente sin enviar datos a un servidor, util en aplicaciones de privacidad o en entornos con conectividad limitada.
+- Enriquecimiento de datasets para entrenamiento: generar etiquetas emocionales multilingues como caracteristica auxiliar en pipelines de datos para otros modelos.
 
 ## Benchmarks y rendimiento
-
-Resultados declarados en la model card. GoEmotions test: comentarios de Reddit en inglés (5.427 textos, 28 etiquetas), macro-F1 sobre las 28 etiquetas a umbral 0,5 y con umbrales por etiqueta calibrados en validación. BRIGHTER: textos etiquetados por humanos en 28 idiomas (hasta 1.500 textos de test por idioma), con 6 emociones y múltiples etiquetas; la puntuación es macro-F1 sobre las emociones anotadas, promediada sobre idiomas. "4 emociones" = anger, fear, joy y sadness únicamente.
+Los benchmarks se usaron solo para evaluacion y se eliminaron textos de entrenamiento coincidentes con ellos. GoEmotions test: 5.427 comentarios de Reddit en ingles, macro-F1 sobre 28 etiquetas. BRIGHTER: textos escritos originalmente en 28 idiomas (no traducciones), hasta 1.500 textos de test por idioma; cada modelo recibe un umbral por idioma y emocion ajustado en el split de desarrollo de ese idioma, y la puntuacion es macro-F1 promediado sobre idiomas. "4 emociones" se refiere a anger, fear, joy y sadness.
 
 | Modelo | Licencia | GoEmotions macro-F1 @0,5 | GoEmotions macro-F1 (umbrales ajustados) | BRIGHTER 6 emociones | BRIGHTER 4 emociones | Etiquetas |
 |---|---|---|---|---|---|---|
-| multilingual-emotions-base (este modelo, 308M) | Apache-2.0 | 0,473 | 0,516 | 0,420 | 0,449 | 28 etiquetas GoEmotions, multilingüe |
-| multilingual-emotions-small (141M) | Apache-2.0 | 0,447 | 0,494 | 0,406 | 0,432 | 28 etiquetas GoEmotions, multilingüe |
-| SamLowe/roberta-base-go_emotions (125M) | MIT | 0,450 | 0,519 | 0,282 | 0,291 | 28 etiquetas GoEmotions, inglés |
-| AnasAlokla/multilingual_go_emotions | MIT | 0,455 | 0,538 | 0,337 | 0,355 | 28 etiquetas GoEmotions, multilingüe |
-| j-hartmann/emotion-english-distilroberta-base (82M) | No indicada | No disponible | No disponible | 0,297 | 0,315 | 7 etiquetas, inglés |
-| MilaNLProc/xlm-emo-t (278M) | No indicada | No disponible | No disponible | No disponible | 0,456 | 4 etiquetas (anger, fear, joy, sadness), tuits multilingües |
-| tabularisai/multilingual-emotion-classification (135M) | CC-BY-NC-4.0 | No disponible | No disponible | 0,404 | 0,428 | No indicadas en la información disponible |
+| multilingual-emotions-base (308M) | Apache-2.0 | 0,473 | 0,516 | 0,420 | 0,449 | 28 GoEmotions, multilingue |
+| multilingual-emotions-small (141M) | Apache-2.0 | 0,447 | 0,494 | 0,406 | 0,432 | 28 GoEmotions, multilingue |
+| SamLowe/roberta-base-go_emotions (125M) | MIT | 0,450 | 0,519 | 0,282 | 0,291 | 28 GoEmotions, ingles |
+| AnasAlokla/multilingual_go_emotions | MIT | 0,455 | 0,538 | 0,337 | 0,355 | 28 GoEmotions, multilingue |
+| j-hartmann/emotion-english-distilroberta-base (82M) | no indicada | no disponible | no disponible | 0,297 | 0,315 | 7 etiquetas, ingles |
+| MilaNLProc/xlm-emo-t (278M) | no indicada | no disponible | no disponible | no disponible | 0,456 | 4 etiquetas, tweets multilingues |
+| tabularisai/multilingual-emotion-classification (135M) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+Lectura de los datos: en GoEmotions en ingles el modelo queda ligeramente por debajo de SamLowe (0,516 frente a 0,519 con umbrales ajustados) y de AnasAlokla (0,538), pero muy por encima de ambos en BRIGHTER multilingue (0,420 frente a 0,282 y 0,337 en 6 emociones). La mejora frente a la version small es consistente en todas las metricas.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: en fp32 unos 1,2 GB solo de pesos; en fp16/bf16 en torno a 0,6 GB; en int8 (ONNX cuantizado, fichero de 641 MB) aproximadamente 0,3 GB de pesos. Hay que sumar el consumo de activaciones y de memoria del runtime.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp16 o int8. GPU de datacenter como A100, H100 o L40S quedan muy sobredimensionadas y solo se justifican para altos volúmenes de peticiones concurrentes.
-- Cabe sobradamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 o incluso GPUs integradas recientes, siempre que se use fp16 o int8.
-- Despliegue: transformers (pipeline text-classification), ONNX Runtime para CPU, transformers.js para navegador, y text-embeddings-inference para servir el modelo como endpoint según los tags del repositorio. Al ser un codificador de clasificación, no se sirve con vLLM ni con motores orientados a decodificación generativa.
-- Latencia y throughput: no disponibles. El tamaño (308M) y el fichero int8 (641 MB) permiten inferencia por lotes muy rápida en GPU y viable en CPU, pero la model card no publica cifras de latencia ni de peticiones por segundo.
+- VRAM estimada: el modelo fp32 de 308M ocupa aproximadamente 1,2 GB en pesos; la version ONNX int8 (641 MB) reduce el requisito a menos de 1 GB en CPU.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 4090, RTX 3090 o incluso una RTX 3060 de 12 GB ejecutan el modelo con holgura. Para despliegue a gran escala, A100 o H100 permiten mayor batching y throughput.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU con 4 GB o mas de VRAM, y tambien en CPU para cargas moderadas.
+- Opciones de despliegue: transformers (pipeline de text-classification), ONNX Runtime, transformers.js en navegador, text-embeddings-inference y endpoints compatibles segun los tags del repositorio. No se documenta soporte especifico de vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles de forma oficial. Como referencia cualitativa, un encoder de 308M es ordenes de magnitud mas rapido que un LLM generativo y puede procesar lotes grandes en GPU; la version int8 esta pensada para CPU y navegador.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | GoEmotions macro-F1 (ajustado) | BRIGHTER 6 emociones | Licencia |
-|---|---|---|---|---|---|---|
-| multilingual-emotions-base | 308M | No disponible | 36 | 0,516 | 0,420 | Apache-2.0 |
-| multilingual-emotions-small | 141M | No disponible | No especificado | 0,494 | 0,406 | Apache-2.0 |
-| SamLowe/roberta-base-go_emotions | 125M | No disponible | Inglés | 0,519 | 0,282 | MIT |
-| AnasAlokla/multilingual_go_emotions | No disponible | No disponible | Multilingüe | 0,538 | 0,337 | MIT |
-| tabularisai/multilingual-emotion-classification | 135M | No disponible | Multilingüe | No disponible | 0,404 | CC-BY-NC-4.0 |
+| Modelo | Parametros | Contexto | Idiomas | GoEmotions F1 (umbrales aj.) | BRIGHTER 6 emociones | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|---|
+| multilingual-emotions-base | 308M | no disponible | 36 | 0,516 | 0,420 | Apache-2.0 | Hugging Face, ONNX, transformers.js |
+| multilingual-emotions-small | 141M | no disponible | 36 | 0,494 | 0,406 | Apache-2.0 | Hugging Face |
+| SamLowe/roberta-base-go_emotions | 125M | no disponible | ingles | 0,519 | 0,282 | MIT | Hugging Face |
+| AnasAlokla/multilingual_go_emotions | no disponible | no disponible | multilingue | 0,538 | 0,337 | MIT | Hugging Face |
 
-Frente a SamLowe/roberta-base-go_emotions, el modelo de Horizon-Labs iguala aproximadamente el rendimiento en GoEmotions en inglés con umbrales ajustados (0,516 frente a 0,519) y lo supera claramente en cobertura multilingüe medida con BRIGHTER (0,420 frente a 0,282). Frente a AnasAlokla/multilingual_go_emotions, este último obtiene mejor macro-F1 en GoEmotions (0,538 frente a 0,516) pero peor resultado multilingüe en BRIGHTER (0,337 frente a 0,420). La versión small (141M) queda ligeramente por debajo en ambas métricas, a cambio de menor tamaño. La licencia Apache-2.0 de este modelo es más permisiva para uso comercial que la CC-BY-NC-4.0 de tabularisai/multilingual-emotion-classification.
+El modelo se posiciona como la opcion mas equilibrada entre rendimiento en ingles y cobertura multilingue dentro del esquema de 28 etiquetas de GoEmotions. SamLowe sigue siendo competitivo en ingles puro con menos parametros, y AnasAlokla obtiene mejor F1 en GoEmotions pero cae notablemente en BRIGHTER.
 
 ## Limitaciones y advertencias
-
-- Es un clasificador de emociones, no un modelo generativo: no produce texto, no razona de forma multi-paso y no soporta tool calling ni uso como agente.
-- La model card no documenta sesgos demográficos, culturales o lingüísticos concretos. Al entrenarse sobre GoEmotions (comentarios de Reddit en inglés) y evaluarse sobre BRIGHTER, es esperable un sesgo hacia el dominio y el registro del corpus original, pero no hay un análisis publicado en la información disponible.
-- Riesgo de alucinación no aplica como tal (no genera texto), pero sí existe riesgo de clasificación errónea: la macro-F1 de 0,516 en GoEmotions con umbrales ajustados implica una precisión moderada, especialmente baja en etiquetas raras (grief, pride, relief, nervousness).
-- Es imprescindible usar thresholds.json en lugar del umbral 0,5 para obtener un rendimiento razonable; usar 0,5 penaliza notablemente las etiquetas poco frecuentes.
-- La cobertura de idiomas es declarativa (36 idiomas). El rendimiento real por idioma no se detalla más allá del promedio de BRIGHTER, por lo que conviene validar en el idioma y dominio objetivo antes de producción.
-- El modelo no tiene contexto declarado en la información disponible, lo que limita las afirmaciones sobre textos largos.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución; conviene revisar igualmente las condiciones del modelo base jhu-clsp/mmBERT-base (también Apache-2.0 según la información disponible).
-- Para detección de señales de riesgo emocional o salud mental, no debe usarse de forma autónoma; requiere revisión humana y validación clínica específica.
+- Clasificador, no generador: no produce texto, no razona y no soporta tool calling ni agentes; cualquier caso de uso debe tratarse como etiquetado.
+- Riesgo de alucinacion no aplica en el sentido generativo, pero si de falsos positivos y negativos: las etiquetas raras (grief, pride, relief, nervousness) son especialmente sensibles al umbral, y la model card recomienda usar thresholds.json en lugar de 0,5.
+- Rendimiento desigual por idioma: el macro-F1 de BRIGHTER es un promedio sobre 28 idiomas y no se publican resultados desglosados por idioma en la informacion disponible; el rendimiento en idiomas de bajos recursos (tt, ha, sw) puede ser inferior.
+- Sesgos de dominio: el corpus de entrenamiento principal son comentarios de Reddit en ingles, lo que puede introducir sesgos de registro, demografia y temas; el conjunto multilingue derivado no se detalla en la informacion disponible.
+- Longitud de contexto no documentada: no se especifica la ventana maxima; textos largos pueden truncarse.
+- Uso comercial: la licencia Apache-2.0 permite uso comercial, pero conviene revisar las condiciones de los datasets de origen (GoEmotions y BRIGHTER tienen sus propias licencias) y de los modelos base.
+- No apto como unico criterio en decisiones sensibles (salud mental, moderacion con consecuencias legales): debe combinarse con revision humana.
+- La version ONNX int8 presenta una concordancia del 99,1% con fp32 en 448 textos, por lo que existe una pequena divergencia esperada en produccion.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-emotions-base
-- Version small (141M): https://huggingface.co/Horizon-Labs/multilingual-emotions-small
+- Version reducida: https://huggingface.co/Horizon-Labs/multilingual-emotions-small
 - Demo en el navegador: https://huggingface.co/spaces/Horizon-Labs/multilingual-emotions
-- Modelo base mmBERT-base: https://huggingface.co/jhu-clsp/mmBERT-base
+- Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Dataset GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions
-- Dataset BRIGHTER (emotion categories): https://huggingface.co/datasets/brighter-dataset/BRIGHTER-emotion-categories
-- SamLowe/roberta-base-go_emotions: https://huggingface.co/SamLowe/roberta-base-go_emotions
-- AnasAlokla/multilingual_go_emotions: https://huggingface.co/AnasAlokla/multilingual_go_emotions
-- j-hartmann/emotion-english-distilroberta-base: https://huggingface.co/j-hartmann/emotion-english-distilroberta-base
-- MilaNLProc/xlm-emo-t: https://huggingface.co/MilaNLProc/xlm-emo-t
-- tabularisai/multilingual-emotion-classification: https://huggingface.co/tabularisai/multilingual-emotion-classification
-- Nota: la búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a entidades no relacionadas (partido político Horizons, VMware Horizon, Meta Horizon), por lo que no se incluyen.
+- Dataset multilingue: https://huggingface.co/datasets/Horizon-Labs/go-emotions-multilingual
+- Dataset BRIGHTER: https://huggingface.co/datasets/brighter-dataset/BRIGHTER-emotion-categories
+- Modelo de referencia en ingles: https://huggingface.co/SamLowe/roberta-base-go_emotions
+- Alternativa multilingue: https://huggingface.co/AnasAlokla/multilingual_go_emotions
+- Clasificador de 7 etiquetas en ingles: https://huggingface.co/j-hartmann/emotion-english-distilroberta-base
+- Clasificador de 4 etiquetas en tweets: https://huggingface.co/MilaNLProc/xlm-emo-t

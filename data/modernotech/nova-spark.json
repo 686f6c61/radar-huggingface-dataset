@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 368,
+  "downloads_30d": 372,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
@@ -48,5 +48,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "7 Best NFT Tools Every Creator and Investor Should Know in 2026",
+      "url": "https://helalabs.com/blog/best-nft-tools/",
+      "snippet": "In this article, we explore 7 of the most powerful and innovative NFT tools every creator and investor should master to stay ahead in …Read more"
+    }
+  ]
 }

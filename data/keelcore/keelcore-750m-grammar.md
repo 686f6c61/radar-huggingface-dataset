@@ -2,93 +2,95 @@
 
 ## Resumen
 
-KeelCore-750M-Grammar es un adaptador LoRA de rango 16 (18,29 M de parámetros entrenables, el 2,43 % del modelo base) diseñado para corregir ortografía, gramática, mayúsculas y puntuación en inglés. No es un modelo autónomo: requiere el modelo base congelado KeelCore-750M, un encoder-decoder de 750 M de parámetros. El adaptador ocupa unos 73 MB (0,1 GB de repositorio) y se distribuye en formato propietario de KeelCore (`adapter.safetensors` + `adapter_config.json`), no en formato PEFT, por lo que se carga mediante el código del repositorio GitHub del autor.
+KeelCore-750M-Grammar es un adaptador LoRA de rango 16 (18,29 M de parametros entrenables, el 2,43 % del modelo base) construido sobre Thelivu-750M, un modelo encoder-decoder de 750 M de parametros. Lo desarrolla KeelCore, aunque la model card reproduce integramente la documentacion del adaptador original de Thelivu (autor Saravanan A R), lo que sugiere una redistribucion o fork del adaptador Thelivu-750M-Grammar bajo el identificador KeelCore. Su tarea es concreta: corregir ortografia, gramatica, mayusculas y puntuacion en ingles manteniendo la redaccion, el tono y el significado originales.
 
-El modelo resuelve un problema acotado y bien delimitado: la corrección de texto sin reescritura. Según la model card, las salidas quedan dentro del 1 % de la longitud de la entrada y alcanzan 94 chrF de coincidencia a nivel de carácter con el texto original, lo que indica una fuerte preservación del contenido, el tono y el significado. Al ser un encoder-decoder, lee la entrada completa antes de generar, lo que le permite copiar literalmente nombres, URLs y correos electrónicos.
+El modelo resuelve un problema acotado y frecuente en produccion: la correccion automatica de texto en ingles sin reescritura creativa. Al ser un encoder-decoder, lee la entrada completa antes de generar, lo que le permite copiar literalmente nombres propios, URL y direcciones de correo sin alterarlos. El adaptador ocupa 73 MB (repositorio de 0,3 GB) y necesita el modelo base congelado para funcionar; no es un modelo autonomo.
 
-Su relevancia práctica radica en el despliegue ligero: puede ejecutarse en CPU o GPU con PyTorch, o directamente en el navegador mediante ONNX Runtime Web, lo que habilita corrección local sin que el texto salga del dispositivo del usuario. Está pensado para borradores de mensajes, correos, tickets y notas cortas, no como modelo conversacional ni como asistente de instrucciones.
+Es relevante ahora por su perfil de despliegue: cabe en CPU y en navegador mediante ONNX Runtime Web, lo que habilita correccion de texto en local sin enviar datos a un servidor. La licencia Thelivu License 1.0 (etiquetada como "other") y el soporte exclusivo de ingles limitan su alcance, pero lo posicionan como una pieza ligera y especializada dentro de pipelines de edicion de texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (rango 16) sobre encoder-decoder KeelCore-750M |
+| Arquitectura | Adaptador LoRA (rango 16) sobre modelo base encoder-decoder Thelivu-750M |
 | Parametros totales | 18,29 M entrenables en el adaptador (2,43 % del base); base de 750 M |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (salida limitada a 384 tokens nuevos por defecto) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (ingles) |
-| Licencia | keelcore-license-1.0 (KeelCore License, Version 1.0) |
-| Formato de pesos | `adapter.safetensors` + `adapter_config.json` (formato KeelCore, no PEFT); soporte ONNX Runtime Web |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (salida limitada a 384 tokens nuevos con ajustes por defecto) |
+| Tipos de cuantizacion | No disponible (se distribuye en safetensors; existe variante ONNX para navegador) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Thelivu License, Version 1.0 (etiqueta "other") |
+| Formato de pesos | `adapter.safetensors` + `adapter_config.json` en formato propietario Thelivu (no PEFT); variante ONNX |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre KeelCore-750M, un transformer encoder-decoder. La elección de encoder-decoder es deliberada: el modelo lee toda la secuencia de entrada antes de decodificar, lo que facilita la copia fiel de fragmentos exactos (nombres propios, URLs, direcciones de correo) y reduce la tendencia a parafrasear. El adaptador es un LoRA de rango 16 con 18,29 M de parámetros entrenables, lo que supone el 2,43 % de los pesos del modelo base, que permanece congelado durante el entrenamiento.
+El adaptador se aplica sobre Thelivu-750M, un transformer encoder-decoder de 750 M de parametros. La eleccion de encoder-decoder es deliberada: el modelo codifica la secuencia completa antes de decodificar, lo que facilita la copia fiel de fragmentos exactos (nombres, URL, correos, telefonos) y reduce el riesgo de alterar texto que debe permanecer intacto. El adaptador es un LoRA de rango 16 con 18,29 M de parametros entrenables, almacenado en un unico archivo de 73 MB.
 
-La entrada se envuelve automáticamente con la plantilla ` <text_to_rewrite> … </text_to_rewrite> </s>`, y la salida se limita por defecto a 384 tokens nuevos. Según la model card, el entrenamiento se centró casi exclusivamente en ejemplos que contenían errores, lo que explica su sesgo a editar incluso texto ya correcto. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El entrenamiento se centra casi exclusivamente en ejemplos que contienen errores, con el objetivo de que la salida mantenga una longitud cercana a la entrada (diferencia media inferior al 1 %) y una alta similitud caracter a caracter (94 chrF). No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. El adaptador incluye un mecanismo de verificacion de huella (fingerprint) de los pesos base que impide cargarlo sobre cualquier modelo distinto de Thelivu-750M.
 
 ## Capacidades
 
-- Corrección de ortografía en inglés, incluyendo errores tipográficos comunes ("recieve" → "received", "definately" → "definitely").
-- Corrección gramatical: concordancia sujeto-verbo, tiempos verbales, condicionales ("If I would have known" → "If I had known").
-- Corrección de mayúsculas y puntuación, incluyendo separación de oraciones y uso de punto y coma.
-- Preservación de la formulación original: no reescribe ni cambia el tono, solo elimina errores.
-- Copia literal de texto exacto (URLs, correos, números de teléfono) gracias a la arquitectura encoder-decoder.
-- Ejecución en CPU, GPU (PyTorch) o navegador (ONNX Runtime Web).
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
+- Correccion de ortografia en ingles, incluidos errores tipicos de escritura (recieve, definately, tommorow).
+- Correccion gramatical: concordancia sujeto-verbo, tiempos verbales, condicionales y formas como "would of" por "would have".
+- Correccion de mayusculas, incluidos nombres propios y toponimos (canada por Canada).
+- Correccion de puntuacion y segmentacion de oraciones.
+- Preservacion de texto exacto: URL, direcciones de correo y numeros de telefono se copian sin modificacion.
+- Modo corrector, no reescritor: mantiene el tono y la redaccion originales, con desviacion de longitud inferior al 1 %.
+- Ejecucion en CPU, GPU con PyTorch o navegador mediante ONNX Runtime Web.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio.
 - No es un modelo conversacional: no responde preguntas ni sigue instrucciones contenidas en el texto.
-- Monolingüe: únicamente inglés.
 
 ## Casos de uso
 
-- Revisión de borradores de correo electrónico: el adaptador corrige gramática y puntuación manteniendo el tono y la longitud del mensaje (variación media inferior al 1 %), por lo que el usuario no tiene que releer el texto completo tras la corrección.
-- Corrección local en el navegador: mediante ONNX Runtime Web, una aplicación web puede ofrecer corrección de texto sin enviar el contenido a un servidor, adecuado para entornos con requisitos de privacidad.
-- Preprocesado de tickets de soporte: normalizar la ortografía y gramática de las incidencias antes de clasificarlas o indexarlas, mejorando la calidad de los embeddings y de la búsqueda posterior.
-- Corrección en aplicaciones de mensajería o notas: integrado como paso previo al envío, con latencia baja al ejecutarse en CPU y un adaptador de solo 73 MB.
-- Limpieza de corpus para investigación: como paso de normalización en pipelines de datos en inglés, siempre que se excluyan campos donde cada carácter deba preservarse.
-- Punto de partida para investigación sobre adaptadores pequeños: el adaptador sirve como referencia para estudiar LoRA de bajo rango sobre un modelo base compartido, con una tarea bien delimitada y métricas de preservación (chrF) publicadas.
+- Correccion de borradores en aplicaciones de mensajeria y correo: el adaptador procesa mensajes y emails cortos y devuelve el texto con los errores eliminados, manteniendo nombres y direcciones intactos gracias a la arquitectura encoder-decoder.
+- Reescritura en local sin salida de datos: al ejecutarse en CPU o en navegador con ONNX Runtime Web, permite corregir texto sensible sin enviarlo a un servidor externo, lo que encaja en entornos con requisitos de privacidad.
+- Preprocesado en pipelines de tickets de soporte: se puede insertar como paso previo a la clasificacion o al enrutamiento de tickets para normalizar la ortografia y la puntuacion antes del analisis.
+- Correccion de notas y documentacion corta: util para normalizar notas internas, actas o documentacion breve antes de su publicacion o archivado.
+- Paso de control de calidad en herramientas de escritura: integrado como capa final de correccion en editores o correctores, con la advertencia de que no debe aplicarse a codigo, configuracion ni cifras financieras.
+- Base para investigacion sobre adaptadores pequenos: sirve como punto de partida para estudiar el comportamiento de adaptadores LoRA de bajo rango sobre un modelo base compartido y congelado.
+- Correccion de formularios y campos de texto libre: normaliza la entrada del usuario en registros y formularios antes de almacenarla, siempre que no se requiera preservar cada caracter.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas de preservación sobre el conjunto de validación: variación de longitud inferior al 1 % respecto a la entrada y 94 chrF de coincidencia a nivel de carácter. No se proporcionan cifras de MMLU, HumanEval, GSM8K ni de precisión de corrección (F1, exact match) frente a otros correctores.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta metricas internas del adaptador: salida dentro del 1 % de la longitud de la entrada y 94 chrF de coincidencia a nivel de caracter con el texto de entrada en el conjunto de validacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; el adaptador pesa 73 MB y el modelo base 750 M de parámetros, por lo que la inferencia completa en fp16 rondaría 1,5 GB de pesos, más overhead de activaciones.
-- GPU recomendadas: no especificadas en la información disponible; cualquier GPU con suficiente memoria para el modelo base de 750 M es apta.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer con 4 GB o más de VRAM, aunque el dato no está confirmado en la model card.
-- Despliegue: PyTorch en CPU o GPU; ONNX Runtime Web en navegador. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: no disponible de forma explicita; el adaptador pesa 73 MB y el modelo base 750 M de parametros, por lo que la inferencia completa cabe holgadamente en GPU de consumo (estimacion orientativa de 2-4 GB en fp16, no confirmada en la informacion disponible).
+- GPU recomendadas: no especificadas; cualquier GPU con soporte PyTorch es suficiente por el tamano del modelo base.
+- CPU: soportada explicitamente; el adaptador esta disenado para ejecutarse en CPU.
+- Navegador: soportado mediante ONNX Runtime Web.
+- Opciones de despliegue: PyTorch con el codigo del repositorio Thelivu (obligatorio, ya que el formato del adaptador no es PEFT), ONNX Runtime Web. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Formato |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KeelCore-750M-Grammar | 18,29 M (adaptador) + 750 M (base) | no disponible | Corrección gramatical EN | keelcore-license-1.0 | Safetensors propietario, ONNX |
-| Modelos de corrección gramatical tipo GECToR/T5-base | no disponible | no disponible | Corrección gramatical EN | variable | variable |
-| LLM generalistas (p. ej. modelos de 7B+) | 7B+ | 4K-128K | Corrección vía prompting | variable | safetensors, GGUF |
+| KeelCore-750M-Grammar | 18,29 M (adaptador) + 750 M base | No disponible | Correccion gramatical en ingles | Thelivu License 1.0 | Hugging Face |
+| Thelivu-750M-Grammar (original) | 18,29 M (adaptador) + 750 M base | No disponible | Correccion gramatical en ingles | Thelivu License 1.0 | Hugging Face |
+| Thelivu-750M (base) | 750 M | No disponible | Generacion de texto encoder-decoder | Thelivu License 1.0 | Hugging Face |
 
-No se dispone de datos de rendimiento comparativos en la información proporcionada. La comparativa se limita a parámetros, licencia y formato; no se han publicado métricas que permitan situar KeelCore-750M-Grammar frente a correctores dedicados como GECToR o frente a LLM generalistas usados con prompting.
+No se dispone en la informacion proporcionada de datos de rendimiento de modelos alternativos de correccion gramatical (por ejemplo, modelos tipo GECToR o T5 ajustados para GEC) que permitan una comparacion cuantitativa fiable. La unica comparacion directa posible es con el adaptador original de Thelivu, del que KeelCore-750M-Grammar parece ser una redistribucion con documentacion identica.
 
 ## Limitaciones y advertencias
 
-- Sesgo de edición: entrenado casi exclusivamente con ejemplos erróneos, tiende a modificar texto que ya es correcto.
+- Solo ingles: no soporta otros idiomas, incluido el castellano.
+- No es un modelo conversacional ni sigue instrucciones; solo corrige el texto que recibe.
+- Sesgo de edicion: al haberse entrenado casi exclusivamente con ejemplos erroneos, tiende a modificar texto que ya es correcto.
 - Texto muy degradado: puede introducir errores nuevos en entradas gravemente corruptas.
-- No apto para contenido donde cada carácter deba preservarse: código, configuración, números de versión, cifras financieras o citas literales.
-- No cambia el estilo ni el tono: no hace el texto más formal, más corto ni más largo.
-- Monolingüe: solo inglés; no corrige otros idiomas.
-- No es conversacional: no responde preguntas ni ejecuta instrucciones presentes en el texto de entrada.
-- Licencia propietaria (keelcore-license-1.0): es necesario revisar los términos antes de cualquier uso comercial; la model card no detalla las restricciones.
-- Formato no estándar: requiere el código del repositorio GitHub y verifica una huella de los pesos base, rechazando cargarse sobre cualquier modelo distinto de KeelCore-750M. No es compatible con PEFT.
-- Riesgo de alucinación: no evaluado en la información disponible; al ser un corrector con alta preservación (94 chrF), el riesgo de inserción de contenido nuevo parece bajo, pero no hay métricas publicadas.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema muy incipiente, sin validación independiente conocida.
+- No apto para contenido donde cada caracter debe preservarse: codigo, configuracion, numeros de version, cifras financieras y citas literales.
+- No cambia el estilo ni el tono: no hace el texto mas formal, mas corto ni mas largo.
+- Licencia Thelivu License 1.0: es necesario revisar sus terminos para uso comercial, ya que se etiqueta como "other" y no como licencia permisiva estandar.
+- Dependencia estricta del modelo base: el cargador verifica la huella de los pesos y rechaza cualquier base distinta de Thelivu-750M.
+- Formato propietario: el adaptador no usa el formato PEFT, por lo que requiere el codigo del repositorio Thelivu y no es compatible directamente con herramientas estandar como PEFT o vLLM.
+- Riesgo de alucinacion: no se documenta de forma especifica; el diseno orientado a la copia reduce el riesgo en fragmentos exactos, pero no hay evaluacion publica al respecto.
+- Posible duplicacion: la ficha reproduce la documentacion del adaptador original de Thelivu, lo que conviene verificar antes de adoptarlo en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/KeelCore/KeelCore-750M-Grammar
-- Modelo base: https://huggingface.co/KeelCore/KeelCore-750M
-- Informe técnico: https://saravanan-a-r.github.io/KeelCore/
-- Repositorio GitHub: https://github.com/saravanan-a-r/KeelCore
-- Licencia: https://huggingface.co/KeelCore/KeelCore-750M-Grammar/blob/main/LICENSE
-- Autor (LinkedIn): https://www.linkedin.com/in/saravanan-a-r/
+- Modelo base: https://huggingface.co/Thelivu/Thelivu-750M
+- Adaptador original de referencia: https://huggingface.co/Thelivu/Thelivu-750M-Grammar
+- Informe tecnico: https://saravanan-a-r.github.io/Thelivu/
+- Repositorio GitHub: https://github.com/saravanan-a-r/Thelivu
+- Licencia: https://huggingface.co/Thelivu/Thelivu-750M-Grammar/blob/main/LICENSE

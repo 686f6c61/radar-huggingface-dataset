@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "sfaafaf45454/my-awesome-model-best",
+  "slug": "sfaafaf45454-my-awesome-model-best",
+  "author": "sfaafaf45454",
+  "url": "https://huggingface.co/sfaafaf45454/my-awesome-model-best",
+  "created_at": "2026-11-24T00:05:19.000Z",
+  "updated_at": "2026-11-24T00:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOP 10 BEST Walmart Stores in Paris, France - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=walmart+stores&find_loc=Paris&msockid=223d032997e06a2637091b3296266bf0",
+      "snippet": "Top 10 Best walmart stores Near Paris, Paris (Updated 2026) Sort: Recommended Price"
+    }
+  ]
+}

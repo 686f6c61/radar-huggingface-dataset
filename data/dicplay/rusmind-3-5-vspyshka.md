@@ -2,60 +2,59 @@
 
 ## Resumen
 
-RusMind 3.5 · Vspyshka (en ruso, "Вспышка", "destello") es un ajuste fino del modelo google/gemma-4-E4B-it desarrollado por DICPlay, orientado a inferencia local y sin conexión en ruso e inglés. Se distribuye exclusivamente en formato GGUF con cinco variantes de cuantización (desde 3,8 GB hasta 15,1 GB), lo que lo hace desplegable en navegador, teléfonos y ordenadores personales mediante llama.cpp, LM Studio, Ollama o PocketPal. El repositorio declara 7.518.069.290 parámetros en los pesos de referencia.
+RusMind 3.5 · Vspyshka (Вспышка, "destello" en ruso) es un ajuste fino del modelo base google/gemma-4-E4B-it desarrollado por DICPlay, orientado a inferencia en dispositivo ("on-device") y uso sin conexión. Se distribuye exclusivamente en formato GGUF para su uso con llama.cpp, LM Studio, Ollama, PocketPal y navegador, con el objetivo declarado de ofrecer asistencia cotidiana en ruso (escritura, explicación, apoyo al estudio y código) en PC potentes y teléfonos de gama alta.
 
-El modelo se posiciona como una alternativa "nacional" rusa: la model card insiste en su conocimiento de historia, legislación, regiones y cultura de Rusia, además de corrección ortográfica y de puntuación en ruso. Según el autor, obtiene 0,191 en el benchmark MERA v2, lo que lo situaría por delante de Qwen3.5-9B (0,186), Gemma 4 E4B (0,170), RuadaptQwen3-32B (0,163), Zero-Mistral (0,160) y T-lite (0,130), aunque estas cifras proceden únicamente de la documentación del propio autor y no se han verificado de forma independiente.
+El modelo cuenta con 7.518.069.290 parámetros totales y una ventana de contexto que no se especifica en la información disponible. Está afinado sobre el modelo instructivo de Google, con especial énfasis en conocimiento de historia, cultura, legislación, regiones y pueblos de Rusia, así como en la calidad del ruso escrito. Soporta ruso e inglés y se publica bajo la licencia propietaria "rusmind-license".
 
-Es relevante ahora porque el autor recomienda migrar a RusMind 4.7 · Vspyshka, que según la model card alcanza 0,191 en MERA v2 y se sitúa como segunda mejor modelo de menos de 10 000 millones de parámetros. La versión 3.5 queda, por tanto, como una iteración anterior mantenida por compatibilidad.
+Su relevancia actual radica en su posicionamiento en el benchmark independiente MERA v2 (Alianza en el ámbito de la IA en Rusia), donde la versión posterior 4.7 de la misma familia alcanza 0,191 puntos y se sitúa como segunda mejor modelo de menos de 10.000 millones de parámetros, por delante de alternativas de mayor tamaño como RuadaptQwen3-32B o Zero-Mistral. La ficha documenta la versión 3.5, cuyos datos de benchmarks propios no se han publicado en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: google/gemma-4-E4B-it, transformer) |
-| Parametros totales | 7.518.069.290 (pesos de referencia); el nombre del modelo base sugiere una variante E4B de Gemma 4 |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (derivada de google/gemma-4-E4B-it); detalles internos no disponibles |
+| Parametros totales | 7.518.069.290 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Mini (3,8 GB), Lite (4,2 GB), Q4_K_M (5,3 GB), Q8_0 (8,0 GB), BF16 (15,1 GB) |
 | Idiomas soportados | ruso (ru), inglés (en) |
-| Licencia | rusmind-license (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | GGUF (llama.cpp); no se publican safetensors en este repositorio |
+| Licencia | rusmind-license (propietaria, marcada como "other") |
+| Formato de pesos | GGUF exclusivamente (no se publican safetensors en este repositorio) |
 
 ## Arquitectura y entrenamiento
 
-No se detalla en la información disponible la arquitectura interna más allá de que el modelo deriva de google/gemma-4-E4B-it mediante ajuste fino (base_model_relation: finetune). El sufijo "E4B" del modelo base sugiere una variante de eficiencia de la familia Gemma 4, pero no se confirma si emplea mezcla de expertos, atención lineal u otras técnicas de eficiencia, ni el número de parámetros activos.
+El modelo es un ajuste fino (finetune) del modelo instructivo google/gemma-4-E4B-it, por lo que hereda la arquitectura transformer del modelo base de Google. La información disponible no detalla la composición del dataset de ajuste fino, el número de tokens utilizados, ni si se emplearon técnicas de RLHF, DPO o similares. Tampoco se especifican innovaciones arquitectónicas propias ni mecanismos de decodificación especulativa o atención lineal.
 
-Tampoco se especifican el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste por instrucciones. La model card menciona mejoras en la versión 3.5 respecto a anteriores: cumplimiento preciso de tareas (autocompletado de código, preguntas cortas por patrón), mayor conocimiento de historia y legislación rusas, y mejor calidad en poesía. No se documentan innovaciones técnicas como decodificación especulativa o modos de razonamiento explícito para esta versión.
+El autor declara que la versión 3.5 introduce mejoras en el seguimiento preciso de instrucciones (incluida la finalización de código y la comprensión de preguntas cortas por patrón), un conocimiento más profundo de la historia y la legislación rusas, y una mejora en la generación de poesía. La model card menciona asimismo que la familia RusMind ha sido entrenada con énfasis en valores familiares tradicionales y en el conocimiento de las regiones y pueblos de Rusia, lo que constituye una decisión explícita de alineación temática por parte del desarrollador.
 
 ## Capacidades
 
 - Generación de texto conversacional en ruso e inglés, con soporte multi-turno.
-- Escritura y autocompletado de código, según la model card ("дописывает код").
-- Explicaciones educativas y ayuda con estudios.
-- Corrección ortográfica y de puntuación en ruso (0,719 según el autor en la prueba correspondiente de MERA v2).
-- Comprensión de personajes, humor y palabras con significados opuestos (antonimia), según la documentación del autor.
-- Seguimiento de instrucciones complejas y llamada a herramientas (tool calling), citado de forma explícita en la model card.
-- Conocimiento específico de historia, cultura, leyes, regiones y pueblos de Rusia.
-- Ejecución totalmente offline y en dispositivo, sin dependencia de red.
-- No se documentan capacidades de visión, audio ni modo de razonamiento extendido (thinking) para esta versión.
+- Seguimiento de instrucciones, incluidas instrucciones complejas y preguntas cortas por patrón.
+- Finalización y asistencia en código.
+- Conocimiento específico de historia, cultura, legislación, regiones y pueblos de Rusia.
+- Corrección ortográfica y de puntuación en ruso (la versión 4.7 reporta 0,719 en esta tarea dentro de MERA v2).
+- Comprensión de personajes, humor y palabras con significados opuestos (antónimos) según la model card.
+- Llamada a herramientas (tool calling / function calling), mencionada explícitamente para la versión 4.7 de la familia.
+- Ejecución totalmente offline en dispositivo, sin dependencia de red.
+- No se documentan capacidades de visión, audio ni modo de razonamiento extendido (thinking mode) en esta versión.
 
 ## Casos de uso
 
-- Asistente conversacional offline en ruso: desplegado con llama.cpp u Ollama sobre el GGUF Q4_K_M (5,3 GB), permite mantener diálogos multi-turno sin conexión en un portátil con GPU de gama media, útil en entornos con conectividad restringida.
-- Corrección y edición de textos en ruso: el modelo puede revisar ortografía y puntuación en documentos, aprovechando el resultado declarado de 0,719 en la prueba de corrección de MERA v2.
-- Apoyo educativo en historia y derecho ruso: responde preguntas sobre legislación, regiones y cultura del país, adecuado para herramientas de estudio orientadas a ese currículo.
-- Autocompletado de código en editores locales: integrable vía llama.cpp o LM Studio para sugerencias de código en flujos de desarrollo sin enviar datos a la nube.
-- Chatbot embebido en aplicaciones móviles: la variante Mini (3,8 GB) o Lite (4,2 GB) cabe en teléfonos de gama alta y permite asistentes integrados sin backend.
-- Automatización con herramientas: el soporte declarado de tool calling permite construir agentes sencillos que invoquen funciones locales (calendario, ficheros, APIs internas) en un pipeline de escritorio.
-- Atención al cliente en ruso con requisitos de privacidad: al ejecutarse en local, los datos del usuario no salen del dispositivo, lo que encaja en sectores regulados.
+- Asistente personal offline en escritorio: el modelo se carga con llama.cpp u Ollama en un PC y responde consultas cotidianas sin conexión a internet, lo que resulta adecuado para entornos con conectividad limitada o requisitos de privacidad.
+- Corrección y mejora de textos en ruso: dado su rendimiento declarado en ortografía y puntuación, puede integrarse en editores o flujos de revisión para normalizar documentos redactados en ruso.
+- Apoyo al estudio de historia y legislación rusas: el ajuste temático permite usarlo como tutor conversacional sobre contenidos curriculares rusos, con la advertencia de verificar datos factuales.
+- Asistencia a la programación en local: la finalización de código y el seguimiento de instrucciones permiten usarlo como autocompletado o generador de fragmentos en IDE sin enviar código a servicios externos.
+- Despliegue en navegador: la variante Mini (3,8 GB) está pensada para ejecutarse dentro del navegador a través de rusmind.ru, lo que habilita demos y asistentes web sin backend de inferencia.
+- Aplicaciones móviles de gama alta: la variante Lite (4,2 GB) está orientada a teléfonos insignia y portátiles, permitiendo asistentes integrados en la app sin coste de API.
+- Atención al cliente en ruso con requisitos de soberanía de datos: al ejecutarse en infraestructura propia y sin conexión, encaja en organizaciones que no pueden enviar conversaciones a terceros.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles proceden de la model card del autor (benchmark MERA v2). No se han verificado de forma independiente.
+No se han publicado resultados de benchmarks de la versión 3.5 en la información disponible. La model card incluye datos de la versión posterior 4.7 de la misma familia en MERA v2, que se reproducen a continuación únicamente como referencia de la familia, no de este modelo:
 
-| Modelo | Parámetros | MERA v2 (general) |
+| Modelo | Parametros | MERA v2 (general) |
 |---|---|---|
-| RusMind Vspyshka 3.5 (este modelo) | 7,5 mil millones | no disponible en la card para 3.5; 0,191 corresponde a la versión 4.7 |
 | RusMind Vspyshka 4.7 | 7,5 mil millones | 0,191 |
 | Qwen3.5-9B (Alibaba) | 9 mil millones | 0,186 |
 | Gemma 4 E4B (Google) | 8 mil millones | 0,170 |
@@ -63,45 +62,43 @@ Los únicos datos disponibles proceden de la model card del autor (benchmark MER
 | Zero-Mistral | 24 mil millones | 0,160 |
 | T-lite (T-Bank) | 8 mil millones | 0,130 |
 
-La model card no publica la puntuación MERA v2 específica de la versión 3.5; la cifra de 0,191 se atribuye a RusMind 4.7 · Vspyshka. Tampoco se ofrecen resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4-5 GB para Mini (3,8 GB de pesos) y Lite (4,2 GB); 6-7 GB para Q4_K_M (5,3 GB); 9-10 GB para Q8_0 (8,0 GB); 16-18 GB para BF16 (15,1 GB), sumando overhead de contexto y caché KV.
-- GPU recomendadas: RTX 3060 12 GB o superior para Q4_K_M y Q8_0; RTX 4090, A100 o H100 para BF16 con contexto amplio.
-- Cabe en GPU de consumo: sí, desde una RTX 3050 8 GB para Mini y Lite; Q4_K_M funciona en tarjetas de 8 GB con contexto moderado; Q8_0 requiere 12 GB o más.
-- Despliegue: llama.cpp (llama-cli, llama-server), LM Studio, Ollama, PocketPal y cualquier runtime compatible con GGUF; también versión en navegador en rusmind.ru.
-- Latencia y throughput: no disponibles. Al ser un modelo de 7,5 mil millones de parámetros en GGUF, se espera un rendimiento típico de esta clase en GPU de consumo, pero no se publican cifras.
+- VRAM estimada para inferencia según el archivo GGUF: Mini ~3,8 GB, Lite ~4,2 GB, Q4_K_M ~5,3 GB, Q8_0 ~8,0 GB, BF16 ~15,1 GB (más overhead de contexto y de la propia aplicación).
+- GPU recomendadas: no disponibles de forma explícita; por tamaño, una RTX 4090 (24 GB) permite cargar cualquier variante en GPU, y una RTX 4060 Ti de 16 GB cubre hasta BF16 con contexto moderado.
+- Cabe en GPU de consumo: sí, todas las variantes caben en tarjetas de 8 GB o más (Q4_K_M en 8 GB con contexto ajustado; Q8_0 y BF16 requieren 12-16 GB).
+- Despliegue: llama.cpp (llama-cli con `-cnv`), LM Studio, Ollama, PocketPal y ejecución en navegador vía rusmind.ru. No se documenta soporte para vLLM ni TGI en formato GGUF.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | MERA v2 | Licencia | Formatos |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| RusMind Vspyshka 3.5 | 7,5 mil millones | no disponible | no disponible (4.7: 0,191) | rusmind-license | GGUF |
-| Qwen3.5-9B | 9 mil millones | no disponible | 0,186 | no disponible en la información | no disponible |
-| Gemma 4 E4B | 8 mil millones | no disponible | 0,170 | licencia de Google (modelo base) | no disponible |
-| T-lite (T-Bank) | 8 mil millones | no disponible | 0,130 | no disponible | no disponible |
+| RusMind 3.5 Vspyshka | 7,5 mil millones | no disponible | rusmind-license (propietaria) | GGUF | Ajuste de Gemma 4 E4B-it, foco en ruso y offline |
+| Gemma 4 E4B-it (Google) | ~8 mil millones | no disponible | licencia de Google (no disponible en detalle) | safetensors, GGUF | Modelo base; MERA v2 de la familia 4.7: 0,170 |
+| Qwen3.5-9B (Alibaba) | 9 mil millones | no disponible | no disponible | no disponible | MERA v2 de la familia 4.7: 0,186 |
+| T-lite (T-Bank) | 8 mil millones | no disponible | no disponible | no disponible | MERA v2 de la familia 4.7: 0,130 |
 
-La comparación se limita a las cifras de MERA v2 aportadas por el autor; no hay datos de contexto, licencia o formatos de los competidores en la información proporcionada.
+La comparación de rendimiento se refiere a la versión 4.7 de RusMind Vspyshka, no a la 3.5 documentada aquí.
 
 ## Limitaciones y advertencias
 
-- Las puntuaciones de benchmarks proceden exclusivamente de la model card del autor y no se han verificado de forma independiente; deben tratarse con cautela.
-- La licencia "rusmind-license" está etiquetada como "other" y no se detallan sus términos en la información disponible: es imprescindible revisar el fichero LICENSE antes de cualquier uso comercial.
-- El modelo está ajustado para ruso e inglés; el rendimiento en otros idiomas no está documentado y probablemente sea limitado.
-- El ajuste fino orientado a historia, leyes y cultura rusas puede introducir sesgos culturales y políticos específicos; no se documentan evaluaciones de sesgo.
-- Riesgo de alucinación inherente a modelos de este tamaño, especialmente en citas legales, históricas o factuales; requiere verificación en dominios sensibles.
-- No se especifica la longitud de contexto soportada, lo que dificulta planificar despliegues con documentos largos.
-- El autor recomienda migrar a RusMind 4.7 · Vspyshka; esta versión 3.5 puede quedar sin mantenimiento.
-- No se publican pesos en safetensors en este repositorio, solo GGUF, lo que limita el reentrenamiento o la conversión a otros formatos sin partir del BF16 GGUF.
-- El tamaño del repositorio (36,4 GB) incluye todas las cuantizaciones; conviene descargar únicamente el fichero necesario.
+- Los datos de benchmarks citados corresponden a la versión 4.7, no a la 3.5; no hay evidencia publicada del rendimiento de esta versión concreta.
+- Riesgo de alucinación inherente a un modelo de 7,5 mil millones de parámetros, especialmente en cuestiones factuales de historia y legislación, donde el ajuste temático puede producir respuestas seguras pero incorrectas.
+- Sesgo temático explícito: el entrenamiento refuerza una visión concreta de la historia, la cultura y los "valores familiares tradicionales" de Rusia, lo que puede introducir sesgos editoriales y de encuadre en temas políticos y sociales.
+- Idiomas limitados a ruso e inglés; el rendimiento en castellano no está documentado ni probablemente sea fiable.
+- Longitud de contexto no especificada, lo que dificulta planificar casos de uso con documentos largos.
+- Licencia propietaria "rusmind-license": es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial; no es una licencia de código abierto estándar.
+- Distribución exclusivamente en GGUF en este repositorio: no se ofrecen safetensors para reentrenamiento o cuantización personalizada en este modelo (sí se menciona BF16 GGUF para "investigación y cuantización propia").
+- El autor recomienda migrar a la versión 4.7, lo que sugiere que la 3.5 está en fin de vida y no recibirá mejoras.
+- Al ser un modelo pequeño orientado a dispositivo, el rendimiento en razonamiento multi-paso complejo y en código de producción será inferior al de modelos de mayor tamaño.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-3.5-Vspyshka
-- Versión recomendada 4.7 · Vspyshka: https://huggingface.co/DICPlay/RusMind-Vspyshka-4.7
-- Versión 4.7 · Sokol: https://huggingface.co/DICPlay/RusMind-Sokol-4.7
-- Repositorio de todas las versiones: https://huggingface.co/DICPlay/RusMind-Vspyshka
+- Repositorio de la familia RusMind Vspyshka: https://huggingface.co/DICPlay/RusMind-Vspyshka
+- Versión posterior 4.7 Vspyshka: https://huggingface.co/DICPlay/RusMind-Vspyshka-4.7
+- Versión 4.7 Sokol: https://huggingface.co/DICPlay/RusMind-Sokol-4.7
 - Demo en navegador: https://rusmind.ru
 - Leaderboard MERA v2: https://mera.a-ai.ru/ru/text/leaderboard
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

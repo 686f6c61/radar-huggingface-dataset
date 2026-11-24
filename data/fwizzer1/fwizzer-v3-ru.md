@@ -1,95 +1,86 @@
 # fwizzer1/fwizzer-v3-ru
 
 ## Resumen
+fwizzer-v3-ru (Fwizzer v3 Titan RU) es un ajuste fino de tipo razonamiento (chain-of-thought) en ruso, desarrollado por el usuario fwizzer1 a partir del modelo multimodal LiquidAI/LFM2.5-VL-3B. El objetivo declarado es ofrecer una alternativa compacta (2.697 millones de parametros) especializada en razonamiento profundo en ruso, con soporte secundario de ingles, pensada para ejecutarse en hardware de consumo mediante cuantizaciones GGUF.
 
-fwizzer-v3-ru (Fwizzer v3 Titan RU) es un modelo multimodal de tipo image-text-to-text publicado por el usuario fwizzer1 en Hugging Face. Se trata de un ajuste (fine-tuning) sobre el modelo base LiquidAI/LFM2.5-VL-3B, orientado al idioma ruso y con el ingles como idioma secundario. La model card lo describe como una red neuronal liquida hibrida (Hybrid Liquid Neural Network) con un backbone de 2,69B de parametros y una torre de vision SigLIP2 de 400M, entrenada sobre un dataset privado de chain-of-thought denominado fwizzer1/fwizzer-v3-titan-agentic (25.000 muestras rusas). Conviene senalar que el repositorio declara 426.285.296 parametros en safetensors, una cifra que no coincide con la suma de backbone y torre de vision indicada en la model card; el dato real de safetensors se refleja en la tabla de especificaciones junto a la discrepancia.
+El modelo se apoya en la arquitectura Liquid Foundation Model (LFM2) de Liquid AI, una red neuronal hibrida con capas de atencion y de tipo convolucional/estado, y ha sido entrenado sobre un dataset privado de chain-of-thought (`fwizzer1/fwizzer-v3-titan-agentic`) que combina 27.051 muestras con trazas CoT generadas por Kimi K2.5 y 51 ejemplos de juegos HTML5/WebGL. La ventana de contexto declarada es de hasta 32.768 tokens.
 
-El modelo se distribuye principalmente en formato GGUF (cuantizaciones Q8_0, Q5_K_M y Q4_K_M) mas un proyector de vision independiente (fwizzervision.gguf), lo que lo hace desplegable en llama.cpp, LM Studio y Ollama incluso en hardware de consumo. Su rasgo diferencial es un modo de razonamiento chain-of-thought no desactivable dentro de etiquetas `<think> ... </think>`, inspirado en DeepSeek-R1, junto con capacidades declaradas de OCR, analisis de diagramas e interfaces, y generacion de codigo procedimental para Godot 4 (GDScript) y Blender 4.x (Python bpy/bmesh, Geometry Nodes).
-
-Su relevancia actual es limitada pero concreta: cubre el nicho de VLM pequeno y ejecutable en local para el mercado rusoparlante, un segmento con poca oferta especifica. No obstante, el modelo no tiene descargas ni valoraciones en el momento de redactar esta ficha y no publica resultados de benchmarks, por lo que debe evaluarse como una propuesta experimental y no como una opcion validada para produccion.
+Su relevancia practica reside en el formato: distribucion en cuatro cuantizaciones GGUF (desde 1,9 GB hasta 3,4 GB), compatibilidad con llama.cpp, LM Studio y Ollama, y un modo de "pensamiento" explicito delimitado por las etiquetas ``. Es un modelo pequeno, de licencia restrictiva derivada de LFM1.0 y con un unico autor, por lo que debe evaluarse con cautela antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hybrid Liquid Neural Network (backbone de 2,69B) + torre de vision SigLIP2 (400M), segun la model card |
-| Parametros totales | 426.285.296 en safetensors (dato del repositorio); la model card declara ~3,1B (2,69B backbone + 400M vision tower) |
-| Parametros activos | No disponible (no se declara arquitectura MoE) |
-| Longitud de contexto | 32.768 tokens; hasta 131.072 con el backbone LFM segun la model card |
-| Tipos de cuantizacion | GGUF: Q8_0 (Max), Q5_K_M (Balanced), Q4_K_M (Speed) |
-| Idiomas soportados | Ruso (principal) e ingles |
-| Licencia | other / lfm1.0 (licencia LFM 1.0 de Liquid AI) |
-| Formato de pesos | GGUF (llama.cpp) y safetensors |
+| Arquitectura | Hybrid Liquid Neural Network (LFM2, backbone de 2,69B) |
+| Parametros totales | 2.697.198.592 (~2,7B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 32.768 tokens |
+| Tipos de cuantizacion | Q8_0 (~3,4 GB), Q5_K_M (~2,5 GB), Q4_K_M (~2,1 GB), Q4_0 (~1,9 GB) |
+| Idiomas soportados | ruso (principal), ingles |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
+El modelo hereda el backbone LFM2.5-VL-3B de Liquid AI, una arquitectura hibrida denominada Liquid Neural Network que combina mecanismos de atencion con capas de estado/convolucionales. El ajuste fino se realizo sobre el dataset privado `fwizzer1/fwizzer-v3-titan-agentic`, compuesto por 27.051 muestras con trazas de chain-of-thought generadas por Kimi K2.5 y 51 ejemplos de generacion de juegos HTML5/WebGL. No se especifican en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO.
 
-La model card describe una arquitectura hibrida de red neuronal liquida (Liquid Neural Network) sobre el backbone de LiquidAI/LFM2.5-VL-3B, complementada con una torre de vision SigLIP2 de 400M de parametros y un proyector visual propio denominado fwizzervision. El pipeline declarado es image-text-to-text, lo que confirma la entrada conjunta de imagen y texto. La model card atribuye al backbone una ventana de contexto de hasta 131.072 tokens con LFM, mientras que el modelo ajustado declara un contexto operativo de 32.768 tokens. No se especifica en la informacion disponible el numero total de tokens de entrenamiento ni la composicion completa del dataset.
-
-El ajuste se realizo sobre un dataset privado de chain-of-thought, fwizzer1/fwizzer-v3-titan-agentic, del que se detalla un unico fichero (train_ru_25k.parquet) con 25.000 muestras en ruso. El modelo incorpora un modo de razonamiento profundo no desactivable en etiquetas `<think> ... </think>`, con parada opcional mediante el token `</think>`. No se documentan en la informacion proporcionada las tecnicas de alineacion empleadas (RLHF, DPO u otras), ni innovaciones de decodificacion especulativa o atencion lineal mas alla de lo que implica la arquitectura LFM del modelo base.
+La innovacion principal declarada es el formato de razonamiento: el modelo produce un plan arquitectonico y una autoverificacion dentro de las etiquetas `` antes de emitir la respuesta final. La model card recomienda un system prompt especifico, temperatura 0.6, top-p 0.95, min-p 0.05, repetition penalty 1.05 y stop tokens `` y `<|im_end|>`. El autor afirma que el proceso de pensamiento es "limpio", sin moralizacion ni rechazos plantilla, lo cual es una afirmacion del autor y no un resultado verificado.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento con cadena de pensamiento explicita y no desactivable en etiquetas `<think> ... </think>`.
-- Vision multimodal: analisis de imagenes, capturas de pantalla, diagramas, esquemas e interfaces de usuario.
-- OCR declarado sobre capturas y documentos visuales.
-- Generacion de codigo procedimental para Godot 4 en GDScript, con soporte declarado de algoritmos WFC, Marching Cubes y BSP.
-- Generacion de scripts para Blender 4.x en Python (bpy, bmesh) y Geometry Nodes.
-- Razonamiento lateral y busqueda de errores en codigo ajeno, segun la model card.
-- Multilingue limitado a ruso (idioma principal, con el prompt de sistema y el dataset en ruso) e ingles.
-- Estilo de respuesta declarado sin moralizacion ni rechazos plantilla, lo que la model card presenta como una capacidad de "proceso de pensamiento limpio".
-- No se documenta soporte de tool calling, function calling ni de agentes multi-paso en la informacion disponible.
+- Generacion de texto conversacional en ruso e ingles.
+- Razonamiento con chain-of-thought explicito en etiquetas ``, incluyendo planificacion y autoverificacion.
+- Generacion de codigo, con enfasis declarado en HTML5/Three.js, GDScript (Godot 4) y Python (Blender 4.x).
+- Generacion de juegos 2D/3D autonomos en un unico archivo HTML5/WebGL con controles WASD.
+- Generacion procedural de contenido (escenarios, assets) segun la model card.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: el CoT estructurado lo facilita, pero no hay documentacion especifica de agentes.
+- Capacidades multilingues limitadas a ruso e ingles.
+- Capacidades de vision: el modelo base es multimodal (VL), pero la model card no documenta el uso de vision en este ajuste.
 
 ## Casos de uso
-
-- Analisis de capturas de pantalla e interfaces: el modelo puede recibir una imagen de una UI o un panel de control y extraer texto y estructura mediante OCR y comprension visual, util para documentar productos o generar informes de auditoria de interfaz.
-- Atencion al cliente en ruso: con 32.768 tokens de contexto puede mantener conversaciones multi-turno extensas con historial largo e imagenes adjuntas (capturas de error, recibos), un escenario con poca oferta de modelos especificamente rusoparlantes.
-- Generacion de scripts para Godot 4: la model card declara soporte nativo de GDScript y algoritmos procedurales concretos (WFC, Marching Cubes, BSP), de modo que puede usarse como asistente de generacion de mundo y logica de juego dentro del editor.
-- Automatizacion de Blender 4.x: generacion de scripts bpy/bmesh y de Geometry Nodes para tareas repetitivas de modelado, importacion o procesado de mallas, ejecutables directamente en la consola Python de Blender.
-- Revision de codigo en produccion: el modo CoT permite trazar el razonamiento y detectar casos limite en fragmentos de codigo ajenos, util como revisor automatizado previo a la revision humana.
-- Extraccion de datos de documentos escaneados: combinando vision y OCR puede digitalizar facturas, formularios o capturas de sistemas legacy para alimentar pipelines de datos.
-- Despliegue local con privacidad de datos: las cuantizaciones Q4_K_M y Q5_K_M con el proyector fwizzervision permiten ejecutar el modelo en un portatil con LM Studio u Ollama sin enviar imagenes ni texto a servicios externos, adecuado para entornos con requisitos de confidencialidad.
-- Razonamiento auditable en investigacion: el bloque `<think>` obligatorio genera una traza de razonamiento inspeccionable, interesante para estudiar el comportamiento de modelos pequenos con CoT forzado, aunque el coste en tokens de salida es mayor al no poder desactivarse.
+- Asistencia conversacional en ruso: el modelo gestiona dialogos multi-turno con hasta 32.768 tokens de contexto, adecuado para soporte al cliente o tutoria en ruso donde se requiere mantener el hilo de una conversacion larga.
+- Generacion de prototipos de juegos web: a partir de una descripcion textual, produce un archivo HTML5/WebGL autonomo con logica de juego y controles WASD, util para prototipado rapido en estudios pequenos o docencia.
+- Ensenanza de programacion y scripting: el CoT explicito permite mostrar al estudiante el razonamiento paso a paso antes del codigo, util en entornos educativos con GDScript o Python.
+- Despliegue local en portatiles y moviles: con la cuantizacion Q4_0 (1,9 GB) puede ejecutarse en CPU o GPU integrada mediante llama.cpp u Ollama, lo que permite asistentes offline sin conexion.
+- Automatizacion de tareas de scripting en Blender: generacion de scripts Python para Blender 4.x a partir de instrucciones en lenguaje natural, integrable en flujos de trabajo de artistas tecnicos.
+- Experimentacion en investigacion sobre CoT: al ser un modelo pequeno con trazas de razonamiento explicitas, sirve como banco de pruebas para estudiar la calidad y fidelidad del chain-of-thought en modelos de menos de 3B.
+- Traduccion y redaccion tecnica ruso-ingles: util para borradores y resumenes en ambos idiomas, aunque sin garantias de calidad frente a modelos mayores.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada a partir del tamano de los ficheros GGUF publicados: Q4_K_M ~2,1 GB, Q5_K_M ~2,5 GB, Q8_0 ~3,4 GB, mas el proyector de vision fwizzervision ~800 MB. A ello hay que sumar la cache KV, que crece con el contexto hasta los 32.768 tokens declarados.
-- GPU de consumo: con Q4_K_M o Q5_K_M mas el proyector, el conjunto de pesos ronda los 2,9-3,3 GB, por lo que cabe en GPUs de 6-8 GB (por ejemplo RTX 3060, RTX 4060) dejando margen limitado para contexto largo; Q8_0 requiere del orden de 4-5 GB solo en pesos.
-- GPU de centro de datos (A100, H100) no son necesarias para este tamano, aunque permitirian contexto completo de 32.768 tokens con gran margen de memoria y mayor paralelismo por lote.
-- Apple Silicon: viable en equipos con memoria unificada de 8 GB o superior mediante llama.cpp.
-- Opciones de despliegue confirmadas por las etiquetas y la model card: llama.cpp, LM Studio y Ollama. No se documenta soporte verificado en vLLM o TGI para estos ficheros GGUF.
-- Latencia y throughput: no disponible en la informacion proporcionada. El modo CoT no desactivable incrementa el numero de tokens generados por respuesta y, por tanto, el tiempo hasta la respuesta final.
+- VRAM estimada: aproximadamente 2,5-3,5 GB para Q8_0; 2-2,7 GB para Q5_K_M; 2-2,5 GB para Q4_K_M; 1,9-2,3 GB para Q4_0 (incluyendo overhead de contexto y KV cache, que crece con la ventana usada).
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM, como RTX 3050, RTX 4060, RTX 4090; en el extremo profesional, A100 o H100 no son necesarias y estarian infrautilizadas.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU discretas modernas con 4 GB o mas, e incluso en GPU integradas con memoria compartida usando Q4_0.
+- Opciones de despliegue: llama.cpp, LM Studio, Ollama; tambien safetensors mediante transformers si se dispone de la configuracion del modelo base.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad de datos |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fwizzer-v3-ru | 426.285.296 en safetensors; la model card declara ~3,1B (backbone + vision) | 32.768 tokens (hasta 131.072 con el backbone LFM) | Ruso e ingles | lfm1.0 (other) | GGUF en el repositorio de Hugging Face |
-| LiquidAI/LFM2.5-VL-3B (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado como base_model |
-| Otros VLM pequenos de la misma categoria (por ejemplo alternativas de ~3B para image-text-to-text) | No disponible | No disponible | No disponible | No disponible | No se encontraron datos comparativos en los resultados de busqueda web |
+| fwizzer-v3-ru | ~2,7B | 32.768 | lfm1.0 | GGUF + safetensors en HF | Ajuste CoT en ruso sobre LFM2.5-VL-3B |
+| Qwen2.5-3B-Instruct | ~3B | 32.768 | Apache 2.0 | HF, GGUF, amplia comunidad | Multilingue, sin CoT nativo |
+| Llama-3.2-3B-Instruct | ~3B | 128.000 | Llama 3.2 Community | HF, GGUF, amplia comunidad | Multilingue, ecosistema maduro |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5B | 32.768 | MIT | HF, GGUF | Razonamiento CoT, menor tamano |
 
-Los resultados de la busqueda web realizada no aportaron informacion tecnica ni comparativas de modelos; los enlaces devueltos no guardan relacion con el modelo.
+La comparativa se basa en caracteristicas publicas de cada modelo; no hay datos de benchmarks de fwizzer-v3-ru para comparar rendimiento.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de benchmarks publicados: no hay datos verificables de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales que respalden las capacidades declaradas.
-- Metricas de adopcion nulas en el momento de la consulta (0 descargas, 0 likes) y fecha de publicacion muy reciente, lo que implica ausencia de validacion independiente por parte de la comunidad.
-- Discrepancia no resuelta entre los parametros declarados en la model card (~3,1B) y los parametros reales de safetensors del repositorio (426.285.296); conviene verificar que artefacto corresponde a que componente antes de integrarlo.
-- Dataset de entrenamiento privado y de solo 25.000 muestras: el riesgo de sobreajuste a los estilos y dominios de ese corpus es alto, con generalizacion limitada fuera de ellos.
-- El modo chain-of-thought no es desactivable, lo que incrementa el consumo de tokens de salida, la latencia y el coste por consulta, y complica el control de formato en respuestas cortas.
-- La instruccion de parada con `</think>` puede provocar truncamientos si el modelo no cierra correctamente el bloque de razonamiento.
-- Cobertura idiomatica limitada a ruso e ingles; no se declara soporte de castellano ni de otros idiomas.
-- Con 32.768 tokens de contexto operativo, las tareas que requieran ventanas mayores dependen de las capacidades del backbone LFM, no confirmadas para este ajuste.
-- Licencia lfm1.0 (etiquetada como "other"): es una licencia especifica de Liquid AI con posibles restricciones de uso comercial. Debe revisarse el texto completo de la licencia antes de cualquier despliegue en produccion o redistribucion.
-- La model card promociona explicitamente la ausencia de moralizacion y de rechazos plantilla; esto implica un riesgo de seguridad y de cumplimiento en aplicaciones orientadas a usuario final, ya que el modelo puede no filtrar contenido problematico.
-- Riesgo de alucinacion: como cualquier modelo de este tamano, y agravado por la falta de evaluaciones publicadas, especialmente en OCR de documentos densos y en razonamiento numerico.
+- Licencia lfm1.0: es una licencia restrictiva de Liquid AI, no equivalente a Apache 2.0 ni MIT; es imprescindible revisar sus terminos antes de cualquier uso comercial.
+- Modelo de autor unico con 350 descargas y 1 like: no hay validacion independiente de calidad ni de los resultados declarados.
+- Riesgo de alucinacion: al ser un modelo de 2,7B, la fidelidad factual es limitada, especialmente fuera de ruso e ingles.
+- Sesgos: no documentados; el dataset de entrenamiento es privado, por lo que no se puede auditar su composicion ni sus sesgos.
+- Limitacion de idioma: solo ruso e ingles; el rendimiento en castellano no esta garantizado.
+- Contexto efectivo: aunque se declaran 32.768 tokens, en modelos de este tamano la calidad degrada mucho antes del limite teorico.
+- Capacidad multimodal no documentada: el backbone es VL, pero la model card no describe el uso de imagenes en este ajuste.
+- Afirmaciones del autor no verificadas: "sin moralizacion ni rechazos plantilla" y "cero degradacion de logica CoT" en Q8_0 son afirmaciones sin evidencia publicada.
+- Formato de pensamiento acoplado: requiere el system prompt y los stop tokens especificos; su uso fuera de ese formato puede degradar la calidad.
 
 ## Enlaces
-
-- Pagina del modelo en Hugging Face: https://huggingface.co/fwizzer1/fwizzer-v3-ru
+- Modelo en Hugging Face: https://huggingface.co/fwizzer1/fwizzer-v3-ru
+- Dataset de entrenamiento: https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
-- Dataset de entrenamiento declarado: https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
-- Los resultados de busqueda web no devolvieron enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo.
+- Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
+- LM Studio: https://lmstudio.ai/
+- Ollama: https://ollama.com/

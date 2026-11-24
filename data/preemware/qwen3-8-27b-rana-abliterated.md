@@ -2,125 +2,94 @@
 
 ## Resumen
 
-Qwen3.8-27B-RANA-abliterated es una variante del modelo multimodal denso Qwen/Qwen3.8-27B, publicada por el usuario preemware, a la que se le ha eliminado la direccion de rechazo mediante RANA (Reasoning-Anchored, Norm-preserving Ablation), una variante interna de la tecnica de ablacion de direccion de rechazo descrita por Arditi et al. (2024). El objetivo no es mejorar capacidades, sino eliminar la negativa del modelo base conservando intacto todo lo demas: segun la model card, el modelo resultante «casi nunca rechaza de forma explicita».
+Qwen3.8-27B-RANA-abliterated es una variante del modelo vision-lenguaje Qwen/Qwen3.8-27B a la que se le ha eliminado la dirección de rechazo (refusal direction) mediante la técnica RANA (Reasoning-Anchored, Norm-preserving Ablation), publicada por el colectivo Abliterant bajo el identificador de autor preemware. El resultado es un modelo de 27.781.427.952 parámetros en BF16 que acepta texto e imágenes como entrada (pipeline image-text-to-text) y que, según su model card, produce contenido que el modelo base rechazaría.
 
-El modelo mantiene 27.781.427.952 parametros, la torre de vision (333 tensores byte a byte identicos al base) y la cabeza MTP, de modo que siguen funcionando la entrada de imagen, el tool calling multi-turno y la decodificacion especulativa. Se distribuye unicamente en safetensors BF16 (repositorio de 55,6 GB) bajo licencia Apache-2.0 y esta declarado explicitamente como modelo de investigacion con alineacion de seguridad eliminada, no apto para despliegue publico sin una capa de moderacion externa.
+La relevancia de esta ficha es doble. Por un lado, documenta un modelo de investigación sobre comportamiento de rechazo, interpretabilidad y red-teaming, no un modelo para despliegue de usuario final. Por otro lado, sirve como referencia técnica de una familia de releases (BF16, FP8, GGUF y MLX) construida sobre un transformer híbrido con atención lineal, cabeza de predicción multi-token (MTP) y una ventana declarada de 262.144 tokens.
 
-Su interes actual es doble: por un lado, publica un desglose tensor a tensor de los 131 tensores modificados y una verificacion independiente con Abliterlitics; por otro, ofrece una evaluacion comparada con el modelo base y con otra variante sin censura (orcarouter/Qwen3.8-27B-Uncensored), con una divergencia KL de 0,041 frente al base y una degradacion media de capacidades de 0,82 puntos porcentuales en cinco tareas.
+El modelo hereda la licencia Apache-2.0 de Qwen y se distribuye en 18 shards de safetensors que ocupan aproximadamente 55,6 GB. La model card es explícita: se trata de un modelo de investigación con la alineación de seguridad eliminada, y cualquier filtrado de seguridad debe implementarse fuera del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso multimodal con atencion hibrida (atencion completa y linear attention, inferido de los tensores `self_attn.o_proj` y `linear_attn.out_proj`), torre de vision y cabeza MTP para decodificacion especulativa |
-| Parametros totales | 27.781.427.952 (~27,8 mil millones) |
-| Parametros activos | No aplica: modelo denso, no MoE |
-| Longitud de contexto | no disponible (la configuracion de servicio de ejemplo usa `--max-model-len 20480`; el arnes de evaluacion limita la generacion a 16.000 tokens) |
-| Tipos de cuantizacion | no disponible en este repositorio (solo pesos BF16 en safetensors; no se publican GGUF, FP8 ni AWQ) |
+| Arquitectura | Transformer híbrido con atención completa y atención lineal, cabeza MTP y torre de visión (según la model card y los nombres de tensores: `self_attn.o_proj`, `linear_attn.out_proj`, `mlp.down_proj`, `embed_tokens`) |
+| Parametros totales | 27.781.427.952 (BF16, indexados por el Hub) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 posiciones declaradas en la config; la evaluación se realizó con un límite de servicio de 20.480 tokens y un presupuesto de generación de 16.384 tokens |
+| Tipos de cuantizacion | BF16 (este repo); FP8 block e4m3 (30,9 GB); GGUF de Q8_0 a IQ2_M (10,0–28,6 GB); MLX 4, 5, 6 y 8 bits más BF16 (16,1–54,7 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 (heredada de Qwen) |
-| Formato de pesos | safetensors, BF16 (libreria `transformers`) |
-| Pipeline declarado | image-text-to-text |
-| Modelo base | Qwen/Qwen3.8-27B |
-| Tamano del repositorio | 55,6 GB |
-| Fecha de publicacion | 25 de septiembre de 2026 |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | safetensors BF16, 18 shards, ~55,6 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo no se ha reentrenado: es una edicion de pesos sobre Qwen3.8-27B, descrito en los resultados de busqueda como el miembro denso y nativo multimodal de la familia Qwen3.8, orientado a codigo, flujos agenticos y automatizacion de oficina. RANA elimina una unica «direccion de rechazo» del flujo residual siguiendo a Arditi et al. (2024) y conserva las normas originales de los pesos editados. La receta y el codigo no estan publicados.
+El modelo base es un transformer con capas de atención completa y capas de atención lineal, más una torre de visión que procesa imágenes junto al texto. La ablación RANA actúa sobre el flujo residual: elimina una única dirección de rechazo siguiendo el planteamiento de Arditi et al., 2024, y mantiene las matrices editadas con sus normas originales. Según la model card, la receta y el código no se han publicado.
 
-Los cambios son quirurgicos y estan enumerados en la model card: 17 matrices en la salida de atencion (`self_attn.o_proj`, 16 principales mas 1 del MTP), 48 en la salida de linear attention (`linear_attn.out_proj`), 65 en la salida del MLP (`mlp.down_proj`, 64 principales mas 1 del MTP) y 1 en `embed_tokens`, para un total de 131 tensores, sin ningun cambio fuera de ese conjunto. La torre de vision permanece intacta (333 tensores identicos) y la cabeza MTP conserva sus 15 tensores, con sus dos escritores residuales editados del mismo modo, lo que mantiene operativa la decodificacion especulativa con una longitud de aceptacion de 2,45. La componente residual mas grande que queda a lo largo de la direccion eliminada es 0,00122, frente a 0,225 antes de la ablacion.
-
-Una verificacion independiente con Abliterlitics (commit `9b15eb0`) detecta exactamente 129 tensores modificados de los 850 que inspecciona, cifra coherente con los 131 declarados dado que esa herramienta omite los tensores de vision y MTP. No hay informacion publicada sobre numero de tokens de entrenamiento, composicion del dataset, ni fases de RLHF/DPO, ya que el autor no realiza entrenamiento alguno.
+La verificación tensor a tensor contra el modelo base reporta exactamente 131 matrices modificadas y ninguna fuera de ese conjunto: 17 en `self_attn.o_proj` (16 principales más 1 de la cabeza MTP), 48 en `linear_attn.out_proj`, 65 en `mlp.down_proj` (64 principales más 1 de MTP) y 1 en `embed_tokens`. La torre de visión queda intacta (333 tensores byte a byte idénticos al base) y la cabeza MTP conserva sus 15 tensores, con sus dos escritores residuales editados del mismo modo, de forma que la decodificación especulativa sigue funcionando con una longitud de aceptación de 2,45. La dirección eliminada queda residualmente en 0,00122, frente a 0,225 en el modelo base. Una comprobación independiente con Abliterlitics (commit `9b15eb0`) aparece mencionada en la model card, aunque el texto proporcionado se interrumpe antes de detallar el resultado. No se dispone de datos sobre volumen de tokens de entrenamiento, composición del dataset ni etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo «thinking» activado por defecto; muestreo recomendado T = 1,0, top_p = 0,95, top_k = 20.
-- Codigo: el modelo base esta orientado a tareas de programacion; el peor delta de capacidad medido en la ablacion es de −1,5 pp en TruthfulQA, con HumanEval como referencia de comparacion entre variantes.
-- Vision: entrada de imagen soportada (el ejemplo probado limita a 1 imagen y 0 videos por prompt mediante `--limit-mm-per-prompt`).
-- Tool calling y function calling: soportado con `--enable-auto-tool-choice` y parser `qwen3_coder`; el tool calling multi-turno esta verificado sobre estos pesos.
-- Agentes y razonamiento multi-paso: herencia de las capacidades agenticas del base, con parser de razonamiento `qwen3`.
-- Decodificacion especulativa con MTP: configuracion `{"method": "mtp", "num_speculative_tokens": 2}` probada con vLLM 0.30.0.
-- Ausencia practica de rechazos: 0 rechazos duros de 200 en HarmBench bajo ambos jueces, frente a 168/155 del base.
-- Capacidades multilingues: no disponible (los tags del repositorio no declaran idiomas).
+- Generación de texto conversacional multi-turno con modo de razonamiento (thinking) activado por defecto.
+- Entrada de imágenes (image-text-to-text); la configuración de servicio probada limita a 1 imagen por prompt y desactiva vídeo.
+- Tool calling y function calling, con parser `qwen3_coder` y auto-selección de herramienta en vLLM.
+- Razonamiento multi-paso y uso en flujos de agente, incluidas llamadas a herramientas encadenadas.
+- Decodificación especulativa mediante la cabeza MTP (multi-token prediction), con `num_speculative_tokens` configurable.
+- Comprensión y generación multilingüe: no disponible el detalle de idiomas.
+- Comportamiento de rechazo atenuado: el modelo tiende a no negarse a peticiones que el base rechazaría, lo que constituye su rasgo diferencial y su principal riesgo.
 
 ## Casos de uso
 
-- Investigacion en interpretabilidad: estudiar como se codifica la direccion de rechazo en el flujo residual comparando este modelo con su base, aprovechando que solo 131 tensores difieren y que el autor los enumera uno a uno.
-- Red-teaming y evaluacion de robustez: generar respuestas que el modelo base rechazaria para construir conjuntos de prompts adversarios y medir la eficacia de clasificadores de seguridad externos.
-- Evaluacion de metodos de abliteracion: servir como punto de comparacion reproducible frente a otras variantes de Qwen3.8-27B (orcarouter, huihui-ai, Blackfrost) usando la distancia KL al base y el desglose tensor a tensor como metricas.
-- Analisis de degeneracion y bucles: con un 6,7 % de respuestas que agotan el presupuesto de 16.000 tokens, es util para estudiar modos de fallo de modelos ablacionados y disenar detectores de bucles en produccion.
-- Auditoria de sistemas de moderacion: al no tener rechazos internos, permite probar si una capa de filtrado externa (clasificador de entrada/salida) soporta sola la carga de seguridad antes de considerar cualquier despliegue.
-- Investigacion multimodal de seguridad: la torre de vision esta intacta y byte-identica al base, lo que permite estudiar comportamiento de rechazo sobre entradas de imagen sin la variable de un vision tower modificado.
-- Red-teaming de agentes: el tool calling multi-turno y la decodificacion especulativa funcionan sobre estos pesos, lo que permite evaluar agentes con herramientas en escenarios hostiles.
-- Docencia y divulgacion tecnica: explicar con un caso real que la ablacion de una direccion concreta elimina el rechazo sin degradar de forma apreciable otras capacidades (0,82 pp de media en cinco tareas).
+- Investigación en interpretabilidad: analizar cómo se representa y se suprime la dirección de rechazo comparando activaciones y pesos con el modelo base, gracias a que solo 131 matrices difieren y la torre de visión es idéntica.
+- Red-teaming y evaluación de robustez: generar respuestas que el modelo alineado rechaza para construir conjuntos de prueba de clasificadores de seguridad y moderadores externos.
+- Estudio de ablaciones norm-preserving: replicar el protocolo de Arditi et al. sobre otras direcciones (toxicidad, sesgo) usando este modelo como control positivo de que la edición no degrada el resto de capacidades.
+- Extracción de datos sintéticos para entrenamiento de filtros: producir pares prompt-respuesta no filtrados y etiquetarlos con un moderador para entrenar clasificadores de rechazo.
+- Evaluación de pipelines de inferencia: probar vLLM 0.30.0 con FP8, GGUF y MLX sobre un modelo de 27B con visión y MTP, midiendo aceptación especulativa y latencia en distintas cuantizaciones.
+- Análisis de robustez multimodal: comprobar si la eliminación de la dirección de rechazo en el flujo residual afecta al comportamiento ante entradas de imagen, aprovechando que la torre de visión no se ha modificado.
+- Docencia y divulgación técnica: ilustrar en un taller cómo una edición lineal de bajo rango altera el comportamiento de seguridad sin reentrenar el modelo.
 
 ## Benchmarks y rendimiento
 
-No se publican puntuaciones absolutas de MMLU, GSM8K o HumanEval. Los unicos datos disponibles son comparativas internas ejecutadas con el mismo arnes sobre el base, la referencia `orcarouter/Qwen3.8-27B-Uncensored` (etiquetada como «orca») y RANA, con tres semillas de muestreo y dos jueces LLM independientes (gpt-oss y Mistral). Donde aparecen dos cifras, corresponden a cada juez.
-
-| Metrica | Base | orca (referencia) | RANA |
-|---|---|---|---|
-| Rechazos duros, HarmBench (de 200) | 168 / 155 | 0,7 / 0 | 0 / 0 |
-| Responde a la peticion, prompts held-out | 3 % / 0 % | 84 % / 49 % | 90 % / 54 % |
-| Agota el presupuesto de tokens (bucles), held-out | 0,6 % | 11,9 % | 6,7 % |
-| Cambio medio de capacidad vs base (5 tareas) | — | 1,11 pp | 0,82 pp |
-| Peor tarea individual vs base | — | −2,2 (HumanEval) | −1,5 (TruthfulQA) |
-| Distancia al base (KL) | 0 | 0,075 | 0,041 |
-
-| Modelo | HarmBench (200): respuestas | Bucles | Held-out (240): respuestas | Bucles | Tokens medios (held-out) |
-|---|---|---|---|---|---|
-| base | 3,2 % / 0,7 % | 0,3 % | 3,2 % / 0,0 % | 0,6 % | 1.113 |
-| orca | 73,7 % / 61,2 % | 26,3 % | 83,9 % / 49,2 % | 11,9 % | 6.461 |
-| RANA | 78,5 % / 57,3 % | 20,5 % | 90,0 % / 54,4 % | 6,7 % | 4.697 |
-
-Notas de la evaluacion: los jueces coinciden bien en rechazos explicitos (kappa = 0,89) pero solo moderadamente en «respondido o no» (kappa = 0,54). Frente a orca, en los prompts held-out RANA entra menos en bucle (12 casos frenta a 50 en los que solo uno de los dos modelo hizo bucle, p = 1,2 × 10⁻⁶) y responde mas bajo ambos jueces (p = 2,9 × 10⁻⁶ con gpt-oss; p = 0,008 con Mistral). En HarmBench el ganador depende del juez, por lo que no hay vencedor claro. RANA es 2,2 pp peor que orca en IFEval. En el banco externo Abliterlitics, que compara 12 variantes de Qwen3.8-27B con un presupuesto de razonamiento de 15.360 tokens y FP8 dinamico sobre una RTX 5090, las ediciones quirurgicas lideran con orcarouter al 82 % y apostate al 79 %.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente aporta métricas internas de la ablación: 131 matrices modificadas, 333 tensores de visión idénticos al base, componente residual de la dirección eliminada de 0,00122 frente a 0,225, y longitud de aceptación especulativa de 2,45 con MTP.
 
 ## Requisitos de hardware
 
-- Inferencia en BF16: el repositorio ocupa 55,6 GB, por lo que necesita una GPU de 80 GB o mas (A100 80 GB, H100 80 GB, H200). La model card indica que cabe en una unica GPU de 80 GB o superior en BF16.
-- GPU de consumo: no cabe en BF16 en ninguna GPU de consumo actual (27,8 mil millones de parametros a 2 bytes por parametro). No se publican pesos cuantizados en este repositorio, por lo que no hay una ruta oficial a 24 GB o 16 GB de VRAM.
-- Alternativas cuantizadas de la misma familia: existen builds GGUF de terceros para otras variantes ablacionadas de Qwen3.8-27B (por ejemplo Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF), pero no para estos pesos concretos.
-- Opciones de despliegue: vLLM 0.30.0 es la unica verificada por el autor, con `VLLM_USE_FLASHINFER_SAMPLER=0` necesario en GPUs Blackwell. No hay soporte confirmado para llama.cpp, Ollama, TGI ni TensorRT-LLM en esta publicacion.
-- Configuracion de referencia: `--dtype bfloat16 --max-model-len 20480 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder --limit-mm-per-prompt '{"image": 1, "video": 0}' --speculative-config '{"method": "mtp", "num_speculative_tokens": 2}'`.
-- Latencia y throughput: no disponibles. El unico dato de eficiencia publicado es la longitud de aceptacion de 2,45 con decodificacion especulativa MTP.
-- Presupuesto de memoria en generacion: el arnes de evaluacion uso un presupuesto de 16.000 tokens por respuesta y una media de 4.697 tokens en los prompts held-out, lo que da una idea del consumo de KV cache en cargas de razonamiento largo.
+- VRAM en BF16: los pesos ocupan ~55,6 GB; con caché KV y overhead de servicio, la model card indica que cabe en una GPU de 80 GB o más.
+- VRAM en FP8: ~30,9 GB de pesos, aproximadamente la mitad de memoria de pesos que BF16.
+- VRAM en GGUF: de 10,0 GB (IQ2_M) a 28,6 GB (Q8_0), apto para GPUs de consumo con 12–24 GB según cuantización.
+- VRAM en MLX: de 16,1 GB (4 bits) a 54,7 GB (BF16), para Apple Silicon con memoria unificada suficiente.
+- GPU recomendadas: A100 80 GB, H100 80 GB o superiores para BF16; RTX 4090 (24 GB) viable con GGUF Q4/Q5 o FP8 con offload parcial; GPUs Blackwell requieren `VLLM_USE_FLASHINFER_SAMPLER=0` según la model card.
+- Despliegue: vLLM 0.30.0 es el runtime probado, con `--reasoning-parser qwen3`, `--enable-auto-tool-choice`, `--tool-call-parser qwen3_coder` y `--speculative-config '{"method": "mtp", "num_speculative_tokens": 2}'`. Para GGUF, llama.cpp; para Apple Silicon, MLX. No se mencionan TGI ni Ollama en la información disponible.
+- Latencia y throughput: no disponibles. La model card advierte que las peticiones técnicas largas pueden consumir 20.000–50.000 tokens de razonamiento, lo que eleva la latencia de forma notable.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos duros (HarmBench, de 200) | Distancia al base (KL) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| preemware/Qwen3.8-27B-RANA-abliterated | 27,78 mil millones | no disponible | 0 / 0 | 0,041 | Apache-2.0 | safetensors BF16 en Hugging Face |
-| Qwen/Qwen3.8-27B (base) | ~27,8 mil millones | no disponible | 168 / 155 | 0 | Apache-2.0 | safetensors, referencia oficial |
-| orcarouter/Qwen3.8-27B-Uncensored | no disponible | no disponible | 0,7 / 0 | 0,075 | no disponible | variante ablacionada de referencia en la comparativa |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible | no disponible | no disponible | no disponible | no disponible | otra ablacion de la comunidad, sin datos comparables en esta busqueda |
-| Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF | no disponible (derivado de 27B) | no disponible | no disponible | no disponible | no disponible | escalera GGUF para llama.cpp |
-
-En el banco externo Abliterlitics, que evalua 12 variantes ablacionadas de Qwen3.8-27B, la variante orcarouter obtiene el 82 % y apostate el 79 % en el leaderboard con juez. RANA no figura entre los datos recuperados de esa comparativa.
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-RANA-abliterated | 27,78 B | 262.144 declarados (20.480 en evaluación) | Texto + imagen | Apache-2.0 | Rechazo ablacionado; BF16, FP8, GGUF y MLX |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | 262.144 | Texto + imagen | Apache-2.0 | Alineación intacta; referencia para comparar la ablación |
+| Otras variantes abliterated de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Modelo con la alineacion de seguridad eliminada de forma explicita: la model card prohibe el despliegue publico o de cara al usuario final sin una capa de moderacion independiente. El propio modelo ya no filtra, por lo que todo el filtrado debe ser externo.
-- Uso previsto exclusivamente de investigacion: interpretabilidad, red-teaming y evaluacion de robustez del comportamiento de rechazo.
-- Responsabilidad legal del usuario: cumplimiento de la legislacion aplicable, de la licencia Apache-2.0 heredada de Qwen y de los terminos de cualquier plataforma donde se usen las salidas.
-- Riesgo de alucinacion no caracterizado: no hay mediciones absolutas de veracidad; el unico dato es una caida de 1,5 pp en TruthfulQA respecto al base.
-- Tendencia a bucles: el 6,7 % de las respuestas held-out agotan el presupuesto de 16.000 tokens, frente al 0,6 % del base y al 11,9 % de orca. Es una tasa once veces superior a la del modelo original.
-- Perdida de seguimiento de instrucciones: 2,2 pp peor que la referencia orca en IFEval.
-- Evaluacion con baja concordancia entre jueces: kappa = 0,54 en «respondido o no» implica que las cifras de respuesta parcial dependen mucho del juez elegido.
-- Receta no reproducible: el metodo RANA es interno y ni el codigo ni la receta estan publicados, lo que limita la replicacion independiente del procedimiento (aunque si se verifica el resultado del cambio de pesos).
-- Idiomas y contexto sin declarar: no hay informacion sobre cobertura linguistica ni longitud de contexto nativa, un vacio relevante para planificar despliegues.
-- Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion por parte de terceros mas alla de la comprobacion de Abliterlitics.
-- Sesgos: no se publica ninguna evaluacion de sesgos del modelo base ni de esta variante.
+- Modelo de investigación: la model card lo declara no apto para despliegue público o de usuario final sin una capa de moderación separada, porque sus rechazos han sido eliminados en gran medida.
+- Riesgo de contenido dañino: al suprimir la dirección de rechazo, puede generar instrucciones, texto tóxico o material que el modelo base bloquearía; el filtrado debe hacerse fuera del modelo.
+- Alucinación: no se han publicado evaluaciones de veracidad; el modo thinking activado por defecto y los razonamientos de 20.000–50.000 tokens aumentan la superficie de error en tareas largas.
+- Contexto: aunque la config declara 262.144 posiciones, las evaluaciones registradas no establecen rendimiento a esa longitud; el límite probado es 20.480 tokens.
+- Idiomas: no se dispone de la lista de idiomas soportados ni de evaluaciones por idioma.
+- Sesgos: no se han publicado análisis de sesgo; la edición de la dirección de rechazo puede alterar de forma no uniforme el comportamiento ante distintos tipos de peticiones.
+- Licencia: Apache-2.0 permite uso comercial, pero el usuario es responsable del cumplimiento legal y de las condiciones de la plataforma donde se usen las salidas; la licencia no exime de responsabilidad sobre el contenido generado.
+- Reproducibilidad: la receta y el código de RANA no se han publicado, por lo que la ablación no es replicable a partir de esta release.
+- Multimodal: la configuración probada limita a 1 imagen por prompt y desactiva vídeo; no hay datos sobre rendimiento con múltiples imágenes.
 
 ## Enlaces
 
-- [preemware/Qwen3.8-27B-RANA-abliterated en Hugging Face](https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated)
-- [Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Repositorio de Qwen3.8-27B en GitHub (AlibabaCloud-Official)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
-- [Repositorio de la serie Qwen3.8 en GitHub (QwenLM)](https://github.com/QwenLM/Qwen3.8)
-- [Abliterlitics: comparativa de 12 variantes ablacionadas de Qwen3.8-27B](https://abliterlitics.dev/models/qwen38-27b/)
-- [Abliterlitics (codigo, commit 9b15eb0)](https://github.com/dreamfast/abliterlitics)
-- [huihui-ai/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
-- [Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF](https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF)
-- Referencia bibliografica citada por el autor: Arditi et al. (2024) sobre direccion de rechazo en modelos de lenguaje. URL no disponible en los resultados de busqueda.
+- Modelo en Hugging Face: https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Organización Abliterant: https://huggingface.co/abliterant
+- Build FP8: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-FP8
+- Build GGUF: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-GGUF
+- Build MLX: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-MLX
+- Notas de investigación RANA: https://abliterant.ai/research/rana-refusal-ablation
+- Catálogo de modelos Abliterant: https://abliterant.ai/models
+- Sitio de Abliterant: https://abliterant.ai/
+- Herramienta de verificación Abliterlitics: https://github.com/dreamfast/abliterlitics

@@ -2,105 +2,103 @@
 
 ## Resumen
 
-civil-engineering-ai999x es un motor de cálculo de ingeniería civil para Python desarrollado por AI999X (autor: Ibnul Jaif Farabi), publicado bajo licencia Apache-2.0 y distribuido como paquete `pip install civil-engineering-ai999x` (import `civil_engineering_ai999x`). No es un modelo generativo al uso: la model card lo describe como un motor determinista neuro-simbólico que combina una capa de lectura de preguntas en inglés con 88 procedimientos de cálculo certificados implementados en Python puro (sympy, mpmath). Su propuesta es la opuesta a la de un LLM: en lugar de generar texto plausible, ejecuta un cálculo simbólico, lo verifica (sustitución inversa, comprobación dimensional o cálculo independiente) y devuelve el resultado con pasos, unidades, LaTeX y supuestos; si no puede verificar, emite un rechazo explícito.
+Civil Engineering (civil-engineering-ai999x) es un motor de cálculo determinista empaquetado y distribuido con el formato de un modelo de Hugging Face, orientado a la resolución de problemas de ingeniería civil: hidráulica de tuberías y canales abiertos, hidrología, flujo de aguas subterráneas, mecánica de suelos y cimentaciones, redes de agua y topografía. Lo desarrolla AI999X y abarca 88 cálculos organizados en 7 áreas temáticas, cada uno con su fórmula, sus pasos intermedios y sus unidades, además de una explicación en lenguaje natural cuando falta un dato de entrada o este queda fuera de rango.
 
-El repositorio declara 4.715.520 parámetros en safetensors, pero la documentación pública no detalla ninguna arquitectura de red neuronal ni longitud de contexto, y de hecho describe el paquete como Python puro que corre en CPU sin GPU, sin red y sin clave de API. Esa discrepancia entre el dato de parámetros y la descripción funcional es el punto que cualquier evaluador debe aclarar antes de integrarlo.
+El paquete se presenta con cuatro vías de uso: aplicación de escritorio para Windows y Linux, interfaz de línea de comandos, versión web y biblioteca de Python 3.10+. Todo el cálculo se ejecuta en local, sin conexión a red, lo que el autor asocia a un comportamiento determinista y "cero alucinación": al no ser un modelo generativo, las respuestas son reproducibles y verificables paso a paso.
 
-Su relevancia práctica está en el nicho: cálculo de ingeniería civil reproducible y auditable, con cobertura declarada de hidráulica de canales abiertos, redes de tuberías, hidrología, flujo subterráneo, mecánica de suelos y cimentaciones, y topografía. El autor reporta 566 respuestas documentadas reproducidas de forma idéntica en Windows y Linux sobre Python 3.10 a 3.14.
+El artefacto aloja 4.715.520 parámetros en safetensors según los metadatos del repositorio, aunque la model card describe un motor compilado (con etiquetas que mencionan Rust y Python) y no una red neuronal entrenada. Está pensado para estudiantes, docentes y profesionales que necesitan resolver ejercicios de ingeniería civil con trazabilidad completa del procedimiento y de las unidades, en inglés y con licencia Apache 2.0.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible como arquitectura neuronal; la model card describe un motor determinista neuro-simbolico (lectura basada en reglas + 88 capacidades simbolicas certificadas en Python puro con sympy y mpmath) |
-| Parametros totales | 4.715.520 (dato declarado en safetensors); la model card no detalla a que corresponde esa cifra |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repositorio incluye artefactos ONNX y safetensors, sin detalle de cuantizaciones) |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX y wheel de Python (`civil_engineering_ai999x-1.0.0-py3-none-any.whl`) |
+| Arquitectura | Motor de cálculo determinista compilado (no es un transformer generativo); empaquetado como artefacto tipo modelo |
+| Parámetros totales | 4.715.520 (según safetensors del repositorio) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica a un motor de cálculo) |
+| Tipos de cuantización | no disponible (no aplica) |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repositorio); distribución principal como binarios compilados (Windows/Linux x86-64) y paquete Python con build pure-Python para macOS y ARM |
+| Pipeline declarado | question-answering |
+| Cobertura funcional | 88 cálculos en 7 áreas temáticas |
+| Plataformas | Windows, Linux (x86-64); macOS y ARM vía build pure-Python; navegador |
+| Requisitos de Python | 3.10+ |
+| Versión del paquete | 1.6.7 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe una arquitectura transformer, MoE, SSM ni hibrida, ni aporta datos de entrenamiento (numero de tokens, composicion del corpus, RLHF o DPO). Lo que documenta el autor es un diseno en dos capas: una capa de lectura que interpreta preguntas en ingles liano o llamadas tipadas mediante `solve(capability_id, **inputs)`, y una capa de resolucion compuesta por 88 procedimientos certificados de ingenieria civil. Cada respuesta se valida antes de devolverse mediante sustitucion inversa, comprobacion dimensional o comparacion con un calculo independiente.
+No se trata de una red neuronal entrenada con tokens, sino de un motor de cálculo compilado que implementa fórmulas cerradas de ingeniería civil. La model card describe "un motor compilado, cuatro formas de usarlo" y etiqueta el proyecto con Rust y Python, lo que sugiere un núcleo de cálculo compilado con enlaces de Python y una capa de presentación (aplicación de escritorio, CLI y web). Cada uno de los 88 cálculos incluye fórmula, pasos intermedios, unidades y mensajes de diagnóstico cuando una entrada falta o está fuera de rango.
 
-El rasgo tecnico distintivo es el manejo explicito de siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR), de modo que el sistema nunca devuelve una suposicion silenciosa. El paquete se declara sin dependencias de GPU, red o claves de API, y con resultados identicos en Windows (Python 3.13) y Linux x86-64 (Python 3.10 a 3.14). La version documentada es 1.0.0, con un knowledge pack 1.0.1.
+No hay información disponible sobre datos de entrenamiento, número de tokens, composición del dataset, RLHF, DPO ni innovaciones de inferencia como decodificación especulativa o atención lineal, porque el artefacto no es un modelo de lenguaje generativo. La "evaluación" declarada se basa en 566 preguntas documentadas con respuestas doradas, ejecutadas en Windows y Linux con Python 3.10 a 3.14, y el autor afirma resultados idénticos en todas las plataformas.
 
 ## Capacidades
 
-- Resolucion de problemas de hidraulica de canales abiertos: ecuacion de Manning en canales rectangulares, resalto hidraulico, vertederos.
-- Calculo de redes de tuberias: Hazen-Williams y metodo de Hardy Cross para redes malladas con caudales y demandas nodales.
-- Hidrologia: hidrograma unitario y analisis de frecuencias de avenidas.
-- Flujo subterraneo: bombeo y descenso de nivel mediante la solucion de Theis (caudal, transmisividad, coeficiente de almacenamiento, distancia y tiempo).
-- Mecanica de suelos y cimentaciones: asentamiento por consolidacion normalmente consolidada (Cc, e0, H, tensiones).
-- Topografia, segun la cobertura declarada de capacidades.
-- Interfaz de doble via: `ask()` para preguntas en lenguaje natural documentado y `solve(capability_id, **inputs)` como interfaz tipada garantizada.
-- Salida explicada: pasos, formulas en LaTeX, unidades, supuestos y procedimiento empleado.
-- Rechazo controlado ante ambiguedad, entradas invalidas o peticiones fuera de alcance.
-- Uso offline en CPU, sin GPU ni conectividad.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso generativo, vision ni audio.
+- Resolución paso a paso de 88 cálculos de ingeniería civil en 7 áreas: hidráulica de tuberías y canales abiertos, hidrología, aguas subterráneas, mecánica de suelos y cimentaciones, redes de agua y topografía.
+- Hidráulica de canales abiertos: ecuación de Manning para caudal en canales rectangulares, resalto hidráulico, vertederos y flujo uniforme.
+- Hidráulica de tuberías y redes: Hazen-Williams y método de Hardy Cross para reparto de caudales en redes de agua.
+- Hidrología: convolución con hidrograma unitario, frecuencia de crecientes y periodo de retorno para un riesgo aceptable en una vida útil de diseño.
+- Aguas subterráneas: descenso de nivel (drawdown) mediante la solución de Theis alrededor de un pozo de bombeo.
+- Geotecnia: asentamiento por consolidación primaria de arcilla normalmente consolidada, capacidad portante y empuje de tierras (empuje activo de Coulomb en muro rugoso con relleno inclinado).
+- Topografía: elementos de una curva circular horizontal simple.
+- Presentación de resultados con fórmula, pasos, unidades y motivo explícito cuando una entrada no es válida.
+- Ejecución offline y determinista; sin tool calling, sin agentes, sin capacidades multimodales ni modo de razonamiento generativo, ya que no es un modelo de lenguaje.
+- Interfaz de pregunta-respuesta sobre el catálogo de cálculos (pipeline declarado: question-answering), en inglés.
 
 ## Casos de uso
 
-- Correccion automatica de ejercicios de hidraulica: el motor resuelve el problema con `solve()` y devuelve pasos, formula y unidades, lo que permite comparar con la respuesta del alumno y mostrar donde falla, sin riesgo de que el sistema invente un resultado.
-- Verificacion de calculos en proyecto: ante una hoja de calculo con caudales en una red de distribucion, se ejecuta el procedimiento de Hardy Cross o Hazen-Williams y se contrasta el resultado con el del diseno original antes de firmar la memoria.
-- Docencia y material didactico: generacion de enunciados resueltos de consolidacion, Theis o Manning con LaTeX listo para apuntes, ya que la salida incluye formulas y supuestos de forma nativa.
-- Pipeline de CI/CD para calculos de ingenieria: al ser un paquete de Python determinista y sin red, se puede incluir en tests automatizados que comprueben que un conjunto de casos de referencia sigue devolviendo los mismos valores tras cada cambio.
-- Uso en campo sin conectividad: inspecciones o trabajos de sondeo donde no hay cobertura ni GPU; el calculo de descenso de nivel por bombeo o de asentamiento se ejecuta en el portatil en CPU.
-- Integracion en aplicaciones de calculo internas: la interfaz tipada `solve(capability_id, **inputs)` permite envolver el motor como servicio interno de validacion, de modo que una herramienta propia compruebe resultados antes de publicarlos.
-- Analisis hidrologico preliminar: estimacion de frecuencias de avenidas e hidrogramas unitarios en fase de anteproyecto, con trazabilidad de la formula aplicada.
+- Docencia de hidráulica: el alumnado plantea un problema de Manning en un canal rectangular y el motor devuelve la fórmula, la sustitución numérica, el resultado con unidades y los pasos intermedios, lo que permite usarlo como corrector automático de prácticas sin conexión.
+- Cálculo de redes de distribución de agua: aplicación del método de Hardy Cross con Hazen-Williams para repartir caudales en una red mallada y comprobar iteraciones, útil en asignaturas de abastecimiento y en anteproyectos de redes de pequeño tamaño.
+- Estudios hidrológicos preliminares: convolución de un hidrograma unitario para obtener el hidrograma de escorrentía directa y cálculo del periodo de retorno asociado a un riesgo aceptable durante la vida útil de una infraestructura.
+- Evaluación de bombeos en acuíferos: estimación del descenso alrededor de un pozo mediante la solución de Theis para dimensionar caudales de extracción y distancias a pozos vecinos en fase de prefactibilidad.
+- Geotecnia de cimentaciones: cálculo del asentamiento por consolidación primaria de una arcilla normalmente consolidada y del empuje activo de Coulomb sobre un muro con relleno inclinado, con la trazabilidad necesaria para revisar hipótesis en un informe.
+- Trazado viario básico: obtención de los elementos de una curva circular horizontal (tangente, desarrollo, cuerda, externa) para replanteos preliminares y comprobación de ejercicios de topografía.
+- Integración en pipelines de Python: uso como biblioteca (`pip install civil-engineering-ai999x`) para incorporar las 88 rutinas de cálculo a cuadernos de cálculo, scripts de validación o generadores de memorias, con build compilado en Windows y Linux x86-64 y build pure-Python en macOS y ARM.
+- Entornos sin conectividad: despliegue en aulas, obra o campo mediante la aplicación de escritorio o la CLI, donde no hay acceso a servicios en la nube y se requiere reproducibilidad entre plataformas.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index de la model card:
+Los únicos datos disponibles son los declarados por el autor en el model-index, no verificados de forma independiente:
 
-| Tarea | Conjunto de evaluacion | Metrica | Valor | Verificado |
-|---|---|---|---|---|
-| Question answering de ingenieria civil | Golden answers (566 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 | No (marcado como `verified: false`) |
+| Tarea | Conjunto de evaluación | Métrica | Valor |
+|---|---|---|---|
+| Question answering de ingeniería civil | Golden answers (566 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy ("idéntico en todas las plataformas") | 1,0 (verificado: false) |
 
-El autor indica que las 566 respuestas documentadas son identicas en todas las plataformas probadas: Windows con Python 3.13 y Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14. No se han publicado resultados de benchmarks independientes (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, y la metrica de accuracy 1.0 procede de un conjunto de evaluacion propio del autor, no de un tercero.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El dato de accuracy 1,0 debe interpretarse como coincidencia con las respuestas doradas del propio autor sobre su catálogo de 566 preguntas, no como una medida de capacidad general.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no aplica; el paquete se ejecuta en CPU sin GPU.
-- GPU recomendadas: ninguna; no requiere aceleracion por hardware segun la model card.
-- Cabe en cualquier equipo consumer: si, al tratarse de Python puro sobre CPU.
-- Almacenamiento: el repositorio declara 0.0 GB, coherente con un paquete ligero.
-- Opciones de despliegue: instalacion via PyPI (`pip install civil-engineering-ai999x`) o desde el wheel del repositorio; el repositorio incluye ademas artefactos ONNX y safetensors cuyo uso previsto no se detalla. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no serian aplicables a un motor simbolico de este tipo.
-- Dependencias declaradas: sympy y mpmath.
-- Latencia y throughput: no disponibles; no se publican mediciones.
+- VRAM: no aplica; el artefacto no requiere GPU para inferencia. El cálculo se ejecuta en CPU.
+- GPU recomendadas: no disponible (no se requiere GPU).
+- GPU de consumo: irrelevante; funciona en cualquier equipo con Windows o Linux x86-64, o con Python 3.10+ en macOS y ARM mediante el build pure-Python.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos; los binarios de escritorio y CLI se distribuyen como archivos comprimidos independientes (versión 1.6.7).
+- Opciones de despliegue: aplicación de escritorio (Windows/Linux), CLI `civil-engineering` (Windows/Linux), versión web en la página del modelo y biblioteca de Python (`pip install civil-engineering-ai999x`). No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
+- Latencia y throughput: no disponibles de forma numérica; al ser cálculos de fórmula cerrada sobre CPU, la latencia esperada es de milisegundos por consulta, aunque no se aporta medición en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de comparacion en la informacion proporcionada. El autor no publica una comparativa con alternativas, y las metricas declaradas (accuracy 1.0 sobre un conjunto propio de 566 preguntas) no son directamente comparables con benchmarks estandar de LLM. Cualquier comparacion con modelos generativos de proposito general o con librerias de calculo simbolico requeriria fijar el mismo conjunto de casos, algo que no se ha hecho en la documentacion disponible.
-
-| Criterio | civil-engineering-ai999x | Alternativas |
-|---|---|---|
-| Parametros | 4.715.520 declarados en safetensors | No disponible |
-| Longitud de contexto | No disponible | No disponible |
-| Rendimiento | Accuracy 1.0 en 566 preguntas propias (no verificado) | No disponible |
-| Licencia | Apache-2.0 | No disponible |
-| Disponibilidad | PyPI y Hugging Face, offline en CPU | No disponible |
+No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (motores de cálculo de ingeniería civil empaquetados como artefactos de Hugging Face). Como referencia funcional, las alternativas habituales serían hojas de cálculo con fórmulas propias, scripts de Python ad hoc o software comercial de cálculo hidráulico y geotécnico, pero no se dispone de datos de parámetros, contexto ni rendimiento de esas alternativas en la información disponible para construir una tabla rigurosa.
 
 ## Limitaciones y advertencias
 
-- Cobertura acotada: 88 procedimientos certificados en seis areas (hidraulica de canales, redes de tuberias, hidrologia, aguas subterraneas, geotecnia y topografia). Fuera de ese alcance el sistema devuelve OUT_OF_SCOPE, no una respuesta aproximada.
-- Solo ingles: la unica lengua declarada es `en`; las preguntas en castellano no estan soportadas por la capa `ask()`.
-- Ambiguedad de la ficha de Hugging Face: el pipeline declarado es `question-answering` y el repositorio contiene safetensors y ONNX, pero la documentacion describe un motor simbolico en Python puro. Conviene aclarar con el autor el papel real de esos pesos antes de tratarlo como modelo neuronal.
-- Metadato `inference: false`: el widget de inferencia de Hugging Face no esta habilitado, por lo que la prueba debe hacerse instalando el paquete.
-- Benchmarks no verificados: el 1.0 de accuracy procede del conjunto de evaluacion del propio autor y esta marcado como `verified: false`; no hay validacion independiente.
-- Riesgo de alucinacion bajo por diseno, pero no nulo en la capa de lectura: si la interpretacion de una pregunta en lenguaje natural es incorrecta, el calculo sera correcto para un problema distinto. La via `solve(capability_id, **inputs)` elimina esa ambiguedad y es la recomendada en produccion.
-- Sin datos de sesgo, robustez frente a entradas adversarias ni comportamiento ante preguntas mal formadas mas alla de los siete codigos de salida declarados.
-- Licencia Apache-2.0: permite uso comercial y modificacion con las obligaciones habituales de atribucion y aviso; no se declaran restricciones adicionales.
-- Version 1.0.0 con un unico mantenedor: no se documenta hoja de ruta, gobernanza ni politica de soporte a largo plazo.
+- No es un modelo de lenguaje: no genera texto libre, no razona sobre problemas abiertos ni admite preguntas fuera del catálogo de 88 cálculos implementados.
+- Cobertura acotada: solo resuelve los cálculos documentados en sus 7 áreas temáticas; cualquier problema fuera de ese conjunto debe resolverse con otras herramientas.
+- Idioma: únicamente inglés, tanto en la interfaz como en las explicaciones.
+- El resultado de accuracy 1,0 está declarado por el autor y marcado como no verificado; se mide contra sus propias respuestas doradas, por lo que no constituye una validación independiente.
+- Los metadatos indican 4.715.520 parámetros en safetensors, pero la model card describe un motor compilado; conviene tratar esa cifra con cautela y no asumir que corresponde a una red neuronal entrenada.
+- La etiqueta `inference: false` en la model card indica que no se ofrece inferencia alojada estándar en Hugging Face; el uso requiere descargar los binarios o instalar el paquete de Python.
+- Riesgo de error de entrada: el motor devuelve un motivo en lugar de un número cuando falta un dato o está fuera de rango, pero la validez del resultado depende de que las unidades y los parámetros introducidos sean los correctos; no se documenta validación dimensional completa.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución y conservación del aviso de licencia; no se documentan restricciones adicionales, pero tampoco garantías de idoneidad para uso profesional en proyectos reales.
+- Para uso en producción de ingeniería (memorias, cálculos estructurales o hidráulicos oficiales) se recomienda validación por un técnico competente y contraste con normativa aplicable; el autor no declara certificación ni conformidad normativa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/civil-engineering-ai999x
-- Paquete en PyPI: https://pypi.org/project/civil-engineering-ai999x/
-- Guia de capacidades (docs): https://huggingface.co/AI999X/civil-engineering-ai999x/tree/main/docs
-- Evaluacion: https://huggingface.co/AI999X/civil-engineering-ai999x/tree/main/evaluation
-- Organizacion AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo con capacidades interactivas: https://www.ai999x.com/models/civil-engineering-ai999x/
+- Demostración en vídeo (MP4): https://www.ai999x.com/?ax_shot=civil-engineering-ai999x/clip.mp4
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-civil-engineering-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-civil-engineering-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio en GitHub: https://github.com/AI999X/ai999x-desktop
+- Paquete de Python: `pip install civil-engineering-ai999x`

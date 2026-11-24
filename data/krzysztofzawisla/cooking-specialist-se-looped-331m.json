@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "KrzysztofZawisla/cooking-specialist-se-looped-331m",
+  "slug": "krzysztofzawisla-cooking-specialist-se-looped-331m",
+  "author": "KrzysztofZawisla",
+  "url": "https://huggingface.co/KrzysztofZawisla/cooking-specialist-se-looped-331m",
+  "created_at": "2026-11-23T22:03:32.000Z",
+  "updated_at": "2026-11-23T23:03:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "looped_lm",
+    "text-generation",
+    "looped-transformer",
+    "recurrent-depth",
+    "custom-architecture",
+    "specialist",
+    "food",
+    "cooking",
+    "custom_code",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 360140672,
+  "parameters_human": "360.1M",
+  "storage_bytes": 720287816,
+  "storage_human": "720 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

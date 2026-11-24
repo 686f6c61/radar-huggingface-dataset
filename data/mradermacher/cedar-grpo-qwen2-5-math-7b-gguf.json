@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Start - IKS Rüsselsheim",
-      "url": "https://www.iks-ruesselsheim.de/",
-      "snippet": "Willkommen auf der Homepage der Immanuel-Kant-Schule Rüsselsheim Die Immanuel-Kant-Schule ist ein vollausgebautes G9 …"
-    },
-    {
-      "title": "Start - IKS Rüsselsheim",
-      "url": "https://www.iks-ruesselsheim.de/start",
-      "snippet": "Die Immanuel-Kant-Schule ist ein vollausgebautes G9 Gymnasium mit einer 125-jährigen Tradition. Wir verstehen uns als ein …"
-    },
-    {
-      "title": "Immanuel-Kant-Schule | Stadt Rüsselsheim",
-      "url": "https://www.ruesselsheim.de/bildung/schulen/schulen/immanuel-kant-schule",
-      "snippet": "Schule mit musikalischem Schwerpunkt Schule mit angegliedertem Schulsportzentrum Sprachdiplome und Schüleraustausche als …"
-    },
-    {
-      "title": "Catrin Metzger | Stadt Rüsselsheim",
-      "url": "https://www.ruesselsheim.de/vv/personen/m/MC-02",
-      "snippet": "Immanuel-Kant-Schule (Schulsozialarbeit), Evreuxring 25 65428 Rüsselsheim am Main, Tel.: +49 171 4794873"
-    },
-    {
-      "title": "Immanuel-Kant-Schule (Rüsselsheim am Main) – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/Immanuel-Kant-Schule_(R%C3%BCsselsheim_am_Main)",
-      "snippet": "Die Immanuel-Kant-Schule (kurz: IKS) ist ein 1896 gegründetes Gymnasium in Rüsselsheim am Main, benannt nach dem …"
-    }
-  ]
+  "sources": []
 }

@@ -2,120 +2,98 @@
 
 ## Resumen
 
-thermofluids-ai999x es un motor de resolución de problemas de termofluidos para Python, desarrollado por AI999X (creador: Ibnul Jaif Farabi), que combina una capa de lectura de preguntas en inglés basada en reglas con un conjunto de capacidades simbólicas certificadas. No es un modelo de lenguaje generativo: recibe una pregunta o una llamada tipada, selecciona una de sus 126 capacidades certificadas (27 derivaciones, 13 procedimientos y 86 relaciones), calcula el resultado con sympy y mpmath, lo verifica y lo devuelve con pasos, unidades, LaTeX y supuestos. Si no puede verificarlo, se niega a responder en lugar de aproximar.
+Thermofluids (thermofluids-ai999x) es un motor de cálculo determinista empaquetado y distribuido a través de Hugging Face por el autor AI999X, orientado a la resolución de problemas de termofluidos: estática y dinámica de fluidos, flujo en tuberías, capas límite, aerodinámica, conducción, convección y radiación, intercambiadores de calor, ciclos termodinámicos, psicrometría y combustión. Cubre 106 cálculos organizados en 22 temas, cada uno con su fórmula, sus pasos intermedios y sus unidades, y devuelve una explicación en lenguaje natural en lugar de un número cuando una entrada falta o está fuera de rango.
 
-Su relevancia está en el nicho: cálculo de ingeniería reproducible y auditable, ejecutable en CPU, sin GPU, sin red y sin clave de API, con respuestas idénticas en Windows y Linux (Python 3.10 a 3.14). Cubre estática y dinámica de fluidos, flujo en tuberías, capas límite, aerodinámica y flujo compresible, conducción, convección y radiación, aletas, intercambiadores de calor, ciclos termodinámicos, psicrometría y combustión.
+A pesar de estar etiquetado en Hugging Face como `question-answering`, no se trata de un transformer generativo: el repositorio declara la librería `thermofluids-ai999x` y un total de 4.715.520 parámetros en formato safetensors, coherente con un motor compilado y no con un modelo de lenguaje neuronal. Se ofrece en cuatro interfaces (aplicación de escritorio para Windows y Linux, línea de comandos, navegador y paquete de Python) y funciona íntegramente en local, sin conexión.
 
-El repositorio declara 4.715.520 parámetros en safetensors y un tamaño de 0,0 GB, coherente con un paquete de conocimiento compacto más que con una red neuronal de gran escala. La licencia es Apache-2.0 y el idioma soportado es únicamente el inglés. A fecha de la ficha no tiene descargas ni valoraciones, y su benchmark principal está autodeclarado y marcado como no verificado.
+Su relevancia actual reside en la propuesta de "cero alucinación": frente a los modelos de lenguaje generalistas, que pueden inventar magnitudes o unidades en cálculos de ingeniería, este motor produce resultados reproducibles y verificables paso a paso. La model card declara una precisión de 1,0 sobre un conjunto de 1057 preguntas documentadas, con resultados idénticos en Windows y Linux bajo Python 3.10 a 3.14.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura de preguntas basada en reglas más resolución simbólica con sympy y mpmath; no es un transformer |
-| Parámetros totales | 4.715.520 (pesos declarados en safetensors) |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible; no aplica en el sentido habitual (la entrada es una pregunta en inglés o una llamada `solve(capability_id, **inputs)`) |
-| Tipos de cuantización | No disponible; no aplica (el runtime es Python puro, sin pesos en coma flotante de baja precisión) |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX; distribución principal como wheel de Python (`thermofluids_ai999x-1.0.0-py3-none-any.whl`) |
-| Versión del paquete | 1.0.0 (import `thermofluids_ai999x`) |
-| Pack de conocimiento | 0.1.1 |
-| Capacidades certificadas | 126 (27 derivaciones, 13 procedimientos, 86 relaciones) |
-| Respuestas doradas | 1010 respuestas documentadas, idénticas en cada plataforma probada |
-| Plataformas probadas | Windows con Python 3.13; Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14 |
-| Runtime | Solo CPU, offline; sin GPU, sin red y sin clave de API |
-| Tareas declaradas | Question answering, token classification, text classification, sentence similarity, feature extraction |
-| Metadatos | `inference: false` en la model card, aunque el `pipeline_tag` es `question-answering` |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación / actualización | 2026-10-25 / 2026-10-25 |
+| Arquitectura | Motor de cálculo determinista compilado (librería `thermofluids-ai999x`); no es un transformer |
+| Parametros totales | 4.715.520 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica a un motor de cálculo) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (tamaño del repositorio: 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no corresponde a un transformer ni a un modelo híbrido SSM: es un motor neuro-simbólico en el que la "comprensión" del enunciado se resuelve con reglas de lectura de formas documentadas y la respuesta se obtiene resolviendo simbólicamente una capacidad certificada del dominio. El paquete se apoya en sympy y mpmath, y el motor se distribuye como wheel de Python puro, por lo que las respuestas son deterministas y no dependen de muestreo, semilla ni precisión de GPU.
+La información disponible no describe una arquitectura de red neuronal. El modelo se distribuye como una librería con nombre propio (`thermofluids-ai999x`) y un motor compilado, con implementaciones para Windows y Linux x86-64 y una build en Python puro para macOS y ARM que, según el autor, ofrece las mismas respuestas. El recuento de 4.715.520 parámetros en safetensors corresponde, por tanto, a los artefactos empaquetados del motor y no a pesos de un modelo de lenguaje.
 
-No hay datos de entrenamiento en el sentido habitual (no se declaran tokens, composición de dataset, RLHF ni DPO). El conocimiento reside en el pack de conocimiento 0.1.1: 27 derivaciones, 13 procedimientos y 86 relaciones certificadas. Cada respuesta se comprueba antes de devolverse mediante sustitución inversa, análisis dimensional o comparación con un cálculo independiente. La validación declarada se apoya en 1010 respuestas doradas reproducidas de forma idéntica en todas las plataformas probadas. La innovación destacable es el diseño de "cero respuestas incorrectas": siete salidas explícitas (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) que sustituyen a la aproximación silenciosa.
+No se documenta ningún proceso de entrenamiento, conjunto de datos, número de tokens, RLHF ni DPO, lo cual es coherente con un sistema basado en fórmulas y solver determinista en lugar de aprendizaje automático. La innovación técnica declarada es la resolución paso a paso con trazabilidad de fórmulas, unidades y explicaciones de error, junto con la ejecución offline y la paridad de resultados entre plataformas.
 
 ## Capacidades
 
-- Resolución de problemas de termofluidos con resultado numérico exacto y verificado, no generado.
-- Interfaz en inglés natural mediante `ask()` para formas de pregunta documentadas.
-- Interfaz tipada garantizada mediante `solve(capability_id, **inputs)`, que siempre resuelve una tarea soportada si las entradas son válidas.
-- Explicación paso a paso: fórmulas en LaTeX, unidades, supuestos y modelo utilizado.
-- Abstención explícita: devuelve NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT o INTERNAL_ERROR en lugar de adivinar.
-- Cobertura de fluidos (estática, dinámica, flujo en tuberías, capas límite, aerodinámica, flujo compresible).
-- Cobertura térmica (conducción, convección, radiación, aletas, intercambiadores de calor).
-- Ciclos termodinámicos (por ejemplo, eficiencia del ciclo Otto con relación de compresión 8: 0,564725).
-- Psicrometría y combustión (por ejemplo, punto de rocío con T = 25 °C y HR = 60 %).
-- Ejecución completamente offline en CPU, sin GPU, sin red y sin clave de API.
-- Determinismo entre plataformas: mismas respuestas en Windows y en Linux con Python 3.10 a 3.14.
-- Etiquetado del repositorio para token classification, text classification, sentence similarity y feature extraction (sin métricas publicadas para esas tareas).
+- Resolución de 106 cálculos de termofluidos en 22 temas, con fórmula, pasos intermedios y unidades.
+- Cobertura temática: estática y dinámica de fluidos, flujo en tuberías, capas límite, aerodinámica, conducción de calor, convección y radiación, intercambiadores de calor, ciclos termodinámicos, psicrometría y combustión.
+- Devolución de una razón en lenguaje natural cuando falta una entrada o está fuera de rango, en lugar de un número.
+- Generación de escenas y gráficas a partir del resultado calculado en la aplicación de escritorio.
+- Cuatro vías de uso: aplicación de escritorio (Windows, Linux), CLI `thermofluids`, navegador y paquete de Python 3.10+.
+- Ejecución completamente offline y local.
+- Soporte para ayuda con ejercicios y soluciones paso a paso.
+- No se documenta soporte de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Corrección automática de ejercicios de ingeniería: `ask()` recibe el enunciado en inglés y devuelve resultado, pasos y supuestos, de modo que un corrector puede comparar la solución del alumno con la cadena de derivación y no solo con el número final.
-- Tutoría offline en aulas o laboratorios sin conectividad: el paquete se instala con pip y funciona en CPU, sin clave de API, lo que permite desplegarlo en equipos de estudiantes o en entornos con red restringida.
-- Verificación de cálculos en pipelines de ingeniería: antes de publicar una memoria de cálculo, un script puede llamar a `solve()` con la capacidad concreta y validar dimensiones y unidades de forma automática.
-- Generación de documentación técnica reproducible: la salida en LaTeX con fórmulas, unidades y supuestos se puede insertar directamente en cuadernos Jupyter o en informes generados, con resultado idéntico en cada ejecución.
-- Pruebas de regresión de software de simulación: las 1010 respuestas doradas sirven como conjunto de referencia para detectar regresiones numéricas al actualizar dependencias o cambiar de plataforma.
-- Filtrado y clasificación de enunciados: las tareas de token classification y text classification declaradas permiten encaminar preguntas entrantes hacia la capacidad adecuada o descartar las que quedan fuera de alcance.
-- Asistencia en diseño térmico preliminar: cálculo rápido de números adimensionales, factores de fricción, eficiencias de ciclos o puntos psicrométricos para iterar antes de recurrir a simulación CFD o a software de propiedades.
-- Auditoría en entornos regulados: al ser determinista, offline y con abstención explícita, cada respuesta es reproducible y trazable, lo que facilita la revisión por terceros.
+- Docencia de ingeniería térmica y de fluidos: el motor resuelve ejercicios con fórmula, pasos y unidades, lo que permite al estudiante seguir la derivación y comprobar cada etapa del cálculo.
+- Verificación de cálculos de diseño en tuberías: a partir de densidad, velocidad, diámetro y viscosidad se obtiene el número de Reynolds con su procedimiento, útil para clasificar el régimen de flujo antes de dimensionar una instalación.
+- Dimensionado de intercambiadores de calor: el cálculo de la diferencia de temperatura media logarítmica (LMTD) con pasos intermedios sirve como comprobación rápida frente a hojas de cálculo propias.
+- Análisis de ciclos termodinámicos: el rendimiento térmico del ciclo Otto con aire estándar se calcula de forma reproducible, adecuado para comparativas de ciclos en docencia o anteproyectos.
+- Psicrometría en climatización: el cálculo del punto de rocío a partir de temperatura de bulbo seco y humedad relativa permite validar condiciones de confort y riesgo de condensación.
+- Aerodinámica preliminar: el coeficiente de sustentación de un perfil delgado simétrico y el coeficiente medio de fricción superficial de una placa plana laminar (Blasius) se obtienen con sus pasos, útiles en fases iniciales de diseño.
+- Combustión y flujo compresible: la temperatura adiabática de llama con calor específico constante de productos y la presión de estancamiento isentrópica del aire a partir del número de Mach permiten estimaciones rápidas en motores y toberas.
+- Integración en scripts de Python: el paquete `thermofluids-ai999x` permite incorporar los cálculos a pipelines de validación o cuadernos de ingeniería sin dependencia de red.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Conjunto de evaluación | Métrica | Valor | Verificado |
-|---|---|---|---|---|
-| Thermofluids question answering | Golden answers (1010 preguntas documentadas, Windows + Linux Python 3.10-3.14) | accuracy | 1,0 | No (`verified: false`; dato declarado por el autor) |
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar de modelos de lenguaje en la información disponible. Tampoco se publican métricas para las tareas de token classification, text classification, sentence similarity o feature extraction que aparecen en las etiquetas del repositorio. El único resultado disponible mide la reproducibilidad sobre el propio conjunto de respuestas doradas del autor, no la generalización a preguntas nuevas.
+| Tarea | Conjunto de evaluación | Métrica | Valor |
+|---|---|---|---|
+| Question answering de termofluidos | Golden answers (1057 preguntas documentadas, Windows y Linux, Python 3.10-3.14) | Accuracy | 1,0 (idéntico en cada plataforma) |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: 0 GB; el motor se ejecuta exclusivamente en CPU.
-- GPU recomendadas: ninguna; no requiere A100, H100 ni RTX 4090.
-- Cabe en cualquier equipo consumer: basta con un intérprete de Python 3.10 a 3.14 y las dependencias sympy y mpmath.
-- Memoria RAM y latencia: no disponibles en la información proporcionada.
-- Throughput: no disponible; al ser determinista y monoproceso, el coste depende de la capacidad invocada y no de un tamaño de lote.
-- Opciones de despliegue: instalación vía `pip install thermofluids-ai999x` o directamente desde el wheel del repositorio de Hugging Face; ejecución en scripts, cuadernos Jupyter o servicios Python.
-- No soporta vLLM, llama.cpp, Ollama ni TGI: no es un modelo de pesos para inferencia de lenguaje y la propia model card declara `inference: false`.
+- VRAM estimada para inferencia: no aplica; el motor se ejecuta en CPU y el repositorio ocupa 0.0 GB.
+- GPU recomendadas: no disponible; no se documenta aceleración por GPU.
+- Cabe en cualquier GPU consumer y en equipos sin GPU, al ser una carga de CPU.
+- Opciones de despliegue: aplicación de escritorio para Windows y Linux, CLI `thermofluids`, versión web en el navegador y paquete de Python (`pip install thermofluids-ai999x`).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Alternativa | Tipo | Cobertura de dominio | Determinismo | Licencia | Notas |
+| Modelo | Naturaleza | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thermofluids-ai999x | Motor neuro-simbólico con capacidades certificadas | Termofluidos: fluidos, calor, ciclos, psicrometría, combustión | Sí, con abstención explícita | Apache-2.0 | 4.715.520 parámetros; solo inglés; sin descargas ni validación externa |
-| Librerías de propiedades termofísicas (por ejemplo, CoolProp) | Librería de correlaciones y ecuaciones de estado | Propiedades de sustancias y mezclas | Sí | Consultar la licencia del proyecto | No resuelve enunciados en lenguaje natural ni devuelve pasos; requiere que el usuario plantee el cálculo |
-| Sistemas de álgebra simbólica (por ejemplo, SymPy) | Librería de cálculo simbólico | Genérica, sin conocimiento de dominio | Sí | Consultar la licencia del proyecto | Es una de las dependencias del modelo; no incluye capacidades de termofluidos certificadas ni lectura de enunciados |
-| LLM generativo de propósito general con tool calling | Modelo de lenguaje | Muy amplia, no certificada | No | Según el modelo | Puede redactar y razonar, pero no garantiza resultados verificados y puede alucinar magnitudes |
+| thermofluids-ai999x | Motor de cálculo determinista | 4.715.520 | no aplica | Apache 2.0 | Hugging Face, app de escritorio, CLI, web, pip |
+| Modelos de lenguaje generalistas para QA técnico | Transformer generativo | no disponible | no disponible | variable | Hugging Face y APIs |
+| Librerías de cálculo de ingeniería (p. ej., solvers de termofluidos) | Código numérico | no aplica | no aplica | variable | Repositorios y paquetes |
 
-No se dispone de comparaciones cuantitativas publicadas entre thermofluids-ai999x y estas alternativas, ni de benchmarks comunes.
+No se dispone de datos de benchmarks comparables entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo admite inglés; no hay soporte declarado de castellano ni de otros idiomas.
-- No es un modelo generativo: no redacta texto libre, no mantiene conversaciones multi-turno y no responde a preguntas fuera de sus 126 capacidades certificadas.
-- La cobertura está acotada al dominio de termofluidos y a las formas de pregunta documentadas; variaciones de redacción no reconocidas devuelven UNRECOGNIZED_FORMAT.
-- El resultado de accuracy 1,0 procede de las 1010 respuestas doradas del propio autor sobre su propio conjunto, está marcado como `verified: false` y no mide generalización a preguntas nuevas.
-- No hay validación independiente: 0 descargas y 0 likes en Hugging Face en el momento de la ficha.
-- Los metadatos del repositorio son contradictorios: `inference: false` convive con un `pipeline_tag` de question-answering y con etiquetas de token classification, text classification, sentence similarity y feature extraction sin métricas que las respalden.
-- El tamaño del repositorio es 0,0 GB y los 4.715.520 parámetros no corresponden a una red neuronal de lenguaje; conviene no interpretarlos como equivalentes a un LLM de ese tamaño.
-- No se publican métricas de latencia, consumo de memoria ni límites de escalado.
-- Riesgo de alucinación bajo por diseño, pero el riesgo se traslada a la selección de capacidad: una pregunta mal interpretada puede resolverse sobre una capacidad distinta de la pretendida, por lo que conviene revisar los pasos y supuestos devueltos.
-- Licencia Apache-2.0: permite uso comercial y modificación con obligaciones de atribución y aviso; no se declaran restricciones adicionales, pero la certificación de las capacidades es una afirmación del autor, no una garantía contractual.
-- La fecha de creación del repositorio (2026-10-25) y la versión 1.0.0 indican un proyecto muy reciente; conviene fijar la versión exacta del paquete en producción.
+- Solo soporta inglés; no hay soporte declarado de castellano ni de otros idiomas.
+- La cobertura se limita a 106 cálculos en 22 temas; no es un modelo generativo general y no responde preguntas fuera de ese catálogo.
+- La métrica de precisión 1,0 procede del propio autor y está marcada como no verificada (`verified: false`); conviene tratarla con cautela.
+- No se documentan sesgos, pero al ser un motor determinista el riesgo relevante es el de fórmulas o rangos de validez mal aplicados, no el de alucinación de texto.
+- El paquete instala un motor compilado en Windows y Linux x86-64 y una build en Python puro en macOS y ARM; el rendimiento puede diferir entre ambas.
+- Licencia Apache 2.0: permite uso comercial con atribución y sin garantías; conviene revisar el archivo LICENSE del repositorio.
+- No se documenta soporte de tool calling, agentes ni integración con frameworks de LLM, lo que limita su uso como componente de un pipeline agéntico.
 
 ## Enlaces
 
-- [Hugging Face: AI999X/thermofluids-ai999x](https://huggingface.co/AI999X/thermofluids-ai999x)
-- [PyPI: thermofluids-ai999x](https://pypi.org/project/thermofluids-ai999x/)
-- [Guía de capacidades (docs)](https://huggingface.co/AI999X/thermofluids-ai999x/tree/main/docs)
-- [Evaluación](https://huggingface.co/AI999X/thermofluids-ai999x/tree/main/evaluation)
-- [Organización AI999X en Hugging Face](https://huggingface.co/AI999X)
-- [Sitio web del proyecto](https://ai999x.com)
-- [Licencia Apache-2.0 del repositorio](https://huggingface.co/AI999X/thermofluids-ai999x/blob/main/LICENSE)
-- [Apoyo al desarrollo (Buy Me a Coffee)](https://buymeacoffee.com/ibnuljaiffarabi)
-- Artículo o paper técnico: no disponible en la información proporcionada.
-- Repositorio de código independiente o demo interactiva: no disponible en la información proporcionada.
-- La búsqueda web realizada no devolvió enlaces relevantes al modelo (únicamente resultados genéricos de YouTube).
+- Modelo en Hugging Face: https://huggingface.co/AI999X/thermofluids-ai999x
+- Página del modelo en el sitio del autor: https://www.ai999x.com/models/thermofluids-ai999x/
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-thermofluids-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-thermofluids-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Repositorio de escritorio: https://github.com/AI999X/ai999x-desktop
+- Demostración en vídeo: https://www.ai999x.com/?ax_shot=thermofluids-ai999x/clip.mp4

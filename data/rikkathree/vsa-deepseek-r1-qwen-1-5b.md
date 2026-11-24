@@ -2,101 +2,111 @@
 
 ## Resumen
 
-VSA-DeepSeek-R1-Qwen-1.5B es un modelo híbrido de razonamiento creado por el usuario de Hugging Face rikkathree a partir del modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B. Su particularidad es que sustituye quirúrgicamente 21 de las 28 capas de atención (el 75 %) por capas de atención lineal con estado fijo y decaimiento (Fixed-State Decayed Linear Attention, VSA), manteniendo solo 7 capas con atención Softmax GQA estándar. El objetivo es reducir drásticamente el crecimiento de la caché KV en memoria (un 74,6 % menos de RAM a contexto de 64k) sin sacrificar capacidad de razonamiento.
+VSA-DeepSeek-R1-Qwen-1.5B es un modelo de lenguaje derivado de deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B mediante una retroadaptación arquitectónica desarrollada por el autor rikkathree bajo el proyecto VSA-LM. El modelo sustituye el mecanismo de atención completa de la mayoría de capas por un esquema híbrido de atención lineal con memoria de estado fijo (Fixed-State Decayed Outer-Product Memory) combinada con un binder abeliano de páginas y slots, conservando únicamente 7 capas de atención softmax como anclas. El objetivo es reducir el coste de memoria del KV cache en contextos largos manteniendo las capacidades de razonamiento del modelo donante.
 
-El modelo se entrena mediante destilación de conocimiento pura del profesor (VSA-FastDistill) sobre trazas de cadena de pensamiento (`<think>...</think>`) de matemáticas, código e instrucciones, alcanzando en solo 3.663 pasos una perplejidad del 0,937x respecto al modelo donante (9,52 frente a 10,16). Además, incorpora un sistema de edición de memoria en disco (cartridge `.vsa` mediante `VSAMemoryBank`) que permite recuperación exacta de información con enrutamiento inferior a 20 ms.
+La propuesta encaja en la línea de investigación de atención lineal y modelos de estado fijo orientados a inferencia de contexto extenso con memoria acotada. El modelo conserva el tokenizador y el comportamiento de generación de razonamiento (modo thinking) del destilado de DeepSeek-R1 sobre Qwen-1.5B, pero con una huella de memoria que crece de forma sublineal respecto a la longitud de contexto. Se distribuye con licencia MIT y está etiquetado explícitamente como modelo de previsualización sujeto a feedback.
 
-Es relevante como experimento de investigación en arquitecturas híbridas attention lineal + softmax, una línea que persigue inferencia eficiente en contextos largos. No obstante, se trata de un proyecto individual con 0 descargas, pesos en formato `.pth` personalizado y código de carga propio, por lo que su adopción en producción requiere precaución.
+El repositorio ocupa 47,9 GB, lo que sugiere la presencia de múltiples artefactos además de los pesos en precisión completa. El modelo acumula 340 descargas y 1 like en el momento de la consulta, lo que lo sitúa como un experimento de investigación más que como un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida: 21 capas de atencion lineal con estado fijo y decaimiento (VSA) + 7 capas de atencion Softmax GQA (sobre base Qwen2) |
-| Parametros totales | no disponible (el repo pesa 3,8 GB en formato .pth) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible oficialmente; el ejemplo de la model card usa ventanas deslizantes de 1024 tokens |
-| Tipos de cuantizacion | no disponible (se ejecuta en bfloat16) |
-| Idiomas soportados | no disponible (hereda el tokenizador de DeepSeek-R1-Distill-Qwen-1.5B, orientado principalmente a ingles y chino) |
+| Arquitectura | Transformer híbrido: 21 de 28 capas con atención lineal VSA (memoria de estado fijo con decaimiento multi-escala) + 7 capas de atención softmax como anclas (una cada 4 capas) |
+| Parametros totales | no disponible (derivado de Qwen2.5-1.5B, aproximadamente 1.500 millones, cifra no confirmada en la model card) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible como límite declarado; se reportan evaluaciones hasta 65.536 tokens y modo de flujo infinito con ventana de 8.192 tokens |
+| Tipos de cuantizacion | no disponible (el repo usa PyTorch; no se documentan GGUF ni cuantizaciones publicadas) |
+| Idiomas soportados | no disponible (heredados del modelo donante, no declarados) |
 | Licencia | MIT |
-| Formato de pesos | .pth personalizado (PyTorch, carga mediante clase propia `vsa_lm.converter.UniversalVSALM`); no disponible en safetensors ni GGUF |
+| Formato de pesos | PyTorch (librería `pytorch` declarada); no se detallan safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte del DeepSeek-R1-Distill-Qwen-1.5B (transformer decoder con GQA) y reemplaza 21 de sus 28 capas de atención por capas VSA de atención lineal con estado fijo y decaimiento, cuya recursión es `M_t = gamma * M_{t-1} + k_t(x) v_t`. Cada capa VSA mantiene un estado plano de 128x128 en lugar de una caché KV que crece con la secuencia, lo que explica la reducción del 74,6 % en RAM de estado a 64k de contexto (456 MB frente a 1.792 MB). Las 7 capas Softmax restantes conservan atención estándar. El proyecto incluye kernels Triton propios para las operaciones VSA.
+La arquitectura parte del destilado DeepSeek-R1-Distill-Qwen-1.5B, un transformer decoder-only de 28 capas. La retroadaptación convierte 21 de esas 28 capas en capas VSA (Fixed-State Decayed Outer-Product Memory) con un Abelian Page-Slot Binder que gestiona 8 páginas x 4 slots = 32 slots de suma de prefijos no decaídos por capa. Se aplica además Mix-First GQA Head Un-Tying, que pasa de 2 a 12 cabezas, un decaimiento multi-escala aprendible (γ) y una ventana local de 64 tokens más token sink. Las 7 capas softmax restantes actúan como anclas de atención global, colocadas una cada cuatro capas.
 
-El entrenamiento emplea destilación de conocimiento pura del profesor (Pure-Teacher Knowledge Distillation, método VSA-FastDistill) con alineación coseno por bloques (Blockwise Cosine Alignment), sobre trazas de razonamiento `<think>...</think>` de matemáticas, código e instrucciones generadas presumiblemente por el modelo donante. En 3.663 pasos se alcanza una perplejidad de 9,52 (mejor que la del donante, 10,16) y un acuerdo top-1 del 79,9 % con divergencia KL de 0,258 nats sobre un vocabulario de 151.936 tokens. No se detalla el número total de tokens de entrenamiento ni el uso de RLHF/DPO.
+La model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El autor describe el proceso como una retroadaptación sobre el modelo donante, no como un entrenamiento desde cero, y menciona un mecanismo de edición de memoria que permite descartar cartuchos `.vsa` con borrado algebraico exacto (recall del 100% en 4 de 4 casos, con residuo de borrado 0.0). Esta capacidad de edición de memoria es la innovación técnica más destacada junto con la decodificación de estado fijo.
 
 ## Capacidades
 
-- Generación de texto con formato de razonamiento `<think>...</think>` heredado de la familia DeepSeek-R1 destilada.
-- Razonamiento matemático paso a paso: duplica la tasa de MATH con respuesta en `\boxed{}` a 512 tokens (10,0 % frente a 5,0 % del donante).
-- Pensamiento latente (latent thinking) en OpenMythos: al iterar de K=0 a K=4 pasos de pensamiento, la confianza sube del 52,95 % al 81,65 % sin añadir ni un byte a la caché KV Softmax, algo imposible en el modelo donante.
-- Edición de memoria externa: sistema `VSAMemoryBank` con cartuchos `.vsa` respaldados en disco que logran recuperación exacta 4/4 (100 %) con residuo de borrado 0,0, enrutamiento inferior a 20 ms y 0,00 MB de GPU RAM en reposo.
-- Eficiencia de contexto largo: estado plano de 128x128 por capa VSA, con crecimiento de memoria constante en el 75 % de las capas.
-- No hay evidencia de soporte de tool calling / function calling ni de capacidades de visión o audio.
+- Generación de texto y razonamiento en cadena con modo thinking nativo heredado de DeepSeek-R1, incluyendo trazas `<think>` en la generación.
+- Generación de código en Python, evaluada en HumanEval y MBPP.
+- Resolución de problemas matemáticos con razonamiento paso a paso (GSM8K).
+- Retención numérica casi exacta en preguntas de GSM8K (98,34% de coincidencia top-1 en el número de la pregunta, KL de 0,0248 nats).
+- Memoria de estado fijo con edición y borrado algebraico de cartuchos `.vsa`, lo que permite eliminar información concreta sin reentrenar.
+- Inferencia en flujo continuo (infinite stream) con ventana de 8.192 tokens y memoria constante.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión o audio): no disponibles.
+- Cobertura multilingüe: no documentada.
 
 ## Casos de uso
 
-- Investigación en arquitecturas híbridas de atención: el modelo sirve como prueba de concepto reproducible de que la atención lineal con estado fijo puede igualar o mejorar la perplejidad de un transformer softmax en tareas de razonamiento, útil para laboratorios que exploran alternativas a la caché KV.
-- Inferencia en contexto largo con memoria limitada: gracias a la reducción del 74,6 % en RAM de estado a 64k tokens, es adecuado para desplegar razonamiento en GPUs con VRAM ajustada donde el modelo original no cabría con contexto largo.
-- Sistemas de memoria persistente tipo RAG con recuperación exacta: el `VSAMemoryBank` permite almacenar conocimiento en cartuchos `.vsa` en disco y recuperarlo con latencia inferior a 20 ms, útil para asistentes que necesitan recordar documentos o sesiones previas sin mantenerlos en GPU.
-- Resolución de problemas matemáticos paso a paso en entornos educativos o de prototipado: el formato `<think>` genera álgebra concisa paso a paso con respuesta final en `\boxed{}`.
-- Experimentación con pensamiento latente (latent thinking): escenarios donde se desea que el modelo "piense" más pasos (K=0 a K=4) para ganar confianza en la respuesta sin coste de memoria, relevante para agentes con presupuesto de cómputo ajustable.
-- Prototipado de kernels Triton personalizados: el código incluye implementaciones Triton de las operaciones VSA, útil como referencia para desarrolladores de kernels de atención eficientes.
-- Chatbot de instrucciones ligero: hereda el chat template y el tokenizador de DeepSeek-R1-Distill-Qwen-1.5B, por lo que puede integrarse en pipelines de conversación sencillos con carga personalizada.
+- Razonamiento matemático con trazas auditables: el modelo genera cadenas de pensamiento `<think>` que pueden registrarse y revisarse, útil en entornos educativos o de verificación de cálculos donde se necesita inspeccionar el proceso y no solo el resultado.
+- Asistencia de código en pipelines de revisión: con resultados de 70% Pass@1 en HumanEval y 40% en MBPP, puede emplearse como generador de borradores de funciones y tests en un flujo con revisión humana obligatoria.
+- Procesamiento de documentos largos con memoria acotada: gracias al estado fijo, el consumo de RAM se mantiene en 466,2 MB a 65.536 tokens frente a 1.792 MB del donante, lo que permite procesar contratos o informes extensos en hardware modesto.
+- Servicio de streaming continuo: el modo infinite stream con ventana de 8.192 tokens y 73,1 MB de memoria sin crecimiento es adecuado para agentes conversacionales de larga duración o monitorización de logs en tiempo real.
+- Edición selectiva de conocimiento: el borrado algebraico de cartuchos `.vsa` permite retirar información concreta de la memoria del modelo sin reentrenar, aplicable a cumplimiento normativo o retirada de datos sensibles en despliegues internos.
+- Prototipado de investigación en atención lineal: sirve como banco de pruebas para comparar arquitecturas híbridas frente al transformer completo con el mismo tokenizador y pesos de partida.
+- Inferencia en hardware de gama media: con velocidades de 119,5 a 130,3 tok/s en las pruebas del autor y una huella de memoria reducida, puede desplegarse en GPUs consumer para tareas de generación de texto y razonamiento de complejidad media.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en la model card, comparando con el modelo donante:
+Resultados publicados por el autor en la model card, comparados con el modelo donante oficial y con prueba de McNemar emparejada:
 
-| Metrica | DeepSeek-R1-Distill-Qwen-1.5B | VSA-DeepSeek-R1-Qwen-1.5B | Notas |
-|---|---:|---:|---|
-| Perplejidad (held-out razonamiento y matematicas) | 10,16 (1,000x) | 9,52 (0,937x) | Pure-KD + Blockwise Cosine Alignment |
-| Acuerdo top-1 siguiente token (vocab. 151.936) | 100,0 % | 79,9 % | Divergencia KL de 0,258 nats |
-| MMLU (zero-shot) | 29,0 % | 28,0 % | 96,6 % retenido |
-| MATH cadena de pensamiento (`\boxed{}` @ 512 tokens) | 5,0 % | 10,0 % | Algebra concisa paso a paso |
-| OpenMythos pensamiento latente (K=0 -> K=4) | N/A (crece la cache KV) | 52,95 % -> 81,65 % (+28,7 % de confianza) | 0 bytes anadidos a la cache KV Softmax |
-| Recall de cartucho `.vsa` en disco (VSAMemoryBank) | N/A | 4/4 (100 % recall exacto, 0,0 residuo de borrado) | Enrutamiento < 20 ms, 0,00 MB GPU RAM en reposo |
-| RAM de cache KV / estado @ 64k de contexto | 1.792,0 MB | 456,0 MB (-74,6 %) | 21 capas con estado plano 128x128 |
+| Tarea / metrica | Donante HF oficial | VSA-DeepSeek-R1-Qwen-1.5B (v2) | McNemar (p) | Veredicto |
+|---|---:|---:|---:|---|
+| HumanEval (Python Pass@1) | 60,00% | 70,00% (+10,00%) | 0,219 | Sin diferencia significativa |
+| GSM8K (CoT nativo `<think>`) | 75,00% | 70,00% (28/40 vs 30/40) | 0,727 | Empate estadístico |
+| MBPP (Python Pass@1) | 35,00% | 40,00% (+5,00%) | 0,688 | Sin diferencia significativa |
+| HellaSwag | 41,00% | 42,00% (+1,00%) | 0,774 | Empate |
+| MMLU (estratificado 57 materias) | 38,00% | 39,50% (+1,50%) | 0,711 | Empate |
+| GSM8K coincidencia top-1 del número | 100,0% (ref) | 98,34% (KL = 0,0248 nats) | — | Retención numérica casi exacta |
+| Recall de cartucho `.vsa` en disco | N/A | 100,0% (4/4) | 0,0 residuo | Borrado algebraico exacto |
 
-Nota: se trata de benchmarks auto-publicados por el autor del modelo, no verificados de forma independiente. No hay resultados en benchmarks estandarizados amplios (HumanEval, GSM8K, etc.) en la informacion disponible.
+Escalado de velocidad y memoria (datos del autor):
+
+| Contexto | Velocidad donante | Velocidad VSA-LM | Aceleración | RAM KV donante | RAM estado + KV VSA-LM | RAM ahorrada |
+|---:|---:|---:|---:|---:|---:|---:|
+| 2.048 | 92,2 tok/s | 130,2 tok/s | 1,41x | 56,0 MB | 41,9 MB | 25,2% |
+| 8.192 | 86,6 tok/s | 130,3 tok/s | 1,50x | 224,0 MB | 76,1 MB | 66,0% |
+| 16.384 | 91,0 tok/s | 128,6 tok/s | 1,41x | 448,0 MB | 130,2 MB | 70,9% |
+| 32.768 | 90,9 tok/s | 125,4 tok/s | 1,38x | 896,0 MB | 242,2 MB | 73,0% |
+| 65.536 | 83,9 tok/s | 119,5 tok/s | 1,42x | 1.792,0 MB | 466,2 MB | 74,0% |
+| Flujo infinito (ventana 8.192) | OOM en contexto largo | 125,6 tok/s | constante | sin límite | 73,1 MB (crecimiento 0,0 MB) | plano |
+
+Las diferencias en calidad no alcanzan significación estadística con los tamaños de muestra empleados, por lo que los resultados deben interpretarse como equivalencia aproximada con el donante, no como mejora demostrada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. El checkpoint pesa 3,8 GB en .pth y se ejecuta en bfloat16, por lo que una GPU con 8 GB de VRAM deberia ser suficiente para el modelo en si, mas el estado de 456 MB a 64k de contexto segun el autor.
-- GPU recomendadas: no disponible oficialmente; por tamano, cualquier GPU consumer moderna (RTX 3060 de 12 GB, RTX 4090) o de datacenter (A100, H100) deberia ejecutarlo sin problemas.
-- Cabe en GPUs consumer: si, por tamano (3,8 GB) y estado reducido, es ejecutable en GPUs de gama media-alta; no hay confirmacion oficial de un minimo concreto.
-- Opciones de despliegue: no compatible con vLLM, TGI, llama.cpp ni Ollama al usar formato .pth y una clase de modelo propia (`vsa_lm.converter.UniversalVSALM`). El despliegue se hace con PyTorch y Transformers (solo para el tokenizador), ejecutando el bucle de generacion manual incluido en la model card.
-- Latencia y throughput: no disponibles. El unico dato de latencia publicado es el enrutamiento de memoria del VSAMemoryBank (< 20 ms).
+- VRAM estimada para inferencia: no disponible de forma explícita. Con aproximadamente 1.500 millones de parámetros, en FP16 rondaría los 3 GB de pesos; en cuantización de 8 bits, alrededor de 1,5 GB, y en 4 bits, cerca de 0,8 GB. Estas cifras son estimaciones a partir del tamaño del modelo donante y no aparecen en la model card.
+- GPU recomendadas: no especificadas por el autor. Por tamaño, cabría en RTX 3060 12 GB, RTX 4070, RTX 4090 y GPUs de datacenter como A100 o H100, aunque no hay validación publicada en estas plataformas.
+- Cabe en GPU consumer: sí, previsiblemente en cualquier GPU con 4 GB o más de VRAM en FP16, aunque no está confirmado en la documentación.
+- Opciones de despliegue: el autor emplea `python -m vsa_lm benchmark` con PyTorch. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y al ser una arquitectura modificada es improbable que funcione en motores estándar sin adaptación.
+- Latencia y throughput: según el autor, entre 119,5 y 130,3 tok/s en decodificación, con aceleración de 1,38x a 1,50x frente al donante y reducción de RAM de hasta el 74% a 65.536 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| VSA-DeepSeek-R1-Qwen-1.5B | no disponible | Hibrida 21 VSA + 7 Softmax GQA | no disponible (ventanas de 1024 en el ejemplo) | MIT | Weights .pth + codigo propio en Hugging Face |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | Transformer decoder con GQA (28 capas softmax) | 131.072 tokens | MIT | Transformers, vLLM, GGUF, Ollama |
-| Qwen2.5-1.5B-Instruct | 1,54 B | Transformer decoder GQA | 32.768 tokens (128k con RoPE escalado) | Apache 2.0 (Qwen Research para derivados grandes) | Transformers, vLLM, GGUF, Ollama |
-| RWKV-6 (varios tamanos) | 0,1 B - 14 B | Atencion lineal recurrente (estado fijo) | hasta ~1 M tokens | Apache 2.0 | Weights abiertos, soporte llama.cpp parcial |
-
-La comparativa muestra el nicho del modelo: frente a su donante, sacrifica compatibilidad con el ecosistema estandar (vLLM, GGUF) a cambio de una reduccion del 74,6 % en RAM de estado y una mejora en MATH (10,0 % frente a 5,0 %), con una retencion del 96,6 % en MMLU.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| VSA-DeepSeek-R1-Qwen-1.5B | ~1.500 M (no confirmado) | hasta 65.536 evaluados; flujo infinito con ventana 8.192 | MIT | Híbrido de atención lineal con estado fijo y edición de memoria |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | ~1.500 M | no disponible en la información | MIT (heredada del donante) | Modelo donante, atención completa, mayor coste de KV cache |
+| Qwen2.5-1.5B | ~1.500 M | no disponible en la información | Apache 2.0 (habitual en la familia Qwen) | Base del destilado; sin modo thinking nativo |
+| Modelos de atención lineal comparables | no disponible | no disponible | no disponible | No se han identificado alternativas equivalentes en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Proyecto individual sin verificacion externa: los benchmarks son auto-publicados por el autor y no hay revision independiente; los numeros deben tomarse con cautela.
-- Cero descargas registradas en el momento de la ficha: ausencia total de validacion comunitaria y de reportes de bugs o problemas en inferencia.
-- Formato de pesos no estandar (.pth con `weights_only=False`): cargar checkpoints de terceros con `torch.load(..., weights_only=False)` implica ejecutar codigo arbitrario embebido en el pickle; revisar el checkpoint antes de usarlo en entornos sensibles.
-- Sin soporte del ecosistema estandar: no funciona con vLLM, TGI, llama.cpp ni Ollama; la generacion requiere un bucle manual de Python, lo que implica throughput bajo y sin optimizaciones de servido (batching, continuous batching, paged attention).
-- Ventana efectiva limitada en el ejemplo oficial (1024 tokens con ventana deslizante): la longitud de contexto real util no esta documentada.
-- Riesgo de alucinacion: heredado del modelo base destilado de 1,5B, cuyas metricas absolutas son bajas (MMLU 28-29 %, MATH 5-10 %), indicando capacidad de razonamiento limitada.
-- Acuerdo top-1 del 79,9 % con el donante: el 20 % de tokens difiere, por lo que el comportamiento en produccion puede desviarse del modelo base en casos limite.
-- Idiomas: no documentados; el tokenizador heredado sugiere ingles y chino, sin garantia de rendimiento en castellano.
-- Licencia MIT: sin restricciones de uso comercial, pero al ser un derivado de DeepSeek-R1-Distill-Qwen-1.5B conviene revisar tambien los terminos del modelo base (MIT en este caso).
-- Sin tool calling, sin multimodalidad y sin documentacion de entrenamiento completa (tokens totales, composicion del dataset, RLHF/DPO no disponibles).
+- Modelo de previsualización: el propio autor lo etiqueta como preview y solicita feedback, por lo que no debe considerarse estable para producción.
+- Tamaños de muestra reducidos en los benchmarks: GSM8K se evalúa con 40 ejemplos, lo que hace que las diferencias observadas no sean estadísticamente significativas.
+- Rendimiento absoluto modesto: 39,5% en MMLU y 70% en GSM8K indican un modelo pequeño con conocimiento factual limitado, adecuado para tareas acotadas pero no para razonamiento experto.
+- Riesgo de alucinación: inherente a los modelos de 1.500 millones de parámetros y no mitigado de forma específica en la documentación.
+- Idiomas soportados no declarados: no hay garantía de calidad fuera del inglés, aunque el modelo donante tiene cierta cobertura multilingüe.
+- Compatibilidad de despliegue limitada: al modificar la arquitectura, los motores de inferencia estándar (vLLM, llama.cpp, TGI) probablemente no funcionen sin adaptaciones específicas.
+- Licencia MIT: permite uso comercial, pero el modelo base conserva sus propias condiciones; conviene revisar la licencia del destilado de DeepSeek-R1 y de Qwen2.5 antes de explotación comercial.
+- Sesgos: no documentados por el autor; se heredan los del corpus de entrenamiento del modelo donante.
+- Repositorio de 47,9 GB: el tamaño sugiere artefactos adicionales (posiblemente checkpoints o imágenes), lo que puede complicar la descarga y el almacenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/rikkathree/vsa-deepseek-r1-qwen-1.5b
-- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
-- Imagen de benchmarks referenciada en la model card: `vsa_vs_deepseek_r1_real_benchmarks.png` (incluida en el repositorio)
-- Paper, blog o repositorio de codigo independiente: no disponibles en la informacion proporcionada
+- Repositorio del proyecto VSA-LM: https://github.com/Rikka3/vsa-lm
+- Modelo donante: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

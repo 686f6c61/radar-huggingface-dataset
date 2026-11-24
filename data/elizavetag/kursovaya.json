@@ -21,8 +21,8 @@
     "base_model:finetune:microsoft/trocr-small-printed",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 61596672,
   "parameters_human": "61.6M",

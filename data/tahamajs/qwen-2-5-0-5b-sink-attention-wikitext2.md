@@ -2,104 +2,94 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-sink-attention-wikitext2` es un checkpoint experimental de investigación publicado por el usuario tahamajs dentro del proyecto NeuralOps "Attention Zoo". No es un modelo nuevo entrenado desde cero, sino una intervención quirúrgica sobre `Qwen/Qwen2.5-0.5B`: se sustituyen 18 de las 24 capas de atención del decoder original por un módulo propio llamado `SinkAttention`, que implementa una atención de estilo StreamingLLM con tokens sumidero (sink tokens) y caché KV rodante. Las 6 capas restantes conservan la atención cuadrática completa como anclas.
+`tahamajs/qwen-2.5-0.5b-sink-attention-wikitext2` es un checkpoint experimental derivado de `Qwen/Qwen2.5-0.5B` en el que se han sustituido quirúrgicamente 18 de las 24 capas de atención del decodificador por el módulo `SinkAttention` del registro `ATTENTION_REGISTRY` del proyecto NeuralOps. La atención de tipo sink, inspirada en StreamingLLM, combina tokens sumidero (sink tokens) con una KV-cache deslizante que conserva los primeros `num_sink_tokens` y los últimos `window_size - num_sink_tokens`, manteniendo las posiciones absolutas para el enmascaramiento causal. El autor es `tahamajs`, responsable del repositorio NeuralOps, y la licencia es MIT.
 
-El objetivo del artefacto es doble: por un lado, demostrar que es posible aplicar atención subcuadrática a un transformer preentrenado sin reentrenar desde cero, recuperando calidad mediante destilación de conocimiento en dos etapas; por otro, servir como banco de pruebas reproducible para comparar variantes de atención dentro de NeuralOps. El modelo se ajusta exclusivamente sobre WikiText-2 en inglés y su métrica declarada es la perplejidad de validación (49,65), no capacidades generativas generales.
+El modelo no es un LLM de propósito general listo para producción, sino un artefacto de investigación sobre atención subcuadrática: el objetivo es evaluar si un transformer con atención híbrida (sink + capas cuadráticas de anclaje) puede recuperar la calidad del modelo original mediante destilación de conocimiento en dos etapas. El checkpoint solo contiene los pesos de atención (`attention_weights.safetensors`, 161,50 MB); es necesario reconstruir la arquitectura aplicando el *surgery* sobre el modelo base Qwen2.5-0.5B antes de cargar los tensores.
 
-Es relevante ahora porque los mecanismos de atención eficiente (sliding window, sink tokens, atención lineal) están en el centro del debate sobre contextos largos y coste de inferencia, y este checkpoint ofrece una implementación concreta y medible de una de esas variantes sobre una base pequeña (0,5B parámetros) y con licencia MIT. No obstante, debe tratarse como un experimento de investigación, no como un modelo listo para producción.
+La relevancia actual radica en que cuantifica el coste de sustituir atención completa por atención con ventana y sumideros en un modelo pequeño: la perplejidad en WikiText-2 pasa de 618,03 (tras la cirugía, sin entrenamiento) a 49,65 tras 539 pasos de destilación en dos etapas, lo que demuestra que la recuperación es viable pero deja al modelo lejos de la calidad del Qwen2.5-0.5B original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) con atencion hibrida: 18/24 capas con `SinkAttention` (StreamingLLM-style, sink tokens + KV-cache rodante) y 6/24 capas con atencion cuadratica completa en los indices [3, 7, 11, 15, 19, 23] |
-| Parametros totales | 0,5B (heredados de Qwen2.5-0.5B; el repo solo publica pesos de atencion, 161,50 MB) |
+| Arquitectura | Transformer decoder-only (Qwen2) con atención híbrida: 18/24 capas con `SinkAttention` (streaming con sink tokens y KV-cache rodante) y 6/24 capas con atención cuadrática completa en índices [3, 7, 11, 15, 19, 23] |
+| Parametros totales | 0,5 mil millones (heredados de Qwen2.5-0.5B; el checkpoint distribuido contiene solo los pesos de atención, 161,50 MB) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada; el entrenamiento de destilacion uso `seq_len=512` |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (ingles) |
+| Longitud de contexto | no disponible (el módulo soporta ventana deslizante configurable; el entrenamiento usó `seq_len=512`) |
+| Tipos de cuantizacion | no disponible (pesos en FP16 en el checkpoint; no se documentan GGUF ni otras cuantizaciones) |
+| Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (`attention_weights.safetensors`, 161,50 MB) + `config.json` + `tokenizer.json`; requiere cargar la base Qwen2.5-0.5B y aplicar la cirugia de atencion antes de cargar los pesos |
+| Formato de pesos | safetensors (`attention_weights.safetensors`), más `config.json` y `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte de Qwen2.5-0.5B: 24 capas de decoder, `hidden_size=896`, 14 cabezas de query, 2 cabezas KV (GQA 14:2), `head_dim=64`. Sobre esa base se aplica un patron de cirugia `hybrid_3_1`: se reemplazan 18 capas con `SinkAttention` mediante `QwenAttentionAdapter` (que expande las cabezas KV 7x cuando es necesario y mantiene el contrato de `o_proj` unico) y se preservan 6 capas cuadraticas completas como anclas en los indices [3, 7, 11, 15, 19, 23]. El modulo `SinkAttention` usa la secuencia completa de hidden states para Q, acumula K/V en caché y poda a `[primeros num_sink_tokens] ++ [ultimos window_size - num_sink_tokens]`, preservando posiciones absolutas para el enmascaramiento causal. Soporta modo causal, bidireccional, cross-attention, GQA nativo y RoPE.
+El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con 24 capas, `hidden_size=896`, 14 cabezas de consulta y 2 cabezas KV (GQA con `head_dim=64`). Sobre esa base se aplica el patrón `hybrid_3_1`: cada bloque de tres capas usa `SinkAttention` y la cuarta conserva atención cuadrática completa, resultando en 18 capas transplantadas y 6 capas de anclaje. El `QwenAttentionAdapter` adapta las proyecciones originales al contrato del módulo, incluyendo una expansión 7x de las cabezas KV cuando es necesario y el contrato de `o_proj` único. `SinkAttention` soporta causalidad, bidireccionalidad, cross-attention, GQA y RoPE, y usa la secuencia completa de hidden states para Q mientras poda K/V a [primeros `num_sink_tokens`] ++ [últimos `window_size - num_sink_tokens`].
 
-El entrenamiento es una destilacion de conocimiento en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`). La etapa 0 (post-cirugia, sin ajuste) arroja una perplejidad causal de 618,03, lo que evidencia el dano inicial de la sustitucion. La etapa 1 (alineacion con backbone congelado, 163 pasos, 54,3 s) usa MSE y coseno a nivel de capa con `lm_head` eludido y peso 0,25. La etapa 2 (destilacion de representacion multicapa, 376 pasos, 125,8 s) usa MSE y coseno con peso 0,50. En total, 539 pasos en 180,3 s con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando 11.490 MB de VRAM pico en FP16 con parametros maestros FP32. La perplejidad final es 49,65 (delta -568,39).
+El entrenamiento consiste en una destilación de conocimiento en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`). La etapa 1 (alineación con backbone congelado, `lm_head` desactivado) usa MSE y coseno a nivel de capa con peso 0,25 y dura 163 pasos (54,3 s). La etapa 2 (destilación de representaciones multicapa) usa MSE y coseno con peso 0,50 y dura 376 pasos (125,8 s). En total, 539 pasos (180,3 s) con `seq_len=512`, `grad_accum=4` y `topk=64`, con un pico de VRAM de 11.490 MB en FP16 con parámetros maestros en FP32. La perplejidad causal pasa de 618,03 (etapa 0, cero-shot tras la cirugía) a 49,65.
 
 ## Capacidades
 
-- Generacion de texto causal autorregresiva en ingles, heredada de la base Qwen2.5-0.5B y modulada por la atencion hibrida.
-- Modelado de lenguaje con perplejidad medida en WikiText-2 (validacion): 49,65.
-- Soporte de atencion causal y bidireccional en el modulo `SinkAttention`, lo que abre la puerta a usos tipo encoder en experimentos.
-- Soporte nativo de GQA y RoPE, compatible con la configuracion original de Qwen2.
-- Caché KV rodante con sink tokens, pensada para inferencia con ventanas acotadas.
-- No hay evidencia en la informacion proporcionada de soporte de tool calling, function calling, agentes, vision, audio ni thinking mode.
-- Capacidad multilingue: solo ingles declarado.
+- Generación de texto causal autoregresiva en inglés, heredada de Qwen2.5-0.5B y ajustada por destilación sobre WikiText-2.
+- Atención con ventana deslizante y sink tokens: adecuada para flujos largos con memoria KV acotada, aunque el checkpoint no documenta una longitud de contexto efectiva.
+- Soporte de GQA nativo y RoPE, lo que permite integrarse en pipelines de transformers estándar tras aplicar la cirugía.
+- Compatible con el registro de atención de NeuralOps (`ATTENTION_REGISTRY`), lo que facilita experimentar con otras variantes de atención.
+- Capacidades de tool calling, agentes, visión, audio o modo de razonamiento: no disponibles en este checkpoint.
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Investigacion en atencion eficiente: banco de pruebas reproducible para medir el impacto de sustituir atencion cuadratica por `SinkAttention` en un transformer preentrenado, comparando perplejidad antes y despues de la destilacion.
-- Experimentos de destilacion de conocimiento: el pipeline de dos etapas (alineacion con backbone congelado + destilacion de representacion multicapa) sirve como receta para adaptar otros modelos pequenos a modulos de atencion alternativos.
-- Evaluacion de estrategias de poda de caché KV: el checkpoint permite estudiar como afectan `num_sink_tokens` y `window_size` a la calidad en tareas de modelado de lenguaje.
-- Prototipado academico de contextos largos: la combinacion de sink tokens y ventana rodante es un punto de partida para investigar degradacion con secuencias largas, aunque el modelo solo se entreno con `seq_len=512`.
-- Docencia y divulgacion: ejemplo concreto y ligero (0,5B, 161,50 MB de pesos de atencion) para explicar atención subcuadrática, GQA y cirugia de modelos en cursos o talleres.
-- Base para ablaciones controladas: al preservar 6 capas cuadraticas como anclas, permite aislar el efecto de la atencion eficiente capa a capa en estudios comparativos.
+- Investigación sobre atención subcuadrática: servir de base reproducible para comparar `SinkAttention` frente a atención completa en un modelo de 0,5B, aplicando la cirugía y midiendo perplejidad en WikiText-2.
+- Experimentación con StreamingLLM: validar el comportamiento de sink tokens y KV-cache rodante en generación de secuencias largas con memoria acotada.
+- Destilación de conocimiento: usar el pipeline de dos etapas (alineación con backbone congelado y destilación multicapa) como referencia para transplantar otros módulos de atención en modelos pequeños.
+- Prototipado de bajo coste: el checkpoint completo ocupa 0,2 GB y el pico de entrenamiento fue de 11,5 GB de VRAM, por lo que cabe en una GPU de consumo para pruebas de inferencia y ajuste ligero.
+- Evaluación de recuperación tras cirugía: medir la brecha entre el modelo post-cirugía sin entrenar (PPL 618,03) y el destilado (PPL 49,65) para estudiar la robustez de la arquitectura híbrida.
+- Docencia y divulgación: ejemplo didáctico de sustitución modular de atención con adaptadores y de telemetría de entrenamiento detallada.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (model-index); no verificados de forma independiente (`verified: false`).
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
 
-| Benchmark | Metrica | Valor |
+| Benchmark | Métrica | Valor |
 |---|---|---|
 | WikiText-2 (`wikitext-2-raw-v1`, validation) | Perplejidad | 49,65 |
+| WikiText-2 (etapa 0, post-cirugía sin KD) | Perplejidad | 618,03 |
 
-Telemetria interna del proceso de destilacion:
-
-| Etapa | Metrica | Valor |
-|---|---|---|
-| Stage 0 (post-cirugia, zero-shot) | Perplejidad causal | 618,03 |
-| Stage 1 (alineacion, backbone congelado) | Pasos / tiempo | 163 / 54,3 s |
-| Stage 2 (destilacion multicapa) | Pasos / tiempo | 376 / 125,8 s |
-| Total | Pasos / tiempo | 539 / 180,3 s |
-| Pico de VRAM | FP16 autocast + FP32 master | 11.490 MB |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; el entrenamiento de destilacion uso 11.490 MB pico, pero la inferencia del modelo de 0,5B en FP16 deberia caber holgadamente en GPUs consumer.
-- GPU recomendadas: no especificadas por el autor. Por tamano (0,5B), cualquier GPU con al menos 2-4 GB de VRAM libre deberia poder ejecutarlo en FP16; una RTX 3060/4060 o superior es suficiente en la practica.
-- Cabe en GPU consumer: si, por tamano del modelo base (0,5B), aunque la informacion proporcionada no lo confirma con mediciones.
-- Opciones de despliegue: la libreria declarada es `neuralops`, con carga manual via `transformers` + `safetensors` + `apply_qwen_attention_surgery`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: el modelo base tiene 0,5B parámetros; en FP16 requiere aproximadamente 1 GB de pesos, más overhead de activaciones y KV-cache. El entrenamiento documentado usó un pico de 11.490 MB con FP16 autocast y maestros FP32.
+- GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM para inferencia en FP16; para el pipeline de destilación completo se necesitan al menos 12 GB (el autor reporta 11.490 MB de pico).
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y similares; también en GPUs con 8 GB para inferencia.
+- Opciones de despliegue: `transformers` con `apply_qwen_attention_surgery` y carga manual de safetensors, o la API `neuralops.hub.load_surgeried_model`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Atencion | Licencia | Perplejidad WikiText-2 | Disponibilidad |
-|---|---|---|---|---|---|---|
-| `tahamajs/qwen-2.5-0.5b-sink-attention-wikitext2` | 0,5B | no disponible | Hibrida 18/24 `SinkAttention` + 6/24 cuadratica | MIT | 49,65 (declarada, no verificada) | Hugging Face, 0 descargas |
-| `Qwen/Qwen2.5-0.5B` (base) | 0,5B | 32.768 tokens (segun ficha publica de Qwen2.5) | Cuadratica completa con GQA y RoPE | Apache 2.0 | no disponible en esta ficha | Hugging Face, ampliamente usado |
-| Otros checkpoints del NeuralOps Attention Zoo | ~0,5B | no disponible | Variantes de atencion subcuadratica | MIT | no disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | PPL WikiText-2 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `tahamajs/qwen-2.5-0.5b-sink-attention-wikitext2` | 0,5B | no disponible | 49,65 | MIT | Hugging Face (solo pesos de atención) |
+| `Qwen/Qwen2.5-0.5B` (base) | 0,5B | 32.768 tokens (según Qwen2.5) | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Alternativas de atención eficiente en 0,5B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa directa con la base Qwen2.5-0.5B en WikiText-2 no esta disponible en la informacion proporcionada; el autor solo reporta la perplejidad del checkpoint destilado y su baseline post-cirugia (618,03). No se dispone de datos de alternativas como Mamba, RWKV o variantes de atencion lineal sobre el mismo benchmark en esta ficha.
+No se dispone de datos de benchmarks comparables de otras variantes de atención del mismo registro NeuralOps en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental de investigacion: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en produccion.
-- Entrenado unicamente sobre WikiText-2 en ingles y con `seq_len=512`; no se debe asumir buen rendimiento en otros dominios, idiomas o secuencias mas largas.
-- La perplejidad declarada (49,65) no esta verificada de forma independiente (`verified: false`).
-- La carga requiere aplicar la cirugia de atencion (`apply_qwen_attention_surgery`) antes de cargar los pesos; no es un checkpoint plug-and-play con `AutoModelForCausalLM.from_pretrained` directo.
-- Solo se publican pesos de atencion (161,50 MB); el resto del modelo debe descargarse de la base Qwen2.5-0.5B.
-- Riesgo de alucinacion y sesgos: no evaluado en la informacion proporcionada; al ser un modelo pequeno y ajustado solo con destilacion sobre WikiText-2, es esperable una calidad generativa limitada.
-- Capacidades de tool calling, agentes y multilingue no documentadas ni verificadas.
-- Licencia MIT permite uso comercial, pero la base Qwen2.5-0.5B tiene su propia licencia (Apache 2.0 segun la ficha publica de Qwen); conviene revisar la compatibilidad antes de un uso comercial.
-- La ventana efectiva de atencion depende de `num_sink_tokens` y `window_size`, valores no publicados en la informacion disponible; el comportamiento con secuencias largas no esta caracterizado.
+- El checkpoint contiene únicamente los pesos de atención; no es cargable directamente con `AutoModelForCausalLM.from_pretrained` sin aplicar antes la cirugía sobre Qwen2.5-0.5B.
+- La perplejidad de 49,65 en WikiText-2 es notablemente superior a la del Qwen2.5-0.5B original, por lo que la calidad de generación es inferior; no es adecuado para producción sin evaluación adicional.
+- Entrenado exclusivamente sobre WikiText-2 en inglés; el dominio y el idioma están muy acotados y el riesgo de alucinación y de degradación fuera de dominio es alto.
+- No se documenta la longitud de contexto efectiva ni el comportamiento de la ventana deslizante en inferencia más allá de `seq_len=512` en entrenamiento.
+- Sesgos conocidos: no documentados, pero hereda los del corpus WikiText-2 y del modelo base.
+- Licencia MIT permite uso comercial, pero el modelo base Qwen2.5-0.5B tiene su propia licencia Apache 2.0 que debe respetarse al redistribuir.
+- No hay soporte documentado para cuantización GGUF, vLLM, llama.cpp ni Ollama; el despliegue está limitado al stack NeuralOps/transformers.
+- Los resultados de benchmarks son declarados por el autor y no han sido verificados de forma independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-sink-attention-wikitext2
+- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-sink-attention-wikitext2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
-- Licencia MIT del proyecto: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Licencia NeuralOps (MIT): https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
+- Paper de StreamingLLM (referencia del diseño de sink attention): no disponible en la información proporcionada

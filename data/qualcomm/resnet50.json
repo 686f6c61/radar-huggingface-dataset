@@ -42,29 +42,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "ResNet50 - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/resnet50",
-      "snippet": "ResNet50 Imagenet classifier and general purpose backbone. ResNet50 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
     },
     {
-      "title": "qualcomm/ResNet50 · Hugging Face",
-      "url": "https://huggingface.co/qualcomm/ResNet50",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San Diego, …Read more"
     },
     {
-      "title": "ai-hub-models/src/qai_hub_models/models/resnet50 at main · qualcomm/ai ...",
-      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/resnet50",
-      "snippet": "ResNet50 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases. This is based on the implementation of ResNet50 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various ..."
+      "title": "fr - Qualcomm",
+      "url": "https://www.qualcomm.com/fr",
+      "snippet": "Qualcomm relentlessly innovates to deliver intelligent computing everywhere, helping the world tackle some of its most important …Read more"
     },
     {
-      "title": "README.md · qualcomm/ResNet50 at main - Hugging Face",
-      "url": "https://huggingface.co/qualcomm/ResNet50/blob/main/README.md",
-      "snippet": "ResNet50: Optimized for Mobile Deployment Imagenet classifier and general purpose backbone ResNet50 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases. This model is an implementation of ResNet50 found here. This repository provides scripts to run ResNet50 on Qualcomm® devices ..."
+      "title": "QUALCOMM Cours Action QCOM, Cotation Bourse NASDAQ",
+      "url": "https://www.boursorama.com/cours/QCOM/",
+      "snippet": "Le cours de l'action QUALCOMM QCOM sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus …Read more"
     },
     {
-      "title": "ai-hub-models/src/qai_hub_models/models/resnet50/README.md at main ...",
-      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/resnet50/README.md",
-      "snippet": "This is based on the implementation of ResNet50 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+      "title": "Qualcomm - Investor Relations",
+      "url": "https://investor.qualcomm.com/overview/default.aspx",
+      "snippet": "Sep 27, 2026 · Qualcomm Earnings Release Available on Company's Investor Relations Website View All Press Releases"
     }
   ]
 }

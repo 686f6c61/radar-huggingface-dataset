@@ -2,88 +2,90 @@
 
 ## Resumen
 
-Hy4-flash-MLX-3.1bit es una cuantizacion de 3,12 bits efectivos por peso del modelo Tencent Hy4-flash, publicada por el usuario nace-ai en Hugging Face. El paquete resultante ocupa 85,4 GB repartidos en 56 ficheros y mantiene 18.606.981.653 parametros totales, segun los metadatos de safetensors. La cuantizacion emplea 2 bits en los expertos enrutados (routed experts) y preserva las tablas Engram en precision IQ4_NL, lo que sugiere una arquitectura de tipo mezcla de expertos (MoE) con un componente adicional denominado Engram.
+Hy4-flash-MLX-3.1bit es una cuantización de 3,12 bits efectivos por peso del modelo Tencent Hy4-flash, publicada por el usuario nace-ai en Hugging Face. El pack contiene 85,46 GB distribuidos en 56 ficheros y está pensado para ejecutarse sobre Apple Silicon mediante la librería MLX, aunque el autor también incluye un fichero de requisitos para Linux con GPU CUDA 13. Con 18.606.981.653 parámetros reales según los safetensors, se trata de un modelo de aproximadamente 18,6 mil millones de parámetros que ha sido comprimido agresivamente: los expertos enrutados (routed experts) se almacenan a 2 bits, mientras que las tablas Engram conservan precisión IQ4_NL.
 
-El modelo base, tencent/Hy4-flash, pertenece a la familia Hy de Tencent y se distribuye bajo la Tencent Hy License, Version 1.0. Esta version cuantizada esta pensada para ejecutarse con MLX, el framework de Apple para silicio Apple, aunque la model card incluye tambien instrucciones para Linux con GPU CUDA 13 mediante un fichero de requisitos alternativo. El pipeline declarado es text-generation y la libreria es mlx.
+La relevancia de esta ficha radica en que demuestra una tendencia práctica: la cuantización extrema de modelos de gran tamaño para hacerlos desplegables en hardware de consumo. El autor documenta 37 variantes medidas del mismo modelo base sobre 11 textos y 5.621 tokens puntuados, con gráficas de divergencia KL que permiten comparar la pérdida de calidad entre configuraciones. Es, por tanto, un artefacto orientado a evaluación empírica más que a producción sin validación previa.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de casi 18.600 millones de parametros en hardware de Apple con un peso de 85 GB, un tamano que sigue siendo elevado para equipos de consumo pero que resulta manejable en estaciones de trabajo con memoria unificada amplia. No obstante, la informacion publicada es muy escasa: no hay datos de benchmarks, idiomas, contexto ni composicion del entrenamiento.
+La licencia es la Tencent Hy License 1.0, heredada del modelo base, lo que impone restricciones que conviene revisar antes de cualquier uso comercial. La model card no detalla arquitectura interna, idiomas soportados ni resultados de benchmarks estándar, por lo que muchos campos de esta ficha quedan marcados como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con expertos enrutados y tablas Engram (inferido de la model card; no confirmado en detalle) |
+| Arquitectura | no disponible (modelo base Tencent Hy4-flash; el autor menciona "routed experts" y "Engram tables", lo que sugiere una arquitectura con componentes tipo MoE y memoria asociativa, sin confirmación oficial) |
 | Parametros totales | 18.606.981.653 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 3,12 bits efectivos por peso; 2 bits en expertos enrutados; IQ4_NL en tablas Engram |
+| Tipos de cuantizacion | 3,12 bits efectivos por peso; expertos enrutados a 2 bits; tablas Engram en IQ4_NL; resto de pesos con precisión seleccionada (no detallada) |
 | Idiomas soportados | no disponible |
-| Licencia | Tencent Hy License, Version 1.0 (license: other) |
-| Formato de pesos | safetensors y MLX (repo de 85,4 GB, 56 ficheros); tag gguf presente pero sin detalle |
-| Tamano del repo | 85,4 GB |
-| Modelo base | tencent/Hy4-flash |
-| Libreria | mlx |
-| Pipeline | text-generation |
+| Licencia | Tencent Hy License 1.0 (license_name: tencent-hy-license) |
+| Formato de pesos | safetensors y MLX; el repo incluye además tag gguf, aunque el pack descrito son 56 ficheros de 85,46 GB |
+
+Otros datos técnicos: tamaño del repo 85,4 GB, 561 descargas, 3 likes, creado el 2026-11-20 y actualizado el 2026-11-21. Librería declarada: mlx. Pipeline: text-generation.
 
 ## Arquitectura y entrenamiento
 
-La model card indica que se trata de una cuantizacion de Tencent Hy4-flash con expertos enrutados a 2 bits y tablas Engram conservadas en IQ4_NL. Esto apunta a una arquitectura de mezcla de expertos (MoE) en la que solo una parte de los parametros se activa por token, aunque no se especifica el numero de expertos, el numero de expertos activos ni la dimension oculta. El termino Engram hace referencia a un componente de memoria o tablas de conocimiento asociadas al modelo, pero la informacion disponible no detalla su funcion exacta ni su integracion en el grafo computacional.
+No se dispone de información sobre la arquitectura interna del modelo base Tencent Hy4-flash en la documentación proporcionada. La model card de la cuantización menciona explícitamente "routed experts" (expertos enrutados) almacenados a 2 bits y "Engram tables" que retienen precisión IQ4_NL, lo que apunta a un diseño con mezcla de expertos y algún mecanismo de memoria o recuperación asociativa denominado Engram. No se confirma el número de expertos, la proporción de parámetros activos por token ni si se trata de un transformer puro o de una arquitectura híbrida.
 
-No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones como decodificacion especulativa o atencion lineal. Tampoco se detalla el proceso de cuantizacion mas alla de la precision asignada a cada grupo de pesos.
+Tampoco hay datos sobre el entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineamiento. La cuantización en sí fue realizada por nace-ai y el autor documenta el proceso de evaluación de calidad mediante 37 variantes medidas sobre 11 textos y 5.621 tokens puntuados, con gráficas de divergencia KL incluidas en el repositorio (`assets/combined-kl.png` y `assets/combined-kl.json`). Esa es la única innovación técnica documentada: un estudio sistemático de la pérdida de calidad según el nivel de cuantización, excluyendo visión y MTP del cómputo de tamaño.
 
 ## Capacidades
 
-- Generacion de texto y conversacion, segun el pipeline declarado (text-generation, conversational).
-- Razonamiento y codigo: no confirmado explicitamente en la informacion disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se listan idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Ejecucion en Apple silicon mediante MLX y en Linux con CUDA 13 segun la model card.
+- Generación de texto conversacional: el pipeline declarado es text-generation y la model card incluye un ejemplo de prompt-respuesta ("What is the capital of France?").
+- Ejecución local en Apple Silicon mediante MLX, con loader incluido en el repositorio.
+- Ejecución en Linux con GPU CUDA 13 mediante `requirements-linux.txt`.
+- Soporte de cuantización extrema con evaluación de calidad documentada (divergencia KL sobre 5.621 tokens).
+- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- Capacidades multilingües: no disponibles.
+- El tag `gguf` aparece en los metadatos, pero la model card no describe un flujo de uso con llama.cpp u Ollama.
 
 ## Casos de uso
 
-- Prototipado local en Apple silicon: el paquete MLX permite cargar el modelo con el loader incluido y ejecutar inferencia en un Mac con memoria unificada suficiente, util para experimentar sin depender de la nube.
-- Evaluacion de cuantizaciones agresivas: sirve para medir la perdida de calidad de una cuantizacion a 3,12 bits efectivos frente al modelo base tencent/Hy4-flash en tareas de generacion.
-- Generacion de texto conversacional: el pipeline declarado es text-generation y conversational, por lo que puede emplearse en chatbots de proposito general una vez validada su calidad.
-- Investigacion sobre arquitecturas MoE con tablas Engram: el hecho de preservar las tablas Engram en IQ4_NL permite estudiar el impacto de la precision en estos componentes.
-- Despliegue en estaciones de trabajo Linux con CUDA 13: la model card incluye requirements-linux.txt, lo que habilita su uso en servidores con GPU NVIDIA.
-- Banquito de pruebas para tooling MLX: util para desarrolladores que quieran validar el loader run_mlx.py y flujos de descarga con hf download en modelos de gran tamano.
+- Evaluación de cuantización extrema en investigación: el pack permite reproducir el estudio de divergencia KL del autor sobre 11 textos y 5.621 tokens, comparando esta variante de 3,12 bits con las otras 36 medidas. Es adecuado porque el repositorio incluye los datos de comparación (`assets/combined-kl.json`).
+- Inferencia local en Mac con Apple Silicon: el loader MLX incluido y el tamaño de 85,46 GB permiten ejecutar el modelo en equipos con memoria unificada suficiente, sin necesidad de GPU dedicada.
+- Prototipado de asistentes conversacionales en local: al ser un modelo de 18,6 mil millones de parámetros con pipeline text-generation, sirve para validar flujos de chat antes de migrar a una versión de mayor precisión.
+- Pruebas de regresión de calidad tras cuantizar: equipos que ya usan Tencent Hy4-flash pueden emplear esta variante para medir cuánto degrada la cuantización a 2 bits en sus propias tareas, usando el script `run_mlx.py` como base.
+- Despliegue en Linux con CUDA 13 para experimentación: el fichero `requirements-linux.txt` permite montar el entorno en servidores con GPU moderna y comparar rendimiento frente a la ejecución en Apple Silicon.
+- Docencia y divulgación sobre cuantización: el repositorio ofrece un caso real y medido de cómo se comporta un modelo de ~18,6 B al comprimirse a 3,12 bits efectivos, con gráficas y datos exportables.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo proporciona métricas internas de calidad de cuantización: 37 variantes medidas sobre 11 textos y 5.621 tokens puntuados, con gráficas de divergencia KL en `assets/combined-kl.png` y datos exactos en `assets/combined-kl.json`. No se ofrecen cifras numéricas de esas métricas en la model card.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repo pesa 85,4 GB, por lo que se necesita al menos esa cantidad de memoria unificada o VRAM para cargar los pesos en precision de la cuantizacion; el overhead de ejecucion adicional no esta documentado.
-- GPU recomendadas: no disponible. La model card menciona Apple silicon (MLX) y Linux con GPU CUDA 13, sin modelos concretos.
-- Compatibilidad con GPU de consumo: no confirmado. 85,4 GB supera la VRAM de cualquier GPU de consumo actual (RTX 4090 con 24 GB, por ejemplo), por lo que no cabe en una sola GPU consumer; requeriria memoria unificada de Apple de gama alta o multiples GPU.
-- Opciones de despliegue: MLX con el loader incluido (run_mlx.py); en Linux, requirements-linux.txt con CUDA 13. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
+- VRAM/memoria estimada: el pack ocupa 85,46 GB en disco (85,4 GB de repo), por lo que la inferencia requiere al menos esa cantidad de memoria disponible, ya sea unificada (Apple Silicon) o dedicada (GPU).
+- GPU recomendadas: no especificadas por el autor. Para Linux se indica una GPU con CUDA 13; por el tamaño, serían necesarias GPUs de gama alta con 80 GB o más (A100 80 GB, H100 80 GB) o configuraciones multi-GPU.
+- ¿Cabe en GPU de consumo? No en tarjetas de 24 GB (RTX 4090) ni de 16 GB. En Apple Silicon requeriría equipos con memoria unificada de 96 GB o superior (Mac Studio, MacBook Pro de gama alta).
+- Opciones de despliegue: MLX con el loader incluido (`run_mlx.py`); en Linux, el autor remite a `requirements-linux.txt` para CUDA 13. No se documenta soporte de vLLM, TGI, llama.cpp u Ollama, pese al tag `gguf`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nace-ai/Hy4-flash-MLX-3.1bit | 18.606.981.653 | no disponible | 3,12 bits efectivos (MLX) | Tencent Hy License 1.0 | Hugging Face, 0 descargas |
-| tencent/Hy4-flash (base) | no disponible en esta ficha | no disponible | pesos originales | Tencent Hy License 1.0 | Hugging Face |
-| Otras cuantizaciones de Hy4-flash | no disponible | no disponible | no disponible | Tencent Hy License 1.0 | no disponible |
+| Hy4-flash-MLX-3.1bit (esta ficha) | 18,6 B | no disponible | 3,12 bits efectivos (MLX) | Tencent Hy License 1.0 | Hugging Face, 561 descargas |
+| Tencent Hy4-flash (base) | no disponible en esta ficha | no disponible | precision original | Tencent Hy License 1.0 | Hugging Face (tencent/Hy4-flash) |
+| Otras variantes de cuantizacion de Hy4-flash de nace-ai | mismas que el base | no disponible | 37 variantes medidas | Tencent Hy License 1.0 | Referenciadas en `assets/combined-kl.json` |
 
-No se dispone de informacion sobre modelos comparables de otros autores en la misma categoria para esta ficha.
+No se dispone de información sobre modelos alternativos de otros autores con los que comparar parámetros, contexto o rendimiento. Los datos de benchmarks del modelo base tampoco están disponibles en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 3,12 bits efectivos y 2 bits en expertos enrutados puede degradar la calidad respecto al modelo base; no se han publicado evaluaciones que cuantifiquen esa perdida.
-- No hay informacion sobre sesgos, riesgo de alucinacion ni limitaciones idiomaticas del modelo base ni de esta cuantizacion.
-- La licencia Tencent Hy License, Version 1.0, es una licencia "other" que puede imponer restricciones al uso comercial; es necesario revisar el fichero LICENSE antes de desplegar en produccion.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion de la comunidad sobre su correcto funcionamiento.
-- El tag gguf aparece en los metadatos pero la model card solo describe el flujo MLX; no esta claro que se incluya un GGUF funcional.
-- El tamano de 85,4 GB limita su despliegue a equipos con memoria unificada o VRAM muy elevada.
-- No se documentan la longitud de contexto, los idiomas ni los parametros activos, lo que dificulta planificar su uso en produccion.
+- La cuantización a 2 bits en los expertos enrutados y a 3,12 bits efectivos introduce degradación de calidad; el propio autor la mide con divergencia KL, pero no publica cifras en la model card, solo gráficas y un JSON.
+- No hay información sobre sesgos del modelo base ni sobre su comportamiento en dominios sensibles.
+- Riesgo de alucinación: no cuantificado en la documentación; al ser un modelo conversacional, es esperable, pero no hay datos.
+- Idiomas soportados no documentados; no se puede garantizar calidad en castellano ni en otros idiomas.
+- Licencia Tencent Hy License 1.0: es una licencia "other" que puede imponer restricciones al uso comercial; es imprescindible revisar el fichero `LICENSE` antes de desplegar.
+- El tag `gguf` en los metadatos no se corresponde con un flujo de uso documentado con llama.cpp u Ollama; el pack descrito son ficheros MLX/safetensors.
+- El tamaño de 85,46 GB limita el despliegue a equipos con memoria unificada o VRAM muy elevada; no cabe en GPU de consumo estándar.
+- La model card no documenta tool calling, agentes, visión ni modo thinking; no deben asumirse estas capacidades.
+- Proyecto con solo 3 likes y 561 descargas: poca validación comunitaria; conviene verificar la integridad de los pesos y reproducir las métricas del autor antes de usarlo en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nace-ai/Hy4-flash-MLX-3.1bit
+- Modelo en Hugging Face: https://huggingface.co/nace-ai/Hy4-flash-MLX-3.1bit
 - Modelo base: https://huggingface.co/tencent/Hy4-flash
-- Licencia: fichero LICENSE en el repositorio de Hugging Face
+- Datos de comparación de cuantización: `assets/combined-kl.json` (dentro del repositorio)
+- Gráfica de calidad de cuantización: `assets/combined-kl.png` (dentro del repositorio)
+- Licencia: `LICENSE` (Tencent Hy License 1.0, dentro del repositorio)

@@ -2,118 +2,100 @@
 
 ## Resumen
 
-`aerospace-engineering-ai999x` es un paquete de Python publicado en Hugging Face por la organización AI999X (autor: Ibnul Jaif Farabi, versión 1.0.0) que resuelve problemas de ingeniería aeroespacial de forma determinista. A pesar de su empaquetado como modelo (etiquetas `safetensors`, `onnx`, recuento de 4.715.520 parámetros y *pipeline* `question-answering`), la propia *model card* lo describe como un motor neuro-simbólico: un analizador de reglas que interpreta la pregunta en inglés y delega el cálculo en 80 procedimientos simbólicos certificados (sympy, mpmath), sin pesos neuronales que se infieran en el sentido habitual. Conviene leerlo, por tanto, como una librería de cálculo de ingeniería con interfaz en lenguaje natural, no como un LLM generativo.
+Aerospace Engineering (aerospace-engineering-ai999x) es un motor de cálculo compilado, empaquetado y distribuido con el formato de un modelo de Hugging Face, orientado a la resolución de problemas de ingeniería aeroespacial. Lo desarrolla AI999X y cubre 81 cálculos agrupados en 13 temas: atmósfera estándar, sustentación y resistencia, actuaciones de aeronaves, estabilidad, propulsión y actuaciones de cohetes, toberas y transferencias orbitales. Cada cálculo se presenta con su fórmula, sus pasos y sus unidades, y devuelve una explicación en lenguaje natural cuando falta una entrada o está fuera de rango.
 
-El problema que aborda es el de la fiabilidad en cálculos técnicos: cada respuesta se computa y se verifica (por sustitución inversa, análisis dimensional o cálculo independiente) antes de devolverse, y el sistema declara explícitamente siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) en lugar de improvisar. Devuelve pasos, fórmulas en LaTeX, unidades y supuestos, lo que lo hace apto para cuadernos, tutoría y corrección de ejercicios. Se ejecuta íntegramente en CPU, sin GPU, sin red y sin clave de API.
+El artefacto no es un transformer generativo: los pesos en safetensors suman 4.715.520 parámetros y la librería declarada es `aerospace-engineering-ai999x`, con `inference: false` en la model card. El modelo se ofrece en cuatro formas de uso —aplicación de escritorio para Windows y Linux, interfaz de línea de comandos, versión web y paquete de Python 3.10+— y toda la ejecución ocurre en local, sin conexión. La propuesta de valor es la reproducibilidad determinista: el autor declara respuestas idénticas en Windows y Linux sobre un conjunto de 375 preguntas documentadas.
 
-Su relevancia actual es la reproducibilidad: el autor declara 369 respuestas documentadas idénticas en Windows (Python 3.13) y Linux x86-64 (Python 3.10 a 3.14), bajo licencia Apache-2.0. No obstante, el modelo tiene 0 descargas y 0 *likes*, la métrica de accuracy figura con `verified: false` y el repositorio ocupa 0.0 GB, por lo que no existe validación independiente de esas cifras.
+Es relevante para quien necesite un solucionador verificable de problemas de aeronáutica y astronáutica con pasos intermedios auditables, en lugar de un modelo de lenguaje expuesto a alucinaciones numéricas. La licencia Apache 2.0 facilita su integración en herramientas docentes y en pipelines internos de ingeniería.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura de la pregunta basada en reglas + 80 capacidades simbólicas certificadas (sympy, mpmath). No es un transformer ni un modelo autorregresivo |
-| Parametros totales | 4.715.520 (según metadatos de safetensors); la *model card* no describe pesos neuronales, por lo que la cifra no es interpretable como parámetros de una red |
+| Arquitectura | Motor de cálculo compilado (no es un transformer generativo); 81 cálculos en 13 temas |
+| Parametros totales | 4.715.520 (safetensors) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible; no aplica (no hay ventana de contexto autorregresiva) |
-| Tipos de cuantizacion | No disponible; no aplica (paquete Python puro, sin pesos que cuantizar) |
-| Idiomas soportados | Inglés (`en`) únicamente |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `safetensors` y `onnx` declarados en las etiquetas; distribución real como *wheel* de Python (`aerospace_engineering_ai999x-1.0.0-py3-none-any.whl`) y paquete en PyPI. Tamaño del repositorio: 0.0 GB |
-| Versión | 1.0.0 (knowledge pack 1.0.1) |
-| Capacidades certificadas | 80 procedimientos |
-| Respuestas doradas | 369 respuestas documentadas |
-| Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
-| Runtime | CPU únicamente, offline; sin GPU, sin red, sin clave de API |
-| Inferencia | `inference: false` declarado en la *model card* (se usa como librería, no como endpoint de inferencia) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors; distribución adicional como binarios de escritorio y CLI (Windows x86-64, Linux x86-64) y paquete de Python |
 
 ## Arquitectura y entrenamiento
 
-No hay entrenamiento en el sentido de aprendizaje automático: no se documentan tokens de entrenamiento, composición de dataset, RLHF ni DPO. La arquitectura es un *front-end* determinista de análisis de la consulta (formas de pregunta documentadas y llamadas tipadas) acoplado a un paquete de conocimiento versionado (1.0.1) que implementa 80 procedimientos de ingeniería aeroespacial. Cada procedimiento calcula el resultado de forma exacta o con precisión arbitraria (mpmath) y lo valida mediante sustitución inversa, comprobación dimensional o comparación con un cálculo independiente antes de emitir la respuesta.
+La model card describe un único motor compilado del que se derivan cuatro interfaces: aplicación de escritorio, CLI `aerospace-engineering`, versión en navegador y paquete `pip install aerospace-engineering-ai999x`. En Windows y Linux x86-64, pip instala el mismo motor compilado; en macOS y ARM instala una implementación en Python puro que, según el autor, produce las mismas respuestas. No se especifica la arquitectura interna del motor ni el stack de compilación más allá de la etiqueta `rust` presente en los tags.
 
-La innovación destacable no es algorítmica sino de diseño de fiabilidad: el sistema hace explícita su incertidumbre en siete estados y prefiere el rechazo a la respuesta no verificada, lo que el autor resume como «cero respuestas incorrectas por diseño». La contrapartida es que la cobertura está limitada a las 80 capacidades certificadas y a las formas de pregunta documentadas; cualquier consulta fuera de ese conjunto devuelve `OUT_OF_SCOPE` o `UNRECOGNIZED_FORMAT`. La *model card* proporcionada está truncada en el bloque de *quickstart*, por lo que no se dispone del listado completo de capacidades ni de la API íntegra.
+No hay información sobre datos de entrenamiento, número de tokens, composición del corpus ni procesos de RLHF o DPO, lo que es coherente con un sistema determinista basado en fórmulas en lugar de un modelo aprendido. La innovación destacable es la cobertura de 81 cálculos con fórmula, pasos y unidades explícitos, junto con la validación de entradas que devuelve una razón textual cuando un valor falta o está fuera de rango. El autor declara ejecución totalmente offline y ausencia de alucinación como propiedades de diseño.
 
 ## Capacidades
 
-- Cálculo de la atmósfera estándar (ISA): temperatura, presión, densidad y velocidad del sonido a una altitud dada, con validación de unidades.
-- Velocidades aerodinámicas: conversión entre CAS, TAS y Mach, presión dinámica de impacto y número de Mach a partir de altitud de presión.
-- Flujo compresible y ondas de choque: relaciones de choque normal (M2, p2/p1, T2/T1, rho2/rho1), flujo isoentrópico y condiciones de estancamiento.
-- Toberas y propulsión por cohete: geometría de tobera, condiciones de garganta y salida, empuje y flujo másico.
-- Rendimiento y etapado de cohetes: ecuación de Breguet, fracción de masa, etapas múltiples y delta-v.
-- Rendimiento de aeronaves: alcance, autonomía, relaciones sustentación/resistencia y actuaciones en vuelo.
-- Estabilidad estática, perfiles alares, alas y hélices: parámetros geométricos y aerodinámicos asociados.
-- Órbitas y reentrada: mecánica orbital, transferencias orbitales y condiciones de reentrada.
-- Interfaz dual: `ask()` acepta preguntas en inglés documentado; `solve(capability_id, **inputs)` garantiza la resolución tipada cuando la entrada es válida.
-- Trazabilidad de la respuesta: pasos, fórmulas en LaTeX, unidades, supuestos y el modelo o procedimiento empleado.
-- Gestión explícita de fallos con siete estados de salida, sin adivinar.
-- Ejecución offline y determinista en CPU, con resultados idénticos entre plataformas.
-- Etiquetas declaradas adicionales de token classification, text classification, sentence similarity y feature extraction, sin evidencia en la *model card* de cabezas neuronales que las respalden.
+- Resolución paso a paso de 81 cálculos de ingeniería aeroespacial en 13 temas, con fórmula, desarrollo y unidades.
+- Atmósfera estándar: propiedades a una altitud dada (por ejemplo, cálculo de ISA).
+- Flujo compresible: relaciones de choque normal, Mach crítico de un perfil alar, caudal másico ahogado en la garganta de una tobera.
+- Actuaciones de aeronaves: sustentación y resistencia, velocidad verdadera a partir de la calibrada, alcance Breguet de un reactor.
+- Estabilidad y control: cálculos de estabilidad incluidos en el temario.
+- Propulsión y cohetes: actuaciones de propulsión y de cohete, toberas.
+- Mecánica orbital: altitud de órbita circular para un periodo dado, transferencias orbitales.
+- Teoría del disco actuador: potencia ideal de hover de un rotor (teoría de cantidad de movimiento).
+- Validación de entradas con mensaje explicativo cuando un dato falta o está fuera de rango.
+- Ejecución offline, sin dependencia de red, en escritorio, CLI, navegador y Python.
+- No dispone de tool calling, razonamiento multi-paso abierto, visión, audio ni modo thinking; sus capacidades son las del catálogo cerrado de cálculos.
 
 ## Casos de uso
 
-- Docencia universitaria de aerodinámica y propulsión: el alumno plantea «ISA properties: h = 35000 ft» y obtiene T, p, rho y a con pasos y unidades, lo que permite verificar el procedimiento a mano en lugar de solo el resultado.
-- Corrección automática de ejercicios: con 369 respuestas doradas y salida determinista, un corrector puede comparar la respuesta del estudiante contra un valor reproducible y mostrar la discrepancia con supuestos explícitos.
-- Cuadernos reproducibles de ingeniería: al ser Python puro sobre CPU y sin red, se integra en Jupyter o en un contenedor de CI sin dependencias de GPU ni claves de API, garantizando los mismos números en cada ejecución.
-- Precomprobación de cálculos en fases preliminares de diseño: cálculos de choque normal, tobera o Breguet como referencias rápida y auditable antes de pasar a un solver numérico de mayor fidelidad.
-- Entornos con requisitos de confidencialidad o air-gapped: al no realizar llamadas de red ni requerir servicio externo, los datos de la consulta no salen de la máquina, algo inviable con un LLM alojado.
-- Generación de material didáctico y bancos de problemas: uso de la salida LaTeX con pasos para construir soluciones explicadas y rúbricas homogéneas.
-- Validación cruzada de un LLM generativo: usar este motor como oráculo determinista en un pipeline donde un modelo de lenguaje redacte y este paquete compruebe los valores numéricos antes de publicar.
+- Docencia de aeronáutica: el alumnado plantea un problema de atmósfera estándar o de choque normal y obtiene fórmula, pasos y unidades, lo que permite revisar el procedimiento y no solo el resultado.
+- Verificación de cálculos de actuaciones: introducir velocidad calibrada y altitud para obtener la velocidad verdadera y contrastarla con la hoja de cálculo del equipo, con la ventaja de que el motor devuelve el desarrollo intermedio.
+- Pre-dimensionado de misiones orbitales: calcular la altitud de una órbita circular para un periodo objetivo antes de pasar a un propagador de mayor fidelidad.
+- Análisis de toberas y propulsión: estimar el caudal másico ahogado en la garganta y las relaciones de choque para comprobar el punto de diseño de una tobera.
+- Estimación de alcance en fase conceptual: aplicar el alcance Breguet de un reactor con los parámetros preliminares de una aeronave para acotar el orden de magnitud.
+- Automatización en Python: integrar el paquete en scripts de cálculo por lotes para generar tablas de resultados reproducibles en Windows y Linux, útil en informes de ingeniería y en tests de regresión.
+- Herramienta de sobremesa para revisión rápida: usar la aplicación de escritorio con escenas y gráficas generadas a partir del resultado para inspeccionar la sensibilidad de una variable moviendo un control deslizante.
+- Entorno sin conectividad: desplegar el motor en un portátil de campo o en una red aislada, ya que toda la ejecución es local.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos disponibles son los declarados por el autor en el `model-index` de la *model card*. No hay resultados de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
-
-| Tarea | Conjunto de evaluación | Métrica | Valor | Estado |
+| Tarea | Dataset | Métrica | Valor | Verificado |
 |---|---|---|---|---|
-| Question answering de ingeniería aeroespacial | Golden answers (369 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 | `verified: false` |
+| Question answering de ingeniería aeroespacial | Golden answers (375 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1,0 (idéntico en cada plataforma) | No |
 
-El valor 1.0 corresponde a que las 369 respuestas documentadas se reproducen de forma idéntica en todas las plataformas probadas, no a una evaluación sobre preguntas no vistas. No se han publicado resultados de benchmarks independientes ni conjuntos de evaluación abiertos en la información disponible.
+Los datos proceden del model-index declarado por el autor y no están verificados de forma independiente. No se han publicado otros resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica. El motor se ejecuta exclusivamente en CPU; no requiere GPU.
-- GPU recomendadas: ninguna. Cualquier CPU capaz de ejecutar Python 3.10-3.14 es suficiente.
-- GPU de consumo: irrelevante para este paquete; no hay ruta de despliegue en GPU documentada.
-- Memoria RAM: no disponible en la información proporcionada; el repositorio ocupa 0.0 GB y las dependencias declaradas son sympy y mpmath, de huella reducida.
-- Opciones de despliegue: `pip install aerospace-engineering-ai999x` desde PyPI o instalación directa del *wheel* alojado en el repositorio de Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI al no existir pesos de inferencia neuronal.
-- Latencia y throughput: no disponibles. Al ser cálculo simbólico determinista en CPU, la latencia dependerá del procedimiento concreto y de la precisión solicitada, sin datos publicados.
-- Sistemas operativos validados: Windows (Python 3.13) y Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14). macOS no figura entre las plataformas probadas.
+- VRAM estimada para inferencia: no disponible; el motor no requiere GPU y el tamaño del repositorio es de 0,0 GB.
+- GPU recomendadas: no aplica; la ejecución es en CPU.
+- Cabe en cualquier equipo de consumo: Windows o Linux x86-64 para los binarios compilados; macOS y ARM mediante la build en Python puro.
+- Opciones de despliegue: aplicación de escritorio (Windows, Linux), CLI `aerospace-engineering`, versión web en la página del modelo y paquete de Python 3.10 o superior.
+- Latencia y throughput: no disponibles; al tratarse de cálculos deterministas, la latencia vendrá dominada por el arranque del proceso o del intérprete de Python.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de modelos comparables publicados en la información proporcionada. La comparación siguiente es de categoría, no de rendimiento medido:
+| Modelo | Tipo | Cobertura | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| aerospace-engineering-ai999x | Motor de cálculo determinista | 81 cálculos en 13 temas de aeronáutica y astronáutica | No disponible | Apache 2.0 | Hugging Face, escritorio, CLI, web, Python |
+| Modelos de lenguaje de propósito general | Transformer generativo | Amplia, sin garantía de exactitud numérica | Variable | Variable | Hugging Face y APIs |
+| Librerías de cálculo aeroespacial en Python | Código fuente de fórmulas | Depende de la librería | No aplica | Variable | PyPI, GitHub |
 
-| Criterio | aerospace-engineering-ai999x | LLM de propósito general (p. ej. familia Llama/Qwen) | Sistema de álgebra computacional (CAS) |
-|---|---|---|---|
-| Naturaleza | Reglas + procedimientos simbólicos certificados | Red neuronal autorregresiva | Motor simbólico sin interfaz en lenguaje natural |
-| Parámetros | 4.715.520 declarados (no interpretables como red) | Miles de millones (no disponible aquí) | No aplica |
-| Contexto | No aplica; entradas documentadas | Ventana de miles a cientos de miles de tokens | No aplica |
-| Dominio | Aeroespacial, 80 procedimientos | Abierto, con riesgo de alucinación | Matemáticas generales |
-| Respuesta ante lo desconocido | Rechazo explícito (7 estados) | Generación plausible no verificada | Error o sin solución |
-| Ejecución | CPU, offline, determinista | Requiere GPU o servicio externo | CPU, offline, determinista |
-| Licencia | Apache-2.0 | Variables según modelo | Variables según proyecto |
-| Validación independiente | No disponible (0 descargas, métrica `verified: false`) | Amplia en modelos populares | Amplia |
+No se dispone de datos de benchmarks comparativos con alternativas concretas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: todas las formas de pregunta documentadas están en inglés; no hay soporte declarado de castellano ni de otros idiomas.
-- Cobertura cerrada: únicamente 80 capacidades certificadas. Consultas legítimas de ingeniería aeroespacial fuera de ese conjunto devuelven `OUT_OF_SCOPE`; no es un asistente conversacional general.
-- No es un modelo generativo: no redacta explicaciones libres ni mantiene diálogo multiturno; produce resultados estructurados con pasos.
-- Ausencia de validación independiente: 0 descargas y 0 *likes* en Hugging Face, y la métrica de accuracy está marcada como `verified: false` por el propio autor. El 1.0 se refiere a reproducibilidad sobre 369 respuestas conocidas, no a generalización.
-- Inconsistencias de metadatos: las etiquetas `onnx` y `safetensors`, el recuento de 4.715.520 parámetros y las tareas de token/text classification no están respaldados por la *model card*; el tamaño del repositorio (0.0 GB) es incompatible con el almacenamiento de pesos de ese volumen. La *model card* está truncada en el ejemplo de `quickstart`, por lo que la API completa no está verificada.
-- `inference: false` declarado: no hay endpoint de inferencia en Hugging Face; el uso requiere instalar el paquete.
-- Fecha de creación en los metadatos (2026-10-25) posterior a la fecha actual de consulta, lo que apunta a un error de metadatos o a una publicación con marca temporal alterada.
-- Riesgo de uso indebido en ingeniería real: los resultados son verificados internamente por el propio sistema, pero no sustituyen la validación por un ingeniero colegiado ni la certificación normativa (p. ej. FAR/CS-25). No usar como única fuente en decisiones de diseño críticas.
-- Sin garantías: Apache-2.0 se distribuye «tal cual», sin garantía implícita de adecuación a un propósito concreto.
-- macOS y otras plataformas no figuran entre las probadas; el comportamiento fuera de Windows y Linux x86-64 no está verificado.
+- Catálogo cerrado: solo resuelve los 81 cálculos documentados; cualquier problema fuera de ese conjunto queda sin cubrir.
+- Idioma: únicamente inglés, tanto en la documentación como en las explicaciones de validación.
+- No es un modelo generativo: no redacta texto libre, no mantiene conversaciones abiertas ni razona fuera de sus fórmulas.
+- La métrica de accuracy 1,0 procede del propio autor sobre su conjunto de preguntas y no está verificada de forma independiente; no debe interpretarse como validación externa.
+- La model card declara `inference: false`; la integración debe hacerse mediante los binarios o el paquete de Python, no como un modelo servible en vLLM, TGI o llama.cpp.
+- Las builds para macOS y ARM son de Python puro; el rendimiento puede diferir del motor compilado aunque el autor afirme respuestas idénticas.
+- No hay información sobre sesgos, tasas de error en entradas límite ni sobre la validación física de los resultados frente a referencias publicadas.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución y aviso de cambios; conviene revisar el fichero LICENSE del repositorio antes de redistribuir.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/aerospace-engineering-ai999x
-- Paquete en PyPI: https://pypi.org/project/aerospace-engineering-ai999x/
-- Guía de capacidades (docs): https://huggingface.co/AI999X/aerospace-engineering-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/aerospace-engineering-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web del autor: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
-- *Wheel* de instalación directa: https://huggingface.co/AI999X/aerospace-engineering-ai999x/resolve/main/dist/aerospace_engineering_ai999x-1.0.0-py3-none-any.whl
+- Página del modelo en AI999X: https://www.ai999x.com/models/aerospace-engineering-ai999x/
+- Capacidades del modelo: https://www.ai999x.com/models/aerospace-engineering-ai999x/#capabilities
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-aerospace-engineering-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-aerospace-engineering-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Vídeo de demostración: https://www.ai999x.com/?ax_shot=aerospace-engineering-ai999x/clip.mp4

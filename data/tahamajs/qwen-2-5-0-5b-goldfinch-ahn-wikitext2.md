@@ -2,106 +2,102 @@
 
 ## Resumen
 
-Qwen-2.5-0.5B con atención NeuralOps `goldfinch_ahn` es un experimento de cirugía arquitectónica sobre el modelo base Qwen2.5-0.5B, publicado por el usuario tahamajs en Hugging Face. El autor sustituye el mecanismo de atención original del transformer por una implementación denominada `goldfinch_ahn`, registrada en un `ATTENTION_REGISTRY`, y aplica un patrón de sustitución híbrido `hybrid_3_1` sobre las capas del modelo. El checkpoint resultante se ha destilado posteriormente sobre el conjunto de datos WikiText-2 (`wikitext-2-raw-v1`) para recuperar la coherencia del lenguaje tras la intervención.
+`qwen-2.5-0.5b-goldfinch-ahn-wikitext2` es un checkpoint experimental publicado por el usuario `tahamajs` dentro del proyecto NeuralOps "Attention Surgery Zoo". No es un modelo entrenado desde cero: parte de `Qwen/Qwen2.5-0.5B` y sustituye quirúrgicamente 18 de sus 24 bloques de atención por el operador `goldfinch_ahn` (`GoldFinchAHNBlock`), una variante híbrida de atención de ventana deslizante con memoria recurrente con compuertas, de la familia SSM. Posteriormente aplica una destilación de conocimiento en dos etapas sobre WikiText-2 para recuperar parte de la calidad perdida tras la cirugía.
 
-El interés del artefacto es fundamentalmente metodológico: documenta el impacto de reemplazar la atención estándar por un módulo alternativo en un modelo pequeño (564 millones de parámetros según los pesos en safetensors) y cuantifica la recuperación mediante perplejidad causal. Antes de la destilación, la perplejidad se dispara a 121.396,70; tras 180,2 segundos de destilación en una RTX 3090, baja a 316,25. Estos valores siguen siendo muy superiores a los de un Qwen2.5-0.5B intacto en WikiText-2, por lo que el modelo no debe interpretarse como un sustituto listo para producción del original.
+El interés del modelo es fundamentalmente de investigación: sirve como banco de pruebas reproducible para evaluar el impacto de reemplazar atención softmax por operadores subcuadráticos en modelos compactos, y para medir cuánta calidad se puede recuperar mediante destilación de representaciones ocultas. El checkpoint tiene 564.314.020 parámetros reales en safetensors (frente a los 494M del Qwen2.5-0.5B original, por la expansión de cabezas KV en las capas transplantadas) y un repositorio de 1,4 GB.
 
-No hay información publicada sobre licencia, idiomas soportados, pipeline de uso ni composición del dataset de entrenamiento más allá de WikiText-2. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su model card se limita a los metadatos del experimento de cirugía y destilación.
+Es importante subrayar que el rendimiento final es muy inferior al del modelo base: la perplejidad en WikiText-2 tras la destilación es de 316,25 frente a los 15,38 del profesor. Por tanto, no es un modelo apto para producción ni para uso conversacional general, sino un artefacto de experimentación sobre topologías de atención.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) con atención sustituida por `goldfinch_ahn` (patrón `hybrid_3_1`) |
-| Parametros totales | 564.314.020 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors, presumiblemente bf16/fp16) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Tamaño del repositorio | 1,4 GB |
-| Modelo base | Qwen2.5-0.5B |
-| Dataset de destilación | WikiText-2 (`wikitext-2-raw-v1`) |
-| Perplejidad causal pre-destilación | 121.396,70 |
-| Perplejidad causal post-destilación | 316,25 |
-| Tiempo de destilación | 180,2 s en NVIDIA RTX 3090 |
+| Arquitectura | Transformer híbrido: 18/24 capas con `GoldFinchAHNBlock` (atención de ventana deslizante + memoria recurrente con compuertas, familia SSM) y 6/24 capas con GQA softmax nativa de Qwen2 |
+| Parametros totales | 564.314.020 (safetensors) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible explícitamente; la evaluación se realizó a longitud de secuencia 512. El operador admite ventana configurable (`window_size`, 0 o >= seq_len para contexto causal completo) |
+| Tipos de cuantizacion | No disponible (pesos publicados en FP16 completo, 1076,41 MB, más un adaptador) |
+| Idiomas soportados | Inglés (según la model card); el modelo base Qwen2.5 es multilingüe, pero no se declaran evaluaciones en otros idiomas |
+| Licencia | MIT |
+| Formato de pesos | safetensors (FP16 completo + adaptador) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con atención causal estándar, y aplica una cirugía que reemplaza el módulo de atención por `goldfinch_ahn`, una implementación registrada en el `ATTENTION_REGISTRY` del framework NeuralOps. El patrón `hybrid_3_1` indica que la sustitución no es uniforme en todas las capas, sino que sigue una distribución híbrida (presumiblemente tres capas con atención original por cada capa con atención `goldfinch_ahn`, aunque la model card no detalla la asignación exacta). No se especifica si `goldfinch_ahn` es una atención lineal, una atención con sesgo posicional alternativo o una variante de atención dispersa.
+El modelo parte de la topología de Qwen2.5-0.5B: 24 capas, dimensión oculta D=896, 14 cabezas de consulta, 2 cabezas KV (GQA) y dimensión por cabeza d_h=64, con RoPE configurado a theta = 1.000.000. Sobre esa base se aplica una cirugía determinista con ratio `hybrid_3_1`: las capas en los índices [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] se sustituyen por `goldfinch_ahn` envuelto en `QwenAttentionAdapter`, mientras que las capas [3, 7, 11, 15, 19, 23] conservan la atención GQA softmax preentrenada como anclas de enrutamiento contextual global. Cada capa transplantada hereda los tensores `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con expansión de cabezas KV de 2 a 14 y una única `o_proj` sin duplicación.
 
-El entrenamiento documentado es exclusivamente una fase de destilación de conocimiento sobre WikiText-2, ejecutada en 180,2 segundos en una RTX 3090. No se indica el número de tokens vistos, la temperatura de destilación, la función de pérdida exacta ni si hubo fases adicionales de ajuste fino, RLHF o DPO. La perplejidad causal pasa de 121.396,70 a 316,25, una reducción de 121.080,45 puntos, lo que confirma que la destilación recupera parte de la fluidez perdida tras la cirugía, pero el valor final sigue siendo muy alto para un modelo de 0,5B en WikiText-2 (un Qwen2.5-0.5B sin modificar suele situarse en el entorno de decenas de puntos de perplejidad en ese corpus, aunque no se aporta la cifra de referencia en la información disponible).
+El operador `GoldFinchAHNBlock` combina atención de ventana deslizante (radio efectivo = `window_size // 2`) con memoria recurrente con compuertas por cabeza (`gate_init_bias` controla el equilibrio atención/memoria). Dispone de despacho de kernel en tres niveles: CUDA, Triton y PyTorch.
+
+El entrenamiento consiste en una destilación de representaciones ocultas en dos etapas, ejecutada con la arquitectura de caché offline de representaciones de NeuralOps sobre una única RTX 3090 de 24 GB (0 MB de VRAM del profesor en GPU). La etapa 1 (30 % del presupuesto, 119 pasos) congela el backbone y entrena solo módulos de atención y layer norms, con AdamW (lr=2.0e-4, weight_decay=0.01, clipping 1.0), pesos maestros FP32 y AMP FP16 con GradScaler, minimizando MSE por capa más 0,25·(1 − coseno) entre estados ocultos del alumno y del profesor. La etapa 2 (70 % del presupuesto, 270 pasos) realiza destilación end-to-end de representaciones; la información disponible se interrumpe en ese punto y no detalla más el protocolo.
 
 ## Capacidades
 
-- Generación de texto autoregresiva: hereda la capacidad del Qwen2.5-0.5B base, aunque degradada por la cirugía y la destilación parcial.
-- Razonamiento básico y respuesta a instrucciones: no hay evidencia publicada de que el ajuste por instrucciones del base se haya preservado tras la sustitución de atención y la destilación en WikiText-2.
-- Código y matemáticas: no disponible; no se han publicado evaluaciones específicas.
-- Tool calling / function calling: no disponible; no se documenta soporte.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Multilingüismo: no disponible; la model card no declara idiomas.
-- Modo thinking, visión o audio: no disponible; el modelo es solo texto.
-- Capacidad especial: servir como banco de pruebas para evaluar el impacto de módulos de atención alternativos (`goldfinch_ahn`) en modelos pequeños.
+- Generación de texto causal autorregresiva, con soporte declarado para el pipeline `text-generation`.
+- Soporte de atención con GQA, incluida la expansión de cabezas KV en las capas transplantadas.
+- Soporte de RoPE gestionado por el adaptador.
+- Despacho de kernel en tres niveles (CUDA, Triton, PyTorch) a través de la librería NeuralOps.
+- Capacidad multilingüe: no declarada; la model card solo lista inglés.
+- Tool calling, function calling, agentes, razonamiento multi-paso, visión o audio: no disponibles en la información proporcionada.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- Investigación en cirugía de atención: el modelo permite reproducir el experimento de sustituir la atención de Qwen2.5-0.5B por `goldfinch_ahn` con patrón `hybrid_3_1` y medir la perplejidad antes y después de la destilación, usando la RTX 3090 como referencia de coste (180,2 s).
-- Estudio de recuperación por destilación: sirve para analizar cuánto conocimiento se recupera al destilar sobre WikiText-2 tras una intervención arquitectónica agresiva, comparando la curva de perplejidad 121.396,70 → 316,25.
-- Benchmark de módulos de atención alternativos: puede integrarse en pipelines de evaluación de variantes de atención dentro del `ATTENTION_REGISTRY` de NeuralOps, midiendo perplejidad causal como métrica primaria.
-- Docencia y divulgación técnica: ejemplo didáctico de cómo una modificación en el mecanismo de atención degrada la fluidez y cómo la destilación la recupera parcialmente, con cifras concretas y reproducibles.
-- Pruebas de infraestructura de inferencia: al ser un checkpoint de 1,4 GB en safetensors, es útil para validar pipelines de carga, tokenización y generación con modelos pequeños antes de escalar a variantes mayores.
-- Análisis de robustez de tokenizadores y posiciones: permite estudiar cómo interactúa el tokenizador de Qwen2.5 con una atención modificada en secuencias de WikiText-2, aunque sin garantías de calidad lingüística.
-- No recomendado para: atención al cliente, generación de código en producción, agentes autónomos o cualquier tarea que exija coherencia lingüística alta, dado el nivel de perplejidad reportado.
+- Investigación sobre atención subcuadrática: el checkpoint permite reproducir el experimento de sustituir atención softmax por un operador híbrido SSM en un transformer compacto y medir la degradación y la recuperación vía destilación, con la topología `hybrid_3_1` documentada capa a capa.
+- Estudio de destilación de representaciones ocultas: sirve como caso de referencia para comparar estrategias de alineación de subespacios (etapa 1 con backbone congelado) frente a destilación end-to-end (etapa 2), usando la perplejidad en WikiText-2 como métrica.
+- Benchmark de operadores en la librería NeuralOps: al estar registrado como `goldfinch_ahn` en `ATTENTION_REGISTRY`, se puede usar para validar el despacho de kernels CUDA/Triton/PyTorch y la serialización determinista de pesos.
+- Reproducción en hardware de consumo: el entrenamiento y la evaluación caben en una RTX 3090 de 24 GB, lo que permite replicar el pipeline en un equipo de sobremesa sin clúster.
+- Análisis de compensación eficiencia/calidad en modelos de 0,5B: útil para estudiar si la complejidad subcuadrática compensa en modelos pequeños, donde las cabezas de inducción son escasas, midiendo el coste en perplejidad (15,38 → 316,25).
+- Docencia y divulgación técnica: ejemplo didáctico de cirugía de atención, herencia de pesos entre proyecciones y telemetría de destilación, con artefactos de 1,4 GB manejables en portátiles con GPU modesta.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor | Contexto |
-|---|---|---|
-| Perplejidad causal pre-destilación | 121.396,70 | Tras la cirugía, antes de destilar |
-| Perplejidad causal post-destilación | 316,25 | Tras 180,2 s de destilación en RTX 3090 |
-| Delta de perplejidad | -121.080,45 | Mejora absoluta |
-| Tiempo de destilación | 180,2 s | NVIDIA RTX 3090 |
+Resultados declarados por el autor (no verificados de forma independiente) sobre el split de validación de WikiText-2 (`wikitext-2-raw-v1`), longitud de secuencia 512, batch_size 8, grad_accum 4, en una NVIDIA GeForce RTX 3090 de 24 GB:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+| Metrica | Valor |
+|---|---:|
+| Perplejidad del profesor (`Qwen/Qwen2.5-0.5B`) | 15,38 |
+| Perplejidad del alumno zero-shot tras la cirugía (pre-KD) | 121.396,70 |
+| Perplejidad del alumno tras destilación (post-KD) | 316,25 |
+| Delta absoluto de perplejidad | −121.080,45 |
+| Reducción relativa de perplejidad | 99,74 % |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en bf16/fp16, aproximadamente 1,1-1,2 GB solo para pesos (564 M parámetros × 2 bytes), más overhead de activaciones y KV cache; en la práctica, 2-3 GB son suficientes para secuencias cortas.
-- Cuantización: no se publican versiones GGUF ni cuantizadas; sería necesario generarlas a partir de los safetensors.
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (RTX 3050, RTX 3060, RTX 4060, RTX 4090) puede ejecutar el modelo; el autor usó una RTX 3090 para la destilación.
-- Cabe en GPU consumer: sí, en la práctica totalidad de GPUs consumer modernas, e incluso en CPU con llama.cpp si se convierte a GGUF.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` (requiere el código o registro de `goldfinch_ahn` para reconstruir la arquitectura); vLLM, TGI o llama.cpp solo si se exporta a un formato compatible, lo cual no está documentado.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: el repositorio ocupa 1,4 GB y los pesos se publican en FP16 completo (1076,41 MB), por lo que la inferencia en FP16 requiere del orden de 1,2-2 GB de VRAM, más la caché KV. No se dispone de datos oficiales de VRAM pico.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM debería acomodar el modelo en FP16; el autor validó el pipeline en una RTX 3090 de 24 GB. Para entrenamiento o destilación, se recomienda una GPU de 24 GB o superior (A100, H100, RTX 4090/3090).
+- Cabe en GPU de consumo: sí, por tamaño; se espera que quepa en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores. No confirmado por el autor más allá de la RTX 3090.
+- Opciones de despliegue: la librería declarada es `neuralops` (requerida para cargar el operador `goldfinch_ahn`). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI; dado que el operador es personalizado, la carga con esos motores no está garantizada.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Estado |
-|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-goldfinch-ahn-wikitext2 | 564.314.020 | no disponible | no disponible | Experimental, perplejidad 316,25 en WikiText-2 |
-| Qwen2.5-0.5B (base original) | 0,49 B aprox. | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 (según documentación pública de Qwen) | Producción, perplejidad muy inferior en WikiText-2 |
-| Qwen2.5-1.5B | 1,5 B aprox. | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 (según documentación pública de Qwen) | Producción, mayor calidad que el 0.5B |
-| SmolLM2-360M | 0,36 B | 8.192 tokens (según documentación pública) | Apache 2.0 (según documentación pública) | Producción, alternativa pequeña para edge |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 (val) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `tahamajs/qwen-2.5-0.5b-goldfinch-ahn-wikitext2` | 564.314.020 | No disponible (evaluado a 512) | 316,25 (post-KD) | MIT | Hugging Face |
+| `Qwen/Qwen2.5-0.5B` (profesor) | 494M | 32.768 tokens (según Qwen2.5) | 15,38 (medido por el autor) | Apache 2.0 | Hugging Face |
+| Otros checkpoints del Attention Surgery Zoo de NeuralOps | No disponible | No disponible | No disponible | MIT (repo NeuralOps) | Hugging Face |
 
-La comparación directa con el Qwen2.5-0.5B original no es posible con cifras de perplejidad porque la información proporcionada no incluye la referencia del base en WikiText-2; los datos de contexto y licencia de los modelos comparados provienen de documentación pública general y no de la model card de este repositorio.
+La comparación relevante es con el propio modelo base: la cirugía y la destilación multiplican por más de 20 la perplejidad (15,38 → 316,25), lo que sitúa al checkpoint muy por debajo del profesor en calidad de modelado de lenguaje. No se dispone de datos de otros modelos comparables de la misma categoría (operadores subcuadráticos en 0,5B) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Perplejidad causal de 316,25 en WikiText-2 tras la destilación: muy superior a la de un modelo intacto, lo que indica degradación severa de la fluidez y coherencia.
-- La cirugía `hybrid_3_1` con `goldfinch_ahn` no está documentada en detalle; se desconoce qué capas usan atención original y cuáles la modificada.
-- No se ha publicado licencia: no se puede garantizar el uso comercial ni la redistribución.
-- No se declaran idiomas soportados; el comportamiento multilingüe es incierto.
-- No hay evaluación de sesgos, alucinación ni seguridad.
-- No se documenta si el ajuste por instrucciones del Qwen2.5-0.5B base se preserva tras la sustitución y la destilación en WikiText-2.
-- El repositorio tiene 0 descargas y 0 likes: no hay evidencia de uso en producción ni validación por terceros.
-- Requiere código personalizado (`ATTENTION_REGISTRY` de NeuralOps) para cargar la arquitectura; no es un checkpoint estándar de `transformers`.
-- Fecha de creación y actualización en 2026: verificar la vigencia y el estado del framework NeuralOps antes de depender de él.
-- No apto para tareas de producción que exijan calidad lingüística, tool calling o razonamiento fiable.
+- Calidad muy degradada: la perplejidad post-destilación (316,25) es más de 20 veces la del modelo base (15,38); no es apto para generación de texto de calidad ni para producción.
+- El checkpoint es un artefacto de investigación sobre topologías de atención, no un modelo conversacional afinado; aunque los tags incluyen `conversational`, no hay evaluación que lo respalde.
+- Idiomas: solo se declara inglés; no hay evidencia de comportamiento en castellano u otros idiomas.
+- Longitud de contexto: no se documenta la ventana efectiva del modelo final; la evaluación se limita a secuencias de 512 tokens, y el operador requiere configuración explícita de `window_size`.
+- Dependencia de la librería `neuralops`: la carga requiere el operador `goldfinch_ahn` y el adaptador de Qwen; no es un transformer estándar cargable con `transformers` sin código adicional.
+- Riesgo de alucinación: elevado por la degradación del modelado; no se han publicado evaluaciones de fidelidad factual.
+- Sesgos: no documentados; al derivar de Qwen2.5-0.5B y entrenarse solo en WikiText-2, hereda los sesgos del profesor y los del corpus, sin mitigación adicional.
+- Licencia MIT: permite uso comercial, pero el modelo base Qwen2.5-0.5B se distribuye bajo Apache 2.0; conviene revisar las condiciones combinadas antes de un uso comercial.
+- Resultados no verificados: las métricas son declaradas por el autor (`verified: false` en el model-index) y no han sido replicadas de forma independiente.
+- Fecha de creación inusual (2026-11-10) en los metadatos: conviene tratarla con cautela.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-goldfinch-ahn-wikitext2
-- Modelo base referenciado en la model card: `/dev/shm/Qwen2.5-0.5B` (ruta local, no enlace público)
+- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-goldfinch-ahn-wikitext2
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
+- Licencia NeuralOps (MIT): https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Implementación del operador `goldfinch_ahn`: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/ssm/goldfinch_ahn.py
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
-- Qwen2.5-0.5B (modelo base público): https://huggingface.co/Qwen/Qwen2.5-0.5B
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

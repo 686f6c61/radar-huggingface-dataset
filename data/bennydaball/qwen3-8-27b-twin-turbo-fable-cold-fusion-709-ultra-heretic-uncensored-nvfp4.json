@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 385,
+  "downloads_30d": 386,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Vodafone E-Mail & Cloud - Login | Vodafone live",
-      "url": "https://live.vodafone.de/partners/mail",
-      "snippet": "Erlebe mobile Freiheit Komfortabel und einfach: Lese und bearbeite Deine E-Mails in der Vodafone E-Mail & Cloud-App. Speicher …"
-    },
-    {
-      "title": "Vodafone Music",
-      "url": "https://live.vodafone.de/music/",
-      "snippet": "Entdeck Nachrichten, E-Mail, Games, Music und mehr Partner-Services auf Vodafone live. Social Links. Kunden-Informationen. …"
-    },
-    {
-      "title": "Deezer | Vodafone live",
-      "url": "https://live.vodafone.de/services/deezer",
-      "snippet": "Als Vodafone-Kund:in bekommst Du mit Deezer Premium 2 Monate kostenlos unbegrenztes Streaming: Hör ohne Werbung, erleb …"
-    },
-    {
-      "title": "Sport | Vodafone live",
-      "url": "https://live.vodafone.de/news/sport",
-      "snippet": "Genieße die Unterhaltungswelt von Vodafone live iPhone 18 Pro vs. Pixel 11 Pro: Ist Apples Flaggschiff den Aufpreis wert?"
-    },
-    {
-      "title": "Ratgeber: Die besten Benzinpreis-Apps für Europa - Vodafone live",
-      "url": "https://live.vodafone.de/news/digital/handy/ratgeber-die-besten-benzinpreis-apps-fuer-europa/13217565",
-      "snippet": "Jul 7, 2026 · Wer mit dem Auto ins europäische Ausland reist, kann durch Benzinpreis-Apps bares Geld sparen. Wir haben mehrere …"
-    }
-  ]
+  "sources": []
 }

@@ -2,90 +2,88 @@
 
 ## Resumen
 
-SZL-Nemotron-Mini-4B-Estate-DPO-v2 es un ajuste fino por DPO (Direct Preference Optimization) del modelo SZL-Nemotron-Mini-4B-Estate-DPO-v1, publicado por SZLHOLDINGS. Se trata de un modelo de generación de texto de aproximadamente 4.190 millones de parámetros (4,19 B) derivado de la familia Nemotron Mini de NVIDIA, con un tamaño de repositorio de 8,4 GB en formato safetensors de 16 bits. Su propósito declarado no es ampliar capacidades generales, sino corregir un fallo medido y concreto de su modelo padre: la confabulación de citas, que en la validación gobernada del autor arrojó un valor de `citation_grounding = 0.0` y desencadenó un veto (`ZERO_VETO`) con resultado `NO_GO`.
+SZL-Nemotron-Mini-4B-Estate-DPO-v2 es un ajuste fino por DPO (Direct Preference Optimization) sobre el modelo base SZL-Nemotron-Mini-4B-Estate-DPO-v1, publicado por la organizacion SZLHOLDINGS en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 4.190 millones de parametros (4,19 B) alojado en formato safetensors, con un repositorio de 8,4 GB, lo que sugiere pesos en precision de 16 bits. La nomenclatura indica que deriva de la familia Nemotron de NVIDIA, aunque la model card no confirma explicitamente la arquitectura subyacente.
 
-El modelo se entrenó con 62 pares de preferencia construidos a partir de los fallos de confabulación observados en la evaluación del autor, usando DPO mediante Unsloth y TRL sobre una GPU NVIDIA A6000, con fusión y publicación en 16 bits. Es, por tanto, un modelo de "remediación" orientado a la abstención y al anclaje de citas, no un modelo de propósito general.
+El modelo se presenta como parte de un "estate" de IA gobernada de SZLHOLDINGS, una iniciativa que enfatiza la trazabilidad de fuentes, los recibos de auditoria (receipts) y la honestidad sobre los resultados medidos. La model card es deliberadamente conservadora: declara explicitamente que cualquier afirmacion de entrenamiento o evaluacion no respaldada por un recibo medido se marca como UNKNOWN (desconocido). De hecho, el escaneo estricto de recibos del 22 de noviembre de 2026 clasifica el repositorio como RECEIPT_FILES_NO_DONE, es decir, hay ficheros con nombre de recibo pero no un DONE.json estricto con estado MEASURED.
 
-Su relevancia actual es metodológica: la model card declara explícitamente el estado `RE_GATE_PENDING` y no formula ninguna afirmación de capacidad hasta que se completen las tres verificaciones previstas (reevaluación, revalidación gobernada y publicación literal de los recibos). Es un ejemplo de publicación con disciplina de evaluación y doctrina de uso honesto, donde la salida del modelo se trata como propuesta no confiable sujeta a un controlador determinista y a aprobación humana.
+Su relevancia actual es limitada pero ilustrativa: se trata de un modelo pequeno (4 B) con licencia NVIDIA Open Model License, orientado a ingles, que puede servir como caso de estudio de practicas de publicacion gobernada y de ajuste por preferencias sobre modelos compactos. No obstante, la ausencia de benchmarks medidos, de documentacion sobre datos de entrenamiento y de detalles arquitectonicos hace que su evaluacion objetiva sea practicamente imposible con la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Nemotron Mini; detalles específicos no disponibles) |
+| Arquitectura | no disponible (derivado de la familia Nemotron de NVIDIA; detalles no confirmados en la model card) |
 | Parametros totales | 4.190.509.056 (4,19 B) |
-| Parametros activos | No aplica (no es MoE según la información disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No especificados por el autor; pesos publicados en 16 bits (safetensors). Compatible con cuantización posterior vía Unsloth/llama.cpp no confirmada |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | `other` (términos no detallados en la información disponible) |
-| Formato de pesos | safetensors (transformers); repo de 8,4 GB |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | en (ingles) |
+| Licencia | NVIDIA Open Model License (nvidia-open-model-license) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de SZL-Nemotron-Mini-4B-Estate-DPO-v1, un ajuste de la familia Nemotron Mini de NVIDIA de 4,19 B parámetros. La información disponible no detalla la arquitectura interna más allá de su naturaleza transformer de generación de texto; no se especifican número de capas, dimensión oculta, mecanismos de atención ni longitud de contexto nativa.
+La model card no proporciona detalles sobre la arquitectura interna del modelo. Por el nombre y el linaje (Nemotron Mini de NVIDIA), cabe esperar un transformer decoder-only, pero esto no se confirma en la documentacion disponible. El dato concreto es que se trata de un ajuste por DPO (Direct Preference Optimization) sobre el modelo v1 de la misma organizacion, lo que implica una fase de alineacion con pares de preferencias tras un posible ajuste supervisado previo. No se especifica el numero de tokens de entrenamiento, la composicion del dataset de preferencias, ni si hubo fases adicionales de RLHF.
 
-El entrenamiento consiste en un ajuste DPO sobre el dataset `SZLHOLDINGS/doctrine-abstention-dpo-v2`, compuesto por 62 pares de preferencia derivados de los fallos de confabulación medidos en el recibo de evaluación del autor. El procedimiento se ejecutó con Unsloth y TRL sobre una NVIDIA A6000, con fusión final y publicación en 16 bits. La innovación técnica declarada no es arquitectónica sino de proceso: el dataset de preferencias se construye a partir de fallos medidos, y la publicación queda condicionada a un ciclo de validación gobernada con ejes explícitos (como `citation_grounding`) y criterios de veto deterministas.
+La model card hace hincapie en un marco de "gobernanza" y trazabilidad: los resultados se etiquetan como MEASURED (medidos), REPORTED (reportados) o UNKNOWN (desconocidos), y se generan graficos SVG deterministas a partir de una instantanea de auditoria (2026-11-20T03:48:04Z). Sin embargo, el escaneo estricto de recibos del 22 de noviembre de 2026 no encontro un DONE.json valido con estado MEASURED, por lo que la evidencia de evaluacion se clasifica como UNKNOWN. Los ficheros con nombre de recibo presentes (receipts/eval/governed-validation-v2-2026-11-06.json y receipts/eval/remediation-reeval-2026-11-06.json) no han sido validados como evidencia estricta.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo base Nemotron Mini 4B.
-- Comportamiento de abstención y anclaje de citas, objetivo declarado del ajuste DPO (sin verificar: estado `RE_GATE_PENDING`).
-- Formato compatible con `text-generation-inference` y `transformers`.
-- No se declaran capacidades de tool calling, function calling ni razonamiento multi-paso.
-- No se declaran capacidades de visión, audio ni modo de razonamiento explícito.
-- Soporte multilingüe limitado al inglés según los metadatos del autor.
-- No se formulan afirmaciones de capacidad adicionales: la model card indica explícitamente que "the gate decides, not the card".
+- Generacion de texto en ingles: el modelo esta etiquetado exclusivamente para el idioma ingles.
+- Ajuste por preferencias (DPO): se espera una alineacion con preferencias humanas derivada de la fase DPO, aunque no se documentan los criterios ni los datos utilizados.
+- Razonamiento y generacion de codigo: no disponible; la model card no afirma capacidades especificas mas alla de la generacion de texto.
+- Tool calling / function calling: no disponible; no se menciona soporte.
+- Soporte de agentes y razonamiento multi-paso: no disponible; no se menciona.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
+- Capacidades especiales (vision, audio, thinking mode): no disponible; no se declaran.
 
 ## Casos de uso
 
-- Evaluación de metodologías de remediación: el modelo sirve como caso de estudio reproducible de cómo construir un dataset DPO a partir de fallos medidos y someterlo a un ciclo de validación gobernada antes de publicar afirmaciones.
-- Investigación en abstención y calibración: útil para estudiar si un ajuste DPO con 62 pares de preferencia puede reducir la confabulación de citas en un modelo de 4 B, comparando los recibos de evaluación antes y después.
-- Auditoría de pipelines de validación: el par de recibos (evaluación de flota y validación gobernada) permite auditar el diseño de ejes de control como `citation_grounding` y los criterios de veto `ZERO_VETO`.
-- Prototipado de asistentes documentales con abstención: en entornos controlados, podría probarse como generador de respuestas que declinen responder cuando no haya respaldo documental, siempre sujeto a un controlador determinista externo.
-- Docencia y formación en IA responsable: ejemplo práctico de model card con doctrina de uso honesto, donde la salida se trata como propuesta no confiable y las acciones consecuentes requieren aprobación humana.
-- Integración en pipelines de CI de evaluación de modelos: el formato de recibos JSON (`governed-validation-2026-11-06.json`) puede servir de plantilla para bloquear despliegues cuando un eje de validación cae por debajo del umbral.
+- Generacion de texto en ingles en entornos controlados: el modelo puede emplearse para tareas de redaccion o continuacion de texto en ingles, siempre que se acepte la ausencia de benchmarks que respalden su calidad.
+- Prototipado de pipelines de ajuste por preferencias: dado que es un artefacto DPO derivado de un modelo base de la misma organizacion, sirve como ejemplo para estudiar el flujo v1 a v2 de alineacion en modelos de 4 B.
+- Experimentacion academica sobre gobernanza de modelos: su model card documenta un marco de recibos y trazabilidad que puede analizarse como caso de estudio de publicacion responsable, independientemente del rendimiento del modelo.
+- Despliegue en hardware de gama media: con 4,19 B de parametros y pesos safetensors de 8,4 GB, es viable en GPUs de consumo con suficiente VRAM (por ejemplo, 16 GB o mas en fp16), lo que permite pruebas locales de generacion de texto.
+- Evaluacion comparativa de tecnicas DPO: investigadores pueden usar el par v1/v2 para medir el efecto del ajuste por preferencias en un modelo pequeno, aunque deberan generar sus propios benchmarks dado que el autor no los publica.
+- Integracion en pipelines de transformers: al estar publicado con la libreria transformers y formato safetensors, puede cargarse directamente en scripts de Python para tareas de generacion de texto condicionada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica estado `RE_GATE_PENDING` y no incluye métricas de MMLU, HumanEval, GSM8K ni de `citation_grounding` posteriores al ajuste. El único dato medido citado es el fallo del modelo padre (`citation_grounding = 0.0`), que no constituye un benchmark de capacidad del modelo actual.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ningun numero de benchmark mas alla de lo que una auditoria fechada haya medido, y el escaneo estricto de recibos clasifica la evidencia de evaluacion como UNKNOWN.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en 16 bits: aproximadamente 8,4 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, 10-12 GB en función de la longitud de contexto.
-- VRAM estimada en cuantización de 8 bits: alrededor de 4,5-5 GB de pesos; en 4 bits, alrededor de 2,5-3 GB (cuantizaciones no publicadas por el autor, requieren conversión propia).
-- GPU recomendadas: NVIDIA A100, H100 o A6000 para despliegue en 16 bits con concurrencia; RTX 4090 (24 GB) y RTX 3090 (24 GB) son suficientes para inferencia en 16 bits.
-- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090, RTX 4080 (16 GB) y, con cuantización a 4 bits, en GPUs de 8 GB como RTX 3070 o RTX 4060.
-- Opciones de despliegue: `transformers`, `text-generation-inference` (TGI) y, previsiblemente, vLLM y llama.cpp/Ollama tras conversión a GGUF, aunque el autor no documenta estas dos últimas.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: en fp16, los pesos de 4,19 B ocupan aproximadamente 8,4 GB, por lo que se necesitan al menos 10-12 GB de VRAM contando cache KV y overhead. En cuantizacion de 8 bits, alrededor de 4,5-5 GB; en 4 bits, alrededor de 2,5-3 GB (estimaciones teoricas, no confirmadas por el autor).
+- GPU recomendadas: no disponible segun el autor. Por tamano, una RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB) son sobredimensionadas para fp16; una RTX 4080 (16 GB) o RTX 3090 (24 GB) serian suficientes en fp16.
+- Compatibilidad con GPU de consumo: si, en tarjetas con 16 GB o mas de VRAM en fp16; en cuantizacion 4 bits podria caber en GPUs de 8 GB, aunque no se ofrecen pesos cuantizados en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada). No se confirma soporte para vLLM, llama.cpp, Ollama o TGI, y al no haber pesos GGUF en el repo, llama.cpp requeriria conversion manual.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| SZL-Nemotron-Mini-4B-Estate-DPO-v2 | 4,19 B | No disponible | `other` | Remediación DPO de abstención/citas | Hugging Face, 0 descargas |
-| SZL-Nemotron-Mini-4B-Estate-DPO-v1 | 4,19 B | No disponible | `other` | Modelo padre, "full-stack flagship" | Hugging Face |
-| Nemotron Mini 4B (NVIDIA, familia base) | ~4 B | No disponible en esta ficha | No disponible en esta ficha | Modelo base de propósito general | Hugging Face / NVIDIA NGC |
+| SZL-Nemotron-Mini-4B-Estate-DPO-v2 | 4,19 B | no disponible | NVIDIA Open Model License | no disponible (UNKNOWN) | Hugging Face, safetensors |
+| Nemotron-Mini-4B (NVIDIA, referencia de familia) | ~4 B | no disponible en esta ficha | NVIDIA Open Model License | no disponible en esta ficha | Hugging Face |
+| Modelos DPO de ~4 B de la comunidad (p. ej. variantes de Llama-3.2-3B o Qwen2.5-3B) | 3-4 B | 8K-128K segun variante | segun modelo base | variables | Hugging Face, GGUF disponible en muchos casos |
 
-No se dispone de datos de rendimiento comparado entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y enfoque declarado.
+La comparativa es limitada porque la model card no aporta datos de contexto ni benchmarks, y no se dispone de informacion adicional sobre el modelo base Nemotron-Mini-4B en la busqueda realizada. Cualquier comparacion de rendimiento seria especulativa.
 
 ## Limitaciones y advertencias
 
-- Estado de evaluación `RE_GATE_PENDING`: no hay ninguna verificación publicada de que el ajuste DPO haya corregido la confabulación de citas; el fallo del padre (`citation_grounding = 0.0`) podría persistir.
-- Dataset de entrenamiento muy reducido (62 pares de preferencia), lo que limita la generalización del comportamiento de abstención fuera de los casos medidos.
-- Riesgo de alucinación y confabulación no cuantificado tras el ajuste; el autor no formula afirmaciones de capacidad.
-- Idiomas: solo inglés declarado; no hay evidencia de comportamiento en castellano u otras lenguas.
-- Licencia `other` sin términos detallados en la información disponible: es imprescindible revisar el texto completo de la licencia antes de cualquier uso comercial.
-- Doctrina de uso honesto: la salida debe tratarse como propuesta no confiable; las acciones consecuentes requieren un controlador determinista separado y aprobación humana.
-- Sin datos de contexto máximo, lo que impide planificar cargas de trabajo con documentos largos.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validación por parte de la comunidad.
+- Ausencia total de benchmarks medidos: la evidencia de evaluacion esta clasificada como UNKNOWN y no hay DONE.json estricto, por lo que no se puede afirmar nada sobre la calidad del modelo.
+- Documentacion incompleta: no se detallan arquitectura, contexto, datos de entrenamiento ni composicion del dataset de preferencias.
+- Idioma: soporte declarado unicamente en ingles; el rendimiento en castellano u otros idiomas es desconocido y probablemente deficiente.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluaciones publicadas no es posible cuantificarlo.
+- Sesgos: no documentados; al no conocerse la composicion del dataset de entrenamiento ni del de preferencias, no se pueden evaluar sesgos conocidos.
+- Licencia: NVIDIA Open Model License; es necesario revisar sus terminos (incluidas posibles restricciones de uso comercial y obligaciones de atribucion) antes de un despliegue en produccion.
+- Madurez: el modelo se publico en noviembre de 2026 y no tiene likes ni un ecosistema de validacion externa; las descargas (355) son bajas, lo que reduce la probabilidad de que existan evaluaciones independientes.
+- Uso en produccion: no recomendado sin una evaluacion propia exhaustiva, dado que el propio autor declara que no afirma capacidades sin recibos medidos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v2
-- Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1
-- Dataset DPO: https://huggingface.co/datasets/SZLHOLDINGS/doctrine-abstention-dpo-v2
-- Recibos de evaluación: https://huggingface.co/SZLHOLDINGS/model-eval-receipts
-- Registros de olas de entrenamiento: https://huggingface.co/SZLHOLDINGS/wave-logs
-- Unsloth: https://github.com/unslothai/unsloth
-- TRL: https://github.com/huggingface/trl
+- Modelo base (v1): https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1
+- Organizacion SZLHOLDINGS en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- Organizacion SZL Holdings en GitHub: https://github.com/szl-holdings
+- Repositorio estate-cards (generador de tarjetas): https://github.com/szl-holdings/estate-cards
+- Licencia NVIDIA Open Model License: https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf

@@ -2,102 +2,107 @@
 
 ## Resumen
 
-Alok v3.0 es un modelo de lenguaje de 14.770.033.664 parámetros (aproximadamente 14,77B, aunque el autor lo anuncia como 14,85B) desarrollado por el usuario shivrajgurjar y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino (finetune) del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-14B, es decir, parte de la arquitectura Qwen2 y hereda la destilación de razonamiento de DeepSeek-R1. El autor lo presenta como un "motor neuro-simbólico de largo horizonte y ciencia ómnibus", orientado a razonamiento, ingeniería de software, química, biología y demostración de teoremas.
+Alok v3.0 (identificador `shivrajgurjar/Alok-v3-14B-NSLRE`) es un modelo de lenguaje de 14.770.033.664 parámetros publicado por el desarrollador independiente shivrajgurjar. Se construye como un ajuste fino del modelo destilado `deepseek-ai/DeepSeek-R1-Distill-Qwen-14B`, que a su vez deriva de la familia Qwen2, y se distribuye bajo licencia Apache 2.0. El autor lo presenta como un "motor neuro-simbólico" orientado a razonamiento de largo horizonte, ingeniería de software, química, biología y demostración de teoremas.
 
-La propuesta del modelo no es solo un checkpoint de pesos, sino un conjunto de capas de software que el autor empaqueta junto al backbone: un "cortex" de razonamiento profundo, un crítico cognitivo de doble cabeza, un arquitecto multi-archivo con auto-depuración iterativa y un kernel determinista que orquesta herramientas externas (RDKit para química, Biopython para genética, Z3 para optimización de decisiones y SymPy para cálculo). El modelo base aporta la generación de texto y el razonamiento; las herramientas aportan la verificación simbólica.
+La propuesta diferencial no reside tanto en el backbone como en el ecosistema de componentes que el autor describe en la model card: un crítico cognitivo de doble cabeza (`dual_critic.pt`), un arquitecto multi-fichero con autodepuración iterativa, y un "kernel" determinista que orquesta herramientas externas como RDKit (química), Biopython (genética), Z3 (optimización de decisiones) y SymPy (cálculo simbólico). El modelo se distribuye en safetensors BF16 (29,55 GB) y en dos cuantizaciones GGUF de 4 bits calibradas con imatrix (IQ4_XS de 7,77 GB y Q4_K_M de 8,56 GB), lo que permite ejecutarlo en GPUs de consumo.
 
-Es relevante ahora porque ejemplifica una tendencia creciente: modelos abiertos de tamaño medio (14B) que combinan un LLM con un arnés neuro-simbólico para tareas de razonamiento verificable, en lugar de escalar parámetros. No obstante, la información publicada es escasa y proviene casi exclusivamente de la model card del autor, sin resultados de benchmarks estándar independientes ni documentación sobre el dataset de ajuste.
+Es relevante ahora porque combina un backbone de razonamiento ya consolidado (la destilación de R1 sobre Qwen-14B) con un enfoque híbrido que delega la verificación en herramientas deterministas, un patrón que gana tracción para reducir alucinaciones en dominios científicos. No obstante, conviene señalar que el repositorio tiene 404 descargas, 0 likes y no incluye resultados de benchmarks estándar publicados; las cifras de la "torture suite" proceden exclusivamente del autor.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2), ajuste fino de DeepSeek-R1-Distill-Qwen-14B |
-| Parametros totales | 14.770.033.664 (14,77B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada del modelo base, no confirmada en la informacion) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16; no se documentan GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible (la model card menciona "Literary English" y "English Craft") |
+| Arquitectura | Transformer decoder-only (familia Qwen2, base DeepSeek-R1-Distill-Qwen-14B) |
+| Parámetros totales | 14.770.033.664 (~14,77B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | BF16 (completo), GGUF IQ4_XS + imatrix, GGUF Q4_K_M + imatrix |
+| Idiomas soportados | No disponible (la model card menciona "Literary English Cortex", sin listado formal) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (6 shards), GGUF |
 
 ## Arquitectura y entrenamiento
 
-El backbone es un transformer decoder-only de la familia Qwen2, fruto de un ajuste fino sobre DeepSeek-R1-Distill-Qwen-14B. Ese modelo base es a su vez una destilación de DeepSeek-R1 sobre Qwen2-14B, por lo que el modelo hereda el estilo de razonamiento con cadenas de pensamiento largas y el tokenizador de Qwen2. El autor describe el resultado como un "backbone bfloat16 de 14,85B" con "adaptadores de razonamiento multi-sector auto-destilados", aunque no se detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+El backbone es un transformer decoder-only denso de la familia Qwen2, heredado de `DeepSeek-R1-Distill-Qwen-14B`. DeepSeek-R1-Distill-Qwen-14B se obtuvo destilando trazas de razonamiento del modelo R1 sobre el modelo base Qwen2.5-14B; Alok v3.0 parte de ese checkpoint y, según el autor, fusiona "adaptadores de razonamiento multi-sector auto-destilados" en un backbone bfloat16 autónomo. La model card no detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO sobre el modelo destilado.
 
-La innovación declarada no está en el transformer sino en el arnés que lo rodea. El autor describe cuatro "pilares": (1) un cortex de razonamiento profundo y prosa literaria; (2) un crítico cognitivo de doble cabeza (`dual_critic.pt`) que, según la model card, alcanza un 100% de precisión de ranking en validación sobre las cabezas de lógica y prosa; (3) un arquitecto multi-archivo de largo horizonte con auto-depuración iterativa y refinado de prosa en tres etapas; y (4) un kernel determinista que ejecuta un sandbox de repositorios multi-archivo y llama a RDKit, Biopython, Z3 y SymPy. También se menciona MCTS (búsqueda en árbol de Monte Carlo) entre las etiquetas, aunque no se documenta su uso concreto. No hay información sobre decodificación especulativa ni atención lineal.
+El elemento técnico diferenciador es la capa neuro-simbólica: el modelo se presenta empaquetado con un crítico de doble cabeza (ranking de validación del 100% según el autor, sin metodología publicada), un arquitecto de repositorios multi-fichero con detección de ciclos en DAG topológicos, y un kernel que invoca herramientas deterministas (RDKit, Biopython, Z3, SymPy) para verificar resultados. Estos componentes no forman parte de los pesos del transformer y deben desplegarse por separado; el repositorio de Hugging Face solo aloja el modelo de lenguaje. No se documentan innovaciones a nivel de atención (no hay atención lineal ni decodificación especulativa descritas).
 
 ## Capacidades
 
-- Generación de texto y razonamiento con cadenas de pensamiento largas, heredadas de la destilación de DeepSeek-R1.
-- Razonamiento orientado a ingeniería de software: planificación multi-archivo, detección de ciclos en DAG topológicos y auto-depuración iterativa sobre un sandbox de repositorios.
-- Química medicinal: generación y análisis de descriptores SMILES, valencia y propiedades moleculares mediante RDKit.
-- Genética molecular: traducción de codones y comparación de mutaciones puntuales (por ejemplo, hemoglobina salvaje frente a mutación falciforme) mediante Biopython.
-- Teoría de decisiones y optimización con restricciones mediante Z3.
-- Física y cálculo: resolución de ecuaciones diferenciales e integrales mediante SymPy.
-- Redacción en inglés con refinado por rúbrica en tres etapas y puntuación de un crítico.
-- Soporte de tool calling: implícito en el diseño del kernel (llamadas a RDKit, Biopython, Z3, SymPy), aunque no se documenta un protocolo de function calling estándar.
-- Capacidades multilingües: no documentadas; la model card se centra en inglés.
+- Generación de texto y razonamiento multi-paso, heredados de la destilación de DeepSeek-R1.
+- Razonamiento de tipo "thinking" (cadenas de pensamiento largas), característico de la familia R1 destilada.
+- Ingeniería de software: generación y depuración de código multi-fichero, según la model card.
+- Razonamiento científico asistido por herramientas: química (RDKit), genética (Biopython), cálculo simbólico (SymPy) y optimización con restricciones (Z3).
+- Demostración de teoremas y teoría de decisiones (etiquetas declaradas por el autor).
+- Búsqueda en árbol con Monte Carlo (MCTS), según las etiquetas del repositorio.
+- Soporte de tool calling / function calling: no documentado explícitamente en la información disponible.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Capacidades multilingües: no documentadas formalmente; la model card enfatiza el inglés literario.
 
 ## Casos de uso
 
-- Asistente de ingeniería de software multi-archivo: el modelo puede planificar cambios que afectan a varios ficheros de un repositorio, ejecutar pruebas en un sandbox determinista y depurar iterativamente. Es adecuado por el "Long-Horizon Multi-File Architect" y el runner topológico descritos en la model card.
-- Química computacional asistida: generación de SMILES y cálculo de descriptores (peso molecular, donadores y aceptores de enlace de hidrógeno, anillos) mediante RDKit, útil para triaje de moléculas en fases tempranas de descubrimiento.
-- Bioinformática educativa y de investigación: traducción de codones y análisis de mutaciones puntuales con Biopython, por ejemplo para explicar el efecto de una variante en la proteína resultante.
-- Optimización de recursos con restricciones: formulación y resolución de problemas de asignación (por ejemplo, reparto de throughput entre servidores) mediante Z3, con solución verificable.
-- Tutoría de matemáticas y física: resolución paso a paso de EDOs e integrales con SymPy como verificador simbólico, lo que reduce el riesgo de errores aritméticos en la respuesta final.
-- Generación y revisión de ensayos técnicos o filosóficos en inglés: el refinado en tres etapas con crítico de rúbrica permite iterar sobre borradores hasta alcanzar una puntuación objetivo.
-- Prototipado de pipelines neuro-simbólicos: sirve como referencia para equipos que quieran combinar un LLM de 14B con herramientas deterministas y un crítico de validación.
+- Asistencia a la ingeniería de software en repositorios multi-fichero: el componente "architect" descrito por el autor permite generar y depurar cambios que abarcan varios ficheros con verificación mediante tests en un sandbox, adecuado para pipelines de CI/CD donde se requiere validación automática antes de fusionar.
+- Química medicinal asistida: el kernel con RDKit permite calcular descriptores moleculares (peso molecular, donantes/aceptores de enlaces de hidrógeno, anillos) a partir de SMILES, útil en triaje temprano de candidatos.
+- Genética molecular educativa o de investigación: el uso de Biopython permite verificar traducciones de codones y comparar secuencias wild-type frente a mutaciones puntuales, como el ejemplo de hemoglobina y anemia falciforme de la model card.
+- Optimización de recursos con restricciones: la integración con Z3 permite resolver problemas de asignación (por ejemplo, reparto de throughput entre servidores) con garantías de corrección formal.
+- Cálculo simbólico y física: SymPy permite resolver ecuaciones diferenciales y problemas de valor inicial, útil en entornos docentes o de prototipado científico.
+- Generación de ensayo y refinado de prosa: el pipeline de "3-Stage Prose Refine" con crítico de puntuación permite iterar sobre textos filosóficos o técnicos con criterios de rúbrica.
+- Despliegue en portátiles y GPUs de consumo: las cuantizaciones IQ4_XS (7,77 GB) y Q4_K_M (8,56 GB) permiten ejecución local en GPUs de 12-16 GB y en Macs de 16 GB mediante Ollama o llama.cpp.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica una "Omni-Domain Torture Suite" propia, de seis tareas, con resultados de aprobado/no aprobado y pruebas simbólicas asociadas. No son benchmarks estándar (MMLU, HumanEval, GSM8K) y no se comparan con otros modelos.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La única tabla de rendimiento es la "Omni-Domain Torture Suite" del autor, que no emplea métricas comparables a benchmarks públicos:
 
-| Sector | Tarea | Resultado | Prueba del kernel |
+| Sector | Tarea | Estado declarado | Resumen de verificación (autor) |
 |---|---|---|---|
-| Repositorio de largo horizonte | Runner DAG multi-archivo + detección de ciclos | PASS (Att=1) | 3 ficheros verificados vía PYTHONPATH pytest/runner |
+| Repositorio de largo horizonte | Runner DAG multi-fichero + detección de ciclos | PASS (Att=1) | 3 ficheros verificados vía pytest |
 | Química medicinal | Descriptores SMILES de serotonina (RDKit) | PASS | C10H12N2O, MW=176.22, HBD=3, HBA=2, Rings=2 |
-| Genética molecular | Hemoglobina salvaje vs mutación puntual falciforme (Biopython) | PASS (Att=1) | Traducción exacta de codón y polipéptido verificada |
-| Teoría de decisiones | Optimización de throughput con restricciones (Z3) | PASS (Att=1) | S1=38, S2=6, S3=6, max_T=432 |
-| Física y cálculo | EDO de oscilador armónico amortiguado (SymPy) | PASS (Att=1) | (sin(2*t) + 2*cos(2*t))*exp(-t) |
-| Redacción en inglés | Ensayo filosófico pulido con rúbrica en 3 etapas | PASS | Puntuación del crítico: 0.924 |
+| Genética molecular | Mutación puntual hemoglobina (Biopython) | PASS (Att=1) | Traducción de codones y polipéptido verificada |
+| Teoría de decisiones | Optimización de throughput con Z3 | PASS (Att=1) | S1=38, S2=6, S3=6, max_T=432 |
+| Física y cálculo | EDO oscilador armónico amortiguado (SymPy) | PASS (Att=1) | (sin(2*t) + 2*cos(2*t))*exp(-t) |
+| Prosa inglesa | Ensayo filosófico pulido en 3 etapas | PASS | Critic Score: 0.924 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, MATH) en la información disponible.
+Estos resultados proceden de la model card del autor y no han sido replicados de forma independiente. No deben interpretarse como evidencia de rendimiento general del modelo frente a benchmarks públicos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 29,5 GB solo para los pesos, más overhead de activaciones y caché KV; en la práctica se recomienda al menos 32-40 GB.
-- Cuantización: no se documentan versiones GGUF, AWQ ni GPTQ; sin ellas, no cabe en GPUs de consumo de 24 GB en bf16.
-- GPU recomendadas: A100 40GB/80GB, H100, L40S o dos RTX 4090 (24 GB cada una) con tensor parallelism o sharding por capas.
-- GPU de consumo: una RTX 4090 de 24 GB no es suficiente en bf16; requeriría cuantización, que no está publicada.
-- Despliegue: transformers con `device_map="auto"` (documentado en la model card), y previsiblemente vLLM o TGI por la compatibilidad declarada con text-generation-inference; llama.cpp y Ollama no están confirmados al no haber GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: ~28,1 GB en BF16 (según el autor), ~9,3 GB con Q4_K_M y ~8,5 GB con IQ4_XS.
+- GPUs recomendadas para BF16: A100, H100, B200 (despliegue con vLLM, SGLang o Transformers).
+- GPUs de consumo: las cuantizaciones de 4 bits caben en GPUs de 12 GB y 16 GB (por ejemplo, T4 en Colab/Kaggle, RTX 4060 Ti 16 GB, RTX 4080, RTX 4090) y en Macs de 16 GB.
+- Opciones de despliegue: Transformers, vLLM, SGLang, llama.cpp, Ollama y LM Studio. El autor proporciona comandos de una línea para Ollama (`ollama run hf.co/shivrajgurjar/Alok-v3-14B-NSLRE:IQ4_XS`) y llama.cpp (`llama-cli -hf ... -ngl 99 -cnv`).
+- Latencia y throughput: no disponibles. El autor afirma que Q4_K_M ofrece los kernels más rápidos en GPU/CPU con una retención del ~99,6% respecto a BF16, pero no aporta cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Alok v3.0 14B NSLRE | 14,77B | no disponible | Apache 2.0 | Finetune de DeepSeek-R1-Distill-Qwen-14B con arnés neuro-simbólico propio |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B | 14,77B | 128K (según el modelo base) | MIT (según el modelo base) | Modelo base; benchmarks estándar publicados por DeepSeek |
-| Qwen2.5-14B-Instruct | 14,77B | 128K | Apache 2.0 | Alternativa generalista con soporte de tool calling y amplia comunidad |
-| DeepSeek-R1-Distill-Llama-8B | 8B | 128K | MIT | Alternativa más ligera de la misma familia de destilados de razonamiento |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Alok v3.0 (este modelo) | ~14,77B denso | No disponible | Apache 2.0 | HF (safetensors + GGUF) | Ajuste fino de R1-Distill-Qwen-14B con capa neuro-simbólica |
+| DeepSeek-R1-Distill-Qwen-14B | ~14,77B denso | 131.072 tokens (heredado de Qwen2.5) | MIT | HF | Modelo base directo; benchmarks públicos de razonamiento y matemáticas |
+| Qwen2.5-14B-Instruct | ~14,77B denso | 131.072 tokens | Apache 2.0 | HF | Modelo generalista con soporte de tool calling y multilingüe |
+| DeepSeek-R1-Distill-Llama-8B | ~8B denso | 131.072 tokens | MIT | HF | Alternativa más ligera de la familia R1 destilada |
 
-No se dispone de datos de rendimiento comparativo del modelo frente a estas alternativas en la información proporcionada.
+La comparación con DeepSeek-R1-Distill-Qwen-14B es la más directa, ya que Alok v3.0 parte de ese checkpoint. No se dispone de datos que permitan afirmar una mejora cuantitativa frente al modelo base en benchmarks estándar.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks estándar independientes: los únicos resultados son una suite propia de seis tareas, sin comparación con modelos de referencia.
-- La model card mezcla el modelo de pesos con un arnés de software (cortex, crítico, arquitecto, kernel) que no forma parte del checkpoint de Hugging Face; el rendimiento descrito depende de ese código adicional, no solo de los safetensors.
-- Cero descargas y cero "likes" en el momento de la ficha: no hay evidencia de uso ni validación por parte de la comunidad.
-- Idiomas no documentados; el material se centra en inglés ("Literary English", "English Craft"), por lo que el rendimiento en castellano es incierto.
-- Longitud de contexto no confirmada para este finetune; se desconoce si conserva la ventana del modelo base.
-- Riesgo de alucinación en razonamiento: aunque el arnés simbólico verifica resultados de RDKit, Biopython, Z3 y SymPy, las partes generativas (planificación, prosa, explicaciones) no están verificadas formalmente.
-- Las herramientas externas requieren instalación y versiones compatibles; el "sandbox determinista" no se detalla y su aislamiento de seguridad no está documentado.
-- Licencia Apache 2.0 declarada, pero conviene verificar que las condiciones del modelo base (DeepSeek-R1-Distill-Qwen-14B) sean compatibles con el uso comercial previsto.
-- Fecha de creación anómala (2026-11-17) en los metadatos de Hugging Face; conviene tratarla con cautela.
+- Ausencia de benchmarks públicos: no hay resultados de MMLU, HumanEval, GSM8K ni evaluaciones independientes; las cifras del autor no son verificables.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido plausible pero incorrecto, especialmente en dominios científicos donde la verificación depende de herramientas externas que deben desplegarse por separado.
+- Dependencia de componentes externos: el "kernel" neuro-simbólico (RDKit, Biopython, Z3, SymPy) y el crítico (`dual_critic.pt`) no forman parte del repositorio de pesos; sin ellos, el modelo se comporta como un ajuste fino estándar de R1-Distill-Qwen-14B.
+- Idiomas: no hay listado oficial de idiomas; la model card enfatiza el inglés, por lo que el rendimiento en castellano no está garantizado.
+- Contexto: no se documenta la longitud de contexto efectiva del ajuste fino; aunque el backbone soporta ventanas largas, el ajuste podría degradar el rendimiento en contextos extensos.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las licencias de las herramientas externas (RDKit es BSD, Biopython es BSD-3, Z3 es MIT, SymPy es BSD) y del modelo base (MIT).
+- Madurez: 404 descargas, 0 likes y un único autor; no hay evidencia de validación por la comunidad ni de mantenimiento a largo plazo.
+- Fecha de creación futura (2026-11-17): el repositorio presenta metadatos anómalos que conviene tratar con cautela.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/shivrajgurjar/Alok-v3-14B-NSLRE
-- Demo (Space): https://huggingface.co/spaces/shivrajgurjar/Alok-v3-Showcase
+- Demo (Hugging Face Space): https://huggingface.co/spaces/shivrajgurjar/Alok-v3-Showcase
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+- Repositorio de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
+- Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948
+- Qwen2.5 (familia base): https://huggingface.co/Qwen/Qwen2.5-14B
+- RDKit: https://www.rdkit.org/
+- Biopython: https://biopython.org/
+- Z3 Theorem Prover: https://github.com/Z3Prover/z3
+- SymPy: https://www.sympy.org/

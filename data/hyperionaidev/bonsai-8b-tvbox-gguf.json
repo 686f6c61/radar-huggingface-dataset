@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "prism-ml/Bonsai-8B-gguf · Hugging Face",
-      "url": "https://huggingface.co/prism-ml/Bonsai-8B-gguf",
-      "snippet": "Text Generation model with 8B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Bonsai 8b - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/bonsai-8b.html",
-      "snippet": "Download Bonsai 8b GGUF model. 4.72 GB, 90,145 downloads, 802 likes."
-    }
-  ]
+  "sources": []
 }

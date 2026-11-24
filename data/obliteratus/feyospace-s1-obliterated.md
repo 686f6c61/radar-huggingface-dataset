@@ -2,116 +2,127 @@
 
 ## Resumen
 
-Feyospace-s1 Obliterated es una variante "abliterated" del modelo feyospace/feyospace-v1.1-small, un modelo de 28.000 millones de parametros especializado en ciberseguridad que alcanza un 63,24 % de exito verificado en CyberGym. El desarrollo corre a cargo del usuario OBLITERATUS, que ha aplicado su propio toolkit homonimo (publicado bajo AGPL-3.0) para eliminar las direcciones de rechazo excesivamente amplias del modelo original, permitiendo que responda a consultas de seguridad que de otro modo declinaria.
+feyospace-s1-OBLITERATED es una variante "abliterada" del modelo feyospace/feyospace-v1.1-small, un transformer denso de 27.781 millones de parámetros construido sobre la arquitectura Qwen3.5. Lo desarrolla el usuario OBLITERATUS aplicando su propio conjunto de herramientas de abliteración (eliminación del vector de rechazo mediante descomposición en valores singulares) sobre los pesos del modelo base. El objetivo declarado es eliminar las negativas de seguridad específicas del dominio de ciberseguridad sin degradar el conocimiento general del modelo, de modo que pueda emplearse en investigación de vulnerabilidades, pentesting autorizado y competiciones CTF.
 
-El modelo conserva la arquitectura multimodal Qwen3_5ForConditionalGeneration (texto + vision) y un backbone de 64 capas con atencion hibrida DeltaNet/atencion completa. Los pesos suman 27.781.427.952 parametros (unos 27,8 B) en bfloat16, con un tamano de repositorio de 55,6 GB. Se distribuye mediante safetensors y licencia Apache-2.0.
+La relevancia de esta ficha es doble. Por un lado, documenta una técnica de modificación de pesos cada vez más habitual en el ecosistema open source (abliteration) y su impacto medible en benchmarks. Por otro, sirve como caso de estudio de los riesgos asociados a publicar variantes sin salvaguardas: la model card reconoce explícitamente que el modelo elimina las barreras de rechazo y traslada toda la responsabilidad al operador.
 
-Su relevancia estriba en el metodo de preservacion de capacidades: la tecnica ASPA (Ablation with Source-Preservation and Alpha-scaling) con alpha 0,895 reajusta los pesos ablacionados hacia el propio checkpoint original, de modo que la perdida de conocimiento especifico de ciberseguridad se mantiene por debajo de 1,21 puntos porcentuales en la evaluacion SecBench, mientras el incremento de perplejidad se limita a un factor de 1,19.
+El modelo se distribuye en formato safetensors con licencia Apache 2.0, un repositorio de 109,4 GB (coherente con pesos en bf16 de un modelo de ~28B) y la etiqueta `image-text-to-text` en Hugging Face, aunque la model card solo documenta uso de generación de texto. No se especifican la longitud de contexto ni los idiomas soportados en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (hibrida DeltaNet / atencion completa), 64 capas, multimodal texto-imagen |
-| Parametros totales | 27.781.427.952 (unos 27,8 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer denso basado en Qwen3.5 (según model card) |
+| Parametros totales | 27.781.427.952 (~27,8B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, ajustado por el equipo Feyospace sobre 164.269 trayectorias de ciberseguridad verificadas por ejecucion. La arquitectura es un transformer hibrido de 64 capas que combina capas DeltaNet (atencion lineal) con capas de atencion completa, e incorpora un codificador de vision que en esta variante pasa intacto desde el modelo fuente (333 tensores sin modificar). La clase de implementacion es Qwen3_5ForConditionalGeneration y el pipeline declarado es image-text-to-text.
+El modelo hereda la arquitectura del base feyospace/feyospace-v1.1-small, descrita en la model card como Qwen3.5, con 28B parámetros en precisión bf16. No se detalla en la información disponible la composición del dataset de preentrenamiento, el número de tokens, ni si el modelo base pasó por fases de RLHF o DPO. Tampoco se especifican innovaciones de atención (atención lineal, decodificación especulativa, etc.).
 
-Sobre ese checkpoint se aplico abliteracion avanzada con OBLITERATUS: se extrajeron 4 direcciones de rechazo mediante SVD a partir de las capas 49-63 (rango fuerte; el rango global usado fue 12-50 de 64, es decir, 0,19-0,78) y se aplico proyeccion de sesgo con preservacion de norma. Despues, ASPA con alpha 0,895 reajusto los pesos ablacionados hacia el propio Feyospace-s1 (auto-tethering) en lugar de hacia el Qwen3.8-27B de partida, con el fin de no diluir el ajuste fino de ciberseguridad. El proceso se ejecuto en una NVIDIA A100-SXM4-80GB en bfloat16. No se documentan en la informacion disponible fases de RLHF, DPO ni datos de preentrenamiento adicionales.
+La modificación respecto al base es una abliteración dirigida al dominio de ciberseguridad, ejecutada con las herramientas de OBLITERATUS en cuatro pasos declarados: (1) recogida de residuales de activación a partir de pares de prompts de rechazo (dañinos frente a inofensivos) que cubren desarrollo de exploits, análisis de vulnerabilidades, ingeniería inversa y herramientas ofensivas; (2) cálculo de la dirección de rechazo mediante SVD sobre la diferencia de activaciones medias; (3) proyección de esa dirección fuera de los pesos del flujo residual; y (4) validación de que las capacidades generales se conservan mediante una batería completa de benchmarks. El autor afirma que la intervención es estadísticamente transparente, con desviaciones dentro de 1σ del error estándar en todos los benchmarks reportados.
 
 ## Capacidades
 
-- Generacion de texto conversacional y respuesta a preguntas de dominio general y de ciberseguridad.
-- Razonamiento tecnico y resolucion de tareas de seguridad (analisis, clasificacion conceptual, explicacion de ataques y defensas).
-- Comprension de imagen y texto de forma conjunta (pipeline image-text-to-text).
-- Generacion de codigo, segun la metrica de capacidad del toolkit (puntuacion 5/6: code, instruction, JSON, tool call, visual).
-- Tool calling / function calling declarado como capacidad retenida.
-- Salida estructurada en JSON.
-- Multilingue: no disponible (no se documentan los idiomas soportados).
-- Modo "thinking": no disponible (no se menciona en la informacion proporcionada).
+- Generación de texto conversacional con plantilla de chat (`apply_chat_template`), orientada a instrucciones.
+- Razonamiento general y conocimiento enciclopédico: MMLU 5-shot de 82,4% según el autor.
+- Conocimiento especializado en ciberseguridad: 63,8% en WMDP-Cyber, 85,3% en CyberMetric-10K, 61,8% en SecQA v1 y 55,0% en SecQA v2.
+- Reproducción de exploits en entornos reales: 98,9% de éxito en 90 tareas de CyberGym (44/44 en Arvo y 45/46 en OSS-Fuzz), según la model card.
+- Ejecución de tareas de seguridad ofensiva sin rechazos: análisis de vulnerabilidades, desarrollo de exploits, ingeniería inversa y uso de tooling ofensivo.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (thinking mode). La etiqueta `image-text-to-text` de Hugging Face no está respaldada por la model card.
 
 ## Casos de uso
 
-- Analisis de vulnerabilidades en revision de codigo: el modelo puede examinar fragmentos de codigo y senalar patrones de riesgo, apoyandose en su ajuste fino sobre trayectorias de seguridad y en la retencion de la capacidad de generacion de codigo.
-- Soporte a equipos SOC en triaje de alertas: redactar explicaciones de indicadores, clasificar eventos por dominio (red, identidad,端点) y proponer pasos de contencion, aprovechando el conocimiento preservado en SecBench.
-- Generacion de reglas y firmas de deteccion: producir expresiones de deteccion a partir de descripciones en lenguaje natural, con salida en JSON para integrarla en pipelines automatizados.
-- Documentacion de cumplimiento y estandares: apoyar la redaccion de textos sobre normas y regulaciones de seguridad, dominio evaluado con 43,24 % en SecBench.
-- Formacion y simulacros internos (red team/blue team): generar escenarios y preguntas de practica sobre tecnicas de ataque y defensa, dado que la abliteracion reduce los rechazos ante este tipo de contenido.
-- Asistente multimodal para analisis de capturas: interpretar capturas de pantalla de paneles, consolas o configuraciones junto con texto, gracias al pipeline image-text-to-text.
-- Automatizacion con agentes: encadenar llamadas a herramientas (tool calling) para tareas de reconocimiento y consulta documental en un flujo multi-paso.
+- Pentesting autorizado: el modelo puede redactar y explicar cadenas de explotación sobre objetivos con contrato firmado, sin las negativas que un modelo alineado aplicaría a prompts de seguridad ofensiva. Adecuado por su conocimiento medido en WMDP-Cyber y CyberMetric.
+- Investigación de vulnerabilidades: análisis de código fuente o binarios para identificar patrones de memory safety (buffer overflows, use-after-free) y proponer reproducciones, apoyándose en el 100% declarado en tareas Arvo de CyberGym.
+- Competiciones CTF: generación rápida de hipótesis de explotación, scripts de fuzzing y análisis de binarios en categorías de pwn y reversing, donde la latencia de iteración importa más que la cautela del modelo.
+- Formación en ciberseguridad: construcción de laboratorios y material docente que ilustre técnicas ofensivas reales, usando el modelo como generador de ejemplos controlados en un entorno aislado.
+- Fuzzing asistido: generación de harnesses y corpus de entrada para OSS-Fuzz, dado el 97,8% de éxito declarado en esa categoría de CyberGym.
+- Red teaming de modelos alineados: uso del modelo como referencia "sin salvaguardas" para comparar respuestas y evaluar la robustez de filtros de seguridad en otros sistemas.
+- Automatización de informes técnicos de seguridad: redacción de hallazgos, PoCs y recomendaciones de remediación a partir de notas de un escaneo, con la ventaja de no bloquear contenido técnico legítimo.
 
 ## Benchmarks y rendimiento
 
-SecBench (661 preguntas de opcion multiple en ingles, A100-80GB, bfloat16, decodificacion greedy, atencion SDPA), comparando original frente a ablacionado:
+Resultados declarados por el autor (no verificados de forma independiente), ejecutados en A100-80GB en bf16 con lm-evaluation-harness:
 
-| Dominio | Original | Abliterated | Delta |
+| Benchmark | Preguntas | Base | Abliterado | Delta |
+|---|---:|---:|---:|---:|
+| MMLU (5-shot) | 14.042 | 82,4% ±0,31 | 82,4% ±0,31 | 0,0% |
+| WMDP-Cyber (0-shot) | 1.987 | 63,9% ±1,08 | 63,8% ±1,08 | -0,1% |
+| CyberMetric-10K (0-shot) | 9.190 | 86,6% ±0,36 | 85,3% ±0,37 | -1,3% |
+| SecQA v1 (0-shot) | 127 | 60,0% ±4,69 | 61,8% ±4,65 | +1,8% |
+| SecQA v2 (0-shot) | 115 | 53,0% ±5,02 | 55,0% ±5,00 | +2,0% |
+
+Comparativa de WMDP-Cyber ofrecida por el autor (referencias del paper de WMDP, Li et al., ICML 2024):
+
+| Modelo | WMDP-Cyber |
+|---|---:|
+| GPT-4 | 72,6% |
+| feyospace-s1-obliterated (28B) | 63,8% |
+| Mixtral-8x7B | 52,0% |
+| Yi-34B | 49,7% |
+| Zephyr-7B | 44,0% |
+
+Desglose por asignatura de MMLU (solo materias relevantes):
+
+| Asignatura | Base | Abliterado |
+|---|---:|---:|
+| Computer Security | 88,0% | 88,0% |
+| High School Computer Science | 92,0% | 92,0% |
+| Electrical Engineering | 84,8% | 84,8% |
+| College Computer Science | 80,0% | 80,0% |
+| Machine Learning | 80,4% | 78,6% |
+
+CyberGym (90 tareas de reproducción de exploits reales):
+
+| Categoría | Éxitos | Total | Tasa |
 |---|---:|---:|---:|
-| Application Security (n=27) | 48,15 % | 40,74 % | -7,41 % |
-| Cloud Security (n=103) | 56,31 % | 54,37 % | -1,94 % |
-| Data Security (n=84) | 48,81 % | 48,81 % | 0,00 % |
-| Endpoint & Host Security (n=10) | 50,00 % | 40,00 % | -10,00 % |
-| Identity & Access Control (n=136) | 52,94 % | 52,21 % | -0,73 % |
-| Network & Infrastructure (n=72) | 41,67 % | 40,28 % | -1,39 % |
-| Security Management (n=56) | 44,64 % | 44,64 % | 0,00 % |
-| Software/Hardware Fundamentals (n=136) | 53,68 % | 52,94 % | -0,74 % |
-| Standards & Regulations (n=37) | 43,24 % | 43,24 % | 0,00 % |
-| Overall (n=661) | 50,38 % | 49,17 % | -1,21 % |
-
-Metricas de calidad del proceso de abliteracion:
-
-| Metrica | Valor |
-|---|---|
-| Perplejidad de referencia | 3,050 |
-| Perplejidad tras abliteracion | 3,637 |
-| Incremento de perplejidad | 1,19x |
-| Divergencia KL | 0,163 nats (presupuesto: 0,5) |
-| Retencion de coherencia | 1,0 |
-| Puntuacion de capacidad | 5/6 (code, instruction, JSON, tool call, visual) |
-| Fraccion de salida degenerada | 0,0 % |
-
-CyberGym (modelo original): 63,24 % de exito verificado. No se publican en la informacion disponible resultados comparativos con otros modelos en MMLU, HumanEval o GSM8K.
+| Arvo (memory safety) | 44 | 44 | 100% |
+| OSS-Fuzz (fuzzing) | 45 | 46 | 97,8% |
+| Total | 89 | 90 | 98,9% |
 
 ## Requisitos de hardware
 
-- VRAM en bfloat16: aproximadamente 55,6 GB solo para los pesos, mas overhead de activaciones y cache KV; en la practica requiere GPUs de 80 GB (A100-SXM4-80GB es el hardware documentado para la abliteracion).
-- Cuantizacion (estimacion, no documentada por el autor): 4 bits en torno a 15-17 GB; 8 bits en torno a 28-30 GB. No se publican variantes GGUF/AWQ/GPTQ.
-- GPU recomendadas: A100-80GB y H100-80GB para bfloat16 sin cuantizar. En consumer, una RTX 4090 (24 GB) no permite bfloat16 completo; con cuantizacion a 4 bits podria ser viable, pero es una estimacion no confirmada.
-- Despliegue: transformers con AutoModelForImageTextToText y attn_implementation="sdpa". El autor indica que se requieren flash-linear-attention>=0.5.2 y causal-conv1d>=1.7.0 por la arquitectura hibrida DeltaNet/atencion completa. Compatibilidad con vLLM, TGI o llama.cpp no confirmada en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada en bf16: aproximadamente 56 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica requiere 80 GB para contextos largos.
+- VRAM estimada en cuantización de 8 bits: ~28 GB; en 4 bits: ~15-16 GB. Estas cifras son estimaciones por tamaño de parámetros, no valores publicados por el autor.
+- GPU recomendadas: A100-80GB (el autor usó esta para los benchmarks), H100-80GB, o múltiples GPU de 24 GB en paralelo con `device_map="auto"`.
+- GPU de consumo: no cabe en una RTX 4090 (24 GB) en bf16; sí podría caber en 4 bits, aunque no se documenta soporte de GGUF ni de llama.cpp. La inferencia en transformers con cuantización bitsandbytes sería la vía más directa.
+- Opciones de despliegue: transformers con `trust_remote_code=True` es la vía documentada. vLLM, TGI, llama.cpp u Ollama no están confirmados en la información disponible.
+- Latencia y throughput: no disponibles. El autor no publica métricas de velocidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| feyospace-s1-OBLITERATED | 27,78 B | no disponible | SecBench 49,17 %, CyberGym 63,24 % (base) | Apache-2.0 | safetensors |
-| feyospace/feyospace-v1.1-small | 28 B (no confirmado) | no disponible | SecBench 50,38 %, CyberGym 63,24 % | Apache-2.0 | safetensors |
-| Qwen3.8-27B (modelo base) | 27 B (segun card) | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | WMDP-Cyber | Licencia | Notas |
+|---|---:|---|---:|---|---|
+| feyospace-s1-obliterated | ~27,8B | no disponible | 63,8% | Apache 2.0 | Variante abliterada, sin salvaguardas |
+| feyospace/feyospace-v1.1-small (base) | ~28B | no disponible | 63,9% | no disponible | Modelo alineado de referencia |
+| Mixtral-8x7B | 46,7B totales (12,9B activos) | 32K (típico) | 52,0% | Apache 2.0 | MoE; referencia del paper WMDP |
+| Yi-34B | 34B | 4K/200K según variante | 49,7% | Apache 2.0 (con condiciones) | Denso; referencia del paper WMDP |
+| Zephyr-7B | 7B | 32K | 44,0% | MIT | Denso; referencia del paper WMDP |
 
-No se dispone de datos de otros modelos ablacionados de ciberseguridad comparables en la informacion proporcionada.
+La comparativa de WMDP-Cyber procede de la model card y de las referencias del paper de WMDP. No se dispone de comparaciones con otros modelos abliterados de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteracion elimina direcciones de rechazo amplias: el modelo puede generar contenido de seguridad ofensiva que otros modelos declinarian. Esto implica riesgo de uso indebido y exige controles de acceso en produccion.
-- Riesgo de alucinacion: no se documentan tasas de alucinacion; la perplejidad aumenta de 3,050 a 3,637 (1,19x), lo que sugiere una ligera degradacion en la distribucion del lenguaje.
-- Perdida de capacidad medida: -1,21 puntos en SecBench global, con caidas mayores en dominios de muestra pequena (Endpoint & Host Security -10,00 % con n=10; Application Security -7,41 % con n=27). Estas cifras tienen alta varianza por tamano muestral.
-- Idiomas: no disponible; la evaluacion se realizo solo con preguntas en ingles (661 MCQ en ingles), por lo que el comportamiento multilingue no esta verificado.
-- Longitud de contexto: no disponible, lo que impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
-- Licencia Apache-2.0 en el modelo, pero el toolkit OBLITERATUS se distribuye bajo AGPL-3.0; conviene revisar la compatibilidad si se integra el codigo de abliteracion, no solo los pesos.
-- Desajustes en la propia model card: se mencionan simultaneamente "Qwen3.5" (etiqueta y arquitectura) y "Qwen3.8-27B" (modelo base), asi como dos rutas de Hugging Face distintas ("OBLITERATUS/feyospace-s1-OBLITERATED" en el repositorio y "Sherpa/feyospace-s1-obliterated" en el ejemplo de codigo). Hay que verificar la ruta correcta antes de desplegar.
-- Repositorio con 0 descargas y creado el 13 de octubre de 2026: madurez y soporte comunitario no contrastados.
-- Requisitos de dependencias especificos (flash-linear-attention, causal-conv1d) pueden limitar la portabilidad a frameworks de inferencia que no soporten la arquitectura hibrida.
+- Eliminación deliberada de salvaguardas: el modelo no rechaza peticiones de contenido ofensivo. Cualquier despliegue debe asumir control de acceso, registro de uso y un entorno de aislamiento.
+- Riesgo legal y de cumplimiento: el uso en la UE puede entrar en conflicto con obligaciones de la AI Act y con normativa de ciberseguridad; el uso ofensivo sin autorización escrita es ilegal en la mayoría de jurisdicciones.
+- Benchmarks no verificados: todos los resultados proceden del autor y están marcados como `verified: false`. No hay replicación independiente.
+- Posible sobreajuste a los benchmarks de seguridad: el modelo se abliteró con pares de prompts de ciberseguridad y se evalúa con benchmarks del mismo dominio, lo que puede inflar la aparente preservación de capacidades.
+- Alucinación: no se documentan evaluaciones de factualidad ni de calibración; el riesgo es el habitual en modelos de ~28B sin datos específicos.
+- Idiomas y contexto: no se especifican la ventana de contexto ni la cobertura lingüística, lo que impide garantizar calidad multilingüe o en documentos largos.
+- Caveat de producción: la etiqueta `image-text-to-text` de Hugging Face no está respaldada por la model card; no asumir capacidades multimodales.
+- Repositorio de 109,4 GB: requiere almacenamiento y ancho de banda considerables para descarga y despliegue.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/OBLITERATUS/feyospace-s1-OBLITERATED
+- Hugging Face: https://huggingface.co/OBLITERATUS/feyospace-s1-OBLITERATED
 - Modelo base: https://huggingface.co/feyospace/feyospace-v1.1-small
-- Toolkit OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
-- Dataset SecBench: https://huggingface.co/datasets/secbench-hf/SecBench
+- Herramientas OBLITERATUS: https://github.com/OBLITERATUS
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- Paper WMDP (Li et al., ICML 2024): referencia citada en la model card, sin enlace directo en la información disponible
+- CyberGym benchmark: referencia citada en la model card, sin enlace directo en la información disponible

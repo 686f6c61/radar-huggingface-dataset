@@ -29,7 +29,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9815065065,
+  "storage_bytes": 9814117647,
   "storage_human": "9.8 GB",
   "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",

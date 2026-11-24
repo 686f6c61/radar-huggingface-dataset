@@ -2,106 +2,102 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-W4A16-HGPTQ-g64 es una cuantización de precisión mixta W4A16 del modelo multimodal Qwen/Qwen3.6-35B-A3B, publicada por el usuario nchapman bajo licencia Apache 2.0. El modelo base es un transformer de mezcla de expertos (MoE) de 35.951.822.704 parámetros totales con capacidad de entrada imagen-texto (pipeline image-text-to-text) y arquitectura híbrida que combina atención estándar (self_attn) con capas de atención lineal (linear_attn), además de un módulo nativo de predicción multi-token (MTP).
+Qwen3.6-35B-A3B-W4A16-HGPTQ-g64 es una cuantización de 4 bits del modelo multimodal Qwen/Qwen3.6-35B-A3B, publicada por el usuario nchapman. Se trata de un checkpoint derivado, no de un modelo original: aplica una receta de cuantización GPTQ con rotación Hadamard (W4A16, group size 64) sobre todos los expertos enrutados del MoE, los expertos compartidos, las capas de atención y GDN, el codificador visual y el borrador especulativo MTP nativo. El resultado comprime el checkpoint BF16 de 66,97 GiB hasta 18,78 GiB, una reducción de 3,57 veces, lo que permite ejecutar el modelo completo en una única GPU de 24 GB.
 
-La aportación de esta ficha no es el modelo en sí, sino la receta de cuantización: GPTQ con Cholesky, group_size=64, actorder estático y rotación Hadamard en línea de la dimensión de entrada (estilo QuIP, head_dim=64) aplicada sobre 244 capas lineales no expertas (texto, MTP y visión), mientras que los 31.488 lineales de expertos enrutados del MoE se cuantizan sin rotación para ejecutarse directamente en el kernel fusionado MarlinMoE de vLLM V1. El resultado pesa 19,42 GiB en safetensors, un 6,1% menos que la variante GPTQ g128-h0 del mismo autor, con una perplejidad solo un 0,924% superior a la del modelo BF16.
+El modelo base es un transformer híbrido con arquitectura MoE (mezcla de expertos) de 36.468.770.672 parámetros totales, con 40 capas, 256 expertos enrutados por capa y atención con componentes lineales (GDN). Incorpora capacidades de visión (image-text-to-text) y un cabezal MTP (multi-token prediction) que actúa como decodificador especulativo. La licencia es Apache 2.0.
 
-Es relevante para desarrolladores que necesitan desplegar un MoE multimodal de ~36.000 millones de parámetros en hardware de una sola GPU de 24 GB o en nodos pequeños, manteniendo fidelidad cercana al original y compatibilidad con vLLM, a costa de requerir un parche de dos líneas para las capas de visión rotadas.
+La relevancia de esta ficha radica en que demuestra que es posible servir un modelo MoE multimodal de 35B con decodificación especulativa en hardware de consumo de gama alta, manteniendo una fidelidad medible frente al BF16 original (KL ponderada de 0,0847 en el conjunto de prueba principal y perplejidad incluso ligeramente inferior). Es una opción práctica para despliegues con presupuesto de VRAM limitado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE híbrido (self_attn + linear_attn) con módulo MTP nativo y torre de visión |
-| Parametros totales | 35.951.822.704 |
+| Arquitectura | Transformer híbrido con MoE (256 expertos enrutados por capa), atención con capas lineales (GDN), visión ViT y cabezal MTP nativo; tipo `qwen3_5_moe` |
+| Parametros totales | 36.468.770.672 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W4A16 GPTQ (Cholesky, group_size=64, actorder="static") con rotación Hadamard en línea (head_dim=64; head_dim=16 en `visual.blocks.*.mlp.linear_fc2`); pesos no expertos rotados offline; expertos MoE sin rotar |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | W4A16 con group size 64 (GPTQ + rotación Hadamard); `lm_head` y `mtp.fc` en W8_g64; capas concretas en BF16 |
+| Idiomas soportados | no disponible (el conjunto de evaluación incluye prompts multilingües, pero no se detalla la lista de idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compressed-tensors), 19,42 GiB; repo de 20,9 GB |
+| Formato de pesos | safetensors (con `compressed-tensors`), requiere `trust-remote-code` en vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B es un transformer de mezcla de expertos con dos tipos de capas de atención (self_attn y linear_attn), lo que sugiere una arquitectura híbrida que alterna atención cuadrática con mecanismos lineales para reducir coste en contextos largos. Incluye un módulo MTP (multi-token prediction) nativo con 772 lineales cuantizados y una torre de visión con 110 lineales rotados. Esta ficha no documenta el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO); esa información corresponde a la model card de Qwen y no está disponible en la información proporcionada.
+El modelo base Qwen3.6-35B-A3B emplea una arquitectura transformer con mezcla de expertos: 40 capas, cada una con 256 expertos enrutados y expertos compartidos, más proyecciones de atención estándar (`self_attn`) y lineales (`linear_attn`, asociadas a GDN). El checkpoint incorpora además un codificador visual de 27 bloques ViT con dos proyecciones de fusión espacial (merger) y un módulo MTP nativo que actúa como borrador especulativo. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original.
 
-El trabajo de cuantización sí está detallado: calibración de texto y MTP con 999 muestras de 4096 tokens de nvidia/Nemotron-Cascade-2-SFT-Data (fijadas en el dataset warp-3090-quant-lab-frozen-data), y calibración de visión con 64 imágenes de ChartQA y TextVQA disjuntas del conjunto de evaluación de 48 imágenes. Los 244 lineales no expertos se pre-rotan offline con la matriz de Walsh-Hadamard de Sylvester determinista (b=64 para `v`, b=16 para `v_vision_fc2`) antes de la cuantización GPTQ, de modo que no se almacenan tensores de transformación (0 overhead). Los 31.488 lineales de expertos enrutados usan GPTQ g64 sin rotar y sin permutar antes del empaquetado, para ejecutarse en el kernel MarlinExperts/MarlinMoE de vLLM V1. Permanecen en BF16: `linear_attn.in_proj_a/b`, `mlp.gate`, `mlp.shared_expert.*`, `mlp.shared_expert_gate`, `embed_tokens`/`lm_head`, `mtp.fc`, `visual.patch_embed.proj`, normas y sesgos. La plantilla de chat incluida es la de froggeric Qwen-Fixed-Chat-Templates v22.5.
+Esta versión cuantizada no reentrena el modelo, sino que aplica una receta de compresión sobre 31.857 capas lineales: rotación Walsh-Hadamard de 64×64 en la entrada, GPTQ con inicialización Cholesky y búsqueda de escala por MSE, descenso coordinado de Hessiana en dos pasadas (H-CD) y ajuste KL de extremo a extremo con maestro en FP32 para `RMSNorm` y GDN. Los 30.970 lineales de texto, 775 del MTP y 110 de visión se cuantizan a W4A16; `lm_head` y `mtp.fc` se mantienen en 8 bits. Permanecen en BF16 `embed_tokens`, `linear_attn.in_proj_a/b`, `mlp.gate`, `mlp.shared_expert_gate`, `visual.patch_embed.proj`, normas y sesgos. La innovación técnica destacable es la rotación Hadamard online en tiempo de ejecución sobre las activaciones de entrada de `gate_proj`/`up_proj` (K=2048) y sobre las activaciones intermedias post-SwiGLU antes de `down_proj` (K=512), lo que reduce el error de cuantización en los expertos MoE. Se incluye además un perfil estático de expertos calientes (`static_hot_cache_rankings.json`) con tasas de acierto del 42,62% para top-64 y del 69,14% para top-128.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat incluida y parámetros de muestreo por defecto definidos (temperature 0.6, top_p 0.95, top_k 20).
-- Razonamiento y generación de código: capacidades heredadas del modelo base Qwen3.6, no verificadas de forma independiente en esta ficha.
-- Entrada imagen-texto: la torre de visión está cuantizada y evaluada (98,67% de acierto top-1 en ChartQA en modo aislado; 100,0% end-to-end), lo que respalda tareas de comprensión de gráficos y documentos.
-- Predicción multi-token (MTP) nativa, útil para decodificación especulativa y aceleración de generación; fidelidad medida de 95,93% de acuerdo top-1 en modo aislado y 89,17% end-to-end.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generación de texto conversacional con parámetros de muestreo por defecto definidos en `generation_config.json` (temperature 0,6, top_p 0,95, top_k 20).
+- Razonamiento y matemáticas: el conjunto de evaluación de perplejidad incluye prompts de matemáticas, ciencia y coding.
+- Generación de código: evaluado dentro del conjunto de prompts de coding y uso de herramientas.
+- Uso de herramientas (tool calling / function calling): mencionado explícitamente en la composición del conjunto de evaluación de texto.
+- Capacidades multimodales de imagen a texto: VQA, gráficos, documentos y OCR, con un codificador ViT de 27 bloques cuantizado y una fidelidad medida del 99,34% de top-1 aislado y 97,68% de extremo a extremo.
+- Comprensión de interfaces y OCR matemático: evaluado en el conjunto ScreenSpot, con 98,52% de top-1 aislado y 97,04% de extremo a extremo.
+- Decodificación especulativa nativa mediante el módulo MTP, con una tasa de acuerdo top-1 del 95,80% aislado y 89,61% de extremo a extremo frente al BF16.
+- Capacidades multilingües: el conjunto de evaluación de texto incluye prompts multilingües, aunque no se detalla la cobertura por idioma.
+- No se dispone de información sobre modo de pensamiento explícito (thinking mode), audio u otras capacidades especiales del modelo base.
 
 ## Casos de uso
 
-- Despliegue de un MoE multimodal de ~36.000 millones de parámetros en una sola GPU de 24 GB: con 19,42 GiB de pesos W4A16, el modelo cabe junto con la caché KV en tarjetas como la RTX 4090 o la RTX 3090, algo inviable en BF16.
-- Comprensión de gráficos y documentos financieros: la torre de visión cuantizada conserva el 98,67% de acierto top-1 en ChartQA aislado y el 100% end-to-end, por lo que sirve para extraer tendencias y valores de capturas de paneles y tablas.
-- Generación acelerada con decodificación especulativa: el módulo MTP cuantizado mantiene un 89,17% de acuerdo top-1 end-to-end, lo que permite usarlo como cabecera de borrador para reducir latencia en servidores vLLM.
-- Servicio de chat conversacional en producción: la plantilla de chat v22.5 incluida y los parámetros de muestreo por defecto evitan configuraciones manuales y reducen el riesgo de respuestas degeneradas en despliegues multi-turno.
-- Evaluación de técnicas de cuantización: el repositorio documenta métricas de KL, perplejidad y acuerdo top-1 frente a BF16 y frente a la variante g128-h0, lo que lo convierte en un punto de referencia para investigar rotación Hadamard en MoE.
-- Prototipado en estaciones de trabajo con una sola GPU consumer: el tamaño de 19,42 GiB permite iterar sobre tareas de visión y texto sin clústeres multi-GPU, usando vLLM V1 con el parche indicado para visión.
-- Pipelines de inferencia de bajo coste en cloud con GPU de 24 GB (L4, A10G, RTX 4090): el ahorro del 6,1% en payload frente a g128-h0 se traduce en menor presión de memoria y más espacio para caché KV.
+- Despliegue en una única GPU de 24 GB: el checkpoint ocupa 18,78 GiB, dejando unos 5,2 GiB para caché KV y decodificación especulativa; es adecuado para servir el modelo completo en estaciones de trabajo con RTX 4090 o similares.
+- Asistente conversacional multi-turno: los parámetros de muestreo por defecto y el formato conversacional permiten integrarlo directamente en aplicaciones de chat con `transformers` o vLLM.
+- Procesamiento de documentos y OCR: el codificador visual cuantizado mantiene un 97,68% de acuerdo top-1 de extremo a extremo en VQA, gráficos, documentos y OCR, lo que lo hace viable para extracción de información de facturas, formularios e informes.
+- Automatización de interfaces (UI agents): la evaluación en ScreenSpot con 97,04% de top-1 de extremo a extremo respalda su uso en tareas de localización de elementos en pantallas y automatización de flujos.
+- Generación de código asistida en pipelines: el soporte de tool calling y la evaluación en prompts de coding permiten integrarlo en asistentes de desarrollo y revisión automatizada.
+- Razonamiento matemático y científico: los prompts de matemáticas y ciencia del conjunto de evaluación indican capacidad para resolver problemas técnicos, aunque la fidelidad debe validarse en el dominio concreto.
+- Aceleración mediante decodificación especulativa: el módulo MTP nativo con un 89,61% de acuerdo top-1 de extremo a extremo permite reducir la latencia en cargas de generación larga.
+- Investigación sobre cuantización MoE: la receta documentada (Hadamard + GPTQ + H-CD + ajuste KL) y los rankings de expertos calientes sirven como referencia reproducible para estudiar el impacto de la compresión en modelos MoE multimodales.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son métricas de fidelidad de la cuantización frente al modelo BF16 y frente a la variante GPTQ g128-h0, no benchmarks de tarea estándar (MMLU, HumanEval, GSM8K).
+Los datos disponibles son evaluaciones de fidelidad frente al modelo BF16 base, no benchmarks estándar de tareas (MMLU, HumanEval, GSM8K). Se presentan a continuación tal como los publica el autor.
 
-| Metrica | GPTQ g128-h0 | HGPTQ-g64 (este repo) | Cambio |
-|---|---:|---:|---:|
-| Payload safetensors | 20,678 GiB | 19,419 GiB | −1.289,5 MiB (−6,1%) |
-| probe-v4 weightedKL (↓) | 0,130688 | 0,088640 | −32,2% |
-| probe-v4 KL medio por token / p99.9 (↓) | 0,310602 / 19,6500 | 0,230016 / 17,2924 | −25,9% KL medio |
-| probe-v4 PPL Δ% vs BF16 (4,0230) (↓) | +3,600% | +0,924% (4,0601) | −2,68 pp |
-| probe-guard KL medio / weightedKL (76 filas) (↓) | 0,087586 / — | 0,051031 / 0,061633 | −41,7% KL medio |
-| MTP aislado KL / acuerdo top-1 (11.583 pos) | BF16 en repo antiguo | 0,011587 / 95,93% | — |
-| MTP end-to-end KL / acuerdo top-1 | 0,0956 / — | 0,122539 / 89,17% | — |
-| Visión ViT Rel-RMSE / coseno (48 imágenes) | BF16 en repo antiguo | 0,2157 / 0,9802 | — |
-| Visión respuesta aislada KL / top-1 (157 tokens) | — | 0,021799 / 97,45% | 98,67% ChartQA |
-| Visión respuesta end-to-end KL / top-1 | — | 0,052438 / 96,82% | 100,0% ChartQA |
+| Evaluacion | BF16 base | W4A16-HGPTQ | Notas |
+|---|---:|---:|---|
+| Tamano safetensors | 66,97 GiB | 18,78 GiB | Compresión 3,57× (−48,19 GiB) |
+| Perplejidad de texto (378 prompts, 840k tokens) ↓ | 4,0208 | 3,7522 (−6,68%) | Chat, matemáticas, ciencia, coding, tool use, multilingüe |
+| Divergencia KL ponderada / media por token ↓ | 0,0000 | 0,0847 / 0,2103 | KL FP32 sobre vocabulario completo |
+| Perplejidad holdout general y multilingüe (76 prompts, 20k tokens) ↓ | 25,7581 | 24,5254 (−4,79%) | KL media por token 0,0462 (ponderada 0,0509) |
+| MTP nativo (11.583 posiciones) | 100,0% top-1 (NLL 2,0268) | 95,80% top-1 (NLL 2,0363) | KL aislada 0,0105; top-1 E2E 89,61%, KL 0,1037 |
+| Visión VQA, gráficos, documentos y OCR (96 imágenes, 302 tokens) | 1,0000 cos sim · 100,0% top-1 | 0,9860 cos sim · 99,34% top-1 | KL ViT aislada 0,0071; top-1 E2E 97,68%, KL 0,0201 |
+| Visión UI / ScreenSpot y OCR matemático (48 imágenes, 135 tokens) | 1,0000 cos sim · 100,0% top-1 | 0,9899 cos sim · 98,52% top-1 | KL ViT aislada 0,0049; top-1 E2E 97,04%, KL 0,0307 |
 
-No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar de tareas en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~19,42 GiB solo de pesos; con caché KV y overhead de vLLM, el consumo realista parte de ~21-23 GiB según longitud de contexto y lote.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), L4 (24 GB), A10G (24 GB); A100/H100 para lotes grandes o contextos largos.
-- Cabe en GPU consumer: sí, en tarjetas de 24 GB; en 16 GB no cabe sin cuantización adicional o offload.
-- Opciones de despliegue: vLLM V1 (v0.31.0) con compressed-tensors; requiere un parche de dos líneas en `vllm/model_executor/layers/quantization/compressed_tensors/transform/linear.py` para las capas de visión rotadas. Texto y MTP cargan sin cambios. No se documenta soporte para llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: 18,78 GiB para los pesos cuantizados; se recomienda reservar al menos 24 GB para dejar espacio a la caché KV y a la decodificación especulativa (el autor indica unos 5,2 GiB libres en una tarjeta de 24 GB).
+- GPU recomendadas: RTX 4090 (24 GB) o A100/H100 para mayor margen de contexto y concurrencia. Para GPUs de 16 GB existe una variante W2.6A16 del mismo autor que ocupa 13,15 GiB.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y en GPUs profesionales de 24 GB o más. No cabe en GPUs de 16 GB en esta variante W4A16.
+- Opciones de despliegue: vLLM con `--trust-remote-code` (el autor incluye el helper `vllm_warp_quant.py`); también es compatible con `transformers` y `compressed-tensors`. No se menciona soporte para llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La decodificación especulativa con MTP nativo (89,61% de acuerdo top-1 de extremo a extremo) está pensada para reducir la latencia, pero no se publican cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-W4A16-HGPTQ-g64 (este) | 35.951.822.704 | no disponible | W4A16 GPTQ g64 + Hadamard | Apache 2.0 | 19,42 GiB, PPL Δ +0,924% vs BF16 |
-| nchapman/Qwen3.6-35B-A3B-W4A16-GPTQ | 35.951.822.704 (base) | no disponible | W4A16 GPTQ g128, sin Hadamard | Apache 2.0 | 20,678 GiB, PPL Δ +3,600% vs BF16 |
-| Qwen/Qwen3.6-35B-A3B (BF16) | 35.951.822.704 | no disponible | BF16 | Apache 2.0 | Referencia de fidelidad; ~72 GB de pesos |
+| nchapman/Qwen3.6-35B-A3B-W4A16-HGPTQ-g64 | 36.468.770.672 | no disponible | W4A16 g64 + W8_g64 | Apache 2.0 | Hugging Face, 386 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 36.468.770.672 | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| nchapman/Qwen3.6-35B-A3B-W2.6A16-HGPTQ-RCO | no disponible | no disponible | W2.6A16 | Apache 2.0 | Hugging Face, 13,15 GiB |
 
-No se dispone de datos de benchmarks de tarea para comparar el rendimiento frente a modelos de otras familias.
+No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada. La comparación con el modelo base se limita al tamaño y a las métricas de fidelidad de la sección de benchmarks; no hay datos de rendimiento en tareas estándar para ninguno de los dos.
 
 ## Limitaciones y advertencias
 
-- La cuantización introduce degradación medible: PPL +0,924% frente a BF16 y KL medio por token de 0,230016 en probe-v4; en tareas sensibles conviene validar contra el modelo BF16.
-- El módulo MTP pierde fidelidad end-to-end (89,17% de acuerdo top-1 frente a 95,93% aislado), lo que puede reducir la eficacia de la decodificación especulativa.
-- La torre de visión presenta un Rel-RMSE de 0,2157 en características del ViT; aunque el acuerdo top-1 en respuestas es alto, tareas visuales finas pueden degradarse.
-- vLLM V1 v0.31.0 requiere un parche manual para las capas de visión rotadas; sin él, la carga de `model.visual.*` falla. Texto y MTP no necesitan cambios.
-- La calibración usa un dataset concreto (Nemotron-Cascade-2-SFT-Data) y 64 imágenes de ChartQA/TextVQA; dominios muy distintos pueden sufrir mayor degradación.
-- No hay información sobre sesgos, idiomas soportados ni riesgo de alucinación específicos de esta cuantización; deben evaluarse sobre el modelo base.
-- Licencia Apache 2.0 permite uso comercial, pero el autor de la cuantización no ofrece garantías; el repo tiene 0 descargas y 0 likes, sin validación comunitaria.
-- El modelo base Qwen3.6-35B-A3B no está documentado en esta ficha (contexto, datos de entrenamiento, RLHF); consúltese su model card antes de producción.
+- Es un checkpoint derivado cuantizado, no un modelo original: el autor es nchapman, no el equipo de Qwen, y no se detalla el proceso de validación independiente.
+- La cuantización introduce divergencia respecto al BF16: KL ponderada de 0,0847 y media por token de 0,2103 en el conjunto principal, y una caída de top-1 del MTP al 89,61% de extremo a extremo. En tareas sensibles a la precisión puede requerir validación adicional.
+- La perplejidad reportada es inferior a la del BF16 (−6,68% y −4,79%), lo que puede reflejar un efecto de la receta de ajuste KL y no debe interpretarse automáticamente como una mejora de calidad en tareas.
+- No se dispone de datos sobre sesgos conocidos, tasas de alucinación ni cobertura idiomática detallada.
+- No se especifica la longitud de contexto soportada; el margen de VRAM para caché KV en 24 GB es de unos 5,2 GiB, lo que limita contextos largos o alta concurrencia.
+- Requiere `--trust-remote-code` en vLLM y el helper `vllm_warp_quant.py` incluido; no se documenta compatibilidad con llama.cpp, Ollama ni TGI, lo que restringe las opciones de despliegue.
+- La rotación Hadamard online en tiempo de ejecución debe aplicarse exactamente según `quantization_config.transform_config.config_groups.v`; una implementación incorrecta degradaría la calidad de forma silenciosa.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un derivado conviene conservar los avisos de atribución del modelo base y del autor de la cuantización.
+- El repositorio ocupa 100,8 GB, muy por encima de los 18,78 GiB de pesos efectivos, lo que implica un coste de almacenamiento y descarga considerable.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/nchapman/Qwen3.6-35B-A3B-W4A16-HGPTQ-g64
-- Variante GPTQ g128-h0 del mismo autor: https://huggingface.co/nchapman/Qwen3.6-35B-A3B-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Qwen3.6-35B-A3B-W4A16-HGPTQ-g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Dataset de calibración: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data
-- Dataset de calibración fijado: https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data
-- Plantillas de chat: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
-- Herramientas y receta: https://github.com/nchapman/warp-3090-model-lab
+- Variante de 16 GB (W2.6A16): https://huggingface.co/nchapman/Qwen3.6-35B-A3B-W2.6A16-HGPTQ-RCO

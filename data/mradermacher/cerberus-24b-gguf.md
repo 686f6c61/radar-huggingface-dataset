@@ -2,84 +2,95 @@
 
 ## Resumen
 
-Cerberus-24B-GGUF es la distribucion en formato GGUF del modelo Cerberus-24B, publicada por el usuario mradermacher en Hugging Face. Se trata de una conversion estatica de cuantizacion del modelo original alojado en el repositorio c4tdr0ut/Cerberus-24B, pensada para su ejecucion en motores de inferencia basados en GGUF como llama.cpp, Ollama o LM Studio. El nombre indica un modelo de aproximadamente 24.000 millones de parametros.
+Cerberus-24B es un modelo de lenguaje de 23.572 millones de parámetros (aproximadamente 24B) desarrollado por el usuario c4tdr0ut y distribuido en formato GGUF por mradermacher. Se trata de un ajuste fino del modelo base Mistral, entrenado mediante QLoRA y posteriormente optimizado con ORPO (Odds Ratio Preference Optimization), una técnica de alineación que combina el ajuste supervisado con la optimización de preferencias en una sola etapa. El modelo está etiquetado como "uncensored", lo que indica que se ha reducido o eliminado el filtrado de contenido en las respuestas.
 
-La relevancia de esta ficha es fundamentalmente practica: el repositorio no incluye model card descriptiva con detalles de arquitectura, entrenamiento, licencia o idiomas, sino unicamente metadatos tecnicos generados por la herramienta de cuantizacion (quantize_version 2, convert_type hf, output_tensor_quantised 1). Esto implica que cualquier evaluacion tecnica del modelo debe remitirse al repositorio original de Cerberus-24B, del que esta publicacion es solo una derivacion en cuantizaciones de 2 a 8 bits.
+La relevancia de esta ficha radica en que el repositorio que nos ocupa no contiene los pesos originales en safetensors, sino las cuantizaciones estáticas en GGUF generadas por mradermacher, lo que facilita su despliegue en hardware de consumo mediante llama.cpp y herramientas compatibles. El tamaño del repositorio es de 161,4 GB, ya que incluye todas las variantes de cuantización desde Q2_K hasta Q8_0.
 
-El interes de esta publicacion reside en que ofrece un abanico amplio de cuantizaciones (desde Q2_K hasta Q8_0, incluyendo variantes K_S, K_M, K_L e IQ4_XS) que permiten ajustar el modelo a distintos presupuestos de VRAM y RAM, desde entornos de consumo hasta servidores. No obstante, al no disponer de informacion sobre el modelo base, esta ficha debe leerse como una descripcion de la distribucion GGUF y no como una evaluacion del modelo en si.
+No se dispone de información pública sobre la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks en la información proporcionada. La model card del autor original no está incluida en los datos disponibles, por lo que varios apartados técnicos se marcan como "no disponible".
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 24B (inferido del nombre) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (derivada de Mistral, según etiquetas) |
+| Parámetros totales | 23.572.403.200 (23,57B) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en (inglés) |
+| Licencia | other (no especificada en detalle) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Cerberus-24B en los datos proporcionados. El repositorio de cuantizacion no incluye detalles sobre tipo de transformer, atencion, componentes MoE o SSM, ni sobre la composicion del dataset de entrenamiento, el numero de tokens o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El modelo sigue una arquitectura transformer derivada de Mistral, según las etiquetas del repositorio. El ajuste fino se realizó mediante QLoRA, una técnica de adaptación de bajo rango con cuantización de 4 bits que permite entrenar modelos grandes con recursos reducidos. Posteriormente se aplicó ORPO (Odds Ratio Preference Optimization), un método de alineación que integra el ajuste supervisado y la optimización de preferencias en una única fase de entrenamiento, evitando la necesidad de una etapa separada de RLHF con un modelo de recompensa.
 
-Lo unico documentado en los metadatos es el proceso de conversion: la herramienta de cuantizacion indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversion desde pesos en formato Hugging Face (presumiblemente safetensors) hacia GGUF con cuantizacion por tensor. Las cuantizaciones generadas cubren tanto la familia K-quants clasica (Q2_K a Q8_0) como la variante IQ4_XS de la familia i-quants, orientada a preservar calidad con tamanos reducidos.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni la existencia de datos multimodales. La etiqueta "uncensored" sugiere que el dataset de ajuste incluyó ejemplos sin las restricciones típicas de seguridad, pero no se detalla la metodología exacta. El modelo base es c4tdr0ut/Cerberus-24B, y las cuantizaciones fueron generadas por mradermacher con la herramienta de cuantización estática (quantize_version 2, output_tensor_quantised 1, convert_type hf).
 
 ## Capacidades
 
-- No se dispone de informacion verificada sobre las capacidades del modelo base en los datos proporcionados.
-- El nombre "Cerberus" y el tamano de 24B sugieren un modelo de lenguaje de proposito general, pero no hay confirmacion documental.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- La unica capacidad verificable de esta publicacion es la de ser cargable en motores de inferencia compatibles con GGUF en las cuantizaciones listadas.
+- Generación de texto conversacional en inglés, orientada a chat multi-turno.
+- Razonamiento y respuesta a instrucciones, gracias al ajuste con ORPO.
+- Modo "uncensored": menor probabilidad de rechazo de peticiones por filtros de contenido, aunque esto no garantiza ausencia total de sesgos.
+- No se ha documentado soporte de tool calling, function calling ni agentes multi-step en la información disponible.
+- No se ha documentado capacidad de visión, audio ni modo "thinking" explícito.
+- Capacidades multilingües limitadas al inglés según la etiqueta de idioma.
+- No se dispone de información sobre decodificación especulativa ni atención lineal.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M y Q4_K_S permiten cargar un modelo de 24B en GPUs con 16-24 GB de VRAM o en configuraciones de CPU con RAM suficiente, algo inviable con los pesos en F16.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye desde Q2_K hasta Q8_0, lo que permite medir la degradacion de calidad frente al ahorro de memoria en un mismo modelo mediante benchmarks propios.
-- Integracion en llama.cpp y Ollama: al ser GGUF, el modelo puede servirse localmente mediante estos motores sin infraestructura adicional, util para prototipado offline.
-- Experimentacion en entornos con VRAM limitada: IQ4_XS y Q3_K_M ofrecen alternativas para GPUs de 12-16 GB, a costa de perdida de fidelidad.
-- Servicio de inferencia en CPU: las cuantizaciones Q2_K y Q3_K_S reducen el peso a un rango manejable para servidores sin GPU, aunque con latencia elevada.
-- Base para fine-tuning o evaluacion posterior: los pesos GGUF pueden servir como referencia de comportamiento del modelo original antes de invertir en su version completa.
+- Chat conversacional sin restricciones temáticas: el modelo puede mantener diálogos multi-turno en inglés sobre temas que otros modelos filtran, adecuado para investigación sobre alineación y sesgos. Su naturaleza "uncensored" lo hace útil para estudiar el comportamiento de modelos sin capas de seguridad.
+- Generación de texto creativo sin filtros: escritura de ficción, guiones o narrativas que requieran contenido adulto o controvertido, donde los modelos alineados convencionales rechazarían la petición. El ajuste con ORPO preserva la coherencia conversacional.
+- Evaluación comparativa de cuantizaciones: al ofrecerse 11 variantes GGUF desde Q2_K (9,0 GB) hasta Q8_0 (25,2 GB), permite estudiar la degradación de calidad frente al tamaño en un modelo de 24B, útil para investigación en compresión de modelos.
+- Despliegue en hardware de consumo: la variante Q4_K_M (14,4 GB) cabe en GPUs con 16 GB de VRAM o en configuraciones CPU+RAM, lo que permite ejecutar un modelo de 24B en estaciones de trabajo sin GPUs de datacenter.
+- Experimentación con QLoRA y ORPO: el modelo sirve como caso de estudio de un pipeline de ajuste fino de bajo rango seguido de alineación por preferencias, útil para investigadores que replican metodologías.
+- Generación de datos sintéticos para entrenamiento: en entornos controlados, el modelo puede producir corpus de texto en inglés sin los sesgos de rechazo de modelos alineados, aunque requiere revisión humana por riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y sin overhead de contexto):
-  - F16: ~48 GB
-  - Q8_0: ~25-26 GB
-  - Q6_K: ~20 GB
-  - Q5_K_M: ~17 GB
-  - Q4_K_M: ~14-15 GB
-  - Q3_K_M: ~12 GB
-  - Q2_K: ~9-10 GB
-- GPU recomendadas: A100 40/80 GB o H100 para F16 y Q8_0; RTX 4090 (24 GB) para Q6_K y Q5_K_M; RTX 4080/3090 (16-24 GB) para Q4_K_M; GPUs de 12 GB para Q3_K_M e IQ4_XS.
-- Cabe en GPU de consumo: si, en las cuantizaciones Q4 y menores con GPUs de 16-24 GB; Q2_K y Q3_K_S en GPUs de 8-12 GB con contexto reducido.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia (según cuantización, con overhead de contexto):
+  - Q2_K: ~9,0 GB de pesos, ~10-11 GB de VRAM total.
+  - Q4_K_M: ~14,4 GB de pesos, ~16-17 GB de VRAM total.
+  - Q8_0: ~25,2 GB de pesos, ~27-28 GB de VRAM total.
+- GPU recomendadas:
+  - Q4_K_M: RTX 4090 (24 GB), RTX 4080 Super (16 GB, ajustado), A100 40 GB.
+  - Q8_0: A100 40 GB, H100 80 GB, o dos GPUs de 24 GB en paralelo.
+  - Q2_K: RTX 4070 Ti (12 GB) o superior.
+- Cabe en GPU de consumo: sí, las variantes Q2_K a Q4_K_M caben en GPUs de 12-16 GB; Q5 y Q6 requieren 20-24 GB; Q8_0 requiere GPU profesional o multi-GPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp. Para servidores, vLLM no soporta GGUF de forma nativa en todas las versiones; se recomienda llama.cpp server o TGI con conversión a safetensors.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo base Cerberus-24B ni sobre alternativas comparables en los datos proporcionados.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Cerberus-24B (este) | 23,57B | no disponible | other | GGUF | Ajuste QLoRA + ORPO, uncensored, solo inglés |
+| Mistral Small 24B (referencia de familia) | ~24B | no disponible | Apache 2.0 (típicamente) | safetensors, GGUF | Modelo base de la familia; alineado y multilingüe |
+| Yi-34B | 34B | 200K (según versión) | Apache 2.0 | safetensors, GGUF | Mayor tamaño, contexto largo, multilingüe |
+| Nous Hermes 2 Mixtral 8x7B | 46,7B (12,9B activos) | 32K | Apache 2.0 | safetensors, GGUF | MoE, mayor eficiencia por token activo |
+
+La comparativa es aproximada: no se dispone de datos de rendimiento de Cerberus-24B para confrontar con estos modelos. La principal diferencia es la naturaleza "uncensored" y la licencia "other" (frente a Apache 2.0 de las alternativas), lo que puede limitar su uso comercial.
 
 ## Limitaciones y advertencias
 
-- La model card del repositorio no incluye descripcion funcional, licencia ni idiomas, lo que impide verificar condiciones de uso comercial.
-- Ausencia total de datos sobre sesgos, alucinacion o comportamiento en produccion del modelo base.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad de forma significativa en modelos de este tamano; no se recomienda su uso en produccion sin validacion previa.
-- El repositorio no indica la longitud de contexto soportada, por lo que el uso con contextos largos requiere verificacion empirica.
-- Al ser una conversion de terceros (mradermacher) y no del autor original, no hay garantia de equivalencia exacta con los pesos de referencia.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- No se debe asumir que el modelo base sea de proposito general o multilingue sin comprobacion en el repositorio original.
+- Sesgos conocidos: al ser un modelo "uncensored" entrenado sin filtros de seguridad, puede reproducir sesgos de género, raza, religión y otros presentes en los datos de entrenamiento, sin las mitigaciones habituales de los modelos alineados.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad; como todo modelo de lenguaje, puede generar información falsa con apariencia de veracidad, especialmente en dominios especializados.
+- Limitaciones de contexto e idioma: solo se declara inglés; no se dispone de la longitud de contexto, lo que impide garantizar ventanas largas. El uso en castellano no está soportado oficialmente.
+- Restricciones de licencia: la licencia "other" no especifica términos; es imprescindible consultar la model card del autor original (c4tdr0ut/Cerberus-24B) antes de cualquier uso comercial. La ausencia de una licencia estándar (Apache 2.0, MIT) introduce incertidumbre legal.
+- Caveat para producción: el formato GGUF está orientado a inferencia local; para servir a escala se recomienda convertir a safetensors y usar vLLM o TGI. La falta de benchmarks impide garantizar calidad en tareas críticas.
+- El repositorio tiene solo 826 descargas y 1 like, lo que sugiere poca validación comunitaria; no hay evidencia de pruebas extensas de robustez.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Cerberus-24B-GGUF
 - Modelo base: https://huggingface.co/c4tdr0ut/Cerberus-24B
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Cerberus-24B-i1-GGUF
+- Página de descarga del autor: https://hf.tst.eu/model#Cerberus-24B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

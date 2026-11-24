@@ -2,85 +2,85 @@
 
 ## Resumen
 
-Cyrogen-Vesper es un modelo de lenguaje de tipo *merge* (fusión de pesos) publicado por el usuario Kainxkitsune en Hugging Face. Se construye a partir de dos modelos base: `ReadyArt/Vesper-26B-A4B-Nocturne` y `zerofata/G4-MeroMero-26B-A4B`. Por la nomenclatura de ambos progenitores ("26B-A4B"), todo apunta a una arquitectura de mezcla de expertos (MoE) con aproximadamente 26 mil millones de parámetros totales y unos 4 mil millones de parámetros activos por token, aunque el autor no detalla la arquitectura en la model card.
+Cyrogen-Vesper es un modelo de lenguaje de tipo *merge* (fusión de pesos) publicado por el usuario Kainxkitsune en Hugging Face. Combina dos modelos base de la familia Vesper/G4 de aproximadamente 26.000 millones de parámetros: `ReadyArt/Vesper-26B-A4B-Nocturne` y `zerofata/G4-MeroMero-26B-A4B`. El resultado es un modelo de arquitectura Mixture of Experts (MoE), según las etiquetas del autor, con 25.233.142.046 parámetros totales confirmados en los pesos en safetensors. El modelo está orientado explícitamente a *roleplay* conversacional para adultos, contenido NSFW y generación de texto sin censura.
 
-El modelo está orientado explícitamente a *roleplay* conversacional para adultos, con etiquetas como `nsfw`, `adult-content`, `uncensored` y `mature`. No incluye datos de benchmarks, curvas de entrenamiento ni detalles del proceso de fusión. La model card es fundamentalmente una pieza de presentación visual (HTML/CSS personalizado) y no aporta información técnica sustantiva sobre el entrenamiento, el dataset o las capacidades medidas.
+El modelo se distribuye principalmente en formato GGUF (con cuantizaciones generadas mediante imatrix) y está pensado para su uso en entornos de inferencia local como llama.cpp u Ollama. La model card está redactada íntegramente en inglés y no incluye información técnica detallada sobre el proceso de fusión, los datos de entrenamiento ni evaluaciones de rendimiento. La licencia declarada es Apache 2.0, aunque la naturaleza del contenido y la ausencia de documentación sobre los datos de entrenamiento introducen incertidumbres relevantes para uso en producción.
 
-Es relevante ahora únicamente dentro del nicho de modelos sin censura para narrativa interactiva y personajes, donde la comunidad publica fusiones con frecuencia. Para cualquier uso generalista, de código o de razonamiento, no hay evidencia publicada que lo respalde.
+Su relevancia actual es limitada al nicho de modelos conversacionales sin censura para *roleplay*, donde la comunidad publica fusiones con frecuencia. No es un modelo de propósito general ni compite en benchmarks estándar de razonamiento o código; su interés reside en la combinación de dos bases MoE de 26B en un único checkpoint utilizable en local.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (inferida de la nomenclatura "26B-A4B" de los modelos base; no confirmada en la model card) |
-| Parámetros totales | ~26B (inferido del nombre de los modelos base; no confirmado) |
-| Parámetros activos | ~4B (inferido de "A4B"; no confirmado) |
+| Arquitectura | Mixture of Experts (MoE), según etiquetas del autor; detalles de la arquitectura base no disponibles |
+| Parametros totales | 25.233.142.046 (confirmado en safetensors) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (el repo no contiene pesos: tamaño 0.0 GB) |
+| Tipos de cuantizacion | GGUF con imatrix (cuantizaciones concretas no especificadas en la información disponible) |
 | Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repositorio vacío en el momento de la consulta) |
+| Formato de pesos | GGUF (repo de 116,8 GB; presencia de safetensors confirmada por el recuento de parámetros) |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna más allá de la etiqueta `moe` y de la nomenclatura de los modelos base, que sugiere un transformer con mezcla de expertos de ~26B totales y ~4B activos. El modelo es una fusión de pesos (*merge*) de `ReadyArt/Vesper-26B-A4B-Nocturne` y `zerofata/G4-MeroMero-26B-A4B`; el autor no especifica el método de fusión (por ejemplo, SLERP, TIES, DARE o linear), ni las capas afectadas, ni los ratios aplicados.
+El modelo es una fusión de pesos (*merge*) de dos checkpoints: `ReadyArt/Vesper-26B-A4B-Nocturne` y `zerofata/G4-MeroMero-26B-A4B`. Las etiquetas del autor indican arquitectura MoE, coherente con la nomenclatura "A4B" de los modelos base (aproximadamente 4.000 millones de parámetros activos sobre un total de 26.000 millones), aunque el número exacto de parámetros activos, el número de expertos y la estrategia de enrutamiento no se detallan en la información disponible. El recuento real de parámetros en safetensors (25.233.142.046) es ligeramente inferior a los 26B nominales de los modelos base, algo habitual en fusiones con recorte de tensores o en variantes con embeddings compartidos.
 
-No se documentan datos de entrenamiento, número de tokens, composición del corpus, ni fases de RLHF, DPO o ajuste instruct. Tampoco se describen innovaciones técnicas como decodificación especulativa o atención lineal. Cualquier afirmación sobre el proceso de entrenamiento sería especulativa.
+No se ha publicado información sobre el volumen de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas. Al tratarse de un *merge*, no hay un entrenamiento adicional documentado: el comportamiento del modelo deriva de la combinación de los pesos de sus dos bases. Tampoco se especifica el método de fusión (SLERP, TIES, DARE, linear, etc.) ni los ratios aplicados.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, orientada a diálogos multi-turno de rol.
-- Contenido para adultos sin censura declarada (etiquetas `nsfw`, `uncensored`, `mature`).
-- Mantenimiento de personajes y estilo narrativo en sesiones de roleplay (capacidad declarada por el propósito del modelo, no medida).
-- Soporte de *tool calling* / *function calling*: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Capacidades especiales (modo *thinking*, visión, audio): no disponibles.
+- Generación de texto conversacional multi-turno orientada a *roleplay* y narrativa interactiva.
+- Contenido para adultos y NSFW sin censura, según la declaración explícita del autor.
+- Conversación en inglés; no se declara soporte de otros idiomas.
+- Etiquetado como `conversational` y `text-generation`, lo que sugiere uso como chatbot o asistente de escritura creativa.
+- Compatibilidad con *endpoints* (etiqueta `endpoints_compatible`), lo que indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
+- No se documenta soporte de *tool calling*, *function calling*, agentes, razonamiento multi-paso, visión, audio ni modo *thinking*.
 
 ## Casos de uso
 
-- Roleplay conversacional para adultos: el modelo está diseñado para sostener personajes y narrativa interactiva sin filtros de contenido, lo que encaja en plataformas de ficción interactiva y comunidades de rol.
-- Creación de ficción serializada: generación de capítulos y diálogos con continuidad de personaje en sesiones largas, siempre que la ventana de contexto real del modelo base lo permita (dato no publicado).
-- Prototipado de chatbots de personaje: sirve como backend para demos de asistentes con personalidad definida, dado su enfoque conversacional.
-- Investigación sobre alineación y censura: útil como caso de estudio de modelos sin filtros para analizar comportamientos, sesgos y riesgos en entornos controlados.
-- Generación de guiones para narrativa ramificada: producción de ramas de diálogo y variantes de escena en herramientas de escritura asistida.
-- Evaluación comparativa de fusiones: como muestra de técnicas de *merge* de modelos MoE para estudiar cómo se combinan comportamientos de dos bases distintas.
+- Roleplay conversacional para adultos: el modelo está diseñado específicamente para mantener personajes y narrativas multi-turno sin filtros de contenido, lo que lo hace adecuado para plataformas de ficción interactiva y comunidades de rol.
+- Escritura creativa de ficción madura: útil para generar borradores de relatos, diálogos y escenas con temática adulta, donde los modelos alineados rechazarían el contenido.
+- Prototipado de chatbots de personaje en local: al distribuirse en GGUF, puede ejecutarse en estaciones de trabajo sin GPU de datacenter para experimentar con personalidades y estilos narrativos.
+- Investigación sobre alineación y censura: sirve como contraste para estudiar el comportamiento de modelos sin *safety tuning* frente a modelos alineados en tareas de generación libre.
+- Generación de contenido para juegos de texto y aventuras conversacionales: su naturaleza MoE de 26B permite mantener coherencia en sesiones largas dentro de los límites de contexto disponibles (no documentados).
+- Fine-tuning comunitario sobre una base sin censura: al estar bajo Apache 2.0 y en formato abierto, puede servir como punto de partida para ajustes específicos de estilo o dominio en el nicho de ficción para adultos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; para un MoE de ~26B totales y ~4B activos, una cuantización de 4 bits requeriría del orden de 13-16 GB solo para pesos, más overhead de contexto y caché KV (estimación orientativa, no confirmada por el autor).
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada; probablemente viable en GPUs de 24 GB (RTX 3090/4090) con cuantización agresiva si el modelo se publica en GGUF, pero no hay pesos ni confirmación.
-- Opciones de despliegue: no disponible (el repositorio no contiene pesos en el momento de la consulta, por lo que no se puede confirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI).
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo MoE de ~25B en GGUF, las cuantizaciones Q4 requieren del orden de 14-16 GB y las Q8 en torno a 26-28 GB, aunque estas cifras no están confirmadas por el autor y dependen de los parámetros activos reales.
+- GPU recomendadas: no disponibles. Por tamaño, una RTX 4090 (24 GB) podría alojar cuantizaciones Q4/Q5; para Q8 o FP16 se necesitarían A100 40/80 GB, H100 o múltiples GPU consumer.
+- Cabe en GPU consumer: probablemente en RTX 3090/4090 con cuantizaciones bajas (Q4), sujeto a verificación empírica; no confirmado.
+- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; vLLM o TGI solo si se dispone de los pesos en safetensors y la arquitectura base es compatible, lo cual no está documentado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyrogen-Vesper | ~26B totales / ~4B activos (inferido) | no disponible | Roleplay NSFW, merge MoE | Apache 2.0 | Repo sin pesos |
-| ReadyArt/Vesper-26B-A4B-Nocturne | ~26B / ~4B (inferido) | no disponible | Roleplay, base del merge | no disponible | Hugging Face |
-| zerofata/G4-MeroMero-26B-A4B | ~26B / ~4B (inferido) | no disponible | Roleplay, base del merge | no disponible | Hugging Face |
+| Cyrogen-Vesper | 25,2B (MoE, activos no disponibles) | no disponible | Apache 2.0 | Roleplay/NSFW sin censura | GGUF en HF |
+| ReadyArt/Vesper-26B-A4B-Nocturne (base) | ~26B (MoE) | no disponible | no disponible en esta ficha | Roleplay sin censura | HF |
+| zerofata/G4-MeroMero-26B-A4B (base) | ~26B (MoE) | no disponible | no disponible en esta ficha | Conversacional/NSFW | HF |
+| Modelos alineados de ~24-27B (p. ej. Mistral Small, Gemma 2 27B) | 22-27B densos | 32K-128K típicamente | Apache 2.0 / Gemma license | Propósito general alineado | Amplia |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes.
+La comparación cuantitativa con alternativas no es posible porque no hay benchmarks publicados ni datos de contexto. Frente a modelos densos alineados de tamaño similar, Cyrogen-Vesper renuncia explícitamente a la alineación de seguridad a cambio de libertad creativa, y su naturaleza MoE puede ofrecer un coste de inferencia menor por token si los parámetros activos son efectivamente ~4B, extremo no confirmado.
 
 ## Limitaciones y advertencias
 
-- Contenido para adultos: el modelo está etiquetado como `not-for-all-audiences` y `nsfw`; no es apto para entornos públicos, educativos o productos dirigidos a menores.
-- Sin datos de entrenamiento ni evaluación: no hay benchmarks, por lo que no se puede verificar calidad, coherencia ni seguridad.
-- Riesgo de alucinación: sin evaluación publicada, el riesgo es desconocido y presumiblemente alto en tareas factuales.
-- Sesgos: no documentados; los modelos de roleplay sin censura suelen reproducir sesgos de sus corpus de origen, pero no hay análisis disponible.
-- Idioma: solo inglés declarado; el rendimiento en castellano no está evaluado y probablemente sea deficiente.
-- Licencia Apache 2.0: permite uso comercial según los términos de la licencia, pero el contenido generado puede infringir políticas de plataformas y normativas sobre contenido adulto.
-- Repositorio sin pesos: el tamaño de 0.0 GB indica que no hay archivos de modelo publicados en el momento de la consulta, lo que impide su uso directo.
-- Sin soporte de *tool calling* ni agentes documentado: no recomendable para pipelines de automatización.
+- Contenido NSFW y para adultos: no apto para menores ni para entornos sin moderación; requiere control de acceso y políticas de uso claras.
+- Sin *safety tuning*: el modelo está etiquetado como `uncensored`, por lo que puede generar contenido dañino, ilegal o sexual explícito sin filtros; no debe exponerse directamente a usuarios no verificados.
+- Riesgo de alucinación: no hay evaluaciones publicadas de fidelidad factual; al ser un *merge* de bases orientadas a ficción, la precisión factual es previsiblemente baja.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Contexto: la longitud de contexto no está especificada, lo que impide planificar despliegues con requisitos de ventana larga.
+- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado y las obligaciones sobre los modelos base subyacentes (cuyas licencias no se detallan aquí) deben verificarse antes de un despliegue comercial.
+- Documentación escasa: sin información sobre datos de entrenamiento, método de fusión ni evaluaciones, la reproducibilidad y la trazabilidad son limitadas.
+- Advertencia de plataforma: la model card incluye la etiqueta `not-for-all-audiences`, lo que restringe su visibilidad y uso en determinados contextos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Kainxkitsune/Cyrogen-Vesper
+- Modelo en Hugging Face: https://huggingface.co/Kainxkitsune/Cyrogen-Vesper
 - Modelo base 1: https://huggingface.co/ReadyArt/Vesper-26B-A4B-Nocturne
 - Modelo base 2: https://huggingface.co/zerofata/G4-MeroMero-26B-A4B

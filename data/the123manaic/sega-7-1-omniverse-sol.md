@@ -2,84 +2,96 @@
 
 ## Resumen
 
-Sega-7.1-Omniverse-Sol es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo el identificador `the123manaic/Sega-7.1-Omniverse-Sol`. La model card lo presenta como la «Generación 7.1» de la tecnología «Segacopter» y declara una arquitectura MoE de 1,5 billones de parámetros con 110 000 millones activos, además de un modo de razonamiento basado en tree-of-thought. Sin embargo, el recuento real de parámetros de los pesos en formato safetensors es de 1792 parámetros totales, lo que contradice frontalmente las cifras declaradas en la model card.
+Sega-7.1-Omniverse-Sol es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo la etiqueta de "Segacopter Technology", generación 7.1. La model card lo presenta como un modelo de arquitectura `SegaForCausalLM` con 1,5 billones (1.5T) de parámetros totales en configuración MoE y 110B de parámetros activos, orientado a razonamiento y síntesis mediante tree-of-thought. La licencia declarada es Apache 2.0 y la librería de referencia es transformers con pesos en safetensors.
 
-El modelo se distribuye con licencia Apache 2.0 y es compatible con la librería `transformers` y con endpoints. No tiene descargas ni «likes» en el momento de la consulta, y su fecha de creación es el 14 de noviembre de 2026.
+Sin embargo, existe una discrepancia crítica entre lo que declara la model card y los metadatos reales del repositorio: el recuento de parámetros extraído de los ficheros safetensors es de 1792 parámetros totales, no de 1,5T. Esta diferencia de nueve órdenes de magnitud es la información más relevante para cualquier evaluador: el modelo, tal y como está publicado, no puede tener el tamaño que afirma su documentación. Las métricas declaradas (404 tokens/s, "Epistemic IQ 99.995%", "Token Efficiency 99.4%") no son verificables ni están definidas de forma estándar, y no se han publicado resultados de benchmarks reconocidos.
 
-La relevancia de esta ficha es fundamentalmente crítica: la discrepancia entre las especificaciones declaradas y el contenido real del repositorio, junto con la ausencia de documentación verificable, benchmarks o datos de entrenamiento, hacen que el modelo no sea apto para uso en producción ni para evaluación técnica seria sin una auditoría previa del autor.
+Por tanto, esta ficha describe lo que el autor declara y, de forma explícita, lo que los metadatos del repositorio permiten verificar. Para uso en producción, el modelo debe considerarse no validado hasta que exista una evaluación independiente que resuelva la contradicción de parámetros y aporte métricas reproducibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE declarada en la model card; no verificable. Los pesos reales suman 1792 parámetros, incompatibles con la arquitectura declarada |
-| Parametros totales | 1792 (recuento real en safetensors); la model card declara 1,5 T |
-| Parametros activos | 110B declarados (MoE); no verificable |
+| Arquitectura | `SegaForCausalLM` (declarada por el autor; no es una arquitectura estándar de transformers) |
+| Parámetros totales | 1.5T declarados en la model card; 1792 reales según safetensors del repositorio |
+| Parámetros activos | 110B declarados (MoE); no verificable |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura de mezcla de expertos (MoE) con 1,5 billones de parámetros totales y 110 000 millones activos, junto con un mecanismo de razonamiento tree-of-thought de 28 pasadas y 768 ramas especulativas. No se proporciona información sobre la composición del dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas de RLHF, DPO o similares.
+El autor declara una arquitectura propietaria denominada `SegaForCausalLM`, con configuración Mixture-of-Experts de 1,5T de parámetros totales y 110B activos. La model card menciona razonamiento basado en tree-of-thought con "28 pasadas / 768 ramas especulativas" y una "velocidad de razonamiento/síntesis" de 404 tokens/s. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o similar.
 
-El dato verificable del repositorio es que los pesos en safetensors contienen 1792 parámetros en total, lo que corresponde a un modelo de juguete o a un artefacto de prueba, no a un modelo de 1,5 T. No hay información pública sobre el proceso de entrenamiento ni sobre innovaciones técnicas reales implementadas.
+No hay información sobre innovaciones técnicas verificables (atención lineal, decodificación especulativa real, etc.) más allá de las afirmaciones de marketing de la model card. El recuento de parámetros de los ficheros safetensors (1792) es incompatible con una arquitectura MoE de 1,5T, lo que impide tomar como válidas las características arquitectónicas declaradas sin una inspección directa de los pesos.
 
 ## Capacidades
 
-- Generación de texto: la pipeline declarada es `text-generation`, pero el tamaño real de los pesos impide cualquier generación coherente.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: la model card menciona tree-of-thought, pero no hay evidencia verificable de su implementación.
-- Capacidades multilingües: no disponible.
-- Modo de razonamiento «thinking»: declarado en la model card como tree-of-thought, no verificable.
-- Visión o audio: no disponible.
+- Generación de texto: es la tarea declarada en el pipeline (`text-generation`).
+- Razonamiento y "síntesis" mediante tree-of-thought: declarado por el autor, no verificado.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible (el campo de idiomas está vacío en el repositorio).
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Evaluación de integridad de repositorios: el modelo sirve como caso de estudio para detectar discrepancias entre model cards y pesos reales en Hugging Face.
-- Pruebas de pipelines de `transformers`: útil para verificar que un flujo de carga de modelos con `AutoModelForCausalLM` funciona con repositorios de tamaño mínimo.
-- Docencia sobre buenas prácticas de publicación: ejemplo de por qué es necesario auditar parámetros, licencia y benchmarks antes de adoptar un modelo.
-- Test de herramientas de escaneo de safetensors: permite comprobar que un escáner detecta recuentos de parámetros anómalos.
-- Validación de endpoints compatibles: sirve para probar la integración con endpoints en un entorno controlado sin coste de cómputo.
-- Investigación sobre desinformación en model cards: material para estudiar cómo se declaran especificaciones no verificables en la comunidad open source.
+Dado que las capacidades reales del modelo no están verificadas y el recuento de parámetros contradice la documentación, los casos de uso siguientes deben entenderse como escenarios hipotéticos condicionados a una validación previa del modelo:
 
-No se recomienda su uso para generación de texto, atención al cliente, generación de código, análisis de datos ni ninguna tarea de producción real.
+- Prototipado de generación de texto: uso del pipeline `text-generation` de transformers para experimentar con la API declarada, siempre que se confirme que los pesos cargan y generan texto coherente.
+- Evaluación interna de modelos: servir como caso de estudio sobre discrepancias entre model cards y metadatos de repositorio en el ecosistema Hugging Face.
+- Investigación sobre documentación de modelos: analizar cómo se declaran métricas no estándar ("Epistemic IQ") y su impacto en la confianza del usuario.
+- Pruebas de integración con transformers: validar el flujo `AutoModelForCausalLM` + `AutoTokenizer` con pesos safetensors en entornos de CI.
+- Docencia sobre auditoría de modelos open weight: ilustrar la importancia de verificar el recuento de parámetros antes de adoptar un modelo.
+- No recomendado para producción: no se identifica ningún escenario de producción realista mientras no se resuelva la contradicción de tamaño y no existan benchmarks reproducibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye métricas no estándar («Reasoning Speed: 404 tokens/sec», «Token Efficiency: 99.4%», «Epistemic IQ: 99.995%») que no corresponden a benchmarks reconocidos y no son verificables.
+No se han publicado resultados de benchmarks en la información disponible. Las únicas métricas presentes son afirmaciones de la model card sin metodología ni comparación con modelos de referencia:
+
+| Métrica declarada | Valor | Verificable |
+|---|---|---|
+| Velocidad de razonamiento/síntesis | 404 tokens/s | No |
+| Eficiencia de tokens | 99.4% | No (métrica no estándar) |
+| Tree-of-Thought | 28 pasadas / 768 ramas | No |
+| "Epistemic IQ" | 99.995% | No (métrica no estándar) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 MB con los pesos reales de 1792 parámetros; las cifras declaradas de 1,5 T MoE requerirían un clúster multi-GPU (varias H100 o A100 de 80 GB) y no son coherentes con el repositorio.
-- GPU recomendadas: cualquier GPU consumer para los pesos reales; ninguna configuración realista para la arquitectura declarada.
-- Cabe en GPU consumer: sí, con los pesos reales (cualquier GPU con más de 1 MB de VRAM).
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM`; no se ha verificado compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles de forma verificable. La cifra de 404 tokens/s de la model card no es contrastable.
+- VRAM estimada para inferencia: no disponible. Si se tomaran como ciertos los 1,5T declarados, la inferencia requeriría un clúster multi-GPU muy superior a cualquier configuración de una sola máquina; si se toma el recuento real de 1792 parámetros, cabría en cualquier CPU o GPU consumer.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU consumer: indeterminada por la contradicción de parámetros.
+- Opciones de despliegue: la model card solo documenta transformers con safetensors; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: solo la cifra declarada de 404 tokens/s, sin contexto de hardware ni metodología.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables de 1,5 T MoE con 110B activos publicados por «Segacopter Technology», y los pesos reales de 1792 parámetros no tienen equivalente funcional en el ecosistema open source.
+No es posible establecer una comparativa fiable porque el tamaño real del modelo es indeterminado y no hay benchmarks publicados. A modo orientativo, se compara con familias MoE abiertas de referencia:
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Sega-7.1-Omniverse-Sol | 1792 reales (1,5 T declarados) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Benchmarks públicos |
+|---|---|---|---|---|---|
+| Sega-7.1-Omniverse-Sol | 1.5T declarados / 1792 reales | 110B declarados | no disponible | Apache 2.0 | no disponible |
+| Mixtral 8x7B | 46,7B | 12,9B | 32k | Apache 2.0 | Sí |
+| DeepSeek-V3 | 671B | 37B | 128k | Licencia propia | Sí |
+| Qwen2.5-MoE | ~57B | 14B | 32k | Apache 2.0 | Sí |
+
+La comparativa solo es válida si se confirma el tamaño real del modelo; con los datos actuales, Sega-7.1 no es comparable de forma rigurosa con ninguno de estos modelos.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica entre las especificaciones declaradas (1,5 T MoE, 110B activos) y los pesos reales (1792 parámetros): el modelo no puede ejecutar las capacidades descritas.
-- Ausencia total de información sobre datos de entrenamiento, composición del dataset y proceso de alineación.
-- Métricas de la model card no estándar y no verificables («Epistemic IQ», «Token Efficiency»), sin definición ni metodología.
-- Riesgo elevado de alucinación si se intenta usar para generación de texto, dado que los pesos reales no soportan un modelo de lenguaje funcional.
-- Sin información sobre sesgos, idiomas soportados ni evaluación de seguridad.
-- Licencia Apache 2.0 permite uso comercial de los pesos, pero la ausencia de funcionalidad real hace irrelevante esa permisividad.
-- Cero descargas y cero «likes»: sin validación por parte de la comunidad.
-- No apto para producción, investigación reproducible ni evaluación comparativa sin auditoría previa del autor.
+- Discrepancia crítica de parámetros: la model card declara 1,5T y los safetensors contienen 1792 parámetros. Cualquier uso en producción debe posponerse hasta aclarar este punto.
+- Métricas no estándar y no verificables: "Epistemic IQ 99.995%", "Token Efficiency 99.4%" y "404 tokens/s" carecen de definición y metodología.
+- Ausencia de benchmarks reconocidos: no hay resultados de MMLU, HumanEval, GSM8K ni similares.
+- Idiomas no declarados: el repositorio no especifica idiomas soportados.
+- Contexto desconocido: no se indica la ventana de contexto, lo que impide planificar casos de uso con documentos largos.
+- Riesgo de alucinación: no evaluado; sin benchmarks ni pruebas independientes no puede estimarse.
+- Sesgos conocidos: no documentados.
+- Licencia Apache 2.0: permite uso comercial, pero la falta de validación técnica hace desaconsejable su adopción en producción.
+- Arquitectura no estándar: `SegaForCausalLM` no forma parte de transformers, por lo que la carga con `AutoModelForCausalLM` puede fallar sin código personalizado.
+- Señales de baja madurez: 0 likes y 399 descargas en el momento de la consulta, sin documentación técnica adicional.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/the123manaic/Sega-7.1-Omniverse-Sol
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

@@ -2,90 +2,94 @@
 
 ## Resumen
 
-Qwythos-9B-Claude-Mythos-5-1M-MLX-oQ8-mtp es una versión cuantizada en formato oQ8 (8 bits mixtos) del modelo Qwythos-9B-Claude-Mythos-5-1M, desarrollado originalmente por Empero AI y adaptado al ecosistema MLX de Apple por el usuario brainworkup. El modelo está diseñado para ejecución local en Apple Silicon, con soporte de decodificación especulativa mediante una cabeza de predicción multi-token (MTP) integrada, lo que acelera la generación de texto en comparación con la decodificación autoregresiva estándar.
+Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp es una cuantizacion en formato MLX del modelo Qwythos-9B-Claude-Mythos-5-1M, desarrollado originalmente por Empero AI sobre la familia arquitectonica Qwen3.5. Esta version concreta la publica el usuario brainworkup y aplica la cuantizacion mixta oQ8 de oMLX, que preserva la mayor parte de las capas a una calidad cercana a bf16, ademas de incorporar una cabeza de Multi-Token Prediction (MTP) integrada para decodificacion especulativa acelerada en Apple Silicon.
 
-El modelo pertenece a la familia arquitectónica Qwen3.5, con atención híbrida y una ventana de contexto de 1.048.576 tokens (1M), lo que lo hace adecuado para tareas de razonamiento de largo alcance, uso de herramientas, agentes conversacionales y dominios especializados como ciberseguridad y biomedicina. Su licencia Apache-2.0 permite uso comercial sin restricciones significativas.
+El modelo resuelve el problema de ejecutar localmente un modelo de ~9.650 millones de parametros con una ventana de contexto de 1.048.576 tokens en hardware de Apple, algo inviable con los pesos en bf16 completos. La cuantizacion oQ8 reduce el repositorio a 10,7 GB distribuidos en tres shards de safetensors, manteniendo la fidelidad numerica lo mas alta posible dentro de la familia oQ.
 
-Esta ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor. No se dispone de datos de entrenamiento, benchmarks ni especificaciones detalladas de rendimiento más allá de las declaradas.
+Es relevante ahora porque combina tres tendencias tecnicas: contexto ultralargo (1M tokens), decodificacion especulativa mediante MTP y soporte de tool calling y flujos agenticos. La contrapartida es una dependencia estricta de oMLX: ni mlx-lm, ni mlx-vlm, ni LM Studio soportan la cabeza MTP y fallan al cargar los pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5-style hybrid attention text model con cabeza MTP |
-| Parametros totales | ~9B (declarado por el autor); 3.067.588.336 según safetensors |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 1.048.576 tokens (1M) |
-| Tipos de cuantizacion | oQ8 (cuantización mixta de 8 bits, variante de alta fidelidad) |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer hibrido estilo Qwen3.5 con cabeza MTP (1 capa) |
+| Parametros totales | 9.653.104.368 (~9,65B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 1.048.576 tokens |
+| Tipos de cuantizacion | oQ8 (cuantizacion mixta inteligente de oMLX, 8 bits) |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | MLX safetensors (3 shards, ~10.7 GB) |
+| Formato de pesos | safetensors (MLX), 3 shards; tokenizer.json; chat_template.jinja |
+| Tamano del repositorio | 10,7 GB |
+| Libreria | mlx (requiere oMLX para MTP) |
+| Modelo base | empero-ai/Qwythos-9B-Claude-Mythos-5-1M; xunkutech-ai/Qwythos-9B-Claude-Mythos-5-1M-MLX-bf16-mtp |
+| Muestreo recomendado | temperature 0.6, top_p 0.95, top_k 20, repetition_penalty 1.05, max_tokens 4096 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3.5, que combina atención híbrida (probablemente una mezcla de atención completa y atención lineal o dispersa, aunque no se especifica en la documentación disponible) con una cabeza de predicción multi-token (MTP) de una capa adicional. La cabeza MTP permite la decodificación especulativa: el modelo predice varios tokens futuros en paralelo, y el proceso de verificación acelera la generación en hardware Apple Silicon. Esta característica requiere el runtime oMLX, ya que las implementaciones estándar de MLX (mlx-lm, mlx-vlm) y LM Studio no soportan los parámetros adicionales `language_model.mtp.*`.
+La arquitectura es un transformer de texto con atencion hibrida al estilo Qwen3.5, segun la model card, con una cabeza MTP embebida de una sola capa (`mtp_num_hidden_layers: 1`). Esa cabeza permite decodificacion especulativa: el modelo propone varios tokens candidatos por paso y el modelo principal los verifica, reduciendo el numero de pasos de decodificacion en Apple Silicon. El config.json ocupa aproximadamente 3,3 KB e incluye la configuracion oQ8 junto con el parametro de la cabeza MTP.
 
-No se han publicado detalles sobre el entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. El modelo es una cuantización oQ8 del checkpoint bf16 publicado por xunkutech-ai, que a su vez deriva del modelo original de Empero AI. La cuantización oQ8 conserva la mayoría de las capas en precisión cercana a bf16, priorizando la fidelidad sobre el ahorro de memoria.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similares. La model card tampoco detalla innovaciones adicionales de atencion mas alla de la etiqueta de atencion hibrida. Lo que si es verificable es el proceso de cuantizacion: oQ8 es la variante de mayor fidelidad de la familia oQ de oMLX, conservando mas capas en precision cercana a bf16 a cambio de mayor consumo de memoria. Los shards 1 y 2 pesan aproximadamente 5,0 GB cada uno y el tercero unos 0,7 GB, e incluye la cabeza MTP.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de largo alcance gracias a la ventana de contexto de 1M tokens.
-- Soporte de function calling y tool use, según los tags declarados.
-- Capacidades agénticas: puede encadenar múltiples pasos de razonamiento y llamadas a herramientas.
-- Razonamiento avanzado (tag `reasoning`), probablemente con modos de pensamiento extendido.
-- Dominios especializados: ciberseguridad y biomedicina, según los tags.
-- Conversación multi-turno con plantilla de chat personalizada (`chat_template.jinja`).
-- Decodificación especulativa acelerada mediante la cabeza MTP, exclusiva del runtime oMLX.
-- Multilingüismo limitado: solo inglés declarado.
+- Generacion de texto conversacional en ingles con plantilla de chat propia (`chat_template.jinja`).
+- Razonamiento explicito (tag `reasoning`) y soporte de contexto ultralargo de hasta 1.048.576 tokens.
+- Function calling y tool use, con etiquetas especificas para flujos agenticos.
+- Razonamiento multi-paso orientado a agentes.
+- Dominios especializados declarados: ciberseguridad y biomedico.
+- Decodificacion acelerada mediante MTP en hardware Apple Silicon a traves de oMLX.
+- Capacidades multimodales no confirmadas: aunque el tag incluye `mlx-vlm`, la model card describe el modelo como "text model" y no detalla entrada de imagen.
+- Multilingue limitado: la model card declara unicamente ingles.
 
 ## Casos de uso
 
-- Asistentes de soporte técnico en ciberseguridad: el modelo puede analizar logs, identificar patrones de ataque y generar recomendaciones de mitigación, aprovechando su contexto de 1M tokens para procesar grandes volúmenes de registros en una sola pasada.
-- Análisis de literatura biomédica: con la ventana de contexto extendida, puede resumir y extraer información de múltiples artículos científicos completos, facilitando revisiones sistemáticas.
-- Agentes autónomos de automatización de tareas: gracias al soporte de function calling y tool use, puede integrarse en pipelines que requieren llamadas a APIs, ejecución de scripts y razonamiento multi-paso.
-- Chatbots conversacionales de dominio específico: su capacidad de diálogo multi-turno y su especialización en ciberseguridad y biomedicina lo hacen adecuado para asistentes verticales en esos sectores.
-- Generación de código con contexto largo: puede mantener en memoria proyectos completos o documentación extensa para generar o modificar código de forma coherente.
-- Razonamiento sobre documentos legales o técnicos extensos: la ventana de 1M tokens permite procesar contratos, normativas o manuales completos sin necesidad de chunking.
-- Despliegue local en Apple Silicon para entornos con requisitos de privacidad: al ejecutarse en el dispositivo, los datos sensibles no salen del equipo.
+- Analisis de documentos tecnicos extensos: con 1M tokens de contexto se puede cargar un repositorio de codigo completo o un corpus de informes y formular preguntas sobre el conjunto sin trocear el material.
+- Asistente de ciberseguridad local: el modelo declara especializacion en cybersecurity, por lo que puede usarse para triaje de alertas, resumen de informes de vulnerabilidades y generacion de reglas de deteccion en un entorno sin conexion.
+- Apoyo a investigacion biomedica: resumen y extraccion de entidades en literatura cientifica larga, aprovechando la ventana de contexto para mantener varios articulos simultaneamente.
+- Agente con tool calling en macOS: integrado via oMLX, puede encadenar llamadas a funciones en flujos multi-paso para automatizar tareas de escritorio o consultas a APIs internas.
+- Prototipado de agentes en local: util para desarrolladores que quieran validar pipelines agenticos en Apple Silicon antes de desplegarlos en infraestructura con GPU.
+- Generacion de codigo asistida en el editor: el soporte de function calling y la ventana de 1M permiten incluir el contexto del proyecto y las definiciones de herramientas en la misma peticion.
+- Procesamiento por lotes de textos largos: con MTP y oQ8, el coste por token en un Mac con memoria unificada puede ser competitivo frente a APIs externas para volumenes moderados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de puntuaciones de MMLU, HumanEval, GSM8K ni otras pruebas estandarizadas para este modelo o sus variantes.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo está diseñado exclusivamente para Apple Silicon (chips M-series). No es compatible con GPUs NVIDIA ni AMD.
-- Tamaño del repositorio: 10.7 GB en disco. La memoria RAM unificada necesaria para cargar el modelo en oQ8 se estima en torno a 10-12 GB, dependiendo de la longitud del contexto y del uso de la cabeza MTP.
-- Se recomienda un Mac con al menos 16 GB de memoria unificada para una experiencia fluida con contexto moderado. Para explotar la ventana completa de 1M tokens, se necesitarían 64 GB o más, ya que la memoria de activaciones crece linealmente con la longitud del contexto.
-- El despliegue requiere el runtime oMLX (`pip install -U git+https://github.com/jundot/omlx.git`). No funciona con mlx-lm, mlx-vlm ni LM Studio.
-- La decodificación especulativa con MTP acelera la generación, pero el throughput exacto no está documentado.
-- No se han publicado datos de latencia ni de tokens por segundo.
+- VRAM/memoria unificada estimada: el repositorio pesa 10,7 GB; en la practica se necesita memoria suficiente para los pesos mas la cache KV del contexto utilizado. Con 1M tokens de contexto, la cache KV puede crecer de forma muy significativa y superar ampliamente el tamano de los pesos.
+- Hardware objetivo: Apple Silicon con memoria unificada. Un Mac con 24 GB o 32 GB puede cargar el modelo con contextos moderados; para contextos de cientos de miles de tokens se requiere configuracion de 64 GB o superior.
+- GPU NVIDIA: no aplicable de forma nativa, ya que el formato es MLX. No se documenta conversion a CUDA.
+- Consumer GPU: no cabe en GPUs NVIDIA de consumo mediante este repositorio; requeriria otra cuantizacion y otro runtime.
+- Despliegue: exclusivamente via oMLX (`pip install -U git+https://github.com/jundot/omlx.git` y `omlx serve --model <ruta>`). mlx-lm, mlx-vlm y LM Studio no soportan la cabeza MTP y fallan con `ValueError: Received 15 parameters not in model: language_model.mtp.*`.
+- Latencia y throughput: no disponibles. La model card solo afirma que MTP acelera la decodificacion especulativa, sin cifras.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa cuantitativa con modelos alternativos. El modelo es una cuantización oQ8 del checkpoint bf16 de xunkutech-ai, que a su vez deriva del Qwythos-9B-Claude-Mythos-5-1M de Empero AI. Las diferencias entre estas versiones son principalmente el formato de pesos y la precisión:
+| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp | ~9,65B | 1.048.576 | MLX oQ8, requiere oMLX | Apache-2.0 | Version cuantizada con MTP |
+| xunkutech-ai/Qwythos-9B-Claude-Mythos-5-1M-MLX-bf16-mtp | no disponible (mismo modelo base) | 1.048.576 | MLX bf16 | Apache-2.0 | Mayor fidelidad, mayor consumo de memoria |
+| empero-ai/Qwythos-9B-Claude-Mythos-5-1M | ~9B (segun model card) | 1.048.576 | safetensors originales | Apache-2.0 | Modelo de referencia sin cuantizar |
 
-| Modelo | Formato | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| empero-ai/Qwythos-9B-Claude-Mythos-5-1M | Original (probablemente bf16) | 1M | Apache-2.0 | Modelo base de la familia |
-| xunkutech-ai/Qwythos-9B-Claude-Mythos-5-1M-MLX-bf16-mtp | MLX bf16 con MTP | 1M | Apache-2.0 | Adaptación MLX con cabeza MTP |
-| brainworkup/Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp | MLX oQ8 con MTP | 1M | Apache-2.0 | Cuantización oQ8 de alta fidelidad |
-
-No se han encontrado modelos comparables de otros desarrolladores con especificaciones públicas suficientes para una comparación directa.
+No se dispone de datos de rendimiento comparado con otras familias, por lo que la comparativa se limita a variantes del mismo modelo.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés. No se garantiza un rendimiento adecuado en otros idiomas.
-- Requiere el runtime oMLX específico; no es compatible con las herramientas MLX estándar ni con LM Studio, lo que limita su portabilidad.
-- La cuantización oQ8, aunque de alta fidelidad, introduce una degradación mínima respecto al bf16 original. Para aplicaciones críticas, se recomienda validar la calidad de las salidas.
-- La ventana de contexto de 1M tokens exige una cantidad de memoria muy elevada; en la práctica, la mayoría de los equipos Apple Silicon no podrán utilizarla por completo.
-- No se han publicado benchmarks ni evaluaciones independientes, por lo que el rendimiento real en tareas específicas es desconocido.
-- No hay información sobre sesgos, alucinaciones o comportamientos indeseados. Al ser un modelo derivado de Qwen3.5, podría heredar sesgos de su entrenamiento original, pero no se ha documentado.
-- El modelo está pensado para uso local; no se han proporcionado instrucciones para despliegue en servidores o entornos cloud.
+- Dependencia estricta de oMLX: cualquier intento de cargar el modelo con mlx-lm, mlx-vlm o LM Studio falla por los parametros `language_model.mtp.*`.
+- Solo ingles declarado; el rendimiento en castellano no esta documentado y previsiblemente sera inferior.
+- La ventana de 1M tokens es nominal; la cache KV a esa longitud exige mucha memoria y puede degradar la calidad de recuperacion en el centro del contexto.
+- Riesgo de alucinacion no cuantificado: no hay benchmarks publicados que permitan estimar la fiabilidad factual.
+- Sesgos: no se documenta ninguna evaluacion de sesgos ni de seguridad.
+- La especializacion declarada en ciberseguridad y biomedico no viene acompanada de metricas; no debe asumirse precision clinica ni de seguridad sin validacion propia.
+- Licencia Apache-2.0 permite uso comercial, pero al ser una cuantizacion de terceros conviene verificar la licencia del modelo base original antes de desplegar.
+- Modelo de autor individual (brainworkup) sin historial de mantenimiento amplio: 402 descargas y 0 likes en el momento de la consulta.
+- El tag `mlx-vlm` sugiere capacidades de vision que la model card no confirma; no debe asumirse entrada multimodal.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/brainworkup/Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp
-- Modelo base bf16: https://huggingface.co/xunkutech-ai/Qwythos-9B-Claude-Mythos-5-1M-MLX-bf16-mtp
-- Modelo original de Empero AI: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M
-- Runtime oMLX: https://github.com/jundot/omlx
+- Hugging Face: https://huggingface.co/brainworkup/Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp
+- Modelo base original: https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M
+- Modelo base MLX bf16 con MTP: https://huggingface.co/xunkutech-ai/Qwythos-9B-Claude-Mythos-5-1M-MLX-bf16-mtp
+- Repositorio oMLX: https://github.com/jundot/omlx

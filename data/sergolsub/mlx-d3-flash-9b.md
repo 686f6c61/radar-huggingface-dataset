@@ -2,95 +2,101 @@
 
 ## Resumen
 
-`sergolsub/mlx-d3-flash-9B` es una conversión a 8 bits en formato MLX del modelo `vllm-sr/d3-flash`, publicada por el usuario sergolsub para su ejecución en Apple Silicon mediante la librería `mlx_lm`. No se trata de un modelo nuevo: la model card indica explícitamente que no hubo reentrenamiento ni cambios de arquitectura, solo cuantización a 8 bits y reempaquetado de los pesos en el layout que espera MLX. El checkpoint conserva 8.392.695.024 parámetros totales (aproximadamente 8,39 mil millones) y un peso en disco de unos 9,4 GB repartidos en cuatro ficheros `safetensors`.
+Decision3 Flash es un modelo de 8.392.695.024 parámetros (aproximadamente 8,4 mil millones) publicado por el usuario sergolsub como una conversión a formato MLX con cuantización de 8 bits del modelo original `vllm-sr/d3-flash`. No se trata de un modelo de propósito general al uso, sino de un modelo orientado a la toma de decisiones estructuradas: clasificación binaria, elección entre categorías y puntuación sobre criterios definidos. Su arquitectura aparece etiquetada como `qwen3_5` en los metadatos de Hugging Face y utiliza código personalizado (`custom_code`), lo que implica que requiere el cargador incluido en el repositorio (`d3_mlx.py`) para funcionar.
 
-El modelo subyacente, `vllm-sr/d3-flash`, se apoya en la arquitectura Qwen3.5: según la receta oficial de vLLM, son 8,39B parámetros tomados de `Qwen/Qwen3.5-9B`, de los cuales 0,46B corresponden a un codificador de visión, e incorpora una "answer-code readout" junto con una cabeza de decisión. Esa cabeza es la que permite a vLLM servir el checkpoint como modelo de clasificación (`D3ForSequenceClassification`) en el endpoint `/v1/systemone`. La conversión MLX incluye el glue de inferencia necesario (`*_mlx.py`, `decision_config.json`, `joint_config.json`) para reproducir ese modo de decisión fuera de vLLM.
+La relevancia de esta publicación reside en su enfoque de despliegue local en Apple Silicon: el autor documenta métricas de rendimiento medidas en un Mac mini M4 Pro con 48 GB de memoria unificada, con un consumo máximo de RSS en torno a 10 GB y latencias de 1,3 a 2,3 segundos según la tarea. Además, incluye una auditoría de cuantización poco habitual, con KL por tensor y comparativa de calidad entre las versiones bf16, 8 bits y 4 bits sobre un conjunto de evaluación propio.
 
-Su relevancia práctica es acotada pero concreta: permite probar localmente en un Mac un modelo de 9B con capacidad de decisión y clasificación, sin depender de GPUs NVIDIA ni de un servidor vLLM. El interés es principalmente de prototipado y evaluación; el repositorio acumula 8 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks ni especificaciones de contexto o idiomas.
+El modelo conserva la licencia Apache 2.0 del repositorio upstream y está pensado para integrarse en flujos de triaje, enrutado y clasificación automatizada, más que para generación de texto libre. La información pública disponible no detalla la composición del dataset de entrenamiento ni los idiomas soportados, por lo que varios apartados de esta ficha quedan marcados como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Qwen3.5 (`qwen3_5`, `custom_code`) con codificador de visión de 0,46B y cabeza de decisión / readout de código de respuesta |
-| Parámetros totales | 8.392.695.024 (~8,39B), incluyendo 0,46B del codificador de visión |
-| Parámetros activos | no aplica (no es un modelo MoE según la información disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | 8 bits en formato MLX (única variante publicada en este repositorio); otras cuantizaciones no disponibles |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (heredada de los pesos originales; prevalece la licencia del repositorio upstream en caso de conflicto) |
-| Formato de pesos | `safetensors` en layout MLX, 4 shards (`model-00001..00004`) + `readout.safetensors`; incluye `config.json`, tokenizer, `chat_template.jinja`, `decision_config.json` y `joint_config.json` |
+| Arquitectura | Transformer con arquitectura etiquetada como `qwen3_5` y cabezas de decisión personalizadas (`custom_code`); incluye capas de atención lineal (`linear_attn`) según la auditoría de pesos |
+| Parametros totales | 8.392.695.024 |
+| Parametros activos | No aplica (no se describe como MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | 8 bits (esta conversión MLX); el autor publica también una variante de 4 bits en otro repositorio |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 (heredada del modelo upstream `vllm-sr/d3-flash`) |
+| Formato de pesos | Safetensors en layout MLX (4 shards) más `readout.safetensors`; incluye `config.json`, tokenizer, `chat_template.jinja`, `d3_mlx.py`, `decision_config.json` y `joint_config.json` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde al backbone de Qwen3.5, un transformer denso de 8,39B parámetros del que 0,46B pertenecen a un codificador de visión, según la receta `recipes/models/vllm-sr/d3-flash.yaml` del repositorio vllm-project/recipes. Sobre esa base, el modelo original `vllm-sr/d3-flash` añade un mecanismo de "answer-code readout" y una configuración de decisión (`decision_config.json`) que vLLM interpreta para servir el checkpoint como clasificador (`D3ForSequenceClassification`) en su endpoint `/v1/systemone`. El repositorio incluye además un `readout.safetensors` de 4 MB y ficheros `joint_config.json`, lo que sugiere una cabeza conjunta de decisión separada del cuerpo del modelo.
+La información disponible indica que el modelo original es `vllm-sr/d3-flash` y que esta publicación es únicamente una conversión a 8 bits para MLX, sin reentrenamiento ni cambios de arquitectura. Los metadatos etiquetan la arquitectura como `qwen3_5`, y la auditoría de pesos por tensor menciona capas de atención lineal (`language_model.layers.0.linear_attn.in_proj_a.weight`), lo que sugiere una combinación de atención estándar y atención lineal. No se dispone de detalles sobre el número de capas, dimensión oculta, cabezas de atención ni configuración del tokenizador más allá de los ficheros incluidos.
 
-Sobre el entrenamiento no hay información publicada en los materiales disponibles: se desconoce el volumen de tokens, la composición del dataset, si hubo RLHF, DPO u otra fase de alineamiento, y también el proceso exacto de destilación o ajuste desde `Qwen/Qwen3.5-9B`. La conversión MLX documentada aquí no altera nada de eso: aplica cuantización a 8 bits y reempaqueta los pesos, verificando los hashes SHA-256 de los shards en el momento de la subida. En cuanto a innovaciones técnicas, lo diferencial no está en el cuerpo del modelo sino en la mencionada cabeza de decisión y el endpoint System One de vLLM, que convierte una tarea de generación en una clasificación servida de forma nativa.
+El modelo incorpora un modo de decisión con cabezas específicas (`readout.safetensors`, `decision_config.json`, `joint_config.json`) que permiten emitir probabilidades sobre tareas de tipo `noul` (clasificación binaria), `choice` (elección entre criterios) y `score` (puntuación sobre una escala de criterios). No se han publicado datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. Tampoco se documentan innovaciones de decodificación especulativa ni técnicas de atención destacables más allá de la mencionada atención lineal.
 
 ## Capacidades
 
-- Generación de texto autoregresiva, al estar construido sobre el backbone Qwen3.5-9B.
-- Clasificación / toma de decisión mediante la cabeza de decisión y el readout de código de respuesta (`D3ForSequenceClassification` en vLLM, vía `/v1/systemone`).
-- Procesamiento multimodal: el backbone incluye un codificador de visión de 0,46B parámetros, por lo que la arquitectura admite entrada de imagen además de texto.
-- Modo de decisión con glue de inferencia propio en MLX (`*_mlx.py`, `decision_config.json`, `joint_config.json`), pensado para replicar localmente el comportamiento del endpoint de vLLM.
-- Compatibilidad con `mlx_lm` para carga y generación en Apple Silicon.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la información proporcionada.
-- Cobertura multilingüe: no disponible.
-- Modo "thinking" o decodificación especulativa: no disponible.
+- Toma de decisiones estructuradas: clasificación binaria (`noul`), elección entre categorías (`choice`) y puntuación sobre criterios (`score`), con salida de probabilidades por clase.
+- Procesamiento de texto: el autor reporta evaluaciones sobre entradas de texto de 512 tokens (479 tokens reales) con latencias de aproximadamente 1,3 segundos.
+- Procesamiento de imagen: soporta entradas de imagen de 512x512 combinadas con texto, con latencias de aproximadamente 2,3 segundos. La detección de cajas delimitadoras (box) no está soportada según la model card.
+- Integración con MLX: cargador propio (`d3_mlx.py`) para ejecución en Apple Silicon mediante `mlx_lm`.
+- Capacidades multilingües: no disponible.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Modo thinking: no disponible.
 
 ## Casos de uso
 
-- **Enrutado de peticiones en un pipeline de agentes**: la cabeza de decisión permite convertir la entrada del usuario en una etiqueta de acción (qué herramienta invocar, qué cola asignar) sin generar texto libre, lo que reduce latencia frente a un enfoque puramente generativo.
-- **Clasificación de tickets de soporte en local**: ejecutando el modelo con `mlx_lm` en un Mac se puede etiquetar por categoría y urgencia sin enviar los datos a un servicio externo, algo relevante cuando el contenido es sensible.
-- **Triaje de documentos con componente visual**: al incluir codificador de visión, encaja en flujos donde hay que decidir el tipo de un documento a partir de una captura o un escaneo antes de derivarlo a un OCR o a un extractor específico.
-- **Prototipado y evaluación en Apple Silicon**: investigadores que quieran medir el comportamiento del modelo `d3-flash` antes de desplegarlo en GPU pueden usar esta conversión de 9,4 GB para iterar sin aprovisionar hardware NVIDIA.
-- **Filtro previo en sistemas RAG**: usar el modelo como clasificador de consultas (respondible con el índice, fuera de dominio, requiere escalado a un modelo mayor), reduciendo el coste de las llamadas al modelo generador principal.
-- **Pruebas de integración del endpoint System One**: sirve para validar en local la lógica de decisión y el formato de respuesta que después se servirá en producción con vLLM y el checkpoint original en bf16.
-- **Evaluación de seguridad de contenido**: clasificación de entradas potencialmente dañinas en un paso previo a la generación, siempre que se valide empíricamente la calidad del clasificador, dado que no hay métricas publicadas.
+- Triaje de tickets de soporte: el modelo puede clasificar una incidencia entrante como «requiere reembolso» o no mediante la tarea `noul`, tal como muestra el ejemplo de la model card con el pedido #4411. Es adecuado por su latencia baja (en torno a 1,3 s en M4 Pro) y su salida probabilística, que permite fijar umbrales de derivación.
+- Enrutado a equipos: con la tarea `choice`, se puede decidir si un ticket debe ir al equipo de facturación o al de envíos, usando criterios definidos en la propia llamada. Encaja en pipelines de atención al cliente donde la clasificación debe ser explicable y configurable por criterios.
+- Priorización de incidencias: con la tarea `score` sobre una escala como `["cosmetic", "annoying", "blocks"]`, el modelo puntúa la severidad de un error (por ejemplo, «disk quota exceeded on the worker») y permite ordenar la cola de trabajo.
+- Clasificación de imágenes en flujos de moderación o inspección: al aceptar imagen 512x512 más texto, puede usarse para decidir si una captura o foto cumple un criterio binario, con un coste de aproximadamente 2,3 s por consulta en el hardware medido.
+- Despliegue local en estaciones de trabajo Apple Silicon: gracias a su formato MLX y a un consumo máximo de RSS de unos 10 GB, es viable en un Mac mini M4 Pro de 48 GB para tareas de clasificación internas sin depender de la nube.
+- Evaluación de calidad de cuantización en pipelines propios: el repositorio incluye scripts de auditoría KL (`kl_weight_audit.py`, `output_kl.py`) y resultados por tensor, lo que permite replicar la metodología para validar otras conversiones cuantizadas.
+- Filtrado previo en sistemas RAG o de moderación: usar la salida probabilística de `noul` como señal de confianza para decidir si un contenido pasa a un modelo mayor o se descarta, reduciendo coste computacional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card ni los resultados de búsqueda incluyen cifras de MMLU, HumanEval, GSM8K, evaluaciones de clasificación u otras métricas para `sergolsub/mlx-d3-flash-9B` ni para el checkpoint original `vllm-sr/d3-flash`.
+Los datos publicados por el autor corresponden a su propio conjunto de evaluación, no a benchmarks estándar como MMLU o HumanEval. Se presentan a continuación tal cual, comparando la versión original bf16 con las conversiones de 8 y 4 bits.
+
+| Version | Accuracy | noul | choice | score | PPL | KL de salida vs original | Disco | Latencia mediana |
+|---|---|---|---|---|---|---|---|---|
+| original (bf16) | 90,0 % | 92,5 % | 88,0 % | 88,0 % | 1,850 | referencia | 16,79 GB | 634 ms |
+| 8 bits (esta ficha) | 90,0 % | 92,5 % | 88,0 % | 88,0 % | 1,843 | 2,96e-04 | 9,35 GB | 646 ms |
+| 4 bits | 86,7 % | 85,0 % | 88,0 % | 88,0 % | 1,899 | 2,14e-02 | 5,38 GB | 604 ms |
+
+Mediciones de la versión de 8 bits en Mac mini M4 Pro de 48 GB: carga en 4,41 s, RSS máximo de 9,96 GB en reposo; texto de 512 tokens con latencias de 1.317 ms (binary), 1.417 ms (multichoice) y 1.316 ms (score); imagen 512x512 más texto con 2.279 ms, 2.290 ms y 2.276 ms respectivamente. Índice de decisión (Decision Index 0.4.1): 54,21.
+
+Auditoría de pesos: 759 tensores comparados, KL medio 2,17e-04, KL máximo 5,49e-03, 249 tensores con KL distinto de cero. La peor capa es `language_model.layers.0.linear_attn.in_proj_a.weight` con KL 5,49e-03.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM / memoria unificada estimada**: los pesos en 8 bits ocupan unos 9,35 GB (suma de los cuatro shards: 4,01 + 4,02 + 1,32 GB y 4 MB del readout). Con cache KV, tokenizer y overhead del runtime, conviene reservar del orden de 12-14 GB. Estimación propia, no publicada por el autor.
-- **Apple Silicon recomendado**: equipos con 16 GB de memoria unificada como mínimo ajustado; 24 GB o 32 GB para contextos largos o ejecución concurrente con otras aplicaciones. El modelo está pensado para `mlx_lm`, no para GPUs discretas.
-- **GPU NVIDIA**: esta conversión en MLX no se puede cargar en vLLM ni en TGI. Para el checkpoint original en bf16, LLM Explorer indica 16,8 GB de VRAM, lo que lo sitúa en el rango de una RTX 4090 (24 GB) o una A100/H100 para servir con vLLM.
-- **¿Cabe en GPU de consumo?** La variante MLX sí cabe en cualquier Mac con 16 GB o más. La variante bf16 original cabe en una RTX 4090 de 24 GB según la cifra de 16,8 GB de VRAM.
-- **Opciones de despliegue**: `mlx_lm` (carga y generación vía Python) y el servidor compatible con la API de OpenAI que incluye `mlx-lm`. Para el modelo original, vLLM con soporte de `D3ForSequenceClassification` en `/v1/systemone`. Ollama, llama.cpp y TGI no están soportados para estos pesos MLX según la información disponible.
-- **Latencia y throughput**: no disponibles. No hay cifras publicadas de tokens por segundo ni de latencia por petición.
+- VRAM/memoria unificada estimada: aproximadamente 10 GB de RSS máximo para la versión de 8 bits según medición del autor; el tamaño en disco es de 9,35 GB.
+- Hardware medido: Mac mini M4 Pro con 48 GB de memoria unificada.
+- Cabe en GPU de consumo: no hay datos para GPUs NVIDIA; el formato es MLX, orientado a Apple Silicon. Para GPUs convencionales habría que convertir los pesos, lo cual no está documentado.
+- Opciones de despliegue: `mlx_lm` en Apple Silicon mediante el cargador `d3_mlx.py` incluido en el repositorio. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: latencia mediana de 646 ms en el conjunto de evaluación; 1,3-1,4 s para texto de 512 tokens y 2,3 s para imagen 512x512 más texto en el hardware medido. El throughput no se publica.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| `sergolsub/mlx-d3-flash-9B` | 8,39B (0,46B visión) | no disponible | safetensors MLX 8 bits | Apache 2.0 | Conversión para Apple Silicon; incluye glue de decisión |
-| `vllm-sr/d3-flash` (upstream) | 8,39B (0,46B visión) | no disponible | safetensors bf16 | Apache 2.0 (heredada) | Checkpoint original; servible con vLLM como clasificador en `/v1/systemone`; ~16,8 GB de VRAM según LLM Explorer |
-| `sergolsub/mlx-drex-v1.5-9B` | ~9B (por el nombre) | no disponible | safetensors MLX (`qwen3_5_text`) | nace-ai-open-rail-m-license-modified | Otra conversión MLX del mismo autor; licencia más restrictiva y sin codificador de visión declarado |
-| `Qwen/Qwen3.5-9B` (base) | ~9B | no disponible | safetensors | no disponible en la información | Modelo del que parte `d3-flash`; sin cabeza de decisión ni readout específico |
+| sergolsub/mlx-d3-flash-9B (esta ficha) | 8,39 B | No disponible | Safetensors MLX 8 bits | Apache 2.0 | Modelo de decisión con cabezas específicas; 90,0 % de accuracy en eval propio |
+| sergolsub/d3-flash-9B-MLX-4bit | 8,39 B (aprox.) | No disponible | Safetensors MLX 4 bits | Apache 2.0 | 86,7 % de accuracy; 5,38 GB en disco; misma familia |
+| vllm-sr/d3-flash (upstream) | 8,39 B (aprox.) | No disponible | bf16 | Apache 2.0 | Referencia original; 16,79 GB en disco; 90,0 % de accuracy |
 
-No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de estas variantes en la información proporcionada, por lo que la comparativa se limita a parámetros, formato, licencia y disponibilidad.
+No se dispone de información sobre otros modelos comparables de la misma categoría (clasificación estructurada con cabezas de decisión) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Ausencia total de benchmarks**: no hay métricas publicadas de calidad, precisión de clasificación ni rendimiento en generación, ni para esta conversión ni para el modelo original. Cualquier uso en producción requiere una evaluación propia.
-- **Riesgo de alucinación**: al ser un modelo generativo de 9B, mantiene el riesgo habitual de producir contenido plausible pero falso, especialmente en el modo de generación libre. En el modo de decisión el riesgo se traslada a clasificaciones erróneas con alta confianza.
-- **Conversión no oficial**: la cuantización a 8 bits la realiza un tercero (sergolsub), no el equipo de `vllm-sr`. No hay evidencia publicada de que la precisión se mantenga respecto al checkpoint bf16; la cuantización a 8 bits puede degradar tareas sensibles a matices.
-- **Compatibilidad restringida**: los pesos están en layout MLX y solo se cargan con `mlx_lm`. No sirven para vLLM, TGI, llama.cpp ni Ollama, lo que limita el despliegue a hardware Apple.
-- **Contexto e idiomas desconocidos**: no se especifica la ventana de contexto ni la cobertura lingüística. No se debe asumir soporte de español ni de contextos largos sin verificarlo empíricamente.
-- **Estado del repositorio**: 8 descargas y 0 likes, creado el 24 de octubre de 2026 y actualizado dos días después. Es un artefacto de baja adopción y sin mantenimiento demostrado.
-- **Licencia**: Apache 2.0 permite uso comercial, pero la propia model card advierte de que, en caso de conflicto, prevalece la licencia del repositorio upstream (`vllm-sr/d3-flash`). Conviene revisar ese repositorio antes de un despliegue comercial.
-- **Soporte de visión incierto en esta conversión**: aunque el backbone incluye un codificador de visión de 0,46B, la model card no documenta cómo se pasa una imagen a través de `mlx_lm` en esta variante concreta. Verificar antes de diseñar un flujo multimodal.
-- **Ficheros auxiliares crípticos**: `decision_config.json`, `joint_config.json` y los `*_mlx.py` son glue específico del autor; su comportamiento no está documentado más allá del código, lo que añade riesgo de integración.
+- Modelo especializado en decisiones estructuradas: no está pensado para generación de texto libre ni para tareas generativas generales; su uso fuera del modo `decide` no está documentado.
+- Requiere código personalizado: la carga depende de `d3_mlx.py` y de los ficheros `decision_config.json` y `joint_config.json`; no es un modelo estándar de `transformers`.
+- Formato exclusivo MLX: no hay pesos GGUF ni safetensors estándar para GPUs NVIDIA, lo que limita el despliegue fuera de Apple Silicon.
+- La detección de cajas delimitadoras (box) no está soportada según la model card.
+- Idiomas soportados no documentados: riesgo de comportamiento degradado en idiomas distintos del inglés, que es el usado en los ejemplos.
+- Riesgo de alucinación: no evaluado en la información disponible; al tratarse de un clasificador con salida probabilística, conviene calibrar umbrales antes de producción.
+- Sesgos: no documentados.
+- Longitud de contexto no publicada: no se puede garantizar el comportamiento con entradas largas.
+- Licencia Apache 2.0 permite uso comercial, pero el autor indica que prevalece la licencia del repositorio upstream en caso de conflicto; conviene revisar `vllm-sr/d3-flash` antes de desplegar.
+- Las métricas de calidad proceden de un conjunto de evaluación propio del autor (100 filas en el cálculo de KL), no de benchmarks independientes; deben interpretarse con cautela.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sergolsub/mlx-d3-flash-9B
-- Modelo original: https://huggingface.co/vllm-sr/d3-flash
-- Receta de vLLM para `d3-flash`: https://github.com/vllm-project/recipes/blob/main/models/vllm-sr/d3-flash.yaml
-- Otra conversión MLX del mismo autor: https://huggingface.co/sergolsub/mlx-drex-v1.5-9B
-- Página de StartLux-Decision (posible trabajo relacionado, no confirmado como origen del modelo): https://decision.startlux.com/
-- Ficha en LLM Explorer del modelo original: https://llm-explorer.com/model/vllm-sr%2Fd3-flash,2P60bXUagsoPu2bJA27dUY
-- Modelo base de Qwen sobre el que se construye el backbone: https://huggingface.co/Qwen/Qwen3.5-9B (referenciado en la receta de vLLM; no verificado en la búsqueda)
+- Modelo upstream: https://huggingface.co/vllm-sr/d3-flash
+- Versión de 4 bits: https://huggingface.co/sergolsub/d3-flash-9B-MLX-4bit

@@ -2,132 +2,136 @@
 
 ## Resumen
 
-QEV-2B es un modelo de decisión multimodal de 2,21 mil millones de parámetros publicado por el usuario ken-jo en Hugging Face, construido como ajuste fino de Qwen/Qwen3.5-2B. Su particularidad es que no genera texto: recibe evidencia (texto e imágenes) junto con un conjunto de opciones candidatas y sus significados, y devuelve en una única pasada forward una probabilidad calibrada por opción, una respuesta tipada y una señal de abstención. Es, por tanto, un clasificador zero-shot con salida probabilística en lugar de un modelo generativo.
+QEV-2B es un modelo de decisión multimodal de 2.213 millones de parámetros desarrollado por ken-jo, afinado a partir de Qwen/Qwen3.5-2B. A diferencia de los modelos generativos convencionales, QEV-2B no produce texto libre: recibe evidencia (texto e imágenes) junto con un conjunto de opciones candidatas con sus significados, y devuelve en un único forward pass una probabilidad calibrada para cada opción, una respuesta tipada y una señal de abstención. Está pensado para tareas de clasificación y decisión donde se requiere una salida estructurada y cuantificada, no una generación abierta.
 
-El problema que aborda es el de los pipelines que hoy usan un LLM generativo para tareas de decisión (enrutado, extracción, moderación, grounding de interfaz) y pagan latencia y coste por tokens generados. QEV-2B sustituye esa generación por una cabeza de clasificación sobre las representaciones internas del modelo base, con calibración explícita y la posibilidad de declarar abstención cuando ninguna opción supera el umbral de confianza.
+La versión actual (v3) se centra en reducir el sobreajuste al formato de entrenamiento: diversifica los distractores, admite entre 3 y 6 opciones (frente a las 4 fijas anteriores) y re-renderiza parte de los ítems de Mind2Web. El modelo se publica bajo licencia Apache 2.0, con pesos en safetensors y una librería propia (`qev`). Su relevancia radica en ofrecer un pipeline de decisión calibrada con abstención a un tamaño que cabe en hardware de consumo, compitiendo con modelos de 4B o más en el índice público de decisión visual.
 
-El modelo declara una puntuación de 61,99 en el JEV Decision Index (visión, edición 0.3.2, parte pública), lo que lo situaría como el mejor modelo de hasta 2,3 B del tablero, por delante de d3-nano (2,21 B, 59,15) e incluso de modelos de 4,66 B como Intern-Decision-4B (61,69). Es importante subrayar que esa cifra es **autoevaluada y está pendiente de la ejecución oficial**, según indica el propio autor en la model card.
+El modelo está orientado al inglés y a tareas de clasificación zero-shot con entrada multimodal (visión y texto). Su punto fuerte declarado es la calibración de probabilidades y el mecanismo de early-exit, que permite descartar opciones de forma temprana y reducir cómputo.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (texto + visión) derivado de Qwen3.5-2B; 24 capas, con cabeza de salida temprana destilada en la capa 16 |
-| Parámetros totales | 2.213.241.664 (2,21 B) |
-| Parámetros activos | No aplica: no es un modelo MoE (no disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible; el repositorio publica pesos en safetensors sin cuantizaciones alternativas |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | Transformer multimodal (base Qwen3.5-2B) con cabeza de decisión tipada; no disponible el detalle exacto de la cabeza |
+| Parámetros totales | 2.213.241.664 (2,21B) |
+| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (pesos fusionados; incluye `exit16.safetensors` para el modo rápido) |
-| Resolución de imagen de entrada | Hasta 1,6 MP por imagen en modo accurate (sin presupuesto compartido entre varias imágenes); 0,26 MP en modo fast |
-| Salida | Probabilidad por opción, respuesta tipada y señal de abstención; sin tokens generados |
+| Formato de pesos | safetensors |
+| Pipeline | zero-shot-classification |
+| Librería | qev |
+| Tamaño del repositorio | 8,9 GB |
+| Modelo base | Qwen/Qwen3.5-2B |
 
 ## Arquitectura y entrenamiento
 
-QEV-2B parte de Qwen3.5-2B y lo convierte en un modelo de decisión: en lugar de decodificar texto, proyecta el estado final del transformer sobre las opciones candidatas que proporciona el usuario, produciendo una distribución de probabilidad calibrada. El modelo conserva el codificador visual del modelo base —acepta una o varias imágenes a resolución nativa de hasta 1,6 MP por imagen, sin reparto conjunto del presupuesto de píxeles— y expone dos profundidades de cómputo: profundidad completa (24 capas) en modo accurate y salida temprana en la capa 16 en modo fast, mediante una cabeza de salida destilada (`exit16.safetensors`).
+QEV-2B parte de Qwen3.5-2B, un transformer multimodal, y se afina para una tarea de decisión tipada: dada una evidencia (texto y una o más imágenes) y un conjunto de opciones con sus significados, el modelo emite probabilidades calibradas por opción, una respuesta tipada y una señal de abstención, todo en un solo forward pass sin generar tokens. La model card menciona explícitamente mecanismos de calibración de probabilidades, abstención y early-exit, aunque no detalla la implementación interna de la cabeza de decisión ni la composición exacta del dataset de entrenamiento en términos de número de tokens.
 
-El autor remite al informe técnico para la descripción completa de arquitectura, protocolo de entrenamiento, calibración y ablaciones; la model card no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO, por lo que esos datos deben considerarse no disponibles en la información proporcionada. Lo que sí se explicita es que la calibración está ajustada para el modo accurate, que el modo fast limita las imágenes a 0,26 MP y que la cabeza de salida temprana se evaluó contra profundidad completa con resultados prácticamente equivalentes en los conjuntos internos citados (85,0 % frente a 84,9 % en el split de selección de 1.859 ítems; 89,8 % frente a 90,6 % en NLVR2 dev; 88,8 % frente a 89,2 % en diagnósticos de imagen; 93,0 % frente a 92,8 % en diagnósticos de texto).
+El entrenamiento de la versión v3 se orientó a reducir el sobreajuste al formato. En la versión anterior, cada opción incorrecta se construía a partir de la respuesta a otra pregunta sobre la misma imagen, siempre con 4 opciones. La mezcla v3 conserva ese esquema como máximo en el 35% de los ítems; el resto emplea respuestas de otras imágenes, valores perturbados y anotaciones de la misma imagen, con entre 3 y 6 opciones. Además, el 60% de los ítems de Mind2Web se re-renderizan, 707 ítems de presencia de campo de CORD incluyen señuelos de texto de recibo, y se añaden 157 filas de entrenamiento nuevas (127 de Hateful Memes, 30 de A-OKVQA). La selección del checkpoint se hizo exclusivamente sobre conjuntos DEV (media del conjunto de selección de formato original y un DEV con distractores desplazados), sin usar filas de evaluación pública, y se excluyeron imágenes de entrenamiento con distancia dHash ≤ 4 respecto a cualquier imagen de evaluación. No se especifica en la información disponible si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación zero-shot multimodal: texto e imagen(es) de entrada más opciones candidatas con sus definiciones, devolviendo una probabilidad por opción.
-- Salida tipada (*typed decisions*): la respuesta no es texto libre sino una etiqueta estructurada con su distribución de probabilidad asociada.
-- Probabilidades calibradas: la confianza declarada está pensada para usarse directamente como umbral en producción.
-- Abstención explícita: el modelo puede señalar que ninguna opción es suficientemente probable, lo que permite derivar a revisión humana.
-- Inferencia en una sola pasada forward, sin generación de tokens, lo que reduce la latencia frente a esquemas generativos.
-- Salida temprana (*early exit*) en la capa 16 para un modo rápido de menor coste.
-- Comprensión de documentos, gráficos e infografías (evaluado en CharXiv e InfographicVQA).
-- Grounding de interfaz web y decisión sobre elementos (evaluado en Mind2Web).
-- Extracción de información clave en documentos (evaluado en KIE).
-- Verificación de emparejamiento imagen-texto (evaluado en Winoground).
-- Capacidad multilingüe: no disponible; el modelo declara únicamente inglés.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Capacidades de agente multi-paso: no disponible como tales; el modelo resuelve decisiones puntuales, no bucles de agente.
+- Clasificación zero-shot multimodal: acepta texto e imágenes y devuelve una probabilidad calibrada por cada opción candidata.
+- Decisiones tipadas: la salida incluye una respuesta con tipo definido, no texto libre generado.
+- Abstención explícita: el modelo puede señalar que no dispone de evidencia suficiente para decidir.
+- Early-exit: descarte temprano de opciones para reducir cómputo, con un modo rápido ("fast mode") que limita la profundidad y el número de imágenes.
+- Manejo de entre 3 y 6 opciones candidatas con distractores diversos.
+- Capacidades de visión aplicadas a gráficos, documentos, infografías, capturas de pantalla y memes.
+- Evaluado en tareas de moderación de contenido (Hateful Memes), extracción de información de documentos (CORD, FUNSD), comprensión de gráficos (ChartQA, CharXiv), razonamiento visual (BLINK, RealWorldQA, CV-Bench) y grounding composicional (Winoground).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- **Enrutado de tickets de soporte con abstención**: se pasan al modelo el texto del ticket y un conjunto cerrado de colas (facturación, técnico, cancelaciones, etc.); la probabilidad por opción permite enrutar automáticamente por encima de un umbral y derivar a un humano el resto gracias a la señal de abstención.
-- **Extracción de información clave (KIE) en documentos escaneados**: con 93,9 puntos en KIE, el modelo puede mapear campos de un formulario o factura a un esquema predefinido tratando cada campo como una decisión tipada, sin generar texto libre susceptible de alucinación.
-- **Moderación de contenido asistida por umbrales**: dada una imagen o un texto y un conjunto de categorías de política, el modelo devuelve la probabilidad por categoría; conviene combinarlo con revisión humana porque la puntuación absoluta en moderación (29,9) es baja en términos absolutos.
-- **Agentes web y automatización de interfaz**: con 82,3 en Mind2Web, el modelo sirve para decidir sobre qué elemento de una página actuar a partir de una captura y una instrucción, alimentando un ejecutor determinista de clics.
-- **Control de calidad de datasets multimodales**: verificación de que una imagen y su pie de foto se corresponden (Winoground, 65,5), útil para filtrar pares imagen-texto antes de entrenar otros modelos.
-- **Extracción de datos de gráficos e infografías**: con 83,1 en InfographicVQA y 63,4 en CharXiv, encaja en pipelines de banca, seguros o medios que necesitan leer valores concretos de figuras publicadas.
-- **Filtro previo de bajo coste en pipelines LLM**: como clasificador en modo fast (mediana de 91,6 ms), puede decidir si una consulta requiere un modelo grande, reduciendo el coste por petición en sistemas con mucho tráfico.
-- **Respuesta a preguntas sobre escenas del mundo real**: con 56,2 en RealWorldQA, es usable en asistentes de campo que deben elegir entre un conjunto finito de respuestas sobre una fotografía.
+- Moderación de contenido multimodal: clasificar memes e imágenes con texto como aptos o no aptos, usando la probabilidad calibrada y la señal de abstención para derivar los casos ambiguos a revisión humana. El modelo obtuvo un 66,03% de accuracy bruta en Hateful Memes, lo que lo hace adecuado como primera capa de filtrado, no como decisor final.
+- Extracción de campos de documentos: decidir la presencia o el valor de campos en recibos y formularios (CORD, FUNSD), con un 95,46% de accuracy bruta en KIE. La salida tipada facilita la integración en pipelines de procesamiento documental sin post-procesar texto generado.
+- Enrutamiento de tickets de soporte: dado un mensaje y una captura de pantalla, asignar el ticket a una categoría entre 3 y 6 opciones con una probabilidad calibrada, permitiendo umbrales de confianza y abstención cuando la evidencia es insuficiente.
+- Comprensión de gráficos e infografías: responder preguntas de opción múltiple sobre ChartQA, CharXiv o InfographicVQA (85,66% de accuracy bruta en esta última), útil para asistentes de análisis de datos que necesitan seleccionar una respuesta entre candidatas en lugar de generar texto.
+- Automatización de flujos web: decidir la siguiente acción o el elemento correcto en una página (Mind2Web, 87,05% de accuracy bruta), con la ventaja de una salida estructurada y probabilística que permite políticas de fallback.
+- Verificación de correspondencia imagen-texto: tareas de grounding composicional como Winoground (83,00% de accuracy bruta), para filtrar pares imagen-caption en datasets o en sistemas de búsqueda multimodal.
+- Clasificación de escenas y objetos con abstención: usar CV-Bench (83,07% de accuracy bruta) para etiquetar imágenes entre opciones predefinidas, con la señal de abstención como control de calidad en anotación semiautomática.
 
 ## Benchmarks y rendimiento
 
-JEV Decision Index, visión, edición 0.3.2, parte pública (tablero generado el 2026-10-16). Los valores de QEV-2B son **autoevaluados y están pendientes de ejecución oficial**; el intervalo bootstrap del 95 % del índice es 60,63–63,34 (60,59–63,43 agrupando filas que comparten imagen). Los benchmarks no se usaron para seleccionar el checkpoint.
+Los resultados son autoevaluados por el autor ("self-scored") y están pendientes de re-evaluación por el board público. El índice es la media ponderada de puntuaciones corregidas por azar, no la media de accuracy bruta.
 
-| Benchmark | QEV-2B (autoevaluado) | Mejor otro modelo ≤ 2,3 B | Peso |
-|---|---:|---|---:|
-| CV-Bench | 70,6 | 71,9 (d3-nano) | 1,0 |
-| BLINK | 47,2 | 53,8 (OneJev1.5-0.8B) | 1,0 |
-| RealWorldQA | **56,2** | 53,1 (d3-nano) | 1,0 |
-| CharXiv | 63,4 | 65,2 (d3-nano) | 1,0 |
-| InfographicVQA | 83,1 | 83,6 (d3-nano) | 1,0 |
-| Mind2Web | **82,3** | 63,7 (d3-nano) | 1,0 |
-| Winoground | 65,5 | 69,0 (d3-nano) | 1,0 |
-| KIE | **93,9** | 84,4 (Intern-Decision-2B) | 1,0 |
-| Moderation | **29,9** | 24,7 (OneJev1.5-0.8B) | 1,0 |
-| R-Bench-M | **16,8** | 15,5 (d3-nano) | 0,5 |
-| MMMU-Pro | 15,6 | 17,8 (d3-nano) | 0,25 |
-| **Índice** | **61,99** | 59,15 (d3-nano) | — |
+| Benchmark | Puntuación corregida por azar (%) | Accuracy bruta (%) | Filas | Peso |
+|---|---:|---:|---:|---:|
+| CV-Bench | 72,07 | 83,07 | 2038 | 1 |
+| BLINK | 48,29 | 66,60 | 961 | 1 |
+| RealWorldQA | 55,33 | 72,67 | 589 | 1 |
+| CharXiv | 65,41 | 74,06 | 532 | 1 |
+| InfographicVQA | 80,87 | 85,66 | 244 | 1 |
+| Mind2Web | 82,73 | 87,05 | 973 | 1 |
+| Winoground | 66,00 | 83,00 | 800 | 1 |
+| KIE (CORD+FUNSD) | 92,52 | 95,46 | 2465 | 1 |
+| Moderation (Hateful Memes) | 32,07 | 66,03 | 1213 | 1 |
+| R-Bench-M | 15,36 | 29,47 | 665 | 0,5 |
+| MMMU-Pro vision | 16,66 | 27,34 | 1730 | 0,25 |
+| **Índice** | **62,27** | — | — | — |
 
-Rendimiento y latencia declarados por el autor (loader de release, `qev.QEV.load` + `predict`, sin CUDA graphs ni kernels personalizados; RTX 4060 Ti de 8 GB, batch 1, en caliente; 47 perfiles de petición con hasta 16 opciones, el mayor de 3.229 tokens de entrada en modo accurate; 3 ejecuciones de calentamiento y 30 medidas por perfil):
+Comparativa en el índice público de decisión visual (edición 0.3.2 del board, fila QEV autoevaluada):
 
-| Modo | Tope de imagen | Profundidad | p95 peor caso | p50 mediana | Memoria GPU pico |
-|---|---:|---:|---:|---:|---:|
-| Accurate (por defecto) | 1,6 MP | 24 capas | 738,6 ms | 135,3 ms | 4,44 GiB |
-| Fast | 0,26 MP | 16 capas | 225,0 ms | 91,6 ms | 4,13 GiB |
+| Modelo | Parámetros | Índice (público) |
+|---|---:|---:|
+| d3-mini | 4,54B | 67,67 |
+| RSI-Jev v6.1 VL 4B | 4,66B | 63,01 |
+| RSI-Jev v5.0 VL 3B | 4,66B | 62,58 |
+| **QEV-2B (autoevaluado)** | **2,21B** | **62,27** |
+| Intern-Decision-4B | 4,66B | 61,69 |
+| Jev-Omni | 11,96B | 60,10 |
+| d3-nano | 2,21B | 59,15 |
+| Intern-Decision-2B | 2,27B | 52,92 |
+| OneJev1.5-0.8B | 1,11B | 52,32 |
 
-No se publica índice para el modo fast; las cifras de benchmark corresponden al modo de profundidad completa.
+Resultados en DEV con distractores desplazados y en holdout de formato original:
+
+| Conjunto | Versión anterior (%) | Versión actual (%) |
+|---|---:|---:|
+| DEV con distractores desplazados (9 directorios, media) | 84,90 | 88,79 |
+| Holdout de formato original (18 fuentes, media) | 89,15 | 88,96 |
+| Índice visual público (autoevaluado) | 61,99 | 62,27 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 4,44 GiB de pico en modo accurate y 4,13 GiB en modo fast, medidos como asignación pico de PyTorch con batch 1.
-- Cabe en GPU de consumo: el autor lo midió en una RTX 4060 Ti de 8 GB. Con 4,4 GiB de pico, una GPU de 6 GB o más debería ser suficiente, aunque no se documenta esa configuración.
-- GPU recomendadas: RTX 4060 Ti 8 GB (única verificada). Para mayor throughput o lotes mayores, GPU de 16–24 GB (RTX 4090, A100, H100) darían margen, si bien no hay cifras publicadas para ellas.
-- Despliegue: mediante la librería `qev` (`qev.QEV.load` + `predict`). No hay información sobre integración con vLLM, llama.cpp, Ollama o TGI, ni sobre formatos GGUF.
-- Latencia: p95 de 738,6 ms y p50 de 135,3 ms en modo accurate; p95 de 225,0 ms y p50 de 91,6 ms en modo fast. El perfil más lento en ambos modos es una petición con imagen y 16 opciones cerca del límite de tokens.
-- Throughput: no disponible (solo se publican latencias con batch 1).
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 2,21B parámetros, en FP16 serían aproximadamente 4,4 GB solo de pesos; el repositorio ocupa 8,9 GB, lo que sugiere pesos en precisión completa o múltiples artefactos. En cuantización de 8 bits cabría en torno a 2,5-3 GB y en 4 bits alrededor de 1,5-2 GB, aunque el autor no publica cifras oficiales.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, una RTX 4090 o una A100/H100 serían suficientes en FP16; una RTX 3090 o 4080 también deberían poder alojar los pesos.
+- Cabe en GPU de consumo: probablemente sí en tarjetas con 8 GB o más en FP16, y en tarjetas de 4-6 GB con cuantización, aunque no hay confirmación oficial.
+- Opciones de despliegue: la model card referencia una librería propia (`qev`). No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Dado que el modelo no genera tokens, los motores de inferencia generativa estándar podrían no ser directamente aplicables.
+- Latencia y throughput: la model card menciona un "fast mode" con límite de imágenes y profundidad, y un "worst-case p9" que aparece truncado en la información disponible. No se publican cifras completas de latencia ni de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Índice (público) | Contexto | Licencia | Disponibilidad |
-|---|---:|---:|---|---|---|
-| d3-mini | 4,54 B | 67,67 | no disponible | no disponible | no disponible en la información |
-| RSI-Jev v6.1 VL 4B | 4,66 B | 63,01 | no disponible | no disponible | no disponible en la información |
-| RSI-Jev v5.0 VL 3B | 4,66 B | 62,58 | no disponible | no disponible | no disponible en la información |
-| **QEV-2B** | **2,21 B** | **61,99 (autoevaluado)** | no disponible | Apache 2.0 | Hugging Face (`ken-jo/QEV-2B`) |
-| Intern-Decision-4B | 4,66 B | 61,69 | no disponible | no disponible | no disponible en la información |
-| Jev-Omni | 11,96 B | 60,10 | no disponible | no disponible | no disponible en la información |
-| d3-nano | 2,21 B | 59,15 | no disponible | no disponible | no disponible en la información |
-| Intern-Decision-2B | 2,27 B | 52,92 | no disponible | no disponible | no disponible en la información |
-| OneJev1.5-0.8B | 1,11 B | 52,32 | no disponible | no disponible | no disponible en la información |
+| Modelo | Parámetros | Índice público | Licencia | Disponibilidad |
+|---|---:|---:|---|---|
+| QEV-2B | 2,21B | 62,27 (autoevaluado) | Apache 2.0 | Hugging Face |
+| d3-mini | 4,54B | 67,67 | no disponible | no disponible |
+| RSI-Jev v6.1 VL 4B | 4,66B | 63,01 | no disponible | no disponible |
+| Intern-Decision-4B | 4,66B | 61,69 | no disponible | no disponible |
+| d3-nano | 2,21B | 59,15 | no disponible | no disponible |
+| Intern-Decision-2B | 2,27B | 52,92 | no disponible | no disponible |
 
-La comparación directa con d3-nano es la más pertinente: mismos 2,21 B de parámetros y misma categoría (modelo de decisión), con una diferencia declarada de 2,84 puntos de índice a favor de QEV-2B. Frente a Intern-Decision-2B (2,27 B) la ventaja declarada es de 9,07 puntos. Los modelos de 4,5–12 B del tablero quedan por debajo salvo d3-mini y las dos variantes RSI-Jev.
+QEV-2B ofrece un índice competitivo con modelos de más del doble de parámetros (RSI-Jev v6.1 VL 4B, Intern-Decision-4B) y supera a su competidor directo de tamaño similar (d3-nano, Intern-Decision-2B). La comparación es histórica y basada en la edición 0.3.2 del board; la fila de QEV es autoevaluada y el orden no implica ranking oficial de esta versión.
 
 ## Limitaciones y advertencias
 
-- La puntuación de 61,99 es **autoevaluada y está pendiente de la ejecución oficial**; no es una entrada oficial del leaderboard y el propio autor advierte que se sustituirá cuando exista la ejecución oficial.
-- Solo inglés: la model card declara `en` como único idioma, por lo que el uso en castellano no está soportado ni evaluado.
-- El modo fast reduce la resolución a 0,26 MP y pierde precisión frente al modo accurate, especialmente en documentos, gráficos y capturas de pantalla; además no tiene índice publicado.
-- La calibración está ajustada únicamente para el modo accurate; usar los umbrales del modo fast sin recalibrar puede degradar la fiabilidad de la abstención.
-- Rendimiento absoluto bajo en varias tareas: MMMU-Pro 15,6, R-Bench-M 16,8, Moderation 29,9 y BLINK 47,2. No es un modelo de razonamiento visual generalista.
-- Al no generar texto, no puede producir justificaciones ni explicaciones de su decisión; la trazabilidad se limita a la distribución de probabilidad.
-- Riesgo de alucinación estructuralmente distinto al de un LLM generativo, pero persiste el riesgo de sobreconfianza si la evidencia de entrada queda fuera de la distribución de entrenamiento; la señal de abstención mitiga, no elimina, ese riesgo.
-- No hay información sobre sesgos demográficos, de género o culturales evaluados.
-- No se documentan resultados de seguridad, red teaming ni robustez adversarial.
-- Licencia Apache 2.0: permite uso comercial y modificación, con las obligaciones habituales de atribución y conservación del aviso de licencia.
-- Modelo con 0 descargas y 0 likes en el momento de la ficha y librería propia (`qev`), lo que implica ausencia de validación independiente por la comunidad y dependencia de un runtime específico.
-- No se dispone de información sobre longitud de contexto máxima soportada; el mayor perfil evaluado es de 3.229 tokens de entrada.
+- Los resultados son autoevaluados y están pendientes de re-evaluación por el board público; las puntuaciones privadas son desconocidas hasta que se re-puntúe esta versión.
+- El modelo solo soporta inglés según la model card; no hay evidencia de capacidades multilingües.
+- Rendimiento bajo en tareas de razonamiento visual complejo: MMMU-Pro vision obtiene un 27,34% de accuracy bruta y R-Bench-M un 29,47%, muy por debajo de los benchmarks de clasificación.
+- La moderación de contenido (Hateful Memes) muestra un 66,03% de accuracy bruta y un 32,07% corregido por azar, insuficiente para uso autónomo en producción sin revisión humana.
+- Riesgo de sobreajuste al formato de opciones: aunque la v3 lo mitiga, el propio autor reconoce que la versión anterior estaba sobreajustada a 4 opciones construidas de una forma concreta.
+- Riesgo de alucinación: al no generar texto libre, el riesgo se traslada a la calibración de probabilidades; una probabilidad alta no garantiza corrección en dominios fuera de la distribución de entrenamiento.
+- No se detallan sesgos conocidos en la información disponible.
+- Licencia Apache 2.0 permite uso comercial, pero no se especifican restricciones adicionales sobre los datos de entrenamiento ni sobre el modelo base Qwen3.5-2B más allá de su propia licencia.
+- La dependencia de una librería propia (`qev`) puede limitar la portabilidad a stacks de inferencia estándar.
+- No se publican requisitos de hardware oficiales ni cifras completas de latencia, lo que dificulta la planificación de despliegues en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ken-jo/QEV-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Informe técnico (PDF): https://huggingface.co/datasets/ken-jo/decision-index-results/blob/main/reports/QEV-technical-report.pdf
-- Dataset de resultados del Decision Index: https://huggingface.co/datasets/ken-jo/decision-index-results
-- Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a definiciones de la palabra «ken» y no guardan relación con QEV-2B.
+- Dataset de resultados del índice de decisión: https://huggingface.co/datasets/ken-jo/decision-index-results

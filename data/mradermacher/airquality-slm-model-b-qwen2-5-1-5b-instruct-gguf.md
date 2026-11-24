@@ -2,49 +2,50 @@
 
 ## Resumen
 
-AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct-GGUF es una compilación de cuantizaciones estáticas en formato GGUF del modelo AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct, publicado por el usuario mradermacher en Hugging Face. El modelo base es un ajuste fino de Qwen2.5-1.5B-Instruct, un transformer decoder-only de 1.500 millones de parámetros desarrollado originalmente por Alibaba Cloud, orientado a tareas de generación de texto con instrucciones. El ajuste fino, atribuido a prajwal90, sugiere una especialización en el dominio de la calidad del aire, aunque la model card no detalla la composición del dataset ni el procedimiento de entrenamiento.
+AirQuality-SLM-Model-B es un ajuste fino de Qwen2.5-1.5B-Instruct orientado a tareas relacionadas con la calidad del aire. El modelo original fue publicado por el usuario prajwal90 en Hugging Face y esta variante ha sido cuantizada a GGUF por mradermacher, un conocido generador de cuantizaciones para la comunidad de llama.cpp y Ollama. El modelo hereda la arquitectura transformer decoder-only de Qwen2.5 y su licencia Apache 2.0.
 
-El repositorio no aporta información sobre licencia, idiomas soportados, pipeline ni resultados de evaluación. La única documentación disponible es una serie de metadatos internos del proceso de cuantización (versión de cuantizador, tipo de conversión y lista de cuantizaciones generadas). Esto limita considerablemente la evaluación rigurosa del modelo, pero el formato GGUF y el tamaño compacto lo hacen relevante para despliegues en CPU, dispositivos de borde y entornos con recursos limitados donde se requiera un asistente especializado en calidad del aire.
+La relevancia de esta ficha esta en su caracter de modelo pequeno (small language model, SLM) especializado: con 1.543.714.304 parametros totales, puede ejecutarse en hardware de consumo y en entornos con recursos limitados, lo que lo hace atractivo para despliegues en dispositivos perifericos, estaciones de monitorizacion ambiental o aplicaciones de bajo coste donde no es viable un modelo de mayor tamano.
 
-La relevancia actual radica en la posibilidad de ejecutar un modelo de lenguaje especializado de 1.5B parámetros en hardware de consumo mediante llama.cpp u Ollama, con cuantizaciones que van desde Q2_K hasta Q8_0 y F16. No obstante, la ausencia de datos sobre el ajuste fino, la licencia y el rendimiento real obliga a tratar esta ficha como una referencia técnica preliminar.
+El repositorio ofrece un conjunto amplio de cuantizaciones GGUF (desde Q2_K hasta f16) que cubren desde 0,8 GB hasta 3,2 GB en disco, lo que permite ajustar el equilibrio entre calidad y consumo de memoria segun el hardware disponible. No se dispone de informacion publicada sobre el dataset de ajuste fino, los benchmarks ni las capacidades especificas mas alla de las heredadas del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base: Qwen2.5-1.5B-Instruct) |
-| Parametros totales | 1.500 millones (aproximado, según modelo base) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el modelo base Qwen2.5-1.5B-Instruct soporta hasta 32.768 tokens, pero no se confirma en esta ficha) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-1.5B-Instruct) |
+| Parametros totales | 1.543.714.304 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible (el modelo base Qwen2.5-1.5B-Instruct soporta 32.768 tokens, pero no se confirma en esta ficha) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a Qwen2.5-1.5B-Instruct, un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). El modelo base fue entrenado por Alibaba Cloud con un corpus multilingüe de gran escala y posteriormente alineado mediante instrucciones y preferencias humanas, aunque los detalles exactos del pipeline de alineación del modelo base no se reproducen en esta ficha.
+La arquitectura subyacente es la de Qwen2.5-1.5B-Instruct, un transformer decoder-only denso con atencion causal estandar. No se dispone de informacion sobre el proceso de ajuste fino que dio lugar a AirQuality-SLM-Model-B: se desconoce el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO o SFT, y que innovaciones tecnicas concretas introduce respecto al modelo base. La model card del repositorio de cuantizacion es una plantilla generica de mradermacher y no aporta detalles sobre el entrenamiento del modelo original.
 
-El ajuste fino AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct, del que no se documenta la composición del dataset, el número de tokens de entrenamiento ni si se emplearon técnicas de RLHF o DPO, se desconoce en detalle. El repositorio de mradermacher se limita a generar cuantizaciones estáticas del modelo original mediante un proceso de conversión a GGUF (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1). No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+Lo unico verificable es que se trata de una cuantizacion estatica (no weighted/imatrix, segun indica el autor) del modelo prajwal90/AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct. Las cuantizaciones se generaron con la version 2 del pipeline de mradermacher y el tensor de salida esta cuantizado. No se han publicado pesos en formato safetensors en este repositorio, solo GGUF.
 
 ## Capacidades
 
-- Generación de texto condicionada por instrucciones, heredada del modelo base Qwen2.5-1.5B-Instruct.
-- Razonamiento básico y respuesta a preguntas, con especialización presumible en el dominio de calidad del aire (no verificada).
-- Generación de código y matemáticas a nivel de modelo pequeño (capacidad limitada por el tamaño de 1.5B parámetros).
-- Soporte de tool calling y function calling: no confirmado en esta ficha; el modelo base Qwen2.5-Instruct lo soporta, pero no se verifica en el ajuste fino.
+- Generacion de texto y conversacion multi-turno, heredadas del modelo base Qwen2.5-1.5B-Instruct.
+- Razonamiento basico y respuesta a instrucciones en ingles.
+- Capacidad de chat gracias a la etiqueta `chat` y al ajuste instruct del modelo base.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible para este ajuste fino concreto; el modelo base Qwen2.5-1.5B-Instruct lo soporta, pero no hay evidencia de que se haya preservado tras el ajuste.
 - Capacidades de agente y razonamiento multi-paso: no confirmadas.
-- Capacidades multilingües: no disponibles.
-- Modo thinking, visión o audio: no disponibles.
+- Capacidades multilingues: la model card declara unicamente `en`; no se confirma soporte de otros idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Asistente de consulta sobre calidad del aire en dispositivos de borde: el modelo, cuantizado en Q4_K_M o Q5_K_M, puede ejecutarse en CPU o en GPUs de consumo para responder preguntas sobre índices de calidad del aire, contaminantes y recomendaciones, siempre que el ajuste fino haya cubierto ese dominio.
-- Clasificación y resumen de informes medioambientales: con 1.5B parámetros y cuantización Q8_0, puede procesar textos de informes y generar resúmenes estructurados en entornos con recursos limitados.
-- Integración en aplicaciones móviles o IoT: el formato GGUF y las cuantizaciones Q2_K a Q4_K_S permiten desplegar el modelo en dispositivos con poca memoria (menos de 2 GB en Q2_K), útil para estaciones de monitorización con capacidad de cómputo reducida.
-- Generación de respuestas en chatbots de dominio específico: el modelo puede gestionar conversaciones multi-turno si el contexto del modelo base (hasta 32.768 tokens, no confirmado en el ajuste) se mantiene, aunque la calidad en dominios ajenos al ajuste fino es incierta.
-- Prototipado rápido con llama.cpp u Ollama: las cuantizaciones estáticas permiten probar el modelo en local sin infraestructura GPU, adecuado para validar hipótesis sobre el ajuste fino antes de invertir en despliegues mayores.
-- Filtrado y extracción de entidades en textos sobre contaminación: el modelo puede emplearse para tareas de extracción de información (contaminantes, niveles, ubicaciones) en pipelines de procesamiento de datos medioambientales, sujeto a validación empírica.
+- Asistente conversacional especializado en calidad del aire: el modelo puede responder preguntas sobre contaminantes, indices AQI y recomendaciones sanitarias en ingles, aprovechando su ajuste fino tematico y su bajo coste de inferencia.
+- Despliegue en dispositivos perifericos o edge: con cuantizaciones de 0,8 a 1,1 GB (Q2_K a Q4_K_M), cabe en Raspberry Pi 5 con 8 GB de RAM o en mini-PC con CPU, lo que permite integraciones en estaciones de monitorizacion ambiental sin GPU.
+- Prototipado rapido de aplicaciones de chat: al estar en formato GGUF, se puede cargar directamente en llama.cpp u Ollama para validar flujos conversacionales antes de invertir en modelos mayores.
+- Educacion y divulgacion ambiental: generacion de explicaciones accesibles sobre normativa de calidad del aire, efectos de PM2.5 y PM10, y habitos de proteccion, con latencia baja en hardware modesto.
+- Clasificacion y resumen de informes ambientales: el modelo puede resumir textos tecnicos o extraer conclusiones de boletines de calidad del aire, aunque su ventana de contexto efectiva no esta confirmada.
+- Filtrado y preprocesado en pipelines de datos: uso como modelo auxiliar para etiquetar o normalizar consultas ciudadanas sobre contaminacion antes de pasarlas a un modelo mayor.
+- Demo educativa de cuantizacion: el repositorio ofrece 12 variantes GGUF con tamanos documentados, lo que lo convierte en un caso practico para estudiar el impacto de la cuantizacion en calidad y memoria.
 
 ## Benchmarks y rendimiento
 
@@ -52,43 +53,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización, aproximada para 1.5B parámetros):
-  - Q2_K: ~1,0-1,3 GB
-  - Q3_K_S / Q3_K_M / Q3_K_L: ~1,3-1,6 GB
-  - Q4_K_S / Q4_K_M / IQ4_XS: ~1,6-2,0 GB
-  - Q5_K_S / Q5_K_M: ~2,0-2,3 GB
-  - Q6_K: ~2,3-2,6 GB
-  - Q8_0: ~2,8-3,2 GB
-  - F16: ~3,0-3,5 GB
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4-Q8; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son compatibles, aunque el modelo es pequeño y no aprovecha GPUs de gama alta.
-- Cabe en GPU de consumo: sí, en la mayoría de GPUs consumer con 4 GB o más de VRAM, e incluso en CPU con suficiente RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~0,8 GB
+  - Q3_K_S / Q3_K_M: ~0,9 GB
+  - Q3_K_L / IQ4_XS / Q4_K_S: ~1,0 GB
+  - Q4_K_M: ~1,1 GB
+  - Q5_K_S / Q5_K_M: ~1,2 GB
+  - Q6_K: ~1,4 GB
+  - Q8_0: ~1,7 GB
+  - f16: ~3,2 GB
+- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM libre para cuantizaciones Q4, como GTX 1650, RTX 3050, RTX 4060 o superiores. Para f16 se recomienda al menos 4 GB de VRAM (GTX 1650 Super, RTX 3050 6 GB o superior).
+- Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas modernas e incluso en iGPU con memoria compartida suficiente.
+- Cabe en CPU: si, con cuantizaciones Q4_K_M o inferiores en equipos con 4 GB de RAM o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y cualquier runtime compatible con GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con endpoints de Hugging Face.
+- Latencia y throughput estimados: no disponibles. Al ser un modelo de 1.5B en GGUF, se espera una generacion en tiempo real en GPU consumer y varios tokens por segundo en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct-GGUF | 1.5B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache 2.0 (modelo base) | safetensors, GGUF | Hugging Face (Qwen) |
-| Llama 3.2 1B Instruct | 1.2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face (Meta) |
-| SmolLM2-1.7B-Instruct | 1.7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face (HuggingFaceTB) |
+| AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct-GGUF | 1,54 B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Qwen2.5-1.5B-Instruct (base) | 1,54 B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
-La comparativa se basa en el modelo base Qwen2.5-1.5B-Instruct y alternativas de tamaño similar; no se dispone de datos de rendimiento del ajuste fino AirQuality-SLM para comparar benchmarks.
+La comparativa se limita a parametros, contexto, licencia y disponibilidad porque no hay datos de rendimiento publicados para el modelo especializado. El modelo base Qwen2.5-1.5B-Instruct es la referencia natural, y las alternativas de la misma categoria (SLM de 1-2B) compiten en el mismo segmento de despliegue en hardware modesto.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base (Qwen2.5-1.5B-Instruct, Apache 2.0) y del ajuste fino antes de usarlo en producción.
-- Idiomas no disponibles: se desconoce si el ajuste fino conserva el multilingüismo del modelo base o se ha restringido a un idioma concreto.
-- Riesgo de alucinación: como todo modelo de 1.5B parámetros, la precisión factual es limitada, especialmente en dominios técnicos como la calidad del aire, donde datos numéricos o normativos incorrectos pueden tener consecuencias.
-- Sesgos conocidos: no documentados; el modelo base Qwen2.5 puede presentar sesgos de entrenamiento no evaluados en este ajuste fino.
-- Limitaciones de contexto: no se confirma la longitud de contexto efectiva del ajuste fino; el modelo base soporta 32.768 tokens, pero el ajuste podría haberla reducido.
-- Especialización no verificada: no hay evidencia publicada de que el ajuste fino mejore el rendimiento en calidad del aire frente al modelo base.
-- Sin benchmarks ni evaluaciones: no se puede estimar su calidad relativa frente a alternativas.
-- Repositorio con 0 descargas y 0 likes: escasa validación comunitaria; el modelo no ha sido probado de forma independiente.
+- Sesgos conocidos: no se han documentado sesgos especificos para este ajuste fino; al derivar de Qwen2.5, puede heredar sesgos presentes en los datos de entrenamiento del modelo base.
+- Riesgo de alucinacion: alto en un modelo de 1,5B, especialmente en dominios tecnicos como normativa ambiental, donde puede inventar valores limite o referencias legales.
+- Limitaciones de contexto o idioma: la model card declara unicamente ingles; no se confirma el soporte de castellano ni de otros idiomas. La longitud de contexto efectiva del ajuste fino no esta verificada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar que el ajuste fino no introduzca datos con licencias incompatibles; no hay informacion al respecto.
+- Caveats para produccion: no hay benchmarks publicados, ni evaluacion de calidad del ajuste fino, ni documentacion del dataset. El modelo no deberia usarse en produccion sin una evaluacion propia en el dominio objetivo. Las cuantizaciones Q2_K y Q3_K_M tienen calidad reducida segun el propio autor.
+- Advertencia sobre el ajuste fino: al no conocerse el proceso de entrenamiento, no se puede garantizar que las capacidades de tool calling o el formato de chat del modelo base se hayan preservado.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct-GGUF
-- Modelo base del ajuste fino: https://huggingface.co/prajwal90/AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct
-- Modelo original Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Repositorio GGUF: https://huggingface.co/mradermacher/AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct-GGUF
+- Modelo base (ajuste fino): https://huggingface.co/prajwal90/AirQuality-SLM-Model-B-Qwen2.5-1.5B-Instruct
+- Modelo base original (Qwen2.5-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Licencia Apache 2.0 del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
+- Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#AirQuality-SLM-Model-B-Instruct-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

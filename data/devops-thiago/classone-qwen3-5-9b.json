@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Duolingo - The world’s most popular way to learn",
-      "url": "https://www.duolingo.com/",
-      "snippet": "Learn languages by playing a game. It's 100% free, fun, and scientifically proven to work."
-    },
-    {
-      "title": "Duolingo - La forma más popular del mundo para aprender",
-      "url": "https://es.duolingo.com/",
-      "snippet": "Cursos gratis, divertidos y efectivos de idiomas y más. Aprende con lecciones rápidas y basadas en la ciencia, personalizadas para ti."
-    },
-    {
-      "title": "Duolingo - Ứng dụng học tập phổ biến nhất thế giới",
-      "url": "https://vi.duolingo.com/",
-      "snippet": "miễn phí. vui nhộn. hiệu quả Học cùng Duolingo rất vui nhộn, các nghiên cứu đã chứng minh ứng dụng thật sự hiệu quả! Các bài …"
-    },
-    {
-      "title": "Duolingo - A világ legnépszerűbb nyelvtanulási módja",
-      "url": "https://hu.duolingo.com/",
-      "snippet": "Tanulj meg játszás közben nyelveket! 100%-ig ingyenes, szórakoztató, a működése pedig tudományosan igazolt."
-    },
-    {
-      "title": "Duolingo",
-      "url": "https://ja.duolingo.com/",
-      "snippet": "duolingo english test Duolingo English Testは、便利でスピーディーかつ手頃な英語力認定テストです。 最新の評価科学とAIを統合 …"
-    }
-  ]
+  "sources": []
 }

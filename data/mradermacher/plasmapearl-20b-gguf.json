@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/PlasmaPearl-20B-GGUF",
+  "slug": "mradermacher-plasmapearl-20b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PlasmaPearl-20B-GGUF",
+  "created_at": "2025-09-06T11:10:01.000Z",
+  "updated_at": "2026-11-24T00:26:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Elfrino/PlasmaPearl-20B",
+    "base_model:quantized:Elfrino/PlasmaPearl-20B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 19994362880,
+  "parameters_human": "19.99B",
+  "storage_bytes": 136150456640,
+  "storage_human": "136.2 GB",
+  "context_length": 4096,
+  "base_model": "Elfrino/PlasmaPearl-20B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,110 +2,105 @@
 
 ## Resumen
 
-`axteam/MiniCPM-V-4.7-35B-A3B-FP8-dynamic` es una cuantización en FP8 del modelo multimodal `openbmb/MiniCPM-V-4.7-35B-A3B`, publicada por el usuario axteam (no por OpenBMB) y pensada específicamente para servicio con vLLM. El modelo base es el primer miembro de la familia MiniCPM-V con arquitectura de mezcla de expertos (MoE): 35.212.875.824 parámetros totales con aproximadamente 3 B activos por token (sufijo A3B), torre de visión y pipeline `image-text-to-text` para comprensión de imagen única, multiimagen y vídeo.
+MiniCPM-V-4.7-35B-A3B-FP8-dynamic es una cuantización de 8 bits del modelo multimodal openbmb/MiniCPM-V-4.7-35B-A3B, publicada por el usuario axteam. El modelo base es un transformer multimodal de tipo Mixture of Experts (MoE) con backbone Qwen3.5-MoE, torre de visión y módulo de fusión visión-texto, orientado a tareas de image-text-to-text. Esta versión cuantizada emplea el esquema FP8_DYNAMIC de compressed-tensors (W8A8) y está pensada específicamente para servir el modelo con vLLM.
 
-El checkpoint aplica cuantización post-entrenamiento W8A8 sin calibración: pesos FP8 E4M3 con escala por canal y activaciones FP8 dinámicas por token, almacenados en el formato `FP8_DYNAMIC` de compressed-tensors. Solo se cuantizan las proyecciones de atención y MLP del backbone del modelo de lenguaje; la torre de visión, el merger visión-texto, los embeddings, la cabeza LM y todas las RMSNorm permanecen en BF16. El resultado ocupa unos 34,3 GB en disco (37 GB de repositorio), frente a los pesos BF16 originales.
+La relevancia de esta ficha radica en que reduce el peso en disco del modelo original a aproximadamente 36,9 GB manteniendo una fidelidad muy alta respecto al BF16: una recuperación media del 99,9% en los benchmarks medidos y una perplejidad solo un 1,7% superior. Esto permite desplegar un modelo multimodal de 35.212.875.824 parámetros totales en infraestructura con GPUs Ada, Hopper o Blackwell, sin recalibración (cuantización data-free) y conservando la licencia Apache-2.0 del original.
 
-Su relevancia práctica es doble: por un lado, permite servir un multimodal de 35 B con activación de 3 B en hardware Hopper o Ada con la receta estándar de vLLM; por otro, el modelo base que cuantiza se presentó públicamente como el primer MoE multimodal open source orientado a ejecución en dispositivo, con cifras de memoria del orden de 3 GB en la familia (no en este checkpoint FP8). Todo lo relativo a contexto, idiomas y benchmarks de este repositorio concreto no está documentado en la información disponible.
+El checkpoint se publicó el 28 de octubre de 2026 y se actualizó el 2 de noviembre de 2026 con una corrección de config.json que afecta a la carga de la torre de visión en vLLM. Es un detalle crítico para producción: las revisiones anteriores a esa fecha pueden producir respuestas incorrectas ante entradas de imagen.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal con torre de visión; la model card indica backbone Qwen3.5-MoE |
-| Parametros totales | 35.212.875.824 (35,2 B) |
-| Parametros activos | Aproximadamente 3 B (sufijo A3B; no se publica el desglose por experto) |
+| Arquitectura | MoE (backbone Qwen3.5-MoE) con torre de visión y fusión visión-texto; multimodal image-text-to-text |
+| Parametros totales | 35.212.875.824 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 E4M3 W8A8: pesos FP8 per-channel, activaciones FP8 dinámicas per-token, esquema `FP8_DYNAMIC` de compressed-tensors, sin calibración (data-free) |
-| Idiomas soportados | no disponible (la validación de calidad se hizo en inglés y coreano) |
+| Tipos de cuantizacion | FP8 dinámico (W8A8, FP8 E4M3 per-channel en pesos y FP8 per-token dinámico en activaciones); visión, embeddings, LM head, RMSNorms y routers MoE se mantienen en BF16 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors con compressed-tensors (compatible con transformers y vLLM) |
-| Modelo base | openbmb/MiniCPM-V-4.7-35B-A3B |
-| Relacion con el base | quantized (derivado cuantizado, sin reentrenamiento) |
-| Tamano en disco | ~34,3 GB (repositorio de 37,0 GB) |
-| Pipeline | image-text-to-text |
-| Componentes mantenidos en BF16 | Torre de visión, merger visión-texto, embeddings de tokens, LM head y todas las RMSNorm |
+| Formato de pesos | safetensors con compressed-tensors (`float-quantized`, esquema `FP8_DYNAMIC`); ~36,9 GB en disco |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue un diseño multimodal compuesto por una torre de visión y un backbone de lenguaje con mezcla de expertos, tal como describe la model card del checkpoint cuantizado (que identifica el backbone como Qwen3.5-MoE). El pipeline es `image-text-to-text`: las imágenes se codifican con la torre de visión, se proyectan mediante un merger visión-texto y se inyectan como tokens en el modelo de lenguaje, que genera la respuesta. El repositorio es una conversión de pesos, no un entrenamiento nuevo: la tokenización y el `chat_template` son idénticos a los del modelo original.
+El modelo base es un transformer multimodal con backbone MoE Qwen3.5-MoE, que combina atención (incluida atención lineal) y proyecciones MoE/MLP, junto con una torre de visión y un merger visión-texto. Esta publicación no entrena el modelo: aplica cuantización post-entrenamiento (PTQ) sin recalibración ni datos de calibración, transformando las proyecciones de atención y MoE/MLP a FP8, mientras mantiene en BF16 aproximadamente el 5% de los parámetros (torre de visión, merger, embeddings de tokens, LM head, RMSNorms y routers `mlp.gate` y `shared_expert_gate`). El tokenizer y el chat_template son idénticos a los del original.
 
-La innovación técnica de este checkpoint es la política de cuantización: cuantización post-entrenamiento (PTQ) sin datos de calibración, con pesos FP8 E4M3 escalados por canal y activaciones cuantizadas dinámicamente por token, aplicada exclusivamente a las proyecciones de atención y MLP del backbone de lenguaje. Los módulos sensibles a la precisión (visión, merger, embeddings, LM head y normalizaciones) se conservan en BF16, lo que limita la degradación pero también el ahorro de memoria en esas partes. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si el modelo base usó RLHF o DPO.
+La innovación técnica principal de esta ficha es la cuantización dinámica W8A8 con compressed-tensors, que reduce el espacio en disco y acelera la inferencia en GPUs con soporte FP8 nativo. La revisión del 2 de noviembre de 2026 corrigió los patrones de exclusión del config.json para que vLLM no cuantice la torre de visión: se añadieron `re:vpm\..*` y `re:vit_merger\..*` y se ampliaron los patrones existentes a `re:(model\.)?visual\..*`, `re:(model\.)?vision_tower\..*` y `re:(model\.)?merger\..*`. No se modificaron los pesos. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal a partir de imágenes (pipeline `image-text-to-text`).
-- Comprensión de imagen única y multiimagen, según las capacidades declaradas de la familia MiniCPM-V 4.7.
-- Comprensión de vídeo, según las capacidades declaradas de la familia MiniCPM-V 4.7.
-- Procesamiento de texto e imágenes en una misma conversación multi-turno (`conversational`).
-- Servicio de alto rendimiento con vLLM mediante el formato `FP8_DYNAMIC` de compressed-tensors.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`) y con la librería transformers.
-- Modo Instruct citado en la comparativa pública de OpenBMB; no se detalla su funcionamiento en la información disponible.
-- Soporte de tool calling / function calling: no disponible en la documentación del repositorio.
-- Capacidades de agente y razonamiento multi-paso: no disponibles en la documentación del repositorio.
-- Idiomas: no se publica lista oficial; la validación de la cuantización se realizó en inglés y coreano.
+- Generación de texto y razonamiento multimodal: pipeline image-text-to-text, con capacidad de describir imágenes y responder preguntas sobre ellas.
+- Procesamiento de imágenes: la torre de visión se mantiene en BF16 para preservar la calidad de la representación visual.
+- Razonamiento y matemáticas: los benchmarks reportados incluyen MMLU, GSM8K, ARC-Challenge, Winogrande, KMMLU y HAE-RAE, lo que evidencia capacidades de razonamiento general y aritmético.
+- Capacidades multilingües: los benchmarks incluyen KMMLU (coreano) y HAE-RAE (coreano), lo que sugiere soporte al menos parcial de coreano además del inglés; el conjunto de evaluación de fidelidad es mixto inglés/coreano.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades especiales (modo thinking, audio, etc.): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Servicio de VQA en producción con vLLM: el checkpoint está diseñado para `vllm serve`, de modo que se puede desplegar un endpoint de preguntas sobre imágenes con pesos de 34,3 GB y activación de aproximadamente 3 B por token, lo que reduce el coste de cómputo por petición frente a un modelo denso del mismo tamaño.
-- Análisis de múltiples imágenes en una sola consulta: comparación de productos, verificación de estados de envío o inspección visual de lotes, aprovechando la capacidad multiimagen de la familia; la ventana de contexto aplicable no está publicada.
-- Comprensión de vídeo para resumen y moderación: generación de descripciones o extracción de eventos en grabaciones, una de las capacidades declaradas del modelo base.
-- Digitalización de documentos y formularios: extracción de campos a partir de capturas o escaneos en un pipeline de back office, sustituyendo al modelo BF16 cuando el objetivo es reducir el coste por GPU.
-- Evaluación comparativa interna de modelos multimodales: usar esta variante FP8 como referencia de coste reducido frente al BF16 para medir la pérdida de calidad en las tareas propias antes de adoptar la cuantización en producción.
-- Asistencia a accesibilidad: descripción automática de imágenes para usuarios con discapacidad visual, integrada en una API interna servida con vLLM.
-- Extracción de información en atención al cliente: procesar capturas enviadas por usuarios (errores, recibos, productos dañados) y devolver un resumen estructurado al sistema de ticketing.
-- Nota importante: el mensaje de despliegue en dispositivo de la familia MiniCPM-V 4.7 (del orden de 3 GB de memoria) corresponde a otras variantes del modelo base, no a este checkpoint FP8 de 34,3 GB.
+- Descripción y análisis de imágenes en producción: el modelo puede recibir una imagen y generar descripciones o responder preguntas sobre su contenido; la torre de visión en BF16 y la corrección del config.json garantizan que las respuestas visuales sean correctas en vLLM 0.32.
+- Asistencia documental con OCR y comprensión de capturas: útil para extraer información de imágenes de documentos, gráficos o pantallas, integrándose en pipelines de procesamiento por lotes.
+- Moderación de contenido visual: clasificación y descripción de imágenes subidas por usuarios, aprovechando el pipeline image-text-to-text para generar etiquetas o resúmenes.
+- Evaluación de calidad en entornos con restricciones de memoria: al ocupar ~36,9 GB en disco y usar FP8, permite desplegar un modelo de 35B en GPUs con 48-80 GB de VRAM, algo inviable con el BF16 original en el mismo hardware.
+- Servicio de chat multimodal con vLLM: el checkpoint está diseñado para vLLM ≥ 0.32.0, lo que facilita el despliegue con batching continuo y endpoints compatibles.
+- Investigación en cuantización: sirve como referencia reproducible para estudiar la fidelidad de FP8 dinámico frente a BF16, AWQ-8bit, NVFP4A16, NVFP4 y AWQ-4bit en un modelo multimodal MoE.
+- Evaluación multilingüe inglés/coreano: los benchmarks KMMLU y HAE-RAE permiten usar el modelo en tareas de comprensión en coreano junto con inglés.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo indica que la cuantización se comprobó frente al original BF16 mediante perplejidad y acuerdo top-1 en inglés y coreano, sin publicar valores numéricos. La documentación de OpenBMB citada en la búsqueda afirma una puntuación global superior a Qwen3.6 35B-A3B en modo Instruct con menor tiempo de inferencia, pero no se aportan cifras en la información disponible, por lo que no se reproducen aquí.
+Resultados medidos con lm-evaluation-harness sobre vLLM, greedy, prompts de estilo completion sin chat template (0 o 5-shot según la fila). MMLU es la variante generativa (`mmlu_generative`), no directamente comparable con MMLU por log-likelihood. Los porcentajes indican recuperación respecto al BF16 original.
 
-| Benchmark | Este modelo (FP8) | Base BF16 | Notas |
-|---|---|---|---|
-| MMLU | no disponible | no disponible | Sin datos publicados |
-| HumanEval | no disponible | no disponible | Sin datos publicados |
-| GSM8K | no disponible | no disponible | Sin datos publicados |
-| Perplejidad (EN/KO) | Sin valor numérico publicado | Referencia | La model card indica comprobación, sin cifras |
-| Acuerdo top-1 (EN/KO) | Sin valor numérico publicado | Referencia | La model card indica comprobación, sin cifras |
+| Benchmark | BF16 (original) | FP8-dynamic (este repo) | AWQ-8bit | NVFP4A16 | NVFP4 | AWQ-4bit |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generative) | 85,65 | 85,61 (100,0%) | 85,71 (100,1%) | 85,76 (100,1%) | 85,41 (99,7%) | 85,31 (99,6%) |
+| GSM8K (5-shot, strict) | 90,14 | 89,69 (99,5%) | 89,23 (99,0%) | 90,75 (100,7%) | 90,22 (100,1%) | 90,52 (100,4%) |
+| ARC-Challenge (0-shot) | 60,92 | 61,01 (100,1%) | 61,18 (100,4%) | 60,84 (99,9%) | 61,09 (100,3%) | 62,03 (101,8%) |
+| Winogrande (5-shot) | 80,11 | 79,87 (99,7%) | 78,93 (98,5%) | 79,32 (99,0%) | 77,11 (96,3%) | 79,56 (99,3%) |
+| KMMLU (5-shot, direct) | 64,95 | 64,77 (99,7%) | 64,78 (99,7%) | 64,65 (99,5%) | 64,38 (99,1%) | 64,67 (99,6%) |
+| HAE-RAE (0-shot) | 73,14 | 73,69 (100,8%) | 73,42 (100,4%) | 73,51 (100,5%) | 74,06 (101,3%) | 72,69 (99,4%) |
+| **Media** | **75,82** | **75,77 (99,9%)** | **75,54 (99,6%)** | **75,80 (100,0%)** | **75,38 (99,4%)** | **75,80 (100,0%)** |
+
+Evaluación de fidelidad frente al BF16 original en un conjunto interno mixto inglés/coreano de 100 prompts (respuestas greedy del BF16 original puntuadas con el mismo código):
+
+| Métrica | Este modelo | BF16 original |
+|---|---|---|
+| Perplejidad (menor = más cercano) | 1,2269 | 1,2063 (+1,7%) |
+| Acuerdo top-1 en el siguiente token | 96,0% | 98,1% |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: por encima de 34,3 GB solo para pesos; hay que sumar caché KV, buffers de activación y la torre de visión en BF16. Como orientación, un despliegue realista necesita del orden de 40 GB o más de memoria de GPU (estimación derivada del tamaño en disco, no publicada por el autor).
-- GPU recomendadas: H100 80 GB o H200 para una sola GPU; A100 80 GB si el runtime dispone de kernels FP8 adecuados; L40S 48 GB en configuración ajustada.
-- No cabe en GPUs de consumo de 24 GB (RTX 4090, RTX 3090) en una sola unidad; requeriría paralelismo tensorial con al menos dos GPUs, con el coste de comunicación asociado.
-- Los kernels FP8 nativos de vLLM requieren GPUs con capacidad de cálculo 8.9 o superior (Ada Lovelace y Hopper); en arquitecturas anteriores el rendimiento no está garantizado.
-- Opciones de despliegue: vLLM es la vía documentada (`vllm serve axteam/MiniCPM-V-4.7-35B-A3B-FP8-dynamic`); también es cargable con transformers y compressed-tensors. No se documenta soporte para llama.cpp, Ollama ni TGI con este formato `FP8_DYNAMIC`.
-- Latencia y throughput: no disponibles. Cualitativamente, los aproximadamente 3 B de parámetros activos reducen el cómputo por token frente a un modelo denso de 35 B, pero no se publican medidas.
+- VRAM estimada: el peso en disco es de ~36,9 GB; en FP8 se requiere al menos esa cantidad más overhead de KV cache y activaciones. No se proporciona una cifra exacta de VRAM total.
+- GPUs recomendadas: NVIDIA Turing (sm75, p. ej. T4) o superior. El cálculo FP8 nativo requiere Ada, Hopper o Blackwell (sm89+); en Turing y Ampere, vLLM cambia automáticamente a FP8 weight-only. V100 (sm70) no está soportado. Solo se ha probado en B200 según la model card.
+- Cabe en GPU consumer: no disponible de forma explícita; por el tamaño (~36,9 GB) no cabe en GPUs consumer de 24 GB sin técnicas adicionales.
+- Despliegue: vLLM ≥ 0.32.0 (probado con 0.32.0), que requiere Python 3.11-3.14, torch 2.13 (build CUDA 13.0), transformers ≥5.16.1,<5.20 y compressed-tensors 0.17.0. Para este modelo, vLLM 0.32 necesita transformers 5.18.x o 5.19.x (5.17 no conoce `minicpmv4_7`); las pruebas usaron transformers 5.21.0 instalado con `--no-deps`, solo texto, ya que la entrada de imagen falla en esa configuración.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento (media benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/MiniCPM-V-4.7-35B-A3B-FP8-dynamic | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors FP8 (compressed-tensors) | Hugging Face, 0 descargas |
-| openbmb/MiniCPM-V-4.7-35B-A3B (base) | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors BF16 | Hugging Face, oficial |
-| openbmb/MiniCPM-V-4.7-35B-A3B-FP8 | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors FP8 | Hugging Face, oficial |
-| Qwen3.6 35B-A3B | 35 B totales, ~3 B activos (por nombre) | no disponible | no disponible | no disponible | Referencia citada por OpenBMB en su comparativa |
+| MiniCPM-V-4.7-35B-A3B-FP8-dynamic (este) | 35,2B totales | no disponible | 75,77 (99,9% de BF16) | Apache-2.0 | Hugging Face |
+| MiniCPM-V-4.7-35B-A3B (BF16 original) | 35,2B totales | no disponible | 75,82 | Apache-2.0 | Hugging Face |
+| Versión AWQ-8bit del mismo base | no disponible | no disponible | 75,54 (99,6% de BF16) | no disponible | no disponible |
+| Versión NVFP4 del mismo base | no disponible | no disponible | 75,38 (99,4% de BF16) | no disponible | no disponible |
 
-La diferencia práctica entre este repositorio y el FP8 oficial de OpenBMB no se puede evaluar con la información disponible: no se publican ni el esquema exacto del oficial ni métricas comparables. Frente al base BF16, la ventaja es el menor tamaño en disco y el soporte de kernels FP8 en vLLM; el coste es una pérdida de calidad no cuantificada públicamente.
+No se dispone de datos de otros modelos multimodales comparables (por ejemplo, de otros fabricantes) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cuantización sin calibración: la degradación solo se ha comprobado con perplejidad y acuerdo top-1, no con benchmarks de tareas (OCR, VQA, vídeo). El impacto real en tareas concretas es desconocido.
-- La torre de visión, el merger, los embeddings, la LM head y las normalizaciones siguen en BF16: la reducción de memoria es menor de lo que sugiere el tamaño total y el cuello de botella de VRAM en visión persiste.
-- Riesgo de alucinación inherente a los modelos multimodales, especialmente en lectura de texto en imágenes (OCR), tablas densas y vídeos largos; no hay datos publicados de fidelidad para este checkpoint.
-- Idiomas: no se publica lista oficial de idiomas soportados y la validación se limitó a inglés y coreano; el comportamiento en castellano no está verificado en la información disponible.
-- Ventana de contexto no documentada: no se puede planificar el tamaño de lote, la caché KV ni la longitud de vídeo asumiendo una cifra concreta.
-- Repositorio de terceros: publicado por el usuario axteam, no por OpenBMB. Tiene 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validación comunitaria.
-- Requisito de hardware estricto: FP8 nativo implica Ada Lovelace o Hopper; en GPUs Ampere o anteriores el despliegue puede fallar o degradar el rendimiento.
-- No apto para despliegue en dispositivo pese al mensaje de la familia: este checkpoint ocupa 34,3 GB, muy lejos de las cifras de memoria asociadas a las variantes on-device del modelo base.
-- Licencia Apache-2.0: permite uso comercial, pero conviene conservar los avisos de copyright de OpenBMB como titulares de los pesos y el tokenizador originales.
-- El formato `FP8_DYNAMIC` de compressed-tensors limita la portabilidad a runtimes que lo soporten; no se documenta compatibilidad con llama.cpp u Ollama.
+- La revisión anterior del config.json (antes del 1 de noviembre de 2026, revisión `a1f77bb`) provocaba respuestas incorrectas con entrada de imagen en vLLM 0.32; es imprescindible descargar de nuevo `config.json` si se obtuvo el repo antes de esa fecha.
+- Con vLLM 0.32.0 y transformers 5.21 el preprocesamiento de imagen falla; en la comprobación de imagen se rellenó manualmente el argumento `downsample_mode` del procesador de imagen. Para producción con imágenes se recomienda usar transformers 5.18.x o 5.19.x.
+- La cuantización FP8 en Turing y Ampere se ejecuta como weight-only, con posibles diferencias de rendimiento y latencia frente a Ada/Hopper/Blackwell.
+- Solo se ha probado en B200 según la model card; el comportamiento en otras GPUs no está verificado por el autor.
+- No se dispone de información sobre sesgos, riesgo de alucinación, límites de contexto o idiomas soportados más allá de los benchmarks coreanos.
+- Aunque la licencia es Apache-2.0, conviene verificar las condiciones del modelo base y de los pesos cuantizados antes de uso comercial.
+- El modelo es una cuantización; la fidelidad medida es del 99,9% de media en benchmarks, pero el acuerdo top-1 es del 96,0%, por lo que pueden aparecer divergencias en generaciones largas o creativas.
 
 ## Enlaces
 
-- Repositorio del modelo cuantizado: https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-FP8-dynamic
+- Hugging Face (este modelo): https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-FP8-dynamic
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
-- Cuantización FP8 oficial de OpenBMB: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8
-- Nota de prensa de ModelBest y OpenBMB sobre MiniCPM-V 4.7: https://www.prnewswire.com/news-releases/modelbest-and-openbmb-launch-minicpm-v-4-7--bringing-a-35b-multimodal-moe-model-to-phones-and-tablets-with-about-3-gb-of-memory-302909881.html
-- Cobertura en AI Weekly: https://aiweekly.co/alerts/openbmb-releases-minicpm-v-47-series-first-moe-model
-- Ficha en There's An AI For That: https://theresanaiforthat.com/model/minicpm-v-4-7-35b-a3b/
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- vLLM: https://github.com/vllm-project/vllm
+- compressed-tensors: https://github.com/neuralmagic/compressed-tensors

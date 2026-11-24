@@ -64,37 +64,65 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "Cross Encoder Classification",
-      "dataset": "dleemiller FineCat NLI test",
+      "task": "Natural Language Inference",
+      "dataset": "FineCat-NLI (test)",
       "metric": "Accuracy",
       "value": 0.8445
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation matched)",
+      "metric": "Accuracy",
+      "value": 0.9202
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation mismatched)",
+      "metric": "Accuracy",
+      "value": 0.9191
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "SNLI (test)",
+      "metric": "Accuracy",
+      "value": 0.9356
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 1 (test)",
+      "metric": "Accuracy",
+      "value": 0.786
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 2 (test)",
+      "metric": "Accuracy",
+      "value": 0.66
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 3 (test)",
+      "metric": "Accuracy",
+      "value": 0.6067
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "WANLI (test)",
+      "metric": "Accuracy",
+      "value": 0.771
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "LingNLI (validation)",
+      "metric": "Accuracy",
+      "value": 0.8834
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "45-dataset NLI / zero-shot / grounding benchmark (macro average)",
+      "metric": "Macro accuracy",
+      "value": 0.8282
     }
   ],
-  "sources": [
-    {
-      "title": "Finecat Nli V2 Xl - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/dleemiller/finecat-nli-v2-xl",
-      "snippet": "Registry entry for model Finecat Nli V2 Xl; source metadata pending."
-    },
-    {
-      "title": "dleemiller/finecat-nli-l · Hugging Face",
-      "url": "https://huggingface.co/dleemiller/finecat-nli-l",
-      "snippet": "FineCat-NLI Large Overview This model is a fine-tune of the excellent tasksource/ModernBERT-large-nli, trained on the dleemiller/FineCat-NLI dataset—a compilation of several high-quality NLI data sources with quality screening and reduction of easy samples in the training split."
-    },
-    {
-      "title": "FineCat NLI - a dleemiller Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/dleemiller/finecat-nli",
-      "snippet": "High quality natural language inference"
-    },
-    {
-      "title": "Dleemiller: Open-Weight Models and Datasets",
-      "url": "https://savrn.com/model-publishers/dleemiller",
-      "snippet": "Dleemiller has 1 open-weight model and 0 datasets in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
-    },
-    {
-      "title": "finecat-nli-l by dleemiller: license, versions & download",
-      "url": "https://savrn.com/models/finecat-nli-l",
-      "snippet": "finecat-nli-l from dleemiller, 396M parameters: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
-    }
-  ]
+  "sources": []
 }

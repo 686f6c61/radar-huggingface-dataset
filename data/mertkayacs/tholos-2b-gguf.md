@@ -2,92 +2,104 @@
 
 ## Resumen
 
-Tholos-2B-GGUF es la distribucion en formato GGUF de Tholos-2B, un ajuste fino de MiniCPM5-2B orientado a actuar como agente dentro del proyecto Tholos. Lo publica el desarrollador mertkayacs y su proposito concreto es servir de motor de agente local: conversaciones con llamadas a herramientas (tool use), razonamiento en varios pasos y salida estructurada forzada por esquema JSON.
+Tholos-2B-GGUF es la distribucion en formato GGUF de Tholos-2B, un modelo de lenguaje pequeno (2.516.756.480 parametros) desarrollado por Eschatia Labs, un laboratorio de investigacion independiente sin animo de lucro. El modelo esta disenado especificamente para agentes de IA locales que deben seleccionar herramientas (tool calling) sobre tablas, notas y tareas, con salida estructurada garantizada mediante JSON schema. Su proposito es ofrecer un agente funcional que quepa y funcione en hardware de consumo, sin depender de APIs en la nube.
 
-El modelo tiene 2.516.756.480 parametros (unos 2,5 mil millones) y se distribuye unicamente en ingles. La relevancia actual viene de su tamano reducido: con cuantizacion Q4_K_M ocupa 1,56 GB, lo que permite ejecutarlo en portatiles y equipos sin GPU dedicada mediante llama.cpp u Ollama, manteniendo una ventana de contexto de 16.384 tokens configurada explicitamente por el autor.
+La relevancia del modelo reside en su enfoque: en lugar de competir en conocimiento general, se especializa en un formato de tarea concreto (trece herramientas definidas por Tholos) y en la generacion de pasos estructurados validables. El autor reporta 137/160 escenarios superados en Tholos-Bench con cuantizacion Q4_K_M, frente a 112/160 de MiniCPM5-2B, si bien solo Tholos-2B fue ajustado para este formato de tarea.
 
-Esta pagina del repositorio contiene los ficheros GGUF, las sumas SHA256 y los comandos de despliegue; la model card principal de Tholos-2B concentra el formato de pasos, los datos de entrenamiento y los resultados de benchmark completos.
+La distribucion GGUF incluye plantilla y parametros que preservan el formato de prompt de entrenamiento, los tokens de parada y una ventana de contexto de 16.384 tokens. Esta publicada bajo licencia Apache-2.0 y esta pensada para ejecutarse con Ollama o llama.cpp en CPU o GPU modestas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion proporcionada (modelo base: MiniCPM5-2B) |
+| Arquitectura | no disponible |
 | Parametros totales | 2.516.756.480 |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 16.384 tokens (fijada en el fichero `params` del repo; Ollama usa 4.096 por defecto) |
-| Tipos de cuantizacion | Q4_K_M y Q8_0 |
-| Idiomas soportados | Ingles (en) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 16.384 tokens |
+| Tipos de cuantizacion | Q4_K_M (1,56 GB), Q8_0 (2,68 GB) |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp / Ollama) |
+| Formato de pesos | GGUF (pesos completos en safetensors en el repo base) |
 
 ## Arquitectura y entrenamiento
 
-No se detalla la arquitectura interna en la informacion disponible. El modelo deriva de MiniCPM5-2B, sobre el que se ha realizado un ajuste fino supervisado para convertirlo en el agente de Tholos. La model card de esta pagina remite a la tarjeta principal de Tholos-2B para consultar los datos de entrenamiento y el formato de pasos, por lo que no se dispone aqui del numero de tokens, la composicion del dataset ni si hubo etapas de RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna (tipo de transformer, atencion, etc.) en la documentacion proporcionada. El modelo base es mertkayacs/Tholos-2B, con 2.516.756.480 parametros y pesos completos publicados en safetensors. La version GGUF es una cuantizacion de ese modelo base.
 
-La innovacion practica del proyecto esta en el renderizado de plantillas: Tholos-2B se entreno con un bloque `think` vacio antes de cada respuesta y el repositorio incluye un fichero `template` que reproduce ese renderizado byte a byte. Este detalle no es cosmetico. Segun el autor, al cargar el fichero Q4_K_M oficial del modelo base sin plantilla, Ollama eligio una plantilla automatica que omitia el bloque `think` vacio y el modelo supero 48 de 160 escenarios de Tholos-Bench; con la plantilla del repositorio paso 96 de 160.
+El entrenamiento se realizo sobre el dataset mertkayacs/tholos-trajectories, compuesto por trayectorias de agente orientadas a la seleccion de herramientas y la generacion de pasos estructurados. El modelo aprendio las trece herramientas definidas por el proyecto Tholos; el autor advierte que otros formatos de herramientas no han sido medidos. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO. La innovacion principal es la especializacion en salida estructurada validable mediante JSON schema, con soporte de plantilla y tokens de parada preservados en el GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Llamada a herramientas y funciones (tool use), uno de los ejes del ajuste fino.
-- Ejecucion como agente con razonamiento en varios pasos.
-- Salida estructurada: el autor recomienda enviar `response_format` con `json_schema` en cada peticion para que el servidor restrinja la decodificacion.
-- Integracion con el modo JSON de Ollama: Tholos solicita JSON mode y envia `reasoning_effort: "none"` de forma automatica.
-- Soporte de plantilla con bloque `think` vacio previo a cada respuesta, coherente con el entrenamiento.
-- Capacidades de vision, audio o matematicas avanzadas: no disponibles en la informacion proporcionada.
+- Generacion de texto orientada a agentes, con enfasis en la seleccion de herramientas y la planificacion de pasos.
+- Tool calling / function calling sobre un conjunto definido de trece herramientas del ecosistema Tholos.
+- Salida estructurada mediante JSON schema decoding (llama.cpp) y modo JSON (Ollama).
+- Razonamiento multi-paso dentro de un bucle de agente con validacion de cada paso.
+- Capacidad de operar en local y en dispositivo (on-device), sin conexion a servicios externos.
+- Soporte de modo `reasoning_effort: "none"` para clientes directos de Ollama.
+- Capacidades multilingues: solo ingles.
+- No se documentan capacidades de vision, audio ni modo thinking extendido.
 
 ## Casos de uso
 
-- Agente local en el escritorio: con 1,56 GB en Q4_K_M el modelo cabe en un portatil sin GPU y puede gestionar bucles de agente con llamadas a herramientas sobre servicios locales, sin enviar datos a la nube.
-- Automatizacion de herramientas internas: el ajuste fino en tool use permite conectarlo a APIs corporativas mediante esquemas JSON y dejar que decida que funcion invocar en cada turno.
-- Extraccion de datos estructurados: forzando `json_schema` en la peticion, el servidor restringe la decodificacion y devuelve objetos validos, util para convertir texto libre en registros de base de datos.
-- Asistente conversacional de dominio cerrado: con 16.384 tokens de contexto puede mantener conversaciones multi-turno con historial e instrucciones de sistema extensas en ingles.
-- Prototipado de flujos de agentes antes de escalar: al ser tan ligero, sirve para validar la logica de orquestacion y las plantillas de prompt antes de migrar a un modelo mayor.
-- Despliegue en entornos con recursos limitados o air-gapped: al ser GGUF y Apache-2.0, se puede distribuir dentro de una imagen de contenedor o en equipos sin acceso a internet.
-- Integracion con Tholos: pulsando Detect en los ajustes de Tholos se anade el modelo y la propia aplicacion gestiona el modo JSON y los parametros de razonamiento.
+- Agentes locales de gestion de tareas: el modelo selecciona entre sus trece herramientas para crear, actualizar o consultar tareas y notas, con salida JSON validable antes de ejecutar acciones.
+- Automatizacion de escritorio con aprobacion humana: desplegado via Ollama en un equipo personal, propone pasos estructurados que la aplicacion valida y presenta al usuario antes de aplicar cambios.
+- Asistente de notas y tablas: interpreta peticiones en lenguaje natural y genera llamadas a herramientas para manipular filas, columnas o entradas de una tabla, aprovechando el contexto de 16.384 tokens para mantener el estado de la conversacion.
+- Pipelines de agente en CI o entornos de desarrollo: integrado con llama.cpp y JSON schema para generar llamadas de herramienta deterministas que se validan en cada paso antes de ejecutarse.
+- Prototipado de sistemas de function calling: sirve como modelo de referencia pequeno para probar bucles de agente, reglas de aprobacion y validacion de esquemas sin coste de API.
+- Despliegue en hardware de consumo o en CPU: con Q4_K_M (1,56 GB) puede ejecutarse en portatiles y equipos sin GPU dedicada, lo que permite agentes de escritorio siempre disponibles y con datos que no salen del dispositivo.
+- Evaluacion comparativa de agentes: util como linea base reproducible en Tholos-Bench para medir la calidad de seleccion de herramientas en formatos estructurados.
 
 ## Benchmarks y rendimiento
 
-| Evaluacion | Configuracion | Resultado |
-|---|---|---|
-| Tholos-Bench (160 escenarios) | Plantilla del repositorio (bloque `think` vacio) | 96/160 |
-| Tholos-Bench (160 escenarios) | Plantilla automatica de Ollama sobre el Q4_K_M oficial del modelo base | 48/160 |
+Los resultados publicados se refieren a Tholos-Bench, con Q4_K_M y comparacion frente a MiniCPM5-2B. El autor advierte que las cifras deben compararse dentro de una misma configuracion.
 
-El autor indica que las ejecuciones de benchmark usan el fichero Q4_K_M. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de otras evaluaciones estandar.
+| Configuracion | Tholos-2B | MiniCPM5-2B |
+|---|---|---|
+| Tholos-Bench, Q4_K_M, llama.cpp JSON schema, Kaggle T4 | 137/160 | 112/160 |
+| Tholos-Bench, Q4_K_M, CPU, llama.cpp JSON schema | 134/160 | 117/160 |
+| Tholos-Bench, Q4_K_M, CPU, Ollama JSON mode | 136/160 | 96/160 |
+| Escenarios de inyeccion superados (Kaggle T4) | 10/12 | 8/12 |
+
+No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para Q4_K_M: en torno a 2,0-2,5 GB con contexto corto, partiendo de un fichero de 1,56 GB mas la cache KV. Estimacion propia, no publicada por el autor.
-- VRAM estimada para Q8_0: en torno a 3,2-3,8 GB, partiendo de un fichero de 2,68 GB mas la cache KV.
-- Contexto completo de 16.384 tokens: incrementa la cache KV de forma apreciable respecto a los valores anteriores; el autor no publica cifras.
-- GPU consumer: cabe con holgura en cualquier GPU con 6 GB o mas (RTX 3060, RTX 4060, RTX 4090); en Q4_K_M es viable incluso en GPUs de 4 GB y en equipos sin GPU dedicada.
-- GPU de datacenter: A100, H100 y similares no son necesarias para este tamano; el modelo esta pensado para inferencia local.
-- Opciones de despliegue: llama.cpp (`llama-server -hf mertkayacs/Tholos-2B-GGUF:Q4_K_M --jinja -c 16384`) y Ollama (`ollama pull hf.co/mertkayacs/Tholos-2B-GGUF:Q4_K_M`). El repo incluye ficheros `template` y `params` para Ollama.
+- VRAM/RAM estimada: Q4_K_M ocupa 1,56 GB en disco y Q8_0 2,68 GB; el autor advierte que el tamano de fichero no equivale a la RAM total en ejecucion.
+- GPU recomendadas: el benchmark se ejecuto en una Kaggle T4; el modelo es lo bastante pequeno para GPUs de gama media y consumer.
+- Cabe en GPU de consumo: si, con Q4_K_M en tarjetas con 4 GB o mas de VRAM; tambien funciona en CPU.
+- Opciones de despliegue: Ollama (`ollama pull hf.co/mertkayacs/Tholos-2B-GGUF:Q4_K_M` o `ollama pull mertkayacs/tholos-2b`) y llama.cpp (`llama-server -hf mertkayacs/Tholos-2B-GGUF:Q4_K_M --jinja -c 16384`).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Tholos-Bench (Q4_K_M, llama.cpp, T4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tholos-2B-GGUF | 2,516 mil millones | 16.384 tokens | GGUF | Apache-2.0 | Ajuste fino para agentes y tool use; unica cuantizacion publicada: Q4_K_M y Q8_0 |
-| Tholos-2B | Mismo modelo base | No disponible | Safetensors (presumiblemente) | Apache-2.0 | Version sin cuantizar; contiene el formato de pasos, los datos de entrenamiento y los benchmarks completos |
-| Otras alternativas de ~2B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos de comparacion en la informacion proporcionada |
+| Tholos-2B-GGUF | 2.516.756.480 | 16.384 | 137/160 | Apache-2.0 | Hugging Face, Ollama, Kaggle |
+| MiniCPM5-2B | no disponible | no disponible | 112/160 | no disponible | no disponible |
+
+No se dispone de datos de otros modelos comparables en la informacion proporcionada. La comparacion con MiniCPM5-2B debe interpretarse con cautela: solo Tholos-2B fue ajustado para el formato de tarea de Tholos-Bench.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Riesgo de alucinacion: inherente a un modelo de 2,5 mil millones de parametros; no se publican tasas de error ni evaluaciones de fidelidad.
-- Idioma: soporte declarado unicamente de ingles. No hay garantia de comportamiento correcto en castellano ni en otros idiomas.
-- Contexto: la ventana es de 16.384 tokens, la mitad de lo habitual en modelos actuales de gama media; ademas, Ollama aplica 4.096 tokens por defecto salvo que se cargue el fichero `params` del repositorio.
-- Plantilla: usar una plantilla distinta de la entrenada degrada el rendimiento de forma medible (de 96/160 a 48/160 escenarios en Tholos-Bench). Es imprescindible respetar el bloque `think` vacio.
-- Salida estructurada: el autor recomienda enviar `json_schema` en cada peticion; sin esa restriccion en la decodificacion no se garantiza JSON valido.
-- Licencia: Apache-2.0, la misma del modelo base MiniCPM5-2B, por lo que se permite uso comercial. El autor remite a la tarjeta principal para los terminos aplicables a los datos de entrenamiento.
-- Produccion: el repositorio no registra descargas ni valoraciones y fue creado y actualizado el mismo dia, por lo que no hay historial de uso en entornos reales.
+- Solo soporta ingles; no se han medido capacidades en otros idiomas.
+- El modelo aprendio exclusivamente las trece herramientas de Tholos; otros formatos de herramientas no han sido evaluados.
+- Riesgo de alucinacion y de llamadas incorrectas: el autor recomienda validar cada llamada y tratar el texto externo como no fiable.
+- Mantener las aprobaciones activadas para acciones con consecuencias; no se debe confiar en la ejecucion automatica sin validacion.
+- El benchmark de inyeccion muestra 10/12 escenarios superados, lo que implica que dos escenarios de prompt injection no fueron resistidos.
+- El informe tecnico esta pendiente de revision por pares.
+- El modelo es muy pequeno (2,5 B de parametros) y especializado; no es adecuado como modelo de conocimiento general.
+- No se documentan sesgos especificos ni limitaciones de contexto mas alla de los 16.384 tokens.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mertkayacs/Tholos-2B-GGUF
-- Modelo base del ajuste fino: https://huggingface.co/mertkayacs/Tholos-2B
-- Repositorio del proyecto Tholos: https://github.com/mertkayacs/tholos
-- Tarjeta principal con datos de entrenamiento, formato de pasos y benchmarks: https://huggingface.co/mertkayacs/Tholos-2B (seccion "Use with llama.cpp" para una peticion completa)
+- Hugging Face (GGUF): https://huggingface.co/mertkayacs/Tholos-2B-GGUF
+- Pesos completos: https://huggingface.co/mertkayacs/Tholos-2B
+- Dataset de trayectorias: https://huggingface.co/datasets/mertkayacs/tholos-trajectories
+- Benchmark: https://huggingface.co/datasets/mertkayacs/tholos-bench
+- Pagina del benchmark: https://eschatialabs.com/benchmarks/tholos-bench/
+- Repositorio GitHub: https://github.com/mertkayacs/tholos
+- Sitio del proyecto: https://tholos.mertkayacs.com
+- Ollama library: https://ollama.com/mertkayacs/tholos-2b
+- Kaggle: https://www.kaggle.com/models/mertilovski/tholos-2b
+- Informe tecnico: https://eschatialabs.com/research/tholos-2b-report/
+- Eschatia Labs: https://eschatialabs.com
+- Autor: https://mertkayacs.com

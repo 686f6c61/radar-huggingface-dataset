@@ -2,109 +2,97 @@
 
 ## Resumen
 
-`tinyopsec/rank-zephyr-7b-v1-full-GGUF` es un paquete de cuantizaciones en formato GGUF del modelo `castorini/rank_zephyr_7b_v1_full`, un reranker listwise de 7.241.732.096 parametros (aproximadamente 7,24 mil millones) construido sobre Zephyr-7B-β, que a su vez deriva de Mistral-7B-v0.1. El autor de este repositorio es el usuario `tinyopsec`, que no entrena el modelo sino que publica las versiones cuantizadas (F16 a Q2_K) para su ejecucion en llama.cpp, LM Studio y Ollama; el modelo original lo desarrollan Ronak Pradeep, Sahel Sharifymoghaddam y Jimmy Lin (Universidad de Waterloo, proyecto castorini).
+RankZephyr-7B-v1-Full GGUF es la versión cuantizada en formato GGUF del modelo castorini/rank_zephyr_7b_v1_full, un fine-tuning de Zephyr-7B-β especializado en reranking listwise zero-shot. Lo publica el usuario tinyopsec en Hugging Face y su interés principal es que permite ejecutar un reranker de recuperación de información de alto rendimiento en hardware de consumo, sin necesidad de GPU de datacenter. El modelo base lo desarrollaron Ronak Pradeep, Sahel Sharifymoghaddam y Jimmy Lin (Universidad de Waterloo, grupo castorini), y se describe en el artículo arXiv:2312.02724.
 
-El problema que resuelve es la reordenacion de resultados de busqueda en dos fases: dado un query y una lista de documentos recuperados por un retriever de primera fase (por ejemplo SPLADE++ ED o embeddings Ada-2), el modelo devuelve la lista reordenada por relevancia. Segun la model card, el modelo original alcanza 0,7803 NDCG@10 en DL19 y 0,8211 en DL20 con SPLADE++ ED como primera fase, y fue entrenado sobre reordenaciones generadas por RankGPT-4 a partir de embeddings OpenAI Ada-2.
+El modelo resuelve la segunda etapa de un pipeline de búsqueda: recibe una consulta y una lista de documentos recuperados por un primer retriever y devuelve una reordenación por relevancia. Con SPLADE++ ED como primera etapa alcanza 0,7803 NDCG@10 en DL19 y 0,8211 en DL20, cifras que lo situaron como referencia entre los rerankers open source. Arquitectónicamente es un transformer decoder-only de 7.241.732.096 parámetros (unos 7,24 mil millones), derivado de Mistral-7B vía Zephyr-7B-β, con licencia MIT.
 
-Su relevancia actual es practica: empaquetar un reranker de 7B en GGUF permite desplegar reordenacion listwise de alta calidad en hardware de consumo (desde unos 2,5 GB de VRAM en Q2_K) sin depender de APIs propietarias, algo habitual en pipelines RAG y motores de busqueda autoalojados. La licencia MIT del modelo base facilita su integracion comercial.
+La relevancia actual de esta ficha es práctica: el repositorio ofrece once variantes de cuantización entre 2 y 16 bits, desde unos 2 GB hasta unos 14 GB, con requisitos de VRAM documentados, lo que baja la barrera de entrada para desplegar reranking neural en entornos con recursos limitados o incluso en CPU.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (Mistral-7B-v0.1, afinado como Zephyr-7B-β y despues como RankZephyr) |
-| Parametros totales | 7.241.732.096 (aproximadamente 7,24 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada; la arquitectura subyacente (Mistral-7B-v0.1 / Zephyr-7B-β) admite 32.768 tokens, pero los ejemplos de la model card usan `n_ctx=2048` |
+| Arquitectura | Transformer decoder-only (Mistral-7B vía Zephyr-7B-β), fine-tuning para reranking listwise |
+| Parametros totales | 7.241.732.096 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada; los ejemplos de uso emplean n_ctx=2048 |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | en (ingles) |
+| Idiomas soportados | ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (11 ficheros cuantizados; el modelo base esta en safetensors) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Mistral-7B-v0.1: un transformer decoder-only denso de 7,24 B de parametros. Sobre esa base se aplico el ajuste de Zephyr-7B-β (que incluye una fase de alineacion tipo DPO) y, posteriormente, el ajuste especifico de RankZephyr para reordenacion. El modelo esta especializado en formulaciones listwise: recibe un query y una lista de pasajes en un unico prompt y genera el orden de relevancia resultante, en lugar de puntuar pares query-documento de forma independiente.
+El modelo base es un fine-tuning de Zephyr-7B-β, que a su vez deriva de Mistral-7B, un transformer decoder-only denso de 7,24 mil millones de parámetros. El ajuste se orientó a reranking listwise: en lugar de puntuar pares consulta-documento de forma independiente, el modelo recibe la consulta y una lista de documentos en el prompt y genera una permutación ordenada por relevancia. Según la model card, el entrenamiento se realizó sobre reordenaciones producidas por RankGPT-4 aplicadas a embeddings de OpenAI Ada2, lo que transfiere al modelo el comportamiento de un reranker fuerte pero propietario.
 
-Segun la model card del modelo base, el entrenamiento de RankZephyr utiliza reordenaciones producidas por RankGPT-4 sobre candidatos recuperados con embeddings OpenAI Ada-2. El repositorio que nos ocupa no aporta informacion adicional sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni el proceso de RLHF/DPO; esos detalles no estan disponibles en la informacion proporcionada. La innovacion relevante de este repositorio concreto es la publicacion de 11 variantes de cuantizacion (k-quants de llama.cpp), desde 16 bits de referencia hasta Q2_K de 2 bits, con tablas de requisitos de VRAM y de RAM declaradas por el autor.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO. La innovación destacable es metodológica: demostrar que un reranking listwise zero-shot robusto se puede obtener con un modelo de 7B abierto, sin entrenamiento específico por colección, y que el resultado se puede cuantizar a GGUF para inferencia local con llama.cpp.
 
 ## Capacidades
 
-- Reordenacion listwise de resultados: recibe query y lista de documentos y devuelve el orden por relevancia.
-- Reordenacion zero-shot sobre resultados de un retriever de primera fase (SPLADE++ ED, embeddings densos, BM25, etc.).
-- Generacion de texto y uso conversacional (pipeline declarado: `text-generation`; plantilla de chat Mistral).
-- Instrucciones en formato chat mediante `chat_format="mistral"` en llama-cpp-python o `--chat-template mistral` en llama.cpp.
-- Ejecucion en CPU y en GPU con descarga parcial de capas (`n_gpu_layers`), lo que permite despliegue hibrido.
-- No hay evidencia en la informacion proporcionada de soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento explicito.
-- Capacidades multilingues: limitadas a ingles (`language: en`); no se documenta soporte de otros idiomas.
+- Reordenación listwise de documentos: recibe consulta y lista de pasajes y devuelve el orden de relevancia.
+- Reranking zero-shot sobre colecciones no vistas durante el entrenamiento.
+- Generación de texto conversacional, heredada de Zephyr-7B-β y del chat template de Mistral.
+- Razonamiento sobre listas largas de candidatos en una sola pasada (listwise), en lugar de puntuación punto a punto.
+- Soporte de plantilla de chat Mistral en llama.cpp, llama-cpp-python, LM Studio y Ollama.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Reordenacion en pipelines RAG: tras recuperar los N mejores fragmentos con un retriever vectorial, el modelo reordena esa lista antes de pasarla al LLM generador; reduce el ruido de contexto y mejora la precision de las respuestas.
-- Motor de busqueda corporativo autoalojado: segunda fase de ranking sobre indices Elasticsearch/OpenSearch con BM25 o SPLADE, sin enviar consultas ni documentos a APIs externas.
-- Busqueda academica y bibliografica: reordenacion de abstracts recuperados por similitud, donde el orden de relevancia afecta directamente a la utilidad del resultado.
-- Sistemas de recomendacion de contenido: reordenar un conjunto de candidatos recuperados por similitud y priorizar los mas relevantes para la consulta o el perfil del usuario.
-- Evaluacion automatica de relevancia en investigacion en recuperacion de informacion (IR): reproduccion de experimentos de reranking listwise sobre colecciones como DL19/DL20 con hardware modesto.
-- Despliegue en entornos con hardware limitado: la variante Q4_K_M (unos 4,5 GB de VRAM) permite reordenacion de 7B en una GPU de consumo o incluso en CPU con unos 6 GB de RAM.
-- Procesamiento por lotes offline: reordenar grandes volumenes de listas de resultados en servidores sin GPU dedicada usando Q2_K o Q3_K (CPU-friendly, 2 a 3,5 GB de RAM).
+- Reranking en motores de búsqueda internos: se coloca tras un retriever léxico o denso (por ejemplo BM25 o SPLADE) y reordena los 20-100 candidatos principales antes de mostrarlos; la variante Q5_K_M, de unos 4,8 GB, cabe en una GPU de consumo y mantiene la calidad del listwise.
+- Búsqueda documental en estaciones de trabajo sin GPU de datacenter: con Q4_K_M (~3,8 GB) o Q3_K_M (~2,9 GB) se puede ejecutar en una RTX 3060 de 12 GB o incluso en CPU con 5-6 GB de RAM, útil para prototipos y equipos de investigación con presupuesto limitado.
+- Aumento de la precisión en pipelines RAG: reordena los fragmentos recuperados de una base vectorial antes de pasarlos al modelo generador, reduciendo el ruido en el contexto y mejorando la fidelidad de las respuestas.
+- Evaluación de sistemas de recuperación: sirve como reranker de referencia en experimentos de IR para comparar retrievers de primera etapa con una métrica consistente (NDCG@10 en DL19/DL20).
+- Búsqueda en catálogos técnicos o bases de conocimiento de nicho: al ser zero-shot, no requiere entrenamiento específico por dominio; basta con adaptar el prompt de listwise reranking al formato de los documentos.
+- Despliegue en local con Ollama o LM Studio para demos y pruebas de concepto: el Modelfile incluido permite crear una instancia con `ollama create` en minutos, sin infraestructura adicional.
+- Filtrado previo en pipelines de anotación o curación de datos: ordenar grandes conjuntos de pasajes candidatos por relevancia antes de la revisión humana.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la informacion disponible corresponden al modelo base `castorini/rank_zephyr_7b_v1_full` (precision completa), no a las variantes GGUF de este repositorio.
+| Benchmark | Metrica | Resultado |
+|---|---|---|
+| TREC DL19 | NDCG@10 | 0,7803 |
+| TREC DL20 | NDCG@10 | 0,8211 |
 
-| Benchmark | Metrica | Resultado (modelo base) | Primera fase |
-|---|---|---|---|
-| DL19 | NDCG@10 | 0,7803 | SPLADE++ ED |
-| DL20 | NDCG@10 | 0,8211 | SPLADE++ ED |
-
-No se han publicado resultados de benchmarks especificos de las cuantizaciones GGUF en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni otros benchmarks generalistas.
+Los resultados corresponden al modelo base con SPLADE++ ED como retriever de primera etapa, según la model card. No se han publicado en la información disponible resultados de benchmarks para las variantes GGUF cuantizadas, ni comparaciones con otros modelos en la misma tabla.
 
 ## Requisitos de hardware
 
-Requisitos declarados por el autor en la model card:
-
-| Cuantizacion | VRAM (GPU) | RAM (CPU) |
-|---|---|---|
-| F16 | unos 14 GB | unos 17 GB |
-| Q8_0 | unos 8 GB | unos 10 GB |
-| Q6_K | unos 6,5 GB | unos 8 GB |
-| Q5_K_M | unos 5,5 GB | unos 7 GB |
-| Q4_K_M | unos 4,5 GB | unos 6 GB |
-| Q3_K_M | unos 3,5 GB | unos 5 GB |
-| Q2_K | unos 2,5 GB | unos 3,5 GB |
-
-- Cabe en GPU de consumo: si, desde Q4_K_M en adelante en tarjetas de 6-8 GB (RTX 3060, RTX 4060, RTX 2070), y Q2_K/Q3_K en GPUs de 4 GB.
-- GPU recomendadas: no especificadas por el autor; por tamano, cualquier GPU con 8 GB o mas (RTX 3070/4060 Ti, RTX 3090, RTX 4090) permite ejecutar F16 o Q8_0 con holgura. A100 y H100 no son necesarias para un modelo de este tamano.
-- Despliegue: llama.cpp, llama-cpp-python, LM Studio y Ollama son las opciones documentadas explicitamente. No se documentan recetas para vLLM, TGI ni TensorRT-LLM.
-- Ejecucion en CPU: viable con Q2_K (2,0 GB) y Q3_K_S (2,7 GB), declaradas como aptas para CPU.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia según la model card: F16 ~14 GB; Q8_0 ~8 GB; Q6_K ~6,5 GB; Q5_K_M ~5,5 GB; Q4_K_M ~4,5 GB; Q3_K_M ~3,5 GB; Q2_K ~2,5 GB.
+- RAM para inferencia en CPU: F16 ~17 GB; Q8_0 ~10 GB; Q6_K ~8 GB; Q5_K_M ~7 GB; Q4_K_M ~6 GB; Q3_K_M ~5 GB; Q2_K ~3,5 GB.
+- GPU recomendadas: A100 o H100 para F16 y Q8_0 con lotes grandes; RTX 4090 (24 GB) para F16 y Q8_0; RTX 3090/4080 (16-24 GB) para Q6_K y Q5_K_M; RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q4_K_M y Q3_K_M.
+- Cabe en GPU de consumo: sí, desde Q4_K_M en tarjetas de 6-8 GB y desde Q3_K_M en tarjetas de 4-6 GB; Q2_K permite ejecución en CPU con 3,5 GB de RAM.
+- Opciones de despliegue: llama.cpp (`./main`), llama-cpp-python, LM Studio y Ollama (mediante Modelfile). No se documentan vLLM ni TGI para este repositorio GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Contexto | Notas |
+| Modelo | Parametros | Contexto | Reranking | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyopsec/rank-zephyr-7b-v1-full-GGUF (este) | 7,24 B | GGUF (F16 a Q2_K) | MIT | No disponible | Cuantizaciones del reranker; VRAM desde 2,5 GB |
-| castorini/rank_zephyr_7b_v1_full | 7,24 B | safetensors | MIT | No disponible | Modelo base sin cuantizar; NDCG@10 0,7803 en DL19 y 0,8211 en DL20 con SPLADE++ ED |
-| Zephyr-7B-β | 7,24 B | safetensors | MIT | 32.768 tokens (segun arquitectura Mistral-7B-v0.1) | Base conversacional sin ajuste de reranking; no apto como reranker listwise sin adaptacion |
-| RankGPT-4 | No disponible | API propietaria | Propietaria | No disponible | Profesor usado para generar las reordenaciones de entrenamiento; sin pesos abiertos |
+| tinyopsec/rank-zephyr-7b-v1-full-GGUF (este) | 7,24 B | no disponible | Listwise zero-shot; 0,7803 NDCG@10 en DL19 y 0,8211 en DL20 | MIT | GGUF, 11 cuantizaciones |
+| castorini/rank_zephyr_7b_v1_full | 7,24 B | no disponible | Listwise zero-shot; mismas metricas | MIT | Safetensors (modelo base) |
+| Zephyr-7B-β | 7,24 B | no disponible | No especializado en reranking | MIT | Safetensors y GGUF de terceros |
+| Mistral-7B | 7,24 B | 32k en la versión original | No especializado; requiere prompting ad hoc | Apache 2.0 | Safetensors y GGUF |
 
-No hay datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada, salvo los NDCG del modelo base.
+La comparación con Zephyr-7B-β y Mistral-7B es relevante porque comparten arquitectura y tamaño; la diferencia es el fine-tuning específico para reranking listwise, que en el caso de RankZephyr aporta métricas publicadas en DL19 y DL20. No se dispone en la información proporcionada de resultados comparativos de otros rerankers open source en la misma tabla.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado en reranking: fuera de esa tarea su calidad como asistente general no esta garantizada ni documentada.
-- Requiere un retriever de primera fase; por si solo no realiza recuperacion.
-- Solo ingles (`language: en`); el rendimiento en otros idiomas no esta documentado.
-- Las cuantizaciones de 2, 3 y 4 bits degradan la precision respecto a F16; no hay medicion publicada de esa perdida de NDCG en este repositorio.
-- La plantilla de chat empleada en los ejemplos limita el contexto a 2.048 tokens, muy por debajo de la ventana que admite la arquitectura subyacente; listas de documentos largas pueden truncarse si no se ajusta `n_ctx`.
-- Riesgo de alucinacion inherente a los modelos generativos: al generar el orden, puede omitir documentos o inventar identificadores si la lista de entrada es larga o ambigua.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin validacion de la comunidad; conviene verificar las cuantizaciones antes de usarlas en produccion.
-- La fecha de creacion registrada (2026-09-16) es posterior a la fecha habitual de publicacion de la informacion; conviene confirmar la vigencia del repositorio.
-- Licencia MIT heredada del modelo base: permite uso comercial, pero se recomienda revisar tambien las condiciones de Zephyr-7B-β y Mistral-7B-v0.1 en la cadena de dependencias.
-- No se documentan capacidades de tool calling ni de agentes, por lo que no deberia asumirse su uso en esos flujos sin pruebas previas.
+- Especialización estrecha: está entrenado para reranking listwise; su uso como modelo generativo general no está validado y probablemente rinda por debajo de Zephyr-7B-β en tareas abiertas.
+- Idioma: la etiqueta del repositorio indica solo inglés; el rendimiento en castellano u otros idiomas no está documentado.
+- Contexto: la longitud de contexto no se especifica en la información disponible y los ejemplos de uso fijan n_ctx=2048; listas de documentos muy largas pueden truncarse o degradar el ranking.
+- Cuantización: las variantes Q3 y Q2 reducen el tamaño pero pueden degradar la precisión del ranking; la model card no publica métricas por cuantización, por lo que conviene validar NDCG en el dominio propio antes de producción.
+- Sesgos: no documentados en la información proporcionada; al derivar de Mistral-7B y Zephyr-7B-β, puede heredar sesgos de sus datos de preentrenamiento y ajuste.
+- Alucinación: como modelo generativo, puede producir texto plausible fuera del formato de ranking esperado; es necesario parsear y validar la salida.
+- Licencia MIT: permite uso comercial, pero conviene revisar las condiciones de los pesos base y de los datos de entrenamiento derivados de RankGPT-4 y OpenAI Ada2, que no se detallan en la información disponible.
+- Repositorio de terceros: la cuantización la mantiene un usuario individual (tinyopsec), no el equipo castorini; no hay garantía de mantenimiento ni de equivalencia exacta con el modelo base.
+- Fecha de creación del repositorio: 2026-09-16, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/tinyopsec/rank-zephyr-7b-v1-full-GGUF
+- Repositorio GGUF: https://huggingface.co/tinyopsec/rank-zephyr-7b-v1-full-GGUF
 - Modelo base: https://huggingface.co/castorini/rank_zephyr_7b_v1_full
-- Paper de RankZephyr (arXiv:2312.02724): https://arxiv.org/abs/2312.02724
-- Busqueda web: los resultados obtenidos no guardan relacion con el modelo (corresponden al entorno digital de la Universite Clermont Auvergne) y no aportan enlaces adicionales relevantes.
+- Artículo: https://arxiv.org/abs/2312.02724
+- Referencia de Zephyr-7B-β: https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
+- Referencia de Mistral-7B: https://huggingface.co/mistralai/Mistral-7B-v0.1

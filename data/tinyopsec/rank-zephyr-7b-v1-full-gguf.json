@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ENT Université Clermont Auvergne - UCA",
-      "url": "https://ent.uca.fr/core/connexion",
-      "snippet": "L'Environnement numérique de travail (ENT) est un portail d'accès aux services numériques de l'Université. Un compte ENT est …"
-    },
-    {
-      "title": "CAS - Central Authentication Service Login",
-      "url": "https://ent.uca.fr/",
-      "snippet": "Forgotten your password ? For security reasons, please log out and exit your web browser when you are done accessing services …"
-    },
-    {
-      "title": "Environnement numérique de travail (ENT) - Université Clermont Auvergne",
-      "url": "https://www.uca.fr/campus/ressources-numeriques/environnement-numerique-de-travail-ent",
-      "snippet": "L’Environnement numérique de travail (ENT) est un portail d’accès aux services numériques de l’Université. Un compte ENT est …"
-    },
-    {
-      "title": "Université Clermont Auvergne",
-      "url": "https://www.uca.fr/",
-      "snippet": "Oct 7, 2010 · L'Université Clermont Auvergne déploie une dynamique de recherche intensive qui contribue aux évolutions …"
-    },
-    {
-      "title": "UCA - Portail d'inscription",
-      "url": "https://inscription.uca.fr/",
-      "snippet": "Ce portail concerne tous les étudiants qui souhaitent s'inscrire ou se réinscrire à l'Université Clermont Auvergne. Important : avant de …"
-    }
-  ]
+  "sources": []
 }

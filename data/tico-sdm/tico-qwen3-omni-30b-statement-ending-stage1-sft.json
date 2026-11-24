@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "TiCo-sdm/TiCo-Qwen3-Omni-30B-Statement-Ending-Stage1-SFT",
+  "slug": "tico-sdm-tico-qwen3-omni-30b-statement-ending-stage1-sft",
+  "author": "TiCo-sdm",
+  "url": "https://huggingface.co/TiCo-sdm/TiCo-Qwen3-Omni-30B-Statement-Ending-Stage1-SFT",
+  "created_at": "2026-11-24T01:56:02.000Z",
+  "updated_at": "2026-11-24T01:56:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "TiCo",
+    "spoken-dialogue",
+    "duration-control",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 851166192,
+  "storage_human": "851 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TICO, le transport intercommunal costellan - 3CM",
+      "url": "https://www.3cm.fr/18900-l-offre-de-transport.htm",
+      "snippet": "L'offre de services de transport TICO a pour but de répondre au mieux aux besoins de mobilité des salariés et des habitants pour …Read more"
+    },
+    {
+      "title": "RESEAU TICO – 3CM – Philibert Reseau",
+      "url": "https://philibert-transport.fr/les-differents-reseaux/reseau-3cm/",
+      "snippet": "L'offre de services de transport TICO a pour but de répondre au mieux aux besoins de mobilité des salariés et des habitants pour …Read more"
+    },
+    {
+      "title": "TiCO | Agence de Design Stratégique à Impact Positif",
+      "url": "http://www.tico-design.fr/",
+      "snippet": "Agence experte en design stratégique, TiCO hack le design pour vous guider vers des modèles d’organisations positives et …Read more"
+    },
+    {
+      "title": "ticoverse - Gaming news, emulation and homebrew community",
+      "url": "https://ticoverse.com/",
+      "snippet": "Gaming news, emulation and homebrew from the ticoverse community. Discuss every story on the forum, and get tico, the emulation …Read more"
+    },
+    {
+      "title": "TICO - Travel Industry Council of Ontario",
+      "url": "https://www.tico.ca/",
+      "snippet": "The Travel Industry Council of Ontario (TICO) is an organization mandated by the Ontario government to administer the Ontario …Read more"
+    }
+  ]
+}

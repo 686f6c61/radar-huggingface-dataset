@@ -2,77 +2,89 @@
 
 ## Resumen
 
-omniHaven-GGUF es la version cuantizada en formato GGUF del modelo omniHaven, publicado por el usuario mradermacher a partir de los pesos originales de Veyraorganization/omniHaven. Se trata de una conversion estatica generada con herramientas de cuantizacion para llama.cpp, que ofrece el modelo en multiples niveles de compresion (desde Q2_K hasta F16) para facilitar su despliegue en entornos con recursos limitados. El repositorio ocupa 1,4 GB y fue creado el 20 de noviembre de 2026.
+omniHaven es un modelo de lenguaje de tipo transformer con 134.515.008 parámetros (aproximadamente 134,5 millones), desarrollado originalmente por Veyraorganization bajo el identificador `Veyraorganization/omniHaven`. La versión aquí descrita es una conversión a formato GGUF realizada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que publica versiones optimizadas para inferencia local con llama.cpp y herramientas compatibles.
 
-El modelo base cuenta con 134.515.008 parametros totales (aproximadamente 134,5 millones), lo que lo situa en la categoria de modelos pequenos, adecuados para ejecucion en CPU o GPUs de gama baja. La informacion disponible no especifica la arquitectura del modelo original, su longitud de contexto, los idiomas soportados ni la licencia bajo la que se distribuye, por lo que estos datos deben consultarse directamente en el repositorio del modelo original.
+El modelo se presenta como un modelo base afinado mediante LoRA (el repositorio incluye la etiqueta `lora` y la referencia al adaptador base), orientado a generación de texto conversacional. La model card incluye etiquetas específicas como `haven-lang`, `star-lang`, `odcs-continuity`, `flutter-declarative-ui` y `gemini-omni`, que sugieren un enfoque hacia dominios concretos (lenguajes propietarios, continuidad de sistemas y UI declarativa), aunque no se aporta documentación técnica que desarrolle estas capacidades.
 
-La relevancia de esta publicacion radica en que pone a disposicion de la comunidad una version optimizada para inferencia local mediante llama.cpp y herramientas compatibles, con un abanico amplio de cuantizaciones que permiten ajustar el equilibrio entre calidad y consumo de memoria. No obstante, la ausencia de documentacion tecnica detallada y de resultados de benchmarks limita la evaluacion rigurosa del modelo a partir de los datos publicados.
+La relevancia de esta ficha reside en que se trata de un modelo pequeño (134M de parámetros) cuantizado en múltiples formatos GGUF, lo que lo hace desplegable en hardware muy modesto. Sin embargo, la información pública disponible es muy escasa: no hay datos de entrenamiento, benchmarks ni especificaciones de contexto publicadas en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 134.515.008 (aprox. 134,5 M) |
-| Parametros activos | no aplica (no consta que sea MoE) |
+| Arquitectura | Transformer (según etiqueta `transformers`; detalles no disponibles) |
+| Parametros totales | 134.515.008 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (repo de cuantizaciones); pesos originales en safetensors segun el modelo base |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (original), GGUF (cuantizado) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo original omniHaven (Veyraorganization/omniHaven). Los datos publicados en este repositorio se limitan a los metadatos de la conversion a GGUF, que indican el uso de quantize_version 2, salida con tensor de cuantizacion (output_tensor_quantised: 1) y tipo de conversion hf, es decir, una conversion desde pesos en formato Hugging Face. No se especifica si el modelo emplea un transformer denso, una arquitectura MoE, SSM o hibrida.
+No se dispone de información detallada sobre la arquitectura interna del modelo más allá de que se trata de un transformer de 134,5 millones de parámetros. La model card original (referenciada como `Veyraorganization/omniHaven`) no detalla el número de capas, dimensiones ocultas, número de cabezas de atención ni la composición del dataset de entrenamiento.
 
-Tampoco se detallan los datos de entrenamiento: numero de tokens, composicion del corpus, tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta informacion deberia consultarse en la model card del modelo base en https://huggingface.co/Veyraorganization/omniHaven, que no forma parte de la informacion proporcionada.
+El modelo aparece etiquetado como `lora`, lo que indica que la versión publicada podría ser el resultado de un ajuste fino mediante Low-Rank Adaptation sobre una base previa, aunque no se especifica cuál es el modelo base original ni los hiperparámetros del entrenamiento. Tampoco se documentan procesos de RLHF, DPO ni datos de preentrenamiento (número de tokens, composición del corpus). Las etiquetas `gemini-omni` y `deep-reasoning` sugieren una posible inspiración o destilación de modelos Gemini, pero no hay confirmación técnica en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" del repositorio sugiere un uso orientado a dialogos, aunque no se detallan capacidades especificas de razonamiento, codigo o matematicas.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que el modelo puede servirse a traves de endpoints compatibles con la infraestructura de Hugging Face.
-- Inferencia local via llama.cpp: al estar en formato GGUF, es compatible con el ecosistema de llama.cpp y herramientas derivadas.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, modo thinking): no disponible.
+- Generación de texto conversacional (pipeline `text-generation`).
+- Etiquetado como compatible con endpoints (`endpoints_compatible`).
+- Posible especialización en dominios declarados en las etiquetas: `haven-lang`, `star-lang`, `odcs-continuity` y `flutter-declarative-ui`, aunque no se documenta su alcance real.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado (la etiqueta `deep-reasoning` sugiere intención, sin evidencia técnica).
+- Capacidades multilingües: solo inglés declarado.
+- Capacidades especiales (visión, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Prototipado de chatbots ligeros en local: con 134,5 M de parametros, el modelo puede ejecutarse en CPU o en GPUs de gama baja para experimentar con dialogos conversacionales sin depender de servicios en la nube.
-- Pruebas de integracion con llama.cpp: las distintas cuantizaciones permiten validar pipelines de inferencia (carga de GGUF, tokenizacion, generacion) antes de escalar a modelos mayores.
-- Despliegue en dispositivos con memoria limitada: las variantes Q2_K y Q3_K reducen el peso del modelo a una fraccion del original, lo que facilita su uso en entornos embebidos o contenedores con poca RAM.
-- Educacion y experimentacion: un modelo pequeno en formato GGUF es util para ensenar tecnicas de cuantizacion, comparacion de precisiones y evaluacion de calidad frente a tamano.
-- Servicio de endpoints compatibles: el tag endpoints_compatible sugiere que puede desplegarse detras de endpoints estandar para pruebas de integracion de API.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye doce variantes, lo que permite medir el impacto de la cuantizacion en la calidad de salida sobre una misma tarea.
+- Experimentación con modelos pequeños en local: con 134M de parámetros y cuantizaciones de ~0,2 GB, el modelo se puede ejecutar en CPU o en GPUs de gama baja para pruebas de pipelines de generación de texto sin requerir infraestructura dedicada.
+- Prototipado de asistentes conversacionales en inglés: adecuado para validar flujos de diálogo multi-turno antes de escalar a modelos mayores, dado su bajo coste de inferencia.
+- Generación de texto en entornos con restricciones de memoria: la cuantización Q4_K_M (~0,2 GB) permite desplegarlo en dispositivos embebidos o contenedores con RAM limitada.
+- Fines educativos y de investigación: útil para estudiar el comportamiento de modelos pequeños afinados con LoRA y comparar el impacto de distintas cuantizaciones en la calidad de salida.
+- Pruebas de integración con llama.cpp y Ollama: sirve como banco de pruebas para validar toolchains de inferencia local antes de migrar a modelos de mayor tamaño.
+- Evaluación de dominios específicos declarados en las etiquetas (`flutter-declarative-ui`, `haven-lang`): puede utilizarse para explorar si el modelo retiene conocimiento sobre estos dominios, siempre con validación manual dado que no hay benchmarks publicados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de un modelo de 134,5 M de parametros, las variantes cuantizadas ocupan del orden de cientos de MB. La variante F16 rondaria los 270 MB de pesos, mientras que Q4_K_M se situaria en torno a 80-90 MB y Q2_K en torno a 50-60 MB (estimaciones basadas en el numero de parametros, no en mediciones publicadas).
-- GPU recomendadas: cualquier GPU consumer moderna puede alojar el modelo; no se requiere A100 ni H100. Una RTX 4090 o incluso GPUs integradas son suficientes.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer e incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama (previa importacion del GGUF), y servidores compatibles con el formato GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan los pesos originales en safetensors.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en todas las cuantizaciones; Q4_K_M ocupa aproximadamente 0,2 GB y f16 aproximadamente 0,4 GB.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; también funciona en CPU.
+- Cabe en cualquier GPU consumer (GTX 1050, RTX 3050, RTX 4090, etc.) e incluso en Raspberry Pi y dispositivos similares.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el original en safetensors es compatible con transformers.
+- Latencia y throughput estimados: no disponibles; por el tamaño del modelo, se espera throughput alto en CPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria ni datos de rendimiento que permitan establecer una comparacion rigurosa. Como referencia de categoria, modelos conversacionales de tamano similar (por ejemplo, variantes pequenas de la familia Qwen o SmolLM) suelen publicar especificaciones detalladas, pero no se dispone de datos de omniHaven para confrontarlos.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| omniHaven (este) | 134,5M | no disponible | apache-2.0 | safetensors, GGUF | Afinado con LoRA, etiquetas de dominio específico |
+| SmolLM-135M (HuggingFaceTB) | 135M | 2.048 tokens | apache-2.0 | safetensors, GGUF | Modelo pequeño de referencia con benchmarks publicados |
+| Qwen2.5-0.5B | 494M | 32.768 tokens | apache-2.0 | safetensors, GGUF | Mayor tamaño y contexto, benchmarks públicos |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | apache-2.0 | safetensors, GGUF | Mayor tamaño, ampliamente documentado |
+
+La comparación con SmolLM-135M es la más directa por tamaño, pero omniHaven carece de benchmarks y documentación de contexto que permitan una comparación rigurosa. Los modelos alternativos citados cuentan con model cards detalladas y evaluaciones públicas.
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia declarada: no se especifica la licencia del modelo, lo que impide confirmar si el uso comercial esta permitido. Es imprescindible verificar la licencia del modelo base antes de cualquier uso en produccion.
-- Documentacion tecnica escasa: no se detallan arquitectura, contexto, idiomas ni datos de entrenamiento, lo que dificulta evaluar su idoneidad para tareas concretas.
-- Riesgo de alucinacion: no cuantificado; al no haber benchmarks ni evaluaciones publicadas, no puede estimarse la fiabilidad de sus respuestas.
-- Tamano reducido: con 134,5 M de parametros, es previsible una capacidad limitada en razonamiento complejo, codigo y conocimiento factual, aunque no se aportan datos que lo confirmen.
-- Idiomas: se desconoce si el modelo esta entrenado en castellano o en otros idiomas; el tag conversational no especifica lengua.
-- Cuantizaciones agresivas: las variantes Q2_K y Q3_K pueden degradar notablemente la calidad de salida en modelos pequenos; conviene validar cada variante en la tarea objetivo.
-- Sin soporte confirmado de tool calling ni agentes: no hay evidencia de que el modelo base implemente estas capacidades.
+- Ausencia total de benchmarks publicados: no es posible evaluar su calidad frente a alternativas de tamaño similar.
+- Información de entrenamiento no documentada: se desconoce el corpus, el número de tokens y el proceso de alineación, lo que dificulta evaluar sesgos.
+- Riesgo de alucinación: como todo modelo generativo de pequeño tamaño, la probabilidad de generar contenido incorrecto es alta, especialmente en dominios no representados en su entrenamiento.
+- Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado.
+- Contexto: no se especifica la longitud de ventana, lo que impide planificar su uso en tareas que requieran contexto largo.
+- Licencia apache-2.0: permite uso comercial, pero el autor original no ofrece garantías ni documentación sobre procedencia de datos, lo que puede plantear riesgos de cumplimiento en producción.
+- Etiquetas de dominio sin respaldo técnico: `haven-lang`, `star-lang` y `flutter-declarative-ui` no están documentadas, por lo que no debe asumirse competencia real en esos dominios sin validación empírica.
+- Modelo de nicho con muy baja adopción (415 descargas, 0 likes en el momento de la consulta): no hay comunidad ni soporte que permita resolver problemas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/omniHaven-GGUF
-- Modelo base: https://huggingface.co/Veyraorganization/omniHaven
+- Modelo base original: https://huggingface.co/Veyraorganization/omniHaven
+- Página de descargas del cuantizador: https://hf.tst.eu/model#omniHaven-GGUF
+- Repositorio de solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

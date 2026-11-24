@@ -2,48 +2,48 @@
 
 ## Resumen
 
-fukugawa/qwen3.5-0.8b-rag-finetuned es un ajuste fino (fine-tuning) del modelo Qwen 3.5 de 0.8B de parametros, publicado por el usuario fukugawa en Hugging Face. El nombre indica que el ajuste esta orientado a tareas de RAG (Retrieval-Augmented Generation), es decir, generacion aumentada por recuperacion, aunque la model card publicada no incluye ninguna descripcion tecnica, datos de entrenamiento ni instrucciones de uso mas alla de la declaracion de licencia.
+fukugawa/qwen3.5-0.8b-rag-finetuned es un ajuste fino (fine-tuning) del modelo base Qwen3.5 de 0.8B de parámetros, publicado por el usuario fukugawa en Hugging Face. El nombre del repositorio indica que el ajuste está orientado a tareas de RAG (Retrieval-Augmented Generation), es decir, generación aumentada por recuperación, un patrón en el que el modelo recibe contexto documental recuperado de una base de conocimiento y debe responder a partir de él. El modelo cuenta con 852.985.920 parámetros reales según los pesos en safetensors, lo que lo sitúa en la gama ultra-ligera, apta para inferencia en CPU y GPU de consumo.
 
-El modelo cuenta con 752.393.024 parametros reales segun los pesos en formato safetensors, lo que lo situa en la categoria de modelos ultraligeros, adecuados para despliegue en hardware de consumo o entornos con recursos limitados. El repositorio ocupa 1,5 GB y utiliza la arquitectura `qwen3_5_text`, etiqueta de Hugging Face que corresponde a la familia Qwen 3.5 en su variante de solo texto.
+La información pública disponible es muy limitada: la model card del autor no incluye descripción técnica, datos de entrenamiento, benchmarks ni idiomas soportados. El repositorio tiene un tamaño de 37,4 GB, inusualmente grande para un modelo de 0,85B parámetros en precisión BF16 (que ocuparía aproximadamente 1,7 GB), lo que sugiere la presencia de múltiples checkpoints, pesos duplicados u otros artefactos en el repositorio. Se desconoce la composición exacta de esos archivos.
 
-La relevancia de este modelo es limitada por el momento: no registra descargas ni interacciones, no dispone de pipeline declarado y la informacion publicada es minima. Resulta util unicamente como referencia de un experimento de fine-tuning sobre la base Qwen 3.5 0.8B para RAG, y cualquier evaluacion en produccion requeriria validacion propia.
+Por su tamaño y su orientación declarada a RAG, el modelo es relevante para escenarios de despliegue con recursos muy limitados, como asistentes documentales en local, clasificación de pasajes recuperados o generación de respuestas ancladas a contexto en entornos con presupuesto de hardware reducido. No obstante, la ausencia de documentación y de evaluaciones publicadas obliga a tratar cualquier uso en producción con cautela y a validar el comportamiento empíricamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5_text (transformer, variante de solo texto de Qwen 3.5) |
-| Parametros totales | 752.393.024 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (etiqueta de librería: qwen3_5; presumiblemente transformer decoder-only, sin confirmar) |
+| Parametros totales | 852.985.920 (según safetensors) |
+| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (el repositorio contiene safetensors; no se documentan versiones GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es `qwen3_5_text`, la variante de solo texto de la familia Qwen 3.5. Se trata, por tanto, de un transformer decoder-only con 752 millones de parametros. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni vocabulario, ya que la model card no aporta detalles.
+No se dispone de información publicada sobre la arquitectura interna del modelo. La etiqueta de librería `qwen3_5` sugiere que deriva de la familia Qwen3.5, pero la model card no confirma la arquitectura exacta, el número de capas, la dimensión oculta ni el mecanismo de atención. Tampoco se documenta si emplea atención con ventana deslizante, atención lineal u otras variantes presentes en modelos recientes de la familia Qwen.
 
-Respecto al entrenamiento, el nombre del repositorio sugiere un ajuste fino supervisado sobre la base Qwen 3.5 0.8B orientado a RAG, pero no se especifican el volumen de datos, la composicion del dataset, el uso de RLHF/DPO ni hiperparametros. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.). Toda la informacion sobre el proceso de entrenamiento debe considerarse no disponible.
+Respecto al entrenamiento, el nombre del repositorio indica un ajuste fino orientado a RAG, pero no se especifican el dataset utilizado, el número de tokens de entrenamiento, la composición de los datos, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT supervisado. No hay información sobre la longitud de contexto con la que fue entrenado ni sobre posibles innovaciones técnicas (decodificación especulativa, modos de razonamiento, etc.). Todos estos datos deben considerarse no disponibles.
 
 ## Capacidades
 
-- Generacion de texto: al derivar de Qwen 3.5 0.8B, se espera capacidad de generacion de texto general, aunque no verificada en este ajuste.
-- RAG: el ajuste esta presuntamente orientado a tareas de generacion aumentada por recuperacion, segun el nombre del repositorio.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Generación de texto condicionada a contexto recuperado, según la orientación declarada a RAG del nombre del repositorio.
+- Razonamiento sobre pasajes documentales: el ajuste sugiere capacidad para responder preguntas a partir de fragmentos de contexto, aunque no hay evaluación publicada que lo confirme.
+- Capacidades multilingües: no disponibles; no se documentan idiomas.
+- Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el modelo base Qwen suele ser multilingue, pero no se confirma para este ajuste.
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
+- Modo de razonamiento (thinking mode), visión o audio: no disponible.
 
 ## Casos de uso
 
-- Generacion aumentada por recuperacion en prototipos: el modelo puede integrarse en un pipeline RAG para responder preguntas sobre documentacion interna, usando el contexto recuperado como entrada; su tamano reducido permite ejecutarlo en una sola GPU de consumo.
-- Asistentes de documentacion tecnica: dado su presunto ajuste para RAG, puede emplearse para responder consultas sobre bases de conocimiento con contexto recuperado, siempre que se valide la calidad de las respuestas.
-- Experimentacion academica: util como punto de partida para comparar estrategias de fine-tuning para RAG sobre modelos de menos de 1B de parametros.
-- Despliegue en entornos con recursos limitados: con 752M de parametros y pesos safetensors, puede servirse en GPUs consumer o incluso en CPU con cuantizacion, aunque no se documentan formatos GGUF.
-- Clasificacion y extraccion de informacion sobre textos recuperados: el ajuste puede adaptarse a tareas de respuesta extractiva en pipelines de busqueda empresarial.
-- Evaluacion comparativa de fine-tunings: sirve como referencia para medir el impacto de un ajuste especifico frente al modelo base Qwen 3.5 0.8B en tareas de RAG.
+- Asistentes documentales en local: el modelo, con menos de 1.000 millones de parámetros, puede ejecutarse en equipos sin GPU dedicada o con GPU de consumo, lo que permite desplegar un asistente que responda preguntas sobre documentación interna sin enviar datos a servicios externos.
+- Generación de respuestas ancladas a contexto en pipelines RAG: dado su ajuste declarado a RAG, puede emplearse como generador final de un pipeline que recupere pasajes de una base vectorial y le pase el contexto al modelo para sintetizar la respuesta.
+- Clasificación y extracción de información sobre pasajes recuperados: por su tamaño reducido, es adecuado para tareas de extracción de entidades o respuestas cortas a partir de fragmentos, donde la latencia y el coste por consulta son críticos.
+- Prototipado rápido de aplicaciones de preguntas y respuestas: permite validar arquitecturas RAG completas (retriever + generador) con un coste de cómputo mínimo antes de escalar a modelos mayores.
+- Despliegue en el borde (edge) o en contenedores ligeros: su huella de memoria reducida facilita su inclusión en servicios con límites estrictos de RAM o VRAM, como funciones serverless o dispositivos embebidos con suficiente memoria.
+- Filtrado y resumen de contextos largos en sistemas de búsqueda: puede utilizarse para condensar o priorizar fragmentos recuperados antes de pasarlos a un modelo mayor, actuando como etapa intermedia de un pipeline multi-modelo.
 
 ## Benchmarks y rendimiento
 
@@ -51,34 +51,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 1,5 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, entre 2 y 4 GB segun longitud de contexto y batch.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 0,8-1 GB para pesos.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 0,4-0,5 GB para pesos.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; tambien A100/H100 para despliegues por lotes, aunque el modelo es demasiado pequeno para aprovecharlas.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU con 4 GB o mas de VRAM.
-- Opciones de despliegue: transformers, vLLM, TGI y llama.cpp/Ollama previa conversion a GGUF (no se proporcionan pesos GGUF en el repositorio).
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en BF16: aproximadamente 1,7 GB solo para los pesos (852.985.920 parámetros × 2 bytes), más overhead de activaciones y caché KV.
+- VRAM estimada en cuantización de 8 bits: en torno a 0,9 GB para los pesos; en 4 bits, alrededor de 0,45 GB. Estas cifras son estimaciones a partir del número de parámetros, no datos publicados por el autor.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM debería poder alojar el modelo en BF16 con contexto moderado; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 son sobradamente suficientes. También es viable la inferencia en CPU.
+- Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo modernas, e incluso en iGPU con memoria unificada suficiente.
+- Opciones de despliegue: al no documentarse versiones GGUF ni cuantizadas, el despliegue estándar sería mediante transformers con safetensors; sería necesario convertir los pesos para usarlos con llama.cpp, Ollama o vLLM. TGI y vLLM requerirían verificar la compatibilidad de la arquitectura `qwen3_5`.
+- Latencia y throughput: no disponibles. Por el tamaño del modelo, se espera una latencia baja en GPU de consumo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| fukugawa/qwen3.5-0.8b-rag-finetuned | 752M | no disponible | apache-2.0 | Hugging Face |
-| Qwen 3.5 0.8B (base) | ~0,8B | no disponible | no disponible | Hugging Face |
-| SmolLM2-1.7B-Instruct | 1,7B | 8K (segun model card publica) | apache-2.0 | Hugging Face |
-| Llama 3.2 1B Instruct | 1,2B | 128K (segun model card publica) | Llama 3.2 Community License | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| fukugawa/qwen3.5-0.8b-rag-finetuned | 852.985.920 | no disponible | Apache 2.0 | Hugging Face, safetensors | Fine-tuning RAG sin documentación ni benchmarks |
+| Qwen3.5 0.8B (base) | ~0,8B | no disponible en la informacion | Apache 2.0 (presumible, según el modelo derivado) | Hugging Face | Modelo base del que deriva el ajuste; sin datos verificados en esta ficha |
+| Modelos ligeros de la familia Qwen2.5 (0.5B–1.5B) | 0,5B–1,5B | hasta 32K en algunas variantes | Apache 2.0 | Hugging Face, GGUF, Ollama | Alternativa consolidada con documentación y benchmarks públicos |
 
-La comparativa con modelos de la misma categoria (menos de 2B de parametros) muestra que este ajuste compite en tamano con alternativas bien documentadas, pero carece de informacion publica sobre contexto, rendimiento y capacidades que permita una comparacion rigurosa.
+La comparativa es limitada porque no se dispone de datos verificados del modelo base ni de benchmarks del ajuste. Cualquier comparación de rendimiento sería especulativa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados; al derivar de un modelo base, hereda los sesgos de este, que no se especifican.
-- Riesgo de alucinacion: no evaluado; en tareas RAG el riesgo persiste si el contexto recuperado es irrelevante o insuficiente.
-- Limitaciones de contexto o idioma: no disponibles; se desconoce la ventana de contexto efectiva y los idiomas soportados.
-- Restricciones de licencia: licencia apache-2.0, que permite uso comercial con atribucion; no obstante, deben respetarse las condiciones del modelo base Qwen 3.5.
-- Caveats para produccion: el repositorio no registra descargas ni validacion externa, no incluye model card tecnica y no se han publicado evaluaciones; no se recomienda su uso en produccion sin una evaluacion propia exhaustiva.
-- Ausencia de formatos cuantizados: no se ofrecen pesos GGUF ni cuantizaciones listas, lo que anade trabajo de conversion para despliegues ligeros.
+- Documentación prácticamente inexistente: la model card no describe datos de entrenamiento, arquitectura, contexto ni idiomas, lo que impide evaluar su idoneidad con rigor.
+- Sin benchmarks publicados: no hay evidencia empírica de su calidad en tareas RAG frente al modelo base ni frente a alternativas.
+- Riesgo de alucinación: como todo modelo generativo de pequeño tamaño, es propenso a inventar información cuando el contexto recuperado es insuficiente o ambiguo; en RAG esto es especialmente crítico.
+- Sesgos desconocidos: al no documentarse la composición del dataset de ajuste, no es posible evaluar sesgos de género, idioma, cultura o dominio.
+- Idiomas no confirmados: no se especifica qué lenguas soporta; el uso en castellano requeriría validación previa.
+- Tamaño del repositorio anómalo: 37,4 GB para un modelo de 0,85B parámetros sugiere checkpoints duplicados u otros artefactos; conviene revisar los archivos antes de descargar.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar que el modelo base y los datos de ajuste no impongan restricciones adicionales.
+- Sin garantías de mantenimiento: el repositorio tiene 0 likes y 415 descargas, lo que indica escasa comunidad; no hay evidencia de soporte o actualizaciones futuras.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/fukugawa/qwen3.5-0.8b-rag-finetuned
+- Modelo en Hugging Face: https://huggingface.co/fukugawa/qwen3.5-0.8b-rag-finetuned
+- No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

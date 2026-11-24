@@ -38,31 +38,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Chaski AI",
-      "url": "https://chaski.ai/",
-      "snippet": "cha s ki AI tools for the work that matters to you. Currently testing."
-    },
-    {
-      "title": "szl-serve/README.md at main · szl-holdings/szl-serve · GitHub",
-      "url": "https://github.com/szl-holdings/szl-serve/blob/main/README.md",
-      "snippet": "Canonical SZL governed serve recipe: llama.cpp/Ollama CPU honest path for Khipu GGUF, schema validation outside the weights, energy MEASURED or UNAVAILABLE, GPU ROADMAP. Not a vLLM/TGI/TRT-LLM copy. Doctrine v11, Apache-2.0. - szl-serve/README.md at main · szl-holdings/szl-serve"
-    },
-    {
-      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
-      "url": "https://huggingface.co/SZLHOLDINGS/models",
-      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
-    },
-    {
-      "title": "SZL Holdings · GitHub",
-      "url": "https://github.com/szl-holdings",
-      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
-    },
-    {
-      "title": "About · SZL Holdings",
-      "url": "https://holdings.a-11-oy.com/docs-site/about.html",
-      "snippet": "About What SZL Holdings is SZL Holdings builds governed-AI infrastructure with inspectable source, bounded decision logic, and linked evidence. Its Lean corpus has an explicitly mixed proof posture: locked formulas are identified separately from open sorry -tagged obligations, and Lambda remains a conjecture rather than a theorem."
-    }
-  ]
+  "sources": []
 }

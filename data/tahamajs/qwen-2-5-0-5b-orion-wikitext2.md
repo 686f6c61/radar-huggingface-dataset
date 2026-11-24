@@ -1,87 +1,107 @@
 # tahamajs/qwen-2.5-0.5b-orion-wikitext2
 
 ## Resumen
-qwen-2.5-0.5b-orion-wikitext2 es un checkpoint experimental publicado por el usuario tahamajs dentro del proyecto NeuralOps (Qwen Attention Zoo). No es un modelo entrenado desde cero, sino un Qwen/Qwen2.5-0.5B cuyo mecanismo de atencion en el decodificador ha sido sustituido quirurgicamente por el operador ORIONAttention (Optimized Rectified Input-aware Orthogonal Network), un mecanismo de atencion subcuadratica registrado en el ATTENTION_REGISTRY de NeuralOps. El objetivo del experimento es medir si una atencion alternativa puede recuperar calidad tras un reemplazo agresivo de capas mediante destilacion de conocimiento.
 
-El modelo parte de la arquitectura transformer de Qwen2.5-0.5B (14 cabezas de consulta, 2 cabezas KV, head_dim=64, hidden_size=896) y aplica un patron hibrido 3:1: 18 de las 24 capas usan ORION y 6 capas conservan la atencion cuadratica original como anclas. La adaptacion se realiza mediante QwenAttentionAdapter, que expande las cabezas KV 7x cuando es necesario y mantiene el contrato de una unica o_proj.
+`tahamajs/qwen-2.5-0.5b-orion-wikitext2` es un checkpoint experimental publicado por el usuario tahamajs dentro del proyecto NeuralOps "Qwen Attention Zoo". No es un modelo de lenguaje entrenado desde cero, sino un Qwen2.5-0.5B (desarrollado originalmente por Alibaba Qwen) al que se le han sustituido quirúrgicamente 18 de sus 24 capas de atencion por un operador de atencion alternativo denominado ORION (`ORIONAttention`), preservando 6 capas con atencion cuadratica completa como anclas. El objetivo es explorar mecanismos de atencion subcuadratica mediante destilacion de conocimiento, no ofrecer un modelo listo para produccion.
 
-Su relevancia es fundamentalmente de investigacion: demuestra el proceso de cirugia de atencion y destilacion en dos etapas sobre un modelo pequeno, con telemetria detallada de perplexity antes y despues del ajuste. No esta pensado como modelo de produccion, sino como artefacto reproducible para estudiar atencion subcuadratica y destilacion de representaciones.
+El modelo base Qwen2.5-0.5B es un transformer decoder-only denso de aproximadamente 494 millones de parametros, con 24 capas, 14 cabezas de consulta y 2 cabezas KV (GQA), `head_dim=64` y `hidden_size=896`. El checkpoint publicado contiene unicamente los pesos de atencion modificados (`attention_weights.safetensors`, 59,29 MB), no los pesos completos del modelo, por lo que requiere cargar el Qwen2.5-0.5B original y aplicar la cirugia de atencion antes de inyectar los pesos.
+
+La relevancia de esta ficha es acotada: se trata de un artefacto de investigacion (357 descargas, 0 likes, creado en noviembre de 2026) orientado a estudiar la viabilidad de operadores de atencion alternativos con destilacion en dos etapas. Su perplexity final en WikiText-2 es de 209,62, muy superior a la de un modelo de 0,5B bien entrenado, lo que confirma que es un experimento de arquitectura y no un modelo desplegable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2.5-0.5B) con atencion hibrida 3:1: 18/24 capas con ORIONAttention y 6/24 capas con atencion cuadratica original |
-| Parametros totales | no disponible (el repo solo publica pesos de atencion de 59,29 MB; el modelo base Qwen2.5-0.5B tiene 0,5B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el entrenamiento uso seq_len=512; el contexto nativo del base es 32.768 tokens, no confirmado para este checkpoint) |
-| Tipos de cuantizacion | no disponible (solo se documenta FP16 en inferencia y FP32 en parametros maestros durante entrenamiento) |
-| Idiomas soportados | en |
+| Arquitectura | Transformer decoder-only (Qwen2) con 18/24 capas de atencion sustituidas por `ORIONAttention` (patron `hybrid_3_1`); 6 capas cuadraticas ancla en indices [3, 7, 11, 15, 19, 23] |
+| Parametros totales | No disponible de forma explicita; el modelo base Qwen2.5-0.5B tiene ~494 M |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el entrenamiento uso `seq_len=512`) |
+| Tipos de cuantizacion | No disponible (solo se documenta entrenamiento en FP16 con master FP32) |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (attention_weights.safetensors, 59,29 MB) mas config.json y tokenizer.json |
+| Formato de pesos | `safetensors` (`attention_weights.safetensors`, 59,29 MB) + `config.json` + `tokenizer.json`; requiere el checkpoint base Qwen2.5-0.5B para funcionar |
 
 ## Arquitectura y entrenamiento
-El modelo conserva la estructura del decoder de Qwen2.5-0.5B pero sustituye la atencion en 18 de las 24 capas por ORIONAttention, un operador de atencion subcuadratica con soporte causal, bidireccional, cross-attention y GQA nativo. Las capas en los indices [3, 7, 11, 15, 19, 23] mantienen la atencion cuadratica original como anclas, siguiendo el patron hybrid_3_1. El adaptador QwenAttentionAdapter gestiona la proyeccion 14:2 de cabezas (14 query, 2 KV, head_dim=64, hidden_size=896) con expansion 7x de las cabezas KV y fuerza el contrato de una unica o_proj.
 
-El entrenamiento consiste en una destilacion de conocimiento en dos etapas sobre WikiText-2 (wikitext-2-raw-v1). La etapa 0 (post-cirugia, sin ajuste) arroja una perplexity causal de 497.411,42. La etapa 1 (alineacion con backbone congelado, 78 pasos, 54,5 s) omite lm_head y usa MSE y coseno por capa con peso 0,25. La etapa 2 (destilacion multi-capa de representaciones, 179 pasos, 125,3 s) usa MSE y coseno con peso 0,50. En total, 257 pasos en 180,1 s con seq_len=512, grad_accum=4 y topk=64, alcanzando una perplexity final de 209,62. El pico de VRAM fue de 17.404 MB en FP16 con autocast y parametros maestros FP32.
+El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con atencion causal estandar, 24 capas, GQA con 14 cabezas de consulta y 2 cabezas KV (`head_dim=64`, `hidden_size=896`). La intervencion reemplaza las proyecciones de atencion de 18 capas mediante el `QwenAttentionAdapter`, que expande las cabezas KV 7x cuando es necesario y aplica el contrato "Single-`o_proj`". Se conservan 6 capas con atencion cuadratica completa como anclas (patron `hybrid_3_1`). El operador ORION soporta atencion causal, bidireccional, cross-attention y GQA nativa, pero no soporta RoPE segun la model card.
+
+El entrenamiento consistio en una destilacion de conocimiento en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`). La etapa 0 (post-cirugia, sin entrenar) arrojo una perplexity causal de 497.411,42. La etapa 1 (alineacion con backbone congelado, `lm_head` eludido, MSE y coseno a nivel de capa con peso 0,25) duro 78 pasos (54,5 s). La etapa 2 (destilacion de representaciones multicapa, MSE y coseno con peso 0,50) duro 179 pasos (125,3 s). En total, 257 pasos de optimizacion en 180,1 s con `seq_len=512`, `grad_accum=4` y `topk=64`, alcanzando 17.404 MB de VRAM pico en FP16 con parametros maestro FP32. La perplexity final fue de 209,62, una reduccion de 497.201,80 puntos respecto al baseline post-cirugia, pero aun muy lejos de valores competitivos.
 
 ## Capacidades
-- Generacion de texto causal autorregresiva (pipeline text-generation).
-- Soporte de atencion causal, bidireccional y cross-attention a nivel de modulo ORIONAttention.
+
+- Generacion de texto causal autorregresiva (tarea declarada: `text-generation`).
+- Atencion causal, bidireccional y cross-attention a nivel de modulo (`ORIONAttention`).
 - Soporte nativo de GQA con expansion 7x de cabezas KV.
-- Capacidad multilingue limitada: solo se declara ingles (en).
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta vision, audio ni modo thinking.
-- El checkpoint es un artefacto de investigacion: requiere aplicar la cirugia de atencion y cargar los pesos con strict=False, no es un modelo listo para uso directo con transformers.
+- Compatibilidad con el ecosistema NeuralOps (`neuralops.hub.load_surgeried_model`) y con `transformers` tras aplicar la cirugia.
+- Capacidad multilingue limitada al ingles segun la model card.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido.
+- No se documenta soporte de RoPE en el operador ORION, lo que limita la extrapolacion de contexto.
 
 ## Casos de uso
-- Investigacion en atencion subcuadratica: sirve como banco de pruebas reproducible para comparar ORIONAttention frente a atencion cuadratica en un transformer pequeno, cargando los pesos con apply_qwen_attention_surgery y midiendo perplexity en WikiText-2.
-- Estudio de destilacion de conocimiento: la telemetria de dos etapas (MSE y coseno por capa, pesos 0,25 y 0,50) permite analizar como se recupera la calidad tras una cirugia agresiva de capas.
-- Reproduccion de experimentos de cirugia de atencion: el patron hybrid_3_1 y el QwenAttentionAdapter documentan un procedimiento concreto para sustituir atencion en modelos Qwen2.5 con contrato de una unica o_proj.
-- Benchmark de perplexity en WikiText-2: util para validar pipelines de evaluacion con modelos de 0,5B y comparar variantes del Attention Zoo de NeuralOps.
-- Prototipado de mecanismos de atencion hibridos: permite experimentar con mezclas de capas cuadraticas y subcuadraticas sin entrenar desde cero.
-- Docencia y divulgacion: ejemplo didactico de cirugia de atencion y destilacion en un modelo pequeno que cabe en una GPU consumer.
+
+- Investigacion en atencion subcuadratica: sirve como banco de pruebas reproducible para comparar `ORIONAttention` frente a atencion cuadratica estandar en un backbone conocido (Qwen2.5-0.5B) con telemetria de perplexity y tiempos de entrenamiento documentados.
+- Estudio de destilacion post-cirugia: el par de etapas (alineacion con backbone congelado y destilacion de representaciones multicapa) es un ejemplo concreto de recuperacion de perplexity tras reemplazar modulos de atencion, util para disenar pipelines de "surgery + KD" en otros modelos.
+- Validacion de adaptadores de atencion: el `QwenAttentionAdapter` con expansion 7x de cabezas KV y contrato Single-`o_proj` puede reutilizarse para probar otros operadores del `ATTENTION_REGISTRY` sobre la misma familia Qwen.
+- Prototipado de modulos en NeuralOps: permite ejercitar la API `load_surgeried_model` y el flujo de carga de pesos parciales (`strict=False`) antes de escalar a modelos mayores.
+- Docencia y divulgacion tecnica: ejemplo minimo (0,5B, ~59 MB de pesos de atencion) para explicar GQA, atencion hibrida y destilacion de conocimiento sin requerir hardware grande.
+- Benchmarking de perplexity en WikiText-2: util como referencia negativa (PPL 209,62) para calibrar cuanto margen de mejora aporta cada etapa de KD en futuros experimentos.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Dataset | Metrica | Valor |
-|---|---|---|---|
-| qwen-2.5-0.5b-orion-wikitext2 (post-KD) | wikitext-2-raw-v1, validation | Perplexity | 209,62 |
-| qwen-2.5-0.5b-orion-wikitext2 (pre-KD, stage 0) | wikitext-2-raw-v1 | Perplexity | 497.411,42 |
+Datos declarados por el autor en el `model-index` (no verificados):
 
-Los resultados son los declarados por el autor en la model card y no estan verificados de forma independiente. No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+| Benchmark | Dataset / split | Metrica | Valor |
+|---|---|---|---|
+| Causal Language Modeling | `Salesforce/wikitext` / `wikitext-2-raw-v1` / validation | Perplexity | 209,62 |
+
+Telemetria interna de entrenamiento (declarada por el autor):
+
+| Etapa | Metrica | Valor |
+|---|---|---|
+| Stage 0 (post-cirugia, zero-shot) | Perplexity causal | 497.411,42 |
+| Stage 1 (alineacion, backbone congelado) | Pasos / tiempo | 78 / 54,5 s |
+| Stage 2 (KD multicapa) | Pasos / tiempo | 179 / 125,3 s |
+| Total | Pasos / tiempo | 257 / 180,1 s |
+| Total | VRAM pico | 17.404 MB |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: no disponible de forma explicita; el entrenamiento uso 17.404 MB de pico en FP16 con parametros maestros FP32, por lo que la inferencia en FP16 deberia caber holgadamente en GPUs consumer.
-- GPU recomendadas: no especificadas por el autor; por tamano (base 0,5B), cabe en RTX 3060, RTX 4060, RTX 4090 y superiores.
-- Cabe en GPU consumer: si, dado el tamano del modelo base (0,5B) y los pesos de atencion de 59,29 MB.
-- Opciones de despliegue: no se documentan vLLM, llama.cpp, Ollama ni TGI; el unico flujo documentado es transformers con el script apply_qwen_attention_surgery de NeuralOps y carga de safetensors con strict=False.
-- Latencia y throughput estimados: no disponibles. El entrenamiento completo (257 pasos) tardo 180,1 s en la GPU del autor, dato no representativo de inferencia.
+
+- VRAM estimada para inferencia: el modelo base Qwen2.5-0.5B en FP16 ocupa aproximadamente 1 GB; en FP32, unos 2 GB. El checkpoint de atencion anade 59,29 MB. El pico documentado de 17.404 MB corresponde al entrenamiento (FP16 autocast con master FP32), no a inferencia.
+- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM es suficiente para inferencia en FP16; para entrenamiento o KD se documenta el uso de una GPU con ~17,5 GB (clase RTX 4090 / A10 / L4).
+- Cabe en GPU consumer: si, en GPUs tipo RTX 3060, RTX 4060, RTX 4090 y similares.
+- Opciones de despliegue: `transformers` (cargando el base Qwen2.5-0.5B y aplicando `apply_qwen_attention_surgery`), API `neuralops.hub.load_surgeried_model`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y la naturaleza parcial de los pesos (solo atencion) complica su uso con esos runtimes.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Perplexity WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | PPL WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-2.5-0.5b-orion-wikitext2 | 0,5B (base) | no disponible | 209,62 (no verificado) | MIT | Hugging Face, requiere cirugia de atencion |
-| Qwen/Qwen2.5-0.5B (base) | 0,5B | 32.768 tokens | no disponible en la informacion | Apache 2.0 (segun el modelo base, no confirmado en esta ficha) | Hugging Face, transformers estandar |
-| Otros modelos del NeuralOps Attention Zoo | no disponible | no disponible | no disponible | no disponible | no disponible |
+| `tahamajs/qwen-2.5-0.5b-orion-wikitext2` | ~494 M (base) | No disponible | 209,62 (declarado) | MIT | Hugging Face (pesos de atencion parciales) |
+| `Qwen/Qwen2.5-0.5B` (base) | ~494 M | No disponible en esta ficha | No disponible en esta ficha | Apache 2.0 (Qwen2.5) | Hugging Face (pesos completos) |
+| `Qwen/Qwen2.5-0.5B-Instruct` | ~494 M | No disponible en esta ficha | No disponible en esta ficha | Apache 2.0 (Qwen2.5) | Hugging Face (pesos completos) |
 
-No se dispone de datos de benchmarks comparables de terceros en la informacion proporcionada para establecer una comparacion cuantitativa rigurosa.
+La comparativa se limita a la familia base porque no se dispone de datos de perplexity de los modelos Qwen originales en la informacion proporcionada, ni de otros checkpoints del Attention Zoo con los que contrastar. Cualquier comparacion numerica adicional requeriria medir los modelos base en el mismo split.
 
 ## Limitaciones y advertencias
-- Perplexity de 209,62 en WikiText-2, muy superior a la de un modelo base bien ajustado; la calidad de generacion es limitada y no apta para produccion.
-- El checkpoint solo incluye pesos de atencion (59,29 MB); requiere el modelo base Qwen2.5-0.5B y aplicar la cirugia con el codigo de NeuralOps, lo que anade dependencias no estandar.
-- Solo se declara soporte de ingles; no hay evidencia de capacidades multilingues.
-- Entrenado unicamente sobre WikiText-2 con seq_len=512; no se ha validado en tareas de instruccion, codigo, matematicas ni diálogo.
-- Riesgo elevado de alucinacion y de degeneracion en generaciones largas por el bajo ajuste y el contexto de entrenamiento corto.
-- El autor no ha verificado los resultados (verified: false en el model-index); la perplexity declarada debe tratarse como no auditada.
-- La licencia MIT se aplica al repositorio, pero el modelo base Qwen2.5-0.5B tiene su propia licencia que debe respetarse al redistribuir.
-- No hay informacion sobre sesgos, filtros de seguridad ni evaluaciones de robustez.
+
+- Perplexity muy alta (209,62 en WikiText-2 validation) para un modelo de 0,5B; no es competitivo para generacion de texto real.
+- Los pesos publicados son solo de atencion (`attention_weights.safetensors`, 59,29 MB); es imprescindible cargar `Qwen/Qwen2.5-0.5B` y aplicar la cirugia antes de usarlo. No funciona como checkpoint autonomo en `transformers` ni en runtimes estandar.
+- Solo ingles; sin capacidades multilingues documentadas.
+- Sin soporte de RoPE en el operador ORION segun la model card, lo que limita la extrapolacion de contexto.
+- Entrenado exclusivamente sobre WikiText-2 con `seq_len=512`; el dominio y la longitud de contexto estan muy acotados.
+- Riesgo elevado de alucinacion y degeneracion de texto por la baja calidad del ajuste.
+- No se documentan evaluaciones de sesgo, seguridad ni alineacion (sin RLHF/DPO).
+- Licencia MIT declarada, pero el modelo base Qwen2.5-0.5B tiene su propia licencia (Apache 2.0) que debe respetarse al redistribuir o usar comercialmente.
+- Proyecto experimental de un autor individual (0 likes, 357 descargas); sin garantias de mantenimiento ni soporte.
+- Los benchmarks declarados no estan verificados (`verified: false`).
 
 ## Enlaces
-- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-orion-wikitext2
+
+- Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-orion-wikitext2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
 - Licencia NeuralOps: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
+- No se han encontrado papers, blogs, demos ni repos adicionales en la informacion proporcionada.

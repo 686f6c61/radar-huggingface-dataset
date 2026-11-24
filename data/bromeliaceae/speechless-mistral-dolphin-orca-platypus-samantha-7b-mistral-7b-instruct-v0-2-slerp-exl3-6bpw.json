@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "bromeliaceae/speechless-mistral-dolphin-orca-platypus-samantha-7b-Mistral-7B-Instruct-v0.2-slerp-exl3-6bpw",
+  "slug": "bromeliaceae-speechless-mistral-dolphin-orca-platypus-samantha-7b-mistral-7b-instruct-v0-2-slerp-exl3-6bpw",
+  "author": "bromeliaceae",
+  "url": "https://huggingface.co/bromeliaceae/speechless-mistral-dolphin-orca-platypus-samantha-7b-Mistral-7B-Instruct-v0.2-slerp-exl3-6bpw",
+  "created_at": "2026-11-17T01:59:40.000Z",
+  "updated_at": "2026-11-23T22:17:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "merge",
+    "mergekit",
+    "7b",
+    "lazymergekit",
+    "mistralai/Mistral-7B-Instruct-v0.2",
+    "uukuguy/speechless-mistral-dolphin-orca-platypus-samantha-7b-dare-0.85",
+    "license:apache-2.0",
+    "6-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2800393472,
+  "parameters_human": "2.80B",
+  "storage_bytes": 5601386552,
+  "storage_human": "5.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bromeliaceae — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bromeliaceae",
+      "snippet": "Les Bromeliaceae (Broméliacées) sont une famille de plantes monocotylédones, originaires majoritairement des régions tropicales d' …Read more"
+    },
+    {
+      "title": "Broméliacées : plantation, entretien | Truffaut",
+      "url": "https://www.truffaut.com/bromeliacees-varietes-plantation-entretien.html",
+      "snippet": "Jun 19, 2026 · Il existe plusieurs dizaines de genres de Broméliacées (Bromeliaceae) comprenant de nombreuses espèces et …Read more"
+    },
+    {
+      "title": "Bromeliaceae - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bromeliaceae",
+      "snippet": "Bromeliaceae, members of which are called bromeliads (/ broʊˈmiːliˌædz /), [2] is a family of monocot flowering plants of about 80 …Read more"
+    },
+    {
+      "title": "22 genres de plantes - Bromeliaceae - Conservation Nature",
+      "url": "https://www.conservation-nature.fr/plantes/bromeliaceae/",
+      "snippet": "Si le sujet vous intéresse, vous pouvez découvrir notre analyse détaillée pour comprendre les raisons de leur extinction, les enjeux …Read more"
+    }
+  ]
+}

@@ -56,5 +56,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Orthopaedic Research | UK Charity",
+      "url": "https://oruk.org/",
+      "snippet": "Not only is ORUK providing funding to help us get to the next stage in our development, but it has also opened-up multiple links to …Read more"
+    },
+    {
+      "title": "Oruk — Voice APIs: STT, Tone and Voice Agents",
+      "url": "https://oruk.ai/",
+      "snippet": "Play recorded voices, compare their transcripts and acoustic scores, and inspect the API response. Explore Oruk models, …Read more"
+    },
+    {
+      "title": "Speech models and open weights | oruk",
+      "url": "https://oruk.ai/models",
+      "snippet": "Explore Oruk-1.7B, Spectra-2 and Oruk-MoE. Find downloadable speech models, runtime guides and supported API endpoints."
+    },
+    {
+      "title": "Our Research Funds — Orthopaedic Research UK",
+      "url": "https://oruk.org/our-research-funds/",
+      "snippet": "Nov 9, 2026 · ORUK MSK Innovation Accelerator Programme Sponsored by TIME Interconnect MedTech UK Limited, this unique …Read more"
+    },
+    {
+      "title": "oruk/orukeet · Hugging Face",
+      "url": "https://huggingface.co/oruk/orukeet",
+      "snippet": "Sep 9, 2026 · Choose Local → Oruk → Orukeet, then Download. Recognition runs locally after installation. Follow the file-upload …Read more"
+    }
+  ]
 }

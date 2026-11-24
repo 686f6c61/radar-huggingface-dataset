@@ -2,128 +2,123 @@
 
 ## Resumen
 
-GRT-30M-Omni es un modelo multimodal "any-to-any" desarrollado por MatterWave AI que unifica comprensión de imágenes, percepción de audio y voz, generación de lenguaje causal y síntesis de voz a 16 kHz en una única arquitectura. Su rasgo diferencial es que prescinde por completo de matrices densas `nn.Linear` y de capas `nn.Conv1d`: toda la computación se articula mediante rotaciones de Givens en un espacio de fase toroidal compartido de 256 dimensiones (128 pares planares). Se trata de una propuesta de investigación sobre una arquitectura alternativa al transformer convencional, no de un modelo de producción.
+GRT-30M-Omni es un modelo multimodal "any-to-any" desarrollado por MatterWaveAI que unifica comprensión de imágenes, percepción de audio y voz, generación de lenguaje causal y síntesis de voz armónica a 16 kHz en un único espacio de fase toroidal de 256 dimensiones. Se trata de una variante multimodal del modelo base `MatterWaveAI/grt-30m`, con un total de 38.718.581 parámetros reales según los pesos en safetensors. Su rasgo distintivo es que no contiene ninguna matriz densa `nn.Linear` ni capas `nn.Conv1d`: toda la computación se articula mediante rotaciones de Givens sobre pares planares.
 
-El modelo cuenta con 37.596.089 parámetros según la model card (38.718.581 según los pesos en safetensors), distribuidos en cuatro componentes: una torre de visión (`GRTVisionModel`), una torre de audio (`GRTAudioModel`), un backbone de lenguaje causal de 12 capas (`GRTModel`) y una cabeza vocoder polar (`GRTPolarVocoderHead`). Deriva del modelo base `MatterWaveAI/grt-30m` mediante fine-tuning multimodal y se publica bajo licencia Apache 2.0.
+El modelo se compone de cuatro bloques: una torre visual (`GRTVisionModel`, 4.954.258 parámetros), una torre de audio (`GRTAudioModel`, 3.288.972 parámetros), un backbone de lenguaje causal de 12 capas (`GRTModel` + `GRTCosineHead`, 29.305.498 parámetros) y una cabeza vocoder polar (`GRTPolarVocoderHead`, 47.361 parámetros) que sintetiza voz a 16 kHz. La relevancia de este lanzamiento es fundamentalmente de investigación: explora si una arquitectura puramente rotacional, sin proyecciones lineales convencionales, puede sostener alineamiento tri-modal (visión, audio, texto) y síntesis de voz en un presupuesto de parámetros extremadamente reducido.
 
-Su relevancia es fundamentalmente académica: demuestra que es posible construir un pipeline multimodal completo (visión, audio, texto y habla) sin capas lineales densas, con un presupuesto de parámetros extremadamente reducido (menos de 40 millones). No obstante, el modelo tiene cero descargas y cero likes en Hugging Face en el momento de redactar esta ficha, y sus métricas publicadas proceden exclusivamente de evaluaciones held-out del propio autor.
+Por su tamaño (~38,7 M de parámetros) y su enfoque arquitectónico experimental, GRT-30M-Omni no está pensado como sustituto de modelos multimodales de producción, sino como banco de pruebas para estudiar optimizadores geométricos y dinámicas de alineamiento entre modalidades. La model card incluye un ablation de ocho optimizadores geométricos clásicos sobre un presupuesto controlado de 200 pasos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer rotacional (Givens Rotational Transformer), 100% rotational, sin `nn.Linear` ni `nn.Conv1d` |
-| Parametros totales | 37.596.089 (model card) / 38.718.581 (safetensors) |
-| Parametros activos | No aplica (no es MoE; existe una variante MoR separada) |
+| Arquitectura | Transformer rotacional multimodal (Givens Rotational Transformer) con torres visual y de audio, backbone causal de 12 capas y cabeza vocoder polar |
+| Parametros totales | 38.718.581 (safetensors); 37.596.089 según model card |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
+| Tipos de cuantizacion | GGUF disponible en el repositorio; niveles concretos no disponibles |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (libreria transformers) |
-
-Desglose por componente segun la model card:
-
-| Componente | Modulo | Parametros |
-|---|---|---|
-| Torre de vision | `GRTVisionModel` (`model.visual`) | 4.954.258 |
-| Torre de audio | `GRTAudioModel` (`model.audio_tower`) | 3.288.972 |
-| Backbone de lenguaje | `GRTModel` + `GRTCosineHead` | 29.305.498 |
-| Cabeza vocoder de habla | `GRTPolarVocoderHead` (`model.speech_head`) | 47.361 |
-| Total | `GRTOmniForConditionalGeneration` | 37.596.089 |
+| Formato de pesos | Safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se basa en el Geometric Rotation Transformer (GRT), descrito en el whitepaper del autor. En lugar de proyecciones lineales densas, cada bloque aplica rotaciones de Givens sobre pares de dimensiones en un espacio de fase toroidal de 256 dimensiones. El backbone de lenguaje es un transformer causal de 12 capas con embeddings polares y cabeza coseno compartidas (tied). La torre de visión emplea un stem de parches polares 14x14, RoPE 2D, seis bloques rotacionales bidireccionales y un merger espacial 2x2 que produce 64 tokens visuales. La torre de audio usa un stem STFT polar (`n_fft=254`, `hop=160`), RoPE 1D, cuatro bloques rotacionales bidireccionales y un merger temporal 2x que produce 64 tokens de audio. La cabeza de voz es una cascada de 15 etapas de mariposa de Givens (expand/RadialGELU/contract) con `frames_per_token=4` que alimenta un `torch.istft` a 16 kHz.
+El modelo sustituye las proyecciones lineales densas por rotaciones de Givens organizadas en pares planares dentro de un espacio de fase toroidal de 256 dimensiones (128 pares). El backbone lingüístico es un transformer causal de 12 capas con embeddings polares atados y cabeza coseno (`GRTCosineHead`). La torre visual emplea un stem de parches polares 14x14, RoPE 2D, seis bloques rotacionales bidireccionales y un merger espacial 2x2 que produce 64 tokens visuales. La torre de audio usa un stem STFT polar (`n_fft=254`, `hop=160`), RoPE 1D, cuatro bloques rotacionales bidireccionales y un merger temporal 2x que genera 64 tokens de audio. La cabeza de voz es una cascada de 15 etapas de mariposa de Givens con expand/RadialGELU/contract y `frames_per_token=4`, seguida de `torch.istft` a 16 kHz.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. La model card unicamente indica que el modelo deriva del base `MatterWaveAI/grt-30m` mediante fine-tuning multimodal. La innovacion tecnica destacable es la eliminacion total de capas lineales densas y convoluciones, sustituidas por rotaciones geometricas, lo que reduce drasticamente el numero de parametros para un pipeline multimodal completo.
+No se especifican en la información disponible el volumen de tokens de entrenamiento ni la composición del dataset. La model card documenta un ablation de optimizadores geométricos (HuygensAdam, HessianPairAdam/Sophia-Torus, PairAdam, PolarNaturalAdam, CyclideAdam, GyricAdam, SymplecticAdam, HuygensSymplecticAdam) sobre un presupuesto de 200 pasos en tres etapas: 80 pasos de alineamiento rotacional de `GRTAudioModel`, 70 pasos de alineamiento multimodal del bloque superior de `GRTModel` y 50 pasos de `GRTPolarVocoderHead` con codec RVQ de 4 codebooks, con semilla 42 y ejecución en AMD Radeon 8060S Graphics. No se documenta RLHF ni DPO.
 
 ## Capacidades
 
-- Comprension de imagenes: captioning visual con reconocimiento de color, forma y posicion.
-- Percepcion de audio y voz: reconocimiento de voz, prosodia y frases.
-- Generacion de lenguaje causal (texto).
-- Sintesis de voz armonica a 16 kHz mediante `synthesize_speech`, que devuelve forma de onda y STFT polar.
-- Respuesta hablada conjunta con decodificacion de texto.
-- QA audio-visual conjunta (razonamiento sobre imagen y audio simultaneamente).
-- Capacidad "any-to-any" declarada en el pipeline tag.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingues: no disponibles.
+- Comprensión de imágenes: captioning visual con métricas reportadas de color, forma y posición.
+- Percepción de audio y voz: reconocimiento con métricas de voz, prosodia y frase.
+- Generación de lenguaje causal a partir de entradas multimodales.
+- QA conjunta audio-visual: razonamiento simultáneo sobre imagen y audio con exact match reportado del 83,3%.
+- Síntesis de voz a 16 kHz mediante la cabeza vocoder polar (`GRTPolarVocoderHead`).
+- Generación de texto y voz simultáneas desde una misma entrada (pipeline `any-to-any`).
+- Compatible con la librería `transformers` mediante `GRTOmniForConditionalGeneration` y `AutoTokenizer`.
+- No se documenta soporte de tool calling, function calling ni razonamiento agéntico multi-paso.
+- No se documenta capacidad multilingüe específica.
 
 ## Casos de uso
 
-- Investigacion en arquitecturas alternativas al transformer: el modelo sirve como banco de pruebas reproducible para estudiar si las rotaciones de Givens pueden sustituir a las proyecciones lineales en tareas multimodales, con un coste computacional minimo (menos de 40M de parametros).
-- Prototipado de asistentes voz-a-voz en entornos con recursos muy limitados: al integrar percepcion de audio y sintesis de voz en un unico modelo de menos de 40M de parametros, puede desplegarse en dispositivos embebidos o navegador para experimentar con pipelines conversacionales completos.
-- Descripcion automatica de imagenes en demos educativas: la torre de vision con 64 tokens visuales permite generar captions sobre color, forma y posicion, adecuado para materiales docentes sobre modelos multimodales.
-- QA audio-visual para prototipos de accesibilidad: el modelo puede responder preguntas que combinan informacion de una imagen y un audio, util para experimentar con interfaces que describan escenas a usuarios con discapacidad visual.
-- Generacion de voz sintetica para pruebas de senal: la cabeza vocoder polar con `torch.istft` a 16 kHz permite generar formas de onda y espectrogramas para validar pipelines de procesamiento de audio sin depender de vocoders neuronales pesados.
-- Benchmarking de eficiencia arquitectonica: util para comparar el coste por parametro de un modelo 100% rotacional frente a transformers densos en tareas de captioning y reconocimiento de voz, midiendo perplejidad y precision por componente.
-- Docencia sobre geometria en deep learning: el espacio de fase toroidal y las rotaciones de Givens son un caso concreto para explicar alternativas a la multiplicacion matricial densa en cursos de arquitecturas neuronales.
+- Investigación en arquitecturas sin proyecciones lineales: el modelo sirve como banco de pruebas reproducible para estudiar si las rotaciones de Givens pueden reemplazar `nn.Linear` en tareas multimodales, con métricas de ablation ya publicadas.
+- Estudio de optimizadores geométricos: permite replicar el ablation de ocho optimizadores (HuygensAdam, HessianPairAdam, PairAdam, etc.) sobre un presupuesto de 200 pasos en hardware de consumo, comparando pérdida combinada y precisión de tokens.
+- Prototipado de captioning visual de bajo coste: con 4,95 M de parámetros en la torre visual y 64 tokens por imagen, es viable para experimentos académicos de descripción de color, forma y posición en hardware modesto.
+- QA audio-visual de investigación: la combinación de torre de audio (3,29 M parámetros) y torre visual permite estudiar alineamiento conjunto imagen-audio en tareas controladas con exact match medible.
+- Síntesis de voz experimental: la cabeza vocoder polar (47.361 parámetros) con `frames_per_token=4` e `istft` a 16 kHz permite estudiar síntesis armónica de bajo coste con métricas de similitud coseno polar y SNR espectral.
+- Educación y divulgación: por su tamaño (~38,7 M de parámetros) y licencia Apache 2.0, es adecuado para demostraciones docentes de arquitecturas rotacionales y dinámicas de fase en transformers.
+- Reproducción de experimentos con GGUF: la disponibilidad de pesos en GGUF facilita ejecutar el modelo en entornos con recursos limitados para validar hallazgos del ablation.
 
 ## Benchmarks y rendimiento
 
-Resultados held-out publicados en la model card (sin comparacion con modelos externos):
+Evaluación multimodal held-out reportada en la model card:
 
-| Tarea | Metrica | Valor |
+| Tarea | Métrica | Valor |
 |---|---|---|
-| Captioning visual | Perplejidad | 1.18 |
-| Captioning visual | Precision de color | 95.8% |
-| Captioning visual | Precision de forma | 58.3% |
-| Captioning visual | Precision de posicion | 95.8% |
-| Reconocimiento de audio | Perplejidad (antes → despues) | 29312.46 → 1.10 |
-| Reconocimiento de audio | Precision de voz | 100.0% |
-| Reconocimiento de audio | Precision de prosodia | 70.8% |
-| Reconocimiento de audio | Precision de frase | 100.0% |
-| QA audio-visual conjunta | Perplejidad (antes → despues) | 884.35 → 1.06 |
-| QA audio-visual conjunta | Exact Match | 83.3% |
-| Vocoder de respuesta hablada | Similitud coseno polar | 0.9733 |
-| Vocoder de respuesta hablada | SNR espectral | 10.49 dB |
+| Visual captioning | Perplejidad | 1,18 |
+| Visual captioning | Color | 95,8% |
+| Visual captioning | Forma | 58,3% |
+| Visual captioning | Posición | 95,8% |
+| Audio recognition | Perplejidad (de 29312,46 a) | 1,10 |
+| Audio recognition | Voz | 100,0% |
+| Audio recognition | Prosodia | 70,8% |
+| Audio recognition | Frase | 100,0% |
+| Joint audio-visual QA | Perplejidad (de 884,35 a) | 1,06 |
+| Joint audio-visual QA | Exact match | 83,3% |
+| Vocoder de respuesta hablada | Similitud coseno polar | 0,9733 |
+| Vocoder de respuesta hablada | SNR espectral | 10,49 dB |
 
-No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las cifras anteriores proceden exclusivamente de la evaluacion held-out del autor y no son comparables con benchmarks de la comunidad.
+Ablation de optimizadores (200 pasos, seed 42, AMD Radeon 8060S):
+
+| Rank | Optimizador | Pérdida val tri-modal | PPL combinada | Top-1 texto | Top-1 RVQ | SNR vocoder (dB) | Tiempo (s) |
+|---|---|---|---|---|---|---|---|
+| 1 | HuygensAdam | 1,2674 | 3,5516 | 95,97% | 34,05% | 4,55 | 526,81 |
+| 2 | HessianPairAdam | 1,2779 | 3,5891 | 96,77% | 35,89% | 4,20 | 493,02 |
+| 3 | PairAdam | 1,2920 | 3,6401 | 96,60% | 33,47% | 4,42 | 518,75 |
+| 4 | PolarNaturalAdam | 1,2945 | 3,6492 | 96,20% | 32,62% | 4,37 | 370,28 |
+| 5 | CyclideAdam | 1,2957 | 3,6536 | 96,18% | 34,21% | 4,35 | 434,03 |
+| 6 | GyricAdam | 1,3383 | 3,8126 | 95,65% | 29,05% | 4,36 | 450,13 |
+| 7 | SymplecticAdam | 1,3702 | 3,9361 | 96,37% | 31,30% | 4,00 | 444,90 |
+| 8 | HuygensSymplecticAdam | 1,3738 | 3,9503 | 96,32% | 32,76% | 4,14 | 517,53 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en fp32 (38.7M de parametros ≈ 155 MB de pesos; el repo ocupa 0.2 GB). Cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en CPU sin problema.
-- Cabe en GPU consumer: si, incluidas GTX 1050, RTX 3050, RTX 4090 y GPUs integradas con suficiente memoria compartida.
-- Opciones de despliegue: `transformers` con `GRTOmniForConditionalGeneration` (la model card solo documenta este camino). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI; la arquitectura rotacional custom hace improbable el soporte inmediato en estos runners sin portabilidad adicional.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el modelo completo en float32 ocupa aproximadamente 155 MB (38,7 M de parámetros × 4 bytes); en float16 unos 77 MB; en cuantizaciones GGUF de 4 bits, por debajo de 50 MB. Cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre; el ablation se ejecutó en una AMD Radeon 8060S Graphics (iGPU). Funciona también en CPU.
+- Cabe en GPU consumer: sí, en cualquier RTX 20/30/40, AMD RX 6000/7000, iGPU modernas e incluso en Raspberry Pi con suficiente RAM.
+- Opciones de despliegue: `transformers` (soporte nativo con `GRTOmniForConditionalGeneration`), llama.cpp/Ollama vía pesos GGUF, y potencialmente vLLM/TGI aunque no se documenta soporte explícito.
+- Latencia y throughput: no disponibles. El ablation reporta tiempos de entrenamiento de 370-527 s para 200 pasos en una iGPU, lo que da una idea del orden de magnitud del coste por paso, pero no de la latencia de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| GRT-30M-Omni | 37.6M | No disponible | Vision, audio, texto, habla | Apache 2.0 | Hugging Face (0 descargas) |
-| GRT-30M-VL | No disponible | No disponible | Vision, texto | Apache 2.0 | Hugging Face |
-| GRT-30M-TTS | No disponible | No disponible | Texto, habla | Apache 2.0 | Hugging Face |
-| Modelos omni de referencia (p. ej. Qwen2-Audio, LLaVA) | Cientos de millones a miles de millones | No disponible en esta ficha | Vision/audio/texto | Variables | Hugging Face |
+No se dispone de comparativas publicadas con modelos de la misma categoría en la información proporcionada. Los modelos multimodales any-to-any de referencia (p. ej. Qwen2.5-Omni, MiniCPM-o, Gemini nativo) tienen órdenes de magnitud más de parámetros (miles de millones frente a 38,7 M) y no son directamente comparables en capacidades. La comparación más pertinente es con el modelo base `MatterWaveAI/grt-30m`, del cual GRT-30M-Omni es una extensión multimodal.
 
-La comparativa con modelos de la comunidad no esta disponible en la informacion proporcionada: no se han publicado benchmarks estandar que permitan situar a GRT-30M-Omni frente a alternativas. Dentro de la propia suite de MatterWave AI, las variantes `grt-30m-vl` y `grt-30m-tts` cubren subconjuntos de las capacidades de este modelo omni.
+| Modelo | Parámetros | Contexto | Modalidades | Licencia |
+|---|---|---|---|---|
+| GRT-30M-Omni | 38,7 M | No disponible | Imagen, audio, texto, voz | Apache 2.0 |
+| MatterWaveAI/grt-30m (base) | ~29,3 M (backbone) | No disponible | Texto | Apache 2.0 |
+| Alternativas any-to-any de gran escala | Miles de millones | No disponible | Imagen, audio, texto, voz | Varía |
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion con cero descargas y cero likes en Hugging Face: no hay evidencia de uso en produccion ni validacion independiente.
-- Las metricas publicadas proceden exclusivamente de evaluaciones held-out del autor; no hay benchmarks estandar (MMLU, HumanEval, GSM8K) que permitan comparacion objetiva.
-- Precision de forma en captioning visual limitada al 58.3%, lo que indica dificultades con categorias visuales mas alla de color y posicion.
-- Precision de prosodia en reconocimiento de audio del 70.8%, con margen de mejora.
-- La perplejidad de audio antes del ajuste (29312.46) sugiere que el modelo base no estaba alineado con la modalidad de audio y depende fuertemente del fine-tuning.
-- Longitud de contexto no documentada: no es posible planificar conversaciones multi-turno largas sin validacion previa.
-- Idiomas soportados no documentados.
-- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso, lo que limita su uso en pipelines de agentes.
-- La ausencia de capas `nn.Linear` implica que las herramientas estandar de cuantizacion y optimizacion (GPTQ, AWQ, llama.cpp) probablemente no sean aplicables directamente; requiere validacion.
-- Licencia Apache 2.0 permite uso comercial, pero la falta de validacion independiente y de documentacion sobre sesgos hace recomendable no desplegarlo en produccion sin evaluacion propia.
-- Riesgo de alucinacion no cuantificado en la informacion disponible.
+- Tamaño extremadamente reducido (~38,7 M de parámetros): las capacidades reales están acotadas a tareas controladas de laboratorio; no es un modelo de producción.
+- Precisión de forma en captioning visual del 58,3%: rendimiento bajo en atributos geométricos, lo que sugiere limitaciones en comprensión visual fina.
+- Prosodia en reconocimiento de audio al 70,8%: capacidad limitada en matices prosódicos.
+- SNR espectral del vocoder de 10,49 dB: calidad de síntesis de voz limitada, adecuada para experimentación pero no para aplicaciones comerciales de voz.
+- Perplejidades de audio y QA audio-visual muy altas antes del ajuste (29312,46 y 884,35): indican que el modelo requiere alineamiento específico y no generaliza sin él.
+- Idiomas soportados no documentados: no se puede garantizar cobertura multilingüe.
+- Longitud de contexto no documentada: riesgo de comportamiento impredecible en entradas largas.
+- Riesgo de alucinación: no evaluado en la información disponible; en un modelo de este tamaño es esperable un riesgo elevado en generación abierta.
+- Sesgos: no documentados; el dataset de entrenamiento no se describe, por lo que no se pueden evaluar sesgos de dominio.
+- Licencia Apache 2.0: permite uso comercial, pero las limitaciones técnicas hacen inviable su uso en producción sin validación adicional.
+- Ausencia de soporte documentado de tool calling, agentes o razonamiento multi-paso: no apto para pipelines agénticos.
+- Compatibilidad: requiere `transformers` con el módulo `grt` (posiblemente una versión específica o fork); verificar antes de desplegar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MatterWaveAI/grt-30m-omni
 - Modelo base: https://huggingface.co/MatterWaveAI/grt-30m
-- Chat fine-tune: https://huggingface.co/MatterWaveAI/grt-30m-chat
-- Variante MoR (4 expertos): https://huggingface.co/MatterWaveAI/grt-30m-mor
-- Embedding: https://huggingface.co/MatterWaveAI/grt-30m-embedding
-- Reranker: https://huggingface.co/MatterWaveAI/grt-30m-reranker
-- Vision-Language: https://huggingface.co/MatterWaveAI/grt-30m-vl
-- Tokenizer y banco de embeddings polares: https://huggingface.co/MatterWaveAI/grt-30m-tokenizer
-- Text-to-Speech: https://huggingface.co/MatterWaveAI/grt-30m-tts
-- Whitepaper (PDF): https://huggingface.co/MatterWaveAI/grt-30m/resolve/main/GRT_Whitepaper.pdf
-- Sitio del autor: https://matterwave.ai
+- Repositorio de `transformers` con soporte `grt` (referenciado en la model card como `transformers.models.grt.optimization_grt`): no disponible como enlace directo en la información proporcionada
+- Paper, blog o demo: no disponibles en la información proporcionada

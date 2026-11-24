@@ -1,103 +1,88 @@
 # AI999X/energy-systems-ai999x
 
 ## Resumen
+Energy Systems (energy-systems-ai999x) es un paquete de cálculo técnico empaquetado y publicado en Hugging Face por AI999X, orientado a la resolución de problemas de ingeniería energética: flujo de carga, potencia trifásica, transformadores y máquinas eléctricas, fotovoltaica, eólica, baterías, pilas de combustible e hidrógeno. No es un modelo de lenguaje generativo al uso: la model card describe un motor compilado con 83 cálculos organizados en 11 temas, cada uno con su fórmula, sus pasos y sus unidades, y con mensajes de error explicativos cuando una entrada falta o está fuera de rango. La etiqueta `question-answering` y el `pipeline_tag` reflejan su uso como resolvedor de preguntas técnicas, no como generador libre de texto.
 
-energy-systems-ai999x es un motor determinista de resolución de problemas de sistemas de energía distribuido como modelo de Hugging Face por el autor AI999X (Ibnul Jaif Farabi). No es un modelo de lenguaje generativo en el sentido habitual: se presenta como un solver offline en Python (y binarios Rust) que interpreta preguntas en inglés sobre ingeniería energética, selecciona una de sus 79 capacidades certificadas, calcula la respuesta de forma exacta y la devuelve con pasos, unidades, LaTeX y supuestos, o bien rechaza responder si no puede verificar el resultado. El repositorio contiene pesos en safetensors y ONNX con 4.715.520 parámetros totales y un tamaño de repo de 0,1 GB.
+El artefacto declarado en safetensors contiene 4.715.520 parámetros, un orden de magnitud propio de una red pequeña o de un conjunto de coeficientes empaquetados, no de un transformer de propósito general. La model card insiste en la ejecución local y sin conexión ("offline", "zero-hallucination") y ofrece cuatro vías de uso: aplicación de escritorio para Windows y Linux, línea de comandos, navegador y paquete de Python (`pip install energy-systems-ai999x`). En Windows y Linux x86-64 se instala el mismo motor compilado; en macOS y ARM se instala una versión en Python puro que, según el autor, produce las mismas respuestas.
 
-El modelo cubre dominios como flujo de carga, potencia trifásica, transformadores, máquinas eléctricas, fotovoltaica, eólica, baterías, pilas de combustible e hidrógeno. Su propuesta diferencial es el modo "zero-hallucination": al no generar texto libre sino ejecutar cálculos verificados, evita el riesgo de respuestas inventadas típico de los LLM. Funciona sin GPU, sin clave de API y sin conexión a internet, lo que lo hace adecuado para entornos docentes, de laboratorio o de campo con conectividad limitada.
+Su relevancia es acotada pero concreta: cubre un nicho docente y de ingeniería (ayuda con ejercicios, "homework-help", verificación de cálculos con unidades) donde la determinación exacta importa más que la fluidez. La licencia Apache 2.0 facilita su integración en herramientas internas. Creado en octubre de 2026 y actualizado en noviembre de 2026, acumula 352 descargas y ningún "like" en el momento de redactar esta ficha.
 
-La relevancia actual reside en su enfoque híbrido: empaqueta un motor de cálculo simbólico/númerico dentro de un artefacto con formato de modelo (safetensors, ONNX, model-index) y lo publica con licencia Apache-2.0, permitiendo su integración en pipelines de Python o su uso como aplicación de escritorio. La información pública no detalla la arquitectura interna de los pesos, por lo que varios apartados técnicos se marcan como no disponibles.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (el autor describe un solver determinista con 79 capacidades certificadas; no se especifica la topología de los pesos) |
-| Parametros totales | 4.715.520 |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | No disponible (la model card describe un "motor compilado" con 83 cálculos en 11 temas; no se especifica arquitectura de red neuronal) |
+| Parámetros totales | 4.715.520 (según safetensors) |
+| Parámetros activos | No aplica (no se declara que sea MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (tamaño del repo: 0,0 GB) |
 
 ## Arquitectura y entrenamiento
+La información disponible no describe una arquitectura de transformer, MoE, SSM ni híbrida. La model card presenta el producto como un motor de cálculo compilado con cuatro interfaces (escritorio, CLI, navegador y Python) y con un catálogo de 83 cálculos repartidos en 11 temas: flujo de carga, potencia trifásica, transformadores y máquinas, fotovoltaica, eólica, baterías, pilas de combustible e hidrógeno. Cada cálculo incluye fórmula, desarrollo paso a paso, unidades y una explicación en lenguaje natural cuando una entrada falta o queda fuera de rango.
 
-La información proporcionada no describe una arquitectura transformer convencional ni detalla el proceso de entrenamiento (número de tokens, composición del dataset, RLHF/DPO). El autor define el sistema como un "solver determinista" que, ante una pregunta en inglés o una llamada tipada, selecciona una capacidad certificada de un conjunto de 79, ejecuta el cálculo exacto, lo verifica y devuelve el resultado con pasos, unidades, LaTeX y supuestos. Cuando no puede verificar la respuesta, emite un rechazo explícito indicando qué falta.
-
-El artefacto se distribuye en múltiples formatos: pesos safetensors y ONNX en el repositorio, una librería Python (`energy-systems-ai999x`, instalable vía pip para Python 3.10–3.14) y binarios nativos compilados en Rust para Windows y Linux, además de una versión WebAssembly ejecutable en navegador. La innovación técnica declarada es la verificación determinista con rechazo ante incertidumbre, orientada a eliminar alucinaciones, junto con la paridad de resultados entre plataformas (Windows y Linux, Python 3.10–3.14).
+No se han publicado detalles sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre fases de RLHF, DPO o ajuste fino supervisado. Tampoco se documentan innovaciones de inferencia como decodificación especulativa o atención lineal. El número de parámetros declarado en safetensors (4.715.520) es coherente con un artefacto pequeño de coeficientes o una red auxiliar, pero la documentación no aclara su función exacta dentro del motor.
 
 ## Capacidades
-
-- Resolución de preguntas de sistemas de energía en inglés con pasos detallados, unidades y notación LaTeX.
-- Cálculo en dominios de flujo de carga, potencia trifásica, transformadores y máquinas eléctricas.
-- Cálculo en energías renovables: solar fotovoltaica, eólica, baterías, pilas de combustible e hidrógeno.
-- Tareas declaradas en la model card: question answering, token classification, text classification, sentence similarity y feature extraction.
-- Modo de rechazo verificable: devuelve una negativa honesta indicando qué información falta en lugar de aproximar.
-- Ejecución totalmente offline en CPU, sin GPU, sin clave de API y sin conexión a internet.
-- Distribución multiplataforma: aplicación de escritorio, línea de comandos (`energy-systems`), WebAssembly en navegador y paquete Python.
-- No se documenta soporte de tool calling genérico, agentes multi-paso ni razonamiento multi-turno conversacional.
+- Resolución de cálculos de ingeniería energética con fórmula, pasos intermedios y unidades: 83 cálculos en 11 temas según la model card.
+- Cobertura temática declarada: flujo de carga, potencia trifásica, transformadores y máquinas eléctricas, fotovoltaica, energía eólica, baterías, pilas de combustible e hidrógeno.
+- Generación de explicaciones paso a paso orientadas a docencia y ayuda con ejercicios ("step-by-step-solutions", "homework-help").
+- Mensajes de diagnóstico en lugar de resultados numéricos cuando una entrada falta o está fuera de rango ("a plain reason instead of a number").
+- Ejecución local y sin conexión ("offline"), con el objetivo declarado de "zero-hallucination" al no generar texto libre.
+- Cuatro interfaces de uso: aplicación de escritorio (Windows, Linux), línea de comandos `energy-systems`, navegador y paquete de Python 3.10+.
+- Visualización: escenas y gráficas generadas a partir del resultado calculado (posición solar, límite de Betz, tanque de hidrógeno a presión con gas real, despacho económico, dimensionado de baterías, cinética de Butler-Volmer, factor de capacidad).
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso genérico, visión, audio ni modo "thinking".
 
 ## Casos de uso
-
-- Docencia de ingeniería energética: el modelo resuelve ejercicios de flujo de carga y potencia trifásica mostrando pasos y supuestos, lo que permite al estudiante seguir la derivación y comparar con su propio desarrollo.
-- Laboratorio sin conectividad: al ejecutarse offline en CPU, puede desplegarse en equipos de laboratorio o portátiles sin GPU para verificar cálculos de máquinas eléctricas durante prácticas.
-- Validación de hojas de cálculo: un ingeniero puede contrastar resultados de modelos de transformadores o baterías contra las 79 capacidades certificadas y detectar discrepancias antes de publicar un informe.
-- Asistencia en cálculo fotovoltaico y eólico: dimensionado de instalaciones y estimación de producción usando las capacidades de solar-photovoltaics y wind-power documentadas en las etiquetas del modelo.
-- Integración en pipelines Python: mediante `pip install energy-systems-ai999x`, el solver puede invocarse desde scripts de automatización para resolver lotes de problemas y registrar resultados con trazabilidad de pasos.
-- Uso en navegador para consultas puntuales: la versión WebAssembly permite a un usuario sin instalación local resolver una duda concreta de pilas de combustible o hidrógeno desde cualquier dispositivo.
-- Herramienta de escritorio para ingeniería de campo: los binarios Rust para Windows y Linux permiten llevar el solver a entornos sin Python instalado.
+- Docencia de ingeniería eléctrica: el motor resuelve ejercicios de potencia trifásica, transformadores y máquinas con fórmula, pasos y unidades, lo que permite al estudiante comparar su desarrollo con el del sistema y detectar errores de planteamiento.
+- Verificación de cálculos en proyectos fotovoltaicos: para una instalación dada, se obtienen posición solar, factor de capacidad y energía generada, con gráficas derivadas del propio resultado que facilitan la revisión por pares.
+- Dimensionado de sistemas de almacenamiento: el cálculo de configuración serie-paralelo de un pack de baterías y la cinética de electrodo (Butler-Volmer, sobretensión y pendientes de Tafel) sirven para prevalidar diseños antes de pasar a simulación detallada.
+- Análisis de recurso eólico: el cálculo de potencia en el viento y del límite de Betz permite estimar el techo teórico de una turbina y contrastarlo con curvas de potencia reales.
+- Almacenamiento de hidrógeno: el cálculo de hidrógeno en tanque a presión con modelo de gas real es útil para dimensionar recipientes y comprobar rangos de presión antes de un análisis con software de procesos.
+- Explotación de sistemas eléctricos: el despacho económico con costes cuadráticos y límites y el flujo de carga permiten obtener soluciones de referencia rápidas para validar resultados de optimizadores más complejos.
+- Integración en pipelines internos: al instalarse como paquete de Python (`pip install energy-systems-ai999x`), puede invocarse desde scripts de validación o de generación de informes técnicos en Windows y Linux x86-64, con una versión en Python puro para macOS y ARM.
 
 ## Benchmarks y rendimiento
+El autor declara en el model-index un único resultado, no verificado de forma independiente (`verified: false`):
 
-Datos declarados por el autor en el model-index (no verificados de forma independiente):
+| Tarea | Conjunto de evaluación | Métrica | Valor |
+|---|---|---|---|
+| Question answering (sistemas de energía) | Golden answers: 341 preguntas documentadas, Windows y Linux, Python 3.10-3.14 | Accuracy ("identical on every platform") | 1,0 |
 
-| Tarea | Dataset | Métrica | Valor | Nota |
-|---|---|---|---|---|
-| Question answering (energy systems) | Golden answers: 311 preguntas documentadas, Windows + Linux, Python 3.10–3.14 | Accuracy | 1,0 | "Identical on every platform"; campo `verified: false` |
-
-No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) ni comparaciones con otros modelos.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar de modelos de lenguaje.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: 0 GB; el modelo está diseñado para ejecutarse en CPU sin GPU.
-- GPU recomendadas: no requiere GPU (no se documenta aceleración por GPU).
-- Cabe en cualquier equipo consumer: el repo ocupa 0,1 GB y los binarios de escritorio pesan 7,7 MB (Windows x86-64).
-- Opciones de despliegue: paquete Python (`pip install energy-systems-ai999x`), línea de comandos `energy-systems`, aplicación de escritorio AI999X (Windows/Linux), WebAssembly en navegador y binarios Rust nativos.
-- No se documenta integración con vLLM, llama.cpp, Ollama ni TGI (el modelo declara `inference: false` en la model card).
+- VRAM estimada para inferencia: no disponible; con 4.715.520 parámetros y un repo de 0,0 GB, el artefacto es de tamaño muy reducido y no requiere GPU dedicada según los datos disponibles.
+- GPU recomendadas: no disponibles; la model card no menciona requisitos de GPU.
+- Compatibilidad con GPU de consumo: no se documenta; el producto se distribuye como aplicación de escritorio, CLI y paquete de Python para ejecución local.
+- Plataformas soportadas: Windows y Linux x86-64 con motor compilado; macOS y ARM mediante build en Python puro; navegador en cualquier dispositivo.
+- Opciones de despliegue: aplicación de escritorio, línea de comandos `energy-systems`, web y paquete de Python 3.10+. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Las alternativas habituales para cálculo de sistemas de energía (herramientas como pandapower, PyPSA o PVLib) no aparecen citadas en la model card, por lo que no se ofrece una tabla comparativa con datos verificables.
 
-No se dispone de información sobre modelos comparables de la misma categoría (solvers deterministas de ingeniería energética empaquetados como modelos). Como referencia de categoría adyacente se podrían considerar LLM de dominio científico, pero no se aportan datos de rendimiento que permitan una comparación rigurosa.
-
-| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| energy-systems-ai999x | 4.715.520 | No disponible | Apache-2.0 | Solver determinista con rechazo ante incertidumbre |
-| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
+| energy-systems-ai999x | 4.715.520 | No disponible | Apache 2.0 | Hugging Face, app de escritorio, CLI, Python |
+| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
-
-- Solo soporta inglés; no se documenta multilingüismo.
-- El alcance está restringido a las 79 capacidades certificadas de sistemas de energía; fuera de ese dominio rechazará la consulta en lugar de responder.
-- No es un modelo conversacional: no se documenta manejo de diálogo multi-turno ni memoria de contexto.
-- La métrica de accuracy 1,0 procede del propio autor y está marcada como `verified: false`; no ha sido validada de forma independiente.
-- La model card declara `inference: false`, por lo que el uso mediante frameworks de inferencia estándar (transformers, vLLM) no está garantizado; el consumo previsto es vía el paquete Python o los binarios propios.
-- Al ser determinista, no generaliza a problemas fuera de su catálogo: la cobertura real depende de las 79 capacidades, cuyo listado detallado no se incluye en la información disponible.
-- Licencia Apache-2.0 permite uso comercial, pero conviene revisar el archivo LICENSE del repositorio por si añade condiciones adicionales.
-- No se documentan sesgos específicos; al no generar texto libre, el riesgo de alucinación se sustituye por el riesgo de rechazo o de selección incorrecta de capacidad.
+- El resultado de accuracy 1,0 sobre 341 preguntas está declarado por el autor y marcado como no verificado (`verified: false`); no procede de una evaluación independiente.
+- La model card no documenta sesgos conocidos, pero el ámbito es exclusivamente técnico y en inglés; no hay evidencia de cobertura multilingüe.
+- El objetivo "zero-hallucination" se basa en que el motor calcula en lugar de generar texto libre; no debe interpretarse como garantía de corrección física de las fórmulas o de los modelos implementados (por ejemplo, gas real en el tanque de hidrógeno).
+- Cobertura limitada a los 83 cálculos documentados en 11 temas; cualquier problema fuera de ese catálogo no está soportado.
+- La versión compilada solo se distribuye para Windows y Linux x86-64; en macOS y ARM se instala una build en Python puro, lo que puede afectar al rendimiento aunque el autor afirme respuestas idénticas.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero no se documentan garantías ni soporte del autor.
+- No se especifican límites de contexto ni de idioma más allá del inglés; el uso en producción requiere validar los cálculos contra una referencia independiente.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/AI999X/energy-systems-ai999x
-- Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
-- Probar en navegador: https://www.ai999x.com/models/energy-systems-ai999x/#try
-- Paquete Python (PyPI): https://pypi.org/project/energy-systems-ai999x/
-- Guías (docs): https://huggingface.co/AI999X/energy-systems-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/energy-systems-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web: https://ai999x.com
-- Release v1.0.3 en GitHub: https://github.com/AI999X/energy-systems-ai999x/releases/tag/v1.0.3
-- Checksums: https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
-- Descargas (última versión): https://www.ai999x.com/downloads/desktop/latest/
-- Apoyo al autor: https://buymeacoffee.com/ibnuljaiffarabi
+- Página del modelo con demo en navegador: https://www.ai999x.com/models/energy-systems-ai999x/
+- Demo en vídeo (MP4): https://www.ai999x.com/?ax_shot=energy-systems-ai999x/clip.mp4
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-energy-systems-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-energy-systems-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz

@@ -2,94 +2,115 @@
 
 ## Resumen
 
-Qwen3-0.6B-facturas es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3-0.6B, desarrollado por Ernes14AG, especializado en la extracción estructurada de datos de facturas, tickets y correos de proveedor en español. El modelo recibe texto plano (típicamente la salida de un OCR) y devuelve un objeto JSON con un esquema fijo que incluye proveedor, NIF, número de factura, fecha, líneas de detalle, base imponible, porcentaje de IVA y total. El ajuste se realizó sobre 200 facturas sintéticas generadas a partir de 12 proveedores ficticios.
+Qwen3-0.6B · extractor de facturas a JSON (v2) es un modelo de lenguaje especializado en la extracción estructurada de datos de facturas, tickets y correos de proveedor, convirtiendo texto libre (típicamente la salida de un OCR) en un objeto JSON con un esquema fijo. Lo desarrolla el usuario independiente Ernes14AG mediante un ajuste con LoRA sobre el modelo base Qwen3-0.6B, y se distribuye en formato GGUF cuantizado para su uso directo con Ollama.
 
-El modelo resuelve un problema muy concreto del ámbito administrativo y contable: convertir documentos no estructurados en registros normalizados aptos para un ERP o un pipeline de contabilidad. Con solo 596 millones de parámetros, el modelo está pensado para ejecutarse en local con requisitos de hardware mínimos, lo que lo hace adecuado para escenarios de privacidad estricta donde no se pueden enviar facturas a una API externa.
+El modelo resuelve un problema muy concreto de automatización documental: la conversión fiable de documentos contables a datos estructurados con campos como proveedor, NIF, número de factura, fecha, líneas de detalle, base imponible, IVA, IRPF y total. La versión v2 amplía la v1 con soporte para campos vacíos representados como `null`, descuentos por línea, retención de IRPF de autónomos y facturas en catalán e inglés, además de cientos de proveedores distintos.
 
-La relevancia actual del modelo radica en su enfoque de nicho: en lugar de competir en capacidades generales, sacrifica amplitud por precisión en una tarea acotada con formato de salida garantizado. El autor reporta un 88 % de facturas perfectas en un conjunto de prueba de 40 facturas no vistas durante el entrenamiento y un 100 % de JSON válido. La licencia Apache 2.0 y la disponibilidad en formato GGUF para Ollama facilitan su adopción en entornos de producción pequeños.
+Con 596.049.920 parámetros totales (aproximadamente 0,6 mil millones) y una licencia Apache 2.0, el modelo es relevante por su relación entre tamaño mínimo, coste de inferencia muy bajo y alto rendimiento en una tarea acotada: según la model card, alcanza un 98% de facturas perfectas sobre un conjunto de 80 facturas sintéticas no vistas durante el entrenamiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3-0.6B) con adaptador LoRA |
-| Parámetros totales | 596.049.920 (≈0,6 mil millones) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada del modelo base Qwen3-0.6B, no especificada en la model card) |
-| Tipos de cuantización | GGUF (se menciona explícitamente Q8_0; otras variantes no confirmadas) |
-| Idiomas soportados | Español (es) |
+| Arquitectura | Transformer decoder-only (derivado de Qwen3-0.6B, ajustado con LoRA) |
+| Parametros totales | 596.049.920 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF cuantizado (la model card ejemplifica con Q8_0; no se detalla el conjunto completo de variantes publicadas) |
+| Idiomas soportados | Espanol, catalan, ingles (segun la model card; el campo de idiomas de Hugging Face solo lista `es`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo actual); safetensors en el repo de pesos completos |
+| Formato de pesos | GGUF (repo GGUF); pesos completos en safetensors en el repo base `Ernes14AG/qwen3-0.6b-facturas` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-0.6B, un transformer decoder-only de la familia Qwen3, y se ajusta mediante LoRA (Low-Rank Adaptation) para una tarea de extracción de información con salida JSON estructurada. El ajuste se realizó sobre 200 facturas sintéticas en español, generadas a partir de 12 proveedores ficticios, lo que constituye un conjunto de entrenamiento muy pequeño y de dominio restringido. No se especifican en la model card el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF o DPO; dado el tamaño del conjunto y la naturaleza de la tarea, es probable que el ajuste se limitara a aprendizaje supervisado sobre pares entrada-salida, pero este dato no está confirmado.
+El modelo parte de la arquitectura transformer decoder-only de Qwen3-0.6B y se especializa mediante un ajuste con LoRA sobre 500 facturas sintéticas en español, catalán e inglés. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO; la model card únicamente indica el uso de datos sintéticos y la ampliación de la v2 a cientos de proveedores distintos.
 
-La innovación técnica principal no reside en la arquitectura, sino en el formato de salida: el modelo está entrenado para responder directamente con el JSON, sin cadena de razonamiento previa. Esto es relevante porque el modelo base Qwen3 incorpora un modo de razonamiento (thinking mode) que, en esta tarea, solo añadiría latencia sin mejorar la precisión. El autor insiste en desactivar dicho modo (`--think=false` en Ollama, `think=False` en la API de Python) y recomienda usar el parámetro `format="json"` para garantizar la validez sintáctica de la salida. No se documentan otras innovaciones como decodificación especulativa o atención lineal.
+La innovación principal no es arquitectónica, sino de especialización y de formato de salida: el modelo está entrenado para devolver directamente un JSON con esquema fijo, con reglas explícitas de normalización (campos ausentes o vacíos como `null`, descuentos e IRPF a `0` si no se mencionan, copia literal de proveedor y descripción). La model card advierte además que conviene desactivar el razonamiento de Qwen3 (`--think=false` o `think=False`) para obtener la respuesta JSON directa, más rápida y sin cadena de pensamiento innecesaria.
 
 ## Capacidades
 
-- Extracción de entidades y campos estructurados desde texto de facturas, tickets y correos de proveedor en español.
-- Generación de JSON con esquema fijo: proveedor, NIF, número de factura, fecha (formato AAAA-MM-DD), líneas de detalle (descripción, cantidad, precio unitario), base imponible, porcentaje de IVA y total.
-- Normalización de fechas al formato ISO (AAAA-MM-DD) a partir de formatos variados en la entrada.
-- Conversión de importes con formato español (coma decimal, símbolo €) a valores numéricos float.
-- Salida JSON válida garantizada cuando se usa el parámetro `format="json"` en la API de Ollama.
-- Ejecución local sin conexión a servicios externos, apta para entornos con requisitos de privacidad.
-- No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio ni razonamiento general; el modelo está especializado exclusivamente en la tarea de extracción.
+- Generación de texto especializada en extracción de datos estructurados a partir de texto de facturas, tickets y correos de proveedor.
+- Salida en JSON con esquema fijo: `proveedor`, `nif`, `numero_factura`, `fecha` (formato AAAA-MM-DD), `lineas` (con `descripcion`, `cantidad`, `precio_unitario`, `descuento_porcentaje`), `base_imponible`, `iva_porcentaje`, `irpf_porcentaje` y `total`.
+- Manejo de campos vacíos o ausentes mediante `null`, sin cálculo de valores no presentes.
+- Soporte de descuentos por línea y de retención de IRPF de autónomos.
+- Capacidades multilingües limitadas al ámbito de la tarea: español, catalán e inglés.
+- Integración con Ollama mediante el tag GGUF y con Python a través de la librería `ollama`, incluyendo el parámetro `format="json"`.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modos de razonamiento explícitos más allá del modo thinking heredado de Qwen3, que la model card recomienda desactivar.
 
 ## Casos de uso
 
-- Automatización de la contabilidad de pymes: el modelo recibe el texto extraído por OCR de facturas de proveedores y devuelve JSON listo para insertar en un ERP o en una hoja de cálculo, eliminando la introducción manual de datos. Su tamaño reducido permite ejecutarlo en el propio servidor de la empresa sin enviar documentos a terceros.
-- Digitalización de tickets de gasto: en una aplicación móvil o web, el usuario fotografía un ticket, un OCR local extrae el texto y el modelo lo convierte en JSON estructurado para justificar gastos o generar informes de dietas.
-- Procesamiento por lotes de correos de proveedor: un script recorre el buzón de facturación, extrae el cuerpo de texto de cada correo, lo pasa al modelo y almacena los registros normalizados en una base de datos, con validación posterior de los campos críticos (NIF, total).
-- Validación y conciliación de facturas: el JSON generado se compara contra los pedidos de compra o los apuntes bancarios; las discrepancias en importes o NIF se marcan para revisión humana. La salida estructurada facilita esta comparación automatizada.
-- Extracción de datos para cumplimiento fiscal: en gestorías y asesorías, el modelo acelera la clasificación de facturas recibidas por trimestre, generando registros homogéneos para los libros de IVA y las declaraciones.
-- Prototipado rápido de pipelines de extracción documental: al ser un GGUF de 0,6 GB ejecutable con Ollama, sirve como base para validar un flujo OCR + extracción + validación antes de invertir en un modelo mayor o en un servicio en la nube.
-- Entornos con requisitos estrictos de privacidad: despachos, clínicas o administraciones que no pueden externalizar documentos financieros pueden desplegar el modelo en local con hardware modesto.
+- Automatización de la contabilidad de proveedores: el modelo recibe la salida de un OCR de facturas y devuelve un JSON listo para insertar en un ERP o en una base de datos, con campos como NIF, número de factura y total ya normalizados.
+- Gestión de gastos y tickets: procesamiento por lotes de tickets y facturas simplificadas para extraer líneas, base imponible e IVA, aprovechando el soporte de descuentos por línea y de campos vacíos.
+- Validación y conciliación de facturas: comparación del JSON extraído con los datos maestros del proveedor para detectar discrepancias en NIF, importes o fechas antes de contabilizar.
+- Procesamiento de correos de proveedor: extracción de datos de facturación embebidos en el cuerpo del correo o en texto plano, sin necesidad de un parser específico por proveedor.
+- Digitalización de facturas de autónomos: cálculo del IRPF retenido gracias al campo `irpf_porcentaje`, que la v2 incorpora específicamente para este caso.
+- Entornos con recursos limitados o despliegue local: al tratarse de un modelo de 0,6 mil millones de parámetros en GGUF, puede ejecutarse en CPU o en GPU de consumo para pipelines de extracción de alto volumen y bajo coste.
+- Procesamiento multilingüe en el ámbito contable: facturas en español, catalán e inglés dentro de un mismo flujo de trabajo, útil en empresas con proveedores de distintas comunidades autónomas o internacionales.
 
 ## Benchmarks y rendimiento
 
-El autor reporta los siguientes resultados en la model card, evaluados sobre 40 facturas de prueba no vistas durante el entrenamiento:
+Resultados publicados en la model card sobre 80 facturas de prueba no vistas durante el entrenamiento, comparando el modelo base con la v2:
 
-| Métrica | Resultado |
-|---|---|
-| Facturas perfectas (todos los campos correctos) | 88 % |
-| JSON válido | 100 % |
+| Métrica | Modelo base | v2 |
+|---|---|---|
+| JSON válido | 95% | 100% |
+| proveedor | 79% | 100% |
+| nif | 76% | 100% |
+| numero_factura | 78% | 100% |
+| fecha | 39% | 99% |
+| lineas | 42% | 99% |
+| base_imponible | 88% | 100% |
+| iva_porcentaje | 90% | 100% |
+| irpf_porcentaje | 94% | 100% |
+| total | 88% | 100% |
+| FACTURA PERFECTA | 8% | 98% |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Tampoco se proporcionan métricas desagregadas por campo (precisión en NIF, fecha, importes) ni comparaciones con otros modelos en la misma tarea.
+Facturas perfectas por tipo en la v2:
+
+| Tipo | v2 | Facturas |
+|---|---|---|
+| español | 100% | 44 |
+| catalán | 92% | 12 |
+| inglés | 96% | 24 |
+| con campos vacíos | 97% | 32 |
+| con IRPF | 94% | 17 |
+| con descuento | 91% | 23 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cuantización Q8_0 (el repo completo ocupa 0,6 GB); en cuantizaciones menores (Q4_K_M, Q5_K_M) el consumo sería aún más reducido, aunque el autor solo menciona explícitamente Q8_0.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente; el modelo cabe holgadamente en tarjetas como RTX 3060, RTX 4060, GTX 1660 o incluso en iGPU con memoria compartida. Para despliegues de mayor volumen, una A100 o H100 estaría sobredimensionada para un solo modelo, pero permitiría servir muchas instancias concurrentes.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU dedicada de los últimos años y en CPU con suficiente RAM (menos de 1 GB en Q8_0).
-- Opciones de despliegue: Ollama (soporte oficial en la model card, con el tag `hf.co/Ernes14AG/qwen3-0.6b-facturas-GGUF:Q8_0`), llama.cpp (formato GGUF), y la API de Python de Ollama. Para los pesos completos en safetensors, transformers con el adaptador LoRA correspondiente.
-- Latencia y throughput estimados: no disponibles en la información proporcionada. Dado el tamaño del modelo, se espera una latencia de decenas de milisegundos por factura en GPU consumer, pero este dato no está documentado.
+- VRAM estimada para inferencia: muy baja por el tamaño del modelo (596 millones de parámetros). En Q8_0 el peso de los pesos ronda los 0,6 GB; en cuantizaciones de 4 bits sería inferior, aunque no se detallan los tamaños exactos de cada variante en la información disponible.
+- GPU recomendadas: cualquier GPU con al menos unos pocos GB de VRAM es suficiente; el modelo está pensado para ejecutarse incluso en CPU. GPU de consumo como RTX 3060, RTX 4060 o superiores lo ejecutan con holgura.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPU de consumo actuales, e incluso en CPU.
+- Opciones de despliegue: Ollama (soporte documentado con `ollama run` y `ollama.generate`), y por extensión otras herramientas compatibles con GGUF como llama.cpp. No se documenta soporte específico de vLLM o TGI para esta variante GGUF.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; al ser un modelo de 0,6 mil millones de parámetros, la latencia esperada es baja, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-facturas (este modelo) | 0,6 B | no disponible | Extracción de facturas a JSON en español | Apache 2.0 | GGUF, safetensors |
-| Qwen3-0.6B (base) | 0,6 B | no disponible | Propósito general, multilingüe | Apache 2.0 | safetensors, GGUF |
-| Qwen2.5-0.5B-Instruct | 0,5 B | no disponible | Propósito general, instrucciones | Apache 2.0 | safetensors, GGUF |
-| Modelos de extracción documental de mayor tamaño (p. ej. familia Qwen2.5-7B-Instruct) | 7 B | no disponible | Propósito general con capacidad de extracción | Apache 2.0 | safetensors, GGUF |
+| Qwen3-0.6B · extractor de facturas (v2) | 596 M | No disponible | Extracción de facturas a JSON (es/ca/en) | Apache 2.0 | GGUF en Hugging Face, uso con Ollama |
+| Qwen3-0.6B (base) | 0,6 B | No disponible en la información | Modelo generalista | Apache 2.0 | Hugging Face |
+| v1 del mismo autor (`qwen3-0.6b-facturas`, revisión `v1`) | 596 M | No disponible | Extracción de facturas solo en español, 12 proveedores, sin campos vacíos | Apache 2.0 | Pesos completos en Hugging Face |
 
-La comparación directa con alternativas especializadas en extracción de facturas en español no está disponible en la información proporcionada. Frente al modelo base Qwen3-0.6B, este ajuste gana en precisión para la tarea concreta y en formato de salida garantizado, pero pierde capacidades generales y multilingües. Frente a modelos de 7 B o superiores, ofrece menores requisitos de hardware y mayor velocidad, a costa de una capacidad de generalización presumiblemente inferior ante formatos de factura no vistos.
+No se dispone de información sobre otros modelos especializados comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente con facturas sintéticas de 12 proveedores ficticios: la precisión con facturas reales y formatos muy distintos será previsiblemente menor que el 88 % reportado en el conjunto de prueba sintético.
-- La entrada debe ser texto plano; no procesa imágenes ni PDF escaneados directamente. Es necesario aplicar un OCR previo, cuyos errores se propagarán a la extracción.
-- El conjunto de evaluación es muy pequeño (40 facturas), por lo que el 88 % de facturas perfectas tiene un intervalo de confianza amplio y no debe extrapolarse sin validación en el dominio real de uso.
-- Riesgo de alucinación en campos ausentes o ambiguos: si la factura no incluye un NIF o una fecha reconocible, el modelo podría inventar un valor plausible en lugar de indicar su ausencia. No se documenta el comportamiento en estos casos.
-- Soporte únicamente en español; no se ha entrenado ni evaluado en otros idiomas.
-- El modelo base Qwen3 incorpora un modo de razonamiento que debe desactivarse explícitamente (`--think=false` o `think=False`); si se deja activado, la latencia aumenta y la salida puede no ajustarse al formato esperado.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución, con la obligación habitual de conservar el aviso de licencia y el archivo NOTICE si existe. No se documentan restricciones adicionales del autor.
-- Para producción, se recomienda validar la salida JSON contra un esquema (por ejemplo, con pydantic o jsonschema) y aplicar reglas de negocio sobre los campos críticos antes de insertar los datos en sistemas contables.
+- Entrenado con datos sintéticos: con facturas reales y formatos muy distintos la precisión será menor que la reportada en la model card.
+- La entrada debe ser texto; para fotos o PDF escaneados es necesario aplicar antes un OCR.
+- El contexto máximo no está documentado, lo que impide garantizar el comportamiento con facturas muy largas o con muchas líneas de detalle.
+- El soporte multilingüe se limita a español, catalán e inglés; el campo de idiomas de Hugging Face solo declara `es`, lo que puede generar discrepancias en herramientas que lean ese metadato.
+- Es necesario desactivar el modo thinking de Qwen3 (`--think=false` o `think=False`); de lo contrario, el modelo puede activar razonamiento, con mayor latencia y salida no deseada.
+- Riesgo de alucinación en campos no presentes: aunque la v2 está entrenada para devolver `null`, no se documenta una evaluación específica de falsos positivos en campos ausentes más allá de la métrica de facturas perfectas.
+- No se documentan sesgos conocidos ni evaluaciones de robustez frente a entradas adversariales.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-0.6B del que deriva.
+- El repositorio GGUF tiene un tamaño de 1,3 GB, coherente con varias cuantizaciones, pero no se detalla qué variantes exactas están publicadas.
 
 ## Enlaces
 
 - Modelo GGUF en Hugging Face: https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas-GGUF
-- Pesos completos (transformers): https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas
-- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Pesos completos (modelo base del ajuste): https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas
+- Repositorio de Ollama para el modelo: `hf.co/Ernes14AG/qwen3-0.6b-facturas-GGUF:Q8_0`
+- No se han encontrado otros enlaces (papers, blogs, demos o repositorios) en la información disponible.

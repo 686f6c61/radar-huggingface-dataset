@@ -2,75 +2,91 @@
 
 ## Resumen
 
-Kanimus-26B-A4B-FFT-heretic es un modelo de lenguaje de tipo mezcla de expertos (MoE) con 26 000 millones de parámetros totales y 4 000 millones de parámetros activos, desarrollado mediante una fusión de modelos (merge) sobre la arquitectura Gemma 4 de Google. El modelo original, publicado por SubMaroon, está orientado a tareas conversacionales y de roleplay, con soporte para inglés y ruso. Esta versión concreta, cuantizada por mradermacher, ofrece el modelo en formato GGUF para su despliegue eficiente en entornos de CPU y GPU de consumo.
+Kanimus-26B-A4B-FFT-heretic-GGUF es la distribucion en formato GGUF del modelo Kanimus-26B-A4B-FFT-heretic, publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. El modelo subyacente, alojado en el repositorio SubMaroon-exp/Kanimus-26B-A4B-FFT-heretic, es un ajuste fino de la familia Gemma (etiquetado como gemma4 en los metadatos) con arquitectura de mezcla de expertos (MoE), 25.233.142.046 parametros totales y un diseno de activacion parcial que da nombre al sufijo A4B.
 
-La relevancia de esta ficha radica en que se trata de una cuantización lista para usar con herramientas como llama.cpp u Ollama, lo que permite ejecutar un modelo de 26B con solo 4B activos en hardware moderado. El modelo incluye además un suplemento multimodal (mmproj) que sugiere capacidades de visión, aunque no se detalla su integración en la documentación disponible. Su licencia Gemma permite uso comercial bajo los términos de Google, lo que lo hace atractivo para aplicaciones de producción.
+El modelo esta orientado a conversacion y roleplay, con soporte declarado de ingles y ruso. La etiqueta heretic sugiere un ajuste destinado a reducir los rechazos y el comportamiento excesivamente restrictivo del modelo base, mientras que FFT indica un ajuste fino completo (full fine-tuning) y task_arithmetic apunta a una fusion de pesos por aritmetica de tareas, probablemente combinando un adaptador LoRA con el modelo base.
+
+Esta ficha cubre la version cuantizada estatica publicada por mradermacher, que incluye desde Q2_K (10,7 GB) hasta Q8_0 (27,0 GB), ademas de un proyector multimodal mmproj que habilita entrada de imagenes. Es relevante para quienes quieran ejecutar un MoE de ~25B en hardware de consumo o en servidores modestos, con la salvedad de que la informacion publica sobre el modelo es muy escasa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) basada en Gemma 4, con 26B totales y 4B activos (segun nomenclatura del modelo) |
-| Parametros totales | 25 233 142 046 (dato real, safetensors) |
-| Parametros activos | 4B (segun nomenclatura del modelo) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), familia Gemma (tag gemma4) |
+| Parametros totales | 25.233.142.046 |
+| Parametros activos | no disponible (el sufijo A4B sugiere ~4B activos, sin confirmar) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; ademas mmproj en Q8_0 y f16 |
-| Idiomas soportados | ingles, ruso |
-| Licencia | Gemma (licencia de Google) |
-| Formato de pesos | GGUF (cuantizado); safetensors para el modelo original |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj Q8_0 y mmproj f16 |
+| Idiomas soportados | en, ru |
+| Licencia | gemma (Gemma Terms of Use) |
+| Formato de pesos | GGUF (transformers como libreria declarada; original en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es el resultado de una fusion mediante mergekit con la tecnica task_arithmetic, aplicada sobre modelos base de la familia Gemma 4. La arquitectura es de tipo MoE, con 26 000 millones de parametros totales y 4 000 millones activos por token, lo que reduce el coste computacional en inferencia. No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens procesados ni el uso de tecnicas como RLHF o DPO. El tag "roleplay" y los idiomas soportados (en, ru) sugieren un ajuste orientado a conversacion y narrativa, pero no se confirma en la documentacion.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio: se trata de un modelo de la familia Gemma con mezcla de expertos, derivado de un ajuste fino completo (FFT) sobre el que se aplico una fusion por aritmetica de tareas (task_arithmetic) con componentes LoRA. El sufijo A4B del nombre sugiere un regimen de activacion de aproximadamente 4.000 millones de parametros por token sobre un total de 25.233 millones, si bien el autor no publica la configuracion exacta de expertos, el numero de expertos activos ni la dimension oculta.
 
-La cuantizacion GGUF ha sido realizada por mradermacher, que ofrece multiples niveles de precision (de Q2_K a Q8_0) para adaptarse a distintos requisitos de memoria y calidad. El repositorio incluye ademas un archivo mmproj (multi-modal supplement) en dos variantes (Q8_0 y f16), lo que indica que el modelo original podria tener capacidades de vision, aunque no se especifica como se integra.
+No se han publicado datos sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). La etiqueta heretic indica un proceso de alineacion orientado a reducir negativas y moralizaciones, habitual en la escena de roleplay, pero no se documenta la metodologia. Tampoco se especifica la longitud de contexto nativa del modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional y narrativo, orientado a roleplay y dialogo multi-turno.
-- Soporte multilingue para ingles y ruso, con posible transferencia a otros idiomas no documentada.
-- Capacidades multimodales potenciales gracias al suplemento mmproj, aunque no se detalla su funcionamiento.
-- Compatible con herramientas de inferencia GGUF como llama.cpp, Ollama y LM Studio.
-- No se ha documentado soporte explicito para tool calling, agentes o razonamiento multi-paso.
+- Generacion de texto conversacional multi-turno, con enfasis declarado en roleplay y narrativa.
+- Capacidades multimodales: el repositorio incluye proyectores mmproj (Q8_0 y f16), lo que permite entrada de imagenes en runtimes compatibles con llama.cpp.
+- Soporte bilingue declarado: ingles y ruso.
+- Comportamiento menos restrictivo que el modelo base (tag heretic), orientado a reducir rechazos en conversacion creativa.
+- Razonamiento y codigo: no documentados de forma especifica para este ajuste.
+- Tool calling y function calling: no documentados.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Modo thinking explicito: no documentado.
 
 ## Casos de uso
 
-- Chatbots de atencion al cliente en ingles y ruso: el modelo puede mantener conversaciones fluidas y contextuales, adecuado para entornos de soporte bilingue.
-- Aplicaciones de roleplay y narrativa interactiva: su orientacion a roleplay permite generar historias y personajes coherentes en sesiones largas.
-- Asistente de escritura creativa: puede ayudar a redactar dialogos, descripciones y tramas en ambos idiomas.
-- Traduccion informal y adaptacion de contenido: aunque no es un modelo de traduccion dedicado, su bilingüismo en/ru permite tareas de reformulacion y localizacion ligera.
-- Prototipado rapido de asistentes virtuales: al estar en GGUF, se puede desplegar localmente en equipos de desarrollo para pruebas sin depender de APIs externas.
-- Generacion de contenido para redes sociales o blogs en ruso e ingles: su capacidad de generar texto creativo y conversacional puede aprovecharse para redactar publicaciones.
+- Roleplay y narrativa interactiva: el ajuste esta explicitamente orientado a conversacion de personajes, con un perfil de rechazo reducido que evita interrupciones moralizantes en ficcion. El formato GGUF permite desplegarlo en llama.cpp u Ollama con contexto gestionado por el usuario.
+- Asistentes conversacionales en ruso e ingles: el soporte bilingue declarado lo hace adecuado para bots de atencion en entornos donde se mezclan ambos idiomas, aunque la calidad relativa por idioma no esta documentada.
+- Generacion creativa de guiones y dialogos: para escritura de ficcion, storyboards y borradores de guion donde se prioriza variedad estilistica sobre precision factual.
+- Prototipado local en hardware de consumo: con cuantizaciones Q4_K_S (15,6 GB) o IQ4_XS (14,2 GB) puede ejecutarse en GPUs de 16-24 GB de VRAM, lo que facilita experimentacion sin infraestructura de servidor.
+- Analisis de imagenes con descripcion conversacional: usando el proyector mmproj junto con el modelo, se pueden construir asistentes que comenten imagenes en el contexto de una conversacion, util para prototipos de accesibilidad o catalogacion informal.
+- Despliegue en entornos con requisitos de privacidad: al ser un modelo de pesos abiertos ejecutable en local, encaja en escenarios donde los datos no pueden salir de la infraestructura propia, como borradores internos o simulaciones de entrevistas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras evaluaciones estandar para este modelo o su version original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: segun el quant elegido, desde ~10.7 GB (Q2_K) hasta ~27 GB (Q8_0). Para Q4_K_M (16.9 GB) se recomienda al menos 20 GB de VRAM libre.
-- GPU recomendadas: RTX 4090 (24 GB) para quants hasta Q5_K_M; A100 40/80 GB o H100 para Q8_0 o mayor margen.
-- En CPU: viable con llama.cpp, aunque la velocidad dependera del numero de nucleos y la memoria RAM (se recomienda al menos 32 GB para quants medianos).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o servidores compatibles con GGUF (por ejemplo, text-generation-webui).
-- Latencia y throughput: no disponibles; dependen del hardware y del quant utilizado.
+- VRAM estimada para inferencia (pesos mas overhead de contexto y cache KV): Q2_K ~10,7 GB; Q3_K_M ~13,4 GB; IQ4_XS ~14,2 GB; Q4_K_M ~16,9 GB; Q5_K_M ~19,2 GB; Q6_K ~22,7 GB; Q8_0 ~27,0 GB. A estas cifras hay que sumar el proyector mmproj (~0,9-1,3 GB) si se usa entrada de imagen.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M o Q5_K_M con contexto moderado; RTX 3090 (24 GB) en el mismo rango; A100 40/80 GB o H100 para Q8_0 con contextos largos y concurrencia; RTX 4060 Ti 16 GB para IQ4_XS o Q3_K_M.
+- Cabe en GPU de consumo: si, desde Q2_K en GPUs de 12 GB (con contexto corto) hasta Q5_K_M en GPUs de 24 GB. Las cuantizaciones Q6_K y Q8_0 requieren 24 GB o mas, o descarga parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para servir en produccion con mayor throughput, conversion a otros formatos o uso del repositorio original en transformers con vLLM/TGI (no verificado para esta arquitectura MoE concreta).
+- Latencia y throughput: no disponibles. Al ser un MoE con activacion parcial, el throughput por token deberia ser superior al de un denso de 25B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con otros modelos de la misma categoria (por ejemplo, Gemma 4 26B A4B original, Mixtral 8x7B o Qwen 25B MoE). La informacion publica no incluye benchmarks ni evaluaciones que permitan una comparacion objetiva. Se recomienda consultar el modelo original en Hugging Face para posibles referencias.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Kanimus-26B-A4B-FFT-heretic (este) | 25,2B totales, ~4B activos (sugerido) | no disponible | gemma | GGUF, safetensors | Ajuste para roleplay, en/ru, multimodal via mmproj |
+| Gemma 2 27B (referencia de familia) | 27B densos | 8K | gemma | safetensors, GGUF | Denso, sin MoE; comparacion de tamano, no de comportamiento |
+| Mixtral 8x7B | 46,7B totales, 12,9B activos | 32K | Apache 2.0 | safetensors, GGUF | MoE mas grande; licencia permisiva |
+| Qwen2.5 32B | 32,5B densos | 128K | Apache 2.0 (variantes) | safetensors, GGUF | Mayor contexto y licencia mas laxa |
+
+La comparacion es aproximada: no hay datos publicados de rendimiento para este ajuste, y la fila de Gemma 2 27B se incluye solo como referencia de la familia declarada en los metadatos, no como equivalente funcional.
 
 ## Limitaciones y advertencias
 
-- Al ser un modelo de fusion (merge), puede heredar sesgos o inconsistencias de los modelos base, especialmente en tareas fuera de su dominio principal (roleplay y conversacion).
-- Riesgo de alucinacion en contextos factuales; no es adecuado para tareas que requieran precision enciclopedica sin verificacion externa.
-- La longitud de contexto no esta documentada; se desconoce si soporta ventanas largas (por ejemplo, 8K o 16K tokens).
-- La licencia Gemma de Google impone restricciones de uso comercial; es necesario revisar los terminos completos antes de desplegar en produccion.
-- El suplemento multimodal (mmproj) no esta documentado; su funcionamiento y compatibilidad con el modelo principal no estan garantizados.
-- No se ha verificado el soporte para tool calling o integracion con agentes; su uso en pipelines complejos requeriria pruebas adicionales.
+- Informacion muy escasa: el autor no publica arquitectura detallada, contexto nativo, datos de entrenamiento ni benchmarks, lo que impide evaluar su calidad de forma objetiva.
+- Riesgo de alucinacion: al ser un ajuste orientado a roleplay y creatividad, la prioridad no es la precision factual; no debe usarse como fuente de verdad en dominios tecnicos o medicos sin verificacion.
+- Sesgos: no documentados. Los ajustes heretic suelen relajar filtros de seguridad, lo que puede aumentar la probabilidad de contenido sensible, ofensivo o inapropiado si no se aplican salvaguardas externas.
+- Limitaciones de idioma: solo ingles y ruso declarados; el rendimiento en castellano no esta garantizado ni evaluado.
+- Licencia Gemma: el uso comercial esta sujeto a los Gemma Terms of Use, que imponen restricciones y obligaciones de atribucion; conviene revisarlos antes de desplegar en produccion.
+- Trazabilidad: la cadena de derivacion (modelo base, LoRA, fusion task_arithmetic, ajuste heretic) dificulta atribuir comportamientos concretos y auditar el linaje de los datos.
+- Contexto: al no documentarse la ventana nativa, el contexto efectivo dependera de la configuracion del runtime y de la VRAM disponible; en cuantizaciones bajas con contextos largos la calidad puede degradarse.
+- Multimodalidad: la presencia de mmproj no garantiza que el modelo haya sido entrenado especificamente para vision; conviene validar la calidad de las respuestas sobre imagenes antes de usarlo.
 
 ## Enlaces
 
-- Modelo cuantizado GGUF: https://huggingface.co/mradermacher/Kanimus-26B-A4B-FFT-heretic-GGUF
-- Modelo original (SubMaroon): https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic
-- Cuantizaciones con imatrix (variante i1): https://huggingface.co/mradermacher/Kanimus-26B-A4B-FFT-heretic-i1-GGUF
-- Modelo similar de la misma serie (gemma-4-26B-A4B-it-heretic-GGUF): https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-GGUF
-- Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
+- Repositorio GGUF: https://huggingface.co/mradermacher/Kanimus-26B-A4B-FFT-heretic-GGUF
+- Modelo base: https://huggingface.co/SubMaroon-exp/Kanimus-26B-A4B-FFT-heretic
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Kanimus-26B-A4B-FFT-heretic-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Kanimus-26B-A4B-FFT-heretic-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

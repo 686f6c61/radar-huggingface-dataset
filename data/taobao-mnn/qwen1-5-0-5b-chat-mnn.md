@@ -2,89 +2,100 @@
 
 ## Resumen
 
-Qwen1.5-0.5B-Chat-MNN es una exportación cuantizada a 4 bits del modelo Qwen1.5-0.5B-Chat de Alibaba, empaquetada en el formato del motor de inferencia MNN (Mobile Neural Network) desarrollado por el equipo de Taobao/Alibaba. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión del checkpoint original (publicado en ModelScope) mediante la herramienta `llmexport` del repositorio MNN, pensada para ejecutar el modelo en dispositivos con recursos limitados usando el runtime MNN en lugar de frameworks como PyTorch o llama.cpp.
+Qwen1.5-0.5B-Chat-MNN es la version cuantizada del modelo conversacional Qwen1.5-0.5B-Chat de Alibaba, empaquetada en formato MNN (Mobile Neural Network) por el equipo taobao-mnn. El modelo original es un transformer decoder-only de 0,5 mil millones de parametros desarrollado por el equipo Qwen de Alibaba, afinado para instrucciones y conversacion multirroundo en chino e ingles. Esta distribucion concreta aplica cuantizacion HQQ de 4 bits con grupos de 128 sobre las capas lineales y la cabeza de salida, manteniendo las escalas en FP16 y los embeddings en BF16 separados.
 
-El modelo subyacente es un transformer decoder-only de aproximadamente 0,5 mil millones de parámetros, ajustado con instrucciones (instruction-tuned) para tareas de chat y generación de texto. Su interés radica en que permite desplegar un modelo conversacional en CPU (incluidos dispositivos móviles y embebidos) gracias a la cuantización de pesos lineales y del LM head a 4 bits con grupo de 128, junto con fusiones de proyección y normalización.
+La relevancia de esta ficha radica en que permite ejecutar un modelo conversacional completo en CPU, sin GPU, con un consumo de memoria reducido. El formato MNN esta disenado para inferencia en dispositivos moviles y entornos con recursos limitados, lo que lo hace adecuado para prototipos en local, aplicaciones de escritorio y despliegues edge. El repositorio ocupa 1,1 GB e incluye el grafo del modelo, los pesos cuantizados, el tokenizador y los ficheros de configuracion.
 
-La revisión de noviembre de 2026 (MNN 3.6.2) actualiza el export con HQQ, fusión de transformer y embeddings de entrada separados en BF16, y exige MNN 3.6.2 o superior. La licencia es la Tongyi Qianwen Research License, de uso exclusivamente no comercial salvo licencia separada de Alibaba Cloud, lo que limita su adopción en producción comercial sin acuerdo adicional.
+Conviene subrayar que no se trata de un modelo nuevo, sino de una conversion del checkpoint oficial Qwen1.5-0.5B-Chat a un runtime distinto. Por tanto, sus capacidades cognitivas son las del modelo base: un modelo pequeno, con 24 capas y dimension oculta de 1024, orientado a tareas ligeras de generacion de texto y dialogo, no a razonamiento complejo ni a codigo de produccion. La licencia Tongyi Qianwen Research License restringe el uso comercial sin autorizacion adicional, un punto critico para cualquier evaluacion empresarial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (model-type: transformer) |
-| Parametros totales | ~0,5 mil millones (modelo base Qwen1.5-0.5B-Chat) |
+| Arquitectura | Transformer decoder-only (Qwen1.5), cuantizado en formato MNN |
+| Parametros totales | 0,5 mil millones (modelo base Qwen1.5-0.5B-Chat) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (validado hasta ~900 tokens en pruebas de traduccion) |
-| Tipos de cuantizacion | 4 bits con grupo 128 en pesos lineales y LM head; embeddings de entrada en BF16 |
-| Idiomas soportados | chino (cn); el modelo base Qwen1.5 es multilingue pero la ficha solo declara cn |
-| Licencia | other (Tongyi Qianwen Research License, solo uso no comercial salvo licencia de Alibaba Cloud) |
-| Formato de pesos | MNN (formato propietario del runtime MNN); repo de 1,1 GB |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | HQQ 4-bit con grupo de 128 en capas lineales y cabeza de salida; escalas en FP16; embeddings en BF16 |
+| Idiomas soportados | Chino (zh) e ingles (en) |
+| Licencia | Tongyi Qianwen Research License (uso comercial requiere autorizacion) |
+| Formato de pesos | MNN (`llm.mnn`, `llm.mnn.weight`, `embeddings_bf16.bin`, `tokenizer.mtok`) |
+| Capas / dimension oculta | 24 / 1024 |
+| Tamano del repositorio | 1,1 GB |
+| Runtime de inferencia | MNN 3.6.2 (commit b0239771b07b317a258fbc384683bbd540741406) |
+| Configuracion por defecto | CPU, 4 hilos, `precision=low`, `memory=low` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de ~0,5B parámetros, derivado del checkpoint Qwen1.5-0.5B-Chat de Alibaba, que fue ajustado con instrucciones sobre el modelo base Qwen1.5. La exportación a MNN aplica cuantización de 4 bits con grupo de 128 a los pesos lineales y al LM head, mantiene los embeddings de entrada en BF16 y aplica fusiones de proyección y normalización, además de soporte de transformer fusion en el runtime. La revisión de 2026-11-09 se generó con el commit `b0239771b07b317a258fbc384683bbd540741406` de MNN e incorpora HQQ (Half-Quadratic Quantization) y C4.
+El modelo subyacente es Qwen1.5-0.5B-Chat, un transformer decoder-only con 24 capas y dimension oculta de 1024, entrenado por el equipo Qwen de Alibaba. La model card de esta conversion no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; esa informacion corresponde a la documentacion del modelo original y no se reproduce aqui. Lo que si se especifica es la estructura de cuantizacion: las capas lineales de lenguaje y la cabeza de salida se almacenan en HQQ de 4 bits con tamano de grupo 128, las escalas de cuantizacion se mantienen en FP16 y los embeddings de palabras se guardan por separado en BF16 (`embeddings_bf16.bin`). Esta separacion permite preservar la fidelidad de la tabla de embeddings, sensible a la cuantizacion agresiva, mientras se comprime el resto de la red.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en esta ficha; esos datos corresponden al modelo original y no se detallan en la información proporcionada. La validación de la exportación se limitó a CPU x64, comprobando alineación FP32 entre prefill y decode, plantillas de chat, IDs de token, generación en chino, aritmética, traducción corta y de contexto de ~900 tokens, parada natural e integridad de pesos externos. Las rutas ARM CPU FP16, Metal, OpenCL, Vulkan y CUDA no fueron validadas en esta revisión.
+La innovacion tecnica de esta distribucion no esta en la arquitectura, sino en el empaquetado: MNN es un motor de inferencia de Alibaba optimizado para CPU y dispositivos moviles, con soporte de fusion de transformadores (`MNN_SUPPORT_TRANSFORMER_FUSE`) y modo de baja memoria (`MNN_LOW_MEMORY`). El repositorio incluye el grafo (`llm.mnn`), los pesos (`llm.mnn.weight`), el tokenizador propietario (`tokenizer.mtok`) y ficheros de configuracion (`config.json`, `llm_config.json`). La model card indica que el 9 de noviembre de 2026 se validaron en CPU x64 la alineacion del mapeo FP32, casos de saludo, aritmetica y traduccion, y una prueba de humo con la configuracion por defecto. Los parametros de exportacion estan en `export_args.json` y los registros de prueba con hashes en `refresh_metadata.json`.
 
 ## Capacidades
 
-- Generación de texto conversacional en chino, con plantilla de chat incluida.
-- Razonamiento básico y aritmética (validado en pruebas de correctness del export).
-- Traducción corta y de contexto medio (~900 tokens) según la validación del autor.
-- Ajuste a instrucciones (instruction-tuned) para diálogo multi-turno.
-- Ejecución en CPU x64 mediante el runtime MNN con `llm_demo`.
-- Soporte de parada natural de generación y muestreo configurable (greedy solo para tests de correctness).
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
+- Generacion de texto conversacional multirroundo en chino e ingles.
+- Respuesta a instrucciones (instruction-tuned) con formato de chat.
+- Tareas ligeras de aritmetica y traduccion, segun los casos de validacion reportados por el autor.
+- Generacion de texto autoregresiva con muestreo configurable mediante parametros en `config.json`.
+- Ejecucion en CPU sin GPU, con configuracion de 4 hilos por defecto.
+- No se documenta soporte de tool calling ni function calling en la informacion disponible.
+- No se documenta soporte de agentes, razonamiento multi-paso ni modo thinking.
+- No se documenta capacidad de vision, audio ni multimodalidad.
+- No se documenta una ventana de contexto concreta; no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional en dispositivos móviles o embebidos: el modelo, cuantizado a 4 bits y ejecutado con MNN en CPU, permite integrar un chatbot en chino dentro de apps Android/iOS o dispositivos con poca memoria, sin depender de GPU ni de servicios en la nube.
-- Prototipado rápido de pipelines de chat en local: gracias a la compilación sencilla de MNN (`llm_demo`) y al tamaño reducido del repo (1,1 GB), sirve para validar plantillas de prompt y flujos de conversación antes de escalar a modelos mayores.
-- Traducción y generación de texto en chino en entornos sin conectividad: al ejecutarse en CPU x64 validada, puede desplegarse en portátiles o servidores de borde para tareas de traducción corta y resumen.
-- Pruebas de integración de MNN en CI: el export incluye comprobaciones de alineación FP32 y de integridad de pesos, útil para equipos que desarrollan sobre MNN y necesitan un modelo de referencia pequeño.
-- Educación y experimentación: su tamaño y licencia de investigación lo hacen adecuado para laboratorios y cursos que estudian cuantización, fusión de operadores y despliegue en CPU.
-- Evaluación comparativa de runtimes: sirve como banco de pruebas para medir latencia y consumo de memoria de MNN frente a otros motores en el mismo hardware, dado que el modelo base es pequeño y conocido.
+- Prototipado rapido de chatbots en local: al ejecutarse en CPU con MNN y solo 1,1 GB de repositorio, permite levantar un asistente conversacional basico en un portatil sin GPU para validar flujos de dialogo antes de invertir en infraestructura mayor.
+- Aplicaciones de escritorio y edge: el formato MNN esta pensado para entornos con recursos limitados, por lo que encaja en herramientas de escritorio que necesiten generacion de texto offline sin depender de una API en la nube.
+- Traduccion y asistencia linguistica zh-en: los casos de validacion del autor incluyen traduccion, lo que respalda su uso en utilidades de traduccion sencilla entre chino e ingles en entornos controlados.
+- Educacion y demostraciones tecnicas: sirve para ensenar el funcionamiento de la cuantizacion HQQ de 4 bits y de un runtime movil como MNN, comparando la salida con el modelo base en FP16/BF16.
+- Preprocesado de texto en pipelines: tareas de resumen corto, reformulacion o clasificacion ligera donde no se requiere razonamiento profundo y prima la latencia baja en CPU.
+- Pruebas de integracion de MNN-LLM: util para desarrolladores que quieran validar la API de MNN-LLM (`llm_demo`) y su configuracion de memoria y precision antes de adoptar el runtime en un producto.
+- Chatbot de soporte basico en intranet: despliegue en servidores sin GPU para respuestas frecuentes y guiones cerrados, aceptando las limitaciones de un modelo de 0,5B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo describe pruebas de correctness (alineación FP32, generación en chino, aritmética, traducción y parada natural) en CPU x64, sin métricas de precisión tipo MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta pruebas de validacion funcional (alineacion FP32, saludo, aritmetica, traduccion y smoke test con configuracion por defecto) en CPU x64, sin cifras de MMLU, HumanEval, GSM8K ni metricas de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; al ejecutarse en CPU, el consumo relevante es RAM. El repo pesa 1,1 GB y los pesos lineales están a 4 bits con grupo 128, por lo que la huella en memoria es reducida (del orden de cientos de MB, sin cifra oficial).
-- GPU recomendadas: no se documentan; la validación oficial se hizo en CPU x64. Las rutas CUDA, Metal, OpenCL y Vulkan no fueron validadas en esta revisión.
-- ¿Cabe en GPU consumer? No hay datos oficiales; por tamaño (0,5B) cabría en cualquier GPU consumer, pero el export está orientado a CPU y no se ha validado en GPU.
-- Opciones de despliegue: runtime MNN (compilación con `MNN_LOW_MEMORY`, `MNN_CPU_WEIGHT_DEQUANT_GEMM`, `MNN_BUILD_LLM`, `MNN_SUPPORT_TRANSFORMER_FUSE`), ejecutable `llm_demo`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- Inferencia en CPU: configuracion por defecto de 4 hilos, `precision=low` y `memory=low`, segun la model card.
+- VRAM: no aplica en la configuracion por defecto (CPU). No se proporcionan estimaciones de VRAM para ejecucion en GPU.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no documentada; el empaquetado esta orientado a CPU y dispositivos moviles.
+- Opciones de despliegue: MNN (`llm_demo`) con MNN 3.6.2, compilado con `-DMNN_BUILD_LLM=ON -DMNN_LOW_MEMORY=ON -DMNN_SUPPORT_TRANSFORMER_FUSE=ON`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en esta distribucion.
+- Latencia y throughput: no disponibles; no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen1.5-0.5B-Chat-MNN | ~0,5B | no disponible | MNN (4 bits) | Tongyi Qianwen Research (no comercial) | Export MNN para CPU, validado en x64 |
-| Qwen1.5-0.5B-Chat (original) | ~0,5B | no disponible en esta ficha | safetensors (PyTorch) | Tongyi Qianwen Research | Checkpoint de referencia en ModelScope |
-| Otros modelos ~0,5B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+| Qwen1.5-0.5B-Chat-MNN (esta ficha) | 0,5B | no disponible | MNN, HQQ 4-bit | Tongyi Qianwen Research License | Optimizado para CPU y edge |
+| Qwen/Qwen1.5-0.5B-Chat (base) | 0,5B | no disponible en esta informacion | safetensors (Hugging Face) | Tongyi Qianwen Research License | Checkpoint original sin cuantizar |
+| Otros modelos ~0,5B de la familia Qwen1.5 | 0,5B | no disponible | safetensors / GGUF segun distribucion | Tongyi Qianwen Research License | Misma arquitectura y familia |
 
-No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
+La comparativa se limita a la familia Qwen1.5 porque la informacion proporcionada no incluye datos de benchmarks ni de otros modelos de tamano similar que permitan una comparacion cuantitativa rigurosa. No se dispone de cifras de rendimiento para contrastar.
 
 ## Limitaciones y advertencias
 
-- Licencia Tongyi Qianwen Research License: uso no comercial únicamente salvo licencia separada de Alibaba Cloud; restringe despliegues comerciales.
-- Modelo de 0,5B parámetros: capacidad de razonamiento y conocimiento limitada frente a modelos mayores; riesgo elevado de alucinación en tareas complejas.
-- Idioma declarado: chino (cn); el rendimiento en castellano u otros idiomas no está validado en esta ficha.
-- Contexto validado solo hasta ~900 tokens en pruebas de traducción; la longitud máxima de contexto no se especifica.
-- Requiere MNN 3.6.2 o superior con soporte de transformer fusion; runtimes anteriores no son compatibles.
-- Solo validado en CPU x64; ARM CPU FP16, Metal, OpenCL, Vulkan y CUDA no han sido validados en esta revisión.
-- Las pruebas del autor son de correctness, no de precisión; no garantizan identidad token a token con el modelo sin cuantizar.
-- Es necesario descargar todos los archivos actualizados juntos y limpiar cachés de modelo/pesos/KV antes de cargar; no mezclar con revisiones anteriores.
-- Formato MNN propietario: no es directamente usable en ecosistemas PyTorch/GGUF sin conversión.
+- Modelo de 0,5B parametros: capacidad de razonamiento, conocimiento factual y calidad de codigo muy limitadas en comparacion con modelos de mayor tamano; propenso a errores en tareas complejas.
+- Riesgo de alucinacion elevado, especialmente en preguntas factuales y en contextos largos, agravado por la cuantizacion a 4 bits.
+- La cuantizacion HQQ de 4 bits puede introducir degradacion adicional respecto al checkpoint original en FP16/BF16; no se publican metricas de esa perdida.
+- Idiomas: solo chino e ingles documentados; el rendimiento en castellano no esta garantizado ni evaluado.
+- Longitud de contexto no documentada: no se debe asumir una ventana amplia para conversaciones largas o documentos extensos.
+- Licencia Tongyi Qianwen Research License: el uso comercial requiere autorizacion adicional; revisar `LICENSE` y `NOTICE.txt` antes de cualquier despliegue en produccion.
+- Dependencia del runtime MNN y de una version concreta (3.6.2, commit especifico): cambios de version pueden alterar el comportamiento; conviene fijar la version en produccion.
+- Formato propietario (`llm.mnn`, `tokenizer.mtok`) no compatible directamente con ecosistemas como transformers, vLLM o llama.cpp sin conversion.
+- Sin soporte documentado de tool calling, agentes ni multimodalidad; no apto para esos casos de uso.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/taobao-mnn/Qwen1.5-0.5B-Chat-MNN
-- Modelo original en ModelScope: https://modelscope.cn/models/qwen/Qwen1.5-0.5B-Chat/summary
+- Modelo base: https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat
+- ModelScope: https://modelscope.cn/models/MNN/Qwen1.5-0.5B-Chat-MNN
 - Repositorio MNN: https://github.com/alibaba/MNN
-- Herramienta llmexport: https://github.com/alibaba/MNN/tree/master/transformers/llm/export
-- Documentación MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
-- Descarga vía ModelScope (MNN/Qwen1.5-0.5B-Chat-MNN): https://www.modelscope.cn/models/MNN/Qwen1.5-0.5B-Chat-MNN
+- Documentacion MNN-LLM: https://mnn-docs.readthedocs.io/en/latest/transformers/llm.html
+- Licencia (LICENSE): https://huggingface.co/taobao-mnn/Qwen1.5-0.5B-Chat-MNN/blob/main/LICENSE
+- Aviso de conversion (NOTICE.txt): https://huggingface.co/taobao-mnn/Qwen1.5-0.5B-Chat-MNN/blob/main/NOTICE.txt
+- Parametros de exportacion (export_args.json): https://huggingface.co/taobao-mnn/Qwen1.5-0.5B-Chat-MNN/blob/main/export_args.json
+- Registro de validacion (refresh_metadata.json): https://huggingface.co/taobao-mnn/Qwen1.5-0.5B-Chat-MNN/blob/main/refresh_metadata.json

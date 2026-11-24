@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Maps",
-      "url": "https://maps.google.de/maps?hl%3Dde%26tab%3Dwl",
-      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
-    },
-    {
-      "title": "Datenschutz – Street View – Google Maps",
-      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
-      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
-    },
-    {
-      "title": "Google Maps",
-      "url": "https://maps.google.de/mapfiles/home3.html",
-      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
-    },
-    {
-      "title": "Earth-Versionen – Google Earth",
-      "url": "https://maps.google.de/intl/de/earth/versions/",
-      "snippet": "Fliege mit Google Earth für Chrome in Sekundenschnelle überallhin und besuche hunderte Städte in 3D direkt in deinem Browser. Du …"
-    },
-    {
-      "title": "Google Earth",
-      "url": "https://maps.google.de/intl/de/earth/download/ge/",
-      "snippet": "Jun 4, 2025 · Mit Google Earth können Sie nicht nur um die Welt fliegen und sich Satellitenbilder, Karten, Geländeformationen und …"
-    }
-  ]
+  "sources": []
 }

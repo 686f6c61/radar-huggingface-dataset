@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Securecoder 30b pro v2 merged GGUF es una version cuantizada en formato GGUF del modelo Taimwe/securecoder-30b-pro-v2-merged, publicada por el usuario mradermacher, conocido por generar cuantizaciones estaticas de modelos abiertos. Se trata de un modelo de aproximadamente 30.532 millones de parametros (unos 30,5B) orientado, por su nombre y nomenclatura, a tareas de generacion de codigo, si bien la model card del repositorio no detalla la arquitectura, el contexto ni el proceso de entrenamiento. El repositorio no acumula descargas ni likes en el momento de la consulta y no declara licencia.
+Securecoder-30b-pro-v2-merged-GGUF es la distribucion en formato GGUF del modelo Taimwe/securecoder-30b-pro-v2-merged, un ajuste fino orientado a codigo y ciberseguridad construido sobre la familia Qwen3 (etiquetado como `qwen3_moe` en los metadatos). El modelo original fue entrenado con Unsloth y fusionado (merged) para su publicacion, y esta version la genera y cuantiza el usuario mradermacher, especializado en conversiones GGUF para inferencia local. Cuenta con 30.532.122.624 parametros totales (unos 30,5 mil millones) y licencia Apache 2.0.
 
-El interes de esta publicacion es practico: ofrece el modelo en multiples niveles de cuantizacion (desde Q2_K de 11,4 GB hasta Q8_0 de 32,6 GB) para facilitar su despliegue en hardware de gama alta de consumo o en GPUs profesionales, mediante herramientas como llama.cpp, Ollama o LM Studio. Al no existir todavia cuantizaciones ponderadas ni imatrix, los ficheros disponibles son cuantizaciones estaticas estandar.
+La relevancia de esta ficha radica en que ofrece un modelo de ~30B con enfasis declarado en generacion de codigo, tool calling y seguridad, empaquetado en cuantizaciones que van de Q2_K (11,4 GB) a Q8_0 (32,6 GB), lo que permite desplegarlo en estaciones de trabajo con GPU de consumo alta o en servidores con una sola GPU profesional. Al derivar de Qwen3 MoE, es plausible que solo una fraccion de los parametros este activa por token, aunque el autor no publica el numero exacto de parametros activos.
 
-La informacion publica es muy limitada: no hay datos de benchmarks, ni ficha tecnica del modelo base, ni especificacion de licencia o de composicion del dataset. Esta ficha recoge unicamente los datos verificables del repositorio y marca como "no disponible" todo aquello que no se puede confirmar.
+El repositorio tiene un volumen de descargas modesto (388) y solo 2 likes en el momento de la consulta, lo que sugiere un modelo de nicho y reciente (creado el 3 de octubre de 2026). No se han publicado resultados de benchmarks ni detalles del dataset de entrenamiento en la informacion disponible, por lo que las evaluaciones deben hacerse de forma empirica antes de adoptarlo en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 30.532.122.624 (unos 30,5B, dato real de safetensors del modelo base) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer MoE (etiqueta `qwen3_moe`; detalles de capas y expertos no disponibles) |
+| Parametros totales | 30.532.122.624 (~30,5B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_M, Q4_K_S, Q5_K_M, Q8_0 (publicadas); F16, Q6_K, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S e IQ4_XS aparecen referenciadas pero no enlazadas en la tabla de ficheros |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); variantes imatrix en repo i1 |
 | Idiomas soportados | en (ingles) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en safetensors |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (original en safetensors/transformers) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Taimwe/securecoder-30b-pro-v2-merged. Por el numero de parametros (~30,5B) y la nomenclatura "pro", podria tratarse de un transformer denso o de una variante MoE, pero la model card no lo especifica y no debe asumirse ninguna de las dos opciones. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT.
+El modelo base es Taimwe/securecoder-30b-pro-v2-merged, un ajuste fino de la familia Qwen3 con arquitectura Mixture of Experts segun la etiqueta `qwen3_moe`. El ajuste se realizo con Unsloth, herramienta habitual para fine-tuning eficiente en memoria, y posteriormente se fusionaron los pesos (merged) para distribuir un unico checkpoint. La informacion disponible no detalla el numero de capas, el numero de expertos, la dimension oculta ni el mecanismo de enrutamiento.
 
-La unica innovacion tecnica documentada por el publicador es el propio proceso de cuantizacion: las cuantizaciones son estaticas (marcadas con `output_tensor_quantised: 1`), y el autor indica que las cuantizaciones ponderadas o con imatrix no estan disponibles por el momento. La lista completa de cuantizaciones generadas incluye x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M e IQ4_XS, aunque en la tabla de ficheros descargables solo se enlazan cinco de ellas.
+Tampoco se especifican el volumen de tokens de entrenamiento, la composicion del dataset (mas alla de las etiquetas `code`, `tool-calling`, `security` y `cybersecurity`), ni si se aplicaron fases de RLHF, DPO o preference tuning. No hay datos publicados sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. Esta version GGUF es una conversion estatica del checkpoint original realizada por mradermacher, sin cambios en los pesos mas alla de la cuantizacion.
 
 ## Capacidades
 
-- Generacion de texto y, previsiblemente, generacion de codigo, dado el nombre "securecoder", aunque no hay documentacion que lo confirme.
-- Conversacion multi-turno (etiqueta `conversational` en el repositorio).
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
-- Soporte de tool calling o function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: el modelo declara unicamente soporte de ingles.
-- Modo de razonamiento explicito, vision o audio: no documentado.
+- Generacion de texto y codigo en ingles, con enfasis declarado en tareas de programacion.
+- Tool calling / function calling, segun las etiquetas del repositorio.
+- Orientacion a ciberseguridad: analisis de codigo, deteccion de vulnerabilidades y tareas de seguridad (por las etiquetas `security` y `cybersecurity`; sin detalle adicional publicado).
+- Conversacional multi-turno (etiqueta `conversational`).
+- Compatible con endpoints (etiqueta `endpoints_compatible`).
+- Capacidades multilingues limitadas al ingles segun el campo `language`.
+- No se documentan modos de razonamiento extendido (thinking), vision ni audio.
 
 ## Casos de uso
 
-- Despliegue local de asistencia de codigo: al ofrecer cuantizaciones de 11 a 33 GB, el modelo puede ejecutarse en estaciones de trabajo con GPU de 24 GB o superiores mediante llama.cpp u Ollama para autocompletado y generacion de fragmentos de codigo en local.
-- Entornos con requisitos de privacidad: al poder ejecutarse de forma totalmente offline, es adecuado para generar o revisar codigo en organizaciones que no pueden enviar codigo fuente a APIs externas.
-- Prototipado rapido en GPU de consumo: con la cuantizacion Q4_K_S (17,6 GB) o Q2_K (11,4 GB) puede probarse en tarjetas de 16-24 GB sin necesidad de infraestructura en la nube.
-- Evaluacion comparativa de cuantizaciones: el repositorio permite medir el impacto de Q2_K frente a Q8_0 sobre la calidad de salida en tareas de codigo, util para calibrar el equilibrio calidad/VRAM.
-- Integracion en pipelines de generacion asistida: mediante llama.cpp o servidores compatibles con la API de OpenAI se puede conectar a editores e IDE como backend de autocompletado.
-- Filtrado y revision de codigo en precommit: si el modelo demuestra capacidad de analisis, podria usarse para detectar patrones inseguros en el codigo, aunque no hay evidencia publicada que respalde esta funcion.
-
-En todos los casos, la ausencia de benchmarks y de documentacion hace recomendable validar el comportamiento real antes de llevarlo a produccion.
+- Revision de codigo con foco en seguridad: el modelo puede recibir fragmentos de codigo y senalar patrones de riesgo (inyeccion, desbordamientos, uso inseguro de APIs), aprovechando su ajuste especifico en ciberseguridad.
+- Asistente de desarrollo en IDE: integrado via llama.cpp u Ollama, sirve para autocompletado y explicacion de funciones en ingles, con cuantizaciones Q4_K_M que caben en GPU de consumo.
+- Automatizacion de triaje de alertas: con soporte de tool calling, puede conectarse a APIs de escaneo o gestores de incidencias para clasificar y enriquecer alertas.
+- Generacion de pruebas unitarias y parches: util en pipelines de CI/CD para proponer tests o correcciones sobre diffs, siempre con revision humana dada la ausencia de benchmarks publicados.
+- Formacion y laboratorios: al ser Apache 2.0 y ejecutable en local, es adecuado para entornos de entrenamiento en seguridad donde no se puede enviar codigo a APIs externas.
+- Analisis de configuraciones y scripts: puede revisar ficheros de infraestructura (Dockerfiles, playbooks, politicas) en busca de malas practicas, en despliegues on-premise con llama.cpp o vLLM.
+- Chatbot tecnico interno: conversaciones multi-turno sobre documentacion de codigo o procedimientos de seguridad, limitado al ingles.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM son estimaciones a partir del tamano de los ficheros GGUF publicados; no incluyen la cache KV, cuyo consumo depende de la longitud de contexto y de la arquitectura (no disponible).
-
-- VRAM estimada (solo pesos): Q2_K 11,4 GB; Q3_K_M 14,8 GB; Q4_K_S 17,6 GB; Q5_K_M 21,8 GB; Q8_0 32,6 GB. A estas cifras hay que sumar la cache KV y el overhead del runtime, por lo que el consumo real sera superior.
-- FP16: el modelo base de ~30,5B parametros requeriria aproximadamente 61 GB solo en pesos, mas cache KV.
-- GPU de 24 GB (RTX 3090, RTX 4090, A5000): pueden alojar Q2_K, Q3_K_M y Q4_K_S con margen, y Q5_K_M de forma ajustada y con contextos cortos. Q8_0 no cabe.
-- GPU de 16 GB (RTX 4080, RTX 4060 Ti 16 GB): viables Q2_K y, de forma ajustada, Q3_K_M.
-- GPU de 40-48 GB (A100 40 GB, A6000 48 GB, L40S): Q8_0 cabe con margen; FP16 requeriria al menos 80 GB.
-- GPU de 80 GB (A100 80 GB, H100): permite FP16 con contexto amplio.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y text-generation-webui para GGUF; vLLM con soporte GGUF parcial. TGI no soporta GGUF de forma nativa.
-- Latencia y throughput: no disponible (no se han publicado mediciones).
+- VRAM estimada para inferencia segun cuantizacion: Q2_K ~11,4 GB, Q3_K_M ~14,8 GB, IQ4_XS ~16,7 GB, Q4_K_M ~18,7 GB, Q5_K_M ~21,8 GB, Q6_K ~25,2 GB, Q8_0 ~32,6 GB (mas overhead de contexto KV).
+- GPU recomendadas: para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q6_K y Q8_0 conviene una A100 40 GB, H100 o L40S.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones hasta Q5_K_M; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo con Q3_K o IQ4_XS y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; el checkpoint original en safetensors puede servirse con vLLM o TGI.
+- Latencia y throughput: no disponibles; al ser un MoE, el rendimiento dependera del numero de parametros activos, dato no publicado.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de contexto, rendimiento ni licencia del modelo, y no se confirma oficialmente que se trate de un modelo de codigo, por lo que no es posible establecer una comparativa fiable con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| securecoder-30b-pro-v2-merged (GGUF) | ~30,5B (MoE, activos no disponibles) | no disponible | Codigo y ciberseguridad | Apache 2.0 | GGUF en HF |
+| Qwen3 base (familia) | variable | no disponible en esta ficha | Proposito general | Apache 2.0 (segun familia) | safetensors y GGUF |
+| Modelos de codigo de ~30B de otros autores | ~30B | no disponible | Codigo | variable | variable |
+
+La comparacion cuantitativa con alternativas no es posible con los datos disponibles: no hay benchmarks publicados ni se detallan parametros activos o contexto, por lo que la eleccion frente a otros modelos de codigo debe basarse en pruebas propias.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica si se permite el uso comercial, por lo que su uso en produccion conlleva riesgo legal hasta confirmar los terminos del modelo base Taimwe/securecoder-30b-pro-v2-merged.
-- Idiomas: solo declara soporte de ingles; no se garantiza un rendimiento correcto en castellano ni en otros idiomas.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje, agravado por la ausencia de benchmarks que permitan estimar su fiabilidad.
-- Sin benchmarks publicados: no hay evidencia verificable de rendimiento en tareas de codigo, matematicas o razonamiento.
-- Cuantizaciones de baja precision: Q2_K y Q3_K_M pueden degradar notablemente la calidad de salida; el autor recomienda Q4_K_S por velocidad y Q8_0 por calidad.
-- Sin cuantizaciones ponderadas/imatrix: el autor indica que no estan disponibles, lo que limita la optimizacion de calidad por tamano.
-- Repositorio sin traccion: cero descargas y cero likes, lo que reduce la validacion comunitaria y el soporte disponible.
-- Advertencia sobre la fecha: el repositorio figura creado y actualizado en octubre de 2026, dato a verificar por si se trata de un error de metadatos.
+- Solo soporta ingles de forma declarada; el rendimiento en castellano no esta garantizado.
+- No hay benchmarks publicados: el rendimiento real en HumanEval, MMLU u otras pruebas es desconocido.
+- Riesgo de alucinacion inherente a los modelos generativos, especialmente en afirmaciones sobre vulnerabilidades o APIs.
+- El ajuste en ciberseguridad puede producir respuestas que parezcan autoritativas sin base verificada; requiere revision experta.
+- No se documentan sesgos especificos, pero al entrenarse en ingles hereda los sesgos de su corpus.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte.
+- Modelo de nicho con pocas descargas y likes: menor validacion comunitaria y posible falta de mantenimiento.
+- El repositorio GGUF ocupa 208,1 GB en total por incluir todas las cuantizaciones; conviene descargar solo el fichero necesario.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/securecoder-30b-pro-v2-merged-GGUF
 - Modelo base: https://huggingface.co/Taimwe/securecoder-30b-pro-v2-merged
-- Pagina de resumen del publicador para este modelo: https://hf.tst.eu/model#securecoder-30b-pro-v2-merged-GGUF
-- Perfil del publicador: https://huggingface.co/mradermacher/models
-- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/securecoder-30b-pro-v2-merged-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#securecoder-30b-pro-v2-merged-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del publicador: https://www.nethype.de/
+- Analisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

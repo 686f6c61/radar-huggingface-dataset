@@ -2,90 +2,95 @@
 
 ## Resumen
 
-LearnLanguage models es un repositorio de artefactos de inferencia publicado por Forris para su aplicación de aprendizaje de idiomas. No se trata de un modelo de lenguaje generativo al uso, sino de un contenedor de ficheros empaquetados que la app descarga y ejecuta localmente en el teléfono. Cada fichero está anclado a un commit concreto del repositorio, de modo que la aplicación garantiza reproducibilidad y control de versiones del binario que ejecuta en el dispositivo del usuario. El único artefacto documentado en la model card es `whisper.bin`, un modelo de reconocimiento automático del habla en serbio.
+LearnLanguage models es un repositorio de modelos cuantizados que la aplicación de aprendizaje de idiomas LearnLanguage descarga en el teléfono del usuario para ejecutar la inferencia en local. No se trata de un modelo único, sino de un paquete de tres artefactos con propósitos distintos: un corrector de respuestas, un sistema de reconocimiento de voz para serbio y un compañero conversacional. El autor es Forris y el repositorio está publicado en Hugging Face con licencia por fichero.
 
-Ese `whisper.bin` es una conversión a formato ggml (whisper.cpp) con cuantización q5_0 del modelo `openai/whisper-large-v3-turbo`, afinado mediante LoRA (con los pesos fusionados en el modelo final) para transcribir serbio en escritura latina, con mayúsculas y puntuación. La relevancia práctica está en el salto de calidad conseguido: el error de palabra (WER) baja del 39,8% al 9,4% en hablantes retenidos de Common Voice sr, y del 13,3% al 12,1% en el test sr_rs de FLEURS, medido con decodificación voraz en whisper.cpp.
+El componente con más peso técnico es `grader.gguf`, un ajuste fino mediante LoRA (fusionado) de Qwen3-1.7B, con 1.720.574.976 parámetros, cuantizado en Q4_K_M, que evalúa si la respuesta libre de un estudiante cumple el enunciado del ejercicio y devuelve un código de idioma junto con un 1/0 por ítem. El segundo es `whisper.bin`, un modelo whisper.cpp en formato ggml (q5_0) derivado de openai/whisper-large-v3-turbo y ajustado para serbio con LoRA fusionado, que transcribe en alfabeto latino con mayúsculas y puntuación. El tercero, `partner.gguf`, es una copia sin modificar de Gemma 4 E4B de Google en Q4_K_M.
 
-El repositorio tiene un tamaño de 0,6 GB, no registra descargas ni likes en el momento de la consulta y su licencia es "other" con nombre "per-file", es decir, cada fichero puede tener una licencia distinta. Para el fichero whisper.bin documentado, la licencia aplicable es MIT, heredada del modelo base.
+La relevancia del repositorio es doble: por un lado demuestra un patrón de despliegue móvil con modelos cuantizados y ficheros anclados a commits concretos; por otro, ofrece datos concretos de mejora en reconocimiento de voz en serbio, un idioma con poca cobertura, con una reducción del error de palabra del 39,8 % al 9,4 % en Common Voice sr. El tamaño total del repositorio es de 6,7 GB y acumula 372 descargas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Whisper (transformer encoder-decoder para reconocimiento de voz), variante large-v3-turbo, convertida a ggml para whisper.cpp |
-| Parametros totales | no disponible (el modelo base es whisper-large-v3-turbo; el autor no publica el recuento en la model card) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (ventana de audio de Whisper; el autor no especifica el valor en la model card) |
-| Tipos de cuantizacion | q5_0 (formato ggml, whisper.cpp) |
-| Idiomas soportados | serbio (sr), con transcripcion en escritura latina, mayusculas y puntuacion |
-| Licencia | "other" con nombre "per-file"; para whisper.bin, MIT (igual que el modelo base) |
-| Formato de pesos | ggml / binario whisper.cpp (fichero whisper.bin); el repositorio se etiqueta tambien como gguf |
+| Arquitectura | Transformer (Qwen3-1.7B para `grader.gguf`; Whisper large-v3-turbo para `whisper.bin`; Gemma 4 E4B para `partner.gguf`) |
+| Parametros totales | 1.720.574.976 (dato de safetensors; corresponde a `grader.gguf`) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (`grader.gguf`, `partner.gguf`); q5_0 ggml (`whisper.bin`) |
+| Idiomas soportados | sr (serbio); el corrector y el compañero conversacional no declaran idiomas adicionales en la model card |
+| Licencia | per-file: Apache 2.0 (`grader.gguf`), MIT (`whisper.bin`), Apache 2.0 (`partner.gguf`) |
+| Formato de pesos | GGUF (`grader.gguf`, `partner.gguf`); ggml/whisper.cpp (`whisper.bin`) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto documentado parte de `openai/whisper-large-v3-turbo`, un transformer encoder-decoder de reconocimiento automático del habla, y se ha afinado con LoRA sobre el modelo base, fusionando después los adaptadores en los pesos finales. El resultado se convierte a ggml con cuantización q5_0 para su ejecución con whisper.cpp en dispositivos móviles. La model card no detalla hiperparámetros del ajuste fino, número de pasos, rangos de LoRA ni estrategia de congelación de capas.
+El repositorio agrupa tres artefactos con arquitecturas distintas. `grader.gguf` parte de Qwen3-1.7B, un transformer decoder-only de 1.720.574.976 parámetros, ajustado con LoRA y posteriormente fusionado para la tarea de verificación de respuestas; el entrenamiento se realizó con datos generados por los propios scripts de la aplicación (plantillas escritas para ello), sin datos de terceros, y la salida es un código de idioma más un 1/0 por ítem evaluado. `whisper.bin` parte de openai/whisper-large-v3-turbo, un modelo encoder-decoder de reconocimiento de voz, ajustado con LoRA fusionado sobre FLEURS sr_rs (CC BY 4.0, Google) y Common Voice 27.0 sr (CC0, Mozilla), y exportado a ggml q5_0 para whisper.cpp. `partner.gguf` es Gemma 4 E4B sin modificaciones, cuantizado en Q4_K_M.
 
-Los datos de entrenamiento declarados son dos corpus públicos: FLEURS sr_rs (licencia CC BY 4.0, de Google) y Common Voice 27.0 sr (licencia CC0, de Mozilla). No se indica el volumen de horas, la proporción entre corpus ni si hubo aumentación de datos o limpieza adicional. La evaluación reportada usa decodificación voraz en whisper.cpp y separa hablantes retenidos en Common Voice, lo que aporta una medida de generalización razonable para el dominio de voz leída y espontánea de esos corpus.
+No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta de las plantillas del corrector ni si hubo etapas de RLHF o DPO. La innovación destacable es operativa: los ficheros están anclados por la aplicación a commits concretos del repositorio, lo que garantiza reproducibilidad del binario que se descarga en el dispositivo, y la licencia se gestiona por fichero en lugar de por repositorio.
 
 ## Capacidades
 
-- Reconocimiento automático del habla en serbio, con salida en escritura latina.
-- Generación de transcripciones con mayúsculas y puntuación, sin postprocesado externo indicado.
-- Ejecución local en teléfono mediante whisper.cpp, sin dependencia de servidores externos.
-- Distribución como binario versionado y anclado a commits, apto para actualizaciones controladas desde la app.
-- No se documentan capacidades de traducción, diarización de hablantes, marcas temporales por palabra, tool calling ni razonamiento multi-paso.
+- Verificación de respuestas: `grader.gguf` determina si una respuesta libre cumple lo que pide un ejercicio y emite un código de idioma junto con un 1/0 por ítem.
+- Reconocimiento de voz en serbio: `whisper.bin` transcribe audio a texto en alfabeto latino, con mayúsculas y puntuación.
+- Conversación: `partner.gguf` actúa como compañero conversacional sin ajuste adicional, con las capacidades del modelo base Gemma 4 E4B.
+- Ejecución en dispositivo: los tres artefactos están pensados para inferencia local en teléfono mediante whisper.cpp y runtimes compatibles con GGUF.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: el repositorio declara únicamente `sr`; no se documentan otros idiomas.
+- Capacidades especiales (modo thinking, visión, audio): solo el reconocimiento de voz de `whisper.bin`; no se documentan otras.
 
 ## Casos de uso
 
-- Subtitulado y transcripción en una app de aprendizaje de serbio: la app descarga `whisper.bin` y transcribe el audio del usuario en el dispositivo, comparando la pronunciación con el texto de referencia; el WER del 9,4% en hablantes retenidos de Common Voice sr lo hace viable para corrección de ejercicios orales.
-- Dictado de vocabulario y frases: el usuario pronuncia una palabra o frase y el modelo genera la transcripción con puntuación, que la app registra como intento de práctica sin enviar audio a la nube.
-- Evaluación de pronunciación en modo offline: al ejecutarse con whisper.cpp en el teléfono, funciona sin conectividad, útil en aulas o entornos con red limitada.
-- Transcripción de audio de material didáctico en serbio: el modelo convierte grabaciones de lecciones o diálogos en texto para generar ejercicios de comprensión y glosarios.
-- Búsqueda por voz dentro de la app: el usuario dicta una consulta en serbio y la transcripción alimenta el índice de contenidos locales.
-- Prototipado de funciones de voz en aplicaciones educativas de terceros: el fichero ggml puede integrarse en pipelines whisper.cpp de escritorio o móvil para experimentar con ASR en serbio sin reentrenar.
+- Corrección automática de ejercicios de idiomas: `grader.gguf` recibe el enunciado y la respuesta libre del estudiante y devuelve un 1/0 por ítem, lo que permite dar retroalimentación inmediata sin conexión y sin enviar el texto del usuario a un servidor.
+- Dictado y transcripción de voz en serbio: `whisper.bin` convierte audio del micrófono en texto con mayúsculas y puntuación, adecuado para ejercicios de pronunciación y de escritura guiada en la aplicación.
+- Práctica conversacional: `partner.gguf` mantiene diálogos de práctica con el estudiante en el dispositivo, con la ventaja de que el contenido de la conversación no sale del teléfono.
+- Evaluación de baterías de ejercicios: el formato de salida del corrector (un 1/0 por ítem) permite puntuar listas de respuestas en una sola pasada y agregar resultados en la interfaz de la app.
+- Aplicaciones de aprendizaje sin conectividad: el conjunto de modelos, con 6,7 GB de repositorio y cuantizaciones Q4_K_M y q5_0, está diseñado para descargarse una vez y ejecutarse en local, útil en entornos con red limitada.
+- Investigación sobre ajuste fino de ASR en idiomas de bajos recursos: `whisper.bin` sirve como referencia reproducible de un ajuste LoRA sobre whisper-large-v3-turbo para serbio, con metodología y datos citados (FLEURS y Common Voice).
+- Prototipado de asistentes de voz locales: la combinación de `whisper.bin` para entrada de audio y `partner.gguf` para generación permite construir un pipeline de voz a texto y respuesta íntegramente en el dispositivo.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Metrica | Modelo afinado | Modelo base | Condiciones |
-|---|---|---|---|---|
-| Common Voice sr, hablantes retenidos | WER | 9,4% | 39,8% | whisper.cpp, decodificacion voraz |
-| FLEURS sr_rs test | WER | 12,1% | 13,3% | whisper.cpp, decodificacion voraz |
+| Benchmark | Modelo | Resultado | Base |
+|---|---|---|---|
+| Common Voice sr, hablantes reservados (WER, whisper.cpp, greedy) | `whisper.bin` | 9,4 % | 39,8 % (whisper-large-v3-turbo) |
+| FLEURS sr_rs test (WER, whisper.cpp, greedy) | `whisper.bin` | 12,1 % | 13,3 % (whisper-large-v3-turbo) |
 
-No se han publicado otros resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks para `grader.gguf` ni para `partner.gguf` en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el artefacto esta pensado para ejecucion en CPU en telefonos mediante whisper.cpp, con cuantizacion q5_0.
-- GPU recomendadas: no aplica para el caso de uso declarado (movil); en escritorio, whisper.cpp puede ejecutarse en CPU y, con compilacion adecuada, en GPU consumer, aunque el autor no publica requisitos.
-- Compatibilidad con GPU consumer: no disponible; el formato ggml y la cuantizacion q5_0 estan orientados a CPU y a memoria reducida.
-- Opciones de despliegue: whisper.cpp (formato nativo del artefacto). No se documenta soporte para vLLM, TGI, Ollama ni llama.cpp, que no estan pensados para este tipo de modelo ASR.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- `grader.gguf`: 1.720.574.976 parámetros en Q4_K_M; la VRAM estimada ronda 1,2-1,5 GB, por lo que cabe en GPU de consumo con 4 GB o más y en teléfonos de gama media-alta.
+- `whisper.bin`: whisper-large-v3-turbo en q5_0 ggml; el tamaño exacto del fichero no está disponible, pero el repositorio completo ocupa 6,7 GB, por lo que se recomienda al menos 4-6 GB de memoria libre en el dispositivo.
+- `partner.gguf`: Gemma 4 E4B en Q4_K_M; el tamaño exacto no está disponible en la información proporcionada.
+- GPU recomendadas: no disponibles de forma específica; para escritorio, cualquier GPU con 8 GB o más permite ejecutar los tres artefactos, y para el corrector bastan 4 GB.
+- Opciones de despliegue: whisper.cpp para `whisper.bin`; runtimes compatibles con GGUF (llama.cpp, Ollama y similares) para `grader.gguf` y `partner.gguf`. El repositorio incluye el tag `endpoints_compatible`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| LearnLanguage models (whisper.bin, este repo) | no disponible (base large-v3-turbo) | no disponible | serbio | per-file; whisper.bin MIT | ggml q5_0 (whisper.cpp) | Afinado con LoRA para serbio; WER 9,4% en Common Voice sr |
-| openai/whisper-large-v3-turbo | no disponible en la informacion proporcionada | no disponible | multilingue | MIT | safetensors y conversiones | Modelo base sin ajuste para serbio; WER 39,8% en Common Voice sr segun el autor |
-| whisper-large-v3 | no disponible en la informacion proporcionada | no disponible | multilingue | MIT | safetensors y conversiones | No evaluado en la informacion proporcionada para serbio |
-
-No se dispone de datos de otros modelos ASR especificos para serbio en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Rendimiento ASR sr (WER) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `whisper.bin` (este repo) | whisper-large-v3-turbo ajustado | no disponible | 9,4 % CV sr / 12,1 % FLEURS sr_rs | MIT | Hugging Face, formato ggml |
+| openai/whisper-large-v3-turbo (base) | whisper-large-v3-turbo | no disponible | 39,8 % CV sr / 13,3 % FLEURS sr_rs | MIT | Hugging Face |
+| `grader.gguf` (este repo) | 1.720.574.976 | no disponible | no aplica | Apache 2.0 | Hugging Face, GGUF Q4_K_M |
+| Qwen/Qwen3-1.7B (base) | 1.720.574.976 | no disponible | no aplica | Apache 2.0 | Hugging Face |
+| `partner.gguf` (este repo) | Gemma 4 E4B | no disponible | no aplica | Apache 2.0 | Hugging Face, GGUF Q4_K_M |
 
 ## Limitaciones y advertencias
 
-- Solo se documenta un fichero (`whisper.bin`) y un idioma (serbio); el resto de ficheros del repositorio no estan descritos en la model card.
-- La licencia es "other" con nombre "per-file": es imprescindible revisar la licencia de cada fichero antes de reutilizarlo; para whisper.bin se declara MIT, pero el resto no esta documentado.
-- El repositorio no registra descargas ni likes, por lo que no hay evidencia de uso en produccion ni validacion externa.
-- Los WER reportados proceden de dos corpus concretos (Common Voice y FLEURS) con decodificacion voraz; el rendimiento en audio con ruido, acentos regionales no cubiertos o habla espontanea puede degradarse.
-- No se documentan sesgos demograficos ni de acento, ni evaluaciones por subgrupos.
-- Riesgo de alucinacion en pasajes de silencio o audio de baja calidad, comportamiento comun en modelos Whisper; el autor no reporta mitigaciones.
-- No se especifican requisitos de memoria, latencia ni limites de duracion de audio, lo que dificulta planificar el despliegue.
-- La fecha de creacion indicada en Hugging Face (2026-11-07) es posterior a la consulta, lo que conviene verificar antes de citar el repositorio.
+- La licencia es por fichero y el repositorio figura como `license: other` con `license_name: per-file`; es obligatorio revisar la licencia de cada artefacto antes de redistribuirlo o usarlo comercialmente.
+- `partner.gguf` es Gemma 4 E4B sin modificar: hereda los sesgos, el riesgo de alucinación y las limitaciones del modelo base de Google.
+- `grader.gguf` se entrenó únicamente con datos generados por plantillas de la propia aplicación; su comportamiento fuera de esos formatos de ejercicio no está documentado y puede degradarse.
+- El corrector emite un 1/0 por ítem y un código de idioma; no se documenta calibración de esa decisión ni métricas de precisión o recall.
+- `whisper.bin` está ajustado para serbio y transcribe en alfabeto latino; no se documenta su comportamiento en otros idiomas ni en variedades distintas a las de FLEURS sr_rs y Common Voice 27.0 sr.
+- Los resultados de WER publicados corresponden a decodificación greedy con whisper.cpp; otras configuraciones de decodificación pueden dar cifras distintas.
+- No se dispone de información sobre longitud de contexto, número de tokens de entrenamiento ni latencia, lo que limita la planificación de capacidad en producción.
+- El repositorio está pensado para descarga en dispositivo; el tamaño de 6,7 GB puede ser prohibitivo en planes de datos móviles o almacenamiento limitado.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/Forris/learnlanguage-models
-- Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
+- Modelo base del corrector: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo base de reconocimiento de voz: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Common Voice (Mozilla): https://commonvoice.mozilla.org
-- whisper.cpp: no se incluye enlace en la informacion proporcionada.

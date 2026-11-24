@@ -32,13 +32,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1728801536,
   "parameters_human": "1.73B",
-  "storage_bytes": 269205349468,
-  "storage_human": "269.2 GB",
+  "storage_bytes": 209373593996,
+  "storage_human": "209.4 GB",
   "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [

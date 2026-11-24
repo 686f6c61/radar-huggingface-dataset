@@ -2,100 +2,93 @@
 
 ## Resumen
 
-ThoxMicroprocessor-8M-Base-TinyStories es un checkpoint de validación de arquitectura publicado por Thox-ai (THOX.ai) dentro de su línea de investigación de modelos pequeños entrenados desde cero. Se trata de un decoder transformer de 8.093.520 parámetros totales (5.472.080 no de embedding) con una filosofía de diseño que el autor denomina "attention-dominant", pensada para cargas de trabajo locales en dispositivos: enrutamiento, extracción estructurada, control de dispositivos y procesamiento de lenguaje compacto en el propio dispositivo.
+ThoxMicroprocessor-8M-Base-TinyStories es un modelo de lenguaje decoder-only de 8.093.520 parámetros (5.472.080 no de embedding) desarrollado por THOX desde cero como parte de su línea de investigación de modelos pequeños. Se presenta como un checkpoint de validación de arquitectura, no como un modelo de producto: el objetivo es verificar el funcionamiento de la arquitectura `thox-microprocessor-v0.2`, una variante de decoder con dominancia de atención diseñada para routing local, extracción estructurada y control de dispositivos en hardware de borde.
 
-El modelo no es un producto final: es una build de validación arquitectónica entrenada exclusivamente sobre TinyStories, un corpus sintético de cuentos infantiles simples. Por tanto, sus capacidades lingüísticas están limitadas a la distribución de ese corpus y no dispone de ninguna habilidad de enrutamiento, tool calling ni control de dispositivos, pese a que la arquitectura esté orientada a esos usos futuros.
+La arquitectura emplea 21 capas con `d_model` de 320, 8 cabezas de atención y 2 cabezas KV (GQA), contexto de 1024 tokens, normalización RMS en QK y normalización tipo sándwich, además de un mixer blockwise Walsh-Hadamard. El entrenamiento se realizó exclusivamente sobre TinyStories, con 98,3 millones de tokens, lo que limita sus capacidades al dominio de historias infantiles sintéticas en inglés.
 
-Su relevancia actual es fundamentalmente investigadora: permite estudiar el comportamiento de una arquitectura con normalización QK RMS, normalización tipo sándwich y un mezclador Walsh-Hadamard por bloques, con un payload de pesos de 4,45 MB a INT4. Es un caso de estudio útil para quienes trabajan en modelos de borde, cuantización extrema y decodificación en hardware muy restringido.
+Su relevancia actual es doble: por un lado, sirve como referencia para investigar arquitecturas compactas con atención dominante y cuantización agresiva (payload INT4 de 4,45 MB); por otro, ilustra el ecosistema de hardware local-first que THOX está promocionando. No obstante, el propio autor advierte que este checkpoint no tiene capacidades de routing, tool calling ni control de dispositivos, y que su uso previsto es la investigación y validación arquitectónica.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Decoder transformer "attention-dominant" (thox-microprocessor-v0.2) |
+| Arquitectura | Decoder-only transformer con atención dominante, QK RMS norm, sandwich norm y mixer blockwise Walsh-Hadamard (thox-microprocessor-v0.2) |
 | Parámetros totales | 8.093.520 |
 | Parámetros activos | No aplica (no es MoE) |
-| Parámetros no de embedding | 5.472.080 |
 | Longitud de contexto | 1024 tokens |
-| Tipos de cuantización | INT4 (group size 64) y INT4 con embedding INT8, según evaluación del autor |
+| Tipos de cuantización | INT4 (group size 64) con payload de 4,45 MB; INT4 con embedding INT8 (5,76 MB) |
 | Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 (datos de entrenamiento TinyStories bajo CDLA-Sharing-1.0, con implicaciones share-alike en revisión) |
-| Formato de pesos | safetensors (model.safetensors, 32.400.144 B), más tokenizer y código de modelado propio |
-
-Otros datos arquitectónicos: d_model de 320, 21 capas, 8 cabezas de atención y 2 cabezas KV (GQA), QK RMS normalization activada, sandwich normalization activada y blockwise Walsh-Hadamard mixer. Entrenado con 98,3M tokens de TinyStories.
+| Licencia | Apache-2.0 (con reservas sobre la licencia CDLA-Sharing-1.0 de TinyStories, en revisión) |
+| Formato de pesos | Safetensors (`model.safetensors`, 32.400.144 B) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un decoder transformer de 21 capas con dimensión oculta de 320 y atención con 8 cabezas de query y 2 cabezas KV, lo que reduce el coste de caché KV frente a atención multi-cabeza completa. Incorpora dos decisiones de normalización destacables: QK RMS normalization, que estabiliza los productos query-key, y sandwich normalization, que normaliza antes y después de cada subcapa. Además incluye un mezclador Walsh-Hadamard por bloques, una transformación ortogonal de bajo coste computacional que actúa como mecanismo de mezcla de información entre tokens o canales.
+El modelo es un decoder-only transformer de 21 capas con `d_model` de 320 y 8 cabezas de atención con 2 cabezas KV (GQA), lo que reduce el coste de la caché KV. Incorpora QK RMS normalization, sandwich normalization (normalización antes y después de cada subcapa) y un mixer blockwise Walsh-Hadamard, una innovación que sustituye o complementa la mezcla de tokens con transformadas rápidas de Hadamard por bloques. La implementación de referencia en `transformers` recalcula el prefijo en cada paso de decodificación en lugar de mantener caché KV, priorizando la portabilidad entre versiones; para decodificación con caché se indica el paquete `thox_microprocessor`.
 
-El entrenamiento se realizó desde cero, sin modelo base externo, sobre 98,3M tokens del corpus TinyStories, un conjunto sintético de cuentos infantiles simples en inglés. No se documenta en la información disponible el uso de RLHF, DPO ni fases de alineación posteriores. La implementación de referencia incluida en el repositorio (con `trust_remote_code=True`) recalcula el prefijo en cada paso de decodificación en lugar de mantener una caché KV, priorizando la portabilidad entre versiones de `transformers`; para decodificación con caché se indica el paquete `thox_microprocessor`.
+El entrenamiento se realizó desde cero (sin modelo base externo) sobre el corpus TinyStories, con 98,3 millones de tokens. No se documenta el uso de RLHF, DPO ni otras fases de alineación. El resultado en validación es una pérdida de 1,6956 y una perplejidad de 5,4499 sobre 2.095.104 tokens objetivo del split de validación de TinyStories. La cuantización INT4 añade +0,0366 de pérdida en 4,45 MB, y la variante INT4 con embedding INT8 añade +0,0162 en 5,76 MB.
 
 ## Capacidades
 
-- Generación de texto en inglés dentro de la distribución de TinyStories: cuentos cortos y simples con vocabulario y estructuras sintácticas elementales.
-- Razonamiento y conocimiento factual muy limitados: el modelo no ha visto corpus generalista ni datos de instrucciones.
-- Sin soporte de tool calling ni function calling: el autor declara explícitamente que este checkpoint no tiene capacidad de enrutamiento ni de llamada a herramientas.
+- Generación de texto en inglés dentro del dominio de historias infantiles sintéticas (TinyStories).
+- No dispone de capacidades de razonamiento general, código, matemáticas o visión; el autor lo declara explícitamente fuera de dominio.
+- Sin soporte de tool calling ni function calling.
 - Sin soporte de agentes ni razonamiento multi-paso.
-- Multilingüe: no, únicamente inglés.
-- Sin modo thinking, visión ni audio.
-- Capacidad de servir como banco de pruebas para validar la arquitectura, el tokenizador y el pipeline de cuantización INT4 del autor.
+- Multilingüismo limitado al inglés.
+- Sin modo de pensamiento (thinking mode), audio ni otras modalidades.
+- Capacidad de ejecución en hardware de borde gracias a su tamaño reducido y a la cuantización INT4.
 
 ## Casos de uso
 
-- Validación de arquitectura en investigación: reproduce el checkpoint para verificar que la implementación de QK RMS normalization, sandwich normalization y el mezclador Walsh-Hadamard se comporta como describe el autor, comparando la pérdida en validación (1,6956) con la reportada.
-- Estudio de cuantización extrema: usar el modelo como caso de prueba para medir la degradación de pérdida al pasar a INT4 (+0,0366) y a INT4 con embedding INT8 (+0,0162), y extrapolar conclusiones a modelos mayores de la misma familia.
-- Benchmark de pipelines de decodificación en dispositivos: comparar la implementación de referencia sin caché KV frente a la decodificación con caché del paquete `thox_microprocessor` en términos de latencia y consumo, dado el reducido tamaño del modelo.
-- Generación de cuentos sintéticos de juguete: producir textos cortos y simples en inglés para pruebas de pipelines de generación, demostraciones educativas o datos sintéticos de baja complejidad, siempre asumiendo la distribución TinyStories.
-- Pruebas de integración de `transformers` con código remoto: ejercitar el flujo `trust_remote_code=True`, la carga de tokenizador propio y la serialización safetensors en entornos de CI, sin coste de GPU.
-- Docencia y divulgación: ilustrar el funcionamiento interno de un transformer decoder a escala mínima, inspeccionando pesos, normalizaciones y atención con 8M de parámetros.
-- Prototipado de despliegue en hardware de borde: medir el peso real de los pesos (4,45 MB a INT4) y el consumo de memoria en placas con recursos muy limitados, teniendo en cuenta que el payload no incluye código, allocator, activaciones ni caché KV.
+- Validación de arquitectura: investigadores pueden reproducir el checkpoint y comprobar el comportamiento del mixer Walsh-Hadamard y de la normalización sándwich en un modelo de 8M, comparando pérdida y perplejidad con arquitecturas convencionales del mismo tamaño.
+- Estudio de cuantización extrema: el payload INT4 de 4,45 MB permite medir el impacto de la cuantización en la perplejidad (+0,0366) y comparar con la variante INT8 en embedding (+0,0162), útil para diseñar pipelines de compresión para dispositivos.
+- Pruebas de integración en `transformers`: el modelo sirve para verificar el flujo `trust_remote_code=True` con código remoto y tokenizador propio en pipelines de CI, sin coste computacional relevante.
+- Benchmarking de latencia en hardware de borde: con 8M de parámetros y contexto de 1024, es adecuado para medir tiempos de carga y decodificación en placas embebidas o microcontroladores con aceleración, antes de pasar a modelos mayores de la misma familia.
+- Generación de cuentos sintéticos para aumento de datos: dentro de su dominio, puede producir historias simples en inglés para prototipos de juguetes educativos o demos de generación de texto en dispositivo.
+- Docencia y divulgación: por su tamaño y licencia permisiva, es un ejemplo manejable para explicar arquitecturas decoder-only, GQA y cuantización en cursos o talleres, siempre advirtiendo de su dominio limitado.
 
 ## Benchmarks y rendimiento
 
 | Métrica | Valor |
 |---|---|
-| Pérdida en validación (held-out) | 1,6956 |
+| Pérdida en validación (TinyStories, 2.095.104 tokens) | 1,6956 |
 | Perplejidad en validación | 5,4499 |
-| Tokens objetivo del split de validación | 2.095.104 |
-| Coste de cuantización INT4 | +0,0366 de pérdida (4,45 MB) |
-| Coste de cuantización INT4 + embedding INT8 | +0,0162 de pérdida (5,76 MB) |
-| Resultado THOX GATE49 | No publicado para este modelo |
+| Coste de cuantización INT4 (4,45 MB) | +0,0366 de pérdida |
+| Coste de cuantización INT4 + embedding INT8 (5,76 MB) | +0,0162 de pérdida |
+| Resultado GATE49 de THOX | No publicado para este modelo |
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en fp32 para los pesos (32,4 MB de safetensors) y en torno a 4,45 MB de payload de pesos a INT4; el consumo real de runtime debe añadir código, allocator, activaciones y caché KV.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre es suficiente; el modelo está pensado para CPU y hardware de borde más que para GPU de datacenter. A100, H100 o RTX 4090 no aportan ventaja práctica por el reducido tamaño.
-- Cabe en cualquier GPU de consumo, incluida una GTX 1050 o una iGPU moderna, y en placas tipo Raspberry Pi o microcontroladores con suficiente RAM, siempre que se mida el runtime completo.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` (implementación de referencia sin caché KV) y el paquete `thox_microprocessor` para decodificación con caché. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: inferior a 0,1 GB en FP32 (32,4 MB de pesos); aproximadamente 4,45 MB de payload en INT4, más overhead de código, allocator, activaciones y caché KV.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) e incluso CPU; el modelo está pensado para hardware de borde de THOX.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 1 GB de VRAM, y probablemente en dispositivos integrados.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (implementación de referencia sin caché KV); paquete `thox_microprocessor` para decodificación con caché. No se documenta soporte de vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada; dependen del hardware y de si se usa la implementación con o sin caché KV.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxMicroprocessor-8M-Base-TinyStories | 8,09M | 1024 | Inglés | Apache-2.0 | Checkpoint de validación arquitectónica, solo TinyStories |
-| TinyStories-1M (Microsoft, referencia) | ~1M | 512-1024 | Inglés | MIT (según variante) | Modelo de referencia del corpus TinyStories, orientado a generación de cuentos |
-| TinyStories-33M (Microsoft, referencia) | ~33M | 512-1024 | Inglés | MIT (según variante) | Variante mayor del mismo corpus, mayor coherencia narrativa |
-| SmolLM-135M | 135M | 2048 | Inglés | Apache-2.0 | Modelo pequeño generalista con datos web, apto para tareas más amplias |
+| ThoxMicroprocessor-8M-Base-TinyStories | 8,09M | 1024 | Apache-2.0 | Hugging Face | Checkpoint de validación, solo TinyStories |
+| Modelos TinyStories de referencia (p. ej. variantes de 1M-10M) | ~1M-10M | Variable | Variable | Hugging Face | Entrenados sobre el mismo corpus; comparación cualitativa no disponible en la información |
+| Modelos decoder pequeños de propósito general | 10M-100M | 512-2048 | Variable | Hugging Face | No disponibles datos concretos en la información proporcionada |
 
-La comparación con alternativas es aproximada: no se dispone de resultados de benchmarks comunes en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia. El modelo de Thox es el de menor tamaño de la tabla y el único entrenado desde cero con la arquitectura propietaria del autor.
+No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente con TinyStories: cualquier salida fuera de esa distribución (preguntas factuales, código, matemáticas, instrucciones) carece de sentido.
-- No dispone de capacidad de enrutamiento, tool calling ni control de dispositivos, pese a que la arquitectura esté orientada a esos usos en versiones futuras.
-- Riesgo alto de alucinación y de respuestas confiadas pero incorrectas, incluso dentro de la distribución de cuentos.
-- Solo inglés; no hay soporte multilingüe.
-- Contexto limitado a 1024 tokens.
-- La cuantización INT4 degrada la pérdida en +0,0366; debe evaluarse el impacto en la tarea concreta antes de usarla en producción.
-- La licencia del repositorio es Apache-2.0, pero los datos de entrenamiento (TinyStories) están bajo CDLA-Sharing-1.0 y el propio autor indica que las implicaciones share-alike están en revisión, lo que introduce incertidumbre sobre el uso comercial de los pesos derivados.
-- No apto para decisiones médicas, legales, financieras o de seguridad crítica sin revisión humana.
-- La implementación de referencia no mantiene caché KV, lo que penaliza la latencia en generaciones largas; para uso real debe emplearse el paquete `thox_microprocessor`.
+- Entrenado únicamente con historias infantiles sintéticas; las salidas fuera de ese dominio carecen de sentido.
+- Los modelos pequeños cometen errores factuales y pueden producir respuestas seguras pero incorrectas; hay que verificar cualquier salida relevante.
+- La cuantización intercambia precisión por tamaño; la variante INT4 degrada la pérdida en +0,0366.
+- Sin capacidades de routing, tool calling, control de dispositivos ni dominio THOX, pese a la descripción de la arquitectura.
+- Idiomas: solo inglés.
+- Licencia Apache-2.0 declarada, pero el autor indica que las implicaciones share-alike de CDLA-Sharing-1.0 (licencia de TinyStories) están en revisión; conviene confirmar antes de uso comercial.
+- Uso previsto limitado a investigación y validación de arquitectura; no apto para producción ni para decisiones médicas, legales, financieras o de seguridad sin revisión humana.
+- La implementación de referencia en `transformers` no mantiene caché KV, lo que penaliza la latencia en decodificación.
 
 ## Enlaces
 
-- [Hugging Face: Thox-ai/ThoxMicroprocessor-8M-Base-TinyStories](https://huggingface.co/Thox-ai/ThoxMicroprocessor-8M-Base-TinyStories)
-- [TinyStories (paper y corpus de referencia)](https://huggingface.co/datasets/roneneldan/TinyStories)
-- [THOX.ai](https://thox.ai)
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxMicroprocessor-8M-Base-TinyStories
+- Demo de dispositivos virtuales THOX: https://thox.ai/#demo-callout-home_lineup
+- Campaña de Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai?ref=hf-thoxmicroprocessor-8m-base-tinystories

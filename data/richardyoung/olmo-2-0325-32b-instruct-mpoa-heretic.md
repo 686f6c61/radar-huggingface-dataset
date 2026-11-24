@@ -2,104 +2,92 @@
 
 ## Resumen
 
-OLMo-2-0325-32B-Instruct-MPOA-heretic es una variante "decensored" del modelo allenai/OLMo-2-0325-32B-Instruct, publicada por el usuario richardyoung mediante la herramienta Heretic v2.0.0. El proceso aplicado es Magnitude-Preserving Orthogonal Ablation (MPOA), una tecnica de ablacion de direcciones en el espacio de activaciones que busca reducir la tasa de rechazos del modelo sin reentrenar los pesos. El resultado es un modelo de 32.234.279.936 parametros (32,2 B) con licencia Apache 2.0, publicado en formato safetensors y compatible con transformers y endpoints.
+OLMo-2-0325-32B-Instruct-MPOA-heretic es una variante "abliterated/decensored" del modelo OLMo 2 32B Instruct de AI2 (Allen Institute for AI), publicada por el usuario richardyoung en Hugging Face. El modelo base OLMo 2 es un transformer decoder-only de 32.234.279.936 parámetros (aproximadamente 32B), entrenado desde cero por AI2 con datos abiertos y pesos completamente reproducibles. Esta variante aplica una técnica de modificación de pesos (etiquetada como "heretic" y "MPOA") orientada a eliminar los mecanismos de rechazo y censura del modelo original, manteniendo el resto de capacidades intactas.
 
-El modelo base, OLMo 2 32B Instruct de AI2 (Allen Institute for AI), es un transformer denso entrenado sobre el dataset Dolma y post-entrenado con SFT sobre una variante de Tülu 3, DPO y RLVR. La variante heretic conserva esa base pero modifica el comportamiento de rechazo: segun la model card, los rechazos bajan de 98/100 en el modelo original a 36/100 en esta version, con una divergencia KL de 0,0372 respecto al original. Es relevante para quienes necesitan un modelo abierto, reproducible y con menos filtros de rechazo, manteniendo la trazabilidad del linaje OLMo.
+La relevancia de esta ficha radica en dos factores. Primero, OLMo 2 es uno de los pocos linajes de modelos de gran tamano completamente abiertos (datos, código de entrenamiento y pesos), lo que lo convierte en una referencia para investigación reproducible. Segundo, esta variante concreta explora la modificación post-entrenamiento de comportamientos de seguridad, un área de interés tanto técnico como de política de uso. El acceso está restringido en Hugging Face (gated) y la licencia declarada es Apache 2.0, aunque el modelo base de AI2 se distribuye bajo licencia Apache 2.0 con términos adicionales de uso responsable.
 
-La ficha se centra en los datos disponibles publicamente; el autor no documenta benchmarks de capacidades (MMLU, GSM8K, HumanEval) para esta variante, por lo que esos apartados se marcan como no disponibles.
+El modelo está orientado exclusivamente al inglés, con una ventana de contexto heredada del OLMo 2 base y formato de pesos safetensors para transformers. No se han publicado resultados de benchmarks específicos para esta variante en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia OLMo 2, decodificador autoregresivo) |
-| Parametros totales | 32.234.279.936 (32,2 B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en safetensors; no se listan GGUF ni otras variantes) |
-| Idiomas soportados | ingles (principalmente); el modelo base se describe como "primarily English" |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Arquitectura | Transformer decoder-only (OLMo 2) |
+| Parametros totales | 32.234.279.936 (~32B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada (heredada del OLMo 2 base) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos en safetensors; cuantizaciones GGUF/AWQ no listadas) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 (declarada en la model card); acceso restringido (gated) en Hugging Face |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del OLMo 2 32B: un transformer denso de tipo decodificador, con 32,2 B de parametros, entrenado por AI2 sobre el dataset Dolma (mezcla de datos publicos, sinteticos y creados por humanos). El post-entrenamiento del modelo base Instruct sigue tres fases: SFT sobre una variante especifica de OLMo del dataset Tülu 3, DPO sobre el dataset de preferencias olmo-2-0325-32b-preference-mix y RLVR final sobre RLVR-GSM-MATH-IF-Mixed-Constraints. La model card indica que OLMo 2 no fue entrenado con un system prompt especifico y que la plantilla de chat usa los tokens `<|user|>`, `<|assistant|>` y `<|endoftext|>`, sin token BOS inicial.
+El modelo se basa en la arquitectura OLMo 2 de AI2: un transformer decoder-only denso de aproximadamente 32B parametros. OLMo 2 introduce mejoras respecto a OLMo 1, como normalizacion RMSNorm reordenada, atencion con QK-Norm y un esquema de entrenamiento por etapas con datos abiertos (Dolma, entre otros). El modelo base OLMo-2-0325-32B-Instruct fue afinado por instrucciones sobre el modelo preentrenado, incorporando datos de instrucciones y preferencias, incluyendo el dataset allenai/RLVR-GSM-MATH-IF-Mixed-Constraints citado en la model card.
 
-Sobre esa base, la variante heretic aplica MPOA (Magnitude-Preserving Orthogonal Ablation) con Heretic v2.0.0. Los parametros documentados incluyen `direction_index` = 40,35, pesos maximos y minimos en `attn.o_proj` (1,19 / 0,46) y en `mlp.down_proj` (1,32 / 0,92), con sus posiciones y distancias asociadas. El autor declara que el proceso es reproducible y publica un directorio `reproduce` con instrucciones. No se documentan tokens adicionales de entrenamiento ni cambios en la composicion del dataset respecto al modelo base; la intervencion es de ablacion, no de reentrenamiento supervisado.
+Esta variante concreta aplica una modificación post-entrenamiento etiquetada como "MPOA" y "heretic". La model card no detalla la metodología exacta ni el número de tokens o pasos de la intervención. La técnica "abliteration" suele consistir en la identificación y supresión de direcciones de activación asociadas a comportamientos de rechazo, típicamente mediante edición de pesos o proyecciones ortogonales en las matrices de atención/MLP. No se dispone de información verificable sobre el dataset o procedimiento exacto empleado por el autor. El modelo se distribuye como fine-tune del OLMo-2-0325-32B-Instruct original.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles.
-- Razonamiento y matematicas: el modelo base fue post-entrenado con RLVR sobre GSM y MATH, segun la model card del original.
-- Instrucciones complejas: el dataset de RLVR incluye restricciones mixtas de instruction-following (IF).
-- Reduccion de rechazos: 36/100 rechazos frente a 98/100 del original, segun la tabla de rendimiento del autor.
-- Reproducibilidad: pipeline documentado en el directorio `reproduce` para regenerar la ablacion.
-- Compatibilidad con `transformers` y con endpoints compatibles (tag `endpoints_compatible`).
-- No se documentan capacidades de vision, audio, tool calling ni modo thinking en la informacion proporcionada.
+- Generacion de texto conversacional en ingles, con formato de chat instruido heredado del modelo base.
+- Razonamiento y matematicas: el modelo base fue afinado con datos RLVR de GSM y MATH, por lo que conserva capacidades aritmeticas y de razonamiento paso a paso.
+- Generacion de codigo y respuesta a instrucciones tecnicas (capacidad heredada del OLMo 2 Instruct).
+- Comportamiento "decensored": la intervencion busca reducir rechazos ante solicitudes que el modelo original declinaria; no implica necesariamente mayor calidad ni mayor veracidad.
+- Soporte de tool calling / function calling: no documentado explicitamente en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el modelo base OLMo 2 no se presenta como modelo agente nativo.
+- Capacidades multilingues: limitadas al ingles segun la model card (idioma declarado: en).
+- Capacidades especiales (vision, audio, thinking mode): no disponibles en esta variante.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y rechazos: el modelo permite estudiar como varia la tasa de rechazo (98/100 a 36/100) con una intervencion de ablacion y una divergencia KL medida de 0,0372, util para analizar el equilibrio entre utilidad y seguridad.
-- Reproduccion de experimentos de decensoring: al incluir el directorio `reproduce` y los parametros MPOA, se puede replicar el proceso sobre el mismo checkpoint o adaptarlo a otros modelos OLMo 2.
-- Generacion de texto creativo sin filtros excesivos: para tareas de escritura de ficcion o guiones donde los rechazos del modelo alineado interrumpen el flujo, con la advertencia de revisar el contenido generado.
-- Evaluacion comparativa de modelos abiertos: sirve como punto de comparacion frente al OLMo 2 Instruct original en benchmarks de instrucciones y matemáticas, manteniendo el mismo linaje y licencia Apache 2.0.
-- Fine-tuning posterior: al ser un modelo denso de 32 B con pesos safetensors y licencia permisiva, puede servir de base para ajustes supervisados en dominios concretos en ingles.
-- Despliegue en entornos de investigacion con `transformers`: carga directa mediante `AutoModelForCausalLM.from_pretrained`, adecuada para laboratorios que ya trabajan con la familia OLMo.
+- Investigacion sobre alineacion y seguridad: el modelo permite estudiar como la supresion de direcciones de rechazo afecta al comportamiento del modelo en dominios sensibles, comparando con el OLMo 2 Instruct original como control.
+- Analisis de robustez de filtros de seguridad: util para evaluar la eficacia de clasificadores de contenido y guardrails frente a modelos abliterated, en entornos de laboratorio aislados.
+- Generacion creativa sin restricciones editoriales: escritura de ficcion, guiones o narrativa con tematicas adultas o controvertidas, en contextos donde el operador asume la responsabilidad editorial.
+- Experimentacion con modelos abiertos de 32B: al ser un linaje completamente abierto, sirve para estudiar tecnicas de edicion de pesos sobre checkpoints reproducibles.
+- Fine-tuning posterior en dominios especificos: el checkpoint safetensors puede servir como punto de partida para ajustes supervisados en ingles, aunque la modificacion de seguridad puede no ser deseable en todos los dominios.
+- Evaluacion comparativa de tecnicas de "decensoring": banco de pruebas para medir la degradacion (o no) de capacidades como MMLU o GSM8K tras la intervencion, frente al modelo base.
 
 ## Benchmarks y rendimiento
 
-La unica tabla de rendimiento publicada por el autor compara rechazos y divergencia KL frente al modelo original:
-
-| Metrica | Este modelo | Modelo original (allenai/OLMo-2-0325-32B-Instruct) |
-|---|---|---|
-| Rechazos | 36/100 | 98/100 |
-| Divergencia KL | 0,0372 | 0 (por definicion) |
-
-No se han publicado resultados de benchmarks de capacidades (MMLU, GSM8K, HumanEval, IFEval, MATH) para esta variante heretic en la informacion disponible. La model card del modelo base incluye una tabla comparativa con GPT-3.5 Turbo, GPT-4o Mini, Mistral-Nemo-Instruct-2407 y otros, pero esa tabla corresponde al OLMo 2 Instruct original, no a esta ablacion, y los datos citados en la informacion proporcionada estan truncados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni comparativas con el modelo base. Para referencia, los benchmarks del modelo base OLMo-2-0325-32B-Instruct estan publicados por AI2 en su model card oficial, pero no se trasladan automaticamente a esta variante modificada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision completa (BF16/FP16): aproximadamente 64,5 GB solo de pesos, mas overhead de activaciones y cache KV; en la practica requiere multiples GPU o una GPU de 80 GB con cuantizacion parcial.
-- GPU recomendadas: H100 80 GB, A100 80 GB o configuraciones multi-GPU (por ejemplo, 2x A100 40 GB) para BF16.
-- GPU de consumo: no cabe en GPUs consumer de 24 GB (RTX 4090) en BF16; requeriria cuantizacion a 4 bits, no publicada en el repo, para acercarse a ese rango.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM.from_pretrained` (soporte de OLMo 2 en la rama main de transformers segun la model card); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 64 GB solo para pesos (32B x 2 bytes), mas overhead de KV cache; se recomienda 80 GB o mas (A100 80GB, H100 80GB).
+- Cuantizacion a 8 bits: ~32-36 GB de VRAM; viable en A100 40GB o 2x RTX 4090 (24GB cada una) con tensor parallelism.
+- Cuantizacion a 4 bits (si se generan pesos GGUF/AWQ, no incluidos en el repo): ~18-22 GB; podria caber en una RTX 4090 24GB o RTX 3090, con contexto limitado.
+- GPU recomendadas: A100 80GB, H100 80GB para BF16; A100 40GB o 2x RTX 4090 para 8 bits; RTX 4090/3090 para 4 bits.
+- Opciones de despliegue: transformers (formato nativo safetensors), vLLM y TGI (compatibles con arquitectura olmo2 en versiones recientes), llama.cpp/Ollama solo si se generan pesos GGUF (no incluidos).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| OLMo-2-0325-32B-Instruct-MPOA-heretic (este) | 32,2 B | no disponible | Apache 2.0 | Ablacion MPOA; 36/100 rechazos; KL 0,0372 |
-| allenai/OLMo-2-0325-32B-Instruct | 32,2 B | no disponible | Apache 2.0 | Modelo base alineado; 98/100 rechazos |
-| Mistral-Nemo-Instruct-2407 | no disponible en la informacion proporcionada | no disponible | no disponible | Aparece en la tabla del modelo base con media 50,9; datos truncados |
-| GPT-4o Mini 2024-07-18 (API cerrada) | no disponible | no disponible | propietaria | Media 65,7 en la tabla del modelo base; no es open weights |
+| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
+|---|---|---|---|---|---|
+| richardyoung/OLMo-2-0325-32B-Instruct-MPOA-heretic | ~32B | No disponible | Apache 2.0 (declarada) | Gated | Variante abliterated del OLMo 2 32B Instruct |
+| allenai/OLMo-2-0325-32B-Instruct | ~32B | No disponible en esta ficha | Apache 2.0 + terminos de uso responsable | Abierto | Modelo base original, con benchmarks publicados por AI2 |
+| Qwen2.5-32B-Instruct | ~32B | 128K (segun model card oficial) | Apache 2.0 | Abierto | Alternativa densa de 32B ampliamente usada, multilingue |
+| Gemma-2-27B-it | ~27B | 8K (segun model card oficial) | Gemma Terms of Use | Abierto con condiciones | Alternativa cercana en tamano, licencia no Apache |
 
-La comparacion con alternativas de la misma categoria (modelos abiertos de ~30 B) no esta disponible con datos completos en la informacion proporcionada.
+La comparativa se limita a datos publicos de las model cards oficiales; no se dispone de benchmarks de esta variante concreta que permitan una comparacion de rendimiento rigurosa.
 
 ## Limitaciones y advertencias
 
-- La ablacion reduce rechazos de forma deliberada; el modelo puede producir contenido problematico con mayor facilidad que el original, especialmente si se le induce.
-- El modelo base tiene entrenamiento de seguridad limitado y no incluye filtrado en bucle, segun la model card de OLMo 2.
-- Riesgo de alucinacion: no se documentan evaluaciones especificas de veracidad (TruthQA, PopQA) para esta variante.
-- Idiomas: soporte principalmente en ingles; el castellano no esta garantizado.
-- Longitud de contexto: no documentada en la informacion proporcionada; conviene verificar la configuracion del modelo base antes de usarlo en produccion.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del modelo ablacionado.
-- Reproducibilidad: el proceso MPOA esta documentado, pero los resultados pueden variar si se aplica sobre otros checkpoints.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion comunitaria.
+- La intervencion "heretic/MPOA" reduce los rechazos del modelo, lo que puede aumentar la probabilidad de generar contenido danino, sesgado o inexacto sin advertencia.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad para esta variante; la modificacion de pesos puede degradar capacidades de razonamiento y verificacion.
+- Idioma: solo ingles declarado; el rendimiento en castellano no esta garantizado ni evaluado.
+- Licencia: aunque se declara Apache 2.0, el modelo base OLMo 2 de AI2 incluye terminos de uso responsable; el uso comercial de esta variante modificada debe revisarse con cuidado y no esta exento de riesgos legales o reputacionales.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su distribucion automatizada.
+- Procedencia y reproducibilidad: la model card no documenta el metodo exacto, los hiperparametros ni los datos de la intervencion, lo que dificulta la replicacion.
+- No apto para produccion en dominios regulados (salud, legal, finanzas) sin evaluacion adicional y guardrails externos.
+- Sin benchmarks publicados: no hay evidencia de que conserve el rendimiento del modelo base en tareas estandar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-MPOA-heretic
+- Hugging Face: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-MPOA-heretic
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct
-- Modelo pre-DPO: https://huggingface.co/allenai/OLMo-2-0325-32B-DPO
-- Heretic: https://heretic-project.org
-- Paper OLMo 2: https://arxiv.org/abs/2501.00656
-- Paper Tülu 3: https://arxiv.org/abs/2411.15124
-- Pagina del proyecto OLMo: https://allenai.org/olmo
-- Repo de entrenamiento e inferencia: https://github.com/allenai/OLMo-core
-- Codigo de evaluacion: https://github.com/allenai/olmes
-- Codigo de fine-tuning: https://github.com/allenai/open-instruct
-- Demo: https://playground.allenai.org/
-- Dataset SFT: https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture
-- Dataset de preferencias: https://huggingface.co/datasets/allenai/olmo-2-0325-32b-preference-mix
-- Dataset RLVR: https://huggingface.co/datasets/allenai/RLVR-GSM-MATH-IF-Mixed-Constraints
+- Paper OLMo 2 (arxiv:2501.00656): https://arxiv.org/abs/2501.00656
+- Paper OLMo 1 (arxiv:2411.15124): https://arxiv.org/abs/2411.15124
+- Dataset citado: https://huggingface.co/datasets/allenai/RLVR-GSM-MATH-IF-Mixed-Constraints
+- Repositorio OLMo de AI2: https://github.com/allenai/OLMo
+- Blog de AI2 sobre OLMo 2: https://allenai.org/blog/olmo2

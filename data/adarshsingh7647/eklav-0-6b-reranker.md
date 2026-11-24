@@ -2,88 +2,98 @@
 
 ## Resumen
 
-Eklav-0.6B-Reranker es un modelo de reranking de pasajes desarrollado por AdarshSingh7647, construido sobre la base de Qwen/Qwen3-0.6B. El modelo introduce una metodologia de entrenamiento denominada Eklav, que consiste en que el estudiante observe una traza de razonamiento parcial del profesor, con la parte final de la respuesta eliminada, y aprenda a continuar el razonamiento y producir la respuesta por si mismo. Este enfoque difiere de la destilacion clasica de cadena de pensamiento (CoT) completa, ya que el razonamiento del modelo se condiciona a la traza parcial del profesor durante el entrenamiento, en lugar de reproducirla palabra por palabra.
+Eklav-0.6B-Reranker es un modelo de reordenación (reranking) de pasajes construido sobre Qwen3-0.6B, un transformer decoder-only de aproximadamente 596 millones de parámetros. Lo publica el usuario AdarshSingh7647 y su particularidad es el método de entrenamiento que da nombre al proyecto: Eklav, una variante de destilación en la que el razonamiento del modelo profesor se inyecta como pista en el prompt y la función de pérdida se calcula únicamente sobre la respuesta final. El repositorio incluye además una versión de referencia entrenada con SFT estándar (Std-SFT) para comparar ambos enfoques.
 
-El modelo esta disenado especificamente para la tarea de reranking de pasajes en pipelines de recuperacion de informacion, evaluado en los benchmarks BRIGHT y NevIR. Segun los datos publicados, consigue una mejora del 11% en BRIGHT (nDCG@10, media de 12 dominios) en comparacion con la destilacion CoT estandar con el mismo modelo base y datos de entrenamiento, ademas de reducir los FLOPs de entrenamiento en un 29%. Con 596 millones de parametros, es un modelo compacto orientado a despliegues eficientes en tareas de recuperacion.
+El modelo opera como reranker puntual (pointwise) al estilo de Rank1: genera un razonamiento explícito que termina en `</think> true` o `</think> false`, y la puntuación de relevancia se obtiene de la probabilidad del token `true` en ese último paso. Esto permite reutilizar infraestructura de generación de texto estándar (transformers, vLLM) sin necesidad de una cabeza de clasificación específica.
 
-## Especificaciones tecnicas
+Su relevancia práctica es doble: por un lado demuestra que un modelo de 0,6B puede competir con alternativas de 4B a 14B en benchmarks de retrieval de reasoning-intensive como BRIGHT; por otro, el enfoque Eklav es una receta de entrenamiento replicable y el autor publica el código en GitHub. La ficha se basa únicamente en la información disponible en el repositorio y la model card; no se han publicado detalles sobre licencia, idiomas ni composición del dataset de entrenamiento.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3-0.6B base) |
-| Parametros totales | 596.049.920 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (hereda la del modelo base Qwen3-0.6B) |
-| Tipos de cuantizacion | no disponible (checkpoint publicado en bf16) |
+| Arquitectura | Transformer decoder-only (Qwen3), fine-tune de Qwen/Qwen3-0.6B |
+| Parámetros totales | 596.049.920 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la model card; el ejemplo de uso configura `max_model_len=20000` en vLLM |
+| Tipos de cuantización | no disponible en la model card (pesos en safetensors, aptos para cuantización estándar de la librería) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (merged bf16 checkpoint) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura de Qwen/Qwen3-0.6B, un transformer causal de 0.6B parametros. La innovacion principal reside en el metodo de entrenamiento Eklav, una variante de destilacion de cadena de pensamiento condicionada por pistas (hint conditioned SFT). En lugar de entrenar al estudiante para imitar la traza de razonamiento completa del profesor, el modelo recibe una traza parcial (con la parte final que revela la respuesta eliminada) y debe continuar el razonamiento y generar la respuesta por su cuenta. Esto reduce los requisitos computacionales del entrenamiento en un 29% respecto a la destilacion CoT estandar, manteniendo o mejorando el rendimiento en tareas de reranking.
+El modelo parte de Qwen3-0.6B, un transformer decoder-only con atención causal estándar y plantilla de chat con modo thinking (`enable_thinking=True`). El fine-tune no modifica la arquitectura: se entrena como generador de texto con plantilla de chat, donde el sistema define al modelo como asistente de retrieval y el turno de usuario contiene la instrucción de tarea junto con la query y el pasaje. La salida esperada es un bloque de razonamiento cerrado por `</think>` seguido de la etiqueta `true` o `false`.
 
-El entrenamiento se realizo con el mismo modelo base y los mismos datos que una destilacion CoT de traza completa, cambiando unicamente el objetivo de entrenamiento. El checkpoint publicado es un modelo fusionado (merged) en formato bf16, listo para usar con la libreria transformers.
+La innovación está en el procedimiento de entrenamiento Eklav: durante el entrenamiento se proporciona el razonamiento del profesor como pista dentro del prompt, pero la pérdida se aplica solo a la respuesta final. Según la model card, esto se compara con una versión Std-SFT entrenada de forma convencional, y el resultado es una mejora consistente en BRIGHT nDCG@10 para todos los tamaños de profesor evaluados (Qwen3-4B, Qwen3-8B, GLM-Z1-9B y Qwen3-14B). No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Reranking de pasajes: el modelo esta especificamente entrenado para reordenar documentos o pasajes en funcion de su relevancia respecto a una consulta.
-- Razonamiento condicionado: capacidad de continuar un razonamiento parcial del profesor y generar la respuesta final, lo que mejora la calidad del reranking en dominios variados.
-- Evaluacion en BRIGHT: rinde en 12 dominios diferentes con una media de nDCG@10 de 14.4.
-- Evaluacion en NevIR: el modelo tambien ha sido evaluado en este benchmark de reranking, aunque no se proporcionan cifras desglosadas en la informacion disponible.
-- Generacion de texto: al estar basado en Qwen3-0.6B, conserva capacidades de generacion de texto del modelo base, aunque su uso principal es el reranking.
-- Integracion con transformers: compatible con la API estandar de Hugging Face para carga y uso.
+- Reordenación puntual de pasajes: asigna una probabilidad de relevancia a cada par query-pasaje mediante la probabilidad del token `true` tras el razonamiento.
+- Razonamiento explícito en modo thinking: genera una cadena de razonamiento antes de emitir la decisión, lo que permite auditar por qué un pasaje se considera relevante.
+- Puntuación calibrada: el score se normaliza como `P(true) / (P(true) + P(false))`, usando logprobs del token final.
+- Integración con vLLM: el ejemplo oficial usa `LLM`, `SamplingParams` con `logprobs=20` y cadenas de parada para `</think> true` y `</think> false`.
+- Compatibilidad con text-generation-inference y endpoints compatibles, según los tags del repositorio.
+- Conversacional: hereda la plantilla de chat de Qwen3 y admite mensajes de sistema y usuario.
+- No se documentan capacidades de tool calling, agentes multi-paso, visión, audio ni multilingüismo específico más allá de lo heredado del modelo base.
 
 ## Casos de uso
 
-- Mejora de pipelines RAG: el modelo puede integrarse como etapa de reranking tras un recuperador inicial (BM25, embeddings) para refinar los resultados y mejorar la precision de las respuestas generadas por un LLM.
-- Busqueda empresarial: reordenar resultados de busqueda interna en empresas con grandes volumenes de documentos, mejorando la relevancia de los primeros resultados mostrados al usuario.
-- Recuperacion de informacion legal: filtrar y reordenar sentencias, articulos o jurisprudencia relevante a partir de una consulta juridica, aprovechando su evaluacion en dominios variados.
-- Busqueda academica: reordenar articulos cientificos o papers relevantes a una consulta de investigacion, reduciendo el ruido de la recuperacion inicial.
-- Sistemas de preguntas y respuestas: mejorar la seleccion de pasajes candidatos que se pasan al generador de respuestas, reduciendo alucinaciones al alimentar el LLM con contextos mas relevantes.
-- Moderacion de contenido: reordenar contenido potencialmente relevante para revision humana o automatica, priorizando los elementos mas probables de ser problematicos.
+- Reordenación en pipelines RAG: tras una primera fase de recuperación densa o híbrida, el modelo reordena los candidatos calculando `P(true)` por pasaje; su tamaño de 0,6B permite ejecutarlo sobre decenas de candidatos con latencia baja en una sola GPU.
+- Búsqueda sobre documentación técnica y científica: el entrenamiento orientado a BRIGHT (retrieval con razonamiento intensivo) lo hace adecuado para consultas que requieren inferencia sobre el pasaje, no solo coincidencia léxica.
+- Filtrado de contexto antes de un LLM grande: usar el reranker para descartar pasajes irrelevantes reduce tokens de entrada y coste en el generador final.
+- Evaluación de calidad de datasets de retrieval: puntuar pares query-pasaje para detectar etiquetas ruidosas o negativos difíciles en conjuntos de entrenamiento.
+- Moderación y verificación de relevancia: decidir si un documento recuperado responde realmente a la consulta del usuario antes de mostrarlo, con razonamiento auditable.
+- Despliegue en entornos con recursos limitados: al caber en GPUs de consumo y soportar vLLM, puede servir como reranker en infraestructura pequeña sin depender de modelos de 7B o más.
+- Investigación sobre destilación: la pareja Eklav/Std-SFT publicada permite reproducir y comparar recetas de entrenamiento con profesores de distintos tamaños.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Metrica | Resultado |
-|---|---|---|
-| BRIGHT (media 12 dominios) | nDCG@10 | 14.4 |
-| BRIGHT (mejora vs. CoT SFT estandar) | nDCG@10 | +11% |
-| Entrenamiento (FLOPs vs. CoT SFT estandar) | reduccion | -29% |
+Resultados publicados en la model card (BRIGHT nDCG@10):
 
-No se han publicado resultados desglosados por dominio en la informacion disponible, aunque la model card menciona una figura con los resultados por dominio (eklav_0.6b_bright_domains.jpg). Tampoco se proporcionan resultados de NevIR en formato numerico.
+| Modelo | Std-SFT | Eklav |
+|---|---|---|
+| Qwen3-4B | 29.3 | 31.5 |
+| Qwen3-8B | 31.5 | 34.2 |
+| GLM-Z1-9B | 30.1 | 33.2 |
+| Qwen3-14B | 32.5 | 34.7 |
+
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el checkpoint en bf16 ocupa aproximadamente 1.2 GB (tamano del repositorio), por lo que cabe en cualquier GPU consumer con al menos 2-4 GB de VRAM.
-- GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1080 Ti, RTX 2060 o superior) puede ejecutar el modelo sin problemas. Tambien funciona en CPU con suficiente RAM.
-- Compatibilidad con consumer GPU: si, es un modelo compacto de 0.6B parametros, apto para GPU de gama media e incluso baja.
-- Opciones de despliegue: compatible con transformers (carga directa con AutoModelForCausalLM), y puede servirse con vLLM, TGI o llama.cpp si se convierte a GGUF.
-- Latencia y throughput: no se proporcionan datos de latencia en la informacion disponible, pero al ser un modelo de 0.6B, la inferencia es rapida incluso en hardware modesto.
+- VRAM estimada para inferencia en fp16/bf16: en torno a 1,2 GB de pesos más overhead de activaciones y caché KV; el ejemplo oficial reserva contexto para 20.000 tokens, lo que incrementa el consumo de caché.
+- Cabe en GPUs de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, así como en GPUs de datacenter (A100, H100, L40S).
+- Despliegue recomendado: vLLM (usado en el ejemplo oficial, con `max_model_len=20000` y `logprobs=20`); también transformers con `apply_chat_template(..., enable_thinking=True)`. No se documenta soporte explícito de llama.cpp u Ollama en la model card.
+- Throughput y latencia: no disponibles. La latencia por consulta depende del número de tokens de razonamiento generados (hasta `max_tokens=4096` en el ejemplo), por lo que conviene limitar la longitud del razonamiento en producción.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | BRIGHT (nDCG@10) | Licencia |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia |
 |---|---|---|---|---|
-| Eklav-0.6B-Reranker | 0.6B | no disponible | 14.4 | no disponible |
-| Qwen/Qwen3-Reranker-0.6B | 0.6B | no disponible | no disponible | no disponible |
-| jina-reranker-v3.5 | 0.6B | no disponible | no disponible | no disponible |
+| Eklav-0.6B-Reranker | 596 M | no disponible (ejemplo con 20k) | Reranker pointwise con thinking y destilación Eklav | no disponible |
+| Std-SFT-Passage-0.6B (mismo autor) | 596 M | no disponible | Reranker pointwise con SFT estándar | no disponible |
+| Rank1-7B (jhu-clsp) | 7B | no disponible | Reranker pointwise con razonamiento, referencia del formato | no disponible en esta ficha |
+| Qwen3-4B / 8B / 14B (fine-tunes de reranking del estudio) | 4B / 8B / 14B | no disponible | Rerankers con SFT o Eklav, usados como línea base en BRIGHT | no disponible |
 
-La comparativa se limita a modelos de tamano similar (0.6B) orientados a reranking. No se dispone de datos de rendimiento comparativos publicados para Qwen3-Reranker-0.6B ni jina-reranker-v3.5 en la informacion disponible. El modelo Eklav destaca por su metodo de entrenamiento eficiente, pero faltan datos para una comparacion cuantitativa completa.
+En BRIGHT nDCG@10, el enfoque Eklav sobre 0,6B alcanza 31,5, igualando o superando a los fine-tunes Std-SFT de 4B (29,3) y 8B (31,5), y quedando por debajo de los Eklav de mayor tamaño (34,2 en 8B, 34,7 en 14B).
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: la model card no indica la licencia del modelo, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar al autor antes de usarlo en produccion.
-- Idiomas no especificados: no se indica que idiomas soporta el modelo. Al estar basado en Qwen3-0.6B, probablemente herede las capacidades multilingues del modelo base, pero no esta confirmado.
-- Rendimiento limitado en reranking: con un nDCG@10 de 14.4 en BRIGHT, el rendimiento absoluto es modesto. Modelos mas grandes suelen superar estas cifras, aunque el objetivo de este modelo es la eficiencia.
-- Sin datos de NevIR: la model card menciona NevIR como benchmark de evaluacion, pero no proporciona resultados numericos, lo que impide evaluar su rendimiento en ese conjunto.
-- Riesgo de alucinacion: al ser un modelo generativo, puede producir texto inconsistente si se usa fuera de su tarea principal de reranking.
-- Sin garantias de soporte: al ser un proyecto de un unico autor con solo 9 descargas, no hay garantia de mantenimiento, actualizaciones o soporte para la comunidad.
+- No se especifica licencia en el repositorio: no hay garantía de uso comercial hasta que el autor la declare explícitamente.
+- No se documentan idiomas soportados; el comportamiento fuera del inglés es incierto.
+- El modelo es un reranker puntual, no un generador de respuestas: no debe usarse para producir contenido factual.
+- El razonamiento generado puede ser largo (hasta 4096 tokens en el ejemplo), lo que encarece la inferencia y exige ajustar `max_tokens` y cadenas de parada.
+- La puntuación depende de los logprobs del token `true`/`false`; cambios en la tokenización o en la plantilla de chat pueden desviar el cálculo.
+- Riesgo de alucinación en el razonamiento intermedio: la decisión final puede ser correcta con una justificación incorrecta, o viceversa.
+- El repositorio tiene pocas descargas (340) y ningún like en el momento de la consulta; no hay evidencia de uso en producción a gran escala.
+- No se publican detalles del dataset de entrenamiento, por lo que no puede evaluarse el sesgo de dominio ni la cobertura temática.
+- El nombre del repositorio (`Eklav-0.6B-Reranker`) difiere del título de la model card (`Eklav-Passage-0.6B`); conviene verificar el identificador correcto al integrarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-0.6B-Reranker
-- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Qwen3-Reranker-0.6B (modelo similar): https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
-- Articulo sobre jina-reranker-v3.5 (modelo similar): https://www.linkedin.com/posts/elastic-co_a-06b-reranker-that-outscores-models-7x-activity-7487601505924104192-0GnV
-- Guia sobre modelos de reranking: https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/
+- Versión Std-SFT: https://huggingface.co/AdarshSingh7647/Std-SFT-Passage-0.6B
+- Código del proyecto Eklavya: https://github.com/AdarshSingh7647/Eklavya
+- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Referencia del formato Rank1: https://huggingface.co/jhu-clsp/rank1-7b

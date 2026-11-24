@@ -57,5 +57,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=fr-FR&rs=US",
+      "snippet": "Access your email and stay connected with Outlook, an efficient platform for managing communications and schedules."
+    }
+  ]
 }

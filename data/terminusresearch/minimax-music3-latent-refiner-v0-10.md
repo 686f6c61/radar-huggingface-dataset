@@ -2,97 +2,105 @@
 
 ## Resumen
 
-MiniMax Music 3 Latent Refiner v0.10 es un modelo de refinamiento de audio desarrollado por terminusresearch que opera en el espacio latente DAV continuo de MiniMax Music 3. Su función es tomar música dañada o degradada y reconstruir una versión más limpia, preservando la interpretación, el tempo, las voces y el arreglo originales. No es un modelo de texto a música ni un codificador RVQ, sino un refiner de latentes que se acopla al pipeline modular de MiniMax Music 3.
+MiniMax Music 3 Latent Refiner v0.10 es un modelo de restauración de audio desarrollado por terminusresearch que opera directamente en el espacio latente continuo DAV de MiniMax Music 3. No es un modelo de texto a música ni un codificador RVQ: su función es tomar audio musical dañado y reconstruir una versión más limpia preservando la interpretación, el timing, las voces y el arreglo original. Con 137.253.888 parámetros y un peso de repositorio de 0,5 GB, se distribuye como un refiner ligero que se acopla al pipeline de MiniMax Music 3.
 
-El modelo tiene 137,25 millones de parámetros y se distribuye en formato safetensors (0,5 GB) bajo la licencia comunitaria minimax-music3-community-license. Su relevancia radica en que aborda la restauración de audio en el dominio latente de un modelo generativo de música, una aproximación poco común que permite corregir artefactos sin necesidad de re-sintetizar desde texto. El checkpoint seleccionado (v0.10) demostró una mejora sustancial frente a pasar los latentes DAV dañados directamente por el decodificador, tanto en métricas objetivas como en calidad audible.
+El modelo resulta relevante porque aborda un problema concreto de producción: la restauración de pistas musicales degradadas sin recurrir a regeneración generativa que altere la interpretación. Al trabajar en el espacio latente de MiniMax Music 3, aprovecha su vocoder y su decodificador DAV, lo que permite integrarlo tanto en scripts Python con Diffusers como en ComfyUI mediante nodos personalizados.
+
+La versión v0.10 corresponde a un checkpoint híbrido de 1.000 pasos dentro de un linaje de warm-start de 2.000 pasos totales, entrenado sobre 2.262 pistas con 32 pistas de holdout y ventanas de 30 segundos. El autor reporta que el checkpoint seleccionado restaura una pista de holdout no vista sustancialmente mejor que el paso directo de los latentes DAV dañados por el decodificador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer bidireccional con tres vias de entrada (MERT, CLAP, DAV latents) |
+| Arquitectura | Transformer bidireccional sobre espacio latente DAV, con triple entrada (MERT, CLAP y latentes DAV) y puente SR3 |
 | Parametros totales | 137.253.888 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (ventana de entrenamiento de 30 segundos de audio) |
-| Tipos de cuantizacion | FP32 (precision verificada de lanzamiento) |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | ventanas de 30 segundos (base de entrenamiento); modo de secuencia densa completo disponible |
+| Tipos de cuantizacion | FP32 y BF16 verificados en CUDA; otras cuantizaciones no disponibles |
+| Idiomas soportados | no disponible (modelo de audio, no de texto) |
 | Licencia | minimax-music3-community-license |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El refiner recibe el audio dañado a traves de tres rutas simultaneas: los estados ocultos de MERT proporcionan caracteristicas musicales alineadas por frame, CLAP aporta una caracteristica agrupada del audio fuente, y los latentes DAV entran tanto como flujo por frame estilo SR3 como tokens de referencia en contexto. La secuencia del transformer se compone de tokens de referencia DAV dañados seguidos de tokens objetivo del puente, compartiendo posiciones de frame. La secuencia es bidireccional y la cabeza de salida solo lee la mitad objetivo.
+El refiner recibe el audio dañado por tres vías simultáneas: estados ocultos de MERT como características musicales alineadas por frame, una característica pooled de CLAP del audio fuente, y los latentes DAV que entran tanto como flujo por frame estilo SR3 como en forma de tokens de referencia en contexto. La secuencia del transformer se organiza como `[tokens de referencia DAV dañados][tokens objetivo del puente]`, compartiendo posiciones de frame entre ambas mitades, con atención bidireccional y una cabeza de salida que lee únicamente la mitad objetivo.
 
-El entrenamiento por puente (bridge) interpola entre latentes DAV limpios y dañados: x(t) = (1-t) * clean + t * damaged, con velocidad objetivo damaged - clean. La inferencia comienza en el punto dañado e integra desde t=1 hasta t=0 usando un sampler Euler determinista de 32 pasos. El modelo se entreno con 2.262 pistas de entrenamiento y 32 de validacion, con ventanas de 30 segundos. El checkpoint final es un hibrido de 1.000 pasos sobre una linea de 2.000 pasos totales con warm-start. Las metricas de validacion fueron 0,9479 de coseno diagonal y 0,7195 de coseno residual, donde la segunda distingue refinamiento real de simple paso a traves.
+El entrenamiento del puente interpola entre latentes DAV limpios y dañados mediante `x(t) = (1 - t) * clean + t * damaged`, con un sampler determinista de 32 pasos tipo Euler bridge. El checkpoint v0.10 se seleccionó tras 1.000 pasos híbridos dentro de un linaje de 2.000 pasos, sobre 2.262 pistas de entrenamiento y 32 de holdout, con ventanas de 30 segundos. El autor reporta dos métricas de validación: cosine diagonal de 0,9479 (similitud del latente generado con el objetivo limpio correspondiente) y cosine residual de 0,7195 (que aísla la dirección de la corrección respecto a la corrección verdadera). El checkpoint de 2.000 pasos alcanzó 0,9405 y 0,7105 respectivamente, por lo que se prefirió el de 1.000.
 
 ## Capacidades
 
-- Restauracion de audio musical dañado: reconstruye versiones limpias preservando interpretacion, tempo, voces y arreglo.
-- Operacion en espacio latente DAV continuo de MiniMax Music 3, no requiere re-sintesis desde texto.
-- Refinamiento por ventanas de 30 segundos con solapamiento latente de 2 segundos (configuracion por defecto) o secuencia densa unica con `window_seconds=None`.
-- Integracion con Diffusers ModularPipeline mediante el metodo adjunto `refine_audio`.
-- Soporte de ComfyUI mediante nodos personalizados: `Load MiniMax Music3 Latent Refiner`, `Load MiniMax Music3 Audio VAE Encoder` y `MiniMax Music3 Latent Refine`.
-- Inferencia rapida: 11,25x tiempo real para 30 segundos de audio solo con el refiner en una NVIDIA L40S.
-- Bajo consumo de VRAM: 0,92 GiB para 30 segundos, 2,06 GiB para 120 segundos en FP32.
+- Restauración de audio musical dañado preservando interpretación, timing, voces y arreglo.
+- Operación en el espacio latente continuo DAV de MiniMax Music 3, no en dominio de forma de onda.
+- Inferencia por ventanas solapadas de 30 segundos con 2 segundos de solapamiento latente, o en modo de secuencia densa única.
+- Integración con el pipeline modular de Diffusers de MiniMax Music 3 mediante el método `refine_audio`.
+- Nodos personalizados para ComfyUI: `Load MiniMax Music3 Latent Refiner`, `Load MiniMax Music3 Audio VAE Encoder` y `MiniMax Music3 Latent Refine`.
+- Entrada opcional de codificador VAE de audio y de decodificador DAV estándar de ComfyUI.
+- No soporta texto a música ni codificación RVQ; es exclusivamente un refiner de audio.
 
 ## Casos de uso
 
-- Restauracion de grabaciones antiguas o degradadas: el modelo puede limpiar cintas magneticas, vinilos digitalizados o masters con artefactos, manteniendo la interpretacion original sin necesidad de re-grabar.
-- Limpieza de demos y maquetas en produccion musical: estudios que reciben archivos con compresion excesiva, clipping o ruido pueden refinar el audio antes de mezcla y mastering.
-- Preprocesamiento de datasets de entrenamiento: los latentes DAV dañados pueden corregirse antes de usarse para entrenar otros modelos de musica, mejorando la calidad de los datos.
-- Restauracion de audio en pipelines de generacion musical: si un modelo de texto a musica produce artefactos en el decodificador, este refiner puede aplicarse como post-proceso para limpiar el resultado.
-- Flujo de trabajo en ComfyUI para artistas: los nodos personalizados permiten integrar la restauracion en grafos de generacion y edicion de audio sin escribir codigo.
-- Archivado y preservacion digital: instituciones que digitalizan colecciones musicales pueden usar el refiner para reducir ruido y distorsion en copias de seguridad.
+- Restauración de grabaciones musicales degradadas: el modelo recibe la pista dañada y devuelve una versión más limpia manteniendo la interpretación original, adecuado cuando no se quiere regenerar la música desde cero.
+- Limpieza de material de archivo o demos antiguas: al operar sobre latentes DAV y preservar el timing, permite recuperar pistas históricas sin alterar su estructura rítmica.
+- Postproducción en estudios pequeños: la velocidad de 11,25x tiempo real en ventanas de 30 segundos con 0,92 GiB de VRAM del refiner lo hace viable en una sola GPU de gama profesional.
+- Integración en pipelines de ComfyUI: los nodos incluidos permiten encadenar el refiner con el VAE de audio y el decodificador DAV estándar para flujos de restauración por lotes.
+- Preprocesado antes de análisis musical: al mejorar la relación señal-ruido en el espacio latente, sirve como paso previo a tareas de transcripción o separación de fuentes.
+- Procesado por lotes de catálogos musicales: el modo de ventanas acota el uso de VRAM y permite procesar pistas largas de forma predecible en una L40S.
+- Investigación en modelos de audio generativos: su arquitectura de puente SR3 con triple condicionamiento (MERT, CLAP, DAV) es un caso de estudio para restauración en espacio latente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks comparativos con otros modelos en la informacion disponible. El autor reporta metricas internas de validacion:
+Métricas de validación reportadas por el autor sobre 32 pistas de holdout:
 
-| Metrica | Valor |
-|---|---|
-| Coseno diagonal (holdout) | 0,9479 |
-| Coseno residual (holdout) | 0,7195 |
+| Metrica | v0.10 (1.000 pasos) | Checkpoint 2.000 pasos |
+|---|---:|---:|
+| Cosine diagonal | 0,9479 | 0,9405 |
+| Cosine residual | 0,7195 | 0,7105 |
 
-El coseno diagonal mide la similitud de los latentes generados con el objetivo limpio correspondiente. El coseno residual elimina primero el latente de entrada dañado y mide si la correccion del modelo apunta hacia la correccion limpia verdadera, distinguiendo refinamiento de paso a traves.
-
-Rendimiento medido en una NVIDIA L40S con pesos FP32 y 32 pasos de puente:
+Rendimiento en una NVIDIA L40S con pesos FP32 y 32 pasos de puente:
 
 | Audio | Solo refiner | Velocidad | VRAM pico del refiner |
-|---|---:|---:|---:|
+|---:|---:|---:|---:|
 | 30 segundos | 2,67 s | 11,25x tiempo real | 0,92 GiB |
 | 60 segundos | 8,02 s | 7,48x tiempo real | 1,30 GiB |
 | 120 segundos | 27,68 s | 4,33x tiempo real | 2,06 GiB |
 
-La ruta completa de 30 segundos (MERT, CLAP, codificacion DAV, muestreo del puente y decodificacion DAV) tardo 4,26 segundos a 7,04x tiempo real con 7,15 GiB de VRAM pico.
+La ruta completa de 30 segundos, incluyendo MERT, CLAP, codificación DAV, muestreo del puente y decodificación DAV, tarda 4,26 s a 7,04x tiempo real con 7,15 GiB de VRAM pico. No se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K, que no aplican a este tipo de modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 0,92 GiB para 30 segundos de audio, 1,30 GiB para 60 segundos y 2,06 GiB para 120 segundos solo con el refiner en FP32. La ruta completa con codificador y decodificador DAV alcanza 7,15 GiB para 30 segundos.
-- GPU recomendadas: NVIDIA L40S (usada en las mediciones), GPUs con al menos 8 GiB de VRAM para la ruta completa. Cualquier GPU consumer moderna con 8-12 GiB deberia ser suficiente.
-- Si cabe en consumer GPU: si, en GPUs como RTX 3060, RTX 4070 o superiores, especialmente con la configuracion de ventanas de 30 segundos.
-- Opciones de despliegue: Python API con `MiniMaxMusic3RefinerPipeline`, integracion con Diffusers ModularPipeline, nodos ComfyUI. No se mencionan vLLM, llama.cpp ni Ollama (no aplica, es audio).
-- Latencia y throughput: 11,25x tiempo real para 30 segundos, 7,48x para 60 segundos y 4,33x para 120 segundos en L40S. La ruta completa de 30 segundos opera a 7,04x tiempo real.
-- Nota: el computo es cuadratico en la longitud de la secuencia, por lo que el lanzamiento usa ventanas solapadas por defecto. PyTorch SDPA con backend memory-efficient permite secuencias densas largas en GPUs compatibles.
+- VRAM del refiner aislado: 0,92 GiB para 30 s, 1,30 GiB para 60 s y 2,06 GiB para 120 s en ventanas solapadas.
+- VRAM de la ruta completa (MERT, CLAP, DAV encode, puente y DAV decode): 7,15 GiB pico para 30 segundos.
+- GPU recomendada por el autor: NVIDIA L40S para las mediciones publicadas; CUDA es recomendado y FP32 y BF16 están verificados.
+- El modo de secuencia densa procesa la entrada completa y puede consumir bastante más VRAM que el modo por ventanas.
+- Cabe en GPUs de consumo con al menos 8 GiB de VRAM para la ruta completa en ventanas; el refiner aislado cabe en GPUs de 2 GiB o más.
+- Opciones de despliegue: Diffusers main (instalación desde Git), script CLI `minimax-music3-refine`, pipeline `MiniMaxMusic3RefinerPipeline` en Python y nodos personalizados para ComfyUI.
+- Throughput medido: 11,25x tiempo real para 30 s, 7,48x para 60 s y 4,33x para 120 s solo con el refiner; 7,04x para la ruta completa de 30 s.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos directamente comparables en la misma categoria (refinamiento de latentes DAV de MiniMax Music 3). Alternativas genericas de restauracion de audio como Demucs o DeepFilterNet abordan problemas similares pero con arquitecturas y objetivos distintos, y no operan en el espacio latente de un modelo generativo de musica. No se puede establecer una comparativa rigurosa con los datos disponibles.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables de restauración musical en espacio latente en la información proporcionada. Las alternativas conceptuales serían otros refiners o restauradores de audio acoplados a modelos generativos de música, pero no se han facilitado métricas que permitan una comparación rigurosa.
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| MiniMax Music 3 Latent Refiner v0.10 | 137.253.888 | ventanas de 30 s | minimax-music3-community-license | Hugging Face, ComfyUI, Diffusers |
+| MiniMaxAI/MiniMax-Music3 (modelo base) | no disponible | no disponible | minimax-music3-community-license | Hugging Face |
+| Alternativas de restauración de audio | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- No es un modelo de texto a musica ni un codificador RVQ; solo refina latentes DAV existentes.
-- La licencia minimax-music3-community-license puede imponer restricciones de uso comercial; se debe revisar el texto completo en el enlace proporcionado.
-- El modelo se entreno con ventanas de 30 segundos; la inferencia con secuencias densas mas largas puede degradar la calidad, aunque el lanzamiento permite `window_seconds=None`.
-- El computo es cuadratico en la longitud de la secuencia, lo que limita el refinamiento de pistas muy largas en una sola pasada sin ventanas.
-- La precision verificada es FP32; no se han publicado resultados con cuantizacion de menor precision.
-- No se han documentado sesgos especificos, pero el modelo hereda las caracteristicas de los datos de entrenamiento (2.262 pistas) y de los modelos base MERT, CLAP y MiniMax Music 3.
-- Riesgo de alucinacion: como modelo generativo en espacio latente, puede introducir artefactos o alteraciones no deseadas en entradas muy degradadas o fuera de distribucion.
-- No se proporcionan datos sobre rendimiento en otros idiomas o estilos musicales fuera de los presentes en el dataset de entrenamiento.
+- No es un modelo de texto a música ni un codificador RVQ; usarlo fuera de su función de refiner no es válido.
+- La licencia es `minimax-music3-community-license`, con términos propios que deben revisarse antes de uso comercial; no es una licencia permisiva estándar.
+- El checkpoint fue entrenado con ventanas de 30 segundos, por lo que el modo de secuencia densa puede degradar la calidad respecto al modo por ventanas.
+- El modo de secuencia densa tiene coste computacional cuadrático y puede consumir mucha más VRAM.
+- Existe riesgo de que el modelo introduzca artefactos o altere detalles de la interpretación en pasajes muy degradados; la métrica residual de 0,7195 indica que la corrección no es perfecta.
+- No se dispone de información sobre sesgos, idiomas o composición demográfica del dataset de entrenamiento.
+- La integración con Diffusers requiere la rama main del repositorio, no una versión estable publicada, lo que implica riesgo de cambios de API.
+- El modelo depende del ecosistema de MiniMax Music 3 (vocoder, DAV, MERT, CLAP), lo que limita su uso fuera de ese pipeline.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/terminusresearch/minimax-music3-latent-refiner-v0.10
-- Modelo base MiniMax Music 3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Hugging Face: https://huggingface.co/terminusresearch/minimax-music3-latent-refiner-v0.10
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
-- Codificador DAV de SimpleTuner: https://huggingface.co/SimpleTuner/MiniMax-Music-3-Encoder
-- Repositorio de Diffusers: https://github.com/huggingface/diffusers
+- Codificador/decodificador DAV referenciado: https://huggingface.co/SimpleTuner/MiniMax-Music-3-Encoder
+- Diffusers (rama main): https://github.com/huggingface/diffusers

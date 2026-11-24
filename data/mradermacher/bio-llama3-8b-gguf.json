@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/bio-llama3-8b-GGUF",
+  "slug": "mradermacher-bio-llama3-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/bio-llama3-8b-GGUF",
+  "created_at": "2025-03-11T00:56:53.000Z",
+  "updated_at": "2026-11-24T04:09:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:bigstupidhats/bio-llama3-8b",
+    "base_model:quantized:bigstupidhats/bio-llama3-8b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820226560,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "bigstupidhats/bio-llama3-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

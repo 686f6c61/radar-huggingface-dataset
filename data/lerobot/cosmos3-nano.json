@@ -44,5 +44,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "LeRobot - Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeRobot - SO-101 · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/so101",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeRobot: Open-Source Robot Learning from Zero to Deployment",
+      "url": "https://www.roboticscenter.ai/learn/paths/lerobot",
+      "snippet": "A structured, sequential path through HuggingFace's LeRobot framework. Install, record demonstrations, train an ACT policy, and …"
+    },
+    {
+      "title": "LeRobot Tutorials - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLo2EIpI_JMQu5zrDHe4NchRyumF2ynaUN",
+      "snippet": "Tutorials for LeRobot: End-to-end Learning for Real-World Robotics in Pytorch LeRobot is developed by HuggingFace. Its goal is …"
+    },
+    {
+      "title": "LeRobot Visualizer - LeRobot Studio",
+      "url": "https://mylerobot.com/lerobot/",
+      "snippet": "LeRobot Visualizer by LeRobot Studio helps you inspect and analyze LeRobot datasets in your browser with synced video, charts, …"
+    }
+  ]
 }

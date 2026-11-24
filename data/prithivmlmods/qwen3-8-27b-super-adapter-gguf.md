@@ -2,103 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-super-adapter-GGUF es una cuantización en formato GGUF del checkpoint fusionado `harness-hub/Qwen3.8-27B-super-adapter`, publicado por el usuario prithivMLmods en Hugging Face. El checkpoint de origen se construye fusionando tres adaptadores LoRA especializados (entrenados con AsyncGRPO para los agentes pi, Hermes Agent y OpenCode en entornos Harbor/OpenEnv) sobre el modelo base Qwen/Qwen3.8-27B, sin entrenamiento adicional, mediante concatenación de rangos (rank 96 = 3 × 32) en las proyecciones q, k, v, o, gate, up y down. El resultado es un modelo de 27.320.697.856 parámetros orientado a tareas de ingeniería de software y uso de terminal.
+Qwen3.8-27B-super-adapter-GGUF es una cuantizacion en formato GGUF del checkpoint fusionado `harness-hub/Qwen3.8-27B-super-adapter`, publicado por el usuario prithivMLmods. El checkpoint original se construye fusionando mediante LoRA un "super-adapter" sobre el modelo base `Qwen/Qwen3.8-27B`, de modo que el resultado puede servirse en cualquier motor de inferencia sin soporte nativo de adaptadores LoRA. El modelo cuenta con 27.320.697.856 parametros totales y esta orientado a tareas de ingenieria de software y uso de terminal dentro de entornos Harbor/OpenEnv.
 
-La relevancia de esta publicación es doble. Por un lado, empaqueta el modelo en cuantizaciones listas para llama.cpp (Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q8_0) más un proyector multimodal `mmproj-bf16`, lo que permite ejecución local sin necesidad de soporte LoRA en el motor de inferencia. Por otro lado, incorpora soporte de Multi-Token Prediction (MTP) para decodificación especulativa integrada en los propios pesos, eliminando la necesidad de un modelo borrador separado.
+La relevancia de esta version GGUF radica en que incorpora soporte de Multi-Token Prediction (MTP) para decodificacion especulativa integrada en los propios pesos, lo que permite acelerar la inferencia local sin necesidad de un modelo borrador separado. Ademas, el pipeline declarado es `image-text-to-text`, e incluye un fichero de proyeccion multimodal (`mmproj-bf16.gguf`) para capacidades de vision. La licencia es Apache 2.0 y el unico idioma declarado es el ingles.
 
-El modelo está pensado para flujos agénticos con razonamiento activado (modo thinking, recomendado en nivel `xhigh`), y según la model card del adaptador original mejora el pass@1 medio en SWE-bench Pro (hard 51) y Terminal-Bench 2.1 del 55,5% al 63,5% con thinking activado, reduciendo además entre un 19% y un 48% las llamadas a herramientas por tarea. Estas cifras corresponden al adaptador sobre la base BF16 y no han sido reevaluadas sobre este checkpoint fusionado ni sobre las cuantizaciones GGUF.
+El modelo esta pensado para agentes que resuelven tareas de software: edicion de codigo, ejecucion de comandos de terminal y razonamiento multi-paso con llamadas a herramientas. Segun la model card del adaptador original, con el modo thinking activado mejora el pass@1 en SWE-bench Pro y Terminal-Bench 2.1, reduciendo el numero de llamadas a herramientas por tarea.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Qwen3.8-27B) con cabezas MTP para decodificación especulativa; fusión de adaptadores LoRA por concatenación de rangos |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B), con cabezas MTP para decodificacion especulativa y proyeccion multimodal para vision |
 | Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q8_0; proyector multimodal mmproj-bf16 |
-| Idiomas soportados | en |
+| Tipos de cuantizacion | Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q8_0, mmproj-bf16 (vision) |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones) y BF16 en el checkpoint de origen; safetensors en el modelo base |
+| Formato de pesos | GGUF (repo de 101.4 GB; ficheros individuales de 15.8 GB a 29 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen/Qwen3.8-27B, un transformer denso de aproximadamente 27.300 millones de parámetros. Sobre él se aplicaron tres adaptadores LoRA entrenados con AsyncGRPO (variante asíncrona de GRPO, optimización de política con recompensas verificables) en entornos Harbor/OpenEnv, cada uno especializado en un agente distinto: pi, Hermes Agent y OpenCode, con foco en tareas de ingeniería de software y terminal. La fusión se realiza con `combination_type="cat"`, rank 96 (3 × 32), con peso ½ en cada adaptador, aplicando la actualización estándar `W + (alpha/r)·B@A` por tensor en fp32 y convirtiendo de nuevo a BF16. El proceso preserva el diseño de shards, los nombres de tensores y todos los tensores MTP del modelo base.
+El modelo parte de `Qwen/Qwen3.8-27B` y se construye fusionando un super-adapter LoRA sobre el modelo base. La fusion se realiza concatenando (`combination_type="cat"`) tres adaptadores especialistas entrenados con AsyncGRPO para pi, Hermes Agent y OpenCode en entornos Harbor/OpenEnv sobre tareas de ingenieria de software y terminal. El rango resultante es 96 (3 x 32), con peso de 1/2 en cada uno de los tensores q, k, v, o, gate, up y down. La actualizacion se aplica por tensor en fp32 con la formula estandar `W + (alpha/r)·B@A` y se vuelve a convertir a BF16, preservando el layout de shards, los nombres de tensores y todos los tensores MTP del modelo base.
 
-La innovación técnica destacable es la integración de Multi-Token Prediction (MTP) en los pesos: el GGUF incluye cabezas de salida adicionales que predicen varios tokens futuros en una sola pasada, lo que habilita decodificación especulativa sin modelo borrador externo. Los datasets citados en la model card son `harness-hub/scale800-harbor`, `harness-hub/harness-adapters`, `harness-hub/termgrade-train-harbor` y `ai-and/termgrade-environments`; no se detalla el número de tokens de entrenamiento ni la composición completa del corpus.
+No se realizo entrenamiento adicional durante la fusion. Los datasets citados en la model card son `harness-hub/scale800-harbor`, `harness-hub/harness-adapters`, `harness-hub/termgrade-train-harbor` y `ai-and/termgrade-environments`. La innovacion tecnica destacable es la integracion de Multi-Token Prediction (MTP) dentro de los pesos GGUF: a diferencia de la decodificacion especulativa clasica, que requiere un modelo borrador independiente, aqui se anaden cabezas de salida que predicen varios tokens futuros en una sola pasada. La cuantizacion se realizo con llama.cpp.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo thinking (recomendado en nivel `xhigh`), además de modo sin thinking.
-- Ejecución de tareas de ingeniería de software: parcheo de repositorios, resolución de issues y navegación de código.
-- Operación en terminal y entornos de línea de comandos (Terminal-Bench 2.1), incluyendo flujos multi-paso.
-- Uso de herramientas (tool calling / function calling) optimizado para reducir el número de llamadas por tarea.
-- Comportamiento agéntico en entornos Harbor/OpenEnv, con integración específica para pi, Hermes Agent y OpenCode.
-- Capacidades de imagen a texto: el repositorio incluye `mmproj-bf16.gguf` y el pipeline declarado es `image-text-to-text`.
-- Decodificación especulativa nativa mediante MTP.
-- Soporte multilingüe limitado: la model card solo declara inglés (`en`).
+- Generacion de texto y razonamiento multi-paso orientado a tareas de ingenieria de software.
+- Edicion de codigo y resolucion de problemas en repositorios (SWE-bench Pro en la evaluacion del adaptador).
+- Ejecucion y razonamiento sobre comandos de terminal (Terminal-Bench 2.1 en la evaluacion del adaptador).
+- Soporte de tool calling y uso de agentes en entornos Harbor/OpenEnv.
+- Modo thinking con nivel `xhigh` recomendado por el autor.
+- Capacidades de vision mediante el fichero `mmproj-bf16.gguf` (pipeline image-text-to-text).
+- Decodificacion especulativa acelerada mediante MTP integrado.
+- Capacidades multilingues limitadas al ingles segun la declaracion del autor.
 
 ## Casos de uso
 
-- Resolución automática de issues en repositorios: el modelo puede recibir un issue y el árbol del proyecto, localizar los ficheros relevantes y generar un parche; su entrenamiento específico en SWE-bench Pro lo hace adecuado para este flujo.
-- Agente de terminal para tareas de administración: ejecución de comandos, interpretación de salidas y corrección de errores en cadenas multi-paso, apoyándose en la reducción de llamadas a herramientas documentada.
-- Integración en asistentes de código tipo OpenCode o Hermes Agent: el adaptador se entrenó sobre estos agentes, por lo que encaja directamente en sus protocolos de herramientas.
-- Automatización de pipelines CI/CD: uso como agente que diagnostica fallos de build, propone correcciones y valida cambios en un bucle con herramientas externas.
-- Asistencia multimodal en documentación técnica: con el proyector `mmproj-bf16` puede procesar capturas de pantalla o diagramas junto a texto para tareas de image-text-to-text.
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M (17 GB) y Q4_K_S (15,8 GB) permiten ejecutar el modelo en GPUs de consumo con 24 GB de VRAM, útil para prototipado de agentes sin infraestructura cloud.
-- Evaluación de agentes en entornos simulados: sirve como política de referencia en Harbor/OpenEnv para comparar estrategias de tool calling y razonamiento.
+- Agente de resolucion de issues en repositorios: el modelo puede recibir un issue, inspeccionar el codigo, aplicar parches y ejecutar tests en un bucle agentico, apoyandose en su entrenamiento con GRPO sobre tareas tipo SWE-bench.
+- Automatizacion de operaciones en terminal: interpreta y ejecuta comandos de shell para tareas de administracion, diagnostico o despliegue, con razonamiento multi-paso y reduccion de llamadas a herramientas.
+- Integracion en pipelines de CI/CD como agente de correccion: detecta fallos de build o de tests y propone parches, con decodificacion especulativa MTP para reducir latencia en inferencia local.
+- Asistente de desarrollo en local con llama.cpp u Ollama: las cuantizaciones Q4_K_M (17 GB) y Q4_K_S (15.8 GB) permiten desplegar el modelo en estaciones de trabajo con GPU de consumo alta gama.
+- Analisis de capturas o diagramas junto a codigo: gracias al proyector multimodal puede procesar imagenes (por ejemplo, capturas de errores o diagramas de arquitectura) combinadas con texto.
+- Evaluacion de agentes en entornos simulados: util como modelo de referencia en benchmarks de agentes tipo Harbor/OpenEnv y en investigacion sobre entrenamiento con AsyncGRPO.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible corresponden al adaptador original sobre la base BF16, no a este checkpoint fusionado ni a las cuantizaciones GGUF.
+Los datos disponibles corresponden al adaptador evaluado sobre el modelo base BF16, no a este checkpoint fusionado. La model card indica que no se han reevaluado sobre el checkpoint fusionado.
 
-| Benchmark | Sin thinking | Con thinking |
+| Benchmark | Thinking off (adaptador) | Thinking on (adaptador) |
 |---|---|---|
-| SWE-bench Pro (hard 51) + Terminal-Bench 2.1, pass@1 medio (pi, Hermes Agent, OpenCode) | 39,5% | 63,5% |
-| Mismo conjunto, referencia sin adaptador | no disponible | 55,5% |
-| Reducción de llamadas a herramientas por tarea (con thinking) | no disponible | 19–48% |
-| Reducción de llamadas a herramientas por tarea (sin thinking) | no disponible | 53–73% |
+| Pass@1 medio en pi, Hermes Agent y OpenCode (SWE-bench Pro hard 51 y Terminal-Bench 2.1) | 39.5% | 63.5% |
+| Reduccion de llamadas a herramientas por tarea | 53-73% | 19-48% |
 
-No se han publicado resultados desagregados por benchmark (MMLU, HumanEval, GSM8K) ni mediciones de latencia o throughput en la información disponible.
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: Q4_K_S ≈ 15,8 GB de pesos; Q4_K_M ≈ 17 GB; Q5_K_S ≈ 19 GB; Q5_K_M ≈ 19,6 GB; Q8_0 ≈ 29 GB; a ello hay que sumar el proyector multimodal (931 MB) y la caché KV, cuyo tamaño depende del contexto configurado (no disponible).
-- GPU de consumo: Q4_K_M y Q4_K_S caben en GPUs de 24 GB (RTX 3090, RTX 4090); Q5 requiere 24 GB con contexto moderado; Q8_0 necesita 32 GB o más y no cabe en consumer de 24 GB.
-- GPU profesionales: A100 40/80 GB, H100 80 GB y L40S 48 GB permiten ejecutar Q8_0 con contexto amplio o BF16 en el caso de 80 GB.
-- Opciones de despliegue: llama.cpp (cuantización generada con esta herramienta); el checkpoint BF16 de origen es compatible con transformers y motores sin soporte LoRA; los tags mencionan text-generation-inference y endpoints compatibles.
-- Latencia y throughput: no disponibles. El soporte MTP debería reducir la latencia de decodificación frente a un GGUF equivalente sin decodificación especulativa, pero no se aportan cifras.
+- VRAM estimada para inferencia: aproximadamente 16-18 GB para Q4_K_S (15.8 GB de fichero), 17-19 GB para Q4_K_M (17 GB), 19-21 GB para Q5_K_S y Q5_K_M, y 29-31 GB para Q8_0, mas el proyector de vision (931 MB) si se usa.
+- GPU recomendadas: A100 o H100 para Q8_0 y despliegues de produccion; RTX 4090 (24 GB) o RTX 3090 para Q4_K_M y Q4_K_S.
+- Cabe en GPU de consumo: si, en tarjetas con 24 GB o mas para las cuantizaciones Q4 y Q5; Q8_0 requiere 32 GB o mas.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, y motores compatibles con GGUF; el autor etiqueta tambien text-generation-inference y transformers, aunque el formato principal es GGUF.
+- Latencia y throughput: no disponible; el soporte MTP de decodificacion especulativa esta disenado para acelerar la inferencia local, pero no se publican cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-super-adapter-GGUF (este) | 27,3B | no disponible | Agentes de código y terminal, MTP, multimodal | Apache 2.0 | GGUF en HF |
-| harness-hub/Qwen3.8-27B-super-adapter (BF16) | 27,3B | no disponible | Mismo modelo sin cuantizar | Apache 2.0 | BF16 en HF |
-| Qwen/Qwen3.8-27B (base) | 27,3B | no disponible | Modelo generalista sin adaptadores | no disponible en la información | HF |
-| Alternativas de 27B–32B para código | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Qwen3.8-27B-super-adapter-GGUF | 27.3B | no disponible | Apache 2.0 | GGUF | Especializado en agentes de software y terminal, con MTP y vision |
+| Qwen/Qwen3.8-27B (base) | 27B | no disponible | no disponible | safetensors | Modelo base sin el super-adapter; sin entrenamiento especifico de agentes |
+| harness-hub/Qwen3.8-27B-super-adapter (bf16) | 27.3B | no disponible | Apache 2.0 | safetensors (BF16) | Checkpoint original fusionado; requiere motores sin soporte LoRA |
+| Adaptadores individuales (pi, Hermes Agent, OpenCode) | no disponible | no disponible | no disponible | LoRA | Especialistas separados; requieren soporte LoRA en el motor |
 
-No se dispone de datos de benchmarks comparativos con modelos de la competencia en la información proporcionada.
+No se dispone de datos de rendimiento comparativos con otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks citados (63,5% de pass@1) se midieron sobre el adaptador con la base BF16 y no se han reevaluado sobre este checkpoint fusionado ni sobre las cuantizaciones GGUF; el rendimiento real puede diferir.
-- La fusión por concatenación de rangos con peso ½ por adaptador es una técnica heurística: no hay garantía de que las capacidades de los tres agentes se conserven íntegramente ni de que no haya interferencias entre especializaciones.
-- Solo se declara soporte de inglés; el rendimiento en castellano u otros idiomas no está documentado.
-- La longitud de contexto no se especifica en la información disponible, lo que dificulta planificar su uso en repositorios grandes.
-- Riesgo de alucinación inherente a los modelos generativos, agravado en tareas de código donde puede inventar APIs o rutas de ficheros inexistentes.
-- El modelo está especializado en entornos agénticos concretos (pi, Hermes Agent, OpenCode); fuera de esos protocolos de herramientas el rendimiento puede degradarse.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen subyacente, no detalladas en la información disponible.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta: no hay validación comunitaria ni informes independientes de calidad.
-- El tamaño del repositorio (101,4 GB) implica descargas largas si se quieren varias cuantizaciones.
+- El unico idioma declarado es el ingles; el rendimiento en castellano u otros idiomas no esta verificado.
+- Los benchmarks citados corresponden al adaptador sobre el modelo base BF16 y no se han reevaluado sobre este checkpoint fusionado.
+- La fusion por concatenacion de adaptadores puede introducir interferencias entre especialistas; no se documenta una validacion independiente del checkpoint fusionado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en tareas de codigo y comandos de terminal con efectos reales.
+- No se especifica la longitud de contexto, lo que dificulta planificar despliegues con ventanas largas.
+- El uso de MTP para decodificacion especulativa depende del soporte del motor de inferencia; no todos los backends lo aprovecharan.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Qwen3.8-27B y de los datasets de entrenamiento antes de un uso comercial.
+- El repo ocupa 101.4 GB; el almacenamiento y la transferencia de los ficheros deben planificarse.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-GGUF
-- Modelo base del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-super-adapter
-- Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-GGUF
+- Modelo base del checkpoint: https://huggingface.co/harness-hub/Qwen3.8-27B-super-adapter
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Dataset scale800-harbor: https://huggingface.co/datasets/harness-hub/scale800-harbor
-- Dataset harness-adapters: https://huggingface.co/datasets/harness-hub/harness-adapters
-- Dataset termgrade-train-harbor: https://huggingface.co/datasets/harness-hub/termgrade-train-harbor
-- Dataset termgrade-environments: https://huggingface.co/datasets/ai-and/termgrade-environments
+- Fichero Q4_K_M: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter.Q4_K_M.gguf
+- Fichero Q8_0: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter.Q8_0.gguf
+- Proyector multimodal: https://huggingface.co/prithivMLmods/Qwen3.8-27B-super-adapter-GGUF/blob/main/Qwen3.8-27B-super-adapter.mmproj-bf16.gguf
